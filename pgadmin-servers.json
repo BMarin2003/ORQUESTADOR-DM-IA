@@ -1,0 +1,14 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "DM-IA dev",
+      "Group": "QuestMasters",
+      "Host": "db",
+      "Port": 5432,
+      "MaintenanceDB": "dmia_dev",
+      "Username": "postgres",
+      "SSLMode": "prefer",
+      "Comment": "Desarrollo. NUNCA apuntar a la base de las campañas evaluadas."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "generado": "2026-08-28T18:21:13.608048+00:00",
+  "proveedor": "deepinfra",
+  "endpoint": "https://api.deepinfra.com/v1/openai",
+  "modelo": "google/gemma-4-31B-it",
+  "parametros_huella": {
+    "temperature": 0,
+    "seed": 42,
+    "max_tokens": 120
+  },
+  "huella": {
+    "es_narrativa": {
+      "sha256": "4771777536e61d5293127a41a90b98759fd1cab10cc7d04f16bd1a97cce5c513",
+      "muestra": "La torre de peaje se erige como una silueta solitaria contra el cielo encendido, mientras los primeros rayos del sol bañ",
+      "tokens_in": 27,
+      "tokens_out": 40,
+      "latencia_ms": 2488
+    },
+    "es_instruccion": {
+      "sha256": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+      "muestra": "20",
+      "tokens_in": 31,
+      "tokens_out": 3,
+      "latencia_ms": 646
+    },
+    "es_formato": {
+      "sha256": "6bc0da1f42f96fc37b8bd7ed20ba57606d2a0da5cda2b135c7854fbdc985b8a3",
+      "muestra": "{\"ok\": true}",
+      "tokens_in": 27,
+      "tokens_out": 6,
+      "latencia_ms": 580
+    }
+  },
+  "nota_cuantizacion": "Anotar a mano desde la página del modelo si el proveedor la publica. Si no la publica, la huella es el ancla: un cambio de hash indica que el artefacto servido cambió."
+}
