@@ -1,0 +1,125 @@
+{
+  "campaign": {
+    "id": "fixture-campaign",
+    "title": "El Vado de Ceniza",
+    "profile": "adventure",
+    "world_tone": "mixed",
+    "party_register": "mixed",
+    "rules_visibility": 50,
+    "game_day": 12,
+    "note": "Mundo mínimo para sondeo. Neutral a propósito: no usa lore de Calradia para que los fixtures sean portables."
+  },
+
+  "locations": [
+    {
+      "key": "marca_gris",
+      "kind": "region",
+      "name": "La Marca Gris",
+      "parent": null,
+      "culture_overrides": {
+        "language": "común",
+        "currency": "coronas de plata",
+        "attitude_to_outsiders": "indiferente"
+      }
+    },
+    {
+      "key": "vado_ceniza",
+      "kind": "settlement",
+      "name": "Vado de Ceniza",
+      "parent": "marca_gris",
+      "culture_overrides": {
+        "notable_laws": "el paso del puente se cobra por cabeza y por bestia",
+        "attitude_to_outsiders": "receloso",
+        "tensions": "el Gremio subió el peaje tres veces en un año"
+      },
+      "detail": "observed",
+      "description_canonical": "Un pueblo de tablones grises apretado contra el único puente de piedra en cuarenta leguas. Huele a río y a brea. Todo el que pasa, paga."
+    },
+    {
+      "key": "mercado_bajo",
+      "kind": "district",
+      "name": "El Mercado Bajo",
+      "parent": "vado_ceniza",
+      "culture_overrides": {
+        "tensions": "los puestos sin licencia del Gremio son desmontados a la fuerza"
+      },
+      "detail": "observed",
+      "description_canonical": "Doce puestos bajo toldos remendados, en la ribera que se inunda cada primavera. Nadie construye en piedra aquí."
+    },
+    {
+      "key": "casa_peaje",
+      "kind": "building",
+      "name": "La Casa del Peaje",
+      "parent": "vado_ceniza",
+      "detail": "sketch",
+      "sketch_text": "Una torre achaparrada en la cabecera del puente, con una ventanilla enrejada a la altura del pecho."
+    },
+    {
+      "key": "posada_remo",
+      "kind": "building",
+      "name": "Posada del Remo Roto",
+      "parent": "mercado_bajo",
+      "detail": "observed",
+      "description_canonical": "Techo bajo, ocho mesas, un remo partido clavado sobre el hogar. La única puerta da al mercado."
+    },
+    {
+      "key": "molino_viejo",
+      "kind": "ruin",
+      "name": "El Molino Viejo",
+      "parent": "marca_gris",
+      "detail": "sketch",
+      "sketch_text": "Río arriba, media rueda todavía en pie. Nadie lo usa desde la crecida.",
+      "visibility": "dm_only"
+    }
+  ],
+
+  "factions": [
+    {
+      "key": "gremio_vado",
+      "name": "El Gremio del Vado",
+      "description": "Cobra el paso del puente desde hace ochenta años. Tiene la única licencia de comercio del pueblo y su propia guardia pagada.",
+      "seat": "casa_peaje",
+      "stance_party": 0,
+      "knows_about_party": false
+    }
+  ],
+
+  "clocks": [
+    {
+      "faction": "gremio_vado",
+      "agenda": "Desmontar todos los puestos sin licencia del Mercado Bajo",
+      "progress": 6,
+      "threshold": 10,
+      "rate_per_game_day": 0.5,
+      "on_fire_event": {
+        "headline": "La guardia del Gremio entra en el Mercado Bajo al amanecer",
+        "scope": "mercado_bajo",
+        "consequence": "Los puestos sin licencia arden. Dos vendedores heridos."
+      }
+    }
+  ],
+
+  "quests": [
+    {
+      "key": "peaje_falso",
+      "title": "El peaje que no consta en el libro",
+      "description": "Alguien cobra un segundo peaje en el turno de noche y no lo registra.",
+      "status": "active",
+      "next_step_known": true
+    },
+    {
+      "key": "molino",
+      "title": "Lo que quedó en el molino",
+      "description": "El molino viejo no está tan vacío como dicen.",
+      "status": "unknown",
+      "next_step_known": false,
+      "visibility": "dm_only"
+    }
+  ],
+
+  "characters": [
+    { "key": "kael", "name": "Kael", "species": "humano", "class": "guerrero 3", "hp": 28, "hp_max": 31 },
+    { "key": "mira", "name": "Mira", "species": "halfling", "class": "pícara 3", "hp": 19, "hp_max": 22 },
+    { "key": "tobi", "name": "Tobi", "species": "elfo", "class": "mago 3", "hp": 14, "hp_max": 17 }
+  ]
+}

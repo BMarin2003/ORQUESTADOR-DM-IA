@@ -1,0 +1,173 @@
+{
+  "_nota": "Tres personas deliberadamente contrastantes. La tercera es tan importante como las otras dos: verifica que el sistema NO exija datos que no existen para un PNJ de paso.",
+
+  "ordulf": {
+    "_arquetipo": "Incapaz estructural de confiar. Tipo Walder Frey.",
+    "name": "Ordulf Bec",
+    "species": "humano",
+    "social_role": "recaudador del peaje, tercera generación",
+    "appearance": "Sesenta años, manos manchadas de tinta, un anillo del Gremio demasiado apretado que nunca se quita.",
+    "location": "casa_peaje",
+    "status": "alive",
+
+    "personality": {
+      "warmth": -70,
+      "candor": -85,
+      "principle": -90,
+      "boldness": -30
+    },
+
+    "traits": ["meticuloso", "rencoroso", "servil hacia arriba"],
+    "internal_contradiction": "Ansía que lo traten como a un señor, y solo sabe conseguir que lo traten como a un cobrador.",
+    "taboos": ["hablar mal del Gremio en voz alta", "perdonar una deuda"],
+    "voice_notes": "Formalidad excesiva con todo el mundo. Dice 'vuestra merced' incluso al insultar. Menciona agravios viejos como si fueran cortesías: 'como aquella vez que vuestro amigo olvidó pagar, que no se lo tengo en cuenta'. Nunca alza la voz. Nunca dice 'no' directamente: dice 'sería irregular'.",
+    "stated_desire": "Que el libro de peajes cuadre al céntimo.",
+    "actual_need": "Que alguien del Gremio lo llame por su apellido y no por su cargo.",
+    "fear": "Que descubran que lleva ocho años redondeando a su favor.",
+
+    "ibf": {
+      "ideal_text": "El que paga, pasa. El que no paga, no pasa. Eso es todo el orden que hay.",
+      "ideal_tags": ["orden", "riqueza"],
+      "bond_text": "El apellido Bec lleva tres generaciones en esta torre. No se pierde conmigo.",
+      "bond_strength": 85,
+      "bond_targets": [
+        { "type": "location", "key": "casa_peaje" },
+        { "type": "faction", "key": "gremio_vado" }
+      ],
+      "flaw_text": "No olvida un desaire de estatus. Nunca. Los anota mentalmente con fecha.",
+      "flaw_tags": ["rencor"],
+      "flaw_exploit": "reconocimiento_publico_de_estatus"
+    },
+
+    "disposition": {
+      "affinity": -10,
+      "trust": -55,
+      "respect": 0,
+      "trust_ceiling": 20,
+      "_nota_topes": "Proyecta su propia naturaleza sobre los demás. Asume que todos roban porque él roba. El techo de +20 es estructural, no una etapa."
+    },
+
+    "knowledge": [
+      { "fact": "El turno de noche del puente lo cubre su sobrino Hettir desde hace dos meses", "learned_at_turn": 0 },
+      { "fact": "Ha estado redondeando el peaje a su favor durante ocho años", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Su sobrino Hettir cobra un segundo peaje de noche y Ordulf lo sabe, pero callar le sale más barato que denunciarlo.",
+        "reveal_condition": "Solo si alguien le demuestra que el Gremio ya sospecha de ÉL, y ofrecerle a Hettir es la única salida.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "apalancamiento y poder — quién puede dañarlo o serle útil. Indiferente a la virtud."
+  },
+
+  "brea": {
+    "_arquetipo": "Honorable, confianza que sube rápido y se rompe una sola vez. Tipo Ned Stark.",
+    "name": "Sargento Brea",
+    "species": "enana",
+    "social_role": "guardia del puente, no pertenece al Gremio",
+    "appearance": "Cuarenta y tantos, una cicatriz que le cruza la ceja, la cota siempre limpia aunque esté remendada.",
+    "location": "vado_ceniza",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 55,
+      "candor": 90,
+      "principle": 95,
+      "boldness": 60
+    },
+
+    "traits": ["directa", "incómodamente honesta", "leal a la gente antes que al cargo"],
+    "internal_contradiction": "Su deber es hacer cumplir las órdenes del Gremio, y sabe que el Gremio está podrido. No se ha ido porque irse sería dejar el puesto a alguien peor.",
+    "taboos": ["mentir, ni siquiera por conveniencia", "cobrar por hacer su trabajo"],
+    "voice_notes": "Frases cortas. Dice lo que piensa antes de calcular si conviene. Si algo le parece mal lo dice en el momento y delante de quien sea. Usa 'muchacho' y 'muchacha' con todo el mundo, incluidos los que le doblan la edad.",
+    "stated_desire": "Que el puente esté vigilado y nadie muera en su turno.",
+    "actual_need": "Que alguien le dé una razón para creer que el pueblo se puede arreglar.",
+    "fear": "Convertirse en lo que vigila.",
+
+    "ibf": {
+      "ideal_text": "La palabra dada vale más que el contrato firmado. El contrato lo redacta un abogado; la palabra la sostiene uno.",
+      "ideal_tags": ["honor", "honestidad", "deber"],
+      "bond_text": "Los vendedores del Mercado Bajo. Los conoce a todos por su nombre y ninguno ha muerto en su turno.",
+      "bond_strength": 80,
+      "bond_targets": [
+        { "type": "location", "key": "mercado_bajo" }
+      ],
+      "flaw_text": "Rígida. No miente ni cuando mentir salvaría a alguien, y eso ya le costó un amigo.",
+      "flaw_tags": ["rigidez"],
+      "flaw_exploit": "forzarla_a_jurar_algo"
+    },
+
+    "disposition": {
+      "affinity": 15,
+      "trust": 10,
+      "respect": 0,
+      "trust_ceiling": 90,
+      "_nota_topes": "Sube rápido con trato honesto. Pero una traición probada la manda a −70 y FIJA el techo permanente en +10. Irreversible."
+    },
+
+    "knowledge": [
+      { "fact": "El Gremio le ordenó desmontar los puestos sin licencia y ella lleva tres semanas retrasándolo", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Tiene la orden firmada de desalojo del Mercado Bajo guardada sin ejecutar. Si el Gremio se entera, la despiden y mandan a alguien que sí la cumpla.",
+        "reveal_condition": "Se lo cuenta a quien le haya demostrado con hechos que se preocupa por los vendedores, y solo si le preguntan directamente.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "conducta honorable y competencia demostrada. Indiferente al dinero y al rango."
+  },
+
+  "nena": {
+    "_arquetipo": "PNJ de paso. TODO vacío a propósito. Verifica que el sistema no exija datos inexistentes.",
+    "name": "Nena",
+    "species": "humana",
+    "social_role": "posadera del Remo Roto",
+    "appearance": "Delantal, antebrazos de cargar barriles.",
+    "location": "posada_remo",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctica. Habla de precios y de cuartos.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a ella por su cuenta en 3+ escenas, o la nombra sin que el DM la mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

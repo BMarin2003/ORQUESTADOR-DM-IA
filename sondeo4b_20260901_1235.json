@@ -1,0 +1,630 @@
+{
+  "modelo": "google/gemma-4-31B-it",
+  "fecha": "2026-09-01T12:35:09.929492",
+  "totales": {
+    "base": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 8,
+      "ev_ok": 3,
+      "ev_total": 3,
+      "tin": 15630,
+      "tout": 223,
+      "ms": 43024
+    },
+    "A": {
+      "tp": 5,
+      "fp": 1,
+      "fn": 4,
+      "ev_ok": 6,
+      "ev_total": 6,
+      "tin": 16505,
+      "tout": 350,
+      "ms": 38965
+    },
+    "B": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 8,
+      "ev_ok": 5,
+      "ev_total": 5,
+      "tin": 16123,
+      "tout": 1927,
+      "ms": 248806
+    }
+  },
+  "registro": [
+    {
+      "turno": "T05",
+      "variante": "base",
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "invalidos": [],
+        "sobra": [],
+        "falta": []
+      }
+    },
+    {
+      "turno": "T05",
+      "variante": "A",
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "invalidos": [],
+        "sobra": [],
+        "falta": []
+      }
+    },
+    {
+      "turno": "T05",
+      "variante": "B",
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "invalidos": [],
+        "sobra": [],
+        "falta": []
+      }
+    },
+    {
+      "turno": "T07",
+      "variante": "base",
+      "salida": {
+        "events": [
+          {
+            "entity": "brea",
+            "event_kind": "bribe_offered",
+            "evidence": "Dos coronas y usted no vio a nadie cruzar anoche."
+          }
+        ],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [],
+        "sobra": [],
+        "falta": []
+      }
+    },
+    {
+      "turno": "T07",
+      "variante": "A",
+      "salida": {
+        "events": [
+          {
+            "entity": "brea",
+            "event_kind": "bribe_offered",
+            "evidence": "Dos coronas y usted no vio a nadie cruzar anoche."
+          }
+        ],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [],
+        "sobra": [],
+        "falta": []
+      }
+    },
+    {
+      "turno": "T07",
+      "variante": "B",
+      "salida": {
+        "events": [
+          {
+            "entity": "brea",
+            "event_kind": "bribe_offered",
+            "evidence": "Le ofrezco las monedas con la palma abierta."
+          }
+        ],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [],
+        "sobra": [],
+        "falta": []
+      }
+    },
+    {
+      "turno": "T11",
+      "variante": "base",
+      "salida": {
+        "events": [],
+        "deltas": [
+          {
+            "entity": "ordulf",
+            "entity_type": "npc",
+            "field": "hp_current",
+            "value": -11,
+            "evidence": "daño 11"
+          }
+        ]
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [
+          "campo: npc.hp_current"
+        ],
+        "sobra": [],
+        "falta": [
+          [
+            "gremio_vado",
+            "knows_about_party"
+          ],
+          [
+            "gremio_vado",
+            "stance_party"
+          ],
+          [
+            "ordulf",
+            "status"
+          ]
+        ]
+      }
+    },
+    {
+      "turno": "T11",
+      "variante": "A",
+      "salida": {
+        "events": [],
+        "deltas": [
+          {
+            "entity": "ordulf",
+            "entity_type": "npc",
+            "field": "status",
+            "value": "captured",
+            "evidence": "Cae contra la ventanilla enrejada y se queda ahí"
+          }
+        ]
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 2,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [],
+        "sobra": [],
+        "falta": [
+          [
+            "gremio_vado",
+            "knows_about_party"
+          ],
+          [
+            "gremio_vado",
+            "stance_party"
+          ]
+        ]
+      }
+    },
+    {
+      "turno": "T11",
+      "variante": "B",
+      "salida": {
+        "events": [],
+        "deltas": [
+          {
+            "entity": "ordulf",
+            "entity_type": "npc",
+            "field": "hp_current",
+            "value": -11,
+            "evidence": "Ataque con la espada larga (resultado: 22, daño 11)"
+          }
+        ]
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [
+          "campo: npc.hp_current"
+        ],
+        "sobra": [],
+        "falta": [
+          [
+            "gremio_vado",
+            "knows_about_party"
+          ],
+          [
+            "gremio_vado",
+            "stance_party"
+          ],
+          [
+            "ordulf",
+            "status"
+          ]
+        ]
+      }
+    },
+    {
+      "turno": "T12",
+      "variante": "base",
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "invalidos": [],
+        "sobra": [],
+        "falta": []
+      }
+    },
+    {
+      "turno": "T12",
+      "variante": "A",
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "invalidos": [],
+        "sobra": [],
+        "falta": []
+      }
+    },
+    {
+      "turno": "T12",
+      "variante": "B",
+      "salida": {
+        "events": [
+          {
+            "entity": "brea",
+            "event_kind": "competence_shown",
+            "evidence": "Le encantó. Se nota que le encantó. Mírale la cara de lo que le encantó."
+          }
+        ],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [],
+        "sobra": [
+          [
+            "brea",
+            "competence_shown"
+          ]
+        ],
+        "falta": []
+      }
+    },
+    {
+      "turno": "T13",
+      "variante": "base",
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "invalidos": [],
+        "sobra": [],
+        "falta": [
+          [
+            "brea",
+            "secret_entrusted"
+          ],
+          [
+            "brea",
+            "secret_revealed"
+          ]
+        ]
+      }
+    },
+    {
+      "turno": "T13",
+      "variante": "A",
+      "salida": {
+        "events": [],
+        "deltas": [
+          {
+            "entity": "brea",
+            "entity_type": "npc",
+            "field": "secret_revealed",
+            "value": "Tiene la orden firmada de desalojo del Mercado Bajo guardada sin ejecutar",
+            "evidence": "Porque la orden la tengo yo. Firmada hace tres semanas."
+          }
+        ]
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [],
+        "sobra": [],
+        "falta": [
+          [
+            "brea",
+            "secret_entrusted"
+          ]
+        ]
+      }
+    },
+    {
+      "turno": "T13",
+      "variante": "B",
+      "salida": {
+        "events": [],
+        "deltas": [
+          {
+            "entity": "kael",
+            "entity_type": "character",
+            "field": "knowledge",
+            "value": "Brea tiene la orden de desmontar los puestos y la ha estado desobedeciendo",
+            "evidence": "Porque la orden la tengo yo. Firmada hace tres semanas."
+          }
+        ]
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [
+          "campo: character.knowledge"
+        ],
+        "sobra": [],
+        "falta": [
+          [
+            "brea",
+            "secret_entrusted"
+          ],
+          [
+            "brea",
+            "secret_revealed"
+          ]
+        ]
+      }
+    },
+    {
+      "turno": "T14",
+      "variante": "base",
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "invalidos": [],
+        "sobra": [],
+        "falta": [
+          [
+            "brea",
+            "promise_broken"
+          ]
+        ]
+      }
+    },
+    {
+      "turno": "T14",
+      "variante": "A",
+      "salida": {
+        "events": [
+          {
+            "entity": "brea",
+            "event_kind": "promise_broken",
+            "evidence": "Al final no fuimos a hablar con Herda. Se nos pasó."
+          }
+        ],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [],
+        "sobra": [],
+        "falta": []
+      }
+    },
+    {
+      "turno": "T14",
+      "variante": "B",
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "invalidos": [],
+        "sobra": [],
+        "falta": [
+          [
+            "brea",
+            "promise_broken"
+          ]
+        ]
+      }
+    },
+    {
+      "turno": "T16",
+      "variante": "base",
+      "salida": {
+        "events": [],
+        "deltas": [
+          {
+            "entity": "brea",
+            "entity_type": "npc",
+            "field": "knowledge",
+            "value": "Hettir tenía fichas de peaje con la marca del Gremio raspada",
+            "evidence": "Donde debería estar el sello del Gremio hay una muesca de cuchillo"
+          }
+        ]
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [],
+        "sobra": [
+          [
+            "brea",
+            "knowledge"
+          ]
+        ],
+        "falta": [
+          [
+            "brea",
+            "promise_kept"
+          ],
+          [
+            "peaje_falso",
+            "status"
+          ]
+        ]
+      }
+    },
+    {
+      "turno": "T16",
+      "variante": "A",
+      "salida": {
+        "events": [
+          {
+            "entity": "brea",
+            "event_kind": "promise_kept",
+            "evidence": "Le entrego a Brea las tres fichas de peaje nocturno"
+          }
+        ],
+        "deltas": [
+          {
+            "entity": "brea",
+            "entity_type": "npc",
+            "field": "knowledge",
+            "value": "Existen fichas de peaje nocturno con la marca del Gremio raspada",
+            "evidence": "Con esto tengo suficiente"
+          }
+        ]
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 1,
+        "ev_ok": 2,
+        "ev_total": 2,
+        "invalidos": [],
+        "sobra": [
+          [
+            "brea",
+            "knowledge"
+          ]
+        ],
+        "falta": [
+          [
+            "peaje_falso",
+            "status"
+          ]
+        ]
+      }
+    },
+    {
+      "turno": "T16",
+      "variante": "B",
+      "salida": {
+        "events": [],
+        "deltas": [
+          {
+            "entity": "brea",
+            "entity_type": "npc",
+            "field": "inventory",
+            "value": "tres fichas de peaje nocturno",
+            "evidence": "Le entrego a Brea las tres fichas de peaje nocturno"
+          }
+        ]
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [
+          "campo: npc.inventory"
+        ],
+        "sobra": [],
+        "falta": [
+          [
+            "brea",
+            "promise_kept"
+          ],
+          [
+            "peaje_falso",
+            "status"
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,826 @@
+[00:00] ...haciendo ya la prueba de hipote, algo que sea prueba computacional, que tienen que hacerlo, demostrarlo.
+[00:06] a nivel del modelo
+[00:09] el modelo computacional
+[00:11] Ya.
+[00:14] va a ser lo siguiente
+[00:15] ustedes habían construido
+[00:18] su hipótesis
+[00:19] Gracias.
+[00:21] Ya.
+[00:22] sus hipótesis, acá tienes hipótesis general, esta hipótesis general tiene que tener una trazabilidad
+[00:30] o su problema
+[00:31] ¿Qué dirás?
+[00:33] Ya, ¿tú ploré, ma?
+[00:35] problema que genera.
+[00:37] Su problema general tiene que estar asociado a su objetivo general.
+[00:42] su objetivo general tiene que estar asociado a su hipótesis general
+[00:46] Su hipótesis general tiene que estar...
+[00:50] asociado a una prueba de hipótesis.
+[00:54] Gracias.
+[00:55] o una prueba de hipótesis
+[00:57] y esa prueba de hipótesis, recién a partir de ahí tienen que estar las conclusiones.
+[01:04] la conclusión
+[01:06] por cada una de ellas.
+[01:07] La prueba de hipótesis es la dosimacia.  La prueba o también llamada dosimacia de hipótesis.
+[01:12] Ya.
+[01:14] Entonces, el siglo pasado
+[01:16] ahorita vamos a
+[01:18] vamos a ver hasta dónde llega. Cada uno es una característica diferente, por eso es que yo me voy a reunir con ustedes.
+[01:26] luego de estos es idéntico pero en los específicos  entonces acá tiene el problema específico
+[01:33] acá tiene su objetivo, en este caso su objetivo específico
+[01:39] tiene sus hipótesis específicas
+[01:44] ya tienes tu prueba de oxigensia de hipótesis específica
+[01:50] y las conclusiones.
+[01:52] Acá tiene el punto.
+[01:54] En estas conclusiones...
+[01:56] también lo que tienes es puedes aplicarlo a la general como a la específica
+[02:00] voy a descolocar acá
+[02:01] las
+[02:03] recomendación.
+[02:06] ese es el
+[02:09] la forma general
+[02:12] entonces, su problema general
+[02:15] se va a desglosar en varios objetivos en problemas específicos.
+[02:19] cada objetivo general, pero tiene que estar siempre trazable.
+[02:24] todo esto tiene que estar trazable, entonces, por ejemplo, si usted dice: acá hay un objetivo específico
+[02:31] acá viene el deseo, acá viene lo que se espera.
+[02:36] ya, el deseo, por ejemplo dice eso
+[02:39] yo lo que quiero es hacer, vamos acá, problemas, el problema de estudio, el problema general es
+[02:47] por ejemplo
+[02:50] Eh...
+[02:53] Quieres...
+[02:54] evaluar, por ejemplo, si quiero evaluar, vamos a evaluar la aplicación X y Z,
+[03:01] Ya te voy a colocar un ejemplo aquí abajo.
+[03:03] tú dices, evaluar la aplicación X, Y, Z para...
+[03:07] para el desempeño
+[03:11] para evaluar en el desempeño
+[03:14] de desempeño académico
+[03:19] académico.
+[03:20] de la
+[03:22] del curso ABC
+[03:26] en la institución
+[03:30] en la institución
+[03:32] Emeño
+[03:33] ya, eso es lo que quieres hacer
+[03:36] la evaluación
+[03:38] Entonces, evaluación, lo que quiero es para ver si es que...
+[03:43] El problema general es si es que genera
+[03:47] un impacto
+[03:50] ¿Qué va a loar?
+[03:51] para determinar
+[03:54] Gracias.
+[03:54] determinar
+[03:58] el impacto o la mejora
+[04:01] La mejora.
+[04:03] de desempeño. Entonces eso es.
+[04:06] como determinar
+[04:09] o haciendo barranco
+[04:12] ¿Cómo determinar para arreglar todo el conflicto?
+[04:16] cómo determinar la mejora o cómo
+[04:19] ¿Cómo mejorar?
+[04:20] Gracias.
+[04:21] ¿Cómo mejorar?
+[04:25] ¿Cómo mejorar el desempeño académico del curso ABC en la institución y en mi año?
+[04:30] problemas
+[04:31] ¡Decidido!
+[04:32] Gracias.
+[04:33] Gracias.
+[04:37] Entonces, lo que quieres hacer
+[04:40] lo que quieres hacer es
+[04:41] determinar o evaluar el desempeño académico, ¿verdad? Ese es el problema.
+[04:48] El problema general.
+[04:50] ¿Qué tengo que hacer como objetivo?
+[04:56] ¿Qué pasa?
+[04:57] Me dices...
+[04:58] Medir, siempre el objetivo es algo cuantificable. Medir, si usted dice yo lo que quiero es...
+[05:05] Mejorar, quiero disminuir.
+[05:08] quiero contrarrestar
+[05:09] quiero equiparar
+[05:11] Ese es el deseo.
+[05:14] Esa es la hipótesis.
+[05:16] ¿Ya?
+[05:17] Entonces el objetivo tiene que ser claro.
+[05:20] bueno, pero tú lo que vas a hacer es
+[05:22] Tú lo que me estás diciendo es
+[05:24] si usted me dice la mejora
+[05:26] Como yo lo voy a mejorar, está relacionado con la hipótesis, eso sí.
+[05:31] pero como vas a demostrar con tu objetivo
+[05:34] igual cuando el desempeño académico a través de la herramienta x 10 z
+[05:39] ¿Ya?
+[05:39] entonces lo que vas a hacer es evaluar
+[05:43] y la igual
+[05:45] Gracias.
+[05:46] evaluar el desempeño académico
+[05:49] a través de la aplicación de este empeño
+[05:53] académico
+[05:56] de curso
+[05:57] el y y el z en la institución mediante la aplicación
+[06:02] mediante la aplicación
+[06:06] la que ha desarrollado, que le habíamos colocado X, Z, ¿no?
+[06:10] EQUILICER.
+[06:11] ¿Qué hace?
+[06:13] ¿Con eso?
+[06:14] ves el objetivo
+[06:16] Ya está.
+[06:17] Y en la hipótesis, ¿cuál sería la hipótesis?
+[06:21] Gracias.
+[06:22] Ahí viene el deseo.
+[06:26] La hipótesis es el deseo.
+[06:28] el desempeño mejorará
+[06:33] puede ser el desempeño mejorará
+[06:35] o dices la aplicación X, Y, Z
+[06:38] Mejora. Mejora.
+[06:41] mejora, siempre es en ese  no es en un futurista, mejora
+[06:45] ¿Ya?
+[06:46] el desempeño porque porque tienes que
+[06:48] ser afirmativo en tu...
+[06:50] en tu deseo
+[06:52] Gracias.
+[06:54] fin.
+[06:54] Tú le dices
+[06:55] mediante mi aplicación
+[06:57] yo voy a mejorar.  ¿Se entiende?
+[07:00] si se entiende para que lo sepa claro porque es muy metodológico en esa parte
+[07:05] Ya.
+[07:05] Entonces dicen: "Si tú le dices 'mejorará',
+[07:08] Esto es el proyecto de investigación.
+[07:12] Gracias.
+[07:12] Es un proyecto, pero ahorita ustedes están en tesis.
+[07:15] ¿Qué están construyendo, Oleg?
+[07:16] Ya.
+[07:17] Entonces...
+[07:18] la aplicación X y Z
+[07:22] mejorar
+[07:23] Gracias.
+[07:24] Gracias.
+[07:26] Aquí viene
+[07:27] el deseo
+[07:29] Gracias.
+[07:29] La hipótesis.
+[07:32] y fe.
+[07:33] La aplicación X10E por la arquitectura folántica hace más o menos.
+[07:41] aquí viene la palabra clave, voy a colocarlo con mayúscula
+[07:44] porque eso tienes que demostrarlo.
+[07:48] Mejora el
+[07:51] desempeño académico  en la institución MNEO
+[07:56] ¿Me entienden?
+[07:58] ¿Sí?  Entonces acá la aplicación X, Y, Z mejora.  Eso tienes que demostrarlo.
+[08:06] Entonces cuando alguien te va y te va a ir a preguntar, hasta ahí dices, oye, mira, ¿tú crees que cuál es tu problema?  Es cómo lo puedo mejorar el desempeño académico del curso.
+[08:15] ¡Ay, ya!
+[08:16] Muy bien.
+[08:16] Es tu problema ahorita.
+[08:18] tu objetivo general
+[08:20] lo que voy a hacer es
+[08:21] voy a evaluar el desempeño académico
+[08:23] no sabiendo si mejora o no mejora, solamente es
+[08:26] puntual
+[08:27] ahí no debe haber sesgo
+[08:29] tú solamente evalúas
+[08:31] Ahí utilizas la taxonomía de Bloom.
+[08:35] Acá.
+[08:37] utilizas estos conceptos.
+[08:39] Ya, vamos a sacar.
+[08:41] lo puse con sistemas.super.site
+[08:47] Gracias.
+[08:48] ¡Gracias!
+[08:50] Gracias.
+[08:55] Ahí está, palabras claves.
+[08:58] Ya.
+[08:59] lo que tú tienes que hacer es
+[09:03] Miles.
+[09:03] evalúas, decides
+[09:06] Ya.
+[09:07] verbos asociados.
+[09:09] ¿Y estos son?
+[09:10] para objetivos, examinas, razonas, infieles, comparas,
+[09:15] ¿Ya?
+[09:16] Entonces, ¿cuál es lo que más se te adecua?
+[09:19] siempre el objetivo general
+[09:21] para hacer un refinamiento, porque de repente en ese transcurso se nos ha ido.
+[09:26] pero siempre el objetivo general
+[09:28] siempre tiene que estar más a la derecha que los objetivos específicos.
+[09:32] Gracias.
+[09:33] Ya.
+[09:34] Si tú dices, por ejemplo, que tu objetivo general va a ser una...
+[09:40] un examinar
+[09:42] no puede estar como objetivo específico un evaluado.
+[09:47] porque el objetivo específico no puede ser de menor orden
+[09:52] el objetivo general
+[09:54] Gracias.
+[09:55] ¿Ya? El orden que va es el siguiente:
+[09:59] Por eso acá viene esa estructura.
+[10:03] ¿Rotero o punitivo de orden inferior? De orden superior.
+[10:07] Si tú tienes tus objetivos específicos, por acá. Tus objetivos generales, por acá.
+[10:12] pero si usted va a elegir por ejemplo un general acá o acá un general y por acá veo y encuentro objetivos
+[10:19] que tiene que ver con
+[10:20] con los específicos
+[10:22] ahí no está cuadrando bien
+[10:24] en el desarrollo.
+[10:26] Ya.
+[10:27] La otra forma también es que sea bajo una forma cíclica.
+[10:31] o una forma encascada, por ejemplo,
+[10:34] analizar, diseñar, implementar, probar
+[10:38] o sea es uno detrás de otro
+[10:40] ya si la de comparar y en la de comprar también
+[10:48] puedes utilizar si puedes utilizar lo que pasa que el objetivo en general hay  varias varias vas a encontrar que son en diferentes
+[10:57] lo vas a encontrar en diferentes  lo que sí tienes que tener cuidado es siempre
+[11:02] el general es de mayor energía que los específicos.
+[11:07] Ya, eso es lo que te digo.
+[11:08] Gracias por ver el video.
+[11:12] muy bien, entonces ya que ustedes después quince la lectora, aquí viene demuéstralo
+[11:20] Ya.
+[11:21] Tú estás diciendo que es de la mejora, entonces acá viene la prueba.
+[11:28] la prueba estadística
+[11:32] ya la prueba estadística o la dosimasía de hipótesis
+[11:36] Pero acá en la prueba de estadística...
+[11:39] Eso es lo que ya viene en este curso.
+[11:41] Ya.
+[11:41] aquí viene en este curso va a depender del diseño de una ciencia
+[11:46] va a depender del diseño
+[11:49] Por ejemplo dices
+[11:50] ¿Pero qué sos?
+[11:51] Mi trabajo es pre-experimental, ¿se acuerdan? A ver, como para ir recordando.
+[11:56] El mío es pre-experimental. ¿Qué significa que sea pre-experimental?
+[11:59] Gracias.
+[12:02] Porque hubiera procurado esta vez mi hijo.
+[12:06] ¿Y por qué no lo has hecho casi experimental?
+[12:08] Porque tu trabajo se decuba muy bien en cosas experimentales.
+[12:11] El gran error es darle el a favor al miembro jurado.
+[12:15] Ah, sí, cierto, dije, sí, sí, usted tiene razón.
+[12:19] ¿Vas con forma de comer o si?  Explícame, ¿por qué deberías ser vuestro aliado de desfriado?
+[12:25] No.
+[12:26] porque ellos se afirman, fíjense un poco.
+[12:28] Debería haber sido así.
+[12:30] y cuando realmente no debería ser así.
+[12:32] Bueno, es un pre-experimental, chicos.
+[12:34] Gracias.
+[12:36] Es un escudillo de un grupo
+[12:38] antes y después
+[12:40] o también pueden medir solamente el efecto posterior nada más
+[12:44] nada más el objeto posterior.
+[12:46] asumiendo que en el antes
+[12:50] Gracias.
+[12:50] no ha habido ningún tipo de cambio, por ejemplo,
+[12:53] eh
+[12:56] yo voy a venir a dictarles acá con cómputo cuántico
+[13:00] y hay solamente lo único que tengo que decir, ¿alguno de ustedes conoce cómputo cuántico? ninguno
+[13:05] para que luego evaluarse
+[13:08] si ya me dijeron que no conocen sobre computación cuántica.
+[13:12] entonces no necesito evaluarlos antes
+[13:15] Estoy asumiendo.
+[13:17] quienes conocen
+[13:18] ¿Verdad?
+[13:19] entonces solamente necesito una evaluación posterior.
+[13:23] Entonces...
+[13:24] Ahora, si es que fuera un pre-experimental,
+[13:28] Antes y después, una evaluación antes.  Oye, yo voy a ver el rendimiento académico.  Acá hay un rendimiento académico, chicos.
+[13:35] ¿Será necesario que mida antes?
+[13:38] si, no? si, si, si, necesario que yo me diga
+[13:41] El sistema familiar, es un solo grupo.
+[13:44] lo miro después
+[13:47] entonces ahí voy a ver
+[13:49] y es que es
+[13:50] hago la prueba de normalidad, con algunos hemos avanzado el ciclo pasado
+[13:54] Ya.
+[13:55] hacemos la prueba de normalidad de los datos
+[13:58] y ahora pues eso ya lo hacen en R, en Python, no más tú no escribes, ya lo escribes, normalizas, pruebas de normalidad de los datos, ya ahí te devuelven.
+[14:07] En el caso
+[14:08] hacemos la prueba de la normalidad de los datos, me devuelve que es
+[14:12] normal, entonces aplico por ejemplo
+[14:15] ¡Bien, escuchen!
+[14:18] P.S. Kildreth
+[14:19] Aplicamos Test-Tuning a través de la prueba de WeGo.com.
+[14:23] entonces acá le voy a decir si mejoró o no mejoró, o sea no solamente seguí en
+[14:28] Por ahora ya estamos en el templo de la fe.
+[14:31] un año, una tesis
+[14:34] me tocó ahí pues
+[14:36] ser miembro del jurado y algo parecido, que querían hacer una mejora.
+[14:41] ¿Cómo demuestras que has hecho la mejora?
+[14:44] ¿Está permitido?
+[14:45] mire antes acá, aquí están los datos
+[14:49] y aquí están los de fuerza
+[14:51] y me entregaba, él me daba un reporte, un reporte tipo excelente.
+[14:56] Y me dice: "Acá están, mire, al ojo nada más se ve que está mejorando".
+[15:02] ¿Es una razón válida? No, no es una razón válida.
+[15:07] porque
+[15:09] puede haber sesgo
+[15:11] es como cuando salió
+[15:13] la votación a boca diurna de la última elección.
+[15:19] ¿no?  le daba por ganador  ¿verdad?
+[15:24] Pero había cerro.
+[15:26] entonces es posible el error, hay un error
+[15:31] Entonces él me decía: "No, pero a lo mejor nada más".
+[15:34] ¿A loco? No, no es a loco porque no ha visto la totalidad de los datos.
+[15:39] puede ser que ahí haya una diferencia, ¿no?
+[15:41] es como lo que pasó acá
+[15:43] La diferencia lo hizo el extranjero.
+[15:48] finalmente termina ganando peso por el extranjero.
+[15:52] Entonces...
+[15:53] Usted se acaba de notar cómo se acaba.
+[15:55] claro, te ibas a los diferentes departamentos  ganaba el
+[15:59] El sombrero 2, ¿no?
+[16:00] Entonces,
+[16:02] pero luego
+[16:04] no contaba con el voto de extranjeros.
+[16:06] e hizo cambiar.
+[16:08] Entonces, ese cambio se nos puede demostrar solamente con datos tabulares.
+[16:14] tienes que demostrarlo y a esto es donde vamos
+[16:16] a la prueba o a la dosimancia de hipótesis.
+[16:21] Después que has concluido esto, recién viene la parte de la conclusión.
+[16:25] Ya, ahí dices...
+[16:27] La conclusión lo vamos a redactar ahí conmigo, dependiendo de la...
+[16:31] de lo que encuentres como evidencia
+[16:34] ¿Ya?
+[16:35] acá la conclusión y la recomendación que la recomendación
+[16:39] Siempre terminan acá cayendo que la recomendación es...
+[16:43] una sugerencia de trabajo
+[16:46] siempre lo toman como una sugerencia de trabajo, lo cual es mentira.
+[16:49] la recomendación es un
+[16:51] trabajo futuro, recomendación de trabajo futuro, de trabajo no alcanzado,
+[16:57] Si ustedes dicen, yo he llegado a obtener una mejor desempeño, pero es imperceptible.
+[17:04] Entonces...
+[17:06] la recomendación es mejorar el método para la técnica mejor el procedimiento de repente cambiar de instrumento
+[17:13] eso es la recomendación de estudio pero recomendación de estudio futuro
+[17:19] ya no es una sugerencia de trabajo
+[17:23] Por ejemplo, dice...
+[17:24] eeeh
+[17:25] y peor cuando son ilícitos es peor si yo les he contado un casito que tuve
+[17:30] y uno
+[17:32] de una tesis donde estuve en la sustentación que decía
+[17:36] eh...
+[17:37] si han conocido ustedes el Windows desatendido
+[17:41] ¿Han escuchado hablar?
+[17:42] ya no son de esa época
+[17:45] el Windows desatendido era un Windows que
+[17:49] que lo optimizaban, que le quitaban componentes para que...  para que funcione el hardware con bajas limitaciones.
+[17:56] pero era pirata pues
+[17:58] era pirata
+[17:59] entonces ¿qué es lo que hacían?
+[18:02] de acuerdo en esa tesis
+[18:05] ellos colocaban en recomendaciones para abaratar costos así era literal para abaratar costos se recomienda
+[18:12] Usar Windows desatendido
+[18:16] pero eso, primero que no es recomendación
+[18:20] Y segundo, no es ético.
+[18:23] ¿No?
+[18:23] ¿Por qué? Porque tú no vas a... Es como decir...
+[18:26] Anda roba, ¿no?
+[18:29] Ya es...
+[18:30] Estás diciéndole en la arroba, ¿no?
+[18:32] Y lo otro es que no hay recomendación de estudio.
+[18:36] son de estudios, de trabajo futuro.
+[18:38] ¿Me acuerdo?
+[18:39] Entonces acá chicos...
+[18:41] aquí por ejemplo regresando esto
+[18:44] por ejemplo puedo hacer es
+[18:46] primero es la prueba
+[18:48] fue determinada de Wilcoxon.
+[18:51] Ya.
+[18:52] este de acá ya hay
+[18:54] y hay scripts del lado de la prueba de Wilcoxon para determinar la prueba de normalidad.
+[19:00] Y dependiendo de ello, por ejemplo, puedo hacer la de test student.
+[19:06] la de que estudian, si es que es de los datos normales
+[19:09] Ya.
+[19:12] dependiendo de ahora si recién se termina acá con la conclusión y recomendación de charabana entonces
+[19:19] ¿Cómo estamos actualmente?
+[19:22] lo que solicité
+[19:24] Hasta...
+[19:26] Lo obligatorio era esto hasta acá en el siglo pasado, muchos de ustedes ya han avanzado parte de la dosimacia de hipótesis,
+[19:35] y generaron sus conclusiones de ese objetivo.
+[19:38] La idea es que para este ciclo podamos concluir los codos externos.
+[19:43] Si ustedes dicen voy a trabajar en un centro hospitalario, voy a trabajar en un colegio, voy a trabajar...
+[19:50] en donde van a hacer la validación
+[19:53] ya comiencen a pulsar desde esta semana jóvenes su documento para que les pidan, para que les den permiso.
+[20:01] ya lo ideal es que puedan empezar la otra semana a hacer la validación
+[20:08] Una.
+[20:09] una nueva iteración de su validación. Me gustaría que puedan tener una segunda medición de lo que hicieron el ciclo pasado, porque el ciclo pasado
+[20:19] Fue muy rápido, fue muy alocado.
+[20:21] ¿Ya?
+[20:22] entonces
+[20:23] sugiero que para este ciclo
+[20:26] puedan tener adjuntando sus evidencias.
+[20:29] Adjuntan siempre las evidencias de trabajo.
+[20:32] si ustedes me dicen: "Profe, yo hice esto en el ciclo pasado"
+[20:36] Muchos.
+[20:37] Fueron, la verdad, honestamente lo entregaron por entregar el trabajito.
+[20:41] ¿Ya?
+[20:42] pero
+[20:44] pero habían cubierto el ciclo de vida.
+[20:47] entonces como no era para sustentación
+[20:49] ya pues los dejé pasar y por eso también están acá
+[20:53] pero no lo llegaron a concluir.
+[20:57] aprovechen este ciclo
+[21:00] Para desarrollarlo, vamos a ir trabajándolo igual en...
+[21:04] Gracias.
+[21:05] en las reuniones siguientes
+[21:09] y...
+[21:11] Gracias.
+[21:13] Gracias.
+[21:14] y pues no, nada más, esto nada más sería para que allá la semana
+[21:18] y a la semana 6 lo tengamos todo hecho.
+[21:21] Pobrecho
+[21:23] sugiero que la semana 7 si nos podamos encontrar
+[21:26] para que hagamos la...
+[21:31] hagamos la
+[21:34] la exposición de cómo sería
+[21:37] la publicación en el artículo.
+[21:39] No.
+[21:41] No sé si hay preguntas, chicos.
+[21:44] Gracias.
+[21:46] entonces en esta semana que queda
+[21:49] Esta que viene nada más...
+[21:51] Por favor, programemos ya la segunda validación.
+[21:55] que para contrastar los resultados que hemos obtenido por ejemplo ustedes son de colegio no
+[22:01] entonces
+[22:03] me gustaría tener evidencia del colegio por lo menos si no puedes en esta
+[22:07] ya que llega a todos los trámites a más tardar la subsiguiente.
+[22:11] para tener ya las evidencias de
+[22:15] la nueva evaluación.
+[22:17] ¿Ya?
+[22:19] Entonces de semana 9 a semana 15 todo es con respecto a la publicación del artículo.
+[22:26] nosotros acabamos las 7, se acabó el
+[22:28] Se acabó el tema del informe de tesis.  ¿Qué día nos están asignando los jurados?  Se supone que hacia la semana 7 deberían estar ustedes ya con miembros de jurado para que puedan sustentar.
+[22:39] en la semana 8.
+[22:40] ¿Pero dónde se...
+[22:41] el chacete al...
+[22:43] y
+[22:46] el documento, vamos a la parte de la tele, el artículo ya no se escondió.
+[22:59] es posible que ya no necesiten ni siquiera
+[23:03] ¿Por qué? Porque ya tienes, ese es el otro camino.
+[23:06] Ya.
+[23:09] Ahí tienes el otro camino.
+[23:11] Gracias.
+[23:13] ¿Hm?
+[23:15] ¡Ahhh!
+[23:18] ¿Qué otra pregunta?
+[23:22] Gracias.
+[23:23] Gracias.
+[23:26] Gracias.
+[23:27] las evidencias de esto, por ejemplo, por el caso de desarrollo que no es en campo, el caso de los proyectos, ¿cómo sería? ¿Potos de desarrollo de la generación?  ¿Dónde? ¿De la validación? ¿Cómo, cómo?  Claro, de la validación. ¿Cómo serían las pruebas para los que no son de trabajo de campo?  Ah, los que no son...
+[23:47] Ustedes van a hacer la prueba computacional.
+[23:50] los que no son
+[23:52] Bueno, ¿y usted quién otro? No hay otro. Todos los demás son de campo.
+[23:59] Gracias.
+[24:00] Gracias.
+[24:02] de repente por allá Sánchez
+[24:06] Ya. Entonces...
+[24:09] Nos preparamos para la siguiente semana. Porfa.
+[24:12] la siguiente validación para ver si es que se contrastan contra los resultados que ustedes han obtenido.
+[24:20] como es de campo tomen fotos
+[24:23] ya tomen fotos para tener las evidencias los que tengan en campo
+[24:27] ya, donde están, por ejemplo dice, estoy haciéndolo en colegio, bueno, tomara su botito en colegio, si estás haciendo en una clínica, tómalo botito.
+[24:34] ¿Estás haciendo en algún campo de...?
+[24:36] de cultivo, de repente si es de tu trabajo el campo de cultivo, hazlo y tomálas.
+[24:41] ¿ya? donde haces la validación
+[24:44] si lo haces a través de algún experto que valide tu software
+[24:50] Lo ideal es que sea grabado.
+[24:52] para que tengas evidencia que has hecho esa validación.  Y no solamente lo has mandado a generar
+[25:00] en la IA.
+[25:02] Que tenga sentido.
+[25:05] ¿Qué más?
+[25:08] Gracias.
+[25:11] Quiléandre.
+[25:13] tiene dudas
+[25:15] Leo
+[25:17] Gracias.
+[25:18] Gracias.
+[25:19] ¿Cómo va a ser tu validación Excelon?
+[25:22] ¿Qué te ocurrió?
+[25:23] cuatro partidos
+[25:24] Gracias.
+[25:25] simplemente falta retener algunas cosas de la tesis, por ejemplo.
+[25:29] Gracias.
+[25:30] podríamos aprovechar a agregar un par de objetivos.
+[25:33] Porque usted me agregó uno de la revisión sistemática.
+[25:36] Y de ahí a su casa se le quedó el niño de la chica.
+[25:39] Gracias.
+[25:39] Pero ese fue para efecto de la revisión, lo hicimos para efecto de que tengan nota en el parcial.  Sí.  Porque si no, no iba a ser un producto.  No, digo que creo que lo voy a eliminar.
+[25:49] ese ya se quita ya
+[25:50] solamente queda como documento aparte
+[25:53] queda como documento aparte
+[25:55] Entonces lo más seguro es que vamos a agregar un objetivo más para que tengas
+[25:59] que alineado.
+[26:00] al menos con cuatro objetivos
+[26:02] Todos, todos los proyectos.
+[26:04] los que son de...
+[26:07] revisiones que lo hice el siglo pasado que ustedes lo puedan hacer fue porque no tenían producto hasta esa
+[26:12] hasta ese momento
+[26:16] No, no tenía no, no, pues.
+[26:17] Me iban a atender bien.
+[26:19] solo mi única duda es desde antes es que todo el desempeño como la gran mayoría están asociados a una empresa o institución
+[26:26] En cambio, en lo mío, en los niños,
+[26:28] fundamental
+[26:31] Gracias.
+[26:32] O sea, no estoy acercándome a ninguna institución ni a ningún preso.
+[26:35] ¿Todo el impacto va a depender de quiénes son los miembros del jurado que te tocan?
+[26:41] porque no hay alcanceado, porque hay...
+[26:44] Así es, claro.
+[26:46] lo que pasa es que tenemos diferentes posiciones en la óptica de ver las testis
+[26:54] para mí es transparente si usted lo hace en campo o lo hace computacional, él también computacional, por ejemplo, ¿no?
+[27:00] y justamente ahí es donde
+[27:01] donde conversaba con
+[27:04] con acá su compañero en algún momento
+[27:06] por ejemplo, el maestro Jaime, él es
+[27:09] de la idea lo cual no está mal
+[27:11] sencillamente es una posición diferente
+[27:14] él quiere que sea sí o sí en la empresa.
+[27:17] Por lo tanto, si es CEO o CEO de empresa, tiene que estar
+[27:20] el año tiene que estar el lugar, ¿no?
+[27:23] entonces
+[27:25] pero no necesariamente todos son.
+[27:28] no todos son de empresa, por ejemplo, dice yo lo que quiero hacer es una optimización
+[27:34] Vamos, de un datagrama IP para telefonía.
+[27:37] no necesitas empresa
+[27:39] porque eso lo hace el cálculo matemático en una demostración
+[27:43] a nivel del modelo.
+[27:45] usted lo que dice yo lo que quiero hacer es
+[27:49] o un modelo de por ejemplo de pruning
+[27:52] en Biblia Learning.
+[27:55] no necesitas empresa. Entonces,
+[27:58] Hay investigaciones que no requieren empresa
+[28:01] pueden ser
+[28:03] Un aporte fenomenal, estupendo.
+[28:05] Pero todo va a depender de quién a quién te toca.
+[28:08] Y por ahí te toca, profesores,
+[28:12] Si tienen empresa, por ahí te van a estar dando con palo cada rato.
+[28:17] ¿Cuándo me van a asignar a mí por el jurado?  En la semana 7.  Pues así, a mí me hacen la doctora en la semana 7, tengo que rezar.  En la semana 7 te van a decir, como sugerencia te van a plantear,  te sugiero que hagas eso, pero ya más o menos eso te da una línea de vista por donde él quiere.
+[28:34] o sea puedes argumentarlo con una buena base teórica, una buena base sólida y una demostración
+[28:40] Sí, lo puedes hacer una demostración, pero como que se vuelve un poco más...
+[28:45] más duro, más rígido tener que hacer ese museo porque prácticamente está yendo casi en contra de lo que requiere.
+[28:53] pero eso tampoco es una causal
+[28:55] de esa aprobación.
+[28:57] el hecho de que yo no pienso igual que usted
+[29:00] No quiere decir que...
+[29:01] Por eso
+[29:02] ya... este mar
+[29:06] ¿no? porque si usted lo demuestra  y dice, me he pasado año y medio haciéndolo  para que solamente por la óptica de cómo ve  el proceso de investigación
+[29:14] entonces no es exactamente lo que se requiere
+[29:20] El siglo pasado han habido casos de...
+[29:23] de esto de...
+[29:28] validación computacional
+[29:30] ha pasado.
+[29:31] ni el pasado día.
+[29:33] Es que
+[29:34] ustedes van a sacar su título de ingeniero de computación institucional
+[29:39] o sea, si dices de computación bajo el mismo principio de computación
+[29:43] Es ciencia computacional, o sea, demostración computacional.  Ahora, sistema y sistema de información, pero ustedes tienen de computación.
+[29:51] así que
+[29:52] está dentro del perfil, no estarías engañando
+[29:56] solamente que hay que argumentarlo bien
+[29:59] Yo ahorita este que, este, no sé no jurados están mirándonos tocando, que son tres que siempre veo.
+[30:05] siempre son tres a quienes son a los que siempre decir
+[30:13] a los que normalmente siempre los veo  son Leturia, Eve y
+[30:17] y otro mal, ¿no?  si es el ciclo pasado solamente hubo uno nada más
+[30:22] uno namastu, normalmente lo veo a Ever, a Leturia
+[30:28] lo veo a la tarde
+[30:30] a Maestro Gaitán también lo veo por ahí
+[30:32] Fernando Castillo
+[30:34] son los cuatro que normalmente siempre los veo. Los que son más flexibles, asequibles son el productor Bailón,
+[30:53] el productor José Calderón Sedano
+[30:56] el profesor Edilberto Chávez  el profesor ellos son más asequibles
+[31:04] La profesora Silvia.
+[31:07] Sí, más buena que esto. No, son más, o sea, no, no. El profesor Eber también es bastante asequible, no, no, no es como, no.
+[31:17] tranquilo los que son poco más duro más rígidos es nuestro fernando castillo
+[31:25] José Castañeda
+[31:28] - ¿Qué pasa? ¿Estás bien? - Sí, estoy bien.
+[31:31] ¿Propagina está desnuda?
+[31:33] no lo he visto estas últimas veces
+[31:36] no lo he visto  si pero  normalmente él va por el aporte  por ejemplo él es Irski  te muestras así solamente eso te va a dar  un palo solamente te va a dar un palo
+[31:53] tenemos posiciones diferentes de cómo verla al lado de la investigación así que
+[31:58] ¿Qué pasaría si...?
+[32:00] los tres jurados que se juntan están en contra de la validación por punto de cierta instancia.
+[32:07] que me ha pasado
+[32:08] eeeh
+[32:09] ¿Más que por educación?
+[32:11] ya yo tuve que ir a
+[32:16] Mackie lo aprueban justamente porque yo fui a reclamar por él porque
+[32:21] es que no era una causal de desaprovisión, el hecho es que no me puede gustar el tema de algunos, yo lo veo, ah, ese tema que horrible, ¿no?
+[32:27] Pero...
+[32:29] Pero bueno, ya estás cumpliendo el ciclo, el proceso de vida del desarrollo de la solución.
+[32:36] ¿Qué puedo hacer y apoyar?
+[32:38] Ya lo hiciste, pues, ¿no? Ya lo hiciste...
+[32:40] por tus dificultades,
+[32:42] eres estudiante
+[32:44] todos hemos pasado así, entonces es entendible.
+[32:47] pero decirte a última hora: "Está todo mal, cámbialo, te voy a desaprobar por eso".
+[32:54] Tú puedes aprobar, pero por...
+[32:56] porque no sabe fundamentar, no sabe argumentar, no sabe exponer, no sabe debatir, no sabe defender su trabajo.
+[33:04] pero que tú desapruebes porque a mí me parece mal el proyecto, no.
+[33:09] no, no debería ser  a mí me ha pasado un caso
+[33:13] por X, bueno varios casos
+[33:15] No, que ese proyecto que...
+[33:17] pero no me gusta eso
+[33:18] acá no estamos evaluando si te gusta
+[33:21] acá nada más tú evalúas que
+[33:24] si el estudiante está cumpliendo el método científico.
+[33:28] él está diciendo de cuál es su problema, cuál es su objetivo, cuáles son sus hipótesis, cuáles son sus resultados.
+[33:34] ¿Ya?
+[33:35] está demostrándote a través de tu sistema que está haciendo una demostración
+[33:40] metodológicamente correcta
+[33:42] que el tema puede ser discutible  en efecto puede ser discutible
+[33:47] pero eso tenías tiempo de decirlo cuando estabas en la corrección, no ahora en la sustentación no le puedes decir eso.
+[33:54] las presentaciones
+[33:55] Si tú te quedas callado, si tú no sabes responder, si tú hablas una cosa por otra.
+[34:00] eso evaluó
+[34:02] no evalúes, o sea si te quedas callado  no puedo responder ahí si ese es fatal
+[34:08] o si comienzas a hablar
+[34:10] a debatir argumentos que no tienen nada que ver con tu trabajo si a ese
+[34:17] hablar mucho o hablar poco es...
+[34:20] Eso es.
+[34:22] Eso está mal, pero sobre tu informe, lo que sí hacen es cuestionarte la razón, el argumento, te piden argumentos.
+[34:31] no se, que mas preguntas chicos?
+[34:34] Fue bonito cuando ustedes preguntaron.
+[34:41] Gracias.
+[34:42] entonces los que ya han culminado sus proyectos
+[34:45] vamos a agregar
+[34:48] un par de objetivos más, uno o dos objetivos más
+[34:50] Ya.
+[34:51] para que tengamos donde es el aporte  de repente usted encontró aporte  en el suyo todavía no llegaste
+[34:59] por hoy.
+[35:00] ya tienes aporte ya tienes ha superado tu estado del arte
+[35:04] Sí.
+[35:05] en los tres objetivos que insistimos en poder.
+[35:09] ¿Sí?
+[35:10] Si lo llegas a superar.
+[35:12] ya va acá entonces está o sea si tiene por ahí algo donde hagas una mejora
+[35:17] y el otro es sobre eso construir un nuevo  un nuevo vacío de investigación sobre lo mismo que estás haciendo
+[35:24] ver
+[35:26] ¿Qué nuevo vacío de investigación? ¿Qué irá?
+[35:28] puedes...
+[35:30] poder fortalecer en esta
+[35:32] en estos
+[35:35] cinco semanas que nos quedan.
+[35:38] ya
+[35:40] Preguntas.
+[35:42] adicionales
+[35:45] Gracias.
+[35:46] Gracias.
+[35:48] Profe, con respecto a lo de la publicación del artículo 8, te dice que por ejemplo, esto va a ser desde la semana 7 en adelante.
+[35:56] Gracias.
+[35:57] y entonces en ese caso si es que no se logra en este caso
+[36:01] se admite la publicación
+[36:03] ¿Qué sigue después de eso?
+[36:04] con el perro.
+[36:06] en el caso de nosotros no, porque yo no tenía que...  Tú tienes dos caminos, tú tienes el camino de la sustentación,  que eso sí o sí se va a dar.
+[36:13] que van a pedir en caso de la sustentación, salvo
+[36:16] que tú tengas, que te aprueben
+[36:18] artículo de la semana por ejemplo 12, 11 ya estás con tu artículo
+[36:22] lo puedes presentar
+[36:24] lo presento a ustedes, ya lo volví, ya estaba revisado
+[36:27] Ya no lo necesitas, ¿eh?
+[36:29] Si quieres, haces un trámite formal nada más, pero ya con tu artículo ya sabes, porque ese es el camino también que te da la universidad.
+[36:36] hace dos años
+[36:37] Se empezó con esto de los artículos.
+[36:40] O sea, tienes cualquiera de esos caminos es válido.
+[36:43] pero te aceptan artículos de investigación, no de revisión.
+[36:49] por ejemplo los RCE, la revisión sistemática y la literatura
+[36:52] Ese también puede ser un artículo, pero no es para él.
+[36:59] Eso no se admite para ti.
+[37:01] solamente
+[37:02] Se admite artículo donde haya sido de investigación, de experimentación.
+[37:07] no de revista
+[37:09] creado
+[37:12] acá en la revista  si quieres ir revisando  acá está el CIMAGO
+[37:21] Gracias.
+[37:22] ya, sin más algo
+[37:25] encima algo
+[37:29] yo lo que hago es por ejemplo, vamos haciendo un ejercicio rápido para que ustedes vayan viendo si quieren
+[37:35] acá en Yemeni me sale
+[37:39] Es un buen indexador para revistas. Yo lo busco encima de mí y con eso entro a buscar.
+[37:44] rápidamente. Mira, por ejemplo, ¿tu tema cuál es?  ¿Qué quieren hacer? Vamos a ir  rápido para que vayan viendo cuáles y dónde van a publicar.  Es generación de historias interactivas.
+[37:53] y al proceso de acá.
+[37:55] mi título de investigación, mi título de
+[38:00] investigación
+[38:02] es
+[38:04] Vamos, diga.  La comparación de las arquitecturas...  Comparación de arquitecturas...
+[38:12] monolítica para el
+[38:15] la coherencia narrativa en campaña de los miembros.
+[38:18] como hay gente, gente inmunolítica
+[38:22] y monolíticas
+[38:26] para la generación  de campañas generadoras
+[38:32] Hola, camaradas.
+[38:33] de campaña? No, para la comparación de la coherencia narrativa en campañas generales. Para qué? Para la comparación de la coherencia narrativa. Para la comparación.
+[38:48] para la comparación  lo que es la comparación de la coherencia narrativa  en arquitectura de un museo
+[38:54] comparación de coherencia
+[38:56] De la coherencia en la realidad.
+[38:59] Gracias.
+[38:59] es una arquitectura
+[39:03] con tejentes monolíticas, en architectura con tejentes monolíticas, en campañas en
+[39:08] Sí, la que hace.
+[39:15] ¿Qué me da la pena?
+[39:17] Gracias.
+[39:19] - Sí, señor.
+[39:20] eh...
+[39:23] ¡Guau!
+[39:25] revistas
+[39:28] indexadas
+[39:29] de alto impacto en cuartiles.
+[39:38] en cuartiles
+[39:41] Gracias.
+[39:42] 1 y 2
+[39:44] Ya.
+[39:46] ¿Cuál es?
+[39:47] revistas y lejanas del Departamento de Aguas Aguas Unidos
+[39:51] Gracias.
+[39:52] Gracias.
+[39:53] con alto SJR.
+[39:58] ¡Sí!
+[39:59] Acosto
+[40:01] al costo cero
+[40:05] si
+[40:06] Gracias.
+[40:07] recomiendas
+[40:15] Ya
+[40:16] Gracias.
+[40:17] Entonces, aquí...
+[40:18] a partir de esto
+[40:21] de las revistas lo buscamos  estimado SSL  el Google de las revistas
+[40:27] Ya.
+[40:28] Gracias.
+[40:29] ¿Trabajamos por acá?
+[40:36] Ojo, que para la publicación de tu revista tiene que ser...
+[40:41] Eh...
+[40:43] diferentes
+[40:46] mira por ejemplo aquí ves
+[40:49] mira, cero de APC, o sea, no te cuesta
+[40:54] Ese es un cuartillo suficiente.
+[40:58] Por ejemplo este, este me da...
+[41:01] entonces voy acá, yo selecciono esta revista
+[41:05] y me voy a Cáceres-Malos.
+[41:12] Ya cartezo este, ¿no?
+[41:13] Y me recomiendo otra más, la más cercana.
+[41:16] entonces, este de acá
+[41:19] este es el agregado
+[41:21] y a partir
+[41:23] de esto, pero tiene un factor de impacto bajo.
+[41:27] pero bueno, por ti es judo.
+[41:29] Gracias.
+[41:30] A ver.
+[41:31] Gracias.
+[41:32] Adiós, adiós.
+[41:34] Gracias.
+[41:37] Gracias.
+[41:42] Entonces,
+[41:44] Si vas a hacer para el caso de tu trabajo, lo que tienes que hacer es directamente ir acá.
+[41:50] Ah, la gente está...
+[41:54] donde la autor
+[41:58] Gracias.
+[41:59] Gracias.
+[42:01] Gracias.
+[42:02] Gracias.
+[42:04] Gracias.
+[42:05] ¡Ah!
+[42:06] Gracias.
+[42:10] Solamente esa revista.
+[42:11] Gracias.
+[42:12] Ya, solamente es para subir.
+[42:16] y la tiene sorda la cuestión
+[42:18] O de...
+[42:19] ¡Ah!
+[42:19] Ya, tiene la Sevilla, la CM...
+[42:22] es decir, este es el bloque 1
+[42:24] Gracias.
+[42:26] Me cubre.
+[42:27] y aquí te hice el gráfico
+[42:29] Pero todos estos, revísalos y está acá en...
+[42:33] en esquimado. ¿Por qué? Porque hay...
+[42:36] Revistas Predadoras.
+[42:39] esas predadoras que aceptan al toque
+[42:41] Gracias.
+[42:42] Gracias.
+[42:42] ya pero si quedan con tu trabajo
+[42:48] Gracias.
+[42:49] ¡Gracias!
+[42:54] Gracias por ver el video.
+[42:57] Eso es.
+[42:59] si quieres no caer en la estafa
+[43:01] lo buscas acá.
+[43:04] todas estas revistas
+[43:08] son falsas.
+[43:12] Mira, va a estar ahí.
+[43:15] Gracias por ver el video.
+[43:19] 2.780 revistas
+[43:21] ¡Alta!
+[43:23] y dice: "no te preocupes, ya...
+[43:26] pero supuestamente te lo van a publicar, te dan un número todo, de un ICBM
+[43:33] ¡Gracias!
+[43:34] le da a los entregados
+[43:36] te acabo de traer tu trabajo de manera gratuita. Ya. Entonces siempre
+[43:41] revisar acá en el CIMAGO. El CIMAGO es el que
+[43:44] acá te dice si es a todos los que estén acá
+[43:47] es porque son legales.
+[43:49] si tu lo googleas nada mas dame una revista para hacer esto
+[43:54] Ya es que ni esto.
+[43:56] hay que hacer esa revista y así aflitar
+[44:00] supuestamente te aceptan, te dan... te dicen: "ya, me das 100 dólares y ya está publicado"
+[44:08] mentira
+[44:10] Con regreso a Jairo.
+[44:12] Bueno, entonces por esta semana lo vamos a dejar ahí.
+[44:15] Ya.
+[44:16] porfa
+[44:18] necesitamos bien las revisiones
+[44:21] Los que tengan algunas dudas...
+[44:23] los que requieran algún apoyo
+[44:25] se queda para ir trabajando
+[44:28] para
+[44:29] para ir revisando qué es lo que van a hacer los demás.
+[44:32] La otra semana necesito ya evidencias de las validaciones.

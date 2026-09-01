@@ -1,0 +1,717 @@
+{
+  "modelo": "google/gemma-4-31B-it",
+  "fecha": "2026-09-01T16:30:38.784501",
+  "precision": 0.9411764705882353,
+  "recall": 0.8421052631578947,
+  "f1": 0.8888888888888888,
+  "evidencia_literal": 1.0,
+  "registro": [
+    {
+      "turno": "T01",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 8465
+    },
+    {
+      "turno": "T02",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 2131
+    },
+    {
+      "turno": "T03",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 1718
+    },
+    {
+      "turno": "T04",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 7891
+    },
+    {
+      "turno": "T05",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 1114
+    },
+    {
+      "turno": "T06",
+      "rep": 0,
+      "salida": {
+        "events": [
+          {
+            "entity": "ordulf",
+            "event_kind": "bribe_offered",
+            "evidence": "Deslizo las monedas por debajo de la reja"
+          }
+        ],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [
+            [
+              "ordulf",
+              "bribe_offered"
+            ]
+          ],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 3598
+    },
+    {
+      "turno": "T07",
+      "rep": 0,
+      "salida": {
+        "events": [
+          {
+            "entity": "brea",
+            "event_kind": "bribe_offered",
+            "evidence": "Dos coronas y usted no vio a nadie cruzar anoche."
+          }
+        ],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [
+            [
+              "brea",
+              "bribe_offered"
+            ]
+          ],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 3278
+    },
+    {
+      "turno": "T08",
+      "rep": 0,
+      "salida": {
+        "events": [
+          {
+            "entity": "brea",
+            "event_kind": "bond_target_protected",
+            "evidence": "Me pongo entre los dos matones del Gremio y el puesto de la anciana"
+          }
+        ],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [
+            [
+              "brea",
+              "bond_target_protected"
+            ]
+          ],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 3578
+    },
+    {
+      "turno": "T09",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": [
+          {
+            "entity": "brea",
+            "entity_type": "npc",
+            "field": "knowledge",
+            "value": "Alguien cobra un segundo peaje de noche que no se apunta en ningún libro",
+            "evidence": "alguien cobra un segundo peaje de noche. Lo vimos. No lo apunta en ningún libro."
+          }
+        ]
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [
+            [
+              "brea",
+              "knowledge"
+            ]
+          ],
+          "sobrantes": [],
+          "perdidos": [
+            [
+              "peaje_falso",
+              "next_step_known"
+            ]
+          ]
+        }
+      },
+      "ms": 7088
+    },
+    {
+      "turno": "T10",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": [
+          {
+            "entity": "molino_viejo",
+            "entity_type": "location",
+            "field": "detail",
+            "value": "observed",
+            "evidence": "Dentro, el suelo está seco: alguien tapó el boquete del techo con lona, y no hace mucho. Hay ceniza fría en un rincón y ocho marcas de cuchillo en la viga"
+          }
+        ]
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [
+            [
+              "molino_viejo",
+              "detail"
+            ]
+          ],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 6595
+    },
+    {
+      "turno": "T11",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": [
+          {
+            "entity": "ordulf",
+            "entity_type": "npc",
+            "field": "status",
+            "value": "captured",
+            "evidence": "Cae contra la ventanilla enrejada y se queda ahí",
+            "witnessed": true
+          }
+        ]
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "wit_ok": 1,
+        "wit_esp": 1,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [
+            [
+              "ordulf",
+              "status"
+            ]
+          ],
+          "sobrantes": [],
+          "perdidos": [
+            [
+              "gremio_vado",
+              "knows_about_party"
+            ]
+          ]
+        }
+      },
+      "ms": 3571
+    },
+    {
+      "turno": "T12",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 1294
+    },
+    {
+      "turno": "T13",
+      "rep": 0,
+      "salida": {
+        "events": [
+          {
+            "entity": "brea",
+            "event_kind": "secret_entrusted",
+            "evidence": "Porque la orden la tengo yo. Firmada hace tres semanas."
+          }
+        ],
+        "deltas": [
+          {
+            "entity": "brea",
+            "entity_type": "npc",
+            "field": "secret_revealed",
+            "value": "Tiene la orden firmada de desalojo del Mercado Bajo guardada sin ejecutar",
+            "evidence": "Porque la orden la tengo yo. Firmada hace tres semanas."
+          }
+        ]
+      },
+      "eval": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 2,
+        "ev_total": 2,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [
+            [
+              "brea",
+              "secret_entrusted"
+            ],
+            [
+              "brea",
+              "secret_revealed"
+            ]
+          ],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 6671
+    },
+    {
+      "turno": "T14",
+      "rep": 0,
+      "salida": {
+        "events": [
+          {
+            "entity": "brea",
+            "event_kind": "promise_broken",
+            "evidence": "Al final no fuimos a hablar con Herda. Se nos pasó."
+          },
+          {
+            "entity": "brea",
+            "event_kind": "promise_broken",
+            "evidence": "Al final no fuimos a hablar con Herda"
+          }
+        ],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 2,
+        "ev_total": 2,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [
+            [
+              "brea",
+              "promise_broken"
+            ]
+          ],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 4248
+    },
+    {
+      "turno": "T15",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": [
+          {
+            "entity": "mercado_bajo",
+            "entity_type": "location",
+            "field": "state",
+            "value": "damaged",
+            "evidence": "tres tenderetes del extremo norte son carbón mojado"
+          }
+        ]
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [
+            [
+              "mercado_bajo",
+              "state"
+            ]
+          ],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 5585
+    },
+    {
+      "turno": "T16",
+      "rep": 0,
+      "salida": {
+        "events": [
+          {
+            "entity": "brea",
+            "event_kind": "promise_kept",
+            "evidence": "Le entrego a Brea las tres fichas de peaje nocturno"
+          },
+          {
+            "entity": "brea",
+            "event_kind": "promise_kept",
+            "evidence": "Le entrego a Brea las tres fichas de peaje nocturno"
+          }
+        ],
+        "deltas": [
+          {
+            "entity": "brea",
+            "entity_type": "npc",
+            "field": "knowledge",
+            "value": "Hettir ha sido despojado de las fichas de peaje nocturno y estas han sido alteradas",
+            "evidence": "Con esto tengo suficiente."
+          }
+        ]
+      },
+      "eval": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 1,
+        "ev_ok": 3,
+        "ev_total": 3,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [
+            [
+              "brea",
+              "knowledge"
+            ],
+            [
+              "brea",
+              "promise_kept"
+            ]
+          ],
+          "sobrantes": [],
+          "perdidos": [
+            [
+              "peaje_falso",
+              "status"
+            ]
+          ]
+        }
+      },
+      "ms": 20715
+    },
+    {
+      "turno": "T17",
+      "rep": 0,
+      "salida": {
+        "events": [
+          {
+            "entity": "brea",
+            "event_kind": "promise_made",
+            "evidence": "Le traemos las fichas del peaje nocturno con el sello raspado"
+          },
+          {
+            "entity": "brea",
+            "event_kind": "promise_kept",
+            "evidence": "Le traemos las fichas del peaje nocturno con el sello raspado."
+          }
+        ],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "ev_ok": 2,
+        "ev_total": 2,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [
+            [
+              "brea",
+              "promise_made"
+            ]
+          ],
+          "sobrantes": [
+            [
+              "brea",
+              "promise_kept"
+            ]
+          ],
+          "perdidos": []
+        }
+      },
+      "ms": 7043
+    },
+    {
+      "turno": "T18",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 1241
+    },
+    {
+      "turno": "T19",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": [
+          {
+            "entity": "kael",
+            "entity_type": "character",
+            "field": "inventory",
+            "value": "ballesta",
+            "evidence": "Le quito la ballesta al bandido caído"
+          },
+          {
+            "entity": "kael",
+            "entity_type": "character",
+            "field": "hp_current",
+            "value": 22,
+            "evidence": "quedas en 22"
+          }
+        ]
+      },
+      "eval": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 2,
+        "ev_total": 2,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [
+            [
+              "kael",
+              "hp_current"
+            ],
+            [
+              "kael",
+              "inventory"
+            ]
+          ],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 9488
+    },
+    {
+      "turno": "T20",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": [
+          {
+            "entity": "gremio_vado",
+            "entity_type": "faction",
+            "field": "knows_about_party",
+            "value": true,
+            "evidence": "tres nombres escritos a mano: los vuestros",
+            "witnessed": true
+          }
+        ]
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "wit_ok": 0,
+        "wit_esp": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [
+            [
+              "gremio_vado",
+              "knows_about_party"
+            ]
+          ],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 4345
+    }
+  ]
+}

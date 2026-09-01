@@ -1,0 +1,585 @@
+[
+  {
+    "id": "T01",
+    "kind": "trivial",
+    "_proposito": "Tirada pura. La compuerta debe dispararse (hay resultado mecánico) pero el extractor NO debe producir deltas narrativos.",
+    "scene": "mercado_bajo",
+    "npcs_present": [],
+    "player_buffer": [
+      {
+        "pc": "mira",
+        "text": "Miro los puestos buscando algo fuera de lugar. Percepción (resultado: 16)"
+      }
+    ],
+    "dm_output": "Nada salta a la vista. Doce puestos, toldos remendados, el olor a pescado de ayer. Un chico recoge cuerda junto al segundo tenderete y no levanta la cabeza cuando pasas.",
+    "expected_gate": true,
+    "expected_deltas": [],
+    "expected_events": []
+  },
+  {
+    "id": "T02",
+    "kind": "trivial",
+    "_proposito": "Consulta mecánica sin acción. Ni compuerta ni deltas.",
+    "scene": "mercado_bajo",
+    "npcs_present": [],
+    "player_buffer": [
+      {
+        "pc": "tobi",
+        "text": "¿Cuánto me queda de movimiento?"
+      }
+    ],
+    "dm_output": "Te quedan quince pies. No estás en combate, así que puedes moverte por el mercado sin contarlos.",
+    "expected_gate": false,
+    "expected_deltas": [],
+    "expected_events": []
+  },
+  {
+    "id": "T03",
+    "kind": "conversational",
+    "_proposito": "Diálogo de cortesía con PNJ vacío. Nena no tiene IBF: nada modula. Cortesía trivial no mueve la aguja lo suficiente.",
+    "scene": "posada_remo",
+    "npcs_present": [
+      "nena"
+    ],
+    "player_buffer": [
+      {
+        "pc": "kael",
+        "text": "\"Tres cuartos, si le sobran. Y algo caliente.\""
+      },
+      {
+        "pc": "kael",
+        "text": "Dejo las monedas sobre la barra sin regatear."
+      }
+    ],
+    "dm_output": "Nena cuenta las monedas con el pulgar sin mirarlas. \"Dos cuartos, no tres. El del fondo tiene gotera.\" Empuja una moneda de vuelta hacia ti y grita algo hacia la cocina.",
+    "expected_gate": false,
+    "expected_deltas": [],
+    "expected_events": []
+  },
+  {
+    "id": "T04",
+    "kind": "conversational",
+    "_proposito": "TRAMPA. Broma repetida. El grupo pregunta lo mismo tres veces como gag. La capa 2 debe salvarlo: se está generando interacción, no hay estancamiento.",
+    "scene": "posada_remo",
+    "npcs_present": [
+      "nena"
+    ],
+    "player_buffer": [
+      {
+        "pc": "mira",
+        "text": "\"¿Y usted no sabrá nada del molino viejo?\""
+      },
+      {
+        "pc": "tobi",
+        "text": "\"¿Y ahora sí sabe algo del molino viejo?\""
+      },
+      {
+        "pc": "kael",
+        "text": "\"¿Y ahora?\""
+      },
+      {
+        "pc": "mira",
+        "text": "Nos reímos como idiotas. Es el chiste de la semana."
+      }
+    ],
+    "dm_output": "Nena los mira sin parpadear. \"Sigo sin saber nada del molino.\" Se seca las manos en el delantal. \"Y a este paso, el que no va a saber nada va a ser el cocinero de vuestra cena.\"",
+    "expected_gate": false,
+    "expected_deltas": [],
+    "expected_events": []
+  },
+  {
+    "id": "T05",
+    "kind": "conversational",
+    "_proposito": "TRAMPA CRÍTICA. Intención declarada, NO ejecutada. Subjuntivo y condicional. El extractor NO debe matar a nadie.",
+    "scene": "mercado_bajo",
+    "npcs_present": [],
+    "player_buffer": [
+      {
+        "pc": "kael",
+        "text": "\"Si ese recaudador vuelve a mirarme así, lo mato.\""
+      },
+      {
+        "pc": "mira",
+        "text": "\"No lo vas a matar.\""
+      },
+      {
+        "pc": "kael",
+        "text": "\"Podría.\""
+      },
+      {
+        "pc": "mira",
+        "text": "\"Podrías. No lo vas a hacer.\""
+      }
+    ],
+    "dm_output": "Desde la ventanilla de la torre, a cuarenta pasos, Ordulf sigue mirando. No parece tener prisa por dejar de hacerlo.",
+    "expected_gate": true,
+    "expected_deltas": [],
+    "_nota_validador": "La compuerta SÍ pasa (aparece el verbo 'mato'). El extractor debe rechazarlo. Este turno mide precisión: si produce un delta de status=dead, sobre-extrajo.",
+    "expected_events": []
+  },
+  {
+    "id": "T06",
+    "kind": "consequential",
+    "_proposito": "Soborno a Ordulf (principle −90). Debe SUBIR aprecio y respeto: entienden cómo funciona el mundo.",
+    "scene": "casa_peaje",
+    "npcs_present": [
+      "ordulf"
+    ],
+    "player_buffer": [
+      {
+        "pc": "mira",
+        "text": "\"Cuatro coronas por pasar los tres. Y otras dos para que el libro diga que pasaron dos.\""
+      },
+      {
+        "pc": "mira",
+        "text": "Deslizo las monedas por debajo de la reja, sin contarlas en voz alta."
+      }
+    ],
+    "dm_output": "Ordulf no toca las monedas. Las mira el tiempo justo para contarlas de un vistazo y luego levanta los ojos hacia Mira con algo que casi es aprobación. \"Vuestra merced comprende el oficio. Es raro.\" Moja la pluma. \"Pasaron dos.\"",
+    "expected_gate": true,
+    "expected_deltas": [],
+    "expected_events": [
+      {
+        "entity": "ordulf",
+        "event_kind": "bribe_offered",
+        "evidence": "Vuestra merced comprende el oficio",
+        "rationale": "resolve_event calcula la magnitud según la personalidad (antes a mano: affinity 2, respect 5)"
+      }
+    ]
+  },
+  {
+    "id": "T07",
+    "kind": "consequential",
+    "_proposito": "MISMO EVENTO, PNJ OPUESTO. Brea (principle +95). Debe DESPLOMAR los tres ejes. Es la demostración del modulador de personalidad.",
+    "scene": "vado_ceniza",
+    "npcs_present": [
+      "brea"
+    ],
+    "player_buffer": [
+      {
+        "pc": "kael",
+        "text": "\"Sargento. Dos coronas y usted no vio a nadie cruzar anoche.\""
+      },
+      {
+        "pc": "kael",
+        "text": "Le ofrezco las monedas con la palma abierta."
+      }
+    ],
+    "dm_output": "Brea baja la vista a la mano de Kael y la deja ahí un segundo largo. Cuando vuelve a hablar no ha subido la voz, y por eso mismo es peor. \"Guarda eso, muchacho. Guárdalo antes de que lo vea alguien y tenga que hacer algo al respecto.\" Da media vuelta y sigue su ronda. No mira atrás.",
+    "expected_gate": true,
+    "expected_deltas": [],
+    "expected_events": [
+      {
+        "entity": "brea",
+        "event_kind": "bribe_offered",
+        "evidence": "Guarda eso, muchacho",
+        "rationale": "resolve_event calcula la magnitud según la personalidad (antes a mano: affinity -15, trust -20, respect -25)"
+      }
+    ]
+  },
+  {
+    "id": "T08",
+    "kind": "consequential",
+    "_proposito": "Vínculo tocado. El grupo defiende el Mercado Bajo, que es bond_target de Brea. Delta grande, no genérico.",
+    "scene": "mercado_bajo",
+    "npcs_present": [
+      "brea"
+    ],
+    "player_buffer": [
+      {
+        "pc": "kael",
+        "text": "Me pongo entre los dos matones del Gremio y el puesto de la anciana."
+      },
+      {
+        "pc": "kael",
+        "text": "\"El toldo se queda donde está.\""
+      },
+      {
+        "pc": "tobi",
+        "text": "Levanto la mano y dejo que se vea la chispa entre los dedos. No lanzo nada."
+      }
+    ],
+    "dm_output": "Los dos hombres del Gremio miden a Kael, miden la chispa de Tobi, y deciden que el papeleo no vale tanto. Se van sin decir nada. Desde el otro extremo del mercado, Brea lo ha visto todo. Se acerca despacio. \"Esa mujer se llama Herda y lleva cuarenta años poniendo ese toldo.\" Hace una pausa. \"Gracias.\"",
+    "expected_gate": true,
+    "expected_deltas": [],
+    "expected_events": [
+      {
+        "entity": "brea",
+        "event_kind": "bond_target_protected",
+        "evidence": "Gracias.",
+        "rationale": "resolve_event calcula la magnitud según la personalidad (antes a mano: affinity 25, respect 12)"
+      }
+    ]
+  },
+  {
+    "id": "T09",
+    "kind": "consequential",
+    "_proposito": "Conocimiento adquirido por un PNJ. Campo append-only con turno de aprendizaje.",
+    "scene": "vado_ceniza",
+    "npcs_present": [
+      "brea"
+    ],
+    "player_buffer": [
+      {
+        "pc": "mira",
+        "text": "\"Sargento, alguien cobra un segundo peaje de noche. Lo vimos. No lo apunta en ningún libro.\""
+      }
+    ],
+    "dm_output": "Brea se queda quieta. \"¿De noche.\" No es una pregunta. \"El turno de noche lo lleva el sobrino de Ordulf desde hace dos meses.\" Se pasa la mano por la cicatriz de la ceja. \"Necesito el nombre de alguien que lo haya pagado.\"",
+    "expected_gate": true,
+    "expected_deltas": [
+      {
+        "entity": "brea",
+        "entity_type": "npc",
+        "field": "knowledge",
+        "value": "El grupo presenció un segundo peaje nocturno no registrado",
+        "evidence": "alguien cobra un segundo peaje de noche",
+        "rationale": "hecho nuevo que Brea no sabía; append-only"
+      },
+      {
+        "entity": "peaje_falso",
+        "entity_type": "quest",
+        "field": "next_step_known",
+        "value": true,
+        "evidence": "Necesito el nombre de alguien que lo haya pagado",
+        "rationale": "el objetivo pasa a tener paso siguiente conocido"
+      }
+    ],
+    "expected_events": []
+  },
+  {
+    "id": "T10",
+    "kind": "consequential",
+    "_proposito": "Lugar descubierto. Cambio de detail sketch → observed. La descripción queda CONGELADA.",
+    "scene": "molino_viejo",
+    "npcs_present": [],
+    "player_buffer": [
+      {
+        "pc": "mira",
+        "text": "Subimos por la ribera hasta el molino. Quiero ver la rueda de cerca."
+      },
+      {
+        "pc": "tobi",
+        "text": "Enciendo la luz y entro."
+      }
+    ],
+    "dm_output": "La media rueda cruje pero aguanta. Dentro, el suelo está seco: alguien tapó el boquete del techo con lona, y no hace mucho. Hay ceniza fría en un rincón y ocho marcas de cuchillo en la viga, agrupadas de cuatro en cuatro.",
+    "expected_gate": true,
+    "expected_deltas": [
+      {
+        "entity": "molino_viejo",
+        "entity_type": "location",
+        "field": "detail",
+        "value": "observed",
+        "evidence": "alguien tapó el boquete del techo con lona",
+        "rationale": "el grupo observó el interior; colapsa de sketch a observed y la descripción se fija"
+      }
+    ],
+    "expected_events": []
+  },
+  {
+    "id": "T11",
+    "kind": "consequential",
+    "_proposito": "Muerte de PNJ. El caso más claro. También hace que la facción se entere.",
+    "scene": "casa_peaje",
+    "npcs_present": [
+      "ordulf"
+    ],
+    "player_buffer": [
+      {
+        "pc": "kael",
+        "text": "Empujo la puerta de la torre. Ataque con la espada larga (resultado: 22, daño 11)"
+      }
+    ],
+    "dm_output": "Ordulf alcanza a levantar el libro de peajes como si fuera a servirle de escudo. No le sirve. Cae contra la ventanilla enrejada y se queda ahí, y el libro se abre en el suelo por la página del jueves. Fuera, alguien en el puente ha visto la puerta abierta y ya está corriendo hacia el mercado.",
+    "expected_gate": true,
+    "expected_deltas": [
+      {
+        "entity": "ordulf",
+        "entity_type": "npc",
+        "field": "status",
+        "value": "dead",
+        "evidence": "Cae contra la ventanilla enrejada y se queda ahí",
+        "rationale": "muerte inequívoca",
+        "witnessed": true
+      },
+      {
+        "entity": "gremio_vado",
+        "entity_type": "faction",
+        "field": "knows_about_party",
+        "value": true,
+        "evidence": "alguien en el puente ha visto la puerta abierta",
+        "rationale": "hubo testigo; la facción se entera"
+      }
+    ],
+    "expected_events": [],
+    "_nota_witnessed": "El testigo del puente es explicito. Con witnessed=true el Agente del Mundo propaga a gremio_vado por entity_relations (ordulf member_of gremio_vado), sin pedirle la inferencia al extractor."
+  },
+  {
+    "id": "T12",
+    "kind": "consequential",
+    "_proposito": "TRAMPA. Sarcasmo. 'Le encantó' es irónico. El extractor NO debe subir el aprecio.",
+    "scene": "vado_ceniza",
+    "npcs_present": [
+      "brea"
+    ],
+    "player_buffer": [
+      {
+        "pc": "tobi",
+        "text": "\"Le explico a la sargento que técnicamente el mercado no está bajo jurisdicción del Gremio según el fuero de la Marca.\""
+      },
+      {
+        "pc": "mira",
+        "text": "Le encantó. Se nota que le encantó. Mírale la cara de lo que le encantó."
+      }
+    ],
+    "dm_output": "Brea deja que Tobi termine la frase entera. Luego mira a Mira. \"¿Siempre habla así?\" Y sigue caminando.",
+    "expected_gate": false,
+    "expected_deltas": [],
+    "_nota_validador": "Si el extractor produce affinity positivo aquí, no distingue ironía. Es un fallo de precisión, no de recall.",
+    "expected_events": []
+  },
+  {
+    "id": "T13",
+    "kind": "consequential",
+    "_proposito": "Secreto revelado bajo su condición explícita. Brea confía en quien demostró con hechos.",
+    "scene": "vado_ceniza",
+    "npcs_present": [
+      "brea"
+    ],
+    "player_buffer": [
+      {
+        "pc": "kael",
+        "text": "\"Sargento, ¿por qué el Gremio no ha desmontado ya esos puestos?\""
+      }
+    ],
+    "dm_output": "Brea tarda en contestar. Se lleva la mano al bolsillo interior de la cota y saca un papel doblado cuatro veces, con el sello del Gremio ya roto. \"Porque la orden la tengo yo. Firmada hace tres semanas.\" Vuelve a doblarlo. \"El día que se enteren, me quitan el puesto y mandan a alguien que sí la cumpla. Así que llevo tres semanas siendo muy lenta.\"",
+    "expected_gate": true,
+    "expected_deltas": [
+      {
+        "entity": "brea",
+        "entity_type": "npc",
+        "field": "secret_revealed",
+        "value": "orden_desalojo_sin_ejecutar",
+        "evidence": "Porque la orden la tengo yo",
+        "rationale": "se cumplió la condición: preguntaron directamente tras demostrar con hechos"
+      }
+    ],
+    "expected_events": [
+      {
+        "entity": "brea",
+        "event_kind": "secret_entrusted",
+        "evidence": "llevo tres semanas siendo muy lenta",
+        "rationale": "resolve_event calcula la magnitud según la personalidad (antes a mano: trust 20)"
+      }
+    ]
+  },
+  {
+    "id": "T14",
+    "kind": "consequential",
+    "_proposito": "Promesa incumplida. Delta negativo por incumplimiento, no por hostilidad.",
+    "scene": "mercado_bajo",
+    "npcs_present": [
+      "brea"
+    ],
+    "player_buffer": [
+      {
+        "pc": "mira",
+        "text": "\"Al final no fuimos a hablar con Herda. Se nos pasó.\""
+      },
+      {
+        "pc": "kael",
+        "text": "\"Mañana. Palabra.\""
+      }
+    ],
+    "dm_output": "\"Ayer también era mañana.\" Brea lo dice sin rencor, que es lo que lo hace peor. \"Herda estuvo esperando en el puesto hasta que cerró el mercado.\"",
+    "expected_gate": true,
+    "expected_deltas": [],
+    "expected_events": [
+      {
+        "entity": "brea",
+        "event_kind": "promise_broken",
+        "evidence": "Ayer también era mañana",
+        "rationale": "resolve_event calcula la magnitud según la personalidad (antes a mano: trust -8)"
+      }
+    ]
+  },
+  {
+    "id": "T15",
+    "kind": "consequential",
+    "_proposito": "Cambio de estado de lugar por acción del grupo.",
+    "scene": "mercado_bajo",
+    "npcs_present": [],
+    "player_buffer": [
+      {
+        "pc": "tobi",
+        "text": "Lanzo manos ardientes contra el toldo del puesto del Gremio. Si no van a dejarnos comerciar, que no comercie nadie."
+      }
+    ],
+    "dm_output": "El toldo prende de golpe y el fuego salta a los tablones del puesto contiguo antes de que nadie reaccione. Cuando consiguen apagarlo con cubos del río, tres tenderetes del extremo norte son carbón mojado. Herda mira el suyo, que no ardió, y luego mira a Tobi.",
+    "expected_gate": true,
+    "expected_deltas": [
+      {
+        "entity": "mercado_bajo",
+        "entity_type": "location",
+        "field": "state",
+        "value": "damaged",
+        "evidence": "tres tenderetes del extremo norte son carbón mojado",
+        "rationale": "daño material inequívoco y localizado"
+      }
+    ],
+    "expected_events": []
+  },
+  {
+    "id": "T16",
+    "kind": "consequential",
+    "_proposito": "Misión completada. Estado de quest.",
+    "scene": "casa_peaje",
+    "npcs_present": [
+      "brea"
+    ],
+    "player_buffer": [
+      {
+        "pc": "mira",
+        "text": "Le entrego a Brea las tres fichas de peaje nocturno que le quitamos a Hettir, con la marca del Gremio raspada."
+      }
+    ],
+    "dm_output": "Brea las gira una por una a la luz. Donde debería estar el sello del Gremio hay una muesca de cuchillo. \"Con esto tengo suficiente.\" Se las guarda. \"Hettir duerme esta noche en el sótano de la Casa del Peaje, y mañana lo bajan al vado a explicarse.\"",
+    "expected_gate": true,
+    "expected_deltas": [
+      {
+        "entity": "peaje_falso",
+        "entity_type": "quest",
+        "field": "status",
+        "value": "completed",
+        "evidence": "Con esto tengo suficiente",
+        "rationale": "prueba entregada y consecuencia declarada"
+      },
+      {
+        "entity": "brea",
+        "entity_type": "npc",
+        "field": "knowledge",
+        "value": "El grupo consiguió las fichas de peaje nocturno con el sello raspado",
+        "evidence": "Donde debería estar el sello del Gremio hay una muesca de cuchillo",
+        "rationale": "CORRECCIÓN: el extractor lo emitía y se contaba como falso positivo. Brea SÍ se entera. El ground truth estaba incompleto."
+      }
+    ],
+    "expected_events": [
+      {
+        "entity": "brea",
+        "event_kind": "promise_kept",
+        "evidence": "Hettir duerme esta noche en el sótano",
+        "rationale": "resolve_event calcula la magnitud según la personalidad (antes a mano: trust 15)"
+      }
+    ]
+  },
+  {
+    "id": "T17",
+    "kind": "consequential",
+    "_proposito": "promise_made — el evento que faltaba. Sin él los compromisos no pueden registrarse y promise_kept/broken son inverificables.",
+    "scene": "vado_ceniza",
+    "npcs_present": [
+      "brea"
+    ],
+    "player_buffer": [
+      {
+        "pc": "mira",
+        "text": "\"Sargento, dénos dos días. Le traemos las fichas del peaje nocturno con el sello raspado.\""
+      },
+      {
+        "pc": "kael",
+        "text": "\"Dos días. Tiene mi palabra.\""
+      }
+    ],
+    "dm_output": "Brea los mira un momento largo, como midiendo si la palabra vale algo. \"Dos días.\" No añade qué pasa si no llegan. Se ajusta el cinturón y vuelve al puente.",
+    "expected_gate": true,
+    "expected_events": [
+      {
+        "entity": "brea",
+        "event_kind": "promise_made",
+        "evidence": "Dos días. Tiene mi palabra.",
+        "detail": "Traer a Brea las fichas del peaje nocturno en dos días",
+        "rationale": "registra el compromiso para que promise_kept/broken sean verificables después"
+      }
+    ],
+    "expected_deltas": []
+  },
+  {
+    "id": "T18",
+    "kind": "conversational",
+    "_proposito": "TRAMPA. Exposición sobre estado que YA era verdad antes del turno. No es un cambio.",
+    "scene": "vado_ceniza",
+    "npcs_present": [],
+    "player_buffer": [
+      {
+        "pc": "tobi",
+        "text": "\"¿Y este pueblo siempre ha cobrado peaje?\""
+      }
+    ],
+    "dm_output": "Desde hace ochenta años, dice el letrero clavado en la torre. El Gremio del Vado cobra por cabeza y por bestia desde que el puente es de piedra.",
+    "expected_gate": false,
+    "expected_events": [],
+    "expected_deltas": [],
+    "_nota_validador": "Si emite algo sobre el Gremio o el peaje, confundió exposición con cambio."
+  },
+  {
+    "id": "T19",
+    "kind": "consequential",
+    "_proposito": "Campos mecánicos sin ejercitar: inventory y hp_current.",
+    "scene": "mercado_bajo",
+    "npcs_present": [],
+    "player_buffer": [
+      {
+        "pc": "kael",
+        "text": "Le quito la ballesta al bandido caído y me la echo al hombro."
+      }
+    ],
+    "dm_output": "La ballesta pesa más de lo que aparenta, y el segundo bandido aprovecha para disparar desde el toldo. El virote te alcanza en el hombro: pierdes seis puntos y quedas en 22.",
+    "expected_gate": true,
+    "expected_events": [],
+    "expected_deltas": [
+      {
+        "entity": "kael",
+        "entity_type": "character",
+        "field": "inventory",
+        "value": "ballesta",
+        "evidence": "Le quito la ballesta al bandido caído",
+        "rationale": "objeto ganado, explícito"
+      },
+      {
+        "entity": "kael",
+        "entity_type": "character",
+        "field": "hp_current",
+        "value": 22,
+        "evidence": "pierdes seis puntos y quedas en 22",
+        "rationale": "el DM declara el valor resultante"
+      }
+    ]
+  },
+  {
+    "id": "T20",
+    "kind": "consequential",
+    "_proposito": "Facción con cambio EXPLÍCITO. T11 falló pidiendo inferencia; aquí está escrito. Distingue incapacidad de falta de contexto.",
+    "scene": "posada_remo",
+    "npcs_present": [],
+    "player_buffer": [
+      {
+        "pc": "mira",
+        "text": "Leemos el bando clavado en la puerta de la posada."
+      }
+    ],
+    "dm_output": "El pergamino lleva el sello del Gremio del Vado y tres nombres escritos a mano: los vuestros. Debajo, una línea sola: no se les vende, no se les aloja, no se les deja cruzar. Media docena de vecinos ya lo ha leído.",
+    "expected_gate": true,
+    "expected_events": [],
+    "expected_deltas": [
+      {
+        "entity": "gremio_vado",
+        "entity_type": "faction",
+        "field": "knows_about_party",
+        "value": true,
+        "evidence": "tres nombres escritos a mano: los vuestros",
+        "rationale": "la facción los identifica por nombre"
+      }
+    ]
+  }
+]

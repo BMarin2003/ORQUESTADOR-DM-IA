@@ -1,0 +1,71 @@
+{
+  "modelo": "google/gemma-4-31B-it",
+  "fecha": "2026-08-30T20:07:54.131952",
+  "niveles": [
+    {
+      "n": 1,
+      "ok": 1,
+      "err": 0,
+      "r429": 0,
+      "p50_ms": 7277,
+      "p95_ms": 7277,
+      "tok_s_por_peticion": 41.2,
+      "tok_s_agregado": 41.2,
+      "pared_s": 7.3,
+      "cabeceras": {},
+      "muestra_error": ""
+    },
+    {
+      "n": 2,
+      "ok": 2,
+      "err": 0,
+      "r429": 0,
+      "p50_ms": 8079,
+      "p95_ms": 8079,
+      "tok_s_por_peticion": 37.1,
+      "tok_s_agregado": 72.2,
+      "pared_s": 8.1,
+      "cabeceras": {},
+      "muestra_error": ""
+    },
+    {
+      "n": 4,
+      "ok": 4,
+      "err": 0,
+      "r429": 0,
+      "p50_ms": 8960,
+      "p95_ms": 9626,
+      "tok_s_por_peticion": 35.5,
+      "tok_s_agregado": 121.5,
+      "pared_s": 9.6,
+      "cabeceras": {},
+      "muestra_error": ""
+    },
+    {
+      "n": 8,
+      "ok": 8,
+      "err": 0,
+      "r429": 0,
+      "p50_ms": 9634,
+      "p95_ms": 15964,
+      "tok_s_por_peticion": 31.2,
+      "tok_s_agregado": 148.7,
+      "pared_s": 16.0,
+      "cabeceras": {},
+      "muestra_error": ""
+    },
+    {
+      "n": 16,
+      "ok": 16,
+      "err": 0,
+      "r429": 0,
+      "p50_ms": 10130,
+      "p95_ms": 18865,
+      "tok_s_por_peticion": 30.8,
+      "tok_s_agregado": 253.3,
+      "pared_s": 18.9,
+      "cabeceras": {},
+      "muestra_error": ""
+    }
+  ]
+}

@@ -1,0 +1,496 @@
+{
+  "modelo": "google/gemma-4-31B-it",
+  "fecha": "2026-09-01T11:29:42.113398",
+  "precision": 0.6,
+  "recall": 0.2,
+  "f1": 0.3,
+  "evidencia_literal": 1.0,
+  "registro": [
+    {
+      "turno": "T01",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 76257
+    },
+    {
+      "turno": "T02",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 5135
+    },
+    {
+      "turno": "T03",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 3082
+    },
+    {
+      "turno": "T04",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 2678
+    },
+    {
+      "turno": "T05",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 1715
+    },
+    {
+      "turno": "T06",
+      "rep": 0,
+      "salida": {
+        "events": [
+          {
+            "entity": "ordulf",
+            "event_kind": "bribe_offered",
+            "evidence": "Deslizo las monedas por debajo de la reja"
+          }
+        ],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [
+            [
+              "ordulf",
+              "bribe_offered"
+            ]
+          ],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 3304
+    },
+    {
+      "turno": "T07",
+      "rep": 0,
+      "salida": {
+        "events": [
+          {
+            "entity": "brea",
+            "event_kind": "bribe_offered",
+            "evidence": "Dos coronas y usted no vio a nadie cruzar anoche."
+          }
+        ],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [
+            [
+              "brea",
+              "bribe_offered"
+            ]
+          ],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 4980
+    },
+    {
+      "turno": "T08",
+      "rep": 0,
+      "salida": {
+        "events": [
+          {
+            "entity": "brea",
+            "event_kind": "ideal_honored",
+            "evidence": "Gracias."
+          }
+        ],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [
+            [
+              "brea",
+              "ideal_honored"
+            ]
+          ],
+          "perdidos": [
+            [
+              "brea",
+              "bond_target_protected"
+            ]
+          ]
+        }
+      },
+      "ms": 2568
+    },
+    {
+      "turno": "T09",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": [
+          {
+            "entity": "brea",
+            "entity_type": "npc",
+            "field": "npc.knowledge",
+            "value": "alguien cobra un segundo peaje de noche y no lo apunta en ningún libro",
+            "evidence": "alguien cobra un segundo peaje de noche. Lo vimos. No lo apunta en ningún libro."
+          }
+        ]
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [
+          "campo fuera de lista blanca: npc.npc.knowledge"
+        ],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": [
+            [
+              "brea",
+              "knowledge"
+            ],
+            [
+              "peaje_falso",
+              "next_step_known"
+            ]
+          ]
+        }
+      },
+      "ms": 6926
+    },
+    {
+      "turno": "T10",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": [
+            [
+              "molino_viejo",
+              "detail"
+            ]
+          ]
+        }
+      },
+      "ms": 1443
+    },
+    {
+      "turno": "T11",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": [
+          {
+            "entity": "ordulf",
+            "entity_type": "npc",
+            "field": "character.hp_current",
+            "value": -11,
+            "evidence": "daño 11"
+          }
+        ]
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [
+          "campo fuera de lista blanca: npc.character.hp_current"
+        ],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": [
+            [
+              "gremio_vado",
+              "knows_about_party"
+            ],
+            [
+              "gremio_vado",
+              "stance_party"
+            ],
+            [
+              "ordulf",
+              "status"
+            ]
+          ]
+        }
+      },
+      "ms": 3488
+    },
+    {
+      "turno": "T12",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 1294
+    },
+    {
+      "turno": "T13",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": [
+            [
+              "brea",
+              "secret_entrusted"
+            ],
+            [
+              "brea",
+              "secret_revealed"
+            ]
+          ]
+        }
+      },
+      "ms": 1281
+    },
+    {
+      "turno": "T14",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": []
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "ev_ok": 0,
+        "ev_total": 0,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [],
+          "perdidos": [
+            [
+              "brea",
+              "promise_broken"
+            ]
+          ]
+        }
+      },
+      "ms": 1280
+    },
+    {
+      "turno": "T15",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": [
+          {
+            "entity": "mercado_bajo",
+            "entity_type": "location",
+            "field": "state",
+            "value": "damaged",
+            "evidence": "tres tenderetes del extremo norte son carbón mojado"
+          }
+        ]
+      },
+      "eval": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [
+            [
+              "mercado_bajo",
+              "state"
+            ]
+          ],
+          "sobrantes": [],
+          "perdidos": []
+        }
+      },
+      "ms": 3644
+    },
+    {
+      "turno": "T16",
+      "rep": 0,
+      "salida": {
+        "events": [],
+        "deltas": [
+          {
+            "entity": "brea",
+            "entity_type": "npc",
+            "field": "knowledge",
+            "value": "Hettir tenía fichas de peaje con la marca del Gremio raspada",
+            "evidence": "Donde debería estar el sello del Gremio hay una muesca de cuchillo. \"Con esto tengo suficiente.\""
+          }
+        ]
+      },
+      "eval": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2,
+        "ev_ok": 1,
+        "ev_total": 1,
+        "invalidos": [],
+        "detalle": {
+          "acertados": [],
+          "sobrantes": [
+            [
+              "brea",
+              "knowledge"
+            ]
+          ],
+          "perdidos": [
+            [
+              "brea",
+              "promise_kept"
+            ],
+            [
+              "peaje_falso",
+              "status"
+            ]
+          ]
+        }
+      },
+      "ms": 5763
+    }
+  ]
+}

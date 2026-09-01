@@ -1,0 +1,98 @@
+{
+  "modelo": "google/gemma-4-31B-it",
+  "fecha": "2026-08-28T15:31:56.604432",
+  "pruebas": [
+    {
+      "prueba": "1A",
+      "intento": 1,
+      "texto": "El aire en el Vado de Ceniza pesa a media mañana, saturado por el hedor dulzón de la brea y el aroma húmedo que asciende del río bajo el puente de piedra. Alrededor, el tránsito de carros es constante y el ruido de los cascos contra el pavimento se mezcla con la vigilancia tensa de la guardia del Gremio, que registra meticulosamente cada cabeza y bestia que intenta cruzar.\n\nEl sargento Brea baja la vista hacia la palma abierta, dejando que el brillo de las coronas repose en un silencio prolongado y gélido. No sube el tono, pero su voz suena cargada de un desprecio contenido mientras sentencia: \"Guarda eso, muchacho. Guárdalo antes de que lo vea alguien y tenga que hacer algo al respecto.\" Sin dedicar una sola mirada más, da media vuelta con un movimiento seco y prosigue su ronda, dejando la oferta suspendida en el aire como un agravio registrado.",
+      "tokens_in": 650,
+      "tokens_out": 204,
+      "ms": 13909,
+      "checks": {
+        "cita_literal": true,
+        "cita_aproximada": true,
+        "no_contradijo_veredicto": true,
+        "no_narro_al_pj": true,
+        "parrafos": 2,
+        "dentro_de_2_parrafos": true
+      }
+    },
+    {
+      "prueba": "1A",
+      "intento": 2,
+      "texto": "El Vado de Ceniza bulle bajo el sol de media mañana, donde el traqueteo de los carros sobre el puente de piedra compite con el hedor acre de la brea y el aroma húmedo del río. A pocos pasos, los guardias del Gremio vigilan con rigor el flujo de viajeros, asegurándose de que cada cabeza y cada bestia pague el peaje correspondiente antes de cruzar.\n\nEl sargento Brea baja la vista hacia la palma abierta, dejando que el brillo de las dos coronas repose en un silencio tenso y prolongado. No hay rastro de codicia en su expresión, solo un frío desdén que convierte el gesto en un agravio. Sin elevar la voz, con un tono que corta más que un grito, sentencia: \"Guarda eso, muchacho. Guárdalo antes de que lo vea alguien y tenga que hacer algo al respecto.\" Acto seguido, da media vuelta con una indiferencia absoluta y retoma su ronda, dejándolo atrás sin volver a mirar.",
+      "tokens_in": 650,
+      "tokens_out": 217,
+      "ms": 16912,
+      "checks": {
+        "cita_literal": true,
+        "cita_aproximada": true,
+        "no_contradijo_veredicto": true,
+        "no_narro_al_pj": true,
+        "parrafos": 2,
+        "dentro_de_2_parrafos": true
+      }
+    },
+    {
+      "prueba": "1B-A",
+      "caso": "Brea  (de principios, debe OFENDERSE)",
+      "texto": "```json\n{\"linea\": \"Guárdate el metal, muchacho. Me estás insultando.\", \"entrega\": \"Voz seca y cortante, apartando la mano de Kael con un movimiento brusco\", \"se_niega_a\": \"Aceptar el soborno o ignorar la ofensa a su integridad\"}\n```",
+      "tokens_in": 696,
+      "tokens_out": 75,
+      "ms": 5434,
+      "checks": {
+        "json_parseable": true,
+        "linea": "Guárdate el metal, muchacho. Me estás insultando.",
+        "senal_ofensa": true,
+        "senal_regateo": false,
+        "direccion_correcta": true
+      }
+    },
+    {
+      "prueba": "1B-B",
+      "caso": "Brea  (de principios, debe OFENDERSE)",
+      "texto": "```json\n{\"linea\": \"Guárdate el metal, muchacho. Mi palabra no tiene precio y mi vista no se nubla por dos monedas.\", \"entrega\": \"Voz seca, mirada gélida y un gesto brusco de rechazo con la mano\", \"se_niega_a\": \"Aceptar el soborno o negociar el precio de su silencio\"}\n```",
+      "tokens_in": 460,
+      "tokens_out": 85,
+      "ms": 11626,
+      "checks": {
+        "json_parseable": true,
+        "linea": "Guárdate el metal, muchacho. Mi palabra no tiene precio y mi vista no se nubla por dos monedas.",
+        "senal_ofensa": false,
+        "senal_regateo": true,
+        "direccion_correcta": false
+      }
+    },
+    {
+      "prueba": "1B-A",
+      "caso": "Ordulf (suspicaz, debe REGATEAR)",
+      "texto": "```json\n{\"linea\": \"Vuestra merced es sumamente generoso, aunque me temo que la cifra propuesta resultaría irregular para el silencio que solicita.\", \"entrega\": \"Voz baja y pausada, mirando las monedas sin tocarlas mientras ajusta el anillo de su dedo con un gesto meticuloso\", \"se_niega_a\": \"Aceptar el soborno inmediatamente o confirmar que haya visto a alguien\"}\n```",
+      "tokens_in": 691,
+      "tokens_out": 94,
+      "ms": 14140,
+      "checks": {
+        "json_parseable": true,
+        "linea": "Vuestra merced es sumamente generoso, aunque me temo que la cifra propuesta resultaría irregular para el silencio que solicita.",
+        "senal_ofensa": false,
+        "senal_regateo": true,
+        "direccion_correcta": true
+      }
+    },
+    {
+      "prueba": "1B-B",
+      "caso": "Ordulf (suspicaz, debe REGATEAR)",
+      "texto": "```json\n{\"linea\": \"Vuestra merced posee una optimismo encomiable, aunque ciertamente irregular. Dos coronas apenas cubrirían el desgaste del pergamino donde debo asentar vuestra discreción, y yo no soy hombre de incurrir en pérdidas, como bien recordará vuestro linaje desde aquel incidente de los impuestos del grano hace tres inviernos.\", \"entrega\": \"Voz baja y monocorde, ajustándose el anillo del Gremio con un gesto meticuloso mientras mira las monedas sin tocarlas\", \"se_niega_a\": \"aceptar el soborno por esa cantidad\"}\n```",
+      "tokens_in": 448,
+      "tokens_out": 133,
+      "ms": 13566,
+      "checks": {
+        "json_parseable": true,
+        "linea": "Vuestra merced posee una optimismo encomiable, aunque ciertamente irregular. Dos coronas apenas cubrirían el desgaste del pergamino donde debo asentar vuestra discreción, y yo no soy hombre de incurri",
+        "senal_ofensa": false,
+        "senal_regateo": true,
+        "direccion_correcta": true
+      }
+    }
+  ]
+}

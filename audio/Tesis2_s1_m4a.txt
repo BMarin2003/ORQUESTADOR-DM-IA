@@ -1,0 +1,396 @@
+[00:02] Ya hemos tenido una primer experience en test-in-box
+[00:06] que tiene que ver... pasa, pasa su mano
+[00:10] con el
+[00:11] con el desarrollo de los objetivos faltantes.
+[00:16] Ya hay algunos que...
+[00:18] y ya han desarrollado, hay unos que han hecho más del 80% y en 21%, lo cual está muy bien.
+[00:24] Gracias.
+[00:25] Y aquí vienen ya los objetivos faltantes.
+[00:28] vamos a hacer
+[00:31] Primero, los objetivos faltantes.
+[00:34] Luego faltan las dos imágenes de hipótesis.
+[00:38] ya, dos imágenes de hipótesis
+[00:41] falta la discusión de los resultados
+[00:43] Faltan las conclusiones.
+[00:46] Las recomendaciones
+[00:47] eso deberíamos culminarlo y el refinamiento, algo que pueda aparecer de repente algún objetivo más.
+[00:56] Todos esos deberíamos culminarlo hasta la semana 6.
+[01:00] Ya.
+[01:01] O sea, todo el curso de tesis formalmente se acaba en la semana 6.
+[01:06] porque en la semana 7 nosotros deberíamos estar entregando ya la versión corregida
+[01:12] a los miembros del jurado que este ciclo sí o sí les van a asignar
+[01:16] En la semana 7 ellos les van a, no sé si va a ser por exposición,
+[01:22] eso ya se va a decidir, el siglo pasado
+[01:25] como fue un primer curso
+[01:27] no salió bien
+[01:29] fue el último, ya se les envió los proyectos, es más,
+[01:34] el registro de los proyectos se hizo de manera tardía, en la semana, me parece, en la semana 14.
+[01:41] se hizo de registro de curso.
+[01:43] Perdón, de los proyectos.
+[01:46] hubo algunos
+[01:47] Eh...
+[01:49] algunos cambios que se hizo en última hora
+[01:53] entonces por esa razón ya no se para todo lo que es. Hola, pasa.
+[01:58] lo que se esperaba.
+[02:00] se esperaba que todos
+[02:01] puedan tener su primera revisión en la semana cierta.
+[02:05] Bueno, ya nos hemos ganado tiempo y aprovechamos que en la segunda parte
+[02:11] deba ser definido con su artículo.
+[02:14] Y en general...
+[02:16] llegaron a ser su artículo los estudiantes de los resultados.
+[02:23] Si es que lo podemos ir haciendo a la par sería estupendo.
+[02:27] porque en esta vez como les dije son
+[02:30] la resolución de todos los objetivos faltantes o pendientes
+[02:35] y luego es la publicación del artículo.
+[02:39] Pero vamos a definir la publicación de la fiesta o no para estar bien.
+[02:43] Vamos a definir la publicación del artículo en función...
+[02:47] del aporte donde ustedes están dando.
+[02:49] porque
+[02:50] puede ser que ustedes hayan desarrollado pero
+[02:54] se dan cuenta que no han llegado a superar el estado del arte, entonces
+[03:00] no es necesariamente publicable.
+[03:03] Pero lo que vamos a comenzar a destacar es
+[03:06] en donde pueden haber aportes en la metodología,
+[03:11] pueden haber aportes en la técnica, pueden haber aportes en la herramienta.
+[03:15] Incluso pueden haber aportes en el producto en el que ustedes han construido.
+[03:20] Como todos ustedes ya construyeron su aplicación en el taller 1, ¿ya?
+[03:26] en el caso de nosotros acá en el detalle 2 vamos a
+[03:30] a ver por dónde vamos a hacer la publicación.
+[03:34] primero vamos a hacer la revisión de cuál es la revista donde más se adecua a su caso porque
+[03:41] con diferentes tipos de revistas
+[03:43] Hay que estar ya con esa conciencia de que posiblemente
+[03:46] nos rechacen en la revista
+[03:48] Es...
+[03:48] natural porque
+[03:51] es un grupo exigente normalmente de revisores
+[03:55] y a veces en pregrado pues suelen
+[03:58] suelen darle con palo.
+[04:00] Entonces, pero vaya a ser el íntegro.
+[04:03] ¿Ya?
+[04:03] ¿Por qué razón? Porque tenemos un plan B.
+[04:06] En el caso de la...
+[04:08] el caso de la escuela  también se puede obtener  el título a través de publicación  hay un diferente mecanismo
+[04:16] Uno es el de la tesis.
+[04:19] que es el que ustedes están haciendo, el otro es a través de la publicación del artículo.
+[04:24] y el otro es a través de su licencia profesional, que para ustedes no aplica, porque para ello tienen que pasar al menos tres años de...
+[04:32] de
+[04:34] y tiene que estar comprobado que ustedes están trabajando en sistemas.
+[04:37] Entonces, eso está descartado, por ahí ya no va.
+[04:41] pero tenemos la otra que es muy bien, entonces
+[04:44] Como este curso sí se adapta y tenemos el tiempo suficiente, lo logramos hacer el ciclo pasado.
+[04:50] Lo que ya no logramos es...
+[04:52] de someterlo a la revista
+[04:55] ya no hemos logrado someterlo a la raíz, significa tener que guiarlo para que no se vea el excedente.
+[05:03] Pero esta vez vamos a empezar de manera más temprana, porque...
+[05:07] ya hemos tenido resultados interesantes el año pasado
+[05:11] varios de ustedes han logrado tener
+[05:14] resultados más de dos objetivos, algunos han llegado a tres, otros han llegado a cuatro objetivos a desarrollar
+[05:20] Entonces, eh...
+[05:22] Vamos a ver por cuál es el que nos genera apoyo.
+[05:25] Ya.
+[05:26] Eso es...
+[05:27] conclusión lo que vamos a trabajar.
+[05:31] Entonces, los mecanismos de trabajo que vamos a hacer para ese ciclo va a ser el mismo que desarrollarlo por...
+[05:38] por grupos, para esta semana está bien todos, pero a partir de la siguiente.
+[05:44] Vamos a ver de que sean por grupos, dependiendo de lo que están acá registrados.
+[05:49] Ehm...
+[05:52] todos los para que ustedes puedan pasar y hay que tener
+[05:57] quiero, quiero, no sé si en esta vez  hay un caso de excepciones  si no luego ustedes me comentan
+[06:03] La idea de llevar tesis 2 es que ustedes estén en décimo.
+[06:09] a mi me ha pasado el ciclo pasado
+[06:11] un caso donde
+[06:15] un estudiante
+[06:17] estaba en grupo con otro estudiante, uno de ellos estaba en décimo, el otro estaba en noveno.
+[06:24] El problema es para la sustentación.
+[06:27] ¿Por qué? Porque lo que se tiene que hacer es
+[06:30] separarlo
+[06:31] entonces tiene que esperar lo después de que sustenta tiene que esperar
+[06:36] al otro compañero, pero ahora se meten en un grave problema los que están en grupo,  o los que no acaban este ciclo.
+[06:43] Stanley tiene un problema serio porque tiene que esperarlo
+[06:47] bueno, en otros ciclos son seis meses.
+[06:49] Y según la resolución es solamente poder esperar tres meses nada más para el levantamiento de observaciones.
+[06:57] Y si no lo completan, entonces tienen que pedir aplazamiento.  Y es ya eso todo drámico.
+[07:01] Si no lo hacen eso, tienen que volver a empezar nuevamente con tesis.
+[07:05] entonces tengan cuidado si es que no acaba en este ciclo
+[07:09] tienen su par no acaba este siglo
+[07:12] entonces avíseme para poderlo dividir
+[07:16] ¿Ya?
+[07:16] para que no se perjudique, porque no lo estarías perjudicando a tus compañeros.
+[07:21] y
+[07:22] y el otro es
+[07:23] Y si es que no ocurre eso, pues tendría que desaprobarlo o romperlo.
+[07:27] porque porque pasan a la presentación los dos no pasan los que se nos gusta
+[07:31] sucesivamente
+[07:32] Por uno que no puede, entonces el otro tiene que desaprobar el curso.
+[07:36] Entonces, si encerrense con su compañero y dicen, oye, estamos en décimo, todos nos han registrado, los dos...
+[07:43] para que no tengan ese inconveniente porque si no yo me acabo de ciclo pero
+[07:49] yo acabo el ciclo siguiente pero yo estoy llevando
+[07:52] Como ven, este ciclo no está pasando en proyectos de investigación.
+[07:57] eh...
+[07:57] La proyección sale a 75, pero en el total de proyectos de investigación hay 88.
+[08:03] Entonces hay 13 que son de más.
+[08:05] Hemos comenzado a revisar por la cantidad de acreditajes, que hay unos que están llevando el sexto ciclo de los proyectos de investigación.
+[08:12] no tiene prerequisitos, entonces ahí se están metiendo y por ahí se comienzan a colgar
+[08:16] la línea de proyectos de gestión de decisiones de estudios
+[08:19] lo cual no terminan completando el décimo.
+[08:22] y el que ese es su...
+[08:24] si es que ese es alguno de ustedes, es su caso.
+[08:27] avíseme para poderlo dividir antes de que
+[08:30] sea registrable, si bien es cierto  que hay un registro previo
+[08:35] de su trabajo
+[08:36] pero preferible cortarlo y hacer una divulgación del proyecto. En el caso de que
+[08:42] de que su compañero o compañera
+[08:45] no llegue a culminar
+[08:47] especialmente no se vean perjudicados los
+[08:49] ya me avisan por favor y insérense.
+[08:52] y no oculten esto porque al final es al último en donde se ven todos estos problemas.
+[08:58] Gracias.
+[08:59] Bien, el recurso...
+[09:02] voy a hacer en la carpeta, igual vamos a seguir trabajando por la misma carpeta que hemos trabajado las semanas pasadas
+[09:09] vamos a ir acá sobre las competencias, las competencias que tenemos son las mismas de
+[09:18] es de la administración de grandes volúmenes de datos, de despliegue de soluciones, o sea,
+[09:22] Quiere decir que si hay algún reclamamiento por el lado del Fobro, a pesar que ayer ya pasó,
+[09:28] si bien cierto ustedes van a llevar taller 2 lo ideal es que pueda ser refinado por el lado del software
+[09:34] pero ahí ya queda muy dependiente de lo que va a hacer el
+[09:38] El...
+[09:39] Más extrajos hay en el.
+[09:40] igual sería importante que
+[09:42] para tener una trazabilidad que esté alineado a su producto, porque no puede ser que ustedes terminen cambiando su producto
+[09:49] si ustedes cambian por efectos solamente del curso de taller
+[09:52] adelante pero si lo van a cambiar
+[09:55] que tenga impacto en tesis, por favor avísenme.
+[09:58] porque es lo que me está pasando ahora en el caso de tesis 1
+[10:03] En el caso de Tesis 1, he sido muy enfalle cuando decía que lo que manda es un profesor de tesis.
+[10:10] Yo solamente soy el profesor del curso de taller.
+[10:13] donde si es que hay alguna discrepancia en términos del alcance,
+[10:18] hacemos un proyecto separado, igual lo mismo
+[10:22] ustedes van a hacer algún cambio
+[10:24] que tenga algún impacto sobre su tesis por favor avísenme
+[10:28] para poder orientarlo porque si no luego
+[10:31] me pasó también igual el ciclo pasado en la sustentación  cuando terminé viendo otro software que yo no había visto en taller 1
+[10:37] y como yo en tesis 2 ya no veo el software
+[10:40] entonces habían hecho algunos cambios y yo no lo entonces
+[10:43] cuando se da esas situaciones
+[10:45] entonces como te voy a defender pues yo no lo he visto  entonces avísenme porfa  si hacen ustedes algún cambio que impacte
+[10:52] por ejemplo ahora
+[10:54] el maestro diaz me esta diciendo que tengo que hacerlo de esta manera, de esta manera, de esta manera
+[11:00] Ya.
+[11:00] Si es que va a haber algún impacto sobre el tesis, perfecto, ahí avísame, entonces lo conversamos.
+[11:06] Pero si yo digo esto está saliendo de Texas, esto no es lo que queremos en la de Texas.
+[11:11] culminaras haciendo un fork
+[11:14] solamente por proyecto de taller.
+[11:18] ¿Ya?
+[11:19] que sea parte de
+[11:22] por favor, conversamos para ver de repente si eso puede impactar en algunos objetivos nuevos
+[11:27] o en algunos indicadores nuevos o también puede cambiar el círculo.
+[11:31] Ya.
+[11:32] Entonces, tú no me avisas, ya llegas con un producto...
+[11:35] que yo no he visto, ahí me cancelan.
+[11:38] a ver si...
+[11:39] Lo que pasó en el proyecto, a veces después en la sustentación.
+[11:44] cuando no convence
+[11:46] Cuando el estudiante no convence en la sustentación, tiene que pasar al asesor, ¿no?
+[11:51] a
+[11:52] a ver, prácticamente a defenderse.
+[11:55] Entonces, me pasó de decir lo pasado, un proyecto hubo, ¿no?
+[11:59] a ver presentame tu
+[12:04] tu software
+[12:06] y yo lo veo el fórum cambiado.
+[12:08] Ya, pues ¿cómo lo voy a defender?
+[12:10] Bueno, ya pues le dije, no, de todas maneras que si había trabajado en el AVE crisis, si bien es cierto, es favor, yo no lo he visto ya lo que ha avanzado en el taller 2 porque...
+[12:17] Con lo de mí
+[12:18] mi autonomía
+[12:20] pero me dejan sin piso.
+[12:22] Entonces avisen para que se harían un cambio. ¿De acuerdo?
+[12:27] ya está, entonces acá es posible que la gente
+[12:31] Me van a enseñar también el software. Yo perdí un poco la rúcula. El ciclo pasado ya no les pedí el lado del software porque estaba más enfocado en la parte de los resultados.
+[12:41] pero había habido algunos cambios.
+[12:43] entonces despliegue soluciones, configuración de infraestructuras, si es que hay, si amerita, lo que ustedes hacen es un cambio.
+[12:50] me avisan, bueno estos son los atributos del grabado, voy a pasarlos directamente
+[12:56] Vamos a comenzar lo directo.
+[12:57] vamos a ver, que vamos a ver acá
+[12:59] en los
+[13:01] en las unidades
+[13:04] Bueno, vamos a hacer una revisión rápida de todo lo que ustedes han avanzado.  Vamos a...
+[13:10] o bien, también...
+[13:11] Gracias.
+[13:13] de la ley.
+[13:14] ¡Aquí!
+[13:16] Gracias.
+[13:20] Entonces acá vamos a hacer una revisión del lado del informe, vamos a ver cuál es lo que es el reglamento, aquí si hay que alinearnos a lo que es el reglamento del lado de la tesis.
+[13:30] voy a ir a la reunión con ustedes  para que me hablen sobre qué es
+[13:34] si ha habido algún avance en este proceso.  La otra semana vamos a ver todo lo que son los estilos, las citas.
+[13:40] en este caso trabajamos para acá nos están pidiendo que sea o APA o la IEEE
+[13:47] trabajamos con ellos, es posible también admisible el ISO pero normalmente es el APA y la I3S cualquiera de ellos dos de esos estilos
+[13:56] de redacción vamos a usar.
+[13:59] sugiero el APA que es un poco más conocido
+[14:02] y más masificado
+[14:04] luego vamos a ver acá lo que les decía la parte de la discusión de los resultados
+[14:08] Todo tiene que ver con la institución.
+[14:10] sobre el estado del arte, aquí vamos a hacer una revisión de lo que ustedes han colocado como estado del arte.
+[14:17] Luego hacemos acá la revisión y presentación, algunos refinamientos sobre el lado de tesis.
+[14:24] hasta que finalmente llegamos a la semana 5, la parte de la formulación, conclusión, recomendaciones.
+[14:32] eso ya lo he mencionado
+[14:34] hace que llegamos al lado de semana 7 donde deberían estar acá hasta acá
+[14:40] pues supone que ya les están dando acá miércoles de jurado, ¿no?  Donde acá deben sustentarlo.
+[14:46] Y la nota que les colocan los miembros de jurado, esa la pasamos como examen parcial.
+[14:50] Ya.
+[14:51] El ciclo pasado no cedió
+[14:53] entonces
+[14:55] me saqué la careta de asesor
+[14:57] y yo pasé a ser su miembro de jurado.
+[15:00] ¿Ya?
+[15:01] creo que lo hicimos también  esa misma práctica, lo hicimos con  Tesis 1
+[15:07] ya aquí, soy normalmente muy riguroso, en el caso de como miembro jurado comienzo a darles
+[15:13] O para...
+[15:15] para entrenarlos, para que es lo que se van a enfrentar. Es muy metodológico, cuando ustedes van a ir a las presentaciones
+[15:24] algunos están preparándose todo lo que es la plataforma, el lado del código y terminan preguntándote full metodología de investigación.
+[15:30] Es muy metodológico las sustentaciones.
+[15:34] te van a preguntar el objeto de estudio, la formulación de problemas, el alineamiento entre los objetivos
+[15:40] los problemas específicos es full, full, full metodológico.
+[15:45] y pongas veces son las que te dicen, a ver abre el sistema y quiero verlo como esta funcionando y sobre eso te preguntan algunas cosas de arquitectura de software
+[15:54] pero normalmente la vela
+[15:56] lo que yo he visto en las sustentaciones es el 90%
+[15:59] Es full metodológico, siempre tratan de ver la trazabilidad metodológica.
+[16:04] entonces aquí es de acuerdo a lo que
+[16:06] a lo que te digan
+[16:08] Se supone que ahí también te tendrían que dar tus observaciones.
+[16:12] tranquilo si te barrayan todos tus peces
+[16:16] es natural porque a veces empieza mucho depende de la óptica en la cual lo revisen
+[16:22] pero a veces son cuestiones de que a veces tampoco no lo comprende el miembro de jurado, entonces hay que...
+[16:29] a veces
+[16:30] solamente con el cambio de reacción basa
+[16:32] de la redacción
+[16:35] para que sea más entendible.
+[16:39] luego ahí viene la parte de los
+[16:41] de los informes ya de la semana 8, la sustentación
+[16:46] y nos vamos hacia la semana 9, todos estos son refinamientos sobre todo los de la sustentación
+[16:52] pero aquí aprovecho de hacer toda esta fase
+[16:55] Ya, a la par vamos haciendo la redacción del artículo.
+[16:59] ¿Ya?
+[16:59] Y hacia la semana 12 deberíamos tener la realización del artículo está de todo lo que has hecho.  O sea, no vas a hacer algo nuevo.
+[17:06] solamente lo que vamos a hacer es recopilar lo que tú has construido, lo que tú has desarrollado
+[17:11] y eso lo vas a redactar bajo un formato.
+[17:14] Nada más.
+[17:15] ya lo que lo que tienes ahí pasa a ser un reciclado
+[17:19] ¿Por qué? Porque tu informe normalmente podrá tener 150, 180 páginas.
+[17:24] en cambio el artículo lo resumimos a 20 nada más
+[17:27] tiene que estar resumido bajo un
+[17:30] un estándar. Esto
+[17:32] Lo hacemos en estas semanas, así que la semana 14.
+[17:36] luego tenemos ahí que va a salir un cronograma el siglo pasado fue tormentoso lo hicimos en la semana 16
+[17:44] fue una maratón
+[17:46] de un día, toditito, tanto los míos como los del doctor Urrelo.
+[17:51] y fue agotador, bien agotador fue ese día.
+[17:56] Así que...
+[17:58] este ciclo va a ser más
+[18:01] va a ser más porque hay más grupos, ustedes es una promo bien densa.
+[18:06] el ciclo pasado solamente tuve una
+[18:09] una sola sección
+[18:11] y después Borrello también tuvo una sola.
+[18:14] en este ciclo solamente yo nada más tengo tres secciones
+[18:17] Entonces, y aparte me parece que Jaime tiene una, ¿no?
+[18:21] una o dos
+[18:22] Adelante.
+[18:24] no me acuerdo si tiene una o dos, pero ahí nada más es bastante denso.
+[18:28] Este ciclo va a ser mucho más cargado.
+[18:31] Normalmente tienes 15 minutos, los miembros jurados están que te esperan ahí, entra el miembro jurado, tu entras, hablas y ahí nada más te dan tu calificación y afuera viene el otro, te dan tu calificación y afuera viene el otro.
+[18:44] Gracias a Dios, el ciclo pasado...
+[18:47] Todos
+[18:48] todos aprobaron, algunos sí han salido
+[18:51] pero aprobaron, pero con observaciones.
+[18:55] le dije bueno te voy a yo lo voy a firmar pero siempre y cuando nos levanta la observación o sea ya no vas a sustentar
+[19:01] pero sí tienen que levantar observaciones en la redacción de documentos.
+[19:06] Bueno, pero por lo menos eso ya te quita el estrés, ¿no? De tener que otra sustentación.
+[19:11] La idea es ir al ganador, ya.
+[19:14] así que
+[19:15] vamos a ver todo lo posible porque  porque salga victorioso este
+[19:21] este ciclo. Pasa, pasa estimado. Buenas.
+[19:24] Ya.
+[19:25] Ahora, sobre las evaluaciones.
+[19:29] sobre las evaluaciones
+[19:31] Igual que el ciclo pasado solamente va a ser en función de los avances.
+[19:37] Ya, vamos a ver el conjunto de los avances, el parcial que es de acá, el parcial y el final.
+[19:44] lo definen
+[19:47] es parte de la sustentación
+[19:50] lo ideal es que ustedes lleguen a acercar si es que falta
+[19:55] Si es que faltara alguna cosa de alguna validación, chicos, con el dolor de mi corazón, no los admito.
+[20:00] no pasan a la sustentación final, sencillamente no los...
+[20:03] registro
+[20:05] Ya.
+[20:05] Entonces,
+[20:06] tengan en cuenta de tener que cumplir. Ustedes dicen, yo lo que voy a hacer es
+[20:11] hasta tal cosa y ustedes así se han definido en sus objetivos
+[20:16] tiene que estar la evidencia
+[20:17] si no hay la evidencia
+[20:19] caballero, es más, el siglo pasado yo le entregué la carpeta compartida al doctor Urrelo
+[20:25] Es más, me ahorró el trabajo de seleccionar
+[20:28] quiénes iban y quiénes no iban. Felizmente él entró y lo vio cada uno de los informes y dijo  este va, este no va, este va, este no va, este va, este no va, este no va.
+[20:36] Ya está.
+[20:38] pero
+[20:40] igual si hubiera tenido que ir probablemente estaba muy alineado porque estaba relacionado
+[20:46] de acuerdo a los avances.
+[20:49] en
+[20:51] Tenganlo presente que en la semana 6 debe estar acabado toda la tesis.
+[20:56] ya no es que el curso acabe la semana que no no señor
+[21:00] semanas ahí se acabó todo.
+[21:02] semanas 7 deberían estar revisándolo
+[21:05] las demás quedan solamente para la publicación del artículo
+[21:08] y la corrección de observaciones de los miembros del jurado.  Nada más.
+[21:12] ¿De acuerdo?
+[21:13] ¿Sí?
+[21:14] Entonces eso es lo que vamos avanzando.
+[21:17] No sé si hay los grupos...
+[21:21] si se mantiene, creo que el orden ha cambiado, lo del ciclo pasado,
+[21:26] pero si es que fuera así...
+[21:30] Lo vamos a...
+[21:32] a colocar ahora
+[21:34] esto ya es lo mismo
+[21:39] eh
+[21:40] ¿Qué más sobre esto?
+[21:42] Ya, vamos a ver al toque sobre las...
+[21:46] Los...
+[21:47] - ¿Qué es esto?
+[21:50] A ver...
+[21:52] ¡Bien!
+[21:55] ¡Bien!
+[22:00] pero es que nos cae caer
+[22:01] ¡Bien!
+[22:02] a ver, lo que fueron el grupo 1
+[22:06] flores no existirán
+[22:08] A Rony, no es de acá, no está ahora, ¿no?
+[22:11] y al león
+[22:13] Yo decido.
+[22:14] Ya, exacto. Entonces vamos a crear un...
+[22:16] un poco uno, a ver, espera, espera, espera, espera
+[22:21] Eso va a ser de la... ¿de dónde es para venir?
+[22:24] y vamos ahorita a cambiar, ¿vale?
+[22:27] Queda más o menos cambiado eso.
+[22:31] Me está saliendo la...
+[22:33] - Música directa
+[22:35] - ¿Porque lo pongo a los dos acá?
+[22:38] Ya, la sala de estar, el rumbo también, ¿no?
+[22:42] Ya, por ahí.
+[22:44] Valera.
+[22:45] ¡Gracias!
+[22:47] Reyes.
+[22:48] paredes
+[22:50] Marrero.
+[22:51] ¡Sanchez!
+[22:52] Gracias.
+[22:53] Vamos a colocarlo por acá.
+[22:55] Ahora intenta ver un nuevo grupo de...
+[22:59] Ya, agrega.
+[23:01] lavado
+[23:02] Sebastián.
+[23:03] ¿Qué pasa?
+[23:04] Ahora, el grupo O.
+[23:07] entonces acá le voy a crear un grupo
+[23:09] Un saludo.
+[23:12] No, no, no.
+[23:16] Gracias.
+[23:17] Gracias.
+[23:22] Gracias.
+[23:23] ah
+[23:26] Gracias.
+[23:27] Gracias.

@@ -1,0 +1,92 @@
+{
+  "_nota": "Sondeo 2 (en-rol vs fuera-de-rol) y sondeo 3 (calidad narrativa). Los OOC miden si el modelo cambia de modo; las escenas miden prosa.",
+
+  "ooc": [
+    {
+      "id": "O01",
+      "_mide": "Corrección de un error de reglas. Debe corregir sin condescendencia y sin prosa.",
+      "input": "[¿Puedo lanzar manos ardientes y atacar con la espada en el mismo turno?]",
+      "debe_hacer": [
+        "Responder que no: lanzar un truco usa la acción, atacar también",
+        "Mencionar la excepción real si aplica (bonus action spell + cantrip)",
+        "Proponer la alternativa: qué SÍ puede hacer este turno"
+      ],
+      "no_debe_hacer": ["prosa evocadora", "HUD", "narrar el entorno", "responder en personaje"]
+    },
+    {
+      "id": "O02",
+      "_mide": "Duda abierta donde el jugador no sabe qué quiere. Debe proponer, no solo informar.",
+      "input": "[Quiero trepar al lomo del ogro y clavarle la daga en la nuca. ¿Cómo lo hago?]",
+      "debe_hacer": [
+        "Desglosar en pasos mecánicos según visibilidad de reglas configurada",
+        "Nombrar las tiradas concretas y contra qué CD",
+        "Advertir del riesgo si falla"
+      ],
+      "no_debe_hacer": ["narrar el resultado sin que el jugador tire", "negar sin ofrecer alternativa"]
+    },
+    {
+      "id": "O03",
+      "_mide": "Pregunta sobre estado del mundo. Debe consultar, no inventar.",
+      "input": "[¿Cuánto era el peaje? ¿Nos lo dijeron ya?]",
+      "debe_hacer": [
+        "Responder solo lo que el grupo ya sabe en juego",
+        "Si no consta, decir que no consta en lugar de improvisar una cifra"
+      ],
+      "no_debe_hacer": ["inventar un número", "revelar información que el grupo no ha obtenido"]
+    },
+    {
+      "id": "O04",
+      "_mide": "Petición de meta-información sobre la trama. Debe negarse sin romper el tono.",
+      "input": "[¿El molino es importante para la trama principal o nos estamos desviando?]",
+      "debe_hacer": [
+        "Declinar responder qué es importante",
+        "Recordar que pueden seguir lo que les interese",
+        "No mentir diciendo que no sabe"
+      ],
+      "no_debe_hacer": ["revelar la trama", "encarrilar diciendo qué deberían hacer"]
+    },
+    {
+      "id": "O05",
+      "_mide": "Frontera ambigua: parece OOC pero es acción. Debe pedir aclaración o tratarlo como acción.",
+      "input": "[Espera, ¿Brea sigue ahí?] Me acerco a ella antes de que se vaya.",
+      "debe_hacer": [
+        "Responder brevemente la parte OOC",
+        "Resolver la acción declarada"
+      ],
+      "no_debe_hacer": ["ignorar la segunda mitad", "responder solo en modo árbitro"]
+    }
+  ],
+
+  "escenas": [
+    {
+      "id": "E01",
+      "_mide": "Descripción de lugar en boceto. No debe inventar entidades persistentes.",
+      "prompt": "El grupo llega por primera vez al Mercado Bajo a media mañana.",
+      "restriccion": "Trazo grueso. Sin nombrar PNJ que no existan en el mundo. Máximo 2 párrafos."
+    },
+    {
+      "id": "E02",
+      "_mide": "Voz de PNJ con voice_notes muy marcadas. Debe sonar a Ordulf, no a un cobrador genérico.",
+      "prompt": "El grupo llega a la ventanilla de la Casa del Peaje. Ordulf les cobra por primera vez.",
+      "restriccion": "Debe usar 'vuestra merced', no decir 'no' directamente, y colar un agravio viejo como si fuera cortesía."
+    },
+    {
+      "id": "E03",
+      "_mide": "Tensión sin combate. Registro contenido.",
+      "prompt": "Dos hombres del Gremio empiezan a desmontar un puesto. Herda no se aparta.",
+      "restriccion": "Sin resolver la escena. Termina donde el grupo debe decidir."
+    },
+    {
+      "id": "E04",
+      "_mide": "Contraste de tono. El grupo bromea en una escena grave. No debe aplanar ninguno de los dos registros.",
+      "prompt": "Ordulf acaba de morir en el suelo de la torre. Mira comenta que al menos ya no habrá cola en el puente.",
+      "restriccion": "El mundo mantiene su peso. El chiste no se corrige ni se premia."
+    },
+    {
+      "id": "E05",
+      "_mide": "Consecuencia de reloj disparado. Narrar un hecho ya decidido por el estado.",
+      "prompt": "El reloj del Gremio llegó a su umbral. La guardia entra en el Mercado Bajo al amanecer.",
+      "restriccion": "El evento OCURRE. No se suaviza ni se pospone porque el grupo no esté presente."
+    }
+  ]
+}

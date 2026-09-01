@@ -1,0 +1,139 @@
+{
+  "_proposito": "Contrato del extractor. Fuente única de verdad para el prompt, la validación y el esquema Zod de la plataforma. Si esto y mutable_fields divergen, apply_delta rechazará lo que el extractor produzca.",
+  "_principio": "El extractor CLASIFICA con opciones cerradas y CITA evidencia literal. Nunca elige números: las magnitudes de disposición las calcula resolve_event() según la personalidad del PNJ.",
+  "event_kinds": [
+    "bribe_offered",
+    "promise_made",
+    "promise_kept",
+    "promise_broken",
+    "bond_target_protected",
+    "bond_target_harmed",
+    "life_saved",
+    "betrayal_proven",
+    "threat_made",
+    "competence_shown",
+    "ideal_honored",
+    "ideal_violated",
+    "public_status_given",
+    "secret_entrusted"
+  ],
+  "campos_directos": {
+    "npc": {
+      "status": {
+        "tipo": "enum",
+        "valores": [
+          "alive",
+          "dead",
+          "missing",
+          "captured"
+        ]
+      },
+      "location_id": {
+        "tipo": "ref",
+        "entidad": "location"
+      },
+      "knowledge": {
+        "tipo": "append",
+        "valor": "texto del hecho aprendido"
+      },
+      "secret_revealed": {
+        "tipo": "append",
+        "valor": "identificador del secreto"
+      }
+    },
+    "location": {
+      "state": {
+        "tipo": "enum",
+        "valores": [
+          "intact",
+          "damaged",
+          "destroyed",
+          "occupied",
+          "abandoned"
+        ]
+      },
+      "detail": {
+        "tipo": "enum",
+        "valores": [
+          "sketch",
+          "observed",
+          "full"
+        ]
+      },
+      "controlling_faction_id": {
+        "tipo": "ref",
+        "entidad": "faction"
+      }
+    },
+    "faction": {
+      "knows_about_party": {
+        "tipo": "bool"
+      }
+    },
+    "quest": {
+      "status": {
+        "tipo": "enum",
+        "valores": [
+          "unknown",
+          "active",
+          "completed",
+          "failed",
+          "abandoned"
+        ]
+      },
+      "next_step_known": {
+        "tipo": "bool"
+      }
+    },
+    "character": {
+      "hp_current": {
+        "tipo": "numeric",
+        "min": -99,
+        "max": 999
+      },
+      "conditions": {
+        "tipo": "append"
+      },
+      "inventory": {
+        "tipo": "append"
+      }
+    },
+    "world": {
+      "game_day": {
+        "tipo": "numeric",
+        "min": 0,
+        "max": 999999
+      }
+    }
+  },
+  "salida": {
+    "events": [
+      {
+        "entity": "clave de un PNJ existente",
+        "event_kind": "uno del enum",
+        "evidence": "subcadena LITERAL del turno",
+        "detail": "solo para promise_made: qué se prometió, en una frase"
+      }
+    ],
+    "deltas": [
+      {
+        "entity": "clave de una entidad existente",
+        "entity_type": "npc | location | faction | quest | character | world",
+        "field": "uno de campos_directos",
+        "value": "según el tipo declarado",
+        "evidence": "subcadena LITERAL del turno",
+        "witnessed": "opcional, bool: si el turno dice explicitamente que alguien presencio el cambio"
+      }
+    ]
+  },
+  "reglas_duras": [
+    "evidence debe aparecer LITERAL en el texto del turno. Se verifica en código antes de escribir; si no aparece, se rechaza.",
+    "entity debe existir. El extractor NUNCA crea entidades: la creación es operación explícita aparte.",
+    "Solo se registra lo que OCURRIÓ. Intenciones, amenazas no ejecutadas, hipótesis y bromas no producen nada.",
+    "Ante la duda, no emitir. Sub-detectar es recuperable (el turn_log queda íntegro y se reprocesa); sobre-detectar entra al canon y nada lo señala.",
+    "Las magnitudes de aprecio, confianza y respeto NO se emiten. Se emite el evento y el sistema resuelve el número.",
+    "promise_made lleva ademas un campo 'detail' con el compromiso en una frase. Sin el, promise_kept y promise_broken no son verificables despues.",
+    "La postura de una faccion (stance_party) NO se extrae: la propaga el sistema desde entity_relations cuando un PNJ miembro sufre algo y la faccion se entera. Pedirsela al modelo es pedirle una magnitud, que es justo lo que no debe elegir.",
+    "witnessed es opcional y solo se emite cuando el turno lo dice EXPLICITAMENTE (un testigo, alguien que ve, un grito que alguien oye). Es la base de la propagacion: el sistema decide con el si una faccion se entera. Omitirlo significa 'no consta', no 'nadie vio'."
+  ]
+}
