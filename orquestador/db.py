@@ -385,3 +385,100 @@ class Campaña:
                            json.dumps(value), turn_id, witnessed)).fetchall()
             c.commit()
             return r
+    # ------------------------------------------------------------------
+    # Agente del Mundo (§5.4). Igual que historial_router(), estos métodos
+    # existen porque el Mundo mecánico necesita leer/escribir cosas que el
+    # modelo de datos entidad+delta no cubre directamente:
+    #   - avanzar_relojes: envoltura de advance_clocks(), ya escribe
+    #     progress/fired_at_turn directamente (es la propia función SQL la
+    #     que decide, no una extracción del modelo -- fuente 'clock').
+    #   - fijar_lugar: `description_canonical` y `observed_at_turn` NO
+    #     están en mutable_fields (solo `detail` sí, como enum). Son
+    #     campos de acompañamiento del mismo evento de "congelar boceto"
+    #     (MUN-5/6), no hechos extraídos que necesiten evidencia -- se
+    #     escriben directo, igual que turn_log en registrar_turno(). El
+    #     campo `detail` en cambio SÍ pasa por apply_delta porque SÍ está
+    #     en la lista blanca.
+    #   - semillas_sin_ubicar / plantar_semilla: session_seeds no es un
+    #     entity_type (mirar el enum), es tabla de planificación de sesión,
+    #     no de estado de mundo -- fuera del alcance de apply_delta por
+    #     diseño, no por descuido.
+    # ------------------------------------------------------------------
+
+    def avanzar_relojes(self, game_days, turn_id):
+        """MUN-1/MUN-2: avanza faction_clocks con tiempo de juego y
+        devuelve los que dispararon ESTE turno. El Mundo (LLM) no decide
+        si un reloj dispara -- eso ya es verdad en la base cuando esta
+        función retorna. Su trabajo es narrar/plantar consecuencia del
+        evento devuelto, no juzgar si ocurrió."""
+        with self._conn() as c:
+            self._tx(c)
+            r = c.execute(
+                "SELECT * FROM advance_clocks(%s, %s, %s)",
+                (self.campaign_id, game_days, turn_id)).fetchall()
+            c.commit()
+            return r
+
+    def lugar_estado(self, location_id):
+        """Lo que orquestador/mundo.py necesita para decidir MUN-4/5/6/7:
+        si el lugar ya está congelado (`observed`/`full`, repetir
+        `description_canonical` tal cual) o sigue en `sketch` (el LLM
+        genera boceto nuevo)."""
+        with self._conn() as c:
+            self._tx(c)
+            return c.execute("""
+                SELECT id, kind, detail, description_canonical, observed_at_turn
+                  FROM locations WHERE id=%s AND campaign_id=%s""",
+                             (location_id, self.campaign_id)).fetchone()
+
+    def fijar_lugar(self, location_id, description_canonical, turn_id,
+                     detail="observed"):
+        """Congela el detalle de un lugar la primera vez que el jugador
+        pregunta algo concreto (MUN-5). A partir de aquí, `lugar_estado()`
+        devuelve SIEMPRE este texto para este lugar (MUN-6) -- nunca se
+        vuelve a llamar al LLM para redescribirlo, salvo que algo cambie
+        de verdad en el mundo (eso sí es un delta nuevo, no un re-fijado)."""
+        with self._conn() as c:
+            self._tx(c)
+            self.aplicar("location", location_id, "detail", detail, turn_id,
+                          source="mechanical")
+            c.execute("""
+                UPDATE locations
+                   SET description_canonical=%s, observed_at_turn=%s
+                 WHERE id=%s AND campaign_id=%s""",
+                      (description_canonical, turn_id, location_id,
+                       self.campaign_id))
+            c.commit()
+
+    def semillas_sin_ubicar(self, session_id=None, limite=5):
+        """MUN-3: semillas SIN ubicación, listas para plantarse donde el
+        grupo esté. Se listan las más antiguas primero (FIFO) -- no hay
+        orden narrativo correcto, pero sí hay uno injusto: dejar una
+        semilla enterrada para siempre porque siempre se prioriza otra."""
+        with self._conn() as c:
+            self._tx(c)
+            if session_id:
+                return c.execute("""
+                    SELECT id, kind, content FROM session_seeds
+                     WHERE campaign_id=%s AND session_id=%s
+                       AND location_id IS NULL AND planted_at_turn IS NULL
+                     ORDER BY id LIMIT %s""",
+                                 (self.campaign_id, session_id, limite)).fetchall()
+            return c.execute("""
+                SELECT id, kind, content FROM session_seeds
+                 WHERE campaign_id=%s
+                   AND location_id IS NULL AND planted_at_turn IS NULL
+                 ORDER BY id LIMIT %s""",
+                             (self.campaign_id, limite)).fetchall()
+
+    def plantar_semilla(self, seed_id, location_id, turn_id):
+        """Planta una semilla donde el grupo esté AHORA -- nunca al revés
+        (el grupo nunca es empujado hacia donde estaba la semilla)."""
+        with self._conn() as c:
+            self._tx(c)
+            c.execute("""
+                UPDATE session_seeds
+                   SET location_id=%s, planted_at_turn=%s
+                 WHERE id=%s AND campaign_id=%s""",
+                      (location_id, turn_id, seed_id, self.campaign_id))
+            c.commit()

@@ -557,52 +557,68 @@ superposición alta pese a ejes opuestos es la señal directa del bug de
 colapso. También comprueba arraigo (el PNJ no menciona lo que no está en
 su conocimiento declarado).
 
-### 5.4 Agente del Mundo
+### 5.4 Agente del Mundo — híbrido: código para lo que ya es garantía, LLM para lo creativo
 
+**Decisión (2026-09-06):** de los cinco roles, este es el que sostiene
+directamente "consistencia de eventos y estado del mundo a largo plazo"
+-- no genera el mundo una vez, lo MANTIENE actualizado frente a la
+acción del jugador turno a turno. Un reloj que no avanza cuando debía,
+un lugar que cambia de descripción cada vez que el jugador vuelve, o una
+semilla que nunca se planta son exactamente los fallos que esa métrica
+tiene que poder detectar -- y detectarlos requiere que esas tres cosas
+sean garantía del sistema, no memoria del modelo (`QM - Lecciones de
+ingeniería` §3: "si el modelo tiene que adivinar algo que la base sabe,
+dáselo"). Por eso, igual que Router y Árbitro, se separa en dos piezas:
+
+1. **Camino mecánico — `orquestador/mundo.py`, función pura
+   `resolver_mundo()`, sin LLM**, más los métodos nuevos de
+   `orquestador/db.py` (`avanzar_relojes`, `lugar_estado`, `fijar_lugar`,
+   `semillas_sin_ubicar`, `plantar_semilla`) que leen/escriben lo que el
+   modelo entidad+delta no cubre directamente:
+   - **MUN-1/MUN-2 (relojes):** `avanzar_relojes()` envuelve
+     `advance_clocks()` (SQL, ya existía en el esquema sin que nada la
+     llamara todavía). El reloj avanza y dispara en la base; el LLM
+     nunca decide si ocurrió, solo recibe el evento ya resuelto.
+   - **MUN-4/5/6 (lugares):** `locations.detail` (`sketch`→`observed`/
+     `full`) ya modela esto en el esquema. `resolver_mundo()` decide sin
+     LLM si el lugar debe repetir su `description_canonical` congelada
+     (MUN-6, cero costo) o si necesita boceto nuevo -- y si ese boceto se
+     fija para siempre (MUN-5: preguntó algo concreto) o no (MUN-4: trazo
+     grueso normal, sigue en `sketch`).
+   - **MUN-7 (mazmorras/ruinas/criptas):** se tratan como los tipos de
+     lugar que exigen plan completo (`location_kind` ya distingue esto en
+     el esquema) -- si su `detail` no es `full` todavía, `resolver_mundo()`
+     fuerza el camino de fijar aunque nadie haya preguntado nada.
+   - **MUN-3 (semillas):** `semillas_sin_ubicar()` expone las candidatas
+     sin plantar (FIFO); el código nunca decide POR SÍ SOLO plantarlas --
+     eso sigue siendo juicio del LLM (¿encaja en la escena actual?).
+2. **Camino de juicio — `dm/prompt_mundo_g1.md`, sí llama al modelo.**
+   Solo se invoca cuando `resolver_mundo()` dice `necesita_llm=True`.
+   Cubre: el texto del boceto (trazo grueso o fijado, según lo que el
+   código ya decidió); si la semilla candidata encaja en la escena
+   actual y con qué palabras se planta -- con permiso explícito de
+   devolver `planteada: false` si el grupo se enfrascó en algo no
+   planeado (nunca se fuerza una semilla para no "desperdiciar sesión");
+   propagación a PNJ con vínculo declarado (MUN-8/PNJ-3), siempre con una
+   `razon` de cómo pudo enterarse -- sin eso es telepatía, no propagación;
+   y el tono de ritmo según el perfil de campaña (grimdark/heroico/ligero).
+
+HERRAMIENTAS: todas las de lectura (`get_entity`, `query_state`,
+`traverse_relations`, `search_narrative`, `search_rules`, `get_persona`,
+`get_recap`). Escritura: `apply_delta` (y `create_entity` para PNJ/lugares
+que el jugador promueve de paso a persistente).
+
+SALIDA (objeto, del camino de juicio -- el camino mecánico no produce
+salida propia, solo alimenta las claves ya resueltas al Narrador):
 ```
-Gestionas el estado del mundo y lo que ocurre alrededor. No narras al jugador.
-
-RELOJES
-  Avanzan según la profundidad configurada. Al llegar al umbral el evento
-  OCURRE: no lo suavices ni lo pospongas porque sea inconveniente o el
-  jugador no esté listo.
-  Si al dispararse tocaría una línea roja, reescribe el evento antes.
-
-SEMILLAS
-  No tienen ubicación asignada: se plantan donde el jugador esté. Si
-  abandonó lo preparado, el material se replanta; nunca lo devuelvas por la
-  fuerza. Nunca anules una decisión para forzar una ruta.
-  Si se enfrascó en algo no planeado, eso es la sesión: genera profundidad
-  ahí. La brevedad no es desinterés.
-
-LUGARES
-  Trazo grueso por defecto. Cuando el jugador pregunta por algo concreto,
-  detállalo; ese detalle queda fijo y se repite si vuelve.
-  Si algo difiere de lo descrito, ese cambio es contenido.
-  Mazmorras, ruinas y criptas se planifican completas antes de entrar.
-
-PNJ
-  Los de paso no necesitan ficha. Si el jugador vuelve a uno por su cuenta,
-  genérale ficha completa.
-  Si tocan lo que un PNJ ama, propágalo a quien tenga vínculo con ello y
-  pudiera haberse enterado.
-
-RITMO
-  Nunca insertes una pausa por conteo de turnos.
-  grimdark: ningún alivio programado. heroico: alternancia tras picos.
-  ligero: tensión episódica.
-  No compitas con el jugador: toda amenaza letal deja señales antes.
-  Una solución ingeniosa no prevista funciona.
-  Ambientar no es enganchar: nunca introduzcas trama en una viñeta.
-
-Las líneas rojas y velos sobrescriben tono, trama, relojes y consecuencias,
-y son editables en cualquier momento.
-
-HERRAMIENTAS: todas las de lectura. apply_delta (único que escribe).
-
-SALIDA (objeto):
-  boceto, semilla_plantada, evento_de_reloj, deltas
+  boceto, semilla_plantada, propagacion_sugerida, deltas
 ```
+
+Verificación: `orquestador/probar_mundo.py` (10 casos puros, sin DB ni
+red, cubre relojes/lugares/semillas del camino mecánico) y
+`orquestador/verificar_mundo.py` (llama al modelo real: boceto de trazo
+grueso vs. boceto que se fija, semilla que NO debe forzarse, propagación
+con razón declarada -- mismo patrón que los verificadores anteriores).
 
 ### 5.5 Narrador
 
