@@ -422,38 +422,84 @@ calcula en el arnés compartido, no dentro de este módulo — se aplica
 igual delante de G2 y de G1 (§9). Este algoritmo lo *consulta*, no lo
 posee.
 
-### 5.2 Árbitro
+### 5.2 Árbitro — híbrido: código para lo mecánico, LLM solo para el juicio
 
+**Decisión (2026-09-06):** igual que el Router, el Árbitro no es un único
+prompt monolítico. `QM - Composición G1` fija esto por latencia y costo
+(−6,7 s: "la aritmética es código; el modelo solo para el tutor OOC") y el
+draft anterior (un solo prompt combinado, abajo sustituido) mezclaba
+aritmética que ya resuelve `dados.py` con juicio real. Se separan en dos
+piezas:
+
+1. **Camino mecánico — `orquestador/arbitro.py`, función pura
+   `resolver_veredicto()`, sin LLM.** Cuando el buffer ya trae una tirada
+   resuelta `(resultado: N ...)`, comparar contra una CD y devolver el
+   veredicto es aritmética, no juicio — igual que el Router, no hay
+   instrucción de las 20 asignadas al Árbitro que exija un modelo aquí.
+   - CD por defecto: **15 ("Media")**, tomada literalmente de la tabla
+     "Typical Difficulty Classes" del SRD 5.2 (CC-BY-4.0): Muy fácil 5,
+     Fácil 10, Media 15, Difícil 20, Muy difícil 25, Casi imposible 30. El
+     esquema no guarda una CD por acción/lugar, así que Media es el punto
+     de partida que el propio manual recomienda cuando no hay razón para
+     desviarse — no es un número inventado por el sistema.
+   - Modificador de disposición (PNJ-16): `disposition_band()` (Postgres)
+     devuelve 7 bandas; la instrucción original solo define 3 niveles, así
+     que se agrupan sin añadir granularidad que el contrato no pide:
+     `hostile`/`wary` → **+5** (hostil), `cold`/`neutral`/`cordial` → **0**
+     (indiferente), `loyal`/`devoted` → **−5** (amistoso).
+   - Si no hay tirada pero `altera_estado=True` (Router), la función
+     devuelve `necesita_juicio=True` en vez de inventar un veredicto: eso
+     es NUN-5, y NUN-5 sí necesita el LLM.
+   - `recurso_consumido` (ENT-4) queda `None` en este camino a propósito:
+     `dados.py` ya quitó las `{llaves}` del buffer antes de que el
+     Árbitro lo vea, así que no queda delimitador para extraer qué
+     objeto se usó. Se resuelve cuando el Mundo (dueño de `apply_delta`
+     sobre inventario) esté conectado — no antes.
+
+2. **Camino de juicio — `dm/prompt_arbitro_g1.md`, sí llama al modelo.**
+   Cubre solo lo que el código no puede decidir:
+   - **Modo tutor** (OOC-1 a OOC-6): el jugador escribió `[corchetes]`.
+     Responde claro, sin prosa evocadora, propone alternativas, corrige
+     sin condescendencia, respeta `visibilidad_reglas`, nunca revela
+     trama. Salida directa al jugador (`{"respuesta": "..."}`) — el
+     Narrador nunca la ve, porque el Router ya marca
+     `pnj_que_responden=[]` en este modo.
+   - **Modo veredicto sin tirada** (NUN-3/4/5): juzga si una acción
+     imprevista y sin tirada estándar funciona, sin competir con el
+     jugador, con toda amenaza letal telegrafiada antes de golpear. Si en
+     realidad la acción sí requería una tirada mecánica que no se hizo,
+     este modo no la inventa: devuelve `veredicto: null` para que el
+     orquestador pida la tirada, en vez de fabricar un resultado.
+
+**Fix de nombre (colisión con el Narrador):** el draft anterior trataba
+`veredicto` como un campo plano más entre varios. `dm/prompt_narrador_g1.md`
+espera un fragmento *anidado* llamado `veredicto` que agrupa
+`resultado`, `cd`, `correccion_al_jugador` (ver su sección "FRAGMENTOS QUE
+RECIBES"). Se resuelve haciendo que `veredicto` sea el nombre del objeto
+completo — así lo produce tanto `resolver_veredicto()` como el modo
+veredicto_sin_tirada del prompt — y no un campo entre otros. No hizo
+falta tocar el prompt del Narrador.
+
+HERRAMIENTAS (ambos caminos, cuando aplica): `search_rules`, `get_entity`,
+`query_state`.
+
+SALIDA — camino mecánico y modo veredicto_sin_tirada (mismo objeto,
+mismas claves, para que el Narrador no necesite saber cuál de los dos lo
+generó):
 ```
-Eres el árbitro de reglas y el tutor fuera de personaje. No narras.
-
-La aritmética (tiradas, CD, ventaja, daño, validación SRD) la resuelve el
-sistema, no tú. Tu trabajo es el juicio y la explicación.
-
-MODO TUTOR (cuando el jugador escribe [corchetes]):
-  Responde claro y directo, sin prosa evocadora ni HUD.
-  Explica la mecánica que aplica y por qué.
-  Si lo que pide no funciona, propón la alternativa que sí.
-  Si se equivocó en una regla, corrígelo sin condescendencia.
-  Adapta el detalle a visibilidad_reglas.
-  Nunca reveles trama ni digas al jugador qué debería hacer.
-
-MODO VEREDICTO (turno en rol con componente mecánico):
-  Emite el veredicto, no la narración.
-  Sin tirada previa cuando corresponda, no resuelvas la acción.
-  Una solución ingeniosa no prevista funciona.
-  No compitas con el jugador: toda amenaza letal deja señales antes.
-  La disposición del PNJ modifica las CD sociales: hostil +5, amistoso −5.
-  Aprecio, confianza y respeto son ejes independientes y pueden bajar.
-
-Las líneas rojas y velos sobrescriben todo y son editables en cualquier
-momento. Sin relleno conversacional.
-
-HERRAMIENTAS: search_rules, get_entity, query_state.
-
-SALIDA (objeto):
   veredicto, cd, resultado, recurso_consumido, correccion_al_jugador
 ```
+
+SALIDA — modo tutor (va directo al jugador, no al Narrador):
+```
+  respuesta
+```
+
+Verificación: `orquestador/probar_arbitro.py` (11 casos puros, sin DB ni
+red, cubre el camino mecánico completo) y `orquestador/verificar_arbitro.py`
+(llama al modelo real, cubre los dos modos del camino de juicio —
+mismo patrón que `verificar_fugas_narrador.py`: fuga de prompt + forma de
+la salida verificadas en código, calidad de la respuesta a ojo).
 
 ### 5.3 Actor PNJ
 
