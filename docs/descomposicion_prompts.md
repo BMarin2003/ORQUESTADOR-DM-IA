@@ -503,46 +503,59 @@ la salida verificadas en código, calidad de la respuesta a ojo).
 
 ### 5.3 Actor PNJ
 
-```
-Eres este personaje. No lo describes desde fuera: lo eres.
+**Decisión (2026-09-06):** el draft anterior (abajo sustituido) tenía UN
+solo ejemplo de reacción (el capitán del puente). `QM - Lecciones de
+ingeniería` §2 ya documentaba que esa frase se filtró literal en dos
+modelos distintos — un ejemplo único enseña postura, no formato. El
+corolario que el propio vault dejaba escrito era explícito: "varios
+ejemplos que cubran el rango, o ejemplares por personaje". Se aplican
+ambos a la vez, en capas distintas:
 
-Recibes su ficha y su conocimiento. NO recibes estado del mundo que él no
-conozca — si no está en tu ficha, tu personaje no lo sabe. No lo deduzcas.
+- **Ejemplares por personaje** ya existen en el esquema y no dependen del
+  prompt: `npcs.voice_notes`, los cuatro ejes estables (`warmth`,
+  `candor`, `principle`, `boldness`, inmutables, autorados, sin extractor
+  que los juzgue) y el IBF (`npc_ibf`). Un actor único los interpreta;
+  la consistencia es propiedad del registro, no del modelo.
+- **Varios ejemplos que cubran el rango** se añadieron directamente en
+  `dm/prompt_actor_g1.md`: una matriz de reacciones marcadas
+  explícitamente como ilustración de la función eje→reacción (no líneas
+  para reciclar), cubriendo los extremos de `principle` y `boldness`
+  frente a los mismos tres disparadores del draft original (soborno,
+  amenaza, tocar el vínculo).
 
-Careces de autoridad para narrar al personaje jugador: no describas sus
-acciones, palabras ni emociones.
+Esto es directamente lo que protege dos de los tres bloques de indicadores
+de la tesis: **Coherencia Longitudinal** (personajes) depende de que la
+misma ficha produzca la misma voz siempre — propiedad de la base, no del
+prompt; y **Calidad Narrativa Emergente** (reactividad significativa a la
+agencia del jugador) queda en cero por diseño si dos PNJ con ejes opuestos
+colapsan en la misma respuesta ante el mismo disparador — que es
+exactamente el bug documentado.
 
-TU REACCIÓN
-  La magnitud de lo que te hacen depende de quién eres, no de la gravedad
-  aparente del acto:
-    Si eres de principios y te ofrecen un soborno, la oferta ES la ofensa.
-    Te ofendes aunque el grupo sea aliado: te acaban de decir quién creen
-    que eres. Rechazas sin negociar y lo recuerdas.
-    Si no tienes escrúpulos, no te ofendes. Si rechazas es por insuficiente,
-    no por indigno: contraofertas o insinúas el precio correcto.
-    Si eres audaz y te amenazan, no te amilanas: sube tu respeto por
-    atreverse, baja tu aprecio.
-    Si eres temeroso, cedes y temes; ese miedo contamina la relación.
-    Si tocan lo que amas, vale igual sea quien seas.
-  Tu techo de confianza no lo superas nunca, por mucho que se lo ganen.
-  Si eres de principios y te traicionan con pruebas, ese techo queda fijado
-  para siempre: puedes volver a tratarlos con corrección, nunca a confiar.
-  La confianza cae más rápido de lo que sube.
-  Tus secretos se revelan solo bajo su condición declarada.
+PRINCIPIO GENERAL (sin cambios frente al draft): la magnitud de lo que le
+hacen al PNJ depende de quién es, no de la gravedad aparente del acto —
+soborno a alguien de principios ofende aunque el grupo sea aliado;
+soborno a alguien sin escrúpulos solo se rechaza por insuficiente; amenaza
+a alguien audaz sube el respeto y baja el aprecio; amenaza a alguien
+temeroso contamina la relación con miedo; tocar un vínculo del IBF vale
+igual para todos, el vínculo ya es el modulador. Techo de confianza fijo,
+la confianza cae más rápido de lo que sube, secretos solo bajo condición
+declarada (ver `dm/prompt_actor_g1.md` para el texto completo con la
+matriz de ejemplos).
 
-Ajusta el registro al tono del mundo. Si el jugador bromea en una escena
-grave y el contraste está permitido, no lo corrijas ni lo premies: reacciona
-como reaccionaría tu personaje.
-
-Las líneas rojas y velos sobrescriben todo. Sin relleno conversacional.
-
-HERRAMIENTAS: get_persona (solo la tuya).
+HERRAMIENTAS: `get_persona` (solo la ficha del propio personaje).
 
 SALIDA (objeto):
-  linea: tu diálogo TEXTUAL, tal como saldrá al jugador
-  entrega: tono, gesto, qué haces mientras hablas
-  se_niega_a: qué no revelas y por qué
 ```
+  linea, entrega, se_niega_a
+```
+
+Verificación: `orquestador/verificar_colapso_actor.py` — mismo patrón que
+los verificadores anteriores (llama al modelo real), pero en vez de
+buscar solo fuga de prompt, mide superposición léxica (Jaccard) entre
+pares de PNJ con ejes opuestos frente al mismo disparador: una
+superposición alta pese a ejes opuestos es la señal directa del bug de
+colapso. También comprueba arraigo (el PNJ no menciona lo que no está en
+su conocimiento declarado).
 
 ### 5.4 Agente del Mundo
 
