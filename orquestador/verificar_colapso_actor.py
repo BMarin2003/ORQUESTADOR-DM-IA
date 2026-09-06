@@ -86,14 +86,21 @@ GRUPOS = [
     },
 ]
 
+# La pregunta YA nombra a "la Baronesa" -- por eso el detector no busca esa
+# frase (el PNJ va a repetirla al negar que sepa algo, y eso NO es fuga,
+# es simplemente responder). Lo que sí sería fuga real es que el PNJ
+# afirme o dé por buena información específica que nadie le dio: aquí,
+# el vínculo con el Gremio de Ladrones. Ese detalle no está en su
+# conocimiento ni en la pregunta -- si aparece, lo inventó o lo "sabe"
+# porque el modelo rellenó el hueco, no porque su ficha se lo permita.
 CASO_ARRAIGO = {
-    "nombre": "arraigo · no revela lo que no sabe",
+    "nombre": "arraigo · no inventa lo que no sabe",
     "ficha": {"nombre": "Tavio el posadero", "principle": 10, "boldness": 10,
               "warmth": 40, "candor": 20,
               "voice_notes": "chismoso pero nunca sobre lo que no vio con sus ojos"},
     "conocimiento": "Vio al grupo entrar a la posada anoche. Nada más.",
-    "secreto_ajeno": "la Baronesa",  # no está en su conocimiento
-    "pregunta": "El grupo le pregunta: \"¿sabes algo de los planes de la Baronesa?\"",
+    "hecho_no_sabido": "Gremio de Ladrones",  # dato específico que nadie le dio
+    "pregunta": "El grupo le pregunta: \"¿qué sabes de los planes de la Baronesa?\"",
 }
 
 
@@ -129,6 +136,9 @@ def main():
                      help="máxima superposición léxica (Jaccard) tolerada "
                           "entre dos PNJ con ejes opuestos ante el mismo "
                           "disparador antes de marcarlo como posible colapso")
+    ap.add_argument("--solo-arraigo", action="store_true",
+                     help="corre solo el caso de arraigo (1 llamada), para "
+                          "no repagar los grupos de divergencia al iterar")
     args = ap.parse_args()
 
     faltan = [v for v in ("DEEPINFRA_API_KEY", "DMIA_MODELO") if not os.environ.get(v)]
@@ -143,7 +153,7 @@ def main():
     coste = {"tin": 0, "tout": 0}
     fallos = []
 
-    for grupo in GRUPOS:
+    for grupo in (GRUPOS if not args.solo_arraigo else []):
         print(f"{'='*74}\n[{grupo['nombre']}]\n{'='*74}")
         salidas = []
         for ficha in grupo["fichas"]:
@@ -186,12 +196,12 @@ def main():
         coste["tin"] += r["tin"]; coste["tout"] += r["tout"]
         linea = salida.get("linea", "") or ""
         print(f"  linea: {linea}\n  se_niega_a: {salida.get('se_niega_a')}\n")
-        if CASO_ARRAIGO["secreto_ajeno"].lower() in linea.lower():
-            print(f"  ✗ el PNJ menciona «{CASO_ARRAIGO['secreto_ajeno']}», "
-                  f"que no está en su conocimiento declarado")
-            fallos.append("arraigo — PNJ revela lo que no sabe")
+        if CASO_ARRAIGO["hecho_no_sabido"].lower() in linea.lower():
+            print(f"  ✗ el PNJ afirma/confirma «{CASO_ARRAIGO['hecho_no_sabido']}», "
+                  f"un dato específico que nadie le dio")
+            fallos.append("arraigo — PNJ inventa un dato que no le corresponde saber")
         else:
-            print("  ✓ no menciona lo que está fuera de su conocimiento declarado")
+            print("  ✓ no inventa el dato específico fuera de su conocimiento declarado")
 
     print(f"\n{'='*74}")
     print(f"  {coste['tin']}→{coste['tout']} tokens · "
