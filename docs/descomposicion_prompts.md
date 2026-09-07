@@ -721,6 +721,19 @@ se compensa: se mide.**
 | "Los secretos se revelan solo bajo su condición" | El Actor decide; el Narrador no ve secretos |
 | "Cambia de modo con [corchetes]" | El Router enruta al Árbitro directamente |
 | "Terminada la respuesta OOC, vuelve al modo narrativo" (OOC-7) | El Router reclasifica cada turno desde cero: no hay estado de modo que arrastrar ni instrucción que olvidar |
+| "Si el lugar ya se describió, repite lo mismo; si no, boceto grueso" (MUN-4/5/6/7) | `locations.detail`/`description_canonical`: el Mundo repite lo congelado sin volver a generarlo — decisión explícita del 2026-09-07 de NO compartir esto con G2 (ver nota abajo) |
+
+**Nota sobre MUN-4/5/6/7 (2026-09-07):** a diferencia de todo lo demás en
+esta tabla, aquí se decidió deliberadamente NO dar a G2 el mismo apoyo de
+código que a G1, aunque la infraestructura (`locations.detail`) existe y
+sería trivial exponerla a ambos. Razón: la consistencia de descripciones
+de lugar a lo largo de una campaña es precisamente lo que "Coherencia
+Longitudinal — estado del mundo a largo plazo" tiene que poder detectar.
+Si el mecanismo de memoria se iguala por código en ambos brazos, esa
+diferencia deja de ser observable y la métrica pierde varianza que
+debería medir. Contraste con MUN-1/2 (§9): los relojes SÍ se comparten
+porque son aritmética/umbral (como las tiradas), no memoria narrativa —
+la línea se traza ahí, no en "toca la tabla `locations`".
 
 ---
 
@@ -739,6 +752,7 @@ una ventaja medible.
 | ENT-6 | El jugador puede escribir varios mensajes antes de cerrar la interacción | Buffer con commit — ya existe, es lo que arma `buffer_txt` en `vertical_slice.py` |
 | ENT-7 | No respondas a cada mensaje: espera al cierre y responde a la escena completa | Mismo buffer con commit |
 | SAL-6 | Enfriamiento de dos turnos entre viñetas ambientales | Arnés: se consulta `turn_log` de los últimos dos turnos **antes** de invocar tanto a G2 como al Router de G1. Si no se comparte, G1 tendría una disciplina de moderación garantizada que G2 solo tiene como instrucción de prompt — ventaja no declarada. |
+| MUN-1 / MUN-2 | Relojes de facción: al llegar al umbral, el evento OCURRE | `advance_clocks()` (SQL) corre en `vertical_slice.py` para AMBOS brazos tras escribir el delta de `world.game_day` (paso 8). Es aritmética contra un umbral, igual que una tirada de dados — no memoria narrativa, así que compartirlo no contamina lo que la tesis mide (contraste con MUN-4/5/6/7 en §8, que sí se dejó asimétrico a propósito). El evento se muestra en el contexto del turno SIGUIENTE (`eventos_reloj_turno()`), porque `advance_clocks()` corre después de que el DM ya narró este turno. |
 
 Para G2 estas cinco siguen siendo instrucciones de prompt (siguen ahí,
 sin tocar) porque su único modelo no tiene arnés intermedio que le

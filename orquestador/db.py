@@ -82,15 +82,28 @@ class Campaña:
                           - ventana_items)}).fetchall()
         return filas
 
-    def contexto_escena(self, npcs_presentes=()):
+    def contexto_escena(self, npcs_presentes=(), eventos_reloj=None):
         """Lo que la base sabe y el turno no dice.
 
         Es lo que subió el recall del extractor de 33% a 60% en el sondeo 4.
         Aquí se construye desde Postgres, no desde los fixtures.
+
+        `eventos_reloj`: salida de eventos_reloj_turno(turn_id_anterior) --
+        opcional, compartido con G2 (MUN-1/2, ver avanzar_relojes()). Si
+        se pasa y no está vacío, aparece como hecho consumado que hay que
+        narrar, no como algo a decidir.
         """
         with self._conn() as c:
             self._tx(c)
             partes = []
+
+            if eventos_reloj:
+                lin = ["  algo que ya ocurrió y aún no se ha narrado:"]
+                for ev in eventos_reloj:
+                    detalle = (ev.get("on_fire_event") or {}).get("descripcion",
+                               ev.get("agenda"))
+                    lin.append(f"    - {ev['faccion']} · {ev['agenda']}: {detalle}")
+                partes.append("\n".join(lin))
 
             if npcs_presentes:
                 for n in npcs_presentes:
@@ -410,7 +423,15 @@ class Campaña:
         devuelve los que dispararon ESTE turno. El Mundo (LLM) no decide
         si un reloj dispara -- eso ya es verdad en la base cuando esta
         función retorna. Su trabajo es narrar/plantar consecuencia del
-        evento devuelto, no juzgar si ocurrió."""
+        evento devuelto, no juzgar si ocurrió.
+
+        COMPARTIDO entre G1 y G2 (2026-09-07) -- igual que dados.py: es
+        aritmética/umbral, no memoria narrativa, así que darle este
+        resultado a los dos brazos no contamina la comparación (mismo
+        principio que ya regía para las tiradas). Lo que SÍ se queda
+        exclusivo de G1 es el congelado de lugares (locations.detail) --
+        ahí la consistencia de memoria ES parte de lo que la tesis mide,
+        decisión tomada explícitamente el 2026-09-07."""
         with self._conn() as c:
             self._tx(c)
             r = c.execute(
@@ -418,6 +439,21 @@ class Campaña:
                 (self.campaign_id, game_days, turn_id)).fetchall()
             c.commit()
             return r
+
+    def eventos_reloj_turno(self, turn_id):
+        """Relojes que dispararon EXACTAMENTE en `turn_id` -- se usa para
+        pasarle al turno SIGUIENTE (turn_id+1) lo que aún no se ha
+        narrado: avanzar_relojes() corre después de escribir (paso 8),
+        así que la única oportunidad de narrar la consecuencia es al
+        abrir el turno de después. Compartido con G2 por la misma razón
+        que avanzar_relojes()."""
+        with self._conn() as c:
+            self._tx(c)
+            return c.execute("""
+                SELECT f.name AS faccion, c.agenda, c.on_fire_event
+                  FROM faction_clocks c JOIN factions f ON f.id = c.faction_id
+                 WHERE c.campaign_id=%s AND c.fired_at_turn=%s""",
+                             (self.campaign_id, turn_id)).fetchall()
 
     def lugar_estado(self, location_id):
         """Lo que orquestador/mundo.py necesita para decidir MUN-4/5/6/7:
