@@ -367,8 +367,28 @@ def main():
                     if not eid:
                         print(f"  ✗ entidad inexistente: {d['entity']}")
                         continue
+
+                # Si el CAMPO mismo es una referencia (p.ej. npc.location_id
+                # -> location), el extractor entrega el NOMBRE del lugar,
+                # no su id -- igual que entity/entity_type arriba, pero
+                # este resuelve el sujeto, no el valor. apply_delta castea
+                # el value directo a uuid; sin esto, un nombre como
+                # "El Mercado Bajo" revienta con InvalidTextRepresentation.
+                # Nunca se había disparado porque el extractor nunca había
+                # emitido antes un delta sobre un campo tipo "ref".
+                valor = d["value"]
+                campo_info = contrato["campos_directos"].get(
+                    d["entity_type"], {}).get(d["field"], {})
+                if campo_info.get("tipo") == "ref":
+                    ref_id = camp.id_de(campo_info["entidad"], valor)
+                    if not ref_id:
+                        print(f"  ✗ referencia inexistente: "
+                              f"{campo_info['entidad']} «{valor}»")
+                        continue
+                    valor = ref_id
+
                 did = camp.aplicar(d["entity_type"], eid, d["field"],
-                                   d["value"], turn_id, "extracted", d["evidence"])
+                                   valor, turn_id, "extracted", d["evidence"])
                 v = str(d["value"])
                 print(f"  → delta {did}: {d['entity']}.{d['field']} = "
                       f"{v[:56]}{'…' if len(v) > 56 else ''}")
