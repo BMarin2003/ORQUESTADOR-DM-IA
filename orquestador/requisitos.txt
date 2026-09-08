@@ -1,0 +1,11 @@
+psycopg[binary]>=3.1
+# spaCy: única dependencia de NLP entrenada de todo el sistema (el resto de
+# turn_validation/reporte_validacion.py es regex/gazetteer puro a propósito).
+# Se usa SOLO para V (consistencia de atributos) de Papalampidi et al. en
+# reporte_validacion.py -- requiere POS tagging real (verbos/adjetivos), que
+# no se puede aproximar bien con regex. C (coherencia) y todo lo demás no la
+# necesitan y siguen sin dependencias. Ver "QM - Respaldo bibliografico
+# instrumentos deterministicos.md" para la justificación completa.
+spacy>=3.8
+# Después de instalar, descargar el modelo en español (una sola vez):
+#   python -m spacy download es_core_news_sm

@@ -100,8 +100,23 @@ class Campaña:
             if eventos_reloj:
                 lin = ["  algo que ya ocurrió y aún no se ha narrado:"]
                 for ev in eventos_reloj:
-                    detalle = (ev.get("on_fire_event") or {}).get("descripcion",
-                               ev.get("agenda"))
+                    # Bug encontrado en la octava pasada (ver "QM - Respaldo
+                    # bibliografico instrumentos deterministicos.md", punto
+                    # 11): acá se buscaba la clave "descripcion" dentro de
+                    # on_fire_event, que NUNCA existe en el fixture real
+                    # (fixtures/world.json usa headline/scope/consequence) --
+                    # el DM solo veía el fallback `agenda`, sin la consecuencia
+                    # rica que el diseño de fixtures preveía. Corregido acá:
+                    # headline (qué pasó) + consequence (qué resultó) son las
+                    # dos claves narrables; scope es un tag interno de
+                    # ubicación, no texto para el DM. Se preserva el fallback
+                    # a `agenda` para cualquier on_fire_event vacío o con
+                    # forma distinta (defensivo, no se asume una única forma).
+                    ofe = ev.get("on_fire_event") or {}
+                    partes_detalle = [ofe[k] for k in ("headline", "consequence")
+                                      if ofe.get(k)]
+                    detalle = " — ".join(partes_detalle) if partes_detalle \
+                              else ev.get("agenda")
                     lin.append(f"    - {ev['faccion']} · {ev['agenda']}: {detalle}")
                 partes.append("\n".join(lin))
 
@@ -289,6 +304,31 @@ class Campaña:
                  WHERE n.campaign_id=%s AND n.name=%s""",
                              (self.campaign_id, nombre)).fetchone()
 
+    def hp_pj(self, nombre):
+        """hp_current/hp_max reales del PJ (tabla characters), para el
+        chequeo CL-2 de HP-vs-narración (ver FIREBALL, Hit Point Reasoning).
+        None si el nombre no tiene fila en characters -- puede pasar en
+        datos de desarrollo donde personajes_jugadores.json y los fixtures
+        de characters no coinciden todavía; el chequeo se omite, no falla.
+        """
+        with self._conn() as c:
+            self._tx(c)
+            return c.execute("""
+                SELECT hp_current, hp_max FROM characters
+                 WHERE campaign_id=%s AND name=%s""",
+                             (self.campaign_id, nombre)).fetchone()
+
+    def campos_mutables(self, entity_type):
+        """Lista blanca real (tabla mutable_fields), no la copia de
+        contrato.json que usa el extractor -- CL-1 compara contra la
+        fuente de verdad de la base, no contra el contrato del LLM."""
+        with self._conn() as c:
+            self._tx(c)
+            filas = c.execute(
+                "SELECT field_name FROM mutable_fields WHERE entity_type=%s",
+                (entity_type,)).fetchall()
+        return {f["field_name"] for f in filas}
+
     # --------------------------------------------------------------- escribir
 
     def registrar_turno(self, turn_id, buffer, dm_output, gate_passed,
@@ -315,6 +355,32 @@ class Campaña:
                       (turn_id, self.campaign_id))
             c.commit()
             return r["id"]
+
+    def registrar_validacion(self, turn_id, architecture, campos):
+        """Una fila en turn_validation por turno (ver migrations/001_schema.sql
+        y 'QM - Respaldo bibliografico instrumentos deterministicos.md' para
+        la justificación de cada columna por tier de confianza).
+
+        `campos`: dict con las claves que existan de las columnas
+        cr1_*/cl1_*/cl2_*/qn1_*/qn2_*/cr2_nombres_no_reconocidos/raw_flags;
+        las que falten quedan en su DEFAULT (false / NULL / '{}'). Requiere
+        que turn_log ya tenga la fila (campaign_id, turn_id) -- FK
+        compuesta -- así que se llama DESPUÉS de registrar_turno, nunca en
+        modo --seco.
+        """
+        columnas = list(campos.keys())
+        placeholders = ", ".join(["%s"] * len(columnas))
+        nombres = ", ".join(columnas)
+        valores = [campos[k] for k in columnas]
+        with self._conn() as c:
+            self._tx(c)
+            c.execute(f"""
+                INSERT INTO turn_validation
+                    (tenant_id, campaign_id, turn_id, architecture, {nombres})
+                VALUES (%s, %s, %s, %s, {placeholders})""",
+                      [self._tenant, self.campaign_id, turn_id, architecture]
+                      + valores)
+            c.commit()
 
     def historial_router(self, ventana=2):
         """
@@ -454,6 +520,35 @@ class Campaña:
                   FROM faction_clocks c JOIN factions f ON f.id = c.faction_id
                  WHERE c.campaign_id=%s AND c.fired_at_turn=%s""",
                              (self.campaign_id, turn_id)).fetchall()
+
+    def turnos_narracion(self):
+        """turn_id + dm_output de toda la campaña, en orden. Usado por
+        reporte_validacion.py para reconstruir el camino de ubicaciones
+        REALIZADAS (no el espacio completo de posibilidades, que no
+        existe en un sistema de texto libre) -- ver "Deep Research,
+        Twine/Symmetry" en la nota de respaldo bibliográfico."""
+        with self._conn() as c:
+            self._tx(c)
+            return c.execute("""
+                SELECT turn_id, dm_output FROM turn_log
+                 WHERE campaign_id=%s AND dm_output IS NOT NULL
+                 ORDER BY turn_id""", (self.campaign_id,)).fetchall()
+
+    def relojes_disparados(self):
+        """Todos los faction_clocks que ya dispararon en esta campaña
+        (fired_at_turn no nulo), ordenados por turno de disparo. A
+        diferencia de eventos_reloj_turno() (un turno puntual, usado en
+        tiempo real por el Mundo), este trae el historial completo para
+        el chequeo longitudinal de reporte_validacion.py: ¿la narración
+        reconoció el evento en los turnos siguientes al disparo?"""
+        with self._conn() as c:
+            self._tx(c)
+            return c.execute("""
+                SELECT f.name AS faccion, c.agenda, c.on_fire_event,
+                       c.fired_at_turn
+                  FROM faction_clocks c JOIN factions f ON f.id = c.faction_id
+                 WHERE c.campaign_id=%s AND c.fired_at_turn IS NOT NULL
+                 ORDER BY c.fired_at_turn""", (self.campaign_id,)).fetchall()
 
     def lugar_estado(self, location_id):
         """Lo que orquestador/mundo.py necesita para decidir MUN-4/5/6/7:

@@ -48,6 +48,93 @@ PENSAMIENTO = re.compile(r"<think>.*?</think>", re.S | re.I)
 VALLA = re.compile(r"^\s*```[a-z]*\s*$", re.M)
 
 
+def jaccard_palabras(a, b):
+    """Superposición léxica simple -- proxy tier 3 (nunca booleano de
+    fallo), no el entity-grid real de Barzilay & Lapata (requiere
+    correferencia + SVM entrenado, ver 'QM - Respaldo bibliografico
+    instrumentos deterministicos.md', corrección sobre este chequeo)."""
+    wa = set(re.findall(r"\w+", a.lower()))
+    wb = set(re.findall(r"\w+", b.lower()))
+    if not wa or not wb:
+        return 0.0
+    return len(wa & wb) / len(wa | wb)
+
+
+_VOCALES_ES = "aeiouáéíóúü"
+_RE_GRUPO_VOCALICO = re.compile(f"[{_VOCALES_ES}]+")
+
+
+def contar_silabas_es(palabra):
+    """Aproximación determinística: cada grupo de vocales consecutivas
+    cuenta como una sílaba. Subestima hiatos reales, pero es la
+    aproximación estándar usada en herramientas de legibilidad simples
+    y basta como proxy -- nunca se usa como chequeo pass/fail."""
+    grupos = _RE_GRUPO_VOCALICO.findall(palabra.lower())
+    return max(1, len(grupos))
+
+
+def fernandez_huerta(texto):
+    """Índice de legibilidad de Fernández-Huerta (1959), adaptación al
+    español de la fórmula tipo Flesch. L = 206.84 - 60*(sílabas/palabra)
+    - 1.02*(palabras/frase). Determinístico, Tier 3 (proxy descriptivo,
+    nunca pass/fail) -- ver nota de respaldo bibliográfico."""
+    palabras = re.findall(r"[a-záéíóúñü]+", texto.lower())
+    frases = [f for f in re.split(r"[.!?]+", texto) if f.strip()]
+    if not palabras or not frases:
+        return None
+    silabas = sum(contar_silabas_es(p) for p in palabras)
+    palabras_por_frase = len(palabras) / len(frases)
+    L = 206.84 - 60 * (silabas / len(palabras)) - 1.02 * palabras_por_frase
+    return round(L, 2)
+
+
+
+def entidades_conocidas(ents, pj_nombre):
+    """Vocabulario de entidades reales de la campaña: nombre completo +
+    cada palabra suelta de 3+ letras de cada entidad y del PJ. Se
+    reutiliza tanto en CR-2 (nombres no reconocidos) como en el grafo de
+    recurrencia de entidad (Guinaudeau & Strube 2013, ver más abajo) --
+    antes se recalculaba por separado en cada sitio."""
+    conocidos = set()
+    for nombre in [e["nombre"] for e in ents] + [pj_nombre]:
+        conocidos.add(nombre)
+        conocidos.update(p for p in nombre.split() if len(p) >= 3)
+    return conocidos
+
+
+def entidad_grafo_densidad(texto, conocidos):
+    """Proxy Tier 3 (nunca pass/fail) inspirado en Guinaudeau & Strube
+    (2013), Graph-based Local Coherence Modeling: mide continuidad
+    temática DENTRO de la narración del turno como densidad de un grafo
+    donde los nodos son oraciones y una arista conecta dos oraciones que
+    comparten al menos una entidad real de la campaña (el gazetteer de
+    la base de datos, no un sustantivo genérico del texto). Simplifica
+    deliberadamente el método real del paper (que usa roles gramaticales
+    -- sujeto/objeto -- y un ranking SVM entrenado sobre miles de pares
+    etiquetados): acá solo se toma la idea de fondo -- presencia/ausencia
+    de entidad conocida entre oraciones --, igual que ya se documentó
+    para CR-2/Barzilay & Lapata en la nota de respaldo bibliográfico.
+    Devuelve None si la narración tiene menos de 2 oraciones (no hay
+    pares que formar)."""
+    frases = [f for f in re.split(r"[.!?]+", texto) if f.strip()]
+    if len(frases) < 2:
+        return None
+    entidades_por_frase = []
+    for frase in frases:
+        presentes = {tok for tok in conocidos
+                     if re.search(rf"\b{re.escape(tok)}\b", frase)}
+        entidades_por_frase.append(presentes)
+    n = len(frases)
+    posibles = n * (n - 1) // 2
+    aristas = sum(
+        1
+        for i in range(n)
+        for j in range(i + 1, n)
+        if entidades_por_frase[i] & entidades_por_frase[j]
+    )
+    return round(aristas / posibles, 3) if posibles else None
+
+
 def llamar(modelo, system, user, max_tokens=600, temp=0.8, json_mode=False):
     key = os.environ.get("DEEPINFRA_API_KEY")
     cuerpo = {"model": modelo,
@@ -141,6 +228,13 @@ def main():
     pjs = json.loads((RAIZ / "jugador" / "personajes_jugadores.json")
                      .read_text(encoding="utf-8"))["personajes"]
     pj = next(p for p in pjs if p["id"] == args.pj)
+    # Guard contra el bug del extractor (ver QM - Respaldo bibliografico...,
+    # "Implementación" punto 6): a veces crea un npc con el mismo nombre que
+    # el propio PJ actuando (p.ej. "Nadia" como npc nuevo). Sin este filtro,
+    # esa fila espuria contamina la detección de PNJ presentes y los
+    # chequeos CL-2/CR-2, que tratan `ents` como si todo lo tipo "npc" fuera
+    # realmente un PNJ.
+    nombres_pj_conocidos = {p["nombre"] for p in pjs}
 
     prompt_jugador = (RAIZ / "jugador" / "prompt.md").read_text(encoding="utf-8")
     prompt_dm = (RAIZ / "dm" / "prompt_g2.md").read_text(encoding="utf-8")
@@ -168,6 +262,37 @@ def main():
         # el día de juego (nunca pasaba porque ese camino estaba roto,
         # ver el fix del paso 8; ahora que funciona, sí puede cambiar).
         cab["game_day"] = camp.cabecera()["game_day"]
+        ents = camp.entidades()
+        conocidos = entidades_conocidas(ents, pj["nombre"])
+        ultimo = camp.escena_actual()
+        escena = (ultimo["dm_output"] if ultimo else
+                  "Estás en la cabecera del puente de Vado de Ceniza. La Sargento "
+                  "Brea revisa el paso de un carro cargado de sacos. Al verte, "
+                  "levanta la vista y espera a que digas algo.")
+
+        # PNJ presentes: derivado de la escena, no hardcodeado (ver QM -
+        # Respaldo bibliografico..., "Pendiente"). Un PNJ cuenta como
+        # presente si su nombre completo o alguna palabra suelta de 3+
+        # letras aparece en la escena que el jugador está a punto de
+        # responder, y sigue con status alive. Si no se detecta ninguno
+        # (escena puramente ambiental, o el DM no repitió el nombre), se
+        # conserva la lista del turno anterior -- contexto_escena() sigue
+        # necesitando saber de quién hablar, y vaciarla perdería el bond/
+        # secreto/disposición que ya se estaba inyectando.
+        detectados = []
+        for e in ents:
+            if e["tipo"] != "npc" or e["nombre"] in nombres_pj_conocidos:
+                continue
+            tokens = [e["nombre"]] + [p for p in e["nombre"].split() if len(p) >= 3]
+            if any(t in escena for t in tokens):
+                estado = camp.estado_pnj(e["nombre"])
+                if estado and estado["status"] == "alive":
+                    detectados.append(e["nombre"])
+        if detectados:
+            presentes = detectados
+        elif not presentes:
+            presentes = ["Sargento Brea"]  # arranque en frío, sin historial aún
+
         antes = camp.estado_pnj(presentes[0])
         print(f"  {antes['name']}: {antes['status']}, aprecio {antes['affinity']} "
               f"({antes['banda']}), {antes['hechos']} hechos conocidos")
@@ -175,14 +300,7 @@ def main():
         # disparó el turno anterior se narra AHORA, al abrir este turno.
         eventos_reloj = camp.eventos_reloj_turno(turn_id - 1) if turn_id > 1 else []
         ctx = camp.contexto_escena(presentes, eventos_reloj)
-        ents = camp.entidades()
         print(f"  {len(ents)} entidades · contexto de {len(ctx)} caracteres")
-
-        ultimo = camp.escena_actual()
-        escena = (ultimo["dm_output"] if ultimo else
-                  "Estás en la cabecera del puente de Vado de Ceniza. La Sargento "
-                  "Brea revisa el paso de un carro cargado de sacos. Al verte, "
-                  "levanta la vista y espera a que digas algo.")
 
         # ------------------------------------------------------- 2. jugador
         paso(2, f"JUGADOR — {pj['nombre']}")
@@ -240,22 +358,93 @@ def main():
         # ---------------------------------------------------- 5. verificación
         paso(5, "VERIFICACIÓN DE LA NARRACIÓN")
         problemas = []
+        val = {"raw_flags": {}}
         # El DM metió "[Tirada de Percepción necesaria... resuelvo la
         # reacción de la PNJ]" pese a tenerlo prohibido. El verificador
         # anterior no lo veía.
         if re.search(r"\[[^\]]{20,}\]", narracion):
             problemas.append("meta-comentario entre corchetes")
+            val["raw_flags"]["meta_comentario"] = True
         if re.search(r"\b(tirada de \w+ necesaria|resuelvo la|como DM|"
                      r"seg[úu]n las reglas|no obstante,? al haber)\b",
                      narracion, re.I):
             problemas.append("comenta sus propias reglas")
+            val["raw_flags"]["comenta_reglas"] = True
+
+        # CR-1 (tier 1, precedente directo RPGBench MEC/ECE/VUE): veredicto
+        # determinista real (pifia) contradicho por la narración.
         for t in tiradas:
             if t["pifia"] and re.search(r"\b(logras|consigues|aciertas|lo convences)\b",
                                         narracion, re.I):
-                problemas.append(f"pifia en {t['etiqueta']} pero narra éxito")
-        if re.search(rf"\b{re.escape(pj['nombre'])}\s+(piensa|siente|decide|comprende)",
-                     narracion, re.I):
+                msg = f"pifia en {t['etiqueta']} pero narra éxito"
+                problemas.append(msg)
+                val["cr1_veredicto_contradice_narracion"] = True
+                val["cr1_evidencia"] = msg
+
+        # QN-2 (tier 1): pensamientos del PJ narrados (viola la regla de oro).
+        m = re.search(rf"\b{re.escape(pj['nombre'])}\s+(piensa|siente|decide|comprende)",
+                      narracion, re.I)
+        if m:
             problemas.append("narra pensamientos del PJ (viola la regla de oro)")
+            val["qn2_pj_piensa_narrado"] = True
+            val["qn2_pj_piensa_evidencia"] = m.group(0)
+
+        # QN-2 (tier 4, "revisar", nunca "problema" duro -- herramienta
+        # general sin validación propia para esta tarea, como PredPatt):
+        # el PJ ejecuta una acción física narrada sin tirada del sistema
+        # detrás. Muchas acciones legítimamente no requieren tirada, así
+        # que esto solo marca para revisión humana.
+        m = re.search(rf"\b{re.escape(pj['nombre'])}\s+(ataca|golpea|convence|"
+                      r"esquiva|salta|derriba|desarma)\b", narracion, re.I)
+        if m and not tiradas:
+            val["qn2_pj_accion_revisar"] = True
+            val["qn2_pj_accion_evidencia"] = m.group(0)
+
+        # CL-2 (tier 1, precedente FIREBALL "Removing Player Agency"): un
+        # PNJ con status != alive narrado como si siguiera presente y activo.
+        for e in ents:
+            if (e["tipo"] != "npc" or e["nombre"] not in narracion
+                    or e["nombre"] in nombres_pj_conocidos):
+                continue
+            estado = camp.estado_pnj(e["nombre"])
+            if estado and estado["status"] != "alive":
+                val["cl2_pnj_inactivo_actua"] = True
+                val["cl2_pnj_evidencia"] = (
+                    f"{e['nombre']} (status={estado['status']}) mencionado "
+                    f"en: «{narracion[:120]}»")
+                problemas.append(f"PNJ inactivo mencionado actuando: "
+                                 f"{e['nombre']} ({estado['status']})")
+                break
+
+        # CL-2 (tier 1, precedente FIREBALL "Hit Point Reasoning"): solo PC
+        # -- npcs no tiene hp_current/hp_max en este esquema, solo status.
+        hp = camp.hp_pj(pj["nombre"])
+        if hp and hp["hp_current"] is not None:
+            narra_muerte = re.search(
+                rf"\b{re.escape(pj['nombre'])}\s+(muere|cae muerto|fallece|"
+                r"pierde la vida)\b", narracion, re.I)
+            if narra_muerte and hp["hp_current"] > 0:
+                val["cl2_pc_hp_contradice_narracion"] = True
+                val["cl2_pc_hp_evidencia"] = (
+                    f"hp_current real={hp['hp_current']}/{hp['hp_max']} pero "
+                    f"narra: «{narra_muerte.group(0)}»")
+                problemas.append("narra muerte del PJ con HP real > 0")
+
+        # Tier 3 (proxy, JAMÁS booleano de fallo): continuidad léxica con la
+        # escena anterior (ver corrección Barzilay & Lapata) y diversidad
+        # léxica / repetición de n-gramas de la narración misma (Li et al.
+        # 2016, siempre acompañado de otras métricas, nunca solo).
+        val["cl2_lugar_jaccard_similarity"] = round(jaccard_palabras(escena, narracion), 3)
+        val["cr2_entidad_grafo_densidad"] = entidad_grafo_densidad(narracion, conocidos)
+        palabras_narr = re.findall(r"\w+", narracion.lower())
+        if palabras_narr:
+            val["qn1_ttr"] = round(len(set(palabras_narr)) / len(palabras_narr), 3)
+            bigramas = list(zip(palabras_narr, palabras_narr[1:]))
+            if bigramas:
+                val["qn1_ngram_repeticion"] = round(
+                    1 - len(set(bigramas)) / len(bigramas), 3)
+        val["qn1_legibilidad_fh"] = fernandez_huerta(narracion)
+
         print("  " + ("\n  ".join(f"⚠ {p}" for p in problemas)
                       if problemas else "sin problemas detectados"))
 
@@ -309,6 +498,22 @@ def main():
             nom = (cr.get("name") or "").strip()
             if cr.get("entity_type") not in CREABLES:
                 print(f"  ✗ tipo no creable: {cr.get('entity_type')}")
+            # Bug de raíz encontrado en la novena/décima pasada (ver "QM -
+            # Respaldo bibliografico instrumentos deterministicos.md",
+            # "Pendiente"): el extractor a veces propone un NPC con el
+            # mismo nombre del PJ que está actuando -- create_entity() es
+            # idempotente por nombre pero solo DENTRO de cada tabla
+            # (npcs/characters), así que un "npc" y un "character" con
+            # igual nombre no chocan a nivel de base y el duplicado se
+            # crea igual. Antes esto solo se neutralizaba río abajo, en el
+            # guard de CL-2 (turn_validation nunca lo marcaba "problema")
+            # y en entidades_conocidas()/reporte_validacion.py (que igual
+            # lo cuentan como candidato a protagonista de C/V, ver el caso
+            # "Nadia" verificado en la novena pasada). Cortado acá, en la
+            # raíz, antes de que la fila espuria llegue a existir.
+            elif cr.get("entity_type") == "npc" and nom in nombres_pj_conocidos:
+                print(f"  ✗ NPC propuesto coincide con un PJ existente "
+                      f"({nom}), no se crea duplicado")
             elif len(nom) < 3 or GENERICOS.match(nom):
                 print(f"  ✗ nombre genérico, es atrezzo: «{nom}»")
             elif ev not in completo:
@@ -322,12 +527,81 @@ def main():
         if not validos_ev and not validos_d and not validos_c:
             print("  nada que escribir (correcto si el turno no cambió el mundo)")
 
+        # CR-2 (tier 2, dato estructurado -- matching contra la base, no NLI
+        # de texto libre): nombres propios en la narración que no están en
+        # la lista de entidades conocidas de la campaña. Stoplist mínimo
+        # para no marcar inicios de frase o el propio PJ.
+        # Nombres completos Y cada palabra suelta de >=3 letras ("Sargento
+        # Brea" también matchea "Brea" a secas, que es como la narración
+        # suele referirse a un PNJ después de presentarlo una vez).
+        # `conocidos` ya se calculó al inicio del bucle (entidades_conocidas)
+        # y se reutiliza acá tal cual, para no recalcularlo dos veces.
+        STOP_MAYUS = {"El", "La", "Los", "Las", "Un", "Una", "Unos", "Unas",
+                      "Cuando", "Si", "Pero", "Y", "Aunque", "Tras", "Al",
+                      "Ella", "Él", "Sargento", "Vado", "Ceniza"}
+        # No basta con \b[A-Z]...\b: el español capitaliza tras punto,
+        # ¿/¡ y el guión largo de diálogo (—), y eso disparaba falsos
+        # positivos ("Extiende", "Sus", "Tienes" tras "—") que no son
+        # nombres propios. Se excluye toda palabra cuyo carácter previo
+        # (ignorando espacios) sea un límite de oración/diálogo.
+        LIMITES = set(".!?¿¡—\n\"'")
+        no_reconocidos = set()
+        for m in re.finditer(r"\b[A-ZÁÉÍÓÚÑ][a-záéíóúñ]{2,}\b", narracion):
+            palabra = m.group(0)
+            if palabra in conocidos or palabra in STOP_MAYUS:
+                continue
+            prefijo = narracion[:m.start()].rstrip()
+            if prefijo and prefijo[-1] in LIMITES:
+                continue
+            if not prefijo:
+                continue
+            no_reconocidos.add(palabra)
+        no_reconocidos = sorted(no_reconocidos)
+        if no_reconocidos:
+            val["cr2_nombres_no_reconocidos"] = no_reconocidos
+            print(f"  ⚠ nombres no reconocidos: {', '.join(no_reconocidos)}")
+
+        # CL-1 (tier 2, dato estructurado): el extractor propuso un campo
+        # que mutable_fields -- la verdad de la BASE, no el contrato.json
+        # del LLM -- no reconoce como mutable para ese entity_type. Esto es
+        # independiente del filtro de lista blanca del paso 7 (que ya usa
+        # contrato.json): detecta drift entre el contrato del LLM y la base.
+        for d in deltas:
+            if d.get("entity_type") == "world":
+                continue
+            mutables = camp.campos_mutables(d.get("entity_type"))
+            if mutables and d.get("field") not in mutables:
+                val["cl1_campo_inmutable_alterado"] = True
+                val["cl1_campo_evidencia"] = (
+                    f"{d.get('entity_type')}.{d.get('field')} = "
+                    f"{d.get('value')} (no está en mutable_fields)")
+                print(f"  ⚠ campo no mutable propuesto: "
+                      f"{d.get('entity_type')}.{d.get('field')}")
+                break
+
         # -------------------------------------------------------- 8. escribir
         paso(8, "ESCRITURA" + ("  [SECO — omitida]" if args.seco else ""))
         if not args.seco:
             camp.registrar_turno(turn_id, [{"pc": pj["id"], "text": accion}],
                                  narracion,
                                  bool(validos_ev or validos_d or validos_c))
+            # turn_validation: requiere que la fila de turn_log ya exista
+            # (FK compuesta contra turn_log(campaign_id, turn_id)), por eso
+            # va justo después de registrar_turno y nunca en modo --seco.
+            if val.get("raw_flags"):
+                val["raw_flags"] = json.dumps(val["raw_flags"], ensure_ascii=False)
+            else:
+                val.pop("raw_flags", None)
+            camp.registrar_validacion(turn_id, cab["architecture"], val)
+            tier12 = [k for k in ("cr1_veredicto_contradice_narracion",
+                                  "cl2_pnj_inactivo_actua",
+                                  "cl2_pc_hp_contradice_narracion",
+                                  "qn2_pj_piensa_narrado",
+                                  "cl1_campo_inmutable_alterado")
+                     if val.get(k)]
+            print(f"  → turn_validation registrado"
+                  + (f" ⚠ {len(tier12)} problema(s) tier 1-2" if tier12 else
+                     " (sin problemas tier 1-2)"))
             # Las creaciones van PRIMERO: un delta puede referirse a algo
             # que este mismo turno acaba de introducir.
             for cr in validos_c:

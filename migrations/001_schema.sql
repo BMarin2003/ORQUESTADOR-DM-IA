@@ -184,6 +184,101 @@ CREATE TABLE turn_log (
 CREATE INDEX ON turn_log (campaign_id, turn_id DESC);
 CREATE INDEX ON turn_log (session_id);
 
+-- Validación determinística por turno (context/QM - Respaldo bibliografico
+-- instrumentos deterministicos.md). Un chequeo se ejecuta EN LÍNEA, antes de
+-- escribir dm_output en turn_log (paso [5] de vertical_slice.py), nunca en
+-- un batch posterior: así se puede saber el detalle de cada paso de la
+-- generacion, no solo el resultado final de la campaña.
+--
+-- Cuatro tiers de confianza (ver la nota de respaldo bibliográfico):
+--   1. Precedente directo en el dominio exacto (RPGBench MEC/ECE/VUE,
+--      FIREBALL Hit Point Reasoning + Player Agency) -> cuenta como
+--      problema real.
+--   2. Principio general validado aplicado contra DATO ESTRUCTURADO, no
+--      contra inferencia de texto libre (Barzilay & Lapata; Welleck et al.
+--      aplicado a estado en vez de NLI) -> cuenta como problema real, con
+--      evidencia textual para auditoría humana.
+--   3. Proxy explícitamente etiquetado como tal por el propio campo (Li et
+--      al. 2016 Distinct-n) -> columna numérica descriptiva, JAMÁS booleana
+--      de fallo.
+--   4. Herramienta general sin validación propia para esta tarea (PredPatt)
+--      -> bandera de revisión, nunca "problema" duro.
+--
+-- FK compuesta contra turn_log(campaign_id, turn_id): turn_log ya declara
+-- UNIQUE (campaign_id, turn_id), así que esta es integridad referencial
+-- real, no un soft-ref validado en aplicación como location_id/router_last_npc
+-- arriba.
+CREATE TABLE turn_validation (
+  id            bigserial PRIMARY KEY,
+  tenant_id     uuid NOT NULL REFERENCES tenants(id) ON DELETE CASCADE,
+  campaign_id   uuid NOT NULL REFERENCES campaigns(id) ON DELETE CASCADE,
+  turn_id       bigint NOT NULL,
+  -- Copiado de campaigns.architecture: filtrar G1 vs G2 en el reporte
+  -- agregado sin JOIN. Barato de mantener, imposible de reconstruir después
+  -- si la campaña cambiara de arquitectura (no debería, pero no cuesta nada).
+  architecture  architecture NOT NULL,
+
+  -- ---- Tier 1: problema real, precedente directo en el dominio exacto ----
+  cr1_veredicto_contradice_narracion boolean NOT NULL DEFAULT false,
+  cr1_evidencia                      text,     -- snippet exacto de dm_output
+
+  cl2_pnj_inactivo_actua             boolean NOT NULL DEFAULT false,
+  cl2_pnj_evidencia                  text,     -- nombre del PNJ + status + snippet
+
+  -- Solo aplica a characters (PC): npcs no tiene hp_current/hp_max en este
+  -- esquema, solo el enum npc_status. Ampliar a NPCs requeriría columnas
+  -- nuevas en npcs -- deliberadamente fuera de alcance por ahora.
+  cl2_pc_hp_contradice_narracion     boolean NOT NULL DEFAULT false,
+  cl2_pc_hp_evidencia                text,     -- hp_current/hp_max real + snippet narrado
+
+  qn2_pj_piensa_narrado              boolean NOT NULL DEFAULT false,
+  qn2_pj_piensa_evidencia            text,
+
+  -- ---- Tier 2: problema real, dato estructurado (no NLI de texto libre) ----
+  cr2_nombres_no_reconocidos         text[]  NOT NULL DEFAULT '{}',
+
+  cl1_campo_inmutable_alterado       boolean NOT NULL DEFAULT false,
+  cl1_campo_evidencia                text,     -- qué campo, valor viejo/nuevo
+
+  -- ---- Tier 3: proxy, NUNCA booleano de fallo ----
+  -- Reclasificado desde tier 2 (ver "Correcciones" en la nota de respaldo):
+  -- el entity-grid real de Barzilay & Lapata no sostiene un Jaccard simple.
+  cl2_lugar_jaccard_similarity       numeric(4,3),
+  qn1_ttr                            numeric(4,3),
+  qn1_ngram_repeticion               numeric(4,3),
+  -- Fernández-Huerta (1959), adaptación al español de la legibilidad
+  -- tipo Flesch: L = 206.84 - 60*(sílabas/palabras) - 1.02*(palabras/frase).
+  -- Proxy Tier 3 igual que TTR/n-gramas -- nunca pass/fail.
+  qn1_legibilidad_fh                 numeric(6,2),
+  -- Guinaudeau & Strube (2013): densidad de un grafo de oraciones
+  -- conectadas por entidades reales compartidas, DENTRO de la
+  -- narración del turno. Simplificación de su método (sin roles
+  -- gramaticales ni SVM entrenado) -- proxy Tier 3, nunca pass/fail.
+  cr2_entidad_grafo_densidad         numeric(4,3),
+
+  -- ---- Tier 4: herramienta general sin validación propia -> "revisar" ----
+  qn2_pj_accion_revisar              boolean NOT NULL DEFAULT false,
+  qn2_pj_accion_evidencia            text,
+
+  -- Extensión sin migración: un chequeo nuevo que no amerite columna propia
+  -- todavía va aquí, no se pierde ni obliga a alterar el esquema en caliente.
+  raw_flags                          jsonb   NOT NULL DEFAULT '{}'::jsonb,
+
+  created_at                         timestamptz NOT NULL DEFAULT now(),
+
+  UNIQUE (campaign_id, turn_id),
+  FOREIGN KEY (campaign_id, turn_id)
+    REFERENCES turn_log (campaign_id, turn_id) ON DELETE CASCADE
+);
+
+CREATE INDEX ON turn_validation (campaign_id, turn_id DESC);
+-- Filtrar rápido "turnos con algún problema real" (tiers 1-2) para el
+-- reporte agregado por campaña, sin escanear las columnas proxy/revisar.
+CREATE INDEX ON turn_validation (campaign_id) WHERE
+  cr1_veredicto_contradice_narracion OR cl2_pnj_inactivo_actua OR
+  cl2_pc_hp_contradice_narracion OR cl1_campo_inmutable_alterado;
+
+
 -- Cola en tabla. FOR UPDATE SKIP LOCKED. Sin Redis, sin SQS.
 -- Existe desde el día uno porque el navegador SE VA A DESCONECTAR durante
 -- un turno de 60-90s, y el turno debe completarse igual.
@@ -1420,7 +1515,7 @@ BEGIN
     'npcs','npc_ibf','npc_bond_targets','npc_disposition','npc_knowledge',
     'npc_secrets','characters','pc_bond_targets','pc_ibf_tension','items',
     'entity_relations','state_deltas','rejected_deltas','session_recaps',
-    'lore_documents','lore_chunks','narrative_chunks'
+    'lore_documents','lore_chunks','narrative_chunks','turn_validation'
   ]) LOOP
     EXECUTE format('ALTER TABLE %I ENABLE ROW LEVEL SECURITY', t);
     EXECUTE format(
