@@ -1,0 +1,35 @@
+{
+  "generado": "2026-09-02T14:27:34.125342+00:00",
+  "proveedor": "deepinfra",
+  "endpoint": "https://api.deepinfra.com/v1/openai",
+  "modelo": "Qwen/Qwen3-32B",
+  "parametros_huella": {
+    "temperature": 0,
+    "seed": 42,
+    "max_tokens": 120
+  },
+  "huella": {
+    "es_narrativa": {
+      "sha256": "9637f35f5c7437ae6acbf9016a75b3e5d8a9c7699fa095530a671e8ae23e6e1e",
+      "muestra": "<think>\nOkay, the user wants a single sentence describing a toll booth at dawn. Let me start by visualizing the scene. D",
+      "tokens_in": 24,
+      "tokens_out": 120,
+      "latencia_ms": 6079
+    },
+    "es_instruccion": {
+      "sha256": "c5c6eb1f1428a1bf41b074d3f62ace24343ebdf14d08af85f2cd2db9670187b2",
+      "muestra": "<think>\nOkay, the user is asking how many sides a d20 has. Let me think. A d20 is a 20-sided die, right? So the answer s",
+      "tokens_in": 27,
+      "tokens_out": 120,
+      "latencia_ms": 6132
+    },
+    "es_formato": {
+      "sha256": "07be2ae4eede59f625d8bc2c2c5fe5ce2163c31d6cf31081a237b70145105668",
+      "muestra": "<think>\nOkay, the user wants me to return exactly the JSON {\"ok\": true} and nothing else. Let me make sure I understand ",
+      "tokens_in": 23,
+      "tokens_out": 120,
+      "latencia_ms": 6189
+    }
+  },
+  "nota_cuantizacion": "Anotar a mano desde la página del modelo si el proveedor la publica. Si no la publica, la huella es el ancla: un cambio de hash indica que el artefacto servido cambió."
+}

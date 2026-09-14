@@ -41,6 +41,15 @@ que la condición describe**, no algo parecido ni un paso hacia ello.
   Turno: van y hablan con ella                           → CUMPLIDA
   Turno: no se menciona a Herda                          → ninguna de las dos
 
+**Un compromiso NO puede cumplirse ni incumplirse en el turno en que se
+contrae.** Prometer traer algo no es traerlo. Si el turno es donde se hace la
+promesa, esa condición no aparece en la lista de cumplidas.
+
+  Condición: "El grupo se comprometió a traer las fichas del peaje"
+  Turno: "Dénos dos días y se las traemos." — "Tiene mi palabra."   → ninguna
+  Turno: le entregan las fichas                                     → CUMPLIDA
+  Turno: reconocen que no las consiguieron                          → INCUMPLIDA
+
 Las condiciones de tipo `compromiso` admiten dos resultados. Indícalo así:
 
   {"id": "<id>", "resultado": "cumplida" | "incumplida", "evidence": "..."}

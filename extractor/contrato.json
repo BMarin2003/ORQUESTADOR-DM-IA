@@ -124,6 +124,15 @@
         "evidence": "subcadena LITERAL del turno",
         "witnessed": "opcional, bool: si el turno dice explicitamente que alguien presencio el cambio"
       }
+    ],
+    "creaciones": [
+      {
+        "entity_type": "npc | location | item | faction | quest",
+        "name": "nombre PROPIO, no genérico",
+        "descripcion": "una línea de qué es",
+        "dentro_de": "clave del lugar o poseedor, si aplica",
+        "evidence": "subcadena LITERAL del turno"
+      }
     ]
   },
   "reglas_duras": [
@@ -134,6 +143,8 @@
     "Las magnitudes de aprecio, confianza y respeto NO se emiten. Se emite el evento y el sistema resuelve el número.",
     "promise_made lleva ademas un campo 'detail' con el compromiso en una frase. Sin el, promise_kept y promise_broken no son verificables despues.",
     "La postura de una faccion (stance_party) NO se extrae: la propaga el sistema desde entity_relations cuando un PNJ miembro sufre algo y la faccion se entera. Pedirsela al modelo es pedirle una magnitud, que es justo lo que no debe elegir.",
-    "witnessed es opcional y solo se emite cuando el turno lo dice EXPLICITAMENTE (un testigo, alguien que ve, un grito que alguien oye). Es la base de la propagacion: el sistema decide con el si una faccion se entera. Omitirlo significa 'no consta', no 'nadie vio'."
+    "witnessed es opcional y solo se emite cuando el turno lo dice EXPLICITAMENTE (un testigo, alguien que ve, un grito que alguien oye). Es la base de la propagacion: el sistema decide con el si una faccion se entera. Omitirlo significa 'no consta', no 'nadie vio'.",
+    "La creación de entidades es operacion aparte, nunca un delta. Solo se crea lo que el turno menciona EXPLICITAMENTE y con nombre propio o descripcion distintiva. 'el guardia', 'un mercader', 'la puerta' NO se crean: son atrezzo. 'el cofre de herrajes dorados' o 'Hettir Bec' SI.",
+    "create_entity esta disponible para AMBOS brazos. Si solo la tuviera el Agente del Mundo, G1 persistiria lo que inventa y G2 no, y ganaria en CL-2 por un hueco del contrato en vez de por su arquitectura."
   ]
 }

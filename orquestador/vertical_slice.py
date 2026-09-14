@@ -149,9 +149,29 @@ def llamar(modelo, system, user, max_tokens=600, temp=0.8, json_mode=False):
         headers={"Authorization": f"Bearer {key}",
                  "Content-Type": "application/json"}, method="POST")
     t0 = time.time()
+
+    def _post(peticion, reintentos=4, espera=10):
+        # DeepInfra corta la conexión de tanto en tanto en llamadas largas
+        # (visto en corridas reales de 250+ turnos: TimeoutError/URLError
+        # tras 5-80 minutos de trabajo bueno). Sin reintento, cada corte
+        # obligaba a relanzar el script a mano -- inviable para una
+        # campaña de 1,750 turnos. Reintenta con backoff antes de rendirse
+        # de verdad (fallo persistente sí debe propagar, no quedarse en
+        # un bucle silencioso).
+        for intento in range(1, reintentos + 1):
+            try:
+                with urllib.request.urlopen(peticion, timeout=300) as r:
+                    return json.loads(r.read().decode())
+            except (TimeoutError, urllib.error.URLError) as e:
+                if intento == reintentos:
+                    raise
+                print(f"    (red: {e!r}, reintento {intento}/{reintentos} "
+                      f"en {espera}s)", file=sys.stderr)
+                time.sleep(espera)
+                espera *= 2
+
     try:
-        with urllib.request.urlopen(req, timeout=300) as r:
-            d = json.loads(r.read().decode())
+        d = _post(req)
     except urllib.error.HTTPError as e:
         det = e.read().decode()[:200]
         if any(k in det for k in ("chat_template_kwargs", "response_format")) or e.code == 422:
@@ -161,8 +181,7 @@ def llamar(modelo, system, user, max_tokens=600, temp=0.8, json_mode=False):
                 f"{BASE}/chat/completions", data=json.dumps(cuerpo).encode(),
                 headers={"Authorization": f"Bearer {key}",
                          "Content-Type": "application/json"}, method="POST")
-            with urllib.request.urlopen(req, timeout=300) as r:
-                d = json.loads(r.read().decode())
+            d = _post(req)
         else:
             print(f"    HTTP {e.code}: {det}", file=sys.stderr)
             return None
@@ -187,8 +206,36 @@ def parsear_json(texto):
             return None
 
 
+class Tee:
+    """Duplica cada escritura de stdout a la consola Y a un archivo abierto
+    por el propio Python en UTF-8. Antes el usuario capturaba la consola con
+    `Measure-Command { ... } | Tee-Object -FilePath log.txt` en PowerShell,
+    y esa captura llegaba con mojibake severo (p.ej. «Monol├¡tico» en vez de
+    «Monolítico») -- corrupción de la codificación de PowerShell al procesar
+    el pipeline, no un problema de los datos (que se escriben aparte, vía
+    psycopg, siempre en UTF-8 correcto). La solución no es reparar ese
+    archivo sino dejar de depender de él: este script ahora escribe su
+    propia bitácora en Markdown, en UTF-8, directamente desde Python -- ver
+    "QM - Respaldo bibliografico instrumentos deterministicos.md", punto 21.
+    """
+    def __init__(self, *streams):
+        self.streams = streams
+
+    def write(self, data):
+        for s in self.streams:
+            s.write(data)
+
+    def flush(self):
+        for s in self.streams:
+            s.flush()
+
+
 def paso(n, titulo):
-    print(f"\n{'─'*74}\n[{n}] {titulo}\n{'─'*74}")
+    # Antes usaba separadores de caracteres de dibujo de caja ('─'*74),
+    # que se ven bien en una consola pero no significan nada en Markdown.
+    # Como esta misma salida ahora se escribe tal cual a la bitácora .md
+    # (ver Tee más arriba), el separador tiene que ser Markdown real.
+    print(f"\n### [{n}] {titulo}\n")
 
 
 def main():
@@ -197,6 +244,10 @@ def main():
     ap.add_argument("--turnos", type=int, default=1)
     ap.add_argument("--seco", action="store_true",
                     help="no escribe en la base; solo muestra qué haría")
+    ap.add_argument("--campaign-id", default=None,
+                    help="UUID de la campaña a usar. Si se omite, se usa "
+                         "la campaña más antigua (comportamiento previo, "
+                         "pensado para el fixture de desarrollo).")
     args = ap.parse_args()
 
     # Comprobar TODO lo necesario antes de gastar una sola llamada. La
@@ -219,9 +270,15 @@ def main():
     # ------------------------------------------------------------ 0. estado
     import psycopg
     with psycopg.connect(bd.DSN) as c:
-        r = c.execute("SELECT id, title FROM campaigns ORDER BY created_at LIMIT 1").fetchone()
-    if not r:
-        sys.exit("No hay campañas en la base. Carga fixtures/seed.sql")
+        if args.campaign_id:
+            r = c.execute("SELECT id, title FROM campaigns WHERE id = %s",
+                         (args.campaign_id,)).fetchone()
+            if not r:
+                sys.exit(f"No existe la campaña {args.campaign_id}")
+        else:
+            r = c.execute("SELECT id, title FROM campaigns ORDER BY created_at LIMIT 1").fetchone()
+            if not r:
+                sys.exit("No hay campañas en la base. Carga fixtures/seed.sql")
     camp = bd.Campaña(r[0])
     cab = camp.cabecera()
 
@@ -242,18 +299,61 @@ def main():
     contrato = json.loads((RAIZ / "extractor" / "contrato.json")
                           .read_text(encoding="utf-8"))
 
-    print(f"\n{'='*74}\nVERTICAL SLICE · {cab['title']} · {cab['architecture']}")
-    print(f"  DM      {MODELO_DM}")
-    print(f"  jugador {MODELO_JUGADOR}  ({pj['nombre']}, desvío {pj['desvio']})")
-    print(f"  turno   {cab['current_turn'] + 1}"
-          + ("   [SECO — no se escribe nada]" if args.seco else ""))
-    print("=" * 74)
+    # ------------------------------------------------------ bitácora .md
+    # Antes la única forma de conservar la salida era que el usuario
+    # capturara la consola con PowerShell (Tee-Object), y esa captura
+    # llegaba corrupta (mojibake) porque la codificación de PowerShell no
+    # es confiable para esto. Ahora el propio script escribe su bitácora
+    # directamente en UTF-8, desde Python, sin pasar por la consola --
+    # ver "QM - Respaldo bibliografico instrumentos deterministicos.md",
+    # punto 21. Se genera SIEMPRE, no solo cuando el usuario se acuerda de
+    # envolver el comando en Tee-Object.
+    logs_dir = RAIZ / "logs"
+    logs_dir.mkdir(exist_ok=True)
+    marca = time.strftime("%Y%m%d_%H%M%S")
+    nombre_log = re.sub(
+        r"[^\w.-]+", "_",
+        f"sesion_{str(camp.campaign_id)[:8]}_"
+        f"turnos_{cab['current_turn'] + 1}-{cab['current_turn'] + args.turnos}_{marca}.md")
+    ruta_log = logs_dir / nombre_log
+    archivo_log = open(ruta_log, "w", encoding="utf-8")
+    stdout_original = sys.stdout
+    sys.stdout = Tee(stdout_original, archivo_log)
+    print(f"(bitácora en Markdown: {ruta_log})", file=stdout_original)
 
+    try:
+        print(f"\n# VERTICAL SLICE — {cab['title']} ({cab['architecture']})\n")
+        print(f"- **DM:** `{MODELO_DM}`")
+        print(f"- **jugador:** `{MODELO_JUGADOR}` ({pj['nombre']}, desvío {pj['desvio']})")
+        print(f"- **turno:** {cab['current_turn'] + 1}"
+              + ("  _(SECO — no se escribe nada)_" if args.seco else ""))
+
+        _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
+                          prompt_jugador, prompt_dm, prompt_extractor,
+                          contrato)
+    finally:
+        sys.stdout = stdout_original
+        archivo_log.close()
+        print(f"(bitácora guardada: {ruta_log})")
+
+
+def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
+                      prompt_jugador, prompt_dm, prompt_extractor,
+                      contrato):
     presentes = ["Sargento Brea"]
     coste = {"tin": 0, "tout": 0}
+    # Fijo ANTES del bucle: turn_id = turno_inicial + 1 + i. La línea de
+    # abajo (cab["current_turn"] = turn_id) actualiza `cab` para que
+    # game_day/current_turn reflejen el último turno escrito, pero si
+    # esta fórmula leyera cab["current_turn"] en vez de turno_inicial,
+    # cada turno sumaría su propio turn_id de más -- crecimiento
+    # cuadrático (con 250 turnos, turn_id terminaba en ~31,400 en vez de
+    # 250, lleno de huecos). Bug real, encontrado en la primera campaña
+    # real del par 1 -- ver "QM - Respaldo bibliografico...", punto 19.
+    turno_inicial = cab["current_turn"]
 
     for i in range(args.turnos):
-        turn_id = cab["current_turn"] + 1 + i
+        turn_id = turno_inicial + 1 + i
 
         # ------------------------------------------------- 1. estado y escena
         paso(1, "ESTADO Y CONTEXTO (desde Postgres)")
@@ -315,7 +415,7 @@ def main():
         print(f"  {r['ms']} ms\n")
         for l in accion.splitlines():
             if l.strip():
-                print(f"    {l}")
+                print(f"> {l}")
 
         # --------------------------------------------------------- 3. dados
         paso(3, "DADOS (deterministas, del sistema)")
@@ -353,7 +453,7 @@ def main():
         print(f"  {r['ms']} ms\n")
         for l in narracion.splitlines():
             if l.strip():
-                print(f"    {l}")
+                print(f"> {l}")
 
         # ---------------------------------------------------- 5. verificación
         paso(5, "VERIFICACIÓN DE LA NARRACIÓN")
@@ -514,6 +614,15 @@ def main():
             elif cr.get("entity_type") == "npc" and nom in nombres_pj_conocidos:
                 print(f"  ✗ NPC propuesto coincide con un PJ existente "
                       f"({nom}), no se crea duplicado")
+            # Punto 29 (bitácora QM): el guard de arriba solo cubría PJ vs
+            # NPC nuevo -- no NPC-ya-sembrado vs NPC "nuevo" propuesto por
+            # el extractor. Detectado en Par02 G1 (vertical_slice_g1.py),
+            # pero el mismo hueco existe aquí; se corrige en los dos scripts
+            # a la vez para no dejarlo abierto solo del lado G2.
+            elif (cr.get("entity_type") == "npc"
+                  and nom in {e["nombre"] for e in ents if e["tipo"] == "npc"}):
+                print(f"  ✗ NPC propuesto ya existe como entidad de la "
+                      f"campaña ({nom}), no se crea duplicado")
             elif len(nom) < 3 or GENERICOS.match(nom):
                 print(f"  ✗ nombre genérico, es atrezzo: «{nom}»")
             elif ev not in completo:
@@ -659,7 +768,13 @@ def main():
                         print(f"  ✗ referencia inexistente: "
                               f"{campo_info['entidad']} «{valor}»")
                         continue
-                    valor = ref_id
+                    # id_de() devuelve uuid.UUID (psycopg lo castea así al
+                    # leer una columna uuid) y aplicar() hace
+                    # json.dumps(value) -- UUID no es serializable a JSON.
+                    # Nunca se había disparado porque el extractor nunca
+                    # había emitido antes un delta sobre un campo tipo
+                    # "ref" (ver comentario arriba).
+                    valor = str(ref_id)
 
                 did = camp.aplicar(d["entity_type"], eid, d["field"],
                                    valor, turn_id, "extracted", d["evidence"])
@@ -704,8 +819,8 @@ def main():
         print(f"  {'ESTADO MODIFICADO' if cambio else 'sin cambios de estado'}")
         cab["current_turn"] = turn_id
 
-    print(f"\n{'='*74}")
-    print(f"  {coste['tin']}→{coste['tout']} tokens · "
+    print("\n---\n")
+    print(f"**Costo total de la sesión:** {coste['tin']}→{coste['tout']} tokens · "
           f"${(coste['tin']*0.09 + coste['tout']*0.34)/1e6:.4f}")
 
 

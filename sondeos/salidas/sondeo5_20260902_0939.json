@@ -1,0 +1,170 @@
+{
+  "modelo": "Qwen/Qwen3-32B",
+  "fecha": "2026-09-02T09:39:39.246643",
+  "fallos": {
+    "dado_inventado": 0,
+    "narra_mundo": 0,
+    "decide_resultado": 0,
+    "meta": 0,
+    "razono": 0,
+    "vacio": 0
+  },
+  "registro": [
+    {
+      "escena": "E1",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "```\n\"¿Mapas? ¿De esta zona?\"\nMe giro rápidamente hacia el vendedor, acercándome con paso firme.\n{Insight}",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Insight"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 16
+      }
+    },
+    {
+      "escena": "E1",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "```\n\"¿Amanecer? Eso da más tiempo del que parece.\" \nMe quedo mirando al vendedor del mercado, que empaca mapas como si tuviera prisa. \n{Percepción}\n```",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Percepción"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 25
+      }
+    },
+    {
+      "escena": "E1",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "```\n\"Vamos, no tenemos tiempo que perder.\"\nEmpiezo a caminar rápidamente hacia el puente, pero echo un vistazo atrás al vendedor de mapas, deteniéndome un instante.\n{Percepción}\n```",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Percepción"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 28
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "```\n\"Es injusto que un inocente pague por algo que no ha hecho.\"\nMe acerco a la celda y miro al prisionero a los ojos. \"¿Qué te acusan?\"",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 28
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "```\n\"¿Y si no tengo veinte coronas? ¿Alguna otra... alternativa?\"  \nMe acerco un paso al carcelero, apoyando una mano en su hombro con fingida familiaridad.  \n{Persuasión}",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 26
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "```\n\"A ver, veinte coronas por un favor que nadie firma. No es caro si uno\nsabe dónde encontrar dinero. Pero...\"\n\nSacudo la cabeza y miro al prisionero con más atención.\n{Persuasión}\n```",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 33
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "```\n\"¿Se me ofrecería un lugar cerca del fuego, posadero? Un clérigo cansado pide hospitalidad, no lujos.\"\n\nMe acerco con paso firme a la barra, mis botas chapotean al cruzar el charco de agua del suelo. Me siento en un taburete y cruzo las piernas con calma.",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 47
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "Me acerco al posadero con una sonrisa tranquila, fingiendo más confianza de la que siento.\n\n\"Un vaso de algo fuerte, por favor. Y dime, ¿qué rumores trajeron las lluvias esta noche?\"\n\n{Persuasión}",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 32
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "```\n\"Este sitio tiene más misterio del que parece. El posadero... algo le preocupa.\"\nMe acerco al mostrador y me apoyo en él, mirando al posadero directamente.\n```",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 28
+      }
+    }
+  ]
+}

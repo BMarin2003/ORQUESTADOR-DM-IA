@@ -13,13 +13,27 @@ campañas.
 
 import json
 import os
+from pathlib import Path
 
 import psycopg
 from psycopg.rows import dict_row
 
+try:
+    from dotenv import load_dotenv
+    # Busca .env subiendo desde este archivo (orquestador/db.py -> raíz del
+    # proyecto), no desde el cwd del que invoque el script -- así funciona
+    # igual sea "python crear_campana_real_g1.py" desde la raíz o
+    # "python orquestador/vertical_slice_g1.py" desde donde sea.
+    load_dotenv(Path(__file__).resolve().parent.parent / ".env")
+except ImportError:
+    # python-dotenv no instalado: se sigue pudiendo forzar DATABASE_URL a
+    # mano por variable de entorno, como antes. No es un error fatal.
+    pass
+
 DSN = os.environ.get(
     "DATABASE_URL",
-    "host=127.0.0.1 port=5433 dbname=dmia user=postgres")
+    "host=127.0.0.1 port=5432 dbname=dmia_dev user=postgres "
+    "password=dev_only_change_me")
 
 
 class Campaña:
@@ -304,6 +318,51 @@ class Campaña:
                  WHERE n.campaign_id=%s AND n.name=%s""",
                              (self.campaign_id, nombre)).fetchone()
 
+    def get_persona(self, nombre, turn_id):
+        """Ficha completa del Actor de G1 (dm/prompt_actor_g1.md): los
+        cuatro ejes de personalidad ESTABLE (warmth/candor/principle/
+        boldness), los rasgos ricos (traits/internal_contradiction/taboos/
+        voice_notes/stated_desire/actual_need/fear), su IBF, y SOLO lo que
+        el propio PNJ puede saber a este punto -- conocimiento aprendido
+        hasta turn_id (npc_knowledge.learned_at_turn <= turn_id) y sus
+        secretos CON contenido (a diferencia de contexto_escena_narrador(),
+        que se lo oculta al Narrador a propósito: la asimetría de
+        información -- solo el Actor conoce el secreto -- es justo lo que
+        el diseño de G1 existe para poder medir).
+
+        Devuelve None si el nombre no tiene fila en npcs -- quien llama
+        decide qué hacer (normalmente: saltar ese PNJ y marcarlo en
+        `faltantes` para el Narrador, igual que un fallo de red)."""
+        with self._conn() as c:
+            self._tx(c)
+            npc = c.execute("""
+                SELECT id, name, species, social_role, appearance, status,
+                       warmth, candor, principle, boldness,
+                       traits, internal_contradiction, taboos, voice_notes,
+                       stated_desire, actual_need, fear
+                  FROM npcs WHERE campaign_id=%s AND name=%s""",
+                            (self.campaign_id, nombre)).fetchone()
+            if not npc:
+                return None
+            ibf = c.execute("""
+                SELECT ideal_text, ideal_tags, bond_text, bond_strength,
+                       flaw_text, flaw_tags, flaw_exploit
+                  FROM npc_ibf WHERE npc_id=%s""", (npc["id"],)).fetchone()
+            conocimiento = c.execute("""
+                SELECT fact, learned_at_turn, source FROM npc_knowledge
+                 WHERE npc_id=%s AND learned_at_turn <= %s
+                 ORDER BY learned_at_turn""", (npc["id"], turn_id)).fetchall()
+            secretos = c.execute("""
+                SELECT content, reveal_condition, revealed_at_turn
+                  FROM npc_secrets WHERE npc_id=%s""", (npc["id"],)).fetchall()
+            disp = c.execute("""
+                SELECT round(affinity,1) AS affinity,
+                       disposition_band(affinity) AS banda
+                  FROM npc_disposition
+                 WHERE npc_id=%s AND pc_id IS NULL""", (npc["id"],)).fetchone()
+        return {"npc": npc, "ibf": ibf, "conocimiento": conocimiento,
+                "secretos": secretos, "disposicion": disp}
+
     def hp_pj(self, nombre):
         """hp_current/hp_max reales del PJ (tabla characters), para el
         chequeo CL-2 de HP-vs-narración (ver FIREBALL, Hit Point Reasoning).
@@ -411,9 +470,15 @@ class Campaña:
         return historial_modos, ultimo_pnj_hablo
 
     def id_de(self, tipo, nombre):
+        # El casing de `tipo` no siempre viene controlado: el contrato del
+        # extractor sí fuerza minúsculas, pero el prompt de Mundo (G1) no
+        # -- se vio en producción un delta con entity_type="NPC" en vez de
+        # "npc", que tumbaba esto con KeyError. Normalizar aquí, en el
+        # único punto de entrada, cubre a cualquier llamador presente o
+        # futuro sin tener que confiar en que cada prompt sea disciplinado.
         tabla = {"npc": ("npcs", "name"), "location": ("locations", "name"),
                  "faction": ("factions", "name"), "quest": ("quests", "title"),
-                 "character": ("characters", "name")}[tipo]
+                 "character": ("characters", "name")}[tipo.strip().lower()]
         with self._conn() as c:
             self._tx(c)
             r = c.execute(
@@ -549,6 +614,46 @@ class Campaña:
                   FROM faction_clocks c JOIN factions f ON f.id = c.faction_id
                  WHERE c.campaign_id=%s AND c.fired_at_turn IS NOT NULL
                  ORDER BY c.fired_at_turn""", (self.campaign_id,)).fetchall()
+
+    def deltas_narrables(self):
+        """Tripletas ground-truth para el chequeo Jericho-QA State Graph
+        (reporte_validacion.py, sección 5): cada fila de state_deltas para
+        npc.status, npc.affinity y quest.status, con el nombre de la
+        entidad ya resuelto (evita que reporte_validacion.py tenga que
+        conocer el esquema de npcs/quests). Estos tres campos se eligieron
+        porque son los únicos con un vocabulario de salida lo bastante
+        cerrado (enum, o numérico traducible a banda) como para construir
+        un detector léxico honesto en español -- a diferencia de, por
+        ejemplo, location.detail o character.inventory, donde el texto
+        libre hace imposible un chequeo determinístico sin un extractor de
+        tripletas real (NLP entrenado), que está fuera de alcance.
+
+        `source` se devuelve para que el reporte pueda, si hace falta más
+        adelante, distinguir deltas 'mechanical' (relojes, no requieren
+        narración inmediata) de 'extracted' (si el Árbitro/Mundo lo
+        escribió, se espera que el Narrador lo refleje).
+
+        `old_value` se devuelve para que el reporte pueda filtrar
+        npc.affinity a solo CRUCES de banda (ver jericho_qa_recall() en
+        reporte_validacion.py) -- exigir que cada delta individual se
+        narre por separado es una vara injusta cuando varios eventos
+        pequeños seguidos caen en la misma banda de disposición sin
+        cruzarla; eso no es la narración ignorando el cambio, es que no
+        había cambio de banda que narrar."""
+        with self._conn() as c:
+            self._tx(c)
+            return c.execute("""
+                SELECT d.turn_id, d.entity_type::text AS entity_type,
+                       d.field_name, d.old_value, d.new_value,
+                       d.source::text AS source,
+                       COALESCE(n.name, q.title) AS entity_name
+                  FROM state_deltas d
+                  LEFT JOIN npcs   n ON d.entity_type='npc'   AND n.id = d.entity_id
+                  LEFT JOIN quests q ON d.entity_type='quest' AND q.id = d.entity_id
+                 WHERE d.campaign_id=%s
+                   AND (d.entity_type='npc'   AND d.field_name IN ('status','affinity')
+                        OR d.entity_type='quest' AND d.field_name='status')
+                 ORDER BY d.turn_id""", (self.campaign_id,)).fetchall()
 
     def lugar_estado(self, location_id):
         """Lo que orquestador/mundo.py necesita para decidir MUN-4/5/6/7:

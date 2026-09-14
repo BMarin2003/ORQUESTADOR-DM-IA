@@ -7,9 +7,20 @@
     "party_register": "mixed",
     "rules_visibility": 50,
     "game_day": 12,
-    "note": "Mundo mínimo para sondeo. Neutral a propósito: no usa lore de Calradia para que los fixtures sean portables."
+    "note": "Mundo mínimo para sondeo. Neutral a propósito: no usa lore de Calradia para que los fixtures sean portables.",
+    "content_boundaries": {
+      "hard_lines": [
+        "violencia sexual",
+        "tortura descrita en detalle",
+        "genocidio o limpieza étnica",
+        "daño a menores"
+      ],
+      "veils": [
+        "muerte de animales",
+        "ejecuciones públicas"
+      ]
+    }
   },
-
   "locations": [
     {
       "key": "marca_gris",
@@ -72,7 +83,6 @@
       "visibility": "dm_only"
     }
   ],
-
   "factions": [
     {
       "key": "gremio_vado",
@@ -83,7 +93,6 @@
       "knows_about_party": false
     }
   ],
-
   "clocks": [
     {
       "faction": "gremio_vado",
@@ -98,14 +107,14 @@
       }
     }
   ],
-
   "quests": [
     {
       "key": "peaje_falso",
       "title": "El peaje que no consta en el libro",
       "description": "Alguien cobra un segundo peaje en el turno de noche y no lo registra.",
       "status": "active",
-      "next_step_known": true
+      "next_step_known": true,
+      "completion_condition": "El grupo entrega a la Sargento Brea pruebas materiales del cobro nocturno (fichas, registros o testimonio verificable)."
     },
     {
       "key": "molino",
@@ -113,13 +122,250 @@
       "description": "El molino viejo no está tan vacío como dicen.",
       "status": "unknown",
       "next_step_known": false,
-      "visibility": "dm_only"
+      "visibility": "dm_only",
+      "completion_condition": "El grupo descubre y reporta quién usa el molino viejo y para qué."
     }
   ],
-
   "characters": [
-    { "key": "kael", "name": "Kael", "species": "humano", "class": "guerrero 3", "hp": 28, "hp_max": 31 },
-    { "key": "mira", "name": "Mira", "species": "halfling", "class": "pícara 3", "hp": 19, "hp_max": 22 },
-    { "key": "tobi", "name": "Tobi", "species": "elfo", "class": "mago 3", "hp": 14, "hp_max": 17 }
+    {
+      "key": "kael",
+      "name": "Kael",
+      "species": "humano",
+      "class": "guerrero 3",
+      "hp": 28,
+      "hp_max": 31
+    },
+    {
+      "key": "mira",
+      "name": "Mira",
+      "species": "halfling",
+      "class": "pícara 3",
+      "hp": 19,
+      "hp_max": 22
+    },
+    {
+      "key": "tobi",
+      "name": "Tobi",
+      "species": "elfo",
+      "class": "mago 3",
+      "hp": 14,
+      "hp_max": 17
+    },
+    {
+      "key": "pj_pj01",
+      "name": "Ilvard",
+      "species": null,
+      "class": "paladín 3",
+      "hp": 28,
+      "hp_max": 28
+    },
+    {
+      "key": "pj_pj02",
+      "name": "Senna",
+      "species": null,
+      "class": "clérigo 3",
+      "hp": 24,
+      "hp_max": 24
+    },
+    {
+      "key": "pj_pj03",
+      "name": "Torvald",
+      "species": null,
+      "class": "explorador 3",
+      "hp": 28,
+      "hp_max": 28
+    },
+    {
+      "key": "pj_pj04",
+      "name": "Maelis",
+      "species": null,
+      "class": "guerrero 3",
+      "hp": 28,
+      "hp_max": 28
+    },
+    {
+      "key": "pj_pj05",
+      "name": "Corvin",
+      "species": null,
+      "class": "bardo 3",
+      "hp": 24,
+      "hp_max": 24
+    },
+    {
+      "key": "pj_pj06",
+      "name": "Yarah",
+      "species": null,
+      "class": "guerrero 3",
+      "hp": 28,
+      "hp_max": 28
+    },
+    {
+      "key": "pj_pj07",
+      "name": "Dunmar",
+      "species": null,
+      "class": "pícaro 3",
+      "hp": 24,
+      "hp_max": 24
+    },
+    {
+      "key": "pj_pj08",
+      "name": "Reia",
+      "species": null,
+      "class": "mago 3",
+      "hp": 20,
+      "hp_max": 20
+    },
+    {
+      "key": "pj_pj09",
+      "name": "Aldric",
+      "species": null,
+      "class": "pícaro 3",
+      "hp": 24,
+      "hp_max": 24
+    },
+    {
+      "key": "pj_pj10",
+      "name": "Bexa",
+      "species": null,
+      "class": "explorador 3",
+      "hp": 28,
+      "hp_max": 28
+    },
+    {
+      "key": "pj_pj11",
+      "name": "Solvei",
+      "species": null,
+      "class": "mago 3",
+      "hp": 20,
+      "hp_max": 20
+    },
+    {
+      "key": "pj_pj12",
+      "name": "Harn",
+      "species": null,
+      "class": "bárbaro 3",
+      "hp": 32,
+      "hp_max": 32
+    },
+    {
+      "key": "pj_pj13",
+      "name": "Mirek",
+      "species": null,
+      "class": "bárbaro 3",
+      "hp": 32,
+      "hp_max": 32
+    },
+    {
+      "key": "pj_pj14",
+      "name": "Vessa",
+      "species": null,
+      "class": "pícaro 3",
+      "hp": 24,
+      "hp_max": 24
+    },
+    {
+      "key": "pj_pj15",
+      "name": "Otto",
+      "species": null,
+      "class": "brujo 3",
+      "hp": 20,
+      "hp_max": 20
+    },
+    {
+      "key": "pj_pj16",
+      "name": "Lianne",
+      "species": null,
+      "class": "paladín 3",
+      "hp": 28,
+      "hp_max": 28
+    },
+    {
+      "key": "pj_pj17",
+      "name": "Garrek",
+      "species": null,
+      "class": "clérigo 3",
+      "hp": 24,
+      "hp_max": 24
+    },
+    {
+      "key": "pj_pj18",
+      "name": "Nadia",
+      "species": null,
+      "class": "pícaro 3",
+      "hp": 24,
+      "hp_max": 24
+    },
+    {
+      "key": "pj_pj19",
+      "name": "Bram",
+      "species": null,
+      "class": "guerrero 3",
+      "hp": 28,
+      "hp_max": 28
+    },
+    {
+      "key": "pj_pj20",
+      "name": "Kestra",
+      "species": null,
+      "class": "bardo 3",
+      "hp": 24,
+      "hp_max": 24
+    },
+    {
+      "key": "pj_pj21",
+      "name": "Elior",
+      "species": null,
+      "class": "mago 3",
+      "hp": 20,
+      "hp_max": 20
+    },
+    {
+      "key": "pj_pj22",
+      "name": "Wynn",
+      "species": null,
+      "class": "pícaro 3",
+      "hp": 24,
+      "hp_max": 24
+    },
+    {
+      "key": "pj_pj23",
+      "name": "Tarq",
+      "species": null,
+      "class": "brujo 3",
+      "hp": 20,
+      "hp_max": 20
+    },
+    {
+      "key": "pj_pj24",
+      "name": "Isolde",
+      "species": null,
+      "class": "explorador 3",
+      "hp": 28,
+      "hp_max": 28
+    },
+    {
+      "key": "pj_pj25",
+      "name": "Fenn",
+      "species": null,
+      "class": "guerrero 3",
+      "hp": 28,
+      "hp_max": 28
+    },
+    {
+      "key": "pj_pj26",
+      "name": "Marta",
+      "species": null,
+      "class": "clérigo 3",
+      "hp": 24,
+      "hp_max": 24
+    },
+    {
+      "key": "pj_pj27",
+      "name": "Osric",
+      "species": null,
+      "class": "bárbaro 3",
+      "hp": 32,
+      "hp_max": 32
+    }
   ]
 }

@@ -552,6 +552,186 @@ def imprimir_papalampidi(C, L_efectivo, detalle_c, V, detalle_v):
                  f"detectados)")
 
 
+# --------------------------------------------------- 5. Jericho-QA State Graph
+
+# Ammanabrolu et al. (2020), "Structured Exploration Strategies for Textual
+# Worlds" (Jericho-QA): mide si las tripletas de estado extraídas de la
+# narración coinciden (Exact Match / F1) con el grafo de conocimiento real
+# del mundo. Ver "Evaluación Determinista de Narrativa Interactiva.md"
+# (documento de brechas, 2026-09) -- instrumento de "alta aplicabilidad"
+# identificado como brecha frente a lo que ya cubre este script.
+#
+# Adaptación deliberada, documentada en vez de disimulada:
+#   - El paper compara tripletas EXTRAÍDAS por un modelo entrenado contra
+#     el grafo real. Acá no hay extractor de tripletas de texto libre en
+#     español (fuera de alcance de este proyecto) -- en su lugar, la
+#     "tripleta extraída" se aproxima con un detector léxico: ¿aparece en
+#     la narración alguna palabra del campo semántico esperado para el
+#     NUEVO valor que state_deltas ya registró como verdad?
+#   - Por eso este instrumento reporta únicamente RECALL (de los cambios
+#     de estado reales, ¿cuántos se ven reflejados en la narración?),
+#     nunca F1 ni precisión: calcular precisión exigiría detectar
+#     afirmaciones de estado en la narración que NO están respaldadas por
+#     la base -- eso sí requeriría el extractor de tripletas real. Llamar
+#     "F1" a esto sería inflar la métrica con una mitad que no se está
+#     midiendo. Mismo criterio de honestidad que el resto de proxies Tier 3
+#     de este sistema (ver "Ley de Goodhart" en la nota de respaldo).
+#   - Cobertura deliberadamente acotada a tres campos con vocabulario de
+#     salida CERRADO (enum o numérico-a-banda): npc.status, npc.affinity
+#     (vía disposition_band), quest.status. Campos de texto libre
+#     (location.detail, character.inventory, etc.) quedan fuera: no hay
+#     forma determinística honesta de chequearlos sin NLP entrenado.
+#   - npc.status='alive', quest.status en {'active','unknown'} y
+#     npc.affinity en banda 'neutral' se EXCLUYEN del cálculo: son los
+#     valores por defecto/sin marca, sin vocabulario distintivo en
+#     español que permita decidir si "no se detectó" significa "no se
+#     narró" o "no había nada que narrar". Incluir estos como "fallos"
+#     inflaría el recall a la baja de forma artificial.
+
+_KEYWORDS_NPC_STATUS = {
+    "dead": ("muert", "murió", "murio", "cadáver", "cadaver", "cayó sin vida",
+             "cayo sin vida", "falleci"),
+    "missing": ("desapareci", "desaparecid", "sin rastro", "no se le encuentra",
+                "no se lo encuentra", "no se le encontró", "paradero desconocido"),
+    "captured": ("captur", "apres", "cautiv", "encadenad", "prisioner"),
+    # 'alive' es el default -- sin vocabulario distintivo, se excluye.
+}
+
+_KEYWORDS_QUEST_STATUS = {
+    "completed": ("complet", "logr", "cumpli", "conclu", "resuelt", "resolvi"),
+    "failed": ("fall", "fracas", "perdid", "irrecuperable"),
+    "abandoned": ("abandon", "renunci", "desisti"),
+    # 'active'/'unknown' son default -- se excluyen.
+}
+
+# disposition_band() (migrations/001_schema.sql) es el umbral real; se
+# reimplementa aquí en Python para no pagar un roundtrip a Postgres por
+# cada delta de afinidad -- los umbrales están duplicados A PROPÓSITO,
+# documentado, mismo criterio que el resto de "duplicado, no reutilizado"
+# de este proyecto (ver vertical_slice_g1.py).
+def _banda_afinidad(valor):
+    v = float(valor)
+    if v <= -60: return "hostile"
+    if v <= -25: return "wary"
+    if v <= -8: return "cold"
+    if v < 8: return "neutral"
+    if v < 25: return "cordial"
+    if v < 60: return "loyal"
+    return "devoted"
+
+
+_KEYWORDS_AFINIDAD_BANDA = {
+    "hostile": ("hostil", "odia", "odio", "enemig", "detesta"),
+    "wary": ("desconf", "recel", "cautel", "suspica"),
+    "cold": ("fría", "frio", "fría", "distante", "gélid", "gelid", "seca"),
+    "cordial": ("cordial", "amable", "cortés", "cortes", "amistos"),
+    "loyal": ("leal", "fiel", "confía plenamente", "confia plenamente"),
+    "devoted": ("devot", "entregad", "adora", "venera", "incondicional"),
+    # 'neutral' es el punto medio sin marca -- se excluye.
+}
+
+
+def _ventana_texto(turnos_por_id, turn_id, ventana):
+    """Concatena dm_output de [turn_id, turn_id+ventana] -- la consecuencia
+    de un delta puede narrarse en el mismo turno que se escribió (la
+    mayoría de los casos, a diferencia de los relojes) o, si el
+    orquestador la difiere, en el inmediato siguiente."""
+    partes = [turnos_por_id[t] for t in range(turn_id, turn_id + ventana + 1)
+              if t in turnos_por_id]
+    return " ".join(partes).lower()
+
+
+def jericho_qa_recall(deltas, turnos_por_id, ventana=1):
+    """Recall del grafo de estado (ver docstring de sección arriba).
+    `deltas`: filas de Campaña.deltas_narrables(). Devuelve dict con
+    conteo/recall por campo (npc.status, npc.affinity, quest.status) y
+    total, más el detalle de los NO reconocidos (para poder citarlos)."""
+    familias = {
+        "npc.status": [], "npc.affinity": [], "quest.status": [],
+    }
+    no_reconocidos = []
+    for d in deltas:
+        campo = f"{d['entity_type']}.{d['field_name']}"
+        valor_crudo = d["new_value"]
+        # new_value es jsonb -- puede venir como número, string con
+        # comillas de json.dumps, o directamente el tipo ya decodificado
+        # por psycopg (jsonb se decodifica solo). Se normaliza a str/float
+        # según el campo.
+        if campo == "npc.status":
+            estado = str(valor_crudo).strip('"').lower()
+            claves = _KEYWORDS_NPC_STATUS.get(estado)
+        elif campo == "quest.status":
+            estado = str(valor_crudo).strip('"').lower()
+            claves = _KEYWORDS_QUEST_STATUS.get(estado)
+        elif campo == "npc.affinity":
+            try:
+                banda = _banda_afinidad(valor_crudo)
+            except (TypeError, ValueError):
+                continue
+            # Solo cruces de banda cuentan como evento narrable -- varios
+            # deltas pequeños seguidos que caen en la MISMA banda que ya
+            # tenían no son "cambios de estado" desde el punto de vista de
+            # lo que un narrador razonablemente marcaría (ver docstring de
+            # deltas_narrables() en db.py). old_value=NULL (primer delta de
+            # afinidad de esa entidad, sin banda previa registrada) SÍ
+            # cuenta -- es la primera vez que hay algo que narrar.
+            if d.get("old_value") is not None:
+                try:
+                    banda_previa = _banda_afinidad(d["old_value"])
+                except (TypeError, ValueError):
+                    banda_previa = None
+                if banda_previa == banda:
+                    continue
+            claves = _KEYWORDS_AFINIDAD_BANDA.get(banda)
+            estado = banda
+        else:
+            continue
+        if not claves:
+            continue  # valor sin vocabulario distintivo (default) -- excluido
+        texto = _ventana_texto(turnos_por_id, d["turn_id"], ventana)
+        reconocido = any(k in texto for k in claves)
+        familias[campo].append(reconocido)
+        if not reconocido:
+            no_reconocidos.append({
+                "turno": d["turn_id"], "entidad": d["entity_name"],
+                "campo": campo, "valor": estado,
+            })
+    resultado = {"familias": {}, "no_reconocidos": no_reconocidos}
+    total_si, total_n = 0, 0
+    for campo, marcas in familias.items():
+        n = len(marcas)
+        si = sum(marcas)
+        total_si += si
+        total_n += n
+        resultado["familias"][campo] = {"n": n, "reconocidos": si,
+                                        "recall": round(si / n, 3) if n else None}
+    resultado["recall_global"] = round(total_si / total_n, 3) if total_n else None
+    resultado["n_total"] = total_n
+    return resultado
+
+
+def imprimir_jericho_qa(r):
+    paso("5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. "
+         "narración; ver nota: SOLO recall, no F1 -- limitación declarada)")
+    if r["n_total"] == 0:
+        print("  sin deltas de npc.status/affinity o quest.status con "
+              "vocabulario distintivo detectable en esta campaña")
+        return
+    for campo, st in r["familias"].items():
+        if st["n"] == 0:
+            continue
+        print(f"    {campo:16s} recall={st['recall']:.3f}  "
+              f"({st['reconocidos']}/{st['n']})")
+    print(f"  recall global: {r['recall_global']:.3f}  "
+          f"({r['n_total']} deltas evaluables)")
+    if r["no_reconocidos"]:
+        print(f"  {len(r['no_reconocidos'])} delta(s) sin reflejo textual "
+              f"detectado en la ventana de turnos:")
+        for x in r["no_reconocidos"][:8]:
+            print(f"    turno {x['turno']:>4} · {x['entidad']} · "
+                  f"{x['campo']}={x['valor']}")
+
+
 # --------------------------------------------------------------------- main
 
 
@@ -560,6 +740,11 @@ def main():
     ap.add_argument("--campaign-id", default=None,
                     help="UUID de campaña; por defecto la más antigua "
                          "(mismo criterio que vertical_slice.py)")
+    ap.add_argument("--hasta-turno", type=int, default=None,
+                    help="Analiza solo turn_id <= N, para comparar "
+                         "'sesión 1' de dos campañas con distinto número "
+                         "de turnos generados sobre el mismo espacio de "
+                         "turnos, sin tener que regenerar la más larga.")
     args = ap.parse_args()
 
     import psycopg
@@ -576,28 +761,49 @@ def main():
 
     camp = bd.Campaña(campaign_id)
     cab = camp.cabecera()
+    titulo_rango = (f" · hasta turno {args.hasta_turno}"
+                    if args.hasta_turno is not None else "")
     print(f"\n{'='*74}\nREPORTE DE VALIDACIÓN · {cab['title']} · "
-          f"{cab['architecture']}\n{'='*74}")
+          f"{cab['architecture']}{titulo_rango}\n{'='*74}")
 
     with camp._conn() as c:
         camp._tx(c)
-        filas_validacion = c.execute("""
-            SELECT * FROM turn_validation WHERE campaign_id=%s
-             ORDER BY turn_id""", (campaign_id,)).fetchall()
+        if args.hasta_turno is not None:
+            filas_validacion = c.execute("""
+                SELECT * FROM turn_validation
+                 WHERE campaign_id=%s AND turn_id <= %s
+                 ORDER BY turn_id""", (campaign_id, args.hasta_turno)).fetchall()
+        else:
+            filas_validacion = c.execute("""
+                SELECT * FROM turn_validation WHERE campaign_id=%s
+                 ORDER BY turn_id""", (campaign_id,)).fetchall()
 
     imprimir_resumen(resumen_turn_validation(filas_validacion))
 
     turnos = camp.turnos_narracion()
+    if args.hasta_turno is not None:
+        # Recorte a posteriori, no en SQL: turnos_narracion() es compartida
+        # con otros usos y no vale la pena parametrizarla solo por esto --
+        # el volumen de una campaña (miles de turnos como máximo) no
+        # justifica evitar traer todo y filtrar en Python.
+        turnos = [t for t in turnos if t["turn_id"] <= args.hasta_turno]
     ubicaciones = [e for e in camp.entidades() if e["tipo"] == "location"]
     imprimir_bucles(detector_bucles(turnos, ubicaciones))
 
     turnos_por_id = {f["turn_id"]: f["dm_output"] for f in turnos}
     relojes = camp.relojes_disparados()
+    if args.hasta_turno is not None:
+        relojes = [r for r in relojes if r["fired_at_turn"] <= args.hasta_turno]
     imprimir_relojes(relojes_no_reconocidos(relojes, turnos_por_id))
 
     C, L_efectivo, detalle_c = coherencia_entidad_C(turnos, camp.entidades())
     V, detalle_v = consistencia_atributos_V(turnos, camp.entidades())
     imprimir_papalampidi(C, L_efectivo, detalle_c, V, detalle_v)
+
+    deltas = camp.deltas_narrables()
+    if args.hasta_turno is not None:
+        deltas = [d for d in deltas if d["turn_id"] <= args.hasta_turno]
+    imprimir_jericho_qa(jericho_qa_recall(deltas, turnos_por_id))
 
     print(f"\n{'='*74}\n")
 

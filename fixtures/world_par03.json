@@ -1,0 +1,121 @@
+{
+  "campaign": {
+    "title": "Rocabella y la Calabaza Colosal",
+    "profile": "adventure",
+    "world_tone": "light",
+    "party_register": "mixed",
+    "rules_visibility": 50,
+    "note": "Escenario propio de Par 03, deliberadamente ligero y cómico -- el extremo opuesto del tono grimdark de Vela Honda (Par 02) y del mixto de Vado de Ceniza (Par 01). Ver bitácora QM punto 27 sobre por qué cada par debe variar de tono."
+  },
+  "locations": [
+    {
+      "key": "valle_campanas",
+      "kind": "region",
+      "name": "El Valle de las Campanas Doradas",
+      "parent": null,
+      "culture_overrides": {
+        "language": "común",
+        "currency": "peniques de cobre",
+        "attitude_to_outsiders": "curiosa y chismosa"
+      }
+    },
+    {
+      "key": "rocabella",
+      "kind": "settlement",
+      "name": "Rocabella",
+      "parent": "valle_campanas",
+      "culture_overrides": {
+        "notable_laws": "ningún puesto de festival puede abrir antes que el del Comité",
+        "attitude_to_outsiders": "abierta, todos quieren contarte su versión de la historia",
+        "tensions": "Gremio de Panaderos vs. granjeros independientes, desde hace tres años"
+      },
+      "detail": "observed",
+      "description_canonical": "Calles empedradas con toldos de colores a medio montar, listones dorados colgando de cada farola, y un aire de caos festivo que todavía no decidió si va a ser celebración o desastre."
+    },
+    {
+      "key": "gremio_panaderos",
+      "kind": "building",
+      "name": "El Gremio de Panaderos de Rocabella",
+      "parent": "rocabella",
+      "detail": "observed",
+      "description_canonical": "Un salón que huele permanentemente a canela, con un pizarrón de recetas tachadas y vueltas a escribir, y una pila de listones de segundo lugar de años anteriores que nadie se atreve a tirar."
+    },
+    {
+      "key": "posada_buen_trigo",
+      "kind": "building",
+      "name": "La Posada del Buen Trigo",
+      "parent": "rocabella",
+      "detail": "observed",
+      "description_canonical": "El punto de reunión no oficial del pueblo entero durante la semana del festival: mesas llenas, rumores cruzados, y una pizarra donde alguien lleva la cuenta -- muy poco seria -- de quién es sospechoso de qué."
+    },
+    {
+      "key": "huerto_calabaza",
+      "kind": "landmark",
+      "name": "El Huerto de la Calabaza Colosal",
+      "parent": "rocabella",
+      "detail": "sketch",
+      "sketch_text": "Un huerto vallado con turnos de vigilancia anotados en una tablilla junto a la puerta, y un hueco perfectamente circular en la tierra donde debería estar la calabaza más grande que el valle haya visto jamás."
+    },
+    {
+      "key": "plaza_festival",
+      "kind": "district",
+      "name": "La Plaza del Festival",
+      "parent": "rocabella",
+      "detail": "observed",
+      "description_canonical": "La tarima de los jueces ya está montada, con la mesa de honor vacía esperando a la ganadora que, por ahora, ha desaparecido sin dejar rastro."
+    }
+  ],
+  "factions": [
+    {
+      "key": "gremio_panaderos_faccion",
+      "name": "El Gremio de Panaderos de Rocabella",
+      "description": "Organiza el festival oficialmente y compite en él extraoficialmente. Llevan tres años sin ganar la Cinta Dorada frente a los granjeros independientes, y este año tenían un pastel de calabaza que solo gana si la Calabaza Colosal no llega intacta a la mesa de jueces. Nadie lo dice en voz alta.",
+      "seat": "gremio_panaderos",
+      "stance_party": 0,
+      "knows_about_party": false
+    }
+  ],
+  "clocks": [
+    {
+      "faction": "gremio_panaderos_faccion",
+      "agenda": "Si la Calabaza Colosal no aparece antes del amanecer del día del juicio, el Comité cancela el Festival por primera vez en generaciones y el pueblo entero se enfrenta durante meses",
+      "progress": 4,
+      "threshold": 10,
+      "rate_per_game_day": 0.5,
+      "on_fire_event": {
+        "headline": "El Comité del Festival cancela la Cinta Dorada de este año",
+        "scope": "plaza_festival",
+        "consequence": "Estalla una pelea de tartas en plena plaza, el Gremio de Panaderos queda boicoteado por medio pueblo, y todos culpan a todos durante meses."
+      }
+    }
+  ],
+  "quests": [
+    {
+      "key": "donde_esta_calabaza",
+      "title": "¿Dónde está la Calabaza Colosal?",
+      "description": "La noche antes del juicio, la hortaliza ganadora del Festival desapareció del huerto vigilado de Mireia Tossel. El pueblo entero tiene una teoría, y casi todas señalan al Gremio de Panaderos.",
+      "status": "active",
+      "next_step_known": true,
+      "completion_condition": "El grupo encuentra la Calabaza Colosal (o lo que quede de ella) y aclara ante Mireia Tossel y el Comité qué pasó realmente, antes del amanecer del día del juicio."
+    },
+    {
+      "key": "quien_la_escondio",
+      "title": "Quién la escondió de verdad, y por qué",
+      "description": "La versión de sabotaje del Gremio de Panaderos que todo el pueblo asume no es la historia completa.",
+      "status": "unknown",
+      "next_step_known": false,
+      "visibility": "dm_only",
+      "completion_condition": "El grupo descubre y confirma quién movió realmente la calabaza esa noche y el motivo -- ni malicioso ni dramático, solo un malentendido en cadena."
+    }
+  ],
+  "characters": [
+    {
+      "key": "pj_pj20",
+      "name": "Kestra",
+      "species": null,
+      "class": "bardo 3",
+      "hp": 24,
+      "hp_max": 24
+    }
+  ]
+}

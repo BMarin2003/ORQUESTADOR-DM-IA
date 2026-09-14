@@ -1,0 +1,122 @@
+{
+  "campaign": {
+    "title": "Vela Honda",
+    "profile": "adventure",
+    "world_tone": "grimdark",
+    "party_register": "mixed",
+    "rules_visibility": 50,
+    "note": "Escenario propio de Par 02, deliberadamente lúgubre en contraste con el tono mixto de Vado de Ceniza (Par 01) -- ver bitácora QM punto 27 sobre por qué cada par debe variar de tono."
+  },
+  "locations": [
+    {
+      "key": "paramo_vela",
+      "kind": "region",
+      "name": "El Páramo de Vela Negra",
+      "parent": null,
+      "culture_overrides": {
+        "language": "común",
+        "currency": "peniques de estaño",
+        "attitude_to_outsiders": "recelosa"
+      }
+    },
+    {
+      "key": "vela_honda",
+      "kind": "settlement",
+      "name": "Vela Honda",
+      "parent": "paramo_vela",
+      "culture_overrides": {
+        "notable_laws": "ningún farol se apaga sin reemplazo inmediato, así sea de madrugada",
+        "attitude_to_outsiders": "cerrada",
+        "tensions": "nadie habla de los que 'se los llevó la ciénaga'"
+      },
+      "detail": "observed",
+      "description_canonical": "Un puñado de casas de piedra gris alrededor de una plaza donde nunca falta un farol encendido, ni siquiera al mediodía. El aire huele a musgo y a cera quemada."
+    },
+    {
+      "key": "casa_vigilia",
+      "kind": "building",
+      "name": "La Casa de la Vigilia",
+      "parent": "vela_honda",
+      "detail": "sketch",
+      "sketch_text": "Una casa de piedra sin ventanas a la calle, con una sola puerta pesada y una lista de turnos clavada junto a ella."
+    },
+    {
+      "key": "posada_farol",
+      "kind": "building",
+      "name": "La Posada del Farol",
+      "parent": "vela_honda",
+      "detail": "observed",
+      "description_canonical": "Seis mesas, un farol en cada una que nadie deja apagar, y un tablón donde se apuntan los turnos de vigilia de la semana."
+    },
+    {
+      "key": "cementerio_ahogado",
+      "kind": "ruin",
+      "name": "El Cementerio Ahogado",
+      "parent": "vela_honda",
+      "detail": "sketch",
+      "sketch_text": "Lápidas hundidas hasta la mitad en el lodo, inclinadas en ángulos que ninguna erosión natural produciría tan parejo."
+    },
+    {
+      "key": "capilla_hundida",
+      "kind": "ruin",
+      "name": "La Capilla Hundida",
+      "parent": "cementerio_ahogado",
+      "detail": "sketch",
+      "sketch_text": "La media torre que aún asoma sobre el agua turbia, con la cuerda de la campana tensa como si algo tirara de ella desde abajo.",
+      "visibility": "dm_only"
+    }
+  ],
+  "factions": [
+    {
+      "key": "vigilia_farol",
+      "name": "La Vigilia del Farol",
+      "description": "Orden laica que organiza los turnos nocturnos de Vela Honda: mantener cada farol encendido y hacer sonar, cada noche antes de medianoche, la campana de la Capilla Hundida. Nadie cuestiona la regla en voz alta.",
+      "seat": "casa_vigilia",
+      "stance_party": 0,
+      "knows_about_party": false
+    }
+  ],
+  "clocks": [
+    {
+      "faction": "vigilia_farol",
+      "agenda": "Lo que duerme bajo la Capilla Hundida se remueve cada vez que un farol se apaga o la campana calla una noche",
+      "progress": 5,
+      "threshold": 10,
+      "rate_per_game_day": 0.4,
+      "on_fire_event": {
+        "headline": "La campana de la Capilla Hundida deja de sonar una noche entera",
+        "scope": "cementerio_ahogado",
+        "consequence": "Algo sale del agua. El vigilante nocturno de turno no vuelve a amanecer."
+      }
+    }
+  ],
+  "quests": [
+    {
+      "key": "desaparicion_aren",
+      "title": "El farol que Aren nunca volvió a encender",
+      "description": "Hace veintitrés noches, Aren, hijo de Ysolda Marn, desapareció revisando el farol del Cementerio Ahogado en su turno de vigilia. Su madre exige respuestas que el pueblo se niega a dar.",
+      "status": "active",
+      "next_step_known": true,
+      "completion_condition": "El grupo descubre y confirma ante Ysolda Marn qué le pasó realmente a Aren, con evidencia verificable."
+    },
+    {
+      "key": "bajo_capilla",
+      "title": "Lo que hay bajo la Capilla Hundida",
+      "description": "La Vigilia del Farol oculta la verdadera razón de sus reglas nocturnas.",
+      "status": "unknown",
+      "next_step_known": false,
+      "visibility": "dm_only",
+      "completion_condition": "El grupo descubre y reporta qué es realmente lo que la Vigilia mantiene dormido bajo la capilla."
+    }
+  ],
+  "characters": [
+    {
+      "key": "pj_pj15",
+      "name": "Otto",
+      "species": null,
+      "class": "brujo 3",
+      "hp": 20,
+      "hp_max": 20
+    }
+  ]
+}

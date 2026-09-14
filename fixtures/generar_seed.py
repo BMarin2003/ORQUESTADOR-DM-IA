@@ -10,8 +10,16 @@ Uso:  python3 generar_seed.py > seed.sql
 """
 
 import json
+import sys
 import uuid
 from pathlib import Path
+
+# Windows usa cp1252 en stdout: cualquier carácter fuera de latin-1 (una
+# flecha, una comilla tipográfica) mata el script. Y si muere antes de
+# imprimir, el .sql anterior queda intacto y psql carga la versión vieja
+# sin avisar de nada.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 BASE = Path(__file__).parent
 world = json.loads((BASE / "world.json").read_text(encoding="utf-8"))
@@ -67,10 +75,11 @@ w(f"INSERT INTO users (id, tenant_id, email, display_name) VALUES "
 
 cp = world["campaign"]
 w(f"""INSERT INTO campaigns (id, tenant_id, owner_id, title, architecture, profile,
-  world_tone, party_register, rules_visibility, game_day, current_turn)
+  world_tone, party_register, rules_visibility, game_day, current_turn,
+  content_boundaries)
  VALUES ({q(C)}, {q(T)}, {q(U)}, {q(cp['title'])}, 'monolithic', {q(cp['profile'])},
   {q(cp['world_tone'])}, {q(cp['party_register'])}, {cp['rules_visibility']},
-  {cp['game_day']}, 0);""")
+  {cp['game_day']}, 0, {q(cp.get('content_boundaries', {}))});""")
 w(f"INSERT INTO campaign_members (campaign_id, user_id, is_dm) VALUES ({q(C)}, {q(U)}, true);")
 w("")
 

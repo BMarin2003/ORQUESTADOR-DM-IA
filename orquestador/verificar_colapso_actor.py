@@ -195,8 +195,13 @@ def main():
     else:
         coste["tin"] += r["tin"]; coste["tout"] += r["tout"]
         linea = salida.get("linea", "") or ""
-        print(f"  linea: {linea}\n  se_niega_a: {salida.get('se_niega_a')}\n")
-        if CASO_ARRAIGO["hecho_no_sabido"].lower() in linea.lower():
+        print(f"  linea: {linea!r}\n  se_niega_a: {salida.get('se_niega_a')}\n"
+              f"  (crudo del modelo: {r['texto']!r})\n")
+        if not linea.strip():
+            print("  ✗ 'linea' vino vacía o ausente — la salida no es válida, "
+                  "esto NO es una verificación de arraigo (ver texto crudo arriba)")
+            fallos.append("arraigo — salida vacía/inválida, no se pudo verificar nada")
+        elif CASO_ARRAIGO["hecho_no_sabido"].lower() in linea.lower():
             print(f"  ✗ el PNJ afirma/confirma «{CASO_ARRAIGO['hecho_no_sabido']}», "
                   f"un dato específico que nadie le dio")
             fallos.append("arraigo — PNJ inventa un dato que no le corresponde saber")

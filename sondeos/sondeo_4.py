@@ -143,9 +143,16 @@ def condiciones(turno, personas, world, compromisos):
                             "texto": sec["reveal_condition"],
                             "_delta": ("npc", k, "secret_revealed", f"secreto_{i}"),
                             "_evento": (k, "secret_entrusted")})
+    turno_actual = turno.get("id")
     for i, c in enumerate(compromisos):
         pnj = c.get("pnj") if isinstance(c, dict) else None
         txt = c["texto"] if isinstance(c, dict) else c
+        # Un compromiso contraído en ESTE turno no puede cumplirse ni
+        # incumplirse todavía. Se excluye deterministamente en vez de
+        # confiar en que el modelo entienda la secuencia temporal.
+        if isinstance(c, dict) and c.get("turno") is not None \
+           and c["turno"] == turno_actual:
+            continue
         out.append({"id": f"promesa:{i}", "tipo": "compromiso", "texto": txt,
                     "_evento_cumplida": (pnj, "promise_kept"),
                     "_evento_incumplida": (pnj, "promise_broken")})
@@ -316,11 +323,15 @@ def main():
 
     lista = entidades_disponibles(world, personas)
     # En produccion: SELECT de los promise_made abiertos. Aqui, fijos.
+    # 'turno' = cuándo se contrajo. En producción viene del promise_made
+    # registrado; sirve para excluirlo del turno en que se hace la promesa.
     COMPROMISOS = [
-        {"pnj": "brea", "texto": "El grupo se comprometió a ir a hablar con Herda, "
-                                 "la vendedora del Mercado Bajo."},
-        {"pnj": "brea", "texto": "El grupo se comprometió a traer a Brea las fichas "
-                                 "del peaje nocturno como prueba."},
+        {"pnj": "brea", "turno": "T00",
+         "texto": "El grupo se comprometió a ir a hablar con Herda, "
+                  "la vendedora del Mercado Bajo."},
+        {"pnj": "brea", "turno": "T17",
+         "texto": "El grupo se comprometió a traer a Brea las fichas "
+                  "del peaje nocturno como prueba."},
     ]
     p_verif = (RAIZ / "extractor" / "verificador.md").read_text(encoding="utf-8")
     tot = defaultdict(int)

@@ -736,8 +736,14 @@ CREATE TABLE rejected_deltas (
 -- ============================================================================
 
 CREATE TYPE event_kind AS ENUM (
-  'bribe_offered', 'promise_kept', 'promise_broken', 'courtesy',
-  'bond_target_protected', 'bond_target_harmed', 'life_saved',
+  -- 'promise_made' agregado en la duodecima pasada (ver "QM - Respaldo
+  -- bibliografico instrumentos deterministicos.md", punto 16): estaba en
+  -- extractor/contrato.json desde el principio ("fuente unica de verdad")
+  -- pero nunca se reflejo aqui -- el cast ::event_kind reventaba en cuanto
+  -- el extractor clasificaba una promesa hecha (no cumplida/rota, que si
+  -- existian).
+  'bribe_offered', 'promise_made', 'promise_kept', 'promise_broken',
+  'courtesy', 'bond_target_protected', 'bond_target_harmed', 'life_saved',
   'betrayal_proven', 'threat_made', 'competence_shown',
   'ideal_honored', 'ideal_violated', 'public_status_given', 'secret_entrusted'
 );
@@ -761,6 +767,9 @@ INSERT INTO event_magnitudes (event, modulator, band, d_affinity, d_trust, d_res
   ('bribe_offered','principle','high',  -15, -20, -25, 'La oferta ES la ofensa. Se ofende aunque el grupo sea aliado: le acaban de decir quién creen que es. Rechaza sin negociar y lo recuerda.'),
   ('bribe_offered','principle','mid',    -4,  -6,  -2, 'Incómodo. Rechaza pero no lo convierte en un asunto personal. Cambia de tema.'),
   ('bribe_offered','principle','low',    +2,   0,  +5, 'NO se ofende. Si rechaza es por insuficiente, no por indigno. Contraoferta o insinúa el precio correcto.'),
+  ('promise_made','principle','high',    +2,  +5,  +6, 'Toma nota: ahora hay algo pendiente de cumplir. No es un merito todavia, es una expectativa que vigilara.'),
+  ('promise_made','principle','mid',     +1,  +2,  +3, 'Lo anota sin mayor ceremonia.'),
+  ('promise_made','principle','low',      0,  +1,  +2, 'Palabras. Ya se vera si sale algo de esto.'),
   ('promise_kept','principle','high',    +8, +15, +12, 'Lo registra como prueba de carácter, no como favor.'),
   ('promise_kept','principle','mid',     +6,  +8,  +5, 'Agradece y lo tiene en cuenta.'),
   ('promise_kept','principle','low',     +1,  +2,  +8, 'Registra la capacidad de cumplir, no la virtud de haber cumplido.'),

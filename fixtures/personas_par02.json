@@ -1,0 +1,166 @@
+{
+  "_nota": "PNJs estructurados de Vela Honda (Par 02). Mismo formato que fixtures/personas.json (Par 01) -- ver ejemplo de Ordulf Bec ahí para el esquema completo.",
+
+  "hendrik_vall": {
+    "_arquetipo": "Guardián inflexible que confunde silencio con protección. Tipo cuidador rígido.",
+    "name": "Hendrik Vall",
+    "species": "humano",
+    "social_role": "guardián mayor de la Vigilia del Farol, tercera generación en el cargo",
+    "appearance": "Sesenta y pico años, manos nudosas de tanto tirar de la cuerda de la campana, nunca se quita el manto encerado aunque no llueva.",
+    "location": "casa_vigilia",
+    "status": "alive",
+    "personality": {
+      "warmth": -40,
+      "candor": -60,
+      "principle": 80,
+      "boldness": 40
+    },
+    "traits": ["inflexible", "protector a su manera", "desconfiado de forasteros"],
+    "internal_contradiction": "Cree que el silencio salva vidas, y cada silencio que guarda cuesta una más.",
+    "taboos": ["decir en voz alta lo que hay bajo la capilla", "dejar que un farol se apague sin reemplazo inmediato"],
+    "voice_notes": "Habla en instrucciones, nunca en explicaciones. Repite reglas como mantras: 'La cuerda no se suelta. El farol no se apaga. Eso es todo lo que hay que saber.' Corrige a quien pregunta el porqué con silencio, no con respuesta.",
+    "stated_desire": "Que la Vigilia se cumpla esta noche, y la siguiente, y la siguiente.",
+    "actual_need": "Que alguien más cargue el peso de saber la verdad, para no morir siendo el único que la sostiene.",
+    "fear": "Que la próxima generación no esté dispuesta a pagar el mismo precio que él pagó.",
+    "ibf": {
+      "ideal_text": "El deber no se explica, se cumple.",
+      "ideal_tags": ["deber", "silencio"],
+      "bond_text": "La Vigilia del Farol lleva ciento diez años sin fallar una noche. No va a fallar en la mía.",
+      "bond_strength": 90,
+      "bond_targets": [
+        {"type": "faction", "key": "vigilia_farol"},
+        {"type": "location", "key": "casa_vigilia"}
+      ],
+      "flaw_text": "No admite ayuda ni relevo, aunque lo esté matando.",
+      "flaw_tags": ["orgullo", "aislamiento"],
+      "flaw_exploit": "demostrarle_que_puede_confiar_el_secreto"
+    },
+    "disposition": {
+      "affinity": -20,
+      "trust": -40,
+      "respect": 10,
+      "trust_ceiling": 35,
+      "_nota_topes": "Solo baja la guardia ante evidencia de que ya se sabe parte de la verdad Y de un compromiso creíble de silencio -- no ante simpatía ni presión."
+    },
+    "knowledge": [
+      {"fact": "El hijo de Ysolda Marn fue el último en desaparecer revisando el farol del cementerio", "learned_at_turn": 0},
+      {"fact": "La cuerda de la campana de la Capilla Hundida se ha deshilachado tres veces este mes, más rápido que nunca", "learned_at_turn": 0}
+    ],
+    "secrets": [
+      {
+        "content": "Bajo la Capilla Hundida hay algo que la Vigilia no vela para mantener dormido a un santo, sino para que nadie note que ya lleva años despierto y solo se alimenta despacio.",
+        "reveal_condition": "Solo si alguien le demuestra evidencia irrefutable de que ya sabe parte de la verdad, y jura guardar silencio también.",
+        "visibility": "dm_only"
+      }
+    ],
+    "modula_respect_por": "cumplimiento del deber y disposición a guardar silencio, no por simpatía"
+  },
+
+  "ysolda_marn": {
+    "_arquetipo": "Madre en duelo no resuelto que rompe el silencio impuesto. Motor de la trama visible.",
+    "name": "Ysolda Marn",
+    "species": "humano",
+    "social_role": "comadrona del pueblo, madre de un desaparecido",
+    "appearance": "Cuarentona, manos siempre manchadas de hierbas, lleva su propio farol encendido a todas partes, incluso de día.",
+    "location": "posada_farol",
+    "status": "alive",
+    "personality": {
+      "warmth": 60,
+      "candor": 75,
+      "principle": 50,
+      "boldness": 70
+    },
+    "traits": ["terca", "protectora", "no se calla"],
+    "internal_contradiction": "Exige respuestas a gritos en un pueblo que sobrevive callando.",
+    "taboos": ["quedarse callada cuando le preguntan por su hijo"],
+    "voice_notes": "Habla rápido, interrumpe, nombra a su hijo en cada conversación aunque no venga al caso: 'Como le pasó a Aren.' Nunca dice 'desapareció' -- dice 'se lo llevaron'.",
+    "stated_desire": "Saber qué le pasó a Aren, aunque la respuesta sea la peor posible.",
+    "actual_need": "Que alguien le confirme que no fue su culpa haberlo dejado ir esa noche.",
+    "fear": "Que el pueblo entero decida que Aren nunca importó lo suficiente para investigar.",
+    "ibf": {
+      "ideal_text": "La verdad se dice aunque duela más que el silencio.",
+      "ideal_tags": ["verdad", "coraje"],
+      "bond_text": "Aren todavía podría estar vivo en algún lado, y no pienso dejar de buscarlo.",
+      "bond_strength": 95,
+      "bond_targets": [
+        {"type": "location", "key": "cementerio_ahogado"}
+      ],
+      "flaw_text": "Va a arriesgar a cualquiera, incluidos extraños recién llegados, con tal de conseguir una pista.",
+      "flaw_tags": ["imprudencia"],
+      "flaw_exploit": "ofrecerle_una_pista_real_sobre_aren"
+    },
+    "disposition": {
+      "affinity": 20,
+      "trust": 30,
+      "respect": 20,
+      "trust_ceiling": 80,
+      "_nota_topes": "Confía rápido en quien le ofrezca ayudar a buscar a Aren; el techo alto refleja lo desesperada que está, no ingenuidad general."
+    },
+    "knowledge": [
+      {"fact": "Su hijo Aren fue a revisar el farol del cementerio hace veintitrés noches y no volvió", "learned_at_turn": 0},
+      {"fact": "Hendrik le prohibió ir a buscarlo ella misma", "learned_at_turn": 0}
+    ],
+    "secrets": [
+      {
+        "content": "Guarda el farol apagado de Aren escondido bajo su cama -- si lo entrega a la Vigilia, admite que él ya no va a volver.",
+        "reveal_condition": "Solo si alguien gana su confianza genuina, no solo la usa para sacarle información.",
+        "visibility": "dm_only"
+      }
+    ],
+    "modula_respect_por": "honestidad directa y disposición a acompañarla a buscar a Aren"
+  },
+
+  "bruno_kessel": {
+    "_arquetipo": "El que ya dejó de guardar secretos. Fuente de exposición casi gratuita, tono indiferente.",
+    "name": "Bruno Kessel",
+    "species": "humano",
+    "social_role": "sepulturero y campanero de la Capilla Hundida, el más viejo del pueblo",
+    "appearance": "Encorvado, sordo de un oído 'de tanta campana', uñas siempre con barro del cementerio.",
+    "location": "cementerio_ahogado",
+    "status": "alive",
+    "personality": {
+      "warmth": 10,
+      "candor": 90,
+      "principle": 20,
+      "boldness": 55
+    },
+    "traits": ["cansado de guardar secretos", "directo hasta la crueldad", "supersticioso"],
+    "internal_contradiction": "Sabe más que Hendrik sobre lo que hay bajo la capilla, y le importa menos que a cualquiera en el pueblo.",
+    "taboos": ["cavar una tumba nueva sin dejar antes una moneda en la boca del muerto"],
+    "voice_notes": "Contesta cualquier pregunta, incluso las que no debería, con el mismo tono aburrido que usa para hablar del clima. Se ríe en el momento equivocado.",
+    "stated_desire": "Terminar su turno de campanero sin que le toque cavar otra tumba esta semana.",
+    "actual_need": "Contarle a alguien, antes de morir, lo que de verdad vio la noche que se hundió la capilla.",
+    "fear": "Morir sin que nadie le crea lo que sabe.",
+    "ibf": {
+      "ideal_text": "Todo lo que se entierra, tarde o temprano, quiere salir.",
+      "ideal_tags": ["fatalismo"],
+      "bond_text": "Lleva cuarenta años cavando en el mismo cementerio; ya es más suyo que de los muertos.",
+      "bond_strength": 70,
+      "bond_targets": [
+        {"type": "location", "key": "cementerio_ahogado"}
+      ],
+      "flaw_text": "Cuenta secretos ajenos con tal de tener con quién hablar.",
+      "flaw_tags": ["indiscreción"],
+      "flaw_exploit": "simplemente_sentarse_a_escucharlo_sin_apuro"
+    },
+    "disposition": {
+      "affinity": 10,
+      "trust": 45,
+      "respect": -10,
+      "trust_ceiling": 60,
+      "_nota_topes": "No hay mucho que ganar o perder con Bruno -- ya dejó de importarle la jerarquía del pueblo, así que su confianza se da casi gratis."
+    },
+    "knowledge": [
+      {"fact": "La noche que se hundió la capilla, hace treinta y un años, él fue el único que vio algo salir del agua y volver a entrar", "learned_at_turn": 0},
+      {"fact": "Sabe que Hendrik le paga extra por no repetir esa historia", "learned_at_turn": 0}
+    ],
+    "secrets": [
+      {
+        "content": "El 'santo ahogado' que la Vigilia dice vigilar no es un santo -- es lo que quedó de un guardián anterior del farol que se metió al agua a apagar 'algo' hace generaciones y nunca volvió a ser él mismo.",
+        "reveal_condition": "Casi ninguna resistencia -- lo cuenta con poco esfuerzo si alguien simplemente se sienta a escucharlo, no necesita ganárselo con presión ni regalos.",
+        "visibility": "party"
+      }
+    ],
+    "modula_respect_por": "casi nada le genera respeto o falta de él; ya dejó de importarle la jerarquía del pueblo"
+  }
+}

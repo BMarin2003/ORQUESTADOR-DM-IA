@@ -1,0 +1,227 @@
+{
+  "modelo": "NousResearch/Hermes-3-Llama-3.1-70B",
+  "fecha": "2026-09-02T10:33:24.168458",
+  "fallos": {
+    "dado_inventado": 0,
+    "narra_mundo": 1,
+    "decide_resultado": 0,
+    "meta": 0,
+    "habilidad_inventada": 0,
+    "autodirigirse": 0,
+    "plural_grupo": 0,
+    "condicional": 0,
+    "razono": 0,
+    "vacio": 0
+  },
+  "registro": [
+    {
+      "escena": "E1",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "\"El capitán puede esperar un poco más. No me iré sin saber qué está pasando en verdad.\" Me acerco al vendedor de mapas.\n\n\"¿Qué hay de nuevo en esos papeles? ¿Algo sobre el puente o el río?\" {Investigación}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Investigación"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 38
+      }
+    },
+    {
+      "escena": "E1",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "\"Voy, voy, no te pelees conmigo.\" Le digo al mensajero con una sonrisa forzada. Miro al vendedor de mapas y calculo mis posibilidades. \"Oye, espera un momento. Tengo que hacer una cosa rápida.\"\n\nMe acerco al puesto de mapas con disimulo, como quien no quiere la cosa. Sin llamar la atención, reviso los mapas con sigilo, buscando algo que nadie más sepa y que pueda serme útil más adelante. Si encuentro algo interesante, me lo guardo sin que el vendedor se dé cuenta.\n\nCuando termine, volveré con el mensajero y nos iremos al puente. No quiero meterme en problemas, pero tampoco voy a dejar pasar una oportunidad de oro.",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 109
+      }
+    },
+    {
+      "escena": "E1",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"El capitán puede esperar un poco más. No me gusta que me den órdenes como si fuera una recluta.\" Le digo al mensajero que ya iré, pero que primero tengo que hacer algo.\n\nMe acerco al vendedor de mapas. {Percepción} ¿Tienes algún mapa de los alrededores? He oído rumores de cosas extrañas en los bosques, y quiero investigar un poco antes de ir al puente.",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Percepción"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 65
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "\"Veinte coronas y la celda del fondo amanece abierta. Nadie pregunta, nadie firma nada.\" El carcelero mira a un lado y a otro antes de hablar.\n\n\"Es una suma exorbitante.\" {Persuasión} \"¿Qué ha hecho este hombre para merecer tal precio?\"\n\n\"No es asunto tuyo.\" {Intimidación} \"O pagas o no, pero decidlo ya. No tengo todo el día.\"\n\n\"Está bien.\" Saco veinte coronas y se las entrego al carcelero. \"Que amanezca libre.\"\n\nEntro en la celda y me acerco al prisionero. \"¿Por qué estás aquí? ¿Qué has hecho?\" {Perspicacia}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión",
+          "Intimidación",
+          "Perspicacia"
+        ],
+        "narra_mundo": true,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 88
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "\"Vaya, veinte coronas no está mal... Pero algo me dice que hay más en juego aquí.\"\n\nMe acerco al prisionero con disimulo, para no llamar la atención del carcelero. En un susurro, le pregunto: \"¿Quién eres y qué haces aquí? ¿Hay algo que valga más que veinte coronas para sacarte?\"\n\n{Perspicacia}\n{Sigilo}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia",
+          "Sigilo"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 52
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"¿Desde cuándo se paga por la justicia en este lugar? No me gustan los sobornos ni la corrupción.\" Le lanzo una mirada furiosa al carcelero. {Persuasión}\n\nY, ¿sabes qué está pasando aquí realmente? ¿Por qué está detenido este hombre? {Investigación}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión",
+          "Investigación"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 40
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "\"¿Hay algo en qué pueda ayudar? Me doy cuenta de que este lugar no está en su mejor momento.\"\n\nMe acerco al posadero y le pregunto qué está pasando. {Perspicacia}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 30
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "\"No hay nadie a quien sacar chispas aquí... A ver, ¿qué hace esa zorra de pelo rojo en la esquina? No parece de las que se pelean por una cerveza.\"\n\nMe acerco disimuladamente a la mesa donde está sentada la mujer de pelo rojo y trato de oír algo de lo que está hablando sin que se note. {Sigilo}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Sigilo"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 59
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"No hay nadie a quien preguntarle qué está pasando aquí. Aunque...\" Me acerco al posadero. \"Oye, ¿ha pasado algo raro en el pueblo últimamente? La gente parece asustada.\" {Persuasión}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 29
+      }
+    }
+  ]
+}

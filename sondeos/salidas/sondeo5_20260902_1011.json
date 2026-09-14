@@ -1,0 +1,192 @@
+{
+  "modelo": "NousResearch/Hermes-3-Llama-3.1-70B",
+  "fecha": "2026-09-02T10:11:33.386810",
+  "fallos": {
+    "dado_inventado": 0,
+    "narra_mundo": 0,
+    "decide_resultado": 0,
+    "meta": 0,
+    "habilidad_inventada": 0,
+    "razono": 0,
+    "vacio": 0
+  },
+  "registro": [
+    {
+      "escena": "E1",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "\"El capitán puede esperar. No voy a dejar que me dé órdenes.\"\nMe acerco al vendedor de mapas. \"¿Tienes algún mapa de la zona? ¿De la región entera?\"\n{Perspicacia}\n{Investigación}\n\"No puedo irme sin saber qué hay alrededor. Si el capitán me necesita tanto, que me espere.\"\nCompro un mapa de la región.\n\"Gracias.\"\nMe dirijo al puente, pero no corriendo. Caminando a buen paso, pero sin apresurarme.",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia",
+          "Investigación"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 68
+      }
+    },
+    {
+      "escena": "E1",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "\"Ahora mismo no puedo, tengo cosas que hacer. Dile al capitán que lo siento mucho.\"\nLe doy una moneda al mensajero para que se vaya.\nMe acerco al vendedor de mapas y pregunto qué tiene de interesante, especialmente si tiene algo relacionado con la zona.\n{Perspicacia} para notar si hay algo valioso o poco común entre los mapas.\n\"¿Cuánto pides por ese mapa de más allá?\" Señalo uno que me llama la atención.",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 73
+      }
+    },
+    {
+      "escena": "E1",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"Ahora mismo voy.\"\nMe dirijo al mensajero, lo miro fijamente y le digo con tono firme:\n\"No voy a pagar dos veces por el mismo puente.\"\nSin esperar respuesta, me subo a mi caballo y me encamino hacia el puente.\n{Atletismo} para montar rápido y con destreza.\n{Persuasión} para que el mensajero se dé cuenta de que hablo en serio y no intentará detenerme.",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Atletismo",
+          "Persuasión"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 64
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "\"Veinte coronas es un robo. Y yo no robo.\"\nLevanto la vista hacia el prisionero. \"¿Eres inocente? ¿Te han encarcelado injustamente?\"\n{Perspicacia}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 22
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "\"Veinte... ¿Esto es un albergue o una mazmorra?\"\nLe echo un vistazo al prisionero. No parece un delincuente común.\n\"Pues nada, trato hecho. Aquí tienes tus veinte.\"\n{Persuasión}\nLe entrego las monedas al carcelero y espero a que nos deje solos con el prisionero.\n\nUna vez que estemos solos, me acerco a él y le pregunto en voz baja:\n\"Oye, tú. ¿Qué hacías en ese túnel? No parece que seas un bandido cualquiera.\n¿Sabes algo que valga más que estas veinte coronas?\n{Perspicacia}\nSi me cuenta algo interesante, podría ser mi billete para salir de aquí con algo más que el pellejo...",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión",
+          "Perspicacia"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 102
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"Veinte coronas es un robo.\" Le lanzo una mirada furiosa al carcelero.\n\"No me eches para abajo, Maelis.\" Me doy la vuelta y miro al prisionero.\n\"¿Cuál es tu historia? ¿Por qué estás aquí?\"\n\nEspero su respuesta, tratando de calibrar si dice la verdad o no. Estoy decidida a averiguar la verdad de lo que está pasando aquí, sin importar qué tan incómodo pueda ser para algunos. Si este hombre es inocente, no merece estar encerrado así.",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 77
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "Me acerco al posadero.\n\"¿Cómo está la cerveza por aquí?\"\nEcho un vistazo a la sala, a ver si hay alguien que necesite un poco de consuelo o una oreja amiga en un día como este.",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 36
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "\"¿Cuánto por una habitación para esta noche? Con llave.\"\n\nMe acerco al mostrador y espero la respuesta, sin quitar ojo al posadero. Miro alrededor, buscando algo que llame la atención.",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 30
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"No puedo dejar de pensar en lo que pasó antes... Tengo que averiguar qué está pasando aquí.\"\n\nMe acerco al posadero y le pregunto:\n\"Oye, ¿por qué está todo el mundo tan callado hoy? ¿Ha pasado algo raro por aquí?\"\n\n{Persuasión}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 41
+      }
+    }
+  ]
+}

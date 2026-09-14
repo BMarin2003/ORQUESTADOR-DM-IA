@@ -1,0 +1,159 @@
+{
+  "_nota": "PNJs estructurados de Rocabella (Par 03). Mismo formato que fixtures/personas.json (Par 01) -- ver ejemplo de Ordulf Bec ahí para el esquema completo.",
+
+  "bramble_woth": {
+    "_arquetipo": "Burócrata bienintencionado que confunde el papeleo con seguridad. Obstáculo cómico tipo A.",
+    "name": "Capitán Bramble Woth",
+    "species": "humano",
+    "social_role": "jefe de la guardia de Rocabella, autoproclamado responsable del orden durante el festival",
+    "appearance": "Bajo, con un uniforme dos tallas grande y un portapapeles que no suelta ni para comer, siempre con un formulario nuevo a medio inventar.",
+    "location": "plaza_festival",
+    "status": "alive",
+    "personality": {
+      "warmth": 20,
+      "candor": 40,
+      "principle": 70,
+      "boldness": -20
+    },
+    "traits": ["obsesionado con el procedimiento", "bienintencionado", "fácil de despistar con formalidades"],
+    "internal_contradiction": "Cree que seguir el reglamento al pie de la letra evita el caos, y cada regla nueva que inventa sobre la marcha genera más caos.",
+    "taboos": ["saltarse un formulario", "dejar pasar a alguien sin registrar su nombre primero"],
+    "voice_notes": "Habla citando reglamentos que se está inventando en el momento: 'Según el artículo... el que yo diga, no se puede entrar al huerto sin permiso escrito.' Se pone nervioso y tartamudea cuando alguien le hace una pregunta directa que no tiene procedimiento.",
+    "stated_desire": "Que el festival termine sin ningún incidente registrado en su reporte.",
+    "actual_need": "Que alguien le demuestre que puede improvisar sin que el pueblo se le venga encima.",
+    "fear": "Que lo culpen a él de haber dejado robar la Calabaza Colosal por no vigilar bien.",
+    "ibf": {
+      "ideal_text": "Un formulario bien llenado es la diferencia entre el orden y el caos.",
+      "ideal_tags": ["orden", "procedimiento"],
+      "bond_text": "Este es mi primer año como capitán de la guardia en un festival -- no pienso ser el que lo arruinó.",
+      "bond_strength": 60,
+      "bond_targets": [
+        {"type": "location", "key": "plaza_festival"}
+      ],
+      "flaw_text": "Se aferra a la burocracia incluso cuando claramente está estorbando, y no lo nota hasta que alguien se lo señala con paciencia.",
+      "flaw_tags": ["rigidez", "inseguridad"],
+      "flaw_exploit": "ofrecerle_ayudar_a_llenar_el_reporte_correctamente"
+    },
+    "disposition": {
+      "affinity": 10,
+      "trust": 0,
+      "respect": 20,
+      "trust_ceiling": 70,
+      "_nota_topes": "Coopera rápido si lo tratan con respeto formal y le dejan sentir que sigue al mando; se cierra si lo pasan por encima o se burlan de sus reglas."
+    },
+    "knowledge": [
+      {"fact": "Él mismo organizó los turnos de vigilancia del huerto la noche que desapareció la calabaza", "learned_at_turn": 0},
+      {"fact": "El último turno de vigilancia fue cubierto por un aprendiz del Gremio de Panaderos, algo que no quiere admitir en voz alta", "learned_at_turn": 0}
+    ],
+    "secrets": [
+      {
+        "content": "El aprendiz de guardia esa noche se quedó dormido -- Bramble lo sabe y lo está encubriendo por miedo a que el escándalo hunda su primer año como capitán.",
+        "reveal_condition": "Solo si alguien gana su confianza formal (ayudándolo con el reporte, tratándolo como autoridad legítima) y le asegura que no lo va a delatar públicamente.",
+        "visibility": "dm_only"
+      }
+    ],
+    "modula_respect_por": "trato formal y respeto aparente a su autoridad, no por resultados"
+  },
+
+  "mireia_tossel": {
+    "_arquetipo": "Granjera dramática y directa, motor ruidoso de la trama visible. Acusa a gritos pero no está del todo equivocada.",
+    "name": "Mireia Tossel",
+    "species": "humano",
+    "social_role": "granjera, cultivadora legítima de la Calabaza Colosal",
+    "appearance": "Fuerte, con las manos siempre manchadas de tierra, y una voz que se oye desde la otra punta de la plaza cuando se enoja -- que es seguido, esta semana.",
+    "location": "huerto_calabaza",
+    "status": "alive",
+    "personality": {
+      "warmth": 50,
+      "candor": 90,
+      "principle": 60,
+      "boldness": 80
+    },
+    "traits": ["dramática", "terca", "leal a los suyos"],
+    "internal_contradiction": "Acusa al Gremio de Panaderos de todo sin pruebas, mientras ignora pistas más raras y menos convenientes justo frente a ella.",
+    "taboos": ["dejar que alguien hable mal de su calabaza sin defenderla"],
+    "voice_notes": "Habla en frases cortas y exclamativas, siempre subiendo el tono: '¡Tres años cultivando esa calabaza! ¡TRES!' Interrumpe a cualquiera que intente defender al Gremio de Panaderos.",
+    "stated_desire": "Recuperar la Calabaza Colosal a tiempo para el juicio y ganar por fin la Cinta Dorada.",
+    "actual_need": "Que alguien le demuestre, con calma, que no toda esta historia es culpa del Gremio -- para poder dejar de estar tan enojada todo el tiempo.",
+    "fear": "Que este sea el año que finalmente pierde frente al Gremio de Panaderos, otra vez.",
+    "ibf": {
+      "ideal_text": "El trabajo honesto merece ganar limpio.",
+      "ideal_tags": ["honestidad", "esfuerzo"],
+      "bond_text": "Esa calabaza es de mi huerto, de mi tierra, de tres años de trabajo -- no de nadie más.",
+      "bond_strength": 85,
+      "bond_targets": [
+        {"type": "location", "key": "huerto_calabaza"}
+      ],
+      "flaw_text": "Salta a conclusiones y acusa antes de tener pruebas, lo que le cierra puertas que le convendría mantener abiertas.",
+      "flaw_tags": ["impulsividad"],
+      "flaw_exploit": "mostrarle_evidencia_concreta_que_contradiga_su_teoria"
+    },
+    "disposition": {
+      "affinity": 30,
+      "trust": 20,
+      "respect": 10,
+      "trust_ceiling": 75,
+      "_nota_topes": "Se abre rápido a quien la ayude activamente a buscar la calabaza; desconfía de cualquiera que parezca defender al Gremio de Panaderos sin más."
+    },
+    "knowledge": [
+      {"fact": "Ella misma revisó el huerto al anochecer y la calabaza seguía ahí, intacta", "learned_at_turn": 0},
+      {"fact": "El Gremio de Panaderos anunció un pastel de calabaza para el festival antes de que la suya desapareciera", "learned_at_turn": 0}
+    ],
+    "secrets": [],
+    "modula_respect_por": "acción concreta a favor de encontrar la calabaza, no por palabras de consuelo"
+  },
+
+  "ferro_el_cabrero": {
+    "_arquetipo": "El que ya dejó de que le importe la política del pueblo. Fuente de exposición casi gratuita, tono indiferente y cómico por contraste.",
+    "name": "Ferro \"el Cabrero\"",
+    "species": "humano",
+    "social_role": "pastor de cabras, vive en las afueras de Rocabella",
+    "appearance": "Curtido por el sol, con una cabra favorita que lo sigue a todas partes y opiniones sobre absolutamente todo lo que no le importa a nadie más.",
+    "location": "valle_campanas",
+    "status": "alive",
+    "personality": {
+      "warmth": 30,
+      "candor": 85,
+      "principle": 10,
+      "boldness": 50
+    },
+    "traits": ["indiferente a la política del pueblo", "observador por aburrimiento", "cuenta lo que ve sin filtro"],
+    "internal_contradiction": "Sabe exactamente lo que pasó esa noche y le importa menos que a cualquiera en el pueblo, así que lo cuenta como quien comenta el clima.",
+    "taboos": ["que alguien insulte a sus cabras"],
+    "voice_notes": "Habla despacio, se distrae contando cosas de sus cabras a mitad de frase, y suelta la información importante como si no lo fuera: 'Ah, sí, vi a alguien empujando algo grande esa noche. ¿Vieron que mi cabra Petunia también sabe silbar?'",
+    "stated_desire": "Que sus cabras coman tranquilas y nadie le pida opinión sobre el festival.",
+    "actual_need": "Que alguien lo escuche de verdad por una vez, en vez de tratarlo como decoración del pueblo.",
+    "fear": "Ninguno relevante al festival -- le preocupa mucho más que a su cabra Petunia le dé por comerse los listones del festival otra vez.",
+    "ibf": {
+      "ideal_text": "Nada de esto importa tanto como la gente cree que importa.",
+      "ideal_tags": ["desapego", "perspectiva"],
+      "bond_text": "Mis cabras y yo llevamos veinte años viendo este pueblo hacer un drama de todo cada otoño.",
+      "bond_strength": 40,
+      "bond_targets": [
+        {"type": "location", "key": "valle_campanas"}
+      ],
+      "flaw_text": "Cuenta lo que sabe con tan poco esfuerzo que nunca se le ocurre que la información podría ser valiosa o peligrosa para alguien.",
+      "flaw_tags": ["ingenuidad", "indiscreción"],
+      "flaw_exploit": "simplemente_preguntarle_directamente_que_vio_esa_noche"
+    },
+    "disposition": {
+      "affinity": 15,
+      "trust": 50,
+      "respect": 0,
+      "trust_ceiling": 65,
+      "_nota_topes": "Casi no hay resistencia -- cuenta lo que sabe con solo que alguien se detenga a escucharlo, no necesita ganárselo."
+    },
+    "knowledge": [
+      {"fact": "Vio a alguien empujando algo grande y redondo en dirección al Gremio de Panaderos la noche que desapareció la calabaza", "learned_at_turn": 0},
+      {"fact": "También vio que esa misma persona volvió corriendo poco después SIN la calabaza, en dirección contraria", "learned_at_turn": 0}
+    ],
+    "secrets": [
+      {
+        "content": "Lo que Ferro vio fue al aprendiz de guardia de Bramble intentando esconder la calabaza como broma para sus compañeros del Gremio, tropezando y dejándola rodar hasta el sótano de la Posada del Buen Trigo, donde sigue ahora mismo, intacta.",
+        "reveal_condition": "Casi ninguna resistencia -- lo cuenta con poco esfuerzo si alguien simplemente se sienta a escucharlo, no necesita ganárselo con presión ni regalos.",
+        "visibility": "party"
+      }
+    ],
+    "modula_respect_por": "casi nada le genera respeto o falta de él; hace veinte años que dejó de tomarse en serio la jerarquía del pueblo"
+  }
+}

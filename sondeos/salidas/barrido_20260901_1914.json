@@ -1,0 +1,73 @@
+{
+  "modelo": "google/gemma-4-31B-it",
+  "turnos": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06",
+    "T07",
+    "T08",
+    "T09",
+    "T10",
+    "T11",
+    "T12",
+    "T13",
+    "T14",
+    "T15",
+    "T16",  
+    "T17",
+    "T18",
+    "T19",
+    "T20"
+  ],
+  "condiciones": [
+    {
+      "id": "quest:peaje_falso:completed",
+      "tipo": "mision",
+      "texto": "El grupo entrega a la Sargento Brea pruebas materiales del cobro nocturno (fichas, registros o testimonio verificable)."
+    },
+    {
+      "id": "quest:molino:completed",
+      "tipo": "mision",
+      "texto": "El grupo descubre y reporta quién usa el molino viejo y para qué."
+    },
+    {
+      "id": "secret:ordulf:0",
+      "tipo": "secreto",
+      "texto": "Solo si alguien le demuestra que el Gremio ya sospecha de ÉL, y ofrecerle a Hettir es la única salida."
+    },
+    {
+      "id": "secret:brea:0",
+      "tipo": "secreto",
+      "texto": "Se lo cuenta a quien le haya demostrado con hechos que se preocupa por los vendedores, y solo si le preguntan directamente."
+    },
+    {
+      "id": "promesa:0",
+      "tipo": "compromiso",
+      "texto": "El grupo se comprometió a ir a hablar con Herda, la vendedora del Mercado Bajo."
+    },
+    {
+      "id": "promesa:1",
+      "tipo": "compromiso",
+      "texto": "El grupo se comprometió a traer a Brea las fichas del peaje nocturno como prueba."
+    }
+  ],
+  "respuesta_cruda": "{\"cumplidas\": [[\"quest:peaje_falso:completed\", {\"turno\": \"[T16]\", \"evidence\": \"Le entrego a Brea las tres fichas de peaje nocturno que le quitamos a Hettir, con la marca del Gremio raspada.\"}], [\"secret:brea:0\", {\"turno\": \"[T13]\", \"evidence\": \"saca un papel doblado cuatro veces, con el sello del Gremio ya roto. \\\"Porque la orden la tengo yo. Firmada hace tres semanas.\\\"\"}], [\"promesa:0\", {\"resultado\": \"incumplida\", \"turno\": \"[T14]\", \"evidence\": \"Al final no fuimos a hablar con Herda. Se nos pasó.\"}]]}",
+  "cumplidas": [],
+  "rechazadas": [
+    [
+      "quest:peaje_falso:completed",
+      "sin cita — no se puede verificar"
+    ],
+    [
+      "secret:brea:0",
+      "sin cita — no se puede verificar"
+    ],
+    [
+      "promesa:0",
+      "sin cita — no se puede verificar"
+    ]
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "modelo": "NousResearch/Hermes-3-Llama-3.1-70B",
+  "fecha": "2026-09-02T09:43:12.884134",
+  "fallos": {
+    "dado_inventado": 0,
+    "narra_mundo": 0,
+    "decide_resultado": 0,
+    "meta": 0,
+    "razono": 0,
+    "vacio": 0
+  },
+  "registro": [
+    {
+      "escena": "E1",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "\"El capitán puede esperar. No pienso apresurarme por él.\"\n\nMe acerco al vendedor del puesto de mapas.\n\"¿Cuánto pides por los mapas más antiguos que tengas?\"\n{Perspicacia para detectar si hay algo valioso o importante entre ellos}",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 37
+      }
+    },
+    {
+      "escena": "E1",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "\"Un momento, espera.\" Le paro al mensajero antes de que se vaya.\n{Persuasión} \"¿Qué pasa con el puente? ¿Por qué nos necesita tan urgentemente?\"\nMiro hacia el puesto de mapas viejos y me pregunto si podrían ser valiosos.\n\"Oye, ¿y esos mapas? ¿Cuánto pides por ellos?\"",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 46
+      }
+    },
+    {
+      "escena": "E1",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"El capitán puede esperar. No voy a correr por un capricho suyo.\"\nMe acerco al vendedor de mapas. \"¿Cuánto por uno de esos mapas? Me interesan los alrededores de la ciudad.\"\n{Persuasión}",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 32
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "\"¡Veinte coronas por un prisionero inocente! ¿Cómo se llama esto sino corrupción? No, no participaré en esto.\"\n\nMe niego a pagar y me doy la vuelta para marcharme. Antes de irme, me acerco al prisionero y le susurro: \"No te preocupes, buscaré la manera de sacarte de aquí por el bien de la justicia.\"\n\n{Persuasión}",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 55
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "\"Veinte coronas, dices. ¿Y si no tengo efectivo? ¿Qué hay de trueque? Me suena que valoras ciertos... conocimientos.\"\n\nMe acerco al carcelero y en voz baja, para que el prisionero no me oiga, empiezo a mencionar nombres y lugares que he oído en mis andanzas. Cosas que a lo mejor él no sabe. Mientras hablo, voy sacando mapas y notas de mi zurrón, como si tuviera información valiosa que intercambiar.\n\n{Persuasión}\n{Soborno}",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión",
+          "Soborno"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 72
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"Veinte coronas es mucho para un prisionero cualquiera. ¿Qué hace este tipo aquí?\"\n\nMe acerco a la reja y observo al hombre detenidamente.\n{Perspicacia}",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 24
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "\"¿Hay alguien aquí que necesite la ayuda de la diosa de la ley?\"\n\nMe paseo entre las mesas vacías, buscando con la mirada a alguien que pueda necesitar mi ayuda o orientación.",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 32
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "Me acerco a una de las pocas mesas ocupadas, donde hay un par de mercaderes con aspecto de estar pasando la noche aquí. Me siento a su lado sin preguntar y pregunto:\n\n\"Oye, ¿sabéis si hay algo interesante por aquí cerca? ¿Algún lugar que valga la pena visitar, o algún rumor que no se sepa en todas partes?\"\n\n{Persuasión}",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 59
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"¿Cuál es el plan, Maelis? No podemos quedarnos aquí para siempre.\"\n\nMe acerco a la ventana y observo la calle mojada, tratando de ver algo que nos indique qué hacer a continuación.",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 32
+      }
+    }
+  ]
+}

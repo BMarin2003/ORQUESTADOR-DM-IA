@@ -1,0 +1,844 @@
+{
+  "_generado": "generar_personajes.py, semilla 20260901",
+  "_n": 27,
+  "personajes": [
+    {
+      "id": "PJ01",
+      "nombre": "Ilvard",
+      "arquetipo": "Paladín de juramento",
+      "clase": "paladín",
+      "nivel": 3,
+      "trasfondo": "forastero",
+      "personalidad": {
+        "warmth": 45,
+        "candor": 85,
+        "principle": 92,
+        "boldness": 70
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Dejar el sitio mejor de como lo encontró, aunque nadie lo agradezca.",
+        "Que se sepa la verdad de lo que pasa aquí, le convenga a quien le convenga.",
+        "Estar a la altura de lo que se espera de alguien de su posición."
+      ],
+      "desvio": 25,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "De acuerdo, iré de inmediato. No se preocupen, resolveré esto.",
+        "propio": "Creo que es importante que investiguemos más a fondo lo que está pasando aquí. Propongo que hablemos con los locales y busquemos pistas.",
+        "vacia": "Esto es una oportunidad perfecta para practicar un poco con mi arma. ¿Alguien se une a mí para un entrenamiento rápido?"
+      }
+    },
+    {
+      "id": "PJ02",
+      "nombre": "Senna",
+      "arquetipo": "Clériga de la ley",
+      "clase": "clérigo",
+      "nivel": 3,
+      "trasfondo": "artesano",
+      "personalidad": {
+        "warmth": 30,
+        "candor": 75,
+        "principle": 88,
+        "boldness": 40
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Dejar el sitio mejor de como lo encontró, aunque nadie lo agradezca.",
+        "Que se sepa la verdad de lo que pasa aquí, le convenga a quien le convenga.",
+        "Estar a la altura de lo que se espera de alguien de su posición."
+      ],
+      "desvio": 20,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "De acuerdo, iré de inmediato. Pero quiero que se sepa que no estoy contento con esto.",
+        "propio": "Hay algo más aquí, lo siento. Debo investigar esto más a fondo, aunque no sea popular.",
+        "vacia": "Vamos a ver si encontramos algo útil aquí. No podemos permitirnos perder el tiempo."
+      }
+    },
+    {
+      "id": "PJ03",
+      "nombre": "Torvald",
+      "arquetipo": "Guardián del bosque",
+      "clase": "explorador",
+      "nivel": 3,
+      "trasfondo": "soldado",
+      "personalidad": {
+        "warmth": 55,
+        "candor": 60,
+        "principle": 75,
+        "boldness": 55
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Dejar el sitio mejor de como lo encontró, aunque nadie lo agradezca.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "Proteger a alguien concreto que no puede protegerse solo."
+      ],
+      "desvio": 45,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "Voy, pero me aseguraré de que mi tarea no quede olvidada. Iré al sitio y luego volveré a ocuparme de esto.",
+        "propio": "Veo algo que no está bien aquí. Voy a investigar qué está pasando de verdad.",
+        "vacia": "Propuesta: explorar un poco más para ver si encontramos algo interesante."
+      }
+    },
+    {
+      "id": "PJ04",
+      "nombre": "Maelis",
+      "arquetipo": "Caballera caída",
+      "clase": "guerrero",
+      "nivel": 3,
+      "trasfondo": "criminal",
+      "personalidad": {
+        "warmth": 20,
+        "candor": 55,
+        "principle": 60,
+        "boldness": 75
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Dejar el sitio mejor de como lo encontró, aunque nadie lo agradezca.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "Enfrentarse a algo que le dé miedo, para comprobar que puede."
+      ],
+      "desvio": 40,
+      "deriva": {
+        "eje": "principle",
+        "por_sesion": -2
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
+      "ejemplares": {
+        "urgente": "Voy, pero me niego a pasar por alto esto. {Perspicacia} para detectar algo sospechoso aquí antes de irme.",
+        "propio": "Hay algo más en esto, lo siento. Voy a investigar más a fondo. {Investigación} para buscar pistas.",
+        "vacia": "Esto no está bien. Propongo que registremos la sala en busca de algo fuera de lugar. {Percepción} para inspeccionar la habitación."
+      }
+    },
+    {
+      "id": "PJ05",
+      "nombre": "Corvin",
+      "arquetipo": "Bardo de causa justa",
+      "clase": "bardo",
+      "nivel": 3,
+      "trasfondo": "acólito",
+      "personalidad": {
+        "warmth": 70,
+        "candor": 40,
+        "principle": 65,
+        "boldness": 80
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Dejar el sitio mejor de como lo encontró, aunque nadie lo agradezca.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "Enfrentarse a algo que le dé miedo, para comprobar que puede."
+      ],
+      "desvio": 55,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "De acuerdo, iré de inmediato. Pero antes, voy a echar un vistazo a esos documentos que mencionaste.",
+        "propio": "He oído rumores de que hay algo siniestro en esa antigua biblioteca. Voy a investigar.",
+        "vacia": "Esta sala parece aburrida. ¿Qué tal si improvisamos una pequeña actuación para animar el ambiente?"
+      }
+    },
+    {
+      "id": "PJ06",
+      "nombre": "Yarah",
+      "arquetipo": "Mercenaria pragmática",
+      "clase": "guerrero",
+      "nivel": 3,
+      "trasfondo": "noble",
+      "personalidad": {
+        "warmth": 0,
+        "candor": -20,
+        "principle": 5,
+        "boldness": 65
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Conseguir estabilidad: dinero, un techo, alguien de fiar.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "No volver a estar en deuda con nadie."
+      ],
+      "desvio": 60,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "De acuerdo, iré. Pero antes, voy a echar un vistazo a esos documentos que mencionaste. {Investigación} No sé, tengo un mal presentimiento.",
+        "propio": "Disculpadme un momento, pero creo que he visto algo relacionado con mi investigación. Voy a seguir esta pista mientras puedo.",
+        "vacia": "Está bien, esto se está poniendo denso. Propongo que sigamos adelante y veamos si encontramos algo interesante. ¿Alguien sabe qué hay más allá de esta sala?"
+      }
+    },
+    {
+      "id": "PJ07",
+      "nombre": "Dunmar",
+      "arquetipo": "Ladrón con código",
+      "clase": "pícaro",
+      "nivel": 3,
+      "trasfondo": "huérfano",
+      "personalidad": {
+        "warmth": 25,
+        "candor": -40,
+        "principle": 35,
+        "boldness": 70
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Conseguir estabilidad: dinero, un techo, alguien de fiar.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "No volver a estar en deuda con nadie."
+      ],
+      "desvio": 65,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "Vale, voy para allá. Pero antes necesito echar un vistazo aquí.",
+        "propio": "Esto puede ser interesante. Voy a investigar un poco más.",
+        "vacia": "Esto está demasiado tranquilo para mi gusto. Vamos a ver qué encontramos."
+      }
+    },
+    {
+      "id": "PJ08",
+      "nombre": "Reia",
+      "arquetipo": "Mago calculador",
+      "clase": "mago",
+      "nivel": 3,
+      "trasfondo": "marinero",
+      "personalidad": {
+        "warmth": -20,
+        "candor": 10,
+        "principle": 20,
+        "boldness": 30
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Conseguir estabilidad: dinero, un techo, alguien de fiar.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "No volver a estar en deuda con nadie."
+      ],
+      "desvio": 50,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "De acuerdo, iré. Pero primero voy a echar un vistazo a esos documentos que mencionaste.",
+        "propio": "Creo que esa carta puede darnos pistas sobre qué está pasando aquí. Voy a estudiarla con calma.",
+        "vacia": "¿Qué tal si exploramos un poco más este pasillo? Puede que encontremos algo interesante o útil."
+      }
+    },
+    {
+      "id": "PJ09",
+      "nombre": "Aldric",
+      "arquetipo": "Contrabandista amable",
+      "clase": "pícaro",
+      "nivel": 3,
+      "trasfondo": "erudito",
+      "personalidad": {
+        "warmth": 60,
+        "candor": -55,
+        "principle": -5,
+        "boldness": 60
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Conseguir estabilidad: dinero, un techo, alguien de fiar.",
+        "Averiguar algo que nadie más sepa y guardárselo hasta que valga.",
+        "Proteger a alguien concreto que no puede protegerse solo."
+      ],
+      "desvio": 70,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "Iré, pero antes necesito un momento para algo importante aquí.",
+        "propio": "Disculpadme un segundo, creo que he visto algo interesante por aquí.",
+        "vacia": "¿Qué tal si echamos un vistazo a ver si encontramos algo curioso por aquí?"
+      }
+    },
+    {
+      "id": "PJ10",
+      "nombre": "Bexa",
+      "arquetipo": "Cazarrecompensas neutral",
+      "clase": "explorador",
+      "nivel": 3,
+      "trasfondo": "forastero",
+      "personalidad": {
+        "warmth": -10,
+        "candor": 20,
+        "principle": 15,
+        "boldness": 70
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Conseguir estabilidad: dinero, un techo, alguien de fiar.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "No volver a estar en deuda con nadie."
+      ],
+      "desvio": 55,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "Voy para allá, pero antes quiero echar un vistazo a esto. {Percepción}",
+        "propio": "Creo que puedo sacar algo en claro de esto. {Investigación}",
+        "vacia": "No sé vosotros, pero yo voy a ver si encuentro algo interesante por aquí. {Exploración}"
+      }
+    },
+    {
+      "id": "PJ11",
+      "nombre": "Solvei",
+      "arquetipo": "Erudita obsesiva",
+      "clase": "mago",
+      "nivel": 3,
+      "trasfondo": "artesano",
+      "personalidad": {
+        "warmth": 5,
+        "candor": 50,
+        "principle": 25,
+        "boldness": 35
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Conseguir estabilidad: dinero, un techo, alguien de fiar.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "No volver a estar en deuda con nadie."
+      ],
+      "desvio": 80,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "Está bien, iré. Pero antes voy a echar un vistazo a esos libros.",
+        "propio": "Estos documentos parecen antiguos. Los examinaré con calma.",
+        "vacia": "¿Alguien sabe qué hace esa estatua aquí? Parece interesante."
+      }
+    },
+    {
+      "id": "PJ12",
+      "nombre": "Harn",
+      "arquetipo": "Superviviente del camino",
+      "clase": "bárbaro",
+      "nivel": 3,
+      "trasfondo": "soldado",
+      "personalidad": {
+        "warmth": 15,
+        "candor": -10,
+        "principle": 0,
+        "boldness": 55
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Conseguir estabilidad: dinero, un techo, alguien de fiar.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "No volver a estar en deuda con nadie."
+      ],
+      "desvio": 60,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "Voy, pero quiero echar un vistazo aquí primero. \nMe acerco con precaución al lugar que me interesa, buscando pistas. \n{Percepción}",
+        "propio": "Esto parece prometedor. Me pongo a indagar discretamente sobre lo que está pasando aquí. \n{Investigación}",
+        "vacia": "Está bien, pero yo voy a echar un vistazo por si encuentro algo útil. \nMe pongo a registrar la sala con cuidado. \n{Percepción}"
+      }
+    },
+    {
+      "id": "PJ13",
+      "nombre": "Mirek",
+      "arquetipo": "Antihéroe vengativo",
+      "clase": "bárbaro",
+      "nivel": 3,
+      "trasfondo": "criminal",
+      "personalidad": {
+        "warmth": -30,
+        "candor": -60,
+        "principle": 45,
+        "boldness": 90
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Conseguir estabilidad: dinero, un techo, alguien de fiar.",
+        "Averiguar algo que nadie más sepa y guardárselo hasta que valga.",
+        "Enfrentarse a algo que le dé miedo, para comprobar que puede."
+      ],
+      "desvio": 70,
+      "deriva": {
+        "eje": "warmth",
+        "por_sesion": 2
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
+      "ejemplares": {
+        "urgente": "Voy, pero antes tengo que hacer una cosa. Os alcanzo en seguida.",
+        "propio": "Algo aquí no encaja. Voy a echar un vistazo más de cerca. {Investigación}",
+        "vacia": "Esto es un aburrimiento. ¿Alguien quiere pelear un rato para calentarse?"
+      }
+    },
+    {
+      "id": "PJ14",
+      "nombre": "Vessa",
+      "arquetipo": "Espía de dos caras",
+      "clase": "pícaro",
+      "nivel": 3,
+      "trasfondo": "acólito",
+      "personalidad": {
+        "warmth": 10,
+        "candor": -85,
+        "principle": 30,
+        "boldness": 50
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Conseguir estabilidad: dinero, un techo, alguien de fiar.",
+        "Averiguar algo que nadie más sepa y guardárselo hasta que valga.",
+        "No volver a estar en deuda con nadie."
+      ],
+      "desvio": 75,
+      "deriva": {
+        "eje": "candor",
+        "por_sesion": 3
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
+      "ejemplares": {
+        "urgente": "Tengo que ir, pero antes debo hacer una cosa rápidamente. {Sigilo} Me escabullo y aprovecho para echar un vistazo a ese documento que he visto sobre la mesa.",
+        "propio": "Creo que he visto algo interesante en aquella estantería. {Investigación} Examino los libros con atención, buscando algo que pueda serme útil más adelante.",
+        "vacia": "Esta sala es un aburrimiento. {Interpretación} Empezaré a contar una historia interesante para animar un poco el ambiente y ver si alguien sabe algo que me sea útil."
+      }
+    },
+    {
+      "id": "PJ15",
+      "nombre": "Otto",
+      "arquetipo": "Bruja del pacto",
+      "clase": "brujo",
+      "nivel": 3,
+      "trasfondo": "noble",
+      "personalidad": {
+        "warmth": -25,
+        "candor": -30,
+        "principle": 40,
+        "boldness": 60
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Conseguir estabilidad: dinero, un techo, alguien de fiar.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "No volver a estar en deuda con nadie."
+      ],
+      "desvio": 65,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "Está bien, iré. Pero antes necesito echar un vistazo a esos documentos. No voy a dejarlo así. {Investigación}",
+        "propio": "Esta zona parece prometedora. Voy a buscar pistas sobre qué está pasando realmente aquí. {Investigación} {Percepción}",
+        "vacia": "Vamos a echar un vistazo por aquí, a ver si encontramos algo interesante. No me gusta estar parado sin hacer nada. {Percepción}"
+      }
+    },
+    {
+      "id": "PJ16",
+      "nombre": "Lianne",
+      "arquetipo": "Inquisidor implacable",
+      "clase": "paladín",
+      "nivel": 3,
+      "trasfondo": "huérfano",
+      "personalidad": {
+        "warmth": -45,
+        "candor": 70,
+        "principle": 80,
+        "boldness": 75
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Dejar el sitio mejor de como lo encontró, aunque nadie lo agradezca.",
+        "Que se sepa la verdad de lo que pasa aquí, le convenga a quien le convenga.",
+        "Enfrentarse a algo que le dé miedo, para comprobar que puede."
+      ],
+      "desvio": 35,
+      "deriva": {
+        "eje": "principle",
+        "por_sesion": -3
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
+      "ejemplares": {
+        "urgente": "Voy. Pero después me toca a mí decidir.",
+        "propio": "Hay que investigar esto. No me importa si no es urgente para vosotros.",
+        "vacia": "Esto es una pérdida de tiempo. Propongo que sigamos moviéndonos."
+      }
+    },
+    {
+      "id": "PJ17",
+      "nombre": "Garrek",
+      "arquetipo": "Médica de guerra",
+      "clase": "clérigo",
+      "nivel": 3,
+      "trasfondo": "marinero",
+      "personalidad": {
+        "warmth": 65,
+        "candor": 45,
+        "principle": 55,
+        "boldness": 30
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Dejar el sitio mejor de como lo encontró, aunque nadie lo agradezca.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "Proteger a alguien concreto que no puede protegerse solo."
+      ],
+      "desvio": 50,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "Voy, pero antes revisaré esto. No debería llevar mucho.",
+        "propio": "Disculpadme un momento, voy a echar un vistazo a esto.",
+        "vacia": "¿Qué tal si echamos un vistazo por aquí? Puede que encontremos algo interesante."
+      }
+    },
+    {
+      "id": "PJ18",
+      "nombre": "Nadia",
+      "arquetipo": "Oportunista sin bandera",
+      "clase": "pícaro",
+      "nivel": 3,
+      "trasfondo": "erudito",
+      "personalidad": {
+        "warmth": -35,
+        "candor": -70,
+        "principle": -45,
+        "boldness": 65
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Salir de aquí con más de lo que trajo, sin importar cómo.",
+        "Averiguar algo que nadie más sepa y guardárselo hasta que valga.",
+        "No volver a estar en deuda con nadie."
+      ],
+      "desvio": 85,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "No me convence. Deme una razón mejor para ir corriendo ahí.",
+        "propio": "Creo que esa alfombra esconde algo. Voy a echar un vistazo.",
+        "vacia": "Qué aburrimiento. ¿Quién quiere apostar a ver quién bebe más?"
+      }
+    },
+    {
+      "id": "PJ19",
+      "nombre": "Bram",
+      "arquetipo": "Señor de la guerra",
+      "clase": "guerrero",
+      "nivel": 3,
+      "trasfondo": "forastero",
+      "personalidad": {
+        "warmth": -50,
+        "candor": -25,
+        "principle": -60,
+        "boldness": 95
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Salir de aquí con más de lo que trajo, sin importar cómo.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "Enfrentarse a algo que le dé miedo, para comprobar que puede."
+      ],
+      "desvio": 75,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "Voy, pero luego necesito un momento para mí. No se hable más.",
+        "propio": "Hay algo aquí que no me cuadra. Voy a echar un vistazo.",
+        "vacia": "Bueno, ¿y si nos tomamos un respiro para ver qué se nos ocurre?"
+      }
+    },
+    {
+      "id": "PJ20",
+      "nombre": "Kestra",
+      "arquetipo": "Estafador de sonrisa fácil",
+      "clase": "bardo",
+      "nivel": 3,
+      "trasfondo": "artesano",
+      "personalidad": {
+        "warmth": 40,
+        "candor": -90,
+        "principle": -55,
+        "boldness": 70
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Salir de aquí con más de lo que trajo, sin importar cómo.",
+        "Averiguar algo que nadie más sepa y guardárselo hasta que valga.",
+        "No volver a estar en deuda con nadie."
+      ],
+      "desvio": 80,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "Iré enseguida, pero antes tengo que recoger algo importante. {Persuasión}",
+        "propio": "Creo que he visto algo interesante en esa vitrina. Voy a echar un vistazo más de cerca. {Juego de Manos}",
+        "vacia": "Esta sala parece aburrida. ¿Por qué no organizamos una pequeña apuesta para hacer las cosas más emocionantes? {Interpretación}"
+      }
+    },
+    {
+      "id": "PJ21",
+      "nombre": "Elior",
+      "arquetipo": "Nigromante académico",
+      "clase": "mago",
+      "nivel": 3,
+      "trasfondo": "soldado",
+      "personalidad": {
+        "warmth": -60,
+        "candor": 15,
+        "principle": -40,
+        "boldness": 45
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Salir de aquí con más de lo que trajo, sin importar cómo.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "No volver a estar en deuda con nadie."
+      ],
+      "desvio": 70,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "Iré, pero primero voy a echar un vistazo a esos pergaminos que mencionaste. No creo que tarde mucho.",
+        "propio": "Creo que esos murales esconden algo, voy a examinarlos más de cerca.",
+        "vacia": "¿Qué hacemos aquí parados? Vamos a explorar esa ala norte que parece abandonada desde hace años."
+      }
+    },
+    {
+      "id": "PJ22",
+      "nombre": "Wynn",
+      "arquetipo": "Sicario metódico",
+      "clase": "pícaro",
+      "nivel": 3,
+      "trasfondo": "criminal",
+      "personalidad": {
+        "warmth": -70,
+        "candor": -50,
+        "principle": -70,
+        "boldness": 60
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Salir de aquí con más de lo que trajo, sin importar cómo.",
+        "Averiguar algo que nadie más sepa y guardárselo hasta que valga.",
+        "No volver a estar en deuda con nadie."
+      ],
+      "desvio": 55,
+      "deriva": null,
+      "_nota": null,
+      "ejemplares": {
+        "urgente": "Voy de inmediato. Pero antes, necesito recoger algo rápido.",
+        "propio": "Creo que ese cofre esconde algo más que comida. Voy a echar un vistazo.",
+        "vacia": "Qué aburrimiento. A ver si encuentro algo interesante por aquí..."
+      }
+    },
+    {
+      "id": "PJ23",
+      "nombre": "Tarq",
+      "arquetipo": "Fanático del culto",
+      "clase": "brujo",
+      "nivel": 3,
+      "trasfondo": "acólito",
+      "personalidad": {
+        "warmth": -55,
+        "candor": 35,
+        "principle": -30,
+        "boldness": 85
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Conseguir estabilidad: dinero, un techo, alguien de fiar.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "Enfrentarse a algo que le dé miedo, para comprobar que puede."
+      ],
+      "desvio": 45,
+      "deriva": {
+        "eje": "principle",
+        "por_sesion": -2
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
+      "ejemplares": {
+        "urgente": "Voy, pero antes reviso este pasillo que me da mala espina.",
+        "propio": "Voy a preguntar a ese anciano sobre el templo abandonado.",
+        "vacia": "Propongo que nos dividamos para registrar esta planta."
+      }
+    },
+    {
+      "id": "PJ24",
+      "nombre": "Isolde",
+      "arquetipo": "Huérfana de la frontera",
+      "clase": "explorador",
+      "nivel": 3,
+      "trasfondo": "noble",
+      "personalidad": {
+        "warmth": 30,
+        "candor": -15,
+        "principle": 10,
+        "boldness": 50
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Conseguir estabilidad: dinero, un techo, alguien de fiar.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "No volver a estar en deuda con nadie."
+      ],
+      "desvio": 65,
+      "deriva": {
+        "eje": "principle",
+        "por_sesion": 4
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
+      "ejemplares": {
+        "urgente": "De acuerdo, iré. Pero antes voy a echar un vistazo aquí.",
+        "propio": "Creo que he encontrado una pista sobre qué está pasando realmente aquí. Voy a investigar más a fondo.",
+        "vacia": "¿Alguien sabe qué hay en esa sala? Me ofrezco voluntario para ir a verlo."
+      }
+    },
+    {
+      "id": "PJ25",
+      "nombre": "Fenn",
+      "arquetipo": "Noble desheredado",
+      "clase": "guerrero",
+      "nivel": 3,
+      "trasfondo": "huérfano",
+      "personalidad": {
+        "warmth": 10,
+        "candor": 30,
+        "principle": 50,
+        "boldness": 45
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Conseguir estabilidad: dinero, un techo, alguien de fiar.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "No volver a estar en deuda con nadie."
+      ],
+      "desvio": 60,
+      "deriva": {
+        "eje": "principle",
+        "por_sesion": -4
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
+      "ejemplares": {
+        "urgente": "De acuerdo, iremos de inmediato. Pero primero quiero echar un vistazo a esos documentos que mencionaste.",
+        "propio": "Creo que esa información podría darnos una idea clara de qué está ocurriendo aquí. Sugiero que investiguemos un poco más.",
+        "vacia": "No podemos quedarnos de brazos cruzados. Propongo que hablemos con los locales y veamos si encontramos algún trabajo temporal. Podría ser una buena fuente de información."
+      }
+    },
+    {
+      "id": "PJ26",
+      "nombre": "Marta",
+      "arquetipo": "Devota con dudas",
+      "clase": "clérigo",
+      "nivel": 3,
+      "trasfondo": "marinero",
+      "personalidad": {
+        "warmth": 50,
+        "candor": 60,
+        "principle": 70,
+        "boldness": 35
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Dejar el sitio mejor de como lo encontró, aunque nadie lo agradezca.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "Estar a la altura de lo que se espera de alguien de su posición."
+      ],
+      "desvio": 55,
+      "deriva": {
+        "eje": "candor",
+        "por_sesion": -4
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
+      "ejemplares": {
+        "urgente": "De acuerdo, voy para allá. Pero antes, necesito echar un vistazo a estos pergaminos que he encontrado.",
+        "propio": "Creo que hay algo más en esta isla que lo que parece. Voy a investigar un poco más a fondo.",
+        "vacia": "¿Qué hacemos aquí parados? ¡Sigamos explorando, a ver qué encontramos!"
+      }
+    },
+    {
+      "id": "PJ27",
+      "nombre": "Osric",
+      "arquetipo": "Bárbaro que aprende",
+      "clase": "bárbaro",
+      "nivel": 3,
+      "trasfondo": "erudito",
+      "personalidad": {
+        "warmth": 35,
+        "candor": -35,
+        "principle": -20,
+        "boldness": 80
+      },
+      "ideal": null,
+      "vinculo": null,
+      "defecto": null,
+      "agenda": [
+        "Conseguir estabilidad: dinero, un techo, alguien de fiar.",
+        "Entender qué está pasando de verdad en este sitio.",
+        "Enfrentarse a algo que le dé miedo, para comprobar que puede."
+      ],
+      "desvio": 70,
+      "deriva": {
+        "eje": "warmth",
+        "por_sesion": 4
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
+      "ejemplares": {
+        "urgente": "De acuerdo, iré. Pero antes revisaré esto que he encontrado.",
+        "propio": "Interesante... creo que si investigo un poco más, entenderé mejor qué está pasando aquí.",
+        "vacia": "¿Qué hacemos aquí parados? Podríamos explorar un poco más, a ver si encontramos algo útil."
+      }
+    }
+  ],
+  "_ejemplares_modelo": "NousResearch/Hermes-3-Llama-3.1-70B"
+}

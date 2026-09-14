@@ -95,3 +95,11 @@ SALIDA (objeto):
 ```
 Cualquier campo sin contenido para este turno va como `null` o lista
 vacía -- no lo rellenes por completitud.
+
+`entity_type` es literal, en inglés y en minúsculas -- exactamente uno de:
+`npc`, `location`, `faction`, `quest`, `character`, `world`. Nunca en
+español (nada de "lugar", "personaje", "facción", "misión", "pnj"), nunca
+con mayúscula inicial. `entity_id` es el NOMBRE tal cual aparece en la
+base (no un id numérico ni inventado). El orquestador normaliza mayúsculas
+y algunos sinónimos comunes como red de seguridad, pero no lo des por
+sentado -- un valor fuera de esta lista igual puede tumbar el turno.

@@ -1,0 +1,333 @@
+{
+  "modelo": "NousResearch/Hermes-3-Llama-3.1-70B",
+  "fecha": "2026-09-02T16:25:02.660416",
+  "fallos": {
+    "dado_inventado": 0,
+    "narra_mundo": 1,
+    "decide_resultado": 0,
+    "meta": 0,
+    "habilidad_inventada": 0,
+    "autodirigirse": 0,
+    "plural_grupo": 0,
+    "condicional": 1,
+    "replica_pnj": 0,
+    "cita_al_dm": 1,
+    "recita_prompt": 1,
+    "razono": 0,
+    "vacio": 0
+  },
+  "registro": [
+    {
+      "escena": "E1",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "\"El capitán puede esperar un poco más. No me iré sin saber qué pasa aquí.\"\n\nMe acerco al vendedor de mapas con cara de curiosidad.\n{Perspicacia}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "replica_pnj": false,
+        "cita_al_dm": false,
+        "recita_prompt": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 26
+      }
+    },
+    {
+      "escena": "E1",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "\"El capitán puede esperar un poco más. No voy a dejar que me eche para arriba y para abajo como a un peón.\"\n\nMe acerco al vendedor de mapas con disimulo.\n\"Oye, ¿has oído algo sobre el puente? ¿Por qué tanta urgencia de repente?\"\n{Persuasión}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "replica_pnj": false,
+        "cita_al_dm": false,
+        "recita_prompt": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 45
+      }
+    },
+    {
+      "escena": "E1",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"¿Qué hace el vendedor con esos mapas tan raros?\" {Perspicacia} para ver si detecto algo extraño en él o en lo que vende. Luego, si no pasa nada preocupante, voy hacia donde el capitán me pide. Pero no me gustan los ultimátums. Le digo al mensajero que voy, pero que el capitán también tendrá que esperarme si tengo que resolver algo por el camino.",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": true,
+        "replica_pnj": false,
+        "cita_al_dm": false,
+        "recita_prompt": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 64
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "\"Veinte coronas es mucho por un simple prisionero. ¿Qué ha hecho este hombre para merecer semejante precio?\"\n\nMe acerco a la reja y observo al hombre detenidamente, buscando alguna pista sobre su verdadera naturaleza.\n\n{Perspicacia}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "replica_pnj": false,
+        "cita_al_dm": false,
+        "recita_prompt": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 35
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "\"Veinte coronas y la celda del fondo amanece abierta. Nadie pregunta, nadie firma nada.\" El carcelero mira a un lado y a otro antes de hablar.\n\nNo me convence. Deme una razón mejor para ir corriendo ahí. {Perspicacia}\n\n¿Qué hace aquí este hombre? {Persuasión}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "replica_pnj": false,
+        "cita_al_dm": true,
+        "recita_prompt": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia",
+          "Persuasión"
+        ],
+        "narra_mundo": true,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 44
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"¿Por qué está aquí este hombre?\" {Perspicacia}\nMe acerco a la celda y observo al prisionero de cerca. {Investigación} Busco algo que indique si es culpable o no.",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "replica_pnj": false,
+        "cita_al_dm": false,
+        "recita_prompt": true,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia",
+          "Investigación"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 28
+      }
+    },
+    {
+      "escena": "E4",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "\"De acuerdo, iré de inmediato. Pero quiero que se sepa que no estoy contento con esto.\"\nMonta el caballo que me ofrece y me dirijo al puente con el capitán, aunque no oculto mi descontento.",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "replica_pnj": false,
+        "cita_al_dm": false,
+        "recita_prompt": false,
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 35
+      }
+    },
+    {
+      "escena": "E4",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "\"¿Y eso? ¿Por qué tanta prisa de repente? No me convence. Deme una razón mejor para ir corriendo ahí.\" {Perspicacia}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "replica_pnj": false,
+        "cita_al_dm": false,
+        "recita_prompt": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 20
+      }
+    },
+    {
+      "escena": "E4",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"¿Por qué tanta prisa? ¿Qué está pasando?\" {Perspicacia} para notar si el capitán parece nervioso o preocupado.\n\nMonta el caballo que me ofrece y cabalga junto a él hacia el puente, pero sigue siendo escéptica y atenta a cualquier detalle fuera de lo común.",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "replica_pnj": false,
+        "cita_al_dm": false,
+        "recita_prompt": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 44
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "\"¿Hay algo para mí aquí?\" pregunto al posadero, tratando de llamar su atención.\n\nMe acerco al fuego y me caliento las manos. {Percepción} Miro alrededor, buscando algo que llame mi atención o que pueda ser útil. No me gusta este ambiente tan sombrío.",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "replica_pnj": false,
+        "cita_al_dm": false,
+        "recita_prompt": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Percepción"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 43
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "\"Qué aburrimiento. ¿Quién quiere apostar a ver quién bebe más?\" Me siento en una mesa y llamo al posadero para pedir una ronda.\n\nMiro alrededor buscando a alguien que tenga pinta de saber algo interesante. {Perspicacia}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "replica_pnj": false,
+        "cita_al_dm": false,
+        "recita_prompt": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 36
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"Algo no está bien aquí.\" Me acerco al posadero. \"Oye, ¿qué pasa? ¿Por qué está todo el mundo tan callado?\" {Perspicacia} para notar cualquier cosa sospechosa en su comportamiento o en la taberna.",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "autodirigirse": false,
+        "plural_grupo": false,
+        "condicional": false,
+        "replica_pnj": false,
+        "cita_al_dm": false,
+        "recita_prompt": false,
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 33
+      }
+    }
+  ]
+}

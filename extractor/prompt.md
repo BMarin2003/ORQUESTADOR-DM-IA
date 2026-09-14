@@ -13,6 +13,11 @@ sin markdown, sin ```.
   "deltas": [
     {"entity": "<clave>", "entity_type": "<tipo>", "field": "<nombre>",
      "value": <valor>, "evidence": "<cita literal>", "witnessed": <true|false>}
+  ],
+  "creaciones": [
+    {"entity_type": "<tipo>", "name": "<nombre propio>",
+     "descripcion": "<una línea>", "dentro_de": "<clave del lugar, opcional>",
+     "evidence": "<cita literal>"}
   ]
 }
 
@@ -191,6 +196,37 @@ SALIDA
 
 El sistema usa este campo para decidir si la facción del PNJ llega a
 enterarse. No es tu decisión: tú solo reportas si el turno menciona testigos.
+
+═══ CREACIONES ═══
+
+Cuando el turno introduce **algo nuevo con identidad propia** que antes no
+existía, va en `creaciones`. Sin esto, lo que el DM inventa se evapora: un
+cofre que aparece en el turno 3 no existirá en la sesión siguiente.
+
+**La prueba es la consecuencia, no la descripción.** El DM describe muchas
+cosas al narrar; casi ninguna merece existir en la base. Crea solo lo que
+podría importar dentro de tres sesiones.
+
+  SE CREA        alguien con nombre propio: Hettir Bec, la viuda Herda
+                 un lugar al que se puede volver: el sótano del peaje
+                 un objeto que alguien **coge, usa, entrega o busca**
+                 un objeto que un PNJ **señala como importante**
+                 una facción o un objetivo que el turno nombra
+
+  NO SE CREA     lo que el DM solo describe al ambientar la escena:
+                 unos fardos de tela, un gancho de cobre, el olor a brea,
+                 las tablas del suelo, la lluvia
+                 atrezzo genérico: el guardia, un mercader, la puerta
+                 nada que el turno no mencione explícitamente
+                 nada que ya exista en la lista de entidades
+
+Regla práctica: si el jugador **no lo tocó** y ningún PNJ **dijo que
+importa**, es decorado. No lo crees.
+
+Como mucho **una creación por turno**. Si dudas entre varias, elige la que
+tenga consecuencias.
+
+Vale la misma regla de evidencia: cita literal del turno o se descarta.
 
 ═══ ENTIDADES ═══
 

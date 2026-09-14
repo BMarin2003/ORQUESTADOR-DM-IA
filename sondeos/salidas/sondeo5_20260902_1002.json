@@ -1,0 +1,197 @@
+{
+  "modelo": "NousResearch/Hermes-3-Llama-3.1-70B",
+  "fecha": "2026-09-02T10:02:46.397416",
+  "fallos": {
+    "dado_inventado": 0,
+    "narra_mundo": 0,
+    "decide_resultado": 0,
+    "meta": 0,
+    "habilidad_inventada": 0,
+    "razono": 0,
+    "vacio": 0
+  },
+  "registro": [
+    {
+      "escena": "E1",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "\"El capitán puede esperar. No voy a dejar que me eche para nada.\"\nMe acerco al vendedor del puesto de mapas.\n\"¿Cuánto pides por ese mapa de la zona?\"\n{Persuasión}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 30
+      }
+    },
+    {
+      "escena": "E1",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "\"Un momento, amigo.\" Le pido al mensajero que espere un instante.\nMe acerco al vendedor del puesto de mapas.\n\"¿Cuánto por ese mapa de la región? ¿Tiene algo más detallado, que no sea solo para turistas?\"\n{Persuasión}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 37
+      }
+    },
+    {
+      "escena": "E1",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"Algo me dice que ese mapa podría ser importante. Voy a echar un vistazo antes de ir al puente.\"\n\nMe acerco al vendedor del puesto de mapas y le pregunto si puede mostrarme un mapa de la zona. Mientras examino los mapas, busco información sobre el puente y si hay alguna ruta alternativa para llegar a él.\n\n{Investigación}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Investigación"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 58
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "\"Veinte coronas por liberar a un prisionero... ¿Sin hacer preguntas? No me parece ético.\" Le devuelvo la mirada al carcelero. \"¿Qué ha hecho este hombre para estar encerrado aquí?\"\n\nEspero su respuesta. Quiero averiguar más antes de decidir si intervengo o no.",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 42
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "\"No veinte, diez. Y quiero saber qué hace aquí antes de decidir.\"\nMe acerco al prisionero y le susurro: \"¿Cuál es tu historia? ¿Vale la pena\nsacarte de aquí?\"\n{Perspicacia}\n\"No te preocupes, carcelero. Estoy considerándolo, pero necesito más información.\"\n{Persuasión}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia",
+          "Persuasión"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 41
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"Veinte coronas es un robo.\" Le lanzo un duro mirada. \"Y no me fío de un trato a escondidas.\"\n\nMe acerco a la reja de la celda del fondo.\n\"Oye, ¿quién eres y por qué estás aquí?\"\n{Perspicacia}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 38
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "Me acerco al posadero y le pregunto qué ha pasado aquí. ¿Por qué está todo el mundo tan apagado? {Perspicacia}\n\nSi no parece dispuesto a hablar, me siento a una mesa y observo un rato, intentando ver qué está pasando. {Percepción}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Perspicacia",
+          "Percepción"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": false,
+        "palabras": 41
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "\"¿No hay noticias de los alrededores?\"\nLe pregunto al posadero, tratando de sonsacarle algo de información mientras echo un vistazo a la taberna. {Persuasión}\n\nMe acerco a una de las pocas mesas ocupadas, donde un par de clientes conversan en voz baja. Me siento en una silla cerca de ellos, tratando de oír algo interesante. {Sigilo}\n\nSiempre hay oportunidades en el desconocimiento de los demás. Solo hay que estar atento.",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión",
+          "Sigilo"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 70
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"Esto es raro para ser la taberna del pueblo. ¿Qué está pasando aquí?\"\nLe pregunto al posadero, tratando de llamar su atención.\n{Persuasión}\nMe acerco a una de las mesas y me siento, observando a los pocos clientes que hay en la taberna. Parece que todos están sumidos en sus propios pensamientos o conversaciones en voz baja.\n{Percepción}",
+      "checks": {
+        "habilidad_inventada": false,
+        "inventadas": [],
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión",
+          "Percepción"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 58
+      }
+    }
+  ]
+}

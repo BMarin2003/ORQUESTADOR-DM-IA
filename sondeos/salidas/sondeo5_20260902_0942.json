@@ -1,0 +1,164 @@
+{
+  "modelo": "Qwen/Qwen2.5-72B-Instruct",
+  "fecha": "2026-09-02T09:42:48.579578",
+  "fallos": {
+    "dado_inventado": 0,
+    "narra_mundo": 0,
+    "decide_resultado": 0,
+    "meta": 0,
+    "razono": 0,
+    "vacio": 0
+  },
+  "registro": [
+    {
+      "escena": "E1",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "\"Gracias por el aviso.\" Me doy la vuelta y entro en la posada para recoger mis pertenencias. Me aseguro de dejar una moneda extra en la mesa por las molestias. Luego salgo y me dirijo hacia el puente, pensando en lo que el capitán podría necesitar.",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 46
+      }
+    },
+    {
+      "escena": "E1",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "Me doy la vuelta para echar un último vistazo al puesto de mapas antes de seguir al mensajero. Luego, me dirijo hacia el puente, pero no sin antes murmurar para mí mismo:\n\n\"Mapas viejos, ¿eh? Tal vez tenga algo que valga la pena en un futuro.\"",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 46
+      }
+    },
+    {
+      "escena": "E1",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"Nos conviene ir a ver qué quiere el capitán. Pero antes, un momento.\"\n\nMe doy la vuelta y me acerco al vendedor que está desmontando su puesto de mapas.\n\n\"¿Estos mapas son de la región? ¿Hay alguno del puente del que ha hablado el mensajero?\" {Percepción}",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Percepción"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 46
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "\"Pagaremos las veinte coronas, pero quiero que conste en acta que este pago es por servicios no oficiales y que no reconozco su legalidad.\"\nEntrego las veinte coronas al carcelero, pero insisto en que me deje dejar constancia de mi protesta.",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 41
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "Me acerco al carcelero con una sonrisa forzada y le respondo en voz baja:\n\n\"Una propuesta interesante, pero veinte coronas es mucho dinero. ¿No podríamos... negociar un poco?\"\n\nMientras hablo, echo un vistazo rápido al prisionero para evaluar su estado y buscar algún detalle que pueda ser útil más adelante.",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 50
+      }
+    },
+    {
+      "escena": "E2",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "\"No voy a pagar para que alguien escape. Si está aquí, será por algo.\" Me acerco a los barrotes de la celda del fondo y miro al prisionero a los ojos. \"¿Tú quién eres y por qué estás aquí?\"",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 39
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ02",
+      "desvio": 20,
+      "texto": "Me acerco al posadero y, con voz firme pero respetuosa, le pregunto:\n\n\"¿Hay algo que pueda hacer para ayudar? No me gusta ver a alguien trabajando solo en un día tan desagradable.\"",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": false,
+        "habilidades": [],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 32
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ18",
+      "desvio": 85,
+      "texto": "Me levanto de la mesa y echo un vistazo a los pocos clientes que hay en la taberna. Me acerco al posadero con una sonrisa fingida.\n\n\"No me gustaría ser un estorbo, pero ¿hay algo interesante que haya pasado por aquí últimamente?\"\n\n{Persuasión}",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Persuasión"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 43
+      }
+    },
+    {
+      "escena": "E3",
+      "pj": "PJ04",
+      "desvio": 40,
+      "texto": "Me dirijo al posadero con decisión.\n\n\"Oye, no tienes cara de estar pasando un buen día. ¿Qué te preocupa?\"\n\n{Percepción}",
+      "checks": {
+        "dado_inventado": false,
+        "declara_habilidad": true,
+        "habilidades": [
+          "Percepción"
+        ],
+        "narra_mundo": false,
+        "decide_resultado": false,
+        "meta": false,
+        "tiene_dialogo": true,
+        "palabras": 20
+      }
+    }
+  ]
+}
