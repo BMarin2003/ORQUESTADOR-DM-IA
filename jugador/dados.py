@@ -15,9 +15,13 @@ Por qué sembrado:
   mismas tiradas al reejecutarse. Eso hace las campañas reproducibles y
   permite reprocesar sin que cambien los resultados mecánicos.
 
-  Y crucialmente: **ambos brazos del par reciben la misma secuencia de
-  tiradas**, porque comparten campaign_id. Si G1 y G2 divergen, no es porque
-  a uno le fueran mejor los dados.
+  Ojo (corregido 2026-10-09): G1 y G2 NO reciben la misma secuencia de
+  tiradas. Cada brazo tiene su propia fila en `campaigns` (UUID distinto), y
+  ese id entra en la semilla. Verificado en 21 pares con
+  scripts/verificacion/verificar_dados_pareados.py: el d20 coincide en 4.9 %
+  de las tiradas comparables, lo esperable por azar. Lo que sí se cumple: el
+  mecanismo es el mismo, el agente no tira, y la suerte no favorece a ningún
+  brazo (d20 medio G1 − G2 = +0.009; Wilcoxon p = 0.95).
 """
 
 import hashlib

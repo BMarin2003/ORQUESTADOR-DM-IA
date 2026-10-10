@@ -1,0 +1,791 @@
+par,brazo,turno,campo,estado,entidad,evaluable_v2,rec_v2,margen_v2,n_nulo_v2,rec_v1,jericho
+01,G1,1257,npc.affinity,loyal,viuda Elia,1,0,-0.06698970884438982,159,0,0
+01,G1,1357,npc.affinity,devoted,viuda Elia,1,0,-0.04386487604964451,159,1,0
+01,G2,84,npc.affinity,cordial,Figura encapuchada,1,0,,59,0,1
+01,G2,176,npc.status,missing,Figura encapuchada,1,0,,59,0,1
+01,G2,391,npc.affinity,cordial,Supervisor del muelle,1,0,-0.037203920996305984,300,0,0
+01,G2,449,npc.status,missing,Informante de los Muelles,1,1,0.08800467205583118,80,1,1
+01,G2,477,npc.affinity,cold,Supervisor del muelle,1,0,,306,0,1
+01,G2,690,npc.affinity,cold,Grog,0,,,,1,1
+01,G2,729,npc.affinity,cold,Supervisor del muelle,1,0,-0.029320825730429156,306,0,1
+01,G2,755,npc.affinity,cold,carretero,0,,,,1,1
+01,G2,825,npc.affinity,cold,prisionero,1,0,-0.08992629707298905,88,0,0
+01,G2,915,npc.affinity,wary,Tomás Herrén,1,0,,58,0,0
+01,G2,937,npc.affinity,wary,Supervisor del muelle,1,0,-0.011476770544148973,299,1,0
+01,G2,965,npc.affinity,wary,Informante de los Muelles,1,0,-0.14676374418121563,81,0,0
+01,G2,970,npc.affinity,wary,Figura encapuchada,1,0,-0.023592933848412878,56,0,0
+01,G2,975,npc.affinity,wary,Hombre delgado,1,0,-0.03755666851789374,413,0,1
+01,G2,1006,npc.affinity,wary,Vigilante del Consorcio,1,0,-0.031174401795471596,569,0,0
+01,G2,1046,npc.affinity,wary,prisionero,1,0,,101,0,0
+01,G2,1132,npc.affinity,hostile,prisionero,1,0,-0.06330501655906351,88,1,0
+01,G2,1163,npc.affinity,wary,carretero,0,,,,1,1
+02,G1,186,npc.affinity,loyal,Bardo Ossein,1,0,-0.058704379564414766,1187,0,0
+02,G1,219,npc.affinity,devoted,Bardo Ossein,1,0,-0.04995436247491858,1187,0,0
+02,G1,1219,npc.status,captured,autómata de mantenimiento,0,,,,0,0
+02,G2,2,npc.affinity,loyal,Bardo Ossein,1,0,-0.057490332675204314,27,1,0
+02,G2,51,npc.affinity,devoted,Bardo Ossein,1,0,-0.0975033199220704,23,1,0
+02,G2,286,npc.affinity,loyal,El hombre de los harapos,1,0,,551,0,0
+02,G2,341,npc.affinity,cordial,El hombre de los harapos,1,0,-0.06183887906233265,547,0,0
+02,G2,366,npc.affinity,loyal,El hombre de los harapos,1,0,-0.09871149045571337,546,0,0
+02,G2,398,npc.affinity,devoted,El hombre de los harapos,1,0,-0.033975196625543824,542,0,0
+02,G2,915,npc.affinity,devoted,Kaelen el Silencioso,1,1,0.028381243019452107,36,1,0
+02,G2,1041,npc.affinity,loyal,Kaelen el Silencioso,1,0,-0.13758244269405118,25,0,1
+02,G2,1084,npc.affinity,loyal,El hombre de los harapos,1,0,-0.09666570461661173,547,0,0
+02,G2,1085,npc.affinity,loyal,Cobrador de Cadenas,1,1,0.0551824224854065,69,1,0
+02,G2,1131,npc.affinity,loyal,El Vigilante de las Cadenas,1,0,-0.08146571627463617,80,1,0
+02,G2,1158,npc.affinity,cordial,El hombre de los harapos,1,0,-0.14637622968399833,547,0,1
+02,G2,1234,npc.affinity,cordial,Guardián del Registro,1,1,0.012058005401562988,112,1,0
+02,G2,1394,npc.affinity,cordial,Guardián del Registro,1,0,-0.12919777843519253,113,0,0
+03,G1,1024,npc.affinity,loyal,Yenna Roldós,1,0,-0.16259149758917235,1349,0,0
+03,G1,1103,npc.affinity,devoted,Yenna Roldós,1,0,-0.18765204026388915,1349,0,0
+03,G1,1217,npc.status,missing,Yenna Roldós,1,0,-0.15209954359303157,1349,0,0
+03,G1,1218,npc.status,missing,Yenna Roldós,1,0,-0.1598131594873492,1349,0,0
+03,G2,43,npc.affinity,cordial,Elian,1,0,-0.15586681218137,109,0,1
+03,G2,92,npc.affinity,cordial,Líder de los cazadores,1,0,-0.13037358160333945,76,0,0
+03,G2,112,npc.affinity,cordial,Acechador de Brumas,0,,,,1,0
+03,G2,184,npc.affinity,cordial,Figura encapuchada,1,0,,79,0,0
+03,G2,250,npc.affinity,loyal,Acechador de Brumas,0,,,,0,0
+03,G2,258,npc.affinity,loyal,Líder de los cazadores,1,0,,85,0,0
+03,G2,386,npc.affinity,loyal,Figura encapuchada,1,0,,86,0,0
+03,G2,391,npc.affinity,cordial,Líder de los cazadores,1,0,,85,0,0
+03,G2,473,npc.affinity,cordial,Acechador de Brumas,0,,,,0,0
+03,G2,495,npc.affinity,cordial,Figura encapuchada,1,0,,86,0,0
+03,G2,517,npc.affinity,cold,Erudito de la Atalaya,1,0,-0.04689813241610519,35,0,1
+03,G2,521,npc.affinity,cold,Erudito de la Atalaya,1,0,-0.08575808377207872,33,0,1
+03,G2,635,npc.affinity,cordial,Elio,1,0,,35,0,0
+03,G2,639,npc.affinity,loyal,Elian,1,0,,118,0,0
+03,G2,641,npc.affinity,loyal,Figura encapuchada,1,0,,86,0,0
+03,G2,662,npc.affinity,loyal,Líder de los cazadores,1,0,,85,1,0
+03,G2,682,npc.affinity,loyal,Elian,1,0,-0.10272655552307941,111,0,0
+03,G2,699,npc.affinity,cordial,Elian,1,0,-0.11718614600105026,110,0,0
+03,G2,750,npc.affinity,devoted,Hombre encadenado,1,0,-0.05701172521745346,298,0,0
+03,G2,923,npc.affinity,devoted,Líder de los cazadores,1,0,,85,0,0
+03,G2,924,npc.affinity,loyal,Líder de los cazadores,1,0,,85,0,0
+03,G2,929,npc.affinity,devoted,Líder de los cazadores,1,0,,85,0,0
+03,G2,965,npc.affinity,devoted,Erudito de la Atalaya,1,0,-0.09247496015814594,43,0,0
+03,G2,1062,npc.affinity,loyal,Elian,1,0,-0.07876599844599941,109,1,0
+03,G2,1159,npc.affinity,cold,Kaelen,1,0,-0.07836255689113658,95,1,1
+03,G2,1207,npc.affinity,devoted,Siseador de Cristal,1,1,0.05973587638974509,82,1,1
+03,G2,1372,npc.affinity,devoted,Hombre encadenado,1,0,,304,0,0
+04,G1,360,npc.affinity,loyal,Mirela Sanz,1,1,0.0904200476003929,1376,1,0
+04,G1,532,npc.affinity,devoted,Mirela Sanz,1,0,-0.07531846517210672,1376,0,0
+04,G2,300,npc.status,dead,Elian Thorne,1,0,-0.11253116502800631,440,0,0
+04,G2,433,npc.status,captured,Elian Thorne,1,0,-0.0742569697919292,440,0,1
+04,G2,1227,npc.affinity,cordial,Alistair Vance,1,0,-0.17018115520477295,248,0,0
+04,G2,1281,npc.affinity,cordial,Alistair Vance,1,0,-0.06036261734340442,248,1,0
+04,G2,1365,npc.affinity,cold,Alistair Vance,1,0,-0.1559524560967297,248,0,0
+04,G2,1372,npc.affinity,wary,Alistair Vance,1,0,-0.044325638684704516,248,1,0
+05,G1,145,npc.status,dead,Damil Quiroga,1,0,-0.07139051961858378,299,0,1
+05,G1,225,npc.status,captured,Damil Quiroga,1,0,-0.10201146266341654,302,0,0
+05,G1,380,npc.affinity,loyal,Renata Ossorio,1,0,-0.07124388008699434,1028,0,0
+05,G1,471,npc.affinity,devoted,Renata Ossorio,1,0,-0.13005217730688023,1028,0,0
+05,G1,1370,npc.affinity,loyal,Renata Ossorio,1,0,-0.06305149314842307,1028,0,0
+05,G2,890,npc.affinity,loyal,Damil Quiroga,1,0,-0.09468223630801598,305,0,0
+05,G2,891,npc.affinity,cordial,Damil Quiroga,1,0,-0.09832348815221281,304,0,0
+05,G2,955,npc.affinity,cold,Damil Quiroga,1,0,-0.03350605498676429,306,1,1
+05,G2,1035,npc.affinity,cold,Elian Thorne,1,0,-0.08713412284851074,100,0,1
+05,G2,1045,npc.status,captured,Elian Thorne,1,0,-0.18441986579168335,106,0,1
+05,G2,1055,npc.affinity,wary,el viejo cartógrafo,0,,,,1,1
+05,G2,1105,npc.affinity,hostile,el viejo cartógrafo,0,,,,0,0
+05,G2,1107,npc.affinity,wary,el viejo cartógrafo,0,,,,1,1
+05,G2,1117,npc.affinity,hostile,el viejo cartógrafo,0,,,,1,0
+05,G2,1310,npc.affinity,cold,Hombre de la túnica de lino,1,0,-0.03521033174272592,346,0,0
+05,G2,1312,npc.status,missing,Hombre de la túnica de lino,1,1,0.15073665669719627,344,1,1
+05,G2,1383,npc.affinity,hostile,Hombre de la túnica de lino,1,0,-0.014866512614629901,349,0,0
+06,G1,28,npc.affinity,cold,Bregas Coll,1,0,-0.06879046969356961,451,0,1
+06,G1,213,npc.affinity,cordial,Bregas Coll,1,0,-0.09905992757559756,451,0,0
+06,G1,304,npc.status,captured,Bregas Coll,1,0,-0.10563293099403381,451,0,0
+06,G1,314,npc.affinity,loyal,Bregas Coll,1,0,-0.12358370998767121,451,0,0
+06,G1,434,npc.affinity,devoted,Bregas Coll,1,0,-0.07766414546210343,451,0,1
+06,G1,462,npc.affinity,loyal,Bregas Coll,1,0,-0.0512293962431728,451,0,0
+06,G1,466,npc.affinity,cordial,Bregas Coll,1,0,-0.02943567037278383,455,0,0
+06,G1,766,npc.affinity,cold,Osana Ferreira,1,0,-0.062224241915289524,883,0,1
+06,G1,983,npc.affinity,wary,Osana Ferreira,1,0,-0.09193600304254435,885,0,0
+06,G1,1093,npc.affinity,hostile,Osana Ferreira,1,0,-0.1483283214893697,883,0,1
+06,G2,11,npc.status,captured,Bregas Coll,1,0,-0.1414203941822052,66,0,0
+06,G2,15,npc.affinity,cordial,Bregas Coll,1,0,-0.1268836732642391,66,0,0
+06,G2,271,npc.status,dead,criatura de piel translúcida,0,,,,1,0
+06,G2,272,npc.status,dead,criatura de piel translúcida,0,,,,1,1
+06,G2,273,npc.status,dead,criatura de piel translúcida,0,,,,1,1
+06,G2,281,npc.affinity,cold,criatura de piel translúcida,0,,,,0,1
+06,G2,283,npc.affinity,wary,criatura de piel translúcida,0,,,,1,0
+06,G2,284,npc.status,dead,criatura de piel translúcida,0,,,,1,0
+06,G2,294,npc.status,captured,criatura de piel translúcida,0,,,,0,0
+06,G2,295,npc.status,dead,criatura de piel translúcida,0,,,,1,0
+06,G2,296,npc.status,dead,criatura de piel translúcida,0,,,,1,1
+06,G2,298,npc.status,dead,criatura de piel translúcida,0,,,,0,0
+06,G2,304,npc.status,captured,criatura de piel translúcida,0,,,,0,0
+06,G2,306,npc.status,missing,criatura de piel translúcida,0,,,,0,0
+06,G2,313,npc.affinity,hostile,criatura de piel translúcida,0,,,,0,0
+06,G2,337,npc.status,dead,criatura de piel translúcida,0,,,,0,0
+06,G2,339,npc.status,dead,criatura de piel translúcida,0,,,,1,1
+06,G2,340,npc.status,dead,criatura de piel translúcida,0,,,,1,1
+06,G2,357,npc.status,dead,criatura de piel translúcida,0,,,,1,0
+06,G2,358,npc.status,dead,criatura de piel translúcida,0,,,,1,0
+06,G2,399,npc.status,dead,criatura de piel translúcida,0,,,,0,0
+06,G2,417,npc.status,dead,criatura de piel translúcida,0,,,,1,0
+06,G2,457,npc.status,dead,criatura de piel translúcida,0,,,,0,1
+06,G2,478,npc.status,captured,criatura de piel translúcida,0,,,,0,0
+06,G2,479,npc.status,dead,criatura de piel translúcida,0,,,,0,0
+06,G2,492,npc.status,captured,criatura de piel translúcida,0,,,,0,1
+06,G2,498,npc.status,dead,criatura de piel translúcida,0,,,,0,0
+06,G2,520,npc.status,dead,criatura de piel translúcida,0,,,,0,1
+06,G2,596,npc.status,dead,criatura de piel translúcida,0,,,,1,0
+06,G2,597,npc.status,dead,criatura de piel translúcida,0,,,,0,0
+06,G2,611,npc.status,dead,criatura de piel translúcida,0,,,,0,0
+06,G2,612,npc.status,dead,criatura de piel translúcida,0,,,,0,0
+06,G2,631,npc.status,dead,criatura de piel translúcida,0,,,,0,1
+06,G2,794,npc.status,dead,criatura de piel translúcida,0,,,,1,1
+06,G2,795,npc.status,dead,criatura de piel translúcida,0,,,,1,1
+06,G2,802,npc.status,missing,criatura de piel translúcida,0,,,,0,0
+06,G2,805,npc.status,captured,criatura de piel translúcida,0,,,,0,0
+06,G2,806,npc.status,dead,criatura de piel translúcida,0,,,,0,1
+06,G2,865,npc.status,dead,criatura de piel translúcida,0,,,,0,0
+06,G2,866,npc.status,dead,criatura de piel translúcida,0,,,,0,1
+06,G2,877,npc.affinity,cold,criatura de piel translúcida,0,,,,0,1
+06,G2,881,npc.status,dead,criatura de piel translúcida,0,,,,0,1
+06,G2,898,npc.status,dead,criatura de piel translúcida,0,,,,0,1
+06,G2,899,npc.status,missing,criatura de piel translúcida,0,,,,0,1
+06,G2,936,npc.status,captured,criatura de piel translúcida,0,,,,0,0
+06,G2,939,npc.status,dead,criatura de piel translúcida,0,,,,0,1
+06,G2,940,npc.status,dead,criatura de piel translúcida,0,,,,0,1
+06,G2,949,npc.affinity,cold,Hombre del mandil,1,0,-0.044461975590760816,225,1,1
+06,G2,951,npc.affinity,wary,Hombre del mandil,1,0,-0.04602650663031216,223,1,0
+06,G2,955,npc.affinity,hostile,Hombre del mandil,1,0,-0.08882597142770687,222,0,0
+06,G2,977,npc.status,dead,Hombre del mandil,1,0,-0.042020773212593565,227,1,0
+06,G2,978,npc.status,dead,Hombre del mandil,1,0,-0.17777092301392405,228,0,1
+06,G2,1007,npc.status,captured,Hombre del mandil,1,0,-0.10038281086148271,222,0,0
+06,G2,1029,npc.status,captured,Hombre del mandil,1,1,0.010760604413644681,222,1,0
+06,G2,1033,npc.status,dead,Hombre del mandil,1,0,-0.12686043781306622,226,0,0
+06,G2,1034,npc.status,dead,Hombre del mandil,1,0,-0.1268576623197365,227,0,1
+06,G2,1035,npc.status,dead,Hombre del mandil,1,0,-0.1804732344080724,228,0,1
+06,G2,1068,npc.status,dead,criatura de piel translúcida,0,,,,0,0
+06,G2,1133,npc.affinity,cold,Vaelin,0,,,,0,0
+06,G2,1134,npc.affinity,cold,Nando Prieto,0,,,,0,0
+06,G2,1136,npc.affinity,cold,Hombre del mandil,1,0,-0.11083108089910698,224,0,0
+06,G2,1184,npc.affinity,cold,criatura de piel translúcida,0,,,,0,1
+06,G2,1187,npc.status,dead,criatura de piel translúcida,0,,,,1,1
+06,G2,1188,npc.status,dead,criatura de piel translúcida,0,,,,1,1
+06,G2,1213,npc.status,dead,criatura de piel translúcida,0,,,,0,0
+06,G2,1223,npc.status,dead,criatura de piel translúcida,0,,,,0,0
+06,G2,1224,npc.status,dead,criatura de piel translúcida,0,,,,0,0
+06,G2,1225,npc.status,dead,criatura de piel translúcida,0,,,,0,0
+06,G2,1264,npc.status,dead,criatura de piel translúcida,0,,,,1,0
+06,G2,1271,npc.status,dead,criatura de piel translúcida,0,,,,0,0
+06,G2,1272,npc.status,dead,criatura de piel translúcida,0,,,,0,0
+06,G2,1308,npc.status,dead,criatura de piel translúcida,0,,,,1,0
+06,G2,1321,npc.status,dead,criatura de piel translúcida,0,,,,0,1
+06,G2,1330,npc.status,captured,criatura de piel translúcida,0,,,,1,0
+06,G2,1333,npc.status,dead,criatura de piel translúcida,0,,,,1,1
+06,G2,1334,npc.status,dead,criatura de piel translúcida,0,,,,1,1
+06,G2,1357,npc.status,captured,criatura de piel translúcida,0,,,,0,0
+06,G2,1358,npc.affinity,wary,criatura de piel translúcida,0,,,,0,0
+06,G2,1361,npc.affinity,hostile,criatura de piel translúcida,0,,,,0,0
+06,G2,1386,npc.affinity,cold,Capataz Vane,0,,,,1,1
+06,G2,1396,npc.affinity,cold,Capataz Vane,0,,,,0,0
+06,G2,1399,npc.affinity,wary,Capataz Vane,0,,,,0,0
+07,G1,128,npc.affinity,loyal,Bercelio Nax,1,0,-0.1047617445138872,187,1,0
+07,G1,251,npc.affinity,loyal,Sargento Vane,1,0,-0.06422839913469336,1122,0,0
+07,G1,285,npc.affinity,devoted,Sargento Vane,1,0,-0.053490091674239904,1118,0,0
+07,G1,394,npc.status,captured,Sargento Vane,1,0,-0.08354060846083067,1118,0,0
+07,G1,589,npc.status,captured,Sargento Vane,1,0,-0.11819110891924989,1119,0,0
+07,G1,997,npc.status,dead,Sargento Vane,1,0,-0.04442097555258351,1118,0,0
+07,G1,998,npc.status,dead,Sargento Vane,1,0,-0.10084440122702198,1118,0,0
+07,G1,1050,npc.status,missing,Sargento Vane,1,1,0.0033735656849479545,1118,1,1
+07,G2,267,npc.affinity,cold,Bercelio Nax,1,0,-0.11543428897857666,110,0,1
+07,G2,371,npc.affinity,cold,Bercelio Nax,1,0,-0.04886597394943237,110,1,1
+07,G2,379,npc.affinity,wary,Bercelio Nax,1,0,-0.13176309804286734,110,0,0
+07,G2,384,npc.affinity,cold,Bercelio Nax,1,0,-0.012232284306527674,110,1,1
+07,G2,387,npc.affinity,wary,Bercelio Nax,1,1,0.009792685508728027,110,1,0
+07,G2,397,npc.affinity,cold,Bercelio Nax,1,0,-0.08365213871002197,110,1,0
+07,G2,398,npc.affinity,wary,Bercelio Nax,1,0,-0.10013006964374072,110,1,1
+07,G2,421,npc.affinity,hostile,Bercelio Nax,1,0,-0.1301958889925785,115,0,0
+07,G2,489,npc.affinity,cold,Bercelio Nax,1,0,,119,0,0
+07,G2,493,npc.affinity,cold,El Vigilante del Umbral,1,0,-0.15515684981063949,289,0,0
+07,G2,563,npc.affinity,wary,El Vigilante del Umbral,1,0,-0.06738448143005371,279,0,0
+07,G2,566,npc.affinity,cold,El Vigilante del Umbral,1,0,-0.031995448764397305,279,1,1
+07,G2,567,npc.affinity,wary,El Vigilante del Umbral,1,0,-0.0896974854379664,279,0,0
+07,G2,766,npc.affinity,hostile,El Vigilante del Umbral,1,0,-0.08847013303362894,283,0,0
+07,G2,782,npc.affinity,wary,El Vigilante del Umbral,1,0,-0.027651292616521106,279,1,1
+07,G2,805,npc.affinity,hostile,El Vigilante del Umbral,1,0,-0.06030050407927723,279,0,0
+07,G2,809,npc.status,dead,El Vigilante del Umbral,1,0,-0.09930568349173208,279,0,0
+07,G2,930,npc.status,dead,El Vigilante del Umbral,1,0,-0.11027620908305613,283,0,0
+07,G2,931,npc.status,dead,El Vigilante del Umbral,1,0,-0.11027620908305613,284,0,1
+07,G2,932,npc.status,dead,El Vigilante del Umbral,1,0,-0.09274564165501431,285,0,1
+07,G2,1006,npc.status,missing,Figura encapuchada,1,1,0.0035702033883240336,120,1,0
+07,G2,1042,npc.status,dead,Figura encapuchada,1,0,,117,0,0
+07,G2,1143,npc.affinity,cordial,Figura encapuchada,1,0,-0.03981682305114598,114,0,0
+07,G2,1216,npc.status,captured,Custodio del Eco,1,0,-0.15881159334713524,56,0,0
+07,G2,1217,npc.status,dead,Custodio del Eco,1,0,-0.2307926125938743,57,0,1
+07,G2,1275,npc.status,missing,Figura encapuchada,1,0,,125,0,1
+07,G2,1280,npc.affinity,cold,Custodio del Eco,1,0,,64,0,1
+07,G2,1345,npc.status,dead,Custodio del Eco,1,0,-0.14599405683057853,56,1,0
+08,G2,243,npc.status,dead,la Sombra de la Biblioteca,1,1,0.008884489731446621,28,1,0
+08,G2,417,npc.status,dead,la Sombra de la Biblioteca,1,0,-0.030359608413372374,35,1,0
+08,G2,556,npc.affinity,loyal,Figura de la armadura antigua,1,0,,168,0,0
+08,G2,619,npc.affinity,cold,Alaric,1,0,-0.06325271501885021,85,1,1
+08,G2,636,npc.affinity,wary,Alaric,1,0,-0.04855040914631181,83,1,1
+08,G2,637,npc.affinity,cold,Alaric,1,0,-0.018486765769582636,84,1,1
+08,G2,644,npc.affinity,devoted,Figura de la armadura antigua,1,0,,168,0,0
+08,G2,669,npc.status,dead,la masa pálida,0,,,,1,0
+08,G2,670,npc.status,dead,la masa pálida,0,,,,0,0
+08,G2,781,npc.status,dead,Figura de la armadura antigua,1,0,-0.1016556142564028,166,0,0
+08,G2,833,npc.status,dead,la masa pálida,0,,,,1,0
+08,G2,925,npc.status,dead,la masa pálida,0,,,,1,0
+08,G2,1086,npc.status,dead,la masa pálida,0,,,,0,0
+08,G2,1095,npc.status,dead,la masa pálida,0,,,,0,0
+08,G2,1192,npc.status,captured,Alaric,1,0,,95,0,0
+09,G1,68,npc.affinity,devoted,Amancio Bell,1,0,-0.08515661447306799,280,0,0
+09,G1,320,npc.affinity,loyal,Abuelo Julián,1,0,-0.026930803150788107,1075,0,0
+09,G1,323,npc.affinity,devoted,Abuelo Julián,1,0,-0.0841033674703483,1074,0,0
+09,G1,486,npc.status,dead,Abuelo Julián,1,0,-0.08938167881101178,1074,0,0
+09,G2,240,npc.status,missing,Amancio Bell,1,0,-0.09746869225133425,108,0,0
+09,G2,397,npc.affinity,devoted,Amancio Bell,1,0,-0.014450196088688916,107,1,0
+09,G2,486,npc.status,dead,Superviviente de la ceniza,1,1,0.03235900209194409,376,1,0
+09,G2,492,npc.affinity,loyal,Superviviente de la ceniza,1,0,-0.040391740542828236,374,0,0
+09,G2,502,npc.affinity,devoted,Superviviente de la ceniza,1,0,-0.04831593341866702,376,0,0
+09,G2,573,npc.status,dead,Superviviente de la ceniza,1,0,,377,0,1
+09,G2,574,npc.status,dead,Superviviente de la ceniza,1,0,,376,0,1
+09,G2,707,npc.status,dead,Superviviente de la ceniza,1,0,,384,0,0
+09,G2,862,npc.affinity,loyal,Superviviente de la ceniza,1,0,-0.10447834667169675,371,0,0
+09,G2,862,npc.status,captured,Superviviente de la ceniza,1,0,-0.08351753549845786,371,0,0
+09,G2,863,npc.affinity,devoted,Superviviente de la ceniza,1,0,-0.10473267371921247,371,0,0
+09,G2,905,npc.status,dead,Superviviente de la ceniza,1,0,-0.16532846124861,371,0,0
+09,G2,929,npc.status,dead,Superviviente de la ceniza,1,0,,374,0,1
+09,G2,930,npc.status,dead,Superviviente de la ceniza,1,0,,374,0,1
+09,G2,1014,npc.status,dead,Superviviente de la ceniza,1,0,,378,0,0
+09,G2,1034,npc.status,dead,Superviviente de la ceniza,1,0,-0.03256830995296611,381,0,0
+09,G2,1159,npc.status,dead,Superviviente de la ceniza,1,0,,381,0,1
+09,G2,1165,npc.affinity,loyal,Superviviente de la ceniza,1,0,-0.1074981877365696,380,0,0
+09,G2,1177,npc.affinity,devoted,Superviviente de la ceniza,1,0,-0.11422248030058246,379,0,0
+09,G2,1187,npc.status,dead,Superviviente de la ceniza,1,0,-0.048689647194355756,374,0,0
+09,G2,1200,npc.status,dead,Superviviente de la ceniza,1,0,,380,1,1
+09,G2,1201,npc.status,dead,Superviviente de la ceniza,1,0,,380,1,1
+09,G2,1218,npc.status,dead,Superviviente de la ceniza,1,0,,382,1,1
+09,G2,1259,npc.status,dead,Superviviente de la ceniza,1,0,,384,0,1
+09,G2,1261,npc.status,dead,Superviviente de la ceniza,1,0,,384,0,1
+09,G2,1273,npc.affinity,loyal,Superviviente de la fosa,1,0,-0.045971560438079484,379,0,0
+09,G2,1274,npc.affinity,devoted,Superviviente de la fosa,1,0,-0.06290736176046086,379,0,0
+10,G1,323,npc.affinity,cold,Marek,1,0,-0.06342066987162942,1360,0,1
+10,G1,454,npc.affinity,cordial,Marek,1,0,-0.07165661826682612,1360,0,0
+10,G1,576,npc.affinity,loyal,Marek,1,0,-0.10153389569159654,1360,0,0
+10,G1,973,quest.status,failed,El reparto que no alcanza,0,,,,0,1
+10,G1,996,npc.affinity,devoted,Marek,1,0,-0.03242528052028648,1360,0,1
+10,G2,133,npc.status,dead,Soldado herido,1,0,-0.02770805200871229,74,1,0
+10,G2,134,npc.affinity,loyal,Soldado herido,1,0,-0.04865950345993042,75,1,0
+10,G2,160,npc.affinity,devoted,Soldado herido,1,0,-0.047586828026148775,71,0,0
+10,G2,201,npc.status,captured,Soldado herido,1,0,-0.06983266263123333,71,0,0
+10,G2,406,npc.affinity,cold,Elian,1,0,-0.08910524845123291,169,0,0
+10,G2,408,npc.affinity,wary,Elian,1,0,-0.03891103032899368,169,1,0
+10,G2,454,npc.status,dead,Soldado herido,1,0,,81,0,0
+10,G2,455,npc.affinity,cold,Soldado herido,1,0,,81,0,0
+10,G2,529,npc.status,captured,Elian,1,0,-0.06329666494315211,169,1,1
+10,G2,546,npc.affinity,cold,Elian,1,0,-0.07460954258694441,171,0,0
+10,G2,582,npc.affinity,cold,El Vigilante del Granero,1,0,,279,0,1
+10,G2,593,npc.affinity,wary,Cebrián Poyo,1,0,,137,0,0
+10,G2,618,npc.affinity,wary,El Vigilante del Granero,1,0,,280,0,0
+10,G2,626,npc.affinity,hostile,El Vigilante del Granero,1,0,,279,0,0
+10,G2,654,npc.status,captured,El Vigilante del Granero,1,0,-0.1301431799257734,272,0,1
+10,G2,655,npc.status,dead,El Vigilante del Granero,1,0,-0.16458978605121255,272,0,0
+10,G2,680,npc.status,dead,El Vigilante del Granero,1,0,-0.050390354666328796,271,0,0
+10,G2,681,npc.status,dead,El Vigilante del Granero,1,0,-0.05023822391061561,272,0,1
+10,G2,756,npc.affinity,wary,El Vigilante del Granero,1,0,-0.044575626304671045,267,0,1
+10,G2,760,npc.affinity,hostile,El Vigilante del Granero,1,0,-0.07798288011691801,267,0,0
+10,G2,793,npc.status,dead,El Vigilante del Granero,1,0,-0.13710226755082555,273,0,0
+10,G2,798,npc.affinity,hostile,Soldado herido,1,0,,81,0,1
+10,G2,805,npc.status,captured,El Vigilante del Granero,1,0,-0.10922004600232627,271,0,0
+10,G2,806,npc.status,captured,El Vigilante del Granero,1,0,-0.10922004600232627,270,0,0
+10,G2,878,npc.affinity,cold,El Vigilante del Granero,1,0,-0.1178967141367887,268,0,0
+10,G2,883,npc.status,captured,El Vigilante del Granero,1,0,-0.11179600813436419,273,0,0
+10,G2,899,npc.status,dead,Maestro de Llaves,1,0,-0.04330050429099741,130,1,1
+10,G2,967,npc.affinity,cold,Maestro de Llaves,1,1,0.015357510203501512,124,1,0
+10,G2,969,npc.affinity,wary,Maestro de Llaves,1,0,-0.06387758445374925,124,1,0
+10,G2,973,npc.affinity,hostile,Maestro de Llaves,1,0,-0.026350586859262504,124,1,0
+10,G2,980,npc.status,captured,Maestro de Llaves,1,0,-0.14363387639965153,128,0,0
+10,G2,1038,npc.status,captured,Maestro de Llaves,1,0,-0.05639568904116388,124,1,0
+10,G2,1318,npc.affinity,hostile,Cebrián Poyo,1,0,-0.07856656865432932,126,0,0
+10,G2,1389,npc.status,captured,Soldado herido,1,0,,81,0,1
+11,G1,87,npc.affinity,loyal,Illian Vasto,1,0,-0.0365284201095607,1349,0,0
+11,G1,93,npc.affinity,devoted,Illian Vasto,1,0,-0.15062279588482008,1349,0,0
+11,G1,660,npc.status,captured,Illian Vasto,1,0,-0.15241599082946777,1349,0,0
+11,G2,176,npc.affinity,loyal,Illian Vasto,1,0,-0.04246664972001324,124,1,0
+11,G2,210,npc.affinity,devoted,Illian Vasto,1,0,-0.05354213076327663,124,0,0
+11,G2,361,npc.affinity,loyal,Guardiana del Secreto,1,0,-0.08368161293882781,274,0,0
+11,G2,379,npc.affinity,devoted,Guardiana del Secreto,1,0,-0.06742795376318977,269,1,0
+11,G2,582,npc.affinity,cordial,Centinela del Equilibrio,1,1,0.030134480200953995,221,1,0
+11,G2,612,npc.affinity,loyal,Centinela del Equilibrio,1,1,0.02087778656104422,223,1,0
+11,G2,624,npc.affinity,devoted,Centinela del Equilibrio,1,0,-0.048876379028746975,222,0,0
+11,G2,922,npc.status,dead,Centinela del Equilibrio,1,1,0.036020596285251005,224,1,1
+12,G1,406,npc.affinity,cordial,Osvaldo Prín,1,0,-0.02013160039510553,1063,0,1
+12,G1,413,npc.affinity,cordial,Osvaldo Prín,1,0,-0.06202257920827692,1063,0,0
+12,G1,423,npc.affinity,cold,Osvaldo Prín,1,0,-0.11579079624078192,1063,0,1
+12,G1,440,npc.affinity,wary,Osvaldo Prín,1,0,-0.026079038702069735,1063,0,0
+12,G1,498,npc.affinity,hostile,Osvaldo Prín,1,0,-0.056765233490425726,1063,0,1
+12,G2,359,npc.affinity,cold,Harlen,1,0,-0.08529167840074692,46,1,0
+12,G2,361,npc.affinity,wary,Harlen,1,0,-0.05192548850246059,46,1,0
+12,G2,366,npc.affinity,hostile,Harlen,1,0,-0.05971810236775377,46,1,0
+12,G2,405,npc.affinity,cold,figura encapuchada,1,0,-0.08030658960342407,131,0,1
+12,G2,533,npc.affinity,wary,figura encapuchada,1,0,,134,0,0
+12,G2,564,npc.affinity,cold,figura encapuchada,1,0,,138,1,0
+12,G2,568,npc.affinity,wary,figura encapuchada,1,0,,139,0,0
+12,G2,627,npc.affinity,hostile,figura encapuchada,1,0,-0.08374391488839728,130,1,0
+12,G2,631,npc.affinity,wary,figura encapuchada,1,0,-0.08762056849998023,131,0,0
+12,G2,648,npc.affinity,hostile,figura encapuchada,1,0,-0.088838254163492,134,0,0
+12,G2,762,npc.status,captured,figura encapuchada,1,0,,137,0,0
+12,G2,826,npc.affinity,cold,figura encapuchada,1,0,,137,0,0
+12,G2,832,npc.status,captured,figura encapuchada,1,0,,140,0,0
+12,G2,835,npc.status,dead,figura encapuchada,1,0,,140,0,0
+12,G2,847,npc.affinity,cold,Valerius,1,0,-0.059897541999816895,290,0,1
+12,G2,888,npc.status,captured,Valerius,1,0,-0.12004937182228181,291,0,0
+12,G2,973,npc.affinity,wary,Valerius,1,0,-0.09611392162527199,290,0,0
+12,G2,987,npc.affinity,hostile,Valerius,1,0,-0.1104193925857544,287,0,0
+12,G2,1034,npc.status,captured,Valerius,1,0,-0.1163861086458926,290,0,0
+12,G2,1223,npc.status,captured,Valerius,1,0,-0.15427773906045017,287,0,1
+12,G2,1293,npc.status,captured,Valerius,1,0,-0.15728965472378176,289,0,0
+12,G2,1360,npc.affinity,cold,Hombre de mirada afilada,1,0,-0.12054109573364258,305,0,0
+12,G2,1371,npc.affinity,wary,Hombre de mirada afilada,1,1,0.05601632341064955,304,1,0
+12,G2,1375,npc.affinity,cold,Hombre de mirada afilada,1,0,-0.05421459674835205,304,0,1
+13,G1,9,npc.affinity,cordial,Baldemar Cruz,1,0,-0.04922121469848073,1380,0,0
+13,G1,46,npc.affinity,cold,Baldemar Cruz,1,0,-0.09191783352790817,1379,0,1
+13,G1,71,npc.affinity,wary,Baldemar Cruz,1,0,-0.08083414080244722,1379,0,1
+13,G1,112,npc.affinity,hostile,Baldemar Cruz,1,0,-0.1264915354306625,1379,0,0
+13,G1,224,npc.status,dead,Baldemar Cruz,1,0,-0.03756361887138071,1379,0,0
+13,G1,843,npc.status,missing,Baldemar Cruz,1,0,-0.10386266071042649,1379,0,0
+13,G2,104,npc.status,captured,centinela mecánico,0,,,,0,0
+13,G2,132,npc.status,dead,centinela mecánico,1,0,,20,0,0
+13,G2,257,npc.status,captured,centinela mecánico,0,,,,1,0
+13,G2,349,npc.status,dead,centinela mecánico,1,0,,20,1,0
+13,G2,566,npc.status,dead,centinela mecánico,0,,,,0,0
+13,G2,586,npc.status,dead,centinela mecánico,1,0,,20,1,0
+14,G1,114,npc.status,missing,Valerius,1,0,-0.05123428294221133,269,1,1
+14,G1,185,npc.affinity,wary,Valerius,1,0,-0.11904991930850628,268,0,0
+14,G1,355,npc.affinity,devoted,Melida Corcho,1,0,-0.07109441913164427,1073,0,0
+14,G1,399,npc.affinity,loyal,Melida Corcho,1,0,-0.07723629474639893,1073,0,0
+14,G1,515,npc.affinity,devoted,Melida Corcho,1,0,-0.08601816870681234,1073,0,0
+14,G1,549,npc.affinity,loyal,Melida Corcho,1,1,0.0006808828914409704,1073,1,0
+14,G1,621,npc.affinity,devoted,Melida Corcho,1,0,-0.02387802399268002,1073,0,1
+14,G1,1145,npc.affinity,loyal,Melida Corcho,1,0,-0.020070910453796387,1073,0,0
+14,G1,1147,npc.affinity,devoted,Melida Corcho,1,0,-0.05698453700726824,1073,0,0
+14,G2,579,npc.affinity,cold,Madame Valeriane,1,0,-0.06186437597602279,743,0,1
+14,G2,649,npc.affinity,cordial,Madame Valeriane,1,0,-0.1109216755277217,743,0,0
+14,G2,723,npc.affinity,cordial,Toño Bravante,1,0,-0.13942947480743473,362,0,0
+14,G2,840,npc.affinity,loyal,Madame Valeriane,1,0,-0.09821064033190641,743,0,0
+14,G2,938,npc.affinity,devoted,Madame Valeriane,1,0,-0.08880487203199072,746,0,0
+14,G2,1186,npc.affinity,cordial,Madame Valeriane,1,0,-0.058371279555649136,743,0,0
+14,G2,1190,npc.affinity,loyal,Madame Valeriane,1,0,-0.10765149811745678,743,0,0
+14,G2,1261,npc.affinity,cordial,Madame Valeriane,1,0,-0.16805978035726865,743,0,0
+14,G2,1267,npc.affinity,loyal,Madame Valeriane,1,0,-0.09060661904733025,743,0,0
+14,G2,1302,npc.affinity,devoted,Madame Valeriane,1,0,-0.06208731546742652,743,0,0
+14,G2,1308,npc.affinity,cordial,Madame Valeriane,1,0,-0.07740717664914287,743,0,1
+14,G2,1325,npc.affinity,loyal,Madame Valeriane,1,0,-0.15855361723505312,743,0,0
+15,G1,136,npc.affinity,cordial,entidad orgánica,1,0,-0.1846640064006484,1213,0,0
+15,G1,156,npc.affinity,loyal,entidad orgánica,1,1,0.002435147326860343,1208,1,0
+15,G1,180,npc.affinity,devoted,entidad orgánica,1,0,-0.11536350660471051,1208,0,0
+15,G1,1138,npc.status,dead,entidad orgánica,1,0,-0.10597268618227995,1210,0,0
+15,G1,1192,npc.status,dead,entidad orgánica,1,0,-0.06262537165728976,1208,0,1
+15,G2,50,npc.affinity,loyal,Baldor Enna,1,0,,55,1,0
+15,G2,110,npc.affinity,loyal,Escribano anónimo,1,0,-0.030323140576625884,80,0,0
+15,G2,145,npc.affinity,loyal,Kaelen,0,,,,1,0
+15,G2,153,npc.affinity,loyal,Maese Alaric,1,0,,39,0,0
+15,G2,271,npc.affinity,devoted,Herminia Solar,1,0,-0.07779277354643088,179,0,0
+15,G2,396,npc.affinity,devoted,Escribano anónimo,1,0,-0.1261674619546802,81,0,0
+15,G2,405,npc.affinity,devoted,Maese Alaric,1,0,,39,0,0
+15,G2,739,npc.affinity,devoted,Baldor Enna,1,0,-0.11235728813346013,42,0,0
+15,G2,897,npc.affinity,loyal,Herminia Solar,1,1,0.03234563457256279,184,1,0
+15,G2,912,npc.affinity,loyal,Don Valerio,0,,,,0,0
+15,G2,917,npc.affinity,loyal,Maese Alaric,1,0,,39,1,0
+15,G2,947,npc.affinity,devoted,Maese Alaric,1,0,,39,0,0
+15,G2,950,npc.affinity,loyal,Maese Alaric,1,0,,39,0,0
+15,G2,995,npc.affinity,loyal,Escribano anónimo,1,0,-0.015462969946671068,80,1,0
+15,G2,1013,npc.affinity,loyal,Baldor Enna,1,0,,55,0,0
+15,G2,1015,npc.affinity,loyal,Elian Thorne,1,0,,50,0,0
+15,G2,1366,npc.affinity,devoted,Escribano anónimo,1,0,,88,0,0
+15,G2,1372,npc.affinity,devoted,Elian Thorne,1,0,,50,0,0
+16,G1,252,npc.affinity,cordial,Zoraida Puch,1,0,-0.042765476494049826,1352,0,0
+16,G1,339,npc.affinity,loyal,Zoraida Puch,1,0,-0.057475980670691706,1352,0,0
+16,G1,441,npc.affinity,devoted,Zoraida Puch,1,0,-0.003681599874401198,1352,0,1
+16,G1,464,npc.status,missing,Zoraida Puch,1,1,0.07833208441675488,1358,1,0
+16,G2,235,npc.status,captured,autómata,0,,,,1,0
+16,G2,247,npc.status,captured,autómata,0,,,,1,0
+16,G2,248,npc.status,dead,autómata,0,,,,1,0
+16,G2,279,npc.affinity,cold,tendero,1,0,-0.06600842613163516,207,0,0
+16,G2,282,npc.affinity,wary,tendero,1,0,-0.08858834694508744,207,0,0
+16,G2,286,npc.affinity,hostile,tendero,1,0,-0.062385774321437215,207,0,1
+16,G2,295,npc.affinity,wary,tendero,1,0,-0.10948629527221065,207,0,1
+16,G2,312,npc.affinity,hostile,tendero,1,0,,214,0,0
+16,G2,638,npc.affinity,cold,Hombre del tabardo gris,1,1,0.02261307732763118,483,1,1
+16,G2,647,npc.affinity,wary,Hombre del tabardo gris,1,1,0.007284581444126914,481,1,0
+16,G2,650,npc.affinity,hostile,Hombre del tabardo gris,1,1,0.0036902865465361367,481,1,1
+16,G2,667,npc.status,captured,Hombre del tabardo gris,1,0,-0.03873658295680826,481,1,0
+16,G2,736,npc.status,dead,Hombre del tabardo gris,1,1,0.02020430444453336,483,1,0
+16,G2,754,npc.status,captured,Hombre del tabardo gris,1,0,-0.029640577126758605,482,1,0
+16,G2,833,npc.status,dead,Hombre del tabardo gris,1,0,-0.13101015753267853,487,0,1
+16,G2,844,npc.status,captured,Hombre del tabardo gris,1,0,-0.03907758173741538,483,1,0
+16,G2,858,npc.status,missing,Hombre del tabardo gris,1,0,-0.12125059775445512,488,1,0
+16,G2,880,npc.affinity,cold,Hombre del tabardo gris,1,0,-0.13293143541934083,481,0,1
+16,G2,898,npc.status,captured,criatura de la máscara de hierro,0,,,,1,0
+16,G2,903,npc.affinity,cold,criatura de la máscara de hierro,0,,,,1,1
+16,G2,927,npc.status,dead,criatura de la máscara de hierro,0,,,,1,0
+16,G2,948,npc.affinity,wary,criatura de la máscara de hierro,0,,,,1,0
+16,G2,955,npc.affinity,hostile,criatura de la máscara de hierro,0,,,,0,0
+16,G2,968,npc.affinity,cold,Vaelen,1,0,,45,0,0
+16,G2,1012,npc.affinity,cold,Vaelen,1,0,-0.03385820948092577,34,1,0
+16,G2,1016,npc.affinity,wary,Vaelen,1,0,-0.035836213505206715,34,1,1
+16,G2,1021,npc.affinity,hostile,Vaelen,1,0,-0.04440723094897092,34,1,0
+16,G2,1043,npc.affinity,cold,Elian,1,0,-0.03853142664390752,212,1,1
+16,G2,1045,npc.affinity,wary,Elian,1,0,-0.0737733314861837,210,0,0
+16,G2,1049,npc.affinity,hostile,Elian,1,0,-0.12800860404968262,208,0,0
+16,G2,1397,npc.status,captured,Elian,1,0,-0.1467194223416296,213,0,0
+17,G1,190,npc.affinity,cordial,Bibiana Roth,1,0,-0.15274789614988005,1304,0,0
+17,G1,195,npc.affinity,loyal,Bibiana Roth,1,0,-0.11401116800202338,1304,0,0
+17,G1,251,npc.affinity,cordial,Bibiana Roth,1,0,-0.14982099321272713,1309,0,0
+17,G1,278,npc.affinity,cordial,Bibiana Roth,1,0,-0.10550026376570276,1304,0,0
+17,G1,362,npc.affinity,cold,Bibiana Roth,1,0,-0.10925956376463675,1304,0,1
+17,G1,366,npc.affinity,wary,Bibiana Roth,1,0,-0.051113493471155125,1304,0,0
+17,G1,381,npc.affinity,hostile,Bibiana Roth,1,0,-0.07446755609928168,1304,0,0
+17,G2,106,npc.affinity,cold,Hombre de la casaca carmesí,1,0,-0.1888109604432301,538,0,1
+17,G2,120,npc.affinity,wary,Hombre de la casaca carmesí,1,0,-0.01785111108104398,536,1,1
+17,G2,148,npc.affinity,hostile,Hombre de la casaca carmesí,1,0,-0.08746946562629698,537,0,0
+17,G2,182,npc.status,dead,Hombre de la casaca carmesí,1,0,,547,0,0
+17,G2,264,npc.status,captured,Hombre de la casaca carmesí,1,0,-0.1402167284375676,542,0,1
+17,G2,331,npc.status,dead,Hombre de la casaca carmesí,1,1,0.0002912694008198047,540,1,1
+17,G2,332,npc.status,dead,Hombre de la casaca carmesí,1,1,0.0002912694008198047,541,1,1
+17,G2,355,npc.affinity,cordial,Hombre de la casaca carmesí,1,0,,544,0,0
+17,G2,401,npc.affinity,cordial,Melquíades Sorna,1,0,,239,0,0
+17,G2,483,npc.affinity,cordial,Melquíades Sorna,1,0,-0.1377781008699458,228,0,0
+17,G2,494,npc.affinity,cold,Melquíades Sorna,1,0,-0.11198385182361004,228,0,0
+17,G2,498,npc.affinity,wary,Melquíades Sorna,1,0,-0.0653117856197486,228,0,0
+17,G2,715,npc.affinity,cold,Capitán Varos,1,0,-0.07838279008865412,123,0,1
+17,G2,744,npc.affinity,cordial,Capitán Varos,1,0,-0.04863736954129916,123,1,0
+17,G2,776,npc.affinity,cordial,Melquíades Sorna,1,0,,241,0,0
+17,G2,904,npc.affinity,loyal,Hombre de la casaca carmesí,1,0,-0.21451403707506767,536,0,0
+17,G2,918,npc.affinity,cold,Hombre de la casaca carmesí,1,0,-0.1676739195560516,536,0,0
+17,G2,958,npc.affinity,loyal,Kaelen,0,,,,1,0
+17,G2,1016,npc.affinity,cordial,Hombre de la casaca carmesí,1,0,-0.17358493804931763,543,0,0
+17,G2,1027,npc.affinity,cordial,Melquíades Sorna,1,0,-0.05943918913857238,228,1,0
+17,G2,1046,npc.affinity,loyal,Melquíades Sorna,1,0,-0.09513633048781911,228,0,0
+17,G2,1122,npc.affinity,cordial,Melquíades Sorna,1,0,-0.18963512061534216,228,0,0
+17,G2,1133,npc.status,dead,Melquíades Sorna,1,0,-0.12061471220167219,232,1,1
+17,G2,1136,npc.affinity,loyal,Hombre de la casaca carmesí,1,0,-0.21725219739753887,539,0,0
+17,G2,1139,npc.status,captured,Hombre de la casaca carmesí,1,0,-0.2689412186267748,541,0,0
+17,G2,1360,npc.affinity,loyal,Hombre de la casaca carmesí,1,0,-0.18961193195802906,536,0,0
+18,G1,56,npc.status,captured,Bartolo Quiñones,0,,,,1,0
+18,G1,247,npc.affinity,cordial,Bartolo Quiñones,0,,,,0,0
+18,G1,1248,npc.affinity,cold,Valerius,1,0,-0.10126119852066029,152,0,1
+18,G1,1272,npc.affinity,wary,Valerius,1,0,-0.0133424981424215,152,1,0
+18,G1,1341,npc.affinity,hostile,Valerius,1,0,-0.16573260238974075,152,0,0
+18,G2,22,npc.affinity,cold,Honorio Zapata,1,0,-0.14780770789629105,36,0,0
+18,G2,38,npc.affinity,wary,Honorio Zapata,1,0,-0.1358804523468493,31,0,0
+18,G2,58,npc.affinity,hostile,Honorio Zapata,1,0,-0.0720915497046325,34,1,0
+18,G2,87,npc.status,captured,Bloque de Emmental,1,0,-0.10678050302236797,26,1,0
+18,G2,90,npc.status,captured,Bloque de Emmental,1,0,-0.1105872392654419,27,1,0
+18,G2,92,npc.status,captured,Bloque de Emmental,1,0,-0.09111106294991489,29,1,0
+18,G2,94,npc.status,captured,Bloque de Emmental,1,0,-0.11898590043685431,31,1,0
+18,G2,207,npc.status,captured,Letra O,0,,,,1,1
+18,G2,208,npc.status,captured,Letra O,0,,,,1,0
+18,G2,223,npc.affinity,cold,Bartolo Quiñones,0,,,,0,0
+18,G2,322,npc.affinity,cold,Inspector Valerius,1,0,-0.0025174799988094687,47,1,1
+18,G2,332,npc.affinity,wary,Inspector Valerius,1,0,-0.07711783518725024,44,1,0
+18,G2,333,npc.status,captured,Inspector Valerius,1,0,-0.08245227355628815,44,1,0
+18,G2,344,npc.affinity,hostile,Inspector Valerius,1,0,-0.012082993458485736,44,1,0
+18,G2,390,npc.affinity,cold,Maestro Pimpón,1,0,-0.09700330975181481,385,0,0
+18,G2,393,npc.affinity,wary,Maestro Pimpón,1,0,-0.0688893583603375,384,0,0
+18,G2,571,npc.affinity,hostile,Maestro Pimpón,1,0,-0.08563484740647331,388,0,0
+18,G2,724,npc.status,captured,Maestro Pimpón,1,0,-0.1802679179064911,384,0,0
+18,G2,846,npc.status,captured,Autómata de mantenimiento,1,0,-0.10804570540881475,224,0,0
+18,G2,847,npc.status,dead,Autómata de mantenimiento,1,0,-0.05907881435986795,223,0,0
+18,G2,848,npc.status,dead,Autómata de mantenimiento,1,0,-0.05907881435986795,222,0,0
+18,G2,852,npc.affinity,cold,Autómata de mantenimiento,1,0,-0.0018225708965458054,221,1,0
+18,G2,860,npc.affinity,wary,Autómata de mantenimiento,1,0,-0.03655815124511719,219,0,0
+18,G2,870,npc.status,captured,Autómata de mantenimiento,1,0,-0.05976413661002655,219,0,0
+18,G2,871,npc.status,dead,Autómata de mantenimiento,1,0,-0.12298841842974473,219,0,0
+18,G2,875,npc.status,captured,Autómata de mantenimiento,1,0,-0.06526299801349411,220,0,0
+18,G2,877,npc.status,dead,Autómata de mantenimiento,1,0,-0.06048317395072278,220,0,0
+18,G2,883,npc.affinity,hostile,Autómata de mantenimiento,1,0,-0.06474967002868637,223,0,0
+18,G2,891,npc.status,dead,Autómata de mantenimiento,1,0,-0.1281024598909698,223,0,0
+18,G2,900,npc.status,dead,Autómata de mantenimiento,1,0,-0.026768069886524914,223,1,0
+18,G2,901,npc.status,dead,Autómata de mantenimiento,1,0,-0.026768069886524914,224,1,1
+18,G2,909,npc.affinity,hostile,Archivero Malcor,0,,,,0,0
+18,G2,925,npc.status,dead,Autómata de mantenimiento,1,0,-0.01651803824391007,223,1,0
+18,G2,941,npc.status,dead,Autómata de mantenimiento,1,0,-0.13488730779633296,222,1,0
+18,G2,963,npc.status,dead,Autómata de mantenimiento,1,0,-0.13134169969981013,219,0,0
+18,G2,968,npc.status,dead,Autómata de mantenimiento,1,0,-0.038135376006225186,219,1,0
+18,G2,969,npc.status,dead,Autómata de mantenimiento,1,1,0.013529881516586628,220,1,0
+18,G2,971,npc.status,dead,Autómata de mantenimiento,1,0,-0.11110027014948931,222,0,0
+18,G2,972,npc.status,captured,Autómata de mantenimiento,1,0,-0.07741806867043266,223,0,0
+18,G2,974,npc.status,dead,Autómata de mantenimiento,1,0,-0.12620302981144926,224,0,0
+18,G2,986,npc.status,dead,Autómata de mantenimiento,1,0,-0.18629807789021968,222,0,0
+18,G2,987,npc.status,dead,Autómata de mantenimiento,1,0,-0.06301218459046432,222,0,0
+18,G2,998,npc.status,captured,Autómata de mantenimiento,1,0,-0.034276149187759675,223,1,0
+18,G2,999,npc.status,dead,Autómata de mantenimiento,1,1,0.009571492957219263,223,1,0
+18,G2,1009,npc.status,captured,Autómata de mantenimiento,1,0,-0.09164541959762573,221,0,0
+18,G2,1012,npc.status,captured,Autómata de mantenimiento,1,0,-0.09950286149978638,221,0,0
+18,G2,1014,npc.status,dead,Autómata de mantenimiento,1,0,-0.04418555984977368,221,1,0
+18,G2,1015,npc.status,dead,Autómata de mantenimiento,1,0,-0.1527881667848875,221,0,1
+18,G2,1036,npc.status,dead,Autómata de mantenimiento,1,0,-0.1174214763855227,223,0,0
+18,G2,1037,npc.status,dead,Autómata de mantenimiento,1,0,-0.1067476304396281,223,0,0
+18,G2,1054,npc.status,dead,Autómata de mantenimiento,1,0,-0.15488252207286712,222,0,0
+18,G2,1055,npc.status,dead,Autómata de mantenimiento,1,0,-0.11652124275330433,222,0,0
+18,G2,1064,npc.status,dead,Autómata de mantenimiento,1,0,-0.1311563719513813,223,0,0
+18,G2,1066,npc.status,dead,Autómata de mantenimiento,1,0,-0.09494201247885103,221,0,0
+18,G2,1071,npc.status,dead,Autómata de mantenimiento,1,0,-0.031715990058064136,222,1,0
+18,G2,1073,npc.status,dead,Autómata de mantenimiento,1,0,-0.07502067312659833,222,0,0
+18,G2,1079,npc.status,captured,Autómata de mantenimiento,1,0,-0.06157822795379986,221,0,0
+18,G2,1083,npc.status,captured,Autómata de mantenimiento,1,0,-0.14194044696431773,224,0,0
+18,G2,1084,npc.status,dead,Autómata de mantenimiento,1,0,-0.10716195385478511,225,0,0
+18,G2,1125,npc.status,dead,Autómata de mantenimiento,1,0,-0.07164715230464924,220,0,0
+18,G2,1126,npc.status,dead,Autómata de mantenimiento,1,0,-0.12268592373344167,220,0,0
+18,G2,1137,npc.status,dead,Autómata de mantenimiento,1,1,0.00010822123029918806,221,1,0
+18,G2,1138,npc.status,dead,Autómata de mantenimiento,1,1,0.00010822122707221382,222,1,0
+18,G2,1139,npc.affinity,hostile,Malthus,0,,,,0,0
+18,G2,1212,npc.affinity,cold,Anomalía de Almacén de Grado Tres,1,0,,56,0,0
+18,G2,1214,npc.affinity,wary,Anomalía de Almacén de Grado Tres,1,0,-0.0242879027909223,55,0,0
+18,G2,1218,npc.affinity,hostile,Anomalía de Almacén de Grado Tres,1,0,-0.1729538524507248,55,0,0
+18,G2,1222,npc.status,dead,Anomalía de Almacén de Grado Tres,1,0,,56,0,0
+18,G2,1230,npc.status,dead,Anomalía de Almacén de Grado Tres,1,0,,59,0,0
+18,G2,1282,npc.status,dead,Glotón de setos,1,0,-0.14736197213354385,155,0,0
+18,G2,1379,npc.status,captured,Sapo de musgo,0,,,,1,0
+18,G2,1384,npc.status,dead,Sapo de musgo,0,,,,1,0
+18,G2,1392,npc.affinity,cold,Sapo de musgo,0,,,,1,0
+19,G1,345,npc.affinity,cordial,Isidoro Mena,1,0,-0.10706781702829526,339,0,0
+19,G1,359,npc.status,captured,Isidoro Mena,1,0,-0.1064662901620187,345,0,0
+19,G1,366,npc.affinity,cold,Leo Varga,1,0,-0.04900260068092133,1086,0,0
+19,G1,396,npc.affinity,wary,Leo Varga,1,0,-0.03864983830136304,1086,0,0
+19,G1,579,npc.affinity,hostile,Leo Varga,1,0,-0.05885976552963257,1086,0,0
+19,G1,780,npc.status,captured,Leo Varga,1,0,-0.09523056802385244,1086,0,1
+19,G1,830,npc.status,dead,Leo Varga,1,0,-0.05065603589895007,1087,0,1
+19,G1,831,npc.status,dead,Leo Varga,1,0,-0.09585817193868396,1087,0,1
+19,G1,833,npc.status,dead,Leo Varga,1,0,-0.1729912314403319,1087,0,1
+19,G1,844,npc.status,captured,Leo Varga,1,0,-0.10607509540616333,1087,0,0
+19,G1,850,npc.status,captured,Leo Varga,1,0,-0.2107220326885516,1086,0,0
+19,G1,861,npc.status,dead,Leo Varga,1,0,-0.17846387465015534,1087,0,1
+19,G1,862,npc.status,dead,Leo Varga,1,0,-0.1801377091396117,1087,0,0
+19,G1,1014,npc.status,dead,Leo Varga,1,0,-0.16544355487706897,1086,0,0
+19,G1,1016,npc.status,dead,Leo Varga,1,0,-0.01049502229573962,1086,0,0
+19,G1,1084,npc.status,captured,Leo Varga,1,1,0.07297062003962751,1087,1,0
+19,G1,1280,npc.status,dead,Leo Varga,1,0,-0.11112510495632288,1086,0,0
+19,G1,1311,npc.status,captured,Leo Varga,1,0,-0.09738488028717285,1086,0,0
+19,G2,58,npc.status,dead,Ciro Balma,0,,,,0,0
+19,G2,486,npc.affinity,cold,El hombre de la cicatriz en la mejilla,0,,,,0,1
+19,G2,490,npc.affinity,wary,El hombre de la cicatriz en la mejilla,0,,,,1,0
+19,G2,505,npc.status,captured,El hombre de la cicatriz en la mejilla,0,,,,0,1
+19,G2,513,npc.affinity,hostile,El hombre de la cicatriz en la mejilla,0,,,,0,0
+19,G2,541,npc.status,dead,El hombre de la cicatriz en la mejilla,0,,,,1,1
+19,G2,553,npc.status,dead,El hombre de la cicatriz en la mejilla,0,,,,1,0
+19,G2,686,npc.status,dead,El hombre de la cicatriz en la mejilla,0,,,,1,1
+19,G2,778,npc.status,dead,Híbrido de metal y roca,1,0,-0.07638023351557699,148,1,1
+19,G2,779,npc.status,dead,Híbrido de metal y roca,1,0,-0.07638023351557699,149,1,1
+19,G2,831,npc.status,dead,Híbrido de metal y roca,1,0,-0.0011792476915442052,149,1,0
+19,G2,865,npc.status,dead,Híbrido de metal y roca,1,0,-0.13929337902819616,152,0,0
+19,G2,866,npc.status,dead,Híbrido de metal y roca,1,0,,152,0,1
+19,G2,875,npc.status,dead,Híbrido de metal y roca,1,0,-0.19393560958676215,154,0,0
+19,G2,899,npc.status,dead,Híbrido de metal y roca,1,1,0.05677940168626294,150,1,0
+19,G2,903,npc.status,dead,Híbrido de metal y roca,1,0,,153,0,0
+19,G2,916,npc.status,dead,Híbrido de metal y roca,1,0,,153,0,0
+19,G2,917,npc.status,dead,Híbrido de metal y roca,1,0,,153,0,0
+19,G2,937,npc.status,dead,Híbrido de metal y roca,1,1,0.012506359038758408,155,1,0
+19,G2,938,npc.status,dead,Híbrido de metal y roca,1,1,0.012506359038758408,155,1,0
+19,G2,987,npc.status,dead,Híbrido de metal y roca,1,0,-0.13852105873572118,150,0,0
+19,G2,1006,npc.affinity,cold,Híbrido de metal y roca,1,0,,153,0,1
+19,G2,1015,npc.status,dead,Híbrido de metal y roca,1,0,-0.16341634172985808,149,1,0
+19,G2,1034,npc.affinity,wary,Híbrido de metal y roca,1,0,-0.07222134088322307,143,0,0
+19,G2,1053,npc.status,dead,Híbrido de metal y roca,1,0,-0.10725747444034761,151,0,0
+19,G2,1054,npc.status,dead,Híbrido de metal y roca,1,0,,152,0,0
+19,G2,1068,npc.status,dead,Híbrido de metal y roca,1,0,-0.2190597669815737,152,0,0
+19,G2,1108,npc.status,dead,Híbrido de metal y roca,1,0,-0.13037662143985962,151,0,0
+19,G2,1124,npc.status,captured,Híbrido de metal y roca,1,0,-0.16157834218498002,148,0,0
+19,G2,1125,npc.status,dead,Híbrido de metal y roca,1,0,-0.1357795662188368,149,0,0
+19,G2,1145,npc.status,dead,Híbrido de metal y roca,1,1,0.001780002834619876,147,1,0
+19,G2,1196,npc.status,dead,Híbrido de metal y roca,1,0,-0.10220542232778063,147,0,0
+19,G2,1244,npc.affinity,cold,Capitán Varos,1,0,-0.043266935063660195,71,1,1
+19,G2,1258,npc.affinity,wary,Capitán Varos,1,0,-0.07972321811166605,66,0,0
+19,G2,1262,npc.affinity,hostile,Capitán Varos,1,1,0.03012459559604652,66,1,0
+19,G2,1263,npc.status,captured,Capitán Varos,1,0,-0.06876582818036259,66,1,0
+19,G2,1266,npc.status,dead,Capitán Varos,1,0,-0.0756412103389974,66,1,0
+19,G2,1267,npc.status,dead,Capitán Varos,1,0,-0.03247075188939441,67,1,0
+19,G2,1286,npc.status,captured,Capitán Varos,1,0,-0.09583726638069678,67,1,0
+19,G2,1289,npc.status,captured,Capitán Varos,1,0,-0.11401873826980591,66,1,1
+19,G2,1293,npc.affinity,cold,Capitán Varos,1,0,-0.04523265678666566,66,1,1
+19,G2,1362,npc.affinity,cold,Malakor,0,,,,1,1
+19,G2,1378,npc.status,dead,Criatura de piel cenicienta,1,1,0.04717749677750416,186,1,0
+19,G2,1379,npc.status,dead,Criatura de piel cenicienta,1,1,0.008118251392073006,185,1,1
+19,G2,1386,npc.status,dead,Criatura de piel cenicienta,1,1,0.0015710612123632783,184,1,1
+19,G2,1387,npc.status,dead,Criatura de piel cenicienta,1,0,-0.046127064909304294,185,1,1
+20,G1,300,npc.affinity,devoted,Matilde Harinosa,1,0,-0.07377832797792239,1370,0,0
+20,G1,802,npc.affinity,loyal,Matilde Harinosa,1,0,-0.06866537706072595,1370,0,0
+20,G1,809,quest.status,completed,La cláusula olvidada,0,,,,0,1
+20,G2,298,npc.affinity,cold,Alaric el Escriba,1,0,-0.0838313310265909,178,0,1
+20,G2,311,npc.affinity,wary,Alaric el Escriba,1,0,-0.07481262938803546,177,0,0
+20,G2,323,npc.affinity,hostile,Alaric el Escriba,1,0,-0.06497830935366733,177,0,0
+20,G2,439,npc.status,dead,Autómata de hierro,0,,,,1,0
+20,G2,445,npc.status,captured,Alaric el Escriba,1,0,-0.05151102570955235,177,1,0
+20,G2,565,npc.affinity,cordial,Alaric el Escriba,1,0,,190,0,0
+20,G2,852,npc.status,dead,Valerius,1,1,0.07678637569228186,80,1,0
+20,G2,1028,npc.affinity,cold,Archivero adjunto,1,0,-0.06707326228168531,49,0,1
+20,G2,1043,npc.affinity,wary,Archivero adjunto,1,0,-0.07651754062303351,47,0,0
+20,G2,1048,npc.affinity,hostile,Archivero adjunto,1,0,-0.11995799510919236,47,0,0
+20,G2,1171,npc.affinity,cold,"Barnaby ""El Glotón""",1,0,-0.038648899881643106,69,1,1
+20,G2,1184,npc.affinity,wary,"Barnaby ""El Glotón""",1,0,-0.08625949785000098,69,0,0
+20,G2,1252,npc.affinity,cold,Pipo,0,,,,1,0
+20,G2,1273,npc.affinity,hostile,"Barnaby ""El Glotón""",1,0,-0.04420595834184193,74,1,0
+20,G2,1329,npc.affinity,hostile,Brasas Lentas,1,0,-0.019639545554317905,229,1,0
+21,G1,58,npc.status,dead,Parásito eléctrico,0,,,,0,1
+21,G1,122,npc.status,dead,Parásito eléctrico,0,,,,0,0
+21,G1,312,npc.status,dead,Parásito eléctrico,0,,,,0,0
+21,G1,356,npc.status,dead,Parásito eléctrico,0,,,,0,1
+21,G1,706,npc.affinity,cold,técnico,1,0,-0.04961740970611572,774,0,0
+21,G1,904,npc.affinity,wary,técnico,1,0,-0.04124452520850064,774,0,0
+21,G1,1037,npc.affinity,cold,técnico,1,0,-0.018590491371130002,774,0,1
+21,G1,1293,npc.affinity,cordial,técnico,1,0,-0.10652570167337083,774,0,0
+21,G1,1359,npc.affinity,loyal,técnico,1,0,-0.02121581722029109,774,0,0
+21,G1,1364,npc.affinity,devoted,técnico,1,0,-0.11933364569339411,774,0,0
+21,G2,161,npc.status,dead,Serafín Brea,1,0,-0.25468419360355965,1000,0,1
+21,G2,1369,npc.affinity,loyal,Serafín Brea,1,0,-0.09315415380786984,994,0,0
+22,G1,433,npc.affinity,cold,Casimira Ortigal,1,0,-0.10430853315490085,640,0,1
+22,G1,509,npc.affinity,wary,Casimira Ortigal,1,0,-0.08634064337598013,640,0,0
+22,G1,599,npc.affinity,hostile,Casimira Ortigal,1,0,-0.022946496459084753,640,0,1
+22,G1,652,npc.affinity,wary,Casimira Ortigal,1,0,-0.07257205247879028,645,0,0
+22,G1,815,npc.affinity,cordial,La Tejedora de Expiaciones,1,0,-0.004993696632026312,263,1,0
+22,G1,818,npc.status,dead,La Tejedora de Expiaciones,1,0,-0.12502613504487914,263,0,1
+22,G1,819,npc.status,dead,La Tejedora de Expiaciones,1,0,-0.04579752410665017,263,1,0
+22,G2,84,npc.status,dead,Casimira Ortigal,1,0,-0.05048704147338867,136,1,0
+22,G2,302,npc.affinity,cordial,Lázaro Ortigal,1,0,-0.1056467724485225,96,1,0
+22,G2,1241,npc.affinity,cold,Valerius,1,0,-0.0696501198562327,45,1,0
+23,G1,1114,npc.status,dead,masa blindada,1,0,,407,0,0
+23,G1,1148,npc.status,dead,masa blindada,1,0,-0.15834701587230393,406,0,0
+23,G1,1149,npc.status,dead,masa blindada,1,0,-0.14745268960571467,406,0,0
+23,G1,1159,npc.status,dead,masa blindada,1,0,-0.12839512486516036,405,0,1
+23,G1,1183,npc.status,dead,masa blindada,1,0,-0.04674828052520752,405,1,0
+23,G1,1204,npc.status,dead,masa blindada,1,0,-0.04780708022352065,404,0,1
+23,G1,1266,npc.status,dead,masa blindada,1,0,-0.13618902104243014,404,0,0
+23,G1,1379,npc.status,dead,masa blindada,1,0,-0.20253220159912833,405,0,0
+23,G2,781,npc.status,dead,Cefalópodo mecánico,0,,,,0,0
+23,G2,1059,npc.status,dead,Criatura del ancla,1,0,-0.05434742569923401,251,1,1
+23,G2,1111,npc.status,dead,Guardián del Peso,1,0,,134,1,0
+23,G2,1125,npc.status,dead,Criatura del ancla,1,0,-0.1681029736995695,255,0,0
+23,G2,1137,npc.status,dead,Cefalópodo mecánico,0,,,,0,0
+23,G2,1174,npc.status,dead,Criatura del ancla,1,0,-0.09200434381909273,253,0,0
+23,G2,1277,npc.status,dead,Cefalópodo mecánico,0,,,,0,1
+24,G1,68,npc.affinity,cold,Fermín Llavín,1,0,-0.07284903526306152,1094,0,1
+24,G1,102,npc.affinity,wary,Fermín Llavín,1,0,-0.1515756920439617,1097,0,0
+24,G1,147,npc.affinity,cold,Fermín Llavín,1,0,-0.05324745178222656,1094,0,0
+24,G1,155,npc.affinity,wary,Fermín Llavín,1,0,-0.115492167290559,1094,0,0
+24,G1,184,npc.affinity,hostile,Fermín Llavín,1,0,-0.008467366524990028,1094,0,0
+24,G1,976,npc.status,captured,Fermín Llavín,1,0,-0.1438470150659631,1094,0,0
+24,G1,1165,npc.affinity,cold,Figura encapuchada,1,0,-0.06181957394512594,262,0,1
+24,G1,1171,npc.affinity,cold,Figura encapuchada,1,1,0.007740730060718293,260,1,1
+24,G1,1249,npc.affinity,wary,Figura encapuchada,1,0,-0.09590758329941018,259,0,0
+24,G1,1370,npc.affinity,loyal,Figura encapuchada,1,1,1.896865137129833e-05,259,1,0
+24,G2,26,npc.affinity,cordial,Fermín Llavín,1,0,-0.06070742700438836,97,0,0
+24,G2,40,npc.affinity,loyal,Fermín Llavín,1,0,-0.08688122034072876,91,1,0
+24,G2,91,npc.affinity,devoted,Fermín Llavín,1,0,-0.07688828270961545,96,1,0
+24,G2,119,npc.affinity,loyal,Fermín Llavín,1,1,0.043363411961952814,91,1,0
+24,G2,145,npc.affinity,devoted,Fermín Llavín,1,0,,104,0,0
+24,G2,148,npc.affinity,devoted,Ubaldo Cerrojo,0,,,,0,0
+24,G2,174,npc.affinity,cold,Buster,1,0,-0.05028030518747206,194,1,0
+24,G2,181,npc.affinity,wary,Buster,1,0,-0.12275004078429586,194,0,0
+24,G2,255,npc.affinity,cold,Buster,1,1,0.04840622333098887,194,1,1
+24,G2,355,npc.affinity,cordial,Buster,1,0,-0.04696066782527131,199,1,0
+24,G2,368,npc.affinity,loyal,Buster,1,0,-0.09827156172781437,194,0,0
+24,G2,407,npc.affinity,devoted,Buster,1,0,-0.0034794139526583834,194,1,0
+24,G2,669,npc.affinity,devoted,Alistair el Áureo,0,,,,0,0
+24,G2,707,npc.affinity,cordial,Barnaby,1,0,-0.08615122044985946,35,1,0
+24,G2,728,npc.affinity,loyal,Barnaby,1,0,-0.023413381560645874,34,1,0
+24,G2,732,npc.affinity,cordial,Barnaby,1,0,-0.06936492857811105,34,1,0
+24,G2,738,npc.affinity,loyal,Barnaby,1,0,-0.06893482995151168,34,1,0
+24,G2,740,npc.affinity,devoted,Barnaby,1,0,-0.15324800610542288,34,0,1
+24,G2,835,npc.affinity,cordial,Capitán Vane,1,0,-0.13638911030357437,139,0,0
+24,G2,864,npc.affinity,cordial,Buster,1,0,,207,0,0
+24,G2,933,npc.affinity,loyal,Capitán Vane,1,1,0.0639907717704773,143,1,0
+24,G2,1065,npc.affinity,devoted,Capitán Vane,1,0,-0.14109013256162062,139,0,0
+24,G2,1143,npc.affinity,devoted,Buster,1,0,,207,0,0
+24,G2,1246,npc.affinity,devoted,pastelera,1,0,-0.05014854669570923,36,1,0
+25,G1,1031,npc.affinity,cordial,Faustino Vara,1,0,-0.029804279670019862,379,1,0
+25,G1,1056,npc.affinity,loyal,Faustino Vara,1,0,-0.01774530239962302,379,1,0
+25,G2,37,npc.affinity,cordial,Eusebio Plumilla,1,0,-0.018997687667539287,35,1,0
+25,G2,487,npc.affinity,loyal,Eusebio Plumilla,1,0,,45,0,0
+25,G2,580,npc.status,dead,Faustino Vara,1,0,-0.10943136849329849,672,0,0
+25,G2,1018,npc.affinity,cordial,Eusebio Plumilla,1,0,,45,0,0
+25,G2,1221,npc.affinity,devoted,Faustino Vara,1,0,-0.05568022513476656,666,0,0
+25,G2,1350,npc.affinity,devoted,Ottilie Ventura,0,,,,0,0
+26,G1,218,npc.status,missing,Nicasio Tala,1,0,-0.045134921999739674,420,1,0
+26,G1,478,npc.affinity,loyal,criatura metálica,1,0,-0.06977918964837826,324,0,0
+26,G1,511,npc.affinity,devoted,criatura metálica,1,0,-0.13797888324200624,324,0,0
+26,G1,695,npc.affinity,loyal,superviviente,1,0,-0.13763821748004357,556,0,0
+26,G1,697,npc.affinity,devoted,superviviente,1,0,-0.06407820454543578,554,0,0
+26,G1,1238,npc.status,dead,criatura metálica,1,0,,334,0,1
+26,G2,151,npc.affinity,loyal,Nicasio Tala,1,1,0.014073833070616937,119,1,0
+26,G2,424,npc.affinity,devoted,Nicasio Tala,1,1,0.13140610969917588,119,1,0
+26,G2,449,npc.status,missing,Nicasio Tala,1,0,-0.030723010225987668,118,1,1
+26,G2,718,npc.affinity,loyal,zorro del bosque,0,,,,1,0
+26,G2,732,npc.status,dead,zorro del bosque,0,,,,0,0
+26,G2,733,npc.status,dead,zorro del bosque,0,,,,0,0
+26,G2,846,npc.affinity,devoted,zorro del bosque,0,,,,1,0
+26,G2,876,npc.status,dead,zorro del bosque,0,,,,0,1
+26,G2,990,npc.status,dead,Desconocido herido,0,,,,1,0
+26,G2,991,npc.status,dead,Desconocido herido,0,,,,1,1
+26,G2,1052,npc.status,missing,criatura deforme,0,,,,0,1
+26,G2,1127,npc.status,dead,criatura deforme,0,,,,0,0
+26,G2,1146,npc.affinity,loyal,criatura deforme,0,,,,0,0
+26,G2,1147,npc.affinity,devoted,criatura deforme,0,,,,0,0
+26,G2,1148,npc.affinity,devoted,Desconocido herido,0,,,,1,0
+26,G2,1172,npc.affinity,loyal,criatura deforme,0,,,,0,0
+26,G2,1189,npc.affinity,cordial,criatura deforme,0,,,,1,0
+26,G2,1198,npc.affinity,wary,criatura deforme,0,,,,1,0
+26,G2,1207,npc.status,missing,zorro del bosque,0,,,,0,1
+26,G2,1253,npc.affinity,loyal,criatura deforme,0,,,,0,0
+26,G2,1256,npc.affinity,devoted,criatura deforme,0,,,,0,0
+26,G2,1340,npc.status,dead,criatura deforme,0,,,,0,1
+26,G2,1372,npc.status,missing,criatura deforme,0,,,,0,1
+26,G2,1378,npc.status,missing,criatura deforme,0,,,,1,1
+27,G1,759,npc.status,dead,Amalgama de basalto,0,,,,0,0
+27,G1,768,npc.status,dead,Amalgama de basalto,0,,,,1,0
+27,G1,884,npc.status,dead,Amalgama de basalto,0,,,,0,1
+27,G1,898,npc.status,dead,Amalgama de basalto,0,,,,0,1
+27,G1,1138,npc.status,dead,Anselmo Vela,1,0,-0.011393996394038486,1368,0,0
+27,G1,1308,npc.affinity,loyal,Anselmo Vela,1,0,-0.0738296303362258,1368,0,0
+27,G1,1309,npc.affinity,devoted,Anselmo Vela,1,0,-0.07901494455159364,1368,0,0
+27,G2,42,npc.affinity,loyal,El hombre del anillo de sello,1,0,,54,0,0
+27,G2,44,npc.affinity,cordial,El hombre del anillo de sello,1,0,,54,0,0
+27,G2,48,npc.affinity,cold,El hombre del anillo de sello,1,0,,53,1,1
+27,G2,52,npc.affinity,wary,El hombre del anillo de sello,1,0,,53,0,0
+27,G2,59,npc.affinity,hostile,El hombre del anillo de sello,1,0,-0.07263352245890631,51,1,0
+27,G2,61,npc.affinity,wary,El hombre del anillo de sello,1,1,0.015148487250512654,51,1,0
+27,G2,82,npc.status,dead,Alaric,0,,,,1,0
+27,G2,141,npc.affinity,cold,El Guardián del Umbral,1,0,-0.019568730319170058,36,1,1
+27,G2,149,npc.affinity,wary,El Guardián del Umbral,1,0,-0.05590384780973057,34,1,1
+27,G2,160,npc.affinity,hostile,El hombre del anillo de sello,1,0,,53,0,0
+27,G2,168,npc.affinity,wary,El hombre del anillo de sello,1,0,-0.12382934586972028,51,1,0
+27,G2,185,npc.status,dead,El Guardián del Umbral,1,0,-0.09795376668473432,39,1,0
+27,G2,235,npc.affinity,hostile,El hombre del anillo de sello,1,0,,54,1,0
+27,G2,281,npc.status,dead,El Guardián del Umbral,1,0,,47,0,1
+27,G2,408,npc.status,missing,El hombre del anillo de sello,1,0,,51,0,0
+27,G2,524,npc.affinity,cold,El hombre del anillo de sello,1,0,,54,0,1
+27,G2,561,npc.affinity,cold,Valerius Thorne,1,0,-0.004111669975886745,221,1,1
+27,G2,610,npc.status,dead,El Susurro del Hambre,1,0,-0.2311267435550689,102,1,0
+27,G2,632,npc.status,dead,El Susurro del Hambre,1,0,,103,0,1
+27,G2,640,npc.status,dead,El Susurro del Hambre,1,0,-0.06402146816253662,100,1,1
+27,G2,641,npc.status,dead,El Susurro del Hambre,1,0,-0.10931937340609221,100,0,1
+27,G2,665,npc.status,dead,El Susurro del Hambre,1,0,,104,0,1
+27,G2,666,npc.status,dead,El Susurro del Hambre,1,0,,104,0,1
+27,G2,673,npc.status,dead,El Susurro del Hambre,1,0,,104,0,1
+27,G2,695,npc.status,dead,El Susurro del Hambre,1,0,,103,0,1
+27,G2,721,npc.status,dead,El Susurro del Hambre,1,0,,103,0,1
+27,G2,722,npc.status,dead,El Susurro del Hambre,1,0,,103,1,1
+27,G2,756,npc.status,dead,El Susurro del Hambre,1,0,,103,0,0
+27,G2,842,npc.status,dead,El Guardián del Umbral,1,0,,47,0,0
+27,G2,862,npc.status,dead,El Susurro del Hambre,1,0,,104,0,1
+27,G2,913,npc.status,dead,El Susurro del Hambre,1,0,,104,0,0
+27,G2,950,npc.status,dead,El Susurro del Hambre,1,1,0.01877139635009939,97,1,1
+27,G2,967,npc.status,dead,El Susurro del Hambre,1,0,,104,0,1
+27,G2,1005,npc.affinity,cold,"Elio, el Silencioso",1,0,-0.07622735797958002,66,0,1
+27,G2,1020,npc.status,dead,"Elio, el Silencioso",1,0,-0.01806223609898161,61,1,0
+27,G2,1041,npc.status,captured,"Elio, el Silencioso",1,1,0.05329890434623108,61,1,0
+27,G2,1051,npc.affinity,wary,"Elio, el Silencioso",1,0,-0.10990139198887072,61,0,0
+27,G2,1085,npc.status,dead,El Susurro del Hambre,1,0,,104,0,1
+27,G2,1106,npc.affinity,cold,Valerius Thorne,1,0,-0.11353097488907038,217,0,1
+27,G2,1107,npc.affinity,wary,Valerius Thorne,1,0,-0.07442103017358859,217,0,0
+27,G2,1111,npc.affinity,hostile,Valerius Thorne,1,0,-0.07418240269963428,217,0,0
+27,G2,1188,npc.status,dead,El Susurro del Hambre,1,0,-0.15657564191351225,103,0,0
+27,G2,1311,npc.status,dead,Valerius Thorne,1,0,-0.017559270213268086,221,1,0
+27,G2,1348,npc.status,dead,El Susurro del Hambre,1,0,,103,1,0

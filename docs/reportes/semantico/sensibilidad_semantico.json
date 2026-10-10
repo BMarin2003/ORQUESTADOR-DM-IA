@@ -1,0 +1,81 @@
+{
+ "sha256_expectativas": "d74ec82fc0a5a3874d62353d9f27fe904354899ad99db4546eec87ddaf2e8a45",
+ "expectativas": {
+  "SQ1|parafrasis_sin_lexema|margen": "sube",
+  "SQ2|texto_ajeno|margen": "baja",
+  "SC1|oracion_neutra|margen": "sin_cambio",
+  "SC2|nombre_sin_cambio|margen": "sin_cambio"
+ },
+ "semilla": 20261008,
+ "n_por_perturbacion": 40,
+ "resultados": {
+  "SQ1": {
+   "clave": "SQ1|parafrasis_sin_lexema|margen",
+   "esperado": "sube",
+   "n": 40,
+   "delta": 1.0,
+   "p": 1.8189894035458565e-12,
+   "mediana": 0.20062594496935288,
+   "ic": [
+    0.1649330553467741,
+    0.21600138019018733
+   ],
+   "se_apagan": 0,
+   "se_encienden": 39,
+   "p_holm": 3.637978807091713e-12,
+   "observado": "sube",
+   "veredicto": "responde"
+  },
+  "SQ2": {
+   "clave": "SQ2|texto_ajeno|margen",
+   "esperado": "baja",
+   "n": 40,
+   "delta": -1.0,
+   "p": 1.8189894035458565e-12,
+   "mediana": -0.1347880799122682,
+   "ic": [
+    -0.15167691420638385,
+    -0.11166672943152278
+   ],
+   "se_apagan": 38,
+   "se_encienden": 0,
+   "p_holm": 3.637978807091713e-12,
+   "observado": "baja",
+   "veredicto": "responde"
+  },
+  "SC1": {
+   "clave": "SC1|oracion_neutra|margen",
+   "esperado": "sin_cambio",
+   "n": 40,
+   "delta": 0.0,
+   "p": 1.0,
+   "mediana": 0.0,
+   "ic": [
+    0.0,
+    0.0
+   ],
+   "se_apagan": 0,
+   "se_encienden": 0,
+   "p_holm": 1.0,
+   "observado": "sin_cambio",
+   "veredicto": "responde"
+  },
+  "SC2": {
+   "clave": "SC2|nombre_sin_cambio|margen",
+   "esperado": "sin_cambio",
+   "n": 40,
+   "delta": 0.625,
+   "p": 5.960464477539063e-08,
+   "mediana": 0.01550351375319553,
+   "ic": [
+    0.0,
+    0.02761627526846039
+   ],
+   "se_apagan": 0,
+   "se_encienden": 8,
+   "p_holm": 1.1920928955078125e-07,
+   "observado": "sube",
+   "veredicto": "cambio inesperado"
+  }
+ }
+}

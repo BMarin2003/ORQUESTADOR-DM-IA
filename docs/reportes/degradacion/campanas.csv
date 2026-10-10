@@ -1,0 +1,55 @@
+campaign_id,title,architecture
+e9bef82d-8b7a-41e9-8cb6-8e6af542e514,Par 01 (real) · G2 (Monolítico) · Puerto Salazón,monolithic
+68a5896f-e7bb-4479-8403-a8403cf80838,Par 01 (real) · G1 (Multiagente) · Puerto Salazón,mas
+9d22ac2a-a09f-4e04-8eeb-2606125988ef,Par 03 (real) · G1 (Multiagente) · Vega del Yelmo,mas
+5653d917-4744-43e3-90ba-8190a22a126c,Par 02 (real) · G2 (Monolítico) · Alto Ferrena,monolithic
+ff0c8110-caa5-48fa-b285-7dc903cc1d26,Par 03 (real) · G2 (Monolítico) · Vega del Yelmo,monolithic
+84eb6728-52d3-434c-924c-2c21b6099c92,Par 02 (real) · G1 (Multiagente) · Alto Ferrena,mas
+fbe6d980-964f-455c-89d9-96d34d9653fe,Par 06 (real) · G1 (Multiagente) · Poza Seca,mas
+b7a090cf-032e-4a87-be01-e03fa88a9917,Par 05 (real) · G1 (Multiagente) · Vado Cabrero,mas
+fc6c19b0-49a6-4abb-ad44-b12de9438828,Par 04 (real) · G2 (Monolítico) · Caleta Lumbre,monolithic
+d8bf034a-bcc9-4a12-999e-490be27c8a2e,Par 06 (real) · G2 (Monolítico) · Poza Seca,monolithic
+ee613cb4-c84c-4c69-b276-bbf97e0cbbc6,Par 04 (real) · G1 (Multiagente) · Caleta Lumbre,mas
+0bc0b20b-0dba-454d-a32e-94fbeb24dddf,Par 05 (real) · G2 (Monolítico) · Vado Cabrero,monolithic
+41fedb73-2345-439b-852c-87ad806e1015,Par 07 (real) · G1 (Multiagente) · Umbral Hondo,mas
+cebcafd3-23cc-4d61-8e2e-9360587b7464,Par 14 (real) · G2 (Monolítico) · Roble Cantor,monolithic
+494e1d7d-9d10-43da-ac4b-041935b24c8b,Par 16 (real) · G1 (Multiagente) · Cruce Salado,mas
+7dc9fe9d-9052-4252-aa0c-f86490b96dbe,Par 10 (real) · G1 (Multiagente) · Puente Roto,mas
+5f050643-72d2-4c9f-8209-9c9ce008c61e,Par 12 (real) · G1 (Multiagente) · Muelle Gris,mas
+d78a7a3e-f37d-407b-ac5b-5c9895064732,Par 09 (real) · G1 (Multiagente) · Bruma Honda,mas
+4521da96-8eda-4fb7-9464-ce09d417d26f,Par 15 (real) · G1 (Multiagente) · Solar Viejo,mas
+259f2fdd-2857-4ebb-ad4f-bde8ea297e04,Par 11 (real) · G1 (Multiagente) · Cima Clara,mas
+41674211-baed-424c-9187-3a6429dd8400,Par 09 (real) · G2 (Monolítico) · Bruma Honda,monolithic
+b6c3eb75-cb1a-48de-a827-d082415b4b74,Par 11 (real) · G2 (Monolítico) · Cima Clara,monolithic
+7231e456-9284-40b3-83ed-d1de4dc4e33e,Par 13 (real) · G1 (Multiagente) · Piedra Yerma,mas
+dc7af6f4-453a-4542-a2b5-e7cdd46a30b2,Par 17 (real) · G1 (Multiagente) · Corral Alto,mas
+45f450c1-29bc-4dde-8960-82129291f1ad,Par 17 (real) · G2 (Monolítico) · Corral Alto,monolithic
+8d8e8f27-41d7-4573-a294-c79d2378b6e5,Par 14 (real) · G1 (Multiagente) · Roble Cantor,mas
+79db3083-9993-458a-86a9-12ddec04e192,Par 15 (real) · G2 (Monolítico) · Solar Viejo,monolithic
+ebfcb92e-2eeb-4235-a1d2-73630f75a631,Par 08 (real) · G2 (Monolítico) · Torre Alondra,monolithic
+1ea2fbfb-b54a-42b2-b8dc-03dbef93990c,Par 08 (real) · G1 (Multiagente) · Torre Alondra,mas
+9dcf64ea-8da4-4dcf-b168-4f960b839c04,Par 10 (real) · G2 (Monolítico) · Puente Roto,monolithic
+f42e9672-4df4-40bf-a912-02fba5ae396e,Par 07 (real) · G2 (Monolítico) · Umbral Hondo,monolithic
+8845df6a-3248-47ef-9844-7c234724d7f9,Par 13 (real) · G2 (Monolítico) · Piedra Yerma,monolithic
+6f319319-f39f-4902-9f11-a5d5a17798af,Par 12 (real) · G2 (Monolítico) · Muelle Gris,monolithic
+e1e30d0b-9dd8-454c-b297-44c08204610f,Par 16 (real) · G2 (Monolítico) · Cruce Salado,monolithic
+7c8d9bfe-aa79-4142-80b3-b520e013b9d0,Par 19 (real) · G2 (Monolítico) · Karhad,monolithic
+7b598b5b-8d8d-4012-a9cf-656d1f2f5109,Par 20 (real) · G1 (Multiagente) · Brasas Lentas,mas
+683123ee-89b1-48ad-9d29-6100b6e822d4,Par 23 (real) · G1 (Multiagente) · Sal Negra,mas
+71851109-08d3-41db-9f22-796e26af13a1,Par 25 (real) · G2 (Monolítico) · Balanza Real,monolithic
+b09c56ca-cc15-4576-9ad7-cd16773f14b4,Par 24 (real) · G2 (Monolítico) · Villa Pilfera,monolithic
+878b05b9-c082-4595-9c64-5bdc736bbe1a,Par 18 (real) · G1 (Multiagente) · Nubarrón,mas
+0480c825-e678-470e-97a5-6cb77a9e0925,Par 21 (real) · G1 (Multiagente) · La Ceniza Mansa,mas
+e8629a76-58f5-45d3-91e2-15bf7c1d60af,Par 23 (real) · G2 (Monolítico) · Sal Negra,monolithic
+a7ef3360-3014-4942-bf11-4db774a95904,Par 18 (real) · G2 (Monolítico) · Nubarrón,monolithic
+a583b7b7-c777-4032-b493-3b61d57476b0,Par 19 (real) · G1 (Multiagente) · Karhad,mas
+fd990516-18f6-4341-8ec7-9e2a12dfedca,Par 24 (real) · G1 (Multiagente) · Villa Pilfera,mas
+fc82b88f-da23-41c9-b164-b78c0a9dfbc8,Par 27 (real) · G1 (Multiagente) · La Vía del Último Silencio,mas
+dfe775b9-a57f-4bba-ba17-a680c9e61ee8,Par 21 (real) · G2 (Monolítico) · La Ceniza Mansa,monolithic
+1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,Par 27 (real) · G2 (Monolítico) · La Vía del Último Silencio,monolithic
+ad163fd8-4b8d-43bd-acf6-33e7a33afb97,Par 22 (real) · G1 (Multiagente) · Casa Aguasmuertas,mas
+9e7e4aec-5a1d-41ce-9904-ccffaebfd944,Par 20 (real) · G2 (Monolítico) · Brasas Lentas,monolithic
+802bebcb-d49d-455b-9dad-e05b66955504,Par 25 (real) · G1 (Multiagente) · Balanza Real,mas
+eccb3666-5a9c-4959-8427-ae693f8c7530,Par 26 (real) · G2 (Monolítico) · Lindero,monolithic
+1437e3df-bbf5-4118-b968-2f39f9f891f3,Par 22 (real) · G2 (Monolítico) · Casa Aguasmuertas,monolithic
+a2d586a1-18a0-4391-977c-7c4bf5e84c6e,Par 26 (real) · G1 (Multiagente) · Lindero,mas
