@@ -44,20 +44,32 @@ IND_BLOQUE = [("qn1_ttr", "num"), ("qn1_legibilidad_fh", "num"), ("qn1_ngram_rep
 
 
 def norm_frase(f):
+    """Frase en minúsculas y con espacios colapsados, para contar repeticiones exactas."""
     return re.sub(r"\s+", " ", f.strip().lower())
 
 
 def frases_largas(texto):
+    """Frases normalizadas de `texto` con al menos 6 palabras (candidatas a `rep_frases`)."""
     return [norm_frase(f) for f in FRASES.split(texto) if len(f.split()) >= 6]
 
 
 def columna(par, brazo, fuente, nombre):
+    """{turn_id: valor} de un indicador ya recalculado (CSV `num`, `bool` o `p2`), limitado a turnos <= `HASTA`.
+
+    Las fuentes `num` y `bool` usan la columna `<nombre>_v2` (texto normalizado); `p2` usa `nombre` tal cual.
+    """
     ruta = (D2 if fuente == "num" else D2 / ("booleanos" if fuente == "bool" else "persona2")) / rc.nombre_csv(par, brazo)
     col = nombre + "_v2" if fuente != "p2" else nombre
     return {r["turn_id"]: r[col] for r in rc.leer_csv(ruta) if r.get(col) is not None and r["turn_id"] <= HASTA}
 
 
 def main():
+    """Calcula las medidas descriptivas de cierre por campaña y por bloque de 200 turnos (solo SELECT, sin LLM).
+
+    Incluye repetición de frases, caracteres no latinos, estabilidad de estilo, MTLD/MATTR, Szigriszt-Pazos,
+    control de longitud a 100 palabras, turno del primer PNJ no vivo, segundos por turno y entidades registradas.
+    Escribe `por_campana.csv`, `bloques.csv` y `top_frases.csv` en `datos_v2/cierre/`.
+    """
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     DESTINO.mkdir(parents=True, exist_ok=True)
     camp, bloques, top = [], [], []

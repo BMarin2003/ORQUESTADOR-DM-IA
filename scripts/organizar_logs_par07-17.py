@@ -26,10 +26,12 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 
 def orden(p):
+    """Clave de orden cronológico de un log: (fecha, hora) del arranque, tomada del nombre."""
     return p.stem.rsplit("_", 2)[-2:]      # (fecha, hora) del arranque
 
 
 def main():
+    """Une los fragmentos de log de cada campaña en una bitácora completa ordenada cronológicamente y mueve los originales a la carpeta de fragmentos."""
     FRAG.mkdir(parents=True, exist_ok=True)
     for e in json.loads((RAIZ / IDS).read_text(encoding="utf-8")):
         for brazo, k in (("g2", "campaign_g2"), ("g1", "campaign_g1")):

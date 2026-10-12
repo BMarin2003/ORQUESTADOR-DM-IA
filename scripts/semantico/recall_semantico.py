@@ -34,6 +34,7 @@ SEMILLA, B = 20261008, 10000
 
 
 def cargar(camp, brazo):
+    """Carga los turnos de narración normalizados y los eventos narrables derivados de los deltas de una campaña, hasta el turno C.HASTA."""
     turnos = [t for t in camp.turnos_narracion() if t["turn_id"] <= C.HASTA]
     tpi = {t["turn_id"]: normalizar_turno(t["dm_output"], brazo) for t in turnos}
     deltas = [d for d in camp.deltas_narrables() if d["turn_id"] <= C.HASTA]
@@ -65,10 +66,12 @@ def evaluar_campana(camp, brazo, embedder):
 
 
 def _b(x):
+    """Convierte un booleano a entero; cadena vacía si es None (celda vacía en el CSV)."""
     return "" if x is None else int(x)
 
 
 def resumen_campana(filas):
+    """Resume una campaña: número de eventos, recall semántico y de Jericho, mediana de margen y de z, y recall por familia de evento."""
     out = {"n_eventos": len(filas)}
     if filas:
         out["recall_sem"] = float(np.mean([f["reconocido"] for f in filas]))
@@ -115,6 +118,7 @@ def acuerdo(filas):
 
 
 def escribir_csv(ruta, filas):
+    """Escribe filas (dicts) a CSV; las columnas son la unión de claves en orden de aparición."""
     ruta.parent.mkdir(parents=True, exist_ok=True)
     campos = list(dict.fromkeys(k for f in filas for k in f))
     with open(ruta, "w", newline="", encoding="utf-8") as fh:
@@ -124,10 +128,16 @@ def escribir_csv(ruta, filas):
 
 
 def _f(x, d=3):
+    """Formatea un número con d decimales; guion largo si está vacío o es None."""
     return "—" if x == "" or x is None else f"{x:.{d}f}"
 
 
 def informe(todos, por_campana):
+    """Escribe el informe Markdown de CL-2 (exploratorio): recall por familia, acuerdo con Jericho-QA y comparación pareada G1-G2 con Wilcoxon exacto.
+
+    Returns:
+        Tupla (comparaciones, acuerdo).
+    """
     comp = {campo: comparacion(por_campana, campo) for campo in ("recall_sem", "z_mediana", "recall_jericho")}
     ac = acuerdo(todos)
     fam = {f: [x["reconocido"] for x in todos if x["campo"] == f] for f in FAMILIAS}
@@ -162,6 +172,10 @@ def informe(todos, por_campana):
 
 
 def main(argv=None, embedder=None):
+    """Evalúa el recall semántico de todos los eventos de las campañas (o --pares), escribe los CSV y el informe.
+
+    Exige el manifiesto de embeddings; el embedder es inyectable para pruebas.
+    """
     ap = argparse.ArgumentParser()
     ap.add_argument("--pares", help="lista separada por comas; por defecto las 27")
     ap.add_argument("--dispositivo", default="cpu")

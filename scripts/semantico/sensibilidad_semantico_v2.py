@@ -80,6 +80,7 @@ def candidatos(pares, embedder):
 
 
 def _ventana(s, t):
+    """Recorta las similitudes por turno a la ventana que empieza en t y dura C.VENTANA turnos."""
     return {u: s[u] for u in range(t, t + C.VENTANA + 1) if u in s}
 
 
@@ -100,10 +101,12 @@ def _insertar(x, oracion, embedder):
 
 
 def _rec(d):
+    """Convierte una decisión a booleano; None si el evento no era evaluable."""
     return None if d is None else bool(d["reconocido"])
 
 
 def _fila(pid, x, d2, d1=None, extra=None):
+    """Fila de resultados de una perturbación: decisión y margen de la v2 antes y después, y de la v1 como contraste."""
     f = {"perturbacion": pid, "par": x["par"], "brazo": x["brazo"], "turno": x["ev"]["turno"],
          "campo": x["ev"]["campo"], "estado": x["ev"]["estado"], "entidad": x["ev"]["entidad"],
          "rec_antes": int(x["base2"]["reconocido"]), "rec_despues": int(d2["reconocido"]),
@@ -115,6 +118,7 @@ def _fila(pid, x, d2, d1=None, extra=None):
 
 
 def correr(cands, n, semilla, embedder):
+    """Aplica las perturbaciones de la prueba A2 de la v2 (SQ1, SQ2, SC1 y siguientes), en memoria y con semilla fija, y devuelve las filas de resultados."""
     rng = random.Random(semilla)
     no_rec = [x for x in cands if not x["base2"]["reconocido"]]
     rec = [x for x in cands if x["base2"]["reconocido"]]
@@ -153,11 +157,17 @@ def correr(cands, n, semilla, embedder):
 
 
 def _decision(antes, despues):
+    """Cuenta los pares discordantes (1 a 0, 0 a 1) y su p de McNemar exacta.
+
+    Returns:
+        Tupla (b, c, p).
+    """
     t = est.contar_pareado(antes, despues)
     return t["b"], t["c"], est.mcnemar_exacta(t["b"], t["c"])
 
 
 def resumir(filas):
+    """Resume cada perturbación con McNemar exacta sobre la decisión y Holm por familia; el margen queda como medida secundaria y la v1 se reporta como contraste en los controles."""
     res = {}
     for clave, esperado in EXPECTATIVAS.items():
         pid = clave.split("|")[0]
@@ -181,10 +191,12 @@ def resumir(filas):
 
 
 def _fmt(x, d=4):
+    """Formatea un número con signo y d decimales; guion largo si es None."""
     return "—" if x is None else f"{x:+.{d}f}"
 
 
 def escribir(filas, res, n_cands, semilla, n):
+    """Escribe el CSV, el JSON (con el sello SHA-256) y el informe Markdown de la prueba A2 de la v2."""
     C.SALIDA_DOCS.mkdir(parents=True, exist_ok=True)
     base = C.SALIDA_DOCS / "sensibilidad_semantico_v2"
     campos = list(dict.fromkeys(k for f in filas for k in f))
@@ -219,6 +231,10 @@ def escribir(filas, res, n_cands, semilla, n):
 
 
 def main(argv=None, embedder=None):
+    """Corre la prueba A2 de la v2 con los valores sellados (n y semilla); con --solo-sello solo imprime el hash.
+
+    Con --pares es prueba de humo y no escribe informes.
+    """
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=N_DEF)
     ap.add_argument("--semilla", type=int, default=SEMILLA_DEF)

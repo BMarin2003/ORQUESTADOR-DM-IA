@@ -34,6 +34,7 @@ from psycopg.rows import dict_row  # noqa: E402
 
 
 def main():
+    """Exporta la transcripción de una campaña (hasta --hasta-turno) a un archivo Markdown, leyendo los turnos de Postgres."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--campaign-id", required=True)
     ap.add_argument("--hasta-turno", type=int, default=None)

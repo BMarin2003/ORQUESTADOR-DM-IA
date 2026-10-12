@@ -62,6 +62,7 @@ class Contexto:
 
     @property
     def nombres_pj_conocidos(self):
+        """Nombres de todos los PJ conocidos; si no se dieron, solo el PJ de la campaña."""
         return self.nombres_pj if self.nombres_pj is not None else {self.pj_nombre}
 
     @property
@@ -72,12 +73,14 @@ class Contexto:
         return self._cache["conocidos"]
 
     def copia(self, **cambios):
+        """Copia del contexto con campos cambiados (así las perturbaciones manipulan estado de PNJ, HP o tiradas sin tocar el original)."""
         return dataclasses.replace(self, **cambios)
 
 
 # ---------------------------------------------------------------- registro
 @dataclass
 class Instrumento:
+    """Instrumento registrado: nombre, función de cálculo, tipo de valor ("bool" o "num") y ámbito ("turno" o "ventana")."""
     nombre: str
     funcion: Callable
     tipo: str          # "bool" | "num"
@@ -88,6 +91,10 @@ INSTRUMENTOS: dict = {}
 
 
 def registrar_instrumento(nombre, funcion, tipo, ambito="turno"):
+    """Añade un instrumento al catálogo del arnés (enchufe para detectores nuevos, p. ej. de 2.ª persona).
+
+    Raises:
+        ValueError: si el tipo o el ámbito no son válidos o el nombre ya está registrado."""
     if tipo not in ("bool", "num"):
         raise ValueError(f"tipo debe ser 'bool' o 'num', no {tipo!r}")
     if ambito not in ("turno", "ventana"):
@@ -138,29 +145,35 @@ _LIMITES = set(".!?¿¡—\n\"'")
 
 # ---------------------------------------------------- booleanos (paso 5 del motor)
 def meta_comentario(texto, ctx):                                   # vertical_slice.py L621
+    """Hay un comentario meta entre corchetes de 20+ caracteres (vertical_slice.py, paso 5 del motor)."""
     return bool(_RE_META.search(texto))
 
 
 def comenta_reglas(texto, ctx):                                    # L624-626
+    """El DM comenta reglas del juego en su narración (réplica del regex del motor)."""
     return bool(_RE_REGLAS.search(texto))
 
 
 def cr1_veredicto_contradice_narracion(texto, ctx):                # L632-638
+    """CR-1: alguna tirada es pifia y la narración dice que el PJ logra la acción."""
     return any(t["pifia"] and _RE_EXITO.search(texto) for t in ctx.tiradas)
 
 
 def qn2_pj_piensa_narrado(texto, ctx):                             # L641-643
+    """QN-2: narra que el PJ piensa, siente, decide o comprende (solo ve la 3.ª persona con el nombre del PJ)."""
     return bool(re.search(rf"\b{re.escape(ctx.pj_nombre)}\s+(piensa|siente|decide|comprende)",
                           texto, re.I))
 
 
 def qn2_pj_accion_revisar(texto, ctx):                             # L653-655
+    """QN-2: narra una acción del PJ con nombre propio sin que haya tiradas en el turno (solo 3.ª persona)."""
     m = re.search(rf"\b{re.escape(ctx.pj_nombre)}\s+(ataca|golpea|convence|"
                   r"esquiva|salta|derriba|desarma)\b", texto, re.I)
     return bool(m and not ctx.tiradas)
 
 
 def cl2_pnj_inactivo_actua(texto, ctx):                            # L661-673
+    """CL-2: un PNJ que no está vivo según `estados_pnj` aparece nombrado en el texto."""
     for e in ctx.entidades:
         if (e["tipo"] != "npc" or e["nombre"] not in texto
                 or e["nombre"] in ctx.nombres_pj_conocidos):
@@ -172,6 +185,7 @@ def cl2_pnj_inactivo_actua(texto, ctx):                            # L661-673
 
 
 def cl2_pc_hp_contradice_narracion(texto, ctx):                    # L677-687
+    """CL-2: narra la muerte del PJ con nombre propio mientras su HP actual es mayor que 0."""
     if ctx.hp_current is None:
         return False
     narra_muerte = re.search(rf"\b{re.escape(ctx.pj_nombre)}\s+(muere|cae muerto|fallece|"
@@ -180,6 +194,11 @@ def cl2_pc_hp_contradice_narracion(texto, ctx):                    # L677-687
 
 
 def nombres_no_reconocidos(texto, ctx):                            # L813-833
+    """Nombres propios en mayúscula que no son vocabulario conocido de la campaña, réplica de vertical_slice.py (L813-833).
+
+    Ignora los que abren frase, los de la lista de excepciones (_STOP_MAYUS) y el primer token del texto.
+    Returns:
+        Lista ordenada de nombres no reconocidos."""
     no_reconocidos = set()
     for m in re.finditer(r"\b[A-ZÁÉÍÓÚÑ][a-záéíóúñ]{2,}\b", texto):
         palabra = m.group(0)
@@ -195,38 +214,46 @@ def nombres_no_reconocidos(texto, ctx):                            # L813-833
 
 
 def cr2_nombres_no_reconocidos(texto, ctx):
+    """CR-2 booleano: hay al menos un nombre propio no reconocido."""
     return bool(nombres_no_reconocidos(texto, ctx))
 
 
 def cr2_n_nombres_no_reconocidos(texto, ctx):
+    """CR-2 numérico: cantidad de nombres propios no reconocidos."""
     return len(nombres_no_reconocidos(texto, ctx))
 
 
 # ---------------------------------------------------- numéricos (L693-702)
 def cl2_lugar_jaccard_similarity(texto, ctx):
+    """CL-2: similitud de Jaccard de palabras entre la escena anterior y el turno, redondeada a 3 decimales."""
     return round(_vs.jaccard_palabras(ctx.escena_anterior, texto), 3)
 
 
 def cr2_entidad_grafo_densidad(texto, ctx):
+    """CR-2: densidad del grafo de entidades conocidas en el texto (vertical_slice)."""
     return _vs.entidad_grafo_densidad(texto, ctx.conocidos)
 
 
 def _palabras(texto):
+    r"""Palabras (\w+) en minúsculas."""
     return re.findall(r"\w+", texto.lower())
 
 
 def qn1_ttr(texto, ctx):
+    """QN-1: relación tipos/palabras (TTR) del turno; None si no hay palabras."""
     p = _palabras(texto)
     return round(len(set(p)) / len(p), 3) if p else None
 
 
 def qn1_ngram_repeticion(texto, ctx):
+    """QN-1: proporción de bigramas repetidos (1 menos únicos/total); None si hay menos de dos palabras."""
     p = _palabras(texto)
     bigramas = list(zip(p, p[1:]))
     return round(1 - len(set(bigramas)) / len(bigramas), 3) if bigramas else None
 
 
 def qn1_legibilidad_fh(texto, ctx):
+    """QN-1: legibilidad de Fernández-Huerta (vertical_slice)."""
     return _vs.fernandez_huerta(texto)
 
 
@@ -242,6 +269,7 @@ def szigriszt_pazos(texto):
 
 
 def qn1_legibilidad_sz(texto, ctx):
+    """QN-1: legibilidad de Szigriszt-Pazos del turno (capa de análisis, fuera del motor)."""
     return szigriszt_pazos(texto)
 
 
@@ -253,6 +281,7 @@ def mtld(palabras, umbral=0.72):
         return None
 
     def pase(secuencia):
+        """Un pase de MTLD sobre `secuencia`: longitud media de tramos hasta que el TTR cae al umbral, con factor parcial al final."""
         factores, tipos, n = 0.0, set(), 0
         for w in secuencia:
             tipos.add(w)
@@ -297,6 +326,7 @@ _lt_memoria: Optional[dict] = None
 
 
 def _lt_cargar():
+    """Caché de LanguageTool en memoria; la lee de disco la primera vez (vacía si falta o está corrupta)."""
     global _lt_memoria
     if _lt_memoria is None:
         try:
@@ -343,6 +373,7 @@ def _lemas_conocidos(ctx, nlp):
 
 
 def grafo_lema_densidad(texto, ctx):
+    """Densidad del grafo por lemas de spaCy (reporte_validacion); falla si no está es_core_news_sm."""
     nlp = _rv._modelo_grafo()
     if nlp is None:
         raise RuntimeError("spaCy es_core_news_sm no disponible")
@@ -389,6 +420,7 @@ def cl2_pnj_inactivo_refinado(texto, ctx):
 
 # ---------------------------------------------------- ventanas
 def _turnos(textos):
+    """Adapta una lista de textos al formato de turnos que esperan los instrumentos de reporte_validacion."""
     return [{"turn_id": i, "dm_output": t} for i, t in enumerate(textos)]
 
 
@@ -401,35 +433,43 @@ def ventana_jaccard_medio(textos, ctx):
 
 
 def ventana_entity_coreference_medio(textos, ctx):
+    """Media de entity_coreference_rate sobre la ventana (reporte_validacion)."""
     return _rv.entity_coreference_rate(_turnos(textos), ctx.entidades)["promedio"]
 
 
 def ventana_coherencia_C(textos, ctx):
+    """Coherencia de entidades C sobre la ventana (adaptación del agregado de campaña)."""
     return _rv.coherencia_entidad_C(_turnos(textos), ctx.entidades)[0]
 
 
 def ventana_consistencia_V(textos, ctx):
+    """Consistencia de atributos V sobre la ventana; invariante al orden por construcción (control exacto de P9)."""
     return _rv.consistencia_atributos_V(_turnos(textos), ctx.entidades)[0]
 
 
 def _bucles(textos, ctx):
+    """Resultado de detector_bucles sobre la ventana, usando solo las ubicaciones del contexto."""
     ubic = [e for e in ctx.entidades if e["tipo"] == "location"]
     return _rv.detector_bucles(_turnos(textos), ubic)
 
 
 def ventana_bucles_visitas(textos, ctx):
+    """Número de visitas a ubicaciones que detecta detector_bucles en la ventana."""
     return _bucles(textos, ctx)["num_visitas"]
 
 
 def ventana_bucles_ciclos(textos, ctx):
+    """Número de ciclos que detecta detector_bucles en la ventana."""
     return len(_bucles(textos, ctx)["ciclos"])
 
 
 def ventana_mtld(textos, ctx):
+    """MTLD de la ventana completa, unida en un solo texto."""
     return mtld(_palabras(" ".join(textos)))
 
 
 def ventana_mattr(textos, ctx):
+    """MATTR de la ventana completa, unida en un solo texto."""
     return mattr(_palabras(" ".join(textos)))
 
 

@@ -62,6 +62,7 @@ def frases_largas(prompt_texto, n_palabras=6):
 
 
 def buscar_fuga(narrativa, ngramas):
+    """Primer n-grama del prompt presente en la narrativa (sin distinguir mayúsculas), o None."""
     for ng in ngramas:
         if ng.lower() in narrativa.lower():
             return ng
@@ -131,6 +132,7 @@ CASOS = [
 
 
 def main():
+    """CLI: corre los casos del Narrador contra el modelo y comprueba fuga de prompt y palabras de éxito tras un veredicto de fallo; sale con 2 si hay problemas."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--solo", type=int, choices=range(1, len(CASOS) + 1),
                      help="corre solo el caso N, para no repagar los demás "

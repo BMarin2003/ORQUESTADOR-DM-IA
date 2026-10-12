@@ -34,6 +34,7 @@ _nlp = None
 
 
 def modelo():
+    """Carga perezosa (una vez por proceso) de es_core_news_sm con parser y ner desactivados."""
     global _nlp
     if _nlp is None:
         import spacy
@@ -42,6 +43,7 @@ def modelo():
 
 
 def version_modelo():
+    """Cadena spacy-X|es_core_news_sm-Y que identifica la versión usada; invalida la caché en disco."""
     import spacy
     return f"spacy-{spacy.__version__}|es_core_news_sm-{modelo().meta['version']}"
 
@@ -52,6 +54,7 @@ def limpiar(texto):
 
 
 def _sin_tildes(s):
+    """Quita las marcas diacríticas (NFD sin categoría Mn)."""
     return "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn")
 
 
@@ -66,6 +69,7 @@ def clave(lema):
 
 
 def _extraer(doc):
+    """Tupla de (clave, POS) de los tokens de contenido no stopword de un Doc de spaCy."""
     out = []
     for t in doc:
         if t.pos_ in _POS_TODOS and not t.is_stop:
@@ -79,12 +83,14 @@ _MEMO = {}          # texto limpio -> tokens (memoria de proceso; se vacía al p
 
 
 def _memorizar(t, toks):
+    """Guarda en la memoria de proceso; la vacía entera al llegar a 100 000 entradas para acotar el consumo."""
     if len(_MEMO) >= 100000:
         _MEMO.clear()
     _MEMO[t] = toks
 
 
 def _tokens_limpio(texto_limpio):
+    """Tokens de un texto ya limpio, con memoización; () si está vacío."""
     if not texto_limpio:
         return ()
     if texto_limpio not in _MEMO:
@@ -116,14 +122,17 @@ def filtrar(toks, pos=POS_CONTENIDO, excluir=None):
 
 
 def contar_tokens(toks, pos=POS_CONTENIDO, excluir=None):
+    """Conteo de claves de una tupla de tokens, filtrado por POS y lista de exclusión."""
     return Counter(k for k, p in toks if p in pos and (excluir is None or k not in excluir))
 
 
 def lemas(texto, pos=POS_CONTENIDO, excluir=None):
+    """Conjunto de lemas de contenido de un texto (tokens + filtrar)."""
     return filtrar(tokens(texto), pos, excluir)
 
 
 def contar(texto, pos=POS_CONTENIDO, excluir=None):
+    """Conteo de lemas de contenido de un texto (tokens + contar_tokens)."""
     return contar_tokens(tokens(texto), pos, excluir)
 
 

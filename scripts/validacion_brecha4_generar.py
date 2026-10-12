@@ -92,6 +92,7 @@ def _turn_log_ventana(conn, campaign_id, t0, t1):
 
 
 def _fragmento(conn, campaign_id, brazo, turnos_ids):
+    """Arma el fragmento de turnos (acción del jugador y narración) que se le muestra al evaluador."""
     filas = _turn_log_ventana(conn, campaign_id, min(turnos_ids), max(turnos_ids))
     frag = []
     for t in turnos_ids:
@@ -114,6 +115,10 @@ def _ultimo_estado_antes(deltas_npc_status, nombre, turno_limite):
 
 
 def main():
+    """Genera el material de validación humana de la brecha 4: casos marcados por el detector y casos de silencio, con clave oculta y un formulario por evaluador.
+
+    Semilla fija para que la muestra sea reproducible.
+    """
     ap = argparse.ArgumentParser()
     ap.add_argument("--n-flagged", type=int, default=40)
     ap.add_argument("--n-silencio", type=int, default=20)
@@ -157,6 +162,7 @@ def main():
                     refinado = pnj_inactivo_refinado(filas_validacion, turnos_por_id, entidades)
 
                 def _empaquetar(entrada, categoria):
+                    """Empaqueta un caso (PNJ, estado vigente, fragmento) para el formulario; None si no se puede resolver el hecho, porque se descarta en lugar de adivinarlo."""
                     turno = entrada["turno"]
                     nombre = entrada["pnj"]
                     d0 = _ultimo_estado_antes(deltas_npc_status, nombre, turno)

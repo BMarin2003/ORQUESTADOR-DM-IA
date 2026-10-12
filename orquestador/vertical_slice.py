@@ -192,6 +192,7 @@ def entidad_grafo_densidad(texto, conocidos):
 
 
 def llamar(modelo, system, user, max_tokens=600, temp=0.8, json_mode=False):
+    """Llama a chat/completions de DeepInfra y devuelve `{texto, tin, tout, ms}` (None ante error HTTP no transitorio). Quita `<think>` y vallas; reintenta cortes de red y 429/502/503/504 con backoff."""
     key = os.environ.get("DEEPINFRA_API_KEY")
     cuerpo = {"model": modelo,
               "messages": [{"role": "system", "content": system},
@@ -207,6 +208,7 @@ def llamar(modelo, system, user, max_tokens=600, temp=0.8, json_mode=False):
     t0 = time.time()
 
     def _post(peticion, reintentos=4, espera=10, max_sobrecarga=30):
+        """POST con reintentos: backoff ante saturación (429/502/503/504) y cortes de red; otros HTTPError se propagan de inmediato."""
         # DeepInfra corta la conexión de tanto en tanto en llamadas largas
         # (visto en corridas reales de 250+ turnos: TimeoutError/URLError
         # tras 5-80 minutos de trabajo bueno). Sin reintento, cada corte
@@ -285,6 +287,7 @@ def llamar(modelo, system, user, max_tokens=600, temp=0.8, json_mode=False):
 
 
 def parsear_json(texto):
+    """Extrae un objeto JSON del texto del modelo (con o sin vallas) o None si no hay uno válido."""
     limpio = re.sub(r"^```(?:json)?|```$", "", texto.strip(), flags=re.M).strip()
     try:
         return json.loads(limpio)
@@ -311,18 +314,22 @@ class Tee:
     "QM - Respaldo bibliografico instrumentos deterministicos.md", punto 21.
     """
     def __init__(self, *streams):
+        """Recibe los flujos destino de la escritura."""
         self.streams = streams
 
     def write(self, data):
+        """Escribe `data` en todos los flujos."""
         for s in self.streams:
             s.write(data)
 
     def flush(self):
+        """Vacía todos los flujos."""
         for s in self.streams:
             s.flush()
 
 
 def paso(n, titulo):
+    """Imprime el encabezado Markdown `### [n] titulo` de un paso de la bitácora."""
     # Antes usaba separadores de caracteres de dibujo de caja ('─'*74),
     # que se ven bien en una consola pero no significan nada en Markdown.
     # Como esta misma salida ahora se escribe tal cual a la bitácora .md
@@ -331,6 +338,7 @@ def paso(n, titulo):
 
 
 def main():
+    """CLI del turno completo G2 (monolítico): valida entorno y archivos, elige campaña y PJ, abre la bitácora Markdown (Tee) y delega en `_cuerpo_principal`."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--pj", default="PJ02")
     ap.add_argument("--turnos", type=int, default=1)
@@ -437,6 +445,7 @@ def main():
 def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
                       prompt_jugador, prompt_dm, prompt_extractor,
                       contrato):
+    """Bucle de turnos G2: contexto, jugador, dados, DM, extractor, apply_delta, validación del turno y costo por modelo."""
     # Mismo bug que en vertical_slice_g1.py (encontrado en Par 02 real,
     # 2026-09-15): este default venía hardcodeado a "Sargento Brea" (PNJ
     # del piloto "Vado de Ceniza") -- funcionaba por casualidad mientras
@@ -448,6 +457,7 @@ def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
     coste_por_modelo = {}
 
     def sumar_coste(modelo, r):
+        """Acumula tokens de entrada y salida por modelo."""
         c = coste_por_modelo.setdefault(modelo, {"tin": 0, "tout": 0})
         c["tin"] += r["tin"]; c["tout"] += r["tout"]
     # Fijo ANTES del bucle: turn_id = turno_inicial + 1 + i. La línea de
@@ -1047,10 +1057,13 @@ def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
 
 
 def ficha_jugador(pj):
+    """Ficha del jugador agéntico como texto para su prompt: ejes en bandas, agenda, actitud ante lo urgente y ejemplares si existen."""
     p = pj["personalidad"]
     def b(v, neg, pos):
+        """Etiqueta de un eje: `neg` si v < -40, `pos` si v > 40, "equilibrado" en medio."""
         return neg if v < -40 else pos if v > 40 else "equilibrado"
     def bd_(v):
+        """Actitud ante lo urgente según el desvío (<=30 acude, <=60 mixto, >60 prioriza lo suyo)."""
         if v <= 30:
             return ("Si el DM plantea algo urgente, VAS. Atiendes primero lo "
                     "que se te pide.")

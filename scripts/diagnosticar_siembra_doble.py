@@ -28,6 +28,7 @@ TABLAS = [
 
 
 def main():
+    """Lista por tabla las filas de la campaña (id, tiempo, nombre) para detectar a ojo una siembra doble. Solo lectura."""
     if len(sys.argv) < 2:
         sys.exit(__doc__)
     campaign_id = sys.argv[1]

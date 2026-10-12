@@ -49,6 +49,7 @@ def oraciones_de_campana(camp, brazo):
 
 
 def huella(filas):
+    """SHA-256 del contenido a embeber de una campaña, para detectar si cambió desde que se embebió."""
     h = hashlib.sha256()
     for t, o in filas:
         h.update(f"{t}\t{o}\n".encode("utf-8"))
@@ -64,12 +65,14 @@ def asegurar_tabla(camp):
 
 
 def filas_existentes(camp):
+    """Cuenta las filas de embeddings ya guardadas para la campaña."""
     with camp._conn() as c:
         camp._tx(c)
         return c.execute(f"SELECT count(*) AS n FROM {C.TABLA} WHERE campaign_id=%s", (camp.campaign_id,)).fetchone()["n"]
 
 
 def borrar(camp):
+    """Borra todos los embeddings de la campaña (para --forzar)."""
     with camp._conn() as c:
         camp._tx(c)
         c.execute(f"DELETE FROM {C.TABLA} WHERE campaign_id=%s", (camp.campaign_id,))
@@ -101,17 +104,23 @@ def insertar(camp, filas, vectores, modelo):
 
 
 def leer_manifiesto():
+    """Lee el manifiesto de embeddings; dict vacío si no existe."""
     if C.MANIFIESTO.exists():
         return json.loads(C.MANIFIESTO.read_text(encoding="utf-8"))
     return {}
 
 
 def guardar_manifiesto(m):
+    """Escribe el manifiesto con claves ordenadas, para que el archivo sea estable entre corridas."""
     C.SALIDA_DOCS.mkdir(parents=True, exist_ok=True)
     C.MANIFIESTO.write_text(json.dumps(m, indent=1, ensure_ascii=False, sort_keys=True), encoding="utf-8")
 
 
 def main(argv=None, embedder=None):
+    """Embebe las oraciones de narración de las campañas y las guarda en pgvector, con un manifiesto que fija la revisión del modelo y la versión del divisor.
+
+    Se niega a mezclar versiones del modelo o del divisor. --forzar rehace campañas ya embebidas; --solo-contar solo cuenta oraciones sin cargar el modelo.
+    """
     ap = argparse.ArgumentParser()
     ap.add_argument("--pares", help="lista separada por comas (p. ej. 07,08); por defecto las 27")
     ap.add_argument("--forzar", action="store_true", help="borra y rehace las campañas que ya tienen filas")

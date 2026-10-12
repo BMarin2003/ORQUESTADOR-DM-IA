@@ -76,6 +76,7 @@ CASOS = [
 
 
 def frases_largas(prompt_texto, n_palabras=6):
+    """N-gramas de `n_palabras` palabras consecutivas de cada línea larga del prompt, para detectar fugas literales en la salida."""
     ngramas = []
     for linea in prompt_texto.splitlines():
         limpio = linea.strip().strip("═").strip()
@@ -88,6 +89,7 @@ def frases_largas(prompt_texto, n_palabras=6):
 
 
 def buscar_fuga(texto, ngramas):
+    """Primer n-grama del prompt presente en el texto (sin distinguir mayúsculas), o None."""
     for ng in ngramas:
         if ng.lower() in texto.lower():
             return ng
@@ -95,6 +97,7 @@ def buscar_fuga(texto, ngramas):
 
 
 def main():
+    """CLI: corre los casos del Árbitro contra el modelo y comprueba fuga de prompt, forma de salida y que el tutor no narre; sale con 2 si hay problemas."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--solo", type=int, choices=range(1, len(CASOS) + 1),
                      help="corre solo el caso N")

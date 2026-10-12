@@ -47,6 +47,10 @@ RAIZ = Path(__file__).resolve().parent.parent
 
 
 def main():
+    """Siembra en Postgres el mundo (lugares, facciones, misiones, PJ y PNJ) de una campaña real desde los fixtures world y personas, en una sola transacción.
+
+    No debe correrse dos veces sobre la misma campaña: una siembra doble duplicó filas en Par02 G1 (punto 29 de la bitácora QM, ver comentario en el cuerpo).
+    """
     if len(sys.argv) < 4:
         sys.exit(__doc__)
     campaign_id, tenant_id, user_id = sys.argv[1:4]
@@ -59,6 +63,7 @@ def main():
     keymap = {}  # world.json "key" -> uuid recién generado en esta corrida
 
     def new_id(key):
+        """Genera un UUID nuevo y lo registra en keymap bajo la clave del fixture."""
         u = str(uuid.uuid4())
         keymap[key] = u
         return u

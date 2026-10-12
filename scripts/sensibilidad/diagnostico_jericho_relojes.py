@@ -29,10 +29,15 @@ def _coincide(palabras, textos):
 
 
 def pct(a, b):
+    """Formatea a/b como porcentaje; guion largo si b es 0."""
     return f"{100 * a / b:.1f} %" if b else "—"
 
 
 def main():
+    """Diagnóstico posterior (no pre-registrado): compara el recall real de Jericho y relojes con el que da el mismo léxico en turnos al azar.
+
+    Estima además cuántos relojes se reconocen solo por palabras funcionales; escribe el informe en SALIDA.
+    Comprueba antes que la función de coincidencia propia reproduce al instrumento real."""
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     rng = random.Random(SEMILLA)
     pares = J._pares.todos()

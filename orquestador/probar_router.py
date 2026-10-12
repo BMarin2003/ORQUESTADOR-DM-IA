@@ -82,6 +82,7 @@ CASOS = [
 
 
 def main():
+    """Corre CASOS contra `clasificar_turno` (router determinista, sin LLM); sale con código 1 si algún caso no coincide."""
     fallos = 0
     for i, caso in enumerate(CASOS, 1):
         resultado = clasificar_turno(**caso["args"])

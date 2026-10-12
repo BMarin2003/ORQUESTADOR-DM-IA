@@ -28,6 +28,7 @@ PATRONES = {
 
 
 def parrafos(ruta):
+    """Itera (índice, texto) de los párrafos no vacíos del documento, leyendo el XML del docx."""
     with zipfile.ZipFile(ruta) as z:
         raiz = ET.fromstring(z.read("word/document.xml"))
     for i, p in enumerate(raiz.iter(W + "p")):
@@ -37,6 +38,7 @@ def parrafos(ruta):
 
 
 def main():
+    """Busca en el docx los patrones de PATRONES y lista, por patrón, los párrafos que coinciden (hasta 12)."""
     ruta = Path(sys.argv[1]) if len(sys.argv) > 1 else POR_DEFECTO
     if not ruta.exists():
         sys.exit(f"No existe: {ruta}")

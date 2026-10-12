@@ -46,6 +46,10 @@ WORLD_TONE_DEFECTO = "mixed"
 
 
 def main():
+    """Crea la campaña G1 (arquitectura 'mas') con el mismo tenant, usuario, corpus y registro que su pareja G2, e imprime sus ids y los comandos siguientes.
+
+    Los argumentos van por línea de comandos (ver docstring del módulo).
+    """
     if len(sys.argv) < 3:
         sys.exit(__doc__)
     tenant_id, user_id = sys.argv[1], sys.argv[2]

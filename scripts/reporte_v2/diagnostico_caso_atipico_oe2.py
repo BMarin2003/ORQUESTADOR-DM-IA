@@ -32,6 +32,12 @@ import pares as _pares                              # noqa: E402
 
 
 def main():
+    """Imprime el detalle por protagonista de `coherencia_entidad_C` en la campaña G2 de la pareja 06 (el mínimo, C = 0).
+
+    Muestra Ci, sección de primera y última mención y los turnos aproximados de cada una, para leer a mano el
+    pasaje y decidir si es abandono narrativo genuino o un artefacto del emparejamiento literal de nombres.
+    Requiere acceso a Postgres (`DATABASE_URL`).
+    """
     par = next(p for p in _pares.todos() if str(p["par"]).zfill(2) == "06")
     campaign_id = par["campaign_g2"]
     print(f"par06 / G2 -> campaign_id={campaign_id}")

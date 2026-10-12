@@ -1,3 +1,4 @@
+"""Lista id y título de las campañas del Par 01 en la base de desarrollo."""
 import psycopg
 from psycopg.rows import dict_row
 c = psycopg.connect("host=127.0.0.1 port=5432 dbname=dmia_dev user=postgres password=dev_only_change_me", row_factory=dict_row)

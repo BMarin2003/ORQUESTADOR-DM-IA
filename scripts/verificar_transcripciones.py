@@ -42,10 +42,12 @@ ESTADO_DESPUES = re.compile(r"^### \[\d+\] ESTADO DESPUÉS", re.M)
 
 
 def norm(s):
+    """Quita todo el espacio en blanco, para comparar textos sin depender del formato."""
     return re.sub(r"\s+", "", s or "")
 
 
 def ruta_transcripcion(titulo, limite, carpeta):
+    """Ruta del archivo de transcripción exportado de una campaña."""
     return carpeta / f"transcripcion_{titulo.replace(' ', '_').replace('·', '-')}_1-{limite}.md"
 
 
@@ -61,6 +63,7 @@ def cuerpo_esperado(turnos):
 
 
 def fragmentos(par, brazo, cid):
+    """Lista, en orden cronológico, los fragmentos de log de una campaña."""
     marca = cid[:8]
     pat = f"par_{par}_real_{brazo.lower()}_*_{marca}_turnos_*.md"
     return sorted((RAIZ / "logs").rglob(pat), key=lambda p: p.stem.rsplit("_", 2)[-2:])
@@ -99,6 +102,11 @@ def cruzar_fragmentos(par, brazo, cid, turnos_db):
 
 
 def verificar(conn, e, brazo, carpeta):
+    """Verifica una campaña: estructura en Postgres (turn_log contiguo, validaciones, sin escrituras tras current_turn, sin deltas duplicados), contenido de los turnos y coherencia con la transcripción y los fragmentos.
+
+    Returns:
+        Dict con errores duros, avisos e información.
+    """
     cid = e["campaign_g2" if brazo == "G2" else "campaign_g1"]
     camp = conn.execute("SELECT title, current_turn FROM campaigns WHERE id=%s", (cid,)).fetchone()
     turnos = conn.execute("SELECT turn_id, player_buffer, dm_output, gate_passed, created_at FROM turn_log "
@@ -213,6 +221,7 @@ def verificar(conn, e, brazo, carpeta):
 
 
 def main():
+    """Verifica los pares y brazos indicados e imprime OK, AVISOS o FALLA; sale con código 1 si hay algún error duro."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--pares", default="")
     ap.add_argument("--arm", choices=["ambos", "G2", "G1"], default="ambos")

@@ -41,6 +41,7 @@ HUELLA = [
 
 
 def pedir(path, key, payload=None, metodo="GET"):
+    """Llama a un endpoint de DeepInfra y devuelve el JSON; ante HTTP 401/404 o falta de red imprime la causa probable y termina con `sys.exit(1)`."""
     req = urllib.request.Request(
         f"{BASE}{path}",
         data=json.dumps(payload).encode() if payload else None,
@@ -69,6 +70,7 @@ def pedir(path, key, payload=None, metodo="GET"):
 
 
 def listar(key, filtro):
+    """IDs del catálogo de DeepInfra, ordenados y filtrados por subcadena sin distinguir mayúsculas."""
     datos = pedir("/models", key)
     modelos = [m["id"] for m in datos.get("data", [])]
     if filtro:
@@ -104,6 +106,7 @@ def huella(key, modelo):
 
 
 def main():
+    """CLI: lista modelos, o verifica que `--modelo` exista y escribe el manifiesto con su huella de determinismo; con `--comparar` sale con código 2 si la huella cambió."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--modelo", help="ID exacto del catálogo")
     ap.add_argument("--listar", nargs="?", const="", help="Lista modelos (filtro opcional)")

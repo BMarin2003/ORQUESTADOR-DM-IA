@@ -227,6 +227,7 @@ def agenda(arq, i):
 
 
 def main():
+    """Imprime por stdout el JSON de las fichas de los arquetipos (personalidad, agenda, características y modificadores) con semilla fija."""
     fichas = []
     for i, arq in enumerate(ARQUETIPOS):
         nombre_arq, clase, w, c, p, b, desvio, deriva = arq

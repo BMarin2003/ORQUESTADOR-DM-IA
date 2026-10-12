@@ -43,11 +43,17 @@ def congelado_ok():
 
 
 def desarrollo():
+    """Conjunto {(campaign_id, turn_id)} de los turnos usados para construir el detector persona2 (excluidos del análisis confirmatorio)."""
     with open(RAIZ / "validacion" / "persona2_desarrollo_turnos.csv", newline="", encoding="utf-8") as fh:
         return {(r["campaign_id"], int(r["turn_id"])) for r in csv.DictReader(fh)}
 
 
 def procesar(conn, par, brazo, cid, nombres, dev, hasta=1400):
+    """Aplica `persona2` v2b (congelado) a los turnos válidos de una campaña sobre texto normalizado, sin spaCy.
+
+    Cada fila marca `primaria` (VOLICION, COGNICION, EMOCION o HABLA: regla de oro del prompt del DM), cada
+    categoría, `secundaria` (ACCION_NO_DECLARADA, experimental), `muerte` y `en_desarrollo`.
+    """
     dc = datos.DatosCampana(conn, cid, brazo, par)
     filas = []
     for t in range(1, hasta + 1):
@@ -68,6 +74,7 @@ def procesar(conn, par, brazo, cid, nombres, dev, hasta=1400):
 
 
 def main():
+    """Verifica el hash congelado del detector y escribe `datos_v2/persona2/parNN_G?.csv` (atómico) para las campañas de `pares.todos()`; salta las existentes salvo `--forzar`."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--pares", default="")
     ap.add_argument("--forzar", action="store_true")

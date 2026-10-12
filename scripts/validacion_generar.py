@@ -69,10 +69,12 @@ def prosa(dm, brazo):
 
 
 def jugador(buf):
+    """Texto de la acción del jugador a partir de su buffer de entradas."""
     return "\n".join((x.get("text", "") if isinstance(x, dict) else str(x)) for x in (buf or [])).strip()
 
 
 def ventana(conn, cid_g1, cid_g2, t0, k):
+    """Ventana de k turnos pareados G1/G2 desde t0, con el turno previo como contexto; None si falta algún turno o hay marcas de corrida sucia (SUCIO)."""
     filas = {}
     for brazo, cid in (("G1", cid_g1), ("G2", cid_g2)):
         rs = conn.execute("SELECT turn_id, player_buffer, dm_output FROM turn_log WHERE campaign_id=%s "
@@ -85,6 +87,7 @@ def ventana(conn, cid_g1, cid_g2, t0, k):
 
 
 def main():
+    """Genera el material de la validación humana pareada: sortea ventanas de k turnos por posición y tono (semilla fija), con una parte piloto, clave aparte y un formulario por evaluador."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--k", type=int, default=8)
     ap.add_argument("--n-por-posicion", type=int, default=8)
@@ -107,6 +110,7 @@ def main():
     pares_pos, ventanas, unidades, clave = set(), [], [], {}   # (par,pos,piloto) usados · (par,t0) usados
     with psycopg.connect(db.DSN, row_factory=dict_row) as conn:
         def sortear(pos, tono, piloto):
+            """Sortea un par y una ventana válidos para una posición y un tono, sin repetir (par, posición, piloto) ni solapar ventanas del mismo par; aborta si no puede."""
             lo, hi = POSICIONES[pos]
             cand = por_tono[tono][:]
             rnd.shuffle(cand)

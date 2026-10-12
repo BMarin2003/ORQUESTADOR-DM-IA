@@ -124,6 +124,7 @@ _ORACION_AFINIDAD = {
 
 
 def _oracion_refuerzo(campo, estado, nombre_entidad):
+    """Oración de refuerzo que contiene el lexema exacto que jericho_qa_recall busca para ese campo y estado (JQ1)."""
     n = nombre_entidad or "la persona"
     if campo == "npc.status":
         return _ORACION_NPC_STATUS[estado].format(n=n)
@@ -135,6 +136,7 @@ def _oracion_refuerzo(campo, estado, nombre_entidad):
 
 
 def _claves_de(campo, estado):
+    """Claves léxicas que el instrumento real (tablas _KEYWORDS_* de reporte_validacion) busca para ese campo y estado."""
     if campo == "npc.status":
         return RV._KEYWORDS_NPC_STATUS[estado]
     if campo == "quest.status":
@@ -166,6 +168,11 @@ def _assert_oraciones_contienen_lexema():
 # turno CON LA MISMA LÓGICA de reporte_validacion.py (mismas tablas, mismo orden de ventana), sin
 # tocar ese archivo, para poder perturbar con precisión quirúrgica un único evento.
 def _detalle_deltas(deltas, turnos_por_id, ventana=1):
+    """Re-deriva turno a turno el detalle de cada delta narrable con la misma lógica y tablas de jericho_qa_recall.
+
+    El instrumento real solo agrega (recall global); aquí se recupera qué clave hizo match y en qué turno
+    de la ventana (turno del delta y los `ventana` siguientes) para poder perturbar un único evento.
+    Omite deltas sin vocabulario o con afinidad que no cruza de banda."""
     out = []
     for d in deltas:
         campo = f"{d['entity_type']}.{d['field_name']}"
@@ -205,6 +212,10 @@ def _detalle_deltas(deltas, turnos_por_id, ventana=1):
 
 
 def _detalle_relojes(relojes, turnos_por_id, ventana=2):
+    """Re-deriva el detalle de cada reloj disparado con la misma lógica de relojes_no_reconocidos.
+
+    Busca el vocabulario del reloj (facción y palabras de su agenda) como palabra completa, sin
+    distinguir mayúsculas, en los `ventana` turnos posteriores al disparo; devuelve también la clave que hizo match."""
     out = []
     for r in relojes:
         vocab = sorted(RV._texto_reloj(r))
@@ -227,6 +238,7 @@ def _detalle_relojes(relojes, turnos_por_id, ventana=2):
 
 # ---------------------------------------------------------------- perturbación de texto
 def _insertar(texto, oracion, rng):
+    """Inserta `oracion` al inicio de un párrafo de la zona narrativa, reutilizando la perturbación del arnés."""
     nuevo, _ = pt._insertar_al_inicio_de_parrafo(texto, oracion, rng)
     return nuevo
 
@@ -240,6 +252,7 @@ def _quitar_oracion_con(texto, claves, por_palabra):
     idx = list(range(0, len(piezas), 2))
 
     def _match(oracion):
+        """Indica si la oración contiene alguna clave: substring (Jericho) o palabra completa sin mayúsculas (relojes)."""
         low = oracion.lower()
         if por_palabra:
             return any(re.search(rf"\b{re.escape(k)}\b", oracion, re.I) for k in claves)      # re.I como relojes_no_reconocidos: las claves llevan mayúsculas (nombres de facción)
@@ -253,6 +266,10 @@ def _quitar_oracion_con(texto, claves, por_palabra):
 
 # ---------------------------------------------------------------- carga de campaña (mismo patrón que reporte_v2/recalcular_campana.py::procesar, sobre texto NORMALIZADO)
 def _cargar_campana(cid, brazo):
+    """Carga una campaña como la hace reporte_v2/recalcular_campana.py::procesar, sobre texto normalizado.
+
+    Returns:
+        (turnos normalizados por turn_id, relojes disparados, deltas narrables), todos hasta el turno HASTA."""
     camp = bd.Campaña(cid)
     turnos = [t for t in camp.turnos_narracion() if t["turn_id"] <= HASTA]
     relojes = [r for r in camp.relojes_disparados() if r["fired_at_turn"] <= HASTA]
@@ -269,11 +286,19 @@ def _real_jericho(delta, tpi):
 
 
 def _real_reloj(reloj, tpi):
+    """Veredicto del instrumento real para un reloj sobre los turnos `tpi`."""
     return RV.relojes_no_reconocidos([reloj], tpi)[0]["reconocido"]
 
 
 # ---------------------------------------------------------------- muestreo
 def _candidatos(pares, rng, detalle, real, clave_evento, extra):
+    """Reúne los eventos candidatos de las parejas y valida que la re-derivación coincida con el instrumento real.
+
+    Returns:
+        (no reconocidos, reconocidos), barajados con `rng`: candidatos a refuerzo y a supresión.
+
+    Raises:
+        AssertionError: si algún evento difiere entre la re-derivación y el instrumento real; no se perturba nada."""
     ok, no_ok, desajustes, evaluados = [], [], 0, 0
     for p in pares:
         for brazo, k in (("G1", "campaign_g1"), ("G2", "campaign_g2")):
@@ -298,15 +323,21 @@ def _candidatos(pares, rng, detalle, real, clave_evento, extra):
 
 
 def _candidatos_jericho(pares, rng):
+    """Candidatos Jericho (JQ1: hoy no reconocido, JQ2: hoy reconocido), sobre deltas narrables."""
     return _candidatos(pares, rng, _detalle_deltas, _real_jericho, "delta", False)       # (JQ1: hoy no reconocido, JQ2: hoy reconocido)
 
 
 def _candidatos_relojes(pares_v2, rng):
+    """Candidatos de relojes (RJ1: hoy no reconocido, RJ2: hoy reconocido), sobre relojes disparados."""
     return _candidatos(pares_v2, rng, _detalle_relojes, _real_reloj, "reloj", True)
 
 
 # ---------------------------------------------------------------- quitar la evidencia de TODA la ventana
 def _quitar_en_ventana(det, claves, por_palabra):
+    """Quita la evidencia en TODOS los turnos de la ventana del instrumento, no solo en el primero con coincidencia.
+
+    Returns:
+        (turnos con la evidencia quitada, número de oraciones quitadas)."""
     tpi2, quitadas = dict(det["tpi"]), 0
     for t in det["ventana_turnos"]:
         if t in tpi2:
@@ -317,10 +348,12 @@ def _quitar_en_ventana(det, claves, por_palabra):
 
 # ---------------------------------------------------------------- aplicar UNA perturbación (JQ1/RJ1: refuerzo; JQ2/RJ2: supresión)
 def _base(pid, instrumento, det, evento):
+    """Campos comunes de una fila de resultado (perturbación, instrumento, pareja, brazo, campaña y evento)."""
     return {"perturbacion": pid, "instrumento": instrumento, "par": det["par"], "brazo": det["brazo"], "campaign_id": det["campaign_id"], "evento": evento}
 
 
 def _fila_jq1(det, rng):
+    """JQ1: inserta la oración de refuerzo en el turno objetivo; confirmatoria si el delta pasa a reconocido ("se_dispara")."""
     oracion = _oracion_refuerzo(det["campo"], det["estado"], det["entidad"])
     t = det["turno_objetivo_refuerzo"]
     tpi2 = dict(det["tpi"])
@@ -332,6 +365,7 @@ def _fila_jq1(det, rng):
 
 
 def _fila_jq2(det, rng):
+    """JQ2: quita la evidencia léxica de la ventana; confirmatoria si el delta deja de reconocerse ("se_apaga")."""
     tpi2, n = _quitar_en_ventana(det, det["claves"], por_palabra=False)
     despues = _real_jericho(det["evento_crudo"], tpi2)
     return dict(_base("JQ2", "jericho_recall", det, f"{det['campo']}={det['estado']}@{det['entidad']}"),
@@ -340,6 +374,7 @@ def _fila_jq2(det, rng):
 
 
 def _fila_rj1(det, rng):
+    """RJ1: inserta una oración con la facción o una palabra de su agenda en el primer turno de la ventana; confirmatoria si el reloj pasa a reconocido."""
     palabra = det["vocab"][0] if det["vocab"] else det["faccion"]
     oracion = "{n} recorre el lugar mientras se habla de \"{p}\" por todas partes.".format(n=det["faccion"], p=palabra)
     t = det["turno_objetivo_refuerzo"]
@@ -352,6 +387,7 @@ def _fila_rj1(det, rng):
 
 
 def _fila_rj2(det, rng):
+    """RJ2: quita la evidencia léxica del reloj en su ventana; confirmatoria si deja de reconocerse ("se_apaga")."""
     tpi2, n = _quitar_en_ventana(det, det["vocab"], por_palabra=True)
     despues = _real_reloj(det["evento_crudo"], tpi2)
     return dict(_base("RJ2", "relojes_reconocidos", det, f"{det['faccion']}@{det['disparo']}"),
@@ -361,6 +397,7 @@ def _fila_rj2(det, rng):
 
 # ---------------------------------------------------------------- informe
 def _tabla_md(filas):
+    """Tabla Markdown por perturbación con n, filas confirmatorias (resultado distinto de sin_cambio) y su tasa."""
     L = ["| perturbación | instrumento | n | confirmatorias | tasa |", "|---|---|---|---|---|"]
     for pid in ("JQ1", "JQ2", "RJ1", "RJ2"):
         sub = [f for f in filas if f["perturbacion"] == pid]
@@ -373,6 +410,10 @@ def _tabla_md(filas):
 
 
 def main():
+    """Corre las cuatro perturbaciones (JQ1, JQ2, RJ1, RJ2) y escribe el CSV y el informe Markdown aparte de la línea base.
+
+    Fija y publica el SHA-256 de las expectativas antes de tocar datos reales. Jericho usa las 27
+    parejas; los relojes solo Par18-27. `--rapido` es la corrida de humo (3+3 y 2+2)."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--n-jericho", type=int, default=40)
     ap.add_argument("--n-relojes", type=int, default=16)

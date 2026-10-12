@@ -62,6 +62,7 @@ def resolver_par(c, campaign_id, tabla, tipo_delta, nombre, fila_a, fila_b,
     """Decide cuál de fila_a/fila_b es la fantasma. Devuelve el id a
     borrar, o None si hay que detenerse (deja el problema en `problemas`)."""
     def n_deltas(eid):
+        """Cuenta los state_deltas de una entidad."""
         return c.execute(
             "SELECT COUNT(*) AS n FROM state_deltas WHERE campaign_id=%s "
             "AND entity_type=%s AND entity_id=%s",
@@ -89,6 +90,10 @@ def resolver_par(c, campaign_id, tabla, tipo_delta, nombre, fila_a, fila_b,
 
 
 def main():
+    """Detecta y limpia las filas duplicadas por una siembra doble.
+
+    Sin --confirmar solo imprime lo que borraría; se detiene ante grupos que no sean exactamente de 2 filas.
+    """
     if len(sys.argv) < 2:
         sys.exit(__doc__)
     campaign_id = sys.argv[1]

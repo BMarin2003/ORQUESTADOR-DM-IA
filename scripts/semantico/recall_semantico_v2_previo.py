@@ -29,10 +29,12 @@ import recall_semantico as RS                  # noqa: E402
 
 
 def solo_previas(s_turno, t):
+    """Restringe las similitudes por turno a las ventanas previas al evento y a la ventana propia, excluyendo las posteriores."""
     return {u: v for u, v in s_turno.items() if u < t or t <= u <= t + C.VENTANA}
 
 
 def evaluar_campana(camp, brazo, embedder):
+    """Evalúa los eventos de una campaña con el nulo v2 y con la variante que usa solo ventanas previas."""
     tpi, eventos = RS.cargar(camp, brazo)
     if not eventos:
         return []
@@ -54,6 +56,7 @@ def evaluar_campana(camp, brazo, embedder):
 
 
 def _w(xs):
+    """Media con su intervalo de Wilson al 95 %; guion largo si no hay datos."""
     if not xs:
         return "—"
     lo, hi = est.wilson(sum(xs), len(xs))
@@ -61,6 +64,7 @@ def _w(xs):
 
 
 def main():
+    """Compara la v2 con la variante de nulo solo de ventanas previas (trabajo futuro declarado, exploratorio) y escribe el informe y el CSV."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--dispositivo", default="cpu")
     a = ap.parse_args()

@@ -41,6 +41,7 @@ LOG = RAIZ / "logs" / "supervisor.log"   # --log lo cambia (Par 18-27: superviso
 
 
 def log(msg):
+    """Escribe una línea con marca de tiempo en la salida estándar y en el archivo de log del supervisor."""
     linea = f"{datetime.now():%Y-%m-%d %H:%M:%S} {msg}"
     print(linea, flush=True)
     with LOG.open("a", encoding="utf-8") as f:
@@ -68,6 +69,7 @@ def campanias_vivas():
 
 
 def lanzar(j, turno):
+    """Lanza en segundo plano el jugador de una campaña para los turnos que faltan hasta OBJETIVO, con su salida a un log propio."""
     j["log"].parent.mkdir(exist_ok=True)
     with j["log"].open("ab") as f:
         j["proc"] = subprocess.Popen(
@@ -80,6 +82,10 @@ def lanzar(j, turno):
 
 
 def main():
+    """Supervisa las campañas pendientes y relanza las corridas caídas hasta completar OBJETIVO turnos.
+
+    Espera con retroceso exponencial entre reintentos; marca COMPLETA, BLOQUEADA (turno a medias, requiere revisión manual para no aplicar deltas dos veces) o RENDIDA (MAX_FALLOS caídas sin avanzar) y no duplica procesos vivos. Un candado en el puerto 47653 impide correr dos supervisores.
+    """
     ap = argparse.ArgumentParser()
     ap.add_argument("--arm", choices=["ambos", "G2", "G1"], default="ambos")
     ap.add_argument("--pares", default=None, help="por defecto, todos los del archivo de ids")

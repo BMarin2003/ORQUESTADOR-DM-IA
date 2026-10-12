@@ -66,6 +66,7 @@ PARAFRASIS = {  # fuera del léxico probable: mide cobertura, no equivalencia
 
 
 def wilson(x, n):
+    """Intervalo de Wilson al 95 % para x éxitos de n; (None, None) si n es 0."""
     if not n:
         return (None, None)
     p = x / n; d = 1 + Z * Z / n; c = (p + Z * Z / (2 * n)) / d; h = Z * sqrt(p * (1 - p) / n + Z * Z / (4 * n * n)) / d
@@ -73,18 +74,25 @@ def wilson(x, n):
 
 
 def hallazgos(texto, accion, nombre_pj=None):
+    """Contador de hallazgos de usurpación de persona2, identificados por (categoría, lema, frase de evidencia)."""
     return Counter((h["categoria"], h["verbo_lema"], h["evidencia"][:60]) for h in P.detectar_usurpacion(texto, accion, None, nombre_pj=nombre_pj))
 
 
 def nuevos(antes, despues):
+    """Hallazgos presentes después de la inyección que no estaban antes (definición de hallazgo NUEVO)."""
     return list((despues - antes).elements())
 
 
 def pct(x):
+    """Formatea una proporción como porcentaje; guion largo si no hay dato."""
     return "—" if x is None else f"{100 * x:.1f} %"
 
 
 def main():
+    """Corre el A2 de persona2: inyecta defectos conocidos en turnos reales y mide si aparece un hallazgo nuevo.
+
+    Celdas DIR (recall 2.ª y 3.ª persona), EXP (exploratorias) e INV (falsas alarmas), con las
+    expectativas y su SHA-256 fijadas antes de correr; escribe el informe en `--salida`."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--semilla", type=int, default=20260920)
     ap.add_argument("--n-por-par", type=int, default=15)
@@ -102,6 +110,7 @@ def main():
     diag = {}         # (celda 2p, plantilla) -> [n, con la categoría esperada, con cualquier hallazgo primario nuevo]
 
     def anota(celda, brazo, ok):
+        """Acumula el resultado (éxito o no) de una celda y brazo."""
         r = res.setdefault((celda, brazo), [0, 0]); r[0] += bool(ok); r[1] += 1
 
     for brazo in ("G1", "G2"):
@@ -142,6 +151,7 @@ def main():
          "## DIR: la misma usurpación en 2.ª y en 3.ª persona (aprobado si el límite inferior de Wilson ≥ 0.80)", "",
          "| celda | G1 | G2 | veredicto |", "|---|---|---|---|"]
     def fila(celda, tipo):
+        """Fila de la tabla para una celda; el veredicto aplica el criterio de Wilson pre-especificado (DIR: inferior >= 0.80; INV: tasa <= 5 % y superior <= 10 %; EXP: sin veredicto)."""
         c = []; ok = True
         for b in ("G1", "G2"):
             k, n = res.get((celda, b), [0, 0]); lo, hi = wilson(k, n)

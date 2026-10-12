@@ -38,6 +38,10 @@ SALIDA = RAIZ / "docs" / "reportes" / "sensibilidad_ext_sz_mtld"
 
 
 def main():
+    """Corre la línea base de correr_sensibilidad sobre las perturbaciones extra de qn1_legibilidad_sz y ventana_mtld/mattr.
+
+    Fija y guarda el SHA-256 de las expectativas antes de correr, las registra en perturbaciones y
+    comprueba que el hash de la tabla ESPERADO original no cambió; el informe se escribe aparte de la línea base."""
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     print(f"SHA-256 de las expectativas de la extensión (fijadas antes de correr): {HASH}", flush=True)
     SALIDA.parent.mkdir(parents=True, exist_ok=True)

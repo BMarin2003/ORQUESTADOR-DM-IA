@@ -41,6 +41,12 @@ HASTA = 1400
 
 
 def main():
+    """Cuenta, por brazo, las habilidades entre {llaves} que `dados.resolver_turno` acepta o rechaza.
+
+    Recorre las 21 parejas (turnos 1-1400), reaplica el parseo del motor sobre `player_buffer` ya guardado
+    (solo SELECT, sin LLM) y escribe `tags_rechazados.csv` (detalle) y el informe Markdown con el resumen
+    por brazo y los 40 textos rechazados más frecuentes. Un error en un turno se cuenta y se omite.
+    """
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     filas_detalle = []
     resumen = {"G1": Counter(), "G2": Counter()}   # turnos_con_tags, tags_declarados, tags_aceptados, tags_rechazados, errores

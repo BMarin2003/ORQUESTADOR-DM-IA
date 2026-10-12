@@ -24,6 +24,7 @@ LOGS = RAIZ / "logs"
 
 
 def logs_de(cid):
+    """Lista los logs (.md o .txt de más de 2000 bytes) de una campaña, identificados por los 8 primeros caracteres de su id."""
     return sorted(p for p in LOGS.rglob(f"*{cid[:8]}*") if p.suffix in (".md", ".txt") and p.stat().st_size > 2000)
 
 
@@ -49,6 +50,7 @@ def normalizado(ruta):
 
 
 def main():
+    """Extiende la verificación de dados y el costo a los pares 01-06, cuyos logs están fragmentados, y escribe el informe con el mismo formato que los pares 07-27."""
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     ids = json.loads((RAIZ / "docs" / "ids_par01-06.json").read_text(encoding="utf-8"))
     L = ["# Pares 01–06: dados y costo (logs fragmentados)", "",

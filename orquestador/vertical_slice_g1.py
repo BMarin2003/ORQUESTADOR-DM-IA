@@ -136,6 +136,7 @@ def normalizar_entity_type(valor):
 # ─────────────────────────────────────────────────────────────────────────
 
 def jaccard_palabras(a, b):
+    """Superposición léxica de Jaccard entre dos textos (proxy tier 3, no booleano de fallo)."""
     wa = set(re.findall(r"\w+", a.lower()))
     wb = set(re.findall(r"\w+", b.lower()))
     if not wa or not wb:
@@ -148,11 +149,13 @@ _RE_GRUPO_VOCALICO = re.compile(f"[{_VOCALES_ES}]+")
 
 
 def contar_silabas_es(palabra):
+    """Sílabas aproximadas: un grupo de vocales consecutivas cuenta como una (mínimo 1)."""
     grupos = _RE_GRUPO_VOCALICO.findall(palabra.lower())
     return max(1, len(grupos))
 
 
 def fernandez_huerta(texto):
+    """Índice de legibilidad Fernández Huerta del texto, o None si no hay palabras u oraciones."""
     palabras = re.findall(r"[a-záéíóúñü]+", texto.lower())
     frases = [f for f in re.split(r"[.!?]+", texto) if f.strip()]
     if not palabras or not frases:
@@ -164,6 +167,7 @@ def fernandez_huerta(texto):
 
 
 def entidades_conocidas(ents, pj_nombre):
+    """Vocabulario de entidades conocidas: nombres completos y cada palabra de 3+ letras, más el PJ."""
     conocidos = set()
     for nombre in [e["nombre"] for e in ents] + [pj_nombre]:
         conocidos.add(nombre)
@@ -172,6 +176,7 @@ def entidades_conocidas(ents, pj_nombre):
 
 
 def entidad_grafo_densidad(texto, conocidos):
+    """Proporción de pares de oraciones que comparten una entidad conocida; None con menos de 2 oraciones."""
     frases = [f for f in re.split(r"[.!?]+", texto) if f.strip()]
     if len(frases) < 2:
         return None
@@ -192,6 +197,7 @@ def entidad_grafo_densidad(texto, conocidos):
 
 
 def llamar(modelo, system, user, max_tokens=600, temp=0.8, json_mode=False):
+    """Llama a chat/completions de DeepInfra y devuelve `{texto, tin, tout, ms}` (None ante error HTTP no transitorio). Quita `<think>` y vallas; reintenta cortes de red y 429/502/503/504 con backoff."""
     key = os.environ.get("DEEPINFRA_API_KEY")
     cuerpo = {"model": modelo,
               "messages": [{"role": "system", "content": system},
@@ -207,6 +213,7 @@ def llamar(modelo, system, user, max_tokens=600, temp=0.8, json_mode=False):
     t0 = time.time()
 
     def _post(peticion, reintentos=4, espera=10, max_sobrecarga=30):
+        """POST con reintentos: backoff ante saturación (429/502/503/504) y cortes de red; otros HTTPError se propagan de inmediato."""
         intento = 0
         sobrecarga = 0
         while True:
@@ -261,6 +268,7 @@ def llamar(modelo, system, user, max_tokens=600, temp=0.8, json_mode=False):
 
 
 def parsear_json(texto):
+    """Extrae un objeto JSON del texto del modelo (con o sin vallas) o None si no hay uno válido."""
     limpio = re.sub(r"^```(?:json)?|```$", "", texto.strip(), flags=re.M).strip()
     try:
         return json.loads(limpio)
@@ -275,27 +283,35 @@ def parsear_json(texto):
 
 
 class Tee:
+    """Duplica stdout a la consola y a la bitácora Markdown en UTF-8."""
     def __init__(self, *streams):
+        """Recibe los flujos destino de la escritura."""
         self.streams = streams
 
     def write(self, data):
+        """Escribe `data` en todos los flujos."""
         for s in self.streams:
             s.write(data)
 
     def flush(self):
+        """Vacía todos los flujos."""
         for s in self.streams:
             s.flush()
 
 
 def paso(n, titulo):
+    """Imprime el encabezado Markdown `### [n] titulo` de un paso de la bitácora."""
     print(f"\n### [{n}] {titulo}\n")
 
 
 def ficha_jugador(pj):
+    """Ficha del jugador agéntico como texto para su prompt: ejes en bandas, agenda, actitud ante lo urgente y ejemplares si existen."""
     p = pj["personalidad"]
     def b(v, neg, pos):
+        """Etiqueta de un eje: `neg` si v < -40, `pos` si v > 40, "equilibrado" en medio."""
         return neg if v < -40 else pos if v > 40 else "equilibrado"
     def bd_(v):
+        """Actitud ante lo urgente según el desvío (<=30 acude, <=60 mixto, >60 prioriza lo suyo)."""
         if v <= 30:
             return ("Si el DM plantea algo urgente, VAS. Atiendes primero lo "
                     "que se te pide.")
@@ -375,6 +391,7 @@ def ficha_pnj_actor(persona):
 
 
 def renderizar_eventos_reloj(eventos_reloj):
+    """Texto de los eventos de reloj disparados (facción, agenda y consecuencia) para el Narrador; None si no hay."""
     if not eventos_reloj:
         return None
     lin = []
@@ -387,6 +404,7 @@ def renderizar_eventos_reloj(eventos_reloj):
 
 
 def main():
+    """CLI del turno completo G1 (multiagente): valida entorno y archivos, usa la campaña explícita, abre la bitácora Markdown (Tee) y delega en `_cuerpo_principal`."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--pj", default="PJ01")
     ap.add_argument("--turnos", type=int, default=1)
@@ -484,6 +502,7 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
                       prompt_jugador, prompt_actor, prompt_arbitro,
                       prompt_mundo, prompt_narrador, prompt_extractor,
                       contrato):
+    """Bucle de turnos G1: contexto, jugador, dados, router, Árbitro, Actores, Mundo, Narrador, extractor, apply_delta, validación del turno y costo por modelo."""
     # Bug encontrado en Par 02 real (2026-09-15, turno 177): este default
     # venía hardcodeado a "Sargento Brea" (PNJ del piloto "Vado de
     # Ceniza") -- funcionaba por casualidad mientras cada campaña nueva
@@ -496,6 +515,7 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
     coste_por_modelo = {}
 
     def sumar_coste(modelo, r):
+        """Acumula tokens de entrada y salida por modelo."""
         c = coste_por_modelo.setdefault(modelo, {"tin": 0, "tout": 0})
         c["tin"] += r["tin"]; c["tout"] += r["tout"]
 

@@ -56,10 +56,12 @@ CATEGORIAS = ("etiquetas", "linea_tirada", "encabezados", "patron_habilidad", "j
 
 
 def _sin_acento(s):
+    """Quita los diacríticos de `s` (NFD sin marcas Mn)."""
     return "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn")
 
 
 def _es_linea_tirada(linea):
+    """True si la línea tiene forma «Habilidad: Éxito/Fallo/Pifia … N vs CD M», es decir, una línea de tirada de G1."""
     m = _RE_PREFIJO_HABILIDAD.match(linea)
     if not m:
         return False
@@ -68,6 +70,7 @@ def _es_linea_tirada(linea):
 
 
 def _quitar_lineas_de_tirada(texto):
+    """Elimina las líneas de tirada; si no hay ninguna devuelve el texto intacto (sin tocar el espaciado)."""
     lineas = texto.split("\n")
     quedan = [ln for ln in lineas if not _es_linea_tirada(ln)]
     if len(quedan) == len(lineas):
@@ -194,6 +197,11 @@ def _poblacion(conn, brazo):
 
 
 def main():
+    """Mide los residuos de formato G1 que dejan `prosa()` y `normalizar_turno` y escribe `datos_v2/residuos_formato.json`.
+
+    Usa una muestra reproducible de turnos por brazo (`--n`, `--semilla`) y la población completa de G1; también
+    reporta la tipografía del diálogo (raya vs. comillas), que no se normaliza.
+    """
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=3000)
     ap.add_argument("--semilla", type=int, default=20260920)

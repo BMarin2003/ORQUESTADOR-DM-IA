@@ -21,6 +21,7 @@ ESCENARIOS = {
 
 
 def tasa(par, brazo):
+    """Porcentaje de turnos con hallazgo primario de persona2 en un par y brazo, con la misma definición que la tabla de la tesis."""
     with open(RAIZ / "datos_v2" / "persona2" / f"par{par}_{brazo}.csv", encoding="utf-8-sig", newline="") as f:
         # misma definición que consolidar.py (tabla de la tesis): media de `primaria` en turnos fuera del desarrollo del detector
         filas = [r for r in csv.DictReader(f) if int(r["turn_id"]) <= 1400 and int(r["en_desarrollo"] or 0) == 0]
@@ -28,6 +29,7 @@ def tasa(par, brazo):
 
 
 def main():
+    """Sensibilidad de H1f a la precisión del detector: reescala la tasa de cada brazo por escenarios de precisión y repite el Wilcoxon unilateral pareado."""
     pares = [f"{p:02d}" for p in range(1, 28)]
     t = {(p, b): tasa(p, b) for p in pares for b in ("G1", "G2")}
     g1 = sorted(t[(p, "G1")] for p in pares)

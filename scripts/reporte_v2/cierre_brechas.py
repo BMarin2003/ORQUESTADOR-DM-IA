@@ -24,6 +24,7 @@ DEC = {"grammaticality_lt": 4, "cr2a_z": 2, "cr2a_crudo": 3, "cr2b_cos_v8": 3, "
 
 
 def leer():
+    """Carga `consolidado_v2.csv` indexado por la clave del instrumento."""
     with open(CONS, newline="", encoding="utf-8") as fh:
         return {r["clave"]: r for r in csv.DictReader(fh)}
 
@@ -32,6 +33,7 @@ C = leer()
 
 
 def _f(v, clave):
+    """Formatea un valor del consolidado: porcentaje si la clave está en `PCT`, si no con los decimales de `DEC`; «—» si falta."""
     if v in ("", None):
         return "—"
     x = float(v)
@@ -64,6 +66,10 @@ def sg(clave):
 
 
 def bloques():
+    """Lee `bloques.csv` (7 bloques de 200 turnos) como {(indicador, brazo, par): {n_bloque: valor}}.
+
+    Ignora los bloques sin valor.
+    """
     with open(D2 / "bloques.csv", newline="", encoding="utf-8") as fh:
         filas = list(csv.DictReader(fh))
     out = {}
@@ -74,6 +80,10 @@ def bloques():
 
 
 def tabla_bloques(B, indicadores):
+    """Tabla Markdown de la media por bloque (B1-B7) de cada indicador y brazo (Anexo A, deriva por profundidad).
+
+    Solo usa series con los 7 bloques completos; la última columna cuenta las parejas con B7 > B1.
+    """
     L = ["| Indicador | Brazo | B1 (1-200) | B2 | B3 | B4 | B5 | B6 | B7 (1201-1400) | último > primero |", "|---|---|---|---|---|---|---|---|---|---|"]
     for ind, etiq, pct in indicadores:
         for brazo in ("G1", "G2"):
@@ -88,6 +98,10 @@ def tabla_bloques(B, indicadores):
 
 
 def incidencia():
+    """Tabla Markdown de la incidencia acumulada del primer PNJ inactivo que actúa (`t_pnj`) por brazo.
+
+    Cuenta campañas con `t_pnj` <= cada tope (200 a 1400), las que nunca ocurren y la mediana entre las que sí.
+    """
     with open(D2 / "por_campana.csv", newline="", encoding="utf-8") as fh:
         filas = list(csv.DictReader(fh))
     L = ["| Brazo | ≤ 200 | ≤ 400 | ≤ 600 | ≤ 800 | ≤ 1000 | ≤ 1200 | ≤ 1400 | nunca | mediana (turno, entre las que ocurren) |", "|---|---|---|---|---|---|---|---|---|---|"]
@@ -100,6 +114,7 @@ def incidencia():
 
 
 def top_frases():
+    """Tabla Markdown con las 5 frases idénticas más repetidas por brazo, desde `top_frases.csv` (Anexo C)."""
     with open(D2 / "top_frases.csv", newline="", encoding="utf-8") as fh:
         filas = list(csv.DictReader(fh))
     L = ["| Brazo | Veces | Pareja | Frase (exactamente igual, normalizada a minúsculas) |", "|---|---|---|---|"]
@@ -111,6 +126,13 @@ def top_frases():
 
 # ------------------------------------------------------------------ la matriz
 def brechas():
+    """Matriz de brechas de la literatura por objetivo, con su evidencia y su estado.
+
+    Returns:
+        Lista de (id_objetivo, título, [(brecha, evidencia, estado, qué falta)]). Estados: CERRADA, PARCIAL,
+        LÍMITE o PENDIENTE (ver regla en el docstring del módulo). Las cifras se interpolan desde el consolidado.
+        Es borrador: las brechas se rehacen tras la docimasia (7 objetivos previos vs. 6 de la tesis).
+    """
     ce, pa, li, pe = "CERRADA", "PARCIAL", "LÍMITE", "PENDIENTE"
     return [
         ("OE-1", "Revisión sistemática de la literatura sobre arquitecturas de IA para narrativa interactiva", [
@@ -188,6 +210,11 @@ PREVIO = {"OE-1": 40, "OE-2": 60, "OE-3": 60, "OE-4": 60, "OE-5": 15, "OE-6": 15
 
 
 def lista(titulo, dims, filas):
+    """Tabla Markdown de una lista de resultados: filas del consolidado cuyas dimensiones están en `dims`.
+
+    Muestra G1, G2, HL (G1−G2), r rank-biserial y p Holm; marca con ⚠ los instrumentos cuyo signo cambia entre
+    lotes (`sg`) y indica «sin datos suficientes» si no hay medias.
+    """
     L = [f"### {titulo}", "", "| Indic. | Instrumento | ↕ | G1 | G2 | HL (G1−G2) | r | p Holm | Parejas | Estado |", "|---|---|---|---|---|---|---|---|---|---|"]
     for r in filas:
         if r["dimension"] not in dims:
@@ -205,6 +232,11 @@ def lista(titulo, dims, filas):
 
 
 def main():
+    """Genera `docs/cierre_brechas.md` (borrador): matriz de brechas por objetivo, tres listas de resultados y anexos.
+
+    Todas las cifras salen del consolidado y de `datos_v2/cierre/`. También imprime por consola el conteo de
+    estados y la cobertura (cerradas + 0,5 × parciales) / brechas por objetivo.
+    """
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     with open(CONS, newline="", encoding="utf-8") as fh:
         filas = list(csv.DictReader(fh))

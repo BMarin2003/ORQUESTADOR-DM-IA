@@ -69,6 +69,7 @@ def lemas_accion(x):
 
 
 def ochiai(a, b):
+    """Coeficiente de Ochiai |a ∩ b| / sqrt(|a|·|b|) entre conjuntos de lemas; 0.0 si alguno está vacío."""
     if not a or not b:
         return 0.0
     return len(a & b) / math.sqrt(len(a) * len(b))
@@ -79,12 +80,14 @@ class PoolAcciones:
     """Lemas y clase de la acción de cada turno de UNA campaña (el reservorio del nulo)."""
 
     def __init__(self, campana, lemas=None, clases=None):
+        """Guarda lemas y clase por turno; `turnos` solo contiene los válidos como reservorio del nulo."""
         self.campana = str(campana)
         self.lemas = dict(lemas or {})
         self.clases = dict(clases or {})
         self.turnos = sorted(t for t, ls in self.lemas.items() if self._valida(t))
 
     def _valida(self, t):
+        """Un turno sirve al nulo si su acción no es solo etiqueta de tirada y tiene >= MIN_LEMAS lemas."""
         return self.clases.get(t) != "solo_tag" and len(self.lemas.get(t, ())) >= MIN_LEMAS
 
     @classmethod
@@ -97,6 +100,7 @@ class PoolAcciones:
         return cls(campana, lemas, clases)
 
     def agregar_turno(self, turno, accion):
+        """Añade o reemplaza la acción de un turno y recalcula los turnos válidos."""
         ls, clase = lemas_accion(accion)
         self.lemas[turno], self.clases[turno] = ls, clase
         self.turnos = sorted(t for t in self.lemas if self._valida(t))
@@ -117,6 +121,7 @@ def candidatos_nulo(pool, turno, n_lemas):
 
 # ---------------------------------------------------------------- medición
 def _vacio(clase, nA=0, nR=0):
+    """Resultado de `medir` no computable (z, percentil y p_perm en None) con la clase indicada."""
     return {"clase": clase, "crudo": None, "z": None, "percentil": None, "p_perm": None,
             "n_nulo": 0, "nA": nA, "nR": nR}
 
@@ -158,14 +163,17 @@ def medir_ventana(pool, inicio, textos):
 
 # ---------------------------------------------------------------- enchufe al arnés
 def _f_z(texto, ctx):
+    """Función de turno del arnés: z de la respuesta frente al nulo de la campaña."""
     return medir(ctx.pool, ctx.turno, texto)["z"]
 
 
 def _f_crudo(texto, ctx):
+    """Función de turno del arnés: Ochiai crudo de la respuesta."""
     return medir(ctx.pool, ctx.turno, texto)["crudo"]
 
 
 def _f_ventana(textos, ctx):
+    """Función de ventana del arnés: media de z de los turnos consecutivos."""
     return medir_ventana(ctx.pool, ctx.turno, textos)
 
 

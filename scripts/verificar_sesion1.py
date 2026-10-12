@@ -1,3 +1,4 @@
+"""Verifica que el turn_log de una campaña esté completo (turnos 0-250 sin huecos) e imprime su cabecera."""
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "orquestador"))

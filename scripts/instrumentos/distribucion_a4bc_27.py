@@ -24,23 +24,29 @@ HASTA = 1400
 
 
 class _Res:
+    """Resultado mínimo con la interfaz fetchall() que espera `cargar_campanas`."""
     def __init__(self, filas):
+        """Guarda las filas ya recortadas."""
         self._f = filas
 
     def fetchall(self):
+        """Devuelve las filas guardadas."""
         return self._f
 
 
 class ConnRecortada:
     """Solo lectura; devuelve los turnos ≤ HASTA de la consulta de turn_log que usa cargar_campanas."""
     def __init__(self, conn):
+        """Envuelve la conexión de solo lectura."""
         self._c = conn
 
     def execute(self, sql, params=None):
+        """Ejecuta la consulta y descarta los turnos posteriores a HASTA para igualar la longitud de todas las campañas."""
         return _Res([r for r in self._c.execute(sql, params).fetchall() if r["turn_id"] <= HASTA])
 
 
 def main():
+    """Calcula la distribución descriptiva por bloques para las 27 parejas (modelo idf sobre las 54 campañas) y la escribe en CSV; no repite la evaluación pre-especificada."""
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     log = lambda s: print(s, flush=True)   # noqa: E731
     t0 = time.perf_counter()

@@ -20,6 +20,7 @@ import instrumentos_texto as it   # noqa: E402
 
 @dataclass
 class ContextoA4bc(it.Contexto):
+    """Contexto del arnés ampliado con el pool de acciones, el turno, el escenario y el modelo de anclaje."""
     pool: object = None        # respuesta_accion.PoolAcciones de la campaña
     turno: int = 0             # turno de la respuesta (inicio de la ventana en instrumentos de ventana)
     escenario: object = None   # anclaje_escenario.Escenario del par
@@ -27,6 +28,7 @@ class ContextoA4bc(it.Contexto):
 
 
 def crear(pool=None, turno=0, escenario=None, modelo=None, brazo="G2", **kw):
+    """Construye un ContextoA4bc con valores neutros (PJ, sin entidades ni estados PNJ) que `kw` puede sobrescribir."""
     base = dict(pj_nombre="PJ", entidades=[], estados_pnj={})
     base.update(kw)
     return ContextoA4bc(pool=pool, turno=turno, escenario=escenario, modelo=modelo, brazo=brazo, **base)

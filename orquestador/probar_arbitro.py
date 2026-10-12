@@ -76,6 +76,7 @@ CASOS = [
 
 
 def main():
+    """Corre CASOS contra `resolver_veredicto` (determinista, sin LLM); sale con código 1 si algún caso no coincide."""
     total = len(CASOS)
     ok = 0
     for i, (desc, args, esperado) in enumerate(CASOS, 1):

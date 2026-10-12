@@ -37,6 +37,11 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 
 def wilson(x, n, z=Z):
+    """Intervalo de Wilson al 95 % para una proporción x/n; (None, None) si n es 0. Se usa en lugar del intervalo normal porque los n por estrato son pequeños.
+
+    Returns:
+        Tupla (inferior, superior) acotada a [0, 1].
+    """
     if not n:
         return (None, None)
     p = x / n
@@ -65,20 +70,33 @@ def acuerdo(a, b, c, d):
 
 
 def leer(ruta):
+    """Lee un CSV (UTF-8 con o sin BOM) como lista de dicts, una por fila."""
     with Path(ruta).open(encoding="utf-8-sig", newline="") as f:
         return list(csv.DictReader(f))
 
 
 def etiquetas(ruta):
+    """Indexa las etiquetas de un evaluador por id_muestra: veredicto, tipos atribuidos, si el turno sigue a una tirada y segundos empleados."""
     return {r["id_muestra"]: {"v": r["veredicto"], "tipos": [t for t in r["tipos"].split(";") if t],
                               "tirada": r["tras_tirada"] == "1", "seg": float(r["segundos"] or 0)} for r in leer(ruta)}
 
 
 def detectada_primaria(h):
+    """Indica si el detector marcó el turno con algún hallazgo de categoría primaria (la que cuenta para la tasa de persona2)."""
     return any(x.split(":")[0] in PRIMARIAS for x in (h or "").split(";") if x)
 
 
 def analizar(ruta_et, ruta_clave, ruta_et2=None):
+    """Resume la auditoría humana del detector persona2: precisión por estrato y brazo, prevalencia y recall con la sonda aleatoria, falsos negativos y, si hay segundo etiquetador, acuerdo entre ambos.
+
+    Args:
+        ruta_et: CSV de etiquetas del evaluador principal.
+        ruta_clave: clave de la muestra (estrato, brazo, hallazgos del detector).
+        ruta_et2: CSV del segundo evaluador, opcional.
+
+    Returns:
+        Dict con los agregados que consume reporte_md.
+    """
     clave = {r["id_muestra"]: r for r in leer(ruta_clave)}
     et = etiquetas(ruta_et)
     res = {"n_etiquetados": len(et), "n_clave": len(clave), "por_estrato": Counter(), "dudoso": Counter(),
@@ -136,14 +154,17 @@ def analizar(ruta_et, ruta_clave, ruta_et2=None):
 
 
 def pct(x):
+    """Formatea una proporción como porcentaje con un decimal; guion largo si es None."""
     return "—" if x is None else f"{100 * x:.1f} %"
 
 
 def ic(t):
+    """Formatea un intervalo (inferior, superior) como porcentajes; guion largo si es None."""
     return "—" if t[0] is None else f"[{100 * t[0]:.1f}–{100 * t[1]:.1f}]"
 
 
 def reporte_md(r):
+    """Genera el informe Markdown de la auditoría de persona2 a partir del dict de analizar()."""
     L = ["# Auditoría del detector persona2 (muestra de confirmación)", "",
          f"Etiquetados: {r['n_etiquetados']} de {r['n_clave']} · por estrato: " + ", ".join(f"{k} {v}" for k, v in sorted(r['por_estrato'].items())),
          f"· «dudoso»: {sum(r['dudoso'].values())} · mediana de tiempo por turno: {r['segundos_mediana'] if r['segundos_mediana'] is not None else '—'} s", "",
@@ -181,6 +202,7 @@ def reporte_md(r):
 
 
 def main():
+    """Punto de entrada: analiza las etiquetas contra la clave, escribe el informe en --salida y lo imprime."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--etiquetas", required=True)
     ap.add_argument("--etiquetas2")

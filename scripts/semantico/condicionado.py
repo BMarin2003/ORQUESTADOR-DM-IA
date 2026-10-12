@@ -43,6 +43,7 @@ NORM_SQL = f"translate(lower(content), '{_DESDE_SQL}', '{_HACIA_SQL}')"
 
 
 def normalizar(texto):
+    """Pasa a minúsculas y quita acentos (NFKD), para comparar menciones sin depender de la ortografía."""
     t = unicodedata.normalize("NFKD", (texto or "").lower())
     return "".join(ch for ch in t if not unicodedata.combining(ch))
 
@@ -60,6 +61,7 @@ def alias(nombre, campo):
 
 
 def _escapar(a):
+    """Escapa los metacaracteres de regex de un alias para usarlo literal en un patrón."""
     return re.sub(r"([.^$*+?()\[\]{}|\\])", r"\\\1", a)
 
 

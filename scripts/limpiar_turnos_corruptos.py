@@ -25,6 +25,7 @@ import psycopg
 
 
 def main():
+    """Borra los turnos de una campaña (turn_validation, state_deltas, turn_log) conservando el turno 0 con el lore, para reiniciarla tras una corrida corrupta."""
     if len(sys.argv) < 2:
         sys.exit(__doc__)
     campaign_id = sys.argv[1]

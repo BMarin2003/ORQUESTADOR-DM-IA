@@ -60,6 +60,7 @@ def hodges_lehmann(d):
 
 
 def _rangos_medios(a):
+    """Rangos 1..n de `a` con empates resueltos por rango medio (usado en rank-biserial y Wilcoxon)."""
     a = np.asarray(a, dtype=float)
     _, inv, cnt = np.unique(a, return_inverse=True, return_counts=True)
     fin = np.cumsum(cnt)
@@ -105,6 +106,10 @@ def wilcoxon_exacto(d):
 
 
 def indices_bootstrap(n, B, semilla):
+    """Matriz (B, n) de índices de remuestreo con reemplazo, fijada por `semilla`.
+
+    Se comparte entre v1 y v2 y entre estadísticos para que las mismas parejas se remuestreen en todos.
+    """
     return np.random.default_rng(semilla).integers(0, n, size=(B, n))
 
 
@@ -125,6 +130,7 @@ TITULAR = {"signo": "cambia de signo", "desaparece": "desaparece",
 
 
 def _signo(x):
+    """Signo de `x`: -1, 0 o 1."""
     return (x > 0) - (x < 0)
 
 
@@ -168,6 +174,12 @@ def media_campana(filas, instrumento, desde=2):
 
 
 def _estadisticos(d, idx):
+    """Estadísticos de las diferencias pareadas G1−G2 de un instrumento (n = 21 parejas).
+
+    Returns:
+        Dict con mediana, Hodges-Lehmann y rank-biserial (cada uno con IC bootstrap percentil 95 % sobre `idx`,
+        los índices de parejas remuestreadas) y el Wilcoxon exacto (W+, W−, p bilateral) solo como referencia.
+    """
     d = np.asarray(d, dtype=float)
     w = wilcoxon_exacto(d)
     return {"n_pares": int(d.size), "n_efectivo": w["n_efectivo"],
@@ -236,16 +248,19 @@ def analizar(directorio, pares, instrumentos=None, semilla=20260920, B=10000, de
 
 # ---------------------------------------------------------------- informe
 def _f(x, d=3):
+    """Formatea un número con `d` decimales; «—» si es None o NaN."""
     if x is None or (isinstance(x, float) and np.isnan(x)):
         return "—"
     return f"{x:.{d}f}"
 
 
 def _fp(p):
+    """Formatea un p-valor: notación `.2g` si < 0,001, si no 3 decimales; «—» si es None."""
     return "—" if p is None else (f"{p:.2g}" if p < 0.001 else f"{p:.3f}")
 
 
 def _ic(ic, d=2):
+    """Formatea un IC como «[lo, hi]» con `d` decimales."""
     return f"[{ic[0]:.{d}f}, {ic[1]:.{d}f}]"
 
 
@@ -259,6 +274,7 @@ def _cifras(x):
 
 
 def _leer_json(nombre):
+    """Lee un JSON de `datos_v2/`; devuelve None si falta o está corrupto, para que el informe omita esa sección."""
     ruta = DATOS / nombre
     try:
         return json.loads(ruta.read_text(encoding="utf-8"))
@@ -267,6 +283,7 @@ def _leer_json(nombre):
 
 
 def _commit():
+    """Hash corto del commit actual para trazabilidad del informe; «?» si git falla."""
     try:
         return subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=RAIZ, capture_output=True,
                               text=True, timeout=10).stdout.strip() or "?"
@@ -275,6 +292,15 @@ def _commit():
 
 
 def generar_informe(res, extras):
+    """Redacta el informe Markdown v1 vs v2 (artefacto de formato, sanidad, medias, diferencias pareadas, cambios de conclusión).
+
+    Args:
+        res: salida de `analizar`.
+        extras: JSON auxiliares opcionales (residuos de formato, sanidad G2, control G1 crudo, tiempos); None omite su sección.
+
+    Returns:
+        Texto Markdown. Es descriptivo y post hoc: no declara ganador.
+    """
     R = res["instrumentos"]
     nombres = list(R)
     L = []
@@ -451,6 +477,7 @@ def generar_informe(res, extras):
 
 
 def escribir_csv_resumen(res, destino):
+    """Escribe en `destino` `resumen_por_campana.csv`, `comparacion_pares.csv` y `comparacion_estadistica.json` (sin `por_campana`)."""
     import csv
     with open(destino / "resumen_por_campana.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
@@ -469,6 +496,10 @@ def escribir_csv_resumen(res, destino):
 
 
 def main():
+    """Corre `analizar` sobre `datos_v2/`, escribe los CSV/JSON de resumen y el informe, e imprime HL, r y p Holm de v1 a v2 por instrumento.
+
+    Opciones: `--B` (réplicas bootstrap) y `--semilla`.
+    """
     ap = argparse.ArgumentParser()
     ap.add_argument("--B", type=int, default=10000)
     ap.add_argument("--semilla", type=int, default=20260920)

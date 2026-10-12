@@ -44,6 +44,11 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 
 def wilson(x, n, z=Z):
+    """Intervalo de Wilson al 95 % para una proporción x/n; (None, None) si n es 0. Se usa en lugar del intervalo normal porque los n por estrato son pequeños.
+
+    Returns:
+        Tupla (inferior, superior) acotada a [0, 1].
+    """
     if not n:
         return (None, None)
     p = x / n
@@ -96,11 +101,16 @@ def fleiss_kappa(tabla, categorias):
 
 
 def leer(ruta):
+    """Lee un CSV (UTF-8 con o sin BOM) como lista de dicts, una por fila."""
     with Path(ruta).open(encoding="utf-8-sig", newline="") as f:
         return list(csv.DictReader(f))
 
 
 def main():
+    """Calcula el acuerdo entre evaluadores humanos (Fleiss) sobre la validación de la brecha 4 y lo contrasta con la clave del detector.
+
+    Lee los CSV de etiquetas (--etiquetas), cruza con la clave y escribe el informe Markdown en --salida.
+    """
     ap = argparse.ArgumentParser()
     ap.add_argument("--etiquetas", nargs="+", required=True)
     ap.add_argument("--clave", default=str(RAIZ / "validacion" / "brecha4_clave.csv"))

@@ -47,6 +47,7 @@ FUENTES = {
 
 
 def fnum(x):
+    """Convierte a float; None si no es numérico o no es finito."""
     try:
         v = float(x)
         return v if math.isfinite(v) else None
@@ -101,6 +102,7 @@ def leer_cr2a():
 
 
 def holm(ps):
+    """Ajuste de Holm-Bonferroni (monótono, tope 1.0) en el orden original de `ps`."""
     idx = sorted(range(len(ps)), key=lambda i: ps[i])
     adj, m, prev = [None] * len(ps), len(ps), 0.0
     for r, i in enumerate(idx):
@@ -110,6 +112,11 @@ def holm(ps):
 
 
 def wil(d):
+    """Wilcoxon bilateral (scipy) sobre las diferencias `d`, descartando None y ceros.
+
+    Returns:
+        (n efectivo, mediana, p, nº de positivas); con menos de 6 diferencias, (n, None, None, None).
+    """
     d = [x for x in d if x is not None and abs(x) > 1e-12]
     if len(d) < 6:
         return len(d), None, None, None
@@ -119,12 +126,14 @@ def wil(d):
 
 
 def salto(bl):
+    """Lectura A: b14 − media(b12, b13); None si falta alguno de los tres bloques."""
     if None in (bl[11], bl[12], bl[13]):
         return None
     return bl[13] - (bl[11] + bl[12]) / 2
 
 
 def fuera_tendencia(bl):
+    """Lectura B: b14 menos su predicción por OLS lineal sobre b1..b13; None si hay menos de 8 bloques previos o falta b14."""
     xs = [k for k in range(13) if bl[k] is not None]
     if len(xs) < 8 or bl[13] is None:
         return None
@@ -133,6 +142,10 @@ def fuera_tendencia(bl):
 
 
 def analizar(series):
+    """Aplica las tres lecturas (A salto, B fuera de tendencia, C dif-en-dif G1−G2) por indicador y brazo.
+
+    Holm se calcula dentro de cada lectura sobre todos los indicadores (familia exploratoria). No es una docimasia nueva.
+    """
     filas = []
     for ind, dic in series.items():
         pares = sorted({p for _, p in dic})
@@ -167,6 +180,7 @@ SENTIDO = {k: v[2] for k, v in FUENTES.items()} | {"cr2a_z": "baja"}
 
 
 def escribir(filas, medias):
+    """Escribe `ultimo_bloque_medias.csv`, `ultimo_bloque_pruebas.csv` y `ultimo_bloque.md` en `docs/reportes/degradacion/`."""
     SALIDA.mkdir(parents=True, exist_ok=True)
     with open(SALIDA / "ultimo_bloque_medias.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["indicador", "brazo", "bloque", "media", "n"])
@@ -192,6 +206,7 @@ def escribir(filas, medias):
 
 
 def main():
+    """Lee los indicadores por turno (CR-2a(z) salvo `--sin-cr2a`), corre `analizar`, escribe los resultados e imprime cada fila con la marca `p_holm<.05`."""
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     series = leer_por_turno()
     if "--sin-cr2a" not in sys.argv:

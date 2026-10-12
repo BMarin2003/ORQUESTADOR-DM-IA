@@ -44,12 +44,15 @@ TURNOS_POR_DIA = 20
 
 
 class Campaña:
+    """Acceso a una campaña en Postgres: cada método abre su conexión y fija el tenant (RLS) solo para esa transacción."""
     def __init__(self, campaign_id, dsn=None):
+        """Guarda el id de campaña y el DSN (por defecto `DSN`); el tenant se resuelve en la primera transacción."""
         self.campaign_id = campaign_id
         self.dsn = dsn or DSN
         self._tenant = None
 
     def _conn(self):
+        """Abre una conexión nueva (sin pool) con hasta 6 intentos y backoff de 0.5 a 8 s ante `OperationalError`."""
         # Bug encontrado en Par 07-17 (2026-09-18, 17:17): cada método abre
         # una conexión TCP nueva (sin pool) y, con 22 corridas en paralelo,
         # Windows agotó puertos efímeros una vez en 5 h -> "connection
@@ -80,6 +83,7 @@ class Campaña:
     # ------------------------------------------------------------------ leer
 
     def cabecera(self):
+        """Fila de `campaigns` con título, arquitectura, tono, día de juego y turno actual."""
         with self._conn() as c:
             self._tx(c)
             return c.execute("""
@@ -321,6 +325,7 @@ class Campaña:
                  ORDER BY turn_id DESC LIMIT 1""", (self.campaign_id,)).fetchone()
 
     def estado_pnj(self, nombre):
+        """Estado de un PNJ por nombre (status, afinidad y su banda, hechos conocidos, secretos revelados); None si no existe."""
         with self._conn() as c:
             self._tx(c)
             return c.execute("""
@@ -487,6 +492,7 @@ class Campaña:
         return historial_modos, ultimo_pnj_hablo
 
     def id_de(self, tipo, nombre):
+        """UUID de la entidad por tipo y nombre en esta campaña, o None. `tipo` se normaliza a minúsculas; un tipo desconocido lanza KeyError."""
         # El casing de `tipo` no siempre viene controlado: el contrato del
         # extractor sí fuerza minúsculas, pero el prompt de Mundo (G1) no
         # -- se vio en producción un delta con entity_type="NPC" en vez de
@@ -530,6 +536,7 @@ class Campaña:
             return r
 
     def resolver_evento(self, npc_id, event_kind):
+        """Delega en `resolve_event()` de SQL: el modelo solo clasifica el evento y las magnitudes (afinidad, confianza, respeto) salen de la base, moduladas por la personalidad del PNJ."""
         with self._conn() as c:
             self._tx(c)
             return c.execute(
@@ -537,6 +544,7 @@ class Campaña:
                 (npc_id, event_kind)).fetchone()
 
     def propagar(self, entity_type, entity_id, field, value, turn_id, witnessed):
+        """Delega en `propagate_from_delta()`: recorre entity_relations y devuelve los eventos de facción derivados; sin `witnessed` verdadero no propaga."""
         with self._conn() as c:
             self._tx(c)
             r = c.execute("""

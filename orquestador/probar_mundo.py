@@ -5,6 +5,7 @@ que probar_router.py y probar_arbitro.py.
 from mundo import resolver_mundo
 
 def lugar(kind="building", detail="sketch", descripcion=None):
+    """Ubicación mínima de prueba con los campos que lee `resolver_mundo`."""
     return {"id": "loc-1", "kind": kind, "detail": detail,
             "description_canonical": descripcion, "observed_at_turn": None}
 
@@ -81,6 +82,7 @@ CASOS = [
 
 
 def main():
+    """Corre CASOS contra `resolver_mundo` (determinista, sin LLM); sale con código 1 si algún caso no coincide."""
     total = len(CASOS)
     ok = 0
     for i, (desc, args, esperado) in enumerate(CASOS, 1):

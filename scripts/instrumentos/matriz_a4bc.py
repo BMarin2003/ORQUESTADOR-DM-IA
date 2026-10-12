@@ -162,6 +162,7 @@ _J = {
 
 
 def _celda(dir_, min_, just, exacto=False, descriptivo=False, criterio=None):
+    """Celda de la matriz: dirección esperada, magnitud mínima `min`, flags exacto/descriptivo, justificación y criterio (por defecto según el tipo de celda)."""
     if criterio is None:
         criterio = _CRIT_EXACTO if exacto else (_CRIT_IGUAL if dir_ == "sin_cambio" else _CRIT_ABAJO)
     return {"dir": dir_, "min": min_, "exacto": exacto, "descriptivo": descriptivo,
@@ -169,6 +170,7 @@ def _celda(dir_, min_, just, exacto=False, descriptivo=False, criterio=None):
 
 
 def _construir():
+    """Arma la matriz esperada instrumento x perturbación de A4b/c (direcciones, controles «sin cambio», celdas exactas y descriptivas); se hashea antes de correr para no ajustarla a los resultados."""
     c = {}
     # ---- cr2a_z (unidades: z del nulo por permutación)
     j = _J["respuesta"]

@@ -19,6 +19,7 @@ DESTINO = RAIZ / "sustentacion" / "propuestas" / "Sustentacion_MAS_vs_Monolitico
 
 
 def forma(slide, sid):
+    """Devuelve la forma de la lámina por su shape_id; KeyError si no existe."""
     for sh in slide.shapes:
         if sh.shape_id == sid:
             return sh
@@ -40,6 +41,11 @@ def poner(shape, texto):
 
 
 def reemplazar(shape, viejo, nuevo):
+    """Reemplaza texto dentro de un run de la forma, conservando el formato.
+
+    Returns:
+        True si encontró y reemplazó el texto.
+    """
     for p in shape.text_frame.paragraphs:
         for r in p.runs:
             if viejo in r.text:
@@ -49,6 +55,7 @@ def reemplazar(shape, viejo, nuevo):
 
 
 def duplicar(prs, slide):
+    """Duplica una lámina (formas y fondo) al final de la presentación y devuelve la nueva."""
     nueva = prs.slides.add_slide(slide.slide_layout)
     for sh in list(nueva.shapes):
         sh._element.getparent().remove(sh._element)
@@ -110,6 +117,7 @@ NOTAS_CONTROLES = (
 
 
 def main():
+    """Actualiza el deck con las correcciones verificadas (jugador, dados) y añade las láminas de semántica y controles; aserta que cada texto viejo exista."""
     prs = Presentation(ORIGEN)
     s = prs.slides
 

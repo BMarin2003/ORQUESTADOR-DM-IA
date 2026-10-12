@@ -71,6 +71,7 @@ def normalizar(t):
 
 
 def _semilla(campaign_id, turn_id, etiqueta, intento=0):
+    """Semilla entera determinista (SHA-256 de campaña|turno|etiqueta|intento): misma entrada, misma tirada."""
     crudo = f"{campaign_id}|{turn_id}|{etiqueta.lower()}|{intento}"
     return int(hashlib.sha256(crudo.encode()).hexdigest()[:16], 16)
 
@@ -175,6 +176,7 @@ AVISO_META = ("\n\nAVISO DEL SISTEMA: tu respuesta anterior salió del papel (pe
 
 
 def es_meta_ooc(narracion):
+    """True si la narración contiene un fragmento entre corchetes de 20+ caracteres, señal de DM fuera de personaje."""
     return bool(META_OOC.search(narracion or ""))
 
 

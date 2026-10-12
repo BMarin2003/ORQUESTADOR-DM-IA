@@ -26,6 +26,7 @@ GRILLA_TURNOS = [2, 3, 5]
 
 
 def main():
+    """Repite la clasificación de OE-1 sobre una grilla de umbrales (MIN_MINUS, MIN_TURNOS) para mostrar si la conclusión depende de ellos, y escribe la tabla de sensibilidad."""
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     conn = A.datos.abrir_conexion()
     por_camp, minus, mayus = {}, Counter(), Counter()

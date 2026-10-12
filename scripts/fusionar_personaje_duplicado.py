@@ -35,6 +35,10 @@ import db as bd  # noqa: E402
 
 
 def main():
+    """Fusiona las dos filas 'characters' de un PJ duplicado por siembra doble: reconstruye el estado en la fila destino desde los deltas, reapunta los deltas de la sobrante y la borra.
+
+    Sin --confirmar es dry-run; con él aplica todo en una transacción.
+    """
     if len(sys.argv) < 3:
         sys.exit(__doc__)
     campaign_id, nombre = sys.argv[1], sys.argv[2]

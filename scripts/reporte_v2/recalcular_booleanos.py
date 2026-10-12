@@ -37,10 +37,17 @@ INFORME = RAIZ / "docs" / "reportes" / "reporte_v2_booleanos.md"
 
 
 def _b(x):
+    """Convierte a 0/1, conservando None."""
     return None if x is None else int(bool(x))
 
 
 def procesar(conn, par, brazo, cid, hasta=1400):
+    """Recalcula los dos detectores booleanos de una campaña turno a turno con el contexto completo del arnés.
+
+    Returns:
+        Filas con, por instrumento, `_v1` (guardado por el motor), `_crudo` (recalculado sobre texto crudo,
+        control de fidelidad que debe igualar a v1) y `_v2` (texto normalizado).
+    """
     dc = datos.DatosCampana(conn, cid, brazo, par)
     guardado = datos.guardado_en_turn_validation(conn, cid, range(1, hasta + 1))
     filas = []
@@ -59,6 +66,7 @@ def procesar(conn, par, brazo, cid, hasta=1400):
 
 
 def escribir(ruta, filas):
+    """Escribe el CSV de una campaña de forma atómica (.tmp y `os.replace`), con celda vacía para None."""
     ruta.parent.mkdir(parents=True, exist_ok=True)
     tmp = ruta.with_suffix(".csv.tmp")
     with open(tmp, "w", newline="", encoding="utf-8") as fh:
@@ -87,6 +95,11 @@ def fidelidad(todas):
 
 
 def main():
+    """Recalcula `cr1_veredicto_contradice_narracion` y `cl2_pnj_inactivo_actua` para las campañas de `pares.todos()`.
+
+    Reanuda saltando los CSV existentes (`--forzar` los rehace). Escribe `fidelidad.json` y, si no se filtraron
+    pares, `comparacion_booleanos.json` con el G1-vs-G2 antes/después de normalizar (HL, p Holm; `--B`, `--semilla`).
+    """
     ap = argparse.ArgumentParser()
     ap.add_argument("--pares", default="")
     ap.add_argument("--forzar", action="store_true")

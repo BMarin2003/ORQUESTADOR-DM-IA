@@ -114,6 +114,7 @@ def leer_logs():
 
 
 def consultar(ids):
+    """Trae de `state_deltas` (con campaña y PNJ) los deltas de afinidad indicados, solo de campañas completas y turnos 1-1400."""
     sql = """
         SELECT d.id AS delta_id, d.campaign_id, d.turn_id, d.entity_id,
                n.name AS pnj, d.evidence, c.title, c.architecture
@@ -127,6 +128,12 @@ def consultar(ids):
 
 
 def main():
+    """Reconstruye los eventos de compromiso desde los logs y los une con `state_deltas`; escribe `eventos_compromiso.csv`.
+
+    Returns:
+        (filas, pares, cuenta, sueltos, n_eventos, nombres_distintos): insumos de `informe`. El conteo por
+        (par, brazo, evento) trata como 0 los pares sin eventos.
+    """
     por_delta, sueltos, n_eventos = leer_logs()
     filas = consultar(por_delta.keys()) if por_delta else []
     for f in filas:
@@ -154,6 +161,7 @@ def main():
 
 
 def informe(filas, pares, cuenta, sueltos, n_eventos, nombres_distintos):
+    """Escribe e imprime `resumen.md`: auditoría de la reconstrucción, totales por brazo, `promise_made` por par y Wilcoxon pareado G1 vs G2 (descriptivo, exploratorio)."""
     L = ["# Eventos de compromiso reconstruidos desde los logs", "",
          "Solo lectura. Exploratorio: no decide ninguna hipótesis.", "",
          "## Auditoría de la reconstrucción", "",

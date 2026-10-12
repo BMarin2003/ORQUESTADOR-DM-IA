@@ -24,6 +24,7 @@ import psycopg
 
 
 def main():
+    """Comprueba en Postgres que `contexto_escena_narrador()` omite un secreto sin revelar que `contexto_escena()` sí muestra (sale 1 si no hay secreto, 2 si falla)."""
     with psycopg.connect(bd.DSN) as c:
         camp_row = c.execute(
             "SELECT id, title FROM campaigns ORDER BY created_at LIMIT 1"

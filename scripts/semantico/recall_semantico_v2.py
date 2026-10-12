@@ -32,6 +32,7 @@ FAMILIAS = RS.FAMILIAS
 
 
 def evaluar_campana(camp, brazo, embedder):
+    """Evalúa los eventos de una campaña con el nulo condicionado por mención (v2) y con la v1, sobre el mismo universo (los eventos que la v1 evaluaba)."""
     tpi, eventos = RS.cargar(camp, brazo)
     if not eventos:
         return []
@@ -54,10 +55,12 @@ def evaluar_campana(camp, brazo, embedder):
 
 
 def _p(xs):
+    """Media con 3 decimales; guion largo si no hay datos."""
     return f"{np.mean(xs):.3f}" if xs else "—"
 
 
 def _wilson(xs):
+    """Media con su intervalo de Wilson al 95 %; guion largo si no hay datos."""
     if not xs:
         return "—"
     lo, hi = est.wilson(sum(xs), len(xs))
@@ -65,6 +68,7 @@ def _wilson(xs):
 
 
 def informe(todos, por_campana):
+    """Escribe el informe Markdown de la v2: evaluabilidad, recall sobre el mismo subconjunto frente a v1 y Jericho, cambios respecto de v1, acuerdo con Jericho y desglose por brazo (descriptivo)."""
     ev = [f for f in todos if f["evaluable_v2"]]
     L = ["# cl2_recall_semantico_v2 (EXPLORATORIO, nulo condicionado por mención)", "",
          "Mismos eventos que Jericho-QA y la v1. Solo cuentan las oraciones que mencionan a la entidad, en la ventana real "
@@ -107,6 +111,7 @@ def informe(todos, por_campana):
 
 
 def main(argv=None, embedder=None):
+    """Corre la v2 sobre las campañas (o --pares), escribe el CSV de eventos y el informe; el embedder es inyectable para pruebas."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--pares", help="lista separada por comas; por defecto las 27")
     ap.add_argument("--dispositivo", default="cpu")

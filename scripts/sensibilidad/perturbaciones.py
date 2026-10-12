@@ -41,6 +41,7 @@ from validacion_generar import ETIQ, prosa   # noqa: E402  (scripts/validacion_g
 # ---------------------------------------------------------------- resultados
 @dataclass
 class Resultado:
+    """Resultado de una perturbación de turno: texto nuevo, contexto (copia, posiblemente manipulado) e info de lo inyectado."""
     texto: str
     ctx: object
     info: dict = field(default_factory=dict)
@@ -48,6 +49,7 @@ class Resultado:
 
 @dataclass
 class ResultadoVentana:
+    """Resultado de una perturbación de ventana: textos reordenados e info (permutación aplicada)."""
     textos: list
     info: dict = field(default_factory=dict)
 
@@ -76,6 +78,7 @@ def _partir_zona(texto):
 
 
 def _rearmar(partes, core):
+    """Reconstruye el texto con un nuevo `core` de la zona narrativa, conservando prefijo, espacios y sufijo."""
     prefijo, lead, _, trail, sufijo = partes
     return prefijo + lead + core + trail + sufijo
 
@@ -170,11 +173,19 @@ PALABRAS_OTRO_ALFABETO = ["мир", "огонь", "тень", "ветер", "龍
 
 # ---------------------------------------------------------------- perturbaciones de turno
 def _nombre_pj(ctx):
+    """Nombre del PJ del contexto, que usan las plantillas en 3.ª persona."""
     return ctx.pj_nombre
 
 
 def _p_usurpacion(plantillas, con_nombre, sin_tirada=False):
+    """Fábrica de la perturbación de usurpación del PJ (P1/P2): inserta una plantilla de la categoría `cat`.
+
+    Args:
+        plantillas: PLANTILLAS_2P (sin nombre) o PLANTILLAS_3P (con el nombre del PJ).
+        con_nombre: formatea la plantilla con el nombre del PJ.
+        sin_tirada: simula un turno sin tirada del sistema vaciando `ctx.tiradas` (variantes añadidas tras el humo)."""
     def f(texto, ctx, rng, donante=None, *, cat):
+        """Perturbación de usurpación: elige una plantilla de `cat` y la inserta al inicio de un párrafo."""
         p = rng.choice(plantillas[cat])
         oracion = p.format(n=_nombre_pj(ctx)) if con_nombre else p
         nuevo, frag = _insertar_al_inicio_de_parrafo(texto, oracion, rng)
@@ -187,11 +198,15 @@ def _p_usurpacion(plantillas, con_nombre, sin_tirada=False):
 
 
 def _candidatos_pnj(ctx):
+    """Nombres de los PNJ de la campaña que no son PJ, ordenados."""
     return sorted(e["nombre"] for e in ctx.entidades
                   if e["tipo"] == "npc" and e["nombre"] not in ctx.nombres_pj_conocidos)
 
 
 def _p3(texto, ctx, rng, donante=None, *, estado, modo):
+    """P3: inserta un PNJ que actúa o habla y fija su estado (dead/missing) en el contexto.
+
+    Prefiere PNJ no mencionados ya en el texto; el contexto se manipula porque en los datos reales casi no hay PNJ muertos activos."""
     nombres = _candidatos_pnj(ctx)
     nuevos = [n for n in nombres if n not in texto] or nombres
     n = rng.choice(nuevos)
@@ -204,6 +219,7 @@ def _p3(texto, ctx, rng, donante=None, *, estado, modo):
 
 
 def _p4(texto, ctx, rng, donante=None, *, persona):
+    """P4: inserta la muerte del PJ narrada en 2.ª o 3.ª persona; el HP del contexto sigue siendo > 0 (contradicción buscada)."""
     if persona == "2p":
         oracion = rng.choice(MUERTE_2P)
     else:
@@ -213,10 +229,12 @@ def _p4(texto, ctx, rng, donante=None, *, persona):
 
 
 def _nombre_inventado(rng):
+    """Nombre inventado por composición de sílabas, improbable como vocabulario de la campaña."""
     return rng.choice(_ONSET) + rng.choice(_MID) + rng.choice(_END)
 
 
 def _p5(texto, ctx, rng, donante=None):
+    """P5: inserta dos nombres propios inventados que no son conocidos, ni excepciones, ni aparecen ya en el texto."""
     nombres = []
     while len(nombres) < 2:
         n = _nombre_inventado(rng)
@@ -256,6 +274,10 @@ def _barajar_oracion(oracion, rng):
 
 
 def _p6(texto, ctx, rng, donante=None, frac=0.3):
+    """P6: baraja las palabras en minúscula de ~`frac` de las oraciones de la zona narrativa.
+
+    Mayúsculas, cifras y puntuación quedan fijas, por lo que TTR, Fernández-Huerta y Jaccard son invariantes
+    por construcción (control exacto)."""
     partes = _partir_zona(texto)
     piezas = re.split(r"(?<=[.!?])(\s+)", partes[2])   # [oración, sep, oración, ...]
     idx_or = list(range(0, len(piezas), 2))
@@ -271,6 +293,7 @@ def _p6(texto, ctx, rng, donante=None, frac=0.3):
 
 
 def _p7(texto, ctx, rng, donante=None):
+    """P7: duplica un párrafo (de 40+ caracteres si hay) de la zona narrativa."""
     partes = _partir_zona(texto)
     parrafos = partes[2].split("\n\n")
     largos = [i for i, p in enumerate(parrafos) if len(p) >= 40] or list(range(len(parrafos)))
@@ -280,12 +303,14 @@ def _p7(texto, ctx, rng, donante=None):
 
 
 def _p8(texto, ctx, rng, donante=None):
+    """P8: sustituye el texto por la narración de un turno de OTRO par (contaminación cruzada)."""
     if donante is None:
         raise ValueError("P8 requiere `donante` (narración de un turno de OTRO par)")
     return Resultado(donante, ctx.copia(), {"donante_len": len(donante)})
 
 
 def _p10(texto, ctx, rng, donante=None):
+    """P10: inserta narración de éxito y añade al contexto una pifia (1 natural), contradicción que CR-1 debe detectar."""
     pifia = {"etiqueta": rng.choice(HABILIDADES), "dado": 1, "dados": (1,), "modificador": 3,
              "total": 4, "critico": False, "pifia": True}
     nuevo, frag = _insertar_al_inicio_de_parrafo(texto, rng.choice(EXITO), rng)
@@ -294,6 +319,7 @@ def _p10(texto, ctx, rng, donante=None):
 
 
 def _p11a(texto, ctx, rng, donante=None):
+    """P11a: inyecta el formato G1 (bloques narrativa y mecánica con una línea de tirada) en un texto de G2."""
     hab = rng.choice(HABILIDADES)
     n = rng.randint(2, 19)
     cd = rng.randint(10, 18)
@@ -304,10 +330,12 @@ def _p11a(texto, ctx, rng, donante=None):
 
 
 def _p11b(texto, ctx, rng, donante=None):
+    """P11b: elimina el formato G1 (etiquetas y bloque mecánica) del texto, con prosa() de validacion_generar."""
     return Resultado(prosa(texto, "G1"), ctx.copia(), {})
 
 
 def _p12(texto, ctx, rng, donante=None):
+    """P12: inserta tres palabras de otro alfabeto (cirílico, CJK, hangul o kana) en huecos entre palabras."""
     partes = _partir_zona(texto)
     core = partes[2]
     huecos = [m.end() for m in re.finditer(r" (?=\S)", core)]
@@ -320,31 +348,38 @@ def _p12(texto, ctx, rng, donante=None):
 
 # ---------------------------------------------------------------- elegibilidad
 def _sin_tiradas(texto, ctx):
+    """Elegible solo si el turno no tiene tiradas."""
     return not ctx.tiradas
 
 
 def _hay_pnj(texto, ctx):
+    """Elegible solo si la campaña tiene algún PNJ no PJ."""
     return bool(_candidatos_pnj(ctx))
 
 
 def _hp_positivo(texto, ctx):
+    """Elegible solo si el HP actual del PJ es conocido y mayor que 0."""
     return ctx.hp_current is not None and ctx.hp_current > 0
 
 
 def _g2_sin_etiquetas(texto, ctx):
+    """Elegible solo para turnos de G2 sin etiquetas de formato."""
     return ctx.brazo == "G2" and not ETIQ.search(texto)
 
 
 def _g1_con_etiquetas(texto, ctx):
+    """Elegible solo para turnos de G1 con etiquetas de formato."""
     return ctx.brazo == "G1" and bool(ETIQ.search(texto))
 
 
 def _siempre(texto, ctx):
+    """Elegible siempre."""
     return True
 
 
 @dataclass
 class Perturbacion:
+    """Entrada del catálogo: id, descripción, ámbito ("turno" o "ventana"), función y regla de elegibilidad."""
     id: str
     descripcion: str
     ambito: str
@@ -356,6 +391,7 @@ CATALOGO: dict = {}
 
 
 def _reg(pid, descripcion, funcion, elegible=_siempre, ambito="turno"):
+    """Registra una perturbación en CATALOGO."""
     CATALOGO[pid] = Perturbacion(pid, descripcion, ambito, funcion, elegible)
 
 
@@ -397,10 +433,18 @@ _reg("P12", "Tres palabras en otro alfabeto", _p12)
 
 
 def elegible(pid, texto, ctx):
+    """Indica si la perturbación `pid` se puede aplicar a ese turno y contexto."""
     return bool(CATALOGO[pid].elegible(texto, ctx))
 
 
 def perturbar(pid, texto, ctx, rng, donante=None):
+    """Aplica la perturbación de turno `pid` sin mutar texto ni contexto.
+
+    Args:
+        donante: narración de otro par, solo para P8.
+
+    Raises:
+        ValueError: si `pid` es de ventana."""
     p = CATALOGO[pid]
     if p.ambito != "turno":
         raise ValueError(f"{pid} es de ventana: usa perturbar_ventana")
@@ -408,6 +452,10 @@ def perturbar(pid, texto, ctx, rng, donante=None):
 
 
 def perturbar_ventana(pid, textos, rng):
+    """P9: permutación aleatoria (distinta de la identidad en la práctica) del orden de los textos de la ventana.
+
+    Raises:
+        ValueError: si `pid` no es de ventana."""
     if CATALOGO[pid].ambito != "ventana":
         raise ValueError(f"{pid} es de turno: usa perturbar")
     n = len(textos)
@@ -424,6 +472,7 @@ def perturbar_ventana(pid, textos, rng):
 # Escrito ANTES de correr el arnés sobre datos reales. No se edita tras ver resultados.
 # Valores: booleanos -> "se_dispara" | "sin_cambio"; numéricos -> "sube" | "baja" | "sin_cambio".
 def _mk(se_dispara=(), sube=(), baja=(), sin_cambio=()):
+    """Construye {instrumento: dirección} de la tabla ESPERADO a partir de los grupos de direcciones."""
     d = {}
     for nombre in se_dispara:
         d[nombre] = "se_dispara"
@@ -442,6 +491,7 @@ _CTRL_BOOL = ("meta_comentario", "comenta_reglas", "cr1_veredicto_contradice_nar
 
 
 def _sin(*excepto):
+    """Booleanos de control «sin cambio», excepto los indicados."""
     return tuple(n for n in _CTRL_BOOL if n not in excepto)
 
 

@@ -22,6 +22,7 @@ RX_TIRADA = re.compile(r"^\s{2}([^\s:][^:]{1,40}):\s*(\d{1,2})\s*[+-]\s*\d+\s*=\
 
 
 def norm(t):
+    """Pasa a minúsculas y quita acentos."""
     return "".join(c for c in unicodedata.normalize("NFD", t.lower())
                    if unicodedata.category(c) != "Mn").strip()
 
@@ -47,6 +48,7 @@ def tiradas(ruta):
 
 
 def main():
+    """Verifica si G1 y G2 de cada par comparten secuencia de dados: contrasta la coincidencia de d20 en el mismo turno y habilidad con el azar (5 %) y con una semilla compartida (100 %), y compara el d20 medio por brazo."""
     archivos = sorted(LOGS.rglob("*_bitacora_completa.md"))
     pares = {}
     for a in archivos:

@@ -37,6 +37,7 @@ SEMILLA_EXPLORACION = 777
 
 
 def main():
+    """Reconstruye con las semillas originales los turnos usados para desarrollar el detector (exploración, evaluación, reserva, sondeo) y los guarda con su uso; la confirmación los excluye."""
     nombres = E.cargar_nombres()
     pares = E.cargar_pares()
     rnd = random.Random(SEMILLA_EVAL)
@@ -45,6 +46,7 @@ def main():
     filas = {}          # (campaign_id, turn_id) -> [brazo, par, set(usos)]
 
     def anota(cid, t, brazo, par, uso):
+        """Registra un uso para un turno; un turno con varios usos acumula todos."""
         filas.setdefault((cid, int(t)), [brazo, par, set()])[2].add(uso)
 
     with psycopg.connect(E.db.DSN, row_factory=dict_row) as conn:          # SOLO SELECT

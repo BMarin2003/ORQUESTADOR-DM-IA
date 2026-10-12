@@ -34,6 +34,7 @@ K = 7
 
 
 def fi(x):
+    """Convierte a float; None si el valor es vacio o no numerico."""
     try:
         return float(x)
     except (TypeError, ValueError):
@@ -42,6 +43,7 @@ def fi(x):
 
 # ---------------------------------------------------------------- Page (1963)
 def _rango_fila(valores):
+    """Rangos 1..k de una fila de valores, con rango medio en empates (base de la prueba de Page)."""
     orden = sorted(range(len(valores)), key=lambda i: valores[i])
     rangos = [0.0] * len(valores)
     i = 0
@@ -57,6 +59,7 @@ def _rango_fila(valores):
 
 
 def _Phi(z):
+    """Funcion de distribucion normal estandar, via `math.erf`."""
     return 0.5 * (1 + math.erf(z / math.sqrt(2)))
 
 
@@ -83,10 +86,17 @@ def page_L(matriz, direccion="decrece"):
 # Mismo algoritmo que scripts/reporte_v2/resultados_tesis.py:wilcoxon_uni -- duplicado a proposito
 # (documentado) para no importar todo ese modulo (numpy) fuera de linea.
 def _rangos_medios(valores_abs):
+    """Rangos medios de `valores_abs` (alias de `_rango_fila`, para el Wilcoxon)."""
     return _rango_fila(valores_abs)
 
 
 def wilcoxon_uni(d):
+    """Wilcoxon de rangos con signo EXACTO sobre las diferencias `d` bloque1 - bloque7 (ceros descartados, empates por rango medio).
+
+    Returns:
+        Dict con n efectivo y los p-valores bilateral (`p_bi`), de cola superior (`p_mas`, H1 «b1 > b7») e
+        inferior (`p_menos`, H1 «b1 < b7»), por programacion dinamica sobre rangos duplicados.
+    """
     d = [x for x in d if x != 0]
     n = len(d)
     if n == 0:
@@ -109,6 +119,7 @@ def wilcoxon_uni(d):
 
 
 def holm(pvals):
+    """Correccion de Holm-Bonferroni (p ajustados monotonos, tope 1.0) en el orden original de `pvals`."""
     m = len(pvals)
     orden = sorted(range(m), key=lambda i: pvals[i])
     ajustados = [0.0] * m
@@ -121,6 +132,11 @@ def holm(pvals):
 
 # ---------------------------------------------------------------- autoverificacion con datos de juguete
 def _autotest():
+    """Autoverificacion de `page_L` con datos de juguete antes de tocar datos reales.
+
+    Comprueba que una degradacion perfecta da p < 0.001 y que, bajo H0 (n=27, k=7, 3000 simulaciones), la
+    fraccion de p < 0.05 queda entre 3 % y 7 %.
+    """
     import random
     rnd = random.Random(0)
     # 1) caso perfectamente degradante (bloque_j decreciente + ruido minimo): p debe ser ~0
@@ -139,6 +155,7 @@ def _autotest():
 
 # ---------------------------------------------------------------- carga de datos ya materializados
 def leer(ruta):
+    """Lee un CSV (utf-8-sig) como lista de dicts."""
     with open(ruta, encoding="utf-8-sig", newline="") as f:
         return list(csv.DictReader(f))
 
@@ -161,6 +178,13 @@ def matriz_g2(filas, col_par, col_bloque, col_valor, filtro=None):
 
 
 def main():
+    """Corre la prueba de Page para H1a-H1c (degradacion por bloques de 200 turnos, n=27 campanas G2) y escribe `docs/reportes/degradacion_bloques.md`.
+
+    Orden: autotest, carga de CR-2a/CL/MATTR/persona2 por bloque, Page unilateral y Wilcoxon bloque1-vs-7 en la
+    direccion de H1 de cada instrumento (`DIRECCION`, tomada de `consolidar.py`), Holm dentro de H1b y de H1c, e
+    informe con la lectura honesta (la nula «no degrada» se sostiene si los datos no la rechazan).
+    `cl2_lugar_jaccard` no tiene sentido de mejora definido: se reporta aparte, bilateral.
+    """
     print("Autoverificacion de la prueba de Page antes de tocar datos reales:")
     _autotest()
     print()

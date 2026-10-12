@@ -18,6 +18,7 @@ NOTA_27 = (" Actualización 10 de octubre: tres DM externos etiquetaron a ciegas
 
 
 def main():
+    """Actualiza el deck con la auditoría de persona2 (precisión corregida, conclusión y trabajo futuro); aserta que cada texto viejo exista."""
     prs = Presentation(RUTA)
     s = prs.slides
     poner(forma(s[26], 5), "r = −1.00 · p < 0.0001 · corregido por la precisión humana (33 %), G1 < G2 en 26–27 de 27 pares")

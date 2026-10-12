@@ -48,6 +48,7 @@ ORDEN_PRIMARIAS = ["VOLICION", "EMOCION", "HABLA", "COGNICION"]
 
 
 def cargar_dev():
+    """Claves (campaign_id, turn_id) de los turnos de desarrollo, que la muestra de confirmación debe excluir; aborta si falta el CSV."""
     if not DEV.exists():
         sys.exit(f"ERROR: falta {DEV}; ejecuta procedencia_persona2.py primero.")
     with open(DEV, encoding="utf-8", newline="") as fh:
@@ -55,6 +56,7 @@ def cargar_dev():
 
 
 def cargar_pool(conn, dev, nombres):
+    """Pool de turnos válidos de las 42 campañas (G1 y G2) que no son de desarrollo; consulta solo SELECT."""
     pool = []
     for e in E.cargar_pares():
         for brazo, cid in (("G1", e["campaign_g1"]), ("G2", e["campaign_g2"])):
@@ -68,10 +70,12 @@ def cargar_pool(conn, dev, nombres):
 
 
 def clave_turno(r):
+    """Clave única (campaña, turno) de un registro."""
     return (r["campaign_id"], r["turn_id"])
 
 
 def resumen_hallazgos(r):
+    """Texto categoria:verbo:pN de los hallazgos del detector (más MUERTE_PJ) para la hoja clave."""
     partes = [f"{h['categoria']}:{h['verbo_lema']}:p{h['persona']}" for h in r["hall"]]
     if r["muerte"]:
         partes.append("MUERTE_PJ")
@@ -79,6 +83,7 @@ def resumen_hallazgos(r):
 
 
 def fila_con_hallazgo(r, cat, estrato):
+    """Fila de muestra con la evidencia marcada; para una categoría elige primero el hallazgo de confianza alta y luego el más temprano."""
     if cat == "MUERTE_PJ":
         m = r["muerte"]
         ev, ini, fin = m["evidencia"], m["inicio"], m["fin"]
@@ -89,6 +94,7 @@ def fila_con_hallazgo(r, cat, estrato):
 
 
 def seleccionar(pool, rnd):
+    """Sortea los estratos de la muestra ciega en el orden fijo del diseño (sonda, primarias, muerte PJ, secundaria, sin hallazgo); cada turno aparece una sola vez."""
     filas, usados = [], set()
     ordenado = sorted(pool, key=clave_turno)
 
@@ -130,6 +136,7 @@ def seleccionar(pool, rnd):
 
 
 def escribir(filas, rnd):
+    """Mezcla las filas, asigna ids opacos y escribe la muestra ciega (sin categoría real) y la clave con estrato y hallazgos."""
     rnd.shuffle(filas)
     for f, i in zip(filas, rnd.sample(range(100000, 1000000), len(filas))):
         f["id"] = f"C{i}"
@@ -150,6 +157,7 @@ def escribir(filas, rnd):
 
 
 def tasas_poblacion(pool):
+    """Imprime las tasas del detector congelado sobre todo el pool de no-desarrollo, con IC 95 % de Wilson por brazo."""
     print("\nTasas del detector CONGELADO sobre TODO el pool de no-desarrollo (% de turnos con >=1 hallazgo; IC 95 % Wilson):")
     por = {b: [r for r in pool if r["brazo"] == b] for b in ("G1", "G2")}
     print(f"  turnos: G1={len(por['G1'])}  G2={len(por['G2'])}")
@@ -165,6 +173,7 @@ def tasas_poblacion(pool):
 
 
 def main():
+    """Orquesta la confirmación: carga pool, analiza con nlp=None, comprueba que spaCy da lo mismo en las filas elegidas y escribe la muestra."""
     dev = cargar_dev()
     nombres = E.cargar_nombres()
     with psycopg.connect(E.db.DSN, row_factory=dict_row) as conn:          # SOLO SELECT

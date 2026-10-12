@@ -48,6 +48,7 @@ GLIFO_VER = {"responde": "✓", "no responde": "✗", "dirección opuesta": "↔
 
 # ================================================================== celdas y evaluación
 def _semilla_celda(semilla, *claves):
+    """Semilla entera determinista para una celda (SHA-1 de la semilla base y las claves), estable entre corridas."""
     return int(hashlib.sha1("|".join(map(str, (semilla,) + claves)).encode()).hexdigest()[:8], 16)
 
 
@@ -119,6 +120,7 @@ def completar_celdas_esperadas(celdas, esperado, brazos=("G1", "G2")):
 
 # ================================================================== recolección
 def _valores(texto, ctx, nombres):
+    """Calcula los instrumentos indicados sobre un texto y su contexto."""
     return it.calcular(texto, ctx, nombres=nombres)
 
 
@@ -128,6 +130,7 @@ def recolectar(plan, dc_por_campana, args, log):
     celdas = {}
 
     def anadir(brazo, pid, instr, tipo, a, d):
+        """Agrega un par antes/después a la celda (brazo, perturbación, instrumento)."""
         c = celdas.setdefault((brazo, pid, instr), {"tipo": tipo, "antes": [], "despues": []})
         c["antes"].append(a)
         c["despues"].append(d)
@@ -198,12 +201,14 @@ def recolectar(plan, dc_por_campana, args, log):
 
 # ================================================================== informe
 def _f(x, d=3):
+    """Formatea un número con `d` decimales; guion largo si es None o NaN."""
     if x is None or x != x:
         return "—"
     return f"{x:.{d}f}"
 
 
 def _pct(x):
+    """Formatea una proporción como porcentaje; guion largo si es NaN."""
     return "—" if x != x else f"{100 * x:.1f}%"
 
 
@@ -221,6 +226,7 @@ def _celda_resumen(f):
 
 
 def _linea_detalle(f):
+    """Fila Markdown del detalle de una comparación confirmatoria (antes, después, diferencia con IC, deltas de Cliff, p de Holm y veredicto)."""
     if f["tipo"] == "bool":
         ant = f"{_pct(f['tasa_antes'])} [{_pct(f['ic_antes'][0])}, {_pct(f['ic_antes'][1])}]"
         des = f"{_pct(f['tasa_despues'])} [{_pct(f['ic_despues'][0])}, {_pct(f['ic_despues'][1])}]"
@@ -253,6 +259,9 @@ def _matriz(filas, brazo):
 
 
 def _seccion_3a_persona(filas, brazo):
+    """Tabla de los detectores de 3.ª persona: control con el nombre del PJ (P2, P4_3p) frente a la misma usurpación en 2.ª persona (P1, P4_2p).
+
+    Es el fallo conocido de los detectores viejos, que solo ven la 3.ª persona con nombre."""
     idx = {(f["perturbacion"], f["instrumento"]): f for f in filas if f["brazo"] == brazo}
     casos = [("qn2_pj_piensa_narrado", c) for c in ("decision", "pensamiento", "emocion")] + \
             [("qn2_pj_accion_revisar", "accion"), ("qn2_pj_accion_revisar", "accion_sin_tirada")]
@@ -260,6 +269,7 @@ def _seccion_3a_persona(filas, brazo):
            "usurpación 2.ª persona: antes → después | veredicto |", "|---|---|---|---|---|---|"]
 
     def cel(p, i):
+        """Texto antes → después y veredicto de una celda; ('n/a', 'no aplica') si no hay datos."""
         f = idx.get((p, i))
         if not f or f["n"] == 0:
             return "n/a", "no aplica"
@@ -318,6 +328,11 @@ def _prevalencia(conn, plan):
 
 
 def escribir_informe(ruta_md, ruta_csv, filas, meta):
+    """Escribe el CSV y el informe Markdown de la línea base (sensibilidad_baseline.*).
+
+    Incluye el SHA-256 de la tabla ESPERADO pre-especificada, la prueba de fidelidad, las matrices
+    por brazo, los hallazgos automáticos, la lectura redactada a mano de la corrida del 2026-09-20 y las
+    limitaciones. `meta` trae fecha, commit, semilla, plan, tiempos, fidelidad, prevalencia y limitaciones."""
     campos = ["brazo", "perturbacion", "instrumento", "tipo", "familia", "esperado", "n", "a", "b", "c", "d",
               "tasa_antes", "tasa_despues", "dif", "mediana_antes", "mediana_despues", "mediana_dif",
               "ic_dif_bajo", "ic_dif_alto", "delta_pareado", "delta_cruzado", "p", "p_holm",
@@ -490,6 +505,13 @@ LIMITACIONES = [
 
 # ================================================================== main
 def main(argv=None):
+    """Corre la línea base A2: carga datos de solo lectura, prueba de fidelidad, perturbaciones, estadística e informe.
+
+    Args:
+        argv: argumentos de línea de comandos (None usa sys.argv).
+
+    Returns:
+        Filas evaluadas con su veredicto por (brazo, perturbación, instrumento)."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--semilla", type=int, default=SEMILLA)
     ap.add_argument("--n-pares", type=int, default=10)
@@ -506,6 +528,7 @@ def main(argv=None):
     tiempos_gruesos = {}
 
     def log(s):
+        """Imprime y vacía el búfer (progreso de la corrida)."""
         print(s, flush=True)
 
     conn = datos.abrir_conexion()

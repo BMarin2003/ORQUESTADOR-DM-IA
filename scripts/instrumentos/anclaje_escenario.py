@@ -38,6 +38,7 @@ _POS = {"con": le.POS_CON_NOMBRES, "sn": le.POS_CONTENIDO}
 
 # ---------------------------------------------------------------- fixtures del escenario
 def cargar_fixtures(par):
+    """Lee world_parNN.json y personas_parNN.json de fixtures/real para el par indicado; devuelve (world, personas)."""
     d = RAIZ / "fixtures" / "real"
     w = json.loads((d / f"world_par{par}.json").read_text(encoding="utf-8"))
     p = json.loads((d / f"personas_par{par}.json").read_text(encoding="utf-8"))
@@ -45,6 +46,7 @@ def cargar_fixtures(par):
 
 
 def _pnj(personas):
+    """Entradas de `personas` que son PNJ (dict con nombre)."""
     return [v for v in personas.values() if isinstance(v, dict) and v.get("name")]
 
 
@@ -58,6 +60,7 @@ def nombres_escenario(world, personas):
 
 
 def _textos(*xs):
+    """Aplana a una lista los textos no vacíos de los argumentos, que pueden ser str o secuencias de str."""
     out = []
     for x in xs:
         if isinstance(x, str) and x.strip():
@@ -102,6 +105,7 @@ class Escenario:
     """Referencia de un par: tokens del lore + descripciones y lemas de sus nombres propios."""
 
     def __init__(self, par, tokens_ref, nombres_lemas, nombres=()):
+        """Guarda la referencia del par como tuplas/frozenset inmutables."""
         self.par = par
         self.tokens_ref = tuple(tokens_ref)
         self.nombres_lemas = frozenset(nombres_lemas)
@@ -109,21 +113,26 @@ class Escenario:
 
     @classmethod
     def de_fixtures(cls, par, lore, world, personas):
+        """Construye la referencia a partir del lore y los fixtures world/personas del par."""
         nombres = nombres_escenario(world, personas)
         return cls(par, le.tokens(texto_referencia(lore, world, personas)), lemas_nombres(nombres), nombres)
 
     @classmethod
     def de_textos(cls, par, lore, nombres):
+        """Construye la referencia solo con lore y lista de nombres (sin fixtures), p. ej. para pruebas."""
         return cls(par, le.tokens(lore + "\n" + "\n".join(nombres)), lemas_nombres(nombres), nombres)
 
 
 # ---------------------------------------------------------------- modelo TF-IDF (idf de las 42 campañas)
 def _filtro(variante, escenario):
+    """Devuelve (POS admitidos, lemas excluidos) de la variante; solo «sn» excluye los nombres del escenario."""
     return _POS[variante], (escenario.nombres_lemas if variante == "sn" else None)
 
 
 class ModeloAnclaje:
+    """Modelo TF-IDF del anclaje: df por variante sobre las N campañas y vectores de referencia cacheados por (par, variante)."""
     def __init__(self, df, n_docs):
+        """Guarda df por variante y nº de documentos; la caché de vectores de referencia empieza vacía."""
         self.df = df                      # {"con": Counter, "sn": Counter}
         self.n_docs = n_docs
         self._ref = {}
@@ -143,12 +152,15 @@ class ModeloAnclaje:
         return cls(df, len(campanas))
 
     def idf(self, variante, t):
+        """idf suavizado ln((1+N)/(1+df)) + 1; un término ausente de todas las campañas pesa el máximo."""
         return math.log((1 + self.n_docs) / (1 + self.df[variante].get(t, 0))) + 1.0
 
     def vector(self, variante, conteo):
+        """Vector TF-IDF disperso con tf sublineal (1 + ln c) a partir de un conteo de lemas."""
         return {t: (1.0 + math.log(c)) * self.idf(variante, t) for t, c in conteo.items() if c > 0}
 
     def vector_ref(self, escenario, variante):
+        """Vector TF-IDF de la referencia del escenario; se calcula una vez por (par, variante)."""
         k = (escenario.par, variante)
         if k not in self._ref:
             pos, excl = _filtro(variante, escenario)
@@ -157,6 +169,7 @@ class ModeloAnclaje:
 
 
 def _coseno(a, b):
+    """Coseno entre dos vectores dispersos; 0.0 si alguno está vacío o no comparten términos."""
     if not a or not b:
         return 0.0
     if len(a) > len(b):
@@ -177,15 +190,18 @@ def conteo_ventana(lista_tokens, variante, escenario):
 
 
 def cos_tokens(modelo, escenario, lista_tokens, variante="con"):
+    """Coseno entre la referencia del escenario y el vector de la ventana formada por `lista_tokens`."""
     v = modelo.vector(variante, conteo_ventana(lista_tokens, variante, escenario))
     return _coseno(v, modelo.vector_ref(escenario, variante))
 
 
 def cos_turno(modelo, escenario, texto, variante="con"):
+    """Coseno de un solo turno (texto) contra la referencia del escenario."""
     return cos_tokens(modelo, escenario, [le.tokens(texto)], variante)
 
 
 def cos_ventana(modelo, escenario, textos, variante="con"):
+    """Coseno de una ventana de turnos (lista de textos) contra la referencia; invariante al orden de los turnos."""
     return cos_tokens(modelo, escenario, [le.tokens(t) for t in textos], variante)
 
 
@@ -213,10 +229,12 @@ def serie_rodante(modelo, escenario, tokens_por_turno, variante="con", k=K_VENTA
 
 # ---------------------------------------------------------------- enchufe al arnés
 def _f_turno(variante):
+    """Fábrica de la función de ámbito «turno» del arnés para la variante dada."""
     return lambda texto, ctx: cos_turno(ctx.modelo, ctx.escenario, texto, variante)
 
 
 def _f_ventana(variante):
+    """Fábrica de la función de ámbito «ventana» del arnés para la variante dada."""
     return lambda textos, ctx: cos_ventana(ctx.modelo, ctx.escenario, textos, variante)
 
 

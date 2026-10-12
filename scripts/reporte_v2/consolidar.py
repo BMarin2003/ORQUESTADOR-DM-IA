@@ -88,6 +88,16 @@ T = [
 
 # ---------------------------------------------------------------- carga: {par: {"G1": v, "G2": v}} por instrumento
 def carga(par, brazo, fuente, campo):
+    """Valor v2 de un instrumento para una campaña (par, brazo); None si no hay dato.
+
+    Args:
+        fuente: origen de los datos: `num` (CSV numérico), `bool` (booleanos), `p2` (persona2, solo turnos fuera
+            del desarrollo del detector), `camp` (JSON de campaña), `cierre`, `a4bc` (media de la matriz de sensibilidad).
+        campo: columna o clave dentro de la fuente.
+
+    Raises:
+        ValueError: si `fuente` no existe.
+    """
     if fuente == "num":
         ruta = D2 / rc.nombre_csv(par, brazo)
         return cmp.media_campana(rc.leer_csv(ruta), campo)["v2"] if ruta.exists() else None
@@ -123,6 +133,7 @@ def carga(par, brazo, fuente, campo):
 
 
 def cargar_cierre():
+    """Indexa `datos_v2/cierre/por_campana.csv` por (par, brazo); {} si no existe."""
     ruta = D2 / "cierre" / "por_campana.csv"
     if not ruta.exists():
         return {}
@@ -131,6 +142,7 @@ def cargar_cierre():
 
 
 def cargar_a4bc():
+    """Filas de la matriz de sensibilidad a4bc (versión de 27 parejas si existe, si no la anterior)."""
     ruta = RAIZ / "docs" / "reportes" / "sensibilidad_a4bc_distribucion_27.csv"
     if not ruta.exists():
         ruta = RAIZ / "docs" / "reportes" / "sensibilidad_a4bc_distribucion.csv"
@@ -162,12 +174,18 @@ def a2_por_instrumento():
 
 # ---------------------------------------------------------------- estadística
 def estadisticos(d, B, semilla):
+    """Estadísticos pareados (`comparar_v1_v2._estadisticos`) de las diferencias `d` con índices bootstrap de `semilla`."""
     d = np.asarray(d, dtype=float)
     idx = cmp.indices_bootstrap(d.size, B, semilla)
     return cmp._estadisticos(d, idx)
 
 
 def analizar(pares, B, semilla):
+    """Calcula, por instrumento de la tabla `T`, medias, HL, r y p con Holm sobre las parejas con dato en ambos brazos.
+
+    Un instrumento con menos de 5 parejas queda «sin datos suficientes» (sin estadísticos). También calcula el HL
+    por lote (Par01-17 y Par18-27) y aplica Holm sobre toda la tabla.
+    """
     filas = []
     for (clave, etiq, dim, fuente, campo, sentido, a2, nota) in T:
         vs = []
@@ -192,6 +210,14 @@ def analizar(pares, B, semilla):
 
 # ---------------------------------------------------------------- avance
 def avance():
+    """Lee el JSON de avance y resuelve el estado de cada ítem.
+
+    Los ítems con `auto` cuentan archivos que cumplen un patrón; los que tienen `depende` quedan pendientes mientras
+    alguna dependencia (encadenada, hasta 3 pasadas) no esté hecha.
+
+    Returns:
+        (dict original, lista de ítems con estado y progreso).
+    """
     d = json.loads(AVANCE.read_text(encoding="utf-8"))
     items = []
     for it in d["items"]:
@@ -214,7 +240,9 @@ def avance():
 
 
 def md_avance(d, items):
+    """Sección Markdown «Avance hacia resultados documentables»: barra de la fase de resultados, avance por fase y por bloque, y tabla de ítems."""
     def barra(pct):
+        """Barra de progreso de 20 caracteres para un porcentaje."""
         return "█" * round(pct / 5) + "░" * (20 - round(pct / 5))
     quien = lambda lst, q: sum(1 for i in lst if i["quien"] == q)
     cuenta = {}
@@ -247,10 +275,12 @@ def md_avance(d, items):
 
 # ---------------------------------------------------------------- informe
 def f(x, d=3):
+    """Formatea con `d` cifras significativas; «—» si es None."""
     return "—" if x is None else f"{x:.{d}g}"
 
 
 def commit():
+    """Hash corto del commit actual; «?» si git no está disponible."""
     try:
         return subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=RAIZ, capture_output=True, text=True).stdout.strip()
     except OSError:
@@ -258,6 +288,10 @@ def commit():
 
 
 def main():
+    """Genera `consolidado_v2.md` y `consolidado_v2.csv`: tablas por lista de la rúbrica (CR, CL, QN, OP) con G1, G2, HL, r, p Holm, lotes y A2.
+
+    Opciones: `--B` y `--semilla`. Descriptivo y post hoc; no declara ganador.
+    """
     global _A4BC, _CIERRE
     ap = argparse.ArgumentParser()
     ap.add_argument("--B", type=int, default=10000)

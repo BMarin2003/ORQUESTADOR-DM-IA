@@ -33,6 +33,7 @@ RAW_FLAGS = ["meta_comentario", "comenta_reglas"]
 
 
 def coincide(nuevo, guardado, decimales):
+    """Compara dos valores redondeados a `decimales` (columna numeric); coinciden dos None."""
     if nuevo is None or guardado is None:
         return nuevo is None and guardado is None
     return round(float(nuevo), decimales) == round(float(guardado), decimales)
@@ -63,6 +64,7 @@ def comparar_turno(dc, t, fila):
 
 
 def resumir(filas):
+    """Cuenta por columna las comparaciones que coinciden y las discrepancias."""
     r = {}
     for f in filas:
         x = r.setdefault(f["columna"], {"n": 0, "ok": 0, "discrepancias": 0})

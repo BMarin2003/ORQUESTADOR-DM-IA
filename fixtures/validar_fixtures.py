@@ -49,14 +49,17 @@ errors, warnings = [], []
 
 
 def err(msg):
+    """Registra un error: los errores hacen fallar la validación."""
     errors.append(msg)
 
 
 def warn(msg):
+    """Registra un aviso: no hace fallar la validación."""
     warnings.append(msg)
 
 
 def load(name):
+    """Lee un JSON de fixtures relativo a BASE; si no se puede leer registra el error y termina con `sys.exit(1)`."""
     try:
         return json.loads((BASE / name).read_text(encoding="utf-8"))
     except Exception as e:

@@ -201,12 +201,14 @@ _HAS = {"has", "habias", "hubiste", "habras"}
 
 
 def _cargar():
+    """Carga lexicon_persona2.json y construye las tablas de formas (2sg, 3sg, 3pl, participios, infinitivos/gerundios, sinónimos y listas de contexto) que usa todo el detector; se ejecuta una vez al importar."""
     lex = json.loads(_RUTA_LEX.read_text(encoding="utf-8"))
     t2, t3, part, t3pl = {}, {}, {}, {}
     entradas = {}          # lema -> entrada (para matchers)
     por_lema = {}
 
     def registrar(x, cat, tablas=True):
+        """Indexa una entrada del léxico en las tablas de formas y por lema; con `tablas=False` solo sirve para «declarada» y no genera hallazgos."""
         e = _parse_entrada(x, cat)
         if not tablas:      # solo para «declarada»: no genera hallazgos
             entradas.setdefault(e["lema"], e)
@@ -325,6 +327,7 @@ _CACHE_MATCH = {}
 
 
 def _match(lema, amp=False):
+    """`_matcher_de` con caché por (lema, amp)."""
     if (lema, amp) not in _CACHE_MATCH:
         _CACHE_MATCH[(lema, amp)] = _matcher_de(lema, amp)
     return _CACHE_MATCH[(lema, amp)]
@@ -361,6 +364,7 @@ CONFIG_V1 = dict(CONFIG_DEFECTO, sinonimos_ampliados=False, accion_sin_dialogo=F
 
 
 def _cfg(config):
+    """Mezcla `config` sobre CONFIG_DEFECTO; rechaza opciones desconocidas."""
     c = dict(CONFIG_DEFECTO)
     if config:
         desconocidas = set(config) - set(c)
@@ -371,6 +375,7 @@ def _cfg(config):
 
 
 def _es_nombre(n, conj):
+    """True si `n` (plano) está en `conj`, incluido su plural regular en -s o -es."""
     return n in conj or (n.endswith("s") and n[:-1] in conj) or (n.endswith("es") and n[:-2] in conj)
 
 
@@ -433,6 +438,7 @@ def _oraciones(texto):
 # ══════════════════════════ tokenización ══════════════════════════
 
 def _tokens(texto, nlp):
+    """Tokeniza con offsets de carácter; con `nlp=None` usa regex (misma salida del detector: spaCy solo aporta Person=2 y lema como respaldo)."""
     toks = []
     if nlp is not None:
         doc = nlp(texto)
@@ -470,7 +476,9 @@ def _mismo_lema(a, b, minp):
 
 
 class _Declarado:
+    """Lo que el jugador declaró en su acción (tokens, tirada, cita y parte narrada sin diálogo) y la regla de «declarada» v2 para decidir si una acción física del DM es ejecución de lo declarado."""
     def __init__(self, accion, cfg):
+        """Normaliza la acción: quita tags de tirada y separa la parte narrada de lo que el jugador dice entre comillas, rayas o corchetes."""
         accion = accion or ""
         self.cfg = cfg
         self.tirada = bool(_RE_TIRADA.search(accion))
@@ -490,6 +498,7 @@ class _Declarado:
         self._contenido = None
 
     def _toks_accion(self):
+        """Tokens de acción declarada: sin diálogo si `accion_sin_dialogo`, con todo en caso contrario (v1)."""
         return self.toks_narr if self.cfg["accion_sin_dialogo"] else self.toks
 
     def cubre(self, lema, cat=None):
@@ -502,10 +511,12 @@ class _Declarado:
         return cat == "HABLA" and self.cita
 
     def _tiene(self, matcher):
+        """True si algún token de la acción declarada coincide con el matcher (prefijos, formas exactas)."""
         pref, ex = matcher
         return any(w in ex or any(w.startswith(p) for p in pref) for w in self._toks_accion())
 
     def contenido(self):
+        """Lemas de contenido de la acción declarada (>= 3 letras, sin palabras función); se calcula una vez."""
         if self._contenido is None:
             self._contenido = [w for w in self._toks_accion() if len(w) >= 3 and w not in _L["stop"]]
         return self._contenido
@@ -530,7 +541,9 @@ class _Declarado:
 # ══════════════════════════ análisis ══════════════════════════
 
 class _Analisis:
+    """Análisis de un turno: aplica las reglas del léxico a la narración del DM en 2.ª persona (y en 3.ª con nombre del PJ como control positivo) y acumula hallazgos y exclusiones con su motivo."""
     def __init__(self, dm, accion, nlp, nombre_pj, config=None):
+        """Prepara tokens, zonas excluidas (citas, fuera de personaje, preguntas), oraciones y el contexto declarado."""
         self.dm = dm or ""
         self.cfg = _cfg(config)
         self.decl = _Declarado(accion, self.cfg)
@@ -544,6 +557,7 @@ class _Analisis:
 
     # ---------- helpers ----------
     def _frase(self, pos):
+        """Oración (máx. 400 caracteres) que contiene la posición; sirve de evidencia."""
         j = bisect.bisect_right(self._sini, pos) - 1
         if j < 0:
             return self.dm.strip()[:400]
@@ -551,12 +565,15 @@ class _Analisis:
         return self.dm[a:b].strip()[:400]
 
     def _prev(self, k, n=1):
+        """Token n posiciones antes de k, o None."""
         return self.toks[k - n] if k - n >= 0 else None
 
     def _limite(self, tok):
+        """True si el token es puntuación que corta la ventana de contexto."""
         return tok["t"] in _PUNT
 
     def _hay(self, k, valores, atras=2, adelante=0):
+        """True si algún token de `valores` está en la ventana (atrás/adelante) de k sin cruzar puntuación."""
         for d in range(1, atras + 1):
             p = self._prev(k, d)
             if p is None or self._limite(p):
@@ -573,6 +590,7 @@ class _Analisis:
         return False
 
     def _condicional(self, k):
+        """True si «si» aparece hasta 8 tokens antes sin cruzar puntuación: cláusula condicional, no narra al PJ."""
         for d in range(1, 9):
             p = self._prev(k, d)
             if p is None or self._limite(p):
@@ -582,6 +600,7 @@ class _Analisis:
         return False
 
     def _ventana_der(self, k, n=7):
+        """Tokens normalizados a la derecha de k (hasta n) sin cruzar puntuación."""
         out = []
         for d in range(1, n + 1):
             if k + d >= len(self.toks):
@@ -593,6 +612,7 @@ class _Analisis:
         return out
 
     def _ventana_oracion(self, pos, n_tok_centro, radio=7):
+        """Tokens normalizados dentro de ±radio del token central, restringidos a su oración."""
         a = max(0, n_tok_centro - radio)
         b = min(len(self.toks), n_tok_centro + radio + 1)
         j = bisect.bisect_right(self._sini, pos) - 1
@@ -600,6 +620,7 @@ class _Analisis:
         return [t["n"] for t in self.toks[a:b] if oa <= t["i"] < ob]
 
     def _explicito(self, k):
+        """True si hay «tú» como sujeto explícito junto al verbo (3 tokens antes o 2 después)."""
         for d in range(1, 4):
             p = self._prev(k, d)
             if p is None or self._limite(p):
@@ -617,6 +638,7 @@ class _Analisis:
 
     # ---------- emisión ----------
     def _bloqueo(self, ini, k):
+        """Motivo por el que la posición no se analiza (zona de cita, fuera de personaje, pregunta o condicional), o None."""
         z = _zona_de(ini, self.zonas)
         if z:
             return z
@@ -625,6 +647,7 @@ class _Analisis:
         return None
 
     def _excluir(self, motivo, lema, cat_pot, ini, fin, k, via=None):
+        """Registra una exclusión con su motivo (y vía); lo entrecomillado se descarta sin registrar."""
         z = self._bloqueo(ini, k)
         if z == "cita":
             return
@@ -657,6 +680,7 @@ class _Analisis:
         return out
 
     def _emitir(self, cat, conf, lema, ini, fin, k, persona, explicito=False, cuerpo=False):
+        """Emite un hallazgo (o una exclusión): decide `declarada` según la categoría, deduplica por (categoría, posición) y las acciones declaradas pasan a exclusiones."""
         z = self._bloqueo(ini, k)
         if z:
             if z != "cita":
@@ -760,6 +784,7 @@ class _Analisis:
         return p["l"] not in _L["inicio"]
 
     def _segunda(self):
+        """Busca verbos en 2.ª persona del singular (tablas léxicas; spaCy solo como respaldo), descartando «me/nos dices» y formas nominales, y delega en locuciones y partes del cuerpo."""
         toks = self.toks
         for k, tok in enumerate(toks):
             ents = _L["t2"].get(tok["n"])
@@ -792,6 +817,7 @@ class _Analisis:
         self._parte_cuerpo()
 
     def _locuciones_2(self):
+        """Locuciones y estructuras de 2.ª persona que no son un verbo simple: darse cuenta, dar un paso, se te ocurre, perfecto compuesto, impacto con «te» y patrones regex."""
         toks, n = self.toks, len(self.toks)
         for k, tok in enumerate(toks):
             nn = tok["n"]
@@ -856,6 +882,7 @@ class _Analisis:
                 break
 
     def _impacto(self, k, tok):
+        """Clasifica verbos de impacto con «te» («te invade el miedo») según el sustantivo de su oración: emoción, cognición o sensorial (excluido)."""
         nn = tok["n"]
         ini, fin = tok["i"], tok["e"]
         # ampliar el disparador para incluir «te» adyacente
@@ -906,12 +933,14 @@ class _Analisis:
                 self._emitir("EMOCION", "media", "en_ti", m.start(), m.end(), k, "2", False)
 
     def _tok_en(self, pos):
+        """Índice del token que contiene la posición de carácter (None si no hay tokens)."""
         ini = [t["i"] for t in self.toks]
         j = bisect.bisect_right(ini, pos) - 1
         return max(j, 0) if self.toks else None
 
     # ---------- tercera persona (control positivo) ----------
     def _tercera(self):
+        """Control positivo: verbos en 3.ª persona con el nombre del PJ como sujeto (tras el nombre, tolerando adverbios y «se») o antepuestos como atribución."""
         if not self.nombre_pj or not self.toks:
             return
         nm = [_plano(w) for w in self.nombre_pj.split() if w]
@@ -941,6 +970,7 @@ class _Analisis:
                     self._verbo_3(toks, k - 1, k - 1, usados, antepuesto=True)
 
     def _verbo_3(self, toks, j, ref, usados, antepuesto=False):
+        """Resuelve el verbo en 3.ª persona en toks[j] (una sola vez por token) para el nombre del PJ."""
         tok = toks[j]
         ents = _L["t3"].get(tok["n"])
         if not ents or j in usados:
@@ -957,6 +987,7 @@ class _Analisis:
             self._resolver(ent, j, tok["i"], tok["e"], "3", False, reflexivo)
 
     def correr(self):
+        """Ejecuta el análisis en 2.ª y 3.ª persona y devuelve (hallazgos, exclusiones) ordenados por posición."""
         if not self.dm.strip():
             return [], []
         self._segunda()
@@ -976,6 +1007,7 @@ def analizar_completo(dm_texto, accion_jugador, nlp, nombre_pj=None, config=None
 
 
 def detectar_usurpacion(dm_texto, accion_jugador, nlp, nombre_pj=None, config=None):
+    """Solo los hallazgos de `analizar_completo`; API del instrumento."""
     return analizar_completo(dm_texto, accion_jugador, nlp, nombre_pj, config)[0]
 
 

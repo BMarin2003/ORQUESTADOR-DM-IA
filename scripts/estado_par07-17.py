@@ -23,6 +23,7 @@ OBJETIVO = 1400
 
 
 def main():
+    """Muestra el avance (turno actual frente al objetivo) de las campañas del lote y cuántas faltan, filtrable por brazo."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--arm", choices=["G2", "G1", "ambos"], default="ambos")
     ap.add_argument("--ids", default="docs/ids_par07-17.json",

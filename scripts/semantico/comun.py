@@ -125,6 +125,7 @@ _CONSULTA = {
 
 
 def consulta(ev):
+    """Arma la oración de consulta de un evento (campo, estado, entidad) a partir de la plantilla de _CONSULTA."""
     return _CONSULTA[(ev["campo"], ev["estado"])].format(n=ev["entidad"])
 
 
@@ -140,6 +141,7 @@ class Embedder:
     corrida lo registra en el manifiesto y las siguientes lo exigen (ver revision_fijada())."""
 
     def __init__(self, revision=None, dispositivo="cpu", lote=64):
+        """Carga el modelo de embeddings en la revisión indicada y verifica que su dimensión sea DIM; el import de sentence_transformers es tardío para que los tests no lo exijan."""
         from sentence_transformers import SentenceTransformer   # import tardío: los tests no lo necesitan
         self.revision = revision
         self.lote = lote
@@ -148,6 +150,7 @@ class Embedder:
             raise RuntimeError(f"{MODELO} devuelve {self.modelo.get_sentence_embedding_dimension()} dimensiones, el esquema espera {DIM}")
 
     def __call__(self, textos):
+        """Devuelve los embeddings normalizados (float32, forma (n, DIM)) de una lista de textos; matriz vacía si no hay textos."""
         if not textos:
             return np.zeros((0, DIM), dtype=np.float32)
         return np.asarray(self.modelo.encode(list(textos), batch_size=self.lote, normalize_embeddings=True,

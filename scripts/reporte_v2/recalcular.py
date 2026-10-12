@@ -60,6 +60,7 @@ _NUM_TEXTO = ["qn1_ttr", "qn1_ngram_repeticion", "qn1_legibilidad_fh",
 
 # ---------------------------------------------------------------- v1 / v2
 def _num(x):
+    """Convierte a float, conservando None."""
     return None if x is None else float(x)
 
 
@@ -73,6 +74,7 @@ def v1_de_fila(fila):
 
 
 def toca_lt(turn_id, cada):
+    """True si el turno entra en el muestreo de LanguageTool (1 de cada `cada` turnos)."""
     return turn_id % cada == 0
 
 
@@ -105,6 +107,7 @@ def calcular_fila(turn_id, texto, previo, ctx, v1, brazo, lt=None, normalizador=
 
 # ---------------------------------------------------------------- sanidad
 def _igual(a, b, dec):
+    """Compara dos valores redondeados a `dec` decimales; dos None cuentan como iguales."""
     if a is None or b is None:
         return a is None and b is None
     return round(float(a), dec) == round(float(b), dec)
@@ -137,6 +140,7 @@ def sanidad_filas(filas, max_ejemplos=5):
 
 # ---------------------------------------------------------------- CSV
 def _a_celda(v):
+    """Serializa un valor a celda CSV: None vacío, bool como int, float con `repr` (ida y vuelta exacta)."""
     if v is None:
         return ""
     if isinstance(v, bool):
@@ -145,12 +149,14 @@ def _a_celda(v):
 
 
 def _de_celda(c):
+    """Inversa de `_a_celda`: celda vacía a None, entero si lo parece, si no float."""
     if c == "":
         return None
     return int(c) if c.lstrip("-").isdigit() else float(c)
 
 
 def escribir_csv(ruta, filas):
+    """Escribe el CSV de una campaña de forma atómica (archivo .tmp y `os.replace`), para que una interrupción no deje un CSV a medias."""
     ruta = Path(ruta)
     ruta.parent.mkdir(parents=True, exist_ok=True)
     tmp = ruta.with_suffix(ruta.suffix + ".tmp")
@@ -163,11 +169,13 @@ def escribir_csv(ruta, filas):
 
 
 def leer_csv(ruta):
+    """Lee el CSV de una campaña como lista de dicts con celdas ya tipadas."""
     with open(ruta, newline="", encoding="utf-8") as fh:
         return [{k: _de_celda(v) for k, v in row.items()} for row in csv.DictReader(fh)]
 
 
 def csv_completo(ruta, n_esperado):
+    """True si el CSV existe, se puede leer y tiene exactamente `n_esperado` filas (base de la reanudación)."""
     ruta = Path(ruta)
     if not ruta.exists():
         return False
@@ -178,6 +186,7 @@ def csv_completo(ruta, n_esperado):
 
 
 def csv_tiene_lt(ruta):
+    """True si el CSV ya trae algún valor de LanguageTool."""
     return any(f.get("grammaticality_lt_v1") is not None for f in leer_csv(ruta))
 
 
@@ -187,6 +196,7 @@ class LTConCache:
     (datos_v2/_lt_cache.json). La caché de scripts/sensibilidad se lee como respaldo, sin escribirla."""
 
     def __init__(self, ruta=None):
+        """Carga la caché propia (`ruta`, por defecto `datos_v2/_lt_cache.json`) y, como respaldo de solo lectura, la de `scripts/sensibilidad`."""
         self.ruta = Path(ruta or DESTINO / "_lt_cache.json")
         try:
             self.mem = json.loads(self.ruta.read_text(encoding="utf-8"))
@@ -200,6 +210,11 @@ class LTConCache:
         self.llamadas = 0
 
     def __call__(self, texto):
+        """Gramaticalidad LanguageTool de `texto`, indexada por SHA-1 del texto; solo llama a la herramienta si no está en ninguna caché.
+
+        Raises:
+            RuntimeError: si LanguageTool no está disponible.
+        """
         k = hashlib.sha1(texto.encode("utf-8")).hexdigest()
         if k in self.mem:
             return self.mem[k]
@@ -217,6 +232,7 @@ class LTConCache:
         return self.mem[k]
 
     def guardar(self):
+        """Persiste la caché de forma atómica (archivo .tmp y `os.replace`)."""
         self.ruta.parent.mkdir(exist_ok=True)
         tmp = self.ruta.with_suffix(".tmp")
         tmp.write_text(json.dumps(self.mem), encoding="utf-8")
@@ -225,6 +241,7 @@ class LTConCache:
 
 # ---------------------------------------------------------------- campaña
 def nombre_csv(par, brazo):
+    """Nombre del CSV de una campaña, p. ej. `par07_G1.csv`."""
     return f"par{par}_{brazo}.csv"
 
 
@@ -272,6 +289,11 @@ def procesar_campana(conn, par, brazo, campaign_id, destino, con_lt=False, lt_ca
 
 # ---------------------------------------------------------------- principal
 def main():
+    """Recalcula los instrumentos v1/v2 de las campañas de `pares.todos()` y, al final, ejecuta la prueba de sanidad de G2.
+
+    Opciones: `--con-lt`/`--lt-cada` (LanguageTool, lento), `--pares`, `--brazos`, `--hasta`, `--forzar` y
+    `--control-g1-crudo` (solo el control de G1 sobre texto crudo). Las campañas con CSV completo se saltan.
+    """
     ap = argparse.ArgumentParser()
     ap.add_argument("--con-lt", action="store_true", help="incluye LanguageTool (LENTO)")
     ap.add_argument("--lt-cada", type=int, default=10, help="LanguageTool en 1 de cada N turnos")
@@ -332,6 +354,11 @@ def control_g1_crudo(pares, hasta=1400):
 
 
 def sanidad_g2(pares, brazos=("G1", "G2")):
+    """Prueba de sanidad en G2: como la normalización es la identidad, v1 debe ser igual a v2.
+
+    Escribe `datos_v2/sanidad_g2.json` e imprime las discrepancias por instrumento; no hace nada si G2 no está en `brazos`
+    o no hay CSV.
+    """
     if "G2" not in brazos:
         return
     filas = []

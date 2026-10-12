@@ -33,6 +33,7 @@ PROSA = {"dm", "narrador"}
 
 
 def rol(titulo):
+    """Devuelve el rol de LLM al que corresponde un título de llamada en la bitácora, o None si no coincide con ninguno."""
     t = titulo.upper()
     for clave, r in LLM.items():
         if clave in t:
@@ -67,15 +68,21 @@ def leer(ruta):
 
 
 def tasa_persona2(par, brazo):
+    """Porcentaje de turnos con hallazgo primario de persona2 en un par y brazo, tomando solo los turnos 1400 o menos y fuera del desarrollo del detector."""
     with open(RAIZ / "datos_v2" / "persona2" / f"par{par}_{brazo}.csv", encoding="utf-8-sig", newline="") as f:
         filas = [r for r in csv.DictReader(f) if int(r["turn_id"]) <= 1400 and int(r["en_desarrollo"] or 0) == 0]
     return 100 * sum(float(r["primaria"] or 0) for r in filas) / len(filas)
 
 
 def resumen_campana(turnos):
+    """Medias por turno de una campaña: llamadas y segundos del lado DM y totales, caracteres de narración y llamadas por rol.
+
+    "Lado DM" excluye jugador y extractor, idénticos en ambos brazos, para que G1 y G2 sean comparables.
+    """
     dm_roles = {"dm", "actor", "mundo", "narrador", "arbitro"}
     filas = list(turnos.values())
     def media(f):
+        """Media de f sobre los turnos de la campaña."""
         return st.mean(f(x) for x in filas)
     return {
         "turnos": len(filas),
@@ -89,6 +96,10 @@ def resumen_campana(turnos):
 
 
 def main():
+    """Compara el costo por turno de G1 frente a G2 en los pares con bitácora completa y lo relaciona con la tasa de persona2 (dosis-respuesta, Spearman).
+
+    Escribe el informe Markdown y el CSV en SALIDA.
+    """
     camp = {}
     for ruta in sorted((RAIZ / "logs").rglob("*_bitacora_completa.md")):
         m = re.match(r"par(\d+)_(g[12])_", ruta.name)

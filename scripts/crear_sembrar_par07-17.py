@@ -42,6 +42,7 @@ PARES = [
 
 
 def run(cmd):
+    """Ejecuta un subproceso desde la raíz y devuelve su stdout; aborta con SystemExit si falla."""
     print(f"  $ {' '.join(cmd)}")
     r = subprocess.run(cmd, cwd=RAIZ, capture_output=True, text=True)
     print(r.stdout)
@@ -52,6 +53,7 @@ def run(cmd):
 
 
 def extraer(salida, campo):
+    """Extrae de la salida de un script el UUID que sigue a 'campo:'; aborta si no aparece."""
     m = re.search(rf"{campo}:\s*([0-9a-f-]{{36}})", salida)
     if not m:
         raise SystemExit(f"No se pudo extraer '{campo}' de la salida:\n{salida}")
@@ -59,6 +61,7 @@ def extraer(salida, campo):
 
 
 def verificar_campania(campaign_id, arquitectura_esperada, titulo_esperado, tono_esperado):
+    """Comprueba en Postgres que la campaña recién creada tenga la arquitectura, el título y el tono esperados y turno 0; aborta con el detalle de lo que no coincide."""
     with psycopg.connect(db.DSN) as c:
         row = c.execute(
             "SELECT title, architecture, world_tone, current_turn "
@@ -81,6 +84,7 @@ def verificar_campania(campaign_id, arquitectura_esperada, titulo_esperado, tono
 
 
 def verificar_siembra(campaign_id, world, personas):
+    """Comprueba que los conteos sembrados (lugares, PNJ, facciones, misiones, personajes) coincidan con los fixtures; aborta si no, y devuelve los conteos reales."""
     esperado = {
         "locations": len(world["locations"]),
         "npcs": len([k for k in personas if not k.startswith("_")]),
@@ -102,6 +106,7 @@ def verificar_siembra(campaign_id, world, personas):
 
 
 def main():
+    """Crea y siembra, para cada par pedido (o todos), la campaña G2 y la G1 con el mismo mundo, verificando cada paso, y guarda sus ids."""
     seleccion = set(sys.argv[1:])
     pares = [p for p in PARES if not seleccion or p[0] in seleccion]
     resultados = []

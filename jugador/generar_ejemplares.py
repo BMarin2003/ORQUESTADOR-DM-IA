@@ -69,14 +69,17 @@ SALIDA
 
 
 def cargar(rel):
+    """Lee un JSON relativo a la raíz del proyecto."""
     return json.loads((RAIZ / rel).read_text(encoding="utf-8"))
 
 
 def banda(v, neg, pos):
+    """Etiqueta de un eje de personalidad: `neg` si v < -40, `pos` si v > 40, "equilibrado" en medio."""
     return neg if v < -40 else pos if v > 40 else "equilibrado"
 
 
 def banda_desvio(v):
+    """Texto sobre cómo se toma el personaje lo urgente, según su desvío (<=30 acude, <=60 mixto, >60 prioriza lo suyo)."""
     if v <= 30:
         return ("Cuando le piden algo urgente, VA. Atiende primero lo que se "
                 "le pide y deja lo suyo para después.")
@@ -88,6 +91,7 @@ def banda_desvio(v):
 
 
 def peticion(pj):
+    """Prompt de usuario con la ficha del personaje (ejes en bandas, agenda y desvío) para que el modelo escriba sus tres ejemplares."""
     p = pj["personalidad"]
     return f"""FICHA
   {pj['nombre']}, {pj['arquetipo'].lower()}. {pj['clase']} nivel {pj['nivel']},
@@ -126,6 +130,7 @@ ESCRIBE TRES TURNOS SUYOS
 
 
 def llamar(key, modelo, system, user, max_tokens=700):
+    """Llama a chat/completions de DeepInfra con temperatura 0.9; si rechaza `chat_template_kwargs` (422) reintenta sin él. Devuelve `{texto, tin, tout}` o None ante otro error HTTP."""
     cuerpo = {"model": modelo,
               "messages": [{"role": "system", "content": system},
                            {"role": "user", "content": user + "\n\n/no_think"}],
@@ -157,6 +162,7 @@ def llamar(key, modelo, system, user, max_tokens=700):
 
 
 def parsear(texto):
+    """Extrae el JSON de la respuesta (sin vallas ni `<think>`) y devuelve las claves urgente/propio/vacia como texto, o None si falta alguna."""
     limpio = re.sub(r"^```(?:json)?|```$", "", texto.strip(), flags=re.M).strip()
     limpio = re.sub(r"<think>.*?</think>", "", limpio, flags=re.S | re.I).strip()
     try:
@@ -200,6 +206,7 @@ RECHAZA = re.compile(r"\b(puede esperar|no pienso|no voy a ir|que espere|"
 
 
 def main():
+    """CLI: genera con el modelo los ejemplares de cada personaje (hasta 3 intentos), contrasta su postura con el desvío esperado y reescribe personajes_jugadores.json."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--modelo", required=True)
     ap.add_argument("--solo", default=None)

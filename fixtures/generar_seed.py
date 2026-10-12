@@ -34,6 +34,7 @@ def uid(key):
 
 
 def q(v):
+    """Literal SQL para un valor Python: NULL, booleano, número, jsonb (dict/list) o texto con comillas escapadas."""
     if v is None:
         return "NULL"
     if isinstance(v, bool):
@@ -46,6 +47,7 @@ def q(v):
 
 
 def arr(items):
+    """Literal SQL `ARRAY[...]::text[]` para una lista ('{}' si está vacía)."""
     if not items:
         return "'{}'"
     return "ARRAY[" + ",".join(q(i) for i in items) + "]::text[]"

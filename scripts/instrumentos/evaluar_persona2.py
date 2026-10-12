@@ -70,6 +70,7 @@ RESERVA_POR_PAR = 200
 # ═════════════════════ datos ═════════════════════
 
 def cargar_pares():
+    """Lee los 21 pares G1/G2 de los dos lotes de ids en docs/, ordenados por número de par."""
     pares = []
     for f in ("docs/ids_par07-17.json", "docs/ids_par18-27.json"):
         for e in json.loads((RAIZ / f).read_text(encoding="utf-8")):
@@ -80,15 +81,18 @@ def cargar_pares():
 
 
 def cargar_nombres():
+    """Mapa id de personaje -> nombre del PJ jugador, para detectar su nombre en la narración."""
     d = json.loads((RAIZ / "jugador/personajes_jugadores.json").read_text(encoding="utf-8"))
     return {p["id"]: p["nombre"] for p in d["personajes"]}
 
 
 def jugador(buf):
+    """Texto de la acción del jugador a partir del player_buffer (une los fragmentos)."""
     return "\n".join((x.get("text", "") if isinstance(x, dict) else str(x)) for x in (buf or [])).strip()
 
 
 def registro(brazo, e, cid, turn_id, f, nombres):
+    """Registro de un turno-brazo: PJ, acción del jugador y narración del DM reducida a prosa."""
     buf = f["player_buffer"] or []
     pj = buf[0].get("pc") if buf and isinstance(buf[0], dict) else None
     return {"brazo": brazo, "par": e["par"], "lote": e["lote"], "campaign_id": cid, "turn_id": turn_id,
@@ -96,6 +100,7 @@ def registro(brazo, e, cid, turn_id, f, nombres):
 
 
 def turno_valido(f):
+    """Turno utilizable: narración de >= 20 caracteres y acción del jugador no vacía."""
     return len((f["dm_output"] or "").strip()) >= 20 and bool(jugador(f["player_buffer"]))
 
 
@@ -144,6 +149,7 @@ def viejo(nombre, dm):
 # ═════════════════════ utilidades ═════════════════════
 
 def wilson(k, n, z=1.96):
+    """Intervalo de Wilson al 95 % (en %) para k aciertos de n; (0, 0) si n es 0."""
     if n == 0:
         return (0.0, 0.0)
     p = k / n
@@ -154,6 +160,7 @@ def wilson(k, n, z=1.96):
 
 
 def celda(k, n):
+    """Texto de tabla: conteo, porcentaje e IC de Wilson."""
     lo, hi = wilson(k, n)
     return f"{k:3d} ({100*k/max(n,1):5.1f}%) [{lo:4.1f}-{hi:4.1f}]"
 
@@ -161,9 +168,11 @@ def celda(k, n):
 class CacheNlp:
     """envuelve nlp para reutilizar el Doc (el detector lo llama una vez por texto)."""
     def __init__(self, nlp):
+        """Envuelve `nlp` con un caché de Docs por texto."""
         self.nlp, self.docs = nlp, {}
 
     def __call__(self, texto):
+        """Devuelve el Doc del texto, procesándolo con spaCy solo la primera vez."""
         if texto not in self.docs:
             self.docs[texto] = self.nlp(texto)
         return self.docs[texto]
@@ -180,7 +189,9 @@ def analizar(recs, nlp, config=None, sufijo=""):
 
 
 def turnos_con(rs, cats, clave="hall", estricto=False):
+    """Nº de turnos con >= 1 hallazgo de las categorías `cats`; con `estricto` ignora los hallazgos con eco declarado."""
     def ok(h):
+        """Hallazgo contable: de la categoría pedida y, si `estricto`, no declarado."""
         return h["categoria"] in cats and (not estricto or not h["declarada"])
     return sum(1 for r in rs if any(ok(h) for h in r[clave]))
 
@@ -188,6 +199,7 @@ def turnos_con(rs, cats, clave="hall", estricto=False):
 # ═════════════════════ informe ═════════════════════
 
 def informe(ev):
+    """Imprime las métricas primaria y secundaria (antes v1 / después v2 de la regla de declarada), la comparación con el detector viejo y exclusiones, con IC de Wilson."""
     por = {b: [r for r in ev if r["brazo"] == b] for b in ("G1", "G2")}
     print("\n" + "=" * 92)
     print("(b1) MÉTRICA PRIMARIA: usurpación mental/verbal (VOLICION+COGNICION+EMOCION+HABLA)")
@@ -269,6 +281,7 @@ def informe(ev):
 # ═════════════════════ velocidad ═════════════════════
 
 def velocidad(ev, nlp_completo, nlp_reducido):
+    """Mide turnos/s del detector sin spaCy, con spaCy reducido y con pipeline completo; comprueba que reducido y completo dan la misma salida."""
     textos = [(r["dm"], r["accion"], r["nombre"]) for r in ev]
     palabras = sum(len(t[0].split()) for t in textos)
     print("\n" + "=" * 92)
@@ -292,6 +305,7 @@ def velocidad(ev, nlp_completo, nlp_reducido):
 # ═════════════════════ (opcional) auditoría de desarrollo ═════════════════════
 
 def marcar(evid, dm, ini, fin):
+    """Marca con ⟦ ⟧ el disparador dentro de la frase de evidencia; devuelve la frase intacta si no se localiza."""
     idx = dm.find(evid)
     if idx < 0 or not (idx <= ini < idx + len(evid)):
         return evid
@@ -300,9 +314,11 @@ def marcar(evid, dm, ini, fin):
 
 
 def construir_auditoria(pool, seed, n_con=100, n_sin=100):
+    """Construye la muestra de DESARROLLO (v1 del detector): cuota equilibrada por categoría entre turnos con hallazgo más turnos sin hallazgo con verbo mental descartado."""
     rnd = random.Random(seed + 1)
 
     def cats_turno(r):
+        """Categorías de hallazgo del turno (incluye MUERTE_PJ)."""
         s = {h["categoria"] for h in r["hall"]}
         if r["muerte"]:
             s.add("MUERTE_PJ")
@@ -344,6 +360,7 @@ def construir_auditoria(pool, seed, n_con=100, n_sin=100):
 
 
 def escribir_csv_ciego(filas, ruta_muestra, ruta_clave):
+    """Escribe la muestra ciega (sin categoría real ni procedencia) y su clave en dos CSV."""
     with open(ruta_muestra, "w", newline="", encoding="utf-8-sig") as fh:
         w = csv.writer(fh, quoting=csv.QUOTE_ALL)
         w.writerow(["id_muestra", "frase_evidencia_o_turno_completo", "accion_jugador",
@@ -358,6 +375,7 @@ def escribir_csv_ciego(filas, ruta_muestra, ruta_clave):
 
 
 def main():
+    """CLI de la evaluación sobre transcripciones reales (solo SELECT); se niega a sobrescribir la auditoría de desarrollo congelada."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--seed", type=int, default=20260920)
     ap.add_argument("--n-por-par", type=int, default=TURNOS_POR_PAR)

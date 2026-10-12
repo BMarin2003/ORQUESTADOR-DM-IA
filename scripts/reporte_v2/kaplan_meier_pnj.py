@@ -34,6 +34,10 @@ HASTA = 1400          # mismo límite que medidas_cierre.py y el resto del conso
 
 
 def cargar():
+    """Lee `por_campana.csv` y devuelve, por brazo, observaciones {par, tiempo, evento}.
+
+    `t_pnj` vacío significa censura en el turno `HASTA` (1400): evento=False.
+    """
     filas = list(csv.DictReader(ENTRADA.open(encoding="utf-8")))
     out = {"G1": [], "G2": []}
     for r in filas:
@@ -71,6 +75,12 @@ def mediana(puntos):
 
 # ---------------------------------------------------------------- log-rank (Mantel-Haenszel, 2 grupos)
 def logrank(obs_a, obs_b):
+    """Prueba log-rank (Mantel-Haenszel, bilateral) entre dos grupos de observaciones censuradas.
+
+    Returns:
+        Dict con eventos observados y esperados del grupo A, chi2 (1 gl), p y nº de tiempos con evento.
+        Si la varianza es 0 devuelve chi2 = 0 y p = 1.
+    """
     tiempos = sorted({o["tiempo"] for o in obs_a + obs_b if o["evento"]})
     O_a = E_a = V = 0.0
     for t in tiempos:
@@ -93,12 +103,18 @@ def logrank(obs_a, obs_b):
 
 
 def resumen_grupo(obs):
+    """Resumen de un brazo: n, eventos, censurados y mediana de supervivencia."""
     n = len(obs)
     eventos = sum(1 for o in obs if o["evento"])
     return {"n": n, "eventos": eventos, "censurados": n - eventos, "mediana": mediana(kaplan_meier(obs))}
 
 
 def main():
+    """Calcula Kaplan-Meier por brazo y log-rank (agrupado y por lote Par01-17 / Par18-27) sobre `t_pnj`.
+
+    Escribe `kaplan_meier_pnj.csv` (puntos de la curva), `.png` (curvas escalonadas) y `.md` (informe con límites).
+    El análisis por lote es el control de robustez: el motor cambió entre lotes.
+    """
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     datos = cargar()
     SALIDA.parent.mkdir(parents=True, exist_ok=True)
@@ -132,6 +148,7 @@ def main():
     import matplotlib.pyplot as plt
 
     def _escalon(puntos):
+        """Convierte los puntos de la curva KM en coordenadas de escalón, extendidas hasta `HASTA`."""
         xs, ys = [0], [1.0]
         for t, S, *_ in puntos[1:]:
             xs += [t, t]; ys += [ys[-1], S]
@@ -149,6 +166,7 @@ def main():
 
     # --- informe
     def _fila_lote(k, nombre):
+        """Fila Markdown de la tabla log-rank para un lote de `lr_lote`."""
         v = lr_lote[k]
         return f"| {nombre} | {v['O_a']:.1f} | {v['E_a']:.2f} | {v['chi2']:.3f} | {v['p']:.4f} |"
 

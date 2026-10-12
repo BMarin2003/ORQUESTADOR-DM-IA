@@ -25,12 +25,19 @@ OBJETIVO_TURNOS = 1400
 
 
 def validar_par(par):
+    """Valida el mundo y las personas de un par (JSON válido, referencias cruzadas coherentes).
+
+    Returns:
+        Tupla (errores, avisos). Los errores impiden crear campañas; los avisos no.
+    """
     errores, avisos = [], []
 
     def err(msg):
+        """Registra un error de validación."""
         errores.append(msg)
 
     def warn(msg):
+        """Registra un aviso de validación."""
         avisos.append(msg)
 
     wfile = FIX / f"world_par{par}.json"
@@ -147,6 +154,7 @@ def validar_par(par):
 
 
 def main():
+    """Valida los pares indicados (por defecto 07-17) y sale con código 1 si alguno tiene errores, para no crear campañas con fixtures inconsistentes."""
     pares = sys.argv[1:] or [f"{i:02d}" for i in range(7, 18)]
     total_err = 0
     for par in pares:

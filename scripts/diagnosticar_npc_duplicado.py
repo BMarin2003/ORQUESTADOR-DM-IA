@@ -26,6 +26,7 @@ import db as bd  # noqa: E402
 
 
 def main():
+    """Imprime las filas 'npcs' con el nombre dado en la campaña y las filas dependientes (IBF, disposición, conocimiento, secretos) de cada una, para diagnosticar un duplicado. Solo lectura."""
     if len(sys.argv) < 3:
         sys.exit(__doc__)
     campaign_id, nombre = sys.argv[1], sys.argv[2]

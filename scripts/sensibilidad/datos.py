@@ -44,6 +44,7 @@ def abrir_conexion():
 
 # ---------------------------------------------------------------- muestreo
 def cargar_pares():
+    """Lee los ids de campaña G1/G2 de las parejas de los dos lotes (Par07-17 = v1, Par18-27 = v2) desde docs/ids_par*.json."""
     pares = []
     for fichero, lote in (("docs/ids_par07-17.json", "v1"), ("docs/ids_par18-27.json", "v2")):
         for e in json.loads((RAIZ / fichero).read_text(encoding="utf-8")):
@@ -81,6 +82,7 @@ _PERSONAJES = None
 
 
 def personajes():
+    """Personajes jugadores de jugador/personajes_jugadores.json, cargados una sola vez (caché de módulo)."""
     global _PERSONAJES
     if _PERSONAJES is None:
         _PERSONAJES = json.loads((RAIZ / "jugador" / "personajes_jugadores.json")
@@ -92,6 +94,10 @@ class DatosCampana:
     """Todo lo de UNA campaña necesario para reconstruir contextos (una sola carga)."""
 
     def __init__(self, conn, campaign_id, brazo, par=None):
+        """Carga con SELECT la campaña completa (turnos, entidades, historia de estado de PNJ y datos del PJ) para no volver a consultar la base.
+
+        El PJ es el personaje de la campaña cuyo nombre figura en personajes_jugadores.json (si no, el primero).
+        El HP es el ACTUAL: la base no guarda su historia."""
         self.campaign_id = str(campaign_id)
         self.brazo = brazo
         self.par = par
@@ -132,10 +138,12 @@ class DatosCampana:
 
     # -- texto
     def texto(self, t):
+        """Salida del DM del turno `t` ('' si el turno no existe)."""
         r = self.turnos.get(t)
         return (r["dm_output"] or "") if r else ""
 
     def accion(self, t):
+        """Acción del jugador del turno `t`: texto del primer elemento de player_buffer ('' si no hay)."""
         r = self.turnos.get(t)
         buf = (r or {}).get("player_buffer") or []
         return buf[0].get("text", "") if buf and isinstance(buf[0], dict) else ""
@@ -151,6 +159,10 @@ class DatosCampana:
         return est
 
     def _entidades_en(self, t):
+        """Entidades visibles en el turno `t` para el gazetteer: creadas hasta el turno anterior.
+
+        Los personajes siempre cuentan; los objetos solo si tienen portador o fueron creados en los últimos
+        VENTANA_ITEMS turnos, igual que Campaña.entidades(ventana_items=20) del motor."""
         ult = t - 1                                   # entidades creadas hasta el turno anterior
         umbral_items = max(0, ult - VENTANA_ITEMS)
         visibles = []
@@ -166,6 +178,9 @@ class DatosCampana:
         return visibles
 
     def _prefijo(self, t):
+        """Entidades ya mencionadas en el texto de turnos anteriores a `t` (frozenset de menciones).
+
+        Calcula de una vez el acumulado por turno la primera vez que se llama y lo guarda en caché."""
         if self._prefijos is None:
             todas = [{"tipo": e["tipo"], "nombre": e["nombre"]} for e in self._ents]
             acumulado, snap = set(), {}
@@ -177,6 +192,10 @@ class DatosCampana:
         return self._prefijos.get(t, frozenset())
 
     def tiradas(self, t):
+        """Tiradas del turno `t`, recalculadas con jugador/dados.py de HOY, no las que el motor guardó entonces.
+
+        Devuelve [] si la acción no lleva marcas `{...}` o si la resolución falla. Diferencia legítima
+        conocida: Par07-17 aún no tenía tiradas de combate."""
         accion = self.accion(t)
         if not accion or "{" not in accion:
             return []
@@ -188,6 +207,7 @@ class DatosCampana:
         return tiradas
 
     def contexto(self, t):
+        """Reconstruye el Contexto de instrumentos_texto para el turno `t` con el estado de la campaña tal como estaba al inicio de ese turno (salvo HP del PJ y portadores de objetos, que son los actuales)."""
         ents = self._entidades_en(t)
         estados = {e["nombre"]: self.estado_en(e["nombre"], t) for e in ents if e["tipo"] == "npc"}
         nombres = {e["nombre"] for e in ents}

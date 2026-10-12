@@ -32,6 +32,7 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 
 def main():
+    """Genera el formulario HTML autónomo de etiquetado de persona2 para un evaluador: toma la clave (submuestra estratificada reproducible si --fraccion < 1), carga acción y narración de cada turno desde Postgres y baraja el orden con semilla por evaluador."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--evaluador", default="E1")
     ap.add_argument("--fraccion", type=float, default=1.0)

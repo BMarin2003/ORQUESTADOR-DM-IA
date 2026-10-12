@@ -41,6 +41,10 @@ VARS = ["crudo", "media_nulo", "exceso", "sd_nulo", "z", "nR", "nA"]
 
 
 def por_turno(c):
+    """Descompone CR-2a por turno computable: solapamiento crudo, media y desvío del nulo, exceso y z.
+
+    Descarta turnos solo_tag o con menos de MIN_LEMAS lemas en alguno de los lados.
+    """
     out = []
     for t in sorted(c.tokR):
         A = c.pool.lemas.get(t, frozenset())
@@ -61,6 +65,7 @@ def por_turno(c):
 
 
 def main():
+    """Descompone CR-2a en media del nulo y exceso, controla por longitud con un OLS agrupado (crudo ~ log nR + log nA) y compara G1 y G2 por pares."""
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     conn = D.ConnRecortada(datos.abrir_conexion())
     camps, _ = C.cargar_campanas(conn, _pares.todos(), lambda s: print(s, flush=True))

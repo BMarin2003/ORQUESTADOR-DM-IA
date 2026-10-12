@@ -101,6 +101,7 @@ def wilcoxon_uni(d):
 
 
 def resumen(x):
+    """Estadísticos descriptivos de un vector: n, mediana, cuartiles (interpolación lineal), RIQ, mínimo, máximo, media y DE."""
     x = np.asarray(x, dtype=float)
     q1, m, q3 = np.percentile(x, [25, 50, 75])
     return {"n": int(x.size), "mdn": float(m), "q1": float(q1), "q3": float(q3), "riq": float(q3 - q1), "min": float(x.min()), "max": float(x.max()),
@@ -108,6 +109,7 @@ def resumen(x):
 
 
 def sw(x):
+    """Shapiro-Wilk (W, p); (None, None) si hay menos de 3 datos o todos son iguales."""
     x = np.asarray(x, dtype=float)
     if x.size < 3 or np.ptp(x) == 0:
         return (None, None)
@@ -116,6 +118,7 @@ def sw(x):
 
 
 def f(clave, v, d=None):
+    """Formatea un valor del instrumento `clave`: porcentaje si está en `PCT`, si no con sus decimales de `CO_DEC`; «—» si es None."""
     if v is None:
         return "—"
     if clave in PCT:
@@ -140,14 +143,22 @@ def inflesz_banda(v):
 
 
 def banda(c, v):
+    """Banda INFLESZ entre paréntesis, solo para la legibilidad Szigriszt-Pazos (`qn1_sz`); cadena vacía en otro caso."""
     return f" ({inflesz_banda(v)})" if c == "qn1_sz" and v is not None else ""
 
 
 def fp(p):
+    """Formatea un p-valor: «<0.0001» si es menor, si no 4 decimales; «—» si es None."""
     return "—" if p is None else ("<0.0001" if p < 1e-4 else f"{p:.4f}")
 
 
 def main():
+    """Genera el paquete de resultados del capítulo 6: tablas descriptivas (G2), normalidad, comparaciones pareadas y resumen por hipótesis.
+
+    Escribe `resultados_tesis.md`, `por_campana_largo.csv` y `por_pareja_ancho.csv` en `docs/resultados/`. Por
+    instrumento calcula Wilcoxon exacto (bilateral y unilateral en cada dirección), HL con IC bootstrap y rank-biserial;
+    Holm dentro de cada familia solo sobre los instrumentos confirmatorios/condicionados (`USO`). Es descriptivo: no decide las hipótesis.
+    """
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     SALIDA.mkdir(parents=True, exist_ok=True)
     t0 = time.time()
@@ -214,6 +225,7 @@ def main():
          "Además, el texto de Limitaciones del capítulo 2 aún dice que la calidad narrativa emergente se mitiga con la rúbrica sobre un bloque piloto; hay que reconciliarlo con el giro totalmente determinista.", ""]
 
     def fila_ficha(t):
+        """Fila Markdown de la ficha del instrumento: dimensión, sentido, uso propuesto en la docimasia, celdas A2 y motivo."""
         clave, etiq, dim, fuente, campo, sentido, clave_a2, nota = t
         uso, motivo = USO[clave]
         return f"| {dim} | {etiq.strip()} | {sentido} | {uso} | {a2.get(clave_a2, '—') if clave_a2 else '—'} | {motivo}; {nota} |"
@@ -225,6 +237,7 @@ def main():
           "«—» = sin prueba. CR-2a/CR-2b y persona2 son instrumentos nuevos de esta tesis; persona2 está congelado (hashes en `validacion/persona2_congelado.sha256`).", ""]
 
     def tabla_desc(dims, brazo):
+        """Tabla descriptiva de un brazo (n, cuartiles, RIQ, extremos, media y DE, Shapiro-Wilk) para las dimensiones `dims`."""
         L = [f"| Indicador | Instrumento | n | Mdn | Q1 | Q3 | RIQ | Mín | Máx | Media (DE) | Shapiro-Wilk W | p | ¿Normal? |", "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
         for t in CO.T:
             if t[2] not in dims or E.get(t[0]) is None:
@@ -244,6 +257,7 @@ def main():
         L += ["", "Mismos estadísticos del sistema multiagente (G1), como referencia para la comparación:", ""] + tabla_desc(dims, "G1") + [""]
 
     def tabla_comp(dims):
+        """Tabla de comparación pareada G1 vs G2 para las dimensiones `dims`: medianas, HL con IC, Wilcoxon (bilateral y unilaterales), r, Holm y signo por lote."""
         L = ["| Indicador | Instrumento | ↕ | Uso | Mdn G1 (Q1–Q3) | Mdn G2 (Q1–Q3) | Mdn dif. | HL [IC 95 %] | W+ | n efect. | p bilateral | p unil. «G1 mejor» | p unil. «G2 mejor» | r | p Holm | Shapiro dif. p | Lotes |",
              "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
         for t in CO.T:

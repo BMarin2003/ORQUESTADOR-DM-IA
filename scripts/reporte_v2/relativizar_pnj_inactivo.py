@@ -57,6 +57,11 @@ def elegibles(dc, ts):
 
 
 def main():
+    """Recalcula `cl2_pnj_inactivo_actua` por bloque de 200 turnos relativizado a los turnos elegibles (ya hay un PNJ no vivo visible).
+
+    Resuelve el confusor de H1b: la tasa cruda puede subir solo porque hacia el final hay más PNJ muertos. Escribe
+    `datos_v2/cierre/pnj_inactivo_relativizado.csv`; con 0 elegibles la tasa relativizada queda vacía (indefinida).
+    """
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     DESTINO.mkdir(parents=True, exist_ok=True)
     filas = []

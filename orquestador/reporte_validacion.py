@@ -52,6 +52,7 @@ import db as bd        # noqa: E402
 
 
 def paso(titulo):
+    """Imprime la cabecera de una sección del reporte."""
     print(f"\n{'─'*74}\n{titulo}\n{'─'*74}")
 
 
@@ -108,6 +109,7 @@ def resumen_turn_validation(filas):
 
 
 def imprimir_resumen(resumen):
+    """Sección 1: turnos con problema Tier 1/2, a revisar (Tier 4) y proxies Tier 3 (solo descriptivos)."""
     paso("1. RESUMEN turn_validation (longitudinal débil -- agregado, "
          "no causal)")
     print(f"  {resumen['total_turnos']} turnos registrados")
@@ -147,6 +149,7 @@ def indice_ubicaciones(ubicaciones):
 
 
 def detectar_ubicaciones(narracion, idx):
+    """Nombres canónicos de las ubicaciones del índice mencionadas en la narración (coincidencia por palabra completa)."""
     detectadas = set()
     for token, nombre in idx.items():
         if re.search(rf"\b{re.escape(token)}\b", narracion):
@@ -200,6 +203,7 @@ def tarjan_scc(nodos, aristas):
     resultado = []
 
     def visitar(v):
+        """Paso recursivo de Tarjan: asigna índice/low-link y emite el componente al cerrar su raíz."""
         indice[v] = low[v] = contador[0]
         contador[0] += 1
         pila.append(v)
@@ -227,6 +231,7 @@ def tarjan_scc(nodos, aristas):
 
 
 def detector_bucles(turnos, ubicaciones):
+    """Reconstruye el camino de ubicaciones mencionadas turno a turno y detecta ciclos (SCC de tamaño > 1) en su grafo de transiciones."""
     idx = indice_ubicaciones(ubicaciones)
     camino, ambiguos = camino_realizado(turnos, idx)
     nombres = [u for _, u in camino]
@@ -248,6 +253,7 @@ def detector_bucles(turnos, ubicaciones):
 
 
 def imprimir_bucles(r):
+    """Sección 2: visitas, ubicaciones distintas y ciclos de estancamiento."""
     paso("2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, "
          "candidato inspirado en Twine/Symmetry)")
     print(f"  {r['num_visitas']} visitas distintas · "
@@ -326,6 +332,7 @@ def relojes_no_reconocidos(relojes, turnos_por_id, ventana=2):
 
 
 def imprimir_relojes(resultado):
+    """Sección 3: si la narración reconoció la consecuencia de cada reloj de facción disparado."""
     paso("3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? "
          "(validación longitudinal-causal)")
     if not resultado:
@@ -530,6 +537,7 @@ def consistencia_atributos_V(turnos, entidades, top_n=3, L=10):
 
 
 def imprimir_papalampidi(C, L_efectivo, detalle_c, V, detalle_v):
+    """Sección 4: coherencia C y consistencia de atributos V (Papalampidi et al. 2022); None cuando faltan menciones."""
     paso("4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — "
          "Papalampidi et al. 2022 (agregado de campaña completa)")
     if C is None:
@@ -610,6 +618,7 @@ _KEYWORDS_QUEST_STATUS = {
 # documentado, mismo criterio que el resto de "duplicado, no reutilizado"
 # de este proyecto (ver vertical_slice_g1.py).
 def _banda_afinidad(valor):
+    """Banda de afinidad por umbrales; réplica en Python de `disposition_band()` de SQL, duplicada a propósito para evitar un viaje a Postgres por delta."""
     v = float(valor)
     if v <= -60: return "hostile"
     if v <= -25: return "wary"
@@ -711,6 +720,7 @@ def jericho_qa_recall(deltas, turnos_por_id, ventana=1):
 
 
 def imprimir_jericho_qa(r):
+    """Sección 5: recall (no F1) de los deltas de estado frente a la narración, por familia de campo."""
     paso("5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. "
          "narración; ver nota: SOLO recall, no F1 -- limitación declarada)")
     if r["n_total"] == 0:
@@ -780,6 +790,7 @@ def entity_coreference_rate(turnos, entidades):
 
 
 def imprimir_entity_coreference(r):
+    """Sección 6: tasa de correferencia de entidades, proxy de CL-1 que solo mide reaparición."""
     paso("6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, "
          "persistencia de identidad a lo largo de la campaña")
     if r["promedio"] is None:
@@ -848,6 +859,7 @@ def grammaticality_lt(texto, tool):
 
 
 def reporte_grammaticality(turnos):
+    """Gramaticalidad media/mín/máx por turno con LanguageTool; None si no está disponible o no hay turnos puntuables."""
     tool = _herramienta_lt()
     if tool is None:
         return None
@@ -863,6 +875,7 @@ def reporte_grammaticality(turnos):
 
 
 def imprimir_grammaticality(r):
+    """Sección 7: gramaticalidad (proxy de CR-1; sin ortografía)."""
     paso("7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — "
          "proxy de CR-1, fluidez/corrección gramatical")
     if r is None:
@@ -924,6 +937,7 @@ def grafo_lema_densidad(texto, lemas_conocidos, nlp):
 
 
 def reporte_grafo_lema(turnos, entidades):
+    """Densidad media del grafo de coherencia por lema (spaCy) sobre los turnos con 2+ oraciones; None si no hay spaCy o datos."""
     nlp = _modelo_grafo()
     if nlp is None:
         return None
@@ -944,6 +958,7 @@ def reporte_grafo_lema(turnos, entidades):
 
 
 def imprimir_grafo_lema(r):
+    """Sección 8: densidad del grafo por lema, complemento de `cr2_entidad_grafo_densidad`."""
     paso("8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) "
          "— complemento lematizado de cr2_entidad_grafo_densidad")
     if r is None:
@@ -1032,6 +1047,7 @@ def pnj_inactivo_refinado(filas_validacion, turnos_por_id, entidades):
 
 
 def imprimir_pnj_inactivo_refinado(r):
+    """Sección 9: reclasifica los turnos con `cl2_pnj_inactivo_actua` según el PNJ actúe, solo sea referenciado o no haya evidencia."""
     paso("9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, "
          "spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?")
     if r is None:
@@ -1062,6 +1078,7 @@ def imprimir_pnj_inactivo_refinado(r):
 
 
 def main():
+    """CLI: arma el reporte de validación de una campaña (por defecto la más antigua; `--hasta-turno` recorta) e imprime las 9 secciones."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--campaign-id", default=None,
                     help="UUID de campaña; por defecto la más antigua "

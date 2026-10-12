@@ -36,6 +36,7 @@ K = ae.K_VENTANA
 
 
 def main():
+    """Mide la especificidad del anclaje al escenario (CR-2b): similitud de cada ventana con su propio escenario frente a los 26 ajenos, por variante, y compara G1 y G2 por pares."""
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     t0 = time.perf_counter()
     pares = _pares.todos()

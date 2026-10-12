@@ -71,12 +71,14 @@ def elegir_donante_misma_campana(textos, turno, rng, dmin, dmax):
 
 # ---------------------------------------------------------------- perturbaciones de turno
 def _donante(texto, ctx, rng, donante=None):
+    """X1/X2: sustituye la respuesta por la narración de otro turno de la misma campaña (`donante`); exige donante."""
     if donante is None:
         raise ValueError("requiere `donante` (narración de otro turno de la misma campaña)")
     return pt.Resultado(donante, ctx.copia(), {"donante_len": len(donante)})
 
 
 def _c1(texto, ctx, rng, donante=None):
+    """C1: permuta las oraciones de la zona narrativa (mismo contenido léxico); reintenta hasta 100 veces para que el orden cambie."""
     partes = pt._partir_zona(texto)
     piezas = _RE_ORACIONES.split(partes[2])          # [oración, sep, oración, ...]
     oraciones = piezas[0::2]
@@ -92,20 +94,24 @@ def _c1(texto, ctx, rng, donante=None):
 
 
 def _c2(texto, ctx, rng, donante=None):
+    """C2: pasa a minúsculas la zona narrativa."""
     partes = pt._partir_zona(texto)
     return pt.Resultado(pt._rearmar(partes, partes[2].lower()), ctx.copia(), {})
 
 
 def _c3(texto, ctx, rng, donante=None):
+    """C3: quita las tildes de la zona narrativa (conserva la ñ)."""
     partes = pt._partir_zona(texto)
     return pt.Resultado(pt._rearmar(partes, partes[2].translate(_TILDES)), ctx.copia(), {})
 
 
 def _s1(texto, ctx, rng, donante=None):
+    """S1: sustituye palabras frecuentes por sinónimos del diccionario mínimo y cuenta las sustituciones (límite léxico, solo descriptivo)."""
     partes = pt._partir_zona(texto)
     n = [0]
 
     def cambiar(m):
+        """Reemplaza una coincidencia por su sinónimo conservando la mayúscula inicial y cuenta la sustitución."""
         n[0] += 1
         nuevo = SINONIMOS[m.group(0).lower()]
         return nuevo.capitalize() if m.group(0)[0].isupper() else nuevo
@@ -132,6 +138,7 @@ def aplicar(pid, texto, ctx, rng, donante=None):
 
 
 def elegible(pid, texto, ctx):
+    """True si la perturbación es aplicable al turno; C1 exige >= 3 oraciones y las demás nuevas siempre aplican."""
     if pid == "C1_reorden_oraciones":
         return len(_RE_ORACIONES.split(pt._partir_zona(texto)[2])[0::2]) >= 3
     if pid in CATALOGO_A4BC:

@@ -77,6 +77,7 @@ NOMBRE_SIN_CAMBIO = {
 
 
 def _lexemas():
+    """Reúne los lexemas que usa Jericho-QA, para verificar que las oraciones de perturbación no los contengan."""
     todos = set()
     for tabla in (C.RV._KEYWORDS_NPC_STATUS, C.RV._KEYWORDS_QUEST_STATUS, C.RV._KEYWORDS_AFINIDAD_BANDA):
         for claves in tabla.values():
@@ -97,6 +98,7 @@ def _assert_sin_lexema():
 
 
 def _insertar_en_turno(tpi, t, oracion):
+    """Devuelve una copia de los textos por turno con la oración añadida al turno t; no modifica el original."""
     tpi2 = dict(tpi)
     tpi2[t] = (tpi.get(t, "") + " " + oracion).strip()
     return tpi2
@@ -131,6 +133,7 @@ def candidatos(pares, embedder):
 
 
 def _fila(pid, x, despues, extra=None):
+    """Fila de resultados de una perturbación: margen y decisión antes y después sobre el mismo evento."""
     f = {"perturbacion": pid, "par": x["par"], "brazo": x["brazo"], "turno": x["ev"]["turno"], "campo": x["ev"]["campo"],
          "estado": x["ev"]["estado"], "entidad": x["ev"]["entidad"], "margen_antes": x["base"]["margen"],
          "margen_despues": despues["margen"], "reconocido_antes": int(x["base"]["reconocido"]),
@@ -149,6 +152,10 @@ def _insercion(x, oracion, embedder):
 
 
 def correr(cands, n, semilla, embedder):
+    """Aplica las perturbaciones de la prueba A2 en memoria (nunca a la base) con una semilla fija.
+
+    SQ1 inserta una paráfrasis en eventos no reconocidos; SQ2 sustituye la ventana por otra ajena en eventos reconocidos; SC1 inserta texto neutro.
+    """
     rng = random.Random(semilla)
     no_rec = [x for x in cands if not x["base"]["reconocido"]]
     rec = [x for x in cands if x["base"]["reconocido"]]
@@ -188,6 +195,7 @@ def correr(cands, n, semilla, embedder):
 
 
 def resumir(filas, semilla):
+    """Resume cada perturbación (delta de margen, bootstrap, prueba de signos) y aplica Holm por familia (confirmatorias y controles) para emitir el veredicto frente a la expectativa sellada."""
     res = {}
     for clave, esperado in EXPECTATIVAS.items():
         pid = clave.split("|")[0]
@@ -210,6 +218,7 @@ def resumir(filas, semilla):
 
 
 def escribir(filas, res, semilla, n):
+    """Escribe el CSV, el JSON (con el SHA-256 de las expectativas) y el informe Markdown de la prueba A2."""
     C.SALIDA_DOCS.mkdir(parents=True, exist_ok=True)
     base = C.SALIDA_DOCS / "sensibilidad_semantico"
     campos = list(dict.fromkeys(k for f in filas for k in f))
@@ -246,6 +255,10 @@ def escribir(filas, res, semilla, n):
 
 
 def main(argv=None, embedder=None):
+    """Corre la prueba A2 de sensibilidad del instrumento y escribe sus informes.
+
+    Imprime el SHA-256 de las expectativas, fijadas antes de correr. Con --pares es solo prueba; la A2 real usa las 27.
+    """
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=40)
     ap.add_argument("--semilla", type=int, default=20261008)

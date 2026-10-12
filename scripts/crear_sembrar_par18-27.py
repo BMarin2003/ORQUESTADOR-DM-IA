@@ -39,6 +39,7 @@ LORE = {p[0]: f"lore_{p[1]}.md" for p in PARES}
 
 
 def run(cmd):
+    """Ejecuta un subproceso desde la raíz y devuelve su stdout; aborta con SystemExit si falla."""
     print(f"  $ {' '.join(cmd)}")
     r = subprocess.run(cmd, cwd=RAIZ, capture_output=True, text=True, encoding="utf-8")
     if r.returncode != 0:
@@ -48,6 +49,7 @@ def run(cmd):
 
 
 def extraer(salida, campo):
+    """Extrae de la salida de un script el UUID que sigue a 'campo:'; aborta si no aparece."""
     m = re.search(rf"{campo}:\s*([0-9a-f-]{{36}})", salida)
     if not m:
         raise SystemExit(f"No se pudo extraer '{campo}' de la salida:\n{salida}")
@@ -55,6 +57,7 @@ def extraer(salida, campo):
 
 
 def verificar_campania(cid, arch, titulo, tono, registro):
+    """Comprueba en Postgres que la campaña tenga título, arquitectura, tono y registro esperados y turno 0; aborta si difiere."""
     with psycopg.connect(db.DSN) as c:
         row = c.execute("SELECT title, architecture, world_tone, party_register, current_turn "
                         "FROM campaigns WHERE id=%s", (cid,)).fetchone()
@@ -64,6 +67,7 @@ def verificar_campania(cid, arch, titulo, tono, registro):
 
 
 def verificar_siembra(cid, world, personas):
+    """Comprueba que los conteos sembrados (incluidos los relojes de facción) coincidan con los fixtures; aborta si no, y devuelve los conteos reales."""
     esperado = {"locations": len(world["locations"]),
                 "npcs": len([k for k in personas if not k.startswith("_")]),
                 "factions": len(world["factions"]), "quests": len(world["quests"]),
@@ -77,6 +81,7 @@ def verificar_siembra(cid, world, personas):
 
 
 def main():
+    """Crea y siembra G2 y G1 para cada par pendiente del lote 18-27 con tono y registro configurables; es reanudable, porque omite los pares ya presentes en el archivo de ids."""
     seleccion = set(sys.argv[1:])
     previos = json.loads(SALIDA.read_text(encoding="utf-8")) if SALIDA.exists() else []
     hechos = {e["par"] for e in previos}

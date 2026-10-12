@@ -61,10 +61,12 @@ GLIFO_APR = {"aprobada": "✓", "falla": "✗", "descriptiva": "·", "no aplica"
 
 # ================================================================== piezas puras
 def hash_matriz_activa():
+    """SHA-256 de la matriz pre-especificada vigente (a4bc-2), para sellarla en el informe."""
     return mx.hash_matriz(mx.MATRIZ)
 
 
 def bloques(n=1400, tam=200):
+    """Bloques consecutivos de `tam` turnos (inicio, fin) que cubren 1..n, para la distribución por tramos de campaña."""
     return [(i, min(i + tam - 1, n)) for i in range(1, n + 1, tam)]
 
 
@@ -81,10 +83,12 @@ def regex_nombres(nombres):
 
 
 def menciona_nombre(texto, rx):
+    """True si el texto (ya limpiado) contiene algún nombre propio del escenario según el proxy `rx`."""
     return bool(rx.search(le.limpiar(texto)))
 
 
 def aprobacion(cel, fila, todas_cero):
+    """Criterio de aprobación de una celda fijado de antemano: veredicto del arnés «responde» y, si hay dirección, |mediana| >= min; las celdas exactas exigen diferencia 0 en todos los pares; sin n suficiente no aplica."""
     if cel["descriptivo"]:
         return "descriptiva"
     if fila["n"] < es.N_MIN:
@@ -102,12 +106,14 @@ TOL_REL = 0.02   # lectura POST HOC (no cambia el criterio): un «cambio inesper
 
 
 def rel_dif(mediana_antes, mediana_dif):
+    """Diferencia mediana relativa a |mediana previa|; None si la mediana previa es nula o NaN."""
     if mediana_antes is None or mediana_antes != mediana_antes or mediana_antes == 0:
         return None
     return mediana_dif / abs(mediana_antes)
 
 
 def despreciable(rel):
+    """Lectura post hoc (no altera el criterio): True si el cambio relativo es menor que TOL_REL."""
     return rel is not None and abs(rel) < TOL_REL
 
 
@@ -121,12 +127,15 @@ def min_cumple_regla(cel, mediana_dev):
 
 # ================================================================== datos
 class Camp:
+    """Datos cargados de una campaña: textos, acciones, tokens de respuesta, pool de acciones y conteo de clases de acción."""
     def __init__(self, cid, brazo, par):
+        """Inicializa la campaña con contenedores vacíos que `cargar_campanas` rellena."""
         self.cid, self.brazo, self.par = str(cid), brazo, par
         self.textos, self.acciones, self.tokR, self.pool, self.clases = {}, {}, {}, None, Counter()
 
 
 def cargar_campanas(conn, pares, log):
+    """Carga (solo SELECT) las campañas G1/G2 de los pares: textos, acciones, tokens con caché de lemas y pool de acciones; devuelve (camps, lores del turno 0)."""
     camps, lores = {}, {}
     t0 = time.perf_counter()
     for p in pares:
@@ -153,6 +162,7 @@ def cargar_campanas(conn, pares, log):
 
 
 def construir_escenarios(pares, lores, log):
+    """Construye el Escenario de cada par con el lore de G1; avisa si el lore difiere entre brazos."""
     esc, difieren = {}, []
     for p in pares:
         w, per = ae.cargar_fixtures(p["par"])
@@ -166,14 +176,17 @@ def construir_escenarios(pares, lores, log):
 
 # ================================================================== recolección de celdas
 def _semilla(sem, *claves):
+    """Generador aleatorio determinista derivado de la semilla y de las claves de la unidad perturbada."""
     return random.Random(f"{sem}|" + "|".join(map(str, claves)))
 
 
 def recolectar(plan, camps, esc, modelo, sem, log):
+    """Aplica cada perturbación de la matriz a los turnos y ventanas del plan y reúne los pares (antes, después) por (brazo, perturbación, instrumento); devuelve (celdas, elegibles, extras)."""
     celdas, elegibles, tiempos = {}, {}, {}
     extras = {}
 
     def anadir(brazo, pid, instr, a, d):
+        """Acumula un par (antes, después) en la celda (brazo, perturbación, instrumento)."""
         c = celdas.setdefault((brazo, pid, instr), {"tipo": "num", "antes": [], "despues": []})
         c["antes"].append(a)
         c["despues"].append(d)
@@ -237,6 +250,7 @@ def recolectar(plan, camps, esc, modelo, sem, log):
 
 
 def evaluar(celdas, sem):
+    """Evalúa las celdas con el arnés de sensibilidad, las cruza con la matriz y añade control exacto, fracción de cambio, cambio relativo y aprobación; descarta filas sin celda en la matriz."""
     filas = cs.evaluar(celdas, mx.esperado_arnes(), sem)
     for f in filas:
         cel = mx.MATRIZ["celdas"].get(f["instrumento"], {}).get(f["perturbacion"])
@@ -253,6 +267,7 @@ def evaluar(celdas, sem):
 
 # ================================================================== distribución real (paso 5)
 def _spearman(x, y):
+    """Correlación de Spearman por rangos; NaN si hay menos de 3 puntos o varianza nula."""
     import numpy as np
     x, y = np.asarray(x, float), np.asarray(y, float)
     if len(x) < 3 or x.std() == 0 or y.std() == 0:
@@ -262,11 +277,13 @@ def _spearman(x, y):
 
 
 def _media(xs):
+    """Media ignorando None; NaN si no hay valores."""
     xs = [x for x in xs if x is not None]
     return sum(xs) / len(xs) if xs else float("nan")
 
 
 def distribucion(camps, esc, modelo, log):
+    """Descriptivo (sin veredicto): medias por bloque de 200 turnos de las métricas CR-2a/CR-2b, el proxy de nombres y la identificación del escenario, por campaña."""
     filas, clases = [], Counter()
     for c in sorted(camps.values(), key=lambda x: (x.brazo, x.par)):
         e = esc[c.par]
@@ -299,10 +316,12 @@ ESC_TODOS = {}
 
 # ================================================================== informe
 def _f(x, d=3):
+    """Formatea un número con d decimales; «—» si es None o NaN."""
     return "—" if x is None or x != x else f"{x:.{d}f}"
 
 
 def _celda_txt(f):
+    """Texto de una celda de la tabla resumen: glifo esperado, aprobación, lo observado si discrepa y mediana de la diferencia."""
     cel = f["cel"]
     s = f"{GLIFO[cel['dir']]}{GLIFO_APR.get(f['aprobacion'], '')}"
     if f["veredicto"] in ("no responde", "dirección opuesta", "cambio inesperado") and f["observado"]:
@@ -311,6 +330,7 @@ def _celda_txt(f):
 
 
 def tabla_matriz(filas, brazo):
+    """Tabla Markdown perturbación x instrumento de un brazo."""
     fb = [f for f in filas if f["brazo"] == brazo]
     instrs = [i for i in mx.MATRIZ["celdas"] if any(f["instrumento"] == i for f in fb)]
     perts = list(dict.fromkeys(f["perturbacion"] for f in fb))
@@ -322,6 +342,7 @@ def tabla_matriz(filas, brazo):
 
 
 def linea_detalle(f):
+    """Fila Markdown del detalle de una celda (esperado, medianas, IC, delta, p de Holm, veredicto, criterio)."""
     return (f"| {f['perturbacion']} | `{f['instrumento']}` | {GLIFO[f['cel']['dir']]} {f['cel']['dir']}"
             f"{'' if f['cel']['min'] is None else f' ≥{f['cel']['min']:g}'} | {f['n']} | {_f(f['mediana_antes'])} | "
             f"{_f(f['mediana_despues'])} | {_f(f['mediana_dif'])} [{_f(f['ic_dif'][0])}, {_f(f['ic_dif'][1])}] | "
@@ -334,6 +355,7 @@ CAB_DETALLE = ("| perturbación | instrumento | esperado | n | mediana antes | m
 
 
 def escribir_informe(ruta_md, ruta_csv, filas, meta, dist=None, clases=None):
+    """Escribe el CSV de celdas y el informe Markdown esperado-vs-observado; los hallazgos que fallan se reportan sin modificar la expectativa."""
     campos = ["brazo", "perturbacion", "instrumento", "familia", "esperado", "n", "mediana_antes", "mediana_despues",
               "mediana_dif", "delta_pareado", "delta_cruzado", "p", "p_holm", "observado", "veredicto", "todas_cero",
               "frac_cambio", "aprobacion"]
@@ -423,6 +445,7 @@ def escribir_informe(ruta_md, ruta_csv, filas, meta, dist=None, clases=None):
 
 
 def seccion_distribucion(dist, clases):
+    """Sección Markdown de la distribución real por bloques: medias por brazo y, por campaña, caída primero-último y Spearman contra el proxy de nombres."""
     out = []
     tot = sum(clases.values())
     out.append("Clases de acción en los " + f"{tot} turnos: " + ", ".join(f"{k} {v} ({100 * v / tot:.2f} %)" for k, v in clases.most_common()) + ".\n")
@@ -463,6 +486,7 @@ def seccion_distribucion(dist, clases):
 
 # ================================================================== main
 def main(argv=None):
+    """CLI del corredor: carga las 42 campañas, construye el modelo idf, corre la matriz sobre la muestra (desarrollo o evaluación) y escribe el informe."""
     ap_ = argparse.ArgumentParser()
     ap_.add_argument("--desarrollo", action="store_true")
     ap_.add_argument("--precalentar", action="store_true")

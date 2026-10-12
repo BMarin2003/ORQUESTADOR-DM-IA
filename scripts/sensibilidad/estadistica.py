@@ -66,6 +66,7 @@ def newcombe_pareado(a, b, c, d, z=1.959964):
 
 
 def _binom_bilateral(n, k):
+    """p bilateral exacta binomial 0.5: duplica la cola inferior hasta k sobre n ensayos, acotada a 1."""
     if n == 0:
         return 1.0
     p = 2 * sum(math.comb(n, i) for i in range(k + 1)) / 2 ** n

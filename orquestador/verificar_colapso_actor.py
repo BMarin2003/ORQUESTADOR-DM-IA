@@ -105,10 +105,12 @@ CASO_ARRAIGO = {
 
 
 def frases_ejemplo(prompt_texto):
+    """Líneas de ejemplo marcadas en el prompt (4+ palabras) que no deben aparecer literales en las salidas."""
     return [m for m in EJEMPLO.findall(prompt_texto) if len(m.split()) >= 4]
 
 
 def jaccard_palabras(a, b):
+    """Superposición léxica de Jaccard entre dos textos (0.0 si alguno no tiene palabras)."""
     wa = set(re.findall(r"\w+", a.lower()))
     wb = set(re.findall(r"\w+", b.lower()))
     if not wa or not wb:
@@ -117,6 +119,7 @@ def jaccard_palabras(a, b):
 
 
 def pedir_linea(prompt_texto, ficha, disparador, conocimiento=None):
+    """Pide una línea al Actor con ficha, conocimiento y escena. Devuelve (salida parseada, respuesta cruda) o (None, None) si el modelo no responde."""
     entrada = {
         "tu_ficha": ficha,
         "tu_conocimiento": conocimiento or "Lo que es obvio para cualquiera en la escena.",
@@ -131,6 +134,7 @@ def pedir_linea(prompt_texto, ficha, disparador, conocimiento=None):
 
 
 def main():
+    """CLI: comprueba fuga de ejemplo, divergencia entre PNJ de ejes opuestos (Jaccard > `--umbral`) y arraigo al conocimiento declarado; sale con 2 si hay problemas."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--umbral", type=float, default=0.55,
                      help="máxima superposición léxica (Jaccard) tolerada "

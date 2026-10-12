@@ -28,6 +28,7 @@ CAMBIOS_MIN = {   # (instrumento, perturbación): (min a4bc-1, min a4bc-2, efect
 
 
 def _construir():
+    """Copia la matriz a4bc-1 y cambia solo los cinco `min` de CAMBIOS_MIN, verificando antes el valor previo; guarda versión, fecha y hash de la matriz de origen."""
     m = copy.deepcopy(_v1._MATRIZ_INICIAL)
     m["version"], m["fecha"] = VERSION, FECHA
     m["registrada"] = "2026-09-20 23:39"
@@ -43,11 +44,13 @@ _MATRIZ_INICIAL = copy.deepcopy(MATRIZ)
 
 
 def hash_matriz(matriz=None):
+    """SHA-256 canónico (JSON ordenado) de la matriz; sin argumento, de la copia inicial sin alterar, para detectar ediciones posteriores."""
     m = _MATRIZ_INICIAL if matriz is None else matriz
     return hashlib.sha256(json.dumps(m, sort_keys=True, ensure_ascii=False).encode("utf-8")).hexdigest()
 
 
 def esperado_arnes():
+    """Mapa {perturbación: {instrumento: dirección}} en el formato del arnés; omite las celdas descriptivas."""
     out = {}
     for instr, perts in MATRIZ["celdas"].items():
         for pid, cel in perts.items():

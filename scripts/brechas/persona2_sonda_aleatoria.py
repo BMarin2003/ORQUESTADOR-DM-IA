@@ -21,6 +21,7 @@ EVAL = {"E2": "etiquetas_persona2_E2.csv", "E3": "etiquetas_persona2_E3.csv",
 
 
 def wilson(x, n, z=1.959964):
+    """Intervalo de Wilson al 95 % de una proporción x/n, formateado como porcentajes "inf-sup" con un decimal."""
     p = x / n
     d = 1 + z * z / n
     c = (p + z * z / (2 * n)) / d
@@ -29,6 +30,7 @@ def wilson(x, n, z=1.959964):
 
 
 def main():
+    """Tabla por evaluador y brazo de la sonda aleatoria de persona2: turnos al azar, marcados por el detector, usurpación confirmada y la parte mental/verbal con su IC."""
     with open(V / "confirmacion_persona2_clave.csv", encoding="utf-8-sig", newline="") as f:
         clave = {r["id_muestra"]: r for r in csv.DictReader(f)}
     L = ["# persona2: sonda aleatoria (prevalencia y lo que se le escapa al detector)", "",

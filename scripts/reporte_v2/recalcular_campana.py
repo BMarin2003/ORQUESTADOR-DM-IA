@@ -30,6 +30,10 @@ BOOL = RAIZ / "datos_v2" / "booleanos"
 
 
 def resumen(turnos, ents, relojes, deltas, filas_val):
+    """Instrumentos a nivel de campaña de `reporte_validacion` (bucles, relojes, Papalampidi C/L/V, Jericho, ECR, grafo por lema, PNJ inactivo refinado).
+
+    Llama a las mismas funciones que `reporte_validacion.main()`; solo cambia el `dm_output` de entrada.
+    """
     ubic = [e for e in ents if e["tipo"] == "location"]
     tpi = {f["turn_id"]: f["dm_output"] for f in turnos}
     b = RV.detector_bucles(turnos, ubic)
@@ -53,12 +57,17 @@ def resumen(turnos, ents, relojes, deltas, filas_val):
 
 
 def flags_v2(par, brazo):
+    """{turn_id: bool} de `cl2_pnj_inactivo_actua_v2` ya recalculado en `datos_v2/booleanos/`."""
     ruta = BOOL / f"par{par}_{brazo}.csv"
     with open(ruta, newline="", encoding="utf-8") as fh:
         return {int(r["turn_id"]): r["cl2_pnj_inactivo_actua_v2"] == "1" for r in csv.DictReader(fh)}
 
 
 def procesar(par, brazo, cid):
+    """Resumen v1 (texto crudo) y v2 (texto normalizado) de una campaña, limitado a 1 400 turnos.
+
+    En v2 sustituye `cl2_pnj_inactivo_actua` por el booleano recalculado sobre texto normalizado.
+    """
     camp = bd.Campaña(cid)
     with camp._conn() as c:
         camp._tx(c)
@@ -78,6 +87,7 @@ def procesar(par, brazo, cid):
 
 
 def main():
+    """Calcula `procesar` para cada campaña de `pares.todos()` y guarda `datos_v2/campana/parNN_G?.json`; salta las existentes salvo `--forzar`."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--pares", default="")
     ap.add_argument("--forzar", action="store_true")

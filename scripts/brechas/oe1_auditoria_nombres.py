@@ -72,6 +72,10 @@ def marcar_campana(conn, par, brazo, cid):
 
 
 def clasificar(marcas, creado, lore, minus, mayus):
+    """Clasifica cada marca de nombre no reconocido según la base: registrado después, registrado fuera de ventana, lore, palabra común, recurrente o efímero (candidato a invención).
+
+    El orden de las reglas es parte del criterio y es determinista. Modifica y devuelve la lista de marcas.
+    """
     turnos_por_palabra = defaultdict(set)
     for m in marcas:
         turnos_por_palabra[m["palabra"]].add(m["turno"])
@@ -93,6 +97,7 @@ def clasificar(marcas, creado, lore, minus, mayus):
 
 
 def main():
+    """Corre la auditoría censal de nombres en las 54 campañas, compara G1 y G2 por pares (Wilcoxon) y escribe el CSV y el informe."""
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     from scipy.stats import wilcoxon
     conn = datos.abrir_conexion()
@@ -130,6 +135,7 @@ def main():
 
 
 def escribir_md(filas, resumen, tasas, wilcoxon):
+    """Escribe el informe Markdown de la brecha OE-1: tabla por categoría, turnos marcados, comparación pareada y 5 ejemplos al azar por categoría (semilla fija) para revisión."""
     L = ["# Brecha OE-1: auditoría censal de «nombres no reconocidos»", "",
          f"Marcas totales: {len(filas)}. Clasificación determinista contra la base (ver docstring del script).", "",
          "| Categoría | G1 | G2 | ¿Invención? |", "|---|---|---|---|"]

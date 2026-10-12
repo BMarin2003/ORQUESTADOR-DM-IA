@@ -48,6 +48,7 @@ def multipart(campos, archivo):
 
 
 def transcribir(key, ruta, idioma="es"):
+    """Transcribe un archivo de audio con la API de DeepInfra; devuelve el JSON de respuesta con el tiempo de proceso, o None si falla (413: sugiere --trocear)."""
     cuerpo, ctype = multipart({"language": idioma, "task": "transcribe"}, ruta)
     req = urllib.request.Request(
         ENDPOINT, data=cuerpo,
@@ -93,6 +94,7 @@ def formatear(d, desplazamiento=0.0):
 
 
 def main():
+    """Transcribe los archivos indicados (admite comodines), troceándolos si se pide, y escribe cada transcripción en un .txt junto al audio con una estimación del costo. Requiere DEEPINFRA_API_KEY en el entorno."""
     ap = argparse.ArgumentParser()
     ap.add_argument("archivos", nargs="+")
     ap.add_argument("--idioma", default="es")

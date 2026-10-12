@@ -17,6 +17,7 @@ from psycopg.rows import dict_row
 
 
 def main():
+    """Exporta a Markdown la transcripción de una campaña: el turno 0 como corpus de lore y luego cada turno con la acción del jugador y la narración."""
     if len(sys.argv) < 2:
         sys.exit(__doc__)
     campaign_id = sys.argv[1]
