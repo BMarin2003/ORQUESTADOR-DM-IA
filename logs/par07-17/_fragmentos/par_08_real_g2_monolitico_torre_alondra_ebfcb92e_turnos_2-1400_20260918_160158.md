@@ -1,0 +1,3297 @@
+
+# VERTICAL SLICE — Par 08 (real) · G2 (Monolítico) · Torre Alondra (monolithic)
+
+- **DM:** `google/gemma-4-31B-it`
+- **jugador:** `google/gemma-4-31B-it` (Maelis, desvío 40)
+- **turno:** 2
+
+## Turno 2 — 1/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  3683 ms
+
+> "No busco el favor del consejo, sino que el pueblo deje de sufrir."
+> Me mantengo firme frente a ella, sin retroceder. Intento leer en sus gestos si su rechazo es por miedo o por una orden superior.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+1=11
+
+### [4] DM
+
+  7981 ms
+
+> Ginebra exhala un suspiro largo que se pierde en el viento gélido de la cresta. Al escuchar tus palabras, sus dedos dejan de moverse bruscamente y se quedan quietos, aunque la tensión en sus hombros no desaparece. Te mira fijamente, y por un instante, la dureza de su expresión se quiebra, dejando ver una vulnerabilidad que intenta ocultar tras una máscara de pragmatismo.
+> —El sufrimiento es el único lenguaje que todos hablamos aquí ahora mismo —responde con una voz que suena más gastada que antes—. Vuestra nobleza es admirable, pero en Torre Alondra, el altruismo sin garantías se confunde con el espionaje.
+> Ginebra mantiene su postura, pero sus ojos no se apartan de los tuyos, observando cada uno de tus gestos con una mezcla de duda y una esperanza que se niega a admitir.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3057 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · ideal_honored
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 3 — 2/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2592 ms
+
+> "No soy una espía, Ginebra. Solo soy alguien que sabe lo que es perderlo todo y aún así elegir hacer lo correcto."
+> Doy un paso hacia ella, manteniendo las manos a la vista para no parecer una amenaza.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 7+0=7
+
+### [4] DM
+
+  6759 ms
+
+> Ginebra retrocede un paso instintivamente cuando te acercas, y sus ojos se entrecierran, escrutando la sinceridad de tu gesto. La mención de la pérdida parece resonar en ella, pero la desconfianza arraigada en el clima de Torre Alondra es más fuerte que la empatía en este momento. Sus hombros se tensan nuevamente y recupera la máscara de frialdad, desviando la mirada hacia el horizonte gélido.
+> —Muchos dicen lo mismo antes de entregar la daga —sentencia con un tono seco y cortante—. Las palabras son baratas en las crestas, y la tragedia es una herramienta común para ganar confianza. Si realmente buscas hacer lo correcto, demuéstralo con hechos, no con historias de redención.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1300 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 4 — 3/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2436 ms
+
+> "Entiendo. Las palabras no sirven de nada si no hay acero que las respalde."
+> Suelto un suspiro y me quedo quieta, manteniendo una postura abierta pero firme, esperando que me indique cuál es la primera tarea que requiere hechos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 18+1=19
+
+### [4] DM
+
+  12977 ms
+
+> Ginebra sostiene la mirada, evaluando el silencio y la inmovilidad de tu postura. Sus ojos recorren tu figura, buscando cualquier signo de impaciencia o engaño, pero la firmeza de tu espera parece calmar la tensión de sus hombros. El viento gélido agita sus ropajes, y por un instante, la máscara de frialdad se agrieta, revelando una chispa de respeto genuino ante alguien que no intenta forzar la conversación con más promesas.
+> Al observar con atención su lenguaje corporal, notas que su desconfianza no es un muro infranqueable, sino un escudo. Hay una urgencia contenida en la forma en que aprieta los dedos contra la tela de su manto y un rastro de ansiedad que no encaja con su tono imperioso; parece alguien que está contando los días, alguien que tiene un plan en marcha pero que teme que el tiempo se agote antes de encontrar un aliado fiable.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3466 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 5 — 4/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2594 ms
+
+> "Tus palabras dicen una cosa, pero tus manos cuentan otra historia. ¿Qué es lo que realmente te urge, Ginebra?"
+> Mantengo mi postura, observándola fijamente para analizar esa ansiedad que intenta ocultar.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 5+1=6
+
+### [4] DM
+
+  7201 ms
+
+> Ginebra se tensa visiblemente, y sus dedos se clavan con fuerza en la tela de su manto, traicionando la compostura de su rostro. Desvía la mirada un segundo hacia el horizonte, donde el viento arrastra copos de nieve, y un suspiro gélido escapa de sus labios. El escudo de frialdad que había erigido se tambalea, dejando paso a una expresión de cansancio que no corresponde a su rango.
+> —Eres observador, más de lo que me conviene —responde con una voz que ha perdido parte de su filo, sonando ahora más humana y vulnerable—. No me refiero a una urgencia banal. Hay piezas en movimiento que no puedo controlar por mucho que dicte mi linaje, y el tiempo es un lujo que ya no poseo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1824 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 6 — 5/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  4030 ms
+
+> "No busco inconvenientemente vuestros secretos, solo la verdad."
+> Me acerco un paso más, bajando la guardia para mostrarme accesible.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 16+1=17
+
+### [4] DM
+
+  7465 ms
+
+> Ginebra sostiene la mirada mientras acortas la distancia. Al notar tu gesto de vulnerabilidad, sus hombros descienden ligeramente y la tensión de sus dedos sobre el manto se relaja. El viento gélido azota sus ropajes, pero ella no se retira; hay un destello de gratitud en sus ojos, una chispa de alivio al encontrar a alguien que no intenta forzar la cerradura de sus secretos, sino que ofrece una mano abierta.
+> —La verdad es una moneda cara en este lugar —murmura, y su voz ahora es un hilo cansado que apenas compite con el silbido de la nieve—. No todos los que dicen buscarla están dispuestos a pagar el precio. Pero tú... tú tienes una honestidad que me resulta casi irritante en su pureza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3447 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · ideal_honored
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 7 — 6/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2496 ms
+
+> "No busco monedas, sino claridad. Dime qué es lo que ocurre aquí realmente."
+> Bajo la mirada un instante y luego la miro fijamente, manteniendo mi mano extendida.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 15+0=15
+
+### [4] DM
+
+  8367 ms
+
+> Ginebra exhala un suspiro que se convierte en una nube blanca frente a su rostro. El frío parece haber calado no solo en sus ropas, sino en su espíritu, y ante tu insistencia serena, la máscara de nobleza imperturbable termina de resquebrajarse. Sus dedos rozan apenas la palma de tu mano, un contacto fugaz y gélido, antes de que desvíe la mirada hacia el horizonte blanco.
+> —La claridad es un lujo que mi familia ya no puede permitirse —confiesa en un susurro—. Ossian ha muerto, y con él se ha roto el equilibrio que mantenía a las Casas en una paz armada. Ahora, el aire huele a traición y ambición. Mis primos están inquietos, cegados por la urgencia de reclamar lo que creen suyo, y yo... yo solo intento evitar que la Casa Roquende se convierta en el combustible de un incendio que consumirá todo lo que conocemos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2158 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Casas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 8 — 7/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  8371 ms
+
+> "No permitas que el miedo a ese incendio te paralice, Ginebra. El silencio es el mejor aliado de la traición."
+> La miro fijamente a los ojos, buscando cualquier señal de que me oculte algo más sobre la muerte de Ossian.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 19+1=20
+
+### [4] DM
+
+  6874 ms
+
+> Ginebra sostiene tu mirada, y por un instante, la frialdad de sus ojos se quiebra. No hay rastro de engaño ni de omisión deliberada sobre la tragedia de Ossian; su dolor es genuino y su desesperación, palpable. Sin embargo, notas un matiz distinto en su expresión: una tensión contenida, una chispa de ansiedad que no proviene de la muerte del hombre, sino de una presión temporal que la agobia.
+> —No es el miedo lo que me paraliza, sino la responsabilidad de quienes no saben esperar —responde ella, apretando los labios mientras vuelve a mirar hacia el horizonte—. El silencio es peligroso, sí, pero el ruido prematuro puede ser letal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1707 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 9 — 8/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1974 ms
+
+> "Dime quiénes son esos que no saben esperar. No puedo ayudarte si no sé a qué nos enfrentamos."
+> Doy un paso hacia ella, manteniendo una postura abierta pero firme.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+1=4
+
+### [4] DM
+
+  8239 ms
+
+> Ginebra suspira, un sonido cargado de una fatiga que no corresponde a su edad. Se aparta ligeramente, rompiendo el contacto visual para observar el paisaje, aunque su cuerpo permanece tenso, como una cuerda a punto de romperse.
+> —Mis primos —confiesa en un susurro, casi temiendo que el viento lleve sus palabras a oídos equivocados—. Son jóvenes, impulsivos y están cegados por el deseo de justicia. He logrado persuadirlos para que aguarden una semana más, pero su paciencia es un hilo delgado. Si no encontramos respuestas pronto, actuarán por su cuenta y convertirán este luto en una masacre.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  13970 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · secret_entrusted
+  ✓ delta ginebra_roquende · npc.secret_revealed = Ginebra ya ha convencido a dos de sus primos más jóvenes de esperar una semana más antes de actuar por su cuenta
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+  ✗ entidad inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 10 — 9/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  12613 ms
+
+> "No permitiremos que la impulsividad de unos jóvenes manche más este lugar."
+> Pongo una mano en su hombro para intentar tranquilizarla y la miro fijamente.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 12+0=12
+
+### [4] DM
+
+  8163 ms
+
+> Ginebra siente la presión de tu mano en su hombro y, por un instante, sus hombros caen, liberando parte de esa tensión acumulada. Te devuelve la mirada, buscando en tus ojos la certeza de que esas palabras no son una promesa vacía, aunque el rastro de duda persiste en el leve temblor de su barbilla.
+> —Tus palabras traen un consuelo que no me atrevo a abrazar del todo —responde con voz quebrada, aunque ya no susurra—. Pero el tiempo es el único enemigo que no puedo persuadir. Si realmente puedes detener esa tormenta, dímelo ahora, pues mi corazón ya no soporta más esperas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1544 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 11 — 10/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2913 ms
+
+> "No soy una mujer de promesas vacías, Ginebra. Detendré esa tormenta."
+> Le doy un apretón firme en el hombro para transmitirle seguridad y me aparto para prepararme para la marcha.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 5+0=5
+
+### [4] DM
+
+  6682 ms
+
+> Ginebra permanece inmóvil mientras retiras la mano, con la mirada fija en el espacio que acabas de dejar vacío. La firmeza de tu gesto no logra disipar la nube de incertidumbre que la envuelve; al contrario, el contraste entre tu determinación y la fragilidad de su situación parece subrayar la imposibilidad de tu afirmación.
+> —La determinación es una virtud, pero no es un escudo contra el destino —responde ella, recuperando una rigidez formal y distante—. Espero que tu voluntad sea tan fuerte como tu palabra, porque si fallas, no solo habrás roto una promesa, sino que habrás dejado que la Casa Roquende se desvanezca en el silencio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4383 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · promise_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 12 — 11/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1764 ms
+
+> "El destino no me dicta mis pasos, Ginebra."
+> Me enderezo y la miro fijamente a los ojos, manteniendo mi postura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+1=18
+
+### [4] DM
+
+  6427 ms
+
+> Ginebra sostiene tu mirada, pero el brillo de acero en sus ojos se quiebra por un instante. Bajo la máscara de rigidez aristocrática, notas una tensión vibrante en sus hombros y un ligero temblor en la comisura de sus labios que no coincide con su tono gélido. No es miedo al destino lo que la consume, sino la presión de una urgencia inmediata; hay una desesperación contenida, como si estuviera contando los segundos de un reloj que solo ella puede escuchar.
+> El silencio se prolonga mientras ella analiza tu postura. Al notar que no retrocedes, exhala un suspiro casi imperceptible y el aire de distancia formal se agrieta, dejando ver a una mujer agotada por el peso de secretos que no puede compartir del todo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2102 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 13 — 12/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  12845 ms
+
+> "Tus ojos dicen algo muy distinto a tus palabras, Ginebra. ¿Qué es eso que te urge tanto?"
+> Me acerco un paso más hacia ella, manteniendo una postura abierta pero firme.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+1=8
+
+### [4] DM
+
+  4754 ms
+
+> Ginebra tensa la mandíbula y desvía la mirada hacia la ventana, donde la luz del atardecer tiñe de rojo el salón. Se mantiene rígida, recuperando esa armadura de indiferencia que la caracteriza, y aunque el temblor de sus labios ha desaparecido, su silencio se vuelve denso, casi tangible.
+> —La urgencia es un lujo que los de mi posición no podemos permitirnos mostrar —responde con una voz que ha recuperado su filo metálico—. Hay piezas en este tablero que se mueven más rápido de lo que yo puedo coordinar, y el tiempo es el único recurso que no puedo comprar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1113 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 14 — 13/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1923 ms
+
+> "No soy una pieza de tu tablero, Ginebra. Soy quien puede mover las piezas que tú no alcanzas."
+> Me mantengo firme frente a ella, observando sus ojos para detectar cualquier rastro de duda o miedo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+1=2  PIFIA
+
+### [4] DM
+
+  5764 ms
+
+> Ginebra arquea una ceja, y una sonrisa gélida, casi imperceptible, curva la comisura de sus labios. Tu intento de leerla falla estrepitosamente; en lugar de detectar fisuras en su armadura, su postura te parece ahora imperturbable, casi arrogante, y el brillo de sus ojos te resulta completamente indescifrable, dejándote con la sensación de que ella tiene un control absoluto sobre la situación.
+> —La confianza es una herramienta útil, siempre que no se confunda con la presunción —dice ella, dando un paso lento hacia ti, mientras el rojo del atardecer proyecta una sombra alargada que parece envolver el espacio entre ambos—. Me interesa tu capacidad, no tu orgullo. Demuéstrame que puedes mover esas piezas y dejaré de verte como un recurso más.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  921 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 15 — 14/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1658 ms
+
+> "No soy un recurso, Ginebra. Soy la persona que hará el trabajo que otros temen."
+> Sostengo su mirada sin retroceder ni un centímetro, manteniendo la espalda recta.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 17+2=19
+
+### [4] DM
+
+  7653 ms
+
+> Ginebra se detiene en seco, a escasos centímetros de ti. El aire se vuelve pesado, cargado con la tensión de dos voluntades chocando en el silencio del atardecer. Sus ojos, que hace un momento parecían muros infranqueables, se dilatan ligeramente mientras procesa la firmeza de tu postura y la seguridad de tu voz. La sonrisa gélida desaparece, sustituida por una expresión de fría curiosidad.
+> —El miedo es un motor eficiente, pero el desprecio por él es una cualidad rara en este círculo —admite ella, retrocediendo un paso para darte espacio, aunque sin romper el contacto visual—. Me gusta esa arrogancia, siempre que esté respaldada por resultados. Considera que has dejado de ser un recurso para convertirte en un activo. Ahora, hablemos de lo que realmente importa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2204 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 16 — 15/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1571 ms
+
+> "No es arrogancia, es claridad. Digamos entonces lo que importa."
+> Mantengo la mirada, sin relajar la postura, mientras espero que empiece a hablar.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 18+1=19
+
+### [4] DM
+
+  7511 ms
+
+> Ginebra sostiene la mirada un instante más, evaluando la ausencia de vacilación en tu postura. Una chispa de genuino respeto cruza sus ojos antes de que recupere su máscara de control. Al analizar sus gestos, notas que su seguridad es absoluta, pero hay una rigidez casi imperceptible en sus hombros y una urgencia contenida en la forma en que entrelaza los dedos; no está simplemente negociando, está operando bajo un cronómetro invisible que la presiona más de lo que admite.
+> —Directo. Me ahorras tiempo y yo valoro el tiempo más que el oro —dice ella, girando sobre sus talones para indicarte que la sigas hacia un rincón más privado del salón—. Ossian ha muerto. Para el mundo, ha sido una tragedia inesperada; para nosotros, es el vacío que debemos llenar antes de que las otras casas se den cuenta de que el tablero ha quedado desprotegido. Necesito que recuperes el Archivo Fundacional antes de que alguien más sepa que existe.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5577 ms · 1 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · competence_shown
+  ✓ delta el_archivo_fundacional · quest.status = active
+  ✓ delta el_archivo_fundacional · quest.next_step_known = True
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+  ✗ entidad inexistente: el_archivo_fundacional
+  ✗ entidad inexistente: el_archivo_fundacional
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 17 — 16/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  4016 ms
+
+> "No me interesan vuestras disputas de poder, pero si ese archivo es la clave para estabilizar este lugar, lo recuperaré."
+> Sigo a Ginebra hacia el rincón privado, manteniendo la guardia.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  6827 ms
+
+> Ginebra se detiene frente a un ventanal que da a los jardines suspendidos, donde la luz del atardecer tiñe de púrpura el mármol. Al escuchar tus palabras, una sonrisa gélida y fugaz aparece en sus labios; no es una sonrisa de alegría, sino la de quien reconoce a alguien que sabe jugar sus cartas. Se gira hacia ti, y en ese instante, el crítico de tu observación desgarra su fachada.
+> Notas que su urgencia no es solo ambición, sino miedo. Sus dedos tamborilean un ritmo errático sobre la seda de su vestido y sus ojos se desvían un segundo hacia la puerta del salón, como si esperara que alguien entrara a interrumpirla o a reclamarle algo. Esa rigidez en sus hombros ha mutado en una tensión eléctrica; Ginebra no solo quiere el Archivo para ganar, necesita recuperarlo desesperadamente antes de que un plazo, uno que ella misma ha impuesto o que le han impuesto, expire.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2290 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 18 — 17/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2678 ms
+
+> "¿A qué le temes tanto, Ginebra? No es ambición lo que te hace temblar, es miedo."
+> Me acerco un paso hacia ella, manteniendo la mirada fija en sus ojos para presionarla.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 19+2=21
+
+### [4] DM
+
+  6693 ms
+
+> Ginebra retrocede instintivamente, golpeando su espalda contra el frío mármol del ventanal. El tamborileo de sus dedos cesa bruscamente y su respiración se vuelve errática, rompiendo la compostura de la nobleza. La máscara de hielo se quiebra por completo, dejando al descubierto una vulnerabilidad cruda; sus ojos, ahora dilatados, recorren tu rostro buscando una señal de piedad o una salida que no existe.
+> —No tienes idea de lo que ocurre en los pasillos de esta casa —susurra con la voz quebrada, bajando la mirada hacia el suelo—. Mis primos... creen que soy débil. He logrado frenarlos una semana, solo una, prometiéndoles que yo me encargaría. Si el Archivo no aparece antes de que ese tiempo expire, no vendrán a preguntarme por qué he fallado; vendrán a sustituirme. Y en la Casa Roquende, la sustitución no es un trámite administrativo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3395 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · threat_made
+  ✓ delta ginebra_roquende · npc.secret_revealed = Ginebra ya ha convencido a dos de sus primos más jóvenes de esperar una semana más antes de actuar por su cuenta
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+  ✗ entidad inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 19 — 18/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1769 ms
+
+> "No soy una herramienta de tus primos, Ginebra. Pero tampoco me gusta ver a alguien acorralado."
+> Doy un paso hacia ella, manteniendo una postura firme pero sin actitud agresiva.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 11+1=12
+
+### [4] DM
+
+  5440 ms
+
+> Ginebra levanta la vista lentamente, procesando tus palabras. Sus hombros, que hasta hace un momento estaban tensos y contraídos, caen ligeramente, aunque no del todo. Se queda observando tu postura, analizando el espacio que has dejado entre ambos, y un destello de duda cruza su expresión mientras intenta descifrar si tu gesto de empatía es genuino o una táctica para ganar terreno.
+> La joven noble exhala un suspiro tembloroso y se desliza unos centímetros por el mármol hasta quedar sentada en el alféizar del ventanal, abrazándose las rodillas. Te mira con una mezcla de gratitud y escepticismo, manteniendo el silencio mientras el eco de sus propias palabras parece seguir flotando en la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2445 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · ideal_honored
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 20 — 19/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1554 ms
+
+> "No busco ganar terreno, Ginebra. Solo busco la verdad."
+> Me mantengo en mi sitio, observándola con calma, intentando descifrar qué es lo que realmente la asusta de todo esto.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+1=3
+
+### [4] DM
+
+  5356 ms
+
+> Ginebra desvía la mirada hacia el jardín, donde las sombras de los cipreses se alargan con la caída de la tarde. Sus dedos aprietan la tela de su vestido, arrugándola con fuerza, pero su rostro permanece como una máscara de porcelana, impasible y distante. El silencio se prolonga, denso, mientras ella se encoge más sobre sí misma, refugiándose en el espacio reducido del alféizar.
+> Cuando vuelve a mirarte, sus ojos están nublados y su expresión es una amalgama de cansancio y desconfianza. No hay ninguna grieta en su lenguaje corporal que te permita vislumbrar la naturaleza exacta de su miedo; se mantiene cerrada, como un libro cuyos cierres de hierro siguen intactos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  945 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 21 — 20/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2875 ms
+
+> "No tienes que decir nada ahora, pero no puedes esconderte para siempre en ese rincón."
+> Me acerco un paso, manteniendo una distancia respetuosa, e intento leer su expresión para comprender qué es lo que realmente la aterra.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+1=5
+
+### [4] DM
+
+  6941 ms
+
+> Ginebra no se mueve ni un milímetro mientras te acercas, pero sus pupilas se dilatan ligeramente, reaccionando a tu proximidad como un animal acorralado. A pesar de tu intento de analizarla, su rostro sigue siendo una superficie lisa y gélida; la máscara de porcelana no muestra ni una fisura, y el cansancio que emanaba antes ahora parece fundirse en una neutralidad absoluta y blindada.
+> Ella exhala un suspiro lento, casi imperceptible, y vuelve a clavar la vista en el jardín, ignorando tu comentario sobre su refugio. El silencio regresa, interrumpido únicamente por el viento que agita las copas de los cipreses, dejando cualquier rastro de su miedo oculto tras los cierres de hierro de su postura.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1031 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 22 — 21/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1657 ms
+
+> "No tienes que fingir que no hay nadie aquí."
+> Me sitúo justo en su línea de visión, bloqueando el acceso al jardín para obligarla a mirarme.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+1=8
+
+### [4] DM
+
+  5309 ms
+
+> Ginebra no se aparta, pero sus mandíbulas se tensan mientras te obligas a entrar en su campo visual. Te mira fijamente, con esos ojos gélidos que parecen buscar una grieta en tu determinación, aunque su expresión permanece imperturbable. No hay un gesto de sorpresa, ni un parpadeo traicionero que sugiera que alguien más acecha entre las sombras del jardín o tras los muros.
+> —Tu insistencia es tan agotadora como tu falta de tacto —responde con una voz seca, desprovista de cualquier matiz emocional—. No hay nadie, y el hecho de que necesites jugar a los bloqueos para obtener una respuesta dice más de tu inseguridad que de mi supuesta teatralidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1406 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 23 — 22/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2540 ms
+
+> "Llama inseguridad a mi insistencia, si quieres, pero prefiero ser agotadora que mentirosa."
+> Me mantengo firme frente a ella, sosteniéndole la mirada sin retroceder ni un centímetro.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+1=13
+
+### [4] DM
+
+  5846 ms
+
+> Ginebra sostiene la mirada, y por un instante, el aire entre ambos se vuelve eléctrico. No retrocede, pero el músculo de su mejilla vibra levemente, una grieta casi imperceptible en su máscara de hielo. Sus ojos recorren tu rostro con una frialdad analítica, procesando la provocación con una calma que resulta casi artificial.
+> —La verdad es un recurso caro, y tú estás intentando pagarlo con monedas de cobre —sentencia, aunque el tono ya no es tan seco; hay una chispa de reconocimiento, quizá incluso un respeto reticente, en la forma en que te sostiene el desafío. Sin embargo, su postura sigue siendo un muro infranqueable; no hay señales evidentes de nerviosismo ni indicios de que oculte algo inmediato tras ella.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2120 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 24 — 23/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1228 ms
+
+> "No busco comprar tu verdad, sino ver si tienes el valor de decirla."
+> Me mantengo firme, sosteniendo su mirada sin parpadear para medir su reacción.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+1=2  PIFIA
+
+### [4] DM
+
+  5422 ms
+
+> Ginebra arquea una ceja, y la chispa de respeto se extingue tan rápido como había nacido. En su lugar, aparece una expresión de genuino hastío, como quien observa a un niño jugando a ser soldado con una espada de madera. Se inclina ligeramente hacia adelante, invadiendo tu espacio personal, y su mirada ahora es una hoja de acero que corta cualquier pretensión de superioridad.
+> —El valor es una virtud para los que no tienen nada que perder —suelta con una sonrisa gélida que no llega a sus ojos—. Tu insistencia ha dejado de ser intrigante para volverse tediosa. Me temo que has confundido la firmeza con la terquedad, y eso, en mi mundo, es una debilidad fatal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  818 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 25 — 24/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2128 ms
+
+> "La terquedad es lo que mantiene en pie a quien ya lo ha perdido todo."
+> Mantengo la mirada, sin retroceder ni un centímetro ante su cercanía. {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 2+2=4
+
+### [4] DM
+
+  3814 ms
+
+> Ginebra no parpadea. Tu respuesta, lejos de amedrentarla, parece confirmarle la tesis que acaba de exponer. Una risa seca, casi imperceptible, escapa de sus labios mientras se endereza lentamente, recuperando la distancia física pero manteniendo una superioridad gélida.
+> —Entonces eres exactamente lo que he dicho: alguien sin nada que perder —sentencia con un tono de desdén absoluto—. Y eso te hace predecible. La desesperación no es una herramienta de presión, es un grito de auxilio disfrazado de orgullo.
+> Se da la vuelta, dándote la espalda con una indiferencia total, y comienza a alejarse hacia el centro de la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  846 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 26 — 25/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1798 ms
+
+> "La predecibilidad es un refugio para quienes temen lo desconocido, Ginebra."
+> Me adelanto rápidamente para bloquearle el paso, interponiéndome en su camino.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 15+2=17
+
+### [4] DM
+
+  5934 ms
+
+> Ginebra se detiene en seco, el borde de su vestido rozando apenas tus botas. El impacto de tu movimiento brusco la obliga a clavar la mirada en ti; la máscara de indiferencia gélida se resquebraja por un instante, dejando ver una chispa de sorpresa y una tensión súbita en su mandíbula. El aire entre ambos se vuelve pesado, cargado con la electricidad de un desafío que ya no puede ignorar.
+> Se mantiene rígida, con los hombros tensos, mientras procesa que has roto la distancia de seguridad que ella misma había impuesto. Aunque sus ojos siguen siendo fríos, ya no hay desdén en ellos, sino una cautela vigilante. No retrocede, pero tampoco se atreve a dar un paso más hacia adelante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2980 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 27 — 26/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1645 ms
+
+> "No me intimida tu silencio, Ginebra. Dime la verdad sobre lo que ocurre aquí."
+> Sostengo la mirada sin retroceder ni un centímetro, buscando cualquier señal de duda o miedo en su rostro.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+1=2  PIFIA
+
+### [4] DM
+
+  4552 ms
+
+> Ginebra sostiene tu mirada, y en el silencio que sigue a tu exigencia, interpretas que sus pupilas dilatadas y el leve temblor de sus labios son señales inequívocas de un terror profundo, casi paralizante. Estás convencido de que se siente pequeña y vulnerable ante ti, y que su fachada de frialdad es solo un escudo desesperado para ocultar que está a punto de romperse y confesarlo todo.
+> Ella parpadea lentamente, su expresión volviendo a cerrarse como una persiana de hierro. No dice nada, pero una comisura de sus labios se eleva en un gesto imperceptible, casi una sonrisa de incredulidad, mientras vuelve a recuperar la compostura y te observa con una calma renovada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1649 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 28 — 27/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1947 ms
+
+> "No te equivoques. No me importa tu silencio, sino la verdad."
+> Doy un paso hacia ella, invadiendo su espacio personal para recuperar la presión.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 13+2=15
+
+### [4] DM
+
+  7999 ms
+
+> Ginebra no retrocede cuando acortas la distancia; permanece anclada al suelo, aunque el aire entre ambos se vuelve denso y eléctrico. Al sentir tu presencia invadiendo su espacio, el ligero temblor de sus manos cesa y sus hombros se tensan, transformando el miedo en una rigidez defensiva. Sus ojos, que antes parecían vacíos, ahora destellan con una chispa de reconocimiento ante la fuerza bruta de tu voluntad.
+> —La verdad es un lujo que no todos pueden costear —responde con una voz que ha recuperado su firmeza, aunque el tono es ahora más bajo, casi un susurro—. Pero reconozco que no eres el tipo de persona que acepta un "no" como respuesta. No puedo darte el Archivo, no está en mis manos, pero puedo decirte que Ossian no murió por accidente; fue una pieza movida en un tablero que aún no alcanzas a ver.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4248 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · threat_made
+  ✓ delta ginebra_roquende · npc.knowledge = Ossian no murió por accidente; fue una pieza movida en un tablero
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+  ✗ entidad inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 29 — 28/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1660 ms
+
+> "No me interesan los tableros ni los juegos de poder, sino la verdad sobre Ossian."
+> Sigo presionando mi espacio personal contra ella, buscando cualquier gesto que delate que miente.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  6865 ms
+
+> Ginebra mantiene la mirada, pero el cuerpo no puede sostener la mentira con la misma fuerza que su voz. Bajo la presión de tu proximidad, el ritmo de su respiración se vuelve irregular y un tic casi imperceptible agita la comisura de su labio. No hay rastro de engaño en sus palabras sobre Ossian, pero hay una omisión deliberada, un peso que carga en el pecho y que intenta ocultar tras esa fachada de rigidez.
+> La chispa de reconocimiento en sus ojos se transforma en una mezcla de urgencia y resignación. Al notar que has visto a través de su máscara, exhala un suspiro tembloroso que rompe la tensión eléctrica entre ambos.
+> —Está bien... —murmura, bajando la guardia—. No miento sobre Ossian. Pero hay otros, sangre de mi sangre, que no tienen mi paciencia ni mi cautela. Están esperando una señal para moverse, y si no encontramos respuestas pronto, el tablero se romperá antes de que podamos entenderlo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  692 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 30 — 29/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1437 ms
+
+> "Habla claro. ¿Quiénes son esos otros y qué señal están esperando?"
+> Me mantengo firme frente a ella, sin retroceder, obligándola a sostener mi mirada mientras exijo la verdad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+1=5
+
+### [4] DM
+
+  5512 ms
+
+> Ginebra se encoge ligeramente, sintiendo el peso de tu mirada como una sentencia. Sus ojos evitan los tuyos por un segundo, vagando hacia la puerta antes de regresar a tu rostro con una expresión de derrota. El tic de su labio desaparece, reemplazado por una línea tensa y amarga.
+> —Mis primos —responde en un susurro, la voz ahora despojada de cualquier artificio—. Los más jóvenes. Creen que la justicia es un incendio que debe consumirlo todo y que la cautela es solo otra palabra para la cobardía. Están esperando una señal, cualquier indicio de que Ossian no será juzgado por los medios correctos, para tomar la justicia por su mano. He logrado ganar tiempo, pero el reloj sigue corriendo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5110 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta ginebra_roquende · npc.secret_revealed = Ginebra ya ha convencido a dos de sus primos más jóvenes de esperar una semana más antes de actuar por su cuenta
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 31 — 30/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1463 ms
+
+> "La justicia ciega no es justicia, es venganza."
+> Cruzo los brazos y la observo fijamente, intentando descifrar si oculta algo más sobre sus primos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+1=10
+
+### [4] DM
+
+  3502 ms
+
+> Ginebra asiente lentamente ante tus palabras, absorta en la gravedad de la sentencia. Mantienes la mirada fija en ella, buscando cualquier grieta en su relato, cualquier vacilación que sugiera que hay más piezas en este tablero de lo que ha admitido.
+> Su expresión permanece imperturbable, una máscara de resignación y lealtad a su linaje. No hay tics nerviosos, ni desvíos sospechosos en su mirada; su postura es la de alguien que ha entregado la verdad más dolorosa que podía ofrecerte en este momento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  977 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 32 — 31/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1680 ms
+
+> "Tu lealtad es admirable, pero la verdad suele ser más compleja que la resignación."
+> Sigo observándola fijamente, intentando detectar cualquier señal de que oculta información relevante.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+1=2  PIFIA
+
+### [4] DM
+
+  5354 ms
+
+> Ginebra te sostiene la mirada, pero tu insistencia y el escrutinio prolongado comienzan a generar un efecto contrario al deseado. En el silencio tenso, interpretas erróneamente un leve parpadeo y la rigidez de sus hombros como una señal clara de culpabilidad o un intento desesperado de ocultar un secreto oscuro. Estás convencido de que su máscara se resquebraja y de que hay una mentira palpable suspendida en el aire entre ambos.
+> Ella frunce el ceño, confundida por la intensidad de tu juicio. "¿Buscas algo más en mis ojos que ya te he entregado con palabras?", pregunta con un tono que ahora suena genuinamente herido, aunque tú lo percibas como una maniobra defensiva para desviar la atención.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  981 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 33 — 32/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1534 ms
+
+> "No me engañes con esa mirada herida. Sé que ocultas algo."
+> Me cruzo de brazos y doy un paso hacia ella, manteniendo la presión.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 10+2=12
+
+### [4] DM
+
+  5386 ms
+
+> Ginebra retrocede un paso, golpeando ligeramente la madera de la mesa trasera. Sus ojos se abren con sorpresa y una chispa de indignación cruza su rostro mientras se endereza, recuperando la compostura. El gesto de superioridad y la presión física no logran doblegarla; al contrario, el brillo de lealtad hacia su linaje endurece su mandíbula.
+> —No sé qué clase de juegos psicológicos juegas ni qué sombras proyectas sobre mí —responde con voz gélida y firme, manteniendo la distancia—. He sido clara y honesta. Si tu desconfianza es mayor que tu sentido común, quizá no seas la persona que necesito a mi lado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2012 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 34 — 33/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1812 ms
+
+> "La honestidad no se demuestra con palabras, sino con hechos. Y tus hechos son borrosos."
+> Doy un paso atrás para darle espacio, pero mantengo la mirada fija en ella, analizando cada gesto de su rostro.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+1=3
+
+### [4] DM
+
+  4636 ms
+
+> Ginebra no parpadea. Al recuperar el espacio físico, su postura se vuelve más rígida, casi marcial, y cruza los brazos sobre el pecho en un gesto de cierre. La frialdad de su voz persiste, aunque el ligero temblor en sus dedos, que aprietan la tela de sus mangas, delata una tensión que sus palabras intentan ocultar.
+> Su expresión permanece como una máscara de porcelana, imperturbable y hermética. No hay un tic, una mirada esquiva ni un cambio en el ritmo de su respiración que revele grietas en su discurso o alguna intención oculta; solo una determinación gélida que parece blindar cualquier rastro de duda.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  809 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 35 — 34/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1943 ms
+
+> "Tus palabras son gélidas, pero tus manos dicen otra cosa."
+> Doy un paso hacia ella, manteniendo la mirada fija en sus ojos para intentar traspasar esa máscara.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+1=2  PIFIA
+
+### [4] DM
+
+  4472 ms
+
+> Ginebra reacciona al paso acercándose con un movimiento brusco, interpretando el gesto como una invasión agresiva de su espacio personal. Sus ojos se entrecierran y la rigidez de su postura se transforma en una actitud defensiva y hostil, mientras que el temblor de sus manos, que antes parecía nerviosismo, ahora parece la chispa de una ira contenida.
+> —No confundas mi tensión con debilidad, ni tu curiosidad con perspicacia —sentencia con un tono cortante, retrocediendo un paso para marcar una distancia insalvable—. Estás viendo fantasmas donde solo hay disciplina. No vuelvas a analizarme como si fuera una pieza de estudio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  888 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 36 — 35/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2337 ms
+
+> "No busco piezas de estudio, sino respuestas. Y la disciplina no suele reaccionar con tanta rabia a un simple paso."
+> Me detengo en seco y la miro fijamente, sin retroceder, manteniendo una postura neutral pero firme.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+1=3
+
+### [4] DM
+
+  4719 ms
+
+> Ginebra sostiene la mirada, con la mandíbula apretada y los nudillos blancos de tanto presionar los costados de su vestido. El aire entre ambos vibra con una tensión eléctrica; ella no parpadea, pero el ritmo acelerado de su respiración delata que su compostura es un muro construido sobre cimientos frágiles.
+> —La rabia es la respuesta natural ante la impertinencia —responde ella, aunque su voz suena ahora más gélida que furiosa—. No soy un acertijo que debas resolver para sentirte superior. Si quieres respuestas, haz la pregunta correcta o deja de estorbar mi camino.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1559 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 37 — 36/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1756 ms
+
+> "No busco sentirme superior, sino saber la verdad. ¿Qué es lo que realmente ocurre en este lugar?"
+> Me quedo frente a ella, manteniendo una postura firme pero sin buscar la confrontación física.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+1=9
+
+### [4] DM
+
+  5304 ms
+
+> Ginebra exhala un suspiro lento, y la rigidez de sus hombros cede apenas unos milímetros. Sus ojos recorren tu rostro, buscando alguna señal de burla o engaño, pero al no encontrarla, el gélido muro de su voz se agrieta, dejando pasar un matiz de agotamiento.
+> —La verdad es que este lugar se está desmoronando bajo el peso de mentiras que ya nadie recuerda cómo sostener —dice en un susurro, bajando la mirada hacia el tejido de su vestido—. Hay corrientes moviéndose en las sombras, ambiciones que no perdonan errores. Si realmente quieres saber, empieza por entender que aquí, la lealtad es la moneda más cara y la más falsa de todas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  912 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 38 — 37/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2007 ms
+
+> "No me interesan las monedas falsas, sino la verdad que intentáis ocultar."
+> La miro fijamente, intentando descifrar qué es exactamente lo que la agota y qué sombras menciona.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+1=14
+
+### [4] DM
+
+  4278 ms
+
+> Ginebra mantiene la mirada, pero el ligero temblor de sus dedos contra la tela del vestido la traiciona. No hay rastro de malicia en su cansancio; es el agotamiento de quien carga con una responsabilidad que supera sus fuerzas, una mezcla de miedo y determinación. Se percibe que no está sola en su lucha, pero que tampoco confía plenamente en quienes deberían ser sus aliados naturales.
+> —La verdad es un lujo que pocos pueden permitirse sin riesgo de perder la cabeza —responde ella, y el tono de su voz ya no es gélido, sino cargado de una urgencia contenida—. Hay quienes en mi propia familia creen que la paciencia es una debilidad. Estoy ganando tiempo, pero el reloj no se detiene para nadie.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1779 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 39 — 38/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1941 ms
+
+> "Dime qué es lo que te asusta tanto. Si buscas ganar tiempo, quizá yo sea la herramienta que necesitas para detener ese reloj."
+> Me inclino ligeramente hacia ella, manteniendo una postura respetuosa pero firme.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+1=13
+
+### [4] DM
+
+  4169 ms
+
+> Ginebra suspira, y el aire escapa de sus pulmones como si hubiera estado conteniendo la respiración durante años. Sus dedos dejan de tamborilear sobre la tela y se cierran en un puño tenso. Te observa con una intensidad renovada, buscando en tu mirada alguna grieta que sugiera traición o ingenuidad, pero solo encuentra esa firmeza respetuosa.
+> —Me asusta que la impaciencia de los míos provoque una chispa que consuma todo lo que queda de mi casa antes de que yo pueda asegurar el legado —confiesa en un susurro, acercándose lo suficiente para que solo tú puedas oírla—. No necesito a alguien que solo sepa blandir una espada, necesito a alguien que se mueva en las sombras donde mi nombre no me permite entrar. Si realmente puedes ser esa herramienta, el precio de mi confianza será tu discreción absoluta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1110 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 40 — 39/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1717 ms
+
+> "Tengo el acero para proteger lo que sea necesario, pero mi palabra es tan firme como mi espada. No soy una espía, pero sé guardar un secreto."
+> La miro fijamente, manteniendo la postura, y trato de leer si hay algo más detrás de su miedo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+1=5
+
+### [4] DM
+
+  2662 ms
+
+> Ginebra sostiene la mirada, pero sus ojos no se quedan quietos; se desplazan rápidamente por tu rostro, analizando cada músculo. A pesar de su confesión y la cercanía, hay una barrera invisible que no cede. Su postura es rígida y el tono de su voz, aunque bajo, mantiene esa pátina de mando que no puede desprenderse del todo.
+> La mujer no revela ninguna grieta adicional ni señales de duda sobre tu lealtad. Se limita a asentir lentamente, manteniendo una expresión neutral y cautelosa, como quien evalúa una pieza de equipo antes de decidir si es apta para el campo de batalla.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  817 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 41 — 40/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1418 ms
+
+> "No soy una pieza de equipo, Ginebra. Soy alguien que sabe lo que es perderlo todo."
+> La miro fijamente, tratando de leer qué es exactamente lo que busca en mí.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+1=14
+
+### [4] DM
+
+  3460 ms
+
+> Ginebra no retrocede ante la mirada, pero el músculo de su mandíbula se tensa imperceptiblemente. Por un instante, la máscara de mando flaquea y el brillo de sus ojos cambia; ya no busca una herramienta, sino una confirmación de que el dolor que describes es real y no una táctica de manipulación.
+> Su expresión se suaviza apenas un grado, aunque su espalda permanece recta como una lanza. Te observa en silencio durante unos segundos, procesando la declaración, y un rastro de respeto genuino, aunque contenido, asoma en la comisura de sus labios antes de recuperar su compostura habitual.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1700 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 42 — 41/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1867 ms
+
+> "No busco vuestra piedad, sino que entendáis que el sufrimiento no es una moneda de cambio."
+> Sostengo la mirada, manteniendo una postura firme pero sin agresividad, buscando cualquier rastro de humanidad en ella.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 18+1=19
+
+### [4] DM
+
+  3885 ms
+
+> Ginebra exhala un suspiro lento, casi imperceptible, y el rigor de su postura cede un milímetro. Sus ojos, que antes escudriñaban buscando debilidades, ahora reflejan una comprensión sombría; hay una chispa de reconocimiento en su mirada, como si tus palabras hubieran resonado con una verdad que ella misma ha tenido que aceptar en el silencio de su propia Casa.
+> El silencio que sigue no es gélido, sino reflexivo. Ginebra desvía la vista hacia un punto indeterminado de la estancia, y notas que el rastro de respeto anterior se ha asentado en una resolución tranquila. Ya no te mira como a alguien que necesita ser doblegado, sino como a un igual que ha caminado por el mismo fuego.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1787 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · ideal_honored
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 43 — 42/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1517 ms
+
+> "Dime la verdad sobre lo que ocurre aquí, Ginebra. Sin adornos ni protocolos de Casa."
+> Me mantengo firme, sosteniendo su mirada para evaluar si su resolución es sincera.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+1=2  PIFIA
+
+### [4] DM
+
+  5764 ms
+
+> Ginebra se endereza, y el movimiento es tan brusco que el roce de su seda contra el cuero de su jubón suena como un latigazo en el silencio de la estancia. Sus ojos se entrecierran y la chispa de reconocimiento desaparece, sustituida por una expresión de fría incredulidad; interpreta tu insistencia no como una búsqueda de honestidad, sino como una falta de tacto ofensiva o, peor aún, como un intento burdo de manipularla.
+> —¿Sin protocolos? —su voz ha recuperado el filo del acero, cortante y distante—. Olvidabas, por un momento, que el protocolo es lo único que evita que este lugar se convierta en un matadero. Creía que habías comprendido la naturaleza de nuestra posición, pero veo que tu juicio es tan nublado como el de los que intentan jugar a ser reyes sin conocer el peso de la corona.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3156 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · ideal_violated
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 44 — 43/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2046 ms
+
+> "El protocolo no detiene la sangre, solo la oculta bajo la seda."
+> Sostengo su mirada sin retroceder, manteniendo una postura firme y recta.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 14+0=14
+
+### [4] DM
+
+  3570 ms
+
+> Ginebra mantiene la mirada, tensa como una cuerda de arco, pero el silencio que sigue a tus palabras empieza a pesar más que su indignación. Sus fosas nasales se dilatan y el rictus de desprecio en sus labios flaquea, transformándose en una línea fina de duda. La mención de la sangre oculta parece golpear una fibra sensible, evocando una realidad que el protocolo no puede borrar.
+> Suspira, y el aire sale de sus pulmones con un sonido cansado que rompe la rigidez de sus hombros. Se inclina ligeramente hacia adelante, bajando la voz hasta convertirla en un susurro conspirador que llena el espacio entre ambos.
+> —Tienes una lengua peligrosa —admite, aunque su tono ya no es cortante, sino cargado de una urgencia contenida—. Tienes razón en que la seda no detiene el acero, pero es lo único que nos permite hablar sin que alguien decida que somos traidores antes del amanecer.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2878 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 45 — 44/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1283 ms
+
+> "Dime entonces qué es lo que se oculta bajo esa seda."
+> Me mantengo firme, sosteniendole la mirada mientras espero que hable.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 16+1=17
+
+### [4] DM
+
+  6851 ms
+
+> Ginebra desvía la mirada un instante, observando los alrededores para asegurarse de que ninguna sombra tenga oídos, antes de volver a anclar sus ojos en los tuyos. Hay una chispa de desesperación en su iris que no había mostrado antes; el barniz de nobleza se ha agrietado, dejando ver a alguien que carga con un peso superior a sus fuerzas.
+> —Mi familia se desmorona desde dentro —confiesa en un hilo de voz, mientras sus dedos aprietan con fuerza el tejido de su vestido—. Ossian no era solo un obstáculo, era el ancla de una podredumbre que amenaza con arrastrarnos a todos. Hay quienes en mi propia sangre ya han perdido la paciencia y están dispuestos a quemar la Casa Roquende solo para ver quién sobrevive a las cenizas. No busco solo justicia, busco tiempo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3206 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · secret_entrusted
+  ✓ delta ginebra_roquende · npc.knowledge = Maelis conoce la inestabilidad interna de la Casa Roquende y la desesperación de Ginebra
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+  ✗ entidad inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 46 — 45/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1271 ms
+
+> "Si hay traidores entre los vuestros, el tiempo es un lujo que no tenéis."
+> Pongo una mano sobre el pomo de mi espada y la miro fijamente, analizando su lenguaje corporal.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+1=5
+
+### [4] DM
+
+  3305 ms
+
+> Ginebra se tensa ante el movimiento de tu mano hacia la espada. No retrocede, pero sus hombros se elevan y su respiración se vuelve superficial, atrapada en la garganta. Sus ojos se clavan en los tuyos, reflejando una mezcla de urgencia y una fragilidad que intenta, sin éxito, ocultar bajo una postura rígida.
+> A pesar de su confesión, mantiene una barrera invisible. Sus gestos son erráticos y su mirada huye hacia los flancos cada pocos segundos; hay una tensión en su mandíbula y un temblor casi imperceptible en sus labios que sugieren que oculta algo más, o que el miedo que siente es mucho más profundo de lo que sus palabras admiten.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  828 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 47 — 46/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  3190 ms
+
+> "No voy a desenvainar si me dices la verdad completa. Tu miedo es evidente, Ginebra, pero el silencio es más peligroso."
+> Suelto la empuñadura de mi espada y la observo fijamente, tratando de descifrar qué es lo que realmente la aterra.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 11+1=12
+
+### [4] DM
+
+  3004 ms
+
+> Ginebra exhala un suspiro tembloroso cuando siente que la presión sobre el acero desaparece. Sus hombros caen ligeramente, pero la inquietud no la abandona; sigue lanzando miradas furtivas hacia los alrededores, como si esperara que alguien irrumpiera en cualquier momento para interrumpir la conversación.
+> A pesar de su alivio, mantiene una expresión hermética. Sus ojos se humedecen y aprieta los puños contra el vestido, pero no hay ninguna señal clara de que esté a punto de quebrarse o de revelar un secreto adicional. El miedo es real y palpable, pero sus labios permanecen sellados, guardando cualquier confesión más profunda bajo una capa de pánico y reserva.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  762 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 48 — 47/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1486 ms
+
+> "No tienes por qué temblar. No dejaré que nadie irrumpa aquí mientras yo esté delante."
+> Me pongo en guardia, vigilando la entrada para darle seguridad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+1=2  PIFIA
+
+### [4] DM
+
+  5606 ms
+
+> Ginebra te mira fijamente, pero el gesto de protección no parece surtir el efecto deseado. Al contrario, el hecho de que te pongas en guardia y vigiles la entrada con tanta tensión parece confirmarle que el peligro es inminente y real. Sus ojos se abren con más espanto y retrocede un paso, convencida ahora de que el entorno es mucho más hostil de lo que imaginaba.
+> La mujer se abraza a sí misma, envolviéndose en el tejido de su vestido mientras comienza a respirar de forma errática. El silencio que cae entre ambos se vuelve denso, cargado de una sospecha instintiva; para ella, tu actitud no es la de un guardián, sino la señal de que alguien ya está acechando en las sombras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  995 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 49 — 48/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1755 ms
+
+> "Tranquila, Ginebra. No hay nadie aquí ahora mismo, pero no pienso dejar que nada te toque."
+> Bajo ligeramente la guardia para no parecer una amenaza, aunque sigo vigilando el perímetro, e intento calmarla con un tono firme y seguro.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 12+0=12
+
+### [4] DM
+
+  3673 ms
+
+> Ginebra parpadea, procesando tus palabras mientras observa cómo relajas la postura. El pánico no desaparece del todo, pero la firmeza de tu voz actúa como un ancla en medio de su crisis; sus hombros bajan unos centímetros y la respiración, aunque todavía agitada, comienza a recuperar un ritmo más estable.
+> —No... no lo sé —susurra, apretando los dedos contra la tela de su vestido—. Todo se siente tan frágil ahora. Pero te creo. Por favor, no te alejes demasiado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1591 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · bond_target_protected
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 50 — 49/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1457 ms
+
+> "No me iré lejos. Quédate aquí y trata de recuperar el aliento."
+> Le doy una palmada breve y firme en el hombro para darle seguridad y luego miro a mi alrededor buscando cualquier rastro de lo que haya causado este caos.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+3=9
+
+### [4] DM
+
+  3404 ms
+
+> Ginebra asiente débilmente, dejándose caer contra la pared más cercana mientras se abraza a sí misma, intentando seguir tu instrucción de respirar. Sus ojos, aún empañados, no se apartan de ti, aferrándose a tu presencia como el único punto estable en la habitación.
+> El entorno es un caos de telas rasgadas y muebles volcados que ocultan la mayor parte del suelo. A simple vista, el desorden parece fruto de una lucha apresurada o de una búsqueda frenética, pero no logras distinguir ninguna huella clara, rastro de sangre o pista evidente que revele el origen exacto del disturbio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  824 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 51 — 50/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2530 ms
+
+> "Quédate tranquila. No te voy a dejar sola."
+> Me acerco a los muebles volcados e intento apartar los escombros para ver qué buscaban exactamente.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 13+-1=12
+
+### [4] DM
+
+  3921 ms
+
+> Ginebra exhala un suspiro tembloroso y cierra los ojos un instante, hundiendo el rostro en sus brazos mientras se desliza lentamente por la pared hasta quedar sentada en el suelo. El silencio de la habitación solo es interrumpido por su respiración errática y el roce de las telas que desplazas.
+> Al apartar los muebles y remover los restos de ropa y adornos, encuentras que el desorden es superficial. Los cajones han sido vaciados y el contenido esparcido con violencia, pero no hay señales de que alguien haya buscado algo específico en los rincones o bajo las tablas del suelo. El caos parece más un intento de intimidar o una búsqueda desesperada y torpe que una operación profesional de rastreo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  917 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 52 — 51/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2281 ms
+
+> "Tranquilízate, Ginebra. No estás sola."
+> Me acerco a ella y le pongo una mano en el hombro para darle apoyo, mientras observo con detenimiento el tipo de desorden en los cajones.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 6+-1=5
+
+### [4] DM
+
+  2983 ms
+
+> Ginebra se tensa ligeramente al sentir el contacto en su hombro, pero no se aparta. Abre los ojos, que lucen apagados y enrojecidos, y te mira con una mezcla de vulnerabilidad y gratitud, aunque su respiración sigue siendo irregular. No dice nada, pero se apoya inconscientemente en tu presencia, permitiendo que el silencio de la estancia los envuelva.
+> Al analizar los cajones, la escena se confirma como un despliegue de pura rabia. Los objetos no han sido apartados para revisar el fondo, sino lanzados al aire; las joyas están pisoteadas y las sedas rasgadas. No hay un patrón, ni una lógica de búsqueda, solo la huella de alguien que quería destruir la paz de este lugar más que encontrar un secreto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1619 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 53 — 52/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1911 ms
+
+> "Tranquila. No te dejaré sola en esto."
+> Sigo examinando los restos de los cajones, buscando cualquier objeto que no encaje con el caos o que haya sido ignorado deliberadamente.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+-1=17
+
+### [4] DM
+
+  4189 ms
+
+> Ginebra exhala un suspiro tembloroso y cierra los ojos un instante, dejando que tus palabras actúen como un ancla en medio del desastre. Se mantiene en silencio, aunque el ligero temblor de sus manos comienza a ceder mientras observa cómo te concentras en los restos del mobiliario.
+> Entre el tejido desgarrado de una estola de seda y el brillo roto de un espejo de mano, detectas algo que no encaja con la violencia del resto de la habitación. En el fondo de un cajón parcialmente desprendido, oculto bajo un doble fondo de madera que ha sido ligeramente desplazado pero no arrancado, asoma la esquina de un sobre de pergamino grueso, sellado con una cera oscura que no coincide con el escudo de la Casa Roquende. El objeto ha permanecido intacto, ignorado por quienquiera que haya provocado el caos, quedando resguardado en la única zona del mueble que no fue pisoteada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3901 ms · 1 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · promise_made
+  ✓ creación item: Sobre de pergamino sellado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item Sobre de pergamino sellado
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 54 — 53/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  16 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2321 ms
+
+> "Parece que alguien quería que esto se quedara aquí."
+> Saco el sobre del cajón con cuidado y examino el sello de cera oscura.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+-1=3
+
+### [4] DM
+
+  9463 ms
+
+> Tus dedos rozan el pergamino, pero al intentar extraerlo con cuidado, el papel se engancha en una astilla del doble fondo desplazado. El tirón brusco hace que el sobre se deslice torpemente, golpeando el borde del cajón y provocando que el sello de cera oscura se agriete y se desprenda parcialmente, dejando el contenido expuesto pero sin revelarte ningún símbolo claro ni patrón reconocible en el lacre roto.
+> Ginebra se inclina hacia adelante, con la respiración contenida, observando el sobre con una mezcla de curiosidad y temor. "¿Qué es? ¿Crees que... pertenece a quien hizo esto?", pregunta en un susurro, mientras sus ojos viajan nerviosos hacia la puerta de la habitación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1273 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 55 — 54/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  16 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1411 ms
+
+> "No lo sé, pero ya no tiene secretos."
+> Sujeto el pergamino con firmeza y lo despliego por completo para leer su contenido.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+-1=0  PIFIA
+
+### [4] DM
+
+  4178 ms
+
+> Al desplegar el pergamino con brusquedad, el papel, ya debilitado por la humedad y el maltrato del cajón, se rasga violentamente justo por el centro. El sonido del desgarro es seco, como un chasquido, y el documento queda dividido en dos fragmentos irregulares que dejan el mensaje principal totalmente ilegible, borrando las palabras clave y los nombres que podrían haber dado sentido al texto.
+> Ginebra retrocede un paso, soltando un pequeño jadeo de frustración y horror. Se lleva una mano a la boca mientras observa los trozos de papel inútiles en tus manos. "¿Lo has... lo has roto?", murmura con la voz quebrada, mirando ahora la puerta con una urgencia renovada, como si el accidente hubiera despertado algún peligro invisible en la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2967 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: item.status
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 56 — 55/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  16 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2208 ms
+
+> "Maldita sea... No ha sido mi intención."
+> Sostengo los trozos con cuidado, intentando encajar los bordes rasgados para ver si algo es rescatable.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+-1=6
+
+### [4] DM
+
+  5788 ms
+
+> Los bordes del pergamino, deshilachados y húmedos, se resisten a encajar. Cada intento de unir las piezas hace que el papel se doble o se desgarre un poco más, creando un rompecabezas de fibras blancas y manchas de tinta que no forman ninguna palabra coherente. Lo que queda es un caos de trazos truncados y espacios vacíos donde antes residía la información crucial.
+> Ginebra te observa con los ojos muy abiertos, el pánico empezando a nublar su expresión. No mira el papel, sino que mantiene la vista fija en el pasillo exterior, tensando los hombros. "No importa la intención ahora", sisea en un susurro urgente, "importa que no tenemos el mensaje y que el tiempo se nos acaba. ¡Tenemos que salir de aquí ya!".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3692 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: item.status
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 57 — 56/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  16 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2667 ms
+
+> "No nos iremos sin saber qué decía esto."
+> Suelto el pergamino y me acerco a Ginebra, intentando leer su lenguaje corporal para entender a qué le teme exactamente.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+1=15
+
+### [4] DM
+
+  5446 ms
+
+> Ginebra retrocede un paso, casi instintivamente, cuando te acercas. Sus pupilas están dilatadas y su respiración es superficial, rápida, marcando un ritmo errático que hace vibrar el encaje de su cuello. No es el miedo a un guardia cualquiera lo que la atenaza; hay una urgencia eléctrica en su postura, una vigilancia obsesiva hacia la puerta que sugiere que espera el sonido de alguien específico, alguien cuyo paso ya conoce y que no debería estar en este ala del edificio.
+> Al notar tu escrutinio, ella muerde su labio inferior hasta dejarlo blanco, luchando por mantener la compostura. Sus manos tiemblan ligeramente, pero sus ojos, aunque nublados por el pánico, conservan una chispa de lealtad desesperada hacia ti. "No entiendes...", susurra, lanzando una mirada fugaz al pergamino destrozado, "si nos encuentran aquí, no solo seremos nosotros los que caigamos".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3045 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 58 — 57/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  16 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2303 ms
+
+> "Dime exactamente quién es ese que esperas. No me asustan las consecuencias, sino la ignorancia."
+> Pongo una mano firme sobre su hombro para intentar calmarla y obligarla a mirarme.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  13063 ms
+
+> Ginebra se tensa bajo tu mano, pero el contacto actúa como un ancla que la obliga a dejar de mirar la puerta y clavarte la vista. En el fondo de sus pupilas, más allá del pánico, detectas una capa de culpa asfixiante y un terror que no es hacia un enemigo externo, sino hacia la traición. No está simplemente asustada de ser descubierta; está aterrorizada por la posibilidad de que alguien a quien ella misma ha manipulado o prometido protección haya decidido adelantar sus planes, convirtiéndola a ella en el daño colateral de su propia intriga.
+> "Mi primo, Alaric", confiesa en un hilo de voz, mientras el temblor de sus manos se traslada a todo su cuerpo. "Le dije que esperara... le juré que yo me encargaría de todo y que no diera un paso sin mi señal. Pero Alaric es impaciente y cree que la Casa Roquende solo se salvará con sangre inmediata. Si ha venido, no es para ayudarme, es para asegurarse de que no he sido demasiado blanda con los secretos de la familia".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8102 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta ginebra_roquende · npc.knowledge = Maelis sabe que Alaric es el primo que espera y que existe una tensión por la gestión de los secretos familiares
+  ✓ creación npc: Alaric
+  ⚠ nombres no reconocidos: Alaric
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: npc Alaric
+  ✗ entidad inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 59 — 58/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Alaric: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 638 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2313 ms
+
+> "Si Alaric cree que la sangre es la única solución, entonces es un peligro para todos, incluida tú."
+> Suelto a Ginebra y me pongo en guardia, mirando hacia la puerta con la mano en el pomo de mi espada.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 17+3=20
+
+### [4] DM
+
+  9076 ms
+
+> Ginebra exhala un sollozo ahogado y retrocede un paso, envolviéndose en los pliegues de su vestido mientras se encoge, como si tu advertencia hubiera materializado el peligro en el aire. El silencio del pasillo se vuelve denso, roto solo por el rítmico goteo de una humedad invisible y el eco lejano de pasos que no coinciden con el ritmo de una patrulla ordinaria.
+> Tus sentidos se agudizan y captas un detalle discordante: el leve y metálico roce de una cota de malla contra el cuero, seguido por el olor acre del aceite para armas que precede a quien ha estado limpiando su acero recientemente. Alguien se detiene justo al otro lado de la puerta; no hay ruido de llaves ni intentos de forzar la cerradura, solo una respiración pausada y pesada que indica que el visitante sabe exactamente quién está dentro y no tiene prisa por entrar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1064 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Alaric: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 60 — 59/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  17 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  1916 ms
+
+> "Quédate detrás de mí y no hagas ruido."
+> Me coloco frente a la puerta, desenvainando mi espada con cuidado para no hacer ruido. Me preparo para el impacto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 12+3=15
+
+### [4] DM
+
+  9044 ms
+
+> Ginebra obedece al instante, retrocediendo hasta que su espalda choca contra la pared fría y húmeda, ahogando cualquier sonido con una mano temblorosa sobre sus labios. El aire en el pasillo se vuelve gélido y el silencio se tensa como una cuerda a punto de romperse.
+> A través de la madera de la puerta, percibes que la figura del otro lado ha dejado de respirar por un momento, como si estuviera escuchando. Captas el sonido sordo de un peso desplazándose y el roce seco de una mano enguantada deslizándose sobre la superficie del marco, buscando alguna rendija o señal de movimiento. No hay intención de llamar; la presencia es depredadora, paciente y cargada de una confianza gélida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1197 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 61 — 60/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  17 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2773 ms
+
+> Me pego a la pared, justo al lado de Ginebra, y sujeto la empuñadura de mi espada sin llegar a desenvainarla para evitar el ruido del metal. Aguanto la respiración, esperando el momento exacto en que la puerta se abra.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 13+1=14
+
+### [4] DM
+
+  9208 ms
+
+> El silencio en el pasillo es absoluto, roto únicamente por el latido acelerado de tu propio corazón. Ginebra, a tu lado, es una estatua de terror contenido; puedes sentir el frío que emana de la pared y el leve temblor de su cuerpo, aunque no emite ni un solo suspiro.
+> La puerta cede con un chirrido casi imperceptible, abriéndose apenas unos centímetros. Una silueta alta y oscura comienza a filtrarse en el corredor, moviéndose con una lentitud calculada. La figura no entra del todo, sino que asoma la cabeza, escaneando la penumbra con una mirada gélida que pasa a escasos centímetros de donde os encontráis ocultos, sin llegar a detectar vuestra presencia en las sombras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1971 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 62 — 61/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  17 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  5216 ms
+
+> "No te muevas."
+> Sujeto el brazo de Ginebra con firmeza para evitar que tiemble y me preparo para atacar la silueta en cuanto esté lo suficientemente cerca.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 14+1=15
+
+### [4] DM
+
+  11600 ms
+
+> Ginebra se tensa bajo tu agarre, pero el contacto firme parece anclarla al suelo; sus ojos, dilatados por el pánico, se clavan en los tuyos mientras contiene la respiración hasta que sus mejillas adquieren un tono violáceo. El aire en el pasillo se vuelve denso, cargado de un olor a polvo antiguo y humedad que se mezcla con la fragancia metálica de la silueta.
+> La figura avanza un paso más, el roce de su túnica contra la piedra suena como un susurro malévolo. Se detiene justo frente a vuestro escondite, quedando apenas a un brazo de distancia. La cabeza se inclina ligeramente hacia un lado, como si escuchara un eco inexistente, pero su mirada sigue perdida en la profundidad del corredor, ignorando la presencia que acecha en la penumbra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1578 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 63 — 62/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  17 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  3833 ms
+
+> "No respires, Ginebra. Quédate quieta."
+> Sigo sujetándola firmemente para que no se mueva mientras intento analizar la naturaleza de esa figura.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 8+3=11
+
+### [4] DM
+
+  14048 ms
+
+> Ginebra se queda petrificada, sus pulmones luchando por no expandirse mientras se aferra a tu brazo con una fuerza desesperada. El silencio es tan absoluto que el latido acelerado de su corazón parece retumbar contra tu propio pecho, compitiendo con el siseo del viento que se cuela por las grietas de los muros.
+> Desde tu posición, la figura es una mancha oscura y difusa que absorbe la escasa luz del pasillo. Logras distinguir que su túnica está raída, con jirones que flotan levemente aunque no hay corriente de aire, pero los rasgos de su rostro permanecen ocultos en una sombra impenetrable. No percibes ningún sonido de respiración ni el ruido de pasos firmes sobre la piedra; la entidad se desliza más que caminar, manteniendo una inmovilidad antinatural mientras sigue escrutando el vacío del corredor.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1756 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 64 — 63/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  17 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  3306 ms
+
+> "Tranquila, no te soltaré."
+> Sujeto a Ginebra para darle seguridad y me adelanto un paso, manteniendo la mano en el pomo de mi espada mientras observo la figura.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 17+3=20
+
+### [4] DM
+
+  11054 ms
+
+> Ginebra exhala un temblor contenido, apretando los dedos contra tu brazo, pero se deja sostener mientras te desplazas. Al fijar la mirada en la entidad, los detalles emergen de la penumbra: la figura no tiene pies, sino que termina en un jirón de sombras que se funden con el suelo. A través de los huecos de su túnica raída, no hay carne ni hueso, sino un vacío estrellado, como si el cuerpo fuera una ventana abierta a un cielo nocturno y distante.
+> Mientras observas, notas que la criatura no mira el pasillo, sino que sigue el rastro de algo invisible en el aire, moviendo la cabeza con espasmos mecánicos. En su mano derecha sostiene un objeto pequeño y metálico que emite un pulso rítmico de luz violeta, el cual coincide exactamente con la frecuencia de los latidos del corazón de Ginebra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8117 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: Objeto metálico de luz violeta
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item Objeto metálico de luz violeta
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 65 — 64/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  7166 ms
+
+> "No te sueltes, Ginebra."
+> Sigo sosteniéndola mientras me adelanto un paso, tratando de analizar el objeto que sostiene la criatura para ver si reconozco su origen.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 5+-1=4
+
+### [4] DM
+
+  9161 ms
+
+> Ginebra se aferra a tu brazo con una fuerza desesperada, su respiración entrecortada marcando el compás de aquel pulso violeta. El objeto en la mano de la entidad es pequeño, una pieza de metal oscuro y labrado, pero la luz que emite es tan cegadora en su frecuencia que nubla cualquier detalle estructural. 
+> Te adelantas un paso, pero el diseño del artefacto es ajeno a cualquier registro conocido; los grabados parecen retorcerse bajo la luz violeta, desafiando la lógica geométrica. No logras reconocer el material ni el propósito de la pieza, más allá de la inquietante sincronía que mantiene con el corazón de la mujer que te acompaña.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1777 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 66 — 65/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  3421 ms
+
+> "Suelte ese objeto ahora mismo."
+> Saco mi espada y me interpongo entre la entidad y Ginebra, manteniendo la guardia alta.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 17+2=19
+
+### [4] DM
+
+  15633 ms
+
+> El acero de tu hoja desgarra el silencio con un siseo metálico mientras te plantas frente a Ginebra, convirtiéndote en un muro infranqueable. La entidad se detiene en seco, su figura vacilando bajo la presión de tu mando. El brillo violeta del artefacto parpadea violentamente, como si la voluntad imbuida en tu voz chocara contra la frecuencia del objeto, provocando una distorsión en el aire que hace vibrar el metal de tu espada.
+> La criatura retrocede un paso, sus movimientos espasmódicos y erráticos. Sus dedos, largos y pálidos, se aflojan ligeramente sobre la pieza de metal oscuro, aunque no la suelta del todo; emite un sonido sibilante, una mezcla de estática y un gemido ahogado, mientras inclina la cabeza con una curiosidad animal, reconociendo la amenaza en tu postura.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4462 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento ginebra_roquende · bond_target_protected
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: ginebra_roquende
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 67 — 66/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  2912 ms
+
+> "Suelta eso ahora mismo, criatura. No tienes lugar aquí."
+> Mantengo la punta de mi espada dirigida a su pecho y doy un paso firme hacia adelante para presionarla.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 12+2=14
+
+### [4] DM
+
+  9082 ms
+
+> La criatura emite un chirrido agudo, una frecuencia que hace resonar los dientes, mientras sus pupilas se dilatan hasta borrar el iris. El paso firme y la punta del acero presionando su pecho rompen el hechizo de curiosidad; el pánico, o una versión distorsionada de él, se apodera de la entidad. Sus dedos se contraen en un espasmo violento y el artefacto vuela por los aires, describiendo un arco metálico antes de golpear el suelo con un sonido seco y sordo.
+> La entidad retrocede rápidamente, arrastrándose casi hacia atrás, mientras se encoge sobre sí misma y emite un siseo sumiso. Se queda allí, temblorosa, evitando el contacto visual y manteniendo una distancia prudencial, mientras el objeto de metal oscuro yace ahora a unos pasos de ti, vibrando débilmente sobre las piedras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2357 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 68 — 67/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  4765 ms
+
+> "Quédate ahí si quieres seguir respirando."
+> Mantengo la punta de la espada hacia la criatura mientras me desplazo lateralmente para alcanzar el objeto sin darle la espalda. Recojo el artefacto del suelo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 9+3=12
+
+### [4] DM
+
+  9491 ms
+
+> La criatura se encoge aún más, soltando un gemido ahogado que suena como vidrio rompiéndose, y se aplasta contra el suelo, convirtiéndose en una masa temblorosa de extremidades y piel pálida. No intenta avanzar; el terror es palpable en el rítmico espasmo de su torso, mientras sus ojos dilatados siguen cada uno de tus movimientos con una fijeza hipnótica.
+> Al cerrar la mano sobre el artefacto, sientes una vibración fría que recorre tu brazo, un zumbido metálico que parece pulsar al ritmo de un corazón lejano. A simple vista, el objeto es una pieza de metal oscuro, casi absorbente de la luz, con grabados geométricos que se entrelazan en una superficie sorprendentemente lisa y gélida al tacto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5092 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Maelis · character.inventory = Objeto metálico de luz violeta
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3970: Maelis.inventory = Objeto metálico de luz violeta
+
+### [9] ESTADO DESPUÉS
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 69 — 68/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Ginebra Roquende: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 586 caracteres
+
+### [2] JUGADOR — Maelis
+
+  3025 ms
+
+> "No te haré daño si te quedas ahí."
+> Guardo el artefacto y me acerco lentamente a la criatura para intentar ver si tiene alguna herida o marca que explique su estado.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+3=9
+
+### [4] DM
+
+  10766 ms
+
+> La criatura se contrae violentamente ante tu acercamiento, emitiendo un siseo agudo mientras intenta hacerse aún más pequeña contra el suelo frío. Sus extremidades tiemblan con tal intensidad que el roce de su piel contra la piedra produce un sonido seco, similar al de un pergamino viejo siendo arrugado.

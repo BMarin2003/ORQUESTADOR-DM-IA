@@ -1,0 +1,19221 @@
+
+# VERTICAL SLICE G1 — Par 07 (real) · G1 (Multiagente) · Umbral Hondo (mas)
+
+- **modelo (todos los roles):** `google/gemma-4-31B-it`
+- **jugador:** `google/gemma-4-31B-it` (Tarq, desvío 45)
+- **turno:** 24
+
+## Turno 24 — 1/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  11263 ms
+
+> "Demasiado ruido para seguir escondido."
+> Me deslizo rápidamente fuera del conducto para ganar espacio y me preparo para atacar a quien asome la cabeza.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Sigilo: 3+1=4
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 4)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (9458 ms): «¡Alto ahí! Manos donde pueda verlas. Ahora. ¿Quiénes son y qué hacen en esta zon»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5465 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12980 ms
+
+> narrativa
+> El descenso es torpe y ruidoso; el metal del conducto traiciona el movimiento con un chirrido estridente que resuena en toda la sala de máquinas. Al tocar el suelo de cemento agrietado, el aceite gotea sobre las botas y el parpadeo eléctrico de los fluorescentes ciega por un instante, dejando los rincones en una penumbra absoluta donde las turbinas oxidadas parecen bestias dormidas.
+> Antes de que sea posible adoptar cualquier posición de ataque, una silueta se desprende de las sombras con una rapidez letal. Bercelio Nax emerge con el arma en mano y la mirada fija, tensa, apuntando directamente al pecho. "¡Alto ahí! Manos donde pueda verlas. Ahora. ¿Quiénes son y qué hacen en esta zona?", sentencia con una urgencia fría y autoritaria que no admite réplicas.
+> mecanica
+> Sigilo: Fallo (4 vs CD 15). El ruido del movimiento alerta inmediatamente a la guardia.
+> presion
+> Bercelio tiene el dedo en el gatillo y la ventaja posicional; cualquier movimiento brusco o intento de ataque será respondido con fuego inmediato.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  20562 ms · 0 eventos · 2 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.location_id
+  ✓ delta Bercelio Nax · npc.knowledge = Tarq ha salido del conducto de ventilación en la sala de máquinas
+  ✓ creación location: sala de máquinas
+  ⚠ nombres no reconocidos: Fallo, Sigilo
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → creada: location sala de máquinas
+  → delta 4036: Bercelio Nax.knowledge = Tarq ha salido del conducto de ventilación en la sala de…
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 25 — 2/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3754 ms
+
+> "Tranquilo. No busco problemas, solo respuestas."
+> Lento y sin hacer movimientos bruscos, levanto las manos para que las vea, manteniendo la mirada fría y fija en sus ojos.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 20+4=24  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 24)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8356 ms): «¿Respuestas? En la sala de máquinas, a través de un conducto de ventilación, no »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  9120 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16099 ms
+
+> narrativa
+> La tensión en el aire, espesa por el olor a ozono y grasa rancia, flaquea ligeramente ante la calma del gesto. Bajo los pies, la vibración sorda de las turbinas en reposo persiste como un latido mecánico que llena los silencios. Bercelio Nax no baja el arma, pero reduce ligeramente la presión del dedo sobre el gatillo. Entorna los ojos, analizando cada microgesto con una intensidad inquisitiva mientras mantiene la distancia.
+> "¿Respuestas? En la sala de máquinas, a través de un conducto de ventilación, no se buscan respuestas. Se buscan secretos. ¿Qué respuestas buscas exactamente? ¿Y quién te ha dicho que las encontrarías aquí abajo?", pregunta con un tono que oscila entre la desconfianza y una curiosidad peligrosa.
+> mecanica
+> Persuasión: Éxito (24 vs CD 15). El guardia ha dejado de considerarte una amenaza inmediata, aunque sigue alerta.
+> presion
+> Nax sigue armado y en control de la situación; cualquier contradicción o mentira evidente en la respuesta podría devolverlo a su estado de agresividad inicial.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2266 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+  ✗ (Mundo) delta rechazado por la base (npc.estado): field npc.estado is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 26 — 3/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4096 ms
+
+> "Busco la verdad sobre el funcionamiento de este lugar, no secretos triviales. Nadie me lo ha dicho; simplemente sé que el poder siempre deja un rastro que llega hasta el corazón de la máquina."
+> Mantengo la mirada fija en él, sin moverme, analizando su reacción.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 14+1=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 15)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5454 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  18012 ms
+
+> narrativa
+> La tensión se disuelve en un silencio denso, interrumpido solo por el zumbido hipnótico del núcleo central. La mirada de Nax vacila; la seguridad con la que se ha hablado del rastro del poder parece haber calado en él, dejándolo sumido en una duda muda. No hay palabras, solo el sonido metálico de su equipo chocando mientras relaja la postura, aunque sus ojos siguen escrutando cada centímetro del rostro ajeno, buscando una grieta en esa convicción.
+> Alrededor, la sala de máquinas se despliega como un abismo de acero y vapor. Tuberías oxidadas serpentean como arterias negras hacia el núcleo, mientras el suelo de rejilla metálica revela niveles inferiores sumidos en una oscuridad aceitosa, donde el vapor se condensa en gotas negras que gotean rítmicamente hacia el vacío.
+> mecanica
+> Perspicacia: Éxito (15 vs CD 15). Has detectado que la seguridad del guardia ha flaqueado; ya no te ve como un intruso común, sino como alguien que podría saber algo que él ignora.
+> presion
+> El silencio de Nax es una tregua frágil; si no se aprovecha este momento de duda para dirigir la conversación, el guardia recuperará su instinto de control y volverá a imponer su autoridad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4470 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · competence_shown
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 27 — 4/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3193 ms
+
+> "Tú y yo sabemos que este lugar oculta más de lo que el mando admite. ¿Qué es lo que realmente ocurre en los niveles inferiores?"
+> Me acerco un paso hacia él, manteniendo la voz baja y gélida.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 15)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6357 ms): «¿Los niveles inferiores? ¿Qué es lo que pasa ahí abajo? Dime exactamente qué cre»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  22967 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  18733 ms
+
+> narrativa
+> La mención de los niveles inferiores golpea a Nax como un impacto físico. Se mantiene rígido, pero no retrocede ante la proximidad, permitiendo que la distancia entre ambos se acorte hasta que el aire se vuelve pesado. Entorna los ojos, analizando cada microgesto, cada tics del rostro, mientras su voz emerge seca y cortante, despojada de cualquier cordialidad previa y adquiriendo el filo de un interrogatorio.
+> "¿Los niveles inferiores? ¿Qué es lo que pasa ahí abajo? Dime exactamente qué crees que ocurre abajo", suelta, clavando la mirada en un intento desesperado por recuperar el control de la situación y medir cuánto terreno ha sido cedido.
+> mecanica
+> Persuasión: Éxito (15 vs CD 15). Has logrado que Nax deje de lado su postura defensiva para pasar a una curiosidad cautelosa; ahora está abierto a escuchar tu teoría.
+> presion
+> Nax ha mordido el anzuelo, pero su paciencia es limitada. Si la respuesta es vaga o carece de fundamento, interpretará la insinuación como un juego peligroso y cerrará cualquier vía de cooperación.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1337 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 28 — 5/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3752 ms
+
+> "No creo que sea un secreto, sino una herida abierta que preferís ignorar. Algo se pudre en los cimientos y el olor ya llega hasta aquí arriba."
+> Mantengo la mirada fija en él, sin pestañear, midiendo su reacción.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 12+1=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 13)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8248 ms): «Una herida abierta. Interesante. ¿Y quién ha sido el que ha abierto la herida? ¿»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3062 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  18972 ms
+
+> narrativa
+> El silencio se vuelve sepulcral en el despacho austero, mientras la luz cenicienta de la tarde filtra el polvo que flota en el aire, congelando el momento tras la acusación. La mirada de Nax no flaquea; al contrario, se endurece. Cruza los brazos con fuerza y se inclina ligeramente hacia adelante, invadiendo el espacio personal, transformando la curiosidad previa en una presión asfixiante que busca cualquier grieta en la determinación del interlocutor.
+> "Una herida abierta. Interesante. ¿Y quién ha sido el que ha abierto la herida? ¿Quién es el que está haciendo que 'huela', como dices? Dame un nombre, o dime dónde has visto que se pudre", sentencia sin apartar la vista, exigiendo una precisión que la intuición no puede proporcionar.
+> mecanica
+> Perspicacia: Fallo (13 vs CD 15). No logras leer ninguna fisura emocional en Nax; su máscara de interrogador es absoluta y no detectas el trauma personal que sus palabras parecen rozar.
+> presion
+> Nax ha pasado de la escucha cautelosa a la exigencia directa. Si no proporcionas un dato concreto o un nombre, considerará que tus palabras son meras provocaciones y el acceso a su información se cerrará definitivamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2434 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 29 — 6/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4269 ms
+
+> "No soy un perro rastreador para darte nombres que no tengo, pero sé reconocer el hedor de la traición cuando lo tengo delante."
+> Mantengo la mirada, sin retroceder ante su presión, mientras busco algún documento o pista en su escritorio que me indique quiénes son sus enemigos.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 16+2=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (11544 ms): «No me hables de hedores, que yo llevo años oliendo la podredumbre de este pueblo»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  8325 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  19769 ms
+
+> narrativa
+> El escritorio de Nax se despliega como un mapa de su propia rigidez: austero, meticulosamente organizado y desprovisto de cualquier rastro de calidez. Entre pilas de informes encuadernados en cuero y tinteros de obsidiana que parecen absorber la escasa luz, la mirada alcanza una carpeta abierta con el sello de la Inquisición. Un nombre ha sido borrado con trazos violentos de tinta negra, un acto de censura desesperada que ha dejado al descubierto únicamente un apellido: "Vaelen".
+> Nax no se inmuta ni intenta cubrir los papeles, pero su presencia se vuelve más pesada, casi tangible. Su mirada se clava en los ojos del jugador, ignorando cualquier intento de distraerse con el mobiliario, y su voz baja una octava, volviéndose gélida y cortante: "No me hables de hedores, que yo llevo años oliendo la podredumbre de este pueblo. ¿Quién es? ¿A quién te refieres? Dime el nombre".
+> mecanica
+> Investigación: Éxito (18 vs CD 15). Has localizado el apellido 'Vaelen' en un archivo de la Inquisición.
+> presion
+> Nax ha dejado de lado la cordialidad. Si sigues el juego de las insinuaciones sin entregar un nombre o una pista concreta, interpretará tu interés por sus archivos como un acto de espionaje y el interrogatorio pasará de ser una negociación a una detención.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5418 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.knowledge
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Inquisición, Investigación, Éxito
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 30 — 7/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  107475 ms
+
+> "Vaelen. Ese es el nombre que buscaba."
+> Sostengo la mirada de Nax sin retroceder, manteniendo la calma mientras señalo el papel.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7086 ms): «Vaelen. Sí, ese es el nombre. Ahora dime: ¿de dónde lo sacas? ¿Quién te ha habla»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6152 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17735 ms
+
+> narrativa
+> El despacho de Nax se siente ahora más pequeño, el aire cargado por una tensión eléctrica que vibra entre el escritorio de obsidiana y la mirada gélida del inquisidor. La mención del nombre actúa como un detonante; el hombre no parpadea y se inclina ligeramente hacia adelante, invadiendo el espacio personal con el cuerpo rígido como una tabla.
+> Bercelio Nax mantiene la mirada fija, sin conceder un centímetro de terreno, y su voz suena tensa, casi contenida: "Vaelen. Sí, ese es el nombre. Ahora dime: ¿de dónde lo sacas? ¿Quién te ha hablado de los Vaelen? ¿Dónde encajan en todo esto?".
+> mecanica
+> Persuasión: Éxito (20 vs CD 15). Has logrado que Nax valide la información y se centre en la fuente, evitando que el encuentro derive en una detención inmediata.
+> presion
+> El inquisidor ha pasado de la sospecha a la urgencia. Si no proporcionas una fuente creíble o una razón válida para tu conocimiento, Nax empezará a considerar que eres parte de la misma red que intenta ocultar a los Vaelen.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3585 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Vaelen, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'npc', 'entity_id': 'Nax', 'field': 'mood', 'value': 'estupefacto y defensivo'}
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 31 — 8/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2986 ms
+
+> "No es cuestión de quién me haya hablado, sino de dónde he buscado."
+> Mantengo el contacto visual y me apoyo ligeramente en el escritorio, fingiendo una calma que no siento.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6352 ms): «¿De dónde has buscado? Repítelo. ¿En qué archivos? ¿En qué rincones? ¿Dónde exac»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  13129 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12686 ms
+
+> narrativa
+> El despacho de Nax, con sus paredes de piedra fría y el aroma a tinta y cera quemada, se siente ahora como una celda donde el silencio es la única arma. La mentira se desliza con una precisión gélida, asentándose en el aire como un velo que Nax no logra rasgar, aunque su instinto se mantiene en alerta máxima.
+> Bercelio Nax no se mueve ni un milímetro. Entorna los ojos, analizando cada micro-gesto del rostro del inquisidor mientras su voz se vuelve más seca y rítmica: "¿De dónde has buscado? Repítelo. ¿En qué archivos? ¿En qué rincones? ¿Dónde exactamente has rebuscado para encontrar ese nombre?".
+> mecanica
+> Engaño: Éxito (20 vs CD 15). Nax acepta la premisa de que la información proviene de una investigación propia, aunque su desconfianza no ha desaparecido.
+> presion
+> Nax ha aceptado la fuente, pero ahora exige detalles técnicos. Si no eres capaz de inventar una ubicación o un archivo plausible donde se encuentre ese nombre, el inquisidor deducirá que estás improvisando y la máscara de cordialidad se romperá definitivamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4662 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = La información que posee Tarq proviene de una investigación propia
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+  ✗ (Mundo) delta rechazado por la base (npc.estado_mental): field npc.estado_mental is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 32 — 9/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  9676 ms
+
+> "En los registros civiles del distrito sur, ocultos tras las actas de defunciones del año anterior. No es un nombre que alguien quisiera mantener a la vista."
+> Mantengo el contacto visual, sin parpadear.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 15)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6234 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  20223 ms
+
+> narrativa
+> El silencio se prolonga, denso y cargado, mientras la luz de las velas proyecta sombras alargadas sobre los estantes de legajos polvorientos y el escritorio de madera oscura. Nax sostiene la mirada, buscando una grieta, un temblor o un parpadeo que traicione la precisión de la respuesta.
+> Lentamente, el guardia relaja la tensión de los hombros, aunque sus ojos conservan una chispa de escepticismo. No dice nada; se limita a asentir con un gesto imperceptible, aceptando la ubicación de los registros como un dato válido. La sospecha no ha muerto, pero se ha replegado, permitiendo que el aire en el despacho vuelva a circular.
+> mecanica
+> Engaño: Éxito (15 vs CD 15). Nax acepta la ubicación de los registros civiles del distrito sur.
+> presion
+> La mentira ha calado, pero Nax ahora se siente inclinado a verificar la información. Si no se desvía la conversación o se cierra el interrogatorio pronto, el guardia podría solicitar una revisión de esos mismos archivos, lo que expondría la falsedad del rastro.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5422 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = Los registros civiles del distrito sur contienen información oculta tras las actas de defunciones del año anterior
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 33 — 10/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2952 ms
+
+> "Me alegra que estemos de acuerdo. Ahora, ¿cuándo podré marcharme de aquí?"
+> Me separo ligeramente del escritorio, manteniendo una postura relajada pero distante.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 7+4=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 11)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7100 ms): «Tarde. No te vas hasta que yo decida que no tienes nada más que ocultar. Dime ot»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4905 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  20987 ms
+
+> narrativa
+> El intento de cerrar la conversación choca contra una pared de acero. El ambiente en el despacho se vuelve asfixiante; el olor a tinta vieja y cera parece espesarse, mientras la humedad de las paredes de piedra se filtra en el aire frío. La pesada puerta de roble, reforzada con hierro, permanece cerrada, con el guardia apostado como un muro infranqueable que anula cualquier posibilidad de salida.
+> Bercelio Nax se inclina hacia adelante, invadiendo el espacio personal con una brusquedad que borra cualquier rastro de su cordialidad previa. Sus ojos, ahora fijos y gélidos, no permiten ninguna distracción. "Tarde. No te vas hasta que yo decida que no tienes nada más que ocultar. Dime otra vez: ¿quién te dio la ubicación exacta de esos registros? ¿Te la dieron o la encontraste? Repítelo", sentencia con una voz seca que resuena en la pequeña estancia.
+> mecanica
+> Persuasión: Fallo (11 vs CD 15).
+> presion
+> Nax ha detectado una inconsistencia o una excesiva prisa por marcharte. Si no logras convencerlo de tu sinceridad o proporcionar una fuente creíble para la información, el interrogatorio se volverá más agresivo y podría terminar en un arresto preventivo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1469 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 34 — 11/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3043 ms
+
+> "Ya te lo he dicho. No soy un hombre de secretos innecesarios, pero tampoco de repeticiones inútiles."
+> Me reclino en la silla con calma, sosteniéndole la mirada sin retroceder ante su proximidad.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 7+4=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 11)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7018 ms): «Que no sean 'inútiles' para ti no significa que no sean necesarias para mí. Te l»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  917 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  27294 ms
+
+> narrativa
+> La calma fingida no surte efecto; Bercelio Nax ni siquiera se inmuta ante el gesto de reclinarse. Al contrario, se mantiene inclinado, invadiendo el espacio personal sin parpadear, como un depredador que ha detectado una grieta en la armadura. Apoya una mano pesadamente sobre la mesa, haciendo que la madera cruja ligeramente bajo su peso, mientras el aire gélido del despacho parece cerrarse alrededor de ambos.
+> Sus ojos no se apartan ni un milímetro, fijos en una mirada que atraviesa cualquier intento de evasión. "Que no sean 'inútiles' para ti no significa que no sean necesarias para mí", sentencia con una voz que ha perdido toda rastro de cortesía. "Te lo preguntaré una vez más y espero que la respuesta sea distinta: ¿Quién te dio la ubicación de los registros? ¿Te la dieron o la encontraste? No juegues conmigo".
+> mecanica
+> Engaño: Fallo (11 vs CD 15).
+> presion
+> La paciencia de Nax se ha agotado. Cualquier otra respuesta evasiva o intento de manipulación será interpretada como una confesión implícita de culpabilidad, lo que llevará al guardia a ordenar tu detención inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1163 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 35 — 12/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3000 ms
+
+> "No tengo por qué jugar contigo, Nax. Simplemente no me interesa darte el gusto de sentirte superior."
+> Sostengo la mirada sin retroceder, aunque mantengo un tono neutro.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 7+4=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 11)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7649 ms): «Me importa un bledo tu orgullo. Te pregunto quién te dio la ubicación de los reg»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  21746 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  51485 ms
+
+> narrativa
+> El intento de imponerse en el aire queda suspendido, cayendo al vacío sin generar la más mínima grieta en la compostura del guardia. El despacho de Nax se siente ahora como una celda; la luz de las velas proyecta sombras alargadas que parecen cerrarse sobre la mesa, mientras el silencio se vuelve pesado y asfixiante, aplastando cualquier rastro de autoridad externa.
+> Bercelio Nax no retira la mano de la mesa; al contrario, presiona más el peso sobre la madera, haciendo que el mueble gima bajo su fuerza. Su rostro permanece impasible, pero sus ojos se entrecierran, analizando cada micro-gesto con una frialdad quirúrgica antes de sentenciar: "Me importa un bledo tu orgullo. Te pregunto quién te dio la ubicación de los registros. ¿Quién fue? ¿O es que prefieres que te responda yo con una celda y tiempo para pensar?".
+> mecanica
+> Intimidación: Fallo (11 vs CD 15).
+> presion
+> Nax ha dejado de hacer preguntas para empezar a lanzar ultimátums. Persistir en la arrogancia o el silencio llevará al guardia a cerrar el interrogatorio y proceder directamente a tu arresto.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1399 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Intimidación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 36 — 13/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  6250 ms
+
+> "No soy el tipo de hombre que se quiebra ante una amenaza tan previsible, Nax."
+> Sostengo la mirada, relajando la postura para mostrar que su ultimátum no me perturba, mientras trato de leer en sus ojos si realmente tiene la autoridad para encerrarme sin más.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 1+1=2  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 2)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5428 ms): «Llamas previsible a mi paciencia. Interesante. Ahora dime quién te dio la ubicac»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4505 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  26018 ms
+
+> narrativa
+> El intento de leer al hombre fracasa estrepitosamente; los ojos de Nax son pozos de obsidiana que no devuelven reflejo alguno, dejándote a ciegas ante sus intenciones mientras la sensación de vulnerabilidad se instala en la nuca. El despacho, saturado por el olor a cera vieja y cuero, parece encogerse, estrechando las paredes hasta dejar solo el espacio mínimo y asfixiante necesario para el enfrentamiento.
+> Bercelio Nax no parpadea. Se inclina ligeramente hacia adelante, invadiendo tu espacio personal con una lentitud calculada, manteniendo la voz baja pero cargada de una tensión gélida: "Llamas previsible a mi paciencia. Interesante. Ahora dime quién te dio la ubicación de los registros. ¿Quién te habló de ellos? ¿De quién recibiste la información?".
+> mecanica
+> Perspicacia: Pifia (2 vs CD 15).
+> presion
+> La paciencia de Nax se ha agotado. Cualquier respuesta que no sea una confesión directa será interpretada como una burla, y el guardia ya tiene la mano puesta sobre el pomo de la puerta para llamar a sus subordinados.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1204 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Pifia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 37 — 14/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4059 ms
+
+> "No necesito un informante para reconocer el olor de los secretos mal guardados."
+> Me mantengo firme, sin retroceder ante su invasión de espacio, mientras trato de analizar cualquier gesto en su rostro que revele su verdadera debilidad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 17+1=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7312 ms): «Poesía. Me encantan los que hablan en acertijos cuando están acorralados. Ahora,»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3993 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14439 ms
+
+> narrativa
+> El aire denso del despacho, saturado de polvo antiguo y tinta seca, parece espesarse mientras el silencio se prolonga. Bajo la luz mortecina que cae sobre las estanterías infinitas, la fachada de Nax se agrieta; hay un rastro casi imperceptible de tensión en la comisura de sus labios y una rigidez en los hombros que delata que la respuesta ha golpeado un nervio expuesto. El hombre no retrocede ni un milímetro, pero su mirada se vuelve más afilada y su voz adquiere un tono monótono, casi mecánico, mientras cierra el cerco psicológico: "Poesía. Me encantan los que hablan en acertijos cuando están acorralados. Ahora, sin adornos: ¿quién te dio la ubicación? ¿Qué nombre hay detrás de esa 'intuición'? ¿Quién te señaló los registros?".
+> mecanica
+> Perspicacia: Éxito (18 vs CD 15).
+> presion
+> Nax ha dejado de intentar intimidar mediante la calma; ahora busca desesperadamente un nombre. Si no se le proporciona una pista concreta o una distracción convincente, recurrirá a la fuerza bruta para obtener la respuesta.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1492 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 38 — 15/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3318 ms
+
+> "No me interesa jugar a los acertijos, Nax. Solo me interesa lo que esos registros ocultan."
+> Sostengo la mirada sin pestañear, manteniendo la calma para ver si su desesperación revela algo más.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6554 ms): «Los registros ocultan lo que alguien decidió borrar. Y tú los has encontrado. Re»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2978 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14201 ms
+
+> narrativa
+> El despacho se ha transformado en una jaula de madera y papel, un espacio asfixiante donde el olor a tinta seca se mezcla con el aroma metálico del sudor frío que emana de Nax. La tentativa de mantener la calma y leer al hombre fracasa; la mirada de Bercelio es un muro infranqueable, una superficie gélida que no devuelve ninguna grieta ni debilidad, dejándolo a él en total control del silencio.
+> Nax se inclina hacia adelante, invadiendo el espacio personal con una brusquedad calculada. Sus ojos no parpadean y su voz se convierte en un hilo tenso, gélida y rítmica, marcando cada pregunta como si estuviera tachando nombres de una lista: "Los registros ocultan lo que alguien decidió borrar. Y tú los has encontrado. Repito: ¿Quién te dio la ubicación? ¿Qué nombre hay detrás? ¿Quién te ha señalado los papeles?".
+> mecanica
+> Perspicacia: Fallo (10 vs CD 15). No logras detectar ninguna vulnerabilidad ni pista en el comportamiento de Nax.
+> presion
+> La paciencia de Nax se ha agotado. Si no revelas una fuente o proporcionas una respuesta que satisfaga su sospecha, el interrogatorio dejará de ser verbal para convertirse en una detención forzosa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1167 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 39 — 16/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2162 ms
+
+> "No me gustan las preguntas repetitivas."
+> Me reclino en la silla con parsimonia, manteniendo la mirada fija en él sin retroceder.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 20+4=24  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 24)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8796 ms): «A mí no me gustan las respuestas que no llegan. ¿Quién te dio la ubicación? ¿Qui»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6016 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12760 ms
+
+> narrativa
+> El despacho se siente ahora más pequeño, el aire cargado por la tensión eléctrica del desafío. La luz mortecina de las lámparas proyecta sombras alargadas que parecen cerrar el círculo sobre ambos, mientras el silencio que sigue a la respuesta pesa más que las preguntas anteriores. La actitud relajada y el tono tajante logran descolocar la dinámica del interrogatorio, rompiendo por un instante el ritmo implacable de Nax.
+> Sin embargo, Bercelio se queda congelado en su inclinación, sin retroceder ni un milímetro. Sus dedos tamborilean una vez, secos, sobre la mesa, pero no se deja seducir por esa parsimonia; su mirada permanece como una prensa hidráulica, fija y asfixiante. "A mí no me gustan las respuestas que no llegan. ¿Quién te dio la ubicación? ¿Quién te ha señalado los papeles? ¿De quién es el nombre que no quieres decir?", suelta con una frialdad que ignora cualquier intento de dominación psicológica.
+> mecanica
+> Persuasión: Éxito (24 vs CD 15). Has logrado desestabilizar el flujo del interrogatorio y marcar tu propio territorio, aunque Nax se resiste a ceder terreno.
+> presion
+> Bercelio ha interpretado tu confianza como una táctica de evasión. Si continúas negando la información, empezará a considerar que tu silencio no es orgullo, sino una prueba directa de complicidad criminal.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3222 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'npc', 'entity_id': 'Nax', 'field': 'estado_emocional', 'value': 'descolocado y sorprendido por la audacia del interlocutor'}
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 40 — 17/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3822 ms
+
+> "No me interesa jugar a las adivinanzas contigo, Bercelio."
+> Me reclino en la silla, manteniendo la mirada fija en él sin parpadear, analizando cualquier gesto de duda en su rostro.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 16+1=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 17)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6611 ms): «Adivinanzas. Eso es lo que hacen los niños, no los que se meten donde no los lla»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5518 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13217 ms
+
+> narrativa
+> El despacho permanece sumido en una penumbra asfixiante, donde el único sonido es el zumbido eléctrico de las lámparas y la respiración contenida de Bercelio. Al analizar su rostro, no encuentras ninguna grieta; su expresión es ahora una máscara de acero imperturbable que no devuelve ninguna señal de duda ni vacilación.
+> Bercelio sigue inclinado sobre la mesa, sin pestañear. Su voz no sube de volumen, pero se vuelve más cortante, casi metálica, mientras mantiene la presión visual: "Adivinanzas. Eso es lo que hacen los niños, no los que se meten donde no los llaman. Te lo preguntaré una última vez: ¿Quién te dio la ubicación? ¿Quién te señaló los papeles? ¿De quién es el nombre que te guardas?".
+> mecanica
+> Perspicacia: Éxito (17 vs CD 15). Has confirmado que Nax no está intimidado ni duda de su posición; su determinación es absoluta.
+> presion
+> Bercelio ha agotado su paciencia con las evasivas. Si no proporcionas un nombre o una fuente ahora, el interrogatorio pasará de ser una confrontación de voluntades a una detención formal bajo sospecha de complicidad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1921 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 41 — 18/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2125 ms
+
+> "No soy un niño, Bercelio, y no me gusta repetir mis respuestas."
+> Me recuesto en la silla, manteniendo la mirada fija en él mientras cruzo los brazos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 16)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6583 ms): «No me importa lo que te guste. Me importa quién te dio la información. ¿Quién fu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3917 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  36190 ms
+
+> narrativa
+> El despacho parece encogerse, comprimiendo el aire hasta volverlo denso y eléctrico. El gesto de recostarse y el cruce de brazos no logran generar la grieta esperada en la armadura de Bercelio; el hombre permanece inmóvil, una roca frente a la marea, y el silencio que sigue a la respuesta se vuelve casi tangible, cargando la atmósfera de una hostilidad fría.
+> Ni siquiera parpadea. Bercelio se inclina un centímetro más hacia adelante, invadiendo el espacio personal con una determinación gélida, manteniendo la presión visual sin ceder un ápice. "No me importa lo que te guste. Me importa quién te dio la información. ¿Quién fue? ¿Quién te señaló los papeles? ¿De quién es el nombre que no quieres decir?", dispara con una voz que no admite réplica.
+> mecanica
+> Intimidación: Éxito (16 vs CD 15). Has logrado mantener tu posición y demostrar que no te amedrentas, pero Bercelio Nax es un muro de acero; el éxito no lo ha hecho retroceder, sino que ha validado que estás jugando un juego de poder que él está dispuesto a sostener.
+> presion
+> La tensión ha alcanzado el punto de ruptura. Bercelio ya no busca una conversación, sino una confesión; cualquier siguiente respuesta que no sea un nombre concreto será interpretada como una provocación final, activando el protocolo de detención inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2858 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · competence_shown
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 42 — 19/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3100 ms
+
+> "No soy yo quien debería dar nombres, sino usted quien debería dar explicaciones sobre lo que oculta."
+> Sostengo la mirada, manteniendo la calma mientras busco cualquier signo de duda o nerviosismo en sus ojos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 17+1=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8636 ms): «Yo no oculto nada. Yo pregunto. Y ahora te lo repito: ¿Quién te dio la informaci»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5240 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  22943 ms
+
+> narrativa
+> El despacho es una caja de caoba y cuero oscuro donde la luz del atardecer, filtrada por las persianas cerradas, corta la estancia en rayas transversales. El aire, saturado de tabaco viejo y tinta seca, se siente pesado, apenas agitado por el tic-tac metálico de un reloj de pared que parece marcar la cuenta atrás de la paciencia de Bercelio. Al sostenerle la mirada, el análisis es claro: no hay rastro de duda en sus pupilas ni vacilación en su postura; el hombre es un bloque monolítico de convicción.
+> Bercelio no retrocede ni un milímetro. Su voz no sube de volumen, pero se vuelve más seca, más cortante, como el golpe de un martillo sobre el metal: "Yo no oculto nada. Yo pregunto. Y ahora te lo repito: ¿Quién te dio la información? ¿Quién te señaló los papeles? ¿De quién es el nombre que estás protegiendo?".
+> mecanica
+> Perspicacia: Éxito (18 vs CD 15). Has confirmado que Bercelio no muestra signos de nerviosismo ni duda; su seguridad es absoluta y no hay fisuras emocionales que puedas explotar en este momento.
+> presion
+> Bercelio ha cerrado el cerco. Ha rechazado el intento de invertir la carga de la prueba y ha vuelto a centrar la presión sobre la fuente de la información; cualquier evasiva posterior será tomada como una admisión de culpabilidad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1288 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 43 — 20/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2132 ms
+
+> "No protejo a nadie. Simplemente me gustan los secretos."
+> Mantengo la mirada, sin inmutarme, mientras busco cualquier documento o pista relevante sobre el escritorio que pueda servirme de moneda de cambio.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 18+2=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5972 ms): «A mí no me interesan tus gustos. Me interesan los nombres. ¿Quién te habló de lo»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  691 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11771 ms
+
+> narrativa
+> El movimiento hacia el escritorio es fluido y preciso, permitiendo que la vista capte un detalle crucial entre los fardos de cuero y el desorden de la tinta: un sobre lacrado con un sello que no pertenece a la administración local, un documento que Bercelio ha pasado por alto en su obsesión por el interrogatorio. Es una pieza de información tangible, un ancla de realidad en medio de la tensión del despacho.
+> Sin embargo, Bercelio no cede terreno ni se distrae con la búsqueda. Se inclina hacia adelante, invadiendo el espacio personal, reduciendo la distancia hasta que el olor a tabaco viejo es sofocante. Sus ojos son dos cuentas frías que no se apartan de los tuyos mientras sentencia: "A mí no me interesan tus gustos. Me interesan los nombres. ¿Quién te habló de los papeles? ¿Quién te dio la pista? Dímelo ya".
+> mecanica
+> Investigación: Éxito (20 vs CD 15). Has localizado un documento externo y desconocido sobre el escritorio de Bercelio.
+> presion
+> Bercelio ha ignorado tu juego de palabras y tu intento de distracción. La ventana de oportunidad para el diálogo cordial se ha cerrado; ahora mismo, para él, eres un sospechoso que oculta un cómplice.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4981 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: sobre lacrado
+  ⚠ nombres no reconocidos: Investigación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item sobre lacrado
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 44 — 21/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2391 ms
+
+> "No tengo cómplices, Bercelio. Solo tengo una curiosidad más aguda que tu paciencia."
+> Ignoro su cercanía y trato de deslizar el sobre lacrado hacia mi manga sin que se dé cuenta.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Juego de Manos: 16+1=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 17)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  778 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  7834 ms
+
+> narrativa
+> El movimiento es casi imperceptible, un deslizamiento quirúrgico que aprovecha el peso del aire viciado y la fijeza de la mirada de Bercelio. Mientras el guardia mantiene su postura intimidante, el sobre lacrado desaparece bajo la tela de la manga con una suavidad absoluta, quedando oculto y seguro contra la piel.
+> Bercelio permanece inmóvil, ajeno al robo. Su rostro, surcado por arrugas que parecen cicatrices, no muestra ni un ápice de sospecha; sigue anclado en su interrogatorio, con la respiración pesada y los ojos clavados en el rostro del interlocutor, ignorando que el secreto que custodiaba su escritorio acaba de cambiar de dueño.
+> mecanica
+> Juego de Manos: Éxito (17 vs CD 15). El sobre ha sido sustraído sin ser detectado.
+> presion
+> Bercelio sigue esperando una respuesta directa. Cada segundo de silencio o evasiva refuerza su convicción de que ocultas un cómplice, acercándolo al momento de llamar a los refuerzos de la Guardia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  9074 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Tarq · character.inventory = sobre lacrado
+  ⚠ nombres no reconocidos: Juego, Manos, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4129: Tarq.inventory = sobre lacrado
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 45 — 22/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3451 ms
+
+> "No necesito cómplices para decirte que estás perdiendo el tiempo conmigo."
+> Sostengo la mirada de Bercelio con frialdad, manteniendo una postura relajada para no levantar sospechas sobre el sobre.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 15)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5379 ms): «Que pierdo el tiempo es un detalle. Lo que me interesa es quién más sabe lo que »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7288 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  7922 ms
+
+> narrativa
+> El despacho de Bercelio es una caja de sombras saturada por el olor a tabaco viejo y pergamino húmedo. La luz de un único candil proyecta sombras alargadas sobre las paredes descascaradas, mientras el tic-tac metálico del reloj de pared marca un ritmo implacable, como si contara los últimos segundos de una paciencia que se agota.
+> Bercelio no parpadea ante la frialdad de la respuesta. Se inclina ligeramente hacia adelante, invadiendo el espacio personal, con la mandíbula tensa y la voz bajando un octavo, volviéndose más cortante: "Que pierdo el tiempo es un detalle. Lo que me interesa es quién más sabe lo que tú sabes. ¿Quién más? ¿Quién te ha dado la información? Repítelo, pero esta vez sin el orgullo".
+> mecanica
+> Engaño: Éxito (15 vs CD 15). Bercelio acepta la premisa de que no hay cómplices inmediatos, pero su sospecha se desplaza hacia la fuente original de la información.
+> presion
+> La insistencia de Bercelio se ha vuelto quirúrgica. Si no proporcionas un nombre o una fuente creíble, el guardia dejará de buscar respuestas mediante el diálogo y empezará a considerar que el silencio es una confesión de traición, lo que llevará a un arresto preventivo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1404 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 46 — 23/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1697 ms
+
+> "La información no se compra ni se regala, Bercelio. Se encuentra en los lugares donde otros temen mirar."
+> Me reclino en la silla, manteniendo la mirada fija en él sin retroceder.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 2+4=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 6)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3845 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9507 ms
+
+> narrativa
+> El despacho se siente ahora más pequeño, el aire viciado y pesado, como si las paredes se hubieran cerrado un centímetro más. La luz del candil parpadea violentamente, subrayando la expresión de Bercelio, cuya impaciencia se ha congelado en una fría determinación.
+> Bercelio no dice nada. Sus ojos, reducidos a dos rendijas oscuras, recorren el rostro del interlocutor buscando la grieta, la vacilación o el tic que delate la mentira. Lentamente, se aparta de la mesa, pero no para dar espacio, sino para adoptar una postura de autoridad absoluta, envolviendo el silencio con una hostilidad palpable.
+> mecanica
+> Engaño: Fallo (6 vs CD 15).
+> presion
+> La respuesta ha sido percibida como una evasiva arrogante. Bercelio ya no busca una fuente; ahora está convencido de que el silencio es una pantalla para ocultar una traición. Si no hay un cambio radical de tono o una revelación inmediata, el guardia dará la orden de arresto preventivo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3514 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · ideal_violated
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'npc', 'entity_id': 'Bercelio', 'field': 'estado_animo', 'value': 'irritado y convencido de la mentira'}
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 47 — 24/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2673 ms
+
+> "No busco traicionarte, Bercelio, sino evitar que cometamos un error por precipitación."
+> Bajo la mirada un instante y luego lo observo fijamente, tratando de suavizar mi postura.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 13+4=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 17)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4200 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  7461 ms
+
+> narrativa
+> La tensión en el despacho parece ceder, aunque no desaparece. Bercelio mantiene la postura rígida, pero la contracción de su mandíbula se relaja imperceptiblemente mientras procesa las palabras. El humo del candil danza erráticamente entre los dos hombres, dibujando espirales grises en la penumbra asfixiante que llena la estancia.
+> El guardia no responde con palabras, pero su mirada pierde esa agresividad cortante. Tras un silencio prolongado, exhala un suspiro lento y pesado, asintiendo una sola vez con la cabeza. La hostilidad palpable se transforma en una cautela distante, aceptando la premisa del error compartido.
+> mecanica
+> Persuasión: Éxito (17 vs CD 15).
+> presion
+> Bercelio ha dejado de considerarte una amenaza inmediata, pero su desconfianza sigue ahí. Cualquier nueva inconsistencia en el relato hará que olvide este gesto de benevolencia y recurra a la fuerza.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1357 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'npc', 'entity_id': 'Bercelio', 'field': 'state', 'value': 'Dudoso pero atento; la arrogancia ha sido sustituida por una cautela tensa'}
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 48 — 25/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4434 ms
+
+> "Agradezco tu sensatez, Bercelio. Ahora que hemos aclarado el malentendido, dime qué es exactamente lo que ocurre en este lugar."
+> Me mantengo inmóvil, observando sus reacciones con calma.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 17+1=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7518 ms): «Que ocurre. Que hay cosas moviéndose en las sombras que nadie quiere nombrar. Tr»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4837 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10433 ms
+
+> narrativa
+> El despacho se siente más claustrofóbico que nunca, saturado por un olor penetrante a cera vieja y tabaco rancio. Alrededor de la mesa, las estanterías crujen bajo el peso de legajos amarillentos, mientras la luz vacilante del candil proyecta sombras alargadas que parecen cobrar vida propia, deslizándose por las paredes independientemente de la llama.
+> Bercelio Nax se inclina ligeramente hacia adelante, apoyando las palmas de las manos sobre la madera gastada. Sus ojos, fijos y sin parpadear, escrutan cada poro del rostro del interlocutor, buscando cualquier micro-reacción ante la gravedad de sus palabras. "Que ocurre. Que hay cosas moviéndose en las sombras que nadie quiere nombrar. Tres vecinos que no saben mentir, una capilla abandonada que ha vuelto a encender sus luces y gente saliendo por los conductos de ventilación de la sala de máquinas. ¿Tú qué has visto? ¿Qué es lo que realmente te trae aquí?", suelta en un tono bajo, cargado de una urgencia contenida.
+> mecanica
+> Perspicacia: Éxito (18 vs CD 15).
+> presion
+> Bercelio ha soltado información crítica, pero ahora la pelota está en tu tejado. Si tu respuesta es evasiva o contradictoria, interpretará que eres parte de las "cosas que se mueven en las sombras" y la cordialidad terminará en una detención inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  847 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'npc', 'entity_id': 'Bercelio', 'field': 'attitude', 'value': 'cautela distante'}
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 49 — 26/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1852 ms
+
+> "He visto que este lugar se desmorona, y que hay secretos que pesan más que esos legajos."
+> Mantengo la mirada fija en Nax, sin inmutarme, mientras analizo su lenguaje corporal para ver si su urgencia es genuina o una trampa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 1+1=2  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 2)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (4189 ms): «Secretos. He oído esa palabra hoy más veces que mi propio nombre. Dime exactamen»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  723 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  6641 ms
+
+> narrativa
+> La mirada fija no sirve de escudo; el intento de descifrar al hombre choca contra un muro de acero. En lugar de encontrar una fisura en su urgencia o una señal de engaño, el silencio se vuelve denso y la lectura del lenguaje corporal resulta confusa, dejando una sensación de vulnerabilidad absoluta frente a alguien que sabe exactamente cómo dominar el espacio.
+> Bercelio Nax no retira las manos de la mesa; se inclina un centímetro más, invadiendo el espacio personal del interlocutor. Sus ojos se entrecierran, analizando la respuesta con una intensidad quirúrgica mientras su voz adquiere un filo peligroso: "Secretos. He oído esa palabra hoy más veces que mi propio nombre. Dime exactamente qué secretos. ¿De quién son esos secretos? ¿Dónde los has visto?".
+> mecanica
+> Perspicacia: Fallo (2 vs CD 15). No logras leer las intenciones de Nax y tu análisis es erróneo.
+> presion
+> La respuesta críptica ha irritado a Nax. Si no proporcionas nombres o lugares concretos en el siguiente intercambio, dejará de verte como un informante para tratarte como un sospechoso más de las actividades clandestinas de Umbral Hondo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ pifia en Perspicacia pero narra éxito
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5044 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 50 — 27/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1890 ms
+
+> "No soy yo quien guarda los secretos, sino el lugar. He visto sombras moverse donde no deberían y oído susurros que no pertenecen a nadie vivo."
+> Me reclino en la silla, intentando recuperar mi espacio personal sin parecer intimidado.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 6+4=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (3913 ms): «El lugar no habla, el lugar no susurra y el lugar no mueve sombras. Las personas»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2467 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  6740 ms
+
+> narrativa
+> La oficina se siente más pequeña que nunca, una caja de madera pesada y humo de tabaco que asfixia el aire bajo una luz mortecina. El intento de alejarse para recuperar el espacio personal fracasa; Bercelio Nax no cede ni un milímetro, manteniéndose inclinado sobre la mesa, anulando cualquier distancia de seguridad. Mientras el silencio se vuelve espeso, Nax comienza a golpear la madera con un dedo, marcando un ritmo monótono y demandante que ridiculiza la respuesta críptica.
+> Sus ojos, gélidos y analíticos, no muestran el menor rastro de duda ante la mención de sombras y susurros. "El lugar no habla, el lugar no susurra y el lugar no mueve sombras. Las personas hacen eso. ¿Quiénes son? ¿Quiénes se mueven? ¿Quiénes susurran?", sentencia con una voz que no admite evasivas, dejando claro que la mística del entorno no es moneda de cambio en su despacho.
+> mecanica
+> Engaño: Fallo (10 vs CD 15). Nax no compra la narrativa del lugar encantado; considera tu respuesta una maniobra evasiva.
+> presion
+> La paciencia de Nax se ha agotado. Si el siguiente turno no contiene nombres, cargos o ubicaciones precisas, el interrogatorio pasará de ser una charla cordial a una detención formal por obstrucción.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1826 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 51 — 28/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1422 ms
+
+> "Está bien, Nax. No busco adornar la realidad, sino describirla."
+> Sostengo su mirada sin retroceder y trato de analizar qué es exactamente lo que quiere oír para dejar de presionar.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 15+1=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 16)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (3151 ms): «Ahorrate los matices. Me hablas de descripciones, pero no he oído ni un solo nom»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  661 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  6823 ms
+
+> narrativa
+> La tensión en la oficina se vuelve casi tangible, una cuerda estirada al límite mientras el silencio se llena con el eco del dedo de Nax contra la madera. La mirada del guardia es un escrutinio quirúrgico; sin embargo, en esa fijeza hay una grieta, un hambre desesperada de datos concretos que revela que no está buscando una historia, sino una confirmación. La insistencia no nace de la duda, sino de una necesidad urgente de encajar piezas en un rompecabezas que ya ha empezado a armar en secreto.
+> Bercelio Nax no deja de golpear la mesa con el dedo, el ritmo es ahora más rápido y seco. Se inclina un centímetro más, invadiendo el espacio personal, con la mirada clavada en las pupilas buscando el tic del mentiroso. "Ahorrate los matices. Me hablas de descripciones, pero no he oído ni un solo nombre. ¿Quiénes son los que se mueven? ¿Quiénes son? ¿A quién has visto?", espeta con una voz que ha perdido cualquier rastro de cordialidad.
+> mecanica
+> Perspicacia: Éxito (16 vs CD 15). Has detectado que Nax no está improvisando el interrogatorio; busca nombres específicos para validar una lista de sospechosos que ya posee.
+> presion
+> Nax ha dejado de escuchar descripciones. Si no proporcionas nombres o identidades concretas en tu siguiente respuesta, considerará que estás encubriendo a sus objetivos y procederá a una detención formal.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1010 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 52 — 29/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1411 ms
+
+> "Tienes una lista, Nax. No busques que yo la complete, busca que yo la confirme."
+> Me reclino en la silla, manteniendo el contacto visual, y espero a que sea él quien mencione el primer nombre.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 17+4=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 21)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (3002 ms): «No juego a las adivinanzas. Si sabes de qué lista hablo, es que sabes quiénes so»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1950 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4283 ms
+
+> narrativa
+> La oficina se vuelve un espacio asfixiante, saturada por el olor a tabaco viejo y el zumbido eléctrico de una lámpara fluorescente que parpadea rítmicamente, subrayando el duelo de miradas. El movimiento de reclinarse en la silla rompe la inercia del interrogatorio, obligando a Nax a procesar la certeza en el tono.
+> Se detiene en seco. El dedo deja de golpear la mesa y su cuerpo se tensa, pero no retrocede; se queda suspendido en esa inclinación agresiva, con los ojos entrecerrados y la mandíbula apretada. "No juego a las adivinanzas. Si sabes de qué lista hablo, es que sabes quiénes son los que se mueven por la Capilla. Así que dime: ¿está el nombre que busco en tu cabeza o tengo que empezar a vaciar la calle para encontrarlo?", espeta con una voz que vibra entre la amenaza y la urgencia.
+> mecanica
+> Persuasión: Éxito (21 vs CD 15). Has logrado que Nax reconozca que sabes de la existencia de su lista, moviendo la conversación de un interrogatorio unidireccional a un juego de confirmaciones.
+> presion
+> Nax ha aceptado que conoces su secreto, pero su paciencia es mínima. Si no confirmas el primer nombre o demuestras que tienes la información exacta que él busca, interpretará tu juego como una provocación y cerrará la vía diplomática.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1779 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = Tarq sabe de la existencia de su lista
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 53 — 30/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1400 ms
+
+> "No me interesa vaciar calles, Nax. Me interesa que entiendas que soy la herramienta más eficiente para conseguir ese nombre."
+> Mantengo la mirada fría, sin moverme, mientras busco cualquier rastro de debilidad en su expresión.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 6+1=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 7)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (1580 ms): «Herramientas. Todos vienen aquí diciendo que son la herramienta adecuada. Dime e»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1401 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4885 ms
+
+> narrativa
+> La luz fluorescente parpadea con un zumbido irritante, proyectando sombras erráticas sobre las paredes amarillentas del cubículo mientras el humo del tabaco se estanca en capas espesas. El intento de leer a Nax fracasa; su rostro es una máscara de piedra, imperturbable y vacía de cualquier grieta que permita vislumbrar su estado anímico o sus dudas.
+> Bercelio Nax se inclina más hacia adelante, invadiendo el espacio personal con una lentitud depredadora. Sus ojos, fijos y gélidos, no pestañean mientras acorta la distancia, dejando que el olor a nicotina y encierro lo sature todo. "Herramientas. Todos vienen aquí diciendo que son la herramienta adecuada. Dime entonces: ¿qué nombre tienes que yo no tenga ya escrito? ¿Cuál? ¿Quién es?", sentencia con una voz gélida que anula cualquier pretensión de eficiencia.
+> mecanica
+> Perspicacia: Fallo (7 vs CD 15). No has logrado detectar ninguna debilidad ni pista sobre el estado mental de Nax; su fachada permanece intacta.
+> presion
+> Nax ha dejado de escuchar promesas. Si no proporcionas un nombre concreto o una prueba tangible de tu utilidad en el siguiente intercambio, considerará que tu discurso es una pérdida de tiempo y el interrogatorio pasará de ser una negociación a una detención.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  893 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 54 — 31/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1287 ms
+
+> "Mi nombre es Tarq. Y no soy una herramienta, sino el brazo de quien realmente puede darte lo que buscas."
+> Me mantengo firme sin retroceder ante su cercanía, sosteniéndole la mirada con frialdad.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 20+4=24  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 24)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2690 ms): «El brazo de alguien más. Bien. Entonces dime quién mueve ese brazo. Dame el nomb»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3210 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4607 ms
+
+> narrativa
+> La tensión en el cubículo se vuelve casi sólida, pero la firmeza de Tarq actúa como un muro contra el cual choca la agresividad de Nax. El guardia no retrocede ni un milímetro, manteniendo la presión física y el espacio invadido, pero el brillo gélido de sus ojos cambia. Entorna las pupilas ligeramente, analizando la inmutabilidad del otro con una mezcla de irritación y un respeto involuntario que surge al reconocer un temple similar al suyo.
+> Bercelio Nax sostiene la mirada, procesando la declaración mientras el zumbido de los fluorescentes llena el silencio. "El brazo de alguien más. Bien", sentencia con una voz que ha perdido parte de su desdén para volverse puramente inquisitiva. "Entonces dime quién mueve ese brazo. Dame el nombre. ¿Quién es tu patrón? ¿Quién te envía?".
+> mecanica
+> Persuasión: Éxito (24 vs CD 15). Has logrado imponer tu autoridad y despertar la curiosidad profesional de Nax, desplazando la dinámica de interrogatorio hacia una negociación de información.
+> presion
+> Nax ha aceptado la premisa de que representas a alguien poderoso, pero su paciencia es finita. Si el nombre que proporcionas no tiene peso en el submundo o en la administración de Umbral Hondo, interpretará la maniobra como un farol y recuperará la hostilidad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2236 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+  ✗ (Mundo) delta malformado (no es objeto): -1
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 55 — 32/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1419 ms
+
+> "Mi patrón no es alguien a quien se nombre a la ligera en un lugar como este."
+> Sostengo la mirada, manteniendo mi expresión impasible mientras busco alguna señal de debilidad o reconocimiento en sus ojos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 14+1=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 15)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2852 ms): «No me hables de ligerezas. No estamos en un salón de té. ¿Quién es? ¿Cómo se lla»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1764 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4537 ms
+
+> narrativa
+> El espacio se siente asfixiante, encerrado entre paredes de un gris ceniciento y una luz blanca que parpadea con un ritmo errático. El aire está saturado de un olor metálico a ozono y desinfectante barato, una mezcla química que acentúa la tensión eléctrica que vibra entre ambos. La impasibilidad de la mirada no logra hacer retroceder a Bercelio Nax; al contrario, el guardia se mantiene firme, invadiendo el espacio personal con una rigidez imperturbable.
+> Nax sostiene la confrontación con una voz seca y cortante, lanzando sus preguntas como estocadas rápidas para intentar encontrar una grieta en esa máscara de calma. "No me hables de ligerezas. No estamos en un salón de té. ¿Quién es? ¿Cómo se llama? ¿Quién es el que te manda?", sentencia, repitiendo la demanda con una insistencia inquisitiva que busca forzar una respuesta inmediata.
+> mecanica
+> Perspicacia: Éxito (15 vs CD 15). Has logrado leer la intensidad de Nax; aunque se muestra agresivo, su insistencia es la de alguien que intenta validar una sospecha previa más que la de alguien que ignora por completo la situación.
+> presion
+> Nax ha llegado al límite de su tolerancia hacia el misterio. Si la siguiente respuesta sigue siendo evasiva o no aporta un nombre con el peso suficiente, dejará de lado la curiosidad profesional para recurrir a los métodos coercitivos de la Guardia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1175 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 56 — 33/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1524 ms
+
+> "Tengo un nombre, pero no creo que sea el que esperas escuchar."
+> Mantengo la mirada fija en Nax sin retroceder ni un centímetro, analizando su reacción mientras dejo que el silencio pese.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 14+4=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (1926 ms): «No me interesa lo que yo 'espere' escuchar. Me interesa lo que es verdad. Suélta»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1637 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4871 ms
+
+> narrativa
+> El zumbido errático de los fluorescentes llena el vacío del pasillo, donde el hormigón bruto parece absorber cualquier rastro de calidez. Las paredes desnudas devuelven el eco de las palabras, amplificando la tensión en ese espacio angosto y frío. La insinuación cala en el guardia, quien no parpadea, manteniendo una fijeza predadora mientras se inclina ligeramente hacia adelante. Acorta la distancia, invadiendo el espacio personal con la mandíbula tensa y una mano apoyada en el cinturón, peligrosamente cerca del arma, aunque sin llegar a tocarla.
+> Bercelio Nax rompe el silencio con una voz que corta el aire como una cuchilla: "No me interesa lo que yo 'espere' escuchar. Me interesa lo que es verdad. Suéltalo. ¿De quién hablamos?".
+> mecanica
+> Engaño: Éxito (18 vs CD 15). Has logrado plantar la duda en Nax; ahora cree que posees una información disruptiva que podría cambiar su perspectiva del caso.
+> presion
+> Nax ha mordido el anzuelo, pero su paciencia sigue pendiendo de un hilo. Si el nombre que proporciones no tiene el peso suficiente o resulta ser una maniobra distractora evidente, la agresividad de la Guardia pasará de la intimidación a la acción física.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2775 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = Tarq posee una información disruptiva que podría cambiar la perspectiva del caso
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 57 — 34/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2141 ms
+
+> "Hablamos de alguien que conoce los secretos de este hormigón mejor que tú, Nax. Alguien que no debería estar en los registros."
+> Mantengo la mirada fría mientras me reclino ligeramente, proyectando una calma artificial. {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 15+4=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 19)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2363 ms): «Alguien fuera de los registros. Interesante. ¿Quién es? ¿Quién no figura en los »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1315 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4474 ms
+
+> narrativa
+> El zumbido eléctrico de los fluorescentes parece intensificarse, llenando el pasillo de un ruido blanco que envuelve la tensión gélida del hormigón. La afirmación cae con el peso de una sentencia y Nax reacciona instantáneamente; no retrocede ni un milímetro, sino que se ancla en el suelo, invadiendo el espacio personal con una fijeza predadora. Entorna los ojos, analizando cada microgesto, buscando la grieta en esa calma artificial mientras mantiene la presión física, con la voz baja y seca: "Alguien fuera de los registros. Interesante. ¿Quién es? ¿Quién no figura en los libros? Dime el nombre".
+> mecanica
+> Engaño: Éxito (19 vs CD 15). Has logrado que Nax acepte la premisa de que existe un agente invisible en el sistema.
+> presion
+> Nax está ahora totalmente volcado en obtener ese nombre. Si la respuesta es vaga o inconsistente, interpretará la maniobra como un juego peligroso y recurrirá a la fuerza para extraer la verdad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1768 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = Existe un agente invisible en el sistema que no figura en los registros
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 58 — 35/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1645 ms
+
+> "No es un nombre que se pronuncie en voz alta, Nax. Solo alguien que conoce los puntos ciegos de este lugar."
+> Mantengo la mirada, sin retroceder ante su cercanía, mientras busco cualquier señal de duda o impaciencia en su rostro.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 2+1=3
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 3)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2125 ms): «No me vengas con acertijos. ¿Quién conoce los puntos ciegos? ¿Quién se mueve por»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1690 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9828 ms
+
+> narrativa
+> El zumbido eléctrico de los fluorescentes se vuelve irritante, una vibración constante que parece taladrar las sienes en medio del aire gélido y el olor a desinfectante industrial del pasillo. A pesar del esfuerzo por leer al hombre, el rostro de Nax permanece como una máscara de hormigón, impenetrable y fría; no hay una grieta, ni un titubeo, ni una sola señal que sugiera que el juego de palabras ha surtido efecto.
+> Nax no parpadea. Se inclina un centímetro más, reduciendo la distancia hasta que su respiración es audible, con el tono volviéndose más cortante y seco: "No me vengas con acertijos. ¿Quién conoce los puntos ciegos? ¿Quién se mueve por aquí sin dejar rastro? Dame un nombre".
+> mecanica
+> Perspicacia: Fallo (3 vs CD 15). No has logrado detectar ninguna debilidad ni duda en la postura de Nax.
+> presion
+> La paciencia de Nax se ha agotado. Cualquier otra respuesta evasiva será tomada como una confesión de complicidad, y pasará de la interrogación verbal a la coacción física inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1632 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 59 — 36/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1992 ms
+
+> "No tengo nombres que darte, pero puedo ayudarte a encontrarlos si dejamos de perder el tiempo con amenazas."
+> Mantengo la mirada fija en la suya, sin retroceder ni un milímetro.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 14)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2704 ms): «Me hablas de perder el tiempo mientras alguien se filtra por mis conductos. ¿Qui»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4676 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8165 ms
+
+> narrativa
+> El parpadeo rítmico de los tubos fluorescentes proyecta sombras erráticas sobre las paredes blancas y desconchadas, mientras el suelo de linóleo gris devuelve un reflejo frío y estéril. A pesar de la firmeza en la mirada, el intento de desviar la atención hacia la cooperación no encuentra eco en el hombre; Nax no retrocede ni un milímetro, manteniendo su cuerpo inclinado en una invasión deliberada del espacio personal.
+> La tensión en su mandíbula se relaja apenas un instante, reconociendo la entereza del otro, pero su expresión permanece gélida. Con un tono cortante que no admite réplicas, sentencia: "Me hablas de perder el tiempo mientras alguien se filtra por mis conductos. ¿Quién te ha dicho que esto es una amenaza? Es una pregunta. Te la repito: ¿quién conoce los puntos ciegos?".
+> mecanica
+> Persuasión: Fallo (14 vs CD 15). No has logrado convencer a Nax de que tu ayuda es más valiosa que la información inmediata.
+> presion
+> Nax ha interpretado la falta de nombres no como una carencia, sino como una resistencia deliberada. El espacio para la negociación se ha cerrado; cualquier respuesta que no sea un nombre concreto llevará al guardia a asumir tu complicidad y recurrir a la fuerza para extraer la verdad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  860 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 60 — 37/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1289 ms
+
+> "No sé de qué puntos ciegos hablas, pero si hay alguien ahí dentro, yo soy el único capaz de sacarlo sin que rompa nada."
+> Mantengo la mirada fija en la suya, sin retroceder. {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 7)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2623 ms): «No me interesa quién es el más hábil sacando gente de los tubos. Me interesa qui»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1831 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4992 ms
+
+> narrativa
+> El zumbido eléctrico de los fluorescentes satura el pasillo de mantenimiento, envolviendo la escena en una vibración nerviosa que se mezcla con el olor penetrante a ozono y desinfectante barato. La oferta de ayuda cae en el vacío; Nax no se deja impresionar por la pericia técnica ni por la firmeza del gesto. El guardia acorta la distancia final, invadiendo el espacio personal hasta casi rozar el pecho del interlocutor, con los ojos inyectados en sangre por la falta de sueño y una mirada fija que no parpadea.
+> Su voz se vuelve un susurro tenso, una letanía que presiona contra el esternón mientras varía mínimamente la entonación: "No me interesa quién es el más hábil sacando gente de los tubos. Me interesa quién le ha dicho dónde están los huecos. ¿Quién te ha hablado de los puntos ciegos? ¿Quién te ha dado el mapa? ¿Quién te ha dicho que puedes entrar ahí sin que te vean?".
+> mecanica
+> Persuasión: Fallo (7 vs CD 15).
+> presion
+> Nax ha descartado cualquier posibilidad de cooperación voluntaria. Para él, la insistencia en la habilidad técnica es una maniobra de distracción. Si no proporcionas un nombre o una fuente, el guardia pasará de la interrogación a la detención forzosa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  930 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 61 — 38/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2264 ms
+
+> "No necesito mapas cuando sé leer el flujo de este lugar."
+> Mantengo la mirada fija en la suya, sin retroceder ni un milímetro, mientras trato de analizar si su agresividad es fruto del cansancio o de un miedo más profundo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2413 ms): «Leer el flujo. Interesante. Entonces dime: ¿quién te enseñó a leerlo? ¿Quién te »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2711 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4460 ms
+
+> narrativa
+> El pasillo de mantenimiento se cierra sobre la escena como una trampa de metal y cables. Las tuberías que flanquean el espacio sudan una condensación fría y pegajosa, mientras que los paneles eléctricos abiertos chisporrotean con intermitencia, bañando el callejón sin salida en destellos violentos de luz blanca y sombras erráticas. El intento de descifrar la raíz de la agresividad de Nax fracasa; su rostro permanece como una máscara impenetrable, y el cansancio que se adivina en sus ojos no es una debilidad, sino el combustible de una irritabilidad gélida.
+> Nax no retrocede ni un centímetro. Entorna los ojos, analizando cada microgesto con una precisión quirúrgica mientras mantiene la presión física, asfixiando cualquier espacio de maniobra. Su voz surge seca y rítmica, una serie de golpes verbales diseñados para encontrar la grieta en la respuesta: "Leer el flujo. Interesante. Entonces dime: ¿quién te enseñó a leerlo? ¿Quién te explicó cómo funciona el flujo de este lugar? ¿De quién has aprendido que el flujo te permite moverte por los conductos sin que yo lo sepa?".
+> mecanica
+> Perspicacia: Fallo (10 vs CD 15).
+> presion
+> Nax ha interpretado la mención del "flujo" no como una habilidad natural, sino como una instrucción recibida. Cualquier respuesta que no nombre a un mentor o informador será tomada como una confesión de complicidad con una célula infiltrada, acelerando el uso de la fuerza.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  719 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 62 — 39/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  950 ms
+
+> "Aprendí observando. El flujo no necesita maestros cuando se sabe mirar el rastro del metal y la energía."
+> Sostengo la mirada, manteniendo la calma a pesar de la presión física.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (1795 ms): «Observando. ¿Observando qué exactamente? ¿Desde dónde observabas? ¿Quién te dejó»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1529 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5550 ms
+
+> narrativa
+> El pasillo de mantenimiento se siente ahora como un tubo asfixiante de acero oxidado, donde los cables colgantes parecen dedos que buscan atrapar cualquier movimiento. Al fondo, una rejilla de ventilación vibra violentamente, escupiendo ráfagas de aire caliente con un hedor penetrante a ozono y metal quemado que se mezcla con la humedad pegajosa de las tuberías.
+> Bercelio Nax no cede ni un milímetro; al contrario, se inclina más hacia adelante, invadiendo el espacio personal con una agresividad contenida. Su voz se convierte en un susurro cortante y rítmico, casi mecánico, mientras mantiene la presión física: "¿Observando. ¿Observando qué exactamente? ¿Desde dónde observabas? ¿Quién te dejó el espacio para que pudieras 'observar' sin que nadie te echara a patadas?".
+> mecanica
+> Engaño: Fallo (9 vs CD 15).
+> presion
+> La respuesta ha sido descartada como una mentira burda. Nax está convencido de que hay un instructor o un informador detrás, y su paciencia se ha agotado; el siguiente paso será extraer la verdad mediante la fuerza física.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  897 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 63 — 40/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1187 ms
+
+> "No necesitas gritar para conseguir lo que quieres, Nax. Solo estás perdiendo el tiempo."
+> Me quedo inmóvil, sosteniendo su mirada sin retroceder ni un centímetro.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 7)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2530 ms): «El tiempo es lo único que no me sobra, y yo no grito. Interrogo. Ahora, repítelo»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2034 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4131 ms
+
+> narrativa
+> Bercelio Nax ni siquiera parpadea ante el intento de desafío; su postura permanece imperturbable, como una roca que no se conmueve ante el viento. La tensión en el aire se vuelve espesa, casi sólida, mientras el hedor a ozono y metal quemado parece intensificarse en el encierro del pasillo. Se inclina aún más, eliminando cualquier rastro de distancia, con los ojos inyectados en sangre fijos en los tuyos y una voz que es un hilo tenso y gélido.
+> "El tiempo es lo único que no me sobra, y yo no grito. Interrogo. Ahora, repítelo: ¿quién te dio el permiso para estar aquí? ¿Quién te dijo que este pasillo era un buen sitio para 'observar'? ¿Quién te está esperando fuera?"
+> mecanica
+> Intimidación: Fallo (7 vs CD 15).
+> presion
+> El intento de intimidación ha sido percibido como un gesto de arrogancia vacío. Nax ya no busca una conversación, sino una confesión; si la siguiente respuesta no es satisfactoria, procederá a utilizar la fuerza física para despejar sus dudas.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  928 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Intimidación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 64 — 41/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1593 ms
+
+> "Nadie me dio permiso, ni espero a nadie. Solo busco respuestas que alguien en este lugar posee."
+> Mantengo la mirada, aunque retrocedo un paso para recuperar espacio personal.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2324 ms): «Que alguien las posea no te da derecho a buscarlas en mis pasillos. ¿Quién las p»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1636 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3528 ms
+
+> narrativa
+> El intento de ganar distancia es inútil; Bercelio Nax se desplaza con una rapidez brusca, cerrando el espacio recuperado y acorralando la salida en ese pasillo estrecho y opresivo. Las paredes de metal frío parecen contraerse, mientras una electricidad estática vibra en el aire, erizando el vello de la nuca y cargando el ambiente de una tensión eléctrica.
+> Sin parpadear, Nax sostiene la mirada con una intensidad inquisidora, manteniendo un tono seco y casi monocorde que corta cualquier rastro de diplomacia. "Que alguien las posea no te da derecho a buscarlas en mis pasillos. ¿Quién las posee? ¿De quién hablas exactamente? Dime el nombre."
+> mecanica
+> Persuasión: Fallo crítico (5 vs CD 15).
+> presion
+> La respuesta ha sido interpretada como una evasiva cínica. Nax ha dejado de lado la cordialidad y ahora ve al interlocutor como una amenaza activa o un cómplice; cualquier nueva ambigüedad provocará que el guardia use la fuerza física para someter y trasladar al sujeto a una celda de interrogatorio.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1192 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 65 — 42/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1490 ms
+
+> "No soy yo quien debería dar nombres, sino tú quien debería preguntar por qué alguien se arriesgaría a venir aquí."
+> Mantengo la mirada, sin retroceder ni un centímetro a pesar de la cercanía.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2645 ms): «Te crees muy listo devolviéndome la pregunta. No me interesa el 'por qué' ahora »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1775 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10778 ms
+
+> narrativa
+> El zumbido irritante de las luces fluorescentes parece sincronizarse con el latido del corazón en aquel pasillo de acero cepillado, donde el aire denso, cargado de ozono y el aroma ferroso del metal oxidado, se vuelve asfixiante. La resistencia se siente en el aire; la mirada sostenida y la negativa a ceder terreno generan un choque eléctrico que detiene el flujo de la confrontación, obligando a Nax a reconocer que no se enfrenta a alguien fácil de doblegar.
+> Sin embargo, el guardia no retrocede ni un milímetro. Al contrario, se inclina ligeramente hacia adelante, invadiendo el espacio personal con una mirada gélida y los hombros tensos, como un muelle a punto de saltar. "Te crees muy listo devolviéndome la pregunta. No me interesa el 'por qué' ahora mismo, me interesa el 'quién'. Repito: ¿A quién buscas? ¿De quién hablas? Dame un nombre", sentencia con una voz que no admite más juegos.
+> mecanica
+> Intimidación: Éxito (20 vs CD 15).
+> presion
+> Aunque Nax ha reconocido la fuerza del interlocutor y ha dejado de intentar intimidar unilateralmente, su paciencia está al límite. Cualquier respuesta que no contenga un dato concreto o un nombre será tomada como una provocación final, desencadenando una detención violenta inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1235 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · competence_shown
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+  ✗ (Mundo) delta rechazado por la base (npc.estado_emocional): field npc.estado_emocional is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 66 — 43/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3678 ms
+
+> "Busco a alguien que sabe más de este lugar que tú, guardia. Solo dime dónde está el registro de personal."
+> Mantengo el contacto visual sin retroceder, analizando su lenguaje corporal.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 14+1=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 15)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (1604 ms): «El registro de personal es un documento oficial, no un libro de visitas. ¿Quién »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1599 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5474 ms
+
+> narrativa
+> El zumbido eléctrico de los fluorescentes parpadea, bañando el pasillo de acero en ráfagas de luz blanca y sombras abruptas. Al fondo, el panel digital de la puerta blindada emite un pitido intermitente, un recordatorio mecánico de que el acceso al sector administrativo sigue restringido. La tensión en el aire es casi tangible, espesa como el ozono que satura el ambiente.
+> Bercelio Nax no aparta la mirada ni un segundo, manteniendo la presión física mientras procesa la respuesta como una evasiva más. Su voz se vuelve seca y cortante, despojándose de cualquier rastro de cortesía: "El registro de personal es un documento oficial, no un libro de visitas. ¿Quién te pidió que lo buscaras? Repito: ¿Quién te mandó? ¿De quién hablas?".
+> mecanica
+> Perspicacia: Éxito (15 vs CD 15).
+> presion
+> Nax ha dejado de intentar intimidar por pura fuerza; ahora busca una fisura en la historia. Si no se proporciona un nombre o una autoridad que respalde la búsqueda, el guardia interpretará la insistencia como un acto de espionaje y procederá a la detención forzosa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  944 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 67 — 44/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1100 ms
+
+> "No necesito que nadie me mande para saber dónde buscar la información que me interesa."
+> Sostengo la mirada de Nax sin retroceder, manteniendo un tono gélido mientras intento descifrar si su agresividad es miedo o simple protocolo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 10+1=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 11)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (3336 ms): «Interesante. Así que actúas por cuenta propia. ¿Quién te interesa? ¿A quién busc»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1878 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5263 ms
+
+> narrativa
+> El pasillo técnico se estrecha, asfixiando el espacio entre los conductos de ventilación expuestos y los paneles abiertos que dejan al descubierto marañas de cables trenzados. La luz parpadea con un ritmo errático, creando un efecto estroboscópico que distorsiona las distancias y convierte cada movimiento en una sucesión de imágenes fragmentadas. La mirada fría de Nax no cede; al contrario, el intento de descifrar sus motivos choca contra un muro de indiferencia profesional y sospecha.
+> Bercelio se inclina ligeramente hacia adelante, invadiendo el espacio personal con una lentitud calculada. Sus ojos, gélidos e inquisitivos, analizan cada microgesto en busca de una grieta en la compostura. "Interesante. Así que actúas por cuenta propia. ¿Quién te interesa? ¿A quién buscas en ese registro? Dímelo ahora", sentencia, mientras el zumbido eléctrico del corredor parece amplificar la presión del interrogatorio.
+> mecanica
+> Perspicacia: Fallo (11 vs CD 15).
+> presion
+> Nax ha interpretado la autonomía del jugador no como independencia, sino como la confirmación de un agente libre o un infiltrado. Si no se revela un objetivo concreto o una justificación válida, el guardia abandonará el interrogatorio verbal para proceder a una detención inmediata por espionaje.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  971 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 68 — 45/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1047 ms
+
+> "Solo busco respuestas que no se encuentran en los manuales oficiales."
+> Mantengo la mirada fija en Bercelio, sin retroceder ni un milímetro ante su cercanía.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 16)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (1800 ms): «¿Respuestas? ¿De qué tipo de respuestas hablamos? ¿Qué es exactamente lo que no »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5289 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3986 ms
+
+> narrativa
+> La tensión en el pasillo técnico se vuelve tangible, casi sólida, mientras el zumbido de los cables parece sincronizarse con el pulso. Bercelio Nax no retrocede; al contrario, se mantiene anclado en el espacio personal, con el cuerpo tenso como un muelle a punto de saltar. Sus ojos no parpadean, clavados en los del interlocutor con una fijeza depredadora, mientras su voz desciende un tono, volviéndose cortante y seca.
+> "¿Respuestas? ¿De qué tipo de respuestas hablamos? ¿Qué es exactamente lo que no figura en los manuales? No me des conceptos, dame nombres", sentencia, acortando la distancia final hasta que el aire entre ambos se siente viciado y pesado.
+> mecanica
+> Engaño: Éxito (16 vs CD 15).
+> presion
+> La respuesta ha evitado la detención inmediata, pero Nax ha quedado intrigado y alerta. Si el jugador continúa dando respuestas ambiguas o evasivas, el guardia interpretará la falta de nombres como una confesión de que oculta una conspiración, cerrando el cerco militar sobre el sector.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1117 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 69 — 46/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1307 ms
+
+> "Hablamos de los nombres que se borran de los registros antes de que lleguen a tu mesa, Nax. Nombres que el mando superior prefiere olvidar."
+> Mantengo la mirada, sin retroceder ni un centímetro, mientras trato de analizar su reacción.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 18+1=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 19)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2020 ms): «Nombres borrados. Registros limpios. Me estás diciendo que alguien arriba está l»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1552 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3827 ms
+
+> narrativa
+> Bercelio Nax no retrocede. Entorna los ojos, procesando la información no como una amenaza, sino como una pieza que encaja en su tablero. Su voz se convierte en un susurro tenso, casi ansioso, mientras se inclina hacia adelante: "Nombres borrados. Registros limpios. Me estás diciendo que alguien arriba está limpiando el camino. ¿Quién? ¿Quién tiene el acceso? Dime exactamente quién firma esas bajas".
+> El aire viciado del pasillo técnico parece espesarse con la revelación. La fijeza depredadora de Nax ha mutado en una urgencia fría; ya no busca una confesión de culpa, sino el hilo del que tirar para desmantelar la estructura que lo rodea.
+> mecanica
+> Perspicacia: Éxito (19 vs CD 15).
+> presion
+> Nax ha mordido el anzuelo, pero su hambre de nombres es absoluta. Si el jugador no proporciona un objetivo concreto o una pista creíble sobre el mando superior, Nax podría decidir que la fuente es poco fiable y recurrir a métodos de interrogatorio más agresivos para obtener la verdad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2104 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = Alguien en el mando superior está borrando nombres de los registros
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 70 — 47/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1390 ms
+
+> "No soy un registro que puedas leer a voluntad, Nax. Pero sé que el rastro no termina en el papel, sino en quien sostiene la pluma."
+> Le sostengo la mirada mientras me alejo un paso para recuperar mi espacio personal.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2568 ms): «Filosofías. Me estás dando filosofías cuando te pido un nombre. ¿Quién sostiene »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1812 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3497 ms
+
+> narrativa
+> El intento de distanciarse fracasa; Bercelio Nax no permite que el espacio se restablezca. Se mantiene inclinado, invadiendo el perímetro personal con una fijeza perturbadora, mientras el zumbido eléctrico de la maquinaria antigua vibra bajo los pies y los cables colgantes del pasillo técnico rozan los hombros como dedos gélidos.
+> Sus ojos no se apartan, anclados en los del interlocutor con una intensidad mecánica. Su tono es seco, rítmico, despojado de cualquier rastro de paciencia: "Filosofías. Me estás dando filosofías cuando te pido un nombre. ¿Quién sostiene la pluma? ¿Quién firma las bajas? ¿Quién es el que borra los rastros?".
+> mecanica
+> Persuasión: Fallo (9 vs CD 15).
+> presion
+> La paciencia de Nax se ha agotado. Al percibir la respuesta como una evasiva, su disposición cordial se desvanece; si la siguiente respuesta no contiene un nombre o una pista tangible, dejará de preguntar para empezar a imponer el silencio.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1105 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 71 — 48/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1187 ms
+
+> "No tengo el nombre que buscas en la punta de la lengua, pero puedo conseguirlo si me das una razón para confiar en ti."
+> Sostengo la mirada sin retroceder, analizando sus gestos para ver hasta dónde llega su desesperación.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 12+1=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 13)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2362 ms): «No busco que confíes en mí. Busco el nombre. Repito: ¿Quién firma las bajas? ¿Qu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2338 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2980 ms
+
+> narrativa
+> El intento de analiza r los gestos de Nax no revela ninguna grieta; su rostro es una máscara de piedra que no delata desesperación ni duda. El pasillo técnico parece cerrarse sobre ambos, con el zumbido constante de la maquinaria antigua vibrando en el aire saturado y los cables que cuelgan como lianas eléctricas rozando las paredes metálicas.
+> Bercelio no retrocede ni un milímetro, manteniendo la inclinación que acorta la distancia hasta volverse asfixiante. Sin parpadear, lanza sus palabras como látigos secos y rítmicos: "No busco que confíes en mí. Busco el nombre. Repito: ¿Quién firma las bajas? ¿Quién es el responsable de los registros? Dame un nombre o deja de hacerme perder el tiempo".
+> mecanica
+> Perspicacia: Fallo (13 vs CD 15).
+> presion
+> La ventana de negociación se ha cerrado. Nax ya no ve utilidad en el intercambio de favores; si el siguiente enunciado no entrega un dato concreto, el interrogatorio pasará de la presión psicológica a la coacción física.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  853 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) delta rechazado por la base (npc.disposicion): field npc.disposicion is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 72 — 49/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1253 ms
+
+> "Deja de jugar a las adivinanzas, Nax. Sabes que el tiempo se agota para ambos."
+> Me separo ligeramente para recuperar espacio, pero mantengo la mirada fija en él, buscando cualquier signo de debilidad mientras espero su respuesta.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 7)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2372 ms): «El tiempo se agota para ti, no para mí. Una vez más: ¿Quién firma las bajas? ¿Qu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1454 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4953 ms
+
+> narrativa
+> El intento de marcar distancia es inútil. El zumbido mecánico del pasillo técnico, opresivo y vibrante, parece amplificar el peso de los pasos de Nax mientras recupera el terreno perdido. Los cables colgantes rozan las paredes de metal frío como dedos inertes, envolviendo la escena en una atmósfera de claustrofobia industrial donde el aire se siente denso y metálico.
+> Bercelio no se inmuta; al contrario, acorta el espacio nuevamente con un paso lento y pesado, cerrando la distancia hasta que su presencia vuelve a ser asfixiante. Mantiene la mirada fija y gélida, imperturbable ante la advertencia, y sentencia con una frialdad cortante: "El tiempo se agota para ti, no para mí. Una vez más: ¿Quién firma las bajas? ¿Quién lleva los registros? Dame un nombre. Ahora."
+> mecanica
+> Intimidación: Fallo (7 vs CD 15).
+> presion
+> Nax ha perdido la paciencia. Cualquier respuesta que no sea un nombre concreto será interpretada como una obstrucción deliberada, y la Guardia no suele usar palabras para despejar el camino.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1525 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Intimidación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 73 — 50/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2131 ms
+
+> "No soy quien lleva los libros, pero sé dónde se guardan los secretos de este lugar."
+> Doy un paso al frente, manteniendo la calma, e intento analizar la expresión de Nax para ver hasta dónde llega su desesperación.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 17+1=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (4902 ms): «¿Dónde se guardan? ¿Dónde están los libros? ¿En qué parte exacta de este agujero»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  653 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  7306 ms
+
+> narrativa
+> La tensión en el pasillo técnico vibra junto al zumbido de las máquinas, pero el cambio de postura surte efecto. La mirada de Nax, antes gélida y unidireccional, se fragmenta por un instante; hay un hambre voraz en sus pupilas, una urgencia que raya en la desesperación, aunque su rostro permanezca como una máscara de granito. El hombre no retrocede ni un milímetro, pero el hambre de información ha sustituido a la mera voluntad de imponerse.
+> Bercelio se inclina ligeramente, analizando cada micro-gesto con una cadencia mecánica y obsesiva, como si estuviera tachando opciones en una lista mental invisible. Sus ojos se entrecierran mientras dispara la pregunta: "¿Dónde se guardan? ¿Dónde están los libros? ¿En qué parte exacta de este agujero esconden los registros?".
+> mecanica
+> Perspicacia: Éxito (18 vs CD 15).
+> presion
+> Nax ha mordido el anzuelo, pero su obsesión es peligrosa. Si la ubicación revelada no contiene lo que él busca, su cordialidad se evaporará y la fuerza de la Guardia será la única respuesta.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  701 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 74 — 51/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1009 ms
+
+> "Tus registros no sirven de nada si no sabes cómo leerlos, Nax."
+> Me adelanto un paso, colocándome entre Bercelio y el guardia para analizar la reacción de este último ante la mención de los libros.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 18+1=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 19)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2098 ms): «¿Cómo que no sirven? ¿Qué quieres decir con que no sé leerlos? Explícate. Ahora.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1866 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3682 ms
+
+> narrativa
+> La mención de su incompetencia golpea el aire como un latigazo. Bercelio Nax se queda gélido, congelado en una inmovilidad antinatural mientras el silencio se vuelve pesado, cargado de una hostilidad eléctrica. No hay rastro de duda en su postura, solo una rigidez que sugiere un resorte a punto de saltar.
+> Su mirada se clava con una intensidad depredadora, fija y sin parpadeo. Sin moverse del sitio, sus hombros se tensan y su voz desciende un tono, transformándose en un susurro cortante y peligroso: "¿Cómo que no sirven? ¿Qué quieres decir con que no sé leerlos? Explícate. Ahora."
+> mecanica
+> Perspicacia: Éxito (19 vs CD 15).
+> presion
+> El orgullo de Nax ha sido herido. Si la explicación no es convincente o no le ofrece una ventaja inmediata, el interrogatorio pasará de ser una negociación a una imposición violenta.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1024 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · ideal_violated
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 75 — 52/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1029 ms
+
+> "Me refiero a que vuestra interpretación es superficial. Os perdéis en los detalles mientras ignoráis el patrón real que late debajo."
+> Mantengo la mirada, sin retroceder ni un centímetro, mientras analizo su reacción.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 14)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (9467 ms): «¿El patrón real? ¿Qué patrón? Dímelo. ¿A qué te refieres con patrón? Suéltalo ya»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1575 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3469 ms
+
+> narrativa
+> El despacho de Nax se siente ahora más pequeño, el aire viciado por la tensión. Las sombras de los estantes repletos de pergaminos parecen cerrarse sobre el grupo mientras el silencio aguarda una respuesta que calme o detone la ira del hombre. Las palabras sobre el patrón real no logran desestabilizarlo ni sembrar la duda; al contrario, actúan como combustible para su impaciencia.
+> Bercelio no rompe el contacto visual. Se inclina ligeramente hacia delante, invadiendo el espacio personal con la mandíbula apretada y la voz seca, exigiendo respuestas rápidas: "¿El patrón real? ¿Qué patrón? Dímelo. ¿A qué te refieres con patrón? Suéltalo ya."
+> mecanica
+> Persuasión: Fallo (14 vs CD 15).
+> presion
+> La ambigüedad de la respuesta ha sido interpretada como un juego de poder. Nax ha perdido la paciencia y cualquier vacilación posterior será tomada como una insolencia, cerrando la vía del diálogo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  870 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 76 — 53/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  958 ms
+
+> "No es un juego, Bercelio. Es un hecho que deberías conocer si quieres mantener el control de esta situación."
+> Doy un paso al frente, manteniendo la mirada fría y fija en él.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5383 ms): «Tú no controlas nada aquí. No me hables de control mientras me das respuestas qu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2882 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3378 ms
+
+> narrativa
+> El despacho se ha vuelto asfixiante; el aroma a tinta vieja y cuero ahora se mezcla con el olor metálico del sudor y la hostilidad. El intento de imponer autoridad cae en el vacío, chocando contra un muro de desprecio. Bercelio Nax permanece rígido, su rostro una máscara de frialdad mientras el espacio entre ambos se reduce a una distancia peligrosa.
+> De repente, Nax golpea la mesa con la palma de la mano, el estruendo resonando en las paredes cargadas de pergaminos. Sin apartar la mirada y manteniendo el cuerpo inclinado hacia adelante para anular cualquier movimiento, sentencia con voz cortante: "Tú no controlas nada aquí. No me hables de control mientras me das respuestas que parecen acertijos. ¿Qué patrón? ¿Qué patrón? Dímelo ya, o vas a descubrir que mi paciencia es mucho más corta que tu lengua."
+> mecanica
+> Intimidación: Fallo (9 vs CD 15).
+> presion
+> Nax ha interpretado el desafío como una insolencia gratuita. Cualquier siguiente palabra que no sea una respuesta directa y concreta provocará que el guardia eche al jugador del despacho por la fuerza, cortando cualquier acceso a la información de la Guardia de Umbral Hondo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1555 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Intimidación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) delta rechazado por la base (npc.estado_emocional): field npc.estado_emocional is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 77 — 54/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  969 ms
+
+> "El patrón es la secuencia de desapariciones y los símbolos que dejan atrás, Nax. No son azarosos."
+> Me enderezo lentamente, manteniendo la mirada fría.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 7)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2720 ms): «Símbolos y secuencias. Muy bien. ¿Dónde están los símbolos? ¿En qué lugar exacto»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1414 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4604 ms
+
+> narrativa
+> El intento de recuperar la compostura es inútil; la frialdad en la mirada no logra imponer respeto, sino que alimenta la irritación de Nax. El despacho parece encogerse, las estanterías de pergaminos actúan como muros que encajonan la confrontación mientras el aire vibra con una tensión eléctrica y asfixiante entre el escritorio de caoba y el jugador.
+> Bercelio Nax no retrocede ni un milímetro. Al contrario, invade el espacio personal, reduciendo la distancia hasta que su aliento es perceptible. Con un susurro tenso que roza el gruñido, mientras sus ojos escudriñan cada tic o duda del rostro ajeno, sentencia: "Símbolos y secuencias. Muy bien. ¿Dónde están los símbolos? ¿En qué lugar exacto los has visto? ¿Dónde están los malditos símbolos?".
+> mecanica
+> Persuasión: Fallo (7 vs CD 15).
+> presion
+> Nax ha perdido la paciencia con las generalidades. Si la respuesta no es una ubicación exacta y verificable, el guardia considerará que el jugador está jugando con él y lo expulsará violentamente del despacho.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  863 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 78 — 55/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1040 ms
+
+> "No me presiones, Nax. Si quieres la ubicación exacta, tendrás que darme una razón para confiarte el secreto ahora mismo."
+> Mantengo la mirada, sin retroceder, mientras busco algún signo de debilidad en su expresión.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 17+1=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (1925 ms): «¿Razones? ¿Me estás pidiendo que te seduzca para que hagas tu trabajo? Dímelo ah»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1415 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  6690 ms
+
+> narrativa
+> La mirada fija y la negativa a retroceder logran perforar la fachada de Nax, revelando que su urgencia no nace de la arrogancia, sino de un miedo visceral que intenta camuflar con agresividad. Sin embargo, esa vulnerabilidad no lo vuelve flexible; al contrario, lo vuelve peligroso. El despacho, saturado de olor a tinta vieja y cera, parece encogerse aún más, y las sombras proyectadas por las velas se alargan como dedos que se cierran sobre el espacio compartido.
+> Bercelio Nax cierra el puño sobre la mesa, golpeándola una sola vez pero con una fuerza que hace vibrar la madera, sin apartar la mirada ni un centímetro y manteniendo el rostro a escasos centímetros del tuyo. Su voz estalla en un tono imperativo: "¿Razones? ¿Me estás pidiendo que te seduzca para que hagas tu trabajo? Dímelo ahora. ¿Dónde están? ¿En qué sitio los has visto? ¡Dime dónde están los símbolos!".
+> mecanica
+> Perspicacia: Éxito (18 vs CD 15).
+> presion
+> Nax ha llegado al límite de su tolerancia. Cualquier intento más de chantaje o evasión será interpretado como una burla deliberada, lo que provocará que el guardia pase de la intimidación a la fuerza física para extraer la información.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  887 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 79 — 56/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1656 ms
+
+> "No hace falta que me seduzcas, Nax. Solo que entiendas que el miedo es un mal consejero para quien busca respuestas."
+> Sostengo la mirada, manteniendo la calma mientras busco cualquier indicio de debilidad adicional en su expresión.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7078 ms): «El miedo no me aconseja, me mantiene despierto. Ahora deja de analizarme y respó»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1976 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5435 ms
+
+> narrativa
+> El despacho de Nax se siente ahora más claustrofóbico que nunca; los archivadores de madera oscura y los estantes que crujen bajo el peso de legajos amarillentos parecen cerrarse sobre la escena. La luz vacilante de las velas proyecta sombras erráticas, subrayando el rostro sudoroso del guardia y dejando el fondo de la estancia sumido en una penumbra espesa. A pesar del intento de mantener la calma, la mirada de Nax permanece impenetrable, como una pared de piedra que no deja filtrar ninguna nueva grieta ni debilidad.
+> Sin retroceder ni un milímetro, Bercelio Nax mantiene sus ojos inyectados en sangre clavados en los tuyos con una fijeza depredadora. Su respiración es pesada y el puño sigue apretando el borde de la mesa, haciendo crujir la madera bajo la presión. "El miedo no me aconseja, me mantiene despierto", suelta con una brusquedad que corta el aire. "Ahora deja de analizarme y respóndeme: ¿En qué sitio los has visto? ¿Dónde están los símbolos? Repito, ¿en qué parte exacta de este pueblo los has visto?".
+> mecanica
+> Perspicacia: Fallo (10 vs CD 15).
+> presion
+> La paciencia de Nax se ha agotado completamente. Cualquier nueva evasión o intento de analizar su estado mental será tomado como un desafío directo a su autoridad, lo que derivará en el uso de la fuerza física para obtener las respuestas.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  819 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 80 — 57/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1412 ms
+
+> "Están en los callejones del sector bajo, ocultos donde la luz no llega."
+> Sostengo la mirada, manteniendo un tono neutro y sin mostrarme intimidado por su postura.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (3666 ms): «¿Sectores bajos? ¿Callejones? ¿Dónde exactamente? Dame una esquina, una puerta, »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6431 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3534 ms
+
+> narrativa
+> El despacho de Nax, saturado de olor a tinta vieja y cera, se siente ahora como una celda donde el silencio pesa más que las palabras. La información parece calmar la tormenta inmediata, aunque no disipa la tensión que flota en el aire pesado de la estancia.
+> Bercelio Nax se inclina hacia adelante, invadiendo el espacio personal con un movimiento brusco. Su voz es un gruñido seco y rítmico que no deja espacio para el silencio: "¿Sectores bajos? ¿Callejones? ¿Dónde exactamente? Dame una esquina, una puerta, un nombre. No me sirves de nada diciéndome que están 'donde la luz no llega', porque en este pueblo la luz no llega a ninguna parte que importe".
+> mecanica
+> Engaño: Éxito (20 vs CD 15).
+> presion
+> Nax ha aceptado la pista, pero su impaciencia se ha transformado en una exigencia quirúrgica. Si la siguiente respuesta es vaga o contradictoria, considerará que el testimonio es un juego y procederá a interrogar bajo métodos mucho menos cordiales.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2025 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = Los objetivos están en los callejones del sector bajo
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+  ✗ (Mundo) delta rechazado por la base (npc.estado): field npc.estado is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 81 — 58/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3451 ms
+
+> "Tengo un lugar concreto. El callejón del Herrero Ciego, detrás de la vieja curtiduría."
+> Mantengo la mirada fija en Nax, sin retroceder ante su brusquedad.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6407 ms): «El callejón del Herrero Ciego. Detrás de la curtiduría. ¿Estás seguro de que es »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1455 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  6212 ms
+
+> narrativa
+> Bercelio Nax se queda inmóvil, con los ojos fijos en los tuyos, procesando la respuesta. No parpadea. Su voz se convierte en un martilleo seco, repitiendo la ubicación para buscar cualquier fisura en la seguridad del testimonio: "El callejón del Herrero Ciego. Detrás de la curtiduría. ¿Estás seguro de que es ahí? ¿Viste entrar a alguien o solo sospechas que es ahí? ¿Me estás diciendo que es exactamente detrás de la curtiduría?".
+> La precisión de la respuesta parece haber calado. Mientras Nax escudriña tu rostro, la mente evoca la imagen de aquel lugar: un callejón estrecho y húmedo, flanqueado por muros de piedra descascarada donde el hedor persistente a cuero curtido y amoníaco de la vieja curtiduría se pega a la garganta como una capa de grasa.
+> mecanica
+> Engaño: Éxito (20 vs CD 15). Nax acepta la ubicación como un dato concreto y fiable.
+> presion
+> Nax ha validado la pista, pero ahora su mente ya está en el terreno. Si decides acompañarlo o intentar adelantarte, cualquier error en la navegación de esos sectores bajos podría hacer que el guardia dude de tu honestidad y sospeche que lo has conducido a una emboscada.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2687 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = La ubicación es el callejón del Herrero Ciego, detrás de la vieja curtiduría
+  ✓ creación location: callejón del Herrero Ciego
+  ⚠ nombres no reconocidos: Ciego, Engaño, Herrero, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location callejón del Herrero Ciego
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 82 — 59/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  936 ms
+
+> "Estoy completamente seguro. Es exactamente allí."
+> Mantengo la mirada fija en Nax, sin mostrar ninguna duda.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 17+4=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 21)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (1973 ms): «Exactamente allí. Bien. Mantente cerca, pero no te adelantes. Si resulta que me »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  623 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2505 ms
+
+> narrativa
+> Bercelio Nax asiente una sola vez, cortante. La tensión en su mandíbula no desaparece, pero la duda en su mirada se transforma en una determinación gélida. Se gira bruscamente hacia la salida, ajustando el cinturón de su equipo con un tirón seco mientras empieza a caminar sin mirar atrás, dejándote el camino marcado por el eco de sus botas sobre el suelo.
+> "Exactamente allí. Bien. Mantente cerca, pero no te adelantes. Si resulta que me has hecho perder el tiempo en el barro del callejón, vamos a tener una conversación muy distinta sobre tu sinceridad", sentencia con una voz que no admite réplica, mientras se adentra en la penumbra del camino hacia la curtiduría.
+> mecanica
+> Engaño: Éxito (21 vs CD 15).
+> presion
+> Nax ha aceptado la ubicación, pero ha establecido una amenaza clara: cualquier inconsistencia al llegar al callejón del Herrero Ciego convertirá su actual cordialidad en una hostilidad inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1770 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = La ubicación buscada es exactamente allí
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 83 — 60/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1211 ms
+
+> "No me gusta perder el tiempo tanto como a ti, Nax."
+> Camino a su lado, manteniendo la distancia que ha pedido mientras observo su lenguaje corporal.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 3+1=4
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 4)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (3014 ms): «Menos palabras y más pasos. ¿Seguro que es en este callejón? Te he preguntado si»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1514 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3738 ms
+
+> narrativa
+> El camino se estrecha, convirtiéndose en una garganta de muros de piedra descascarada que parecen cerrarse sobre vosotros. La humedad se filtra por las botas y el aire se vuelve denso, saturado por un hedor asfixiante a cuero curtido y químicos penetrantes que irrita la garganta. A pesar de observar cada movimiento de Nax, su lenguaje corporal es un muro infranqueable; no hay un tic, una vacilación ni un gesto que revele qué pasa por su mente.
+> Bercelio no se detiene ni gira la cabeza, manteniendo un paso firme y rítmico que resuena en el callejón. Su voz surge seca y cortante, proyectando una autoridad gélida que no requiere contacto visual para imponerse: "Menos palabras y más pasos. ¿Seguro que es en este callejón? Te he preguntado si es aquí. ¿Estamos en el sitio correcto?".
+> mecanica
+> Perspicacia: Fallo (4 vs CD 15).
+> presion
+> La impaciencia de Nax crece y su confianza en la guía del jugador se desmorona; un paso en falso o una duda más podrían hacer que decida tomar el control de la situación por la fuerza.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  940 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 84 — 61/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1273 ms
+
+> "Es aquí. Solo ten paciencia si no quieres arruinarlo."
+> Sigo avanzando con paso firme, ignorando la irritación de Bercelio mientras trato de identificar el origen exacto de ese olor químico.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 19+1=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2419 ms): «La paciencia no encuentra culpables. Dime que es aquí. Confirma que es aquí. ¿Me»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1843 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  6219 ms
+
+> narrativa
+> El paso firme conduce finalmente al origen del hedor. El callejón desemboca en un patio semicerrado donde el olor químico se vuelve ensordecedor, saturando el aire hasta volverlo casi tangible. Varias tinas de piedra, rebosantes de un líquido amarillento y espumoso, flanquean una puerta de hierro oxidado que parece sellar el paso; a los pies, el suelo es una trampa resbaladiza de vertidos recientes de curtido que brillan bajo la luz mortecina.
+> Bercelio Nax se detiene en seco, aunque evita mirar al jugador. Se cruza de brazos y ladea levemente la cabeza, escuchando el silencio del entorno con una intensidad depredadora antes de hablar. "La paciencia no encuentra culpables. Dime que es aquí. Confirma que es aquí. ¿Me estás asegurando que el rastro termina en este callejón?", su voz es un hilo tenso, cargado de una exigencia que no admite ambigüedades.
+> mecanica
+> Percepción: Éxito (20 vs CD 15).
+> presion
+> El patio está aislado, pero el ruido de las botas sobre el suelo resbaladizo y la intensidad del olor podrían alertar a quienquiera que esté tras la puerta de hierro antes de que podáis organizar un asalto.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1021 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 85 — 62/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3839 ms
+
+> "El rastro termina aquí. El hedor es indiscutible."
+> Me acerco a la puerta de hierro con cautela, tratando de no hacer ruido sobre el suelo resbaladizo. Me pego a la pared junto a la entrada para escuchar si hay alguien al otro lado.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 5+1=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 6)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1532 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4213 ms
+
+> narrativa
+> El suelo, cubierto por esa película viscosa de curtido, traiciona el paso en el momento más crítico. Un deslizamiento brusco rompe la cautela, provocando un ruido sordo y húmedo que resuena contra los muros de piedra. Al pegarse a la pared, el frío del metal de la puerta se siente gélido, pero el oído no encuentra nada; el silencio del otro lado es absoluto, una ausencia de sonido que resulta más inquietante que cualquier ruido, mientras las tinas cercanas siguen burbujeando con una lentitud hipnótica.
+> Bercelio Nax no dice nada. Se limita a observar la torpeza del movimiento, manteniendo los brazos cruzados y una expresión gélida, con la mirada fija en el punto donde el pie resbaló.
+> mecanica
+> Percepción: Fallo (6 vs CD 15).
+> presion
+> El ruido del deslizamiento ha alertado a quienquiera que esté tras la puerta; el elemento sorpresa se ha perdido y el enemigo ahora sabe exactamente dónde estáis.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1205 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 86 — 63/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1141 ms
+
+> "Qué mirada tan pesada, Nax."
+> Me separo rápidamente de la puerta y me pongo en guardia, preparando un hechizo mientras miro fijamente la madera fría.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 4+1=5
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (1875 ms): «Menos comentarios y más atención. ¿Has oído algo? ¿Ni un ruido? ¿Nada?»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1370 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3115 ms
+
+> narrativa
+> El aire en el pasillo estrecho es denso y amargo, saturado por los vapores ácidos que emanan de las tinas de curtido. El suelo viscoso parece absorber cualquier intento de escucha, devolviendo un silencio sordo y opresivo que no revela absolutamente nada de lo que ocurre tras la madera de la puerta. El esfuerzo por percibir un movimiento o un susurro resulta estéril; solo queda la humedad pegajosa filtrándose por las botas y la incertidumbre.
+> Bercelio Nax no desvía la mirada del suelo viscoso mientras habla, con una voz seca y cortante que no deja espacio para el humor: "Menos comentarios y más atención. ¿Has oído algo? ¿Ni un ruido? ¿Nada?".
+> mecanica
+> Percepción: Fallo (5 vs CD 15).
+> presion
+> El silencio del otro lado de la puerta ha dejado de ser un misterio para convertirse en una emboscada; el enemigo ha tenido tiempo de posicionarse y ahora os espera con la ventaja del terreno.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1251 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 87 — 64/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1423 ms
+
+> "No he oído nada. El aire es demasiado denso aquí dentro."
+> Me separo ligeramente de la puerta y miro a Bercelio con frialdad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 3+1=4
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 4)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2738 ms): «¿Nada? ¿Ni un rasguño en la madera? ¿Ni una respiración? El aire estará denso, p»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1348 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3044 ms
+
+> narrativa
+> El vaho amarillento de las tinas de curtido se desliza por el pasillo angosto, pegándose a la piel como una película grasienta y ácida. El silencio que emana de la puerta de madera sigue siendo absoluto, una barrera impenetrable que no devuelve ni el rastro de una respiración ni el roce de una bota sobre el suelo húmedo.
+> Bercelio Nax se endereza bruscamente, clavando su mirada en los ojos del jugador con intensidad, sin parpadear, mientras aprieta el pomo de su arma. "¿Nada? ¿Ni un rasguño en la madera? ¿Ni una respiración? El aire estará denso, pero el silencio es lo que me preocupa", sentencia con una tensión que vibra en sus hombros.
+> mecanica
+> Perspicacia: Fallo (4 vs CD 15).
+> presion
+> La incertidumbre se ha vuelto peligrosa; mientras el grupo duda frente a la puerta, cualquier amenaza en el interior ya ha detectado vuestra presencia y ha optimizado su posición para el golpe.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  865 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 88 — 65/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1400 ms
+
+> "El silencio es la mejor señal de que algo nos espera."
+> Me adelanto y empujo la puerta con brusquedad para entrar.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 3+1=4
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 4)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (1656 ms): «¡Espera! No he dado la orden de entrar. ¿Por qué tanta prisa? ¿Qué es lo que tie»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1510 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3638 ms
+
+> narrativa
+> El impulso de entrar choca contra una pared de carne y acero. Antes de que la puerta pueda ceder, una mano se cierra sobre el hombro con un agarre firme y seco, anclando el cuerpo al sitio con una fuerza que no admite réplicas. El aire de la estancia se filtra hacia afuera, trayendo consigo un hedor nauseabundo a cuero podrido y químicos que se mezcla con el vaho amarillento del pasillo.
+> Bercelio Nax entrecierra los ojos, escudriñando cada microgesto del rostro ajeno en busca de una señal de nerviosismo. "¡Espera! No he dado la orden de entrar. ¿Por qué tanta prisa? ¿Qué es lo que tienes tanta urgencia por encontrar ahí dentro?", interroga con un tono que ha perdido toda cordialidad. Tras él, la luz mortecina revela el interior: una estancia rectangular y húmeda donde varias tinas de madera desbordan un líquido viscoso y amarillento que inunda el suelo, creando espejismos grasientos bajo la puerta abierta.
+> mecanica
+> Percepción: Fallo (4 vs CD 15).
+> presion
+> La brusquedad del intento de entrada ha alertado a cualquier presencia oculta entre las tinas; el elemento sorpresa se ha perdido y el entorno ahora es un campo de emboscada.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  687 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 89 — 66/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1084 ms
+
+> "No es prisa, sino curiosidad por el aroma de este lugar. Un hedor fascinante."
+> Me quedo inmóvil bajo su agarre, mirándolo fijamente a los ojos sin retroceder. {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (1979 ms): «¿Curiosidad? El hedor no es lo que te hace empujar una puerta cerrada. ¿A qué ll»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1660 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4956 ms
+
+> narrativa
+> La excusa cae al suelo con el mismo peso muerto que el líquido viscoso que desborda las tinas de madera. Bercelio Nax no se deja seducir por la respuesta; al contrario, aprieta ligeramente el agarre sobre el hombro, anclando el cuerpo mientras inclina la cabeza. Sus ojos, gélidos y analíticos, se clavan en las pupilas del interlocutor, diseccionando la mentira en tiempo real mientras el vaho amarillento de la sala húmeda envuelve la escena en una calima enfermiza.
+> "¿Curiosidad? El hedor no es lo que te hace empujar una puerta cerrada. ¿A qué llamas curiosidad? Dime exactamente qué es lo que te fascina de este olor", sentencia Nax. Su voz es un hilo de acero que corta el aire saturado de químicos, manteniendo una presión física y psicológica que deja claro que no soltará el hombro hasta obtener una respuesta que no suene a improvisación.
+> mecanica
+> Engaño: Fallo (9 vs CD 15).
+> presion
+> Nax ha detectado la falsedad en la respuesta; su disposición ha pasado de la sospecha a la hostilidad activa y cualquier intento posterior de engañarlo requerirá un esfuerzo mucho mayor.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1066 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 90 — 67/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1073 ms
+
+> "No me gusta que me aprietes el hombro."
+> Me quedo rígido, sosteniéndole la mirada sin pestañear mientras trato de leer sus verdaderas intenciones.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 3+1=4
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 4)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (3350 ms): «No me importa lo que te guste. Me importa lo que haces en una sala que no deberí»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1909 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10008 ms
+
+> narrativa
+> El intento de leer las intenciones de Nax choca contra un muro de indiferencia profesional. No hay una grieta en su expresión, ni un tic que delate un plan oculto; solo hay una voluntad gélida y una certeza absoluta de quien tiene el control de la situación. El vaho amarillento de la sala de curtido parece espesarse, fundiéndose con el olor sulfuroso que emana de las tinas, mientras el goteo rítmico del techo marca los segundos de un silencio tenso y húmedo.
+> Bercelio Nax no afloja el agarre; al contrario, clava los dedos con más firmeza en el hombro, manteniendo una presión asfixiante con el rostro a escasos centímetros. Su voz surge imperturbable, cortando la calima: "No me importa lo que te guste. Me importa lo que haces en una sala que no deberías estar pisando. Repito: ¿Qué buscabas aquí? ¿Y por qué me mientes?".
+> mecanica
+> Perspicacia: Fallo (4 vs CD 15).
+> presion
+> Nax ha interpretado la resistencia y el silencio como una confirmación de culpabilidad; el siguiente paso es el traslado forzoso a las celdas de la Guardia si no hay una confesión inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1016 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 91 — 68/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  955 ms
+
+> "No miento, simplemente no veo la necesidad de darte detalles que no comprendes."
+> Intento zafarme de su agarre con un movimiento brusco.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 14+-1=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 13)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  634 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3380 ms
+
+> narrativa
+> El movimiento brusco es insuficiente contra la fuerza bruta de Nax. El agarre en el hombro no cede ni un milímetro; al contrario, el tirón solo sirve para desequilibrar la postura, dejando el cuerpo expuesto y vulnerable bajo la presión asfixiante. La resistencia física, torpe y desesperada, termina en un forcejeo inútil que solo acentúa la disparidad de poder en la húmeda penumbra de la sala de curtido.
+> Bercelio Nax permanece imperturbable, su rostro convertido en una máscara de desdén gélido. No hay palabras, solo una mirada que juzga la insolencia del gesto y una presión renovada en los dedos que advierte que la paciencia se ha agotado por completo.
+> mecanica
+> Atletismo: Fallo (13 vs CD 15).
+> presion
+> Nax ya no busca respuestas, sino sumisión. El siguiente movimiento será reducir el brazo y arrastrar al detenido hacia las celdas de la Guardia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  885 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 92 — 69/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1741 ms
+
+> "Suelta mi brazo, Nax. No me obligues a hacer algo de lo que te arrepientas."
+> Dejo de forcejear y lo miro fijamente a los ojos, intentando que mi voz suene gélida y segura.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 6+4=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2641 ms): «¿Arrepentirme? Inténtalo. ¿Qué vas a hacer? Inténtalo ahora mismo. ¿Qué es eso q»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1964 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3420 ms
+
+> narrativa
+> La amenaza queda suspendida en el aire húmedo de la sala de curtido, donde el olor acre al amoníaco y las pieles mojadas parecen espesar la atmósfera. Bajo la luz débil que se filtra por los respiraderos, las partículas de polvo flotan alrededor de los dos cuerpos, pero la tensión no cede; el intento de imponer autoridad choca contra un muro de indiferencia absoluta.
+> Bercelio Nax no afloja el agarre; al contrario, cierra el puño con más fuerza mientras clava la mirada en los ojos del jugador, manteniendo el rostro a pocos centímetros, sin parpadear. "¿Arrepentirme? Inténtalo. ¿Qué vas a hacer? Inténtalo ahora mismo. ¿Qué es eso que me obligaría a arrepentirme?", escupe con un desdén que anula cualquier rastro de miedo.
+> mecanica
+> Intimidación: Fallo (10 vs CD 15).
+> presion
+> La paciencia de Nax se ha evaporado. Cualquier palabra más que no sea una sumisión total provocará que use la fuerza bruta para reducir el brazo y arrastrar al detenido hacia las celdas de la Guardia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  793 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Intimidación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 93 — 70/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1219 ms
+
+> "Tú no eres quien decide cuándo termina esto."
+> Suelto un suspiro gélido y dejo de resistirme a su agarre, relajando el brazo para que crea que me he rendido mientras busco cualquier debilidad en su postura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 18+1=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 19)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2005 ms): «¿Quién decido yo? ¿Quién dice que el tiempo lo marcas tú? ¿En qué mundo crees qu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  599 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3889 ms
+
+> narrativa
+> La tensión en la sala de curtido se vuelve eléctrica mientras el cuerpo se rinde a la gravedad, eliminando la resistencia. Ese vacío de lucha permite que la mirada se afile, diseccionando la postura de Nax; el guardia mantiene un equilibrio sólido, pero hay una rigidez excesiva en sus hombros, una urgencia contenida que delata que su agresividad es el único escudo contra una duda que no se atreve a nombrar.
+> Bercelio suelta una risa seca, sin humor, mientras mantiene la presión en el brazo. No se deja engañar por la relajación del cuerpo; su mirada sigue escrutando el rostro del otro buscando una grieta. "¿Quién decido yo? ¿Quién dice que el tiempo lo marcas tú? ¿En qué mundo crees que estamos para que tú pongas el reloj?", espeta, aunque el agarre ya no busca solo someter, sino confirmar que el control sigue siendo suyo.
+> mecanica
+> Perspicacia: Éxito (19 vs CD 15).
+> presion
+> Nax está al límite de su paciencia; cualquier movimiento brusco o provocación verbal será interpretado como un ataque, desencadenando una respuesta violenta inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1031 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 94 — 71/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1697 ms
+
+> "Toda esa tensión es agotadora. Solo queremos respuestas, no una pelea en un lugar que huele así."
+> Me quedo quieto, observando la rigidez de Nax para encontrar el momento exacto en que su duda supere a su ira.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 4+1=5
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (1826 ms): «¿Respuestas? ¿Qué respuestas buscas exactamente? ¿Qué es lo que quieres saber? ¿»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2534 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3895 ms
+
+> narrativa
+> La humedad de la sala de curtido se vuelve pegajosa, cargando el aire con un hedor a amoníaco y pieles en descomposición que parece filtrarse por los poros. Alrededor, las tinas de madera rebosan de líquidos turbios donde flotan cueros pálidos, similares a pieles arrancadas, bajo una luz mortecina que apenas logra atravesar el polvo suspendido en el techo.
+> Bercelio Nax no cede. Aunque deja de aplicar la fuerza bruta, no afloja el agarre, manteniendo el control del brazo con una rigidez gélida. Sus ojos se clavan en los del interlocutor, moviéndose con rapidez, diseccionando cada tic o parpadeo en busca de una mentira, mientras repite la pregunta con una cadencia mecánica y desprovista de empatía: "¿Respuestas? ¿Qué respuestas buscas exactamente? ¿Qué es lo que quieres saber? ¿A qué respuestas te refieres?".
+> mecanica
+> Perspicacia: Fallo (5 vs CD 15).
+> presion
+> Nax ha entrado en un estado de interrogatorio obsesivo; mientras no se concrete la demanda, su sospecha seguirá creciendo y cualquier ambigüedad será tomada como una señal de culpabilidad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  948 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 95 — 72/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1115 ms
+
+> "No me gusta que me sujetes así, Nax. Solo quiero saber quién es el dueño de este lugar y por qué el olor a muerte es tan intenso."
+> Intento soltarme de su agarre con un movimiento brusco.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 9+-1=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 8)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2068 ms): «El dueño es un hombre que no sabe limpiar sus tinas, nada más. Pero el olor... e»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2474 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3975 ms
+
+> narrativa
+> El intento de zafarse termina en un choque seco contra la piedra. El movimiento brusco no logra romper la presión; al contrario, Bercelio Nax cierra el agarre con un reflejo mecánico y violento, estampando el cuerpo del interlocutor contra el borde frío de una de las tinas. A su alrededor, la sala de curtido se despliega como un laberinto de madera podrida y ganchos de hierro oxidados que cuelgan del techo, donde retales de cuero endurecido gotean un limo oscuro sobre el suelo resbaladizo.
+> Nax no cede un milímetro, manteniendo la mirada clavada en los ojos del otro con una fijeza depredadora. "El dueño es un hombre que no sabe limpiar sus tinas, nada más. Pero el olor... el olor no es la pregunta aquí. ¿Por qué te importa tanto quién es el dueño? ¿Quién te ha enviado a preguntar por el dueño? ¿A quién le reportas lo que encuentres aquí?", sentencia, transformando el encuentro en un interrogatorio asfixiante mientras el hedor a amoníaco y putrefacción lo envuelve todo.
+> mecanica
+> Atletismo: Fallo (8 vs CD 15).
+> presion
+> La hostilidad de Nax ha escalado a una sospecha activa; cualquier respuesta evasiva o intento posterior de resistencia será interpretado como una confirmación de que el jugador es un agente infiltrado.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1142 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) delta rechazado por la base (npc.estado): field npc.estado is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 96 — 73/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1383 ms
+
+> "No me reporto a nadie. Solo busco respuestas que alguien con tu posición debería conocer."
+> Mantengo la calma a pesar de la presión contra la tina y trato de analizar su expresión para ver qué es lo que realmente teme.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 5+1=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 6)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  617 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3993 ms
+
+> narrativa
+> El esfuerzo por descifrar la mente de Nax se estrella contra un muro de indiferencia profesional. Sus rasgos, curtidos y gélidos, no revelan ninguna fisura, ningún miedo tangible que pueda ser explotado; solo hay una determinación ciega y la rigidez de quien ha olvidado cómo dudar. La mirada del guardia permanece imperturbable, vacía de cualquier pista emocional, convirtiendo el rostro del hombre en una máscara de piedra tan impenetrable como el muro contra el que el cuerpo sigue presionado.
+> Bercelio no responde a las palabras, ni siquiera parpadea. El silencio se prolonga, roto únicamente por el goteo rítmico y espeso del limo que cae desde los ganchos del techo. Su agarre no flaquea, sino que parece endurecerse, transformando la calma fingida en una soga que se aprieta más con cada segundo de silencio.
+> mecanica
+> Perspicacia: Fallo (6 vs CD 15).
+> presion
+> El silencio de Nax no es una invitación al diálogo, sino una evaluación final. Su sospecha se ha cristalizado: la falta de una respuesta concreta y la actitud analítica del jugador han sido interpretadas como la frialdad de un espía, y el siguiente movimiento del guardia no será verbal.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  929 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 97 — 74/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1465 ms
+
+> "Tus silencios dicen más que tus palabras, guardia. Pero no me intimidan."
+> Suelto un suspiro lento y dejo de intentar leerlo, relajando el cuerpo contra el muro para reducir la tensión del agarre.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 14)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2026 ms): «¿Y quién ha dicho que intento intimidarte? Solo espero a que decidas dejar de ju»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1245 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  6232 ms
+
+> narrativa
+> El intento de desescalar la tensión se desliza sin efecto sobre la voluntad del guardia. El pasillo de piedra húmeda, saturado de un hedor a salitre y descomposición, parece cerrarse sobre la escena mientras la luz mortecina que cae de los niveles superiores proyecta sombras alargadas y deformes sobre el suelo. 
+> Bercelio Nax no cede ni un ápice; mantiene la presión del agarre a pesar de la relajación del cuerpo contra el muro. Con una voz seca y monocorde, y sin desviar la mirada ni un milímetro de los ojos del interlocutor, sentencia: "¿Y quién ha dicho que intento intimidarte? Solo espero a que decidas dejar de jugar a los acertijos y me digas qué hacías en la sala de máquinas. Repítelo. Pero esta vez, sin adornos".
+> mecanica
+> Persuasión: Fallo (14 vs CD 15).
+> presion
+> Nax ha dejado de buscar una explicación razonable para empezar a buscar una confesión. La paciencia del guardia se ha agotado y, si la respuesta sigue siendo evasiva, el interrogatorio pasará de la presión psicológica a la fuerza física.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  789 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 98 — 75/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1270 ms
+
+> "No juego a nada, Nax. Estaba comprobando que todo funcionara correctamente."
+> Me quedo inmóvil, sosteniéndole la mirada con frialdad mientras intento analizar si hay algún punto débil en su postura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 7+1=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 8)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2573 ms): «Comprobando el funcionamiento. Bien. ¿Y qué parte exactamente estabas comproband»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  10300 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3079 ms
+
+> narrativa
+> El pasillo de piedra húmeda y salitre parece encogerse, asfixiando el espacio entre ambos mientras la luz cenital proyecta sombras deformes que bailan sobre las paredes exudadas. La frialdad de la mirada no surte efecto; Bercelio Nax no parpadea, y su agarre en el hombro se vuelve más tenso, presionando el cuerpo contra el muro con una fuerza calculada que anula cualquier intento de análisis táctico.
+> Nax mantiene esa mirada gélida y obsesiva, escrutando cada micro-gesto en busca de una grieta en la mentira. "Comprobando el funcionamiento. Bien. ¿Y qué parte exactamente estabas comprobando? ¿El flujo de aire? ¿Las válvulas? ¿O simplemente estabas comprobando cuánto tardaba la guardia en pillarte saliendo por un conducto de ventilación? Repítelo. ¿Qué hacías ahí abajo?", dispara con una sequedad que corta el aire pesado del corredor.
+> mecanica
+> Perspicacia: Fallo (8 vs CD 15).
+> presion
+> La mentira ha sido expuesta como una contradicción evidente. Nax ya no pregunta por curiosidad, sino para cerrar la trampa; cualquier respuesta inconsistente ahora será tomada como una confesión de sabotaje o espionaje, justificando el uso inmediato de grilletes.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  866 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 99 — 76/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1423 ms
+
+> "No soy un saboteador, Nax. Solo buscaba una salida más eficiente que este pasillo."
+> Intento soltarme de su agarre con un movimiento brusco.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 18+-1=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 17)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1269 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4125 ms
+
+> narrativa
+> El movimiento es seco y preciso. El impulso brusco sorprende a Nax, rompiendo la inercia de su agarre y obligándolo a soltar el hombro para no perder el equilibrio sobre el suelo resbaladizo. La distancia recuperada devuelve un aire gélido y cargado de salitre, mientras el corredor de piedra húmeda parece pulsar con una opresión sorda, cerrándose en un túnel de sombras alargadas y paredes que sudan un frío mineral.
+> Nax retrocede un paso, recuperando la compostura con una lentitud deliberada. Sus ojos, gélidos y analíticos, no se apartan ni un segundo, procesando la resistencia física como una nueva variable en su interrogatorio. El silencio que sigue es denso, interrumpido solo por el goteo rítmico del agua contra la piedra.
+> mecanica
+> Atletismo: Éxito (17 vs CD 15).
+> presion
+> Aunque el agarre se ha roto, la hostilidad de Nax ha mutado de la sospecha a la vigilancia activa; cualquier otro movimiento brusco será interpretado como una agresión directa contra la guardia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1441 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Bercelio Nax · competence_shown
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4454: Bercelio Nax affinity 15.0 → 17.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 17.0 (cordial), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 100 — 77/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 17.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1271 ms
+
+> "No me toques. No es necesario que seas tan brusco para obtener respuestas."
+> Me quedo quieto, manteniendo la distancia, y observo detenidamente sus ojos y sus gestos para descifrar qué es lo que realmente busca con este interrogatorio.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 7+1=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 8)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1646 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3442 ms
+
+> narrativa
+> El corredor de piedra húmeda y oscura parece estrecharse, envolviendo la escena en un aire gélido que huele a salitre. El goteo rítmico del agua filtrándose por las paredes marca los segundos en un silencio tenso, mientras la penumbra devora los detalles del entorno, dejando solo la humedad brillante de los muros.
+> La mirada de Nax permanece imperturbable, como una superficie de hielo que no refleja nada. A pesar del esfuerzo por descifrar sus intenciones, sus gestos son una máscara de disciplina militar y sus ojos no revelan ni una sola grieta; no hay rastro de duda, ni una señal involuntaria que delate el propósito real detrás de sus preguntas. Solo queda la sensación de estar siendo observado por alguien que ya ha tomado una decisión.
+> mecanica
+> Perspicacia: Fallo (8 vs CD 15).
+> presion
+> La incapacidad de leer a Nax deja al grupo a ciegas frente a sus intenciones; mientras el silencio se prolonga, la sospecha del guardia se solidifica y la paciencia de la Guardia de Umbral Hondo se agota.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  887 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 17.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 101 — 78/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 17.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1021 ms
+
+> "Tu silencio me resulta más elocuente que cualquier respuesta."
+> Me quedo inmóvil, sosteniendo la mirada de Nax sin retroceder ni un centímetro.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 16)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2120 ms): «El silencio es la única respuesta honesta cuando no hay nada que decir. Ahora, v»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1930 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5155 ms
+
+> narrativa
+> El corredor se siente ahora más opresivo, una garganta de piedra que amplifica el eco del desafío. La humedad de las paredes parece condensarse en el aire frío, creando una atmósfera pesada donde solo existen dos voluntades enfrentadas, mientras el peso del silencio se vuelve casi tangible entre ambos.
+> Bercelio Nax no parpadea. Mantiene la espalda recta y los brazos cruzados, ignorando el intento de intimidación con una calma gélida y profesional. Su voz surge seca, cortante y desprovista de cualquier emoción: "El silencio es la única respuesta honesta cuando no hay nada que decir. Ahora, volvamos a lo mío: ¿Qué hacían en la sala de máquinas? ¿Por qué Tarq salió por la ventilación? ¿A dónde pretendían llegar?".
+> mecanica
+> Intimidación: Éxito (16 vs CD 15).
+> presion
+> Aunque el guardia no ha cedido, la tensión ha alcanzado un punto crítico; cualquier respuesta evasiva o nueva provocación podría transformar este interrogatorio profesional en un arresto preventivo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  905 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'npc', 'entity_id': 'Nax', 'field': 'estado_emocional', 'value': 'estupefacto pero tenso'}
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 17.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 102 — 79/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 17.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1224 ms
+
+> "Hago lo que es necesario para avanzar. El conducto era la ruta más eficiente."
+> Me mantengo impasible, observando sus ojos para detectar cualquier grieta en su compostura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 7+1=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 8)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2464 ms): «¿La ruta más eficiente? ¿Eficiente para quién? ¿Para quién es 'necesario' saltar»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1409 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4415 ms
+
+> narrativa
+> Las sombras proyectadas por las antorchas danzan violentamente sobre las paredes de piedra húmeda, cerrándose sobre el espacio reducido del pasillo como si el entorno mismo quisiera asfixiar la conversación. No hay grieta alguna en la mirada de Bercelio Nax; su compostura permanece intacta, una muralla de escepticismo que no se inmuta ante la frialdad del argumento.
+> El guardia no se mueve ni un centímetro, entornando los ojos mientras deja que el silencio pese, analizando la respuesta con una calma gélida antes de lanzar una ráfaga de preguntas: "¿La ruta más eficiente? ¿Eficiente para quién? ¿Para quién es 'necesario' saltarse las puertas y trepar conductos en mi pueblo? Repítelo. ¿Qué es exactamente lo que consideran 'necesario' que yo no deba saber?".
+> mecanica
+> Perspicacia: Fallo (8 vs CD 15).
+> presion
+> La paciencia de Nax se ha agotado; cualquier otra respuesta vaga será interpretada como una confesión de culpabilidad, justificando el uso de la fuerza para trasladarlos a las celdas.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  794 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 17.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 103 — 80/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 17.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1346 ms
+
+> "Hablo de eficiencia logística, guardia. No busco secretos, sino el camino más corto para resolver el problema que nos trae aquí."
+> Mantengo la mirada fija en él, sin retroceder ni un ápice.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 13+4=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 17)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2459 ms): «¿Logística? ¿Eficiencia? No me vendas palabras de escribano. Si el camino es cor»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  585 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4192 ms
+
+> narrativa
+> El aire en el pasillo parece espesarse, cargado con el olor a salitre y metal oxidado. Bercelio Nax no retrocede; al contrario, da un paso lento hacia adelante, invadiendo el espacio personal con una presencia pesada y dominante. No eleva la voz, pero sus palabras caen como gotas de ácido, secas y cortantes, mientras mantiene el contacto visual sin parpadear, escrutando cada músculo del rostro en busca de una grieta.
+> "¿Logística? ¿Eficiencia? No me vendas palabras de escribano. Si el camino es corto, las puertas están abiertas. Si las puertas están cerradas, es que el camino no es el correcto. ¿Por qué usar un conducto de ventilación si solo buscas el camino más corto?", sentencia, dejando que la incongruencia de la explicación quede suspendida en el aire como una sentencia.
+> mecanica
+> Persuasión: Éxito (17 vs CD 15).
+> presion
+> Aunque el argumento ha sido técnicamente convincente para evitar un arresto inmediato, la sospecha de Nax se ha arraigado; cualquier inconsistencia futura será vista como una prueba irrefutable de engaño.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1004 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 17.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 104 — 81/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 17.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1579 ms
+
+> "No busco el camino más corto, sino el más seguro. En lugares como este, las puertas suelen guardar secretos que es mejor no despertar prematuramente."
+> Mantengo la mirada, sin retroceder ni un centímetro, mientras trato de descifrar qué es lo que realmente le preocupa de mi presencia aquí.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 16+1=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 17)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2308 ms): «Secretos. Hablas de secretos como si fueran muebles que se pueden mover para no »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  658 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4125 ms
+
+> narrativa
+> El silencio se prolonga, tenso y gélido, mientras la explicación cala en la mente del guardia. Bercelio Nax no se convence del todo, pero la lógica de la cautela parece darle un anclaje donde sujetar su sospecha sin necesidad de recurrir a los grilletes. Entorna los ojos, reduciendo la distancia entre ambos hasta que el olor a cuero viejo y tabaco frío se vuelve asfixiante. Sin parpadear y con el cuerpo rígido, analiza la reacción pupilar del interlocutor, buscando el más mínimo rastro de duda o miedo ante la repetición de su pregunta.
+> "Secretos. Hablas de secretos como si fueran muebles que se pueden mover para no tropezar con ellos. ¿Qué secretos? ¿Cuáles secretos? Dime exactamente qué es lo que crees que hay detrás de esas puertas", interroga con una voz que ha perdido toda cordialidad, convirtiéndose en un bisturí que intenta diseccionar la verdad.
+> mecanica
+> Perspicacia: Éxito (17 vs CD 15). Logras percibir que Nax no está simplemente haciendo preguntas para llenar el vacío; está comparando tus respuestas con una lista de sospechas ya establecida, aunque no revela cuáles son.
+> presion
+> Nax ha pasado de la curiosidad profesional a una fijación personal. Cada palabra dicha ahora es una pieza de un rompecabezas que él ya está armando; un error más transformará su análisis en una orden de detención.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  799 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 17.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 105 — 82/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 17.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1501 ms
+
+> "No creo que sea prudente detallar el contenido de esas puertas en un pasillo donde cualquiera puede escuchar."
+> Mantengo el contacto visual, sin retroceder ni un centímetro, mientras busco alguna pista en su postura sobre cuáles son esas sospechas que maneja.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 10)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1645 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5280 ms
+
+> narrativa
+> El pasillo de piedra húmeda estrecha el espacio, envolviendo la escena en un aire viciado donde las antorchas chisporrotean con violencia, arrojando sombras erráticas que danzan sobre las puertas reforzadas con hierro. El intento de leer al guardia fracasa; la postura de Nax es un muro impenetrable, una rigidez profesional que no deja escapar ninguna fisura ni rastro de sus sospechas.
+> Bercelio no responde con palabras. Se limita a sostener la mirada, pero su expresión se endurece y un silencio gélido se instala entre ambos. No hay ningún gesto que revele su juego, solo una frialdad creciente que convierte la cautela del argumento en una confirmación implícita de que se oculta algo peligroso.
+> mecanica
+> Perspicacia: Fallo (10 vs CD 15). No logras extraer ninguna información adicional sobre las sospechas de Nax; su lenguaje corporal es ahora un libro cerrado.
+> presion
+> La negativa a hablar en el pasillo ha sido interpretada como una admisión de culpabilidad. Nax ya no busca respuestas, ahora busca el pretexto final para actuar.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  875 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 17.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 106 — 83/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 17.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1548 ms
+
+> "No confundáis mi silencio con una confesión, guardia."
+> Doy un paso hacia atrás para ganar espacio y analizo los alrededores buscando cualquier salida o ventaja táctica.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 19+1=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2554 ms): «Tu silencio no es confesión, pero tu paso atrás sí es una respuesta. ¿Por qué ne»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1944 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4497 ms
+
+> narrativa
+> El pasillo de piedra caliza húmeda se siente ahora como una trampa, un tubo asfixiante de techo bajo donde el eco de cada respiración se multiplica. Al retroceder, la vista se desplaza rápidamente por el entorno: a espaldas el camino a la entrada, y frente a ustedes, la figura imponente de Nax bloqueando el acceso a la cámara interior. Dos nichos vacíos, huecos oscuros en la pared, emergen como las únicas opciones tácticas para buscar cobertura o una ventaja en el espacio reducido.
+> Bercelio Nax no se mueve. Se mantiene inmóvil, con los brazos cruzados y la mirada clavada en los ojos del jugador, sin parpadear. Su voz suena seca y cortante, como un látigo que golpea el aire viciado: "Tu silencio no es confesión, pero tu paso atrás sí es una respuesta. ¿Por qué necesitas espacio? ¿A qué le temes? ¿O es que buscas una salida?".
+> mecanica
+> Percepción: Éxito (20 vs CD 15). Has identificado los nichos laterales como posibles coberturas y confirmado que Nax es el único obstáculo físico hacia la cámara interior.
+> presion
+> Nax ha interpretado el movimiento táctico como un signo de miedo o intención de huida; cualquier movimiento brusco hacia los nichos será visto como un ataque inminente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  880 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 17.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 107 — 84/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 17.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1423 ms
+
+> "No busco una salida, Nax. Solo busco una posición desde la cual pueda contemplar tu arrogancia con claridad."
+> Me muevo con calma hacia uno de los nichos laterales, manteniendo la mirada fija en él.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 13)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2210 ms): «¿Arrogancia? Llámalo como quieras. Yo lo llamo hacer mi trabajo mientras tú bail»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1680 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3998 ms
+
+> narrativa
+> El intento de mantener la compostura se desmorona ante la mirada de Nax. El movimiento hacia el nicho, lejos de parecer una maniobra de superioridad, resulta torpe y evidente en el espacio asfixiante del pasillo. La hendidura de piedra es fría y polvorienta, un refugio mediocre que deja el cuerpo medio expuesto y solo ofrece un ángulo de visión oblicuo, mientras la proximidad incómoda del muro parece cerrar el cerco.
+> Bercelio Nax no se desplaza para bloquear la entrada, pero tensa los hombros y estrecha los ojos, analizando cada centímetro del desplazamiento con una suspicacia gélida. Su voz recupera el filo, cargada de un desprecio pragmático: "¿Arrogancia? Llámalo como quieras. Yo lo llamo hacer mi trabajo mientras tú bailas alrededor de una pregunta. ¿Por qué te mueves hacia el nicho? ¿Por qué no te quedas donde pueda verte? Repito: ¿qué intentas ganar moviéndote así?".
+> mecanica
+> Persuasión: Fallo (13 vs CD 15). Tu intento de sonar superior ha sido interpretado como una evasiva patética.
+> presion
+> Nax ha perdido cualquier rastro de cordialidad; ahora ve tu comportamiento como una táctica de distracción o un preludio a una agresión, lo que lo llevará a actuar con fuerza si vuelves a intentar cambiar tu posición.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1589 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Bercelio Nax · competence_shown
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4497: Bercelio Nax affinity 17.0 → 19.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 108 — 85/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1756 ms
+
+> "No gano nada moviéndome, Nax. Solo busco un poco de aire en este agujero."
+> Me quedo quieto en el nicho, sin intentar salir ni avanzar, observando sus gestos para medir su paciencia.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 11+1=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 12)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2507 ms): «Aire. Lindo argumento. ¿Buscas aire o buscas un ángulo donde no te vea la cara? »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1611 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5061 ms
+
+> narrativa
+> El aire en el pasillo es una masa espesa de salitre y encierro que se pega a la garganta, haciendo que la excusa resulte ridícula en un espacio donde el oxígeno parece haberse agotado hace siglos. La postura forzada dentro de la hendidura irregular solo acentúa la vulnerabilidad; la piedra húmeda muerde la espalda y el ángulo del corredor deja cualquier intento de refugio reducido a una trampa de mampostería.
+> Bercelio Nax no se mueve, pero inclina la cabeza ligeramente, clavando la mirada con una intensidad inquisitiva que desmenuza la mentira. Sus dedos tamborilean rítmicamente sobre el pomo de su arma, marcando el tiempo de una paciencia que se agota. "Aire. Lindo argumento. ¿Buscas aire o buscas un ángulo donde no te vea la cara? ¿Buscas aire o estás tanteando la pared? Te lo preguntaré una última vez: ¿para qué te metes en ese agujero?", sentencia con una voz que ya no deja espacio para el juego.
+> mecanica
+> Perspicacia: Fallo (12 vs CD 15). No logras descifrar qué busca exactamente Nax en tu reacción; solo percibes que el margen de error se ha cerrado por completo.
+> presion
+> La paciencia de Nax ha llegado a su límite. Cualquier respuesta que no sea una confesión directa o una justificación irrefutable será interpretada como una provocación, y el guardia no dudará en utilizar la fuerza para sacarte del nicho.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1587 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 109 — 86/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1423 ms
+
+> "No busco aire, busco respuestas. Y este lugar apesta a secretos que no quieres que encuentre."
+> Me separo de la pared con calma, manteniendo la mirada fija en él.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 4+4=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 8)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2498 ms): ««Secretos». Palabras grandes para alguien que acaba de ser pillado en un agujero»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1267 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4105 ms
+
+> narrativa
+> El intento de desafío cae en el vacío, chocando contra la frialdad de un hombre que no se deja impresionar por frases hechas. El pasillo de piedra húmeda y salitre parece estrecharse aún más, atrapando el eco de las palabras entre las paredes irregulares y los nichos vacíos que observan la escena como cuencas negras.
+> Bercelio Nax no retrocede ni un centímetro. Su expresión es gélida y su mano aprieta el pomo del arma con fuerza, mientras sostiene la mirada sin pestañear, analizando cada micro-gesto en busca de una grieta. «Secretos». Palabras grandes para alguien que acaba de ser pillado en un agujero. ¿Qué secretos? ¿Cuáles secretos? Dime exactamente qué crees que hay aquí abajo o deja de hacerme perder el tiempo.
+> mecanica
+> Persuasión: Fallo (8 vs CD 15). Tu intento de sonar intrigante ha resultado predecible; Nax ahora te ve no como una amenaza o un aliado, sino como un estorbo que miente con torpeza.
+> presion
+> La actitud críptica ha confirmado las sospechas de Nax. Si no proporcionas datos concretos ahora mismo, el guardia dejará de preguntar para pasar a la fase de detención forzosa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  740 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión, Secretos
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 110 — 87/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1495 ms
+
+> "No busco perder el tiempo, Nax. Busco la verdad sobre este lugar y sé que tú conoces más de lo que admites."
+> Sostengo la mirada, tratando de leer sus intenciones mientras busco cualquier señal de debilidad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 11+1=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 12)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2381 ms): «¿Tú sabes lo que yo admito? ¿Me estás diciendo que sabes más que yo sobre mi pro»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2428 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4567 ms
+
+> narrativa
+> El aire en el pasillo se vuelve denso, cargado de un olor a salitre y moho que parece filtrarse por los poros de la piedra húmeda. Los nichos vacíos que flanquean el camino devuelven un eco sordo, transformando el silencio en una presión física que cierra el espacio entre los dos hombres. No hay grietas en la armadura de Nax; su rostro es una máscara de granito que no cede ni un milímetro ante el escrutinio.
+> Bercelio se inclina ligeramente hacia adelante, invadiendo el espacio personal con una brusquedad calculada. Su voz suena seca y cortante, marcando cada palabra como si estuviera tachando un nombre de una lista mientras sostiene la mirada con una fijeza perturbadora. "¿Tú sabes lo que yo admito? ¿Me estás diciendo que sabes más que yo sobre mi propio pueblo? Dijimelo. ¿Qué es exactamente lo que crees que oculto?".
+> mecanica
+> Perspicacia: Fallo (12 vs CD 15). No logras detectar ninguna debilidad ni duda en su postura; para ti, Nax es ahora un muro impenetrable.
+> presion
+> La paciencia de Nax se ha agotado. Si no revelas una prueba concreta o un dato específico sobre sus secretos, el guardia interpretará tu insistencia como una provocación y procederá a reducirte por la fuerza.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1105 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 111 — 88/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2301 ms
+
+> "No pretendo saber más que tú, pero el silencio de este lugar habla por sí solo."
+> Doy un paso atrás para recuperar mi espacio, manteniendo la calma. Intento analizar los alrededores del pasillo buscando cualquier detalle que Bercelio haya pasado por alto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 7+2=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2536 ms): «El silencio no dice nada, solo calla. Y callar es lo mismo que esconder algo. ¿Q»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2006 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5497 ms
+
+> narrativa
+> El pasillo de piedra húmeda se cierra sobre ti, flanqueado por nichos funerarios vacíos que exudan un aroma rancio a salitre y descomposición. Buscas desesperadamente algún detalle, una pista o una irregularidad en las sombras de los huecos, pero la penumbra es absoluta y las paredes no revelan nada que no sea el frío tacto de la tumba. Tu mirada vaga sin encontrar anclaje, mientras la sensación de estar siendo observado desde los nichos vacíos se vuelve asfixiante.
+> Bercelio Nax no permite que recuperes el espacio. Se mantiene inmóvil y, en cuanto retrocedes, él avanza el mismo paso, cerrando la distancia con una precisión depredadora. Entorna los ojos, analizando cada microgesto de tu rostro como si buscara una grieta en un muro, y su voz cae pesada, cargada de una sospecha que ya no es cordial. "El silencio no dice nada, solo calla. Y callar es lo mismo que esconder algo. ¿Quién te ha dicho que este lugar guarda secretos? ¿Quién te ha hablado del silencio? Dímelo."
+> mecanica
+> Investigación: Fallo (9 vs CD 15). No encuentras ningún detalle útil en el entorno; el pasillo es un callejón sin salida informativo.
+> presion
+> La sospecha de Nax ha cristalizado. Si no proporcionas un nombre o una fuente concreta, dejará de hacer preguntas para empezar a aplicar la ley de Umbral Hondo sobre ti.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  935 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Investigación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 112 — 89/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1210 ms
+
+> "No necesito que nadie me hable de secretos para saber reconocer un lugar que los oculta."
+> Sostengo la mirada de Nax sin retroceder, manteniendo la voz plana.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 7)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  952 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  7216 ms
+
+> narrativa
+> La respuesta cae en el aire pesado del pasillo, pero no logra desviar la atención de Bercelio Nax. El guardia ni siquiera parpadea; su mirada permanece anclada a la tuya, fría y analítica, mientras el silencio del lugar parece devorar la audacia de tus palabras. No hay rastro de duda en su expresión, solo una creciente convicción de que el juego de palabras es la máscara de una mentira.
+> Nax no responde. Se limita a tensar la mandíbula, cerrando el espacio restante entre ambos hasta que puedes sentir el frío del metal de su equipo. Su silencio es ahora una sentencia, una presión física que te empuja contra la piedra húmeda de los nichos, mientras su mano se desplaza lentamente hacia el pomo de su arma.
+> mecanica
+> Engaño: Fallo (7 vs CD 15). El guardia no cree tu respuesta y la percibe como una evasiva deliberada.
+> presion
+> Nax ha dejado de buscar respuestas verbales. Si no cambias el rumbo de la conversación o intentas una acción drástica, procederá a detenerte por fuerza.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  959 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 113 — 90/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2899 ms
+
+> "No hace falta que saques el acero, guardia. Solo busco claridad."
+> Sostengo su mirada sin retroceder, intentando descifrar qué es lo que realmente le molesta de mi presencia.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 18+1=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 19)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (2880 ms): «La claridad no se busca, se dice. ¿Dónde estabas? ¿A qué hora entraste? ¿Quién t»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3357 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5909 ms
+
+> narrativa
+> La tensión en el aire se desplaza; al mantener la mirada, logras percibir que su hostilidad no nace de un odio personal, sino de una disciplina rígida que no tolera el vacío de información. Te encuentras en un pasillo estrecho de piedra húmeda, donde los nichos profundos que flanquean el camino exhalan un olor penetrante a salitre y olvido, envolviendo la escena en una atmósfera de descomposición lenta.
+> Bercelio Nax no cede ni un centímetro, pero su expresión se vuelve aún más gélida. Sin apartar la vista, habla con una sequedad cortante: "La claridad no se busca, se dice. ¿Dónde estabas? ¿A qué hora entraste? ¿Quién te dejó pasar?". No retira la mano del arma; al contrario, la presiona más contra el metal, marcando el ritmo de sus preguntas con ligeros y metódicos golpes de los dedos sobre el arma.
+> mecanica
+> Perspicacia: Éxito (19 vs CD 15). Identificas que Nax no está actuando por capricho, sino que busca datos concretos para llenar un hueco en su reporte de guardia.
+> presion
+> Nax ha descartado las abstracciones. Si no proporcionas datos precisos o una justificación tangible de tu presencia, considerará que tu silencio es una confesión de intrusión y procederá a reducirte.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1321 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) delta rechazado por la base (npc.estado_mental): field npc.estado_mental is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 114 — 91/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1929 ms
+
+> "Solo busco respuestas que no se encuentran en los registros oficiales."
+> Mantengo la calma y trato de convencerlo de que mi presencia es legítima, aunque sea bajo mis propios términos.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 14)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (4251 ms): «Respuestas. Registros. Palabras vacías. Te lo vuelvo a preguntar: ¿Dónde estabas»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5949 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11843 ms
+
+> narrativa
+> El intento de convencerlo choca contra un muro de indiferencia burocrática. Bercelio Nax no se mueve ni un milímetro; sus dedos dejan de golpear el arma para cerrarla en un puño firme, manteniendo una mirada fija y gélida que anula cualquier apelación a la legitimidad personal. "Respuestas. Registros. Palabras vacías. Te lo vuelvo a preguntar: ¿Dónde estabas exactamente? ¿A qué hora entraste? ¿Quién te dio el permiso para estar aquí?", sentencia con una sequedad que no admite réplica.
+> A espaldas del guardia, el pasillo se estrecha, convergiendo en una pesada puerta de hierro reforzado que vibra levemente con un eco distante y monocorde. A los lados, los nichos de piedra custodian restos de archivos podridos y cenizas que el viento del corredor desplaza lentamente, como si el propio edificio estuviera deshaciéndose en un suspiro de polvo y olvido.
+> mecanica
+> Persuasión: Fallo (14 vs CD 15).
+> presion
+> Nax ha cerrado la puerta a la diplomacia. Sin datos concretos o una orden tangible, el guardia interpretará tu evasiva como una confirmación de hostilidad y procederá a detenerte por la fuerza.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2234 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) delta rechazado por la base (npc.estado): field npc.estado is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 115 — 92/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3647 ms
+
+> "No necesito permisos para caminar por donde el destino me guía."
+> Me mantengo firme, sosteniéndole la mirada sin retroceder, mientras intento analizar si hay alguna debilidad en su postura o alguna duda en sus ojos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 11+1=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 12)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5168 ms): «El destino no firma pases de entrada ni limpia los escombros de este pueblo. ¿Dó»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3298 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11505 ms
+
+> narrativa
+> El aire en el pasillo es espeso, cargado con el olor a moho y pergamino húmedo que emana de los nichos de archivos en descomposición. Al fondo, la puerta de hierro reforzado continúa vibrando, un latido sordo que marca la frontera entre el silencio sepulcral de este corredor de piedra gris y el núcleo del edificio. No hay fisuras en la postura del guardia; su cuerpo es un bloque de disciplina y convicción que no deja espacio para la duda.
+> Bercelio Nax no parpadea. Su puño se aprieta con más fuerza sobre el arma y da un paso corto, invadiendo el espacio personal para imponer su estatura y su autoridad. "El destino no firma pases de entrada ni limpia los escombros de este pueblo. ¿Dónde estabas? ¿En qué punto exacto del pasillo? ¿Dónde estabas, he dicho?", sentencia con una rigidez absoluta, descartando cualquier rastro de misticismo como una simple evasiva.
+> mecanica
+> Perspicacia: Fallo (12 vs CD 15).
+> presion
+> La paciencia de Nax se ha agotado. Cualquier respuesta que no sea un dato concreto será tomada como una confesión de culpabilidad, y el guardia pasará de la interrogación al arresto violento.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  16053 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 116 — 93/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  23676 ms
+
+> "Estaba justo aquí, frente a ti, observando el estado de estos archivos."
+> Sostengo la mirada sin retroceder, manteniendo la calma mientras trato de analizar su lenguaje corporal para encontrar una grieta en su disciplina.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 20+1=21  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 21)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6768 ms): «¿Observando los archivos? ¿Desde cuándo los archivos son motivo de contemplación»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6191 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16790 ms
+
+> narrativa
+> El pasillo de piedra gris se siente más estrecho bajo la mirada del guardia, mientras el moho de los pergaminos se desprende en copos pálidos que flotan en el aire estancado. Al fondo, la puerta de hierro sigue emitiendo ese pulso sordo, una vibración que se siente más en los dientes que en los oídos. El análisis detallado del lenguaje corporal de Nax revela que su agresividad no es pura arrogancia; hay una tensión eléctrica en sus hombros y una rigidez en la mandíbula que delatan un nerviosismo contenido, como si estuviera esperando que el techo se desplomara sobre ambos en cualquier instante.
+> Bercelio no retrocede ni un centímetro. Entorna los ojos, escrutando el rostro del interlocutor en busca del más mínimo tic o signo de mentira, mientras mantiene la presión física invadiendo su espacio personal. "¿Observando los archivos? ¿Desde cuándo los archivos son motivo de contemplación en un pasillo que huele a tumba? ¿Qué es exactamente lo que estabas 'observando'?", pregunta con un tono que oscila entre la incredulidad y la amenaza.
+> mecanica
+> Perspicacia: Éxito (21 vs CD 15).
+> presion
+> La sospecha de Nax se ha transformado en una curiosidad hostil; cualquier imprecisión en la descripción de lo que se "observaba" confirmará que los archivos son solo una excusa para encubrir una intrusión.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5966 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 117 — 94/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  6180 ms
+
+> "Solo busco patrones en el polvo, Bercelio. Hay cosas en estos registros que no deberían estar olvidadas."
+> Mantengo la mirada fría y no retrocedo, analizando el pulso de la puerta de hierro mientras hablo.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 22)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5362 ms): «¿Patrones en el polvo? No me hables de polvo. Dime qué registros. Dime exactamen»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  108808 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14068 ms
+
+> narrativa
+> La respuesta cae con un peso calculado, y la frialdad de la mirada logra detener el avance del guardia, aunque no su desconfianza. Bercelio Nax se detiene, pero no se retira; se acerca un centímetro más, invadiendo el espacio personal con una intensidad asfixiante. Sus ojos saltan frenéticamente del rostro del interlocutor a los archivos y regresan, buscando desesperadamente la grieta, el titubeo o la mentira que desmonte la fachada.
+> Mantiene la presión física, casi rozando, mientras su voz se vuelve un susurro cortante: "¿Patrones en el polvo? No me hables de polvo. Dime qué registros. Dime exactamente qué nombres o fechas estás buscando. ¿Qué es lo que no debería estar olvidado?".
+> mecanica
+> Engaño: Éxito (22 vs CD 15).
+> presion
+> Nax ha aceptado la premisa, pero ahora exige datos concretos; cualquier respuesta vaga o contradictoria sobre los registros específicos revelará que el interés es una pantalla y no una investigación real.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1685 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 118 — 95/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4746 ms
+
+> "Busco los registros de defunciones y transferencias de propiedad de la zona norte, específicamente los de hace tres décadas."
+> Mantengo la mirada, sin retroceder ni un milímetro ante su cercanía.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 16)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7164 ms): «Tres décadas. Exactamente treinta años. ¿Por qué esa fecha? ¿Qué pasó hace trein»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4636 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13591 ms
+
+> narrativa
+> El aire en el archivo municipal es denso, cargado de un olor a papel podrido y humedad que se pega a la garganta. Sobre las cabezas, una luz fluorescente parpadea con un zumbido eléctrico irritante, proyectando sombras erráticas sobre las estanterías de metal que se alzan como muros claustrofóbicos, sepultando el lugar bajo capas de polvo grisáceo.
+> Bercelio Nax no retrocede; mantiene la distancia mínima, entornando los ojos para analizar cada microexpresión, buscando el más mínimo rastro de duda en la mirada fija del interlocutor. Tras un silencio tenso, repite la cifra con una lentitud deliberada, casi probando el peso de las palabras en el aire: "Tres décadas. Exactamente treinta años. ¿Por qué esa fecha? ¿Qué pasó hace treinta años que te hace buscar papeles tan viejos? Dime la fecha exacta del registro que necesitas".
+> mecanica
+> Engaño: Éxito (16 vs CD 15).
+> presion
+> Nax ha cedido el paso a la petición, pero su curiosidad se ha transformado en sospecha activa; una fecha imprecisa o una justificación débil ahora podrían hacer que el guardia cierre el acceso a los archivos y reporte la visita a sus superiores.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1495 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 119 — 96/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  5191 ms
+
+> "Busco el registro de propiedades del sector norte del año 1372. Un asunto de herencias familiares que requiere precisión."
+> Mantengo la mirada fija en Nax, sin parpadear, mientras intento detectar si su sospecha es genuina o una táctica para pedir más dinero.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 17+1=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (20820 ms): «¿Herencias? En el sector norte. El 1372. ¿Por qué el 1372 exactamente? ¿Qué pasó»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5876 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14212 ms
+
+> narrativa
+> Bercelio Nax no se mueve ni un centímetro. Sus ojos escanean el rostro del interlocutor buscando el tic, el parpadeo o la duda, mientras mantiene una mano apoyada en el cinturón, cerca del arma, no como amenaza, sino por hábito de control. A espaldas del guardia, el pasillo de los archivos se extiende en una penumbra polvorienta, donde las etiquetas de los archivadores han perdido el color y el silencio solo es roto por el zumbido eléctrico.
+> Tras un instante de análisis gélido, Nax rompe el silencio con un tono inquisitivo: "¿Herencias? En el sector norte. El 1372. ¿Por qué el 1372 exactamente? ¿Qué pasó ese año con esa propiedad que no se puede resolver con los registros actuales? Repítelo. ¿Por qué esa fecha?".
+> mecanica
+> Perspicacia: Éxito (18 vs CD 15).
+> presion
+> Nax ha aceptado la ubicación y la fecha, pero ha entrado en un modo de interrogatorio agresivo; cualquier inconsistencia en la respuesta sobre el "porqué" de esa fecha específica convertirá el trámite en un detención preventiva.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1747 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) delta rechazado por la base (npc.state): field npc.state is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 120 — 97/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2329 ms
+
+> "Es un asunto de linaje y derechos de propiedad que solo se aclaran con los folios de aquel año."
+> Mantengo la mirada fija en Nax, sin retroceder ni mostrar nerviosismo.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 4+4=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 8)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6302 ms): «Linajes. Derechos. Palabras muy largas para decir que buscas un papel viejo. ¿Po»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  854 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12170 ms
+
+> narrativa
+> Bercelio Nax entorna los ojos, inclinando ligeramente la cabeza. No se mueve, pero su mirada se vuelve más pesada, analizando cada micro-expresión del interlocutor mientras su mano presiona el cinturón con una firmeza calculada. El silencio del pasillo polvoriento se vuelve opresivo, cargado de una desconfianza que se siente físicamente en el aire.
+> "Linajes. Derechos. Palabras muy largas para decir que buscas un papel viejo. ¿Por qué ese año? ¿Qué hay en el 1372 que no esté en el 1371 o en el 1373? Repítemelo. ¿Por qué exactamente esa fecha?", suelta Nax, con un tono que ya no busca información, sino que intenta desmantelar la mentira.
+> mecanica
+> Engaño: Fallo (8 vs CD 15).
+> presion
+> Nax ya no cree en la justificación técnica; la respuesta ha sido demasiado vaga para su criterio. Un paso más en falso o una respuesta vacía llevará al guardia a solicitar el acta de identidad y escoltar al personaje fuera de los archivos hacia el Puesto de la Guardia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1966 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 121 — 98/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4429 ms
+
+> "No es el año, es el evento que ocurrió en él. Algo que no debería haber sido borrado."
+> Sostengo la mirada sin parpadear, endureciendo el tono para sonar convincente.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 23)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6924 ms): «Un evento. Algo borrado. Ahora hablamos el mismo idioma. ¿Qué evento? ¿Quién lo »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  8341 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14371 ms
+
+> narrativa
+> El aire denso del pasillo, saturado de polvo y el olor acre a pergamino húmedo, parece vibrar con la tensión del momento. Entre las estanterías de madera carcomida que se pierden en las sombras del techo, la confesión cae con un peso real, rompiendo la barrera de la sospecha técnica para entrar en el terreno de los secretos.
+> Bercelio Nax suelta la presión del cinturón, aunque sus músculos permanecen en alerta. Da un paso corto hacia adelante, invadiendo el espacio personal para medir la reacción al interrogatorio directo, con los ojos fijos en los del interlocutor. "Un evento. Algo borrado. Ahora hablamos el mismo idioma. ¿Qué evento? ¿Quién lo borró? ¿Y por qué crees que yo te dejaría encontrarlo?", suelta con una frialdad quirúrgica, transformando su cordialidad en una herramienta de presión.
+> mecanica
+> Persuasión: Éxito (23 vs CD 15).
+> presion
+> Nax ha aceptado la premisa, pero ahora el interrogatorio es directo. Cualquier evasiva o contradicción sobre la naturaleza del evento borrará la confianza ganada y llevará al guardia a sospechar que el jugador es un agente de una facción enemiga, terminando el acceso a los archivos inmediatamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5177 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Bercelio Nax · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4615: Bercelio Nax affinity 19.0 → 21.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+  ✗ (Mundo) delta rechazado por la base (npc.estado): field npc.estado is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 21.0 (cordial), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 122 — 99/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 21.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3337 ms
+
+> "El evento es la única verdad que importa ahora, Nax. No busco borrarlo, sino recuperarlo."
+> Mantengo la mirada fija en él, sin retroceder ni un centímetro.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 14+4=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6847 ms): «¿Recuperarlo? ¿Y qué es exactamente 'recuperarlo' para ti? ¿Sacarlo a la luz o g»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6916 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16510 ms
+
+> narrativa
+> El aire cargado de moho y motas de polvo parece espesarse entre los dos, mientras las antorchas proyectan sombras erráticas sobre las estanterías de madera podrida que los flanquean como colosos exhaustos. La determinación en la mirada no provoca que el guardia retroceda; al contrario, Bercelio Nax se inclina ligeramente hacia adelante, manteniendo una distancia invasiva que busca quebrar cualquier máscara.
+> Sin parpadear, analiza cada microgesto del rostro, diseccionando la respuesta con una fijeza inquietante. "¿Recuperarlo? ¿Y qué es exactamente 'recuperarlo' para ti? ¿Sacarlo a la luz o guardarlo en tu bolsillo? Dime qué es lo que buscas recuperar, exactamente", pregunta, variando el enfoque de su voz para presionar los puntos ciegos de la declaración.
+> mecanica
+> Persuasión: Éxito (18 vs CD 15).
+> presion
+> Nax ha aceptado la legitimidad de la búsqueda, pero su paciencia es un recurso finito. Si la respuesta posterior es ambigua o sugiere una agenda oculta que choque con los intereses de la Guardia, Nax cerrará el acceso a los archivos y pasará de la curiosidad al arresto preventivo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4816 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Bercelio Nax · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4623: Bercelio Nax affinity 21.0 → 23.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 23.0 (cordial), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 123 — 100/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 23.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3454 ms
+
+> "Busco un registro específico sobre el linaje de los antiguos propietarios de este lugar. Información que pertenece a la historia, no a un bolsillo."
+> Mantengo la mirada fija en Nax, sin retroceder ante su cercanía.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 22)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6939 ms): «Historia. Palabras cómodas. Pero la historia no camina sola por los pasillos de »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4317 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  19501 ms
+
+> narrativa
+> El aire viciado del sótano, saturado de tinta seca y el aroma dulzón del papel que se deshace, parece comprimirse entre ambos. La respuesta cala en el guardia, y aunque la tensión no desaparece, el muro de resistencia de Nax cede lo justo para que la búsqueda sea viable. Sin embargo, no hay alivio en su gesto; el hombre permanece anclado en su sitio, invadiendo el espacio personal con una fijeza depredadora mientras entorna los ojos, analizando cada sutil vacilación en el ritmo del habla.
+> Bercelio Nax se inclina un centímetro más, buscando una grieta en la seguridad de la mirada. "Historia. Palabras cómodas. Pero la historia no camina sola por los pasillos de un archivo abandonado. ¿De qué linaje hablamos? ¿Cuál es el nombre exacto que buscas en esos papeles? Repítemelo. El nombre", sentencia con una voz que disecciona la declaración, obligando a concretar la mentira antes de dar un paso al lado.
+> mecanica
+> Engaño: Éxito (22 vs CD 15).
+> presion
+> Nax ha validado la intención, pero ahora exige un dato concreto. Cualquier imprecisión o contradicción en el nombre del linaje proporcionado transformará su sospecha en una certeza de engaño, provocando que el guardia cierre el paso y proceda a una detención inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4274 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 23.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 124 — 101/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 23.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2481 ms
+
+> "El linaje de los Valerius. Sus crónicas sobre la primera purga son esenciales para mi estudio."
+> Sostengo la mirada sin retroceder, manteniendo el tono gélido.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 23)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4575 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13573 ms
+
+> narrativa
+> El guardia mantiene la mirada un instante más, procesando el nombre con una frialdad analítica, hasta que finalmente se aparta. El camino queda libre hacia un pasillo estrecho flanqueado por estanterías colapsadas, donde el polvo flota en densas cortinas bajo la luz mortecina de una única lámpara oscilante. 
+> El silencio del archivo es absoluto, roto únicamente por el sonido del suelo sembrado de folios amarillentos que crujen como huesos bajo cada paso. Nax permanece atrás, una silueta imperturbable que vigila la espalda, mientras la penumbra devora los extremos del corredor.
+> mecanica
+> Engaño: Éxito (23 vs CD 15).
+> presion
+> Nax ha cedido el paso, pero su vigilancia es constante. Cualquier rastro de documentos prohibidos o una búsqueda demasiado errática en los estantes alertará al guardia, quien no dudará en intervenir violentamente si descubre que el interés por los Valerius es una fachada.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4889 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Valerius, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 23.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 125 — 102/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 23.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4375 ms
+
+> "Gracias por tu cortesía."
+> Avanzo con paso lento por el pasillo, evitando hacer ruido con los folios. Mientras camino, observo los estantes colapsados buscando cualquier carpeta o libro que destaque sobre el resto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 2+1=3
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 3)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5824 ms): «No me des las gracias. Solo busca lo que necesitas y sal de aquí rápido. ¿Qué es»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5506 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17820 ms
+
+> narrativa
+> El pasillo se cierra sobre ti, un túnel asfixiante donde las estanterías volcadas crean montañas de papel podrido que exhalan un olor a humedad y olvido. La luz oscilante de la lámpara baña la escena en pulsos intermitentes, revelando que la gran mayoría de los archivos han sido reducidos a jirones inútiles. Solo en un rincón lejano, unos pocos estantes permanecen sorprendentemente intactos, aunque sepultados bajo una capa de ceniza gris que lo cubre todo como un sudario.
+> A pesar de tu cautela, no logras distinguir nada útil entre el caos de folios destrozados; el desorden es absoluto y cualquier pista parece haberse perdido en la putrefacción. Detrás de ti, Bercelio Nax se mantiene erguido, con los brazos cruzados y los ojos fijos en tu nuca, sin dejar de escanear el entorno con una desconfianza gélida. "No me des las gracias. Solo busca lo que necesitas y sal de aquí rápido. ¿Qué es exactamente lo que buscas en este vertedero?", pregunta con un tono seco que corta el silencio del archivo.
+> mecanica
+> Percepción: Fallo (3 vs CD 15). No encuentras nada relevante entre los escombros.
+> presion
+> La impaciencia de Nax crece. Cada segundo que pasas rebuscando sin éxito en el "vertedero" refuerza su sospecha de que no sabes lo que haces o que ocultas el verdadero motivo de tu visita.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1699 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 23.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 126 — 103/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 23.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3026 ms
+
+> "Busco respuestas que no se encuentran en los libros limpios, Nax."
+> Ignoro los jirones del suelo y me dirijo directamente hacia los estantes que han quedado intactos en el rincón.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 5+2=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 7)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6320 ms): «¿Respuestas? ¿Qué tipo de respuestas? ¿Qué es lo que esperas encontrar aquí que »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1699 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14096 ms
+
+> narrativa
+> Tus dedos rozan el lomo de unos folios amarillentos en el rincón intacto, pero el polvo se levanta en nubes asfixiantes y los registros que logras extraer son meros listados de suministros y actas administrativas vacías de sentido. No hay secretos ocultos en este rincón, solo la burocracia muerta de un lugar que dejó de importar hace mucho tiempo.
+> Bercelio Nax da un paso hacia adelante, invadiendo ligeramente tu espacio personal. No mira los estantes; mantiene la mirada clavada en tu rostro, buscando una grieta en tu expresión mientras el eco de sus palabras rebota en las paredes húmedas: "¿Respuestas? ¿Qué tipo de respuestas? ¿Qué es lo que esperas encontrar aquí que no esté en los libros limpios? Sé concreto."
+> mecanica
+> Investigación: Fallo (7 vs CD 15). No encuentras ninguna pista relevante en los estantes intactos.
+> presion
+> La actitud de Nax ha pasado de la impaciencia a la fiscalización. Si no proporcionas una respuesta convincente o un objetivo tangible, dejará de ser tu guía para convertirse en tu interrogador.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2455 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Investigación, Tus
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 23.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 127 — 104/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 23.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2745 ms
+
+> "Busco la verdad que no se escribe en los libros oficiales, Nax. La que se oculta en los márgenes."
+> Sostengo su mirada sin retroceder ni un centímetro, manteniendo el rostro impasible.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 8+4=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 12)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7466 ms): «Los márgenes no guardan verdades, guardan suciedad. ¿Qué es esa suciedad? ¿A qui»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5483 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  22435 ms
+
+> narrativa
+> El aire en el archivo se vuelve más pesado, cargado de un olor a moho y papel húmedo que parece adherirse a la garganta. Alrededor, las estanterías de madera carcomida crujen bajo el peso de legajos inútiles, como si la estructura misma estuviera cansada de sostener tanta irrelevancia. El intento de mantener una fachada impasible se desmorona ante la mirada de Nax; el silencio que sigue a las palabras no es de respeto, sino de un escrutinio gélido que desmantela cualquier pretensión de misterio.
+> Bercelio Nax entorna los ojos, reduciendo la distancia entre ambos hasta que su presencia se vuelve asfixiante. No parpadea, manteniendo una presión psicológica constante mientras inclina levemente la cabeza para analizar cada microgesto del rostro. "Los márgenes no guardan verdades, guardan suciedad. ¿Qué es esa suciedad? ¿A quién pertenece? Sé concreto, porque el tiempo de los misterios se acabó hace mucho", sentencia con una voz que no admite evasivas.
+> mecanica
+> Engaño: Fallo (12 vs CD 15). Nax no se deja impresionar por la respuesta críptica y detecta la falta de sustancia en el argumento.
+> presion
+> La paciencia de Nax se ha agotado. Si el siguiente intento de respuesta sigue siendo ambiguo o falto de pruebas, el guardia asumirá que el jugador oculta intenciones hostiles o criminales, transformando la búsqueda en un arresto inmediato.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3581 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 23.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 128 — 105/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 23.0 (cordial), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2662 ms
+
+> "Tienes razón. No busco misterios, sino nombres y fechas."
+> Sostengo la mirada de Nax sin retroceder, cambiando el tono a uno más pragmático.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 20+4=24  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 24)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8083 ms): «Nombres y fechas. Bien. Empieza por el primero. ¿De quién hablamos? ¿A quién bus»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6487 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  20147 ms
+
+> narrativa
+> La honestidad brusca corta la tensión como una cuchilla. El aire viciado del rincón del archivo, saturado de polvo suspendido y el olor acre de las lámparas de aceite, parece liberar un poco de su presión claustrofóbica. Entre los pasillos estrechos de cuero agrietado y registros amarillentos que huelen a olvido, la postura de Bercelio Nax cambia; ya no busca la grieta en la armadura, sino el dato concreto.
+> Nax no retrocede ni un centímetro, pero la tensión en su mandíbula se relaja mínimamente. Cruza los brazos sobre el pecho, manteniendo el escrutinio, aunque ya no busca el fallo, sino la información. "Nombres y fechas. Bien. Empieza por el primero. ¿De quién hablamos? ¿A quién buscas en estos papeles? Repítelo, y que sea un nombre real", sentencia con un tono que, aunque sigue siendo severo, ha dejado paso a una curiosidad profesional.
+> mecanica
+> Persuasión: Éxito (24 vs CD 15). Nax acepta el cambio de actitud y el pragmatismo del jugador, abriendo la puerta a la colaboración.
+> presion
+> Nax ha cedido, pero su confianza es frágil. Cualquier inconsistencia en los nombres proporcionados o un intento de volver a las ambigüedades reactivará su sospecha, cerrando el acceso a los archivos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4823 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Bercelio Nax · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4678: Bercelio Nax affinity 23.0 → 25.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+  ✗ (Mundo) delta rechazado por la base (npc.mood): field npc.mood is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 129 — 106/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2188 ms
+
+> "Busco los registros de Alaric Thorne, del año 412."
+> Me acerco un paso hacia él, manteniendo la mirada fija y el tono monocorde.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 8+4=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 12)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (10912 ms): «Alaric Thorne. Año 412. ¿Por qué Thorne? ¿Qué tiene que ver Thorne con lo que bu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5205 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15423 ms
+
+> narrativa
+> El eco de los nombres resuena en el rincón asfixiante del archivo, donde las estanterías de madera carcomida se alzan como monolitos de papel amarillento y el polvo danza bajo la luz vacilante de las lámparas de aceite. El avance del paso rompe la distancia, pero no la barrera.
+> Bercelio Nax no se mueve ni un milímetro, aunque entorna los ojos, analizando la fijeza de la mirada ajena. Su tono es seco y rítmico, lanzando las preguntas como si fueran golpes cortos para ver dónde cede la respuesta: "Alaric Thorne. Año 412. ¿Por qué Thorne? ¿Qué tiene que ver Thorne con lo que buscas? ¿Y por qué exactamente el 412?".
+> mecanica
+> Persuasión: Éxito (12 vs CD 10). Nax acepta el dato, pero exige justificación inmediata para seguir colaborando.
+> presion
+> Nax ha aceptado los nombres, pero ahora el interrogatorio se ha invertido. Si las razones proporcionadas resultan insuficientes o contradictorias, considerará que la búsqueda es una coartada para un propósito ilícito y escoltará al grupo fuera del archivo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4763 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = Tarq busca los registros de Alaric Thorne del año 412
+  ⚠ nombres no reconocidos: Persuasión, Thorne, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 130 — 107/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3322 ms
+
+> "Thorne posee conocimientos que no se encuentran en los libros abiertos, y el 412 es el año en que su silencio se volvió permanente."
+> Me acerco un paso más hacia él, manteniendo la calma.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 7+4=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 11)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8939 ms): «Silencio permanente. Una forma elegante de decir que murió, o que lo callaron. ¿»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5391 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  19161 ms
+
+> narrativa
+> El aire en el archivo se siente pesado, saturado por el aroma a pergamino viejo y esa humedad persistente que parece corroer los cimientos del lugar. Detrás de Bercelio Nax, sobre una mesa de roble macizo, varios tomos permanecen abiertos y una pluma solitaria sigue goteando tinta negra sobre un cuaderno de registros, marcando el tiempo con manchas oscuras y espesas.
+> Nax no retrocede ni un centímetro ante el avance del paso. Cruza los brazos con una rigidez militar y mantiene la mirada fija y gélida, analizando cada microexpresión del rostro ajeno mientras procesa la respuesta. Tras un silencio tenso, su voz corta el aire con una precisión quirúrgica: "Silencio permanente. Una forma elegante de decir que murió, o que lo callaron. ¿Quién lo calló? ¿Quién se beneficia de que Thorne no hable desde hace décadas? Dímelo ahora, sin adornos".
+> mecanica
+> Persuasión: Éxito (11 vs CD 10). Nax acepta la premisa del "silencio permanente" y profundiza en la línea de investigación, aunque mantiene su postura defensiva.
+> presion
+> Nax ha mordido el anzuelo de la intriga, pero su paciencia es finita. Si la respuesta sobre quién se beneficia del silencio de Thorne es vaga o evasiva, interpretará el misterio como una manipulación y cerrará el acceso a los registros restringidos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4204 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = Thorne posee conocimientos no públicos y su silencio se volvió permanente en el año 412
+  ⚠ nombres no reconocidos: Persuasión, Thorne, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 131 — 108/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4605 ms
+
+> "No busco adornos, sino la verdad que tú también deseas. Alguien con el poder de borrar a Thorne tiene el poder de borrar cualquier rastro en estos archivos."
+> Sostengo la mirada de Nax sin pestañear, tratando de leer si su rigidez es miedo o simple orgullo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 17+1=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (10796 ms): «¿El poder de borrar? Si alguien ha estado tocando estos archivos, dejará una mar»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6412 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  22250 ms
+
+> narrativa
+> El eco de las palabras se pierde en el laberinto de estanterías que se hunden en la penumbra, donde el polvo danza en los escasos haces de luz que filtran los ventanales altos y sucios. Bajo el silencio sepulcral de los registros, el cuero viejo de los tomos parece absorber cualquier rastro de duda, dejando solo la tensión eléctrica entre los dos hombres.
+> Bercelio Nax descruza los brazos bruscamente y se inclina hacia delante, invadiendo el espacio personal con una agresividad contenida. Sus ojos, fijos y sin parpadear, escudriñan cada poro de la piel ajena buscando una grieta en esa seguridad. "¿El poder de borrar? Si alguien ha estado tocando estos archivos, dejará una marca. Nada es invisible para quien sabe dónde mirar", suelta con un tono que oscila entre la amenaza y la urgencia. "¿Quién crees que es? Dame un nombre, una familia, un cargo. ¿Quién tiene el poder de borrar a Thorne?".
+> mecanica
+> Perspicacia: Éxito (18 vs CD 10). Has logrado leer la intensidad de Nax; su rigidez no es miedo, sino una determinación depredadora.
+> presion
+> Nax está ahora totalmente comprometido con la caza, pero su impaciencia crece. Si no proporcionas un nombre o una pista concreta sobre el responsable, empezará a sospechar que tú eres el agente de ese "borrado" y pasará de colaborador a interrogador.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1426 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Thorne, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 132 — 109/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3730 ms
+
+> "No tengo nombres que darte, Nax. Solo sé que alguien ha sido muy eficiente."
+> Me aparto lentamente para recuperar mi espacio, manteniendo la mirada fría mientras observo los estantes cercanos.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 7+2=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (20469 ms): «Eficiente. ¿Eso es todo? ¿Me estás diciendo que alguien es 'eficiente' pero no s»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5059 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17550 ms
+
+> narrativa
+> El intento de rastrear alguna pista tangible entre los anaqueles fracasa; los dedos solo encuentran capas gruesas de polvo sobre tomos de cuero agrietado y carpetas amarillentas que cuelgan de estantes de roble oscuro, fundiéndose con las sombras del techo. No hay rastro evidente, ninguna marca que el ojo pueda rescatar del olvido administrativo de la sala.
+> Bercelio Nax no retrocede cuando el espacio es recuperado. Se mantiene inclinado, entrecerrando los ojos mientras baja el volumen de la voz, transformando la urgencia en una presión asfixiante que parece consumir el poco aire restante entre ambos. "Eficiente. ¿Eso es todo? ¿Me estás diciendo que alguien es 'eficiente' pero no sabes quién es? Repítelo. ¿Cómo es que sabes que alguien ha sido eficiente si no tienes un nombre que ponerle a esa eficiencia?", sisea, clavando su mirada en busca de una contradicción.
+> mecanica
+> Investigación: Fallo (9 vs CD 10). No has encontrado ninguna pista ni irregularidad en los archivos físicos de esta sección.
+> presion
+> La paciencia de Nax se ha agotado. Al no obtener un nombre ni hallar una prueba inmediata, el silencio del archivo empieza a jugar en tu contra: empezará a cuestionar si tu desconocimiento es real o si eres el cómplice encargado de limpiar el rastro.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1722 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Investigación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 133 — 110/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3349 ms
+
+> "La eficiencia no siempre deja un nombre, Nax. A veces solo deja un vacío donde debería haber un registro."
+> Sostengo la mirada sin pestañear, manteniendo la voz gélida.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 15+4=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 19)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (19310 ms): «¿Un vacío? ¿Me estás diciendo que el registro ha desaparecido? ¿Que alguien ha b»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7725 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16398 ms
+
+> narrativa
+> La sala de archivos se extiende como un laberinto de estanterías de roble que se pierden en una penumbra cenicienta, donde el aire, pesado y viciado, huele a papel viejo y humedad estancada. La gélida seguridad de la respuesta corta el aire, imponiendo un silencio que Nax procesa con una lentitud calculada.
+> Bercelio se endereza lentamente, sin romper el contacto visual. No retrocede ante la frialdad del interlocutor; al contrario, se acerca un centímetro más, analizando cada microgesto del rostro ajeno con una intensidad depredadora. "¿Un vacío? ¿Me estás diciendo que el registro ha desaparecido? ¿Que alguien ha borrado el nombre con tanta limpieza que ni siquiera queda el hueco? Dime exactamente qué falta aquí", demanda, su voz ahora teñida de una curiosidad peligrosa.
+> mecanica
+> Engaño: Éxito (19 vs CD 10). Nax ha aceptado la premisa del vacío administrativo como un hecho, aunque su sospecha se ha desplazado hacia la identidad de quien pudo ejecutar tal limpieza.
+> presion
+> Nax ahora busca el "hueco" exacto. Si no proporcionas una ubicación o un detalle convincente sobre qué registro falta, empezará a sospechar que el "vacío" es una invención para ganar tiempo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4374 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = Existe un vacío administrativo en los registros donde debería haber un nombre
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+  ✗ (Mundo) delta rechazado por la base (npc.estado_emocional): field npc.estado_emocional is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 134 — 111/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  8034 ms
+
+> "No es que falte un nombre, es que el espacio donde debería estar el registro de la familia Valerius está simplemente... blanco."
+> Me acerco a la estantería y señalo un espacio vacío entre dos tomos gruesos, fingiendo que analizo el polvo acumulado.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 2+4=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (25700 ms): «¿Blanco? ¿Me estás diciendo que el papel está ahí pero la tinta no? ¿O que arran»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4864 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  18326 ms
+
+> narrativa
+> El dedo señala el estante, pero la mentira tropieza con la evidencia física. Allí, donde debería haber un volumen, el polvo se asienta en capas desiguales, revelando un hueco rectangular y limpio que rompe la continuidad de los lomos de cuero gastado; no hay papel blanco, hay una ausencia absoluta de materia.
+> Bercelio Nax se inclina sobre el hombro del jugador, entrecerrando los ojos para observar el espacio señalado. Mantiene el cuerpo tenso y evita tocar el libro, mientras su voz se convierte en un susurro cortante: "¿Blanco? ¿Me estás diciendo que el papel está ahí pero la tinta no? ¿O que arrancaron la hoja y dejaron el lomo vacío? Mírame. ¿Qué es exactamente lo que ves ahí?".
+> mecanica
+> Engaño: Fallo (6 vs CD 10). Nax ha detectado la contradicción entre tu descripción y la realidad del estante.
+> presion
+> Nax ya no busca el registro, busca la razón de tu mentira. Si no corriges el relato o justificas la discrepancia inmediatamente, asumirá que estás encubriendo el robo del tomo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1950 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 135 — 112/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4332 ms
+
+> "Me he equivocado. No hay nada, el hueco está vacío".
+> Sostengo la mirada de Nax sin pestañear, manteniendo la voz gélida.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (11544 ms): «Te has equivocado. Te has equivocado. Y ahora me dices que no hay nada. ¿Desde c»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5040 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  18852 ms
+
+> narrativa
+> La biblioteca se siente más asfixiante que nunca, un laberinto de estantes que trepan hacia una penumbra insondable mientras el olor a moho y pergamino viejo se espesa en el aire. Las sombras proyectadas por las velas danzan violentamente sobre los lomos de cuero, subrayando el vacío rectangular y limpio del estante que desmiente cualquier intento de disimulo.
+> Bercelio Nax no retrocede; al contrario, se inclina más, invadiendo el espacio personal con una fijeza incómoda. Sus ojos saltan frenéticamente del hueco vacío a los ojos del interlocutor, diseccionando cada micro-gesto en busca de una grieta en la compostura. "Te has equivocado. Te has equivocado. Y ahora me dices que no hay nada. ¿Desde cuándo te equivocas tanto viendo un hueco tan evidente? ¿Dónde está el libro?", sentencia con una voz que ya no susurra, sino que acusa.
+> mecanica
+> Engaño: Fallo (9 vs CD 10). Nax no acepta la rectificación como un error honesto, sino como una confirmación de que intentaste engañarlo.
+> presion
+> La paciencia de Nax se ha agotado. Si no entregas el libro o proporcionas una prueba irrefutable de que no lo tienes, procederá a detenerte y llevarte ante la Guardia de Umbral Hondo bajo cargo de robo y obstrucción.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  9072 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · betrayal_proven
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 136 — 113/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  7773 ms
+
+> "Tu insistencia es agotadora, Nax. No tengo el libro, pero tu desesperación me dice que es mucho más valioso de lo que admites."
+> Me mantengo firme, sosteniéndole la mirada sin retroceder.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 4+1=5
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (14632 ms): «Llamas agotadora a mi insistencia. Llamas desesperación a que haga mi trabajo. ¿»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4764 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17348 ms
+
+> narrativa
+> Las sombras alargadas de las velas se retuercen sobre el suelo de piedra fría, estrechando los pasillos de la biblioteca hasta convertir el espacio en una celda de estantes opresivos. El intento de desviar la atención falla estrepitosamente; la observación no encuentra ninguna grieta en la armadura emocional de Nax, solo refuerza su convicción de que está siendo manipulado.
+> Bercelio se acerca aún más, reduciendo la distancia a centímetros, con la mirada gélida y fija. No parpadea. Su voz es un látigo seco, marcando cada pregunta como si estuviera tachando un nombre de una lista: "Llamas agotadora a mi insistencia. Llamas desesperación a que haga mi trabajo. ¿Por qué te molesta tanto que quiera el libro? ¿Dónde está?".
+> mecanica
+> Perspicacia: Fallo (5 vs CD 10). No logras leer ninguna debilidad ni motivación oculta en Nax; su determinación parece absoluta y ciega a tus provocaciones.
+> presion
+> Nax ya no busca respuestas, busca el objeto. Si no hay una entrega inmediata o una prueba irrefutable, el siguiente paso es la detención forzosa y el traslado a las celdas de la Guardia de Umbral Hondo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3088 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 137 — 114/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  5508 ms
+
+> "Tened paciencia. La desesperación no abre cerraduras ni encuentra tomos perdidos."
+> Doy un paso atrás para recuperar mi espacio personal y observo detenidamente los estantes que nos rodean, buscando cualquier rastro inusual.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 16+2=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (10578 ms): «La paciencia es para los que tienen tiempo, y yo no tengo ninguno. Olvida las ce»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5146 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16166 ms
+
+> narrativa
+> La mirada recorre los estantes de roble carcomido que se elevan hacia una penumbra donde el polvo flota como nieve estática. Entre el caos de pergaminos amarillentos y encuadernaciones de piel humana o animal, el ojo detecta una anomalía: un hueco vacío en la sección de 'Crónicas Prohibidas'. El polvo sobre la madera ha sido perturbado recientemente, dejando una marca clara de que el tomo fue sustraído hace muy poco tiempo.
+> Bercelio Nax no se mueve ni un milímetro ante el retroceso; mantiene la presión psicológica con los brazos cruzados y una expresión de absoluta incredulidad. "La paciencia es para los que tienen tiempo, y yo no tengo ninguno. Olvida las cerraduras. ¿Dónde está el libro? ¿Me lo vas a dar ahora o prefieres que lo busque yo mismo mientras tú esperas en una celda?", sentencia con un tono que no admite más juegos.
+> mecanica
+> Investigación: Éxito (18 vs CD 10). Has localizado la ubicación exacta donde debería estar el libro y confirmado que ha sido retirado recientemente.
+> presion
+> El espacio se cierra. Nax ha perdido la voluntad de dialogar; cualquier respuesta que no sea la entrega del libro o una pista concreta llevará al uso de la fuerza y al traslado inmediato a las celdas.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  8259 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · threat_made
+  ⚠ nombres no reconocidos: Investigación, Prohibidas, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 138 — 115/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  5830 ms
+
+> "Parece que alguien se te ha adelantado, Nax. El hueco está vacío."
+> Señalo el espacio libre en la estantería con un gesto seco.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 5)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5573 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  22303 ms
+
+> narrativa
+> Bercelio Nax sigue la dirección del gesto, clavando la vista en el hueco vacío de la estantería. Su mandíbula se tensa y un músculo late con violencia en su mejilla mientras el silencio se vuelve asfixiante, cargado de una furia contenida que hace que el aire parezca más pesado. No hay rastro de sorpresa en su rostro, solo una creciente convicción de que está siendo víctima de una burla.
+> Lentamente, Nax descruza los brazos y da un paso adelante, invadiendo el espacio personal con una brusquedad amenazadora. Sus ojos, gélidos y desprovistos de cualquier rastro de empatía, escanean el rostro del interlocutor buscando la mentira. No dice una palabra; el desprecio es absoluto y su mano se cierra en un puño, el preludio físico de una paciencia que acaba de agotarse por completo.
+> mecanica
+> Persuasión: Fallo crítico (5 vs CD 10). Nax interpreta tu observación como un intento burdo de manipulación o una mentira para ganar tiempo.
+> presion
+> Nax ha decidido que ya no hay nada que hablar. En el siguiente instante, pasará de la intimidación a la detención forzosa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2089 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 139 — 116/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 25.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3881 ms
+
+> "No me interesa jugar a tus juegos, Nax. Solo digo lo que veo."
+> Doy un paso atrás para recuperar mi espacio y miro fijamente a sus ojos, manteniendo la calma.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 14+1=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7448 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  19424 ms
+
+> narrativa
+> La tensión en el despacho se vuelve casi palpable, una presión física que se suma al olor acre de la tinta vieja y la cera. Al retroceder y sostenerle la mirada con una calma imperturbable, la dinámica del espacio cambia; las sombras alargadas que proyecta el candelabro sobre la madera oscura parecen retroceder un centímetro. 
+> Nax se queda congelado en su avance, con el puño aún cerrado pero la mirada ahora vacilante. El silencio persiste, pero ya no es la furia contenida la que domina la estancia, sino una duda gélida. El hombre escudriña el rostro del interlocutor, buscando una grieta en esa serenidad, y el músculo de su mejilla deja de latir mientras procesa que no hay rastro de burla ni de nerviosismo en el otro.
+> mecanica
+> Perspicacia: Éxito (15 vs CD 10). Logras leer la duda en su expresión y recuperar el control de la situación.
+> presion
+> Nax ha retrocedido mentalmente, pero sigue siendo un hombre peligroso y suspicaz; cualquier gesto brusco o palabra mal medida le devolverá la convicción de que está siendo engañado.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5064 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Bercelio Nax · competence_shown
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4793: Bercelio Nax affinity 25.0 → 27.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 27.0 (loyal), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 140 — 117/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 27.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2642 ms
+
+> "Parece que hemos recuperado la compostura. Ahora, hablemos con claridad sobre lo que realmente buscas."
+> Me quedo inmóvil, manteniendo el contacto visual mientras espero que termine de procesar su duda.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 14+4=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (16016 ms): «Busco la verdad. La que no se encuentra en los informes oficiales ni en los salu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  15863 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13612 ms
+
+> narrativa
+> El despacho se siente ahora más amplio y el aire, antes asfixiante, comienza a circular. Nax exhala lentamente, soltando la tensión del puño para apoyar las manos sobre la superficie de madera oscura, aceptando el nuevo equilibrio de poder que se ha instaurado en la sala.
+> Se endereza con lentitud, recuperando la verticalidad pero manteniendo una distancia prudencial. Sus ojos permanecen fijos, analizando cada microgesto con una sequedad cortante mientras lanza sus preguntas: "Busco la verdad. La que no se encuentra en los informes oficiales ni en los saludos cordiales. ¿Qué hacías en la sala de máquinas? ¿Por qué saliste por el conducto? ¿Qué estabas buscando ahí abajo?".
+> mecanica
+> Persuasión: Éxito (18 vs CD 10). Has logrado que Nax abandone la postura agresiva y pase a un interrogatorio racional.
+> presion
+> Nax ha dejado de lado la fuerza, pero su sospecha sigue intacta; una respuesta evasiva o contradictoria confirmará que eres una amenaza y cerrará cualquier vía de cooperación.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4989 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Bercelio Nax · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4809: Bercelio Nax affinity 27.0 → 29.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 29.0 (loyal), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 141 — 118/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 29.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2671 ms
+
+> "Buscaba respuestas que no están en los libros, y los conductos son la vía más discreta para obtenerlas."
+> Me mantengo impasible, sosteniéndole la mirada sin pestañear.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 14+4=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (12538 ms): «Respuestas. ¿Qué tipo de respuestas? ¿Respuestas sobre quién, sobre qué o sobre »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  9600 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  20298 ms
+
+> narrativa
+> El despacho recupera su atmósfera de orden gélido. La luz cenital cae con una dureza quirúrgica, resaltando las motas de polvo que flotan en el vacío entre ambos, subrayando el silencio tenso que sigue a la respuesta. La mentira se asienta en el aire, sólida y convincente, obligando al hombre a recalcular su posición.
+> Bercelio Nax apoya el peso de su cuerpo sobre la mesa, inclinándose ligeramente hacia adelante. No parpadea, procesando la información con una mirada analítica que busca desesperadamente una grieta en el relato. "Respuestas. ¿Qué tipo de respuestas? ¿Respuestas sobre quién, sobre qué o sobre dónde? Dime exactamente qué buscabas en esos conductos", interroga con una voz que ha perdido la agresividad, pero que mantiene el filo de la sospecha.
+> mecanica
+> Engaño: Éxito (18 vs CD 10). Nax ha aceptado la premisa de tu búsqueda, aunque ahora necesita concretarla para validar tu historia.
+> presion
+> Nax ha comprado la narrativa, pero el interrogatorio se ha vuelto más específico; cualquier imprecisión sobre el objetivo de la búsqueda podría revelar la falsedad de tu coartada.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1906 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'npc', 'entity_id': 'Nax', 'field': 'estado_mental', 'value': 'Intrigado pero escéptico; acepta la respuesta como plausible pero insuficiente'}
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 29.0 (loyal), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 142 — 119/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 29.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3508 ms
+
+> "Buscaba rastros de una filtración, algo que no encaja con los planos oficiales. No puedo decirte exactamente qué es, pero el flujo de energía en esos conductos es... irregular."
+> Mantengo la mirada fija en él, sin ceder un ápice de espacio. 
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 17+4=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 21)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (25816 ms): «Irregular. ¿Cómo de irregular? ¿Hablas de picos de tensión o de que el flujo se »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4387 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14614 ms
+
+> narrativa
+> El despacho permanece sumido en esa quietud aséptica, donde el único sonido es el zumbido eléctrico casi imperceptible de las lámparas cenitales y el roce del cuero de la mesa bajo los brazos de Nax. La afirmación sobre la irregularidad del flujo cala en él, pero no lo satisface; el hombre se mantiene inclinado sobre la mesa, invadiendo el espacio personal, con los ojos clavados en los del otro, buscando el más mínimo tic o duda.
+> Nax no retrocede, sino que presiona más, variando el enfoque de su interrogatorio mientras mantiene la mirada fija. "Irregular. ¿Cómo de irregular? ¿Hablas de picos de tensión o de que el flujo se desvía hacia donde no debería? Sé concreto: ¿qué es exactamente lo que no encaja con los planos?", pregunta con una intensidad quirúrgica, intentando diseccionar la respuesta para encontrar una grieta.
+> mecanica
+> Engaño: Éxito (21 vs CD 10). Nax acepta la premisa de la irregularidad técnica, pero su instinto lo empuja a exigir detalles técnicos para validar la coherencia de la historia.
+> presion
+> Nax ha aceptado el "qué", pero ahora exige el "cómo". Si no proporcionas una explicación técnica plausible o una justificación de tu secreto, empezará a sospechar que la irregularidad es una excusa para encubrir algo más.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  43761 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = El flujo de energía en los conductos es irregular y no encaja con los planos oficiales
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 29.0 (loyal), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 143 — 120/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 29.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  42699 ms
+
+> "Hablo de desviaciones. El flujo se desplaza hacia sectores que, según los planos, deberían estar inactivos."
+> Mantengo la mirada, sin parpadear, mientras muevo un dedo sobre la mesa simulando un trazo técnico.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 20+4=24  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 24)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6697 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17345 ms
+
+> narrativa
+> La explicación cae con la precisión de un bisturí sobre la mesa de cuero oscuro. Bajo la luz blanca y cenital que anula cualquier refugio en las sombras, el gesto técnico del dedo trazando el mapa invisible termina por romper la resistencia de Nax. El hombre se queda inmóvil, procesando la información; sus ojos dejan de buscar la grieta en la mentira para concentrarse en la implicación técnica de esas desviaciones hacia sectores muertos.
+> El aire en el despacho se siente más denso, cargado de una sospecha que ya no apunta hacia la honestidad del interlocutor, sino hacia la infraestructura misma del lugar. Nax retrocede lentamente, rompiendo la presión del espacio personal, pero mantiene el ceño fruncido, sumido en un silencio clínico mientras asimila que los planos que ha defendido podrían estar mintiendo.
+> mecanica
+> Engaño: Éxito Crítico (24 vs CD 10). Nax no solo acepta la explicación, sino que la integra como una verdad técnica irrefutable.
+> presion
+> Nax ahora está convencido de que hay una anomalía real en los sectores inactivos. Si no diriges su atención hacia un objetivo concreto, empezará a movilizar a la Guardia para una inspección inmediata, lo que podría exponer cualquier rastro que hayas dejado en esas zonas.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  8138 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Bercelio Nax · competence_shown
+  ✓ delta Bercelio Nax · npc.knowledge = Hay una anomalía real en los sectores inactivos y los planos podrían estar mintiendo
+  ⚠ nombres no reconocidos: Crítico, Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4851: Bercelio Nax affinity 29.0 → 31.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+  → delta 4852: Bercelio Nax.knowledge = Hay una anomalía real en los sectores inactivos y los pl…
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 31.0 (loyal), 4 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 144 — 121/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 31.0 (loyal), 4 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3124 ms
+
+> "Es una falla grave que requiere un análisis meticuloso, no una incursión precipitada que pueda alertar a quienquiera que esté aprovechando ese vacío."
+> Pongo una mano sobre el mapa para detener cualquier movimiento impulsivo de Nax.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 14+4=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (12407 ms): «Análisis meticuloso. ¿Eso es lo que sugieres? ¿Que nos quedemos mirando el papel»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  17040 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16067 ms
+
+> narrativa
+> La mano sobre el mapa actúa como un ancla, frenando en seco la impulsividad del hombre. El argumento cala; el riesgo de alertar a un intruso invisible pesa más que la urgencia de la acción, y el silencio que sigue es tenso, cargado de una cautela forzada.
+> Bercelio Nax se queda rígido, con la mirada clavada en la mano del jugador sobre el mapa. No retira la mano, pero su cuerpo está tenso, como un muelle a punto de saltar. "Análisis meticuloso. ¿Eso es lo que sugieres? ¿Que nos quedemos mirando el papel mientras alguien usa esos pasillos para moverse por el pueblo sin que yo lo sepa? Dime exactamente qué es lo que temes que 'alertemos'. Sé preciso", sentencia, con una voz que vibra entre la duda y la autoridad.
+> mecanica
+> Persuasión: Éxito (18 vs CD 10). Nax acepta la prudencia del análisis sobre la incursión inmediata.
+> presion
+> Nax ha aceptado detenerse, pero su impaciencia crece. Si la respuesta no es convincente y específica, interpretará la cautela como una táctica de dilación y ordenará la inspección de los pasillos basándose en su propio criterio.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3837 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Bercelio Nax · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4864: Bercelio Nax affinity 31.0 → 33.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 33.0 (loyal), 4 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 145 — 122/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 33.0 (loyal), 4 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  5416 ms
+
+> "Teme que el ruido sea una invitación. Si hay alguien allí, preferiría que no supiera que nosotros también sabemos dónde está."
+> Me inclino sobre el mapa para señalar los puntos ciegos. {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 14+2=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 16)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (11092 ms): «El ruido es una invitación. Entendido. ¿Y qué pasa con los puntos ciegos? Señála»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4113 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14664 ms
+
+> narrativa
+> La luz vacilante de la estancia baila sobre la madera carcomida de la mesa, proyectando sombras alargadas que parecen trepar por las paredes de piedra fría mientras el dedo marca con precisión los huecos en la vigilancia del mapa. El argumento del sigilo ha penetrado la coraza de Nax, transformando su agresividad en una urgencia gélida y calculadora.
+> Bercelio se inclina sobre el pergamino amarillento, invadiendo el espacio personal con una brusquedad que huele a cuero viejo y sudor. Con los ojos entrecerrados y la respiración pesada por la impaciencia, exige: "El ruido es una invitación. Entendido. ¿Y qué pasa con los puntos ciegos? Señálalos. Ahora. ¿Dónde exactamente no nos verían? ¿En qué puntos concretos el ruido no llegaría a oídos ajenos?".
+> mecanica
+> Investigación: Éxito (16 vs CD 10). Has identificado con exactitud los puntos ciegos y las zonas de silencio acústico del complejo.
+> presion
+> Nax está ahora totalmente dependiente de tu lectura del mapa. Cualquier error en la señalización de estos puntos ciegos podría conducir a la guardia directamente hacia una emboscada en los pasillos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  7792 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Bercelio Nax · competence_shown
+  ✓ delta Bercelio Nax · npc.knowledge = Los puntos ciegos y zonas de silencio acústico del complejo
+  ⚠ nombres no reconocidos: Investigación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4873: Bercelio Nax affinity 33.0 → 35.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+  → delta 4874: Bercelio Nax.knowledge = Los puntos ciegos y zonas de silencio acústico del compl…
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 35.0 (loyal), 5 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 146 — 123/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 35.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2755 ms
+
+> "Tened paciencia. Un error aquí es una sentencia de muerte para todos."
+> Señalo con el dedo los puntos exactos del mapa, marcando las zonas de silencio con movimientos precisos y lentos.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 6+4=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7353 ms): «No me pidas paciencia cuando el tiempo es lo único que no tengo. Señala. ¿Ahí? ¿»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  13544 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14166 ms
+
+> narrativa
+> La luz vacilante de la estancia baila sobre la madera carcomida, proyectando sombras que parecen trepar por las paredes de piedra fría mientras el dedo recorre el mapa con una precisión quirúrgica. El argumento sobre el riesgo cala en Nax, pero no lo calma; solo transmuta su irritación en una urgencia gélida y obsesiva.
+> Bercelio se mantiene inclinado sobre la mesa, con el cuerpo tenso como una cuerda a punto de romperse y la mirada clavada en el dedo que marca el pergamino, ignorando cualquier advertencia sobre la muerte para centrarse únicamente en la geometría del sigilo. "No me pidas paciencia cuando el tiempo es lo único que no tengo. Señala. ¿Ahí? ¿Exactamente ahí? Confírmame que ese punto es ciego, no que 'crees' que lo es", espeta con un tono seco, casi asfixiante.
+> mecanica
+> Persuasión: Éxito (10 vs CD 10). Bercelio acepta la validez de tu análisis y confía en la precisión de los puntos marcados.
+> presion
+> Nax ha aceptado el plan, pero su impaciencia es un polvorín. Cualquier duda posterior o retraso en la ejecución hará que pierda la confianza en tu guía, llevándolo a tomar decisiones precipitadas y ruidosas.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5472 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Bercelio Nax · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4887: Bercelio Nax affinity 35.0 → 37.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 147 — 124/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4159 ms
+
+> "Es exactamente ahí. Si sigues esa línea, el punto es ciego."
+> Me aparto de la mesa para darles espacio, manteniendo la expresión neutra. Mientras se preparan, observo los alrededores de la estancia buscando cualquier detalle que no encaje con el mapa.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 5+1=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7496 ms): «Exactamente ahí. Bien. ¿Y el ángulo de visión desde el pasillo? ¿Sigue siendo ci»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  12429 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13926 ms
+
+> narrativa
+> La estancia, austera y cargada con el olor a pergamino viejo y cera derretida, parece cerrarse sobre el grupo mientras la humedad se filtra por las paredes de piedra. Al alejarse de la mesa, la mirada recorre los rincones y las sombras de la habitación, pero el entorno se mantiene hermético; no hay grietas en el plan ni anomalías en la estancia que escapen a la vista, solo la monotonía del frío y el silencio opresivo.
+> Bercelio Nax no levanta la vista del mapa. Apoya una mano pesada sobre la mesa, casi hundiendo los dedos en el pergamino, mientras su voz suena como grava chocando entre sí: "Exactamente ahí. Bien. ¿Y el ángulo de visión desde el pasillo? ¿Sigue siendo ciego si nos movemos tres pasos a la izquierda o nos exponemos? Dime que es ciego. Confírmalo".
+> mecanica
+> Percepción: Fallo (6 vs CD 10). No encuentras ningún detalle discordante ni pistas adicionales en la estancia.
+> presion
+> Nax está operando bajo una urgencia obsesiva. Si no logras darle la certeza absoluta que exige sobre los ángulos de visión, su impaciencia lo llevará a ignorar el sigilo y avanzar por instinto, exponiendo la posición del grupo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1364 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 148 — 125/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2929 ms
+
+> "Es ciego. El ángulo nos protege si nos mantenemos pegados a la pared."
+> Me acerco al mapa y señalo el punto exacto con el dedo para darle la seguridad que busca.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1683 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12190 ms
+
+> narrativa
+> Bercelio Nax clava la mirada en el punto exacto donde el dedo señala el pergamino. Sus ojos, cansados y hundidos, recorren la línea imaginaria del pasillo mientras el silencio de la estancia se vuelve denso. Tras un instante de tensión, la rigidez de sus hombros cede ligeramente y exhala un suspiro que suena a derrota y alivio, aceptando la seguridad de la mentira como una verdad absoluta.
+> El guardia permanece inmóvil, procesando la confirmación. No hay palabras, solo un asentimiento lento y pesado, mientras su mano se retira del mapa, dejando una marca húmeda sobre la piel del animal. La certeza ha sido implantada, y el hombre ahora confía en que las sombras los cubrirán.
+> mecanica
+> Engaño: Éxito (13 vs CD 10). Nax acepta tu afirmación sin cuestionarla.
+> presion
+> La confianza de Nax es frágil y depende enteramente de tu guía. Si el grupo se desplaza y el ángulo de visión resulta no ser ciego, la traición percibida lo llevará a reaccionar con una violencia errática y desesperada.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  10682 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = El ángulo de visión del guardia es ciego si se mantienen pegados a la pared
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 149 — 126/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2490 ms
+
+> "Ahora, muévete con cuidado. No quiero que nos vean."
+> Le hago una señal para que me siga, guiándolo con paso firme hacia la zona que hemos señalado. 
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Sigilo: 18+1=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 19)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5911 ms): «Tú guías. Yo cubro la espalda. Pero si veo una sola luz donde no debería haberla»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3991 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12940 ms
+
+> narrativa
+> El paso es firme y el desplazamiento invisible; las sombras del pasillo estrecho, densas y cargadas de un olor a salitre y piedra vieja, se cierran sobre ustedes como un manto protector. La humedad se filtra en la ropa mientras avanzan por el corredor, donde la luz de las antorchas es un recuerdo lejano y el silencio solo es roto por el roce casi imperceptible de las botas contra el suelo mojado.
+> Bercelio Nax se desplaza con una eficiencia mecánica, manteniendo la mano apoyada en el pomo de su arma y los ojos escaneando los rincones con una paranoia disciplinada. Se inclina hacia adelante y habla en un susurro áspero, casi un gruñido: "Tú guías. Yo cubro la espalda. Pero si veo una sola luz donde no debería haberla, nos detenemos".
+> mecanica
+> Sigilo: Éxito (19 vs CD 10). Han avanzado sin alertar a nadie.
+> presion
+> El silencio es absoluto, pero el pasillo es un embudo. Cualquier ruido imprevisto o el encuentro con una patrulla en el siguiente recodo los obligará a combatir en un espacio donde la movilidad es nula.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2388 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Sigilo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 150 — 127/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3615 ms
+
+> "Mantén el silencio y no te distraigas."
+> Sigo avanzando con cautela, pero me detengo un instante para observar las paredes y buscar cualquier marca o inscripción oculta en la piedra.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 8+2=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8560 ms): «No me distraigo. Estoy mirando lo que tú no ves. ¿Ves alguna marca? ¿Algún rastr»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  12501 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13074 ms
+
+> narrativa
+> El pasillo desemboca en una estancia rectangular de techos bajos, donde la piedra está cubierta por una capa de moho blanquecino que parece absorber la escasa luz. Al detenerse para examinar los muros, el tacto revela muescas irregulares, cortes profundos en la roca que sugieren la desesperación de alguien contando los días o los pasos en el encierro, aunque no hay mensajes legibles ni inscripciones que den sentido a esas marcas.
+> Bercelio Nax se detiene en seco, manteniendo la espalda recta y la mano tensa sobre el arma, mientras lanza una mirada gélida y evaluadora al jugador. "No me distraigo. Estoy mirando lo que tú no ves. ¿Ves alguna marca? ¿Algún rastro? ¿Algo que no encaje aquí?", espeta con un tono cortante, sin apartar la vista de las sombras que rodean la estancia.
+> mecanica
+> Investigación: Éxito (10 vs CD 10). Has localizado las muescas en la pared.
+> presion
+> La estancia es un punto ciego. Mientras se detienen a analizar las paredes, el tiempo corre y la posibilidad de que una patrulla los flanquee por el pasillo que acaban de dejar atrás aumenta con cada segundo de inactividad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2440 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Investigación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 151 — 128/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3078 ms
+
+> "Solo marcas de alguien que perdió la razón contando los días. No hay nada útil aquí."
+> Ignoro el tono de Nax y me concentro en el pasillo por el que hemos venido para detectar cualquier ruido.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 5+1=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (17525 ms): «Tú decides qué es útil. Yo decido qué es una pista. ¿Quién contaba? ¿Desde cuánd»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  14948 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14055 ms
+
+> narrativa
+> El silencio de la estancia es absoluto, un vacío asfixiante donde el moho blanquecino parece devorar cualquier sonido proveniente del exterior. Al intentar aguzar el oído hacia el pasillo, el aire pesado y la humedad actúan como un muro, devolviendo una nulidad sonora que no permite distinguir si el camino ha quedado despejado o si algo se aproxima en la penumbra.
+> Bercelio Nax no se mueve ni un centímetro; permanece rígido, con la mirada clavada en las muescas de la piedra, ignorando por completo la vigilancia del pasillo. Con un tono gélido y obsesivo, sentencia sin apartar la vista de los cortes en el muro: "Tú decides qué es útil. Yo decido qué es una pista. ¿Quién contaba? ¿Desde cuándo? ¿Por qué contaba?".
+> mecanica
+> Percepción: Fallo (6 vs CD 10). No logras detectar ningún movimiento ni sonido en el pasillo.
+> presion
+> La inacción de Nax y la falta de información auditiva convierten la estancia en una trampa. La probabilidad de que una patrulla los sorprenda por la espalda aumenta mientras el tiempo se agota.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1772 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 152 — 129/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2944 ms
+
+> "Tus preguntas son irrelevantes si nos encuentran aquí."
+> Me acerco a las muescas de la piedra para examinarlas de cerca, tratando de encontrar algún patrón lógico en los cortes.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 11+2=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (10783 ms): «Que nos encuentren es un problema de minutos. Lo que hay escrito en esa pared es»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  10942 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  191122 ms
+
+> narrativa
+> Al acercar la vista a la piedra, el patrón emerge entre la humedad y el moho: no son cortes aleatorios, sino una secuencia rítmica de muescas profundas que siguen una progresión aritmética, marcando el paso de los días o quizás de los sacrificios en una cuenta regresiva que ya ha llegado a su fin.
+> Bercelio Nax no parpadea. Se mantiene como una estatua, con la mandíbula tensa, ignorando la proximidad del jugador para mantener el foco absoluto en las muescas. Con una voz que vibra por una urgencia maníaca, sentencia: "Que nos encuentren es un problema de minutos. Lo que hay escrito en esa pared es un problema de años. ¿Quién contaba? Te lo pregunto otra vez. ¿Quién hacía las marcas?".
+> mecanica
+> Investigación: Éxito (13 vs CD 10). Has descifrado la lógica del patrón en las muescas.
+> presion
+> La obsesión de Nax lo vuelve ciego al entorno; mientras se hunde en el enigma de la pared, el silencio del pasillo se vuelve más peligroso y cualquier patrulla que se acerque los encontrará totalmente vulnerables.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1395 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Investigación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 153 — 130/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2620 ms
+
+> "No tengo la menor idea de quién contaba, pero el tiempo se nos acaba."
+> Ignoro la pregunta de Nax y vigilo el pasillo para detectar cualquier movimiento.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 14+1=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6400 ms): «No me hables del tiempo. El tiempo es lo que ha dejado estas marcas. Te lo pregu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3081 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  38293 ms
+
+> narrativa
+> El pasillo de piedra húmeda se cierra sobre vosotros, devorando el sonido en un silencio opresivo mientras la oscuridad parece filtrarse desde las esquinas para presionar contra las paredes. Al desplazar la atención hacia la penumbra del corredor, el sentido de la alerta se agudiza y el vacío devuelve una confirmación gélida: por ahora, el camino está despejado y no hay rastro de movimiento en la profundidad del túnel.
+> Bercelio Nax, sin embargo, permanece ajeno a la vigilancia. Sigue clavando la vista en las muescas, con el cuerpo rígido y la voz ganando una intensidad cortante, casi agresiva, sin siquiera girar la cabeza: "No me hables del tiempo. El tiempo es lo que ha dejado estas marcas. Te lo pregunto de nuevo: ¿quién las hizo? ¿Quién estaba aquí contando los días? ¿Quién demonios hacía esto?".
+> mecanica
+> Percepción: Éxito (15 vs CD 10). El pasillo está despejado en este momento.
+> presion
+> Nax ha entrado en un estado de fijación absoluta. Si no logras sacarlo de su trance o resolver su duda, seguirá expuesto y distraído, convirtiéndose en un lastre letal en el instante en que algo emerja de la oscuridad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1740 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 154 — 131/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3808 ms
+
+> "No sé quién contaba los días, pero ahora mismo somos nosotros los que estamos aquí."
+> Le pongo una mano firme en el hombro para obligarlo a reaccionar y lo empujo suavemente hacia adelante, alejándolo de las marcas.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6926 ms): «No me empujes. He dicho que quiero un nombre. ¿Quién estaba aquí? ¿Quién hacía e»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  21148 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  24648 ms
+
+> narrativa
+> El intento de mover a Bercelio fracasa; el hombre se tensa violentamente ante el contacto y aparta el hombro con un movimiento brusco, rechazando cualquier gesto de guía. No hay espacio para la prudencia en su mirada, que permanece clavada en las muescas de la piedra con una obsesión febril, la mandíbula apretada y la respiración agitada. "No me empujes. He dicho que quiero un nombre. ¿Quién estaba aquí? ¿Quién hacía esto? ¿Quién demonios dejaba estas marcas?", escupe con una intensidad que ignora por completo el peligro del entorno.
+> A su espalda, el pasillo continúa estrechándose y las paredes de piedra húmeda comienzan a mostrar vetas de un musgo pálido que emite un brillo anémico. La luz mortecina revela que el suelo empieza a descender en una pendiente irregular, hundiéndose hacia una zona de oscuridad más densa y absoluta, donde el silencio parece aguardar el siguiente paso.
+> mecanica
+> Persuasión: Fallo (9 vs CD 10). Bercelio ignora el argumento y rechaza el contacto físico.
+> presion
+> La fijación de Nax es ahora total. Su negativa a moverse y su hostilidad ante la guía lo dejan vulnerable y bloquea el avance del grupo; cualquier amenaza que emerja de la pendiente inferior lo encontrará distraído y en una posición indefensa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1715 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) delta rechazado por la base (npc.estado): field npc.estado is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 155 — 132/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3304 ms
+
+> "Tu curiosidad nos va a matar a los dos."
+> Me aparto de él y me detengo un paso atrás, observando las marcas en la piedra que tanto le obsesionan.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 4+2=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5782 ms): «Que nos mate el silencio es peor. Te lo pregunto otra vez: ¿quién ha estado aquí»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4895 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17815 ms
+
+> narrativa
+> Las muescas en la piedra resultan indescifrables, simples surcos violentos que no revelan patrón ni autor, dejando la incertidumbre intacta mientras el frío se filtra por las costuras de la ropa. El pasillo se hunde ahora en una rampa de piedra resbaladiza, flanqueada por paredes que exudan una humedad gélida y musgos fosforescentes que bañan el camino con una luz anémica. Al final de la pendiente, el camino se abre hacia una cámara semicircular donde la oscuridad es tan densa que parece absorber la luz de las antorchas, convirtiendo el vacío en una presencia física.
+> Bercelio Nax no aparta la vista de la piedra. Sus dedos rozan las muescas con una urgencia casi dolorosa, ignorando el peligro y cualquier advertencia. "Que nos mate el silencio es peor. Te lo pregunto otra vez: ¿quién ha estado aquí? ¿Quién ha dejado estas marcas? ¿Quién demonios ha bajado hasta este punto?", exclama con una voz que vibra entre la desesperación y la obsesión.
+> mecanica
+> Investigación: Fallo (6 vs CD 10). Las marcas no ofrecen ninguna pista útil.
+> presion
+> La ceguera de Nax ante el entorno y el fallo en la investigación dejan al grupo sin información sobre el origen de las marcas mientras se adentran en una cámara cuya oscuridad total oculta cualquier amenaza inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1742 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Investigación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 156 — 133/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2381 ms
+
+> "Deja de tocar la piedra, Nax. No hay respuestas ahí, solo frío."
+> Me aparto de las marcas y miro fijamente hacia la oscuridad de la cámara semicircular.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5513 ms): «El frío no es lo que me preocupa. Me preocupa que alguien haya estado aquí y nos»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4845 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  23288 ms
+
+> narrativa
+> La mirada atraviesa la penumbra y logra discernir la geometría del lugar: una cámara semicircular donde el suelo de piedra pulida actúa como un espejo negro, devolviendo el reflejo distorsionado de las antorchas. En el centro exacto, un altar circular de obsidiana se alza solitario, rodeado por un anillo de ceniza grisácea que permanece intacto, sin que una sola corriente de aire haya osado perturbar su superficie.
+> Bercelio Nax retira la mano de la piedra bruscamente, pero no retrocede. Se gira con la mirada cargada de una intensidad febril, ignorando la sugerencia del frío para centrarse en el interrogatorio. "El frío no es lo que me preocupa. Me preocupa que alguien haya estado aquí y nosotros sigamos caminando a ciegas. ¿Quién ha estado aquí? ¿Quién ha dejado estas marcas? ¿Quién demonios ha bajado hasta este punto?", exclama, mientras su respiración se condensa en el aire gélido.
+> mecanica
+> Percepción: Éxito (10 vs CD 10). Has logrado identificar el altar de obsidiana y el anillo de ceniza imperturbable en la oscuridad.
+> presion
+> La obsesión de Nax lo está aislando de la realidad del entorno; mientras se enfoca en el pasado de las marcas, ignora que el altar de obsidiana y la ceniza intacta sugieren que algo podría estar esperando en el centro de la sala.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1553 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 157 — 134/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2661 ms
+
+> "Cálmate, Nax. Los fantasmas no dejan ceniza."
+> Me acerco al anillo de grisácea con cautela, observando la superficie para ver si noto algún patrón o rastro reciente.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 12+2=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7937 ms): «¿Cálmate? No me pidas que me calme cuando hay ceniza donde no debería haber ceni»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  860 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15804 ms
+
+> narrativa
+> Tus pasos son lentos, calculados, evitando que el roce de las botas perturbe la quietud del polvo. Al inclinarte sobre el anillo de ceniza, la superficie revela una verdad inquietante: no es un depósito azaroso, sino un patrón deliberado, una serie de muescas y surcos que sugieren una presencia física, pesada y reciente, que ha marcado el suelo con una precisión quirúrgica.
+> Bercelio Nax se mantiene rígido, con los hombros tensos. No te sigue el paso hacia el anillo, sino que se queda clavando la mirada en tu nuca, evaluando cada uno de tus movimientos con desconfianza profesional. "¿Cálmate? No me pidas que me calme cuando hay ceniza donde no debería haber ceniza. Los fantasmas no, pero la gente sí. ¿Quién la ha traído? ¿Quién ha estado aquí? Te lo pregunto otra vez: ¿quién ha bajado hasta este punto?", lanza con una voz que vibra entre la urgencia y la sospecha.
+> mecanica
+> Investigación: Éxito (14 vs CD 10). Has confirmado que la ceniza no es un residuo natural, sino el rastro de alguien —o algo— con masa física que ha estado manipulando el espacio alrededor del altar.
+> presion
+> La insistencia de Nax y su creciente agitación están convirtiendo la cámara en un polvorín; si no logras darle una respuesta que calme su paranoia, su lealtad a la Guardia podría primar sobre su confianza en ti, llevándolo a tratarte como a un sospechoso más.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1996 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Investigación, Tus, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 158 — 135/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3078 ms
+
+> "No sé quién ha estado aquí, Nax, pero alguien ha trabajado este suelo con una precisión que no es casual."
+> Me enderezo lentamente y lo miro a los ojos, manteniendo la calma.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 2+4=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6974 ms): «No me vengas con 'precisión'. No me hables de 'casualidades'. Te estoy haciendo »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  22327 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13137 ms
+
+> narrativa
+> La cámara circular de piedra fría y húmeda parece cerrarse sobre vosotros. El anillo de ceniza, como una herida pálida sobre el suelo oscuro, resalta bajo la luz mortecina, mientras el altar de roca bruta preside el centro de la estancia envuelto en un silencio cargado de hostilidad invisible. El intento de apelar a la lógica de la escena cae en saco roto; la calma no es un escudo, sino un detonante para quien ya no confía en las palabras.
+> Bercelio Nax da un paso brusco hacia adelante, invadiendo tu espacio personal hasta que puedes sentir el calor de su respiración. Sus ojos, inyectados en sangre por el insomnio, te escanean con una furia contenida y la mandíbula apretada en un gesto de desprecio. "No me vengas con 'precisión'. No me hables de 'casualidades'. Te estoy haciendo una pregunta directa: ¿quién ha estado aquí? ¿Quién bajó hasta este punto? ¿Quién ha estado manipulando este suelo?", escupe, ignorando cualquier matiz diplomático en busca de un nombre que pueda culpar.
+> mecanica
+> Persuasión: Fallo (6 vs CD 10).
+> presion
+> La paciencia de Nax se ha agotado. Cualquier otra respuesta evasiva o intento de desviar el interrogatorio provocará que deje de verte como un aliado y empiece a tratarte como al principal sospechoso de la profanación.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1893 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) delta rechazado por la base (npc.status): value "altamente suspicaz y agitado" not allowed for npc.status
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 27 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 159 — 136/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3225 ms
+
+> "No sé quién ha estado aquí, Nax, pero si buscas un culpable, buscarlo en mí es perder el tiempo."
+> Me mantengo firme, sin retroceder ante su proximidad, mientras observo sus ojos para detectar cualquier rastro de duda o delirio.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 7+1=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 8)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7166 ms): «No me digas que pierdo el tiempo. Dime quién ha estado aquí. Repito: ¿quién ha b»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2343 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9467 ms
+
+> narrativa
+> La mirada de Bercelio Nax no vacila ni un milímetro; no hay grietas de duda en sus pupilas, solo una convicción ciega y gélida que ignora cualquier intento de defensa. El aire en la cámara parece espesarse, cargado con el olor a humedad y piedra vieja, mientras el silencio se vuelve un arma que él maneja con precisión quirúrgica.
+> Nax se inclina más hacia adelante, casi pegando su frente a la tuya, con la voz bajando a un susurro peligroso y cortante. No parpadea. "No me digas que pierdo el tiempo. Dime quién ha estado aquí. Repito: ¿quién ha bajado hasta este punto? ¿Quién ha manipulado este suelo? No me des respuestas vacías, dame un nombre".
+> mecanica
+> Perspicacia: Fallo (8 vs CD 10).
+> presion
+> Nax ha dejado de escuchar razones. Si el siguiente enunciado no contiene un nombre o una confesión, el interrogatorio pasará de ser una confrontación verbal a una detención forzosa bajo sospecha de profanación.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2068 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 160 — 137/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3647 ms
+
+> "No sé de quién hablas, pero si buscas a alguien que manipule este suelo, quizá deberías preguntar por el anterior guardián de este lugar."
+> Mantengo la mirada, sin retroceder ni un ápice ante su cercanía.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 4+4=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 8)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7957 ms): «¿El anterior guardián? No me vengas con fantasmas ni con nombres que ya están en»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  11873 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10995 ms
+
+> narrativa
+> La mención del antiguo guardián no produce el efecto deseado; no hay rastro de duda en la expresión de Nax, solo un rechazo visceral. El eco de las palabras rebota en las paredes desnudas de la cámara, donde el aire saturado de moho y encierro parece cerrarse sobre vosotros mientras la piedra fría exhala un vaho húmedo.
+> Bercelio no retrocede ni un centímetro, manteniendo la presión física y estrechando los ojos para analizar cada micro-gesto del rostro. Su voz se vuelve más seca, despojada de cualquier rastro de paciencia: "¿El anterior guardián? No me vengas con fantasmas ni con nombres que ya están enterrados. Repito: ¿Quién ha estado aquí? ¿Quién ha bajado hasta este punto? ¿Quién ha manipulado este suelo? Dame un nombre vivo, ahora mismo".
+> mecanica
+> Engaño: Fallo (8 vs CD 10).
+> presion
+> La paciencia de Nax se ha agotado. Si no se entrega un nombre real o una confesión inmediata, procederá a la detención forzosa por profanación.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2148 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 161 — 138/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2764 ms
+
+> "Basta de juegos. No sabemos quién ha estado aquí, pero nosotros tampoco tenemos interés en profanar este lugar."
+> Me interpongo entre Bercelio y Nax, manteniendo una expresión impasible.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 8+4=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 12)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8253 ms): «No me interesa vuestro interés. Me interesa la verdad. ¿Me decís que no sabéis q»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3753 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11008 ms
+
+> narrativa
+> El aire pesado y saturado de moho parece espesarse aún más en la cámara de piedra húmeda, donde el frío de las paredes desnudas se filtra por la ropa. La tensión es casi tangible, una cuerda tensada al límite que vibra entre los presentes mientras el eco de la declaración resuena en el vacío subterráneo.
+> Bercelio Nax se mantiene rígido, sin apartar la mirada, aunque el impulso de proceder al arresto inmediato se detiene en seco, contenido por una duda forzada. Su cuerpo sigue tenso, como un muelle a punto de saltar, mientras dispara sus palabras con una sequedad cortante: "No me interesa vuestro interés. Me interesa la verdad. ¿Me decís que no sabéis quién ha estado aquí? ¿Que no habéis visto a nadie? ¿Que vuestra ignorancia es absoluta?".
+> mecanica
+> Persuasión: Éxito (12 vs CD 10).
+> presion
+> Nax ha desistido de la detención inmediata, pero su sospecha se ha vuelto crónica. Cualquier contradicción futura o rastro de mentira disparará una reacción violenta y definitiva.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1592 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 162 — 139/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2993 ms
+
+> "La ignorancia es un estado peligroso, pero en este lugar es lo más común."
+> Me mantengo impasible, observando la reacción de Nax para detectar cualquier grieta en su Patience.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 1+1=2  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 2)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8145 ms): «Filosofía barata. No me hables de peligros, que yo vivo en ellos cada vez que ci»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4373 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11326 ms
+
+> narrativa
+> La humedad de la cámara de piedra se siente ahora como una mortaja fría que se pega a la piel, mientras el moho asciende por los muros como dedos negros y lentos. El intento de leer al hombre fracasa estrepitosamente; la expresión de Nax es un muro de granito impenetrable, una máscara de agotamiento y furia que no cede ni un milímetro, dejando solo la sensación de una hostilidad ciega y absoluta.
+> Bercelio Nax se inclina ligeramente hacia adelante, invadiendo el espacio personal del jugador. Sus ojos están inyectados en sangre por la falta de sueño y su voz es un susurro áspero, casi un gruñido: "Filosofía barata. No me hables de peligros, que yo vivo en ellos cada vez que cierro los ojos. Repito: ¿quién ha estado aquí? ¿Alguien ha entrado en esta cámara? ¿Habéis visto a alguien?".
+> mecanica
+> Perspicacia: Fallo (2 vs CD 10).
+> presion
+> Nax ha perdido la poca paciencia que le quedaba. Cualquier respuesta que no sea una información concreta y útil será interpretada como una burla, lo que llevará al guardia a resolver la situación mediante la fuerza bruta.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1213 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 163 — 140/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2496 ms
+
+> "Nadie ha entrado aquí excepto nosotros."
+> Doy un paso atrás para recuperar mi espacio y lo miro fijamente, tratando de analizar su estado físico.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 2+1=3
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 3)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8353 ms): «¿Nadie? ¿Me estás diciendo que este lugar se ha mantenido vacío por arte de magi»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6303 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10873 ms
+
+> narrativa
+> La cámara de piedra húmeda se cierra sobre vosotros, asfixiante, mientras el olor a salitre y encierro se vuelve más denso. El intento de analizar la condición física de Nax es inútil; el hombre es una masa de tensión y fatiga que no deja pistas claras, un enigma de cuero y acero que se niega a ser descifrado.
+> Bercelio Nax no permite que recuperéis el espacio; cuando el jugador retrocede, él cierra la distancia inmediatamente para mantener la presión. Entorna los ojos, buscando con ferocidad una grieta en la expresión del interlocutor, mientras aprieta la mandíbula con fuerza. "¿Nadie? ¿Me estás diciendo que este lugar se ha mantenido vacío por arte de magia? ¿Que no habéis visto ni una sombra, ni una huella, ni un rastro de que alguien más respire este aire? Repite: ¿quién ha estado aquí?", gruñe, su voz resonando en los muros mohosos.
+> mecanica
+> Percepción: Fallo (3 vs CD 10).
+> presion
+> La irritación de Nax ha alcanzado un punto crítico. Si el jugador sigue insistiendo en que no ha visto a nadie o intenta evadir la pregunta, Nax asumirá que le están mintiendo en la cara y recurrirá a la violencia física para extraer la verdad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1466 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) delta rechazado por la base (npc.estado): field npc.estado is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 164 — 141/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3453 ms
+
+> "No me grites. No he visto a nadie, y si lo hubiera hecho, te lo habría dicho para evitar este mal humor."
+> Mantengo la mirada fija en él, sin retroceder ni un centímetro, analizando su lenguaje corporal.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 2+1=3
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 3)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7144 ms): «No me hables de mi humor. Hablamos de quien estuvo aquí. ¿Que no has visto a nad»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3829 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11463 ms
+
+> narrativa
+> El agua gotea rítmicamente desde el techo abovedado, cayendo sobre la piedra caliza en charcos negros que reflejan, como espejos sucios, la rigidez del encuentro. El intento de leer los gestos de Nax fracasa estrepitosamente; su lenguaje corporal es un muro infranqueable de hostilidad y cansancio que no cede ni un ápice ante la mirada fija. Para él, la calma del interlocutor no es honestidad, sino una provocación deliberada.
+> Bercelio Nax no se inmuta ante el desafío; al contrario, se inclina hacia delante, invadiendo el espacio personal hasta que el olor a cuero viejo y sudor frío llena el aire. Su voz no sube de volumen, pero se vuelve más cortante, casi un susurro agresivo, mientras sus ojos escanean cada micro-gesto del rostro del otro: "No me hables de mi humor. Hablamos de quien estuvo aquí. ¿Que no has visto a nadie? ¿Que no hay rastro de nadie? ¿Me estás diciendo que este sitio está limpio?".
+> mecanica
+> Perspicacia: Fallo (3 vs CD 10).
+> presion
+> La paciencia de Nax se ha agotado. Cualquier respuesta que siga negando la presencia de terceros será interpretada como una mentira descarada, transformando el interrogatorio en una agresión física inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1157 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 165 — 142/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3260 ms
+
+> "No he visto a nadie, pero eso no significa que el sitio esté limpio." 
+> Mantengo el contacto visual sin retroceder y empiezo a observar los alrededores con detenimiento, buscando cualquier rastro físico que Nax haya pasado por alto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 9+2=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 11)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6112 ms): «¿No significa que esté limpio? ¿Entonces qué significa? ¿Que hay alguien escondi»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1156 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16112 ms
+
+> narrativa
+> La mirada se desplaza por las superficies húmedas y las sombras que se arrastran por las esquinas del techo abovedado. Donde Nax solo vio un vacío estéril, el ojo atento detecta el rastro: una marca irregular en el polvo húmedo, una perturbación en la capa de sedimentos que delata un paso apresurado o un objeto arrastrado. La evidencia es tenue, pero está ahí, rompiendo la narrativa de un lugar deshabitado.
+> Bercelio Nax no sigue la dirección de esa búsqueda; se mantiene inclinado hacia delante, cerrando el espacio y asfixiando el aire entre ambos. Sus ojos no miran el entorno, sino que permanecen clavados en las pupilas del interlocutor, buscando la grieta en el relato con una intensidad depredadora. "¿No significa que esté limpio? ¿Entonces qué significa? ¿Que hay alguien escondido? ¿Que alguien ha pasado por aquí y no lo has visto, o que lo has visto y no quieres decírmelo?", sisea, convencido de que cada palabra es una pieza de un juego de engaños.
+> mecanica
+> Investigación: Éxito (11 vs CD 10).
+> presion
+> La sospecha de Nax ha mutado: ya no cree que el lugar esté vacío, sino que el jugador oculta la identidad o la ubicación de alguien, y su tolerancia hacia las ambigüedades se reduce con cada segundo de silencio.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1406 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Investigación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 166 — 143/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3654 ms
+
+> "No me asfixies con tu impaciencia, Nax. Solo digo que el lugar no está tan vacío como pretendes."
+> Mantengo la mirada fija en él, sin retroceder, mientras trato de analizar si su agresividad es genuina o una táctica para intimidarme.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 4+1=5
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6035 ms): «No me hables de impaciencia. Habla de la marca en el suelo. ¿Quién la dejó? ¿Qui»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3440 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10599 ms
+
+> narrativa
+> La bóveda de piedra húmeda parece cerrarse sobre la escena, con un aire denso que apaga cualquier eco y un suelo cubierto de un sedimento grisáceo que traiciona la presencia de alguien más con huellas erráticas y recientes. El intento de leer la intención detrás de la agresividad de Nax fracasa; su rostro es una máscara de convicción absoluta y el análisis no revela ninguna grieta táctica, solo una hostilidad genuina y creciente.
+> Bercelio Nax no retrocede ni un milímetro. Entorna los ojos, reduciendo la distancia física para ejercer presión, mientras su voz baja de volumen pero gana en dureza: "No me hables de impaciencia. Habla de la marca en el suelo. ¿Quién la dejó? ¿Quién ha pasado por aquí? ¿A quién estás protegiendo?".
+> mecanica
+> Perspicacia: Fallo (5 vs CD 10).
+> presion
+> Nax ha dejado de intentar comprender la situación para pasar a la fase de interrogatorio agresivo; cualquier respuesta evasiva ahora será interpretada como una confesión implícita de complicidad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1673 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 167 — 144/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2839 ms
+
+> "No protejo a nadie, Nax. No tengo tiempo para tus juegos de sospechas."
+> Mantengo la mirada fría, sin retroceder, y miro hacia las huellas en el sedimento gris.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 4+2=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5121 ms): «¿Juegos? No juego, yo vigilo. Repito: ¿quién dejó esa marca? ¿Quién ha estado aq»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  16570 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10326 ms
+
+> narrativa
+> La bóveda se extiende en una penumbra asfixiante donde las paredes de piedra sudan un moho pálido y el aire huele a encierro y humedad. El intento de rastrear el origen de las huellas en el sedimento gris resulta estéril; la vista se pierde en la confusión de marcas erráticas que conducen hacia un arco colapsado al fondo, donde una corriente de aire invisible agita el polvo, sugiriendo que algo acaba de deslizarse hacia la oscuridad del otro lado.
+> Bercelio Nax no aparta la vista, manteniendo la presión física y cerrando el espacio personal. Su voz suena como un látigo, seca y rítmica, ignorando deliberadamente el comentario sobre los juegos para centrarse en el interrogatorio: "¿Juegos? No juego, yo vigilo. Repito: ¿quién dejó esa marca? ¿Quién ha estado aquí? ¿A quién intentas encubrir?".
+> mecanica
+> Investigación: Fallo (6 vs CD 10).
+> presion
+> Nax ha cerrado el cerco; cualquier nueva evasiva o fallo en proporcionar una respuesta satisfactoria llevará al guardia a tratar al jugador como un cómplice activo, escalando la situación a una detención forzosa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1893 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Investigación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 168 — 145/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3757 ms
+
+> "No me interesa encubrir a nadie, pero no puedo darte respuestas que no tengo."
+> Doy un paso hacia atrás para recuperar mi espacio y miro fijamente a Nax, tratando de analizar su reacción.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 18+1=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 19)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7302 ms): «No tienes respuestas, dices. Entonces no sabes quién estuvo aquí. No sabes quién»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3974 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12015 ms
+
+> narrativa
+> La penumbra de la bóveda se siente más pesada ahora que el silencio se prolonga. El arco colapsado al fondo sigue exhalando esa corriente de aire fría que mueve el polvo en espirales lentas, subrayando la vacuidad de la estancia. Al analizar la reacción del guardia, queda claro que no se deja intimidar ni descolocar por la falta de respuestas; su postura es la de quien ya posee una estructura de sospechas y solo busca que la pieza actual encaje en el rompecabezas.
+> Bercelio no retrocede cuando intentas recuperar tu espacio; al contrario, inclina ligeramente la cabeza, manteniendo la mirada fija y fría, mientras sus dedos tamborilean rítmicamente sobre la empuñadura de su arma. "No tienes respuestas, dices. Entonces no sabes quién estuvo aquí. No sabes quién dejó la marca. No tienes ni idea de quién se acaba de meter por ese arco. ¿Es eso? ¿Que no sabes nada, o que no quieres saberlo?", sentencia con una voz que no admite ambigüedades.
+> mecanica
+> Perspicacia: Éxito (19 vs CD 10).
+> presion
+> Nax ha pasado de la interrogación a la desconfianza sistemática. Si no surge un dato concreto o una razón válida para confiar, el guardia asumirá que el silencio es una admisión de culpa y procederá a la detención.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1719 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 169 — 146/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4057 ms
+
+> "Tú tienes el arma, pero yo tengo la capacidad de entender lo que hay ahí fuera. Si me encierras, te quedarás solo con tus sospechas y un arco vacío."
+> Sostengo la mirada sin pestañear, manteniendo el tono gélido. {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 22)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7498 ms): «Tengo mis sospechas y tengo mi arma. Con eso me basta para mantener el orden. Pe»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1967 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12608 ms
+
+> narrativa
+> La tensión en la bóveda se vuelve palpable, casi sólida, mientras el silencio se estira entre los dos. Bercelio Nax no se mueve ni un milímetro, pero el rítmico tamborileo de sus dedos sobre la empuñadura se detiene en seco, dejando que el metal frío sea lo único que medie entre su mano y la acción. Su mirada se vuelve más afilada, diseccionando cada micro-expresión, evaluando si esa seguridad es una máscara de arrogancia o una herramienta que puede resultarle útil para limpiar el desastre que lo rodea.
+> El guardia inclina la cabeza, procesando la oferta mientras el aire gélido del arco sigue arrastrando el polvo en espirales a sus espaldas. "Tengo mis sospechas y tengo mi arma. Con eso me basta para mantener el orden", sentencia con una voz que recupera una calma peligrosa. Se inclina ligeramente hacia delante, reduciendo el espacio personal, y añade en un susurro inquisidor: "Pero dime... ¿qué es exactamente lo que 'entiendes' de ahí fuera que yo no? ¿Qué es lo que ves que yo no debería ver?".
+> mecanica
+> Persuasión: Éxito (22 vs CD 10).
+> presion
+> Nax ha aceptado el valor del jugador, pero ahora el precio es la información. Si la respuesta no es convincente o es demasiado vaga, el guardia interpretará la maniobra como un intento de manipulación y retomará la detención con más agresividad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3238 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 170 — 147/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3003 ms
+
+> "Veo que el orden que proteges es una cáscara vacía, y que el verdadero caos ya ha entrado."
+> Me acerco un paso más, manteniendo el contacto visual sin pestañear.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5718 ms): «Palabras vacías. Poesía para distraer. ¿Qué es el caos? ¿Quién entró? ¿De quién »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4585 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10697 ms
+
+> narrativa
+> La bóveda se siente ahora como una jaula de piedra fría, donde el eco de las palabras rebota contra las paredes desnudas y el polvo sigue danzando en la luz mortecina del arco. El avance del jugador no intimida a Bercelio Nax; el guardia se mantiene rígido, sin retroceder un centímetro, mientras sus ojos se entrecierran para analizar la falta de precisión en la respuesta con un desprecio evidente.
+> Nax exhala un suspiro cargado de impaciencia y corta el aire con un tono gélido: "Palabras vacías. Poesía para distraer. ¿Qué es el caos? ¿Quién entró? ¿De quién hablamos exactamente? Dilo claro o deja de hacerme perder el tiempo".
+> mecanica
+> Engaño: Fallo (9 vs CD 10).
+> presion
+> Bercelio ha perdido la paciencia y ya no busca una conversación, sino nombres. Si el jugador sigue recurriendo a acertijos o vaguedades, Nax interpretará la actitud como una burla directa y procederá a reducirlo físicamente para llevarlo bajo custodia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1233 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 171 — 148/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 37.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3304 ms
+
+> "No busco distraerte, Nax. Me refiero a que hay fuerzas moviéndose que no figuran en tus registros."
+> Me acerco un paso más, manteniendo la mirada fría y directa, intentando recuperar la compostura.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7388 ms): «Tus registros, mis registros... Olvida el papeleo. ¿Quiénes son? Dame nombres. ¿»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  29256 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10472 ms
+
+> narrativa
+> La penumbra de la bóveda parece cerrarse sobre ambos, concentrando el aire estático y el polvo que flota entre los dos como una barrera invisible. Ante la seguridad de las palabras y la firmeza de la mirada, la resistencia de Nax se quiebra, aunque no cede su terreno. El guardia no retrocede ante la proximidad; al contrario, inclina ligeramente la cabeza hacia adelante, invadiendo el espacio personal para presionar la respuesta con una intensidad casi asfixiante.
+> Mantiene la postura rígida, sin pestañear, mientras su voz adquiere un tono de urgencia contenida: "Tus registros, mis registros... Olvida el papeleo. ¿Quiénes son? Dame nombres. ¿Quiénes son esos que 'se mueven'? ¿De quiénes hablamos, exactamente?".
+> mecanica
+> Persuasión: Éxito (20 vs CD 10).
+> presion
+> Nax ha aceptado que hay una amenaza real fuera de sus libros, pero su impaciencia es un hilo delgado. Cualquier vacilación ahora o la sensación de que el jugador oculta nombres deliberadamente hará que el guardia pase de la curiosidad a la sospecha, considerando que el interlocutor es parte del problema y no la solución.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  7452 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Bercelio Nax · competence_shown
+  ✓ delta Bercelio Nax · npc.knowledge = Hay fuerzas moviéndose que no figuran en sus registros
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5056: Bercelio Nax affinity 37.0 → 39.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+  → delta 5057: Bercelio Nax.knowledge = Hay fuerzas moviéndose que no figuran en sus registros
+  ✗ (Mundo) delta rechazado por la base (npc.estado_animo): field npc.estado_animo is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 172 — 149/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  5029 ms
+
+> "No soy yo quien oculta los nombres, sino quien te ofrece la oportunidad de conocerlos antes de que sea tarde."
+> Mantengo la mirada fija en Nax, sin retroceder ni un centímetro, mientras trato de leer si su urgencia es miedo o simple deber.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 10+1=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 11)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6497 ms): «Me gusta el tono, pero no me gusta que me des vueltas. Si los tienes, suéltalos.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  44287 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  20818 ms
+
+> narrativa
+> La bóveda se siente más opresiva que nunca; los techos altísimos se pierden en una negrura absoluta y los estantes de piedra parecen cerrarse como los muros de una tumba. En el silencio sepulcral, solo el roce del cuero de las armaduras y el eco sordo de la respiración interrumpen la tensión. La firmeza de la respuesta cala en el guardia, quien reconoce la ventaja que se le ofrece, pero su paciencia se ha agotado por completo.
+> Bercelio Nax no retrocede ni un milímetro. Sus ojos, inyectados en sangre por la falta de sueño, no se apartan, mientras mantiene la mandíbula tan tensa que parece a punto de romperse. Se inclina aún más, invadiendo el espacio personal, y su voz emerge como un susurro áspero, casi un gruñido: "Me gusta el tono, pero no me gusta que me des vueltas. Si los tienes, suéltalos. Ahora. ¿Quiénes son? ¿A quiénes estoy buscando? ¿De quiénes hablamos?".
+> mecanica
+> Perspicacia: Éxito (11 vs CD 10).
+> presion
+> Nax ha mordido el anzuelo, pero su estado mental es frágil. Si los nombres entregados no resultan convincentes o si el jugador intenta seguir manipulando la información, el guardia interpretará la cautela como una táctica de distracción y podría detener al jugador por obstrucción o sospecha de complicidad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1302 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 173 — 150/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4177 ms
+
+> "No te pongas nervioso, Nax. La impaciencia es la enemiga de la precisión."
+> Sostengo su mirada sin retroceder, manteniendo un tono gélido mientras busco el momento exacto para soltar los nombres.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 17+4=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 21)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7798 ms): «Dime quiénes son. No me hables de precisión, háblame de nombres. ¿A quiénes busc»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  9666 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16994 ms
+
+> narrativa
+> La frialdad de las palabras corta el aire, imponiendo un ritmo que Nax no puede ignorar. La bóveda parece estrecharse a su alrededor, con las hileras infinitas de anaqueles de piedra custodian pergaminos polvorientos que parecen absorber la luz de las antorchas, dejando el espacio entre ambos sumergido en una penumbra asfixiante. El guardia se queda congelado, atrapado por esa calma gélida, aunque la tensión en su cuerpo es casi eléctrica.
+> Bercelio no se mueve, manteniendo la invasión del espacio personal. Sus ojos no parpadean, fijando la mirada con una intensidad casi febril, mientras su mano derecha aprieta inconscientemente el cinturón de su equipo. Su voz, ahora despojada de cualquier rastro de duda pero cargada de una urgencia desesperada, exige la verdad: "Dime quiénes son. No me hables de precisión, háblame de nombres. ¿A quiénes busco? ¿Quiénes son? ¿De quiénes hablamos?".
+> mecanica
+> Persuasión: Éxito (21 vs CD 10).
+> presion
+> Nax está totalmente entregado a la fuente de información, pero su fragilidad mental lo hace volátil. Cualquier vacilación, nombre erróneo o intento de jugar con la información ahora que ha bajado la guardia provocará que estalle, transformando su lealtad ciega en una detención inmediata por sospecha de complicidad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1693 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) delta rechazado por la base (npc.estado_mental): field npc.estado_mental is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 174 — 151/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3369 ms
+
+> "No me hagas perder el tiempo con acertijos, Nax. Los nombres. Ahora."
+> Me acerco un paso más, manteniendo la mirada fija en él para no darle espacio a la duda. 
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 23)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7117 ms): «No me hables de tiempo. El tiempo es lo único que no tengo. Dame los nombres. ¿Q»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5244 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15053 ms
+
+> narrativa
+> La presión se vuelve física en ese rincón de la bóveda, donde los anaqueles se curvan en un semicírculo opresivo. El polvo flota en el aire como ceniza suspendida, y el eco de la orden muere rápidamente contra la piedra fría, dejando un silencio denso que solo es roto por la respiración agitada del guardia.
+> Bercelio Nax no retrocede ni un centímetro; al contrario, la fuerza de la intimidación parece alimentar su propia urgencia, volcando su desesperación en una rabia contenida. Sus nudillos están blancos de tanto apretar el cinturón y, acercándose aún más, deja escapar un susurro ronco, casi un gruñido: "No me hables de tiempo. El tiempo es lo único que no tengo. Dame los nombres. ¿Quiénes son? Dímelo ya."
+> mecanica
+> Intimidación: Éxito (23 vs CD 10).
+> presion
+> Nax ha alcanzado su límite de paciencia. Cualquier intento de dilatar la respuesta o dar nombres ambiguos romperá su frágil equilibrio, haciendo que el guardia pase de la urgencia a la agresión física para extraer la información por la fuerza.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4674 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · threat_made
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 175 — 152/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4128 ms
+
+> "No soy yo quien tiene los nombres, Nax. El guardia es el que sabe." 
+> Doy un paso lateral para quedar fuera de la línea de tensión entre ambos, observando la reacción del guardia.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 11+1=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 12)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (9137 ms): «¿Y tú qué haces aquí entonces? ¿Vienes a decirme que no sabes, mientras él se qu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3059 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14542 ms
+
+> narrativa
+> El movimiento lateral deja el espacio despejado, pero la tensión no se disipa; se concentra. En ese rincón asfixiante de la bóveda, los anaqueles de piedra curvados parecen cerrarse sobre los tres, atrapando el polvo en el aire como una mortaja grisácea. El guardia, acorralado contra la piedra fría, tiembla visiblemente, con la mirada errática y el sudor corriéndole por las sienes.
+> Bercelio Nax ni siquiera mira al jugador; mantiene su mirada clavada en el guardia, clavando la presión. Su voz surge como un látigo seco, cortante, sin espacio para la duda: "¿Y tú qué haces aquí entonces? ¿Vienes a decirme que no sabes, mientras él se queda callado? Repítelo. ¿Quién tiene los nombres? ¿Quién sabe quiénes son?".
+> mecanica
+> Perspicacia: Éxito (12 vs CD 10).
+> presion
+> El guardia está al borde del colapso nervioso. Si Nax no obtiene una respuesta inmediata o si el jugador no interviene para cambiar la dinámica, el guardia podría romperse y soltar cualquier nombre, verdadero o falso, solo para detener el asalto psicológico.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1618 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 176 — 153/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2654 ms
+
+> "Cálmate. Si mientes para salvarte, solo prolongarás tu agonía."
+> Me acerco al guardia lentamente, manteniendo una expresión impasible, y lo observo a los ojos para ver si su miedo es genuino o una máscara.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 15+1=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 16)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (11160 ms): «Deja que decida él cuándo calmarse. Ahora mismo, el miedo es lo único que lo hac»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3377 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15656 ms
+
+> narrativa
+> La mirada fija en el guardia revela la verdad: no hay artificio en su terror. El temblor de sus manos y la dilatación de sus pupilas son respuestas fisiológicas genuinas; el hombre está genuinamente aterrorizado, consumido por un pánico que supera cualquier intento de engaño.
+> Bercelio Nax, sin embargo, ignora la sugerencia con un tono gélido. Se inclina hacia adelante, invadiendo el espacio personal del subordinado y reduciendo la distancia hasta que su respiración golpea la cara del otro. Sin apartar la vista del guardia, sentencia: "Deja que decida él cuándo calmarse. Ahora mismo, el miedo es lo único que lo hace honesto. Mírale los ojos, ¿lo ves? Está temblando. ¿Por qué tiemblas? ¿Quién te dio la orden? ¿De quién tienes miedo?".
+> mecanica
+> Perspicacia: Éxito (16 vs CD 10).
+> presion
+> La presión psicológica de Nax está alcanzando el punto de ruptura. El guardia está a segundos de colapsar; si no se obtiene una respuesta coherente ahora, el pánico podría bloquearlo por completo o llevarlo a balbucear confesiones falsas para detener la asfixia del interrogatorio.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1190 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 177 — 154/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3271 ms
+
+> "El pánico es un velo que nubla la memoria, Nax. Si lo rompes ahora, solo obtendremos ruido."
+> Me acerco al guardia y le hablo en un tono bajo y calmado, intentando estabilizarlo para extraer información útil.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8780 ms): «El ruido es lo que escucho cuando la gente miente, y ahora mismo este hombre gri»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4042 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15699 ms
+
+> narrativa
+> El aire en la oficina de guardia es denso, cargado de un olor rancio a cera vieja y sudor frío que parece pegarse a la piel. Bajo la luz mortecina, el espacio se siente asfixiante, reducido a la mesa de madera astillada y el chirrido errático de las sillas desvencijadas. El guardia, sintiendo el cambio de ritmo y la calma en la voz, comienza a soltar la tensión de los hombros; el pánico retrocede un centímetro, permitiendo que el hombre respire por primera vez en minutos.
+> Sin embargo, Bercelio Nax no se mueve ni un centímetro. Mantiene la presión física sobre el subordinado, bloqueando cualquier intento de refugio en la calma, y lanza una mirada de frialdad cortante que congela el ambiente. "El ruido es lo que escucho cuando la gente miente, y ahora mismo este hombre grita el silencio", sentencia sin apartar la vista del guardia. "Apártate. ¿Quién te dio la orden? ¿Quién te lo pidió? ¿De quién tienes miedo?".
+> mecanica
+> Persuasión: Éxito (14 vs CD 10).
+> presion
+> Nax ha recuperado el control del interrogatorio con una agresividad implacable. El guardia ha pasado del pánico paralizante a una sumisión aterrada; si se le presiona demasiado sin un puente de confianza, el hombre podría entrar en un estado de shock catatónico o soltar cualquier nombre solo para que Nax se aleje de su rostro.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1339 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 178 — 155/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2258 ms
+
+> "A veces el miedo es el único maestro honesto."
+> Me quedo a un lado, observando la reacción del guardia y analizando sus gestos para ver si hay algo más que el terror.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 4+1=5
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8164 ms): «Filosofía barata. El miedo no enseña, el miedo esconde. Y yo no tengo tiempo par»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4409 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12953 ms
+
+> narrativa
+> La oficina es un cubículo angosto de paredes desconchadas y archivadores oxidados que parecen cerrarse sobre el grupo, amplificando el eco de la respiración agitada del guardia. El intento de analizar los gestos del hombre resulta infructuoso; el terror ha borrado cualquier matiz en su rostro, dejando solo una máscara de pánico vacío que no revela nada más allá de su propio colapso.
+> Bercelio Nax no se inmuta ante la observación. Sin mirarte, mantiene la presión sobre el guardia, inclinando la cabeza hacia adelante para invadir su espacio personal mientras su voz suena seca y cortante: "Filosofía barata. El miedo no enseña, el miedo esconde. Y yo no tengo tiempo para adivinanzas".
+> mecanica
+> Perspicacia: Fallo (5 vs CD 10).
+> presion
+> Nax ha descartado tu intervención y ha cerrado el cerco sobre el guardia. La presión psicológica es ya insostenible; si el guardia no rompe en los próximos segundos, el estrés lo llevará a un bloqueo mental total, haciendo que la información se pierda en un shock catatónico.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1038 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 179 — 156/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2598 ms
+
+> "No lo rompas, Nax. Solo lo estás asustando."
+> Me interpongo físicamente entre Nax y el guardia, tratando de romper la tensión con una calma gélida.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (11043 ms): «¿Y tú qué eres, su protector? Quítate. El miedo no es el problema, el problema e»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4058 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14552 ms
+
+> narrativa
+> El movimiento es preciso y logra interponer una barrera física que obliga a una pausa momentánea en el asedio. La oficina se siente ahora como una caja de presión; el aire es denso, cargado de polvo y el olor a papel viejo, mientras el guardia se encoge contra el metal frío de un archivador, buscando un espacio que no existe, aprovechando el respiro para intentar recuperar el aliento.
+> Bercelio Nax, sin embargo, no retrocede ni un centímetro. Mantiene la mirada fija en el guardia a través del hombro del jugador, ignorando la sugerencia de calma con una frialdad mecánica. Su voz surge entonces como un látigo, monocorde y exigente: "¿Y tú qué eres, su protector? Quítate. El miedo no es el problema, el problema es lo que usa el miedo para cubrirse. Ahora, guardia: ¿quién te dio la llave de la Capilla? ¿Quién te dijo que entraras? ¿Quién te pagó por hacerlo?".
+> mecanica
+> Persuasión: Éxito (13 vs CD 10).
+> presion
+> Nax ha recuperado el control del interrogatorio pero su agresividad está llevando al guardia al límite. Si no se modera el tono o se ofrece una salida rápida, el hombre colapsará en un estado de shock catatónico, sellando sus labios para siempre.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1444 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 180 — 157/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3468 ms
+
+> "Basta, Nax. Estás asustando al animal y no nos servirá de nada un mudo."
+> Me adelanto un paso para interponerme ligeramente entre ambos, mirando al guardia con una calma gélida.
+> "Dinos los nombres y podrás salir de esta habitación. Ahora."
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 2+4=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7120 ms): «Que salga no es el trato. El trato es que hable. ¿Quién te dio la llave? Te lo r»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3526 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13000 ms
+
+> narrativa
+> La calma gélida no surte efecto; el guardia, lejos de sentirse alentado por la promesa de libertad, se encoge aún más contra los archivadores oxidados, temblando en un espacio claustrofóbico donde el olor a papel viejo y humedad parece asfixiar cualquier intento de negociación. La interposición física es insuficiente para frenar la inercia de Nax, quien permanece con la espalda rígida, tratando al jugador como si fuera un mueble más de la oficina.
+> Sin moverse ni un milímetro, Nax clava su mirada en el guardia, ignorando por completo la sugerencia de moderación. Su voz recupera el filo del látigo, cortando el aire con una exigencia implacable: "Que salga no es el trato. El trato es que hable. ¿Quién te dio la llave? Te lo repito: ¿Quién te dio la llave? ¿De quién es la llave, guardia?".
+> mecanica
+> Persuasión: Fallo (6 vs CD 10).
+> presion
+> El guardia está al borde del colapso nervioso; la presión combinada de la amenaza de Nax y la frialdad del jugador lo están empujando hacia un estado de shock catatónico que silenciará cualquier confesión.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1296 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 181 — 158/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2948 ms
+
+> "Si te callas por el miedo, morirás en este agujero sin que nadie sepa que exististe."
+> Me acerco al guardia y le sujeto la mandíbula con fuerza para obligarlo a mirarme a los ojos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 16)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7068 ms): «Deja de jugar a los carniceros. No necesito que se desmaye, necesito el nombre. »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6704 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15719 ms
+
+> narrativa
+> El agarre es firme y despiadado, obligando al guardia a sostener una mirada que no ofrece ninguna salida. Bajo la presión de los dedos sobre su mandíbula, el hombre deja de temblar para quedar paralizado, con los ojos dilatados por un terror primario mientras comprende que el vacío es la única alternativa al silencio. El aire de la oficina, saturado de moho y el olor metálico de las estanterías oxidadas, parece espesarse alrededor de los tres, convirtiendo el espacio en una cámara de presión donde el pánico del prisionero finalmente cede.
+> Bercelio Nax permanece inmóvil, observando la escena con una mezcla de respeto profesional por la eficacia y fastidio por la brusquedad. Sin intervenir físicamente, su voz sube de volumen, marcando cada pregunta como un martillazo sobre la voluntad quebrada del guardia: "Deja de jugar a los carniceros. No necesito que se desmaye, necesito el nombre. Escúchalo bien, guardia: ¿Quién te dio la llave? ¿Quién? ¿De quién es la llave?".
+> mecanica
+> Intimidación: Éxito (16 vs CD 10).
+> presion
+> El guardia ha sido roto y está listo para hablar, pero el tiempo es oro; cualquier interrupción o exceso de violencia ahora podría provocar un síncope que se llevaría el nombre del cómplice a la tumba.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1686 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 182 — 159/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2444 ms
+
+> "Habla ahora, antes de que el silencio sea permanente."
+> Me acerco al guardia, manteniendo una expresión gélida, y le susurro al oído para acentuar la presión psicológica.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 14+4=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (41409 ms): «Suficiente. Ya ha entendido el mensaje. Ahora, suéltalo y que hable antes de que»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3023 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10675 ms
+
+> narrativa
+> El susurro gélido es la gota que colma el vaso; el guardia se desploma internamente, su resistencia evaporándose en el aire viciado de la oficina. Entre pilas de papeles amarillentos y el hedor a humedad de los escritorios carcomidos, el hombre abre la boca en un jadeo desesperado, reconociendo que la única salida es la traición.
+> Bercelio Nax da un paso al frente, interceptando el espacio personal del jugador no para detenerlo, sino para asegurar que el guardia no tenga dónde mirar excepto a él. Con un tono seco e imperativo, desprovisto de cualquier rastro de empatía pero cargado de una urgencia controlada, sentencia: "Suficiente. Ya ha entendido el mensaje. Ahora, suéltalo y que hable antes de que se quede sin aire. ¿Quién te dio la llave? Dilo ya".
+> mecanica
+> Intimidación: Éxito (18 vs CD 10).
+> presion
+> El guardia está en el límite del colapso nervioso; si no se obtiene la respuesta en los próximos segundos, el pánico podría bloquear su capacidad de habla o provocarle un desmayo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1711 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 183 — 160/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2284 ms
+
+> "Habla ahora o el frío será lo último que sientas."
+> Me inclino sobre el guardia, manteniendo una expresión gélida mientras espero su respuesta.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (4629 ms): «Ya ha escuchado. Habla. ¿Quién te dio la llave? ¿Quién te la entregó? Dime el no»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5635 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10793 ms
+
+> narrativa
+> El aire de la oficina administrativa se vuelve denso, casi sólido, saturado por el polvo de archivos olvidados y una luz mortecina que no logra iluminar los rincones. El guardia, atrapado entre la frialdad de la amenaza y la presión del entorno, se quiebra por completo; su respiración es un silbido errático que llena el silencio asfixiante del lugar.
+> Bercelio Nax no se inmuta ante el despliegue de tensión. Se mantiene firme, con la espalda recta y la mirada clavada en el hombre desplomado, ignorando cualquier gesto superfluo para centrarse únicamente en la extracción de la información. Su voz corta el aire como un cuchillo: "Ya ha escuchado. Habla. ¿Quién te dio la llave? ¿Quién te la entregó? Dime el nombre ahora mismo".
+> mecanica
+> Intimidación: Éxito (20 vs CD 10).
+> presion
+> El guardia está a punto de confesar, pero el pánico extremo comienza a cerrarle la garganta; cualquier retraso en la presión podría llevarlo a un shock catatónico.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1245 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 184 — 161/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2995 ms
+
+> "No te atrevas a desmayarte ahora. Tu vida depende de que seas capaz de pronunciar un nombre."
+> Me acerco al guardia y le sujeto la mandíbula con fuerza para obligarlo a mirarme a los ojos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 23)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5545 ms): «Suéltalo. Ya tiene el cuello lo bastante apretado con el miedo. Ahora, mírame. ¿»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3450 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14146 ms
+
+> narrativa
+> El agarre en la mandíbula del guardia es firme, obligándolo a sostener una mirada que no ofrece clemencia. El hombre tiembla violentamente, con los ojos desorbitados y el rostro empapado en un sudor frío, mientras el entorno de la oficina parece estrecharse; los archivadores oxidados y las montañas de papeles amarillentos se ciernen sobre él como lápidas en una cripta administrativa, bajo una luz mortecina que drena cualquier rastro de esperanza.
+> Bercelio Nax da un paso al frente, desplazando ligeramente al jugador para recuperar el control del espacio. Sin quitar la vista del guardia y manteniendo una expresión gélida y una postura imperturbable, sentencia: "Suéltalo. Ya tiene el cuello lo bastante apretado con el miedo. Ahora, mírame. ¿Quién te dio la llave? ¿De quién es la llave? Dame un nombre".
+> mecanica
+> Intimidación: Éxito (23 vs CD 10).
+> presion
+> El guardia está al límite de su resistencia psicológica; si la presión no se traduce en una confesión inmediata, el trauma podría bloquear su memoria o provocar un colapso nervioso total.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1697 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 185 — 162/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2891 ms
+
+> "No te rompas todavía, idiota. Solo tienes que decir un nombre para que el dolor desaparezca."
+> Me acerco al guardia, observando sus reacciones para detectar cualquier vacilación o pista en su lenguaje corporal.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 15+1=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 16)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6293 ms): «¿Quién te dio la llave? ¿De quién es la llave? Dilo ahora. Dame un nombre.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5529 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10935 ms
+
+> narrativa
+> El guardia reacciona a la amenaza con un espasmo seco, sus pupilas dilatándose mientras busca desesperadamente una salida que no existe. Al observar sus gestos, se hace evidente la grieta en su voluntad: el temblor de sus manos ya no es solo miedo, sino la urgencia de alguien que sabe que el secreto que guarda es la única moneda de cambio para sobrevivir, aunque el pánico esté a punto de asfixiarlo.
+> Bercelio Nax, imperturbable, cruza los brazos y mantiene una mirada fija y gélida sobre el hombre, ignorando por completo el comentario del jugador para concentrar toda la presión psicológica en el sujeto. Su voz suena como el cierre de una celda: "¿Quién te dio la llave? ¿De quién es la llave? Dilo ahora. Dame un nombre".
+> mecanica
+> Perspicacia: Éxito (16 vs CD 10).
+> presion
+> El guardia está en el borde del colapso; si la confesión no surge en los próximos segundos, el choque nervioso borrará la utilidad de cualquier interrogatorio.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1642 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 186 — 163/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2575 ms
+
+> "No te rompas todavía, idiota. Solo danos el nombre y el pánico desaparecerá."
+> Me acerco al guardia para invadir su espacio personal, manteniendo una expresión gélida y calculadora.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (4721 ms): «¿Quién te dio la llave? ¿De quién es la llave? Dilo ahora. Dame un nombre.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3388 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  22541 ms
+
+> narrativa
+> La luz cenital, cruda y amarillenta, recorta las siluetas contra las paredes de piedra húmeda, donde el sudor del guardia resbala por su cuello en hilos espesos. La presión psicológica se vuelve física cuando el espacio personal del hombre desaparece; el aire en la celda se siente denso, cargado del olor a moho y al miedo animal de quien ya no tiene donde esconderse.
+> Bercelio Nax no se mueve ni un milímetro ante la intrusión; permanece como una estatua de granito, ignorando la intervención para no romper el ritmo del asedio mental. Sus ojos, fijos en el rostro desencajado del guardia, no parpadean mientras lanza la demanda con una frialdad quirúrgica: "¿Quién te dio la llave? ¿De quién es la llave? Dilo ahora. Dame un nombre".
+> mecanica
+> Intimidación: Éxito (14 vs CD 10).
+> presion
+> El guardia ha llegado al límite de su resistencia; cualquier vacilación ahora podría provocar un colapso catatónico que selle el secreto para siempre.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1640 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 187 — 164/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3602 ms
+
+> "No te rompas ahora, idiota. Solo necesitamos un nombre."
+> Me acerco al guardia y le susurro al oído, manteniendo un tono gélido para evitar que se desmorone pero aumentando la tensión.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5235 ms): «¿Quién te dio la llave? ¿De quién es la llave? Dilo ahora. Dame un nombre.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4482 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13328 ms
+
+> narrativa
+> El susurro gélido impacta en el oído del guardia como una sentencia, eliminando cualquier rastro de esperanza en el aire viciado de la celda. El hombre se encoge, sus hombros colapsan y la respiración se vuelve un jadeo errático que rebota en las paredes de piedra húmeda. La luz amarillenta resalta el temblor de sus manos mientras la presión psicológica, ahora reforzada, lo deja sin escape en ese espacio claustrofóbico.
+> Bercelio Nax no se inmuta ante la cercanía del susurro; mantiene la mirada clavada en las pupilas dilatadas del prisionero, dejando que el silencio posterior actúe como el clavo final sobre el ataúd de su resistencia. Con una calma implacable, vuelve a exigir: "¿Quién te dio la llave? ¿De quién es la llave? Dilo ahora. Dame un nombre".
+> mecanica
+> Persuasión: Éxito (14 vs CD 10).
+> presion
+> El guardia está a punto de quebrarse; si la presión se vuelve excesiva o errática, podría entrar en un estado de shock que le impida articular palabra.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1824 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 188 — 165/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  11091 ms
+
+> "Ya has oído a Nax. No hagas que el silencio sea lo único que te acompañe aquí abajo."
+> Me inclino hacia el guardia, manteniendo una expresión gélida y distante, para reforzar la sensación de inevitabilidad.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8220 ms): «Escuchaste al invitado. No hay más tiempo para juegos. ¿Quién te dio la llave? ¿»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4268 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9648 ms
+
+> narrativa
+> El aire viciado de la celda parece espesarse, cargado de una humedad que cala los huesos y una luz amarillenta que apenas logra combatir las sombras alargadas de las paredes. El prisionero se encoge bajo la mirada distante, sintiendo cómo el espacio claustrofóbico se cierra sobre él, dejando el silencio como la única alternativa al terror.
+> Bercelio Nax permanece erguido, con los brazos cruzados y la vista clavada en el hombre, aprovechando la tensión para cerrar la pinza con una voz seca y rítmica, casi mecánica: "Escuchaste al invitado. No hay más tiempo para juegos. ¿Quién te dio la llave? ¿De quién es? Repítelo: ¿quién te la entregó?".
+> mecanica
+> Intimidación: Éxito (20 vs CD 10).
+> presion
+> El prisionero ha llegado a su límite; cualquier vacilación ahora podría interpretarse como una oportunidad para recuperar el aliento, permitiéndole cerrar la boca y recuperar su voluntad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1510 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 189 — 166/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2917 ms
+
+> "No te hagas el sordo. El tiempo es un lujo que ya no tienes."
+> Me acerco al prisionero y lo miro fijamente a los ojos, buscando cualquier rastro de duda o miedo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 11+1=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 12)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6693 ms): «El lujo se acabó hace rato. Ahora solo queda la verdad. ¿Quién te dio la llave? »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3074 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11408 ms
+
+> narrativa
+> La luz amarillenta vacila, proyectando sombras erráticas sobre las paredes de piedra que exudan salitre y humedad. Al acercarte, el prisionero se encoge, atrapado entre la opresión de la celda y tu mirada; en el fondo de sus pupilas dilatadas, el miedo ya no es una chispa, sino un incendio que consume cualquier rastro de resistencia.
+> Bercelio Nax no aparta la vista del hombre, manteniendo una postura rígida que imita la frialdad de los muros que los rodean. Su voz no sube de volumen, pero se vuelve más cortante, marcando cada pregunta como si estuviera tachando nombres de una lista: "El lujo se acabó hace rato. Ahora solo queda la verdad. ¿Quién te dio la llave? ¿Quién te la puso en la mano? ¿De quién es esa llave?".
+> mecanica
+> Perspicacia: Éxito (12 vs CD 10).
+> presion
+> El prisionero está roto, pero el pánico puede volverlo incoherente; si no se extrae la información ahora, el terror podría bloquear su memoria o llevarlo a mentir desesperadamente para detener la presión.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1264 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 190 — 167/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3252 ms
+
+> "Tiemblas tanto que apenas puedes hablar. Dinos el nombre y este ruido en tu cabeza cesará."
+> Me inclino hacia el prisionero, invadiendo su espacio personal para que sienta mi presencia tan fría como la de Nax.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 13+4=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 17)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6841 ms): «¿Ves? Hasta el miedo sabe que ya no tienes donde esconderte. El nombre. Ahora. ¿»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2873 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13645 ms
+
+> narrativa
+> El prisionero se colapsa contra la pared húmeda, el salitre pegándose a su espalda mientras el aire se vuelve denso y asfixiante. Tu cercanía termina de romper el último hilo de su voluntad; el hombre comienza a hiperventilar, sus ojos moviéndose frenéticamente entre tú y la salida, comprendiendo que no hay refugio posible en esa celda de sombras alargadas.
+> Bercelio Nax no se mueve ni un centímetro, manteniendo los brazos cruzados a la espalda. Observa la reacción del prisionero con una mirada analítica, casi clínica, evaluando si el temblor es por terror o por el esfuerzo de inventar una mentira, y suelta con frialdad: "¿Ves? Hasta el miedo sabe que ya no tienes donde esconderte. El nombre. Ahora. ¿A quién sirves?".
+> mecanica
+> Intimidación: Éxito (17 vs CD 10).
+> presion
+> El prisionero ha llegado a su límite; cualquier demora o cambio en la intensidad del interrogatorio podría provocar un shock catatónico o un brote de histeria que inutilice la fuente de información.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1559 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 191 — 168/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3283 ms
+
+> "No lo rompas todavía, Nax. Solo lo asustas."
+> Me inclino hacia el hombre, invadiendo su espacio personal, y le hablo en un susurro gélido al oído.
+> "Dinos el nombre y el aire volverá a tus pulmones. El silencio, en cambio, te asfixiará."
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8221 ms): «El aire ya no es el problema, es el tiempo. El nombre. ¿Quién te paga? Repítelo.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  851 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14400 ms
+
+> narrativa
+> El susurro gélido no logra quebrar la resistencia del prisionero; el hombre, aunque tembloroso, se encoge en un silencio obstinado, cerrando los ojos con fuerza mientras el pánico se transforma en un bloqueo absoluto. La presión psicológica ha superado el límite de la confesión y ha entrado en el terreno de la parálisis, dejando el aire cargado de una tensión estéril.
+> Bercelio Nax no se aparta del prisionero, pero lanza una mirada gélida y cortante hacia ti. Sus preguntas regresan rápidas, secas, como martillazos, sin darle espacio al hombre para respirar entre una y otra: "El aire ya no es el problema, es el tiempo. El nombre. ¿Quién te paga? Repítelo. ¿A quién sirves? ¿Quién está detrás de esto?".
+> mecanica
+> Persuasión: Fallo (7 vs CD 10).
+> presion
+> El prisionero ha entrado en un estado de shock defensivo; si Nax continúa con este ritmo agresivo o si se intenta otra táctica fallida, el sujeto podría entrar en un colapso catatónico, llevándose los secretos a la tumba.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1554 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 192 — 169/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2610 ms
+
+> "Basta, Nax. Lo vas a romper antes de que nos sea útil."
+> Me interpongo entre Bercelio y el prisionero, obligando a Nax a retroceder. Miro fijamente al hombre para analizar su estado.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 1+1=2  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 2)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7394 ms): «Quítate. El tiempo corre y este silencio es una respuesta en sí misma. Si no hab»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4398 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12561 ms
+
+> narrativa
+> La estancia exhala un frío húmedo que se pega a la piel, mientras el olor a hierro y el miedo rancio llenan el aire estancado. Al intentar analizar al prisionero, la mirada se pierde en el vacío; el hombre es solo un bulto tembloroso y desencajado que no revela nada, un enigma roto que se resiste a ser leído. No hay rastro de una mentira estructurada ni de un código oculto, solo un ruido blanco de terror que nubla cualquier intento de comprensión.
+> Bercelio Nax no retrocede del todo. Mantiene el torso inclinado hacia adelante, invadiendo el espacio personal con una fijeza inquietante en la mirada. Su voz surge como un hilo tenso y seco: "Quítate. El tiempo corre y este silencio es una respuesta en sí misma. Si no habla ahora, no hablará nunca".
+> mecanica
+> Perspicacia: Fallo crítico (2 vs CD 10).
+> presion
+> La paciencia de Nax se agota y su agresividad aumenta; el prisionero está al borde del colapso catatónico y cualquier nuevo error en el interrogatorio sellará sus labios permanentemente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2173 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 193 — 170/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 39.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2320 ms
+
+> "Apártate, Nax. Solo consigues que se cierre más en su caparazón."
+> Me interpongo entre él y el prisionero, tratando de imponer mi presencia con frialdad.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6411 ms): «Intenta imponerte, ¿eh? Te mueves rápido, pero no me digas cómo hacer mi trabajo»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4385 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17993 ms
+
+> narrativa
+> El movimiento es brusco y preciso, una barrera física que corta el aire viciado de la celda. La piedra bruta de las paredes parece cerrarse sobre el grupo mientras la antorcha chisporrotea, proyectando sombras erráticas sobre el prisionero, que permanece encadenado al anillo de hierro oxidado, temblando en el suelo sudoroso. La frialdad de la imposición surte efecto; el espacio se tensa, y por un instante, el dominio de la situación cambia de manos.
+> Bercelio Nax no retrocede ni un centímetro. Aprieta la mandíbula, manteniendo un contacto visual desafiante y seco, aunque la inercia del gesto le ha obligado a detenerse. "Intenta imponerte, ¿eh? Te mueves rápido, pero no me digas cómo hacer mi trabajo. Ahora, quítate tú. O te mueves, o te mueves", sentencia con un tono cortante, aunque su cuerpo ya no invade el espacio personal con la misma agresividad que antes.
+> mecanica
+> Intimidación: Éxito (20 vs CD 10).
+> presion
+> Nax ha sido desplazado, pero su orgullo está herido; cualquier fallo posterior en el manejo del prisionero será aprovechado por él para retomar el control de forma violenta.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3681 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Bercelio Nax · competence_shown
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5198: Bercelio Nax affinity 39.0 → 41.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 194 — 171/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2678 ms
+
+> "Tú ya has hecho tu parte, Nax. Ahora deja que alguien con paciencia hable con él."
+> Me adelanto para situarme entre el guardia y el prisionero, observando detenidamente al hombre encadenado. 
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8991 ms): «Paciencia. No confundas paciencia con dejarse engañar. ¿Qué es lo que quieres sa»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  8553 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12958 ms
+
+> narrativa
+> El desplazamiento es limpio y efectivo. El espacio entre el guardia y el cautivo, antes saturado de hostilidad, ahora se abre para permitir el acceso. El prisionero, reducido a un ovillo de carne temblorosa sobre el suelo húmedo, levanta la vista con una mezcla de terror y una esperanza patética, mientras el aire viciado de la celda parece asentarse bajo la nueva dinámica de poder.
+> Bercelio Nax se aparta un paso, pero no relaja la postura. Cruza los brazos sobre el pecho y mantiene la mirada fija en el jugador, analizando cada microgesto mientras deja que el otro tome el centro de la escena. "Paciencia. No confundas paciencia con dejarse engañar. ¿Qué es lo que quieres saber exactamente? ¿Qué es lo que crees que él sabe que yo no he podido sacar? ¿Cuál es tu plan?", pregunta con una voz seca, observando desde la periferia con la frialdad de quien espera el primer tropiezo.
+> mecanica
+> Perspicacia: Éxito (10 vs CD 10).
+> presion
+> El prisionero está al borde del colapso nervioso; si el interrogatorio se prolonga demasiado sin una dirección clara, se cerrará en sí mismo o entrará en un estado de shock que hará imposible obtener información útil.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1625 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 195 — 172/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2753 ms
+
+> "No necesito un plan, solo que te apartes lo suficiente para que no interfieras con su miedo."
+> Me agacho frente al prisionero y le sujeto la mandíbula con fuerza para obligarle a mirarme a los ojos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (11280 ms): «Sueltalo. Ahora. No me sirve un testigo en shock y menos uno que no puede articu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4939 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12862 ms
+
+> narrativa
+> El intento de imponer dominio resulta torpe; la presión sobre la mandíbula del cautivo no genera terror productivo, sino un espasmo de pánico que lo deja jadeando, incapaz de emitir sonido alguno mientras sus ojos se dilatan en un vacío blanco. La humedad de las paredes de piedra parece espesarse, impregnando el aire con el hedor a salitre y heces que emana del suelo pegajoso, donde el prisionero se retuerce inútilmente bajo la luz mortecina de la rendija superior.
+> Bercelio Nax descruza los brazos con un movimiento brusco y da un paso hacia adelante, interponiéndose físicamente entre el jugador y el prisionero. Su voz es un latigazo, seca y sin rastro de duda: "Sueltalo. Ahora. No me sirve un testigo en shock y menos uno que no puede articular palabra porque le has cerrado la garganta."
+> mecanica
+> Intimidación: Fallo (5 vs CD 10).
+> presion
+> El prisionero ha entrado en un estado de shock catatónico; cualquier intento posterior de extraer información requerirá un método drásticamente distinto o el riesgo de perder la fuente permanentemente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1399 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Intimidación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 196 — 173/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2566 ms
+
+> "Tienes razón. No es útil así."
+> Suelto la mandíbula del prisionero con desdén y me aparto para dejar paso a Bercelio. Me quedo observando al cautivo, analizando su estado.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 11+1=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 12)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (9156 ms): «Apártate. Deja que respire. Ahora, mírame: ¿Quién te envió? ¿Quién te pagó para »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3829 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12887 ms
+
+> narrativa
+> El prisionero recupera el aliento en un jadeo errático, sus pupilas dilatándose mientras el aire vuelve a llenar sus pulmones. Al observar sus espasmos y el temblor rítmico de sus manos, queda claro que el shock ha remitido lo suficiente como para que el sujeto sea consciente de su entorno, aunque el terror sigue anclado en su mirada. La celda, con sus paredes de piedra sudorosa y el suelo pegajoso que exhala un olor rancio a salitre, parece cerrarse sobre el cautivo, convirtiendo el espacio en una caja de presión asfixiante.
+> Bercelio Nax se coloca frente al prisionero, ignorando por completo tu presencia. Se inclina hacia él, invadiendo su espacio personal con una mirada gélida y fija, lanzando palabras que caen como cortes de cuchilla: "Apártate. Deja que respire. Ahora, mírame: ¿Quién te envió? ¿Quién te pagó para entrar en los sectores inactivos? Repite: ¿Quién te dio la orden?".
+> mecanica
+> Perspicacia: Éxito (12 vs CD 10). El prisionero es apto para el interrogatorio.
+> presion
+> El prisionero está al límite; si Bercelio no logra romper su voluntad rápidamente o si se introduce una nueva fuente de estrés, el sujeto podría colapsar mentalmente o entrar en un estado de mutismo selectivo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1444 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 197 — 174/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2317 ms
+
+> "Parece que el miedo no es suficiente para que hable, Bercelio."
+> Me acerco lentamente al prisionero, situándome justo detrás de él para que sienta mi presencia sin verme.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 23)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5532 ms): «El miedo no es para que hable. Es para que deje de mentir. Quédate ahí, justo do»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3944 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12966 ms
+
+> narrativa
+> El frío de la celda se vuelve tangible, una humedad pegajosa que se filtra en los poros mientras te deslizas hacia la espalda del cautivo. Tu presencia, invisible pero pesada, cae sobre el prisionero como una lápida; el hombre se tensa violentamente, sintiendo el aire desplazarse a su espalda, y un nuevo espasmo de pánico lo deja paralizado, convencido de que el peligro ahora lo rodea por completo.
+> Bercelio Nax no se mueve. Mantiene la inclinación de su cuerpo, casi rozando el rostro del cautivo, con la mirada gélida anclada en las pupilas dilatadas del hombre. Sin apartar la vista, responde con un susurro seco y monocorde que corta el aire: "El miedo no es para que hable. Es para que deje de mentir. Quédate ahí, justo donde no te vea, pero que él sepa que estás".
+> mecanica
+> Intimidación: Éxito (23 vs CD 10). El prisionero ha quedado psicológicamente acorralado.
+> presion
+> El prisionero está al borde del quiebre total; cualquier presión adicional o un error en la táctica de interrogatorio podría provocar que su mente se cierre definitivamente en un estado de shock catatónico.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1357 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 198 — 175/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1863 ms
+
+> Me mantengo inmóvil y en silencio, respirando lentamente para que el prisionero sienta mi aliento en su nuca.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Sigilo: 2+1=3
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 3)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6468 ms): «Tiembla. Siente cómo respira. Ahora, dime otra vez quién te dio la llave de la C»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  9368 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11730 ms
+
+> narrativa
+> La humedad de la celda se pega a la piel y el hedor a moho se vuelve asfixiante. En el intento de fundirse con la sombra, un roce torpe contra la piedra húmeda o el sonido traicionero de una respiración mal contenida rompe la tensión del silencio. El prisionero reacciona con un respingo brusco, pero el movimiento no logra distraer a Bercelio Nax, quien permanece imperturbable, como una gárgola de carne y hueso.
+> Bercelio no se aparta; mantiene la presión psicológica, hablando en un tono bajo y rítmico, casi quirúrgico, mientras observa cada tic facial del cautivo: "Tiembla. Siente cómo respira. Ahora, dime otra vez quién te dio la llave de la Capilla. ¿Quién te abrió la puerta? ¿Quién te dijo que podías entrar ahí?".
+> mecanica
+> Sigilo: Fallo (3 vs CD 10). El intento de pasar desapercibido ha sido torpe, rompiendo la atmósfera de terror absoluto.
+> presion
+> La falta de control sobre el entorno ha dado un respiro involuntario al prisionero; si no se recupera la dominación psicológica pronto, el hombre empezará a buscar grietas en la seguridad de sus captores para cerrar su mente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1053 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Sigilo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 199 — 176/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3529 ms
+
+> "No te distraigas con el ruido. Solo importa mi voz y el miedo que te provoca."
+> Me adelanto desde las sombras para quedar visible junto a Bercelio, manteniendo una expresión gélida y analizando la reacción del prisionero.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 5+1=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6505 ms): «Tú quédate ahí. No necesito que me recuerdes cómo hacer mi trabajo. Ahora, míram»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5097 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  331173 ms
+
+> narrativa
+> La luz mortecina de la celda proyecta sombras distorsionadas sobre las paredes de piedra goteante, mientras el hedor a moho se vuelve casi sólido. El intento de imponer una presencia gélida y dominante falla; no hay ninguna grieta en la voluntad del prisionero que el análisis pueda detectar, solo un muro de terror y silencio que se resiste a quebrarse ante la mirada.
+> Bercelio Nax no se mueve ni un centímetro, manteniendo su postura rígida y la presión intacta sobre el cautivo. Sin apartar la vista del hombre, responde con un tono seco y cortante: "Tú quédate ahí. No necesito que me recuerdes cómo hacer mi trabajo. Ahora, mírame. ¿Quién te dio la llave? ¿Quién te abrió la puerta? Te lo preguntaré una última vez: ¿quién te dijo que podías entrar en la Capilla?".
+> mecanica
+> Perspicacia: Fallo (6 vs CD 10). No logras extraer ninguna información ni detectar debilidades en la reacción del prisionero.
+> presion
+> La interrupción ha roto el ritmo del interrogatorio; si Bercelio pierde la paciencia o el prisionero encuentra un punto de apoyo psicológico en la tensión entre los interrogadores, la fuente de información podría cerrarse definitivamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1305 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 200 — 177/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2256 ms
+
+> "A veces el silencio es la respuesta más honesta, Bercelio."
+> Doy un paso lento hacia el prisionero, observando sus manos y su postura para buscar cualquier signo de nerviosismo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 11+1=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 12)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5911 ms): «El silencio no es una respuesta, es una táctica. Y yo no tengo tiempo para tácti»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4431 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  27659 ms
+
+> narrativa
+> El movimiento es lento y deliberado, permitiendo que la vista se detenga en los detalles que el ruido del interrogatorio solía ocultar. Bajo la luz mortecina, el prisionero comienza a desmoronarse: un temblor casi imperceptible en los dedos que se clavan en la tierra batida y una tensión errática en los hombros delatan que el muro de silencio es, en realidad, un dique a punto de romperse. La humedad de la celda, que supura un líquido oscuro por las paredes de piedra caliza, parece cerrar el espacio alrededor del cautivo, asfixiándolo.
+> Bercelio Nax no se mueve ni un milímetro para ceder espacio, manteniendo la espalda tensa y la mirada clavada en el hombre. Ignora la reflexión con un desdén gélido, como si las palabras fueran simple ruido que interfiere con su objetivo. "El silencio no es una respuesta, es una táctica. Y yo no tengo tiempo para tácticas. ¿Quién te dio la llave? ¿Quién te abrió la puerta? Te lo repito: ¿quién te dejó entrar en la Capilla?", sentencia con una voz que no admite réplicas.
+> mecanica
+> Percepción: Éxito (12 vs CD 10). Has detectado signos físicos de nerviosismo y fragilidad en el prisionero; su resolución está flaqueando.
+> presion
+> La vulnerabilidad del prisionero es momentánea; si el interrogatorio se vuelve demasiado errático o si Bercelio decide usar métodos más bruscos que lo aterroricen en exceso, el hombre podría entrar en un estado de shock catatónico y dejar de hablar.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1554 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 201 — 178/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2525 ms
+
+> "Tiemblas. El miedo es un maestro eficiente, pero el silencio solo te llevará a un final más oscuro."
+> Me acerco lentamente al prisionero, situándome justo fuera de su campo de visión para aumentar su inquietud.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 16)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7067 ms): «Deja que el miedo haga su trabajo. Solo acelera lo inevitable. Ahora dime: ¿Quié»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3652 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17332 ms
+
+> narrativa
+> La presión psicológica surte efecto y el prisionero se encoge, sintiendo el peso del vacío que deja el jugador al desaparecer de su vista. En la penumbra de la celda, donde la humedad supura por las paredes de piedra caliza y el frío del suelo de tierra batida cala hasta los huesos, el hombre parece reducirse, atrapado entre la amenaza invisible y la presencia imperturbable del guardia.
+> Bercelio Nax no se aparta; mantiene su postura rígida y gélida, aprovechando el espacio abierto para cerrar el cerco psicológico sobre el cautivo. Con una voz seca y cortante, desprovista de cualquier rastro de empatía, sentencia: "Deja que el miedo haga su trabajo. Solo acelera lo inevitable. Ahora dime: ¿Quién te dio la llave? ¿Quién te abrió la puerta? Te lo pregunto otra vez: ¿quién te dejó entrar en la Capilla?".
+> mecanica
+> Intimidación: Éxito (16 vs CD 10). El prisionero está al borde del colapso nervioso.
+> presion
+> El cautivo está a punto de quebrarse, pero el tiempo se agota; si el interrogador se detiene ahora o cambia el tono, el hombre podría recuperar un resto de voluntad y cerrar el dique de nuevo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2897 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · threat_made
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 202 — 179/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2263 ms
+
+> "Tiembla todo lo que quieras, pero el silencio solo prolonga tu agonía."
+> Me acerco lentamente al prisionero, manteniendo mi expresión gélida para no romper la tensión.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4526 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  20385 ms
+
+> narrativa
+> La presión se vuelve tangible en el aire viciado de la celda. Al acercarse, el espacio parece encogerse, empujando al cautivo contra la pared de piedra caliza donde la humedad supura en hilos oscuros. El hombre se retuerce en el suelo de tierra batida, sus sollozos ahogados resonando en la penumbra asfixiante mientras el terror lo ancla al sitio, despojándolo de cualquier rastro de resistencia.
+> El prisionero se quiebra. Sus ojos, dilatados y nublados por el pánico, buscan desesperadamente una salida que no existe, y su cuerpo comienza a convulsionar en un temblor incontrolable que sacude sus hombros. No hay palabras aún, solo el sonido de su respiración errática y el colapso total de su voluntad ante la gélida inminencia de la amenaza.
+> mecanica
+> Intimidación: Éxito (13 vs CD 10). El prisionero ha sido doblegado psicológicamente.
+> presion
+> El cautivo está totalmente expuesto y vulnerable; cualquier vacilación o gesto de piedad en este instante rompería el trance del miedo y permitiría que recupere la compostura.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1897 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 203 — 180/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2082 ms
+
+> "Ahora. Habla antes de que pierda la paciencia."
+> Me inclino sobre él, manteniendo mi mirada fría y fija en sus ojos para no darle respiro.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 5+1=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (11509 ms): «Está roto. Ahora es cuando suelta la verdad o se ahoga en su propio miedo. ¿Qué »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5530 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  20584 ms
+
+> narrativa
+> La mirada fría no basta para extraer la confesión; el prisionero, aunque quebrado, se hunde en un mutismo histérico, incapaz de articular palabra mientras el pánico lo bloquea por completo. El silencio se vuelve denso en la celda de piedra caliza, interrumpido solo por el goteo rítmico de la humedad que resbala por las paredes y el sonido de la tierra batida crujiendo bajo el peso de los presentes.
+> Bercelio Nax permanece rígido y vigilante, observando cada espasmo del hombre con una mirada analítica, casi quirúrgica, desprovista de cualquier rastro de placer, pero cargada de una impaciencia fría y profesional. Sin moverse un centímetro, lanza sus palabras como cuchillas: "Está roto. Ahora es cuando suelta la verdad o se ahoga en su propio miedo. ¿Qué viste en la Capilla Vieja? ¿Quién te llevó allí? Te lo preguntaré una última vez: ¿quién estaba en la Capilla?".
+> mecanica
+> Perspicacia: Fallo (6 vs CD 10). No logras discernir si el silencio del prisionero es una táctica de resistencia final o un colapso mental absoluto.
+> presion
+> El prisionero está al borde del shock catatónico; si no se encuentra la forma de romper su bloqueo ahora, el trauma cerrará su mente y la información sobre la Capilla Vieja se perderá con él.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1273 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 204 — 181/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2539 ms
+
+> "Tú no tienes que hablar, solo recordar."
+> Me acerco al prisionero y le sujeto la mandíbula con fuerza para obligarlo a mirarme a los ojos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 22)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3477 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16237 ms
+
+> narrativa
+> El agarre en la mandíbula es firme, una presión implacable que arranca al prisionero de su vacío y lo obliga a enfrentarse a una mirada que no admite evasivas. Bajo la fuerza de ese contacto, el pánico que lo mantenía catatónico se quiebra, transformándose en un sollozo ahogado mientras sus pupilas se dilatan, reconociendo la inevitabilidad de la situación.
+> La celda de piedra caliza parece cerrarse sobre él, el aire saturado de moho y el hedor a miedo antiguo se vuelve asfixiante. El hombre tiembla violentamente, pero ya no puede huir hacia adentro; el bloqueo mental ha cedido ante la intimidación, dejándolo expuesto y vulnerable en el suelo de tierra batida.
+> mecanica
+> Intimidación: Éxito (22 vs CD 10). Has roto el bloqueo mental del prisionero.
+> presion
+> El prisionero está ahora en un estado de sumisión absoluta, pero su fragilidad es extrema; cualquier exceso de fuerza podría provocar un síncope o un colapso nervioso que vuelva a silenciarlo definitivamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1362 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 205 — 182/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3177 ms
+
+> "Ahora que has vuelto, habla. ¿Qué es este lugar y por qué estamos aquí?"
+> Aflojo el agarre en su mandíbula para no romperlo, pero mantengo mi rostro muy cerca del suyo, observando cada tic de sus ojos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 13+1=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5446 ms): «¿Qué es este lugar? ¿Por qué estamos aquí? No me des vueltas. ¿Qué es este sitio»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  8537 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  20145 ms
+
+> narrativa
+> La celda de piedra caliza húmeda se siente más fría que nunca, con el moho trepando por las paredes manchadas mientras una única rendija de luz proyecta una línea pálida sobre el polvo que flota en el aire. El prisionero, ahora despojado de su refugio mental, tiembla sobre el suelo de tierra batida, atrapado entre la humedad de la piedra y la intensidad de la mirada que lo escudriña.
+> Bercelio Nax se inclina, manteniendo el rostro a escasos centímetros del hombre. No parpadea. Su voz surge seca, desprovista de cualquier rastro de empatía, marcando cada pregunta con una precisión quirúrgica, como si estuviera tachando nombres de una lista: "¿Qué es este lugar? ¿Por qué estamos aquí? No me des vueltas. ¿Qué es este sitio y qué hacéis aquí?".
+> mecanica
+> Perspicacia: Éxito (14 vs CD 10). Has logrado leer la vulnerabilidad del prisionero y coordinar la presión con Nax.
+> presion
+> El prisionero está al borde del colapso; si la presión no se canaliza hacia respuestas concretas ahora mismo, el trauma podría volver a cerrar su mente o provocar un síncope que anule el interrogatorio.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1350 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 206 — 183/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2542 ms
+
+> "Dinos la verdad y quizás encuentres una forma de salir de este agujero."
+> Me acerco al prisionero y le sujeto el brazo con fuerza para anclarlo a la realidad.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 16)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5056 ms): «Ya lo has oído. La verdad. Ahora, repítelo: ¿qué es este lugar? ¿Para qué sirve?»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  764 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  23074 ms
+
+> narrativa
+> El agarre en el brazo del prisionero es firme y seco, anclándolo contra el suelo húmedo mientras el hombre se encoge, sintiendo que el espacio se reduce hasta dejarlo sin aire. La promesa de salida suena vacía en el eco de la celda, pero la presión física rompe la última resistencia del sujeto, que comienza a sollozar mientras las palabras empiezan a brotar, torpes y desesperadas, revelando la naturaleza del agujero.
+> Sin apartar la vista del prisionero, Bercelio asiente levemente ante el gesto, validando la presión física pero manteniendo su postura rígida, casi petrificada. Su voz suena entonces como el roce de dos piedras, cortando el llanto del hombre: "Ya lo has oído. La verdad. Ahora, repítelo: ¿qué es este lugar? ¿Para qué sirve? ¿Quién más sabe que existe?".
+> mecanica
+> Intimidación: Éxito (16 vs CD 10). El prisionero ha cedido ante la presión coordinada.
+> presion
+> El prisionero ha empezado a hablar, pero su estado es precario; cualquier vacilación en el ritmo del interrogatorio podría hacer que el miedo lo bloquee nuevamente o que el pánico lo lleve a un colapso nervioso.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3329 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · competence_shown
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 207 — 184/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2587 ms
+
+> "No nos hagas perder el tiempo con sollozos. Habla claro o el dolor será lo único que recuerdes de este sitio."
+> Me inclino sobre él, manteniendo una expresión gélida y desapasionada mientras espero sus respuestas.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 13+4=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 17)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5936 ms): «Ya ha empezado a soltarlo. No lo interrumpas, deja que el miedo haga el resto. A»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1399 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  21353 ms
+
+> narrativa
+> La amenaza cae sobre el prisionero con la precisión de un bisturí, cortando los sollozos y dejando solo el sonido de una respiración errática y aterrorizada. El hombre se encoge aún más, derrotado por la frialdad de la mirada y la certeza de que no hay refugio posible en esa celda húmeda; su voluntad se quiebra definitivamente, dejando que la información fluya en un torrente de palabras atropelladas y desesperadas.
+> Bercelio Nax permanece rígido como una estatua, con la mirada fija en el sujeto y sin parpadear ni una sola vez. Su voz surge seca, monótona y casi mecánica, como si estuviera recitando un informe: "Ya ha empezado a soltarlo. No lo interrumpas, deja que el miedo haga el resto. Ahora, tú... repite lo que acabas de decir, pero más lento. ¿Quién más sabe de este lugar? ¿Quién más? ¿Quién más?".
+> mecanica
+> Intimidación: Éxito (17 vs CD 10). El prisionero está totalmente quebrantado y dispuesto a confesar.
+> presion
+> El prisionero está al borde del colapso nervioso; si la presión se vuelve insoportable o el interrogatorio se desvía, podría entrar en un estado de shock catatónico, cerrando la fuente de información.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1804 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 208 — 185/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3781 ms
+
+> "Habla con claridad si quieres que el silencio vuelva a ser tu única compañía."
+> Me acerco al prisionero, manteniendo una distancia fría, y lo observo fijamente para analizar sus reacciones mientras confiesa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 10+1=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 11)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (4252 ms): «No le des opciones, dale miedo. Sigue hablando. Ahora, otra vez: ¿quién más sabe»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7701 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  52945 ms
+
+> narrativa
+> La amenaza cala en el prisionero, quien tiembla violentamente mientras intenta articular palabras entre espasmos. Bajo la mirada analítica, el hombre se desmorona; sus pupilas dilatadas y el sudor frío que le recorre la frente delatan que ya no tiene dónde esconderse. La celda de piedra, impregnada de una humedad que cala hasta los huesos, parece cerrarse sobre él, mientras la luz vacilante de una antorcha lejana proyecta sombras alargadas sobre el charco de agua estancada que anega el suelo.
+> Bercelio Nax permanece rígido, ignorando la proximidad del jugador para no romper el cerco psicológico sobre la presa. Con una voz que cae como un martillo rítmico y seco, sentencia: "No le des opciones, dale miedo. Sigue hablando. Ahora, otra vez: ¿quién más sabe de este lugar? ¿Quién más ha estado ahí? ¿Quién más te ha dado las órdenes?".
+> mecanica
+> Perspicacia: Éxito (11 vs CD 10). Has logrado leer las reacciones del prisionero; su terror es genuino y su voluntad ha desaparecido.
+> presion
+> El prisionero está al límite de su resistencia psicológica; cualquier pausa prolongada o cambio brusco de tono podría provocar un colapso nervioso que anule su capacidad de hablar.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  6023 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 209 — 186/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3270 ms
+
+> "No te atrevas a callar ahora que el miedo te ha abierto la boca."
+> Me inclino hacia él, invadiendo su espacio personal para que sienta mi respiración, manteniendo el tono gélido.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 14+4=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (4620 ms): «¿Quién? Dame nombres. ¿Quiénes son los que te mandaron? ¿Quiénes más saben lo qu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  10847 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  39508 ms
+
+> narrativa
+> El prisionero se encoge, aplastado por la cercanía y la gélida presión, mientras el terror termina de quebrar cualquier rastro de resistencia en su mirada. El aire viciado de la celda, cargado de salitre y desesperación, parece espesarse alrededor de los tres, bajo el parpadeo anaranjado de una antorcha distante que proyecta sombras erráticas sobre los muros húmedos.
+> Bercelio Nax asiente levemente, aprobando la táctica. Se mantiene firme, con los brazos cruzados y una mirada gélida y calculadora que no parpadea mientras observa cada espasmo del hombre. Con un tono seco y demandante, interviene: "¿Quién? Dame nombres. ¿Quiénes son los que te mandaron? ¿Quiénes más saben lo que hay allí abajo? ¡Contesta!".
+> mecanica
+> Intimidación: Éxito (18 vs CD 10). El prisionero ha sido doblegado completamente.
+> presion
+> El hombre está en el borde del colapso; si la presión se mantiene pero no se canaliza hacia respuestas concretas, podría entrar en un estado catatónico o sufrir un síncope por estrés.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  7635 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · competence_shown
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 210 — 187/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3064 ms
+
+> "No hagas que Bercelio pierda la paciencia. Los nombres, ahora, o dejaré que el silencio te consuma."
+> Me inclino hacia él, manteniendo mi expresión gélida, y busco cualquier signo de duda o engaño en sus ojos mientras habla.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 14+1=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (4320 ms): «Ya lo has oído. Los nombres. ¿Quiénes son? ¿A quién respondes? ¿Quiénes más está»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  11248 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  59066 ms
+
+> narrativa
+> El prisionero se hunde en el agua estancada que cubre el suelo de la celda, donde el salitre ha corroído las juntas de la piedra caliza y el reflejo de la antorcha danza sobre la superficie sucia. Sus ojos, dilatados por el pánico, se clavan en los tuyos; no hay rastro de engaño ni vacilación, solo el terror puro de quien sabe que ha llegado al límite de su resistencia.
+> Bercelio Nax no se mueve ni un centímetro, manteniendo los brazos cruzados. Su voz es un látigo seco, monótono y persistente, clavando la mirada en el prisionero sin dejarle espacio para respirar: "Ya lo has oído. Los nombres. ¿Quiénes son? ¿A quién respondes? ¿Quiénes más están involucrados? Habla ya".
+> mecanica
+> Perspicacia: Éxito (15 vs CD 10). El prisionero está genuinamente aterrorizado y no intenta ocultar información por voluntad propia.
+> presion
+> El prisionero está al borde del colapso nervioso; cualquier demora en obtener la información podría provocar que pierda el sentido, cerrando la ventana de interrogatorio.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1303 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 211 — 188/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2620 ms
+
+> "No te servirá de nada el silencio si mueres antes de hablar."
+> Me acerco al prisionero y lo miro fijamente, intentando que sienta que soy su única salida.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 7+4=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 11)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7192 ms): «Déjalo. Ya está temblando lo suficiente como para que el aire le falte. Mira sus»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7387 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  63642 ms
+
+> narrativa
+> El prisionero se encoge bajo tu mirada, el agua salobre chapotea contra sus piernas mientras el terror lo ancla al suelo de piedra caliza. La luz de la antorcha proyecta sombras alargadas y vacilantes sobre las paredes húmedas, acentuando la fragilidad del hombre, que empieza a hiperventilar en un espasmo silencioso.
+> Bercelio Nax, sin descruzar los brazos, inclina levemente la cabeza hacia el prisionero. Analiza la reacción física del hombre con una frialdad quirúrgica, ignorando tu amenaza para centrarse únicamente en el objetivo. "Déjalo. Ya está temblando lo suficiente como para que el aire le falte. Mira sus ojos; no es que no quiera hablar, es que tiene miedo de lo que pase después de hacerlo. Así que dímelo tú: ¿Quiénes son? ¿Quién te ha dado las órdenes? ¿A quién respondes?", sentencia con un tono gélido.
+> mecanica
+> Intimidación: Éxito (11 vs CD 10). El prisionero ha sido doblegado por la presión; su voluntad se ha quebrado y está listo para hablar.
+> presion
+> El prisionero está en un estado de shock inminente; si no se extrae la información ahora, el colapso nervioso lo dejará catatónico e inútil.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3756 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · competence_shown
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 212 — 189/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2316 ms
+
+> "Dilo ahora o el silencio será lo único que te acompañe en este agujero."
+> Me inclino hacia el prisionero, manteniendo la presión psicológica mientras espero su respuesta.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 17+4=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 21)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5144 ms): «¿Quiénes son? ¿A quién respondes? Dilo ya, o deja que el silencio te trague, per»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5589 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  52242 ms
+
+> narrativa
+> La voluntad del prisionero termina de quebrarse bajo el peso de la amenaza; el hombre emite un sollozo ahogado y se desploma más sobre sí mismo, vencido por el terror. En la celda sumergida, el agua salobre chapotea contra los tobillos y el aire, saturado de salitre y miedo, parece espesarse alrededor de los tres cuerpos presentes en la piedra caliza.
+> Bercelio Nax da un paso corto y firme hacia el hombre, invadiendo su espacio personal con una presencia asfixiante. No grita, pero su voz tiene el peso de una sentencia mientras mantiene la mirada clavada en las pupilas del cautivo: "¿Quiénes son? ¿A quién respondes? Dilo ya, o deja que el silencio te trague, pero no vuelvas a mentirme."
+> mecanica
+> Intimidación: Éxito (21 vs CD 10).
+> presion
+> El prisionero está al límite de su resistencia psíquica; cualquier demora o duda en el interrogatorio podría provocar un colapso nervioso que lo deje catatónico.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1637 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 213 — 190/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4059 ms
+
+> "Habla ahora, mientras aún tienes lengua para hacerlo."
+> Me acerco al prisionero y le sujeto el mentón con fuerza para obligarlo a mirarme a los ojos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 2+4=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (89829 ms): «Suéltalo. Ya está quebrado. Ahora, tú: ¿A quién respondes? ¿Quién te envió aquí?»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4227 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15341 ms
+
+> narrativa
+> El intento de imponerse sobre el prisionero resulta torpe; el hombre ni siquiera reacciona al agarre, sumido en un estupor de terror que lo hace sentir como un muñeco de trapo. La celda de piedra caliza, húmeda y claustrofóbica, parece cerrarse más sobre los presentes mientras el agua salobre se estanca en el suelo, devolviendo un olor penetrante a salitre y encierro.
+> Bercelio Nax aparta la mano del jugador con un movimiento seco y eficiente, sin siquiera mirarlo. Ignorando la interrupción, se inclina hacia el cautivo, manteniendo toda su atención en el hombre que tiembla en el suelo. "Suéltalo. Ya está quebrado. Ahora, tú: ¿A quién respondes? ¿Quién te envió aquí? Repite los nombres", sentencia con una frialdad que congela el aire de la estancia.
+> mecanica
+> Intimidación: Fallo (6 vs CD 10).
+> presion
+> Bercelio ha tomado el control absoluto de la situación; cualquier otro intento de interferir en su método podría erosionar la confianza que el guardia deposita en el grupo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1682 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Intimidación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 214 — 191/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2713 ms
+
+> "A veces el miedo absoluto cierra la boca más que el terror."
+> Suelto al prisionero y doy un paso atrás, observando la reacción del hombre mientras Bercelio lo presiona.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 3+1=4
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 4)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (26613 ms): «El miedo es un muro, sí. Pero yo sé dónde están las grietas. Ahora, tú: ¿A quién»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3587 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  18539 ms
+
+> narrativa
+> La humedad de la caliza parece filtrarse por los poros, espesando el aire con un hedor a salitre y encierro mientras el agua salobre se estanca en los pies. El intento de leer la situación es estéril; el prisionero es una cáscara vacía, un cuerpo que respira pero que no procesa nada más allá del pánico primario, dejando al observador sin ninguna pista útil sobre lo que ocurre en su mente.
+> Bercelio Nax no aparta la vista del cautivo, ignorando cualquier análisis externo. Su voz surge como un látigo, corta y rítmica, mientras aprieta la mandíbula con una determinación gélida: "El miedo es un muro, sí. Pero yo sé dónde están las grietas. Ahora, tú: ¿A quién respondes? ¿Quién te envió aquí? ¿Quién es tu contacto?".
+> mecanica
+> Perspicacia: Fallo (4 vs CD 10).
+> presion
+> El prisionero se hunde más en su estupor y el tiempo se agota; si Bercelio no logra extraer los nombres pronto, la paciencia del guardia se agotará y empezará a cuestionar la utilidad de quienes lo acompañan.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2674 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 215 — 192/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3422 ms
+
+> "Deja de hacerle las mismas preguntas. No te va a responder mientras esté en este estado."
+> Me acerco al prisionero y lo observo detenidamente, buscando cualquier signo físico o marca que revele su origen.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 12+2=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7645 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13122 ms
+
+> narrativa
+> La caliza sudorosa de las paredes parece cerrarse sobre la escena, goteando un ritmo lento que se pierde en el espejo de agua salobre que cubre el suelo. Al acercarse al prisionero, el hedor a salitre se vuelve más penetrante, mezclándose con el aroma metálico del miedo. 
+> Bajo la luz vacilante de la celda, la inspección minuciosa rinde frutos. Entre el temblor de la piel y la suciedad acumulada, emerge una marca distintiva, un tatuaje mal borrado o una cicatriz ritual que delata el origen del cautivo, revelando una conexión física innegable con una facción específica que el interrogatorio verbal no había logrado extraer. Bercelio Nax guarda silencio, observando la marca con una mirada gélida que oscila entre la sorpresa y la confirmación.
+> mecanica
+> Investigación: Éxito (14 vs CD 10).
+> presion
+> La identidad del prisionero ha sido revelada, pero el tiempo sigue corriendo; si no se decide cómo proceder con esta nueva información, Bercelio podría tomar una decisión unilateral y violenta para acelerar el proceso.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5603 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = La marca física del prisionero revela su conexión con una facción específica
+  ⚠ nombres no reconocidos: Investigación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'npc', 'entity_id': 'Prisionero', 'field': 'descripcion', 'value': 'Presenta un tatuaje desvaído en la base del cuello: un ancla entrelazada con una espiga de trigo, símbolo de los suministradores del Puerto Este.'}
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 216 — 193/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3768 ms
+
+> "Parece que tu silencio ha sido inútil, prisionero."
+> Me acerco a Bercelio y le hablo en voz baja, manteniendo la mirada en la marca.
+> "Dime qué significa exactamente esa marca. Quiero saber a quién nos enfrentamos antes de que decidas eliminarlo."
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 16+1=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 17)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (12482 ms): «Significa que no es un accidente. Que no es un vagabundo perdido. Esa marca pert»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5688 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16549 ms
+
+> narrativa
+> La celda es un nicho húmedo de caliza donde el agua salobre llega a los tobillos, saturando el aire con un salitre que irrita la garganta y amplifica el eco monótono de las gotas cayendo sobre el espejo de agua. El frío cala hasta los huesos mientras la luz vacilante proyecta sombras alargadas sobre las paredes sudorosas.
+> Bercelio Nax no aparta la vista del prisionero, manteniendo una expresión gélida. Se inclina ligeramente hacia adelante, invadiendo el espacio personal del cautivo, aunque su voz rasposa y seca se dirige exclusivamente al jugador en un tono bajo: "Significa que no es un accidente. Que no es un vagabundo perdido. Esa marca pertenece a los que creen que pueden entrar y salir de Umbral Hondo sin dejar rastro. Ahora, dime: ¿Tú ya conocías este signo o es la primera vez que lo ves?".
+> mecanica
+> Perspicacia: Éxito (17 vs CD 10).
+> presion
+> Bercelio ha confirmado la peligrosidad del sujeto; si no se establece un control sobre el interrogatorio, el guardia podría pasar de la observación a la fuerza bruta para extraer nombres rápidamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1848 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 217 — 194/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3212 ms
+
+> "No lo he visto antes, pero me interesa saber quiénes usan esa marca."
+> Me mantengo distante, observando la reacción del prisionero mientras respondo a Bercelio.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 6+1=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7240 ms): «¿Te interesa? Interesa lo que me sirve para limpiar este pueblo. ¿Y cómo es que »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3825 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17099 ms
+
+> narrativa
+> La humedad de la celda se siente más pesada que nunca; el agua estancada que cubre el suelo refleja la luz mortecina en ondas aceitosas, mientras el olor a salitre y encierro parece adherirse a la piel. El intento de leer entre líneas la reacción del prisionero fracasa, dejándolo como una silueta muda y opaca en la penumbra, cuya expresión permanece indescifrable tras el velo de la suciedad.
+> Bercelio Nax se endereza lentamente, sin dejar de mirar al prisionero, pero lanza una mirada lateral, afilada y escéptica, al jugador. Sus dedos tamborilean sobre el cuero de su cinturón con un ritmo impaciente. "¿Te interesa? Interesa lo que me sirve para limpiar este pueblo. ¿Y cómo es que no lo has visto? ¿De verdad no lo has visto? ¿Ni una sola vez en todo este tiempo?", dispara con una voz que gotea desconfianza.
+> mecanica
+> Perspicacia: Fallo (7 vs CD 10).
+> presion
+> La duda de Bercelio ha crecido; si no logras convencerlo de tu honestidad o utilidad, empezará a considerarte un cómplice negligente o un mentiroso, cerrándote el acceso a la información de la Guardia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1595 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 218 — 195/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2995 ms
+
+> "No he visto nada que me resultara relevante, Nax. Si hubiera estado ahí, lo sabrías."
+> Me mantengo impasible, sosteniendo su mirada sin retroceder.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 23)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8295 ms): «Relevante. Esa es la palabra que me molesta. Lo que es 'relevante' para ti puede»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6650 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15937 ms
+
+> narrativa
+> La seguridad de las palabras corta el aire viciado de la celda. Bercelio Nax se detiene en seco, interrumpiendo el ritmo impaciente de sus dedos sobre el cuero del cinturón. Se inclina hacia adelante con un movimiento lento y depredador, invadiendo el espacio personal para escrutar los ojos del interlocutor con una intensidad fría y analítica, buscando cualquier micra de vacilación en esa mirada imperturbable.
+> "Relevante. Esa es la palabra que me molesta. Lo que es 'relevante' para ti puede ser el hilo que yo necesito para tirar de todo el nudo. ¿Me estás diciendo que no viste nada, o que viste algo que decidiste que no me interesaba?", espeta con un tono que oscila entre la sospecha profesional y la irritación contenida, mientras el olor a salitre y el agua estancada siguen envolviendo la penumbra de la estancia.
+> mecanica
+> Persuasión: Éxito (23 vs CD 10).
+> presion
+> Nax ha aceptado la respuesta, pero ahora ha fijado su atención en el criterio del jugador; cualquier omisión futura que él considere "relevante" será interpretada como una traición deliberada.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2711 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) delta rechazado por la base (npc.opinion_jugador): field npc.opinion_jugador is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 219 — 196/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3334 ms
+
+> "Hablo de hechos, no de interpretaciones. Lo que vi no encaja en el patrón de un crimen común, por eso no lo mencioné."
+> Sostengo la mirada de Nax sin retroceder ni un centímetro.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 18+1=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 19)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8956 ms): «Hechos. Me gustan los hechos. Pero los hechos no deciden qué es relevante, yo de»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  9129 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14910 ms
+
+> narrativa
+> El salitre carcome las paredes de piedra en un proceso lento y silencioso, mientras el agua estancada a los pies de ambos devuelve un reflejo mortecino y deforme de la escena. La firmeza de la respuesta parece haber golpeado un nervio en Nax; no retrocede, sino que se mantiene inclinado, invadiendo el espacio con una presencia asfixiante y un contacto visual agresivo que busca cualquier grieta en la seguridad del otro.
+> Su voz baja de volumen, pero gana en presión, marcando cada palabra con una precisión quirúrgica, como si estuviera tachando nombres de una lista mental. "Hechos. Me gustan los hechos. Pero los hechos no deciden qué es relevante, yo decido qué es relevante. ¿Qué es exactamente eso que 'no encaja'? Dilo. Ahora. ¿Qué viste que no era común?", espeta, cerrando el círculo para extraer la información.
+> mecanica
+> Perspicacia: Éxito (19 vs CD 10).
+> presion
+> Nax ha pasado de la irritación a una curiosidad depredadora; si la revelación no es lo suficientemente concreta o impactante, considerará que el jugador está jugando con él para ganar tiempo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2203 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) delta rechazado por la base (npc.state): field npc.state is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 220 — 197/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3089 ms
+
+> "No me gusta repetir las cosas, pero me gusta menos que me presionen."
+> Mantengo la mirada, sin retroceder ni un centímetro ante su cercanía.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 15+4=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 19)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7195 ms): «Me importa poco lo que te guste. Me importa lo que viste. ¿Qué no encajaba? ¿Qué»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  810 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13257 ms
+
+> narrativa
+> La tensión en el aire se vuelve espesa, casi sólida, mientras el espacio entre ambos se reduce a una frontera invisible de voluntad. La mirada fija y la negativa a ceder terreno obligan a Nax a reconocer una fuerza que no esperaba encontrar; el capitán no retrocede, pero el agresivo desplante inicial se transforma en un respeto gélido, una tregua armada donde el poder ha cambiado de manos por un instante.
+> Bercelio entorna los ojos, analizando la pupila del otro con una intensidad quirúrgica, buscando cualquier rastro de duda mientras mantiene la voz en un susurro tenso y demandante: "Me importa poco lo que te guste. Me importa lo que viste. ¿Qué no encajaba? ¿Qué viste que no era común? ¿Qué fue exactamente lo que no era normal?".
+> mecanica
+> Intimidación: Éxito (19 vs CD 10).
+> presion
+> Nax ha aceptado la postura del jugador, pero su paciencia es un recurso finito; cualquier vacilación o respuesta vaga ahora será interpretada como una debilidad que anula la intimidación previa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3306 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · competence_shown
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 221 — 198/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4606 ms
+
+> "No me hagas repetirlo. Te pregunté qué viste que no fuera normal."
+> Mantengo la presión visual sobre Nax, sin parpadear, mientras espero su respuesta.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 2+1=3
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 3)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5582 ms): «Humo. En la Capilla Vieja. Ese lugar lleva décadas muerto, pero he visto luz ahí»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6572 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17491 ms
+
+> narrativa
+> El intento de doblegar la voluntad de Nax choca contra un muro de acero. El capitán no se inmuta ante la insistencia; al contrario, la presión visual parece alimentar su propia determinación, volviendo el aire del muelle aún más pesado. El olor a pescado podrido y salitre se vuelve asfixiante en ese rincón olvidado, mientras el ruido del puerto se desvanece, dejando solo el sonido de una respiración contenida y el gélido silencio de quien ya no tiene miedo de ser intimidado.
+> Bercelio se cruza de brazos, cerrando el espacio físico y manteniendo la mirada fija, sin retroceder un milímetro. Su tono baja de volumen, transformando la conversación en un interrogatorio tenso: "Humo. En la Capilla Vieja. Ese lugar lleva décadas muerto, pero he visto luz ahí dentro dos veces este mes. Luces que no deberían estar ahí. ¿Tú también las has visto? ¿O es que hay algo más que no me estás contando?".
+> mecanica
+> Perspicacia: Fallo (3 vs CD 10).
+> presion
+> Nax ha tomado la iniciativa del interrogatorio. Cada segundo de silencio o respuesta evasiva será interpretado como una confirmación de que ocultas algo, erosionando la ventaja táctica y acercándote a un conflicto directo con la Guardia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4976 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = Ha visto luces en la Capilla Vieja dos veces este mes
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 222 — 199/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  6233 ms
+
+> "No me interesa lo que creas haber visto, capitán. Pero si hay luces en un lugar muerto, quizá sea el momento de que alguien con el criterio adecuado lo examine."
+> Sostengo la mirada, tratando de analizar si su mención a la Capilla es una trampa o una oportunidad real.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 13+1=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7473 ms): «¿Criterio adecuado? Me hablas de criterio mientras esquivas mi pregunta. ¿Viste »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6164 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  23861 ms
+
+> narrativa
+> La respuesta cala en el capitán, que parece reconocer el peso de la sugerencia, aunque no permite que eso suavice su postura. Bercelio se inclina ligeramente hacia adelante, invadiendo el espacio personal con una agresividad contenida; su mandíbula permanece tensa y su voz suena seca, despojada de cualquier rastro de cortesía mientras mantiene la mirada clavada, sin pestañear.
+> "¿Criterio adecuado? Me hablas de criterio mientras esquivas mi pregunta. ¿Viste las luces? ¿Las viste o no? Repítelo, pero esta vez sin adornos", sentencia, cerrando el círculo de la conversación para forzar una respuesta binaria.
+> mecanica
+> Perspicacia: Éxito (14 vs CD 10).
+> presion
+> Nax ha dejado de lado la sutileza. Si continúas evitando la respuesta directa sobre las luces, el capitán dejará de tratarte como a un informante potencial para tratarte como a un sospechoso bajo custodia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1681 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 223 — 200/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2661 ms
+
+> "Sí. Las vi."
+> Sostengo la mirada del capitán sin retroceder, manteniendo el tono neutro.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 3+1=4
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 4)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6466 ms): «Bien. ¿Cuándo exactamente? ¿A qué hora? ¿Y cuántas veces?»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4596 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  23603 ms
+
+> narrativa
+> El despacho del capitán se siente más claustrofóbico que nunca, saturado por el olor a tabaco rancio y el sonido rítmico de un reloj de pared que parece marcar la cuenta atrás de la paciencia de Bercelio. A pesar de la confirmación, la tensión no disminuye; el capitán no retrocede ni un milímetro y se queda congelado en esa postura invasiva, con los ojos entrecerrados, analizando cada micro-gesto del rostro para detectar cualquier rastro de mentira.
+> Bercelio mantiene la presión, secando el aire entre ambos con una mirada quirúrgica. "Bien. ¿Cuándo exactamente? ¿A qué hora? ¿Y cuántas veces?", pregunta, transformando la admisión en un interrogatorio preciso.
+> mecanica
+> Perspicacia: Fallo (4 vs CD 10). No logras leer las intenciones del capitán ni detectar que ya posee información previa sobre las luces.
+> presion
+> Bercelio está contrastando tus palabras con sus propios registros. Cualquier imprecisión o contradicción en los horarios que des en el siguiente turno será interpretada como un intento de engaño, acelerando tu transición de informante a sospechoso.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2431 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 224 — 201/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3519 ms
+
+> "Anoche, poco después de la medianoche. Una sola vez, pero fue lo suficientemente clara como para no olvidarla."
+> Mantengo la mirada fija en la suya, sin pestañear, mientras trato de recordar el momento exacto.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 19+1=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7170 ms): «Una sola vez. Poco después de medianoche. ¿Seguro que fue solo una? ¿No viste ni»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4538 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  20107 ms
+
+> narrativa
+> El despacho es una caja de madera oscura y cuero desgastado, donde la luz de una sola lámpara de aceite proyecta sombras alargadas que parecen cerrarse sobre el centro de la habitación. El silencio se vuelve denso, casi físico, interrumpido solo por el tamborileo mecánico y seco de los dedos de Bercelio sobre la mesa.
+> El capitán no aparta la mirada ni un segundo. Se inclina un poco más, invadiendo el espacio personal con una intensidad asfixiante, y su voz suena cortante: "Una sola vez. Poco después de medianoche. ¿Seguro que fue solo una? ¿No viste ninguna otra antes o después? ¿Estás completamente seguro de que solo fue una luz?".
+> mecanica
+> Perspicacia: Éxito (20 vs CD 10). Logras percibir que la insistencia de Bercelio no es solo celo profesional; hay una urgencia oculta en su mirada, como si estuviera validando un dato que ya conoce pero que necesita que tú confirmes.
+> presion
+> Bercelio está midiendo la precisión de tu relato. Si empiezas a dudar o a añadir detalles contradictorios bajo su presión, dejará de tratarte como un testigo y empezará a tratarte como un cómplice.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1620 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 225 — 202/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3018 ms
+
+> "Solo vi una. No hubo más."
+> Mantengo la mirada fija en la suya, sin retroceder ante su cercanía, mientras analizo sus gestos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 5+1=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3500 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12309 ms
+
+> narrativa
+> Bercelio mantiene la posición, con el rostro a escasos centímetros, pero el silencio se vuelve gélido. Sus ojos recorren cada músculo de tu cara, buscando la grieta, el tic o el parpadeo que delate una mentira. No hay rastro de convicción en su expresión; al contrario, el capitán parece procesar tu respuesta como una pieza que no encaja en el rompecabezas, y una sombra de desconfianza se asienta en su mirada.
+> El capitán no dice nada. Se limita a retroceder lentamente, rompiendo la asfixia del espacio personal, pero su lenguaje corporal ha cambiado: ya no busca una confirmación, ahora te observa como a un enigma peligroso.
+> mecanica
+> Perspicacia: Fallo (6 vs CD 10). No logras descifrar qué piensa Bercelio ahora; su rostro se ha vuelto una máscara impenetrable.
+> presion
+> La duda se ha instalado en el capitán. El siguiente error en tu relato o cualquier inconsistencia convertirá este interrogatorio en una detención.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3457 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 226 — 203/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 41.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3428 ms
+
+> "Tus dudas son comprensibles, capitán, pero el tiempo es un lujo que no tenemos."
+> Sostengo la mirada sin pestañear, manteniendo una expresión neutra mientras trato de recuperar el control de la situación.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7098 ms): «¿El tiempo? Habla claro. ¿Quién te ha dicho que no tenemos tiempo? ¿Qué es exact»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7900 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  31456 ms
+
+> narrativa
+> La tensión en el despacho se estabiliza, aunque el aire sigue pesado, cargado con el olor acre de la tinta y el tabaco frío. La luz mortecina de la tarde recorta las siluetas de los mapas desplegados sobre la mesa, haciendo que las motas de polvo bailen en el espacio que separa los dos rostros. Tu determinación logra romper la inercia de la desconfianza, obligando al capitán a reconsiderar la urgencia de tus palabras.
+> Bercelio Nax se cruza de brazos, clavando la vista en ti con una fijeza gélida. No se deja impresionar por la prisa; al contrario, la procesa como una señal de alerta que lo pone en guardia. Con una voz seca y cortante, lanza la pregunta: "¿El tiempo? Habla claro. ¿Quién te ha dicho que no tenemos tiempo? ¿Qué es exactamente lo que urge tanto que te hace saltarte los pasos?".
+> mecanica
+> Persuasión: Éxito (13 vs CD 10). Has logrado desplazar la duda hacia una curiosidad cautelosa.
+> presion
+> Bercelio ha aceptado la premisa de la urgencia, pero ahora exige pruebas concretas. Cualquier respuesta vaga o contradictoria será interpretada como una maniobra de distracción, cerrando la puerta a su cooperación.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  16519 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Bercelio Nax · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5470: Bercelio Nax affinity 41.0 → 43.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'npc', 'entity_id': 'Bercelio', 'field': 'estado_mental', 'value': 'Intrigado pero cauteloso; la urgencia planteada ha desplazado la desconfianza inmediata hacia una curiosidad tensa.'}
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 43.0 (loyal), 6 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 227 — 204/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 43.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2578 ms
+
+> "No es una opinión, capitán, es una certeza. El tiempo corre en contra de quienes ignoran lo que se mueve en las sombras."
+> Me inclino ligeramente hacia la mesa, manteniendo la mirada fija en él.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (7506 ms): «Certezas. Sombras. Palabras bonitas para alguien que no tiene un nombre que darm»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4364 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  23092 ms
+
+> narrativa
+> El despacho es una caja de madera oscura y estantes saturados de legajos, donde la luz naranja del ocaso entra en diagonal, iluminando la superficie rayada de una mesa de roble cubierta de mapas navales y brújulas. El aire, denso y viciado, parece espesarse cuando las palabras vacías quedan suspendidas entre ambos, perdiendo todo el peso que pretendían tener.
+> Bercelio Nax se descruza de brazos con lentitud, apoyando las palmas sobre la mesa y volcando todo su peso hacia adelante para invadir el espacio personal del jugador. Sus ojos no parpadean; lo está diseccionando mientras su voz adquiere un tono gélido y demandante: "Certezas. Sombras. Palabras bonitas para alguien que no tiene un nombre que darme. ¿Quién se mueve? ¿En qué sombras? Repítelo, pero esta vez sin el discurso: ¿Quién se mueve exactamente?".
+> mecanica
+> Persuasión: Fallo (5 vs CD 10). El capitán ha descartado tu retórica como una maniobra evasiva.
+> presion
+> Nax ha perdido la paciencia con los acertijos. Si no proporcionas un nombre o una prueba tangible en el siguiente aliento, considerará que estás intentando manipularlo y podría escoltarte fuera del despacho, eliminando cualquier posibilidad de apoyo oficial.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  6894 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 43.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 228 — 205/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 43.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3238 ms
+
+> "No busco manipularlo, capitán, sino evitar que cometamos un error por precipitación."
+> Me mantengo firme sin retroceder, sosteniéndole la mirada mientras busco algún documento o nota sobre la mesa que pueda servirme de prueba.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 6+2=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 8)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (9205 ms): «La precipitación es un lujo que no tengo, y el tiempo es algo que no me sobra. N»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5597 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16978 ms
+
+> narrativa
+> La mirada se desvía un instante hacia la superficie del roble, donde las manchas de tinta y la ceniza se mezclan entre mapas desplegados. Los ojos rastrean con urgencia el desorden hasta detenerse en un pequeño cuaderno de cuero negro con el sello de la Aduana, abierto en una página de anotaciones apresuradas sobre cargamentos no declarados, pero el papel es un laberinto de caligrafía indescifrable y datos inconexos que no ofrecen el hilo conductor necesario para cambiar la marea de la conversación.
+> Bercelio Nax no permite que el silencio se prolongue ni que la distracción sirva de refugio. Golpea la mesa con un nudillo, rítmicamente, marcando cada pregunta mientras mantiene el torso inclinado hacia adelante, asfixiando cualquier espacio físico restante. Sus ojos, gélidos, no se apartan: "La precipitación es un lujo que no tengo, y el tiempo es algo que no me sobra. No me hables de errores; el error es traer acertijos a mi mesa. Te lo preguntaré una última vez, y hazlo lento: ¿Quién es la persona que se mueve en las sombras? ¿Quién? ¿De quién hablamos?".
+> mecanica
+> Investigación: Fallo (8 vs CD 10). No logras extraer ninguna información útil del cuaderno de la Aduana antes de que Nax retome el control de la situación.
+> presion
+> La paciencia de Bercelio se ha agotado. Un nombre concreto o una prueba irrefutable es lo único que evitará que te considere un mentiroso y te expulse de su despacho, cerrando la puerta a cualquier respaldo de la Guardia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1620 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Aduana, Fallo, Investigación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 43.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 229 — 206/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 43.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4080 ms
+
+> "No busco darte acertijos, Nax, sino soluciones. Pero las sombras no siempre tienen un nombre que se pueda pronunciar sin cautela."
+> Me reclino en la silla, manteniendo la mirada fría y sin parpadear.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (10135 ms): «La cautela es para los que tienen algo que ocultar. O para los que tienen miedo.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4053 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14850 ms
+
+> narrativa
+> El despacho de Nax es una caja de madera oscura y humo, donde la luz de los candelabros apenas logra vencer la penumbra de las esquinas repletas de archivos. El aire, denso y cargado de ceniza, parece espesarse mientras la tensión se asienta sobre la mesa de roble.
+> Nax no retrocede. Al contrario, se inclina aún más, invadiendo el espacio personal, y sus nudillos dejan de golpear la madera para apoyarse firmemente sobre ella, cerrando el círculo. Su voz es un susurro tenso, seco, desprovisto de cualquier calidez: "La cautela es para los que tienen algo que ocultar. O para los que tienen miedo. Yo no soy ninguno de los dos. Así que deja de adornar el aire y dame un nombre. ¿Quién es? ¿De quién hablamos? ¿Quién se mueve ahí abajo?".
+> mecanica
+> Persuasión: Éxito (15 vs CD 10). Nax acepta el juego de palabras y decide escucharte, aunque mantiene su agresividad.
+> presion
+> Bercelio ha aceptado seguir escuchando, pero su impaciencia es un hilo delgado. Si la siguiente respuesta no contiene un dato concreto o un nombre, interpretará la cautela como una confesión de culpabilidad y te echará del despacho.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4955 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 43.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 230 — 207/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 43.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2897 ms
+
+> "No confundas mi prudencia con miedo, Nax. El nombre que buscas es el de aquel que coordina los suministros desde las sombras."
+> Me acerco a él, sosteniéndole la mirada sin pestañear.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 22)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (9291 ms): ««El coordinador de suministros». Muy vago. Demasiado vago. ¿Quién firma los vale»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  11929 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12798 ms
+
+> narrativa
+> El despacho se siente ahora más pequeño, el humo de los candelabros girando lentamente entre los dos mientras el silencio se prolonga, cargado de una electricidad peligrosa. La respuesta cala en Nax, quien no se aparta ni un milímetro; mantiene la mirada fija, casi hipnótica, mientras sus ojos escanean el rostro del interlocutor buscando cualquier micro-gesto de duda.
+> Bercelio apoya el peso de su cuerpo sobre la mesa, reduciendo la distancia al mínimo. «El coordinador de suministros». Muy vago. Demasiado vago. ¿Quién firma los vales? ¿Quién recibe los fardos? ¿Quién es el nombre real detrás de esa sombra?
+> mecanica
+> Engaño: Éxito (22 vs CD 10). Nax ha aceptado la premisa del "coordinador" como una verdad plausible, aunque su frustración por la falta de un nombre propio ha aumentado.
+> presion
+> Nax ha comprado la mentira, pero ha quedado enganchado a la necesidad de un nombre concreto. Si el siguiente dato es demasiado ambiguo o contradictorio, sospechará que el jugador está improvisando y la lealtad se romperá.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  37599 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento bercelio_nax · competence_shown
+  ✓ delta bercelio_nax · npc.knowledge = Existe un coordinador de suministros que opera desde las sombras
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: bercelio_nax
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 43.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 231 — 208/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 43.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2507 ms
+
+> "No todos los nombres se pueden decir en voz alta sin atraer la atención equivocada."
+> Me mantengo impasible, observando la reacción de Nax mientras juego con un anillo en mi dedo.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4210 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10755 ms
+
+> narrativa
+> El despacho se ha vuelto un espacio claustrofóbico, donde la luz vacilante de los candelabros proyecta sombras alargadas que parecen cerrarse sobre ellos. Nax no parpadea; su mirada se clava en el movimiento rítmico del anillo, despojando la frase de cualquier mística o peligro real para reducirla a lo que es: una evasiva.
+> Bercelio se endereza lentamente, alejándose de la mesa. El silencio que sigue no es de comprensión, sino de una fría desconfianza que se asienta en el aire. Sus facciones se endurecen y una mueca de escepticismo curva sus labios mientras el espacio entre ambos se llena de una tensión insoportable.
+> mecanica
+> Engaño: Fallo (9 vs CD 10). Nax ya no acepta la ambigüedad como precaución, sino como una señal clara de engaño.
+> presion
+> Nax ha dejado de creer en la legitimidad de la fuente. Cualquier intento posterior de manipularlo sin una prueba tangible resultará en una confrontación abierta o en su detención inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  23667 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = Tarq ha intentado engañarlo con evasivas sobre los nombres
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 43.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 232 — 209/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 43.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3225 ms
+
+> "Basta de juegos. El tiempo es un recurso que no podemos malgastar en acertijos."
+> Doy un paso adelante para romper la tensión y miro a Bercelio fijamente, analizando su expresión.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 3+1=4
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 4)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (8410 ms): «Tú hablas de malgastar el tiempo, pero eres tú quien me lo hace perder con acert»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4059 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13678 ms
+
+> narrativa
+> El despacho se siente ahora como una jaula de madera y terciopelo, donde el olor a cera quemada y polvo antiguo se vuelve asfixiante. El intento de intimidar a Nax con la urgencia del tiempo resbala sobre él como el agua sobre el granito; su expresión no flaquea ni un ápice, y el análisis de su rostro solo devuelve un muro de desconfianza impenetrable.
+> Bercelio se mantiene rígido, con los brazos cruzados y la mirada gélida, sin ceder ni un centímetro de espacio ante el paso del jugador. Sus palabras cortan el aire con una precisión quirúrgica: "Tú hablas de malgastar el tiempo, pero eres tú quien me lo hace perder con acertijos. No me interesa el misterio. Me interesa la verdad. ¿Qué es lo que no me estás diciendo? ¿Qué es lo que no me dices? Repítelo, pero esta vez sin adornos".
+> mecanica
+> Perspicacia: Fallo (4 vs CD 10). No logras leer ninguna grieta en su armadura emocional ni detectar una debilidad a la que aferrarte.
+> presion
+> La paciencia de Nax se ha agotado. Si no entregas una verdad cruda o una prueba irrefutable ahora mismo, dejará de tratarte como a un aliado para tratarte como a un sospechoso bajo custodia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  7144 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 43.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 233 — 210/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 43.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3082 ms
+
+> "La verdad es que no tengo todas las respuestas, Bercelio. Pero sé que el tiempo no es un lujo que ninguno de nosotros tenga."
+> Me quedo inmóvil, sosteniéndole la mirada con frialdad.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (6726 ms): «Que no tengas todas las respuestas es lo único honesto que has dicho hoy. Pero q»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4157 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14030 ms
+
+> narrativa
+> El despacho permanece en un silencio denso, donde la luz de las velas proyecta sombras alargadas que parecen cerrarse sobre los presentes, asfixiando el espacio entre los dos hombres. La confesión de ignorancia, lejos de debilitar la posición del jugador, parece abrir una grieta de respeto en la armadura de Nax; la honestidad cruda resuena en la estancia como un golpe seco.
+> Bercelio se descruza de brazos lentamente y da un paso hacia adelante, invadiendo el espacio personal del jugador con una presencia imponente, manteniendo la mirada fija y gélida. "Que no tengas todas las respuestas es lo único honesto que has dicho hoy. Pero que el tiempo vuele no me sirve para llenar un informe. ¿Quién te ha dicho que el tiempo es un problema? ¿Quién te ha puesto esa prisa? Dime el nombre", sentencia, su voz ahora cargada de una urgencia inquisitiva.
+> mecanica
+> Persuasión: Éxito (15 vs CD 10). Has logrado que Nax valore tu sinceridad, desplazando su actitud defensiva hacia una curiosidad agresiva.
+> presion
+> Nax ha aceptado tu honestidad, pero ahora exige un nombre. Si te niegas a proporcionar una fuente o un culpable, interpretará tu silencio como una complicidad deliberada y el interrogatorio se volverá hostil.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  14270 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Bercelio Nax · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5508: Bercelio Nax affinity 43.0 → 45.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 45.0 (loyal), 6 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 234 — 211/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 45.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2883 ms
+
+> "Nadie me ha puesto prisa. Es mi propia percepción de la urgencia la que me empuja."
+> Mantengo la mirada, sin retroceder ante su proximidad. {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 2+4=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (9041 ms): «Tu propia percepción. ¿Así es como funciona? ¿Te despiertas un día y decides que»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  902 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15964 ms
+
+> narrativa
+> El intento de disfrazar la urgencia como una simple intuición personal cae en saco roto. Bercelio Nax no se deja engañar por la fachada de autosuficiencia; al contrario, la respuesta parece confirmarle que hay algo oculto tras el velo de la percepción. La tensión en el despacho se vuelve asfixiante mientras Nax acorta la distancia restante, anclando su presencia como una losa sobre el espacio personal del jugador.
+> Entorna los ojos, analizando cada microgesto del rostro del jugador. No retrocede ni un centímetro, manteniendo la presión física mientras repite la pregunta variando el ángulo de ataque: "Tu propia percepción. ¿Así es como funciona? ¿Te despiertas un día y decides que el tiempo corre más rápido que para el resto? ¿O es que hay algo que no quieres que encuentre antes de que sea tarde? Dímelo otra vez. ¿Quién te ha metido esa urgencia en la cabeza?".
+> mecanica
+> Engaño: Fallo (6 vs CD 10). Nax ha detectado la inconsistencia en tu relato y ahora está convencido de que ocultas una fuente externa.
+> presion
+> La paciencia de Nax se ha agotado. Al haber fallado en el engaño, ya no ve una intuición, sino una mentira deliberada. Si no revelas un nombre o una fuente creíble ahora, pasará de la curiosidad agresiva a la detención formal por obstrucción.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  28629 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = Tarq miente sobre la urgencia de su misión y oculta una fuente externa
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 45.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 235 — 212/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 45.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2880 ms
+
+> "No necesito que nadie me meta nada en la cabeza para saber cuándo alguien me está haciendo perder el tiempo."
+> Sostengo la mirada sin retroceder, tratando de leer sus intenciones mientras mantengo la calma.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 18+1=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 19)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (9729 ms): «Me gusta que no bajes la mirada, pero no confundas orgullo con honestidad. No me»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3490 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17439 ms
+
+> narrativa
+> La firmeza de la respuesta corta el aire, y por un instante, la rigidez de Nax vacila ante esa chispa de desafío. Sin embargo, el despacho se siente ahora como una celda de madera y cuero; la luz del atardecer proyecta sombras alargadas que parecen cerrarse sobre el grupo mientras el silencio se vuelve pesado, cargado de una electricidad estática que advierte que el límite ha sido alcanzado.
+> Bercelio se queda inmóvil, casi gélido, manteniendo el espacio invadido. Su voz no sube de volumen, pero se vuelve más cortante, como si estuviera marcando el ritmo de un interrogatorio oficial: "Me gusta que no bajes la mirada, pero no confundas orgullo con honestidad. No me hables de perder el tiempo cuando el tiempo es lo único que no tenemos. Ahora, voy a preguntártelo una última vez: ¿quién te ha dado la información? ¿Quién te ha dicho qué buscar? ¿Quién te ha puesto los nervios de punta?".
+> mecanica
+> Perspicacia: Éxito (19 vs CD 10). Has logrado leer la estructura de su interrogatorio; Nax no está improvisando, está aplicando un método de presión sistemático para forzar una confesión.
+> presion
+> Nax ha cerrado el cerco. Ya no busca una conversación, sino un nombre. Si la siguiente respuesta no satisface su necesidad de control o no ofrece una verdad tangible, dejará de tratarte como a un informante para tratarte como a un sospechoso.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4320 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 45.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 236 — 213/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 45.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4484 ms
+
+> "Crees que el miedo es la única forma de obtener respuestas, pero solo sirve para que la gente diga lo que quieres oír."
+> Mantengo el contacto visual, sin retroceder ni un centímetro, mientras analizo su lenguaje corporal.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 7+1=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 8)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  944 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15078 ms
+
+> narrativa
+> El intento de leer los gestos de Nax choca contra un muro de disciplina militar. No hay una grieta en su postura, ninguna microexpresión que revele duda o impaciencia; su rostro es una máscara de piedra que devuelve la mirada con una frialdad absoluta. La provocación cae en un vacío gélido, y el silencio que sigue no es de reflexión, sino de un juicio que ya ha dictado sentencia.
+> Bercelio no responde con palabras. Se limita a sostener el contacto visual, endureciendo la mandíbula mientras sus ojos se entrecierran, evaluando la terquedad como quien mide la resistencia de una madera antes de romperla. El aire en el despacho se vuelve asfixiante, y la distancia entre ambos parece reducirse no por un movimiento físico, sino por la presión invisible de una autoridad que ha dejado de escuchar.
+> mecanica
+> Perspicacia: Fallo (8 vs CD 10). No logras extraer ninguna información nueva de su lenguaje corporal; Nax es un profesional del control y su fachada es impenetrable.
+> presion
+> La paciencia de Nax se ha agotado. Al no obtener ni una confesión ni una lectura útil, el interrogatorio ha terminado para dar paso a la detención. Si no cambias la dinámica ahora, el siguiente paso será el calabozo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3447 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 45.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 237 — 214/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 45.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3281 ms
+
+> "Parece que vuestra paciencia es tan limitada como vuestra capacidad de escucha."
+> Me reclino en la silla con calma, manteniendo el contacto visual sin pestañear.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 2+4=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (12391 ms): «Ya he escuchado suficiente. Ahora te toca escuchar a ti: levántate de la silla y»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  34438 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12643 ms
+
+> narrativa
+> El intento de desestabilizarlo con el sarcasmo es inútil; la provocación no encuentra ninguna grieta en la disciplina de Nax. El guardia ni siquiera parpadea ante el comentario, pero la tensión en sus hombros se transforma en una acción deliberada. Se inclina hacia delante lentamente, invadiendo el espacio personal con una calma amenazante que asfixia el aire del despacho.
+> Con una voz baja y cortante, sin elevar el tono pero cargada de una autoridad final, sentencia: "Ya he escuchado suficiente. Ahora te toca escuchar a ti: levántate de la silla y pon las manos donde pueda verlas."
+> mecanica
+> Persuasión: Fallo (6 vs CD 10). Tus palabras no han surtido efecto y solo han acelerado la decisión de Nax de terminar el interrogatorio.
+> presion
+> La detención es inminente. Si te resistes físicamente o continúas con las provocaciones, Nax recurrirá a la fuerza bruta para reducirte y llevarte a las celdas.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3524 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 45.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 238 — 215/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 45.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3781 ms
+
+> "Como desees."
+> Me levanto lentamente de la silla y extiendo las manos frente a mí, manteniendo la mirada fija en él.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 14+1=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (15639 ms): «Bien. Quédate así. Ni un movimiento más hasta que yo lo diga.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7619 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13584 ms
+
+> narrativa
+> El despacho es una caja de piedra fría y austera, donde una luz cenicienta se filtra por una rendija alta, revelando partículas de polvo que flotan en un aire saturado de cera quemada y pergamino viejo. Es un espacio diseñado para dictar sentencias, despojado de cualquier rastro de piedad. Al levantarte y exponer las manos, el movimiento es fluido y preciso, logrando que la tensión del momento se estabilice sin desencadenar una reacción violenta.
+> Bercelio Nax no retira la mirada ni un segundo. Mantiene la presión física, acechando cada músculo y cada microgesto en busca de cualquier señal de engaño o resistencia. Con un tono gélido y dominante, sentencia: "Bien. Quédate así. Ni un movimiento más hasta que yo lo diga."
+> mecanica
+> Perspicacia: Éxito (15 vs CD 10). Has logrado leer la situación y ejecutar el movimiento con la cautela necesaria para no escalar la agresión.
+> presion
+> Nax te tiene bajo control absoluto. Cualquier gesto brusco o intento de romper la formación será interpretado como una agresión, lo que resultará en el uso inmediato de la fuerza para reducirte.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2950 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 45.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 239 — 216/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 45.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4154 ms
+
+> "Tengo el control de mis impulsos, Nax."
+> Me quedo inmóvil, manteniendo la mirada fija en él mientras analizo su lenguaje corporal para detectar cualquier grieta en su seguridad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 4+1=5
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (17200 ms): «Tener el control es una cosa. No tener nada que ocultar es otra. ¿Por qué estaba»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3699 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17612 ms
+
+> narrativa
+> El despacho se siente ahora como una celda de piedra, donde el silencio solo es roto por la respiración contenida y el goteo distante de alguna humedad en los muros. El intento de analizar al hombre fracasa; Nax es un muro de granito, una presencia impenetrable que no deja ninguna grieta ni vacilación en su postura para ser explotada.
+> Bercelio Nax no se mueve ni un centímetro. Mantiene la presión, clavando la mirada en los ojos del jugador mientras lanza las preguntas en ráfaga, como quien martillea un clavo para ver si el metal cede: "Tener el control es una cosa. No tener nada que ocultar es otra. ¿Por qué estabas ahí? ¿Qué buscabas? ¿Quién te dijo que podías entrar?".
+> mecanica
+> Perspicacia: Fallo (5 vs CD 10). No has logrado detectar ninguna debilidad ni patrón en el lenguaje corporal de Nax; su control es absoluto.
+> presion
+> La ráfaga de preguntas es un interrogatorio agresivo. Cualquier respuesta evasiva o silencio prolongado será tomado como una confesión de culpa, otorgando a Nax la justificación necesaria para pasar de la intimidación al arresto formal.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1591 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 45.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 240 — 217/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 45.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4086 ms
+
+> "Solo buscaba respuestas que no se encuentran en los libros oficiales."
+> Sostengo la mirada sin retroceder, manteniendo la voz plana y gélida.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (17533 ms): «Los libros oficiales no mienten, solo omiten. ¿Qué respuestas? Dime qué respuest»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  12849 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  24512 ms
+
+> narrativa
+> El despacho es un espacio austero de piedra fría y luz mortecina, donde el eco de las palabras parece morir contra las paredes desnudas antes de llegar al techo. La respuesta gélida no surte efecto; Nax no se deja impresionar por la compostura ni por la vaguedad de la excusa, y el aire entre ambos se vuelve denso, cargado de una hostilidad contenida.
+> Bercelio Nax no parpadea. Se inclina ligeramente hacia adelante, invadiendo el espacio personal del jugador, mientras apoya una mano sobre la mesa con un golpe seco pero controlado. "Los libros oficiales no mienten, solo omiten. ¿Qué respuestas? Dime qué respuestas. ¿Qué es exactamente lo que no encontraste en los libros?", espeta con una intensidad que busca quebrar la máscara de indiferencia.
+> mecanica
+> Persuasión: Fallo (7 vs CD 10). Tu argumento ha sido demasiado ambiguo para convencerlo; Nax ahora ve tu respuesta como una admisión de que buscabas algo prohibido.
+> presion
+> La paciencia de Nax se ha agotado. Si la siguiente respuesta no es concreta o convincente, considerará que el interrogatorio ha terminado y procederá a reducirte para llevarte a las celdas.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  16245 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = Tarq buscaba respuestas prohibidas que no están en los libros oficiales
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 45.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 241 — 218/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 45.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4906 ms
+
+> "No busco secretos prohibidos, sino la verdad que vuestros libros consideran irrelevante."
+> Sostengo la mirada sin retroceder un centímetro, manteniendo el tono gélido.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 7+4=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 11)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (16255 ms): «La verdad no es irrelevante, es peligrosa. Y quien dice buscar 'la verdad' sin d»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5535 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16832 ms
+
+> narrativa
+> El despacho parece encogerse, las paredes de piedra fría cerrándose sobre el espacio mientras el silencio se extiende como un hilo tenso, a punto de romperse. La respuesta ha calado, pero no ha suavizado la hostilidad; Nax procesa el desafío con una rigidez absoluta, absorbiendo la gélida compostura del aire.
+> Bercelio Nax no retrocede ni un milímetro, manteniendo la presión física, con los ojos fijos en los del jugador para analizar cada micro-gesto. Su voz suena seca y cortante, como el golpe de una bota sobre piedra: "La verdad no es irrelevante, es peligrosa. Y quien dice buscar 'la verdad' sin decir exactamente qué nombre o qué fecha busca, suele ser quien más tiene que ocultar. ¿Qué buscabas? ¿Qué nombre? Repítelo, pero esta vez sin adornos."
+> mecanica
+> Persuasión: Éxito (11 vs CD 10). Has logrado que Nax reconozca la validez de tu postura, pero esto solo ha servido para que centre su sospecha en un objetivo concreto: quiere saber exactamente qué estás rastreando.
+> presion
+> Nax ha pasado de la irritación al escrutinio táctico. Si continúas con evasivas o respuestas poéticas, interpretará que el secreto que proteges es demasiado valioso para ser revelado voluntariamente y procederá a detenerte.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3447 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Bercelio Nax · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5565: Bercelio Nax affinity 45.0 → 47.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+  ✗ (Mundo) delta rechazado por la base (npc.estado): field npc.estado is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 6 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 242 — 219/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4097 ms
+
+> "No busco nombres que ya estén escritos en los libros de historia, sino los que alguien se ha esforzado en borrar."
+> Sostengo la mirada sin pestañear, manteniendo mi postura.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 14+4=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (11874 ms): «Borrar nombres es un trabajo sucio, y el trabajo sucio deja rastro. ¿Quién los b»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1071 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15718 ms
+
+> narrativa
+> La tensión en el despacho se vuelve densa, casi tangible, mientras el silencio es sustituido por una comprensión gélida. El engaño ha calado; Nax acepta la premisa, pero lejos de relajarse, su curiosidad se transforma en una sospecha depredadora. El aire huele a polvo antiguo y a la humedad persistente de las paredes de piedra que parecen observar el encuentro.
+> Bercelio Nax se inclina ligeramente hacia adelante, invadiendo el espacio personal del jugador; sus ojos no parpadean, escaneando el rostro en busca de cualquier tic de nerviosismo. Con un tono que oscila entre la exigencia y la amenaza, sentencia: "Borrar nombres es un trabajo sucio, y el trabajo sucio deja rastro. ¿Quién los borró? ¿Dónde están los registros que faltan? Dímelo ahora, sin acertijos".
+> mecanica
+> Engaño: Éxito (18 vs CD 10). Nax ha comprado tu versión, pero ahora está convencido de que posees información concreta sobre una conspiración de archivos.
+> presion
+> Nax ha pasado de cuestionar tu motivo a exigir los datos. Si no proporcionas nombres falsos convincentes o una pista tangible, deducirá que estás improvisando y que el "borrado" es una pantalla para ocultar tu verdadera identidad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4521 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = Tarq posee información concreta sobre una conspiración de archivos y nombres borrados de la historia
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 6 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 243 — 220/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 6 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  6952 ms
+
+> "Los registros no se borraron, se trasladaron a un lugar donde el polvo no los toque. No soy yo quien los guarda, sino quien sabe que existen."
+> Mantengo la mirada fija en la suya, sin retroceder ni un milímetro.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Bercelio Nax no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6426 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16126 ms
+
+> narrativa
+> El despacho es una caja de piedra fría, saturada de estanterías que se hunden bajo el peso de legajos amarillentos y el aroma rancio de la tinta seca. Una única lámpara de aceite proyecta sombras alargadas que danzan sobre el rostro severo de Nax mientras el silencio se vuelve asfixiante.
+> Nax no se mueve, pero su mirada se vuelve gélida. No hay rastro de duda en su expresión, solo una creciente convicción de que las palabras son un escudo vacío. El guardia entorna los ojos, analizando la fijeza de la mirada ajena no como una muestra de seguridad, sino como la rigidez de quien se ha quedado sin argumentos. Su rostro se contrae en una mueca de desprecio silencioso; la respuesta no ha sido convincente y la grieta en la mentira se ha abierto por completo.
+> mecanica
+> Engaño: Fallo (7 vs CD 10). Nax ya no cree en la historia del traslado de los registros.
+> presion
+> Nax ha detectado la improvisación. Si no cambias la estrategia o intentas una maniobra desesperada, pasará de la sospecha al interrogatorio coercitivo o a la detención inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4028 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Bercelio Nax · npc.knowledge = Tarq ha mentido sobre el traslado de los registros
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5577: Bercelio Nax.knowledge = Tarq ha mentido sobre el traslado de los registros
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 7 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 244 — 221/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 7 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4050 ms
+
+> "Ciertamente, no soy el hombre más honesto de esta ciudad. Pero soy el único que sabe dónde encontrar lo que buscas."
+> Me inclino hacia adelante, invadiendo su espacio personal para intentar recuperar el control de la situación.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 23)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (32683 ms): «Que no seas honesto ya lo sabía. Ahora dime dónde está lo que buscas. ¿Dónde est»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7010 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16178 ms
+
+> narrativa
+> El despacho se siente ahora más pequeño, el aire cargado por la proximidad física y una tensión eléctrica que vibra entre ambos. La luz de la lámpara oscila, proyectando sombras erráticas que iluminan el sudor en la sien de Nax mientras este procesa el cambio de tono y el desafío del gesto.
+> El guardia no retrocede ni un milímetro ante la invasión de su espacio; mantiene la mirada fija y gélida, con la mandíbula tensa y el cuerpo rígido como una piedra. Tras un silencio denso, Bercelio Nax sentencia con voz cortante: "Que no seas honesto ya lo sabía. Ahora dime dónde está lo que buscas. ¿Dónde están los registros? ¿En qué parte de la ciudad los has escondido? Habla."
+> mecanica
+> Persuasión: Éxito (23 vs CD 10). Has logrado que Nax deje de lado la detención inmediata para priorizar la obtención de información.
+> presion
+> Nax ha aceptado el trato tácito por necesidad, pero su paciencia es un hilo delgado. Cualquier vacilación o intento de nueva mentira romperá el equilibrio y terminará en el calabozo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1445 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'npc', 'entity_id': 'Nax', 'field': 'estado', 'value': 'Intrigado pero cauteloso; ha pasado de la indignación a la curiosidad pragmática.'}
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 7 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 245 — 222/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 7 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4176 ms
+
+> "No los he escondido en la ciudad. Están en un lugar donde solo alguien con la llave adecuada podría entrar sin levantar sospechas."
+> Mantengo el contacto visual, sin parpadear, mientras dejo que el silencio juegue a mi favor.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (41930 ms): «La llave adecuada. ¿Qué llave? ¿De quién es esa llave? ¿Quién te la dio?»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5956 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13509 ms
+
+> narrativa
+> El despacho permanece sumido en esa penumbra asfixiante, donde el único sonido es el zumbido eléctrico de la lámpara y la respiración pesada de Nax. El espacio entre ambos parece encogerse aún más mientras el guardia procesa la afirmación, dejando que el silencio se vuelva denso y opresivo.
+> Bercelio Nax entorna los ojos y se acerca un paso más, invadiendo el espacio personal en un gesto intimidatorio. Sus preguntas surgen como una ráfaga seca, disparadas sin dejar espacio para respirar: "La llave adecuada. ¿Qué llave? ¿De quién es esa llave? ¿Quién te la dio?".
+> mecanica
+> Engaño: Éxito (13 vs CD 10). Nax ha mordido el anzuelo; la mención de la llave ha desviado su atención de la búsqueda de los registros hacia el origen del acceso.
+> presion
+> Nax está ahora obsesionado con la procedencia de esa llave. Si no proporcionas una respuesta convincente o una pista tangible, interpretará la ambigüedad como una nueva manipulación y recuperará su agresividad inicial.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4880 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Bercelio Nax · npc.knowledge = Los registros no están en la ciudad, sino en un lugar que requiere una llave adecuada
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5581: Bercelio Nax.knowledge = Los registros no están en la ciudad, sino en un lugar qu…
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 8 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 246 — 223/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 8 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  17332 ms
+
+> "No es cuestión de quién me la dio, sino de quién la ha perdido."
+> Mantengo la mirada fría, sin retroceder ante su cercanía, y juego con la idea de que la llave es un secreto que él debería conocer.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (19043 ms): «¿Quién la ha perdido? ¿Me estás diciendo que alguien la perdió? ¿Quién, exactame»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  8032 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14332 ms
+
+> narrativa
+> El despacho se siente ahora como una jaula de madera y cuero; la luz cenital de la lámpara recorta las sombras de Nax, proyectando una silueta deforme y amenazante sobre los papeles desordenados del escritorio. El aire se vuelve viciado, cargado de una tensión que se puede palpar, mientras el guardia detecta el hueco en el relato, la fragilidad de una respuesta que no responde a nada.
+> Bercelio Nax no retrocede ni un milímetro. Frunce el ceño, estrechando la mirada mientras procesa la pifia, y su voz se convierte en un látigo, seca y repetitiva: "¿Quién la ha perdido? ¿Me estás diciendo que alguien la perdió? ¿Quién, exactamente, la ha perdido?".
+> mecanica
+> Engaño: Fallo (5 vs CD 10).
+> presion
+> La mentira se ha desmoronado. Nax ya no busca una respuesta, busca el nombre del cómplice o la admisión de la culpa; cualquier vacilación ahora será interpretada como una confesión de engaño.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3428 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) delta rechazado por la base (npc.estado): field npc.estado is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 8 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 247 — 224/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 8 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3780 ms
+
+> "No recuerdo el nombre, solo que ya no estaba donde debía." 
+> Mantengo la mirada fija en Nax, sin pestañear, intentando que mi voz suene plana y desprovista de nerviosismo. 
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 4+4=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 8)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (20557 ms): «No recuerdo. No recuerdo. No recuerdo. Repítelo una vez más, pero esta vez dime »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6705 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13066 ms
+
+> narrativa
+> El despacho se cierra sobre el grupo y el silencio que sigue a la respuesta se vuelve asfixiante, roto únicamente por el tictac rítmico de un reloj de pared que ahora suena como una cuenta atrás. La tentativa de mantener la compostura no es suficiente; la respuesta es hueca, un muro de niebla que no convence al guardia.
+> Bercelio Nax se inclina hacia delante, invadiendo el espacio personal con un movimiento brusco, y apoya las palmas del escritorio con fuerza. Sus ojos no se apartan, escudriñando cada milímetro del rostro ajeno en busca del tic, la gota de sudor o el parpadeo que confirme la mentira. "No recuerdo. No recuerdo. No recuerdo", repite con un tono gélido, casi mecánico. "Repítelo una vez más, pero esta vez dime el nombre de la persona que te lo dijo, o el de quien la tenía antes que tú. ¿Quién te dio esa información?".
+> mecanica
+> Engaño: Fallo (8 vs CD 10).
+> presion
+> Nax ha detectado el patrón de evasión. Cada "no recuerdo" es ahora una grieta más en la credibilidad del jugador; si no entrega un nombre o una verdad tangible, el guardia dejará de hacer preguntas para pasar a las medidas de detención.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2394 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 8 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 248 — 225/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 8 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3789 ms
+
+> "No busques en mi memoria lo que no existe, Nax. Pero si quieres un nombre, busca el de quien redactó el informe de guardia de anoche."
+> Sostengo la mirada con frialdad, sin retroceder ante su cercanía.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 20+4=24  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 24)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (11541 ms): «El informe de anoche... El informe de anoche. ¿Quién lo redactó? ¿Quién firmó la»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1604 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15355 ms
+
+> narrativa
+> El aire en el despacho parece congelarse mientras la respuesta cae como un mazo sobre la mesa. Nax se queda inmóvil, con las palmas aún presionando la madera, pero la superioridad gélida de hace un instante se quiebra. El silencio se prolonga, denso, mientras el guardia procesa la implicación de que la falla no está en la memoria del interlocutor, sino en el papel oficial de su propia institución.
+> Bercelio Nax no retrocede ni un centímetro. Entorna los ojos, procesando la información mientras su mente ya está saltando a su lista de sospechosos, buscando dónde encaja esa pieza. De repente, su expresión se endurece y el interrogatorio muta en una demanda frenética, transformando la duda en una nueva ofensiva para no perder el control de la situación. "El informe de anoche... El informe de anoche. ¿Quién lo redactó? ¿Quién firmó la hoja de guardia? Dame un nombre, ahora".
+> mecanica
+> Engaño: Éxito (24 vs CD 10).
+> presion
+> Nax ha desviado su atención hacia la burocracia de la guardia, pero su agresividad ha aumentado. Si el jugador no es capaz de proporcionar un nombre convincente o una pista tangible sobre el informe, Nax interpretará la maniobra como una distracción desesperada y procederá al arresto.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  11768 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = La falla de la memoria de Tarq podría estar reflejada en el informe de guardia de anoche
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 8 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 249 — 226/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 8 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3466 ms
+
+> "Un tal sargento Vane. Fue él quien selló el acta antes de que yo pudiera revisar los detalles."
+> Sostengo la mirada de Nax sin pestañear, manteniendo un tono neutro y seguro.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 17+4=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Bercelio Nax'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 21)
+
+### [6] ACTOR(ES)
+
+  Bercelio Nax (5335 ms): «¿Vane? ¿El sargento Vane firmó el sello? Repítelo. ¿Quién selló el acta exactame»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  11784 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11320 ms
+
+> narrativa
+> El despacho es una caja de madera oscura y cuero gastado, saturada por el olor a tinta vieja y tabaco frío. La luz de una sola lámpara de escritorio proyecta sombras alargadas que hacen que el espacio se sienta más estrecho y asfixiante mientras Nax se inclina sobre la mesa, acortando la distancia hasta que su respiración es audible.
+> Bercelio Nax no aparta la mirada, pero sus dedos tamborilean violentamente sobre la madera, un ritmo errático que delata la tormenta mental que se desata tras sus ojos. Su voz emerge como un látigo, seca y rápida: "¿Vane? ¿El sargento Vane firmó el sello? Repítelo. ¿Quién selló el acta exactamente? ¿Vane?".
+> mecanica
+> Engaño: Éxito (21 vs CD 10).
+> presion
+> Nax ha aceptado el nombre, pero ahora su obsesión se ha desplazado hacia el sargento Vane. Si el jugador no puede sostener la mentira con detalles coherentes sobre la jerarquía o la ubicación de Vane, el guardia detectará la inconsistencia y el interrogatorio se volverá violento.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5224 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta bercelio_nax · npc.knowledge = El sargento Vane selló el acta
+  ✓ creación npc: Sargento Vane
+  ⚠ nombres no reconocidos: Engaño, Vane, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: npc Sargento Vane
+  ✗ entidad inexistente: bercelio_nax
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 8 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 250 — 227/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 8 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2449 ms
+
+> "Así es. El sargento Vane puso el sello personalmente antes de marchar."
+> Mantengo la mirada fija en Nax, sin pestañear, mientras apoyo una mano con calma sobre la mesa.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 8+4=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 12)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (5209 ms): «¿Quién soy yo para contradecir un acta sellada? Pero me pregunto... ¿exactamente»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4937 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14351 ms
+
+> narrativa
+> El silencio que sigue a la afirmación se vuelve denso, casi sólido, mientras la luz de la lámpara recorta las arrugas y la severidad del rostro de Nax. Justo cuando la tensión parece insoportable, la puerta se abre sin previo aviso. El sargento Vane entra en el espacio, manteniendo una expresión imperturbable; no hay rastro de ira ni de sumisión, simplemente observa con una curiosidad gélida, apoyando el peso de su cuerpo en una pierna mientras analiza la escena.
+> Vane desplaza la mirada del acta a los presentes y su voz corta el aire con una precisión quirúrgica: "¿Quién soy yo para contradecir un acta sellada? Pero me pregunto... ¿exactamente en qué momento del turno dice que puse el sello?".
+> mecanica
+> Engaño: Fallo (12 vs CD 15).
+> presion
+> Vane ha detectado la inconsistencia en el relato. Si no se ofrece una explicación inmediata y convincente sobre el horario o el lugar del sellado, el sargento expondrá la falsedad del documento frente a Nax, transformando el interrogatorio en un arresto inmediato por fraude.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3742 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Sargento Vane · npc.location_id = El Consultorio de Sonia
+  ⚠ nombres no reconocidos: Engaño, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5614: Sargento Vane.location_id = El Consultorio de Sonia
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 8 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 251 — 228/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 8 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3210 ms
+
+> "Un error de transcripción, sargento. El cansancio del escribano es un mal conocido en estas oficinas."
+> Miro fijamente a Vane, manteniendo la voz gélida y sin pestañear, intentando que mi seguridad opaque la duda.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 14+4=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (4479 ms): «Un error, dice. Curioso que el cansancio del escribano coincida exactamente con »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  827 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11397 ms
+
+> narrativa
+> El sargento Vane no aparta la vista, pero la rigidez de su postura cede un ápice, permitiendo que el argumento del error administrativo gane terreno en el aire viciado de la oficina. La seguridad de la respuesta parece haber frenado el impulso de Vane de denunciar la falsedad en el acto, aunque la sospecha sigue vibrando entre ambos como una cuerda tensa.
+> Vane mantiene la postura relajada, pero entorna los ojos ligeramente, sosteniendo la mirada sin retroceder ni un milímetro. "Un error, dice. Curioso que el cansancio del escribano coincida exactamente con el vacío de mi firma en esa hora", sentencia con una voz que no oculta la ironía, dejando que el silencio regrese para evaluar cuánto más se puede sostener esa mentira.
+> mecanica
+> Persuasión: Éxito (18 vs CD 15).
+> presion
+> Aunque Vane ha aceptado la explicación superficialmente para evitar un conflicto inmediato, no ha dejado de sospechar. Cualquier inconsistencia adicional en los próximos minutos hará que el sargento deje de jugar al observador y proceda a invalidar el acta formalmente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2680 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Sargento Vane · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5616: Sargento Vane affinity 47.0 → 49.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 47.0 (loyal), 8 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 252 — 229/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 49.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3562 ms
+
+> "El cansancio es el peor enemigo de la burocracia, sargento. Agradezco que sea usted lo suficientemente atento para notarlo."
+> Sostengo la mirada con calma, intentando leer sus intenciones mientras busco cualquier señal de que esté dispuesto a cerrar el asunto rápidamente.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 13+1=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (6193 ms): «No confunda mi atención con benevolencia. Me gusta que las cosas cuadren, simple»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  11123 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15404 ms
+
+> narrativa
+> La oficina se siente más pequeña que hace un momento, un espacio asfixiante donde el olor agrio de la tinta vieja y el tabaco frío parece espesar el aire. La luz, filtrada por una ventana alta y mugrienta, dibuja senderos de polvo que flotan en el vacío entre los dos, mientras el sargento Vane procesa la adulación con una rigidez imperturbable.
+> Vane suelta un bufido corto y seco, desviando la mirada hacia el documento. Lo desliza lentamente sobre la mesa, pero mantiene el dedo presionando el papel, anclándolo al tablero como quien retiene una prueba. "No confunda mi atención con benevolencia. Me gusta que las cosas cuadren, simplemente", sentencia con una frialdad que no deja espacio a la confianza, manteniendo la ambigüedad de su juicio mientras observa la reacción del interlocutor.
+> mecanica
+> Perspicacia: Éxito (14 vs CD 10).
+> presion
+> El sargento ha aceptado el argumento, pero el documento sigue bajo su control. Cualquier gesto de impaciencia o intento apresurado de retirarse podría ser interpretado como una señal de nerviosismo, devolviendo la atención de Vane hacia las costuras de la mentira.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4659 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Sargento Vane · public_status_given
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5620: Sargento Vane affinity 49.0 → 55.0  (any)
+     Le dieron en público el trato que cree merecer. Explota el defecto
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 55.0 (loyal), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 253 — 230/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 55.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3347 ms
+
+> "Entiendo perfectamente, sargento. La precisión es la única base sólida sobre la que construir."
+> Mantengo la mirada fija en él, sin moverme hacia el documento, y espero a que sea él quien lo suelte.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 5+1=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (3013 ms): «Palabras correctas. Veremos si el resto del informe es tan sólido como su retóri»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1262 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10601 ms
+
+> narrativa
+> La tensión en el aire no cede, y el silencio se prolonga lo suficiente como para que el peso de la mentira se vuelva tangible. Vane no muerde el anzuelo de la deferencia; al contrario, su mirada se vuelve más inquisitiva, diseccionando cada músculo del rostro del interlocutor en busca de una grieta, de un temblor que traicione la compostura.
+> El sargento suelta el documento de golpe, dejándolo deslizar hacia el jugador, y se reclina en la silla con un crujido del cuero, observándolo con los ojos entrecerrados. "Palabras correctas. Veremos si el resto del informe es tan sólido como su retórica", sentencia con una voz que destila una sospecha gélida, dejando claro que la adulación ha sido anotada, pero no aceptada.
+> mecanica
+> Perspicacia: Fallo (6 vs CD 10).
+> presion
+> La máscara de Vane es impenetrable. El sargento ha dejado el documento, pero su escepticismo ha crecido; ahora buscará cualquier inconsistencia mínima en el relato para convertir la duda en una acusación formal.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1282 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 55.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 254 — 231/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 55.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2640 ms
+
+> "No busco adulación, sargento, sino eficiencia. El informe habla por sí mismo."
+> Recojo el documento con calma y lo deslizo de vuelta hacia él, manteniendo el contacto visual.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (7216 ms): «La eficiencia suele ser el refugio de quienes no tienen tiempo para la verdad. D»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3942 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  18538 ms
+
+> narrativa
+> La luz cenicienta de la tarde se filtra en franjas a través de las persianas metálicas, recortando la silueta del sargento en una oficina que huele a tabaco viejo y tinta seca. Vane no retira la mano del documento inmediatamente; deja que sus dedos presionen el papel contra la madera, anclándolo, mientras mantiene la mirada fija y sin parpadear, evaluando la calma del otro con una frialdad quirúrgica.
+> El sargento no cede ni un milímetro. Con un tono que gotea desdén, sentencia: "La eficiencia suele ser el refugio de quienes no tienen tiempo para la verdad. Déjelo ahí. Yo mismo buscaré los huecos que ha dejado su 'eficiencia'".
+> mecanica
+> Persuasión: Fallo (9 vs CD 10).
+> presion
+> Vane ha decidido que la seguridad del informe es sospechosa. Ahora analizará cada línea buscando la mínima contradicción; cualquier error factual será el detonante para iniciar un interrogatorio formal y agresivo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1843 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 55.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 255 — 232/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 55.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3411 ms
+
+> "Busque lo que quiera, sargento. La verdad no se esconde en los huecos, sino en lo que se ha decidido omitir."
+> Me quedo inmóvil, observando sus gestos mientras revisa el papel para detectar cualquier rastro de duda o nerviosismo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (3772 ms): «Entonces me ha ahorrado el trabajo de buscar. Me está confesando que ha omitido »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3532 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10670 ms
+
+> narrativa
+> El zumbido eléctrico de la lámpara fluorescente llena el silencio de la oficina, parpadeando rítmicamente sobre los archivadores metálicos oxidados que estrechan el espacio. La luz intermitente recorta la figura del sargento, cuya mirada permanece anclada al papel, ignorando la provocación mientras procesa la admisión.
+> Vane no levanta la vista del documento, pero sus dedos se cierran ligeramente sobre el borde del papel, apretándolo con una tensión contenida. Su voz emerge plana, desprovista de cualquier emoción, casi mecánica: "Entonces me ha ahorrado el trabajo de buscar. Me está confesando que ha omitido información".
+> mecanica
+> Perspicacia: Éxito (10 vs CD 10).
+> presion
+> La confesión ha validado las sospechas de Vane. Ahora no busca errores, sino motivos; la omisión deliberada es una falta grave que justifica el traslado del encuentro a una sala de interrogatorios si no se ofrece una justificación convincente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3022 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Sargento Vane · npc.knowledge = Tarq ha omitido información deliberadamente
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5636: Sargento Vane.knowledge = Tarq ha omitido información deliberadamente
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 55.0 (loyal), 1 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 256 — 233/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 55.0 (loyal), 1 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3116 ms
+
+> "No he omitido nada que sea relevante para su comprensión actual. Solo priorizo la información."
+> Me reclino en la silla con calma, observando la tensión en sus dedos.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (4822 ms): «La relevancia la determino yo, no usted. Priorizar es una palabra muy elegante p»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3676 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11552 ms
+
+> narrativa
+> El aire en la oficina es denso, saturado de tabaco viejo y el olor metálico del ozono que emana de la lámpara fluorescente. El espacio es tan claustrofóbico que el escritorio se siente como la única frontera física que impide que la frialdad del sargento lo alcance. El argumento de la prioridad es recibido con un silencio absoluto que prolonga la tensión en la estancia.
+> Vane suelta el papel lentamente, dejando que caiga sobre la mesa con un roce seco. Finalmente levanta la mirada, clavando los ojos en el jugador con una expresión neutral pero gélida. "La relevancia la determino yo, no usted. Priorizar es una palabra muy elegante para decir que ha decidido qué parte de la verdad me conviene conocer", sentencia con una calma que resulta más amenazante que cualquier grito.
+> mecanica
+> Persuasión: Éxito (13 vs CD 10).
+> presion
+> Vane ha aceptado el juego de palabras, pero su paciencia se ha agotado. Si la siguiente respuesta no aporta un dato concreto y valioso, el sargento dejará de lado la cortesía de la oficina para trasladar la conversación a una sala de interrogatorios.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1154 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 55.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 257 — 234/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 55.0 (loyal), 1 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2677 ms
+
+> "Tiene razón, sargento. No me interesa el lenguaje elegante, sino los hechos."
+> Saco el documento más relevante de mi equipo y lo deslizo sobre el escritorio hacia él.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 6+4=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (4827 ms): «Menos retórica y más tinta. Veamos si esto compensa el tiempo que he perdido esc»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3759 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  25404 ms
+
+> narrativa
+> El documento se desliza sobre la superficie del escritorio, marcando la única frontera libre en aquella oficina asfixiante. El silencio se vuelve denso, cargado de una electricidad estática que parece emanar de las paredes descascaradas, mientras el papel descansa entre ambos como una ofrenda en un terreno hostil.
+> El Sargento Vane no aparta la mirada, manteniendo una fijeza gélida mientras extiende la mano para recoger el documento con una eficiencia mecánica y fría. "Menos retórica y más tinta. Veamos si esto compensa el tiempo que he perdido escuchando sus justificaciones", sentencia, sin que un solo músculo de su rostro traicione que el gesto ha sido aceptado.
+> mecanica
+> Persuasión: Éxito (10 vs CD 10).
+> presion
+> Vane ha tomado la prueba, pero su mirada sigue buscando una grieta en la historia. Si el documento no contiene una revelación lo suficientemente contundente, interpretará el gesto como un intento de distracción y endurecerá los términos del encuentro.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3794 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Sargento Vane · npc.knowledge = Tarq ha entregado un documento como prueba
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5648: Sargento Vane.knowledge = Tarq ha entregado un documento como prueba
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 55.0 (loyal), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 258 — 235/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 55.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3720 ms
+
+> "Lea con atención, Sargento. Ahí encontrará la verdad que busca, no mis palabras."
+> Me quedo inmóvil, observando sus ojos mientras revisa el papel para detectar cualquier duda en su expresión.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 12+1=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (7941 ms): «La verdad no suele venir en hojas sueltas, sino en los espacios que la gente olv»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  9678 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  67824 ms
+
+> narrativa
+> La luz del fluorescente parpadea con un zumbido eléctrico, proyectando sombras erráticas sobre el escritorio de metal rayado y las paredes color crema, ya amarillentas por el tiempo y el olor a tabaco rancio. El Sargento Vane recorre el documento con la mirada, sin prisa, manteniendo el papel tenso entre los dedos mientras el silencio se prolonga deliberadamente.
+> Sin levantar la vista, Vane deja que la tensión se asiente en el aire viciado del cubículo antes de romper el silencio con una voz seca. "La verdad no suele venir en hojas sueltas, sino en los espacios que la gente olvida llenar", sentencia, manteniendo el documento fuera de alcance y la expresión gélida, sin conceder una sola señal de que la prueba haya sido suficiente.
+> mecanica
+> Perspicacia: Éxito (13 vs CD 10).
+> presion
+> Vane ha procesado la información, pero su negativa a validar el documento mantiene la situación en un equilibrio precario; cualquier movimiento en falso ahora será interpretado como una admisión de culpa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  61583 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Sargento Vane · npc.knowledge = El contenido del sobre lacrado entregado por Tarq
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5667: Sargento Vane.knowledge = El contenido del sobre lacrado entregado por Tarq
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 55.0 (loyal), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 259 — 236/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 55.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  5282 ms
+
+> "El silencio es un espacio muy cómodo para quien no tiene nada que decir, Sargento."
+> Me inclino ligeramente hacia delante, manteniendo la mirada fija en él mientras intento leer sus intenciones.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Sargento Vane no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3877 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9675 ms
+
+> narrativa
+> El cubículo se siente más estrecho que hace un momento, una caja de metal y papel donde el aire pesa y huele a polvo antiguo. La luz cenital vibra con un zumbido eléctrico constante, proyectando sombras nerviosas sobre los archivadores que flanquean la escena como centinelas de hierro. 
+> El Sargento Vane no responde a la provocación. Se mantiene inmóvil, pero el ligero cambio en la tensión de sus hombros y la fijeza de su mirada revelan que la respuesta ha calado. Sus intenciones se vuelven legibles tras la máscara de frialdad: ya no busca solo desestabilizar, sino que ha aceptado la validez de la postura adoptada, aunque su rostro permanezca como una piedra tallada en la penumbra.
+> mecanica
+> Perspicacia: Éxito (10 vs CD 10).
+> presion
+> Vane ha dejado de cuestionar la veracidad del documento, pero su silencio ahora es una invitación al error; cualquier vacilación en el tono o un gesto de impaciencia romperá la tregua psicológica que acaba de establecerse.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3866 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Sargento Vane · competence_shown
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5671: Sargento Vane affinity 55.0 → 57.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 57.0 (loyal), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 260 — 237/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 57.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3010 ms
+
+> "Me alegra que hayamos superado los malentendidos básicos, Sargento. Ahora, hablemos de lo que realmente importa."
+> Mantengo el contacto visual sin pestañear, sosteniendo el silencio para obligarle a él a romperlo.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (8239 ms): «Tú decides qué es lo que 'realmente importa'. Yo solo me encargo de que los hech»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  14263 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  7489 ms
+
+> narrativa
+> El silencio se prolonga, espesando el aire viciado del cubículo, pero la tensión no se quiebra a favor de quien la sostiene. El Sargento Vane no cede ni un milímetro; su mirada permanece anclada, imperturbable, como si el intento de tomar las riendas de la conversación fuera un ruido insignificante que no logra alterar su ritmo.
+> Vane rompe el silencio sin apartar la vista, con una voz plana y desprovista de emoción, mientras deja el documento sobre la mesa con un golpe seco pero controlado: "Tú decides qué es lo que 'realmente importa'. Yo solo me encargo de que los hechos encajen".
+> mecanica
+> Persuasión: Fallo (9 vs CD 10).
+> presion
+> Vane ha recuperado la iniciativa psicológica; cualquier intento posterior de manipular la charla sin una prueba tangible será interpretado como una debilidad, otorgándole la autoridad para dictar los términos del interrogatorio.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1754 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 57.0 (loyal), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 261 — 238/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 57.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3617 ms
+
+> "Tienes razón. Los hechos son lo único que no miente."
+> Me reclino en la silla, relajando la postura y dejando que el silencio vuelva a llenar el espacio. Observo el documento sobre la mesa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 11+1=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 12)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (6892 ms): «Entonces deja de intentar adornar la verdad y empieza por decirme qué fue exacta»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  8512 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8519 ms
+
+> narrativa
+> La luz blanca y fría del cubículo rebota en las paredes de hormigón desnudo, creando una atmósfera aséptica que parece querer borrar cualquier rastro de humanidad. El documento oficial descansa sobre la mesa de metal anclada al suelo, convirtiéndose en el centro de gravedad de la estancia, el único objeto con peso real entre los dos hombres.
+> El Sargento Vane mantiene la espalda recta, negándose a dejarse contagiar por la postura relajada del otro. Sus ojos, gélidos y analíticos, no se desvían del rostro de Tarq, diseccionando cada microgesto en busca de una grieta. Con un tono cortante, sentencia: "Entonces deja de intentar adornar la verdad y empieza por decirme qué fue exactamente lo que omitiste antes de que yo tuviera que leerlo en este papel".
+> mecanica
+> Perspicacia: Éxito (12 vs CD 10).
+> presion
+> Vane ha dejado claro que el tiempo de las sutilezas ha terminado; cualquier respuesta evasiva ahora será tomada como una confesión de culpabilidad, acelerando la transición del interrogatorio a una detención formal.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2366 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 57.0 (loyal), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 262 — 239/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 57.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3459 ms
+
+> "Tengo la costumbre de dar la información en dosis que el interlocutor pueda procesar. No es una omisión, es cortesía."
+> Sostengo la mirada del sargento sin inmutarme, manteniendo una expresión neutra.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Engaño: 13+4=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 17)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (6126 ms): «Llama a eso cortesía si te ayuda a dormir, pero en mi libro, dosificar la verdad»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7980 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  7686 ms
+
+> narrativa
+> La luz cenital blanca y fría no deja lugar a las sombras, exponiendo cada poro de la piel sobre el hormigón gris del cubículo. El silencio se prolonga, denso y aséptico, mientras la respuesta flota en el aire frío de la sala. Vane no parpadea; mantiene una distancia física prudencial, pero su presencia se expande, cerrando el espacio psicológico hasta que el aire parece agotarse.
+> Con una voz plana, despojada de cualquier rastro de irritación y cargada de una peligrosidad gélida, el sargento sentencia: "Llama a eso cortesía si te ayuda a dormir, pero en mi libro, dosificar la verdad se llama manipular el resultado. No soy tu paciente, Tarq, soy el hombre que decide si sales de aquí caminando".
+> mecanica
+> Engaño: Éxito (17 vs CD 10).
+> presion
+> Vane ha aceptado la respuesta sin romper el interrogatorio, pero su paciencia se ha vuelto un hilo delgado; cualquier intento posterior de manipular la información será interpretado como una obstrucción directa a la justicia militar.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1471 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Engaño, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 57.0 (loyal), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 263 — 240/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 57.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3083 ms
+
+> "No busco manipular nada, sargento. Solo busco que entendamos lo mismo para que podamos terminar con esto lo antes posible."
+> Mantengo el contacto visual, sin retroceder ni un centímetro, mientras intento leer su lenguaje corporal.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 6+1=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (5191 ms): «Entonces hablemos el mismo idioma: el de los hechos. El documento que me has dad»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2821 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11874 ms
+
+> narrativa
+> La luz cenital blanca aplasta cualquier relieve sobre las paredes de hormigón desnudo, dejando el cubículo sumido en una esterilidad opresiva donde no hay dónde esconder la mirada. El intento de descifrar los gestos del sargento fracasa; Vane es una superficie lisa, un muro de disciplina militar que no concede ninguna grieta ni señal que permita leer sus intenciones.
+> Sin romper el contacto visual, Vane da un paso lento hacia adelante, invadiendo el espacio personal de Tarq con una calma depredadora. Su voz desciende a un volumen bajo, casi un susurro quirúrgico que vibra en el aire frío: "Entonces hablemos el mismo idioma: el de los hechos. El documento que me has dado es real, pero el silencio sobre el resto no lo es. Si quieres terminar con esto, deja de intentar gestionar mi percepción y empieza a llenar los huecos".
+> mecanica
+> Perspicacia: Fallo (7 vs CD 10).
+> presion
+> Vane ha dejado de escuchar las justificaciones. Si la siguiente respuesta no contiene información concreta y veraz, el sargento pasará de la presión psicológica a medidas coercitivas para "llenar los huecos".
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1343 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 57.0 (loyal), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 264 — 241/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 57.0 (loyal), 3 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3475 ms
+
+> "No busco gestionar nada, sargento. Solo busco que entendamos que hay piezas que ni yo mismo poseo todavía."
+> Doy un paso atrás para recuperar mi espacio y lo miro fijamente, manteniendo la calma.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 16)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (5321 ms): «Que no las poseas es un hecho; que no me lo hayas dicho desde el primer segundo »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7767 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12240 ms
+
+> narrativa
+> El espacio recuperado no suaviza la tensión; el aire en el cubículo sigue siendo denso, cargado con el olor a cemento húmedo y el zumbido eléctrico de la luz cenital que anula cualquier refugio visual. Vane no retrocede ni un centímetro cuando Tarq marca su distancia, manteniendo una postura rígida, con los brazos cruzados sobre el pecho y una mirada gélida que se clava en el interlocutor sin parpadear.
+> Su respuesta llega seca, despojada de cualquier rastro de empatía o duda. "Que no las poseas es un hecho; que no me lo hayas dicho desde el primer segundo es una decisión. No me interesa tu proceso de aprendizaje, Tarq, me interesan los resultados", sentencia con una voz que corta el silencio del hormigón como una cuchilla.
+> mecanica
+> Persuasión: Éxito (16 vs CD 10). El sargento acepta la premisa de que no posees la información, aunque no ha olvidado la omisión inicial.
+> presion
+> Vane ha aceptado el hecho, pero su paciencia es un recurso finito. Si Tarq no ofrece una vía concreta para obtener esas "piezas faltantes", el sargento considerará que la falta de posesión es una excusa para encubrir una negligencia o una traición.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3020 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Sargento Vane · npc.knowledge = Tarq no posee todavía todas las piezas de información
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5693: Sargento Vane.knowledge = Tarq no posee todavía todas las piezas de información
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 57.0 (loyal), 4 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 265 — 242/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 57.0 (loyal), 4 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  4581 ms
+
+> "Tengo la capacidad de encontrarlas, sargento. Solo necesito que me indique dónde empieza el rastro."
+> Mantengo la mirada, sin dejar que su frialdad me intimide.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 23)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Sargento Vane no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4881 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8943 ms
+
+> narrativa
+> La luz cenital parpadea con un zumbido eléctrico, proyectando sombras erráticas sobre las paredes de hormigón desnudo y el suelo húmedo del cubículo. El sargento Vane sostiene la mirada, procesando la seguridad de la propuesta mientras el silencio se vuelve pesado, casi tangible, entre los dos.
+> Lentamente, Vane descruza los brazos y asiente una sola vez, un gesto breve y mecánico que marca la aceptación. No hay calidez en su concesión, solo el reconocimiento pragmático de una utilidad recuperada.
+> mecanica
+> Persuasión: Éxito (23 vs CD 10). Vane acepta tu capacidad y accede a proporcionarte la dirección del rastro.
+> presion
+> El sargento ha cedido, pero ahora el reloj corre en tu contra: cualquier error en la búsqueda del rastro será interpretado como una incompetencia deliberada, y la Guardia de Umbral Hondo no suele dar segundas oportunidades a quienes fallan tras una promesa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4561 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Sargento Vane · competence_shown
+  ✓ delta Sargento Vane · npc.knowledge = Tarq es capaz de encontrar el rastro
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5694: Sargento Vane affinity 57.0 → 59.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+  → delta 5695: Sargento Vane.knowledge = Tarq es capaz de encontrar el rastro
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 266 — 243/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3295 ms
+
+> "No me gustan las esperas, sargento. Dame la dirección y me pongo en marcha."
+> Me acerco a él para que me entregue la información, manteniendo la mirada fija.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 1+1=2  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 2)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (5139 ms): «No te adelantes. La dirección es el Sector 4, Coordinate 12-B, en los niveles in»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3220 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8077 ms
+
+> narrativa
+> El intento de intimidación o presión física cae en el vacío; el sargento ni siquiera parpadea ante la cercanía, manteniendo una distancia gélida que hace que el gesto resulte torpe y fuera de lugar. El pasillo de hormigón gris parece cerrarse sobre la escena, mientras los fluorescentes zumban con una frecuencia irritante y el aire, saturado de ozono y humedad estancada, se vuelve pesado en los pulmones.
+> Vane no cede ni un milímetro, entregando la información con una voz plana, carente de cualquier emoción y estrictamente profesional: "No te adelantes. La dirección es el Sector 4, Coordinate 12-B, en los niveles inferiores del sumidero. Si te pierdes o regresas con las manos vacías, no te molestes en volver a este cubículo".
+> mecanica
+> Perspicacia: Fallo (2 vs CD 10). No logras leer ninguna debilidad o duda en Vane; su máscara profesional es impenetrable.
+> presion
+> La paciencia de Vane se ha agotado. Cualquier demora adicional o intento de desafío en este pasillo será visto como insubordinación, lo que podría cerrar el acceso a la información del Sector 4 definitivamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ pifia en Perspicacia pero narra éxito
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4713 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Tarq · npc.knowledge = La dirección es el Sector 4, Coordinate 12-B, en los niveles inferiores del sumidero
+  ⚠ nombres no reconocidos: Coordinate, Fallo, Perspicacia, Sector
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  ✗ entidad inexistente: Tarq
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 267 — 244/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2809 ms
+
+> "Entendido. No perderé el tiempo."
+> Doy un paso atrás para darle espacio y me doy la vuelta para marcharme hacia el Sector 4.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 6+1=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (4042 ms): «Muévete, entonces.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7908 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11151 ms
+
+> narrativa
+> El intento de percibir algún detalle oculto o rastro de duda en el sargento fracasa; Vane permanece como una estatua de granito, imperturbable y gélido, mientras el pasillo industrial de hormigón bruto se extiende hacia una oscuridad hambrienta. El zumbido eléctrico de los fluorescentes llena el silencio, subrayando la soledad del camino, donde el suelo se pierde en vetas de óxido y manchas de humedad que parecen sangrar desde las paredes.
+> Vane mantiene la mirada fija, sin relajarse ni un ápice, vigilando cada movimiento hasta que la distancia comienza a crecer. Con un tono seco que corta el aire saturado de ozono, sentencia: "Muévete, entonces."
+> mecanica
+> Percepción: Fallo (7 vs CD 10). No detectas nada inusual en el entorno ni en el comportamiento del sargento.
+> presion
+> El silencio del pasillo es engañoso. Mientras te alejas, la sensación de ser observado persiste, y cualquier desviación del camino hacia el Sector 4 podría atraer la atención de patrullas de la Guardia que no comparten la tolerancia del sargento.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1032 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción, Sector
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 268 — 245/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3605 ms
+
+> "Como digas"
+> Empiezo a caminar hacia el Sector 4, manteniendo el paso pero atento a cualquier ruido que rompa el zumbido de las luces.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 4+1=5
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (4238 ms): «No te distraigas. El Sector 4 no perdona los pasos vacilantes.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  10869 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  33283 ms
+
+> narrativa
+> El pasillo comienza a estrecharse, asfixiando el espacio entre paredes donde tuberías oxidadas gotean un líquido viscoso y negro que mancha el suelo. Al fondo, la entrada al Sector 4 se recorta tras una pesada puerta de acero reforzado, bañada por una luz roja intermitente que tiñe el hormigón de un carmesí visceral y rítmico.
+> A pesar de la atención puesta en el entorno, el zumbido eléctrico sigue siendo el único sonido dominante, camuflando cualquier rastro de peligro o movimiento oculto. El Sargento Vane, sin girar la cabeza y manteniendo el ritmo de marcha constante, deja que el eco de sus botas resuene con precisión militar sobre el hormigón mientras sentencia: "No te distraigas. El Sector 4 no perdona los pasos vacilantes."
+> mecanica
+> Percepción: Fallo (5 vs CD 10). No logras detectar ningún ruido ni anomalía en el entorno.
+> presion
+> La luz intermitente del Sector 4 oculta lo que aguarda tras la puerta; cada segundo de vacilación en el pasillo estrecho te deja expuesto y vulnerable ante cualquier amenaza que aproveche los puntos ciegos del rojo carmesí.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  24019 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción, Sector
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 269 — 246/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2325 ms
+
+> "Tus advertencias son notables, Sargento."
+> Acelero el paso para alcanzarlo y observo el líquido viscoso del suelo mientras avanzo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 16+2=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (3133 ms): «Menos cumplidos y más ojos en el camino, Tarq. Ese líquido no es aceite, y no qu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2201 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9951 ms
+
+> narrativa
+> El paso se acelera y la mirada se clava en el rastro oscuro que ensucia el hormigón. Al analizar la viscosidad y la forma en que el fluido se separa del metal oxidado, queda claro que no se trata de un derrame industrial; la sustancia tiene una densidad orgánica, una cualidad aceitosa y repugnante que sugiere una filtración biológica proveniente de las entrañas del edificio.
+> Vane no detiene su marcha ni suaviza la postura. Lanza una mirada gélida y rápida hacia el suelo mientras mantiene el arma en guardia, y su voz suena seca, desprovista de cualquier rastro de afecto: "Menos cumplidos y más ojos en el camino, Tarq. Ese líquido no es aceite, y no queremos saber qué lo está filtrando desde el otro lado."
+> mecanica
+> Investigación: Éxito (18 vs CD 10). Identificas que la sustancia no es lubricante ni combustible, sino de origen orgánico.
+> presion
+> La naturaleza biológica del fluido indica que algo vivo —o que alguna vez lo estuvo— se está descomponiendo o segregando justo detrás de las paredes del pasillo, acercándose al punto donde la puerta del Sector 4 aguarda.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1405 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Investigación, Sector, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 270 — 247/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1685 ms
+
+> "Entendido."
+> Me detengo un segundo para observar la textura del fluido antes de seguir avanzando, intentando deducir a qué criatura pertenece tal secreción.
+> {Naturaleza}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Naturaleza: 6+0=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Sargento Vane no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  9620 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8226 ms
+
+> narrativa
+> El intento de analizar la secreción termina en un callejón sin salida. Por más que se observe la textura viscosa y el brillo iridiscente del fluido, la sustancia es tan ajena a cualquier registro biológico conocido que no ofrece pistas, solo una sensación de náusea creciente. El rastro se vuelve un enigma mudo que se extiende hacia la oscuridad.
+> Vane se detiene en seco y gira la cabeza ligeramente, lanzando una mirada cargada de impaciencia. No dice nada, pero el gesto de apretar el agarre de su arma y la rigidez de sus hombros dejan claro que el tiempo de las curiosidades ha terminado.
+> mecanica
+> Naturaleza: Fallo (6 vs CD 10). No logras identificar la procedencia ni la naturaleza de la criatura.
+> presion
+> La pausa innecesaria ha dejado al grupo expuesto en el pasillo; el silencio del edificio se siente ahora más denso, como si algo hubiera notado la detención y estuviera empezando a coordinar su movimiento.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1439 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Naturaleza
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 271 — 248/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1559 ms
+
+> "Ya he visto suficiente. No es nada natural."
+> Me levanto rápidamente y sigo el camino hacia la oscuridad, manteniendo la guardia.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (3733 ms): «Menos conclusiones y más pasos. Muevan el culo, que el silencio de este sitio me»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4393 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10563 ms
+
+> narrativa
+> El rastro de fluido iridiscente desemboca en una intersección de pasillos donde las paredes de hormigón están cubiertas por una costra de moho negro que parece pulsar débilmente, como un corazón enfermo bajo la piedra. Al fondo, la oscuridad es absoluta, un vacío denso que absorbe la luz de las linternas sin devolver ni un solo reflejo.
+> El Sargento Vane no espera a que el grupo se organice; comienza a caminar inmediatamente detrás, con el arma en guardia y un paso marcial que marca el ritmo. "Menos conclusiones y más pasos. Muevan el culo, que el silencio de este sitio me está empezando a dar hambre", sentencia con un tono seco, sin detener su avance hacia el negro total.
+> mecanica
+> Percepción: Éxito (10 vs CD 10). Logras mantener la guardia y orientarte en la intersección sin alertar a nada.
+> presion
+> El moho negro pulsa con más intensidad a medida que avanzan; el entorno parece reaccionar a la intrusión y el silencio se vuelve expectante, como si el edificio estuviera conteniendo la respiración antes de un ataque.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1252 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 272 — 249/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2267 ms
+
+> "Hambre, dice... espero que no seas tú quien termine siendo el plato."
+> Sigo el paso del sargento, pero mantengo la mirada fija en el moho que pulsa en las paredes. Intento comprender la naturaleza de esa sustancia.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Arcanos: 2+2=4
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 4)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Sargento Vane no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3113 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10577 ms
+
+> narrativa
+> La intersección se abre hacia un corredor donde el moho negro ya no es una costra, sino que gotea desde el techo en filamentos viscosos. El aire se vuelve denso, con un olor a ozono y materia orgánica en descomposición que satura el ambiente, envolviendo los sentidos en una atmósfera espesa y rancia.
+> Al concentrarse en la sustancia, la mente no halla ninguna respuesta coherente. El patrón de pulsaciones y la naturaleza de esos hilos negros resultan totalmente ajenos, un enigma biológico o arcano que se resiste a cualquier análisis, dejando solo una sensación de vacío e ignorancia frente a la masa orgánica.
+> mecanica
+> Arcanos: Fallo (4 vs CD 10). No logras descifrar la naturaleza del moho.
+> presion
+> El goteo viscoso del techo comienza a acelerarse, cayendo rítmicamente sobre el suelo y las botas, mientras el hedor a descomposición se vuelve tan fuerte que empieza a provocar náuseas.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1032 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Arcanos, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 273 — 250/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  6727 ms
+
+> "Repugnante."
+> Me cubro la nariz y la boca con la mano, intentando ignorar el olor mientras avanzo con cautela, evitando que los filamentos me toquen.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 2+1=3
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 3)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (6292 ms): «No te distraigas con el hedor. Mantén los ojos abiertos y no toques nada de esa »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4334 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9440 ms
+
+> narrativa
+> El corredor se estrecha bruscamente, transformándose en un túnel donde las paredes exudan una humedad aceitosa. El moho negro ha crecido hasta formar cortinas espesas y viscosas que cuelgan del techo, obligando a avanzar en zig-zag para no quedar atrapado en sus pliegues. A pesar de la cautela, la mirada no logra detectar ninguna anomalía oculta entre las sombras; solo queda la sensación de ser observado por la propia estructura del lugar mientras, al fondo, una luz pálida y vacilante sugiere la existencia de una salida o una cámara abierta.
+> El Sargento Vane avanza con paso firme y alerta, manteniendo el arma en posición y sin dejarse afectar por la náusea que satura el aire. Con una voz seca y pragmática, lanza una advertencia sin detener su marcha: "No te distraigas con el hedor. Mantén los ojos abiertos y no toques nada de esa mierda".
+> mecanica
+> Percepción: Fallo (3 vs CD 10). No detectas ninguna amenaza ni detalle relevante en el túnel.
+> presion
+> El moho negro comienza a pulsar levemente contra las paredes, y la luz del fondo parpadea, amenazando con dejar el corredor en una oscuridad absoluta.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  852 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 274 — 251/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1724 ms
+
+> "Tengo los ojos bien abiertos, Sargento".
+> Acelero el paso para salir rápido de este túnel y alcanzar la luz del fondo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 5+-1=4
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 4)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (6497 ms): «Menos palabras y más ritmo. Muévete.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3142 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8386 ms
+
+> narrativa
+> El impulso por salir rápido resulta torpe; un paso en falso sobre la superficie resbaladiza provoca un tropiezo que rompe el ritmo del avance, dejando el cuerpo vulnerable por un instante contra la piedra fría. El túnel desemboca finalmente en una estancia circular de piedra húmeda, donde la luz pálida emana de cristales fosforescentes incrustados en el techo. El suelo está cubierto por una capa de agua estancada que refleja esa luz vacilante, ocultando cualquier relieve o peligro que aceche bajo la superficie oscura.
+> El Sargento Vane no gira la cabeza para mirar al jugador; sigue concentrado en el frente, ajustando el agarre de su arma mientras acelera el paso para cubrir la retaguardia del avance. "Menos palabras y más ritmo. Muévete", sentencia con un tono gélido que no admite réplica.
+> mecanica
+> Atletismo: Fallo (4 vs CD 10). Tu prisa te hace perder el equilibrio, retrasando tu llegada a la estancia.
+> presion
+> El agua estancada comienza a ondularse levemente, sugiriendo que algo se desplaza bajo la superficie hacia la posición del grupo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1170 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 275 — 252/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1607 ms
+
+> "Tengo el ritmo, sargento."
+> Me pongo en pie rápidamente y observo el agua ondulante, tratando de discernir qué hay debajo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 17+1=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (2695 ms): «Menos charla y más ojos en el agua. Algo se mueve ahí abajo.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3798 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  6066 ms
+
+> narrativa
+> El movimiento es fluido y preciso; la vista se ajusta rápidamente a la penumbra fosforescente de la estancia circular. Bajo la superficie del agua turbia, que llega hasta los tobillos, el éxito de la observación revela la amenaza: siluetas alargadas y pálidas se deslizan con una velocidad antinatural, cortando el agua en trayectorias directas hacia la posición del grupo.
+> El sargento Vane no detiene su marcha, pero su tensión es palpable. Sin dejar de avanzar, lanza una mirada rápida y cortante hacia el agua, manteniendo el arma en guardia, y sentencia con sequedad: "Menos charla y más ojos en el agua. Algo se mueve ahí abajo."
+> mecanica
+> Percepción: Éxito (18 vs CD 10). Has detectado la posición y el movimiento de las criaturas bajo el agua antes de que ataquen.
+> presion
+> Las siluetas pálidas están a escasos metros; si no reaccionáis ahora, el primer ataque será un golpe sorpresa desde el agua.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1183 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 276 — 253/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1351 ms
+
+> "Ya lo he visto, sargento."
+> Me preparo para lanzar un hechizo hacia las siluetas que se acercan.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 4+1=5
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (2212 ms): «Entonces deja de decir que lo has visto y haz algo ya.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3057 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  6412 ms
+
+> narrativa
+> El aire pesado de la estancia circular huele a estancamiento y salitre. Las paredes, recubiertas de un musgo fosforescente que emite una luz verdosa y mortecina, devuelven reflejos distorsionados sobre el agua turbia que oculta el suelo. El intento de canalizar la magia fracasa; la energía se dispersa erráticamente, incapaz de cohesionarse en el hechizo planeado mientras el agua comienza a agitarse violentamente alrededor de los tobillos.
+> El sargento Vane no se gira, manteniendo el cuerpo tenso y el arma firme frente a él. Su voz corta el silencio con un tono gélido y puramente operativo: "Entonces deja de decir que lo has visto y haz algo ya."
+> mecanica
+> Hechizo: Fallo (5 vs CD 10). La magia no se manifiesta.
+> presion
+> Las siluetas pálidas ya han roto la superficie del agua; el ataque es inminente y el grupo está expuesto.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  916 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Hechizo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 277 — 254/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1698 ms
+
+> "No me des órdenes, sargento."
+> Doy un paso atrás para ganar espacio y preparo un ataque con mi descarga eldritch hacia la silueta más cercana.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 10+1=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 11)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (2765 ms): «Haz lo que quieras con mi rango, pero hazlo mientras disparas. ¡Ya están aquí!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  819 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  7051 ms
+
+> narrativa
+> El espacio ganado permite que la energía se condense finalmente, rompiendo la inercia del fallo anterior. Una descarga de luz violeta y errática surca el aire cargado de salitre, impactando de lleno en el torso de la primera silueta pálida y lanzándola hacia atrás contra el musgo fosforescente de las paredes con un chasquido seco.
+> El sargento Vane no se gira ni muestra sorpresa ante el impacto; simplemente ajusta el agarre de su arma y se tensa para recibir el choque, manteniendo la vista fija en el agua que sigue hirviendo de movimiento. Con una voz plana y desprovista de toda emoción, sentencia: "Haz lo que quieras con mi rango, pero hazlo mientras disparas. ¡Ya están aquí!".
+> mecanica
+> Descarga Eldritch: Éxito (11 vs CD 10). El objetivo es impactado y repelido.
+> presion
+> El impacto ha alertado al resto de las criaturas; las siluetas restantes emergen del agua en un ataque coordinado hacia los flancos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1105 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Descarga, Eldritch, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 278 — 255/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1392 ms
+
+> "No me des órdenes, sargento."
+> Mantengo mi posición y preparo otro ataque contra la silueta más cercana que emerja del agua.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 5+1=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (3275 ms): «Ahorrate el orgullo, que no te va a sacar del agua.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2446 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  6026 ms
+
+> narrativa
+> El agua hirviente se desborda sobre el muelle de piedra, transformando el suelo en un espejo oscuro y resbaladizo. Mientras intentas fijar el blanco, el terreno cede bajo tus pies y la visibilidad se fragmenta; las siluetas pálidas emergen como jirones de niebla sólida, moviéndose con una rapidez antinatural que hace que tu ataque se pierda en el vacío, golpeando el aire frío y húmedo.
+> Sin apartar la vista del frente, el Sargento Vane aprieta el gatillo mientras se desplaza un paso lateralmente para cubrir tu flanco, protegiéndote de un impacto inminente. "Ahorrate el orgullo, que no te va a sacar del agua", sentencia con un tono gélido, el sonido de su arma resonando contra el chapoteo rítmico de las criaturas que siguen ascendiendo.
+> mecanica
+> Percepción: Fallo (6 vs CD 10). No logras coordinar el ataque contra el objetivo.
+> presion
+> El fallo en la percepción te ha dejado expuesto; las siluetas pálidas ahora rodean el muelle, cerrando el círculo y cortando la ruta de retirada hacia la tierra firme.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  855 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 279 — 256/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1545 ms
+
+> "Tú encárgate de los flancos, Sargento."
+> Me obligo a mantener la calma y trato de localizar la criatura más cercana entre la niebla para lanzarle un hechizo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 8+1=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (3804 ms): «Hago mi trabajo, que es más de lo que puedo decir de ti ahora mismo. No te distr»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2753 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9757 ms
+
+> narrativa
+> El vapor espeso del agua hirviente se aferra a la piedra negra, creando un muro blanco que devora las distancias. A pesar del esfuerzo por concentrar la mente, el hechizo se deshace en el aire; la criatura más cercana es solo un jirón de niebla pálida que se desliza fuera de tu alcance justo antes de que la magia impacte, dejando el golpe seco contra el suelo mojado.
+> El Sargento Vane lanza una ráfaga corta y seca hacia una de las siluetas mientras mantiene la espalda pegada a la tuya, sin mirarte, con la mirada fija en el perímetro. "Hago mi trabajo, que es más de lo que puedo decir de ti ahora mismo. No te distraigas, que no voy a cubrirte dos veces", sentencia con una voz gélida que corta el ruido del agua.
+> mecanica
+> Percepción: Fallo (9 vs CD 10). El objetivo se desplaza rápidamente entre la niebla y el hechizo no encuentra blanco.
+> presion
+> La falta de precisión ha dado tiempo a que las siluetas se coordinen; el círculo se estrecha y el vapor comienza a asfixiar la visibilidad, dejando al grupo vulnerable a un ataque simultáneo desde los flancos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4324 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 280 — 257/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2288 ms
+
+> "Guarda tus consejos para alguien que los valore, Sargento."
+> Ignoro su comentario y trato de localizar el origen de los movimientos en la niebla.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (2323 ms): «Tus valores no me interesan, pero tu supervivencia sí, aunque sea por pura logís»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2339 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  7369 ms
+
+> narrativa
+> El ojo se ajusta al caos blanco y, tras un instante de tensión, el patrón emerge. Entre el rugido de los géiseres y la piedra volcánica negra y resbaladiza, el movimiento ya no es un jirón azaroso: una silueta se desliza con cautela hacia la izquierda, revelando su posición justo antes de fundirse nuevamente con el vapor.
+> Sin girarse, Vane recarga el arma con un movimiento mecánico y preciso, manteniendo la guardia alta mientras escanea el vapor. "Tus valores no me interesan, pero tu supervivencia sí, aunque sea por pura logística. Céntrate", sentencia con una frialdad profesional que ignora cualquier rastro de fricción personal.
+> mecanica
+> Percepción: Éxito (10 vs CD 10). Has localizado la posición de uno de los acechadores en la niebla.
+> presion
+> Aunque has detectado una amenaza, el resto de las siluetas siguen moviéndose en los puntos ciegos; si no se neutraliza la posición actual, el flanco derecho quedará expuesto al primer ataque coordinado.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1049 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 281 — 258/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1410 ms
+
+> "Ya estoy centrado."
+> Me posiciono para tener línea de visión hacia el vapor donde vi la silueta y preparo un ataque.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (2616 ms): «Menos palabras y más plomo. No lo pierdas de vista.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2303 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  6162 ms
+
+> narrativa
+> El basalto negro brilla bajo el agua hirviente y los muros de vapor blanco se desplazan con el viento, recortando la visibilidad en fragmentos erráticos. Al ajustar la posición, la silueta que acechaba en la bruma queda atrapada en el ángulo de visión, expuesta y vulnerable justo antes de que el vapor vuelva a cerrarse sobre ella.
+> El sargento Vane no aparta la mirada del blanco, manteniendo el arma en posición de disparo para cubrir el ángulo opuesto. "Menos palabras y más plomo. No lo pierdas de vista", ordena con una sequedad militar, mientras el rugido de los géiseres ahoga cualquier otro sonido.
+> mecanica
+> Percepción: Éxito (10 vs CD 10). Has fijado el blanco y tienes línea de visión clara para el ataque.
+> presion
+> El acechador ha sido localizado, pero el movimiento en el resto del campo de géiseres se intensifica; si el ataque falla o se demora, las otras siluetas aprovecharán la distracción para cerrar el cerco.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  985 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 282 — 259/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1522 ms
+
+> "No me des órdenes, sargento."
+> Lanzó el proyecto mágico hacia la silueta expuesta en la bruma.
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  sin tiradas declaradas
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=False · pnj_que_responden=['Sargento Vane'] · altera_estado=False · peso=conversacional
+
+### [5] ÁRBITRO
+
+  no requerido este turno
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Sargento Vane no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2625 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  7040 ms
+
+> narrativa
+> El proyectil mágico surca el aire, rasgando la bruma blanca antes de impactar contra la silueta que aguardaba en el basalto. El estallido de energía se funde con el rugido ensordecedor de los géiseres, que lanzan columnas de vapor erráticas que fragmentan la visión en pasillos efímeros y cegadores.
+> El sargento Vane no reacciona a la insolencia; mantiene la mandíbula apretada y el arma firme, escaneando el horizonte de piedra negra fracturada. Su mirada permanece gélida, fija en los huecos que el vapor deja al moverse, ignorando el intercambio para priorizar la amenaza que aún respira entre las nubes de azufre.
+> mecanica
+> Esperando resolución de ataque (Tirada pendiente).
+> presion
+> El impacto ha revelado la posición del enemigo, pero el ruido ha alertado al resto de la jauría; las siluetas en el perímetro comienzan a coordinar su avance aprovechando las cortinas de vapor.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1143 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Esperando, Tirada
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 283 — 260/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2274 ms
+
+> "Que vengan. Veamos si su carne es tan dura como esta piedra."
+> Me planto firme junto al sargento, manteniendo la mirada fija en las siluetas que avanzan entre el vapor.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 2+1=3
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 3)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (2036 ms): «Menos poesía y más guardia. No te distraigas con el paisaje, que el vapor no nos»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2481 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4832 ms
+
+> narrativa
+> El esfuerzo por escudriñar la bruma resulta inútil; el vapor azufrado es demasiado denso y los reflejos del basalto negro juegan malas pasadas a la vista, ocultando cualquier movimiento enemigo tras los muros blancos y efímeros. Solo queda la sensación de estar siendo observado desde los puntos ciegos del páramo.
+> El sargento Vane no aparta la vista del horizonte, ajustando el agarre de su arma con un movimiento seco y pragmático. "Menos poesía y más guardia. No te distraigas con el paisaje, que el vapor no nos va a cubrir para siempre", sentencia con un tono gélido que corta cualquier resto de bravuconería.
+> mecanica
+> Percepción: Fallo (3 vs CD 10). No has detectado la posición exacta de los atacantes.
+> presion
+> La ceguera momentánea es una invitación al desastre; mientras el grupo permanece estático, las siluetas enemigas se deslizan por los flancos, acortando la distancia para un ataque sorpresa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2220 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 284 — 261/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2051 ms
+
+> "Tenga cuidado con los flancos, sargento."
+> Me pongo en guardia, concentrándome en cualquier sonido que atraviese el vapor.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (2069 ms): «Lo sé. Mantén tu sector y deja de decirme cómo hacer mi trabajo.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2445 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9941 ms
+
+> narrativa
+> El silencio del páramo se quiebra por el siseo del azufre, pero la concentración rinde frutos. Entre el ruido blanco del vapor, un roce metálico y el desplazamiento de grava sobre el basalto negro revelan la posición exacta de los flancos; el enemigo ya no es una sospecha, sino una presencia tangible que se desliza entre los muros blancos y erráticos.
+> El sargento Vane no se gira para mirarlo; mantiene la vista fija en la bruma, tensando los hombros mientras el arma permanece lista para disparar. "Lo sé. Mantén tu sector y deja de decirme cómo hacer mi trabajo", responde con una sequedad que no admite réplica, aunque su postura delata que ha integrado la advertencia en su perímetro de fuego.
+> mecanica
+> Percepción: Éxito (10 vs CD 10). Has localizado la posición de las amenazas en los flancos.
+> presion
+> El enemigo ha sido detectado, pero la ventaja es efímera. Si no se inicia la contraofensiva o se reorganiza la formación ahora, el vapor volverá a cerrarse sobre el grupo, devolviéndoles la ceguera justo cuando el acero esté al alcance de la mano.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  922 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 285 — 262/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 59.0 (loyal), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  1822 ms
+
+> "No me muevo de mi puesto, sargento."
+> Me preparo para lanzar un hechizo hacia la posición donde escuché el roce metálico.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Sargento Vane no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3007 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  7031 ms
+
+> narrativa
+> La voluntad se impone sobre el caos del entorno y la energía fluye con precisión quirúrgica. El hechizo impacta exactamente donde el oído había detectado el roce del acero, desgarrando la cortina de vapor azufrado con una descarga que revela, por un instante, la silueta contrahecha del enemigo antes de que el basalto negro vibre bajo el golpe.
+> El sargento Vane no se mueve, pero un leve movimiento de mandíbula confirma que ha registrado el impacto. No hay palabras de elogio, solo la tensión gélida de quien sabe que el primer disparo siempre es el que despierta al resto de la horda oculta tras los muros de cal blanca.
+> mecanica
+> Hechizo de ataque: Éxito (10 vs CD 10). Has golpeado con precisión la posición detectada.
+> presion
+> El ataque ha revelado la posición del enemigo, pero también ha alertado al resto de la unidad oculta. Si no se aprovecha el impacto para avanzar o cubrirse, los flancos se cerrarán ahora con una agresividad renovada.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2788 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Sargento Vane · competence_shown
+  ⚠ nombres no reconocidos: Hechizo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5797: Sargento Vane affinity 59.0 → 61.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 61.0 (devoted), 5 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 286 — 263/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 61.0 (devoted), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2713 ms
+
+> "No os quedéis ahí pasmados. ¡Avanzad!"
+> Aprovecho la confusión del enemigo para moverme rápidamente hacia la posición donde impactó el hechizo, buscando eliminar la amenaza antes de que se reagrupen.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 8+-1=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (2646 ms): «¡En formación! ¡Cubrid sus flancos, ahora!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3125 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  7385 ms
+
+> narrativa
+> El impulso falla en el momento crítico. El pie resbala sobre los escombros húmedos y el basalto negro, provocando un tropiezo torpe que rompe cualquier intento de avance rápido. El movimiento, lejos de ser una carga letal, termina en un forcejeo inútil contra la inercia mientras la silueta humeante de la criatura comienza a recomponerse entre los muros de cal blanca y el vapor azufrado.
+> El sargento Vane reacciona al instante, ignorando el desliz con una mirada gélida. Se desplaza lateralmente para coordinar el avance del resto de la unidad, manteniendo la vista fija en la bruma tóxica mientras lanza una orden seca y autoritaria: "¡En formación! ¡Cubrid sus flancos, ahora!".
+> mecanica
+> Atletismo: Fallo (7 vs CD 10). El intento de avanzar rápidamente ha resultado en un tropiezo.
+> presion
+> La pérdida de impulso ha dejado el flanco expuesto. Si no se recupera la posición inmediatamente, la criatura impactada y sus aliados aprovecharán la vulnerabilidad para contraatacar.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  927 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 61.0 (devoted), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 287 — 264/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 61.0 (devoted), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2217 ms
+
+> "Maldita sea."
+> Me levanto rápidamente del suelo, sacudiéndome los escombros, y busco la posición más estable para recuperar el equilibrio.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 17+-1=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 16)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (2972 ms): «Menos insultos y más pies en el suelo. ¡Recupérate y vuelve a la línea, ya!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2803 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9925 ms
+
+> narrativa
+> El cuerpo recupera la verticalidad con un movimiento brusco y eficiente, encontrando el punto de apoyo firme sobre el basalto negro. El equilibrio vuelve justo a tiempo para que el peso del equipo deje de ser un lastre entre los escombros resbaladizos y las paredes de cal blanca, donde el vapor azufrado sigue condensándose en gotas espesas y ácidas.
+> El sargento Vane no se molesta en girar la cabeza; mantiene el arma firme, escrutando la bruma tóxica con una disciplina gélida. Su voz corta el aire como un látigo: "Menos insultos y más pies en el suelo. ¡Recupérate y vuelve a la línea, ya!".
+> mecanica
+> Atletismo: Éxito (16 vs CD 10). Has recuperado la posición y el equilibrio.
+> presion
+> La formación se ha cerrado, pero el vapor azufrado se vuelve más denso, ocultando el avance de cualquier cosa que aceche en el pasillo. Cada segundo de vacilación permite que el enemigo se posicione mejor para una emboscada.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1493 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 61.0 (devoted), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 288 — 265/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 61.0 (devoted), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2685 ms
+
+> "Tengo los pies en el suelo, sargento."
+> Me incorporo rápidamente y retomo mi posición en la línea, manteniendo la vista fija en la bruma para detectar cualquier movimiento.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 20+1=21  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 21)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (3797 ms): «No me lo digas, demuéstralo. Mantén el sector limpio y no te separes ni un centí»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1520 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16031 ms
+
+> narrativa
+> El movimiento es fluido y preciso, recuperando la posición en la formación antes de que el sargento pueda siquiera reprochar la demora. La mirada se clava en la bruma tóxica, atravesando la densidad del vapor azufrado con una claridad anormal; el entorno parece revelarse en fragmentos, detectando las sutiles distorsiones del aire y el rastro de algo que se desplaza en el silencio, mucho antes de que sea visible para el resto.
+> Vane no deja de escanear el horizonte gris, pero hace un gesto seco con la mano para que la distancia entre ambos sea inexistente, manteniendo el arma en guardia con una tensión profesional. "No me lo digas, demuéstralo. Mantén el sector limpio y no te separes ni un centímetro de mi flanco", sentencia con un tono que no admite réplica, mientras el frío del basalto negro parece trepar por las botas.
+> mecanica
+> Percepción: Éxito Crítico (21 vs CD 10). Has detectado una amenaza o detalle crucial oculto en la bruma que el Sargento Vane ha pasado por alto.
+> presion
+> La alerta es máxima, pero el grupo sigue avanzando a ciegas hacia el corazón de la niebla. Si no comunicas lo que has visto o actúas ahora, la emboscada se precipitará sobre el flanco expuesto de la formación.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1207 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Crítico, Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 61.0 (devoted), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 289 — 266/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 61.0 (devoted), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2035 ms
+
+> "Hay algo ahí fuera, moviéndose entre el vapor."
+> Me pego al flanco de Vane y señalo con la mano la zona exacta donde he detectado la distorsión.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 17+4=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 21)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (6922 ms): «No te muevas. No te separes.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4405 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16889 ms
+
+> narrativa
+> El basalto negro del corredor vibra bajo las botas con un zumbido sordo que parece nacer de las profundidades, mientras las columnas erosionadas se pierden en una bruma azufrada y espesa que devora la luz. El aire es pesado, cargado de un olor acre que irrita la garganta y reduce la visibilidad a unos pocos metros, convirtiendo el entorno en una trampa de sombras y vapor.
+> Vane se tensa instantáneamente, sin apartar la vista del punto señalado. No duda de tu palabra, pero su cuerpo se convierte en un muro protector entre tú y la bruma, ajustando el agarre del arma con un clic metálico y seco. "No te muevas. No te separes", ordena en un susurro tenso, mientras su mirada escanea la distorsión que has revelado.
+> mecanica
+> Persuasión: Éxito (21 vs CD 10). El Sargento Vane confía plenamente en tu advertencia y ha ajustado la formación para cubrirte.
+> presion
+> El zumbido del suelo aumenta de intensidad y la bruma comienza a arremolinarse violentamente alrededor de las columnas; lo que sea que se movía ahí fuera ha dejado de esconderse.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3757 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Sargento Vane · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5816: Sargento Vane affinity 61.0 → 63.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 63.0 (devoted), 5 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 290 — 267/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 63.0 (devoted), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2569 ms
+
+> "Mantén la guardia, sargento. Algo viene."
+> Me pego a su espalda para aprovechar la cobertura y trato de distinguir la forma de lo que se oculta en la bruma.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 16+1=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 17)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (9139 ms): «No hace falta que me lo digas. Ya lo siento en las botas.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6396 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12461 ms
+
+> narrativa
+> El zumbido del basalto se intensifica hasta convertirse en una vibración que sacude los dientes. De repente, la bruma se rasga violentamente, revelando una silueta esquelética de obsidiana que emerge del vapor con un chirrido metálico, clavando sus dedos alargados sobre la roca negra mientras se impulsa hacia adelante.
+> El Sargento Vane no se mueve ni un milímetro, manteniendo la espalda rígida como una roca y el arma nivelada hacia la bruma. Sin girarse, con la armadura vibrando por el eco del suelo, responde con voz gélida: "No hace falta que me lo digas. Ya lo siento en las botas".
+> mecanica
+> Percepción: Éxito (17 vs CD 10). Has identificado la naturaleza física y la posición de la criatura antes de que complete su ataque.
+> presion
+> La criatura de obsidiana ha cerrado la distancia; cualquier vacilación en la respuesta inmediata dejará al grupo expuesto a un golpe devastador.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  67228 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 63.0 (devoted), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 291 — 268/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 63.0 (devoted), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  2588 ms
+
+> "Demasiado ruido para algo tan frágil."
+> Lanzo un Rayo Sombrío hacia la silueta de obsidiana antes de que termine de impulsarse.
+> {Ataque]
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  sin tiradas declaradas
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=False · pnj_que_responden=['Sargento Vane'] · altera_estado=False · peso=conversacional
+
+### [5] ÁRBITRO
+
+  no requerido este turno
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (3507 ms): «Menos charla y más fuego, Tarq. ¡Dale!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  20274 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10937 ms
+
+> narrativa
+> El Rayo Sombrío surca el aire, impactando con un estruendo seco contra la silueta de obsidiana justo cuando esta se lanza al ataque. La explosión de energía sacude la explanada de basalto fracturado, donde la bruma se arremolina en espirales densas y las vetas de cristal oscuro bajo los pies pulsan con una luz violeta tenue, reaccionando a la descarga.
+> El Sargento Vane no aparta la vista de la bruma mientras ajusta el agarre de su arma, manteniendo la posición de cobertura con una rigidez imperturbable. Sin mirar atrás, ordena con brusquedad: "Menos charla y más fuego, Tarq. ¡Dale!".
+> mecanica
+> Ataque: Pendiente de resolución por el Árbitro.
+> presion
+> La criatura ha sido impactada, pero la bruma sigue espesa y el eco del rayo podría haber atraído a otras presencias que acechan en el basalto.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1590 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Ataque, Pendiente, Rayo, Sombrío, Árbitro
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 63.0 (devoted), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 292 — 269/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 63.0 (devoted), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3396 ms
+
+> "No me des órdenes, sargento."
+> Mantengo la mirada fija en la silueta de obsidiana y conjuro otro Rayo Sombrío hacia el centro de la masa.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 17+1=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (4256 ms): «Haz lo que quieras, pero hazlo rápido. No voy a cubrir un cadáver solo porque te»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  18429 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11842 ms
+
+> narrativa
+> El segundo Rayo Sombrío rasga la bruma con una precisión quirúrgica, impactando en el núcleo de la masa de obsidiana. La descarga eléctrica sacude la silueta, fragmentando su estructura en astillas negras que se desvanecen antes de tocar el suelo. Bajo los pies, las vetas de cristal oscuro del basalto fracturado laten con un brillo violeta residual, vibrando al unísono con la energía que acaba de consumir al enemigo.
+> El Sargento Vane no gira la cabeza, manteniendo el arma firme y el dedo apretando el gatillo para asegurar que nada emerja de los restos. Con una voz fría y cortante, sentencia: "Haz lo que quieras, pero hazlo rápido. No voy a cubrir un cadáver solo porque tenía orgullo".
+> mecanica
+> Rayo Sombrío: Éxito (18 vs CD 10). Objetivo neutralizado.
+> presion
+> El silencio que sigue al impacto es artificial; las pulsaciones violetas del basalto actúan como un faro en la bruma, y algo más grande comienza a desplazarse en la periferia de la explanada.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1517 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Rayo, Sombrío, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 63.0 (devoted), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 293 — 270/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 63.0 (devoted), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3018 ms
+
+> "No me hables de orgullo, Sargento. Hablo de conocimiento."
+> Me acerco a los restos y examino el brillo violeta del basalto para entender la naturaleza de esa energía.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 19+2=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 21)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (5693 ms): «El conocimiento no detiene las balas, Tarq, pero el tiempo sí nos detiene a noso»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  34456 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  21383 ms
+
+> narrativa
+> Al inclinarte sobre el basalto fracturado, el olor a ozono y obsidiana quemada se vuelve asfixiante. La luminiscencia violeta no es un simple residuo, sino una corriente eléctrica y visceral que fluye por las grietas como sangre, convergiendo con una precisión geométrica hacia el punto donde el enemigo fue desintegrado. Al analizar el flujo, comprendes que la energía no se ha disipado, sino que ha sido absorbida por la piedra, dejando una huella energética que revela la naturaleza inestable y parasitaria de la entidad que acabas de destruir.
+> El Sargento Vane no aparta la vista de la bruma; permanece con el cuerpo tenso y el arma levantada, ignorando deliberadamente la provocación mientras el brillo violeta late rítmicamente a sus pies. "El conocimiento no detiene las balas, Tarq, pero el tiempo sí nos detiene a nosotros. Encuentra lo que busques, pero no te distraigas con las luces", sentencia con un tono gélido, sin concederle ni una mirada a la curiosidad del momento.
+> mecanica
+> Investigación: Éxito (21 vs CD 10). Has identificado el patrón de flujo energético del basalto.
+> presion
+> El brillo violeta que ahora comprendes es un faro; mientras Tarq analiza la energía, la vibración del suelo aumenta, indicando que algo en la periferia de la explanada ha detectado el rastro y se aproxima.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1404 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Investigación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'location', 'entity_id': 'Explanada de Basalto', 'field': 'descripcion', 'value': 'Suelo de basalto con vetas de cristal oscuro que laten con energía violeta residual tras el impacto de un Rayo Sombrío.'}
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 63.0 (devoted), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 294 — 271/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 63.0 (devoted), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3949 ms
+
+> "Tus balas no sirven contra lo que no puedes ver, Sargento."
+> Me incorporo lentamente, sin dejar de observar el patrón del flujo energético para memorizarlo. Intento captar cualquier sonido o movimiento en la periferia de la explanada.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Sargento Vane (29021 ms): «Entonces asegúrate de que yo pueda verlo, Tarq. Muévete.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  10130 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16912 ms
+
+> narrativa
+> Te incorporas con lentitud, fijando la mirada en los surcos de luz violeta que laten sobre el basalto fracturado, grabando el patrón en tu memoria mientras el frío de la piedra se filtra por tus botas. Al agudizar los sentidos, el silencio de la explanada se vuelve pesado, casi sólido, y logras distinguir un siseo rítmico que se filtra a través de la bruma densa, un roce metálico y orgánico que se desplaza justo en el límite de tu visibilidad, acechando desde el blanco grisáceo que devora el horizonte.
+> El Sargento Vane no se inmuta ante tu comentario, manteniendo el arma en guardia y barriendo la periferia con una mirada gélida y profesional, sin girarse hacia ti. "Entonces asegúrate de que yo pueda verlo, Tarq. Muévete", sentencia con una voz seca, mientras el brillo eléctrico de las grietas pulsa con una intensidad creciente, como si respondiera a la presencia que se aproxima entre la niebla.
+> mecanica
+> Percepción: Éxito (10 vs CD 10). Has detectado un movimiento siseante en la bruma.
+> presion
+> El acechador en la periferia ha cerrado el círculo; si no abandonan la explanada o preparan una defensa, el ataque vendrá desde el ángulo muerto de la bruma.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3430 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 63.0 (devoted), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 295 — 272/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 63.0 (devoted), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+
+  3077 ms
+
+> "Está ahí fuera, en la bruma. No te confíes."
+> Me pongo en pie rápidamente y me posiciono a espaldas del sargento, manteniendo la vista fija en el punto donde escuché el siseo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 19+1=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Sargento Vane'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 20)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Sargento Vane no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  175387 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  150731 ms
+
+> narrativa
+> El movimiento en la bruma se vuelve nítido, despojándose de la ambigüedad del siseo para revelarse como una silueta angular que se desliza con una fluidez antinatural. Desde tu posición a espaldas del sargento, logras distinguir el preciso instante en que la criatura se tensa, preparándose para el salto, mientras las grietas de luz violeta bajo vuestros pies emiten un fogonazo eléctrico que ilumina brevemente la piel pálida y húmeda del acechador.
+> El Sargento Vane reacciona al instante, aunque no se gira; su cuerpo se tensa en un reflejo coordinado, ajustando el agarre de su arma mientras el aire alrededor se vuelve gélido y el silencio es reemplazado por un gruñido vibrante que emerge directamente desde el corazón de la niebla blanca.
+> mecanica
+> Percepción: Éxito crítico (20 vs CD 10). Has localizado la posición exacta y la intención de ataque del enemigo antes de que emerja de la bruma.
+> presion
+> La criatura está a un segundo de saltar sobre el sargento; cualquier retraso en la reacción convertirá el ataque en una emboscada letal.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  17756 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Sargento Vane: alive, aprecio 63.0 (devoted), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 296 — 273/1377 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Sargento Vane: alive, aprecio 63.0 (devoted), 5 hechos conocidos
+
+### [2] JUGADOR — Tarq
+

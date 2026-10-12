@@ -1,0 +1,25683 @@
+
+# VERTICAL SLICE — Par 10 (real) · G2 (Monolítico) · Puente Roto (monolithic)
+
+- **DM:** `google/gemma-4-31B-it`
+- **jugador:** `google/gemma-4-31B-it` (Isolde, desvío 65)
+- **turno:** 95
+
+## Turno 95 — 1/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2194 ms
+
+> "Vaya asco de cosa."
+> Saco una rama pequeña del suelo y trato de tocar la masa con cuidado para ver cómo reacciona.
+> {Naturaleza}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Naturaleza: 9+1=10
+
+### [4] DM
+
+  7709 ms
+
+> La punta de la rama se hunde en la superficie translúcida con una resistencia gomosa. En el instante en que la madera penetra la masa, las fibras blanquecinas dejan de pulsar rítmicamente y se tensan bruscamente, envolviendo la rama en un espasmo rápido. 
+> La criatura no emite sonido, pero la vibración se transmite a través de la madera hasta tu mano. La masa comienza a secretar una cantidad abundante de esa baba grisácea sobre la rama, que empieza a burbujear y a deshacerse lentamente, como si el organismo estuviera digiriendo la madera en tiempo real.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1664 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 96 — 2/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2953 ms
+
+> "Maldita sea."
+> Suelto la rama rápidamente para que no llegue a tocarme la mano y retrocedo un paso, observando la reacción de la masa.
+> {Naturaleza}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Naturaleza: 9+1=10
+
+### [4] DM
+
+  12730 ms
+
+> La masa blanquecina se contrae violentamente sobre el trozo de madera abandonado, absorbiendo la rama con un movimiento succionador que deja la superficie translúcida lisa y limpia en pocos segundos. El burbujeo de la baba grisácea cesa abruptamente y la criatura recupera su ritmo pausado, volviendo a pulsar con esa calma hipnótica, como si el breve espasmo no hubiera sido más que un reflejo digestivo.
+> A juzgar por el comportamiento del organismo, no parece haber una estructura ósea o un núcleo definido, sino que se comporta como un tejido colonial o un hongo masivo. No hay señales de que el contacto haya alertado a otros ejemplares cercanos, pero la velocidad con la que ha degradado la madera sugiere que cualquier material orgánico que toque será consumido con la misma eficiencia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  53404 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 97 — 3/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  82850 ms
+
+> "Vaya hambre tienes..."
+> Doy un paso atrás para alejarme del alcance de la masa y observo los alrededores buscando más de esas cosas.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 17+4=21
+
+### [4] DM
+
+  88266 ms
+
+> El retroceso aleja tus botas del alcance de la masa, que sigue pulsando en un silencio sepulcral. Al elevar la mirada y recorrer el entorno, el paisaje revela su verdadera naturaleza: no es una sola criatura, sino una infestación. Entre las grietas de las rocas y bajo el manto de hojas muertas, pequeñas vetas de ese blanco translúcido se extienden como capilares, conectando el organismo frente a ti con otros tres cúmulos similares, ocultos parcialmente por la vegetación a unos cinco metros en distintas direcciones.
+> Uno de esos cúmulos, situado justo detrás de un tronco caído a tu derecha, comienza a expandirse lentamente, enviando un filamento blanquecino que tienta el aire, rastreando la humedad o el rastro orgánico que has dejado al moverte. El bosque, antes silencioso, parece ahora un organismo vivo y hambriento que te observa desde el suelo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2252 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 98 — 4/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  7273 ms
+
+> "Qué asco de sitio."
+> Retrocedo con cuidado para no pisar ninguna de esas vetas y busco una posición elevada o un terreno limpio donde no me rodeen.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 10+4=14
+
+### [4] DM
+
+  23796 ms
+
+> Tus botas crujen sobre la hojarasca mientras retrocedes, evitando con cautela los hilos blanquecinos que surcan el suelo como una telaraña orgánica. A medida que te alejas del núcleo principal, el terreno comienza a elevarse hacia una pequeña colina de roca caliza, donde la piedra es más compacta y el suelo parece haber sido barrido por el viento, dejándolo libre de vegetación y de aquellas vetas translúcidas.
+> Desde esa pequeña eminencia, observas que los filamentos del cúmulo cercano se agitan con una vibración rítmica, casi como si respiraran. Al mirar hacia el resto del claro, notas que el blanco no solo habita el suelo; algunas de las raíces más bajas de los árboles circundantes presentan el mismo tono pálido y ceroso, sugiriendo que la infestación ha comenzado a trepar por la madera, aunque todavía no han alcanzado las ramas bajas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1536 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 99 — 5/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4746 ms
+
+> "Esto no es una planta normal."
+> Me acerco a una de las raíces pálidas para examinar la textura y ver si el tejido del árbol está muerto o fusionado con esa sustancia.
+> {Naturaleza}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Naturaleza: 11+1=12
+
+### [4] DM
+
+  9486 ms
+
+> Te inclinas sobre la raíz, donde la corteza rugosa del árbol ha sido devorada por una capa de material ceroso y blanquecino. Al tacto, la sustancia se siente fría y posee una consistencia gomosa, similar a la grasa animal pero con una tensión elástica que recuerda a la piel. 
+> El tejido del árbol no parece estar muerto en el sentido tradicional; no hay pudrición ni sequedad. En su lugar, la madera se siente densa y rígida, como si la sustancia blanca hubiera penetrado en los poros de la planta para sustituir la savia por algo más espeso, fusionando ambos organismos en una sola estructura pálida y silenciosa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4999 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 100 — 6/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2768 ms
+
+> "¿Qué demonios es esto?"
+> Saco mi cuchillo y trato de raspar una pequeña muestra de esa sustancia blanquecina para ver cómo reacciona al corte.
+> {Naturaleza}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Naturaleza: 18+1=19
+
+### [4] DM
+
+  41144 ms
+
+> El filo del cuchillo se hunde en la masa blanquecina con una resistencia gomosa, similar a cortar cuero húmedo. Al desprender la pequeña lasca, la sustancia no se desgarra, sino que se separa limpiamente, revelando un interior nacarado que brilla débilmente bajo la luz. No hay savia, ni sangre, ni humedad orgánica; solo una estructura celular densa y uniforme que parece vibrar imperceptiblemente al contacto con el aire.
+> Tus conocimientos de naturaleza te permiten identificar que esto no es un hongo ni un parásito vegetal común. La estructura es demasiado organizada, casi arquitectónica. Se trata de una colonización orgánica que no consume al árbol para alimentarse, sino que lo utiliza como armadura y soporte, transformando la biología del bosque en algo sintético y ajeno. Mientras observas la muestra en la hoja del cuchillo, notas que el borde del corte comienza a cerrarse lentamente, como si la sustancia intentara sellar la herida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1999 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 101 — 7/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2351 ms
+
+> "Esto no es natural."
+> Limpio la hoja del cuchillo rápidamente para que la muestra no se adhiera al metal y trato de raspar un trozo más grande para guardarlo en un recipiente.
+> {Naturaleza}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Naturaleza: 3+1=4
+
+### [4] DM
+
+  27237 ms
+
+> El cuchillo resbala bruscamente sobre la superficie nacarada, que se ha vuelto repentinamente resbaladiza y dura como el cristal. El esfuerzo por arrancar un trozo más grande solo consigue que la hoja rebote con un sonido metálico y seco, dejando un rayón superficial en la masa blanquecina que se cierra casi instantáneamente, borrando cualquier rastro del intento.
+> La sustancia parece haber reaccionado a la agresión, tensándose y adquiriendo una rigidez mineral que impide cualquier nueva extracción. El fragmento anterior, si es que quedó algo tras la limpieza apresurada, es lo único que permanece, mientras el organismo vuelve a fundirse con la corteza del árbol, volviéndose impenetrable.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2945 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 102 — 8/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2385 ms
+
+> "Ya veo que no quieres darme más."
+> Suelto el cuchillo y me alejo un paso, observando detenidamente el árbol para ver si hay algún otro punto débil o una reacción similar en otras partes del tronco.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+4=20
+
+### [4] DM
+
+  35710 ms
+
+> Al retroceder, el silencio del bosque se vuelve denso, roto solo por el siseo residual de la sustancia que se ha sellado. Al recorrer el tronco con la mirada, notas que la reacción no ha sido aislada; una serie de vetas blanquecinas, similares a venas de cuarzo, comienzan a pulsar débilmente bajo la corteza, extendiéndose desde el punto del ataque hacia las raíces y las ramas superiores. El árbol no solo se ha defendido, sino que parece haber quedado en un estado de alerta, con la savia cristalizada vibrando levemente ante cualquier movimiento brusco.
+> En la base del tronco, donde la raíz se hunde en la tierra húmeda, divisas una anomalía: una pequeña hendidura natural, del tamaño de una mano, donde la corteza es más oscura y parece haber sido erosionada por el agua. A diferencia del resto del árbol, esa zona no muestra rastro de la sustancia nacarada, dejando al descubierto una madera fibrosa, casi negra, que exhala un aroma dulzón y pesado, similar al de la fruta podrida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1395 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 103 — 9/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2649 ms
+
+> "Huele a podrido..."
+> Me acerco con cautela a la hendidura y trato de observar qué hay exactamente en el interior de esa madera oscura.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+-1=15
+
+### [4] DM
+
+  10523 ms
+
+> Al asomarte a la hendidura, el aroma dulzón se intensifica, pegándose a la garganta con una densidad aceitosa. La madera negra no es simplemente erosionada, sino que presenta una textura esponjosa y húmeda que cede ligeramente bajo la mirada. En el fondo del hueco, parcialmente oculta por fibras deshilachadas, brilla una pequeña esfera de color ámbar turbio, del tamaño de una canica, que parece flotar en un resto de savia espesa y oscura.
+> La esfera no es mineral; late con un ritmo lento y errático, desplazando el líquido a su alrededor. Alrededor de este núcleo, se aprecian finos filamentos blanquecinos que intentan penetrar la madera negra, pero que se retraen bruscamente cada vez que la esfera pulsa, como si el núcleo ámbar estuviera consumiendo o rechazando activamente la sustancia nacarada del resto del árbol.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4482 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: esfera de color ámbar turbio
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item esfera de color ámbar turbio
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 104 — 10/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2567 ms
+
+> "¿Qué demonios es esto?"
+> Intento extraer la esfera ámbar con cuidado, usando una rama o algún objeto pequeño para no tocarla directamente con la piel.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 12+2=14
+
+### [4] DM
+
+  10767 ms
+
+> La rama que introduces en la hendidura roza la savia oscura, que se adhiere a la madera con una viscosidad similar al alquitrán. Al hacer palanca con cautela, la esfera ámbar se desliza fuera de su lecho de fibras deshilachadas, pero el movimiento provoca que los filamentos blanquecinos se tensen bruscamente. Uno de ellos se aferra a la rama, tirando de ella hacia el fondo del hueco con un espasmo seco antes de soltarse, dejando un rastro de mucosidad pálida sobre la madera.
+> La esfera termina depositándose sobre la superficie de la madera negra, donde sigue latiendo con ese ritmo errático. Al estar fuera de la savia, el núcleo ámbar se vuelve más brillante, y el aroma dulzón se transforma en un olor punzante, similar al vinagre y la resina quemada, que irrita las fosas nasales.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3267 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = esfera de color ámbar turbio
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4070: Isolde.inventory = esfera de color ámbar turbio
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 105 — 11/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2575 ms
+
+> "Vaya asco de cosa."
+> Suelto la rama contaminada y me acerco a la esfera para examinarla mejor, intentando identificar el origen de ese olor.
+> {Naturaleza}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Naturaleza: 7+1=8
+
+### [4] DM
+
+  8725 ms
+
+> Te inclinas sobre la esfera, arrugando la nariz ante el hedor acre que ahora impregna el aire. Al observarla de cerca, el núcleo ámbar parece contener partículas en suspensión que se mueven contra corriente, pero el origen exacto del olor punzante se escapa a tu comprensión; no logras distinguir si es una reacción química al contacto con el aire o una propiedad intrínseca de la resina.
+> La esfera sigue latiendo sobre la madera negra, proyectando destellos anaranjados que iluminan las vetas carbonizadas del suelo. El silencio del lugar vuelve a cerrarse sobre ti, interrumpido únicamente por ese pulso rítmico y el siseo lejano del viento entre las ramas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1285 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 106 — 12/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3674 ms
+
+> "Hueles a veneno o a algo podrido..."
+> Me separo de la esfera y busco con la mirada cualquier otro objeto o rastro en la habitación que pueda darme una pista sobre qué es esto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+-1=7
+
+### [4] DM
+
+  9430 ms
+
+> Te alejas de la esfera, dejando que el aroma acre se disipe ligeramente, y recorres la estancia con la mirada. El espacio es austero y el tiempo parece haber devorado la mayoría de los detalles, dejando solo el rastro de lo que fue una habitación funcional.
+> Tus ojos escanean las paredes descascaradas y los rincones sumidos en sombras, pero no encuentras ningún pergamino, diario o resto material que arroje luz sobre la naturaleza del objeto. No hay marcas en las paredes ni restos de otros artefactos que sugieran que este lugar fuera un laboratorio o un santuario; la esfera reposa sobre la madera carbonizada como una anomalía solitaria en medio del vacío.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1287 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 107 — 13/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2437 ms
+
+> "No puede haber estado aquí sola todo este tiempo."
+> Me acerco a la esfera y examino la madera carbonizada que hay debajo para ver si hay marcas de arrastre o restos de lo que sea que la sostuvo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+-1=6
+
+### [4] DM
+
+  8302 ms
+
+> Te inclinas sobre la estructura de madera, donde el negro del carbón contrasta con la superficie de la esfera. Al pasar los dedos y la vista por la superficie calcinada, solo encuentras una textura irregular y quebradiza; el fuego fue devastador y consumió cualquier rastro de soporte, marcas de presión o señales de movimiento.
+> La madera se deshace en ceniza grisácea bajo tu tacto, dejando claro que no hay huellas visibles que indiquen cómo llegó el objeto allí o si fue trasladado recientemente. La esfera permanece imperturbable, descansando sobre el residuo del incendio sin haber dejado una sola marca de arrastre en el suelo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1038 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 108 — 14/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2081 ms
+
+> "Esto no ha llegado aquí caminando."
+> Sostengo la esfera con cuidado y busco cualquier inscripción o símbolo oculto bajo la capa de carbón.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+-1=2
+
+### [4] DM
+
+  7555 ms
+
+> Tus dedos recorren la superficie fría y dura de la esfera, intentando desprender con delicadeza las escamas de carbón y hollín que la cubren. Sin embargo, la capa de suciedad parece adherirse al material con una tenacidad antinatural; cada vez que intentas raspar una zona para buscar un símbolo, el carbón se desmorona en un polvo fino que ensucia tus manos, pero no revela nada debajo.
+> La superficie permanece muda y opaca. No hay relieves, ni muescas, ni rastro de ninguna inscripción que haya sobrevivido o que esté oculta bajo la ceniza. A tu tacto, la esfera es una pieza perfecta y anónima de material desconocido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1276 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 109 — 15/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3165 ms
+
+> "Maldita sea, no cederá así."
+> Soplo con fuerza sobre la superficie para intentar quitar el polvo restante y luego sacudo la esfera con energía para ver si algo se mueve en su interior.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+-1=6
+
+### [4] DM
+
+  10715 ms
+
+> El aire que expulsa tu soplido solo logra dispersar el polvo fino, creando una pequeña nube grisácea que flota un instante antes de asentarse nuevamente sobre la superficie oscura. Al sacudir la esfera con energía, el objeto se siente sólido y compacto en tu mano; no hay ningún sonido de piezas sueltas, ni el deslizamiento de un mecanismo, ni el eco de un líquido desplazándose en su interior.
+> La pieza permanece inerte, pesada y hermética, devolviéndote un silencio absoluto a pesar de tus esfuerzos por forzar alguna reacción.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1097 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 110 — 16/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2103 ms
+
+> "No eres una pieza fácil, ¿eh?"
+> La giro lentamente entre mis dedos, buscando cualquier costura, relieve o marca pequeña que haya pasado por alto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+-1=2
+
+### [4] DM
+
+  9761 ms
+
+> La superficie de la esfera es exasperantemente uniforme. A pesar de girarla con detenimiento y recorrerla con las yemas de los dedos, el material se siente liso, casi orgánico, sin una sola hendidura, botón o irregularidad que sugiera una apertura.
+> La pieza sigue siendo un enigma mudo, una masa compacta de material oscuro que no revela ninguna pista sobre su propósito ni su funcionamiento interno.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1090 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 111 — 17/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4156 ms
+
+> "No puede ser solo una piedra bonita."
+> La acerco a mi rostro para observar si hay algún reflejo o cambio de color bajo la luz.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+-1=11
+
+### [4] DM
+
+  5482 ms
+
+> La luz se desliza sobre la superficie oscura de la esfera sin encontrar un solo punto de anclaje. Al acercarla al rostro, el material absorbe la claridad del entorno en lugar de reflejarla, manteniendo ese tono uniforme y opaco que desafía cualquier intento de análisis visual.
+> No hay vetas ocultas, ni cambios cromáticos, ni inscripciones que emerjan al variar el ángulo de visión. La pieza permanece inerte y muda, tan impenetrable como cuando empezó a examinarla.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1142 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 112 — 18/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3165 ms
+
+> "No me digas que esto es solo un trozo de piedra caro."
+> Sigo examinando la esfera, pero esta vez trato de sentir si emite algún tipo de vibración, calor o corriente de aire al pasar los dedos sobre ella.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 11+-1=10
+
+### [4] DM
+
+  5203 ms
+
+> Tus dedos recorren la superficie fría y perfectamente lisa de la esfera. Buscas cualquier indicio de vida, un pulso eléctrico, el rastro de un calor residual o incluso el sutil desplazamiento del aire que sugeriría una porosidad invisible.
+> La pieza se mantiene gélida y absolutamente estática bajo tu tacto. No hay vibraciones, ni corrientes, ni el más mínimo cambio de temperatura; es una masa inerte que no reacciona a tu contacto físico, devolviendo una sensación de vacío material.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1081 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 113 — 19/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3756 ms
+
+> "No parece haber nada vivo aquí dentro."
+> Sigo examinando la superficie de la esfera, buscando cualquier inscripción, marca de fabricación o símbolo que me indique su origen.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+-1=13
+
+### [4] DM
+
+  6962 ms
+
+> Tus ojos recorren minuciosamente la curvatura de la pieza, buscando cualquier irregularidad que rompa la perfección de su superficie. Tras un examen atento, detectas una serie de finísimas incisiones que solo son visibles cuando la luz incide en un ángulo muy preciso. No son letras, sino una sucesión de líneas geométricas y puntos que forman un patrón recurrente, casi como un mapa estelar o un código matemático grabado con una precisión quirúrgica.
+> La marca no parece haber sido tallada, sino fundida en el material mismo, creando un relieve casi imperceptible al tacto pero nítido a la vista. El diseño se repite tres veces alrededor del ecuador de la esfera, convergiendo en un punto central donde el grabado se vuelve más complejo y denso.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1465 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 114 — 20/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2451 ms
+
+> "Esto no es un simple adorno."
+> Intento descifrar el significado de los patrones geométricos y el código grabado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+-1=14
+
+### [4] DM
+
+  5004 ms
+
+> Las líneas y los puntos no forman palabras, sino una secuencia de coordenadas y magnitudes. Al seguir el flujo de los grabados, comprendes que el patrón representa una alineación específica de cuerpos celestes; no es un mapa de un lugar físico en la tierra, sino una guía para observar el cielo en un momento preciso.
+> El punto central, donde el diseño se vuelve más denso, actúa como un índice. Logras deducir que la esfera no es solo un objeto decorativo, sino una herramienta de cálculo astronómico diseñada para señalar una fecha o un evento cíclico, aunque el significado exacto de ese evento permanece oculto tras la complejidad del código.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1515 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 115 — 21/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2982 ms
+
+> "Así que no es un mapa, sino un reloj."
+> Intento descifrar si hay alguna fecha cercana o un evento astronómico inminente que pueda deducir del patrón.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+-1=0  PIFIA
+
+### [4] DM
+
+  7593 ms
+
+> Te concentras en el flujo de las coordenadas, tratando de forzar la lógica del patrón para extraer una fecha, pero la complejidad del código se vuelve repentinamente abrumadora. En un arrebato de frustración o descuido al manipular la esfera para alinear los puntos, tus dedos presionan una secuencia incorrecta de relieves. Un chasquido seco resuena en el metal y el mecanismo interno se bloquea con un sonido metálico y final; el índice central se desliza hacia una posición fija y el resto de los grabados dejan de girar, sellando la herramienta en una configuración errónea.
+> El silencio vuelve a llenar la estancia, pero ahora la esfera es un objeto inerte. El patrón que antes parecía sugerir un ciclo se ha vuelto caótico, y el punto de referencia que habías identificado ha desaparecido bajo una placa de metal que se ha cerrado herméticamente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3143 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: item.status
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 116 — 22/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3512 ms
+
+> "Maldita sea..."
+> Suelto un gruñido de frustración y empiezo a examinar la esfera minuciosamente, buscando alguna pestaña, ranura o punto de presión que me permita desbloquear el mecanismo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 10+-1=9
+
+### [4] DM
+
+  5449 ms
+
+> Tus dedos recorren la superficie fría del metal, palpando cada relieve y cada junta en busca de una debilidad en el cierre. El tacto es uniforme y las placas se han ensamblado con una precisión quirúrgica, dejando apenas una línea casi invisible donde antes giraban los anillos.
+> A pesar de tu insistencia, no encuentras ninguna pestaña oculta ni ningún punto de presión que ceda. La esfera se siente ahora como un bloque sólido de metal, una pieza única y hermética que se resiste a cualquier intento de manipulación superficial.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1508 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 117 — 23/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  6289 ms
+
+> "Maldita sea, no voy a dejar que un trozo de metal me gane."
+> Sigo examinando la esfera, pero esta vez busco cualquier inscripción, marca de fabricante o símbolo grabado que pueda darme una pista de cómo abrirla.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+-1=2
+
+### [4] DM
+
+  4760 ms
+
+> Pasas los dedos una vez más sobre la superficie, concentrándote en buscar cualquier muesca o grabado que se te haya escapado. Sin embargo, el metal es exasperantemente liso; no hay letras, ni runas, ni siquiera una marca de fundición que indique su origen.
+> La esfera permanece muda y opaca bajo tu mirada, devolviéndote el reflejo de tu propia frustración sin revelar el más mínimo secreto en su estructura.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1005 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 118 — 24/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2866 ms
+
+> "No me digas que eres solo un trozo de metal caro."
+> Guardo la esfera en mi zurrón y me pongo en pie. Miro a mi alrededor buscando cualquier rastro o pista que haya pasado por alto en la zona.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 15+4=19
+
+### [4] DM
+
+  8346 ms
+
+> El entorno, ahora examinado con detenimiento, revela que el suelo alrededor del punto donde hallaste la esfera ha sido removido recientemente. Entre la tierra seca y las piedras sueltas, resaltan varias huellas de botas pesadas que se dirigen hacia el norte, hacia la espesura del bosque, y una serie de marcas lineales, profundas y paralelas, que sugieren que algo pesado fue arrastrado por el terreno antes de que el rastro se perdiera en la maleza.
+> A unos metros, enganchada en una rama baja y espinosa de un arbusto, cuelga una tira de tela de lino crudo, desgarrada y manchada de un barro grisáceo que no coincide con el color de la tierra de esta zona. El viento agita el trozo de tela con un rítmico chasquido, señalando la dirección exacta en la que se alejaron quienes estuvieron aquí.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7539 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = esfera de color ámbar turbio
+  ✓ creación item: tira de tela de lino crudo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item tira de tela de lino crudo
+  → delta 4100: Isolde.inventory = esfera de color ámbar turbio
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 119 — 25/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2635 ms
+
+> "¿Y esto qué es? No parece barro de por aquí."
+> Recojo el trozo de tela y examino el tipo de tejido y la mancha.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 5+-1=4
+
+### [4] DM
+
+  5634 ms
+
+> Sujetas la tira de lino crudo entre los dedos. La tela es áspera, de una calidad basta, típica de prendas de trabajo o sacos, pero el tacto es pegajoso y deja un residuo frío en la piel. 
+> Al observar la mancha de barro grisáceo, no logras distinguir ninguna propiedad particular ni reconocer su origen. Para ti, es simplemente una costra de lodo oscuro y denso que se resiste a desprenderse del tejido, sin ofrecer ninguna pista sobre el lugar de donde proviene.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1240 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 120 — 26/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3371 ms
+
+> "Qué asco..."
+> Limpio el residuo frío de mis dedos en mi ropa y guardo la tira de lino en un bolsillo, asegurándome de que no toque nada más. Me pongo en pie y miro a mi alrededor buscando cualquier rastro de barro similar en el suelo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+4=10
+
+### [4] DM
+
+  4542 ms
+
+> Te pones en pie y recorres con la mirada la superficie del suelo, buscando cualquier rastro de esa sustancia grisácea y densa. Sin embargo, el terreno bajo tus pies se muestra uniforme; no hay salpicaduras, huellas ni manchas que coincidan con el barro de la tela. El entorno permanece limpio de cualquier residuo similar, dejándote solo con la tira de lino guardada en tu bolsillo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1368 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 121 — 27/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3121 ms
+
+> "Nada aquí. Extraño."
+> Guardo la tela y empiezo a caminar hacia el límite del área, buscando cualquier señal de donde pueda venir ese material.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 12+4=16
+
+### [4] DM
+
+  5979 ms
+
+> Tus pasos te llevan hacia el borde del claro, donde la vegetación comienza a cerrarse y el terreno desciende ligeramente. Al analizar la disposición de las plantas y la compactación de la tierra, notas que el suelo no es natural; hay una ligera depresión que sugiere el paso recurrente de peso pesado, aunque el viento y las hojas secas han intentado borrar el rastro.
+> Siguiendo el sentido de esa sutil hendidura, llegas a un punto donde la maleza se abre en un sendero estrecho y mal definido. Allí, justo en el borde de un matorral de espinos, encuentras una pequeña mancha de esa misma sustancia grisácea, seca y agrietada, adherida a una raíz expuesta. La mancha apunta directamente hacia el corazón del bosque, alejándose del camino principal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1070 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 122 — 28/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2346 ms
+
+> "Así que alguien ha estado moviendo cosas pesadas por aquí."
+> Me agacho para observar la sustancia grisácea más de cerca y trato de identificar qué es.
+> {Naturaleza}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Naturaleza: 1+1=2  PIFIA
+
+### [4] DM
+
+  5451 ms
+
+> Te inclinas sobre la raíz, concentrándote en la textura y el color de la mancha grisácea. Sin embargo, al intentar analizar la composición de la sustancia, tu pie resbala en la tierra suelta de la pendiente y pierdes el equilibrio bruscamente. Caes de bruces sobre la raíz expuesta, aplastando la muestra contra el suelo y mezclándola con barro y hojarasca húmeda.
+> El impacto te deja el rostro sucio y la sustancia, ahora totalmente deshecha y contaminada por la tierra, se vuelve una masa informe e irreconocible. El silencio del bosque vuelve a cerrarse sobre ti, mientras el rastro que antes era claro ha quedado borrado por tu propia caída.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1005 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 123 — 29/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3659 ms
+
+> "Maldita sea."
+> Me limpio el barro de la cara con la manga y me levanto lentamente, mirando la masa informe en el suelo con frustración. Intento buscar cualquier otro resto de la mancha grisácea en las raíces cercanas.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 4+4=8
+
+### [4] DM
+
+  4705 ms
+
+> Te pones en pie con el rostro manchado y la mirada fija en el suelo, recorriendo con insistencia los alrededores de la raíz donde ocurrió el accidente. El barro se ha adherido a las fibras de la madera y la hojarasca húmeda oculta cualquier detalle menor del terreno.
+> Tus ojos escudriñan las raíces adyacentes y los huecos entre las piedras, pero no encuentras ninguna otra mancha grisácea; solo ves el marrón monótono de la tierra y el verde oscuro del musgo. El rastro ha desaparecido por completo en este punto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1995 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 124 — 30/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2934 ms
+
+> "Maldita sea, se ha borrado."
+> Me pongo en cuclillas y empiezo a remover la hojarasca y el barro con las manos, buscando cualquier resto que haya quedado atrapado bajo la superficie.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 3+4=7
+
+### [4] DM
+
+  5691 ms
+
+> Tus dedos se hunden en la tierra fría y viscosa, removiendo capas de hojas podridas que desprenden un olor acre a humedad y descomposición. Excavas con insistencia en los huecos entre las raíces, pero el barro denso se pega a tu piel y solo encuentras piedras lisas y fragmentos de madera quebrada.
+> El sustrato está demasiado saturado de agua; cualquier rastro volátil o residuo ligero ha sido absorbido por la tierra o arrastrado por la filtración del terreno. No hay nada bajo la superficie que te indique la dirección o la naturaleza de lo que buscas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1396 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 125 — 31/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3399 ms
+
+> "Maldita sea esta tierra."
+> Me limpio las manos en la ropa, frustrada, y me pongo en pie para observar el entorno buscando algún rastro que no esté enterrado.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 6+4=10
+
+### [4] DM
+
+  4905 ms
+
+> Te yergues sobre el terreno pantanoso, sacudiendo el barro de tus prendas mientras tu mirada recorre el paisaje. El entorno es una masa monótona de gris y marrón; la vegetación se retuerce en formas caprichosas y la niebla baja oculta los relieves del suelo, fundiendo los límites entre el bosque y el camino. 
+> A pesar de tu escrutinio, el paisaje no ofrece pistas claras. Los rastros superficiales han sido borrados por la humedad persistente y el viento ha desdibujado cualquier marca en la hojarasca. Todo parece haberse fundido en un silencio húmedo y vacío que no revela nada nuevo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1192 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 126 — 32/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1912 ms
+
+> "Maldita sea esta humedad." 
+> Me agacho para examinar más de cerca la vegetación retorcida, buscando cualquier señal de que algo haya pasado recientemente por aquí.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 14+4=18
+
+### [4] DM
+
+  5789 ms
+
+> Al acercarte al suelo, el olor a materia orgánica en descomposición se vuelve más intenso. Entre las raíces nudosas de un sauce llorón, donde el barro es más espeso y la vegetación se ha aplastado, detectas una huella profunda y ancha. No es natural; el patrón indica el peso de una bota reforzada que se hundió violentamente, sugiriendo que quien la dejó llevaba una carga considerable o caminaba con urgencia.
+> Siguiendo el rastro unos pasos más allá, encuentras un jirón de tela bastarda, de un color ceniza descolorido, enganchado en una espina. La fibra está empapada y fría, pero el rasgado es reciente; el hilo aún no se ha deshilachado por la erosión del viento. El rastro se dirige hacia el noreste, perdiéndose donde la niebla se vuelve una pared blanca y opaca.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3181 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: jirón de tela bastarda
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item jirón de tela bastarda
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 127 — 33/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1934 ms
+
+> "Demasiado pesado para ser un campesino."
+> Recojo el trozo de tela ceniza y examino la huella para intentar determinar el tipo de bota.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 19+4=23
+
+### [4] DM
+
+  6073 ms
+
+> La huella revela una suela de cuero endurecido con clavos de hierro incrustados en el talón y la punta, un diseño pensado para el agarre en terrenos escarpados y el soporte de armaduras pesadas. No es el calzado de alguien que labra la tierra, sino la bota de un soldado o un mercenario acostumbrado a marchar con equipo de combate. El hundimiento es asimétrico, cargado hacia el lado derecho, lo que confirma que el sujeto transportaba un objeto voluminoso o una herida que le obligaba a cojear.
+> El trozo de tela ceniza, al tacto, resulta áspero y denso, tratado con ceras para repeler la humedad. Es el tejido típico de las capas militares de las guarniciones fronterizas, diseñadas para camuflarse en la bruma y resistir el desgaste del camino. El rastro es nítido y decidido, cortando la maleza sin vacilación hacia el noreste, donde la niebla engulle cualquier otro detalle del paisaje.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2843 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: trozo de tela ceniza
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item trozo de tela ceniza
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 128 — 34/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3739 ms
+
+> "Un soldado herido y con carga. Esto no es un simple extravío."
+> Sigo el rastro hacia el noreste, tratando de no dejar huellas propias mientras avanzo por la maleza.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 15+4=19
+
+### [4] DM
+
+  5190 ms
+
+> Te deslizas entre la maleza con la fluidez de un depredador, aprovechando los huecos de las rocas y la densidad de los arbustos para borrar tu rastro. El terreno se vuelve más abrupto y el aire se espesa, cargado de un olor a hierro y humedad que se filtra a través de la bruma.
+> A unos cincuenta metros, el rastro se vuelve errático; las huellas se hunden más profundamente en el barro, indicando que el sujeto ha tenido que detenerse o arrastrarse. Entre dos sauces retorcidos, vislumbras una silueta encorvada, envuelta en esa misma tela ceniza, que jadea con un sonido húmedo y metálico mientras intenta sostenerse apoyada contra un tronco. A su lado, un fardo de cuero oscuro gotea un líquido espeso que tiñe la tierra de un carmesí oscuro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2534 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación npc: Soldado herido
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: npc Soldado herido
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 129 — 35/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  22 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2008 ms
+
+> "No te muevas."
+> Me acerco con cautela, manteniendo la distancia y observando la silueta y el fardo para ver si hay más amenazas cerca.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+4=10
+
+### [4] DM
+
+  4035 ms
+
+> La silueta se tensa violentamente ante el sonido de tu voz, soltando un gemido ahogado que termina en un estertor. Al acercarte, la figura se desliza lentamente por el tronco del sauce, quedando sentada en el barro; su respiración es errática y el tejido ceniza de su ropa está empapado en el mismo carmesí que gotea del fardo.
+> Tus ojos recorren el perímetro, pero la bruma densa y el ruido del viento entre las hojas ocultan cualquier movimiento sospechoso. No percibes ninguna amenaza inmediata acechando en la maleza, solo el silencio opresivo del bosque y el sonido del líquido espesando sobre el suelo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1129 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 130 — 36/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  22 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1526 ms
+
+> "No te muevas, que podrías empeorar las cosas."
+> Me arrodillo a su lado y examino la gravedad de sus heridas.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 17+2=19
+
+### [4] DM
+
+  4930 ms
+
+> La figura exhala un suspiro tembloroso y cierra los ojos, rindiéndose a tu indicación mientras su cabeza cae pesadamente contra la corteza del sauce. Al apartar la tela empapada, descubres que la hemorragia proviene de un corte profundo y limpio en el costado, que ha desgarrado el músculo pero no parece haber alcanzado órganos vitales. El tejido alrededor de la herida está pálido y frío, pero el pulso, aunque débil y acelerado, es constante.
+> Con la precisión de quien conoce la anatomía, determinas que la pérdida de sangre es alarmante pero controlable si se detiene el flujo ahora mismo. La persona no ha entrado aún en un estado de shock irreversible, aunque el estertor inicial sugiere que el dolor y la pérdida de fluidos están empezando a nublar su conciencia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2225 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 131 — 37/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  22 entidades · contexto de 709 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2561 ms
+
+> "No te mueras ahora, que no pienso cargar con tu cuerpo."
+> Saco mis vendas y presiono con fuerza la herida para detener la hemorragia.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 7+2=9
+
+### [4] DM
+
+  4984 ms
+
+> La presión de las vendas provoca que el herido suelte un gemido ahogado, un sonido gutural que vibra contra la corteza del sauce. A pesar de tus esfuerzos, la sangre fresca empapa rápidamente la tela blanca, filtrándose entre tus dedos y manchando la tierra húmeda. El corte es demasiado profundo para que una presión superficial detenga el flujo con eficacia; la hemorragia continúa a un ritmo preocupante, aunque ya no es el torrente inicial.
+> El rostro de la figura se vuelve aún más ceniciento y sus párpados tiemblan, pero no abre los ojos. Su respiración se vuelve superficial, una serie de jadeos cortos y erráticos que indican que el cuerpo está empezando a luchar contra la pérdida de fluidos. El pulso, que hace un momento era constante, comienza a sentirse más errático bajo tu tacto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  901 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Cebrián Poyo: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 132 — 38/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2499 ms
+
+> "No te mueras ahora, maldita sea."
+> Busco desesperadamente en mi equipo algún ungüento o material que pueda ayudar a cerrar la herida más allá de la simple presión.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 4+2=6
+
+### [4] DM
+
+  5071 ms
+
+> Tus dedos rebuscan frenéticamente entre los compartimentos de tu equipo, pero el pánico y la urgencia nublan tu juicio. Entre el caos de viales y vendas, no logras localizar nada que sea útil para una hemorragia de esta magnitud; solo encuentras ungüentos para rozaduras leves y suministros que resultan insuficientes para el daño que presenta el soldado.
+> El hombre suelta un estertor seco, una burbuja de sangre explotando en la comisura de sus labios. El tejido de la venda, ya saturado y pesado por el líquido carmesí, se desliza sobre la piel pálida, dejando que la sangre vuelva a brotar con fuerza mientras el pulso bajo tus dedos se vuelve un hilo débil y vacilante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1177 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 133 — 39/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2190 ms
+
+> "¡No te mueras ahora, maldita sea!"
+> Presiono la herida con toda mi fuerza usando el peso de mi cuerpo y busco desesperadamente cualquier trozo de tela limpia en mi ropa para hacer un torniquete.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 5+2=7
+
+### [4] DM
+
+  5072 ms
+
+> Tus manos presionan la carne abierta con desesperación, pero el tejido está demasiado desgarrado y el flujo sanguíneo es una marea que no cede. Al intentar improvisar el torniquete con los retales de tu ropa, la tela se desliza sobre la piel sudorosa y empapada; el nudo no aprieta lo suficiente y el trapo se tiñe de rojo en cuestión de segundos, fallando en contener la hemorragia.
+> El soldado abre los ojos un instante, pero su mirada está nublada, perdida en algún punto del cielo. Sus pulmones luchan por aire en un ritmo errático y el calor de su cuerpo comienza a evaporarse, dejando que un frío antinatural se instale en sus extremidades mientras el pulso bajo tus dedos se desvanece casi por completo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3316 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Soldado herido · npc.status = dead
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4137: Soldado herido.status = dead
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 134 — 40/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4642 ms
+
+> "¡No te atrevas a morir ahora, maldita sea!"
+> Sigo presionando la herida con todo mi peso, ignorando la sangre en mi ropa, e intento buscar desesperadamente cualquier cosa en el equipo del soldado que sirva para hacer un nudo más firme.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 11+2=13
+
+### [4] DM
+
+  5997 ms
+
+> Tus dedos, resbaladizos por la sangre, rebuscan frenéticamente entre las correas y el cuero del equipo del soldado hasta que das con una tira de cuero resistente, un cordón de bota que aún conserva cierta rigidez. Con un movimiento brusco y desesperado, la colocas sobre la arteria y tiras con fuerza, anudándola con un apretón violento que hunde la piel. El flujo sanguíneo no se detiene en seco, pero el torrente se reduce a un goteo lento y espeso, permitiendo que la presión de tus manos empiece a surtir efecto.
+> El soldado suelta un gemido ahogado, una reacción instintiva al dolor del torniquete que le devuelve un rastro de conciencia. Sus pupilas se contraen ligeramente y, aunque su respiración sigue siendo superficial y errática, el color ceniza de su rostro se estabiliza. Te mira con una mezcla de confusión y agotamiento extremo, incapaz de articular palabra, mientras su mano intenta débilmente sujetar la manga de tu ropa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5242 ms · 1 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Soldado herido · life_saved
+  ✓ creación item: cordón de bota
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cordón de bota
+  → delta 4146: Soldado herido affinity 0.0 → 30.0  (any)
+     Deuda de sangre. No se olvida.
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 135 — 41/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos conocidos
+  23 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2469 ms
+
+> "Tranquilo, no te muevas si no quieres morir hoy."
+> Sujeto su mano con firmeza para que deje de tirar de mi manga y busco rápidamente entre sus pertenencias cualquier bolsa de monedas o objeto de valor.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 6+-1=5
+
+### [4] DM
+
+  7008 ms
+
+> El soldado exhala un suspiro tembloroso y deja que su mano caiga inerte sobre el barro, aceptando tu orden con un parpadeo lento. Sus ojos permanecen fijos en los tuyos, nublados por el shock, mientras sientes la pulsación débil de su corazón bajo la presión del torniquete.
+> Tus dedos recorren apresuradamente el cuero desgastado de su equipo, pero la urgencia te juega una mala pasada. Al buscar con torpeza entre los pliegues manchados de sangre y polvo, solo encuentras el tacto áspero de una ración de viaje endurecida y un pequeño amuleto de madera tallada que cuelga de un hilo sucio. No hay bolsas de cuero que tintineen ni relieves que sugieran monedas ocultas en los compartimentos que alcanzas a revisar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5262 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: amuleto de madera tallada
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item amuleto de madera tallada
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 136 — 42/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos conocidos
+  24 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2647 ms
+
+> "Maldita sea... ni una sola moneda."
+> Sigo revisando el cuerpo con más calma, buscando cualquier costura falsa o compartimento oculto en su ropa.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+-1=17
+
+### [4] DM
+
+  5575 ms
+
+> Tus dedos se deslizan con más método sobre la tela gruesa del uniforme, palpando las costuras del forro y los dobladillos del pantalón. Al llegar a la parte interna de la bota derecha, sientes un relieve rígido y delgado que habías pasado por alto en la urgencia. Con un tirón seco, extraes un pequeño trozo de pergamino encerado, doblado meticulosamente y envuelto en una tira de cuero para protegerlo de la humedad del barro.
+> El soldado suelta un gemido ahogado, una vibración gutural que no llega a ser palabra, mientras su mirada se clava en el papel que acabas de recuperar. Sus dedos se contraen débilmente, como si quisiera alcanzar el mensaje, pero no tiene fuerza suficiente para levantar el brazo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2038 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: pergamino encerado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item pergamino encerado
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 137 — 43/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos conocidos
+  25 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1886 ms
+
+> "Tú ya no necesitas esto."
+> Guardo el pergamino en mi propia ropa y me alejo del soldado para leerlo sin que pueda verme.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 13+4=17
+
+### [4] DM
+
+  3920 ms
+
+> Te deslizas con pasos ligeros y precisos, aprovechando los puntos ciegos del terreno y el ruido ambiental para ganar distancia. El soldado permanece tendido, con la respiración errática y la mirada perdida en el vacío, incapaz de seguir tus movimientos una vez que desapareces tras el amparo de un muro derruido y unos matorrales espesos.
+> Aislado del alcance de cualquier mirada, despliegas el pergamino encerado. La tinta es oscura y la caligrafía apresurada, casi violenta. El mensaje es breve y directo: *"El reparto no alcanza para todos. El Consejo del Granero ha desviado el tercio sur. No regreséis al Paso sin el sello de validación o no habrá raciones para vuestras familias"*.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2115 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: npc.inventory
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ campo no mutable propuesto: npc.inventory
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 138 — 44/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos conocidos
+  25 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2233 ms
+
+> "El Consejo del Granero... así que el hambre es planificada."
+> Guardo el pergamino rápidamente y busco alguna señal o rastro que indique hacia dónde se ha desviado ese tercio sur.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 18+4=22
+
+### [4] DM
+
+  5197 ms
+
+> Te agachas, rozando la tierra seca y analizando el terreno con detenimiento. El suelo, compactado por el paso frecuente de carros, revela surcos profundos y frescos que no siguen la ruta principal hacia el Paso. Al observar la disposición de las briznas de hierba aplastadas y el rastro de grano derramado que brilla débilmente bajo el sol, identificas una desviación deliberada hacia el valle flanqueado por riscos calizos, una ruta secundaria que evita los puestos de control habituales.
+> El rastro es claro y reciente; las huellas de las ruedas todavía mantienen la humedad del barro del fondo, indicando que el convoy se movió hace pocas horas. La dirección apunta directamente hacia una zona de almacenes naturales en las cuevas del sur, lejos de la vista del campesinado y del resto de la guarnición.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1062 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 139 — 45/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos conocidos
+  25 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1404 ms
+
+> "Así que prefieren jugar al escondite."
+> Sigo el rastro de grano y las huellas hacia el valle, moviéndome con cuidado para no dejar mi propia marca.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 13+4=17
+
+### [4] DM
+
+  4648 ms
+
+> Te deslizas entre la vegetación baja y las sombras proyectadas por los riscos calizos, fundiéndote con el paisaje mientras avanzas. El silencio del valle solo es roto por el crujido distante de alguna piedra y el zumbido de los insectos, pero tus pasos no dejan rastro sobre el terreno árido ni perturban la maleza.
+> A medida que te aproximas a la entrada de las cuevas, el rastro de grano se vuelve más denso, formando una línea dorada que desemboca en una abertura natural oculta por una cortina de hiedra seca. Desde tu posición, alcanzas a divisar a dos guardias apoyados en la pared de roca; hablan en voz baja, distraídos, mientras el eco de voces y el golpeteo de sacos siendo apilados resuenan desde el interior de la gruta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1458 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 140 — 46/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos conocidos
+  24 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1821 ms
+
+> Me quedo inmóvil entre los arbustos, observando la posición de los guardias y escuchando con atención para saber cuántos hay dentro.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  8186 ms
+
+> El aire se vuelve gélido y el silencio se expande, agudizando tus sentidos hasta el límite. Desde tu refugio, captas cada detalle: los guardias no solo están distraídos, sino que uno de ellos tiene la bota mal ajustada y se balancea rítmicamente, creando un punto ciego constante en su vigilancia. El rastro de grano que llega a la cueva no es accidental; hay un patrón de arrastre que indica que los sacos son pesados y que alguien los ha estado moviendo con prisa hacia el fondo.
+> Tus oídos filtran el ruido del interior con precisión quirúrgica. Distingues claramente la voz de un hombre dando órdenes bruscas y el jadeo cansado de otros cuatro individuos que cargan el botín. Sumando a los centinelas, hay seis personas en total. Escuchas el tintineo metálico de una armadura ligera y el sonido húmedo de alguien tosiendo sangre, seguido de un susurro que pide agua, ignorado por el líder del grupo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1062 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 141 — 47/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos conocidos
+  24 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1961 ms
+
+> Me deslizo aprovechando el punto ciego del guardia para acercarme más a la entrada de la cueva. Intento escuchar mejor quién es el hombre que da las órdenes.
+> {Sigilo}
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 10+4=14
+  Percepción: 3+4=7
+
+### [4] DM
+
+  4402 ms
+
+> Te desplazas como una sombra, sincronizando tus pasos con el balanceo del guardia. El frío muerde la piel, pero logras ganar terreno sin que el centinela desvíe la mirada de su sector, quedando a escasos metros de la boca de la cueva. El olor a humedad y grano rancio se intensifica mientras te pegas a la roca fría.
+> Desde esa posición, intentas agudizar el oído para identificar al hombre, pero el viento comienza a silbar entre las grietas de la piedra y el eco interior confunde las frecuencias. Captas la autoridad en el tono y la aspereza de su voz, pero las palabras se mezclan con el ruido ambiental y el jadeo del herido, impidiéndote reconocer el nombre o la procedencia del sujeto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  811 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 142 — 48/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos conocidos
+  24 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1669 ms
+
+> "No voy a dejar que el viento me gane."
+> Me deslizo con cuidado hacia una posición más ventajosa, tratando de acercarme lo suficiente a la entrada para escuchar con claridad sin ser vista.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 2+4=6
+
+### [4] DM
+
+  3411 ms
+
+> Un crujido seco resuena bajo tu bota al pisar un fragmento de pizarra suelta. El sonido, amplificado por el silencio del entorno, corta el silbido del viento como un látigo. El guardia, que hasta hace un instante mantenía la mirada fija en el horizonte, gira la cabeza bruscamente hacia tu posición, con la mano ya apretando el pomo de su espada.
+> —¿Quién anda ahí? —ladra el centinela, dando un paso firme hacia la roca donde te encuentras, mientras su mirada escudriña las sombras con sospecha.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  862 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 143 — 49/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos conocidos
+  24 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2717 ms
+
+> "Solo soy una viajera perdida, no hay necesidad de desenvainar el acero."
+> Me pongo de pie lentamente, manteniendo las manos visibles pero alejadas del cuerpo para no parecer una amenaza.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 13+0=13
+
+### [4] DM
+
+  2958 ms
+
+> El centinela se detiene en seco, aunque no relaja la tensión de su brazo sobre el pomo de la espada. Sus ojos recorren tu figura, evaluando la falta de armas evidentes y la lentitud de tus movimientos mientras el viento agita su capa. El ceño fruncido permanece, pero el tono de su voz pierde la agresividad del primer grito, transformándose en una desconfianza cautelosa.
+> —Viajera, ¿eh? —responde con un bufido, sin soltar el arma—. Estás muy lejos de cualquier camino transitado para estar simplemente «perdida». Baja de esa roca y camina hacia mí. Ahora.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  763 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 144 — 50/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos conocidos
+  24 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1148 ms
+
+> "No tengo intención de causar problemas, solo busco respuestas."
+> Bajo de la roca con calma, manteniendo las manos a la vista pero observando sus alrededores.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+2=10
+
+### [4] DM
+
+  3162 ms
+
+> El centinela no se mueve ni un centímetro mientras desciendes, manteniendo la mano firme sobre el pomo de su espada. Sus ojos no se apartan de tus manos, vigilando cada gesto con una rigidez profesional. Cuando terminas de bajar, el hombre suelta un resoplido seco y da un paso hacia adelante, acortando la distancia pero manteniendo un espacio prudencial.
+> —Las respuestas suelen costar cara en estas tierras, y los que dicen no querer problemas suelen ser los que más traen —dice, entornando los ojos—. Habla rápido. ¿Qué respuestas buscas y quién te ha enviado a este rincón del mundo?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  796 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 145 — 51/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos conocidos
+  24 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2637 ms
+
+> "No me ha enviado nadie. Solo busco saber quién manda aquí y cómo se gana la vida sin terminar en una zanja."
+> Sostengo la mirada del centinela sin retroceder, manteniendo las manos visibles pero relajadas.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 19+0=19
+
+### [4] DM
+
+  4064 ms
+
+> El centinela mantiene la mirada un instante más, evaluando la firmeza de tu postura y la honestidad en tu tono. La tensión de sus hombros cede ligeramente y su mano se desliza del pomo de la espada para descansar, ahora relajada, sobre la cadera. Su expresión no llega a ser amistosa, pero el rictus de sospecha se transforma en una mueca de resignación pragmática.
+> —Al menos no mientes con la mirada, eso ya es más de lo que puedo decir de la mayoría —responde con un tono más bajo—. Aquí manda el Consejo del Granero; ellos deciden quién come y quién pasa hambre. En cuanto a sobrevivir, la respuesta es sencilla: trabajas la tierra, pagas el diezmo y no te metas en los asuntos del Consejo. Si tienes manos fuertes y no te importa el barro, quizá encuentres un sitio donde no te muerdas la lengua para no acabar en esa zanja que mencionas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2031 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 146 — 52/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos conocidos
+  24 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1598 ms
+
+> "El Consejo del Granero, ¿eh? Me pregunto qué es exactamente lo que consideran 'asuntos del Consejo'."
+> Miro al centinela buscando cualquier rastro de desprecio o miedo al mencionar a los gobernantes.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+2=5
+
+### [4] DM
+
+  3274 ms
+
+> El centinela no reacciona con un gesto evidente; su rostro permanece como una máscara de piedra, imperturbable. No hay un temblor en sus manos ni un destello de pánico en sus ojos, pero tampoco hay orgullo en su postura. Simplemente se queda mirando el horizonte, donde el viento agita la vegetación seca, manteniendo el silencio el tiempo justo para que la pregunta quede suspendida en el aire.
+> —Lo que yo digo es que no te metas en sus asuntos —responde finalmente, con una voz monótona y carente de matices—. No hace falta entender la naturaleza de sus secretos para saber que el silencio es la herramienta más útil para seguir respirando en este lugar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1441 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 147 — 53/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos conocidos
+  24 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1439 ms
+
+> "El silencio no llena el estómago ni paga las deudas."
+> Me acerco un paso más hacia él, tratando de leer algún gesto que se le escape a esa máscara de piedra.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+2=14
+
+### [4] DM
+
+  3419 ms
+
+> El centinela no retrocede ante el paso, pero sus párpados caen ligeramente, un gesto casi imperceptible de cansancio o resignación. Sus ojos, aunque fijos en el horizonte, parecen apesadumbrados, como si cargaran con un peso que no tiene nada que ver con la armadura que viste.
+> A pesar de su tono gélido, notas que sus dedos tamborilean una vez, con un ritmo nervioso, contra la empuñadura de su arma. No hay rastro de hostilidad en ese movimiento, sino una tensión contenida, la señal de alguien que no está advirtiendo por malicia, sino por un miedo genuino a las consecuencias de hablar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  641 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 148 — 54/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos conocidos
+  23 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1724 ms
+
+> "Pareces más cansado que harto de mi presencia. ¿A qué le tienes tanto miedo?"
+> Me acerco un paso más, bajando la voz para que nadie más nos oiga, mientras observo sus manos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+2=9
+
+### [4] DM
+
+  3860 ms
+
+> El centinela tensa los hombros y desvía la mirada hacia los lados, asegurándose de que el viento sea el único testigo de vuestra cercanía. Sus dedos dejan de tamborilear bruscamente y se cierran con fuerza sobre la empuñadura, pero no levanta el arma; al contrario, se encoge ligeramente, como si intentara hacerse más pequeño bajo el peso de su propio peto.
+> —No es miedo a ti, forastero —murmura con una voz que ha perdido la gélida seguridad, revelando una aspereza quebrada—. Es miedo a que el silencio sea lo único que nos mantenga vivos hoy. Hay cosas que no se dicen en voz alta cuando las paredes tienen oídos y el hambre muerde más que los lobos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  851 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 149 — 55/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos conocidos
+  22 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1884 ms
+
+> "El hambre no es lo único que muerde aquí. ¿De qué tienes miedo exactamente?"
+> Me acerco un paso más a él, bajando el tono de voz para mantener la confidencialidad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+2=9
+
+### [4] DM
+
+  3632 ms
+
+> El centinela se tensa ante tu acercamiento, pero no retrocede. Sus ojos, hundidos y rodeados de ojeras profundas, escudriñan tu rostro buscando una señal de traición o burla, aunque su postura permanece sumisa, casi derrotada. El metal de su armadura emite un leve chirrido mientras exhala un suspiro pesado que huele a tabaco rancio y fatiga.
+> —¿De qué tengo miedo? —repite en un susurro, soltando una risa seca que termina en una tos ahogada—. De que el hambre nos vuelva locos antes de que llegue el siguiente convoy, y de que quienes se sientan en las sillas del Consejo prefieran vernos morir de pie que admitir que el granero está vacío.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  937 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 150 — 56/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 30.0 (loyal), 0 hechos conocidos
+  22 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1342 ms
+
+> "Tú también pareces alguien que sabe lo que es pasar hambre."
+> Me acerco un paso más, tratando de leer su expresión para ver si hay alguna oportunidad de obtener información útil.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+2=15
+
+### [4] DM
+
+  3702 ms
+
+> El centinela no aparta la mirada, pero el músculo de su mandíbula se relaja ligeramente ante tus palabras. Sus hombros caen, perdiendo esa rigidez defensiva, y por un instante el velo de apatía se rompe para dejar ver una vulnerabilidad cruda. No hay rastro de engaño en su gesto; su cansancio es genuino y su desprecio hacia los superiores es una herida abierta que comparte con naturalidad.
+> A medida que te acercas, notas que sus ojos no buscan una amenaza, sino un reflejo de humanidad. Se percibe en él una disposición abierta, una necesidad casi desesperada de ser comprendido por alguien que no sea un superior dando órdenes o un compañero peleando por una ración de pan. El hombre asiente lentamente, reconociendo el vínculo del hambre que acabas de plantear.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1620 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Soldado herido · ideal_honored
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4213: Soldado herido affinity 30.0 → 35.0  (any)
+     Actuaron según lo que él considera correcto.
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 35.0 (loyal), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 151 — 57/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 35.0 (loyal), 0 hechos conocidos
+  22 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1782 ms
+
+> "Parece que ambos sabemos lo que es que el estómago mande más que la razón."
+> Me acerco un poco más y trato de leer qué información útil puede darme alguien tan harto de sus jefes.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+2=14
+
+### [4] DM
+
+  3431 ms
+
+> El centinela suelta un suspiro que suena a rendición, dejando que el peso de su equipo lo hunda un poco más en los talones. Al observarlo de cerca, notas que su apatía no es desidia, sino el agotamiento de quien ha dejado de esperar que las cosas cambien; hay una lealtad residual hacia sus iguales, pero el puente que lo unía a sus mandos está completamente calcinado.
+> —La razón no llena la panza, y los de arriba tienen la razón y el grano —masca el soldado con una sonrisa amarga, bajando la voz mientras echa un vistazo rápido a su alrededor—. Si buscas saber dónde aprieta el zapato, solo tienes que mirar los sacos que no llegan al reparto. Los del Consejo del Granero están jugando a las matemáticas con nuestras vidas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1588 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Soldado herido · npc.knowledge = Los del Consejo del Granero están manipulando el reparto de grano
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4216: Soldado herido.knowledge = Los del Consejo del Granero están manipulando el reparto…
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 152 — 58/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 35.0 (loyal), 1 hechos conocidos
+  22 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2380 ms
+
+> "¿Y dónde guardan esos sacos que 'desaparecen'?"
+> Me acerco un poco más a él para que la conversación sea más privada.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 16+0=16
+
+### [4] DM
+
+  3788 ms
+
+> El soldado se inclina hacia ti, reduciendo la distancia hasta que puedes oler el metal oxidado de su armadura y el rastro de sudor viejo. Sus ojos se entornan, evaluando tu cercanía, pero la lealtad hacia quien reconoce su miseria gana la partida. Deja escapar un bufido seco y señala con un gesto imperceptible del mentón hacia la parte trasera de las almenas, donde el muro se curva hacia la zona de suministros.
+> —No los llevan lejos, solo los mueven de vista. Hay un anexo en el ala norte del Granero, una cámara de piedra que oficialmente es para "semillas de reserva", pero que huele a trigo fresco cada vez que el viento sopla del norte. La llave la tiene el capataz, pero la puerta trasera tiene un cerrojo que un golpe seco o una mano hábil abrirían sin rechistar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4587 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Soldado herido · npc.knowledge = Isolde reconoce su miseria
+  ✓ creación location: anexo en el ala norte del Granero
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location anexo en el ala norte del Granero
+  → delta 4223: Soldado herido.knowledge = Isolde reconoce su miseria
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 35.0 (loyal), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 153 — 59/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 35.0 (loyal), 2 hechos conocidos
+  23 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1220 ms
+
+> "Gracias por el aviso. Me servirá."
+> Me alejo del soldado y me dirijo hacia el ala norte del Granero, intentando pasar desapercibida mientras busco la puerta trasera.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 7+4=11
+
+### [4] DM
+
+  3074 ms
+
+> Te desplazas por el perímetro del Granero, aprovechando las sombras proyectadas por los muros de piedra y el ruido ambiente de la guarnición. Sin embargo, al intentar rodear la esquina hacia el ala norte, el roce de tu bota contra un montón de grava suelta provoca un chasquido seco que resuena en el silencio del callejón.
+> Un guardia que patrullaba la zona superior de la muralla gira la cabeza bruscamente hacia tu posición. No te ha visto con claridad, pero frunce el ceño y se asoma por el parapeto, escaneando el suelo con la mano apoyada en el pomo de su espada. Estás a pocos metros de la puerta trasera, pero el centinela ahora vigila atentamente el área.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  751 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 35.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 154 — 60/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 35.0 (loyal), 2 hechos conocidos
+  23 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4148 ms
+
+> Me pego rápidamente contra el muro de piedra, intentando fundirme con las sombras para que no distinga mi silueta.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 14+4=18
+
+### [4] DM
+
+  2858 ms
+
+> Te deslizas contra la piedra fría y rugosa, fundiéndote con la oscuridad del callejón justo cuando el guardia asoma la cabeza por el parapeto. El centinela escudriña la zona, sus ojos recorriendo los ángulos muertos y las sombras alargadas, pero tu silueta permanece invisible, camuflada por la penumbra y la irregularidad del muro.
+> Tras unos segundos de tensión, el guardia exhala un suspiro de fastidio y murmura algo sobre los gatos callejeros. Se endereza, dando la espalda a tu posición para retomar su camino por la pasarela superior, aunque el eco de sus botas sigue resonando rítmicamente sobre la piedra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  690 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 35.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 155 — 61/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 35.0 (loyal), 2 hechos conocidos
+  23 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1462 ms
+
+> Me quedo inmóvil un instante, escuchando el ritmo de sus pasos hasta que se alejen lo suficiente. Luego, intento deslizarme con cautela hacia la entrada que el guardia acaba de dejar descubierta.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  3617 ms
+
+> El silencio del callejón se vuelve absoluto, roto únicamente por el eco lejano y decreciente de las botas del centinela. Te desplazas como una exhalación, una sombra que fluye sobre el pavimento húmedo sin provocar el más mínimo roce contra la piedra ni el crujido de una sola brizna de escombro. 
+> Alcanzas el umbral de la entrada con una precisión quirúrgica, deslizándote bajo el arco de piedra justo antes de que el guardia pueda siquiera pensar en girar la vista. El aire dentro es pesado, cargado de polvo y un olor metálico que se filtra desde las profundidades del edificio, mientras la luz del exterior queda reducida a una fina línea blanca a tus espaldas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  772 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 35.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 156 — 62/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 35.0 (loyal), 2 hechos conocidos
+  22 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1006 ms
+
+> Me quedo inmóvil un instante, aguzando el oído y el olfato para detectar cualquier presencia cercana.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 19+4=23
+
+### [4] DM
+
+  2433 ms
+
+> El silencio interior es engañoso, pero tu atención disecciona el entorno. El olor metálico, que antes parecía general, se vuelve más nítido y dulce: es sangre fresca, concentrada en un punto específico a unos pocos metros, detrás de una columna de piedra que fragmenta la penumbra. El aire se desplaza rítmicamente, un jadeo débil y húmedo que lucha contra la densidad del polvo.
+> Más allá de esa respiración, el edificio permanece mudo. No hay pasos, ni el roce de armaduras, ni el murmullo de voces. Solo el sonido rítmico y agónico de alguien que intenta no hacer ruido mientras se desangra en la oscuridad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  743 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 35.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 157 — 63/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 35.0 (loyal), 2 hechos conocidos
+  21 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1075 ms
+
+> "¿Quién está ahí?"
+> Me acerco a la columna con cautela, manteniendo el arma lista y moviéndome sin hacer ruido.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 19+4=23
+
+### [4] DM
+
+  4466 ms
+
+> Te deslizas por el suelo polvoriento como una sombra, el peso de tu arma es la única certeza en el silencio sepulcral del edificio. Al rodear la columna de piedra, el olor a hierro se vuelve lacerante y la penumbra revela una figura apoyada contra la pared fría. Es un soldado, con la armadura abollada y una herida profunda en el costado que empapa su túnica de un rojo oscuro y brillante.
+> Al notar tu presencia, el hombre da un respingo violento, pero no tiene fuerzas para levantar su espada; el arma cae al suelo con un tintineo sordo. Sus ojos, nublados por el shock y el dolor, se clavan en ti con una mezcla de terror y una esperanza desesperada.
+> — Por los dioses... —susurra con un hilo de voz, mientras una burbuja de sangre estalla en sus labios—. No... no me dejan aquí. No me dejen morir en este agujero.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1081 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: dead, aprecio 35.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 158 — 64/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: dead, aprecio 35.0 (loyal), 2 hechos conocidos
+  20 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2079 ms
+
+> "Tranquilo. No te muevas."
+> Me acerco con cautela y me arrodillo a su lado para evaluar la gravedad de la herida.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 1+2=3  PIFIA
+
+### [4] DM
+
+  4832 ms
+
+> Al intentar estabilizar la herida, tus dedos torpes presionan con demasiada fuerza sobre el tejido desgarrado. Un gemido agudo y desgarrador escapa de la garganta del soldado mientras la herida, que parecía controlada, comienza a sangrar con una intensidad renovada, salpicando tu ropa y el suelo polvoriento.
+> El hombre palidece instantáneamente, sus ojos se dilatan por el dolor y su respiración se vuelve errática y superficial. Se encoge violentamente contra la pared, alejándose de tu toque con un espasmo de puro terror, mientras la sangre comienza a fluir más rápido entre sus dedos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1690 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Soldado herido · npc.status = alive
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4236: Soldado herido.status = alive
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 35.0 (loyal), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 159 — 65/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 35.0 (loyal), 2 hechos conocidos
+  20 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1322 ms
+
+> "¡Maldita sea! Quédate quieto si no quieres desangrarte aquí mismo."
+> Suelto el tejido con brusquedad y busco rápidamente algo con lo que hacer un vendaje más firme y compresivo.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 6+2=8
+
+### [4] DM
+
+  2970 ms
+
+> Tus manos rebuscan frenéticamente entre los harapos y el equipo cercano, pero la urgencia nubla tu juicio. El trozo de tela que logras rescatar está demasiado sucio o es demasiado corto; al intentar ceñirlo, el nudo se desliza o la presión no es la adecuada, dejando que la sangre siga empapando la prenda con un ritmo constante y alarmante.
+> El soldado te mira con ojos nublados, el terror transformándose en una resignación letárgica. Su respiración es ahora un silbido débil y entrecortado, y aunque intenta obedecer tu orden de quedarse quieto, su cuerpo tiembla involuntariamente, haciendo que el vendaje improvisado se afloje una vez más.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  988 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 35.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 160 — 66/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 35.0 (loyal), 2 hechos conocidos
+  20 entidades · contexto de 328 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1354 ms
+
+> "¡No te mueras ahora, maldita sea!"
+> Saco mi botiquín y busco vendas limpias y ungüentos para detener la hemorragia con propiedad.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 12+2=14
+
+### [4] DM
+
+  3421 ms
+
+> El ruido del cuero al abrirse y el aroma a alcohol y hierbas del botiquín cortan la tensión del momento. Con movimientos más precisos, aplicas el ungüento sobre la herida abierta y extiendes la venda limpia, ejerciendo una presión firme y constante que finalmente logra contener el flujo carmesí. La tela blanca se tiñe rápidamente, pero el ritmo alarmante de la sangre se detiene, quedando reducido a un goteo lento y manejable.
+> El soldado suelta un gemido ahogado, cerrando los ojos con fuerza mientras el dolor del tratamiento le devuelve una chispa de consciencia. Su respiración, aunque todavía débil, deja de silbar y comienza a estabilizarse. Abre un ojo, mirándote con una mezcla de agotamiento y gratitud, y exhala un suspiro tembloroso que suena a alivio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1364 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Soldado herido · life_saved
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4240: Soldado herido affinity 35.0 → 65.0  (any)
+     Deuda de sangre. No se olvida.
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 65.0 (devoted), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 161 — 67/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 65.0 (devoted), 2 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1231 ms
+
+> "No te muevas si no quieres volver a sangrar."
+> Sigo manteniendo la presión sobre la venda un momento más y observo su rostro para ver si recupera la lucidez.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 1+2=3  PIFIA
+
+### [4] DM
+
+  3374 ms
+
+> Mientras mantienes la presión, un movimiento brusco e involuntario del soldado, provocado por un espasmo de dolor, hace que tu mano resbale sobre la tela húmeda. El efecto es inmediato: el sello precario que habías logrado se rompe con un sonido húmedo y la sangre vuelve a brotar con fuerza, empapando no solo la venda, sino también tus dedos y el suelo bajo él.
+> El soldado abre los ojos de golpe, soltando un grito ahogado que se corta en un acceso de tos. Su rostro, ya pálido, adquiere un matiz ceniciento y su mirada se vuelve errática, perdiendo la lucidez que parecía recuperar para sumirse nuevamente en el shock.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1811 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Soldado herido · npc.status = alive
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4243: Soldado herido.status = alive
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 65.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 162 — 68/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 65.0 (devoted), 2 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1006 ms
+
+> "¡Maldita sea, aguanta!"
+> Intento presionar la herida con fuerza usando la palma de la mano para detener la hemorragia mientras busco desesperadamente más tela limpia.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 7+2=9
+
+### [4] DM
+
+  3260 ms
+
+> La palma de tu mano se hunde en la herida, pero la presión es insuficiente para contener el flujo carmín que se escapa entre tus dedos. El soldado se arquea violentamente, soltando un gemido ronco que se pierde en un borboteo; su piel, fría y pegajosa, comienza a sudar mientras el shock se profundiza.
+> A tu lado, los retales de tela que intentas reunir están ya demasiado impregnados de sangre o suciedad para ser útiles. El soldado clava sus dedos en tu brazo con una fuerza desesperada, sus pupilas dilatadas reflejan un terror animal mientras su respiración se vuelve superficial y errática.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1008 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 65.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 163 — 69/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 65.0 (devoted), 2 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2709 ms
+
+> "No te mueras ahora, maldita sea. Aguanta."
+> Intento buscar cualquier trozo de cuero o tela más limpia en su propio equipo para hacer un vendaje compresivo más efectivo.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 9+2=11
+
+### [4] DM
+
+  3358 ms
+
+> Tus manos rebuscan frenéticamente entre los correajes y el equipo del soldado, apartando cuero endurecido y hebillas oxidadas. Encuentras un trozo de tela amarillenta, una especie de paño de limpieza, pero al intentar colocarlo sobre la herida, el tejido se desliza sobre la superficie viscosa de sangre y no logra ejercer la presión necesaria para cerrar el flujo.
+> El soldado suelta un estertor ahogado, su agarre en tu brazo flaquea y su cabeza cae pesadamente hacia un lado. Sus ojos permanecen abiertos, nublados, mientras el ritmo de su corazón, que puedes sentir latiendo erráticamente bajo tu palma, comienza a ralentizarse peligrosamente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1338 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 65.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 164 — 70/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 65.0 (devoted), 2 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1141 ms
+
+> "No te mueras ahora, maldita sea."
+> Sigo presionando la herida con fuerza, usando todo mi peso para intentar frenar la hemorragia mientras busco desesperadamente en el resto de su equipo algo que sirva de vendaje real.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 18+2=20
+
+### [4] DM
+
+  3131 ms
+
+> Tus dedos encuentran finalmente un rollo de lino grueso, sucio pero resistente, oculto en un compartimento inferior de la mochila. Con un movimiento preciso y coordinado, aplicas el vendaje creando un torniquete improvisado que comprime la arteria contra el hueso. La presión es brutal, pero efectiva; el flujo viscoso de sangre se reduce a un goteo lento y el color comienza a regresar, muy gradualmente, a las mejillas pálidas del hombre.
+> El soldado exhala un suspiro largo y tembloroso, recuperando la consciencia en un parpadeo errático. Sus dedos se cierran con una fuerza sorprendente sobre tu muñeca, anclándose a ti como si fueras el único punto sólido en un mundo que se desvanecía.
+> —Gracias... —susurra con la voz rota, mientras una chispa de gratitud devota brilla en sus ojos nublados—. No... no debías... arriesgarte por alguien como yo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2118 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Soldado herido · life_saved
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4254: Soldado herido affinity 65.0 → 95.0  (any)
+     Deuda de sangre. No se olvida.
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 165 — 71/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  966 ms
+
+> "No te acostumbres. Solo odio ver la sangre desperdiciada."
+> Intento soltarme de su agarre con suavidad pero con firmeza.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 11+2=13
+
+### [4] DM
+
+  2588 ms
+
+> El soldado parpadea, procesando tus palabras con una sonrisa débil y amarga que apenas mueve los labios. Al intentar retirar tu muñeca, sus dedos se deslizan lentamente, soltándote no por falta de voluntad, sino porque el esfuerzo de hablar ha agotado sus últimas reservas de energía. Se deja caer pesadamente contra el suelo, aunque mantiene la mirada fija en ti, como si estuviera grabando tu rostro en su memoria.
+> A pesar de su estado crítico, notas que su expresión no es solo de alivio. Hay una tensión residual en su mandíbula y una sombra de urgencia que no encaja con la resignación de alguien que espera morir; sus ojos se desvían un instante hacia su mochila, ahora abierta y revuelta, antes de volver a centrarse en ti con una intensidad febril.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1035 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 166 — 72/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  913 ms
+
+> "Quédate tranquilo. No te muevas."
+> Sigo la mirada del soldado y rebusco rápidamente entre el contenido de su mochila abierta.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+-1=16
+
+### [4] DM
+
+  2312 ms
+
+> Tus dedos apartan frenéticamente raciones endurecidas, un odre de cuero vacío y algunos trozos de tela sucia. Entre el desorden, el tacto frío y rígido de un objeto rectangular destaca sobre el resto. Recuperas un pequeño estuche de cuero curtido que contiene un pergamino sellado con cera roja, donde se aprecia un emblema grabado que representa una espiga de trigo entrelazada con una espada.
+> El soldado exhala un suspiro tembloroso al ver que has encontrado el paquete. Sus ojos se dilatan y, aunque no puede articular palabras, emite un sonido gutural, una especie de súplica ahogada, mientras intenta desesperadamente señalar con un movimiento mínimo de la cabeza hacia el camino que conduce al norte, lejos de la posición actual.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2580 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = estuche de cuero con pergamino sellado
+  ✓ creación item: pergamino sellado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item pergamino sellado
+  → delta 4262: Isolde.inventory = estuche de cuero con pergamino sellado
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 167 — 73/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1234 ms
+
+> "¿Qué es esto? ¿Por qué te importa tanto?"
+> Sujeto el pergamino con fuerza y miro fijamente al soldado para descifrar su reacción.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+2=12
+
+### [4] DM
+
+  2267 ms
+
+> El soldado cierra los ojos un instante, apretando los dientes mientras un espasmo de dolor recorre su cuerpo. Su mirada vuelve a fijarse en el pergamino y luego en ti; no hay rastro de codicia ni de miedo personal en sus ojos, sino una urgencia desesperada, casi religiosa. Sus pupilas tiemblan, reflejando una lealtad que parece trascender su propia agonía.
+> A pesar de su esfuerzo por comunicarse, el hombre permanece sumido en un silencio forzado por la herida. Se limita a insistir con un gesto errático de la barbilla hacia el norte, donde el camino se pierde entre la bruma, mientras sus dedos arañan débilmente la tierra, instándote a marcharte antes de que alguien más encuentre el rastro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1098 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 168 — 74/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  934 ms
+
+> "No me iré sin saber qué es esto."
+> Tomo el pergamino de sus manos con cuidado y lo guardo rápidamente en mi ropa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+2=14
+
+### [4] DM
+
+  2650 ms
+
+> El soldado exhala un suspiro tembloroso al sentir que el pergamino ya no pesa en sus dedos, relajando la tensión de sus hombros como si acabara de entregar una carga sagrada. Sus ojos te siguen con una intensidad febril, pero ya no hay urgencia en sus gestos, solo una resignación agotada.
+> Al observar sus reacciones y la forma en que ha protegido el documento, notas que su insistencia no nace del valor material del objeto, sino de un sentido del deber absoluto. El hombre no teme por el pergamino en sí, sino por lo que representa y por quién podría intentar recuperarlo; su mirada hacia el norte no es una indicación de un tesoro, sino una advertencia sobre una amenaza que se aproxima por ese camino.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1589 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = pergamino sellado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4266: Isolde.inventory = pergamino sellado
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 169 — 75/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1889 ms
+
+> "Puedes descansar ahora. Yo me encargo."
+> Guardo el pergamino con cuidado y observo al soldado para intentar descifrar qué es exactamente lo que teme que venga del norte.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+2=8
+
+### [4] DM
+
+  4873 ms
+
+> El soldado cierra los ojos al escuchar tus palabras, dejando que su cabeza caiga pesadamente hacia un lado. Un rictus de alivio genuino surca su rostro pálido, y su respiración, aunque débil, comienza a estabilizarse mientras se entrega al agotamiento.
+> Al observarlo, notas que su miedo es una masa informe de tensión en su mandíbula y el temblor persistente de sus manos, pero no logras extraer ninguna pista concreta sobre la naturaleza de la amenaza. Sus gestos son los de un hombre que ha visto el horror, pero el origen exacto de ese terror permanece oculto tras el velo de su delirio y el cansancio extremo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  865 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 170 — 76/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1207 ms
+
+> "Descansa ahora, soldado. No te irás a ninguna parte."
+> Me acerco a él para registrar sus pertenencias en busca de cualquier mapa, carta o moneda que pueda dejarme.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 2+2=4
+
+### [4] DM
+
+  2998 ms
+
+> Tus dedos se deslizan con torpeza sobre la tela áspera y manchada de sangre del uniforme. En el intento de buscar compartimentos ocultos o bolsillos doblados, chocas accidentalmente con el brazo del soldado; este suelta un gemido ahogado y se agita bruscamente en sueños, aunque no llega a despertar del todo.
+> Tus manos regresan vacías. No encuentras ningún mapa, ni pergaminos, ni el tintineo de monedas ocultas entre las costuras de su ropa. Solo queda el olor a hierro y sudor frío que emana de su cuerpo exhausto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  853 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 171 — 77/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1121 ms
+
+> "Maldita sea, ni una moneda."
+> Suelto el uniforme y me alejo un paso del soldado. Miro a mi alrededor buscando cualquier otro objeto de valor que haya podido caer al suelo durante la pelea.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+4=20
+
+### [4] DM
+
+  3412 ms
+
+> Tus ojos barren el suelo, filtrando el caos de la batalla entre el barro y los restos de equipo destrozado. Bajo el borde de una carreta volcada, donde la luz llega apenas como un hilo gris, brilla un pequeño objeto metálico. Al acercarte, descubres una daga de hoja corta con el pomo tallado en hueso, parcialmente enterrada en la tierra húmeda, junto a un pequeño saco de cuero que ha perdido una costura, dejando escapar el brillo apagado de tres monedas de plata.
+> A pocos pasos, el viento mueve una tira de cuero que cuelga de un matorral; es una correa de suministros rota que aún sostiene una pequeña bolsa de tabaco y un frasco de vidrio grueso, sellado con cera, que contiene un líquido espeso y ambarino.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1469 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: daga de hoja corta con el pomo tallado en hueso
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item daga de hoja corta con el pomo tallado en hueso
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 172 — 78/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  744 ms
+
+> Me agacho rápidamente y recojo la daga y las monedas de plata.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 18+4=22
+
+### [4] DM
+
+  5847 ms
+
+> Tus dedos se cierran sobre el frío metal de la daga y el cuero húmedo del saco, asegurando el botín antes de que el barro lo reclame. Al enderezarte, tu mirada, aguzada por la tensión del campo de batalla, capta un detalle que habías pasado por alto: bajo el chasis destrozado de la carreta, a unos metros de donde estaba la daga, sobresale una bota de cuero gastado y manchada de sangre. 
+> Un gemido ahogado, casi imperceptible bajo el silbido del viento, emana de ese hueco. Al asomarte, ves a un soldado atrapado bajo una viga de madera; su respiración es errática y sus ojos, nublados por el dolor, se clavan en ti con una mezcla de terror y una esperanza desesperada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2548 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = daga de hoja corta con el pomo tallado en hueso
+  ✓ creación item: monedas de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item monedas de plata
+  → delta 4283: Isolde.inventory = daga de hoja corta con el pomo tallado en hueso
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 173 — 79/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 95.0 (devoted), 2 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1065 ms
+
+> "No te muevas, o podrías empeorarlo."
+> Me acerco al soldado y examino la viga para ver cómo puedo levantarla sin aplastarlo más.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 16+1=17
+
+### [4] DM
+
+  4928 ms
+
+> Te arrodillas en el barro, sintiendo el peso del aire cargado de hierro y humo. Al evaluar la viga, notas que el ángulo de apoyo es precario; un movimiento brusco podría deslizar la madera y aplastar el torso del hombre, pero encuentras el punto exacto donde la palanca es más efectiva. Con un esfuerzo coordinado, tensas los músculos y elevas la estructura lo justo para que el soldado pueda deslizarse fuera del peligro.
+> El hombre cae hacia atrás con un espasmo, jadeando violentamente mientras el aire vuelve a llenar sus pulmones. Se aferra a tu brazo con una fuerza sorprendente para alguien en su estado, sus dedos manchados de sangre hunden la tela de tu ropa.
+> —Gracias... por los dioses, gracias —susurra con la voz rota, sin soltarte, mirándote como si fueras el único punto firme en un mundo que se desmorona.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1565 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Soldado herido · life_saved
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4290: Soldado herido affinity 95.0 → 100.0  (any)
+     Deuda de sangre. No se olvida.
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 174 — 80/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1109 ms
+
+> "Tranquilo, ya estás fuera."
+> Le aparto la mano de mi brazo con firmeza pero sin brusquedad y me pongo en pie para observar el resto de los escombros.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 3+4=7
+
+### [4] DM
+
+  2878 ms
+
+> El soldado se deja caer sobre el barro, soltando un suspiro tembloroso mientras observa cómo te alejas. Se queda allí, ovillado y tiritando, con la mirada perdida en el cielo gris mientras intenta recuperar el aliento.
+> Al ponerte en pie y recorrer con la mirada el desastre, el panorama es confuso y caótico. Solo ves cúmulos de madera astillada, telas rasgadas y el rastro oscuro de la sangre mezclándose con el lodo. No logras distinguir nada inusual ni detectar ninguna amenaza inmediata entre los restos; para ti, el lugar es simplemente un cementerio de escombros y silencio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1072 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 175 — 81/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1124 ms
+
+> "Huyamos de aquí antes de que llegue alguien más."
+> Ignoro al soldado y empiezo a hurgar entre los escombros y las telas rasgadas buscando cualquier objeto de valor que haya quedado olvidado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+-1=16
+
+### [4] DM
+
+  2688 ms
+
+> Tus manos se hunden en el lodo frío y desgarran telas empapadas que huelen a hierro y humedad. Entre el caos de madera astillada y ceniza, tus dedos tropiezan con algo rígido y metálico que sobresale de un pliegue de cuero curtido. Al tirar de ello, extraes una pequeña bolsa de cuero reforzado que contiene tres monedas de plata y un anillo de hierro simple, gastado por el uso, que parece haber pertenecido a alguien que no buscaba ostentación.
+> Desde el suelo, el soldado emite un quejido ahogado, un sonido roto que se pierde en el viento. Sus ojos, nublados por el dolor, siguen tus movimientos entre los escombros, pero no pronuncia palabra, limitándose a tiritar violentamente mientras el frío del barro comienza a adormecer sus extremidades.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2652 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = monedas de plata
+  ✓ creación item: anillo de hierro simple
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item anillo de hierro simple
+  → delta 4296: Isolde.inventory = monedas de plata
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 176 — 82/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1258 ms
+
+> "Guarda silencio si quieres seguir respirando."
+> Guardo rápidamente las monedas y el anillo en mi propio equipo. Me inclino sobre el soldado para observar su estado.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 11+2=13
+
+### [4] DM
+
+  3058 ms
+
+> El soldado cierra los párpados con fuerza al escuchar tu advertencia, apretando los dientes en un esfuerzo por contener los gemidos. El frío parece haber calado hasta sus huesos, y su respiración es un silbido errático que empaña el aire gélido.
+> Al examinarlo, detectas que el mayor peligro inmediato no es la pérdida de sangre, que ha comenzado a coagularse lentamente bajo la suciedad, sino la hipotermia y una herida profunda en el muslo que requiere atención urgente para evitar una infección. Sus signos vitales son débiles, pero estables por el momento; el hombre lucha por mantenerse consciente, aunque sus pupilas reaccionan con lentitud.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4057 ms · 0 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = monedas de plata
+  ✓ delta Isolde · character.inventory = anillo de hierro simple
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4297: Isolde.inventory = monedas de plata
+  → delta 4298: Isolde.inventory = anillo de hierro simple
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 177 — 83/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1054 ms
+
+> "Resiste, no te duermas ahora."
+> Saco los vendajes de mi equipo e intento cerrar la herida del muslo para frenar cualquier riesgo de infección.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 7+2=9
+
+### [4] DM
+
+  2512 ms
+
+> Tus manos se mueven con torpeza sobre la tela ensangrentada. Al intentar ajustar el vendaje, el tejido se desliza sobre la piel húmeda y fría, dejando que una pequeña cantidad de sangre fresca vuelva a brotar. La presión que aplicas es insuficiente o el ángulo es incorrecto, y el vendaje queda flojo, sin lograr sellar la herida de manera efectiva contra la suciedad del entorno.
+> El soldado suelta un jadeo agudo, abriendo los ojos con una mirada nublada por el dolor y el pánico. Sus dedos se clavan débilmente en tu brazo mientras tiembla violentamente, el frío intensificando cada espasmo de su cuerpo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  912 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 178 — 84/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1025 ms
+
+> "Tranquilo, no te muevas. No voy a dejar que te desangres aquí."
+> Sujeto con firmeza el brazo del soldado para evitar que sus espasmos deshagan el vendaje e intento aplicar una presión más fuerte y precisa sobre la herida.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 11+2=13
+
+### [4] DM
+
+  2113 ms
+
+> El soldado exhala un gemido ahogado cuando presionas la herida, pero el movimiento es más decidido esta vez. Logras asentar la tela sobre el corte, frenando el flujo constante de sangre y transformándolo en un goteo lento y controlado. Aunque el vendaje no es perfecto y la suciedad del camino sigue siendo una amenaza, la hemorragia crítica se detiene.
+> El hombre deja de luchar contra ti y su cuerpo se desploma, agotado, mientras su respiración se vuelve pesada y superficial. Te mira fijamente, con las pupilas dilatadas, y sus dedos se aflojan sobre tu brazo, aunque no llega a soltarte del todo.
+> —Gracias... —susurra con la voz rota, mientras un escalofrío recorre sus hombros—. No... no me dejes solo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1456 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Soldado herido · life_saved
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4302: Soldado herido affinity 100.0 → 100.0  (any)
+     Deuda de sangre. No se olvida.
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 179 — 85/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  916 ms
+
+> "Tranquilo, no me voy a ninguna parte por ahora."
+> Sigo manteniendo la presión sobre el vendaje mientras observo los alrededores para asegurarme de que no venga nadie más.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 9+4=13
+
+### [4] DM
+
+  2257 ms
+
+> El soldado cierra los ojos un instante, soltando un suspiro tembloroso que suena a alivio, y su agarre en tu brazo se vuelve un roce débil, casi inconsciente. El silencio vuelve a caer sobre el camino, interrumpido únicamente por el zumbido de los insectos y el goteo rítmico de la sangre que aún empapa la tela.
+> Al levantar la vista, escaneas el horizonte y los márgenes del sendero. El paisaje permanece estático; no hay movimiento sospechoso entre los matorrales ni ruido de pasos acercándose. Por ahora, la soledad del camino es absoluta y el aire se siente pesado, cargado con el olor ferroso de la herida y el polvo seco de la tierra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1408 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 180 — 86/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1399 ms
+
+> "No te mueras todavía, que me debes una explicación."
+> Suelto el brazo del soldado y empiezo a registrar sus bolsillos y el equipo que lleve encima en busca de monedas o algo de valor.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 10+2=12
+
+### [4] DM
+
+  2065 ms
+
+> El soldado abre un ojo, esbozando una sonrisa débil y torcida ante tus palabras, aunque no tiene fuerzas para responder. Sus párpados vuelven a caer pesadamente mientras su respiración se vuelve superficial, dejándose llevar por el letargo del shock y la pérdida de sangre.
+> Tus dedos rebuscan entre las costuras desgastadas de su jubón y el cuero curtido de sus bolsas. El resultado es decepcionante: solo encuentras unas pocas monedas de cobre oxidadas y un trozo de tela sucia que sirve de pañuelo. No hay joyas, ni bolsas de oro, ni ningún objeto que destaque por su valor material entre sus pertenencias.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1152 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 181 — 87/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1706 ms
+
+> "Qué desperdicio de sangre."
+> Dejo las monedas de cobre a un lado y examino el pañuelo y el resto de su equipo buscando cualquier papel, nota o insignia que explique quién es o qué hacía aquí.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 6+-1=5
+
+### [4] DM
+
+  3154 ms
+
+> Tus dedos se deslizan por el cuero endurecido y las costuras deshilachadas del equipo, pero la búsqueda resulta estéril. El pañuelo es solo un trapo mugriento que huele a sudor rancio y hierro, y el resto de sus pertenencias no guarda ningún rastro de correspondencia, mapas ni insignias que revelen su rango o procedencia.
+> El soldado permanece inmóvil, sumido en su letargo, mientras el silencio del entorno vuelve a cerrarse sobre vosotros, dejando el equipo del hombre como un conjunto de trastos viejos y sin historia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1042 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 182 — 88/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1164 ms
+
+> "Vaya pérdida de tiempo."
+> Suelto el trapo con asco y empiezo a revisar el equipo buscando cualquier cosa que tenga valor material para vender.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 5+-1=4
+
+### [4] DM
+
+  2056 ms
+
+> Tus manos rebuscan con impaciencia entre las correas y los compartimentos del equipo, pero la frustración te acompaña en cada movimiento. Solo encuentras piezas de cuero gastadas, un odre de agua medio vacío y algunas herramientas de mantenimiento oxidadas que no atraerían la atención de ningún mercader respetable.
+> El equipo es tan anodino y pobre que cualquier intento de encontrar algo valioso termina en un puñado de trastos inútiles. No hay monedas ocultas, ni gemas, ni telas finas; solo el equipamiento básico de alguien que ha pasado demasiado tiempo en el barro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  788 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 183 — 89/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1256 ms
+
+> "Maldita sea... nada."
+> Suelto el equipo con un gesto de fastidio y miro a mi alrededor buscando cualquier cosa que pueda servir para conseguir unas monedas.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+4=10
+
+### [4] DM
+
+  15840 ms
+
+> El entorno es desolador. El barro se pega a tus botas y el olor a hierro y humedad lo inunda todo. A tu alrededor, los restos del campamento son poco más que trapos empapados y maderas astilladas que el viento arrastra sin rumbo, dejando el terreno desnudo y gris.
+> Tus ojos recorren el perímetro, pero no distingues nada que destaque entre la chatarra y los escombros. Todo lo que brilla es simplemente agua estancada reflejando un cielo plomizo; no hay bolsas olvidadas ni objetos de valor que hayan escapado al saqueo o al tiempo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1295 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 184 — 90/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1481 ms
+
+> "Maldita sea, no queda ni un clavo."
+> Me agacho para examinar los restos de las maderas astilladas, buscando cualquier rastro de algo útil o alguna pista de hacia dónde se llevaron lo valioso.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+-1=3
+
+### [4] DM
+
+  2438 ms
+
+> Tus dedos se hunden en la madera podrida y el barro frío mientras rebuscas entre los escombros. No hay marcas de arrastre claras ni rastros de lucha que indiquen una dirección específica; el viento y la lluvia han borrado cualquier huella reciente, dejando solo un caos de astillas y telas descompuestas que no revelan nada sobre el destino del botín.
+> El silencio del lugar solo es interrumpido por el chapoteo del agua estancada y el silbido del viento entre las maderas. No encuentras ni una sola pieza de valor ni una pista coherente entre los restos del campamento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  736 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 185 — 91/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1481 ms
+
+> "Maldita sea la lluvia."
+> Me pongo en pie y limpio el barro de mis manos. Me alejo unos pasos de los escombros para intentar obtener una perspectiva diferente del terreno.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 13+4=17
+
+### [4] DM
+
+  3196 ms
+
+> Al distanciarte del caos de los escombros, la vista se abre y el patrón del terreno emerge entre la bruma. A unos veinte pasos hacia el norte, donde el terreno desciende hacia una hondonada natural, el barro presenta una compactación anómala. A pesar de la lluvia, se distinguen surcos profundos y paralelos que no pertenecen al flujo del agua: son las marcas de un carro pesado que ha sido forzado a avanzar sobre el lodo, desviándose del camino principal para evitar ser visto.
+> El rastro es fresco; el agua aún no ha llenado completamente las hendiduras. Los surcos se dirigen con determinación hacia la espesura del bosque, donde la vegetación es más densa y el terreno comienza a elevarse, sugiriendo que quienquiera que transportara el botín buscaba el refugio de la canopea para ocultar su avance.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1931 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 186 — 92/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1078 ms
+
+> "Hacia el bosque, entonces."
+> Me acerco a los surcos para analizarlos mejor y comienzo a seguirlos con cautela hacia la espesura.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 12+4=16
+
+### [4] DM
+
+  3118 ms
+
+> Te inclinas sobre el barro, donde el olor a tierra mojada y hierro se vuelve más penetrante. Los surcos revelan que el carro no viajaba ligero; la profundidad de las huellas indica una carga considerable, y el ligero zigzagueo en los últimos metros sugiere que el conductor luchó contra la inercia del lodo antes de ganar el terreno firme del bosque.
+> Al adentrarte en la espesura, la luz se filtra débilmente a través de las copas de los árboles, creando un juego de sombras grises. El rastro es claro y constante, guiándote entre troncos centenarios y helechos empapados que azotan tus botas. El silencio del bosque solo es roto por el goteo rítmico de la lluvia sobre las hojas, pero las marcas en el suelo confirman que el vehículo no se ha desviado: sigue avanzando hacia el corazón de la arboleda.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1395 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 187 — 93/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1352 ms
+
+> "Demasiado pesado para ser un simple carro de suministros."
+> Sigo el rastro con cautela, tratando de no dejar mis propias huellas y vigilando que nada me siga.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 16+4=20
+
+### [4] DM
+
+  5365 ms
+
+> Te deslizas entre la maleza como una sombra más, fundiéndote con el gris del bosque. Tus pasos son imperceptibles, evitando las zonas de barro blando y apoyándote en las raíces expuestas de los robles para no dejar rastro alguno tras de ti. El entorno permanece imperturbable; ninguna rama cruje bajo tu peso ni el vuelo de los pájaros se altera por tu presencia.
+> El rastro del carro comienza a estrecharse mientras el camino se vuelve más accidentado. A medida que avanzas, el sonido del goteo es reemplazado por un eco lejano: el crujido de madera bajo tensión y el resoplido fatigado de animales de tiro que luchan contra el terreno. Te encuentras ahora en una posición ventajosa, oculto tras un espeso matorral de bayas silvestres, observando cómo el vehículo se detiene bruscamente en un claro donde el suelo es más firme.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  929 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 188 — 94/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1058 ms
+
+> "A ver qué traen esos animales..."
+> Me quedo agachada entre los matorrales, observando detenidamente la carga del carro y quiénes viajan en él.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 14+4=18
+
+### [4] DM
+
+  2911 ms
+
+> Desde tu escondite, la vista es clara. El carro es una estructura robusta de madera oscura, cargada hasta el límite con sacos de grano que se desbordan y varias cajas reforzadas con hierro que parecen contener herramientas o suministros pesados. Los animales de tiro, dos bueyes de pelaje cenizo, jadean con los costados agitados, soltando vapor por las fosas nasales en el aire frío del bosque.
+> Sobre la carga, tres figuras se mueven con urgencia. Dos de ellos son hombres armados con cuero tachonado y lanzas, que miran nerviosos hacia la espesura del bosque. El tercero, un hombre con una túnica manchada de sangre y barro, yace apoyado contra un saco de grano; tiene una herida abierta en el muslo que empapa la tela de un rojo oscuro, aunque permanece consciente, observando el camino con una expresión de agotamiento absoluto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  871 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 189 — 95/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1423 ms
+
+> "Parece que llevan algo más que grano."
+> Me mantengo oculta y observo mejor las cajas reforzadas para ver si hay algún sello o marca que indique quién las envía.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+4=6
+
+### [4] DM
+
+  2675 ms
+
+> Desde la espesura, el ángulo de visión es limitado y el movimiento constante del carro dificulta la tarea. Las cajas de hierro se balancean con cada bache del camino, haciendo que la luz del bosque juegue con las superficies metálicas y las sombras de la madera.
+> A pesar del esfuerzo, no logras distinguir ninguna marca, sello ni emblema en los costados de los cajones. Solo ves el metal frío y los remaches oxidados, manteniendo el misterio sobre el origen o el destino de la carga.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  758 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 190 — 96/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1273 ms
+
+> "Tarde o temprano tendré que saber qué llevan."
+> Sigo observando el carro mientras intento acercarme un poco más sin ser vista para notar si sale algún olor o sonido del interior de las cajas.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 11+4=15
+
+### [4] DM
+
+  2081 ms
+
+> Te deslizas entre los helechos y el musgo, aprovechando los crujidos del carro para enmascarar tu avance. Al quedar a escasos pasos de la carga, el aire se vuelve más denso y húmedo. Al acercar el rostro a las rendijas de los cajones, percibes un aroma metálico y penetrante, similar al del hierro oxidado mezclado con un rastro dulzón y pegajoso que evoca la sangre seca.
+> Desde el interior de una de las cajas, un sonido rítmico y sordo rompe el silencio del bosque: un golpe seco, como si algo pesado y blando chocara contra las paredes de metal con cada giro de la rueda. No es un ruido mecánico, sino algo orgánico y errático.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  987 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 191 — 97/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1066 ms
+
+> "¿Qué demonios llevan ahí dentro?"
+> Me acerco más a la caja, intentando asomarme por una rendija para ver qué es lo que golpea el metal.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 14+4=18
+
+### [4] DM
+
+  3649 ms
+
+> A través de la estrecha rendija, la luz se filtra en hilos polvorientos que revelan un interior oscuro y húmedo. Entre el hedor a hierro y dulzor, distingues una figura humana encogida, un soldado cuya armadura está abollada y manchada de un marrón oscuro. El hombre se sacude violentamente en un espasmo, golpeando con el hombro la pared de metal del cajón; su respiración es un silbido agónico que llena el espacio reducido.
+> El soldado gira la cabeza hacia la rendija y sus ojos, nublados por el dolor y la fiebre, se clavan en los tuyos. Al reconocerte, el pánico de su rostro se transforma instantáneamente en un alivio desesperado. "Por los dioses...", susurra con un hilo de voz que apenas logra superar el ruido del carro, "sácame de aquí antes de que vuelvan".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  910 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 192 — 98/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1073 ms
+
+> "No te muevas, que no quiero que te rompas más."
+> Me acerco a la rendija para intentar ver si hay algún cierre o pestillo que pueda manipular desde fuera.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+-1=15
+
+### [4] DM
+
+  2157 ms
+
+> Tus dedos recorren la superficie fría y rugosa del metal, tanteando los bordes de la rendija. Tras unos segundos de búsqueda, localizas un pestillo de hierro oxidado que mantiene la compuerta encajada en el marco; el mecanismo está parcialmente obstruido por restos de barro seco y suciedad, pero el resorte aún opone una resistencia elástica.
+> El soldado te observa con fijeza, conteniendo la respiración, mientras el carro sigue avanzando con un traqueteo rítmico que hace vibrar toda la estructura. Sus dedos arañan débilmente el suelo del cajón, esperando que el sonido del metal cediendo sea el preludio de su libertad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  705 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 193 — 99/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1094 ms
+
+> "No respires, si no quieres que nos pillen."
+> Intento accionar el pestillo con cuidado para evitar que el ruido alerte a los guardias.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 9+2=11
+
+### [4] DM
+
+  2345 ms
+
+> El pestillo cede, pero no con la suavidad necesaria. Al aplicar presión, el metal oxidado se resiste un instante para luego soltarse con un chasquido seco y metálico que resuena en el espacio cerrado del carro, seguido del sonido sordo del hierro chocando contra la madera.
+> El soldado se tensa violentamente, encogiéndose contra el fondo del cajón. Fuera, el traqueteo del carro no se detiene, pero se percibe el silencio súbito de uno de los guardias que camina al lado, quien detiene sus pasos y gira la cabeza hacia la compuerta, intrigado por el ruido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1073 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 194 — 100/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1443 ms
+
+> "No te muevas ni un centímetro."
+> Me deslizo rápidamente hacia el interior del carro para ocultarme y agarro al soldado por la ropa para mantenerlo callado.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 14+4=18
+
+### [4] DM
+
+  3476 ms
+
+> Te deslizas en el interior con un movimiento fluido, fundiéndote con las sombras y el olor a paja húmeda y hierro. Tu mano se cierra con firmeza sobre la tela basta de la túnica del soldado, quien se queda petrificado, conteniendo la respiración mientras sus ojos, dilatados por el pánico, se clavan en los tuyos.
+> Afuera, el guardia se acerca un par de pasos, haciendo crujir la grava bajo sus botas. Se detiene justo al lado de la compuerta y permanece en silencio unos segundos, escuchando el traqueteo rítmico de las ruedas y el viento. Tras un instante de duda, suelta un bufido impaciente y retoma la marcha, coordinando sus pasos con el resto de la escolta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  788 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 195 — 101/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 100.0 (devoted), 2 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1457 ms
+
+> "Ni un ruido, o te corto la garganta antes de que puedas gritar."
+> Aprieto el agarre sobre su túnica y lo empujo hacia la zona más oscura del establo para que no sea visto desde fuera.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 17+0=17
+
+### [4] DM
+
+  2641 ms
+
+> El soldado emite un sonido ahogado, un gemido que muere en su garganta mientras el terror se apodera de él. Al sentir la presión de tu mano y la amenaza gélida en su oído, sus músculos se tensan violentamente, pero no opone resistencia. Se deja arrastrar hacia la penumbra del establo, tropezando con un cubo de madera que vibra levemente al rozarlo, pero que no llega a volcar.
+> Una vez sumergidos en la oscuridad, donde el aire es denso y huele a estiércol y miedo, el hombre se desploma contra una pared de madera podrida. Tiembla incontrolablemente, con la mirada perdida y el pecho agitado, aunque se esfuerza en no emitir ni un solo suspiro. Te observa con una mezcla de pánico y una sumisión absoluta, esperando tu siguiente movimiento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  979 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Soldado herido · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4342: Soldado herido affinity 100.0 → 90.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 90.0 (devoted), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 196 — 102/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 90.0 (devoted), 2 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1073 ms
+
+> "Ahora vas a hablar. ¿Quién te paga y qué buscáis exactamente en este pueblo?"
+> Le aprieto el brazo contra la pared para mantenerlo inmovilizado mientras le miro fijamente a los ojos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 11+0=11
+
+### [4] DM
+
+  2289 ms
+
+> El soldado traga saliva con dificultad, sintiendo la presión de tu mano contra su brazo. Sus ojos se dilatan y el sudor frío le recorre las sienes, pero el pánico que lo atenaza parece bloquearle la lengua. Intenta abrir la boca para responder, pero solo emite un sonido ronco y entrecortado, mientras sacude la cabeza débilmente, como si el miedo a las consecuencias de hablar fuera tan asfixiante como tu agarre.
+> —No... no puedo... —susurra con la voz quebrada, cerrando los ojos con fuerza—. Me matarían... si saben que he hablado... por favor.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1187 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Soldado herido · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4346: Soldado herido affinity 90.0 → 80.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 80.0 (devoted), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 197 — 103/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 80.0 (devoted), 2 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1050 ms
+
+> "No me importa quién te mate, sino cuánto me paguen por salvarte."
+> Aprieto el agarre un poco más, acercando mi rostro al suyo para que sienta mi aliento.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 20+0=20  CRÍTICO
+
+### [4] DM
+
+  2441 ms
+
+> El soldado suelta un gemido ahogado cuando el agarre se cierra, y el aire gélido de tu aliento contra su piel parece romper el último vestigio de su resistencia. Sus ojos se abren de golpe, desencajados, y el pánico se transforma en una sumisión absoluta; ya no teme a quienes lo persiguen, sino a la amenaza inmediata y tangible que tiene delante. 
+> —¡Está bien! ¡Lo diré! —estalla en un sollozo, el cuerpo temblando violentamente bajo tu mano—. El reparto... no alcanzó para todos. El Consejo del Granero se quedó con la parte del Paso, nos obligaron a mentir sobre las raciones. ¡Por favor, suélteme, se lo he dicho todo!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4247 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Soldado herido · threat_made
+  ✓ delta Soldado herido · npc.knowledge = El Consejo del Granero se quedó con la parte del Paso y obligaron a mentir sobre las raciones
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4349: Soldado herido affinity 80.0 → 70.0  (mid)
+     Cede en el momento, lo guarda.
+  → delta 4350: Soldado herido.knowledge = El Consejo del Granero se quedó con la parte del Paso y …
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 198 — 104/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 70.0 (devoted), 3 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1890 ms
+
+> "El Consejo del Granero, ¿eh? Ahora empezamos a hablar en serio."
+> Lo suelto bruscamente y lo aparto de mi camino. Busco entre sus ropas o en sus bolsillos cualquier papel o sello que pruebe lo que acaba de decir.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 5+-1=4
+
+### [4] DM
+
+  4365 ms
+
+> El soldado cae de costado sobre el suelo helado, jadeando y encogiéndose sobre sí mismo mientras intenta alejarse arrastrando el cuerpo. Sus ropas están deshilachadas, manchadas de barro seco y sangre coagulada, y el olor a sudor rancio impregna la tela áspera de su uniforme.
+> Tus dedos rebuscan apresuradamente entre los pliegues de su jubón y los bolsillos rasgados, pero no encuentras nada más que algunas migajas de pan duro y un trozo de cuerda podrida. No hay pergaminos, ni sellos de cera, ni ninguna prueba física que respalde sus palabras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1611 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 199 — 105/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 70.0 (devoted), 3 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1998 ms
+
+> "No me sirves de nada si no tienes nada que darme."
+> Sigo registrando el cuerpo con más calma, buscando costuras falsas o algún compartimento oculto en el cinturón.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+-1=15
+
+### [4] DM
+
+  4949 ms
+
+> Tus dedos recorren el cuero agrietado del cinturón, palpando la rigidez de las correas y el frío metal de la hebilla. Tras un momento de búsqueda meticulosa, detectas una irregularidad en el forro interior, justo detrás de la placa del cierre. Con un tirón seco, el cuero cede, revelando un pequeño compartimento cosido a mano que contenía un anillo de hierro oxidado con una piedra opaca y un trozo de tela encerada donde alguien ha garabateado una serie de coordenadas y un nombre: *Valeria*.
+> El soldado suelta un gemido ahogado, cerrando los ojos mientras tiembla violentamente sobre el suelo helado. Sus dedos arañan la escarcha, pero no hace ningún intento de recuperar el objeto; se limita a exhalar un vaho blanco y errático, entregado a su suerte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2632 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = anillo de hierro oxidado y trozo de tela encerada
+  ✗ evidencia no literal: «un nombre: Valeria»
+  ⚠ nombres no reconocidos: Valeria
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4356: Isolde.inventory = anillo de hierro oxidado y trozo de tela encerada
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 200 — 106/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 70.0 (devoted), 3 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1139 ms
+
+> "¿Quién es Valeria?"
+> Sujeto al soldado por la solapa para obligarlo a mirarme mientras sostengo el anillo frente a sus ojos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 5+0=5
+
+### [4] DM
+
+  19574 ms
+
+> El soldado se sacude violentamente cuando lo levantas por la solapa, pero su cuerpo se siente hueco, como un saco de huesos y frío. Sus ojos, nublados y vidriosos, se enfocan con dificultad en el anillo de hierro, aunque no hay rastro de miedo en su mirada, solo una resignación profunda y agotada.
+> Apenas puede articular palabra; su voz es un hilo rasposo que se pierde entre los dientes castañeantes. "No... no sé... quién es ella ahora", susurra, dejando que su cabeza caiga pesadamente hacia un lado. "Solo... que el anillo... debía volver... a casa".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2473 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: alive, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 201 — 107/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: alive, aprecio 70.0 (devoted), 3 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1505 ms
+
+> "¿A qué casa? Habla claro antes de que te suelte."
+> Le aprieto más la solapa para obligarlo a mantenerme la mirada.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 1+0=1  PIFIA
+
+### [4] DM
+
+  1998 ms
+
+> El soldado suelta un gemido ahogado y sus ojos se ponen en blanco mientras su cuerpo se desploma, totalmente inerte. El tirón brusco de la solapa, sumado a su estado crítico, provoca que se desmaye instantáneamente, dejando que su cabeza golpee el suelo con un sonido seco. 
+> Ahora yace a tus pies, sumido en una inconsciencia profunda y gélida, con los labios entreabiertos y la respiración tan tenue que es casi imperceptible. El silencio vuelve a reinar en el lugar, y el hombre ya no responderá a ningún estímulo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1321 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Soldado herido · npc.status = captured
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4366: Soldado herido.status = captured
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 202 — 108/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1276 ms
+
+> "Vaya, qué fragilidad."
+> Rebusco rápidamente entre sus ropas y bolsillos en busca de monedas, joyas o cualquier papel que tenga valor.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 8+2=10
+
+### [4] DM
+
+  2355 ms
+
+> Tus dedos se deslizan con rapidez por las costuras desgastadas y los pliegues de la ropa ensangrentada del soldado. El tejido es áspero y huele a hierro y sudor rancio, pero la búsqueda resulta frustrante; no hay el tintineo de monedas ni el relieve de joyas ocultas en sus bolsillos.
+> Al final, solo logras extraer un trozo de cuero curtido y una pequeña bolsa de tela que, al abrirla, revela estar vacía, salvo por unos pocos granos de cereal secos y una mota de polvo. El hombre permanece inmóvil a tus pies, un saco de carne inerte que no guarda tesoros inmediatos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1227 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 203 — 109/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1238 ms
+
+> "Qué desperdicio."
+> Suelto la bolsa vacía y empiezo a revisar el equipo del soldado, buscando cualquier arma, daga o pieza de armadura que pueda vender.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+-1=16
+
+### [4] DM
+
+  3506 ms
+
+> Tus manos apartan la tela ensangrentada y revisan el equipo con ojo clínico. Tras unos instantes de búsqueda, encuentras una daga de hoja mellada y mango de madera vieja, cuya funda de cuero está cuarteada por el sol. También recuperas un peto de cuero endurecido, aunque presenta un corte profundo en el costado que ha dejado el pecho del soldado expuesto y que reducirá considerablemente su valor.
+> Al mover el cuerpo para alcanzar las correas del peto, el metal de la armadura raspa el suelo pedregoso con un sonido sordo. No hay más equipo de valor; el resto son solo correas deshilachadas y un casco de hierro abollado que ha perdido su forma original.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2025 ms · 0 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = daga de hoja mellada
+  ✓ delta Isolde · character.inventory = peto de cuero endurecido
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4371: Isolde.inventory = daga de hoja mellada
+  → delta 4372: Isolde.inventory = peto de cuero endurecido
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 204 — 110/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1115 ms
+
+> "Al menos esto servirá para algo."
+> Guardo la daga y el peto en mi equipo. Me pongo en pie y miro a mi alrededor buscando cualquier otro rastro de valor o señales de quién más estuvo aquí.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 8+4=12
+
+### [4] DM
+
+  2170 ms
+
+> Te levantas sacudiéndote el polvo y la sangre seca de las manos. El paisaje es una extensión de tierra yerma y piedras sueltas que parecen haber sido removidas recientemente; el viento sopla con un silbido constante, arrastrando partículas de arena que golpean tu equipo. A pocos pasos del cuerpo, el suelo muestra huellas profundas y desordenadas, marcas de botas pesadas que se dirigen hacia el norte, donde el terreno se vuelve más escarpado.
+> Sin embargo, más allá de las pisadas y los restos de la escaramuza, no hay ningún objeto que brille bajo el sol ni señales evidentes de suministros olvidados. Solo quedan los restos de una fogata ya fría, reducida a cenizas grises que el viento comienza a dispersar, y el silencio opresivo de un camino que parece haber sido vaciado a toda prisa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1415 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = daga y peto
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4376: Isolde.inventory = daga y peto
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 205 — 111/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1167 ms
+
+> "No pienso irme de aquí con las manos vacías."
+> Me acerco a las cenizas de la fogata y revuelvo los restos con el pie, buscando cualquier fragmento de metal o residuo que no se haya quemado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+-1=14
+
+### [4] DM
+
+  3425 ms
+
+> El pie remueve la capa de ceniza grisácea, que se eleva en una nube fina y amarga antes de ser arrastrada por el viento. Bajo el polvo carbonizado, el cuero de tu bota choca contra algo sólido y frío que no pertenece a la naturaleza del terreno. Al apartar más restos, emerge un pequeño relicario de hierro oxidado, cuya cadena se ha fundido parcialmente, dejando el objeto anclado a un trozo de madera quemada.
+> El metal está caliente al tacto por la fricción, pero el cierre permanece intacto. Dentro, protegido por el hierro, se adivina un pequeño pergamino enrollado y una piedra semipreciosa opaca, del tamaño de una uña, que ha resistido el fuego aunque ha perdido gran parte de su brillo original.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1432 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: relicario de hierro oxidado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item relicario de hierro oxidado
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 206 — 112/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1405 ms
+
+> "A ver qué guardabas aquí..."
+> Me agacho y trato de arrancar el relicario del trozo de madera quemada.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 8+1=9
+
+### [4] DM
+
+  1576 ms
+
+> Tiras con fuerza del relicario, pero el metal fundido ha creado un sello irregular y tenaz con el carbono de la madera. El trozo de tronco se resiste, hundiéndose más en la ceniza grisácea mientras el hierro chirría, negándose a soltarse del anclaje.
+> La pieza de madera se quiebra parcialmente, pero el relicario permanece firmemente soldado al núcleo del resto carbonizado, obligándote a cargar con el fragmento de tronco si deseas conservar el objeto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1440 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 207 — 113/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1162 ms
+
+> "Maldita sea, no te sueltes ahora."
+> Gruño y arranco el trozo de tronco entero, cargando con el peso del resto carbonizado para no perder el relicario.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 11+1=12
+
+### [4] DM
+
+  1791 ms
+
+> Un crujido seco y violento resuena en el silencio del lugar mientras la madera carbonizada cede. El esfuerzo te obliga a tensar los músculos, pero el fragmento de tronco se desprende finalmente del suelo, arrancando consigo una pequeña nube de ceniza gris que flota a tu alrededor.
+> Sostienes ahora el trozo de madera quemada, pesado y áspero, con el relicario fundido en su núcleo como un corazón de hierro oscuro. El metal sigue caliente al tacto, transmitiendo una vibración sorda que se siente en la palma de tu mano.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1727 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 208 — 114/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1037 ms
+
+> "Vaya... no eres solo metal y ceniza."
+> Sigo sosteniendo el relicario, concentrándome en esa vibración para intentar comprender qué es lo que provoca.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+-1=1
+
+### [4] DM
+
+  1823 ms
+
+> Cierras los ojos y te concentras en el pulso del metal, intentando descifrar el origen de esa vibración. Sin embargo, la sensación es caótica y errática; el calor residual del hierro nubla tu percepción y la vibración se siente más como un eco vacío o una reacción física al enfriamiento que como una señal comprensible.
+> El relicario permanece mudo ante tu escrutinio, devolviéndote únicamente la aspereza del carbón y el peso muerto del metal fundido. No logras discernir ningún patrón, magia o propósito detrás del temblor que recorre tu mano.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  859 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 209 — 115/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1251 ms
+
+> "No me digas nada, maldito trozo de hierro."
+> Suelto el relicario con brusquedad y me pongo en pie, sacudiéndome el polvo de la ropa. Miro a mi alrededor buscando cualquier otra cosa que pueda haber pasado desapercibida.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+4=10
+
+### [4] DM
+
+  3090 ms
+
+> El relicario cae sobre el suelo con un sonido sordo y metálico, levantando una pequeña nube de ceniza que se disipa rápidamente. Te pones en pie y recorres la zona con la mirada, pero el entorno es monótono; el gris del polvo y los restos carbonizados dominan el paisaje, camuflando cualquier objeto pequeño o detalle sutil que pudiera haber quedado oculto entre los escombros.
+> A tu alrededor, el silencio vuelve a asentarse, roto únicamente por el viento que silba entre las estructuras derruidas. No percibes ningún movimiento extraño ni ningún objeto que destaque sobre la desolación del lugar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  884 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 210 — 116/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1073 ms
+
+> "Aquí tiene que haber algo más."
+> Recojo el relicario y empiezo a remover los escombros carbonizados a mi alrededor, buscando cualquier rastro de valor o pistas ocultas.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+-1=16
+
+### [4] DM
+
+  2293 ms
+
+> Tus dedos se hunden en el hollín y la madera calcinada, removiendo capas de ceniza que se sienten densas y grasientas. Tras apartar un fragmento de viga carbonizada, el metal de tu mano choca con algo sólido y frío. Al despejar la zona, emerge una pequeña caja de hierro forjado, cerrada con un candado oxidado y parcialmente fundido por el calor, que ha sobrevivido milagrosamente al incendio gracias a estar enterrada bajo los escombros.
+> Alrededor de la caja, notas que el suelo de piedra tiene una marca circular grabada, casi borrada por el polvo, que sugiere que este punto exacto no fue elegido al azar, sino que el objeto fue ocultado deliberadamente en un lugar específico de la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1666 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: caja de hierro forjado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item caja de hierro forjado
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 211 — 117/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1110 ms
+
+> "Vaya, parece que alguien quería que esto se quedara aquí abajo."
+> Saco la caja de los escombros y examino el candado para ver si puedo forzarlo sin romper el contenido.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 10+-1=9
+
+### [4] DM
+
+  24753 ms
+
+> La caja de hierro es pesada y el hollín se desprende en escamas negras sobre tus dedos mientras la extraes. Al acercar la vista al candado, notas que el metal está deformado y soldado en algunas partes debido a la intensidad del fuego; la cerradura es ahora un amasijo de óxido y hierro fundido que no deja espacio para que ninguna ganzúa o herramienta se deslice con precisión.
+> El mecanismo está completamente bloqueado por la corrosión y el daño térmico. No hay ningún punto de presión evidente ni una debilidad que permita abrirlo con delicadeza; cualquier intento de manipular el cierre sin aplicar una fuerza bruta considerable parece destinado al fracaso.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2299 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = caja de hierro forjado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4395: Isolde.inventory = caja de hierro forjado
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 212 — 118/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1206 ms
+
+> "Bueno, si no se abre con maña, se abrirá con fuerza."
+> Busco algún objeto pesado o una herramienta en los alrededores para golpear el candado y romperlo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 8+1=9
+
+### [4] DM
+
+  2820 ms
+
+> Rebuscas entre los escombros y el polvo grisáceo, encontrando apenas trozos de madera carbonizada y piedras irregulares que se desmoronan al tacto. Encuentras una pieza de metal retorcido, un resto de soporte que pesa lo suficiente, y descargas un golpe seco y violento contra el candado fundido.
+> El impacto resuena en el silencio del lugar, pero el metal deformado absorbe la energía del golpe sin ceder. La pieza de hierro que usas rebota con un tintineo metálico y el candado permanece intacto, aunque ahora una pequeña nube de hollín se eleva desde la zona del impacto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  932 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 213 — 119/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2694 ms
+
+> "Maldita sea."
+> Suelto la pieza de metal y busco alrededor de la puerta cualquier otro objeto más afilado o pesado que pueda servirme para forzar la cerradura.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+-1=3
+
+### [4] DM
+
+  1685 ms
+
+> Tus dedos se hunden en el polvo gris y el hollín, tanteando la base del marco y los alrededores de la puerta. Solo encuentras fragmentos de cerámica rota que se deshacen en tus manos y ceniza espesa que se pega a tu piel, formando una costra oscura.
+> No hay nada en el suelo que tenga la solidez o el filo necesarios para hacer mella en el metal fundido; el fuego fue exhaustivo y dejó el entorno despojado de cualquier herramienta útil.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  827 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 214 — 120/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1271 ms
+
+> "Maldita sea, no ha dejado ni un clavo."
+> Me levanto y doy unos pasos atrás para observar el resto de la estancia en busca de cualquier objeto que haya sobrevivido al fuego.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+-1=6
+
+### [4] DM
+
+  2080 ms
+
+> Te alejas unos pasos, escrutando los restos de la estancia entre el humo que aún flota en el aire. Tus ojos recorren los ángulos carbonizados y los montículos de escombros, pero la devastación es absoluta; el incendio ha lamido cada rincón con una furia ciega, dejando tras de sí un paisaje monocromático de negro y gris.
+> Solo ves vigas retorcidas que cuelgan del techo como costillas quemadas y el rastro blanquecino de cal desprendida de las paredes. No hay ningún objeto que destaque, ninguna silueta que sugiera algo rescatable entre la ceniza que lo cubre todo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1315 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 215 — 121/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1724 ms
+
+> "No puede haber quedado absolutamente nada."
+> Me arrodillo y empiezo a remover las cenizas y los escombros más profundos con las manos, buscando cualquier objeto metálico o resistente al fuego que haya quedado enterrado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+-1=2
+
+### [4] DM
+
+  2215 ms
+
+> Tus dedos se hunden en una masa espesa de hollín y ceniza fría que se cuela bajo tus uñas. Remueves los escombros con insistencia, apartando trozos de madera calcinada que se deshacen al tacto como si fueran azúcar negra, pero solo encuentras más gris. 
+> Cada vez que crees palpar una arista sólida, resulta ser una piedra fundida o el resto carbonizado de un mueble irreconocible. El polvo vuela a tu alrededor con cada movimiento, manchando tu ropa y llenando el aire de un olor acre a quemado que se pega a la garganta. No hay nada más que vacío y residuos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  811 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 216 — 122/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1677 ms
+
+> "Maldita sea, no puede haber desaparecido todo."
+> Me pongo en pie y sacudo la ceniza de mis manos. Miro a mi alrededor buscando cualquier rastro de algo que haya sobrevivido al fuego o alguna huella que no sea mía.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 15+4=19
+
+### [4] DM
+
+  2760 ms
+
+> Al enderezarte, el panorama de desolación se despliega ante ti: un esqueleto de vigas negras que apuntan al cielo como dedos acusadores. Sin embargo, al desplazar la mirada más allá de los escombros inmediatos, notas un patrón anómalo en el suelo. Entre el manto grisáceo, hay un surco profundo y lineal que corta la ceniza, una marca de arrastre pesada que se dirige hacia el norte, alejándose de las ruinas.
+> Siguiendo la línea del surco, divisas un destello metálico medio enterrado donde el arrastre comienza. Es una hebilla de cuero reforzado con bronce, arrancada violentamente de una correa, que brilla débilmente bajo la luz mortecina, contrastando con la monotonía del hollín.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1622 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: hebilla de cuero reforzado con bronce
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item hebilla de cuero reforzado con bronce
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 217 — 123/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1195 ms
+
+> "¿Qué demonios ha pasado aquí?"
+> Me acerco al destello y recojo la hebilla para examinarla de cerca.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+-1=18
+
+### [4] DM
+
+  2815 ms
+
+> La hebilla es robusta, diseñada para soportar un peso considerable, pero el cuero que la sostiene no ha sido cortado por una hoja; ha sido desgarrado, dejando fibras blancas y estiradas que hablan de una fuerza bruta y repentina. Al limpiar el hollín de la pieza, notas que el bronce tiene grabado un sello parcialmente borrado: una espiga de trigo entrelazada con una cadena, el emblema de los suministros del Consejo del Granero.
+> Al levantar la vista hacia el surco que nace aquí, el patrón de la marca se vuelve más claro. No es el rastro de un cuerpo muerto, sino el de alguien que luchó desesperadamente mientras era arrastrado, con los dedos clavándose en la ceniza para intentar frenar el avance hacia el norte. El rastro es fresco; el viento aún no ha logrado cubrir los bordes del surco.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  867 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 218 — 124/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1381 ms
+
+> "El Consejo del Granero... no es un lugar para alguien que quiera pasar desapercibido."
+> Guardo la hebilla en mi bolsillo y me pongo en cuclillas para examinar mejor la profundidad del surco y la distancia entre las marcas de los dedos.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 10+4=14
+
+### [4] DM
+
+  3133 ms
+
+> El surco es profundo, hundiéndose varios centímetros en la capa de ceniza compacta, lo que indica que quien fue arrastrado pesaba lo suficiente o el agresor aplicó una fuerza descomunal. Las marcas de los dedos no son constantes; hay tramos donde la tierra ha sido removida con violencia, seguidos de espacios vacíos donde el cuerpo simplemente se deslizó, sugiriendo que la víctima perdió la fuerza o el conocimiento en intervalos cortos.
+> Hacia el norte, el rastro mantiene una línea recta y decidida, sin vacilaciones ni desvíos, como si quien arrastraba la carga conociera exactamente su destino. El camino conduce directamente hacia una zona donde la vegetación calcinada se vuelve más densa, ocultando la visibilidad apenas a unos veinte metros de distancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  939 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 219 — 125/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1248 ms
+
+> "Demasiado decidido para ser un animal."
+> Me agacho para analizar mejor las marcas de los dedos y el patrón del arrastre.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 14+4=18
+
+### [4] DM
+
+  2810 ms
+
+> El rastro revela una técnica deliberada: las marcas de los dedos muestran que el agresor sujetaba la víctima por los tobillos, alternando el agarre para mantener el equilibrio mientras avanzaba. La profundidad del surco y la ausencia de marcas de lucha en los tramos finales confirman que el cuerpo estaba completamente inerte, probablemente inconsciente o muerto, ya que no hubo ningún intento de anclarse al suelo ni de arañar la ceniza para frenar el avance.
+> La dirección es quirúrgica. El camino no sigue la ruta más fácil del terreno, sino que corta camino a través de matorrales carbonizados, ignorando los obstáculos menores. Quien llevóse al soldado no buscaba esconder el rastro, sino llegar rápido a su destino, y la fuerza aplicada sugiere un individuo con una potencia física muy superior a la de un humano promedio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  848 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 220 — 126/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1296 ms
+
+> "Demasiado fuerte para ser un hombre común."
+> Sigo el rastro con cuidado, intentando detectar cualquier otra pista que el agresor haya dejado por el camino.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 18+4=22
+
+### [4] DM
+
+  2898 ms
+
+> El rastro se vuelve más nítido cuanto más avanzas, revelando detalles que antes pasaban desapercibidos. Entre las ramas quebradas de los matorrales carbonizados, encuentras un jirón de cuero grueso y curtido, desgarrado por una espina, que no pertenece al uniforme del soldado; el material es oscuro, casi negro, y desprende un tenue aroma a almizcle y humedad estancada.
+> A unos metros más adelante, el suelo de ceniza muestra una huella parcial: no es una bota, sino una pisada ancha y pesada, con una presión desigual que sugiere que el captor cargaba el peso del cuerpo sobre un solo hombro. La huella termina abruptamente donde el terreno se vuelve rocoso, pero el rastro no se pierde, sino que se desvía hacia la entrada de una grieta natural en la pared de piedra que se alza frente a ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1680 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: jirón de cuero grueso y curtido
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item jirón de cuero grueso y curtido
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 221 — 127/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1075 ms
+
+> "Huele a bestia, no a hombre."
+> Recojo el jirón de cuero para examinarlo más de cerca y me acerco a la grieta con cautela, tratando de no hacer ruido.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 9+4=13
+
+### [4] DM
+
+  2827 ms
+
+> El cuero se siente frío y ceroso entre tus dedos, con una textura irregular que recuerda más a la piel de un reptil que al trabajo de un curtidor. Al acercarte a la grieta, el silencio del bosque se vuelve opresivo; solo el crujido ocasional de la ceniza bajo tus pies rompe la calma. Te deslizas entre las sombras de la pared rocosa, fundiéndote con el relieve grisáceo de la piedra.
+> Desde el interior de la abertura, llega un sonido rítmico: una respiración pesada y húmeda que resuena contra las paredes del túnel. Un olor penetrante a carne rancia y azufre emana de la oscuridad, volviéndose más denso a medida que te posicionas en el borde de la entrada, donde la luz del exterior comienza a morir.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1278 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 222 — 128/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1535 ms
+
+> "Huelo la muerte y el azufre... No me pagan lo suficiente para entrar a ciegas."
+> Saco una antorcha y la enciendo con cuidado, tratando de iluminar el interior sin exponerme demasiado.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+4=6
+
+### [4] DM
+
+  2660 ms
+
+> La llama de la antorcha chisporrotea y proyecta sombras alargadas que bailan frenéticamente contra las paredes húmedas del túnel. El resplandor es insuficiente; la luz parece ser devorada por la negrura espesa que se extiende hacia el fondo, dejando el interior sumido en una penumbra confusa donde las formas se desdibujan y el relieve de la roca se vuelve indistinguible.
+> A pesar de la luz, el entorno permanece como un enigma. Solo logras distinguir el brillo aceitoso de algunas superficies en el suelo y el movimiento sutil de una corriente de aire frío que te golpea el rostro, trayendo consigo una ráfaga más intensa de aquel olor a putrefacción. La respiración pesada que escuchaste antes persiste, pero ahora suena más errática, como si algo allí dentro hubiera reaccionado a la nueva fuente de luz.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1559 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 223 — 129/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1688 ms
+
+> "Huele a muerte y a encierro"
+> Bajo el cuerpo, tratando de no hacer ruido, y me deslizo pegada a la pared hacia la fuente de la respiración.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 1+4=5  PIFIA
+
+### [4] DM
+
+  2479 ms
+
+> Al intentar deslizarte, el suelo aceitoso te traiciona. Tu pie resbala bruscamente sobre una superficie viscosa, provocando que tu cuerpo choque violentamente contra la pared de piedra con un estrépito seco que resuena en todo el túnel. La antorcha se sacude violentamente, proyectando un destello errático que ilumina la oscuridad justo antes de que el ruido del impacto sea respondido.
+> La respiración errática se corta en seco. Un silencio gélido y absoluto reina durante un segundo, hasta que un gruñido gutural, cargado de hambre y sorpresa, surge desde la negrura. Algo pesado y rápido se impulsa hacia adelante, rompiendo el silencio con el sonido de garras raspando la piedra húmeda mientras se lanza directamente hacia tu posición.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1197 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 224 — 130/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  939 ms
+
+> "¡Maldita sea!"
+> Me incorporo rápidamente y desenvaino mi arma, preparándome para el impacto. 
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 19+2=21
+
+### [4] DM
+
+  2421 ms
+
+> En el instante en que la bestia se lanza, el mundo se vuelve un borrón de garras y colmillos. Con un movimiento fluido y desesperado, giras sobre el suelo aceitoso, transformando el resbalón previo en un impulso rotatorio. El cuerpo del atacante corta el aire justo donde estabas hace un milisegundo, pasando de largo con un siseo agresivo.
+> La criatura, sorprendida por la maniobra, choca contra la pared opuesta con un impacto sordo. El animal se sacude, recuperando el equilibrio sobre sus patas membranosas, y te lanza una mirada cargada de odio desde la penumbra, mientras el metal de tu arma brilla bajo la luz vacilante de la antorcha.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  860 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 225 — 131/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1315 ms
+
+> "No volverás a intentar eso."
+> Aprovecho que la bestia está desorientada para lanzarme hacia ella y atacarla.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 3+1=4
+
+### [4] DM
+
+  2506 ms
+
+> El impulso del salto se pierde en el suelo resbaladizo. Al intentar lanzarte, tus pies no encuentran tracción sobre la capa de aceite y grasa que cubre las piedras, provocando que tu trayectoria se desvíe bruscamente. En lugar de impactar contra la bestia, tropiezas torpemente y caes pesadamente sobre un costado, quedando expuesto y vulnerable a pocos pies de la criatura.
+> El animal, que aún sacudía la cabeza por el golpe contra el muro, se detiene en seco. Sus pupilas verticales se dilatan al verte en el suelo y deja escapar un gruñido gutural, una vibración que hace eco en las paredes húmedas mientras tensa los músculos de sus patas membranosas, preparándose para aprovechar tu caída.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  867 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 226 — 132/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  24 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1009 ms
+
+> "Maldito sea este sitio."
+> Intento rodar rápidamente hacia un lado para ponerme de pie y alejarme de su alcance.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 5+2=7
+
+### [4] DM
+
+  2121 ms
+
+> Tus dedos se hunden en la mezcla viscosa de grasa y agua mientras intentas impulsarte, pero el suelo es una trampa de jabón. Al girar el cuerpo, el pie se desliza en el sentido opuesto al deseado, provocando que tu rodada termine en un movimiento torpe y errático que te deja medio cuerpo girado, luchando por recuperar el equilibrio sobre la superficie aceitosa.
+> La bestia no desperdicia el segundo de confusión. El gruñido se transforma en un chillido agudo y el animal se lanza hacia adelante con un movimiento explosivo, aprovechando que sigues luchando contra la gravedad para cerrar la distancia en un salto depredador.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  885 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 227 — 133/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1032 ms
+
+> "¡Maldita sea!"
+> Intento girar el torso bruscamente para poner mi arma entre la bestia y yo mientras trato de clavar los talones en el suelo.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 12+2=14
+
+### [4] DM
+
+  2038 ms
+
+> El impulso brusco del torso logra vencer la inercia del deslizamiento justo a tiempo. Con un esfuerzo seco, clavas los talones en una zona donde la grasa es menos densa, anclándote lo suficiente para que el arma se interponga en la trayectoria del salto.
+> El impacto de la bestia es sordo y violento. El animal choca contra el metal y el acero, frenando en seco su avance. El chillido se corta en un bufido de sorpresa mientras el cuerpo del depredador rebota ligeramente, quedando a escasos centímetros de ti, jadeando con los ojos fijos en tu guardia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1011 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 228 — 134/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  890 ms
+
+> "Ahora es mi turno."
+> Aprovecho que la bestia está aturdida por el impacto y clavo mi arma en su costado con toda mi fuerza.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 5+1=6
+
+### [4] DM
+
+  2707 ms
+
+> El arma se desliza sobre la superficie aceitosa y coriácea del costado de la bestia, incapaz de encontrar el ángulo correcto para penetrar la piel. El golpe es torpe, más un empujón desesperado que una estocada letal, y el impacto apenas logra desplazar el cuerpo del depredador unos centímetros hacia un lado.
+> La criatura recupera el equilibrio al instante. El aturdimiento desaparece, sustituido por un gruñido gutural que vibra en el aire frío, mientras sus garras raspan el suelo grasiento buscando tracción para lanzarse de nuevo contra ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1525 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 229 — 135/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1068 ms
+
+> "No me vas a morder hoy, bicho."
+> Doy un salto hacia atrás para ganar distancia y busco rápidamente algún punto débil en su piel o algún objeto en el entorno que pueda usar a mi favor.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+4=6
+
+### [4] DM
+
+  2598 ms
+
+> El salto te aleja del alcance inmediato de las garras, pero la criatura no pierde el tiempo y se lanza tras tú con un salto pesado que salpica el suelo de grasa y sangre. El gruñido se vuelve un rugido ahogado mientras sus ojos, nublados por una película blanquecina, se fijan en tu movimiento.
+> A tu alrededor, la penumbra y la suciedad del lugar confunden la vista. El entorno es un caos de vísceras y restos orgánicos que ocultan cualquier objeto útil; solo ves la superficie aceitosa que hace que cada paso sea una apuesta contra el equilibrio. La piel de la bestia parece una armadura uniforme de cuero endurecido, sin grietas ni zonas blandas evidentes a simple vista.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  821 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 230 — 136/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1292 ms
+
+> "No me atraparás otra vez, engendro."
+> Intento deslizarme rápidamente hacia una zona donde el suelo parezca menos resbaladizo para recuperar la ventaja.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 9+2=11
+
+### [4] DM
+
+  1883 ms
+
+> Tus botas patinan violentamente sobre la capa de grasa y vísceras mientras intentas ganar terreno. El impulso te traiciona y pierdes el equilibrio, quedando momentáneamente vulnerable sobre la superficie aceitosa, incapaz de encontrar el agarre necesario para alejarte del peligro.
+> El rugido de la bestia vibra en el aire, cargado de una anticipación depredadora. Al verte tambalear, la criatura aprovecha tu falta de estabilidad y cierra la distancia en un instante, lanzándose sobre ti con todo su peso.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1014 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 231 — 137/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1114 ms
+
+> "¡Maldita sea!"
+> Intento rodar rápidamente hacia un lado para evitar el impacto directo del salto mientras trato de recuperar la posición.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 6+2=8
+
+### [4] DM
+
+  2320 ms
+
+> El impulso del salto es devastador y tu intento de rodar se ve frustrado por la viscosidad del suelo; tus extremidades resbalan en la grasa, dejándote a merced de la inercia. El impacto es seco y brutal. La bestia cae sobre ti con un estruendo que expulsa el aire de tus pulmones, aplastándote contra la superficie aceitosa.
+> Sientes el peso muerto de la criatura presionando tu pecho y el hedor a putrefacción llenando tus fosas nasales. Sus garras arañan el suelo a tu alrededor, buscando anclaje, mientras el rugido se convierte en un gruñido sordo que vibra directamente contra tu caja torácica.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1060 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 232 — 138/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1112 ms
+
+> "¡Quítate de encima, asquerosa cosa!"
+> Intento empujar la bestia con fuerza para liberar mi pecho y recuperar el aire.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 10+1=11
+
+### [4] DM
+
+  2615 ms
+
+> Tus músculos se tensan y empujas con desesperación, pero tus manos resbalan sobre la piel grasienta y viscosa de la criatura. El esfuerzo es insuficiente para desplazar la masa inerte y pesada que te ancla al suelo; la bestia apenas se tambalea unos centímetros, volviendo a asentarse sobre tu pecho con un golpe sordo que te roba el poco aire que habías logrado recuperar.
+> El gruñido de la bestia se intensifica, transformándose en un ronroneo gutural que sacude tus huesos. Sus garras se hunden más profundamente en el suelo aceitoso, y sientes cómo su peso se redistribuye, preparándose para recuperar el equilibrio o lanzar un nuevo ataque mientras sigues atrapado debajo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  852 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 233 — 139/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1156 ms
+
+> "¡Quítame de encima, maldita cosa!"
+> Intento clavar mis dedos en cualquier parte blanda de la criatura para impulsarme y salir de debajo de ella.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 15+1=16
+
+### [4] DM
+
+  23957 ms
+
+> Tus dedos encuentran un pliegue de piel flácido y húmedo bajo el costado de la criatura. Al clavar las uñas con fuerza y tirar con un espasmo de adrenalina, consigues anclarte lo suficiente para pivotar el cuerpo. Con un esfuerzo bruto que hace crujir tus articulaciones, logras deslizarte hacia un lado, rompiendo el agarre del peso muerto que te aplastaba.
+> La bestia, sorprendida por el movimiento brusco, emite un chillido agudo y se tambalea, quedando momentáneamente desequilibrada sobre el suelo aceitoso. Ahora te encuentras fuera de su alcance inmediato, aunque jadeando y con la ropa empapada en esa sustancia viscosa y fétida que desprende el monstruo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  848 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 234 — 140/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1376 ms
+
+> "Asquerosa cosa..."
+> Me levanto rápidamente mientras trato de quitarme el limo de las manos. Aprovecho que la bestia está desequilibrada para retroceder un par de pasos y buscar cualquier objeto en el suelo que pueda usar como arma o distracción.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 8+4=12
+
+### [4] DM
+
+  2656 ms
+
+> El suelo es una extensión de baldosas agrietadas cubiertas por una capa espesa de grasa y detritos orgánicos que hacen que cada paso sea un riesgo de resbalón. Mientras retrocedes, tu mirada barre la penumbra y el desorden del lugar: entre los restos de madera astillada y el limo, distingues el brillo metálico de una cadena oxidada que cuelga de un anclaje en la pared, a unos metros de tu posición actual.
+> La criatura recupera el equilibrio con un movimiento espasmódico, sacudiendo su cuerpo viscoso. Sus ojos, pequeños y nublados, se fijan en ti con una intensidad hambrienta mientras emite un siseo prolongado que hace vibrar el aire húmedo de la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1730 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: cadena oxidada
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cadena oxidada
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 235 — 141/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1130 ms
+
+> "No te acercarás más, asquerosidad."
+> Saco mi arma y me muevo con cuidado hacia la cadena oxidada para usarla como obstáculo o apoyo.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 16+2=18
+
+### [4] DM
+
+  2037 ms
+
+> Tus botas encuentran tracción donde otros habrían caído, deslizándote con precisión quirúrgica sobre la capa de grasa y detritos. Te desplazas en un arco fluido, esquivando los restos de madera astillada mientras el arma queda lista en tu mano, hasta que tus dedos se cierran con firmeza sobre el metal frío y rugoso de la cadena oxidada.
+> La criatura lanza un chillido agudo al ver que su presa se desplaza con tal agilidad. Se impulsa hacia adelante con un salto torpe, pero el eslabón de hierro ahora actúa como un eje sólido entre tú y el monstruo, obligando a la bestia a recalcular su trayectoria en el suelo resbaladizo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1439 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 236 — 142/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1055 ms
+
+> "¡Ahora eres tú la que está atrapada!"
+> Tiro con fuerza de la cadena para desequilibrar a la criatura y aprovechar su salto torpe para asestarle un golpe.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 18+1=19
+
+### [4] DM
+
+  2276 ms
+
+> El tirón es seco y violento. La cadena se tensa con un chasquido metálico que resuena en el espacio cerrado, arrancando a la criatura de su trayectoria ascendente y estampándola contra el suelo grasiento con un golpe sordo. La bestia queda momentáneamente aturdida, con las patas agitándose en el aire mientras intenta recuperar el equilibrio sobre la superficie resbaladiza.
+> Aprovechando ese instante de vulnerabilidad, tu golpe impacta con precisión quirúrgica, aprovechando la inercia del derribo para maximizar la fuerza del impacto. El golpe sacude el cuerpo del monstruo, que emite un gorgoteo ahogado mientras es aplastado contra los detritos del suelo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  871 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 237 — 143/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  23 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1894 ms
+
+> "No te levantes."
+> Intento clavar mi arma con fuerza en el punto más débil de su cuerpo mientras sigue aturdida.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 3+1=4
+
+### [4] DM
+
+  1985 ms
+
+> El arma desciende con violencia, pero el ángulo es incorrecto y el suelo grasiento juega en tu contra. El metal resbala sobre la piel viscosa de la criatura, desviando el golpe y clavándose superficialmente en un pliegue de carne irrelevante, sin alcanzar ningún órgano vital ni punto débil.
+> La bestia emite un siseo agudo, recuperando la conciencia bruscamente. Aprovechando la mala posición del arma, la criatura se retuerce con un espasmo violento, liberándose del agarre mientras lanza un zarpazo desesperado hacia donde te encuentras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  846 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 238 — 144/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  928 ms
+
+> "¡Maldita sea!"
+> Doy un salto hacia atrás para esquivar el zarpazo y recupero el equilibrio.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  2735 ms
+
+> El aire silba justo donde hace un instante se encontraba tu pecho, pero el movimiento es fluido y preciso. Con un impulso elástico, te lanzas hacia atrás, describiendo un arco perfecto que te aleja del alcance de las garras. Tus pies encuentran el suelo grasiento, pero en lugar de resbalar, aprovechas la inercia para girar sobre tu propio eje y aterrizar en una posición de guardia impecable, con el corazón latiendo con fuerza pero el control absoluto de tu cuerpo.
+> La bestia, sorprendida por la rapidez de tu evasión, queda momentáneamente desequilibrada por la fuerza de su propio zarpazo fallido. Se agita sobre el fango, siseando con rabia mientras sus ojos nublados buscan desesperadamente tu nueva posición, dejando un espacio vulnerable en su costado mientras intenta recuperar la estabilidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  841 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 239 — 145/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1039 ms
+
+> "No te volveré a dejar pasar."
+> Aprovecho el desequilibrio de la bestia para lanzarme contra su costado expuesto y clavar mi arma.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 17+1=18
+
+### [4] DM
+
+  4589 ms
+
+> El impulso es devastador. Te catapultas sobre el fango con una potencia explosiva, cerrando la distancia en un parpadeo mientras la bestia aún lucha por asentar sus garras en el suelo resbaladizo. El impacto es seco y preciso; el acero de tu arma se hunde profundamente en la carne blanda del costado expuesto, atravesando la piel coriácea con un sonido sordo y visceral.
+> La criatura suelta un alarido agudo que desgarra el aire, retorciéndose violentamente ante la herida. La fuerza del golpe la empuja varios centímetros más hacia el barro, dejándola jadeando, con la sangre oscura manchando el suelo grasiento y una mirada de puro terror animal reflejada en sus ojos nublados.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  776 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 240 — 146/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1291 ms
+
+> "No te levantes."
+> Aprovecho que la bestia está derribada y vulnerable para intentar rematarla con un golpe decisivo en el cuello.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 5+1=6
+
+### [4] DM
+
+  2364 ms
+
+> La bestia, cegada por el dolor y el pánico, lanza un espasmo violento justo cuando desciendes el arma. El movimiento brusco de la criatura, sumado a la inestabilidad del terreno, hace que tu golpe pierda el ángulo preciso; el acero resbala sobre la piel húmeda y coriácea del cuello sin lograr penetrar la vital zona, impactando con un golpe seco pero superficial.
+> La criatura aprovecha ese instante de desequilibrio para soltar un gruñido ronco y lanzar un zarpazo desesperado hacia abajo, buscando cualquier parte de tu cuerpo que esté a su alcance mientras intenta recuperar la postura en medio del fango.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  909 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 241 — 147/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  923 ms
+
+> "¡Maldita sea!"
+> Intento saltar hacia atrás rápidamente para esquivar el zarpazo y recuperar mi equilibrio sobre el fango.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 17+2=19
+
+### [4] DM
+
+  2550 ms
+
+> Tus botas resbalan en el fango, pero el impulso es preciso. Con un movimiento fluido y coordinado, te lanzas hacia atrás justo cuando las garras de la bestia desgarran el aire donde hace un instante estaba tu pecho, hundiéndose con un sonido sordo y viscoso en el barro. 
+> El impulso te deja en una posición estable, con los pies firmes sobre una zona de tierra más compacta. La criatura, sorprendida por el vacío de su ataque, queda momentáneamente desequilibrada, jadeando con una mezcla de sangre y saliva que burbujea en su garganta abierta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  793 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 242 — 148/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1082 ms
+
+> "Ahora es mi turno."
+> Aprovecho que la bestia está desequilibrada para lanzar mi ataque mientras sigue recuperando el centro.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 5+2=7
+
+### [4] DM
+
+  1911 ms
+
+> Intentas aprovechar la vulnerabilidad de la criatura con un movimiento ágil, pero el terreno te traiciona. Al intentar impulsarte para el ataque, tu pie resbala en una placa de limo oculto bajo el agua estancada, rompiendo la inercia de tu maniobra.
+> La bestia, aunque todavía tambaleándose, emite un gruñido gutural al verte perder el equilibrio. Sus ojos amarillentos se clavan en ti mientras recupera la verticalidad con un movimiento brusco, aprovechando tu tropiezo para cerrar la distancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  803 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 243 — 149/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1335 ms
+
+> "Maldito barro..."
+> Gruño mientras intento recuperar la estabilidad rápidamente para no quedar expuesta. Intento saltar hacia atrás para alejarme de las garras de la bestia.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 5+2=7
+
+### [4] DM
+
+  2140 ms
+
+> El impulso del salto es torpe y desigual. El barro sigue succionando tu bota mientras intentas retroceder, haciendo que tu movimiento sea más un tropiezo hacia atrás que un salto coordinado. Tus pies no encuentran la tracción necesaria y terminas tambaleándote, quedando peligrosamente expuesta y a merced de la criatura.
+> La bestia no desperdicia la oportunidad. Con un siseo húmedo, aprovecha tu falta de equilibrio para lanzar un zarpazo violento que corta el aire, buscando impactar contra tu torso ahora que no tienes forma de esquivar con agilidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  675 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 244 — 150/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1043 ms
+
+> "¡Maldita sea!"
+> Intento girar el cuerpo rápidamente para recibir el golpe con el brazo y proteger mis órganos vitales.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 13+2=15
+
+### [4] DM
+
+  2401 ms
+
+> El movimiento es brusco y desesperado, pero el instinto reacciona a tiempo. Girando el torso en un giro torpe sobre el barro, logras interponer el antebrazo justo antes de que las garras impacten. El golpe es seco y brutal; sientes la presión del impacto sacudir todo tu brazo y el rasgar de la piel contra el cuero o la carne, pero el núcleo de tu cuerpo permanece a salvo del tajo profundo que la bestia pretendía abrir.
+> La criatura retrocede un centímetro, sorprendida por la resistencia, y emite un gruñido gutural que hace vibrar el aire húmedo. Sus ojos amarillentos se fijan en tu brazo herido mientras recupera el equilibrio, preparándose para un nuevo ataque ahora que sabe que no eres una presa fácil.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1527 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ evidencia no literal: «tus ojos amarillentos se fijan en tu brazo herido»
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 245 — 151/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1182 ms
+
+> "Maldita sea..."
+> Aprovecho que la criatura ha retrocedido para impulsarme hacia atrás, alejándome de su alcance mientras sujeto mi brazo herido.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 18+2=20
+
+### [4] DM
+
+  2091 ms
+
+> El impulso es fluido y preciso, transformando la inercia del golpe en un salto coordinado hacia atrás. Tus botas se clavan en el barro, pero el movimiento es lo suficientemente potente como para catapultarte fuera del radio de acción de la bestia, aterrizando con equilibrio y distancia suficiente para respirar.
+> La criatura lanza un zarpazo al aire, golpeando el vacío donde hace un instante estaba tu torso. Se queda inmóvil un segundo, con los músculos tensos y la respiración pesada, siseando mientras observa la distancia que ahora os separa, evaluando la nueva posición desde la cual lanzarse.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  720 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 246 — 152/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1149 ms
+
+> "No te acerques más, bicho."
+> Saco mi arco y preparo una flecha, apuntando directamente a los ojos de la criatura.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 14+4=18
+
+### [4] DM
+
+  2678 ms
+
+> El siseo de la criatura se corta en seco cuando la cuerda del arco tensa y la punta de la flecha queda alineada con su mirada. Al enfocar la vista, notas que sus pupilas son rendijas verticales que vibran con una rapidez frenética, delatando una hiperactividad nerviosa. Bajo el pelaje erizado del cuello, percibes un tic rítmico en el músculo trapecio y una pequeña herida abierta, supurante y mal cerrada, que le hace favorecer levemente la pata trasera izquierda al distribuir su peso.
+> La bestia retrocede un centímetro, sus garras arañando el barro. Sus ojos se dilatan al reconocer la amenaza del proyectil y emite un gruñido gutural, bajando el centro de gravedad y aplanando las orejas contra el cráneo, aunque no se ha retirado del todo; sigue anclada en su posición, esperando cualquier vacilación en tu pulso para cargar de nuevo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  744 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 247 — 153/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1120 ms
+
+> "No te muevas ni un centímetro más."
+> Mantengo la tensión del arco, apuntando directamente a esa herida del cuello para aprovechar su debilidad.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+4=10
+
+### [4] DM
+
+  2689 ms
+
+> La criatura ignora la advertencia, pues el lenguaje humano no es más que ruido para sus oídos. Al mantener la tensión, el animal permanece en un equilibrio precario; el gruñido vibra en su pecho y el hedor a carne putrefacta que emana de su herida se intensifica con el aire húmedo del entorno.
+> A pesar de tu atención, el entorno se funde en una masa de sombras y barro. No percibes ningún movimiento sospechoso en los alrededores ni notas que haya más bestias acechando en la maleza; solo queda el siseo errático de la criatura y el sonido de tu propia respiración mientras el pulso del animal late visiblemente bajo la piel lacerada de su cuello.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  705 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 248 — 154/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1274 ms
+
+> "No te voy a dejar terminar el trabajo."
+> Aprovecho que la bestia está distraída por su propio dolor y lanzo un ataque rápido hacia el cuello lacerado.
+> {Ataque}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Ataque: NO EXISTE — no se tira
+
+### [4] DM
+
+  1119 ms
+
+> [Tirada de ataque no proporcionada. Por favor, indica el resultado de la tirada de ataque (1d20 + modificadores) para determinar si el golpe alcanza la herida del cuello.]
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ meta-comentario entre corchetes
+
+### [6] EXTRACTOR
+
+  1681 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Tirada
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 249 — 155/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1132 ms
+
+> [OOC: El sistema debe tirar los dados por mí según las instrucciones. Intento clavar mi arma en la herida del cuello.]
+
+### [3] DADOS (deterministas, del sistema)
+
+  sin tiradas declaradas
+
+### [4] DM
+
+  1426 ms
+
+> [El sistema no tira los dados por el jugador según las instrucciones proporcionadas en la Regla de Oro ("Sin tirada previa cuando corresponda, no resuelvas la acción"). Por favor, realiza la tirada de ataque (1d20 + modificadores) y proporciónala en el formato `(resultado: N total)` para determinar el efecto de la acción.]
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ meta-comentario entre corchetes
+
+### [6] EXTRACTOR
+
+  879 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Oro, Regla
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 250 — 156/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1369 ms
+
+> [OOC: Mis instrucciones indican que no debo inventar dados y que el sistema tira por mí. No puedo realizar la tirada manualmente. Por favor, tira tú basándote en mi declaración de acción.]
+> "¡Atrás!"
+> Lanzo mi ataque contra el enemigo.
+> {Ataque}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Ataque: NO EXISTE — no se tira
+
+### [4] DM
+
+  1412 ms
+
+> [Según la Regla de Oro de mis instrucciones, carezco de autoridad para resolver acciones sin una tirada previa y no debo generar resultados de dados por el jugador. Para proceder con el ataque, necesito que indiques el resultado de la tirada `(1d20 + modificadores)` en tu turno. Si no tienes acceso a dados, puedes usar un generador externo y proporcionarme el número total.]
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ meta-comentario entre corchetes
+
+### [6] EXTRACTOR
+
+  750 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Oro, Regla, Según
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 251 — 157/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2024 ms
+
+> [OOC: Entendido. Me he saltado la instrucción de no inventar dados en el turno anterior por error. No volveré a poner el número; declararé la acción y la habilidad, y esperaré a que el sistema o tú proceséis la tirada según las reglas de este chat.]
+> "¡Ahora verás!"
+> Ataco al enemigo con mi arma.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 14+1=15
+
+### [4] DM
+
+  1629 ms
+
+> [El ataque requiere una tirada de Ataque (Fuerza o Destreza según el arma), no una prueba de Atletismo. El resultado de 15 se aplica como tirada de ataque.]
+> El golpe impacta con un sonido seco contra la armadura del enemigo, haciendo que el adversario retroceda un paso por la fuerza del impacto. El metal chirría y el enemigo suelta un gruñido de dolor, aunque se mantiene en pie, recuperando el equilibrio rápidamente mientras aprieta el agarre de su arma.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ meta-comentario entre corchetes
+
+### [6] EXTRACTOR
+
+  696 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Ataque, Atletismo, Destreza, Fuerza
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 252 — 158/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1019 ms
+
+> "No te vas a levantar tan fácil."
+> Aprovecho que ha retrocedido para intentar derribarlo, lanzándome contra él con todo mi peso.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 1+1=2  PIFIA
+
+### [4] DM
+
+  2646 ms
+
+> Al lanzarte con todo tu peso, calculas mal la distancia y el ángulo del impacto. Tu cuerpo choca torpemente contra el costado del enemigo, pero en lugar de derribarlo, rebotas contra su armadura como si fuera un muro de piedra. El impulso te traiciona, haciéndote perder el equilibrio por completo.
+> Terminas desplomado en el suelo, con la espalda contra la tierra y el aire escapando de tus pulmones en un jadeo sordo. El adversario, sorprendido por la torpeza del ataque, aprovecha tu vulnerabilidad y se cierne sobre ti con una sonrisa cruel, su arma ya descendiendo en un arco letal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  834 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 253 — 159/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1026 ms
+
+> "¡Maldita sea!"
+> Intento rodar rápidamente hacia un lado para esquivar el golpe mientras trato de recuperar el aliento.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 10+2=12
+
+### [4] DM
+
+  2436 ms
+
+> El acero corta el aire con un silbido metálico, impactando con un estruendo seco justo donde hace un instante descansaba tu espalda. El golpe levanta una pequeña nube de polvo y fragmentos de roca, mientras el enemigo gruñe, frustrado por haber golpeado el suelo en lugar de carne.
+> Aprovechando que el arma ha quedado parcialmente clavada en la tierra por la fuerza del impacto, el adversario se tambalea ligeramente hacia adelante. Sus ojos, cargados de desprecio, se clavan en ti mientras intenta recuperar el equilibrio para lanzar un segundo ataque.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  902 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 254 — 160/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1146 ms
+
+> "Demasiado lento."
+> Aprovecho que tiene el arma clavada para lanzarme hacia adelante e intentar derribarlo antes de que recupere el equilibrio.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 3+1=4
+
+### [4] DM
+
+  1992 ms
+
+> Te lanzas hacia adelante con ímpetu, pero el terreno traicionero y la precipitación juegan en tu contra. Tus pies resbalan en la capa de polvo y piedra suelta que el impacto previo ha levantado, provocando que tu carga pierda toda potencia y equilibrio justo antes de alcanzar al enemigo.
+> El adversario, que aún luchaba por estabilizarse, observa con una mueca de burla cómo tropiezas. Aprovecha tu torpeza para dar un fuerte tirón hacia arriba, liberando su arma del suelo con un sonido metálico y seco, quedando ahora en una posición dominante mientras tú te encuentras vulnerable frente a él.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  856 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 255 — 161/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  908 ms
+
+> "Maldita sea..."
+> Intento rodar rápidamente hacia atrás para alejarme de su alcance y ponerme de pie.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 7+2=9
+
+### [4] DM
+
+  2023 ms
+
+> Tus movimientos son torpes y desesperados. Al intentar impulsarte hacia atrás, tu espalda choca contra un saliente de roca que frena en seco tu inercia, dejándote momentáneamente aturdido y con las piernas entrelazadas en una posición incómoda.
+> El adversario no desperdicia la oportunidad. Con una carcajada ronca, aprovecha tu falta de equilibrio para avanzar un paso firme, cerrando la distancia mientras sostiene su arma con un agarre sólido, listo para descargar el golpe ahora que te tiene acorralado contra la piedra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1336 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.conditions = aturdido
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4504: Isolde.conditions = aturdido
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 256 — 162/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1076 ms
+
+> "¡Ni lo sueñes!"
+> Intento girar el cuerpo bruscamente sobre mi eje para zafarme de la posición incómoda y esquivar el golpe.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 14+2=16
+
+### [4] DM
+
+  2967 ms
+
+> Con un giro violento y coordinado, logras desprender tus piernas del entrelazo justo en el instante en que el arma desciende. El aire silba a escasos centímetros de tu ropa mientras el golpe impacta con un estruendo seco contra el saliente de roca, provocando que pequeñas esquirlas de piedra salten y que el brazo del adversario vibre por la fuerza del choque.
+> El atacante, sorprendido por la rapidez de tu maniobra, queda con el arma momentáneamente encajada en una grieta de la piedra. Su expresión de triunfo se transforma en una mueca de frustración mientras forcejea para liberar su arma, dejándolo expuesto y fuera de equilibrio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  856 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 257 — 163/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  996 ms
+
+> "Tú mismo te has atrapado."
+> Aprovecho su desequilibrio para lanzarme sobre él y derribarlo mientras intenta recuperar su arma.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 18+1=19
+
+### [4] DM
+
+  2284 ms
+
+> El impacto es seco y contundente. Aprovechando que el agresor lucha contra la piedra, tu cuerpo se convierte en un proyectil que lo embiste de lleno en el pecho. El aire escapa de sus pulmones con un gemido ahogado mientras vuela hacia atrás, golpeando el suelo con un ruido sordo que levanta una nube de polvo grisáceo.
+> El atacante yace ahora en el suelo, aturdido y jadeando, con el arma aún encajada en la grieta, lejos de su alcance. Sus ojos miran hacia arriba, desorientados, mientras intenta inútilmente recuperar el aliento y la estabilidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  959 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 258 — 164/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1238 ms
+
+> "No te muevas si no quieres que te rompa algo más."
+> Me abalanzo sobre él para inmovilizarlo contra el suelo y busco rápidamente entre sus ropas cualquier objeto de valor o documento.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 6+1=7
+
+### [4] DM
+
+  1912 ms
+
+> Te lanzas sobre él con fuerza, pero el atacante, aunque aturdido, logra girar el cuerpo y patear con desesperación mientras caes. El impacto de su bota te desvía la trayectoria y el movimiento brusco hace que te deslices sobre el polvo grisáceo, quedando a unos centímetros de él en lugar de encima.
+> El agresor aprovecha el instante para recuperar parte del aliento y comienza a retorcerse violentamente, luchando por zafarse de tu alcance y lanzando una mirada frenética hacia su arma, que sigue clavada en la piedra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1542 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 259 — 165/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1001 ms
+
+> "No te vas a mover de aquí."
+> Intento sujetarle las muñecas con fuerza para inmovilizarlo contra el suelo antes de que pueda reaccionar.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 18+1=19
+
+### [4] DM
+
+  2489 ms
+
+> Tus manos cierran el cerco sobre sus muñecas con una precisión y fuerza aplastantes. El impacto contra el suelo seco resuena en el aire mientras lo clavas contra la piedra, anulando cualquier intento de retorcerse. El agresor lanza un grito ahogado, sus músculos tensándose en un esfuerzo inútil contra tu agarre, mientras sus ojos se dilatan al darse cuenta de que ha perdido toda ventaja física.
+> El hombre jadea, con el rostro hundido en el polvo grisáceo y la respiración errática. Se queda inmóvil un segundo, sometido por el peso de tu cuerpo y la presión en sus articulaciones, mientras su mirada sigue fija, con desesperación, en el arma que brilla a pocos centímetros de su alcance.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  762 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 260 — 166/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1008 ms
+
+> "No vuelvas a intentarlo."
+> Presiono su rostro más fuerte contra el suelo y estiro la pierna para alejar el arma de su alcance.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 18+1=19
+
+### [4] DM
+
+  3305 ms
+
+> El rostro del hombre se hunde en la tierra con un crujido sordo, y el polvo grisáceo le llena la boca y las fosas nasales, ahogando su siguiente protesta en un ataque de tos violento. Siente el peso muerto de tu cuerpo anclándolo al suelo, una presión implacable que le deja claro que cualquier movimiento brusco terminará en una fractura.
+> Con un movimiento fluido y preciso, tu bota golpea el metal del arma, deslizándola varios metros lejos de su alcance. El objeto tintinea al rodar por la piedra, quedando fuera de su vista y de su esperanza. El agresor deja de luchar; sus hombros caen y un gemido de derrota escapa de sus labios mientras queda reducido a un bulto tembloroso bajo tu control.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  958 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 261 — 167/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1339 ms
+
+> "No te muevas si no quieres que te rompa algo más."
+> Mantengo la presión sobre él y busco con la mirada si lleva encima alguna bolsa de monedas o algo de valor.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+4=20
+
+### [4] DM
+
+  3035 ms
+
+> El hombre deja de forcejear, reduciéndose a una respiración errática y superficial que levanta pequeñas nubes de polvo bajo tu peso. Sus ojos, muy abiertos y cargados de pánico, miran hacia arriba, pero no intenta luchar; el miedo ha sustituido a la agresividad.
+> Mientras mantienes la presión, tu mirada escanea con precisión cada pliegue de su ropa raída. Notas que no lleva bolsillos laterales, pero detecta un relieve rectangular y rígido oculto en una pequeña bolsa de cuero cosida directamente al forro interior de su chaqueta, justo sobre la zona lumbar. No hay monedas tintineando, pero el peso y la forma sugieren un objeto pequeño y sólido, cuidadosamente resguardado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2023 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: bolsa de cuero cosida
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item bolsa de cuero cosida
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 262 — 168/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1992 ms
+
+> "Ahora vas a decirme qué guardas ahí dentro."
+> Mantengo el peso sobre él mientras deslizo la mano hacia la bolsa cosida en su chaqueta para intentar extraer el objeto sin soltarlo.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  3187 ms
+
+> Tus dedos se deslizan con una fluidez casi quirúrgica por el forro de la chaqueta, evitando cualquier movimiento brusco que pueda alertar al hombre o provocar que se tense. Sin que él llegue a sentir la intrusión, descoses el borde de la bolsa de cuero con un toque preciso y extraes el contenido en un solo movimiento limpio, ocultando el objeto en tu palma antes de que el sujeto pueda siquiera procesar que ha sido despojado.
+> El hombre suelta un gemido ahogado, con la mirada fija en ti, temblando bajo tu peso. Sus pupilas dilatadas reflejan el terror puro mientras intenta recuperar el aire, pero permanece inmóvil, consciente de que cualquier reacción podría empeorar su situación. En tu mano, sientes la superficie fría y pulida de una pequeña placa de metal grabada, cuyo peso es sólido y deliberado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  930 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 263 — 169/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2044 ms
+
+> "Quédate así si no quieres que te rompa algo más."
+> Suelto al hombre bruscamente y me aparto para observar la placa de metal con detenimiento.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 20+-1=19  CRÍTICO
+
+### [4] DM
+
+  3382 ms
+
+> El hombre cae de costado sobre el suelo polvoriento con un golpe seco, jadeando con espasmos violentos mientras se encoge sobre sí mismo, evitando cualquier contacto visual. El silencio del lugar solo es roto por su respiración errática y el siseo del viento filtrándose por las rendijas.
+> Al levantar la placa hacia la luz, los grabados emergen con una nitidez asombrosa. No es una simple insignia, sino una pieza de artesanía heráldica: el relieve muestra una espiga de trigo entrelazada con una balanza, símbolos que denotan una autoridad administrativa y judicial absoluta. En el reverso, una inscripción en letras capitales y precisas identifica la pieza como una credencial de emisario del Consejo del Granero, con un sello de cera roja aún intacto que certifica que el portador tiene permiso para requisar suministros en nombre de la alta jerarquía.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2778 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: credencial de emisario del Consejo del Granero
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item credencial de emisario del Consejo del Granero
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 264 — 170/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1935 ms
+
+> "Tú no pareces tener el control de la situación ahora mismo."
+> Me acerco al hombre y trato de registrar sus bolsillos o ropa en busca de más documentos o dinero.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+-1=6
+
+### [4] DM
+
+  3917 ms
+
+> El hombre suelta un gemido ahogado, encogiéndose más sobre el polvo mientras el aire le falta, incapaz de responder a la provocación. Sus dedos arañan la tierra seca en un reflejo involuntario, pero no opone resistencia física alguna.
+> Tus manos palpan la tela áspera y sucia de su uniforme, pero los movimientos resultan torpes entre los espasmos del herido y los pliegues del tejido. No encuentras nada más que el tacto frío de la placa que ya tienes en la mano y el vacío de unos bolsillos que parecen haber sido vaciados hace tiempo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1318 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 265 — 171/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2056 ms
+
+> "No tienes nada, ¿eh? Patético."
+> Suelto al hombre bruscamente y me pongo en pie, guardando la placa en mi equipo. Miro a mi alrededor para ver si hay alguien más cerca que haya visto esto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+4=20
+
+### [4] DM
+
+  5756 ms
+
+> El soldado se desploma contra el suelo con un golpe seco, jadeando con dificultad mientras intenta recuperar el aliento, sin fuerzas siquiera para mirarte. El silencio del camino es pesado, roto solo por el siseo del viento que arrastra briznas de polvo sobre la carretera agrietada.
+> Al elevar la mirada, el horizonte se extiende desnudo y desolador, pero tu atención capta un movimiento irregular a unos cincuenta metros, tras una duna de sedimentos grisáceos. Un par de figuras permanecen agachadas, ocultas parcialmente por el relieve del terreno; el brillo metálico de una lanza y el movimiento rítmico de alguien que observa atentamente confirman que no habéis estado solos durante el interrogatorio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3610 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: item.inventory
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 266 — 172/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1689 ms
+
+> "No voy a dejar que me sorprendan."
+> Me agacho rápidamente y busco cobertura tras una roca o el propio cuerpo del soldado para no quedar expuesta. 
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 17+4=21
+
+### [4] DM
+
+  4230 ms
+
+> Te deslizas con una fluidez casi felina, fundiéndote con el entorno antes de que el polvo asentado en el camino pueda siquiera delatar tu movimiento. El cuerpo del soldado, desplomado y jadeante, ofrece una barrera orgánica y torpe que oculta tu silueta, mientras que la piedra grisácea de la zona absorbe tu presencia.
+> Tras la duna, las figuras continúan sus movimientos rítmicos, ajenas a tu desaparición. El brillo de la lanza oscila levemente mientras uno de ellos murmura algo al otro, manteniendo la vista fija en el punto donde hace un instante estabas de pie, pero sin detectar que el terreno ahora guarda un secreto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1012 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 267 — 173/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1365 ms
+
+> "No me vais a pillar tan fácil."
+> Me mantengo agazapada y trato de escuchar qué es lo que se dicen esos dos.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+4=6
+
+### [4] DM
+
+  5498 ms
+
+> El viento sopla con fuerza, arrastrando una cortina de arena que golpea los costados de la duna y ahoga cualquier sonido proveniente del camino. Solo alcanzas a distinguir el ritmo monótono de sus voces, un murmullo grave y distante que se pierde entre el silbido del aire y el roce de sus armaduras, volviéndose un ruido blanco e indescifrable.
+> Los soldados permanecen inmóviles unos segundos más, escudriñando el vacío con desconfianza. Finalmente, uno de ellos suelta un bufido de fastidio y hace un gesto con la mano, indicándole al compañero que retomen la vigilancia del perímetro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  736 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 268 — 174/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  25184 ms
+
+> Me deslizo lentamente hacia abajo por la pendiente de la duna, tratando de mantenerme oculta entre los pliegues de la arena.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 16+4=20
+
+### [4] DM
+
+  4780 ms
+
+> Te fundes con el relieve de la duna, aprovechando cada depresión del terreno y el manto de arena que el viento desplaza para borrar tu rastro. Te deslizas como una sombra líquida, descendiendo la pendiente sin provocar el menor desprendimiento de grava ni emitir sonido alguno.
+> Al llegar a la base, quedas oculta tras un pliegue de arena a pocos metros de los soldados. Desde tu posición, puedes observar sus nucas y el brillo metálico de sus armaduras, mientras ellos, distraídos por el rugido del viento y su propia rutina de vigilancia, ignoran por completo tu presencia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  941 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 269 — 175/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1537 ms
+
+> Me mantengo inmóvil, observando sus movimientos y tratando de contar cuántos son exactamente.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 9+4=13
+
+### [4] DM
+
+  5947 ms
+
+> El viento aúlla entre las dunas, levantando cortinas de arena que empañan la vista cada pocos segundos. Entre los destellos del metal y el movimiento errático de las capas que ondean con las ráfagas, logras distinguir tres siluetas claras. Dos de ellos permanecen erguidos, escudriñando el horizonte con la guardia alta, mientras que un tercero se encuentra sentado, apoyado contra una roca, con el torso inclinado y una mano presionando una mancha oscura que se extiende por su túnica.
+> Los soldados no hablan; parecen acostumbrados al aislamiento del puesto. El herido exhala un suspiro pesado que el viento se lleva al instante, mientras los otros dos intercambian una mirada rápida y tensa, sin detectar que alguien los observa desde el pliegue de la arena.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1802 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 270 — 176/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1666 ms
+
+> Me deslizo más cerca, aprovechando las cortinas de arena para cubrir mi avance. Intento llegar a una posición donde pueda escuchar lo que dicen sin ser vista.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 13+4=17
+
+### [4] DM
+
+  8476 ms
+
+> Te deslizas como una sombra entre los pliegues del terreno, sincronizando tus movimientos con los embates del viento. La arena te envuelve en un manto ocre que camufla tu avance, permitiéndote ganar terreno sin que el metal de tu equipo tintinee ni tus pasos revelen tu posición.
+> Llegas hasta el borde de una formación rocosa que te oculta casi por completo, a pocos metros de los hombres. Desde aquí, el aullido del viento deja de ser un muro y te permite captar fragmentos de una conversación. Uno de los guardias, sin apartar la vista del horizonte, murmura con voz ronca: «Si el Consejo no envía el relevo antes del ocaso, no sé cómo vamos a mantener el perímetro». El soldado herido suelta un gemido ahogado y aprieta más la herida, respondiendo con un hilo de voz: «No vendrán... no mientras el reparto siga siendo insuficiente».
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1036 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 271 — 177/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1396 ms
+
+> Me quedo inmóvil, pegada a la roca, escuchando con atención para entender a qué reparto se refieren.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 3+4=7
+
+### [4] DM
+
+  57671 ms
+
+> Te fundes con la piedra, conteniendo la respiración mientras intentas filtrar el ruido del viento para captar el sentido de aquellas palabras. Sin embargo, una ráfaga violenta de arena golpea la formación rocosa, levantando una cortina de polvo que te nubla la vista y llena tus oídos de un silbido agudo y errático.
+> El ruido ambiental ahoga la siguiente frase del soldado herido, convirtiendo sus palabras en un murmullo ininteligible que se pierde en el aullido del desierto. Los guardias permanecen en sus posiciones, ajenos a tu presencia, pero el hilo de la conversación se ha cortado para ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7214 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 272 — 178/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  5809 ms
+
+> "Maldita sea esta arena."
+> Me deslizo con cautela para buscar una posición diferente que me permita escuchar mejor, evitando que el viento me bloquee los oídos.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  16563 ms
+
+> Te deslizas como una sombra líquida entre las aristas de la roca, moviéndote con una precisión quirúrgica que ignora la aspereza del terreno. Ni el crujido de un grano de cuarzo ni el roce de tu ropa contra la piedra traicionan tu avance; eres una extensión más del paisaje mineral mientras alcanzas un ángulo donde la formación rocosa actúa como un escudo natural contra el viento.
+> Desde tu nueva posición, el silbido del desierto se apaga y la voz del soldado herido emerge nítida, cargada de una urgencia quebrada.
+> —...no importa cuánto sangren... —susurra el hombre, tosiendo una chispa de sangre—... el reparto no alcanza para todos. Si el Consejo del Granero se entera de que falta el cargamento, nos colgarán antes de que el sol se ponga.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3466 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 273 — 179/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 3 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  5649 ms
+
+> "¿Qué cargamento?"
+> Me acerco con cautela para intentar escuchar mejor sin ser vista.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 14+4=18
+
+### [4] DM
+
+  16631 ms
+
+> Te fundes con las sombras de la piedra, desplazándote con una ligereza casi sobrenatural. El terreno, traicionero y cortante, no emite el menor sonido bajo tu paso; eres un espectro mimetizado con el gris del cuarzo. Te posicionas a escasos pasos del hombre, lo suficientemente cerca como para percibir el olor metálico de la sangre fresca y el rastro de sudor frío que emana de su cuerpo tembloroso.
+> El soldado cierra los ojos un instante, apretando la herida de su costado con una mano manchada de barro. Al escuchar tu voz, que parece emerger del mismo viento del desierto, el hombre da un salto brusco, soltando un gemido de dolor que termina en un jadeo. Sus ojos, dilatados por el pánico y la fiebre, recorren el vacío antes de fijarse en ti; sin embargo, al reconocerte, la tensión de sus hombros cae y una chispa de alivio desesperado ilumina su mirada.
+> —¡Por los dioses! Me has dado un susto de muerte... —susurra, bajando la voz instintivamente—. El trigo, el grano sagrado del Granero. Tres carros desaparecieron en el Paso antes de llegar al puesto. Si el Consejo descubre que el reparto es insuficiente, no habrá piedad para nadie.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9590 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Soldado herido · npc.knowledge = Tres carros de grano sagrado desaparecieron en el Paso antes de llegar al puesto
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4561: Soldado herido.knowledge = Tres carros de grano sagrado desaparecieron en el Paso a…
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 274 — 180/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  9711 ms
+
+> "¿Y qué tiene que ver eso conmigo? No soy vuestra nodriza."
+> Me mantengo en las sombras, observando la gravedad de su herida sin acercarme demasiado.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+2=19
+
+### [4] DM
+
+  9195 ms
+
+> El soldado suelta un suspiro que se convierte en una tos seca, manchando de rojo el borde de su túnica. A pesar de su debilidad, sus ojos no se apartan de ti; hay una urgencia febril en su mirada, una mezcla de sumisión y esperanza que raya en la devoción. Te observa no como a un mercenario, sino como a la única salida posible en un callejón sin salida.
+> Notas que el hombre no está intentando manipularte para salvar su pellejo, sino que está genuinamente aterrorizado por las consecuencias colectivas. Su temblor no es solo producto de la pérdida de sangre, sino de una angustia profunda: sabe que el Consejo del Granero no castigará solo al culpable, sino a todo aquel que haya fallado en la custodia del grano, y él se siente el eslabón más débil y expuesto de la cadena.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3266 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 275 — 181/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3290 ms
+
+> "Dime qué es lo que tanto temes que pase si el Consejo se entera."
+> Me inclino hacia él para escuchar mejor, manteniendo una distancia prudencial.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+2=15
+
+### [4] DM
+
+  8130 ms
+
+> El soldado traga saliva, haciendo un esfuerzo visible por no volver a toser. Se inclina hacia ti, reduciendo la distancia, y su voz cae a un susurro rasposo que apenas logra combatir el viento. "No es el castigo físico lo que me quita el sueño... es el hambre. El Consejo no perdona el descuido con el grano. Si descubren que el reparto no alcanza, que el saco está vacío, nos quitarán el derecho a la ración de invierno. A todos. Mi familia, mis compañeros... moriremos de hambre antes de que llegue el deshielo".
+> A medida que habla, notas que su mirada no vacila; no hay rastro de duda ni de engaño en su confesión. Su miedo es visceral y colectivo, y la urgencia con la que te lo cuenta revela que no busca una salida individual, sino una forma de evitar que el resto de su unidad pague el precio de un error que ya es irreversible.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  22057 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ evidencia no literal: «su voz cae a un susurro rasposo que apenas logra c»
+  ✓ delta Soldado herido · npc.secret_revealed = el reparto de grano no alcanza y el saco está vacío
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4574: Soldado herido.secret_revealed = el reparto de grano no alcanza y el saco está vacío
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 276 — 182/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4192 ms
+
+> "El hambre es un hambre que no se llena con confesiones."
+> Me separo un poco de él y miro hacia el resto de la guardia para ver si alguien más ha escuchado.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 5+4=9
+
+### [4] DM
+
+  5895 ms
+
+> El soldado parpadea, confundido por la frialdad de tus palabras, y se queda congelado en el lugar, con la boca entreabierta y el pecho subiendo y bajando con dificultad. El viento sigue azotando la zona, arrastrando el polvo y el ruido metálico de las armaduras, envolviendo el silencio tenso que se ha instalado entre ambos.
+> Al echar un vistazo a la guardia, el entorno se presenta como un borrón de capas y cuero grisáceo. Los soldados mantienen sus posiciones, absortos en sus propias guardias o hablando en voz baja entre ellos, sin que ninguno haya girado la cabeza ni mostrado el más mínimo signo de haber prestado atención a vuestro intercambio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2104 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 277 — 183/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4189 ms
+
+> "Lárgate antes de que me canse de mirar tu cara."
+> Le doy un empujón en el pecho para apartarlo de mi camino y sigo avanzando hacia la entrada.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 4+0=4
+
+### [4] DM
+
+  5707 ms
+
+> El soldado recibe el empujón y retrocede un paso, tambaleándose sobre sus pies heridos. No hay rabia en sus ojos, sino una mezcla de desconcierto y una tristeza profunda que no se borra ni con el desprecio. Se queda allí, encogido bajo el viento, mientras el polvo se pega a sus mejillas sudorosas.
+> No intenta interponerse de nuevo ni dice una sola palabra. Simplemente se aparta, dejándote el camino libre hacia la entrada mientras te observa marchar con una mirada que parece buscar algo en ti que ya no está.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2222 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 278 — 184/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2650 ms
+
+> "No me mires así. Haz tu trabajo y quédate donde estás."
+> Sigo caminando hacia la entrada sin volver la vista atrás, manteniendo paso firme.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 13+4=17
+
+### [4] DM
+
+  5799 ms
+
+> El soldado baja la mirada y se encoge aún más, aceptando la orden con un silencio sumiso que se funde con el silbido del viento. Sus botas arrastran el polvo mientras retrocede la distancia justa para no estorbar, permaneciendo inmóvil como una estatua rota mientras te alejas.
+> Al aproximarte a la entrada, el aire se vuelve más pesado y cargado de un olor a humedad y hierro oxidado. Entre las sombras del umbral, notas un rastro irregular de gotas oscuras que se secan sobre la piedra gris, extendiéndose desde el interior hacia el exterior, junto a una serie de marcas de arrastre superficiales que alguien intentó borrar apresuradamente con tierra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1694 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 279 — 185/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3183 ms
+
+> Me detengo frente al umbral y me agacho para examinar las marcas de arrastre y las gotas oscuras.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+-1=1
+
+### [4] DM
+
+  5209 ms
+
+> Te inclinas sobre la piedra fría, acercando la vista a las manchas y los surcos en el suelo. Sin embargo, la luz mortecina y la tierra esparcida confunden tu perspectiva; las gotas parecen fundirse con la porosidad de la roca y las marcas de arrastre resultan ambiguas, imposibles de distinguir de simples grietas naturales o del desgaste del tiempo.
+> El viento sopla con fuerza, levantando una nube de polvo que se deposita sobre el rastro, emborronando aún más los detalles mientras el olor a hierro oxidado se intensifica, emanando desde la oscuridad del interior.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2049 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 280 — 186/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4990 ms
+
+> "Maldito viento."
+> Me incorporo y me alejo del suelo para evitar que el polvo me ciegue, orientando mi olfato hacia el interior. Intento discernir si el olor a hierro es sangre fresca o simplemente metal viejo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 11+4=15
+
+### [4] DM
+
+  7237 ms
+
+> El aire que entra desde la penumbra es denso y cargado. Al inhalar profundamente, el matiz metálico se vuelve nítido y visceral; no es la fragancia seca y polvorienta del hierro oxidado, sino la humedad cálida y dulzona de la sangre fresca. El rastro olfativo es potente y conduce directamente hacia las profundidades del interior, sugiriendo que la fuente de la hemorragia sigue allí, o que ha sido trasladada recientemente.
+> Desde la oscuridad, el silencio es interrumpido por un sonido rítmico y débil: una respiración pesada que se corta en jadeos, apenas audible por encima del silbido del viento en la entrada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1732 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 281 — 187/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2870 ms
+
+> "Sigue vivo."
+> Saco mi daga y avanzo lentamente hacia la oscuridad, tratando de no hacer ruido mientras sigo el rastro del olor.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 14+4=18
+
+### [4] DM
+
+  7194 ms
+
+> Te deslizas por la penumbra con la fluidez de una sombra, tus pasos amortiguados por la capa de polvo y escombros del suelo. El hedor a hierro se intensifica a medida que avanzas, guiándote hacia un rincón donde la oscuridad es más espesa, pero tu movimiento es tan imperceptible que el aire apenas se desplaza a tu paso.
+> Al doblar un saliente de piedra, divisas una figura desplomada contra la pared. Es un soldado, con la armadura abollada y una herida abierta en el costado que empapa su túnica de un rojo oscuro y brillante. Al notar tu presencia, el hombre intenta incorporarse con un espasmo, pero un gemido ahogado escapa de sus labios y sus ojos, nublados por el dolor, se clavan en ti con una mezcla de terror y esperanza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1210 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 282 — 188/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos conocidos
+  22 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2373 ms
+
+> "Tranquilo. No voy a hacerte daño."
+> Me acerco con cautela y me arrodillo a su lado para examinar la gravedad de la herida.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 14+2=16
+
+### [4] DM
+
+  7906 ms
+
+> El soldado exhala un suspiro tembloroso, relajando los hombros mientras te permite acercarte. Sus dedos, manchados de sangre y tierra, se aferran débilmente a la piedra fría del suelo, observando cada uno de tus movimientos con una confianza ciega, como si fueras el último hilo que lo ata a la vida. El aire a su alrededor es pesado, cargado con el olor metálico de la hemorragia y el rancio aroma del sudor frío.
+> Al apartar la tela empapada, confirmas que la herida es profunda y los bordes están irregulares, pero no hay signos de infección inmediata ni daños en órganos vitales que hagan la lesión irreversible. El sangrado es constante pero manejable; con los suministros adecuados y una intervención rápida, el hombre tiene posibilidades reales de sobrevivir, aunque su estado de shock lo mantiene al borde del desmayo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1716 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 283 — 189/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 70.0 (devoted), 4 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2271 ms
+
+> "Quédate quieto y no respires tan fuerte si quieres seguir vivo."
+> Saco mis suministros médicos y comienzo a limpiar la herida para detener la hemorragia.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 11+2=13
+
+### [4] DM
+
+  7662 ms
+
+> El soldado cierra los ojos y aprieta los dientes, soltando un gemido ahogado mientras limpias la herida. Sus dedos se clavan en la piedra, pero no intenta apartarte; se deja llevar por tus manos, aceptando el dolor como el precio necesario para no apagarse. El flujo de sangre comienza a ceder, aunque la herida sigue siendo una boca abierta y voraz que requiere atención constante.
+> Logras estabilizar la hemorragia, aunque el proceso es tosco y el hombre palidece aún más, quedando exhausto. Abre un ojo, mirándote con una gratitud rota, y susurra con la voz quebrada:
+> —Gracias... por no dejarme aquí.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2617 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Soldado herido · life_saved
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4595: Soldado herido affinity 70.0 → 100.0  (any)
+     Deuda de sangre. No se olvida.
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 100.0 (devoted), 4 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 284 — 190/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 100.0 (devoted), 4 hechos conocidos
+  21 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2507 ms
+
+> "No te acostumbres. Solo quiero que puedas hablar."
+> Me quedo observando su rostro para ver si recupera el sentido o si sigue delirando.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 17+2=19
+
+### [4] DM
+
+  6670 ms
+
+> El soldado esboza una sonrisa débil, casi imperceptible, que no llega a borrar la palidez cenicienta de sus mejillas. Sus párpados dejan de temblar y el ritmo de su respiración, aunque superficial, se vuelve regular y consciente. Ya no hay rastro de esa mirada perdida y errática del delirio; sus pupilas se enfocan en ti con una claridad lúcida, aunque cargada de un agotamiento profundo.
+> Sus dedos se relajan sobre la piedra, liberando la tensión. Te observa en silencio durante unos segundos, procesando la estabilidad de su cuerpo y la firmeza de tus palabras, antes de asentir lentamente. Ya no lucha contra la inconsciencia; está presente, atento y plenamente consciente de que su vida ahora depende de la conversación que comienza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  881 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 100.0 (devoted), 4 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 285 — 191/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Soldado herido: captured, aprecio 100.0 (devoted), 4 hechos conocidos
+  20 entidades · contexto de 330 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2268 ms
+
+> "Ya puedes dejar de temblar. Ahora dime quién eres y qué hacías aquí."
+> Le observo fijamente, buscando cualquier signo de engaño o urgencia en su rostro.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+2=15
+
+### [4] DM
+
+  7562 ms
+
+> El soldado exhala un suspiro que suena a alivio y cansancio, dejándose caer contra el frío de la piedra. Te devuelve la mirada con una honestidad desnuda, sin rastro de vacilación ni el tic nervioso de quien oculta una verdad. Sus ojos, aunque hundidos, reflejan una gratitud genuina y una entrega absoluta; no hay señales de engaño en su postura, solo la fragilidad de un hombre que ha aceptado su destino.
+> —Me llamo Elian... —su voz es un hilo rasposo que apenas logra romper el silencio—. Formábamos parte de la escolta del convoy hacia el Paso. Nos tendieron una emboscada en el desfiladero. Mis compañeros... todos quedaron atrás. Yo solo quería asegurarme de que el reparto llegara a su destino, pero el bosque se tragó el resto del camino.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3762 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación npc: Elian
+  ⚠ nombres no reconocidos: Elian
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: npc Elian
+
+### [9] ESTADO DESPUÉS
+
+  Soldado herido: captured, aprecio 100.0 (devoted), 4 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 286 — 192/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2487 ms
+
+> "Lamento lo de tus compañeros, Elian. Pero dime, ¿qué exactamente llevaba ese reparto que era tan importante?"
+> Me inclino hacia él, observando sus reacciones mientras pregunto.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+2=19
+
+### [4] DM
+
+  5624 ms
+
+> Elian baja la vista hacia sus manos temblorosas, que descansan inertes sobre el suelo de piedra. Al responder, no hay vacilación en su tono ni el brillo huidizo de quien oculta un secreto; su expresión permanece abierta, cargada de una pesadumbre que parece consumirlo desde dentro.
+> —Suministros básicos... grano, sal, medicinas —responde con un hilo de voz—. El Consejo del Granero lo envió para los refugiados del Campamento del Paso. Sin eso, el invierno los matará antes de que puedan plantar la próxima temporada. El reparto no era oro, pero para ellos era la diferencia entre vivir o morir.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1383 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 287 — 193/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3019 ms
+
+> "Grano y medicinas no se evaporan porque sí."
+> Me inclino hacia él, observando sus ojos y sus gestos para ver si hay alguna grieta en su historia.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+2=14
+
+### [4] DM
+
+  7440 ms
+
+> Elian no aparta la mirada, aunque sus hombros se hunden un poco más bajo el peso de su confesión. Sus pupilas están dilatadas y el temblor de sus manos es constante, una manifestación física de un estrés que no parece fingido. No hay rastro de la tensión defensiva típica de quien miente o de la mirada esquiva de quien oculta un botín; solo hay un cansancio profundo y una desesperación genuina.
+> El hombre exhala un suspiro que suena a rendición, cerrando los ojos un instante mientras el silencio de la estancia se vuelve denso. No hay grietas en su relato, solo la coherencia plana de quien ha aceptado una tragedia que no sabe cómo remediar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1575 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 288 — 194/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2793 ms
+
+> "Pareces decir la verdad, pero la verdad no llena el estómago ni paga las cuentas."
+> Me acerco a él y observo sus manos y su ropa buscando cualquier rastro de algo valioso que haya podido ocultar.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 19+4=23
+
+### [4] DM
+
+  8437 ms
+
+> Al acercarte, el olor a sudor rancio y polvo se vuelve predominante. Elian no intenta cubrirse ni retroceder; permanece inmóvil, como si ya no tuviera nada que proteger. Bajo la luz, las costuras de su túnica de lino grueso están deshilachadas y los remiendos en los codos son toscos, hechos con un hilo de distinto color que delata la precariedad de sus prendas.
+> Tus ojos recorren sus manos, donde las uñas están comidas y la piel agrietada por el frío y el trabajo manual. No hay anillos, ni amuletos ocultos en las mangas, ni el bulto sospechoso de ninguna bolsa secreta cosida al forro. Solo encuentras una pequeña moneda de cobre desgastada que asoma por el borde de un bolsillo roto, un valor insignificante que confirma la desnudez de su bolsillo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1249 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 289 — 195/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2711 ms
+
+> "No pareces tener nada que valga la pena robar."
+> Me alejo un paso y lo miro fijamente a los ojos, buscando cualquier señal de que oculte algo más que su miseria.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+2=12
+
+### [4] DM
+
+  4925 ms
+
+> Elian sostiene tu mirada con una languidez pesada, sin que sus pupilas se dilaten ni sus párpados tiemblen. No hay el nerviosismo del que esconde un secreto, sino la apatía de quien ha aceptado su condición. Se limita a observar tu retroceso con una expresión vacía, manteniendo los hombros caídos y la respiración lenta.
+> —Tienes razón —responde con una voz seca, que suena como el roce de dos piedras—. La miseria es lo único que he logrado acumular en cantidad suficiente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1040 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 290 — 196/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3051 ms
+
+> "La miseria no se hereda, se construye. ¿Quién te ha dejado así?"
+> Me acerco un paso hacia él, tratando de leer si esa apatía es real o una máscara.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 15+2=17
+
+### [4] DM
+
+  7944 ms
+
+> Elian no se inmuta ante tu acercamiento; permanece como una estatua de barro, permitiendo que reduzcas la distancia sin intentar alejarse ni adoptar una postura defensiva. Al observar la rigidez de su cuello y la forma en que sus ojos parecen mirar a través de ti más que a ti, percibes que no hay un engaño activo. Su vacío no es una táctica ni una máscara para ocultar un plan, sino una erosión real: el agotamiento crónico de alguien que ha luchado contra una marea superior durante demasiado tiempo y finalmente ha dejado de nadar.
+> —Nadie me "dejó" así —dice, y por primera vez un rastro de amargura tiñe su tono, aunque su rostro sigue inexpresivo—. El mundo simplemente decidió que yo era el lugar donde el hambre y las deudas debían echar raíces. No hace falta un villano cuando tienes un sistema que te devora el alma por goteo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1206 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 291 — 197/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2303 ms
+
+> "El hambre es una cadena más corta que cualquier grillete."
+> Me quedo observándolo, buscando algún rastro de información sobre quiénes son los que cobran esas deudas.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+2=9
+
+### [4] DM
+
+  6019 ms
+
+> Elian exhala un suspiro lento, casi imperceptible, que hace vibrar levemente sus labios agrietados. No hay ningún destello de reconocimiento ni una chispa de curiosidad en su mirada; el comentario sobre los grilletes parece resbalar sobre él como el agua sobre la piedra, sin dejar marca ni provocar reacción alguna.
+> Sigue allí, inmóvil y vacío, con los ojos perdidos en un punto invisible del horizonte. No hay gestos nerviosos, ni vacilaciones en su voz, ni ninguna señal física que sugiera que esté omitiendo nombres o escondiendo una verdad concreta bajo el peso de su apatía.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3620 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 292 — 198/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2603 ms
+
+> "¿Estás ahí dentro o solo eres un cascarón?"
+> Me acerco más a él y trato de buscar cualquier rastro de conciencia o reacción en sus ojos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+2=8
+
+### [4] DM
+
+  6636 ms
+
+> Elian no parpadea mientras te acercas. Sus pupilas permanecen fijas, dilatadas y gélidas, como dos pozos negros que no reflejan tu imagen ni devuelven ningún rastro de chispa humana. No hay un ligero movimiento de las cejas, ni una contracción en los músculos de su mandíbula; el rostro permanece como una máscara de cera tallada, impertérrita ante tu proximidad.
+> El silencio se prolonga, roto solo por el sonido del viento. El hombre no responde a la pregunta, ni siquiera parece procesar que el sonido de tu voz haya vibrado en el aire. Sigue siendo un vacío absoluto, una presencia física que habita el espacio pero que no parece ocupar el momento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1217 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 293 — 199/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2872 ms
+
+> "¿Estás ahí dentro o solo eres un cascarón?"
+> Me acerco más y paso un dedo frente a sus pupilas para comprobar si reacciona al movimiento.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 8+4=12
+
+### [4] DM
+
+  6973 ms
+
+> El dedo pasa a escasos milímetros de la córnea, cortando el aire en un movimiento deliberado. El ojo de Elian no se mueve; la pupila permanece dilatada y fija, ignorando por completo el estímulo físico. No hay reflejo palpebral ni un leve temblor en los párpados, confirmando una ausencia total de respuesta motora ante la intrusión.
+> Al observar más de cerca, notas que la piel alrededor de sus ojos está inusualmente fría y seca, carente de la humedad natural de un cuerpo vivo. El viento sopla con fuerza, agitando la ropa del hombre, pero su cuerpo no se balancea ni se ajusta a la corriente, manteniéndose rígido como una estatua de piedra plantada en el camino.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1967 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 294 — 200/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4589 ms
+
+> "Esto no es normal, ni siquiera para un muerto."
+> Me alejo un paso del cuerpo y busco cualquier rastro de costuras, hilos o marcas de magia en su cuello y muñecas.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 5+-1=4
+
+### [4] DM
+
+  5723 ms
+
+> Te apartas del cuerpo, manteniendo una distancia prudencial mientras recorres con la mirada las comisuras del cuello y las líneas de las muñecas. El viento sigue azotando la ropa de Elian, creando un contraste inquietante con su inmovilidad absoluta, pero tus ojos no encuentran nada fuera de lo común.
+> La piel se ve continua, sin costuras visibles, hilos quirúrgicos ni el rastro brillante de una runa grabada. No hay marcas superficiales que delaten una manipulación mecánica o un hechizo de animación evidente; el cuerpo parece, a simple vista, un cadáver intacto y natural.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1147 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 295 — 201/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2554 ms
+
+> "No hay nada a la vista."
+> Me pongo de pie y busco en los bolsillos del muerto cualquier papel, moneda o objeto que pueda darme una pista de quién era.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+-1=17
+
+### [4] DM
+
+  8700 ms
+
+> Tus dedos hurgan entre la tela basta y fría de la ropa de Elian. Tras un momento de búsqueda, rescatas un pequeño trozo de pergamino amarillento y arrugado que estaba escondido en el forro de un bolsillo interno. El papel contiene una lista de suministros escrita con una caligrafía apresurada y temblorosa: granos, sal y aceite, con cantidades tachadas y una anotación al margen que menciona "El Consejo del Granero" seguida de un signo de interrogación.
+> Además del papel, encuentras una pequeña bolsa de cuero que contiene tres monedas de cobre desgastadas y un anillo de hierro simple, sin piedras preciosas, que deja una marca oscura en la piel del dedo donde estuvo colocado hasta hace poco. El viento vuelve a soplar con fuerza, agitando los jirones de la vestimenta del cadáver mientras el silencio del entorno se vuelve más pesado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6761 ms · 0 eventos · 3 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = pergamino con lista de suministros
+  ✓ delta Isolde · character.inventory = bolsa con tres monedas de cobre
+  ✓ delta Isolde · character.inventory = anillo de hierro simple
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4637: Isolde.inventory = pergamino con lista de suministros
+  → delta 4638: Isolde.inventory = bolsa con tres monedas de cobre
+  → delta 4639: Isolde.inventory = anillo de hierro simple
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 296 — 202/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2846 ms
+
+> "¿El Consejo del Granero?"
+> Guardo el papel y las monedas en mis pertenencias. Me pongo el anillo de hierro en el dedo para ver si siento algo extraño.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+-1=3
+
+### [4] DM
+
+  6889 ms
+
+> El anillo de hierro se desliza en tu dedo con una frialdad metálica que parece absorber el calor de tu piel. Al ajustarlo, el metal se siente pesado y tosco, pero no percibes ninguna vibración, susurro ni flujo de energía; es simplemente una pieza de hierro oxidado que deja un rastro grisáceo sobre tu cutis.
+> Al intentar analizar el resto de las pertenencias y el entorno buscando alguna pista adicional sobre ese "Consejo", tus ojos recorren la tela raída y el suelo embarrado, pero no encuentras nada más. El viento sigue azotando el cuerpo de Elian, borrando cualquier rastro reciente en la tierra y dejando el nombre del Consejo como el único enigma tangible en medio del silencio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7528 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = anillo de hierro
+  ✓ creación item: anillo de hierro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item anillo de hierro
+  → delta 4644: Isolde.inventory = anillo de hierro
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 297 — 203/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3124 ms
+
+> "Al menos no es una joya falsa, es hierro puro."
+> Me pongo en pie y observo los alrededores buscando cualquier señal de camino o rastro que no haya sido borrado por el viento.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 15+4=19
+
+### [4] DM
+
+  9468 ms
+
+> Te incorporas, sacudiendo el barro de tu ropa mientras el viento gélido te azota el rostro. Al concentrarte en el terreno, ignorando el ruido del vendaval, detectas una sutil depresión en la tierra, apenas perceptible bajo la capa de sedimentos. No es un camino transitado, sino el rastro de un flujo de agua estacional que, aunque seco, ha compactado el suelo creando una senda natural que serpentea hacia el noreste, alejándose del cuerpo de Elian.
+> Siguiendo la línea de esa depresión, divisas a lo lejos unas siluetas irregulares que rompen la monotonía del horizonte gris: unas estructuras bajas, posiblemente tiendas o cobertizos, que se agrupan en el abrigo de un desfiladero. El rastro es tenue, pero lo suficientemente sólido como para indicar que alguien ha utilizado ese cauce seco para moverse por la zona sin dejar huellas evidentes en el barro blando.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3774 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 298 — 204/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3277 ms
+
+> "Alguien sabe moverse por aquí."
+> Me muevo con cautela hacia esas estructuras, aprovechando el cauce seco para no dejar rastro y mantenerme oculta.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 9+4=13
+
+### [4] DM
+
+  9098 ms
+
+> Te deslizas por el lecho del cauce, donde la tierra compacta amortigua tus pasos y el viento gélido oculta el roce de tu ropa. El terreno es traicionero, lleno de piedras sueltas y restos de vegetación seca que crujen ocasionalmente, pero logras mantener un perfil bajo, fundiéndote con el gris del paisaje mientras avanzas hacia las estructuras.
+> A medida que te acercas al desfiladero, las siluetas cobran forma: son tiendas de cuero curtido y lonas grasientas, ancladas al suelo con estacas pesadas para resistir el vendaval. Desde tu posición, entre unos matorrales espinosos que bordean el final del cauce, divisas a dos figuras envueltas en capas de lana gruesa que custodian la entrada del asentamiento, observando el horizonte con la mirada endurecida por el frío.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2017 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 299 — 205/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3189 ms
+
+> Me quedo inmóvil entre los matorrales, observando los movimientos de los guardias para encontrar un hueco en su vigilancia.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 2+4=6
+
+### [4] DM
+
+  6768 ms
+
+> El viento sopla con fuerza, pero un movimiento brusco al acomodarte entre las espinas provoca que una rama seca se quiebre con un chasquido seco y resonante que corta el silbido del aire. El sonido, aunque breve, es lo suficientemente nítido como para romper la monotonía del entorno.
+> Uno de los guardias gira la cabeza rápidamente hacia tu posición, entrecerrando los ojos para escudriñar los matorrales. No te ve claramente, pero su mano derecha desciende instintivamente hacia el pomo de su arma mientras da un paso hacia adelante, alerta y en tensión.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1282 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 300 — 206/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2296 ms
+
+> Me quedo completamente inmóvil, conteniendo la respiración y fundiéndome con la vegetación para no dar ninguna pista de mi posición.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 13+4=17
+
+### [4] DM
+
+  7394 ms
+
+> El guardia permanece unos segundos en silencio, con el cuerpo tenso y la mirada fija en el muro de espinas. El viento vuelve a arreciar, agitando las ramas y camuflando tu respiración contenida bajo el siseo de la vegetación. Tras escudriñar el follaje, el hombre suelta un bufido de fastidio y relaja la presión sobre el pomo de su arma.
+> —Malditos pájaros —gruñe para sí mismo, convencido de que el ruido ha sido una distracción natural.
+> Se da la vuelta con lentitud, regresando a su posición original, aunque mantiene la cabeza ligeramente girada, vigilando el perímetro con una cautela renovada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2264 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 301 — 207/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3252 ms
+
+> "Tonto..."
+> Aprovecho que se ha dado la vuelta para intentar deslizarme fuera de su campo de visión y acercarme al muro de espinas.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 12+4=16
+
+### [4] DM
+
+  5265 ms
+
+> El movimiento es fluido y preciso, fundiéndote con las sombras y el rítmico balanceo de la vegetación. El guardia, convencido de que el peligro ha sido una mera ilusión auditiva, no vuelve a mirar hacia atrás mientras te desplazas con cautela.
+> Tus botas apenas rozan el suelo y el crujido de las hojas queda sepultado por el siseo del viento. En pocos instantes, el frío roce de las ramas espinosas contra tu ropa te indica que has alcanzado el muro, quedando completamente oculto a la vista del centinela.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1595 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 302 — 208/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1850 ms
+
+> Me pego al muro y busco cualquier grieta, salida o punto débil en la estructura que me permita entrar sin ser vista.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+-1=17
+
+### [4] DM
+
+  7920 ms
+
+> El muro es una mole de piedra grisácea y porosa, cubierta por una densa capa de musgo húmedo que amortigua cualquier sonido. Al deslizar las manos por la superficie fría, detectas una sección donde la mampostería ha cedido ligeramente; una piedra angular se ha desplazado hacia afuera, dejando una abertura irregular y oscura que conduce al interior.
+> La grieta es lo suficientemente ancha para permitir el paso de un cuerpo esbelto, aunque los bordes de la roca son afilados y el espacio se estrecha peligrosamente antes de abrirse hacia lo que parece ser un pasillo interno. Desde esa posición, el aroma a polvo viejo y humedad se filtra hacia el exterior, ocultando la entrada tras un saliente de vegetación trepadora.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3202 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 303 — 209/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2785 ms
+
+> "Parece que alguien ya hizo el trabajo sucio por mí."
+> Me deslizo con cuidado a través de la abertura, intentando no rasgarme la ropa ni hacer ruido.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 9+2=11
+
+### [4] DM
+
+  7973 ms
+
+> El roce de la piedra áspera contra el tejido de tu ropa es inevitable y brusco. Al intentar maniobrar en el punto más estrecho de la grieta, el borde afilado de una roca se engancha con fuerza en tu vestimenta, provocando un sonido seco de tela rasgándose que resuena en el silencio del muro.
+> El esfuerzo por liberarte te obliga a hacer un movimiento torpe, golpeando el costado de la abertura con el hombro antes de lograr deslizarte finalmente hacia el interior. Caes sobre el suelo de piedra fría, donde el aire es pesado y el silencio vuelve a reinar, aunque ahora acompañado por el rastro de una costura rota en tu ropa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5007 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.conditions = ropa rasgada
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4659: Isolde.conditions = ropa rasgada
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 304 — 210/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4244 ms
+
+> "Maldita sea"
+> Me levanto despacio y reviso el daño de mi ropa, asegurándome de que no haya ninguna herida abierta. Luego, me quedo inmóvil escuchando atentamente cualquier sonido que provenga del exterior o del interior de la estancia.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+4=6
+
+### [4] DM
+
+  6897 ms
+
+> La tela rasgada cuelga de tu costado, un jirón inútil que no ha llegado a herir tu piel, pero que deja entrar el gélido aire de la estancia. Te quedas rígido, conteniendo la respiración mientras intentas filtrar cualquier ruido entre el eco de tu propia caída.
+> El silencio es absoluto, denso como el polvo que flota en el aire. No hay pasos que se acerquen desde la grieta ni susurros que emanen de las sombras de la habitación; solo el goteo rítmico y lejano de agua filtrándose por la roca, que suena como un corazón lento latiendo en las profundidades del muro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3812 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 305 — 211/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3282 ms
+
+> Me quedo inmóvil un instante más, escuchando con atención el goteo y cualquier otro sonido. Luego, me levanto despacio y examino la habitación buscando cualquier objeto de valor o pista sobre el lugar.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  8943 ms
+
+> El silencio se fragmenta bajo tu mirada aguda, revelando detalles que el polvo y la penumbra intentaban devorar. Tras el goteo constante, distingues un sutil siseo de aire que no proviene de la grieta, sino de una sección del muro donde las piedras han sido talladas con una precisión antinatural, formando una junta casi invisible. En el suelo, parcialmente cubierta por una capa de sedimentos grisáceos, resalta la esquina de una caja de madera oscura, reforzada con bandas de hierro oxidado, que alguien intentó arrastrar hacia las sombras antes de abandonar la estancia.
+> Al acercarte, notas que la madera de la caja no es común; tiene vetas plateadas que brillan débilmente con el roce de tu luz. Junto a ella, grabada en el suelo de piedra con una caligrafía apresurada y profunda, hay una sola palabra que el tiempo no ha logrado borrar: *"Sustraído"*.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6199 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: caja de madera oscura
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item caja de madera oscura
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 306 — 212/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2991 ms
+
+> "¿Sustraído? No creo que fuera un regalo."
+> Me agacho para examinar la caja y trato de abrirla.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+-1=3
+
+### [4] DM
+
+  6042 ms
+
+> Tus dedos recorren la madera fría y las vetas plateadas, pero el polvo acumulado y la corrosión del hierro entorpecen tu tacto. Al intentar forzar la tapa o buscar algún mecanismo de cierre, solo encuentras una resistencia sorda y superficies resbaladizas que no revelan ninguna ranura, cerradura ni punto de apoyo evidente.
+> La caja permanece cerrada, hermética y muda, como si se negara a entregar su contenido ante un examen superficial. El eco del goteo constante vuelve a llenar el vacío de la estancia mientras la palabra *"Sustraído"* sigue ahí, grabada en la piedra, observando tu fracaso.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2287 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 307 — 213/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2293 ms
+
+> "No me conoces, caja."
+> Me aparto un poco para observar el objeto desde otro ángulo, buscando cualquier marca o relieve que haya pasado por alto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+-1=3
+
+### [4] DM
+
+  6159 ms
+
+> Te desplazas unos pasos, cambiando la perspectiva para intentar captar algún detalle que el ángulo anterior hubiera ocultado. El polvo danza en el aire, iluminado por la tenue luz, y el frío de la estancia parece calar más hondo mientras escudriñas la superficie del objeto.
+> Desde esta nueva posición, la caja sigue pareciendo un bloque monolítico y hermético. No hay relieves ocultos, ni marcas laterales, ni ninguna irregularidad en la madera plateada que sugiera un mecanismo secreto; solo el vacío grisáceo de la habitación y el persistente goteo que marca el ritmo de tu búsqueda infructuosa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1831 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 308 — 214/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3009 ms
+
+> "Maldita sea, tiene que haber una forma de abrir esto."
+> Me arrodillo para examinar la base de la caja y el suelo donde descansa, buscando cualquier rastro de desgaste o marcas de arrastre.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+-1=7
+
+### [4] DM
+
+  6361 ms
+
+> Te apoyas sobre las rodillas, sintiendo la humedad del suelo filtrarse a través de tu ropa mientras acercas la vista a la base de la caja. El polvo se acumula en los bordes, formando una costra grisácea que oculta la unión entre la madera plateada y la piedra fría.
+> Pasas los dedos por el perímetro, pero no encuentras hendiduras, ni muescas, ni ninguna señal de que el objeto haya sido movido recientemente. El suelo permanece imperturbable, sin un solo rasguño ni marca de arrastre que sugiera que la caja ha sido desplazada o que oculta algo bajo su peso.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2824 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 309 — 215/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2345 ms
+
+> "No puede estar simplemente apoyada."
+> Sigo palpando la base, buscando cualquier irregularidad en la piedra o algún mecanismo oculto que no sea evidente a simple vista.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+-1=13
+
+### [4] DM
+
+  6797 ms
+
+> Tus dedos recorren la superficie rugosa de la piedra, presionando con cuidado cada centímetro donde la madera se encuentra con el suelo. La frialdad del material se siente constante, pero al llegar a la esquina posterior derecha, percibes una diferencia sutil: una pequeña depresión, apenas del tamaño de una moneda, que no encaja con la erosión natural del resto de la base.
+> Al aplicar una ligera presión sobre ese punto, escuchas un clic metálico y seco que resuena en el silencio de la estancia. No hay un movimiento brusco, pero sientes una vibración mínima que recorre la estructura de la caja, como si un pestillo interno se hubiera liberado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1602 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 310 — 216/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1982 ms
+
+> "Vaya, pero si tienes secretos."
+> Intento abrir la caja con cuidado para ver qué hay dentro.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 6+-1=5
+
+### [4] DM
+
+  5422 ms
+
+> Tus dedos forcejean con la tapa, que se resiste a ceder a pesar del clic previo. Al intentar levantarla con cautela, la madera cruje y se desliza de forma torpe, pero el mecanismo interno parece haberse encasquillado o requiere un movimiento más preciso que no logras ejecutar.
+> La caja permanece cerrada, revelando únicamente una fina línea de oscuridad entre la tapa y el cuerpo del mueble. El silencio de la estancia vuelve a envolverte, dejando el secreto del compartimento intacto y frustratingmente fuera de tu alcance.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2489 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 311 — 217/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2862 ms
+
+> "Maldita sea, no te atasques ahora."
+> Sigo intentando manipular el mecanismo con cuidado, buscando algún resorte o palanca oculta que haya pasado por alto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 11+-1=10
+
+### [4] DM
+
+  5685 ms
+
+> Tus dedos recorren los bordes internos y la madera rugosa, presionando con tacto quirúrgico cada centímetro del marco. El mecanismo sigue mudo, y por más que deslizas las yemas por las ranuras, no percibes ningún resorte que ceda ni ninguna palanca que responda a tu presión.
+> La caja permanece inmóvil, como si se hubiera fundido con el cuerpo del mueble. Solo el eco de tu propia respiración y el ligero aroma a polvo y madera vieja llenan el espacio mientras el compartimento se resiste a revelar su contenido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1317 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 312 — 218/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3613 ms
+
+> "Maldita sea, tiene que haber algo."
+> Me aparto un momento para mirar la caja desde otro ángulo, buscando cualquier marca de desgaste o arañazo que indique que el mecanismo se activa desde fuera del marco.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 6+-1=5
+
+### [4] DM
+
+  8469 ms
+
+> Te alejas un paso y entornas los ojos, escrutando la superficie del mueble desde una perspectiva distinta. El barniz descascarillado y las manchas de humedad han creado un patrón caótico de vetas y grietas que engañan a la vista, haciendo que cualquier posible marca parezca simplemente el desgaste natural de los años.
+> A pesar de tu insistencia, la madera se muestra indiferente. No hay hendiduras sospechosas, ni marcas de dedos en las esquinas, ni ningún rastro de fricción que sugiera que una pieza se desliza o gira desde el exterior. La caja sigue siendo un bloque sólido y hermético, integrado perfectamente en la estructura.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1316 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 313 — 219/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3043 ms
+
+> "Maldita sea, no puede estar tan bien hecha."
+> Me arrodillo para revisar la base del mueble y el suelo donde apoya, buscando cualquier rastro de desgaste o palancas ocultas bajo la madera.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 13+-1=12
+
+### [4] DM
+
+  6763 ms
+
+> Tus dedos recorren la madera rugosa y el polvo acumulado en la base del mueble. El suelo de tablones descuadrados cruje bajo tu peso mientras buscas cualquier irregularidad, una muesca en el suelo o un rastro de roce que delate el movimiento de un compartimento secreto inferior.
+> La superficie es áspera y el polvo se ha asentado en capas gruesas y uniformes, sin interrupciones ni marcas de arrastre recientes. No encuentras ninguna palanca, ni hendiduras, ni nada que rompa la monotonía de la madera vieja y el sucio suelo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1325 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 314 — 220/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  26027 ms
+
+> "Maldita sea, no puede estar simplemente vacío."
+> Me incorporo y empiezo a revisar el resto del mueble, buscando doble fondo en los cajones o huecos tras el respaldo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+-1=14
+
+### [4] DM
+
+  7382 ms
+
+> Tus manos se deslizan por el interior de los cajones, palpando la madera seca y el aroma a naftalina y humedad. Al llegar al fondo del cajón central, notas que la madera no suena hueca, sino que tiene una densidad irregular. Presionas con fuerza en una esquina superior y sientes un clic metálico, casi imperceptible, que libera un pestillo oculto.
+> La base del cajón se desplaza un par de centímetros hacia arriba, revelando un espacio estrecho y oscuro. Allí, envuelto en un trozo de tela encerada y amarillenta, descansa un pequeño fajo de papeles atados con un cordel de cuero y una llave de hierro oxidada que desprende un frío inusual al tacto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4087 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: fajo de papeles
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item fajo de papeles
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 315 — 221/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  9329 ms
+
+> "Vaya, vaya... secretos guardados bajo llave."
+> Saco el fajo de papeles y la llave del compartimento oculto, guardándolos rápidamente en mi equipo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+-1=14
+
+### [4] DM
+
+  7583 ms
+
+> Tus dedos recogen el fajo y la llave, desapareciendo rápidamente en los pliegues de tu equipo justo antes de que cualquier ruido externo pueda alertar a alguien. Con la mirada ahora fija en el resto del mueble, pasas la mano por los bordes del compartimento secreto y examinas las juntas de la madera, buscando cualquier otra irregularidad o rastro de mechanismos similares.
+> El cajón central no esconde más secretos, pero al analizar la disposición de los falsos fondos y el desgaste de la madera, notas que el mecanismo de presión ha sido usado con frecuencia, dejando una marca circular casi invisible donde el dedo debe pulsar. No hay más compartimentos ocultos en esta pieza, aunque el resto de los cajones contienen únicamente ropa vieja y telas polvorientas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5903 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = fajo de papeles
+  ✓ creación item: llave del compartimento oculto
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item llave del compartimento oculto
+  → delta 4696: Isolde.inventory = fajo de papeles
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 316 — 222/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4944 ms
+
+> "Ya tengo lo que buscaba."
+> Cierro el mueble con cuidado para que todo quede exactamente como estaba y me alejo del escritorio.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 13+4=17
+
+### [4] DM
+
+  6331 ms
+
+> El mueble se cierra con un clic sordo y preciso, devolviendo la superficie de madera a su apariencia imperturbable. Te deslizas por la habitación como una sombra, evitando que el suelo de madera cruja bajo tu peso mientras te alejas del escritorio, dejando el aire estático y el polvo suspendido en los rayos de luz que filtran las cortinas.
+> El silencio de la estancia permanece intacto; no hay pasos acercándose ni el sonido de una llave girando en la cerradura de la puerta. El entorno sigue exactamente igual que cuando entraste, sin que quede rastro alguno de que el compartimento secreto haya sido vulnerado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1388 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 317 — 223/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  9823 ms
+
+> "No puedo irme de aquí con las manos vacías."
+> Busco otros compartimentos ocultos o documentos valiosos en el resto de la habitación.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 5+-1=4
+
+### [4] DM
+
+  9140 ms
+
+> Recorres la estancia con la mirada, palpando los marcos de los cuadros y deslizando los dedos por las molduras del techo, pero la habitación se revela obstinadamente simple. Cada rincón que inspeccionas no es más que madera vieja, papel tapiz desconchado y el aroma rancio de un lugar que ha sido ignorado durante años.
+> Tus manos encuentran solo polvo y superficies sólidas. No hay hendiduras sospechosas en las paredes ni suelos que suenen huecos bajo tus pasos; el resto del mobiliario es tan anodino que cualquier intento de hallar un secreto adicional se siente como perseguir fantasmas en una estancia vacía.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1241 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 318 — 224/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  6048 ms
+
+> "Demasiado limpio para ser verdad."
+> Me acerco al mueble más pesado de la habitación e intento moverlo para revisar qué hay debajo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 1+1=2  PIFIA
+
+### [4] DM
+
+  6390 ms
+
+> Te encorvas y aplicas toda tu fuerza contra la base del pesado armario, pero el mueble no cede ni un milímetro. En el esfuerzo brusco y mal coordinado, tu pie resbala sobre una zona de madera pulida y pierdes el equilibrio violentamente.
+> El impacto de tu caída provoca que el armario se tambalee peligrosamente hacia adelante. Con un crujido seco, una de las patas de madera podrida cede totalmente y el mueble se desploma con un estruendo sordo, volcando su contenido sobre ti y dejándote atrapado bajo una lluvia de trastos viejos y el peso de la estructura.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5821 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.conditions = atrapada
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4706: Isolde.conditions = atrapada
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 319 — 225/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4150 ms
+
+> "¡Maldita sea!"
+> Intento empujar la estructura hacia arriba para liberar mis piernas y salir de debajo del mueble.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 8+1=9
+
+### [4] DM
+
+  6874 ms
+
+> Apoyas las manos contra la madera astillada y empujas con un gruñido, pero el peso del armario es superior a tu fuerza actual. El mueble apenas se desplaza unos milímetros, produciendo un chirrido sordo contra el suelo, mientras el peso sigue presionando tus piernas con firmeza, manteniéndote anclado al suelo entre el polvo y los trastos esparcidos.
+> El aire en la habitación se siente pesado, cargado de motas de polvo que bailan bajo la luz, y el silencio que sigue al estruendo es interrumpido únicamente por el sonido de tu propia respiración agitada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1508 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 320 — 226/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  5582 ms
+
+> "Maldita sea..."
+> Suelto el mueble y me deslizo hacia abajo para intentar buscar algún hueco o punto de apoyo debajo del armario que me permita hacer palanca.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 18+1=19
+
+### [4] DM
+
+  9423 ms
+
+> Tus dedos tantean la oscuridad bajo la madera, apartando astillas y polvo, hasta que encuentras un espacio vacío donde la estructura del armario cede ligeramente. Apoyando la espalda contra el suelo y clavando los pies en el tablero, realizas un esfuerzo coordinado, flexionando los músculos con precisión. El mueble se eleva con un crujido violento, desplazándose lo suficiente para liberar la presión sobre tus piernas y abrir un hueco por el que puedes maniobrar.
+> El armario queda ahora inclinado, apoyado precariamente contra la pared opuesta, dejando al descubierto el espacio que antes te mantenía atrapado. Una corriente de aire frío se cuela por el hueco, trayendo consigo el olor a humedad y moho de la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1406 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 321 — 227/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3711 ms
+
+> "Por fin."
+> Me deslizo fuera del hueco con cuidado y me pongo en pie, sacudiéndome el polvo de la ropa. Miro a mi alrededor para reconocer la habitación.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 15+4=19
+
+### [4] DM
+
+  8908 ms
+
+> La estancia es pequeña y asfixiante, iluminada apenas por una luz cenicienta que se filtra a través de una ventana alta y estrecha, cubierta por una capa espesa de telarañas. El aire flota cargado de partículas de polvo que bailan en los escasos rayos de sol. Al observar los alrededores, notas que la habitación ha sido despojada de casi todo su valor; solo quedan un marco de cama oxidado y una mesa coja con manchas de tinta seca que sugieren que alguien escribió aquí con urgencia.
+> En la esquina opuesta al armario, el suelo de madera presenta un desgaste circular inusual, como si un objeto pesado hubiera sido arrastrado repetidamente en el mismo sitio. Bajo la mesa, medio oculta por un jirón de tela podrida, sobresale la esquina de una pequeña caja de cuero oscuro, cuyo cierre de latón permanece cerrado pero intacto, contrastando con la decrepitud del resto del cuarto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3805 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: caja de cuero oscuro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item caja de cuero oscuro
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 322 — 228/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  6124 ms
+
+> "A ver qué guardan aquí."
+> Me acerco a la mesa y trato de recuperar la caja de cuero sin hacer ruido.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 3+4=7
+
+### [4] DM
+
+  7133 ms
+
+> Tus pasos resuenan con un crujido seco sobre las tablas podridas, rompiendo el silencio sepulcral de la estancia. Al inclinarte para alcanzar la caja, el roce de tu ropa contra la madera vieja y un movimiento torpe al agacharte provocan que la mesa coja se tambalee, emitiendo un chirrido agudo que reverbera en las paredes desnudas de la habitación.
+> Logras sujetar la caja de cuero oscuro, sintiendo el frío del latón en tus dedos, pero el ruido ha sido evidente. El polvo que bailaba en el aire se asienta mientras el silencio vuelve a reinar, aunque ahora se siente cargado, como si el eco de tu torpeza acabara de alertar a algo o alguien fuera de la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3326 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = caja de cuero oscuro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4722: Isolde.inventory = caja de cuero oscuro
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 323 — 229/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  6737 ms
+
+> "Maldita sea."
+> Sujeto la caja con fuerza y me pego a la pared más cercana, conteniendo la respiración mientras escucho atentamente hacia el pasillo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 4+4=8
+
+### [4] DM
+
+  6891 ms
+
+> El corazón late con fuerza contra las costillas mientras te fundes con la pared fría y húmeda. El silencio que sigue al estrépito es absoluto, un vacío opresivo que parece amplificar el sonido de tu propia sangre bombeando en los oídos. Te concentras, aguzando el oído hacia el pasillo, pero la penumbra y la arquitectura irregular de la estancia juegan en tu contra.
+> No logras distinguir ningún sonido claro; el vacío sigue siendo el protagonista. No hay pasos apresurados, ni susurros, ni el arrastrar de alguna cadena, dejando la duda de si el ruido ha pasado desapercibido o si, por el contrario, algo se ha quedado inmóvil al otro lado de la puerta, esperando a que vuelvas a moverte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1254 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 324 — 230/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2337 ms
+
+> "Maldita sea..."
+> Sigo pegada a la pared, conteniendo la respiración mientras intento asomar la vista con cuidado hacia el pasillo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 3+4=7
+
+### [4] DM
+
+  8333 ms
+
+> Te asomas con cautela, deslizando apenas unos milímetros de tu rostro desde el borde de la pared. La penumbra del pasillo es densa y las sombras parecen bailar bajo el parpadeo de una antorcha lejana, creando figuras deformes que confunden tu vista.
+> El pasillo se extiende vacío ante ti, sumido en un silencio sepulcral. No ves movimiento alguno, pero la falta de claridad y la disposición de las columnas te impiden asegurar si el camino está realmente despejado o si hay alguien agazapado en los recovecos oscuros, justo fuera de tu ángulo de visión.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1882 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 325 — 231/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2105 ms
+
+> "Demasiado silencio." 
+> Me quedo inmóvil, aguzando el oído y tratando de distinguir cualquier respiración o roce metálico entre las columnas.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+4=6
+
+### [4] DM
+
+  8425 ms
+
+> El silencio se vuelve una masa espesa que parece presionar tus oídos. Te concentras, filtrando el ruido de tu propia respiración, pero la penumbra y la arquitectura del pasillo juegan en tu contra; el eco sordo de la estructura y el chisporroteo distante de la antorcha crean un ruido blanco que enmascara cualquier sonido sutil.
+> No logras distinguir ningún patrón rítmico, ni el roce de una tela contra la piedra ni el tintineo de una armadura. El vacío del corredor permanece impenetrable, dejándote con la inquietante duda de si la calma es real o si algo, muy cerca de ti, está conteniendo el aliento con la misma intensidad que tú.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1084 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 326 — 232/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2418 ms
+
+> "No voy a quedarme aquí esperando a que me sorprendan."
+> Saco una piedra pequeña del suelo y la lanzo con fuerza hacia el fondo del pasillo para provocar cualquier ruido oculto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 11+4=15
+
+### [4] DM
+
+  6591 ms
+
+> La piedra golpea la piedra del suelo con un chasquido seco que reverbera por las paredes del corredor, rompiendo la tensión del silencio. El proyectil rebota un par de veces antes de detenerse en la oscuridad del fondo, donde el sonido muere rápidamente, absorbido por la penumbra.
+> Durante unos segundos no ocurre nada, pero entonces, un sonido metálico y breve, como el roce de una bota contra el granito, resuena desde la profundidad del pasillo. No es un paso decidido, sino un movimiento torpe, una reacción instintiva al ruido de la piedra que delata que no estás solo en la estructura.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1371 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 327 — 233/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1852 ms
+
+> "¿Quién anda ahí?"
+> Me pego a la pared, tratando de fundirme con las sombras mientras escucho con atención.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 9+4=13
+
+### [4] DM
+
+  8195 ms
+
+> El silencio regresa, pero ahora es denso, cargado de una expectación nerviosa. Desde la oscuridad del corredor, se escucha una respiración agitada y el roce de una tela contra la piedra, seguida de un pequeño tropiezo que termina en un gemido ahogado. No hay una respuesta verbal inmediata, solo el sonido de alguien que intenta recuperar el equilibrio y se queda congelado, escuchando el eco de tu pregunta.
+> A medida que agudizas el oído, distingues el tintineo rítmico de unas cadenas cortas o unas llaves chocando entre sí. El sonido no proviene de una criatura bestial, sino de alguien que se mueve con una torpeza humana, alguien que parece tan sorprendido por tu presencia como tú por la suya. Una silueta borrosa y encorvada comienza a recortarse contra la penumbra del fondo, aunque permanece inmóvil, temiendo avanzar más.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3011 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 328 — 234/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4326 ms
+
+> "No voy a hacerte daño, pero no me gusta que te escondas. Sal de ahí."
+> Doy un paso lento hacia la silueta, manteniendo la mano cerca de mi arma pero sin desenvainarla.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 3+4=7
+
+### [4] DM
+
+  11753 ms
+
+> La silueta permanece anclada en la penumbra, y el silencio que sigue a tu orden se vuelve asfixiante. A pesar de tu paso lento, el tintineo de las cadenas se intensifica bruscamente, delatando un temblor incontrolable en quien sea que esté allí. No hay un movimiento fluido hacia la luz; solo el sonido de una respiración errática que parece luchar contra un sollozo contenido.
+> La figura no sale del corredor. En su lugar, se escucha un susurro ronco, apenas un hilo de voz que vibra con terror, proveniente de la oscuridad donde la luz no alcanza a definir sus rasgos.
+> —No... no me veis... no podéis verme... —balbucea la voz, seguida del sonido de alguien retrocediendo torpemente, chocando contra la pared de piedra con un golpe seco.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2248 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 329 — 235/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2427 ms
+
+> "Deja de hacer el ridículo y sal de ahí ahora mismo."
+> Me detengo en seco y mantengo la mano cerca de mi arma, observando la oscuridad para intentar distinguir cualquier movimiento.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 10+4=14
+
+### [4] DM
+
+  8269 ms
+
+> El eco de tu orden rebota en las paredes húmedas, cortando la vacilación del prisionero. En la penumbra, el movimiento es errático; el roce de telas sucias contra la piedra y el metálico golpeteo de los grilletes revelan a alguien encogido, que intenta hacerse pequeño contra el ángulo del muro.
+> A través de la oscuridad, el resultado de tu observación permite distinguir una silueta demacrada. Es un hombre, Elian, con la piel pálida y manchada de hollín que brilla débilmente bajo la luz. Sus ojos, dilatados por el pánico, reflejan el resplandor de tu posición mientras se abraza a sí mismo, temblando violentamente sin atreverse a dar un paso hacia adelante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1576 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 330 — 236/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  6196 ms
+
+> "No voy a hacerte daño, Elian. Levántate y ven aquí."
+> Me acerco lentamente hacia él, manteniendo una distancia prudencial para no asustarlo más, pero con paso firme.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 18+0=18
+
+### [4] DM
+
+  9324 ms
+
+> Elian deja de temblar por un instante, procesando el tono de tu voz. Sus ojos recorren tu figura, buscando cualquier signo de engaño o agresividad, pero la firmeza calmada de tu avance parece romper el hechizo del pánico. Su respiración, que hasta ahora era un jadeo errático, comienza a estabilizarse, aunque el sonido metálico de sus cadenas sigue resonando con cada pequeño espasmo de sus hombros.
+> Lentamente, el hombre apoya las palmas en el suelo frío y se impulsa hacia arriba. Sus piernas flaquean y se tambalea, quedando apoyado contra la pared húmeda mientras te mira con una expresión de absoluta vulnerabilidad.
+> —No... no he hecho nada malo —susurra con una voz rasposa y quebrada—. Por favor, solo decidme que me vais a sacar de este agujero.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2082 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 331 — 237/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2722 ms
+
+> "No sé si has hecho algo malo o no, pero ahora mismo soy lo único que tienes delante."
+> Me detengo a un paso de él y lo observo con detenimiento, analizando su estado y su lenguaje corporal.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+2=9
+
+### [4] DM
+
+  11487 ms
+
+> Elian se encoge contra la piedra, hundiendo los hombros mientras el frío de la pared parece calar hasta sus huesos. Sus ojos, dilatados y brillantes por el terror, no dejan de seguir cada uno de tus movimientos, como un animal acorralado que no sabe si el nuevo visitante es un salvador o un verdugo más.
+> A pesar de su súplica, el hombre mantiene una tensión rígida en el cuello y evita sostenerte la mirada durante más de un segundo. Hay algo en su postura que no encaja del todo con el colapso nervioso: un rastro de resistencia instintiva, como si estuviera acostumbrado a proteger algo, aunque sea solo un secreto, incluso en su estado de miseria.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3872 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 332 — 238/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3628 ms
+
+> "Deja de temblar y mírame. No soy tu verdugo, pero tampoco soy una santa."
+> Me acerco lentamente y trato de analizar si oculta algo entre sus ropas o en el rincón donde se encoge.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+2=9
+
+### [4] DM
+
+  10973 ms
+
+> Elian da un respingo violento ante tu orden, encogiéndose aún más contra la piedra fría. Sus ojos saltan rápidamente hacia los tuyos y luego vuelven a bajar al suelo, incapaz de sostener la mirada, mientras un sollozo ahogado escapa de su garganta. El temblor de sus manos no cesa, y se abraza a sí mismo con una urgencia casi desesperada.
+> Al acercarte, el hombre se desliza unos centímetros más hacia la esquina, intentando hacerse pequeño. A simple vista, sus ropas son harapos sucios y desgarrados que se pegan a su cuerpo escuálido, y el rincón donde se refugia no parece contener más que polvo y el rastro húmedo de su propio miedo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4208 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 333 — 239/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  5392 ms
+
+> "Ya basta de sollozos. Mírame y dime qué es lo que te tiene así de asustado."
+> Me pongo en cuclillas frente a él para quedar a su altura, manteniendo una distancia que no lo asuste más, pero sin dejar de presionarlo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+2=3  PIFIA
+
+### [4] DM
+
+  8598 ms
+
+> Elian se tensa al notar que te pones a su altura, interpretando el movimiento como una preparación para un ataque o una captura. Al obligarlo a mirarte, el hombre levanta la vista un instante; sus pupilas están dilatadas y el rostro surcado por manchas de suciedad y lágrimas secas. Te mira con una expresión de absoluto terror, pero no hacia ti, sino hacia algo que parece estar justo detrás de tu hombro.
+> En tu intento de leer sus intenciones, el lenguaje corporal del hombre te resulta completamente ajeno y confuso. Interpretas su temblor y sus espasmos no como miedo, sino como una señal de que oculta algo agresivo o que está a punto de lanzarse contra ti en un ataque de locura. El pánico en sus ojos te parece una máscara calculada para engañarte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1696 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 334 — 240/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4851 ms
+
+> "No intentes engañarme con esas caras."
+> Me alejo un paso de él, manteniendo la guardia alta y la mano cerca de mi arma. Gira la cabeza rápidamente para mirar hacia atrás, hacia donde él parece estar mirando.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 15+4=19
+
+### [4] DM
+
+  7129 ms
+
+> Al girar la cabeza, el aire se siente gélido y pesado, cargado con un olor metálico a sangre vieja y humedad. No hay nadie, ni rastro de movimiento, ni siquiera una sombra fuera de lugar en el entorno inmediato; el camino detrás de ti está vacío y el silencio es absoluto, roto únicamente por la respiración errática de Elian.
+> El hombre suelta un gemido ahogado y se encoge sobre sí mismo, huyendo de tu mirada. Se abraza las rodillas con fuerza, balanceándose rítmicamente mientras susurra palabras ininteligibles que se pierden entre sus dientes apretados, evitando a toda costa volver a mirar hacia el espacio que acabas de inspeccionar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2128 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 335 — 241/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4644 ms
+
+> "Cálmate. Mírame, Elian. ¿Qué has visto exactamente?"
+> Me arrodillo frente a él y trato de obligarlo a mantener el contacto visual para sacarlo de su trance.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 2+0=2
+
+### [4] DM
+
+  7293 ms
+
+> Elian se encoge aún más cuando te acercas, hundiendo la barbilla en el pecho. Al intentar forzar su mirada, el hombre emite un sonido gutural, un rechazo visceral que lo hace retroceder arrastrando los talones sobre el suelo húmedo. Sus ojos, dilatados y enrojecidos, se clavan en un punto muerto a tu lado, negándose a conectar contigo.
+> —No... no me obligues —balbucea con la voz rota, temblando violentamente—. No quieres saberlo. Si lo nombro, si lo miro... volverá a sentir que estamos aquí.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1254 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 336 — 242/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2810 ms
+
+> "No me asusta un nombre, pero sí me asusta que me ocultes la verdad."
+> Me inclino hacia él, tratando de invadir su espacio personal para presionarlo.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 14+0=14
+
+### [4] DM
+
+  9390 ms
+
+> Elian retrocede hasta que su espalda choca contra la pared fría y húmeda, quedando atrapado entre el muro y tu presencia. El espacio se reduce drásticamente y el hombre comienza a hiperventilar, el pecho subiendo y bajando en espasmos cortos mientras el pánico nubla sus facciones. El sonido de su respiración es un silbido errático que llena el silencio del lugar.
+> —¡Está bien, está bien! —grita súbitamente, cerrando los ojos con fuerza y apretando los puños contra el suelo—. Se llama Malakor... El Segador de Sombras. Él no busca nombres, busca el miedo que deja el nombre en la garganta. Ahora que lo he dicho... ahora que lo hemos traído aquí... que los dioses nos perdonen.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9389 ms · 1 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+  ✓ delta elian · npc.knowledge = El Segador de Sombras se llama Malakor
+  ✓ creación npc: Malakor
+  ⚠ nombres no reconocidos: Malakor, Segador, Sombras
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: npc Malakor
+  ✗ PNJ inexistente: elian
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 337 — 243/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 374 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2979 ms
+
+> "Malakor... El Segador de Sombras. No me asustan los nombres, Elian."
+> Me aparto un paso para darle aire, pero mantengo la mirada fija en él para ver si oculta algo más.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 5+2=7
+
+### [4] DM
+
+  15170 ms
+
+> Elian exhala un suspiro tembloroso, aunque sus hombros no se relajan ni un ápice. Al recuperar el espacio, se desliza lentamente por la pared húmeda hasta quedar sentado en el suelo, abrazando sus rodillas. Sus ojos, dilatados y brillantes por el terror, te siguen con una intensidad febril, pero no hay rastro de engaño en su mirada; solo una desesperación cruda y genuina.
+> El hombre se cubre el rostro con una mano, dejando que el silencio regrese al callejón, interrumpido únicamente por el goteo distante de alguna tubería. Permanece encogido, temblando levemente, como si el simple hecho de haber pronunciado aquel nombre hubiera dejado una herida abierta en el aire entre vosotros.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1922 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 338 — 244/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  5516 ms
+
+> "Ya has dicho el nombre. Ahora dime qué es lo que buscan exactamente."
+> Me quedo de pie, observándolo desde una distancia prudencial, sin intentar consolarlo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+2=11
+
+### [4] DM
+
+  7913 ms
+
+> Elian baja la mano lentamente, revelando un rostro pálido y surcado por el sudor. Te mira desde el suelo, con los ojos entornados, evaluando tu postura distante y fría. Su respiración comienza a estabilizarse, aunque el temblor de sus manos persiste mientras se abraza con más fuerza a sus rodillas.
+> —No buscan una cosa... buscan el derecho —murmura con una voz quebrada que apenas supera el susurro—. El reparto, los títulos de la tierra que dejaron atrás... quieren asegurarse de que nadie más pueda reclamar lo que el Consejo ya ha decidido que no pertenece a nadie.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8885 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta elian · npc.knowledge = Buscan el derecho, el reparto y los títulos de la tierra que dejaron atrás para evitar que otros los reclamen
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 339 — 245/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2551 ms
+
+> "¿El derecho a qué? Habla claro, Elian."
+> Me inclino hacia él, manteniendo la distancia pero presionando para que dé detalles sobre esos títulos de tierra.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+2=6
+
+### [4] DM
+
+  9413 ms
+
+> Elian se encoge sobre sí mismo, evitando el contacto visual mientras el sudor le resbala por la sien. Se queda en silencio un momento, procesando la presión de tu tono; sus hombros suben y bajan en una respiración errática. Al levantar la vista, sus ojos reflejan una mezcla de miedo y una resignación amarga.
+> —A las tierras del valle bajo, las que quedaron vacías cuando el campamento se movió al Paso —responde con voz ronca, hablando rápido, como si temiera que alguien pudiera escucharlo—. Hay pergaminos, sellos antiguos que prueban quiénes eran los dueños originales. El Consejo dice que son papeles viejos, sin valor, pero los están recolectando todos. Si los borran del registro, el valle pasa a ser propiedad del Granero... y nosotros nos quedamos sin nada a donde volver.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5992 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.knowledge
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 340 — 246/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2915 ms
+
+> "¿Dónde exactamente están esos pergaminos ahora mismo?"
+> Le agarro del brazo con fuerza para que no intente alejarse mientras espero la respuesta.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 8+0=8
+
+### [4] DM
+
+  10509 ms
+
+> Elian da un respingo violento cuando sientes el agarre de tu mano sobre su brazo, pero el gesto no parece quebrarlo del todo. Te mira con los ojos muy abiertos, el pánico aún presente, aunque su expresión se vuelve cautelosa al notar que tu presión no ha logrado sacarle una respuesta inmediata ni ha hecho que se desplome en confesiones.
+> —¡En el archivo del Consejo! —exclama, forcejeando débilmente para zafarse, aunque sin éxito—. Están en la bodega del ala oeste, bajo llave. Pero no es tan simple, hay guardias rotando cada hora y el archivista no deja entrar a nadie que no lleve el sello del Granero. ¡Suéltame, por favor, que alguien nos verá!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  10250 ms · 1 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+  ✓ delta elian · npc.knowledge = Los pergaminos están en la bodega del ala oeste del archivo del Consejo, bajo llave, con guardias rotando cada hora y acceso restringido al sello del Granero
+  ✓ creación location: bodega del ala oeste
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location bodega del ala oeste
+  ✗ PNJ inexistente: elian
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 341 — 247/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3200 ms
+
+> "El sello del Granero, ¿eh? Ya veremos qué tan difícil es conseguir uno."
+> Le suelto el brazo bruscamente y me alejo un paso para que no se sienta tan acorralado, mientras observo los alrededores para ver si alguien se acerca.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 17+4=21
+
+### [4] DM
+
+  10429 ms
+
+> Elian suelta un suspiro tembloroso y se frota el brazo con brusquedad, retrocediendo instintivamente mientras recupera el equilibrio. Sus ojos saltan de ti a los callejones circundantes, todavía inquieto, pero la presión inmediata ha desaparecido y su postura se vuelve menos rígida, aunque sigue alerta.
+> El entorno se despliega con nitidez: la calle es un flujo constante de mercaderes y campesinos, pero no hay nadie vigilando específicamente vuestra posición. A unos veinte pasos, un par de guardias del Consejo conversan distraídamente junto a un carro de grano, sus capas con el emblema del Granero ondeando levemente. Más allá, el ala oeste del complejo se alza imponente, con muros de piedra gris y una única entrada custodiada por un centinela que bosteza mientras observa el reloj de sol.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1509 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 342 — 248/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4255 ms
+
+> "Parece que nos han dejado un hueco. No te muevas mucho."
+> Me acerco a Elian y trato de analizar su lenguaje corporal para saber si sigue asustado o si planea traicionarme ahora que estamos solos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 16+2=18
+
+### [4] DM
+
+  8631 ms
+
+> Elian mantiene los hombros encogidos y el cuello tenso, pero sus dedos ya no tiemblan con la misma intensidad. Sus ojos, aunque inquietos, no buscan una oportunidad para huir ni escanean el entorno en busca de aliados ocultos; más bien, reflejan el agotamiento de quien ha estado bajo una presión insoportable y acaba de soltar el aire.
+> Se queda anclado en el sitio, casi hipnotizado por el tono de tu orden. No hay malicia en su mirada, solo una sumisión teñida de pánico residual y una profunda incertidumbre sobre lo que esperas de él ahora que el peligro inmediato ha cedido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1293 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 343 — 249/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  5294 ms
+
+> "Ya puedes relajarte. Ahora cuéntame exactamente qué es lo que te tenía tan asustado y quién te busca."
+> Me cruzo de brazos, manteniendo la mirada fija en él para asegurarme de que no intente ninguna jugarreta.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+2=15
+
+### [4] DM
+
+  11443 ms
+
+> Elian exhala un suspiro tembloroso y sus hombros caen, aunque no llega a relajarse del todo; sigue pareciendo un animal acorralado que no sabe si el cazador ha decidido dejarlo ir o simplemente está jugando con él. Te mira a los ojos, buscando alguna señal de clemencia o engaño, y notas que no hay rastro de una mentira elaborada en su lenguaje corporal, sino una honestidad cruda nacida del terror.
+> —No... no es una sola persona —balbucea, bajando la voz como si las paredes pudieran escuchar—. Es el Consejo del Granero. El reparto de las cosechas no ha cuadrado, faltan sacos, y dicen que yo sé dónde están. Si me encuentran, no me preguntarán dos veces; me colgarán de la viga más alta del almacén antes del amanecer.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7107 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · npc.knowledge = El Consejo del Granero busca a Elian porque faltan sacos en el reparto de cosechas y creen que él sabe dónde están
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: Isolde
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 344 — 250/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  84210 ms
+
+> "El Consejo del Granero, ¿eh? Un nombre muy pomposo para unos ladrones de sacos."
+> Me cruzo de brazos y lo observo con detenimiento, analizando si su miedo es real o una actuación.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+2=15
+
+### [4] DM
+
+  5261 ms
+
+> Elian se encoge ante el comentario, bajando la mirada hacia sus botas embarradas. Sus dedos juguetean nerviosos con el borde de su túnica raída y el temblor de sus manos es constante, una vibración que nace del pecho y llega hasta las puntas de los dedos.
+> No hay rastro de cálculo en su expresión, solo un pánico visceral y una desesperación genuina. El sudor frío que perla su frente y la forma en que se sobresalta ante cualquier ruido distante confirman que su terror es real; no está actuando, está aterrorizado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  30004 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 345 — 251/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4246 ms
+
+> "Deja de temblar y mírame. Si quieres que te ayude, necesito que me digas exactamente qué es lo que te tiene así."
+> Me acerco un paso hacia él, manteniendo una distancia que no lo asuste más, pero observando cada uno de sus gestos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+2=15
+
+### [4] DM
+
+  7711 ms
+
+> Elian levanta la vista lentamente, aunque sus ojos saltan de un lado a otro, como si esperara que algo emergiera de las sombras detrás de ti. El temblor no cesa, pero el tono de su voz, aunque quebrada, es sincero; no hay rastro de mentira ni de omisión deliberada en su lenguaje corporal. Se ha quedado exhausto por el miedo, y tu presencia parece ser el único ancla que impide que se colapse por completo.
+> —No... no entienden —susurra, con la voz seca—. El reparto... no ha sido justo. El Consejo ha tomado más de lo que corresponde y ahora vienen a reclamar el resto. Si saben que he hablado, o que alguien me ha visto... no me dejarán volver a la tierra que dejamos atrás. ¡No me dejarán volver!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8689 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta elian · npc.knowledge = El Consejo ha tomado más de lo que corresponde y vienen a reclamar el resto
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 346 — 252/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3608 ms
+
+> "Tranquilízate. No voy a dejar que te lleven ahora mismo, pero necesito saber exactamente qué es lo que el Consejo ha robado."
+> Me acerco a él para darle seguridad, mientras observo los alrededores para asegurarme de que no hay nadie acechando.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+2=6
+
+### [4] DM
+
+  6753 ms
+
+> Elian se encoge ligeramente cuando te acercas, pero no se aparta; se aferra a la seguridad de tu presencia como un náufrago a una tabla, aunque sus ojos siguen escaneando los rincones oscuros con una paranoia febril. Su respiración es errática, un jadeo constante que llena el silencio del lugar.
+> Al observar los alrededores, el entorno se mantiene imperturbable: el viento agita algunas ramas secas y el eco de pasos lejanos se pierde en la distancia, pero no hay rastro de nadie acechando en las sombras inmediatas. Elian, sin embargo, no parece notar la calma del entorno; para él, el peligro es una certeza tangible.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2409 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 347 — 253/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3206 ms
+
+> "Tranquilo, Elian. Mira a mi alrededor, no hay nadie aquí."
+> Le pongo una mano en el hombro para intentar anclarlo y observo su expresión para ver si es un miedo real o una reacción a algo que solo él ve.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 15+2=17
+
+### [4] DM
+
+  20500 ms
+
+> Al sentir el contacto de tu mano, Elian da un respingo violento, pero no se aleja. Sus hombros están tensos como cuerdas a punto de romperse y el sudor le perla la frente a pesar del frío. Sus pupilas están dilatadas, casi borrando el iris, y sus ojos no se fijan en ti, sino que saltan frenéticamente de un punto a otro, como si estuviera siguiendo el rastro de insectos invisibles que reptan por las paredes.
+> Su miedo no es una actuación ni el resultado de un delirio aislado; es un terror visceral, animal. Hay una coherencia en su pánico: no teme a la oscuridad en sí, sino a algo específico que cree que habita en ella. El temblor de sus manos y la irregularidad de su pulso confirman que su cuerpo está en un estado de alerta máxima, convencido de que el peligro es inminente y real, aunque tú no percibas amenaza alguna.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2927 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 348 — 254/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3537 ms
+
+> "Mírame, Elian. Dime exactamente qué es lo que ves."
+> Sigo manteniendo el contacto físico para intentar anclarlo a la realidad mientras analizo sus reacciones.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+2=5
+
+### [4] DM
+
+  18866 ms
+
+> Elian no logra enfocar su mirada en ti. Sus ojos siguen danzando en el aire, esquivando tu rostro como si mirar directamente fuera peligroso o imposible. El contacto de tu mano parece ser lo único que evita que se desplome hacia atrás, pero sus músculos permanecen rígidos, vibrando bajo tu tacto.
+> —No... no lo ves... —susurra con una voz quebrada, apenas un hilo de aire—. Está justo ahí, moviéndose entre las sombras. No quiere que lo mires, pero yo sé que sabe que lo sé. ¡Está esperando a que parpadees!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2142 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 349 — 255/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3235 ms
+
+> "Tranquilo, Elian. Mírame a mí, no a eso."
+> Sigo sosteniéndolo con fuerza para que no caiga mientras intento analizar su estado físico y mental.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 15+2=17
+
+### [4] DM
+
+  14751 ms
+
+> Al centrarte en Elian, notas que su respiración es superficial y errática, y su pulso late con una rapidez alarmante contra tus dedos. No hay signos de heridas físicas recientes ni hematomas, pero sus pupilas están dilatadas y sus párpados tiemblan violentamente. El estado de hipervigilancia y la desconexión con la realidad sugieren un choque traumático profundo o un brote psicótico inducido por un terror intenso, más que una enfermedad orgánica.
+> Elian se encoge bajo tu toque, aunque no intenta soltarse. Sus ojos siguen recorriendo el perímetro de la habitación con una urgencia frenética, ignorando tu petición de contacto visual.
+> —¡No puedo! —estalla en un sollozo seco—. Si dejo de mirarlo, se acercará. Si te miro a ti... ¡él usará tus ojos para entrar!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1692 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 350 — 256/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3121 ms
+
+> "No hay nadie aquí que pueda entrar en mí, Elian. Escúchame."
+> Sigo presionando su pulso mientras intento analizar si hay algún rastro de magia o sustancias en su piel.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 5+2=7
+
+### [4] DM
+
+  13531 ms
+
+> Elian se tensa violentamente ante tus palabras, soltando un jadeo que suena más a un grito ahogado que a una respiración. Se retuerce levemente en tu agarre, aunque sus músculos parecen estar en un estado de rigidez catatónica; sus ojos, dilatados y brillantes, no se detienen en ti, sino que saltan de una esquina a otra de la habitación como si siguiera el rastro de algo invisible que se desplaza por el techo.
+> Tus dedos recorren su piel mientras buscas cualquier anomalía, pero el tacto solo te devuelve la sensación de un sudor frío y pegajoso que cubre su cuello y sienes. No detectas ninguna sustancia extraña, ni rastro de ungüentos, ni el hormigueo residual que deja la magia en la dermis; solo encuentras la respuesta fisiológica de un cuerpo consumido por un terror absoluto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2354 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 351 — 257/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2975 ms
+
+> "Mírame, Elian. Dime qué es lo que estás viendo."
+> Le sujeto la cara con firmeza para obligarlo a centrar la mirada en mí.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+2=11
+
+### [4] DM
+
+  7007 ms
+
+> Elian siente la presión de tus manos en sus mejillas y, por un instante, sus pupilas convergen en las tuyas. Sin embargo, el contacto no logra anclarlo a la realidad; sus ojos siguen vibrando, incapaces de sostener la mirada, y un estremecimiento involuntario recorre sus hombros.
+> —No... no está aquí —susurra con una voz quebrada, casi inaudible, mientras intenta apartar la cabeza con un movimiento espasmódico—. Solo... solo se mueve en los ángulos. Si lo miro mucho tiempo, sabrá que lo veo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2236 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 352 — 258/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3217 ms
+
+> "¿Quién no está aquí? ¿Qué es lo que se mueve?"
+> Suelto sus mejillas y me separo un paso, mirando con cautela hacia las esquinas y los ángulos de la habitación.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+4=10
+
+### [4] DM
+
+  15570 ms
+
+> Elian exhala un suspiro tembloroso al sentir que la presión desaparece de su rostro. Se encoge sobre sí mismo, abrazándose los hombros mientras evita mirar hacia cualquier rincón de la estancia. Sus palabras salen en un hilo, cargadas de un pavor visceral.
+> —El Susurro... el que no tiene nombre —balbucea, encogiéndose más—. No es una cosa, es una... ausencia. Se desliza donde la luz no llega a doblar.
+> Al observar las esquinas y los ángulos de la habitación, solo percibes el juego habitual de las sombras proyectadas por la luz tenue y el polvo suspendido en el aire. No hay movimiento anómalo, ni presencias visibles, solo el silencio opresivo del lugar y el sonido errático de la respiración de Elian.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1672 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Susurro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 353 — 259/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2786 ms
+
+> "Deja de temblar y dime exactamente dónde se desliza esa ausencia."
+> Me acerco a Elian y lo miro fijamente, tratando de descifrar si su miedo es real o si intenta manipularme.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 5+2=7
+
+### [4] DM
+
+  16750 ms
+
+> Elian se encoge aún más cuando te acercas, hundiendo la barbilla en el pecho. Sus ojos, dilatados y húmedos, bailan frenéticamente entre tus botas y la penumbra de las esquinas, incapaces de sostenerte la mirada. El temblor de sus manos no amaina; al contrario, se intensifica, haciendo que sus dientes castañeen con un sonido seco y rítmico.
+> —¡En los intersticios! —exclama en un sollozo ahogado, señalando con un dedo errático los huecos entre las vigas del techo y el espacio oscuro bajo los muebles—. No tiene un lugar... está en el espacio que queda entre las cosas. Si te quedas quieto demasiado tiempo en la sombra, empieza a borrarte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3508 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 354 — 260/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3302 ms
+
+> "¿Borrarme? Deja de decir tonterías y dime exactamente qué es lo que hay ahí arriba."
+> Me inclino hacia él, tratando de obligarlo a que me mire a la cara.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 15+0=15
+
+### [4] DM
+
+  18151 ms
+
+> Elian deja escapar un chillido ahogado cuando te inclinas sobre él, sintiendo el peso de tu presencia invadiendo su espacio. Al verse forzado a encontrarse con tu mirada, sus pupilas se contraen y el temblor de su cuerpo se vuelve espasmódico, como si estuviera tratando de encogerse dentro de su propia piel para escapar de ti.
+> —¡No son tonterías! ¡Es el Hambre de Sombras! —grita, con la voz quebrada por el pánico—. No tiene carne, solo... vacío. Se desliza por las vigas, esperando a que alguien baje la guardia para succionar el color y el nombre de quien lo toque. ¡Está ahí arriba ahora mismo, escuchándonos!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  16001 ms · 1 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+  ✓ delta elian · npc.knowledge = El Hambre de Sombras está arriba, es un vacío que succiona el color y el nombre de quien toca
+  ✓ creación npc: Hambre de Sombras
+  ⚠ nombres no reconocidos: Hambre, Sombras
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: npc Hambre de Sombras
+  ✗ PNJ inexistente: elian
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 355 — 261/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 384 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4173 ms
+
+> "Habla claro. ¿Qué es exactamente ese vacío y cómo se detiene?"
+> Me separo un poco de él, pero mantengo la mirada fija en sus ojos para ver si su pánico es real o una excusa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 16+2=18
+
+### [4] DM
+
+  18884 ms
+
+> Elian traga saliva con dificultad, sus ojos saltando nerviosos hacia las sombras del techo antes de volver a fijarse en los tuyos. La intensidad de su terror no es una máscara; el sudor frío que empapa su frente y la forma en que sus músculos se tensan ante cualquier crujido de la madera revelan un pánico visceral y genuino. No hay rastro de engaño en su voz, solo la desesperación de quien se siente presa.
+> —Es... es un hueco en el mundo, una mancha que consume —balbucea, bajando la voz a un susurro urgente—. No se puede matar con acero porque no hay nada que cortar. Solo se detiene si le das algo que desee más que a ti, o si logras atraerlo hacia la luz pura del mediodía, donde no tiene dónde esconderse. Pero aquí, en la penumbra... solo somos comida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1618 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 356 — 262/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2786 ms
+
+> "¿Y qué es lo que desea exactamente?"
+> Me inclino hacia él, tratando de analizar si su miedo es producto de la locura o de una amenaza real.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+2=12
+
+### [4] DM
+
+  15013 ms
+
+> Elian retrocede instintivamente cuando te inclinas, chocando sus hombros contra la pared húmeda. Sus pupilas están dilatadas y el temblor de sus manos es constante, una respuesta fisiológica que coincide plenamente con el terror que describe. No hay señales de una mentira elaborada ni de delirios inconsistentes; el hombre cree ciegamente en el horror que narra.
+> —Desea... peso —susurra, cerrando los ojos con fuerza—. No oro, ni joyas, sino el peso de los recuerdos, el peso de la culpa. Busca aquello que te ancla a este mundo para poder arrastrarte al suyo. Cuanto más amas algo, o más te atormenta un pecado, más brillante eres para esa cosa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2559 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 357 — 263/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3824 ms
+
+> "¿Recuerdos? Eso suena a cuentos para asustar niños o a una trampa muy elaborada."
+> Me separo de él y busco con la mirada cualquier objeto o rastro físico que el hombre haya dejado caer o que haya en la estancia que pueda darme una pista real.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 11+-1=10
+
+### [4] DM
+
+  9816 ms
+
+> Elian abre un ojo, observándote con una mezcla de lástima y cansancio mientras te alejas. Se desliza lentamente por la pared hasta quedar sentado en el suelo, abrazando sus rodillas, sumido en un silencio roto únicamente por el goteo rítmico del agua sobre la piedra.
+> Recorres la estancia con la mirada, escudriñando las sombras y el polvo del suelo. Aparte de la humedad que impregna las paredes y el olor a moho, no encuentras ningún rastro físico, objeto olvidado o pista material que valide las palabras del hombre. La habitación está despojada de todo lo que no sea piedra fría y desesperación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1569 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 358 — 264/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4129 ms
+
+> "Tengo que buscar algo que valga oro, no solo palabras."
+> Me acerco a las paredes y examino las juntas de las piedras buscando algún hueco o mecanismo oculto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+-1=3
+
+### [4] DM
+
+  7878 ms
+
+> Tus dedos recorren la superficie rugosa y fría de la piedra, palpando las grietas donde el musgo se ha adherido con fuerza. El tacto es uniforme; solo encuentras el relieve natural de la roca y la humedad pegajosa que mancha tus yemas.
+> No hay hendiduras sospechosas, ni placas que cedan al tacto, ni rastros de desgaste que sugieran que alguien haya manipulado esas juntas recientemente. Las paredes son tan sordas y cerradas como el silencio que ahora envuelve la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  47603 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 359 — 265/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3045 ms
+
+> "Vaya pérdida de tiempo."
+> Me separo de la pared y echo un vistazo rápido a todo el perímetro de la habitación buscando cualquier otra irregularidad.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 9+4=13
+
+### [4] DM
+
+  6835 ms
+
+> La mirada recorre los ángulos de la estancia, saltando de una esquina a otra mientras el polvo baila en los escasos haces de luz. La piedra sigue mostrándose imperturbable y monótona, sin que ningún detalle rompa la simetría del encierro ni revele un secreto oculto a simple vista.
+> El espacio permanece inerte, devolviéndote únicamente la imagen de una habitación vacía y fría, donde el único movimiento es el goteo rítmico de la humedad deslizándose por el techo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1241 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 360 — 266/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2338 ms
+
+> "No puede estar todo aquí"
+> Me acerco a las paredes y paso las manos por las juntas de la piedra buscando cualquier relieve o corriente de aire.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+-1=13
+
+### [4] DM
+
+  8537 ms
+
+> Tus dedos recorren la rugosidad de la piedra fría, sintiendo el rastro de salitre y la humedad pegajosa que impregna las juntas. El tacto es uniforme, una sucesión de bloques macizos que parecen haber sido encajados con una precisión implacable hace siglos.
+> En un punto concreto, mientras deslizas la palma por una de las esquinas, percibes que el goteo del techo no cae sobre todas las superficies por igual; una pequeña corriente de aire, casi imperceptible, parece succionarse hacia una hendidura mínima en la unión de dos bloques, aunque la piedra no cede ni muestra ningún mecanismo evidente al tacto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  25165 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 361 — 267/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2749 ms
+
+> "Vaya, así que hay un hueco."
+> Me acerco a la hendidura y trato de introducir algo fino para ver si puedo forzar la apertura o sentir qué hay detrás.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+-1=16
+
+### [4] DM
+
+  12317 ms
+
+> Al introducir el objeto fino en la hendidura, sientes que la resistencia es mínima, pero no hay un pestillo ni un muelle que ceda. En su lugar, la punta roza una superficie metálica, fría y oxidada, que vibra levemente con el flujo del aire. Al presionar con cuidado, el metal cede con un chasquido seco y sordo que resuena en el silencio de la estancia.
+> Uno de los bloques de piedra se desplaza apenas unos centímetros hacia adentro, rompiendo el sello de salitre. El aire que emana del hueco es rancio, cargado de un olor a cuero viejo y polvo acumulado, revelando una cavidad estrecha donde se vislumbra la esquina de un objeto envuelto en tela grasienta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5625 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: objeto envuelto en tela grasienta
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item objeto envuelto en tela grasienta
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 362 — 268/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2101 ms
+
+> "Vaya, parece que hemos encontrado algo."
+> Saco el objeto envuelto en tela de la cavidad con cuidado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+-1=16
+
+### [4] DM
+
+  13262 ms
+
+> Tus dedos se cierran sobre el bulto y lo extraes del hueco. Al desplegar la tela grasienta, que se deshace parcialmente por la humedad, queda al descubierto un estuche de cuero endurecido, cuarteado por el tiempo pero sorprendentemente robusto. El cierre de bronce está oscurecido por una pátina verdosa, pero cede sin resistencia.
+> En el interior, descansando sobre un lecho de terciopelo carmesí ahora descolorido y comido por la polilla, yace un pequeño diario encuadernado en piel oscura. Entre sus páginas, que crujen con un sonido seco, notas que algunos folios están pegados por manchas de una sustancia amarillenta y antigua, mientras que otros contienen anotaciones apresuradas en una caligrafía angulosa, acompañadas de bocetos detallados de constelaciones y mapas de rutas que no coinciden con ninguna geografía local conocida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5701 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = objeto envuelto en tela grasienta
+  ✓ creación item: diario encuadernado en piel oscura
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item diario encuadernado en piel oscura
+  → delta 4930: Isolde.inventory = objeto envuelto en tela grasienta
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 363 — 269/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  26 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4000 ms
+
+> "Veamos qué secretos guardas aquí."
+> Hojearé el diario con cuidado, intentando separar las páginas pegadas sin romperlas para leer las anotaciones y estudiar los mapas.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+-1=7
+
+### [4] DM
+
+  9529 ms
+
+> Tus dedos tantean los bordes de las páginas adheridas, pero el papel, debilitado por la humedad y la sustancia amarillenta, se resiste a ceder. Al intentar forzar la apertura de un folio, el material cruje peligrosamente y una esquina se rasga, dejando una palabra incompleta y un fragmento de mapa arrancado que cae al suelo, irremediable.
+> El resto de las hojas que logras pasar muestran esquemas astrales confusos y rutas que parecen conducir a ninguna parte, pero la caligrafía angulosa es tan errática que, sin una guía o un contexto claro, las anotaciones resultan ser un caos de garabatos y referencias crípticas que no logras descifrar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  10721 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 364 — 270/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  26 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3371 ms
+
+> "Maldita sea, no ahora."
+> Recojo el fragmento de mapa del suelo con cuidado y lo guardo. Intento analizar los garabatos y los esquemas astrales buscando algún patrón repetido o una palabra que reconozca.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+-1=13
+
+### [4] DM
+
+  10946 ms
+
+> Pasas los dedos sobre la tinta pálida y los trazos erráticos, intentando encontrar un hilo conductor entre el caos de los esquemas. A medida que comparas los dibujos astrales con las notas al margen, notas que ciertos símbolos geométricos se repiten con una frecuencia obsesiva, siempre vinculados a una palabra que, aunque mal escrita, se asemeja a una referencia geográfica o a un nombre propio.
+> Sin embargo, la coherencia se rompe constantemente. Las anotaciones saltan de un tema a otro sin transición, y los patrones que parecen emerger se desvanecen en cuanto intentas seguir la lógica de la página siguiente, dejándote solo con la sensación de que el autor escribía bajo una presión frenética o una mente fragmentada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  11016 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: fragmento de mapa
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item fragmento de mapa
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 365 — 271/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  27 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3196 ms
+
+> "No tiene sentido... es como si estuviera huyendo de sus propios pensamientos."
+> Intento aislar esos símbolos geométricos y la palabra recurrente para ver si puedo descifrar el nombre o el lugar.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+-1=7
+
+### [4] DM
+
+  17103 ms
+
+> Te concentras en los trazos, separando mentalmente los garabatos del resto del texto, pero la tinta parece bailar frente a tus ojos. Cada vez que crees haber aislado una letra de esa palabra recurrente, descubres que el trazo es ambiguo; lo que parecía una consonante resulta ser una mancha de grasa o un rasguño accidental del pergamino.
+> La geometría que intentas descifrar se vuelve un laberinto sin salida. Cuanto más analizas los símbolos, más se mezclan con las notas erráticas, y la sensación de caos se impone sobre cualquier intento de orden. El papel permanece mudo, revelando solo la desesperación de quien lo escribió, pero no el destino que buscaba.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3894 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 366 — 272/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  27 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3968 ms
+
+> "Maldita sea, esto es un desastre."
+> Suelto el pergamino con frustración y lo dejo sobre la mesa. Me pongo en pie y empiezo a buscar cualquier otro documento o nota que haya quedado olvidada en la habitación.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 20+-1=19  CRÍTICO
+
+### [4] DM
+
+  11605 ms
+
+> Tus ojos barren la estancia con una claridad renovada, ignorando el caos del pergamino para centrarse en los rincones olvidados. Al desplazar una pila de platos sucios y una vela consumida en el borde de la mesa, notas un relieve irregular bajo el tablero de madera. Con un movimiento rápido, descubres que una pequeña solapa del mueble ha sido recortada con precisión, creando un compartimento secreto que el dueño anterior mantuvo meticulosamente oculto.
+> Dentro del hueco descansa un fajo de cartas atadas con un cordel de cuero podrido y un mapa esquemático, dibujado con una tinta más oscura y firme que la del pergamino anterior. El mapa no muestra rutas, sino una serie de puntos marcados con símbolos geométricos que coinciden exactamente con los garabatos que intentabas descifrar, proporcionando el contexto visual que le faltaba al texto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5071 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: fajo de cartas y mapa esquemático
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item fajo de cartas y mapa esquemático
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 367 — 273/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  28 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2562 ms
+
+> "Vaya, parece que alguien no confiaba mucho en sus invitados."
+> Saco el fajo de cartas y el mapa del compartimento para examinarlos con calma.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+-1=3
+
+### [4] DM
+
+  10693 ms
+
+> Tus dedos rozan el papel amarillento y el cuero reseco mientras extraes el botín del escondite. Al desplegar el mapa y contrastarlo con las cartas, la disposición de los símbolos parece caótica; las líneas se cruzan en ángulos erráticos y las anotaciones marginales son apenas trazos nerviosos que no logran formar una coherencia clara bajo tu mirada.
+> El fajo de cartas permanece cerrado, el cordel resistiendo el paso del tiempo, pero el contenido se siente denso y desorganizado. Por más que intentas encontrar un patrón o una clave que vincule los puntos geométricos con una ubicación real, los datos se resisten a encajar, dejándote con una serie de marcas crípticas que no revelan ninguna dirección ni propósito evidente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1361 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 368 — 274/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  28 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4631 ms
+
+> "Maldita sea, esto es un caos."
+> Frunzo el ceño y empiezo a analizar las anotaciones marginales buscando cualquier palabra o símbolo que se repita.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+-1=15
+
+### [4] DM
+
+  6803 ms
+
+> Al concentrar la mirada en los márgenes, el ruido visual comienza a ceder. Entre los trazos nerviosos y las manchas de tinta, detectas una recurrencia: un pequeño glifo que asemeja una espiga quebrada, dibujado sistemáticamente junto a tres de los ángulos erráticos del mapa. No es un error del autor, sino un marcador.
+> Al aislar esos tres símbolos y trazar una línea imaginaria entre ellos, el caos geométrico cobra sentido. El patrón no describe un camino, sino un triángulo equilátero que encierra una zona específica del terreno, señalando un punto muerto donde las líneas convergen en un vacío deliberado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1282 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 369 — 275/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  28 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3519 ms
+
+> "Una espiga quebrada... No parece un error."
+> Sigo el trazo imaginario hasta el centro del triángulo y presiono con el dedo el vacío donde convergen las líneas, buscando algún relieve o marca oculta en el pergamino.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+-1=1
+
+### [4] DM
+
+  6933 ms
+
+> Tus dedos recorren la superficie del pergamino, presionando con cuidado el centro del vacío. El papel se siente seco y áspero, pero no hay ningún relieve, ni una costura oculta, ni ninguna marca que ceda bajo la presión. El tacto es uniforme, una extensión más de la fibra vieja y gastada que sostiene los trazos erráticos.
+> El vacío permanece así, mudo y plano, devolviéndote solo la sensación de la tinta seca y el polvo del tiempo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1081 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 370 — 276/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  28 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3006 ms
+
+> "No puede ser solo tinta."
+> Sostengo el pergamino frente a la luz para ver si hay marcas de agua o algo escrito que solo sea visible a contraluz.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 10+-1=9
+
+### [4] DM
+
+  8302 ms
+
+> Elevas el pergamino hacia la luz, dejando que los rayos atraviesen la fibra amarillenta y gastada del papel. La luminosidad resalta la porosidad del material y las manchas de humedad antiguas, pero el vacío central sigue siendo exactamente eso: un espacio donde no hay nada.
+> No aparecen letras ocultas, ni marcas de agua, ni relieves que el contraluz pueda revelar. El vacío es absoluto y la tinta que lo rodea se mantiene firme, sin filtrar secretos ni dejar pistas de una escritura invisible.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1134 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 371 — 277/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  28 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  5185 ms
+
+> "Maldita sea, no hay nada."
+> Bajo el pergamino y lo examino más de cerca, buscando cualquier rastro de rasgaduras o costuras que indiquen que el papel fue recortado o manipulado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 5+-1=4
+
+### [4] DM
+
+  7226 ms
+
+> Tus dedos recorren la superficie del pergamino, presionando el papel y buscando alguna irregularidad en el tacto. Sin embargo, la textura se siente uniforme y el borde del vacío es limpio, fundiéndose con la porosidad natural de la fibra sin dejar rastro de cortes bruscos ni costuras apresuradas.
+> No hay hilos, ni restos de pegamento, ni ninguna marca que sugiera que alguien haya arrancado un trozo de papel con precisión quirúrgica. El espacio en blanco parece haber sido parte del documento desde su creación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1093 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 372 — 278/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  28 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3090 ms
+
+> "Interesante. Demasiado limpio para ser un error."
+> Sostengo el pergamino frente a una fuente de luz para ver si hay marcas de agua o letras invisibles en el vacío.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+-1=13
+
+### [4] DM
+
+  7136 ms
+
+> El papel se vuelve traslúcido bajo la luz, revelando la trama irregular de las fibras y el tono amarillento del pergamino envejecido. No hay marcas de agua ocultas, ni relieves que sugieran una escritura a presión, ni el brillo aceitoso de las tintas invisibles que reaccionan al calor o a la luz. 
+> El vacío permanece blanco, absoluto y mudo, resistiéndose a entregar cualquier secreto que la luz pueda extraer de sus poros.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1055 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 373 — 279/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  28 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3206 ms
+
+> "Maldita sea, no hay nada."
+> Dejo el papel sobre la mesa y lo observo con detenimiento, buscando cualquier rastro de manipulación o algún detalle que haya pasado por alto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+-1=15
+
+### [4] DM
+
+  7762 ms
+
+> Al apartar el papel y observarlo desde un ángulo distinto, la luz incide de lado sobre la superficie. No hay mensajes ocultos, pero notas que el borde inferior derecho presenta un desgaste anómalo; el pergamino está ligeramente más delgado y deshilachado en esa zona, como si alguien hubiera arrancado con cuidado un pequeño fragmento de la hoja original.
+> Apenas queda una irregularidad en el corte, una pestaña de papel casi invisible que sugiere que el documento fue mutilado deliberadamente para separar una nota o un sello que ya no está.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1465 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 374 — 280/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  28 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3200 ms
+
+> "Maldita sea, alguien se adelantó."
+> Examino el borde del pergamino con detenimiento, buscando cualquier rastro de pegamento o restos de tinta que hayan quedado en la pestaña.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 9+-1=8
+
+### [4] DM
+
+  10125 ms
+
+> Pasas los dedos con cuidado sobre la pestaña de papel y escrutinas la zona bajo la luz, buscando cualquier residuo que haya sobrevivido al tiempo o al descuido de quien lo mutiló. Sin embargo, la superficie se siente seca y el borde está limpio; no hay rastro de adhesivos antiguos, ni manchas de tinta que sugieran una escritura interrumpida o un sello arrancado bruscamente.
+> El desgaste es uniforme en su irregularidad, dejándote únicamente con la certeza de que algo fue removido, pero sin ninguna pista material sobre qué era o quién lo hizo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1154 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 375 — 281/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  28 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3015 ms
+
+> "Maldita sea, no me sirve de nada."
+> Suelto el papel con fastidio y miro a mi alrededor buscando cualquier otra cosa que haya pasado desapercibida en la estancia.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+4=6
+
+### [4] DM
+
+  8779 ms
+
+> La habitación es un espacio austero, donde el polvo baila en los pocos haces de luz que logran filtrar las persianas. El aire huele a papel viejo y a madera seca, y el silencio solo es interrumpido por el crujido ocasional de las vigas del techo. 
+> Tus ojos recorren las esquinas y los muebles, pero la estancia se revela monótona y vacía de secretos evidentes. No hay compartimentos ocultos a la vista, ni objetos fuera de lugar que llamen tu atención; todo parece haber sido ya revisado o simplemente no posee ningún valor.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2122 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 376 — 282/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  28 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2434 ms
+
+> "Aquí no hay nada que valga el tiempo."
+> Me acerco a las persianas para mirar hacia el exterior y ver qué hay más allá de esta habitación.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+4=5  PIFIA
+
+### [4] DM
+
+  9585 ms
+
+> Al acercarte a las persianas, un movimiento brusco de tu capa se engancha en una de las astillas de la madera reseca. El tirón te desequilibra y, en el intento de recuperar la postura, golpeas con el hombro el marco de la ventana, provocando que una de las lamas de madera se desprenda con un chasquido seco y estridente que resuena en toda la habitación.
+> El golpe te deja momentáneamente aturdido y la persiana, ahora medio rota, cuelga torcidamente, bloqueando la mayor parte de la visión hacia el exterior y dejando solo una rendija irregular y empañada por el polvo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3410 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.conditions = aturdido
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4961: Isolde.conditions = aturdido
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 377 — 283/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  28 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2640 ms
+
+> "Maldita sea..."
+> Me aparto rápidamente de la ventana para no hacer más ruido y me quedo inmóvil, aguantando la respiración.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 5+4=9
+
+### [4] DM
+
+  17164 ms
+
+> El chasquido de la madera rota aún vibra en el aire pesado de la estancia. Al retroceder, el roce de tus botas contra el suelo polvoriento y el siseo de la tela de tu capa producen un ruido metálico y torpe que rompe el silencio sepulcral del lugar.
+> Desde el otro lado de la pared, unos pasos apresurados y pesados se dirigen hacia la ventana. Una voz ronca y cargada de irritación exclama desde el exterior: «¿Qué demonios ha sido eso? ¡Si es otro de esos gatos callejeros, voy a desplumarlo!». El sonido de una mano golpeando la madera de la persiana resuena justo donde hace un momento estabas apoyado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1139 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 378 — 284/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  28 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2590 ms
+
+> "Maldita sea."
+> Me agacho rápidamente y busco el rincón más oscuro de la estancia para ocultarme.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 17+4=21
+
+### [4] DM
+
+  12195 ms
+
+> Te deslizas hacia las sombras con un movimiento fluido, fundiéndote con el rincón más oscuro donde el polvo baila en los escasos haces de luz. El corazón late con fuerza contra las costillas, pero tu respiración es un hilo casi imperceptible que se pierde en el silencio de la habitación.
+> La persiana se abre con un golpe seco, dejando entrar un chorro de luz cegadora y el aire fresco del exterior. Un hombre de hombros anchos y rostro curtido asoma la cabeza, escudriñando la estancia con ojos entrecerrados y una expresión de fastidio. Recorre la habitación con la mirada, deteniéndose un segundo en la madera rota, pero sus ojos pasan por encima de tu posición sin detectarte. Tras un bufido de desprecio, vuelve a cerrar la persiana con brusquedad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1954 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 379 — 285/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  28 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3322 ms
+
+> Me quedo inmóvil, esperando a que el hombre se aleje completamente de la ventana antes de moverme. Intento escuchar si hay alguien más fuera o si el hombre ha hablado con alguien.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 15+4=19
+
+### [4] DM
+
+  8648 ms
+
+> El silencio regresa a la estancia, pero tus oídos captan el eco de unos pasos pesados que se alejan sobre el suelo de madera exterior. A través de la rendija de la persiana, distingues el murmullo bajo de una voz masculina que responde al hombre, un tono ronco y cansado que menciona algo sobre "el inventario del granero" y "los sacos que faltan". 
+> No hay más pasos acercándose a la ventana, pero el sonido de una carreta que cruje y el relincho lejano de un caballo sugieren que el hombre no está solo; hay actividad en el exterior, aunque el ruido se concentra en el patio, dejando el perímetro inmediato de la habitación despejado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1060 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 380 — 286/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  28 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3102 ms
+
+> "Sacos que faltan... interesante."
+> Me acerco con cuidado a la persiana para intentar ver quién es el hombre de la voz ronca y dónde está exactamente ese granero.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+4=5  PIFIA
+
+### [4] DM
+
+  10897 ms
+
+> Al intentar asomarte con cautela, el marco de madera de la persiana, carcomido por la humedad y la polilla, cede con un chasquido seco y estrepitoso. La pieza se desprende parcialmente, golpeando la pared con un ruido sordo que resuena en el silencio de la estancia y te deja momentáneamente expuesto al exterior, sin lograr distinguir nada más que un destello de ropa bastas y el polvo suspendido en el aire.
+> En el patio, el murmullo se corta en seco. El relincho del caballo se apaga y el crujido de la carreta se detiene. Tras un segundo de silencio tenso, la voz ronca vuelve a sonar, esta vez mucho más cerca y cargada de sospecha: «¿Qué ha sido eso? ¡Parece que tenemos a alguien ahí dentro!».
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1324 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 381 — 287/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  28 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2473 ms
+
+> "Maldita sea."
+> Me aparto rápidamente de la ventana y busco el lugar más oscuro de la habitación para ocultarme.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 6+4=10
+
+### [4] DM
+
+  12273 ms
+
+> Te deslizas hacia el rincón más sombrío, pero el eco del madero al caer ha dejado el aire vibrando y tus movimientos, apresurados por el pánico, provocan que el suelo de madera cruja bajo tus pies. No logras fundirte con las sombras antes de que la puerta de la estancia sea golpeada con violencia, abriéndose de golpe y dejando entrar una luz cegadora que recorta la silueta de un hombre robusto.
+> El hombre entra con la mano apoyada en el pomo de una daga, barriendo la habitación con una mirada inquisitiva. Sus ojos se clavan rápidamente en el marco roto de la persiana y luego se desplazan hacia el rincón donde te encuentras, frunciendo el ceño al notar que el polvo del suelo ha sido removido recientemente. «No intentes hacerte el invisible», gruñe con voz áspera, dando un paso firme hacia tu posición.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1427 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 382 — 288/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  28 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3176 ms
+
+> "No soy invisible, solo estoy en el sitio equivocado"
+> Me pongo en pie rápidamente y doy un paso atrás para ganar espacio, manteniendo las manos a la vista pero cerca de mi equipo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+2=5
+
+### [4] DM
+
+  10539 ms
+
+> El hombre no se detiene; su paso es pesado y rítmico, acortando la distancia mientras mantiene la mano tensa sobre la daga. Al escucharte, su expresión no se suaviza, sino que se endurece en una mueca de escepticismo. Sus ojos pequeños y gélidos recorren tu postura, evaluando la posición de tus manos y la tensión de tus hombros con una frialdad profesional.
+> «El sitio equivocado es el lugar donde te encuentro», responde con un tono seco, casi desprovisto de emoción. Se detiene a un par de metros de ti, bloqueando la salida más próxima, y ladea la cabeza ligeramente, esperando que des una explicación que le parezca convincente antes de decidir si desenvaina el acero.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1083 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 383 — 289/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  27 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2425 ms
+
+> "No necesito darte explicaciones para que me dejes pasar."
+> Doy un paso lateral intentando esquivarlo rápidamente para salir de su camino.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 11+2=13
+
+### [4] DM
+
+  10001 ms
+
+> El hombre reacciona con la velocidad de un resorte. En cuanto inicias el movimiento lateral, desplaza su peso y extiende el brazo, cerrando el ángulo de escape con un golpe seco de su antebrazo contra tu hombro. El impacto no es letal, pero es preciso y contundente, frenando tu impulso y obligándote a recuperar el equilibrio mientras sigues atrapado en su espacio personal.
+> «Aquí las explicaciones son la moneda de cambio», sentencia Elian, sin retroceder ni un centímetro. Sus ojos permanecen fijos en los tuyos, gélidos, mientras la punta de la daga comienza a asomar entre sus dedos, marcando una línea invisible que no te permite avanzar más.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1937 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Aquí
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 384 — 290/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  26 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2858 ms
+
+> "Tú hablas demasiado para alguien que solo sabe usar el brazo."
+> Soporto el golpe y, aprovechando que sigue pegado a mí, intento hacer un movimiento rápido para desviar su mano y arrebatarle la daga.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 10+2=12
+
+### [4] DM
+
+  12074 ms
+
+> Elian no se inmuta ante el desafío verbal, pero su reflejo es una extensión de su voluntad. Cuando intentas desviar su mano para arrebatarle el arma, él simplemente rota la muñeca con un giro seco y fluido, aprovechando la propia inercia de tu movimiento para alejar la daga de tu alcance. 
+> El acero brilla un instante antes de desaparecer nuevamente entre sus dedos, mientras él mantiene la presión de su cuerpo contra el tuyo, bloqueando cualquier nueva tentativa. «Y tú confías demasiado en la suerte», sisea cerca de tu oído, con una calma que resulta más amenazante que cualquier grito.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1143 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 385 — 291/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  26 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2632 ms
+
+> "No es suerte, es que no me asustas."
+> Suelto un bufido y trato de deslizarme rápidamente hacia un lado para romper su agarre y recuperar mi espacio.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 3+2=5
+
+### [4] DM
+
+  10494 ms
+
+> Elian no cede ni un milímetro. En el momento en que intentas deslizarte, su brazo se cierra como una trampa de hierro sobre tu hombro, anclándote contra él con una fuerza bruta que anula cualquier intento de agilidad. El movimiento es torpe y brusco; terminas chocando contra su pecho, quedando atrapado en un abrazo asfixiante que te deja sin aire y sin espacio para maniobrar.
+> Una risa seca y carente de humor vibra en su garganta mientras te mantiene inmovilizado. «La arrogancia es el primer paso hacia el suelo», sentencia, apretando el agarre para asegurarse de que no haya ninguna salida sencilla.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1380 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 386 — 292/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2418 ms
+
+> "Suéltame ahora mismo, animal."
+> Forcejeo violentamente para zafarme de su agarre, tratando de liberar mi hombro.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 15+1=16
+
+### [4] DM
+
+  9986 ms
+
+> Tus músculos se tensan y, con un impulso brusco y coordinado, logras romper el centro de gravedad de Elian. El forcejeo es violento; el brazo que te aprisionaba se desliza mientras te despegas de su pecho con un tirón seco que lo obliga a dar un paso atrás para no perder el equilibrio.
+> Elian parpadea, sorprendido por la potencia del movimiento, y recupera la compostura rápidamente, aunque ahora mantiene una distancia prudencial. Sus ojos se entrecierran y una mueca de desdén aparece en su rostro. «Tienes fuego, lo admito», escupe con voz ronca, «pero el fuego que no se controla solo sirve para quemar la propia casa».
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2865 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · competence_shown
+  ⚠ nombres no reconocidos: Tienes
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 387 — 293/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3019 ms
+
+> "Guarda tus consejos para alguien que te pague por escucharlos."
+> Doy un paso hacia atrás, alejándome de él, y busco con la mirada cualquier objeto de valor que haya dejado descuidado en el lugar.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 12+4=16
+
+### [4] DM
+
+  12032 ms
+
+> Elian suelta un bufido nasal, una risa seca y carente de humor, mientras cruza los brazos sobre el pecho. Se queda inmóvil, observándote con una mezcla de irritación y curiosidad, permitiendo que el espacio entre ambos se amplíe sin intentar cerrar la distancia nuevamente.
+> Al recorrer el lugar con la mirada, notas que la estancia es austera, pero un detalle destaca sobre la mesa de madera astillada: una pequeña bolsa de cuero gastado, cerrada con un cordel de cáñamo, que Elian ha dejado a un lado mientras forcejeabais. Junto a ella, un anillo de plata con una piedra opaca y empañada descansa sobre un trozo de pergamino doblado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4114 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: bolsa de cuero gastado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item bolsa de cuero gastado
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 388 — 294/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3152 ms
+
+> "Parece que tienes cosas más interesantes que discutir conmigo."
+> Aprovecho que se ha quedado quieto para intentar coger la bolsa de cuero y el anillo sin que se dé cuenta.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 7+2=9
+
+### [4] DM
+
+  10115 ms
+
+> Elian no aparta la vista de ti ni un segundo. En el instante en que tu mano se desliza hacia la mesa, sus ojos siguen el movimiento con una rapidez felina y su brazo se dispara, golpeando tu muñeca con un seco impacto que te obliga a retirar la mano antes de rozar el cuero de la bolsa.
+> —Tengo cosas más interesantes que discutir, sí —espeta con la voz cargada de veneno, mientras recupera la bolsa y el anillo en un solo movimiento fluido para guardarlos fuera de tu alcance—. Pero no soy el tipo de hombre que permite que un desconocido le vacíe los bolsillos en su propia cara.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5517 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 389 — 295/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3114 ms
+
+> "Tienes reflejos rápidos, te lo concedo."
+> Suelto un bufido y me reclino en la silla, relajando los hombros para disimular la frustración. 
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 4+0=4
+
+### [4] DM
+
+  12851 ms
+
+> Elian no se deja amansar por el cumplido. Al reclinarte, él aprovecha el espacio para apoyar los codos sobre la madera, invadiendo tu zona personal con una mirada gélida y calculadora. Sus fosas nasales se dilatan ligeramente, detectando cualquier rastro de duda o debilidad en tu postura.
+> —Tus halagos me resultan tan vacíos como tu respeto por la propiedad ajena —dice, bajando el tono de voz hasta convertirlo en un susurro peligroso—. Ahora, dime exactamente qué es lo que buscas antes de que decida que tu presencia aquí ha dejado de ser tolerablemente curiosa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2046 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 390 — 296/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4427 ms
+
+> "No busco nada que no esté dispuesto a pagar, o que sea lo suficientemente tonto como para dejarlo descuidado."
+> Me mantengo firme sin retroceder ante su cercanía, sosteniéndole la mirada con calma.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  12991 ms
+
+> Elian no parpadea, pero el músculo de su mandíbula se tensa imperceptiblemente ante tu respuesta. La frialdad de su mirada se quiebra por un instante, revelando una chispa de irritación contenida; no esperaba que sostuvieras la posición con tanta naturalidad. El aire entre ambos se vuelve pesado, cargado de una tensión eléctrica mientras él procesa tu audacia.
+> Al analizar sus gestos, notas que su postura agresiva es una máscara cuidadosamente mantenida. El leve temblor en la comisura de sus labios y la forma en que sus dedos tamborilean rítmicamente sobre la madera delatan que no está tan seguro de su posición como quiere aparentar. Hay una urgencia oculta en su mirada, una ansiedad que no tiene que ver contigo, sino con algo que lo presiona desde fuera y que lo vuelve reactivo y vulnerable a pesar de su fachada de acero.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3762 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 391 — 297/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3843 ms
+
+> "Parece que tienes prisa, Elian. Y que no soy la única cosa que te quita el sueño."
+> Sostengo la mirada, aprovechando su nerviosismo para presionarlo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+2=10
+
+### [4] DM
+
+  12764 ms
+
+> Elian suelta un bufido seco, desviando la mirada hacia la puerta durante un breve segundo antes de volver a clavarla en ti. Su mandíbula se aprieta con fuerza y el tamborileo de sus dedos cesa abruptamente, cerrando el puño sobre la madera con un golpe sordo que resuena en la estancia.
+> —No sé qué crees haber visto, pero te equivocas —responde con voz gélida, aunque el tono es demasiado tajante para ser convincente—. Mi tiempo es valioso y mi paciencia tiene un límite que acabas de rozar. No confundas mi pragmatismo con debilidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1349 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 392 — 298/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2336 ms
+
+> "Tu paciencia no me interesa, pero tu nerviosismo sí."
+> Me inclino hacia delante, sosteniéndole la mirada sin pestañear.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+2=6
+
+### [4] DM
+
+  8122 ms
+
+> Elian no se inmuta ante tu inclinación, aunque sus pupilas se dilatan ligeramente. Mantiene la mirada fija, una máscara de frialdad que intenta sostener el peso de tu desafío, pero el silencio que sigue a tus palabras se vuelve denso, casi eléctrico.
+> Permanece rígido, con el puño aún cerrado sobre la mesa, mientras una pequeña vena late con fuerza en su sien. No hay rastro de confesión ni de grieta visible en su postura; el muro de su arrogancia permanece intacto y su expresión se vuelve aún más impenetrable.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1608 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 393 — 299/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3127 ms
+
+> "Tu silencio dice más que tus palabras, Elian. Pero la tensión de tu cuello no miente."
+> Me inclino un poco más hacia él, sosteniéndole la mirada sin parpadear para presionarlo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+2=12
+
+### [4] DM
+
+  10120 ms
+
+> Elian aprieta la mandíbula, provocando que el músculo de su mejilla se tense visiblemente. No aparta la vista, pero el ligero temblor de sus dedos sobre la madera de la mesa traiciona la calma que intenta proyectar. El aire entre ambos se siente cargado, saturado por el olor a cera vieja y el polvo que flota en los rayos de luz que atraviesan la estancia.
+> Mantiene el silencio, transformando su resistencia en un desafío mudo. No hay una confesión inmediata ni un gesto de rendición; simplemente se queda allí, como una estatua de sal, resistiendo la presión de tu mirada con una terquedad gélida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1171 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 394 — 300/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3042 ms
+
+> "El silencio no te va a salvar, Elian. Solo hace que tenga más tiempo para pensar en cómo cobrarme lo que me debes."
+> Me inclino hacia delante, invadiendo su espacio personal para presionarlo.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 12+0=12
+
+### [4] DM
+
+  11266 ms
+
+> Elian no retrocede, pero el músculo de su mejilla se contrae con más fuerza mientras siente tu aliento cerca de su rostro. Sus ojos se entrecierran y el temblor de sus dedos se detiene bruscamente, cerrando el puño sobre la madera de la mesa con un golpe seco que levanta una pequeña nube de polvo.
+> —El tiempo es lo único que me queda, y no pienso regalártelo —responde con una voz rasposa, aunque el tono carece de la convicción que intenta proyectar. Se mantiene firme en su sitio, pero evita que tu mirada encuentre la suya durante unos segundos, desviando la vista hacia el borde de la mesa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4001 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 395 — 301/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3439 ms
+
+> "Tus nervios me dicen más que tus palabras. Dime qué es lo que te asusta tanto."
+> Me quedo frente a él, manteniendo la presión psicológica sin retroceder ni un centímetro.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  14094 ms
+
+> Elian intenta sostener la fachada, pero el peso de tu mirada parece desmantelarlo pieza a pieza. El sudor frío le perla la frente y el ritmo errático de su respiración delata una angustia que va más allá del simple nerviosismo; es el pánico de quien sabe que el tiempo se agota y que no tiene los medios para solucionar el desastre. Sus ojos vuelven a los tuyos, pero ahora están empañados por una vulnerabilidad cruda, casi infantil, que rompe su máscara de dureza.
+> —No es miedo a ti... —susurra, y su voz se quiebra, perdiendo toda la aspereza anterior—. Es que no hay suficiente. No importa cómo lo cuente, cómo lo mueva o a quién mienta... el reparto no alcanza para todos. Si no encuentro una salida, el Consejo del Granero no va a aceptar un "lo siento" como moneda de pago.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6181 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta elian · npc.knowledge = El reparto no alcanza para todos y el Consejo del Granero no aceptará disculpas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 396 — 302/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2700 ms
+
+> "¿Cuánto falta exactamente para que el Consejo pierda la paciencia?"
+> Me cruzo de brazos y lo observo fijamente, buscando cualquier señal de que me esté ocultando la magnitud del problema.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+2=6
+
+### [4] DM
+
+  8629 ms
+
+> Elian evita el contacto visual, desviando la mirada hacia el suelo mientras se frota las manos con nerviosismo. Su respuesta es rápida, casi atropellada, como si quisiera cerrar el tema antes de que profundices más.
+> —Tres días. Apenas tres días antes de que envíen a los recaudadores para "supervisar" el inventario personalmente —responde en un hilo de voz—. Y créeme, cuando el Consejo envía supervisores, nadie sale ganando.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1418 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 397 — 303/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3986 ms
+
+> "Pareces muy asustado por unos simples recaudadores, Elian."
+> Me acerco a él, tratando de leer sus gestos y detectar si oculta algo más allá del miedo al Consejo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+2=10
+
+### [4] DM
+
+  7446 ms
+
+> Elian se tensa visiblemente cuando acortas la distancia, encogiéndose ligeramente sobre sí mismo. Sus dedos no dejan de frotar la tela áspera de su ropa y, aunque intenta mantener una expresión de resignación, el sudor frío que perla su frente delata una agitación que va más allá de la simple preocupación administrativa.
+> —No son "simples" recaudadores —murmura, apretando los labios mientras sigue evitando tu mirada—. Son los ojos del Consejo. Y los ojos del Consejo ven cosas que no deberían existir.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1395 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 398 — 304/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2531 ms
+
+> "¿Cosas que no deberían existir? Ahora me interesa más."
+> Me inclino hacia él, invadiendo su espacio personal para obligarlo a mirarme.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 13+0=13
+
+### [4] DM
+
+  10226 ms
+
+> Elian retrocede hasta que su espalda choca contra la pared, quedando atrapado entre la piedra fría y tu presencia. El aire se vuelve pesado y el hombre deja escapar un jadeo corto, sus pupilas dilatándose mientras el pánico nubla su mirada. Se encoge, tratando de hacerse pequeño, y el temblor de sus manos se vuelve errático.
+> —¡No es asunto suyo! —suelta en un hilo de voz, aunque el tono carece de fuerza—. Solo... solo queremos que el reparto se cumpla. Si empiezan a hurgar, si encuentran lo que hay en los sótanos del Granero, no habrá recaudación que nos salve a ninguno.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8061 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+  ✓ delta elian · npc.knowledge = Hay algo en los sótanos del Granero que podría impedir la recaudación
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 399 — 305/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2688 ms
+
+> "¿Qué hay en los sótanos que te pone tan nervioso?"
+> Le sujeto el brazo con fuerza para que no se mueva y lo miro fijamente a los ojos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 7+0=7
+
+### [4] DM
+
+  15350 ms
+
+> Elian da un respingo violento cuando el agarre cierra sobre su brazo, pero el forcejeo es inútil. A pesar de la presión, el hombre no se quiebra; el miedo en sus ojos es profundo, pero hay una chispa de terquedad nacida de la desesperación que le impide ceder. Traga saliva con dificultad, desviando la mirada hacia un lado mientras intenta, sin éxito, zafarse del apretón.
+> —¡No le diré nada! —escupe con un hilo de voz temblorosa, aunque sus músculos están tensos como cuerdas de violín—. Hay cosas... cosas que no entiende. Si el Consejo se entera de que alguien pregunta, no será solo el reparto lo que perdamos. Suélteme, se lo ruego.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  128933 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 400 — 306/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3083 ms
+
+> "No me interesa el Consejo, me interesa lo que tú sabes."
+> Aprieto más el agarre, acercando mi rostro al suyo para dejarle claro que no me voy a mover.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 14+0=14
+
+### [4] DM
+
+  27629 ms
+
+> Elian gime, un sonido ahogado que se escapa entre sus dientes apretados mientras la presión en su brazo se vuelve insoportable. El aliento del interlocutor golpeando su rostro parece romper el último muro de su resistencia; sus pupilas se dilatan y el temblor de su cuerpo se vuelve errático, casi convulsivo.
+> —¡Está bien, está bien! —solloza, cerrando los ojos con fuerza—. El reparto... el reparto no es un error de cálculo. El Consejo ha estado desviando los sacos de grano hacia el Paso desde hace meses. Dicen que es para asegurar el invierno, pero yo he visto los carros salir vacíos al regresar. ¡No hay reservas, solo mentiras!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7880 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+  ✓ delta elian · npc.knowledge = El Consejo ha estado desviando los sacos de grano hacia el Paso desde hace meses y los carros regresan vacíos
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 401 — 307/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  25 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3551 ms
+
+> "Así que el Consejo nos miente mientras nosotros pasamos hambre."
+> Suelto el brazo de Elian bruscamente y me acerco a él para buscar cualquier papel o registro que pueda tener encima.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+-1=13
+
+### [4] DM
+
+  42344 ms
+
+> Elian cae hacia un lado con un jadeo, frotándose el brazo enrojecido mientras intenta recuperar el aire. Su mirada es esquiva, cargada de un terror que no desaparece aunque la presión física haya cesado; se encoge sobre sí mismo, temblando, mientras observa cada movimiento con la sospecha de quien sabe que ha traicionado a alguien muy poderoso.
+> Tus manos registran apresuradamente sus ropajes, palpando las costuras de su túnica y los pliegues de su cinturón. Tras unos segundos de búsqueda, tus dedos encuentran un pequeño trozo de pergamino doblado y manchado de grasa, escondido en un bolsillo interior secreto. El papel contiene una lista manuscrita de fechas y cantidades de grano, con anotaciones al margen que contrastan los envíos oficiales con los reales.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6786 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta elian · npc.status = captured
+  ✓ creación item: pergamino de grano
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item pergamino de grano
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 402 — 308/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  26 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3611 ms
+
+> "¿Quién te paga por mentir en los libros?"
+> Guardo el pergamino rápidamente en mi propia ropa y miro a Elian para ver si se atreve a responderme.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 20+0=20  CRÍTICO
+
+### [4] DM
+
+  11029 ms
+
+> Elian se desploma contra el suelo, el aire escapando de sus pulmones en un silbido errático. Al ver que el pergamino desaparece en tu ropa, sus pupilas se dilatan y un espasmo recorre sus hombros; el pánico absoluto se apodera de él, borrando cualquier rastro de resistencia. Se encoge hasta quedar casi fetal, sollozando en un susurro quebrado mientras evita mirarte a los ojos.
+> —¡El Consejo! ¡El Consejo del Granero! —grita con una voz estrangulada, rompiéndose por completo—. Ellos... ellos me obligaron. Me dijeron que si alguien notaba que faltaba el grano, yo sería el culpable. ¡Por favor, no me entreguen, me matarán si saben que he hablado!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  10311 ms · 1 eventos · 3 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+  ✓ delta elian · npc.knowledge = Isolde ha robado el pergamino de grano
+  ✓ delta elian · npc.secret_revealed = El Consejo del Granero le obligó a mentir en los libros
+  ✓ delta isolde · character.inventory = pergamino de grano
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+  ✗ entidad inexistente: elian
+  ✗ entidad inexistente: elian
+  ✗ entidad inexistente: isolde
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 403 — 309/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  26 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4113 ms
+
+> "Cállate ya. Si quieres que no te entregue, empieza por decirme qué es exactamente ese Consejo y por qué les importa tanto este grano."
+> Me pongo en cuclillas frente a él, manteniendo una distancia prudente pero intimidante.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 11+2=13
+
+### [4] DM
+
+  13044 ms
+
+> Elian se encoge aún más, el cuerpo temblando violentamente mientras intenta cubrirse la cara con los brazos. Sus sollozos se transforman en una respiración agitada y superficial; el pánico es tan genuino que sus dedos arañan la tierra seca del suelo, buscando un refugio que no existe.
+> —Son los que mandan... los que deciden quién come y quién pasa hambre —balbucea, bajando la voz hasta convertirla en un hilo apenas audible—. No son solo administradores, controlan todo el flujo del valle. El grano... no es solo comida, es el seguro de vida de la región. Si el Consejo pierde el control de las reservas, pierden el control sobre nosotros. ¡No saben que el pergamino ha desaparecido! Si se enteran, no solo me matarán a mí, arrasarán con cualquiera que haya tenido contacto con el cargamento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7619 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+  ✗ campo fuera de lista blanca: character.knowledge
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 404 — 310/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  26 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3318 ms
+
+> "No me asustan tus miedos, pero sí me interesa el grano. ¿Dónde está exactamente ese cargamento?"
+> Me inclino hacia él para obligarlo a mirarme, manteniendo un tono frío.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 12+0=12
+
+### [4] DM
+
+  11245 ms
+
+> Elian se retuerce bajo la presión de tu cercanía, pero tu tono gélido no logra romper la barrera de su terror. Aunque deja de sollozar por un instante, sus ojos saltan de un lado a otro, evitando el contacto visual directo mientras se encoge contra el suelo. El pánico sigue siendo el motor de sus reacciones, y el miedo al Consejo parece pesar más que el temor a tu presencia.
+> —¡No puedo! ¡No me obligue! —gime, apretando los dientes y cerrando los ojos con fuerza—. Está en el Almacén del Este, en el sector de las Reservas Altas... pero hay guardias, siempre hay guardias. Si voy allí, me verán. Si usted va... ¡por los dioses, que no me vinculen con usted!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8886 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Elian · npc.knowledge = El cargamento de grano está en el Almacén del Este, sector de las Reservas Altas
+  ✓ creación location: Almacén del Este
+  ⚠ nombres no reconocidos: Almacén, Altas, Este, Reservas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location Almacén del Este
+  → delta 5071: Elian.knowledge = El cargamento de grano está en el Almacén del Este, sect…
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 1 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 405 — 311/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 1 hechos conocidos
+  27 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2744 ms
+
+> "Tú ya estás vinculado, Elian. Ahora solo depende de que yo decida si eres útil o un estorbo."
+> Lo suelto bruscamente y me pongo en pie. {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+2=15
+
+### [4] DM
+
+  10012 ms
+
+> Elian cae de lado con el impacto, jadeando mientras se abraza a sí mismo, temblando violentamente sobre la tierra. Sus ojos se clavan en ti con una mezcla de horror y súplica, pero el pánico ha dejado paso a una sumisión quebrada; el hombre ha comprendido que su supervivencia ahora pende de un hilo que tú sostienes.
+> Al observarlo, notas que sus manos no solo tiemblan por el miedo, sino que sus uñas están negras de hollín y hay pequeñas quemaduras frescas en sus nudillos. No son heridas de combate, sino el resultado de alguien que ha estado manipulando maquinaria pesada o rebuscando en cenizas recientemente, sugiriendo que sus actividades en el Almacén del Este van más allá de la simple gestión de reservas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2872 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 406 — 312/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 1 hechos conocidos
+  27 entidades · contexto de 321 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3605 ms
+
+> "Tú no vas a moverte de aquí hasta que me digas qué hacías con esas cenizas."
+> Me acerco a él y le sujeto el brazo con fuerza para obligarlo a mostrarme las manos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 7+0=7
+
+### [4] DM
+
+  12861 ms
+
+> Elian intenta encoger los hombros, tratando de esconder las manos contra el pecho mientras emite un gemido ahogado. Al sujetarle el brazo, su cuerpo se tensa como una cuerda a punto de romperse, pero el agarre es firme y lo obliga a exponer las palmas manchadas y los nudillos en carne viva.
+> —¡No es nada! ¡Solo... solo limpieza! —balbucea, desviando la mirada hacia el suelo, aunque su voz tiembla tanto que apenas es audible—. Solo estaba asegurándome de que no quedara nada... de que todo estuviera en orden para el Consejo. Por favor, suéltame, no entiendes nada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2935 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Elian · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5079: Elian affinity 0.0 → -10.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -10.0 (cold), 1 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 407 — 313/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -10.0 (cold), 1 hechos conocidos
+  27 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3382 ms
+
+> "Limpieza, dice. Tu cara dice que estás aterrorizado."
+> Aprieto más el agarre en su brazo y lo obligo a mirarme a los ojos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 16+0=16
+
+### [4] DM
+
+  12407 ms
+
+> Elian deja escapar un sollozo seco cuando la presión en su brazo aumenta, obligándolo a sostener la mirada. Sus pupilas están dilatadas y el sudor le perla la frente, mezclándose con el polvo del camino. El temblor de su cuerpo es ahora constante, una vibración que se transmite desde su piel hasta tu mano.
+> —¡Está bien! ¡Está bien! —grita, rompiendo en un llanto desesperado—. No era limpieza... era el reparto. No había suficiente para todos y... el Consejo no puede saber que alguien se quedó corto. Me obligaron a encargarme, pero no pude... ¡no pude hacer que desapareciera todo!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6184 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Elian · threat_made
+  ✓ delta Elian · npc.knowledge = El reparto no fue suficiente para todos y el Consejo del Granero no puede saber que alguien se quedó corto
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5086: Elian affinity -10.0 → -20.0  (mid)
+     Cede en el momento, lo guarda.
+  → delta 5087: Elian.knowledge = El reparto no fue suficiente para todos y el Consejo del…
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -20.0 (cold), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 408 — 314/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -20.0 (cold), 2 hechos conocidos
+  27 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3752 ms
+
+> "Dime exactamente quién te obligó y dónde están los restos."
+> Sigo apretando su brazo, acercando mi rostro al suyo para que no pueda evitarme.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 8+0=8
+
+### [4] DM
+
+  8606 ms
+
+> Elian encoge los hombros, intentando retraer el brazo instintivamente, aunque la presión lo mantiene anclado. Sus ojos saltan de un lado a otro, esquivando tu mirada mientras el pánico lo domina; el sudor le corre por las sienes y su respiración se vuelve errática, superficial.
+> —¡No puedo! ¡Me matarían! —solloza, cerrando los ojos con fuerza mientras sacude la cabeza—. Solo... solo fueron órdenes del Consejo. No me dijeron nombres, solo que el Granero debía estar limpio. ¡Suéltame, por favor, no saben que he hablado!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5081 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Elian · threat_made
+  ✓ delta Elian · npc.knowledge = El Consejo del Granero ordenó que el Granero estuviera limpio
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5089: Elian affinity -20.0 → -30.0  (mid)
+     Cede en el momento, lo guarda.
+  → delta 5090: Elian.knowledge = El Consejo del Granero ordenó que el Granero estuviera l…
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -30.0 (wary), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 409 — 315/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -30.0 (wary), 3 hechos conocidos
+  26 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3699 ms
+
+> "¿Quiénes son 'ellos' exactamente? Dame nombres o el Consejo será lo último de lo que te preocupes."
+> Aprieto el agarre sobre su brazo, acercándolo más a mí para que sienta mi respiración.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 3+0=3
+
+### [4] DM
+
+  14337 ms
+
+> Elian se tensa violentamente, pero el miedo que siente hacia el Consejo es un muro más alto que el que tú intentas levantar. A pesar de la cercanía y la amenaza, el hombre se encoge sobre sí mismo, sollozando con un sonido ahogado y gutural. Sus ojos, abiertos ahora pero nublados por el terror, te miran con una desesperación vacía; el pánico lo ha dejado bloqueado, incapaz de articular una sola palabra coherente.
+> —No... no puedo... —balbucea, mientras el brazo que sostienes tiembla sin control—. ¡No saben nada! ¡Juro que no sé nombres! 
+> Se queda en silencio, respirando con dificultad, mientras el sudor frío empapa su túnica y se limita a sacudir la cabeza frenéticamente, convencido de que cualquier palabra lo sentenciará.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3455 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -30.0 (wary), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 410 — 316/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -30.0 (wary), 3 hechos conocidos
+  26 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2983 ms
+
+> "Si no sabes nombres, sabrás dónde guardan los registros."
+> Suelto su brazo con brusquedad y busco cualquier papel o libro que tenga a mano en la habitación.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+-1=11
+
+### [4] DM
+
+  9603 ms
+
+> Elian cae hacia atrás con el impulso del empujón, quedando reducido a un bulto tembloroso en el suelo, mientras sus sollozos se convierten en una respiración errática y superficial. El hombre no intenta levantarse; se limita a encogerse, evitando el contacto visual mientras el pánico sigue dictando sus movimientos.
+> Tus manos recorren la habitación, palpando superficies polvorientas y rebuscando entre los trastos acumulados. Encuentras algunos trozos de pergamino viejo y amarillento que solo contienen garabatos ilegibles y una lista de suministros agrícolas medio borrada, pero no hay ningún libro de cuentas, registro oficial ni documento que indique la ubicación de los archivos del Consejo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1368 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -30.0 (wary), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 411 — 317/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -30.0 (wary), 3 hechos conocidos
+  26 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2946 ms
+
+> "Deja de llorar y habla de una vez."
+> Me acerco a Elian y lo sujeto con fuerza por la ropa para obligarlo a mirarme.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 19+0=19
+
+### [4] DM
+
+  11098 ms
+
+> Elian suelta un gemido ahogado cuando lo obligas a encarar tu mirada, sus pupilas dilatadas reflejando el terror puro. El temblor de sus hombros se intensifica, pero la fuerza de tu agarre y la frialdad de tu tono rompen su resistencia; el pánico se transforma en una sumisión desesperada.
+> —¡Está bien, está bien! —balbucea, con la voz quebrada y el rostro empapado en lágrimas—. No hay nada aquí... el Consejo lo guarda todo en la Casa del Grano, en el sótano sellado. Solo los Administradores tienen la llave, yo... yo solo era el encargado de llevar los sacos. ¡Por favor, suélteme!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9698 ms · 1 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+  ✓ delta elian · npc.knowledge = El Consejo guarda todo en el sótano sellado de la Casa del Grano y solo los Administradores tienen la llave
+  ✓ creación location: Casa del Grano
+  ⚠ nombres no reconocidos: Administradores, Casa, Grano
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location Casa del Grano
+  ✗ PNJ inexistente: elian
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -30.0 (wary), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 412 — 318/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -30.0 (wary), 3 hechos conocidos
+  27 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2784 ms
+
+> "La Casa del Grano, el sótano sellado. Memorizado."
+> Lo suelto bruscamente y me alejo de él.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+2=3  PIFIA
+
+### [4] DM
+
+  9255 ms
+
+> Elian cae hacia atrás con un golpe seco sobre la tierra, sollozando mientras se encoge sobre sí mismo, protegiéndose la cabeza con los brazos. Se queda allí, hecho un ovillo y tembloroso, evitando a toda costa volver a cruzar la mirada contigo mientras el silencio vuelve a llenar el espacio.
+> Al observar sus espasmos y el rastro de sus lágrimas, te convences de que el hombre está delirando por el miedo y que su confesión es una mentira desesperada para que lo dejes en paz; estás seguro de que se ha inventado la Casa del Grano y el sótano solo para ganar tiempo o distraerte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2007 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -30.0 (wary), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 413 — 319/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -30.0 (wary), 3 hechos conocidos
+  27 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2660 ms
+
+> "Deja de llorar y dime la verdad."
+> Me acerco a él y lo sujeto fuertemente del brazo para obligarlo a mirarme.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 18+0=18
+
+### [4] DM
+
+  13364 ms
+
+> El agarre en su brazo es brusco y firme, arrancándolo de su posición fetal. Elian emite un chillido ahogado cuando lo obligas a encararte; sus ojos, inyectados en sangre y nublados por el pánico, se clavan en los tuyos mientras el temblor de su cuerpo se intensifica bajo tu presión.
+> —¡Es verdad, lo juro por mi vida! —grita con la voz rota, el aliento oliendo a miedo y polvo—. ¡La Casa del Grano existe! Está al norte, tras el lindero de los sauces... ¡Por favor, suéltame, no me hagas daño, te lo he dicho todo!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1190 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -30.0 (wary), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 414 — 320/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -30.0 (wary), 3 hechos conocidos
+  27 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2525 ms
+
+> "¿La Casa del Grano? No me sirves de nada si mueres por un ataque de pánico."
+> Le suelto el brazo bruscamente y me alejo un paso para observarlo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  16289 ms
+
+> Elian cae hacia atrás con un golpe seco, jadeando mientras se abraza a sí mismo, encogiéndose sobre el suelo polvoriento. Sus pupilas están dilatadas y el ritmo de su respiración es errático, pero al observar la forma en que sus ojos evitan los tuyos y cómo sus manos tiemblan no solo por el miedo, sino por una urgencia contenida, percibes la verdad. No está mintiendo sobre la existencia de la Casa del Grano; el terror en su voz es genuino y la información ha sido entregada con la desesperación de quien cree que es su única moneda de cambio para sobrevivir.
+> Sin embargo, notas que hay un vacío en su relato, un silencio deliberado. Aunque ha confirmado el lugar y la dirección, hay una tensión en su mandíbula y una mirada fugaz hacia el horizonte que sugiere que sabe exactamente qué encontrará quien llegue allí, y que el miedo que siente no es solo hacia ti, sino hacia lo que guarda ese sitio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1285 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -30.0 (wary), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 415 — 321/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -30.0 (wary), 3 hechos conocidos
+  27 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3153 ms
+
+> "Sé que me ocultas algo sobre lo que hay allí dentro. Dímelo ahora y quizá deje de ser un problema."
+> Me inclino sobre él, manteniendo la presión psicológica.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 18+0=18
+
+### [4] DM
+
+  11746 ms
+
+> Elian ahoga un gemido y se encoge aún más, intentando fundirse con el polvo del camino. Al sentir tu sombra cubrirlo y la amenaza suspendida en el aire, su resistencia se quiebra con un espasmo; el temblor de sus manos se vuelve violento y cierra los ojos con fuerza, como si quisiera bloquear la visión de lo que está a punto de confesar.
+> —¡No es el lugar, es lo que dejaron allí! —solloza, con la voz quebrada y apresurada—. No es solo grano y polvo... hay algo que no debería haber despertado. El Consejo decía que estaba sellado, que el hambre era el único peligro, pero yo vi las marcas en las puertas cuando escapé. Si entras, no busques el fondo del sótano... por lo que más quieras, no bajes al sótano.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8310 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Elian · threat_made
+  ✓ delta Elian · npc.knowledge = Hay algo que no debería haber despertado en el sótano y el Consejo decía que estaba sellado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5124: Elian affinity -30.0 → -40.0  (mid)
+     Cede en el momento, lo guarda.
+  → delta 5125: Elian.knowledge = Hay algo que no debería haber despertado en el sótano y …
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -40.0 (wary), 4 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 416 — 322/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -40.0 (wary), 4 hechos conocidos
+  27 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1979 ms
+
+> "¿Qué marcas? Habla claro o te dejaré aquí tirado."
+> Le sujeto con fuerza del cuello de la ropa para que me mire a los ojos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 8+0=8
+
+### [4] DM
+
+  9687 ms
+
+> Elian se tensa bajo tu agarre, pero el miedo que siente es un muro que no cede ante la presión. Sus ojos, muy abiertos y enrojecidos, se clavan en los tuyos con una mezcla de terror y desesperación, pero su mandíbula se aprieta. El temblor persiste, aunque ya no es de sumisión, sino de un pánico paralizante que le impide articular palabra.
+> —No... no puedo —balbucea, forcejeando débilmente para zafarse de tu mano—. Si lo digo, ellos sabrán que lo he contado. No me obligues... por favor, suéltame.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6589 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Elian · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5128: Elian affinity -40.0 → -50.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 4 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 417 — 323/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 4 hechos conocidos
+  27 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2288 ms
+
+> "No me importa quiénes sean ellos, sino que yo obtenga respuestas."
+> Aumento la presión de mi agarre y lo acerco más a mí para que no pueda evitar mi mirada.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 13+0=13
+
+### [4] DM
+
+  13089 ms
+
+> Elian suelta un gemido ahogado cuando el agarre se cierra con más fuerza, sintiendo el aliento y la mirada fija que no le deja escapatoria. El pánico en su rostro se transforma en una resignación quebrada; sus hombros caen y el forcejeo cesa, dejando que su cuerpo quede lánguido, aunque el temblor en su cuello persiste.
+> —Está bien... está bien, suéltame —susurra con la voz rota, cerrando los ojos con fuerza como si esperase un golpe—. El Consejo... el Consejo del Granero. Son ellos quienes controlan el reparto. Dicen que no hay suficiente para todos, pero... pero yo he visto los sacos que esconden en el sótano del molino.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  14417 ms · 1 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+  ✗ evidencia no literal: «El Consejo del Granero. Son ellos quienes controla»
+  ✓ creación location: sótano del molino
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location sótano del molino
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 4 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 418 — 324/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 4 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2793 ms
+
+> "El Consejo del Granero, ¿eh? Interesante."
+> Suelto el agarre sobre su cuello y doy un paso atrás, mirándolo con frialdad mientras proceso la información sobre el sótano del molino.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+2=15
+
+### [4] DM
+
+  10734 ms
+
+> Elian aprovecha la liberación para colapsar sobre el suelo, jadeando con dificultad mientras se lleva una mano al cuello, que luce ya marcado por la presión. Se encoge sobre sí mismo, evitando el contacto visual y temblando violentamente, aunque sus palabras han dejado una semilla de duda en el aire.
+> Su confesión sobre los sacos escondidos suena genuina; no hay vacilaciones en su voz ni contradicciones en el relato, solo un terror visceral que parece nacer más del miedo al Consejo que de un intento de engaño. El hombre permanece en silencio, esperando el siguiente movimiento, reducido a una masa de nervios y resignación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  13669 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Elian · npc.knowledge = Isolde lo ha liberado tras interrogarlo sobre el sótano del molino
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5144: Elian.knowledge = Isolde lo ha liberado tras interrogarlo sobre el sótano …
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 419 — 325/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3142 ms
+
+> "Levántate. Si quieres que te ayude, dime exactamente dónde están esos sacos."
+> Me acerco a él y lo observo con detenimiento para ver si sus gestos son reales.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+2=6
+
+### [4] DM
+
+  15536 ms
+
+> Elian se encoge aún más cuando te acercas, cerrando los ojos con fuerza mientras un espasmo recorre sus hombros. Sus dedos arañan el suelo polvoriento y su respiración es un silbido irregular que hace vibrar su pecho hundido. No hay rastro de fingimiento en la palidez de su rostro ni en la forma en que evita tu mirada, como si el simple hecho de ser visto lo hiciera vulnerable.
+> Al escuchar tu demanda, abre un ojo con cautela, evaluando tu expresión. Sus labios tiemblan y traga saliva con dificultad, haciendo que la marca roja de su cuello se tense.
+> —En el viejo silo... el que tiene el techo hundido, al norte del camino principal —susurra con voz quebrada—. Están bajo las tablas podridas del fondo. Por favor... no me entregues al Consejo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  11948 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta elian · npc.knowledge = Los sacos están en el viejo silo con el techo hundido, al norte del camino principal, bajo las tablas podridas del fondo
+  ✓ creación location: viejo silo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location viejo silo
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 420 — 326/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  29 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2756 ms
+
+> "Ya tienes mi respuesta. No me interesa el Consejo, siempre y cuando lo que hay bajo esas tablas valga mi tiempo."
+> Me levanto y me alejo de él hacia el norte, buscando el silo.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 2+4=6
+
+### [4] DM
+
+  13514 ms
+
+> Elian se queda inmóvil, con la mirada fija en el rastro de polvo que dejas al marcharte, sin atreverse a soltar un suspiro de alivio hasta que estás fuera de su vista. Sus dedos dejan de arañar la tierra, aunque permanece encogido, como un animal que espera el golpe a pesar de que la amenaza parece haberse alejado.
+> Caminas hacia el norte, pero el terreno se vuelve traicionero. La vegetación seca y los escombros de antiguos asentamientos confunden la línea del horizonte, y el camino principal se desvanece entre matorrales espinosos que arañan tus botas. Tras un rato de marcha, el paisaje se vuelve monotono y repetitivo; el norte es una extensión de campos yermos donde cualquier estructura parece idéntica a la anterior, y el silo que buscas no aparece por ninguna parte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1371 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 421 — 327/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  29 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2621 ms
+
+> Me detengo y observo los alrededores con atención, buscando cualquier señal que no encaje en esta monotonía.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 16+4=20
+
+### [4] DM
+
+  14065 ms
+
+> El viento seco arrastra un silbido monótono entre las espinas, pero tu mirada logra filtrar el ruido visual del yermo. Entre la repetición de muros derrumbados y matorrales grises, detectas una anomalía: una línea de piedras colocadas deliberadamente que corta la pendiente de una colina cercana, creando una especie de dique artificial contra la erosión. No es una estructura natural ni un derrumbe azaroso; es una obra de ingeniería rudimentaria diseñada para canalizar el agua o proteger algo que yace justo detrás de la cresta.
+> Siguiendo esa irregularidad, el horizonte se rompe. Al superar la elevación, el silo emerge finalmente: una torre de piedra y metal oxidado que se alza como un colmillo sucio contra el cielo pálido, rodeada por una empalizada de madera podrida que aún se mantiene en pie, aunque inclinada por el peso de los años.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1788 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 422 — 328/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  29 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3008 ms
+
+> "Alguna utilidad debe tener ese dique."
+> Me acerco a la línea de piedras para examinar cómo fueron colocadas y si hay rastros recientes de paso.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 16+4=20
+
+### [4] DM
+
+  12775 ms
+
+> Al agacharte, el tacto áspero de las piedras revela una técnica de encaje preciso, diseñada para resistir el embate de lluvias torrenciales que ya no visitan estas tierras. Las rocas están dispuestas en un ángulo calculado que desvía el flujo hacia un canal seco, evitando que el terreno bajo la torre se convierta en un lodazal. Es una obra antigua, pero robusta, que demuestra una comprensión clara de la topografía local.
+> Sobre la superficie polvorienta y el rastro de grava, detectas huellas frescas. Son marcas de botas pesadas y el arrastre irregular de algún saco o fardo, que se dirigen directamente hacia la empalizada del silo. Las pisadas son profundas y decididas; alguien ha pasado por aquí hace menos de un día, y no lo hacía solo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1919 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 423 — 329/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3195 ms
+
+> "Demasiado ruido para ser un paseo."
+> Sigo el rastro de las botas y el fardo hacia la empalizada, moviéndome con cuidado para no dejar mis propias huellas.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 4+4=8
+
+### [4] DM
+
+  10194 ms
+
+> Tus pasos, aunque cautelosos, resuenan con un crujido traicionero sobre la grava suelta y el terreno seco. El sonido, seco y rítmico, rompe el silencio del entorno justo cuando te aproximas a la empalizada del silo.
+> Desde el otro lado de la madera, el ruido de una conversación se interrumpe bruscamente. Se escucha el roce rápido de cuero contra madera y el sonido metálico de una arma siendo desenvainada.
+> —¿Quién anda ahí? —brama una voz ronca y autoritaria—. ¡Muestra las manos y sal ahora mismo, o te juro que no llegarás a ver el sol de mañana!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1573 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 424 — 330/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2643 ms
+
+> "¡No disparen! Solo soy una viajera."
+> Lento y con las palmas abiertas, salgo de mi escondite para que me vean claramente.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 17+0=17
+
+### [4] DM
+
+  16883 ms
+
+> El hombre que asoma la cabeza por la empalizada sostiene una lanza con fuerza, los nudillos blancos por la tensión. Sus ojos, pequeños y astutos, escanean cada centímetro de tu figura y el vacío a tu alrededor, buscando cualquier señal de una emboscada. Al ver tus palmas abiertas y notar la falta de una amenaza inmediata, la rigidez de sus hombros cede apenas un milímetro, aunque no baja el arma.
+> —Una viajera, ¿eh? —espeta con un tono cargado de escepticismo, aunque la agresividad de su grito ha bajado a un gruñido—. No parece que haya muchos caminos seguros por aquí como para que alguien camine sola y tan despreocupada. Baja la guardia, pero no te muevas.
+> El hombre hace una señal hacia el interior del recinto y, tras unos segundos, un hombre de aspecto cansado y mirada suspicaz, Elian, aparece junto a él. Elian te observa en silencio, evaluando tu ropa y tu equipo con una frialdad analítica.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1785 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 425 — 331/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3120 ms
+
+> "No camino despreocupada, solo sé dónde pisar."
+> Mantengo las manos a la vista pero enderezando la espalda, mirando fijamente a Elian.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+2=12
+
+### [4] DM
+
+  10042 ms
+
+> Elian no parpadea ante tu respuesta, manteniendo esa mirada gélida que parece querer desarmarte sin necesidad de acero. El hombre de la lanza suelta un bufido nasal, aunque no aparta la punta del arma de tu dirección, mientras el silencio se prolonga entre los tres.
+> Observas a Elian y notas que su cansancio no es solo físico; hay una tensión residual en la comisura de sus labios y una forma de distribuir el peso de su cuerpo que sugiere que está acostumbrado a esperar el golpe, incluso en los momentos de calma. Sus ojos no buscan una amenaza inmediata, sino que parecen calcular cuánto podrías aportar o cuánto podrías quitarles.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1310 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 426 — 332/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3814 ms
+
+> "No busco problemas, pero tampoco me gustan las lanzas en la cara."
+> Sostengo la mirada de Elian, buscando cualquier señal de debilidad o desesperación en su postura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+2=3  PIFIA
+
+### [4] DM
+
+  11915 ms
+
+> Elian mantiene la expresión imperturbable, pero el tiempo que pasas escrutando su rostro te lleva a una conclusión errónea: interpretas su silencio y esa tensión en los labios como un signo de nerviosismo y debilidad. Te convence la falsa sensación de que el hombre está al borde del colapso y que un empujón más lo haría ceder.
+> El guardia de la lanza, percibiendo tu mirada fija y el tono de tu voz, aprieta el agarre en la madera y da un paso corto hacia adelante, acortando la distancia. El metal de la punta vibra ligeramente, reflejando la luz fría del entorno mientras el soldado espera la señal de su superior para reaccionar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1521 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 427 — 333/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3357 ms
+
+> "Parece que te estás poniendo nervioso, Elian. No hace falta que tu perro ladre por ti."
+> Sigo mirando fijamente a Elian, ignorando la lanza del guardia, y doy un paso lento hacia él para presionarlo más.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 12+0=12
+
+### [4] DM
+
+  9325 ms
+
+> Elian no parpadea. Sus labios permanecen sellados en una línea fina y rígida mientras el espacio entre vosotros se reduce, manteniendo una quietud gélida que desmiente la debilidad que creías percibir. No hay rastro de temblor en su postura; solo una resistencia silenciosa y pétrea que absorbe tu presión sin quebrarse.
+> El guardia, irritado por el comentario y la cercanía, choca la base de la lanza contra el suelo con un golpe seco que resuena en el ambiente. El soldado inclina la cabeza hacia Elian, con la mirada cargada de hostilidad, esperando una sola palabra para descargar el arma contra tu pecho.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1373 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 428 — 334/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  5229 ms
+
+> "Parece que el silencio es lo único que te queda, Elian."
+> Me separo lentamente de él, manteniendo la vista fija en sus ojos mientras retrocedo un paso para alejarme de la lanza del guardia. 
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+2=11
+
+### [4] DM
+
+  13342 ms
+
+> Elian sigue sin emitir sonido alguno. Sus pupilas están dilatadas y su mandíbula permanece tensa, pero no hay ninguna señal evidente de miedo, duda o sumisión en su expresión. Su rostro es una máscara de piedra que no revela absolutamente nada sobre lo que está pensando o sintiendo mientras te alejas.
+> El guardia exhala un bufido de desdén al ver que recuperas la distancia, relajando ligeramente la tensión de sus hombros, aunque no aparta la lanza de tu dirección. El soldado lanza una mirada gélida a Elian, como quien observa a un animal herido que ya no sirve para nada, y vuelve a clavar sus ojos en ti con una expresión de profunda irritación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1554 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 429 — 335/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3801 ms
+
+> "Parece que tu perro no tiene ganas de hablar."
+> Ignoro a Elian y miro fijamente al guardia, buscando cualquier señal de debilidad o distracción en su postura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+2=15
+
+### [4] DM
+
+  13383 ms
+
+> El guardia no parpadea, manteniendo la punta de la lanza firme, pero el comentario sobre Elian provoca que una vena palpite levemente en su sien. A pesar de su aire de superioridad, notas que su peso se desplaza ligeramente hacia atrás, una reacción instintiva de quien prefiere mantener la distancia antes que entrar en una confrontación física inmediata.
+> Sus ojos recorren tu equipo con una rapidez casi imperceptible, evaluando el riesgo, mientras que su agarre en la madera de la lanza se tensa demasiado, delatando que su irritación es más fuerte que su confianza. El soldado no busca una pelea, pero su orgullo le impide dar un paso atrás mientras tú sigas ahí.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1842 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 430 — 336/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  5850 ms
+
+> "Parece que mencionar a Elian te pone nervioso. ¿Tanto miedo le tienes?"
+> Me acerco un paso más, invadiendo su espacio personal para presionarlo.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 11+0=11
+
+### [4] DM
+
+  12283 ms
+
+> El guardia no retrocede, pero el músculo de su mandíbula se tensa con un chasquido audible. Al sentir tu proximidad, el soldado aprieta los dientes y desvía la mirada un instante, evitando el contacto visual directo mientras mantiene la lanza en posición, aunque la punta oscila ligeramente debido a la rigidez de sus brazos.
+> —No confundas la prudencia con el miedo, forastero —masculla con una voz que intenta sonar gélida, aunque el tono es más agudo de lo normal—. Solo me aseguro de que gente como tú no ensucie el camino. Muévete, antes de que decida que tu presencia es una provocación oficial.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1459 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 431 — 337/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  5180 ms
+
+> "Tanta tensión te va a romper la mandíbula, soldado. No soy yo quien ensucia el camino, sino tu mal humor."
+> Le sostengo la mirada con una sonrisa ladeada y trato de notar si hay algo más que nerviosismo en su actitud.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 5+2=7
+
+### [4] DM
+
+  11586 ms
+
+> El guardia cierra los puños con fuerza, haciendo que las correas de su armadura crujan contra el cuero. El comentario parece haber golpeado un nervio expuesto; sus mejillas se tiñen de un rojo violáceo y el temblor de la lanza se vuelve más errático, aunque se esfuerza por mantener la postura rígida de un centinela.
+> A pesar de su agresividad verbal, no hay nada más que una mezcla de irritación y una evidente falta de confianza en sí mismo. No percibes ninguna amenaza oculta ni un plan maestro tras su hostilidad; solo es un hombre tratando desesperadamente de imponer una autoridad que siente que se le escapa entre los dedos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1796 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 432 — 338/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4334 ms
+
+> "Pareces muy tenso. No es necesario que te pongas así si solo quiero pasar."
+> Sigo caminando hacia él con paso tranquilo, manteniendo la mirada fija en sus ojos para ver cuánto tiempo aguanta la presión.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 20+0=20  CRÍTICO
+
+### [4] DM
+
+  12394 ms
+
+> El guardia retrocede un paso instintivo, el tacón de su bota raspando el suelo con un sonido seco. La mirada fija y la calma imperturbable de tu avance actúan como un muro invisible que lo empuja hacia atrás; el rojo de sus mejillas desaparece, dejando paso a una palidez repentina. La punta de la lanza desciende, ya no por control, sino porque sus brazos parecen haber perdido la fuerza necesaria para sostener el arma.
+> —Pasa... —masculla con la voz quebrada, apartándose del camino y evitando ahora el contacto visual—. Solo... pasa rápido. No me obligues a decir que no te vi entrar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1543 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 433 — 339/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2379 ms
+
+> "Agradezco tu prudencia."
+> Sigo caminando hacia el interior sin apresurarme, manteniendo la vista al frente.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 12+4=16
+
+### [4] DM
+
+  15076 ms
+
+> El aire del interior se siente más denso, cargado de un olor a grano húmedo y cuero viejo que se pega a la garganta. Al avanzar, el eco de tus pasos sobre las tablas de madera revela el vacío de los pasillos laterales, pero tu oído capta un sonido distinto: el murmullo apresurado de voces que se cortan bruscamente al sentir tu presencia.
+> A través de una rendija en una puerta entreabierta a tu derecha, distingues la silueta de dos figuras encorvadas sobre una mesa llena de pergaminos y monedas. Una de ellas, un hombre de hombros caídos y dedos largos que tamborilean nerviosos sobre la madera, se tensa y se inclina hacia su interlocutor, lanzando una mirada furtiva y cargada de sospecha hacia el pasillo por donde transitas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1377 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 434 — 340/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2108 ms
+
+> "No os he oído, pero os he sentido."
+> Me acerco a la puerta y me asomo con brusquedad para ver qué están repartiendo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 18+4=22
+
+### [4] DM
+
+  15584 ms
+
+> El movimiento brusco de la puerta hace que el hombre de los dedos largos salte hacia atrás, derribando una pequeña pila de monedas que tintinean contra el suelo. Al asomarte, tu vista capta con nitidez el caos sobre la mesa: no solo hay monedas de cobre y plata, sino una serie de mapas mal dibujados con círculos rojos marcando parcelas de tierra y tres contratos con sellos de cera rota.
+> El hombre te mira con los ojos muy abiertos, la respiración agitada, mientras intenta cubrir instintivamente un pergamino con el brazo. Su interlocutor, que permanece en las sombras, se queda inmóvil, pero notas cómo su mano se desliza lentamente hacia algo oculto bajo el borde de la mesa.
+> —¿Quién sois y qué hacéis husmeando en asuntos que no os incumben? —espeta el hombre, aunque su voz tiembla ligeramente mientras intenta recuperar la compostura.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1493 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 435 — 341/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2655 ms
+
+> "No me incumbe lo que pueda darme un techo y una moneda."
+> Me acerco a la mesa con paso firme, ignorando al hombre para fijar la vista en el pergamino que intenta ocultar.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 13+4=17
+
+### [4] DM
+
+  19578 ms
+
+> El hombre retrocede un paso, arrastrando la silla con un chirrido metálico que resuena en la estancia, pero tu mirada es más rápida. Bajo el brazo tembloroso del sujeto, alcanzas a distinguir que el pergamino no es un contrato más, sino un libro de cuentas abierto en una página donde los números están tachados con trazos violentos de tinta negra; al lado, una anotación manuscrita menciona repetidamente una propiedad en los límites del valle y una deuda pendiente que parece no tener fin.
+> La figura en las sombras exhala un suspiro lento y pesado. El roce del acero contra la madera se hace audible cuando el desconocido apoya la empuñadura de una daga sobre la mesa, sin llegar a desenvainarla, pero marcando una línea invisible que no debes cruzar. El hombre de los dedos largos traga saliva, mirando alternativamente tu rostro y la daga, mientras aprieta el pergamino contra su pecho.
+> —El techo y la moneda tienen un precio, forastero —dice el hombre, recuperando un hilo de arrogancia mientras intenta bloquear tu visión del libro—. Y dudo mucho que traigáis la moneda necesaria para comprar nuestro silencio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1532 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 436 — 342/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3326 ms
+
+> "No me interesa vuestro silencio, sino lo que habéis tachado en ese libro."
+> Intento arrebatarle el libro de cuentas aprovechando su nerviosismo.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 19+2=21
+
+### [4] DM
+
+  13815 ms
+
+> El movimiento es un borrón de velocidad y precisión. Antes de que el hombre pueda reaccionar o el desconocido en las sombras pueda desplazar la daga, saltas sobre la mesa con una agilidad felina, esquivando el brazo protector del sujeto. Tus dedos se cierran sobre el cuero del libro con firmeza, arrancándolo de su pecho en un tirón seco que deja al hombre desequilibrado, tambaleándose hacia atrás hasta chocar con la silla que él mismo había arrastrado.
+> El silencio que sigue es gélido. El hombre de los dedos largos se queda boquiabierto, mirando sus manos vacías con una expresión de puro pánico, mientras que el sonido del acero deslizándose fuera de su vaina corta el aire. La daga del desconocido ahora brilla bajo la luz tenue, apuntando directamente hacia tu garganta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4620 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = libro de cuentas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5185: Isolde.inventory = libro de cuentas
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 437 — 343/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3225 ms
+
+> "Tarde."
+> Sujeto el libro contra mi pecho y me lanzo hacia atrás, buscando la salida más cercana para huir del alcance de la daga.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 14+2=16
+
+### [4] DM
+
+  15042 ms
+
+> Tus pies encuentran el borde de la mesa y te impulsas con un salto potente, trazando un arco perfecto que te aleja del acero. El aire silba justo donde hace un segundo estaba tu cuello, pero aterrizas con ligereza sobre el suelo de madera, rodando para absorber el impacto y recuperar el equilibrio en un solo movimiento fluido. El libro permanece apretado contra tu pecho, sintiendo el frío del cuero bajo tus dedos.
+> Detrás de ti, el desconocido suelta un gruñido de frustración y el hombre de los dedos largos recupera el habla, gritando con una voz quebrada que resuena en toda la estancia. El camino hacia la puerta está despejado, aunque el eco de los pasos apresurados de alguien más acercándose desde el pasillo comienza a filtrarse en la habitación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1509 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 438 — 344/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2614 ms
+
+> "¡Ni lo sueñen!"
+> Sigo corriendo hacia la puerta para salir de la habitación lo más rápido posible.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 15+2=17
+
+### [4] DM
+
+  13103 ms
+
+> Tus botas golpean la madera con ritmo frenético mientras te lanzas hacia la salida. En un movimiento instintivo y coordinado, deslizas el cuerpo por el suelo justo cuando una figura irrumpe en el marco de la puerta, pasando por debajo de sus piernas con una agilidad felina que deja al recién llegado descolocado. 
+> El aire del pasillo te golpea la cara, cargado de polvo y humedad, mientras el grito del hombre de los dedos largos queda atrás, ahogado por la distancia. El pasillo se extiende frente a ti, oscuro y flanqueado por puertas cerradas que vibran con el eco de la conmoción que acabas de provocar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2474 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 439 — 345/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3395 ms
+
+> "No me atraparéis hoy."
+> Me pongo en pie rápidamente y miro a ambos lados del pasillo buscando la salida más cercana o un lugar donde ocultarme.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 15+4=19
+
+### [4] DM
+
+  12974 ms
+
+> El pasillo es una garganta de madera podrida y sombras espesas, pero tu mirada capta el detalle inmediato. A unos diez metros a la izquierda, una puerta entreabierta revela una estancia donde la luz de una vela vacilante se filtra, sugiriendo un espacio pequeño y cerrado. Al fondo, el corredor termina en un ventanal roto cuyos marcos cuelgan como dientes astillados, dejando entrar una brisa gélida y la claridad grisácea del exterior; es el camino más rápido hacia la libertad, aunque deja tu silueta expuesta contra la luz.
+> Detrás de ti, el eco de unas botas pesadas golpeando el suelo regresa con fuerza. El hombre de los dedos largos ha recuperado el equilibrio y su respiración agitada, mezclada con un gruñido de frustración, resuena en las paredes del pasillo mientras se encamina hacia tu posición.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1557 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 440 — 346/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2248 ms
+
+> "No hoy."
+> Ignoro la salida y me deslizo rápidamente hacia la habitación de la vela para desaparecer de la vista.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 10+4=14
+
+### [4] DM
+
+  11414 ms
+
+> Te deslizas con rapidez hacia la abertura de la puerta, fundiéndote con las sombras justo antes de que el hombre doble la esquina. El crujido de la madera podrida bajo tus pies es amortiguado por el ruido de las botas pesadas, que retumban en el pasillo con una cadencia agresiva.
+> Desde la penumbra de la pequeña estancia, observas cómo el hombre de los dedos largos se detiene en seco donde estabas hace unos instantes. Su silueta recorta la luz grisácea del ventanal mientras gira la cabeza con brusquedad, recorriendo el corredor con una mirada cargada de rabia. Su respiración, pesada y errática, llena el silencio del pasillo mientras comienza a avanzar lentamente, tanteando el espacio con una cautela nueva.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1719 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 441 — 347/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2768 ms
+
+> Me quedo inmóvil, conteniendo la respiración y pegada a la pared para no ser vista. Intento escuchar si viene solo o si hay alguien más acompañándolo en el pasillo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 13+4=17
+
+### [4] DM
+
+  15333 ms
+
+> El silencio se vuelve denso, roto únicamente por el siseo del viento que se filtra por las rendijas de la estancia. Al agudizar el oído, el ritmo de las botas pesadas se revela incompleto; hay un descompás, un eco más tenue y ligero que se arrastra a unos metros detrás del hombre. No es un paso coordinado, sino el sonido de alguien que mantiene la distancia, vigilando la retaguardia con una cautela profesional.
+> El hombre de los dedos largos exhala un gruñido bajo, una palabra ininteligible que suena a maldición, y el sonido de un metal rozando el cuero —una hoja saliendo de su vaina— resuena nítido en el pasillo. El segundo individuo no habla, pero el leve roce de una capa contra la pared confirma que te flanquean sin que ellos lo sepan.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1569 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 442 — 348/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3184 ms
+
+> "No me pilláis tan fácil."
+> Me deslizo rápidamente hacia la sombra más cercana para intentar desaparecer de su vista antes de que entren del todo.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 11+4=15
+
+### [4] DM
+
+  12614 ms
+
+> Te fundes con la penumbra justo cuando la luz del pasillo comienza a recortar la silueta del hombre. La oscuridad de la estancia te envuelve, ocultando el brillo de tus ojos y el ruido de tu respiración, transformándote en una mancha más entre los escombros y el polvo.
+> El hombre de los dedos largos entra en la habitación con la hoja desenvainada, barriendo el espacio con la mirada. Su expresión es de irritación, frunciendo el ceño mientras recorre el lugar, pero sus ojos pasan por encima de tu posición sin detectar nada. Detrás de él, la figura de la capa se detiene en el umbral, manteniendo la espalda apoyada en el marco de la puerta y vigilando el pasillo con un movimiento mecánico de la cabeza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1589 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 443 — 349/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  28 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3513 ms
+
+> Me quedo inmóvil, conteniendo el aliento mientras observo los movimientos del hombre. Busco algún objeto útil o una salida alternativa en la habitación que no me obligue a pasar por el umbral.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 11+4=15
+
+### [4] DM
+
+  12256 ms
+
+> Desde tu rincón de sombras, el silencio es interrumpido solo por el roce del acero del hombre contra el aire y el eco lejano de algún goteo. Tus ojos recorren la estancia, filtrando la suciedad y los restos de muebles rotos. A unos pasos de ti, medio enterrado bajo una pila de telas podridas y madera astillada, sobresale el borde de un pesado cofre de hierro reforzado que parece haber sido arrastrado con violencia.
+> Hacia el fondo de la habitación, donde la humedad ha empezado a corroer las paredes, notas una corriente de aire frío. Un panel de madera en la pared inferior está parcialmente desprendido, dejando un hueco oscuro y estrecho que conduce a un espacio exterior o a una galería inferior, lo suficientemente ancho para deslizarse si se hace con cuidado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4715 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación location: hueco oscuro y estrecho
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location hueco oscuro y estrecho
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 444 — 350/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  29 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1808 ms
+
+> "Tengo que ver qué hay ahí dentro."
+> Me deslizo con cuidado hacia el cofre de hierro para intentar abrirlo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+-1=13
+
+### [4] DM
+
+  11524 ms
+
+> Tus dedos se hunden en el tacto viscoso de las telas podridas mientras te acercas al cofre. Al retirar los escombros, el metal frío y oxidado del hierro reforzado chirría contra el suelo de piedra. El cierre es robusto, pero la violencia con la que fue arrastrado ha dejado una pequeña holgura en la bisagra superior.
+> Al inspeccionar el mecanismo, notas que la cerradura no está bloqueada por una llave convencional, sino que el pestillo ha sido doblado hacia adentro, obstruyendo la apertura. Se requiere un esfuerzo preciso o una herramienta para liberar el mecanismo, pero el contenido parece estar intacto tras la pesada tapa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3791 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ evidencia no literal: «me deslizo con cuidado hacia el cofre de hierro»
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 445 — 351/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  29 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2268 ms
+
+> "A ver qué guardabas aquí..."
+> Saco una herramienta fina de mi equipo e intento enderezar el pestillo doblado para liberar el cierre.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 15+2=17
+
+### [4] DM
+
+  8566 ms
+
+> La herramienta de metal se desliza con precisión en la pequeña holgura de la bisagra, encajando justo detrás del pestillo deformado. Con un movimiento firme y controlado, el metal cede con un chasquido seco que resuena en el silencio de la estancia, liberando la presión que mantenía la tapa sellada.
+> El cofre se abre con un gemido oxidado, revelando su interior. El aire que escapa del recipiente huele a polvo antiguo y a cuero viejo, mientras la luz cae sobre los objetos que han permanecido ocultos bajo los escombros.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3262 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: cofre
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cofre
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 446 — 352/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2451 ms
+
+> "A ver qué tenemos aquí."
+> Me asomo al interior del cofre y busco cualquier cosa que tenga valor material o que pueda darme pistas sobre este lugar.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+-1=15
+
+### [4] DM
+
+  14608 ms
+
+> Tus dedos apartan una capa de tela podrida y grisácea que cubre el fondo. Bajo los restos, encuentras una bolsa de cuero endurecido que contiene 45 piezas de oro y un puñado de gemas sin tallar, cuyo brillo tenue lucha contra el polvo del ambiente. Junto a las riquezas, destaca un pequeño cuaderno de tapas de cuero negro, cerrado con un cordel de cáñamo, y un anillo de plata con el sello de un grano de trigo grabado en un óvalo.
+> El cuaderno tiene las hojas amarillentas y quebradizas, pero el texto es legible. Al hojearlo, notas que no es un diario personal, sino un registro meticuloso de entregas de grano y firmas de campesinos, con anotaciones al margen sobre "cuotas insuficientes" y "retrasos en el Paso". El anillo, aunque desgastado, conserva una calidad que sugiere que perteneció a alguien con autoridad administrativa en la zona.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8930 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = bolsa con 45 piezas de oro y gemas
+  ✓ creación item: cuaderno de registros
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cuaderno de registros
+  → delta 5216: Isolde.inventory = bolsa con 45 piezas de oro y gemas
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 447 — 353/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2903 ms
+
+> "Esto es más útil que el oro."
+> Guardo el dinero y las gemas rápidamente, pero me detengo a analizar las anotaciones del cuaderno para ver si reconozco algún nombre o lugar.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+-1=16
+
+### [4] DM
+
+  16413 ms
+
+> Tus ojos recorren las columnas de tinta desvaída y las firmas apresuradas. Entre la lista de nombres, el lugar "El Paso" aparece repetidamente, vinculado a entregas que nunca llegaron a su destino. Al profundizar en las anotaciones marginales, detectas un patrón: varias familias del campamento fueron marcadas con una señal específica, indicando que sus cuotas habían sido "renegociadas" fuera de los registros oficiales, sugiriendo un desvío de suministros o un acuerdo secreto.
+> Un nombre se repite con insistencia en las notas de los retrasos: "Elian". No hay un apellido, pero el nombre aparece subrayado varias veces junto a quejas sobre la gestión del grano, vinculándolo directamente con la administración del lugar y los problemas de abastecimiento mencionados en el cuaderno.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6211 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.knowledge
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 448 — 354/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2512 ms
+
+> "¿Quién demonios es Elian y por qué juega con la comida de la gente?"
+> Cierro el cuaderno y busco a alguien que pueda decirme dónde encontrar a ese hombre.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+-1=6
+
+### [4] DM
+
+  11025 ms
+
+> El cuaderno se cierra con un golpe seco, pero las respuestas no saltan del papel. Al preguntar a los pocos transeúntes que merodean por la zona, te encuentras con hombros encogidos y miradas que se desvían rápidamente hacia el suelo. La gente murmura palabras inconexas sobre el grano y el hambre, pero nadie se atreve a pronunciar el nombre de Elian en voz alta ni a señalar una dirección concreta.
+> El ambiente se vuelve tenso; el silencio que sigue a tu pregunta es denso y cargado de una desconfianza palpable. Los pocos que parecen saber algo se alejan apresuradamente, dejándote solo con el eco de tus propias dudas en medio de una calle que prefiere callar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1352 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 449 — 355/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2824 ms
+
+> "Tarde o temprano alguien hablará, solo hace falta el incentivo adecuado."
+> Me acerco al último de los que intentó alejarse y lo sujeto firmemente del brazo para detenerlo.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 6+0=6
+
+### [4] DM
+
+  31908 ms
+
+> El hombre da un respingo violento cuando cierras el puño sobre su brazo, soltando un gemido de sorpresa. Al girarse, sus ojos se abren con pánico y comienza a forcejear torpemente, tratando de zafarse de tu agarre con movimientos erráticos. Su respiración se vuelve agitada y el miedo en su rostro se transforma rápidamente en una terquedad nacida del terror.
+> —¡Suéltame! ¡No sé nada, te lo juro por mi vida! —exclama con voz quebrada, mirando desesperadamente a su alrededor para ver si alguien interviene—. ¡No quiero problemas con él, prefiero morir de hambre que hablar!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1053 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 450 — 356/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2478 ms
+
+> "Si prefieres morir de hambre, quizá prefieras que te rompa el brazo primero."
+> Aprieto el agarre con fuerza, acercando mi rostro al suyo para que sienta mi amenaza.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 16+0=16
+
+### [4] DM
+
+  17619 ms
+
+> El hombre palidece, el color huyendo de sus mejillas mientras siente la presión real de tus dedos hundiéndose en su brazo. El pánico se congela en su mirada y el forcejeo cesa abruptamente, sustituido por un temblor incontrolable que recorre todo su cuerpo. El aire se escapa de sus pulmones en un jadeo sordo cuando comprende que no estás bromeando.
+> —¡Está bien! ¡Está bien, suéltame! —gime, cerrando los ojos con fuerza mientras una lágrima resbala por su mejilla—. No me lo rompas... Te diré lo que sé, pero por favor, no me mates. El reparto... el reparto no ha sido justo, el Consejo se ha quedado con la mayor parte y nosotros solo tenemos migajas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5399 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+  ✓ delta elian · npc.knowledge = El Consejo se ha quedado con la mayor parte del reparto
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 451 — 357/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2396 ms
+
+> "¿Y dónde guardan esa parte que se han quedado?"
+> Lo suelto bruscamente y lo empujo contra la pared para que no escape.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 6+0=6
+
+### [4] DM
+
+  33881 ms
+
+> El hombre choca contra la piedra con un golpe seco, soltando un gemido mientras se encoge sobre sí mismo, buscando instintivamente un espacio donde no existir. Se abraza las rodillas, temblando violentamente, pero su mirada se desvía hacia los lados, evaluando el entorno con una desconfianza visceral; el miedo está ahí, pero la sospecha de que revelarlo sea una sentencia de muerte pesa más que el empujón.
+> —No... no puedo... —balbucea, tragando saliva con dificultad mientras evita mirarte a los ojos—. Si el Consejo se entera de que he hablado, no me matarán rápido. No sé dónde está el cofre exactamente, solo que lo llevan al Granero Alto cada luna llena. ¡Lo juro por mi vida! No sé más, por favor, déjame ir.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  730 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 452 — 358/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2279 ms
+
+> "El Granero Alto cada luna llena... Interesante."
+> Me acerco a él y lo agarro por el cuello de la ropa para obligarlo a mirarme.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 15+0=15
+
+### [4] DM
+
+  41515 ms
+
+> El hombre ahoga un grito cuando lo levantas bruscamente, sus pies quedan colgando a pocos centímetros del suelo y el aire se vuelve un recurso escaso. Sus pupilas se dilatan, reflejando el pánico puro mientras sus manos arañan débilmente la tela de tu agarre. El temblor de su cuerpo se intensifica, pero la presión en su cuello rompe la última barrera de su resistencia; la sospecha ya no es suficiente para contener el terror.
+> —¡Está en la cámara inferior! —estalla en un sollozo desesperado, con la voz rasposa—. ¡Debajo de las vigas de roble, donde guardan el grano viejo! No me mates... ¡por favor, ya te lo he dicho todo!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  11089 ms · 1 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+  ✓ delta elian · npc.knowledge = Está en la cámara inferior, debajo de las vigas de roble donde guardan el grano viejo
+  ✓ creación location: cámara inferior
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location cámara inferior
+  ✗ PNJ inexistente: elian
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 453 — 359/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  32 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2083 ms
+
+> "Espero que no me hayas mentido."
+> Lo suelto bruscamente para que caiga al suelo y me dirijo hacia la salida para buscar esa cámara inferior.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  103203 ms
+
+> El hombre cae pesadamente sobre las tablas, jadeando con espasmos violentos mientras se lleva las manos al cuello, rojo y húmedo de sudor. Sus ojos no se apartan de ti, cargados de un pánico visceral que no flaquea ni un segundo tras soltar la información.
+> No hay vacilación en su voz ni rastro de engaño en el temblor de sus manos; la desesperación es genuina y el miedo a morir ha borrado cualquier rastro de astucia. Te ha entregado la ubicación exacta con una urgencia que solo nace de la verdad más cruda.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1239 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 454 — 360/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  32 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2866 ms
+
+> "No te mueras todavía, maldita sea."
+> Me acerco rápidamente para intentar despejarle las vías respiratorias y examine el estado de su cuello.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 5+2=7
+
+### [4] DM
+
+  40053 ms
+
+> Tus manos se apresuran hacia él, pero el pánico del hombre es una marea que te arrastra. Al intentar despejar sus vías respiratorias, tus dedos tropiezan con la piel caliente y húmeda; el cuello está hinchado, rígido, y cada espasmo lo hace arquear la espalda con una fuerza bruta que dificulta cualquier maniobra precisa.
+> El hombre emite un gorgoteo ahogado, un sonido húmedo que vibra contra tus palmas. Sus ojos se dilatan, reflejando el techo de las tablas mientras el aire se niega a entrar en sus pulmones, y su cuerpo comienza a quedar laxo, vencido por la asfixia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3000 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Soldado herido · npc.status = dead
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5259: Soldado herido.status = dead
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 455 — 361/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  32 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2418 ms
+
+> "¡Aguanta, no te mueras ahora!"
+> Intento inclinar su cabeza hacia atrás con fuerza para abrir la garganta y despejar cualquier obstrucción.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 11+2=13
+
+### [4] DM
+
+  33544 ms
+
+> Tus manos se cierran con firmeza sobre la nuca y el mentón del hombre, forzando su cabeza hacia atrás en un movimiento brusco. El tejido del cuello, tenso y congestionado, ofrece una resistencia elástica, pero la maniobra logra desplazar la lengua y liberar un espacio mínimo en la garganta.
+> Un jadeo violento y ruidoso rompe el silencio, seguido de una tos espasmódica que expulsa una mezcla de saliva y mucosidad. El hombre inhala una bocanada de aire desesperada, sus pulmones expandiéndose con un silbido agudo mientras sus ojos recuperan el enfoque, aunque el pánico sigue nublando su mirada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2612 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Soldado herido · life_saved
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5267: Soldado herido affinity -50.0 → -20.0  (any)
+     Deuda de sangre. No se olvida.
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 456 — 362/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  32 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2463 ms
+
+> "Tranquilo, ya puedes respirar. Ahora dime quién te ha hecho esto."
+> Suelto al hombre y me alejo un paso para darle espacio, pero mantengo la mano cerca de mi arma mientras lo observo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 16+2=18
+
+### [4] DM
+
+  39148 ms
+
+> El hombre se desploma hacia adelante, apoyando las manos en el suelo mientras lucha por estabilizar su respiración. Sus hombros tiemblan y emite un sonido gutural, una mezcla de sollozo y agradecimiento, aunque no se atreve a mirarte directamente a los ojos. Se limpia la boca con el dorso de la mano, dejando un rastro de saliva espesa en su mejilla.
+> Al observarlo, notas que su miedo no es solo producto de la asfixia. Sus pupilas están dilatadas y sus gestos son erráticos, casi hipervigilantes; no solo teme a quien lo atacó, sino que parece aterrado por la posibilidad de que esa persona —o alguien enviado por ella— esté observando la escena en este preciso instante. Sus labios tiemblan al intentar articular palabra, pero su mirada se desvía constantemente hacia las sombras del callejón.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1320 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 457 — 363/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  32 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2282 ms
+
+> "Tranquilízate. No hay nadie aquí."
+> Me acerco a él y lo sujeto del brazo para obligarlo a que deje de mirar hacia las sombras.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+2=5
+
+### [4] DM
+
+  25317 ms
+
+> El hombre se tensa violentamente bajo tu agarre, soltando un jadeo seco. Sus músculos están rígidos como piedras y, aunque deja de mirar hacia las sombras, no se relaja; simplemente se queda petrificado, con la mirada perdida en un punto vacío del suelo y el corazón latiendo con fuerza contra sus costillas, visible a través de su ropa raída.
+> Elian exhala un tembloroso hilo de aire, pero sus ojos siguen moviéndose frenéticamente, incapaces de aceptar la seguridad que le ofreces. No hay ningún signo de alivio en su rostro, solo una máscara de pánico contenido que parece consumirlo desde dentro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2279 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 458 — 364/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  32 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2213 ms
+
+> "Mírame. No hay nada allí que pueda hacernos daño ahora mismo."
+> Sigo sujetándolo con firmeza pero sin lastimarlo, intentando buscar alguna señal de coherencia en su mirada.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 16+2=18
+
+### [4] DM
+
+  49328 ms
+
+> Elian parpadea lentamente, pero su mirada no se ancla en la tuya; se desliza por tu rostro como si estuviera buscando una grieta o una mentira. A pesar de su inmovilidad, notas que sus dedos se curvan instintivamente, apretando la tela de sus propios pantalones, y que su respiración es superficial, casi inexistente. No es el miedo a una bestia o a un atacante lo que lo mantiene así, sino una paranoia profunda y arraigada; hay una chispa de desconfianza en sus pupilas que sugiere que, para él, el peligro no es algo que "esté allí", sino algo que podría ser tú o cualquier cosa que se acerque demasiado.
+> El hombre comienza a emitir un sonido gutural, un leve gemido que sube por su garganta, mientras sus hombros suben hasta casi tocar sus orejas. Sigue petrificado, pero el temblor ha vuelto, recorriendo su cuerpo en oleadas cortas y violentas que hacen que el agarre de tu mano sea lo único que evita que se desplome hacia adelante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1570 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 459 — 365/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  32 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2685 ms
+
+> "Tranquilo. No soy quien tú creas que soy."
+> Suelto su mano con cuidado para no asustarlo más y retrocedo un paso, dándole espacio. Intento analizar su reacción para entender qué es lo que realmente teme.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 19+2=21
+
+### [4] DM
+
+  30725 ms
+
+> Al soltar su mano y retroceder, el vacío deja que Elian se tambalee, pero no aprovecha el espacio para huir. Se encoge sobre sí mismo, formando una especie de ovillo humano, mientras sus ojos se clavan en el suelo. El sonido gutural cesa, sustituido por una respiración errática que suena a asfixia.
+> Observas que su pánico no es una reacción a tu presencia física, sino a la idea de haber sido descubierto o reconocido. No teme un golpe, sino una consecuencia; su mirada esquiva y la tensión en sus hombros revelan que se siente una presa acorralada que espera que el cazador le diga exactamente qué pecado ha cometido para que el castigo comience.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1770 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 460 — 366/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  32 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2299 ms
+
+> "Deja de hacerte el muerto y mírame. ¿Quién te busca?"
+> Me inclino hacia él, tratando de obligarlo a mantener el contacto visual.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 13+0=13
+
+### [4] DM
+
+  33435 ms
+
+> Elian se tensa violentamente cuando te inclinas sobre él, como si el aire mismo se hubiera vuelto pesado. Sus hombros suben hasta casi tocar sus orejas y cierra los ojos con fuerza, intentando refugiarse en la oscuridad de sus párpados, pero la presión de tu presencia lo obliga a ceder. Abre un ojo, luego el otro, y te mira con una mezcla de terror y resignación, aunque sus pupilas bailan frenéticamente, buscando una salida que no existe.
+> —No... no saben que estoy aquí —susurra con una voz quebrada que apenas supera el roce de las hojas secas—. Si me han encontrado, es que el Consejo ya ha enviado a alguien. Por favor, si sabe quiénes son, solo dígalo... no me obligue a adivinar mi propia sentencia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5027 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+  ✓ delta elian · npc.knowledge = El Consejo ya ha enviado a alguien a buscarlo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 461 — 367/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  32 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3197 ms
+
+> "Tranquilo. Ahora mismo solo estoy yo aquí."
+> Me alejo un poco para darle aire, pero mantengo la mirada fija en él para no perder detalle de sus gestos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+2=9
+
+### [4] DM
+
+  40462 ms
+
+> Elian exhala un aire tembloroso, pero no se relaja. Aunque te alejas, sus ojos siguen rastreando cada uno de tus movimientos con una desconfianza instintiva, como un animal herido que no sabe si el espacio que le concedes es una cortesía o una táctica para que baje la guardia. Se encoge sobre sí mismo, abrazando sus rodillas contra el pecho, y el temblor de sus manos es visible mientras intenta recomponer su postura.
+> Se queda en silencio unos segundos, observando tu rostro en busca de alguna señal, algún rastro de la insignia del Consejo o el gesto de quien viene a cobrar una deuda. Finalmente, traga saliva con dificultad y desvía la mirada hacia el suelo, evitando el contacto visual directo. No hay señales evidentes de mentiras en su lenguaje corporal; su miedo parece genuino y absorbente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1853 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 462 — 368/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  32 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2364 ms
+
+> "No soy del Consejo, ni vengo a cobrar nada. Solo quiero saber qué ocurre aquí."
+> Me siento en el suelo a una distancia prudente, manteniendo una postura relajada para no amenazarlo.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 5+0=5
+
+### [4] DM
+
+  39723 ms
+
+> Elian te observa sentarte, pero no imita tu postura; permanece tenso, con los músculos del cuello rígidos y la respiración corta. Cuando mencionas al Consejo, un espasmo recorre sus hombros y se encoge aún más, como si las palabras mismas fueran un golpe físico. Sus ojos vuelven a ti un instante, cargados de una duda corrosiva que no se disipa con tu actitud relajada.
+> —Todos dicen lo mismo al principio —murmura con una voz quebrada, casi un susurro—. Que solo quieren saber, que no son de allí... pero luego el hambre aprieta o alguien paga el precio justo por la información.
+> Se abraza con más fuerza a sus rodillas, cerrando el círculo de su cuerpo para protegerse, y vuelve a clavar la mirada en la tierra, negándose a darte más que su silencio y el sonido de sus dientes castañeando.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1044 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 463 — 369/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  32 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2259 ms
+
+> "No me interesa venderte, Elian. Me interesa que yo no termine como tú."
+> Me inclino hacia él, tratando de entrar en su espacio personal pero sin tocarlo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+2=14
+
+### [4] DM
+
+  41704 ms
+
+> Elian se tensa aún más cuando te inclinas, encogiéndose instintivamente para alejarse de tu proximidad. Sus ojos se abren con una chispa de sorpresa ante tu confesión, pero la sospecha sigue anclando su expresión. No hay alivio en su rostro, sino una curiosidad gélida; te observa ahora con más atención, tratando de descifrar si tu miedo es genuino o una táctica más para ganar su confianza.
+> A pesar de su rechazo físico, notas que el ritmo de su respiración se ha estabilizado ligeramente. El temblor de sus manos persiste, pero ya no intenta esconderse tanto en sí mismo; se queda inmóvil, escuchando el silencio que sigue a tus palabras, esperando a ver cuál es el siguiente movimiento de alguien que admite tener algo que perder.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4283 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 464 — 370/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  32 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2910 ms
+
+> "No busco tu amistad, Elian. Solo busco una salida de aquí que no me cueste la vida."
+> Me separo lentamente para darle espacio y trato de leer su expresión.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+2=19
+
+### [4] DM
+
+  41335 ms
+
+> Elian no se mueve cuando te separas, pero el aire entre vosotros se siente menos cargado. Sus hombros bajan apenas un centímetro y el brillo de alerta en su mirada se transforma en una evaluación pragmática. No sonríe, pero la rigidez de su mandíbula cede, aceptando la frialdad de tu propuesta como un terreno común donde ambos pueden caminar sin tropezar.
+> Al observarlo con detenimiento, notas que su desconfianza no es personal, sino una coraza automática. Hay un rastro de agotamiento profundo en las ojeras que surcan su rostro y un tic nervioso en su dedo índice que delata una ansiedad crónica, más que un miedo específico hacia ti. Sus ojos no buscan una traición inmediata, sino que escanean el entorno con una paranoia habituada, como quien sabe que el peligro es la norma y no la excepción.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3332 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 465 — 371/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  32 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3303 ms
+
+> "Pareces alguien que no ha dormido en una semana. ¿Qué es lo que te tiene tan inquieto?"
+> Me quedo observando sus gestos, tratando de descifrar qué es exactamente lo que le produce esa ansiedad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 19+2=21
+
+### [4] DM
+
+  36246 ms
+
+> Elian desvía la mirada hacia el horizonte, donde las siluetas de las montañas cortan el cielo, y el tic de su dedo índice se intensifica. No responde de inmediato, pero el silencio revela la verdad: no es el miedo a un enemigo concreto lo que lo mantiene despierto, sino el peso de una responsabilidad que lo sobrepasa. Notas que su inquietud nace de una carencia material desesperada; hay una urgencia en su postura que habla de bocas que alimentar y recursos que se agotan, una aritmética cruel que no le permite cerrar los ojos sin calcular cuánto tiempo queda antes del colapso.
+> —Dormir es un lujo que no me puedo permitir mientras las cuentas no cuadren —responde con una voz seca, casi quebrada—. Hay cosas que no se solucionan descansando, y el hambre no sabe esperar a que alguien recupere el sueño.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3806 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 466 — 372/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  32 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  5407 ms
+
+> "Entiendo esa sensación. El hambre es la única cadena que no se puede romper con fuerza."
+> Me cruzo de brazos y lo observo fijamente, tratando de descifrar cuánto dinero necesita exactamente para dejar de temblar.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 5+2=7
+
+### [4] DM
+
+  22353 ms
+
+> Elian no reacciona a tu comentario sobre las cadenas, pero el tic de su dedo se detiene un instante mientras mantiene la mirada perdida en las montañas. Su expresión permanece cerrada, una máscara de cansancio y resignación que no cede ante tu observación.
+> Sigue moviéndose con esa urgencia nerviosa, evitando cualquier contacto visual prolongado que pudiera revelar la cifra exacta de su desesperación. No hay un gesto claro, ni un desliz en su lenguaje corporal que te permita cuantificar la magnitud de su deuda o el vacío de sus graneros.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2206 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 467 — 373/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4608 ms
+
+> "No hace falta que me mires para que sepa que estás desesperado."
+> Me pongo a su lado y camino a su ritmo, intentando leer su lenguaje corporal más de cerca.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  36583 ms
+
+> Elian se tensa visiblemente, sus hombros se elevan y el ritmo de sus pasos se vuelve errático, casi tropezando con sus propios pies. No te mira, pero el temblor de sus manos es ahora innegable; no es solo miedo, es la fragilidad de alguien que ha agotado todas sus opciones y siente que el suelo se abre bajo sus botas. 
+> Al observar la rigidez de su nuca y la forma en que protege inconscientemente el costado de su túnica, percibes que su desesperación no es solo económica, sino una carga física. Hay un pavor genuino en su respiración entrecortada, una certeza de que el tiempo se ha acabado y que cualquier ayuda que no llegue ya es, en realidad, un funeral anticipado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2582 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 468 — 374/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3715 ms
+
+> "Deja de temblar y mírame. ¿Qué escondes bajo esa túnica?"
+> Me detengo frente a él para bloquearle el paso y trato de analizar su reacción.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+2=5
+
+### [4] DM
+
+  28681 ms
+
+> Elian se detiene en seco, casi chocando contra ti. Al verse bloqueado, el pánico se dispara y retrocede un paso torpe, encogiéndose sobre sí mismo. Sus ojos, inyectados en sangre y rodeados de ojeras profundas, se clavan en los tuyos apenas un instante antes de volver a bajar la mirada hacia el suelo polvoriento.
+> —No... no es nada que le importe a alguien como usted —balbucea con una voz quebrada, apretando la tela de su costado con tanta fuerza que sus nudillos se vuelven blancos—. Por favor, déjeme pasar. No tengo nada que darle, ni nada que quiera ver.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4733 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 469 — 375/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2772 ms
+
+> "No he dicho que quiera nada de ti, pero no te muevas."
+> Le agarro del brazo con firmeza para evitar que se escape y trato de ver qué oculta bajo la tela de su costado.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+4=10
+
+### [4] DM
+
+  40022 ms
+
+> Elian suelta un gemido ahogado cuando tus dedos se cierran sobre su brazo, tensando todo el cuerpo como un animal acorralado. Intenta zafarse con un espasmo brusco, pero se queda congelado al sentir la firmeza de tu agarre, temblando visiblemente bajo tu toque.
+> Desde tu posición, solo alcanzas a ver que la tela de su túnica está empapada en una mancha oscura y espesa que se extiende por el costado, pero el pliegue de la ropa y la resistencia del hombre impiden que distingas la naturaleza exacta de la herida o lo que intenta ocultar. Su respiración se vuelve errática, un siseo rápido y superficial.
+> —¡Suelte! —suplica en un hilo de voz, cerrando los ojos con fuerza—. No hay nada... no hay nada que valga la pena. Por favor.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2786 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 470 — 376/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2916 ms
+
+> "Si no hay nada, no tienes por qué temblar así."
+> No lo suelto y trato de apartar la tela de su costado para ver la herida.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 4+2=6
+
+### [4] DM
+
+  8926 ms
+
+> Elian lanza un sollozo seco y se retuerce con desesperación, luchando contra tu mano mientras intentas desplazar la tela. El movimiento brusco hace que el hombre pierda el equilibrio y se desplome contra el suelo, soltando un grito ahogado que resuena en el espacio.
+> En el forcejeo, logras apartar un fragmento de la túnica, pero la tela está pegada a la piel por la humedad y el caos del movimiento te impide ver con claridad. Solo alcanzas a distinguir una masa oscura y viscosa que se adhiere a la carne, sin lograr discernir si se trata de una laceración profunda, una quemadura o algo más insólito. Elian se encoge sobre sí mismo, protegiendo el costado con el brazo libre mientras hiperventila.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1991 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 471 — 377/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2542 ms
+
+> "Quédate quieto si no quieres que esto empeore."
+> Sujeto con firmeza el brazo de Elian para apartarlo y examino la herida con cuidado.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 16+2=18
+
+### [4] DM
+
+  7655 ms
+
+> Elian se queda rígido bajo la presión de tu mano, aunque sus hombros siguen sacudiéndose por los espasmos de la hiperventilación. El aire en la estancia se siente pesado, cargado con un olor metálico y dulzón que emana directamente de la zona afectada.
+> Al apartar el brazo del hombre, la luz revela la naturaleza de la lesión: no es una herida convencional. Una red de venas negras, como tinta derramada bajo la piel, se extiende desde un centro necrótico donde la carne parece haberse cristalizado en un tono amatista oscuro. No hay sangrado activo, pero el tejido alrededor de la mancha está frío al tacto y presenta una textura cerosa, similar a la de un cadáver que lleva días expuesto a la humedad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2558 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 472 — 378/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2333 ms
+
+> "Qué demonios es esto..."
+> Me alejo un paso para observar la herida con más calma, intentando recordar si he visto algo similar en los bosques o en los libros.
+> {Naturaleza}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Naturaleza: 19+1=20
+
+### [4] DM
+
+  9351 ms
+
+> La memoria se dispara con una claridad gélida. No es una enfermedad natural ni una putrefacción común; recuerdas haber leído sobre la *Plaga de Cristal* en antiguos tratados de alquimia prohibida. Es una infección mística que transmuta la materia orgánica en cuarzo oscuro, consumiendo la energía vital del huésped para alimentar el crecimiento del cristal. El proceso es lento pero irreversible si no se trata el núcleo antes de que las venas negras alcancen el corazón.
+> Elian suelta un gemido ahogado, un sonido que raspa la garganta. A través de sus espasmos, clava su mirada en ti, llena de un terror animal.
+> —No... no digas nada... —susurra con voz quebrada, intentando cubrirse la herida con la manga rota de su camisa—. Si el Consejo se entera... me echarán al Paso. No puedo... no puedo irme ahora.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1393 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Cristal, Plaga
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 473 — 379/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3543 ms
+
+> "Tú no vas a irte a ninguna parte si te conviertes en una piedra."
+> Sujeto su brazo con firmeza para apartar la manga y examinar la extensión de las vetas negras.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 10+2=12
+
+### [4] DM
+
+  8214 ms
+
+> Elian se tensa bajo tu agarre, soltando un siseo de dolor mientras su cuerpo lucha instintivamente contra la presión. Al desplazar la tela, la luz revela que las vetas negras no son superficiales; son filamentos rígidos que parecen haber sustituido los tendones, creando un relieve angular y frío bajo la piel pálida.
+> La extensión de la infección es considerable, pero el ritmo de crecimiento se siente errático. Al tacto, la carne ya no cede como el tejido vivo, sino que vibra con una frecuencia sorda, similar a la de un mineral bajo presión. Elian deja de luchar y se queda lívido, contemplando el propio brazo como si perteneciera a un extraño.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2639 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 474 — 380/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3461 ms
+
+> "Esto no es una simple enfermedad."
+> Suelto su brazo y me separo un paso, observando detenidamente la textura y el patrón de las vetas negras.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 15+2=17
+
+### [4] DM
+
+  11431 ms
+
+> El patrón de las vetas no sigue la trayectoria de los vasos sanguíneos ni de los nervios; se ramifica en ángulos rectos y geometrías precisas, como si estuviera cartografiando el brazo desde dentro. La rigidez mineral que percibiste no es una consecuencia de la necrosis, sino una sustitución: el tejido orgánico está siendo desplazado por una estructura cristalina de color azabache que consume la elasticidad del músculo para ganar densidad.
+> Elian retira el brazo lentamente, cubriéndolo con la tela mientras te observa con una mezcla de miedo y sospecha. Sus ojos se entrecierran, analizando tu reacción.
+> —No es una enfermedad... —susurra con la voz quebrada—. Es un precio. Y no soy el único que lo está pagando.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4528 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta elian · npc.knowledge = Isolde ha analizado las vetas negras de su brazo y ha concluido que no es una enfermedad
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 475 — 381/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2825 ms
+
+> "¿Un precio? ¿A quién le debes ese favor?"
+> Me inclino hacia adelante, tratando de analizar su expresión para ver si oculta algo más.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+2=9
+
+### [4] DM
+
+  7415 ms
+
+> Elian retrocede un centímetro, manteniendo el brazo envuelto y apretado contra su costado. Su mirada se desvía un instante hacia la puerta, asegurándose de que nadie escuche, antes de volver a fijar sus ojos en los tuyos. Sus labios tiemblan ligeramente, pero mantiene la mandíbula tensa, resistiéndose a soltar más de lo estrictamente necesario.
+> —A quien tiene el poder de darnos lo que el Consejo nos niega —responde en un hilo de voz, manteniendo una expresión neutra y cerrada que no deja traslucir ninguna emoción clara ni rastro de engaño evidente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2375 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 476 — 382/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4199 ms
+
+> "No me interesan los acertijos, Elian. Dime el nombre o dime qué quiere exactamente."
+> Me acerco un paso más a él, invadiendo su espacio personal para presionarlo.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 1+0=1  PIFIA
+
+### [4] DM
+
+  8767 ms
+
+> Elian no retrocede ante tu avance; al contrario, el movimiento brusco parece activar un instinto de supervivencia que lo deja gélido. En lugar de quebrarse, se tensa como una cuerda a punto de romperse y te mira con una mezcla de asco y desprecio, interpretando tu presión no como autoridad, sino como la torpeza de alguien que no sabe cómo conseguir lo que quiere.
+> —Tú no eres más que otro bruto que cree que el volumen sustituye a la razón —escupe con una frialdad cortante, alejándose un paso con un gesto de rechazo absoluto. Se cruza de brazos, cerrándose en banda y clavando una mirada gélida en ti, dejando claro que no soltará una sola sílaba más mientras sigas intentando forzarlo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3698 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 477 — 383/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2678 ms
+
+> "Parece que te crees muy superior, pero el silencio no te va a sacar de aquí."
+> Suelto un suspiro y doy un paso atrás, dándole el espacio que quiere pero manteniendo la mirada fija en él.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+2=19
+
+### [4] DM
+
+  9864 ms
+
+> Al retroceder, el aire entre ambos deja de vibrar con esa tensión eléctrica y agresiva. Elian no se relaja, pero el músculo de su mandíbula deja de palpitar y su postura, aunque sigue siendo defensiva, pierde esa rigidez de quien espera un golpe. Te observa con los ojos entrecerrados, evaluando si tu cambio de actitud es una tregua real o una simple maniobra para bajarle la guardia.
+> Mientras lo estudias, notas que su desprecio es una armadura demasiado perfecta. Hay una fatiga profunda en el hundimiento de sus hombros y una chispa de ansiedad que traiciona su máscara de frialdad cada vez que mira hacia la salida. No es la arrogancia de quien se sabe a salvo, sino el orgullo desesperado de alguien que siente que ha perdido el control sobre todo lo que posee, excepto sobre su propio silencio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2051 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 478 — 384/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3650 ms
+
+> "Pareces más cansado que enfadado, Elian. Y parece que tienes prisa por marcharte."
+> Me quedo quieta, observando sus reacciones mientras intento leer qué es exactamente lo que le preocupa de lo que hay fuera.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+2=6
+
+### [4] DM
+
+  9736 ms
+
+> Elian tensa la espalda al instante, como si tus palabras hubieran sido un pinchazo físico. Sus ojos se clavan en los tuyos con una intensidad gélida, y aunque no retrocede, notas cómo sus dedos se cierran con fuerza sobre la tela de su ropa. Una pequeña mueca de irritación cruza su rostro, pero no hay una respuesta inmediata; el silencio se prolonga mientras procesa que has visto a través de su fachada.
+> Se aclara la garganta, recuperando la compostura con un esfuerzo visible, y desvía la mirada hacia la puerta un segundo antes de volver a centrarse en ti. Su expresión permanece impasible, una máscara de indiferencia que no deja filtrar ninguna pista sobre lo que ocurre fuera ni sobre la naturaleza de su prisa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1399 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 479 — 385/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3048 ms
+
+> "Tienes prisa por irte, pero tienes más prisa aún por ocultar algo. ¿Qué es lo que te pone tan nervioso?"
+> Me cruzo de brazos y lo observo fijamente, sin moverme de su camino.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+2=14
+
+### [4] DM
+
+  9179 ms
+
+> Elian suelta un bufido corto, una risa seca que no llega a sus ojos. No intenta apartarte físicamente, pero su cuerpo permanece rígido, como una cuerda a punto de romperse. Se mantiene en silencio unos segundos, midiendo el peso de tu mirada, mientras el tic nervioso de su mandíbula delata que tu observación ha dado en el clavo.
+> —No estoy nervioso, simplemente no tengo tiempo para juegos de adivinanzas —responde con voz gélida, aunque el tono suena forzado—. Hay asuntos que requieren mi atención inmediata y que no te incumben.
+> Notas que, a pesar de sus palabras, Elian no se atreve a sostenerte la mirada por mucho tiempo; sus ojos escanean constantemente el espacio detrás de ti, buscando una salida o vigilando que nadie más haya entrado en la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2332 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 480 — 386/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2879 ms
+
+> "Tus ojos dicen lo contrario. ¿De quién tienes tanto miedo que no puedes ni mirarme?"
+> Me cruzo de brazos y me planto frente a él, bloqueando su camino hacia la salida.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+2=14
+
+### [4] DM
+
+  8980 ms
+
+> Elian tensa los hombros y deja escapar un suspiro cargado de irritación. Intenta rodearte con un paso lateral, pero al notar que bloqueas la salida, se detiene en seco. Sus pupilas se dilatan y el movimiento de su mandíbula se vuelve más errático; el miedo que intentaba ocultar bajo una capa de frialdad comienza a filtrarse en los pliegues de su expresión.
+> —No es miedo, es prudencia —masculla, aunque su voz ha perdido la firmeza anterior y ahora suena ligeramente quebrada—. Hay gente en este lugar que no entiende la diferencia entre una pregunta y una amenaza. Ahora, apártate. No tengo nada más que decirte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2810 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 481 — 387/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2718 ms
+
+> "La prudencia suele venir acompañada de secretos. Y los secretos tienen un precio."
+> Me mantengo firme bloqueando el paso, mirándolo fijamente a los ojos para presionarlo.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 17+0=17
+
+### [4] DM
+
+  9131 ms
+
+> Elian retrocede un paso, chocando con el borde de una mesa que hace vibrar unos cuencos de cerámica. El aire entre ambos se vuelve pesado y el hombre traga saliva con dificultad, sintiendo el peso de tu mirada fija en él. Su postura, antes rígida y altiva, se desmorona; los hombros caen y evita el contacto visual, mirando hacia cualquier punto de la habitación que no sean tus ojos.
+> —Está bien, está bien... —susurra con voz temblorosa, rindiéndose ante la presión—. No quiero problemas contigo. Pero no soy el único que guarda silencio; el Consejo del Granero tiene ojos en cada esquina y no me perdonarán que haya hablado con un extraño.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4217 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 482 — 388/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4693 ms
+
+> "Me importa muy poco quién esté mirando. Dime qué es lo que oculta ese Consejo."
+> Me acerco un paso más hacia él, invadiendo su espacio personal para que no pueda escapar.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 18+0=18
+
+### [4] DM
+
+  10758 ms
+
+> Elian se encoge, apretando la espalda contra el borde de la mesa mientras el sonido de la cerámica vibrando llena el silencio. El espacio entre ambos desaparece y el hombre exhala un suspiro tembloroso, sintiendo el aliento del interlocutor sobre su rostro. El pánico vence finalmente a la cautela; sus ojos se abren con una mezcla de terror y urgencia, buscando desesperadamente una salida que no existe.
+> —¡Que se enteren, entonces! —suelta en un hilo de voz, casi en un sollozo—. El Consejo... el reparto de grano no cuadra. Dicen que las plagas diezmaron las cosechas del sur, pero los almacenes reales están llenos hasta el techo. Están reteniendo el grano para inflar los precios y obligar a los campesinos a vender sus tierras por una miseria. El hambre no es un accidente, es un plan.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2263 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 483 — 389/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2229 ms
+
+> "Así que el hambre es un negocio."
+> Me separo de él lentamente, procesando la información, y miro alrededor para asegurarme de que nadie nos haya oído.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 3+4=7
+
+### [4] DM
+
+  8797 ms
+
+> Elian se desploma sobre la silla, liberando la tensión de golpe mientras recupera el aire. Se queda mirándote con los hombros hundidos, temblando ligeramente, como quien acaba de soltar una piedra demasiado pesada y ahora teme que el vacío que ha dejado sea aún más peligroso.
+> El entorno permanece inmutable; el ruido lejano de la calle y el murmullo habitual del establecimiento siguen su curso, sin que nada indique que alguien haya prestado atención a la confesión. Elian, sin embargo, no parece compartir esa tranquilidad y lanza una mirada fugaz y nerviosa hacia la puerta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2219 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 484 — 390/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3283 ms
+
+> "Tranquilo. Ahora que lo he soltado, ya no es solo tu carga."
+> Me inclino hacia él y bajo la voz, intentando analizar si su nerviosismo es por alguien concreto que pueda entrar en cualquier momento.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+2=16
+
+### [4] DM
+
+  7153 ms
+
+> Elian exhala un suspiro tembloroso y evita tu mirada, concentrándose en el grano de la madera de la mesa. Sus dedos tamborilean un ritmo errático y, aunque tus palabras parecen darle un respiro, no logran borrar la inquietud de sus ojos.
+> Al observar sus gestos y la dirección de sus miradas, notas que su nerviosismo no nace del miedo a una persona específica que pueda cruzar el umbral en este instante, sino de una paranoia generalizada. No vigila la puerta buscando a un perseguidor, sino que teme que cualquier testigo accidental haya escuchado lo que acaba de confesar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1468 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 485 — 391/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2767 ms
+
+> "Relájate. Nadie nos está escuchando."
+> Me inclino hacia él, bajando la voz para crear una atmósfera de complicidad, e intento descifrar qué es exactamente lo que tanto teme que se sepa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 18+2=20
+
+### [4] DM
+
+  9772 ms
+
+> Elian se tensa brevemente ante tu cercanía, pero el tono bajo de tu voz parece actuar como un ancla. Sus hombros descienden un centímetro, aunque el tamborileo de sus dedos no cesa del todo. Al observarlo con atención, notas que su paranoia no es la de alguien que huye de una ley clara o un enemigo con nombre, sino la de quien ha roto un pacto tácito de silencio. Su miedo está ligado a la traición y al ostracismo; teme que el simple hecho de hablar sobre el reparto del grano lo convierta en un paria entre los suyos.
+> El hombre levanta la vista, sus ojos saltando de tus ojos a la puerta y volviendo a ti. "No es quién pueda entrar", susurra con la voz quebrada, "sino quién haya podido oír desde fuera. En el Consejo... las paredes tienen oídos y las lenguas son más rápidas que la justicia".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1972 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 486 — 392/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3197 ms
+
+> "Dime quiénes son esos oídos. Si sabemos quién escucha, podemos hacer que miren hacia otro lado."
+> Me acerco un poco más para reducir el espacio entre nosotros y trato de analizar su lenguaje corporal para ver si hay alguien concreto en quien piense.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+2=5
+
+### [4] DM
+
+  9427 ms
+
+> Elian se encoge instintivamente cuando reduces la distancia, pegando la espalda contra la pared. Sus ojos se dilatan y empieza a mirar frenéticamente hacia los rincones del techo y las juntas de la madera, como si esperara ver ojos emergiendo de las grietas. La tensión en su mandíbula es evidente, pero su mirada es errática y difusa; no hay un rostro concreto en su mente, sino una masa amorfa de sospechas y sombras.
+> "No son personas, son... ecos", balbucea, bajando aún más la voz hasta convertirla en un siseo. "Cualquiera puede ser el mensajero. El vecino, el que limpia el grano, el que vende el cuero... Todos quieren el favor del Consejo. Si alguien me ve hablando contigo, no necesitarán pruebas, solo la sospecha".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2101 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 487 — 393/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3331 ms
+
+> "Deja de mirar el techo y mírame a mí. Si quieres que te ayude, necesito nombres reales, no ecos."
+> Le sujeto del brazo con firmeza para obligarlo a centrar la mirada en mí.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 12+0=12
+
+### [4] DM
+
+  10626 ms
+
+> Elian suelta un gemido ahogado cuando tus dedos se cierran sobre su brazo, un espasmo que recorre todo su cuerpo. Su mirada, que hasta hace un segundo vagaba por las sombras del techo, choca violentamente con la tuya. El contacto físico parece anclarlo al presente, pero el pánico no desaparece; simplemente se condensa en una expresión de desesperación contenida mientras intenta no zafarse de tu agarre.
+> "¡Está bien, está bien! Solo... suéltame", sisea, aunque sus músculos siguen tensos como cuerdas de violín. Traga saliva con dificultad y baja la voz hasta que es apenas un hilo. "El Consejo del Granero. Ellos son los que mueven los hilos aquí. Controlan el reparto y deciden quién come y quién pasa hambre. Si quieres respuestas, tienes que mirar a quienes firman los libros de suministros, pero hazlo con cuidado... los muros tienen oídos y los oídos tienen hambre".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5656 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta elian · npc.knowledge = Isolde lo ha sujetado con firmeza para obligarlo a centrar la mirada
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 488 — 394/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2204 ms
+
+> "¿El Consejo del Granero, eh? No me gusta que otros decidan quién come."
+> Lo suelto bruscamente y me alejo un paso para observar su reacción.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+2=4
+
+### [4] DM
+
+  7271 ms
+
+> Elian se tambalea hacia atrás cuando lo sueltas, recuperando el equilibrio con un movimiento torpe. Se frota el brazo donde antes estaban tus dedos, lanzándote una mirada cargada de una mezcla de alivio y recelo. Sus ojos no dejan de analizarte, buscando alguna señal de que tus palabras sean una amenaza real o simplemente una bravuconada.
+> El hombre se encoge de hombros con un gesto amargo y desvía la vista hacia la puerta, manteniendo una distancia prudencial. No hay rastro de sinceridad plena en su postura; permanece tenso, como si estuviera calculando cuánto ha revelado y si el precio de esa confesión será demasiado alto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1195 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 489 — 395/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2291 ms
+
+> "Sigue así y no llegaremos a ningún acuerdo."
+> Doy un paso hacia él, invadiendo su espacio personal para presionarlo.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 12+0=12
+
+### [4] DM
+
+  8123 ms
+
+> Elian retrocede instintivamente, chocando con la madera crujiente de la pared. El espacio se reduce y el hombre contiene el aliento, sintiendo tu presencia como una presión física que lo acorrala. Sus pupilas se dilatan y el sudor comienza a perlar su frente, mientras que el tic nervioso de su mejilla izquierda se vuelve más errático.
+> —¡Está bien, está bien! —espeta en un susurro apresurado, levantando las manos en señal de rendición—. No hace falta que lleguemos a eso. Pero entiende que no soy el único que tiene hambre en este lugar; si hablo de más, el Consejo del Granero me colgará de los pies antes del amanecer.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2605 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 490 — 396/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2570 ms
+
+> "No me interesan tus miedos, sino el nombre de los que te obligan a callar."
+> Aprieto el agarre y me acerco un centímetro más a su rostro para romper su voluntad.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 15+0=15
+
+### [4] DM
+
+  7812 ms
+
+> Elian deja escapar un gemido ahogado, sintiendo el aliento del personaje contra su piel. La presión del agarre y la cercanía asfixiante rompen el último vestigio de su resistencia; el hombre cierra los ojos con fuerza, como si intentara borrar la imagen de su propia vulnerabilidad, y su cuerpo se desploma ligeramente contra la madera.
+> —¡El Consejo del Granero! —suelta en un jadeo, la voz quebrada por el pánico—. Ellos son los que mandan. No son señores, solo campesinos con hambre y mucha mala leche que decidieron que el grano se reparte según quien tenga el hacha más grande. ¡No me mates, por los dioses, no me mates!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7330 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+  ✓ delta elian · npc.knowledge = El Consejo del Granero es quien manda y reparte el grano por la fuerza
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 491 — 397/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3106 ms
+
+> "¿El Consejo del Granero? Habla más lento y dime dónde se reúnen."
+> Aflojo el agarre lo justo para que pueda respirar, pero mantengo mi posición para que no escape.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 1+0=1  PIFIA
+
+### [4] DM
+
+  8826 ms
+
+> Al soltar la presión, Elian no aprovecha el espacio para relajarse, sino que el pánico se transforma en un espasmo violento. En su desesperación por respirar y alejarse de tu presencia, el hombre forcejea con torpeza, golpeando accidentalmente tu brazo y perdiendo el equilibrio. En lugar de responder con claridad, comienza a hiperventilar, emitiendo sonidos guturales y confusos mientras intenta encogerse sobre sí mismo, incapaz de articular una sola palabra coherente.
+> El terror lo ha bloqueado por completo; sus ojos están desorbitados y el temblor de sus manos es tan intenso que apenas puede sostenerse sobre la madera. Se ha quedado mudo, atrapado en un estado de shock que borra cualquier rastro de cooperación, mientras mira hacia cualquier dirección menos a tus ojos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1222 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 492 — 398/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2678 ms
+
+> "Cálmate. No voy a hacerte daño si hablas."
+> Sujeto sus hombros con firmeza para evitar que siga forcejeando y trato de obligarlo a mirarme.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 3+0=3
+
+### [4] DM
+
+  8094 ms
+
+> Elian se tensa violentamente bajo tu agarre, sintiendo la presión en sus hombros como una nueva amenaza en lugar de un anclaje. Sus pupilas están dilatadas y el ritmo de su respiración es errático, un jadeo seco que corta el aire mientras intenta, inútilmente, encoger el cuello para escapar de tu mirada.
+> Cuando intentas obligarlo a verte, el hombre cierra los ojos con fuerza y niega con la cabeza en espasmos cortos, emitiendo un gemido ahogado. Se queda rígido, paralizado por un pánico que anula cualquier promesa de seguridad, convertido en un bulto tembloroso que se resiste a reconocer tu voz.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4297 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 493 — 399/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3591 ms
+
+> "Mírame, Elian. No voy a dejar que te pase nada, pero necesito que me digas qué ha ocurrido."
+> Aflojo un poco el agarre para no asfixiarlo, pero mantengo mi posición para que no se aleje. Intento analizar sus gestos para entender la raíz de su terror.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+2=9
+
+### [4] DM
+
+  7490 ms
+
+> Elian permanece encogido, con los párpados apretados y el cuerpo sacudido por temblores que no puede controlar. Aunque el agarre se ha suavizado, el hombre no aprovecha la oportunidad para relajarse; al contrario, se queda congelado en una posición fetal incompleta, como si cualquier movimiento pudiera atraer la atención de algo que solo él percibe.
+> Sus gestos son erráticos y cegados por el pánico, una reacción visceral que no deja espacio para pistas claras. El terror que emana es tan absoluto y desorganizado que no logras discernir si teme a una persona concreta, a una criatura o a una consecuencia inevitable que ya ha sido desencadenada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1491 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 494 — 400/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3329 ms
+
+> "Tranquilo, Elian. Mírame. No hay nadie más aquí."
+> Hago un gesto pausado para intentar calmarlo mientras trato de leer en su lenguaje corporal qué es lo que tanto le aterra.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+2=8
+
+### [4] DM
+
+  7726 ms
+
+> Elian deja escapar un sollozo ahogado, pero no abre los ojos. Sus hombros se encogen aún más ante el sonido de la voz, y el temblor de sus extremidades se intensifica, convirtiéndose en espasmos rítmicos. Se niega a establecer contacto visual, manteniendo el rostro hundido contra el suelo frío, como si el simple hecho de mirar el entorno fuera una sentencia de muerte.
+> A pesar de la calma en el gesto, el lenguaje corporal de Elian sigue siendo un caos de reflejos defensivos. El pánico es una pared densa y opaca; no hay un patrón reconocible en sus movimientos, solo una desesperación ciega que oculta cualquier pista sobre el origen de su terror.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1346 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 495 — 401/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2599 ms
+
+> "Ya basta. Mírame."
+> Me inclino hacia él y trato de sujetarlo firmemente por los hombros para obligarlo a salir de ese estado.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  10605 ms
+
+> El contacto físico brusco provoca que Elian se tense como una cuerda a punto de romperse, pero la firmeza de tu agarre logra anclarlo a la realidad. Sus ojos se abren de golpe, dilatados y vidriosos, reflejando un terror que no pertenece a este lugar. En ese instante de contacto forzado, el caos de sus espasmos se vuelve legible: no teme a quien lo sujeta, sino a lo que Elian cree que *está detrás* de ti.
+> Su mirada salta frenéticamente de tu rostro al vacío que tienes a la espalda, y el pánico se transforma en una comprensión devastadora. Elian reconoce el patrón de tu autoridad y, aunque sigue temblando, el pánico ciego da paso a una sumisión rota. El sollozo se corta en seco y sus pupilas se contraen, fijándose en ti con una mezcla de esperanza agónica y el miedo cerval de quien espera que el verdugo le dé la orden final.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3666 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 496 — 402/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3475 ms
+
+> "Mírame a mí. Solo a mí. ¿Qué es lo que hay detrás?"
+> Sigo sujetándolo con fuerza para que no vuelva a entrar en pánico mientras lo obligo a mantener el contacto visual.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+2=9
+
+### [4] DM
+
+  23325 ms
+
+> Elian parpadea repetidamente, luchando por clavar sus ojos en los tuyos. Sus labios tiemblan y un hilo de saliva cae por la comisura de su boca mientras intenta obedecer la orden, pero su mirada es errática; el terror sigue ahí, latiendo bajo la superficie. Se encoge bajo tu agarre, reduciendo su cuerpo a la mínima expresión posible, como si quisiera desaparecer dentro de su propia ropa.
+> —No... no puede estar aquí —susurra con una voz quebrada que apenas es un hilo de aire—. El Consejo... dijeron que el Granero estaba limpio. Dijeron que ya no nos seguiría.
+> Su expresión permanece nublada, una máscara de angustia y sumisión que no revela nada más. A pesar de sus palabras, no hay ningún gesto claro ni una reacción coherente que te permita discernir si miente, si está delirando o qué es exactamente aquello que cree haber visto a tus espaldas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3349 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 497 — 403/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2405 ms
+
+> "¿Quién es 'eso' y qué es el Granero? Habla claro."
+> Aprieto el agarre sobre él para obligarlo a centrarse en mí.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 6+0=6
+
+### [4] DM
+
+  10773 ms
+
+> Elian suelta un gemido ahogado cuando el agarre se cierra sobre él, pero el esfuerzo por centrarse fracasa. Sus pupilas están dilatadas, bailando frenéticamente de un lado a otro, y el cuerpo le tiembla con tal intensidad que puedes sentir la vibración de sus músculos contra tu mano. El pánico es un muro infranqueable; el hombre no logra procesar la demanda y el hilo de saliva se prolonga mientras abre la boca sin emitir sonido.
+> —El... el... —balbucea, pero su mirada se desvía bruscamente hacia la oscuridad detrás de ti, ignorando tu pregunta. Se retuerce débilmente, intentando zafarse no por valentía, sino por un instinto animal de huida—. ¡No me obligue a decirlo! ¡Si lo nombro, sabrá que lo sé!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5760 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 498 — 404/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  30 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2857 ms
+
+> "¿Quién sabe? ¿Quién te va a hacer daño por hablar?"
+> Le aprieto más el agarre para obligarlo a mirarme a la cara.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 17+0=17
+
+### [4] DM
+
+  12391 ms
+
+> Elian suelta un chillido agudo cuando tus dedos se hunden en su piel, obligando a su cuello a girar con un movimiento brusco. Sus ojos, inyectados en sangre y desencajados, chocan contra los tuyos; el pánico sigue ahí, pero el dolor físico corta el ruido de su mente y lo ancla a la realidad inmediata. El temblor de sus músculos no cesa, pero el terror a lo que sea que acecha en las sombras es ahora menor que el terror a la fuerza que lo asfixia.
+> —¡El Vigilante del Granero! —estalla en un sollozo desesperado, cerrando los ojos con fuerza como si esperara que el cielo se desplomara sobre él—. ¡Él escucha los susurros! ¡Él sabe quiénes conocen la verdad sobre el reparto! ¡Por favor, suélteme, me llevará conmigo!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  36595 ms · 1 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+  ✗ evidencia no literal: «¡El Vigilante del Granero! —estalla en un sollozo »
+  ✓ creación npc: El Vigilante del Granero
+  ⚠ nombres no reconocidos: Vigilante
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: npc El Vigilante del Granero
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 499 — 405/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3148 ms
+
+> "¿Qué reparto? Habla claro o te romperé el cuello aquí mismo."
+> Aprieto el agarre en su cuello, ejerciendo presión para mantenerlo sumiso mientras lo obligo a mirarme.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 17+0=17
+
+### [4] DM
+
+  11927 ms
+
+> Elian emite un sonido ahogado, un gorgoteo seco mientras el aire comienza a escasear y la presión en su tráquea se vuelve insoportable. Sus pupilas se dilatan, reflejando el pánico absoluto ante la amenaza inmediata de la muerte; la mención de romper su cuello actúa como el golpe final que pulveriza cualquier rastro de resistencia o secretismo.
+> —¡El trigo! ¡El reparto del grano de invierno! —gime, las lágrimas surcando sus mejillas—. ¡El Consejo mintió! Dijeron que la cosecha fue pobre, que no había suficiente para todos, pero el Vigilante... él sabe que los silos están llenos. ¡Están guardando la mitad para venderla fuera del Paso mientras nosotros morimos de hambre! ¡Por favor, suélteme, lo juro por mi vida que es verdad!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9626 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+  ✓ delta elian · npc.knowledge = El Consejo mintió sobre la cosecha; los silos están llenos y guardan la mitad para venderla fuera del Paso
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+  ✗ entidad inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 500 — 406/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4774 ms
+
+> "Silos llenos mientras el pueblo pasa hambre... eso explica muchas cosas."
+> Suelto el cuello de Elian bruscamente, dejándolo caer al suelo, y me alejo un paso para mirarlo desde arriba.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+2=15
+
+### [4] DM
+
+  10364 ms
+
+> Elian cae al suelo con un golpe seco, aspirando aire en bocanadas desesperadas y violentas que hacen que su pecho suba y baje con espasmos. Se encoge sobre sí mismo, frotándose la garganta con manos temblorosas mientras evita sostenerte la mirada, reduciéndose a una figura pequeña y quebrada sobre la tierra.
+> A pesar del pánico, sus palabras no han sido el balbuceo de un hombre delirante; la urgencia en su voz y la precisión del detalle sobre el Vigilante sugieren que no está inventando la historia para salvarse, sino soltando un secreto que lo consumía. Su terror es genuino, pero la información parece sólida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  734 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 501 — 407/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3425 ms
+
+> "Cálmate. Respira."
+> Me inclino sobre él, pero mantengo una distancia prudente. Intento descifrar si hay algo más que no me haya contado por el miedo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+2=11
+
+### [4] DM
+
+  7911 ms
+
+> Elian suelta un gemido ahogado y cierra los ojos con fuerza, encogiéndose más mientras intenta seguir el ritmo de tu voz. El aire sigue entrando en sus pulmones con dificultad, produciendo un silbido agudo en su garganta que delata el trauma físico y emocional del momento.
+> A pesar de su fragilidad, el hombre se mantiene hermético. Sus espasmos continúan y, aunque parece haber soltado la carga más pesada, su lenguaje corporal es el de alguien que aún guarda fragmentos de una verdad que no se atreve a pronunciar, protegiendo el resto de sus secretos tras una barrera de terror puro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  77068 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 502 — 408/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4257 ms
+
+> "Tranquilo. No voy a hacerte daño, pero necesito que me digas qué es lo que te asusta tanto."
+> Me inclino hacia él, buscando mantener un tono calmado pero firme, mientras observo sus gestos para detectar cualquier señal de que esté dispuesto a hablar.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+2=11
+
+### [4] DM
+
+  6553 ms
+
+> Elian mantiene los párpados cerrados, y aunque el ritmo de su respiración se estabiliza ligeramente ante tu tono, no hay ninguna señal de apertura en su postura. Se encoge sobre sí mismo, formando una bola protectora, y el silbido de su garganta persiste, convirtiendo cada intento de inhalar en un sonido errático y tenso.
+> Cuando te inclinas hacia él, el hombre se tensa visiblemente, alejando la cabeza con un movimiento espasmódico. Sus labios tiemblan, pero permanecen apretados en una línea fina; no hay rastro de confesión ni una mirada que sugiera que el miedo esté siendo sustituido por la confianza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3770 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 503 — 409/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2669 ms
+
+> "No voy a hacerte daño, pero no me gusta perder el tiempo."
+> Me aparto un poco para darle espacio y observo con atención sus gestos y la herida de su garganta.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 1+2=3  PIFIA
+
+### [4] DM
+
+  8402 ms
+
+> Al apartarte, Elian exhala un aire gélido y tembloroso, aunque no se despliega; sigue hecho un ovillo, vigilando cada uno de tus movimientos con una desconfianza visceral. El silencio se prolonga, roto únicamente por el roce de su ropa sucia contra el suelo y ese silbido húmedo que emana de su cuello.
+> Al intentar analizar la herida, tu vista se nubla por un instante o quizás juzgas mal la profundidad del corte. Al acercar la mirada, interpretas erróneamente que la hemorragia ha cesado y que el tejido está cerrándose, ignorando el ligero burbujeo de aire que indica que la tráquea sigue comprometida. Elian, al notar tu escrutinio, emite un gemido ahogado y cierra los ojos con fuerza, hundiéndose más en su postura defensiva.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5890 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 504 — 410/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2782 ms
+
+> "No te muevas, que te vas a ahogar con tu propia sangre."
+> Intento sujetar su cuello con cuidado para estabilizar la zona y revisar mejor la herida.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 17+2=19
+
+### [4] DM
+
+  8354 ms
+
+> Tus dedos se posan con firmeza pero delicadeza sobre la piel fría y pegajosa de su cuello. Al estabilizar la zona, el burbujeo de aire se vuelve evidente bajo tu tacto y la verdadera naturaleza de la lesión emerge: el corte es profundo y la tráquea está expuesta, obligando al aire a buscar salidas irregulares que provocan ese silbido húmedo y angustioso.
+> Elian se tensa violentamente ante el contacto, abriendo los ojos de par en par. Sus pupilas están dilatadas por el pánico y emite un sonido sordo, una mezcla de súplica y terror, mientras intenta retraer el cuello instintivamente, aunque el dolor lo obliga a quedar anclado bajo tu presión.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3930 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 505 — 411/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3230 ms
+
+> "Quédate quieto si no quieres que te desangres aquí mismo."
+> Mantengo la presión sobre la herida para evitar que pierda más sangre mientras intento evaluar la gravedad real del daño.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 6+2=8
+
+### [4] DM
+
+  8107 ms
+
+> Elian se queda petrificado, con el cuerpo temblando violentamente bajo tu mano. Sus ojos, inyectados en sangre y nublados por el shock, te miran con una mezcla de esperanza y puro terror mientras intenta contener los espasmos de su garganta. El sonido del silbido húmedo continúa, rítmico y desesperante, llenando el silencio del lugar.
+> A pesar de tu esfuerzo por estabilizar la zona, la profundidad de la herida es engañosa y el flujo de sangre no cede lo suficiente como para permitirte una evaluación clara. La piel alrededor del corte se siente fría y el tejido está demasiado desgarrado; no logras determinar con precisión si hay daños adicionales en los vasos sanguíneos principales o si la hemorragia se ha detenido realmente bajo la presión.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5563 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 506 — 412/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3306 ms
+
+> "Tranquilo, Elian. No te muevas."
+> Sigo presionando la herida con fuerza mientras intento palpar los bordes del corte para localizar el origen exacto del sangrado.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 5+2=7
+
+### [4] DM
+
+  11029 ms
+
+> Tus dedos se deslizan sobre la piel húmeda y fría, pero la sangre sigue brotando con una insistencia ciega, inundando el corte y cegando tu tacto. A pesar de la presión, no logras discernir dónde termina el desgarro y dónde empieza el daño interno; la herida es un caos de tejido roto que se resiste a revelar su origen. 
+> Elian suelta un gemido ahogado, un sonido que vibra desde el fondo de su pecho, y sus pupilas se dilatan mientras su cuerpo da un sacudida brusca. El silbido húmedo en su garganta se vuelve más errático, y el rictus de terror en su rostro se acentúa al notar que la hemorragia no cede.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4623 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 507 — 413/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3199 ms
+
+> "No te mueras ahora, maldita sea."
+> Sigo presionando la herida con fuerza mientras intento limpiar la sangre con mi ropa para localizar el punto exacto del desgarro.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 12+2=14
+
+### [4] DM
+
+  8390 ms
+
+> La tela de tu ropa se empapa rápidamente, volviéndose pesada y oscura, pero el movimiento constante permite que, por un instante, la marea de sangre retroceda lo suficiente. Bajo el flujo carmesí, logras identificar el desgarro: una herida profunda y irregular que ha comprometido un vaso importante, pero que ahora es visible y accesible para ser tratada.
+> Elian exhala un suspiro tembloroso, sus ojos clavados en los tuyos con una mezcla de pánico y una súplica muda. El ritmo de su respiración se estabiliza ligeramente al sentir la presión firme y dirigida, aunque su piel permanece gélida y el sudor frío le surca las sienes.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5269 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 508 — 414/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2617 ms
+
+> "No te muevas, aguanta un poco más."
+> Saco mis suministros médicos y trato de cerrar la herida rápidamente para detener la hemorragia.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 10+2=12
+
+### [4] DM
+
+  8646 ms
+
+> Tus manos se mueven con urgencia, desplegando los vendajes y suministros sobre la piel pegajosa y fría. A pesar de tu esfuerzo por estabilizar el flujo, la herida es traicionera; la sangre se filtra con terquedad entre las gasas, empapándolas casi al instante. Logras aplicar una presión básica que ralentiza el ritmo del sangrado, pero el desgarro es demasiado irregular para quedar sellado con una intervención tan apresurada.
+> Elian suelta un gemido ahogado, apretando los dientes mientras el dolor de la manipulación le recorre el cuerpo. Te mira con los párpados pesados, su respiración volviéndose errática y superficial. Aunque ya no se desangra a borbotones, la palidez de su rostro ha aumentado y el temblor de sus extremidades se intensifica.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2777 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 509 — 415/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3321 ms
+
+> "Aguanta, Elian. No te atrevas a cerrar los ojos ahora."
+> Intento evaluar la profundidad del desgarro para ver si puedo cerrarlo mejor o si necesito algo más que gasas.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 13+2=15
+
+### [4] DM
+
+  9086 ms
+
+> Tus dedos recorren los bordes irregulares de la herida, apartando con cuidado los restos de tela empapados. La lesión es profunda y los bordes del tejido están demasiado desgarrados para que una simple presión baste; el corte ha afectado capas musculares, lo que explica la dificultad para detener la hemorragia por completo. Sin embargo, el daño no ha alcanzado ninguna arteria principal, lo que te da un margen de maniobra crítico.
+> Elian exhala un suspiro tembloroso, sus ojos luchando por enfocarse en los tuyos mientras el sudor frío le empapa la frente. Sus labios se mueven sin emitir sonido, pero su cuerpo se tensa instintivamente ante cada uno de tus movimientos, dejándote claro que, aunque estable, sigue al borde del colapso.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5995 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 510 — 416/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2712 ms
+
+> "Quédate quieto y respira, Elian. No te vas a morir hoy."
+> Intento suturar la herida con los materiales que tengo a mano para cerrar el desgarre muscular.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 7+2=9
+
+### [4] DM
+
+  9319 ms
+
+> Tus manos tiemblan ligeramente mientras intentas guiar la aguja a través de la carne desgarrada. El tejido es resbaladizo por la sangre y, en un movimiento torpe, la sutura no cierra el músculo, sino que crea un nudo irregular que deja un espacio abierto por donde el fluido rojo vuelve a brotar con fuerza. No has logrado sellar la herida; el desgarre permanece expuesto y la hemorragia, aunque lenta, continúa empapando la ropa de Elian.
+> Elian suelta un gemido ahogado y cierra los ojos con fuerza, apretando los dientes mientras su cuerpo se arquea en un espasmo de dolor. Abre un ojo, mirándote con una mezcla de pánico y desconfianza, y murmura con la voz rota:
+> — Maldita sea... no... no lo estás haciendo bien.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6703 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 511 — 417/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2973 ms
+
+> "Cierra la boca y quédate quieto si no quieres que se te salga el intestino."
+> Aprieto la herida con fuerza para detener el flujo de sangre mientras intento deshacer el nudo mal hecho.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 19+2=21
+
+### [4] DM
+
+  15038 ms
+
+> La presión brusca de tus dedos contra la carne abierta arranca un jadeo violento de Elian, quien se queda rígido como una tabla, el rostro contraído en una mueca de agonía. El silencio cae sobre el lugar, roto solo por su respiración errática y el sonido húmedo de tus dedos trabajando sobre la herida. Con precisión quirúrgica y manos que han recuperado la firmeza, desatas el nudo errático y guías la aguja con un ritmo constante, cerrando el desgarro con puntadas limpias y profundas que obligan a los bordes del músculo a unirse finalmente.
+> El flujo de sangre se detiene, dejando el tejido sellado bajo una costura firme y profesional. Elian exhala un suspiro largo y tembloroso, hundiéndose en el suelo mientras la tensión abandona sus músculos. Te mira fijamente, con la pupila dilatada y el pecho subiendo y bajando con rapidez, pero el pánico de sus ojos ha sido sustituido por una cautela silenciosa. No dice nada, aunque su mirada recorre tus manos con una nueva y gélida curiosidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9430 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 512 — 418/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2678 ms
+
+> "Ya puedes respirar. Pero no te acostumbres a que sea gratis."
+> Me limpio la sangre de los dedos en un trozo de tela y lo miro fijamente a los ojos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+2=4
+
+### [4] DM
+
+  6682 ms
+
+> Elian parpadea lentamente, procesando tus palabras mientras el sudor frío le empapa las sienes. No responde al comentario sobre el pago, pero el músculo de su mandíbula se tensa y desvía la mirada hacia el horizonte, evitando el contacto visual directo. Se mantiene en el suelo, evitando cualquier movimiento brusco que pueda poner a prueba la costura fresca de su costado.
+> Su expresión permanece como una máscara de piedra, impenetrable y distante. No hay rastro de gratitud en sus gestos, solo una rigidez calculada y un silencio pesado que sugiere que, aunque le has salvado la vida, sigue midiendo cada palabra que podrías decir y cada intención que podrías tener.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  11196 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · life_saved
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 513 — 419/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3107 ms
+
+> "No me gusta que me ignoren cuando hablo de dinero."
+> Me inclino sobre él, manteniendo la presión necesaria para que sienta que sigo teniendo el control de la situación.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 5+0=5
+
+### [4] DM
+
+  8267 ms
+
+> Elian no se inmuta ante la presión física, aunque un gemido ahogado escapa de sus labios cuando el movimiento afecta su herida. Sus ojos, pequeños y gélidos, se clavan en los tuyos con una terquedad visceral. No hay miedo en su mirada, sino una resistencia silenciosa y endurecida, como si estuviera acostumbrado a presiones mucho más violentas que la tuya.
+> —El dinero... —su voz es un hilo ronco y seco que apenas rasga el silencio— ...el dinero no sirve de nada si el que lo cobra no sobrevive a la noche.
+> Se queda callado, apretando los dientes, negándose a ceder un centímetro más de terreno emocional.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  15260 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 514 — 420/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2688 ms
+
+> "No me hables de supervivencia. Yo soy la que decide si hoy sobrevives tú."
+> Aprieto más el agarre, buscando el punto exacto donde el dolor lo obligue a hablar.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 2+0=2
+
+### [4] DM
+
+  8328 ms
+
+> Elian exhala un suspiro tembloroso, pero sus ojos no se apartan de los tuyos. A pesar de que el agarre se intensifica, el hombre parece haberse retraído hacia un lugar interno donde el dolor es solo ruido. Sus labios se curvan en una mueca que podría ser una sonrisa amarga o un espasmo de agonía, pero no hay rastro de sumisión en su expresión.
+> —He tenido... dueños peores que tú —escupe con un hilo de sangre mezclado en la saliva—, y sigo aquí. Haz lo que quieras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5204 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 515 — 421/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3650 ms
+
+> "Me gusta esa terquedad. Veremos cuánto dura."
+> Suelto el agarre bruscamente y lo empujo hacia atrás para observar su estado.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+2=3  PIFIA
+
+### [4] DM
+
+  8431 ms
+
+> Elian cae pesadamente sobre el suelo, golpeando la espalda contra la superficie fría. Se queda allí tumbado, jadeando, mientras la sangre gotea lentamente de su labio partido. Al quedar libre de tu presión, el hombre no intenta huir ni suplicar; simplemente te observa desde abajo con una mirada vacía, como si estuviera contando los segundos para que el siguiente golpe llegue.
+> Te detienes un instante a analizar su condición, pero el rastro de sangre, el temblor de sus extremidades y su expresión ausente se vuelven un rompecabezas confuso. Te convence que su resistencia es una fachada calculada, una táctica psicológica para hacerte dudar de su vulnerabilidad, aunque en realidad el hombre parece estar al borde del desmayo físico.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4941 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 516 — 422/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3242 ms
+
+> "Deja de jugar al mártir y dime la verdad."
+> Suelto su cuello y me pongo en cuclillas frente a él, buscándole la mirada para ver si hay algún rastro de engaño.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+2=10
+
+### [4] DM
+
+  7906 ms
+
+> Elian no aparta los ojos de los tuyos, aunque sus pupilas están dilatadas y el ritmo de su respiración es errático, haciendo que su pecho suba y baje con brusquedad. El hombre permanece inmóvil, con el rostro manchado de carmín y el cabello pegado a la frente por el sudor frío, manteniendo ese silencio pesado que parece llenar el espacio entre ambos.
+> A pesar de tu escrutinio, su expresión no cambia; no hay un guiño, una sonrisa oculta ni el tic nervioso de quien oculta una mentira. Solo hay un vacío gélido en su mirada y el sonido sibilante de su aire escapando por la garganta lastimada. No ofrece ninguna respuesta, limitándose a observarte con una apatía que resulta casi mecánica.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3896 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 517 — 423/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2955 ms
+
+> "¿Tanto daño te han hecho que ya ni siquiera puedes hablar, o es que prefieres guardar el secreto?"
+> Me acerco un paso más, tratando de descifrar si ese vacío en su mirada es shock o algo más.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+2=19
+
+### [4] DM
+
+  9098 ms
+
+> El aire gélido de la estancia parece espesarse mientras reduces la distancia. Al observar sus pupilas dilatadas y la rigidez de sus hombros, percibes que no es apatía lo que domina a Elian, sino un estado de shock profundo. Su mente se ha retraído hacia un lugar oscuro para protegerse; el vacío en su mirada no es una máscara para ocultar una mentira, sino el muro defensivo de alguien que ha sido roto sistemáticamente y ya no encuentra sentido en la resistencia o la comunicación.
+> El hombre no reacciona a tu paso ni a tu pregunta. Sus labios se entreabren ligeramente, dejando escapar un hilo de saliva teñido de sangre, pero sus cuerdas vocales parecen incapaces de articular sonido alguno. Se limita a seguirte con la mirada, como un animal herido que observa a un depredador sin saber si este viene a rematarlo o a ayudarlo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5049 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 518 — 424/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2898 ms
+
+> "No soy tu enemigo, pero necesito que hables."
+> Me pongo a su altura, manteniendo una distancia prudente para no asustarlo, y busco cualquier rastro de heridas abiertas que pueda tratar.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 14+2=16
+
+### [4] DM
+
+  9887 ms
+
+> Al descender a su nivel, el hedor a hierro y sudor rancio se vuelve más penetrante. Tus manos, firmes y precisas, recorren los pliegues de su ropa desgarrada y la piel pálida de su torso. Encuentras una laceración profunda y mal curada en el costado izquierdo, donde la carne se ha tornado amarillenta por una infección incipiente, y varias costillas desplazadas que hacen que cada respiración sea un esfuerzo agónico.
+> Elian emite un gemido ahogado, un sonido gutural que vibra en su pecho, mientras sus ojos se clavan en los tuyos. No hay palabras, pero el temblor de sus dedos, que intentan inútilmente aferrarse a la manta sucia que lo cubre, delata que ha percibido el cambio en el trato. Sigue sin hablar, pero la rigidez de sus hombros cede un milímetro, permitiendo que el aire entre con menos dolor en sus pulmones.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  15574 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 519 — 425/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2660 ms
+
+> "Tranquilo. No voy a hacerte daño, pero necesito que colabores."
+> Sigo examinando la herida del costado para ver si puedo estabilizarla con lo que tenga a mano.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 2+2=4
+
+### [4] DM
+
+  7488 ms
+
+> Al intentar manipular los bordes de la laceración para evaluar la profundidad, tus dedos resbalan sobre la piel pegajosa y húmeda. El movimiento, torpe y precipitado, presiona accidentalmente el tejido infectado y desplaza una de las costillas rotas hacia adentro.
+> Elian suelta un grito seco que se corta en un acceso de tos violento, escupiendo una pequeña cantidad de sangre sobre la manta. Se encoge instintivamente, alejando el cuerpo de tu alcance con un espasmo de dolor, y sus ojos vuelven a recuperar esa chispa de desconfianza y pánico, mientras respira con dificultad, emitiendo un silbido agónico por la garganta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5237 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 520 — 426/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3311 ms
+
+> "¡Maldita sea! Quédate quieto, no quiero matarte."
+> Me alejo un paso para darle espacio y trato de calmarlo con un gesto, mientras observo la herida para ver cuánto daño he causado.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 15+2=17
+
+### [4] DM
+
+  7571 ms
+
+> Elian se ovilla sobre sí mismo, temblando, mientras el silbido de su respiración llena el silencio tenso. Sus ojos, dilatados por el terror, siguen cada uno de tus movimientos con una fijeza animal, aunque el espasmo inicial ha cedido y se ha quedado exhausto, con la mirada nublada por el dolor.
+> Al observar la laceración, notas que el desplazamiento de la costilla ha provocado un sangrado interno leve que empieza a hinchar la zona, pero no ha perforado ningún órgano vital de forma irreversible. La herida sigue abierta y purulenta, pero la estructura general se mantiene estable; el daño fue un trauma agudo y momentáneo más que una lesión quirúrgica catastrófica.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8678 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 521 — 427/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2795 ms
+
+> "Tranquilo, ya ha pasado. No te muevas si no quieres que empeore."
+> Me acerco con cuidado para examinar la herida más de cerca y busco la forma de estabilizar esa costilla.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 2+2=4
+
+### [4] DM
+
+  8990 ms
+
+> Elian suelta un gemido ahogado y se encoge instintivamente cuando te acercas, apretando los dientes mientras una gota de sudor frío le resbala por la sien. Sus pupilas vibran, reflejando una desconfianza visceral que no logra mitigar con tus palabras; para él, cualquier movimiento hacia su costado es una amenaza potencial de más dolor.
+> Al intentar palpar la zona para estabilizar la costilla, tus dedos resbalan sobre la piel sudorosa y el tejido inflamado. No logras encontrar el ángulo correcto para reducir el desplazamiento y, en el proceso, ejerces una presión errónea sobre el borde afilado del hueso. Elian lanza un grito seco y agudo, arqueando la espalda violentamente mientras el sangrado interno parece intensificarse, dejando la zona aún más congestionada y purulenta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  18870 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Elian · npc.status = alive
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5499: Elian.status = alive
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 522 — 428/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3074 ms
+
+> "Maldita sea, quédate quieto."
+> Retiro las manos rápidamente y busco algún trapo limpio o ropa que pueda usar para presionar la zona y contener el sangrado.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 2+2=4
+
+### [4] DM
+
+  9531 ms
+
+> Elian jadea con violencia, con la mirada perdida y el pecho subiendo y bajando en espasmos cortos. El grito ha dejado su garganta ronca y se limita a emitir un silbido húmedo cada vez que intenta inhalar, mientras se encoge en una posición fetal, alejándose de ti lo más que el suelo se lo permite.
+> Rebuscas entre los harapos y restos de tela que hay a mano, pero lo que encuentras está impregnado de polvo y manchas antiguas de grasa. Al intentar aplicar la presión con el material disponible, la tela áspera se pega a la herida abierta y, lejos de contener la hemorragia, arrastra consigo costras prematuras y suciedad hacia el interior del tejido inflamado. Elian cierra los ojos con fuerza, soltando un gemido sordo de agotamiento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9172 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 523 — 429/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2998 ms
+
+> "Quédate quieto, maldita sea, que lo estás empeorando."
+> Sigo presionando la herida con fuerza a pesar de la suciedad, intentando detener el sangrado a toda costa.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  10234 ms
+
+> Tus dedos encuentran el punto exacto donde el flujo es más crítico. A pesar de la aspereza de los harapos, aplicas una presión quirúrgica y rítmica que obliga a la sangre a coagularse rápidamente, sellando la rotura del vaso con una eficacia asombrosa. El tejido inflamado deja de bombear el fluido rojo y el sangrado se detiene en seco, estabilizando la herida antes de que el shock sea irreversible.
+> Elian deja de luchar contra ti. Su cuerpo, antes tenso como una cuerda a punto de romperse, se desploma sobre el suelo sucio. Sus ojos se abren lentamente, nublados y cansados, fijándose en tu rostro con una mezcla de terror residual y una chispa de desconcierto al notar que el dolor agudo ha dado paso a un hormigueo sordo. Su respiración, aunque todavía errática, comienza a recuperar un ritmo menos desesperado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  16715 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · life_saved
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 524 — 430/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3721 ms
+
+> "Ya puedes dejar de temblar. No voy a dejar que te desangres aquí."
+> Me separo un poco para dejar que respire, pero mantengo una mano cerca de su herida por si vuelve a abrirse. Lo observo fijamente para ver si recupera la lucidez.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+2=4
+
+### [4] DM
+
+  9771 ms
+
+> Elian exhala un hilo de aire que suena a estertor. Sus pupilas, dilatadas por el trauma, tardan en enfocarse mientras te observa. No hay gratitud en su mirada, sino una sospecha profunda y visceral; te estudia como si fueras un depredador que ha decidido jugar con su presa antes de terminar la faena. Sus labios se mueven, secos y agrietados, pero solo logra emitir un gemido ronco antes de cerrar los ojos un instante, vencido por el agotamiento.
+> El hombre no parece relajarse con tu distancia. Al contrario, el ligero movimiento de tu mano cerca de la herida provoca que un espasmo recorra su hombro y que intente, débilmente, encogerse lejos de ti. Sus ojos se abren de nuevo, cargados de una desconfianza gélida que no se ha disipado a pesar de que acabas de salvarle la vida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  13824 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · life_saved
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 525 — 431/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3265 ms
+
+> "No soy tu enemiga, pero tampoco soy tonta. Habla ahora que puedes."
+> Me alejo un paso más para darle espacio y observo sus reacciones para ver si oculta algo más que el dolor.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+2=19
+
+### [4] DM
+
+  8941 ms
+
+> Elian te sigue con la mirada, el torso temblando mientras intenta recuperar el aliento. Al escuchar tus palabras, una mueca amarga curva la comisura de sus labios; no es una sonrisa, sino un gesto de reconocimiento cínico. El hombre no intenta mentir ni adornar su discurso, pero hay una tensión persistente en su mandíbula y una rigidez en sus dedos que sugiere que, aunque no oculta la verdad de su estado, guarda celosamente la razón de su desgracia.
+> —Tonta... —masca con una voz que suena a grava y sangre—. No eres tonta si no confías en nadie en este camino. Pero si buscas oro o gloria, llegas tarde. Solo queda el hambre y los que vienen a cobrarla.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1307 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 526 — 432/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 318 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2677 ms
+
+> "No busco gloria, solo busco no ser la que pague la cuenta."
+> Me inclino hacia él, observando detenidamente sus manos y su expresión.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+2=19
+
+### [4] DM
+
+  8710 ms
+
+> Elian suelta un bufido seco que termina en una tos ronca, desviando la mirada hacia el horizonte polvoriento. Sin embargo, al sentir tu cercanía, sus dedos se cierran con fuerza sobre el tejido de su ropa, un espasmo involuntario que delata que su cuerpo está al límite, pero su mente sigue luchando por mantener el control.
+> Notas que su rigidez no es solo producto del agotamiento físico. Hay una vigilancia obsesiva en sus ojos, una chispa de paranoia que no encaja con alguien que se ha rendido al hambre. El hombre no teme a la muerte, sino que parece estar protegiendo algo —un secreto, una pertenencia o una promesa— con una ferocidad silenciosa que contradice su apariencia quebrada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1477 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 527 — 433/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3203 ms
+
+> "No me importa cuánto quieras luchar, pero no podrás proteger nada si mueres aquí mismo."
+> Me inclino hacia él, tratando de ver qué es exactamente lo que oculta entre sus ropas o bajo su cuerpo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 8+4=12
+
+### [4] DM
+
+  49867 ms
+
+> Elian se tensa aún más cuando te inclinas, encogiendo los hombros en un intento desesperado por cerrar cualquier espacio entre su cuerpo y el suelo polvoriento. Su respiración se vuelve errática, un silbido agudo que escapa de sus pulmones mientras te lanza una mirada cargada de desconfianza y un miedo visceral.
+> Tus ojos recorren los pliegues de su ropa raída y la posición forzada de sus extremidades, pero la suciedad del camino y el volumen irregular de sus harapos ocultan cualquier objeto concreto. Solo percibes que su cuerpo protege un punto específico del torso con una rigidez antinatural, aunque no logras distinguir si se trata de un objeto, una herida o el simple instinto de un hombre que no confía en nadie.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3673 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 528 — 434/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  31 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3241 ms
+
+> "Deja de temblar y enséñame qué escondes ahí."
+> Le agarro con fuerza del brazo para obligarlo a girarse y revelar qué protege bajo la ropa.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 13+1=14
+
+### [4] DM
+
+  27091 ms
+
+> Elian suelta un gemido ahogado cuando tus dedos se cierran sobre su brazo. El tirón es brusco y efectivo; el hombre pierde el equilibrio y rueda sobre el polvo, quedando expuesto mientras lucha inútilmente por recuperar la posición. Sus uñas arañan la tierra seca, levantando una nube grisácea que se pega a su piel sudorosa.
+> Al girarse, la tela raída de su túnica se desplaza, revelando un pequeño bulto envuelto en cuero curtido y atado firmemente al pecho con tiras de cáñamo. El objeto es rectangular y pequeño, apenas del tamaño de una palma, pero Elian intenta cubrirlo con el brazo libre, sollozando con un sonido roto y desesperado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  25654 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: bulto envuelto en cuero
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item bulto envuelto en cuero
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 529 — 435/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio -50.0 (wary), 5 hechos conocidos
+  32 entidades · contexto de 388 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3026 ms
+
+> "No intentes esconderlo."
+> Le aparto el brazo de un golpe para alcanzar el bulto de cuero y lo arranco de su pecho.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 16+1=17
+
+### [4] DM
+
+  13686 ms
+
+> El brazo de Elian vuela hacia un lado con la fuerza del impacto, dejándolo totalmente indefenso. Sus dedos se cierran en el aire, buscando un agarre que ya no existe, mientras el bulto de cuero es arrancado de sus tiras de cáñamo con un tirón seco y definitivo. El hombre se desploma contra el suelo, soltando un grito ahogado que se ahoga en el polvo, mientras sus ojos, dilatados por el pánico, no dejan de mirar el objeto ahora en tu mano.
+> El cuero curtido está gastado y tibio por el contacto con la piel. Al tacto, el contenido es rígido y plano, envuelto en una tela basta que amortigua el sonido de algo sólido en su interior. Elian comienza a temblar violentamente, encogiéndose sobre sí mismo mientras balbucea palabras ininteligibles, su respiración convertida en un jadeo errático y desesperado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  33671 ms · 0 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Elian · npc.status = captured
+  ✓ delta Isolde · character.inventory = bulto envuelto en cuero
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5539: Elian.status = captured
+  → delta 5540: Isolde.inventory = bulto envuelto en cuero
+
+### [9] ESTADO DESPUÉS
+
+  Elian: captured, aprecio -50.0 (wary), 5 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 530 — 436/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3707 ms
+
+> "Ya no tienes que preocuparte por esto."
+> Ignoro los balbuceos de Elian y abro el bulto de cuero rápidamente para ver qué contiene.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 6+-1=5
+
+### [4] DM
+
+  9629 ms
+
+> Tus dedos apresuran el desate de la tela basta, pero la prisa y el nerviosismo del momento te juegan una mala pasada. Al abrir el bulto con brusquedad, el contenido se desliza y cae sobre la tierra seca, quedando parcialmente cubierto por el polvo y los restos de paja del suelo.
+> Elian, al ver el objeto expuesto, deja de balbucear por un instante. Sus ojos se clavan en el suelo y un sollozo roto escapa de su garganta mientras se arrastra unos centímetros hacia atrás, alejándose de ti y del objeto, con el rostro contraído en una expresión de puro terror.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  5313 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 531 — 437/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2854 ms
+
+> "¿Pero qué demonios es esto?"
+> Me inclino rápidamente para recoger el objeto del suelo y limpiarlo del polvo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 3+4=7
+
+### [4] DM
+
+  10515 ms
+
+> Tus dedos rozan la superficie del objeto mientras intentas quitarle el polvo, pero la suciedad del camino y la luz vacilante del entorno te confunden. A pesar de tus esfuerzos, solo alcanzas a distinguir una forma irregular y fría, una silueta que no termina de definirse entre la paja y la tierra seca.
+> Elian, mientras tanto, se ha encogido sobre sí mismo, tapándose la boca con una mano para ahogar los sollozos. No te mira; mantiene la vista fija en el suelo, temblando violentamente, como si la sola presencia de aquello que has recogido fuera una sentencia de muerte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  3386 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 532 — 438/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4081 ms
+
+> "Deja de llorar y mírame. ¿Qué es esto exactamente?"
+> Sujeto el objeto con más fuerza y trato de limpiar la superficie con el borde de mi ropa para ver el detalle.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+-1=7
+
+### [4] DM
+
+  10628 ms
+
+> Elian se tensa ante tu orden, pero no levanta la cabeza. Sus hombros suben y bajan en espasmos irregulares y el sonido de su respiración es un silbido roto que llena el silencio del granero. No responde a tu pregunta; se limita a encogerse más, alejándose instintivamente de la mano que sostiene el objeto.
+> Pasas el borde de tu ropa sobre la superficie fría, frotando con insistencia, pero el material parece repeler la limpieza o estar demasiado corroído para revelar un patrón claro. Bajo la luz vacilante, el objeto sigue siendo una masa informe y oscura, una irregularidad metálica que no entrega ningún secreto a pesar de tus esfuerzos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  4601 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 533 — 439/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  5721 ms
+
+> "Deja de temblar y mírame a la cara. Ahora."
+> Me inclino hacia Elian, invadiendo su espacio personal para obligarlo a reaccionar.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 4+0=4
+
+### [4] DM
+
+  14197 ms
+
+> Elian se encoge aún más, hundiéndose en sí mismo mientras intentas forzar su mirada. El silbido de su respiración se vuelve errático y agudo, pero el joven se aferra a su posición fetal, cerrando los ojos con fuerza y girando la cabeza hacia el suelo. Tu presencia invasora solo consigue que se tense como una cuerda a punto de romperse, sumido en un terror que parece bloquear cualquier voluntad de obediencia.
+> El silencio del granero se vuelve pesado, interrumpido únicamente por los sollozos ahogados de Elian, quien permanece inmóvil y mudo, negándose a reconocer tu autoridad a pesar de la presión.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  4496 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 534 — 440/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  6365 ms
+
+> "Ya basta de juegos, Elian. No me hagas perder el tiempo."
+> Me alejo un paso para darle aire, pero mantengo la mirada fija en él, tratando de leer sus gestos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  15018 ms
+
+> Al dar ese paso atrás, el espacio que concedes no calma a Elian, pero permite que sus reacciones sean más evidentes. Observas cómo sus dedos no solo se aferran a sus rodillas, sino que arañan la madera del suelo con una desesperación rítmica, casi mecánica. El temblor de sus hombros no es solo miedo al momento presente; hay una rigidez en su cuello y una forma de encogerse que sugiere que espera un golpe que ya conoce, una memoria muscular de sumisión grabada a fuego.
+> Notas un detalle crucial en el ángulo de su cabeza: no evita tu mirada por timidez o terquedad, sino que sus ojos, entreabiertos por un instante, se desplazan frenéticamente hacia la puerta del granero. No tiene miedo de ti, tiene pánico de que alguien más entre y lo encuentre hablando contigo. El terror de Elian es el de quien ha sido advertido con una amenaza específica y letal, y el simple hecho de haber sido interceptado ya lo ha colocado en el centro de ese peligro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  2745 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 535 — 441/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3630 ms
+
+> "No soy quien te va a golpear. Pero necesito saber quién es el que te da tanto miedo."
+> Me agacho para quedar a su altura, manteniendo el espacio pero intentando sonar firme y segura.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 17+0=17
+
+### [4] DM
+
+  18474 ms
+
+> Elian se tensa al escuchar tu voz, pero el tono firme y la posición a su altura parecen romper, aunque sea por un instante, el ciclo de su pánico. Sus ojos dejan de buscar la puerta para fijarse en los tuyos, aunque sus pupilas siguen dilatadas y el temblor de sus manos no cesa. Su respiración es errática, un silbido agudo que escapa por entre sus dientes apretados mientras lucha contra el instinto de encogerse más.
+> —El Vigilante... —susurra con una voz quebrada, casi inaudible—. El Vigilante del Granero no tolera que se hable con extraños. Si sabe que he... que me has visto... no habrá advertencia esta vez.
+> Lanza una mirada fugaz y aterrada hacia la entrada, y el roce de sus uñas contra la madera produce un sonido seco, desesperado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  7476 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.knowledge
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 2 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 536 — 442/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  5888 ms
+
+> "No sé quién es ese Vigilante, pero no me asusta. Dime qué quiere y por qué tienes tanto miedo."
+> Sigo manteniendo mi posición, observando sus gestos para saber si oculta algo más.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 16+2=18
+
+### [4] DM
+
+  14235 ms
+
+> Elian se encoge ante tu declaración, pero hay algo en tu seguridad que parece anclarlo al presente. Al observarlo con atención, notas que su miedo no es solo una reacción al nombre del Vigilante; hay una tensión específica en sus hombros y una forma de proteger instintivamente el costado derecho de su túnica, como si ocultara algo pequeño y valioso bajo la tela, o como si tuviera una herida que intenta esconder.
+> —No es cuestión de asustarse o no... es que él *ve* —balbucea Elian, bajando la voz hasta convertirla en un siseo—. Quiere el orden. Quiere que cada grano y cada alma esté donde debe estar. Si me ha quitado la voz, es porque he empezado a preguntar por lo que falta en los sacos... por el reparto que nunca llega al campamento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  6659 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Elian · npc.knowledge = El Vigilante quiere el orden y que cada grano y alma esté donde debe estar
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → delta 5559: Elian.knowledge = El Vigilante quiere el orden y que cada grano y alma est…
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 537 — 443/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4457 ms
+
+> "¿Qué es exactamente lo que falta en esos sacos?"
+> Me acerco un paso más a él, tratando de divisar qué oculta bajo la túnica.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 19+2=21
+
+### [4] DM
+
+  14582 ms
+
+> Elian retrocede un paso, instintivamente, cuando acortas la distancia, pero el movimiento es torpe y deja que la tela de su túnica se tense sobre el costado derecho. Bajo el tejido, el relieve es inconfundible: no es una herida, sino un objeto pequeño, rectangular y rígido, probablemente un cuaderno o un pliego de pergaminos doblados que presiona contra su piel con desesperación.
+> —No es solo grano... —susurra, mirando nerviosamente hacia los pasillos del granero—. Son los registros. Las cifras que el Vigilante anota en el libro maestro no coinciden con lo que se distribuye en el Paso. Hay un excedente, una cantidad ingente de suministros que simplemente desaparecen de los libros antes de salir por la puerta. Alguien los está desviando, y yo... yo tengo las pruebas de que el reparto es una mentira.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  9953 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Elian · npc.secret_revealed = pruebas de que el reparto es una mentira
+  ✓ creación item: registros del libro maestro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → creada: item registros del libro maestro
+  → delta 5563: Elian.secret_revealed = pruebas de que el reparto es una mentira
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 538 — 444/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  33 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2916 ms
+
+> "Dame eso. Ahora."
+> Intento arrebatarle el objeto oculto bajo la túnica con un movimiento rápido.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 6+2=8
+
+### [4] DM
+
+  15732 ms
+
+> Elian se tensa y, en el momento en que lanzas la mano hacia su costado, reacciona con un espasmo de pánico. Sus reflejos, aunque torpes, son suficientes para encogerse y girar el cuerpo bruscamente, alejando el objeto de tu alcance. El movimiento es errático y desesperado, provocando que el joven tropiece con sus propios pies y termine tambaleándose hacia atrás, aferrando la túnica contra su costado con una fuerza casi agónica.
+> —¡No! —exclama en un susurro ahogado, con los ojos muy abiertos por el miedo—. ¡Si lo pierdo, no tendré nada para demostrarlo! ¡No puedes simplemente quitármelo!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  15309 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 539 — 445/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  33 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  5209 ms
+
+> "No me interesa tu secreto, solo quiero saber qué es."
+> Doy un paso atrás para darle espacio y trato de analizar su reacción para ver si está mintiendo sobre la importancia del objeto.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+2=16
+
+### [4] DM
+
+  12889 ms
+
+> Elian deja de tambalearse, aunque su respiración sigue siendo errática y superficial. Al notar que retrocedes, sus hombros bajan un centímetro, pero no suelta la túnica; sus nudillos están blancos por la presión que ejerce sobre el bulto oculto. Te mira con una mezcla de sospecha y una vulnerabilidad casi infantil, buscando en tu rostro alguna señal de que tu promesa sea sincera.
+> El miedo en sus ojos es genuino, pero hay algo más: una chispa de convicción absoluta. No hay rastro de duda ni de artificio en su pánico; para él, ese objeto no es un simple capricho o una mentira para llamar la atención, sino que realmente posee un valor trascendental que lo ata a su supervivencia o a su identidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  2682 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 540 — 446/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  33 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  7761 ms
+
+> "Suéltame ya. He dicho que te ayudaré, pero no voy a cargar con tu peso mientras intentas esconder algo."
+> Le doy un tirón seco a mi túnica para soltarme de su agarre.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 20+0=20  CRÍTICO
+
+### [4] DM
+
+  25397 ms
+
+> Elian reacciona al tirón con un respingo violento, como si el contacto físico se hubiera roto bruscamente. Sus dedos se abren de golpe, liberando la tela de tu túnica mientras retrocede un paso, tambaleándose. El pánico que nublaba su mirada se disuelve rápidamente, sustituido por una chispa de confianza ciega; tus palabras han calado en él con una fuerza absoluta, borrando cualquier rastro de sospecha.
+> Se queda inmóvil, con los hombros hundidos y la respiración empezando a estabilizarse. Sus manos, ahora libres, se cierran con fuerza sobre el bulto que oculta bajo la túnica, pero ya no lo hace para esconderlo de ti, sino para protegerlo mientras te mira con una gratitud desesperada.
+> —Lo haré... lo soltaré —susurra con la voz quebrada, aunque no se mueve de su sitio, esperando que marques el camino.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  5062 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento elian · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  ✗ PNJ inexistente: elian
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 541 — 447/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  33 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2500 ms
+
+> "Camina. Ahora."
+> Le hago un gesto seco con la mano para que me siga y empiezo a moverme hacia la salida.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+2=11
+
+### [4] DM
+
+  11803 ms
+
+> Elian reacciona al instante, dando un paso apresurado para no perderte de vista. Camina con la cabeza gacha y los hombros encogidos, manteniendo el bulto apretado contra su costado mientras sus pasos cortos y erráticos intentan seguir el ritmo de tu marcha hacia la salida. 
+> A medida que avanzáis, el joven lanza miradas furtivas hacia los alrededores, pero no hay rastro de duda en su rostro; se limita a obedecer, moviéndose como una sombra sumisa que ha depositado toda su voluntad en tu mando.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  1554 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 542 — 448/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  33 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3270 ms
+
+> "Camina más rápido y deja de mirar atrás."
+> Sigo avanzando hacia la salida sin disminuir el paso, manteniendo una distancia corta para vigilar que no intente escaparse o esconder algo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  20859 ms
+
+> Elian da un respingo ante la orden y acelera el paso, casi tropezando con sus propios pies en el esfuerzo por no quedarse atrás. Sus ojos se clavan ahora en el suelo, evitando cualquier contacto visual, mientras el bulto que abraza contra su costado se agita ligeramente con el movimiento brusco de su cuerpo.
+> En el silencio tenso de la marcha, captas un detalle discordante: el joven no solo lleva el bulto apretado, sino que sus dedos se hunden en la tela con una fuerza desesperada, y el roce del objeto contra su ropa produce un tintineo metálico, sutil pero rítmico. Además, notas que el rastro de polvo que deja al caminar no es uniforme; hay pequeñas motas de un residuo blanco y granulado, similar a la cal o a la sal, que se desprenden de los pliegues de su túnica y caen sobre el camino.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  1607 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 543 — 449/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  33 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3423 ms
+
+> "¿Qué llevas ahí que hace tanto ruido?"
+> Me acerco a Elian y trato de echar un vistazo al bulto mientras camino a su lado.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 19+4=23
+
+### [4] DM
+
+  16485 ms
+
+> Elian se tensa violentamente, encogiendo los hombros para intentar ocultar el bulto mientras se aleja instintivamente de tu costado. El movimiento brusco hace que el tintineo metálico sea más evidente, un sonido de piezas pequeñas chocando entre sí, y que una nube de ese polvo blanco se desprenda de la tela, flotando un instante en el aire antes de asentarse sobre el camino.
+> Al asomarte, el ángulo te permite ver un jirón de la tela que envuelve el objeto: no es una manta común, sino una lona gruesa y encerada, manchada de humedad y salitre. A través de una pequeña abertura, vislumbras el brillo opaco de una superficie metálica tallada, grabada con runas que parecen haber sido corroídas por el tiempo, y el borde de lo que parece ser un recipiente cilíndrico, pesado y frío.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  1580 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 544 — 450/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  33 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3458 ms
+
+> "¿Qué escondes ahí, Elian? No parece una manta."
+> Sigo caminando a su lado, pero intento deslizar mi mano hacia el bulto para sentir la superficie del objeto.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  17083 ms
+
+> Elian da un respingo, pero tu movimiento es una sombra imperceptible que lo precede. Tus dedos se deslizan con una precisión quirúrgica bajo la lona encerada, evitando que él note el contacto hasta que ya has palpado la superficie. El metal es gélido, mucho más de lo que sugiere el clima, y la textura de las runas corroídas se siente bajo tu yema como cicatrices profundas en la piedra, vibrando con una frecuencia mínima que eriza el vello de tu brazo.
+> El joven se detiene en seco, con la respiración agitada y los ojos muy abiertos, mirando el lugar donde tu mano ha estado. El bulto sigue ahí, pero la seguridad de su secreto se ha roto. Elian retrocede un paso, abrazando el objeto contra su pecho con desesperación, mientras el polvo blanco que aún flota en el aire comienza a asentarse sobre sus botas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  1818 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 545 — 451/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  33 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4006 ms
+
+> "Ese frío no es normal, Elian. No es metal común."
+> Sigo presionándolo con la mirada, manteniendo mi espacio pero sin darle margen para huir.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 16+2=18
+
+### [4] DM
+
+  23090 ms
+
+> Elian traga saliva, y el movimiento de su garganta es errático. Sus ojos saltan de tu rostro al bulto que oculta, y aunque intenta mantener una postura defensiva, sus hombros se hunden y sus dedos aprietan la lona con una fuerza que delata su pánico. No es el miedo de quien oculta un robo común, sino la angustia de quien carga con algo que lo supera, una mezcla de terror y una lealtad ciega que lo mantiene anclado al sitio a pesar de su deseo evidente de salir corriendo.
+> —No... no sé qué es —balbucea, aunque la rapidez con la que ha intentado cubrir el objeto y la forma en que evita sostenerte la mirada revelan que miente. Sabe exactamente qué tiene entre manos, o al menos sabe que es peligroso, y el hecho de que no haya intentado deshacerse de ello a pesar del frío antinatural sugiere que tiene órdenes estrictas o una razón desesperada para conservarlo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  2029 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 546 — 452/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  33 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3306 ms
+
+> "Deja de mentir. Sabes perfectamente qué es eso y no me gusta que me tomen el pelo."
+> Sujeto el brazo de Elian con fuerza para apartarlo del bulto y quitar la lona.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 17+0=17
+
+### [4] DM
+
+  19028 ms
+
+> Elian suelta un gemido ahogado cuando tus dedos se cierran sobre su brazo, sintiendo la presión irrevocable de tu agarre. El pánico en su rostro se transforma en una rendición absoluta; sus músculos se desploman y deja que lo apartes con una facilidad patética, mientras sus ojos se llenan de lágrimas de pura frustración y miedo. Ya no intenta luchar ni cubrir el bulto, simplemente se encoge sobre sí mismo, temblando violentamente.
+> —¡Está bien, está bien! —estalla en un susurro desesperado, sollozando—. ¡No me mate, por favor! Solo soy el mensajero. El Consejo... el Consejo me dijo que lo llevara al Paso y que no dejara que nadie, absolutamente nadie, viera lo que hay debajo. ¡Me prometieron que me pagarían lo suficiente para sacar a mi familia de aquí!
+> La lona cae al suelo con un ruido seco, revelando el objeto que Elian protegía con tanta angustia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  11509 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Elian · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → delta 5582: Elian affinity 0.0 → -10.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 547 — 453/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  33 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  9009 ms
+
+> "Tú no me vas a matar, pero yo sí podría hacerlo si sigues gritando."
+> Ignoro al mensajero y me inclino para observar el objeto que ha quedado al descubierto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+-1=2
+
+### [4] DM
+
+  46411 ms
+
+> Elian se queda mudo al instante, ahogando un sollozo y apretando los labios con fuerza, aunque sus hombros siguen sacudiéndose por el llanto contenido. Se encoge aún más, convirtiéndose en un bulto tembloroso que evita mirarte a los ojos, absolutamente sometido por la amenaza.
+> Tus ojos recorren el objeto que ha quedado expuesto sobre la tierra. A primera vista, no parece haber nada fuera de lo común; es una masa informe y polvorienta envuelta en telas bastas y desgastadas que no revelan su naturaleza. El material es tosco y el envoltorio está tan sucio que cualquier detalle distintivo queda oculto bajo una capa de mugre y fibras deshilachadas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  5048 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Elian · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → delta 5589: Elian affinity 0.0 → -10.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 548 — 454/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  33 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3672 ms
+
+> "Tú te quedas ahí, muy quieto."
+> Me acerco al bulto y retiro las telas con cuidado para ver qué hay debajo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+-1=3
+
+### [4] DM
+
+  16513 ms
+
+> Elian se queda petrificado, conteniendo el aliento y encogido sobre sí mismo, mientras el silencio del lugar solo es roto por sus espasmos involuntarios. No se atreve siquiera a parpadear, manteniendo la mirada clavada en el suelo, completamente subordinado a tu orden.
+> Al retirar las telas, la mugre y el polvo se levantan en una pequeña nube grisácea. Bajo el envoltorio tosco, solo aparece una masa informe y compacta que no revela ninguna característica reconocible; el material es tan rudo y está tan impregnado de suciedad que, a pesar de tus esfuerzos, el objeto sigue siendo un enigma polvoriento que no entrega ningún detalle sobre su naturaleza o contenido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  3310 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 549 — 455/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  33 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3912 ms
+
+> "Quédate así si no quieres que te rompa los dedos."
+> Sigo examinando el objeto, intentando limpiar la superficie con más cuidado o buscar alguna costura, cierre o marca oculta bajo la mugre.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 11+-1=10
+
+### [4] DM
+
+  14373 ms
+
+> Elian permanece inmóvil, con los hombros hundidos y la respiración contenida en un silencio tenso. Sus dedos tiemblan levemente contra el suelo, pero no se mueve ni un milímetro, sometido al peso de la amenaza.
+> Pasas los dedos con más cautela sobre la superficie del bulto, intentando apartar la costra de polvo y suciedad. Sin embargo, el material es áspero y la mugre parece haberse fundido con la trama del envoltorio, creando una capa endurecida que resiste tus intentos. No logras localizar ninguna costura, cierre ni marca distintiva; el objeto sigue siendo una masa compacta y anónima que no revela su secreto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  3918 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Elian · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → delta 5600: Elian affinity 0.0 → -10.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 550 — 456/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3029 ms
+
+> "No te muevas, Elian. Ni un centímetro."
+> Sigo examinando el bulto, pero esta vez busco alguna irregularidad o sonido al presionarlo con fuerza en distintos puntos.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+-1=18
+
+### [4] DM
+
+  13497 ms
+
+> Al aplicar una presión firme y sistemática sobre la superficie, el bulto cede en un punto específico, revelando una densidad distinta al resto de la masa. Bajo la costra de suciedad, el tacto delata la presencia de algo rígido y metálico que vibra sutilmente al ser presionado, sugiriendo que el contenido no es una sola pieza sólida, sino un conjunto de objetos dispuestos con cuidado.
+> Un ligero clic resuena en el silencio, casi imperceptible, cuando el dedo de Elian presiona un relieve oculto en el lateral. La capa endurecida de mugre se agrieta, dejando ver una pequeña abertura por la que escapa un olor metálico y rancio, como a hierro viejo y cuero húmedo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ PNJ inactivo mencionado actuando: Elian (captured)
+
+### [6] EXTRACTOR
+
+  10981 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 551 — 457/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2489 ms
+
+> "A ver qué guardabas aquí."
+> Me acerco para mirar la abertura y trato de abrir el bulto por completo para ver el contenido.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+-1=2
+
+### [4] DM
+
+  7241 ms
+
+> Al intentar forzar la abertura, los dedos resbalan sobre la superficie grasienta y el mecanismo, que parecía ceder, se encaja con un chasquido seco y metálico. La presión aplicada es errática y el bulto se cierra abruptamente, sellando la pequeña grieta con un golpe sordo que expulsa una nube de polvo rancio hacia el rostro.
+> El objeto vuelve a quedar reducido a una masa informe y sucia, ahora más resistente que antes, como si el intento de apertura hubiera activado algún cierre interno. El silencio regresa al lugar, dejando únicamente el rastro del olor a cuero húmedo impregnado en la piel.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1343 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 552 — 458/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2074 ms
+
+> "Maldita sea."
+> Me limpio el polvo de la cara con el brazo y observo el objeto detenidamente, buscando alguna marca o ranura que haya quedado expuesta tras el chasquido.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+-1=15
+
+### [4] DM
+
+  11955 ms
+
+> Al limpiar el polvo, la luz incide en el ángulo donde el mecanismo se ha bloqueado. Bajo la capa de grasa y suciedad, el chasquido ha desplazado una placa metálica, revelando un pequeño relieve grabado en el lateral: un círculo rodeado por tres espigas que apuntan hacia el centro, similar a un sello de cera o una marca de propiedad.
+> La ranura que antes intentabas forzar ha desaparecido, pero el desplazamiento de la placa ha dejado al descubierto un orificio circular, apenas del tamaño de una moneda, que parece esperar una llave o un perno específico para liberar el cierre interno.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2219 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 553 — 459/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2500 ms
+
+> "¿Un sello? No parece el trabajo de un cerrajero común."
+> Me acerco para observar el grabado más de cerca, intentando recordar si he visto esa marca en algún otro lugar de la frontera.
+> {Historia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Historia: 14+-1=13
+
+### [4] DM
+
+  6894 ms
+
+> El relieve de las tres espigas convergiendo en el círculo te resulta vagamente familiar, pero los recuerdos son borrosos, como un eco de alguna conversación escuchada en una taberna o un documento visto de reojo. Sabes que no es un símbolo artesanal ni una marca de gremio común, pero los detalles específicos de a quién pertenece o qué significa exactamente se resisten a salir a la superficie de tu memoria.
+> El metal del sello permanece frío bajo la luz, y el orificio circular sigue allí, vacío, manteniendo el mecanismo bloqueado mientras el silencio del lugar se vuelve más pesado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1707 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 554 — 460/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2731 ms
+
+> "No me digas que me falta una pieza justo ahora."
+> Paso el dedo por el borde del orificio circular, examinando el metal para ver si hay alguna marca de desgaste o rastro de dónde podría haber estado la llave.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+-1=7
+
+### [4] DM
+
+  20858 ms
+
+> El metal del sello es gélido y se siente imperturbable bajo la yema de tu dedo. Recorres el borde del orificio circular con cuidado, buscando cualquier muesca, rasguño o rastro de fricción que sugiera que la llave ha sido insertada recientemente o que el mecanismo ha sido forzado.
+> Sin embargo, la superficie está pulida y el vacío del agujero es absoluto; no hay ninguna marca de desgaste, ni motas de óxido, ni el más mínimo indicio físico que te oriente sobre la naturaleza o el origen de la pieza faltante. El mecanismo permanece mudo y bloqueado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1309 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 555 — 461/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2651 ms
+
+> "Maldita sea, parece nuevo."
+> Me separo del sello y miro alrededor de la estancia buscando cualquier objeto, mueble o rincón que haya sido movido recientemente.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+-1=7
+
+### [4] DM
+
+  6031 ms
+
+> Tus ojos recorren la estancia, escrutando las sombras y los ángulos de la habitación. El polvo se asienta en capas uniformes sobre las superficies y las telarañas, espesas y grisáceas, cuelgan intactas de las vigas del techo, tendiéndose como velos sobre los rincones.
+> No hay muebles desplazados, ni huellas frescas sobre el suelo, ni ningún objeto que rompa la monotonía del abandono. Todo en la sala parece haber quedado congelado en el tiempo, manteniendo un orden estático y gélido que no ofrece ninguna pista sobre quién estuvo allí por última vez.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  992 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 556 — 462/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2147 ms
+
+> "Demasiado limpio para ser verdad."
+> Me acerco a las esquinas y busco cualquier rastro oculto o compartimentos bajo el polvo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+-1=13
+
+### [4] DM
+
+  7827 ms
+
+> Tus dedos rozan el suelo y las molduras de madera, apartando el polvo acumulado con cuidado. La superficie es áspera y seca, y aunque el lugar parece un mausoleo de quietud, el resultado de tu búsqueda es nulo; no hay palancas ocultas, ni hendiduras sospechosas, ni rastros de que alguien haya intentado esconder algo en los ángulos de la estancia.
+> El silencio de la habitación se vuelve pesado, roto solo por el eco de tu propia respiración. Las sombras en las esquinas permanecen inertes, devolviéndote una vacuidad absoluta que confirma la primera impresión: no hay nada fuera de lugar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1021 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 557 — 463/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2976 ms
+
+> "Nada, pues. Qué pérdida de tiempo."
+> Me levanto del suelo y sacudo el polvo de mi ropa. Miro hacia la puerta para salir de aquí y busco cualquier rastro de movimiento en los pasillos.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 17+4=21
+
+### [4] DM
+
+  9077 ms
+
+> Al ponerte en pie, el silencio del pasillo se fragmenta. A través de la rendija de la puerta, captas el roce rítmico de cuero contra piedra y el sonido sordo de una respiración contenida que no es la tuya. Alguien aguarda justo al otro lado del marco, oculto por el ángulo de la pared, manteniendo una quietud deliberada que delata que no es un habitante casual del lugar.
+> El aire trae consigo un olor metálico y rancio, mezclado con el aroma a tabaco barato. El movimiento es mínimo, apenas el desplazamiento de una sombra que se proyecta sobre el suelo del corredor, indicando que la figura se ha tensado al notar que te mueves hacia la salida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3168 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 558 — 464/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2175 ms
+
+> "No sé quién seas, pero no me gusta que me esperen así."
+> Me pego a la pared y trato de escuchar cualquier detalle adicional antes de salir.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 18+4=22
+
+### [4] DM
+
+  11059 ms
+
+> El silencio se vuelve denso, permitiendo que los sonidos se filtren con una claridad quirúrgica. Tras la madera, el individuo no solo respira, sino que el leve tintineo de unas llaves metálicas choca contra una hebilla de cuero cada vez que desplaza el peso del cuerpo. El ritmo de su respiración es pausado, profesional; no hay rastro de nerviosismo, sino una espera paciente.
+> A través de la rendija, distingues el brillo opaco de una botonadura de latón y el roce de una tela gruesa, posiblemente un uniforme desgastado, que raspa contra la pared exterior. El olor a tabaco se intensifica, revelando que sostiene un cigarro apagado entre los labios, el cual se desplaza levemente mientras el sujeto exhala un suspiro corto y contenido, atento a cualquier vibración del suelo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1928 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 559 — 465/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  31 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4827 ms
+
+> "No te muevas ni un centímetro."
+> Sigo pegada a la pared, conteniendo el aliento mientras intento discernir cuántas llaves lleva encima y si hay alguien más con él.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+4=6
+
+### [4] DM
+
+  5727 ms
+
+> El silencio se mantiene, pero el sonido del metal es confuso y se mezcla con el roce de la ropa. No logras distinguir el número exacto de llaves ni el patrón del manojo, solo el tintineo errático que persiste cada vez que el sujeto se acomoda.
+> El aire sigue cargado de tabaco, pero no percibes ninguna otra respiración ni el eco de pasos adicionales en el exterior. Solo hay un cuerpo allí fuera, cuya presencia se siente como una barrera sólida y paciente contra la madera.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1101 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 560 — 466/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  31 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4880 ms
+
+> "No te muevas ni un centímetro."
+> Sigo pegada a la puerta, intentando captar el ritmo de su respiración para saber si está nervioso o tranquilo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+4=20
+
+### [4] DM
+
+  5773 ms
+
+> El ritmo de la respiración es lento, profundo y rítmico, denotando una calma absoluta, casi profesional. No hay rastro de agitación ni el jadeo del nerviosismo; el hombre está tan tranquilo como si estuviera durmiendo de pie. 
+> A través de la madera, percibes que el peso de su cuerpo se desplaza ligeramente hacia atrás, separándose apenas unos milímetros de la puerta, mientras el tintineo de las llaves cesa abruptamente. Se ha quedado completamente inmóvil, escuchando.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1075 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 561 — 467/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  31 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2360 ms
+
+> Me quedo congelada, conteniendo la respiración para no hacer el más mínimo ruido. {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 9+4=13
+
+### [4] DM
+
+  5265 ms
+
+> El silencio se vuelve denso, casi sólido, mientras el aire queda atrapado en tus pulmones. El Vigilante permanece petrificado, con el oído pegado a la madera, intentando discernir si el sonido que percibió fue una ráfaga de viento o una presencia humana.
+> Tras unos segundos que parecen eternos, el hombre suelta un suspiro corto y nasal. El tintineo de las llaves se reanuda con un ritmo pausado mientras sus pasos comienzan a alejarse lentamente, regresando hacia el centro del pasillo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1131 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 562 — 468/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  31 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3267 ms
+
+> Me pego a la pared y trato de deslizarme hacia la salida aprovechando que el guardia se ha distraído. {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 18+4=22
+
+### [4] DM
+
+  8573 ms
+
+> Te fundes con las sombras del pasillo, convirtiéndote en una extensión de la fría piedra. El Vigilante, convencido de que el silencio ha vuelto a reinar, camina con paso pesado y distraído, su atención centrada en el rítmico chocar de sus llaves y en el cansancio de su propia guardia.
+> Tus botas apenas rozan el suelo, desplazándote como un espectro mientras el hombre te da la espalda. En cuestión de instantes, el aire fresco de la salida golpea tu rostro y el pasillo queda atrás, dejando al guardia sumido en su propia monotonía, sin haber percibido jamás tu presencia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5286 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.location_id
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 563 — 469/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  31 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4097 ms
+
+> "Por fin aire limpio."
+> Me detengo un momento para recuperar el aliento y observo los alrededores para orientarme y ver si hay alguien vigilando la salida.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 14+4=18
+
+### [4] DM
+
+  14570 ms
+
+> El aire nocturno es gélido y huele a tierra húmeda y pino. Te encuentras en un pequeño patio empedrado, flanqueado por muros altos de piedra gris que retienen el frío del invierno. A unos diez metros, una pesada puerta de madera reforzada con hierro marca el límite del recinto, custodiada por dos antorchas que chisporrotean, proyectando sombras alargadas y erráticas sobre el suelo.
+> Tus ojos recorren los tejados y las esquinas oscuras con precisión. No hay nadie apostado directamente en la puerta, ni rastros de centinelas ocultos en las inmediaciones inmediatas. Sin embargo, el silencio es interrumpido por el eco lejano de una campana que tañe en algún punto del asentamiento y el murmullo amortiguado de voces que provienen de más allá de los muros, sugiriendo que, aunque la salida está despejada, el exterior no está vacío.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1733 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 564 — 470/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  31 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4322 ms
+
+> "Demasiado silencio para mi gusto."
+> Me acerco a la puerta con cautela, tratando de no hacer ruido sobre el empedrado, y trato de escuchar qué dicen exactamente esas voces al otro lado.
+> {Sigilo}
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 15+4=19
+  Percepción: 11+4=15
+
+### [4] DM
+
+  8278 ms
+
+> Tus pasos son apenas un susurro sobre la piedra fría, fundiéndote con las sombras que las antorchas proyectan contra los muros grises. Al llegar a la pesada madera de la puerta, pegas el oído al hierro reforzado, filtrando el viento gélido para concentrarte en el murmullo del exterior.
+> Las voces son masculinas y cargadas de irritación. "No puede ser que el Consejo siga reteniendo la tercera parte", gruñe uno con un tono ronco. "El invierno no espera a que los señores del granero terminen sus cuentas; si el reparto no llega mañana, la Gente del Paso empezará a romper puertas". Una segunda voz, más joven y nerviosa, responde en un susurro apresurado: "Baja la voz, idiota, que el Vigilante tiene el oído fino y no queremos acabar en el calabozo antes del alba".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1133 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 565 — 471/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  31 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2219 ms
+
+> "La Gente del Paso, ¿eh?"
+> Me separo de la puerta con cuidado para no hacer ruido y busco una posición desde la que pueda observar a quienes hablan sin ser vista.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 15+4=19
+
+### [4] DM
+
+  9998 ms
+
+> Te deslizas por el pasillo como una exhalación, aprovechando los ángulos muertos de la luz. Te posicionas tras una columna de piedra rugosa que huele a salitre y humedad, dejando apenas una rendija para observar. Desde este punto, el ángulo es perfecto: ves la puerta de madera reforzada y el espacio donde se agrupan los hombres, permaneciendo tú completamente oculta en la penumbra.
+> Fuera, los dos hombres permanecen tensos. El mayor, un tipo de hombros anchos y manos callosas, escupe al suelo con desprecio mientras el joven sigue mirando nerviosamente hacia los pasillos interiores, ajeno a que hay alguien observándolos desde la oscuridad. El viento gélido silba entre las rendijas, arrastrando el eco de sus quejas sobre el reparto insuficiente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1664 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 566 — 472/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  31 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2697 ms
+
+> "¿Reparto insuficiente? Interesante."
+> Me quedo inmóvil tras la columna, escuchando atentamente para ver si mencionan qué es exactamente lo que están repartiendo y quién tiene el control del botín.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 18+4=22
+
+### [4] DM
+
+  10130 ms
+
+> El silencio de la piedra y el viento se vuelven transparentes ante tu atención. El hombre mayor suelta un bufido y baja la voz, aunque el eco del pasillo transporta sus palabras con nitidez hasta tu posición: «El Consejo dice que el grano se ha podrido en los silos bajos, pero yo he visto los sacos que el Vigilante desvía hacia el muelle al anochecer. Nos dejan las migajas mientras ellos aseguran el "fondo de reserva"».
+> El joven asiente frenéticamente, mirando de nuevo hacia el interior del pasillo, justo donde te encuentras, aunque la penumbra sigue siendo tu escudo. «Si el Consejo se entera de que el Vigilante está jugando con el reparto, nos colgarán a todos por cómplices», susurra el chico con la voz quebrada por el miedo. El mayor le lanza una mirada severa y le pone una mano pesada en el hombro para callarlo, mientras ambos vuelven a fijar su vista en la puerta reforzada, esperando una señal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3782 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.knowledge
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 567 — 473/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  31 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1945 ms
+
+> "¿Y cuánto pagan por ese silencio?"
+> Salgo de las sombras caminando lentamente hacia ellos, manteniendo la mano cerca de mi arma.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+2=3  PIFIA
+
+### [4] DM
+
+  27684 ms
+
+> El sonido de tus pasos sobre la piedra seca rompe la tensión del pasillo. Los dos hombres saltan hacia atrás con un sobresalto violento; el joven trastabilla y choca contra la pared, soltando un jadeo ahogado, mientras que el mayor se pone delante de él, encogiendo los hombros y apretando la mandíbula en un gesto defensivo. Sus ojos se clavan en tu mano, que reposa peligrosamente cerca del arma, y el miedo en sus rostros se transforma rápidamente en una hostilidad reactiva.
+> —¿Quién demonios eres tú y qué haces escuchando conversaciones ajenas? —espeta el hombre mayor, con la voz ronca y cargada de sospecha—. Si vienes a pedir una parte del botín o a vendernos al Consejo, puedes darte la vuelta ahora mismo antes de que decidamos que eres un problema que hay que eliminar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2134 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 568 — 474/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  31 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  6633 ms
+
+> "No me interesa vuestro botín, ni el Consejo sabe que existo."
+> Doy un paso adelante, manteniendo la calma pero sin alejar la mano de mi arma.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 7+0=7
+
+### [4] DM
+
+  11426 ms
+
+> El hombre mayor no retrocede, pero su mandíbula se tensa y un ligero temblor recorre sus hombros al ver que no te amedrentas. El joven, aún apoyado contra la pared, te mira con los ojos muy abiertos, alternando la vista entre tu rostro y la empuñadura de tu arma, pero es el mayor quien mantiene la palabra, aunque su tono ya no es tan tajante.
+> —Palabras baratas —gruñe, aunque el brillo de la hostilidad en sus ojos se ha tornado en una cautela tensa—. El Consejo siempre sabe más de lo que creemos y los forasteros suelen traer problemas que no podemos pagar. No me importa quién seas, pero si no quieres que esto termine mal, deja de jugar al gato y al ratón.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1125 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 569 — 475/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  31 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  6054 ms
+
+> "No juego a nada. Solo busco respuestas y un lugar donde no me miren como a una plaga."
+> Me cruzo de brazos y lo sostengo la mirada, intentando descifrar qué es exactamente lo que tanto temen del Consejo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+2=9
+
+### [4] DM
+
+  9899 ms
+
+> El hombre mayor sostiene tu mirada, pero sus pupilas se dilatan ligeramente y desvía la vista hacia el joven antes de volver a ti. Su postura sigue siendo rígida, como una cuerda a punto de romperse, y aunque sus palabras intentan mantener una fachada de autoridad, hay un rastro de cansancio en las ojeras profundas que marcan su rostro.
+> El joven, al notar el silencio, se despega lentamente de la pared y lanza una mirada nerviosa hacia la salida, como si esperara que alguien apareciera en cualquier momento. El ambiente en la estancia se vuelve pesado, cargado con el olor a grano viejo y humedad, mientras el mayor aprieta los labios, guardándose cualquier rastro de duda o miedo tras una máscara de severidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  981 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 570 — 476/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  31 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2691 ms
+
+> "Parece que el chico tiene prisa por irse. ¿Qué es lo que os asusta tanto?"
+> Me acerco un paso hacia el joven, tratando de bloquearle ligeramente el camino a la salida.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+2=9
+
+### [4] DM
+
+  10297 ms
+
+> El hombre mayor frunce el ceño y endurece la mandíbula, recuperando la compostura mientras su mirada se clava en ti con una severidad renovada. El joven, al verse bloqueado, da un respingo y retrocede un paso, chocando sus espaldas contra la madera fría de la puerta; sus manos tiemblan ligeramente y evita el contacto visual, mirando fijamente un punto indeterminado del suelo.
+> —Ninguno de nosotros tiene miedo —responde el mayor con voz seca y monocorde, aunque el tono suena forzado—. Simplemente tenemos tareas que atender y el tiempo es un lujo que no nos pertenece. No confundáis la diligencia con el temor, forastero.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1129 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 571 — 477/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  31 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2859 ms
+
+> "Tus palabras dicen que no tenéis miedo, pero el chico no puede ni mirarme a la cara."
+> Sigo observando al joven mientras doy un paso hacia el hombre mayor para presionarlo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 18+2=20
+
+### [4] DM
+
+  10055 ms
+
+> El hombre mayor no retrocede ni un milímetro cuando acortas la distancia, pero el músculo de su mandíbula se tensa violentamente. El joven, al sentir tu mirada fija, encoge los hombros y emite un pequeño sonido ahogado, casi un sollozo reprimido, mientras sus dedos se clavan en la madera de la puerta con desesperación.
+> Te percatas de que la severidad del anciano no es una muestra de autoridad natural, sino una máscara rígida que sostiene con esfuerzo. Hay una contradicción evidente en su postura: aunque sus palabras niegan el miedo, sus pupilas dilatadas y la forma en que sus dedos tamborilean imperceptiblemente contra su muslo delatan una ansiedad punzante. No temen a tu presencia, sino a lo que tú representas o a lo que podrías descubrir si te quedas demasiado tiempo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6949 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 572 — 478/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  31 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2679 ms
+
+> "No soy una amenaza, pero tampoco soy ciega. ¿A qué le tienen tanto miedo?"
+> Me acerco un paso más al joven, tratando de analizar su reacción y buscar cualquier señal de lo que ocultan.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+2=3  PIFIA
+
+### [4] DM
+
+  12079 ms
+
+> El joven, al sentir tu proximidad, reacciona con un espasmo brusco. En su torpeza, se aparta con un movimiento errático que hace que su hombro golpee el marco de la puerta, provocando que un pequeño objeto metálico —quizás una llave o un amuleto— resbale de su bolsillo y caiga al suelo con un tintineo seco. El sonido parece un trueno en el silencio del lugar, y el chico se queda paralizado, mirando el objeto caído con puro terror, como si hubiera cometido un pecado imperdonable.
+> El anciano aprovecha el instante de distracción para interponerse entre tú y el muchacho, bloqueando tu línea de visión con un movimiento rápido y protector. Sus ojos, antes ansiosos, ahora chispean con una irritación fría.
+> —No hay nada que analizar, forastera. Solo hay un joven asustado y un hombre que desea que recuperes el camino antes de que la luz se apague.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5131 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: objeto metálico
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item objeto metálico
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 573 — 479/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1738 ms
+
+> "Quítate de en medio, viejo."
+> Intento esquivarlo rápidamente para alcanzar el objeto del suelo antes de que él pueda reaccionar.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 10+2=12
+
+### [4] DM
+
+  12419 ms
+
+> El anciano, aunque lento de piernas, reacciona con la terquedad de quien protege lo único que le queda. Cuando intentas deslizarte hacia el objeto, su cuerpo se desplaza torpemente pero con firmeza, cerrando el hueco justo a tiempo. Tu movimiento encuentra el obstáculo de su hombro y el roce de su ropa basta para desviar tu trayectoria, dejándote fuera del alcance del metal.
+> El objeto permanece allí, brillando débilmente sobre la madera polvorienta, mientras el anciano recupera el equilibrio. Se planta firme, con la respiración agitada y el rostro endurecido por una determinación amarga.
+> —He dicho que te marches —mascula, sin apartar la mirada de tus ojos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  50049 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 574 — 480/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4292 ms
+
+> "No me iré sin saber qué es eso."
+> Me quedo plantada frente a él, sin retroceder, y trato de leer su expresión para ver si su terquedad es miedo o simple orgullo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 11+2=13
+
+### [4] DM
+
+  13450 ms
+
+> El anciano sostiene la mirada, pero sus ojos no reflejan el pánico de quien oculta un secreto peligroso ni la arrogancia de un hombre orgulloso. Hay una fatiga profunda en el pliegue de sus párpados y una rigidez en el mentón que delata una terquedad nacida de la necesidad. Su postura es la de alguien que no lucha por el valor del objeto, sino por el derecho a poseer algo propio en un mundo que parece habérselo quitado todo.
+> —No es nada que alguien como tú pueda comprender —responde con voz rasposa, aunque el ligero temblor de sus manos, que ahora aprietan el borde de la mesa, traiciona la seguridad de sus palabras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1198 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 575 — 481/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3781 ms
+
+> "Todos comprendemos el valor de lo que es nuestro, anciano. No busco humillarte, solo saber qué es lo que te hace aferrarte a ello con tanta fuerza."
+> Me inclino hacia delante, buscando captar cualquier detalle en su reacción.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+2=12
+
+### [4] DM
+
+  15679 ms
+
+> El anciano no aparta la vista, pero que el resultado de tu observación sea mediocre te deja con una sensación de ambigüedad. Notas que su resistencia no nace de una codicia material ni de un miedo concreto a ti, sino de una especie de lealtad silenciosa o una promesa antigua que sigue pesando sobre sus hombros. Sus dedos siguen blancos por la presión sobre la madera, pero no hay rastro de mentira evidente en su expresión, solo una barrera de cansancio infranqueable.
+> —Hay cosas que no se miden en monedas ni en utilidad —murmura, y por un instante, su mirada se pierde en algún punto detrás de ti, como si estuviera viendo un paisaje que ya no existe—. Algunos llamamos a eso dignidad. Otros, simplemente, supervivencia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2662 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 576 — 482/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3186 ms
+
+> "Dignidad es una palabra bonita, pero no llena el estómago ni paga el techo."
+> Me inclino hacia delante, tratando de recuperar el contacto visual.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 16+0=16
+
+### [4] DM
+
+  25055 ms
+
+> El anciano parpadea, regresando al presente. El peso de tus palabras parece encontrar una grieta en su armadura de cansancio; el aire entre ambos se vuelve denso, cargado con la verdad cruda de la necesidad que él conoce demasiado bien. Sus nudillos, antes blancos, comienzan a relajarse lentamente sobre la superficie de madera, aunque no retira la mano por completo.
+> —Tienes razón en que el hambre no entiende de palabras —admite con un suspiro que suena a rendición—. Pero hay promesas que, si se rompen, dejan un vacío más profundo que cualquier estómago vacío.
+> Ladea la cabeza, evaluándote con una chispa de respeto recién nacida en sus ojos nublados.
+> —Dime qué es lo que realmente buscas. No me pidas que traicione mi palabra, pero quizás... haya una forma de que ambos conservemos la dignidad y el techo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3579 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Cebrián Poyo · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5676: Cebrián Poyo affinity 0.0 → 2.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 577 — 483/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4705 ms
+
+> "No busco que traiciones a nadie, solo busco seguridad y que no me falte el pan."
+> Me inclino hacia adelante, bajando la voz para que nadie más escuche.
+> "Dime qué puedo hacer por ti que sea más valioso que esa promesa, y llegaremos a un acuerdo."
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 12+0=12
+
+### [4] DM
+
+  14134 ms
+
+> El anciano mantiene la mirada, procesando la oferta mientras el silencio se prolonga. Sus dedos tamborilean una vez sobre la madera, un gesto mecánico de duda, antes de que termine por apartar la mano y se recueste en su asiento. El respeto en sus ojos persiste, pero la resolución de quien ha gestionado la escasez durante décadas vuelve a endurecer sus facciones.
+> —La seguridad no se compra con favores rápidos, y el pan es un recurso finito que ya tiene dueño —responde en un tono seco, aunque ya no hostil—. No hay nada que puedas ofrecerme ahora mismo que pese más que el orden de este lugar. Vuelve a preguntarme cuando tengas algo tangible entre las manos, o cuando el hambre te haya hecho más creativo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4485 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento El Vigilante del Granero · bribe_offered
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5681: El Vigilante del Granero affinity 0.0 → -4.0  (mid)
+     Incómodo. Rechaza pero no lo convierte en un asunto personal. Camb
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -4.0 (neutral), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 578 — 484/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -4.0 (neutral), 0 hechos conocidos
+  32 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2138 ms
+
+> "Lo tangible suele estar enterrado o escondido, y yo sé dónde mirar."
+> Me levanto lentamente y busco con la mirada cualquier mapa o indicación sobre los alrededores que haya en la estancia.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 18+4=22
+
+### [4] DM
+
+  13213 ms
+
+> Tus ojos recorren la estancia, filtrando el polvo que flota en la luz tenue hasta detenerse en la pared lateral. Junto a un estante de libros gastados, un trozo de pergamino amarillento está clavado a la madera con una daga oxidada; es un croquis tosco de los alrededores, donde el trazado del río y los límites del Granero están marcados con tinta desvaída. Un círculo rojo, casi borrado por el tiempo, señala un punto específico en el bosque colindante, lejos de las rutas habituales de patrulla.
+> El anciano observa tu mirada, siguiendo la línea de tu visión hacia el mapa. No hace amago de cubrirlo ni de impedirte verlo, pero una pequeña mueca de curiosidad curva la comisura de sus labios mientras se mantiene inmóvil en su asiento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  24968 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: croquis de los alrededores
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item croquis de los alrededores
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 579 — 485/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -4.0 (neutral), 0 hechos conocidos
+  33 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3872 ms
+
+> "¿Qué hay en ese punto rojo?"
+> Me acerco al mapa para examinar el croquis con más detalle.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+-1=1
+
+### [4] DM
+
+  108212 ms
+
+> Te acercas al pergamino, pero la distancia y la mala iluminación juegan en tu contra. Al intentar discernir los trazos, el polvo acumulado sobre la madera parece nublar la vista y la tinta desvaída se funde con las manchas de humedad del papel. No logras distinguir ninguna anotación, símbolo o nombre que explique la naturaleza de aquel círculo rojo; para ti, es solo una mancha de pigmento seco sobre un dibujo impreciso.
+> El anciano deja escapar un suspiro corto, casi un silbido, mientras observa tu frustración.
+> —A veces, lo que el ojo busca con ansia es precisamente lo que el tiempo se encarga de borrar —dice con voz rasposa, sin moverse de su silla.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1187 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 580 — 486/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -4.0 (neutral), 0 hechos conocidos
+  33 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3119 ms
+
+> "El tiempo borra la tinta, pero no el rastro de quien lo escribió."
+> Soplo el polvo del pergamino con cuidado y trato de examinar la textura del papel y el tipo de pigmento usado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+-1=3
+
+### [4] DM
+
+  23025 ms
+
+> El polvo vuela en una nube grisácea que te hace arder la nariz y te obliga a parpadear, pero al despejarse la superficie, el resultado es el mismo. El papel es rugoso, amarillento y se siente quebradizo bajo la mirada; el pigmento rojo es una costra seca que no revela nada sobre su origen ni su técnica. No hay relieves, ni rastros de pluma, ni una marca que te permita diferenciar el trazo de una simple mancha de humedad teñida.
+> El anciano inclina la cabeza, observando el rastro de polvo que aún flota en el aire entre vosotros.
+> —El rastro se ha vuelto silencio, joven. Aquí solo queda el vacío que deja lo olvidado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1473 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 581 — 487/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -4.0 (neutral), 0 hechos conocidos
+  33 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2997 ms
+
+> "El silencio no me sirve para pagar mis cuentas."
+> Guardo el papel con cuidado y miro fijamente al anciano, buscando cualquier gesto que me indique que sabe más de lo que dice.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+2=15
+
+### [4] DM
+
+  22401 ms
+
+> El anciano permanece inmóvil, con las manos hundidas en los pliegues de su túnica raída. Sus ojos, nublados por las cataratas pero atentos, no esquivan tu mirada; sin embargo, hay una rigidez sutil en la comisura de sus labios y un leve movimiento en sus dedos que delata una tensión contenida. No es la actitud de quien ignora la verdad, sino la de quien ha aprendido a guardar silencio para sobrevivir al peso de ella.
+> —Las cuentas se pagan con oro o con sangre, y ninguna de las dos cosas crece en el polvo —responde con una voz que suena a piedra rozando piedra, manteniendo una expresión imperturbable que oculta cualquier rastro de complicidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2885 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 582 — 488/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -4.0 (neutral), 0 hechos conocidos
+  33 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4364 ms
+
+> "Tus metáforas no llenan el estómago ni pagan mis deudas. Deja de jugar a los enigmas y dime quién tiene el oro."
+> Me inclino hacia él, invadiendo su espacio personal para presionarlo.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 8+0=8
+
+### [4] DM
+
+  28303 ms
+
+> El anciano no retrocede ni un milímetro a pesar de tu proximidad; se mantiene anclado al suelo como una raíz vieja y seca. Sus párpados caen levemente y una pequeña sonrisa, gélida y carente de humor, se dibuja en su rostro mientras el aire entre ambos se vuelve pesado.
+> —El hambre te ha vuelto impaciente, joven, pero la impaciencia es un lujo que no puedes permitirte aquí —dice con una calma imperturbable, sin que su voz tiemble lo más mínimo—. Si crees que un gesto brusco abrirá los bolsillos de quienes mandan, es que no conoces el peso de este polvo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3395 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento El Vigilante del Granero · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5711: El Vigilante del Granero affinity -4.0 → -14.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 583 — 489/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 0 hechos conocidos
+  33 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3021 ms
+
+> "No me importa el peso del polvo, sino el peso de mi bolsa."
+> Me inclino hacia él, tratando de leer en su mirada si sabe exactamente quién controla el dinero en este lugar.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+2=10
+
+### [4] DM
+
+  12625 ms
+
+> El anciano mantiene la mirada fija, sus ojos como dos piedras gastadas que no revelan ni una pizca de duda ni un rastro de nerviosismo. No hay un parpadeo traicionero ni un gesto de vacilación que sugiera que esté ocultando el nombre de un patrón o el lugar de un tesoro; simplemente te observa con una indiferencia gélida, como quien mira a un insecto que zumba demasiado cerca de su oído.
+> —Tu bolsa está vacía, y el hambre es un maestro que no acepta pagos aplazados —responde, manteniendo esa sonrisa mínima y cruel mientras se cruza de brazos, cerrando cualquier espacio de confianza entre ambos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1031 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 584 — 490/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 0 hechos conocidos
+  33 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  17973 ms
+
+> "No me gustan los maestros que hablan demasiado."
+> Me inclino hacia él, invadiendo su espacio personal para intentar intimidarlo.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 6+0=6
+
+### [4] DM
+
+  11335 ms
+
+> El anciano ni siquiera retrocede cuando invades su espacio. Permanece inmóvil, como una raíz vieja y profunda que no se mueve ante el viento, y el olor a grano rancio y polvo que emana de sus ropas te envuelve. Sus ojos no se apartan de los tuyos, y esa sonrisa gélida se ensancha apenas un milímetro, transformándose en una expresión de genuina diversión ante tu intento de dominio.
+> —La juventud siempre confunde el ruido con la fuerza —suelta con una voz seca que suena a pergamino rasgado—. Puedes inclinarte todo lo que quieras, pero sigues siendo un estómago vacío frente a un hombre que posee la llave del silo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1017 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 585 — 491/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 0 hechos conocidos
+  33 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  10757 ms
+
+> "No me impresiona tu silo, viejo. Pero me interesa saber qué es lo que guardas ahí que te hace sentir tan intocable."
+> Me aparto un paso para dejar de invadir su espacio, pero mantengo la mirada fija en él.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+2=16
+
+### [4] DM
+
+  12850 ms
+
+> El anciano suelta una risa corta y seca, un sonido que recuerda al crujido de hojas muertas bajo la bota. No se mueve, pero el brillo en sus ojos cambia; ya no es solo diversión, sino una fría satisfacción al notar que has cedido el espacio físico, aunque no la intensidad de la mirada.
+> —Intocable no es la palabra. Yo soy el equilibrio —responde, entornando los párpados—. El silo no guarda solo grano, guarda la diferencia entre que este lugar sobreviva al invierno o se convierta en un cementerio de madera y hambre.
+> Mientras habla, notas una rigidez calculada en su postura. No es el miedo de quien oculta un secreto, sino la arrogancia de quien sabe que posee la única moneda de cambio que importa en este lugar. Su seguridad no nace de la fuerza bruta, sino de la dependencia absoluta que los demás tienen de su gestión.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9782 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 586 — 492/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 0 hechos conocidos
+  33 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2698 ms
+
+> "El equilibrio suele ser una palabra muy cómoda para quien tiene la llave del almacén."
+> Me cruzo de brazos y lo observo con detenimiento, buscando cualquier grieta en esa seguridad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+2=19
+
+### [4] DM
+
+  8747 ms
+
+> El anciano no parpadea, pero el músculo de su mandíbula se tensa imperceptiblemente ante el comentario. A pesar de su fachada de roca, el escrutinio revela que su seguridad no es monolítica; hay una urgencia contenida en la forma en que sus dedos rozan el borde de su túnica y en la rapidez con la que sus ojos recorren el perímetro del silo antes de volver a fijarse en ti.
+> No hay miedo a una amenaza física, sino una vigilancia obsesiva. Notas que su arrogancia actúa como un muro deliberado, diseñado para distraer y desalentar cualquier pregunta sobre la cantidad real de grano que queda. Su postura es la de un hombre que sostiene una presa a punto de romperse y que ha decidido que la única forma de evitar el pánico es proyectando una omnipotencia absoluta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1834 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 587 — 493/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 0 hechos conocidos
+  33 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2746 ms
+
+> "Parece que tienes más prisa de la que quieres admitir, viejo."
+> Me acerco un paso más, intentando vislumbrar el fondo del silo por encima de su hombro.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+2=3  PIFIA
+
+### [4] DM
+
+  5879 ms
+
+> El anciano se desplaza con una rapidez inesperada, interponiéndose físicamente entre tú y la apertura del silo. El movimiento es brusco, casi torpe, y el roce de su túnica contra la piedra suena como un látigo. Te lanza una mirada gélida, cargada de un desprecio que parece genuino, mientras endereza la espalda para recuperar su estatura.
+> —La insolencia es el refugio de quienes no tienen nada que aportar, forastero —espeta con una voz que ahora suena metálica y cortante—. Mi prisa es la de quien mantiene el orden mientras otros solo saben observar y juzgar. Aléjate del grano si no quieres que tu estancia aquí sea aún más breve.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2607 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 588 — 494/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 0 hechos conocidos
+  33 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3377 ms
+
+> "No me interesa tu grano, solo lo que intentas ocultar con tanta prisa."
+> Doy un paso atrás para dejar de invadir su espacio, pero mantengo la vista fija en él, analizando su lenguaje corporal.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+2=6
+
+### [4] DM
+
+  4934 ms
+
+> El anciano no parpadea ante tu retroceso, manteniendo el cuerpo tenso y los hombros rígidos como una pared de piedra. Su expresión se congela en una máscara de severidad, y aunque sus ojos siguen clavados en los tuyos, sus dedos se cierran con fuerza sobre la tela de su túnica, apretándola contra su costado.
+> —Ocultar es una palabra para los culpables; yo solo protejo lo que es sagrado para este lugar —responde con un tono seco, sin dejar espacio a la réplica. Se mantiene firme, bloqueando la entrada al silo, mientras el silencio del lugar se vuelve pesado, interrumpido solo por el eco sordo de su propia respiración.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1931 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 589 — 495/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 0 hechos conocidos
+  33 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  4866 ms
+
+> "Lo sagrado suele estar muy bien guardado, pero lo que es mío no es un secreto."
+> Me cruzo de brazos y lo miro fijamente, tratando de leer si su terquedad es fe o miedo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+2=15
+
+### [4] DM
+
+  6011 ms
+
+> El anciano no desvía la mirada, pero el esfuerzo por mantener esa fachada de piedra revela una grieta. Al sostenerle la vista, notas que el temblor de sus dedos sobre la túnica no es producto de la ira, sino de una tensión contenida; sus ojos, aunque severos, se desvían un instante hacia el interior del silo antes de volver a ti, con una rapidez que delata una vigilancia ansiosa.
+> No hay el fervor ciego de un creyente en su postura, sino la rigidez de quien carga con una responsabilidad que le sobrepasa. Su terquedad no nace de una convicción espiritual inamovible, sino de un miedo palpable a que algo —o alguien— descubra que lo que protege no está tan seguro como pretende.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2245 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 590 — 496/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 0 hechos conocidos
+  33 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2606 ms
+
+> "Pareces más asustado que convencido, viejo. ¿Qué es lo que realmente guardas ahí dentro?"
+> Me acerco un paso hacia él, tratando de bloquearle la vista al silo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 16+2=18
+
+### [4] DM
+
+  12681 ms
+
+> El anciano retrocede un paso instintivamente, chocando sus talones contra el umbral del silo. Al quedar bloqueada su línea de visión hacia el interior, su respiración se vuelve errática y el temblor de sus manos se intensifica, transformando su rigidez en una fragilidad evidente. Sus ojos se clavan en los tuyos, pero ya no hay piedra en su mirada, sino el pánico de quien ha sido desnudado en medio de una plaza.
+> —No sabes dónde te metes, forastero —susurra con una voz que se quiebra, perdiendo toda la autoridad previa—. Hay cosas que es mejor dejar en la oscuridad del grano. Si el Consejo supiera que alguien hace estas preguntas... si supieran que el sello flaquea...
+> Lanza una mirada fugaz y desesperada hacia los alrededores, asegurándose de que nadie haya escuchado su confesión, antes de volver a encogerse sobre sí mismo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3144 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta El Vigilante del Granero · npc.knowledge = Isolde sospecha que guarda algo en el silo y sabe que el sello flaquea
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5741: El Vigilante del Granero.knowledge = Isolde sospecha que guarda algo en el silo y sabe que el…
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 1 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 591 — 497/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 1 hechos conocidos
+  33 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2570 ms
+
+> "¿Qué sello? ¿Qué es lo que flaquea exactamente?"
+> Me acerco un paso más hacia él, bajando la voz para que solo él me escuche, pero manteniendo una postura firme.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+2=16
+
+### [4] DM
+
+  5571 ms
+
+> El anciano se encoge aún más, como si tu cercanía fuera un peso físico que lo aplastara contra la madera del silo. Sus ojos saltan de tu rostro a los alrededores una vez más, y notas que el sudor frío le perla la frente a pesar del viento fresco. No es solo miedo al Consejo; hay una urgencia febril en sus gestos, una especie de terror supersticioso que lo hace estremecerse cuando mencionas la palabra "sello".
+> —El sello de la Raíz... —balbucea, bajando el tono hasta convertirlo en un siseo apenas audible—. Lo que mantiene el hambre a raya y la tierra despierta. Si el sello flaquea, el grano no es lo único que se pudre desde abajo. No preguntes más, por los dioses, no preguntes más o nos enterrarán a todos antes de que el invierno llegue.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1294 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Raíz
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 592 — 498/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -14.0 (cold), 1 hechos conocidos
+  33 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1495 ms
+
+> "¿Qué es exactamente lo que se pudre desde abajo?"
+> Le sujeto el brazo con firmeza para que no se aleje, obligándolo a mirarme a los ojos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 8+0=8
+
+### [4] DM
+
+  9075 ms
+
+> El anciano intenta zafarse de tu agarre, pero su fuerza es insignificante comparada con la tuya. Se queda rígido, con los músculos del brazo tensos bajo tu presión y la mirada perdida en algún punto detrás de ti, evitando el contacto visual. El pánico ha sustituido a la urgencia; ahora hay un vacío frío en sus ojos mientras respira con dificultad.
+> —¡Suéltame! —chilló en un susurro agónico, encogiéndose mientras intenta retraer el brazo—. ¡No lo entiendes! ¡No lo entiendes! No hay palabras para ello, solo el hambre y el silencio. ¡Déjame ir antes de que nos escuchen!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4198 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento El Vigilante del Granero · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5745: El Vigilante del Granero affinity -14.0 → -24.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 593 — 499/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos conocidos
+  33 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1846 ms
+
+> "Me importa muy poco quién nos escuche si no me das una respuesta clara."
+> Aprieto el agarre con más fuerza, obligándolo a mirarme a la cara.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 3+0=3
+
+### [4] DM
+
+  6522 ms
+
+> El anciano cierra los ojos con fuerza, apretando los dientes mientras el dolor del agarre se intensifica. A pesar de la presión, su cuerpo no cede al miedo que esperabas; en su lugar, una especie de resignación gélida se apodera de él. Se queda inmóvil, como una piedra, dejando que su brazo quede reducido a un objeto inerte entre tus dedos.
+> —Haz lo que quieras —masca entre dientes, con la voz quebrada pero desprovista de voluntad de cooperar—. El silencio es más fuerte que tu mano. Si quieres respuestas, búscalas en los vientres vacíos del camino, porque yo ya no tengo nada que darte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1803 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Cebrián Poyo · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5750: Cebrián Poyo affinity -24.0 → -34.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 594 — 500/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2766 ms
+
+> "El silencio no me sirve para pagar mis cuentas, viejo."
+> Suelto su brazo con un empujón brusco y busco entre sus ropajes o en sus pertenencias más cercanas cualquier papel, mapa o moneda.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+-1=2
+
+### [4] DM
+
+  6164 ms
+
+> El anciano se tambalea hacia atrás con el empujón, soltando un quejido ahogado mientras intenta recuperar el equilibrio sobre sus piernas temblorosas. Se encoge sobre sí mismo, observando con una mirada vacía y gélida cómo registras sus harapos.
+> Tus manos rebuscan entre la tela basta y gastada de su túnica, pero no encuentras nada más que el tacto áspero de la lana y el olor a polvo y humedad. Sus bolsillos están tan vacíos como sus promesas; no hay monedas que tintineen, ni trozos de pergamino ocultos, solo el vacío absoluto de quien ya lo ha perdido todo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1061 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 595 — 501/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1768 ms
+
+> "Vaya pérdida de tiempo."
+> Me aparto del anciano con un gesto de asco y lo miro fijamente a los ojos, buscando cualquier rastro de lucidez o engaño.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+2=19
+
+### [4] DM
+
+  8240 ms
+
+> El anciano permanece encogido, con la respiración errática y el cuerpo tembloroso, pero al sostenerle la mirada, notas algo que rompe la fachada de senilidad. No hay confusión en sus pupilas ni la niebla del olvido; hay una atención gélida y calculadora. Sus ojos no reflejan miedo, sino una paciencia mineral, la de quien ha esperado mucho tiempo y sabe que el tiempo es su única ventaja.
+> Aunque sus labios tiemblan, no es por el frío ni por el empujón. Hay una rigidez deliberada en su mandíbula y una chispa de desprecio que se filtra a través de su mirada vacía. No te está ocultando un objeto, pero oculta una verdad: el hombre que tienes delante es plenamente consciente de cada uno de tus movimientos y juzga tu impaciencia con una frialdad absoluta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  918 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 596 — 502/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1642 ms
+
+> "Deja de jugar al viejo decrépito. Sé que me estás escuchando perfectamente."
+> Me inclino hacia él, invadiendo su espacio personal para dejarle claro que no me intimida su juego.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 10+0=10
+
+### [4] DM
+
+  6217 ms
+
+> El anciano no retrocede ni parpadea ante tu proximidad. Sus pupilas permanecen fijas, gélidas, mientras el temblor de sus manos cesa abruptamente, revelando una quietud antinatural. Una pequeña y amarga sonrisa curva la comisura de sus labios, una expresión que no busca agradar, sino subrayar la inutilidad de tu gesto.
+> —La impaciencia es el ruido de los que no saben esperar —susurra con una voz que ha perdido toda fragilidad, transformándose en un hilo seco y cortante—. Me hablas de juegos, muchacho, pero tú solo eres una pieza que se mueve rápido porque no sabe hacia dónde va.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  952 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 597 — 503/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1383 ms
+
+> "No me interesan tus acertijos, solo la verdad."
+> Me separo un paso y lo observo con detenimiento, buscando cualquier señal de que esté fingiendo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 18+2=20
+
+### [4] DM
+
+  4650 ms
+
+> Al distanciarte, el aire entre vosotros parece espesarse. Bajo la luz vacilante, notas que la quietud del anciano no es natural; no hay el balanceo rítmico de la respiración ni el micro-movimiento de quien lucha contra la edad. Sus ojos no se enfocan en tu rostro, sino que parecen mirar a través de ti, como si fueras una transparencia.
+> En el pliegue de su túnica, oculto parcialmente por la manga, asoma un anillo de hierro frío con una runa grabada que vibra débilmente. No está fingiendo fragilidad por debilidad, sino que el temblor anterior era una máscara deliberada, una herramienta para inducir lástima o desprecio. Ahora que ha dejado caer la fachada, su postura es la de alguien que posee una autoridad absoluta sobre el espacio que ocupa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1702 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: anillo de hierro frío
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item anillo de hierro frío
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 598 — 504/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos conocidos
+  33 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1532 ms
+
+> "Deja de jugar conmigo. ¿Qué es ese anillo?"
+> Doy un paso atrás para recuperar distancia y observo el anillo con atención.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+4=5  PIFIA
+
+### [4] DM
+
+  6607 ms
+
+> Al retroceder, el talón choca contra una piedra suelta que te hace perder el equilibrio un instante, obligándote a recuperar la postura con torpeza. En el breve lapso de confusión, el anillo parece emitir un destello cegador que te obliga a parpadear; cuando recuperas la vista, la runa ha dejado de vibrar y el objeto parece haberse fundido con la sombra de la tela, volviéndose imposible de distinguir.
+> El anciano no se mueve, pero una comisura de sus labios se eleva en un gesto gélido. Su voz suena ahora profunda, despojada de cualquier rastro de fragilidad:
+> —La curiosidad es un lujo que no te has ganado, forastero. Y la distancia que buscas es insuficiente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  968 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 599 — 505/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos conocidos
+  33 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1398 ms
+
+> "No soy ninguna forastera que acepte lecciones de alguien que se esconde tras trucos de luz."
+> Me pongo en guardia y trato de analizar el entorno para buscar una vía de escape rápida.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 17+4=21
+
+### [4] DM
+
+  3514 ms
+
+> El anciano permanece inmóvil, pero sus ojos se entornan ante el desafío, manteniendo esa expresión de superioridad gélida mientras el silencio se espesa a su alrededor. No hace ningún movimiento agresivo, pero su presencia parece llenar el espacio, convirtiendo la distancia entre ambos en un terreno tenso y cargado.
+> Al escanear el entorno, notas que la estructura donde se encuentran tiene una salida lateral oculta por unas pesadas cortinas de arpillera que se agitan levemente con la brisa. A tu derecha, el suelo desciende en una rampa de piedra desgastada que conduce a un nivel inferior, probablemente un sótano o almacén, donde la oscuridad es total pero el camino está despejado de obstáculos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1125 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 600 — 506/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1500 ms
+
+> "¿Tanto orgullo para alguien tan viejo?"
+> Ignoro al anciano y me dirijo hacia la rampa de piedra para explorar el nivel inferior.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 16+4=20
+
+### [4] DM
+
+  4268 ms
+
+> El Vigilante del Granero no responde a la provocación; se limita a observar con una mirada gélida y despectiva mientras te das la vuelta, manteniendo el silencio como un arma de superioridad. Su figura queda estática, como una gárgola de piel marchita, mientras el eco de tus pasos se apaga al iniciar el descenso.
+> Te deslizas por la rampa de piedra con una fluidez casi sobrenatural, fundiéndote con las sombras que devoran la luz del exterior. El aire se vuelve pesado, cargado de un olor a polvo antiguo y grano húmedo, pero tus movimientos son imperceptibles; el roce de tu ropa contra la piedra es inexistente y el descenso ocurre sin que el anciano, ni cualquier otra presencia que pudiera acechar en la penumbra, note tu transición hacia el nivel inferior.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2280 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.location_id
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 601 — 507/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1733 ms
+
+> Me muevo con cuidado por el nivel inferior, evitando los espacios abiertos. Busco cualquier rastro de suministros, monedas o algo que pueda vender.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 7+4=11
+
+### [4] DM
+
+  5565 ms
+
+> Tus pasos, aunque cautelosos, resuenan con un eco metálico y seco sobre el suelo de piedra del nivel inferior. El silencio del granero es traicionero; cada roce de tu bota contra la grava o el leve crujido de una viga vieja suena como un trueno en la quietud del sótano, rompiendo la invisibilidad que habías logrado en la rampa.
+> A medida que avanzas pegado a los muros, el olor a moho se intensifica. Entre las sombras, alcanzas a ver varias filas de sacos de arpillera apilados y algunos barriles de madera carcomida que parecen contener grano viejo, pero no hay señales inmediatas de cofres, monedas o artículos de valor a la vista. Mientras te desplazas, el sonido de tus movimientos alerta a algo en la penumbra: desde el fondo del pasillo, se escucha el arrastrar lento de algo pesado sobre la piedra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  992 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 602 — 508/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1924 ms
+
+> "Maldita sea..."
+> Me pego rápidamente a la pared más cercana, tratando de fundirme con las sombras y conteniendo la respiración.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 12+4=16
+
+### [4] DM
+
+  5976 ms
+
+> Te fundes contra la piedra fría y húmeda, conteniendo el aliento mientras el corazón te late con fuerza en los oídos. El sonido del arrastre se detiene bruscamente, dejando un silencio sepulcral que solo es interrumpido por el goteo rítmico de alguna filtración en el techo. 
+> Desde la penumbra del pasillo, emerge una figura encorvada que sostiene una pesada linterna de aceite. La luz amarillenta baila erráticamente, iluminando los sacos de grano pero sin llegar a alcanzar el rincón donde te has ocultado. El Vigilante del Granero exhala un suspiro pesado y ronco, mirando hacia los lados con ojos cansados y desconfiados, aunque no logra localizarte entre las sombras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  974 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 603 — 509/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 1 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1711 ms
+
+> "Qué torpe eres..."
+> Aprovecho que el Vigilante está distraído y me deslizo por las sombras para intentar llegar a su espalda sin que me note.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 8+4=12
+
+### [4] DM
+
+  5768 ms
+
+> Te desplazas con cautela, sintiendo el roce de la piedra contra tu ropa y el frío calando en tus botas. Sin embargo, al intentar sortear un saliente del muro, el talón de tu bota golpea una pequeña piedra suelta que resuena con un chasquido seco en el silencio del pasillo.
+> El Vigilante se tensa al instante. Gira la linterna con un movimiento brusco, bañando de luz amarillenta la zona donde te encuentras. Sus ojos cansados se abren con sorpresa y una chispa de hostilidad mientras clava la mirada en ti.
+> —¿Quién anda ahí? —gruñe con voz ronca, retrocediendo un paso y apretando el agarre de su linterna como si fuera un arma.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2171 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta El Vigilante del Granero · npc.knowledge = Isolde está infiltrada en el pasillo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5783: El Vigilante del Granero.knowledge = Isolde está infiltrada en el pasillo
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 604 — 510/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1294 ms
+
+> "No soy nadie que quieras combatir."
+> Me quedo inmóvil, manteniendo la mirada fría y las manos visibles pero cerca de mis armas.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 6+0=6
+
+### [4] DM
+
+  3260 ms
+
+> El Vigilante no se deja amilanar por tu calma; al contrario, el tono gélido de tus palabras parece irritarlo. Frunce el ceño, y la luz de la linterna tiembla ligeramente mientras recorre tu figura, deteniéndose en la proximidad de tus manos a las armas. Su expresión se endurece, transformando la sorpresa inicial en una desconfianza absoluta.
+> —Esa es exactamente la frase que diría alguien que no debería estar aquí —escupe con desprecio, sin bajar la guardia—. No me importa quién seas, pero este pasillo no es para paseos nocturnos. ¡Fuera de aquí ahora mismo o llamaré a la guardia!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  916 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 605 — 511/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -24.0 (cold), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1108 ms
+
+> "No busco problemas, solo respuestas."
+> Doy un paso lateral para intentar esquivarlo y seguir avanzando por el pasillo.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 18+2=20
+
+### [4] DM
+
+  5109 ms
+
+> El Vigilante abre la boca para gritar, pero el movimiento es tan fluido y preciso que solo llega a emitir un jadeo de sorpresa. Te deslizas por su costado como una sombra, aprovechando el instante en que su peso se desplaza hacia adelante, y superas el obstáculo sin que sus manos lleguen a rozar siquiera tu ropa.
+> Tras tu espalda, el hombre gira bruscamente, recuperando el equilibrio con un ruido sordo de botas contra la piedra. El haz de la linterna baila violentamente mientras intenta localizarte de nuevo en la penumbra del pasillo.
+> —¡Maldito seas! ¡Guardias! ¡Intruso en el sector oeste! —el grito resuena en las paredes estrechas, cargado de una furia gélida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2430 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento El Vigilante del Granero · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5789: El Vigilante del Granero affinity -24.0 → -22.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 606 — 512/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1711 ms
+
+> "Tarde, idiota."
+> Sigo corriendo por el pasillo, buscando cualquier recoveco o salida que me aleje de los refuerzos.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 12+4=16
+
+### [4] DM
+
+  4220 ms
+
+> Te fundes con las sombras del pasillo, aprovechando los ángulos muertos y el eco confuso de los gritos del vigilante. El aire huele a grano húmedo y a piedra fría mientras te deslizas con rapidez, manteniendo el cuerpo pegado a la pared rugosa. El haz de la linterna del hombre barre el techo y el suelo detrás de ti, pero tu paso es ligero y preciso, evitando el crujido de cualquier escombro suelto.
+> A unos metros, el pasillo se bifurca: a la izquierda, una puerta de madera pesada con un cerrojo de hierro; a la derecha, un conducto de ventilación cuya rejilla está parcialmente desprendida, dejando ver una oscuridad profunda y un soplo de aire fresco. A lo lejos, el sonido metálico de armaduras y pasos apresurados comienza a acercarse desde el sector central.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1801 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 607 — 513/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1413 ms
+
+> Me deslizo hacia la derecha y trato de entrar en el conducto de ventilación para desaparecer de la vista.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 11+4=15
+
+### [4] DM
+
+  6451 ms
+
+> Te deslizas hacia la rejilla con un movimiento fluido, aprovechando que el metal cede con un leve gemido que queda camuflado por el ruido lejano de las armaduras. Te introduces en el conducto justo cuando el haz de luz del vigilante vuelve a barrer la zona, iluminando el espacio vacío donde estabas hace un instante. 
+> Desde el interior del conducto, el aire es más frío y huele a metal oxidado. A través de las rendijas de la rejilla, ves al vigilante detenerse un segundo, frunciendo el ceño mientras observa el pasillo, pero el sonido de los pasos que se acercan desde el sector central lo obliga a girarse y alejarse para informar de su posición.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1104 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 608 — 514/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1990 ms
+
+> Me quedo inmóvil en el conducto, conteniendo la respiración mientras observo el movimiento del vigilante. Intento escuchar si hay alguien más cerca o si se oyen voces que revelen hacia dónde se dirigen.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 4+4=8
+
+### [4] DM
+
+  6619 ms
+
+> El silencio del conducto es denso y el eco del metal amplifica el latido de tu propio corazón, dificultando cualquier intento de captar sonidos externos. Solo percibes el zumbido sordo de la maquinaria del edificio y el roce lejano de botas sobre piedra, pero las voces son ininteligibles, perdidas en la distancia y filtradas por las paredes de hierro.
+> El vigilante se ha alejado lo suficiente como para que su figura desaparezca de tu campo de visión, dejando el pasillo sumido en una penumbra intermitente. El aire en el conducto comienza a sentirse más pesado y el olor a óxido se vuelve más penetrante a medida que el espacio se estrecha hacia adelante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1357 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 609 — 515/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2961 ms
+
+> Me deslizo con cuidado hacia adelante, tratando de no hacer ruido contra el metal. Intento localizar de dónde provienen exactamente esos pasos para saber cuántos son.
+> {Sigilo}
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 1+4=5  PIFIA
+  Percepción: 11+4=15
+
+### [4] DM
+
+  4666 ms
+
+> Un movimiento brusco y un mal cálculo del apoyo hacen que tu cuerpo choque violentamente contra una de las paredes del conducto. El metal vibra con un estruendo seco y resonante que se propaga por toda la estructura como una campana, rompiendo el silencio del edificio de forma estrepitosa.
+> A pesar del ruido, aguzas el oído y logras filtrar el zumbido de la maquinaria. Los pasos, que antes eran una masa confusa, se vuelven claros: provienen del pasillo justo debajo de tu posición actual. Son dos pares de botas, uno con un paso pesado y rítmico, y otro más ligero y apresurado, que se detienen en seco tras el estrépito.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ pifia en Sigilo pero narra éxito
+
+### [6] EXTRACTOR
+
+  984 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 610 — 516/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1730 ms
+
+> "Maldita sea..."
+> Me quedo completamente inmóvil, pegada a la pared del conducto, conteniendo la respiración para no emitir ni un sonido mientras escucho los pasos.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 3+4=7
+
+### [4] DM
+
+  7000 ms
+
+> El metal del conducto sigue vibrando levemente bajo tu espalda, pero el silencio que intentas imponer es insuficiente. El roce de tu ropa contra las paredes galvanizadas y el sonido errático de tu respiración contenida resuenan en el espacio cerrado, creando un eco delatador que llega con claridad al pasillo inferior.
+> —¿Has oído eso? —la voz es áspera, cargada de una irritación fría—. Viene de arriba.
+> Unas botas pesadas golpean el suelo justo debajo de la rejilla, y el sonido de un arma siendo amartillada corta el aire. El segundo individuo, el de paso ligero, deja escapar un bufido de impaciencia.
+> —Probablemente sea la estructura asentándose, jefe. Este lugar es una chatarra.
+> —No seas idiota. Ha sido un golpe seco. Quédate aquí y vigila la puerta; voy a echar un vistazo a los conductos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4910 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 611 — 517/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1706 ms
+
+> Me quedo completamente inmóvil, conteniendo el aliento y apretando el cuerpo contra el metal para no hacer el más mínimo ruido.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 12+4=16
+
+### [4] DM
+
+  5986 ms
+
+> El silencio se vuelve denso, casi sólido, mientras el corazón late con fuerza contra el metal frío del conducto. Las botas pesadas se detienen justo debajo de la rejilla, y durante unos segundos, solo se escucha la respiración pausada del guardia y el zumbido eléctrico de las luces del pasillo. El hombre permanece inmóvil, agudizando el oído, pero el entorno recupera su monotonía mecánica y el ruido del edificio oculta cualquier nuevo movimiento.
+> —Nada —gruñe el jefe con una nota de desdén—. Solo el viento jugando con las chapas sueltas. Este sitio es una tumba de hierro.
+> El sonido de los pasos pesados se aleja lentamente, regresando hacia el centro del pasillo, donde el segundo guardia sigue apostado junto a la puerta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1327 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 612 — 518/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1561 ms
+
+> Sigo conteniendo la respiración hasta que los pasos se pierden. Empujo la rejilla con cuidado para salir del conducto.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 13+4=17
+
+### [4] DM
+
+  9277 ms
+
+> La rejilla cede con un deslizamiento casi imperceptible, el metal rozando el metal en un susurro que se pierde entre el zumbido eléctrico del pasillo. Desciendes con suavidad, aterrizando sobre el suelo frío sin provocar el más mínimo eco. En el aire flota un olor a aceite industrial y polvo acumulado que irrita la garganta.
+> A unos metros, el guardia que se alejaba ya ha recuperado su ritmo mecánico, mientras que el segundo permanece de espaldas a ti, vigilando la puerta principal. El pasillo se extiende largo y gris, iluminado por fluorescentes que parpadean rítmicamente, proyectando sombras alargadas que te ofrecen refugio mientras el eco de las botas se desvanece en la distancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1052 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 613 — 519/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1926 ms
+
+> Me quedo pegada a la pared, aprovechando las sombras. Observo al guardia que sigue cerca para buscar algún objeto útil en su cinturón o alguna llave que pueda llevar encima.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 7+4=11
+
+### [4] DM
+
+  5419 ms
+
+> Te pegas a la pared fría, fundiéndote con la penumbra mientras el zumbido de los fluorescentes llena el silencio. Te deslizas hacia el guardia, intentando que tu respiración no te traicione, pero al intentar acercarte lo suficiente para inspeccionar su cinturón, el roce de tu ropa contra una tubería saliente produce un chasquido metálico seco.
+> El guardia se tensa al instante y gira la cabeza con un movimiento brusco, clavando la mirada en el rincón oscuro donde te encuentras. Su mano desciende rápidamente hacia la empuñadura de su arma mientras frunce el ceño, escaneando las sombras con sospecha.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  912 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 614 — 520/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  1544 ms
+
+> "¡Maldita sea!"
+> Me lanzo hacia adelante para intentar derribarlo antes de que saque el arma.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 14+1=15
+
+### [4] DM
+
+  8633 ms
+
+> Te lanzas desde las sombras como un resorte, impactando contra el guardia con todo tu peso antes de que pueda liberar el arma de su funda. El golpe es seco y contundente; el hombre no tiene tiempo de reaccionar y es proyectado hacia atrás, aterrizando pesadamente sobre el suelo de hormigón con un ruido sordo.
+> El guardia queda tendido de espaldas, aturdido por la violencia del impacto, mientras el arma resbala unos centímetros lejos de su mano. El zumbido de los fluorescentes sigue llenando el espacio, ahora acompañado por la respiración agitada del hombre que intenta recuperar el aliento bajo tu peso.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1500 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 615 — 521/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  77291 ms
+
+> "No te muevas si no quieres que te rompa algo."
+> Sujeto al guardia contra el suelo con fuerza y trato de arrebatarle el arma que ha quedado a su lado.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 10+1=11
+
+### [4] DM
+
+  38791 ms
+
+> El guardia forcejea bajo tu peso, soltando un gruñido ahogado mientras intenta girar los hombros para zafarse. Sus dedos arañan el hormigón, buscando desesperadamente un punto de apoyo para impulsarse. En el breve instante en que intentas alcanzar el arma, el hombre logra realizar un movimiento brusco de cadera que desestabiliza tu agarre, haciendo que tu mano roce el metal frío del arma pero no logre sujetarla con firmeza.
+> El arma sigue allí, a escasos centímetros, pero el guardia ha recuperado parte de la movilidad y ahora te mira con los ojos dilatados por el pánico y la rabia, jadeando con fuerza mientras intenta recuperar la posición.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  43602 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 616 — 522/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2477 ms
+
+> "No te muevas."
+> Presiono con todo mi peso sobre su espalda para inmovilizarlo contra el suelo mientras intento agarrar el arma con fuerza.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 15+1=16
+
+### [4] DM
+
+  18787 ms
+
+> El peso de tu cuerpo cae con brusquedad sobre él, aplastando el pecho del guardia contra el hormigón rugoso. Se escucha un gemido sordo, el aire escapando de sus pulmones en un siseo desesperado mientras sus extremidades dejan de luchar, vencidas por la presión mecánica que lo ancla al suelo. 
+> Tus dedos se cierran con fuerza sobre la empuñadura del arma. Sientes el frío del metal y la textura del grip justo antes de arrancarla del suelo con un movimiento seco, alejándola del alcance del hombre. El guardia queda inmovilizado bajo ti, jadeando con dificultad, con la mejilla pegada al suelo y la mirada perdida en el polvo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3981 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = arma
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5824: Isolde.inventory = arma
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 617 — 523/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3061 ms
+
+> "No te muevas si no quieres que te corte la garganta."
+> Mantengo la presión sobre su pecho mientras busco con la mirada cualquier otra cosa útil que lleve encima.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 19+4=23
+
+### [4] DM
+
+  25361 ms
+
+> El guardia se queda rígido, el pánico sustituyendo al agotamiento en sus ojos mientras el aire entra en sus pulmones en espasmos cortos y ruidosos. No se atreve a moverse, limitándose a emitir un sonido gutural de sumisión mientras el polvo del suelo se le pega a la piel sudorosa de la cara.
+> Tus ojos recorren con rapidez cada pliegue de su uniforme y los relieves de su equipo. Bajo el cinturón, junto a la funda ahora vacía, detectas un juego de llaves pesadas que tintinean levemente con su respiración agitada. En el bolsillo superior de su chaqueta, el relieve cuadrado y rígido de un cuaderno de notas o una pequeña libreta marca la tela, y en el bolsillo lateral, el bulto cilíndrico de un encendedor de metal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3267 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: juego de llaves pesadas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item juego de llaves pesadas
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 618 — 524/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -22.0 (cold), 2 hechos conocidos
+  33 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3729 ms
+
+> "No te muevas si no quieres que te corte."
+> Saco el cuchillo y lo apoyo contra su garganta mientras intento quitarle las llaves del cinturón con la otra mano.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 17+2=19
+
+### [4] DM
+
+  124044 ms
+
+> El metal frío del cuchillo presiona la piel tensa de su cuello, obligándolo a arquear la espalda y a hundir la barbilla en un gesto de terror absoluto. El guardia contiene el aliento, sus pupilas dilatadas reflejan el filo del arma mientras un temblor involuntario recorre sus hombros, pero permanece paralizado por el miedo.
+> Tus dedos se deslizan con precisión quirúrgica hacia el cinturón, evitando cualquier roce brusco que pudiera alertar a alguien cercano. En un movimiento fluido y silencioso, desenganchas el pesado juego de llaves; el tintineo es casi imperceptible, ahogado por el sonido de la respiración errática del hombre. Las llaves ahora pesan en tu mano, frías y sólidas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7214 ms · 1 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento El Vigilante del Granero · threat_made
+  ✓ delta Isolde · character.inventory = juego de llaves pesadas
+  ✗ campo fuera de lista blanca: npc.inventory
+  ⚠ campo no mutable propuesto: npc.inventory
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → delta 5859: El Vigilante del Granero affinity -22.0 → -32.0  (mid)
+     Cede en el momento, lo guarda.
+  → delta 5860: Isolde.inventory = juego de llaves pesadas
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -32.0 (wary), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 619 — 525/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -32.0 (wary), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3956 ms
+
+> "No te muevas ni un milímetro más si quieres seguir respirando."
+> Retiro el cuchillo lentamente mientras mantengo la presión hasta el último segundo, asegurándome de que el guardia no reaccione. Me alejo de él con pasos ligeros, guardando las llaves en mi ropa.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 15+4=19
+
+### [4] DM
+
+  46295 ms
+
+> El guardia permanece petrificado, con los ojos desorbitados y el cuello aún húmedo por el sudor del pánico. Solo cuando el contacto del acero desaparece por completo, su pecho sube y baja en una bocanada de aire violenta y sibilante, pero no emite sonido alguno; el terror lo ha dejado mudo y anclado al suelo.
+> Te deslizas hacia las sombras con la fluidez de un espectro, fundiéndote con la penumbra de los muros de piedra. El tintineo de las llaves queda sepultado bajo el ruido distante del viento que azota el exterior, y el guardia, aún temblando, no logra siquiera girar la cabeza a tiempo para rastrear tu posición exacta antes de que desaparezcas de su vista.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3586 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Isolde · character.inventory = juego de llaves pesadas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5862: Isolde.inventory = juego de llaves pesadas
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -32.0 (wary), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 620 — 526/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -32.0 (wary), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2303 ms
+
+> Me alejo rápidamente hacia la zona más oscura del pasillo, manteniendo el silencio absoluto. {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 1+4=5  PIFIA
+
+### [4] DM
+
+  19712 ms
+
+> Al intentar retroceder hacia la oscuridad, el pie se engancha violentamente en el borde de una piedra suelta del pavimento. El equilibrio se pierde y el cuerpo impacta contra una pila de cajas de madera apiladas con torpeza contra la pared, que colapsan con un estrépito ensordecedor que retumba en todo el pasillo.
+> El guardia, sacudido por el ruido, recupera el sentido del pánico. Su mirada se clava exactamente en el punto donde el ruido ha estallado y, con un grito ahogado que rompe su mudez, retrocede tropezando mientras lleva la mano a la campana de alarma que cuelga de su cinturón.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1366 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -32.0 (wary), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 621 — 527/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -32.0 (wary), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2633 ms
+
+> "¡No te atrevas!"
+> Me lanzo hacia delante para intentar interceptar su mano antes de que pueda tocar la campana.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 19+1=20
+
+### [4] DM
+
+  9907 ms
+
+> El cuerpo se proyecta hacia delante con una velocidad explosiva, acortando la distancia en un instante. Antes de que los dedos del guardia puedan siquiera rozar el metal frío de la campana, una mano se cierra con fuerza sobre su muñeca, anclándola al aire en un movimiento seco y preciso.
+> El guardia se queda congelado, con los ojos desencajados y la respiración agitada, sintiendo la presión del agarre. Su rostro, bañado por la tenue luz del pasillo, es una máscara de puro terror mientras mira la mano que le impide dar la alarma y luego sube la vista hacia quien lo ha interceptado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1835 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -32.0 (wary), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 622 — 528/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -32.0 (wary), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  2572 ms
+
+> "Ni se te ocurra."
+> Aprieto la muñeca del guardia con fuerza para inmovilizarlo contra la pared y lo miro fijamente a los ojos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 10+0=10
+
+### [4] DM
+
+  20214 ms
+
+> El guardia suelta un gemido ahogado mientras su espalda choca contra la piedra fría de la pared. Intenta forcejear débilmente, pero el agarre es firme y su mirada vacila, saltando de los ojos del intruso a la campana que ha quedado a escasos centímetros de su alcance. El pánico sigue presente en sus pupilas dilatadas, aunque la presión en su muñeca le obliga a quedarse quieto.
+> —¡No... no me hagas nada! —susurra con la voz quebrada, el tono cargado de un miedo visceral—. Solo... solo hago mi turno. No me metas en problemas, te lo ruego.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1309 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  El Vigilante del Granero: alive, aprecio -32.0 (wary), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 623 — 529/1306 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  El Vigilante del Granero: alive, aprecio -32.0 (wary), 2 hechos conocidos
+  32 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Isolde
+
+  3050 ms
+
+> "Si no quieres problemas, quédate muy quieto y cierra la boca."
+> Le aprieto la muñeca con más fuerza para asegurarme de que no se mueva y miro rápidamente hacia la campana.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 7+4=11
+
+### [4] DM
+

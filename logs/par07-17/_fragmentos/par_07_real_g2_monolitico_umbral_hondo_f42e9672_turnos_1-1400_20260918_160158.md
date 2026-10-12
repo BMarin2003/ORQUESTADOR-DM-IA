@@ -1,0 +1,3413 @@
+
+# VERTICAL SLICE — Par 07 (real) · G2 (Monolítico) · Umbral Hondo (monolithic)
+
+- **DM:** `google/gemma-4-31B-it`
+- **jugador:** `google/gemma-4-31B-it` (Tarq, desvío 45)
+- **turno:** 1
+
+## Turno 1 — 1/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  3723 ms
+
+> "Un lugar donde el silencio pesa más que la plata."
+> Camino por la calle principal, observando la pendiente hacia la boca de la mina y analizando las expresiones de los vecinos que encuentro. Busco cualquier señal de esa calma antinatural que mencionan.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 7+1=8
+
+### [4] DM
+
+  6894 ms
+
+> La calle principal desciende con una monotonía opresiva, flanqueada por casas de piedra gris que parecen querer deslizarse hacia el abismo de la mina. El aire huele a humedad y a metal oxidado, y el viento silba entre los callejones con un sonido que recuerda a un lamento lejano.
+> A tu paso, los vecinos se mueven con una lentitud mecánica. Algunos te dedican miradas fugaces que se desvanecen en cuanto intentas sostener el contacto visual, pero sus rostros son máscaras de indiferencia. No logras distinguir entre el cansancio crónico de un pueblo agonizante y esa serenidad sospechosa que flota en el ambiente; todo se funde en una misma apatía grisácea.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1575 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 2 — 2/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2672 ms
+
+> "Demasiada calma para un lugar que huele a muerte."
+> Me detengo frente a uno de esos vecinos que caminan como autómatas e intento obligarle a mirarme a los ojos para analizar su expresión.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+1=4
+
+### [4] DM
+
+  5470 ms
+
+> El hombre se detiene en seco, pero su cuello se mueve con una rigidez antinatural, como si el giro de la cabeza fuera un proceso mecánico que requiere un esfuerzo consciente. Cuando finalmente sus ojos se encuentran con los tuyos, no hay rastro de miedo, ni de sorpresa, ni siquiera de irritación por la interrupción. 
+> Sus pupilas están dilatadas y el iris parece haberse deslavado, adquiriendo un tono pálido que se mimetiza con la bruma del pueblo. Su expresión es un vacío absoluto, una superficie lisa donde no se lee emoción alguna; es el rostro de alguien que ha olvidado cómo reaccionar ante el mundo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1562 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 3 — 3/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1962 ms
+
+> "¿Quién eres? ¿Y qué es este sitio?"
+> Me acerco un paso hacia él, observando detenidamente sus pupilas y ese movimiento mecánico.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 19+1=20
+
+### [4] DM
+
+  11929 ms
+
+> El hombre no responde a las preguntas. Se queda inmóvil, pero el ligero balanceo de su cuerpo sugiere que está procesando la presencia del interlocutor a un ritmo distinto al humano. Al acercarte, el olor que emana de él se vuelve perceptible: es un aroma dulzón y pesado, similar al de la fruta que ha empezado a pudrirse bajo la lluvia, mezclado con el rastro metálico de la sangre seca.
+> La observación minuciosa de sus pupilas revela algo inquietante: no reaccionan a la luz ni al movimiento. No son ojos orgánicos funcionando mal, sino que parecen haber sido sustituidos o alterados; hay una película opaca que cubre el globo ocular, como si el tejido se hubiera vuelto vítreo. El movimiento mecánico de su cuello no es un tic, sino la consecuencia de que los tendones y músculos han sido tensados o reemplazados por algo rígido que no permite el flujo natural del movimiento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1813 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 4 — 4/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2281 ms
+
+> "Interesante... no eres más que un cascarón."
+> Me acerco más para examinar la textura de esa película vítrea en sus ojos, buscando alguna marca o costura.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+2=21
+
+### [4] DM
+
+  7679 ms
+
+> Al inclinarte sobre el rostro del hombre, la luz se refleja en esa superficie opaca. No hay costuras, ni cicatrices de cirugía, ni rastro de herramientas humanas; la transición entre la piel cetrina y la película vítrea es orgánica, una fusión perfecta y perturbadora. Bajo la capa translúcida, detectas una red de filamentos blanquecinos que se ramifican como raíces microscópicas, anclándose profundamente en el nervio óptico y extendiéndose hacia el cráneo.
+> Al rozar la superficie, notas que no es fría como el cristal, sino que mantiene una temperatura tibia y pegajosa. La textura es similar a la de una membrana biológica endurecida, una especie de capullo interno que ha colonizado el ojo desde dentro hacia fuera, convirtiendo la mirada en una lente fija y ciega que ya no pertenece al dueño del cuerpo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1283 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 5 — 5/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2189 ms
+
+> "Interesante... no es un injerto, es un crecimiento."
+> Intento extraer con cuidado una pequeña muestra de esa membrana sin dañar el resto del tejido.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 10+1=11
+
+### [4] DM
+
+  7348 ms
+
+> El bisturí se desliza sobre la membrana, pero la consistencia pegajosa del tejido ofrece una resistencia imprevista. Al intentar realizar el corte, la membrana se estira como un ligamento elástico antes de rasgarse de forma irregular, provocando que la muestra se desgarre en fragmentos demasiado pequeños y deformes para ser útiles.
+> El movimiento brusco del desgarro provoca que una pequeña cantidad de un fluido espeso y amarillento brote de la zona afectada, manchando tus dedos y el borde de la herida. El tejido circundante se contrae levemente, como si el cuerpo, aun muerto, reaccionara al trauma de la extracción fallida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3568 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 6 — 6/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2801 ms
+
+> "Maldita sea."
+> Limpio el fluido amarillento de mis dedos en mi ropa y observo los fragmentos deformes para ver si puedo rescatar algo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+2=10
+
+### [4] DM
+
+  8285 ms
+
+> Te inclinas sobre la mesa, examinando los trozos de tejido que quedaron esparcidos como jirones de cuero húmedo. Intentas recomponer las piezas o hallar algún patrón en el desgarro que permita salvar la muestra, pero la estructura celular se ha colapsado por la tensión del corte fallido. El material se deshace entre tus dedos, convirtiéndose en una masa informe y viscosa.
+> No hay nada rescatable en esos fragmentos; la muestra ha quedado inutilizada. El fluido amarillento que mancha tu ropa comienza a emitir un olor dulzón y rancio, similar al de la fruta podrida, que se extiende rápidamente por el aire estancado de la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2341 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 7 — 7/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  16270 ms
+
+> "Maldición."
+> Me limpio la viscosidad de los dedos en la tela de mi ropa y echo un vistazo rápido al resto de la habitación para ver si queda algún otro residuo útil.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 6+2=8
+
+### [4] DM
+
+  6615 ms
+
+> Tus ojos recorren la estancia, escaneando las superficies desgastadas y los rincones donde la penumbra se espesa. El olor a putrefacción dulzona llena tus fosas nasales mientras buscas cualquier rastro, una gota seca o una fibra olvidada que haya sobrevivido al desastre.
+> La habitación está despojada de cualquier utilidad. Solo quedan las manchas habituales de humedad en las paredes y el polvo acumulado en los muebles, que no ocultan nada más que la vacuidad del lugar. No hay ningún residuo, ni rastro orgánico ni pista material, que haya escapado a la limpieza previa o al paso del tiempo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1154 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 8 — 8/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1739 ms
+
+> "Nada. No ha quedado ni el rastro del miedo."
+> Me alejo de los muebles y me acerco a las paredes para buscar alguna marca oculta o inscripción que no sea humedad.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 11+2=13
+
+### [4] DM
+
+  6229 ms
+
+> Tus dedos recorren la piedra fría y rugosa, sintiendo la viscosidad de la humedad y el relieve del moho. El muro se siente inerte, una barrera de roca y cal que no ha guardado secretos en superficie, y el silencio de la estancia parece absorber el sonido de tu propia respiración.
+> Al deslizar la mano por una esquina donde la sombra es más densa, encuentras que la humedad ha creado un patrón irregular, pero no hay inscripciones, ni muescas deliberadas, ni marcas que sugieran que alguien haya intentado dejar un mensaje antes de desaparecer. La pared es tan muda como el resto de la habitación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1303 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 9 — 9/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1516 ms
+
+> "Nada. Solo piedra y moho."
+> Me separo de la pared y miro hacia el resto de la estancia, buscando cualquier otro detalle que haya pasado por alto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 17+1=18
+
+### [4] DM
+
+  13480 ms
+
+> Al alejarte del muro, el silencio de la estancia se vuelve pesado, interrumpido solo por el goteo rítmico de alguna filtración invisible. Al recorrer la habitación con la mirada, notas que el polvo del suelo no es uniforme; hay una zona, cerca de la esquina opuesta a la pared que acabas de tocar, donde la capa de suciedad es ligeramente más fina, como si algo pesado hubiera sido arrastrado recientemente o alguien hubiera estado limpiando el área con frecuencia.
+> En el techo, una viga de madera podrida cuelga peligrosamente, y de ella pende un resto de cuerda deshilachada que oscila levemente, aunque no hay corriente de aire detectable en el lugar. El olor a humedad se mezcla ahora con un matiz metálico, un rastro tenue y oxidado que parece emanar de debajo de una pesada losa de piedra que sirve de base a un antiguo pedestal vacío.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1999 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 10 — 10/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  11997 ms
+
+> "Huele a sangre vieja."
+> Me acerco a la losa de piedra del pedestal y trato de asomarme por debajo para ver qué hay oculto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+2=21
+
+### [4] DM
+
+  9802 ms
+
+> Al agacharte y forzar la mirada bajo el borde frío de la losa, el rastro metálico se intensifica, golpeando tus fosas nasales con la crudeza del hierro oxidado. El espacio es reducido y oscuro, pero el ángulo te permite descubrir que la piedra no asienta directamente sobre el suelo, sino que deja una rendija irregular. Allí, atrapado entre el granito y el pavimento, asoma el extremo de una tela raída y amarillenta, empapada en una costra oscura y seca que se ha adherido a la roca con el paso del tiempo.
+> Al observar con más detalle, notas que la tela no es un simple trapo; es el fragmento de una manga, donde aún se distingue un botón de hueso tallado, medio hundido en la suciedad. Justo al lado del tejido, un rastro de gotas coaguladas dibuja una línea errática que se interna más profundamente bajo la losa, sugiriendo que algo, o alguien, fue arrastrado hacia el vacío que queda debajo del pedestal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4224 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: fragmento de manga con botón de hueso
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item fragmento de manga con botón de hueso
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 11 — 11/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  16 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1581 ms
+
+> "Interesante."
+> Intento tirar de la tela para extraer lo que sea que haya debajo de la losa.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 15+-1=14
+
+### [4] DM
+
+  7130 ms
+
+> Tus dedos se cierran sobre la tela áspera y fría. Al tirar, el tejido ofrece una resistencia seca, como si la sangre coagulada hubiera actuado como un cemento rudimentario entre la fibra y la piedra. Con un tirón firme, la manga cede con un sonido lacerante, desprendiéndose de la losa.
+> Lo que emerge del vacío es el brazo inerte de un cadáver, pálido y encogido por la deshidratación. La extremidad se desliza lentamente hacia fuera, revelando que el cuerpo yace en una posición antinatural, encajonado en el estrecho espacio bajo el pedestal. El brazo cae pesadamente sobre el pavimento, y el movimiento provoca que un resto de polvo y escombros caiga desde el borde de la losa, revelando que el cuerpo no está solo: un dedo esquelético, despojado de piel, asoma justo detrás del brazo recién extraído.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1534 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 12 — 12/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  16 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1599 ms
+
+> "Vaya... parece que no eras el único."
+> Me inclino sobre el cuerpo y trato de ver si lleva algún objeto de valor o algún símbolo que explique su presencia aquí.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+2=20
+
+### [4] DM
+
+  7576 ms
+
+> Tus ojos recorren la piel apergaminada y las ropas raídas del cadáver, moviéndose con precisión quirúrgica entre los pliegues de la tela y la suciedad del pedestal. Al desplazar la mano del cuerpo, descubres un relicario de plata ennegrecida colgado de un cordel de cuero podrido; el metal está grabado con un sol eclipsado por una mano cerrada, un símbolo que no encaja con la iconografía habitual de la zona.
+> Al profundizar en el registro, tus dedos encuentran un pequeño pergamino enrollado y encerado, oculto en un bolsillo secreto del jubón. El papel se siente rígido, pero el sello de lacre rojo, intacto a pesar de la humedad, muestra la impronta de una llave cruzada con una daga. El segundo cuerpo, aquel del que solo asoma un dedo, yace más profundamente hundido, sugiriendo que el primero fue colocado allí deliberadamente para cubrir el anterior.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4456 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: relicario de plata ennegrecida
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item relicario de plata ennegrecida
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 13 — 13/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  17 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2418 ms
+
+> "Interesante..."
+> Saco el pergamino y el relicario del cuerpo, guardándolos con cuidado. Después, intento desplazar el primer cadáver para exponer el segundo cuerpo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 7+-1=6
+
+### [4] DM
+
+  4163 ms
+
+> El cadáver se siente pesado, una masa inerte de carne endurecida y telas empapadas que se resisten a deslizarse sobre la piedra rugosa del pedestal. Al intentar empujarlo, el cuerpo se desplaza apenas unos centímetros, emitiendo un sonido húmedo y viscoso que resuena en el silencio de la estancia, pero el peso muerto y la fricción lo mantienen anclado sobre la segunda víctima.
+> El dedo que asomaba permanece allí, una pequeña punta de hueso y piel grisácea que se burla de tu esfuerzo, mientras el primer cuerpo sigue bloqueando la mayor parte de la cavidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4238 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: item.inventory
+  ✓ creación item: pergamino
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item pergamino
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 14 — 14/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  18 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1618 ms
+
+> "No voy a dejar que un trozo de carne me detenga."
+> Me apoyo con todo mi peso contra el cadáver, intentando usar la palanca de mi cuerpo para desplazarlo fuera del pedestal.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 11+-1=10
+
+### [4] DM
+
+  4935 ms
+
+> Te inclinas y empujas con fuerza, hundiendo los pies en el suelo gélido para obtener tracción. El cadáver se resiste, su peso muerto se siente como plomo y la ropa empapada actúa como una ventosa contra la piedra fría del pedestal. A pesar del esfuerzo, el cuerpo apenas se desliza un par de centímetros más, emitiendo un gorgoteo sordo de aire y fluidos que escapa de los pulmones colapsados.
+> El esfuerzo termina en un seco deslizamiento que no logra liberar la cavidad. El cuerpo sigue ahí, bloqueando la vista y el acceso a la segunda víctima, con aquel dedo grisáceo todavía apuntando hacia el vacío, imperturbable.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1198 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 15 — 15/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  18 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1735 ms
+
+> "Maldita sea."
+> Suelto el cuerpo y me separo un momento para recuperar el aliento. Busco algún objeto pesado o una palanca cerca que pueda usar para desplazar el cadáver con más eficacia.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 4+1=5
+
+### [4] DM
+
+  5690 ms
+
+> El aire es denso, cargado de un olor a hierro y humedad que se pega a la garganta. Al apartarte, el silencio de la cámara vuelve a cerrarse sobre ti, roto solo por el eco de tu propia respiración agitada. Miras a tu alrededor, pero la penumbra devora los detalles; las paredes de piedra están desnudas y el suelo, cubierto por una fina capa de agua estancada, no ofrece más que el reflejo distorsionado de las sombras.
+> No hay maderas sueltas, ni escombros útiles, ni herramientas olvidadas en el perímetro inmediato del pedestal. Solo estás tú, el frío que cala los huesos y esos dos cuerpos entrelazados en un abrazo macabro, custodiando el secreto que el dedo grisáceo insiste en señalar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  809 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 16 — 16/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  18 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1614 ms
+
+> "¿Qué es lo que intentas decirme con ese gesto?"
+> Me acerco lentamente al pedestal para observar de cerca el punto exacto donde señala el dedo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+2=20
+
+### [4] DM
+
+  5022 ms
+
+> Al inclinarte sobre el pedestal, la luz mortecina revela que el dedo no señala el vacío, sino una hendidura casi imperceptible en la piedra blanca, justo donde el brazo del cadáver se une a la base. Al pasar los dedos por la ranura, notas que el relieve no es accidental: hay una serie de muescas talladas con precisión quirúrgica que forman un patrón circular, oculto bajo una costra de sales minerales y suciedad.
+> Al limpiar la superficie, el patrón emerge con claridad. No es un dibujo, sino un mecanismo de diales concéntricos encastrados en la piedra. El dedo del muerto descansa exactamente sobre una runa que representa un ojo cerrado, y el mecanismo vibra débilmente bajo tu tacto, sugiriendo que el pedestal no es un simple soporte, sino una cerradura que espera una secuencia específica para liberar lo que guarda en su interior.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3303 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: mecanismo de diales concéntricos
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item mecanismo de diales concéntricos
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 17 — 17/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1449 ms
+
+> "Interesante. Un secreto guardado por la muerte."
+> Intento analizar el patrón de las runas y el mecanismo para comprender cómo funciona la secuencia.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+2=19
+
+### [4] DM
+
+  35871 ms
+
+> El tacto revela que los diales no giran libremente, sino que ofrecen una resistencia metálica, casi orgánica, que emite un chasquido sordo al moverse. Al analizar la disposición de las runas, notas que el ojo cerrado es el punto de partida, pero hay tres anillos concéntricos que deben alinearse. Las muescas no son aleatorias; siguen una lógica astronómica degradada, donde el movimiento de los diales imita el descenso de un cuerpo hacia las profundidades del Umbral.
+> El mecanismo vibra con más intensidad cuando el dial exterior se alinea con una runa que evoca una boca cosida, sugiriendo que la secuencia requiere un tránsito desde el sueño (el ojo) hacia el silencio (la boca). Hay un pequeño orificio en el centro del pedestal, apenas del tamaño de una aguja, que parece diseñado para recibir una presión externa o una gota de fluido para activar el cierre final una vez que las runas estén en posición.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1069 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 18 — 18/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1603 ms
+
+> "Interesante... el camino hacia el silencio."
+> Intento alinear los tres anillos siguiendo la lógica del descenso hacia el Umbral, moviendo los diales desde el ojo hasta la boca cosida.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+2=14
+
+### [4] DM
+
+  4634 ms
+
+> El metal gime con un sonido similar al de un hueso rompiéndose mientras fuerzas los anillos. Al seguir la secuencia del descenso, los diales encajan con una precisión quirúrgica, aunque la resistencia orgánica que opusieron al principio se vuelve más errática, como si el mecanismo estuviera luchando contra el movimiento. Cuando la runa de la boca cosida queda finalmente alineada en el centro, la vibración del pedestal cesa abruptamente, dejando un silencio sepulcral en la estancia.
+> Un clic seco resuena en la base de la estructura y el orificio central comienza a exudar un líquido espeso y oscuro, similar a la bilis, que llena el hueco lentamente. El mecanismo ha aceptado la lógica del tránsito y ahora aguarda que el vacío del centro sea completado para liberar lo que sea que proteja el pedestal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1414 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 19 — 19/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2134 ms
+
+> "Interesante. Parece que el mecanismo tiene hambre."
+> Me acerco al orificio para observar la consistencia del líquido y busco cualquier inscripción oculta en la base que explique qué tipo de sacrificio o material requiere el pedestal.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+2=20
+
+### [4] DM
+
+  4410 ms
+
+> El líquido oscuro burbujea con una viscosidad aceitosa, desprendiendo un olor metálico y rancio que se pega a la garganta. Al inclinarte sobre la base, el brillo de tu luz revela una serie de incisiones microscópicas, grabadas con una caligrafía angular y desesperada que parece haber sido arañada en la piedra más que tallada. Las letras palpitan débilmente en sintonía con el flujo de la bilis, formando una frase que se repite en un ciclo infinito alrededor del orificio.
+> *"La carne es el puente, la sangre es la llave, el vacío es el precio"*. Justo debajo de la inscripción, notas que la piedra está porosa, con pequeños capilares que se extienden desde el centro hacia el exterior, diseñados para absorber cualquier fluido que toque la superficie y dirigirlo hacia el núcleo del mecanismo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  886 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 20 — 20/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1922 ms
+
+> "Típico. Siempre piden un precio."
+> Me quedo observando los capilares de la piedra, intentando descifrar si el mecanismo requiere una cantidad específica de fluido o si basta con una gota.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 13+2=15
+
+### [4] DM
+
+  5721 ms
+
+> Los capilares de la piedra actúan como una red sedienta; no hay marcas de medición ni recipientes que sugieran un volumen exacto. Sin embargo, al observar el ritmo de las pulsaciones de la caligrafía, notas que la intensidad del brillo aumenta ligeramente cuando el líquido aceitoso burbujea con más fuerza, sugiriendo que el mecanismo reacciona a la saturación del flujo.
+> La porosidad de la roca es irregular, pero los conductos convergen todos en un único punto central, un núcleo donde la piedra se vuelve translúcida y oscura. Parece que el sistema no busca una cantidad medida, sino que el fluido sea absorbido por completo hasta que el núcleo se llene y el sello ceda.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1070 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 21 — 21/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2117 ms
+
+> "Parece que solo quiere beber hasta saciarse."
+> Me acerco al núcleo translúcido para observar si hay alguna inscripción o símbolo oculto en su interior mientras el líquido fluye.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 10+2=12
+
+### [4] DM
+
+  4245 ms
+
+> Te inclinas sobre el núcleo de piedra oscura, observando cómo el fluido aceitoso comienza a llenar el vacío translúcido. A medida que la sustancia asciende, las burbujas atrapadas en el centro distorsionan la visión, creando reflejos erráticos que juegan con la luz del entorno.
+> La superficie del núcleo es lisa y fría, carente de cualquier relieve o marca grabada que sea visible a simple vista. El líquido sigue su curso, oscureciendo el centro del mecanismo, pero no revelan inscripciones ni símbolos ocultos en la profundidad de la roca.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3576 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 22 — 22/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2710 ms
+
+> "Interesante. Veamos si hay algo que no se ve a simple vista."
+> Paso mis dedos con cuidado sobre la superficie fría del núcleo, buscando cualquier hendidura, relieve o mecanismo oculto que el líquido no haya revelado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+2=10
+
+### [4] DM
+
+  3926 ms
+
+> Tus yemas recorren la piedra oscura, deslizándose sobre una superficie que se siente antinaturalmente uniforme. No hay costuras, ni muescas, ni el más mínimo relieve que sugiera un botón o una palanca oculta bajo el tacto. 
+> El frío del núcleo se filtra en tu piel mientras el fluido aceitoso termina de estabilizarse, dejando la pieza como un bloque monolítico y mudo que se resiste a entregar cualquier secreto táctil.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1152 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 23 — 23/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1355 ms
+
+> "Interesante. Demasiado perfecto para ser natural."
+> Retiro la mano y observo la superficie desde distintos ángulos, buscando cualquier distorsión en el reflejo o algún patrón invisible al tacto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+2=19
+
+### [4] DM
+
+  3472 ms
+
+> Al inclinar la cabeza y desplazar la mirada, la luz se quiebra sobre la superficie oscura. Tras unos segundos de observación minuciosa, notas que el reflejo no es perfecto: hay una zona donde la imagen se curva ligeramente, como si el bloque no fuera sólido, sino que ocultara una cavidad cóncava justo debajo de la superficie.
+> Al concentrar la vista en ese punto, percibes una serie de finísimas líneas geométricas, casi microscópicas, que solo se revelan cuando la luz incide en un ángulo exacto. No son grabados, sino fracturas deliberadas en la estructura del material que forman un patrón circular, sugiriendo que esa sección específica es la llave o el punto de presión para activar el mecanismo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1302 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 24 — 24/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1381 ms
+
+> "Interesante."
+> Me acerco al punto exacto y presiono con cuidado sobre el patrón circular para intentar activar el mecanismo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  5708 ms
+
+> Al aplicar la presión exacta sobre el vértice del patrón geométrico, se escucha un chasquido seco, metálico, que resuena en el silencio de la estancia. El bloque de piedra no se desplaza, sino que vibra brevemente antes de que una sección circular del material se retraiga hacia el interior con una suavidad antinatural, revelando un hueco perfectamente cilíndrico.
+> En el fondo de la cavidad, bañada por un tenue resplandor amatista que emana de las paredes internas, descansa una pequeña pieza de obsidiana tallada en forma de ojo cerrado. El mecanismo ha quedado abierto, dejando la pieza expuesta y accesible, mientras un siseo de aire antiguo escapa del compartimento, trayendo consigo un olor a ozono y polvo mineral.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2933 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: pieza de obsidiana tallada en forma de ojo cerrado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item pieza de obsidiana tallada en forma de ojo cerrado
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 25 — 25/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1400 ms
+
+> "Interesante."
+> Me acerco al hueco y extiendo la mano para coger la pieza de obsidiana.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 17+1=18
+
+### [4] DM
+
+  5574 ms
+
+> Tus dedos rozan la superficie fría y vítrea de la obsidiana, pero mientras retiras la pieza del hueco, tu vista capta un detalle ínfimo en el fondo del cilindro. Bajo la luz amatista, el relieve del fondo no es liso; hay una serie de muescas grabadas en el borde interno, como los dientes de una cerradura o el rastro de un engranaje que ha girado miles de veces.
+> Al extraer el ojo cerrado, el resplandor violeta se apaga bruscamente, sumiendo el compartimento en una oscuridad absoluta. El siseo de aire cesa de golpe, dejando un vacío sordo en la habitación, mientras el peso de la piedra en tu palma se siente ligeramente más cálido de lo que debería ser un mineral.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3137 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Tarq · character.inventory = pieza de obsidiana tallada en forma de ojo cerrado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3883: Tarq.inventory = pieza de obsidiana tallada en forma de ojo cerrado
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 26 — 26/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1658 ms
+
+> "Interesante."
+> Guardo la pieza de obsidiana y trato de palpar las muescas del fondo del cilindro para entender su mecanismo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+2=6
+
+### [4] DM
+
+  3870 ms
+
+> Tus dedos recorren el interior del cilindro, buscando el patrón de aquellas muescas en la negrura total. Sin embargo, la superficie es traicionera; el tacto se siente resbaladizo y las ranuras son tan finas que se confunden con el desgaste natural de la piedra o simples imperfecciones del tallado.
+> No logras discernir ninguna secuencia lógica ni el funcionamiento del mecanismo. Solo sientes el frío persistente del hueco vacío, que ahora parece absorber el escaso sonido de la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1113 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 27 — 27/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1787 ms
+
+> "Maldita sea, esto es más complejo de lo que parece."
+> Saco el cilindro del hueco y lo examino a la luz, buscando cualquier marca o inscripción que no sea perceptible al tacto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+2=21
+
+### [4] DM
+
+  4042 ms
+
+> Al retirar el cilindro, la luz revela que el material no es piedra, sino una obsidiana pulida que devuelve un reflejo distorsionado de tu rostro. Bajo el brillo vítreo, aparecen grabados microscópicos, casi invisibles, que forman una serie de anillos concéntricos interceptados por líneas radiales, similares a una rosa de los vientos deformada. 
+> Al girar la pieza, notas que tres de esas líneas están ligeramente más profundas y contienen un residuo blanquecino, seco, que brilla débilmente con un matiz plateado. No son muescas accidentales, sino marcas de uso deliberadas que señalan puntos específicos del mecanismo, revelando el patrón exacto que el tacto no pudo descifrar en la oscuridad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1330 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 28 — 28/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1666 ms
+
+> "Interesante. No es piedra, es cristal."
+> Me acerco más para analizar esos grabados y el residuo plateado, intentando comprender la lógica de esas marcas.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+2=20
+
+### [4] DM
+
+  38374 ms
+
+> La luz incide sobre la obsidiana y, bajo el análisis minucioso, la geometría del artefacto cobra sentido. El residuo plateado no es suciedad, sino un lubricante alquímico seco que ha quedado atrapado en los surcos más profundos. Al seguir las líneas radiales, comprendes que el mecanismo no funciona mediante una rotación simple, sino a través de una secuencia de presiones y giros coordinados: las tres marcas actúan como anclas que definen un código de apertura basado en la posición de los anillos concéntricos.
+> La lógica es fría y matemática; los grabados indican que el cilindro debe ser alineado primero con la marca más externa, luego rotado hacia la intermedia y, finalmente, presionado en el punto más interno. El patrón sugiere que el objeto no fue diseñado para ser abierto por azar, sino por alguien que poseyera el mapa exacto de estas muescas invisibles para el ojo inexperto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1227 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 29 — 29/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1490 ms
+
+> "Interesante. Una cerradura para quien sabe dónde mirar."
+> Intento manipular los anillos y presionar el mecanismo siguiendo la secuencia descrita.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+2=21
+
+### [4] DM
+
+  6267 ms
+
+> Tus dedos se deslizan sobre la obsidiana fría, siguiendo la coreografía geométrica que habías deducido. Al alinear el cilindro con la marca externa, el metal emite un clic seco y metálico que vibra en la yema de tus dedos. El giro hacia la marca intermedia es más fluido, lubricado por los restos de aquel polvo plateado que cede bajo la presión, hasta que el mecanismo encaja con un sonido sordo, casi orgánico.
+> Al presionar el punto más interno, se escucha un siseo de aire comprimido que escapa de las juntas del artefacto. Con un movimiento lento y preciso, la cubierta de obsidiana se desplaza hacia un lado, revelando un compartimento interno donde reposa un pequeño pergamino sellado con cera negra y un objeto que emite un tenue pulso violáceo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3668 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: objeto que emite un tenue pulso violáceo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item objeto que emite un tenue pulso violáceo
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 30 — 30/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1445 ms
+
+> "Al fin."
+> Ignoro el pergamino por un momento y extiendo la mano para tomar el objeto que pulsa en color violeta.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 8+1=9
+
+### [4] DM
+
+  5341 ms
+
+> Tus dedos cierran el agarre sobre el objeto violáceo. Al tacto, la superficie es irregular y gélida, como un trozo de vidrio tallado que no termina de asentarse en la palma de la mano. El pulso de luz es rítmico, pero débil, y no percibes ninguna vibración, olor ni sonido emanando de la pieza; es un fragmento inerte que solo ofrece el frío cortante de la piedra y el brillo intermitente de su color púrpura.
+> El compartimento de obsidiana permanece abierto, dejando que el aire viciado de la estancia sople sobre el pergamino sellado, que aguarda en el fondo del hueco.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2948 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Tarq · character.inventory = objeto que emite un tenue pulso violáceo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3902: Tarq.inventory = objeto que emite un tenue pulso violáceo
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 31 — 31/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2115 ms
+
+> "Curioso..."
+> Guardo el fragmento púrpura en mi bolsa y tomo el pergamino sellado del compartimento.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 11+2=13
+
+### [4] DM
+
+  2567 ms
+
+> El pergamino es pesado, de un cuero curtido que se siente grasiento al tacto. Al examinar el sello de cera roja que cierra el pliego, notas que el emblema grabado no es un escudo heráldico, sino una representación esquemática de un ojo cerrado, rodeado por una corona de espinas.
+> La cera está ligeramente agrietada, sugiriendo que el documento ha sido manipulado o movido bruscamente en el pasado, aunque el sello permanece intacto y el contenido sigue protegido contra el aire viciado de la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2015 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Tarq · character.inventory = pergamino
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3904: Tarq.inventory = pergamino
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 32 — 32/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2408 ms
+
+> "Una marca curiosa..."
+> Hago una pausa para analizar el diseño del sello, intentando recordar si he visto ese ojo y esas espinas en algún texto prohibido o ritual.
+> {Religión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Religión: 17+0=17
+
+### [4] DM
+
+  4463 ms
+
+> El diseño del ojo cerrado y la corona de espinas evoca una imagen familiar, aunque enterrada en los márgenes de los grimorios más oscuros. No es un símbolo de fe pública, sino la marca de un culto marginal vinculado al silencio y la vigilia eterna, aquellos que creen que la verdadera iluminación solo llega cuando se rechaza la luz del mundo físico para mirar hacia el vacío interior.
+> La precisión del trazo en la cera sugiere que quien selló el pliego no buscaba simplemente cerrar un mensaje, sino marcarlo con una advertencia: el contenido pertenece a alguien que ha jurado el secreto o que ha sido reclamado por el silencio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1713 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 33 — 33/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1875 ms
+
+> "El vacío interior... así que no son simples aficionados."
+> Observo el sello con detenimiento, buscando cualquier imperfección o marca adicional que revele la identidad de quien lo puso.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+2=6
+
+### [4] DM
+
+  2433 ms
+
+> El sello de cera es impecable, una superficie fría y dura que resiste cualquier intento de revelación superficial. No hay huellas dactilares accidentales, ni motas de polvo atrapadas que sugieran el lugar de origen, ni una sola grieta que indique que el pliego fue manipulado apresuradamente.
+> La marca del ojo y las espinas se mantiene nítida, casi quirúrgica, sin dejar rastro de la mano que sostuvo el sello. El silencio que evoca el símbolo parece extenderse ahora al papel, que no entrega ningún dato adicional bajo tu escrutinio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  984 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 34 — 34/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1357 ms
+
+> "Demasiado perfecto para ser humano."
+> Sigo examinando el sello, buscando algún rastro de magia o una firma oculta que no sea visible a simple vista.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 13+2=15
+
+### [4] DM
+
+  4300 ms
+
+> Al concentrar la vista y pasar los dedos con cuidado sobre los relieves, notas que la cera no ha sido vertida, sino moldeada con una precisión antinatural. No hay burbujas de aire ni irregularidades térmicas; la textura es uniforme, como si el material hubiera sido dictado por una voluntad externa y no por el calor de una vela.
+> Bajo la superficie del sello, detectas una sutil vibración, un rastro de energía residual que no emite luz ni sonido, pero que eriza el vello de tu nuca. No es una firma personal, sino una marca de propiedad: el sello actúa como un ancla mágica, diseñada para que quien lo envió pueda saber, con absoluta certeza, que el pliego ha sido manipulado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2569 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 35 — 35/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  18 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1499 ms
+
+> "Interesante. Alguien quiere saber exactamente cuándo me vuelva curioso."
+> Sigo analizando el sello para intentar identificar el origen de esa energía residual.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Arcanos: 6+2=8
+
+### [4] DM
+
+  3664 ms
+
+> Te concentras en la vibración del sello, tratando de desglosar la frecuencia de esa energía residual para hallar un patrón o una firma reconocible. Sin embargo, la magia es fría y opaca; el rastro es genérico, una herramienta de rastreo estándar que oculta la identidad de su creador detrás de una eficiencia técnica y desapasionada.
+> La energía sigue pulsando bajo tus dedos, pero no cede ningún dato sobre el origen ni el nombre de quien sostiene el otro extremo del ancla. Solo permanece la certeza de que el mecanismo está activo y esperando el momento en que el sello sea roto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  754 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 36 — 36/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  18 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2061 ms
+
+> "Eficiente, pero aburrido. Alguien ha tenido el cuidado de borrar su rastro."
+> Retiro la mano del sello y miro a mi alrededor buscando cualquier indicio físico que el creador haya podido pasar por alto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+2=6
+
+### [4] DM
+
+  3011 ms
+
+> Te alejas del sello y recorres la zona con la mirada, buscando una huella, un cabello o una mota de polvo fuera de lugar que traicione la pulcritud del hechizo. El aire es pesado y el entorno se siente estéril, como si el tiempo se hubiera detenido en este rincón.
+> Tus ojos escanean las superficies y las sombras, pero no encuentras nada. No hay marcas de botas en el suelo, ni raspaduras en las paredes, ni ningún objeto olvidado. La meticulosidad de quien dejó el sello se extiende a su presencia física: el lugar está impecable, vacío de cualquier pista tangible.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1351 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 37 — 37/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  18 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1167 ms
+
+> "Demasiado limpio para ser natural."
+> Me acerco al sello nuevamente y paso la mano a pocos centímetros de la superficie, buscando corrientes de aire o vibraciones mágicas.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Arcanos: 19+2=21
+
+### [4] DM
+
+  4265 ms
+
+> Al deslizar la mano sobre el sello, el aire gélido de la estancia se vuelve súbitamente eléctrico. No hay corrientes físicas, pero tus dedos perciben un hormigueo rítmico, una pulsación invisible que late con la cadencia de un corazón lento. La magia no es una barrera estática, sino un flujo circular que absorbe activamente cualquier residuo orgánico o rastro físico en el área inmediata, actuando como un vacío místico que devora la evidencia.
+> En el centro de esa vibración, detectas una sutil distorsión en la frecuencia. El sello no solo oculta lo que hay detrás, sino que ha sido anclado a una firma energética específica; hay un hilo residual, una especie de eco mágico que no pertenece al hechizo de sellado, sino a quien lo ejecutó, y que todavía vibra débilmente en la superficie.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  800 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 38 — 38/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  17 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1983 ms
+
+> "Interesante. Alguien dejó su marca en este vacío."
+> Cierro los ojos y trato de concentrarme en ese eco, buscando rastros de la firma energética para identificar quién lanzó el hechizo.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Arcanos: 1+2=3  PIFIA
+
+### [4] DM
+
+  3972 ms
+
+> Al cerrar los ojos y sumergirte en la frecuencia del eco, intentas aislar la firma energética, pero la pulsación del sello reacciona violentamente a tu intrusión. En lugar de desentrañar el rastro, provocas un cortocircuito en el flujo circular; una descarga de energía estática te golpea los dedos con la fuerza de un rayo, obligándote a retirar la mano bruscamente.
+> El vacío místico, perturbado por tu error, emite un chasquido seco que resuena en toda la estancia. La distorsión que habías detectado se colapsa sobre sí misma, borrando el hilo residual y dejando la superficie del sello ahora fría, inerte y completamente muda, eliminando cualquier posibilidad de rastrear la firma.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1051 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 39 — 39/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  17 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2051 ms
+
+> "Maldita sea."
+> Sacudo mi mano herida y observo la superficie del sello inerte con frustración. Me alejo un paso y miro alrededor de la estancia buscando cualquier otra señal física que el eco haya borrado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+2=18
+
+### [4] DM
+
+  3941 ms
+
+> El aire en la estancia permanece cargado de ozono y el silencio es ahora absoluto, pesado como una losa. Al alejarte del sello, tus ojos recorren las grietas del suelo y las sombras que se proyectan en las paredes, buscando cualquier rastro que la energía no haya incinerado.
+> Bajo una capa de polvo grisáceo y escombros cerca de la base del muro, detectas una irregularidad: un pequeño fragmento de pergamino carbonizado, adherido al suelo por una mancha de cera negra. Al rescatarlo, notas que solo sobrevive una frase escrita con una caligrafía apresurada y temblorosa: "...el precio del silencio se paga en la Capilla".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2283 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: fragmento de pergamino carbonizado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item fragmento de pergamino carbonizado
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 40 — 40/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  18 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1386 ms
+
+> "La Capilla... Interesante."
+> Guardo el fragmento de pergamino con cuidado y examino el resto de la estancia buscando más rastros de cera negra o marcas similares.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 9+2=11
+
+### [4] DM
+
+  3546 ms
+
+> Tus dedos recorren el polvo y las cenizas, palpando las irregularidades de la piedra y rastreando el rastro aceitoso de la cera negra. Sin embargo, el rastro se pierde rápidamente; el resto de la estancia parece haber sido barrido por la descarga de energía o simplemente consumido por el tiempo y la humedad del lugar.
+> No encuentras más fragmentos ni marcas distintivas. Solo queda el eco del silencio y el olor metálico del ozono que comienza a disiparse, dejando la habitación sumida en una penumbra fría y vacía.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1203 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 41 — 41/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  18 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1625 ms
+
+> "No puede haber terminado aquí."
+> Me pongo en pie y observo los rincones más oscuros de la habitación, buscando cualquier grieta o puerta oculta que no haya visto antes.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 7+1=8
+
+### [4] DM
+
+  3383 ms
+
+> Te levantas y escudriñas las sombras, obligando a la vista a adaptarse a la penumbra mientras recorres los ángulos de la estancia. El frío se filtra por tu ropa y el silencio se vuelve denso, casi tangible, pero los rincones permanecen mudos.
+> Las paredes son bloques de piedra bruta, húmedos y cubiertos de un moho grisáceo que parece absorber la poca luz que queda. No hay relieves sospechosos, ni corrientes de aire que sugieran un paso secreto, ni grietas que rompan la monotonía de la mampostería. A tus ojos, la habitación es un callejón sin salida de piedra y ceniza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  815 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 42 — 42/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  18 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2247 ms
+
+> "Demasiado silencio."
+> Me acerco a las paredes y paso la mano sobre el moho grisáceo, buscando cualquier anomalía en la textura o temperatura de la piedra.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+2=19
+
+### [4] DM
+
+  3231 ms
+
+> Tus dedos se hunden en la capa viscosa y fría del moho. Mientras recorres la superficie, sientes que el material no es uniforme; en un punto concreto, la humedad desaparece y la piedra se siente inusualmente seca y caliente al tacto. Al presionar con firmeza, un clic metálico y seco resuena en el silencio de la estancia, rompiendo la quietud.
+> Una sección de los bloques de piedra, perfectamente encajada y camuflada por la vegetación gris, retrocede unos centímetros y se desliza hacia un lado con un chirrido sordo. Detrás de la pared se abre un hueco estrecho y oscuro que exhala un olor rancio a pergamino viejo y hierro oxidado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5866 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación location: hueco estrecho y oscuro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location hueco estrecho y oscuro
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 43 — 43/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2009 ms
+
+> "Interesante."
+> Saco una antorcha, la enciendo y me asomo con cuidado al hueco para ver qué hay dentro.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 19+1=20
+
+### [4] DM
+
+  5172 ms
+
+> La luz anaranjada de la antorcha corta la penumbra y revela un nicho rectangular, apenas lo suficientemente ancho para que una persona entre de lado. En el fondo, sobre una repisa de piedra tosca, descansa un cofre de hierro negro con refuerzos de bronce oxidado, cerrado con un candado pesado que ha resistido el paso del tiempo. El aire aquí es denso, cargado de un polvo grisáceo que danza en el haz de luz.
+> Al observar con detenimiento el suelo del hueco, notas que la capa de polvo ha sido perturbada recientemente; hay una huella parcial de una bota, apenas un rastro borroso, que sugiere que alguien más ya estuvo aquí, aunque no se llevó el cofre. Junto a la base del metal, un jirón de tela de seda color púrpura, descolorido y manchado de humedad, se aferra a una astilla de la piedra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3952 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta hueco estrecho y oscuro · location.detail = observed
+  ✓ creación item: cofre de hierro negro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cofre de hierro negro
+  → delta 3926: hueco estrecho y oscuro.detail = observed
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 44 — 44/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  3399 ms
+
+> "Interesante. Alguien ha tenido miedo de terminar el trabajo."
+> Recojo el jirón de seda púrpura y examino la huella de la bota para intentar identificar el tipo de calzado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+2=4
+
+### [4] DM
+
+  2370 ms
+
+> Tus dedos recogen el trozo de seda púrpura, que se siente fría y pegajosa al tacto, desintegrándose ligeramente bajo la presión. Al inclinar la antorcha para analizar la huella en el polvo, la luz proyecta sombras erráticas que confunden los relieves. El rastro es demasiado borroso, una mancha grisácea que no revela el dibujo de la suela ni el desgaste del cuero; es solo una marca anónima de que alguien estuvo allí.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2454 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: jirón de seda púrpura
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item jirón de seda púrpura
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 45 — 45/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2290 ms
+
+> "Basura inútil."
+> Suelto el trozo de seda y guardo la antorcha en el soporte más cercano para observar el rastro sin que la luz me engañe. Intento discernir si hay alguna otra señal en el suelo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+2=14
+
+### [4] DM
+
+  5243 ms
+
+> Sin el baile errático de las llamas, el polvo se asienta en una quietud grisácea. Al agudizar la vista, notas que la mancha anónima no es la única marca; unos centímetros más allá, el suelo presenta unos surcos finos y paralelos, como si algo pesado hubiera sido arrastrado con brusquedad hacia la salida. 
+> Cerca del umbral, donde el arrastre termina, hay una pequeña astilla de madera blanca, recién rota, que no coincide con la madera oscura y carcomida de las paredes de la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2415 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: astilla de madera blanca
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item astilla de madera blanca
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 46 — 46/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1520 ms
+
+> Me acerco a la astilla de madera blanca y la recojo con cuidado.
+> "Esto no pertenece a este lugar."
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+2=16
+
+### [4] DM
+
+  5880 ms
+
+> Al examinar la astilla bajo la luz mortecina, notas que la madera blanca es densa y tiene un acabado pulido, similar al de un mueble fino o un bastón de mando, lejos de la tosquedad de las vigas del lugar. Al observar el punto exacto donde se rompió, percibes un resto casi imperceptible de cera roja adherida a la fibra, una sustancia que huele débilmente a mirra y a encierro.
+> Siguiendo la trayectoria de los surcos en el suelo, la marca de arrastre se vuelve más profunda justo antes de desaparecer tras el marco de la puerta, sugiriendo que quienquiera que haya sido el objeto arrastrado opuso una resistencia final o fue jalado con una violencia renovada hacia el exterior.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1883 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Tarq · character.inventory = astilla de madera blanca
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3932: Tarq.inventory = astilla de madera blanca
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 47 — 47/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1343 ms
+
+> "Mirra y cera roja... No es material de un campesino."
+> Me acerco a la puerta y observo con detenimiento el marco y el suelo donde la marca de arrastre desaparece.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+2=3  PIFIA
+
+### [4] DM
+
+  3895 ms
+
+> Al inclinarte sobre el marco de la puerta, el entusiasmo por el hallazgo te hace olvidar la precariedad del suelo podrido. Tu pie resbala bruscamente sobre una zona de madera húmeda y, en el intento desesperado por no caer, golpeas con fuerza el marco. El impacto provoca que una serie de astillas viejas y polvo acumulado caigan directamente sobre la marca de arrastre, cubriendo el surco y emborronando los restos de cera roja que habías identificado.
+> El ruido del golpe resuena en el silencio sepulcral del lugar, rompiendo la quietud de la estancia. Ahora, el rastro que conducía al exterior es una mancha confusa de detritos y madera astillada, borrando cualquier detalle preciso sobre la dirección o la violencia del arrastre.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  969 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 48 — 48/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1702 ms
+
+> "Maldita sea."
+> Me quedo inmóvil un momento, recuperando el equilibrio, y luego me pongo de rodillas para intentar limpiar los escombros con cuidado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+2=4
+
+### [4] DM
+
+  2634 ms
+
+> Tus dedos tantean la madera húmeda, apartando con cautela las astillas y el polvo grisáceo que han sepultado la marca. Sin embargo, el movimiento brusco del impacto ha hecho más que cubrir el rastro; la cera roja, ya antigua y quebradiza, se ha fragmentado en mil pedazos invisibles que se mezclan con la suciedad del suelo.
+> Cuanto más intentas limpiar la zona, más parece que el rastro se desvanece, convirtiéndose en una mancha informe de detritos. El surco que antes indicaba una dirección clara ahora es solo una irregularidad más en la madera podrida de la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  780 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 49 — 49/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1450 ms
+
+> "Maldita sea."
+> Suelto un suspiro y me pongo en pie. Me quedo quieto un momento, mirando el resto de la habitación para ver si hay alguna otra señal que haya pasado por alto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+1=17
+
+### [4] DM
+
+  4424 ms
+
+> Te enderezas, sacudiendo el polvo gris de tus ropas mientras tus ojos recorren la penumbra de la estancia. La habitación huele a moho y a hierro oxidado, un aire denso que parece pegarse a la garganta. Al desplazar la mirada lejos del suelo arruinado, notas que la luz que se filtra por las rendijas del techo cae oblicuamente sobre una de las paredes laterales.
+> Allí, parcialmente oculta por un jarrón volcado y una pila de pergaminos podridos, sobresale una pequeña muesca en el zócalo de piedra. No es una marca de cera, sino una serie de incisiones profundas y deliberadas en la roca, talladas con una herramienta afilada. Los trazos forman un patrón geométrico repetitivo, similar a una runa incompleta, que parece señalar hacia la esquina más oscura de la habitación, donde una pesada cortina de terciopelo raído cuelga desencajada de su riel.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  827 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 50 — 50/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1576 ms
+
+> "Interesante."
+> Me acerco a la pared para analizar las incisiones de cerca, intentando descifrar el significado de ese patrón geométrico.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Arcanos: 13+2=15
+
+### [4] DM
+
+  6611 ms
+
+> Te inclinas sobre la piedra fría, donde el tacto de las incisiones es irregular y agresivo, como si quien las talló tuviera más prisa que precisión. Al analizar la geometría, reconoces que no se trata de una runa de conjuración ni de un lenguaje académico, sino de un sistema de marcas rudimentarias utilizado antiguamente para el anclaje de energías residuales. El patrón no busca invocar nada, sino actuar como una flecha metafísica; es un sello de dirección que canaliza la atención —o algo más intangible— hacia el punto exacto donde la cortina de terciopelo oculta el rincón.
+> El aire alrededor de las marcas se siente ligeramente más gélido, y el polvo que las rodea parece vibrar con una frecuencia casi imperceptible. La runa incompleta sugiere que el proceso de marcado fue interrumpido o que requiere de un elemento externo para completarse, pero su propósito es inequívoco: lo que sea que esté detrás de esa tela raída es el objetivo de quien dejó estas señales.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1465 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 51 — 51/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1562 ms
+
+> "Interesante. Alguien tenía mucha prisa por señalar el camino."
+> Me acerco lentamente hacia la cortina de terciopelo, manteniendo la vista fija en la tela. {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+1=2  PIFIA
+
+### [4] DM
+
+  2777 ms
+
+> Mientras avanzas con cautela hacia el terciopelo, tu excesiva concentración en la tela te hace olvidar el terreno bajo tus pies. Un trozo de madera podrida del suelo cede con un chasquido seco, provocando que tu pie se hunda y pierdas el equilibrio bruscamente.
+> El impulso te lanza hacia adelante, haciendo que choques violentamente contra la cortina. La tela, ya debilitada por el tiempo, se rasga con un sonido estridente mientras caes pesadamente al suelo, quedando expuesto y vulnerable justo en el centro del rincón que las marcas señalaban.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2576 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 52 — 52/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1375 ms
+
+> "Maldita sea..."
+> Gruño mientras intento incorporarme rápidamente, sacudiéndome el polvo y mirando a mi alrededor para ver quién me ha visto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 7+1=8
+
+### [4] DM
+
+  2685 ms
+
+> El estruendo del tablón roto y el desgarro de la tela han roto el silencio del lugar, dejando un eco sordo que reverbera en las paredes húmedas. Te incorporas con torpeza, sintiendo el tacto áspero del polvo y las astillas en la piel, mientras el rincón que antes permanecía oculto tras el terciopelo queda ahora plenamente a la vista.
+> A tu alrededor, el aire es pesado y huele a moho y encierro. A pesar de tu esfuerzo por detectar cualquier presencia, el entorno se mantiene inquietantemente mudo; no hay pasos apresurándose hacia tu posición ni susurros en las sombras, solo el goteo rítmico de alguna filtración distante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1054 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 53 — 53/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  1896 ms
+
+> "Vaya manera de entrar."
+> Me sacudo el polvo de la ropa con calma y me acerco al rincón que ha quedado al descubierto para observar qué había oculto tras la tela.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+2=19
+
+### [4] DM
+
+  3440 ms
+
+> El rincón revela un pequeño nicho excavado directamente en la piedra, donde el polvo se ha asentado en capas gruesas. Al limpiar la superficie, emerge un escritorio de madera carcomida por la humedad y una silla cuya estructura cruje bajo el peso del aire. Sobre la mesa, un tintero seco y un montón de pergaminos amarillentos, pegados entre sí por la humedad, parecen haber sido abandonados con prisa.
+> Al examinar los papeles, rescatas una serie de notas fragmentadas. La caligrafía es errática y apresurada, describiendo coordenadas precisas dentro de la ciudad y menciones recurrentes a "la frecuencia del silencio". Una de las hojas contiene un mapa esquemático del sótano donde te encuentras, pero hay una marca roja, un círculo perfecto, que señala un punto exacto en la pared opuesta al nicho, donde la piedra parece ligeramente más lisa que el resto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2467 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: notas fragmentadas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item notas fragmentadas
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 54 — 54/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2274 ms
+
+> "La frecuencia del silencio... interesante."
+> Recojo los pergaminos y me dirijo hacia la pared opuesta para examinar el punto marcado en el mapa.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  7219 ms
+
+> Tus dedos recorren la superficie de la piedra, que se siente inusualmente fría y pulida en comparación con la porosidad del resto del muro. Al aplicar una presión precisa en el centro del círculo marcado, un mecanismo interno, oxidado pero funcional, emite un chasquido seco que resuena en el silencio del sótano. Una sección rectangular de la pared se desliza hacia atrás con un siseo, revelando no una habitación, sino un hueco estrecho que alberga una caja de hierro negro, sellada con cera roja y grabada con el mismo símbolo de la "frecuencia del silencio" que viste en los papeles.
+> El aire que emana del compartimento huele a ozono y a metal antiguo, una fragancia eléctrica que eriza el vello de tus brazos. La caja está encajada con tal precisión que no hay espacio para palancarla; parece esperar a que alguien conozca la clave o posea la fuerza necesaria para romper el sello.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2851 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: item.inventory
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 55 — 55/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2259 ms
+
+> "Vaya, así que el silencio tiene un cofre."
+> Saco la caja del hueco y examino el sello de cera y las grabaciones para ver si reconozco algún método de apertura.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+2=20
+
+### [4] DM
+
+  5928 ms
+
+> Tus dedos recorren las incisiones del hierro negro, sintiendo que los grabados no son meramente ornamentales, sino que forman un patrón de surcos concéntricos que guían la vista hacia el centro. Al analizar el sello de cera roja, notas que no es una simple marca de propiedad; la cera envuelve la unión de la tapa con el cuerpo de la caja en un patrón entrelazado, diseñado específicamente para que cualquier intento de forzar la cerradura rompa el sello de manera evidente.
+> Sin embargo, observas que el símbolo de la "frecuencia del silencio" en la parte superior tiene una pequeña depresión, un orificio circular apenas perceptible que coincide exactamente con el diámetro de un anillo o una llave pequeña. La disposición de las marcas sugiere que el mecanismo no es de giro, sino de presión: el sello de cera actúa como un fusible; si se aplica la presión correcta en el punto exacto, la caja se abrirá sin romper la cera, pero cualquier error en la secuencia provocará que el sello se agriete, alertando a quienquiera que haya dejado el tesoro allí.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1481 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 56 — 56/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2596 ms
+
+> "Interesante mecanismo."
+> Examino el orificio con cuidado para ver si hay algún rastro de desgaste que indique la frecuencia de uso o el tipo de llave necesaria.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+2=17
+
+### [4] DM
+
+  4714 ms
+
+> Al inclinar la caja bajo la luz, el orificio circular revela un desgaste asimétrico; el borde interno está ligeramente pulido, sugiriendo que la llave no solo entra, sino que es presionada con un ángulo específico hacia la derecha. Pequeñas partículas de un polvo blanquecino, casi imperceptibles, se han acumulado en los surcos concéntricos que rodean la depresión, indicando que el mecanismo se ha accionado repetidamente con un objeto que ha dejado un residuo mineral, posiblemente piedra caliza o un metal oxidado.
+> El patrón de desgaste confirma que el sello de cera es, efectivamente, una distracción visual: el verdadero juego ocurre en la profundidad del orificio. La precisión del rozamiento sugiere que la llave es una pieza cónica, diseñada para encajar a presión y activar un resorte interno que libere el cierre sin mover la tapa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2385 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 57 — 57/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  3726 ms
+
+> "Interesante. No es un simple cierre, es un filtro."
+> Examino el polvo blanquecino con cuidado, intentando determinar si es caliza o algún otro mineral común en la zona.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+2=14
+
+### [4] DM
+
+  6881 ms
+
+> El polvo es granuloso y se desprende con facilidad al tacto, dejando un rastro seco y ligeramente alcalino en la yema de los dedos. Tras analizar la textura y el color bajo la luz, el residuo se identifica claramente como caliza, el mismo material poroso y pálido que predomina en los cimientos de la Capilla Vieja y en las canteras que rodean el casco antiguo de Umbral Hondo.
+> El mineral no parece haberse depositado por azar; está concentrado en los puntos de fricción del mecanismo, lo que sugiere que quien manipulaba la caja frecuentaba los alrededores de las estructuras de piedra caliza o, más probablemente, que la llave misma está tallada en ese material.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1631 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 58 — 58/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2477 ms
+
+> "Caliza... el mismo polvo de los cimientos."
+> Me fijo en el mecanismo de la caja buscando cualquier rastro de desgaste o marcas que confirmen que la llave sea de ese material.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+2=10
+
+### [4] DM
+
+  5707 ms
+
+> El metal del mecanismo se siente frío y opaco, cubierto por una pátina de tiempo que desdibuja los detalles. Al pasar la vista y el tacto por las ranuras y los engranajes, el desgaste parece uniforme, producto del paso de los años más que de un uso reciente o específico.
+> No hay muescas profundas, arañazos distintivos ni marcas de fricción que delaten la dureza o el material de la llave que encaja allí. El polvo de caliza sigue allí, pero el mecanismo permanece mudo, guardando el secreto de su apertura bajo una superficie gastada y anónima.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  800 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 59 — 59/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  3214 ms
+
+> "Demasiado silencio para mi gusto."
+> Sigo examinando el mecanismo, buscando cualquier inscripción oculta o un patrón que no sea evidente a simple vista.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 13+2=15
+
+### [4] DM
+
+  15362 ms
+
+> El tacto se vuelve más meticuloso, recorriendo las aristas del metal con la punta de los dedos mientras la luz juega con las sombras de las ranuras. Bajo una capa persistente de hollín y caliza, en la base del cilindro donde el mecanismo se une a la piedra, emerge una serie de muescas deliberadas. No son marcas de desgaste, sino incisiones precisas que forman un patrón geométrico: tres líneas paralelas cruzadas por una diagonal ascendente.
+> El símbolo es tenue, casi borrado por la erosión, pero se distingue claramente del resto de la pátina. Alrededor de la marca, el metal parece haber sido tratado con algún tipo de barniz antiguo que ha repelido parte de la suciedad, dejando el grabado expuesto como una señal silenciosa que aguarda ser reconocida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3315 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 60 — 60/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2104 ms
+
+> "Interesante..."
+> Paso los dedos sobre el grabado, intentando recordar si he visto este símbolo en algún texto prohibido o ritual previo.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Arcanos: 16+2=18
+
+### [4] DM
+
+  9688 ms
+
+> El tacto del barniz antiguo es frío y sorprendentemente suave frente a la aspereza de la piedra. A medida que la mente rastrea los márgenes de los grimorios prohibidos y los fragmentos de rituales olvidados, el símbolo encaja: no es una marca de propiedad, sino un sello de anclaje utilizado en la arquitectura rúnica para contener flujos de energía residual. Las tres líneas representan la estabilidad de la materia, mientras que la diagonal ascendente indica una "puerta abierta" o un conducto que drena la esencia hacia un plano inferior.
+> El diseño es característico de las prácticas marginales de los Hijos del Umbral, quienes suelen marcar los puntos de fuga energética en la ciudad para rastrear la actividad sobrenatural o para alimentar sus propios artefactos. El grabado no es un adorno, es un indicador técnico que señala que este mecanismo no solo mueve metal, sino que interactúa con algo invisible que late bajo la caliza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1469 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 61 — 61/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  5803 ms
+
+> "Así que los Hijos del Umbral han estado aquí..."
+> Paso los dedos sobre la diagonal ascendente, intentando sentir si queda algún rastro de esa energía residual.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Arcanos: 13+2=15
+
+### [4] DM
+
+  12588 ms
+
+> Al deslizar las yemas de los dedos sobre la diagonal ascendente, el frío del metal se transforma en un hormigueo eléctrico que trepa por el brazo. Hay un eco vibrante, una pulsación débil pero rítmica que resuena en la punta de los dedos como el latido de un corazón enterrado bajo capas de sedimentos. La energía no fluye, sino que gotea; es un residuo estancado que confirma que el conducto fue activado recientemente, dejando una firma energética aceitosa que todavía se aferra a la superficie del grabado.
+> El aire alrededor del mecanismo se vuelve pesado y adquiere un regusto metálico, similar al olor del ozono tras una tormenta. La vibración es sutil, pero persistente, indicando que el anclaje sigue conectado a esa fuente invisible en el plano inferior, manteniendo la puerta entreabierta y el flujo de esencia activo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2931 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 62 — 62/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  3525 ms
+
+> "Sigue latiendo, como si estuviera vivo."
+> Cierro los ojos para concentrarme en la frecuencia de esa pulsación y trato de identificar el origen de la energía.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Arcanos: 12+2=14
+
+### [4] DM
+
+  11881 ms
+
+> Al cerrar los ojos, el ruido del mundo exterior se apaga y la pulsación se vuelve el centro de todo. La frecuencia no es natural; es un patrón matemático, una secuencia de impulsos cortos y largos que se repiten con una precisión mecánica y fría. No es el latido de un ser orgánico, sino la resonancia de un anclaje rúnico que actúa como un puente.
+> La energía que percibes tiene un matiz violáceo y denso, característica de la magia de transmutación aplicada a la apertura de planos. El origen no está en la habitación, sino que el mecanismo funciona como una antena: la fuente de energía se encuentra desplazada unos metros hacia abajo, probablemente en una cámara subterránea o un sótano que sostiene la estructura del edificio, bombeando esa esencia aceitosa hacia arriba para mantener el portal estable.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1442 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 63 — 63/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  3049 ms
+
+> "Típico. Siempre esconden la maquinaria en el sótano."
+> Abro los ojos y empiezo a buscar cualquier trampilla, escalera o pasaje que conduzca a la planta inferior.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+2=16
+
+### [4] DM
+
+  10498 ms
+
+> Tus ojos recorren la estancia, descartando la ornamentación superflua y centrándose en las irregularidades del suelo. Bajo una pesada alfombra de lana raída y polvo, que amortigua los pasos y oculta la geometría de la habitación, detectas una ligera depresión en las tablas de madera. Al apartar el tejido, revelas una trampilla de roble reforzada con bandas de hierro oxidado, cuya madera ha sido desgastada en los bordes por el uso frecuente.
+> La tapa no tiene cerradura visible, pero el sello de cera que sella la junta entre la madera y el marco está roto, dejando escapar una corriente de aire gélido que huele a moho y a metal quemado. El rastro de energía violácea que percibiste antes se intensifica aquí, palpitando débilmente a través de las rendijas, confirmando que el corazón del mecanismo late justo debajo de tus pies.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8483 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación location: sótano del consultorio
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location sótano del consultorio
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 64 — 64/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  4550 ms
+
+> "Huele a descuido y a magia mal gestionada."
+> Me inclino sobre la trampilla y acerco la mano al flujo de aire para analizar la naturaleza de esa energía.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Arcanos: 12+2=14
+
+### [4] DM
+
+  9051 ms
+
+> Al acercar la mano, el aire gélido te acaricia la piel con una sensación eléctrica que eriza el vello de los brazos. La energía violácea no fluye de forma natural, sino que se manifiesta en pulsos erráticos, como el latido de un corazón enfermo. Identificas que se trata de una distorsión de la Trama, un residuo de magia de transmutación que ha sido forzada y mantenida artificialmente, probablemente mediante un catalizador que se está degradando rápidamente.
+> El aroma a metal quemado se vuelve más punzante, revelando que el flujo energético está consumiendo el material físico que lo sostiene. No es un hechizo activo y controlado, sino una filtración: algo allá abajo está empezando a desbordarse, y la estabilidad de la estructura que contiene esa energía es ahora precaria.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1879 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Trama
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 65 — 65/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  21 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  6229 ms
+
+> "Un corazón enfermo... fascinante."
+> Intento analizar la naturaleza de esa filtración para comprender el origen de la distorsión.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Arcanos: 12+2=14
+
+### [4] DM
+
+  9381 ms
+
+> El flujo violáceo vibra bajo tu tacto, revelando una firma energética caótica. Logras discernir que la distorsión no es un accidente, sino la consecuencia de un proceso de alquimia prohibida: alguien ha intentado fusionar materia orgánica con energía planar, pero la unión ha sido rechazada. La filtración que percibes es el "estornudo" de un experimento fallido que sigue latiendo en los niveles inferiores, consumiendo el entorno para intentar estabilizarse.
+> La estructura de piedra que sostiene la energía comienza a agrietarse con un chasquido seco. Una pequeña lasca de roca se desprende y se desintegra en ceniza grisácea al contacto con el resplandor, dejando claro que el catalizador está llegando a su punto de ruptura. El aire se vuelve denso, cargado de una electricidad estática que hace que el vello de tu nuca se mantenga erizado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1107 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 66 — 66/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  20 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  4350 ms
+
+> "Interesante... un rechazo planar."
+> Me alejo rápidamente de la estructura para evitar que el derrumbe me alcance, pero mantengo la vista fija en la grieta para intentar localizar la dirección exacta de donde proviene el pulso.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 5+1=6
+
+### [4] DM
+
+  8273 ms
+
+> Te alejas justo a tiempo para evitar que los escombros te golpeen, pero el caos visual del derrumbe te ciega. Mientras la piedra se fragmenta y el resplandor violáceo estalla en destellos erráticos, el polvo grisáceo y la estática saturan el ambiente, camuflando cualquier rastro del flujo. 
+> Te quedas mirando la grieta, pero los pulsos de energía se vuelven erráticos y difusos, fundiéndose con el ruido del colapso. No logras distinguir un patrón ni una dirección clara; solo percibes que el latido sigue ahí, oculto bajo toneladas de roca y ceniza, vibrando en una frecuencia que ahora resulta imposible de rastrear visualmente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2267 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 67 — 67/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2656 ms
+
+> "No te vas a librar tan fácilmente."
+> Me acerco a los escombros y trato de sentir la vibración del latido apoyando la mano sobre las piedras.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 9+1=10
+
+### [4] DM
+
+  9766 ms
+
+> El polvo flota en el aire como una mortaja espesa, impregnando el sabor a cal y azufre en tu garganta. Al apoyar la mano sobre la superficie rugosa y caliente de los escombros, el tacto es árido y caótico; sientes el crujido de la piedra asentándose y el hormigueo residual de la estática que aún recorre los fragmentos.
+> Sin embargo, el latido se ha vuelto un susurro esquivo. A pesar de tu esfuerzo por concentrarte, la vibración es demasiado débil o está tan fragmentada entre las capas de roca que no logras discernir una fuente concreta ni una dirección. Solo percibes un zumbido sordo y generalizado que parece emanar de todas partes y de ninguna a la vez.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1194 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 68 — 68/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  8622 ms
+
+> "Maldita sea, no te desvanezcas ahora."
+> Me pongo en pie y empiezo a caminar lentamente, extendiendo la mano para sentir si el zumbido se intensifica en algún punto concreto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+1=2  PIFIA
+
+### [4] DM
+
+  10430 ms
+
+> Al ponerte en pie, un fragmento de piedra inestable cede bajo tu bota con un chasquido seco. El equilibrio te traiciona y tropiezas violentamente hacia adelante, aterrizando de bruces contra una saliente de roca afilada que te rasga la palma de la mano y te deja el sabor metálico de la sangre en los labios.
+> El impacto provoca un pequeño derrumbe de cascajo a tu alrededor. El estruendo del material colapsando ahoga por completo el zumbido residual, sumergiendo el entorno en un silencio sepulcral y opresivo que parece borrar cualquier rastro de la vibración que perseguías.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5951 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Tarq · character.conditions = herida en la palma de la mano
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3971: Tarq.conditions = herida en la palma de la mano
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 69 — 69/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  5221 ms
+
+> "Maldita sea..."
+> Me incorporo lentamente, ignorando el dolor mientras cierro el puño para detener el sangrado. Escucho con atención el silencio, intentando captar cualquier eco del zumbido antes de que desaparezca del todo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 14+1=15
+
+### [4] DM
+
+  9412 ms
+
+> El silencio es denso, casi tangible, y el aire huele a polvo antiguo y hierro. Al agudizar el oído, el vacío absoluto comienza a fracturarse; el zumbido no ha desaparecido, sino que se ha desplazado. Ya no es una vibración atmosférica, sino un pulso rítmico y sordo que emana desde lo profundo de la roca, justo debajo de donde aterrizaste.
+> Es un sonido visceral, como el latido lento de un corazón colosal envuelto en capas de piedra, que reverbera débilmente en la planta de tus pies cada pocos segundos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1392 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 70 — 70/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  3143 ms
+
+> "Esto no es natural."
+> Me pongo de cuclillas y apoyo la palma de la mano directamente sobre la roca para sentir mejor la frecuencia de ese pulso.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 10+1=11
+
+### [4] DM
+
+  10187 ms
+
+> La piedra bajo tu palma está fría, una frialdad mineral que cala hasta los huesos, pero la vibración es innegable. El pulso es lento, pesado, una sacudida rítmica que parece desplazar el aire mismo en intervalos regulares.
+> Sin embargo, la superficie es irregular y el ruido ambiental del vacío juega contigo. Sientes el movimiento, pero no logras distinguir si se trata de un mecanismo antiguo, un flujo geológico extraño o algo orgánico respirando en la oscuridad. El origen sigue siendo un misterio enterrado bajo capas de roca compacta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1884 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 71 — 71/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bercelio Nax: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  19 entidades · contexto de 990 caracteres
+
+### [2] JUGADOR — Tarq
+
+  2029 ms
+
+> "Interesante. Demasiado rítmico para ser simple roca."
+> Apoyo el oído contra la piedra para intentar discernir la naturaleza del pulso.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 14+1=15
+
+### [4] DM
+
+  11569 ms
+
+> Al presionar el oído contra la superficie gélida, el ruido blanco del vacío se apaga y el sonido se vuelve nítido. No es un flujo de agua ni el crujido de la tectónica; es un golpe seco, metálico, seguido de un siseo de aire comprimido que escapa por alguna fisura invisible. 

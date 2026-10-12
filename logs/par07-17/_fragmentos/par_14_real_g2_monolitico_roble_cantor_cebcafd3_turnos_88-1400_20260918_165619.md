@@ -1,0 +1,23390 @@
+
+# VERTICAL SLICE — Par 14 (real) · G2 (Monolítico) · Roble Cantor (monolithic)
+
+- **DM:** `google/gemma-4-31B-it`
+- **jugador:** `google/gemma-4-31B-it` (Kestra, desvío 80)
+- **turno:** 88
+
+## Turno 88 — 1/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4178 ms
+
+> "No te preocupes por eso ahora, Toño. Céntrate en el festival."
+> Le doy una palmada afectuosa en el hombro mientras aprovecho el contacto para asegurarme de que no haya nada más de valor que pueda tomar.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 10+2=12
+
+### [4] DM
+
+  6193 ms
+
+> Toño asiente con lentitud, dejándose llevar por el consuelo de la palmada. Sus hombros se relajan un poco y exhala un aire cargado de melancolía, cerrando los ojos un instante para recomponerse mientras acepta el consejo.
+> Tus dedos se deslizan con cautela por la tela de su chaqueta, pero el tacto solo encuentra el forro desgastado y algunas fibras sueltas. No hay más bolsillos ocultos ni objetos de valor que escapen a tu vista; el hombre está tan vacío de posesiones como lo está ahora su bolsillo principal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1535 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 89 — 2/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3292 ms
+
+> "No te preocupes, Toño. A veces el destino nos deja en blanco para que podamos escribir algo mejor."
+> Le doy otra palmada afectuosa en el hombro y me alejo lentamente, manteniendo la sonrisa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+3=17
+
+### [4] DM
+
+  10644 ms
+
+> Toño esboza una sonrisa débil, aunque sus ojos permanecen nublados por una tristeza que no termina de marchar. "Gracias, forastero. Quizás tengas razón", murmura mientras se queda allí plantado, observando el vacío del camino con una expresión de resignación.
+> Al alejarte, notas que Toño no se desmorona del todo; hay un matiz en su actitud, una chispa de determinación oculta tras el desánimo. A pesar de su lamento por la flauta perdida, no parece estar en un estado de desesperación absoluta, sino más bien en una tensa espera, como quien guarda un as bajo la manga pero teme que el resto de la mesa descubra el truco.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1742 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 90 — 3/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  134723 ms
+
+> "Tengo un ojo entrenado para los secretos, Toño. Esa mirada no es de alguien que se ha rendido."
+> Me detengo y vuelvo hacia él, intentando leer qué es exactamente lo que oculta.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+3=5
+
+### [4] DM
+
+  7930 ms
+
+> Toño se tensa visiblemente al escuchar tus palabras y da un paso involuntario hacia atrás, alejándose un centímetro del camino. Sus dedos se cierran con fuerza sobre la tela de su ropa y desvía la mirada hacia el horizonte, evitando cualquier contacto visual directo.
+> "Solo es el cansancio, forastero", responde con una voz que suena demasiado apresurada para ser natural. A pesar de su intento de sonar convincente, Toño mantiene una postura rígida y defensiva, como si estuviera protegiendo algo invisible justo delante de él.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2133 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 91 — 4/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3675 ms
+
+> "El cansancio es un mal compañero de viaje, Toño. Pero parece que cargas con algo más que sueño."
+> Me acerco lentamente a él, manteniendo una expresión amable mientras intento notar si oculta algo bajo su ropa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+3=12
+
+### [4] DM
+
+  7683 ms
+
+> Toño suelta una risa nerviosa que termina en un carraspeo seco, mientras se endereza bruscamente para recuperar la compostura. Se cruza de brazos, un gesto que parece más un escudo que una postura de descanso, y vuelve a mirarte con una sonrisa forzada que no llega a sus ojos.
+> "¡Bah! Hablas como los poetas de la capital, todo misterio y sombras", exclama, aunque sus hombros siguen tensos y su mirada baila inquieta, buscando cualquier excusa para retomar la marcha. "Vamos, que el sol no espera y el festival mucho menos".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3067 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 92 — 5/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3886 ms
+
+> "No me hables de poetas, Toño, que yo prefiero los hechos... y los secretos."
+> Le pongo una mano en el hombro y le doy un apretón amistoso pero firme, intentando leer qué es exactamente lo que intenta ocultar.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+3=12
+
+### [4] DM
+
+  6874 ms
+
+> Toño se tensa bajo la presión de tu mano, y aunque mantiene la sonrisa, sus mejillas se tiñen de un rojo súbito. Su mirada se desvía hacia el horizonte, evitando el contacto visual mientras intenta soltarse con un movimiento torpe, casi cómico, que lo hace tambalearse un poco.
+> "¡Secretos! ¡Qué palabra tan peligrosa para un día tan soleado!", exclama con una voz un octava más alta de lo normal. Se sacude el hombro con energía y comienza a caminar a pasos rápidos, dejándote un espacio para seguirle, pero sin mirar atrás.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2176 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 93 — 6/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3155 ms
+
+> "No seas tímido, Toño. El sol solo hace que la verdad brille más."
+> Le sigo el paso, caminando a su lado para recuperar el contacto visual.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+3=12
+
+### [4] DM
+
+  7319 ms
+
+> Toño suelta una risita nerviosa que suena más como un graznido, acelerando el paso mientras sus botas levantan pequeñas nubes de polvo del camino. Aunque intenta mantener un aire de despreocupación, sus hombros están rígidos y evita girar la cabeza hacia ti, concentrando toda su atención en el sendero que tienen delante.
+> El hombre tararea una melodía inconexa, fuera de tono, que parece servirle de escudo contra tus palabras. Sus gestos son erráticos y su lenguaje corporal delata una agitación que no encaja con la ligereza de su discurso, aunque no logra articular ninguna confesión ni dar pistas claras sobre lo que oculta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1202 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 94 — 7/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3588 ms
+
+> "Vaya, Toño, tienes un ritmo fascinante, pero esa canción suena a que escondes un secreto muy pesado."
+> Me adelanto un paso para quedar en su línea de visión y trato de leer sus gestos con atención.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 5+3=8
+
+### [4] DM
+
+  6799 ms
+
+> Toño se sobresalta ante tu movimiento, tropezando ligeramente con una piedra del camino. Se detiene en seco y te dedica una sonrisa forzada, demasiado amplia, que no llega a sus ojos inquietos. Sus dedos juguetean nerviosamente con el borde de su jubón, apretando la tela hasta dejarla arrugada.
+> —¡Bah! No es ningún secreto, solo es... ¡la emoción del festival! —exclama con un tono demasiado agudo—. Ya sabes que los nervios me ponen el canto un poco... rústico.
+> Ladea la cabeza y vuelve a caminar, esta vez aún más rápido, tratando de recuperar la distancia entre los dos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1227 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 95 — 8/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4717 ms
+
+> "Vaya, Toño, no sabía que la emoción te pusiera tan... tenso."
+> Acelero el paso para alcanzarlo y le pongo una mano en el hombro, apretando ligeramente para frenarlo. {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+3=11
+
+### [4] DM
+
+  7276 ms
+
+> Toño se tensa bajo tu mano como si hubiera recibido una descarga eléctrica, deteniéndose bruscamente. Suelta una risita nerviosa que suena más como un graznido que como una carcajada y se encoge de hombros, intentando zafarse del agarre con un movimiento torpe.
+> —¡Tensión! ¿Yo? ¡Para nada! Solo es el aire de la montaña, que hoy está especialmente... cargado —responde, evitando mirarte directamente a los ojos mientras su mirada baila inquieta entre el camino y el horizonte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1408 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 96 — 9/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  20065 ms
+
+> "El aire de la montaña es muy traicionero, Toño. Casi tanto como alguien que oculta algo."
+> Sigo presionándolo, estrechando el agarre mientras busco alguna señal de nerviosismo en su rostro.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+3=15
+
+### [4] DM
+
+  7437 ms
+
+> Toño traga saliva con dificultad, y el movimiento de su garganta es tan evidente que casi parece un espasmo. A medida que el agarre se cierra, sus pupilas se dilatan y empieza a sudar frío a pesar de la brisa fresca; sus dedos tamborilean frenéticamente sobre el costado de su túnica, evitando cualquier contacto visual.
+> —¡No oculto nada! —exclama con una voz que sube una octava, quebrándose al final—. Solo... ¡estoy emocionado por el festival! Sí, eso es, la emoción es una fuerza muy poderosa que puede confundirse con el nerviosismo. ¡Sueltame ya, que me estás arrugando la ropa!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4217 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 97 — 10/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  12537 ms
+
+> "La emoción es poderosa, sí... pero el sudor frío no suele acompañar a la alegría."
+> Aprieto un poco más el agarre mientras lo miro fijamente a los ojos, buscando cualquier rastro de lo que esconde bajo esa túnica.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+3=7
+
+### [4] DM
+
+  6278 ms
+
+> Toño suelta un chillido ahogado y se encoge, intentando encoger los hombros para alejarse de tu mirada. Sus ojos saltan de un lado a otro, evitando el contacto visual a toda costa, mientras que su respiración se vuelve errática y superficial.
+> —¡Es que... es un día muy caluroso para algunos! —balbucea, aunque el temblor de sus manos y la palidez de su rostro contradicen cualquier argumento sobre el clima. Se queda rígido, atrapado entre el pánico y la desesperación, sin hacer ningún movimiento concreto para revelar lo que oculta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1635 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 98 — 11/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4702 ms
+
+> "No me hables del clima, Toño. Háblame de lo que tienes ahí que te pone tan nervioso."
+> Me acerco un paso más, invadiendo su espacio personal para presionarlo.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 12+2=14
+
+### [4] DM
+
+  11576 ms
+
+> Toño retrocede hasta que su espalda choca con la madera rugosa de un puesto cercano, quedando acorralado. El aire huele a resina y a sudor frío. Al sentir tu presencia invadiendo su espacio, el hombre deja escapar un suspiro tembloroso y sus hombros caen, derrotado por la presión. Sus ojos, acuosos y asustados, se clavan finalmente en los tuyos mientras el pánico se transforma en una resignación patética.
+> —¡Está bien, está bien! No me presiones más, que me va a dar un síncope —suelta en un hilo de voz, mientras sus manos bajan lentamente hacia el interior de su túnica—. Solo es... un asunto de previsión. No es que no quiera a la Voz del Roble, ¡por los dioses que no! Pero el festival no puede quedar en silencio si ocurre una tragedia. No me mires así, es solo un seguro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  11890 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · threat_made
+  ✓ delta toño_bravante · npc.secret_revealed = Toño ya encargó en secreto una flauta nueva a un artesano de un pueblo vecino
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+  ✗ entidad inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 99 — 12/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  29530 ms
+
+> "Un seguro, ¿eh? Me gusta cómo piensas, Toño. Pero los seguros suelen costar dinero, y yo no soy un banco."
+> Sigo presionándolo contra el puesto mientras intento ver exactamente qué es lo que saca de su túnica.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 7+1=8
+
+### [4] DM
+
+  6306 ms
+
+> Toño se encoge aún más contra la madera, soltando un gemido ahogado cuando siente que no le das espacio para respirar. Sus dedos se agitan torpemente bajo la tela de la túnica, provocando que la prenda se mueva en ángulos erráticos, pero el movimiento es tan precipitado y el ángulo tan cerrado que no logras distinguir la forma ni el material de lo que intenta extraer.
+> —¡Dinero, dinero! Todo lo que sabes decir es dinero —balbucea el hombre, cerrando los ojos con fuerza mientras su cabeza choca contra el puesto—. No es un objeto de valor, ¡te lo juro! Es solo... un trámite. ¡Suéltame ya, que me estás arrugando la mejor túnica del Comité!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2076 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 100 — 13/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  21528 ms
+
+> "¿Un trámite? Me encantan los trámites, Toño. Especialmente los que se esconden bajo la ropa."
+> Sigo presionándolo contra el puesto y trato de sujetar su muñeca para evitar que siga moviendo la mano bajo la túnica.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 5+2=7
+
+### [4] DM
+
+  8158 ms
+
+> Toño suelta un chillido agudo, una mezcla de pánico y fastidio, mientras forcejea inútilmente contra tu presión. Sus movimientos son torpes y erráticos; al intentar retraer el brazo, se enreda con el propio pliegue de su túnica, lo que hace que su muñeca se deslice fuera de tu agarre con un movimiento brusco y des coordinado.
+> —¡Eres un animal! ¡Un bruto sin tacto! —exclama, recuperando un centímetro de espacio mientras se pega más a la madera del puesto, protegiendo con el cuerpo el espacio entre su torso y la tela. Su respiración es agitada y sus ojos, ahora muy abiertos, miran frenéticamente a su alrededor buscando a alguien que interrumpa la escena.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1435 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 101 — 14/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  22521 ms
+
+> "Tranquilo, Toño. Solo quería asegurarme de que no se te escapara nada importante."
+> Suelto una risita ligera y, aprovechando que sigue agitado y pegado al puesto, intento deslizar la mano rápidamente hacia el espacio que protege con el cuerpo.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 10+2=12
+
+### [4] DM
+
+  7641 ms
+
+> Toño se queda rígido, con el pecho subiendo y bajando violentamente mientras intenta recuperar el aliento. Su mirada salta de tu rostro a los transeúntes del mercado, murmurando palabras ininteligibles sobre la falta de modales de la juventud actual. Está tan absorto en su propia indignación y en el pánico de ser visto en tal situación que no percibe el movimiento coordinado de tus dedos.
+> Sin embargo, justo cuando tu mano se desliza hacia el hueco entre su torso y la tela del puesto, Toño da un respingo involuntario al escuchar el grito de un vendedor cercano. El movimiento brusco de su cadera desplaza el espacio disponible y tu mano choca contra la madera rugosa del mostrador, quedando fuera del objetivo antes de que pudieras rozar cualquier objeto oculto.
+> —¡No me toques! —espeta, retrocediendo un paso con un gesto de asco, aunque sigue bloqueando el acceso al interior del puesto con sus piernas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1213 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 102 — 15/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3135 ms
+
+> "¡Mil disculpas, buen hombre! Solo intentaba apartar una araña que trepaba por su hombro."
+> Pongo cara de horror y fingo sacudirme la mano con asco, mientras intento analizar dónde ha quedado el objeto tras el movimiento.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+3=6
+
+### [4] DM
+
+  6617 ms
+
+> Toño parpadea, confundido, y se lleva la mano al hombro con un gesto frenético, palpando la tela de su ropa mientras mira hacia abajo con desconfianza. Su indignación se transforma en una mezcla de sospecha y alivio cómico, aunque mantiene el ceño fruncido y el cuerpo tenso, vigilando que nadie más se acerque demasiado a su espacio personal.
+> Tu mirada recorre el ángulo del mostrador y la posición de Toño, pero el movimiento brusco ha dejado el área en un caos visual. Entre los pliegues de la tela del puesto, las sombras proyectadas por el sol del mediodía y la posición actual de las piernas del hombre, no logras distinguir ninguna silueta ni rastro del objeto que buscabas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1896 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 103 — 16/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  6015 ms
+
+> "Vaya, Toño, parece que los nervios te están jugando una mala pasada. Tranquilo, que no pasa nada."
+> Sigo sonriendo mientras intento distraerlo con gestos exagerados para que se relaje y se mueva, buscando que el objeto asome entre los pliegues.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 10+1=11
+
+### [4] DM
+
+  10096 ms
+
+> Toño suelta un bufido, aunque sus hombros descienden unos centímetros mientras intenta recuperar la compostura. Se endereza con un gesto pomposo, sacudiendo el polvo inexistente de su chaqueta y lanzando una mirada rápida a su alrededor para asegurarse de que ningún vecino del festival haya presenciado su momento de pánico.
+> —¡Bah! No son nervios, es la responsabilidad de cargar con el peso de la tradición sobre mis hombros —exclama, gesticulando con amplitud mientras se desplaza ligeramente para recuperar su postura habitual—. Simplemente estoy... alerta. ¡Muy alerta!
+> A pesar de sus movimientos y de los gestos exagerados que intentas provocar, el juego de sombras bajo el mostrador y la densidad de las telas del puesto siguen ocultando cualquier detalle. No logras distinguir nada inusual entre los pliegues ni bajo sus pies.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1158 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 104 — 17/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4200 ms
+
+> "Claro, la tradición es una carga pesadísima, Toño. Casi puedo ver el cansancio en tus ojos."
+> Le doy una palmada afectuosa en el hombro mientras intento deslizar mi mano hacia el bolsillo de su chaqueta.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 5+2=7
+
+### [4] DM
+
+  8687 ms
+
+> Toño infla el pecho, complacido por el reconocimiento de su "sacrificio", y suelta una risita nasal mientras se acomoda el cuello de la chaqueta. —Exactamente. Es un don y una maldición, mi joven amigo, un don y una mal... —su frase se corta abruptamente cuando siente el roce inoportuno en su ropa.
+> Con un reflejo sorprendentemente rápido para alguien de su complexión, Toño atrapa tu muñeca en el aire, apretando el agarre con firmeza pero sin llegar a lastimar. Te mira con el ceño fruncido y una chispa de sospecha genuina en los ojos, mientras se aparta un paso para poner distancia entre su bolsillo y tu mano. —¿Qué haces? ¿Acaso intentas hacerme un truco de magia o es que mi chaqueta tiene un imán que te atrae?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3603 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 105 — 18/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  7820 ms
+
+> "¡Oh, por favor! Solo estaba intentando quitarte una mota de polvo, Toño. No querría que alguien tan distinguido luciera descuidado."
+> Pongo mi mejor cara de inocencia y trato de zafarme de su agarre con un movimiento fluido.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 4+4=8
+
+### [4] DM
+
+  6342 ms
+
+> Toño entorna los ojos, escudriñando tu rostro con una expresión de escepticismo absoluto. El agarre en tu muñeca no flaquea; al contrario, aprieta un poco más mientras suelta un bufido cargado de incredulidad.
+> —¿Una mota de polvo? —repite con voz aguda, arqueando una ceja—. He visto trucos más convincentes en el circo de los lunes, muchacho. No me tomes por tonto; esa "mota" estaba peligrosamente cerca de mi bolsillo.
+> Sigue sujetándote con firmeza, negándose a soltarte hasta que estés convencido de que no volverás a intentar ningún "ajuste de vestuario".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2591 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 106 — 19/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4735 ms
+
+> "Oh, Toño, me hieres. Mi única intención era que lucieras impecable ante el mundo."
+> Pongo mi mejor cara de indignación herida y trato de deslizarme suavemente para soltarme de su agarre.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 4+2=6
+
+### [4] DM
+
+  6160 ms
+
+> Toño suelta una carcajada nasal, totalmente inmune a tu fingida indignación. Sus dedos, curtidos por años de organizar festivales y lidiar con imprevistos, se cierran con más fuerza justo cuando intentas deslizarte. El movimiento es torpe y te encuentras anclado en el sitio, quedando en una posición incómoda que solo sirve para resaltar tu intento de huida.
+> —¡No me vengas con esas! —exclama, tirando de ti hacia atrás para mantenerte a una distancia segura de sus bolsillos—. Tienes la lengua muy ágil, pero los pies te fallan. No te muevas ni un centímetro hasta que me des una explicación que no suene a cuento de camino.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1294 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 107 — 20/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2954 ms
+
+> "Vaya, Toño, no sabía que tenías reflejos de gato. Es un don, sinceramente."
+> Pongo mi mejor cara de sorpresa y suelto una risita, intentando relajar la tensión mientras busco una forma de soltarme.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 14+4=18
+
+### [4] DM
+
+  11169 ms
+
+> Toño parpadea, sorprendido por el giro repentino de tu actitud. La risa y el cumplido parecen desarmar su guardia, y su expresión de sospecha se suaviza en una mueca de orgullo involuntario. Sus dedos se relajan, soltando el agarre sobre tu ropa con una lentitud casi distraída mientras se endereza, acomodándose el jubón con un gesto satisfecho.
+> —Bueno, es que Toño no solo organiza el festival, Toño vigila que nadie se lleve los adornos antes de tiempo —responde con un guiño, aunque ya no te mantiene anclado al sitio—. Pero tienes razón, el don es natural. Ahora, ya que hemos admitido mis virtudes, vuelve a empezar: ¿qué es lo que realmente buscas aquí?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5558 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 108 — 21/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3190 ms
+
+> "Busco el corazón del festival, Toño. Alguien con tu visión debe conocer los rincones donde ocurre la verdadera magia, lejos de las multitudes."
+> Le doy una palmada amistosa en el hombro mientras intento notar si lleva alguna bolsa o llave colgando del cinturón.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+3=11
+
+### [4] DM
+
+  7580 ms
+
+> Toño suelta una carcajada sonora que hace vibrar sus mejillas, inflándose de importancia ante la mención de su "visión". Se cruza de brazos, mirando hacia la plaza con un aire de autosuficiencia, disfrutando del papel de guía exclusivo de los secretos del festival. 
+> —¡Ja! Tienes buen ojo y mejores palabras. La verdadera magia no está en los puestos de algodón de azúcar, eso está claro —dice, mientras comienza a caminar con paso pomposo, invitándote a seguirlo—. Ven, te mostraré dónde se cocina el alma de esta fiesta, pero no digas que Toño te ha llevado, que luego todos querrán el tour VIP.
+> Mientras camina, el movimiento de su jubón y el ritmo de sus pasos ocultan cualquier detalle de su cintura. A simple vista, no distingues ninguna llave, bolsa o objeto singular que cuelgue de su cinturón.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7297 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 109 — 22/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2729 ms
+
+> "No te preocupes, Toño. Tu secreto está a salvo conmigo... por ahora."
+> Lo sigo manteniendo una distancia corta y natural, mientras intento observar sus movimientos para detectar cualquier bulto oculto bajo el jubón.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 14+1=15
+
+### [4] DM
+
+  6459 ms
+
+> Toño camina con el pecho henchido, gesticulando con las manos mientras describe las maravillas que están por venir. A medida que avanza, el balanceo de su jubón revela un relieve sutil pero constante en el lado derecho de su cintura; no es una llave ni una bolsa, sino la forma alargada y cilíndrica de un estuche de cuero endurecido que se ajusta firmemente a su cuerpo, oculto bajo la tela.
+> El grupo llega a un callejón flanqueado por toldos de colores vibrantes que filtran la luz del sol en tonos ámbar y carmesí. Toño se detiene frente a una pesada cortina de terciopelo verde oscuro y, lanzando una mirada rápida hacia atrás para asegurarse de que nadie los sigue, hace un gesto con la mano para que entres.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3503 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: estuche de cuero endurecido
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item estuche de cuero endurecido
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 110 — 23/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2652 ms
+
+> "Parece un lugar encantador, Toño. Casi me da miedo entrar."
+> Sigo sus pasos hacia la cortina, pero intento acercarme lo suficiente a su costado derecho para intentar quitarle el estuche sin que se dé cuenta.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 7+2=9
+
+### [4] DM
+
+  6727 ms
+
+> Toño suelta una carcajada sonora y te da una palmada amistosa en el hombro, sin notar la intención oculta tras tu movimiento. Al intentar deslizar la mano hacia el estuche de cuero, el jubón de Toño, más grueso y rígido de lo que parecía, actúa como una barrera; tus dedos rozan la tela, pero el objeto está demasiado ajustado al cuerpo y Toño se mueve con una energía errática que hace que tu intento sea torpe y clothing-estorboso.
+> El hombre se aparta un centímetro para descorrer la cortina de terciopelo, rompiendo cualquier ángulo de aproximación. "¡Miedo! ¡Ja! El único miedo que deberías tener es el de perderte el espectáculo más grande de la década", exclama mientras abre el paso hacia el interior, dejándote la entrada libre.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1192 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 111 — 24/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3348 ms
+
+> "Tienes razón, Toño. No puedo permitirme perder el tiempo con miedos insignificantes."
+> Le sonrío mientras entro en el lugar, pero mantengo la vista fija en el estuche de cuero para estudiar mejor cómo está sujeto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+1=7
+
+### [4] DM
+
+  7367 ms
+
+> Cruzas el umbral hacia el interior, donde el olor a cera de vela y madera vieja llena el aire. Mientras caminas, intentas desentrañar la mecánica del estuche que Toño lleva sujeto al cuerpo, pero el hombre se mueve con una alegría bulliciosa, girando sobre sí mismo para señalarte los alrededores. Entre los pliegues del jubón rígido y el constante aleteo de sus brazos al hablar, el objeto se convierte en una mancha de cuero oscuro que desaparece y reaparece, sin que logres distinguir si está sujeto por una correa, un botón oculto o simplemente encajado en un bolsillo interno muy ceñido.
+> "¡Mira esto! ¡Todavía huele a resina fresca!", exclama Toño, señalando con entusiasmo una serie de atriles y partituras esparcidas que parecen haber sido organizadas hace apenas unos minutos. El estuche permanece fuera de tu alcance visual claro, oculto por el volumen de su propia ropa y su gesticulación efusiva.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1452 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 112 — 25/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3938 ms
+
+> "Es fascinante, Toño, realmente fascinante. Pero dime, ¿qué es exactamente lo que guardas con tanto celo en ese estuche?"
+> Me acerco a él con un gesto de admiración fingida, intentando posicionarme para ver el cierre mientras hablo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+3=20
+
+### [4] DM
+
+  10050 ms
+
+> Toño se detiene en seco, aunque su sonrisa no flaquea. Al observar su lenguaje corporal y la forma en que, casi inconscientemente, ha deslizado la mano sobre el cuero oscuro mientras hablas, notas una ligera tensión en sus hombros que contrasta con su alegría. No es la reacción de alguien que oculta un crimen, sino la de quien guarda un secreto incómodo, una mezcla de nerviosismo y una pizca de culpa que hace que su entusiasmo parezca, por un instante, una máscara demasiado brillante.
+> "¡Ah, esto!", responde soltando una carcajada sonora que resuena en la estancia. "Sencillamente el corazón de nuestra fiesta, amigo mío. Un tesoro que no puede permitirse ni un rasguño, ¡estaría en pecado si dejara que el aire lo tocara más de lo estrictamente necesario!" Te lanza una mirada cómplice, aunque sus dedos siguen apretando el estuche con una firmeza que delata que no tiene ninguna intención de abrirlo ahora.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1082 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 113 — 26/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2888 ms
+
+> "Un pecado, dices... Me encantan los pecados, suelen ser los tesoros más interesantes."
+> Le doy una palmadita amistosa en el hombro mientras intento sentir el peso y la forma del estuche bajo el cuero.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 14+2=16
+
+### [4] DM
+
+  5268 ms
+
+> Toño suelta una risita nerviosa ante tu comentario sobre los pecados, inclinando la cabeza con una expresión de complicidad forzada. Mientras tu mano desciende hacia el estuche en un movimiento fluido y natural, el cuero oscuro se siente frío y sorprendentemente rígido bajo tus dedos.
+> Al presionar ligeramente para calibrar el contenido, notas que el peso es insuficiente; el objeto en su interior es ligero, pero el espacio vacío dentro del estuche es demasiado amplio para una sola flauta. El tacto revela una cavidad que no encaja con la forma del instrumento que Toño describe con tanto fervor.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1985 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 114 — 27/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3096 ms
+
+> "Vaya, Toño, este cuero es de una calidad exquisita. Se nota que cuidas tus posesiones."
+> Sigo fingiendo interés mientras intento deslizar mis dedos por la abertura del estuche para palpar qué hay exactamente en ese espacio vacío.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 12+2=14
+
+### [4] DM
+
+  7382 ms
+
+> Toño se infla el pecho, visiblemente halagado por el comentario. "¡Oh, gracias! Es cuero de buey curtido en el valle, lo mantenido con aceite de cedro cada luna llena", exclama mientras gesticula con entusiasmo, distraído por su propia elocuencia.
+> Tus dedos se deslizan con cautela por la abertura, explorando el vacío frío del interior. En lugar de la madera cilíndrica de una flauta, tus yemas rozan una superficie plana, rígida y ligeramente rugosa: un trozo de pergamino doblado cuidadosamente y encajado en un doble fondo del estuche, oculto bajo el forro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3786 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 115 — 28/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3062 ms
+
+> "El aceite de cedro es un toque maestro, Toño. Se nota que alguien con gusto cuida sus cosas."
+> Sigo manteniendo la conversación mientras intento extraer el pergamino con delicadeza sin que se note el movimiento.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 3+2=5
+
+### [4] DM
+
+  6004 ms
+
+> Toño cierra los ojos un instante, saboreando el elogio con una sonrisa satisfecha. "¡Exacto! El detalle es lo que separa a un músico de un verdadero custodio del arte", exclama, moviendo las manos con vehemencia para enfatizar sus palabras.
+> Sin embargo, en el momento en que intentas deslizar el pergamino hacia fuera, el papel se engancha bruscamente en una costura del forro. El movimiento provoca que el estuche se desplace visiblemente en tu mano y el roce del pergamino contra la madera produce un chasquido seco y delatador que corta el aire. Toño abre un ojo y baja la mirada hacia el estuche, frunciendo el ceño con curiosidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3498 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 116 — 29/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3029 ms
+
+> "¡Vaya! Este estuche tiene una calidad excepcional, se siente casi... vivo en las manos"
+> Sigo sonriendo y muevo el estuche con naturalidad, intentando disimular el enganche mientras mantengo el contacto visual.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 2+4=6
+
+### [4] DM
+
+  7099 ms
+
+> Toño no aparta la vista del estuche, manteniendo el ceño fruncido mientras el chasquido aún resuena en el silencio. Sus ojos viajan desde el objeto hasta los tuyos, y aunque la sonrisa persiste en tu rostro, él no parece comprar la distracción.
+> "¿Vivo? No seas presumido, muchacho, es madera de fresno curada en aceite, nada más", responde Toño con un tono seco, extendiendo la mano con firmeza para recuperar su propiedad. "Ahora, dame eso. No me gusta que las cosas se muevan así dentro; podría rayarse el barniz".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1797 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 117 — 30/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3416 ms
+
+> "Vaya, Toño, no sabía que el barniz fuera más valioso que la curiosidad."
+> Hago un movimiento rápido para deslizar el estuche hacia atrás, fuera de su alcance, mientras mantengo el contacto visual.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  7158 ms
+
+> El estuche se desliza sobre la superficie con una fluidez casi líquida, escapando de los dedos de Toño justo antes de que pueda cerrarlos sobre él. El movimiento es tan preciso y veloz que el hombre se queda con la mano suspendida en el aire, atrapando únicamente el vacío, mientras el objeto ya descansa seguro y lejos de su alcance.
+> Toño parpadea, confundido por la rapidez de la maniobra, y su ceño se frunce aún más al darse cuenta de que ha sido superado en reflejos. "¡Oye! ¡Que no es un juguete, muchacho!", exclama, aunque su tono es más de irritación que de verdadera ira, mientras intenta recuperar el equilibrio para intentar alcanzar el estuche de nuevo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3106 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 118 — 31/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2808 ms
+
+> "Tranquilo, Toño. Solo quería asegurarme de que no se rayara con tu entusiasmo."
+> Hago un gesto despreocupado con la mano mientras deslizo el estuche hacia mi propio costado para alejarlo más de él.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 18+4=22
+
+### [4] DM
+
+  7397 ms
+
+> Toño se detiene en seco, con el brazo a medio extender, y parpadea varias veces mientras procesa las palabras. Su expresión de irritación se desvanece, sustituida por una mirada de genuina preocupación y un toque de vergüenza. Se frota la nuca con la mano libre, soltando un suspiro que suena a rendición.
+> —Tienes razón, tienes razón... Es que los nervios me tienen los dedos torpes —admite, bajando los hombros y esbozando una sonrisa apenada—. Me he dejado llevar. Tienes buenos reflejos, muchacho, y un cuidado que yo ya quisiera tener con las cosas sagradas. Tenlo tú, que parece que el estuche confía más en tus manos que en las mías.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3243 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 119 — 32/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3801 ms
+
+> "No te preocupes, Toño. A todos nos pasa cuando la presión aprieta."
+> Le dedico mi sonrisa más reconfortante mientras guardo el estuche con cuidado. Aprovecho que Toño está distraído con su propia vergüenza para echar un vistazo rápido a sus bolsillos o a cualquier otro objeto que lleve encima.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 7+1=8
+
+### [4] DM
+
+  6793 ms
+
+> Toño asiente con gratitud, dejando escapar un suspiro de alivio mientras se apoya ligeramente en el marco de la puerta, relajando la tensión de su postura. Se queda un momento en silencio, mirando el suelo con una expresión pensativa, como si estuviera repasando mentalmente la lista de tareas pendientes para el festival.
+> Mientras guardas el estuche, desvías la mirada hacia la figura de Toño, intentando detectar cualquier objeto inusual en su persona. Sin embargo, el hombre viste ropas sencillas y holgadas que ocultan cualquier relieve, y sus movimientos tranquilos no revelan nada más que el desgaste natural de alguien acostumbrado al trabajo del campo y la organización.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1523 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 120 — 33/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3757 ms
+
+> "Me alegra haber sido de ayuda, Toño. Por cierto, con todo el ajetreo del festival... ¿no habrá algún rincón donde guardéis lo más valioso para que no se pierda?"
+> Le sonrío mientras busco alguna pista visual que me indique dónde guarda sus pertenencias importantes.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 18+3=21
+
+### [4] DM
+
+  5007 ms
+
+> Toño suelta una risita nasal y niega con la cabeza, aunque sus ojos se desvían instintivamente hacia el rincón más oscuro de la habitación, donde una pesada cómoda de madera de roble, con vetas profundas y herrajes de hierro oxidado, domina la esquina. Al notar su propio gesto, el hombre recupera la compostura y te mira con una chispa de complicidad.
+> —Lo más valioso está bajo llave, hijo, que el entusiasmo de los mozos del festival a veces es más peligroso que un lobo hambriento —dice, señalando con un gesto vago la robusta cómoda, mientras se endereza para acompañarte hacia la salida—. Pero no te preocupes, que mientras estemos nosotros, nada se moverá de su sitio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4464 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: cómoda de madera de roble
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cómoda de madera de roble
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 121 — 34/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2563 ms
+
+> "Tienes razón, los mozos son un peligro. Te acompaño a la puerta."
+> Sigo a Toño hacia la salida, pero intento echar un vistazo rápido al interior de la cómoda o buscar dónde guarda la llave mientras camino.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 17+1=18
+
+### [4] DM
+
+  5426 ms
+
+> Mientras caminas junto a Toño, tus ojos escanean la estancia con precisión quirúrgica. Al pasar junto a la pesada cómoda de roble, notas que el hombre no guarda la llave en los bolsillos de su chaleco, sino que cuelga de un cordel de cuero anudado a su cinturón, oculta parcialmente por el pliegue de la tela.
+> En un breve instante en que Toño se gira para abrir la puerta, alcanzas a ver que la cómoda no tiene un solo cajón, sino un compartimento superior con un doble fondo ligeramente desencajado, donde asoma la esquina de un pergamino amarillento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  952 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 122 — 35/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2203 ms
+
+> "Qué lugar tan acogedor tienes, Toño."
+> Me acerco a la cómoda mientras él sigue distraído con la puerta, intentando deslizar la llave del cinturón sin que lo note.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 13+2=15
+
+### [4] DM
+
+  4381 ms
+
+> Tus dedos se deslizan con una agilidad casi invisible sobre el cuero anudado al cinturón de Toño. El roce es mínimo, un movimiento fluido que aprovecha la inercia del giro del hombre; la llave se desliza fuera de su sitio y queda oculta en tu palma antes de que el tejido del chaleco vuelva a caer en su lugar.
+> Toño, ajeno al robo, termina de girar el pomo y empuja la puerta con un gesto entusiasta, dejando el camino libre hacia el exterior. El aire fresco de la tarde entra en la estancia, agitando ligeramente la esquina del pergamino que asoma en el doble fondo de la cómoda.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3365 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = llave
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4114: Kestra.inventory = llave
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 123 — 36/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1788 ms
+
+> "Después de ti, Toño. No queremos hacer esperar al aire fresco."
+> Cierro el puño sobre la llave y me acerco rápidamente a la cómoda para extraer el pergamino antes de salir.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 11+2=13
+
+### [4] DM
+
+  4612 ms
+
+> Toño suelta una carcajada sonora y se aparta con un gesto galante, abriendo paso con los brazos extendidos. "¡Tienes razón! Que el sol no nos encuentre encerrados entre papeles y polvo", exclama mientras comienza a caminar hacia el exterior, tarareando una melodía alegre y distraído por la brisa que ya empieza a llenar la habitación.
+> Tus dedos se hunden en el compartimento oculto de la cómoda, pero al intentar extraer el pergamino con rapidez, el papel se engancha en una astilla de la madera vieja. El movimiento brusco provoca que el documento se rasgue parcialmente y emita un chasquido seco y audible en el silencio de la estancia, quedando el trozo de papel atrapado y arrugado contra el fondo del mueble.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3024 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: item.conditions
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 124 — 37/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3038 ms
+
+> "¡Espera, Toño! He visto algo que se ha caído detrás de este mueble, creo que es tuyo."
+> Sigo intentando extraer el pergamino con cuidado para no romperlo más.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 17+2=19
+
+### [4] DM
+
+  4155 ms
+
+> Tus dedos se deslizan con precisión quirúrgica entre las astillas y el fondo rugoso de la cómoda. Con un movimiento fluido y delicado, logras liberar el resto del pergamino sin que el rasgado se extienda más, extrayéndolo del compartimento oculto justo antes de que Toño se aleje demasiado.
+> Toño se detiene en seco y gira la cabeza, mirándote con una expresión de curiosidad genuina y una sonrisa ligera. "¿Ah, sí? No sabía que se me había escapado nada en ese mueble viejo", comenta mientras retrocede unos pasos hacia ti, intrigado por el objeto que sostienes.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3204 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = pergamino enrollado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4121: Kestra.inventory = pergamino enrollado
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 125 — 38/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2281 ms
+
+> "No es nada, Toño. Un trozo de papel viejo que se había quedado pegado al fondo, seguramente basura de quien tuvo el mueble antes que tú."
+> Escondo el pergamino rápidamente en mi manga mientras mantengo la sonrisa.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 8+4=12
+
+### [4] DM
+
+  3180 ms
+
+> Toño entrecierra los ojos un instante, observando el movimiento rápido de tu brazo con una ceja ligeramente levantada. La sonrisa persiste en su rostro, pero el brillo de la curiosidad no se apaga del todo mientras analiza tu gesto.
+> "Bah, tienes razón. Este mueble ha pasado por más manos que un mazo de cartas en noche de feria", responde finalmente con una carcajada, dándose la vuelta para retomar su camino. "¡Basura y polvo, eso es lo único que guarda el pasado si no tienes cuidado!".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1064 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 126 — 39/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1830 ms
+
+> "Tienes una filosofía muy saludable, Toño."
+> Sigo caminando a su lado, manteniendo el paso, mientras intento notar si lleva algo de valor encima o si ha dejado algún rincón del local descuidado.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+1=17
+
+### [4] DM
+
+  8572 ms
+
+> Toño suelta una risita nasal, orgulloso de su pragmatismo, mientras sigue avanzando entre los trastos. El aire huele a madera vieja y cera rancia, y el ruido de sus botas contra el suelo de tablones oculta el roce de los objetos que dejáis atrás.
+> A medida que avanzáis, tu mirada capta un detalle en el rincón donde Toño se ha apoyado hace un momento: una pequeña caja de madera tallada, apenas visible bajo una pila de manteles polvorientos, que ha quedado ligeramente desplazada. Al observar al hombre, notas que el peso de su cinturón es irregular; hay un bulto rectangular y rígido oculto bajo el pliegue de su casaca, demasiado estructurado para ser una simple cartera.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2271 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: caja de madera tallada
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item caja de madera tallada
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 127 — 40/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2124 ms
+
+> "Este lugar es un tesoro escondido, Toño. Me tienes fascinado con tanta curiosidad"
+> Sigo caminando, pero intento deslizar la mano hacia la caja de madera mientras paso junto a ella.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 2+2=4
+
+### [4] DM
+
+  6832 ms
+
+> Toño suelta una carcajada jovial, gesticulando con entusiasmo hacia el resto del almacén. "¡Y esto es solo la superficie, amigo! Si supieras los trastos que guardamos en el sótano, pensarías que soy el dueño de un museo de cosas inútiles", exclama sin dejar de avanzar, absorto en su propio relato.
+> Al intentar deslizar la mano hacia la caja, el movimiento es torpe. Tus dedos rozan bruscamente la pila de manteles polvorientos, provocando que la tela se deslice con un ruido seco y que la pequeña caja de madera se desplace aún más, chocando contra una pata de metal con un tintineo metálico que resuena en el silencio del pasillo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2153 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 128 — 41/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1921 ms
+
+> "¡Vaya ruido! Parece que hasta los muebles tienen ganas de saludar."
+> Me quedo congelado un instante y luego río con naturalidad, tratando de distraer a Toño mientras busco la forma de recuperar la caja rápidamente.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 18+4=22
+
+### [4] DM
+
+  3807 ms
+
+> Toño se detiene en seco y gira la cabeza, pero al escuchar tu risa y el comentario, su expresión de sorpresa se transforma rápidamente en una sonrisa cómplice. Suelta otra carcajada, sacudiendo los hombros mientras vuelve a mirar hacia el pasillo, ignorando por completo el desplazamiento de la caja entre los manteles.
+> "¡Ja! Tienes razón, este almacén tiene vida propia, ¡estoy convencido de que los muebles se mueven cuando no miro!", exclama con total naturalidad, retomando su paso entusiasta hacia el fondo del local sin volver a mirar atrás.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1175 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 129 — 42/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1679 ms
+
+> "Parece que Toño tiene la cabeza en las nubes."
+> Aprovecho que sigue caminando para acercarme rápidamente a la caja y tratar de ver qué hay dentro sin que se dé cuenta.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  4810 ms
+
+> Te deslizas como una sombra entre los pliegues de los manteles, moviéndote con una fluidez casi sobrenatural que Toño, absorto en su propia charla, ni siquiera llega a intuir. El aire huele a polvo viejo y a cera de vela mientras te inclinas sobre la caja, que permanece ahora inmóvil y sumisa ante tu presencia.
+> La tapa de madera cruje apenas un suspiro al levantarse, revelando que el interior está acolchado con terciopelo carmesí desgastado. En el centro, reposando sobre la tela, hay un objeto envuelto en un paño de lino blanco que oculta su forma, aunque se percibe un relieve alargado y delgado. Toño sigue avanzando hacia el fondo del almacén, su voz resonando distante mientras sigue hablando solo sobre los preparativos del festival.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2644 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 130 — 43/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1756 ms
+
+> Me inclino sobre la caja y tomo el objeto envuelto en lino con cuidado, asegurándome de que no haga ruido.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 10+2=12
+
+### [4] DM
+
+  3788 ms
+
+> Tus dedos se cierran sobre la tela de lino con suavidad, deslizando el objeto fuera de su lecho de terciopelo sin que la caja emita el más mínimo sonido. El tacto es frío y la superficie, bajo la tela, se siente pulida y ligera, confirmando la forma alargada que intuías.
+> Toño se detiene a unos pasos, el eco de sus botas apagándose contra el suelo de madera. Se queda en silencio un instante, mirando hacia una estantería alta, ajeno a que el contenido de la caja ha sido sustraído.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4556 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = objeto envuelto en lino
+  ✓ creación item: objeto envuelto en lino
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item objeto envuelto en lino
+  → delta 4141: Kestra.inventory = objeto envuelto en lino
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 131 — 44/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2104 ms
+
+> "Vaya, Toño, ¿buscas algo en concreto o solo disfrutas del silencio?"
+> Guardo el objeto rápidamente entre mis ropas y me acerco a él con una sonrisa despreocupada.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 3+4=7
+
+### [4] DM
+
+  51165 ms
+
+> Toño se sobresalta ligeramente, girando la cabeza hacia ti con un parpadeo confundido. Sus cejas se fruncen mientras intenta recomponer su expresión, pero sus ojos recorren tu rostro con una chispa de sospecha, deteniéndose un segundo más de lo habitual en la línea de tus hombros y el ajuste de tus ropas.
+> —¿Eh? Ah, no, nada... Solo pensaba en el horario de los ensayos —responde con un tono dubitativo, aunque no se mueve de su sitio—. Pero me has pillado desprevenido. ¿Y tú qué haces aquí tan... animado?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  745 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 132 — 45/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1679 ms
+
+> "Solo disfrutando del ambiente, Toño. Aunque me parece que tienes la cabeza en otro sitio que no son los ensayos."
+> Me acerco un paso más a él, manteniendo una sonrisa relajada mientras trato de leer su lenguaje corporal.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+3=7
+
+### [4] DM
+
+  3722 ms
+
+> Toño suelta una risita nerviosa y se rasca la nuca, desviando la mirada hacia un grupo de músicos que afinan sus instrumentos a lo lejos. El movimiento es rápido, casi mecánico, y aunque intenta mantener el tono ligero, sus hombros permanecen tensos, como si estuviera protegiendo algo invisible detrás de él.
+> —¡Ja! Ya sabes cómo soy, siempre con mil cosas en la cabeza —dice, recuperando la compostura y soltando una palmada sonora en tu hombro—. El festival no se organiza solo, y los nervios me están comiendo vivo. Pero basta de hablar de mis dolores de cabeza, que el ambiente está magnífico hoy.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2527 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 133 — 46/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2250 ms
+
+> "Claro que sí, Toño, el festival es un éxito rotundo. Pero esos nervios... parecen venir de algo más concreto."
+> Sigo el movimiento de su mirada hacia los músicos mientras intento notar qué es exactamente lo que intenta ocultar.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+3=7
+
+### [4] DM
+
+  4612 ms
+
+> Toño suelta una carcajada forzada que suena más a un graznido que a una risa, mientras vuelve a centrar su atención en ti con una sonrisa demasiado amplia. Se endereza bruscamente, sacudiendo los brazos para deshacer la tensión, aunque el brillo de inquietud en sus ojos persiste mientras intenta desviar la conversación hacia la música que empieza a sonar en la plaza.
+> —¡Exageraciones! Solo es el estrés de que todo salga perfecto, ya sabes, la presión de los ancianos y esas cosas —responde, dando un paso hacia un lado para bloquear sutilmente tu línea de visión hacia los músicos, manteniendo el tono jovial pero con una mirada que pide a gritos cambiar de tema.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  863 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 134 — 47/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1818 ms
+
+> "Claro, la presión de los mayores es un peso insoportable. Pero dime, ¿qué es exactamente lo que no quieres que vea?"
+> Ignoro la música y trato de rodearlo para ver qué oculta.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+3=9
+
+### [4] DM
+
+  38535 ms
+
+> Toño se tensa visiblemente cuando intentas flanquearlo, moviendo los pies con una torpeza casi cómica para interponerse nuevamente en tu camino. Su sonrisa se congela, transformándose en una mueca forzada mientras sus manos gesticulan erraticamente en el aire, tratando de mantener el muro humano entre tú y el grupo de músicos.
+> —¿Ver? ¡No oculto nada, corazón! Solo que... ¡estos músicos son muy temperamentales! Si ven que alguien los observa con tanta intensidad, se ponen nerviosos y desafinan la primera nota —suelta con una risa nerviosa, aunque sus ojos se disparan hacia los lados, vigilando que no encuentres ningún hueco por donde asomarte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  871 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 135 — 48/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1644 ms
+
+> "No te preocupes, Toño, no soy yo quien los pone nerviosos, sino tu actitud tan... protectora."
+> Le doy una palmada amistosa en el hombro mientras intento deslizarme rápidamente hacia un lado para esquivarlo.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 16+2=18
+
+### [4] DM
+
+  34449 ms
+
+> La palmada en el hombro descoloca a Toño por un instante, dejándolo suspendido en un gesto de sorpresa. Aprovechando ese segundo de duda y su propia torpeza, te deslizas con un movimiento fluido y preciso, pasando por su costado como una sombra que elude un obstáculo.
+> Toño gira sobre sí mismo, pero llega tarde; sus pies se enredan y termina dando un pequeño salto involuntario hacia la dirección opuesta. Ahora, sin nada que te obstruya la vista, el grupo de músicos queda plenamente expuesto ante ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1317 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 136 — 49/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2710 ms
+
+> "Sigan tocando, caballeros, que el ritmo es exquisito"
+> Me acerco al grupo con una sonrisa relajada, intentando pasar desapercibido mientras busco cualquier objeto de valor que sobresalga de sus bolsillos o instrumentos.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 15+2=17
+
+### [4] DM
+
+  3748 ms
+
+> Los músicos, absortos en la melodía y alentados por el cumplido, ni siquiera desvían la vista de sus partituras ni de sus instrumentos. El ritmo se mantiene constante, creando una cortina sonora que camufla el roce de tu mano. Te mueves entre ellos con la naturalidad de quien pertenece al espectáculo, aprovechando el balanceo de los cuerpos al compás de la música.
+> Tus dedos encuentran un punto exacto: una pequeña bolsa de cuero que cuelga descuidadamente del cinturón del violinista. Con un movimiento seco y limpio, la desprendes sin que el músico sienta más que una leve brisa en la cintura. En tu palma ahora descansa el saco, cuyo peso sugiere unas cuantas monedas de plata y un objeto pequeño y sólido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2219 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = bolsa de cuero
+  ✓ creación item: bolsa de cuero
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item bolsa de cuero
+  → delta 4221: Kestra.inventory = bolsa de cuero
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 137 — 50/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1000 ms
+
+> "Un honor compartir el aire con tales maestros."
+> Guardo la bolsa rápidamente entre mis ropas y sigo caminando hacia la salida del escenario, manteniendo la sonrisa.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 16+2=18
+
+### [4] DM
+
+  2559 ms
+
+> Te deslizas fuera del escenario con la fluidez de una sombra, mientras la música continúa envolviendo el lugar en una atmósfera de júbilo. El violinista sigue entregado a su solo, balanceándose al ritmo de la melodía, completamente ajeno a que el peso de su cinturón ha disminuido.
+> Tus pasos te llevan hacia la salida, donde el bullicio de la multitud y el aroma a maíz tostado y resina te reciben. Detrás de ti, los músicos cierran la pieza con un acorde vibrante que desata los aplausos del público, sellando tu huida bajo el manto del ruido y la celebración.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  942 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 138 — 51/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1319 ms
+
+> "Una noche espléndida, ¿verdad?"
+> Sigo caminando hacia la salida con paso tranquilo, fundiéndome entre la gente mientras deslizo el botín en mi bolsillo. Me detengo un instante para observar quién de los asistentes parece haber notado algo extraño.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 12+1=13
+
+### [4] DM
+
+  42988 ms
+
+> El aire nocturno huele a pino y azúcar quemada, y el murmullo de la gente fluye a tu alrededor como un río espeso. Al detenerte y escudriñar los rostros entre la penumbra de las antorchas, ves a la multitud absorta en el espectáculo; los asistentes ríen, beben y comentan la actuación con gestos de admiración.
+> Nadie te sigue. En el escenario, el violinista comienza a recoger sus cosas con una sonrisa satisfecha, todavía sumergido en la euforia del aplauso, sin haber sentido el vacío en su cinturón. Todo el mundo mira hacia el centro de la plaza, dándote la espalda y dejándote el camino libre hacia la oscuridad de los senderos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1336 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 139 — 52/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1002 ms
+
+> "Un talento desperdiciado en una plaza tan pequeña."
+> Me deslizo hacia los senderos oscuros, alejándome del ruido mientras guardo el botín. 
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 8+2=10
+
+### [4] DM
+
+  4717 ms
+
+> Tus pasos resuenan ligeramente sobre la grava suelta mientras te alejas del resplandor de las antorchas. Justo cuando crees haberte fundido con las sombras, un grupo de asistentes que se desplaza hacia la zona de comida gira la cabeza, distraídos por el ruido de tus botas. Te ven un instante, como una silueta borrosa que se retira apresuradamente hacia la espesura, pero el eco de las risas y la música del escenario eclipsan tu huida.
+> Los senderos se abren ante ti, flanqueados por pinos centenarios cuyas ramas se entrelazan arriba, filtrando la luz de la luna en manchas pálidas sobre el suelo húmedo. El bullicio de la plaza se convierte rápidamente en un zumbido lejano, dejando que el silencio del bosque y el crujido de las hojas secas tomen el control.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  725 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 140 — 53/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1166 ms
+
+> Me detengo un momento para recuperar el aliento y escucho con atención el bosque, asegurándome de que nadie me ha seguido.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 7+1=8
+
+### [4] DM
+
+  4091 ms
+
+> El aire fresco del bosque llena tus pulmones, trayendo consigo el aroma a resina y tierra mojada. Te quedas inmóvil, aguzando el oído mientras el silencio se espesa a tu alrededor, pero el entorno se vuelve confuso; el viento susurra entre las copas de los pinos y el lejano eco de la fiesta crea una cacofonía que enmascara cualquier ruido sutil.
+> No logras distinguir ningún paso coordinado ni el crujido de ramas que delate una persecución. Sin embargo, la incertidumbre persiste, ya que el bosque parece absorber los sonidos, dejándote sin una certeza clara de si realmente estás solo o si algo, o alguien, se desplaza con más cautela que tú entre las sombras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2222 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 141 — 54/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1319 ms
+
+> "No me digas que me he perdido en un montón de pinos."
+> Me muevo con cuidado, tratando de no romper ninguna rama mientras busco alguna señal de camino o huellas frescas en el suelo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 17+1=18
+
+### [4] DM
+
+  7353 ms
+
+> Tus ojos recorren el manto de agujas secas y musgo, descartando las huellas erráticas de pequeños roedores hasta que, bajo la sombra de un pino centenario, detectas una anomalía. Hay una serie de hendiduras profundas y rítmicas en la tierra húmeda, demasiado pesadas para ser de un animal común, que se dirigen hacia el noreste, alejándose del ruido de la fiesta.
+> Al seguir la dirección de los rastros, el follaje se abre ligeramente y revela un sendero estrecho, casi devorado por la maleza, que serpentea entre los troncos. En el suelo, justo al borde del camino, brilla un pequeño fragmento de tela color carmesí, enganchado en una zarza, que ondea débilmente con la brisa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1207 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: fragmento de tela color carmesí
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item fragmento de tela color carmesí
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 142 — 55/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1175 ms
+
+> "Vaya, vaya... alguien ha tenido un accidente con su vestuario."
+> Me acerco con cuidado y arranco el trozo de tela carmesí de la zarza para examinarlo de cerca.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+0=4
+
+### [4] DM
+
+  2974 ms
+
+> Te inclinas sobre la zarza y retiras la tira de tela con delicadeza. Al extenderla sobre tu palma, notas que el tejido es áspero y grueso, una calidad tosca que no encaja con las sedas o linos finos de la nobleza, aunque el color carmesí es intenso y llamativo.
+> Al intentar analizar el corte o buscar algún patrón que revele el origen de la prenda, solo encuentras fibras deshilachadas y algunas manchas de barro seco. No hay insignias, bordados ni rastros de costura que permitan identificar a quién pertenecía el jirón.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  707 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 143 — 56/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1008 ms
+
+> "Vaya, qué calidad tan mediocre para un color tan regio."
+> Guardo el trozo de tela en mi bolsillo y miro a mi alrededor para ver si hay más rastros similares en la vegetación cercana.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  15999 ms
+
+> Tus ojos recorren la maleza con una agudeza casi sobrenatural, filtrando el ruido visual del bosque. Apenas a unos pasos, oculta bajo una capa de hojas secas y musgo, detectas una anomalía: el brillo metálico de un botón de latón, medio enterrado en la tierra húmeda. Al acercarte, notas que no es el único rastro; hay una línea casi invisible de ramas quebradas y hojas aplastadas que se adentra hacia la espesura, formando un sendero improvisado y apresurado que alguien intentó borrar, pero que para ti es ahora tan evidente como una carretera.
+> El viento sopla suavemente, trayendo consigo el aroma a resina y tierra mojada, mientras el bosque permanece en un silencio expectante. El rastro es fresco; la humedad de las hojas aplastadas aún no se ha evaporado del todo, sugiriendo que quienquiera que haya dejado aquel jirón carmesí no ha estado lejos por mucho tiempo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2456 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: botón de latón
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item botón de latón
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 144 — 57/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  22 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  998 ms
+
+> "Vaya, vaya... alguien tenía mucha prisa por desaparecer."
+> Recojo el botón de latón y comienzo a seguir el rastro con cuidado, intentando no dejar mis propias huellas.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 5+2=7
+
+### [4] DM
+
+  5436 ms
+
+> Tus pasos, aunque cautelosos, resultan torpes sobre el manto de hojarasca. Una rama seca cruje con un chasquido seco y violento bajo tu bota, rompiendo la quietud del bosque como un disparo. El sonido reverbera entre los troncos, alertando a cualquier criatura que se encuentre en los alrededores.
+> Mientras avanzas, el rastro se vuelve más errático. El sendero improvisado se bifurca bruscamente hacia un matorral de espinos, donde el brillo de otro objeto metálico asoma entre las zarzas, pero el ruido que has provocado ha hecho que las aves cercanas levanten el vuelo en un alboroto repentino, llenando el aire de graznidos nerviosos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1090 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 145 — 58/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  22 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1211 ms
+
+> "Vaya, qué delicadeza la mía."
+> Me acerco al matorral de espinos para intentar recuperar el objeto metálico sin hacerme daño.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  2538 ms
+
+> Tus dedos se deslizan con una precisión quirúrgica entre las púas afiladas, esquivando cada espina como si el matorral se abriera voluntariamente ante ti. No hay un solo rasguño en tu piel ni un tirón en tu ropa mientras recuperas el objeto con un movimiento fluido y casi imperceptible.
+> Lo que sostienes ahora es una pequeña pieza de plata cincelada, un remate ornamental que parece haber sido arrancado violentamente de un instrumento musical. El metal brilla intensamente bajo la luz filtrada por el dosel forestal, contrastando con el verde oscuro y hostil de las zarzas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1471 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: remate ornamental de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item remate ornamental de plata
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 146 — 59/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  23 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1118 ms
+
+> "Vaya, vaya... un tesoro perdido."
+> Examino la pieza de plata con detenimiento para ver si reconozco el instrumento al que pertenecía o si lleva alguna marca de propiedad.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+0=3
+
+### [4] DM
+
+  1967 ms
+
+> La pieza de plata es fría al tacto y presenta un diseño intrincado de hojas entrelazadas que parecen moverse si se miran fijamente. Sin embargo, el metal está parcialmente empañado por una capa de óxido verdoso y el lugar donde fue arrancada es una superficie irregular y rugosa, lo que dificulta cualquier análisis detallado de su encaje.
+> No logras distinguir ninguna firma de artesano, escudo heráldico o inscripción que identifique al propietario. Solo es un fragmento hermoso y mudo, un resto de plata que no revela el nombre del instrumento al que alguna vez dio brillo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  689 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 147 — 60/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  23 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1040 ms
+
+> "Vaya pieza... demasiado bonita para dejarla así."
+> Limpio el óxido verdoso con un trozo de tela para intentar revelar algún detalle oculto bajo la suciedad.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+0=2
+
+### [4] DM
+
+  1806 ms
+
+> Frotas la plata con insistencia, pero la tela solo desliza sobre la superficie sin lograr remover la costra verdosa. El óxido parece haberse fusionado con el metal en una capa rebelde que resiste el esfuerzo, dejando la pieza tan anónima y empañada como cuando la encontraste.
+> El fragmento permanece mudo, devolviendo un brillo sordo y opaco que no revela ninguna marca, firma ni secreto oculto bajo la suciedad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  624 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 148 — 61/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  22 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1077 ms
+
+> "Vaya, parece que el tiempo ha sido más generoso con la suciedad que con el metal."
+> Dejo de frotar y examino el fragmento buscando algún relieve o muesca que no dependa del brillo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 5+0=5
+
+### [4] DM
+
+  4420 ms
+
+> Pasas las yemas de los dedos con cuidado sobre la superficie, buscando cualquier irregularidad que el tacto pueda rescatar donde la vista ha fallado. Sin embargo, el metal se siente uniformemente rugoso y frío; no hay grabados, ni muescas, ni relieves que sugieran una forma deliberada o una inscripción oculta.
+> El fragmento sigue siendo una pieza de plata anónima y corroída, un enigma mudo que no ofrece ninguna pista sobre su origen ni su propósito a pesar de tu examen minucioso.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  870 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 149 — 62/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  22 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1009 ms
+
+> "Bueno, al menos brilla un poco."
+> Guardo el fragmento en mi bolsillo y busco con la mirada algún objeto de valor que haya pasado desapercibido en el lugar.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+1=7
+
+### [4] DM
+
+  2258 ms
+
+> Tus ojos recorren el entorno, escudriñando cada rincón, cada grieta y cada sombra del lugar en busca de algún destello o anomalía. Sin embargo, la vista se pierde en la monotonía de los escombros y el polvo, que parecen haber devorado cualquier rastro de valor que pudiera quedar.
+> El espacio permanece mudo y vacío, sin ofrecer nada más que la fría sensación de que ya has recogido lo único que el sitio estaba dispuesto a entregar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  684 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 150 — 63/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  22 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  919 ms
+
+> "Vaya decepción. Parecía un lugar con más... personalidad."
+> Sigo revisando los escombros, pero ahora me centro en buscar cualquier compartimento oculto o falso suelo bajo el polvo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+0=15
+
+### [4] DM
+
+  2201 ms
+
+> Tus dedos se hunden en el polvo grisáceo, apartando trozos de madera podrida y fragmentos de piedra. Al desplazar una pesada viga carbonizada que bloqueaba una esquina, notas que la superficie del suelo no suena hueca, sino que presenta una ligera irregularidad en el patrón de las losas.
+> Al presionar un relieve casi invisible en la piedra, un mecanismo oxidado chirría con esfuerzo y una pequeña losa se desliza hacia un lado. Debajo, resguardado de la humedad y el tiempo, descansa un hueco rectangular que contiene un pequeño cofre de hierro forjado, cerrado con un candado sencillo pero firme.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1291 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: cofre de hierro forjado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cofre de hierro forjado
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 151 — 64/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  23 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  952 ms
+
+> "Vaya, vaya... parece que alguien no quería que esto se encontrara."
+> Saco mis herramientas y trato de forzar el candado del cofre.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 2+2=4
+
+### [4] DM
+
+  1439 ms
+
+> El metal del candado resiste con una terquedad absoluta. Al intentar manipular el mecanismo, la herramienta resbala bruscamente contra el hierro oxidado, produciendo un chasquido metálico seco que resuena en el silencio de la estancia.
+> El candado permanece intacto, cerrado con firmeza, y una pequeña muesca se ha clavado en la superficie del hierro, dejando una marca evidente del intento fallido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  754 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 152 — 65/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  22 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  945 ms
+
+> "Maldita sea, un poco más de grasa y sería pan comido."
+> Retiro la herramienta y miro rápidamente a mi alrededor para ver si el ruido ha atraído atención.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 13+1=14
+
+### [4] DM
+
+  1935 ms
+
+> El eco del chasquido todavía vibra en el aire viciado de la estancia, pero el silencio regresa rápidamente. Al aguzar el oído, solo se percibe el goteo distante de alguna filtración y el crujido natural de la madera vieja del edificio; no hay pasos apresurados ni voces que se acerquen tras el ruido.
+> La habitación permanece en penumbra, iluminada apenas por hilos de luz que se cuelan entre las rendijas de las paredes. Todo parece seguir en su lugar, inmóvil y expectante, sin rastro de que alguien haya reaccionado al incidente con el candado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  691 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 153 — 66/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  22 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  915 ms
+
+> "Vaya, parece que el silencio es mi mejor aliado hoy."
+> Sigo examinando la habitación en busca de cualquier cajón, cofre o rincón oculto que pueda contener algo de valor.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+0=12
+
+### [4] DM
+
+  1648 ms
+
+> Tus dedos recorren la superficie polvorienta de los muebles y el tacto áspero de las paredes, buscando cualquier irregularidad o hueco que haya pasado desapercibido. La luz tenue juega con las sombras, haciendo que los rincones parezcan más profundos de lo que son, mientras el olor a madera húmeda y encierro llena tus fosas nasales.
+> Tras un examen superficial de la estancia, no encuentras compartimentos secretos ni cofres ocultos; los muebles son sencillos, funcionales y están vacíos. La estancia parece haber sido despojada de cualquier objeto de valor hace tiempo, dejando tras de sí únicamente el vacío y el silencio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2858 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 154 — 67/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  22 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1004 ms
+
+> "Vaya, qué gusto al lujo."
+> Me acerco a la puerta y miro hacia el pasillo para ver si hay alguien vigilando antes de salir.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 4+1=5
+
+### [4] DM
+
+  1647 ms
+
+> Te asomas con cautela, pero el ángulo de visión es limitado y el silencio del lugar juega con tus sentidos. Te quedas mirando la penumbra del pasillo, incapaz de distinguir si esos cambios en las sombras son simples juegos de luz o el movimiento de alguien que acecha al otro lado de la puerta.
+> El aire frío del corredor se cuela en la habitación, trayendo consigo un eco lejano que no logras identificar, dejándote con la incertidumbre de si el camino está despejado o si alguien acaba de notar tu presencia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  731 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 155 — 68/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  22 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1025 ms
+
+> "Vaya, qué acogedor..."
+> Me quedo inmóvil, conteniendo la respiración mientras aguzo el oído para identificar ese eco.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+1=2  PIFIA
+
+### [4] DM
+
+  3283 ms
+
+> En el instante en que intentas concentrarte para filtrar el ruido, un repentino y violento estallido de tos te sacude el pecho, rompiendo el silencio del pasillo con la fuerza de un disparo. El esfuerzo por contener la respiración ha resultado en un espasmo involuntario que resuena en las paredes del corredor, eliminando cualquier rastro de sigilo y delatando tu posición exacta.
+> Desde la penumbra del pasillo, el eco que intentabas descifrar se transforma en un sonido nítido: el roce rápido de cuero contra piedra y el metálico tintineo de una cadena que se tensa. Algo, o alguien, ha reaccionado a tu ruido y ahora se desplaza con rapidez hacia la puerta, impulsado por la certeza de que ya no estás solo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  700 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 156 — 69/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  22 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  983 ms
+
+> "Maldita sea..."
+> Me apoyo rápidamente contra la pared más cercana, tratando de recuperar el aliento mientras busco un lugar donde cubrirme o una ventaja inmediata.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 7+2=9
+
+### [4] DM
+
+  25494 ms
+
+> El roce del cuero se vuelve un galope frenético sobre la piedra. No hay tiempo para fundirse con las sombras; el ruido de tu tos ha dejado un rastro demasiado evidente y el pasillo, estrecho y desnudo, no ofrece refugio alguno. Tus intentos por mimetizarte con la pared resultan torpes, dejándote expuesto en el centro del corredor justo cuando una silueta oscura emerge de la penumbra.
+> Un guardia de armadura ligera, con el rostro parcialmente oculto por un casco de cuero, dobla la esquina a toda velocidad. Al verte ahí, congelado y recuperando el aliento, el hombre frena en seco, haciendo chirriar sus botas contra el suelo. Su mano derecha aprieta el mango de una maza y sus ojos se clavan en ti con una mezcla de sorpresa y hostilidad.
+> —¡Eh! ¿Quién demonios eres y qué haces merodeando por aquí? —brama el guardia, dando un paso adelante para cerrar la distancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1367 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 157 — 70/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  22 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1277 ms
+
+> "¡Oh, por los dioses! Menudo susto me has dado, buen hombre. Me he perdido buscando la salida y este pasillo es un laberinto"
+> Pongo mi mejor cara de confusión y vulnerabilidad, mientras intento analizar si lleva alguna bolsa de monedas o llaves colgando del cinturón.
+> {Engaño}
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 8+4=12
+  Percepción: 1+1=2  PIFIA
+
+### [4] DM
+
+  5512 ms
+
+> El guardia frunce el ceño, manteniendo la maza en alto. Sus ojos recorren tu rostro y tu postura, y aunque el tono de tu voz es suplicante, su expresión no se suaviza; se mantiene escéptico, percibiendo que hay algo en tu historia que no encaja con la urgencia de tu respiración.
+> —¿Perdido? Esto es el sector restringido, no el camino a las letrinas —responde con voz ronca, acortando la distancia—. No me vendas cuentos.
+> Mientras intentas buscar algún objeto de valor en su cinturón, el pánico y la prisa te traicionan. En un movimiento torpe al intentar enfocar la vista, tropiezas con el borde de tu propia bota o un saliente del suelo, provocando que pierdas el equilibrio y tambalees bruscamente hacia adelante, quedando en una posición ridícula y vulnerable justo frente al guardia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1607 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 158 — 71/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1194 ms
+
+> "¡Ay! Por los dioses, mis piernas no responden igual que mi lengua."
+> Suelto una risita nerviosa mientras trato de recuperar la compostura, aprovechando que estoy tan cerca para intentar deslizar mis dedos hacia su bolsa de monedas.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 11+2=13
+
+### [4] DM
+
+  2535 ms
+
+> El guardia suelta un bufido de desprecio mientras te ve tambalear, aprovechando tu torpeza para plantar firmemente su bota en el suelo y mantenerte a raya. Al intentar deslizar los dedos hacia la bolsa de monedas, tus movimientos resultan demasiado evidentes; el cuero de la bolsa roza contra el metal de su armadura con un chasquido seco que delata tu intención.
+> —¿Ahora resultas ser un ratero además de un mentiroso? —gruñe el hombre. En un reflejo rápido, te sujeta la muñeca con un agarre de hierro, apretando con fuerza mientras te obliga a quedar frente a él, con la bolsa de monedas aún intacta y fuera de tu alcance.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  742 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 159 — 72/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1324 ms
+
+> "¡Oh, por favor! Solo quería comprobar que tu bolsa estuviera bien cerrada, sería una tragedia que perdieras tu paga en un lugar tan peligroso."
+> Suelto una risita nerviosa y trato de zafarme de su agarre con un movimiento fluido.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 16+2=18
+
+### [4] DM
+
+  2899 ms
+
+> El guardia abre la boca para soltar otra reprimenda, pero el movimiento es tan súbito y preciso que sus dedos se cierran sobre el vacío. Con un giro ágil y un deslizamiento fluido, te escabulles de su agarre, dejando al hombre sujetando el aire mientras recuperas tu equilibrio y el espacio personal.
+> El guardia retrocede un paso, sorprendido por la rapidez de la maniobra, y se lleva la mano instintivamente al pomo de su espada. Su rostro, antes lleno de suficiencia, ahora muestra una mezcla de desconcierto y creciente irritación. —¡No te muevas, maldita sea! —brama, aunque su postura es ahora más defensiva que ofensiva.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1393 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 160 — 73/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  945 ms
+
+> "No hay necesidad de llegar a tanto, buen hombre. Solo ha sido un malentendido."
+> Le dedico mi sonrisa más encantadora mientras retrocedo lentamente, buscando una salida.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 1+4=5  PIFIA
+
+### [4] DM
+
+  13438 ms
+
+> La sonrisa, que pretendía ser un bálsamo, resulta forzada y fuera de lugar en el momento de tensión. El guardia no ve encanto, sino una burla descarada y una manipulación evidente. Sus ojos se entrecierran y el desconcierto se transforma en una furia fría; el gesto de retroceder es interpretado como una admisión de culpa y un intento de huida.
+> —¿Malentendido? ¡Te has burlado de mi autoridad en mi propia cara! —ruge el hombre. En lugar de relajarse, desenvaina la espada con un sonido metálico y seco, cerrando la distancia que acababas de crear con un paso pesado y decidido, bloqueando tu camino hacia la salida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  830 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 161 — 74/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1223 ms
+
+> "¡Por favor, calmaos! Solo era un gesto de respeto, una costumbre de mi tierra que quizá no conozcáis."
+> Levanto las manos en señal de paz, mientras intento buscar rápidamente algún objeto distraedly en su cinturón o algún punto débil en su postura.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 5+4=9
+
+### [4] DM
+
+  3457 ms
+
+> El guardia no se inmuta ante el ruego, y la mención a costumbres extranjeras solo parece alimentar su suspicacia. Sus fosas nasales se dilatan mientras sostiene la hoja de acero a la altura de tu pecho, manteniendo una guardia cerrada y compacta que no deja espacio para el diálogo ni para el engaño.
+> —¡Tus costumbres no sirven de nada cuando intentas jugar con quien lleva la ley! —escupe el hombre, apretando el puño sobre la empuñadura. El acero vibra ligeramente mientras da un paso más hacia ti, acortando la distancia hasta que puedes sentir el calor de su respiración y el olor a cuero viejo de su armadura.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  732 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 162 — 75/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1590 ms
+
+> "Tienes razón, la ley es clara. Pero un hombre con tu disciplina merece algo mejor que el sueldo de un guardia."
+> Sigo sonriendo mientras deslizo la mano lentamente hacia mi bolsa, buscando algo que capte su atención.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 18+4=22
+
+### [4] DM
+
+  2483 ms
+
+> La mirada del guardia se clava en tu mano con una intensidad depredadora, pero el brillo del objeto que asoma de tu bolsa detiene su avance en seco. El acero, que hace un instante parecía destinado a atravesarte, desciende unos centímetros mientras sus ojos se entrecierran, evaluando el valor de la oferta frente al riesgo de la negligencia. El músculo de su mandíbula deja de tensarse y el aire que expulsa ya no es un bufido de rabia, sino un suspiro contenido de codicia.
+> —La disciplina es una virtud... pero la lealtad tiene un precio que el ayuntamiento no sabe pagar —murmura, bajando la guardia lo suficiente para que el espacio entre vosotros se sienta menos asfixiante. Se echa hacia atrás un paso, abriendo el camino, y lanza una mirada rápida y nerviosa hacia los alrededores para asegurarse de que nadie más ha presenciado el intercambio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  739 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 163 — 76/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1243 ms
+
+> "Tú y yo sabemos que el silencio es la inversión más rentable de todas."
+> Saco el objeto por completo y se lo deslizo con rapidez, asegurándome de que desaparezca en su equipo antes de que pueda arrepentirse. 
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 4+4=8
+
+### [4] DM
+
+  7037 ms
+
+> El guardia cierra la mano sobre el objeto con un movimiento brusco, casi violento, y lo oculta en el pliegue de su cinturón en un parpadeo. Sin embargo, mientras el metal desaparece, sus ojos no abandonan los tuyos y una mueca de duda cruza su rostro. El brillo de la codicia sigue ahí, pero el gesto es torpe y su mirada se vuelve errática, como si buscara alguna señal de que lo estás engañando o de que alguien más ha visto el truco.
+> —No te pases de listo, forastero —gruñe, aunque ya no hay agresividad en su voz, sino una tensión nerviosa—. El silencio es rentable, sí, pero solo mientras el pago sea real. Lárgate antes de que cambie de opinión o de que mi capitán decida dar una vuelta por aquí.
+> Se aparta del camino con un movimiento seco, dejándote el paso libre, pero permanece rígido, vigilando tus espaldas con una desconfianza palpable.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  11358 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · bribe_offered
+  ✓ delta toño_bravante · npc.knowledge = Kestra le ha entregado un objeto como pago por su silencio
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+  ✗ entidad inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 164 — 77/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2487 ms
+
+> "Tienes razón, el tiempo es oro y yo no tengo intención de desperdiciar el tuyo."
+> Le dedico una sonrisa tranquilizadora mientras me alejo lentamente, pero intento notar si el objeto que ha guardado ha dejado alguna marca o rastro visible en su ropa.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 12+1=13
+
+### [4] DM
+
+  2100 ms
+
+> El guardia se mantiene inmóvil, como una estatua de cuero y metal, mientras te alejas. Su mirada sigue fija en tu nuca, cargada de una sospecha que no se disipa a pesar de tu sonrisa. El aire huele a polvo y a la resina dulce de los árboles cercanos, mezclado con el sudor rancio del hombre.
+> Al observar el lugar donde ocultó el objeto, notas que la tela gruesa de su cinturón se ha tensado, creando un bulto irregular y anguloso que rompe la línea de su uniforme. No hay rastro de sangre ni manchas, pero el peso de la pieza hace que el cuero ceda ligeramente hacia un lado, revelando que el objeto es más voluminoso de lo que parecía a simple vista.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  979 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 165 — 78/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1018 ms
+
+> "Disculpe, buen hombre, creo que ha dejado caer algo."
+> Me acerco rápidamente al guardia fingiendo ayudarle mientras intento quitarle el objeto del cinturón.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 3+2=5
+
+### [4] DM
+
+  3400 ms
+
+> El guardia reacciona con la brusquedad de un perro guardián al sentir el contacto inesperado. Antes de que tus dedos puedan siquiera rozar el cuero del cinturón, su mano enguantada atrapa tu muñeca en un agarre de hierro, apretando con fuerza suficiente para dejar marca.
+> —¿Ayudarme? —gruñe, acercando su rostro el tuyo, permitiéndote percibir el olor a tabaco masticado—. No he dejado caer nada, forastero. Y no me gusta que me toquen el uniforme.
+> El hombre te empuja hacia atrás con un movimiento seco y brusco, manteniendo su mano derecha apoyada firmemente sobre el bulto de su cinturón, ahora totalmente alerta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  897 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 166 — 79/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1950 ms
+
+> "Mis disculpas, oficial. Un tropiezo desafortunado, nada más."
+> Pongo mi mejor cara de confusión e inocencia, mientras trato de analizar su reacción para ver si realmente lleva algo valioso ahí abajo.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 14+4=18
+
+### [4] DM
+
+  2480 ms
+
+> El guardia mantiene la mirada fija en ti durante unos segundos, con los músculos del cuello tensos y la mandíbula apretada. Sin embargo, al ver tu expresión de desconcierto y escuchar las disculpas, la rigidez de sus hombros cede ligeramente. Suelta un bufido sonoro, aunque no retira la mano de su cinturón, asegurándose de que el bulto permanezca oculto y protegido.
+> —Ten más cuidado por dónde caminas, torpe —masca el hombre, recuperando su postura erguida y volviendo a mirar hacia el horizonte con desdén—. Circula antes de que decida que tu "tropiezo" es una molestia pública.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  687 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 167 — 80/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1102 ms
+
+> "Tienes toda la razón, oficial. Mi torpeza es un pecado que solo el camino puede curar."
+> Hago una reverencia exagerada y, mientras me alejo, intento echar un vistazo rápido a lo que oculta en su cinturón.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 3+1=4
+
+### [4] DM
+
+  2712 ms
+
+> El guardia suelta un gruñido de satisfacción ante la reverencia, inflado por el reconocimiento de su autoridad. Se mantiene rígido como una estatua, con el torso proyectado hacia delante y los brazos cruzados, bloqueando cualquier ángulo muerto.
+> Al intentar fiskear el contenido de su cinturón mientras te alejas, solo alcanzas a ver el cuero gastado y oscuro de la correa y el brillo metálico de una hebilla oxidada. El bulto que oculta permanece completamente fuera de tu vista, protegido por el ángulo de su cuerpo y la pesada tela de su uniforme.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  871 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 168 — 81/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1172 ms
+
+> "Tenga un día espléndido, oficial. Su vigilancia es, sin duda, ejemplar."
+> Le dedico una última sonrisa radiante mientras retrocedo, intentando analizar sus movimientos y el peso de ese bulto para saber exactamente dónde lo guarda.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 5+1=6
+
+### [4] DM
+
+  2299 ms
+
+> El guardia suelta una risita nasal, visiblemente complacido por los halagos, y asiente con un gesto lento y pomposo. Se queda ahí plantado, disfrutando de su propia importancia mientras te observa retroceder, convencido de que su autoridad ha sido plenamente reconocida.
+> Tus intentos por descifrar la naturaleza del bulto resultan inútiles. El movimiento del guardia es torpe y pesado, y la tela gruesa de su uniforme absorbe cualquier indicio de forma o peso, dejando el misterio intacto tras la barrera de su cuerpo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1165 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 169 — 82/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 27.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1034 ms
+
+> "Un honor haber coincidido con alguien de su rango, capitán."
+> Lanzó una última sonrisa coordinates y me alejo lentamente, pero trato de escuchar si el bulto hace algún ruido mientras camina.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 5+1=6
+
+### [4] DM
+
+  1811 ms
+
+> El guardia infla el pecho, saboreando el reconocimiento, y se da la vuelta con una lentitud deliberada para retomar su puesto. Sus botas golpean el suelo con un ritmo monótono y pesado que ahoga cualquier otro sonido ambiente.
+> Mientras te alejas, el ruido del cuero y el metal de su equipo domina el espacio. No hay tintineos extraños, ni susurros, ni el roce de algo que se desplace independientemente de sus pasos; solo el eco sordo de un hombre que camina convencido de su propia gloria.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1827 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Toño Bravante · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4348: Toño Bravante affinity 27.0 → 33.0  (any)
+     Le dieron en público el trato que cree merecer. Explota el defecto
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 170 — 83/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1103 ms
+
+> "Un honor haber compartido unos minutos con un hombre de tal distinción."
+> Sigo caminando, pero mantengo la vista fija en su cinturón y sus bolsillos mientras me alejo.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 19+2=21
+
+### [4] DM
+
+  2358 ms
+
+> El guardia suelta una risita nasal, visiblemente complacido por el halago, y mantiene la espalda erguida mientras se aleja, absorto en su propia importancia. En el momento preciso en que el ritmo de sus pasos marca un compás previsible y el roce de su capa crea la distracción perfecta, tus dedos se deslizan con una precisión quirúrgica.
+> Sientes el tacto frío del metal y la textura del cuero antes de que el objeto se deslice sin resistencia hacia tu palma. Retiras la mano con un movimiento fluido y natural, guardando el botín mientras el hombre sigue caminando, totalmente ajeno a que el peso de su cinturón ha disminuido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  724 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 171 — 84/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  986 ms
+
+> "Un placer haberle conocido, oficial."
+> Sigo caminando en dirección opuesta, manteniendo un paso relajado para no levantar sospechas mientras guardo el objeto en mi ropa. 
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 15+2=17
+
+### [4] DM
+
+  4512 ms
+
+> El guardia, aún envuelto en su nube de autosuficiencia, ni siquiera se gira para responder al saludo, limitándose a levantar una mano en un gesto desdenoso pero satisfecho mientras se pierde calle abajo. El eco de sus botas sobre el empedrado se desvanece, dejando tras de sí el aroma a cuero viejo y el silencio de una calle que vuelve a su ritmo habitual.
+> Tus pasos son ligeros y tu expresión imperturbable mientras te alejas en dirección contraria. El objeto, ahora oculto y seguro contra tu cuerpo, no emite sonido alguno, y ningún ojo curioso en la plaza parece haber notado la breve y letal danza de tus dedos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  928 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 172 — 85/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1552 ms
+
+> "Vaya desplante, qué falta de modales."
+> Borro la sonrisa de mi cara y busco un callejón o un rincón apartado donde pueda examinar el objeto con tranquilidad.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+1=2  PIFIA
+
+### [4] DM
+
+  16613 ms
+
+> Te adentras en las callejuelas laterales, buscando un rincón donde el bullicio de la plaza sea solo un rumor lejano. En tu afán por encontrar el lugar perfecto y mantener la guardia alta, no notas que el suelo de uno de los callejones está cubierto por una capa traicionera de musgo húmedo y desechos de mercado. Tu pie resbala violentamente, provocando que tropieces y caigas de bruces contra el muro de piedra fría, soltando un bufido sordo mientras el impacto te deja momentáneamente desorientado.
+> En la caída, el objeto que llevabas oculto se desliza y golpea el suelo con un sonido metálico seco, rodando hacia una rejilla de drenaje oscura y llena de agua estancada. Te encuentras ahora en el suelo, con el sabor a polvo en la boca y la mirada fija en el pequeño espacio donde el objeto ha quedado peligrosamente cerca de desaparecer por la alcantarilla.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2349 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.conditions = desorientado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4362: Kestra.conditions = desorientado
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 173 — 86/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  938 ms
+
+> "Maldita sea..."
+> Me lanzo rápidamente al suelo para intentar atrapar el objeto antes de que caiga por la rejilla.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  3278 ms
+
+> Tus reflejos actúan antes que tu pensamiento. En un movimiento fluido y desesperado, te lanzas hacia adelante, deslizándote sobre el musgo húmedo como si el suelo fuera de hielo. Tus dedos se cierran sobre el metal frío en el instante preciso en que el objeto comienza a inclinarse hacia el abismo negro de la rejilla, atrapándolo con una precisión quirúrgica justo antes de que el agua estancada lo reclamara.
+> Te quedas un momento ahí, tendido en el callejón, con el corazón latiendo con fuerza contra las costillas y el objeto apretado contra la palma de tu mano. El silencio del rincón solo es interrumpido por el goteo rítmico de una tubería cercana y el eco distante de las risas del festival que, por ahora, siguen sin notar tu accidentada incursión.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  876 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 174 — 87/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2142 ms
+
+> "Vaya suerte la mía."
+> Suelto un suspiro y me levanto rápidamente, limpiándome el musgo de la ropa mientras guardo el objeto en mi bolsillo. Me quedo quieto un instante, escuchando si alguien se ha acercado.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 9+1=10
+
+### [4] DM
+
+  2832 ms
+
+> Te pones en pie con brusquedad, sacudiendo los restos de humedad y verdor de tus prendas mientras el metal del objeto se asienta en tu bolsillo. El aire del callejón es pesado, cargado de un olor a piedra mojada y descomposición orgánica que contrasta con el aroma a azúcar y especias que flota desde la plaza principal.
+> Al cerrar los ojos y agudizar el oído, solo percibes el goteo persistente de la tubería y el rumor lejano de la multitud. No hay pasos apresurados, ni voces que te busquen, ni el roce de alguna tela contra los muros estrechos; el rincón sigue siendo tuyo, envuelto en una quietud indiferente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  893 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 175 — 88/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1180 ms
+
+> "Vaya, parece que el silencio es mi mejor aliado."
+> Me deslizo hacia la salida del callejón, asomándome con cautela para observar quiénes transitan por la plaza y si alguien parece haber notado mi ausencia.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+1=17
+
+### [4] DM
+
+  3241 ms
+
+> La luz del sol te golpea el rostro al asomarte, revelando una plaza vibrante donde el bullicio del festival fluye como un río. La gente camina en grupos dispersos, absorta en los puestos de dulces y las exhibiciones de artesanía; nadie parece mirar hacia la oscuridad del callejón ni buscar una silueta ausente. 
+> Sin embargo, tu mirada capta a un hombre robusto, vestido con una túnica de lino demasiado ajustada y un sombrero adornado con plumas, que camina de un lado a otro cerca de la entrada de la Carpa del Festival. Toño Bravante tiene el ceño fruncido y consulta un reloj de bolsillo con nerviosismo, lanzando miradas rápidas y ansiosas hacia el escenario vacío donde debería sonar la música.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  797 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 176 — 89/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  931 ms
+
+> "Vaya cara de preocupación... parece que el espectáculo necesita un salvador."
+> Me acerco a Toño con mi mejor sonrisa y me detengo justo a su lado, fingiendo curiosidad por su reloj.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+3=17
+
+### [4] DM
+
+  2608 ms
+
+> Toño Bravante ni siquiera nota tu presencia al principio; sigue caminando en círculos, con el sudor perlándole la frente y los dedos tamborileando frenéticamente sobre la tapa de plata del reloj. Al detenerse a tu lado, el aroma a colonia barata y tabaco envuelve el aire. Su mirada es errática, saltando del escenario vacío a la multitud, que empieza a murmurar con impaciencia ante la falta de música.
+> Tus ojos captan más que su nerviosismo: el hombre no solo teme el retraso, sino que hay una sombra de culpa en su expresión. Cada vez que mira hacia la entrada de la carpa, aprieta el reloj contra su pecho como si ocultara algo más que la hora, y un breve deje de pánico cruza sus ojos al notar que alguien lo observa tan de cerca.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2086 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 177 — 90/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2928 ms
+
+> "Parece que los nervios le están jugando una mala pasada. ¿Todo en orden, amigo?"
+> Me acerco con una sonrisa tranquilizadora, intentando analizar qué es exactamente lo que intenta ocultar bajo ese reloj.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+3=5
+
+### [4] DM
+
+  2654 ms
+
+> Toño da un respingo violento, casi dejando caer el reloj, y se gira hacia ti con los ojos muy abiertos. Se limpia el sudor de la frente con la manga de su chaqueta, lanzando una mirada rápida y nerviosa hacia la entrada de la carpa antes de forzar una sonrisa temblorosa que no llega a sus ojos.
+> —¿En orden? ¡Ja! —suelta una risa seca, casi un graznido—. Todo está perfectamente en orden, ciudadano, absolutamente impecable. Solo es... la presión del momento. ¡El festival no puede empezar sin la música! —Ajusta el reloj contra su pecho con un movimiento brusco, ocultándolo casi por completo bajo el brazo, mientras su mirada vuelve a vagar erráticamente por la multitud.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  902 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 178 — 91/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1087 ms
+
+> "No me vendas la moto, Toño. Estás más nervioso que un gato en una pelea de perros."
+> Me acerco un paso más, invadiendo su espacio personal para presionarlo, mientras intento echar un vistazo más detallado a lo que oculta bajo el brazo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+3=11
+
+### [4] DM
+
+  2122 ms
+
+> Toño retrocede un paso, chocando contra un soporte de madera de la carpa, y su sonrisa se desmorona por completo. Sus hombros se encogen y el sudor comienza a perlarle el labio superior mientras intenta mantener el brazo pegado al cuerpo, aunque el movimiento es torpe y forzado.
+> —¡No es... no es eso! Solo es el estrés, te lo juro por mis ancestros —balbucea, moviendo la cabeza de un lado a otro—. Solo estoy asegurándome de que todo esté listo. ¡Por favor, no miremos los detalles, miremos el panorama general!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1456 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 179 — 92/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  980 ms
+
+> "Tus ancestros deben estar muy decepcionados con tu capacidad de mentir, Toño."
+> Me acerco a él con calma y trato de echar un vistazo al brazo que intenta ocultar.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+3=9
+
+### [4] DM
+
+  2440 ms
+
+> Toño suelta un gemido ahogado y se pega aún más al soporte de madera, cerrando el espacio entre su cuerpo y la estructura de la carpa. Sus ojos saltan de un lado a otro, buscando una salida inexistente mientras el pánico se refleja en el temblor de su barbilla.
+> —¡No seas cruel! —exclama con la voz quebrada, apretando el brazo contra sus costillas con una fuerza desesperada—. ¡El panorama general, recuerda! ¡El festival! ¡La tradición!
+> A pesar de tu proximidad, Toño logra mantener el brazo oculto tras su espalda y el soporte de la carpa, bloqueando cualquier ángulo que te permita ver qué es lo que intenta esconder con tanto empeño.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  914 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 180 — 93/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  916 ms
+
+> "Tranquilo, Toño. Solo quiero asegurarme de que el festival sea un éxito rotundo."
+> Intento deslizar mi mano con sutileza hacia su espalda para descubrir qué oculta.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 8+2=10
+
+### [4] DM
+
+  2415 ms
+
+> Toño exhala un suspiro tembloroso, aunque sus músculos permanecen tensos como cuerdas de violín. Al escuchar tus palabras sobre el éxito del festival, sus hombros caen un centímetro, dejándose llevar por un instante por la falsa seguridad de tu tono conciliador.
+> Tu mano se desliza con suavidad, buscando el hueco entre su espalda y la madera, pero Toño reacciona con un espasmo brusco. Se pega violentamente al soporte, desplazando el peso de su cuerpo para cerrar el ángulo justo antes de que tus dedos puedan rozar lo que esconde. Sus ojos vuelven a abrirse con pánico y te lanza una mirada suplicante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1482 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 181 — 94/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1048 ms
+
+> "Tranquilo, Toño. Solo quería darte una palmadita de ánimo."
+> Suelto una risita ligera y retrocedo un paso para darle espacio, fingiendo que el movimiento ha sido un accidente. Intento leer su expresión para ver qué es exactamente lo que protege con tanto miedo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+3=6
+
+### [4] DM
+
+  2283 ms
+
+> Toño suelta un aire ruidoso, casi un gemido, y se desploma contra el soporte de madera, aunque mantiene el torso rígido para seguir bloqueando cualquier acceso a su espalda. Sus ojos, húmedos y erráticos, no dejan de seguir cada uno de tus movimientos mientras intenta recuperar el aliento, asintiendo frenéticamente ante tu explicación.
+> Su rostro es una máscara de angustia pura. El pánico no parece nacer de una amenaza externa, sino de un terror visceral a que algo sea descubierto; hay una mezcla de culpa y desesperación en la forma en que evita sostenerte la mirada, como si temiera que pudieras leer sus secretos solo con observarlo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  904 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 182 — 95/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1097 ms
+
+> "Tranquilo, Toño. No soy quien juzga, sino quien ayuda... por el precio adecuado."
+> Me acerco un paso más, bajando la voz y tratando de leer sus gestos para entender qué es exactamente lo que tanto teme que descubran.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+3=10
+
+### [4] DM
+
+  2788 ms
+
+> Toño traga saliva con dificultad, produciendo un sonido seco en su garganta. Al escuchar la mención del precio, sus hombros se hunden un poco más y cierra los ojos un instante, como si el peso de una transacción fuera más manejable que el peso de su propia culpa. Se mantiene rígido contra el soporte, pero sus dedos tamborilean nerviosos sobre la madera, un tic rítmico y acelerado.
+> A pesar de tu cercanía y el tono conciliador, Toño no se relaja. Sus gestos son erráticos; se encoge cuando haces el movimiento de analizarlo y desvía la mirada hacia los lados, vigilando los alrededores con una paranoia evidente. Su lenguaje corporal es el de alguien que se siente acorralado, pero que no encuentra una salida clara más allá de la ayuda que le ofreces.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1080 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · bribe_offered
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 183 — 96/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3880 ms
+
+> "Tranquilo, Toño. Nadie tiene por qué enterarse de que estamos hablando, y mucho menos de lo que necesites."
+> Le doy una palmadita afectuosa en el hombro mientras intento notar si oculta algo bajo la ropa o en sus bolsillos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+3=12
+
+### [4] DM
+
+  1973 ms
+
+> Toño suelta un suspiro tembloroso al sentir la palmadita, y sus hombros caen un centímetro más, aunque sigue mirando de reojo hacia la plaza. El ritmo de sus dedos sobre la madera se ralentiza ligeramente, aunque su respiración permanece corta y superficial.
+> A pesar de tu atención, Toño no parece ocultar ningún objeto voluminoso ni sospechoso bajo su ropa o en sus bolsillos; su nerviosismo parece nacer de una inquietud puramente interna, más que de algo material que lleve consigo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  961 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 184 — 97/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1261 ms
+
+> "Tranquilízate, Toño. No hay nadie mirándote que no sea mi amigo."
+> Le doy una sonrisa tranquilizadora mientras intento analizar la fuente de su miedo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+3=7
+
+### [4] DM
+
+  2786 ms
+
+> Toño parpadea, procesando tus palabras, y exhala un aire que parecía haber estado reteniendo durante minutos. Sus ojos se desvían un instante hacia tu acompañante y luego regresan a ti, aunque el brillo de la ansiedad no desaparece del todo de su mirada.
+> A pesar de tu sonrisa y el intento de analizarlo, el hombre permanece como un enigma. Su inquietud es un ruido blanco constante; no logras distinguir si se trata de un miedo genuino a alguien en la plaza, una culpa que lo carcome o simplemente una naturaleza nerviosa que se ha visto exacerbada por las circunstancias actuales.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  653 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 185 — 98/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3526 ms
+
+> "No hay razón para estar tan tenso, Toño. Solo somos nosotros dos y un viento fresco."
+> Le pongo una mano en el hombro con gesto paternal y trato de detectar cualquier reacción física inusual.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+3=10
+
+### [4] DM
+
+  3311 ms
+
+> Toño se tensa visiblemente bajo el peso de tu mano, encogiéndose un milímetro como si el contacto físico lo hubiera tomado por sorpresa. Su hombro se siente rígido, la tela de su jubón húmeda por un sudor frío que no encaja con la brisa fresca de la plaza.
+> —Sí, claro... solo nosotros —murmura con una risa nerviosa que suena más a un graznido que a una broma—. Es que, ya sabe, cuando las cosas se tuercen en el festival, el viento suele traer malas noticias antes que aire puro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  641 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 186 — 99/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1210 ms
+
+> "Pareces llevar el peso del mundo sobre los hombros, Toño. Dime qué es eso tan terrible que trae el viento y quizá pueda ayudarte a que no te golpee tan fuerte."
+> Sigo presionando ligeramente su hombro mientras lo miro fijamente a los ojos, buscando cualquier señal de miedo o secreto.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+3=16
+
+### [4] DM
+
+  3208 ms
+
+> Toño evita tu mirada durante un instante, desviando los ojos hacia el bullicio de la plaza antes de volver a conectar con los tuyos. Al sentir la presión persistente de tu mano, suspira con resignación, y sus hombros caen, perdiendo parte de esa rigidez defensiva. Su expresión se desmorona en una mueca de genuina angustia, revelando una vulnerabilidad que intenta ocultar tras su fachada de organizador.
+> —No es el mundo, es... la Voz del Roble —confiesa en un susurro apenas audible, asegurándose de que nadie en los alrededores preste atención—. Ha desaparecido. Si el Comité se entera antes de que encuentre una solución, no solo se cancelará el festival, sino que dirán que hemos perdido la bendición del bosque. No sé qué hacer, y el tiempo se agota.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  648 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 187 — 100/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  929 ms
+
+> "Vaya, Toño. Un secreto así es una carga demasiado pesada para un solo hombre."
+> Sigo manteniendo el contacto físico, bajando aún más la voz para crear una atmósfera de complicidad.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 16+4=20
+
+### [4] DM
+
+  3791 ms
+
+> Toño cierra los ojos y deja escapar un suspiro tembloroso, dejándose llevar por la calidez de ese gesto de apoyo. La tensión desaparece por completo de su rostro, sustituida por una gratitud casi infantil; parece que el simple hecho de no estar solo en este abismo le devuelve el aire a los pulmones. Se inclina hacia ti, reduciendo la distancia para que sus palabras no vuelen más allá de vuestro círculo.
+> —Tienes razón... me estoy ahogando en esto —admite con voz quebrada, mirándote ahora con una confianza absoluta—. No puedo seguir fingiendo que todo está bajo control mientras el pánico me carcome por dentro. Si tú estás dispuesto a ayudarme, te lo agradecería con todo lo que poseo. Por favor, dime que hay alguna forma de recuperar la flauta antes de que el Comité empiece a hacer preguntas incómodas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  915 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 188 — 101/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1059 ms
+
+> "Todo tiene solución, Toño, y yo soy el hombre adecuado para encontrarla."
+> Le doy una palmada afectuosa en el hombro mientras evalúo cuánto valdrá realmente todo lo que posee.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 5+3=8
+
+### [4] DM
+
+  2673 ms
+
+> Toño esboza una sonrisa débil, casi aliviada, y asiente con vigor mientras se endereza, contagiado por tu seguridad. Se queda mirándote con una devoción renovada, como quien acaba de encontrar un salvavidas en medio de una tormenta, aunque sus manos siguen jugueteando nerviosas con el dobladillo de su túnica.
+> Al observar sus ropajes y los adornos que lleva, no percibes ningún signo de riqueza ostentosa ni joyas que sugieran una fortuna oculta. Sus pertenencias parecen las de un hombre que vive cómodamente gracias a su cargo, pero que no posee bienes de gran valor material más allá de los instrumentos de su oficio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1175 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 189 — 102/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1227 ms
+
+> "No te preocupes, Toño. Juntos sacaremos esto adelante, pero necesito que seas sincero conmigo."
+> Le pongo una mano en el hombro para transmitirle confianza y trato de analizar sus gestos para ver si oculta algo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+3=4  PIFIA
+
+### [4] DM
+
+  2344 ms
+
+> Toño deja escapar un suspiro tembloroso y cierra los ojos un instante, dejándose llevar por el peso de tu mano en su hombro. Se inclina levemente hacia ti, con el rostro iluminado por una gratitud genuina que parece borrar, por un momento, cualquier rastro de duda.
+> Sin embargo, al intentar leer entre líneas, tu juicio te traiciona por completo. La ligera tensión de su mandíbula te parece una señal clara de hostilidad oculta y el hecho de que no te mire fijamente a los ojos te convence de que Toño no solo te está mintiendo ahora, sino que probablemente planea traicionarte en cuanto le des la espalda.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1099 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 190 — 103/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1575 ms
+
+> "No te preocupes, Toño. Sé que podemos confiar el uno en el otro."
+> Le doy una palmada afectuosa en la espalda mientras intento deslizar mis dedos hacia sus bolsillos para ver qué guarda.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 17+2=19
+
+### [4] DM
+
+  3016 ms
+
+> Toño esboza una sonrisa débil y asiente, dejándose llevar por la calidez de tus palabras mientras se entrega al consuelo del gesto. El roce de la palmada en su espalda sirve de distracción perfecta; el hombre se inclina ligeramente, relajando la guardia en un instante de vulnerabilidad emocional.
+> Tus dedos se deslizan con precisión quirúrgica por la tela de su jubón, sorteando las costuras hasta alcanzar el interior de su bolsillo. Con un movimiento fluido y casi imperceptible, extraes un pequeño pergamino enrollado, sellado con una cera anaranjada y tosca, que Toño ni siquiera nota que ha dejado de poseer.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2791 ms · 0 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = pergamino enrollado
+  ✗ campo fuera de lista blanca: npc.inventory
+  ⚠ campo no mutable propuesto: npc.inventory
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → delta 4396: Kestra.inventory = pergamino enrollado
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 191 — 104/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3520 ms
+
+> "No te preocupes, Toño. Todo saldrá mejor de lo que crees."
+> Sigo manteniendo el gesto afectuoso mientras guardo el pergamino rápidamente en mis propias pertenencias. Me separo de él con una sonrisa tranquilizadora.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 10+2=12
+
+### [4] DM
+
+  2237 ms
+
+> Toño exhala un suspiro tembloroso, cerrando los ojos un instante mientras se deja envolver por la falsa seguridad de tu abrazo. Se separa lentamente, con la mirada nublada por la gratitud y el cansancio, sin sospechar que el peso de su bolsillo ha disminuido.
+> —Gracias... de verdad. No sé qué haría sin alguien que mantenga los pies en la tierra en este caos —murmura, limpiándose una lágrima traicionera con el dorso de la mano mientras te devuelve la sonrisa, ahora más genuina y relajada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2070 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = pergamino enrollado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4398: Kestra.inventory = pergamino enrollado
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 192 — 105/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1050 ms
+
+> "No tienes que agradecerme, Toño. Para eso estamos los amigos."
+> Le doy una palmada afectuosa en el hombro mientras me alejo un paso, guardando el botín discretamente.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 12+4=16
+
+### [4] DM
+
+  2230 ms
+
+> Toño asiente con suavidad, dejando que sus hombros caigan mientras el estrés del día parece evaporarse por un momento. Te observa con una chispa de admiración en los ojos, convencido de que tu gesto es pura generosidad y apoyo incondicional.
+> Se queda allí plantado, sumido en un silencio cómodo y agradecido, mientras Toño comienza a mirar hacia la Carpa del Festival, recuperando el ánimo para enfrentar los preparativos restantes. No nota el ligero movimiento de tu mano ni la ausencia del objeto en su bolsillo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  558 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 193 — 106/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1569 ms
+
+> "No te preocupes por nada, Toño. Todo saldrá perfecto."
+> Le doy una palmada afectuosa en el hombro para mantener su atención en mí mientras me deslizo discretamente hacia la salida de su vista.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 2+2=4
+
+### [4] DM
+
+  3520 ms
+
+> Toño sonríe, conmovido por tus palabras, y comienza a darte las gracias con un tono vibrante y optimista. Sin embargo, justo cuando intentas deslizarte hacia atrás, tu pie tropieza con una pesada caja de adornos que Toño había dejado en el suelo. El ruido del impacto es seco y rotundo, rompiendo el silencio del lugar.
+> El hombre se gira bruscamente, sorprendido por el estrépito. Te encuentra a medio camino hacia la salida, en una postura torpe y fuera de lugar. Toño parpadea confundido, frunciendo el ceño mientras intenta comprender por qué te estabas alejando de esa manera tan apresurada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1073 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 194 — 107/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2360 ms
+
+> "¡Vaya torpeza la mía! Me dejaba llevar por la emoción de nuestro encuentro."
+> Suelto una risita nerviosa y recupero el equilibrio rápidamente, intentando que mi expresión parezca más distraída que culpable.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 6+4=10
+
+### [4] DM
+
+  2070 ms
+
+> Toño se queda inmóvil un instante, observando la escena con los ojos entrecerrados. Su mirada viaja desde la caja volcada hasta tu sonrisa nerviosa, evaluando la coherencia de tu explicación mientras el eco del golpe aún vibra en el aire.
+> —¡Ja! Pues parece que la emoción te ha dejado los pies más pesados que una bota de plomo —responde Toño, aunque su risa suena forzada y no termina de borrar la duda de su rostro. Se mantiene alerta, sin volver a darte la espalda, mientras mantiene el ceño ligeramente fruncido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  908 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 195 — 108/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1670 ms
+
+> "Tienes razón, Toño. La torpeza es mi mayor defecto, pero mi generosidad es aún más grande."
+> Saco una moneda de oro de mi bolsillo y se la extiendo con un guiño, intentando que se olvide de la caja.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 10+4=14
+
+### [4] DM
+
+  2548 ms
+
+> Toño baja la mirada hacia la moneda de oro que brilla bajo la luz, y el ceño fruncido se relaja mientras sus pupilas se dilatan ligeramente. El metal precioso parece ejercer un magnetismo inmediato sobre su expresión, borrando la tensión de sus hombros. Suelta un bufido corto, aunque esta vez es una risa genuina que hace vibrar su pecho.
+> —Vaya, pues resulta que tienes un defecto muy conveniente para los demás —dice Toño, cerrando la mano rápidamente sobre la moneda y guardándola en su bolsillo con un movimiento experto—. Olvida el asunto de la caja; cualquier descuido es comprensible cuando uno lleva tanta generosidad encima.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2194 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · bribe_offered
+  ✓ delta kestra · character.inventory = moneda de oro perdida
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+  ✗ entidad inexistente: kestra
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 196 — 109/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1160 ms
+
+> "Me alegra que hayamos llegado a un entendimiento, Toño. Un hombre con tu criterio sabe apreciar el valor de las cosas."
+> Sigo sonriendo mientras observo sus movimientos, intentando captar cualquier detalle sobre dónde guarda sus pertenencias más valiosas.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+1=17
+
+### [4] DM
+
+  3742 ms
+
+> Toño suelta una carcajada ronca, visiblemente complacido por el halago, y te dedica una palmada sonora en el hombro que desprende un ligero olor a tabaco y cuero viejo. Sus ojos brillan con una complicidad renovada mientras se endereza, recuperando esa postura de hombre importante que parece haber olvidado por un momento durante la tensión.
+> Mientras el hombre se mueve, notas que la moneda no ha ido a un bolsillo cualquiera; la ha deslizado en un compartimento oculto, una pequeña solapa de cuero cosida al forro interior de su jubón, justo sobre el corazón. Al ajustar la prenda, el movimiento revela el relieve de un pesado manojo de llaves y algo más: el contorno cuadrado y rígido de un cuaderno de notas, sujeto firmemente por una correa de cuero en el mismo lado de su torso.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  613 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 197 — 110/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1343 ms
+
+> "Me alegra que estemos en la misma sintonía, Toño. Eres un hombre de mundo, se nota."
+> Sigo sonriendo mientras busco el momento exacto para deslizar la mano hacia ese cuaderno.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 8+2=10
+
+### [4] DM
+
+  2411 ms
+
+> Toño suelta un bufido de orgullo, inflándose el pecho mientras asiente con solemnidad ante el comentario. "Hombre de mundo... ¡exactamente! Alguien tiene que mantener el orden en este caos de fiesta y flautas perdidas", exclama, gesticulando con entusiasmo.
+> Sin embargo, justo cuando intentas deslizar la mano hacia el cuaderno, Toño hace un movimiento brusco para enfatizar sus palabras, girando el torso y alejando el jubón de tu alcance. Tu mano solo encuentra el aire y el roce áspero de la tela exterior, quedando tu intento de robo expuesto por la falta de precisión en el movimiento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1311 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 198 — 111/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1440 ms
+
+> "¡Perdón, Toño! Me ha dado un espasmo en el brazo, creo que es el cansancio de tanta música."
+> Suelto una carcajada ligera y fingiendo torpeza, le doy una palmada amistosa en el hombro para distraerlo.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 2+4=6
+
+### [4] DM
+
+  2672 ms
+
+> Toño se queda congelado un instante, mirando la mano que ha rozado su jubón y luego el rostro del personaje. Entorna los ojos, el pecho aún inflado pero la expresión ahora cargada de una sospecha genuina. La carcajada suena hueca en el aire y la palmada en el hombro no logra disipar la tensión que se ha instalado entre los dos.
+> "¿Un espasmo, dices?" Toño se aparta un paso, llevándose la mano instintivamente al lugar donde se guarda el cuaderno, apretándolo contra su costado. "Tienes los reflejos muy curiosos para alguien que solo está cansado, amigo. No me digas que la música te ha puesto los dedos inquietos".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1245 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 199 — 112/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1394 ms
+
+> "Vaya, Toño, me herirías si no supiera que eres un hombre de corazón noble. Solo es el entusiasmo de encontrar a alguien con quien conversar."
+> Suelto una risita ligera y levanto las manos en señal de inocencia, mientras intento leer su lenguaje corporal para ver si ha notado que he logrado algo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+3=10
+
+### [4] DM
+
+  2883 ms
+
+> Toño arquea una ceja y su postura permanece rígida, aunque el comentario sobre su nobleza parece haberle picado la curiosidad. Sus ojos saltan un instante de tu rostro a tus manos alzadas, manteniendo el cuaderno firmemente sujeto contra su costado. No hay una sonrisa genuina en su expresión, sino una mirada evaluadora que analiza cada uno de tus gestos.
+> A pesar de su desconfianza, el hombre no se aleja más, pero su cuerpo sigue tenso, como un resorte listo para saltar. No muestra ninguna señal evidente de haber sentido el roce del objeto o de haber notado que algo ha cambiado en sus pertenencias; para él, el incidente sigue siendo un movimiento sospechoso que aún no ha terminado de procesar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1468 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 200 — 113/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1663 ms
+
+> "Solo soy un admirador de la buena educación, Toño. No hay razón para estar tan tenso."
+> Bajo las manos lentamente, manteniendo una expresión inocente mientras retrocedo un paso para darle espacio.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 13+4=17
+
+### [4] DM
+
+  2508 ms
+
+> Toño exhala un suspiro sonoro, dejando que sus hombros desciendan apenas unos milímetros. La rigidez de su postura se suaviza y la mirada evaluadora pierde intensidad, sustituida por una expresión de ligera condescendencia. Se acomoda el cuaderno bajo el brazo con un gesto mecánico, convencido ahora de que tu comportamiento no ha sido más que una excentricidad pasajera de un extraño.
+> —Bueno, al menos tienes modales, aunque seas un tanto... peculiar —responde Toño, recuperando un tono más natural y menos defensivo—. No es que esté tenso, es que en este pueblo sabemos reconocer cuando alguien busca llamar la atención sin motivo. Pero está bien, te concederé el beneficio de la duda.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  627 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 201 — 114/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 33.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1026 ms
+
+> "Agradezco tu generosidad, Toño. Solo soy un viajero que aprecia la honestidad de la gente sencilla."
+> Le dedico mi sonrisa más encantadora mientras intento echar un vistazo al cuaderno que lleva bajo el brazo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+3=12
+
+### [4] DM
+
+  2076 ms
+
+> Toño suelta una risita nasal, halagado por el comentario, y se endereza un poco más, adoptando un aire de importancia mientras asiente con suficiencia. La sonrisa parece haber disuelto el resto de su suspicacia, dejándolo en un estado de relajación complaciente.
+> El cuaderno permanece firmemente encajado bajo su brazo, el cuero gastado y las tapas ligeramente deformadas ocultan cualquier asomo de lo que hay escrito en su interior. A pesar del intento de observar, el ángulo es insuficiente y Toño, en su nueva actitud jovial, se mueve ligeramente para gesticular, manteniendo el libro fuera de vista.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1972 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Toño Bravante · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4418: Toño Bravante affinity 33.0 → 39.0  (any)
+     Le dieron en público el trato que cree merecer. Explota el defecto
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 39.0 (loyal), 1 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 202 — 115/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 39.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2697 ms
+
+> "Toda esa importancia no es gratis, Toño. Seguramente ese cuaderno guarda secretos que harían palidecer a cualquiera."
+> Me acerco un paso más, fingiendo una curiosidad genuina y amistosa, mientras intento deslizar mi mano hacia el libro.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 14+2=16
+
+### [4] DM
+
+  2688 ms
+
+> Toño suelta una carcajada sonora, balanceándose sobre sus talones mientras gesticula con la mano libre. "¡Bah! Secretos, dice... ¡si no son más que anotaciones sobre abonos y el temple de las maderas!", exclama, totalmente absorto en su propia importancia y distraído por la adulación.
+> Aprovechando el balanceo del hombre y su guardia baja, tus dedos se deslizan con precisión quirúrgica. Sientes la textura rugosa del cuero y el roce del papel viejo mientras logras liberar el cuaderno de su axila sin que él note el cambio de peso. El libro ahora descansa en tu mano, mientras Toño sigue hablando, ajeno a que su tesoro acaba de cambiar de dueño.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1410 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = cuaderno
+  ✓ creación item: cuaderno
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cuaderno
+  → delta 4421: Kestra.inventory = cuaderno
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 39.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 203 — 116/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 39.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  963 ms
+
+> "Es fascinante cómo alguien con su talento gestiona hasta el más mínimo detalle."
+> Guardo el cuaderno rápidamente entre mis ropas y mantengo la sonrisa mientras retrocedo un paso para ganar distancia.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 5+4=9
+
+### [4] DM
+
+  2333 ms
+
+> Toño se infla el pecho, cerrando los ojos un instante para saborear el elogio. "¡Exactamente! La disciplina es la base de la armonía, muchacho. Sin un registro meticuloso, la música sería solo ruido", exclama con un tono pomposo, mientras abre los brazos en un gesto teatral que deja su costado completamente expuesto.
+> Sin embargo, al retroceder, el movimiento es ligeramente brusco o el roce de la ropa delata la carga oculta. Toño abre un ojo, frunce el ceño y baja la mirada hacia su axila. El vacío donde antes descansaba el cuero rugoso le provoca un espasmo de sorpresa; su expresión pasa de la suficiencia a la confusión absoluta en un segundo. "¿Y mi cuaderno...?", balbucea, palpando frenéticamente su costado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2698 ms · 1 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Toño Bravante · public_status_given
+  ✓ delta Kestra · character.inventory = cuaderno
+  ✓ delta Toño Bravante · npc.knowledge = Kestra ha robado su cuaderno
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4424: Toño Bravante affinity 39.0 → 45.0  (any)
+     Le dieron en público el trato que cree merecer. Explota el defecto
+  → delta 4425: Kestra.inventory = cuaderno
+  → delta 4426: Toño Bravante.knowledge = Kestra ha robado su cuaderno
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 45.0 (loyal), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 204 — 117/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 45.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1032 ms
+
+> "Vaya, Toño, parece que la disciplina ha fallado hoy. ¿Se te habrá caído en algún lugar?"
+> Me alejo lentamente con una sonrisa inocente, guardando el cuaderno con cuidado en mi ropa.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 17+4=21
+
+### [4] DM
+
+  2563 ms
+
+> Toño sigue palpando sus costados con gestos erráticos, girando sobre sí mismo como un perro que intenta atrapar su propia cola. Su rostro, antes henchido de orgullo, se contrae en una mueca de angustia genuina mientras revisa los pliegues de su casaca y el suelo a sus pies, ignorando por completo la sutil retirada y la sonrisa del interlocutor.
+> —¡No puede ser! ¡Imposible! —exclama, con la voz quebrada por el pánico—. ¡Estaba aquí hace un segundo! Juraría que lo sentía contra mi piel. Debo de haberlo dejado en la mesa de los partituras... ¡o quizá se haya deslizado mientras gesticulaba! —Se lleva las manos a la cabeza, presa del caos, y comienza a caminar en círculos, absorto en su propia desorganización.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1318 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = cuaderno
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4430: Kestra.inventory = cuaderno
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 45.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 205 — 118/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 45.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1350 ms
+
+> "Tranquilo, Toño. Seguro que aparece en cualquier momento."
+> Me acerco a él con aire comprensivo mientras deslizo el objeto robado en mi bolsillo. Aprovecho su estado de pánico para echar un vistazo rápido a la mesa de las partituras, buscando cualquier otro papel o secreto que pueda interesarme.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 8+2=10
+
+### [4] DM
+
+  2672 ms
+
+> Toño se detiene un instante, respirando agitadamente, y te mira con ojos empañados por la desesperación. —¡Tú no lo entiendes! ¡Sin la Voz del Roble el festival es solo un montón de gente gritando en un bosque! —Su voz vuelve a subir de tono y retoma su baile errático, alejándose unos pasos mientras balbucea sobre la tradición y el deshonor.
+> Te acercas a la mesa de las partituras, aprovechando que Toño está absorto en su crisis. Sobre la madera rugosa descansan varias hojas de pergamino amarillento, llenas de notas musicales y anotaciones apresuradas en los márgenes sobre el tempo y la entonación. No hay sobres sellados ni documentos ocultos a simple vista, solo la música del festival esparcida en un orden caótico.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  900 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 45.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 206 — 119/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 45.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  987 ms
+
+> "Pobrecito... que el deshonor no te quite el sueño."
+> Ignoro el drama de Toño y examino las anotaciones de los márgenes buscando cualquier detalle inusual o secreto sobre la pieza.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+0=2
+
+### [4] DM
+
+  2302 ms
+
+> Toño suelta un gemido ahogado y se lleva las manos a la cabeza, murmurando palabras ininteligibles sobre el linaje de los flautistas mientras se mece sobre sus talones. El aire huele a resina de pino y al polvo antiguo que levantan los pergaminos al tacto.
+> Tus ojos recorren las hojas, pero el caos de las anotaciones es abrumador. Las manchas de tinta, los tachones agresivos y la caligrafía apresurada de Toño parecen no seguir ninguna lógica más allá de la urgencia musical. No logras extraer ninguna pista, secreto o detalle inusual entre el desorden de notas y tempos; para ti, solo es el trabajo frustrado de un hombre al borde del colapso.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  786 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 45.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 207 — 120/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 45.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1027 ms
+
+> "Tranquilo, Toño. Respira."
+> Dejo los papeles a un lado y me acerco al hombre, tratando de captar qué es exactamente lo que le atormenta mientras se mece.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+3=13
+
+### [4] DM
+
+  2620 ms
+
+> Toño exhala un suspiro tembloroso y deja de mecerse, aunque sus manos siguen apretando sus sienes con fuerza. Sus ojos, ligeramente enrojecidos, se clavan en los tuyos con una mezcla de gratitud y desesperación. Te mira como quien ha encontrado un ancla en medio de una tormenta, aunque el rastro de ansiedad sigue vibrando en la tensión de sus hombros y en el tic nervioso de su párpado izquierdo.
+> Al observarlo de cerca, notas que su angustia no es solo por la pérdida de la flauta, sino que hay una carga de responsabilidad que lo asfixia. Sus gestos delatan una urgencia febril, como si estuviera contando los segundos para un plazo que solo él conoce, y su mirada se desvía instintivamente hacia la puerta de la estancia, temiendo que alguien —o algo— interrumpa este momento de vulnerabilidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  861 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 45.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 208 — 121/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 45.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1088 ms
+
+> "Tranquilo, Toño. Solo dime qué es lo que realmente te tiene así de nervioso y veremos cómo resolvemos todo esto." 
+> Me inclino hacia él, bajando el tono de voz para crear un clima de complicidad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+3=10
+
+### [4] DM
+
+  2614 ms
+
+> Toño se tensa visiblemente ante tu acercamiento, y el tic de su párpado se acelera. Abre la boca para responder, pero el sonido que sale es un pequeño quejido ahogado mientras sus ojos vuelven a saltar hacia la puerta. Se aclara la garganta con brusquedad y se endereza en la silla, tratando de recuperar una compostura que se desmorona con cada segundo de silencio.
+> —Es que... es el Festival, entiendo que parezca una tontería para algunos, pero la Voz del Roble es el alma de todo —balbucea, agitando las manos en el aire con gestos erráticos—. Si el Comité se entera de que no está... si Melida se entera... no sé qué pasaría. Solo necesito tiempo. Un poco de tiempo para encontrar una solución antes de que alguien haga las preguntas correctas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1406 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 45.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 209 — 122/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 981 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1027 ms
+
+> "Tranquilo, Toño. El tiempo es un lujo que yo puedo darte, pero que tú no tienes."
+> Le doy una palmada suave en el hombro y me inclino hacia él con una sonrisa comprensiva.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 16+4=20
+
+### [4] DM
+
+  2062 ms
+
+> Toño exhala un suspiro largo y tembloroso, dejando que sus hombros caigan mientras la tensión abandona su cuerpo de golpe. Se deja hundir en la silla, mirando el suelo con una mezcla de alivio y derrota, mientras el tic de su párpado finalmente se detiene. El silencio de la habitación se vuelve menos asfixiante y el hombre levanta la vista, encontrando en tu sonrisa el ancla que necesitaba para dejar de entrar en pánico.
+> —Tienes razón... maldita sea, tienes toda la razón —admite en un susurro, frotándose la cara con las manos—. Me estoy volviendo loco. No puedo seguir fingiendo que todo está bajo control mientras el corazón me late en la garganta. Si me ayudas, si de verdad puedes hacer algo sin que el Comité entre en crisis, te agradecería el favor el resto de mi vida. Por favor, dime qué necesitas saber.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1291 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 210 — 123/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 45.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1147 ms
+
+> "No hace falta que me lo agradezcas toda la vida, Toño. Con que seas generoso ahora me basta."
+> Me inclino hacia delante, bajando el tono de voz y manteniendo esa sonrisa tranquilizadora.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 3+4=7
+
+### [4] DM
+
+  3439 ms
+
+> Toño se queda rígido un instante, procesando la petición. Sus ojos viajan rápidamente hacia la puerta cerrada y luego vuelven a ti, entornándose con una chispa de cautela que choca con su estado de vulnerabilidad. El alivio inicial se tiñe de una ligera inquietud; aunque confía en tu capacidad para ayudarlo, la mención directa a su generosidad material le recuerda que su posición es precaria.
+> —Directo al grano, ¿eh? —suelta con una risa nerviosa que suena más a un graznido—. No soy un hombre rico, pero el Comité tiene fondos para "imprevistos" y yo... bueno, tengo algunos ahorros personales que no necesitan pasar por el libro de cuentas. No puedo prometerte una fortuna, pero si logras que la flauta aparezca, no te irás de aquí con los bolsillos vacíos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1751 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Toño Bravante · bribe_offered
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4441: Toño Bravante affinity 45.0 → 41.0  (mid)
+     Incómodo. Rechaza pero no lo convierte en un asunto personal. Camb
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 41.0 (loyal), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 211 — 124/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 41.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  998 ms
+
+> "Me gusta cómo piensas, Toño. Los libros de cuentas son para los que no tienen imaginación."
+> Le dedico una sonrisa tranquilizadora mientras me acerco un poco más a él.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 19+4=23
+
+### [4] DM
+
+  2925 ms
+
+> Toño suelta un suspiro largo, dejando que los hombros caigan mientras la tensión abandona su cuerpo. Una sonrisa genuina, aunque algo torpe, se dibuja en su rostro y asiente con vigor, contagiado por tu seguridad. Se siente comprendido, como si hubieras descifrado el código secreto de quienes deben mantener las apariencias mientras lidian con el caos.
+> —Me caes bien. Tienes ese... ese aire de saber cómo se mueven las cosas realmente —dice, bajando la voz y acercándose para confiarte el asunto con complicidad—. Hagámoslo así: si recuperas la Voz del Roble, te daré un adelanto inmediato de mi propio bolsillo y me encargaré de que el Comité apruebe una recompensa formal que haga quedar bien a todos. Solo... por favor, que nadie más sepa que estábamos negociando "fuera de libros".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  634 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 41.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 212 — 125/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 41.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1126 ms
+
+> "Me parece un trato justo, Toño. Tu secreto está a salvo conmigo."
+> Le doy una palmada amistosa en el hombro y le pido que me diga exactamente cuánto es ese adelanto inmediato.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 15+4=19
+
+### [4] DM
+
+  2496 ms
+
+> Toño se endereza, sintiendo la palmada en el hombro como un sello de hermandad. Sus ojos brillan con una mezcla de alivio y entusiasmo mientras se endereza la chaqueta, recuperando ese aire de importancia que intenta proyectar, aunque ahora se siente mucho más relajado.
+> —¡Así se habla! —exclama en un susurro enérgico, rebuscando rápidamente en el bolsillo interior de su casaca—. Mira, para que veas que voy en serio y para que no te falte nada en el camino... te daré cincuenta piezas de oro en cuanto vuelvas con la flauta. Y créeme, una vez que el Comité vea que el festival se salva, el resto del oro llegará solo y con pompa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  809 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 41.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 213 — 126/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 41.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1113 ms
+
+> "Cincuenta ahora es un buen comienzo, Toño, pero el riesgo es alto y mi tiempo es caro."
+> Le dedico mi mejor sonrisa mientras intento notar si Toño está nervioso o si realmente tiene ese oro disponible.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 11+3=14
+
+### [4] DM
+
+  2788 ms
+
+> Toño suelta una risita nerviosa y se frota la barbilla, evitando por un instante el contacto visual directo mientras asiente con vigor. Su lenguaje corporal es abierto y genuino, y aunque se nota que el estrés del festival lo tiene al límite, no hay rastro de engaño en su oferta; el hombre realmente cuenta con ese respaldo económico y está dispuesto a soltarlo para salvar su reputación y la fiesta.
+> —¡Tienes razón, tienes razón! El riesgo es el condimento de la aventura, pero el bolsillo debe estar lleno para soportarlo —responde, recuperando su pose de importancia y dándole un toque final a su chaqueta—. Diez piezas ahora mismo como adelanto, para que no digas que soy un tacaño, y las cuarenta restantes en el momento en que la flauta toque suelo en la plaza. ¿Trato hecho?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  918 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 41.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 214 — 127/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 41.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1133 ms
+
+> "Trato hecho, Toño. Me gusta hacer negocios con hombres de palabra."
+> Le doy una palmada afectuosa en el hombro mientras extiendo la mano para cobrar el adelanto.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 18+3=21
+
+### [4] DM
+
+  3794 ms
+
+> Toño suelta una carcajada sonora y estrecha tu mano con fuerza, transmitiendo un entusiasmo casi febril. Mete la mano en el bolsillo interior de su chaqueta y extrae una pequeña bolsa de cuero que tintinea con un sonido metálico y seco. Al depositar las diez piezas de oro en tu palma, el peso del metal confirma la legitimidad del trato, aunque sus dedos tiemblan ligeramente al soltar la bolsa.
+> Mientras el oro cambia de manos, notas un detalle discordante en su comportamiento. A pesar de su actitud expansiva y su generosidad, Toño evita mirar hacia la dirección donde se encuentra la administración del festival y, por un breve instante, su mirada se pierde en el horizonte, hacia los caminos que llevan a los pueblos vecinos, con una expresión de alivio mezclada con una culpa sutil, como quien guarda un as bajo la manga que espera no tener que usar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2073 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = 10 piezas de oro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4452: Kestra.inventory = 10 piezas de oro
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 41.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 215 — 128/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 41.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1027 ms
+
+> "Un placer hacer negocios contigo, Toño. Tienes un instinto admirable."
+> Guardo la bolsa rápidamente y trato de analizar esa expresión de culpa mientras mantengo mi sonrisa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+3=4  PIFIA
+
+### [4] DM
+
+  2446 ms
+
+> Toño suelta otra risita, halagado por el comentario, y te da una palmada afectuosa en el hombro. Sus ojos brillan con una gratitud genuina mientras se endereza, recuperando esa fachada de optimismo desbordante que parece envolverlo como una capa.
+> Al intentar analizar su mirada, te distraes con el movimiento frenético de una bandada de pájaros que cruza el cielo, perdiendo el hilo de su expresión. Para cuando vuelves a centrarte en Toño, él ya ha recuperado su compostura habitual y te dedica una sonrisa radiante, dejándote con la sensación de que, quizás, solo ha sido un juego de luces o un tic nervioso sin importancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1073 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Toño Bravante · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4455: Toño Bravante affinity 41.0 → 47.0  (any)
+     Le dieron en público el trato que cree merecer. Explota el defecto
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 47.0 (loyal), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 216 — 129/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 47.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1603 ms
+
+> "No te preocupes, Toño. Entre amigos, estas cosas se olvidan rápido."
+> Le devuelvo la sonrisa mientras deslizo mi mano discretamente hacia sus bolsillos o algún pliegue de su ropa.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 5+2=7
+
+### [4] DM
+
+  2195 ms
+
+> Toño suelta una carcajada sonora y te abraza brevemente por los hombros, contagiado por tu actitud. El hombre se mueve con una energía nerviosa, gesticulando con amplitud mientras comienza a hablarte sobre los preparativos del festival, moviendo los brazos y el torso con entusiasmo.
+> Tus dedos rozan la tela áspera de su jubón, pero el movimiento brusco de Toño al enfatizar una frase te obliga a retraer la mano rápidamente para no quedar atrapado en un abrazo demasiado estrecho o en un gesto torpe. No logras sentir nada más que la textura del tejido y el calor de su cuerpo antes de que el espacio entre vosotros se cierre por su efusividad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  818 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 47.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 217 — 130/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 47.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1076 ms
+
+> "Pareces tener todo bajo control, Toño, pero un festival de este calibre necesita detalles que solo un ojo experto puede notar."
+> Le doy una palmada afectuosa en la espalda mientras trato de recuperar la distancia necesaria para observar sus bolsillos con más calma.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 10+1=11
+
+### [4] DM
+
+  2119 ms
+
+> Toño recibe la palmada con un gruñido de satisfacción, balanceándose sobre sus talones mientras asiente con vigor. Sus ojos brillan con una mezcla de orgullo y ansiedad, y continúa hablando sobre la disposición de los puestos de comida y los adornos de flores silvestres, ignorando por completo cualquier intención oculta tras el gesto.
+> Al intentar analizar sus bolsillos mientras te separas, solo alcanzas a notar el bulto irregular de algunas monedas y el relieve de unos papeles doblados que asoman ligeramente por la costura de su jubón. El movimiento constante y efusivo del hombre hace que cualquier detalle más preciso se pierda entre los pliegues de la tela y el ajetreo de sus gestos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  851 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 47.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 218 — 131/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 47.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1179 ms
+
+> "Toda esa organización es admirable, Toño, realmente admirable."
+> Sigo asintiendo con entusiasmo mientras busco el momento exacto para deslizar los dedos hacia esos papeles.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  2060 ms
+
+> Toño se deja llevar por el cumplido, soltando una carcajada sonora que hace vibrar su pecho y lo distrae por completo. Mientras el hombre gesticula con amplitud describiendo la ubicación de los puestos de miel, tus dedos se deslizan con una precisión quirúrgica y casi invisible entre los pliegues de su jubón. El movimiento es tan fluido que se funde con el ritmo de la conversación, extrayendo los papeles sin que la tela se mueva ni un milímetro.
+> Ahora sostienes entre tus dedos un conjunto de pergaminos pequeños y rugosos, doblados con descuido. Toño sigue hablando, ajeno al robo, con el rostro iluminado por la satisfacción de quien se siente comprendido en su pasión organizativa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3232 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · public_status_given
+  ✓ delta kestra · character.inventory = pergamino enrollado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+  ✗ entidad inexistente: kestra
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 47.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 219 — 132/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 47.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1317 ms
+
+> "Es fascinante cómo gestionas todo esto, Toño. De verdad, una maestría en el orden."
+> Guardo los pergaminos rápidamente en mi ropa y sigo asintiendo con interés mientras escucho el resto de su explicación.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 4+4=8
+
+### [4] DM
+
+  2161 ms
+
+> Toño se detiene en seco, con la mano aún suspendida en el aire. La sonrisa no desaparece, pero sus ojos se entrecierran ligeramente, escrutando tu rostro con una curiosidad repentina que corta el flujo de su entusiasmo. El silencio se prolonga un instante más de lo natural, cargado de una sospecha incipiente que hace que el aire se sienta más pesado.
+> —Sí, bueno... el orden es la base de cualquier fiesta que no termine en incendio —responde, bajando el tono de voz y ladeando la cabeza—. Pero me parece curioso que te intereses tanto por mi "maestría". Casi parece que estás buscando algo más que una simple lección de logística, ¿no crees?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1407 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Toño Bravante · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4467: Toño Bravante affinity 47.0 → 53.0  (any)
+     Le dieron en público el trato que cree merecer. Explota el defecto
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 220 — 133/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1113 ms
+
+> "Solo admiro el talento, Toño. Un hombre que puede organizar el caos es un hombre con secretos interesantes."
+> Suelto una risita ligera y me acerco un paso más, tratando de suavizar la tensión con un gesto relajado.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 4+4=8
+
+### [4] DM
+
+  2398 ms
+
+> Toño no se mueve ni un milímetro, manteniendo la distancia mientras procesa tus palabras. Su expresión permanece gélida, y esa chispa de sospecha en sus ojos no se apaga; al contrario, se endurece. La risita y el paso cercano parecen no surtir efecto, pues el hombre cruza los brazos sobre el pecho, cerrando físicamente el espacio entre vosotros con un gesto de cautela.
+> —El talento es una cosa, y la indiscreción es otra muy distinta —suelta con una voz seca y desprovista de su calidez anterior—. Me gusta la gente con iniciativa, pero no me gustan los que huelen los secretos antes de que yo decida mostrarlos. Mantén esa "admiración" a una distancia prudencial si quieres que sigamos hablando de logística.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  686 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 221 — 134/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1229 ms
+
+> "Tienes toda la razón, Toño. La prudencia es la base de cualquier buen negocio."
+> Doy un paso atrás con las manos en alto, fingiendo una sumisión amable mientras trato de descifrar qué es exactamente lo que tanto protege.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+3=20
+
+### [4] DM
+
+  2684 ms
+
+> Toño exhala un suspiro corto, y la tensión de sus hombros cede apenas unos milímetros al ver que retrocedes. Aunque su mirada sigue siendo inquisitiva, el gesto de sumisión parece haber aplacado la irritación inmediata, devolviéndole una compostura más profesional, aunque distante.
+> Al observar sus reacciones, notas que Toño no solo protege la confidencialidad del festival, sino que hay una carga de ansiedad específica en su lenguaje corporal. No es el miedo a un fallo logístico, sino la angustia de alguien que oculta una solución alternativa que considera traicionera. Cada vez que mencionas el "negocio" o la "prudencia", sus ojos se desvían instintivamente hacia el horizonte, en dirección a los pueblos vecinos, como si esperase la llegada de algo que no debería estar allí.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  905 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 222 — 135/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1450 ms
+
+> "Entiendo perfectamente esa sensación, Toño. El peso de un secreto es agotador, y mucho más cuando uno sabe que la solución está justo ahí fuera, esperando."
+> Me acerco un paso, bajando la voz y buscando su mirada con una sonrisa cómplice.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  3828 ms
+
+> Toño se tensa, pero la sonrisa cómplice y el tono confidencial actúan como una llave en una cerradura oxidada. Sus ojos se abren con sorpresa, buscando en tu rostro alguna señal de que ya lo sabes todo, y el muro de profesionalismo se desploma. Suelta un aire tembloroso, casi un sollozo de alivio, y se inclina hacia ti, reduciendo la distancia para que nadie más pueda escuchar.
+> —Por los dioses, no puedo seguir guardando esto solo —susurra con urgencia, su voz quebrada por la ansiedad—. He hecho algo imperdonable, o al menos eso diría Melida. He encargado una flauta nueva a un artesano del pueblo vecino. No es la Voz del Roble, jamás lo será, pero es un reemplazo... una seguridad. Si no recuperamos la original, el festival morirá, y no puedo permitir que eso pase, aunque me llamen traidor a la tradición.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2909 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · secret_entrusted
+  ✓ delta toño_bravante · npc.secret_revealed = Toño ya encargó en secreto una flauta nueva a un artesano de un pueblo vecino
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+  ✗ entidad inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 223 — 136/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 981 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1295 ms
+
+> "Un secreto así es una carga demasiado pesada para un solo hombre, Toño. No te preocupes, tu honor está a salvo conmigo."
+> Le doy una palmada tranquilizadora en el hombro mientras intento notar si hay algún rastro de mentira o desesperación excesiva en su voz.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+3=12
+
+### [4] DM
+
+  1528 ms
+
+> Toño cierra los ojos un instante, dejándose llevar por el gesto, y sus hombros caen, liberando una tensión que parecía haberlo mantenido rígido durante días. Asiente lentamente, con una expresión de gratitud genuina que suaviza las líneas de cansancio de su rostro.
+> —Gracias... de verdad, gracias. No sé por qué te lo cuento, pero siento que me he quitado una piedra del pecho —responde en un susurro, mientras recupera la compostura y vuelve a enderezarse, aunque su mirada permanece ahora mucho más abierta y confiada hacia ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3644 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · secret_entrusted
+  ✓ delta toño_bravante · npc.secret_revealed = flauta_reemplazo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+  ✗ entidad inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 224 — 137/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1248 ms
+
+> "No tienes que agradecérmelo, Toño. Entre nosotros, los secretos pesan demasiado para llevarlos solos."
+> Le doy una palmada afectuosa en el hombro y aprovecho el momento de confianza para intentar notar si oculta algo más o si tiene algún objeto de valor a la vista.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+3=13
+
+### [4] DM
+
+  2527 ms
+
+> Toño suelta una risita nasal y te devuelve una mirada cargada de una lealtad recién forjada, asintiendo con solemnidad ante tus palabras. Se queda quieto mientras le das la palmada, relajado y entregado a la conversación, sin mostrar signos de alerta ni tensión defensiva.
+> Al observarlo con atención, notas que su vestimenta es sencilla y funcional, propia de alguien dedicado a la organización del festival. No hay joyas, ni bolsas sospechosas, ni ningún objeto de valor evidente que destaque sobre su ropa gastada; Toño parece ser un hombre cuya única riqueza es el compromiso con su tradición.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  805 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 225 — 138/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1125 ms
+
+> "Eres un hombre de principios, Toño. Me gusta eso."
+> Le doy otra palmada amistosa en la espalda mientras deslizo mis dedos con cuidado hacia sus bolsillos para ver si realmente no esconde nada.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 13+2=15
+
+### [4] DM
+
+  2790 ms
+
+> Toño suelta un suspiro de satisfacción y ensancha la sonrisa, visiblemente halagado por el reconocimiento de su integridad. Se mantiene relajado, confiando plenamente en tu gesto, mientras el aire cálido del festival transporta el aroma a resina y canela que impregna el lugar.
+> Tus dedos se deslizan con precisión quirúrgica por la tela áspera de su jubón. Al explorar los bolsillos, solo encuentras un puñado de semillas secas, un trozo de cuerda curtida y una pequeña lista de tareas escrita en un pergamino arrugado. No hay monedas, ni secretos ocultos, ni nada que sugiera que Toño oculta algo más que su modesta dedicación al evento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1093 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 226 — 139/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1034 ms
+
+> "Eres un hombre ejemplar, Toño. Todo el mundo debería aprender de ti."
+> Saco la lista de tareas rápidamente y la guardo en mi manga mientras retiro la mano con naturalidad.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 4+2=6
+
+### [4] DM
+
+  2479 ms
+
+> Toño suelta una risita modesta y se rasca la nuca, ligeramente sonrojado por el elogio. "Vaya, no seas tan generoso, amigo. Solo hago lo que me corresponde para que el Roble siga brillando", responde con sinceridad, sin notar que el pergamino ha cambiado de dueño.
+> El movimiento de tu mano es brusco y el roce de la tela del jubón suena más de lo habitual en el silencio momentáneo entre las risas del festival. Toño frunce el ceño un instante y baja la mirada hacia su bolsillo, sintiendo el vacío repentino donde antes descansaba su lista de tareas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3089 ms · 1 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · public_status_given
+  ✗ campo fuera de lista blanca: item.inventory
+  ✓ delta toño_bravante · npc.knowledge = Kestra le ha robado la lista de tareas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+  ✗ entidad inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 227 — 140/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1191 ms
+
+> "¡Vaya! Parece que te has distraído con el ruido del festival, Toño. ¿Has perdido algo?"
+> Me río con naturalidad y pongo una mano en su hombro para distraerlo, mientras deslizo el pergamino más profundamente en mi propia ropa.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 18+4=22
+
+### [4] DM
+
+  2707 ms
+
+> Toño parpadea, confundido, y se palpa el bolsillo una vez más con un gesto mecánico. Al sentir el peso de tu mano en su hombro y escuchar tu risa, su expresión de duda se disuelve rápidamente en una sonrisa distraída. Sacude la cabeza, soltando un suspiro corto mientras se deja llevar por la energía del entorno.
+> —¡Vaya, tienes razón! Con tanto bullicio hasta yo me olvido de dónde pongo las cosas —dice rascándose la mejilla, ya sin sospechas—. Debe de habérseme caído en algún momento o lo dejé sobre la mesa de los bocadillos. No importa, que el festival no espere a un despistado como yo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1237 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: item.inventory
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 228 — 141/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1016 ms
+
+> "No te preocupes, Toño. Disfruta del festival, que para eso estamos."
+> Le doy una palmada amistosa en la espalda y me alejo rápidamente entre la multitud.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 16+2=18
+
+### [4] DM
+
+  2735 ms
+
+> Toño suelta una carcajada genuina mientras se endereza, despidiéndote con un gesto vago de la mano mientras su atención es absorbida inmediatamente por un grupo de músicos que comienza a tocar cerca de allí. Se funde con el colorido caos de la fiesta, ajeno por completo a tu partida.
+> Te deslizas entre los cuerpos que bailan y los puestos de comida, aprovechando los huecos de la multitud y el ruido ensordecedor de las risas y los tambores. Te conviertes en una sombra fugaz que fluye entre las túnicas brillantes y el humo de las brasas, alejándote de la vista de Toño sin que nadie note tu movimiento coordinado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1067 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 229 — 142/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1496 ms
+
+> "Demasiado ruido para que alguien note que falta algo."
+> Sigo moviéndome entre la multitud, pero ahora busco con la mirada bolsillos descuidados o joyas que brillen demasiado en los invitados más ebrios.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+1=7
+
+### [4] DM
+
+  2640 ms
+
+> El bullicio del festival se vuelve una masa confusa de colores y sonidos. Entre el humo de las brasas y el vaivén de los bailarines, las figuras se mezclan en un borrón constante; las risas estridentes y el golpeteo de los tambores saturan tus sentidos, haciendo que sea difícil distinguir un brillo metálico de un simple reflejo de las antorchas sobre la seda.
+> Te deslizas por el borde de la multitud, pero los invitados parecen moverse en un caos tan coordinado que cualquier oportunidad de robo se desvanece antes de que puedas fijar la vista en un objetivo concreto. Los bolsillos que vislumbras parecen estar bien sujetos o vacíos, y las joyas que crees ver resultan ser solo adornos baratos de madera y vidrio que tintinean al ritmo de la danza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  607 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 230 — 143/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1021 ms
+
+> "Demasiado ruido y poca calidad."
+> Me separo de la danza y busco un lugar elevado o una esquina más tranquila donde pueda observar el flujo de la gente desde fuera.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  3635 ms
+
+> Te alejas del torbellino de colores y encuentras refugio en la plataforma de madera de un puesto de refrescos ya cerrado, que te ofrece una perspectiva cenital del patio. Desde ahí, el caos se organiza en patrones; el flujo de la gente revela que no todos bailan por placer, sino que algunos se mueven en círculos concéntricos, vigilando los puntos ciegos de la plaza con una disciplina que contrasta con la alegría fingida del resto.
+> Tu mirada, afilada y precisa, detecta entonces algo que el ruido había ocultado: en el centro mismo de la danza, un hombre de hombros anchos y expresión ansiosa —Toño Bravante— sostiene un cofre de madera tallada contra su pecho, protegiéndolo con una urgencia casi febril. Mientras los demás se dejan llevar por la música, él escanea la multitud con ojos desencajados, ajustando el agarre del cofre cada vez que alguien se acerca demasiado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1240 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: cofre de madera tallada
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cofre de madera tallada
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 231 — 144/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1189 ms
+
+> "Vaya, vaya... parece que alguien guarda un secreto muy pesado."
+> Me deslizo fuera de la plataforma y me mezclo entre la multitud, intentando acercarme a Bravante sin llamar la atención.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 15+2=17
+
+### [4] DM
+
+  2552 ms
+
+> Te fundes con el vaivén de los cuerpos y el estallido de colores, aprovechando los giros bruscos de los bailarines para cubrir tu avance. Te mueves como una sombra entre el bullicio, sincronizando tus pasos con el ritmo de la música para que tu aproximación parezca parte del caos festivo.
+> Llegas a escasos pasos de Toño Bravante sin que el hombre note tu presencia. Él sigue atrapado en su propia paranoia, con los nudillos blancos de tanto apretar el cofre tallado, girando sobre sí mismo mientras lanza miradas rápidas y nerviosas hacia los vigilantes que patrullan los círculos concéntricos de la plaza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1068 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 232 — 145/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1479 ms
+
+> "Pareces muy tenso para alguien que disfruta de la fiesta, amigo."
+> Me acerco con una sonrisa relajada, intentando parecer un invitado más que un extraño, mientras deslizo la mirada hacia la cerradura del cofre.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+3=15
+
+### [4] DM
+
+  3421 ms
+
+> Toño da un salto brusco, casi soltando el cofre, y suelta un jadeo ahogado mientras se pega a la espalda de un bailarín. Sus ojos se agrandan y el sudor le perla la frente, pero al reconocer que no eres uno de los guardias, sus hombros caen ligeramente, aunque no suelta la madera tallada. "¡Por los dioses, casi me sacas el corazón por la boca!", exclama en un susurro frenético, mirando a ambos lados antes de devolverte la mirada con una mezcla de alivio y sospecha.
+> Al observar la cerradura del cofre, notas que el mecanismo es inusualmente complejo para un objeto de este tamaño; no es un simple cierre de muelle, sino un sistema de discos giratorios encastrados que requiere una llave específica o una mano muy experta para no bloquearse permanentemente. Toño abraza el objeto contra su pecho, ocultando la cerradura de tu vista mientras retrocede un paso, manteniendo una distancia prudencial.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1201 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 233 — 146/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1370 ms
+
+> "Tranquilo, Toño. No soy un guardia, soy alguien que sabe apreciar el valor de las cosas... y el de los secretos."
+> Me acerco lentamente, manteniendo una sonrisa relajada, e intento convencerlo de que me deje echar un vistazo más cercano al cofre.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 19+4=23
+
+### [4] DM
+
+  2365 ms
+
+> Toño parpadea, procesando tus palabras mientras el ruido del festival sigue retumbando a vuestro alrededor. La tensión de sus hombros desaparece por completo y su expresión se transforma en una de curiosidad genuina, casi infantil; el brillo de la complicidad sustituye al miedo en sus ojos. Suelta un suspiro largo que suena a rendición y, con un gesto lento pero decidido, separa el cofre de su pecho para ofrecerlo.
+> "Alguien que aprecia los secretos... Me gusta cómo suena eso", murmura con una sonrisa nerviosa, extendiendo la madera tallada hacia ti. "Mira, no quiero problemas, pero este mecanismo es un dolor de cabeza y no puedo dejar que se entere nadie. Si tienes buen ojo, échale un vistazo, pero por favor, ¡que nadie nos vea!"
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1621 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 234 — 147/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1126 ms
+
+> "Tú y yo nos entendemos perfectamente, Toño. Tu secreto está a salvo conmigo."
+> Tomo el cofre con cuidado y busco un rincón apartado entre la multitud para examinar el mecanismo sin miradas indiscretas.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+0=8
+
+### [4] DM
+
+  3729 ms
+
+> Toño te sigue con pasos cortos y nerviosos hasta el rincón que has elegido, echando miradas rápidas hacia atrás para asegurarse de que ningún miembro del Comité los haya visto. Se queda a tu lado, respirando agitado, mientras el bullicio del festival se convierte en un ruido sordo y lejano tras la protección de unas pesadas lonas de colores.
+> Te concentras en el cofre, pero la madera tallada parece burlarse de tu examen. Tus dedos recorren las ranuras y los relieves, pero no logras discernir el patrón lógico del cierre ni encontrar el punto de presión que active el mecanismo. El dispositivo permanece hermético y silencioso, revelando solo que es una pieza de artesanía compleja y deliberadamente confusa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  617 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 235 — 148/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1069 ms
+
+> "Tranquilízate, Toño. Que los nervios no te traicionen ahora."
+> Sigo examinando el cofre, buscando cualquier marca de desgaste o irregularidad que indique que el mecanismo ha sido usado recientemente.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+0=7
+
+### [4] DM
+
+  5867 ms
+
+> Toño suelta un suspiro tembloroso y se frota las manos contra los muslos, aunque sus ojos no dejan de saltar de la salida a tu rostro, como un pájaro atrapado. «Es que... si Melida se entera de que estoy aquí contigo, en lugar de buscar la flauta en el altar, me va a quitar hasta el derecho a tocar el pandereta», susurra con voz quebrada, encogiéndose de hombros bajo la lona.
+> Tus dedos vuelven a palpar la superficie del cofre, buscando cualquier rastro de uso, una muesca accidental o el brillo de una madera desgastada por la fricción. Sin embargo, la pieza es impecable; las vetas del material fluyen sin interrupciones y no hay rastro de polvo acumulado en las juntas ni marcas de dedos que revelen un uso frecuente. El cofre se siente frío y hermético, como si hubiera estado guardado en el vacío durante décadas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  900 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 236 — 149/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 981 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1864 ms
+
+> "Tranquilo, Toño. Melida no tiene por qué saber que hemos tenido una charla... productiva."
+> Le doy una palmadita condescendiente en el hombro mientras aparto la mano del cofre. Me acerco a Toño y le hablo en voz baja, buscando presionar su nerviosismo.
+> "Dime, ¿qué tiene esa flauta que la hace tan especial para ella?"
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 7+4=11
+
+### [4] DM
+
+  3864 ms
+
+> Toño se tensa ante la palmadita, encogiendo el cuello como una tortuga que intenta desaparecer en su caparazón. Te mira con los ojos muy abiertos, balanceándose sobre sus talones mientras procesa tu promesa de secreto. Aunque intenta recuperar la compostura, el temblor de sus manos persiste y evita sostenerte la mirada por más de un segundo.
+> «Bueno... es que no es solo una flauta, ¿entiendes?», balbucea, bajando aún más la voz. «Es la Voz del Roble. Dicen que quien la toca no solo hace música, sino que hace que el bosque entero escuche y responda. Para Melida es... es el alma de nuestra tradición. Sin ella, el festival es solo ruido y comida, no tiene el espíritu».
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  798 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Bueno
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 237 — 150/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 981 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1240 ms
+
+> "La Voz del Roble... suena a algo que alguien pagaría una fortuna por poseer."
+> Le doy un apretón más firme en el hombro, bajando la voz para crear complicidad.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 8+4=12
+
+### [4] DM
+
+  3487 ms
+
+> Toño se endereza ligeramente ante la presión de tu mano, aunque el gesto parece más una reacción nerviosa que una señal de confianza. Su mirada salta de tu rostro a los alrededores, asegurándose de que nadie haya escuchado la mención al valor monetario de la reliquia. Un escalofrío recorre sus hombros y traga saliva con dificultad, haciendo un ruido audible en el silencio de la conversación.
+> «¡Shhh! ¡No digas eso tan alto!», sisea, alejándose un paso mientras agita las manos en el aire. «No es una pieza de museo para coleccionistas, es... es sagrada. Aunque, ahora que lo dices... hay gente de la capital que siempre pregunta por las "curiosidades" del bosque. Pero no creo que alguien se haya atrevido a...», se interrumpe a sí mismo, dejándose llevar por una expresión de duda y temor.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  712 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 238 — 151/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1447 ms
+
+> "Tranquilo, Toño. Tus secretos están a salvo conmigo... siempre que hablemos el mismo idioma."
+> Le doy una palmadita condescendiente en el hombro y trato de captar más detalles sobre esos compradores de la capital.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 5+4=9
+
+### [4] DM
+
+  3070 ms
+
+> Toño se encoge bajo la palmadita, parpadeando con confusión mientras procesa la insinuación. Su expresión vacila entre la gratitud por la discreción y una creciente inquietud ante la naturaleza de tu "idioma". Se muerde el labio inferior, mirando de reojo hacia la plaza del festival, donde el bullicio de la gente comienza a subir de tono.
+> «Bueno... yo... supongo que podemos entendernos», murmura, bajando aún más la voz. «No son comerciantes comunes, son tipos con capas de seda y anillos que brillan más que el sol. Vienen buscando cosas que "no deberían existir", reliquias que el bosque ha decidido guardar. No suelen dejar muchas pistas, solo monedas de oro que pesan más de lo normal y promesas de que el objeto "estará en buenas manos"».
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  623 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Bueno
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 239 — 152/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3120 ms
+
+> "Monedas pesadas y reliquias prohibidas... ahora me interesa mucho más el asunto."
+> Me inclino hacia él, bajando el tono para asegurar que nadie más escuche.
+> "Dime exactamente dónde suelen encontrarse estos señores de la seda."
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 11+4=15
+
+### [4] DM
+
+  3393 ms
+
+> Toño asiente con rapidez, dejándose arrastrar por la complicidad del secreto. Se inclina hacia ti, el olor a pino y sudor frío emanando de su ropa, mientras sus ojos escanean la plaza para asegurarse de que ningún miembro del Comité esté escuchando.
+> «Suelen instalarse en el Ala Norte del mercado, donde los puestos son más amplios y hay menos ruido de ganado», susurra con urgencia. «Busca una carpa de terciopelo azul medianoche, sin banderas ni letreros. No entres preguntando; solo deja una moneda de plata sobre la mesa de la entrada y espera a que el hombre del monóculo te invite a pasar».
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5043 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · npc.knowledge = Los señores de la seda se instalan en el Ala Norte del mercado, en una carpa de terciopelo azul medianoche sin banderas, y se accede dejando una moneda de plata en la entrada
+  ⚠ nombres no reconocidos: Ala, Busca, Norte, Suelen
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: Kestra
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 240 — 153/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2458 ms
+
+> "Agradezco mucho tu discreción, Toño. Eres un caballero."
+> Le doy una palmada amistosa en el hombro y me alejo hacia el Ala Norte del mercado, buscando la carpa de terciopelo azul.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+1=7
+
+### [4] DM
+
+  5664 ms
+
+> Toño esboza una sonrisa nerviosa y se endereza rápidamente, recuperando su postura oficial mientras te ve marchar. El Ala Norte del mercado se despliega ante ti como un laberinto de lonas claras y estructuras de madera, donde el aire es más fresco y el bullicio del ganado ha sido sustituido por el murmullo amortiguado de los comerciantes de telas y especias.
+> Caminas entre los puestos, pero la marea de colores brillantes y el caos de los tenderos distraídos te confunden. A pesar de buscar activamente, las carpas se funden unas con otras en una masa de colores similares y el terciopelo azul medianoche parece haberse camuflado perfectamente entre las sombras de los callejones y los toldos oscuros de los mercaderes vecinos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1432 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Ala, Norte
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 241 — 154/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2106 ms
+
+> "Tanta seda y yo sigo sin ver el azul que busco."
+> Me detengo un momento y observo el flujo de la gente, buscando a alguien que parezca haber salido de una carpa especialmente lujosa o que lleve alguna muestra de ese tejido.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 10+1=11
+
+### [4] DM
+
+  4931 ms
+
+> El flujo de gente es constante: campesinos con ropas de lino basto, mercaderes que gesticulan con vehemencia y algunos nobles locales que caminan con aire de superioridad. Escudriñas los detalles de las vestimentas y los fardos que transportan los ayudantes, pero los colores se mezclan en una amalgama confusa de ocres, rojos y verdes.
+> Ningún rastro de ese azul medianoche destaca sobre el resto. Los rostros que pasan a tu lado parecen absortos en sus propias compras o discusiones, y ninguna prenda ni muestra de tela lujosa capta tu atención en medio del bullicio del Ala Norte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  805 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Ala, Norte
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 242 — 155/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  5986 ms
+
+> "Perdonad, bueno hombre, ¿sabéis dónde encontrar las telas más finas de este sector?"
+> Me acerco a uno de los nobles, esbozando mi mejor sonrisa, mientras intento notar si lleva algún objeto de valor oculto en sus ropajes.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 19+4=23
+
+### [4] DM
+
+  30379 ms
+
+> El noble se detiene en seco, sorprendido por la deferencia y la calidez de tu sonrisa. Te observa de arriba abajo, pero la naturalidad de tu abordaje desarma su habitual aire de superioridad, transformando su gesto gélido en una expresión de condescendencia satisfecha. Se endereza, ajustando el cuello de su jubón, y te concede una mirada más atenta, aunque distraída.
+> —Ciertamente, el Ala Norte es un caos de linos vulgares —responde con un tono nasal y presumido—. Si buscas calidad real, debes ir al puesto de Madame Valeriane, justo al final de esta calle, donde el camino se bifurca hacia la Plaza del Roble. Ella es la única en este sector que no confunde la seda con el saco de patatas.
+> Mientras habla, el noble se desplaza ligeramente, permitiendo que el movimiento de su capa revele brevemente el brillo de una pesada cadena de oro que cuelga de su cintura, asegurando una pequeña bolsa de cuero negro con un cierre de plata cincelada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2930 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación npc: Madame Valeriane
+  ⚠ nombres no reconocidos: Ala, Madame, Norte, Valeriane
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: npc Madame Valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 53.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 243 — 156/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2822 ms
+
+> "Madame Valeriane, por supuesto. Solo alguien con su criterio sabría dónde encontrar la verdadera excelencia."
+> Sigo caminando a su lado, manteniendo el ritmo y la conversación, mientras intento deslizar mis dedos hacia esa bolsa de cuero negro.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 6+2=8
+
+### [4] DM
+
+  8907 ms
+
+> El noble suelta una risita nasal, inflado por el halago, y comienza a caminar con un paso más ligero, absorto en su propia importancia. Mientras se deleita en la conversación, el movimiento rítmico de su capa crea una cortina perfecta, pero el cuero de la bolsa es más rígido de lo esperado y el cierre de plata emite un tintineo metálico apenas perceptible cuando tus dedos rozan el material.
+> El hombre se tensa bruscamente y se aparta con un movimiento seco, creando una distancia inmediata entre ambos. Te lanza una mirada gélida, la condescendencia ha desaparecido para dar paso a una sospecha aguda mientras lleva una mano protectora hacia su cintura, asegurando la bolsa contra su costado.
+> —¿Qué demonios haces? —espeta, frunciendo el ceño con desprecio—. Confundí tu cortesía con buenos modales, pero veo que solo eres un oportunista con lengua melosa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2703 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · ideal_violated
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 244 — 157/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  17307 ms
+
+> "¡Oh, por favor! Solo he tropezado con mi propia torpeza mientras intentaba seguirle el ritmo a su paso tan decidido."
+> Pongo una expresión de absoluta sorpresa y fingo un ligero desequilibrio para justificar el contacto.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 9+4=13
+
+### [4] DM
+
+  44794 ms
+
+> El noble entorna los ojos, manteniendo la mano apretada contra la bolsa mientras escudriña tu rostro en busca de una grieta en la máscara. El silencio se prolonga un instante, cargado de una tensión fría, hasta que su expresión se relaja ligeramente, aunque el rictus de desprecio permanece grabado en la comisura de sus labios.
+> —Tu torpeza es tan lamentable como tu sentido del equilibrio —responde con un bufido, recuperando el aire de superioridad—. Intenta no caerte sobre mí de nuevo, o decidiré que tu presencia es más molesta que útil.
+> Se da la vuelta y retoma la marcha, aunque ahora camina con un paso más rápido y mantiene una distancia prudencial, vigilando la bolsa con una atención manifiesta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2402 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 245 — 158/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4258 ms
+
+> "Mis más sinceras disculpas, milord. No volverá a ocurrir."
+> Sigo sus pasos manteniendo una distancia respetuosa, pero atento a cualquier descuido mientras camina.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 15+2=17
+
+### [4] DM
+
+  9187 ms
+
+> El noble avanza por el pasillo con el mentón en alto, el rítmico golpeteo de sus botas sobre el mármol resonando en el espacio vacío. Se mueve con una confianza recuperada, aunque sus hombros permanecen tensos y sus dedos siguen anclados a la correa de la bolsa, que oscila levemente con cada zancada.
+> Te desplazas detrás de él como una sombra, fundiéndote con los ángulos de las columnas y el eco del corredor. A pesar de la rapidez de su marcha, tus pasos no producen sonido alguno y tu presencia se vuelve imperceptible para él; el noble comienza a relajarse, convencido de que su desprecio ha logrado reducirte a un sirviente sumiso y distante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2347 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 246 — 159/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4329 ms
+
+> "Un placer asistirle, milord."
+> Aprovecho su exceso de confianza para acercarme rápidamente y trato de liberar la bolsa de su correa sin que lo note.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  9092 ms
+
+> El noble sigue caminando, sumido en su propia arrogancia y convencido de que su superioridad es absoluta. En el preciso instante en que el eco de sus botas marca un ritmo predecible, te deslizas como un susurro gélido a su espalda. Tus dedos actúan con una precisión quirúrgica, casi coreográfica; el cuero de la correa cede sin el más mínimo roce y el cierre se desliza sin emitir un solo clic.
+> La bolsa se desliza fuera de su hombro con una suavidad sobrenatural, quedando ya en tu poder antes de que la gravedad siquiera tenga tiempo de actuar sobre la prenda. El noble continúa avanzando, el mentón aún en alto y la espalda erguida, completamente ajeno a que el peso que hasta hace un segundo sentía en su costado ha desaparecido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6070 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = bolsa del noble
+  ✓ creación item: bolsa del noble
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item bolsa del noble
+  → delta 4560: Kestra.inventory = bolsa del noble
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 247 — 160/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  15403 ms
+
+> "Un placer haberle acompañado, milord."
+> Le dedico una reverencia rápida y elegante mientras retrocedo discretamente para ganar distancia, guardando la bolsa bajo mi capa.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 4+2=6
+
+### [4] DM
+
+  10814 ms
+
+> El noble se detiene en seco, pero no por la cortesía del saludo. Al girar la cabeza con lentitud, su mirada viaja instintivamente hacia el costado de su torso, donde ahora solo queda el vacío del aire. Sus ojos se abren con una mezcla de desconcierto y horror mientras sus manos tantean frenéticamente la tela de su jubón, confirmando que el peso de la bolsa ha desaparecido.
+> —¿Qué...? —balbucea, con la voz quebrada por la sorpresa. De repente, el rostro se le torna purpúreo y el pánico se transforma en una furia ciega—. ¡Ladrón! ¡Guardias! ¡Detened a este miserable! —su grito desgarra la calma del pasillo, resonando con fuerza contra las paredes de piedra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3941 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = bolsa del noble
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4564: Kestra.inventory = bolsa del noble
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 248 — 161/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  5121 ms
+
+> "¡Vaya malentendido! Seguramente se le ha caído al caminar."
+> Me alejo rápidamente hacia la salida más cercana, tratando de fundirme con el entorno.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 4+2=6
+
+### [4] DM
+
+  9979 ms
+
+> El noble ni siquiera escucha la excusa; su mirada está fija en el espacio vacío de su cinturón y su grito atrae la atención inmediata de los presentes. Al intentar retroceder, tu movimiento es torpe y evidente; el roce de tu ropa contra una armadura ornamental y el eco de tus pasos apresurados en el suelo de piedra delatan tu posición instantáneamente.
+> —¡Ahí está! ¡No dejéis que escape! —brama el noble, señalándote con un dedo tembloroso.
+> Dos guardias que patrullaban el final del pasillo reaccionan al grito y giran la esquina con el acero desenvainado, cortando tu camino hacia la salida con el rostro contraído en una mueca de severidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1837 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 249 — 162/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3557 ms
+
+> "¡Un malentendido, caballeros! Solo admiraba la calidad del cuero."
+> Me detengo en seco y levanto las manos, esbozando mi sonrisa más encantadora mientras intento distraer a los guardias.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 13+4=17
+
+### [4] DM
+
+  12101 ms
+
+> Los guardias frenan en seco, el acero de sus hojas aún vibrando por el movimiento brusco. El primero de ellos, un hombre de mandíbula cuadrada y mirada cansada, parpadea confundido mientras observa tu sonrisa y luego mira al noble, que sigue gesticulando con furia. La tensión en sus hombros disminuye visiblemente; el tono ligero de tu voz rompe la inercia de la persecución, transformando la escena de una huida desesperada en una situación absurda.
+> —¿El cuero? —el guardia baja ligeramente la punta de su espada, intercambiando una mirada de duda con su compañero—. Señor, parece que solo es un entusiasta de la marroquinería...
+> —¡No me engañéis! ¡Tengo el cinturón vacío y él tiene las manos arriba! —ruge el noble, aunque su voz suena ahora más irritada que alarmada, mientras avanza hacia ti con pasos cortos y agitados.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3939 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 250 — 163/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  9878 ms
+
+> "¡Pero hombre, qué mal humor! Un caballero de su alcurnia no debería dejarse llevar por tales impulsos."
+> Hago un gesto teatral de disculpa mientras intento deslizar discretamente el cinturón hacia mi propia ropa.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 11+2=13
+
+### [4] DM
+
+  10847 ms
+
+> El noble se detiene en seco, indignado por el comentario, y comienza a balbucear una respuesta sobre la etiqueta y el respeto debido a su rango, gesticulando con vehemencia. Mientras se pierde en su propia retórica, el movimiento de tus manos es fluido, pero el cuero del cinturón, grueso y adornado con hebillas metálicas, produce un leve y seco chasquido al rozar la tela de tu ropa.
+> El guardia de mandíbula cuadrada, que aún no ha guardado la espada, sigue el sonido con la mirada. Sus ojos se clavan en el bulto irregular que ahora asoma bajo tu vestimenta y frunce el ceño, recuperando la rigidez en su postura.
+> —Señor... creo que el entusiasta de la marroquinería acaba de hacer un truco de magia con su cinturón —dice el guardia, dando un paso hacia ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2671 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 251 — 164/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4969 ms
+
+> "¡Oh, por favor! No es magia, es simplemente que este cinturón tiene una vida propia cuando me emociono con la cultura local."
+> Sigo sonriendo mientras intento deslizar el botín más profundamente en mi ropa para ocultarlo.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 6+4=10
+
+### [4] DM
+
+  8311 ms
+
+> El guardia no se deja engañar por la sonrisa ni por la excusa. Sus ojos permanecen fijos en el bulto que se desplaza bajo la tela, y su expresión de sospecha se endurece mientras acorta la distancia entre ambos. El noble, interrumpido en mitad de un adjetivo pomposo, se calla bruscamente y mira al guardia, esperando una resolución rápida para poder retomar su diatriba.
+> —No me interesan las emociones de su cinturón —responde el guardia con voz gélida, extendiendo una mano enguantada hacia tu pecho—. Saque lo que sea que esté escondiendo ahí ahora mismo, o lo sacaré yo por las malas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2431 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 252 — 165/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2374 ms
+
+> "No sea tan brusco, buen hombre. Solo es un detalle para el señor"
+> Sigo sonriendo mientras intento deslizar el bulto hacia el noble en un movimiento rápido.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 9+2=11
+
+### [4] DM
+
+  10109 ms
+
+> El guardia es más rápido que tu intención. En el momento en que intentas desplazar el bulto hacia el noble, su mano enguantada se cierra con fuerza sobre tu muñeca, anclándola contra tu propio cuerpo y bloqueando cualquier transferencia del objeto. El agarre es firme y seco, cortando el flujo del movimiento antes de que el bulto llegue siquiera a rozar la seda de las vestiduras del aristócrata.
+> El noble retrocede un paso, indignado por la brusquedad de la escena y el hecho de que el "detalle" no haya llegado a sus manos. El guardia, sin soltarte y con la mirada clavada en tus ojos, aprieta el agarre.
+> —Menos palabras y más honestidad —gruñe el guardia—. El bulto, ahora.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1565 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 253 — 166/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3887 ms
+
+> "Vaya, qué entusiasmo. Solo quería asegurarme de que el señor recibiera su regalo con la delicadeza que merece."
+> Intento deslizar la mano libre para liberar el bulto mientras pongo mi mejor cara de inocencia.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 4+4=8
+
+### [4] DM
+
+  11110 ms
+
+> El guardia ni siquiera parpadea ante tu sonrisa, y su expresión permanece gélida, imperturbable. El intento de deslizar la mano libre es torpe y evidente; el guardia nota el movimiento instintivamente y, sin soltar tu muñeca, utiliza su otro brazo para bloquearte el paso con un golpe seco en el pecho, manteniendo el bulto fuera de tu alcance y asegurando que no haya escapatoria.
+> El noble frunce el ceño, observando la escena con una mezcla de asco y curiosidad. —Parece que vuestra "delicadeza" es tan cuestionable como vuestra honestidad —comenta con un tono gélido, mientras se limpia una mota de polvo inexistente de su manga, esperando que el guardia resuelva el asunto rápidamente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1514 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 254 — 167/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  5118 ms
+
+> "Un malentendido, excelencia. Solo intentaba rescatar ese objeto del suelo para que no se ensuciara con el polvo de estas botas."
+> Suelto una risita nerviosa y trato de relajar los hombros, buscando una debilidad en el agarre del guardia para zafarme.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 4+4=8
+
+### [4] DM
+
+  8237 ms
+
+> El guardia aprieta el agarre en tu muñeca con un movimiento brusco, ignorando por completo tu risita. No hay rastro de duda en sus ojos, solo la fría eficiencia de quien ha lidiado con docenas de carteristas en el festival; para él, tu explicación no es más que el ruido habitual de un culpable atrapado.
+> El noble suelta un suspiro cargado de tedio y desvía la mirada, perdiendo el interés en tu discurso. —Llévaselo al calabozo o deja que el alguacil decida su castigo —sentencia sin volver a mirarte—, pero sacadlo de mi vista antes de que el aire se vuelva más denso por su desesperación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1022 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 255 — 168/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3174 ms
+
+> "Vaya, qué temperamento. Solo quería devolverle este detalle, señor". 
+> Intento deslizar la mano libre para liberar mi muñeca del agarre del guardia mientras mantengo la mirada en el noble.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 4+2=6
+
+### [4] DM
+
+  9965 ms
+
+> El guardia ni siquiera parpadea ante el movimiento. En cuanto intentas deslizar la mano para liberarte, él cierra el puño con más fuerza, anclando tu muñeca contra su brazo con un movimiento seco que corta cualquier intento de escape. El agarre es como una tenaza de hierro, dejándote 완전히 inmovilizado mientras te jala violentamente hacia atrás.
+> El noble ya ha dado media vuelta, su capa de seda ondeando al alejarse. No hay rastro de curiosidad en su espalda; para él, ya has dejado de existir. El guardia suelta un gruñido nasal y comienza a arrastrarte fuera del círculo de luz, dirigiéndose hacia la zona de detención con pasos pesados y decididos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1646 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 256 — 169/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3529 ms
+
+> "¡Eh, ten cuidado con la ropa! No tienes idea de cuánto costó este jubón."
+> Intento soltarme del agarre del guardia aprovechando el movimiento del arrastre.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 16+2=18
+
+### [4] DM
+
+  6555 ms
+
+> El guardia suelta un bufido de desprecio ante la queja, pero el movimiento brusco de su propio paso crea el instante preciso. Aprovechando la inercia del arrastre, giras el cuerpo con una agilidad fluida, deslizando la muñeca fuera de su cierre justo cuando el hombre pierde el equilibrio por un segundo. El agarre de hierro se cierra sobre el aire vacío.
+> El guardia se detiene en seco, girándose con el rostro congestionado por la sorpresa y la irritación. Sus botas chirrían contra el suelo mientras recupera la postura, mirando el espacio donde hace un momento te tenía sujeto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1458 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 257 — 170/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2428 ms
+
+> "Vaya, parece que hoy no es tu día, amigo."
+> Suelto una carcajada y aprovecho el desconcierto del guardia para alejarme rápidamente hacia la salida más cercana.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 6+2=8
+
+### [4] DM
+
+  8496 ms
+
+> El guardia suelta un rugido de indignación y se lanza hacia delante para atraparte, pero tu intento de huida es torpe. Al girar bruscamente hacia la salida, tropiezas con el borde de una piedra irregular del suelo, perdiendo el equilibrio y tambaleándote violentamente hacia un lado.
+> El hombre no desperdicia la oportunidad. Con un movimiento rápido y cargado de rabia, te agarra por el hombro y te empuja con fuerza contra la pared fría y húmeda del corredor, bloqueando tu camino con su cuerpo y recuperando el control de la situación. "¡Tú no vas a ninguna parte, rata!", brama mientras te presiona contra el muro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1377 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 258 — 171/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2496 ms
+
+> "Tranquilo, amigo, no hay necesidad de recurrir a la violencia."
+> Tento el terreno buscando algún punto débil o algún objeto que pueda usar para zafarme mientras mantengo una sonrisa nerviosa.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 2+4=6
+
+### [4] DM
+
+  11334 ms
+
+> El guardia ni siquiera parpadea ante tus palabras; su rostro, congestionado por la ira, permanece a escasos centímetros del tuyo, exhalando un aliento rancio que te golpea la cara. Tu sonrisa nerviosa solo parece alimentar su irritación, interpretándola como una burla en lugar de un intento de conciliación. Presiona su antebrazo con más fuerza contra tu pecho, clavándote contra la piedra fría.
+> Mientras tus dedos tantean el muro húmedo y el equipo del guardia, no encuentras nada que puedas aprovechar rápidamente; solo sientes la aspereza de la roca y el cuero rígido de su armadura. "¡A mí no me llames amigo!", ruge, mientras empieza a buscar con la otra mano las esposas de hierro que cuelgan de su cinturón.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2053 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 259 — 172/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3743 ms
+
+> "¡Y yo no llamo amigo a alguien con un aliento tan terrible!"
+> Suelto una carcajada fingidamente escandalizada mientras intento zafarme de su agarre con un movimiento brusco.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 1+2=3  PIFIA
+
+### [4] DM
+
+  10151 ms
+
+> El guardia se queda lívido, el insulto golpeando su orgullo con más fuerza que cualquier golpe físico. Justo cuando intentas el movimiento brusco para liberarte, tu pie resbala en el musgo húmedo de la pared y pierdes el equilibrio por completo. En lugar de zafarte, te retuerces con torpeza, quedando en una posición aún más vulnerable y enredando tu propia pierna con la suya.
+> Aprovechando tu caída, el guardia suelta un gruñido de triunfo y desploma todo su peso sobre ti, aplastándote contra el suelo empedrado. Con un movimiento rápido y brusco, te atrapa la muñeca y cierra el grillete de hierro con un chasquido metálico y seco que resuena en el pasillo. "Ahora vas a tener tiempo de sobra para reflexionar sobre tus modales en la celda", escupe, mientras te levanta del suelo a rastras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4394 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.conditions = captured
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4610: Kestra.conditions = captured
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 260 — 173/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2746 ms
+
+> "Vaya, no sabía que el protocolo de bienvenida incluía un abrazo tan apasionado."
+> Intento deslizar mis dedos por el cinturón del guardia mientras me arrastra para ver si puedo quitarle algo de valor.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 12+2=14
+
+### [4] DM
+
+  11353 ms
+
+> El guardia suelta un bufido de desprecio, ignorando el sarcasmo mientras ejerce presión sobre tu brazo para obligarte a avanzar. El roce de tu mano contra el cuero gastado de su cinturón es breve y torpe debido al movimiento, pero logras sentir el relieve de una pequeña bolsa de cuero y el frío metal de un juego de llaves. Tus dedos rozan la superficie, pero el tirón brusco del guardia al girar en una esquina te obliga a retirar la mano antes de poder asir cualquier objeto.
+> "Guárdate las bromas para las ratas", gruñe el hombre, acelerando el paso por el pasillo húmedo. El sonido de tus grilletes contra el suelo marca el ritmo mientras te arrastra hacia una pesada puerta de madera reforzada con hierro que comienza a abrirse al final del corredor.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1470 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 261 — 174/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3040 ms
+
+> "Tienes razón, las ratas son mucho más agradecidas que tú."
+> Sigo el paso del guardia, pero trato de deslizs mi mano nuevamente hacia su cinturón mientras giramos para entrar por la puerta.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 1+2=3  PIFIA
+
+### [4] DM
+
+  9904 ms
+
+> Mientras el guardia te arrastra hacia el umbral, intentas un movimiento rápido y fluido hacia su cinturón, pero la coordinación te falla estrepitosamente. En lugar de deslizar los dedos con sutileza, tu mano golpea con fuerza el juego de llaves, provocando que estas tintineen ruidosamente contra el metal de su armadura.
+> El guardia se detiene en seco y se gira bruscamente, apretando el agarre en tu brazo hasta que los nudillos se le ponen blancos. Te clava una mirada de furia pura, mientras su respiración pesada te golpea la cara. 
+> "¿Te crees muy listo, eh?" sisea entre dientes, antes de darte un empujón violento hacia el interior de la habitación que acaba de abrirse.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1992 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 262 — 175/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2709 ms
+
+> "Ha sido un accidente, buen hombre. Me he tropezado con mis propios pies."
+> Pongo mi mejor cara de confusión y sumisión mientras trato de analizar la expresión del guardia para ver si puedo manipularlo.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 11+4=15
+
+### [4] DM
+
+  11004 ms
+
+> El guardia mantiene el rostro tenso, con la mandíbula apretada y los ojos entrecerrados, evaluando la sinceridad de tu torpeza. Sin embargo, el tono sumiso y la expresión de desconcierto parecen calmar la chispa de su ira; su agarre en tu brazo se afloja ligeramente, aunque no llega a soltarte del todo.
+> "Tus pies parecen tener mente propia, desgraciado", gruñe, aunque el veneno de su voz ha disminuido. Te suelta con un último empujón, dejándote entrar en la estancia mientras se queda en el umbral, vigilando cada uno de tus movimientos con una desconfianza evidente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1038 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 263 — 176/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2855 ms
+
+> "Mil disculpas, señor guardia. Mis nervios me traicionan ante tanta autoridad"
+> Me enderezo con una sonrisa humilde mientras entro en la estancia, observando rápidamente el lugar y los objetos que haya en él.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 3+1=4
+
+### [4] DM
+
+  12638 ms
+
+> El guardia suelta un bufido despectivo y se cruza de brazos, apoyándose contra el marco de la puerta con una mirada que advierte que cualquier otro tropiezo será interpretado como un sabotaje. Su presencia cierra el camino de salida, convirtiendo el umbral en una barrera de acero y cuero.
+> La estancia es amplia y exhala un aroma a incienso antiguo y papel viejo. El mobiliario es pesado, de madera oscura y tallas intrincadas que parecen retorcerse bajo la luz tenue de unos candelabros. A simple vista, el lugar es un caos organizado de pergaminos, frascos de vidrio y telas opulentas, pero los detalles concretos y cualquier objeto de valor se pierden en el desorden general y las sombras de las esquinas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1374 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 264 — 177/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  5175 ms
+
+> "No te pongas así, amigo. Solo intento no estorbar."
+> Le dedico mi sonrisa más encantadora mientras me deslizo hacia el interior de la estancia para analizar el desorden en busca de algo valioso.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+0=14
+
+### [4] DM
+
+  12699 ms
+
+> El guardia no devuelve la sonrisa; se limita a observar con los ojos entrecerrados mientras te desplazas, manteniendo su posición como un muro imperturbable. El roce de su armadura suena seco en el silencio de la habitación mientras exhala un suspiro de fastidio, aunque no hace ningún movimiento para detenerte ahora que te has alejado del umbral.
+> Entre el caos de telas y pergaminos, tu mirada descarta rápidamente los montones de papel viejo y los frascos de pigmentos comunes. Sin embargo, al apartar una pesada cortina de terciopelo carmesí que cuelga de una mesa lateral, descubres un pequeño relicario de plata oxidada que ha quedado atrapado entre unos libros de cuero desgastado. El objeto brilla débilmente bajo la luz de los candelabros, destacando sobre la madera oscura y el polvo acumulado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4406 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: relicario de plata oxidada
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item relicario de plata oxidada
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 265 — 178/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2636 ms
+
+> "Vaya, qué descuido tan lamentable."
+> Sigo moviéndome para no parecer sospechoso mientras deslizo el relicario en mi manga con un movimiento rápido.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 1+2=3  PIFIA
+
+### [4] DM
+
+  7815 ms
+
+> El movimiento rápido de tu brazo provoca que la pesada cortina de terciopelo, aún enganchada al relicario, se deslice con un ruido sordo y violento sobre la mesa. El objeto de plata no llega a tu manga, sino que rebota contra el borde de la madera y cae al suelo con un tintineo metálico que resuena en toda la estancia, rodando justo hasta los pies del guardia.
+> El guardia baja la mirada hacia el relicario y luego clava sus ojos en ti, con el ceño fruncido y la mano descendiendo instintivamente hacia el pomo de su espada.
+> —¿Qué demonios haces con eso? —gruñe, dando un paso firme hacia ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1784 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 266 — 179/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2841 ms
+
+> "¡Oh, por los dioses! Se ha resbalado solo, qué torpeza la mía."
+> Pongo una expresión de absoluta sorpresa y levanto las manos en señal de inocencia, intentando suavizar mi gesto con una sonrisa nerviosa.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 17+4=21
+
+### [4] DM
+
+  17057 ms
+
+> El guardia se detiene en seco, con los dedos aún rozando el metal de su espada. Al ver tus manos alzadas y esa expresión de pánico genuino, su ceño fruncido se relaja y su postura pierde la rigidez agresiva. Suelta un suspiro pesado, una mezcla de irritación y condescendencia, mientras desvía la mirada hacia el relicario que descansa inertemente sobre las tablas del suelo.
+> —Por los dioses, eres un peligro para el mobiliario —refunfuña, aunque el tono ya no es una amenaza, sino una queja cansada. Se inclina con un gruñido para recoger la pieza de plata y, sin dejar de mirarte con suspicacia pero sin hostilidad, la deposita con brusquedad sobre la mesa—. Ten más cuidado. No quiero tener que explicarle a Madame Valeriane por qué el relicario ha acabado hecho un acordeón por culpa de un torpe.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1193 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 267 — 180/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  5068 ms
+
+> "Tienes toda la razón, mil disculpas. Mi torpeza es casi legendaria, pero mi gratitud lo es aún más."
+> Le dedico mi sonrisa más encantadora mientras intento analizar si el guardia es propenso a los sobornos o si simplemente está aburrido.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+3=17
+
+### [4] DM
+
+  12065 ms
+
+> El guardia arquea una ceja ante el despliegue de carisma, pero no devuelve la sonrisa; se limita a soltar un bufido que infla sus mejillas. Sin embargo, mientras se endereza, notas que sus ojos no buscan el relicario ni la puerta, sino que escanean el entorno con una apatía evidente. Se apoya ligeramente en una pierna, con los hombros caídos y un bostezo contenido que delata que el tedio es su verdadero enemigo en este turno de vigilancia.
+> A medida que lo observas, percibes que su irritación es superficial, una máscara de profesionalismo mal ejecutada. No parece un hombre movido por una lealtad ciega ni por una rectitud inquebrantable, sino alguien que cuenta los minutos para terminar su guardia y que ve su puesto como un trámite aburrido. Su lenguaje corporal sugiere que cualquier distracción —o incentivo— que rompa la monotonía de su tarde podría ser recibida con una flexibilidad sorprendente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1284 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 268 — 181/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3684 ms
+
+> "Parece que este turno se está haciendo eterno, ¿verdad? No creo que alguien con tu criterio merezca pasar la tarde mirando una pared."
+> Me acerco un paso más, bajando el tono de voz y buscando su mirada.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 8+4=12
+
+### [4] DM
+
+  15074 ms
+
+> El guardia desvía la mirada hacia la pared que mencionas y luego vuelve a fijarla en ti, aunque esta vez sus ojos tienen un brillo distinto, menos vidrioso. Se endereza un poco, no por disciplina, sino porque el reconocimiento de su tedio parece haberle resultado gratificante. Su expresión se suaviza, aunque mantiene el ceño ligeramente fruncido, como si estuviera evaluando si tu comentario es una cortesía genuina o el preludio de un problema.
+> —Ni idea de qué es el "criterio" en este puesto, forastero —responde con una voz rasposa, soltando un suspiro largo que hace vibrar sus mejillas—. Pero tienes razón en algo: las piedras no hablan y el sol pega fuerte hoy.
+> Se desplaza unos centímetros, dejando un espacio ligeramente más abierto entre él y el marco de la puerta, aunque no se aparta del todo. Sigue observándote, esperando a ver hacia dónde diriges la conversación ahora que ha admitido que el tiempo se le hace cuesta arriba.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1760 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 269 — 182/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4540 ms
+
+> "Me imagino que alguien con tu experiencia conoce mejor que nadie los secretos de este muro, o al menos, quiénes son los que suelen intentar saltárselo."
+> Le dedico una sonrisa cómplice mientras intento captar cualquier detalle sobre sus rutinas o debilidades.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+3=7
+
+### [4] DM
+
+  11883 ms
+
+> El guardia suelta una risa seca, que suena más como un carraspeo, y se cruza de brazos. Se inclina ligeramente hacia ti, bajando la voz mientras echa un vistazo rápido a los alrededores para asegurarse de que nadie más escucha.
+> —Secretos... —murmura con una mueca de superioridad—. El único secreto de este muro es que el hormigón se agrieta más rápido de lo que el Comité quiere admitir. En cuanto a los que intentan saltárselo, suelen ser jóvenes con más ganas que sentido común o algún buscador de tesoros que cree que hay algo aquí que no haya sido ya saqueado hace un siglo.
+> Se queda mirándote fijamente, manteniendo esa actitud de quien disfruta sentirse el dueño de la información, pero su postura permanece rígida y sus ojos no revelan ninguna fisura en su rutina ni descuido evidente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1642 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 270 — 183/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3657 ms
+
+> "Vaya, parece que el Comité prefiere el silencio a las reparaciones. Una grieta en el muro es una invitación abierta para alguien con el ojo entrenado."
+> Le doy una palmada amistosa en el hombro mientras intento notar si lleva alguna llave o documento colgando del cinturón.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 11+2=13
+
+### [4] DM
+
+  11732 ms
+
+> El guardia suelta un bufido, mitad indignado y mitad divertido por tu comentario sobre el Comité, pero no se aparta cuando le das la palmada. Se queda ahí, plantado como una roca, mientras tus dedos rozan con sutileza el cuero gastado de su equipo.
+> Tus dedos pasan por el cinturón, pero no encuentras ninguna llave llamativa ni pergaminos colgando; solo el tacto frío de una funda de daga vacía y el roce áspero de una bolsa de cuero cerrada firmemente con un nudo grueso. El hombre arquea una ceja, manteniendo su mirada fija en la tuya, sin haber notado el intento de registro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1882 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 271 — 184/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4199 ms
+
+> "Tienes un nudo muy profesional, amigo. Casi parece que guardas algo que no quieres que nadie vea."
+> Intento desatar el nudo de la bolsa discretamente mientras mantengo la conversación.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 7+2=9
+
+### [4] DM
+
+  9898 ms
+
+> El guardia suelta una carcajada ronca, ignorando la insinuación mientras se acomoda el cinturón con un movimiento brusco. En el momento en que tus dedos intentan manipular la cuerda, el hombre se desplaza instintivamente para rascarse la nuca, provocando que la bolsa golpee contra su muslo y se aleje de tu alcance.
+> El nudo permanece intacto y firme, sin que el cuero haya cedido ni un milímetro. El guardia te mira de reojo, con una sonrisa socarrona que denota que, aunque no haya sentido el robo, tu insistencia en el nudo empieza a resultarle curiosa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1874 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 272 — 185/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3586 ms
+
+> "Vaya, parece que este nudo es obra de un experto. Casi me hace sentir envidia."
+> Suelto la cuerda rápidamente y le doy una palmada amistosa en el hombro, tratando de distraerlo con un cumplido mientras busco otra oportunidad.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 2+4=6
+
+### [4] DM
+
+  8573 ms
+
+> El guardia frunce el ceño, confundido por el repentino cambio de actitud y la palmada en el hombro. Se aparta un poco, mirando el lugar donde lo has tocado con una expresión de extrañeza, mientras su sonrisa socarrona se desvanece para dar paso a una sospecha evidente.
+> —¿Envidia de un nudo? ¿De qué demonios hablas, forastero? —suelta con voz áspera, estrechando los ojos mientras coloca una mano protectora sobre la bolsa de cuero, asegurándola contra su costado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1044 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 273 — 186/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4978 ms
+
+> "Solo bromeaba, buen hombre. No hace falta que te pongas así por una simple charla."
+> Sigo sonriendo mientras intento distraer su atención con un gesto exagerado de mis manos, buscando el momento exacto para deslizar los dedos hacia su bolsa.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 6+2=8
+
+### [4] DM
+
+  8388 ms
+
+> El guardia suelta un bufido, aunque la tensión de sus hombros disminuye ligeramente ante tu sonrisa. Se queda observando tus gestos exagerados con una mezcla de fastidio y curiosidad, convencido ahora de que solo eres un excéntrico más de los que atrae el festival.
+> Sin embargo, mientras intentas deslizar los dedos hacia el cuero, el hombre se mueve bruscamente para rascarse la nuca, desplazando la bolsa justo fuera de tu alcance. Te mira de reojo, con una chispa de malicia regresando a sus ojos.
+> —Demasiado movimiento de manos para alguien que solo quiere charlar —masmulla, manteniendo la bolsa firmemente pegada a su costado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1148 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 274 — 187/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3854 ms
+
+> "Solo es el entusiasmo del festival, oficial. Me he olvidado por completo de que los guardias prefieren la sobriedad."
+> Suelto una risita y doy un paso atrás, alejando las manos para parecer inofensivo mientras trato de analizar sus puntos ciegos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 5+3=8
+
+### [4] DM
+
+  8302 ms
+
+> El guardia suelta un resoplido que es casi una risa, aunque no se relaja del todo. Cruza los brazos sobre el pecho, creando una barrera física entre tú y la bolsa, mientras te observa con una ceja alzada. Sus ojos recorren tu postura, juzgando la distancia que acabas de poner entre ambos.
+> —El entusiasmo no paga las multas, forastero —responde con un tono seco, aunque ya no hay agresividad en su voz. Se mantiene plantado con firmeza, bloqueando cualquier ángulo sencillo de aproximación, y comienza a mirar hacia el resto de la multitud, dejando claro que su paciencia tiene un límite muy cercano.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1474 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 275 — 188/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4084 ms
+
+> "Tienes razón, el entusiasmo no paga, pero el reconocimiento sí. No querrías que alguien informara que el guardia más eficiente de la zona se ha vuelto... inflexible con un simple viajero."
+> Le dedico una sonrisa encantadora mientras intento desplazar su atención hacia la multitud.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 14+4=18
+
+### [4] DM
+
+  15799 ms
+
+> El guardia parpadea, procesando la sutil amenaza envuelta en el halago. Sus ojos se desvían un instante hacia la multitud, donde el murmullo de la gente parece crecer, y la idea de que su rigidez sea malinterpretada como abuso o incompetencia ante sus superiores parece picarle la curiosidad y el orgullo. El músculo de su mandíbula se relaja y el cuerpo, antes tenso como una cuerda de arco, cede ligeramente.
+> —Eres un tipo peligroso con las palabras, viajero —murmura, soltando un suspiro de resignación. Con un movimiento fluido, descruza los brazos y desliza la bolsa hacia ti sobre la superficie, aunque mantiene un dedo apoyado en la tela un segundo más de lo necesario—. Llévatela. Pero no me hagas arrepentirme de mi "eficiencia" antes de que termine el turno.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1849 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 276 — 189/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3385 ms
+
+> "La eficiencia es una virtud que ambos compartimos, amigo mío."
+> Sujeto la bolsa con firmeza y la retiro rápidamente de la superficie, mientras le dedico una sonrisa encantadora.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 1+2=3  PIFIA
+
+### [4] DM
+
+  16964 ms
+
+> Al intentar retirar la bolsa con rapidez y elegancia, tus dedos se deslizan torpemente sobre la tela encerada. En lugar de un movimiento fluido, la bolsa sale disparada hacia adelante, golpeando el borde de la mesa con un ruido seco antes de volcarse y esparcir el contenido por el suelo, justo a los pies del guardia.
+> El guardia retrocede un paso, sorprendido por el despliegue de torpeza. Mira los objetos desparramados y luego te clava una mirada gélida, su expresión pasando de la resignación a una mezcla de incredulidad y fastidio.
+> —Vaya "virtud" la tuya —espeta, mientras el ruido de la bolsa cayendo atrae las miradas de un par de transeúntes cercanos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1251 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 277 — 190/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3586 ms
+
+> "¡Por los dioses! ¿Cómo puede alguien ser tan descuidado con sus pertenencias?"
+> Pongo cara de absoluta indignación y me apresuro a ayudarle a recoger las cosas del suelo.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 8+4=12
+
+### [4] DM
+
+  13279 ms
+
+> El guardia parpadea, descolocado por el giro repentino de la situación. Mira la bolsa volcada y luego tu rostro, donde la indignación parece grabada a fuego. Por un momento, la duda cruza sus ojos; el ruido ha sido lo suficientemente fuerte como para que algunos peatones se detengan a observar la escena, y el guardia parece más preocupado por quedar como un inepto ante la multitud que por cuestionar tu repentina honestidad.
+> —¿Descuidado? ¡Si yo ni siquiera...! —se interrumpe, soltando un bufido de irritación mientras se agacha para recoger un par de objetos. Su tono sigue siendo brusco, pero la gélida sospecha se ha transformado en una confusión molesta—. No me digas que ahora me vas a dar lecciones de orden, forastero. Recoge lo que puedas y quítate de en medio antes de que alguien piense que estamos montando un espectáculo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1933 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 278 — 191/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4405 ms
+
+> "Tienes razón, no es el momento para sermones. Solo quiero recuperar mis pertenencias y seguir mi camino."
+> Me agacho rápidamente para recoger mis cosas, aprovechando la proximidad y la distracción del guardia para intentar sustraer algo de su cinturón.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 5+2=7
+
+### [4] DM
+
+  12422 ms
+
+> El guardia, aún refunfuñando entre dientes, se inclina para recoger una moneda que ha rodado hacia un charco, dejando su cinturón momentáneamente expuesto. Te deslizas con rapidez, pero el movimiento es torpe; tus dedos rozan el cuero endurecido del cinturón y chocan contra una pesada bolsa de cuero que oscila bruscamente, produciendo un tintineo metálico evidente.
+> El hombre se tensa al instante y se gira con un reflejo brusco, atrapando tu muñeca con un agarre firme y seco antes de que puedas retirar la mano. Sus ojos se estrechan, la confusión desaparece y una expresión de furia gélida vuelve a su rostro.
+> —¿Te he visto, forastero. Te he visto perfectamente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  15458 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 279 — 192/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3010 ms
+
+> "Vaya, qué reflejos. Solo quería ayudarle a sujetar la bolsa para que no se cayera al barro"
+> Pongo mi mejor cara de inocencia y trato de convencerlo de que ha sido un malentendido.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 5+4=9
+
+### [4] DM
+
+  9831 ms
+
+> El guardia no suelta tu muñeca; al contrario, aprieta el agarre hasta que los nudillos se le ponen blancos. Mira la bolsa, luego te mira a ti, y una sonrisa torcida y carente de humor aparece en su rostro mientras el barro salpica sus botas.
+> —¿Sujetarla? —escupe las palabras con desprecio—. Tienes la lengua muy ágil para alguien que acaba de intentar vaciarme el cinturón en medio de la calle. 
+> Te sacude el brazo con brusquedad, obligándote a retroceder un paso mientras su mano libre se desplaza hacia la empuñadura de su arma.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2836 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 280 — 193/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2938 ms
+
+> "Vaya malentendido, oficial. Solo intentaba quitarle una mota de polvo muy persistente." 
+> Suelto una risita nerviosa y trato de zafarme de su agarre con un movimiento rápido.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 8+2=10
+
+### [4] DM
+
+  8721 ms
+
+> El guardia ni se inmuta ante el intento de escape; su agarre es como una prensa de hierro que anula cualquier giro de muñeca. La risita nerviosa parece irritarlo más que el intento de robo, y su expresión se endurece mientras te mantiene anclado al sitio, impidiendo que recuperes el equilibrio.
+> —¿Una mota de polvo? —gruñe, acercando su rostro al tuyo para que sientas el olor a tabaco rancio—. Para ser polvo, pesa bastante y suena a moneda.
+> Sin soltarte, el guardia tira de ti con fuerza hacia el centro de la calle, obligándote a caminar a rastras mientras comienza a llamar a sus compañeros con un silbido estridente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1473 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 281 — 194/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2711 ms
+
+> "¡Vamos, amigo! Solo era un amuleto de la suerte, no hay que hacer un escándalo por una nimiedad."
+> Intento deslizarme fuera de su agarre aprovechando el impulso del tirón.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  8786 ms
+
+> En el instante en que el guardia ejerce la fuerza del tirón, aprovechas la inercia para transformar el arrastre en un giro fluido y eléctrico. Tus pies parecen deslizarse sobre el empedrado como si el suelo fuera de hielo; con un movimiento preciso y acrobático, te zafas de su presa justo cuando él esperaba sentir tu resistencia, dejándolo sujetando el aire con un gesto de absoluta confusión.
+> El guardia tambalea hacia adelante por el impulso fallido, quedando momentáneamente desequilibrado mientras el eco de su silbido aún vibra en el aire. A pocos metros, un par de figuras con armadura comienzan a girar la cabeza hacia vosotros, alertadas por la señal, pero tú ya has recuperado el espacio y la libertad de movimiento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2662 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 282 — 195/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3523 ms
+
+> "¡Ups! Parece que tienes las manos demasiado resbaladizas para este trabajo."
+> Le guiño un ojo al guardia y aprovecho su desequilibrio para intentar quitarle la bolsa de monedas del cinturón mientras me alejo.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 10+2=12
+
+### [4] DM
+
+  12541 ms
+
+> El guardia, aún tambaleándose por el impulso, suelta un gruñido de frustración y trata de recuperar la compostura mientras el aire frío de la calle le golpea la cara. Tu mano se desliza con rapidez hacia el cinturón de cuero, pero el movimiento es ligeramente torpe; tus dedos rozan la superficie rugosa de la bolsa, pero no logras enganchar el cordel con la firmeza necesaria para arrancarla.
+> El roce brusco hace que el guardia reaccione instintivamente, pegando la cadera hacia atrás y llevando una mano a su costado justo a tiempo para sentir el intento de robo. Se endereza bruscamente, con el rostro encendido de rabia, y lanza una mirada gélida hacia donde te encuentras. "¡Ladrón!", brama el hombre, señalándote con el dedo mientras los otros guardias aceleran el paso hacia vosotros.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3507 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 283 — 196/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3074 ms
+
+> "¡Un malentendido! Solo intentaba ayudarle a sujetar su bolsa, que estaba a punto de caerse."
+> Suelto una risita nerviosa y retrocedo un paso, poniendo las manos en alto con gesto inocente.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 13+4=17
+
+### [4] DM
+
+  14231 ms
+
+> El guardia se queda congelado a mitad de un grito, con el dedo aún extendido y el pecho agitado. Sus ojos pasan de la bolsa, que sigue firmemente sujeta a su cinto, a tu expresión de fingida inocencia y las manos alzadas. La rabia en su rostro se transforma en una mueca de duda, mientras el impulso de la caída y tu rápida reacción parecen haberle nublado el juicio lo suficiente como para que la explicación, aunque absurda, encuentre un hueco en su mente.
+> —¿Sujetarla? —gruñe, bajando el brazo lentamente mientras exhala un bufido de incredulidad. Se sacude el polvo del uniforme con un gesto brusco, aunque ya no hay furia en su mirada, sino una irritación confundida—. Tienes una forma muy extraña de ayudar, ciudadano. 
+> Los otros guardias frenan en seco a unos pasos, observando la escena con el ceño fruncido. Tras intercambiar una mirada rápida con su compañero, el primero hace un gesto con la mano para que sigan su camino, aunque no deja de mirarte con sospecha.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3538 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 284 — 197/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3531 ms
+
+> "Solo quería evitar que perdiera algo valioso en el suelo, oficial. Mil disculpas por el atropello."
+> Hago una reverencia exagerada y, mientras me enderezo, intento notar si la bolsa de su cinto está mal cerrada o si hay algún otro objeto suelto que pueda alcanzar.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+1=3
+
+### [4] DM
+
+  8417 ms
+
+> El guardia resopla, arqueando una ceja ante la teatralidad de la reverencia. Se mantiene rígido, con los brazos cruzados sobre el pecho, mientras observa el gesto con una mezcla de desdén y escepticismo, aunque ya no hace amago de llevar la mano a su arma.
+> Tu mirada recorre el equipo del oficial mientras te incorporas, pero el movimiento brusco de tu propia inclinación y la irritación del guardia, que se ha movido ligeramente para recuperar su postura, te impiden ver cualquier detalle útil. La bolsa permanece oculta tras el pliegue de su uniforme y el cuero parece estar firmemente asegurado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1742 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 285 — 198/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3348 ms
+
+> "Vaya, no sabía que la cortesía fuera un pecado en este puesto."
+> Me incorporo lentamente, manteniendo una sonrisa relajada mientras trato de buscar un hueco para acercarme más a él.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 16+4=20
+
+### [4] DM
+
+  10851 ms
+
+> El guardia suelta un bufido, pero la rigidez de sus hombros cede y una pequeña, casi imperceptible, sonrisa de suficiencia asoma en la comisura de sus labios. Se descruza de brazos, dejando que sus manos caigan relajadas a los costados, y exhala un suspiro cargado de una resignación que roza la complicidad.
+> —No es un pecado, forastero, es que hoy no es el día para adornos —responde con un tono mucho más fluido, dando un paso lateral que abre un espacio natural entre ambos—. Pero tienes chispa, te lo concedo. Si buscas entrar sin que te den un sermón sobre el reglamento, podrías empezar por decirme qué asuntos tan urgentes te traen aquí que te obligan a ser tan... persuasivo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2303 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 286 — 199/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2838 ms
+
+> "Solo busco resolver un pequeño malentendido financiero, amigo mío. Algo que nos beneficiará a ambos si se soluciona rápido."
+> Le guiño un ojo y trato de leer su lenguaje corporal para ver cuánto está dispuesto a ceder.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+3=9
+
+### [4] DM
+
+  8817 ms
+
+> El guardia arquea una ceja y su mirada se vuelve repentinamente aguda, escaneando tu rostro mientras procesa la insinuación. El tono complaciente desaparece, sustituido por una cautela profesional; aunque no se ha puesto agresivo, vuelve a tensar la mandíbula y mantiene una distancia prudencial, evaluando si el "beneficio" que mencionas es una oferta legítima o una imprudencia que podría costarle el puesto.
+> Su postura es ahora un muro cerrado. No hay señales de codicia evidente ni una apertura clara en su lenguaje corporal; al contrario, parece estar midiendo cada una de tus palabras con el rigor de quien ha escuchado demasiadas promesas vacías durante su guardia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2046 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 287 — 200/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3369 ms
+
+> "No me malentienda, no hablo de promesas, sino de realidades. Solo busco que ambos tengamos un día más agradable."
+> Me inclino ligeramente hacia él, bajando la voz para crear una atmósfera de complicidad.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 17+4=21
+
+### [4] DM
+
+  8038 ms
+
+> El guardia sostiene la mirada un instante más, pero la tensión de su mandíbula cede. El muro de su postura se agrieta y un ligero suspiro escapa de sus labios, mientras sus hombros caen unos centímetros, abandonando la rigidez militar. La complicidad del tono y la seguridad de tus palabras parecen haber calado en él, transformando su cautela en una curiosidad pragmática.
+> — a ver... —murmura, echando un vistazo rápido a ambos lados del pasillo para asegurarse de que nadie los observa—. No me gusta el riesgo, pero tampoco me gusta pasarme diez horas bajo el sol por un sueldo que apenas cubre el alquiler. Habla rápido y sé concreto. ¿Qué es exactamente ese "día más agradable" que propones?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2184 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 288 — 201/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3298 ms
+
+> "Solo necesito que mires hacia otro lado durante un par de minutos mientras paso por esa puerta. A cambio, esto es para que tu alquiler deje de ser una preocupación."
+> Saco una moneda de oro y la deslizo discretamente hacia su mano.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 8+4=12
+
+### [4] DM
+
+  9266 ms
+
+> El guardia observa la moneda de oro deslizarse hacia su palma con una intensidad casi hipnótica. Sus dedos se cierran sobre el metal con un movimiento rápido y preciso, ocultándola en el puño antes de que el brillo pueda atraer alguna mirada indiscreta. El peso del oro parece borrar cualquier rastro de duda en su rostro, sustituyendo la cautela por una expresión de indiferencia profesional.
+> — De repente, me ha dado un ataque de ceguera temporal —dice en un susurro, dando un paso lateral para despejar el camino—. Me voy a rascar la nuca y a mirar muy atentamente aquel cuadro del pasillo durante los próximos dos minutos. No me hagas arrepentirme de mi mala vista.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2564 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 289 — 202/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2365 ms
+
+> "Un placer hacer negocios contigo, amigo mío."
+> Le guiño un ojo y paso rápidamente por su lado, aprovechando el hueco para deslizarme hacia el interior.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 11+2=13
+
+### [4] DM
+
+  8079 ms
+
+> Tus pasos resuenan levemente sobre el suelo pulido mientras te deslizas por el hueco dejado por el guardia. El aire del interior es denso, cargado de un aroma a cera de vela y perfumes antiguos que se pega a la garganta.
+> A medida que avanzas, el sonido de tus botas atrae la atención de un sirviente que dobla la esquina con una bandeja de plata. El hombre se detiene en seco, frunciendo el ceño mientras te observa con curiosidad, aunque no parece alarmado, simplemente confundido por tu presencia repentina en aquel pasillo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  10094 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 290 — 203/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  17792 ms
+
+> "Oh, disculpe. Me he perdido buscando el salón de recepciones, ¿podría indicarme el camino?"
+> Le dedico mi sonrisa más encantadora mientras intento pasar desapercibido.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 8+4=12
+
+### [4] DM
+
+  8116 ms
+
+> El sirviente parpadea varias veces, mirando la bandeja de plata y luego tu rostro. Se mantiene inmóvil un instante, evaluando tu sonrisa y tu porte, pero su expresión no se relaja; el ceño sigue fruncido y mantiene la bandeja apretada contra su pecho, bloqueando parcialmente el paso.
+> —El salón de recepciones está en el ala oeste, pero no recuerdo haber visto su invitación en la lista de acceso —responde con un tono seco y suspicaz—. Espere aquí un momento. Voy a consultar con el mayordomo si se le espera.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2660 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 291 — 204/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  6509 ms
+
+> "No hace falta que molestes al mayordomo con una nimiedad así, amigo. Seguramente hubo un error en la transcripción de la lista, cosas que pasan en casas tan grandes."
+> Pongo una mano ligera sobre su hombro y trato de convencerlo para que me deje pasar sin preguntar.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 15+4=19
+
+### [4] DM
+
+  8749 ms
+
+> El sirviente se tensa cuando siente la mano en su hombro, pero tu tono despreocupado y la seguridad de tus palabras parecen desarmar su rigidez. Sus ojos viajan de nuevo a la bandeja de plata y luego a tu sonrisa; la sospecha en su mirada se diluye, reemplazada por una vacilación sumisa. Suelta un suspiro corto, casi imperceptible, y el ceño se despliega mientras asiente con lentitud.
+> —Supongo que tiene razón, señor. Con el caos del festival, es probable que el escriba haya cometido un desliz —murmura, dando un paso lateral para despejar el camino—. Por favor, siga adelante hacia el ala oeste. No quisiera que su ausencia fuera notada por la anfitriona debido a un error administrativo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3133 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 292 — 205/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2936 ms
+
+> "Agradezco tu prudencia, buen hombre. No querríamos causar un escándalo innecesario."
+> Le doy una palmada amistosa en el hombro y avanzo hacia el ala oeste, manteniendo la sonrisa mientras observo los alrededores.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+1=3
+
+### [4] DM
+
+  15222 ms
+
+> El sirviente inclina la cabeza con una mezcla de alivio y sumisión mientras te alejas, quedándose atrás como una sombra olvidada en el pasillo. Al avanzar hacia el ala oeste, la opulencia del lugar se despliega en tapices de seda y suelos de mármol pulido que reflejan la luz de los candelabros, pero el entorno se siente extrañamente homogéneo.
+> Tus ojos recorren los pasillos, pero la decoración recargada y el bullicio lejano de la fiesta actúan como un ruido visual constante. No percibes ninguna irregularidad en las paredes, ni escuchas susurros tras las puertas cerradas, ni notas nada que rompa la monotonía del lujo circundante. El camino hacia el ala oeste se extiende ante ti, despejado y silencioso.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2506 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 293 — 206/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3409 ms
+
+> "Demasiado perfecto para ser cierto."
+> Sigo caminando hacia el ala oeste, pero me detengo frente a los tapices más grandes para intentar notar si hay alguna corriente de aire o irregularidad oculta tras la seda.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+0=1  PIFIA
+
+### [4] DM
+
+  15083 ms
+
+> Te acercas a los pesados tapices de seda con cautela, buscando cualquier indicio de una puerta oculta o una brisa traicionera. Sin embargo, en tu afán por analizar la trama del tejido, tropiezas torpemente con el borde del relieve de la alfombra. El impulso te empuja hacia adelante y chocas violentamente contra la tela, quedando enredado en los pliegues del tapiz mientras este se desplaza ligeramente, dejando al descubierto únicamente un muro de piedra fría, sólido y absolutamente anodino.
+> El golpe seco resuena en el pasillo silencioso, dejando un eco incómodo que parece atraer la atención de cualquier persona que pudiera estar cerca. Te quedas ahí, abrazado a la seda, con el rostro pegado a la tela que huele a polvo antiguo y perfume caro, sin haber encontrado absolutamente nada más que el suelo y la pared.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2612 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 294 — 207/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4017 ms
+
+> "Vaya, parece que la decoración me tiene fascinado."
+> Me enderezo rápidamente y sacudo el polvo de mi ropa, tratando de recuperar la compostura con una sonrisa. Me quedo atento a cualquier ruido que se acerque por el pasillo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 9+1=10
+
+### [4] DM
+
+  6021 ms
+
+> Te enderezas mientras el silencio vuelve a llenar el pasillo, aunque ahora se siente más pesado, casi expectante. El aroma a polvo y perfume caro persiste en el aire, mezclándose con el frío que emana del muro de piedra que acabas de descubrir.
+> Tus sentidos se agudizan, pero el pasillo permanece en una calma imperturbable. No se escucha el roce de ninguna tela, ni el eco de pasos apresurados, ni el murmullo de alguna conversación cercana. Por ahora, el único sonido es el de tu propia respiración regresando a su ritmo normal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1771 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 295 — 208/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3358 ms
+
+> "Vaya, vaya... parece que este muro guarda secretos más interesantes que el resto de la casa."
+> Me acerco al muro de piedra y paso los dedos por la superficie buscando cualquier hendidura, mecanismo o irregularidad.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+0=8
+
+### [4] DM
+
+  8001 ms
+
+> Tus dedos recorren la piedra fría, deslizándose por la superficie rugosa y los poros del material. El tacto es uniforme, una masa compacta y gélida que no revela ninguna costura ni relieve inusual bajo tus yemas.
+> A pesar de tu escrutinio, el muro se mantiene mudo. No hay palancas ocultas, ni placas móviles, ni el más mínimo rastro de un mecanismo que ceda ante la presión de tu mano. Solo queda el silencio del pasillo y la textura áspera de la roca.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2114 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 296 — 209/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4586 ms
+
+> "Vaya, parece que este muro es tan terco como el tipo que me vendió el mapa."
+> Me separo de la pared y miro hacia arriba y hacia abajo, buscando cualquier rastro de polvo movido o marcas de desgaste en el suelo que indiquen que algo se ha desplazado recientemente.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 17+1=18
+
+### [4] DM
+
+  14532 ms
+
+> Al apartar la vista de la piedra y concentrarte en el entorno, el patrón del suelo revela una anomalía. Mientras que el resto del pasillo presenta una capa uniforme de polvo grisáceo y sedimentos, justo frente al muro hay un arco semicircular donde el polvo es más fino y parece haber sido barrido hacia los lados, como si una pesada hoja de piedra hubiera pivotado sobre un eje central hace no mucho tiempo.
+> Al levantar la mirada hacia el techo, notas que una de las molduras de roca sobresale apenas unos milímetros más que las demás, justo encima del arco del suelo. Hay una leve marca de rozamiento en la piedra, una línea clara que rompe la pátina de suciedad del techo, sugiriendo que algo ha descendido o ascendido recientemente en ese punto exacto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2991 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 297 — 210/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3117 ms
+
+> "Vaya, vaya... alguien ha tenido prisa por salir."
+> Me acerco al arco del suelo y paso la mano con cuidado por los bordes de la piedra para buscar cualquier mecanismo oculto o residuo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 20+0=20  CRÍTICO
+
+### [4] DM
+
+  9511 ms
+
+> Tus dedos recorren la fría superficie del arco y, gracias a la precisión de tu tacto, detectas una irregularidad casi imperceptible: una muesca en forma de media luna oculta bajo una costra de cal y polvo. Al presionar el punto exacto, escuchas un clic metálico y seco que resuena en el silencio del pasillo, liberando un pestillo interno que había quedado encajado.
+> La pesada losa de piedra pivota con un gemido sordo, revelando un hueco estrecho y oscuro que desciende hacia una cámara inferior. Desde el fondo del agujero asciende una ráfaga de aire húmedo con un intenso aroma a ozono y pergamino viejo, mientras que, en el borde del mecanismo, encuentras un pequeño fragmento de tela de seda color violeta, desgarrado y atrapado en la ranura, que aún conserva un brillo artificial.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4602 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: fragmento de tela de seda color violeta
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item fragmento de tela de seda color violeta
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 298 — 211/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2880 ms
+
+> "Vaya, vaya... alguien ha estado aquí antes que yo."
+> Recojo el trozo de seda violeta y lo guardo cuidadosamente en mi bolsillo. Me asomo al hueco para intentar ver qué hay abajo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 13+1=14
+
+### [4] DM
+
+  6727 ms
+
+> El fragmento de seda se desliza en tu bolsillo, dejando tras de sí un tenue rastro de ese brillo antinatural en las yemas de tus dedos. Al asomarte al hueco, la oscuridad es densa, pero la luz que entra desde el pasillo alcanza a iluminar el fondo de la caída, que se encuentra a unos cuatro metros de profundidad.
+> Abajo, el suelo de piedra está cubierto por una fina capa de ceniza grisácea. En el centro de la pequeña cámara, destaca un pedestal de obsidiana cuya superficie refleja la luz como un espejo negro, y a su alrededor, varios pergaminos amarillentos yacen esparcidos, algunos de ellos parcialmente calcinados.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1404 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 299 — 212/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  5268 ms
+
+> "Vaya, vaya... parece que alguien dejó el horno encendido."
+> Me deslizo con cuidado hacia abajo para llegar al suelo de ceniza.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 16+2=18
+
+### [4] DM
+
+  5267 ms
+
+> Tus botas impactan con suavidad sobre la ceniza gris, que se levanta en una pequeña nube asfixiante al aterrizar. El descenso ha sido limpio, casi fluido, permitiéndote quedar en cuclillas y alerta, sin hacer más ruido que el siseo del polvo asentándose sobre la piedra fría.
+> El silencio en la cámara es absoluto, roto únicamente por el eco lejano de los sonidos del pasillo. El pedestal de obsidiana se alza imponente frente a ti, devolviendo una imagen distorsionada y oscura de tu figura, mientras los pergaminos calcinados parecen esperar un soplo de viento que no llega.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2303 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 300 — 213/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2497 ms
+
+> "Vaya lugar más lúgubre para guardar secretos."
+> Me levanto despacio y me acerco al pedestal para examinar los pergaminos calcinados.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 6+0=6
+
+### [4] DM
+
+  5031 ms
+
+> Te incorporas lentamente, el roce de tu ropa contra el aire estático es el único sonido en la estancia. Al acercarte al pedestal de obsidiana, la piedra fría parece absorber la escasa luz, proyectando sombras alargadas que bailan a tus pies.
+> Te inclinas sobre los pergaminos calcinados, pero el daño es devastador. Los bordes están carbonizados y el centro de los rollos se ha convertido en una masa quebradiza de ceniza negra que se deshace al menor contacto. No hay letras legibles, ni patrones reconocibles; solo el rastro amargo del fuego y el vacío de la información perdida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9221 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 301 — 214/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3240 ms
+
+> "Vaya desperdicio de tinta y tiempo."
+> Me aparto del pedestal y empiezo a registrar el resto de la estancia en busca de cualquier objeto que no se haya quemado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+0=18
+
+### [4] DM
+
+  9811 ms
+
+> Tus ojos recorren los rincones de la estancia, ignorando el pedestal y centrándose en las sombras donde el fuego no alcanzó a lamer las paredes. Bajo una pesada mesa de roble volcada, el brillo metálico de un objeto rompe la monotonía del gris ceniza. Al agacharte y apartar unos escombros, encuentras un pequeño relicario de plata, cerrado con un cierre de presión, que ha sobrevivido gracias a haber quedado sepultado bajo una losa de piedra.
+> Al levantar la mirada hacia el techo, notas que una de las molduras de madera tallada se ha desprendido parcialmente por el calor. En el hueco dejado por la pieza caída, asoma la esquina de un sobre de cuero curtido, encajado con precisión en la estructura, como si hubiera sido ocultado allí deliberadamente antes de que el incendio consumiera el resto de la habitación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6252 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: relicario de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → ya existía: item relicario de plata
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 302 — 215/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2783 ms
+
+> Guardo el relicario en mi bolsillo rápidamente y me desplazo hacia la pared para alcanzar el sobre de cuero.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 15+2=17
+
+### [4] DM
+
+  6606 ms
+
+> Te deslizas con agilidad entre los restos carbonizados, evitando que el crujido de las vigas te delate o te atrape. Con un movimiento fluido, te impulsas hacia la pared y extiendes el brazo, logrando enganchar la esquina del cuero curtido justo antes de que la moldura termine de desprenderse por completo.
+> El sobre cae en tu mano, pesado y frío, mientras el trozo de madera tallada se desploma con un golpe seco sobre el suelo ceniciento, levantando una pequeña nube de polvo gris a tus pies. El cuero está intacto, protegido del fuego por la estructura del techo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9965 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = sobre de cuero
+  ✓ creación item: sobre de cuero
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item sobre de cuero
+  → delta 4786: Kestra.inventory = sobre de cuero
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 303 — 216/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2881 ms
+
+> "Vaya, vaya... parece que el fuego no pudo con todo."
+> Me pongo en pie rápidamente y abro el sobre para ver qué contiene antes de salir de aquí.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+0=15
+
+### [4] DM
+
+  6975 ms
+
+> Tus dedos rasgan el sello de lacre, que aún conserva un matiz carmesí oscuro. Al desplegar el pergamino, el papel cruje levemente, pero se mantiene firme. La caligrafía es elegante, aunque apresurada, escrita con una tinta violeta que parece brillar débilmente bajo la luz mortecina de las ruinas.
+> El texto es una invitación formal dirigida a Madame Valeriane, redactada en un tono urgente. Menciona una reunión secreta en los jardines del Comité del Festival para discutir "la recuperación de la Voz" y advierte que el tiempo se agota antes de que el Roble guarde silencio. Un mapa esquemático, dibujado en el reverso, marca un punto exacto bajo el gran sauce del distrito norte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  11635 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.knowledge
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 304 — 217/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2447 ms
+
+> "La Voz, el Roble... suena a secretos muy caros."
+> Guardo la carta con cuidado y estudio el mapa del reverso para memorizar el camino hacia el distrito norte.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 9+0=9
+
+### [4] DM
+
+  6503 ms
+
+> El mapa es un trazo apresurado de líneas quebradas y referencias vagas. Logras identificar la ubicación general del distrito norte y la silueta del gran sauce, pero los callejones circundantes y los puntos de referencia clave se pierden en un garabato confuso de tinta violeta. El camino no es evidente y el esquema carece de la precisión necesaria para navegar la ciudad sin extraviarse.
+> El silencio de las ruinas parece espesarse mientras guardas el pergamino, dejando que el viento mueva los escombros a tu alrededor. El destino está marcado, aunque la ruta exacta sigue siendo un enigma.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2135 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 305 — 218/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2909 ms
+
+> "Vaya desastre de dibujo. Quien lo hizo tenía más prisa que talento."
+> Examino el pergamino con detenimiento, buscando algún patrón oculto o una marca que el autor haya pasado por alto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+0=1  PIFIA
+
+### [4] DM
+
+  8561 ms
+
+> Te concentras en los trazos violetas, tratando de encontrar una lógica en el caos de la tinta. Sin embargo, mientras inclinas el pergamino buscando una marca oculta, un movimiento brusco de tu mano hace que el borde del papel se enganche con una arista afilada de los escombros. El pergamino se rasga violentamente justo sobre la zona donde se intuía el distrito norte, dejando un agujero irregular que borra la poca información que habías logrado rescatar.
+> El viento sopla con fuerza en ese instante, agitando los fragmentos de papel y dejando el mapa aún más incompleto y confuso que al principio. Ahora, el camino hacia el gran sauce es un vacío blanco en el centro del dibujo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6300 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: item.status
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 306 — 219/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3027 ms
+
+> "Maldita sea... justo ahora."
+> Suelto un suspiro y observo los trozos de papel que el viento ha dispersado, intentando localizar el fragmento que contenía el distrito norte antes de que se pierda del todo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 18+1=19
+
+### [4] DM
+
+  6905 ms
+
+> Tus ojos recorren el suelo grisáceo con rapidez, siguiendo la trayectoria errática de los jirones de papel que el viento arrastra. Entre el polvo y los restos de piedra, distingues un trozo rectangular de pergamino que ha quedado atrapado contra una saliente de roca, agitándose violentamente pero sin deslizarse más allá.
+> Te acercas y recuperas el fragmento. Aunque el rasgado es irregular y ha amputado parte de los trazos violetas, el trozo contiene todavía una sección legible de la caligrafía antigua y un dibujo esquemático de una intersección que apunta hacia el norte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3705 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 307 — 220/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2524 ms
+
+> "Vaya, vaya... parece que el viento es más generoso que la gente de este lugar."
+> Examino el fragmento con cuidado para intentar descifrar el resto de los trazos violetas.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+0=8
+
+### [4] DM
+
+  5992 ms
+
+> El pergamino cruje bajo tus dedos, áspero y desgastado por la intemperie. Te concentras en las curvas de la tinta violeta, intentando conectar los trazos interrumpidos por el rasgado, pero las manchas de humedad y el desgaste del papel han borrado los detalles cruciales. Lo que queda es un conjunto de garabatos ambiguos que no forman ninguna palabra reconocible ni patrón coherente.
+> El viento vuelve a soplar con fuerza, levantando una nube de polvo gris que te obliga a entrecerrar los ojos mientras el fragmento sigue siendo un enigma mudo en tu mano.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1558 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 308 — 221/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3561 ms
+
+> "Vaya, parece que el tiempo ha sido más generoso con el polvo que con la tinta."
+> Guardo el pergamino con cuidado y miro a mi alrededor buscando algún rastro de dónde pudo haber estado el resto del documento.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 10+0=10
+
+### [4] DM
+
+  6247 ms
+
+> Te pones en pie y escudriñas el terreno, desplazando la mirada desde el lugar donde hallaste el fragmento hacia el horizonte grisáceo. El viento sigue azotando la zona, arrastrando hojas secas y sedimentos que ocultan cualquier detalle menor del suelo, creando una superficie uniforme y monótona de ceniza y tierra.
+> Buscas algún rastro de papel, una tira de cuero o cualquier indicio de que el resto del documento haya sido arrastrado cerca, pero no encuentras nada. El paisaje se extiende vacío y desolado, sin que ningún objeto rompa la monotonía del terreno que te rodea.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2884 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 309 — 222/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3809 ms
+
+> "Vaya, parece que el viento ha sido más rápido que yo."
+> Me encojo de hombros y guardo el fragmento con cuidado. Empiezo a caminar lentamente hacia el horizonte, buscando cualquier anomalía en el relieve que el viento no pueda cubrir.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  8608 ms
+
+> El viento aúlla, pero en el silencio entre ráfaga y ráfaga, tu mirada capta un destello anómalo. A unos treinta pasos, donde el terreno parece hundirse en una depresión natural, sobresale un ángulo recto y oscuro que no encaja con la organicidad de la ceniza. No es un papel arrastrado, sino la esquina superior de una caja de madera podrida, medio enterrada y abrazada por unas raíces negras y retorcidas que parecen haber crecido aceleradamente para reclamar el objeto.
+> El relieve del suelo alrededor de la caja presenta una ligera concavidad, como si el peso del objeto hubiera compactado la tierra durante décadas. No hay huellas recientes, solo el rastro circular del viento que ha dejado el perímetro limpio de sedimentos, revelando la madera oscura y húmeda que lucha por no ser tragada por completo por el suelo gris.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  85950 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: caja de madera podrida
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item caja de madera podrida
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 310 — 223/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  35656 ms
+
+> "Vaya, vaya... parece que alguien olvidó recoger sus juguetes."
+> Me acerco con cautela hacia la caja, asegurándome de que no haya nada acechando entre las raíces antes de intentar desenterrarla.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 18+1=19
+
+### [4] DM
+
+  19330 ms
+
+> Tus ojos escanean el terreno con precisión mientras avanzas. El viento sigue azotando, pero notas que las raíces negras que abrazan la madera no se mueven con la brisa; tienen una rigidez antinatural, casi mineral. Al acercarte, percibes que la tierra alrededor de la caja no está simplemente compactada, sino que hay una serie de finas vetas blanquecinas que se ramifican desde el objeto hacia el suelo, como si la caja estuviera absorbiendo la humedad y los nutrientes del entorno.
+> No hay movimiento en los alrededores ni señales de emboscadas. Sin embargo, justo cuando llegas al borde de la concavidad, el aire se vuelve gélido y un olor metálico, similar al de la sangre seca o el hierro oxidado, emana de las rendijas de la madera podrida. El objeto yace allí, inmóvil y silencioso, esperando a ser liberado de su abrazo vegetal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1868 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 311 — 224/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3663 ms
+
+> "Vaya, parece que tienes hambre, cosita."
+> Me inclino sobre la caja y trato de identificar la naturaleza de esas vetas blanquecinas antes de tocar nada.
+> {Naturaleza}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Naturaleza: 13+0=13
+
+### [4] DM
+
+  15443 ms
+
+> Al observar las vetas con detenimiento, notas que no son raíces orgánicas ni depósitos minerales comunes. Se asemejan más a una red de micelios petrificados o filamentos de sal que han cristalizado al extraer la vida del suelo. Su estructura es geométrica, casi artificial, y parecen vibrar imperceptiblemente cuando tu sombra se proyecta sobre ellas, como si reaccionaran a la presencia de un ser vivo.
+> El frío que emana de la caja se intensifica, congelando las pequeñas gotas de rocío que aún quedan en la hierba circundante. El olor a hierro oxidado se vuelve más penetrante, saturando el aire mientras las vetas blanquecinas parecen tensarse, anclando la madera podrida al terreno con una fuerza antinatural.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2120 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 312 — 225/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  10289 ms
+
+> "Vaya, esto es mucho más interesante que un simple trozo de madera vieja."
+> Me inclino para observar la geometría de esos filamentos, intentando comprender su naturaleza. {Arcanos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Arcanos: 13+0=13
+
+### [4] DM
+
+  12606 ms
+
+> Al acercarte, los patrones geométricos se revelan como una serie de fractales repetitivos que desafían la aleatoriedad de la naturaleza. Reconoces que no se trata de una formación mineral, sino de una estructura de canalización energética; los filamentos actúan como conductos diseñados para absorber y transportar esencia vital desde la tierra hacia el interior de la caja.
+> Sin embargo, la complejidad del diseño supera tu comprensión inmediata. Aunque identificas la función de drenaje, el origen de esta tecnología —o magia— y el propósito final de lo que sea que esté alimentando en el interior permanecen ocultos tras una barrera de conceptos que no logras descifrar. Las vetas siguen vibrando bajo tu mirada, manteniendo el suelo gélido y anclado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3822 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 313 — 226/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4210 ms
+
+> "Vaya, esto es mucho más sofisticado de lo que parece."
+> Me inclino para examinar los puntos donde los filamentos se conectan con la caja, buscando alguna debilidad o un mecanismo de cierre.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+0=2
+
+### [4] DM
+
+  11678 ms
+
+> Te inclinas sobre la estructura, deslizando los dedos y la mirada por las juntas donde los filamentos se funden con el metal de la caja. Sin embargo, la geometría es tan perfecta y las uniones tan fluidas que no encuentras ninguna costura, tornillo o ranura que sugiera un cierre mecánico. 
+> Cada punto de conexión parece haber sido forjado en una sola pieza, una fusión indivisible de materia y energía que no deja espacio para una palanca o una herramienta. El frío que emana de la superficie se intensifica al acercarte, repelendo cualquier intento de hallar una fisura en el diseño.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1936 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 314 — 227/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3107 ms
+
+> "Vaya pieza de artesanía... o una maldita pesadilla."
+> Me separo un poco para observar el objeto desde otro ángulo, buscando algún grabado, símbolo o marca de autor que me indique quién lo hizo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+0=3
+
+### [4] DM
+
+  10079 ms
+
+> Te alejas unos pasos, recorriendo con la vista cada centímetro de la superficie fría y pulida. Desde este nuevo ángulo, el objeto parece una masa monolítica y alienígena; no hay ninguna firma, ni un sello de gremio, ni siquiera una pequeña muesca que delate el paso de una herramienta humana.
+> La luz se desliza sobre el metal y los filamentos sin encontrar un solo relieve o grabado que rompa la monotonía de su diseño perfecto. La pieza permanece muda, negándose a revelar cualquier pista sobre su origen o su creador.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1360 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 315 — 228/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4235 ms
+
+> "Vaya, un enigma de metal. Veamos qué escondes bajo esa piel perfecta."
+> Me inclino sobre la pieza y paso los dedos con cuidado por la superficie, buscando alguna vibración, calor o costura invisible.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 6+0=6
+
+### [4] DM
+
+  17707 ms
+
+> Tus yemas recorren el metal frío, deslizándose sobre la superficie con una suavidad casi perturbadora. No hay costuras, ni juntas, ni el más mínimo rastro de calor que sugiera un mecanismo interno activo. El material se siente inerte, una masa compacta y gélida que no devuelve ninguna vibración al tacto.
+> A pesar de tu escrutinio, la pieza se mantiene impasible. No encuentras ningún punto de presión, ninguna ranura oculta ni ninguna irregularidad que sugiera que el objeto pueda abrirse o reaccionar a la manipulación física. Sigue siendo un bloque perfecto y mudo bajo tus dedos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1824 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 316 — 229/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2546 ms
+
+> "Vaya pieza más terca."
+> Sigo examinando la superficie, buscando algún grabado, runa o marca casi invisible que haya pasado por alto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 5+0=5
+
+### [4] DM
+
+  11607 ms
+
+> Tus dedos recorren una vez más el metal, presionando con insistencia sobre la superficie gélida, pero el material se resiste a revelar cualquier secreto. No hay relieves, ni muescas, ni el más mínimo rastro de una inscripción que el ojo humano pueda detectar; el bloque permanece tan liso y uniforme que parece haber sido moldeado por una fuerza que desprecia la imperfección.
+> La pieza sigue siendo un enigma mudo, devolviéndote únicamente el frío cortante del metal contra tu piel.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1449 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 317 — 230/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3016 ms
+
+> "Vaya pieza más testaruda."
+> Guardo el bloque en mi bolsa y miro a mi alrededor buscando a alguien que parezca saber más de este metal que yo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+1=2  PIFIA
+
+### [4] DM
+
+  13116 ms
+
+> El bloque metálico se desliza en la bolsa, pero el movimiento brusco provoca que el objeto golpee contra otras pertenencias con un tintineo seco. Al levantar la vista para analizar el entorno, un destello cegador y repentino —quizás el reflejo del sol en un cristal o un simple mareo momentáneo— te deja desorientado. Parpadeas con fuerza, sintiendo que el espacio a tu alrededor se vuelve borroso y confuso durante unos segundos.
+> En ese instante de torpeza, pasas por alto cualquier detalle relevante de la multitud y el paisaje. Los rostros de los transeúntes se funden en una masa anónima de colores y ruidos, y aquel rincón del lugar que podría haber contenido la respuesta a tu enigma ahora te parece el sitio más irrelevante del mundo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2420 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 318 — 231/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3890 ms
+
+> "Maldita sea..."
+> Sacudo la cabeza para despejar la vista y aprieto la bolsa contra mi costado, asegurándome de que el objeto esté bien guardado. Intento recuperar la compostura rápidamente y miro a mi alrededor buscando a alguien que me haya visto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+1=17
+
+### [4] DM
+
+  11277 ms
+
+> El zumbido en los oídos se desvanece y la vista recupera su nitidez. Al escanear la plaza, notas que la mayoría de los transeúntes siguen absortos en sus propias prisas, ignorando el breve despliegue de torpeza. Sin embargo, a unos pocos metros, un hombre vestido con una túnica de lino grisáceo se ha detenido en seco. Te observa con el ceño fruncido y la cabeza ligeramente ladeada, como quien intenta recordar dónde ha visto antes un gesto similar o qué ha sido exactamente ese sonido metálico.
+> El hombre no dice nada, pero sus ojos viajan desde tu rostro hasta la bolsa que aprietas contra tu costado. No hay hostilidad en su mirada, solo una curiosidad analítica y persistente que contrasta con la indiferencia del resto de la multitud.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2764 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 319 — 232/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3822 ms
+
+> "Buenos días, caballero. ¿Busca algo en particular o es que mi rostro le resulta familiar?"
+> Le dedico mi sonrisa más encantadora mientras deslizo la bolsa discretamente detrás de mi espalda.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 7+4=11
+
+### [4] DM
+
+  13557 ms
+
+> El hombre no devuelve la sonrisa; mantiene los labios apretados en una línea fina mientras sus ojos se entrecierran, analizando la expresión del rostro. Su mirada desciende un instante hacia la posición de las manos, captando el movimiento fluido con el que la bolsa ha desaparecido de la vista, aunque no hace ningún gesto por intentar ver qué hay detrás.
+> — a veces el rostro es lo menos relevante —responde con una voz seca y pausada, sin moverse un centímetro—. Fue el sonido, más que la imagen, lo que llamó mi atención. Un eco metálico fuera de lugar en una mañana tan ordinaria.
+> Se queda en silencio, manteniendo esa curiosidad analítica, pero su postura se relaja ligeramente, dejando de escrutar cada músculo del rostro para limitarse a observar con una mezcla de escepticismo y cautela.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1876 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 320 — 233/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3225 ms
+
+> "Vaya, tiene usted un oído envidiable. Un don peligroso en una ciudad tan ruidosa."
+> Sigo manteniendo la bolsa oculta y doy un paso relajado hacia él, tratando de ganar su confianza.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 14+4=18
+
+### [4] DM
+
+  9217 ms
+
+> El hombre suelta un suspiro nasal, casi un bufido, pero la rigidez de sus hombros desaparece. La mención a su "don" parece haber picado su orgullo de una manera favorable; una chispa de satisfacción cruza sus ojos antes de que vuelva a adoptar su máscara de neutralidad.
+> — En una ciudad ruidosa, el que sabe escuchar es el único que no camina hacia su propia tumba —responde, aunque el tono ya no es seco, sino más bien intrigado—. Me gusta la gente que reconoce el valor de los detalles. Dime, ¿qué es exactamente lo que intentas ocultar con tanta elegancia que te ha traído hasta aquí?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4348 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Toño Bravante · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4885: Toño Bravante affinity 0.0 → 6.0  (any)
+     Le dieron en público el trato que cree merecer. Explota el defecto
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 321 — 234/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4062 ms
+
+> "Oh, ¿ocultar? Yo prefiero decir que selecciono cuidadosamente qué partes de mi historia merece escuchar el mundo."
+> Suelto una risita ligera y me inclino un poco hacia él, bajando la voz para crear una falsa complicidad.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 8+4=12
+
+### [4] DM
+
+  9688 ms
+
+> El hombre arquea una ceja, manteniendo la mirada fija mientras procesa la respuesta. La sonrisa del interlocutor no llega a sus ojos, que permanecen analíticos, midiendo cada gesto y la cadencia de las palabras. Se reclina ligeramente en su asiento, creando una distancia prudencial que rompe la atmósfera de complicidad intentada.
+> —Una respuesta diplomática, casi ensayada —comenta con una pizca de escepticismo en la voz—. La selección cuidadosa es el lenguaje de los que tienen mucho que perder o demasiado que ganar. Me temo que esa elegancia no es suficiente para distraerme, pero es suficiente para mantenerme interesado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1369 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 322 — 235/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3836 ms
+
+> "Me halaga que note mi dedicación al detalle. Pero el interés es una moneda peligrosa si no se sabe en qué invertirla."
+> Suelto una risita ligera y me inclino hacia delante, invadiendo el espacio que él acaba de crear para recuperar la tensión.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 1+4=5  PIFIA
+
+### [4] DM
+
+  14136 ms
+
+> El hombre se tensa visiblemente cuando invades su espacio personal. La risita, lejos de sonar encantadora, suena forzada y fuera de lugar en el silencio que sigue a tu frase, transformando el intento de tensión erótica o psicológica en un momento de incomodidad palpable. Sus ojos se contraen y el escepticismo de su rostro se convierte en una mueca de desdén, interpretando el gesto como una falta de tacto o un intento torpe de manipulación.
+> —Se ha vuelto usted pretencioso, y la pretensión es la máscara de la incompetencia —sentencia con un tono gélido, mientras se aparta bruscamente, alejando su silla con un chirrido metálico que rompe cualquier rastro de cordialidad—. Me basta con este despliegue de artificios. No me interesa invertir ni un segundo más de mi tiempo en alguien que confunde la audacia con la elegancia. No hay nada más que discutir.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3012 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 323 — 236/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4127 ms
+
+> "Vaya, parece que hemos tenido un malentendido. Solo quería asegurarme de que estábamos en la misma sintonía."
+> Doy un paso atrás con las manos en alto, fingiendo una disculpa mientras intento analizar su lenguaje corporal para encontrar una grieta en su orgullo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+3=5
+
+### [4] DM
+
+  12188 ms
+
+> El hombre no suaviza la expresión; al contrario, mantiene la barbilla elevada y una mirada gélida que te escanea con evidente rechazo. Su cuerpo permanece rígido, como una cuerda tensa a punto de romperse, y el movimiento de sus manos, que ahora se cierran en puños discretos sobre sus muslos, refuerza una barrera invisible pero infranqueable entre ambos.
+> No hay vacilación en su postura ni rastro de duda en el modo en que evita cualquier contacto visual prolongado. Para él, el gesto de las manos en alto no es una disculpa, sino otra capa de esa teatralidad que acaba de despreciar. Se mantiene imperturbable, convencido de su propia superioridad y cerrado a cualquier nuevo intento de acercamiento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2499 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 324 — 237/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4409 ms
+
+> "Vaya, parece que he tropezado con una roca muy dura. No hace falta que me mires así, solo busco un terreno común"
+> Bajo las manos lentamente y cambio mi postura a una más relajada, tratando de proyectar una calma contagiosa mientras lo observo con atención.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+3=12
+
+### [4] DM
+
+  17309 ms
+
+> El hombre suelta un suspiro nasal, un sonido seco que denota fastidio más que resignación. Sus hombros no se relajan; al contrario, se tensan ligeramente ante tu cambio de postura, como si tu calma le resultara una provocación adicional o un truco más de tu repertorio. No responde a tu comentario sobre el terreno común, manteniendo el silencio como un muro mientras sus ojos se clavan en un punto indeterminado del horizonte, ignorándote deliberadamente.
+> A pesar de su rigidez, notas que sus nudillos están blancos por la presión de sus puños y que hay una ligera vibración en su mandíbula. No es la calma de quien tiene el control absoluto, sino la contención forzada de alguien que está luchando activamente por no estallar o por no ceder ante una irritación profunda.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1827 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 325 — 238/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2508 ms
+
+> "El silencio es una herramienta maravillosa, aunque a veces esconde demasiada tensión."
+> Me acerco un paso más, invadiendo ligeramente su espacio personal para presionar ese nervio.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+3=15
+
+### [4] DM
+
+  14211 ms
+
+> El hombre reacciona al paso invasivo con un espasmo casi imperceptible, desplazando el peso de su cuerpo hacia atrás para recuperar el espacio perdido. Sus ojos vuelven a fijarse en ti, pero ya no hay indiferencia; hay una chispa de hostilidad contenida y una urgencia sorda que late en su cuello.
+> Al observarlo de cerca, notas que el hombre no está simplemente enfadado, sino que se siente acorralado. El temblor de su mandíbula y la rigidez de sus hombros no son producto de la arrogancia, sino de un miedo profundo que intenta disfrazar de irritación; hay algo que teme que descubras o alguien que teme que llegue mientras él sigue aquí.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1807 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 326 — 239/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3136 ms
+
+> "No hace falta que te pongas así. Solo busco algo de conversación... y quizás un trato mutuamente beneficioso."
+> Me inclino un poco hacia él, bajando la voz para crear una falsa sensación de complicidad.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 13+4=17
+
+### [4] DM
+
+  11628 ms
+
+> El hombre parpadea, sorprendido por el cambio de tono. La tensión en sus hombros no desaparece, pero la rigidez cede ligeramente ante la promesa de un beneficio. Su mirada se desvía un instante hacia los alrededores, comprobando que nadie esté escuchando, antes de volver a clavarse en ti con una mezcla de sospecha y curiosidad pragmática.
+> —¿Un trato? —su voz es un susurro áspero, casi un siseo—. No sé quién eres ni qué crees que puedo ofrecerte, pero no tengo tiempo para juegos de palabras. Si tienes algo que me interese y que no implique llamar la atención de la guardia, habla rápido. ¿Qué es exactamente ese "beneficio" del que hablas?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1751 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 327 — 240/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4162 ms
+
+> "Hablemos de información, amigo. Algo que te sea útil para limpiar tu camino, o quizás alguien a quien quieras borrar del mapa sin dejar rastro."
+> Me acerco un poco más a él, bajando la voz para crear una complicidad forzada.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 2+4=6
+
+### [4] DM
+
+  10055 ms
+
+> El hombre retrocede un paso instintivamente, rompiendo la cercanía que intentas imponer. Sus ojos se entrecierran y una mueca de desdén curva sus labios; la sugerencia de "borrar a alguien del mapa" parece haber activado sus alarmas más que su ambición. Se cruza de brazos, recuperando la rigidez de sus hombros y mirando la calle con una desconfianza renovada.
+> —¿Información? ¿Asesinatos? —suelta una risa seca, carente de humor—. Me confundes con alguien mucho más desesperado o mucho más estúpido. No busco complicidades peligrosas con desconocidos que hablan en acertijos. Vete antes de que decida que eres un problema que yo mismo debo reportar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9395 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 328 — 241/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3701 ms
+
+> "Vaya, mis disculpas. He confundido vuestro aire de hombre pragmático con el de alguien que sabe aprovechar una oportunidad."
+> Suelto una risita ligera y doy un paso atrás, suavizando la expresión para parecer inofensivo.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 6+4=10
+
+### [4] DM
+
+  10779 ms
+
+> El hombre no se relaja, aunque el cambio de postura y el tono conciliador evitan que llame a la guardia en ese instante. Permanece con los brazos cruzados, observándote con una mirada gélida que analiza cada uno de tus gestos, buscando la trampa oculta tras la disculpa. Su mandíbula sigue tensa y el desdén no ha abandonado sus ojos.
+> —El pragmatismo consiste en saber cuándo una oportunidad es, en realidad, una soga al cuello —responde con voz cortante, sin moverse ni un centímetro—. Tus disculpas no borran el tono de tu propuesta. Ahora, camina. No quiero que mi nombre esté asociado al tuyo cuando los problemas que traes lleguen a esta calle.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  15498 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 329 — 242/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4030 ms
+
+> "Entiendo perfectamente. No querríamos que una asociación tan... brillante como la mía empañara su impecable reputación."
+> Hago una reverencia exagerada y empiezo a retroceder lentamente, mientras intento analizar si lleva algún objeto de valor visible en su cinturón o ropa.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 12+1=13
+
+### [4] DM
+
+  9164 ms
+
+> El hombre suelta un bufido de desprecio ante la reverencia, apretando los labios mientras te observa retroceder. No dice nada más, pero mantiene la mirada fija en ti, como un halcón vigilando a una presa que se retira, asegurándose de que realmente te alejes de su espacio personal.
+> Mientras te mueves hacia atrás, tus ojos escanean su atuendo. Bajo el pliegue de su casaca oscura, distingues el brillo metálico de una cadena de reloj de bolsillo que cuelga de su chaleco, aunque el mecanismo permanece oculto y fuera de tu alcance. No hay armas a la vista, solo la rigidez de una postura que rechaza cualquier contacto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3653 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 330 — 243/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3134 ms
+
+> "Mil disculpas por mi torpeza, señor. No volveré a molestarle."
+> Sigo retrocediendo lentamente, manteniendo la sonrisa mientras intento analizar el movimiento de su mano y la posición exacta de esa cadena.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+1=17
+
+### [4] DM
+
+  12536 ms
+
+> El hombre no relaja la tensión de sus hombros, pero el hecho de que te retires parece apaciguar su irritación inmediata. Mientras mantienes la sonrisa y retrocedes, notas que su mano derecha, enguantada en cuero negro, se cierra ligeramente sobre el tejido de su chaleco, rozando la cadena metálica. No es un gesto de defensa, sino un tic de posesividad; sus dedos acarician el metal con una familiaridad mecánica, asegurándose de que el reloj siga en su sitio mientras su mirada sigue anclada en la tuya.
+> El movimiento es fluido y calculado. A medida que ganas distancia, percibes que el hombre no solo vigila tu posición, sino que inclina levemente la cabeza, evaluando tu reacción con una curiosidad fría y analítica. El silencio se prolonga, roto únicamente por el sonido sordo de tus pasos sobre el suelo, mientras él permanece inmóvil, como una estatua de arrogancia vestida de oscuro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2633 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 331 — 244/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2734 ms
+
+> "Lamento si mi entusiasmo ha resultado invasivo, caballero. Solo admiraba la calidad de su reloj."
+> Sigo retrocediendo lentamente, manteniendo el contacto visual mientras intento analizar el mecanismo de esa cadena.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+3=12
+
+### [4] DM
+
+  15487 ms
+
+> El hombre arquea una ceja, y aunque la comisura de sus labios no llega a formar una sonrisa, la rigidez de su postura cede un milímetro. "La calidad es el estándar mínimo aceptable, no una curiosidad", responde con una voz seca y monocorde que corta el aire como una hoja de afeitar. No aparta la vista, permitiendo que sus ojos recorran tu figura mientras mides la distancia, manteniendo esa distancia gélida que parece ser su zona de confort.
+> Mientras observas la cadena, notas que el metal tiene un brillo inusual, casi aceitoso, que no coincide con el oro o la plata común. Sin embargo, la forma en que el tejido del chaleco oculta el anclaje y el movimiento limitado de sus dedos impiden que discernas si se trata de un mecanismo de relojería convencional o algo más complejo. El hombre nota tu escrutinio y, con un movimiento deliberado, desliza la mano para cubrir la cadena por completo, desapareciendo bajo la tela.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  49351 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 332 — 245/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3553 ms
+
+> "Un estándar muy exigente, sin duda. Me fascina la gente que no se conforma con lo ordinario."
+> Sigo manteniendo la sonrisa mientras intento notar si el movimiento de su mano ha revelado algún detalle más sobre el mecanismo o si ha dejado algún rastro visible.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  11870 ms
+
+> El hombre permanece inmóvil, pero el movimiento rápido de su mano para cubrir la cadena ha sido imperfecto. Al deslizarse la tela, el roce del metal contra el tejido ha dejado un rastro residual: una fina película de polvo irisado, similar al polvillo de las alas de una polilla, que ahora brilla tenuemente sobre el chaleco oscuro. 
+> Más allá del rastro, el sonido ha sido revelador. No fue el tintineo metálico de una cadena común, sino un clic seco y rítmico, seguido de un susurro mecánico, como el de cientos de engranajes microscópicos girando en perfecta sincronía. El mecanismo no solo es complejo; parece tener una autonomía propia que vibra sutilmente contra su pecho.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1535 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 333 — 246/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2685 ms
+
+> "Vaya, qué curioso accesorio. Parece que tiene vida propia."
+> Me acerco un paso más, fingiendo admiración, mientras intento observar el mecanismo con detalle.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+0=18
+
+### [4] DM
+
+  15002 ms
+
+> El polvo irisado del chaleco parece reaccionar a tu cercanía, agitándose levemente como si respondiera a una corriente de aire invisible. Al inclinarte, el mecanismo revela su naturaleza: no es una cadena, sino una sucesión de anillos concéntricos de un metal pálido que se expanden y contraen en un ciclo respiratorio. Entre las ranuras, diminutas esferas de cristal contienen una sustancia líquida que cambia de color según el ritmo del clic mecánico, moviéndose en un flujo constante que desafía la gravedad.
+> El hombre retrocede bruscamente, pegando la espalda contra la pared y apretando el tejido sobre el artefacto con una fuerza que hace que sus nudillos blanqueen. Sus ojos, antes gélidos, ahora destellan con una mezcla de pánico y sospecha mientras lanza una mirada rápida hacia los lados, asegurándose de que nadie más haya notado la anomalía.
+> —No es un accesorio —espeta con voz tensa y cortante—. Es un asunto privado. Aléjate.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1611 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 334 — 247/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2941 ms
+
+> "Toda mi vida he tenido curiosidad por los asuntos privados, especialmente los que respiran."
+> Mantengo la sonrisa y trato de convencerlo de que mi interés es puramente profesional y discreto.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 3+4=7
+
+### [4] DM
+
+  10299 ms
+
+> El hombre frunce el ceño, y la tensión de su mandíbula se vuelve casi palpable. Tu sonrisa no logra suavizar el ambiente; al contrario, parece alimentar su paranoia. Se aleja un paso más, refugiándose en la sombra de la pared, mientras su mano sigue presionando el artefacto contra su pecho como si intentara asfixiar el mecanismo.
+> —Profesional, ¿eh? —suelta con una risa seca y carente de humor—. He oído ese cuento demasiadas veces. El "discreto" suele ser el que más ruido hace cuando intenta vender secretos al mejor postor. No me interesa tu curiosidad ni tu profesión. Lárgate antes de que decida que eres una molestia más que un interlocutor.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1202 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 335 — 248/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  5078 ms
+
+> "Vaya, parece que hemos empezado con el pie izquierdo. No busco comprar tu artefacto, sino asegurarme de que no termine en manos de alguien que no sepa apreciarlo."
+> Hago un gesto despreocupado con la mano y doy un paso lateral, tratando de analizar su lenguaje corporal para ver si su miedo es real o una fachada.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+3=23  CRÍTICO
+
+### [4] DM
+
+  13965 ms
+
+> El hombre se tensa ante tu movimiento, pero el paso lateral, despojado de agresividad, parece descolocarlo. Sus ojos, dilatados y erráticos, no miran a tu rostro, sino que escanean constantemente el perímetro, saltando de una esquina a otra con una urgencia febril. No hay rastro de fingimiento en el temblor de sus dedos ni en la forma en que su respiración se ha vuelto superficial y rápida; el terror que emana es visceral, una paranoia genuina que lo mantiene en un estado de alerta hipersensible.
+> Su lenguaje corporal revela que no teme a quien tienes delante, sino a algo que cree que te sigue o que acecha justo detrás de ti. El artefacto no es un tesoro que proteja por codicia, sino una carga que le aterra poseer, aunque el pánico a soltarlo sea, en este momento, mayor que el deseo de deshacerse de él.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1419 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 336 — 249/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3131 ms
+
+> "Tranquilo, amigo. Solo somos nosotros dos aquí. Nadie nos ve."
+> Bajo el tono de voz para sonar reconfortante mientras intento analizar qué es exactamente lo que le aterra.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 19+3=22
+
+### [4] DM
+
+  15200 ms
+
+> El hombre suelta un sollozo ahogado y sus hombros caen ligeramente, aunque no deja de balancearse sobre sus talones. Al analizar su lenguaje corporal y la naturaleza de su pánico, percibes que no teme a un perseguidor físico, sino a una presencia invisible o incorpórea. Sus ojos no buscan una silueta en las sombras, sino que parecen reaccionar a susurros que solo él escucha; su terror es el de alguien que se siente observado por algo que puede atravesar paredes y mentes.
+> El artefacto en sus manos vibra con una frecuencia casi imperceptible que coincide con los espasmos de sus dedos. Te das cuenta de que el objeto no es la causa de su miedo, sino el faro que atrae aquello que lo aterroriza. El hombre te mira por primera vez, y en sus pupilas dilatadas ves el reflejo de una desesperación absoluta: cree que, al hablarte, acabas de hacer que "eso" también se fije en ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2544 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 337 — 250/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4576 ms
+
+> "Tranquilo, amigo. Solo soy un viajero curioso."
+> Le pongo una mano en el hombro para intentar calmarlo mientras intento echarle un vistazo más detallado al objeto que vibra.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+3=13
+
+### [4] DM
+
+  12808 ms
+
+> El hombre se tensa violentamente ante el contacto de tu mano, soltando un jadeo que suena a vidrio roto. Sus pupilas se contraen y comienza a temblar con más fuerza, no por tu presencia, sino porque parece sentir que el espacio entre vosotros se ha vuelto peligrosamente delgado. Susurra con una voz quebrada, apenas un hilo de sonido: «No... no deberías... ahora ya sabe que estás aquí. Ahora también puede oírte».
+> Al inclinarte para observar el artefacto, notas que es una esfera de obsidiana veteada de un blanco lechoso que fluye como humo atrapado en cristal. La vibración que emite no es mecánica, sino orgánica, similar al latido acelerado de un corazón pequeño. El objeto parece absorber la luz a su alrededor, creando un vacío visual que distorsiona ligeramente el aire circundante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5476 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: esfera de obsidiana
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item esfera de obsidiana
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 338 — 251/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3335 ms
+
+> "¿Quién sabe? ¿Y qué es exactamente lo que puede oírme?"
+> Ignoro el temblor del hombre y trato de analizar el flujo del humo blanco dentro de la esfera.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Arcanos: 5+0=5
+
+### [4] DM
+
+  11717 ms
+
+> El hombre encoge los hombros y se aleja lo más posible de ti, abrazándose a sí mismo mientras mira hacia las sombras del techo con puro terror. «El Eco... el hambre que no tiene nombre», solloza, con la voz ahogada por un espasmo. «No es alguien, es... una presencia. Ahora que has tocado el vínculo, el camino está abierto».
+> Al concentrarte en la esfera, el humo blanco parece burlarse de tu escrutinio. Las vetas se retuercen en patrones caóticos que no siguen ninguna ley geométrica ni flujo mágico reconocible; para ti, el movimiento es errático y carece de sentido, como observar el ruido visual de una tormenta sin poder descifrar la corriente que la impulsa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1762 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Eco
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 339 — 252/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4760 ms
+
+> "El hambre que no tiene nombre... suena a leyenda para asustar niños o a una oportunidad muy lucrativa."
+> Dejo de mirar la esfera y me acerco al hombre, tratando de captar cualquier detalle útil en su delirio.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+3=17
+
+### [4] DM
+
+  11640 ms
+
+> El hombre se encoge aún más cuando te acercas, pero sus ojos, dilatados y húmedos, no pueden evitar seguirte. Mientras solloza, notas que sus dedos no solo tiemblan, sino que rascan compulsivamente la piel de sus antebrazos, dejando marcas rojas. No es la agitación de alguien que miente o exagera para llamar la atención; hay una coherencia en su pánico, una certeza visceral que nace de haber visto algo que ha roto su comprensión de la realidad.
+> En los huecos entre sus espasmos, percibes que el hombre no te ve a ti, sino que mira constantemente hacia el espacio vacío justo detrás de tu hombro. Su terror no es general, es específico: está convencidísimo de que, al haber interactuado con la esfera, ahora llevas contigo una marca o un rastro que hace que seas el faro perfecto para esa entidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1455 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 340 — 253/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2867 ms
+
+> "Tranquilo, amigo. Solo dime exactamente qué es lo que ves ahí atrás."
+> Me inclino hacia él, tratando de captar su atención y alejando mi hombro del espacio vacío.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 12+4=16
+
+### [4] DM
+
+  11991 ms
+
+> El hombre parpadea con fuerza, obligándose a anclarse en tu mirada mientras te inclinas. El ritmo de su respiración se ralentiza ligeramente, aunque el temblor de sus manos persiste. Sus ojos saltan una última vez hacia el vacío detrás de ti antes de volver a enfocarse en tu rostro, encontrando en tu tono un refugio precario contra el horror que lo consume.
+> —No es... no es algo que se pueda ver con los ojos —susurra con la voz rota, acercándose lo suficiente para que sientas el olor a sudor frío—. Es un hambre. Una mancha de silencio que se pega a quien toca el cristal. Ahora que la has tenido... ella sabe dónde estás. No te mira a ti, mira el hueco que dejaste en el mundo al tocarla. ¡Se desliza por las sombras, buscando el camino de vuelta!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1543 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 341 — 254/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3523 ms
+
+> "Hambre, sombras, huecos... suena a que has leído demasiados libros de terror, amigo."
+> Le doy una palmadita condescendiente en el hombro mientras busco con la mirada cualquier otro objeto de valor que haya podido dejar olvidado por los nervios.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 10+1=11
+
+### [4] DM
+
+  16563 ms
+
+> El hombre se encoge ante la palmadita, soltando un gemido ahogado, y se aparta bruscamente como si el contacto físico le hubiera recordado la fragilidad de su propia piel. Te mira con una mezcla de piedad y terror puro, retrocediendo un paso mientras se abraza a sí mismo, convencido de que tu escepticismo es solo la primera etapa de la negación.
+> Tus ojos recorren la estancia, escaneando los rincones y el suelo donde el hombre ha estado agitándose. Entre el polvo y el desorden, solo distingues el rastro de sus pasos erráticos y algunos papeles amarillentos esparcidos que no parecen tener valor alguno. No hay más tesoros olvidados en el lugar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1238 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 342 — 255/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2690 ms
+
+> "No pongas esa cara, amigo. No soy yo quien debería tener piedad."
+> Me agacho para recoger esos papeles amarillentos y los reviso rápidamente.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 13+0=13
+
+### [4] DM
+
+  11947 ms
+
+> El hombre retrocede hasta chocar contra la pared, sus ojos dilatados fijos en ti mientras tiembla violentamente. No responde a tus palabras; parece haber entrado en un estado de trance donde solo el miedo es audible, emitiendo un susurro ininteligible que se pierde en el aire viciado de la habitación.
+> Al revisar los papeles, descubres que no son documentos oficiales ni diarios, sino bocetos apresurados y garabatos maníacos. La mayoría son dibujos repetitivos de raíces que se entrelazan formando patrones geométricos imposibles, acompañados de anotaciones marginales que mencionan una "melodía subterránea" y una fecha que ya ha pasado hace meses.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7307 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = papeles amarillentos
+  ✓ creación item: papeles amarillentos
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item papeles amarillentos
+  → delta 4968: Kestra.inventory = papeles amarillentos
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 343 — 256/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4277 ms
+
+> "Tranquilo, amigo. Solo quiero entender qué es esa canción"
+> Me acerco al hombre e intento calmarlo mientras sigo examinando los dibujos para encontrar alguna pista más clara sobre esa melodía.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 14+4=18
+
+### [4] DM
+
+  155035 ms
+
+> El hombre deja de temblar bruscamente al sentir tu cercanía. Sus hombros caen y el aire que retenía escapa en un sollozo largo y agotado. Sus ojos, aún nublados, parecen enfocar tu rostro por primera vez, y el susurro ininteligible se transforma en una voz quebrada que apenas supera el volumen de un siseo.
+> —No es una canción que se escuche con los oídos... —murmura, mirando con horror los bocetos de raíces que aún sostienes—. Se siente en los huesos. Ella... ella dice que el silencio es una mentira y que las raíces están despertando para reclamar la partitura.
+> Mientras observas los dibujos bajo la luz tenue, notas que entre los patrones geométricos hay una serie de puntos marcados con tinta roja que forman una línea ascendente hacia el centro de la ciudad, culminando en un símbolo que se asemeja a una lira entrelazada con espinas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1764 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 344 — 257/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2611 ms
+
+> "Vaya, parece que tenemos una melodía muy exclusiva entre manos."
+> Le doy un toque amistoso al hombro mientras intento leer su expresión para ver cuánto sabe realmente.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 15+3=18
+
+### [4] DM
+
+  18276 ms
+
+> El hombre se tensa ligeramente ante el contacto, pero no se aparta. Sus ojos saltan de tu rostro a los bocetos y vuelve a mirarte, y en ese instante, la neblina del terror se disipa para revelar una chispa de lucidez desesperada. No hay rastro de engaño en su mirada ni intención de ocultar datos; el hombre está genuinamente aterrado y abrumado, convencido de que lo que ha visto es una verdad absoluta e inevitable.
+> Sabe exactamente lo que significan esos puntos rojos y la lira de espinas, pero su mente parece incapaz de procesar la información de forma coherente, como si el conocimiento mismo le causara un dolor físico. Se queda mirándote con una mezcla de envidia y lástima, como quien observa a alguien caminando hacia un precipicio sin saber que el suelo ha desaparecido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1591 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 345 — 258/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2861 ms
+
+> "Tranquilo, amigo. Solo dime qué significan estos dibujos y te ayudaré a salir de este estado."
+> Le aprieto el hombro con suavidad, manteniendo una sonrisa tranquilizadora mientras intento extraer información.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 14+4=18
+
+### [4] DM
+
+  20726 ms
+
+> El hombre exhala un aire tembloroso, y sus hombros caen mientras se deja llevar por la calidez de tu gesto. La tensión de sus músculos cede, y aunque sus pupilas siguen dilatadas por el pánico, el tono de su voz emerge desde el fondo de su garganta, quebradizo y urgente.
+> —No son dibujos... son marcas —susurra, acercándose peligrosamente a los bocetos sin llegar a tocarlos—. La lira... la lira es el silencio. Cuando las espinas cierran el círculo, la Voz ya no pertenece a quien la canta, sino a quien la reclama. Esos puntos rojos son los nodos; donde el color sangra en el mapa, es donde la realidad se está deshilachando. Si los has visto, ya estás marcado. Ahora solo es cuestión de tiempo antes de que ellos sepan que tú también lo sabes.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2515 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 346 — 259/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3538 ms
+
+> "Tú hablas de tiempo, pero yo hablo de soluciones. ¿Quiénes son 'ellos' y qué es exactamente lo que reclaman?"
+> Me inclino hacia él, bajando la voz y manteniendo mi sonrisa, mientras intento analizar si su pánico es real o una táctica para asustarme.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+3=9
+
+### [4] DM
+
+  12725 ms
+
+> El hombre retrocede un paso, instintivamente, mientras tu sonrisa se ensancha. Sus ojos saltan de tu rostro a los bocetos y vuelven a ti, moviéndose con una rapidez errática. El temblor de sus manos no cesa y el sudor frío que perla su frente parece genuino; no hay rastro de cálculo en su mirada, solo el vacío de quien se siente una presa acorralada.
+> —¿Soluciones? —suelta una risa seca, que suena más como un estertor—. No hay soluciones para los que reclaman el Eco. Solo hay... entregas. Ellos no quieren oro ni tierras, buscan la armonía pura, la frecuencia que sostiene el mundo. Si encuentran la Voz, el resto de nosotros seremos solo ruido blanco en el vacío. ¡No entiendes que el hecho de que me preguntes ya es un riesgo!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1583 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Eco
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 347 — 260/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3536 ms
+
+> "Tranquilo, amigo. Los riesgos son solo oportunidades mal gestionadas."
+> Me acerco un paso más, bajando el tono de voz para crear una falsa sensación de complicidad mientras busco cualquier objeto de valor que pueda haber descuidado en su nerviosismo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+3=12
+
+### [4] DM
+
+  30686 ms
+
+> El hombre traga saliva, dejándose arrastrar por el magnetismo de tu voz, aunque sus hombros siguen tensos como cuerdas de violín. Se inclina ligeramente hacia ti, atrapado en ese espacio íntimo que has creado, mientras sus ojos se desvían un instante hacia la puerta, temiendo que el simple hecho de escucharte sea una traición.
+> Tus ojos recorren sus ropajes y el espacio inmediato. Aparte de la ropa desgastada y el rastro de tinta en sus dedos, no percibes ningún objeto de valor evidente ni nada que haya dejado caer en su agitación. Solo hay sudor, miedo y el aroma rancio del papel viejo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1946 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 348 — 261/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3398 ms
+
+> "No temas, amigo mío. Lo que hablemos aquí morirá con nosotros, o mejor aún, nos hará libres."
+> Le pongo una mano en el hombro para anclarlo y trato de leer su lenguaje corporal para saber qué es exactamente lo que teme.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+3=23  CRÍTICO
+
+### [4] DM
+
+  21681 ms
+
+> El hombre se crispa bajo tu tacto, pero no se aparta; al contrario, parece que tu mano es lo único que evita que se desmorone. Al observar la micro-expresión de sus ojos y el ritmo errático de su respiración, percibes que su miedo no es hacia una persona concreta, sino hacia una estructura. No teme a un guardia o a un jefe, sino a una consecuencia inevitable: el terror de quien sabe que ha robado un secreto que no puede ser devuelto y que cualquier descuido borrará su existencia de los registros oficiales.
+> Su mirada vuelve a la puerta, y notas que el ligero temblor de sus dedos no es por el frío, sino por la urgencia de decirte algo antes de que el tiempo se agote. Se inclina más, bajando la voz hasta convertirla en un susurro que apenas roza tu oído.
+> —No es que me vigilen... es que ya saben que lo tengo. Si me encuentran con el documento, no me matarán; simplemente harán que nunca haya existido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1792 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 349 — 262/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3519 ms
+
+> "Tranquilo, amigo. Soy experto en hacer que las cosas desaparezcan... o que aparezcan donde más convengan."
+> Le doy un apretón firme en el hombro para darle seguridad mientras busco con la mirada cualquier rastro de quien pueda estar acechando.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  12512 ms
+
+> El hombre exhala un aire que parecía haber estado reteniendo durante siglos. Sus hombros caen, liberando una tensión casi palpable, y la mirada aterrorizada que antes vagaba por la habitación se ancla en ti con una intensidad devocional. En ese instante, dejas de ser un extraño para convertirte en su única tabla de salvación; la seguridad de tu voz y la firmeza de tu mano han aniquilado sus dudas, sustituyéndolas por una confianza ciega y desesperada.
+> —Tú... tú puedes hacerlo —susurra, y su voz ya no tiembla, sino que vibra con una esperanza febril—. Te lo daré todo. Solo sácame de este círculo antes de que cierren la red.
+> Mientras él se entrega a tu protección, tu mirada recorre el entorno con precisión quirúrgica. El pasillo permanece en un silencio sepulcral, las sombras se mantienen estáticas y no hay ningún eco de pasos ni respiraciones ajenas que sugieran una emboscada inmediata. Por ahora, el vacío es tu único testigo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1606 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 350 — 263/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3013 ms
+
+> "Todo, ¿eh? Me gusta cómo suena eso."
+> Le doy una palmada aseguradora en el hombro y busco con la mirada cualquier objeto de valor que lleve encima antes de moverme.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 14+1=15
+
+### [4] DM
+
+  11915 ms
+
+> El hombre se encoge bajo tu palmada, pero no por miedo, sino por una gratitud casi servil, asintiendo frenéticamente mientras espera que lo guíes. Mientras lo escrutas, notas que su ropa, aunque raída y manchada de polvo, es de un corte fino que sugiere un pasado más próspero.
+> Tus ojos se fijan en un bulto irregular que presiona la tela de su jubón, justo sobre el corazón. Al observar el relieve y el brillo metálico que asoma por una costura deshilachada, identificas una cadena de oro que sostiene un relicario ovalado, trabajado con filigranas delicadas. El hombre no parece consciente de que su tesoro es visible, demasiado absorto en la urgencia de escapar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5836 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: relicario ovalado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item relicario ovalado
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 351 — 264/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3505 ms
+
+> "No te preocupes, amigo, yo te sacaré de este agujero."
+> Le paso el brazo por los hombros para guiarlo hacia la salida, aprovechando el contacto para intentar deslizar el relicario fuera de su jubón.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  10360 ms
+
+> El hombre suelta un suspiro de alivio y se deja guiar, apoyando su peso en ti con una confianza ciega. Mientras lo conduces con paso firme hacia la luz de la salida, tus dedos se mueven con una precisión quirúrgica, casi invisible bajo el pliegue de su ropa. El clic del cierre es imperceptible y el relicario se desliza hacia tu palma con la suavidad de una gota de aceite, sin que él sienta el más mínimo cambio en la tensión de su jubón.
+> El objeto es cálido al tacto y el oro brilla débilmente mientras lo aseguras en tu propio equipo. El hombre sigue asintiendo, murmurando palabras de agradecimiento ininteligibles, completamente ajeno a que el tesoro que guardaba sobre su corazón ahora pertenece a tu bolsillo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5673 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = relicario ovalado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5013: Kestra.inventory = relicario ovalado
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 352 — 265/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2676 ms
+
+> "No hay de qué, amigo mío. Lo importante es que ya está todo terminado."
+> Le doy una palmadita afectuosa en el hombro mientras lo termino de dejar en la salida.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 6+4=10
+
+### [4] DM
+
+  34879 ms
+
+> El hombre te devuelve una sonrisa lánguida y desdentada, parpadeando con pesadez mientras la luz del exterior lo ciega momentáneamente. Se tambalea un poco al soltarte, pero el gesto afectuoso en su hombro parece asentarlo, dejándole una sensación de gratitud genuina.
+> —Buen alma... buen alma eres —balbucea, mientras se separa de ti para buscar apoyo en la pared de piedra de la salida. Se lleva la mano al pecho por puro instinto, rozando la tela donde antes descansaba el relicario, pero su mente nublada no registra la ausencia del objeto; simplemente suspira y comienza a caminar lentamente hacia la plaza, dejándote el camino libre.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  89372 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 353 — 266/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3560 ms
+
+> "Vaya con Dios, buen hombre."
+> Le dedico un último gesto amable mientras me alejo en dirección opuesta. Miro el relicario que ahora tengo en mi poder para examinarlo con detalle.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 6+0=6
+
+### [4] DM
+
+  7696 ms
+
+> El hombre asiente con un movimiento errático de la cabeza, murmurando palabras ininteligibles mientras se pierde entre la multitud de la plaza, arrastrando los pies sobre el empedrado. El bullicio del exterior comienza a envolverte, con el aroma a pan recién horneado y el eco de los pregoneros llenando el aire cálido de la mañana.
+> Sostienes el relicario entre tus dedos, pero al observarlo, el objeto no revela nada evidente. Es una pieza desgastada, cuya superficie está tan oscurecida por el tiempo y la suciedad que los grabados, si es que existen, permanecen ocultos bajo una pátina de grasa y polvo. No logras distinguir ningún símbolo, nombre o material valioso a simple vista.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1569 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 354 — 267/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2709 ms
+
+> "Vaya pieza más curiosa."
+> Saco un pañuelo de seda y empiezo a limpiar con cuidado la superficie del relicario para ver qué hay debajo de esa mugre.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+0=8
+
+### [4] DM
+
+  5176 ms
+
+> Pasas el pañuelo de seda sobre el metal, frotando con paciencia las capas de grasa y el polvo acumulado. Sin embargo, la suciedad parece haberse fundido con el material a lo largo de los años, creando una costra rebelde que no cede ante la delicadeza de la tela.
+> Tras unos instantes de esfuerzo, el relicario sigue luciendo opaco y manchado. No logras despejar ninguna zona lo suficiente como para distinguir un grabado, una letra o cualquier marca que revele el origen de la pieza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  941 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 355 — 268/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3206 ms
+
+> "Vaya, parece que este secreto prefiere seguir enterrado."
+> Dejo de frotar y observo el relicario desde distintos ángulos, buscando alguna grieta o mecanismo oculto que no haya visto antes.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 13+0=13
+
+### [4] DM
+
+  7035 ms
+
+> Giras la pieza bajo la luz, moviéndola lentamente para que los reflejos revelen cualquier irregularidad en la superficie. El metal es frío y la costra de suciedad sigue siendo un obstáculo, pero al inclinar el relicario en un ángulo preciso, notas que el borde inferior no cierra de forma hermética. Hay una mínima hendidura, casi imperceptible, que sugiere que la tapa no se abre simplemente tirando de ella, sino que requiere un movimiento específico o una presión en un punto exacto.
+> El objeto permanece mudo y opaco, pero esa pequeña discontinuidad en la unión del metal rompe la monotonía de la pieza. El relicario sigue siendo un enigma manchado, aunque ahora sabes que hay una entrada física que el polvo no ha logrado sellar por completo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2611 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 356 — 269/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3300 ms
+
+> "Vaya, vaya... guardas secretos, ¿eh?"
+> Sigo examinando la hendidura con cuidado, probando diferentes presiones y deslizamientos con la yema del dedo para encontrar el mecanismo de apertura.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+0=7
+
+### [4] DM
+
+  6722 ms
+
+> Tus dedos recorren la hendidura con cautela, presionando los bordes y deslizando la yema sobre el metal frío. Sin embargo, la superficie es traicionera; la suciedad acumulada se siente como una capa resbaladiza que enmascara cualquier relieve sutil. Cada vez que crees haber sentido un clic o un ligero desplazamiento, resulta ser solo el roce de una partícula de polvo o la resistencia natural del metal oxidado.
+> El relicario permanece cerrado, indiferente a tus intentos. La pequeña discontinuidad sigue ahí, burlona, pero el mecanismo que la activa se resiste a revelarse bajo tu tacto, manteniendo el misterio sellado tras su costra de suciedad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1134 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 357 — 270/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3148 ms
+
+> "Vaya, eres un hueso duro de roer."
+> Saco un trozo de tela húmeda de mi bolsillo y limpio meticulosamente la hendidura y el metal alrededor para eliminar la suciedad.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+0=12
+
+### [4] DM
+
+  6289 ms
+
+> El trapo húmedo arrastra la costra de grasa y polvo, revelando un metal pálido y rayado que brilla débilmente bajo la luz. Al pasar los dedos ahora despejados por la hendidura, la superficie se siente más honesta, aunque sigue siendo esquiva. Logras distinguir que la ranura no es un simple accidente del tiempo, sino un canal tallado con precisión quirúrgica que termina en un pequeño muelle casi invisible.
+> A pesar de la limpieza, el mecanismo no cede ante la presión simple. El metal parece diseñado para ignorar cualquier intento de fuerza bruta o tacto superficial, manteniendo el contenido del relicario bajo un cierre que, aunque ahora es visible, sigue siendo un enigma mecánico.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1315 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 358 — 271/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3114 ms
+
+> "Vaya, vaya... alguien se tomó muy en serio la seguridad de este juguete."
+> Saco una pequeña ganzúa de mi ropa y trato de manipular el muelle a través del canal.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 11+2=13
+
+### [4] DM
+
+  5389 ms
+
+> La ganzúa se desliza por el canal con un roce metálico, pero al intentar presionar el muelle, la herramienta resbala bruscamente. El mecanismo produce un clic seco y metálico, un sonido sordo que no es el de una cerradura abriéndose, sino el de un pestillo que se bloquea con más fuerza.
+> El muelle retrocede violentamente, expulsando la ganzúa de la ranura y dejando el relicario tan hermético como al principio. Ahora, el metal pálido parece haberse asentado, eliminando cualquier juego que permitiera la manipulación superficial.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1812 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 359 — 272/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3665 ms
+
+> "Vaya, parece que este juguete tiene mal genio."
+> Suelto un suspiro y examino el relicario más de cerca, buscando algún relieve, inscripción o marca que haya pasado por alto y que pueda ser la verdadera llave.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+0=1  PIFIA
+
+### [4] DM
+
+  5578 ms
+
+> Al inclinar el relicario bajo la luz, la frustración nubla tu vista y el objeto se desliza entre tus dedos. El metal pálido golpea el suelo con un sonido estridente, rebotando con una torpeza inusual antes de deslizarse exactamente debajo de un pesado mueble de madera tallada, quedando fuera de tu alcance inmediato.
+> En el impacto, una pequeña pieza de plata, que parecía formar parte de la ornamentación exterior, se desprende y sale volando hacia el rincón opuesto de la habitación, perdiéndose entre las sombras y el polvo del suelo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1793 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 360 — 273/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2636 ms
+
+> "Maldita sea..."
+> Me arrodillo junto al mueble y trato de alcanzar el relicario con los dedos, estirándome lo más posible.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  7281 ms
+
+> Tus dedos se deslizan con una precisión quirúrgica por debajo de la madera tallada, evitando cualquier roce que pudiera empujar el objeto más al fondo. En un movimiento fluido y coordinado, logras enganchar el borde del metal pálido y recuperar el relicario sin esfuerzo, extrayéndolo del refugio del mueble con una elegancia casi coreografiada.
+> El objeto descansa ahora en tu palma, aunque la ausencia de la pieza de plata es evidente; el hueco en la ornamentación deja al descubierto un pequeño relieve interno que antes estaba oculto. El silencio de la habitación acentúa el eco del impacto previo, mientras la pequeña pieza desprendida sigue aguardando en la penumbra del rincón opuesto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3904 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = relicario ovalado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5042: Kestra.inventory = relicario ovalado
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 361 — 274/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3632 ms
+
+> Cierro el puño sobre el relicario y lo guardo rápidamente en mi ropa. Me desplazo con cautela hacia el rincón donde cayó la pieza de plata para recogerla.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 8+2=10
+
+### [4] DM
+
+  6639 ms
+
+> Tus pasos, aunque intentas que sean ligeros, resuenan con una claridad traicionera sobre el suelo de madera. El roce de tu ropa y el leve crujido de una tabla al pisar rompen la quietud de la estancia, dejando un rastro sonoro evidente mientras te acercas al rincón oscuro.
+> Al llegar, la pieza de plata brilla débilmente bajo la penumbra, atrapada entre el polvo y las sombras del ángulo de la pared. El silencio que sigue a tu movimiento es tenso, cargado con la incertidumbre de si alguien fuera de la habitación ha percibido el ruido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3810 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 362 — 275/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2514 ms
+
+> "Mía."
+> Me agacho rápidamente y recojo la pieza de plata, guardándola en mi ropa antes de que alguien aparezca.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 18+2=20
+
+### [4] DM
+
+  4589 ms
+
+> Tus dedos se cierran sobre el metal frío con una precisión quirúrgica. En un movimiento fluido y casi invisible, la pieza de plata desaparece bajo la tela de tu ropa, fundiéndose con tu silueta antes de que el eco de tus pasos se desvanezca por completo.
+> La estancia recupera su silencio sepulcral. No se escuchan pasos apresurándose hacia la puerta ni voces alertadas en el pasillo; el entorno permanece imperturbable, como si el rincón oscuro nunca hubiera sido perturbado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4678 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = pieza de plata
+  ✓ creación item: pieza de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item pieza de plata
+  → delta 5050: Kestra.inventory = pieza de plata
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 363 — 276/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2966 ms
+
+> "Vaya pieza más curiosa."
+> Acaricio la plata bajo la ropa y busco con la mirada cualquier otro objeto de valor que haya pasado por alto en la estancia.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 10+1=11
+
+### [4] DM
+
+  4850 ms
+
+> Tus ojos recorren la estancia, escudriñando las sombras y los relieves de los muebles bajo la luz tenue. Te detienes un instante en la opulencia de las cortinas y la disposición de los adornos, pero el espacio parece haber entregado ya sus secretos más evidentes.
+> Aparte de la pieza de plata que ya descansa contra tu piel, no percibes ningún otro objeto que destaque por su valor o que haya escapado a tu primera inspección. La habitación permanece en un silencio expectante, sin ruidos que sugieran que alguien se aproxima.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1302 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 364 — 277/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2790 ms
+
+> "Demasiado limpio para ser verdad."
+> Me acerco a los muebles más pesados para revisar si hay algún compartimento oculto o un doble fondo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+0=14
+
+### [4] DM
+
+  5352 ms
+
+> Tus dedos recorren las molduras de madera oscura y las juntas de los muebles pesados, buscando cualquier irregularidad en la veta o un rastro de desgaste que delate un uso frecuente. Al deslizar la mano por el lateral de una cómoda de caoba, notas una ligera resistencia en un panel que no encaja perfectamente con el resto de la estructura.
+> Un leve clic resuena en la estancia cuando presionas un punto ciego del relieve. Una pequeña gaveta secreta, camuflada en la base del mueble, se desliza unos centímetros hacia afuera, revelando un espacio estrecho y polvoriento que ha permanecido cerrado durante mucho tiempo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3471 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: gaveta secreta
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item gaveta secreta
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 365 — 278/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2523 ms
+
+> "Vaya, vaya... parece que alguien guardaba secretos."
+> Saco la gaveta por completo para examinar su contenido con detalle.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+0=3
+
+### [4] DM
+
+  5781 ms
+
+> El cajón se desliza con un chirrido seco, dejando escapar una pequeña nube de polvo que baila bajo la luz de la estancia. Al extraerlo por completo, el espacio se revela vacío de cualquier documento, joya o mapa; solo queda un fondo de madera agrietada y algunas briznas de lana gris que se deshacen al tacto.
+> El fondo del compartimento está limpio, salvo por una marca superficial, un rasguño accidental que no forma ninguna figura ni deja pista alguna. No hay nada más oculto en los rincones de la gaveta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1251 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 366 — 279/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3082 ms
+
+> "Vaya decepción"
+> Cierro el cajón con cuidado y me pongo a observar el resto del escritorio, buscando algún doble fondo o algún mecanismo oculto en el marco.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+0=19
+
+### [4] DM
+
+  8361 ms
+
+> Tus dedos recorren las molduras de caoba y los bordes del marco con meticulosidad, presionando cada relieve y palpando las juntas de la madera. Al deslizar la mano por la parte posterior del tablero, notas que una pequeña sección de la madera no vibra igual que el resto; hay un ligero hundimiento, casi imperceptible, oculto tras una talla ornamental de hojas de acanto.
+> Al aplicar una presión firme en el punto exacto, se escucha un clic metálico y seco. Una fina ranura se abre en el lateral del escritorio, desplegando un compartimento secreto que emerge como una lengua de madera oscura. En su interior, reposa un pequeño cuaderno de cuero gastado y una llave de hierro oxidada, ambos envueltos en un trozo de seda color violeta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4494 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: cuaderno de cuero gastado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cuaderno de cuero gastado
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 367 — 280/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3998 ms
+
+> "Vaya, vaya... alguien guardaba secretos."
+> Tomo el cuaderno y la llave rápidamente, guardándolos en mi ropa. Luego, cierro el compartimento y vuelvo a colocar mis manos sobre el escritorio para que parezca que sigo examinando el mueble.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 2+2=4
+
+### [4] DM
+
+  9125 ms
+
+> El compartimento se desliza hacia adentro con un roce sordo, pero la madera no encaja perfectamente en su sitio; queda una mínima rendija, un hilo de sombra que delata la apertura. Mientras intentas recuperar la postura natural sobre el escritorio, el movimiento es brusco y tus manos chocan contra la superficie de caoba, produciendo un golpe seco que resuena en el silencio de la habitación.
+> Desde el otro lado del aposento, Madame Valeriane levanta la vista de sus papeles. Arquea una ceja, observando la posición de tus brazos y la ligera vibración del mueble con una expresión de curiosidad analítica. 
+> —¿Ha encontrado algo interesante en la carpintería, o es que el escritorio tiene alguna debilidad estructural que deba conocer? —pregunta con un tono neutro, aunque sus ojos no se apartan de ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5069 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = cuaderno de cuero gastado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5074: Kestra.inventory = cuaderno de cuero gastado
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 368 — 281/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  5735 ms
+
+> "Solo me aseguraba de que este magnífico mueble estuviera a la altura de su dueña, Madame. Parece que la caoba es tan firme como su reputación."
+> Suelto el escritorio con elegancia y le dedico mi sonrisa más encantadora mientras me alejo un paso del mueble.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 5+4=9
+
+### [4] DM
+
+  6108 ms
+
+> Madame Valeriane no se mueve, manteniendo la vista fija en ti mientras el eco del golpe aún flota en el aire. Sus ojos recorren la distancia entre tú y el escritorio, deteniéndose un instante en la rendija de madera que no ha cerrado del todo, antes de volver a encontrarse con tu sonrisa.
+> —Un cumplido ingenioso, aunque el ruido ha sido demasiado vulgar para la elegancia de su gesto —responde ella, sin rastro de convicción en su voz. Vuelve a bajar la mirada hacia sus papeles, pero mantiene un silencio expectante, dejando que la tensión se asiente en la habitación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3008 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 369 — 282/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3604 ms
+
+> "La vulgaridad es, a veces, el mejor camino hacia la honestidad, Madame."
+> Me acerco al escritorio con paso ligero, intentando echar un vistazo rápido a los papeles que está revisando.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 13+1=14
+
+### [4] DM
+
+  9364 ms
+
+> Madame Valeriane no levanta la vista, pero el ligero movimiento de su mano derecha, que desliza un folio sobre otro, sugiere que es consciente de tu proximidad. El aroma a tinta fresca y sándalo llena el espacio mientras te inclinas hacia la superficie de madera oscura.
+> Entre las líneas apretadas y la caligrafía rebuscada de los documentos, logras distinguir el encabezado de una lista de suministros y un nombre subrayado varias veces: "El Auditorio de Cristal". Junto al nombre, hay una anotación al margen escrita con una tinta roja más agresiva que dice: *«Inaceptable. El silencio no es negociable»*.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4420 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación location: El Auditorio de Cristal
+  ⚠ nombres no reconocidos: Auditorio, Cristal, Inaceptable
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location El Auditorio de Cristal
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 370 — 283/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3077 ms
+
+> "Vaya caligrafía más... apasionada"
+> Intento deslizar el folio con la anotación roja hacia mi manga sin que ella se dé cuenta.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 5+2=7
+
+### [4] DM
+
+  7141 ms
+
+> Madame Valeriane detiene el movimiento de su mano en seco. Sus dedos, largos y pálidos, se cierran con firmeza sobre el borde del papel justo en el instante en que intentas desplazarlo, anclando el folio a la mesa con un golpe seco.
+> Lentamente, levanta la vista. Sus ojos, gélidos y analíticos, se clavan en los tuyos mientras una comisura de sus labios se curva en una expresión de gélida curiosidad.
+> —La pasión es un recurso peligroso cuando se aplica a los documentos ajenos —dice con una voz aterciopelada pero cortante—. ¿Hay algo en mi correspondencia que haya despertado un interés tan... físico en usted?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2748 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 371 — 284/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  24 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4258 ms
+
+> "Solo me aseguraba de que el papel no se deslizara, Madame. Sería un pecado que una letra tan elegante terminara en el suelo."
+> Suelto el folio con suavidad y le dedico mi sonrisa más encantadora, intentando recuperar la compostura.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 9+4=13
+
+### [4] DM
+
+  6651 ms
+
+> Madame Valeriane no aparta la mirada, manteniendo el contacto visual durante unos segundos que parecen dilatarse. Sus ojos recorren tu rostro, analizando la sinceridad de tu sonrisa y la tensión de tus hombros, mientras el silencio en la estancia se vuelve denso, interrumpido solo por el tic-tac rítmico de un reloj de pared.
+> —Un caballero atento a los detalles —responde finalmente, aunque su tono no pierde esa frialdad analítica—. O quizás alguien que ha aprendido que la cortesía es el mejor disfraz para la indiscreción.
+> Suelta el papel con una lentitud deliberada, pero no lo retira de la mesa, dejándolo ahí como un recordatorio mudo de tu intento. Se reclina en su asiento, observándote con una ceja ligeramente arqueada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1036 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 372 — 285/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3506 ms
+
+> "Me halaga que haya notado mi dedicación, Madame. Solo busco que nuestra relación sea... mutuamente beneficiosa."
+> Me inclino ligeramente hacia delante, tratando de leer sus intenciones mientras mantengo la sonrisa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+3=7
+
+### [4] DM
+
+  6710 ms
+
+> Madame Valeriane no se inmuta ante tu inclinación, manteniendo su postura rígida y distante. Sus labios se curvan en una sonrisa mínima, casi imperceptible, que no llega a alcanzar sus ojos, los cuales permanecen gélidos y evaluadores. 
+> —El beneficio mutuo es una moneda que manejo a diario, caballero —dice con una voz que suena a seda y acero—. Pero para que yo considere una oferta, primero debo saber si quien la propone es un activo valioso o simplemente un ruido molesto en mi agenda.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1781 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 373 — 286/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4340 ms
+
+> "Me halaga que valore la eficiencia, Madame. Soy el tipo de activo que resuelve problemas que otros ni siquiera saben que tienen."
+> Me enderezo lentamente, manteniendo la sonrisa y buscando cualquier detalle en su escritorio o vestimenta que revele un punto débil o un interés oculto.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+3=16
+
+### [4] DM
+
+  6830 ms
+
+> Madame Valeriane arquea una ceja, manteniendo el silencio durante unos segundos que parecen diseñarse para poner a prueba tu paciencia. Su mirada no se aparta de la tuya, pero la tensión en sus hombros disminuye un ápice, aceptando el desafío verbal con una curiosidad gélida.
+> Al analizarla, notas un pequeño detalle que rompe su fachada de perfección: un anillo de sello en su mano izquierda, desgastado por el roce constante, que lleva colocado en el dedo equivocado, como si hubiera sido trasladado apresuradamente desde otra mano. Sobre el escritorio, entre los papeles perfectamente alineados, hay un pequeño relicario de plata cerrado con llave; el metal está rayado y el cordón de cuero que lo sujeta está deshilachado, contrastando violentamente con el lujo impoluto del resto de la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6671 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: relicario de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → ya existía: item relicario de plata
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 374 — 287/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4331 ms
+
+> "Vuestra atención a los detalles es admirable, Madame, pero hay cosas que el tiempo desgasta y otras que el oro no puede pulir."
+> Sigo mirando el relicario mientras intento distraerla con mi charla.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 19+4=23
+
+### [4] DM
+
+  7328 ms
+
+> Madame Valeriane suelta una risa seca, un sonido breve y carente de alegría que no logra borrar la chispa de intriga en sus ojos. Se reclina en su silla, relajando la postura y permitiendo que el silencio se vuelva más ligero, casi cómplice. La mención al desgaste y al oro ha golpeado una fibra sensible, transformando su gélida curiosidad en una apertura cautelosa.
+> —Veo que no solo traéis palabras, sino también una lengua afilada para diseccionar lo que otros prefieren ignorar —responde, mientras desliza la mano derecha sobre el escritorio, rozando el relicario sin llegar a cubrirlo—. Es una cualidad peligrosa, pero refrescante en una corte llena de espejos. Decidme, ¿qué es exactamente lo que buscáis que os hace tan observador con mis... imperfecciones?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5479 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 375 — 288/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4647 ms
+
+> "Solo busco aquello que es verdaderamente auténtico en un lugar donde todo es fachada, Madame. Y ese relicario parece tener una historia mucho más honesta que la de los cortesanos."
+> Me inclino ligeramente hacia delante, manteniendo la sonrisa, mientras intento notar si su reacción al mencionar el objeto revela algún nerviosismo o apego excesivo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+3=11
+
+### [4] DM
+
+  101134 ms
+
+> Madame Valeriane mantiene la mirada fija, imperturbable. Sus dedos permanecen quietos sobre la madera del escritorio, y su expresión no vacila ni un milímetro ante la mención directa al objeto. No hay un respingo, ni un cambio en el ritmo de su respiración; se limita a sostenerte la vista con una calma profesional que oculta cualquier posible rastro de vulnerabilidad.
+> —La honestidad es un lujo que pocos pueden permitirse en esta ciudad, y menos aún quienes aspiran a sobrevivir en ella —comenta con un tono gélido pero intrigado—. Me halaga que consideréis mi relicario "honesto", aunque me pregunto si vuestra búsqueda de autenticidad es una filosofía personal o simplemente una herramienta para abrir puertas cerradas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3470 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 376 — 289/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3062 ms
+
+> "Es un poco de ambas, Madame. La verdad es la llave más pesada, pero la que abre las puertas más interesantes."
+> Sostengo su mirada con una sonrisa ligera, intentando descifrar qué es lo que realmente intenta proteger tras esa máscara de hielo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+3=13
+
+### [4] DM
+
+  27827 ms
+
+> Madame Valeriane no retira la mirada, pero la comisura de sus labios se eleva en un gesto casi imperceptible, una chispa de reconocimiento ante la réplica. Se reclina en su asiento, el cuero del respaldo cruje levemente, y el silencio se prolonga unos segundos más de lo habitual, transformando la tensión en una especie de duelo de voluntades donde ella parece evaluar el peso de vuestras palabras.
+> A pesar de su compostura, no percibes ninguna señal clara de nerviosismo, miedo o engaño deliberado en su lenguaje corporal. Su máscara de hielo permanece intacta, impenetrable; no hay un tic en sus manos ni una vacilación en su voz que te permita vislumbrar qué es lo que oculta o qué siente realmente respecto al relicario.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4674 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 377 — 290/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3013 ms
+
+> "Me gusta su temple, Madame. Pero el silencio es un lujo que ninguno de los dos puede permitirse hoy."
+> Me inclino hacia delante, invadiendo ligeramente su espacio personal con una sonrisa condescendiente.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  31818 ms
+
+> Madame Valeriane no retrocede ni un milímetro cuando invades su espacio; al contrario, sostiene la mirada con una intensidad gélida que parece congelar el aire entre ambos. Sin embargo, la sonrisa condescendiente y la presión psicológica rompen finalmente la barrera de su imperturbabilidad. Sus hombros descienden apenas un centímetro y el brillo de sus ojos cambia, transformando la evaluación fría en una aceptación pragmática.
+> —Tenéis razón, el tiempo es un recurso finito y vuestra insolencia es, al menos, refrescante —admite ella, con una voz que ahora suena más aterciopelada y menos distante—. No me interesa vuestro juego de poder, pero me interesa más que el relicario no termine en manos de quienes no saben escuchar su verdadero canto. Hablad, pues. ¿Qué es exactamente lo que ofrecéis a cambio de mi cooperación?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3991 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 378 — 291/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3120 ms
+
+> "Ofrezco discreción, eficiencia y que este asunto no llegue a oídos de quienes podrían cuestionar vuestra... gestión de los tesoros."
+> Me inclino ligeramente, manteniendo una sonrisa sugerente mientras busco cualquier detalle valioso en su escritorio.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+3=15
+
+### [4] DM
+
+  38779 ms
+
+> Madame Valeriane arquea una ceja, y el silencio que sigue a tu oferta es denso, cargado de una comprensión mutua sobre los secretos que prefieren permanecer enterrados. Su sonrisa se vuelve más genuina, aunque no menos peligrosa, mientras asiente con lentitud.
+> —La discreción es una moneda que cotiza al alza en esta ciudad. Me habéis convencido; vuestra eficiencia será la prueba del trato —responde ella, apoyando las manos sobre la madera oscura del escritorio.
+> Mientras te inclinas, tu mirada recorre la superficie despejada del mueble. Entre la tinta y los papeles ordenados, destaca un pequeño cuaderno de cuero negro con un cierre de plata, donde asoma una anotación escrita con caligrafía apresurada que menciona una "cita en el jardín botánico" y una fecha que coincide con el inicio del festival.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4226 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · bribe_offered
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 379 — 292/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3617 ms
+
+> "Un placer hacer negocios con alguien que entiende el valor del silencio, Madame."
+> Aprovecho la inclinación para intentar deslizar el cuaderno de cuero bajo mi manga.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 1+2=3  PIFIA
+
+### [4] DM
+
+  35815 ms
+
+> Al intentar deslizar el cuaderno, el cuero resbala bruscamente contra la madera pulida, provocando que el objeto salga disparado hacia el suelo con un golpe seco que resuena en toda la estancia. El cuaderno se abre de par en par, dejando expuestas sus páginas al aire mientras el cierre de plata tintinea contra las baldosas.
+> Madame Valeriane no se mueve, pero su mirada desciende lentamente hacia el cuaderno y luego sube hacia tu manga, donde el movimiento torpe ha quedado evidenciado. La sonrisa genuina desaparece, reemplazada por una expresión gélida y una ceja arqueada que corta cualquier rastro de cordialidad.
+> —Parece que vuestra eficiencia comienza con una falta de coordinación lamentable —dice ella, con una voz que ahora es un filo de hielo—. ¿Desde cuándo el valor del silencio incluye el robo en mi propia mesa?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3047 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · betrayal_proven
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 380 — 293/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3566 ms
+
+> "Un descuido imperdonable, Madame. Me he distraído admirando la calidad de su mobiliario."
+> Suelto una risa ligera y levanto las manos en señal de inocencia, tratando de suavizar la tensión.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 8+4=12
+
+### [4] DM
+
+  30722 ms
+
+> Madame Valeriane mantiene la vista fija en el cuaderno, que yace abierto y vulnerable sobre el suelo, antes de volver a clavar sus ojos en ti. Sus labios se curvan en una mueca que no llega a ser sonrisa; la frialdad de su expresión permanece intacta, aunque el tono de su voz pierde el filo agresivo para transformarse en un desdén calculado.
+> —Vuestro sentido del humor es tan torpe como vuestros dedos —responde con sequedad, sin apartar la mirada—. Recoged esa insignificancia del suelo. Ahora. Y esperemos que vuestra capacidad de persuasión sea superior a vuestra discreción, porque habéis agotado mi paciencia antes siquiera de empezar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1213 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 381 — 294/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4448 ms
+
+> "Mis disculpas, Madame. A veces la curiosidad me gana a la elegancia."
+> Me inclino para recoger el cuaderno, pero intento deslizar un dedo por el borde de las páginas para ver si hay algo suelto o una nota oculta antes de entregárselo.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 14+2=16
+
+### [4] DM
+
+  35257 ms
+
+> Tus dedos rozan el papel con una agilidad casi imperceptible mientras te inclinas. En el borde de las páginas, el tacto revela un relieve extraño: un pequeño trozo de pergamino doblado en cuatro, oculto meticulosamente entre la contraportada y el cuero del cuaderno, que se desliza hacia tu palma justo antes de que endereces la espalda.
+> Madame Valeriane permanece inmóvil, observando cada uno de tus movimientos con una mirada gélida y analítica. Al extender la mano para recibir el cuaderno, sus dedos largos y pálidos se cierran sobre la encuadernación con un golpe seco.
+> —Menos palabras y más eficiencia —sentencia, guardando el libro con un movimiento brusco—. Hablad. ¿Qué es lo que realmente queréis, o debo asumir que vuestra visita es tan vacía como vuestro tacto?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5991 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = pergamino enrollado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5169: Kestra.inventory = pergamino enrollado
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 382 — 295/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  5435 ms
+
+> "Solo quería asegurarme de que el cuaderno estuviera intacto, Madame. Una joya así merece cuidados."
+> Cierro el puño con suavidad sobre el trozo de pergamino, ocultándolo en mi manga. Le dedico mi sonrisa más encantadora mientras trato de leer su expresión.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+3=13
+
+### [4] DM
+
+  33501 ms
+
+> Madame Valeriane no devuelve la sonrisa. Sus ojos, como dos fragmentos de obsidiana, recorren tu rostro con una lentitud deliberada, buscando cualquier grieta en tu compostura o un rastro de nerviosismo en tu gesto. El silencio se prolonga un instante más de lo socialmente aceptable, mientras ella mantiene el cuaderno apretado contra su costado, como si protegiera un secreto más allá del valor material del libro.
+> Su expresión permanece como una máscara de porcelana, imperturbable y distante. No hay rastro de sospecha evidente, pero tampoco hay calidez; simplemente te observa con la fría curiosidad de quien analiza un insecto bajo un cristal, evaluando si eres una herramienta útil o una molestia pasajera.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4953 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = pergamino enrollado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5171: Kestra.inventory = pergamino enrollado
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 383 — 296/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  23 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  6059 ms
+
+> "Toda esa cautela me sugiere que lo que guarda en ese cuaderno es mucho más fascinante que cualquier cosa que yo pudiera decir."
+> Sostengo la mirada con una expresión de curiosidad relajada, tratando de descifrar qué es exactamente lo que protege con tanto celo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+3=23  CRÍTICO
+
+### [4] DM
+
+  42101 ms
+
+> La máscara de Madame Valeriane no se rompe, pero hay un micro-movimiento en la comisura de sus labios, una reacción casi imperceptible que delata que el comentario ha impactado. Al sostenerle la mirada, notas que no es solo celo lo que la impulsa a proteger el cuaderno, sino una mezcla de reverencia y miedo. Observas que sus dedos aprietan la cubierta de cuero en puntos específicos, evitando tocar ciertas páginas que parecen estar ligeramente abultadas, como si contuvieran recortes o fragmentos de algo más que tinta.
+> Más allá de la superficie, captas que su frialdad es una armadura; Valeriane no te está juzgando a ti, sino que está proyectando la ansiedad de alguien que posee una información que no sabe cómo gestionar. El cuaderno no es un diario personal ni una agenda de negocios, es un catálogo de anomalías. Detectas que ella no busca un interlocutor, sino alguien que sea capaz de validar o resolver el enigma que guarda entre esas páginas sin que ella tenga que exponerse demasiado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1444 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 384 — 297/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3898 ms
+
+> "Parece que ese cuaderno pesa mucho más de lo que indica su tamaño. No busco juzgarla, solo... ayudarla a cargar con ese peso."
+> Me inclino ligeramente hacia ella, bajando la voz y suavizando la expresión.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 6+4=10
+
+### [4] DM
+
+  31950 ms
+
+> Madame Valeriane mantiene la espalda rígida y la mirada fija, aunque el ligero temblor de sus dedos sobre el cuero del cuaderno delata que tu tono ha calado. El silencio se prolonga unos segundos, cargado de una tensión eléctrica, mientras ella evalúa la sinceridad de tu ofrecimiento detrás de su máscara.
+> —La ayuda es una moneda muy volátil en esta ciudad, forastero —responde con una voz que recupera su gélida compostura, aunque ya no suena tan distante—. No todos los pesos se pueden compartir sin que el otro termine aplastado por ellos.
+> Cierra el cuaderno con un golpe seco, pero no lo aparta de tu vista; lo mantiene sobre el regazo, como un escudo que decide si bajar o no.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3000 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 385 — 298/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3871 ms
+
+> "Precisamente por eso busco a alguien con su... compostura. Sabemos que el peso es compartido, pero el beneficio es mutuo."
+> Me inclino un poco hacia delante, manteniendo la sonrisa, e intento analizar su reacción al cerrar el cuaderno.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+3=20
+
+### [4] DM
+
+  34102 ms
+
+> Al cerrar el cuaderno, Madame Valeriane no lo hace para ocultar la información, sino como un gesto instintivo de cierre emocional. El movimiento es brusco, pero sus ojos permanecen anclados en los tuyos, buscando una fisura en tu sonrisa. Notas que el temblor de sus dedos ha cesado, sustituido por una rigidez expectante; no hay rastro de engaño en su postura, sino una profunda cautela mezclada con una curiosidad que lucha por no emerger.
+> —El beneficio mutuo es una frase elegante para decir que ambos tenemos algo que perder —dice, y por primera vez, una comisura de sus labios se eleva en un gesto que roza la ironía—. Me intriga que un forastero sea tan consciente de la fragilidad de los pactos en este lugar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1265 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 386 — 299/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3621 ms
+
+> "La fragilidad es precisamente lo que hace que un pacto sea valioso, Madame. Solo lo que puede romperse tiene precio."
+> Me inclino ligeramente hacia delante, manteniendo la sonrisa, mientras intento notar si hay algún documento o secreto asomando por el cuaderno cerrado.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 13+1=14
+
+### [4] DM
+
+  28132 ms
+
+> Madame Valeriane sostiene la mirada, procesando la respuesta con un silencio que se prolonga un segundo más de lo habitual. La ironía en su rostro se suaviza, transformándose en una expresión de reconocimiento gélido, como si acabaras de pronunciar una verdad que ella ya había aceptado hace tiempo.
+> Al inclinarte, tu vista recorre el borde del cuaderno de cuero oscuro. El cierre de latón está firmemente encajado y las hojas quedan perfectamente alineadas bajo la tapa; no hay esquinas dobladas, notas sueltas ni rastros de tinta que sobresalgan. El libro permanece sellado, guardando sus secretos bajo la presión de sus dedos rígidos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1858 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 387 — 300/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4770 ms
+
+> "Es un cuaderno muy cuidado, Madame. Casi da pena pensar en lo que podría pasarle si cayera en las manos equivocadas."
+> Intento deslizar mis dedos por el borde del cierre de latón para intentar abrirlo sin que ella se dé cuenta.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 9+2=11
+
+### [4] DM
+
+  26187 ms
+
+> Madame Valeriane arquea una ceja, manteniendo su postura imperturbable mientras procesa el comentario. Sus dedos, que sujetan el cuaderno con una firmeza calculada, no ceden ni un milímetro. El cierre de latón permanece intacto, frío y hermético, resistiendo cualquier intento de manipulación discreta.
+> —La precaución es una virtud que pocos saben cultivar, querido —responde ella con una sonrisa gélida, sin apartar la vista de tus ojos—. Y yo soy, por encima de todo, una mujer muy precavida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1519 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 388 — 301/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4132 ms
+
+> "La precaución es admirable, Madame Valeriane. Pero incluso la virtud más noble puede volverse tediosa si no se comparte con alguien que sepa apreciarla."
+> Sigo sonriendo mientras intento analizar sus gestos y su tono para encontrar alguna debilidad en su compostura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 5+3=8
+
+### [4] DM
+
+  31059 ms
+
+> Madame Valeriane mantiene la sonrisa gélida, una máscara de porcelana que no deja filtrar ni un rastro de duda o irritación. Sus hombros permanecen relajados y su respiración es rítmica, casi imperceptible, mientras sostiene la mirada con una seguridad que raya en la arrogancia.
+> —El tedio es un precio pequeño a pagar por la seguridad, me temo —replica ella, con un tono que ahora suena ligeramente más condescendiente. No hay ningún tic nervioso, ninguna vacilación en su voz ni un cambio en la presión de sus dedos sobre el cuaderno que sugiera una grieta en su armadura social.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1460 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 389 — 302/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3821 ms
+
+> "La seguridad es un concepto tan relativo, Madame. A veces, el exceso de cautela es el camino más corto hacia el olvido."
+> Suelto una risita ligera y me inclino un poco hacia delante, intentando captar cualquier detalle del cuaderno que sostiene.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+3=5
+
+### [4] DM
+
+  27253 ms
+
+> Madame Valeriane no se inmuta ante la observación, aunque sus ojos se entrecierran apenas un milímetro, como si estuviera evaluando el valor de la frase. Mantiene la distancia justa, sin ceder un centímetro de terreno, y su sonrisa permanece intacta, imperturbable como una estatua de mármol.
+> Cuando te inclinas, ella reacciona con un movimiento fluido y natural, desplazando el cuaderno hacia su regazo con una elegancia ensayada. No hay rastro de pánico en el gesto, solo una cortesía gélida que cierra cualquier ángulo de visión sobre las páginas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2904 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 390 — 303/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2946 ms
+
+> "Un gesto admirable, Madame. La discreción es, después de todo, la moneda más valiosa en este salón."
+> Me enderezo lentamente, manteniendo la sonrisa y buscando algún detalle en su expresión que delate qué es exactamente lo que protege con tanto celo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+3=17
+
+### [4] DM
+
+  29720 ms
+
+> Madame Valeriane deja escapar una risa breve, un sonido cristalino que no llega a calentar sus ojos. "Exactamente. Y quien sabe invertir esa moneda suele llegar muy lejos", responde, mientras acomoda el cuaderno contra su muslo con una presión firme.
+> Al analizar su rostro, notas que su calma es casi mecánica, pero hay una tensión residual en la comisura de sus labios y un parpadeo excesivamente rápido cuando mencionaste la discreción. No es miedo, sino una vigilancia extrema; su mirada no busca el peligro, sino que escanea tu reacción para medir cuánto sabes realmente sobre lo que oculta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3149 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · ideal_honored
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 391 — 304/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2915 ms
+
+> "Me fascina esa dedicación a la prudencia. Es una virtud muy escasa hoy en día."
+> Sigo sonriendo mientras intento notar si el cuaderno contiene algo más que simples cuentas o nombres.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+3=7
+
+### [4] DM
+
+  29930 ms
+
+> Madame Valeriane mantiene la sonrisa, aunque sus dedos se cierran un poco más sobre la cubierta del cuaderno, anclándolo a su cuerpo. "La prudencia es el escudo de los que tenemos mucho que perder", comenta con un tono gélido, devolviendo el cumplido con una cortesía que se siente como una barrera de cristal.
+> A pesar de tu observación, la posición del cuaderno y la firmeza con la que ella lo sujeta ocultan cualquier detalle. Solo ves el cuero desgastado de la tapa y el borde de unas hojas amarillentas; no hay rastro de compartimentos ocultos, sobres asomando ni ninguna señal que te permita deducir si el contenido es contable o secretos prohibidos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3557 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · ideal_honored
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 392 — 305/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3025 ms
+
+> "La prudencia es admirable, Madame, pero la curiosidad es mucho más rentable."
+> Me inclino ligeramente hacia delante, buscando distraer su atención con un gesto encantador mientras intento percibir cualquier reacción nerviosa en su lenguaje corporal.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 18+3=21
+
+### [4] DM
+
+  50221 ms
+
+> Madame Valeriane no se mueve, pero el ritmo de su respiración se altera apenas un milisegundo cuando te inclinas. Al observar detenidamente la tensión de su mandíbula y el leve temblor casi imperceptible en el dedo índice que presiona el cuero del cuaderno, notas que no es miedo lo que siente, sino una urgencia contenida. Sus ojos, aunque mantienen la máscara de cortesía, escanean tu rostro con una intensidad depredadora, evaluando si tu "curiosidad" es una herramienta que puede usar o un obstáculo que debe eliminar.
+> "La rentabilidad es un concepto fascinante", responde ella, y esta vez la sonrisa no llega a sus ojos, que permanecen fríos y calculadores. "Sin embargo, hay curiosidades que actúan como venenos: una vez que se prueban, el hambre solo crece hasta consumirlo todo". Al hablar, desplaza el cuaderno apenas unos centímetros hacia atrás, alejándolo de tu alcance inmediato, confirmando que el objeto es, sin duda, el núcleo de su ansiedad actual.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1538 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 393 — 306/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4684 ms
+
+> "Me gustan los venenos, Madame. Suelen ser la cura para el aburrimiento."
+> Sigo inclinado, manteniendo el contacto visual mientras intento captar cualquier detalle del contenido del cuaderno que haya quedado a la vista.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 3+1=4
+
+### [4] DM
+
+  37834 ms
+
+> Madame Valeriane suelta una risa seca, un sonido breve que no llega a ser una carcajada, mientras arquea una ceja con un deje de ironía. El cuaderno permanece cerrado y el ángulo desde el que observas, sumado al movimiento defensivo que ella realizó, oculta cualquier rastro de tinta o papel. Solo alcanzas a ver la textura gastada del cuero oscuro y el cierre de latón, que brilla débilmente bajo la luz, sin revelar una sola letra de su contenido.
+> "El aburrimiento es un lujo que los imprudentes no pueden permitirse", replica ella, recuperando la compostura y enderezando la espalda. Sus ojos vuelven a esa máscara de cortesía imperturbable, aunque la presión de su dedo sobre la cubierta del libro sigue siendo firme, marcando una frontera invisible que no te permite avanzar más.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1043 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 394 — 307/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2800 ms
+
+> "Tiene usted razón, Madame. La prudencia es una virtud... aunque a veces la curiosidad sea un vicio más rentable."
+> Sigo observando el cuaderno mientras hablo, buscando cualquier descuido en su postura o una oportunidad para deslizar la vista hacia el interior.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+1=3
+
+### [4] DM
+
+  33838 ms
+
+> Madame Valeriane mantiene el cuaderno pegado a su costado con una naturalidad gélida, coordinando cada uno de sus movimientos para que el libro nunca quede expuesto. No hay vacilaciones en su postura ni aperturas accidentales; la mujer se desplaza con una precisión calculada, convirtiendo su cuerpo en un muro infranqueable entre tú y el cuero oscuro del volumen.
+> "La rentabilidad de los vicios suele medirse en cicatrices, no en monedas", comenta ella con una sonrisa gélida que no llega a sus ojos. Se mantiene imperturbable, observando tu insistencia con una mezcla de condescendencia y vigilancia, sin concederte el más mínimo descuido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1336 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 395 — 308/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2876 ms
+
+> "Toda rentabilidad tiene un precio que alguien está dispuesto a pagar, Madame."
+> Me acerco un paso más, fingiendo una risa ligera mientras intento distraer su atención con un gesto amplio de mi mano libre.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 15+2=17
+
+### [4] DM
+
+  66625 ms
+
+> Madame Valeriane mantiene la mirada fija en tus ojos, pero el gesto amplio de tu mano libre crea el instante de ruido visual necesario. Mientras ella procesa la ironía de tu comentario, tus dedos se deslizan con una fluidez casi invisible, aprovechando el milímetro de espacio que se abre entre su brazo y el cuaderno.
+> Sientes el tacto frío y rugoso del cuero oscuro bajo tus yemas. El volumen cede ligeramente, permitiéndote deslizarlo fuera de su agarre sin que la mujer note la pérdida de peso inmediata contra su costado. Ella sigue sonriendo, imperturbable, ajena a que el muro infranqueable acaba de ser vulnerado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4867 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = cuaderno
+  ✓ creación item: cuaderno
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → ya existía: item cuaderno
+  → delta 5240: Kestra.inventory = cuaderno
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 396 — 309/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2483 ms
+
+> "Como decía, Madame, la discreción es la moneda más valiosa en este salón."
+> Guardo el cuaderno rápidamente entre mis ropas y doy un paso atrás, manteniendo la sonrisa.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 17+4=21
+
+### [4] DM
+
+  52712 ms
+
+> Madame Valeriane suelta una risita melodiosa, asintiendo con elegancia mientras cierra los ojos un instante, deleitándose en la agudeza de tu frase. Se mantiene en su postura, apoyada con naturalidad sobre el vacío donde hace un segundo descansaba el cuaderno, sin que un solo músculo de su rostro traicione la más mínima sospecha.
+> —Ciertamente, querido. Y quien sabe manejarla tan bien suele llegar muy lejos en este círculo —responde ella, abriendo los ojos y dedicándote una mirada cargada de una curiosidad ahora más genuina, mientras el cuero del libro permanece oculto y frío contra tu cuerpo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2282 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 397 — 310/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3482 ms
+
+> "Me halaga que lo note, Madame. Pero me temo que mi ambición es proporcional a mi curiosidad."
+> Mantengo la sonrisa mientras retrocedo un paso, buscando una salida natural para alejarme de ella sin levantar sospechas.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 19+4=23
+
+### [4] DM
+
+  41326 ms
+
+> Madame Valeriane deja escapar un suspiro teatral, llevándose una mano al pecho como si tus palabras fueran una confesión conmovedora. Sus ojos brillan con una chispa de diversión mientras te concede el espacio, relajando su postura y permitiendo que el flujo de la conversación se desplace con el movimiento de tu cuerpo.
+> —La curiosidad es la chispa de toda gran aventura, y la ambición el viento que la aviva —comenta con un tono ligero, casi distraído, mientras comienza a mirar hacia el resto de la estancia, dándote la espalda parcialmente—. No te detengas ahora que has empezado a explorar. Ve, pues, antes de que el protocolo del festival nos obligue a volver a las formalidades.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1215 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 398 — 311/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3573 ms
+
+> "Vuestra generosidad es tan vasta como vuestra sabiduría, Madame."
+> Hago una reverencia exagerada y aprovecho que me ha dado la espalda para intentar deslizar mi mano hacia algún objeto de valor que tenga a mano o en su vestimenta.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  39413 ms
+
+> Tus dedos se mueven con la precisión de un cirujano y la rapidez de un rayo, fundiéndose con el pliegue de la seda de su vestido mientras ella sigue absorta en su contemplación de la sala. El movimiento es tan fluido que ni siquiera el roce de la tela delata tu presencia; en un parpadeo, tus dedos se cierran sobre un objeto pequeño y frío que descansaba en un bolsillo oculto.
+> Retiras la mano con la misma elegancia con la que iniciaste la maniobra, ocultando el botín antes de que Madame Valeriane regrese su mirada hacia ti. En tu palma descansa un relicario de plata finamente labrado, con un grabado de una hoja de roble que parece vibrar ligeramente bajo el tacto. Ella, ajena al robo, esboza una sonrisa enigmática.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6711 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = relicario de plata
+  ✓ creación item: relicario de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → ya existía: item relicario de plata
+  → delta 5269: Kestra.inventory = relicario de plata
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 399 — 312/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3050 ms
+
+> "Un lugar fascinante, Madame. Casi tan cautivadora como la anfitriona."
+> Guardo el relicario rápidamente y trato de analizar la reacción de la mujer para ver si ha notado algo inusual.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+3=16
+
+### [4] DM
+
+  26605 ms
+
+> Madame Valeriane suelta una risa ligera, un sonido cristalino que resuena en la estancia mientras inclina levemente la cabeza, halagada por el comentario. Sus ojos, brillantes y observadores, recorren tu rostro con una curiosidad genuina, pero no hay rastro de sospecha en su expresión ni tensión en sus hombros.
+> Se mantiene relajada, moviéndose con una gracia natural mientras retoma su contemplación de la sala. Su atención está completamente centrada en la conversación y en el juego de seducción social, convencida de que su secreto sigue a salvo en el pliegue de su seda.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1223 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 400 — 313/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  8966 ms
+
+> "Vuestra gracia es tan cautivadora que casi olvido el motivo de mi visita."
+> Me acerco un paso más, manteniendo la mirada en sus ojos mientras deslizo mi mano con sutileza hacia el pliegue de su vestido.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 19+2=21
+
+### [4] DM
+
+  26867 ms
+
+> Tus dedos se deslizan como una brisa invisible sobre la seda fría del vestido. Con un movimiento fluido y preciso, aprovechas el ritmo de la conversación y la distracción de su propia risa para acceder al pliegue oculto de su falda sin que ella perciba el más mínimo roce.
+> Tus dedos encuentran un objeto pequeño y rígido. Lo extraes con la misma sutileza con la que entraste, sintiendo el peso ligero de un fragmento de cristal tallado que emite una vibración tenue, casi imperceptible, contra tu palma. Madame Valeriane sigue sonriendo, ajena a que el secreto que guardaba en su ropa ahora descansa en tu mano.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5285 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = fragmento de cristal tallado
+  ✓ creación item: fragmento de cristal tallado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item fragmento de cristal tallado
+  → delta 5282: Kestra.inventory = fragmento de cristal tallado
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 401 — 314/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  5430 ms
+
+> "Es un placer conocerla, Madame, realmente fascinante"
+> Cierro el puño discretamente para ocultar el cristal y retrocedo un paso, manteniendo la sonrisa mientras busco una oportunidad para alejarme.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 19+2=21
+
+### [4] DM
+
+  40558 ms
+
+> Madame Valeriane suelta una última risita melodiosa, inclinando la cabeza con un gesto de condescendencia elegante mientras sus ojos, brillantes y analíticos, se pierden momentáneamente en el resto de los invitados. El murmullo del salón y el aroma a perfumes pesados crean la cortina perfecta; el retroceso es fluido, fundiéndote con el flujo de la multitud sin que ella note el vacío en el pliegue de su seda.
+> —El placer es mío, querido. No deje que mi charla lo detenga, el banquete es demasiado corto para perderse los canapés de caviar —dice ella, girándose ya hacia un noble que le hace señas desde el otro extremo del salón. El cristal vibra una vez más contra tu piel, un pulso eléctrico y frío que parece marcar el ritmo de tu huida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1134 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 402 — 315/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3127 ms
+
+> "Un placer, Madame. Disfrute del caviar."
+> Le dedico una última sonrisa encantadora mientras me alejo rápidamente, guardando el cristal en mi ropa. Busco un rincón apartado o una salida discreta para examinar el objeto sin miradas indiscretas.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 2+2=4
+
+### [4] DM
+
+  34855 ms
+
+> El movimiento es torpe y apresurado. Al intentar fundirte con la multitud, chocas sonoramente contra el hombro de un camarero que sostiene una bandeja de copas de cristal; el tintineo del vidrio vibrando por el impacto resuena en el silencio momentáneo de quienes están a tu alrededor. Varias miradas curiosas se clavan en ti, juzgando la falta de gracia del desplante.
+> Apenas logras alcanzar la penumbra de un pesado cortinado de terciopelo rojo que separa el salón principal de un pasillo de servicio, pero el camino no ha sido discreto. Desde la distancia, la voz de Madame Valeriane vuelve a elevarse, cargada de una curiosidad ahora afilada, mientras ella detiene su conversación con el noble para observar el rincón donde acabas de desaparecer.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4255 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = fragmento de cristal tallado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5294: Kestra.inventory = fragmento de cristal tallado
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 403 — 316/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3792 ms
+
+> "¡Mil disculpas, buen hombre!"
+> Le doy una palmada amistosa al camarero mientras aprovecho el contacto para intentar aliviarlo de alguna moneda o joya.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 7+2=9
+
+### [4] DM
+
+  33652 ms
+
+> El camarero, recuperando el equilibrio con un respingo, asiente con una mueca de fastidio mientras se endereza la chaqueta. La palmada amistosa lo descoloca lo suficiente como para que no proteste, pero sus dedos se cierran con fuerza instintiva sobre la bandeja, manteniendo sus pertenencias seguras y fuera de tu alcance.
+> Desde el salón, el sonido de unos tacones rítmicos sobre el mármol comienza a acercarse al cortinado de terciopelo. La voz de Madame Valeriane suena ahora mucho más cerca, teñida de una sonrisa intrigada.
+> —¿Y quién es nuestro invitado tan... entusiasta? —pregunta, mientras la tela roja se desplaza lentamente para revelar su silueta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1913 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 404 — 317/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2450 ms
+
+> "Un admirador de su fama, Madame. No he podido resistirme a la curiosidad."
+> Me giro hacia ella con una sonrisa radiante y hago una reverencia exagerada.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 6+4=10
+
+### [4] DM
+
+  32318 ms
+
+> Madame Valeriane se detiene, observando la reverencia con una ceja ligeramente arqueada. El movimiento es tan teatral que la mujer permanece un instante en silencio, evaluando la sinceridad de aquel gesto. Sus ojos recorren tu figura con una mezcla de curiosidad y escepticismo, sin que la sonrisa de su voz llegue a reflejarse del todo en su expresión facial.
+> —La curiosidad es una virtud peligrosa, joven —responde con un tono seco, aunque no desprovisto de una cortesía gélida—. Y los admiradores suelen ser... predecibles. Dígame, ¿qué es exactamente lo que ha venido a buscar en mi compañía que no pueda encontrar en cualquier otro salón de la ciudad?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1736 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 405 — 318/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3657 ms
+
+> "Busco aquello que no se encuentra en los salones, Madame: una conversación que valga el tiempo de quien la escucha."
+> Le dedico una sonrisa encantadora mientras intento descifrar qué piensa realmente de mí.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+3=9
+
+### [4] DM
+
+  33587 ms
+
+> Madame Valeriane sostiene la mirada, imperturbable. La frase parece resbalar sobre ella como el agua sobre el mármol; no hay un destello de sorpresa ni una grieta en su compostura. Mantiene esa expresión analítica, con los labios cerrados en una línea fina que no revela si considera la respuesta ingeniosa o simplemente otra banalidad más de un cortesano.
+> —Una apuesta ambiciosa —comenta, y esta vez hay un matiz de ironía en su voz—. El tiempo es la única moneda que no admite falsificaciones, y usted acaba de gastar una parte del mío en un aforismo.
+> [Tu tirada de Perspicacia ha fallado. No logras leer sus intenciones ni detectar ninguna emoción oculta tras su máscara de cortesía.]
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ meta-comentario entre corchetes
+
+### [6] EXTRACTOR
+
+  1759 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 406 — 319/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3502 ms
+
+> "El tiempo es precisamente lo que me sobra, Madame, pero la paciencia suele ser un lujo que solo los más ricos pueden permitirse."
+> Suelto una risita ligera y me inclino un poco hacia ella, intentando recuperar el control del ritmo de la conversación.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 2+4=6
+
+### [4] DM
+
+  31527 ms
+
+> Madame Valeriane no se inmuta ante la inclinación, pero el ligero sonido de la risa parece irritarla. Sus ojos se entrecierran apenas un milímetro, y el aire entre ambos se vuelve gélido, cargado de una tensión seca. La ironía de su voz desaparece, dejando paso a una frialdad cortante que marca una distancia insalvable.
+> —La riqueza no siempre se mide en oro, ni la paciencia en tiempo —responde ella, enderezando la espalda y recuperando una postura rígida—. Se mide en respeto. Y me temo que su despliegue de confianza empieza a parecerse peligrosamente a la impertinencia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7930 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · ideal_violated
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 407 — 320/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3500 ms
+
+> "El respeto es una moneda muy volátil, Madame. Prefiero tratar con valores más... tangibles."
+> Bajo la mirada un instante, fingiendo una súbita modestia mientras busco cualquier objeto de valor sobre su escritorio.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 5+1=6
+
+### [4] DM
+
+  31239 ms
+
+> Madame Valeriane mantiene la mirada fija en ti, sus labios apretados en una línea fina de desaprobación. El frío que emana de su figura parece solidificarse, transformando el silencio en un muro invisible que te separa de ella. No se mueve, pero su presencia llena el espacio, vigilando cada uno de tus gestos con una precisión quirúrgica.
+> Sobre la superficie de madera oscura del escritorio, solo alcanzas a distinguir la disposición geométrica de unos papeles impecablemente alineados y la superficie pulida del mueble, que refleja la luz tenue de la estancia. Nada destaca ni escapa a tu vista que no sea parte del orden meticuloso y gélido de su oficina.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2068 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 408 — 321/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3179 ms
+
+> "Toda esa rigidez debe de ser agotadora, Madame. Relájese, que yo me encargo de los detalles."
+> Me inclino ligeramente hacia adelante, fingiendo buscar un punto de apoyo, mientras intento echar un vistazo rápido a los papeles del escritorio.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 15+1=16
+
+### [4] DM
+
+  35680 ms
+
+> Madame Valeriane no parpadea. Una ceja se eleva apenas un milímetro, y el aire a tu alrededor se vuelve aún más denso, cargado de una irritación contenida que vibra en el silencio. No se desplaza para bloquearte, pero su mirada sigue el movimiento de tu torso con una fijeza depredadora, como si estuviera contando los latidos de tu corazón.
+> Al inclinarte, el ángulo de visión se abre sobre los documentos. Entre las hojas alineadas, destaca un pergamino con un sello de cera carmesí que ha sido parcialmente roto. Apenas alcanzas a leer unas líneas escritas con una caligrafía apresurada y nerviosa que menciona "la frecuencia de la Voz" y una serie de coordenadas que parecen señalar el bosque circundante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  13634 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.knowledge
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 409 — 322/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3687 ms
+
+> "Parece que tenemos asuntos pendientes, Madame."
+> Intento deslizar el pergamino del sello carmesí bajo mi manga con un movimiento rápido y fluido.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 19+2=21
+
+### [4] DM
+
+  31932 ms
+
+> Tus dedos se deslizan con la precisión de un rayo, rozando apenas la superficie del papel antes de que el pergamino desaparezca bajo la tela de tu manga. El movimiento es tan limpio que el vacío dejado sobre la mesa es casi imperceptible, una ausencia que solo alguien que estuviera contando cada mota de polvo podría notar.
+> Madame Valeriane permanece inmóvil, su mirada gélida clavada en tus ojos. No ha habido un pestañeo, ni un cambio en su respiración, pero el silencio se prolonga un segundo más de lo habitual. 
+> —Tus modales son tan descuidados como tus insinuaciones —dice con una voz que corta como el cristal—. Sal de mi vista antes de que decida que tu presencia es un ruido que debo silenciar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9406 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = pergamino enrollado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5339: Kestra.inventory = pergamino enrollado
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 410 — 323/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3431 ms
+
+> "Ha sido un placer descubrir que vuestra cortesía es tan exquisita como vuestro temperamento, Madame."
+> Hago una reverencia exagerada y camino hacia la salida con paso ligero, asegurándome de que el pergamino esté bien sujeto.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 6+4=10
+
+### [4] DM
+
+  30854 ms
+
+> Madame Valeriane no se mueve mientras realizas la reverencia, observándote con un desdén gélido que parece congelar el aire entre ambos. Sus ojos se entrecierran ligeramente ante tu comentario, pero no hay rastro de sospecha en su expresión; solo una profunda irritación por tu insolencia.
+> —Que tu camino hacia la puerta sea lo más rápido posible —responde con sequedad, volviendo su atención a los papeles restantes sobre la mesa sin dedicarte una última mirada. El eco de tus pasos ligeros resuena en el silencio del salón mientras te alejas, dejando atrás la atmósfera pesada de su presencia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1976 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 411 — 324/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2577 ms
+
+> "Un placer haberla conocido, Madame."
+> Lanzo una mirada rápida a los papeles que ha dejado sobre la mesa mientras me retiro, intentando leer algún nombre o dato relevante.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 7+1=8
+
+### [4] DM
+
+  27137 ms
+
+> —El sentimiento es mutuo —suelta ella sin levantar la vista, su voz cortando el aire como una cuchilla de hielo. El roce del pergamino contra la madera es el único sonido que llena el espacio mientras ella se sumerge en sus asuntos, ignorando tu presencia por completo.
+> Al girar la cabeza hacia la mesa, el ángulo es desfavorables y el desorden de los folios oculta la mayor parte del contenido. Solo alcanzas a distinguir manchas de tinta y algunas líneas de texto borrosas que se funden en un conjunto ilegible antes de que la distancia y la luz del salón vuelvan los papeles una masa blanca y anónima.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1904 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 412 — 325/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3359 ms
+
+> "No es necesario que me mires para que yo te admire."
+> Me acerco lentamente a la mesa, tratando de encontrar un hueco entre los folios para leer el pergamino.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 19+2=21
+
+### [4] DM
+
+  28166 ms
+
+> Te deslizas por la estancia con la ligereza de una sombra, aprovechando que Madame Valeriane sigue absorta en su lectura y que el ruido del papel camufla tus pasos. Te inclinas sutilmente sobre la mesa, encontrando el ángulo exacto donde la luz cae sobre el pergamino sin que ella note tu proximidad.
+> Entre el caos de folios, el documento revela ahora un mapa esquemático de un bosque antiguo, donde una serie de anotaciones al margen mencionan con insistencia "la frecuencia del eco" y "el silencio del valle". Un nombre subrayado tres veces con tinta roja destaca en la esquina inferior: *Aethelgard*.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8911 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: item.detail
+  ✗ evidencia no literal: «Un nombre subrayado tres veces con tinta roja dest»
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Aethelgard
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 413 — 326/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2980 ms
+
+> "Aethelgard... qué nombre tan evocador."
+> Intento deslizar el pergamino fuera de la mesa y guardarlo en mi ropa sin que Madame Valeriane se percate.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 14+2=16
+
+### [4] DM
+
+  13309 ms
+
+> Tus dedos rozan el pergamino con una precisión quirúrgica, deslizándolo sobre la madera pulida sin generar el más mínimo roce. En un movimiento fluido y coordinado, el papel desaparece bajo la tela de tu ropa, quedando oculto y seguro mientras recuperas tu posición original.
+> Madame Valeriane pasa la página de su libro con un suspiro distraído, ajena al hecho de que el mapa de Aethelgard ya no descansa sobre su mesa. El silencio de la estancia vuelve a quedar dominado únicamente por el rítmico pasar de las hojas y el aroma a tinta vieja.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3821 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = pergamino enrollado
+  ⚠ nombres no reconocidos: Aethelgard
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5357: Kestra.inventory = pergamino enrollado
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 414 — 327/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2846 ms
+
+> "Es un placer haber compartido este momento de tranquilidad con usted, Madame. No quisiera importunarla más en sus lecturas."
+> Hago una reverencia elegante y camino hacia la salida con paso tranquilo.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 10+4=14
+
+### [4] DM
+
+  6112 ms
+
+> Madame Valeriane levanta la vista del libro, dedicándote una sonrisa tenue y distante, apenas un gesto de cortesía que no llega a sus ojos. Cierra el tomo con un golpe seco que levanta una pequeña nube de polvo dorado en el aire, asintiendo con una elegancia gélida.
+> —La tranquilidad es un bien escaso, joven. Que su camino sea tan placentero como ha sido nuestra breve charla —responde con voz aterciopelada mientras vuelve a acomodarse en su sillón, ya absorta nuevamente en sus pensamientos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2002 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 415 — 328/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3210 ms
+
+> "No me gusta dejar las conversaciones a medias, Madame. Ese libro parecía contener secretos mucho más fascinantes que la cortesía."
+> Intento echar un vistazo rápido al título o a cualquier marca en la cubierta del tomo que acaba de cerrar.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+1=7
+
+### [4] DM
+
+  6903 ms
+
+> Madame Valeriane no se inmuta ante el comentario, manteniendo esa expresión de serenidad imperturbable mientras sostiene el libro firmemente contra su regazo. El tomo queda parcialmente oculto por la caída de su vestido de seda, dejando a la vista solo una superficie de cuero oscuro y desgastado.
+> Tus ojos recorren la cubierta con rapidez, pero el ángulo es malo y la luz de la estancia juega en tu contra. No alcanzas a distinguir ninguna letra, escudo ni relieve que te permita identificar la obra antes de que ella se acomode más profundamente en su sillón, bloqueando cualquier visión restante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1665 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 416 — 329/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3161 ms
+
+> "Es un libro fascinante, Madame, aunque me temo que mi curiosidad es un defecto incurable."
+> Me inclino ligeramente hacia delante, tratando de captar algún aroma o detalle del cuero que haya pasado por alto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+1=7
+
+### [4] DM
+
+  6782 ms
+
+> Madame Valeriane esboza una sonrisa tenue, casi imperceptible, mientras observa tu movimiento con una calma felina. El ligero desplazamiento de tu cuerpo solo sirve para que el aroma a incienso y té de jazmín que impregna la estancia opaque cualquier rastro del libro; el cuero, ahora completamente oculto, no desprende ninguna fragancia distintiva que permita deducir su origen o antigüedad.
+> —La curiosidad no es un defecto, querido, sino el motor de los que saben mirar —responde ella con una voz aterciopelada, sin alterar su postura—. El problema surge cuando la curiosidad intenta abrir puertas que aún no tienen llave.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2066 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 417 — 330/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3454 ms
+
+> "Me temo que soy un experto abriendo puertas, Madame, aunque sea solo para admirar el cerrojo."
+> Sigo manteniendo el libro oculto mientras intento analizar su expresión para ver si realmente me ha pillado o si solo juega conmigo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+3=17
+
+### [4] DM
+
+  7660 ms
+
+> Madame Valeriane no parpadea, manteniendo esa mirada serena que parece atravesar cualquier máscara. Sin embargo, al analizar la tensión de sus hombros y la comisura de sus labios, notas que no hay rastro de sorpresa ni de indignación en su lenguaje corporal. Su calma no es la de quien ignora el hecho, sino la de quien ya ha anticipado el movimiento; hay una chispa de diversión genuina en sus ojos, una especie de reconocimiento hacia alguien que ha intentado jugar su mismo juego.
+> —Un experto en cerrojos, ¿eh? —comenta, inclinando levemente la cabeza mientras el aroma a jazmín parece intensificarse—. Me pregunto si esa destreza se extiende también al arte de saber cuándo es prudente dejar la puerta cerrada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3603 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 418 — 331/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3389 ms
+
+> "Me gusta pensar que soy un entusiasta de las posibilidades, Madame. Y las puertas cerradas suelen esconder las posibilidades más interesantes."
+> Le devuelvo la sonrisa, manteniendo el contacto visual mientras intento descifrar qué es exactamente lo que ella ya sabe.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+3=6
+
+### [4] DM
+
+  11445 ms
+
+> Madame Valeriane sostiene la mirada, y su sonrisa se ensancha apenas un milímetro, aunque permanece imperturbable. No hay ningún tic nervioso, ninguna vacilación en su postura ni un cambio en el ritmo de su respiración que sugiera que esté ocultando una reacción inmediata o que se sienta vulnerable ante tu confesión.
+> —La curiosidad es una virtud peligrosa, especialmente cuando se confunde con la audacia —responde con una voz aterciopelada, mientras desplaza su atención hacia un pequeño reloj de arena sobre la mesa. Su expresión es un muro de serenidad profesional que no deja filtrar ni una sola pista sobre la extensión de sus conocimientos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1642 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 419 — 332/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3250 ms
+
+> "Vaya, parece que he encontrado a alguien tan cautelosa como yo. Eso solo hace que el juego sea más interesante."
+> Sigo observando sus gestos mientras hablo, buscando cualquier grieta en esa serenidad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 5+3=8
+
+### [4] DM
+
+  6594 ms
+
+> Madame Valeriane no aparta la vista del reloj de arena, observando cómo el último grano de cristal cae con una lentitud exasperante. Su sonrisa permanece fija, como una máscara de porcelana perfectamente tallada, y el movimiento de sus manos es fluido y deliberado mientras acomoda un encaje de su manga.
+> —El interés es el motor de muchos descubrimientos, pero también el camino más corto hacia el arrepentimiento —comenta sin mirarte, manteniendo ese tono aterciopelado que no revela absolutamente nada. Su postura sigue siendo un bloque de calma absoluta, sin un solo músculo fuera de lugar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3265 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 420 — 333/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3368 ms
+
+> "El arrepentimiento es un lujo que no puedo permitirme, Madame. Prefiero hablar de intereses más... tangibles."
+> Me inclino ligeramente hacia adelante, tratando de captar cualquier detalle inusual en su postura o en el reloj de arena.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+3=11
+
+### [4] DM
+
+  7601 ms
+
+> Madame Valeriane ladea la cabeza ligeramente, y el ligero roce de la seda de su vestido es el único sonido que rompe el silencio. Sus ojos, gélidos y analíticos, se encuentran finalmente con los tuyos, evaluando la presión de tu inclinación con una indiferencia casi quirúrgica.
+> El reloj de arena es un objeto exquisito, de cristal soplado y madera oscura, pero el flujo de los granos es constante y previsible; no hay nada en su mecanismo ni en la rigidez de la postura de la mujer que sugiera un nerviosismo oculto o una señal secreta. La máscara de porcelana sigue intacta, impenetrable.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1771 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 421 — 334/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3488 ms
+
+> "Es un placer conocerla, Madame. No creo que alguien con su... gusto, se conforme con lo previsible."
+> Sostengo la mirada con una sonrisa ligera mientras busco cualquier detalle en su entorno que haya pasado por alto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 8+1=9
+
+### [4] DM
+
+  10198 ms
+
+> Madame Valeriane no parpadea. La comisura de sus labios se eleva apenas un milímetro, un gesto que no llega a ser una sonrisa, sino más bien la satisfacción de quien observa una pieza de ajedrez moviéndose exactamente como esperaba. El silencio se prolonga un instante más de lo socialmente aceptable, cargado de una elegancia gélida.
+> —El gusto, querido, es la capacidad de distinguir lo extraordinario de lo meramente costoso —responde con una voz aterciopelada y monocorde—. Y lo previsible suele ser el refugio de quienes carecen de imaginación.
+> Tus ojos recorren la estancia, pero la decoración es tan impecable y simétrica que no logras distinguir ninguna anomalía ni detalle que escape a la opulencia evidente del salón. Todo está en su sitio, perfectamente dispuesto para impresionar y, al mismo tiempo, mantener cualquier distancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3495 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 422 — 335/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4222 ms
+
+> "Me temo que mi imaginación es el único lujo que no he tenido que comprar, Madame. Y es precisamente lo que me hace apreciar lo... exquisito de su entorno."
+> Me acerco un paso más, manteniendo la sonrisa, mientras intento detectar cualquier rastro de nerviosismo o arrogancia oculta en su postura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 18+3=21
+
+### [4] DM
+
+  10205 ms
+
+> Madame Valeriane permanece inmóvil, pero el ligero movimiento de sus dedos sobre la tela de su vestido delata un ritmo preciso, casi mecánico. No hay rastro de nerviosismo en ella; su postura es la de alguien que posee el control absoluto de cada centímetro cuadrado de la estancia. Sin embargo, tras esa máscara de gélida cortesía, percibes una arrogancia profundamente arraigada, no basada en la riqueza, sino en la convicción de que ella posee conocimientos que tú, y cualquier otra persona en esa sala, jamás podríais comprender.
+> —La imaginación es una herramienta útil, siempre y cuando no se confunda con la fantasía —comenta ella, sosteniéndote la mirada con una intensidad que parece analizar no solo tus palabras, sino tus intenciones—. Pero me pregunto si su apreciación por lo exquisito es genuina, o si simplemente es el envoltorio de una curiosidad más... pragmática.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1954 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 423 — 336/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3960 ms
+
+> "Me halaga que haya notado mi pragmatismo. Digamos que tengo un gusto muy refinado por las cosas que otros consideran... invisibles."
+> Sostengo su mirada con una sonrisa ligera, intentando descifrar qué es exactamente ese conocimiento que la hace sentirse superior.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+3=17
+
+### [4] DM
+
+  8056 ms
+
+> La mirada de Madame Valeriane no flaquea, pero la comisura de sus labios se eleva en un gesto casi imperceptible, reconociendo el juego de palabras. El silencio se prolonga un instante más de lo socialmente aceptable, mientras ella parece sopesar el valor de tu respuesta.
+> Tras ese análisis, notas que su superioridad no proviene de un linaje noble ni de un tesoro oculto, sino de una familiaridad antinatural con los mecanismos del entorno. Hay una precisión matemática en su forma de observar y una confianza absoluta en que el mundo se rige por reglas que solo ella sabe leer; no te ve como un igual, sino como un sujeto interesante que ha demostrado tener una chispa de comprensión sobre la naturaleza de lo oculto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4067 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 424 — 337/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3337 ms
+
+> "Me halaga que encuentre mi chispa interesante, Madame. Pero el interés suele ser la antesala de un trato."
+> Le dedico mi sonrisa más encantadora mientras intento analizar si hay algún objeto o detalle en su vestimenta que delate esa precisión matemática.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 5+3=8
+
+### [4] DM
+
+  11700 ms
+
+> Madame Valeriane suelta una risa breve y seca, un sonido que recuerda al choque de dos piedras pulidas. Se reclina en su asiento con una elegancia gélida, cruzando los dedos sobre el regazo mientras te observa con una curiosidad renovada, como quien analiza una pieza de relojería que ha empezado a moverse por sí sola.
+> —Directo y pragmático. Me gusta —responde ella, manteniendo esa sonrisa enigmática—. El interés es, en efecto, una moneda de cambio muy valiosa en este salón.
+> Tu mirada recorre su atuendo buscando alguna pista, pero el conjunto es impecable y deliberadamente neutro. No hay amuletos geométricos, ni herramientas de medición, ni ningún detalle fuera de lugar que revele el origen de esa precisión casi mecánica en su comportamiento. Sus ropajes fluyen con naturalidad, ocultando cualquier secreto bajo capas de seda oscura.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1203 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 425 — 338/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3895 ms
+
+> "Me alegra que hablemos el mismo idioma, Madame. El tiempo es oro, pero la información es el diamante que lo corta."
+> Me inclino ligeramente hacia delante, tratando de captar cualquier detalle que haya pasado por alto en su postura o en el entorno inmediato.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 12+1=13
+
+### [4] DM
+
+  10906 ms
+
+> Madame Valeriane no se inmuta ante tu inclinación; permanece imperturbable, como una estatua de porcelana fina. A medida que agudizas la vista, notas que el salón está dispuesto con una simetría obsesiva: los candelabros, los cojines y hasta las cenizas en el cenicero parecen haber sido colocados siguiendo un patrón matemático exacto. 
+> —Una analogía elegante —comenta ella, y por primera vez, el brillo de sus ojos parece intensificarse—. Pero el diamante solo corta si se aplica la presión en el ángulo correcto. Dígame, ¿qué es exactamente lo que busca extraer de mi memoria, o prefiere que yo proponga el precio de mi silencio?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1825 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 426 — 339/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3746 ms
+
+> "Me gusta que hablemos el mismo idioma, Madame. El precio es un detalle que podemos ajustar según la calidad de la gema."
+> Sigo sonriendo mientras observo la disposición de los objetos del salón, buscando cualquier pista de su obsesión por el orden.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+0=2
+
+### [4] DM
+
+  6370 ms
+
+> Madame Valeriane arquea una ceja, manteniendo esa expresión gélida y perfecta mientras procesa tu respuesta. El silencio se prolonga un instante, cargado de una tensión calculada, mientras ella evalúa si tu sonrisa es una señal de confianza o un simple escudo.
+> Tus ojos recorren el salón, pero la simetría es tan absoluta que resulta hipnótica y confusa. No encuentras ninguna anomalía, ningún objeto fuera de lugar que revele un secreto o una debilidad; la disposición es impecable, un vacío de pistas donde el orden mismo es el único mensaje.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1543 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 427 — 340/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4631 ms
+
+> "Toda esa perfección es fascinante, Madame, pero me pregunto qué es lo que realmente intenta ocultar tras tanta simetría."
+> Sigo sosteniendo la mirada, intentando leer cualquier grieta en su composure.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+3=10
+
+### [4] DM
+
+  7476 ms
+
+> Madame Valeriane no parpadea. Su rostro permanece como una máscara de porcelana, imperturbable y lisa, sin que un solo músculo traicione una emoción o una duda ante tu insinuación. La luz de las lámparas se refleja en sus pupilas, pero no hay rastro de irritación ni de sorpresa; parece haber absorbido tu comentario y archivado en algún lugar donde no pueda perturbar su equilibrio.
+> —La simetría no oculta, querido; la simetría revela que quien domina el espacio, domina la situación —responde con una voz aterciopelada pero desprovista de calidez—. Me temo que busca grietas donde solo hay cimientos sólidos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1174 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 428 — 341/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3501 ms
+
+> "Cimientos sólidos, dice... pero hasta la piedra más dura tiene sus poros."
+> Sigo sonriendo y me acerco un paso más, intentando captar cualquier detalle en su postura o en el entorno que denote una debilidad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+3=10
+
+### [4] DM
+
+  6592 ms
+
+> Te acercas, reduciendo la distancia para escudriñar cada pliegue de su vestido y la rigidez de sus hombros. Madame Valeriane no retrocede ni un milímetro; se mantiene como una estatua de marfil, con las manos entrelazadas frente a ella en una calma absoluta.
+> A pesar de tu escrutinio, no hay un tic nervioso, ninguna gota de sudor en su sien ni un cambio en el ritmo de su respiración. El entorno, impecablemente ordenado, no ofrece ninguna pista: los objetos están exactamente donde deben estar y ella parece fundirse con la perfección geométrica de la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2434 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 429 — 342/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4597 ms
+
+> "Vuestra calma es casi sobrenatural, Madame. Me pregunto qué secretos guarda alguien que no conoce el nerviosismo."
+> Doy un paso atrás con una sonrisa ligera y busco algún objeto fuera de lugar o algún papel descuidado en su escritorio.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 9+0=9
+
+### [4] DM
+
+  8467 ms
+
+> Madame Valeriane esboza una sonrisa gélida, apenas un movimiento de los labios que no llega a sus ojos. "La disciplina es la única cura para el caos, querido. El nerviosismo es un lujo que quienes tenemos responsabilidades no podemos permitirnos". Su voz es suave, pero tiene la firmeza del acero.
+> Al echar la vista sobre el escritorio, solo encuentras superficies pulidas y objetos dispuestos con una precisión quirúrgica. Una pluma de ganso descansa exactamente paralela al borde de un tintero de cristal y los papeles están apilados en bloques perfectos, sin una sola esquina doblada ni una mancha de tinta que sugiera un descuido. No hay nada fuera de lugar; el orden es absoluto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1595 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 430 — 343/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3386 ms
+
+> "Tiene usted una disciplina admirable, Madame. Casi... intimidante."
+> Me inclino ligeramente hacia adelante, fingiendo admiración por el orden de su mesa mientras intento divisar algún papel que haya quedado parcialmente oculto bajo otro.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 11+1=12
+
+### [4] DM
+
+  7840 ms
+
+> Madame Valeriane arquea una ceja, satisfecha por el reconocimiento, aunque su expresión permanece imperturbable como el mármol. "La intimidación es un efecto secundario del orden, no el objetivo", responde con un tono gélido, mientras observa cada uno de tus movimientos con una atención depredadora.
+> Al inclinarte, tus ojos recorren la superficie impecable del escritorio. A pesar de tu esfuerzo por encontrar alguna fisura en su sistema, no logras divisar nada oculto; los papeles están tan perfectamente alineados y los objetos tan estratégicamente situados que no hay ni un milímetro de espacio donde un documento pudiera esconderse sin ser evidente. El orden es, efectivamente, absoluto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3717 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 431 — 344/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4479 ms
+
+> "Un orden tan absoluto resulta casi... hipnótico. Me pregunto qué es lo que tanto desea proteger con tal perfección."
+> Me enderezo lentamente, manteniendo la sonrisa, mientras trato de leer sus verdaderas intenciones tras esa máscara de mármol.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 11+3=14
+
+### [4] DM
+
+  8268 ms
+
+> Madame Valeriane no parpadea. Mantiene la mirada fija en ti, y por un instante, el silencio en la habitación se vuelve denso, casi tangible. No hay un gesto de nerviosismo, ni un leve movimiento de dedos que delate incomodidad ante tu pregunta; su compostura es una fortaleza inexpugnable.
+> Sin embargo, notas que su interés ha mutado. Ya no te observa simplemente como a un visitante o un subordinado, sino como a una pieza de ajedrez que acaba de hacer un movimiento inesperado. Hay una chispa de curiosidad analítica en sus ojos, una evaluación fría que sugiere que, aunque no ha revelado nada, ahora te considera un elemento variable y, por ende, digno de una vigilancia más estrecha.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1663 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 432 — 345/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3907 ms
+
+> "Solo soy un hombre curioso, Madame. Y la curiosidad, como bien sabe, suele ser la moneda más valiosa en salones como este."
+> Mantengo la sonrisa y trato de leer cualquier microexpresión en su rostro ahora que he captado su interés.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+3=5
+
+### [4] DM
+
+  7397 ms
+
+> Madame Valeriane sostiene la sonrisa, pero sus labios apenas se curvan, manteniendo una distancia gélida a pesar de la cortesía. No hay un solo músculo que traicione su pensamiento; su rostro es una máscara de porcelana perfectamente pulida que no devuelve ningún reflejo de sus intenciones. 
+> —La curiosidad es, efectivamente, una moneda valiosa —responde con una voz suave y monocorde—, siempre y cuando quien la gaste sepa exactamente cuánto saldo le queda en la cuenta antes de quedar en bancarrota.
+> Se reclina ligeramente en su asiento, manteniendo el contacto visual, pero su expresión permanece imperturbable, como un lago congelado bajo la luz de la luna.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1658 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 433 — 346/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3142 ms
+
+> "Me gusta jugar al límite, Madame. El riesgo es lo que hace que la ganancia sea dulce."
+> Sigo sosteniendo la mirada, intentando encontrar alguna grieta en esa máscara de porcelana.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+3=15
+
+### [4] DM
+
+  6698 ms
+
+> La mirada de Madame Valeriane no parpadea, sosteniéndose con una firmeza mineral frente a la tuya. No hay un rictus de sorpresa ni un destello de diversión ante tu declaración sobre el riesgo; la máscara de porcelana permanece intacta, imperturbable como una estatua de museo.
+> Sin embargo, al observar la rigidez de su postura y la precisión casi artificial de sus gestos, percibes que su calma no es natural, sino el resultado de un control férreo y consciente. No es que no sienta nada, es que ha entrenado cada fibra de su ser para que nada sea visible, ocultando sus emociones bajo capas de disciplina gélida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1518 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 434 — 347/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  42878 ms
+
+> "Me fascina esa disciplina. Dígame, Madame, ¿qué es exactamente lo que intenta proteger con tanto empeño?"
+> Me inclino ligeramente hacia ella, manteniendo la sonrisa, mientras intento detectar cualquier grieta en su compostura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+3=6
+
+### [4] DM
+
+  9946 ms
+
+> Madame Valeriane no se inmuta ante tu inclinación ni ante la pregunta. Sus ojos, gélidos y profundos, te recorren con una lentitud analítica, como si estuviera evaluando el peso de tu curiosidad antes de decidir si merece una respuesta. El silencio se prolonga un instante más de lo socialmente aceptable, cargado de una tensión invisible que ella sostiene sin el menor esfuerzo.
+> —La disciplina no es una protección, es un requisito —responde con una voz clara y monocorde, desprovista de cualquier matiz emocional—. Lo que se protege es el orden, y el orden es lo único que impide que el ruido ahogue la melodía.
+> Su expresión permanece como una superficie de agua congelada; no hay un temblor en sus manos, ni una dilatación de sus pupilas, ni un cambio en el ritmo de su respiración que delate cualquier vulnerabilidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2319 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 435 — 348/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3339 ms
+
+> "Una melodía muy pulcra, Madame. Pero hasta la partitura más perfecta tiene alguna nota oculta que solo el autor conoce."
+> Sostengo la mirada con una sonrisa ligera, intentando detectar cualquier grieta en su compostura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+3=7
+
+### [4] DM
+
+  7187 ms
+
+> Madame Valeriane no parpadea. Tu sonrisa parece deslizarse sobre ella sin encontrar ningún punto de anclaje, como el agua sobre el mármol. No hay un arqueo de cejas, ni una contracción en la comisura de sus labios; su rostro permanece como una máscara de porcelana, imperturbable y gélida.
+> —La curiosidad suele confundirse con la perspicacia, joven —sentencia ella, mientras el silencio vuelve a llenar el espacio entre ambos—. En mi mundo, las notas ocultas no son secretos, sino errores que ya han sido corregidos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1168 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 436 — 349/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  5439 ms
+
+> "Una corrección impecable, Madame. Me impresiona su rigor."
+> Sigo sonriendo, pero inclino la cabeza ligeramente, observando sus manos y su postura para detectar cualquier rastro de tensión.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+3=15
+
+### [4] DM
+
+  7758 ms
+
+> Madame Valeriane mantiene la espalda recta, casi rígida, y sus manos descansan sobre el regazo con una quietud absoluta. No hay dedos tamborileando, ni un ligero temblor en las muñecas; su control corporal es tan meticuloso como su discurso. 
+> Sin embargo, al observar la tensión de sus hombros, notas que no están relajados, sino contenidos. Hay una rigidez calculada en su postura, como si estuviera sosteniendo un peso invisible o manteniendo una guardia constante, ocultando bajo esa máscara de porcelana una vigilancia extrema.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4147 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 437 — 350/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3032 ms
+
+> "Me impresiona su compostura, Madame. Es una virtud rara en estos tiempos."
+> Me inclino ligeramente hacia delante, manteniendo una sonrisa amable mientras intento analizar qué es exactamente lo que intenta ocultar tras esa rigidez.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+3=7
+
+### [4] DM
+
+  14988 ms
+
+> Madame Valeriane esboza una sonrisa gélida, una curva de labios que no llega a alcanzar sus ojos. "La disciplina es la única herramienta que nos permite sobrevivir al caos, querido. Agradezco su observación, aunque la cortesía suele ser el disfraz preferido de quienes buscan algo a cambio".
+> A pesar de tu escrutinio, la máscara de la mujer permanece intacta. No logras descifrar la naturaleza de su tensión; su rigidez parece una extensión natural de su personalidad o un hábito tan arraigado que no deja fisuras por donde asombrar el motivo real de su vigilancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4888 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 438 — 351/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3807 ms
+
+> "Toda cortesía es una inversión, Madame. La cuestión es si el retorno merece el riesgo."
+> Suelto una risita ligera y me inclino un poco hacia ella, tratando de encontrar algún detalle descuido en su escritorio o en su persona.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 18+1=19
+
+### [4] DM
+
+  13320 ms
+
+> Madame Valeriane no se inmuta ante tu risita, manteniendo la espalda recta como una lanza, aunque sus dedos tamborilean un ritmo lento y preciso sobre la madera oscura del escritorio. Su mirada permanece anclada en la tuya, fría y evaluadora, mientras el silencio de la estancia se llena con el aroma a cera de vela y papel viejo.
+> Al inclinarte, tu mirada capta un detalle que ella ha intentado mantener fuera de la línea de visión directa: bajo un pesado pisapapeles de obsidiana, asoma la esquina de un pergamino doblado con urgencia. El papel está ligeramente arrugado y lleva el sello de lacre rojo, roto violentamente, de una casa noble que no pertenece a esta ciudad. Además, notas que el borde de su manga derecha está ligeramente deshilachado, un descuido impropio de alguien tan obsesionada con la disciplina.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1408 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 439 — 352/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4267 ms
+
+> "Toda esa disciplina es admirable, Madame, pero los detalles... los detalles son los que cuentan la verdadera historia."
+> Me enderezo lentamente, fingiendo que no he visto el pergamino, mientras intento analizar su expresión para ver si se ha dado cuenta de que lo he notado.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+3=12
+
+### [4] DM
+
+  10071 ms
+
+> Madame Valeriane no cambia el gesto; su rostro permanece como una máscara de porcelana, imperturbable y gélida. Los dedos que tamborileaban sobre la madera se detienen en seco, pero ella no desvía la mirada ni hace el menor movimiento para cubrir el pergamino que asoma bajo la obsidiana.
+> —Los detalles son el refugio de los curiosos y la perdición de los imprudentes —responde con una voz que corta el aire como una hoja de afeitar—. Dígame, ¿ha venido aquí a hacer un inventario de mi escritorio o tiene algo más sustancioso que ofrecer que observaciones sobre mi costura?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1296 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 440 — 353/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3647 ms
+
+> "Mis disculpas, Madame. Solo me fascinan las cosas que otros consideran irrelevantes".
+> Suelto una risita ligera y me inclino un poco más hacia adelante, intentando leer el contenido del pergamino sin tocarlo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+1=3
+
+### [4] DM
+
+  9654 ms
+
+> Madame Valeriane exhala un suspiro lento, una corriente de aire gélido que parece enfriar la habitación. Sus ojos se estrechan, observando el movimiento de tu cuerpo con una mezcla de hastío y una advertencia silenciosa. No retira el pergamino, pero su postura se vuelve rígida, como una cuerda a punto de romperse.
+> Desde tu ángulo, el papel es un borrón de tinta oscura y trazos apresurados. La inclinación no te aporta nada; las sombras del escritorio y la posición de su mano ocultan cualquier palabra legible, dejando el contenido del documento envuelto en un misterio absoluto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  25157 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 441 — 354/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3443 ms
+
+> "No quise importunarla, Madame, solo que mi curiosidad es a veces más rápida que mis modales."
+> Retrocedo un paso con una sonrisa disculpante, mientras intento captar cualquier detalle del sello o el material del papel.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 5+1=6
+
+### [4] DM
+
+  9172 ms
+
+> Madame Valeriane no devuelve la sonrisa. Se mantiene inmóvil, como una estatua de porcelana fría, mientras el silencio se prolonga unos segundos más de lo socialmente aceptable. Sus dedos, largos y pálidos, se cierran con una lentitud deliberada sobre el borde del pergamino, ocultando cualquier rastro de tinta o relieve.
+> —La curiosidad es una virtud en los eruditos, joven, pero un vicio en los invitados —sentencia con una voz que suena a cristal roto—. Espero que sus modales alcancen a su velocidad antes de que nuestra conversación termine.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2730 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 442 — 355/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3834 ms
+
+> "Mis disculpas, Madame. A veces el entusiasmo por la belleza de sus pertenencias me hace olvidar el protocolo."
+> Inclino la cabeza con una sonrisa apesadumbrada, mientras intento vislumbrar cualquier detalle del pergamino que haya quedado expuesto antes de que lo cubriera.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+1=17
+
+### [4] DM
+
+  9791 ms
+
+> Madame Valeriane mantiene la mirada fija, imperturbable, aunque el ligero arqueo de una ceja sugiere que el halago ha mitigado, al menos superficialmente, su irritación. El aire en la estancia permanece denso, cargado con el aroma a incienso antiguo y papel viejo.
+> Justo antes de que sus dedos sellaran el acceso al documento, el movimiento brusco dejó escapar un fragmento del contenido: una serie de glifos entrelazados que no parecen pertenecer a ningún alfabeto conocido, dibujados con una tinta de un azul eléctrico que parece vibrar levemente sobre el pergamino amarillento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9392 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · public_status_given
+  ✗ campo fuera de lista blanca: character.knowledge
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 443 — 356/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4552 ms
+
+> "Esos trazos son fascinantes, Madame. Jamás había visto una caligrafía tan... vibrante."
+> Me inclino ligeramente hacia adelante, intentando memorizar la forma de esos glifos antes de que desaparezcan por completo.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Arcanos: 19+0=19
+
+### [4] DM
+
+  14947 ms
+
+> Madame Valeriane cierra el documento con un chasquido seco, pero la imagen de los glifos permanece grabada en tu mente. El azul eléctrico no es una tinta convencional; reconoces la firma visual de la magia de resonancia, un tipo de escritura diseñada no para ser leída, sino para vibrar en sintonía con la voz de quien la invoca. Los trazos entrelazados forman un patrón de flujo que sugiere que el texto es, en realidad, una partitura mística cifrada.
+> La mujer te observa en silencio, evaluando tu reacción. El arqueo de su ceja se acentúa, transformándose en una expresión de cautela.
+> —La curiosidad es una virtud peligrosa en manos de quien no sabe qué preguntas hacer, joven —sentencia con voz gélida, aunque no retira la mano del pergamino, manteniéndolo fuera de tu alcance.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  82827 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 444 — 357/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3776 ms
+
+> "Una advertencia muy prudente, Madame. Pero es que me fascinan las melodías que no se pueden cantar."
+> Le dedico mi mejor sonrisa mientras intento notar cualquier detalle del pergamino que ella no esté cubriendo con la mano.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+1=17
+
+### [4] DM
+
+  8205 ms
+
+> Madame Valeriane no devuelve la sonrisa; sus labios permanecen apretados en una línea fina mientras sostiene la mirada, aunque el tono gélido de su voz se suaviza ligeramente ante el comentario. A pesar de su postura defensiva, el ángulo desde el que observas permite que tu vista capte lo que ella intenta ocultar: el pergamino no es de cuero común, sino de una piel translúcida y pálida que parece emitir un tenue fulgor propio.
+> En el borde superior, justo donde sus dedos no llegan a cubrir, distingues un sello de cera negra con la impronta de una raíz entrelazada en un círculo. Bajo el sello, una serie de notas musicales escritas en el mismo azul eléctrico parecen desplazarse lentamente sobre la superficie, como si el texto estuviera vivo y fluyera siguiendo un ritmo invisible.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  33834 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.knowledge
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 445 — 358/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4247 ms
+
+> "Parece que guarda usted un secreto fascinante, Madame. Me pregunto qué melodía es capaz de bailar sobre el papel."
+> Intento echar un vistazo más detallado al sello y a las notas musicales mientras mantengo la conversación.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 11+0=11
+
+### [4] DM
+
+  5740 ms
+
+> Madame Valeriane reacciona al instante, encogiendo los hombros y pegando el pergamino contra su pecho con un movimiento brusco. Sus ojos se entrecierran, reflejando una mezcla de irritación y cautela, mientras el fulgor azul del papel desaparece bajo el pliegue de su vestido.
+> —La curiosidad es una virtud peligrosa en manos de quien no sabe escuchar, forastero —sentencia con voz cortante, recuperando la rigidez de su postura—. Hay melodías que no están diseñadas para ser leídas, sino para ser temidas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2945 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 446 — 359/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3741 ms
+
+> "Mis disculpas, Madame. No pretendía incomodar, solo me dejé llevar por la belleza de ese brillo."
+> Hago una reverencia exagerada y, mientras me levanto, intento echar un vistazo rápido a sus bolsillos o pliegues del vestido para ver dónde ha guardado el pergamino.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 19+1=20
+
+### [4] DM
+
+  11020 ms
+
+> Madame Valeriane suaviza ligeramente la comisura de los labios ante la reverencia, aunque su mirada permanece gélida y analítica. No acepta las disculpas con calidez, pero el gesto parece haber aplacado la irritación inmediata de su postura, permitiéndole relajarse apenas unos milímetros.
+> Mientras te levantas, tu vista capta el movimiento preciso: el pergamino no ha sido guardado en un bolsillo, sino que ha deslizado el papel en una funda de cuero estrecha y oculta, cosida directamente al forro interior de su vestido, justo en el costado izquierdo, bajo el pliegue de la seda. El relieve del cilindro es apenas perceptible, pero la ubicación es exacta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  23672 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta madame_valeriane · npc.knowledge = Kestra ha intentado localizar el pergamino en su vestido
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 447 — 360/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3513 ms
+
+> "Es un placer haber aclarado este malentendido, Madame. No quisiera robarle más tiempo del necesario."
+> Me acerco un paso más para despedirme con una última inclinación, intentando pasar mi mano rozando el costado izquierdo de su vestido.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 9+2=11
+
+### [4] DM
+
+  7435 ms
+
+> Al inclinarte, tu mano se desliza hacia el costado de la seda, pero el movimiento es torpe. El roce es demasiado evidente y tus dedos chocan contra la tela con un golpe seco que no pasa desapercibido.
+> Madame Valeriane se tensa instantáneamente, dando un paso brusco hacia atrás para romper el contacto. Sus ojos se entrecierran y la comisura de sus labios desaparece, recuperando una expresión de gélida hostilidad.
+> —Tenga cuidado con sus modales, —sentencia con una voz que corta el aire—, pues la línea entre la cortesía y la impertinencia es muy delgada. No vuelva a tocarme.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  14925 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · ideal_violated
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 448 — 361/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2888 ms
+
+> "Mil disculpas, Madame. Un tropiezo lamentable, mi torpeza no está a la altura de su elegancia."
+> Hago una reverencia exagerada y profunda para cubrir mi retirada y ocultar mi expresión.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 18+4=22
+
+### [4] DM
+
+  8881 ms
+
+> La rigidez de los hombros de Madame Valeriane se suaviza imperceptiblemente ante la teatralidad del gesto. Sus ojos, que hace un instante eran dagas de hielo, recorren la profundidad de la reverencia con una mezcla de escepticismo y una pizca de diversión contenida. El aire tenso que rodeaba a la mujer se disipa, aunque mantiene una distancia prudencial, observando cada movimiento con cautela.
+> —Vaya... parece que la torpeza es el único rasgo en el que su modestia es genuina —responde, y aunque su tono sigue siendo distante, la hostilidad ha dado paso a una condescendencia casi elegante. Cruza las manos frente a ella, recuperando su postura imperturbable—. Levántese. Ya ha dejado claro que sabe cómo pedir perdón; ahora demuéstreme que sabe cómo ser útil.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  15016 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 449 — 362/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4170 ms
+
+> "No me haga esperar para descubrirlo; soy sorprendentemente eficiente cuando el incentivo es el adecuado."
+> Me levanto con lentitud, manteniendo una sonrisa ligera y estudiada mientras busco algún objeto de valor o documento descuidado sobre su mesa.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 8+1=9
+
+### [4] DM
+
+  8626 ms
+
+> Madame Valeriane arquea una ceja, y una comisura de sus labios se eleva en un gesto que no llega a ser una sonrisa, sino más bien el reconocimiento de un juego de intereses. Se mantiene inmóvil, dejando que el silencio pese unos segundos mientras observa la confianza con la que te incorporas, evaluando si esa eficiencia que presumes es una herramienta real o simplemente una máscara bien puesta.
+> Tu mirada recorre la superficie de la mesa, pero el escritorio es un monumento al orden quirúrgico. No hay papeles fuera de lugar, ni monedas olvidadas, ni notas descuidadas; solo una superficie de madera oscura y pulida que refleja la luz de la estancia y la figura imperturbable de la mujer, que no ha apartado la vista de ti ni un solo instante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2814 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 450 — 363/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4034 ms
+
+> "Admira el orden, Madame. Es casi un pecado que yo sea la única imperfección en esta habitación."
+> Le dedico mi sonrisa más encantadora mientras intento leer sus intenciones detrás de esa expresión imperturbable.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 18+3=21
+
+### [4] DM
+
+  9626 ms
+
+> Madame Valeriane no parpadea, pero el ligero movimiento de sus dedos sobre la madera delata que tu comentario ha causado un impacto. No es una risa, sino una sutil relajación de los hombros; reconoce el valor de la audacia cuando viene acompañada de una presencia imperturbable.
+> A través de su mirada analítica y la rigidez calculada de su postura, percibes que no te ve como una amenaza, sino como una curiosidad. Sus intenciones no son hostiles, pero tampoco son generosas; te está evaluando como quien examina una pieza de joyería antigua para determinar si es auténtica o una imitación costosa. Hay una paciencia profesional en ella, alguien que está acostumbrada a manejar hilos invisibles y que espera que seas tú quien revele primero sus cartas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  18984 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 451 — 364/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3748 ms
+
+> "Me halaga que me encuentre curioso, Madame, pero la curiosidad suele ser un vicio caro. Prefiero hablar de inversiones mutuas."
+> Mantengo la sonrisa mientras inclino ligeramente la cabeza, tratando de leer qué es lo que realmente busca en mí.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 19+3=22
+
+### [4] DM
+
+  9993 ms
+
+> Madame Valeriane deja que el silencio se prolongue un instante, permitiendo que el peso de tus palabras flote en el aire. Sus dedos dejan de tamborilear y se entrelazan con una elegancia gélida. Una chispa de genuino interés cruza sus ojos; la mención de "inversiones mutuas" ha sido la llave correcta para abrir una rendija en su armadura de cortesía.
+> Al observar la tensión de su mandíbula y la forma en que sus pupilas se dilatan levemente, percibes que su neutralidad es una máscara táctica. No busca un empleado ni un aliado desinteresado, sino una herramienta específica, alguien capaz de moverse en espacios donde ella no puede o no quiere dejar huellas. Hay una urgencia contenida tras su calma, una necesidad que no ha revelado pero que la vuelve vulnerable a una propuesta que sea lo suficientemente lucrativa y discreta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6565 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 452 — 365/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3317 ms
+
+> "Me halaga que comprenda mi valor, Madame. Pero para que el riesgo sea aceptable, el beneficio debe serlo también."
+> Me inclino ligeramente hacia delante, manteniendo la sonrisa, e intento leer qué es exactamente lo que la urge tanto.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+3=23  CRÍTICO
+
+### [4] DM
+
+  9710 ms
+
+> Madame Valeriane no parpadea, pero el rictus de su sonrisa se congela un milisegundo. Al inclinarte, captas el aroma a jazmín y tinta vieja que emana de ella, pero es el lenguaje de su cuerpo lo que traiciona la máscara. Notas un ligero temblor en el dedo anular de su mano izquierda y una mirada fugaz, casi imperceptible, hacia un pequeño reloj de arena sobre su escritorio cuya arena cae con una lentitud antinatural. 
+> No es solo ambición lo que la impulsa; es un miedo gélido y calculado. Valeriane no teme perder dinero, sino perder el control sobre algo que ya ha empezado a escapársele de las manos. Hay una desesperación sofisticada en la forma en que sostiene el aire, como si estuviera contando los segundos para un evento inminente que no puede detener, y tú eres la única variable impredecible que podría alterar ese resultado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7179 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 453 — 366/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3261 ms
+
+> "Parece que el tiempo corre en su contra, Madame. Y yo soy un hombre muy flexible con mis honorarios si el servicio es... urgente."
+> Sigo inclinado, manteniendo el contacto visual mientras intento analizar el reloj de arena.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+3=23  CRÍTICO
+
+### [4] DM
+
+  14929 ms
+
+> El aire entre ambos se vuelve denso, cargado con el aroma a jazmín que ahora parece asfixiante. Al observar el reloj de arena, notas que los granos no caen por gravedad, sino que vibran, suspendiéndose un instante antes de descender, como si el tiempo mismo estuviera siendo succionado por una fuerza externa. No es un adorno; es un cronómetro vinculado a algo vivo, y la arena que queda es alarmantemente poca. El temblor en el dedo de Valeriane se intensifica y su máscara de compostura se agrieta, revelando una vulnerabilidad cruda: no busca un empleado, busca un milagro antes de que el último grano caiga.
+> Valeriane exhala un suspiro tembloroso y se reclina en su silla, rindiéndose a la presión de tu mirada. Su voz ha perdido la estudiada ligereza y ahora suena rasposa, casi urgente.
+> —Flexible, dice... —murmura, mientras sus ojos saltan una última vez al reloj—. Olvide los honorarios estándar. Si puede recuperar lo que se ha perdido antes de que ese reloj se vacíe, le daré acceso a los archivos privados de la familia y una suma que haría que cualquier contrato previo pareciera una limosna. Pero sea rápido; el tiempo no es lo único que se agota.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  20969 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · bribe_offered
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 454 — 367/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4246 ms
+
+> "Acceso a los archivos y una suma generosa... ahora sí estamos hablando el mismo idioma."
+> Me inclino hacia delante, manteniendo una sonrisa tranquilizadora pero calculadora, y trato de analizar la desesperación en su rostro para saber cuánto más puedo apretar.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+3=12
+
+### [4] DM
+
+  6267 ms
+
+> Valeriane no se inmuta ante tu sonrisa, pero sus pupilas se dilatan y el ritmo de su respiración se vuelve errático. Se mantiene rígida en el asiento, apretando los apoyabrazos con tanta fuerza que sus nudillos blanquean, mientras intenta recuperar esa máscara de frialdad que la caracteriza.
+> —No confunda mi urgencia con debilidad —responde con un hilo de voz, aunque no retira la mirada—. El trato está sobre la mesa. Los archivos y el oro serán suyos en cuanto la Voz regrese. No hay más espacio para negociaciones, solo para resultados.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3447 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 455 — 368/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3337 ms
+
+> "La urgencia es precisamente lo que hace que un trato sea flexible, querida."
+> Me inclino un poco hacia ella, bajando el tono de voz, y trato de leer qué es exactamente lo que la tiene tan nerviosa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+3=4  PIFIA
+
+### [4] DM
+
+  7194 ms
+
+> Valeriane tensa la mandíbula y desvía la mirada un instante, interpretando tu inclinación y el tono confidencial como un gesto de condescendencia intolerable. La cercanía, lejos de revelarte sus miedos, solo logra que percibas el fuerte aroma a jazmín y polvo antiguo que emana de sus ropas, mientras ella se endereza bruscamente para recuperar la distancia.
+> —Su arrogancia es casi tan agotadora como su falta de pragmatismo —espeta, recuperando la firmeza en la voz—. No hay flexibilidad donde hay necesidad, solo hay un contrato. O acepta los términos ahora mismo, o buscaré a alguien que no necesite jugar con las palabras para entender una orden sencilla.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  17035 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · ideal_violated
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 456 — 369/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4226 ms
+
+> "No se confunda, mi querida Valeriane. No juego con las palabras, las pulo para que el trato sea... mutually beneficioso."
+> Suelto una risita ligera y doy un paso hacia atrás, manteniendo la sonrisa mientras trato de leer su verdadera disposición.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+3=17
+
+### [4] DM
+
+  8091 ms
+
+> Valeriane no devuelve la sonrisa; sus labios se aprietan en una línea fina y gélida mientras observa el paso atrás. Sin embargo, el ligero temblor en la comisura de su boca y la forma en que sus dedos se cierran con fuerza sobre la tela de su vestido revelan que su fachada de acero tiene fisuras. No es desprecio lo que domina su expresión, sino una urgencia mal disfrazada; hay una ansiedad latente en su postura, como si el tiempo fuera un enemigo que la acosa y tu vacilación le resultara insoportable.
+> —El beneficio mutuo es una cortesía que no puedo permitirme en este momento —sentencia, aunque el tono ya no es tan cortante, sino que suena exhausto—. Firme el documento. Ahora.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3227 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 457 — 370/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  14979 ms
+
+> "Vaya, parece que el tiempo corre en su contra. Eso hace que mi firma sea mucho más valiosa, ¿no cree?"
+> Suelto una risita ligera y dejo la pluma sobre la mesa sin tocar el papel.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+3=12
+
+### [4] DM
+
+  9872 ms
+
+> Madame Valeriane exhala un suspiro lento, cerrando los ojos por un instante mientras el sonido de la pluma chocando contra la madera resuena en el silencio de la estancia. Al abrirlos, su mirada es gélida, pero la tensión en sus hombros ha aumentado; el ligero temblor de sus manos es ahora más evidente, delatando que el control que intenta ejercer sobre la situación es un hilo delgado a punto de romperse.
+> —Su percepción es aguda, pero su sentido de la oportunidad es lamentable —responde con una voz que vibra por la contención—. No confunda mi urgencia con desesperación, ni mi falta de tiempo con debilidad.
+> En su rostro no hay rastro de la sorpresa que esperaba provocar; en su lugar, hay una resignación amarga. Se mantiene rígida, esperando, aunque el rítmico golpeteo de uno de sus dedos sobre la mesa delata que la espera le resulta físicamente dolorosa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4901 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 458 — 371/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3913 ms
+
+> "La desesperación es un motor maravilloso, Madame, y yo soy un hombre que sabe aprovechar el impulso."
+> Sigo observando el temblor de sus manos mientras me inclino ligeramente hacia adelante, buscando cualquier otro signo de debilidad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+3=5
+
+### [4] DM
+
+  6224 ms
+
+> Madame Valeriane tensa la mandíbula y deja de golpear la mesa, cerrando los puños con fuerza sobre la madera para ocultar el temblor. Una pequeña chispa de irritación cruza sus ojos, pero no se mueve ni un milímetro, manteniendo una postura glacial que intenta anular cualquier ventaja que el acercamiento pueda otorgar.
+> —El impulso suele llevar a los hombres a cometer errores costosos, o a descubrir que el motor que los movía era, en realidad, una trampa —sentencia con un tono seco, mientras sostiene la mirada sin parpadear.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6275 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 459 — 372/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3022 ms
+
+> "Las trampas son fascinantes, Madame, sobre todo cuando uno sabe dónde están los resortes."
+> Sostengo la mirada con una sonrisa ligera y trato de leer su verdadera reacción tras esa máscara de hielo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+3=4  PIFIA
+
+### [4] DM
+
+  7201 ms
+
+> Madame Valeriane no se inmuta ante la sonrisa, pero el silencio que sigue a las palabras se vuelve denso, casi asfixiante. Sus ojos se entrecierran ligeramente y, por un instante, la rigidez de su postura parece transformarse en una superioridad absoluta, como si acabara de confirmar una sospecha decepcionante sobre la naturaleza del interlocutor.
+> —La fascinación es el primer síntoma de la ingenuidad —responde ella, y su voz ahora suena más fría que antes, desprovista de cualquier rastro de duda—. Creer que se puede leer el mecanismo desde fuera es, precisamente, el resorte que cierra la trampa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3400 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 460 — 373/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3417 ms
+
+> "La ingenuidad es un lujo que no puedo permitirme, Madame, pero la curiosidad... esa es una inversión."
+> Sostengo la mirada mientras busco algún detalle en su ropa o en su escritorio que sugiera un punto débil o un secreto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+1=2  PIFIA
+
+### [4] DM
+
+  9405 ms
+
+> Madame Valeriane arquea una ceja, sosteniendo la mirada con una calma glacial que hace que la réplica sobre la inversión suene vacía en el aire. No hay rastro de debilidad en su porte; al contrario, su silencio se siente como una pared de mármol frente a la cual cualquier intento de análisis resulta inútil.
+> Al intentar escudriñar su entorno en busca de alguna fisura, la vista se nubla por un instante. El brillo de un candelabro o el reflejo de un espejo te distrae bruscamente, obligándote a parpadear y perdiendo por completo el hilo de la observación. En ese breve lapsus, te das cuenta de que te has quedado mirando fijamente un punto irrelevante de su vestimenta, dejando que el silencio se prolongue de una manera incómoda y torpe.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3780 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 461 — 374/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3286 ms
+
+> "Perdone, Madame. Me he distraído con el exquisito detalle de su vestido, es una pieza verdaderamente singular."
+> Suelto una risa ligera para romper la tensión y recupero la compostura con una sonrisa.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 16+4=20
+
+### [4] DM
+
+  9125 ms
+
+> La expresión gélida de Madame Valeriane se fragmenta. El músculo de su mejilla se relaja y una sonrisa tenue, casi imperceptible pero genuina, curva sus labios mientras desliza una mano enguantada sobre la seda de su falda. El muro de mármol se convierte en una puerta entornada; el aire en la estancia, antes pesado y asfixiante, recupera su fluidez.
+> —Tiene usted un ojo clínico para la elegancia, querido —responde ella, con un tono que ha perdido la aspereza y ha ganado una nota de curiosidad—. Es una pieza importada de las cortes del sur, aunque admito que pocos saben apreciar el trabajo de encaje que esconde. Veo que, además de sus... ambiciones, posee modales.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  21795 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 462 — 375/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4123 ms
+
+> "La elegancia es un lenguaje que domino casi tan bien como el de los negocios, Madame."
+> Me inclino levemente, manteniendo la sonrisa, mientras intento notar si hay algún objeto de valor o algún documento olvidado sobre la mesa cercana.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 18+1=19
+
+### [4] DM
+
+  9363 ms
+
+> Madame Valeriane suelta una risita seca, un sonido breve que denota una aprobación cautelosa. Se desplaza un paso hacia el centro de la estancia, dejando que el aroma a jazmín y polvo antiguo la preceda mientras observa los movimientos del interlocutor con una mirada evaluadora.
+> Sobre la mesa de caoba, junto a un tintero de plata, descansa un sobre de papel pergamino sellado con una cera carmesí que lleva grabado un emblema: un roble entrelazado con una llave. El sobre está ligeramente desplazado, como si hubiera sido consultado hace instantes y dejado allí con prisa, revelando una esquina del contenido donde se lee, en una caligrafía apresurada, la palabra *"Entrega"*.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  37855 ms · 1 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+  ✓ creación item: sobre de papel pergamino
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item sobre de papel pergamino
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 463 — 376/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  47434 ms
+
+> "Es un placer conocerla, Madame Valeriane. Tiene usted un gusto exquisito para la decoración".
+> Mientras hablo y mantengo el contacto visual, intento deslizar el sobre hacia mi manga con un movimiento fluido.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 17+2=19
+
+### [4] DM
+
+  10403 ms
+
+> Madame Valeriane arquea una ceja, complacida por el cumplido, y comienza a responder con una sonrisa tenue que apenas llega a sus ojos. "La belleza es la única moneda que no se devalúa con el tiempo, querido mío", comenta mientras gira levemente la cabeza para observar un jarrón de porcelana en el extremo opuesto de la habitación.
+> En ese instante de distracción, el pergamino se desliza sin ruido sobre la caoba y desaparece en la profundidad de la manga. El movimiento es imperceptible, fundiéndose con el ritmo de la conversación, y el espacio vacío sobre la mesa queda camuflado por la sombra del tintero de plata.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  20225 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = sobre de papel pergamino
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5529: Kestra.inventory = sobre de papel pergamino
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 464 — 377/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3461 ms
+
+> "Una filosofía fascinante, Madame. Me pregunto qué otras joyas guarda usted que sean así de imperecederas."
+> Mantengo la sonrisa y me inclino ligeramente hacia adelante, intentando leer su lenguaje corporal para ver si ha notado el vacío en la mesa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+3=23  CRÍTICO
+
+### [4] DM
+
+  14919 ms
+
+> Madame Valeriane sostiene la mirada, manteniendo esa sonrisa gélida y perfecta. Sin embargo, el éxito de tu observación revela una grieta en su máscara: un ligero tensado en los músculos de su mandíbula y un parpadeo casi imperceptible, demasiado lento para ser natural. Sus dedos, que reposan sobre la seda de su vestido, se cierran en un puño mínimo, una reacción instintiva de posesión que delata que es plenamente consciente de que el pergamino ya no está sobre la mesa.
+> "Joyas, dice...", murmura ella, y el tono de su voz ha descendido una octava, adquiriendo un matiz de acero. No se mueve para recuperar el objeto ni hace un escándalo; en su lugar, inclina la cabeza con una curiosidad depredadora, evaluando ahora no tu cortesía, sino tu audacia. "Me temo que las piezas más valiosas suelen ser también las más peligrosas de tocar sin permiso".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  25293 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta madame_valeriane · npc.knowledge = Kestra ha robado el pergamino de la mesa
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 465 — 378/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2427 ms
+
+> "El peligro es precisamente lo que hace que una pieza sea irresistible, Madame."
+> Sigo manteniendo la sonrisa mientras deslizo el pergamino más profundamente en mi ropa.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 15+4=19
+
+### [4] DM
+
+  20386 ms
+
+> La tensión en el aire se vuelve casi tangible, una cuerda vibrando justo antes de romperse. Madame Valeriane observa el movimiento del pergamino desapareciendo bajo la tela, y durante un segundo el silencio es absoluto. Sin embargo, la audacia de la respuesta parece activar un interruptor en ella; la rigidez de su mandíbula se relaja y una risa seca, breve y genuinamente sorprendida, escapa de sus labios.
+> "Vaya... parece que he subestimado la calidad de la compañía que atrae este evento", dice, y aunque su mirada sigue siendo afilada, la hostilidad se transforma en una fascinación fría. Se recuesta en su asiento, cruzando las piernas con una elegancia calculada, mientras el acero de su voz se suaviza hacia un tono de complicidad peligrosa. "Me gusta el riesgo, pero me gusta aún más el talento. Digamos que hemos pasado la etapa de las presentaciones formales. Ahora, hablemos de qué es exactamente lo que busca alguien con tanta... hambre de peligro".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  18486 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 466 — 379/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4593 ms
+
+> "Busco lo mismo que cualquier persona con buen gusto, Madame: una oportunidad que sea tan lucrativa como emocionante."
+> Le devuelvo la sonrisa, manteniendo el pergamino bien oculto, e intento analizar qué es lo que realmente le interesa de mí.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+3=6
+
+### [4] DM
+
+  9749 ms
+
+> Madame Valeriane sostiene la mirada, manteniendo esa sonrisa gélida que no llega a sus ojos. Sus dedos tamborilean rítmicamente sobre el brazo de la silla, un gesto mecánico que contrasta con la quietud del resto de su cuerpo.
+> Al intentar descifrar sus intenciones, solo percibes una máscara de cortesía profesional y un control absoluto sobre sus emociones. No hay una grieta en su postura ni un titubeo en su expresión que te permita vislumbrar qué es lo que realmente busca o qué piensa de ti en este momento; se mantiene como un enigma cerrado, observándote con la curiosidad de quien analiza una pieza de ajedrez recién colocada en el tablero.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4385 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 467 — 380/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3118 ms
+
+> "Es fascinante cómo algunos logran mantener esa compostura. Me pregunto qué secretos guarda alguien que no permite que ni una sola pestaña tiemble."
+> Me inclino ligeramente hacia adelante, buscando romper su espacio personal con una sonrisa cómplice.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 5+4=9
+
+### [4] DM
+
+  10494 ms
+
+> Madame Valeriane no retrocede ni un milímetro ante tu avance, manteniendo la distancia exacta que la etiqueta dicta. Su sonrisa no flaquea, pero el tamborileo de sus dedos se detiene en seco, congelando el movimiento. Te observa con una calma imperturbable, como si tu intento de complicidad fuera un experimento social curioso pero predecible.
+> —La compostura no es un secreto, querido, es una herramienta —responde con una voz aterciopelada y distante—. Y las herramientas solo se muestran cuando hay un trabajo que realizar. Me pregunto si usted es el instrumento adecuado para la tarea que tengo en mente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7454 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 468 — 381/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3139 ms
+
+> "Me gusta pensar que soy el instrumento más versátil de su colección, Madame. Solo necesito saber qué pieza falta en su tablero."
+> Me inclino levemente, manteniendo la sonrisa, mientras intento descifrar qué es exactamente lo que busca.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+3=12
+
+### [4] DM
+
+  12239 ms
+
+> Madame Valeriane sostiene la mirada, y por un instante, el silencio se vuelve denso, cargado de una expectación calculada. Su expresión es una máscara de porcelana perfecta; no hay un tic nervioso, ni una dilatación de pupilas, ni un cambio en la cadencia de su respiración que traicione sus intenciones. Se limita a evaluarte, como quien analiza la calidad del acero de una hoja antes de decidir si es apta para el corte.
+> —La versatilidad es una virtud, siempre que no se confunda con la falta de enfoque —comenta, recuperando el tamborileo pausado de sus dedos sobre la superficie de madera—. El tablero es amplio y las piezas son escasas, pero para hablar de vacíos, primero debo saber si usted es capaz de llenar el espacio que yo determine.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4719 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 469 — 382/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4403 ms
+
+> "Me adapto a cualquier espacio, Madame, especialmente a aquellos que otros consideran imposibles de llenar."
+> Le dedico mi sonrisa más convincente mientras trato de leer cualquier rastro de debilidad o deseo oculto tras su máscara.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+3=10
+
+### [4] DM
+
+  8829 ms
+
+> Madame Valeriane mantiene su postura imperturbable. Tu sonrisa parece deslizarse sobre ella como el agua sobre el mármol, sin encontrar ninguna grieta donde anclarse ni provocar la más mínima reacción. No hay un parpadeo fuera de tiempo ni un ajuste en su compostura que sugiera que tu confianza la haya descolocado o impresionado.
+> —La confianza es un lenguaje común, pero a menudo es el ruido que oculta la incapacidad —responde ella, con una voz gélida y precisa—. Las palabras son fáciles de moldear; los resultados, en cambio, son tercos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7882 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 470 — 383/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  14699 ms
+
+> "Touché, Madame. Me gustan los retos tercos."
+> Sigo manteniendo la sonrisa, pero inclino la cabeza con curiosidad, observando sus manos y su postura en busca de cualquier signo de tensión.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+3=17
+
+### [4] DM
+
+  12486 ms
+
+> Mientras inclinas la cabeza, tu mirada se clava en los detalles. Madame Valeriane permanece rígida, pero notas que sus dedos, aunque quietos sobre la superficie, ejercen una presión constante y deliberada sobre la tela de su vestido; no es nerviosismo, es un control férreo, casi mecánico. Hay una tensión calculada en sus hombros que delata que no está relajada, sino en un estado de alerta máxima, como una cuerda tensada al límite que se niega a vibrar.
+> Ella sostiene tu mirada, imperturbable, mientras el silencio se prolonga entre ambos. Sus ojos no se desvían ni un milímetro, analizando tu curiosidad con la misma frialdad con la que diseccionaría un informe técnico.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3288 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 471 — 384/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  6898 ms
+
+> "Es fascinante ese control que posee, Madame. Casi parece que estuviera ocultando un secreto que le quema la piel."
+> Sostengo la mirada con una sonrisa ladeada, intentando leer qué es exactamente lo que intenta contener con tanta fuerza.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+3=11
+
+### [4] DM
+
+  12202 ms
+
+> Madame Valeriane no parpadea. La comisura de sus labios apenas se mueve, pero no llega a formar una sonrisa; es más bien un gesto de reconocimiento frío ante el intento de provocación. Sus dedos siguen presionando la tela del vestido, manteniendo esa rigidez imperturbable que parece blindar su postura.
+> —La fascinación es una herramienta peligrosa, querido —responde con una voz gélida y modulada—. A menudo nos hace ver patrones donde solo hay disciplina, o secretos donde solo hay decoro.
+> A pesar de su respuesta, no retira la mirada ni suaviza la tensión de sus hombros, permaneciendo como una estatua de porcelana que se niega a revelar cualquier grieta en su superficie.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2311 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 472 — 385/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4775 ms
+
+> "La disciplina es admirable, Madame, pero el decoro suele ser la máscara más pesada de cargar."
+> Me acerco un paso más, reduciendo la distancia personal para intentar romper esa compostura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+3=17
+
+### [4] DM
+
+  12659 ms
+
+> Al acortar la distancia, el aroma a jazmín seco y polvo antiguo que emana de sus ropajes se vuelve casi asfixiante. Madame Valeriane no retrocede ni un milímetro; permanece anclada al suelo, obligándote a sostenerle la mirada desde una proximidad incómoda. Sin embargo, en ese espacio reducido, la máscara de porcelana flaquea.
+> Notas que, a pesar de su voz gélida, el ritmo de su respiración se ha vuelto superficial y rápido. Sus dedos, aunque siguen presionando la tela del vestido, han comenzado a apretarla con una fuerza excesiva, creando pliegues profundos y erráticos en la seda. Hay una chispa de genuina inquietud en sus pupilas, un destello de vulnerabilidad que contrasta violentamente con su discurso de disciplina.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1343 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 473 — 386/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4215 ms
+
+> "Toda esa disciplina es admirable, Madame, pero sus manos cuentan una historia muy distinta."
+> Sostengo la mirada y sonrío con suavidad, tratando de leer qué es exactamente lo que la pone tan nerviosa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+3=17
+
+### [4] DM
+
+  13040 ms
+
+> Madame Valeriane se tensa visiblemente, como si el comentario hubiera sido un golpe físico. Sus dedos se clavan en la seda con un espasmo y, por un instante, el silencio se vuelve denso, interrumpido solo por el siseo de su respiración agitada. No aparta la vista, pero la rigidez de su postura ya no parece autoridad, sino un escudo desesperado para evitar desmoronarse.
+> Tras el análisis, percibes que su nerviosismo no nace del miedo a tu presencia, sino de una profunda ansiedad vinculada a una pérdida. Hay una urgencia oculta en su inquietud, un vacío que intenta llenar con protocolos y disciplina, pero que se filtra en cada temblor de sus manos. No teme que la juzgues, teme que hayas notado que ha perdido el control sobre algo que considera vital.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1396 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 474 — 387/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3001 ms
+
+> "Parece que hay algo mucho más importante que el protocolo ocupando su mente ahora mismo."
+> Me inclino hacia delante con una sonrisa comprensiva, bajando el tono de voz para sonar confidencial.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 16+3=19
+
+### [4] DM
+
+  12504 ms
+
+> Madame Valeriane deja escapar un suspiro tembloroso, y la máscara de severidad se agrieta por completo. Sus hombros caen, vencidos por la presión de mantener la fachada, y sus ojos se humedecen mientras evita tu mirada, fijándola en algún punto vacío de la estancia. La rigidez de su espalda desaparece, sustituida por una fragilidad que la hace parecer mucho más pequeña entre los pliegues de su costoso vestido.
+> —No es el protocolo lo que me inquieta, sino el silencio —susurra con una voz que amenaza con romperse—. Hay una ausencia que lo llena todo, una melodía que ha dejado de sonar y que nadie, absolutamente nadie, parece notar excepto yo. No puedo permitir que el festival sea un fracaso, pero... ¿cómo puedo dirigir una celebración cuando la esencia misma de nuestra armonía se ha desvanecido?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1838 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 475 — 388/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4338 ms
+
+> "Parece que lleva una carga demasiado pesada para una sola persona. Cuénteme, ¿qué es exactamente esa melodía que ha dejado de sonar?"
+> Me acerco un paso, suavizando mi expresión y bajando el tono de voz para crear una atmósfera de confianza.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 3+4=7
+
+### [4] DM
+
+  17617 ms
+
+> Madame Valeriane se tensa ligeramente ante tu acercamiento, y aunque no retrocede, sus dedos se cierran con fuerza sobre la tela de su vestido. Te mira de reojo, evaluando la sinceridad de tu tono, pero la rigidez de su postura persiste; la fragilidad de hace un momento se ha transformado en una cautela distante.
+> —Es una cuestión de... matices, algo que solo alguien con el oído debidamente entrenado podría comprender —responde, recuperando una pizca de su severidad habitual mientras endereza la espalda—. No es una canción que se pueda escribir en un pergamino, sino un eco, una presencia. No estoy segura de que sea prudente compartir los detalles con alguien que acaba de llegar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1159 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 476 — 389/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4043 ms
+
+> "Precisamente por eso soy la persona indicada. A veces, un oído fresco capta los ecos que el hábito vuelve invisibles."
+> Suelto una risita ligera y trato de relajar el ambiente con un gesto despreocupado.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 6+4=10
+
+### [4] DM
+
+  11545 ms
+
+> Madame Valeriane arquea una ceja, manteniendo la mirada fija en ti. El gesto despreocupado no parece romper la barrera de hielo que ha levantado; al contrario, su expresión se vuelve más escéptica y sus labios se aprietan en una línea fina. La risita resuena en el silencio del lugar, pero no logra suavizar la tensión de sus hombros.
+> —La confianza no se adquiere con ingenio, sino con tiempo y pruebas —sentencia con un tono gélido, recuperando la distancia—. Sus palabras son elegantes, pero la prudencia es la única melodía que me interesa escuchar en este momento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1173 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 477 — 390/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2974 ms
+
+> "La prudencia es una virtud, Madame, pero la oportunidad es un lujo que no siempre regresa."
+> Me inclino ligeramente hacia delante, bajando la voz para crear una falsa sensación de intimidad.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 7+4=11
+
+### [4] DM
+
+  16311 ms
+
+> Madame Valeriane no se inmuta ante el cambio de postura ni el tono confidencial. Sus ojos, fríos y analíticos, siguen recorriendo tu rostro mientras el silencio se prolonga deliberadamente, dejando que tus palabras floten en el aire sin encontrar un anclaje en su voluntad.
+> —El lujo es para quienes pueden permitirse perder, y yo no soy una de esas personas —responde con una sequedad cortante. Se recuesta en su asiento, recuperando el espacio físico y cerrando la brecha de intimidad que habías intentado crear—. Guarde su elocuencia para alguien que se deje seducir por la urgencia. Aquí, la paciencia es la que dicta el ritmo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2155 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 478 — 391/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4693 ms
+
+> "La paciencia es una virtud, Madame, pero la oportunidad es un lujo que no siempre regresa."
+> Me separo lentamente, manteniendo una sonrisa ligera mientras observo los detalles de su escritorio y los objetos que la rodean.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+1=3
+
+### [4] DM
+
+  13714 ms
+
+> Madame Valeriane arquea una ceja, imperturbable ante la réplica, y entrelaza sus dedos sobre la superficie pulida del escritorio. Su mirada se clava en la tuya, evaluando el gesto de distanciamiento con una indiferencia gélida que hace que el aire de la habitación se sienta más pesado y cerrado.
+> El escritorio es una extensión de su personalidad: una superficie de caoba oscura, impecable y despojada de cualquier rastro de desorden. Solo hay algunos papeles organizados con precisión geométrica y un tintero de plata, pero el brillo del barniz es tan intenso que los reflejos distorsionan cualquier detalle que intentes discernir entre los objetos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1240 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 479 — 392/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  6246 ms
+
+> "No se diga más, Madame. Su eficiencia es... admirable."
+> Me inclino ligeramente hacia adelante, fingiendo interés en sus palabras mientras intento echar un vistazo rápido a los papeles organizados sobre la caoba.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 11+1=12
+
+### [4] DM
+
+  11626 ms
+
+> Madame Valeriane esboza una sonrisa mínima, casi imperceptible, que no llega a suavizar la frialdad de sus ojos. Se mantiene inmóvil, permitiendo que el silencio se prolongue un instante más de lo necesario mientras acepta el cumplido con una inclinación de cabeza gélida.
+> Al inclinarte, el brillo del barniz actúa como un espejo, devolviéndote una imagen distorsionada de tu propio rostro y del techo de la estancia. Logras distinguir que los papeles están dispuestos en pilas perfectas, pero la caligrafía es demasiado pequeña y los ángulos del escritorio impiden leer cualquier palabra o identificar el sello de los documentos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3907 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 480 — 393/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  6373 ms
+
+> "Una organización tan impecable como la suya es, sencillamente, admirable, Madame."
+> Mantengo la postura mientras busco cualquier descuido en su lenguaje corporal o algún objeto de valor que haya pasado por alto en el escritorio.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 18+3=21
+
+### [4] DM
+
+  16874 ms
+
+> Madame Valeriane no se inmuta ante el elogio; su postura permanece rígida, como si fuera una extensión más del mobiliario de caoba. Sin embargo, mientras sostiene la mirada, notas que sus dedos tamborilean un ritmo irregular y casi imperceptible sobre la superficie del escritorio, un tic nervioso que contrasta violentamente con su expresión gélida.
+> Tu mirada recorre el orden quirúrgico de la estancia y detecta una anomalía: entre las pilas de documentos, un pequeño relicario de plata, grabado con runas que parecen vibrar levemente, ha sido desplazado apenas unos milímetros, como si hubiera sido consultado hace muy poco tiempo. La mujer lo cubre instintivamente con la palma de la mano al notar que tu atención se desvía hacia ese punto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9320 ms · 1 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · public_status_given
+  ✓ creación item: relicario de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → ya existía: item relicario de plata
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 481 — 394/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3528 ms
+
+> "Un detalle fascinante, Madame. Pero no quiero distraerla de nuestro asunto."
+> Sigo hablando con naturalidad mientras intento notar si el relicario emite algún sonido o calor.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 5+1=6
+
+### [4] DM
+
+  10792 ms
+
+> Madame Valeriane retira la mano con una lentitud calculada, recuperando su máscara de indiferencia. Sus ojos se clavan en los tuyos, evaluando la sinceridad de tu giro en la conversación mientras el silencio vuelve a llenar la estancia, roto únicamente por el tictac rítmico de un reloj de pared.
+> El relicario permanece bajo su control, oculto o distante, y no percibes ninguna emanación térmica ni sonido que provenga de la plata grabada. Para tus sentidos, el objeto es tan inerte como el resto de los adornos de la oficina.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1227 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 482 — 395/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3831 ms
+
+> "Parece que el silencio es la única moneda que circula hoy en esta oficina, Madame."
+> Sostengo la mirada con una sonrisa ligera mientras intento analizar sus gestos para detectar cualquier rastro de nerviosismo o duda.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 15+3=18
+
+### [4] DM
+
+  12567 ms
+
+> Madame Valeriane no parpadea, manteniendo la compostura, pero el ligero movimiento de sus dedos sobre el borde del escritorio la traiciona. Al notar tu sonrisa, sus pupilas se dilatan un instante y el ritmo de su respiración se vuelve imperceptiblemente más errático, rompiendo la fachada de acero.
+> Hay una tensión contenida en la comisura de sus labios; no es miedo, sino una cautela extrema, como quien guarda un secreto que quema y teme que el otro haya adivinado la temperatura exacta. Sus ojos ya no solo evalúan tu sinceridad, sino que buscan en tu rostro cualquier señal de que sabes exactamente qué oculta el relicario.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1856 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 483 — 396/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  5307 ms
+
+> "Me temo que el silencio es la parte más interesante de esta conversación, Madame."
+> Me inclino un poco más hacia delante, manteniendo la sonrisa y observando sus dedos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 18+3=21
+
+### [4] DM
+
+  24266 ms
+
+> Madame Valeriane retira la mano del escritorio con un movimiento seco, ocultando sus dedos bajo el mantel de seda. El silencio se prolonga, cargado de una electricidad estática que parece hacer vibrar los objetos de porcelana de la estancia. Al observar su reacción, notas que no es el silencio de quien ignora la pregunta, sino el de quien está calculando el coste exacto de admitir la verdad; hay una chispa de urgencia en su mirada que desmiente su inmovilidad.
+> —La curiosidad es una virtud peligrosa en manos de quien no conoce el peso de lo que busca —responde ella, con una voz que ha recuperado su frialdad, aunque el tono es ahora más bajo, casi un susurro—. Pero parece que usted no es un hombre que tema el peso, sino que disfruta midiéndolo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3620 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 484 — 397/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4417 ms
+
+> "Me gusta medirlo, es cierto, pero me gusta más saber exactamente qué hay en la balanza antes de apostar."
+> Me inclino ligeramente hacia delante, manteniendo la sonrisa, mientras intento notar qué es lo que oculta bajo el mantel.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+3=6
+
+### [4] DM
+
+  12256 ms
+
+> Madame Valeriane no se inmuta ante tu inclinación, manteniendo la espalda rígida contra el respaldo de su silla. Su expresión permanece como una máscara de porcelana, imperturbable, y el mantel de seda cae con una pesadez perfecta que no deja adivinar el relieve de lo que sea que esconda bajo él.
+> —La balanza es un instrumento caprichoso, querido —dice ella, y una comisura de sus labios se eleva en una sonrisa gélida—. A veces, el peso más insoportable es precisamente aquello que no se puede ver.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  16626 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 485 — 398/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4631 ms
+
+> "Me fascinan los misterios, Madame, pero prefiero los que puedo tocar."
+> Me inclino ligeramente hacia adelante, intentando detectar algún bulto o forma bajo la seda del mantel.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 10+1=11
+
+### [4] DM
+
+  19605 ms
+
+> El mantel de seda es grueso y cae en pliegues pesados y precisos, diseñados para ocultar cualquier irregularidad. A pesar de tu inclinación, la tela no revela ninguna silueta clara ni bultos evidentes; solo percibes la superficie lisa y fría de la mesa que sostiene el tejido.
+> Madame Valeriane no se mueve, pero sus ojos, afilados y atentos, siguen cada milímetro de tu desplazamiento hacia adelante. La sonrisa gélida permanece intacta, aunque el brillo de su mirada se vuelve más inquisitivo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3928 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 486 — 399/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3249 ms
+
+> "Tengo una curiosidad insaciable, Madame, pero soy muy respetuoso con la propiedad ajena."
+> Me enderezo lentamente y le dedico mi sonrisa más encantadora mientras intento analizar su expresión.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 16+3=19
+
+### [4] DM
+
+  10755 ms
+
+> Madame Valeriane no parpadea. Al enderezarte, mantiene la barbilla ligeramente elevada, sosteniendo tu mirada con una serenidad calculada que raya en lo teatral. Su sonrisa no llega a los ojos, que permanecen gélidos y analíticos, evaluando no solo tus palabras, sino la sinceridad de tu gesto.
+> A pesar de su máscara de cortesía, notas una ligera tensión en la comisura de sus labios y una rigidez en sus hombros que delata que no está relajada. No hay miedo en ella, sino una cautela extrema; te observa como quien analiza una pieza de ajedrez que acaba de realizar un movimiento inesperado, tratando de descifrar si tu "respeto" es una virtud genuina o una herramienta de manipulación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3267 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 487 — 400/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3772 ms
+
+> "Aprecio que valore la sutileza, Madame. En un mundo tan ruidoso, el silencio y la cautela son lujos que pocos saben apreciar."
+> Mantengo la sonrisa, pero inclino la cabeza ligeramente, intentando captar cualquier detalle que se le escape a su máscara de serenidad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 5+3=8
+
+### [4] DM
+
+  10287 ms
+
+> Madame Valeriane deja escapar un suspiro casi imperceptible, y su expresión se suaviza apenas un milímetro, aunque la mirada gélida permanece intacta. El comentario sobre el silencio parece haber resonado en ella, transformando esa rigidez defensiva en una curiosidad distante.
+> —Lujos que, lamentablemente, suelen ser los primeros en desaparecer cuando la ambición entra en juego —responde con una voz aterciopelada, aunque desprovista de calidez—. Me pregunto qué clase de silencio busca usted, y cuánto está dispuesto a pagar por mantenerlo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4458 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · ideal_honored
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 488 — 401/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3023 ms
+
+> "El precio es relativo, Madame. Depende de si el silencio es una tumba o un secreto compartido."
+> Me inclino ligeramente hacia delante, manteniendo la sonrisa, mientras estudio sus gestos para detectar cualquier debilidad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+3=13
+
+### [4] DM
+
+  15114 ms
+
+> Madame Valeriane arquea una ceja, procesando la respuesta con una lentitud deliberada. Se reclina en su asiento, dejando que el silencio se prolongue unos segundos más de lo socialmente cómodo, mientras sus dedos largos y pálidos tamborilean rítmicamente sobre el brazo de terciopelo de su silla.
+> A pesar de su compostura imperturbable, no logras detectar ninguna fisura en su armadura emocional ni un gesto que delate nerviosismo o duda. Su rostro permanece como una máscara de porcelana, fría y perfectamente pulida, que no revela absolutamente nada sobre sus verdaderas intenciones o puntos débiles.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3147 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 489 — 402/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3788 ms
+
+> "Me fascina su serenidad, Madame. Es una cualidad rara en estos tiempos tan agitados."
+> Sostengo la mirada con una sonrisa ligera, tratando de leer cualquier microexpresión mientras busco algún objeto de valor o documento olvidado sobre su escritorio.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+3=10
+
+### [4] DM
+
+  17200 ms
+
+> Madame Valeriane esboza una sonrisa gélida, apenas un movimiento de los labios que no llega a alcanzar sus ojos. "La serenidad no es una cualidad, querido, es una disciplina", responde con una voz que suena como seda rozando el cristal. Mantiene el contacto visual con una intensidad depredadora, asegurándose de que sientas que ella es quien controla el ritmo de la conversación.
+> Sobre el escritorio, entre la pulcritud de la madera oscura y el aroma a incienso, solo hay un tintero de plata y un juego de papeles en blanco perfectamente alineados. No hay notas descuidadas, ni cajones entreabiertos, ni ningún rastro de descuido que permita vislumbrar un secreto. La superficie está tan despejada como su expresión.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5030 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 490 — 403/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4859 ms
+
+> "La disciplina es admirable, Madame, pero la curiosidad es... irresistible."
+> Sigo sosteniéndole la mirada mientras deslizo la mano con disimulo hacia el borde del escritorio, intentando palpar si hay algún compartimento oculto o un cajón secreto bajo la superficie.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 1+2=3  PIFIA
+
+### [4] DM
+
+  13203 ms
+
+> Al intentar deslizar la mano con sutileza, tus dedos tropiezan torpemente con el tintero de plata. El objeto se desliza sobre la madera pulida con un chirrido estridente, volcando una mancha de tinta negra y espesa que se expande rápidamente sobre los papeles en blanco, arruinando la pulcritud del escritorio en un instante.
+> La sonrisa de Madame Valeriane desaparece por completo. Sus ojos se clavan en tu mano, todavía extendida y ahora manchada de tinta, mientras el silencio en la habitación se vuelve asfixiante. "La curiosidad", dice con una voz que ha perdido toda su calidez, "suele ser el preludio de la torpeza... o de la mala educación".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8476 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ evidencia no literal: «la curiosidad... suele ser el preludio de la torpe»
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 491 — 404/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  5140 ms
+
+> "Vaya... parece que mi entusiasmo por sus documentos ha superado a mi coordinación."
+> Suelto una risita nerviosa y trato de limpiar la tinta de mis dedos con un gesto rápido, mientras busco una excusa convincente para mi descuido.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 1+4=5  PIFIA
+
+### [4] DM
+
+  15534 ms
+
+> La risa suena hueca, casi caricaturesca, en el silencio sepulcral del despacho. Al intentar limpiar la tinta con rapidez, el movimiento errático solo consigue salpicar gotas negras sobre la alfombra clara y manchar aún más tu propia ropa, dejando un rastro evidente de pánico y torpeza que ninguna palabra puede disfrazar.
+> Madame Valeriane arquea una ceja, su expresión transformándose en una máscara de gélida incredulidad. Se aparta un paso del escritorio, observando el desastre con un desprecio palpable. "Su 'entusiasmo' es tan transparente como su torpeza", sentencia con un tono cortante, mientras sus ojos escanean tu figura con una desconfianza renovada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2330 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 492 — 405/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  6086 ms
+
+> "Vaya, un pequeño accidente. Pero mire el lado positivo, Madame: ahora el despacho tiene un toque más... vanguardista."
+> Suelto una risita nerviosa y trato de recuperar la compostura, intentando pasar la mancha de mi ropa por un detalle insignificante mientras busco cualquier papel que haya quedado expuesto en el escritorio.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 15+4=19
+
+### [4] DM
+
+  26930 ms
+
+> Madame Valeriane exhala un suspiro lento, y la rigidez de sus hombros cede apenas un milímetro. Sus labios se curvan en una sonrisa mínima y gélida, aunque la chispa de irritación en sus ojos se apaga, reemplazada por una curiosidad condescendiente. "Vanguardismo. Qué término tan oportuno para alguien que parece haber olvidado cómo sostener un tintero", comenta con una ironía seca, mientras se cruza de brazos, permitiendo que el silencio se prolongue sin que el ambiente resulte ya asfixiante.
+> Al aprovechar el breve instante de distracción de la mujer, tu mirada recorre la superficie de madera oscura. Entre el caos de la tinta, destaca un pequeño pergamino doblado en cuatro, parcialmente oculto bajo el borde de un pisapapeles de cristal; el papel es grueso, de un tono crema amarillento, y carece de sello oficial, aunque se alcanza a leer una sola palabra escrita en una caligrafía apresurada: *Sinfonía*.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  762 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Sinfonía
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 493 — 406/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3430 ms
+
+> "La técnica es secundaria cuando el concepto es revolucionario, querida Madame."
+> Sigo manteniendo la conversación mientras intento deslizar el pergamino hacia mi manga.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 11+2=13
+
+### [4] DM
+
+  24248 ms
+
+> Madame Valeriane arquea una ceja, soltando una risita nasal que denota más incredulidad que diversión. "Conceptos revolucionarios... el refugio favorito de los mediocres", replica ella, manteniendo el contacto visual con una fijeza casi depredadora mientras se acomoda el cuello de su vestido.
+> Tus dedos se deslizan con cautela hacia el borde del papel, pero justo cuando pretendes englobar el pergamino, el pisapapeles de cristal se desplaza con un tintineo seco sobre la madera. La mujer no ha movido un músculo, pero el movimiento brusco del objeto hace que el papel se deslice en la dirección opuesta, quedando plenamente a la vista y fuera de tu alcance inmediato. Valeriane baja la mirada hacia su escritorio y luego vuelve a fijarla en ti, con una expresión de sospecha recién despertada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2292 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 494 — 407/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2069 ms
+
+> "Vaya, parece que el destino mismo quiere que lea esto."
+> Suelto una carcajada ligera y retiro la mano rápidamente, haciendo un gesto de disculpa con los dedos.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 2+4=6
+
+### [4] DM
+
+  10150 ms
+
+> Madame Valeriane no se deja engañar por la risa. Sus ojos se entrecierran, transformando la sospecha en una certeza gélida mientras observa el movimiento rápido de tu mano. El silencio se prolonga, cargado de una tensión eléctrica, mientras ella se inclina ligeramente hacia adelante, invadiendo tu espacio personal.
+> "El destino es un concepto romántico para quienes no saben admitir que han sido torpes", sentencia con una voz afilada como una hoja de afeitar. Su mirada ya no es depredadora, sino inquisitiva y severa, mientras desliza el pisapapeles con un movimiento deliberado para cubrir el pergamino por completo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1111 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 495 — 408/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4150 ms
+
+> "Vaya, Madame, me ha pillado. Ha sido un impulso, la curiosidad es un vicio terrible, ¿no cree?"
+> Suelto una risita nerviosa y levanto las manos en señal de rendición, tratando de suavizar mi expresión.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 11+4=15
+
+### [4] DM
+
+  10426 ms
+
+> Madame Valeriane mantiene la mirada fija en tus manos alzadas, analizando cada pequeño gesto. La rigidez de sus hombros no desaparece, pero el rictus severo de su boca se suaviza apenas un milímetro. Suelta un suspiro nasal, una exhalación que suena más a resignación que a perdón, y se recuesta en su silla, recuperando la distancia física.
+> "La curiosidad es, en efecto, un vicio. Pero la honestidad es una virtud rara en quienes intentan robar secretos", comenta con un tono gélido, aunque ya sin la agresividad de hace un instante. Sus dedos tamborilean rítmicamente sobre el pisapapeles, marcando el compás de un silencio que ahora se siente menos asfixiante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4903 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · ideal_honored
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 496 — 409/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2193 ms
+
+> "La honestidad es una herramienta, Madame, y yo sé cuándo usarla para obtener el resultado adecuado."
+> Le dedico mi sonrisa más encantadora mientras bajo las manos lentamente.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 10+4=14
+
+### [4] DM
+
+  19152 ms
+
+> Madame Valeriane observa el descenso de tus manos y, al encontrarse con tu sonrisa, arquea una ceja con una mezcla de escepticismo y una pizca de respeto involuntario. El tamborileo de sus dedos sobre el pisapapeles se detiene en seco. Aunque no devuelve la sonrisa, la tensión de su mandíbula desaparece y una chispa de interés genuino asoma en sus ojos gélidos.
+> "Una herramienta, dice... Pragmatismo envuelto en cortesía", murmura, recostándose aún más en su asiento mientras te estudia con renovada atención. "Me gusta la gente que conoce el valor de sus piezas antes de moverlas sobre el tablero. Quizás, después de todo, haya algo más en usted que una simple impulsividad juvenil".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5937 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 497 — 410/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4098 ms
+
+> "Me halaga que haya notado mi pragmatismo, Madame. Solo busco que el tablero sea lucrativo para ambos."
+> Me inclino ligeramente hacia adelante, manteniendo el contacto visual para evaluar su disposición.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+3=4  PIFIA
+
+### [4] DM
+
+  11008 ms
+
+> Madame Valeriane suelta una risa seca, un sonido breve que no llega a sus ojos. Se inclina hacia adelante, imitando tu movimiento, y el aroma a sándalo y tinta vieja se vuelve más intenso. "Lucrativo. Una palabra honesta, al menos", responde, mientras sus dedos vuelven a tamborilear, ahora con un ritmo más lento y deliberado.
+> Al intentar leer sus intenciones, el exceso de confianza te juega una mala pasada. Interpretas su ligera inclinación y la suavidad de su voz como una señal clara de que ya ha cedido y está prácticamente convencida de aceptar cualquier término que propongas. Te parece leer en su mirada una vulnerabilidad que no existe, una urgencia por cerrar el trato que te hace creer que tienes el control total de la negociación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1187 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 498 — 411/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3258 ms
+
+> "Entonces estamos de acuerdo. Un pequeño adelanto ahora y el resto al finalizar la tarea, para asegurar que ambos estamos comprometidos."
+> Extiendo la mano con una sonrisa triunfal, intentando cerrar el pacto en sus propios términos.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 3+4=7
+
+### [4] DM
+
+  9738 ms
+
+> Madame Valeriane se queda gélida, con la mirada fija en tu mano extendida. La sonrisa que antes parecía una concesión se transforma en una línea fina y severa; sus dedos dejan de tamborilear instantáneamente. Se reclina en su asiento con una lentitud calculada, recuperando la distancia física que habías intentado acortar.
+> "¿Acuerdo?", repite ella, y el tono de su voz ha perdido toda la suavidad anterior, volviéndose afilado como una hoja de afeitar. "Confundes mi cortesía con desesperación, y tu optimismo con un contrato firmado. No he aceptado término alguno, y mucho menos un adelanto que me obligue a confiar en alguien que no sabe leer una habitación".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4824 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · bribe_offered
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 499 — 412/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4019 ms
+
+> "Vaya, parece que he sobreestimado vuestra generosidad, Madame. Un error mío, por supuesto."
+> Retiro la mano con elegancia y esbozo una sonrisa disculpante mientras busco algún documento o detalle valioso sobre su escritorio.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  9509 ms
+
+> Madame Valeriane no aparta la vista de tu rostro, manteniendo una expresión de gélida indiferencia mientras retiras la mano. El silencio en el despacho se vuelve denso, solo roto por el tic-tac rítmico de un reloj de pared que parece subrayar la tensión del momento.
+> Mientras sostienes la sonrisa, tu mirada escanea el escritorio con precisión quirúrgica. Entre el desorden organizado de tinteros y plumas, notas un pequeño trozo de pergamino que ha quedado parcialmente oculto bajo un pisapapeles de cristal. En él, una caligrafía apresurada y nerviosa menciona una cita nocturna en los Jardines del Eco, acompañada de un sello de cera roja con la efigie de una hoja de roble entrelazada con una clave musical.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4323 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: trozo de pergamino
+  ⚠ nombres no reconocidos: Eco, Jardines
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item trozo de pergamino
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 500 — 413/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2430 ms
+
+> "Una cortesía muy amable, Madame. No quisiera robarle más tiempo del necesario."
+> Intento deslizar el trozo de pergamino hacia mi manga mientras recupero mi postura.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 19+2=21
+
+### [4] DM
+
+  10225 ms
+
+> El movimiento es fluido, casi imperceptible, fundiéndose con el ligero balanceo de tu cuerpo al recuperar la postura. Mientras Madame Valeriane mantiene su mirada fija en tus ojos, gélida y expectante, el trozo de pergamino se desliza sin ruido sobre la madera pulida hasta desaparecer en el refugio de tu manga. El pisapapeles de cristal no llega a moverse ni un milímetro, dejando el espacio vacío donde antes descansaba la nota.
+> La mujer parpadea lentamente, sin notar la ausencia del papel. Su expresión no varía, pero el ligero arco de una ceja sugiere que, aunque no ha visto el robo, tu actitud comienza a resultarle curiosa. "La eficiencia es una virtud que aprecio, aunque la cortesía suele ser un disfraz", comenta con una voz seca que corta el aire del despacho.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3603 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = trozo de pergamino
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5638: Kestra.inventory = trozo de pergamino
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 501 — 414/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2701 ms
+
+> "Me halaga que note mi eficiencia, Madame. Pero aseguro que mi cortesía es tan genuina como mi deseo de llegar a un acuerdo."
+> Le dedico mi sonrisa más encantadora mientras intento leer su lenguaje corporal.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+3=12
+
+### [4] DM
+
+  10135 ms
+
+> Madame Valeriane sostiene la mirada, imperturbable. Su postura es rígida, con la espalda perfectamente recta y las manos entrelazadas sobre el escritorio, formando una barrera invisible entre ambos. No hay gestos impulsivos ni tics que delaten su estado de ánimo; es una mujer que domina cada músculo de su cuerpo para no revelar nada.
+> "El deseo es una palabra peligrosa en una negociación", responde ella, y aunque su tono sigue siendo seco, la comisura de sus labios se eleva apenas un milímetro, un gesto gélido que no llega a ser una sonrisa. Te observa con una curiosidad analítica, como quien estudia un insecto interesante bajo un cristal, evaluando si tu encanto es una herramienta útil o un simple ruido molesto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1123 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 502 — 415/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2523 ms
+
+> "Me gusta que hablemos el mismo idioma, Madame. Las palabras peligrosas son, precisamente, las que tienen más valor."
+> Suelto una risita ligera y me inclino un poco hacia adelante, tratando de romper esa barrera invisible.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 16+4=20
+
+### [4] DM
+
+  31529 ms
+
+> La rigidez de Madame Valeriane flaquea. Al inclinarte, el espacio personal que ella defendía con tanta severidad se reduce, y por primera vez, la barrera de sus manos entrelazadas se deshace; una de ellas se desplaza sobre el escritorio, relajando la tensión de sus hombros. El gesto gélido de sus labios se transforma en una expresión de genuino reconocimiento, como si acabaras de resolver un acertijo que la entretenía.
+> "Veo que no solo sabe hablar, sino que sabe dónde colocar el peso de sus palabras", admite ella. Su voz ha perdido esa sequedad cortante, adquiriendo un matiz más cálido, casi conspirador. Se reclina en su silla, otorgándote un acceso visual más abierto a su rostro y a los documentos que reposan sobre la madera oscura. "Me ha despertado la curiosidad. Dígame, ¿qué es exactamente lo que busca obtener de mí que justifique tal despliegue de audacia?"
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3154 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 503 — 416/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3042 ms
+
+> "Solo busco una alianza con alguien que comprenda que el verdadero poder no se grita, sino que se susurra."
+> Me inclino un poco más, intentando echar un vistazo rápido a los papeles del escritorio mientras mantengo el contacto visual.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 14+4=18
+
+### [4] DM
+
+  12405 ms
+
+> Madame Valeriane deja escapar una risa breve, un sonido seco pero no desprovisto de placer, mientras asiente lentamente. "Un susurro bien colocado puede derribar muros que mil gritos no habrían arañado", responde, y su mirada se vuelve afilada, evaluándote con una complicidad renovada. Se mantiene inmóvil, permitiendo que la conversación dicte el ritmo, aunque sus ojos brillan con la satisfacción de quien ha encontrado una pieza útil para su tablero.
+> Mientras mantienes el contacto visual, tu mirada periférica capta el contenido de los documentos sobre la madera oscura. Entre pliegos de pergamino y sellos de cera, destaca un mapa esquemático de los jardines exteriores y una lista de nombres subrayados con tinta roja, encabezada por el título "Delegados del Comité del Festival".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5342 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+  ✗ campo fuera de lista blanca: character.knowledge
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 504 — 417/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  7112 ms
+
+> "Parece que hablamos el mismo idioma, Madame. Me gusta su forma de ver el mundo."
+> Hago un gesto ligero con la mano mientras me inclino sutilmente hacia adelante para intentar leer los nombres de esa lista.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 7+1=8
+
+### [4] DM
+
+  11882 ms
+
+> Madame Valeriane esboza una sonrisa gélida y se reclina en su asiento, cruzando los dedos con elegancia. "El idioma de la pragmática es el único que no necesita traductores, querido", comenta con un tono que oscila entre la cortesía y la condescendencia.
+> Al inclinarte, el ángulo de la luz y la posición de los pergaminos juegan en tu contra. Los nombres en la lista están escritos con una caligrafía cursiva y apretada que, desde esa distancia y perspectiva, se funde en una serie de trazos rojos borrosos e ilegibles.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2646 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · ideal_honored
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 505 — 418/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3483 ms
+
+> "Tiene usted toda la razón, Madame. La pragmática es, sin duda, mi dialecto favorito."
+> Me enderezo lentamente, manteniendo la sonrisa, mientras trato de recordar algún trazo que haya podido distinguir.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+0=2
+
+### [4] DM
+
+  9136 ms
+
+> Madame Valeriane arquea una ceja, observando el movimiento con una calma imperturbable. El silencio se prolonga un instante, roto únicamente por el leve crujido del cuero de su silla mientras mantiene su mirada fija en ti, evaluando la sinceridad de tu sonrisa.
+> Al intentar recuperar mentalmente las imágenes de la lista, el recuerdo es frustrante. Aquellos trazos rojos no forman letras en tu memoria, sino una mancha caótica y difusa; no logras rescatar ni una sola sílaba, ni siquiera la longitud de los nombres, dejando el documento como un enigma absoluto sobre el escritorio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7633 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 506 — 419/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3326 ms
+
+> "Vaya, parece que mi memoria me ha traicionado en el momento más inoportuno. Un descuido imperdonable."
+> Sigo sonriendo mientras deslizo la mano hacia el escritorio, intentando deslizar la lista bajo mi manga sin que se note.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 8+2=10
+
+### [4] DM
+
+  11007 ms
+
+> Madame Valeriane no aparta la vista de tu rostro, pero el movimiento de tu brazo, aunque sutil, rompe la quietud del despacho. Antes de que el papel pueda deslizarse bajo la tela de tu manga, la mano de la mujer se cierra sobre el borde del pergamino con una rapidez seca y precisa, anclándolo al escritorio.
+> —La memoria es un instrumento caprichoso, es cierto —comenta ella, sin soltar el documento y manteniendo esa expresión imperturbable—. Pero los dedos, en cambio, suelen ser demasiado honestos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2488 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 507 — 420/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2371 ms
+
+> "Vaya reflejos, Madame. Debo admitir que me ha dejado impresionado."
+> Suelto una risita ligera y retiro la mano con naturalidad, fingiendo que solo era un gesto distraído mientras trato de recuperar la compostura.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 7+4=11
+
+### [4] DM
+
+  9472 ms
+
+> Madame Valeriane no parpadea. Sus dedos siguen presionando el pergamino contra la madera, y el silencio se prolonga un instante más de lo socialmente aceptable. La comisura de sus labios apenas se mueve, pero no hay rastro de diversión en su mirada gélida, que parece diseccionar cada músculo de tu rostro en busca de una grieta.
+> —La impresión es una herramienta útil para quienes buscan distraer, no para quienes buscan la verdad —responta ella con una voz que corta como el cristal—. Guarde sus risas para el festival. Ahora, explíqueme exactamente qué pretendía rescatar de mi escritorio antes de que decida si su honestidad es tan limitada como su discreción.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3129 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 508 — 421/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3352 ms
+
+> "Vaya, Madame Valeriane. Me ha pillado en un momento de curiosidad insaciable, no de deshonestidad."
+> Suelto una risita ligera y retiro la mano lentamente, manteniendo el contacto visual.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 10+4=14
+
+### [4] DM
+
+  23993 ms
+
+> Madame Valeriane no retira el pergamino, pero la tensión de sus dedos sobre el papel se relaja ligeramente. Sus ojos, aunque siguen siendo fríos, dejan de diseccionar para observar con una curiosidad distante, como quien analiza a un insecto particularmente insistente. El silencio vuelve a llenar la estancia, interrumpido solo por el tic-tac rítmico de un reloj de pared que parece marcar el tiempo de tu sentencia.
+> —La curiosidad suele ser el preludio de un error costoso —dice ella, deslizando el documento fuera de tu alcance con un movimiento fluido y preciso—. Sin embargo, prefiero la arrogancia consciente a la torpeza ciega. Me ha evitado el tedio de llamar a la guardia, pero no me ha devuelto la confianza. Hable rápido: ¿qué es lo que realmente le interesa de mis asuntos?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1940 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 509 — 422/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3833 ms
+
+> "Solo busco una oportunidad para serle útil, Madame. Una utilidad que, estoy seguro, resultaría mucho más rentable para usted que cualquier informe de la guardia."
+> Me inclino ligeramente hacia adelante, manteniendo una sonrisa ligera y relajada.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 15+4=19
+
+### [4] DM
+
+  25104 ms
+
+> Madame Valeriane arquea una ceja, y la rigidez de su espalda cede apenas unos milímetros mientras se reclina en su asiento. El brillo gélido de sus ojos se matiza, transformándose en una chispa de interés calculador; la mención de la rentabilidad ha golpeado la cuerda exacta. El tic-tac del reloj parece acelerarse, pero el aire en la habitación ya no se siente como una trampa, sino como una negociación.
+> —La utilidad es una moneda que muchos pretenden ofrecer, pero pocos saben acuñar —responde ella, dejando que el pergamino descanse sobre el escritorio, aunque sin soltarlo del todo—. Su audacia es refrescante, aunque peligrosa. Me ha despertado la curiosidad, y eso es un recurso escaso en mi día a día. Dígame, ¿en qué consiste exactamente esa rentabilidad que promete y por qué debería confiar en que no es solo otra fachada para el espionaje?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2872 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · bribe_offered
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 510 — 423/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2416 ms
+
+> "La confianza es un lujo, Madame, y yo soy un hombre de negocios. No le pido que confíe en mí, sino en el beneficio que puedo generar."
+> Me inclino ligeramente hacia delante con una sonrisa relajada.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 16+4=20
+
+### [4] DM
+
+  19431 ms
+
+> Madame Valeriane sostiene la mirada, procesando la respuesta mientras el silencio se extiende en la estancia. La sonrisa del interlocutor parece haber desarmado la última barrera de su escepticismo; la frialdad de su rostro se disuelve en una expresión de genuina fascinación. Con un movimiento fluido y deliberado, suelta el pergamino y extiende la palma de la mano sobre la madera oscura del escritorio, en un gesto de apertura.
+> —Un hombre de negocios que comprende que la confianza es un lujo... —repite ella, y esta vez hay un matiz de respeto en su voz—. Me gusta su pragmatismo. Ha logrado convertir la incertidumbre en un activo, y eso es precisamente lo que necesito en alguien que se mueva por los rincones que yo no puedo visitar. Estoy dispuesta a escuchar sus términos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4956 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 511 — 424/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3255 ms
+
+> "Me alegra que hablemos el mismo idioma, Madame. Mi lealtad es flexible, pero mi eficiencia es absoluta."
+> Me inclino ligeramente hacia adelante, manteniendo la sonrisa, y busco cualquier papel o nota olvidada en los bordes de su escritorio.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+1=7
+
+### [4] DM
+
+  14252 ms
+
+> Madame Valeriane suelta una risa breve y seca, casi un ronroneo, mientras observa el movimiento del cuerpo hacia adelante. Sus ojos, afilados y atentos, no pierden el rastro de la inclinación, aunque mantiene la palma extendida sobre la madera, invitando a la negociación.
+> La superficie del escritorio es un despliegue de orden meticuloso. El barniz oscuro brilla bajo la luz, reflejando los trastos de plata y los tinteros de cristal, pero no hay ningún papel suelto, nota olvidada ni rastro de descuido en los bordes. Todo lo que no está guardado en los cajones cerrados ha sido colocado con una precisión quirúrgica.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1242 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 512 — 425/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2360 ms
+
+> "Toda esa precisión es admirable, Madame, pero yo prefiero el encanto de lo imprevisto."
+> Le devuelvo la sonrisa mientras deslizo la mirada hacia los cajones cerrados, buscando cualquier debilidad en las cerraduras.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 5+1=6
+
+### [4] DM
+
+  16363 ms
+
+> Madame Valeriane arquea una ceja, manteniendo esa sonrisa gélida mientras observa el recorrido de tu mirada. No retira la mano ni hace amago de cubrir los cajones, pero su postura se vuelve ligeramente más rígida, como una cuerda tensada que espera el primer movimiento en falso.
+> Desde tu posición, los cajones parecen bloques macizos de madera oscura y barnizada, fundiéndose perfectamente con el resto del escritorio. No hay muescas, ni rastros de forzados, ni una rendija lo suficientemente ancha como para intuir qué guardan o cómo están cerrados. Para ti, son simplemente superficies lisas y herméticas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1384 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 513 — 426/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2365 ms
+
+> "Tiene usted un gusto exquisito para el mobiliario, Madame. Casi parece que no tuviera secretos."
+> Me acerco un paso más, fingiendo admirar el barniz del escritorio mientras intento detectar cualquier mecanismo oculto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+0=16
+
+### [4] DM
+
+  15618 ms
+
+> Madame Valeriane suelta una risa seca, un sonido breve que no llega a sus ojos. "La discreción es la base de cualquier buen gusto, querido. Los secretos son como el buen vino: solo se sirven a quienes saben esperar el momento adecuado". Sus dedos tamborilean rítmicamente sobre la madera, marcando un compás lento y deliberado.
+> Al inclinarte sobre la superficie, el brillo del barniz revela una anomalía. Bajo la luz, una pequeña veta de la madera en el lateral derecho del escritorio no sigue el flujo natural del grano; es una pieza insertada con una precisión quirúrgica. Al presionar ligeramente esa zona, sientes un clic metálico casi imperceptible que vibra bajo tu yema, sugiriendo que el bloqueo de uno de los cajones acaba de ceder.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1419 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 514 — 427/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3633 ms
+
+> "El misterio es, sin duda, el ingrediente más exquisito de cualquier conversación."
+> Mantengo la sonrisa mientras deslizo la mano con cuidado hacia el cajón liberado para abrirlo sin hacer ruido.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 1+2=3  PIFIA
+
+### [4] DM
+
+  13234 ms
+
+> Al intentar deslizar el cajón con sutileza, el mecanismo, que ya había cedido, reacciona de forma brusca. La madera se atasca en un ángulo incómodo y, al forzar el movimiento, el cajón se abre de golpe con un estrépito seco, chocando contra el borde y haciendo que varios papeles sueltos salgan despedidos hacia el suelo.
+> La risa de Madame Valeriane se corta en seco. Sus dedos dejan de tamborilear y su mirada, ahora gélida y afilada, se clava en tu mano, que ha quedado expuesta y apoyada sobre la madera abierta.
+> "Vaya", dice ella con una voz que ha perdido toda calidez, "parece que algunos invitados confunden la curiosidad con la mala educación".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  10041 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · ideal_violated
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 515 — 428/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2444 ms
+
+> "Un descuido imperdonable, Madame. Me ha fascinado el diseño de su escritorio y he querido comprobar si era tan sólido como su reputación"
+> Retiro la mano lentamente y esbozo mi sonrisa más encantadora mientras intento recuperar la compostura.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 19+4=23
+
+### [4] DM
+
+  16342 ms
+
+> La tensión en el aire parece vibrar durante un instante, mientras los ojos de Madame Valeriane escanean cada músculo de tu rostro en busca de una grieta. Sin embargo, la mención a su reputación actúa como un ancla; el gélido rigor de su expresión se suaviza, y una pequeña, casi imperceptible, curva aparece en la comisura de sus labios. El silencio se prolonga un segundo más de lo necesario, cargado de una evaluación silenciosa.
+> "Halagos oportunos, aunque el método haya sido... rústico", responde ella, recuperando ese tono aterciopelado y distante. Con un gesto elegante de la mano, señala los papeles esparcidos por la alfombra, aunque no hace ningún movimiento para recogerlos ella misma. "Tenga la bondad de restablecer el orden de mi escritorio. Consideraré su 'fascinación' por mi mobiliario como una disculpa aceptable, siempre y cuando sus manos no vuelvan a vagar por donde no han sido invitadas".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  82108 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 516 — 429/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2301 ms
+
+> "Un placer servir a una dama de su distinción, Madame."
+> Me inclino para recoger los papeles, pero aprovecho el movimiento para intentar echar un vistazo rápido al contenido de los documentos antes de dejarlos sobre la mesa.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+0=19
+
+### [4] DM
+
+  13055 ms
+
+> Mientras te inclinas, el roce del pergamino seco bajo tus dedos te permite captar fragmentos de una caligrafía apresurada y nerviosa. Entre los documentos, destaca una carta con un sello de cera rota que menciona "la frecuencia de la Voz" y una serie de coordenadas geográficas tachadas con violencia. Hay también un registro de pagos a informantes anónimos, donde el nombre de un contacto en el mercado local aparece subrayado repetidamente junto a la palabra "silencio".
+> Madame Valeriane permanece inmóvil, observando cada uno de tus movimientos desde su posición, con las manos entrelazadas y la mirada fija en la nuca de tu cuello. No dice nada, pero el siseo de su respiración es el único sonido que llena la estancia mientras esperas que el orden regrese al escritorio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  15691 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.knowledge
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 517 — 430/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2617 ms
+
+> "Todo parece estar en orden, Madame. Un desastre absoluto, pero en orden."
+> Intento deslizar la carta del sello roto y el registro de pagos dentro de mi manga mientras termino de organizar los papeles.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 1+2=3  PIFIA
+
+### [4] DM
+
+  21183 ms
+
+> Al intentar deslizar los papeles hacia tu manga, un movimiento torpe hace que el pergamino se enganche con el borde del escritorio. El registro de pagos sale volando, planeando lentamente en el aire antes de aterrizar con un golpe seco y audible justo a los pies de Madame Valeriane. La carta del sello roto, en el forcejeo, se desliza fuera de tu alcance y queda a la vista de todos, exponiendo las coordenadas tachadas sobre la madera oscura.
+> El silencio de la habitación se vuelve gélido. Madame Valeriane baja la mirada hacia el papel que descansa sobre sus botas y luego clava sus ojos en ti, con una expresión desprovista de cualquier rastro de neutralidad.
+> —¿En orden, dice? —su voz es un susurro afilado—. Me pregunto qué parte de "en orden" implica que mis archivos privados decidan emigrar hacia su vestimenta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  756 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 518 — 431/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1989 ms
+
+> "Vaya, parece que el viento en esta sala es más traicionero de lo que imaginaba."
+> Suelto una risita nerviosa y pongo cara de absoluta sorpresa, extendiendo las manos en un gesto de inocencia.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 15+4=19
+
+### [4] DM
+
+  14732 ms
+
+> Madame Valeriane mantiene la mirada fija en ti, con los párpados ligeramente entornados y el mentón elevado. El silencio se prolonga un segundo más, cargado de una tensión eléctrica, mientras ella procesa tu risa y ese gesto de manos abiertas. Lentamente, el rictus de sospecha en sus labios se suaviza, aunque no llega a desaparecer del todo, y exhala un suspiro cargado de fastidio.
+> —El viento... —repite ella, desviando la vista hacia la ventana cerrada antes de volver a mirarte con una mueca de incredulidad—. Tiene usted una suerte prodigiosa o una torpeza legendaria, no estoy segura de cuál de las dos es más irritante. 
+> Sin dejar de observarte, se inclina con elegancia y recoge el registro de pagos del suelo, aunque deja la carta del sello roto sobre la mesa, justo donde quedó, como un recordatorio silencioso de que sabe que algo no encaja.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1370 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 519 — 432/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2513 ms
+
+> "La suerte es una herramienta, Madame, y yo sé usarla muy bien."
+> Me acerco un paso más a la mesa y trato de echar un vistazo rápido al contenido de la carta mientras ella se distrae con el registro.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+1=3
+
+### [4] DM
+
+  8491 ms
+
+> Madame Valeriane se endereza con un movimiento fluido, posicionando su cuerpo y el registro de pagos de manera que bloquean cualquier ángulo de visión hacia el papel. Al intentar asomarte, solo alcanzas a ver el blanco amarillento del pergamino y el borde irregular del sello roto, pero el contenido permanece oculto tras la silueta de la mujer.
+> Ella vuelve a fijar sus ojos en ti, detectando el movimiento. Una ceja se eleva con una mezcla de diversión fría y severidad.
+> —La curiosidad es una herramienta peligrosa, señor. Especialmente cuando se intenta usar en mi mesa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  26512 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 520 — 433/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3869 ms
+
+> "Mis disculpas, Madame. Solo me fascinaba la caligrafía del sello, soy un admirador de las cosas antiguas."
+> Suelto una risita ligera y me inclino hacia atrás en la silla, mostrando las palmas de las manos en un gesto de inocencia.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 12+4=16
+
+### [4] DM
+
+  8269 ms
+
+> La expresión de Madame Valeriane se suaviza apenas un milímetro, aunque sus ojos mantienen ese brillo analítico que parece pesar cada palabra. El rictus de severidad desaparece, sustituido por una sonrisa profesional y distante que no llega a borrar la cautela de su postura.
+> —El aprecio por la estética es una virtud noble, siempre y cuando no nuble el juicio —responde con un tono más ligero, mientras desliza el pergamino fuera de la vista con un movimiento seco y elegante—. Agradezco su sinceridad. Ahora, volvamos al asunto que nos convoca antes de que la curiosidad nos robe más tiempo del que el calendario permite.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3259 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 521 — 434/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3651 ms
+
+> "Por supuesto, Madame. El tiempo es el único recurso que no podemos comprar, y yo soy un hombre muy respetuoso con los plazos."
+> Me inclino ligeramente, manteniendo la sonrisa, mientras intento vislumbrar el contenido o el sello del pergamino que acaba de ocultar.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+1=7
+
+### [4] DM
+
+  5684 ms
+
+> Madame Valeriane asiente con un gesto imperceptible, complacida por la respuesta. El pergamino desaparece con una rapidez quirúrgica bajo una pila de documentos y un pisapapeles de obsidiana, quedando completamente oculto a la vista.
+> —Una filosofía pragmática. Me agrada —sentencia ella, mientras se reclina en su silla y entrelaza los dedos sobre el escritorio, recuperando su aire de autoridad—. Hablemos entonces de los términos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8917 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · ideal_honored
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 522 — 435/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2890 ms
+
+> "Me halaga que compartamos la misma visión, Madame. Soy todo oídos."
+> Me inclino ligeramente hacia delante, manteniendo la sonrisa, mientras intento localizar el lugar exacto donde ha quedado el pergamino bajo los papeles.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 13+1=14
+
+### [4] DM
+
+  9775 ms
+
+> Madame Valeriane mantiene la mirada fija en ti, sus ojos evaluando cada microgesto mientras comienza a detallar las condiciones del acuerdo con una voz gélida y precisa. El ritmo de su discurso es pausado, llenando el silencio del despacho con el roce de su seda y el tic-tac distante de un reloj de pared.
+> Al inclinarte, tus ojos escanean la superficie del escritorio. A través de los bordes de los documentos y el peso del pisapapeles de obsidiana, logras distinguir la esquina doblada del pergamino; el papel ha quedado atrapado en el ángulo inferior izquierdo, parcialmente visible si se mira desde el ángulo correcto, aunque sigue estando fuera del alcance de tu mano.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1468 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 523 — 436/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3356 ms
+
+> "Sus condiciones me parecen... razonables, Madame. Aunque siempre hay espacio para el matiz."
+> Sigo asintiendo con interés mientras intento deslizar discretamente el pergamino hacia mí aprovechando que ella sigue hablando.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 16+2=18
+
+### [4] DM
+
+  9855 ms
+
+> Madame Valeriane continúa exponiendo los términos del contrato, su voz fluyendo con una cadencia hipnótica que parece diseñada para distraer. Mientras ella enfatiza la importancia de la discreción, sus manos gesticulan levemente sobre la mesa, creando el espacio justo y el ruido necesario para camuflar el movimiento.
+> Tus dedos se deslizan con precisión quirúrgica por la superficie de madera pulida. Sin que la mujer desvíe la mirada ni un segundo, el borde del pergamino cede y se desliza suavemente hacia tu lado, quedando ahora oculto bajo el borde de tu manga o el pliegue de tu ropa, fuera de la vista de la Madame.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4132 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = pergamino enrollado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5721: Kestra.inventory = pergamino enrollado
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 524 — 437/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1923 ms
+
+> "Entiendo perfectamente, Madame. La discreción es, después de todo, la moneda más valiosa en este negocio."
+> Sigo escuchando con una expresión de total atención y sumisión mientras aseguro el pergamino contra mi cuerpo.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 3+4=7
+
+### [4] DM
+
+  9421 ms
+
+> Madame Valeriane entorna los ojos, y la cadencia hipnótica de su voz se corta abruptamente. Sus dedos se detienen en seco sobre la mesa y su mirada, ahora afilada y gélida, desciende un instante hacia el pliegue de tu ropa antes de volver a clavarse en tus ojos. Una sonrisa gélida, que no llega a alcanzar su expresión, curva sus labios.
+> —La discreción es una moneda valiosa, es cierto —dice con un tono que ha perdido toda calidez—, pero la honestidad es la garantía del contrato. Me pregunto qué es exactamente lo que ha encontrado tan fascinante en ese pergamino como para querer conservarlo tan cerca de su piel.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1429 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 525 — 438/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2492 ms
+
+> "Solo un hábito profesional, Madame. El papel antiguo es tan frágil que temía que el aire de la estancia lo dañara."
+> Sigo manteniendo la sonrisa, aunque trato de relajar la postura para no parecer nervioso.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 13+4=17
+
+### [4] DM
+
+  9539 ms
+
+> Madame Valeriane sostiene la mirada un instante más, evaluando la tensión de tus hombros y la curva de tu sonrisa. El silencio se prolonga, cargado de una sospecha que parece vibrar en el aire, hasta que finalmente exhala un suspiro corto y sus hombros se relajan apenas unos milímetros. La frialdad de sus ojos no desaparece, pero la intensidad del escrutinio disminuye.
+> —Un celo encomiable por la conservación —responde, aunque su voz mantiene un matiz de escepticismo—. Pocos en estos días valoran la fragilidad del tiempo tanto como para convertir su propia ropa en un archivo. Que así sea, pues. Siempre y cuando ese "hábito profesional" no interfiera con la claridad de nuestro acuerdo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6137 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 526 — 439/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2030 ms
+
+> "Tenga la seguridad de que mi profesionalismo es tan impecable como mi discreción, Madame."
+> Le dedico una reverencia ligera y elegante mientras busco con la mirada cualquier documento o objeto valioso que haya dejado descuido sobre su mesa.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 7+1=8
+
+### [4] DM
+
+  10374 ms
+
+> Madame Valeriane arquea una ceja ante la reverencia, manteniendo una postura rígida que contrasta con la elegancia del gesto. Una comisura de sus labios se eleva en una sonrisa gélida, casi imperceptible, mientras observa el movimiento del cuerpo con una mezcla de condescendencia y curiosidad.
+> —Palabras hermosas, pero el tiempo es el único juez que no acepta sobornos —sentencia con voz seca.
+> Tus ojos recorren la superficie de la mesa de caoba oscura, pero la superficie está impecablemente despejada. Solo hay un tintero de plata y una pluma de ganso descansando sobre un soporte, alineados con una precisión geométrica que no deja espacio para papeles olvidados ni secretos a la vista.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1175 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 527 — 440/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2084 ms
+
+> "El tiempo es un juez severo, es cierto; por eso mismo prefiero aprovechar cada segundo para encontrar un terreno común."
+> Me inclino ligeramente hacia delante, tratando de captar cualquier detalle en su expresión o algún papel oculto bajo el borde del escritorio.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+3=13
+
+### [4] DM
+
+  5896 ms
+
+> Madame Valeriane no se inmuta ante la inclinación, manteniendo la espalda recta como una lanza. Su mirada permanece fija en los ojos, gélida y analítica, sin que un solo músculo de su rostro traicione alguna emoción o debilidad. La sonrisa imperceptible persiste, transformándose en una máscara de cortesía profesional que oculta cualquier rastro de intención inmediata.
+> La vista recorre los bordes del escritorio de caoba, pero la superficie es un desierto de orden absoluto. No hay esquinas dobladas, ni sombras que sugieran la presencia de documentos ocultos, ni una sola mota de polvo que rompa la simetría del tintero y la pluma. Todo en su espacio personal parece calculado para no revelar absolutamente nada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1592 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 528 — 441/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2354 ms
+
+> "Su orden es casi poético, Madame. Casi me hace sentir que soy el único elemento caótico en esta habitación."
+> Sigo observando su lenguaje corporal mientras hablo, buscando cualquier microgesto que rompa esa máscara de hielo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+3=20
+
+### [4] DM
+
+  6484 ms
+
+> Madame Valeriane mantiene la postura, pero el comentario sobre el caos provoca una contracción casi invisible en la comisura de sus labios. No es una sonrisa, sino un espasmo de reconocimiento. Mientras habla, notas que su mano derecha, apoyada sobre la caoba, realiza un movimiento rítmico y sutil: el dedo índice golpea la madera una sola vez, con una precisión mecánica, justo en el momento en que menciona la palabra "caótico".
+> Ese pequeño tic, desincronizado con su gélida expresión facial, revela una grieta. No hay miedo ni nerviosismo, sino una chispa de anticipación contenida, como si estuviera evaluando si ese "caos" que mencionas es una herramienta útil o un estorbo que deberá eliminar. Sus ojos no parpadean, pero la intensidad de su mirada se agudiza, pasando de la observación pasiva a un análisis activo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1036 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 529 — 442/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1967 ms
+
+> "Ese tipo de caos suele ser muy lucrativo si se sabe dirigir, Madame. ¿No cree que es el momento de hablar con sinceridad?"
+> Me inclino hacia adelante, manteniendo la sonrisa, mientras intento descifrar qué significa ese gesto.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+3=20
+
+### [4] DM
+
+  9358 ms
+
+> El dedo de Madame Valeriane se detiene en seco sobre la caoba. Al inclinarte, notas que el aroma a jazmín y tinta vieja que emana de ella se vuelve más denso, casi asfixiante. Sus ojos recorren tu rostro con una lentitud quirúrgica, y por primera vez, la máscara de cortesía se desliza para revelar una satisfacción fría. No es la sinceridad de quien se rinde, sino la de quien ha encontrado un interlocutor que habla su mismo idioma: el del interés y la manipulación.
+> —Lucrativo... —repite ella, saboreando la palabra como si fuera un vino caro—. Veo que no solo posee ambición, sino también una capacidad de lectura envidiable. La sinceridad es una moneda costosa, pero estoy dispuesta a hacer un pago inicial.
+> Se echa hacia atrás en su silla, rompiendo la tensión del espacio, y entrelaza los dedos con elegancia. Sus pupilas parecen dilatarse ligeramente mientras espera tu reacción, habiendo aceptado que el juego de las apariencias ha terminado para dar paso a una negociación real.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  876 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 530 — 443/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2713 ms
+
+> "Me alegra que hablemos el mismo lenguaje, Madame. Hagamos que este pago inicial sea memorable."
+> Me apoyo ligeramente en la mesa, manteniendo una sonrisa relajada mientras estudio su lenguaje corporal.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+3=10
+
+### [4] DM
+
+  4990 ms
+
+> Madame Valeriane mantiene esa sonrisa gélida, balanceando ligeramente la cabeza mientras sostiene tu mirada. A pesar de su postura relajada y la invitación al diálogo, hay una rigidez imperceptible en sus hombros y una chispa de cautela en sus ojos que no termina de apagarse. 
+> —La memoria es un recurso volátil, querido —responde con un tono aterciopelado—, pero el oro y la información son permanentes. 
+> Se queda en silencio, observando cómo te apoyas en la caoba, analizando cada uno de tus gestos con la misma precisión con la que alguien estudia un contrato antes de firmarlo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  934 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 531 — 444/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1954 ms
+
+> "Me gusta cómo piensa. Precisamente por eso creo que podemos llegar a un acuerdo mutuo."
+> Sigo apoyado en la mesa, manteniendo una expresión relajada y encantadora mientras busco cualquier grieta en su compostura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+3=23  CRÍTICO
+
+### [4] DM
+
+  10604 ms
+
+> Madame Valeriane no aparta la mirada, pero el ligero movimiento de sus dedos sobre la tela de su vestido delata una tensión que su rostro oculta. En ese instante, el velo de su cortesía se vuelve transparente: notas que sus ojos no buscan solo analizarte, sino que escanean nerviosamente la puerta detrás de ti y el reloj de pared, como si estuviera contando los segundos para que alguien llegue o para que el tiempo se agote.
+> La sonrisa de la mujer permanece intacta, aunque ahora percibes que es una máscara perfectamente calibrada. Hay una urgencia vibrante bajo su superficie, un hambre de resolución que contradice su ritmo pausado. Sus hombros, antes rígidos, se hunden apenas un milímetro, revelando que tu actitud relajada está empezando a erosionar su control sobre la situación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1125 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 532 — 445/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1703 ms
+
+> "Parece que tenemos prisa, Madame. Y yo siempre he creído que la urgencia es el mejor momento para llegar a un acuerdo generoso."
+> Me inclino ligeramente hacia delante, manteniendo la sonrisa, y observo sus dedos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+3=5
+
+### [4] DM
+
+  4292 ms
+
+> Madame Valeriane no reacciona a la mención del acuerdo, pero sus dedos se detienen en seco sobre la tela, congelados por un instante. Su mirada se clava en la tuya y la máscara de cortesía se endurece; el hambre de resolución que emanaba hace un momento se transforma en una barrera de frialdad profesional.
+> —La generosidad es una virtud admirable, pero la eficiencia es la que sostiene los negocios en esta ciudad —responde con una voz que ha recuperado su tono gélido y controlado—. No confunda mi puntualidad con desesperación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2128 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · bribe_offered
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 533 — 446/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1984 ms
+
+> "La eficiencia es precisamente lo que me trae aquí, Madame. Y nada es más eficiente que un secreto bien guardado."
+> Sostengo la mirada con una sonrisa ligera, intentando descifrar qué es exactamente lo que la ha puesto tan tensa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+3=11
+
+### [4] DM
+
+  3778 ms
+
+> Madame Valeriane sostiene la mirada, imperturbable. Sus ojos, gélidos y calculadores, no revelan ninguna grieta ni titubeo ante la mención de los secretos; se limita a observar tu sonrisa con una distancia analítica, como quien estudia una pieza de tela con un defecto casi invisible.
+> —Los secretos son mercancía, y yo no compro al aire —sentencia, retomando el movimiento de sus manos sobre la seda con una fluidez mecánica—. Si tiene algo que decir, dígalo. Si no, hablemos de los plazos de entrega.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  911 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 534 — 447/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2539 ms
+
+> "Me gusta su pragmatismo, Madame. Pero el valor de una joya no reside en el material, sino en quién la posee."
+> Me inclino ligeramente hacia delante, bajando la voz, e intento captar algún detalle en su escritorio o en sus gestos que denote una debilidad o un interés oculto.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 19+3=22
+
+### [4] DM
+
+  9546 ms
+
+> Madame Valeriane no parpadea, pero el ligero ritmo de sus dedos sobre la seda se interrumpe por una fracción de segundo. Mientras te inclinas, notas que en el borde de su escritorio descansa un pequeño relicario de plata, desgastado por el roce constante de un pulgar, y que sus ojos, aunque gélidos, se desvían instintivamente hacia él cuando mencionas el valor de la posesión.
+> —La poesía es un adorno costoso que no acelera la costura, querido —responde ella, aunque su tono ha perdido esa rigidez mecánica, dejando espacio a una curiosidad cautelosa—. Sigue hablando. Me interesa saber qué clase de «joya» cree que posee y por qué piensa que yo soy la persona adecuada para tasar su valor.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3784 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: relicario de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → ya existía: item relicario de plata
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 535 — 448/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1999 ms
+
+> "Usted es la única mujer en esta ciudad capaz de reconocer la diferencia entre una reliquia y un trofeo, Madame."
+> Me deslizo un poco más sobre el escritorio, tratando de bloquear sutilmente su visión del relicario mientras hablo.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 1+4=5  PIFIA
+
+### [4] DM
+
+  5340 ms
+
+> Al deslizarte sobre la madera, tu movimiento es torpe y brusco. El brazo choca contra el borde del escritorio, empujando el relicario de plata con un ruido metálico seco que lo hace girar y deslizarse peligrosamente hacia el vacío del borde.
+> Madame Valeriane reacciona con un reflejo eléctrico, atrapando la pieza justo antes de que caiga, pero su expresión se ha transformado. Sus ojos, ahora gélidos y afilados, te clavan una mirada de absoluto desprecio mientras retira el objeto con un gesto protector.
+> —La diferencia entre una reliquia y un trofeo, joven, es que el trofeo es un objeto inanimado, mientras que la reliquia posee un valor que personas tan descuidadas como usted no podrían ni imaginar —sentencia ella, recuperando la rigidez mecánica—. Su falta de tacto es tan evidente como su pretensión. Retírese antes de que decida que su presencia es el único residuo que deseo limpiar de mi oficina.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2196 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · ideal_violated
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 536 — 449/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2340 ms
+
+> "Mis más sinceras disculpas, Madame. Mi entusiasmo por la belleza de su pieza ha superado a mi coordinación."
+> Pongo mi mejor sonrisa, retrocediendo un paso con un gesto de sumisión, mientras intento notar si hay algún otro objeto de valor que haya quedado expuesto durante el revuelo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 5+3=8
+
+### [4] DM
+
+  4859 ms
+
+> Madame Valeriane no se deja ablandar por la sonrisa ni por las palabras. Sus labios se curvan en una mueca de incredulidad mientras coloca el relicario en el centro exacto del escritorio, lejos de cualquier peligro. No hay rastro de perdón en su postura; permanece erguida, como una estatua de mármol, observando el retroceso con una frialdad que hace que el aire de la oficina se sienta varios grados más bajo.
+> Mientras retrocedes, tu mirada recorre la superficie del escritorio y las estanterías cercanas, pero el revuelo no ha revelado nada nuevo. Los objetos permanecen en sus lugares asignados, ocultos tras el orden obsesivo de la mujer o protegidos por la penumbra de la habitación. Solo ves el brillo metálico del relicario y el polvo suspendido en los rayos de luz que atraviesan la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1168 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 537 — 450/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1912 ms
+
+> "No sea tan severa, Madame. Solo buscaba admirar la pieza de cerca"
+> Me mantengo a una distancia prudencial, pero muevo los dedos con sutileza, intentando distraer su atención mientras busco cualquier papel o nota que haya quedado a la vista en el borde del escritorio.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 15+1=16
+
+### [4] DM
+
+  4493 ms
+
+> Madame Valeriane no desvía la mirada de tus ojos, ignorando el movimiento de tus manos con una indiferencia gélida. Sus dedos tamborilean una sola vez sobre la madera oscura del escritorio, un sonido seco que resuena en el silencio de la oficina. "La admiración es una virtud, joven, pero la curiosidad sin permiso es una impertinencia", sentencia con una voz que corta el aire como una hoja de afeitar.
+> Mientras ella mantiene el contacto visual, tu mirada capta un desliz en la organización milimétrica de la mesa. Bajo el borde de un pesado tintero de plata, asoma la esquina de un pergamino amarillento, parcialmente oculto. Es una nota breve, escrita con una caligrafía apresurada y nerviosa, que menciona una cita en el Jardín de los Susurros para la medianoche.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3656 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.knowledge
+  ✓ creación location: Jardín de los Susurros
+  ⚠ nombres no reconocidos: Jardín, Susurros
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → creada: location Jardín de los Susurros
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 538 — 451/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1882 ms
+
+> "Tiene usted razón, Madame. Mi curiosidad a veces corre más rápido que mi educación."
+> Bajo las manos con suavidad y esbozo una sonrisa sheepish, mientras intento deslizar el pergamino hacia mi manga aprovechando el gesto.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 18+2=20
+
+### [4] DM
+
+  4353 ms
+
+> El movimiento es fluido, casi invisible. Mientras tu sonrisa desvía la atención de la mujer hacia tu rostro, tus dedos actúan con una precisión quirúrgica, rescatando el trozo de pergamino amarillento y deslizándolo en el refugio de tu manga antes de que el tintero llegue a moverse un milímetro. El papel se siente seco y quebradizo contra tu piel, un secreto robado en pleno acto.
+> Madame Valeriane arquea una ceja, evaluando tu expresión con una mezcla de escepticismo y una pizca de condescendencia. Sus ojos, gélidos y analíticos, recorren tu rostro buscando cualquier rastro de nerviosismo, pero no detectan nada fuera de lo común. "Al menos posee la honestidad de admitirlo", murmura, volviendo a apoyar la espalda en su silla con una elegancia imperturbable.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2204 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = pergamino enrollado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5760: Kestra.inventory = pergamino enrollado
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 539 — 452/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2031 ms
+
+> "Es un placer ser honesto cuando la compañía es tan fascinante."
+> Mantengo la sonrisa mientras me inclino ligeramente hacia delante, tratando de leer sus intenciones.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+3=13
+
+### [4] DM
+
+  4587 ms
+
+> Madame Valeriane deja escapar un suspiro corto, casi un ronroneo, y una comisura de sus labios se eleva en una sonrisa que no llega a sus ojos. Se mantiene inmóvil, observándote con una calma calculada que sugiere que está acostumbrada a manejar a personas que intentan impresionarla o manipularla.
+> A pesar de su actitud condescendiente, percibes que no hay una hostilidad activa en ella; más bien, parece estar evaluándote como quien estudia una pieza de curiosity en una vitrina. Su mirada es inquisitiva, pero no detectas ninguna señal de que haya notado la desaparición del pergamino o de que esté planeando una reacción inmediata contra ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1475 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 540 — 453/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1866 ms
+
+> "Es un placer descubrir que no soy el único aquí que sabe apreciar el valor del silencio, Madame."
+> Sostengo su mirada con una sonrisa relajada, mientras deslizo discretamente el pergamino para asegurarme de que esté bien oculto.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+3=4  PIFIA
+
+### [4] DM
+
+  5268 ms
+
+> Madame Valeriane ladea la cabeza, y el silencio que antes parecía un acuerdo mutuo se vuelve repentinamente denso y asfixiante. Su sonrisa se ensancha, pero el gesto ahora resulta predatorio, como si hubiera detectado una grieta invisible en tu compostura que la divierte profundamente.
+> —El silencio es un lienzo, querido —responde con una voz que gotea una falsa dulzura—, pero algunos cometen el error de creer que el lienzo está vacío solo porque no pueden ver la tinta.
+> Se inclina ligeramente hacia delante, y en ese movimiento, su mirada se clava con una intensidad quirúrgica en el lugar exacto donde has ocultado el pergamino, aunque no hace ningún gesto por recuperarlo todavía.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2325 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta madame_valeriane · npc.knowledge = Kestra oculta un pergamino
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 541 — 454/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1669 ms
+
+> "Vaya, Madame, me halaga que preste tanta atención a los detalles de mi vestuario."
+> Suelto una risita ligera y me reclino en el asiento, manteniendo la postura relajada mientras intento desviar su atención con un gesto despreocupado.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 11+4=15
+
+### [4] DM
+
+  10174 ms
+
+> Madame Valeriane parpadea lentamente, y la tensión predatoria de sus hombros se disipa, reemplazada por una risa cristalina y breve que resuena en la estancia. Se recuesta en su asiento, imitando tu postura con una elegancia felina, mientras su mirada se desplaza desde tu ropa hacia el resto de la habitación, perdiendo el foco quirúrgico que antes mantenía sobre el pergamino.
+> —La confianza es un accesorio que te sienta sorprendentemente bien —comenta, jugueteando con el borde de su guante—. Posees una ligereza envidiable, casi refrescante en un lugar donde todos caminan como si llevaran el peso del mundo sobre los hombros.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2398 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 542 — 455/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  21 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1887 ms
+
+> "Usted es muy amable, Madame. Aunque me temo que mi ligereza es, en gran parte, cuestión de hábito."
+> Le dedico mi sonrisa más convincente mientras desplazo la mirada por su despacho, buscando algún objeto de valor o un documento descuidado.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 18+1=19
+
+### [4] DM
+
+  5946 ms
+
+> Madame Valeriane arquea una ceja, divertida por la respuesta, y mantiene el contacto visual mientras deja que el silencio se prolongue un instante, evaluando la sinceridad de esa sonrisa. Sus dedos siguen tamborileando rítmicamente sobre el apoyabrazos de terciopelo, en una actitud ahora relajada, aunque sus ojos no dejan de analizar cada microgesto.
+> Mientras ella habla, tu mirada recorre el despacho y detecta un detalle que escapa a la vista casual: bajo una pila de correspondencia sellada con lacre rojo, asoma la esquina de un mapa antiguo, amarillento y parcialmente desplegado. El papel parece tacto pergamino grueso y muestra una zona boscosa con anotaciones hechas a mano en los márgenes, escritas con una tinta violeta que aún conserva cierto brillo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2952 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: mapa antiguo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item mapa antiguo
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 543 — 456/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1834 ms
+
+> "Es un placer descubrir que compartimos el mismo sentido del humor, Madame."
+> Sigo sonriendo mientras intento desplazar discretamente el montón de correspondencia para ver mejor el mapa.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 13+2=15
+
+### [4] DM
+
+  6356 ms
+
+> Madame Valeriane suelta una risita seca y corta, desviando la mirada un segundo hacia el ventanal mientras asiente con elegancia. El movimiento de sus dedos sobre el terciopelo se detiene justo cuando el silencio vuelve a llenar la estancia, dándote el espacio necesario para actuar.
+> Con un movimiento fluido y casi imperceptible, deslizas el borde de los sobres de lacre rojo. El mapa se revela más claramente: el pergamino está curtido y las anotaciones en tinta violeta parecen marcar rutas que se adentran en el corazón del bosque, convergiendo en un punto donde el trazo se vuelve errático y denso. Valeriane vuelve a fijar sus ojos en ti, ajena a la manipulación de sus papeles.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1976 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 544 — 457/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3008 ms
+
+> "Es un trazado fascinante, Madame. Casi puedo sentir el aroma del bosque."
+> Sigo deslizando el mapa solo lo justo para memorizar el punto donde la tinta se vuelve densa, mientras mantengo la mirada fija en ella y una sonrisa encantadora.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 14+2=16
+
+### [4] DM
+
+  6530 ms
+
+> Tus dedos se mueven con una precisión quirúrgica, desplazando el pergamino apenas unos milímetros. Mientras mantienes el contacto visual y la sonrisa, tus ojos captan la geometría de aquel punto errático: una maraña de trazos violetas que sugieren un terreno accidentado o una vegetación impenetrable, marcando un destino exacto en la espesura.
+> Madame Valeriane no parpadea, absorta en el juego de miradas. Se inclina ligeramente hacia adelante, apoyando la barbilla en una mano, mientras una chispa de curiosidad brilla en sus ojos ante tu comentario. 
+> —El aroma del bosque es embriagador, pero puede ser traicionero para quien no sabe leer sus silencios —responde con una voz aterciopelada—. Dígame, ¿es esa fascinación profesional o un simple capricho por lo desconocido?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1089 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 545 — 458/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3577 ms
+
+> "Digamos que tengo un talento natural para encontrar tesoros donde otros solo ven maleza."
+> Mantengo la sonrisa y trato de memorizar la ubicación exacta de esos trazos violetas antes de que el pergamino se mueva.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 14+1=15
+
+### [4] DM
+
+  5467 ms
+
+> Madame Valeriane suelta una risa suave, un sonido que recuerda al tintineo de cristales finos, mientras sus ojos analizan tu expresión con renovado interés. No retira el pergamino, permitiendo que el silencio se prolongue un instante más mientras evalúa la seguridad de tu declaración.
+> Tus ojos captan la disposición exacta de los trazos violetas: el punto errático se encuentra en la intersección de dos líneas curvas que parecen representar un río seco y una formación rocosa en forma de media luna. La marca es precisa y, ahora que has fijado la geometría en tu memoria, la ubicación del destino en la espesura queda grabada con claridad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1048 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 546 — 459/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2273 ms
+
+> "Es un documento fascinante, Madame, pero me temo que mi tiempo es tan limitado como mi paciencia."
+> Suelto una risita ligera y retiro la mano del pergamino, fingiendo que he perdido el interés ahora que ya he memorizado la marca.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 13+4=17
+
+### [4] DM
+
+  6905 ms
+
+> Madame Valeriane arquea una ceja, sorprendida por el repentino cambio de actitud. La risa ligera y el gesto de desinterés parecen convencerla de que su misterio ha resultado insuficiente para capturar tu curiosidad, o que quizás tu impaciencia ha superado la fascinación.
+> Ella retira el pergamino con un movimiento fluido, enrollándolo con elegancia mientras una sonrisa enigmática permanece en sus labios. "La impaciencia es un fuego que consume la sabiduría, querido, pero respeto la urgencia de quien sabe lo que busca", comenta con un tono meloso, aunque sus ojos siguen escrutando tu rostro en busca de alguna grieta en tu máscara.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1061 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 547 — 460/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1986 ms
+
+> "Lamento que mi entusiasmo haya parecido impaciencia, Madame. Solo que el tiempo es el único lujo que no puedo permitirme malgastar."
+> Ladeo la cabeza con una sonrisa encantadora, tratando de recuperar el interés de Valeriane por el pergamino.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 11+4=15
+
+### [4] DM
+
+  5594 ms
+
+> Madame Valeriane sostiene el pergamino contra su pecho, observándote con una mirada que oscila entre la diversión y el análisis. La suavidad de tu tono y la curva de tu sonrisa parecen haber alisado las aristas de su sorpresa; el aire tenso se disuelve, sustituido por una curiosidad renovada.
+> "Un argumento impecable", admite ella, dejando que una pequeña risa escape de sus labios mientras desenrolla el papel una vez más, aunque solo lo despliega parcialmente. "Me gusta la gente que valora el tiempo, pues es la moneda más cara de este lugar. Veamos si lo que busco en ti es tan valioso como el tiempo que pretendes ahorrar".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2006 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 548 — 461/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2115 ms
+
+> "Me halaga que valore mi tiempo, Madame. Estoy seguro de que encontrará que mi valor es... incalculable."
+> Me acerco un paso más, intentando echar un vistazo al contenido del pergamino mientras ella lo sostiene.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 9+1=10
+
+### [4] DM
+
+  4726 ms
+
+> Madame Valeriane arquea una ceja ante tu audacia, manteniendo una distancia prudencial que hace que tu avance sea insuficiente. Al inclinarte, solo alcanzas a ver el color amarillento del cuero viejo y algunas manchas de tinta borrosas que no forman palabras legibles; ella desplaza el pergamino con un movimiento fluido y deliberado, ocultando el contenido bajo la palma de su mano.
+> "La confianza es un atributo seductor, aunque a veces raya en la presunción", comenta con un deje de ironía, mientras sus ojos recorren tu figura, evaluando cada detalle de tu postura. Se mantiene firme en su sitio, dejando que el silencio se prolongue un instante para recuperar el control del ritmo de la conversación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  943 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 549 — 462/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1778 ms
+
+> "La presunción es solo confianza con un mejor sastre, Madame."
+> Me enderezo lentamente y le dedico mi sonrisa más encantadora, intentando leer su lenguaje corporal para saber cuánto le importa realmente que yo vea ese papel.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+3=5
+
+### [4] DM
+
+  10106 ms
+
+> Madame Valeriane suelta una risa breve, un sonido seco que no llega a sus ojos. La sonrisa del personaje parece deslizarse sobre ella como el agua sobre el mármol; no hay un rastro de admiración, ni una grieta en su compostura que sugiera que el comentario haya calado.
+> Se mantiene rígida, con la mano aún presionando el pergamino contra la mesa, transformando su postura en una barrera infranqueable. No hay gestos nerviosos ni titubeos; su lenguaje corporal es un muro de cortesía glacial que no revela absolutamente nada sobre la importancia de aquel papel, más allá de que tiene la intención clara de que siga siendo un secreto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  925 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 550 — 463/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2429 ms
+
+> "Parece que ese papel es más valioso que cualquier joya de esta sala, Madame."
+> Sigo sonriendo, pero inclino la cabeza ligeramente, tratando de analizar cualquier microgesto que haya pasado por alto.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+3=15
+
+### [4] DM
+
+  6622 ms
+
+> Madame Valeriane no se inmuta ante la observación, manteniendo esa máscara de porcelana imperturbable. Sin embargo, al inclinar la cabeza, notas que sus nudillos, que presionan el pergamino, se han vuelto blancos por la fuerza del agarre. Es un detalle mínimo, casi imperceptible, pero delata una tensión que su rostro se niega a mostrar; el documento no es solo valioso, es algo que teme perder o que le genera una ansiedad genuina.
+> —Las joyas son adornos, querido. Los papeles, en cambio, son voluntad —responde ella con una voz que suena a cristal rompiéndose, mientras desliza el pergamino con un movimiento fluido y preciso hacia el interior de un cajón bajo la mesa, cerrándolo con un clic metálico y definitivo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  962 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 551 — 464/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3565 ms
+
+> "La voluntad es un concepto tan volátil, Madame. Me pregunto qué secretos guarda ese cajón para que necesite tanta seguridad."
+> Me inclino hacia delante, fingiendo interés en el resto de la conversación mientras intento observar la cerradura del cajón.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 12+1=13
+
+### [4] DM
+
+  7931 ms
+
+> Madame Valeriane esboza una sonrisa gélida que no llega a sus ojos, manteniendo el torso erguido mientras el silencio se prolonga un instante más de lo natural. El roce de sus sedas suena como un susurro mientras se acomoda en la silla, observándote con una curiosidad analítica, como quien estudia un insecto bajo un cristal.
+> Al inclinarte, tu mirada se centra en la madera oscura del mueble. Logras distinguir que la cerradura no es el mecanismo estándar de un escritorio; es un dispositivo de latón intrincado, con una placa grabada que muestra un relieve de raíces entrelazadas, aunque el ángulo y la sombra del tablero impiden discernir si hay alguna vulnerabilidad evidente o un truco oculto en el cierre.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1219 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 552 — 465/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2141 ms
+
+> "Es un diseño fascinante, Madame. Casi parece que el mueble quisiera guardar secretos por voluntad propia."
+> Sigo inclinado, intentando analizar la placa de raíces para encontrar el punto débil del mecanismo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 5+0=5
+
+### [4] DM
+
+  11587 ms
+
+> Madame Valeriane suelta una risita seca, un sonido breve que carece de cualquier rastro de calidez. "La voluntad del objeto es, a menudo, la voluntad de quien lo mandó fabricar", responde mientras entrelaza sus dedos, sin apartar la vista de tu nuca.
+> Desde tu posición, la placa de raíces se vuelve un laberinto de líneas confusas. El latón brilla bajo la luz, pero los relieves son tan uniformes y el ajuste contra la madera es tan preciso que no logras detectar ninguna fisura, palanca oculta ni irregularidad que sugiera un punto débil. El mecanismo permanece hermético y silencioso, desafiando cualquier intento superficial de análisis.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  36487 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 553 — 466/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3031 ms
+
+> "Vaya precisión... casi parece que el objeto no quiere ser molestado."
+> Me enderezo y le dedico a Madame Valeriane mi sonrisa más encantadora mientras me alejo un paso de la placa.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  14861 ms
+
+> Madame Valeriane arquea una ceja, sorprendida por el cambio repentino de actitud. La frialdad de su mirada se quiebra, sustituida por una chispa de genuino interés mientras observa tu sonrisa. Su postura se relaja y una pequeña sonrisa, esta vez más natural y menos calculada, asoma en la comisura de sus labios.
+> "Tienes un don para el tacto, querido, y una confianza que resulta... refrescante", admite con un tono mucho más suave, casi melódico. Se inclina ligeramente hacia adelante, acortando la distancia, y su voz baja a un susurro cómplice. "Me gusta la gente que sabe cuándo dejar de forcejear con el metal para empezar a jugar con las personas. Dime, ¿qué es exactamente lo que buscas obtener de este capricho mecánico?"
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4279 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 554 — 467/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3759 ms
+
+> "Busco algo que sea tan único como usted, Madame. Un objeto que no solo funcione, sino que cuente una historia que valga la pena pagar."
+> Me inclino hacia ella, manteniendo esa sonrisa cómplice, y trato de leer sus intenciones.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+3=12
+
+### [4] DM
+
+  22111 ms
+
+> Madame Valeriane suelta una risa ligera, un sonido cristalino que resuena en el espacio entre los dos. Sus ojos brillan mientras sostiene la mirada, disfrutando del juego de seducción y palabras. Se endereza lentamente, aunque mantiene esa atmósfera de complicidad, y comienza a juguetear con un anillo de plata en su dedo anular.
+> A pesar de su actitud ahora abierta y el tono melódico de su voz, hay una barrera invisible que permanece intacta. Sus gestos son fluidos y su sonrisa parece sincera, pero no hay ninguna grieta en su fachada que permita vislumbrar sus verdaderos motivos o si realmente se siente persuadida por el halago. Permanece como un enigma envuelto en seda y cortesía.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  46549 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 555 — 468/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3293 ms
+
+> "Me fascina cómo ese anillo complementa su mirada, aunque sospecho que guarda secretos más brillantes que la plata."
+> Me acerco un paso más, reduciendo la distancia, e intento notar cualquier gesto involuntario que delate su verdadera intención.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+3=5
+
+### [4] DM
+
+  6596 ms
+
+> Madame Valeriane inclina la cabeza con una elegancia estudiada, dejando que la luz capture el brillo del anillo mientras su sonrisa se ensancha. No retrocede ante el paso en falso de la distancia, sino que sostiene el espacio con una calma imperturbable, como quien domina el ritmo de una danza invisible.
+> Sus gestos siguen siendo fluidos y precisos; no hay un parpadeo errático, ni un ajuste nervioso de la ropa, ni ninguna tensión en sus hombros que traicione su serenidad. La fachada de seda y cortesía permanece absolutamente lisa, dejándote únicamente con la imagen de una mujer que disfruta plenamente de la atención recibida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  957 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 556 — 469/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  7676 ms
+
+> "Tiene usted una seguridad envidiable, Madame. Casi me hace olvidar que el brillo de ese anillo es lo único que realmente importa en esta habitación."
+> Sigo manteniendo la cercanía, buscando cualquier grieta en esa compostura mientras observo sus manos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+3=12
+
+### [4] DM
+
+  7491 ms
+
+> Madame Valeriane suelta una risita cristalina, un sonido breve y melodioso que no llega a romper la distancia profesional que ha impuesto con su lenguaje corporal. No retira la mano ni oculta la joya; al contrario, deja que el anillo capture la luz una vez más mientras mueve los dedos con una lentitud casi hipnótica.
+> —La importancia es una cuestión de perspectiva, querido —responde con una voz que acaricia el aire—. Para algunos, el brillo es el destino; para otros, solo es la lámpara que ilumina el camino hacia algo mucho más interesante.
+> Sus manos permanecen firmes, sus dedos relajados y su respiración rítmica. No hay rastro de sudor, temblores ni gestos impulsivos que sugieran nerviosismo o incomodidad ante tu proximidad. La superficie de seda sigue siendo impecable.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1096 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 557 — 470/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2893 ms
+
+> "Me fascinan las perspectivas, Madame, especialmente aquellas que ocultan secretos."
+> Sigo observando el anillo mientras trato de descifrar si hay algún valor oculto o una intención detrás de su juego.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+3=20
+
+### [4] DM
+
+  9533 ms
+
+> El brillo del anillo no es el de una piedra preciosa convencional; la luz no rebota en la superficie, sino que parece filtrarse desde el interior del cristal, pulsando con una cadencia orgánica, casi como un corazón diminuto. Observando la calma imperturbable de Madame Valeriane y la forma en que el objeto parece resonar con su propia energía, queda claro que la joya no es un simple adorno de lujo, sino un conducto o una llave. No es un trofeo de vanidad, sino una herramienta de poder cuidadosamente mantenida.
+> Valeriane arquea una ceja, manteniendo esa sonrisa enigmática que nunca llega a revelar sus cartas. Sus ojos recorren tu rostro con una curiosidad renovada, como quien descubre que la pieza que tiene delante es más compleja de lo que parecía en primera instancia.
+> —Los secretos son el único equipaje que no pesa al caminar, pero que más puede llegar a hundir a quien no sabe llevarlos —comenta, deslizando el anillo hacia el interior de su palma con un movimiento fluido y deliberado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1241 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 558 — 471/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3776 ms
+
+> "Una analogía preciosa, Madame, aunque yo prefiero pensar que los secretos son la moneda más estable en tiempos de crisis."
+> Me inclino ligeramente hacia delante, tratando de captar cualquier detalle del movimiento de su mano o algún rastro de energía residual en la mesa.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 4+1=5
+
+### [4] DM
+
+  6084 ms
+
+> Madame Valeriane suelta una risita seca, casi imperceptible, mientras cierra el puño sobre el anillo. El movimiento es tan limpio y rápido que no deja rastro; la joya desaparece en la oscuridad de su mano sin que haya un solo roce audible contra la madera de la mesa.
+> Al inclinarte, el aire entre vosotros huele a sándalo y a un rastro metálico, similar al ozono tras una tormenta, pero la superficie de la mesa permanece inerte. No hay vibraciones, ni destellos residuales, ni el menor indicio de dónde ha quedado resguardado el objeto. La mujer te sostiene la mirada, divertida por tu intento de escrutinio, manteniendo su expresión imperturbable.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1007 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 559 — 472/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3528 ms
+
+> "Un truco admirable, Madame. Casi me hace dudar de mis propios sentidos."
+> Me reclino en la silla con una sonrisa relajada y observo sus manos y su postura para detectar cualquier tensión.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 18+3=21
+
+### [4] DM
+
+  7975 ms
+
+> Madame Valeriane mantiene la espalda recta y los hombros relajados, pero hay un detalle que traiciona su compostura: el dedo anular de su mano cerrada ejerce una presión excesiva, blanqueando ligeramente la falange. No es el agarre de quien esconde un objeto, sino el de quien lo sujeta con una fuerza deliberada y rítmica, casi como si estuviera coordinando el movimiento con su propia respiración.
+> La mujer arquea una ceja, y esa pequeña chispa de curiosidad en sus ojos sugiere que ha notado que no te has dejado intimidar por su despliegue. "La duda es la primera herramienta del sabio, querido", responde con una voz que ahora suena un matiz más suave, aunque mantiene esa distancia gélida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2477 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 560 — 473/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2978 ms
+
+> "La sabiduría es un lujo que solo los que tienen el bolsillo lleno pueden permitirse, Madame."
+> Le dedico mi sonrisa más encantadora mientras intento analizar el ritmo de su mano para entender qué intenta ocultar o controlar.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+3=23  CRÍTICO
+
+### [4] DM
+
+  24125 ms
+
+> La sonrisa de Madame Valeriane no flaquea, pero sus ojos se entrecierran levemente, procesando la insolencia con una mezcla de diversión y cálculo. El comentario sobre el dinero parece haber golpeado una cuerda sensible, pues el ritmo de su mano se acelera un instante antes de recuperar su cadencia mecánica.
+> El movimiento no es un tic nervioso ni el intento de ocultar un arma. El dedo anular presiona contra la palma siguiendo un patrón preciso de pulsaciones: tres cortas, una larga, una pausa. Es un código, una cuenta regresiva o una señal táctil coordinada con alguien que no está a la vista. Madame Valeriane no está ansiosa; está sincronizando el tiempo con un evento externo que ocurrirá en el momento exacto en que termine su secuencia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7205 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 561 — 474/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3792 ms
+
+> "Vaya, Madame, me fascina esa pequeña danza de sus dedos. Casi parece que estuviera contando los segundos para darme una buena noticia."
+> Me inclino hacia delante, fingiendo interés en su mano mientras intento descifrar si hay alguien observando desde las sombras.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 14+1=15
+
+### [4] DM
+
+  6869 ms
+
+> Madame Valeriane suelta una risita seca, un sonido que recuerda al choque de cristales finos, mientras mantiene la mirada fija en la tuya. No retira la mano, permitiendo que tu curiosidad se despliegue, aunque su expresión permanece como una máscara de porcelana, imperturbable y gélida.
+> Al desplazar la vista hacia el entorno, notas una irregularidad en el pesado cortinaje de terciopelo que flanquea la puerta del salón. Hay un leve desplazamiento de la tela, una sombra que no encaja con el juego de luces de las velas, y el rastro casi imperceptible de una respiración contenida. Alguien aguarda justo detrás, atento a cada palabra y al ritmo de los dedos de la Madame.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1304 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 562 — 475/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3450 ms
+
+> "Toda esta elegancia es fascinante, pero el aire se siente... cargado."
+> Hago un gesto vago hacia las cortinas mientras sigo manteniendo el contacto visual con ella, intentando analizar su reacción al comentario.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+3=17
+
+### [4] DM
+
+  13706 ms
+
+> Madame Valeriane no parpadea. Al seguir el rastro de tu gesto hacia el terciopelo, sus pupilas se dilatan apenas un milímetro, una grieta microscópica en su compostura. No hay sorpresa en su rostro, sino una confirmación gélida; el ligero arqueo de una ceja sugiere que el juego de sombras es, en realidad, una pieza más de la decoración de su salón.
+> A través de su lenguaje corporal, percibes que no teme la presencia oculta, sino que la controla. Su silencio se prolonga, cargado de una expectación calculada, mientras el aire parece espesarse entre vosotros. La Madame esboza una sonrisa mínima, desprovista de calidez, como quien observa a un insecto descubrir la telaraña justo antes de quedar atrapado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7347 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 563 — 476/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3908 ms
+
+> "Parece que vuestra hospitalidad es más... exhaustiva de lo que imaginaba."
+> Sostengo la mirada mientras busco algún objeto de valor que Madame Valeriane pueda estar ocultando en su persona o en el mobiliario cercano.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 12+1=13
+
+### [4] DM
+
+  9935 ms
+
+> Madame Valeriane deja que el silencio se prolongue un instante más, deleitándose en la tensión, antes de responder con una voz que suena a seda rozando el mármol. «La atención al detalle es la diferencia entre una anfitriona y una simple propietaria, querido. Me alegra ver que posee la agudeza necesaria para apreciar los matices de mi hogar».
+> Tus ojos recorren el salón, saltando de los pliegues del terciopelo a los adornos de la Madame. No detectas ningún objeto fuera de lugar ni ningún tesoro oculto a simple vista; todo en la estancia, desde la joya que adorna su cuello hasta la disposición de los muebles, parece estar exactamente donde ella desea que esté, sin secretos evidentes que escapen a un vistazo superficial.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1445 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 564 — 477/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3881 ms
+
+> "Es usted una mujer de un gusto exquisito, Madame. Casi tan exquisito como el secreto que guarda este salón."
+> Me acerco un paso más a ella, manteniendo la sonrisa, mientras intento analizar sus gestos para ver si hay algo que le inquiete.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+3=9
+
+### [4] DM
+
+  6410 ms
+
+> Madame Valeriane no se inmuta ante el comentario, manteniendo esa sonrisa imperturbable que parece más una máscara de porcelana que un gesto genuino. Inclina levemente la cabeza, observándote con una curiosidad gélida, mientras el roce de sus sedas suena como un susurro en el silencio del salón.
+> A pesar de tu intento de analizarla, la mujer se mantiene completamente imperturbable. Sus gestos son fluidos, calculados y carecen de cualquier rastro de nerviosismo o duda; no hay un tic en sus dedos ni una vacilación en su mirada que sugiera que tu insinuación haya tocado algún punto sensible.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1171 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 565 — 478/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3264 ms
+
+> "Una máscara perfecta, Madame. Casi envidio tanta disciplina."
+> Me acerco un paso más, manteniendo la sonrisa, e intento notar si hay algún objeto oculto entre sus sedas o algún detalle inusual en su vestimenta.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 5+1=6
+
+### [4] DM
+
+  6419 ms
+
+> Madame Valeriane suelta una risita seca, un sonido breve que no llega a sus ojos. "La disciplina es la única moneda que nunca se devalúa, querido", responde mientras endereza la espalda, manteniendo la distancia exacta para que tu paso adelante no rompa su espacio personal.
+> A pesar de tu escrutinio, las capas de seda y encaje de su vestido se pliegan y desplazan con una naturalidad absoluta. No percibes ningún bulto extraño, ni el brillo de un arma oculta, ni ningún detalle que escape a la opulencia convencional de su atuendo. Para ti, es simplemente una mujer vestida con una elegancia impecable y gélida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1069 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 566 — 479/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3798 ms
+
+> "La disciplina es admirable, Madame, pero la flexibilidad es lo que permite que las cosas no se rompan."
+> Sigo manteniendo esa sonrisa ligera mientras busco algún rastro de nerviosismo o una grieta en su compostura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 16+3=19
+
+### [4] DM
+
+  6892 ms
+
+> Madame Valeriane arquea una ceja, procesando la réplica con una lentitud deliberada. Sin embargo, mientras sostiene la mirada, el ritmo de su respiración se altera apenas un milímetro y sus dedos, enguantados en seda blanca, se cierran con una presión imperceptible sobre el mango de su abanico cerrado. Es un gesto fugaz, una micro-reacción de tensión que desmiente la gélida máscara de su rostro.
+> "La flexibilidad a menudo es solo un eufemismo para la debilidad", replica ella, aunque el tono de su voz ha perdido esa seguridad absoluta, volviéndose ligeramente más aguda. Se mantiene firme, pero hay una chispa de inquietud en sus pupilas que no estaba allí hace un momento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1224 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 567 — 480/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2868 ms
+
+> "La debilidad es un precio muy bajo por una alianza conveniente, Madame."
+> Sostengo la mirada con una sonrisa ligera, intentando detectar qué es exactamente lo que la ha puesto nerviosa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+3=12
+
+### [4] DM
+
+  8032 ms
+
+> Madame Valeriane mantiene la barbilla en alto, pero el ligero temblor de su abanico contra la palma de la mano delata que el equilibrio de la conversación se ha desplazado. Sus ojos se entrecierran, evaluando la propuesta con una mezcla de cautela y fastidio, mientras el silencio se prolonga en la estancia, interrumpido solo por el tic-tac rítmico de un reloj de pared.
+> A pesar de su esfuerzo por mantener la compostura, no logras discernir el origen exacto de su inquietud; la máscara de aristócrata es espesa y sus gestos, aunque tensos, son demasiado ambiguos para revelar el secreto que la ha puesto a la defensiva.
+> "Una alianza conveniente", repite ella, saboreando las palabras con escepticismo. "Usted habla de conveniencias como quien negocia el precio de una tela en el mercado, no como quien se acerca a una mujer de mi posición".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1855 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 568 — 481/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3739 ms
+
+> "Precisamente porque sé valorar la calidad de la tela, Madame, sé que una pieza tan fina como la suya no puede dejarse al azar."
+> Suelto una risa ligera y me inclino un poco hacia ella, buscando captar cualquier detalle en su expresión.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 1+4=5  PIFIA
+
+### [4] DM
+
+  9366 ms
+
+> Madame Valeriane se tensa visiblemente. Al inclinarte, el comentario sobre la "calidad de la tela" no suena a cumplido, sino a una condescendencia intolerable o a un intento burdo de manipulación que choca frontalmente contra su orgullo. El abanico se cierra de golpe con un chasquido seco que resuena en toda la habitación, y ella retrocede un paso, marcando una distancia física inmediata y gélida.
+> "Su arrogancia solo es superada por su falta de tacto", sentencia con una voz que ha perdido cualquier rastro de cortesía, ahora afilada como una daga. "Me ha confundido con una mercancía y cree que una risa ligera compensa su insolencia. Me temo que la audiencia ha terminado".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  147283 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento madame_valeriane · ideal_violated
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: madame_valeriane
+
+### [9] ESTADO DESPUÉS
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 569 — 482/1313 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Madame Valeriane: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  22 entidades · contexto de 313 caracteres
+
+### [2] JUGADOR — Kestra
+

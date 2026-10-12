@@ -1,0 +1,44 @@
+
+# VERTICAL SLICE — Par 15 (real) · G2 (Monolítico) · Solar Viejo (monolithic)
+
+- **DM:** `google/gemma-4-31B-it`
+- **jugador:** `google/gemma-4-31B-it` (Ilvard, desvío 25)
+- **turno:** 1
+
+## Turno 1 — 1/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldor Enna: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  15 entidades · contexto de 1069 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  7736 ms
+
+> "Es una situación lamentable, pero la verdad debe prevalecer para que la paz regrese a este lugar."
+> Me acerco a Doroteo Vann para ofrecerle mi apoyo y preguntarle dónde cree que podría estar ese documento.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 1+4=5  PIFIA
+
+### [4] DM
+
+  7665 ms
+
+> Doroteo Vann te mira con una mezcla de cansancio y esperanza, pero cuando hablas, tus palabras salen torpes, quizá demasiado solemnes o fuera de lugar, rompiendo la fragilidad del momento. La mención de que la "paz regrese" suena en sus oídos no como un deseo altruista, sino como una insinuación de que su reclamo es la fuente del conflicto, transformando tu oferta de apoyo en un juicio velado sobre su posición.
+> El hombre retrocede un paso, cerrando los labios con una expresión de herida dignidad. «No hay conflicto, caballero, solo una búsqueda de justicia», responde con voz gélida, mientras se cruza de brazos y desvía la mirada hacia los jardines descuidados de El Solar, cerrándose visiblemente a cualquier conversación posterior.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8017 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+

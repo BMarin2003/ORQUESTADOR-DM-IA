@@ -1,0 +1,2984 @@
+
+# VERTICAL SLICE G1 — Par 13 (real) · G1 (Multiagente) · Piedra Yerma (mas)
+
+- **modelo (todos los roles):** `google/gemma-4-31B-it`
+- **jugador:** `google/gemma-4-31B-it` (Elior, desvío 70)
+- **turno:** 14
+
+## Turno 14 — 1/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 8.0 (cordial), 1 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  3496 ms
+
+> "Tenga paciencia, Cruz. El hambre es un motor eficiente, pero la precipitación es un suicidio."
+> Me aparto del borde y lo miro con indiferencia, analizando su lenguaje corporal para medir qué tan cerca está de perder el control.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 18+1=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 19)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (8289 ms): «La paciencia es para quien tiene el estómago lleno o la tierra intacta. Yo ya he»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3187 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12917 ms
+
+> narrativa
+> La observación fría y el distanciamiento surten efecto; el lenguaje corporal de Baldemar es un libro abierto de terquedad y desesperación. No hay señales de un colapso inminente ni de una pérdida de control violenta, sino una determinación pétrea. Se mantiene plantado, sin retroceder ni un centímetro, con los brazos cruzados y el peso del cuerpo distribuido firmemente sobre sus botas embarradas.
+> El campesino sostiene la mirada, imperturbable ante la indiferencia, y responde con una voz que vibra por la urgencia: "La paciencia es para quien tiene el estómago lleno o la tierra intacta. Yo ya he visto desaparecer dos surcos de mi herencia mientras ustedes miden el viento. No me hable de suicidios; quedarse de brazos cruzados viendo cómo el vacío se come mi casa, eso es lo que yo llamo suicidio."
+> mecanica
+> Éxito (19 vs CD 15). Se ha logrado analizar correctamente la estabilidad y el estado mental de Baldemar Cruz.
+> presion
+> La resolución de Baldemar es absoluta; cualquier demora adicional en ofrecer una solución real lo llevará a actuar por su cuenta, ignorando las advertencias del grupo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1955 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 8.0 (cordial), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 15 — 2/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 8.0 (cordial), 1 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  4691 ms
+
+> "Tu herencia es un concepto efímero comparado con el vacío, pero entiendo que el hambre no sabe de metafísica."
+> Me acerco a él con paso lento, evaluando si hay algo de valor en su persona o en sus pertenencias.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 14+0=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 14)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (11316 ms): «Pueden llamarlo efímero desde su pedestal, pero el hambre muerde igual que el va»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5618 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15300 ms
+
+> narrativa
+> El camino de tierra batida se hunde bajo las botas, mezclando el barro con un olor penetrante a humedad estancada y vegetación que se pudre lentamente entre los cultivos marchitos. Al reducir la distancia, la búsqueda de algo útil en la persona de Baldemar resulta estéril; no hay joyas ocultas ni secretos valiosos bajo sus ropas raídas, solo la austeridad de quien lo ha perdido casi todo.
+> Baldemar mantiene la mirada fija, sin inmutarse por la cercanía. Descruza los brazos solo para señalar con un gesto brusco y seco hacia el horizonte, donde el círculo yermo devora el paisaje. "Pueden llamarlo efímero desde su pedestal, pero el hambre muerde igual que el vacío. Si buscan algo de valor en mis bolsillos, no encontrarán más que semillas que ya no tienen dónde crecer y el barro de una tierra que se me escapa", sentencia con una voz que no admite más condescendencia.
+> mecanica
+> Fallo (14 vs CD 15). No se ha logrado persuadir a Baldemar ni extraer información adicional mediante la intimidación o el encanto.
+> presion
+> La paciencia de Baldemar se ha agotado; el desdén hacia su herencia ha cerrado la puerta a una negociación diplomática y ahora solo responderá ante acciones concretas o una ayuda tangible.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4396 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Baldemar Cruz · ideal_violated
+  ⚠ nombres no reconocidos: Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4037: Baldemar Cruz affinity 8.0 → 0.0  (any)
+     Actuaron contra lo que él considera correcto.
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 0.0 (neutral), 1 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 16 — 3/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 0.0 (neutral), 1 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  3517 ms
+
+> "Tus semillas no me interesan, pero tu desesperación sí."
+> Me alejo de él y observo con detenimiento el círculo yermo que señala.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (7566 ms): «Mi desesperación no es un espectáculo para que lo mire de lejos. Mientras usted »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4606 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14692 ms
+
+> narrativa
+> El círculo yermo se extiende como una herida abierta en la tierra, un anillo de ceniza y polvo donde nada crece y el viento arrastra restos de madera calcinada. Al intentar analizar la anomalía, la mirada se pierde en la monotonía del gris; no hay patrones visibles, ni rastros lógicos que permitan comprender la naturaleza de la plaga, solo un vacío estéril que devuelve una sensación de absoluta insignificancia.
+> Baldemar Cruz se mantiene firme, con los hombros tensos, mirando con una mezcla de desprecio y urgencia mientras aprieta los puños. "Mi desesperación no es un espectáculo para que lo mire de lejos. Mientras usted estudia el paisaje, el círculo sigue comiendo. Mañana despertaré y habrá otro surco muerto, y no habrá estudio que me devuelva la tierra", sentencia con una voz cargada de amargura.
+> mecanica
+> Fallo (5 vs CD 15). La investigación no ha revelado ninguna pista sobre el origen o funcionamiento del círculo yermo.
+> presion
+> El desprecio de Baldemar se ha consolidado en una barrera; seguirá rechazando cualquier diálogo que no implique una acción inmediata contra la plaga, y su disposición a colaborar ha caído en picado.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1655 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 0.0 (neutral), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 17 — 4/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 0.0 (neutral), 1 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  5258 ms
+
+> "Tenga paciencia, Baldemar. La prisa es la madre del error y yo no trabajo gratis."
+> Me alejo del hombre y camino hacia el borde del círculo para observar la transición entre la tierra fértil y la ceniza.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Arcanos: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 15)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (9184 ms): «La paciencia es para quien tiene tiempo, y yo ya he perdido dos surcos de mi vid»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4947 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17886 ms
+
+> narrativa
+> El paso hacia el borde es firme y la observación revela la naturaleza exacta del fenómeno: la transición es una frontera abrupta. El verde vibrante de la campiña se corta en seco, convirtiéndose en un borde carbonizado de pocos centímetros donde la tierra parece haber sido cocida al instante, dejando un precipicio de ceniza grisácea y fría.
+> Antes de poder profundizar en el análisis, Baldemar Cruz se planta en el camino para bloquear el paso un instante. Tiene la mandíbula apretada y la mirada clavada en los ojos del otro, emanando una urgencia que roza la hostilidad. "La paciencia es para quien tiene tiempo, y yo ya he perdido dos surcos de mi vida en seis semanas. Si quiere cobrar, hágalo sobre results, no sobre esperas. Pero no me hable de errores mientras usted camina tranquilamente hacia la ceniza mientras mi casa se queda sin suelo", sentencia con dureza.
+> mecanica
+> Éxito (15 vs CD 15). Se ha identificado la naturaleza del borde de la anomalía: una combustión instantánea y localizada que deja un precipicio de ceniza.
+> presion
+> La tensión con Baldemar ha alcanzado un punto crítico; cualquier intento de prolongar los estudios sin ofrecer una solución tangible podría provocar que el agricultor expulse al grupo de sus tierras.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4296 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 0.0 (neutral), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 18 — 5/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 0.0 (neutral), 1 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  3131 ms
+
+> "Sus gritos no devolverán la tierra, pero mi silencio sí podría costarle el resto de su propiedad."
+> Me aparto de su camino con calma y observo el borde carbonizado buscando algún rastro de flujo energético o residuo mágico.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (7326 ms): «Hableme de silencios y de propiedades como si fueran piezas de un tablero, pero »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3732 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  25261 ms
+
+> narrativa
+> El borde de la anomalía se extiende como una cicatriz geométrica de ceniza fría, exhalando un olor metálico y seco que irrita la garganta. En ese precipicio, el viento parece evitar el vacío y el silencio es tan absoluto que resulta opresivo. Al intentar rastrear el flujo energético, la mirada se pierde en la monotonía del gris; no hay rastro, ni residuo, ni patrón que el ojo pueda captar, solo una vacuidad gélida que devuelve una sensación de fracaso rotundo.
+> Baldemar Cruz no se mueve ni un centímetro. Se mantiene firme, observando con un desprecio evidente la incapacidad de hallar respuestas en la ceniza. Su voz suena seca, como madera vieja rompiéndose al tacto: "Hableme de silencios y de propiedades como si fueran piezas de un tablero, pero yo soy el que tiene que mirar ese borde de ceniza cada mañana. No me importa lo que su silencio pueda o no hacer; me importa que mientras usted mira el aire buscando respuestas, el círculo sigue comiendo".
+> mecanica
+> Fallo (5 vs CD 15). No se ha detectado ningún flujo energético ni residuo mágico en el borde.
+> presion
+> La frustración de Baldemar ha mutado en un desprecio activo; el tiempo de las cortesías ha terminado y cualquier siguiente paso sin resultados concretos podría resultar en un desalojo violento.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1360 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 0.0 (neutral), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 19 — 6/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 0.0 (neutral), 1 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  4200 ms
+
+> "Su impaciencia es tan previsible como su falta de método."
+> Ignoro su tono y me acerco al borde de la ceniza para examinar la materia física, buscando cualquier resto sólido que pueda analizar.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 23)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Baldemar Cruz no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  855 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  20955 ms
+
+> narrativa
+> El contacto con la ceniza revela una verdad que el aire ocultaba. Al hundir los dedos en el polvo gélido, la materia no se comporta como residuo orgánico, sino como un precipitado mineral; pequeños cristales translúcidos, casi invisibles, se adhieren a la piel y vibran con una frecuencia imperceptible que confirma la naturaleza del fenómeno. Hay un rastro físico, una firma tangible que permite diseccionar la anatomía de la anomalía.
+> Baldemar Cruz observa el movimiento con los brazos cruzados. No hay palabras en sus labios, pero su mandíbula se tensa y sus ojos se entrecierran, siguiendo con una mezcla de escepticismo y curiosa atención el modo en que los dedos hurgan en la grisura. El silencio ya no es de desprecio, sino de una espera tensa.
+> mecanica
+> Éxito (23 vs CD 15). Se han hallado restos sólidos y cristales vibratorios que permiten analizar la anomalía.
+> presion
+> Baldemar ha recuperado el interés, pero su paciencia es un hilo fino; cualquier error en la interpretación de estos hallazgos será visto como una manipulación intelectual y no como un avance.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3576 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Baldemar Cruz · competence_shown
+  ⚠ nombres no reconocidos: Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4043: Baldemar Cruz affinity 0.0 → 2.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 20 — 7/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  3634 ms
+
+> "Interesante. No es ceniza, sino un precipitado mineral con propiedades vibratorias."
+> Saco un pequeño frasco de mi equipo y recolecto una muestra de los cristales con cuidado.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Arcanos: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (7514 ms): «Que sea mineral o que vibre me da igual mientras siga comiéndose mi tierra. ¿Eso»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5609 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  18150 ms
+
+> narrativa
+> La muestra queda asegurada en el vidrio, capturando la esencia de aquel cementerio de cristal gélido. Bajo la capa de polvo gris, una estructura mineral geométrica comienza a emerger, crujiendo con un sonido seco y metálico bajo cada paso, revelando que el suelo mismo se ha transformado en algo ajeno y rígido.
+> Baldemar Cruz se descruza de brazos y da un paso adelante, señalando el suelo con un gesto brusco de la mano mientras fija la mirada en el frasco. "Que sea mineral o que vibre me da igual mientras siga comiéndose mi tierra. ¿Eso que acabas de meter en el frasco nos dice cómo pararlo, o es solo una curiosidad más para tu colección?", pregunta con un tono que oscila entre la urgencia y la desconfianza.
+> mecanica
+> Éxito (20 vs CD 15). Recolección de muestra completada satisfactoriamente.
+> presion
+> Baldemar está empezando a ver la investigación como un ejercicio académico; si no traduces pronto el hallazgo en una solución práctica, dejará de cooperar para tomar medidas por su cuenta.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  6611 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Elior · character.inventory = muestra de cristales
+  ✓ creación item: muestra de cristales
+  ⚠ nombres no reconocidos: Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item muestra de cristales
+  → delta 4046: Elior.inventory = muestra de cristales
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'character', 'entity_id': 'Baldemar Cruz', 'field': 'estado_mental', 'value': 'curiosidad tensa'}
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 21 — 8/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  3300 ms
+
+> "La curiosidad es la base de cualquier solución, Cruz. Si quieres que deje de comerse tu tierra, primero debo entender qué es exactamente."
+> Sostengo el frasco con firmeza, observando la estructura geométrica del suelo para buscar patrones.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (9836 ms): «Entender, entender... mientras usted entiende, el Círculo no se detiene a leer s»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4895 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15748 ms
+
+> narrativa
+> El suelo de cristal gélido se extiende en patrones fractales que parecen pulsar débilmente bajo los pies. Al intentar descifrar la lógica de aquellas geometrías minerales, que se entrelazan en una red rígida, opaca y casi arquitectónica, los patrones resultan indescifrables; la estructura se muestra muda, obstinada en su naturaleza ajena.
+> Baldemar Cruz escupe las palabras con brusquedad, dando un pisotón seco sobre el suelo mineral que resuena metálico. No quita la vista del frasco, pero su postura es la de quien ya está calculando la distancia hacia la salida: "Entender, entender... mientras usted entiende, el Círculo no se detiene a leer sus notas. Me quedan tres dedos de tierra antes de que el cristal llegue al porche de mi casa, y no pienso esperar a que usted termine su catálogo para saber si voy a dormir bajo techo el invierno."
+> mecanica
+> Fallo (5 vs CD 15). No se logra extraer ninguna información útil de la observación del terreno.
+> presion
+> La paciencia de Baldemar se ha agotado. Si no presentas un avance tangible o una alternativa inmediata, romperá el vínculo de cooperación para ejecutar su propio plan de defensa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2340 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Círculo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 22 — 9/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  4535 ms
+
+> "Tenga paciencia, Cruz. La precipitación es la madre de los errores costosos."
+> Ignoro sus quejas y busco cualquier rastro de energía residual o anomalía mágica en el entorno que no sea puramente geométrica.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Arcanos: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 7)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (8041 ms): «La paciencia es un lujo de quien tiene el suelo firme bajo los pies, no de quien»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  131487 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10205 ms
+
+> narrativa
+> El entorno permanece gélido y mudo. A pesar del esfuerzo por detectar alguna anomalía, el cristal no emite rastro mágico ni pulsaciones energéticas que el ojo entrenado pueda captar, extendiéndose como un desierto de geometría indiferente que se niega a revelar sus secretos.
+> Baldemar Cruz se cruza de brazos con brusquedad, clavando la mirada con una mezcla de desprecio y urgencia, mientras su pie sigue marcando un ritmo impaciente sobre el cristal. "La paciencia es un lujo de quien tiene el suelo firme bajo los pies, no de quien ve cómo el cristal se come su herencia. Haga lo que tenga que hacer, pero no me hable de errores costosos mientras yo cuento los días que me quedan de techo", sentencia con voz cortante.
+> mecanica
+> Fallo (7 vs CD 15). No se detectan rastros de energía residual ni anomalías mágicas en el entorno.
+> presion
+> La hostilidad de Baldemar ha escalado. Si no produces un resultado concreto ahora mismo, dejará de escucharte y actuará por su cuenta, llevándose consigo cualquier apoyo logístico local.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2579 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 23 — 10/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  20168 ms
+
+> "Su impaciencia es tan predecible como su vulgaridad. Si quiere resultados, deje de hacer ruido con el pie."
+> Ignoro sus gestos y examino el cristal más de cerca, buscando cualquier fisura, marca o patrón físico que no sea mágico.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 15)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (16043 ms): «Llameme vulgar si eso le hace sentir que tiene el control, pero mientras usted b»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7077 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11625 ms
+
+> narrativa
+> El cristal bajo los pies revela su naturaleza fría y translúcida, dejando ver finas vetas grisáceas que se cruzan en ángulos rectos perfectos. Es un mapa urbano congelado en el tiempo, una geometría precisa que comienza a cobrar sentido bajo una observación minuciosa, despojando al suelo de su apariencia de desierto indiferente.
+> Baldemar Cruz deja de marcar el ritmo con el pie bruscamente y se inclina hacia adelante, invadiendo el espacio personal con una mirada cargada de urgencia y desdén. "Llameme vulgar si eso le hace sentir que tiene el control, pero mientras usted busca rayitas en el suelo, el Círculo sigue caminando. Cada minuto de su 'estudio' es un palmo de tierra que no vuelve", sentencia con un tono que oscila entre la desesperación y el asco.
+> mecanica
+> Éxito (15 vs CD 15). Se identifican patrones físicos y vetas estructurales en el cristal que sugieren una organización artificial o cartográfica.
+> presion
+> La tensión con Baldemar ha llegado a un punto crítico; cualquier nueva demora o insulto podría provocar que rompa la alianza y actúe por su cuenta con los locales.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3280 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Círculo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 24 — 11/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  5203 ms
+
+> "Tenga paciencia, Cruz. La precipitación es el refugio de los ignorantes y el camino más corto hacia el fracaso."
+> Sigo analizando las vetas del cristal para descifrar la disposición de la ciudad.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 13+4=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 17)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Baldemar Cruz no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  10100 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13007 ms
+
+> narrativa
+> La mirada de Baldemar se endurece, pero el silencio se impone mientras el análisis del cristal arroja sus frutos. Bajo la superficie translúcida, las vetas grisáceas dejan de ser simples adornos para revelarse como una red de arterias ortogonales. Las líneas convergen con una precisión matemática hacia un núcleo central masivo, dejando claro que el grupo no camina sobre un desierto, sino sobre la periferia de una metrópolis geométrica y sumergida.
+> Baldemar observa la revelación con una mezcla de escepticismo y creciente inquietud, aunque no pronuncia palabra. Se mantiene rígido, con los brazos cruzados, procesando la escala de la estructura que ahora se extiende bajo sus botas.
+> mecanica
+> Éxito (17 vs CD 15). Se identifica la estructura urbana: el grupo se encuentra en la periferia de una ciudad geométrica sumergida.
+> presion
+> El mapa revela la dirección al núcleo, pero el tiempo sigue corriendo; cada minuto de análisis acerca al Círculo a su objetivo y erosiona la paciencia de Baldemar.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4500 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta baldemar_cruz · npc.knowledge = El grupo se encuentra en la periferia de una ciudad geométrica sumergida
+  ⚠ nombres no reconocidos: Círculo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: baldemar_cruz
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 25 — 12/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  4888 ms
+
+> "Una ciudad entera bajo la arena... Fascinante."
+> Me acerco al cristal para examinar el núcleo central con más detalle, buscando cualquier indicio de materiales valiosos o fuentes de energía.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 13)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (8321 ms): «Fascinante será cuando el Círculo me coma el granero. Me importa poco si hay una»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7089 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  26134 ms
+
+> narrativa
+> El cristal se vuelve borroso, negándose a entregar detalles sobre la naturaleza del núcleo. En lugar de materiales preciosos o fuentes de energía claras, la imagen solo muestra un vacío perfecto, una ausencia de materia rodeada por anillos concéntricos de un material irisado que pulsa con una luz tenue y rítmica, como un corazón mineral latiendo en la profundidad.
+> Baldemar descruza los brazos bruscamente y señala con el dedo hacia el horizonte, donde el borde del yermo presiona sus campos. Su voz es áspera, cargada de una urgencia que no admite distracciones: "Fascinante será cuando el Círculo me coma el granero. Me importa poco si hay una ciudad o un cementerio de reyes bajo la arena; lo que me importa es que mientras ustedes miran dibujos en un cristal, mi tierra se vuelve piedra blanca".
+> mecanica
+> Fallo (13 vs CD 15). No se logran identificar materiales valiosos ni fuentes de energía en el núcleo.
+> presion
+> La irritación de Baldemar ha alcanzado un punto crítico; si no se le ofrece una solución inmediata para sus tierras, podría retirar su apoyo o expulsar al grupo de su propiedad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1501 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Círculo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 26 — 13/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  5329 ms
+
+> "Tenga paciencia, Baldemar. El vacío es la clave para entender por qué su tierra muere."
+> Me alejo del cristal y observo la reacción del hombre, buscando el punto exacto de su desesperación para manipularla.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 12+1=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 13)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (52152 ms): «La paciencia es para quien tiene tiempo, y yo ya he perdido dos surcos que no va»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3791 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  27184 ms
+
+> narrativa
+> El despacho, saturado por el olor a tabaco viejo y cuero curtido, se siente repentinamente más pequeño. El contraste entre la sofisticación del cristal y la rudeza del mobiliario rural acentúa la distancia insalvable entre la curiosidad intelectual y la supervivencia. El intento de leer la desesperación del hombre choca contra un muro de pragmatismo y rabia; no hay una grieta evidente que aprovechar, solo una voluntad endurecida por la necesidad.
+> Baldemar se planta frente a ti, invadiendo tu espacio personal con el rostro endurecido y la mirada fija. Sus manos, callosas y manchadas de tierra, se cierran en puños a los costados mientras sentencia: "La paciencia es para quien tiene tiempo, y yo ya he perdido dos surcos que no van a volver. Dígame usted qué vacío llena la tripa de mis hijos el invierno que viene, porque el mío no se llena con 'claves' ni con dibujos que pulsan".
+> mecanica
+> Fallo de Perspicacia (13 vs CD 15). No logras identificar el punto débil o la palanca emocional necesaria para manipular a Baldemar.
+> presion
+> La hostilidad de Baldemar ha escalado a una confrontación física; cualquier otra respuesta abstracta o evasiva provocará que te expulse violentamente de su despacho.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1800 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 27 — 14/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  3365 ms
+
+> "Tenga paciencia, Baldemar. El hambre es un motor eficiente, pero la ceguera es un error fatal."
+> Doy un paso atrás para recuperar mi espacio y busco con la mirada algún objeto de valor en el despacho que pueda usar como moneda de cambio o interés.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (18047 ms): «Hableme de ceguera usted, que no ve que el hambre no espera a que el sabio termi»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5858 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  21457 ms
+
+> narrativa
+> El paso atrás resulta inútil; el despacho, con sus estantes de libros polvorientos y ese aroma persistente a humedad y tabaco, se cierra sobre ti como una trampa de madera maciza. Tu mirada recorre el lugar buscando desesperadamente algo que sirva de moneda de cambio, pero la decadencia del lujo que te rodea es engañosa: los objetos que parecen valiosos son trastos viejos o reliquias sin valor inmediato, y tu búsqueda solo sirve para evidenciar tu desorientación frente a un hombre que no cree en el valor de las cosas que no se pueden sembrar.
+> Baldemar se inclina hacia adelante, invadiendo el espacio que acabas de intentar recuperar. Con un gruñido contenido y seco, señala con un dedo calloso hacia la ventana que da a sus tierras, donde el paisaje se extiende gris y exhausto. "Hableme de ceguera usted, que no ve que el hambre no espera a que el sabio termine de leer sus libros. No me pida paciencia mientras el círculo me come la herencia de mi abuelo", sentencia, dejando que el silencio posterior pese más que sus palabras.
+> mecanica
+> Fallo de Investigación (5 vs CD 15). No encuentras ningún objeto de valor ni palanca material en el despacho que sea útil para negociar en este momento.
+> presion
+> Baldemar ha interpretado tu intento de analizar su despacho como una falta de respeto o una distracción irrelevante; cualquier gesto que no sea una oferta concreta y tangible resultará en tu expulsión inmediata de la propiedad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3120 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento baldemar_cruz · ideal_violated
+  ⚠ nombres no reconocidos: Fallo, Investigación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: baldemar_cruz
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 28 — 15/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 2.0 (neutral), 1 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  3520 ms
+
+> "El hambre es un motor eficiente, Baldemar, pero la desesperación es una mala consejera."
+> Me enderezo y lo miro fijamente a los ojos, buscando el punto exacto de su frustración.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 18+1=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 19)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (8976 ms): «La desesperación es para quien no tiene una azada en la mano y un límite que ret»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4525 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  18845 ms
+
+> narrativa
+> La mirada sostenida logra perforar la coraza de orgullo del hombre; el gesto de enderezarse y el tono firme parecen conectar con una fibra de respeto que el caos anterior había enterrado. Baldemar no retrocede, pero su postura cambia: ya no es la de alguien que desea echar a un intruso, sino la de un animal acorralado que reconoce, por primera vez, a alguien capaz de sostenerle la vista sin pestañear.
+> El despacho claustrofóbico parece cerrarse aún más sobre ambos, con el aroma a papel podrido y caoba carcomida flotando en el aire plomizo que entra por la ventana. Baldemar se mantiene inclinado hacia adelante, con la mandíbula tensa y los ojos fijos, sin pestañear. Su voz suena áspera, como piedra rozando piedra: "La desesperación es para quien no tiene una azada en la mano y un límite que retrocede cada amanecer. A mí no me hable de consejos; hábleme de soluciones. O me dice ahora mismo cómo detener ese círculo, o puede irse a dar consejos a quien todavía tenga tierra que perder".
+> mecanica
+> Éxito de Perspicacia (19 vs CD 15). Has logrado estabilizar la interacción y ganar la atención seria de Baldemar, eliminando la amenaza inmediata de expulsión.
+> presion
+> Baldemar ha aceptado el desafío intelectual, pero su paciencia es un hilo delgado; si la siguiente respuesta no contiene una solución viable o una pista concreta sobre el círculo, cerrará la conversación definitivamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4278 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Baldemar Cruz · competence_shown
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4080: Baldemar Cruz affinity 2.0 → 4.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 4.0 (neutral), 1 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 29 — 16/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 4.0 (neutral), 1 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  3570 ms
+
+> "Tengo la solución, pero la información es un bien caro. Dígame exactamente qué ocurre en ese círculo y veremos si el precio me satisface."
+> Me cruzo de brazos, manteniendo la mirada fría mientras espero su respuesta.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 6+0=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 6)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (13433 ms): «Usted es muy listo, ¿verdad? Me pide que le describa la muerte de mi tierra para»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3562 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  18201 ms
+
+> narrativa
+> El despacho se siente ahora como una jaula de madera oscura donde el silencio pesa más que las palabras. Baldemar permanece inmóvil, su silueta recortada contra la luz grisácea de la ventana, mientras el polvo danza en el aire estancado entre ambos. El intento de negociar la información como una mercancía cae en saco roto; la frialdad del trato no intimida al granjero, sino que dispara su indignación.
+> Se endereza bruscamente, soltando un bufido de desprecio. Sus manos, callosas y curtidas, se cierran en puños a los costados, pero no retrocede ni un centímetro. "Usted es muy listo, ¿verdad? Me pide que le describa la muerte de mi tierra para decidir si el precio de salvarla le conviene. Mire, el círculo no solo borra el trigo; se traga la tierra, la deja blanca, fría, como si nunca hubiera existido un solo surco ahí. He perdido dos hileras completas en seis semanas y el borde sigue avanzando hacia mi puerta. Ahora dígame qué es ese 'bien caro' que quiere, porque yo no tengo tiempo para juegos de mercader mientras el hambre me respira en el cuello", sentencia con una voz que vibra de rabia contenida.
+> mecanica
+> Fallo de Persuasión (6 vs CD 15). Baldemar ha interpretado tu actitud como una falta de respeto y una manipulación cínica, cerrando cualquier vía de negociación favorable.
+> presion
+> La disposición de Baldemar ha caído en picado. Si no ofreces una solución inmediata y tangible, te echará del despacho y perderás el acceso a la información sobre el avance del círculo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  6746 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Baldemar Cruz · ideal_violated
+  ✓ delta Baldemar Cruz · npc.knowledge = El círculo borra el trigo, deja la tierra blanca y fría, ha perdido dos hileras en seis semanas y avanza hacia su puerta
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4091: Baldemar Cruz affinity 4.0 → -4.0  (any)
+     Actuaron contra lo que él considera correcto.
+  → delta 4092: Baldemar Cruz.knowledge = El círculo borra el trigo, deja la tierra blanca y fría,…
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 30 — 17/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  4583 ms
+
+> "Tierra blanca y fría... Interesante. No es una plaga común."
+> Me acerco a él, manteniendo mi expresión impasible, e intento analizar sus gestos para ver cuánto miedo oculta tras esa rabia.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 16+1=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 17)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (6172 ms): «No me venga con 'interesante'. El hambre no es un experimento, y mi tierra no es»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2731 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14442 ms
+
+> narrativa
+> El despacho, con sus maderas oscuras y ese aire viciado que parece espesar el tiempo, se vuelve aún más claustrofóbico cuando la distancia entre ambos desaparece. Bajo la luz grisácea y fría que se cuela por la ventana, la mirada impasible permite diseccionar la fachada del granjero: la rabia es real, pero es el escudo de un hombre que sabe que el reloj corre en su contra y que el pánico es un lujo que no puede permitirse.
+> Baldemar se aparta de la ventana con un movimiento brusco, invadiendo el espacio personal en un desafío directo. Sus ojos están inyectados en rabia y su respiración es pesada, marcada por la urgencia de quien ve su supervivencia pendiendo de un hilo. "No me venga con 'interesante'. El hambre no es un experimento, y mi tierra no es una curiosidad para que usted la analice con esa cara de piedra. O me dice ahora mismo cómo piensa detener ese círculo, o puede buscarse a otro que le describa el paisaje mientras yo me encargo de lo que queda de mi casa", sentencia con una voz que vibra en el aire estancado.
+> mecanica
+> Éxito de Perspicacia (17 vs CD 15). Has logrado leer la urgencia detrás de su ira; Baldemar no solo está enfadado, está desesperado por una solución inmediata.
+> presion
+> La paciencia de Baldemar se ha agotado. Si no presentas un plan o una propuesta concreta para detener el avance del círculo, te expulsará de su propiedad, cerrando la vía de información más directa sobre la anomalía.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1276 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 31 — 18/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  3177 ms
+
+> "Su desesperación es el motor que nos llevará a un acuerdo, Baldemar. Detendré el círculo, pero mi conocimiento tiene un precio que su tierra ya no puede pagar."
+> Me mantengo impasible ante su proximidad, observándolo con frialdad.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 11+0=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 11)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (20401 ms): «No me hable de motores ni de precios. Mi tierra no paga porque la tierra ya no e»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  718 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11481 ms
+
+> narrativa
+> El intento de manipular la desesperación del granjero choca contra un muro de resentimiento. Baldemar no se amilana ante la frialdad del interlocutor; al contrario, se inclina hacia adelante, acortando aún más la distancia con la mandíbula tensa y el tono cortante, mientras sus manos tiemblan ligeramente por la urgencia contenida.
+> "No me hable de motores ni de precios. Mi tierra no paga porque la tierra ya no está; se la está tragando el frío. Si cree que voy a sentarme a negociar mientras el círculo me llega a los talones, es que no ha visto el color blanco que deja el trigo muerto. O me dice qué quiere exactamente para empezar a trabajar hoy mismo, o se larga de mi despacho antes de que pierda la poca paciencia que me queda", sentencia, sosteniendo la mirada con una determinación feroz.
+> mecanica
+> Fallo de Persuasión (11 vs CD 15). Tu intento de usar su desesperación como palanca ha sido contraproducente, endureciendo la postura de Baldemar.
+> presion
+> Baldemar está al límite. Si no abandonas el regateo y propones una acción inmediata y concreta, te echará del despacho, perdiendo el acceso a su ayuda y a la información sobre el avance del círculo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1104 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 32 — 19/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  2384 ms
+
+> "Está bien, dejemos las formalidades. Quiero saber exactamente qué ocurre con ese frío y, a cambio, pondré mis conocimientos a su servicio para detenerlo."
+> Me enderezo y observo los alrededores del despacho buscando cualquier mapa o documento sobre el círculo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 13)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (16818 ms): «Sus conocimientos, dice... Veremos si sus conocimientos saben distinguir la tier»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3548 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12547 ms
+
+> narrativa
+> El despacho huele a tabaco rancio y papel húmedo, una atmósfera asfixiante que parece cerrarse sobre los hombros. Sobre la madera carcomida del escritorio, entre manchas de tinta y ceniza, reposa un mapa topográfico de la región; sin embargo, cualquier intento de extraer información útil de él fracasa, pues las zonas clave han sido tachadas con trazos violentos de tiza blanca, borrando los detalles que podrían dar una pista real sobre la extensión del fenómeno.
+> Baldemar Cruz no retrocede. Se mantiene inclinado hacia adelante, invadiendo el espacio personal con una intensidad agresiva. Señala con un gesto brusco y seco sus propias manos callosas, sin apartar la mirada ni un segundo. "Sus conocimientos, dice... Veremos si sus conocimientos saben distinguir la tierra viva de la ceniza blanca. Mire, no hay mapas que valgan, el círculo no sigue el dibujo de ningún papel, sigue el hambre de la Piedra. Pero si quiere ser útil, deje de mirar las paredes y mire mis manos: están vacías porque ya no hay trigo que cosechar. Dígame ahora mismo qué puede hacer que no sea hablar, o no pierda más mi tiempo ni el suyo".
+> mecanica
+> Fallo de Investigación (13 vs CD 15). El mapa está demasiado vandalizado con tiza blanca como para que puedas extraer datos precisos sobre el círculo en este momento.
+> presion
+> La paciencia de Baldemar se ha agotado. Si no defines una acción concreta y tangible en lugar de promesas vagas, te expulsará del despacho, cortando cualquier vía de cooperación con los lugareños.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4677 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento baldemar_cruz · promise_made
+  ⚠ nombres no reconocidos: Fallo, Investigación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: baldemar_cruz
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 33 — 20/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  2991 ms
+
+> "La desesperación nubla su juicio, pero no mi capacidad. Puedo analizar la naturaleza de esa ceniza y descubrir qué es lo que realmente devora sus campos."
+> Me acerco a Baldemar y busco cualquier rastro de ese polvo blanco en su ropa o manos para examinarlo.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Arcanos: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 23)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (9826 ms): «Haga lo que quiera con el polvo, pero no me hable de juicio. El juicio es para q»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  11353 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10759 ms
+
+> narrativa
+> El análisis es rápido y preciso. Entre los pliegues de la ropa curtida y los surcos profundos de las manos del hombre, el polvo blanco se revela no como simple ceniza, sino como una sustancia mineral reactiva que parece pulsar con una energía residual, confirmando que la erosión de los campos no es un proceso natural, sino una consecuencia directa de la actividad de la Piedra.
+> Baldemar permanece rígido, permitiendo que el examen se lleve a cabo sin retroceder ni un milímetro, mientras mantiene una mirada gélida y demandante. "Haga lo que quiera con el polvo, pero no me hable de juicio. El juicio es para quien tiene el estómago lleno y el techo seguro. Mientras usted analiza la naturaleza de la ceniza, el círculo se come mi herencia surco a surco. Si ese polvo le dice cómo detenerlo antes de que llegue a mi puerta, entonces habremos ganado algo. Si no, solo habrá ensuciado mis manos una vez más", sentencia con una voz que no admite réplicas.
+> mecanica
+> Éxito de Investigación (23 vs CD 15). Has identificado la naturaleza anómala del polvo blanco: es un residuo mineral vinculado a la Piedra y no ceniza orgánica.
+> presion
+> Baldemar ha aceptado tu competencia técnica, pero su pragmatismo es brutal. Si no traduces este hallazgo en una solución o un plan de acción inmediato, considerará que tu análisis es un ejercicio académico inútil y cerrará la puerta a cualquier colaboración.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2205 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento baldemar_cruz · competence_shown
+  ⚠ nombres no reconocidos: Investigación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: baldemar_cruz
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 34 — 21/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  3106 ms
+
+> "Este residuo es la clave, no un simple desecho. Si la Piedra está consumiendo su tierra, es porque se alimenta de ella."
+> Limpio mis manos con desdén y observo el resto del polvo mineral.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Arcanos: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (5429 ms): «Que se alimente, que se alimente... El problema es que mi tierra no es un banque»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4454 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  18140 ms
+
+> narrativa
+> El aire rural y austero pesa sobre los hombros, cargado con el olor a tierra seca y un silencio que solo acentúa la fricción entre ambos. La explicación sobre la alimentación de la roca cae en el vacío, careciendo de la fuerza necesaria para convencer al campesino; para él, la teoría no es más que ruido mientras el hambre aceche sus cultivos.
+> Baldemar se cruza de brazos, apretando los puños con una tensión que hace vibrar sus hombros. No aparta la vista, manteniendo una postura demandante y gélida mientras responde: "Que se alimente, que se alimente... El problema es que mi tierra no es un banquete para una roca, es el pan de mis hijos. Dígame entonces: si sabe qué come, ¿sabe cómo hacer que deje de tener hambre? Porque mientras usted encuentra la 'clave', yo cuento los pasos que le quedan al círculo para llegar a mi porche".
+> mecanica
+> Fallo de Arcanos (9 vs CD 15). No has logrado proporcionar una explicación o solución que convenza a Baldemar de la utilidad inmediata de tu conocimiento.
+> presion
+> Baldemar ha perdido la paciencia con las teorías. Si no presentas un plan concreto para detener el avance del círculo, dejará de verte como un aliado y empezará a considerarte un estorbo en su propia tierra.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1194 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Arcanos, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 35 — 22/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  2324 ms
+
+> "No me interesa el hambre de sus hijos, sino el valor de lo que hay bajo su suelo."
+> Me acerco al borde del círculo para analizar la estructura del fenómeno más de cerca.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 17+4=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 21)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (4492 ms): «Me importa un bledo lo que haya debajo, si lo que hay arriba es ceniza blanca y »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4751 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  30103 ms
+
+> narrativa
+> El borde del círculo se revela como una frontera geométrica perfecta, un límite quirúrgico donde la vegetación desaparece para dar paso a una costra de ceniza grisácea y compacta. Al inclinarte sobre el terreno, percibes que la tierra no ha sido calcinada por el fuego, sino drenada; los poros del suelo están colapsados, como si una fuerza invisible hubiera succionado cada gota de humedad y cada mineral hacia un centro remoto.
+> Baldemar se tensa visiblemente y da un paso brusco hacia adelante, interponiéndose entre tú y el borde del círculo. Con la mirada endurecida y una voz cargada de una urgencia seca, sentencia: "Me importa un bledo lo que haya debajo, si lo que hay arriba es ceniza blanca y fría. No me hable de 'valores' mientras pisa mi tierra; el único valor que reconozco es el de un surco que da grano, y usted acaba de decirme que el hambre de mi familia le da igual".
+> mecanica
+> Éxito en Investigación (21 vs CD 15). Has identificado la naturaleza del daño en el suelo: no es combustión, sino una absorción mineral y hídrica total.
+> presion
+> La hostilidad de Baldemar ha escalado. Ha dejado de discutir la solución para centrarse en el desprecio personal; cualquier intento posterior de obtener su ayuda o acceso a la propiedad será significativamente más difícil.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1870 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento baldemar_cruz · ideal_violated
+  ⚠ nombres no reconocidos: Investigación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: baldemar_cruz
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'npc', 'entity_id': 'Baldemar', 'field': 'relacion', 'value': 'Hostil/Desconfiado'}
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 36 — 23/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  3014 ms
+
+> "Su hambre es un detalle irrelevante comparado con la anomalía que tiene bajo los pies."
+> Me aparto del borde y lo miro con indiferencia, ignorando su arrebato mientras analizo la ceniza.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Arcanos: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 13)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (4890 ms): «Detalle... ¿Detalle? Para usted será una curiosidad de libro, pero para mí es el»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3627 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10056 ms
+
+> narrativa
+> El intento de analizar la ceniza se vuelve estéril; la materia grisácea parece resistirse a cualquier lectura rápida, devolviendo un vacío mineral que no revela el origen de la anomalía. Mientras el análisis falla, el aire se vuelve pesado, cargado con el olor a tierra muerta y el silencio sepulcral de la vegetación agonizante que rodea el círculo de suelo colapsado.
+> Baldemar se planta firme, cerrando el paso físicamente hacia la zona afectada. Sus manos, callosas y curtidas, se cierran en puños a los costados, aunque no llega a atacar; su postura es la de quien protege un redil. Con la mirada clavada en los ojos del interlocutor, sentencia: "Detalle... ¿Detalle? Para usted será una curiosidad de libro, pero para mí es el invierno que no llega y la mesa vacía. Si cree que voy a dejar que diseccione mi desgracia mientras se encoge mi mundo, es que no sabe dónde ha aterrizado".
+> mecanica
+> Fallo en Arcanos (13 vs CD 15). No has logrado extraer ninguna información útil de la ceniza mineralizada.
+> presion
+> Baldemar ha cerrado el acceso físico al epicentro de la anomalía. Continuar con la indiferencia transformará su hostilidad en una barrera insalvable, obligándote a buscar rutas alternativas o métodos coercitivos para estudiar el terreno.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  11060 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Arcanos, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'npc', 'entity_id': 'Baldemar', 'field': 'relacion', 'value': 'Hostil/Desprecio'}
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 37 — 24/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  2448 ms
+
+> "Su desgracia es un dato, Baldemar. Y los datos son lo único que pueden llenar esa mesa que menciona."
+> Doy un paso atrás para darle espacio, manteniendo una expresión imperturbable mientras lo observo.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 9+0=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (4224 ms): «Tengo la mesa llena de datos ahora mismo: ceniza que no dice nada y dos surcos d»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3489 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5435 ms
+
+> narrativa
+> Baldemar no retrocede; su rostro se endurece ante la frialdad del argumento, mientras el viento arrastra un remolino de ceniza mineralizada que ensucia sus botas y el suelo agrietado. El hombre no se mueve ni un centímetro del camino, manteniendo el cuerpo tenso y los hombros cuadrados, bloqueando el paso con la terquedad de quien no tiene ya nada que perder.
+> Escupe las palabras con una urgencia seca: "Tengo la mesa llena de datos ahora mismo: ceniza que no dice nada y dos surcos de trigo que se han vuelto piedra. Los datos no se comen, y mientras usted juega a contar granos de polvo, el Círculo sigue caminando hacia mi puerta. Si quiere ayudar, deje de mirar el suelo y dígame cómo hacemos que esto se detenga hoy, no cuando ya no quede tierra que salvar".
+> mecanica
+> Fallo en Persuasión (9 vs CD 15). Tu enfoque analítico ha resultado alienante para Baldemar, reforzando su desconfianza hacia tus métodos.
+> presion
+> La paciencia de Baldemar se ha agotado. Si no cambias el registro de tu interlocución o presentas una solución tangible, el granjero cerrará el acceso al terreno definitivamente, forzándote a entrar por la fuerza o a perder el rastro de la anomalía.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2646 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento baldemar_cruz · ideal_violated
+  ⚠ nombres no reconocidos: Círculo, Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: baldemar_cruz
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 38 — 25/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  1891 ms
+
+> "Usted quiere resultados, no teorías. Pero sin entender la naturaleza de esa piedra, cualquier solución será un parche temporal."
+> Me acerco a uno de los surcos de trigo petrificados y lo examino con detenimiento.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 6+4=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (6910 ms): «Mire lo que quiera, toque la piedra si le place, pero no me hable de 'parches'. »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  741 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9510 ms
+
+> narrativa
+> El trigo petrificado se resiste a revelar sus secretos; bajo la mirada atenta, las espigas se sienten inertes, gélidas y carentes de cualquier patrón que permita comprender el avance de la mineralización. El análisis falla en encontrar una respuesta inmediata, dejando el misterio intacto y la frustración suspendida en el aire denso del campo.
+> Baldemar Cruz no se aparta para dejar espacio; observa con desdén el examen del trigo, manteniendo los brazos cruzados y el peso del cuerpo inclinado hacia adelante. Con una voz cargada de amargura, sentencia: "Mire lo que quiera, toque la piedra si le place, pero no me hable de 'parches'. Un parche es lo que pone un hombre en su bota para seguir caminando; lo que yo tengo aquí es un agujero en el estómago que crece cada mañana. Si su 'naturaleza' no sabe decirme cómo evitar que el tercer surco se vuelva blanco antes del lunes, entonces sus teorías no son más que aire".
+> mecanica
+> Fallo en Investigación (10 vs CD 15). No logras identificar la causa de la petrificación ni encontrar un punto débil en la anomalía.
+> presion
+> La desconfianza de Baldemar ha escalado a un desprecio abierto. Si no logras ofrecerle una utilidad real o cambiar tu enfoque, te expulsará de sus tierras, bloqueando el acceso al epicentro de la marca.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2899 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Investigación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 39 — 26/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -4.0 (neutral), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  1417 ms
+
+> "Vuestra desesperación es ruidosa, Baldemar, pero no ayuda a resolver el problema."
+> Me enderezo y lo miro fijamente, manteniendo la calma. {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 20+0=20  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (9159 ms): «Hable como quiera, que el ruido no me quita el hambre ni me devuelve la tierra. »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4206 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4640 ms
+
+> narrativa
+> El viento seco choca contra el mineral, rompiendo el silencio del campo de trigo petrificado que se extiende como un mar de agujas gélidas bajo un cielo plomizo. La calma impuesta y la mirada fija logran romper la inercia del desdén; Baldemar no retrocede ni un centímetro a pesar de la presión, pero su mandíbula se aprieta con fuerza y una tensión nueva, una urgencia que roza la irritación, comienza a vibrar en su postura desafiante.
+> Mantiene la mirada, aunque el peso de la autoridad impuesta lo obliga a reconocer la situación. "Hable como quiera, que el ruido no me quita el hambre ni me devuelve la tierra", suelta con voz tensa. "Pero no confunda mi prisa con miedo. El miedo es quedarse sentado mirando cómo el blanco se come la puerta de su casa mientras alguien con libros me explica que el tiempo es relativo".
+> mecanica
+> Éxito en Intimidación (20 vs CD 15). Has logrado imponer tu voluntad sobre Baldemar, obligándolo a pasar de la burla a una actitud de respeto tenso.
+> presion
+> Baldemar ha aceptado tu autoridad, pero su urgencia es real. Si no traduces este dominio en una solución tangible para sus tierras, su irritación se convertirá en una resistencia activa y violenta.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1366 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Baldemar Cruz · competence_shown
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4194: Baldemar Cruz affinity -4.0 → -2.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+  ✗ (Mundo) delta rechazado por la base (npc.mood): field npc.mood is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -2.0 (neutral), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 40 — 27/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -2.0 (neutral), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  2054 ms
+
+> "Tus tierras son solo materia orgánica en descomposición si no entendemos la causa de este fenómeno."
+> Me acerco a las espigas petrificadas y trato de analizar la naturaleza de la cristalización.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Arcanos: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 16)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (5810 ms): «Llámenlo como quieran, materia o fenómeno. Yo lo llamo hambre. Mientras usted es»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2476 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4611 ms
+
+> narrativa
+> El contacto con las espigas revela una estructura antinatural; las fibras, rígidas y translúcidas, emiten un zumbido metálico que vibra a través de los dedos, mientras que la tierra bajo los pies se ha transformado en un polvo grisáceo y estéril que repele cualquier rastro de humedad. El análisis es claro: la cristalización no es un proceso orgánico, sino una transmutación agresiva que devora la vida del suelo.
+> Baldemar Cruz no se mueve. Se mantiene firme, con los brazos cruzados y la mirada clavada en la línea blanca que divide su trigo vivo del muerto, ignorando por completo cualquier matiz técnico del análisis. "Llámenlo como quieran, materia o fenómeno. Yo lo llamo hambre", sentencia con una frialdad cortante. "Mientras usted estudia el brillo de esas piedras, el círculo sigue caminando hacia mi puerta y no se detendrá a leer sus conclusiones".
+> mecanica
+> Éxito en Arcanos (16 vs CD 15). Has identificado la naturaleza artificial y depredadora de la cristalización.
+> presion
+> La comprensión teórica del fenómeno no detiene el avance de la marca. Si no propones una medida inmediata para frenar la expansión, Baldemar perderá la poca paciencia que le queda y buscará soluciones drásticas por su cuenta.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  917 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Arcanos, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -2.0 (neutral), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 41 — 28/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -2.0 (neutral), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  1211 ms
+
+> "La paciencia es un lujo que no podemos permitirnos, pero la precipitación es un error fatal."
+> Ignoro la urgencia de Baldemar y me inclino para recoger una muestra de ese polvo grisáceo y una fibra cristalizada.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 15)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (2934 ms): «Guárdese el polvo en el bolsillo si quiere, pero no me hable de errores fatales »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1869 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4655 ms
+
+> narrativa
+> La muestra se desprende con una facilidad inquietante, confirmando que la materia ha perdido toda cohesión orgánica para convertirse en un residuo inerte. Alrededor, el campo de trigo se extiende como un cementerio de cristal; las espigas petrificadas tintinean con el viento, produciendo un sonido metálico y seco, mientras el polvo gris se eleva en pequeñas nubes inertes al menor contacto.
+> Baldemar Cruz se endereza bruscamente, soltando un bufido de impaciencia mientras señala con un dedo calloso la línea de demarcación en el suelo. "Guárdese el polvo en el bolsillo si quiere, pero no me hable de errores fatales mientras yo miro cómo mi herencia se vuelve ceniza blanca. Cada minuto que pasa analizando esa fibra es un centímetro que el círculo gana sobre mi casa", sentencia con una urgencia que roza la desesperación.
+> mecanica
+> Éxito en Investigación (15 vs CD 15). Has obtenido muestras viables del polvo y la fibra para un análisis posterior.
+> presion
+> La recolección de muestras es útil para el futuro, pero Baldemar ya ha llegado a su límite. Si no presentas un plan de acción concreto para detener el avance de la cristalización ahora mismo, el granjero dejará de cooperar y tomará medidas desesperadas y posiblemente peligrosas.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2549 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Elior · character.inventory = muestra de cristales
+  ⚠ nombres no reconocidos: Investigación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4210: Elior.inventory = muestra de cristales
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -2.0 (neutral), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 42 — 29/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -2.0 (neutral), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  1905 ms
+
+> "Su herencia es ahora materia inerte, Baldemar. Si quiere salvar su casa, deje de gritar y escúcheme."
+> Guardo las muestras con cuidado y observo la línea de demarcación para buscar un patrón en el avance.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 16)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Baldemar Cruz no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1718 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4394 ms
+
+> narrativa
+> La mirada se clava en el suelo, donde la naturaleza ha sido sustituida por una geometría implacable. La línea de demarcación no es un borde errático, sino un corte afilado y preciso: el trigo vivo termina abruptamente para dar paso a un cristal gris que se expande en fractales perfectos. El avance sigue una lógica matemática, una progresión de ángulos exactos que parecen converger hacia un punto central invisible, ignorando por completo las ondulaciones del terreno.
+> Baldemar Cruz se queda mudo, su pecho subiendo y bajando con fuerza mientras observa el análisis. El granjero no interviene, pero su silencio es tenso; permanece rígido, con los ojos alternando entre la frialdad del cristal y la seguridad de quien acaba de encontrar un patrón donde antes solo había caos.
+> mecanica
+> Éxito en Investigación (16 vs CD 15). Has identificado que la cristalización no es aleatoria, sino que sigue un patrón fractal dirigido hacia un centro específico.
+> presion
+> El patrón revela una dirección clara, pero la velocidad de expansión no ha disminuido. Si no te desplazas hacia el punto de convergencia ahora, la casa de Baldemar será absorbida por la estructura geométrica antes de que puedas intervenir en el núcleo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1342 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Baldemar Cruz · competence_shown
+  ⚠ nombres no reconocidos: Investigación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4217: Baldemar Cruz affinity -2.0 → 0.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 0.0 (neutral), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 43 — 30/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 0.0 (neutral), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  1610 ms
+
+> "Interesante. Esta geometría no es natural, es una arquitectura."
+> Ignoro la urgencia de la casa y me acerco al borde del cristal para examinar la composición del material.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Arcanos: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (2845 ms): «A mí no me interesan los nombres que le pongas, ya sea arquitectura o un mal sue»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2002 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3751 ms
+
+> narrativa
+> El intento de desentrañar la esencia del material falla; la composición se resiste a cualquier análisis superficial, mostrándose como un enigma cerrado. Al acercarse, el borde del cristal se revela como una arista perfecta que corta el aire, una estructura de filamentos translúcidos que vibran con una frecuencia casi imperceptible mientras consumen la materia orgánica para alimentar su crecimiento fractal.
+> Baldemar Cruz se adelanta un paso, invadiendo el espacio personal del jugador para obligarlo a mirar la línea de demarcación. Con un dedo calloso señala el límite exacto donde el trigo muere y sentencia con dureza: "A mí no me interesan los nombres que le pongas, ya sea arquitectura o un mal sueño. Lo que veo es que ese cristal se come mi trigo con la precisión de una guadaña y que no piensa detenerse hasta que mi puerta sea parte de su dibujo."
+> mecanica
+> Fallo en Arcanos (9 vs CD 15). No has logrado identificar la naturaleza mágica o la composición del material.
+> presion
+> Mientras el análisis académico falla, el cristal no se detiene. La estructura fractal sigue avanzando hacia la propiedad de Baldemar, y la frustración del granjero está a punto de transformarse en una acción desesperada y violenta contra el intruso que solo observa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  893 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Arcanos, Fallo, Mientras
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 0.0 (neutral), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 44 — 31/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 0.0 (neutral), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  8835 ms
+
+> "Tu trigo es una pérdida insignificante comparada con el valor de este fenómeno."
+> Doy un paso atrás para recuperar mi espacio y observo con detenimiento el punto exacto donde la materia orgánica es consumida.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 4+4=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 8)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (2879 ms): «Insignificante, ¿eh? Para usted será un fenómeno, una curiosidad para anotar en »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2021 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5740 ms
+
+> narrativa
+> El intento de analizar el punto de consumo no arroja ningún dato nuevo; la materia orgánica desaparece en un proceso que escapa a toda lógica observable, dejando el enigma intacto. Mientras tanto, el borde del cristal vibra con un zumbido sordo, consumiendo las espigas de trigo que se transforman en ceniza blanca antes de ser absorbidas por la red de filamentos translúcidos.
+> Baldemar Cruz cierra el puño con fuerza, manteniendo la mirada fija y severa, sin retroceder ni un milímetro. "Insignificante, ¿eh? Para usted será un fenómeno, una curiosidad para anotar en un libro. Pero para mí, cada centímetro que ese cristal avanza es un día menos de comida para mis hijos el próximo invierno. No me hable de valores mientras usted da pasos atrás y yo cuento los surcos que me quedan", sentencia con una voz cargada de un resentimiento que ahora es palpable.
+> mecanica
+> Fallo en Investigación (8 vs CD 15). No has logrado obtener información adicional sobre el proceso de absorción del cristal.
+> presion
+> La brecha entre el interés académico y la supervivencia del granjero se ha vuelto un abismo. Baldemar ya no ve en el grupo a posibles salvadores, sino a parásitos indiferentes; cualquier movimiento errático o comentario despectivo podría provocar que el campesino pase de la amargura a la agresión física.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2412 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento baldemar_cruz · ideal_violated
+  ⚠ nombres no reconocidos: Fallo, Investigación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: baldemar_cruz
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 0.0 (neutral), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 45 — 32/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 0.0 (neutral), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  1725 ms
+
+> "Tus hijos no morirán de hambre si logramos entender cómo funciona esto; la ignorancia es el hambre más peligrosa."
+> Me acerco al cristal ignorando la actitud del granjero para observar la vibración de los filamentos.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Arcanos: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 22)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (2274 ms): «La ignorancia no es la que muerde, es el frío de esa tierra blanca. Usted puede »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1971 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5074 ms
+
+> narrativa
+> La aproximación al cristal revela el secreto de su pulsación: los filamentos translúcidos se agitan como nervios expuestos, vibrando en una frecuencia tan alta que distorsiona la imagen del entorno, proyectando sombras erráticas sobre la tierra calcinada. La luminiscencia fría del borde palpita con una intensidad rítmica, permitiendo observar cómo la estructura no solo consume, sino que procesa la materia en una danza geométrica y gélida.
+> Baldemar Cruz reacciona con un movimiento brusco, invadiendo el espacio personal para interponer un brazo tenso entre el cuerpo y el cristal, marcando una barrera física infranqueable. "La ignorancia no es la que muerde, es el frío de esa tierra blanca. Usted puede llamarlo 'entender' mientras se queda ahí parado mirando cómo vibra el aire, pero mientras usted estudia el hambre, yo la veo avanzar hacia mi puerta. ¡Apártese de ahí, que no es un juego de feria!", exclama con una voz que vibra de rabia y desesperación.
+> mecanica
+> Éxito en Arcanos (22 vs CD 15). Has logrado comprender la naturaleza de la vibración de los filamentos y la frecuencia de la luminiscencia del cristal.
+> presion
+> La paciencia de Baldemar se ha agotado. Cualquier intento más de priorizar el estudio sobre la acción inmediata será interpretado como una burla, y el granjero podría intentar expulsar al grupo de su propiedad por la fuerza.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  951 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Arcanos, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio 0.0 (neutral), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 46 — 33/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 0.0 (neutral), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  1705 ms
+
+> "Su desesperación es tan predecible como el ritmo de este cristal."
+> Ignoro la rabia de Baldemar y me acerco un paso más, intentando analizar si hay alguna forma de extraer un fragmento de esos filamentos sin destruir la estructura.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (6284 ms): «¡Ya basta de palabras finas y de mirar como quien cuenta granos de arena! No me »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2637 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5587 ms
+
+> narrativa
+> El análisis revela la arquitectura oculta del núcleo: una red interconectada de fibras vítreas que se anclan profundamente en el suelo calcinado, vibrando con una precisión matemática. El aire que rodea la estructura se vuelve denso y gélido, cargado de una electricidad estática que eriza el vello mientras los filamentos responden a la proximidad, exponiendo la viabilidad de una extracción quirúrgica.
+> Sin embargo, el avance es interrumpido bruscamente. Baldemar Cruz se planta firmemente en el camino, bloqueando el acceso al cristal con el cuerpo entero y una mirada cargada de una urgencia visceral. Con el rostro congestionado y los puños cerrados, exclama: "¡Ya basta de palabras finas y de mirar como quien cuenta granos de arena! No me importa si soy predecible, me importa que el hambre no sabe leer libros ni analizar ritmos. Si da un paso más hacia ese cristal solo para llevarse un trozo de recuerdo mientras mi tierra se vuelve ceniza blanca, le juro que lo sacaré de aquí a rastras, con o sin fragmentos."
+> mecanica
+> Éxito en Investigación (20 vs CD 15). Has identificado la estructura de anclaje del núcleo y confirmado que es posible extraer fragmentos de los filamentos sin colapsar la estructura.
+> presion
+> La hostilidad de Baldemar ha pasado de la irritación a la amenaza física directa. Insistir en la extracción del fragmento ahora provocará un enfrentamiento violento que podría alertar a otros o dañar la estructura que intentas analizar.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2399 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Baldemar Cruz · threat_made
+  ⚠ nombres no reconocidos: Investigación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4241: Baldemar Cruz affinity 0.0 → -8.0  (high)
+     No se amilana. Sube el respeto por atreverse, baja el aprecio.
+  ✗ (Mundo) delta rechazado por la base (npc.estado_emocional): field npc.estado_emocional is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -8.0 (cold), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 47 — 34/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -8.0 (cold), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  1779 ms
+
+> "Su hambre es un problema temporal, pero la ignorancia es una condena eterna. Apártese, Baldemar, antes de que su impulsividad arruine lo único que podría salvarle."
+> Doy un paso hacia él con calma, manteniendo la mirada fija en sus ojos para intentar quebrantar su determinación.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 5+0=5
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 5)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Baldemar Cruz no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1019 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3498 ms
+
+> narrativa
+> El paso es firme y la mirada gélida, pero Baldemar no retrocede ni un centímetro. Al contrario, la amenaza se asienta en sus hombros como una armadura y sus ojos, inyectados en sangre, se clavan en los tuyos con una terquedad mineral. La superioridad intelectual no encuentra eco en un hombre que siente el suelo morir bajo sus botas; para él, la calma es solo otra forma de arrogancia.
+> Cruz exhala un bufido corto, cargado de desprecio, y tensa los músculos del cuello. No hay vacilación en su postura, solo una barrera de carne y resentimiento que se vuelve impenetrable ante el intento de intimidación. El silencio que sigue es denso, roto únicamente por la vibración eléctrica y distante de los filamentos vítreos.
+> mecanica
+> Fallo en Intimidación (5 vs CD 15).
+> presion
+> Baldemar ha interpretado el intento de presión como un insulto final. Cualquier movimiento adicional hacia el núcleo será respondido con violencia inmediata, arriesgando la integridad de la extracción y la seguridad del entorno.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  18250 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento baldemar_cruz · threat_made
+  ⚠ nombres no reconocidos: Fallo, Intimidación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: baldemar_cruz
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -8.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 48 — 35/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -8.0 (cold), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  2156 ms
+
+> "Parece que hemos llegado a un punto muerto. No tengo interés en desperdiciar mi tiempo ni mi energía en una pelea innecesaria."
+> Doy un paso atrás, suavizando la postura, y observo los filamentos vítreos buscando algún patrón o debilidad.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 7)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (3104 ms): «El tiempo es lo único que ya no tengo, forastero. Mientras tú juegas a mirar hil»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2631 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5343 ms
+
+> narrativa
+> El aire vibra con una estática gélida mientras los filamentos vítreos, extendidos como raíces de cristal desde el techo hasta el suelo, pulsan con una luz errática y fría. Al intentar descifrar el patrón de esas fibras, la mirada se pierde en un caos de reflejos y destellos que no revelan ninguna debilidad; la complejidad de la red es impenetrable y el tiempo sigue corriendo, indiferente al análisis.
+> Baldemar Cruz cruza los brazos con fuerza, manteniendo la mirada fija y dura, sin relajarse ni un ápice ante el retroceso. Su voz corta el zumbido eléctrico con un desprecio seco: "El tiempo es lo único que ya no tengo, forastero. Mientras tú juegas a mirar hilitos de cristal, mi tierra se vuelve blanca y fría. No me importa tu energía, me importa que cada minuto que pasas ahí parado es un centímetro más de trigo que no volverá a nacer."
+> mecanica
+> Fallo en Investigación (7 vs CD 15).
+> presion
+> La paciencia de Baldemar se ha agotado por completo. Si no se ofrece una solución inmediata o se cede el paso, el granjero pasará de la hostilidad verbal a la acción física para despejar el área.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  833 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Investigación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -8.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 49 — 36/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -8.0 (cold), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  1859 ms
+
+> "Tu impaciencia es tan previsible como el invierno, granjero. No me presiones mientras trabajo."
+> Me alejo de los filamentos y lo miro con frialdad, buscando algún signo de debilidad o miedo en su postura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 17+1=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 18)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Baldemar Cruz no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1877 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4097 ms
+
+> narrativa
+> La mirada se clava en la figura de Baldemar, diseccionando cada tensión de sus hombros y la rigidez de su mandíbula. Tras el bosque translúcido de filamentos vítreos, que distorsionan la luz en destellos erráticos, la masa terrenal del granjero se recorta con una nitidez brutal. No hay vacilación en su postura ni el temblor del miedo; solo una determinación gélida y una hostilidad compacta que no cede ante la provocación.
+> Baldemar no responde con palabras. Se limita a sostener la mirada, manteniendo los brazos cruzados con una fuerza que hace resaltar las venas de sus antebrazos, permaneciendo como una roca inamovible en medio de aquella fragilidad de cristal.
+> mecanica
+> Éxito en Perspicacia (18 vs CD 15).
+> presion
+> Baldemar ha dejado de hablar, pero su silencio es una cuerda tensándose. La falta de progreso real en la estancia está convirtiendo su impaciencia en una resolución violenta.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1322 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -8.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 50 — 37/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -8.0 (cold), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  1546 ms
+
+> "Tu silencio es tan predecible como tu postura, Baldemar. No me interesa tu hostilidad, sino lo que ocultas."
+> Me acerco un paso más, ignorando la tensión, intentando detectar cualquier indicio de nerviosismo o una debilidad oculta en su lenguaje corporal.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 11+1=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 12)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (2366 ms): «Lo que oculto es que cada minuto que pasas analizando mis hombros, el círculo se»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3209 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4149 ms
+
+> narrativa
+> El intento de diseccionar la postura de Baldemar choca contra un muro de indiferencia. No hay un tic nervioso, ni un cambio en la respiración, ni ninguna grieta en su armadura de terquedad que revele un secreto. Solo hay una solidez imperturbable que devuelve la presión con la misma fuerza con la que ha sido aplicada.
+> Baldemar descruza los brazos con un movimiento brusco y señala con un dedo calloso hacia la dirección de sus campos, sin retroceder ni un milímetro ante la proximidad del jugador. "Lo que oculto es que cada minuto que pasas analizando mis hombros, el círculo se come otro centímetro de mi tierra. No busques debilidades, busca una solución, porque mi paciencia se acabó hace tres surcos", sentencia con una voz que corta el aire. A su alrededor, el bosque de filamentos vítreos parece cerrarse, creando un entorno de reflejos fracturados donde la luz se quiebra en ángulos imposibles, aislando la tensión del encuentro en una burbuja de cristal y silencio.
+> mecanica
+> Fallo en Perspicacia (12 vs CD 15).
+> presion
+> La hostilidad de Baldemar ha pasado de ser una barrera pasiva a una advertencia activa; cualquier insistencia en el juego psicológico podría provocar que el granjero expulse al grupo violentamente de su propiedad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  975 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -8.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 51 — 38/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -8.0 (cold), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  1271 ms
+
+> "Tus tierras son un precio pequeño comparado con el valor de lo que ocurre aquí."
+> Doy un paso atrás para darle espacio y observo con detenimiento los filamentos vítreos que nos rodean.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Arcanos: 17+4=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 21)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (2400 ms): «Precio pequeño, dice... Para usted será un precio pequeño porque no es su nombre»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2589 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4692 ms
+
+> narrativa
+> Los filamentos vítreos responden a la observación con una vibración sorda, revelando que no son simples cristales, sino una red de agujas translúcidas que actúan como espejos temporales. En las paredes de cristal, los reflejos no imitan el presente, sino que proyectan ecos distorsionados de los movimientos del grupo, fragmentando la percepción del espacio y confirmando la naturaleza anómala de la zona.
+> Baldemar suspira con una rabia contenida, apretando el puño mientras mira los filamentos que rodean el lugar con desprecio, como si fueran maleza que debe ser arrancada. "Precio pequeño, dice... Para usted será un precio pequeño porque no es su nombre el que está enterrado en ese polvo, ni es su pan el que se vuelve ceniza blanca. No me hable de valores abstractos mientras el hambre me mira a la cara", sentencia con una voz cargada de amargura.
+> mecanica
+> Éxito en Arcanos (21 vs CD 15).
+> presion
+> La desconfianza de Baldemar se ha solidificado; ahora percibe que el interés del grupo es puramente académico o místico, ignorando el costo humano, lo que lo acerca a romper cualquier posibilidad de cooperación voluntaria.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1056 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento baldemar_cruz · ideal_violated
+  ⚠ nombres no reconocidos: Arcanos, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: baldemar_cruz
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -8.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 52 — 39/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -8.0 (cold), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  1449 ms
+
+> "El hambre es un motor eficiente, Baldemar, pero la rabia es un ruido que no nos servirá de nada aquí."
+> Ignoro el arrebato del hombre y me acerco a los filamentos para analizar la naturaleza de esos ecos.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Arcanos: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 16)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (1902 ms): «Míreme cuando le hablo. Puede analizar sus espejitos todo lo que quiera, pero mi»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1328 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3386 ms
+
+> narrativa
+> La concentración rinde frutos; al acercarse a las agujas translúcidas, el análisis revela que la red vibra en una frecuencia sorda, proyectando ecos temporales distorsionados sobre sus superficies vítreas. Los reflejos no son meras imágenes, sino fragmentos de tiempo que se pliegan sobre sí mismos, confirmando la naturaleza anómala de la estructura.
+> Sin embargo, la calma del estudio es interrumpida bruscamente. Baldemar se planta frente al jugador, bloqueando parcialmente la vista de los filamentos con los hombros tensos y la mirada fija y dura. "Míreme cuando le hablo. Puede analizar sus espejitos todo lo que quiera, pero mientras usted estudia el ruido, mi tierra se vuelve blanca. No me venga con lecciones de calma cuando el invierno no sabe leer libros", sentencia con una voz que corta el aire.
+> mecanica
+> Éxito en Arcanos (16 vs CD 15).
+> presion
+> Baldemar ha dejado de ver al grupo como aliados potenciales para verlos como obstáculos académicos; cualquier intento futuro de obtener su ayuda o la de sus vecinos requerirá un esfuerzo mucho mayor para recuperar la confianza perdida.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  837 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Arcanos, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -8.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 53 — 40/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -8.0 (cold), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  1617 ms
+
+> "Su tierra se vuelve blanca porque el tiempo se pliega, Baldemar. Si quiere salvar su cosecha, deje de gritar y deje que termine de entender cómo funciona."
+> Sigo observando los reflejos de las agujas, ignorando la postura del hombre.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Arcanos: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (1864 ms): «Hableme de pliegues y tiempos mientras quiera, pero el hambre no entiende de geo»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4770 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4270 ms
+
+> narrativa
+> El intento de profundizar en el análisis se desmorona en un caos visual. Al ignorar la urgencia del hombre para concentrarse en el cristal, la frecuencia sorda de las agujas translúcidas reacciona violentamente, distorsionando los reflejos temporales en un estallido de imágenes fracturadas y contradictorias que dejan la mente aturdida y el estudio incompleto.
+> Baldemar Cruz se inclina hacia adelante, invadiendo el espacio personal del jugador con la mandíbula apretada y los puños cerrados a los costados. Su voz suena ronca, cargada de un desprecio que ya no admite réplicas: "Hableme de pliegues y tiempos mientras quiera, pero el hambre no entiende de geometría. Mañana despertaré y habré perdido otro surco, y usted seguirá mirando el cristal para ver cómo ocurre. No me pida que me calle mientras mi herencia se borra frente a mis ojos."
+> mecanica
+> Fallo en Arcanos (5 vs CD 15).
+> presion
+> La hostilidad de Baldemar ha cristalizado en una resolución silenciosa; el desprecio mostrado hacia su angustia lo ha empujado a buscar soluciones desesperadas con sus vecinos, cerrando la puerta a cualquier cooperación diplomática inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1441 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento baldemar_cruz · ideal_violated
+  ⚠ nombres no reconocidos: Arcanos, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: baldemar_cruz
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'npc', 'entity_id': 'Baldemar', 'field': 'mood', 'value': 'indignado y despreciativo'}
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -8.0 (cold), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 54 — 41/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -8.0 (cold), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  9572 ms
+
+> "Vuestra desesperación es ruidosa, Cruz, pero no es útil."
+> Me aparto del cristal con lentitud, ignorando su postura agresiva mientras limpio mis dedos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 19+1=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (3566 ms): «Mi desesperación es el ruido de la tierra muriendo. Usted tiene el lujo de llama»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2716 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4874 ms
+
+> narrativa
+> El estudio se siente ahora más pequeño, saturado por el zumbido residual del cristal y la respiración pesada de Baldemar. El aire huele a ozono y a la humedad rancia de la tierra que se filtra por las paredes, cerrando el espacio alrededor de ambos.
+> Baldemar se endereza bruscamente, rompiendo el contacto visual con un gesto de asco. Da un paso atrás, pero no para ceder espacio, sino para marcar una distancia insalvable. "Mi desesperación es el ruido de la tierra muriendo. Usted tiene el lujo de llamar 'ruido' a lo que para mí es el sonido de mi familia pasando hambre el invierno que viene. Quédese con su utilidad y sus cristales; yo me quedo con lo que queda de mi suelo", sentencia con una frialdad que corta el aire.
+> mecanica
+> Éxito en Perspicacia (20 vs CD 15).
+> presion
+> La ruptura emocional con Baldemar es total; el hombre ya no ve en el grupo a un aliado, sino a un obstáculo arrogante, lo que acelera su decisión de recurrir a medidas desesperadas y clandestinas para salvar sus tierras.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1723 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Baldemar Cruz · ideal_violated
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4306: Baldemar Cruz affinity -8.0 → -16.0  (any)
+     Actuaron contra lo que él considera correcto.
+  ✗ (Mundo) delta rechazado por la base (npc.estado_emocional): field npc.estado_emocional is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Baldemar Cruz: alive, aprecio -16.0 (cold), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 55 — 42/1387 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio -16.0 (cold), 2 hechos conocidos
+
+### [2] JUGADOR — Elior
+
+  1367 ms
+
+> "Tus sentimientos son irrelevantes frente a la lógica de la supervivencia."
+> Me doy la vuelta ignorando su arrebato y empiezo a examinar los cristales y el resto del estudio en busca de cualquier objeto de valor.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Baldemar Cruz'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 23)
+
+### [6] ACTOR(ES)
+
+  Baldemar Cruz (3425 ms): «Toca todo lo que quiera. Busque tesoros entre los trastos mientras la tierra se »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1911 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3561 ms
+
+> narrativa
+> El estudio se despliega como un cementerio de ambiciones académicas: pergaminos amarillentos que se deshacen al tacto y herramientas de medición oxidadas que yacen olvidadas en los rincones. Entre el caos, los cristales sobre la mesa de madera carcomida vibran con una frecuencia débil y constante, rodeados de notas frenéticas que describen, con una caligrafía desesperada, el avance implacable de la erosión del suelo.
+> Baldemar Cruz permanece inmóvil, con los brazos cruzados y la mandíbula tensa. Observa con un desprecio gélido cada movimiento, cada objeto desplazado, mientras su voz suena como el crujido de la tierra seca: "Toca todo lo que quiera. Busque tesoros entre los trastos mientras la tierra se vuelve blanca. Cuando el círculo llegue a su puerta, veremos si su 'lógica' puede sembrar piedras y recoger trigo".
+> mecanica
+> Éxito en Investigación (23 vs CD 15).
+> presion
+> La hostilidad de Baldemar ha cristalizado en un desprecio absoluto; cualquier intento futuro de obtener información o ayuda de su parte requerirá un esfuerzo considerable, mientras él comienza a cerrar filas con el resto de la comunidad contra el intruso.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1149 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Baldemar Cruz · ideal_violated
+  ⚠ nombres no reconocidos: Investigación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4310: Baldemar Cruz affinity -16.0 → -24.0  (any)
+     Actuaron contra lo que él considera correcto.

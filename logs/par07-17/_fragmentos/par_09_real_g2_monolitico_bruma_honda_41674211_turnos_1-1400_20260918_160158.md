@@ -1,0 +1,3320 @@
+
+# VERTICAL SLICE — Par 09 (real) · G2 (Monolítico) · Bruma Honda (monolithic)
+
+- **DM:** `google/gemma-4-31B-it`
+- **jugador:** `google/gemma-4-31B-it` (Garrek, desvío 50)
+- **turno:** 1
+
+## Turno 1 — 1/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Amancio Bell: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 1040 caracteres
+
+### [2] JUGADOR — Garrek
+
+  3886 ms
+
+> "Permítame ayudarla, Herminda. No puedo quedarme de brazos cruzados mientras la gente sufre."
+> Me dirijo directamente a la Casa de Cuarentena para presentarme ante la curandera y ponerme a su disposición. Una vez allí, pido ver a los enfermos para evaluar sus síntomas.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 19+4=23
+
+### [4] DM
+
+  10717 ms
+
+> El aire en la Casa de Cuarentena es pesado, cargado de un olor dulzón a vinagre y sudor frío que se pega a la garganta. Herminda Coz te recibe con los ojos hundidos y las manos curtidas, manchadas de ungüentos que no parecen surtir efecto. Te observa con una mezcla de escepticismo y un hambre desesperada de alivio; no hace preguntas sobre tu procedencia, solo asiente con un gesto seco y te guía hacia el interior del antiguo granero, donde la luz se filtra débilmente a través de las rendijas de la madera.
+> Al examinar a los pacientes, notas que la letargia es absoluta: sus respiraciones son superficiales y sus pupilas reaccionan con una lentitud inquietante. Sin embargo, tu ojo experto detecta un patrón que Herminda ha pasado por alto en medio del caos: no hay fiebre, ni inflamación ganglionar, ni rastro de las pústulas típicas de las pestes comunes. El cuerpo no está luchando contra un invasor externo, sino que parece estarse apagando, como una vela que se queda sin cera, mientras una palidez cenicienta se extiende desde las extremidades hacia el torso.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5745 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminda_coz · competence_shown
+  ✗ campo fuera de lista blanca: character.location_id
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  ✗ PNJ inexistente: herminda_coz
+
+### [9] ESTADO DESPUÉS
+
+  Amancio Bell: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 2 — 2/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 635 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2565 ms
+
+> "No te culpes, Herminda. Has hecho lo que has podido con lo que tienes."
+> Me acerco a uno de los pacientes más jóvenes y le tomo el pulso con cuidado, observando la piel cenicienta.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 9+4=13
+
+### [4] DM
+
+  6433 ms
+
+> Herminda se tensa visiblemente ante tus palabras, apretando los labios mientras evita mirarte a los ojos. Un breve espasmo recorre sus hombros y suspira, un sonido que parece cargar con el peso de todo el granero, pero no replica; se limita a observar tus manos con una intensidad casi dolorosa.
+> Al pulsar la muñeca del joven, sientes un latido débil, irregular y desesperadamente lento, como un eco lejano. La piel no solo está pálida, sino fría y seca, con una textura que recuerda más al pergamino viejo que a la carne humana. No hay signos de infección ni rastro de toxinas comunes en la superficie, confirmando que la vitalidad del paciente se desvanece sin dejar huella de combate biológico.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3017 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminda_coz · ideal_honored
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminda_coz
+
+### [9] ESTADO DESPUÉS
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 3 — 3/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 635 caracteres
+
+### [2] JUGADOR — Garrek
+
+  4202 ms
+
+> "No te preocupes, Herminda. Voy a intentar estabilizarlo."
+> Me concentro en el pulso del joven y procedo a examinar más a fondo su estado físico para entender qué le está robando la vida.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 8+4=12
+
+### [4] DM
+
+  7451 ms
+
+> Herminda exhala un aire tembloroso y asiente apenas con la cabeza, aunque permanece rígida, como si temiera que cualquier movimiento brusco pudiera romper el frágil hilo que aún sostiene al muchacho. Sus ojos, húmedos y cargados de una angustia contenida, no se apartan de tus gestos, buscando en tu seguridad una esperanza que ella misma parece haber olvidado.
+> Al profundizar en el examen, notas que la debilidad es sistémica y profunda. No hay fiebre, ni congestión, ni el hedor dulce de la gangrena; solo un vacío absoluto. El cuerpo del joven parece haberse rendido, consumido por una apatía orgánica que ha ralentizado sus funciones vitales hasta el límite del colapso. Sus músculos están atrofiados y su respiración es tan superficial que apenas mueve el pecho, como si el organismo hubiera olvidado la urgencia de sobrevivir.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3236 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminda_coz · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminda_coz
+
+### [9] ESTADO DESPUÉS
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 4 — 4/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 635 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2452 ms
+
+> "Tranquila, Herminda. No lo voy a dejar solo."
+> Sigo examinando el cuerpo del muchacho, buscando cualquier rastro de una causa externa o mística que explique este vacío.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 18+4=22
+
+### [4] DM
+
+  11204 ms
+
+> Tus dedos recorren la piel pálida y fría del joven, buscando patrones, marcas o irregularidades que el ojo desnudo ignoró. Bajo la superficie, detectas una anomalía inquietante: no hay signos de infección ni venenos comunes, pero los ganglios linfáticos están extrañamente retraídos y hay una ausencia total de resistencia en los tejidos profundos, como si algo hubiera succionado la vitalidad del cuerpo desde el interior, dejando solo el armazón biológico. Es una erosión invisible, un hambre que no ha dejado rastro en el estómago, sino en la esencia misma de la carne.
+> Herminda suelta un sollozo ahogado y se lleva la mano a la boca, observando la intensidad de tu examen. "Por favor...", susurra con la voz rota, "no me diga que es el final. He intentado todo lo que el Consejo me enseñó, pero es como si... como si estuviera desapareciendo mientras aún respira". Sus ojos se clavan en los tuyos, suplicando una respuesta que el silencio del muchacho se niega a dar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1487 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 5 — 5/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 635 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2600 ms
+
+> "No voy a rendirme tan fácilmente, Herminda. Mantén la calma."
+> Le tomo la mano con suavidad para tranquilizarla mientras vuelvo a analizar la zona de los ganglios.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 7+4=11
+
+### [4] DM
+
+  8985 ms
+
+> Tus dedos presionan los puntos donde deberían estar los ganglios, pero la sensación es la de hundir los dedos en cera fría. No hay inflamación, no hay fiebre, ni rastro de la lucha biológica que caracteriza a cualquier enfermedad conocida. El tejido se siente vacío, una arquitectura de piel y hueso que ha perdido su cohesión interna, dejando una laxitud antinatural que no responde a ninguna técnica de diagnóstico convencional.
+> Herminda exhala un tembloroso suspiro al sentir el contacto de tu mano, aunque sus hombros permanecen tensos. Se queda inmóvil, conteniendo el aliento, mientras observa tus movimientos con una mezcla de esperanza desesperada y un terror profundo que no logra ocultar. El silencio de la habitación solo es interrumpido por la respiración superficial y errática del joven.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2289 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 6 — 6/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 635 caracteres
+
+### [2] JUGADOR — Garrek
+
+  5449 ms
+
+> "Tranquila, Herminda. Estoy contigo."
+> Sigo palpando el torso del joven, buscando cualquier anomalía en la estructura ósea o alguna zona donde la piel no se sienta como cera.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 18+4=22
+
+### [4] DM
+
+  6474 ms
+
+> Tus dedos recorren el torso del joven con precisión quirúrgica, ignorando la laxitud superficial para buscar la resistencia del hueso. Bajo la piel cerúlea, detectas una anomalía inquietante: las costillas no se sienten sólidas, sino porosas, como si el calcio hubiera sido succionado o sustituido por una estructura esponjosa y quebradiza. No hay fracturas, pero la integridad estructural del tórax es alarmantemente débil, como si el cuerpo se estuviera deshaciendo desde el núcleo hacia afuera.
+> Herminda suelta el aire que contenía en un sollozo ahogado, sus ojos fijos en tu rostro buscando una respuesta que no sea el silencio. "Por favor...", susurra con la voz rota, "dime que hay algo que podamos hacer, que no es... que no es lo que Amancio dice que es".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1624 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 7 — 7/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Amancio Bell: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 984 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2937 ms
+
+> "Tranquila, Herminda. No voy a dejar que se rinda sin luchar."
+> Le doy un apretón afectuoso en la mano para calmarla mientras vuelvo a examinar la zona afectada con más detenimiento.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 8+4=12
+
+### [4] DM
+
+  6471 ms
+
+> Tus dedos vuelven a presionar la caja torácica, buscando alguna señal de regeneración o algún patrón que explique la porosidad del hueso. Sin embargo, la textura esponjosa persiste y no encuentras ninguna anomalía nueva ni un síntoma que sugiera una patología reversible; la degradación es uniforme y profunda, confirmando que el daño estructural es sistémico.
+> Herminda cierra los ojos al sentir el apretón en su mano, dejando que un temblor recorra sus hombros. Se aferra a tu tacto como a un ancla, aunque su expresión permanece nublada por la angustia mientras espera que tus manos encuentren un milagro que la evidencia física no respalda.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1233 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Amancio Bell: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 8 — 8/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 635 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2763 ms
+
+> "Tranquila, Herminda. No estás sola en esto."
+> Sigo sosteniendo su mano con firmeza mientras busco en su rostro alguna señal de lucidez o un detalle que no sea dolor.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+4=12
+
+### [4] DM
+
+  7311 ms
+
+> Herminda exhala un suspiro tembloroso y abre los ojos, clavando su mirada en la tuya. Sus pupilas están dilatadas y el iris parece desvaído, como si la luz del lugar le resultara agresiva. Hay una gratitud genuina en el modo en que aprieta tus dedos, pero el consuelo no logra disipar la bruma de su expresión.
+> A pesar de tu atención, su rostro es un mapa de agotamiento crónico. Las ojeras profundas y la palidez cenicienta son constantes que no revelan nada más allá de la enfermedad; no detectas ninguna señal de engaño, ni un destello de lucidez oculta, ni ningún detalle anómalo que escape a la degradación general de su estado. Solo hay una mujer rota que se aferra a la esperanza de quien la sostiene.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3404 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 9 — 9/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 635 caracteres
+
+### [2] JUGADOR — Garrek
+
+  4082 ms
+
+> "Tranquila, Herminda. No te voy a soltar."
+> Le acaricio la mejilla con suavidad mientras intento analizar más a fondo su estado físico para comprender qué la ha dejado así.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 6+4=10
+
+### [4] DM
+
+  6371 ms
+
+> La piel de Herminda se siente fría y seca, casi como el pergamino viejo. Al analizar su estado, notas que su respiración es superficial y errática, y que el ritmo de su corazón es lento, demasiado lento para alguien que acaba de pasar por un momento de angustia.
+> Sin embargo, la degradación es tan generalizada que no logras aislar un síntoma específico. No hay fiebre, ni heridas ocultas, ni el olor dulce de la gangrena; solo un vacío sistémico, una ausencia de vitalidad que parece haberse filtrado en sus huesos. Es el retrato de un cuerpo que ha olvidado cómo regenerarse.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1419 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 10 — 10/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 635 caracteres
+
+### [2] JUGADOR — Garrek
+
+  3786 ms
+
+> "Tranquila, Herminda, no te voy a dejar sola en esto."
+> Sigo examinando su cuerpo, buscando cualquier signo, por pequeño que sea, de una causa externa o una marca que explique este vacío.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 8+4=12
+
+### [4] DM
+
+  8208 ms
+
+> Tus dedos recorren los pliegues de su piel y los puntos de presión, buscando cualquier anomalía que el primer vistazo haya pasado por alto. Sin embargo, la resistencia de su cuerpo es nula; no hay inflamaciones, ni erupciones cutáneas, ni rastro de toxinas visibles en las mucosas. Es una erosión invisible que ha dejado el organismo en un estado de inercia absoluta.
+> Herminda exhala un suspiro débil, casi inaudible, y sus ojos se clavan en los tuyos con una mezcla de gratitud y una profunda, antigua resignación. Sus labios se mueven apenas un milímetro, pero no emite sonido alguno, mientras su pulso continúa marcando un ritmo letárgico y distante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4030 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminda_coz · promise_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminda_coz
+
+### [9] ESTADO DESPUÉS
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 11 — 11/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 635 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2514 ms
+
+> "Tranquila, Herminda. No te voy a dejar sola en esto."
+> Le tomo la mano con suavidad y me acerco a su rostro para intentar leer sus labios.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 14+2=16
+
+### [4] DM
+
+  6262 ms
+
+> Te inclinas sobre ella, el olor a humedad y a hierbas secas llenando el espacio entre ambos. Al concentrar la vista en el movimiento casi imperceptible de sus labios, logras descifrar las palabras que el aire se niega a transportar. Herminda no pide medicina ni reza; sus labios forman una frase cargada de un peso invisible: *"No fue el cansancio"*.
+> La mujer cierra los ojos lentamente, como si revelar ese pequeño fragmento de verdad hubiera consumido el resto de sus fuerzas. Su mano, pequeña y fría entre la tuya, se relaja por completo, mientras el silencio de la habitación vuelve a espesarse, dejando que el eco de su confesión flote en el aire viciado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  890 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 12 — 12/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  15 entidades · contexto de 635 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2807 ms
+
+> "Descansa ahora, Herminda. Ya estás a salvo."
+> Suelto su mano con suavidad y me separo un poco para observar el resto de la habitación en busca de cualquier pista que explique sus palabras.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+-1=15
+
+### [4] DM
+
+  8494 ms
+
+> La habitación es un caos de boticas y pergaminos amarillentos que huelen a polvo y vinagre. Al desplazar la mirada, notas que sobre una mesa auxiliar hay un registro de pacientes con tachaduras recientes y manchas de humedad; una página doblada sobresale del cuaderno, donde una caligrafía temblorosa anotó observaciones sobre la falta de apetito de un paciente anónimo antes de marcar el acta con una cruz negra.
+> Cerca de la cama, un cuenco de cerámica contiene un caldo ya seco y una costra de pan endurecido que nadie llegó a tocar. El silencio es ahora absoluto, roto solo por el goteo rítmico de una filtración en el techo que cae sobre el suelo de piedra, formando un charco oscuro que parece absorber la poca luz que entra por la ventana.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3038 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: registro de pacientes
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item registro de pacientes
+
+### [9] ESTADO DESPUÉS
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 13 — 13/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos conocidos
+  16 entidades · contexto de 635 caracteres
+
+### [2] JUGADOR — Garrek
+
+  3684 ms
+
+> "Pobre alma, murió sin probar bocado."
+> Me acerco a la mesa auxiliar y tomo el registro de pacientes para leer las anotaciones y descubrir quién era esa persona.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+-1=16
+
+### [4] DM
+
+  5281 ms
+
+> Las hojas del cuaderno crujen bajo tus dedos, desprendiendo un olor a moho y tinta vieja. Al desplegar la página doblada, la caligrafía temblorosa revela el nombre de un tal Elian, un antiguo curtidor del pueblo. Las notas detallan una apatía creciente y una negativa sistemática a ingerir alimentos, describiendo cómo el hombre simplemente "se apagó" mientras el resto del pueblo se hundía en el letargo del cansancio crónico.
+> La cruz negra que sella el acta está trazada con una presión excesiva, llegando a perforar el papel. Justo debajo, una anotación al margen, escrita con una mano mucho más firme pero apresurada, reza: *"No fue la plaga, fue el vacío"*.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3320 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación npc: Elian
+  ⚠ nombres no reconocidos: Elian
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: npc Elian
+
+### [9] ESTADO DESPUÉS
+
+  Herminda Coz: alive, aprecio 20.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 14 — 14/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2367 ms
+
+> "¿El vacío? Qué descripción más imprecisa para un diagnóstico médico."
+> Cierro el cuaderno con cuidado y busco en el registro algún rastro de dónde vivía ese tal Elian o dónde fue enterrado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+-1=11
+
+### [4] DM
+
+  6821 ms
+
+> Pasas las páginas del registro con rapidez, deslizando los dedos sobre los nombres tachados y las fechas de defunción que se amontonan como sedimentos. El papel, amarillento y quebradizo, parece resistirse a entregar sus secretos; las entradas sobre el gremio de curtidores están manchadas de humedad y algunas hojas se han pegado entre sí, borrando fragmentos cruciales de las direcciones.
+> Encuentras la mención de Elian, pero la información es insuficiente. El registro solo indica que pertenecía al sector de las curtidurías, una zona que solía quedar en el límite este del pueblo, cerca del río. No hay ninguna anotación sobre su lugar de sepultura ni una dirección exacta de su domicilio, solo una referencia vaga a un "taller compartido" que ya no figura en los mapas actualizados del archivo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2328 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 15 — 15/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1977 ms
+
+> "No puede ser que se hayan olvidado de dónde enterrarlo."
+> Cierro el libro con cuidado para no romper las hojas y busco en el archivo cualquier mapa antiguo o plano del sector este que muestre esos talleres compartidos.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 9+-1=8
+
+### [4] DM
+
+  5612 ms
+
+> Rebuscas entre los estantes de madera carcomida, desplazando planos enrollados que desprenden un olor a polvo y moho. Tus dedos recorren pergaminos descoloridos y mapas cuyos bordes se desintegran al tacto, pero el sector este es un vacío sistemático; los planos que encuentras son demasiado recientes y solo muestran el trazado actual de las calles, donde los antiguos talleres han sido borrados por nuevas construcciones o simplemente dejados al olvido.
+> El silencio del archivo se vuelve pesado, roto solo por el crujido de la madera. No hay ningún mapa antiguo que detalle la disposición de los talleres compartidos ni el trazado original de las curtidurías; es como si alguien hubiera decidido que esa parte de la historia del pueblo no merecía ser preservada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  975 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 16 — 16/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1732 ms
+
+> "Qué extraño que precisamente esta zona haya desaparecido de los registros."
+> Sigo revisando los estantes, buscando cualquier nota marginal, lista de inventario o correspondencia que mencione quién fue el responsable de limpiar el archivo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+-1=0  PIFIA
+
+### [4] DM
+
+  7852 ms
+
+> En tu afán por encontrar una pista, desplazas con demasiada brusquedad un pesado tomo de cuero agrietado. El libro cae al suelo con un estruendo sordo, provocando que un estante inestable se tambalee y derrumbe una cascada de pergaminos y carpetas sobre ti. El impacto levanta una nube espesa de polvo centenario que invade tus vías respiratorias, provocándote un ataque de tos violento que resuena en todo el recinto.
+> En el caos de papeles esparcidos por el suelo, no solo no encuentras ninguna nota, sino que el desorden ha vuelto imposible distinguir el orden original de los documentos. Las hojas que vuelan y se mezclan ahora parecen un rompecabezas irrecuperable, borrando cualquier rastro de organización que pudieras haber aprovechado para tu búsqueda.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2343 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Garrek · character.conditions = ataque de tos
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3868: Garrek.conditions = ataque de tos
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 17 — 17/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  3060 ms
+
+> "Maldita sea..."
+> Me llevo la mano a la boca para calmar la tos y trato de recuperar el aliento. Una vez despejado el polvo, me pongo de rodillas y empiezo a recoger los papeles con cuidado, intentando reorganizar los que parezcan pertenecer a la misma carpeta.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+-1=18
+
+### [4] DM
+
+  6740 ms
+
+> Tus dedos, aún temblorosos por el ataque de tos, deslizan las hojas amarillentas sobre el suelo de piedra fría. A medida que separas los pergaminos por el tipo de caligrafía y el sello de cera, el caos comienza a ceder. Entre el desorden, rescatas una carpeta de cuero curtido que ha quedado atrapada bajo el tomo caído; al abrirla, encuentras un registro de defunciones meticulosamente anotado, pero con varias páginas arrancadas violentamente.
+> En el margen de una de las hojas supervivientes, una anotación escrita con una tinta pálida y apresurada destaca sobre el resto: *"El cansancio no es síntoma, es la marca. No busquéis en los archivos, buscad donde la tierra ya no acepta más cuerpos"*. La frase parece un aviso desesperado, subrayada con trazos profundos que casi perforan el papel.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2972 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta el_cansancio_que_no_cede · quest.next_step_known = True
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: el_cansancio_que_no_cede
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 18 — 18/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  4405 ms
+
+> "¿Dónde la tierra ya no acepta más cuerpos? Qué horror..."
+> Sigo revisando el registro de defunciones para ver si hay algún nombre recurrente o un patrón en las fechas antes de moverme.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+-1=0  PIFIA
+
+### [4] DM
+
+  5039 ms
+
+> El papel cruje bajo tu tacto y, en un movimiento torpe, el registro de cuero se desliza de tus manos. Al caer, el tomo se abre bruscamente contra el suelo de piedra, y el roce violento desgarra una de las pocas páginas que aún permanecían intactas, dejando el papel hecho jirones y borrando irremediablemente los nombres que intentabas analizar.
+> El silencio de la estancia se vuelve pesado, roto solo por el eco del golpe y el sonido de los fragmentos de pergamino dispersos. Los nombres que buscabas ahora no son más que manchas de tinta ilegibles y trozos de celulosa blanca sobre el frío suelo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3250 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: item.status
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 19 — 19/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  5144 ms
+
+> "Maldita sea..."
+> Suelto un suspiro y me arrodillo rápidamente para intentar recoger los trozos de papel, tratando de encajar las piezas del pergamino roto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 13+-1=12
+
+### [4] DM
+
+  4527 ms
+
+> Tus dedos tantean los jirones de papel sobre la piedra fría, intentando unir las fibras desgarradas como quien arma un rompecabezas imposible. La tinta se ha corrido en los bordes del desgarro y algunas letras han quedado sepultadas bajo el polvo grisáceo del suelo. Logras rescatar algunos fragmentos, pero la mayoría de los nombres se han perdido en el vacío del accidente.
+> Entre los restos, solo consigues rescatar un nombre que permanece legible en una esquina del papel: "Elian". El resto de la página es un caos de trazos incompletos y manchas que no permiten reconstruir ninguna conexión ni dato adicional.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3026 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 20 — 20/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2086 ms
+
+> "Elian... espero que estés bien, donde quiera que estés."
+> Recojo los fragmentos con cuidado y los guardo para no perder ni un trazo más. Me levanto y miro a mi alrededor buscando cualquier rastro de alguien que pueda reconocer ese nombre.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 10+-1=9
+
+### [4] DM
+
+  5713 ms
+
+> El aire es pesado, cargado de un olor a moho y piedra húmeda que se pega a la garganta. Al ponerte en pie y recorrer la estancia con la mirada, el entorno se revela como un espacio desolado; las paredes están descascaradas y el polvo danza en los pocos haces de luz que se filtran por las grietas del techo. No hay nadie más en la sala, solo el silencio opresivo de un lugar que parece haber sido olvidado por el tiempo.
+> Buscas algún indicio, una inscripción en los muros o algún objeto que vincule el nombre de Elian con este sitio, pero no encuentras nada. Las superficies están vacías o cubiertas de suciedad genérica, y los escombros que rodean la zona donde estaba el papel no ofrecen más pistas que la monotonía del gris y la piedra fría.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1230 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 21 — 21/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1823 ms
+
+> "Esto es demasiado silencioso para estar vacío."
+> Me acerco a las paredes y empiezo a apartar la suciedad y el polvo con las manos para ver si hay algo oculto bajo la capa de gris.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 6+-1=5
+
+### [4] DM
+
+  4478 ms
+
+> Tus dedos se hunden en una mezcla pastosa de polvo y humedad que se cuela bajo tus uñas. Raspas la piedra con insistencia, pero la superficie es terca y plana; solo consigues dejar surcos superficiales en el mortero podrido y mancharte la piel de un gris ceniza que no revela ningún secreto. 
+> El silencio de la estancia se vuelve más denso mientras el eco de tus propios movimientos resuena en las paredes desnudas. No hay relieves, ni marcas, ni mensajes ocultos bajo la mugre; solo la fría indiferencia de una estructura que ha sido vaciada de todo propósito.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  977 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 22 — 22/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1811 ms
+
+> "Vaya, parece que no hay nada aquí."
+> Me limpio las manos en la ropa y me pongo de pie. Empiezo a examinar las esquinas y las juntas de las paredes buscando cualquier irregularidad.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 6+-1=5
+
+### [4] DM
+
+  6670 ms
+
+> Te pones en pie, dejando que la suciedad se impregne en la tela de tu ropa mientras recorres la estancia. Tus ojos escudriñan cada ángulo, siguiendo la línea donde las paredes se encuentran con el techo y el suelo, pero el espacio es monótono y desolador. Las juntas están selladas con el mismo mortero grisáceo y quebradizo que ya has probado a raspar; no hay huecos sospechosos, ni piedras que bailen, ni corrientes de aire que sugieran un paso oculto.
+> El frío de la piedra parece emanar de los cimientos mismos, envolviéndote en una quietud absoluta. Las esquinas son ángulos rectos y mudos que no ofrecen ninguna pista, devolviéndote la sensación de que este lugar ha sido diseñado para no guardar nada, o que el tiempo ha borrado cualquier rastro de lo que alguna vez pudo ser importante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1137 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 23 — 23/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1732 ms
+
+> "No puede ser que no haya dejado nada."
+> Me siento de nuevo en el suelo y paso las manos por la superficie, buscando cualquier relieve o marca que haya pasado por alto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+-1=13
+
+### [4] DM
+
+  6209 ms
+
+> Tus dedos recorren la piedra gélida, sintiendo la aspereza del grano y el polvo que se acumula en las hendiduras. El frío cala a través de la piel, pero la repetición del tacto te permite ignorar la monotonía del gris. Tras unos minutos de búsqueda meticulosa, tus yemas tropiezan con algo que rompe la uniformidad del suelo: una serie de muescas superficiales, casi imperceptibles, talladas en el granito.
+> No son símbolos ni palabras, sino pequeñas marcas lineales, como rayas de conteo, agrupadas en el rincón más oscuro de la estancia. Están tan desgastadas que parecen parte de la erosión natural de la roca, pero la disposición es demasiado deliberada para ser azarosa. Alguien estuvo aquí, sentado exactamente donde tú estás ahora, contando los días o las horas en un silencio absoluto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1319 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 24 — 24/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2473 ms
+
+> "¿Cuánto tiempo habrás estado aquí...?"
+> Me inclino más sobre las marcas, intentando discernir si hay algún patrón o si el conteo se interrumpe bruscamente.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 5+-1=4
+
+### [4] DM
+
+  4577 ms
+
+> Te acercas más a las muescas, pero la luz es insuficiente y el polvo acumulado juega malas pasas con tu vista. Al intentar analizar la secuencia de las rayas, solo percibes una maraña de surcos irregulares que se funden con las grietas naturales del granito; no logras distinguir si el conteo sigue un orden lógico o si se detiene en algún punto concreto.
+> El silencio de la estancia se vuelve pesado, casi tangible, mientras las marcas permanecen mudas bajo tu mirada, negándose a revelar la historia de quien las talló.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1020 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 25 — 25/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2163 ms
+
+> "Maldita sea, no se ve nada."
+> Saco un trapo limpio de mi equipo e intento limpiar el polvo de la piedra para ver las marcas con claridad.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+-1=3
+
+### [4] DM
+
+  4814 ms
+
+> Pasas el trapo sobre la superficie fría del granito, pero el polvo está impregnado en la piedra, casi fundido con la humedad del lugar. Al frotar, el tejido se engancha en las aristas más abruptas y el movimiento solo consigue emborronar la suciedad, creando una capa grisácea y pastosa que rellena los surcos en lugar de vaciarlos.
+> Las muescas desaparecen bajo una película de barro pálido, volviéndose ahora más invisibles que antes. El granito permanece mudo, ocultando sus secretos bajo el rastro sucio de tu intento de limpieza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  902 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 26 — 26/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  3018 ms
+
+> "Vaya, parece que este polvo no quiere irse por las buenas."
+> Suelto el trapo y paso las yemas de los dedos con cuidado sobre las muescas ahora embarradas para intentar sentir la profundidad y la forma de los surcos.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+-1=14
+
+### [4] DM
+
+  5220 ms
+
+> Tus yemas se hunden en la pasta grisácea, sintiendo la frialdad del granito bajo el lodo. Al deslizar los dedos con paciencia, el tacto revela que las muescas no son adornos superficiales, sino cortes profundos y deliberados. Percibes una secuencia de hendiduras verticales y transversales que forman un patrón geométrico repetitivo, similar a una escritura arcaica o un mapa esquemático, aunque el barro sigue dificultando la lectura visual.
+> Un aire gélido recorre la estancia, trayendo consigo un olor a metal oxidado y piedra mojada. El silencio del lugar se siente denso, casi tangible, mientras tus dedos siguen delineando los relieves ocultos en la superficie de la piedra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1753 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 27 — 27/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1517 ms
+
+> "Esto no es un simple grabado decorativo."
+> Sigo recorriendo las hendiduras con los dedos, intentando descifrar el significado de las líneas mientras ignoro el frío.
+> {Historia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Historia: 11+1=12
+
+### [4] DM
+
+  5069 ms
+
+> Tus dedos se deslizan por las muescas, pero la complejidad del patrón se resiste a ceder. A medida que intentas conectar las líneas verticales con las transversales, el diseño te resulta vagamente familiar, evocando esquemas de arquitectura antigua o quizás la delimitación de terrenos, pero no logras asignarles un significado concreto ni reconocer el idioma o la simbología detrás de los cortes.
+> El frío se intensifica, calando hasta los huesos, mientras el silencio de la estancia parece absorber el sonido de tu propia respiración. La piedra permanece muda bajo el barro, revelando que hay un mensaje o un mapa allí, pero sus secretos siguen enterrados en una lengua que no alcanzas a descifrar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1335 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 28 — 28/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1494 ms
+
+> "No me rendiré tan fácilmente."
+> Limpio el resto del barro con más cuidado para intentar ver el patrón completo sin obstrucciones.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 9+-1=8
+
+### [4] DM
+
+  7657 ms
+
+> Tus dedos se mueven con meticulosidad, apartando las costras de tierra húmeda y el limo grisáceo que se aferran a la piedra. A medida que la superficie queda al descubierto, el patrón se revela en toda su extensión: una red de líneas precisas y profundas que se cruzan en ángulos matemáticos, formando una suerte de laberinto geométrico que se extiende por la losa.
+> Sin embargo, cuanto más limpias la piedra, más evidente resulta la erosión del tiempo. Los bordes de las muescas están desgastados y algunas secciones críticas del grabado han desaparecido, borradas por siglos de fricción y humedad. El diseño sigue siendo un enigma indescifrable; las formas no encajan en ninguna estructura lógica que reconozcas y el significado de los trazos permanece oculto tras el velo de la antigüedad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1034 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 29 — 29/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2010 ms
+
+> "Esto es demasiado preciso para ser un simple adorno."
+> Me quedo observando los trazos, intentando encontrar algún patrón oculto o alguna referencia a textos antiguos que haya estudiado.
+> {Historia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Historia: 18+1=19
+
+### [4] DM
+
+  6164 ms
+
+> Al concentrar la vista en las intersecciones desgastadas, el caos aparente comienza a ordenarse. No es un laberinto, sino una representación esquemática de la alineación astral de una era olvidada, específicamente los nodos de flujo que los antiguos teúrgos utilizaban para anclar energías telúricas al plano material. El estilo de los trazos, aunque erosionado, coincide con los tratados prohibidos de la Primera Hegemonía, aquellos que describían la construcción de sellos para contener entidades que no pertenecen a este ciclo del tiempo.
+> La precisión matemática que habías intuido no es estética, sino funcional. Te percatas de que el grabado actúa como un mapa de presiones; si se aplicara el peso o la energía correcta en los puntos donde las líneas convergen, la losa no solo serviría de tapa, sino que actuaría como el mecanismo de cierre de algo mucho más profundo y peligroso.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1175 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Hegemonía, Primera
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 30 — 30/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2415 ms
+
+> "Esto no es un adorno, es una cerradura para algo que debería seguir enterrado."
+> Me inclino sobre la losa para examinar con cuidado los puntos de convergencia, buscando cualquier señal de desgaste o rastro que indique si el mecanismo ha sido accionado recientemente.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+-1=13
+
+### [4] DM
+
+  5828 ms
+
+> Tus dedos recorren los surcos fríos de la piedra, siguiendo el flujo de las líneas hacia los nodos de convergencia. La superficie es áspera, cubierta por una pátina de polvo y humedad que se resiste a desaparecer, pero al presionar los puntos críticos, notas que la piedra no cede ni un milímetro. No hay juego en las juntas ni vibraciones que sugieran que el mecanismo esté activo o lubricado.
+> Sin embargo, en el nodo más cercano al borde, detectas una pequeña muesca, un rastro de fricción metálica que corta la erosión natural de la roca. No es un desgaste antiguo; es una marca limpia, un rasguño profundo que indica que algo —una llave, una herramienta o un dedo reforzado— ha presionado ese punto con fuerza bruta en un pasado muy reciente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1220 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 31 — 31/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1633 ms
+
+> " Alguien ha estado hurgando aquí hace poco."
+> Me inclino para observar la muesca más de cerca, intentando determinar qué tipo de objeto pudo dejar esa marca.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 9+-1=8
+
+### [4] DM
+
+  5510 ms
+
+> Te inclinas sobre la piedra, forzando la vista para analizar el surco. El polvo grisáceo se amontona en los bordes de la muesca, ocultando la verdadera profundidad del rasguño. A pesar de tu esfuerzo, la marca es demasiado genérica; solo ves un rastro de metal contra roca que no te permite distinguir si fue una hoja, un clavo o una pieza de maquinaria.
+> El silencio de la estancia se siente pesado, interrumpido únicamente por el goteo rítmico de la humedad en algún punto invisible del techo. La piedra permanece fría y muda bajo tu mirada, guardando el secreto de quién estuvo allí antes que tú.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  712 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 32 — 32/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1679 ms
+
+> "No me dirás nada hoy, ¿verdad?"
+> Me levanto y empiezo a recorrer el perímetro de la estancia, buscando cualquier otro rastro o señal que haya pasado por alto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 4+2=6
+
+### [4] DM
+
+  5263 ms
+
+> Tus pasos resuenan huecos sobre el suelo de piedra mientras caminas junto a las paredes, rozando la superficie fría y húmeda. El aire es denso, con un olor a salitre y moho que se pega a la garganta, y la penumbra parece tragarse los rincones más alejados de la estancia.
+> A pesar de tu escrutinio, el perímetro no revela nada nuevo. Las paredes son bloques irregulares de granito gris, desgastados por el tiempo y la humedad, sin inscripciones, grietas sospechosas ni rastros que escapen a la monotonía del entorno. El goteo rítmico continúa, marcando los segundos en una habitación que se resiste a entregarte cualquier pista adicional.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  898 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 33 — 33/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1393 ms
+
+> "No puede ser solo una celda húmeda."
+> Me detengo frente a la pared más desgastada y paso los dedos por las juntas de los bloques de granito, buscando algún mecanismo o hueco oculto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+-1=17
+
+### [4] DM
+
+  6137 ms
+
+> Tus yemas recorren la rugosidad del granito, sintiendo el frío calar en la piel mientras palpamos las juntas llenas de musgo y salitre. Al llegar a un bloque ligeramente más hundido que el resto, notas que la piedra no está sellada con el mismo mortero que las demás; hay una hendidura milimétrica, un vacío que no debería estar ahí, donde el aire fluye con una corriente débil y gélida.
+> Al presionar con firmeza el borde inferior de la piedra, un chasquido seco resuena en el silencio de la celda. El bloque se desliza hacia atrás con un roce áspero de piedra contra piedra, revelando un hueco estrecho y oscuro en la pared. En su interior, envuelto en un trozo de tela podrida que se deshace al tacto, descansa un pequeño objeto metálico.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2697 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: objeto metálico
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item objeto metálico
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 34 — 34/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1407 ms
+
+> "Veamos qué es esto."
+> Saco el objeto metálico del hueco con cuidado y retiro los restos de la tela podrida para verlo bien.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+-1=7
+
+### [4] DM
+
+  4735 ms
+
+> Tus dedos retiran los jirones de tela húmeda, que se deshacen como ceniza negra entre tus uñas. Bajo la suciedad y el óxido, el objeto revela una forma geométrica irregular, un trozo de metal pesado y frío que no parece haber sido forjado, sino moldeado por una fuerza bruta.
+> La superficie está cubierta de una pátina verdosa y picaduras profundas que ocultan cualquier inscripción o detalle. A pesar de tus esfuerzos por limpiar la pieza y analizar su propósito, el objeto permanece mudo y ambiguo, una masa metálica sin un uso evidente que exhala un olor metálico y rancio, similar a la sangre seca.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1232 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 35 — 35/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1900 ms
+
+> "Hueles a muerte y a hierro viejo. No eres una herramienta común."
+> Sigo examinando el metal, buscando alguna muesca o relieve que haya pasado desapercibido bajo la pátina.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+-1=11
+
+### [4] DM
+
+  4944 ms
+
+> Tus dedos recorren la superficie rugosa, presionando contra las picaduras y los relieves irregulares del metal. El frío del objeto parece filtrarse a través de tu piel, pero la pátina verdosa es persistente y los surcos son demasiado erráticos para formar un patrón reconocible o una inscripción legible.
+> La masa metálica se resiste a revelar sus secretos; cada muesca que encuentras parece el resultado del azar o de la erosión, no de un diseño intencionado. El olor a sangre seca se intensifica mientras manipulas la pieza, pero el objeto sigue siendo un enigma mudo en tu mano.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  840 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 36 — 36/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1849 ms
+
+> "Esto no es una inscripción, es una carnicería."
+> Suelto el objeto con cuidado y busco cualquier rastro de tejido orgánico o restos humanos adheridos al metal que expliquen ese olor.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+-1=18
+
+### [4] DM
+
+  6173 ms
+
+> Al apartar la pieza, el metal resbala con un sonido sordo sobre la superficie. Al inclinar la vista y analizar los intersticios del objeto, descubres que el olor no proviene de una mancha superficial, sino de vetas microscópicas de tejido desecado, casi cristalizadas, que han quedado atrapadas en las porosidades del metal. No son restos accidentales; el material orgánico ha sido absorbido por la estructura, formando una costra oscura y fibrosa que se funde con la pátina verdosa en los puntos más profundos de las muescas.
+> Los restos son mínimos, apenas hilos de lo que alguna vez fue músculo o tendón, pero están distribuidos de forma uniforme por toda la pieza. El objeto no estuvo en contacto con la sangre; parece haberla bebido, integrando la materia orgánica en su propia composición mineral.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2124 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 37 — 37/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1699 ms
+
+> "Esto no es normal... es como si el metal tuviera hambre."
+> Acerco la pieza a mi rostro para examinar la naturaleza de esa costra orgánica.
+> {Religión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Religión: 19+1=20
+
+### [4] DM
+
+  6241 ms
+
+> Al acercar la pieza, el hedor a hierro viejo y putrefacción seca golpea tus fosas nasales con eine fuerza. Bajo la luz, las vetas cristalizadas no parecen simples depósitos, sino una red deliberada. Reconoces el patrón: no es una absorción accidental, sino la firma de un ritual de ligadura hemática, una técnica prohibida donde el objeto es consagrado mediante la absorción lenta de esencia vital para otorgarle una voluntad propia o un propósito eterno.
+> La estructura mineral ha sido alterada para actuar como un recipiente vivo. No es solo metal con restos orgánicos; es un artefacto diseñado para consumir la vitalidad de quien lo empuñe o de quien sea herido por él, anclando el alma de la víctima a la materia inerte. El objeto vibra con una frecuencia imperceptible, una sed antigua que aún persiste en los poros del metal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  805 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 38 — 38/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2409 ms
+
+> "Esto es una atrocidad. Nadie debería haber creado algo así."
+> Suelto la pieza con cuidado y me alejo un paso, observando el objeto con horror profesional. Intento recordar si he leído sobre quiénes practicaban este tipo de rituales.
+> {Religión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Religión: 9+1=10
+
+### [4] DM
+
+  4439 ms
+
+> El objeto cae sobre la superficie con un sonido seco, metálico, que resuena en el silencio del lugar. Al apartarte, la vibración del artefacto parece intensificarse por un instante, como si el rechazo mismo alimentara su hambre, mientras las vetas cristalizadas capturan la luz en ángulos antinaturales.
+> Buscas en tu memoria los textos prohibidos y los anales de las sectas marginadas, pero el patrón de la ligadura hemática es demasiado específico o ha sido borrado de los registros oficiales. Recuerdas que existen menciones vagas a rituales de sangre en las periferias del conocimiento teológico, pero nada que te permita vincular esta pieza con un autor, una orden o una época concreta. El origen de la atrocidad permanece oculto tras el velo del tiempo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1077 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 39 — 39/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2155 ms
+
+> "Esto no es una reliquia común, es una herida abierta en la historia."
+> Me inclino para observar el artefacto más de cerca, buscando cualquier rastro de sangre seca o residuos orgánicos que no hayan sido detectados.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+-1=15
+
+### [4] DM
+
+  2956 ms
+
+> Al acercar la vista, el frío que emana el objeto cala en la piel. Bajo la luz, detectas una fina costra de un color pardo oscuro, casi negro, adherida a las hendiduras de la ligadura hemática. No es una mancha accidental; el residuo orgánico ha sido absorbido por el metal, cristalizándose en pequeñas escamas que parecen pulsar débilmente al ritmo de un corazón lejano.
+> El rastro es antiguo, pero la sustancia no se ha degradado por completo, manteniendo una viscosidad antinatural que se resiste a secarse del todo. Los poros del material parecen haber bebido la sangre, integrándola en su propia estructura para alimentar el brillo anómalo de las vetas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  839 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 40 — 40/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1294 ms
+
+> "Esto no es una mancha, es una alimentación."
+> Me acerco con cuidado para analizar la consistencia de esa costra y tratar de identificar qué tipo de sangre es.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 19+4=23
+
+### [4] DM
+
+  4705 ms
+
+> La punta de tus dedos roza la superficie y el frío se intensifica, volviéndose un pinchazo eléctrico que recorre tu brazo. Al analizar la textura, confirmas que la sustancia no se ha depositado sobre el metal, sino que ha sido succionada hacia el interior de los poros, formando una estructura celular híbrida. La viscosidad es densa, similar al alquitrán, pero mantiene una oxigenación imposible para su antigüedad.
+> La composición no es humana. La densidad de los glóbulos y el matiz oscuro, casi violáceo bajo la luz, sugieren un origen hemático de una criatura con una regeneración acelerada o una naturaleza sobrenatural. Es sangre de algo que no debería haber muerto, o que se niega a hacerlo, y que ha dejado una firma biológica imborrable en la ligadura.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  986 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 41 — 41/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2586 ms
+
+> "Esto no es natural, ni siquiera para los estándares de la guerra."
+> Retiro la mano con cuidado y observo el resto de la ligadura buscando más rastros de esa sustancia.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 4+4=8
+
+### [4] DM
+
+  3183 ms
+
+> Retiras la mano y el frío eléctrico persiste en tu piel como un eco. Recorres con la mirada el resto de la ligadura, buscando patrones o manchas similares que confirmen la extensión de aquella sustancia violácea, pero el metal parece haber absorbido el rastro con una eficiencia quirúrgica.
+> A pesar de tu esfuerzo por analizar la pieza, la estructura celular se vuelve esquiva. No logras distinguir si hay más depósitos ocultos en los pliegues del metal o si aquella muestra era un evento aislado; la ligadura permanece muda, mostrándose ahora como un simple trozo de hierro frío y oxidado bajo la luz mortecina.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1046 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 42 — 42/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1532 ms
+
+> "Esto no es una oxidación común."
+> Dejo la ligadura a un lado y examino el cuerpo o la superficie donde estaba apoyada, buscando cualquier otro residuo de esa sustancia.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+-1=13
+
+### [4] DM
+
+  3869 ms
+
+> Te inclinas sobre la superficie donde descansaba el metal, deslizando los dedos y la vista por la piedra fría y húmeda. El rastro es tenue, casi invisible, pero encuentras una serie de micro-salpicaduras violáceas que forman un camino errático hacia el borde de la mesa, como si algo hubiera sido arrastrado o hubiera goteado mientras el cuerpo se enfriaba.
+> Sin embargo, la búsqueda se detiene ahí. El resto de la superficie está limpio, lavada por una humedad persistente que ha diluido cualquier otra pista orgánica. No hay más depósitos claros ni manchas que revelen el origen de la sustancia; solo queda el rastro moribundo de aquel fluido que parece luchar por no ser absorbido por la piedra porosa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1252 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 43 — 43/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2445 ms
+
+> "Esto no es sangre normal."
+> Me acerco más al rastro violáceo e intento identificar la sustancia por su olor o textura.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  5010 ms
+
+> Al acercar el rostro, el aire se vuelve denso y cargado. El olor es una mezcla punzante de cobre oxidado y el dulce empalagoso de la fruta podrida, una fragancia que no pertenece a ningún organismo vivo que hayas estudiado. Al rozar el fluido, notas que posee una viscosidad aceitosa, casi jabonosa, que se resiste a adherirse a la piel pero que desprende un calor residual, un pulso térmico tenue que sugiere que la sustancia sigue procesando alguna forma de energía química.
+> Tus conocimientos médicos se disparan con una claridad absoluta: esto no es un fluido biológico natural, sino el resultado de una necrosis acelerada inducida por alquimia o magia nigromántica. Es un agente corrosivo diseñado para disolver los tejidos blandos desde adentro hacia afuera, transformando la sangre en este residuo violáceo mientras licua los órganos internos. El rastro no es accidental; es el subproducto de una descomposición forzada y artificial.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1041 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 44 — 44/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1816 ms
+
+> "Esto es una atrocidad... No es una muerte natural."
+> Me alejo del fluido y busco rastros de otras víctimas o supervivientes que puedan necesitar mi ayuda inmediata.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 14+4=18
+
+### [4] DM
+
+  5563 ms
+
+> Tus ojos recorren el perímetro con rigor clínico, ignorando el instinto de apartar la mirada. Entre la maleza aplastada y el barro grisáceo, detectas el patrón: una serie de gotas viscosas que se extienden hacia el norte, alternadas con surcos profundos en la tierra que sugieren que algo pesado fue arrastrado. No hay rastro de lucha desesperada, sino la evidencia de un colapso sistémico rápido; encuentras un trozo de tela rota, empapado en el mismo fluido violáceo, que desprende un vaho cálido al contacto con el aire frío.
+> A unos diez metros, medio oculto tras el tronco podrido de un sauce, asoma un brazo pálido y rígido. La piel tiene ese tono nacarado típico de la hipoxia severa, pero no hay signos de vida; el cuerpo ha sido vaciado por el agente corrosivo, dejando una cáscara humana que se ha desplomado como un saco de cuero viejo. No hay nadie que rescatar aquí, solo el rastro fresco de quien, o qué, se llevó el resto de la carga.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3881 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: trozo de tela rota
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item trozo de tela rota
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 45 — 45/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1437 ms
+
+> "Pobre alma... al menos ya no sufres."
+> Me acerco al cuerpo y examino la cáscara humana y el fluido violáceo para intentar comprender qué ha causado semejante degradación.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 3+4=7
+
+### [4] DM
+
+  3280 ms
+
+> Te inclinas sobre el resto humano, donde el frío del barro se mezcla con el hedor dulzón y metálico del fluido. Al intentar analizar la degradación de los tejidos y la naturaleza de la sustancia violácea, la evidencia resulta confusa y contradictoria; los patrones de erosión no siguen una lógica biológica conocida y el fluido parece haber consumido la materia orgánica de forma errática, dejando vacíos que no coinciden con ninguna enfermedad o veneno común.
+> La cáscara de piel se siente cerosa y fría, pero no ofrece ninguna pista clara sobre el agente causante. Lo único tangible es que la degradación fue casi instantánea, transformando un cuerpo vivo en este envoltorio hueco en cuestión de segundos, aunque el "cómo" y el "qué" permanecen ocultos tras una superficie que se resiste a cualquier diagnóstico médico convencional.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  945 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 46 — 46/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2032 ms
+
+> "Esto no es una enfermedad natural... ni siquiera un veneno."
+> Me separo del cuerpo y busco rastros de esa sustancia violácea en el barro circundante para ver si hay un rastro que seguir.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 10+-1=9
+
+### [4] DM
+
+  2475 ms
+
+> Te levantas del barro, dejando que el frío calen en tus botas mientras escaneas el suelo. El terreno es una masa informe de lodo grisáceo y agua estancada que devora la luz del día. Buscas cualquier rastro, una gota aislada o una veta de aquel color violáceo que tiñó el cadáver, pero el entorno es monótono y hostil.
+> El fluido parece haber sido absorbido rápidamente por la tierra o se ha disuelto en la humedad del lugar. No hay surcos, ni manchas residuales, ni un camino visible que indique hacia dónde se movió el agente o de dónde provino; solo queda la vacuidad del paisaje y el silencio opresivo del cementerio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  835 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 47 — 47/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1410 ms
+
+> "No puede haber desaparecido así como así."
+> Me pongo en cuclillas y paso los dedos por el lodo donde estaba el cuerpo, buscando cualquier residuo viscoso o cambio de temperatura.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 11+-1=10
+
+### [4] DM
+
+  5995 ms
+
+> Tus dedos se hunden en la mezcla fría y pegajosa. El lodo tiene una consistencia uniforme, densa y gélida, que se desliza entre tus uñas sin ofrecer ninguna resistencia inusual. No hay rastro de viscosidad persistente ni ninguna anomalía térmica que sugiera una reacción química o mágica reciente; el suelo está tan muerto y apagado como el resto del cementerio.
+> El paisaje gris sigue extendiéndose a tu alrededor, imperturbable. El silencio vuelve a cerrarse sobre ti, interrumpido únicamente por el chapoteo sordo de tus movimientos en el fango.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  848 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 48 — 48/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2143 ms
+
+> "No hay rastro de vida ni de magia aquí."
+> Me limpio las manos en la ropa y me pongo en pie. Observo el resto del cementerio buscando cualquier señal de desorden o marcas recientes en el terreno.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 17+2=19
+
+### [4] DM
+
+  4517 ms
+
+> Al enderezarte, el horizonte de lápidas torcidas y tierra removida se despliega ante ti bajo el cielo plomizo. Tu mirada recorre las hileras de tumbas olvidadas hasta que detectas una irregularidad en el sector norte: una serie de surcos profundos y paralelos que rompen la monotonía del fango, como si algo pesado hubiera sido arrastrado a rastras hacia la espesura de unos sauces llorones que bordean el terreno.
+> Cerca de esos surcos, la tierra no está simplemente húmeda, sino removida con brusquedad. Hay fragmentos de madera podrida de ataúdes antiguos esparcidos superficialmente, pero no parecen haber sido expulsados desde abajo, sino apartados violentamente desde la superficie para abrir un hueco rápido y descuidado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1501 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 49 — 49/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1255 ms
+
+> "Esto no es un descanso natural."
+> Me acerco a los fragmentos de madera y me inclino para examinar la profundidad y la forma de los surcos en el fango.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+-1=2
+
+### [4] DM
+
+  2995 ms
+
+> Te inclinas sobre el barro, pero la lluvia persistente ha difuminado los bordes de las marcas y el fango espeso oculta los detalles más finos. Al intentar analizar la profundidad de los surcos, tus dedos solo encuentran una masa viscosa y fría que se desliza entre las uñas, sin que logres discernir si el peso que arrastró aquello era humano, animal o algo más inerte.
+> Los fragmentos de madera podrida se deshacen en astillas blandas bajo tu tacto, mezclándose con el suelo grisáceo. No hay un patrón claro ni una huella reconocible que te indique el origen o el destino exacto de lo que fue arrastrado hacia los sauces; solo queda el silencio opresivo del cementerio y el olor a tierra mojada y descomposición antigua.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1570 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 50 — 50/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1338 ms
+
+> "Maldita lluvia."
+> Me pongo en pie y limpio el barro de mis manos en la ropa. Miro hacia los sauces para buscar cualquier señal visual que no esté enterrada en el fango.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+2=4
+
+### [4] DM
+
+  2636 ms
+
+> Te levantas mientras el agua fría sigue calando en tus costuras, convirtiendo la ropa en una segunda piel pesada y gélida. Al clavar la vista en la arboleda de sauces, la lluvia cae en cortinas densas que fragmentan la visión, transformando las ramas colgantes en dedos pálidos que se agitan con el viento.
+> El paisaje es una mancha monocromática de grises y verdes oscuros. Entre el balanceo hipnótico de las hojas y la bruma que asciende del suelo, no logras distinguir ningún rastro, figura o anomalía que rompa la monotonía del cementerio. Para tus ojos, los sauces son solo árboles mudos envolviendo el vacío.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2435 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 51 — 51/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2621 ms
+
+> "No puedo dejar que el frío me gane ahora."
+> Me sacudo el agua de la ropa lo mejor que puedo y camino hacia los sauces, intentando buscar cualquier señal de vida o peligro entre las ramas.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 4+2=6
+
+### [4] DM
+
+  6818 ms
+
+> Tus pasos se hunden en el barro viscoso, que succiona tus botas con un sonido húmedo y pesado mientras avanzas hacia la arboleda. Al internarte bajo el palio de los sauces, el viento se apaga, sustituido por un silencio asfixiante y el goteo rítmico del agua chocando contra las hojas. El aire aquí es más denso, cargado de un olor a tierra mojada y vegetación descompuesta que se pega a la garganta.
+> Tus ojos recorren el entramado de ramas y el suelo cubierto de hojarasca grisácea, pero la bruma juega contigo. Cada movimiento en la periferia de tu visión resulta ser solo el balanceo de una vara o el vuelo errático de un insecto oscuro. No hay huellas frescas, ni respiraciones agitadas, ni el destello de un arma; solo el vacío monocromático y el frío que, a pesar de tus esfuerzos, sigue reclamando tu piel.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2030 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 52 — 52/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1968 ms
+
+> "Tengo que encontrar a alguien aquí, no puede haber desaparecido así."
+> Me detengo y cierro los ojos un momento para concentrarme, intentando detectar cualquier sonido o rastro que no sea el goteo del agua.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  4997 ms
+
+> El silencio, que antes parecía absoluto, se descompone en capas. Al filtrar el goteo monótono y el siseo del viento, percibes un sonido discordante: el roce metálico y rítmico de una cadena arrastrándose sobre piedra húmeda, coming from beneath the soil. No es un sonido superficial, sino una vibración sorda que asciende desde las raíces de los sauces, acompañada por un jadeo ronco y prolongado que no pertenece a ninguna criatura sana.
+> A unos diez metros a tu derecha, la bruma se adelgaza justo donde el terreno desciende en una hondonada. Allí, medio oculta por las raíces retorcidas de un sauce centenario, asoma la esquina de una losa de piedra gris, desplazada y agrietada. Desde la oscuridad de la abertura que deja la piedra, emerge un olor acre a putrefacción antigua y hierro, y el sonido de la cadena se detiene abruptamente, seguido de un silencio expectante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2709 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación location: Sótano de la hondonada
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location Sótano de la hondonada
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 53 — 53/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2404 ms
+
+> "Sea quien sea, no estás solo. Estoy aquí para ayudar."
+> Me acerco con cautela hacia la losa de piedra, manteniendo la mano sobre mi símbolo sagrado. 
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 13+2=15
+
+### [4] DM
+
+  6328 ms
+
+> A medida que te aproximas, la bruma se arremolina en tus tobillos, fría y pegajosa. Al asomarte al borde de la hondonada, la luz de tu presencia revela que la losa no ha sido movida desde fuera, sino empujada desde el interior. En la penumbra del hueco, percibes un movimiento errático: una mano pálida, con la piel tensa y translúcida como el pergamino, se aferra al borde de la piedra gris. Los dedos terminan en uñas negras y quebradizas que arañan la roca con un sonido seco.
+> Desde el fondo de la abertura, el jadeo ronco se transforma en un gorgoteo húmedo. Dos orbes blanquecinos, carentes de pupilas, se fijan en ti desde la oscuridad. El olor a hierro y podredumbre se intensifica, golpeándote el rostro como una ráfaga, mientras el sonido de la cadena vuelve a resonar, esta vez con un tirón violento que sacude la losa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1567 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 54 — 54/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1855 ms
+
+> "Tranquilo, no voy a hacerte daño. Estoy aquí para ayudar."
+> Me arrodillo junto al borde de la losa y extiendo la mano con calma hacia la criatura, intentando analizar su estado físico.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 7+4=11
+
+### [4] DM
+
+  3934 ms
+
+> La criatura reacciona a tu voz con un espasmo violento. Al extender la mano, el ser emite un siseo gutural y retrae los dedos bruscamente, arañando la piedra con desesperación antes de hundirse parcialmente en la oscuridad del hueco. El movimiento es errático, carente de coordinación, y el sonido de la cadena tensándose sugiere que el tirón proviene de algo que aún lo retiene en las profundidades.
+> Desde tu posición, observas la piel translúcida y el temblor de sus extremidades, pero la penumbra y la agitación del sujeto impiden que determines con claridad la naturaleza de sus heridas o si su estado es producto de una enfermedad o de la descomposición. Solo percibes que su respiración es superficial y que el gorgoteo en su garganta no cesa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1766 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 55 — 55/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1355 ms
+
+> "Tranquilo, no voy a hacerte daño. Déjame ayudarte."
+> Intento acercarme con cuidado para examinar mejor el estado de su garganta y su respiración.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  4402 ms
+
+> Al acercarte con movimientos lentos, la criatura se queda gélida, aunque su cuerpo sigue sacudido por espasmos rítmicos. Al iluminar la zona del cuello, el diagnóstico es inmediato y devastador: no es una enfermedad, sino una herida traumática. Unas fibras metálicas, similares a filamentos de alambre, han sido insertadas quirúrgicamente en su laringe y tráquea, desgarrando el tejido interno y provocando que la sangre se mezcle con el aire en ese gorgoteo constante.
+> El ser exhala un suspiro que suena a cristal roto y, por un instante, sus ojos se clavan en los tuyos con una lucidez aterradora. No hay rastro de descomposición natural; la piel está tensa, preservada artificialmente, pero el tejido alrededor de los implantes metálicos presenta una necrosis avanzada que desprende un olor dulzón y metálico, típico de una infección sistémica que el cuerpo ya no puede combatir.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1074 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 56 — 56/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2276 ms
+
+> "Tranquilo, estoy aquí. No te voy a dejar así."
+> Toco suavemente su frente mientras busco la forma de aliviar su sufrimiento o estabilizar la zona del cuello.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 5+4=9
+
+### [4] DM
+
+  2891 ms
+
+> Tus dedos rozan una piel fría y cerosa, tensa como el cuero curtido. Al intentar estabilizar la zona del cuello, el contacto con los filamentos metálicos revela que están anclados profundamente en la columna cervical; cualquier intento de moverlos o presionar el tejido circundante solo provoca que la criatura se arquee violentamente, soltando un estertor ahogado.
+> La necrosis es demasiado profunda y los implantes actúan como un tapón contaminado que impide cualquier maniobra de estabilización básica. El gorgoteo de sangre y aire se intensifica, llenando el espacio con ese aroma dulzón y ferroso, mientras el ser continúa sacudiéndose en espasmos que no responden a tu tacto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1198 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 57 — 57/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1941 ms
+
+> "Tranquilo, no te muevas. Intento ayudarte."
+> Retiro mis manos rápidamente para no causarle más daño y observo con detenimiento la disposición de los filamentos metálicos para comprender cómo han sido insertados.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 7+4=11
+
+### [4] DM
+
+  6423 ms
+
+> La criatura emite un sonido gutural, una mezcla de súplica y agonía que se corta abruptamente cuando retiras las manos. Sus ojos, nublados por una película grisácea, se clavan en ti con una intensidad vacía mientras los espasmos comienzan a remitir, dejando paso a una quietud temblorosa. El aroma a putrefacción se vuelve más pesado, impregnando la humedad del aire.
+> Al observar los filamentos, notas que el metal no ha sido insertado con precisión quirúrgica, sino que parece haber sido forzado a través de la carne. Los cables entran en ángulos irregulares, desgarrando el tejido muscular en lugar de deslizarse entre él, lo que sugiere una instalación apresurada o realizada por alguien sin conocimientos de anatomía. No logras descifrar el patrón de conexión ni el propósito de los anclajes en la columna, solo que la integración es tosca y el rechazo orgánico es absoluto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1310 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 58 — 58/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1904 ms
+
+> "Pobre criatura... esto ha sido una carnicería, no una cirugía."
+> Me acerco con cuidado para examinar las heridas donde el metal desgarra la carne, buscando cualquier rastro de who o qué causó este daño. {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 7+4=11
+
+### [4] DM
+
+  7370 ms
+
+> Te inclinas sobre el cuerpo, donde el hedor a carne rancia se intensifica al acercar el rostro. Al inspeccionar los puntos de entrada del metal, observas que los bordes de las heridas están irregulares y necróticos, pero no hay rastro de suturas, ungüentos ni ningún intento de estabilizar la zona. La piel alrededor de los cables está amoratada y presenta quemaduras superficiales, como si el metal hubiera sido introducido en caliente o hubiera provocado una reacción química violenta al contacto.
+> No encuentras ninguna marca distintiva, sello o firma que identifique al perpetrador. Solo queda la evidencia de una brutalidad mecánica: la carne ha sido desplazada a la fuerza, dejando cortes profundos y descuidados que hablan más de una urgencia frenética que de un método sistemático. La criatura exhala un último suspiro húmedo, un siseo que escapa de su garganta mientras su cuerpo vuelve a quedar inerte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1618 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 59 — 59/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2539 ms
+
+> "Qué horror... esto no ha sido una cirugía, ha sido una tortura."
+> Me quedo un momento observando la disposición de los cables y las quemaduras para intentar comprender la lógica detrás de semejante carnicería.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 6+4=10
+
+### [4] DM
+
+  4908 ms
+
+> Te quedas contemplando la maraña de cables y el tejido calcinado, buscando un patrón en el caos. Sin embargo, la disposición de los metales parece errática; no hay una trayectoria coherente que sugiera una función anatómica clara ni un propósito médico reconocible. Los cables están clavados en ángulos discordantes, atravesando nervios y músculos sin respetar ninguna estructura vital, lo que hace imposible deducir una lógica técnica o un objetivo quirúrgico concreto.
+> El cuerpo yace ahora en un silencio absoluto, el vaho frío del ambiente comienza a empañar la piel amoratada y el hedor a ozono y putrefacción se asienta sobre ti, pegajoso y pesado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1200 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 60 — 60/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1617 ms
+
+> "Esto no es medicina, es una tortura."
+> Me alejo del cuerpo y busco cualquier rastro de herramientas o notas que puedan explicar quién hizo esto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 9+-1=8
+
+### [4] DM
+
+  3938 ms
+
+> Te apartas del cadáver, dejando que el hedor a ozono se quede impregnado en tu ropa. Recorres la estancia con la mirada, examinando las esquinas oscuras y el suelo manchado, pero la habitación está despojada de cualquier utilidad. No hay mesas de trabajo, ni pergaminos, ni el rastro de una herramienta que haya quedado olvidada en la prisa de abandonar la escena.
+> Solo queda el vacío gélido del lugar y el eco de tus propios pasos sobre la piedra húmeda. El espacio parece haber sido limpiado de cualquier evidencia material, dejando únicamente el cuerpo como el único y mudo testimonio de lo ocurrido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1372 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 61 — 61/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  1666 ms
+
+> "No puedes llevarte todo, siempre queda algo."
+> Me arrodillo junto al cadáver para examinarlo con detenimiento, buscando cualquier rastro de trauma o sustancia que no sea el ozono.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 6+4=10
+
+### [4] DM
+
+  8213 ms
+
+> Te inclinas sobre el cuerpo, donde el frío de la piedra se filtra a través de tus rodillas. Al inspeccionar la piel pálida y los rasgos congelados del difunto, tus dedos recorren las zonas donde el trauma debería ser evidente, pero la superficie se siente extrañamente intacta. El resultado de tu examen es inconcluso; no hay heridas abiertas, ni rastros de venenos comunes, ni señales claras de lucha que expliquen la muerte.
+> El hedor a ozono sigue siendo la única pista tangible, envolviendo el cadáver como una mortaja invisible. A pesar de tu esfuerzo por encontrar una anomalía médica, el cuerpo permanece como un enigma cerrado, sin ofrecer ninguna pista sobre la fuerza que lo extinguió.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1575 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 62 — 62/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  3175 ms
+
+> "Esto no es una muerte natural, ni siquiera una muerte rápida."
+> Me levanto y busco cualquier rastro de quemaduras eléctricas o marcas de rayos en la ropa o el suelo alrededor del cuerpo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+-1=14
+
+### [4] DM
+
+  6787 ms
+
+> Al apartar la tela basta y grisácea que cubre el torso, notas que la prenda no tiene quemaduras, pero el tejido está rígido, como si hubiera sido sometido a una presión súbita y extrema. Al bajar la mirada hacia las losas de piedra, el rastro aparece: una serie de finas ramificaciones carbonizadas, como raíces negras grabadas en el granito, que convergen exactamente bajo la espalda del difunto.
+> El patrón es errático, similar a un fractal de ceniza que se extiende unos centímetros más allá del cuerpo, dejando el suelo ligeramente vitrificado en el epicentro. El olor a ozono se intensifica al acercarte a estas marcas, irritando tus fosas nasales con una punzada metálica.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1820 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 63 — 63/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2017 ms
+
+> "Esto no es un incendio común."
+> Me inclino para observar más de cerca las ramificaciones en la piedra y trato de identificar la naturaleza de esa energía.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Arcanos: 3+-1=2
+
+### [4] DM
+
+  5213 ms
+
+> Te inclinas sobre el granito frío, pero cuanto más intentas analizar la geometría de aquellas raíces negras, más se te escapa la respuesta. El patrón fractal parece burlarse de tu lógica; no reconoces ninguna escuela de magia convencional ni rastro de un conjuro elemental conocido. La energía que dejó la marca es ajena, o quizá una distorsión tan degradada que resulta irreconocible para tu formación.
+> El aire vibra con ese aroma metálico y el vitrificado del suelo refleja tu rostro distorsionado, pero el origen de la descarga permanece oculto, envuelto en un silencio sepulcral que solo es interrumpido por el roce de la tela grisácea sobre la piedra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2153 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 64 — 64/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  5640 ms
+
+> "Esto no es magia natural, ni tampoco una maldición común."
+> Me pongo en pie y miro hacia donde proviene el roce de la tela, tratando de localizar la fuente del sonido.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 12+2=14
+
+### [4] DM
+
+  9063 ms
+
+> Te enderezas, sintiendo el frío del granito abandonar tu piel mientras giras la vista hacia el origen del sonido. El silencio se quiebra con un siseo rítmico, el arrastre de una prenda pesada y polvorienta sobre la superficie vitrificada. 
+> A unos metros, emergiendo de las sombras donde la luz no alcanza a lamer las paredes, divisas una figura encorvada. Es una silueta envuelta en harapos de un gris ceniciento que se funden con la piedra, moviéndose con una lentitud mecánica, casi vacilante, mientras avanza en tu dirección.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1665 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 65 — 65/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  3307 ms
+
+> "¿Quién está ahí? No tengas miedo, estoy aquí para ayudar."
+> Me pongo en pie lentamente, manteniendo una postura abierta y no amenazante, mientras observo la figura para ver si presenta alguna herida o signo de enfermedad.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+2=18
+
+### [4] DM
+
+  10543 ms
+
+> La figura se detiene en seco ante tu voz, quedando a unos tres metros. Al quedar bajo el tenue haz de luz, los harapos revelan un cuerpo consumido, casi esquelético, cuya piel tiene el color del pergamino viejo y se pega a los huesos con una tensión dolorosa. No hay sangre fresca ni heridas abiertas, pero notas un temblor constante en sus extremidades y una palidez cetrina que no es solo producto de la oscuridad; sus ojos, hundidos en cuencas profundas, lucen nublados, como si una película blanquecina velara su mirada.
+> El ser inclina la cabeza con un movimiento espasmódico, procesando tus palabras con una lentitud agónica. Sus labios, agrietados y secos, se abren apenas un milímetro para dejar escapar un susurro que suena a arena rozando el metal.
+> —¿Ayudar...? —La voz es un hilo quebradizo—. No queda... ayuda... para los que ya han sido olvidados.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2346 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 66 — 66/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  5368 ms
+
+> "Nadie es inolvidable mientras yo esté aquí."
+> Me acerco lentamente para no asustarlo y trato de evaluar su estado físico.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 8+4=12
+
+### [4] DM
+
+  14454 ms
+
+> Te acercas con cautela, reduciendo la distancia mientras el ser permanece inmóvil, observándote con esa mirada nublada y distante. Al analizar su estado, percibes que su cuerpo está sumido en una inanición extrema; los músculos han desaparecido y el corazón parece latir con una fragilidad alarmante. No detectas una enfermedad contagiosa evidente a simple vista, pero su piel fría y esa palidez cetrina sugieren un fallo sistémico orgánico, como si la vida se hubiera retirado de sus extremidades mucho antes de que el espíritu abandonara el cuerpo.
+> La criatura retrocede un centímetro, un espasmo reflejo ante tu proximidad. Sus ojos no enfocan del todo tu rostro, sino que parecen mirar a través de ti, hacia algún punto inexistente en el aire.
+> —Tus palabras... tienen un eco que no reconozco —murmura, y un temblor violento sacude sus hombros—. Pero la carne no entiende de memorias... solo de hambre.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2014 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 67 — 67/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  3523 ms
+
+> "No dejaré que el hambre sea lo último que sientas."
+> Me acerco con suavidad para intentar estabilizarlo y busco algún signo de que pueda ingerir alimento o agua sin riesgo.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 14+4=18
+
+### [4] DM
+
+  12816 ms
+
+> Tus manos se posan con delicadeza sobre la piel gélida y apergaminada del ser, sintiendo el ritmo errático de un corazón que lucha contra la inercia. Al examinar la cavidad bucal y los reflejos básicos, confirmas que sus vías respiratorias están despejadas y que, aunque la atrofia es severa, el tracto digestivo no presenta obstrucciones ni necrosis inmediata. Podría ingerir líquidos o alimentos blandos, aunque el riesgo de un choque sistémico por una ingesta brusca es elevado; requiere una rehidratación lenta y controlada.
+> La criatura deja escapar un suspiro que suena a cristal roto, cerrando los ojos mientras se entrega a la presión de tu tacto. El temblor de sus hombros amaina ligeramente, reemplazado por una fragilidad absoluta que parece hacer que sus huesos crujan bajo el peso de su propia existencia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1376 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 68 — 68/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2823 ms
+
+> "Tranquilo, ya no estás solo. Te voy a ayudar."
+> Sigo examinando el cuerpo con cuidado para detectar cualquier otra lesión oculta que pueda complicar su recuperación.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 15+4=19
+
+### [4] DM
+
+  13586 ms
+
+> Tus dedos recorren con precisión quirúrgica cada pliegue de piel y cada articulación rígida. Bajo la superficie pálida, detectas una serie de hematomas profundos y antiguos en la zona lumbar y costillas que, aunque ya no sangran, sugieren una historia de traumatismos repetidos y mal curados. Sin embargo, no hay heridas abiertas recientes ni fracturas activas que pongan en riesgo inmediato la estabilidad del cuerpo; el mayor enemigo aquí es la inanición crónica y una deshidratación que ha dejado los órganos al borde del colapso.
+> La criatura reacciona a tus palabras con un espasmo casi imperceptible. Sus párpados tiemblan y, aunque no abre los ojos, un sonido gutural, similar a un sollozo seco que no llega a convertirse en llanto, escapa de su garganta. Se inclina instintivamente hacia el calor de tu cuerpo, buscando un refugio que parece haber olvidado hace eones.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1135 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 69 — 69/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Elian: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  17 entidades · contexto de 297 caracteres
+
+### [2] JUGADOR — Garrek
+
+  2154 ms
+
+> "Tranquilo, ya no estás solo. Te voy a ayudar."
+> Sigo acariciando su frente con suavidad mientras busco en mi equipo agua y algo de alimento blando para intentar hidratarlo lentamente.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Medicina: 14+4=18
+
+### [4] DM
+
+  12447 ms
+
+> Tus manos se mueven con una seguridad imperturbable, administrando el agua y el alimento blando en dosis minúsculas para evitar que el sistema digestivo, atrofiado por el hambre, colapse ante el estímulo. La criatura traga con dificultad, emitiendo un chasquido húmedo en la garganta mientras el líquido comienza a devolverle un brillo tenue a sus labios agrietados. El espasmo se calma y su respiración, antes errática, encuentra un ritmo más estable, aunque sigue siendo superficial y débil.
+> El cuerpo se relaja contra ti, abandonando la rigidez del terror para hundirse en una sumisión agotada. Sus dedos, largos y pálidos, se cierran con una fuerza sorprendente pero desesperada alrededor de tu muñeca, como si temiera que, al soltarte, el frío del vacío volviera a reclamarlo. Un suspiro largo y tembloroso escapa de sus labios, y por primera vez, sus párpados se abren apenas una rendija, revelando una pupila dilatada que intenta enfocar tu rostro entre la penumbra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR

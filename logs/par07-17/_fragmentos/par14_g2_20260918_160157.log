@@ -1,0 +1,3385 @@
+(bitácora en Markdown: C:\BMARIN2003\DEV\proyecto\logs\par_14_real_g2_monolitico_roble_cantor_cebcafd3_turnos_1-1400_20260918_160200.md)
+
+# VERTICAL SLICE — Par 14 (real) · G2 (Monolítico) · Roble Cantor (monolithic)
+
+- **DM:** `google/gemma-4-31B-it`
+- **jugador:** `google/gemma-4-31B-it` (Kestra, desvío 80)
+- **turno:** 1
+
+## Turno 1 — 1/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 1039 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4702 ms
+
+> "Vaya, parece que tenemos un dilema musical aquí. Y yo que siempre he creído que la improvisación es el alma del arte."
+> Me acerco a Toño Bravante con una sonrisa condescendiente y le toco el hombro.
+> "Dígame, Toño, ¿cuánto estaría dispuesto a pagar alguien con su... sentido de la urgencia por recuperar esa flauta antes de que lleguen los mercaderes?"
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  12115 ms
+
+> Toño Bravante se tensa un instante ante el toque en el hombro, pero la sonrisa y la seguridad de tus palabras parecen desarmarlo por completo. Sus ojos se iluminan, pasando de la frustración a una chispa de esperanza casi desesperada mientras mira de reojo a Melida, quien observa la escena con el ceño fruncido y los brazos cruzados.
+> —¡Por los dioses, alguien que piensa con pragmatismo! —exclama Toño, bajando la voz y acercándose a ti con complicidad—. Escuche, no solo es el honor, es la economía de todo el pueblo. Si los mercaderes se dan la vuelta, estaremos comiendo corteza de roble hasta el próximo invierno. No tengo un tesoro real, pero puedo ofrecerle una suma generosa del fondo de organización y, por supuesto, el agradecimiento eterno del Comité. ¡Dígame que puede hacerlo y cerramos el trato ahora mismo!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4088 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · bribe_offered
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 2 — 2/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 981 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2385 ms
+
+> "El agradecimiento eterno no llena el estómago, Toño, pero el oro sí." 
+> Me acerco más a él, bajando la voz, y le pido que me diga exactamente cuánto es esa suma generosa antes de dar mi palabra.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 8+4=12
+
+### [4] DM
+
+  20723 ms
+
+> Toño suelta una risita nerviosa y se rasca la nuca, lanzando una mirada fugaz hacia Melida para asegurarse de que no puede oír los detalles del regateo. Se inclina hacia ti, reduciendo la distancia, y el olor a cuero viejo y perfume barato te llega al rostro mientras habla en un susurro apresurado.
+> —Tengo cien piezas de oro reservadas para los adornos de la carpa principal, pero creo que el pueblo preferirá una carpa un poco más sencilla que una plaza en silencio —confiesa, haciendo un gesto vago hacia el fondo del festival—. Cien monedas. Ahora mismo. Solo necesito que me asegure que la Voz volverá a sonar antes de que el sol se ponga el día de la inauguración.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3415 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · bribe_offered
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 3 — 3/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 981 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2543 ms
+
+> "Cien monedas es un comienzo, Toño, pero asegurar un milagro requiere un esfuerzo... considerable."
+> Le devuelvo el susurro con una sonrisa, mientras intento notar si está desesperado o si solo intenta regatear.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+3=23  CRÍTICO
+
+### [4] DM
+
+  14204 ms
+
+> Toño no solo está regateando; el hombre está al borde del colapso. Al notar tu sonrisa, sus ojos se agrandan y un tic nervioso comienza a sacudirle el párpado izquierdo. El sudor le perla la frente a pesar de la brisa, y la forma en que aprieta los puños contra sus muslos delata una urgencia que roza el pánico. No es solo el miedo al fracaso del festival, es el terror a quedar expuesto como el responsable de que la tradición más sagrada del pueblo se apague bajo su guardia.
+> El hombre traga saliva con dificultad y se inclina aún más, invadiendo tu espacio personal. Susurros fragmentados escapan de sus labios mientras mira frenéticamente a su alrededor, asegurándose de que Melida sigue distraída.
+> —Te daré ciento cincuenta. ¡Ciento cincuenta! —suelta en un hilo de voz, casi suplicante—. Por favor, dime que puedes hacerlo. No puedo... no podemos permitir que el sol se ponga sin que esa flauta suene.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3512 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · bribe_offered
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 4 — 4/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 981 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4432 ms
+
+> "Ciento cincuenta es un comienzo, Toño, pero el pánico sale caro".
+> Me inclino hacia él, bajando la voz para que solo él me escuche, mientras mantengo mi sonrisa.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 9+4=13
+
+### [4] DM
+
+  8473 ms
+
+> Toño parpadea, atrapado en la mirada y la sonrisa, mientras el tic de su párpado se intensifica. La mención del coste del pánico parece golpearlo físicamente; se endereza un centímetro, pero sus hombros siguen hundidos y la desesperación sigue emanando de él como el calor del asfalto. Su mirada viaja un instante hacia Melida, que sigue absorta en sus asuntos, y vuelve a ti con una mezcla de resignación y urgencia.
+> —Está bien, está bien... —murmura, aunque su voz suena quebrada y vacilante—. No puedo subir mucho más sin que Melida empiece a hacer preguntas sobre las arcas del festival, pero... puedo llegar a ciento setenta. Es todo lo que puedo rascar sin levantar sospechas. Por los dioses, solo encuéntrala.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4036 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · bribe_offered
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 5 — 5/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 981 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2401 ms
+
+> "Ciento setenta es un comienzo, Toño, pero el destino es caprichoso y los riesgos... considerables."
+> Le pongo una mano en el hombro mientras busco con la mirada cualquier objeto de valor que lleve encima.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 16+3=19
+
+### [4] DM
+
+  5342 ms
+
+> Toño se tensa bajo el peso de tu mano, soltando un suspiro que suena a rendición mientras asiente con la mirada baja. Se queda inmóvil, permitiendo que tu escrutinio recorra su figura mientras él evita el contacto visual, concentrado en el temblor de sus propias manos.
+> Tu mirada capta el brillo de una cadena de plata que asoma bajo el cuello de su camisa, sosteniendo un pequeño relicario cerrado, y el relieve de un anillo con un sello de cera antigua en su dedo anular. No parecen piezas de lujo desmedido, pero son objetos que conservan un valor tangible y personal, contrastando con su actual estado de desesperación financiera.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4011 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: relicario de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item relicario de plata
+
+### [9] ESTADO DESPUÉS
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 6 — 6/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2696 ms
+
+> "Tranquilo, Toño. Solo quiero que resolvamos esto de la manera más sencilla para ambos."
+> Sigo manteniendo la presión sobre él mientras intento deslizar mis dedos con sutileza hacia el relicario de plata para sentir su peso y calidad.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 17+2=19
+
+### [4] DM
+
+  7448 ms
+
+> Tus dedos se deslizan con una precisión quirúrgica, rozando apenas la tela de la camisa antes de enganchar la cadena de plata. Toño, absorto en su propia angustia y en la presión que ejerces sobre él, ni siquiera parpadea cuando sientes el frío metal ceder y el relicario descansar un instante en la palma de tu mano. Es pesado, de una plata sólida y bien trabajada, con un cierre firme que sugiere un contenido protegido con esmero.
+> El hombre suelta un gemido ahogado, cerrando los ojos con fuerza, pero permanece sumiso, esperando que tus palabras se traduzcan en una salida a su calvario. El relicario vibra levemente contra tu piel al ritmo de los espasmos nerviosos de su cuello.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2907 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = relicario de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3850: Kestra.inventory = relicario de plata
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 7 — 7/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2799 ms
+
+> "Tranquilo, Toño. Ya casi hemos terminado con esto."
+> Guardo el relicario rápidamente en mi bolsillo y le doy una palmadita condescendiente en el hombro.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 19+4=23
+
+### [4] DM
+
+  12615 ms
+
+> Toño exhala un suspiro tembloroso, dejando que sus hombros caigan mientras una chispa de alivio genuino ilumina su rostro sudoroso. Se limpia la frente con la manga, convencido de que el contacto físico y tus palabras son la señal de que el interrogatorio o la tensión han llegado a su fin.
+> —Gracias... gracias por comprender, de verdad —balbucea con voz quebrada, ajustándose la camisa sin notar el vacío donde antes colgaba la plata—. No sé qué habría hecho si esto se complicaba más. Solo quiero que el festival salga bien, que la música vuelva a sonar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4564 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = relicario de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3853: Kestra.inventory = relicario de plata
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 8 — 8/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2762 ms
+
+> "No te preocupes, Toño. Todo saldrá perfecto."
+> Le doy una palmadita afectuosa en la espalda mientras me deslizo hacia la salida, asegurándome de que la plata esté bien guardada.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 19+2=21
+
+### [4] DM
+
+  3279 ms
+
+> Toño cierra los ojos un instante, dejándose llevar por la calidez del gesto, y esboza una sonrisa débil y agradecida. Se queda allí, sumido en su propio alivio, mientras el sonido de su respiración se vuelve más pausado y tranquilo.
+> Te deslizas hacia la salida con la fluidez de una sombra. El roce de tu ropa es imperceptible y tus pasos no producen el menor ruido sobre el suelo, dejando a Toño absorto en sus pensamientos, completamente ajeno a que la plata ya no está en su cuello y que tú has abandonado la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6292 ms · 0 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta toño_bravante · npc.knowledge = Kestra ha robado el relicario de plata de su cuello
+  ✓ delta kestra · character.inventory = relicario de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: toño_bravante
+  ✗ entidad inexistente: kestra
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 9 — 9/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2752 ms
+
+> Me alejo rápidamente del lugar, guardando la plata en mi bolsillo y asegurándome de que no quede rastro de mi paso. Busco un rincón tranquilo para examinar la pieza y ver si tiene algún valor oculto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+0=19
+
+### [4] DM
+
+  6841 ms
+
+> Te refugias en el hueco entre dos muros de piedra fría, donde la penumbra del callejón oculta tu silueta de las miradas curiosas. Al extraer la pieza de plata, el metal se siente inusualmente ligero y desprende un tenue aroma a resina antigua y tierra mojada.
+> Bajo la luz filtrada, descubres que la plata no es un fundido sólido, sino que ha sido trabajada con una precisión quirúrgica para envolver un núcleo orgánico. En el reverso del colgante, oculto por la cadena, hay un grabado minúsculo que representa una hoja de roble entrelazada con una nota musical. Al presionar suavemente el centro del grabado, la pieza vibra imperceptiblemente, emitiendo un zumbido armónico que solo es audible en el silencio absoluto del rincón.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1127 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 10 — 10/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1904 ms
+
+> "Vaya, vaya... no eres una simple joya, ¿verdad?"
+> Sigo presionando el grabado mientras intento descifrar el significado de esa combinación de música y naturaleza.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Arcanos: 2+0=2
+
+### [4] DM
+
+  7563 ms
+
+> El zumbido armónico persiste, pero al intentar analizar la conexión entre la hoja de roble y la nota musical, el significado se escapa. La vibración se siente más como un eco lejano que como un mensaje comprensible, y el grabado permanece como un enigma mudo ante tus ojos, sin revelar el propósito de su diseño ni el origen de su magia.
+> El silencio del callejón vuelve a cerrarse sobre ti, interrumpido únicamente por el eco distante de los preparativos del festival que resuenan tras los muros de piedra. La pieza de plata sigue vibrando débilmente en tu mano, manteniendo su misterio intacto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1191 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 11 — 11/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1907 ms
+
+> "Vaya, parece que no tienes ganas de hablar hoy."
+> Guardo la pieza de plata en mi bolsillo y miro hacia la salida del callejón, buscando a alguien que parezca distraído o con los bolsillos demasiado llenos.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 3+1=4
+
+### [4] DM
+
+  5233 ms
+
+> El callejón es un túnel de sombras y humedad donde el aire huele a moho y a pescado viejo. Al asomarte hacia la salida, la luz del mediodía deslumbra momentáneamente, revelando el bullicio de la calle principal, pero el flujo de gente es constante y caótico.
+> Las figuras pasan rápidas, envueltas en capas y túnicas, moviéndose con una urgencia que no deja espacio para el descuido. No hay nadie detenido que parezca vulnerable ni ningún bolsillo que cuelgue con un peso sospechoso; solo ves una masa indiferente de campesinos y comerciantes que ignoran tu presencia en la penumbra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1045 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 12 — 12/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  11433 ms
+
+> "Demasiada prisa para ser un día normal."
+> Me quedo en las sombras, observando el flujo de gente para detectar algún patrón o a alguien que no encaje con el resto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 5+1=6
+
+### [4] DM
+
+  4388 ms
+
+> El flujo de personas continúa siendo una marea monótona de túnicas raídas y cestas de mimbre. Desde la penumbra del callejón, las figuras se funden unas con otras en un movimiento rítmico y apresurado; los rostros son borrosos y las voces se pierden en un murmullo indistinguible que rebota contra las paredes húmedas.
+> No logras distinguir ninguna anomalía ni detectar a nadie que rompa la inercia del grupo. Para cualquier observador, la multitud no es más que un río de gente común moviéndose con una urgencia coordinada, sin que ningún detalle llame tu atención entre el caos del mediodía.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1403 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 13 — 13/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2010 ms
+
+> "Demasiado común para ser verdad."
+> Me deslizo fuera del callejón y me mezclo con la multitud, moviéndome en sentido contrario al flujo para intentar interceptar a alguien que parezca llevar algo valioso.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 7+1=8
+
+### [4] DM
+
+  5802 ms
+
+> Te abres paso a contracorriente, chocando hombro con hombro contra los aldeanos que te ignoran con la mirada fija al frente. El roce de las telas ásperas y el olor a sudor y tierra húmeda te envuelven mientras intentas filtrar el ruido visual en busca de algún destello metálico o un bulto sospechoso bajo las capas.
+> Sin embargo, la marea de gente es asfixiante y uniforme. Cada cesta de mimbre que pasa parece contener lo mismo —verduras marchitas o pan rústico— y los rostros, vacíos de expresión, se funden en una masa grisácea que no te permite distinguir nada que destaque sobre el resto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  834 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 14 — 14/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1782 ms
+
+> "Permiso, buena gente, solo busco un camino libre."
+> Sigo avanzando, pero ahora me concentro en sentir los bolsillos y costuras de quienes me empujan, buscando algún relieve inusual.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 16+2=18
+
+### [4] DM
+
+  7599 ms
+
+> Tus dedos se mueven con una agilidad casi invisible, deslizándose como sombras entre los pliegues de las túnicas y los costados de los cinturones de cuero mientras te disculpas con cortesía. La mayoría de los aldeanos son solo bultos de lana y lino, pero en un roce brusco contra un hombre de hombros anchos, tus yemas detectan una resistencia inusual: un objeto rígido, cilíndrico y envuelto en una tela de terciopelo grueso, oculto cuidadosamente en un bolsillo interno.
+> El sujeto no parece haberse percatado de la caricia técnica, pero se tensa instintivamente al sentir el contacto, apretando la prenda contra su costado mientras sigue avanzando en la marea humana, arrastrándote con él en la dirección opuesta a la que pretendías ir.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4113 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: objeto cilíndrico envuelto en terciopelo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item objeto cilíndrico envuelto en terciopelo
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 15 — 15/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2979 ms
+
+> "Perdone, caballero, que la multitud nos empuja a todos."
+> Me dejo llevar por su inercia mientras intento deslizar la mano nuevamente para extraer el objeto envuelto en terciopelo.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 3+2=5
+
+### [4] DM
+
+  5540 ms
+
+> El hombre, al sentir el segundo intento de contacto, reacciona con un espasmo brusco. No es una reacción consciente de quien se siente robado, sino un reflejo defensivo; gira el cuerpo violentamente para proteger el bulto y, en el proceso, te propina un codazo seco y torpe en el esternón que te deja sin aire un instante.
+> —¡Cuidado, hombre! —gruñe el sujeto, apartándote con un empujón brusco mientras se abre paso entre la gente. El objeto permanece firmemente sujeto en su interior, y el hombre acelera el paso, alejándose entre la multitud con el ceño fruncido y la mano presionando el terciopelo contra sus costillas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1247 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 16 — 16/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1981 ms
+
+> "¡Mil disculpas, buen hombre! No he visto por dónde iba"
+> Me recupero del golpe y lo sigo rápidamente entre la gente, manteniendo una distancia prudencial para no alertarlo pero sin perderlo de vista.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 17+2=19
+
+### [4] DM
+
+  6599 ms
+
+> Te deslizas entre la multitud con una fluidez casi invisible, fundiéndote con el bullicio del mercado y el aroma a canela y cuero. El hombre camina apresurado, esquivando carretas y comerciantes, pero tu paso es constante y silencioso; cada vez que él gira la cabeza con sospecha, ya te has ocultado tras el toldo de un puesto de frutas o el lomo de un caballo, manteniendo la distancia exacta para que su rastro no se pierda.
+> El sujeto comienza a alejarse de la zona principal del festival, adentrándose en un callejón estrecho donde las paredes de piedra absorben el ruido de la fiesta. El eco de sus pasos apresurados resuena contra el muro mientras se dirige hacia una zona de almacenes menos transitada, todavía aferrando el bulto de terciopelo contra su costado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1278 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 17 — 17/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1449 ms
+
+> Sigo siguiéndolo, manteniendo la distancia pero asegurándome de no perderlo de vista en la penumbra del callejón.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  5997 ms
+
+> Te conviertes en una extensión de las sombras del callejón. Te desplazas con una ligereza sobrenatural, apenas rozando el suelo, mientras el sonido de tus pasos es devorado por el eco del hombre que huye. Incluso cuando el sujeto se detiene bruscamente en un ángulo muerto, girando la cabeza con un gesto espasmódico de paranoia, tú ya eres parte de la oscuridad de un arco de piedra, fundido con la textura fría del muro.
+> El hombre exhala un suspiro tembloroso, convencido de que el silencio es su aliado. Se adentra en un pequeño patio interior rodeado de almacenes de madera vieja, donde el aire huele a polvo y grano seco. Allí, se detiene frente a una pesada puerta de roble reforzada con hierro y golpea tres veces con un ritmo seco y preciso, esperando que alguien le abra desde el interior.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  955 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 18 — 18/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1722 ms
+
+> "Parece que tenemos una cita secreta."
+> Me mantengo oculto, observando la puerta y al hombre para intentar descifrar quién puede estar detrás de ese roble.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+1=2  PIFIA
+
+### [4] DM
+
+  4608 ms
+
+> El esfuerzo por analizar la escena te distrae en el momento más crítico. Mientras fijas la vista en la puerta, una ráfaga de viento desplaza un montón de cajas vacías y trastos metálicos acumulados justo detrás de ti. El estrépito es ensordecedor en el silencio del patio, resonando contra los muros de madera como un disparo.
+> El hombre da un salto violento, girándose hacia tu posición con los ojos desorbitados por el pánico. Al mismo tiempo, el cerrojo de la puerta de roble se desliza con un chasquido metálico y un hombre robusto, con el ceño fruncido y la mano apoyada en la empuñadura de una daga, asoma la cabeza para ver qué ha causado semejante ruido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2135 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 19 — 19/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1747 ms
+
+> "¡Vaya susto! Menudo montón de chatarra tienen aquí."
+> Me giro rápidamente hacia el hombre robusto con una sonrisa disculpante, intentando parecer un simple visitante despistado.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 8+4=12
+
+### [4] DM
+
+  6107 ms
+
+> El hombre robusto mantiene la mano en la daga, escrutándote con una mirada gélida que no se ablanda con tu sonrisa. Sus ojos viajan desde tu rostro hacia el desastre de cajas volcadas en el suelo y luego hacia el hombre asustado, que aún respira agitadamente. El ceño fruncido no desaparece, pero la tensión en sus hombros cede un ápice al notar que no portas un arma desenvainada.
+> —¿Visitante? —gruñe con una voz profunda que suena a grava—. No recuerdo que el Comité hubiera anunciado visitas para hoy, y mucho menos unas que lleguen derribando el mobiliario.
+> El hombre del patio, aprovechando la distracción, se endereza y lanza una mirada de alivio hacia el robusto, aunque permanece en silencio, observando cómo reacciona su compañero ante tu presencia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1686 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 20 — 20/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2113 ms
+
+> "Un pequeño accidente, nada que un poco de ayuda no pueda solucionar."
+> Hago un gesto despreocupado hacia las cajas y trato de analizar la reacción del hombre asustado para ver si puedo usarlo a mi favor.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 1+4=5  PIFIA
+
+### [4] DM
+
+  5956 ms
+
+> El hombre robusto suelta un bufido seco, y la comisura de sus labios se contrae en una mueca de absoluto desprecio. Tu gesto despreocupado, lejos de aliviar la tensión, parece confirmarle que no tienes el menor respeto por el orden del lugar ni por el susto del otro hombre. La mano que sostenía la daga se cierra con fuerza sobre la empuñadura, y el aire alrededor se vuelve gélido mientras da un paso lento y amenazante hacia ti.
+> El hombre asustado, que empezaba a relajarse, reacciona con un respingo violento ante tu actitud. Se encoge sobre sí mismo, retrocediendo un paso y mirando al robusto con ojos suplicantes, como si tu presencia fuera una chispa a punto de incendiar el patio. El silencio que sigue es pesado, roto solo por el crujido de una de las cajas rotas bajo la bota del guardia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3573 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 21 — 21/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3832 ms
+
+> "Vaya, no sabía que el silencio era tan agresivo en este lugar. Solo intento ayudar a que todos respiremos mejor."
+> Levanto las manos en un gesto de paz, manteniendo la sonrisa mientras busco algún objeto de valor que el guardia pueda estar descuidando.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 15+4=19
+
+### [4] DM
+
+  7111 ms
+
+> El hombre robusto se detiene en seco, la tensión de sus hombros cediendo ante la inesperada ligereza de tus palabras. La mueca de desprecio se transforma en una expresión de desconcierto; parpadea un par de veces, procesando el comentario, y su agarre sobre la daga se afloja mientras suelta un gruñido que suena más a resignación que a amenaza. El aire gélido se disipa, dejando paso al olor a madera húmeda y polvo del patio.
+> —Tienes una lengua muy suelta para alguien que acaba de causar un desastre —masca el guardia, aunque el tono ya no es hostil, sino irritado pero tolerante—. Lárgate de aquí antes de que cambie de opinión sobre tu "ayuda".
+> Mientras el guardia desvía la mirada hacia el hombre asustado para darle una orden brusca, su atención se desplaza totalmente de su cinturón, donde una bolsa de cuero gastado cuelga descuidadamente de un gancho, balanceándose ligeramente con el movimiento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4625 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: bolsa de cuero gastado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item bolsa de cuero gastado
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 22 — 22/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2412 ms
+
+> "Agradezco sinceramente tu infinita paciencia, buen hombre."
+> Me retiro lentamente mientras deslizo la mano hacia la bolsa de cuero del guardia.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 12+2=14
+
+### [4] DM
+
+  5448 ms
+
+> Tus dedos rozan el cuero frío y gastado de la bolsa mientras el guardia, distraído por el hombre asustado, lanza una orden a gritos que resuena en el patio. El movimiento es fluido, casi imperceptible bajo la cobertura de tu retirada, y sientes el peso del objeto deslizándose fuera del gancho sin que el metal emita el más mínimo tintineo.
+> El guardia sigue de espaldas, gesticulando con brusquedad hacia el otro hombre, totalmente ajeno a que su cinturón ahora luce más ligero. El viento sopla una ráfaga de aire húmedo que agita los bordes de tu capa, dándote el espacio perfecto para alejarte unos pasos más con la bolsa ya oculta en tu mano.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1664 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = bolsa de cuero gastado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3878: Kestra.inventory = bolsa de cuero gastado
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 23 — 23/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1947 ms
+
+> "Vaya día tan agitado para todos."
+> Sigo caminando con paso tranquilo hacia la salida, tratando de fundirme con el entorno mientras guardo la bolsa bajo mi ropa.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 11+2=13
+
+### [4] DM
+
+  4546 ms
+
+> Tus pasos se hunden en el barro del patio, manteniendo un ritmo constante que se mimetiza con el bullicio y los gritos del guardia. La bolsa se desliza bajo la tela de tu ropa, quedando oculta contra tu costado mientras te alejas hacia la salida.
+> El guardia, aún absorto en su disputa con el hombre asustado, ni siquiera gira la cabeza. Sus órdenes siguen resonando en el aire húmedo, pero su voz se vuelve un eco distante a medida que cruzas el umbral y el ruido del patio queda atrás, dejándote solo con el peso del botín contra tu piel.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1788 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 24 — 24/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1432 ms
+
+> "Un día productivo."
+> Sigo caminando hacia la salida con paso tranquilo, asegurándome de que nadie me siga mientras busco el camino más rápido para salir de la zona.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 15+2=17
+
+### [4] DM
+
+  3685 ms
+
+> Te deslizas por los callejones laterales con una naturalidad asombrosa, fundiéndote con las sombras de los muros de piedra y el vapor que emana de las alcantarillas. El ruido del patio se apaga por completo, sustituido por el goteo rítmico de los aleros y el murmullo lejano de la ciudad. 
+> Ninguna mirada se posa sobre ti y ningún paso apresurado rompe la calma de tu retirada. El camino hacia la salida se despliega despejado, permitiéndote ganar distancia mientras el aire se vuelve más fresco y el peso de la bolsa contra tu costado te recuerda el éxito de la incursión.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  792 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 25 — 25/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2128 ms
+
+> Sigo avanzando hacia la salida, pero me detengo un momento para observar los alrededores del callejón. No quiero marcharme sin saber si hay algún rincón oscuro que oculte algo valioso o algún secreto mejor guardado.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 17+1=18
+
+### [4] DM
+
+  6075 ms
+
+> El callejón es una garganta de piedra húmeda donde el olor a salitre y moho se vuelve denso. Al detenerte, tu mirada se aparta de la salida y escanea los nichos olvidados entre los muros. Tras una pila de cajas de madera carcomidas y una tela podrida que cuelga de un saliente, detectas un destello metálico y un relieve inusual en la pared: una pequeña trampilla de hierro, apenas del tamaño de un libro, encastrada en la base del muro y oculta por capas de suciedad y musgo.
+> No hay nadie acechando en las sombras, pero la trampilla parece haber sido manipulada recientemente; el polvo alrededor de los bordes está removido, sugiriendo que alguien utiliza ese hueco para depositar o extraer algo con discreción.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3337 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación location: trampilla de hierro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location trampilla de hierro
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 26 — 26/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3849 ms
+
+> "Vaya, vaya... un secreto a plena vista."
+> Me agacho y aparto la tela podrida con cuidado para limpiar la zona. Intento abrir la trampilla sin hacer ruido.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 17+2=19
+
+### [4] DM
+
+  3996 ms
+
+> Tus dedos se deslizan con precisión quirúrgica bajo la tela húmeda, apartando la suciedad sin generar el menor roce metálico. Encuentras una pequeña muesca oculta en el borde del hierro que, al ser presionada con el ángulo exacto, libera el cierre con un clic casi imperceptible, ahogado por el goteo constante del callejón.
+> La trampilla se abre suavemente hacia arriba, revelando un hueco oscuro y seco. En su interior, reposa un pequeño fardo de cuero aceitado que protege un pergamino enrollado y una llave de latón oxidada, ambos depositados sobre un lecho de paja fresca.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2999 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: pergamino enrollado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item pergamino enrollado
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 27 — 27/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2189 ms
+
+> "Vaya, vaya... alguien ha sido muy precavido."
+> Saco el fardo de cuero y la llave rápidamente, asegurándome de que todo esté en mi poder antes de cerrar la trampilla.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 17+2=19
+
+### [4] DM
+
+  4765 ms
+
+> Tus movimientos son fluidos y veloces, recuperando el fardo y la llave en un pestañeo. El cuero aceitado se siente frío y pesado en tu mano, mientras el metal oxidado de la llave desprende un tenue aroma a hierro y humedad. 
+> Cierras la trampilla con un movimiento seco y preciso; el hierro encaja en su lugar sin emitir sonido alguno, dejando la superficie exactamente como estaba. El callejón vuelve a quedar en silencio, salvo por el rítmico goteo del agua sobre la piedra, sin dejar rastro alguno de que alguien haya accedido al escondite.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3134 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = bolsa de cuero gastado
+  ✓ creación item: llave oxidada
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item llave oxidada
+  → delta 3890: Kestra.inventory = bolsa de cuero gastado
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 28 — 28/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1964 ms
+
+> "Vaya, vaya... esto tiene pinta de ser mucho más interesante que una simple bolsa de monedas."
+> Abro el fardo con cuidado para examinar el contenido antes de moverme del lugar.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+0=17
+
+### [4] DM
+
+  7358 ms
+
+> Al desatar el cordel, el cuero cede con un crujido sordo, revelando que el fardo no contiene riquezas, sino objetos de una naturaleza más inquietante. En el fondo, envuelta en una tela de seda desgastada, descansa una flauta de madera oscura, casi negra, cuyas vetas parecen moverse como humo bajo la luz tenue del callejón. No hay agujeros visibles a simple vista, sino una serie de runas talladas que vibran con un zumbido imperceptible para el oído, pero palpable en la punta de los dedos.
+> Junto a la flauta, encuentras un pergamino amarillento sellado con cera roja. Al deslizar la mirada por el borde del papel, notas que el sello representa una hoja de roble entrelazada con una llave, el mismo símbolo que aparece grabado en la cerradura de la trampilla que acabas de cerrar. El aroma a hierro y humedad ahora se mezcla con un persistente olor a resina antigua y tierra mojada que emana del interior del fardo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1791 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: flauta de madera oscura
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item flauta de madera oscura
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 29 — 29/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1452 ms
+
+> "Vaya, no es oro, pero tiene un aire... fascinante."
+> Tomo la flauta con cuidado y la guardo rápidamente en mi ropa. Luego, tomo el pergamino y trato de romper el sello para leer el contenido.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+0=19
+
+### [4] DM
+
+  6084 ms
+
+> La madera oscura de la flauta se siente inusualmente fría al tacto, casi como si absorbiera el calor de tu mano mientras desaparece entre los pliegues de tu ropa. El pergamino, al romperse el sello de cera, desprende un aroma intenso a bosque antiguo que llena el estrecho callejón.
+> El texto está escrito con una caligrafía apresurada y nerviosa. Al analizar los trazos y el contenido, identificas que no es una simple carta, sino una advertencia cifrada. El autor menciona que "la melodía que calla es la que más grita" y hace referencia directa a una antigua deuda con los Guardianes del Roble, indicando que la flauta no es un instrumento, sino una llave acústica diseñada para abrir una puerta que nunca debió ser cerrada. El documento termina con una fecha que coincide exactamente con el inicio del festival actual.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1943 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = flauta de madera oscura
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3894: Kestra.inventory = flauta de madera oscura
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 30 — 30/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1308 ms
+
+> "Una llave, ¿eh? Esto huele a oro o a problemas, y yo prefiero lo primero."
+> Guardo el pergamino rápidamente y busco cualquier rastro de quien haya dejado esto aquí.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+0=18
+
+### [4] DM
+
+  6107 ms
+
+> Tus ojos recorren el callejón con precisión, ignorando la basura acumulada y centrándose en las anomalías del suelo y las paredes. Entre el barro seco y los restos de paja, detectas una huella parcial de una bota de cuero fino, demasiado elegante para los residentes de este barrio, que se dirige hacia la salida norte. Al seguir el rastro, notas un pequeño trozo de tela color púrpura enganchado en una astilla de una valla de madera, todavía fresco y vibrante contra la madera grisácea.
+> El rastro es claro y reciente; quien dejó el mensaje no se tomó el tiempo de borrar sus pasos, o quizás quería que alguien con el ojo entrenado lo siguiera. La dirección apunta directamente hacia la plaza central, donde los preparativos del festival están en pleno apogeo y la multitud comienza a espesarse.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1036 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 31 — 31/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2233 ms
+
+> "Cuero fino y púrpura... alguien con bolsillo lleno y poca discreción."
+> Recojo el trozo de tela y sigo la huella hacia la plaza central.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 4+1=5
+
+### [4] DM
+
+  5486 ms
+
+> El rastro se desvanece rápidamente a medida que el callejón se abre a la plaza central. Entre el caos de los preparativos, el bullicio de los mercaderes y el constante pisoteo de cientos de botas sobre la tierra batida, las huellas de cuero fino desaparecen por completo, absorbidas por el flujo de la multitud.
+> La plaza es un hervidero de actividad: obreros cargan pesadas vigas de madera para los escenarios, telas multicolores ondean al viento y el aroma a canela y asado llena el aire. El trozo de tela púrpura que aprietas en tu mano es ahora la única pista tangible, pero en este mar de gente, cualquier persona con una prenda similar podría ser tu objetivo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1140 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 32 — 32/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3341 ms
+
+> "Vaya despliegue... alguien tiene los bolsillos muy llenos para organizar esto."
+> Me detengo un momento para observar a la gente, buscando a alguien que destaque por su elegancia o que parezca fuera de lugar en medio de los obreros.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 5+1=6
+
+### [4] DM
+
+  5366 ms
+
+> La plaza es un caos cromático y sonoro que marea la vista. Entre el polvo que levantan los obreros y el vaivén de las telas que ondean como banderas, el ojo no logra anclarse en ningún detalle útil. Las figuras se funden unas con otras en un flujo constante de túnicas raídas y delantales manchados de serrín.
+> Nadie que vista seda o porte una elegancia fuera de lo común salta a la vista entre la multitud. Solo percibes el ajetreo general: el griterío de los mercaderes que disputan los mejores sitios y el rítmico golpe de los martillos clavando estacas en la tierra batida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  874 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 33 — 33/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2058 ms
+
+> "Vaya lugar más pintoresco. Seguro que hay alguien aquí con los bolsillos demasiado llenos."
+> Me paseo entre la multitud, buscando discretamente a alguien que destaque por su actitud o sus posesiones, aunque vista ropa sencilla.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 13+1=14
+
+### [4] DM
+
+  5198 ms
+
+> El bullicio se vuelve un ruido blanco mientras filtras el caos. Entre el sudor y el serrín, notas a un hombre que, aunque viste una túnica de lino crudo común, se mueve con una rigidez distinta a la de los obreros; no ayuda en ninguna tarea, sino que supervisa con una mirada inquisitiva, manteniendo las manos limpias y alejadas de la suciedad del suelo.
+> Lleva un anillo de plata con una piedra azul pálido que destella ocasionalmente bajo la luz del sol, un detalle pequeño pero costoso que desentona con la sencillez de su atuendo. El hombre sostiene un pergamino enrollado y parece irritado por el ruido, lanzando miradas impacientes a los trabajadores que clavan las estacas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1123 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 34 — 34/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1502 ms
+
+> "Perdonad, caballero, no he podido evitar notar que vuestra paciencia se agota más rápido que el serrín bajo nuestros pies." 
+> Me acerco al hombre con una sonrisa ligera, intentando captar su atención sin invadir demasiado su espacio.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 2+4=6
+
+### [4] DM
+
+  4994 ms
+
+> El hombre se tensa visiblemente al escuchar tu comentario, girando la cabeza con un movimiento brusco. Te recorre con una mirada gélida y evaluadora, deteniéndose un instante en tu sonrisa antes de fruncir el ceño con una expresión de profunda irritación. El anillo de plata centellea mientras aprieta el pergamino contra su costado, marcando una distancia clara entre ambos.
+> —Mi paciencia no es el problema, sino la incompetencia de quienes creen que una estaca se clava sola —responde con una voz seca y cortante, sin devolverte el gesto—. No estoy aquí para intercambiar cortesías ni metáforas sobre el suelo, sino para asegurar que este festival no sea un desastre absoluto. ¿Tienes algo útil que aportar o solo vienes a observar cómo se agota mi tiempo?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  857 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 35 — 35/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2172 ms
+
+> "Un hombre con tanta prisa suele ocultar que el tiempo no juega a su favor."
+> Me acerco un paso más, manteniendo la sonrisa, e intento echar un vistazo detallado al pergamino que aprieta.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+3=20
+
+### [4] DM
+
+  5513 ms
+
+> El hombre retrocede un centímetro, instintivamente, pero el movimiento es lo suficientemente lento como para que tus ojos capturen el contenido del documento. El pergamino no es una lista de tareas ni un mapa, sino un esquema técnico detallado de la estructura de la Carpa del Festival, con anotaciones urgentes en los márgenes sobre la estabilidad de los soportes y una serie de cálculos de peso que parecen no cuadrar con la realidad del terreno.
+> Su mandíbula se tensa y una pequeña vena late en su sien mientras procesa tu observación. No te mira a los ojos, sino que clava la vista en el horizonte, donde la carpa se alza incompleta.
+> —El tiempo es la única moneda que no se puede falsificar —masculla entre dientes, aunque el tono ya no es tan gélido, sino cargado de una ansiedad que intenta, sin éxito, disfrazar de arrogancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  839 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 36 — 36/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2054 ms
+
+> "Parece que los números no están de su lado, y el tiempo vuela. Quizá pueda ayudarle a que ese problema desaparezca antes de que alguien más lo note."
+> Le dedico mi sonrisa más reconfortante mientras intento analizar su nivel de desesperación.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 15+3=18
+
+### [4] DM
+
+  4761 ms
+
+> Toño Bravante exhala un suspiro largo y tembloroso, dejando que sus hombros caigan mientras la máscara de autoridad se desmorona. Sus dedos aprietan el pergamino con fuerza, arrugando los bordes del esquema técnico, y finalmente te mira. Sus ojos están inyectados en sangre y el ligero temblor de su mano delata que no solo teme el colapso de la carpa, sino la humillación pública y el fracaso ante el Comité.
+> —No tienes idea de lo que es cargar con la expectativa de todo el pueblo sobre los hombros —confiesa en un susurro ronco, su voz ahora despojada de cualquier rastro de arrogancia—. Si esos soportes ceden durante la inauguración, no seré yo quien caiga, sino el honor de nuestra tradición. Por favor, dime que sabes de lo que hablas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  994 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 37 — 37/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1341 ms
+
+> "Sé exactamente de lo que hablo, Toño. Y sé que el honor es una moneda muy cara cuando se pierde."
+> Le pongo una mano en el hombro con aire paternal mientras observo el pergamino arrugado.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 19+4=23
+
+### [4] DM
+
+  4673 ms
+
+> Toño cierra los ojos y deja escapar un sollozo seco, rindiéndose al peso de tu mano sobre su hombro. La tensión que mantenía rígida su espalda se disuelve por completo, y el pergamino arrugado resbala entre sus dedos, cayendo sobre la mesa con un sonido sordo. Se queda un momento en silencio, absorbiendo la seguridad de tus palabras como quien encuentra un ancla en medio de una tormenta.
+> —Tienes razón... es una moneda que no puedo permitirme gastar —murmura, abriendo los ojos y mirándote con una mezcla de alivio y esperanza desesperada—. No sé por qué he tardado tanto en pedir ayuda. Haz lo que tengas que hacer. Dime qué necesitas, cuánto tiempo te llevará o a quién debo callar para que trabajes sin interrupciones. La carpa es tuya.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2678 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 38 — 38/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3093 ms
+
+> "Me alegra que lo veas así, Toño. Solo necesito que te apartes y me dejes trabajar en paz."
+> Le doy una palmada afectuosa en el hombro y, mientras se mueve, intento deslizar el pergamino de la mesa hacia mi manga.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 12+2=14
+
+### [4] DM
+
+  3509 ms
+
+> Toño asiente con rapidez, limpiándose los ojos con el dorso de la mano mientras retrocede un paso para darte espacio. Su mirada es ahora de absoluta confianza, entregándote el control de la carpa con un gesto sumiso y agradecido.
+> Mientras él se aparta, el pergamino se desliza con suavidad sobre la madera, desapareciendo sin dejar rastro bajo la tela de tu manga. Toño no nota el movimiento; sigue concentrado en su propio alivio, dando un paso hacia la salida para dejarte en la quietud del lugar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2157 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = pergamino enrollado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3909: Kestra.inventory = pergamino enrollado
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 39 — 39/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2772 ms
+
+> "No te preocupes, Toño. Todo está bajo control. Ve a descansar."
+> Le doy una palmada afectuosa en el hombro mientras lo guío hacia la salida, asegurándome de que cierre bien la carpa tras de sí. Una vez solo, reviso rápidamente el resto de la mesa en busca de cualquier otra cosa de valor.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 7+1=8
+
+### [4] DM
+
+  3739 ms
+
+> Toño suelta un suspiro tembloroso y esboza una sonrisa débil, dejándose guiar hacia el exterior con la pesadez de quien acaba de soltar una carga insoportable. El ruido de la tela de la carpa al cerrarse sella el silencio del lugar, dejándote en una penumbra interrumpida solo por los haces de luz que se filtran entre las costuras del techo.
+> Pasas la vista por la superficie de madera de la mesa, recorriendo los restos de tinta seca y las motas de polvo que bailan en el aire. A simple vista, no hay nada más que el vacío dejado por el pergamino; la superficie se siente desnuda y despojada de cualquier otro objeto de valor o secreto oculto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1947 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta toño_bravante · npc.location_id = la_plaza_del_roble
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 40 — 40/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2293 ms
+
+> "Vaya, qué mesa tan triste."
+> Me inclino sobre la madera y paso los dedos por los bordes y debajo del tablero, buscando algún compartimento oculto o un papel pegado. {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+0=12
+
+### [4] DM
+
+  3325 ms
+
+> Tus dedos recorren la veta rugosa de la madera y el frío tacto del borde inferior, deslizándose por las esquinas y los ensambles del tablero. El polvo se acumula en las ranuras, manchando tus yemas de un gris cenizo mientras buscas cualquier irregularidad o relieve sospechoso.
+> La superficie es honesta y tosca; no hay hendiduras que cedan a la presión ni secretos adheridos con cera. La mesa es, efectivamente, tan triste y vacía como parece a simple vista.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  761 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 41 — 41/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1349 ms
+
+> "Qué decepción, esperaba algo más... interesante."
+> Me aparto de la mesa y miro alrededor de la estancia buscando algún otro objeto que no encaje con la pobreza del lugar.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 18+1=19
+
+### [4] DM
+
+  4993 ms
+
+> Al apartar la vista de la madera seca, el espacio parece abrirse. Entre el aroma a moho y el polvo suspendido en los haces de luz, un detalle rompe la monotonía del descuido: en la esquina opuesta, parcialmente oculta por una pila de mantas raídas, asoma la esquina de una pequeña caja de madera oscura. A diferencia de la mesa, esta pieza tiene un acabado pulido que aún refleja la luz, sugiriendo que ha sido cuidada o escondida deliberadamente.
+> Cerca de allí, bajo una de las tablas del suelo que el tiempo ha curvado, se percibe un ligero relieve, como si algo delgado y metálico hubiera sido deslizado en la rendija, quedando atrapado allí.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2836 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: caja de madera oscura
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item caja de madera oscura
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 42 — 42/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3173 ms
+
+> "Vaya, vaya... parece que alguien dejó algo olvidado."
+> Ignoro el objeto del suelo y me acerco a la caja de madera oscura para examinarla.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+0=8
+
+### [4] DM
+
+  3510 ms
+
+> Te acercas a la caja de madera oscura, apartando las mantas raídas con cuidado. Al observarla de cerca, el acabado pulido es evidente, pero la falta de detalle en tu inspección te impide notar cualquier mecanismo oculto, inscripción tenue o irregularidad en la madera que sugiera un cierre especial.
+> La caja permanece cerrada, fría al tacto y silenciosa, resistiendo cualquier intento superficial de revelar qué esconde en su interior.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1933 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 43 — 43/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1477 ms
+
+> "A ver qué guardas, pequeña..."
+> Intento buscar alguna ranura, botón o hendidura oculta en los laterales y la base de la caja.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 13+0=13
+
+### [4] DM
+
+  6962 ms
+
+> Tus dedos recorren las superficies lisas y los ángulos rectos de la madera oscura, presionando con cuidado cada unión y rastreando la base en busca de cualquier imperfección. Tras unos instantes de tacto meticuloso, percibes un leve clic bajo el borde inferior derecho; una pequeña pestaña de madera, casi invisible y perfectamente encajada, cede ligeramente bajo la presión de tu uña.
+> El mecanismo se libera con un susurro metálico. La tapa de la caja no se abre del todo, sino que se desplaza lateralmente con un movimiento fluido y preciso, revelando el interior aterciopelado que aguarda bajo la luz.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1780 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 44 — 44/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1217 ms
+
+> "Vaya, vaya... parece que alguien guardaba secretos."
+> Deslizo la tapa por completo y miro con atención qué hay dentro.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+0=12
+
+### [4] DM
+
+  3282 ms
+
+> La tapa se desliza con un siseo suave, dejando al descubierto el corazón de la caja. Sobre un lecho de terciopelo carmesí, que ha empezado a desteñirse en los bordes, descansa un pequeño fajo de cartas atadas con un cordel de seda plateada y un anillo de plata vieja con una piedra lunar empañada que parece absorber la luz del lugar.
+> Tus ojos recorren el contenido, pero la disposición de los papeles es caótica y el anillo no muestra ninguna inscripción legible a simple vista. No hay compartimentos ocultos adicionales ni notas evidentes que expliquen la procedencia de los objetos; solo el silencio del terciopelo y el peso frío de la plata.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2639 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: fajo de cartas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item fajo de cartas
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 45 — 45/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1487 ms
+
+> "Vaya, vaya... un tesoro modesto, pero con gusto."
+> Tomo el anillo y lo froto con la manga para limpiar la piedra, mientras intento distinguir cualquier marca oculta en la plata.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 11+0=11
+
+### [4] DM
+
+  2481 ms
+
+> El anillo se siente gélido contra la piel y la piedra lunar, aunque ahora luce más brillante tras el frotado, mantiene una opacidad turbia que parece ocultar algo en su interior. Al girar la pieza bajo la luz, el metal refleja destellos apagados, pero la superficie de la plata se muestra lisa y desgastada por el tiempo.
+> No logras encontrar ninguna inscripción, grabado ni marca de artesano que revele el origen de la joya o su propósito. El anillo permanece mudo, devolviéndote una mirada blanquecina y vacía desde el corazón de la piedra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2548 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: anillo de plata con piedra lunar
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item anillo de plata con piedra lunar
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 46 — 46/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  22 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1674 ms
+
+> "Interesante... muy interesante."
+> Sigo examinando el anillo, pero ahora busco cualquier anomalía en la piedra lunar que sugiera un compartimento secreto o un mecanismo oculto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+0=18
+
+### [4] DM
+
+  2106 ms
+
+> Al presionar con cuidado los bordes de la piedra lunar, sientes un clic casi imperceptible, un movimiento mecánico que vibra contra la yema de tus dedos. La gema no se desprende, sino que se desplaza ligeramente hacia un lado, revelando un espacio hueco y estrecho en el cuerpo del anillo.
+> En el interior del compartimento, enrollado con una precisión quirúrgica, descansa un fragmento de pergamino amarillento, tan delgado que parece hecho de piel de cebolla. El papel está seco y quebradizo, guardando el secreto en el vacío del metal durante años.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4521 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: fragmento de pergamino amarillento
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item fragmento de pergamino amarillento
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 47 — 47/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  23 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2070 ms
+
+> "Vaya, vaya... parece que alguien tenía secretos muy pequeños."
+> Saco el pergamino con sumo cuidado para no romperlo y lo despliego lentamente.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+0=8
+
+### [4] DM
+
+  4959 ms
+
+> Tus dedos manipulan el pergamino con delicadeza, pero el material es más traicionero de lo que parecía. Al intentar desplegarlo por completo, el papel seco se resiste y un crujido seco resuena en el silencio; una esquina del documento se desgarra, perdiendo un fragmento de texto que cae al suelo como una escama inútil.
+> Lo que logras leer es un conjunto de garabatos apresurados y manchas de tinta desvaída. Hay algunas palabras reconocibles, pero la caligrafía es errática y el sentido general del mensaje se escapa entre líneas incompletas y frases que parecen cortadas abruptamente. El secreto permanece, en gran parte, indescifrable.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1119 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 48 — 48/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  23 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1481 ms
+
+> "Maldita sea... un descuido imperdonable."
+> Suelto un suspiro y me agacho para recoger el trozo de papel del suelo, examinando el fragmento roto para ver si puedo encajarlo o rescatar alguna letra.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 9+0=9
+
+### [4] DM
+
+  4360 ms
+
+> El fragmento de papel es pequeño y los bordes del desgarro son irregulares, dejando fibras blancas y deshilachadas que dificultan cualquier intento de encaje perfecto. Al acercar la pieza al cuerpo del pergamino, las letras cortadas no parecen formar palabras coherentes; el trozo recuperado contiene apenas una curva de una letra y una mancha de tinta que no aporta ninguna pista nueva al conjunto.
+> El papel se siente quebradizo entre tus dedos, casi como si quisiera deshacerse por completo ante el menor esfuerzo. Los garabatos restantes siguen siendo un enigma, y el fragmento que has rescatado no logra llenar el vacío de la información perdida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  764 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 49 — 49/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  22 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1367 ms
+
+> "Vaya, parece que nos han vendido un rompecabezas incompleto."
+> Suelto el fragmento con cuidado y observo el pergamino completo buscando cualquier marca de agua, sello o rastro de tinta invisible que haya pasado por alto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+0=17
+
+### [4] DM
+
+  4559 ms
+
+> Al inclinar el pergamino bajo la luz, el papel revela un detalle que el primer vistazo omitió: una marca de agua casi imperceptible, un sello en relieve que representa una hoja de roble entrelazada con una clave musical. No es tinta, sino una presión deliberada en la fibra del papel que solo se hace visible cuando los rayos inciden en el ángulo exacto.
+> En el margen inferior, donde el papel parece más desgastado, notas una ligera decoloración amarillenta que forma un patrón geométrico. No es un mensaje escrito, sino una serie de pequeños puntos perforados con una aguja que, al alinearse, sugieren la silueta de un mapa simplificado o una constelación específica.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  841 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 50 — 50/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2089 ms
+
+> "Vaya, vaya... el papel tiene más secretos que un confesor."
+> Sigo moviendo el pergamino para analizar detenidamente esos puntos perforados y tratar de descifrar qué representan exactamente.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+0=14
+
+### [4] DM
+
+  5029 ms
+
+> Al mover el pergamino con paciencia, los puntos perforados dejan de ser manchas azarosas para cobrar sentido. No es una constelación, sino un mapa esquemático del bosque circundante. Los agujeros marcan puntos de referencia naturales: el cauce del río, una formación rocosa conocida como el Colmillo y, finalmente, un punto final resaltado por una perforación más profunda que se sitúa justo en el corazón del bosque, lejos de los senderos transitados.
+> La marca de agua de la hoja y la clave musical parece actuar como una leyenda; el punto final coincide exactamente con la ubicación donde, según las leyendas locales, se encuentra el Roble Ancestral. El patrón sugiere que el pergamino no es solo un mensaje, sino una guía diseñada para que alguien encuentre el camino hacia el árbol sin necesidad de dejar rastro escrito.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3418 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: item.knowledge
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Ancestral, Colmillo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 51 — 51/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2069 ms
+
+> "Vaya, vaya... un mapa secreto al Roble Ancestral. Esto es mucho más valioso que un simple mensaje."
+> Guardo el pergamino rápidamente en mi ropa para que nadie más pueda verlo.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 7+2=9
+
+### [4] DM
+
+  4139 ms
+
+> El movimiento es brusco y el pergamino roza el borde de la tela con un sonido seco, un chasquido sordo que rompe el silencio del momento. El cuero de tu ropa cruje mientras intentas ocultar el documento a toda prisa, dejando que el papel se doble de forma torpe contra tu cuerpo.
+> Toño Bravante, que estaba distraído mirando hacia la plaza, gira la cabeza rápidamente hacia ti. Sus cejas se contraen en un gesto de curiosidad, mientras sus ojos recorren tus manos y el bulto irregular que ahora marca tu vestimenta.
+> —¿Todo bien por ahí? Te has movido como si hubieras visto a un espectro —comenta Toño, entrecerrando los ojos con una sonrisa dubitativa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2068 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = pergamino enrollado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3939: Kestra.inventory = pergamino enrollado
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 52 — 52/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2695 ms
+
+> "¿Espectros? Solo es el hambre, Toño, que me hace bailar los nervios."
+> Suelto una carcajada ligera y me llevo una mano al estómago, fingiendo un gesto de incomodidad.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 16+4=20
+
+### [4] DM
+
+  4267 ms
+
+> Toño suelta una carcajada sonora que hace vibrar su pecho, relajando instantáneamente la mirada. Se golpea el muslo con la palma de la mano, convencido por la naturalidad del gesto y la risa, olvidando por completo el ruido del pergamino y el movimiento brusco.
+> —¡Ja! Ya decía yo. El hambre es el único demonio que nos persigue a todos en este pueblo cuando llega la hora de la comida —dice Toño, mientras vuelve a orientar su cuerpo hacia la plaza, dándote la espalda con total confianza—. Vamos, que si seguimos así, terminarás comiéndote las costuras de tu propia ropa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1259 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 53 — 53/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2447 ms
+
+> "Tienes toda la razón, Toño. No hay nada más peligroso que un estómago vacío."
+> Aprovecho que me ha dado la espalda para intentar recuperar el pergamino sin que se dé cuenta.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 15+2=17
+
+### [4] DM
+
+  2335 ms
+
+> Toño sigue riendo, distraído por su propia ocurrencia y el aroma a estofado que empieza a flotar desde los puestos de la plaza. Sus hombros se sacuden con el resto de la carcajada, creando el hueco perfecto y el ruido necesario para que el movimiento sea imperceptible.
+> Tus dedos se deslizan con precisión quirúrgica, rescatando el pergamino del lugar donde Toño lo había dejado. El papel vuelve a tu posesión en un pestañeo, sin que el hombre sienta la más mínima brisa ni note la ausencia del documento mientras comienza a caminar hacia el mercado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2571 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = pergamino enrollado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3941: Kestra.inventory = pergamino enrollado
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 54 — 54/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1847 ms
+
+> "¡Vaya, Toño! No me digas que el hambre te gana ya a la conversación."
+> Guardo el pergamino rápidamente entre mis ropas y lo sigo con paso ligero, manteniendo la charla para que no sospeche nada.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 8+2=10
+
+### [4] DM
+
+  6292 ms
+
+> Toño se detiene en seco, girándose hacia ti con una expresión de fingida indignación y una sonrisa que le arruga los ojos. Se lleva una mano al vientre, que emite un ruido sordo y audible, justo cuando el olor a especias y carne braseada se vuelve más intenso al acercarse a las carpas del mercado.
+> —¡El hambre es la única verdad absoluta en este festival, muchacho! —exclama soltando una palmada sonora en tu hombro—. Acompáñame, que si no llegamos pronto, los puestos de estofado se quedarán en caldos vacíos y no quiero que te desmayes por falta de sustento mientras me escuchas hablar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1084 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 55 — 55/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  1957 ms
+
+> "Me convences, Toño. Un estómago vacío no sabe apreciar una buena historia."
+> Sigo sus pasos hacia las carpas, pero mantengo la vista atenta a los bolsillos y pertenencias de los demás mercaderes mientras caminamos.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 5+1=6
+
+### [4] DM
+
+  6340 ms
+
+> Toño suelta una carcajada estrepitosa que hace vibrar su pecho mientras te guía entre la multitud, gesticulando con entusiasmo hacia los colores chillones de las carpas. El bullicio del mercado te envuelve: gritos de vendedores, el tintineo de monedas y el aroma embriagador de la grasa caliente que chisporrotea en las brasas.
+> Mientras caminas, intentas escudriñar los bolsillos y los bultos de los mercaderes que se cruzan en vuestro camino, pero el caos del festival juega en tu contra. Entre el vaivén de la gente, las capas que ondean con la brisa y la distracción de Toño hablando sin parar, no logras distinguir nada fuera de lo común ni detectar ninguna pertenencia vulnerable que capte tu atención.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  967 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 56 — 56/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3395 ms
+
+> "Es un espectáculo fascinante, Toño, pero me distraigo con tanta belleza."
+> Me detengo un momento, fingiendo admirar una de las carpas mientras observo discretamente a los clientes más opulentos que pasan a nuestro lado.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 10+1=11
+
+### [4] DM
+
+  4440 ms
+
+> Toño se detiene en seco, girándose hacia ti con una sonrisa radiante y los ojos brillantes de orgullo. "¡Y eso que aún no has visto el despliegue de la plaza central! Es una joya, una verdadera joya", exclama, mientras extiende los brazos para abarcar el panorama de telas multicolores y banderas que ondean sobre vuestras cabezas.
+> A pesar de tu esfuerzo por filtrar el ruido visual, la opulencia de los clientes se funde en una masa de sedas brillantes y joyas que destellan bajo el sol. Los movimientos son demasiado erráticos y la multitud demasiado densa; solo logras percibir el roce ocasional de una túnica costosa y el aroma a perfumes caros que se desvanece rápidamente en el aire saturado de humo y especias.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1068 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 57 — 57/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2226 ms
+
+> "Toda esa belleza es fascinante, Toño, pero me distraigo con los detalles."
+> Me detengo un momento para observar a la multitud, buscando a alguien que destaque por su descuido o por llevar algo demasiado valioso a la vista.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+1=7
+
+### [4] DM
+
+  7334 ms
+
+> Toño suelta una carcajada jovial y te da una palmada afectuosa en el hombro, sin dejar de mirar con adoración las banderas que ondean. "¡Ah, los detalles! Eso es lo que hace que el festival sea mágico, aunque admito que para alguien con tu ojo, este gentío puede resultar... abrumador", comenta con un guiño.
+> Tus ojos recorren la masa de gente, pero el caos es absoluto. Entre el vaivén de las sedas, el humo de los puestos de comida y el ruido ensordecedor de los pregones, cualquier rastro de descuido se pierde en la multitud. No logras distinguir a nadie que destaque ni detectar ningún objeto valioso que sea vulnerable; el brillo de las joyas es omnipresente y uniforme, fundiéndose en un resplandor dorado que te devuelve la mirada sin revelar ninguna oportunidad clara.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  910 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 58 — 58/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2646 ms
+
+> "Tienes razón, Toño, es un despliegue fascinante. Pero dime, con tanta belleza... ¿dónde se guarda el tesoro real del festival?"
+> Le sonrío mientras intento captar cualquier gesto que me indique dónde están los objetos de verdadero valor.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 11+3=14
+
+### [4] DM
+
+  8911 ms
+
+> Toño arquea una ceja, divertido por la pregunta, y suelta un suspiro teatral mientras señala con un gesto amplio hacia el corazón del recinto. "¡Ja! El tesoro no son las monedas, aunque el Comité guarda el presupuesto en una caja fuerte que haría llorar de envidia a un gnomo", bromea, aunque notas que su mirada se desvía instintivamente un segundo hacia la gran carpa central, donde el aire vibra con una solemnidad distinta al resto del bullicio.
+> A pesar de su actitud abierta, Toño no hace ningún gesto involuntario ni revela un secreto mediante su lenguaje corporal. Su sonrisa permanece genuina y su postura relajada; para él, hablar de la organización del festival es un orgullo, y no percibe en tu pregunta una amenaza, sino una curiosidad natural por la magnitud del evento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1820 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 59 — 59/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2434 ms
+
+> "Una caja fuerte gnoma, ¿eh? Me encantaría ver si es tan resistente como dicen."
+> Sigo la línea de su mirada hacia la carpa central mientras mantengo la sonrisa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+3=10
+
+### [4] DM
+
+  6606 ms
+
+> Toño suelta una carcajada sonora, golpeando ligeramente su muslo con la mano. "¡Ese es el espíritu! Aunque te advierto que el tesorero tiene el corazón más duro que el acero de esa caja; no deja que nadie se acerque sin un permiso firmado en triplicado y un sello de cera", responde con un guiño cómplice, manteniendo su actitud jovial y relajada.
+> Mientras observas la gran carpa central, el ruido del festival parece amortiguarse, dejando paso a un eco distante de cánticos y el aroma a incienso y resina que emana de las telas pesadas. A pesar de tu atención, no percibes ninguna señal extraña ni ninguna tensión oculta en el comportamiento de Toño; el hombre parece sinceramente orgulloso de todo lo que te muestra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5028 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 60 — 60/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4648 ms
+
+> "¿Permisos firmados? Vaya, parece que el tesorero disfruta más de la burocracia que del oro."
+> Sigo caminando junto a Toño, tratando de que me cuente más sobre los hábitos del tesorero mientras mantenemos el paso.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 7+4=11
+
+### [4] DM
+
+  6017 ms
+
+> Toño suelta un suspiro teatral y sacude la cabeza, aunque la sonrisa no abandona sus labios. "¡Ni que lo digas! El hombre es un reloj suizo, pero un reloj que solo marca la hora de llenar formularios. Si no está contando monedas, está puliendo el sello de lacre", comenta mientras guía tus pasos con un gesto amplio del brazo.
+> A medida que avanzan, el hombre se encoge de hombros y añade con naturalidad: "Bueno, es meticuloso, pero predecible. Siempre está en su despacho a primera hora, aunque no te dirá ni 'buenos días' si ve que te falta una coma en la solicitud". Se queda callado un momento, observando el bullicio del festival con satisfacción, sin darte más detalles sobre la rutina del funcionario.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1245 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 61 — 61/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4433 ms
+
+> "Predecible es mi palabra favorita. Dime, ¿qué es exactamente lo que hace que ese sello de lacre brille tanto?"
+> Sigo caminando junto a él, intentando que parezca una charla trivial mientras busco cualquier detalle sobre la seguridad o los hábitos del despacho.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+3=5
+
+### [4] DM
+
+  8729 ms
+
+> Toño suelta una carcajada sonora, echando la cabeza hacia atrás mientras sigue caminando. "¡Ah, el orgullo del funcionario! Dice que el brillo es cuestión de una mezcla secreta de aceite de castor y paciencia infinita. Se pasa los ratos libres frotándolo con un paño de seda como si fuera una reliquia sagrada", responde con un tono burlón, aunque sin dejar de caminar con paso firme hacia el área administrativa.
+> A pesar de la locuacidad de Toño, su lenguaje corporal es abierto y genuino; no hay señales de que oculte algo sobre el despacho ni rastro de una vigilancia inusual en el trayecto. El bullicio del festival los envuelve, con el olor a maíz tostado y el sonido de los instrumentos de cuerda camuflando cualquier detalle sutil que pudiera haber escapado a tu atención.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4833 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 62 — 62/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3423 ms
+
+> "¿Aceite de castor, dices? Qué dedicación tan... peculiar."
+> Sigo el paso de Toño mientras intento notar si alguien nos observa desde la multitud.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 4+1=5
+
+### [4] DM
+
+  7100 ms
+
+> Toño suelta un bufido divertido y sacude la mano en el aire, restándole importancia al asunto mientras gira en una esquina adornada con guirnaldas de colores. "Peculiar es poco, ¡es una obsesión!", exclama, mientras el aroma a azúcar quemada de un puesto cercano se vuelve predominante.
+> A tu alrededor, la multitud fluye como un río caótico de túnicas brillantes y risas. El ruido es ensordecedor y la gente se empuja con entusiasmo para ver los espectáculos, creando un muro constante de espaldas, sombreros y hombros que bloquean cualquier línea de visión clara. No logras distinguir ninguna mirada fija ni ningún rastro de seguimiento entre el bullicio del festival.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2327 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 63 — 63/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3004 ms
+
+> "Toda esa obsesión debe de costar una fortuna en oro, ¿verdad?"
+> Sigo a Toño mientras aprovecho el caos de la multitud para intentar palpar los bolsillos de los transeúntes que me empujan.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 15+2=17
+
+### [4] DM
+
+  14750 ms
+
+> Toño suelta una carcajada sonora, echando la cabeza hacia atrás mientras esquiva a un grupo de niños que corren con globos de seda. "¡Si supieras! El presupuesto del Comité está más agujereado que un queso viejo, pero Toño Bravante siempre encuentra la manera de que las cosas luzcan", responde con un guiño, aunque su expresión se ensombrece un instante, como si recordara una deuda pendiente.
+> Mientras caminas, el roce constante de los cuerpos se convierte en tu mejor aliado. Tus dedos se deslizan con precisión quirúrgica entre las telas y los pliegues de las túnicas de quienes te empujan. En un movimiento fluido y casi invisible, extraes una pequeña bolsa de cuero gastado del cinturón de un mercader distraído que acababa de chocar contigo. El peso del metal tintineando en el fondo confirma que el botín es real.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9890 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = bolsa de cuero gastado
+  ✓ creación item: bolsa de cuero gastado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → ya existía: item bolsa de cuero gastado
+  → delta 3963: Kestra.inventory = bolsa de cuero gastado
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 64 — 64/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4546 ms
+
+> "Vaya, Toño, parece que el arte de hacer magia con el presupuesto es el más valioso de todos."
+> Guardo la bolsa rápidamente entre mis ropas y miro a Toño con curiosidad, intentando captar qué es exactamente lo que le preocupa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+3=9
+
+### [4] DM
+
+  10344 ms
+
+> Toño suelta un bufido divertido y te da una palmada fuerte en el hombro, haciendo que la bolsa recién robada se asiente contra tu costado. "¡Exacto! Llamémoslo 'optimización creativa'. A veces implica convencer a un proveedor de que el pago llegará el próximo solsticio, y otras, simplemente rezar para que nadie cuente las monedas", comenta con una sonrisa expansiva que vuelve a iluminar su rostro.
+> Al observarlo más de cerca, Toño parece recuperar su habitual energía. Aunque hubo un destello de inquietud en su mirada, ahora se muestra totalmente entregado a la charla y al bullicio del festival, sin dejar rastro alguno de esa sombra que lo atravesó hace un momento. Sigue caminando con paso firme, gesticulando hacia las luces de colores que comienzan a encenderse sobre la plaza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1098 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 65 — 65/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4333 ms
+
+> "Tienes un don natural para la retórica, Toño. Me gusta cómo piensas."
+> Le devuelvo la sonrisa mientras trato de captar qué fue exactamente lo que lo inquietó hace un momento.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 19+3=22
+
+### [4] DM
+
+  13819 ms
+
+> Toño suelta una carcajada sonora, llenando el aire con un entusiasmo genuino mientras se siente halagado por el comentario. "¡Ja! Alguien que finalmente aprecia el arte de la negociación flexible", exclama, guiñándote un ojo mientras sigue avanzando entre la multitud.
+> A pesar de su fachada vibrante, tu mirada detecta una grieta en su máscara. No es miedo, sino una culpa meticulosamente archivada. Notas que, cada vez que Toño menciona la tradición o mira hacia la dirección donde debería estar el instrumento sagrado, hay una tensión imperceptible en su mandíbula y un ligero desvío de la mirada, como si estuviera ocultando un secreto que choca frontalmente con la importancia del evento que organiza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3831 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento toño_bravante · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: toño_bravante
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 66 — 66/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4408 ms
+
+> "Tienes un talento natural para los detalles, Toño. Me intriga saber qué es exactamente lo que te pone tan... tenso."
+> Le doy un toque ligero en el hombro mientras camino a su lado, intentando leer mejor su reacción.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+3=16
+
+### [4] DM
+
+  11885 ms
+
+> Toño se tensa visiblemente ante el toque en el hombro, y su risa se corta en seco, transformándose en una mueca forzada que no llega a sus ojos. El hombre recupera la compostura rápidamente, pero el ligero temblor de sus dedos al ajustarse el jubón traiciona su nerviosismo. Se detiene un instante, mirando hacia un lado donde el bullicio del mercado oculta su expresión, y su mandíbula se aprieta con fuerza.
+> "¿Tenso? ¡Bah! Son los nervios del organizador, muchacho", responde con una voz que ha subido un octavo de tono, demasiado rápida para ser natural. "Cuando tienes el honor de coordinar el Festival del Roble, el peso de la tradición te aplasta los hombros. No es tensión, es... ¡responsabilidad!", exclama, retomando la marcha con pasos apresurados, evitando mantener el contacto visual más de un par de segundos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1695 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 67 — 67/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  4191 ms
+
+> "Claro, la responsabilidad es una carga pesada. Casi puedo verla en tus hombros."
+> Sigo caminando a su lado, tratando de captar algún detalle que se le haya escapado o algún objeto que guarde con recelo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+3=6
+
+### [4] DM
+
+  65240 ms
+
+> Toño suelta una carcajada estridente, aunque el sonido suena hueco y termina en un carraspeo incómodo. "¡Exacto! ¡Un peso monumental!", exclama mientras gesticula exageradamente con los brazos, tratando de llenar el espacio con su energía habitual para desviar cualquier sospecha.
+> Sigue caminando a paso rápido, sumergido en el flujo de gente del mercado. A pesar de su actitud expansiva, no notas ningún objeto inusual oculto en su ropa ni ningún gesto que delate un secreto concreto; el hombre parece simplemente un organizador al borde del colapso nervioso, consumido por el estrés de los preparativos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1727 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 68 — 68/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  6468 ms
+
+> "No te preocupes, Toño, que para eso estamos los profesionales. Todo saldrá perfecto."
+> Le pongo una mano en el hombro para frenarlo un poco y trato de notar si su pulso se acelera o si tiembla mientras hablo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+3=11
+
+### [4] DM
+
+  6091 ms
+
+> Toño se detiene en seco al sentir la presión de tu mano, soltando un suspiro que parece vaciarle los pulmones por completo. Te mira con una mezcla de gratitud y desesperación, asintiendo con vigor mientras intenta recuperar el ritmo de su respiración.
+> A través del tejido de su jubón, el contacto es firme; no percibes temblores ni una aceleración anómala en su pulso que sugiera mentiras o un pánico oculto. Simplemente se siente como un hombre agotado, cuyos hombros caen ligeramente bajo el peso de la responsabilidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1269 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 69 — 69/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  3610 ms
+
+> "Tranquilo, Toño. Estás en buenas manos."
+> Le doy una palmada afectuosa en el hombro y aprovecho el contacto para intentar deslizar mis dedos hacia sus bolsillos.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 13+2=15
+
+### [4] DM
+
+  8380 ms
+
+> Toño cierra los ojos un instante, dejándose llevar por el consuelo de tus palabras, y esboza una sonrisa cansada que no llega a ocultar las ojeras. Se mantiene relajado, confiando plenamente en tu gesto, lo que facilita que tu mano se desplace con naturalidad hacia la abertura de su jubón.
+> Tus dedos encuentran la tela rugosa de un bolsillo interior y, con un movimiento fluido y preciso, logras extraer un pequeño pergamino doblado y sellado con cera roja, sin que Toño note el robo mientras exhala un último suspiro de alivio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8561 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Kestra · character.inventory = pergamino doblado y sellado
+  ✓ creación item: pergamino doblado y sellado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item pergamino doblado y sellado
+  → delta 3975: Kestra.inventory = pergamino doblado y sellado
+
+### [9] ESTADO DESPUÉS
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 70 — 70/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Toño Bravante: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 621 caracteres
+
+### [2] JUGADOR — Kestra
+
+  2614 ms
+
+> "Todo saldrá bien, amigo mío. Descansa ahora."
+> Sigo acariciando su hombro mientras guardo el pergamino rápidamente en mi propia ropa. Me alejo con paso tranquilo.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 5+2=7
+
+### [4] DM
+
+  7392 ms
+
+> Toño se queda sumido en un letargo ligero, con la respiración volviéndose rítmica y pesada. Sin embargo, mientras intentas deslizarte hacia atrás, el talón de tu bota choca contra una vieja caja de madera que Toño tiene junto a su asiento. El golpe produce un crujido seco y resonante que rompe el silencio del lugar.
