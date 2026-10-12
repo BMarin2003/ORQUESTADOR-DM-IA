@@ -1,0 +1,107 @@
+brazo,par,frase,veces
+G1,01,la posición ha sido comprometida totalmente.,3
+G1,01,tomás herrén se detiene en seco.,3
+G1,02,"""menos palabras y más acero, chico.",5
+G1,02,"""menos palabras y más pies, chico.",5
+G1,02,el impulso falla en el momento crítico.,4
+G2,02,[para resolver esta acción es necesaria una tirada de destreza (herramientas de ladrón).,8
+G2,02,"por favor, lanza el dado y añade el modificador correspondiente para determinar si la secuencia técnica tiene éxito.]",8
+G2,02,"por favor, indica el resultado total.]",3
+G1,03,"yenna roldós se detiene en seco, pero no se gira.",7
+G1,03,"yenna se detiene en seco, pero no se gira.",6
+G1,03,yenna roldós no responde a la pregunta.,5
+G1,04,"de no abandonar la sala ahora, el cortocircuito final sellará las puertas blindadas, convirtiendo la cámara de control en una celda hermética.",3
+G1,04,mirela sanz no se mueve del sitio.,3
+G1,04,"el vapor acre sigue espesando la atmósfera de la cavidad; si no encuentran una salida o un punto de descanso seguro pronto, la asfixia y la ceguera temporal se volverán un problema crítico.",3
+G2,04,[la tirada de perspicacia ha fallado.,4
+G1,05,renata ossorio no devuelve la sonrisa.,7
+G1,05,el movimiento es fluido y preciso.,6
+G1,05,la paciencia de renata se ha agotado.,5
+G1,06,la paciencia de osana se ha agotado.,23
+G1,06,"ni una gota más, ni una gota menos"".",17
+G1,06,osana ferreira no se mueve ni un centímetro.,11
+G2,06,el impacto es seco y brutal.,4
+G2,06,el impacto es seco y violento.,3
+G2,06,es la más baja en treinta años.,3
+G1,07,la paciencia de nax se ha agotado.,18
+G1,07,bercelio nax no retrocede ni un milímetro.,4
+G1,07,bercelio nax no retrocede ni un centímetro.,3
+G1,08,ginebra roquende mantiene la espalda recta y las manos entrelazadas al frente.,8
+G1,08,la paciencia de ginebra se ha agotado.,6
+G1,08,ginebra roquende no se mueve ni un centímetro.,5
+G1,09,"no te preocupes por mí, solo...",6
+G1,09,"por lo que más quieras, no me sueltes.",5
+G1,09,"pero gracias por intentar salvarme la piel.""",5
+G2,09,—susurra con una voz que suena a cristal roto—.,4
+G1,10,el impulso falla en el momento crítico.,6
+G1,10,el impulso es seco y preciso.,4
+G1,10,el movimiento es fluido y preciso.,4
+G2,10,[para resolver este ataque necesito que realices una tirada de ataque (1d20 + modificador de fuerza o destreza según el arma).,6
+G2,10,"hasta que no tenga el resultado, no puedo narrar si el tajo impacta o si el vigilante logra evitarlo.]",6
+G2,10,el reparto no alcanza para todos.,4
+G1,11,"illian vasto permanece inmóvil, con las manos entrelazadas frente a ella.",17
+G1,11,illian vasto no se mueve ni un centímetro.,3
+G1,11,"illian vasto permanece estática, con las manos entrelazadas frente a ella.",3
+G1,12,la paciencia de prín se ha agotado.,64
+G1,12,la paciencia de osvaldo se ha agotado.,27
+G1,12,la paciencia de prín se ha agotado por completo.,11
+G2,12,"—estalla en un susurro desesperado, cerrando los ojos con fuerza—.",3
+G2,12,¡lo juro por los siete mares!,3
+G1,13,la paciencia de baldemar se ha agotado.,67
+G1,13,la paciencia de baldemar se ha agotado por completo.,45
+G1,13,baldemar ha llegado a su límite.,9
+G1,14,la paciencia de valerius se ha agotado.,10
+G1,14,el movimiento es fluido y preciso.,3
+G1,14,la sonrisa de melida desaparece instantáneamente.,3
+G2,14,"madame valeriane sostiene la mirada, imperturbable.",8
+G2,14,madame valeriane no devuelve la sonrisa.,3
+G1,15,el impulso falla en el momento crítico.,5
+G1,15,la entidad orgánica no responde con palabras.,5
+G1,15,el impulso es seco y preciso.,3
+G1,16,"""menos palabras y más pasos, entonces.",7
+G1,16,la paciencia de zoraida se ha agotado.,6
+G1,16,"""menos palabras y más fuerza en los brazos.",4
+G2,16,el impacto es seco y contundente.,7
+G1,17,la paciencia de bibiana se ha agotado.,95
+G1,17,la paciencia de bibiana se ha agotado por completo.,25
+G1,17,la hostilidad de bibiana ha alcanzado un punto crítico.,8
+G2,17,[la tirada de perspicacia ha fallado.,4
+G1,18,prudencia calibre no retrocede ni un milímetro.,12
+G1,18,prudencia calibre no levanta la vista del papel.,10
+G1,18,la rigidez de prudencia es absoluta.,7
+G2,18,¡no hace falta que seas tan...,3
+G2,18,el impacto es seco y contundente.,3
+G1,19,la paciencia de varga se ha agotado.,7
+G1,19,leo varga no retrocede ni un milímetro.,6
+G1,19,leo varga no retrocede ni un centímetro.,5
+G1,20,matilde harinosa no se mueve ni un centímetro.,4
+G1,20,matilde no retrocede ni un centímetro.,3
+G1,20,matilde harinosa baja la voz hasta convertirla en un susurro gélido.,3
+G2,20,¡no hace falta que saques el acero!,3
+G2,20,¡no hace falta que seas tan...,3
+G1,21,el impulso falla en el momento crítico.,3
+G1,21,el técnico no se molesta en girar la cabeza.,3
+G1,21,"tercer rack desde la derecha, código 4-0-2.",3
+G2,21,"serafín suelta una risa breve, un sonido seco que no llega a sus ojos.",4
+G2,21,"serafín suelta una risa seca, un sonido breve que no llega a sus ojos.",4
+G2,21,"serafín brea sostiene la mirada, imperturbable.",4
+G1,22,la paciencia de casimira se ha agotado.,10
+G1,22,la rigidez de casimira es absoluta.,3
+G1,22,el tiempo es un recurso que se agota.,3
+G1,23,la paciencia de aldonza se ha agotado.,23
+G1,23,la paciencia de aldonza se agota.,5
+G1,23,la paciencia de aldonza ha llegado a su límite.,3
+G1,24,la paciencia de fermín se ha agotado por completo.,7
+G1,24,la paciencia de fermín se ha agotado.,6
+G1,24,la paciencia de llavín se ha agotado por completo.,5
+G1,25,el impulso es eléctrico y preciso.,4
+G1,25,ha dado usted en el clavo.,4
+G1,25,el impulso es eléctrico y desesperado.,3
+G1,26,el impulso falla en el momento crítico.,4
+G1,26,"por lo que más quieras, no me sueltes"".",3
+G1,27,anselmo vela no se mueve ni un centímetro.,14
+G1,27,anselmo vela no se mueve ni un milímetro.,5
+G1,27,anselmo vela no gira la cabeza.,4
+G2,27,el movimiento es torpe y desesperado.,3
+G2,27,el hombre del anillo de sello ni siquiera parpadea.,3
+G2,27,"—estalla en un susurro desesperado, cerrando los ojos con fuerza—.",3

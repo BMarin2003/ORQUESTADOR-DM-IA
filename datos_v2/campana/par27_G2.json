@@ -1,0 +1,37 @@
+{
+ "v1": {
+  "bucles_ciclos": 1,
+  "bucles_visitas": 44,
+  "bucles_ubicaciones": 6,
+  "relojes_disparados": 3,
+  "relojes_reconocidos": 2,
+  "papalampidi_C": 2.667,
+  "papalampidi_L": 10,
+  "papalampidi_V": 0.051,
+  "jericho_recall": 0.477,
+  "jericho_n": 44,
+  "ecr": 0.9987261375636941,
+  "ecr_n": 1400,
+  "grafo_lema": 0.015,
+  "pnj_refinado_actuando": 1,
+  "pnj_refinado_solo_referenciado": 53
+ },
+ "v2": {
+  "bucles_ciclos": 1,
+  "bucles_visitas": 44,
+  "bucles_ubicaciones": 6,
+  "relojes_disparados": 3,
+  "relojes_reconocidos": 2,
+  "papalampidi_C": 2.667,
+  "papalampidi_L": 10,
+  "papalampidi_V": 0.051,
+  "jericho_recall": 0.477,
+  "jericho_n": 44,
+  "ecr": 0.9987261375636941,
+  "ecr_n": 1400,
+  "grafo_lema": 0.015,
+  "pnj_refinado_actuando": 1,
+  "pnj_refinado_solo_referenciado": 53
+ },
+ "n_turnos": 1401
+}

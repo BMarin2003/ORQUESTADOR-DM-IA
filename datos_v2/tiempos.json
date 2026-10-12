@@ -1,0 +1,6 @@
+{
+ "1. medir residuos de formato (3000 turnos G1 + población; normalizacion.py)": "3.2 s",
+ "2a. recalcular 42 campañas × 1400 turnos, sin LanguageTool (recalcular.py)": "131 s",
+ "2b. LanguageTool en 1 de cada 10 turnos (2940 turnos por brazo; recalcular.py --con-lt, caché de LT en disco)": "302 s",
+ "2c. control G1 (texto crudo = v1) sobre las 21 campañas G1": "76 s"
+}

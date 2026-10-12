@@ -1,0 +1,359 @@
+brazo,par,turno,texto
+G1,01,31,Exploración
+G1,01,33,Memoria
+G1,01,62,Exploración
+G1,01,63,Exploración
+G1,01,73,Agilidad
+G1,01,84,Adiestramiento con Armas
+G1,01,106,Exploración
+G1,01,109,Exploración
+G1,01,119,Exploración
+G1,01,129,Tacto
+G1,01,151,Exploración
+G1,01,161,Exploración
+G1,01,168,Percepción del callejón
+G1,01,174,Trato con Objetos
+G1,01,175,Destreza con Objetos
+G1,01,176,Destreza con Objetos
+G1,01,240,Exploración
+G1,01,265,Pregunta a Tomás en voz baja
+G1,01,282,Movimiento
+G1,01,310,Percepción e Investigación
+G1,01,337,Exploración
+G1,01,348,Percepción y Supervivencia
+G1,01,361,Posicionamiento
+G1,01,371,Exploración
+G1,01,406,Exploración
+G1,01,424,"Memoria, Ingenio"
+G1,01,454,Exploración
+G1,01,481,Exploración
+G1,01,494,Información
+G1,01,541,Exploración
+G1,01,574,Oración de Fuerza
+G1,01,599,Valentía
+G1,01,608,Ingeniería
+G1,01,609,Ingeniería
+G1,01,610,Ingeniería
+G1,01,611,Ingeniería
+G1,01,612,Ingeniería
+G1,01,613,Ingeniería
+G1,01,627,Invocación a la Protección Divina
+G1,01,628,Invocación a la Protección Divina
+G1,01,696,Golpe divino en las criaturas
+G1,01,729,Oración de Fuerza
+G1,01,742,Combate
+G1,01,745,Liderazgo
+G1,01,746,Uso de herramientas
+G1,01,836,Investigación en los pilares cercanos
+G1,01,894,Tecnología
+G1,01,895,Tecnología
+G1,01,896,Tecnología
+G1,01,897,Tecnología
+G1,01,898,Tecnología
+G1,01,899,Tecnología
+G1,01,900,Tecnología
+G1,01,901,Tecnología
+G1,01,901,Tecnología
+G1,01,902,Tecnología
+G1,01,903,Tecnología
+G1,01,904,Tecnología
+G1,01,905,Tecnología
+G1,01,906,Tecnología
+G1,01,907,Uso de Habilidades: Tecnología
+G1,01,989,Búsqueda
+G1,01,990,Búsqueda
+G1,01,1007,Santuario del Valor
+G1,01,1011,Combate (Espada)
+G1,01,1012,Espada
+G1,01,1067,Golpe con arma
+G1,01,1096,Defensa en Formación
+G1,01,1126,Inspección del altar
+G1,01,1142,Combate
+G1,01,1172,Jerarquía divina
+G1,01,1250,Combate
+G1,01,1316,Exploración sigilosa
+G2,01,10,Exploración
+G2,01,19,susurro
+G2,01,40,Exploración
+G2,01,51,Herramientas de ladrón
+G2,01,53,Exploración
+G2,01,104,Exploración
+G2,01,110,Exploración
+G2,01,170,Buscar herramienta adecuada
+G2,01,172,Exploración
+G2,01,190,Percepción e Investigación
+G2,01,195,Pensamiento en voz alta
+G2,01,202,Exploración
+G2,01,218,Preparación para atacar
+G2,01,228,Exploración
+G2,01,229,Exploración
+G2,01,234,Exploración
+G2,01,248,Exploración
+G2,01,260,Exploración
+G2,01,290,Exploración
+G2,01,318,Percepción en la niebla y el cristal
+G2,01,349,Percusión
+G2,01,367,pensamiento
+G2,01,367,pensamiento
+G2,01,371,Exploración
+G2,01,408,Oído agudo
+G2,01,415,Memoria
+G2,01,416,Exploración
+G2,01,417,Exploración
+G2,01,427,Exploración
+G2,01,457,Exploración
+G2,01,470,Pensamiento rápido
+G2,01,489,Exploración
+G2,01,495,Exploración
+G2,01,511,Exploración
+G2,01,512,Exploración
+G2,01,544,Señalo discretamente el sello
+G2,01,548,Escuchar
+G2,01,569,Exploración
+G2,01,593,Exploración
+G2,01,599,Exploración
+G2,01,602,Exploración
+G2,01,635,Exploración
+G2,01,640,Exploración
+G2,01,651,Exploración
+G2,01,657,Exploración
+G2,01,667,Exploración
+G2,01,702,Exploración
+G2,01,713,Exploración
+G2,01,720,Exploración
+G2,01,748,Pensamiento rápido
+G2,01,748,Determinación
+G2,01,762,Exploración
+G2,01,807,Exploración
+G2,01,891,Exploración
+G2,01,982,Exploración
+G2,01,983,Exploración
+G2,01,999,Exploración
+G2,01,1001,Exploración
+G2,01,1029,Exploración
+G2,01,1031,Exploración
+G2,01,1067,Exploración
+G2,01,1124,Exploración
+G2,01,1157,Exploración
+G2,01,1165,Exploración
+G2,01,1179,Exploración
+G2,01,1184,Sigilo y Atletismo
+G2,01,1202,Exploración
+G2,01,1209,Exploración
+G2,01,1210,Exploración
+G2,01,1213,Pensamiento
+G2,01,1220,Agilidad
+G2,01,1238,Exploración
+G2,01,1252,Exploración
+G2,01,1255,Exploración
+G2,01,1266,Exploración
+G2,01,1275,Investigación sobre recompensas
+G2,01,1276,Pensando
+G2,01,1284,Perspicacia en el objeto
+G2,01,1294,Exploración
+G2,01,1315,Investigación sobre las marcas
+G2,01,1398,Búsqueda
+G1,02,9,Inteligencia Investigación
+G1,02,10,Inteligencia Investigación
+G1,02,93,Oración de Protección contra el Mal
+G1,02,163,Defensa con Escudo
+G1,02,228,Invocación divina
+G1,02,229,Invocación divina
+G1,02,230,Invocación divina
+G1,02,231,Invocación divina
+G1,02,243,Lanzamiento de Luz
+G1,02,406,Inspección de la cueva
+G1,02,438,Golpe con arma
+G1,02,438,Invocación Divina
+G1,02,628,Defensa
+G1,02,628,Intimidar
+G1,02,630,Invocación de Santuario
+G1,02,657,Desesperación de la Luz
+G1,02,740,Uso de Herramientas de Manos
+G1,02,741,Uso de Herramientas de Manos
+G1,02,742,Uso de Herramientas de Manos
+G1,02,743,Uso de Herramientas de Manos
+G1,02,744,Uso de Herramientas de Manos
+G1,02,745,Uso de Herramientas de Manos
+G1,02,746,Uso de Herramientas de Manos
+G1,02,747,Uso de Herramientas de Manos
+G1,02,748,Uso de Herramientas de Manos
+G1,02,749,Uso de Herramientas de Manos
+G1,02,750,Uso de Herramientas de Manos
+G1,02,751,Uso de Herramientas de Manos
+G1,02,752,Uso de Herramientas de Manos
+G1,02,889,Curación
+G1,02,890,Curación
+G1,02,964,Invocación Divina
+G1,02,968,Trato con Objeto Mágico
+G1,02,987,Invocación de Poder Divino
+G1,02,1027,Preparar hechizo: Calor
+G1,02,1089,Percepción en la criatura
+G1,02,1094,Agilidad
+G1,02,1095,Agilidad
+G1,02,1096,Agilidad
+G1,02,1149,"Sigilo, Percepción"
+G1,02,1199,Presencia
+G1,02,1217,Hackeo
+G1,02,1218,Ingenio
+G1,02,1219,Informática
+G1,02,1234,Insight
+G1,02,1240,Manos ligeras
+G1,02,1241,Manos ligeras
+G1,02,1272,Investigación en las tuberías
+G1,02,1306,Ingenio
+G1,02,1307,Ingenio
+G1,02,1308,Descripción de cómo lo hago
+G1,02,1356,Tiro con Arco
+G1,02,1357,Tiro con Arco
+G1,02,1360,Destreza con Arco
+G1,02,1376,Búsqueda
+G1,02,1378,Uso de Manos Ligeras
+G2,02,25,Golpe con arma
+G2,02,26,Golpe con arma
+G2,02,140,Inspección de magia
+G2,02,162,Investigación en la inscripción
+G2,02,162,Perspicacia al acercarme al hombre
+G2,02,192,Dado de daño
+G2,02,194,Golpe con arma: 19 total
+G2,02,247,Determinación
+G2,02,263,Percepción e Investigación
+G2,02,278,Invocación de Luminaria
+G2,02,286,Sanar
+G2,02,391,Investigación en las marcas de garras
+G2,02,416,Herramientas de Ladrón
+G2,02,417,Herramientas de Ladrón
+G2,02,418,Herramientas de Ladrón
+G2,02,419,Herramientas de Ladrón
+G2,02,420,Herramientas de Ladrón
+G2,02,421,Herramientas de Ladrón
+G2,02,422,Herramientas de Ladrón
+G2,02,423,Herramientas de Ladrón
+G2,02,424,Herramientas de Ladrón
+G2,02,558,Persuasión si es necesario
+G2,02,567,Esgrima
+G2,02,568,Combate
+G2,02,570,Combate
+G2,02,576,Combate
+G2,02,670,Memoria
+G2,02,671,Memoria
+G2,02,676,Intuición
+G2,02,738,Conocimientos religiosos
+G2,02,1006,Combate
+G2,02,1050,Combate
+G2,02,1115,Daño con arma cuerpo a cuerpo
+G1,03,6,Trabajo manual
+G1,03,98,Actuación
+G1,03,99,Hechizar
+G1,03,334,Performance
+G1,03,338,Invención Bárdica: Confusión
+G1,03,340,Encantar
+G1,03,350,Investigación del camino de raíces
+G1,03,443,Defensa
+G1,03,443,Performance
+G1,03,453,Actuación
+G1,03,456,Hechizo: Levitación
+G1,03,486,Agilidad
+G1,03,496,Hechizo: Sugerencia
+G1,03,500,Canto de guerra
+G1,03,500,Liderazgo
+G1,03,510,Performance
+G1,03,514,Hechizar
+G1,03,518,Performance
+G1,03,554,Perspicacia en los cables y ventiladores
+G1,03,561,Investigación sobre los servidores
+G1,03,628,Conjurar Escudo
+G1,03,632,Hechizar a una bestia salvaje
+G1,03,699,Hechizar a una bestia
+G1,03,702,Actuación
+G1,03,706,Actuación
+G1,03,710,Performance
+G1,03,711,Performance
+G1,03,712,Performance
+G1,03,715,Canto de la serenata
+G1,03,788,Performance
+G1,03,802,Dexteridad
+G1,03,818,Encantamiento de Bardo · Persuasión
+G1,03,834,Performance
+G1,03,935,Diplomacia
+G1,03,947,Memoria
+G1,03,957,Inteligencia (Investigación)
+G1,03,974,Información sobre la mecánica del núcleo
+G1,03,1021,Búsqueda
+G1,03,1027,Performance
+G1,03,1028,Performance
+G1,03,1029,Performance
+G1,03,1030,Performance
+G1,03,1031,Performance
+G1,03,1032,Actuación
+G1,03,1045,Performance
+G1,03,1052,Performance
+G1,03,1057,Invocación: Conjuración de Escudo de Luz
+G1,03,1058,Inspira a la tropa
+G1,03,1060,Performance
+G1,03,1151,Ingenio
+G1,03,1152,Manos Rápidas
+G1,03,1196,Ingenio
+G1,03,1239,Uso de Manos
+G1,03,1355,Inteligencia Arcanos
+G1,03,1361,Desempeño
+G1,03,1362,Desempeño
+G1,03,1365,Investigación sobre la entidad
+G1,03,1387,Informática
+G1,03,1388,Informática
+G1,03,1389,Informática
+G2,03,49,Memoria
+G2,03,73,Buscar en la bolsa
+G2,03,74,Uso de Manos para encender la mecha
+G2,03,91,Olfato y Saber: Naturaleza
+G2,03,98,Determinación
+G2,03,118,Valentía
+G2,03,163,Investigación sobre los glifos
+G2,03,277,Memoria
+G2,03,300,Canto de batalla
+G2,03,411,Uso de Carisma para sanar
+G2,03,486,Investigación sobre el artefacto
+G2,03,572,Herramientas de Caligrafía
+G2,03,594,Memoria
+G2,03,655,Empatía
+G2,03,672,Ingestión
+G2,03,693,Performance
+G2,03,694,Performance
+G2,03,695,Performance
+G2,03,747,Percepción en el túnel izquierdo
+G2,03,747,Investigación en el túnel derecho
+G2,03,868,Conocimiento de la Naturaleza
+G2,03,872,Actuación
+G2,03,876,Actuación
+G2,03,877,Actuación
+G2,03,878,Actuación
+G2,03,879,Actuación
+G2,03,892,Cartografía
+G2,03,903,Pensando en voz alta
+G2,03,956,Performance
+G2,03,1049,Empatía
+G2,03,1050,Empatía
+G2,03,1051,Empatía
+G2,03,1104,Canto
+G2,03,1160,Empatía
+G2,03,1168,Perspicacia con Kaelen
+G2,03,1198,Sanación de las Heridas
+G2,03,1199,Canto de bardo
+G2,03,1268,Actuación
+G2,03,1271,Memoria de Bardo
+G2,03,1291,Empatía
+G2,03,1316,Memoria de la región
+G2,03,1333,Percepción de la magia
+G2,03,1361,Performance
+G2,03,1362,Performance
+G2,03,1369,Empatía con criaturas mágicas
+G2,03,1394,Carismo
+G2,04,879,Herramientas de ladrón
+G2,05,433,Habilidad
+G1,07,849,Descarga Sobrenatural
+G1,07,1225,Descarga Sobrenatural
+G2,07,833,Habilidad
+G2,12,700,Habilidad
+G1,13,311,Persuadir
+G1,14,251,Persuación
+G1,18,719,Persuación
