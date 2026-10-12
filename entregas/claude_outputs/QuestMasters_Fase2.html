@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuestMasters Fase 2</title>
+<style>
+/* Layout: continuación del tutorial de la Fase 0 (misma identidad visual: pergamino + tres tintas de actor).
+   Aquí las estaciones son los pasos de UN turno y las fichas llevan preguntas y respuestas para quien no sabe nada. */
+:root{
+  --bg:#f6f2e8; --surface:#fffdf7; --surface-2:#efe7d5; --fg:#241f16; --fg-dim:#6b6151;
+  --border:#ddd2b6; --ink:#8a3324; --actor-persona:#8a3324; --actor-script:#1f6f66; --actor-db:#2f4c8a;
+  --mono-bg:#efe6d0; --warn-bg:#f6e3b8; --warn-fg:#6b4a12; --bad-bg:#f2d5cf; --bad-fg:#7a2317;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#171310; --surface:#1e1a15; --surface-2:#262019; --fg:#ece3d2; --fg-dim:#b0a68f;
+    --border:#3a3122; --ink:#e2896f; --actor-persona:#e2896f; --actor-script:#6fbfb0; --actor-db:#7f9eea;
+    --mono-bg:#221c14; --warn-bg:#3a2c10; --warn-fg:#f0c878; --bad-bg:#40201a; --bad-fg:#f2a595;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#171310; --surface:#1e1a15; --surface-2:#262019; --fg:#ece3d2; --fg-dim:#b0a68f;
+  --border:#3a3122; --ink:#e2896f; --actor-persona:#e2896f; --actor-script:#6fbfb0; --actor-db:#7f9eea;
+  --mono-bg:#221c14; --warn-bg:#3a2c10; --warn-fg:#f0c878; --bad-bg:#40201a; --bad-fg:#f2a595;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg); color:var(--fg); margin:0; padding-inline:16px; font-family:"Source Sans 3",ui-sans-serif,system-ui,sans-serif; font-size:16px; line-height:1.6}
+.wrap{max-width:900px; margin:0 auto; padding-block:36px 90px}
+h1,h2,h3,h4{font-family:"Fraunces",Georgia,serif; font-weight:600; text-wrap:balance; color:var(--fg)}
+h1{font-size:clamp(1.7rem,4.2vw,2.4rem); margin:0 0 8px}
+h2{margin:44px 0 10px}
+.kicker{font-family:"IBM Plex Mono",monospace; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink); margin:0 0 10px}
+.subtitle{color:var(--fg-dim); font-size:1.05rem; margin:0 0 30px; max-width:66ch}
+p{margin:0 0 14px; max-width:70ch}
+code{font-family:"IBM Plex Mono",ui-monospace,monospace; background:var(--mono-bg); padding:0.12em 0.4em; border-radius:4px; font-size:0.87em; overflow-wrap:anywhere}
+a{color:var(--ink)}
+.lede{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:20px 22px; margin-bottom:26px}
+.lede p:last-child{margin-bottom:0}
+.glossary-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:10px; margin:14px 0 8px}
+.gterm{background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:12px 14px; min-width:0}
+.gterm .word{font-family:"Fraunces",serif; font-weight:600; font-size:0.98rem; margin-bottom:3px}
+.gterm .def{font-size:0.85rem; color:var(--fg-dim)}
+.station{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:22px 24px; margin:20px 0; min-width:0}
+.station-head{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; margin-bottom:6px}
+.station-num{font-family:"Fraunces",serif; font-size:1.25rem; font-weight:700; color:var(--ink); line-height:1}
+.station-title{font-family:"Fraunces",serif; font-size:1.2rem; font-weight:600}
+.actor-tag{display:inline-flex; align-items:center; gap:5px; font-family:"IBM Plex Mono",monospace; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.05em; padding:3px 9px; border-radius:99px; border:1px solid currentColor}
+.actor-tag.persona{color:var(--actor-persona)} .actor-tag.script{color:var(--actor-script)} .actor-tag.db{color:var(--actor-db)}
+.station-lead{color:var(--fg); font-size:1rem; margin:8px 0 16px}
+.spec{display:grid; grid-template-columns:150px 1fr; gap:2px 14px; font-size:0.9rem; margin:16px 0 6px}
+.spec dt{font-family:"IBM Plex Mono",monospace; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--fg-dim); padding:9px 0; border-top:1px solid var(--border)}
+.spec dd{margin:0; padding:9px 0; border-top:1px solid var(--border); max-width:56ch; min-width:0}
+.spec dt:first-of-type, .spec dd:first-of-type{border-top:none}
+@media (max-width:560px){ .spec{grid-template-columns:1fr} .spec dt{padding-bottom:0; border-top:1px solid var(--border)} .spec dd{border-top:none; padding-top:2px} }
+.why-box{background:var(--surface-2); border-left:3px solid var(--ink); border-radius:0 10px 10px 0; padding:12px 16px; margin-top:14px}
+.why-box .lbl{font-family:"IBM Plex Mono",monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink); margin-bottom:4px}
+.why-box p{margin-bottom:0; font-size:0.9rem}
+table{border-collapse:collapse; width:100%; margin:0 0 16px; font-size:0.86rem}
+th,td{border:1px solid var(--border); padding:8px 10px; text-align:left; vertical-align:top}
+th{background:var(--surface-2); font-family:"Fraunces",serif; font-weight:600}
+.twrap{overflow-x:auto; max-width:100%}
+.toc{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 26px}
+.toc a{font-family:"IBM Plex Mono",monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; text-decoration:none; border:1px solid var(--border); border-radius:99px; padding:5px 12px; background:var(--surface); color:var(--fg)}
+.toc a:hover{border-color:var(--ink); color:var(--ink)}
+.tag-doc,.tag-mine{display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:0.6rem; text-transform:uppercase; letter-spacing:0.04em; padding:1px 7px; border-radius:99px; margin-right:6px; vertical-align:1px; white-space:nowrap}
+.tag-doc{color:var(--actor-script); border:1px solid currentColor}
+.tag-mine{color:var(--warn-fg); background:var(--warn-bg)}
+pre.code{background:var(--mono-bg); border:1px solid var(--border); border-radius:10px; padding:12px 14px; overflow-x:auto; font-family:"IBM Plex Mono",monospace; font-size:0.76rem; line-height:1.5; margin:10px 0 14px; max-width:100%}
+.sec-note{background:var(--warn-bg); color:var(--warn-fg); border-radius:10px; padding:11px 15px; font-size:0.88rem; margin:14px 0}
+.sec-note p{margin:0; max-width:none}
+.sec-bad{background:var(--bad-bg); color:var(--bad-fg); border-radius:10px; padding:11px 15px; font-size:0.88rem; margin:14px 0}
+.sec-bad p{margin:0 0 8px; max-width:none} .sec-bad p:last-child{margin-bottom:0}
+.qa{margin:14px 0 0; padding-left:12px; border-left:3px solid var(--border)}
+.qa .q{font-weight:600; color:var(--ink); margin:0 0 4px; max-width:none}
+.qa .a p{margin:0 0 8px; max-width:none}
+.qa .a{font-size:0.93rem; min-width:0}
+h2[id],h3[id],.station[id]{scroll-margin-top:16px}
+td code,th code{font-size:0.8em}
+.footnote{font-size:0.8rem; color:var(--fg-dim); border-top:1px solid var(--border); margin-top:60px; padding-top:18px}
+.sev{display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:0.62rem; text-transform:uppercase; letter-spacing:0.04em; padding:1px 7px; border-radius:99px; white-space:nowrap}
+.sev.alta{background:var(--bad-bg); color:var(--bad-fg)} .sev.media{background:var(--warn-bg); color:var(--warn-fg)} .sev.baja{border:1px solid var(--border); color:var(--fg-dim)}
+.flow{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin:12px 0 18px; font-size:0.82rem}
+.flow .chip{border:1.5px solid var(--border); background:var(--surface); border-radius:8px; padding:6px 10px; min-width:0}
+.flow .chip.persona{border-color:var(--actor-persona)} .flow .chip.script{border-color:var(--actor-script)} .flow .chip.db{border-color:var(--actor-db)}
+.flow .ar{color:var(--fg-dim)}
+.actor-legend{display:flex; flex-wrap:wrap; gap:16px; font-size:0.82rem; color:var(--fg-dim); margin:6px 0 20px}
+.actor-legend span{display:inline-flex; align-items:center; gap:7px}
+.dot{width:11px; height:11px; border-radius:50%; display:inline-block}
+.dot.persona{background:var(--actor-persona)} .dot.script{background:var(--actor-script)} .dot.db{background:var(--actor-db)}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <p class="kicker">Tutorial QuestMasters · parte 3 de varias</p>
+  <h1>Cómo se mide una historia sin leerla: la Fase 2</h1>
+  <p class="subtitle">La Fase 1 dejó 54 campañas (75,600 turnos) guardadas. La <strong>Fase 2</strong> convierte ese texto en números y decide qué sistema, G1 (multiagente) o G2 (monolítico), fue mejor y con qué confianza. Aquí se explica qué instrumentos miden, cómo se comprobó que miden lo que dicen, qué pruebas estadísticas se aplican, qué salió y qué no se puede afirmar todavía, para alguien que no sabe nada de D&amp;D ni de estadística. Al final hay una relectura como auditor metodológico muy estricto.</p>
+
+  <nav class="toc" aria-label="Secciones">
+    <a href="#vocab">Vocabulario</a>
+    <a href="#mapa">Mapa</a>
+    <a href="#extraer">1 Extraer</a>
+    <a href="#normalizar">2 Normalizar</a>
+    <a href="#instrumentos">3 Instrumentos</a>
+    <a href="#sensibilidad">4 Validar</a>
+    <a href="#humanas">5 Auditorías</a>
+    <a href="#pares">6 H1d–H1f</a>
+    <a href="#page">7 H1a–H1c</a>
+    <a href="#km">8 Supervivencia</a>
+    <a href="#resultados">9 Resultados</a>
+    <a href="#repro">10 Reproducir</a>
+    <a href="#auditoria">Auditoría</a>
+  </nav>
+
+  <div class="lede">
+    <p><strong>Una frase:</strong> la Fase 2 toma las transcripciones y la base de datos de la Fase 1, calcula con programas <em>sin modelo de lenguaje</em> decenas de indicadores por campaña, comprueba que esos indicadores reaccionan cuando se les daña el texto a propósito, y compara los dos sistemas con estadística de muestras pareadas (27 parejas). No genera texto nuevo: solo lee y cuenta.</p>
+    <p><strong>Cómo se etiquetan las afirmaciones:</strong> <span class="tag-doc">Documentado</span> sale del código, de los reportes generados (<code>docs/reportes/</code>, <code>docs/resultados/resultados_tesis.md</code>) o de la tesis, con el archivo que lo respalda. <span class="tag-mine">Mi análisis</span> es razonamiento mío, incluidas las críticas; no está escrito en el proyecto y conviene que lo verifiques.</p>
+    <p><strong>Contexto que cambia todo:</strong> <span class="tag-doc">Documentado</span> la tesis afirma que G1 es mejor en coherencia narrativa. Esta fase es la que puede sostener o tumbar esa afirmación, así que su rigor pesa más que el de cualquier otra.</p>
+  </div>
+
+  <h2 id="vocab">Vocabulario nuevo, sin miedo a preguntar</h2>
+  <p>Se dan por sabidos los términos de las partes 1 y 2 (JSON, tabla, LLM, brazo, par, turno, delta…). Aquí van los que aparecen por primera vez.</p>
+  <div class="glossary-grid">
+    <div class="gterm"><div class="word">Instrumento (de medición)</div><div class="def">Un programa que recibe texto o datos de una campaña y devuelve un número. Aquí todos son deterministas: el mismo texto da siempre el mismo número.</div></div>
+    <div class="gterm"><div class="word">Indicador</div><div class="def">Lo que se quiere medir (p. ej. «el narrador responde a lo que hizo el jugador»). Un indicador puede tener varios instrumentos.</div></div>
+    <div class="gterm"><div class="word">Constructo / validez de constructo</div><div class="def">Constructo es la idea abstracta («coherencia»). Validez de constructo es la pregunta: ¿este número mide de verdad esa idea o solo algo parecido?</div></div>
+    <div class="gterm"><div class="word">Proxy</div><div class="def">Medida indirecta que se usa como sustituto de algo que no se puede medir directo (p. ej. «repite nombres» como sustituto de «mantiene identidades»).</div></div>
+    <div class="gterm"><div class="word">Hipótesis H1a…H1f</div><div class="def">Afirmaciones que la tesis pone a prueba. H1a–H1c: cuánto se degrada G2 al avanzar la campaña. H1d–H1f: si G1 supera a G2 en coherencia reactiva (d), longitudinal (e) y calidad emergente (f).</div></div>
+    <div class="gterm"><div class="word">Confirmatorio / exploratorio / descriptivo</div><div class="def">Tres usos de un indicador. Confirmatorio: se decidió antes de ver datos que cuenta para aceptar o rechazar la hipótesis. Exploratorio: se reporta pero no decide. Descriptivo: solo describe.</div></div>
+    <div class="gterm"><div class="word">Prueba de sensibilidad (A2)</div><div class="def">Se le daña el texto a propósito de un modo conocido (p. ej. se mezclan turnos de otra campaña) y se comprueba que el instrumento cambia en la dirección esperada. Si no reacciona, no sirve para detectar ese defecto.</div></div>
+    <div class="gterm"><div class="word">Perturbación</div><div class="def">Cada daño controlado: reordenar oraciones, quitar tildes, cambiar sinónimos, insertar texto de otro par, etc. Se identifican con códigos como P5, P8, P9, X1, W1.</div></div>
+    <div class="gterm"><div class="word">Hash SHA-256</div><div class="def">Huella digital de un archivo: cualquier cambio, aunque sea de una coma, cambia la huella. Se usa para demostrar que lo pre-especificado no se modificó tras ver resultados.</div></div>
+    <div class="gterm"><div class="word">Pre-especificación</div><div class="def">Escribir y fijar (con hash) qué se espera y cómo se decidirá <em>antes</em> de mirar los resultados, para no elegir después lo que conviene.</div></div>
+    <div class="gterm"><div class="word">Pareado</div><div class="def">Comparar G1 con G2 dentro de cada par (mismo escenario) y trabajar con la <em>diferencia</em> G1−G2 por par. Elimina lo que es propio del escenario.</div></div>
+    <div class="gterm"><div class="word">Wilcoxon de rangos con signo (exacto)</div><div class="def">Prueba que pregunta si las diferencias por par tienden a un mismo signo, usando su orden y no su valor. «Exacto» significa que calcula la probabilidad enumerando todos los casos posibles, no con una aproximación.</div></div>
+    <div class="gterm"><div class="word">Hodges–Lehmann (HL)</div><div class="def">Estimación de la diferencia «típica» entre sistemas, robusta a valores extremos; se acompaña de un intervalo de confianza.</div></div>
+    <div class="gterm"><div class="word">Correlación biserial por rangos (r)</div><div class="def">Tamaño de efecto de −1 a +1: +1 = G1 mayor en todos los pares; −1 = G2 mayor en todos; 0 = mitad y mitad.</div></div>
+    <div class="gterm"><div class="word">Delta de Cliff</div><div class="def">Otro tamaño de efecto: probabilidad de que un valor de un grupo sea mayor que uno del otro, menos la inversa. Se usa en las pruebas de sensibilidad (umbral 0.147 = efecto pequeño).</div></div>
+    <div class="gterm"><div class="word">Holm</div><div class="def">Corrección por comparaciones múltiples: si haces muchas pruebas, algunas salen «significativas» por azar; Holm endurece el umbral para compensarlo.</div></div>
+    <div class="gterm"><div class="word">Valor p / α = 0.05</div><div class="def">Probabilidad de ver una diferencia igual o mayor si en realidad no hubiera ninguna. Por convención se llama «significativa» si p &lt; 0.05.</div></div>
+    <div class="gterm"><div class="word">Potencia (G*Power)</div><div class="def">Probabilidad de detectar un efecto real de un tamaño dado. La tesis calcula ≈ 0.81 con 27 pares para un efecto mediano.</div></div>
+    <div class="gterm"><div class="word">Prueba de tendencia de Page</div><div class="def">Prueba para ver si una medida sube (o baja) de forma consistente a lo largo de bloques ordenados (aquí 7 bloques de 200 turnos) en los mismos sujetos.</div></div>
+    <div class="gterm"><div class="word">Kaplan–Meier, log-rank, censura</div><div class="def">Kaplan–Meier estima «qué fracción de campañas aún no ha tenido el evento» turno a turno. Censura: campañas que llegaron al turno 1,400 sin el evento (no se sabe cuándo habría ocurrido). Log-rank compara dos curvas.</div></div>
+    <div class="gterm"><div class="word">Intervalo de Wilson</div><div class="def">Intervalo de confianza para una proporción (p. ej. 55 aciertos de 215), mejor comportado que el intervalo simple cuando la proporción es pequeña o grande.</div></div>
+    <div class="gterm"><div class="word">Kappa (κ), PABAK, AC1</div><div class="def">Medidas de acuerdo entre dos o más evaluadores corregidas por el acuerdo que habría por azar. PABAK y AC1 son variantes que no se distorsionan cuando una categoría es muy rara.</div></div>
+    <div class="gterm"><div class="word">Precisión / recall</div><div class="def">De todo lo que el detector marcó, cuánto era realmente cierto (precisión). De todo lo cierto que había, cuánto marcó (recall).</div></div>
+    <div class="gterm"><div class="word">Lema / lematizar</div><div class="def">La forma base de una palabra («corrió», «corren» → «correr»). Permite comparar textos sin que la conjugación estorbe.</div></div>
+    <div class="gterm"><div class="word">spaCy</div><div class="def">Biblioteca de Python que analiza texto en español (separa palabras, saca lemas, etiqueta gramática). Modelo usado: <code>es_core_news_sm</code> 3.8.0.</div></div>
+    <div class="gterm"><div class="word">LanguageTool</div><div class="def">Corrector gramatical y ortográfico de código abierto (requiere Java). Cuenta errores por texto.</div></div>
+    <div class="gterm"><div class="word">TF-IDF y coseno</div><div class="def">TF-IDF pondera las palabras por lo raras que son en el conjunto (una palabra común pesa poco). Coseno mide qué tan parecidos son dos textos como vectores, de 0 (nada en común) a 1 (idénticos).</div></div>
+    <div class="gterm"><div class="word">Solapamiento de Ochiai y nulo por permutación</div><div class="def">Ochiai: cuánto comparten dos conjuntos de lemas. Nulo por permutación: para saber si un solapamiento es alto <em>de verdad</em>, se calcula cuánto solapamiento habría con turnos elegidos al azar y se expresa como puntaje z (cuántas desviaciones por encima del azar).</div></div>
+    <div class="gterm"><div class="word">TTR, MTLD, MATTR</div><div class="def">Medidas de diversidad de vocabulario. TTR (tipos/palabras) depende de la longitud del texto; MTLD y MATTR están diseñadas para no depender de ella.</div></div>
+    <div class="gterm"><div class="word">Legibilidad (Fernández-Huerta, Szigriszt-Pazos)</div><div class="def">Fórmulas que estiman lo fácil o difícil que es leer un texto en español según longitud de palabras y oraciones. Miden complejidad, no calidad.</div></div>
+    <div class="gterm"><div class="word">Léxico cerrado / detector congelado</div><div class="def">Detector que solo busca una lista fija de palabras y frases. «Congelado» = la lista y las reglas se fijaron con hash y ya no se tocan.</div></div>
+    <div class="gterm"><div class="word">Jericho-QA, relojes</div><div class="def">Jericho-QA: prueba de si la narración menciona los cambios de estado que el sistema registró (un PNJ murió, cambió de actitud). Relojes: cuentas regresivas del mundo (un ritual, un asedio) que el motor avanza de forma determinista.</div></div>
+    <div class="gterm"><div class="word">PNJ (personaje no jugador)</div><div class="def">Personaje del mundo controlado por el narrador. «PNJ inactivo» = uno que el sistema tiene registrado como muerto o desaparecido.</div></div>
+    <div class="gterm"><div class="word">Usurpación de agencia (persona2)</div><div class="def">Que el narrador decida por el jugador lo que este piensa, siente, dice o decide («tú sientes miedo»). En rol de mesa se considera una falta porque le quita la libertad al jugador.</div></div>
+    <div class="gterm"><div class="word">Normalización</div><div class="def">Limpiar el texto de G1 de marcas de formato propias (etiquetas «narrativa/mecánica», líneas de tiradas) para que los instrumentos lo vean igual que el de G2.</div></div>
+    <div class="gterm"><div class="word">Bloque</div><div class="def">Tramo de 200 turnos consecutivos; una campaña de 1,400 turnos tiene 7 bloques.</div></div>
+    <div class="gterm"><div class="word">Relativización por exposición</div><div class="def">Dividir por «cuántas oportunidades hubo de que ocurriera». Ejemplo: que se mencione a un muerto solo puede pasar si ya hay muertos; contar por turno sin más castiga a las campañas más largas en mortalidad.</div></div>
+    <div class="gterm"><div class="word">Lote</div><div class="def">Grupo de pares generados con la misma versión del motor: Par01–17 (motor antiguo) y Par18–27 (motor con relojes, dados de combate y guardia de metamensajes).</div></div>
+  </div>
+
+  <h2 id="mapa">Mapa de la Fase 2: qué entra, qué sale</h2>
+  <div class="actor-legend">
+    <span><i class="dot persona"></i> Persona (evaluador humano)</span>
+    <span><i class="dot script"></i> Código sin modelo (instrumentos y estadística)</span>
+    <span><i class="dot db"></i> Base de datos o archivo de datos</span>
+  </div>
+  <div class="flow" aria-label="Orden de las estaciones de la Fase 2">
+    <span class="chip db">1 Postgres + flags</span><span class="ar">→</span>
+    <span class="chip script">2 Normalizar G1</span><span class="ar">→</span>
+    <span class="chip script">3 Instrumentos</span><span class="ar">→</span>
+    <span class="chip db">CSV por campaña</span><span class="ar">→</span>
+    <span class="chip script">4 Validar por perturbación</span><span class="ar">→</span>
+    <span class="chip persona">5 Auditoría humana</span><span class="ar">→</span>
+    <span class="chip script">6–8 Estadística</span><span class="ar">→</span>
+    <span class="chip db">9 Tablas del cap. 6</span>
+  </div>
+  <p><span class="tag-doc">Documentado</span> Entra: las 54 campañas de la base (<code>turn_log</code>, <code>turn_validation</code>, <code>npcs</code>, <code>state_deltas</code>). Sale: archivos CSV en <code>datos_v2/</code>, reportes en <code>docs/reportes/</code>, y <code>docs/resultados/resultados_tesis.md</code> con las Tablas 3–13 que alimentan el capítulo 6 de la tesis. El plan (<code>plan-cierre-investigacion.md</code>) ubica aquí el «análisis determinista» y deja la redacción para la Fase 3.</p>
+  <div class="sec-note"><p><span class="tag-mine">Mi análisis</span> Idea para leer todo lo demás: la Fase 2 tiene tres capas que se pueden romper por separado. (1) ¿Los números se calculan bien? (fidelidad, normalización). (2) ¿Miden lo que dicen? (validez, sensibilidad, auditorías humanas). (3) ¿La comparación estadística es la adecuada? Un resultado impecable en la capa 3 no compensa un instrumento inválido en la capa 2; la sección de auditoría se ordena así.</p></div>
+
+  <div class="station" id="extraer">
+    <div class="station-head"><span class="station-num">1</span><span class="station-title">Extraer los datos y recalcular las banderas</span><span class="actor-tag db">Postgres → CSV</span></div>
+    <p class="station-lead">Se leen de la base los turnos de cada campaña y se recalculan, sobre el texto ya limpio, las banderas de validación que el motor guardó durante la generación.</p>
+    <dl class="spec">
+      <dt>Qué es</dt><dd>Durante la Fase 1 cada turno se guardó con un conjunto de banderas (<code>turn_validation</code>, entre ellas el conteo de nombres no reconocidos). Esas banderas se calcularon <em>durante</em> la generación y sobre el texto crudo. La Fase 2 las <strong>recalcula</strong> a posteriori, sobre el texto normalizado, con la misma lógica, y las guarda en <code>datos_v2/*.csv</code>.</dd>
+      <dt>Tecnología</dt><dd>Python (<code>scripts/reporte_v2/</code>: <code>pares.py</code>, <code>comparar_v1_v2.py</code>, <code>consolidar.py</code>, <code>resultados_tesis.py</code>, <code>medidas_cierre.py</code>), consultas SQL de solo lectura (SELECT) a Postgres, CSV como formato de intercambio.</dd>
+      <dt>De dónde a dónde</dt><dd>De las tablas <code>turn_log</code> y <code>turn_validation</code> (más <code>npcs</code>, <code>state_deltas</code>) a archivos CSV por campaña y a un consolidado (<code>docs/reportes/consolidado_v2.csv</code>).</dd>
+      <dt>Por qué así</dt><dd><span class="tag-doc">Documentado</span> Recalcular sobre texto normalizado evita que el formato propio de G1 (etiquetas y línea mecánica) contamine el resultado; y guardar todo en CSV permite reproducir sin volver a tocar la base.</dd>
+      <dt>En base a qué</dt><dd><span class="tag-doc">Documentado</span> Tesis 5.7.4 y <code>plan-cierre-investigacion.md</code>; el listado de parejas está en <code>pares.py</code> (<code>todos()</code> devuelve las 27; <code>datos.cargar_pares()</code> solo devuelve Par07–27 y de él depende la muestra de sensibilidad).</dd>
+      <dt>Por qué no otra</dt><dd>Usar las banderas guardadas tal cual: mezclarían el efecto del formato con el de la arquitectura. Volver a llamar a un modelo para «evaluar» la coherencia: introduciría variabilidad y un juez no determinista; la tesis eligió instrumentos deterministas para poder validarlos.</dd>
+    </dl>
+    <div class="qa"><p class="q">¿Cómo sé que el recálculo no cambió los números por accidente?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Hay un <em>test de fidelidad</em> (<code>scripts/sensibilidad/fidelidad.py</code>): se recalculan 300 + 92 turnos y se compara con lo guardado; el resultado registrado es <strong>0 discrepancias</strong>. Además, en Par01–06 (G2), 42 de 8,400 turnos difieren en el conteo de nombres no reconocidos entre el valor guardado y el recalculado; el reporte dice «sin efecto material».</p></div></div>
+    <div class="qa"><p class="q">¿Cuántos turnos entran por campaña?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Se recorta a 1,400 (<code>HASTA</code>). Par02-G2 tiene 1,668 turnos en la base y se corta en 1,400; por eso 27 × 2 × 1,400 = 75,600.</p></div></div>
+  </div>
+
+  <div class="station" id="normalizar">
+    <div class="station-head"><span class="station-num">2</span><span class="station-title">Normalizar el texto de G1</span><span class="actor-tag script">Código</span></div>
+    <p class="station-lead">Antes de medir, se le quitan a G1 las marcas de formato que G2 no tiene, para que los instrumentos vean el mismo tipo de texto en ambos brazos.</p>
+    <dl class="spec">
+      <dt>Qué es</dt><dd>G1 produce el turno con etiquetas («narrativa», «mecánica», «presión») y líneas de tiradas de dados; G2 produce prosa. <code>scripts/reporte_v2/normalizacion.py</code> quita esas etiquetas y líneas de tirada del texto de G1.</dd>
+      <dt>Por qué así</dt><dd>Sin esto, un contador de palabras o de nombres vería «mecánica: tirada de Sigilo…» como parte de la narración y el instrumento CR-2 quedaría saturado en G1 por la línea mecánica (la propia ficha lo señala).</dd>
+      <dt>En base a qué</dt><dd><span class="tag-doc">Documentado</span> Ficha de instrumentos, <code>resultados_tesis.md</code> §0 y §8 («formato de salida distinto, normalizado aquí»).</dd>
+      <dt>Por qué no otra</dt><dd>Normalizar los <em>dos</em> brazos a un formato mínimo común: más simétrico, pero no se hizo (ver hallazgo de auditoría 8). No normalizar: contamina.</dd>
+    </dl>
+    <div class="sec-note"><p><span class="tag-mine">Mi análisis</span> Aun normalizado, G1 escribe turnos mucho más largos: mediana 158 palabras contra 116 en G2 (Tabla 13). Esa diferencia de longitud es un confusor para varios indicadores (TTR, bigramas, «nombres no reconocidos» por turno) y por eso se agregaron controles a 100 palabras, MTLD y MATTR.</p></div>
+  </div>
+
+  <div class="station" id="instrumentos">
+    <div class="station-head"><span class="station-num">3</span><span class="station-title">Los instrumentos: qué mide cada uno y qué no</span><span class="actor-tag script">Código</span></div>
+    <p class="station-lead">La rúbrica de la tesis tiene seis familias de indicadores. Cada una se traduce a uno o varios instrumentos automáticos. Aquí se explican en lenguaje llano; la tabla resume qué uso tiene cada uno.</p>
+    <p><span class="tag-doc">Documentado</span> Las siglas vienen de la tesis (Tabla 1): <strong>CR</strong> = coherencia reactiva (¿responde bien a lo inmediato?), <strong>CL</strong> = coherencia longitudinal (¿se mantiene consistente en el tiempo?), <strong>QN</strong> = calidad narrativa emergente (¿la historia es buena de leer y respeta al jugador?). El «1» y el «2» distinguen sub-indicadores.</p>
+
+    <dl class="spec">
+      <dt>CR-1 · gramática</dt><dd><strong>Qué:</strong> proporción de texto sin errores según LanguageTool en 1 de cada 10 turnos, y «pifia narrada como éxito» (el dado dio 1 pero la narración dice que salió bien). También la fracción de turnos con caracteres de otro alfabeto o el carácter de reemplazo U+FFFD (síntoma de fallo de codificación o de idioma). <strong>Límite:</strong> el techo está en ≈ 0.999, casi no discrimina; «pifia como éxito» ignora la negación («no logras…») y ronda 0.1 %. Uso: descriptivo, no decide.</dd>
+      <dt>CR-2a · responde a la acción</dt><dd><strong>Qué:</strong> ¿la narración habla de lo que el jugador acaba de intentar? Se comparan los lemas de la acción del jugador con los de la narración (solapamiento de Ochiai) y ese valor se contrasta con el que se obtendría con turnos elegidos al azar (nulo por permutación) para obtener un puntaje <strong>z</strong>. <strong>Por qué z y no el crudo:</strong> el solapamiento crudo depende de cuán larga o genérica sea la acción y la narración; z pregunta «más que el azar». <strong>Uso: confirmatorio</strong> (el único de H1d).</dd>
+      <dt>CR-2b · anclaje al escenario</dt><dd><strong>Qué:</strong> similitud (coseno TF-IDF, ventana de 8 turnos) entre la narración y la descripción del escenario del par. También una variante sin nombres propios. <strong>Límite:</strong> no distingue deriva de evolución legítima del mundo; el peso idf depende del conjunto de campañas; la variante sin nombres queda casi plana (la señal la sostienen los nombres). Uso: exploratorio.</dd>
+      <dt>CR-2 · nombres no reconocidos</dt><dd><strong>Qué:</strong> cuántos nombres propios aparecen en un turno que no estaban en la base de entidades. <strong>Límite:</strong> no separa «nombre inventado» de «PNJ nuevo legítimo»; en la versión v1 quedaba saturado en G1 por la línea mecánica (por eso se normaliza). Uso: exploratorio.</dd>
+      <dt>CL-1 · identidad de entidades</dt><dd><strong>Qué:</strong> variantes de las métricas de Papalampidi (entidades que se mantienen, <strong>C</strong>, y atributos que se mantienen, <strong>V</strong>) y una tasa de correferencia de entidades. <strong>Límite:</strong> son proxies de «los personajes siguen siendo los mismos»; no miden voz ni motivación. La correferencia está saturada (≈ 1) y no sirve. Uso: C y V exploratorios; correferencia descriptiva.</dd>
+      <dt>CL-2 · estado del mundo</dt><dd><strong>Qué:</strong> (a) <strong>Jericho-QA</strong>: de los cambios de estado registrados por el motor (muerte, actitud), qué fracción se narra con léxico reconocible. (b) <strong>Relojes</strong>: fracción de relojes del mundo reconocida en la narración. (c) <strong>PNJ inactivo mencionado</strong>: turnos donde se nombra a un PNJ muerto o desaparecido. (d) <strong>PNJ inactivo como sujeto</strong> (solo nombres de una palabra). (e) <strong>Jaccard con la escena anterior</strong>: continuidad léxica. (f) <strong>Ciclos de ubicaciones</strong>. (g) <strong>Turno de la primera mención</strong> de un PNJ no vivo. <strong>Límite:</strong> ver sección 4; varios de estos no discriminan frente al azar. Uso: mayormente exploratorio o descriptivo.</dd>
+      <dt>QN-1 · estilo y variedad</dt><dd><strong>Qué:</strong> TTR, repetición de bigramas, MTLD, MATTR, control a 100 palabras, frases idénticas repetidas ≥ 3 veces, estabilidad de estilo entre bloques, legibilidad (Fernández-Huerta, Szigriszt-Pazos), PNJ y misiones registrados. <strong>Límite:</strong> el TTR y los bigramas por turno dependen de la longitud del turno (G1 158 vs G2 116 palabras), y la diferencia se invierte a igual longitud, por eso existen los controles. La legibilidad mide complejidad, no calidad. Uso: exploratorio o descriptivo.</dd>
+      <dt>QN-2 · usurpación de agencia</dt><dd><strong>Qué:</strong> porcentaje de turnos en que la narración decide por el jugador lo que piensa, siente, dice o decide (categorías: decisión, pensamiento, emoción, habla, más «acción física no declarada», experimental). <strong>Cómo:</strong> detector <code>persona2.py</code> v2b con léxico cerrado, <strong>congelado con SHA-256 el 2026-09-20</strong> (<code>validacion/persona2_congelado.sha256</code>). <strong>Uso: confirmatorio condicionado</strong> (cuenta como confirmatorio solo si se audita su precisión). Es el que sostiene H1f.</dd>
+    </dl>
+    <div class="why-box"><div class="lbl">Por qué instrumentos deterministas y no un juez LLM</div><p><span class="tag-doc">Documentado</span> La tesis quiere que la medición sea reproducible y auditable. Un modelo juez cambia con la versión, la temperatura y el prompt, y comparte sesgos con el modelo que generó el texto (aquí el mismo modelo escribe todo). <span class="tag-mine">Mi análisis</span> El precio es que un programa determinista mide proxies simples: cuenta lemas, no comprende la historia. La honestidad metodológica está en llamarlos proxies y en probar que reaccionan, que es la estación siguiente.</p></div>
+
+    <div class="qa"><p class="q">¿Qué significa que un instrumento sea «confirmatorio» si solo hay uno para H1d y ninguno para H1e?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Tabla 9 de <code>resultados_tesis.md</code>: H1d tiene 1 instrumento confirmatorio (CR-2a z), H1e tiene <strong>0</strong> y H1f tiene 5 (QN-2 total y sus cuatro categorías). <span class="tag-mine">Mi análisis</span> Es una asimetría importante: la coherencia longitudinal, que es el corazón de la hipótesis, se sostiene solo con instrumentos exploratorios. Ver hallazgo 4 de la auditoría.</p></div></div>
+  </div>
+
+  <div class="station" id="sensibilidad">
+    <div class="station-head"><span class="station-num">4</span><span class="station-title">¿Miden lo que dicen? La prueba por perturbación (A2, A4b/c)</span><span class="actor-tag script">Código</span></div>
+    <p class="station-lead">Un termómetro se prueba metiéndolo en agua fría y en agua caliente. Aquí se hace lo mismo: se daña el texto de modos conocidos y se comprueba que el instrumento se mueve como se esperaba, antes de usarlo para comparar sistemas.</p>
+    <dl class="spec">
+      <dt>Qué es</dt><dd>Un arnés (<code>scripts/sensibilidad/</code>: <code>perturbaciones.py</code>, <code>correr_sensibilidad.py</code>, <code>estadistica.py</code>, <code>instrumentos_texto.py</code>) que toma una muestra de turnos, aplica una perturbación y mide antes y después. Las perturbaciones controles (<em>C</em>) no deben cambiar nada (reordenar oraciones, minúsculas, quitar tildes); las que dañan de verdad (<em>P8</em>, <em>X1</em>, <em>X2</em>, <em>W1</em>: sustituir por texto de otro par o de otra parte de la misma campaña) deben bajar el valor.</dd>
+      <dt>Cómo se decide «responde»</dt><dd><span class="tag-doc">Documentado</span> Para cada celda (instrumento × perturbación) se fijó antes la dirección esperada (baja, sube, sin cambio). Aprueba si el arnés dice «responde» (Holm p &lt; 0.05 y |delta de Cliff pareado| ≥ 0.147 en la dirección esperada; para «sin cambio», ninguno de los dos) y, si hay dirección, la mediana de la diferencia supera una magnitud mínima. Las celdas «exacto» exigen diferencia 0 en el 100 % de los pares.</dd>
+      <dt>Pre-especificación</dt><dd><span class="tag-doc">Documentado</span> La matriz de expectativas de CR-2a/CR-2b (<code>a4bc-2</code>) tiene SHA-256 <code>e1570cad…9078744</code>. Derivó de <code>a4bc-1</code> (<code>67e6133a…c0e54e</code>) y <strong>cambió cinco magnitudes mínimas tras una corrida de desarrollo</strong>; ninguna dirección se modificó. La evaluación final se corrió una sola vez (2026-09-20) con semilla de muestreo 20260920. Las expectativas de persona2 tienen su propio hash (<code>3ac6a23c…87</code>).</dd>
+      <dt>Muestra</dt><dd><span class="tag-doc">Documentado</span> CR-2a/b: 10 pares (09, 11, 13, 14, 16, 20, 21, 23, 24, 25), 150 turnos y 60 ventanas de 8 turnos por brazo. La muestra del arnés general sale de <code>datos.cargar_pares()</code> = Par07–27, es decir <strong>no incluye Par01–06</strong>.</dd>
+      <dt>Por qué no otra</dt><dd>Validar contra anotación humana de «coherencia»: más cercano al constructo, pero no existe un estándar humano barato a 75,600 turnos. La perturbación demuestra sensibilidad (¿reacciona?), no validez (¿mide lo correcto?). Son cosas distintas y la tesis debe llamarla por su nombre.</dd>
+    </dl>
+    <h3>Qué salió</h3>
+    <div class="twrap"><table>
+      <tr><th>Instrumento</th><th>Resultado de la prueba</th><th>Lectura</th></tr>
+      <tr><td>CR-2a z (y crudo, CR-2b)</td><td>25 de 26 celdas direccionales aprueban (matriz a4bc-2).</td><td>Sí reacciona a texto ajeno (P8, X1, X2, W1 bajan). Falla algún control «sin cambio» (p. ej. el crudo cambia levemente con minúsculas o sin tildes).</td></tr>
+      <tr><td>Jericho-QA</td><td>Prueba mecánica 80/80 (léxico exacto insertado y quitado). Pero frente al azar: <strong>25.9 % real vs 12.9 %</strong>; ganancia de +21 a +25 puntos porcentuales en <code>npc.status</code> y solo +2 a +4.5 en <code>npc.affinity</code>, que es el 55 % de los eventos.</td><td>Detecta muertes y desapariciones, casi nada de los cambios de actitud.</td></tr>
+      <tr><td>Relojes</td><td>23/23 mecánica, pero <strong>88.3 % real vs 89.8 % por azar</strong>; solo Par18–27.</td><td>No discrimina: el vocabulario reconoce casi cualquier ventana. Por eso queda descriptivo.</td></tr>
+      <tr><td>PNJ inactivo mencionado</td><td>8/8 celdas.</td><td>Sensible, pero mide mención, no acción, y su precisión no se había auditado.</td></tr>
+      <tr><td>Ciclos de ubicaciones, densidad de grafo</td><td>0/2 (no reaccionan, p. ej., a permutar turnos).</td><td>Descartados o descriptivos.</td></tr>
+      <tr><td>persona2 (QN-2)</td><td>Control negativo (INV: lo que no viola la regla no debe marcarse): 4/4. Control positivo (DIR: la misma usurpación en 2.ª y 3.ª persona debe marcarse): <strong>7/10</strong>. Fallan tres celdas de segunda persona: decisión (G1 67.3 %, G2 76.0 %), pensamiento (80.0 % con límite inferior de Wilson 72.9 %) y emoción (71.3 % / 81.3 %).</td><td>El detector encuentra la misma usurpación cuando está escrita en 3.ª persona, pero <strong>pierde parte de las escritas en 2.ª persona</strong> («sientes miedo»). Hay un criterio de aprobación (límite inferior ≥ 0.80) y no se alcanza.</td></tr>
+      <tr><td>TTR, bigramas</td><td>Responden, pero dependen de la longitud del turno.</td><td>Ver controles a 100 palabras, MTLD y MATTR (estos últimos sin celda que detecte un defecto real).</td></tr>
+    </table></div>
+    <div class="why-box"><div class="lbl">Por qué existe la clasificación C / CC / E / D</div><p><span class="tag-doc">Documentado</span> Cada instrumento se clasifica según cuánto respaldo tiene: <strong>C</strong> confirmatorio (validado y decide), <strong>CC</strong> confirmatorio condicionado (decide solo si se audita su precisión), <strong>E</strong> exploratorio (se reporta, no decide) y <strong>D</strong> descriptivo (no usar para comparar). <span class="tag-mine">Mi análisis</span> Es el mecanismo correcto para no dejar que un instrumento débil decida una hipótesis; el peligro está en que el capítulo 6 use luego los mismos conteos de «gana G1» para el resumen general sin recordar la clase (ver hallazgo 5).</p></div>
+  </div>
+
+  <div class="station" id="humanas">
+    <div class="station-head"><span class="station-num">5</span><span class="station-title">Auditorías humanas: comprobar los detectores con personas</span><span class="actor-tag persona">Persona</span></div>
+    <p class="station-lead">Dos detectores no pudieron validarse solo con perturbaciones: el de «PNJ inactivo» (brecha 4) y el de usurpación de agencia (persona2). Para ambos se exige un evaluador humano, y que no sea del equipo investigador.</p>
+    <dl class="spec">
+      <dt>Brecha 4 (PNJ inactivo)</dt><dd><span class="tag-doc">Documentado</span> El detector marca turnos en que se nombra a un PNJ muerto o desaparecido «como si actuara». Está previsto auditarlo con <strong>3 voluntarios externos</strong>. Mide mención, no acción, así que sobreestima.</dd>
+      <dt>persona2</dt><dd><span class="tag-doc">Documentado</span> Sonda de <strong>515 ítems</strong> (acción del jugador + narración del DM) etiquetados a ciegas, sin ver el veredicto del detector, por <strong>un asistente de IA</strong> aplicando el libro de códigos de la herramienta (<code>persona2-auditoria-IA-analisis.md</code>, rotulado «BORRADOR NO VALIDADO»): 55 verdaderos positivos, 160 falsos positivos, 274 verdaderos negativos y 26 falsos negativos; <strong>precisión 0.256</strong> (IC 95 % de Wilson 0.202–0.318) y <strong>recall 0.679</strong> (0.571–0.771). Por categoría, entre lo que el detector marcó: cognición 56.7 % confirmado, volición 19.4 %, emoción 18.9 %, acción no declarada 17.5 % y <strong>habla 4.3 %</strong> (casi todo lo marcado como «habla del jugador» era diálogo de un PNJ). El etiquetado externo humano de un subconjunto de 102 ítems (contenido en los 515) está <strong>pendiente</strong>.</dd>
+      <dt>Por qué externo</dt><dd><span class="tag-doc">Documentado</span> La evaluación del proyecto (§14) corrigió un plan que ponía a Luis, coautor de la tesis, como segundo evaluador: es juez y parte. Se necesitan evaluadores externos al equipo; se decidió reutilizar a uno de los voluntarios de la brecha 4 (§16).</dd>
+      <dt>Estadística prevista</dt><dd>Acuerdo entre evaluadores con κ de Cohen (2) o de Fleiss (3+), y PABAK y AC1 por si una categoría es muy rara; intervalos de Wilson para precisión y recall. <span class="tag-doc">Documentado</span> Además, el plan incluye comparar al evaluador externo con la pasada de IA en esos mismos 102 ítems (κ humano vs IA). <span class="tag-mine">Mi análisis</span> Es la elección correcta: κ puro es engañoso cuando casi todo es «no».</dd>
+    </dl>
+    <div class="sec-bad"><p><span class="tag-mine">Mi análisis</span> <strong>Lo que esto implica hoy:</strong> con precisión 0.256, casi tres de cada cuatro turnos que el detector marca como usurpación no lo son según esa primera pasada. H1f (5 instrumentos confirmatorios, todos a favor de G1) descansa sobre ese detector. Y la categoría «habla», que entra a H1f como confirmatoria, tiene solo 4.3 % de aciertos entre lo marcado. Mientras no se conozca la precisión <em>por brazo</em>, no se sabe si esos falsos positivos se reparten parejo o se concentran en G2 (que, según Tabla 13, marca 3.47 % de turnos contra 0.17 % de G1). Si se concentran, la diferencia se infla; si se reparten, el efecto probablemente se sostiene. Con los datos actuales no se puede distinguir.</p></div>
+    <div class="qa"><p class="q">¿Por qué la primera pasada la hizo una IA y qué vale?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Se hizo bajo presión de plazo para tener un avance cuantitativo, y el propio documento dice que no es un evaluador humano y que no debe presentarse como validación. <span class="tag-mine">Mi análisis</span> No es un estándar de oro: es un sistema de IA comparado contra otro detector, sin acuerdo humano-humano. Es útil como alarma y para ordenar la muestra, no como cifra citable en la tesis.</p></div></div>
+    <div class="qa"><p class="q">¿Cómo se armó la muestra de 515 ítems?</p>
+    <div class="a"><p><span class="tag-mine">Mi análisis</span> Que haya 215 marcados y 300 no marcados indica una muestra estratificada por lo que el detector marcó. Precisión y recall calculados así dependen de esa proporción; conviene que el informe diga cómo se muestrearon y con qué ponderación se extrapola. No lo encontré documentado en los archivos que revisé.</p></div></div>
+  </div>
+
+  <div class="station" id="pares">
+    <div class="station-head"><span class="station-num">6</span><span class="station-title">Comparar G1 con G2: H1d, H1e y H1f</span><span class="actor-tag script">Código</span></div>
+    <p class="station-lead">Para cada indicador se obtiene un valor por campaña; luego, dentro de cada par, se resta G1 − G2 y se trabaja con esas 27 diferencias.</p>
+    <dl class="spec">
+      <dt>Qué es</dt><dd><code>scripts/reporte_v2/resultados_tesis.py</code> produce las Tablas 9, 11 y 13 (una por hipótesis) con: medianas y cuartiles de cada brazo, mediana de la diferencia, <strong>Hodges–Lehmann</strong> con IC 95 % por <em>bootstrap</em> de pares, <strong>Wilcoxon de rangos con signo exacto</strong> (bilateral y las dos unilaterales), <strong>r biserial por rangos</strong>, <strong>Holm</strong>, <strong>Shapiro–Wilk</strong> de las diferencias y una columna «Lotes» que avisa si el signo cambia entre Par01–17 y Par18–27.</dd>
+      <dt>Tecnología</dt><dd>Python; SciPy interviene en Shapiro–Wilk y el resto de las pruebas vive en módulos propios (<code>scripts/sensibilidad/estadistica.py</code>, <code>comparar_v1_v2.py</code>). Bootstrap de HL con remuestreo de pares.</dd>
+      <dt>Por qué pareado y no dos muestras</dt><dd><span class="tag-doc">Documentado</span> Cada par comparte escenario, personaje y estilo de jugador; comparar diferencias por par quita la variabilidad entre escenarios. La unidad de análisis es el par, no el turno, porque los turnos dentro de una campaña dependen unos de otros.</dd>
+      <dt>Por qué Wilcoxon y no la prueba t</dt><dd><span class="tag-doc">Documentado</span> Con 27 pares no se asume normalidad; Wilcoxon solo usa el orden. Shapiro–Wilk se reporta como referencia, no como filtro.</dd>
+      <dt>Por qué Holm</dt><dd><span class="tag-doc">Documentado</span> <code>resultados_tesis.py</code>: «Holm dentro de la familia de cada hipótesis, solo entre instrumentos confirmatorios», y se aplica al valor p bilateral. La tesis (5.7) dice que se rechaza la nula cuando el p ajustado es &lt; 0.05 <em>en el sentido de la hipótesis alternativa</em> y, si la dirección es contraria, no se rechaza y se reporta la evidencia opuesta. Los exploratorios no se corrigen: se reportan sin decisión.</dd>
+      <dt>Potencia</dt><dd><span class="tag-doc">Documentado</span> G*Power: N = 27, dz = 0.5, potencia ≈ 0.81; con la eficiencia relativa asintótica de Wilcoxon (3/π ≈ 0.955) la potencia efectiva ronda 0.79. α = 0.05.</dd>
+      <dt>Por qué no otra</dt><dd>ANOVA de medidas repetidas o modelo mixto con turno anidado en campaña: aprovecharía más datos, pero exige supuestos difíciles de defender aquí (autocorrelación entre turnos) y una implementación más difícil de auditar.</dd>
+    </dl>
+    <h3>Lectura de una fila, paso a paso</h3>
+    <p><span class="tag-doc">Documentado</span> Tabla 9, CR-2a z (único confirmatorio de H1d):</p>
+    <div class="twrap"><table>
+      <tr><th>Mediana G1</th><th>Mediana G2</th><th>HL [IC 95 %]</th><th>p bilateral</th><th>p unil. «G1 mejor»</th><th>p unil. «G2 mejor»</th><th>r</th><th>Holm</th></tr>
+      <tr><td>2.70</td><td>2.81</td><td>−0.13 [−0.25, −0.03]</td><td>0.0319</td><td>0.9850</td><td>0.0159</td><td>−0.47</td><td>0.0319</td></tr>
+    </table></div>
+    <p>Se lee así: la diferencia típica G1 − G2 es negativa (G2 responde algo mejor a la acción del jugador) y el intervalo no cruza cero. El p bilateral (0.0319) es significativo a 0.05; como la familia confirmatoria de H1d tiene un solo instrumento, Holm no la modifica. El r = −0.47 es un efecto mediano en la dirección de G2. <span class="tag-mine">Mi análisis</span> Es decir: el único instrumento confirmatorio de H1d va en sentido <em>contrario</em> a la hipótesis de que G1 es mejor.</p>
+    <div class="qa"><p class="q">¿Cómo se entiende «n efectivo»?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Wilcoxon descarta los pares con diferencia exactamente 0. Si un indicador vale 0 en ambos brazos en muchos pares (p. ej. «PNJ inactivo como sujeto»), el n efectivo baja (6 de 27) y la prueba pierde poder; conviene leerlo antes que el p.</p></div></div>
+    <div class="qa"><p class="q">¿Qué es la columna «Lotes»?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Compara el signo del HL en Par01–17 (motor antiguo) y en Par18–27. «⚠ signo distinto» avisa que el efecto cambia de dirección entre lotes, así que el N = 27 podría estar mezclando dos poblaciones. Aparece, por ejemplo, en Jericho, MTLD y estabilidad del TTR.</p></div></div>
+  </div>
+
+  <div class="station" id="page">
+    <div class="station-head"><span class="station-num">7</span><span class="station-title">¿Se degrada G2 con el tiempo? H1a, H1b y H1c</span><span class="actor-tag script">Código</span></div>
+    <p class="station-lead">Estas tres hipótesis no comparan sistemas: preguntan si la calidad de G2 empeora a lo largo de la campaña, tomando los 1,400 turnos en 7 bloques de 200.</p>
+    <dl class="spec">
+      <dt>Qué es</dt><dd>H1a (reactiva): CR-2a z decrece. H1b (longitudinal): «PNJ inactivo mencionado» crece. H1c (calidad): MATTR decrece y persona2 crece. Se evalúa con la <strong>prueba de tendencia de Page (1963)</strong> unilateral sobre las 27 campañas de G2 y, como comprobación, un Wilcoxon exacto bloque 1 vs bloque 7.</dd>
+      <dt>Tecnología</dt><dd><code>scripts/reporte_v2/page_test.py</code>, implementado a mano, sin SciPy. <span class="tag-doc">Documentado</span> Se auto-verifica antes de correr: un caso de juguete perfectamente degradante da p ≈ 0 y una simulación de 3,000 réplicas bajo H0 (n = 27, k = 7) da ≈ 5 % de p &lt; 0.05.</dd>
+      <dt>Por qué Page y no correlación con el tiempo</dt><dd>Page usa el orden de los 7 bloques dentro de cada campaña y solo asume monotonía; es la prueba estándar para tendencia en medidas repetidas ordinales.</dd>
+      <dt>Por qué relativizar (H1b)</dt><dd><span class="tag-doc">Documentado</span> Hacia el final hay más PNJ muertos, así que aumenta mecánicamente la oportunidad de mencionar a un muerto. <code>relativizar_pnj_inactivo.py</code> divide por los turnos del bloque donde ya había al menos un PNJ inactivo visible (reconstruido turno a turno desde <code>npcs</code> y <code>state_deltas</code>). Necesita acceso a la base de datos.</dd>
+    </dl>
+    <div class="twrap"><table>
+      <tr><th>Hipótesis · instrumento</th><th>n</th><th>Page z</th><th>Page p (unil.)</th><th>Wilcoxon p (b1 vs b7)</th><th>Mediana b1 → b7</th></tr>
+      <tr><td>H1a · CR-2a z (confirmatorio)</td><td>27</td><td>0.50</td><td>0.3097</td><td>0.4204</td><td>2.768 → 2.742</td></tr>
+      <tr><td>H1b · PNJ inactivo mencionado, crudo</td><td>27</td><td>1.81</td><td>0.0352</td><td>0.0127</td><td>0.000 → 0.000</td></tr>
+      <tr><td>H1b · PNJ inactivo, relativizado</td><td>10</td><td>0.12</td><td>0.4505</td><td>0.5000</td><td>0.000 → 0.000</td></tr>
+      <tr><td>H1c · MATTR (exploratorio)</td><td>27</td><td>−0.18</td><td>0.5702</td><td>0.5252</td><td>0.828 → 0.828</td></tr>
+      <tr><td>H1c · persona2 primaria (condicionado)</td><td>27</td><td>1.35</td><td>0.0890</td><td>0.0665</td><td>0.030 → 0.035</td></tr>
+    </table></div>
+    <p><span class="tag-doc">Documentado</span> Holm dentro de H1c: MATTR 0.5702 y persona2 0.1780. El reporte concluye que <strong>4 de 5 instrumentos no muestran degradación significativa</strong>; el crudo de PNJ inactivo sí, pero es el confusor previsto y al relativizarlo desaparece (n = 10 campañas con exposición suficiente). También sube significativamente el Jaccard con la escena anterior (p bilateral 0.039), pero no tiene dirección «mejor» definida.</p>
+    <div class="sec-note"><p><span class="tag-mine">Mi análisis</span> El reporte lo dice con franqueza: <em>los datos hasta ahora no confirman de forma robusta la premisa de degradación que motivó la propuesta</em>. Esto pesa: si G2 no se degrada, el argumento «un sistema multiagente ayuda a la coherencia de largo plazo» pierde su motivo. Y con n = 10 en la versión relativizada la ausencia de efecto no prueba que no exista (poca potencia).</p></div>
+  </div>
+
+  <div class="station" id="km">
+    <div class="station-head"><span class="station-num">8</span><span class="station-title">Supervivencia: cuánto tarda en aparecer un PNJ muerto «actuando»</span><span class="actor-tag script">Código</span></div>
+    <p class="station-lead">Otra forma de mirar lo mismo que H1b: en vez de un porcentaje por bloque, ¿en qué turno ocurre <em>por primera vez</em> que se narra a un PNJ no vivo como si actuara?</p>
+    <dl class="spec">
+      <dt>Qué es</dt><dd><code>scripts/reporte_v2/kaplan_meier_pnj.py</code>: curva Kaplan–Meier por brazo y prueba log-rank (Mantel–Haenszel). Evento: primer turno con mención; censura: turno 1,400 si nunca ocurre.</dd>
+      <dt>Resultado</dt><dd><span class="tag-doc">Documentado</span> G1: 16 eventos, 11 censuradas, mediana turno 1,139. G2: 16 eventos, 11 censuradas, mediana turno 891. Log-rank: las 27 parejas χ² = 0.084, p = 0.7718; Par01–17 p = 0.7257; Par18–27 p = 0.4089. Sin diferencia detectable.</dd>
+      <dt>Por qué así</dt><dd>La censura importa: 11 de 27 campañas por brazo nunca tienen el evento en 1,400 turnos. Tratarlas como «cero» o como «1,400» sesgaría; Kaplan–Meier las trata como «no observado aún».</dd>
+      <dt>Límites (los declara el propio reporte)</dt><dd>Mide mención, no acción. El log-rank agrupado trata las 27 parejas de cada brazo como dos muestras independientes y <strong>no aprovecha el pareo</strong>; un log-rank estratificado por par sería más coherente con el resto del análisis y no está implementado.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="resultados">
+    <div class="station-head"><span class="station-num">9</span><span class="station-title">Qué salió, resumido</span><span class="actor-tag db">Tablas</span></div>
+    <p class="station-lead">Cuenta de instrumentos con p bilateral &lt; 0.05 <strong>sin corregir</strong> y dirección respecto de «mejor» (Tabla 7 de <code>resultados_tesis.md</code>). Advertencia del propio reporte: no es la decisión de la docimasia, y un mismo constructo aparece con varios instrumentos correlacionados.</p>
+    <div class="twrap"><table>
+      <tr><th>Hipótesis</th><th>Grupo</th><th>G1 mejor</th><th>G2 mejor</th><th>Sin diferencia</th><th>Total</th></tr>
+      <tr><td>H1d coherencia reactiva</td><td>Confirmatorios</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+      <tr><td>H1d</td><td>Exploratorios</td><td>3</td><td>0</td><td>3</td><td>6</td></tr>
+      <tr><td>H1e coherencia longitudinal</td><td>Confirmatorios</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>H1e</td><td>Exploratorios</td><td>1</td><td>1</td><td>4</td><td>6</td></tr>
+      <tr><td>H1f calidad emergente</td><td>Confirmatorios / condicionados</td><td>5</td><td>0</td><td>0</td><td>5</td></tr>
+      <tr><td>H1f</td><td>Exploratorios</td><td>3</td><td>4</td><td>3</td><td>10</td></tr>
+    </table></div>
+    <h3>Los números que sostienen cada fila</h3>
+    <div class="twrap"><table>
+      <tr><th>Indicador</th><th>G1</th><th>G2</th><th>HL G1−G2 [IC 95 %]</th><th>Lectura</th></tr>
+      <tr><td>H1d · CR-2a z (C)</td><td>2.70</td><td>2.81</td><td>−0.13 [−0.25, −0.03]</td><td>G2 mejor, p = 0.032 (Holm 0.032)</td></tr>
+      <tr><td>H1e · Papalampidi C (E)</td><td>2.17</td><td>1.67</td><td>+0.58 [+0.17, +1.00]</td><td>G1 mejor, p = 0.017</td></tr>
+      <tr><td>H1e · PNJ inactivo mencionado (E)</td><td>3.86 %</td><td>0.21 %</td><td>+4.66 pp [+0.11, +8.86]</td><td>G2 mejor (menos menciones), p = 0.032</td></tr>
+      <tr><td>H1e · Jericho, relojes, primera mención, ciclos</td><td colspan="3">sin diferencia detectable (relojes solo con 4 pares efectivos)</td><td>—</td></tr>
+      <tr><td>H1f · usurpación de agencia, total (CC)</td><td>0.17 %</td><td>3.47 %</td><td>−3.66 pp [−4.87, −2.74]</td><td>G1 mejor, r = −1.00 (todos los pares), Holm &lt; 0.0001</td></tr>
+      <tr><td>H1f · decisión / pensamiento / emoción / habla (CC)</td><td colspan="3">las cuatro a favor de G1, Holm entre 0.0449 y &lt; 0.0001</td><td>consistentes entre lotes</td></tr>
+      <tr><td>H1f · acción física no declarada (E)</td><td>0.68 %</td><td>7.23 %</td><td>−6.27 pp [−6.94, −5.66]</td><td>G1 mejor</td></tr>
+      <tr><td>H1f · frases idénticas repetidas ≥ 3 veces (E)</td><td>1.79 %</td><td>0.00 %</td><td>+1.96 pp [+1.29, +3.43]</td><td>G2 mejor (G1 repite más)</td></tr>
+      <tr><td>H1f · MATTR (E)</td><td>0.824</td><td>0.828</td><td>−0.004 [−0.005, −0.002]</td><td>G2 mejor, aunque diferencia pequeña</td></tr>
+      <tr><td>H1f · TTR a 100 palabras / bigramas a 100 (E)</td><td colspan="3">a favor de G1 en ambos (p = 0.020 y &lt; 0.0001)</td><td>el control de longitud invierte el TTR por turno</td></tr>
+      <tr><td>Palabras por turno · segundos por turno (D)</td><td>158 · 29.8 s</td><td>116 · 14.2 s</td><td>+39 · +16.1 s</td><td>G1 escribe más y tarda el doble</td></tr>
+    </table></div>
+    <div class="why-box"><div class="lbl">Cómo se lee todo junto</div><p><span class="tag-mine">Mi análisis</span> El cuadro no es «G1 gana»: es mixto. G1 gana con claridad en <em>no usurpar al jugador</em> (el único bloque confirmatorio a su favor); G2 gana el único confirmatorio de coherencia reactiva, tiene menos menciones a muertos, repite menos frases y es el doble de rápido; los demás indicadores son ruido o ambiguos. La tesis (4.2) fija la regla: la hipótesis general se sostiene <em>solo si H1d, H1e y H1f se sostienen las tres</em>; en cualquier otro caso se declara no sostenida en su forma general y se reporta por dimensión. Aplicada a estos datos: H1d tiene el único confirmatorio en sentido contrario (no se rechaza la nula, se reporta la evidencia opuesta), H1e no tiene confirmatorios («sin decisión confirmatoria», 5.7) y H1f sí se sostiene, condicionada. La general queda <strong>no sostenida</strong>, y de hecho no podía sostenerse mientras H1e no tenga un instrumento confirmatorio (hallazgo 4). El reporte de degradación todavía habla de una regla «a–f» pendiente con el asesor; esa nota quedó desactualizada frente a la tesis.</p></div>
+  </div>
+
+  <div class="station" id="repro">
+    <div class="station-head"><span class="station-num">10</span><span class="station-title">Reproducir y auditar esta fase</span><span class="actor-tag script">Código</span></div>
+    <p class="station-lead">Un lector externo debería poder repetir los números sin pedirle nada al autor. Esto es lo que hoy lo permite y lo que falta.</p>
+    <dl class="spec">
+      <dt>Lo que sí está</dt><dd><span class="tag-doc">Documentado</span> Semilla de muestreo fija (20260920); versiones impresas en el encabezado de cada reporte (Python 3.14.6, spaCy 3.8.16, <code>es_core_news_sm</code> 3.8.0, commit <code>30b998f</code>); hash SHA-256 de las matrices de expectativas y del detector persona2; datos intermedios en CSV; test de fidelidad; reportes generados con marca de fecha.</dd>
+      <dt>Lo que se puede correr sin base de datos</dt><dd><span class="tag-doc">Documentado</span> <code>page_test.py</code> y <code>resultados_tesis.py</code> leen CSV. En cambio <code>relativizar_pnj_inactivo.py</code>, la extracción y el arnés A2 sí necesitan la base (solo SELECT).</dd>
+      <dt>Lo que falta</dt><dd><span class="tag-mine">Mi análisis</span> (i) Fijar versiones de LanguageTool y de Java, que no vi registradas. (ii) Un comando único que regenere todo el capítulo 6 desde los CSV. (iii) Publicar los CSV (<code>datos_v2/</code>) o un depósito con DOI para que la tesis pueda citarlos. (iv) Corregir docstrings desactualizados en <code>consolidar.py</code> y <code>comparar_v1_v2.py</code> (dicen n = 21 y 42 campañas).</dd>
+    </dl>
+  </div>
+
+  <h2 id="auditoria">Relectura como auditor metodológico estricto</h2>
+  <div class="lede">
+    <p><strong>Perfil del lector:</strong> conoce metodología, estadística y arquitectura de software; no sabe nada de D&amp;D; no acepta términos sin definir, causas sin evidencia, ni conclusiones que dependan de un instrumento no validado. Lo que sigue es lo que marcaría con rojo, con gravedad, evidencia y qué hacer antes de la sustentación.</p>
+    <p><span class="tag-mine">Mi análisis</span> Las cifras salen de los reportes generados (<code>resultados_tesis.md</code>, <code>degradacion_bloques.md</code>, <code>kaplan_meier_pnj.md</code>, <code>persona2_equivalencia.md</code>, <code>sensibilidad_a4bc.md</code>) y de leer los scripts; no volví a ejecutar el análisis. Antes de citar cualquier número en la tesis, regenerarlo con el comando del repositorio.</p>
+  </div>
+
+  <h3>A. Lo que dice la tesis frente a lo que hace el código o dicen los reportes</h3>
+  <div class="twrap"><table>
+    <tr><th>#</th><th>Hallazgo</th><th>Gravedad</th><th>Qué hacer</th></tr>
+    <tr><td>1</td><td>La tesis dice que ambos brazos reciben «la misma secuencia de tiradas». En el código la semilla de los dados es <code>sha256(campaign_id | turno | etiqueta | intento)</code> y cada brazo es una campaña con su propio <code>campaign_id</code> (<code>vertical_slice.py</code> y <code>vertical_slice_g1.py</code> pasan <code>str(camp.campaign_id)</code>). Además la etiqueta la elige el jugador LLM, que responde a lo que cada brazo narró. El docstring de <code>dados.py</code> afirma lo mismo («comparten campaign_id») y es falso.</td><td><span class="sev alta">alta</span></td><td>Quitar la frase de la tesis y corregir el docstring. Redactar: «las tiradas son deterministas por campaña y turno, pero no idénticas entre brazos». Es el mismo hallazgo que ya figura en la Fase 1.</td></tr>
+    <tr><td>2</td><td>La tesis dice que la huella del modelo se verificó «antes de cada tanda». El repositorio contiene un solo manifiesto (<code>entorno/manifiesto_2026-08-28.json</code>) y ningún script de generación invoca <code>verificar_modelo.py</code>.</td><td><span class="sev media">media</span></td><td>O aportar las verificaciones por tanda, o reformular a «se verificó una vez el 2026-08-28».</td></tr>
+    <tr><td>3</td><td>La tesis menciona «registro de llamadas al modelo por rol»; la tabla <code>model_calls</code> existe pero no se escribe.</td><td><span class="sev media">media</span></td><td>Reformular: el único registro son las bitácoras de texto.</td></tr>
+    <tr><td>4</td><td><strong>H1e no tiene ningún instrumento confirmatorio</strong> (Tabla 7: 0; H1d tiene 1 y H1f 5). La tesis lo prevé («sin decisión confirmatoria», 5.7), pero la regla de 4.2 exige que <em>las tres</em> H1d, H1e y H1f se sostengan para sostener la hipótesis general. Consecuencia lógica: con H1e sin decisión confirmatoria, la hipótesis general <strong>no puede sostenerse por construcción</strong>, se obtengan los datos que se obtengan. Y H1e (coherencia longitudinal) es la dimensión que motivó la propuesta.</td><td><span class="sev alta">alta</span></td><td>Decirlo con claridad en la tesis: la conclusión general será «no sostenida», no por evidencia en contra sino por falta de un instrumento confirmatorio longitudinal. O promover un instrumento validado (p. ej. uno de CL-1/CL-2 con su prueba de sensibilidad) antes de mirar más resultados.</td></tr>
+    <tr><td>5</td><td>Los docstrings de <code>consolidar.py</code> y <code>comparar_v1_v2.py</code> siguen hablando de n = 21 y 42 campañas.</td><td><span class="sev baja">baja</span></td><td>Actualizar a 27 pares y 54 campañas.</td></tr>
+  </table></div>
+
+  <h3>B. Amenazas a la validez y a la inferencia</h3>
+  <div class="twrap"><table>
+    <tr><th>#</th><th>Tipo</th><th>Amenaza</th><th>Gravedad</th><th>Mitigación posible</th></tr>
+    <tr><td>6</td><td>Constructo</td><td><strong>H1f descansa en persona2.</strong> Precisión 0.256 en una primera pasada hecha por IA (55 TP / 160 FP), recall 0.679, con la categoría «habla» en 4.3 % de aciertos entre lo marcado (sobre todo diálogo de PNJ), sin etiquetado humano externo todavía (102 ítems pendientes), sin precisión por brazo, y con 3 de 10 celdas de sensibilidad de segunda persona sin aprobar (67–81 % de detección). El detector fue diseñado mirando cómo narra el DM (2.ª persona, según su docstring), no se sabe si el estilo de G1 lo evade o lo activa distinto.</td><td><span class="sev alta">alta</span></td><td>Cerrar la auditoría externa antes de citar H1f como confirmada; reportar precisión y recall <em>por brazo</em> con IC de Wilson; presentar H1f «condicionada» en el texto hasta entonces.</td></tr>
+    <tr><td>7</td><td>Constructo</td><td><strong>Los instrumentos de coherencia reactiva se contradicen.</strong> CR-2a en z favorece a G2 (HL −0.13, r −0.47, p = 0.032); CR-2a crudo favorece a G1 (+0.011, r +0.84, p &lt; 0.0001) y CR-2b anclaje también (+0.059, r +0.83). El crudo depende de la longitud (G1 158 palabras vs 116) y z lo corrige contra el azar, pero eso significa que la dirección del único resultado confirmatorio depende de una decisión de operacionalización.</td><td><span class="sev alta">alta</span></td><td>Documentar por qué z es el confirmatorio y cuándo se fijó esa elección respecto de ver las diferencias G1−G2; reportar la discordancia explícitamente en el capítulo 6 y discutirla; considerar un análisis con longitud fija (ventanas de igual tamaño).</td></tr>
+    <tr><td>8</td><td>Confusor</td><td>Solo G1 se normaliza (se le quitan etiquetas y líneas mecánicas). Se asume que tras esa limpieza el texto es comparable; no hay una prueba de que un lector ciego no distinga el brazo por el formato.</td><td><span class="sev media">media</span></td><td>Sensibilidad: repetir los indicadores clave sobre una normalización simétrica; o una prueba a ciegas de «adivinar el brazo».</td></tr>
+    <tr><td>9</td><td>Confusor</td><td>Longitud del turno: G1 escribe 158 palabras vs 116 y tarda 29.8 s vs 14.2 s. Varios indicadores dependen de la longitud; solo algunos tienen control a 100 palabras (excluye a más turnos de G2: 82 % de sus turnos llegan a 100 palabras contra 99.9 % de G1).</td><td><span class="sev media">media</span></td><td>Reportar la longitud como covariable de cada resultado; para persona2 y nombres no reconocidos, tasas por 100 palabras como análisis de robustez.</td></tr>
+    <tr><td>10</td><td>Interna</td><td><strong>Corpus no homogéneo:</strong> Par01–17 con un motor y Par18–27 con otro (relojes, dados de combate, guardia de metamensajes). «⚠ signo distinto» aparece en Jericho, MTLD, estabilidad de TTR y nombres no reconocidos.</td><td><span class="sev alta">alta</span></td><td>Reportar siempre el análisis por lote junto al agregado, y declarar que N = 27 mezcla dos versiones del motor.</td></tr>
+    <tr><td>11</td><td>Interna</td><td>Independencia entre pares: mismo modelo, mismo proveedor, corridas concurrentes (la ficha lo señala para el tiempo por turno). Si la carga o el estado del proveedor varió por tanda, podría inducir correlación entre pares.</td><td><span class="sev media">media</span></td><td>Declarar el supuesto; comparar por lote y por tanda para descartar efecto de proveedor.</td></tr>
+    <tr><td>12</td><td>Estadística</td><td>Solo se corrige (Holm) dentro de las familias confirmatorias. Hay 22 instrumentos exploratorios en H1d–H1f con p sin corregir; con α = 0.05 se esperaría ≈ 1 «significativo» por azar. La tabla de resumen cuenta significativos sin corregir (Tabla 7).</td><td><span class="sev media">media</span></td><td>Rotular claramente «sin corregir»; no usar el conteo como evidencia; agregar un control de tasa de falsos descubrimientos como anexo.</td></tr>
+    <tr><td>13</td><td>Estadística</td><td>La tesis (5.7) decide con el p ajustado «en el sentido de la hipótesis alternativa» (unilateral). El código aplica Holm al p <em>bilateral</em>. Es más conservador y no cambia las decisiones de H1f, pero es una diferencia entre lo declarado y lo ejecutado.</td><td><span class="sev media">media</span></td><td>Alinear: o Holm sobre el p unilateral en el código, o «decisión con p bilateral y Holm» en 5.7.</td></tr>
+    <tr><td>14</td><td>Estadística</td><td>Los cinco confirmatorios de H1f son un mismo constructo medido por un único detector (total y sus cuatro categorías). Contarlos como «5 de 5» sobreestima la evidencia; el propio reporte lo advierte.</td><td><span class="sev media">media</span></td><td>Presentar H1f como <em>un</em> resultado (total) y las categorías como detalle.</td></tr>
+    <tr><td>15</td><td>Estadística</td><td>H1b relativizado se calcula con solo 10 de 27 campañas (las que tienen exposición); poca potencia. La ausencia de efecto no prueba que no haya degradación.</td><td><span class="sev media">media</span></td><td>Reportar el IC, no solo el p, y decir «no se detecta degradación», no «no existe».</td></tr>
+    <tr><td>16</td><td>Estadística</td><td>Kaplan–Meier: log-rank agrupado, no pareado; censura del 41 % (11 de 27 por brazo).</td><td><span class="sev baja">baja</span></td><td>Log-rank estratificado por par, o dejarlo como descriptivo.</td></tr>
+    <tr><td>17</td><td>Sensibilidad</td><td>La prueba de sensibilidad se hace sobre Par07–27 (y CR-2a/b sobre 10 pares), no sobre Par01–06. Y la de Jericho/relojes es «mecánica» (se inserta el léxico exacto y se detecta) y por eso pasa 80/80 y 23/23, aunque frente al azar discrimina poco (relojes 88.3 % vs 89.8 %).</td><td><span class="sev media">media</span></td><td>Presentar solo la prueba contra el azar como evidencia de validez; declarar el alcance de la muestra.</td></tr>
+    <tr><td>18</td><td>Pre-especificación</td><td>La matriz <code>a4bc-2</code> cambió cinco magnitudes mínimas tras una corrida de desarrollo. Está declarado, con hash y fecha, pero no se sabe si esa corrida usó los mismos pares que la evaluación.</td><td><span class="sev media">media</span></td><td>Indicar en la tesis qué muestra se usó en cada corrida y que ninguna dirección cambió.</td></tr>
+    <tr><td>19</td><td>Pre-especificación</td><td>Según 5.7 («Desviaciones respecto del protocolo aprobado»), el 14 de setiembre de 2026 los investigadores y el asesor sustituyeron el panel de cinco directores de juego (rúbrica Likert doble ciego) por la batería determinista, y H1a–H1c pasaron de «superioridad frente al punto medio de la escala» a «degradación». Ese cambio es <strong>anterior a la mayor parte de la generación</strong> (el manifiesto del modelo es de 2026-08-28, y los cierres reales de Par01 y Par02 son del 15 y 16/09). Las matrices de sensibilidad y el detector persona2 se congelan el 2026-09-20, cuando ya existían decenas de campañas y se conocían resultados parciales.</td><td><span class="sev alta">alta</span></td><td>Anexar una línea de tiempo: qué se había visto de las campañas y de las diferencias G1−G2 antes del 14/09 y antes de cada congelamiento; quién decidió qué. Sin eso el tribunal podrá cuestionar el «confirmatorio».</td></tr>
+    <tr><td>20</td><td>Reproducibilidad</td><td>Versiones de LanguageTool y de Java no fijadas; el nulo por permutación depende de la semilla (fijada) y de la versión de spaCy (fijada).</td><td><span class="sev baja">baja</span></td><td>Añadir ambas versiones al encabezado de los reportes.</td></tr>
+  </table></div>
+
+  <h3>C. Preguntas que haría el tribunal (con respuesta posible)</h3>
+  <div class="qa"><p class="q">1. «Su indicador confirmatorio de coherencia reactiva favorece a G2 y sus otros dos favorecen a G1. ¿Con cuál se queda?»</p>
+  <div class="a"><p><span class="tag-mine">Mi análisis</span> Con ninguno sin explicar la discrepancia. El crudo y el anclaje crecen con la longitud del texto; z compara contra turnos al azar y por tanto es el menos sensible a la longitud, que es su razón de ser. La respuesta sólida es: «z fue pre-especificado como confirmatorio por esa razón; el resultado es una ventaja pequeña de G2; los otros dos indicadores apuntan a G1 pero están confundidos por longitud». Solo se sostiene si el documento de diseño muestra que z se eligió antes de mirar las diferencias.</p></div></div>
+  <div class="qa"><p class="q">2. «La precisión de su detector de usurpación es 25 %. ¿Por qué debería creerle que G1 respeta más al jugador?»</p>
+  <div class="a"><p><span class="tag-mine">Mi análisis</span> La diferencia observada es muy grande (0.17 % vs 3.47 %, todos los pares en la misma dirección, r = −1.00), lo que hace difícil que sea puro ruido; pero el tribunal tiene razón en que sin precisión por brazo no se sabe cuánto de esa distancia son falsos positivos. La respuesta honesta es: «H1f está condicionada a la auditoría externa; estos son los resultados preliminares».</p></div></div>
+  <div class="qa"><p class="q">3. «¿Por qué unir dos versiones del motor en un solo análisis?»</p>
+  <div class="a"><p><span class="tag-mine">Mi análisis</span> La razón práctica es la potencia (27 pares en vez de 10 o 17) y que el motor se corrigió durante el proyecto. Debe acompañarse del análisis por lote y de la declaración de que los resultados son sobre «el sistema tal como quedó en cada momento», no sobre una arquitectura pura.</p></div></div>
+  <div class="qa"><p class="q">4. «Usted mide 1,400 turnos por campaña, ¿pero de verdad G2 se degrada?»</p>
+  <div class="a"><p><span class="tag-doc">Documentado</span> En estos datos, no de forma detectable en 4 de 5 instrumentos (Page). El único significativo es el crudo de PNJ inactivo, que desaparece al relativizar por exposición. <span class="tag-mine">Mi análisis</span> Es un hallazgo negativo válido, y debe presentarse como tal, no como fracaso: «no se detecta degradación con estos instrumentos y esta potencia».</p></div></div>
+  <div class="qa"><p class="q">5. «¿Cómo evitó elegir los indicadores que le convenían?»</p>
+  <div class="a"><p><span class="tag-doc">Documentado</span> Mecanismos que existen: hashes SHA-256 de las matrices y del detector, evaluación de sensibilidad corrida una sola vez, clasificación C/CC/E/D fijada antes de comparar, informe honesto de resultados desfavorables en el propio repositorio. <span class="tag-mine">Mi análisis</span> Lo que falta es una línea de tiempo: la tesis fecha el cambio de diseño el 14/09/2026 (antes de casi todo el corpus) y los hashes son del 20/09, con resultados parciales ya vistos; falta decir en un anexo qué se había visto de las diferencias G1−G2 antes de cada fecha.</p></div></div>
+  <div class="qa"><p class="q">6. «¿Por qué el segundo lote (18–27) tiene relojes si el primer lote no?»</p>
+  <div class="a"><p><span class="tag-doc">Documentado</span> Porque el motor del Par18 en adelante avanza relojes de forma determinista. <span class="tag-mine">Mi análisis</span> Por eso el indicador «relojes» solo existe con 10 pares y está clasificado como descriptivo.</p></div></div>
+
+  <h3>D. Términos que un lector ajeno debería ver definidos en la tesis</h3>
+  <div class="glossary-grid">
+    <div class="gterm"><div class="word">PNJ</div><div class="def">Personaje no jugador, controlado por el narrador. Definirlo en el capítulo 2 con un ejemplo.</div></div>
+    <div class="gterm"><div class="word">Pifia, crítico, tirada, CD</div><div class="def">Resultados del dado de 20 caras. «Pifia narrada como éxito» no se entiende sin esa definición.</div></div>
+    <div class="gterm"><div class="word">Usurpación de agencia</div><div class="def">Decidir por el jugador. Aclarar por qué es una falta de calidad (autonomía del jugador) y no solo de estilo.</div></div>
+    <div class="gterm"><div class="word">Docimasia</div><div class="def">Prueba de hipótesis. Si se usa, definirla o usar «contraste de hipótesis».</div></div>
+    <div class="gterm"><div class="word">Brecha</div><div class="def">En este repositorio, un pendiente identificado. No es término de la literatura: definirlo o sustituirlo por «limitación pendiente».</div></div>
+    <div class="gterm"><div class="word">Lote</div><div class="def">Par01–17 vs Par18–27. Explicar en 5.x qué cambió en el motor entre ambos.</div></div>
+    <div class="gterm"><div class="word">Congelado</div><div class="def">Detector con hash SHA-256 que ya no se edita. Explicar el propósito (evitar ajustar tras ver resultados).</div></div>
+    <div class="gterm"><div class="word">Pares Par01–Par27</div><div class="def">Cada par es un escenario jugado por G1 y por G2. Aclarar que no es el mismo texto ni las mismas tiradas.</div></div>
+  </div>
+
+  <h3>E. Qué cambia en las Fases anteriores y en la tesis por esta revisión</h3>
+  <p><span class="tag-doc">Documentado</span> La corrección sobre los dados aplica también a la Fase 1 (ya consignada allí). <span class="tag-mine">Mi análisis</span> Prioridades antes de la sustentación, en orden: (1) cerrar la auditoría externa de persona2 y de PNJ inactivo, con precisión por brazo; (2) documentar y reportar la discordancia CR-2a z frente a crudo y CR-2b; (3) resolver H1e: promover un instrumento longitudinal validado o aceptar por escrito que la hipótesis general no es alcanzable; (4) alinear el texto de 5.x y del cap. 2 con lo que hace el código (dados, huella, registro de llamadas, p unilateral vs bilateral); (5) anexar la línea de tiempo de decisiones de diseño respecto de lo que ya se había visto.</p>
+
+  <p class="footnote">Fuentes: tesis (TESIS.md, caps. 2, 4, 5, 6); <code>docs/resultados/resultados_tesis.md</code>, <code>docs/reportes/degradacion_bloques.md</code>, <code>kaplan_meier_pnj.md</code>, <code>sensibilidad_baseline.md</code>, <code>sensibilidad_a4bc.md</code>, <code>persona2_equivalencia.md</code>, <code>auditoria_tags_rechazados.md</code>; <code>scripts/reporte_v2/*.py</code>, <code>scripts/sensibilidad/*.py</code>, <code>scripts/instrumentos/persona2.py</code>, <code>jugador/dados.py</code>, <code>orquestador/vertical_slice*.py</code>, <code>entorno/verificar_modelo.py</code>; documentos del proyecto <code>plan-cierre-investigacion.md</code>, <code>evaluacion-kev-y-brechas-pendientes-intervencion-humana-2026-09-23.md</code>, <code>persona2-auditoria-IA-analisis.md</code>.</p>
+</div>
+
+</body>
+</html>

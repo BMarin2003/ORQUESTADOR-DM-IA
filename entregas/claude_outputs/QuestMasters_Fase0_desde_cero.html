@@ -1,0 +1,1391 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuestMasters desde cero</title>
+<style>
+/* Layout: tutorial de estaciones — línea de tiempo vertical con fichas expandibles por estación.
+   Paleta: pergamino cálido + tres tintas de actor (persona / script / base de datos), sin adornos de fantasía baratos. */
+:root{
+  --bg:#f6f2e8; --surface:#fffdf7; --surface-2:#efe7d5; --fg:#241f16; --fg-dim:#6b6151;
+  --border:#ddd2b6; --ink:#8a3324; --actor-persona:#8a3324; --actor-script:#1f6f66; --actor-db:#2f4c8a;
+  --mono-bg:#efe6d0; --warn-bg:#f6e3b8; --warn-fg:#6b4a12;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#171310; --surface:#1e1a15; --surface-2:#262019; --fg:#ece3d2; --fg-dim:#b0a68f;
+    --border:#3a3122; --ink:#e2896f; --actor-persona:#e2896f; --actor-script:#6fbfb0; --actor-db:#7f9eea;
+    --mono-bg:#221c14; --warn-bg:#3a2c10; --warn-fg:#f0c878;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#171310; --surface:#1e1a15; --surface-2:#262019; --fg:#ece3d2; --fg-dim:#b0a68f;
+  --border:#3a3122; --ink:#e2896f; --actor-persona:#e2896f; --actor-script:#6fbfb0; --actor-db:#7f9eea;
+  --mono-bg:#221c14; --warn-bg:#3a2c10; --warn-fg:#f0c878;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg); color:var(--fg); margin:0; padding-inline:16px; font-family:"Source Sans 3",ui-sans-serif,system-ui,sans-serif; font-size:16px; line-height:1.6}
+.wrap{max-width:900px; margin:0 auto; padding-block:36px 90px}
+h1,h2,h3,h4{font-family:"Fraunces",Georgia,serif; font-weight:600; text-wrap:balance; color:var(--fg)}
+h1{font-size:clamp(1.7rem,4.2vw,2.4rem); margin:0 0 8px}
+.kicker{font-family:"IBM Plex Mono",monospace; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink); margin:0 0 10px}
+.subtitle{color:var(--fg-dim); font-size:1.05rem; margin:0 0 30px; max-width:66ch}
+p{margin:0 0 14px; max-width:70ch}
+code{font-family:"IBM Plex Mono",ui-monospace,monospace; background:var(--mono-bg); padding:0.12em 0.4em; border-radius:4px; font-size:0.87em}
+a{color:var(--ink)}
+hr.sep{border:none; border-top:1px dashed var(--border); margin:36px 0}
+
+.lede{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:20px 22px; margin-bottom:26px}
+.lede p:last-child{margin-bottom:0}
+
+.glossary-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:10px; margin:14px 0 8px}
+.gterm{background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:12px 14px}
+.gterm .word{font-family:"Fraunces",serif; font-weight:600; font-size:0.98rem; margin-bottom:3px}
+.gterm .def{font-size:0.85rem; color:var(--fg-dim)}
+
+.map3{display:flex; gap:10px; align-items:center; margin:20px 0; flex-wrap:wrap}
+.map3 .stage{flex:1; min-width:160px; background:var(--surface); border:1.5px solid var(--border); border-radius:10px; padding:14px; text-align:center}
+.map3 .stage.here{border-color:var(--ink); background:color-mix(in srgb, var(--ink) 8%, var(--surface))}
+.map3 .stage .n{font-family:"IBM Plex Mono",monospace; font-size:0.7rem; color:var(--fg-dim); text-transform:uppercase; letter-spacing:0.05em}
+.map3 .stage .name{font-family:"Fraunces",serif; font-weight:600; margin-top:4px}
+.map3 .arrow{color:var(--fg-dim); font-size:1.3rem}
+
+.diagram{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:14px; margin:18px 0; overflow-x:auto}
+.diagram svg{display:block; min-width:640px; width:100%; height:auto}
+
+.actor-legend{display:flex; flex-wrap:wrap; gap:16px; font-size:0.82rem; color:var(--fg-dim); margin:6px 0 28px}
+.actor-legend span{display:inline-flex; align-items:center; gap:7px}
+.dot{width:11px; height:11px; border-radius:50%; display:inline-block}
+.dot.persona{background:var(--actor-persona)} .dot.script{background:var(--actor-script)} .dot.db{background:var(--actor-db)}
+
+.station{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:22px 24px; margin:20px 0}
+.station-head{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; margin-bottom:6px}
+.station-num{font-family:"Fraunces",serif; font-size:1.7rem; font-weight:700; color:var(--ink); line-height:1}
+.station-title{font-family:"Fraunces",serif; font-size:1.2rem; font-weight:600}
+.actor-tag{display:inline-flex; align-items:center; gap:5px; font-family:"IBM Plex Mono",monospace; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.05em; padding:3px 9px; border-radius:99px; border:1px solid currentColor}
+.actor-tag.persona{color:var(--actor-persona)} .actor-tag.script{color:var(--actor-script)} .actor-tag.db{color:var(--actor-db)}
+.station-lead{color:var(--fg); font-size:1rem; margin:8px 0 16px}
+
+.spec{display:grid; grid-template-columns:150px 1fr; gap:2px 14px; font-size:0.9rem; margin-bottom:6px}
+.spec dt{font-family:"IBM Plex Mono",monospace; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--fg-dim); padding:9px 0; border-top:1px solid var(--border)}
+.spec dd{margin:0; padding:9px 0; border-top:1px solid var(--border); max-width:56ch}
+.spec dt:first-of-type, .spec dd:first-of-type{border-top:none}
+
+.why-box{background:var(--surface-2); border-left:3px solid var(--ink); border-radius:0 10px 10px 0; padding:12px 16px; margin-top:14px}
+.why-box .lbl{font-family:"IBM Plex Mono",monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink); margin-bottom:4px}
+.why-box p{margin-bottom:0; font-size:0.9rem}
+
+table{border-collapse:collapse; width:100%; margin:0 0 16px; font-size:0.86rem}
+th,td{border:1px solid var(--border); padding:8px 10px; text-align:left; vertical-align:top}
+th{background:var(--surface-2); font-family:"Fraunces",serif; font-weight:600}
+.twrap{overflow-x:auto}
+
+.toc{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 26px}
+.toc a{font-family:"IBM Plex Mono",monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; text-decoration:none; border:1px solid var(--border); border-radius:99px; padding:5px 12px; background:var(--surface); color:var(--fg)}
+.toc a:hover{border-color:var(--ink); color:var(--ink)}
+.houses{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:12px; margin:16px 0 22px}
+.house{background:var(--surface); border:1.5px solid var(--border); border-radius:12px; padding:14px 16px}
+.house h4{margin:0 0 2px; font-size:1.02rem}
+.house .sub{font-size:0.8rem; color:var(--fg-dim); margin-bottom:8px}
+.house ul{margin:0; padding-left:18px; font-size:0.85rem}
+.house.disk{border-color:var(--actor-persona)} .house.pg{border-color:var(--actor-db)} .house.ext{border-color:var(--actor-script)}
+.tag-doc,.tag-mine{display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:0.6rem; text-transform:uppercase; letter-spacing:0.04em; padding:1px 7px; border-radius:99px; margin-right:6px; vertical-align:1px; white-space:nowrap}
+.tag-doc{color:var(--actor-script); border:1px solid currentColor}
+.tag-mine{color:var(--warn-fg); background:var(--warn-bg)}
+pre.code{background:var(--mono-bg); border:1px solid var(--border); border-radius:10px; padding:12px 14px; overflow-x:auto; font-family:"IBM Plex Mono",monospace; font-size:0.76rem; line-height:1.5; margin:10px 0 14px; max-width:100%}
+.sec-note{background:var(--warn-bg); color:var(--warn-fg); border-radius:10px; padding:11px 15px; font-size:0.88rem; margin:14px 0}
+.sec-note p{margin:0; max-width:none}
+.qa{margin:14px 0 0; padding-left:12px; border-left:3px solid var(--border)}
+.qa .q{font-weight:600; color:var(--ink); margin:0 0 4px; max-width:none}
+.qa .a p{margin:0 0 8px; max-width:none}
+.qa .a{font-size:0.93rem}
+h2[id],h3[id]{scroll-margin-top:16px}
+.station-num.small{font-size:1.25rem}
+td code,th code{font-size:0.8em}
+.footnote{font-size:0.8rem; color:var(--fg-dim); border-top:1px solid var(--border); margin-top:60px; padding-top:18px}
+.src{font-size:0.78rem; color:var(--fg-dim); margin-top:2px}
+</style>
+</head>
+<body>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
+
+<div class="wrap">
+  <p class="kicker">Tutorial QuestMasters · parte 1 de varias</p>
+  <h1>Cómo nace una campaña, antes de que nadie juegue</h1>
+  <p class="subtitle">No hace falta saber qué es Dungeons &amp; Dragons ni haber tocado Postgres en tu vida. Esta parte cubre la <strong>Fase 0</strong>: todo lo que pasa desde que alguien escribe una historia hasta el instante exacto antes de que el primer turno se genere. Estación por estación — qué es, con qué tecnología se hace, de dónde viene, adónde va, dónde queda guardado, qué bloquea y qué desbloquea, y por qué se diseñó así.</p>
+
+  <nav class="toc" aria-label="Secciones">
+    <a href="#vocab">Vocabulario</a>
+    <a href="#mapa">Mapa</a>
+    <a href="#estaciones">Las 7 estaciones</a>
+    <a href="#estacion1">Estación 1 desde cero</a>
+    <a href="#almacenamiento">Dónde vive cada dato</a>
+    <a href="#disco">A · Disco</a>
+    <a href="#postgres">B · Postgres</a>
+    <a href="#indices">C · Índices</a>
+    <a href="#escritura">D · Cómo se escribe</a>
+    <a href="#chuleta">Chuleta</a>
+  </nav>
+
+  <div class="lede">
+    <p><strong>La idea de fondo del proyecto, en una frase:</strong> se genera la misma historia de D&amp;D dos veces — una con una IA "todo en uno" (llamada G2) y otra con un equipo de IAs especializadas que se reparten el trabajo (llamada G1) — para comparar cuál mantiene mejor la coherencia de la historia a lo largo de 1,400 turnos. La Fase 0 es la preparación de ese experimento: nada de esto todavía es "jugar", es dejar todo listo para que el juego pueda empezar de forma justa para ambas IAs.</p>
+  </div>
+
+  <h2 id="vocab">Antes de empezar: 60 segundos de vocabulario</h2>
+  <p>Dos mundos de vocabulario se cruzan en este proyecto: el de D&amp;D (un juego de rol) y el de la ingeniería de software. Ninguno de los dos hace falta saberlo de antes — acá va lo mínimo para seguir el resto sin trabarte.</p>
+
+  <h3>Vocabulario de D&amp;D</h3>
+  <div class="glossary-grid">
+    <div class="gterm"><div class="word">D&amp;D (Dungeons &amp; Dragons)</div><div class="def">Un juego de rol donde un grupo interpreta personajes dentro de una historia que se va inventando sobre la marcha, siguiendo reglas para resolver lo incierto.</div></div>
+    <div class="gterm"><div class="word">Director de Juego (DM)</div><div class="def">La persona (aquí, la IA) que narra el mundo, interpreta a todos los demás personajes y decide qué pasa cuando algo es incierto.</div></div>
+    <div class="gterm"><div class="word">PJ — Personaje Jugador</div><div class="def">El personaje que controla un jugador. En este proyecto, lo controla una IA que actúa "como si" fuera una persona jugando.</div></div>
+    <div class="gterm"><div class="word">PNJ — Personaje No Jugador</div><div class="def">Cualquier personaje que NO es del jugador — el tabernero, el villano, el guardia. Los interpreta el DM.</div></div>
+    <div class="gterm"><div class="word">Campaña</div><div class="def">La historia completa, de principio a fin, turno a turno. Aquí cada campaña dura 1,400 turnos.</div></div>
+    <div class="gterm"><div class="word">Turno</div><div class="def">Un intercambio: el jugador dice qué intenta hacer su personaje, el DM narra qué ocurre como consecuencia.</div></div>
+    <div class="gterm"><div class="word">Lore</div><div class="def">El trasfondo narrativo de la campaña — el pueblo, los conflictos, quién es quién — escrito antes de que se juegue nada.</div></div>
+    <div class="gterm"><div class="word">Tirada de dados</div><div class="def">Cuando un personaje intenta algo incierto, se tira un dado de 20 caras y se suma cuánto de bueno es en eso, para saber si lo logra.</div></div>
+  </div>
+
+  <h3>Vocabulario técnico</h3>
+  <div class="glossary-grid">
+    <div class="gterm"><div class="word">Base de datos (Postgres)</div><div class="def">Un programa que guarda información organizada en tablas, de forma que sobrevive aunque el programa que la usa se apague o se reinicie.</div></div>
+    <div class="gterm"><div class="word">Tabla</div><div class="def">Dentro de la base de datos, es como una hoja de cálculo: filas (un registro cada una) y columnas (un dato cada una).</div></div>
+    <div class="gterm"><div class="word">JSON</div><div class="def">Un formato de texto simple para escribir datos organizados (listas, objetos) de forma que cualquier programa lo pueda leer sin ambigüedad.</div></div>
+    <div class="gterm"><div class="word">Script</div><div class="def">Un programa corto (aquí, en Python) que automatiza una tarea puntual y se cierra al terminar — por ejemplo, "crear una campaña nueva".</div></div>
+    <div class="gterm"><div class="word">LLM</div><div class="def">La tecnología de IA que genera texto — narra, interpreta personajes, decide qué pasa. Corre en un servicio externo (DeepInfra), no en la computadora del proyecto.</div></div>
+    <div class="gterm"><div class="word">tenant_id / user_id / campaign_id</div><div class="def">Códigos únicos, como un DNI para datos: identifican "el espacio aislado del experimento" (hay uno por <em>par</em>), "el usuario dueño" (el investigador) y "cuál campaña exacta" (una por brazo, G1 o G2).</div></div>
+  </div>
+
+  <hr class="sep">
+
+  <h2 id="mapa">El mapa completo, para no perderse</h2>
+  <p>El proceso completo tiene tres grandes tramos. Este documento cubre solo el primero.</p>
+  <div class="map3">
+    <div class="stage here"><div class="n">Estás aquí</div><div class="name">Fase 0<br>Preparación</div></div>
+    <span class="arrow">→</span>
+    <div class="stage"><div class="n">Próxima entrega</div><div class="name">Turno con G2<br>(la IA "todo en uno")</div></div>
+    <span class="arrow">→</span>
+    <div class="stage"><div class="n">Después</div><div class="name">Turno con G1<br>(el equipo de IAs)</div></div>
+  </div>
+
+  <hr class="sep">
+
+  <h2>Fase 0, de un vistazo</h2>
+  <p>Siete estaciones, en orden. Los colores dicen <strong>quién hace cada cosa</strong>: una persona, un script (programa corto y automático), o la base de datos guardando/entregando información.</p>
+
+  <div class="actor-legend">
+    <span><i class="dot persona"></i> Persona (Bryan, quien diseña el par)</span>
+    <span><i class="dot script"></i> Script Python (automático, corre una vez)</span>
+    <span><i class="dot db"></i> Base de datos (Postgres, guarda o responde)</span>
+  </div>
+
+  <div class="diagram">
+    <svg viewBox="0 0 780 900" role="img" aria-label="Mapa de la Fase 0 con actores">
+      <defs>
+        <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+        </marker>
+      </defs>
+      <style>
+        .b{fill:var(--surface-2); stroke:var(--border)}
+        .t{font-family:'IBM Plex Mono',monospace; font-size:12.5px; fill:var(--fg)}
+        .c{font-family:'Source Sans 3',sans-serif; font-size:11px; fill:var(--fg-dim)}
+        .ar{stroke:var(--fg-dim); stroke-width:1.4; fill:none; marker-end:url(#ar); color:var(--fg-dim)}
+        .tag{font-family:'IBM Plex Mono',monospace; font-size:9.5px; text-transform:uppercase; letter-spacing:0.03em}
+      </style>
+
+      <rect x="16" y="6" width="60" height="18" rx="9" fill="var(--actor-persona)"/>
+      <text x="46" y="19" text-anchor="middle" class="tag" fill="var(--surface)">Persona</text>
+      <rect x="190" y="10" width="400" height="52" rx="8" class="b" style="stroke:var(--actor-persona); stroke-width:1.6"/>
+      <text x="390" y="32" text-anchor="middle" class="t">1. Escribir el lore y las fichas</text>
+      <text x="390" y="48" text-anchor="middle" class="c">prosa (.md) + datos estructurados (.json)</text>
+
+      <path d="M390,62 V92" class="ar"/>
+      <rect x="16" y="96" width="60" height="18" rx="9" fill="var(--actor-script)"/>
+      <text x="46" y="109" text-anchor="middle" class="tag" fill="var(--surface)">Script</text>
+      <rect x="190" y="100" width="400" height="50" rx="8" class="b" style="stroke:var(--actor-script); stroke-width:1.6"/>
+      <text x="390" y="122" text-anchor="middle" class="t">2. Validar referencias cruzadas</text>
+      <text x="390" y="138" text-anchor="middle" class="c">¿todo lo que se menciona existe de verdad?</text>
+
+      <path d="M390,150 V180" class="ar"/>
+      <text x="390" y="176" text-anchor="middle" class="c">se crean DOS campañas (mismo tenant/user)</text>
+      <rect x="16" y="190" width="60" height="18" rx="9" fill="var(--actor-script)"/>
+      <text x="46" y="203" text-anchor="middle" class="tag" fill="var(--surface)">Script</text>
+      <path d="M290,196 V226" class="ar"/>
+      <path d="M490,196 V226" class="ar"/>
+      <rect x="130" y="226" width="320" height="48" rx="8" class="b" style="stroke:var(--actor-script); stroke-width:1.6"/>
+      <text x="290" y="246" text-anchor="middle" class="t">3a. Crear campaña G2</text>
+      <text x="290" y="262" text-anchor="middle" class="c">→ tenant_id, user_id, campaign_id</text>
+      <rect x="460" y="226" width="320" height="48" rx="8" class="b" style="stroke:var(--actor-script); stroke-width:1.6"/>
+      <text x="620" y="246" text-anchor="middle" class="t">3b. Crear campaña G1</text>
+      <text x="620" y="262" text-anchor="middle" class="c">mismo tenant/user → nuevo campaign_id</text>
+
+      <path d="M290,274 V304" class="ar"/>
+      <path d="M620,274 V304" class="ar"/>
+      <rect x="16" y="308" width="60" height="18" rx="9" fill="var(--actor-script)"/>
+      <text x="46" y="321" text-anchor="middle" class="tag" fill="var(--surface)">Script</text>
+      <rect x="130" y="312" width="320" height="60" rx="8" class="b" style="stroke:var(--actor-script); stroke-width:1.6"/>
+      <text x="290" y="334" text-anchor="middle" class="t">4a. Sembrar el mundo (G2)</text>
+      <text x="290" y="350" text-anchor="middle" class="c">lugares · facciones · relojes</text>
+      <text x="290" y="364" text-anchor="middle" class="c">misiones · PJ activo · PNJ</text>
+      <rect x="460" y="312" width="320" height="60" rx="8" class="b" style="stroke:var(--actor-script); stroke-width:1.6"/>
+      <text x="620" y="334" text-anchor="middle" class="t">4b. Sembrar el mundo (G1)</text>
+      <text x="620" y="350" text-anchor="middle" class="c">mismos datos, mundo aparte</text>
+      <text x="620" y="364" text-anchor="middle" class="c">en la base de datos</text>
+
+      <path d="M290,372 V402" class="ar"/>
+      <path d="M620,372 V402" class="ar"/>
+      <rect x="16" y="406" width="60" height="18" rx="9" fill="var(--actor-db)"/>
+      <text x="46" y="419" text-anchor="middle" class="tag" fill="var(--surface)">Base datos</text>
+      <rect x="190" y="410" width="400" height="52" rx="8" class="b" style="stroke:var(--actor-db); stroke-width:1.6"/>
+      <text x="390" y="432" text-anchor="middle" class="t">5. Turno 0 sembrado en Postgres</text>
+      <text x="390" y="448" text-anchor="middle" class="c">el punto de partida ya existe, listo para leerse</text>
+
+      <path d="M390,462 V492" class="ar"/>
+      <rect x="16" y="496" width="60" height="18" rx="9" fill="var(--actor-script)"/>
+      <text x="46" y="509" text-anchor="middle" class="tag" fill="var(--surface)">Script</text>
+      <rect x="190" y="500" width="400" height="50" rx="8" class="b" style="stroke:var(--actor-script); stroke-width:1.6"/>
+      <text x="390" y="522" text-anchor="middle" class="t">6. Candado de arranque</text>
+      <text x="390" y="538" text-anchor="middle" class="c">si falta el turno 0 → se detiene, no inventa nada</text>
+
+      <path d="M390,550 V580" class="ar"/>
+      <rect x="16" y="584" width="60" height="18" rx="9" fill="var(--actor-script)"/>
+      <text x="46" y="597" text-anchor="middle" class="tag" fill="var(--surface)">Script</text>
+      <rect x="130" y="588" width="320" height="48" rx="8" class="b" style="stroke:var(--actor-script); stroke-width:1.6"/>
+      <text x="290" y="608" text-anchor="middle" class="t">7a. Arrancar motor G2</text>
+      <text x="290" y="624" text-anchor="middle" class="c">--campaign-id --pj --turnos 1400</text>
+      <rect x="460" y="588" width="320" height="48" rx="8" class="b" style="stroke:var(--actor-script); stroke-width:1.6"/>
+      <text x="620" y="608" text-anchor="middle" class="t">7b. Arrancar motor G1</text>
+      <text x="620" y="624" text-anchor="middle" class="c">--campaign-id --pj --turnos 1400</text>
+
+      <path d="M290,636 V666" class="ar"/>
+      <path d="M620,636 V666" class="ar"/>
+      <rect x="150" y="666" width="480" height="64" rx="10" class="b" style="stroke:var(--ink); stroke-width:2"/>
+      <text x="390" y="694" text-anchor="middle" class="t">Turno 1 — primera acción real del jugador</text>
+      <text x="390" y="714" text-anchor="middle" class="c">continúa en la próxima entrega de este tutorial</text>
+
+      <text x="16" y="780" class="c" style="font-size:10.5px">Nota de lectura: G2 y G1 corren los pasos 3–7 en paralelo, con datos idénticos de entrada</text>
+      <text x="16" y="796" class="c" style="font-size:10.5px">pero cada uno escribiendo en su propio campaign_id — nunca se tocan entre sí.</text>
+    </svg>
+  </div>
+
+  <hr class="sep">
+
+  <h2 id="estaciones">Estación por estación, al detalle</h2>
+  <p>En cada estación, la fila <strong>«Dónde se guarda»</strong> ahora dice el archivo o la tabla exacta y remite a su ficha completa en la sección <a href="#almacenamiento">«Dónde vive cada dato»</a>, más abajo.</p>
+
+  <div class="station">
+    <div class="station-head">
+      <span class="station-num">1</span>
+      <span class="station-title">Escribir el lore y las fichas</span>
+      <span class="actor-tag persona">Persona</span>
+    </div>
+    <p class="station-lead">Alguien (Bryan, diseñando el par) se sienta a escribir de dónde sale esta historia — antes de que exista una sola línea de código ejecutándose, tiene que existir la ficción.</p>
+    <dl class="spec">
+      <dt>Qué se produce</dt><dd>Un archivo de prosa libre con la ambientación (el pueblo, el conflicto, los ganchos narrativos), y dos archivos estructurados: uno con los lugares/facciones/misiones/reloj/personaje jugador, otro con los 2–3 personajes no jugadores importantes.</dd>
+      <dt>Tecnología</dt><dd><strong>Markdown (.md)</strong> para la prosa — es solo texto plano con un poco de formato, tan fácil de escribir como una nota. <strong>JSON (.json)</strong> para los datos estructurados — el formato casi universal para listas y objetos que cualquier programa puede leer sin traducirlo primero.</dd>
+      <dt>De dónde viene</dt><dd>De la cabeza de quien diseña el par. No hay generación automática acá — es 100% autoría humana.</dd>
+      <dt>A dónde va</dt><dd>Se guarda como archivos en dos carpetas del proyecto: la prosa en <code>corpus/real/</code>, los datos estructurados en <code>fixtures/real/</code>.</dd>
+      <dt>Dónde se guarda</dt><dd>En el disco del proyecto, como tres archivos de texto: <code>corpus/real/lore_&lt;lugar&gt;.md</code>, <code>fixtures/real/world_par&lt;NN&gt;.json</code> y <code>fixtures/real/personas_par&lt;NN&gt;.json</code>. Todavía no toca la base de datos: el lore entra a Postgres en la estación 3 y los JSON en la estación 4. Cómo está armado cada archivo por dentro: fichas <a href="#a1">A1</a>, <a href="#a2">A2</a> y <a href="#a3">A3</a>. Y si nunca viste un JSON, empieza por <a href="#estacion1">«Estación 1 desde cero»</a>: explica cada término y cada campo con preguntas y respuestas.</dd>
+      <dt>Qué bloquea si falta</dt><dd>Todo. Sin esto no hay nada que validar, ni que sembrar, ni que jugar.</dd>
+      <dt>Qué desbloquea</dt><dd>La estación 2 — recién con estos archivos escritos se puede empezar a revisar que estén bien hechos.</dd>
+    </dl>
+    <div class="why-box">
+      <div class="lbl">Por qué se diseñó así</div>
+      <p>El experimento necesita que las dos campañas de un par (la de G1 y la de G2) arranquen desde <em>exactamente</em> el mismo punto de partida. Si cada arquitectura tuviera su propio lore, sería imposible saber si una narró mejor por ser una arquitectura superior o simplemente porque le tocó un material de partida más fácil de narrar. Además, desde el tercer par en adelante, cada par usa un tono y una estructura de conflicto distintos a los anteriores — a propósito, para que la comparación no termine favoreciendo a la arquitectura que por casualidad se le da mejor un solo tipo de historia.</p>
+    </div>
+  </div>
+
+  <div class="station">
+    <div class="station-head">
+      <span class="station-num">2</span>
+      <span class="station-title">Validar referencias cruzadas</span>
+      <span class="actor-tag script">Script</span>
+    </div>
+    <p class="station-lead">Un programa corto revisa los dos archivos JSON del paso anterior en busca de errores de "plomería" — no de estilo narrativo, sino de que los datos se correspondan entre sí.</p>
+    <dl class="spec">
+      <dt>Qué hace</dt><dd>Comprueba, por ejemplo, que si un personaje no jugador dice que vive en el lugar "Taberna del Cuervo", ese lugar exista de verdad en la lista de lugares del mismo archivo — no sea un error de tipeo que quedaría sin detectar. Además revisa reglas más finas: que cada lugar "observado" traiga su descripción canónica, que ningún rasgo de personalidad se salga del rango −100…100, que la confianza inicial de un PNJ no supere su propio techo, que todo secreto tenga condición de revelación, que el personaje jugador tenga <code>hp == hp_max</code>, y que cada reloj narrativo <em>llegue a dispararse</em> dentro de los 1,400 turnos (el día de juego avanza 1 cada 20 turnos, así que un reloj mal calibrado simplemente nunca ocurriría).</dd>
+      <dt>Tecnología</dt><dd>Python con su librería estándar para leer JSON — no hace falta nada más sofisticado; es "leer datos y comprobar que coincidan entre sí", una tarea mecánica. El script se llama <code>scripts/validar_fixtures_real.py</code> y se corre con el número de par: <code>python scripts/validar_fixtures_real.py 07 08</code>.</dd>
+      <dt>De dónde viene</dt><dd>Lee los mismos dos archivos escritos en la estación 1.</dd>
+      <dt>A dónde va</dt><dd>No produce un archivo nuevo — solo confirma "está bien" o señala exactamente qué referencia está rota.</dd>
+      <dt>Dónde se guarda</dt><dd>Nada se guarda acá — es una comprobación, no una transformación de datos.</dd>
+      <dt>Qué bloquea</dt><dd>Si algo está roto, seguir de todas formas significaría sembrar un mundo con datos inconsistentes en la base — nada lo impide técnicamente, pero hacerlo sería un error evitable.</dd>
+      <dt>Qué desbloquea</dt><dd>La luz verde para gastar presupuesto real: desde la estación 3 en adelante, cada paso ya cuesta dinero o tiempo real de generación.</dd>
+    </dl>
+    <div class="why-box">
+      <div class="lbl">Por qué se diseñó así</div>
+      <p>Es muchísimo más barato encontrar un error de tipeo ahora — segundos, sin costo — que descubrirlo después de haber generado 1,400 turnos con un personaje que "vive" en un lugar que técnicamente no existe en la base de datos.</p>
+    </div>
+  </div>
+
+  <div class="station">
+    <div class="station-head">
+      <span class="station-num">3</span>
+      <span class="station-title">Crear la campaña (dos veces)</span>
+      <span class="actor-tag script">Script</span>
+    </div>
+    <p class="station-lead">Un programa le pide a la base de datos "quiero una campaña nueva" y esta responde con tres códigos únicos. Se hace dos veces: una para la versión que va a generar con G2, otra para G1 — mismo "dueño" del experimento, campañas completamente distintas.</p>
+    <dl class="spec">
+      <dt>Qué produce</dt><dd><code>tenant_id</code>, <code>user_id</code> y <code>campaign_id</code> — tres identificadores únicos. Los dos primeros se reutilizan entre G1 y G2 (mismo par, mismo dueño lógico); el <code>campaign_id</code> es distinto en cada uno. <strong>Y además, ya en este paso, el "turno 0":</strong> el script copia el texto completo del lore (.md) como una fila de <code>turn_log</code> con <code>turn_id = 0</code>. O sea, la prosa del lore entra a Postgres acá, entera, como si fuera el primer "turno" narrado.</dd>
+      <dt>Tecnología</dt><dd>Un script Python que inserta una fila nueva en <strong>Postgres</strong>, una base de datos relacional. ¿Por qué una base de datos y no simplemente más archivos? Porque el proyecto necesita tres cosas que un archivo de texto no da fácilmente: que muchas campañas corran en paralelo sin pisarse los datos entre sí, que se pueda consultar el estado exacto de algo ("¿este personaje sigue vivo ahora mismo?") sin releer todo un archivo, y que el sistema pueda recuperarse si se corta a mitad de camino sin perder lo ya generado.</dd>
+      <dt>De dónde viene</dt><dd>El título de la campaña, el tono elegido y la ruta del lore — todo de la estación 1.</dd>
+      <dt>A dónde va</dt><dd>Los tres IDs se usan como entrada de la siguiente estación.</dd>
+      <dt>Dónde se guarda</dt><dd>En cinco tablas de Postgres (el script de G2 escribe las cinco; el de G1 reutiliza tenant y usuario y escribe solo tres): <code>tenants</code> y <code>users</code> (el espacio y el dueño), <code>campaigns</code> (una fila por campaña; su columna <code>current_turn</code> arranca en 0 y es el contador real de turnos generados), <code>campaign_members</code> (marca al investigador como Director de Juego) y <code>turn_log</code> (la fila del turno 0 con todo el lore). Detalle en <a href="#b4">B4</a> y <a href="#d1">D1</a>.</dd>
+      <dt>Qué bloquea si falta</dt><dd>Sin <code>campaign_id</code> no existe ningún lugar en la base donde sembrar el mundo — la estación 4 no puede arrancar.</dd>
+      <dt>Qué desbloquea</dt><dd>La siembra del mundo (estación 4), porque ahora ya existe un espacio en la base donde guardarlo.</dd>
+    </dl>
+    <div class="why-box">
+      <div class="lbl">Por qué se diseñó así</div>
+      <p>Cada campaña necesita ser una entidad totalmente aislada. Así, lo que pase en la campaña de G1 (mejor o peor narración) nunca puede mezclarse ni contaminar lo que pasa en la campaña de G2 del mismo par, aunque las dos compartan el mismo "dueño" lógico del experimento.</p>
+    </div>
+  </div>
+
+  <div class="station">
+    <div class="station-head">
+      <span class="station-num">4</span>
+      <span class="station-title">Sembrar el mundo (dos veces)</span>
+      <span class="actor-tag script">Script</span>
+    </div>
+    <p class="station-lead">Un programa toma los archivos JSON de la estación 1 y el <code>campaign_id</code> de la estación 3, y crea en la base de datos una fila por cada lugar, cada facción, cada personaje no jugador, cada misión y cada "reloj narrativo" — una cuenta regresiva de fondo, como "en cuántos días de juego llega la caravana enemiga".</p>
+    <dl class="spec">
+      <dt>Qué hace</dt><dd>Se corre dos veces, una por cada <code>campaign_id</code> — así G1 y G2 arrancan con mundos idénticos en contenido pero completamente separados en la base de datos, sin ningún punto de contacto entre ellos.</dd>
+      <dt>Tecnología</dt><dd>El mismo patrón que la estación 3: un script Python que va insertando filas en varias tablas de Postgres, siguiendo exactamente la estructura que ya trae el JSON (la lista de "locations" se convierte en filas de la tabla de lugares, y así con cada tipo de dato).</dd>
+      <dt>De dónde viene</dt><dd>Los dos archivos JSON de la estación 1, más el <code>campaign_id</code> de la estación 3.</dd>
+      <dt>A dónde va</dt><dd>Cada pieza de información va a la tabla que le corresponde en Postgres.</dd>
+      <dt>Dónde se guarda</dt><dd>En once tablas de Postgres, dentro del esquema de 34 tablas: <code>locations</code>, <code>factions</code>, <code>faction_clocks</code>, <code>quests</code>, <code>characters</code>, <code>npcs</code>, <code>npc_ibf</code>, <code>npc_bond_targets</code>, <code>npc_disposition</code>, <code>npc_knowledge</code> y <code>npc_secrets</code>. Todo en <em>una sola transacción</em>: o se siembra el mundo completo o no se siembra nada. Un solo PNJ del JSON se reparte en seis de esas tablas — ver <a href="#a3">A3</a> y <a href="#b4">B4</a>.</dd>
+      <dt>Qué bloquea si falta</dt><dd>Sin esto no existe "turno 0" — no hay nada que la IA pueda leer para saber dónde está parado el personaje o quién es cada PNJ.</dd>
+      <dt>Qué desbloquea</dt><dd>Que exista un punto de partida real y consultable — la estación 5.</dd>
+    </dl>
+    <div class="why-box">
+      <div class="lbl">Por qué se diseñó así</div>
+      <p>Separar "escribir la ficción" (humano, una sola vez, en la estación 1) de "poblar la base de datos" (script, determinista, repetible) es lo que permite que el estado del mundo se pueda consultar con precisión turno a turno — en vez de que la única forma de saber "¿este PNJ sigue vivo?" sea releer un documento de texto entero buscando la respuesta.</p>
+    </div>
+  </div>
+
+  <div class="station">
+    <div class="station-head">
+      <span class="station-num">5</span>
+      <span class="station-title">Turno 0: el punto de partida ya existe</span>
+      <span class="actor-tag db">Base de datos</span>
+    </div>
+    <p class="station-lead">Esta estación no es una acción nueva — es el resultado acumulado de las estaciones 3 y 4. Marca el momento en que cada <code>campaign_id</code> ya tiene una "foto" completa de cómo empieza el mundo, guardada <em>de dos formas a la vez</em>: la prosa del lore en la fila <code>turn_id = 0</code> de <code>turn_log</code> (estación 3) y el estado estructurado en las tablas de mundo (estación 4).</p>
+    <dl class="spec">
+      <dt>Qué es</dt><dd>El estado inicial completo (lugares, facciones, PNJ, misión activa, personaje jugador) ya guardado y listo para ser leído, más la prosa original del lore como "turno 0".</dd>
+      <dt>Tecnología</dt><dd>Sigue siendo Postgres — esta estación es conceptual, no una acción distinta, marca que la base ya tiene todo lo necesario.</dd>
+      <dt>De dónde viene</dt><dd>De la estación 4.</dd>
+      <dt>A dónde va</dt><dd>Será leído, en el turno 1, por la función que arma el contexto que ven la IA (se llama <code>contexto_escena()</code> — se explica en la próxima entrega de este tutorial).</dd>
+      <dt>Dónde se guarda</dt><dd>Las mismas tablas de las estaciones 3 y 4 (no se escribe nada nuevo). Por qué se guarda de dos formas — prosa <em>y</em> filas — se explica en <a href="#d1">D1</a>.</dd>
+      <dt>Qué bloquea si falta</dt><dd>Si algo quedó a medio sembrar, el turno 1 va a fallar directamente o va a narrar con información incompleta.</dd>
+      <dt>Qué desbloquea</dt><dd>La posibilidad real de arrancar el bucle de generación de turnos.</dd>
+    </dl>
+    <div class="why-box">
+      <div class="lbl">Por qué se diseñó así</div>
+      <p>Es la bisagra del proceso: todo lo anterior es preparación manual o semiautomática; desde acá para adelante, todo es generación automática sin intervención humana turno a turno.</p>
+    </div>
+  </div>
+
+  <div class="station">
+    <div class="station-head">
+      <span class="station-num">6</span>
+      <span class="station-title">El candado del arranque</span>
+      <span class="actor-tag script">Script</span>
+    </div>
+    <p class="station-lead">Justo antes de narrar el primer turno, el motor se hace una pregunta simple: "¿existe un turno anterior para esta campaña?" Si la respuesta es no, se detiene con un error explícito en vez de improvisar.</p>
+    <dl class="spec">
+      <dt>Qué hace</dt><dd>Una comprobación en Python: consulta el estado de la campaña y, si no encuentra un turno 0, corta la ejecución con un mensaje claro en vez de seguir adelante.</dd>
+      <dt>Tecnología</dt><dd>Una consulta simple a Postgres más una instrucción de "detenerse ahora" (<code>sys.exit()</code> en Python) — nada elaborado, es deliberadamente lo más simple posible.</dd>
+      <dt>De dónde viene</dt><dd>Consulta el estado de la campaña sembrado en las estaciones 3-5.</dd>
+      <dt>A dónde va</dt><dd>Si todo está bien, deja pasar a la estación 7. Si no, corta y avisa por consola — nada se genera.</dd>
+      <dt>Dónde se guarda</dt><dd>No guarda nada nuevo — es un chequeo, no una escritura.</dd>
+      <dt>Qué bloquea</dt><dd>Bloquea por completo el arranque si falta el turno 0 — a propósito.</dd>
+      <dt>Qué desbloquea</dt><dd>Nada nuevo por sí mismo, pero evita un error mucho peor: que el motor arranque narrando una ambientación equivocada sin que nadie lo note hasta mucho después de haber gastado presupuesto real.</dd>
+    </dl>
+    <div class="why-box">
+      <div class="lbl">Por qué se diseñó así (y por qué no siempre fue así)</div>
+      <p>Esta comprobación se agregó DESPUÉS de que, en una versión anterior del motor, faltara el turno 0 y el programa narrara por accidente la ambientación de otro par — tenía un valor "de emergencia" escrito a mano para ese caso, y nadie recordaba que existía. La lección real de diseño acá es: es más seguro que un programa se niegue a arrancar sin datos completos, que darle un valor de repuesto "razonable" que con el tiempo se vuelve invisible.</p>
+    </div>
+  </div>
+
+  <div class="station">
+    <div class="station-head">
+      <span class="station-num">7</span>
+      <span class="station-title">Arrancar el motor</span>
+      <span class="actor-tag script">Script</span>
+    </div>
+    <p class="station-lead">Se lanza el programa que va a generar los 1,400 turnos de la campaña, uno por uno, sin que nadie tenga que intervenir turno a turno.</p>
+    <dl class="spec">
+      <dt>Qué hace</dt><dd>Recibe qué campaña es, qué personaje juega, y cuántos turnos generar — y arranca un proceso que puede tomar horas o días.</dd>
+      <dt>Tecnología</dt><dd>Un script Python de larga duración que, en cada turno, hace llamadas a un servicio externo de inteligencia artificial (<strong>DeepInfra</strong>) para generar el texto, y lee/escribe en Postgres para llevar la cuenta del estado del mundo.</dd>
+      <dt>De dónde viene</dt><dd>El <code>campaign_id</code> (estación 3), el estado ya sembrado (estaciones 4–5), y cuántos turnos faltan — calculado como 1,400 menos lo que la campaña ya tenga generado, para poder retomarla si se corta a mitad de camino sin repetir trabajo.</dd>
+      <dt>A dónde va</dt><dd>Cada turno generado se registra en la base de datos y, como respaldo legible por humanos, en un archivo de texto en el disco mientras el proceso corre.</dd>
+      <dt>Dónde se guarda</dt><dd>Tres lugares, con jerarquías distintas. <strong>Fuente de verdad:</strong> la tabla <code>turn_log</code> de Postgres (una fila por turno; de ahí se reconstruye la campaña completa, sin importar cuántas veces se cortó y se retomó), y en la misma transacción se actualiza <code>campaigns.current_turn</code>. <strong>Medición:</strong> una fila por turno en <code>turn_validation</code>, y los cambios de estado del mundo en <code>state_deltas</code>. <strong>Bitácora legible:</strong> un archivo <code>.md</code> nuevo en <code>logs/</code> por cada corrida — es diagnóstico para humanos, no fuente de verdad. Detalle en <a href="#a6">A6</a>, <a href="#b4">B4</a> y <a href="#d2">D2</a>.</dd>
+      <dt>Qué bloquea</dt><dd>Si se agota el saldo de la cuenta del servicio de IA, o hay un error no controlado, el motor se detiene — por eso el diseño de "calcular cuánto falta" en vez de "repetir desde cero" es importante.</dd>
+      <dt>Qué desbloquea</dt><dd>Literalmente el resto del proyecto: desde acá, el turno 1 real puede empezar.</dd>
+    </dl>
+    <div class="why-box">
+      <div class="lbl">Por qué se diseñó así</div>
+      <p>Separar "arrancar" de "generar cada turno individual" permite pausar, retomar y auditar la generación sin perder el trabajo ya hecho — el mismo principio que llevó a corregir, más adelante en el proyecto, un error donde el número de turnos a generar era un valor fijo en vez de calcularse dinámicamente cada vez que se retomaba una campaña cortada.</p>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <h2 id="estacion1">Estación 1 desde cero: los «archivos estructurados»</h2>
+  <p>Esta sección asume que <strong>no sabes nada</strong>: ni qué es un JSON, ni una «llave», ni un «enum». Está escrita como la conversación que tendrías si le fueras haciendo preguntas a alguien que sí sabe, sin miedo a preguntar lo obvio. Cada tema termina con un recuadro de cuatro líneas: <strong>cómo es la estructura, por qué así, en base a qué, y por qué no de otra forma</strong>. Las etiquetas <span class="tag-doc">Documentado</span> (sale del repositorio: código, esquema, datos de los 27 archivos que revisé) y <span class="tag-mine">Mi análisis</span> (mi razonamiento, no algo escrito por ti) siguen el mismo criterio que en el resto de la página.</p>
+
+  <div class="station" id="e1">
+    <div class="station-head">
+      <span class="station-num small">E1</span>
+      <span class="station-title">¿Qué es «estructurado» y por qué hay dos tipos de archivo?</span>
+    </div>
+    <div class="qa"><p class="q">Si ya escribí toda la historia en un texto, ¿para qué necesito además «archivos estructurados»?</p>
+    <div class="a"><p>Porque un texto lo entiende una persona (o una IA leyéndolo), pero un programa no. Si en el lore dices «Yenna, la capitana, vive en el cuartel de la milicia y desconfía de los forasteros», un programa no puede saber con certeza <em>quién</em> es Yenna, <em>dónde</em> está ni <em>cuánto</em> desconfía. Lo «estructurado» es escribir esa misma información en casilleros con nombre fijo: <code>"name": "Yenna Roldós"</code>, <code>"location": "cuartel_milicia"</code>, <code>"trust": 10</code>. Un programa lee el casillero llamado <code>trust</code> y sabe qué hacer con el número. Con prosa tendría que adivinar.</p></div></div>
+    <div class="qa"><p class="q">¿Entonces el texto sobra?</p>
+    <div class="a"><p>No, cumple otro trabajo. <span class="tag-doc">Documentado</span> El esquema de la base lo formula así: la prosa responde «¿cómo se siente estar aquí?» (atmósfera, tono, lo que hace que la historia se sienta viva) y las entidades estructuradas responden «¿quién gobierna, quién está vivo, qué sabe cada uno?». El código del experimento <em>no</em> lee el lore en prosa para tomar decisiones: solo lo lee como texto de ambientación. Las decisiones salen de los casilleros.</p></div></div>
+    <div class="qa"><p class="q">¿Por qué no escribir todo estructurado y olvidarse de la prosa?</p>
+    <div class="a"><p><span class="tag-mine">Mi análisis</span> Porque los casilleros no transmiten <em>tono</em>. Un campo <code>"description": "…"</code> puede contener un párrafo, pero una lista de 200 campos no le da a un narrador (humano o IA) la sensación de un lugar. Además, el experimento compara <em>coherencia narrativa</em>: necesita material narrativo de partida, no solo datos.</p></div></div>
+    <div class="qa"><p class="q">¿Y por qué no escribir todo en prosa y que la IA extraiga los datos?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Ese fue exactamente el error que originó el script de siembra: cuando los personajes existían solo en la prosa, la consulta que arma el estado de un PNJ devolvía <code>None</code> y el motor se caía con <code>TypeError: 'NoneType' object is not subscriptable</code>. <span class="tag-mine">Mi análisis</span> Y hay una razón de fondo para el experimento: si se extrajera con IA, los dos brazos (G1 y G2) podrían «entender» el lore de forma distinta, y la comparación dejaría de ser justa. Con casilleros escritos por una persona, los dos brazos parten de <em>exactamente</em> los mismos datos.</p></div></div>
+    <div class="qa"><p class="q">¿Cuáles son los tres archivos, entonces?</p>
+    <div class="a"><p>Uno de prosa (<code>corpus/real/lore_&lt;lugar&gt;.md</code>) y dos estructurados (<code>fixtures/real/world_parNN.json</code> = el mundo, y <code>fixtures/real/personas_parNN.json</code> = los personajes no jugadores). «<code>NN</code>» es el número de par con dos dígitos: <code>03</code>, <code>17</code>. La palabra <em>fixture</em> (que aparece en el nombre de la carpeta) es jerga de programadores para «datos de partida escritos a mano para arrancar un sistema»; no tiene nada de misterioso.</p></div></div>
+    <dl class="spec">
+      <dt>Estructura</dt><dd>Un archivo de prosa sin esquema + dos JSON con casilleros de nombre fijo.</dd>
+      <dt>Por qué así</dt><dd>La prosa da atmósfera; los casilleros dan exactitud. Cada uno cubre lo que el otro no puede.</dd>
+      <dt>En base a qué</dt><dd><span class="tag-doc">Documentado</span> El comentario del esquema («¿cómo se siente estar aquí?» vs «¿quién gobierna?») y el bug del <code>None</code> que motivó <code>sembrar_mundo_real.py</code>.</dd>
+      <dt>Por qué no otra</dt><dd>Solo prosa: el programa no puede decidir nada. Solo datos: sin atmósfera. Extraer con IA: los dos brazos podrían leer distinto y se rompería la justicia de la comparación.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="e2">
+    <div class="station-head">
+      <span class="station-num small">E2</span>
+      <span class="station-title">Cómo se lee un JSON en dos minutos</span>
+    </div>
+    <div class="qa"><p class="q">¿Qué es un JSON?</p>
+    <div class="a"><p>Es una forma de escribir datos en un archivo de texto, con reglas muy estrictas de puntuación, que casi cualquier lenguaje de programación sabe leer. Su nombre es una sigla en inglés (<em>JavaScript Object Notation</em>), pero no necesitas saber JavaScript. Es como llenar un formulario, pero escrito con símbolos en vez de casillas impresas.</p></div></div>
+<pre class="code">{
+  "name": "Yenna Roldós",
+  "warmth": 40,
+  "alive": true,
+  "traits": ["disciplinada", "leal"],
+  "voice": { "pace": "corta", "tone": "seca" },
+  "fear": null
+}</pre>
+    <div class="twrap"><table>
+      <tr><th>Pieza</th><th>Qué es, sin jerga</th><th>Ejemplo del bloque de arriba</th></tr>
+      <tr><td><code>{ … }</code> llaves</td><td>Una «ficha»: un conjunto de casilleros. Se llama <strong>objeto</strong>.</td><td>Todo el bloque, y también <code>"voice"</code> por dentro.</td></tr>
+      <tr><td><code>"name":</code> la <strong>clave</strong> o <strong>llave</strong> (en inglés, <em>key</em>)</td><td>El rótulo del casillero. Siempre entre comillas, siempre seguida de dos puntos.</td><td><code>"warmth"</code>, <code>"traits"</code>.</td></tr>
+      <tr><td>El <strong>valor</strong></td><td>Lo que va dentro del casillero, a la derecha de los dos puntos.</td><td><code>"Yenna Roldós"</code>, <code>40</code>, <code>true</code>…</td></tr>
+      <tr><td><code>"texto"</code> — <strong>string</strong> (cadena)</td><td>Un texto. Siempre entre comillas dobles.</td><td><code>"Yenna Roldós"</code>.</td></tr>
+      <tr><td><code>40</code>, <code>-15</code>, <code>0.9</code> — <strong>número</strong></td><td>Un número, sin comillas. Si le pones comillas (<code>"40"</code>) deja de ser número y pasa a ser texto.</td><td><code>"warmth": 40</code>.</td></tr>
+      <tr><td><code>true</code> / <code>false</code> — <strong>booleano</strong></td><td>Un sí o un no. Sin comillas y en minúscula.</td><td><code>"alive": true</code>.</td></tr>
+      <tr><td><code>null</code></td><td>«Aquí no hay nada, a propósito». Distinto de <code>0</code> y de <code>""</code>: <code>0</code> es un número, <code>""</code> es un texto vacío, <code>null</code> es ausencia.</td><td><code>"fear": null</code>.</td></tr>
+      <tr><td><code>[ … ]</code> corchetes — <strong>lista</strong> (<em>array</em>)</td><td>Una colección ordenada de cosas, separadas por coma.</td><td><code>"traits": [ … ]</code>.</td></tr>
+      <tr><td>La <strong>coma</strong></td><td>Separa un casillero del siguiente. <em>No</em> va después del último.</td><td>Detrás de cada línea menos <code>"fear"</code>.</td></tr>
+    </table></div>
+    <div class="qa"><p class="q">¿Qué pasa si me olvido una coma o unas comillas?</p>
+    <div class="a"><p>El archivo entero deja de ser válido y el programa que lo lee se detiene con un mensaje de error que indica la línea. Por eso existe la estación 2: revisa antes de gastar dinero. <span class="tag-mine">Mi análisis</span> El JSON es estricto a propósito: mejor que falle fuerte a que interprete algo a medias sin avisar.</p></div></div>
+    <div class="qa"><p class="q">¿Por qué las claves están en inglés y los textos en español?</p>
+    <div class="a"><p><span class="tag-mine">Mi análisis</span> Las claves (<code>name</code>, <code>threshold</code>) son los mismos nombres que usan las columnas de la base de datos y el código Python, que están en inglés; el JSON se traduce casi uno a uno a esas columnas. Los <em>valores</em> de texto están en español porque es lo que se narra a la persona que juega.</p></div></div>
+    <div class="qa"><p class="q">¿Y por qué JSON y no una hoja de Excel?</p>
+    <div class="a"><p>Una hoja es una tabla plana: filas y columnas. Un personaje tiene cosas que no caben en una celda: una <em>lista</em> de rasgos, una ficha <em>dentro</em> de otra ficha (el bloque <code>ibf</code>), varios secretos. JSON permite anidar esas cosas de forma natural. Más detalle de las alternativas (CSV, YAML, SQL a mano) en la <a href="#a2">ficha A2</a>.</p></div></div>
+    <dl class="spec">
+      <dt>Estructura</dt><dd>Objetos <code>{}</code> con claves y valores; listas <code>[]</code>; valores de cinco tipos: texto, número, booleano, <code>null</code> y otro objeto/lista.</dd>
+      <dt>Por qué así</dt><dd>Es el formato de datos que casi todo lenguaje lee sin instalar nada; permite anidar y se valida por script.</dd>
+      <dt>En base a qué</dt><dd><span class="tag-doc">Documentado</span> El seeder usa <code>json.load</code> de Python; los nombres de clave coinciden con las columnas de <code>001_schema.sql</code>.</dd>
+      <dt>Por qué no otra</dt><dd>CSV/Excel: sin anidación. YAML: requiere una librería extra y tiene trampas de tipos. SQL escrito a mano: no permite validar referencias antes de insertar.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="e3">
+    <div class="station-head">
+      <span class="station-num small">E3</span>
+      <span class="station-title">«key», UUID, enum, jsonb: cuatro palabras que aparecen todo el rato</span>
+    </div>
+    <div class="qa"><p class="q">Dices que cada cosa tiene un <code>key</code> y luego un UUID. ¿No es lo mismo?</p>
+    <div class="a"><p>Son dos nombres para lo mismo, usados en momentos distintos. El <code>key</code> (<code>"vega_del_yelmo"</code>) es un apodo corto que <em>tú</em> inventas al escribir el archivo, para que otras partes del archivo puedan señalarlo («el padre de este lugar es <code>valle_del_yelmo</code>»). Solo vale dentro de esos dos archivos. El <strong>UUID</strong> (algo como <code>a106eadd-e9a2-411c-9742-4badda4efce1</code>) es un código largo, aleatorio y único en el mundo que la base de datos exige como identificador real. Al sembrar, un diccionario en memoria (<code>keymap</code>) traduce cada apodo al UUID nuevo, y los apodos desaparecen.</p></div></div>
+    <div class="qa"><p class="q">¿Por qué no escribir directamente los UUID en el JSON?</p>
+    <div class="a"><p>Porque nadie puede escribir ni recordar 36 caracteres aleatorios, y porque <span class="tag-doc">Documentado</span> cada campaña necesita UUID <em>propios</em>: el <code>id</code> es llave primaria global. Si el mismo UUID se usara en las dos campañas de un par (G1 y G2), la segunda inserción chocaría con la primera. Por eso se generan al sembrar (<code>uuid4</code>, aleatorio) y no derivados de la clave (<code>uuid5</code>, que da siempre el mismo resultado).</p></div></div>
+    <div class="qa"><p class="q">¿Qué es un «enum»?</p>
+    <div class="a"><p>Una lista <em>cerrada</em> de valores permitidos. Por ejemplo, el estado de un PNJ solo puede ser <code>alive</code>, <code>dead</code>, <code>missing</code> o <code>captured</code>; cualquier otra palabra (<code>"herido"</code>, <code>"Alive"</code>) es rechazada por la base. <span class="tag-mine">Mi análisis</span> Se usa para todo lo que un programa tiene que <em>comparar</em>: si dejaras escribir libremente, «muerto», «muerta» y «fallecido» serían tres cosas distintas para el código. Lo que solo se <em>lee</em> (descripciones, voz) queda como texto libre.</p></div></div>
+    <div class="qa"><p class="q">¿Y «jsonb»?</p>
+    <div class="a"><p>Es un tipo de columna de Postgres que guarda un pedazo de JSON dentro de una sola celda (la «b» es de <em>binario</em>: lo guarda en un formato que se puede consultar rápido). Se usa para bloques con forma variable que no merecen una tabla propia, como <code>culture_overrides</code> y <code>on_fire_event</code>. Ver <a href="#b1">B1</a> y siguientes para el detalle del lado base de datos.</p></div></div>
+    <div class="qa"><p class="q">¿Qué es una «referencia cruzada»?</p>
+    <div class="a"><p>Cuando un dato señala a otro por su <code>key</code>: un PNJ dice <code>"location": "cuartel_milicia"</code>, así que ese lugar <em>debe existir</em> en el otro archivo. Si escribes <code>"cuartel_milicia"</code> en un sitio y <code>"cuartel_de_milicia"</code> en otro, la referencia queda rota. La estación 2 existe para cazar exactamente eso.</p></div></div>
+    <dl class="spec">
+      <dt>Estructura</dt><dd>Apodo legible (<code>key</code>) dentro de los archivos → UUID en la base; enums para lo que se compara; <code>jsonb</code> para bloques flexibles.</dd>
+      <dt>Por qué así</dt><dd>Legible al escribir, único al guardar, estricto donde el código decide.</dd>
+      <dt>En base a qué</dt><dd><span class="tag-doc">Documentado</span> Docstring de <code>sembrar_mundo_real.py</code> (<code>keymap</code>, <code>uuid4</code> vs <code>uuid5</code>) y los <code>CREATE TYPE</code> de <code>001_schema.sql</code>.</dd>
+      <dt>Por qué no otra</dt><dd>UUID a mano: ilegible y repetible entre campañas. Texto libre en vez de enum: el código no puede comparar de forma fiable.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="e4">
+    <div class="station-head">
+      <span class="station-num small">E4</span>
+      <span class="station-title"><code>world_parNN.json</code> · lugares (<code>locations</code>)</span>
+    </div>
+    <div class="qa"><p class="q">¿Qué es un «lugar» para el sistema?</p>
+    <div class="a"><p>Cualquier sitio con nombre donde puede pasar algo: una región, un pueblo, una taberna, unas ruinas. En los 27 archivos hay entre 6 y 8 lugares por par (194 en total): 45 regiones, 29 asentamientos, 99 edificios y el resto ruinas, monumentos, mazmorras, etc. <span class="tag-doc">Documentado</span> Los tipos permitidos (<code>kind</code>) son una lista cerrada: <code>region</code>, <code>realm</code>, <code>settlement</code>, <code>district</code>, <code>building</code>, <code>dungeon</code>, <code>ruin</code>, <code>crypt</code>, <code>wilderness</code>, <code>landmark</code>.</p></div></div>
+    <div class="qa"><p class="q">¿Para qué sirve <code>parent</code>?</p>
+    <div class="a"><p>Para decir «este lugar está dentro de aquel»: la taberna está dentro del asentamiento, que está dentro del valle. Se forma un árbol. Es útil porque, <span class="tag-doc">Documentado</span> según el esquema, así el sistema sabe que si el grupo «sale del pueblo» sigue estando «en el valle», y que la cultura local se puede heredar hacia abajo en el árbol (ver más abajo, con una salvedad importante sobre si esa herencia se usa al narrar). El lugar de más arriba lleva <code>"parent": null</code> (sin padre). El seeder inserta los padres antes que los hijos y detecta ciclos (A dentro de B dentro de A), que no tendrían sentido.</p></div></div>
+    <div class="qa"><p class="q">¿Qué significan <code>sketch</code> y <code>observed</code> en <code>detail</code>?</p>
+    <div class="a"><p>Son dos «niveles de detalle». Un lugar <code>sketch</code> (boceto) tiene solo un texto corto de referencia (<code>sketch_text</code>): el sistema sabe que existe pero no lo ha descrito de verdad. Un lugar <code>observed</code> (observado) trae una descripción completa y <em>congelada</em> (<code>description_canonical</code>): siempre que el grupo vuelva, se le devuelve el mismo texto. En los 27 pares: 126 lugares en boceto y 68 observados. Existe además un tercer nivel, <code>full</code>, que no se usa en estos archivos.</p></div></div>
+    <div class="qa"><p class="q">¿Por qué congelar la descripción?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> El esquema lo explica: si el grupo vuelve a un sitio, debe recibir <em>la misma</em> descripción, salvo que el estado del mundo haya cambiado, y en ese caso la diferencia es contenido narrativo. <span class="tag-mine">Mi análisis</span> Es justo la coherencia que mide la tesis: un pueblo que un turno tiene casas de piedra y otro turno de madera sería una contradicción. El validador exige descripción canónica a todo lugar <code>observed</code> (error) y avisa si un boceto no trae texto.</p></div></div>
+    <div class="qa"><p class="q">¿Qué es <code>culture_overrides</code>?</p>
+    <div class="a"><p>Cultura local que <em>difiere de la del lugar padre</em>. Si el valle usa cierta moneda y cierto idioma, el pueblo no repite eso: solo anota lo que cambia. Las claves que aparecen en los archivos son cinco: <code>language</code> (idioma), <code>currency</code> (moneda), <code>attitude_to_outsiders</code> (trato al forastero), <code>notable_laws</code> (leyes llamativas) y <code>tensions</code> (tensiones). <span class="tag-doc">Documentado</span> En la base existe una función recursiva, <code>location_context()</code>, que recorre la cadena de ancestros y combina los valores (el lugar hijo gana sobre el padre). <strong>Corrección tras la revisión de la Fase 1:</strong> ningún archivo Python llama a esa función, así que durante la generación de campañas estos rasgos <em>no</em> se inyectan en los prompts del narrador; solo el instrumento de medición <code>anclaje_escenario.py</code> los lee. Por tanto, la herencia cultural está sembrada y disponible, pero no se aplica al narrar. <span class="tag-mine">Mi análisis</span> Es como las reglas de una casa: no repites «se prohíbe fumar» en cada cuarto, lo dices en la entrada y anotas solo la excepción de la terraza.</p></div></div>
+    <div class="qa"><p class="q">¿Y <code>visibility</code>?</p>
+    <div class="a"><p>Quién puede saber que ese lugar existe. Tres valores: <code>dm_only</code> (solo el narrador; el jugador no lo sabe todavía), <code>party</code> (el grupo lo conoce; es el valor por defecto) y <code>player</code> (lo sabe el jugador, no necesariamente su personaje). En los 27 archivos: 152 lugares son <code>party</code> y 42 son <code>dm_only</code> (por ejemplo, la Cresta Muda del Par 03: un sitio misterioso que el grupo todavía no debe conocer). <span class="tag-mine">Mi análisis</span> Sirve para que la IA narradora no «espoilee» un secreto por accidente, y para poder medir después si alguien reveló algo que no sabía.</p></div></div>
+    <dl class="spec">
+      <dt>Estructura</dt><dd>Lista <code>locations[]</code>; cada lugar: <code>key</code>, <code>kind</code>, <code>name</code>, <code>parent</code>, <code>detail</code>, <code>sketch_text</code> <em>o</em> <code>description_canonical</code>, <code>culture_overrides</code>, <code>visibility</code>.</dd>
+      <dt>Por qué así</dt><dd>Árbol (parent) para herencia y ubicación; nivel de detalle para no describir de más y congelar lo que ya se describió; visibilidad para separar lo que se sabe de lo que no.</dd>
+      <dt>En base a qué</dt><dd><span class="tag-doc">Documentado</span> Los enums <code>location_kind</code>, <code>detail_level</code>, <code>visibility_level</code>; la función <code>location_context</code> (herencia de cultura; definida en SQL pero sin uso en el motor, ver Fase 1); las reglas del validador.</dd>
+      <dt>Por qué no otra</dt><dd>Lista plana sin padre: se pierde «dentro de» y la herencia. Repetir la cultura completa en cada lugar: se contradice tarde o temprano. Describir todo en detalle desde el principio: costoso y fuerza a inventar lo que quizá nunca se visite.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="e5">
+    <div class="station-head">
+      <span class="station-num small">E5</span>
+      <span class="station-title"><code>world_parNN.json</code> · facciones (<code>factions</code>)</span>
+    </div>
+    <div class="qa"><p class="q">¿Qué es una facción?</p>
+    <div class="a"><p>Un grupo con intereses propios: una milicia, una banda de asaltantes, un gremio de mercaderes. Casi todos los pares llevan dos (25 de 27), enfrentadas o con objetivos distintos, y eso es lo que genera conflicto. Cada una lleva <code>key</code>, <code>name</code>, <code>description</code> y <code>seat</code>.</p></div></div>
+    <div class="qa"><p class="q">¿Qué es <code>seat</code>?</p>
+    <div class="a"><p>La «sede»: el <code>key</code> del lugar donde la facción tiene su base. Es una referencia cruzada (debe existir en <code>locations</code>) que el validador comprueba.</p></div></div>
+    <div class="qa"><p class="q">¿Y <code>stance_party</code> y <code>knows_about_party</code>?</p>
+    <div class="a"><p><code>stance_party</code> es la postura de la facción hacia el grupo, en una escala de −100 (hostil) a 100 (aliada). En los 52 registros de facciones de los 27 pares, 46 empiezan en <code>0</code> (neutral) y 6 en <code>10</code>: el experimento arranca casi «en blanco» a propósito. <code>knows_about_party</code> es un sí/no: si la facción sabe que el grupo existe. Lo normal es <code>false</code> al inicio: nadie los conoce todavía.</p></div></div>
+    <dl class="spec">
+      <dt>Estructura</dt><dd>Lista <code>factions[]</code> con <code>key</code>, <code>name</code>, <code>description</code>, <code>seat</code>, <code>stance_party</code> (−100…100), <code>knows_about_party</code> (booleano).</dd>
+      <dt>Por qué así</dt><dd><span class="tag-mine">Mi análisis</span> El drama en D&amp;D nace de grupos con intereses opuestos; darles postura numérica permite que cambie con el tiempo y se pueda medir.</dd>
+      <dt>En base a qué</dt><dd><span class="tag-doc">Documentado</span> Columnas de la tabla <code>factions</code> y validación de <code>seat</code> en <code>validar_fixtures_real.py</code>; el conteo de 2 facciones por par sale del propio validador (avisa si no son 2).</dd>
+      <dt>Por qué no otra</dt><dd>Dejarlas solo en la prosa: no se podría enlazar cada reloj y cada misión a una facción concreta ni medir su postura.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="e6">
+    <div class="station-head">
+      <span class="station-num small">E6</span>
+      <span class="station-title"><code>world_parNN.json</code> · relojes (<code>clocks</code>)</span>
+    </div>
+    <div class="qa"><p class="q">¿Qué es un «reloj de facción»? No es un reloj de verdad.</p>
+    <div class="a"><p>Es una barra de progreso que avanza sola con el tiempo del juego, sin que nadie la toque. Idea: una facción tiene un plan («interceptar la próxima caravana») y cada día que pasa está un poco más cerca de lograrlo. Cuando la barra se llena, ocurre algo grande en el mundo, lo quiera o no el grupo. Es una técnica común en juegos de rol para que el mundo «se mueva» aunque los jugadores estén mirando hacia otro lado.</p></div></div>
+    <div class="qa"><p class="q">¿Qué significa cada campo?</p>
+    <div class="a"><div class="twrap"><table>
+      <tr><th>Campo</th><th>Qué es</th><th>Valores reales en los 27 pares</th></tr>
+      <tr><td><code>faction</code></td><td><code>key</code> de la facción dueña del plan.</td><td>Debe existir; el validador lo comprueba.</td></tr>
+      <tr><td><code>agenda</code></td><td>El plan, en una frase.</td><td>Texto libre.</td></tr>
+      <tr><td><code>progress</code></td><td>Cuánto lleva de la barra al empezar.</td><td>1 a 4.</td></tr>
+      <tr><td><code>threshold</code></td><td>El «umbral»: cuánto hay que llegar para que se dispare.</td><td>10, 20 o 30.</td></tr>
+      <tr><td><code>rate_per_game_day</code></td><td>Cuánto avanza por cada día de juego.</td><td>Entre 0.35 y 1.1.</td></tr>
+      <tr><td><code>on_fire_event</code></td><td>Lo que ocurre al llenarse: titular (<code>headline</code>), alcance (<code>scope</code>, un <code>key</code> de lugar) y consecuencia (<code>consequence</code>).</td><td>Un objeto anidado, guardado como <code>jsonb</code>.</td></tr>
+    </table></div></div></div>
+    <div class="qa"><p class="q">¿Cuánto dura un «día de juego»? ¿Cómo sé cuándo salta?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> El sistema convierte turnos en días con una regla fija: <strong>1 día de juego cada 20 turnos</strong> (<code>TURNOS_POR_DIA = 20</code> en <code>db.py</code>), de modo que 1,400 turnos son 70 días. La cuenta es sencilla. Ejemplo del Par 03: <code>progress 2</code>, <code>threshold 10</code>, <code>rate 0.9</code> → faltan 8 puntos → 8 ÷ 0.9 = 8.9 días → se redondea a 9 días → 9 × 20 = <strong>turno 180</strong>. Cada turno, una función de la base (<code>advance_clocks</code>) suma <code>días × rate</code> al progreso y marca el reloj como disparado en cuanto <code>progress ≥ threshold</code>. Un reloj dispara <em>una sola vez</em>.</p></div></div>
+    <div class="qa"><p class="q">¿Por qué esa regla de 20 turnos y no que la IA decida cuándo pasa el tiempo?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Los pares 01–17 se corrieron con un motor donde el reloj nunca avanzó; la regla determinista rige desde el Par 18. <span class="tag-mine">Mi análisis</span> Determinista significa que el mismo turno produce siempre el mismo día. Así el paso del tiempo no depende de lo que la IA narre y es idéntico en ambos brazos, y se puede medir después si el evento del reloj se reflejó en la narración.</p></div></div>
+    <div class="qa"><p class="q">¿Por qué unos pares llevan 1 reloj y otros 3?</p>
+    <div class="a"><p>Como cada reloj dispara una sola vez, con uno solo el mundo «se mueve» una única vez en 1,400 turnos. <span class="tag-doc">Documentado</span> Desde el Par 18 el validador espera <strong>3 relojes escalonados</strong> (temprano, medio y tardío) y avisa si hay menos, o si dos disparan a menos de 200 turnos entre sí. Los archivos lo reflejan: 17 pares con 1 reloj (01–17) y 10 con 3 (18–27). Además, el validador da <em>error</em> si un reloj dispararía después del turno 1,400 (nunca ocurriría) y <em>aviso</em> si dispara antes del turno 100 (antes de que la escena esté establecida).</p></div></div>
+    <dl class="spec">
+      <dt>Estructura</dt><dd>Lista <code>clocks[]</code>; por reloj: <code>faction</code>, <code>agenda</code>, <code>progress</code>, <code>threshold</code>, <code>rate_per_game_day</code> y <code>on_fire_event{headline, scope, consequence}</code>.</dd>
+      <dt>Por qué así</dt><dd>Tres números (dónde va, dónde termina, qué tan rápido) bastan para calcular <em>cuándo</em> dispara; el evento va aparte para que la consecuencia esté escrita de antemano y no la improvise nadie.</dd>
+      <dt>En base a qué</dt><dd><span class="tag-doc">Documentado</span> La tabla <code>faction_clocks</code>, la función <code>advance_clocks</code>, <code>TURNOS_POR_DIA</code> y las comprobaciones de <code>validar_fixtures_real.py</code>. <span class="tag-mine">Mi análisis</span> El concepto de «reloj de facción» es una técnica conocida de juegos de rol de mesa; en el repo no encontré una cita que la acredite.</dd>
+      <dt>Por qué no otra</dt><dd>Que la IA decida cuándo actúa una facción: no reproducible, y depende de la arquitectura. Un único reloj global: el mundo se movería una vez. Fecha fija por turno (sin progreso ni ritmo): más rígido y sin una forma natural de que los plazos se calibren con <code>threshold</code> y <code>rate</code>.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="e7">
+    <div class="station-head">
+      <span class="station-num small">E7</span>
+      <span class="station-title"><code>world_parNN.json</code> · misiones (<code>quests</code>)</span>
+    </div>
+    <div class="qa"><p class="q">¿Qué es una misión aquí?</p>
+    <div class="a"><p>Un objetivo o misterio que el grupo puede perseguir. Cada par lleva exactamente dos, y en los 27 archivos el patrón es el mismo: una <strong>visible y activa</strong> (<code>status: "active"</code>, <code>visibility: party</code>) y una <strong>oculta</strong> (<code>status: "unknown"</code>, <code>dm_only</code>): un misterio que el narrador sabe pero el grupo aún no.</p></div></div>
+    <div class="qa"><p class="q">¿Qué valores puede tener <code>status</code>?</p>
+    <div class="a"><p>Es un enum: <code>unknown</code> (el grupo no sabe que existe), <code>active</code> (en curso), <code>completed</code>, <code>failed</code>, <code>abandoned</code>.</p></div></div>
+    <div class="qa"><p class="q">¿Y <code>next_step_known</code> y <code>completion_condition</code>?</p>
+    <div class="a"><p><code>next_step_known</code> es un sí/no: si el grupo ya sabe qué hacer a continuación (útil para saber si está «atascado»). <code>completion_condition</code> es un texto: «esta misión se cierra cuando…». Sirve para que ni el jugador ni la IA tengan que adivinar cuándo terminó. <span class="tag-mine">Mi análisis</span> <strong>Ojo:</strong> como en la <a href="#a2">ficha A2</a>, encontré que el script de siembra no copia <code>completion_condition</code> a la base, aunque la tabla tiene la columna y <code>db.py</code> la lee. Compruébalo con <code>SELECT title, completion_condition FROM quests WHERE campaign_id = '…';</code>.</p></div></div>
+    <dl class="spec">
+      <dt>Estructura</dt><dd>Lista <code>quests[]</code>: <code>key</code>, <code>title</code>, <code>description</code>, <code>status</code>, <code>next_step_known</code>, <code>completion_condition</code> (y <code>visibility</code>).</dd>
+      <dt>Por qué así</dt><dd>Una misión visible da al jugador algo que hacer desde el turno 1; una oculta da al narrador una capa de misterio que descubrir.</dd>
+      <dt>En base a qué</dt><dd><span class="tag-doc">Documentado</span> Enum <code>quest_status</code>, columna <code>completion_condition</code>, y el patrón que verifiqué en los 27 archivos (27 activas + 27 ocultas). Es una regla de diseño de cada par, no una restricción del código.</dd>
+      <dt>Por qué no otra</dt><dd>Sin misión oculta: no habría material para medir revelaciones de información. Con muchas misiones: el tramo de 1,400 turnos se dispersa y se vuelve difícil de comparar entre pares.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="e8">
+    <div class="station-head">
+      <span class="station-num small">E8</span>
+      <span class="station-title"><code>world_parNN.json</code> · el personaje jugador (<code>characters</code>) y el bloque <code>campaign</code></span>
+    </div>
+    <div class="qa"><p class="q">¿Por qué la lista de personajes tiene un solo elemento?</p>
+    <div class="a"><p>Porque cada par tiene un único personaje jugador (el «PJ»: el que controla quien juega, en este caso un jugador simulado). El validador da <em>error</em> si hay uno distinto de exactamente 1. Sus campos: <code>key</code> (por convención <code>pj_pjNN</code>), <code>name</code>, <code>species</code>, <code>class</code>, <code>hp</code> y <code>hp_max</code>.</p></div></div>
+    <div class="qa"><p class="q">¿Qué es <code>hp</code>?</p>
+    <div class="a"><p>«Hit points», puntos de vida. <code>hp</code> es la vida actual y <code>hp_max</code> la máxima. Al empezar, tienen que ser iguales (regla del validador: <code>hp == hp_max</code>), porque el personaje arranca sano. Ejemplo: Corvin, bardo de nivel 3 en el Par 03, tiene 21/21.</p></div></div>
+    <div class="qa"><p class="q">¿Por qué <code>species</code> es <code>null</code> y <code>class</code> ("bardo 3") no llega a la base?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> En los 27 archivos <code>species</code> viene en <code>null</code>. El script solo copia <code>name</code>, <code>species</code>, <code>hp</code> y <code>hp_max</code> a Postgres; la clase y el nivel se quedan en el JSON. Las estadísticas completas del personaje (características y 24 modificadores) están en <code>jugador/personajes_jugadores.json</code> (27 personajes generados con la semilla 20260901), que lee <code>dados.py</code> para las tiradas.</p></div></div>
+    <div class="qa"><p class="q">¿Y qué es el bloque <code>campaign</code>?</p>
+    <div class="a"><p>Informativo: una nota del autor y el <code>world_tone</code>. <span class="tag-doc">Documentado</span> El seeder no lo lee; el tono real entra como argumento al crear la campaña (estación 3). En los 27 pares el tono se reparte así: 8 <code>mixed</code>, 7 <code>grimdark</code>, 6 <code>heroic</code> y 6 <code>light</code>, para que ninguna arquitectura se vea favorecida por un solo tipo de historia.</p></div></div>
+    <dl class="spec">
+      <dt>Estructura</dt><dd>Lista <code>characters[]</code> con 1 elemento; objeto <code>campaign{}</code> informativo.</dd>
+      <dt>Por qué así</dt><dd>Un único PJ mantiene constante la variable «quién juega»; el <code>hp == hp_max</code> garantiza el mismo punto de partida físico.</dd>
+      <dt>En base a qué</dt><dd><span class="tag-doc">Documentado</span> Validador (exactamente 1 personaje, <code>hp == hp_max</code>), tabla <code>characters</code> y <code>sembrar_mundo_real.py</code>.</dd>
+      <dt>Por qué no otra</dt><dd>Varios PJ: más variables sin control. Guardar clase y modificadores en Postgres: nada del código de dados los lee de ahí.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="e9">
+    <div class="station-head">
+      <span class="station-num small">E9</span>
+      <span class="station-title"><code>personas_parNN.json</code> · quién es cada PNJ</span>
+    </div>
+    <div class="qa"><p class="q">¿Qué es un «PNJ»?</p>
+    <div class="a"><p>«Personaje No Jugador»: cualquier personaje del mundo que no controla quien juega. En D&amp;D es el tabernero, la capitana, el mercader. Aquí los interpreta la IA. Cada par tiene 3: dos <strong>centrales</strong> (con ficha completa, enfrentados o en tensión) y uno <strong>«de paso»</strong> (casi vacío a propósito, ver E12). En total, 81 PNJ en los 27 pares: 54 centrales y 27 de paso.</p></div></div>
+    <div class="qa"><p class="q">¿Cómo está armado el archivo por fuera?</p>
+    <div class="a"><p>Es un objeto grande cuyas claves son los apodos de cada PNJ (<code>"yenna"</code>, <code>"ferran"</code>, <code>"petra"</code>); cada valor es la ficha de esa persona. Las claves que empiezan con guion bajo (<code>_nota</code>, <code>_arquetipo</code>, <code>_promocion</code>) son notas del autor que el script de siembra se salta: sirven para que quien lea el archivo entienda la intención, no para el programa.</p></div></div>
+    <div class="qa"><p class="q">Empecemos por lo básico de la ficha: <code>name</code>, <code>species</code>, <code>social_role</code>, <code>appearance</code>, <code>location</code>, <code>status</code>.</p>
+    <div class="a"><p>Son la «tarjeta de identidad». <code>social_role</code> es el oficio o lugar en la comunidad («capitana de la Milicia Popular», «reparte el correo entre las casas del valle»). <code>appearance</code> es una imagen breve para que la IA describa siempre igual a la persona. <code>location</code> es el <code>key</code> del lugar donde está al empezar (referencia cruzada a <code>world_parNN.json</code>). <code>status</code> es un enum: <code>alive</code>, <code>dead</code>, <code>missing</code> o <code>captured</code>; al empezar todos están <code>alive</code>.</p></div></div>
+    <div class="qa"><p class="q">¿Qué son esos cuatro números de <code>personality</code>: <code>warmth</code>, <code>candor</code>, <code>principle</code>, <code>boldness</code>?</p>
+    <div class="a"><p>Son los <strong>cuatro ejes de personalidad estable</strong>: cada uno va de −100 a 100 (la base rechaza cualquier otro valor con un <code>CHECK</code>), con 0 como punto neutral. Lectura de cada eje: <code>warmth</code> (calidez: −100 frío y distante, +100 afectuoso), <code>candor</code> (franqueza: −100 se guarda todo, +100 dice lo que piensa), <code>principle</code> (apego a principios: −100 pragmático, todo es negociable; +100 rígido, hay cosas que no se hacen) y <code>boldness</code> (audacia: −100 cede y teme; +100 se atreve). Ejemplo del Par 03, Yenna: warmth 40, candor 60, principle 75, boldness 90. <span class="tag-mine">Mi análisis</span> Las definiciones de <code>warmth</code> y <code>candor</code> son mi lectura de los nombres; las de <code>principle</code> y <code>boldness</code> sí las confirma el prompt del Actor.</p></div></div>
+    <div class="qa"><p class="q">¿Para qué sirven en la práctica?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> El prompt del Actor de G1 (<code>dm/prompt_actor_g1.md</code>) los usa para que la <em>reacción</em> dependa de quién es el personaje, no de lo grave que parezca el hecho. Ejemplo textual: ante un soborno, un PNJ con <code>principle</code> alto (+70 o más) lo toma como ofensa y rechaza sin negociar; uno con <code>principle</code> bajo (−70 o menos) no se ofende, solo regatea el precio. Ante una amenaza, alta <code>boldness</code> sube el respeto por quien se atreve; baja <code>boldness</code> provoca que ceda y que el miedo contamine la relación después. La idea: dos personajes con ejes opuestos <em>no pueden</em> reaccionar igual.</p></div></div>
+    <div class="qa"><p class="q">¿En base a qué se eligieron justo esos cuatro ejes? ¿No hay una teoría de la personalidad detrás, como los «Cinco Grandes»?</p>
+    <div class="a"><p><span class="tag-mine">Mi análisis</span> Busqué en el repositorio una referencia bibliográfica que los respalde (Cinco Grandes, Egri, etc.) y <strong>no encontré ninguna</strong>: parecen una decisión de diseño propia y práctica. Cuatro bastan para que dos PNJ reaccionen distinto ante el mismo hecho, con pocos parámetros que un autor pueda razonar. Si tu asesor pregunta por qué cuatro, la respuesta honesta hoy es «criterio de diseño, no derivado de una teoría». Si quieres cerrarlo con literatura, sería un pendiente aparte.</p></div></div>
+    <div class="qa"><p class="q">¿Por qué separar personalidad de disposición?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> La personalidad (los 4 ejes) es <em>estable y escrita a mano</em>: quién eres. La disposición (aprecio, confianza, respeto hacia el grupo, ver E11) es <em>cambiante</em>: qué opinas de estos aventureros hoy. Mezclarlas haría que un mal día cambiara el carácter de la persona.</p></div></div>
+    <div class="qa"><p class="q">¿Y el resto: <code>traits</code>, <code>internal_contradiction</code>, <code>taboos</code>, <code>voice_notes</code>, <code>stated_desire</code>, <code>actual_need</code>, <code>fear</code>?</p>
+    <div class="a"><div class="twrap"><table>
+      <tr><th>Campo</th><th>Qué es</th><th>Por qué existe</th></tr>
+      <tr><td><code>traits</code></td><td>Lista de rasgos cortos («disciplinada»).</td><td>Una etiqueta rápida de carácter.</td></tr>
+      <tr><td><code>internal_contradiction</code></td><td>Algo en lo que la persona <em>no</em> es coherente consigo misma.</td><td><span class="tag-mine">Mi análisis</span> Un personaje sin contradicción suena a plantilla; esto le da profundidad.</td></tr>
+      <tr><td><code>taboos</code></td><td>Lo que jamás haría o diría.</td><td>Un límite que la IA no debe cruzar.</td></tr>
+      <tr><td><code>voice_notes</code></td><td>Cómo habla: ritmo, giros, vocabulario.</td><td><span class="tag-doc">Documentado</span> El esquema lo dice: si el PNJ suena igual en la sesión 8 que en la 1, es porque <code>voice_notes</code> contiene <em>la misma cadena</em>; la consistencia es propiedad del registro, no del modelo.</td></tr>
+      <tr><td><code>stated_desire</code></td><td>Lo que dice querer.</td><td rowspan="2"><span class="tag-mine">Mi análisis</span> El contraste entre lo que quiere y lo que necesita es una técnica clásica de escritura: da al narrador material para escenas con capas.</td></tr>
+      <tr><td><code>actual_need</code></td><td>Lo que en realidad necesita (a veces distinto).</td></tr>
+      <tr><td><code>fear</code></td><td>Su miedo principal.</td><td>Una palanca emocional coherente para escenas de presión.</td></tr>
+    </table></div></div></div>
+    <dl class="spec">
+      <dt>Estructura</dt><dd>Diccionario <code>{ "key_pnj": { … ficha … } }</code>; en cada ficha: identidad, <code>personality{4 ejes}</code>, rasgos de texto, <code>ibf{…}</code>, <code>disposition{…}</code>, <code>knowledge[]</code>, <code>secrets[]</code>.</dd>
+      <dt>Por qué así</dt><dd>Separar lo estable (personalidad, voz) de lo cambiante (disposición, conocimiento) y de lo oculto (secretos) permite darle a cada parte su propia regla en la base.</dd>
+      <dt>En base a qué</dt><dd><span class="tag-doc">Documentado</span> Comentarios del esquema sobre consistencia de personaje; <code>get_persona()</code> en <code>db.py</code>; prompt del Actor (soborno/amenaza). Los cuatro ejes concretos: sin cita externa encontrada.</dd>
+      <dt>Por qué no otra</dt><dd>Solo prosa («es una capitana dura»): la IA la reinterpretaría distinto cada turno. Muchos más ejes (p. ej. un modelo de 30 rasgos): más difícil de autorar y de razonar para 81 PNJ.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="e10">
+    <div class="station-head">
+      <span class="station-num small">E10</span>
+      <span class="station-title"><code>personas_parNN.json</code> · el bloque IBF (Ideal, Vínculo, Defecto)</span>
+    </div>
+    <div class="qa"><p class="q">¿Qué es «IBF»?</p>
+    <div class="a"><p>Siglas de <strong>I</strong>deal, Vínculo (en inglés <strong>B</strong>ond) y Defecto (en inglés <strong>F</strong>law). <span class="tag-doc">Documentado</span> Es el molde de «trasfondo» de la quinta edición de D&amp;D, que el proyecto reutiliza tal cual: tres frases que resumen qué cree un personaje, a quién o qué ama y dónde flaquea.</p></div></div>
+    <div class="qa"><p class="q">¿Qué campos tiene?</p>
+    <div class="a"><div class="twrap"><table>
+      <tr><th>Campo</th><th>Qué es</th></tr>
+      <tr><td><code>ideal_text</code> / <code>ideal_tags</code></td><td>Su ideal (en texto) y unas etiquetas cortas que lo resumen (<code>["deber", "disciplina"]</code>).</td></tr>
+      <tr><td><code>bond_text</code> / <code>bond_strength</code> / <code>bond_targets[]</code></td><td>Su vínculo: texto, intensidad de 0 a 100 (en los 54 PNJ centrales: entre 60 y 90) y a <em>qué</em> está atado. Cada destino es <code>{ "type": "location" | "faction", "key": "…" }</code>: un lugar o una facción del mismo par. En total hay 58 vínculos hacia lugares y 45 hacia facciones.</td></tr>
+      <tr><td><code>flaw_text</code> / <code>flaw_tags</code></td><td>Su defecto (texto) y etiquetas.</td></tr>
+      <tr><td><code>flaw_exploit</code></td><td>La acción concreta que un narrador podría usar para explotar ese defecto (<code>"proponerle_negociar_directamente_con_los_lobos"</code> en Yenna).</td></tr>
+    </table></div></div></div>
+    <div class="qa"><p class="q">¿Por qué <code>bond_targets</code> es una lista de objetos y no un texto?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Porque cada destino se convierte en una <em>fila propia</em> (<code>npc_bond_targets</code>) con el tipo de entidad y el UUID del lugar o facción. Eso permite que el sistema detecte cuándo el grupo «toca lo que el PNJ ama»: si algo le ocurre a la Milicia, el mundo sabe que Yenna debe reaccionar. Si el vínculo estuviera solo escrito en prosa («ama su cuartel»), el programa no podría relacionarlo con el lugar. Según lo que revisé del repo, en la configuración del experimento solo se activa el movimiento de la <strong>afinidad</strong> y solo a partir de estos <code>bond_targets</code> (verifícalo en las constantes de la tesis).</p></div></div>
+    <div class="qa"><p class="q">¿Es verdad que las etiquetas (<code>ideal_tags</code>, <code>flaw_tags</code>) tienen un vocabulario cerrado de 15?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> <strong>No.</strong> Una versión anterior de esta página lo afirmaba y era un error mío. Un comentario del esquema habla de un vocabulario de 15 etiquetas, pero nada lo hace cumplir: la columna es una lista de texto libre y el validador no la revisa. Al contar los 54 PNJ centrales de los 27 archivos hay <strong>68 valores distintos de <code>ideal_tags</code>, 60 de <code>flaw_tags</code> y 52 de <code>flaw_exploit</code></strong> (casi uno por PNJ). También hay variantes de escritura de la misma palabra (por ejemplo <em>compasion</em> y <em>compasión</em>). Además, <code>db.py</code> sí las entrega en la ficha del Actor (<code>get_persona</code>), pero ningún <code>.py</code> toma decisiones según su valor. <span class="tag-mine">Mi análisis</span> Hoy funcionan como <em>texto de ayuda para el narrador</em>, no como una clasificación cerrada. Si más adelante quieres agrupar PNJ por tipo de defecto para el análisis, primero habría que normalizarlas.</p></div></div>
+    <div class="qa"><p class="q">¿Por qué el IBF vive en su propia tabla y no dentro de <code>npcs</code>?</p>
+    <div class="a"><p><span class="tag-mine">Mi análisis</span> Porque es opcional: el PNJ «de paso» no lo tiene, y así <code>npcs</code> no se llena de columnas vacías. Además, <code>ideal_text</code>, <code>bond_text</code> y <code>flaw_text</code> se usan aparte en <code>db.py</code> (consultas de vínculo, ideal y defecto de un PNJ) y no siempre hace falta traer toda la ficha.</p></div></div>
+    <dl class="spec">
+      <dt>Estructura</dt><dd>Objeto <code>ibf{}</code> con tres bloques (ideal, vínculo, defecto) + <code>flaw_exploit</code>; los vínculos son una lista de <code>{type, key}</code>.</dd>
+      <dt>Por qué así</dt><dd>Reutiliza un molde que cualquier jugador de D&amp;D reconoce; convierte «lo que el PNJ ama» en filas que el sistema puede cruzar con lo que le ocurre al mundo.</dd>
+      <dt>En base a qué</dt><dd><span class="tag-doc">Documentado</span> Reglas de trasfondo de D&amp;D 5e (Ideal/Vínculo/Defecto), tablas <code>npc_ibf</code> y <code>npc_bond_targets</code>. El <em>vocabulario de etiquetas</em> no está documentado más allá de un comentario que los datos desmienten.</dd>
+      <dt>Por qué no otra</dt><dd>Solo «personalidad» sin vínculo: no hay manera de detectar cuándo algo le importa. Etiquetas cerradas ya hoy: habría que normalizar 68/60 valores actuales.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="e11">
+    <div class="station-head">
+      <span class="station-num small">E11</span>
+      <span class="station-title"><code>personas_parNN.json</code> · la disposición (<code>disposition</code>)</span>
+    </div>
+    <div class="qa"><p class="q">¿Qué mide?</p>
+    <div class="a"><p>Qué piensa el PNJ <em>del grupo</em> ahora mismo, con tres números: <code>affinity</code> (aprecio: cuánto le caen bien), <code>trust</code> (confianza: cuánto les cree) y <code>respect</code> (respeto: cuánto los admira). Se llaman <strong>acumuladores</strong> porque suben y bajan a medida que pasan cosas. Los valores iniciales en los 54 PNJ centrales: <code>affinity</code> entre −10 y 35, <code>trust</code> entre −50 y 35, <code>respect</code> siempre 0.</p></div></div>
+    <div class="qa"><p class="q">¿Qué es <code>trust_ceiling</code>?</p>
+    <div class="a"><p>El techo de confianza: hasta dónde puede llegar ese PNJ, por mucho que el grupo haga por ganársela. <span class="tag-doc">Documentado</span> La función que aplica los cambios (<code>apply_delta</code>) limita el valor con <code>LEAST(GREATEST(valor, trust_floor), trust_ceiling)</code>: nunca baja del suelo ni supera el techo. El suelo (<code>trust_floor</code>) tiene el valor por defecto −100 y no se escribe en los JSON. En los archivos el techo va de 25 a 90: un PNJ desconfiado puede quedarse con un techo bajo aunque el grupo sea impecable. El validador comprueba que la confianza inicial no supere el techo.</p></div></div>
+    <div class="qa"><p class="q">Si el modelo nunca ve el número, ¿qué ve?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Una <strong>banda</strong>: la función <code>disposition_band</code> de la base convierte el número en una de siete etiquetas. La IA solo recibe la palabra, no la cifra.</p>
+    <div class="twrap"><table>
+      <tr><th>Banda</th><th>Rango del valor</th><th>Efecto en una tirada social (CD base 15)</th></tr>
+      <tr><td><code>hostile</code></td><td>−100 a −60</td><td rowspan="2">+5 (más difícil convencerlo)</td></tr>
+      <tr><td><code>wary</code></td><td>−59 a −25</td></tr>
+      <tr><td><code>cold</code></td><td>−24 a −8</td><td rowspan="3">0 (dificultad base)</td></tr>
+      <tr><td><code>neutral</code></td><td>−7 a 7</td></tr>
+      <tr><td><code>cordial</code></td><td>8 a 24</td></tr>
+      <tr><td><code>loyal</code></td><td>25 a 59</td><td rowspan="2">−5 (más fácil)</td></tr>
+      <tr><td><code>devoted</code></td><td>60 a 100</td></tr>
+    </table></div>
+    <p>«CD» es la <em>clase de dificultad</em>: el número que hay que igualar o superar con el dado (un d20) para lograr algo. La regla de arriba sale de <code>arbitro.py</code>: hostil +5, indiferente 0, amistoso −5; las 7 bandas se agrupan en esos 3 niveles para no inventar más granularidad de la que pide el contrato original.</p></div></div>
+    <div class="qa"><p class="q">¿Por qué siete bandas y no mostrar el número?</p>
+    <div class="a"><p><span class="tag-mine">Mi análisis</span> Un modelo de lenguaje trata las cifras de forma inestable (razona distinto con «trust: 34» que con «trust: 35»). Una palabra da un salto de comportamiento claro (de <em>cordial</em> a <em>loyal</em>) y solo se «cruza» de una banda a otra cuando algo realmente cambió, lo que además evita narrar cambios diminutos. <span class="tag-doc">Documentado</span> Un comentario de <code>db.py</code> lo menciona: solo se cuentan los <em>cruces de banda</em>, porque varios cambios pequeños seguidos caen en la misma banda sin que hubiera nada que narrar.</p></div></div>
+    <div class="qa"><p class="q">¿Por qué <code>pc_id</code> nulo en la base?</p>
+    <div class="a"><p>La tabla de disposición puede guardar una fila <em>por personaje jugador</em>, o una general. El seeder crea una sola con <code>pc_id</code> vacío (<code>NULL</code>), que significa «hacia el grupo entero». Como el experimento tiene un solo PJ por par, no hace falta más.</p></div></div>
+    <dl class="spec">
+      <dt>Estructura</dt><dd>Objeto <code>disposition{affinity, trust, respect, trust_ceiling}</code>: tres números continuos y un techo; una fila con <code>pc_id</code> nulo en <code>npc_disposition</code>.</dd>
+      <dt>Por qué así</dt><dd>Separar lo estable de lo cambiante, y ocultar la cifra tras siete bandas para que el modelo reaccione a saltos claros.</dd>
+      <dt>En base a qué</dt><dd><span class="tag-doc">Documentado</span> <code>disposition_band()</code> y <code>apply_delta</code> en <code>001_schema.sql</code>; <code>arbitro.py</code> (±5 sobre CD 15); regla de la tabla <code>npc_disposition</code>. La regla del CD 15 sigue lo que sugiere el propio manual de D&amp;D para dificultad media.</dd>
+      <dt>Por qué no otra</dt><dd>Un solo número de «cariño»: mezcla aprecio, confianza y respeto, que en la ficción se separan (confías en quien no te cae bien). Mostrar cifras crudas al modelo: respuestas inestables.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="e12">
+    <div class="station-head">
+      <span class="station-num small">E12</span>
+      <span class="station-title"><code>personas_parNN.json</code> · lo que sabe, lo que oculta y el PNJ «de paso»</span>
+    </div>
+    <div class="qa"><p class="q">¿Qué es <code>knowledge</code>?</p>
+    <div class="a"><p>Lo que el PNJ <em>sabe</em>: una lista de hechos, cada uno con <code>fact</code> (el hecho) y <code>learned_at_turn</code> (el turno en que lo aprendió). Al empezar, cada PNJ central trae 1 o 2 hechos, todos con <code>learned_at_turn: 0</code> («ya lo sabía»). <span class="tag-doc">Documentado</span> La tabla es <em>append-only</em>: solo se agregan filas, nunca se borran ni se editan. Un PNJ no «desaprende».</p></div></div>
+    <div class="qa"><p class="q">¿Por qué guardar <em>cuándo</em> lo aprendió?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Porque el sistema entrega al Actor solo lo aprendido hasta el turno actual (<code>learned_at_turn &lt;= turn_id</code>): nadie puede «saber» algo que aún no se enteró. Esto permite medir después si algún PNJ habló de algo que no debería saber (una <em>violación de conocimiento</em>, una de las métricas de la tesis).</p></div></div>
+    <div class="qa"><p class="q">¿Qué es un secreto (<code>secrets</code>) y por qué exige <code>reveal_condition</code>?</p>
+    <div class="a"><p>Un dato que el PNJ oculta. Cada uno lleva <code>content</code> (qué es), <code>reveal_condition</code> (bajo qué circunstancias lo diría) y <code>visibility</code> (los 54 vienen como <code>dm_only</code>; cada PNJ central trae exactamente 1). <span class="tag-doc">Documentado</span> La condición es <em>obligatoria</em> (lo impone la base y también el validador): un secreto sin regla de revelación es una invitación a que la IA lo suelte por casualidad, o a que nunca salga. <span class="tag-doc">Documentado</span> Además, <code>db.py</code> lo entrega al Actor pero se lo <strong>oculta al Narrador</strong> a propósito: esa asimetría (solo el Actor conoce el secreto) es lo que el diseño de G1 existe para poder medir.</p></div></div>
+    <div class="qa"><p class="q">¿Por qué conocimiento y secretos en tablas separadas?</p>
+    <div class="a"><p><span class="tag-mine">Mi análisis</span> Las reglas son distintas: los hechos conocidos se acumulan sin fin; los secretos tienen estado (revelado o no, y en qué turno) y reglas de visibilidad. Meterlos en un solo saco impediría imponer, por ejemplo, que todo secreto traiga condición de revelación.</p></div></div>
+    <div class="qa"><p class="q">Ahora sí: ¿qué es un PNJ «de paso» y por qué está casi vacío?</p>
+    <div class="a"><p>Es un personaje de fondo (Petra Ilm, la que reparte el correo en el Par 03). Trae nombre, rol y voz, pero <code>personality</code> en cuatro ceros, <code>traits</code>, <code>taboos</code>, <code>knowledge</code> y <code>secrets</code> vacíos, campos de texto en <code>null</code>, IBF entero vacío, y disposición en ceros con techo de confianza 100. Hay 27, uno por par. <span class="tag-doc">Documentado</span> Su nota <code>_promocion</code> explica la regla: si el grupo vuelve a ella por su cuenta en tres o más escenas, o la nombra sin que el narrador la haya mencionado antes, se <em>promueve</em> a personaje persistente y se le genera un IBF completo.</p></div></div>
+    <div class="qa"><p class="q">¿Y por qué no darle ficha completa a todos desde el principio?</p>
+    <div class="a"><p><span class="tag-mine">Mi análisis</span> Por dos razones. Primero, el trabajo: 27 pares × todos los personajes menores sería mucha ficha que quizá nunca se use. Segundo, es <em>una prueba</em>: el experimento permite observar qué ocurre cuando surge, sobre la marcha, un personaje que no fue diseñado (¿se mantiene coherente o se contradice?). El validador avisa si un par no trae ninguno de estos PNJ de paso, así que es una pieza deliberada del diseño.</p></div></div>
+    <dl class="spec">
+      <dt>Estructura</dt><dd><code>knowledge[]</code>: <code>{fact, learned_at_turn}</code> (append-only). <code>secrets[]</code>: <code>{content, reveal_condition, visibility}</code> (condición obligatoria). PNJ de paso: ficha con ceros, <code>null</code> y listas vacías + nota <code>_promocion</code>.</dd>
+      <dt>Por qué así</dt><dd>Que el sistema pueda demostrar qué sabía cada PNJ y cuándo; que un secreto no salga sin una regla; que haya personajes menores sin costo de autoría.</dd>
+      <dt>En base a qué</dt><dd><span class="tag-doc">Documentado</span> Tablas <code>npc_knowledge</code> y <code>npc_secrets</code>, <code>get_persona()</code> (filtro por turno; secretos ocultos al Narrador), avisos del validador, notas <code>_arquetipo</code>/<code>_promocion</code> de cada archivo.</dd>
+      <dt>Por qué no otra</dt><dd>Un solo campo «sabe/oculta» de texto: sin turno ni condición, imposible medir violaciones de conocimiento. Ficha completa para todos: costo alto y se pierde la oportunidad de probar el surgimiento de personajes no planeados.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="e13">
+    <div class="station-head">
+      <span class="station-num small">E13</span>
+      <span class="station-title">Últimas dudas típicas</span>
+    </div>
+    <div class="qa"><p class="q">¿Qué es exactamente lo que hace el validador de la estación 2 con todo esto?</p>
+    <div class="a"><p>Comprueba, sin gastar plata, que: cada <code>parent</code>, <code>seat</code>, <code>faction</code> de reloj, <code>location</code> de PNJ y <code>bond_target</code> señale un <code>key</code> existente; todo lugar <code>observed</code> traiga descripción canónica; ningún eje de personalidad salga de −100…100; la confianza inicial no supere el techo; todo secreto traiga condición de revelación; el PJ tenga <code>hp == hp_max</code>; y cada reloj dispare entre los turnos 100 y 1,400. No comprueba el vocabulario de las etiquetas ni que el lore y los JSON correspondan al mismo par (ver <a href="#a1">A1</a>).</p></div></div>
+    <div class="qa"><p class="q">¿Y si el mundo cambia durante el juego? ¿Se edita el JSON?</p>
+    <div class="a"><p>No. Estos archivos son el <em>estado inicial</em>. Todo cambio durante el juego (aprecio, quién está vivo, un lugar destruido) ocurre en la base de datos, con historial. El JSON no se toca; así siempre se puede reconstruir el punto de partida idéntico para el otro brazo.</p></div></div>
+    <div class="qa"><p class="q">¿Por qué sembrar dos veces (una por brazo) en lugar de copiar la campaña?</p>
+    <div class="a"><p><span class="tag-mine">Mi análisis</span> Como cada fila necesita UUID propios (E3), copiar la campaña exigiría reescribir todos los identificadores y las referencias entre ellos. Sembrar dos veces desde el mismo JSON es más simple y da el mismo mundo en las dos. <span class="tag-doc">Documentado</span> El script aborta si la campaña ya tiene PNJ, para evitar el doble sembrado que ya causó un bug.</p></div></div>
+    <div class="qa"><p class="q">Si quiero cambiar la estructura (añadir un campo nuevo), ¿qué toca?</p>
+    <div class="a"><p><span class="tag-mine">Mi análisis</span> Tres sitios: la migración SQL (columna nueva), el script de siembra (que copie el campo) y el validador (si debe comprobarlo). Un campo que solo aparece en el JSON, sin esos pasos, se ignora en silencio; es lo que ocurre hoy con <code>completion_condition</code> (E7).</p></div></div>
+  </div>
+
+  <h2 id="almacenamiento">Dónde vive cada dato, y por qué ahí</h2>
+  <p>Hasta acá dijimos «se guarda en el disco» o «se guarda en Postgres» sin abrir la caja. Esta parte la abre: qué archivo o tabla exacta, cómo está armado por dentro, cuándo se escribe, por qué se eligió esa forma y por qué <em>no</em> otra, y cómo se encuentra después (el «índice»). Todo lo que sigue lo leí directamente del repositorio del proyecto — el esquema SQL, el <code>docker-compose.yml</code>, los scripts y los JSON reales del Par 03 — no de resúmenes.</p>
+
+  <div class="lede">
+    <p><strong>Cómo leer las etiquetas.</strong> Cada vez que explico un «por qué» lo marco con su origen, para que no confundas lo que el proyecto dejó escrito con lo que yo razono encima:</p>
+    <p><span class="tag-doc">Documentado</span> lo dice un comentario, docstring o nombre dentro del código, el esquema SQL o los documentos del proyecto.</p>
+    <p><span class="tag-mine">Mi análisis</span> es razonamiento mío sobre por qué sirve o qué alternativa habría; <em>no</em> está escrito en el repo. Úsalo como hipótesis razonable, no como cita para la tesis.</p>
+  </div>
+
+  <h3>Vocabulario de almacenamiento (otros 60 segundos)</h3>
+  <div class="glossary-grid">
+    <div class="gterm"><div class="word">Docker / contenedor</div><div class="def">Una «caja» que corre un programa (aquí Postgres) con todo lo que necesita, igual en cualquier computadora. Se levanta con <code>docker-compose.yml</code>.</div></div>
+    <div class="gterm"><div class="word">Volumen</div><div class="def">Un disco persistente conectado a la caja. Si apagas o recreas el contenedor, lo que está en el volumen sigue ahí (aquí se llama <code>dbdata</code>).</div></div>
+    <div class="gterm"><div class="word">Migración (.sql)</div><div class="def">Un archivo SQL que crea o cambia la <em>estructura</em> de la base: tablas, tipos, índices. Aquí hay una sola, <code>001_schema.sql</code>.</div></div>
+    <div class="gterm"><div class="word">Fixture</div><div class="def">Datos de arranque escritos a mano en un archivo — aquí los JSON de mundo y personajes — para poblar la base.</div></div>
+    <div class="gterm"><div class="word">Transacción</div><div class="def">Un grupo de escrituras que se confirman todas juntas o ninguna. Si algo falla a la mitad, no queda nada a medias.</div></div>
+    <div class="gterm"><div class="word">UUID</div><div class="def">Un identificador aleatorio de 128 bits (como <code>ff0c8110-caa5-…</code>), casi imposible de repetir, generado sin coordinar con nadie.</div></div>
+    <div class="gterm"><div class="word">Enum</div><div class="def">Una columna que solo acepta valores de una lista cerrada (por ejemplo <code>intact</code>, <code>damaged</code>, <code>destroyed</code>). La base rechaza cualquier otro.</div></div>
+    <div class="gterm"><div class="word">Índice (de base de datos)</div><div class="def">Como el índice al final de un libro: una estructura auxiliar que permite encontrar filas sin leer la tabla entera. Ocupa espacio y hace las escrituras un poco más lentas.</div></div>
+    <div class="gterm"><div class="word">Append-only</div><div class="def">Tabla donde solo se agregan filas; nunca se editan ni se borran. Sirve como registro histórico confiable.</div></div>
+    <div class="gterm"><div class="word">RLS (Row Level Security)</div><div class="def">La base filtra por sí misma qué filas puede ver cada conexión — aquí, en teoría, solo las de su <code>tenant</code>. Ojo con B6.</div></div>
+    <div class="gterm"><div class="word">pgvector / HNSW</div><div class="def">pgvector agrega a Postgres columnas de vectores (embeddings) y HNSW es un índice para buscar «por parecido». Existe en el esquema; su estado real está en B5.</div></div>
+    <div class="gterm"><div class="word">jsonb / text[]</div><div class="def"><code>jsonb</code> guarda un objeto JSON dentro de una columna y se puede consultar por dentro; <code>text[]</code> guarda una lista de textos en una sola columna.</div></div>
+  </div>
+
+  <h3>Las tres «casas» de los datos</h3>
+  <p>Un dato de este proyecto solo puede vivir en tres lugares. Casi todas las decisiones de abajo son respuestas a la pregunta «¿en cuál de las tres va esto, y por qué?».</p>
+  <div class="houses">
+    <div class="house disk">
+      <h4>1 · Archivos en disco</h4>
+      <div class="sub">carpeta del proyecto, en tu computadora</div>
+      <ul>
+        <li>lore en prosa (<code>corpus/</code>)</li>
+        <li>mundo y PNJ en JSON (<code>fixtures/</code>)</li>
+        <li>elenco de 27 jugadores (<code>jugador/</code>)</li>
+        <li>prompts y contrato del extractor</li>
+        <li>claves y conexión (<code>.env</code>)</li>
+        <li>bitácoras (<code>logs/</code>), transcripciones y CSV de mediciones</li>
+      </ul>
+    </div>
+    <div class="house pg">
+      <h4>2 · Postgres (en Docker)</h4>
+      <div class="sub">contenedor <code>dmia_db</code>, volumen <code>dbdata</code></div>
+      <ul>
+        <li>el estado vivo del mundo (lugares, PNJ, misiones, relojes…)</li>
+        <li>el historial completo de turnos (<code>turn_log</code>)</li>
+        <li>cada cambio de estado con su evidencia (<code>state_deltas</code>)</li>
+        <li>las mediciones por turno (<code>turn_validation</code>)</li>
+      </ul>
+    </div>
+    <div class="house ext">
+      <h4>3 · Servicio externo (DeepInfra)</h4>
+      <div class="sub">no guarda nada de la campaña</div>
+      <ul>
+        <li>recibe un prompt, devuelve texto</li>
+        <li>lo que queda de esas llamadas en tu lado: el texto generado (va a <code>turn_log</code>) y los costos impresos en la bitácora</li>
+      </ul>
+    </div>
+  </div>
+  <div class="why-box">
+    <div class="lbl"><span class="tag-mine">Mi análisis</span> Regla de bolsillo</div>
+    <p>Lo que escribe y edita una <strong>persona</strong>, en texto, va a disco. Lo que cambia turno a turno y hay que <strong>consultar con exactitud</strong> («¿está vivo este PNJ?») va a Postgres. Lo que es <strong>secreto</strong> va a <code>.env</code>. Los tres lugares no compiten: cada dato entra por el primero y, si hace falta, se «traduce» al segundo en las estaciones 3 y 4.</p>
+  </div>
+
+  <h3>Quién escribe qué, y cuándo (el índice por estación)</h3>
+  <div class="twrap"><table>
+    <tr><th>Est.</th><th>Escribe en disco</th><th>Escribe en Postgres</th></tr>
+    <tr><td>1</td><td><code>lore_*.md</code>, <code>world_parNN.json</code>, <code>personas_parNN.json</code> (a mano)</td><td>—</td></tr>
+    <tr><td>2</td><td>— (solo lee los dos JSON)</td><td>—</td></tr>
+    <tr><td>3</td><td>—</td><td><strong>G2:</strong> <code>tenants</code>, <code>users</code>, <code>campaigns</code>, <code>campaign_members</code>, <code>turn_log</code> (fila <code>turn_id = 0</code> con todo el lore). <strong>G1:</strong> <code>campaigns</code>, <code>campaign_members</code>, <code>turn_log</code> (reusa tenant y usuario).</td></tr>
+    <tr><td>4</td><td>—</td><td><code>locations</code>, <code>factions</code>, <code>faction_clocks</code>, <code>quests</code>, <code>characters</code>, <code>npcs</code>, <code>npc_ibf</code>, <code>npc_bond_targets</code>, <code>npc_disposition</code>, <code>npc_knowledge</code>, <code>npc_secrets</code> — una sola transacción</td></tr>
+    <tr><td>5</td><td>—</td><td>nada nuevo</td></tr>
+    <tr><td>6</td><td>—</td><td>nada (solo lee)</td></tr>
+    <tr><td>7</td><td>una bitácora <code>.md</code> nueva en <code>logs/</code> por corrida (lee también <code>personajes_jugadores.json</code> y los prompts)</td><td>por cada turno: <code>turn_log</code> + <code>campaigns.current_turn</code> (misma transacción), <code>turn_validation</code>, y los cambios en <code>state_deltas</code> vía <code>apply_delta()</code></td></tr>
+  </table></div>
+  <div class="sec-note"><p><strong>Nota sobre los pares 07–27.</strong> Desde el Par 07 las estaciones 3 y 4 no se corren a mano comando por comando: los scripts <code>crear_sembrar_par07-17.py</code> y <code>crear_sembrar_par18-27.py</code> llaman por dentro a los mismos <code>crear_campana_real*.py</code> y <code>sembrar_mundo_real.py</code> que describo abajo. Lo que se guarda y dónde es idéntico; solo cambia quién aprieta el botón.</p></div>
+
+  <hr class="sep">
+
+  <h2 id="disco">A · Lo que vive en el disco</h2>
+  <p>Ocho fichas, en el orden en que aparecen en el proceso. Cada una responde lo mismo: <strong>qué es, cuándo se escribe, cómo se estructura, por qué así, por qué no de otra forma y cómo se encuentra</strong>.</p>
+
+  <div class="station" id="a1">
+    <div class="station-head">
+      <span class="station-num small">A1</span>
+      <span class="station-title"><code>corpus/real/lore_&lt;lugar&gt;.md</code> — la prosa</span>
+      <span class="actor-tag persona">Escrito a mano</span>
+    </div>
+    <p class="station-lead">El texto libre de la ambientación. Es lo primero que se escribe y lo único de la Fase 0 que no tiene estructura fija.</p>
+    <dl class="spec">
+      <dt>Qué es</dt><dd>Un archivo Markdown por par: 27 en total, unos 108 KB entre todos (los de los pares 03 a 06 miden entre 4.0 y 6.6 KB). El de Par 03, <code>lore_vega_del_yelmo.md</code>, se divide con títulos <code>##</code>: «El valle y el asentamiento», «Los Lobos del Desfiladero», «La Milicia Popular», «Reloj: la próxima luna sin caravana», «Las hogueras de la Cresta Muda», «Gente del asentamiento» y «Tono de la campaña».</dd>
+      <dt>Cuándo se escribe</dt><dd>Estación 1, a mano, una sola vez por par. Nadie lo edita después: se lee entero en la estación 3 (<code>crear_campana_real.py</code>) y desde ahí vive también como fila en Postgres (ver <a href="#d1">D1</a>).</dd>
+      <dt>Cómo se estructura</dt><dd>No hay esquema: títulos y párrafos. Lo único con vocabulario cerrado es el <em>tono</em>, y ese no se lee del texto: se pasa como argumento al crear la campaña (<code>grimdark</code>, <code>heroic</code>, <code>light</code> o <code>mixed</code>).</dd>
+      <dt>Por qué así</dt><dd><span class="tag-doc">Documentado</span> El código no lee el lore en prosa: lee filas estructuradas (lo dice el docstring de <code>sembrar_mundo_real.py</code>). La prosa existe para que el DM-IA «sienta» la atmósfera; las filas existen para que el sistema sepa con exactitud quién está vivo, dónde está y qué opina. En el esquema, un comentario lo formula así: la prosa responde «¿cómo se siente estar aquí?», las entidades responden «¿quién gobierna?».<br><span class="tag-mine">Mi análisis</span> Markdown porque es texto plano legible en cualquier editor, se pega tal cual como texto del turno 0 y se versiona con git (un diff de Markdown se lee; uno de Word no).</dd>
+      <dt>Por qué no de otra forma</dt><dd><span class="tag-mine">Mi análisis</span> <strong>JSON:</strong> la prosa larga se llena de comillas y saltos de línea escapados; nadie la escribe cómodo. <strong>Word o PDF:</strong> binarios, no se comparan versiones ni se leen desde un script sin librerías extra. <strong>Escribirlo directo en la base:</strong> no hay editor cómodo para prosa larga. <strong>Partirlo en «chunks» con embeddings</strong> (el esquema trae <code>lore_documents</code> y <code>lore_chunks</code> para eso): el experimento no lo usa — ver <a href="#b5">B5</a>.</dd>
+      <dt>Cómo se encuentra</dt><dd>Nombre <code>lore_&lt;lugar_en_minúsculas&gt;.md</code>. Ojo: el lore se nombra por <em>lugar</em> (<code>lore_vega_del_yelmo.md</code>) pero los JSON por <em>número de par</em> (<code>world_par03.json</code>). El vínculo entre ambos no está dentro de los archivos: lo pone quien escribe los comandos de las estaciones 3 y 4 (y la tabla de pares del plan de cierre).<br><span class="tag-mine">Mi análisis</span> Nada valida que el lore y el JSON que se pasan juntos correspondan al mismo par; el validador de la estación 2 solo mira los JSON.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="a2">
+    <div class="station-head">
+      <span class="station-num small">A2</span>
+      <span class="station-title"><code>fixtures/real/world_parNN.json</code> — el mundo estructurado</span>
+      <span class="actor-tag persona">Escrito a mano</span>
+    </div>
+    <p class="station-lead">El mismo mundo del lore, pero traducido a listas de objetos que se pueden insertar fila por fila en la base. Abajo, el esqueleto real del Par 03 (abreviado con «…»).</p>
+<pre class="code">{
+  "campaign":   { "note": "Par 03 (real) …", "world_tone": "heroic" },
+  "locations": [
+    { "key": "vega_del_yelmo", "kind": "settlement", "name": "Vega del Yelmo",
+      "parent": "valle_del_yelmo", "detail": "observed",
+      "description_canonical": "Casas de piedra vieja mezcladas con tiendas de lona…",
+      "culture_overrides": { "notable_laws": "…", "tensions": "…" } },
+    { "key": "cresta_muda", "kind": "region", "name": "La Cresta Muda",
+      "parent": "valle_del_yelmo", "detail": "sketch",
+      "sketch_text": "Una loma pelada sin cobertura…", "visibility": "dm_only" }
+  ],
+  "factions": [
+    { "key": "milicia_popular", "name": "La Milicia Popular de Vega del Yelmo",
+      "description": "…", "seat": "cuartel_milicia",
+      "stance_party": 0, "knows_about_party": false } ],
+  "clocks": [
+    { "faction": "lobos_desfiladero", "agenda": "Interceptar la próxima caravana…",
+      "progress": 2, "threshold": 10, "rate_per_game_day": 0.9,
+      "on_fire_event": { "headline": "…", "scope": "vega_del_yelmo", "consequence": "…" } } ],
+  "quests": [
+    { "key": "caravana_en_riesgo", "title": "La caravana que no debe fallar",
+      "status": "active", "next_step_known": true, "completion_condition": "…" } ],
+  "characters": [
+    { "key": "pj_pj05", "name": "Corvin", "species": null,
+      "class": "bardo 3", "hp": 21, "hp_max": 21 } ]
+}</pre>
+    <dl class="spec">
+      <dt>Qué es</dt><dd>Un JSON con seis bloques de primer nivel. En el Par 03: 7 lugares, 2 facciones, 1 reloj, 2 misiones y 1 personaje (el jugador de ese par); 5,857 bytes en total.</dd>
+      <dt>Cuándo se escribe</dt><dd>Estación 1 (a mano), se valida en la 2 y se lee en la 4.</dd>
+      <dt>Cómo se estructura</dt><dd>Cada objeto lleva un <code>key</code>: un nombre corto y legible (<code>vega_del_yelmo</code>) que solo tiene sentido <em>dentro de este archivo y de su gemelo <code>personas_parNN.json</code></em>. Todas las referencias entre piezas (<code>parent</code>, <code>seat</code>, <code>faction</code>, <code>location</code>, <code>bond_targets</code>) apuntan a un <code>key</code>. Al sembrar, el script traduce cada <code>key</code> al UUID recién generado con un diccionario en memoria (<code>keymap</code>) e inserta los lugares padre-antes-que-hijo, con detección de ciclos.</dd>
+      <dt>Por qué así</dt><dd><span class="tag-doc">Documentado</span> Cada fila recibe un <code>uuid4</code> aleatorio, no uno derivado de la clave (<code>uuid5</code>, que es lo que hace <code>generar_seed.py</code> para el fixture de pruebas). Razón escrita en el docstring: <code>id</code> es llave primaria <em>global</em>, no compuesta con <code>campaign_id</code>; un UUID determinista generaría el mismo id en cada campaña y chocaría con el que ya existe.<br><span class="tag-mine">Mi análisis</span> JSON porque cada bloque se corresponde casi 1 a 1 con una tabla; hay campos anidados (<code>culture_overrides</code>, <code>on_fire_event</code>) que caben directo en columnas <code>jsonb</code>; Python lo lee sin librerías extra; y se puede validar por script <em>antes</em> de gastar plata (estación 2).</dd>
+      <dt>Por qué no de otra forma</dt><dd><span class="tag-mine">Mi análisis</span> <strong>CSV:</strong> no soporta objetos anidados ni listas. <strong>YAML:</strong> necesita una librería aparte y tiene trampas de tipado (por ejemplo, <code>no</code> se interpreta como falso). <strong>INSERT SQL escrito a mano:</strong> habría que inventar UUIDs y no se pueden validar referencias antes de insertar. <strong>Cargarlo por pgAdmin a mano:</strong> no es repetible — y acá hay que sembrar el <em>mismo</em> mundo dos veces, una por brazo.</dd>
+      <dt>Cómo se encuentra</dt><dd><code>NN</code> es el número de par con dos dígitos (<code>world_par03.json</code> ↔ Par 03). Hay 54 archivos en <code>fixtures/real/</code>: 27 <code>world_*</code> + 27 <code>personas_*</code>. Dentro del archivo, el índice son los <code>key</code>, y la estación 2 comprueba que todos resuelvan.</dd>
+    </dl>
+
+    <div class="twrap"><table>
+      <tr><th>Bloque del JSON</th><th>Tabla destino</th><th>Cómo se guarda</th></tr>
+      <tr><td><code>locations[]</code></td><td><code>locations</code></td><td><code>parent</code> → <code>parent_id</code> (la tabla se referencia a sí misma: región → asentamiento → edificio); <code>kind</code> y <code>detail</code> son enums; <code>culture_overrides</code> es <code>jsonb</code>, guarda <em>solo lo que difiere del padre</em> y se siembra pero no se inyecta en los prompts durante la generación (ver Fase 1); <code>visibility</code> es enum (<code>dm_only</code> / <code>party</code> / <code>player</code>).</td></tr>
+      <tr><td><code>factions[]</code></td><td><code>factions</code></td><td><code>seat</code> → <code>seat_location_id</code>; <code>stance_party</code> (−100…100) y <code>knows_about_party</code> (booleano).</td></tr>
+      <tr><td><code>clocks[]</code></td><td><code>faction_clocks</code></td><td><code>progress</code>, <code>threshold</code>, <code>rate_per_game_day</code> numéricos; <code>on_fire_event</code> como <code>jsonb</code>. Índice parcial solo sobre relojes vivos.</td></tr>
+      <tr><td><code>quests[]</code></td><td><code>quests</code></td><td><code>status</code> es enum (<code>unknown</code>, <code>active</code>, <code>completed</code>, <code>failed</code>, <code>abandoned</code>) y <code>next_step_known</code> booleano.</td></tr>
+      <tr><td><code>characters[]</code> (solo el del par)</td><td><code>characters</code></td><td>Solo <code>name</code>, <code>species</code>, <code>hp_current</code> y <code>hp_max</code>. La <code>class</code> («bardo 3») <em>no</em> se copia: se queda en el JSON.</td></tr>
+      <tr><td><code>campaign{}</code></td><td>— (no se lee)</td><td>Es informativo. El tono real de la campaña entra por el argumento de línea de comandos de la estación 3.</td></tr>
+    </table></div>
+
+    <div class="sec-note"><p><strong>Hallazgo para que verifiques (Mi análisis).</strong> Cada misión del JSON trae un <code>completion_condition</code> (el texto de «se cierra cuando…»), la tabla <code>quests</code> tiene esa columna y <code>db.py</code> la lee para armar el contexto de escena («se cierra cuando: …»). Pero el script de siembra no copia ese campo, y no encontré ningún otro <code>INSERT</code> ni <code>UPDATE</code> en Python o SQL que lo llene. Por lo que leí, esa línea quedaría vacía para las misiones sembradas. Se confirma en un segundo con: <code>SELECT title, completion_condition FROM quests WHERE campaign_id = '…';</code></p></div>
+  </div>
+
+  <div class="station" id="a3">
+    <div class="station-head">
+      <span class="station-num small">A3</span>
+      <span class="station-title"><code>fixtures/real/personas_parNN.json</code> — los PNJ</span>
+      <span class="actor-tag persona">Escrito a mano</span>
+    </div>
+    <p class="station-lead">Los 3 personajes no jugadores del par: dos centrales enfrentados y uno «de paso» con todo vacío a propósito. Cada uno es un objeto grande que la siembra reparte en <strong>seis tablas</strong>.</p>
+<pre class="code">{
+  "_nota": "Par 03 (real) … Tres PNJ deliberadamente contrastantes …",
+  "yenna": {
+    "name": "Yenna Roldós", "species": "humana",
+    "social_role": "capitana de la Milicia Popular de Vega del Yelmo",
+    "location": "cuartel_milicia", "status": "alive",
+    "personality": { "warmth": 40, "candor": 60, "principle": 75, "boldness": 90 },
+    "traits": ["disciplinada", "…"],
+    "internal_contradiction": "…", "taboos": ["…"], "voice_notes": "…",
+    "stated_desire": "…", "actual_need": "…", "fear": "…",
+    "ibf": {
+      "ideal_text": "…", "ideal_tags": ["deber", "disciplina"],
+      "bond_text": "…", "bond_strength": 80,
+      "bond_targets": [ { "type": "location", "key": "vega_del_yelmo" }, … ],
+      "flaw_text": "…", "flaw_tags": ["control", "desconfianza"],
+      "flaw_exploit": "proponerle_negociar_directamente_con_los_lobos"
+    },
+    "disposition": { "affinity": 10, "trust": 10, "respect": 0, "trust_ceiling": 75 },
+    "knowledge": [ { "fact": "…", "learned_at_turn": N } ],
+    "secrets":   [ { "content": "…", "reveal_condition": "…", "visibility": "dm_only" } ]
+  },
+  "ferran": { … },
+  "petra":  { … }
+}</pre>
+    <dl class="spec">
+      <dt>Qué es</dt><dd>Un diccionario cuyas claves son los <code>key</code> de cada PNJ (<code>yenna</code>, <code>ferran</code>, <code>petra</code>). «IBF» son las siglas de <em>Ideal / Vínculo (Bond) / Defecto (Flaw)</em>, el molde de personalidad de D&amp;D que usa todo el proyecto. El PNJ «de paso» (Petra) lleva casi todo vacío a propósito, igual que los de los pares anteriores: el validador avisa si un par no trae ninguno.</dd>
+      <dt>Cuándo se escribe</dt><dd>Estación 1 (a mano), validado en la 2 y sembrado en la 4. Después, lo que cambia (aprecio, confianza, estado vivo o muerto, conocimientos) cambia <em>en la base</em>, nunca en este archivo.</dd>
+      <dt>Por qué así</dt><dd><span class="tag-doc">Documentado</span> El esquema lo dice sin rodeos: «la consistencia de personaje NO es propiedad emergente del modelo: es propiedad del registro en base de datos. Si Elara suena igual en la sesión 8 que en la 1, es porque <code>voice_notes</code> contiene la misma cadena». Además hay una separación deliberada: la <em>personalidad</em> (4 ejes) es un rasgo estable y autorado; la <em>disposición</em> hacia el grupo (aprecio, confianza, respeto) son acumuladores continuos que sí se mueven, y el modelo nunca ve el número, solo una «banda» de conducta. Las etiquetas de ideal y defecto son texto libre: un comentario del esquema habla de un vocabulario de 15, pero nada lo hace cumplir y los 27 archivos usan 68 (ideal) y 60 (defecto) valores distintos (detalle en <a href="#e10">E10</a>).</dd>
+      <dt>Por qué no de otra forma</dt><dd><span class="tag-doc">Documentado</span> Dejar los PNJ solo como prosa dentro del lore no funciona: sin filas, <code>estado_pnj(…)</code> devuelve <code>None</code> y el motor se cae — fue exactamente el error que motivó crear <code>sembrar_mundo_real.py</code> (<code>TypeError: 'NoneType' object is not subscriptable</code>).<br><span class="tag-mine">Mi análisis</span> Un único JSON de PNJ reparte datos con forma muy distinta (texto, listas, números acotados, hechos que se acumulan con el tiempo), y las tablas separadas permiten que cada parte tenga su propia regla: por ejemplo, que el conocimiento sea append-only y que un secreto tenga obligatoriamente una condición de revelación.</dd>
+      <dt>Cómo se encuentra</dt><dd>Mismo <code>NN</code> que el <code>world_parNN.json</code>. Los <code>key</code> de PNJ (<code>yenna</code>) y de lugar (<code>cuartel_milicia</code>) son el índice interno; en Postgres ya no existen, se reemplazan por UUIDs.</dd>
+    </dl>
+
+    <div class="twrap"><table>
+      <tr><th>Campos del JSON</th><th>Tabla</th><th>Cómo queda</th></tr>
+      <tr><td><code>name</code>, <code>species</code>, <code>social_role</code>, <code>appearance</code>, <code>status</code>, <code>location</code></td><td><code>npcs</code></td><td><code>status</code> es enum (<code>alive</code>, <code>dead</code>, <code>missing</code>, <code>captured</code>); <code>location</code> pasa de <code>key</code> a <code>location_id</code>.</td></tr>
+      <tr><td><code>personality.*</code></td><td><code>npcs</code></td><td>Cuatro columnas <code>smallint</code> con <code>CHECK</code> entre −100 y 100.</td></tr>
+      <tr><td><code>traits</code>, <code>taboos</code></td><td><code>npcs</code></td><td>Columnas <code>text[]</code> (listas cortas sin tabla aparte).</td></tr>
+      <tr><td><code>internal_contradiction</code>, <code>voice_notes</code>, <code>stated_desire</code>, <code>actual_need</code>, <code>fear</code></td><td><code>npcs</code></td><td>Texto.</td></tr>
+      <tr><td><code>ibf.*</code></td><td><code>npc_ibf</code></td><td>Una fila por PNJ; <code>ideal_tags</code> y <code>flaw_tags</code> son <code>text[]</code>.</td></tr>
+      <tr><td><code>ibf.bond_targets[]</code></td><td><code>npc_bond_targets</code></td><td>Una fila por vínculo: tipo de entidad + UUID del destino.</td></tr>
+      <tr><td><code>disposition.*</code></td><td><code>npc_disposition</code></td><td>Una fila con <code>pc_id</code> nulo (= «hacia el grupo entero»); <code>trust_ceiling</code> es el techo de confianza propio del personaje.</td></tr>
+      <tr><td><code>knowledge[]</code></td><td><code>npc_knowledge</code></td><td>Una fila por hecho, con el turno en que lo aprendió. Append-only: un PNJ nunca «desaprende».</td></tr>
+      <tr><td><code>secrets[]</code></td><td><code>npc_secrets</code></td><td>Contenido + condición de revelación (obligatoria) + visibilidad (<code>dm_only</code> por defecto).</td></tr>
+      <tr><td><code>_arquetipo</code>, <code>_nota_topes</code>, <code>modula_respect_por</code></td><td>— (no se leen)</td><td>Notas del autor. El script de siembra no las lee y no encontré ningún <code>.py</code> que use <code>modula_respect_por</code>.</td></tr>
+    </table></div>
+  </div>
+
+  <div class="station" id="a4">
+    <div class="station-head">
+      <span class="station-num small">A4</span>
+      <span class="station-title"><code>jugador/personajes_jugadores.json</code> — el elenco de jugadores</span>
+      <span class="actor-tag persona">Generado una vez</span>
+    </div>
+    <p class="station-lead">Las 27 fichas posibles del jugador-IA, una por par. Este archivo casi no toca Postgres: sus números los lee el módulo de dados directamente desde el disco.</p>
+<pre class="code">{ "_generado": "generar_personajes.py, semilla 20260901", "_n": 27,
+  "personajes": [
+    { "id": "PJ05", "nombre": "Corvin", "arquetipo": "Bardo de causa justa",
+      "clase": "bardo", "nivel": 3, "trasfondo": "acólito",
+      "personalidad": { "warmth": 70, "candor": 40, "principle": 65, "boldness": 80 },
+      "agenda": ["…", "…", "…"], "desvio": 55, "deriva": null,
+      "caracteristicas": { "carisma": 15, "destreza": 14, "constitución": 13,
+                           "sabiduría": 12, "inteligencia": 10, "fuerza": 8 },
+      "modificadores": { "carisma": 4, "destreza": 4, …, "perspicacia": 3, "persuasión": 4 } },
+    … ] }</pre>
+    <dl class="spec">
+      <dt>Qué es</dt><dd>27 fichas generadas por <code>jugador/generar_personajes.py</code> con semilla fija (20260901). Cada una trae arquetipo, clase, nivel 3, personalidad de 4 ejes, agenda, <code>desvio</code>, 6 características (el «standard array» 15/14/13/12/10/8, asignado por prioridad de clase) y 24 modificadores ya calculados (6 características + 18 habilidades del SRD).</dd>
+      <dt>Cuándo se escribe</dt><dd>Se generó una vez, antes de los pares reales. Se lee en la estación 7, cuando el motor arranca con <code>--pj PJ05</code>.</dd>
+      <dt>Dónde se cruza con Postgres</dt><dd>Solo el nombre, la especie y los puntos de golpe del PJ activo viajan a <code>characters</code> (estación 4). Las características y modificadores <strong>nunca entran a la base</strong>: el orquestador los pasa a <code>dados.py</code> en cada tirada.</dd>
+      <dt>Por qué así</dt><dd><span class="tag-doc">Documentado</span> El docstring de la siembra explica que solo se inserta el PJ activo del par: sembrar los 30 de un fixture general «metería 29 personajes irrelevantes en cada lista de entidades que ve el extractor».<br><span class="tag-mine">Mi análisis</span> Son constantes de solo lectura que no cambian durante la campaña, y con semilla fija el archivo es reproducible. Costo: no se puede auditar con SQL qué modificador se usó en un turno; hay que cruzar con el archivo (y su versión).</dd>
+      <dt>Por qué no de otra forma</dt><dd><span class="tag-mine">Mi análisis</span> Meterlos en <code>characters</code> exigiría columnas nuevas (o empaquetarlos en un <code>jsonb</code>) y sumaría datos que el extractor y el resto del sistema no necesitan ver.</dd>
+      <dt>Cómo se encuentra</dt><dd>El <code>id</code> es <code>PJ01</code>…<code>PJ27</code>. Ojo con la convención: el archivo y la opción <code>--pj</code> usan mayúsculas (<code>PJ05</code>), mientras que la clave dentro del <code>world_parNN.json</code> es <code>pj_pj05</code> (minúsculas con prefijo). Ese cambio de escritura es una convención, no un vínculo que el sistema fuerce.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="a5">
+    <div class="station-head">
+      <span class="station-num small">A5</span>
+      <span class="station-title"><code>.env</code> — claves y conexión</span>
+      <span class="actor-tag persona">Configuración</span>
+    </div>
+    <p class="station-lead">Un archivo de texto con líneas <code>NOMBRE=valor</code>. Acá no muestro ningún valor, solo los nombres de las variables.</p>
+    <dl class="spec">
+      <dt>Qué es</dt><dd>Variables presentes: <code>DEEPINFRA_API_KEY</code>, <code>DEEPINFRA_BASE_URL</code>, <code>DMIA_MODELO</code> (el ID exacto del modelo en el catálogo de DeepInfra), <code>POSTGRES_PASSWORD</code>, <code>DATABASE_URL</code> y una copia de la conexión en formato <code>host / port / dbname / user / password</code>. La plantilla que sí se puede compartir es <code>.env.example</code>.</dd>
+      <dt>Cuándo se escribe</dt><dd>Una vez, copiando la plantilla. Se lee cada vez que arranca cualquier script: <code>db.py</code> usa <code>python-dotenv</code> y, si no lo encuentra, cae a una cadena de conexión de desarrollo por defecto.</dd>
+      <dt>Por qué así</dt><dd><span class="tag-doc">Documentado</span> La propia plantilla dice «<code>.env</code> NUNCA se versiona» y que los IDs de modelo llevan prefijo de organización y no tienen alias cortos.</dd>
+      <dt>Por qué no de otra forma</dt><dd><span class="tag-mine">Mi análisis</span> <strong>En el código:</strong> la clave terminaría en git. <strong>En una tabla de Postgres:</strong> es circular (necesitas la contraseña para llegar a la tabla que guarda la contraseña). <strong>Variables del sistema operativo:</strong> funcionan, pero cuesta más reproducir el entorno en otra máquina.<br><span class="tag-doc">Documentado</span> Un costo real: en la auditoría de bugs figura que una variable vieja del <code>.env</code> pisó la migración del modelo del jugador (caso 10). Un archivo de configuración «invisible» también puede mandar más que el código.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="a6">
+    <div class="station-head">
+      <span class="station-num small">A6</span>
+      <span class="station-title"><code>logs/*.md</code> — la bitácora legible</span>
+      <span class="actor-tag script">Script</span>
+    </div>
+    <p class="station-lead">Un archivo Markdown por <em>corrida</em> del motor (no por campaña), escrito por el propio Python mientras genera turnos. Es el diario de a bordo, no la fuente de verdad.</p>
+<pre class="code"># VERTICAL SLICE — Par 03 (real) · G2 (Monolítico) · Vega del Yelmo (monolithic)
+- **DM:** `google/gemma-4-31B-it`
+- **jugador:** `NousResearch/Hermes-3-Llama-3.1-70B` (Corvin, desvío 55)
+## Turno 1 — 1/1400 de esta corrida (objetivo final de la campaña: 1400)
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+### [2] JUGADOR — Corvin
+### [3] DADOS (deterministas, del sistema)
+### [4] DM
+…</pre>
+    <dl class="spec">
+      <dt>Qué es</dt><dd>La salida completa de una corrida, paso a paso por turno, con tiempos y costos. La carpeta <code>logs/</code> pesa unos 425 MB en total.</dd>
+      <dt>Cuándo se escribe</dt><dd>Durante la estación 7, en vivo. Cada arranque o reanudación crea un archivo nuevo (por ejemplo, Par 05 G2 tiene tres: <code>turnos_1-1400</code>, <code>turnos_3-1400</code> y <code>turnos_748-1400</code>).</dd>
+      <dt>Cómo se estructura</dt><dd>Un encabezado (modelos usados), y por turno un título <code>## Turno N</code> con pasos numerados <code>### [1] … [13]</code>. Es Markdown de verdad: las secciones son títulos, no rayas de dibujo.</dd>
+      <dt>Por qué así</dt><dd><span class="tag-doc">Documentado</span> Antes se capturaba la consola con <code>Tee-Object</code> de PowerShell y el archivo llegaba con caracteres corruptos («Monol├¡tico»). La solución fue dejar de depender de esa captura: el script tiene una clase <code>Tee</code> que duplica cada escritura a la consola <em>y</em> a un <code>.md</code> abierto por Python mismo, en UTF-8, siempre.</dd>
+      <dt>Por qué no de otra forma</dt><dd><span class="tag-doc">Documentado</span> No se usan las bitácoras como fuente de verdad porque arrastran ruido de diagnóstico (pasos, costos, reintentos) y, si dos corridas se superponen, pueden repetir o saltarse turnos. Por eso <code>exportar_transcripcion.py</code> lee <code>turn_log</code> de Postgres, donde cada turno existe una sola vez.</dd>
+      <dt>Cómo se encuentra</dt><dd>El nombre se descifra de izquierda a derecha. Ejemplo real: <code>par_03_real_g2_monolitico_vega_del_yelmo_ff0c8110_turnos_1-1400_20260916_233617.md</code> → par 03 · corpus real · brazo G2 · arquitectura monolítica · lugar · <strong>los 8 primeros caracteres del <code>campaign_id</code></strong> · rango de turnos pedido · fecha y hora de arranque.<br><span class="tag-mine">Mi análisis</span> El rango del nombre es lo que <em>pidió</em> esa corrida, no necesariamente lo que terminó generando: <code>turnos_438-1837</code> en Par 02 G2 es una corrida que pidió 1,400 turnos encima de los 437 que ya tenía (el bug de reanudación ya corregido; ver <a href="#d3">D3</a>).</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="a7">
+    <div class="station-head">
+      <span class="station-num small">A7</span>
+      <span class="station-title">Prompts y contrato del extractor — instrucciones, no datos</span>
+      <span class="actor-tag persona">Configuración</span>
+    </div>
+    <p class="station-lead">Archivos que no describen el mundo sino <em>cómo se comporta cada IA</em>. No se leen en la Fase 0; se cargan al arrancar el motor (estación 7 en adelante).</p>
+    <dl class="spec">
+      <dt>Qué hay</dt><dd><code>dm/prompt_g2.md</code> (el DM monolítico); <code>dm/prompt_actor_g1.md</code>, <code>prompt_arbitro_g1.md</code>, <code>prompt_mundo_g1.md</code> y <code>prompt_narrador_g1.md</code> (los cuatro roles de G1); <code>jugador/prompt.md</code>; y en <code>extractor/</code>: <code>prompt.md</code>, <code>grounder.md</code>, <code>verificador.md</code>, <code>dreamer.md</code>, <code>propagacion.sql</code> y <code>contrato.json</code>.</dd>
+      <dt>El contrato</dt><dd><code>extractor/contrato.json</code> fija el vocabulario cerrado de lo que el extractor puede proponer: los tipos de evento, qué campos de qué entidad se pueden cambiar (con sus valores permitidos) y las reglas duras. Es la contraparte en archivo de la lista blanca que vive en la tabla <code>mutable_fields</code> de Postgres (19 filas cargadas por la migración).</dd>
+      <dt>Por qué así</dt><dd><span class="tag-doc">Documentado</span> El propio archivo se declara «fuente única de verdad para el prompt, la validación y el esquema Zod de la plataforma», con el principio de que el extractor <em>clasifica con opciones cerradas y cita evidencia literal; nunca elige números</em>.<br><span class="tag-mine">Mi análisis</span> Prompts como <code>.md</code> separados del código: se pueden comparar versión a versión sin mezclarlos con lógica Python, y G1 y G2 comparten el mismo extractor, así que un solo archivo evita que diverjan.</dd>
+      <dt>Por qué no de otra forma / riesgo</dt><dd><span class="tag-mine">Mi análisis</span> Hay dos copias de la misma lista que deben mantenerse a mano: el contrato JSON y la base. Ya se desalinearon: el enum SQL <code>event_kind</code> trae 15 tipos de evento (incluye <code>courtesy</code>) y el contrato lista 14. Un comentario de la migración cuenta que <code>promise_made</code> pasó lo mismo (estaba en el contrato pero no en el enum, y el <em>cast</em> reventaba).</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="a8">
+    <div class="station-head">
+      <span class="station-num small">A8</span>
+      <span class="station-title">Mapa de carpetas del proyecto</span>
+      <span class="actor-tag persona">Referencia</span>
+    </div>
+    <p class="station-lead">Para no perderse: qué hay en cada carpeta de primer nivel y quién la llena.</p>
+    <div class="twrap"><table>
+      <tr><th>Carpeta / archivo</th><th>Contiene</th><th>Quién / cuándo</th></tr>
+      <tr><td><code>corpus/real/</code>, <code>corpus/pilotos/</code></td><td>Los lores en prosa (27 reales; los pilotos aparte)</td><td>Persona, estación 1</td></tr>
+      <tr><td><code>fixtures/real/</code>, <code>fixtures/pilotos/</code></td><td><code>world_parNN.json</code> y <code>personas_parNN.json</code> (54 archivos reales)</td><td>Persona, estación 1</td></tr>
+      <tr><td><code>jugador/</code></td><td>Elenco de 27 PJ, generador, <code>dados.py</code>, prompt del jugador</td><td>Generado una vez</td></tr>
+      <tr><td><code>dm/</code>, <code>extractor/</code></td><td>Prompts de G1 y G2, contrato del extractor</td><td>Persona; congelados antes de generar</td></tr>
+      <tr><td><code>orquestador/</code></td><td><code>db.py</code>, <code>vertical_slice.py</code> (G2), <code>vertical_slice_g1.py</code> (G1), <code>router.py</code>, <code>arbitro.py</code>, <code>mundo.py</code>, <code>reporte_validacion.py</code>…</td><td>Código</td></tr>
+      <tr><td><code>migrations/</code></td><td><code>001_schema.sql</code> (el esquema completo)</td><td>Una vez, al crear el volumen</td></tr>
+      <tr><td><code>scripts/</code></td><td><code>crear_campana_real*.py</code>, <code>sembrar_mundo_real.py</code>, <code>validar_fixtures_real.py</code>, <code>exportar_transcripcion.py</code>, <code>estado_*.py</code>, <code>barrer_stubs.py</code>, <code>supervisor.py</code>…</td><td>Código de apoyo</td></tr>
+      <tr><td><code>logs/</code></td><td>Bitácoras <code>.md</code> por corrida (~425 MB)</td><td>Script, estación 7</td></tr>
+      <tr><td><code>transcripciones/</code> y <code>transcripcion_*.md</code> en la raíz</td><td>Cada campaña en un solo <code>.md</code> limpio, exportado desde <code>turn_log</code></td><td>Script, al cerrar el par</td></tr>
+      <tr><td><code>datos_v2/</code></td><td>Un CSV por campaña (<code>parNN_G1.csv</code>, <code>parNN_G2.csv</code>) con las mediciones turno a turno, más resúmenes</td><td>Fases posteriores (medición)</td></tr>
+      <tr><td><code>validacion/</code></td><td>Formularios y claves de la validación humana</td><td>Fases posteriores</td></tr>
+      <tr><td><code>docker-compose.yml</code>, <code>.env</code></td><td>Cómo se levanta Postgres; claves y conexión</td><td>Una vez</td></tr>
+    </table></div>
+  </div>
+
+  <hr class="sep">
+
+  <h2 id="postgres">B · Lo que vive en Postgres</h2>
+
+  <div class="station" id="b1">
+    <div class="station-head">
+      <span class="station-num small">B1</span>
+      <span class="station-title">Cómo vive Postgres: contenedor, volumen, esquema</span>
+      <span class="actor-tag db">Base de datos</span>
+    </div>
+    <p class="station-lead">Postgres no está «instalado» en la computadora: corre dentro de un contenedor Docker definido en un solo archivo.</p>
+    <dl class="spec">
+      <dt>Qué es</dt><dd>El servicio <code>db</code> de <code>docker-compose.yml</code>: contenedor <code>dmia_db</code>, imagen <code>pgvector/pgvector:pg16</code> (Postgres 16 con la extensión pgvector ya compilada), puerto 5432. Al lado corre <code>dmia_pgadmin</code> (puerto 5050), una interfaz gráfica para mirar las tablas.</dd>
+      <dt>Dónde queda físicamente</dt><dd>En un volumen Docker llamado <code>dbdata</code>. Los datos sobreviven si apagas o recreas el contenedor.</dd>
+      <dt>Cuándo se crea el esquema</dt><dd><span class="tag-doc">Documentado</span> Una sola vez, la primera vez que se crea el volumen: Docker ejecuta automáticamente todo <code>.sql</code> de <code>migrations/</code> montado en <code>/docker-entrypoint-initdb.d</code>.<br><span class="tag-mine">Mi análisis</span> Consecuencia práctica: cambiar el esquema después <em>no</em> se aplica solo. Requiere una migración nueva o recrear el volumen (y perder los datos).</dd>
+      <dt>Configuración a mano</dt><dd><span class="tag-doc">Documentado</span> <code>shared_buffers=1GB</code>, <code>work_mem=16MB</code> y <code>maintenance_work_mem=512MB</code>; este último con el comentario «HNSW necesita memoria de mantenimiento al construir el índice».</dd>
+      <dt>Cómo se conectan los scripts</dt><dd><span class="tag-doc">Documentado</span> Con la librería <code>psycopg</code> y la cadena <code>DATABASE_URL</code>. Cada método abre una conexión nueva (sin pool); si el sistema operativo se queda sin puertos, prueba hasta 6 veces con espera creciente. Ese reintento existe porque con 22 corridas en paralelo Windows agotó los puertos una vez y tumbó a Par 09 G2.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="b2">
+    <div class="station-head">
+      <span class="station-num small">B2</span>
+      <span class="station-title">Por qué Postgres y no otra cosa</span>
+      <span class="actor-tag db">Base de datos</span>
+    </div>
+    <p class="station-lead">La cabecera del esquema enumera los principios de diseño; varios comentarios más abajo descartan alternativas explícitamente.</p>
+    <dl class="spec">
+      <dt>Principios</dt><dd><span class="tag-doc">Documentado</span> (1) Multi-tenant desde el día uno, con <code>tenant_id</code> en toda tabla y RLS. (2) Estado actual en la tabla de la entidad, historia en un ledger de deltas. (3) «Toda escritura narrativa pasa por <code>apply_delta()</code>. Si no pasó por ahí, no ocurrió.» (4) La lista blanca de campos mutables es <em>dato</em> (una tabla), no código. (5) Crear una entidad no es un delta: es una operación explícita. (6) <code>turn_log</code> es append-only y es la fuente de verdad reproducible.</dd>
+    </dl>
+    <div class="twrap"><table>
+      <tr><th>Alternativa</th><th>Por qué no aquí</th><th>Origen</th></tr>
+      <tr><td>Solo archivos (JSON / MD)</td><td>Sin transacciones ni concurrencia. Había hasta 22 corridas escribiendo en paralelo, y reanudar una campaña cortada exigiría releer y reconciliar archivos. El proyecto lo resume así: <code>turn_log</code> tiene la campaña completa «sin importar cuántas corridas tomó generarla».</td><td><span class="tag-doc">Documentado</span> + <span class="tag-mine">análisis</span></td></tr>
+      <tr><td>SQLite</td><td>Un solo escritor a la vez, sin RLS, sin pgvector y sin las funciones almacenadas que usa el esquema (<code>apply_delta()</code> y otras).</td><td><span class="tag-mine">Mi análisis</span></td></tr>
+      <tr><td>Cola externa (Redis, SQS)</td><td>«Cola en tabla. <code>FOR UPDATE SKIP LOCKED</code>. Sin Redis, sin SQS.» (Nota: la tabla <code>turn_jobs</code> existe pero el experimento no la usa.)</td><td><span class="tag-doc">Documentado</span></td></tr>
+      <tr><td>Base de grafos (Neo4j, Kuzu)</td><td>«El grafo ES una tabla. Una campaña tiene cientos de entidades, no millones: multi-hop exacto = CTE recursivo.»</td><td><span class="tag-doc">Documentado</span></td></tr>
+      <tr><td>Base vectorial aparte</td><td>pgvector la mete dentro de la misma base. En este experimento, además, no se hace búsqueda vectorial (B5).</td><td><span class="tag-mine">Mi análisis</span></td></tr>
+      <tr><td>Que la aplicación valide en tres llamadas separadas</td><td>Validar el valor contra la lista blanca y escribir es «el caso de libro para procedimiento almacenado»: hecho en tres llamadas desde el orquestador, un fallo deja estado corrupto; y como el orquestador es remoto, una función ahorra viajes de ida y vuelta.</td><td><span class="tag-doc">Documentado</span></td></tr>
+    </table></div>
+  </div>
+
+  <div class="station" id="b3">
+    <div class="station-head">
+      <span class="station-num small">B3</span>
+      <span class="station-title">Los tipos de dato del esquema, y para qué sirve cada uno</span>
+      <span class="actor-tag db">Base de datos</span>
+    </div>
+    <p class="station-lead">Cada columna tiene un tipo. Los tipos elegidos son parte del diseño: son barreras que la base aplica sola, sin depender de que el código se acuerde.</p>
+    <div class="twrap"><table>
+      <tr><th>Tipo</th><th>Dónde se ve</th><th>Qué garantiza</th></tr>
+      <tr><td><code>uuid</code></td><td>Llave primaria de <code>campaigns</code>, <code>npcs</code>, <code>locations</code>… (<code>gen_random_uuid()</code>, de la extensión <code>pgcrypto</code>)</td><td>Ids que no chocan entre campañas ni entre tenants, sin coordinarlos.</td></tr>
+      <tr><td><code>bigserial</code></td><td><code>turn_log.id</code>, <code>state_deltas.id</code>, <code>npc_knowledge.id</code></td><td>Contador automático para los registros que solo crecen (append-only), donde el orden de inserción importa.</td></tr>
+      <tr><td><code>enum</code> (<code>CREATE TYPE</code>)</td><td><code>location_state</code>, <code>npc_status</code>, <code>quest_status</code>, <code>visibility_level</code>, <code>world_tone</code>, <code>architecture</code> (<code>monolithic</code> / <code>mas</code>), <code>delta_source</code>…</td><td>La base rechaza cualquier valor fuera de la lista. Caso real: el bug de <code>location.state = 'observed'</code> (valor de <code>detail</code>, no de <code>state</code>) reventó justo ahí, en el enum de Postgres.</td></tr>
+      <tr><td><code>smallint</code> / <code>numeric</code> con <code>CHECK</code></td><td>Los 4 ejes de personalidad; <code>affinity</code>, <code>trust</code>, <code>respect</code> entre −100 y 100</td><td>Rangos garantizados por la base.</td></tr>
+      <tr><td><code>text[]</code></td><td><code>traits</code>, <code>taboos</code>, <code>ideal_tags</code>, <code>flaw_tags</code></td><td>Listas cortas dentro de la fila, sin tabla aparte.</td></tr>
+      <tr><td><code>jsonb</code></td><td><code>culture_overrides</code>, <code>on_fire_event</code>, <code>player_buffer</code>, <code>content_boundaries</code>, <code>old_value</code> / <code>new_value</code></td><td>Estructura flexible pero consultable por dentro.</td></tr>
+      <tr><td><code>vector(1024)</code></td><td><code>embedding</code> en 3 tablas</td><td>Ver B5.</td></tr>
+      <tr><td><code>timestamptz</code></td><td><code>created_at</code></td><td>Fecha y hora con zona horaria.</td></tr>
+    </table></div>
+  </div>
+
+  <div class="station" id="b4">
+    <div class="station-head">
+      <span class="station-num small">B4</span>
+      <span class="station-title">Catálogo de las 34 tablas: qué guarda cada una y quién la llena</span>
+      <span class="actor-tag db">Base de datos</span>
+    </div>
+    <p class="station-lead">Contando los <code>CREATE TABLE</code> de <code>001_schema.sql</code> salen <strong>34</strong> tablas, no 32 como decía la versión anterior de este tutorial (y como circula en los documentos del proyecto). No sé de dónde viene el 32; si la tesis lo cita, vale la pena alinearlo con el esquema real.</p>
+    <p>La columna <em>Fase 0</em> dice si la tabla recibe datos antes del turno 1: <strong>Sí</strong> (la escribe un script de la Fase 0), <strong>Migración</strong> (viene precargada por el propio <code>.sql</code>) o <strong>No</strong>. «Ningún <code>.py</code> la toca» significa que busqué el nombre en todo el código Python del proyecto y no aparece; puede que alguna función SQL la use.</p>
+    <div class="twrap"><table>
+      <tr><th>Tabla</th><th>Una fila es…</th><th>Fase 0</th><th>Índices declarados (para qué)</th></tr>
+      <tr><th colspan="4">Espacio y campaña</th></tr>
+      <tr><td><code>tenants</code></td><td>Un espacio aislado (uno por par)</td><td>Sí (est. 3)</td><td>Solo la llave primaria</td></tr>
+      <tr><td><code>users</code></td><td>El investigador, dentro de su tenant</td><td>Sí (est. 3)</td><td>UNIQUE (tenant_id, email)</td></tr>
+      <tr><td><code>campaigns</code></td><td>Un brazo (G1 o G2): título, <code>architecture</code>, tono, <code>current_turn</code>, <code>game_day</code>, límites de contenido</td><td>Sí (est. 3)</td><td>(tenant_id, owner_id)</td></tr>
+      <tr><td><code>campaign_members</code></td><td>Quién participa y si es DM</td><td>Sí (est. 3)</td><td>PK (campaign_id, user_id)</td></tr>
+      <tr><td><code>sessions</code></td><td>Un bloque de turnos (sesión)</td><td>No — ningún <code>.py</code> la toca</td><td>UNIQUE (campaign_id, ordinal)</td></tr>
+      <tr><th colspan="4">Historial y medición</th></tr>
+      <tr><td><code>turn_log</code></td><td>Un turno: lo que dijo el jugador (<code>jsonb</code>), lo que narró el DM, <code>router_modo</code> (solo G1)…</td><td>Sí: turno 0 (est. 3)</td><td>UNIQUE (campaign_id, turn_id); (campaign_id, turn_id DESC); (session_id)</td></tr>
+      <tr><td><code>turn_validation</code></td><td>Las marcas de medición determinista de un turno (4 niveles de confianza)</td><td>No en Fase 0; una por turno en est. 7</td><td>UNIQUE (campaign_id, turn_id) + llave foránea compuesta a <code>turn_log</code>; (campaign_id, turn_id DESC); parcial «turnos con problema real»</td></tr>
+      <tr><td><code>turn_jobs</code></td><td>Un trabajo en la cola (pensado para la plataforma)</td><td>No — ningún <code>.py</code> la toca</td><td>Parcial WHERE status = 'pending'</td></tr>
+      <tr><td><code>model_calls</code></td><td>Una llamada al modelo con tokens y latencia</td><td>No — ningún <code>.py</code> inserta en ella</td><td>(campaign_id, turn_id)</td></tr>
+      <tr><th colspan="4">Mundo</th></tr>
+      <tr><td><code>locations</code></td><td>Un lugar (jerárquico vía <code>parent_id</code>)</td><td>Sí (est. 4)</td><td>(campaign_id, parent_id); (campaign_id, kind)</td></tr>
+      <tr><td><code>factions</code></td><td>Una facción</td><td>Sí (est. 4)</td><td>(campaign_id)</td></tr>
+      <tr><td><code>faction_clocks</code></td><td>Un reloj narrativo de una facción</td><td>Sí (est. 4)</td><td>Parcial WHERE NOT paused AND fired_at_turn IS NULL (solo relojes vivos)</td></tr>
+      <tr><td><code>quests</code></td><td>Una misión. Columnas <code>completion_condition</code> y <code>completion_predicate</code> añadidas con <code>ALTER TABLE</code> más abajo en la migración</td><td>Sí (est. 4)</td><td>(campaign_id, status)</td></tr>
+      <tr><td><code>session_seeds</code></td><td>Una «semilla» narrativa sin ubicación (amenaza, revelación, gancho)</td><td>No en Fase 0 (hay código que las planta durante el juego)</td><td>Parcial WHERE planted_at_turn IS NULL</td></tr>
+      <tr><th colspan="4">Personajes no jugadores</th></tr>
+      <tr><td><code>npcs</code></td><td>Un PNJ: identidad, 4 ejes de personalidad, rasgos, contradicción, voz</td><td>Sí (est. 4)</td><td>(campaign_id, status); (campaign_id, location_id)</td></tr>
+      <tr><td><code>npc_ibf</code></td><td>Ideal, vínculo y defecto de un PNJ</td><td>Sí (est. 4)</td><td>PK npc_id</td></tr>
+      <tr><td><code>npc_bond_targets</code></td><td>Un vínculo de un PNJ hacia una entidad</td><td>Sí (est. 4)</td><td>PK compuesta + (target_type, target_id) para «¿quién tiene un vínculo hacia X?»</td></tr>
+      <tr><td><code>npc_disposition</code></td><td>Aprecio, confianza y respeto de un PNJ hacia el grupo (o hacia un PJ)</td><td>Sí (est. 4)</td><td>UNIQUE por expresión con COALESCE (ver C2)</td></tr>
+      <tr><td><code>npc_knowledge</code></td><td>Un hecho que un PNJ sabe, con el turno en que lo aprendió (append-only)</td><td>Sí (est. 4)</td><td>(npc_id, learned_at_turn)</td></tr>
+      <tr><td><code>npc_secrets</code></td><td>Un secreto con su condición de revelación</td><td>Sí (est. 4)</td><td>Parcial WHERE revealed_at_turn IS NULL</td></tr>
+      <tr><th colspan="4">Jugador y objetos</th></tr>
+      <tr><td><code>characters</code></td><td>Un personaje jugador (nombre, especie, HP, inventario…)</td><td>Sí, solo el PJ activo (est. 4)</td><td>(campaign_id, user_id)</td></tr>
+      <tr><td><code>pc_bond_targets</code></td><td>Un vínculo del PJ hacia una entidad</td><td>No — ningún <code>.py</code> la toca</td><td>(target_type, target_id)</td></tr>
+      <tr><td><code>pc_ibf_tension</code></td><td>Si una acción del jugador honró o contradijo su ideal/vínculo/defecto (append-only)</td><td>No — ningún <code>.py</code> la toca</td><td>(pc_id, turn_id)</td></tr>
+      <tr><td><code>items</code></td><td>Un objeto y quién lo tiene</td><td>No (la función SQL <code>create_entity()</code> los crea durante el juego)</td><td>Solo la llave primaria</td></tr>
+      <tr><td><code>entity_relations</code></td><td>Una arista del grafo (de → a) con vigencia en turnos</td><td>No — la lee <code>propagate_from_delta()</code>, pero no encontré ningún <code>INSERT</code> que la llene</td><td>Dos parciales WHERE valid_to_turn IS NULL</td></tr>
+      <tr><th colspan="4">Cambios de estado</th></tr>
+      <tr><td><code>mutable_fields</code></td><td>Un par (entidad, campo) que puede cambiar, con rango o valores permitidos. La lista blanca.</td><td>Migración (19 filas)</td><td>PK (entity_type, field_name)</td></tr>
+      <tr><td><code>state_deltas</code></td><td>Un cambio de estado: campo, valor viejo → nuevo, origen y <code>evidence</code> (cita literal del turno)</td><td>No en Fase 0; sí en est. 7</td><td>(campaign_id, turn_id); (campaign_id, entity_type, entity_id, turn_id DESC); (session_id). CHECK: si el origen es <code>extracted</code>, la evidencia es obligatoria.</td></tr>
+      <tr><td><code>rejected_deltas</code></td><td>Un cambio propuesto y rechazado, con su razón</td><td>No — y ver nota abajo</td><td>Ninguno</td></tr>
+      <tr><td><code>event_magnitudes</code></td><td>Qué le pasa a aprecio/confianza/respeto según el tipo de evento y la personalidad</td><td>Migración</td><td>PK (event, band)</td></tr>
+      <tr><td><code>session_recaps</code></td><td>Resumen de una sesión (hechos derivados del ledger)</td><td>No — ningún <code>.py</code> la toca</td><td>PK session_id</td></tr>
+      <tr><th colspan="4">Vectores (pgvector)</th></tr>
+      <tr><td><code>lore_documents</code></td><td>Un archivo de lore subido en crudo</td><td>No — sin uso</td><td>—</td></tr>
+      <tr><td><code>lore_chunks</code></td><td>Un trozo de lore con su embedding</td><td>No — sin uso</td><td>HNSW (coseno); (campaign_id)</td></tr>
+      <tr><td><code>narrative_chunks</code></td><td>Un trozo de narrativa pasada con su embedding</td><td>No — sin uso</td><td>HNSW (coseno); (campaign_id, turn_id)</td></tr>
+      <tr><td><code>rules_chunks</code></td><td>Un trozo de reglas (SRD, homebrew) con su embedding</td><td>No — sin uso</td><td>HNSW (coseno)</td></tr>
+    </table></div>
+    <p>Balance: la Fase 0 escribe <strong>16 tablas</strong> (<code>tenants</code>, <code>users</code>, <code>campaigns</code>, <code>campaign_members</code>, <code>turn_log</code>, <code>locations</code>, <code>factions</code>, <code>faction_clocks</code>, <code>quests</code>, <code>characters</code> y las seis de PNJ), otras 2 vienen precargadas por la migración, y las 16 restantes quedan vacías en la Fase 0 (algunas se llenan durante el juego, otras el experimento no las usa).</p>
+    <div class="sec-note"><p><strong>Diseño vs. realidad en <code>rejected_deltas</code> (Mi análisis).</strong> El comentario del esquema dice «los rechazados se GUARDAN: es la instrumentación que separa "sé que funciona" de "asumo que funciona"». Pero no encontré ningún <code>INSERT</code> en esa tabla, ni en Python ni en el SQL. Lo que sí pasa: <code>apply_delta()</code> lanza excepción, el orquestador la atrapa con <code>try/except</code> e imprime «delta rechazado por la base (…)» en la bitácora. O sea, los rechazos existen como líneas de log, no como filas consultables. Para la tesis, cualquier conteo de rechazos tendría que salir de las bitácoras.</p></div>
+  </div>
+
+  <div class="station" id="b5">
+    <div class="station-head">
+      <span class="station-num small">B5</span>
+      <span class="station-title">pgvector: existe en el esquema, pero el experimento no lo usa</span>
+      <span class="actor-tag db">Base de datos</span>
+    </div>
+    <p class="station-lead">Es la pieza más fácil de malinterpretar: está instalada, tiene tablas e índices propios, y aun así ninguna consulta del pipeline la toca.</p>
+    <dl class="spec">
+      <dt>Qué existe</dt><dd>La imagen de Docker trae pgvector, la migración ejecuta <code>CREATE EXTENSION vector</code>, y tres tablas (<code>lore_chunks</code>, <code>narrative_chunks</code> y <code>rules_chunks</code>) con columnas <code>vector(1024)</code> e índices HNSW por coseno, más <code>lore_documents</code> para guardar el archivo de lore en crudo. El modelo de embeddings previsto es <code>bge-m3</code>, con versión fija.</dd>
+      <dt>Qué comprobé</dt><dd>Busqué <code>lore_chunks</code>, <code>narrative_chunks</code>, <code>rules_chunks</code>, <code>bge-m3</code> y el operador de distancia <code>&lt;=&gt;</code> en todos los archivos <code>.py</code> del proyecto: <strong>cero coincidencias</strong>. El contexto que recibe la IA en cada turno (<code>contexto_escena()</code>) se arma con <code>SELECT</code> exactos sobre <code>npcs</code>, <code>npc_ibf</code>, <code>quests</code>, <code>factions</code>, <code>state_deltas</code>… — no hay «top-k por parecido».</dd>
+      <dt>Por qué existe igual</dt><dd><span class="tag-doc">Documentado</span> El esquema es «canónico» para la plataforma completa (con ingesta de lore por usuario). Un comentario razona por qué fijar el modelo de embeddings: si un proveedor lo actualizara entre las campañas de G2 y G1, «el espacio vectorial cambiaría a mitad de experimento; un archivo en disco no cambia nunca».</dd>
+      <dt>Por qué importa para la tesis</dt><dd>Es la misma contradicción que marqué en el artifact «Arquitectura MAS QuestMasters»: el Cap. 5.7.1 del documento describe el núcleo compartido con «componentes de recuperación por similitud», y el código real no los usa. Conviene alinear ese párrafo con lo que efectivamente corre.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="b6">
+    <div class="station-head">
+      <span class="station-num small">B6</span>
+      <span class="station-title">Multi-tenant y RLS: qué hace <code>set_config</code> y qué no</span>
+      <span class="actor-tag db">Base de datos</span>
+    </div>
+    <p class="station-lead">Cada tabla lleva <code>tenant_id</code>, y el esquema activa una política que dice «solo ves filas de tu tenant». Los scripts avisan a la base quién son con una línea al abrir cada transacción.</p>
+<pre class="code">-- en Python, al abrir cada transacción:
+SELECT set_config('app.tenant_id', '&lt;uuid del tenant&gt;', true);   -- true = solo esta transacción
+
+-- en el esquema, para cada tabla:
+CREATE POLICY tenant_isolation ON &lt;tabla&gt; USING (tenant_id = current_tenant());</pre>
+    <dl class="spec">
+      <dt>Por qué un tenant por par</dt><dd><span class="tag-doc">Documentado</span> El experimento vive en su propio tenant «nuevo» porque <code>seed.sql</code> (el fixture de pruebas) borra y recrea su tenant fijo cada vez que se corre, y como <code>campaigns.tenant_id</code> tiene <code>ON DELETE CASCADE</code>, colgar las campañas reales de ese tenant las habría borrado. Y G1 <em>reusa</em> el tenant de G2 en vez de crear otro: uno por campaña «multiplicaría por dos el número de tenants sin ganar aislamiento real».</dd>
+      <dt>Cuántas tablas lo llevan</dt><dd>La migración activa RLS con una lista de 29 tablas, más <code>rules_chunks</code> (con su propia política, porque su <code>tenant_id</code> puede ser nulo para el SRD compartido) y <code>campaign_members</code> (que va por subconsulta a <code>campaigns</code>). <code>mutable_fields</code> es catálogo compartido, sin RLS a propósito; <code>tenants</code> se protege por <code>GRANT</code>.</dd>
+    </dl>
+    <div class="sec-note"><p><strong>Advertencia (Mi análisis).</strong> En Postgres, un <em>superusuario</em> ignora RLS. Los scripts se conectan como <code>postgres</code> (lo confirma tanto la cadena por defecto de <code>db.py</code> como el <code>.env</code>), y la migración no crea otros roles ni usa <code>FORCE ROW LEVEL SECURITY</code>. Por lo tanto, en esta instalación las políticas existen pero, casi con seguridad, no filtran nada. Lo que realmente separa a G1 de G2 es que <em>cada consulta filtra por <code>campaign_id</code></em>, no RLS. Verificable con <code>SELECT rolsuper FROM pg_roles WHERE rolname = 'postgres';</code>. Si la tesis afirma aislamiento por RLS, conviene matizarlo.</p></div>
+  </div>
+
+  <hr class="sep">
+
+  <h2 id="indices">C · El índice: cómo se encuentra cada cosa</h2>
+  <p>«Índice» tiene dos sentidos en este proyecto, y los dos importan: el <strong>índice de base de datos</strong> (la estructura que hace rápidas las consultas y, a veces, impide errores) y el <strong>índice humano</strong> (cómo tú localizas un archivo, una campaña o un dato). Van los dos.</p>
+
+  <div class="station" id="c1">
+    <div class="station-head">
+      <span class="station-num small">C1</span>
+      <span class="station-title">Para qué sirve un índice, con números de este proyecto</span>
+      <span class="actor-tag db">Base de datos</span>
+    </div>
+    <p class="station-lead">Un índice es como el índice de un libro: en vez de leer todas las páginas para encontrar «Yenna», vas directo a la página. A cambio, ocupa espacio y cada escritura debe actualizarlo.</p>
+    <dl class="spec">
+      <dt>La escala</dt><dd><span class="tag-mine">Mi análisis</span> 54 campañas × 1,401 filas (turnos 0 a 1400) ≈ 75,654 filas en <code>turn_log</code>, todas en la misma tabla. Pedir «los últimos 5 turnos de la campaña X» sin índice obligaría a revisar esas 75 mil filas; con el índice <code>(campaign_id, turn_id DESC)</code> salta directo a las de esa campaña.</dd>
+      <dt>Una precisión honesta</dt><dd><span class="tag-mine">Mi análisis</span> A esta escala, incluso un recorrido completo sería rápido. Los índices de este proyecto valen más por lo que <em>impiden</em> (duplicados, referencias huérfanas) que por la velocidad.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="c2">
+    <div class="station-head">
+      <span class="station-num small">C2</span>
+      <span class="station-title">Los índices reales del esquema, uno por uno</span>
+      <span class="actor-tag db">Base de datos</span>
+    </div>
+    <div class="twrap"><table>
+      <tr><th>Tipo</th><th>Ejemplo real</th><th>Qué consulta o error resuelve</th><th>Por qué este tipo y no otro</th></tr>
+      <tr><td>Llave primaria (B-tree automático)</td><td><code>campaigns.id</code>, <code>npcs.id</code></td><td>Buscar una fila por su UUID.</td><td>Toda llave primaria crea uno automáticamente.</td></tr>
+      <tr><td>Compuesto con orden</td><td><code>turn_log (campaign_id, turn_id DESC)</code>; igual en <code>turn_validation</code> y <code>state_deltas</code></td><td>«Los últimos N turnos de <em>esta</em> campaña» y «los cambios del turno t».</td><td>El primer campo aísla la campaña (54 comparten tabla); el segundo ordena por turno. <code>DESC</code> porque casi siempre se pide lo más reciente. <span class="tag-mine">Mi análisis</span></td></tr>
+      <tr><td>UNIQUE compuesto</td><td><code>turn_log (campaign_id, turn_id)</code></td><td>Garantiza que un turno n existe una sola vez por campaña.</td><td>Un índice normal aceleraría la consulta pero permitiría duplicar. Con UNIQUE, un turno repetido se rechaza en vez de guardarse dos veces. <span class="tag-mine">Mi análisis</span></td></tr>
+      <tr><td>Parcial (con <code>WHERE</code>)</td><td>relojes vivos (<code>WHERE NOT paused AND fired_at_turn IS NULL</code>); secretos sin revelar; relaciones vigentes (<code>valid_to_turn IS NULL</code>); semillas sin plantar; trabajos pendientes; turnos con problema real</td><td>Consultas sobre el subconjunto «vivo» de una tabla.</td><td>El índice solo contiene las filas que importan, así que no crece con la historia. <span class="tag-mine">Mi análisis</span></td></tr>
+      <tr><td>UNIQUE por expresión</td><td><code>npc_disposition_key</code>: <code>UNIQUE (npc_id, COALESCE(pc_id, '0000…'))</code></td><td>Una sola fila de disposición por (PNJ, PJ) o por (PNJ, grupo).</td><td>En SQL dos <code>NULL</code> cuentan como distintos, así que un UNIQUE normal dejaría duplicar la fila «hacia el grupo» (<code>pc_id</code> nulo). El <code>COALESCE</code> convierte el nulo en un UUID fijo para que sí choque. <span class="tag-mine">Mi análisis</span></td></tr>
+      <tr><td>Índice «inverso»</td><td><code>npc_bond_targets (target_type, target_id)</code></td><td>«¿Quién tiene un vínculo hacia X?»</td><td><span class="tag-doc">Documentado</span> «Consultables en ambas direcciones… propaga deltas sin programar nada». La PK ya cubre PNJ → destino; este cubre destino → PNJ.</td></tr>
+      <tr><td>Llave foránea compuesta</td><td><code>turn_validation (campaign_id, turn_id) → turn_log</code></td><td>No se puede registrar la medición de un turno que no existe.</td><td><span class="tag-doc">Documentado</span> El docstring de <code>registrar_validacion</code> aclara que exige que <code>turn_log</code> ya tenga la fila, por eso se llama después de registrar el turno.</td></tr>
+      <tr><td>HNSW (vectores, coseno)</td><td><code>lore_chunks</code>, <code>narrative_chunks</code>, <code>rules_chunks</code></td><td>Vecinos más cercanos por parecido.</td><td>Infraestructura sin uso en este experimento (B5).</td></tr>
+    </table></div>
+    <div class="why-box">
+      <div class="lbl"><span class="tag-mine">Mi análisis</span> Dos observaciones sobre lo que falta o sobra</div>
+      <p><strong>Sobra:</strong> <code>turn_log</code> declara <code>UNIQUE (campaign_id, turn_id)</code> y además un índice <code>(campaign_id, turn_id DESC)</code>. Postgres puede recorrer un índice B-tree en ambos sentidos, así que el segundo es probablemente redundante (ocupa espacio y encarece cada escritura sin aportar). No es un bug, solo una limpieza posible.</p>
+      <p style="margin-top:8px"><strong>Falta:</strong> <code>campaigns.title</code> no tiene ni índice ni UNIQUE. Con ~54 filas buscar por título es instantáneo, pero permite títulos repetidos, y así pudo existir el stub vacío <code>f09ca142…</code> con el mismo título que la campaña real. La mitigación actual es de proceso, no de esquema: <code>barrer_stubs.py</code> y filtrar <code>current_turn &gt; 0</code> en cualquier búsqueda por título.</p>
+    </div>
+  </div>
+
+  <div class="station" id="c3">
+    <div class="station-head">
+      <span class="station-num small">C3</span>
+      <span class="station-title">El índice humano: «quiero encontrar X, ¿dónde miro?»</span>
+      <span class="actor-tag persona">Referencia</span>
+    </div>
+    <div class="twrap"><table>
+      <tr><th>Quiero…</th><th>Dónde miro</th><th>Cómo</th></tr>
+      <tr><td>el lore de un par</td><td><code>corpus/real/lore_&lt;lugar&gt;.md</code></td><td>El lugar figura en el título de la campaña y en la tabla «Corpus real» del plan de cierre.</td></tr>
+      <tr><td>el mundo estructurado de un par</td><td><code>fixtures/real/world_parNN.json</code> y <code>personas_parNN.json</code></td><td>Por número de par.</td></tr>
+      <tr><td>el <code>campaign_id</code> de G1 y de G2</td><td>Tabla <code>campaigns</code></td><td><code>SELECT id, title, architecture, current_turn FROM campaigns ORDER BY created_at;</code> — los títulos siguen el formato «Par 03 (real) · G2 (Monolítico) · Vega del Yelmo». También los imprimen los scripts de la estación 3.</td></tr>
+      <tr><td>cuántos turnos lleva una campaña</td><td><code>campaigns.current_turn</code></td><td>Scripts <code>estado_*.py</code> y <code>current_turn.py</code>, que además calculan el <code>--turnos</code> de reanudación.</td></tr>
+      <tr><td>la transcripción limpia de una campaña</td><td>Postgres, <code>turn_log</code></td><td><code>python scripts/exportar_transcripcion.py --campaign-id &lt;uuid&gt;</code> (genera un <code>.md</code>); ya exportadas en <code>transcripciones/</code>.</td></tr>
+      <tr><td>la bitácora de una corrida</td><td><code>logs/par_NN_real_gX_…md</code></td><td>Los 8 caracteres antes de <code>turnos_</code> son el inicio del <code>campaign_id</code>.</td></tr>
+      <tr><td>las mediciones turno a turno</td><td>Tabla <code>turn_validation</code>, o <code>datos_v2/parNN_G1.csv</code> / <code>parNN_G2.csv</code></td><td>Resumen por campaña en <code>datos_v2/resumen_por_campana.csv</code>.</td></tr>
+      <tr><td>la historia de una entidad (¿cuándo murió Yenna?)</td><td>Tabla <code>state_deltas</code></td><td>Filtrar por <code>entity_id</code> y ordenar por <code>turn_id</code>; cada cambio trae su <code>evidence</code> literal.</td></tr>
+      <tr><td>lo que costó una corrida</td><td>La bitácora</td><td>Los costos se imprimen en el log; la tabla <code>model_calls</code> no se llena.</td></tr>
+    </table></div>
+  </div>
+
+  <hr class="sep">
+
+  <h2 id="escritura">D · Cómo se escribe: doble copia, transacciones y guardas</h2>
+
+  <div class="station" id="d1">
+    <div class="station-head">
+      <span class="station-num small">D1</span>
+      <span class="station-title">El turno 0 se guarda dos veces, a propósito</span>
+      <span class="actor-tag script">Script</span>
+    </div>
+    <p class="station-lead">La misma ficción entra a Postgres de dos formas distintas, porque responden preguntas distintas.</p>
+    <div class="twrap"><table>
+      <tr><th>Pregunta</th><th>Dónde vive la respuesta</th><th>Quién la escribe</th></tr>
+      <tr><td>«¿Cómo se siente este lugar?»</td><td>Prosa: <code>turn_log.dm_output</code> del <code>turn_id = 0</code> (el lore completo)</td><td>Estación 3</td></tr>
+      <tr><td>«¿Está vivo este PNJ? ¿En qué estado está este lugar?»</td><td>Filas: <code>npcs.status</code>, <code>locations.state</code></td><td>Estación 4</td></tr>
+      <tr><td>«¿Cuánto le cae bien el grupo a Yenna?»</td><td><code>npc_disposition</code> (números; el modelo solo ve una «banda» de conducta)</td><td>Estación 4</td></tr>
+      <tr><td>«¿Cuántos días faltan para que llegue la caravana?»</td><td><code>faction_clocks.progress</code> y <code>threshold</code></td><td>Estación 4</td></tr>
+    </table></div>
+    <div class="why-box">
+      <div class="lbl">Por qué se diseñó así</div>
+      <p><span class="tag-doc">Documentado</span> No nació como un plan: nació de un error. <code>crear_campana_real.py</code> sembró primero solo el lore como turno 0. Pero el código no lee prosa: <code>entidades()</code>, <code>estado_pnj()</code>, <code>contexto_escena()</code> y <code>hp_pj()</code> leen filas. Sin ellas, <code>entidades()</code> devolvía una lista vacía y <code>estado_pnj("Sargento Brea")</code> devolvía <code>None</code>, y el motor se caía con un <code>TypeError</code>. <code>sembrar_mundo_real.py</code> se escribió para cerrar esa brecha. De ahí que hoy convivan las dos copias.</p>
+    </div>
+  </div>
+
+  <div class="station" id="d2">
+    <div class="station-head">
+      <span class="station-num small">D2</span>
+      <span class="station-title">Cómo se escribe un turno: transacciones pequeñas y atómicas</span>
+      <span class="actor-tag script">Script</span>
+    </div>
+    <p class="station-lead">Cada escritura importante va en su propia transacción: o entra completa o no entra.</p>
+    <dl class="spec">
+      <dt>El turno y su contador</dt><dd><span class="tag-doc">Documentado</span> <code>registrar_turno()</code> hace, en una sola transacción, un <code>INSERT</code> en <code>turn_log</code> y un <code>UPDATE campaigns SET current_turn = …</code>. Ambas cosas se confirman juntas.<br><span class="tag-mine">Mi análisis</span> Es lo que vuelve confiable a <code>current_turn</code> como contador de reanudación. Si el turno y el contador se guardaran por separado, una caída entre los dos dejaría el contador atrasado, y reanudar repetiría un turno (la restricción UNIQUE lo frenaría con un error).</dd>
+      <dt>La medición</dt><dd><code>registrar_validacion()</code> inserta la fila de <code>turn_validation</code> <em>después</em> de registrar el turno, porque la llave foránea compuesta exige que el turno ya exista.</dd>
+      <dt>El cambio de estado</dt><dd><span class="tag-doc">Documentado</span> Pasa por la función almacenada <code>apply_delta()</code>, que valida el valor contra la lista blanca y el enum, y escribe en <code>state_deltas</code> y en la entidad como una unidad. Los cambios que salen del extractor exigen <code>evidence</code> (una cita literal del turno): «un modelo que debe citar el texto que justifica el cambio no puede inventar el cambio».</dd>
+      <dt>El reloj del mundo</dt><dd><span class="tag-doc">Documentado</span> El día de juego se calcula <code>turno // 20</code> (1,400 turnos = 70 días) y se guarda como un delta con origen <code>clock</code> más el avance de los relojes, en <em>una</em> transacción: no puede quedar el día avanzado sin que los relojes se enteren. Dato que conviene tener presente: el docstring cuenta que en los pares 01–17 los relojes de facción <strong>nunca dispararon</strong> (dependían de que el extractor emitiera <code>game_day</code> y en ~30,000 turnos no lo hizo ni una vez); el reloj determinista rige desde el Par 18.</dd>
+      <dt>Por qué no de otra forma</dt><dd><span class="tag-mine">Mi análisis</span> Con <code>autocommit</code> (confirmar cada sentencia suelta), una caída a mitad de la siembra dejaría un mundo a medias: por ejemplo, PNJ sin sus secretos. Por eso <code>sembrar_mundo_real.py</code> abre la conexión con <code>autocommit=False</code> y hace un único <code>commit()</code> al final.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="d3">
+    <div class="station-head">
+      <span class="station-num small">D3</span>
+      <span class="station-title">Las guardas que protegen lo guardado</span>
+      <span class="actor-tag script">Script + base</span>
+    </div>
+    <p class="station-lead">Casi todas nacieron de un error real. Cada fila dice contra qué protege y dónde vive la barrera.</p>
+    <div class="twrap"><table>
+      <tr><th>Riesgo</th><th>Barrera</th><th>Dónde vive</th></tr>
+      <tr><td>Sembrar el mundo dos veces sobre la misma campaña (dejó al PJ Otto con estado repartido en dos filas en Par 02 G1)</td><td>Si la campaña ya tiene cualquier PNJ, el script aborta antes de escribir nada</td><td>Código: <code>sembrar_mundo_real.py</code></td></tr>
+      <tr><td>Campañas «stub» vacías por siembra doble (<code>current_turn = 0</code>)</td><td><code>barrer_stubs.py</code> (solo lectura) y filtrar <code>current_turn &gt; 0</code></td><td>Proceso, no esquema (ver C2)</td></tr>
+      <tr><td>Un turno duplicado</td><td>UNIQUE (campaign_id, turn_id)</td><td>Base de datos</td></tr>
+      <tr><td>Reanudar una campaña de más (Par 02 G2 llegó a 1,667 turnos)</td><td>Reanudar siempre con <code>1400 − current_turn</code>, nunca <code>--turnos 1400</code> a ciegas</td><td>Proceso + scripts <code>estado_*.py</code></td></tr>
+      <tr><td>Un valor fuera de dominio (<code>location.state = 'observed'</code>)</td><td>Enum y CHECK en la base, más <code>try/except</code> en el orquestador que registra el rechazo y sigue</td><td>Base + código</td></tr>
+      <tr><td>Arrancar sin turno 0 y narrar la ambientación de otro par</td><td>El motor se detiene con <code>sys.exit()</code> si no hay turno previo</td><td>Código (estación 6)</td></tr>
+      <tr><td>Rutas relativas mal pasadas (<code>corpus/</code> vs <code>corpus/real/</code>)</td><td>Ninguna: hay que escribir el prefijo <code>real\</code> a mano en cada comando</td><td>Sin barrera; convención</td></tr>
+    </table></div>
+  </div>
+
+  <hr class="sep">
+
+  <h2 id="chuleta">Chuleta rápida</h2>
+  <div class="twrap"><table>
+    <tr><th>Estación</th><th>Actor</th><th>En una frase</th><th>Dónde queda guardado</th></tr>
+    <tr><td>1. Lore + fichas</td><td>Persona</td><td>Alguien escribe la historia y la traduce a datos estructurados.</td><td>Disco: <code>corpus/real/*.md</code> y <code>fixtures/real/*.json</code> (<a href="#a1">A1</a>–<a href="#a3">A3</a>)</td></tr>
+    <tr><td>2. Validación cruzada</td><td>Script</td><td>Un programa revisa que los datos no tengan referencias rotas ni relojes mal calibrados.</td><td>En ninguna parte: solo lee</td></tr>
+    <tr><td>3. Crear campaña ×2</td><td>Script</td><td>Nace un código único (campaign_id) por cada brazo, y el lore entra como turno 0.</td><td>Postgres: <code>tenants</code>, <code>users</code>, <code>campaigns</code>, <code>campaign_members</code>, <code>turn_log</code></td></tr>
+    <tr><td>4. Sembrar mundo ×2</td><td>Script</td><td>El contenido de los JSON se convierte en filas reales en la base de datos.</td><td>Postgres: 11 tablas de mundo, en una transacción (<a href="#b4">B4</a>)</td></tr>
+    <tr><td>5. Turno 0</td><td>Base de datos</td><td>El punto de partida queda completo y listo para leerse, en prosa y en filas.</td><td>Las mismas tablas de 3 y 4 (<a href="#d1">D1</a>)</td></tr>
+    <tr><td>6. Candado de arranque</td><td>Script</td><td>Si falta el turno 0, el sistema se detiene en vez de improvisar.</td><td>En ninguna parte: solo lee</td></tr>
+    <tr><td>7. Arrancar motor ×2</td><td>Script</td><td>Empieza la generación real, turno a turno, sin intervención humana.</td><td><code>turn_log</code> + <code>current_turn</code> + <code>turn_validation</code> + <code>state_deltas</code> en Postgres; bitácora <code>.md</code> en <code>logs/</code> (<a href="#d2">D2</a>)</td></tr>
+  </table></div>
+
+  <h2>Qué sigue</h2>
+  <p>La próxima entrega de este tutorial cubre lo que pasa dentro de un turno, una vez que ya arrancó el motor — qué recibe la IA, cómo se resuelve una tirada de dados, y la diferencia real entre cómo lo hace G2 (todo en una sola llamada) y G1 (repartido entre varios roles especializados). Avisa cuando quieras que sigamos con esa parte.</p>
+
+  <p class="footnote">Generado 2026-09-30 a partir de <code>plan-cierre-investigacion.md</code> (bitácora técnica del proyecto QuestMasters). Ampliado el mismo día con la sección «Dónde vive cada dato», escrita leyendo directamente el repositorio: <code>migrations/001_schema.sql</code>, <code>docker-compose.yml</code>, <code>orquestador/db.py</code>, <code>scripts/*.py</code>, <code>extractor/contrato.json</code> y los JSON reales del Par 03. Del <code>.env</code> solo se leyeron los nombres de las variables y el usuario de la conexión, nunca las claves. Las etiquetas «Documentado» y «Mi análisis» separan lo que dice el repo de lo que razono yo encima. Esta es una versión introductoria pensada para alguien sin contexto previo de D&amp;D ni del stack técnico; para el nivel de detalle citado línea por línea, ver el documento de referencia técnica "Arquitectura MAS QuestMasters" en tus artifacts.</p>
+</div>
+
+</body>
+</html>

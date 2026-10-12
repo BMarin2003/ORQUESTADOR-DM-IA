@@ -8,7 +8,7 @@ from pptx import Presentation
 
 from actualizar_deck import forma, poner, reemplazar
 
-RUTA = Path(__file__).resolve().parents[2] / "docs" / "Sustentacion_MAS_vs_Monolitico_v2.pptx"
+RUTA = Path(__file__).resolve().parents[2] / "sustentacion" / "propuestas" / "Sustentacion_MAS_vs_Monolitico_v2.pptx"
 
 NOTA_27 = (" Actualización 10 de octubre: tres DM externos etiquetaron a ciegas 102 ítems. Solo E4 pasó el control de "
            "calidad (E2 marcó «no» en todo, E3 respondió con mediana de 9 segundos). Con E4 la precisión del detector es "

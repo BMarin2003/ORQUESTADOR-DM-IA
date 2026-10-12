@@ -1,7 +1,7 @@
 r"""
 Router de G1 — determinista, sin llamada a modelo.
 
-Implementa el algoritmo fijado en docs/descomposicion_prompts.md §5.1, tras
+Implementa el algoritmo fijado en docs/especificaciones/descomposicion_prompts.md §5.1, tras
 la auditoría de paridad del 2026-09-04 (las 16 instrucciones que la matriz
 le asignaba a un Router-LLM: la mayoría ya tenían respaldo en otro rol, y
 las que no, son mecánicas — ver §8 y §9 de ese documento). Aquí solo está

@@ -10,7 +10,7 @@ from pathlib import Path
 from xml.etree import ElementTree as ET
 
 RAIZ = Path(__file__).resolve().parents[2]
-POR_DEFECTO = RAIZ / "Claude outputs" / "Entrega_Asesor_TESIS" / "01_Tesis" / "Tesis_Coherencia_Narrativa_MAS_vs_Monolitico.docx"
+POR_DEFECTO = RAIZ / "entregas" / "claude_outputs" / "Entrega_Asesor_TESIS" / "01_Tesis" / "Tesis_Coherencia_Narrativa_MAS_vs_Monolitico.docx"
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
 
 PATRONES = {

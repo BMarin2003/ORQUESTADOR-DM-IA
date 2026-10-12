@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuestMasters Fase 1</title>
+<style>
+/* Layout: continuación del tutorial de la Fase 0 (misma identidad visual: pergamino + tres tintas de actor).
+   Aquí las estaciones son los pasos de UN turno y las fichas llevan preguntas y respuestas para quien no sabe nada. */
+:root{
+  --bg:#f6f2e8; --surface:#fffdf7; --surface-2:#efe7d5; --fg:#241f16; --fg-dim:#6b6151;
+  --border:#ddd2b6; --ink:#8a3324; --actor-persona:#8a3324; --actor-script:#1f6f66; --actor-db:#2f4c8a;
+  --mono-bg:#efe6d0; --warn-bg:#f6e3b8; --warn-fg:#6b4a12; --bad-bg:#f2d5cf; --bad-fg:#7a2317;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#171310; --surface:#1e1a15; --surface-2:#262019; --fg:#ece3d2; --fg-dim:#b0a68f;
+    --border:#3a3122; --ink:#e2896f; --actor-persona:#e2896f; --actor-script:#6fbfb0; --actor-db:#7f9eea;
+    --mono-bg:#221c14; --warn-bg:#3a2c10; --warn-fg:#f0c878; --bad-bg:#40201a; --bad-fg:#f2a595;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#171310; --surface:#1e1a15; --surface-2:#262019; --fg:#ece3d2; --fg-dim:#b0a68f;
+  --border:#3a3122; --ink:#e2896f; --actor-persona:#e2896f; --actor-script:#6fbfb0; --actor-db:#7f9eea;
+  --mono-bg:#221c14; --warn-bg:#3a2c10; --warn-fg:#f0c878; --bad-bg:#40201a; --bad-fg:#f2a595;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg); color:var(--fg); margin:0; padding-inline:16px; font-family:"Source Sans 3",ui-sans-serif,system-ui,sans-serif; font-size:16px; line-height:1.6}
+.wrap{max-width:900px; margin:0 auto; padding-block:36px 90px}
+h1,h2,h3,h4{font-family:"Fraunces",Georgia,serif; font-weight:600; text-wrap:balance; color:var(--fg)}
+h1{font-size:clamp(1.7rem,4.2vw,2.4rem); margin:0 0 8px}
+h2{margin:44px 0 10px}
+.kicker{font-family:"IBM Plex Mono",monospace; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink); margin:0 0 10px}
+.subtitle{color:var(--fg-dim); font-size:1.05rem; margin:0 0 30px; max-width:66ch}
+p{margin:0 0 14px; max-width:70ch}
+code{font-family:"IBM Plex Mono",ui-monospace,monospace; background:var(--mono-bg); padding:0.12em 0.4em; border-radius:4px; font-size:0.87em; overflow-wrap:anywhere}
+a{color:var(--ink)}
+.lede{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:20px 22px; margin-bottom:26px}
+.lede p:last-child{margin-bottom:0}
+.glossary-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:10px; margin:14px 0 8px}
+.gterm{background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:12px 14px; min-width:0}
+.gterm .word{font-family:"Fraunces",serif; font-weight:600; font-size:0.98rem; margin-bottom:3px}
+.gterm .def{font-size:0.85rem; color:var(--fg-dim)}
+.station{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:22px 24px; margin:20px 0; min-width:0}
+.station-head{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; margin-bottom:6px}
+.station-num{font-family:"Fraunces",serif; font-size:1.25rem; font-weight:700; color:var(--ink); line-height:1}
+.station-title{font-family:"Fraunces",serif; font-size:1.2rem; font-weight:600}
+.actor-tag{display:inline-flex; align-items:center; gap:5px; font-family:"IBM Plex Mono",monospace; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.05em; padding:3px 9px; border-radius:99px; border:1px solid currentColor}
+.actor-tag.persona{color:var(--actor-persona)} .actor-tag.script{color:var(--actor-script)} .actor-tag.db{color:var(--actor-db)}
+.station-lead{color:var(--fg); font-size:1rem; margin:8px 0 16px}
+.spec{display:grid; grid-template-columns:150px 1fr; gap:2px 14px; font-size:0.9rem; margin:16px 0 6px}
+.spec dt{font-family:"IBM Plex Mono",monospace; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--fg-dim); padding:9px 0; border-top:1px solid var(--border)}
+.spec dd{margin:0; padding:9px 0; border-top:1px solid var(--border); max-width:56ch; min-width:0}
+.spec dt:first-of-type, .spec dd:first-of-type{border-top:none}
+@media (max-width:560px){ .spec{grid-template-columns:1fr} .spec dt{padding-bottom:0; border-top:1px solid var(--border)} .spec dd{border-top:none; padding-top:2px} }
+.why-box{background:var(--surface-2); border-left:3px solid var(--ink); border-radius:0 10px 10px 0; padding:12px 16px; margin-top:14px}
+.why-box .lbl{font-family:"IBM Plex Mono",monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink); margin-bottom:4px}
+.why-box p{margin-bottom:0; font-size:0.9rem}
+table{border-collapse:collapse; width:100%; margin:0 0 16px; font-size:0.86rem}
+th,td{border:1px solid var(--border); padding:8px 10px; text-align:left; vertical-align:top}
+th{background:var(--surface-2); font-family:"Fraunces",serif; font-weight:600}
+.twrap{overflow-x:auto; max-width:100%}
+.toc{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 26px}
+.toc a{font-family:"IBM Plex Mono",monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; text-decoration:none; border:1px solid var(--border); border-radius:99px; padding:5px 12px; background:var(--surface); color:var(--fg)}
+.toc a:hover{border-color:var(--ink); color:var(--ink)}
+.tag-doc,.tag-mine{display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:0.6rem; text-transform:uppercase; letter-spacing:0.04em; padding:1px 7px; border-radius:99px; margin-right:6px; vertical-align:1px; white-space:nowrap}
+.tag-doc{color:var(--actor-script); border:1px solid currentColor}
+.tag-mine{color:var(--warn-fg); background:var(--warn-bg)}
+pre.code{background:var(--mono-bg); border:1px solid var(--border); border-radius:10px; padding:12px 14px; overflow-x:auto; font-family:"IBM Plex Mono",monospace; font-size:0.76rem; line-height:1.5; margin:10px 0 14px; max-width:100%}
+.sec-note{background:var(--warn-bg); color:var(--warn-fg); border-radius:10px; padding:11px 15px; font-size:0.88rem; margin:14px 0}
+.sec-note p{margin:0; max-width:none}
+.sec-bad{background:var(--bad-bg); color:var(--bad-fg); border-radius:10px; padding:11px 15px; font-size:0.88rem; margin:14px 0}
+.sec-bad p{margin:0 0 8px; max-width:none} .sec-bad p:last-child{margin-bottom:0}
+.qa{margin:14px 0 0; padding-left:12px; border-left:3px solid var(--border)}
+.qa .q{font-weight:600; color:var(--ink); margin:0 0 4px; max-width:none}
+.qa .a p{margin:0 0 8px; max-width:none}
+.qa .a{font-size:0.93rem; min-width:0}
+h2[id],h3[id],.station[id]{scroll-margin-top:16px}
+td code,th code{font-size:0.8em}
+.footnote{font-size:0.8rem; color:var(--fg-dim); border-top:1px solid var(--border); margin-top:60px; padding-top:18px}
+.sev{display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:0.62rem; text-transform:uppercase; letter-spacing:0.04em; padding:1px 7px; border-radius:99px; white-space:nowrap}
+.sev.alta{background:var(--bad-bg); color:var(--bad-fg)} .sev.media{background:var(--warn-bg); color:var(--warn-fg)} .sev.baja{border:1px solid var(--border); color:var(--fg-dim)}
+.flow{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin:12px 0 18px; font-size:0.82rem}
+.flow .chip{border:1.5px solid var(--border); background:var(--surface); border-radius:8px; padding:6px 10px; min-width:0}
+.flow .chip.persona{border-color:var(--actor-persona)} .flow .chip.script{border-color:var(--actor-script)} .flow .chip.db{border-color:var(--actor-db)}
+.flow .ar{color:var(--fg-dim)}
+.actor-legend{display:flex; flex-wrap:wrap; gap:16px; font-size:0.82rem; color:var(--fg-dim); margin:6px 0 20px}
+.actor-legend span{display:inline-flex; align-items:center; gap:7px}
+.dot{width:11px; height:11px; border-radius:50%; display:inline-block}
+.dot.persona{background:var(--actor-persona)} .dot.script{background:var(--actor-script)} .dot.db{background:var(--actor-db)}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <p class="kicker">Tutorial QuestMasters · parte 2 de varias</p>
+  <h1>Cómo se juega una campaña sin humanos: la Fase 1</h1>
+  <p class="subtitle">La Fase 0 dejó todo listo para empezar. La <strong>Fase 1</strong> es la que gasta el dinero y el tiempo: dos sistemas de inteligencia artificial juegan la misma historia durante 1,400 turnos, en 54 campañas, casi sin que nadie las toque. Aquí se explica qué ocurre en cada turno, con qué tecnología, qué se guarda, qué falla y cómo se recupera, para alguien que no sabe nada de D&amp;D ni de sistemas. Al final hay una revisión escrita desde el punto de vista de un auditor metodológico estricto.</p>
+
+  <nav class="toc" aria-label="Secciones">
+    <a href="#vocab">Vocabulario</a>
+    <a href="#fase1">Qué es la Fase 1</a>
+    <a href="#turno">Un turno de G2</a>
+    <a href="#g1">Un turno de G1</a>
+    <a href="#memoria">Memoria</a>
+    <a href="#api">API y modelo</a>
+    <a href="#datos">Base de datos</a>
+    <a href="#paralelo">Paralelismo</a>
+    <a href="#fallos">Fallos</a>
+    <a href="#numeros">Números</a>
+    <a href="#auditoria">Auditoría</a>
+  </nav>
+
+  <div class="lede">
+    <p><strong>Una frase:</strong> la Fase 1 toma los 27 pares de campañas ya sembrados en la Fase 0 y hace avanzar cada una, un turno tras otro, hasta el turno 1,400; el resultado son 54 transcripciones (75,600 turnos) y una base de datos con el estado del mundo de cada una. Todavía no se mide nada de calidad: eso es la Fase 2.</p>
+    <p><strong>Cómo se etiquetan las afirmaciones:</strong> <span class="tag-doc">Documentado</span> significa que sale del código, del esquema de la base, de las bitácoras o del plan del proyecto (con el archivo o la cuenta que lo respalda). <span class="tag-mine">Mi análisis</span> es razonamiento mío, incluidas las críticas; no está escrito en ningún archivo del proyecto y conviene que lo verifiques.</p>
+  </div>
+
+  <h2 id="vocab">Vocabulario nuevo, sin miedo a preguntar</h2>
+  <p>Los términos de la Fase 0 (JSON, UUID, enum, tabla…) se dan por sabidos; si no, la parte 1 los explica. Aquí van los que aparecen por primera vez.</p>
+  <div class="glossary-grid">
+    <div class="gterm"><div class="word">LLM (modelo de lenguaje)</div><div class="def">Programa entrenado con muchísimo texto que, dado un texto de entrada, escribe la continuación más plausible. Es lo que "juega" y "narra" aquí. No recuerda nada entre una llamada y otra: solo conoce lo que se le pega en la entrada.</div></div>
+    <div class="gterm"><div class="word">Prompt (system / user)</div><div class="def">La entrada que recibe el modelo. El <em>system</em> son las reglas fijas del rol ("eres el DM…"); el <em>user</em> es lo variable de este turno (escena, acción del jugador).</div></div>
+    <div class="gterm"><div class="word">Token</div><div class="def">Trozo de texto que el modelo cuenta y cobra (más o menos ¾ de palabra). Se paga por token de entrada y de salida, a precios distintos.</div></div>
+    <div class="gterm"><div class="word">Temperatura</div><div class="def">Número que controla cuánto azar usa el modelo al elegir cada palabra. 0 = casi siempre la más probable (respuesta estable); 0.8 = más variada y creativa.</div></div>
+    <div class="gterm"><div class="word">API y endpoint</div><div class="def">Una API es una puerta por la que un programa le pide algo a otro por internet. El <em>endpoint</em> es la dirección exacta de esa puerta. Aquí, el del proveedor DeepInfra.</div></div>
+    <div class="gterm"><div class="word">DeepInfra</div><div class="def">Empresa que aloja modelos abiertos y cobra por token. El proyecto le manda cada petición y le paga; no guarda nada de la campaña allí.</div></div>
+    <div class="gterm"><div class="word">Gemma-4-31B-it</div><div class="def">El modelo concreto usado (de Google, 31 mil millones de parámetros, versión "it" = ajustada para seguir instrucciones). En los dos brazos, y también para el jugador desde el Par 04.</div></div>
+    <div class="gterm"><div class="word">Modo JSON</div><div class="def">Opción de la API que obliga al modelo a contestar con un JSON válido en vez de prosa. Se usa cuando la salida la va a leer un programa.</div></div>
+    <div class="gterm"><div class="word">Turno</div><div class="def">Un ciclo completo: el jugador actúa, el sistema resuelve, se narra la consecuencia y se guarda. Cada campaña tiene 1,400.</div></div>
+    <div class="gterm"><div class="word">Orquestador / bucle</div><div class="def">El programa Python que ejecuta los pasos de un turno en orden y repite. Los dos archivos son <code>vertical_slice.py</code> (G2) y <code>vertical_slice_g1.py</code> (G1).</div></div>
+    <div class="gterm"><div class="word">Agente / rol</div><div class="def">Una llamada al modelo con un prompt propio y una tarea concreta. En G1 hay cinco roles (Árbitro, Actor, Mundo, Narrador, Extractor); en G2 solo dos (DM y Extractor).</div></div>
+    <div class="gterm"><div class="word">Brazo</div><div class="def">Cada una de las dos condiciones del experimento: G1 (multiagente) y G2 (monolítico). Un par tiene un brazo de cada uno.</div></div>
+    <div class="gterm"><div class="word">Router</div><div class="def">En G1, una función normal (sin modelo) que mira lo que escribió el jugador y decide qué roles hacen falta este turno.</div></div>
+    <div class="gterm"><div class="word">Extractor</div><div class="def">Una llamada al modelo que lee lo que acaba de pasar y lo convierte en cambios de datos estructurados (un PNJ murió, se prometió algo). Es igual en G1 y en G2.</div></div>
+    <div class="gterm"><div class="word">Delta</div><div class="def">Un cambio de estado de una sola cosa: «el PNJ Ordulf pasa a estado missing». Se guarda con su evidencia en un libro de cambios (<code>state_deltas</code>), llamado ledger.</div></div>
+    <div class="gterm"><div class="word">Evidencia literal</div><div class="def">Cita copiada carácter por carácter del texto del turno. Si el modelo propone un cambio, tiene que citar la frase que lo justifica; un programa comprueba que la cita exista.</div></div>
+    <div class="gterm"><div class="word">Lista blanca</div><div class="def">Lista cerrada de lo permitido. Aquí: qué campos de qué entidades se pueden cambiar (tabla <code>mutable_fields</code>).</div></div>
+    <div class="gterm"><div class="word">d20, CD, tirada</div><div class="def">En D&amp;D, un dado de 20 caras (d20) más un bonificador da un total; si iguala o supera la CD (clase de dificultad) la acción sale bien. 20 natural = crítico; 1 = pifia.</div></div>
+    <div class="gterm"><div class="word">Determinista / estocástico</div><div class="def">Determinista: el mismo dato de entrada da siempre la misma salida (una cuenta). Estocástico: tiene azar (un modelo con temperatura &gt; 0).</div></div>
+    <div class="gterm"><div class="word">Transacción</div><div class="def">Un grupo de escrituras en la base que se guardan todas juntas o ninguna. Si algo falla a la mitad, se deshace.</div></div>
+    <div class="gterm"><div class="word">HTTP 429 / backoff</div><div class="def">429 es el aviso «estoy saturado, reintenta luego». Backoff: esperar cada vez más (10 s, 20 s, 40 s…) antes de reintentar, para no empeorarlo.</div></div>
+    <div class="gterm"><div class="word">Proceso, PID</div><div class="def">Un programa en ejecución en el sistema operativo; su PID es su número de identificación. Cada campaña activa es un proceso.</div></div>
+    <div class="gterm"><div class="word">Supervisor</div><div class="def">Un programa aparte que vigila los procesos de generación y relanza el que se caiga, con reglas de seguridad.</div></div>
+    <div class="gterm"><div class="word">Bitácora (log)</div><div class="def">Archivo de texto donde cada proceso va escribiendo lo que hace, paso a paso. Es la evidencia principal de lo que ocurrió en la generación.</div></div>
+    <div class="gterm"><div class="word">Reproducibilidad</div><div class="def">Poder repetir el experimento y obtener lo mismo. Aquí solo los dados y las reglas son reproducibles; el texto del modelo, no (ver E10).</div></div>
+  </div>
+
+  <h2 id="fase1">Qué es la Fase 1, con números</h2>
+  <div class="station" id="f1">
+    <div class="station-head">
+      <span class="station-num">F1</span>
+      <span class="station-title">Alcance, entradas, salidas y quién la ejecuta</span>
+    </div>
+    <div class="qa"><p class="q">¿Dónde empieza y dónde termina?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Empieza cuando arranca el proceso de generación de una campaña ya sembrada en la Fase 0 y termina cuando su <code>current_turn</code> en la base llega a 1,400 exacto, y se exporta su transcripción. La regla de cierre es esa: 1,400 de 1,400, ni uno más. La medición con instrumentos deterministas viene después (Fase 2 del plan) y no se trata aquí.</p></div></div>
+    <div class="qa"><p class="q">¿Cuánto trabajo es?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> 27 pares × 2 brazos = 54 campañas × 1,400 turnos = 75,600 turnos (cifra de la tesis, capítulo 6). Cada turno hace entre 3 llamadas al modelo en G2 y hasta 7 en G1 (jugador, Árbitro, Actor por cada PNJ que responde, Mundo, Narrador, Extractor). Los pares 07–17 y 18–27 se lanzaron por lotes con un supervisor que mantiene todos los procesos vivos a la vez (ver «Ejecución en paralelo»).</p></div></div>
+    <div class="qa"><p class="q">¿Qué entra y qué sale?</p>
+    <div class="a"><p>Entra: una campaña sembrada (mundo, PNJ, personaje jugador, turno 0) y un personaje jugador asignado. Sale: por cada turno, una fila en <code>turn_log</code> (lo que hizo el jugador y lo que narró el sistema), una fila de chequeos en <code>turn_validation</code>, y los cambios de estado en <code>state_deltas</code> y en las tablas de entidades. Además, un archivo de bitácora por proceso con todo el detalle en Markdown.</p></div></div>
+    <div class="qa"><p class="q">¿Por qué el jugador es una IA y no una persona?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> La tesis lo dice: un agente jugador autónomo basado en LLM, con arquetipos de personaje predefinidos, para «mitigar el sesgo del investigador» y poder generar 75,600 turnos. <span class="tag-mine">Mi análisis</span> Es la única forma viable a esta escala, pero introduce una consecuencia que el auditor debe conocer: lo que el jugador hace en cada turno depende de lo que el brazo le narró antes, así que los dos brazos de un par no reciben «las mismas interacciones» sino solo el mismo personaje y el mismo estilo (ver E10).</p></div></div>
+    <dl class="spec">
+      <dt>Estructura</dt><dd>Un bucle de turnos por campaña, con pasos fijos; 54 bucles independientes que no se hablan entre sí.</dd>
+      <dt>Por qué así</dt><dd>Los turnos de una campaña dependen unos de otros (cada escena parte de la anterior), así que no se pueden calcular en paralelo entre sí; lo que sí se paraleliza son las campañas distintas.</dd>
+      <dt>En base a qué</dt><dd><span class="tag-doc">Documentado</span> Tesis, cap. 5.7 y 6; <code>plan-cierre-investigacion.md</code> (Fase 1); <code>supervisor.py</code>.</dd>
+      <dt>Por qué no otra</dt><dd>Humanos jugando: no escala (75,600 turnos) y añadiría variabilidad humana. Una sola campaña muy larga: no da pares para la prueba estadística.</dd>
+    </dl>
+  </div>
+
+  <h2 id="turno">Un turno de G2 (el brazo monolítico), paso a paso</h2>
+  <p>Se empieza por G2 porque es el más corto: un solo modelo narra. Sus pasos son los mismos que G1 comparte; G1 solo cambia <em>cómo se produce la narración</em>. Cada paso es una ficha con sus preguntas, y el diagrama resume el orden. Leyenda: <span class="tag-doc">Documentado</span> sale del código; la trazabilidad exacta está en <code>orquestador/vertical_slice.py</code>.</p>
+  <div class="actor-legend">
+    <span><i class="dot persona"></i> Llamada a un modelo (LLM)</span>
+    <span><i class="dot script"></i> Código normal, sin modelo</span>
+    <span><i class="dot db"></i> Lectura o escritura en Postgres</span>
+  </div>
+  <div class="flow" aria-label="Orden de los pasos de un turno de G2">
+    <span class="chip db">1 Estado</span><span class="ar">→</span>
+    <span class="chip persona">2 Jugador</span><span class="ar">→</span>
+    <span class="chip script">3 Dados</span><span class="ar">→</span>
+    <span class="chip persona">4 DM</span><span class="ar">→</span>
+    <span class="chip script">5 Verificación</span><span class="ar">→</span>
+    <span class="chip persona">6 Extractor</span><span class="ar">→</span>
+    <span class="chip script">7 Validar</span><span class="ar">→</span>
+    <span class="chip db">8 Escribir</span><span class="ar">→</span>
+    <span class="chip db">9 Estado después</span>
+  </div>
+
+  <div class="station" id="t1">
+    <div class="station-head">
+      <span class="station-num">T1</span>
+      <span class="station-title">Leer el estado y armar el contexto</span>
+      <span class="actor-tag db">Postgres</span>
+    </div>
+    <p class="station-lead">Antes de que nadie actúe, el bucle mira en la base de datos dónde quedó la campaña: en qué turno va, cuál fue la última escena, quién está presente, qué relojes y misiones están abiertos.</p>
+    <div class="qa"><p class="q">¿Qué es exactamente el «contexto» y por qué hace falta armarlo?</p>
+    <div class="a"><p>Un modelo de lenguaje no recuerda nada entre una llamada y la siguiente: cada vez que se le pregunta, empieza en blanco. Todo lo que debe «saber» tiene que pegarse en el texto de entrada. El contexto es ese texto: la última escena narrada más un resumen del estado del mundo sacado de las tablas (PNJ presentes con su actitud hacia el jugador, hechos vigentes, relojes, misiones). <span class="tag-doc">Documentado</span> Ambos brazos usan solo la <em>última escena</em> más contexto derivado de la base; ninguno recibe el historial completo de chat.</p></div></div>
+    <div class="qa"><p class="q">¿Qué es un «PNJ presente»? ¿Cómo se sabe quién está presente?</p>
+    <div class="a"><p>PNJ = personaje no jugador: cualquiera que no controla el jugador (un posadero, un guardia, un villano). «Presente» significa que está en la escena actual; se lee de la escena y de la base, no de la memoria del modelo. <span class="tag-mine">Mi análisis</span> Este es un punto sensible para la validez: si la detección de presentes falla, el brazo puede «olvidar» a un personaje sin que sea culpa de su arquitectura (véase el hallazgo sobre nombres no reconocidos, más abajo).</p></div></div>
+    <div class="qa"><p class="q">¿Y qué pasa con la geografía de los lugares?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> La columna <code>turn_log.location_id</code> existe en el esquema pero el código nunca la escribe. La función SQL <code>location_context()</code>, que devolvería descripción y <code>culture_overrides</code> del lugar, existe pero ningún archivo Python la llama. <span class="tag-mine">Mi análisis</span> Consecuencia: los <code>culture_overrides</code> (rasgos culturales propios de cada lugar) se siembran en la Fase 0 pero, hasta donde muestra el código, no se inyectan en los prompts en tiempo de ejecución; solo el instrumento <code>anclaje_escenario.py</code> los lee al medir. Esto afecta cualquier afirmación de la tesis que diga que el sistema «aplica herencia cultural» al narrar.</p></div></div>
+    <dl class="spec">
+      <dt>Qué</dt><dd>Consultas SQL de lectura al inicio del turno.</dd>
+      <dt>Tecnología</dt><dd>PostgreSQL vía <code>db.py</code> (Python, capa delgada de acceso).</dd>
+      <dt>De → a</dt><dd>Tablas de entidades y <code>turn_log</code> → cadena de texto que se pega en los prompts.</dd>
+      <dt>Bloquea</dt><dd>Todo lo demás: sin contexto no hay turno.</dd>
+      <dt>Por qué así</dt><dd>La base es la fuente de verdad del estado; el modelo solo recibe un extracto.</dd>
+      <dt>Por qué no otra</dt><dd>Pegar todo el historial: en 1,400 turnos excede la ventana del modelo, cuesta muchísimo más y mezclaría «memoria del modelo» con «memoria del sistema», que es justo lo que se compara.</dd>
+    </dl>
+    <div class="why-box"><div class="lbl">Punto de auditoría</div><p>«Sin historial» es una decisión de diseño que iguala ambos brazos, pero limita lo que la métrica de coherencia puede detectar: cualquier inconsistencia con hechos de más de una escena atrás solo puede evitarse si el hecho está en la base y el contexto lo recupera.</p></div>
+  </div>
+
+  <div class="station" id="t2">
+    <div class="station-head">
+      <span class="station-num">T2</span>
+      <span class="station-title">El jugador (una IA) decide su acción</span>
+      <span class="actor-tag persona">LLM</span>
+    </div>
+    <p class="station-lead">Un modelo, con el rol de «jugador con un personaje y una personalidad», lee la escena y escribe qué hace o dice su personaje.</p>
+    <div class="qa"><p class="q">¿Con qué reglas actúa?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Prompt en <code>jugador/prompt.md</code>: personaje asignado (arquetipo), estilo de juego, y la instrucción de no romper el personaje. Temperatura 0.8, mismo modelo Gemma-4-31B-it desde el Par 04 (Pares 01–03 usaron Hermes-3-70B como jugador).</p></div></div>
+    <div class="qa"><p class="q">¿Por qué el jugador y el DM no pueden ser el mismo «cerebro»?</p>
+    <div class="a"><p>Son llamadas distintas con prompts distintos y sin memoria compartida entre ellas: el jugador no ve el prompt del DM, y el DM no ve el razonamiento del jugador. Pero son el <em>mismo modelo</em>; <span class="tag-mine">Mi análisis</span> eso es una amenaza a la validez de constructo (sesgo de auto-preferencia y estilo compartido), porque lo que el jugador «considera razonable» puede coincidir con lo que el DM «considera coherente».</p></div></div>
+    <div class="qa"><p class="q">¿Qué es un «arquetipo» y quién lo eligió?</p>
+    <div class="a"><p>Es un molde de personaje (por ejemplo, un guerrero cauteloso o un pícaro oportunista). <span class="tag-doc">Documentado</span> Se asigna al preparar el par y, según el diseño apareado, es el mismo para los dos brazos; conviene confirmar en <code>ids_par07-17.json</code>. <span class="tag-mine">Mi análisis</span> La asignación es fija, no aleatoria dentro del par: correcto para un diseño apareado, pero significa que la muestra de 27 pares no puede separar efecto del arquetipo de efecto de la arquitectura a menos que el arquetipo se reparta equilibradamente entre pares.</p></div></div>
+    <dl class="spec">
+      <dt>Qué</dt><dd>Una llamada al modelo que devuelve una o pocas frases de acción.</dd>
+      <dt>Tecnología</dt><dd>API de DeepInfra (compatible con la de OpenAI), llamada por <code>urllib</code> desde Python.</dd>
+      <dt>De → a</dt><dd>Contexto del estado → texto de acción del jugador → dados y DM.</dd>
+      <dt>Se guarda</dt><dd>Como parte de la fila del turno en <code>turn_log</code> y en la bitácora.</dd>
+      <dt>Por qué así</dt><dd>Sin humanos no hay otra forma de tener 75,600 acciones; el prompt fija personalidad para que la conducta sea estable entre pares.</dd>
+      <dt>Por qué no otra</dt><dd>Acciones guionizadas: no reaccionan a la narración y no ponen a prueba la memoria del sistema.</dd>
+    </dl>
+    <div class="sec-note"><p><span class="tag-mine">Mi análisis</span> El prompt del jugador promete que recibe un resumen de lo ocurrido, pero el bucle solo le pasa la última escena. El jugador, por tanto, tampoco «recuerda» toda la historia; conviene declararlo porque ayuda a explicar por qué las campañas tienden a la repetición.</p></div>
+  </div>
+
+  <div class="station" id="t3">
+    <div class="station-head">
+      <span class="station-num">T3</span>
+      <span class="station-title">Tirar los dados (con código, no con el modelo)</span>
+      <span class="actor-tag script">Código</span>
+    </div>
+    <p class="station-lead">Si la acción es arriesgada, el sistema tira un d20 con una función de Python. El modelo no puede «inventar» un éxito: el resultado se le entrega ya hecho.</p>
+    <div class="qa"><p class="q">¿Cómo se «tira» un dado en un programa?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> <code>jugador/dados.py</code> concatena <code>campaign_id | turno | etiqueta | intento</code>, calcula su huella SHA-256 (una función que convierte cualquier texto en un número fijo e impredecible) y usa ese número para generar un valor de 1 a 20. Así el resultado <em>parece</em> aleatorio pero es determinista: mismos datos de entrada, misma tirada. Se suma el modificador del personaje (fijado en la Fase 0) y se compara con la CD.</p></div></div>
+    <div class="qa"><p class="q">¿Por qué determinista y no un generador aleatorio normal?</p>
+    <div class="a"><p>Porque permite auditar y reanudar. Si un proceso se cae en el turno 700 y se relanza, el turno 701 obtiene la misma tirada que habría obtenido sin la caída. <span class="tag-mine">Mi análisis</span> Sí reproduce la tirada, pero <em>no</em> reproduce el texto del modelo (no hay semilla en las llamadas al LLM), así que una reanudación no equivale a «lo mismo que habría pasado».</p></div></div>
+    <div class="qa"><p class="q">¿Los dos brazos de un par ven los mismos dados?</p>
+    <div class="a"><p>El comentario en el código lo afirma, pero la semilla incluye el <code>campaign_id</code>, que es distinto en G1 y en G2. <span class="tag-doc">Documentado</span> (contradicción entre el docstring y el código). <span class="tag-mine">Mi análisis</span> Por tanto, las secuencias de dados de G1 y G2 en un mismo par <strong>no son idénticas</strong>. No sesga a favor de ninguno en promedio, pero suma ruido y hay que corregir la redacción de la tesis si dice «mismos dados».</p></div></div>
+    <dl class="spec">
+      <dt>Estructura</dt><dd>d20 + modificador del personaje ≥ CD → éxito. En combate, las tiradas usan reglas del Par 18 en adelante.</dd>
+      <dt>CD en G1</dt><dd>El Árbitro fija CD 15, ±5 según la banda de actitud del PNJ hacia el jugador.</dd>
+      <dt>Se guarda</dt><dd>El valor, el total y el veredicto quedan en la escena y la bitácora.</dd>
+      <dt>Por qué no otra</dt><dd>Dejar que el modelo decida el resultado hace que casi siempre «salga bien» y quita tensión y coherencia de consecuencias.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="t4">
+    <div class="station-head">
+      <span class="station-num">T4</span>
+      <span class="station-title">El DM narra la respuesta del mundo</span>
+      <span class="actor-tag persona">LLM</span>
+    </div>
+    <p class="station-lead">El «Dungeon Master» (DM) es quien narra qué pasa tras la acción del jugador y da voz a todos los PNJ. En G2 es una sola llamada al modelo con todas las tareas juntas.</p>
+    <div class="qa"><p class="q">Para alguien sin D&amp;D: ¿qué es un Dungeon Master?</p>
+    <div class="a"><p>En el juego de rol de mesa, una persona hace de narrador y árbitro: describe el mundo, interpreta a los personajes secundarios y decide las consecuencias. Aquí ese papel lo hace un programa. El estudio compara si dividir ese papel en varios agentes especializados (G1) produce historias más coherentes que dárselo entero a uno solo (G2).</p></div></div>
+    <div class="qa"><p class="q">¿Qué recibe y qué devuelve?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Recibe: prompt de sistema <code>dm/prompt_g2.md</code> (reglas de narración, contenido de PNJ incluyendo sus secretos), contexto de T1, la acción del jugador y el resultado del dado. Devuelve: prosa narrativa. Temperatura 0.8.</p></div></div>
+    <div class="qa"><p class="q">¿Qué es el «guardia meta-OOC» y las 2 regeneraciones?</p>
+    <div class="a"><p>OOC significa «fuera de personaje» (out of character): el DM a veces rompe la ficción y habla como asistente («¡Claro! Aquí tienes la escena…»). <span class="tag-doc">Documentado</span> Desde el Par 18 hay un chequeo determinista que detecta ese tipo de salida y le pide al modelo que regenere hasta 2 veces. Si tras 2 regeneraciones sigue fallando, el turno continúa con lo que haya.</p></div></div>
+    <dl class="spec">
+      <dt>Tecnología</dt><dd>Llamada a la API del proveedor; reintentos si hay error de red o saturación (ver sección «API y modelo»).</dd>
+      <dt>De → a</dt><dd>Contexto + acción + dado → texto narrado → verificación determinista.</dd>
+      <dt>Se guarda</dt><dd>En <code>turn_log</code> (narración), bitácora, y cuenta tokens y costo.</dd>
+      <dt>Por qué así</dt><dd>Es la definición del brazo monolítico: un solo agente con todas las responsabilidades, incluida la memoria de los PNJ. Es la línea base contra la que se compara G1.</dd>
+      <dt>Por qué no otra</dt><dd>Un DM con historial completo sería una comparación distinta (memoria bruta vs. estructurada), no la que plantea la tesis.</dd>
+    </dl>
+    <div class="sec-bad"><p><strong>Discrepancia tesis ↔ código.</strong> <span class="tag-doc">Documentado</span> La tesis describe G2 como «memoria pura de contexto», pero el código de G2 usa la misma base estructurada y el mismo Extractor que G1 para registrar hechos y cambios. La diferencia real entre brazos está en <em>cómo se genera la narración</em> (un DM frente a cinco roles), no en si hay o no memoria estructurada.</p><p>Eso no invalida el experimento, pero obliga a redactarlo así: el contraste es «arquitectura de generación», no «memoria estructurada frente a memoria de contexto».</p></div>
+  </div>
+
+  <div class="station" id="t5">
+    <div class="station-head">
+      <span class="station-num">T5</span>
+      <span class="station-title">Verificación determinista de la narración</span>
+      <span class="actor-tag script">Código</span>
+    </div>
+    <p class="station-lead">Un programa (sin modelo) lee la narración recién escrita y marca posibles problemas: nombres que no reconoce, contradicciones con el estado, cantidades incoherentes.</p>
+    <div class="qa"><p class="q">¿Por qué verificar con código y no con otro modelo?</p>
+    <div class="a"><p>Porque el código produce siempre el mismo veredicto para el mismo texto y no comparte sesgos con el modelo generador. Es lo que hace defendible el argumento de que se sustituye el panel humano por instrumentos deterministas (decisión del asesor, 2026-09-14).</p></div></div>
+    <div class="qa"><p class="q">¿Qué significan los códigos CR-1, CR-2, CL-1, CL-2, QN-1, QN-2?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Son banderas que se guardan por turno en la tabla <code>turn_validation</code>; forman tres familias (CR, CL y QN) con dos niveles cada una. Lo que sí está verificado por los registros: CR-2 marca nombres de personaje que el sistema no reconoce, y aparece en casi todos los turnos de G1 frente a ~5% en G2. <span class="tag-mine">Mi análisis</span> Antes de citar en la tesis la definición exacta de cada bandera, contrastar con <code>reporte_validacion.py</code>, que es la fuente autorizada; aquí solo se declara lo que los registros confirman.</p></div></div>
+    <dl class="spec">
+      <dt>Qué</dt><dd>Chequeos por reglas, comparaciones de cadenas y consultas a la base.</dd>
+      <dt>Se guarda</dt><dd>Una fila por turno en <code>turn_validation</code>.</dd>
+      <dt>Por qué así</dt><dd>Separar «detectar» de «arreglar»: la verificación solo marca; la Fase 2 analiza las banderas de las 54 campañas.</dd>
+      <dt>Por qué no otra</dt><dd>Corregir el texto al vuelo cambiaría lo que se está midiendo.</dd>
+    </dl>
+    <div class="sec-note"><p><span class="tag-mine">Mi análisis</span> Un CR-2 casi permanente en G1 puede reflejar un problema de <em>medición</em> (el detector de nombres no reconoce cómo los Actores de G1 nombran a los personajes) y no una incoherencia real. Hay que decidir antes de la Fase 2 si esa bandera entra en la comparación principal.</p></div>
+  </div>
+
+  <div class="station" id="t6">
+    <div class="station-head">
+      <span class="station-num">T6</span>
+      <span class="station-title">El Extractor convierte la narración en datos</span>
+      <span class="actor-tag persona">LLM</span>
+    </div>
+    <p class="station-lead">Otro modelo, con temperatura 0 y modo JSON, lee la escena y propone qué cambió en el mundo: quién murió, quién prometió qué, qué se descubrió.</p>
+    <div class="qa"><p class="q">¿Qué es la temperatura 0 y por qué aquí?</p>
+    <div class="a"><p>Con temperatura 0 el modelo casi siempre elige la palabra más probable, así que responde de forma más estable. Para extraer datos se quiere fiabilidad, no creatividad. <span class="tag-mine">Mi análisis</span> «Casi determinista» no es «determinista»: sin semilla y con paralelismo en el servidor del proveedor, dos llamadas idénticas pueden diferir levemente.</p></div></div>
+    <div class="qa"><p class="q">¿Qué es <code>contrato.json</code>?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Es la definición del formato que el Extractor debe devolver: qué campos, qué tipos, qué valores permitidos. Sirve como contrato entre el modelo y el programa que lo lee. El propio contrato dice que «el extractor nunca crea entidades», pero el código sí admite un campo <code>creaciones</code>; hay que reconciliar la redacción.</p></div></div>
+    <dl class="spec">
+      <dt>Tecnología</dt><dd>Llamada al mismo modelo (Gemma-4-31B-it), <code>response_format</code> JSON, temperatura 0.</dd>
+      <dt>De → a</dt><dd>Escena + estado → JSON de propuestas → T7 (validación).</dd>
+      <dt>Igual en G1 y G2</dt><dd>Sí: mismo prompt, mismo contrato, mismo código. Esto es deliberado para que la única diferencia sea la generación.</dd>
+      <dt>Por qué no otra</dt><dd>Reglas o expresiones regulares no entienden lenguaje natural con suficiente flexibilidad; un modelo sí, pero por eso su salida se trata como <em>propuesta</em> y se valida (T7).</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="t7">
+    <div class="station-head">
+      <span class="station-num">T7</span>
+      <span class="station-title">Validar lo que propone el Extractor</span>
+      <span class="actor-tag script">Código</span>
+    </div>
+    <p class="station-lead">Nada de lo que propone el Extractor pasa a la base sin superar filtros. Es la defensa contra que el modelo invente hechos.</p>
+    <div class="qa"><p class="q">¿Qué filtros hay?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> (1) Evidencia literal: cada cambio debe traer una cita que aparezca textualmente en la escena; el código busca la cadena. (2) Lista blanca: solo se pueden cambiar los campos listados en <code>mutable_fields</code>, con valores del dominio permitido (enums, rangos numéricos). (3) Guardas de creación: no se crean entidades duplicadas ni con nombre vacío. (4) La base misma rechaza lo que rompa restricciones (CHECK, UNIQUE).</p></div></div>
+    <div class="qa"><p class="q">¿Por qué «literal» y no «parecido»?</p>
+    <div class="a"><p>Porque una comparación exacta es simple, rápida y no puede engañarse: o la frase está o no está. Con comparación «semántica» se necesitaría otro modelo, y se volvería a un juez con sesgos. <span class="tag-mine">Mi análisis</span> Contrapartida: rechaza también cambios legítimos si el modelo parafrasea la cita; esto explica en parte las 845 propuestas rechazadas del agente Mundo.</p></div></div>
+    <dl class="spec">
+      <dt>Se guarda</dt><dd>Lo aceptado, en <code>state_deltas</code> y en las tablas; lo rechazado, en <code>rejected_deltas</code> con el motivo.</dd>
+      <dt>Por qué no otra</dt><dd>Aceptar todo y limpiar luego: contaminaría el estado del que dependen los turnos siguientes.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="t8">
+    <div class="station-head">
+      <span class="station-num">T8</span>
+      <span class="station-title">Escribir en la base y avanzar relojes</span>
+      <span class="actor-tag db">Postgres</span>
+    </div>
+    <p class="station-lead">Con todo validado, se escriben en la base la fila del turno, los chequeos, las entidades creadas, los cambios de actitud, los deltas aceptados y el avance de los relojes.</p>
+    <div class="qa"><p class="q">¿Qué es una transacción y cuál es el problema aquí?</p>
+    <div class="a"><p>Una transacción agrupa varias escrituras para que se guarden todas juntas o ninguna. <span class="tag-doc">Documentado</span> El bucle sí hace una transacción para <code>turn_log</code> + <code>current_turn</code>, pero cada escritura posterior (validación, creaciones, deltas, relojes) se confirma por separado. Si el proceso muere entre medias, queda un turno «a medias». Por eso el supervisor tiene una regla para detectar turnos medio escritos antes de reanudar.</p></div></div>
+    <div class="qa"><p class="q">¿Qué hace <code>apply_delta</code>?</p>
+    <div class="a"><p>Es una función SQL que aplica un cambio de estado comprobando lista blanca, dominio del valor y techos/pisos de confianza, y escribe el registro en el libro (<code>state_deltas</code>) dentro de la misma transacción. Nadie modifica el estado sin dejar una línea auditable: es un libro «de solo añadir» (append-only).</p></div></div>
+    <div class="qa"><p class="q">¿Qué es un reloj (clock)?</p>
+    <div class="a"><p>Un contador narrativo que avanza con los turnos o los eventos (por ejemplo, «el ejército llega en 6 días»). Al llegar al límite, se dispara un evento. <span class="tag-doc">Documentado</span> En los Pares 01–17 el motor antiguo no los disparaba nunca; desde el Par 18 hay un avance determinista y se registraron 30 disparos por brazo en los pares 18–27.</p></div></div>
+    <div class="qa"><p class="q">¿Cómo cambia la «actitud» (afinidad) de un PNJ?</p>
+    <div class="a"><p>Cada evento (ayudar, amenazar, traicionar) tiene una magnitud en <code>event_magnitudes</code> que se suma a la afinidad del PNJ hacia el jugador. <span class="tag-mine">Mi análisis</span> Por lo que leí del código, el cálculo parte del estado del primer PNJ presente para cualquier destinatario del evento y no acumula varios eventos en un mismo turno; además solo se aplica <code>d_affinity</code> y se ignoran <code>d_trust</code> y <code>d_respect</code>. Conviene verificarlo antes de afirmar que las actitudes evolucionan «de forma consistente».</p></div></div>
+    <dl class="spec">
+      <dt>Por qué así</dt><dd>La base es el árbitro del estado; la narración solo puede cambiarlo a través de funciones controladas.</dd>
+      <dt>Por qué no otra</dt><dd>Un solo bloque atómico por turno sería más limpio; el diseño actual prioriza simplicidad y lo compensa con la regla de reanudación.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="t9">
+    <div class="station-head">
+      <span class="station-num">T9</span>
+      <span class="station-title">Sincronizar el día y repetir</span>
+      <span class="actor-tag script">Código</span>
+    </div>
+    <p class="station-lead">Se calcula el día del mundo como <code>turno // 20</code> (división entera: 20 turnos = 1 día) y se guarda; luego el bucle vuelve a T1 con el turno siguiente, hasta llegar a 1,400.</p>
+    <div class="qa"><p class="q">¿Por qué 20 turnos por día?</p>
+    <div class="a"><p><span class="tag-mine">Mi análisis</span> Es una convención de diseño para dar ritmo a relojes y eventos; no hay una justificación empírica en los archivos que revisé. 1,400 turnos equivalen a 70 días de mundo. Se debe presentar como parámetro fijado, no como hallazgo.</p></div></div>
+    <div class="qa"><p class="q">¿Por qué exactamente 1,400 turnos?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Es la longitud definida en el plan de cierre y en la tesis para que aparezca el fenómeno de interés (deriva de coherencia en campañas largas). <span class="tag-mine">Mi análisis</span> Si la tesis quiere justificar el número más allá de «así se definió», necesita una cita o un piloto que muestre dónde empieza la deriva.</p></div></div>
+  </div>
+
+  <h2 id="g1">Un turno de G1 (el brazo multiagente): qué cambia</h2>
+  <p>G1 comparte con G2 los pasos T1, T2, T3 (dados), T5–T9. Lo que cambia es T4: en lugar de un DM, la narración la produce una cadena de roles. El archivo es <code>orquestador/vertical_slice_g1.py</code>. <span class="tag-doc">Documentado</span></p>
+  <div class="flow" aria-label="Cadena de roles de G1">
+    <span class="chip script">Router</span><span class="ar">→</span>
+    <span class="chip script">Árbitro</span><span class="ar">→</span>
+    <span class="chip persona">Actor(es)</span><span class="ar">→</span>
+    <span class="chip persona">Mundo</span><span class="ar">→</span>
+    <span class="chip persona">Narrador</span><span class="ar">→</span>
+    <span class="chip persona">Extractor</span>
+  </div>
+
+  <div class="station" id="g1-router">
+    <div class="station-head"><span class="station-num">G1·a</span><span class="station-title">Router: decidir qué roles intervienen</span><span class="actor-tag script">Código</span></div>
+    <p class="station-lead">Una función con expresiones regulares (patrones de texto) lee la acción del jugador y la clasifica: ¿se habla con un PNJ?, ¿se hace algo con el entorno?, ¿el jugador se salió del personaje?</p>
+    <div class="qa"><p class="q">¿Qué es una expresión regular?</p>
+    <div class="a"><p>Un patrón que describe formas de texto, por ejemplo «cualquier palabra que empiece con “hablo con”». Es un buscador rígido: rápido y siempre igual, pero no entiende el sentido.</p></div></div>
+    <div class="qa"><p class="q">¿Por qué código y no un modelo?</p>
+    <div class="a"><p>Porque enrutar es una decisión de control, no de creatividad, y hacerla determinista evita que un error del modelo desvíe todo el turno. <span class="tag-doc">Documentado</span> En los registros, el Router respondió «en rol» en 29,203 de 29,208 turnos. <span class="tag-mine">Mi análisis</span> Es decir, las ramas «ambiental», «silencio» y «fuera de rol» casi no se ejercitaron: en la práctica el Router es un embudo con una sola salida, y la arquitectura multiagente se usó mucho menos variada de lo que el diagrama sugiere.</p></div></div>
+  </div>
+
+  <div class="station" id="g1-arbitro">
+    <div class="station-head"><span class="station-num">G1·b</span><span class="station-title">Árbitro: resolver el éxito o fracaso</span><span class="actor-tag script">Código + LLM</span></div>
+    <p class="station-lead">Recibe la tirada de T3 y decide el resultado con reglas: CD base 15, más o menos 5 según la banda de actitud del PNJ (hostil, neutral, amistoso…).</p>
+    <div class="qa"><p class="q">¿Cuándo interviene el modelo?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Solo cuando la acción no tiene tirada (temperatura 0.3). En la práctica, 28,976 veredictos fueron mecánicos y 15 los dio el modelo. <span class="tag-mine">Mi análisis</span> El «Árbitro-agente» es, casi siempre, una fórmula. Es legítimo, pero al describirlo en la tesis como agente LLM se sobrestima su papel.</p></div></div>
+  </div>
+
+  <div class="station" id="g1-actor">
+    <div class="station-head"><span class="station-num">G1·c</span><span class="station-title">Actores: cada PNJ habla por separado</span><span class="actor-tag persona">LLM</span></div>
+    <p class="station-lead">Por cada PNJ que debe responder, se hace una llamada propia con su ficha completa —incluidos sus secretos— y se le pide su reacción en primera persona (temperatura 0.85).</p>
+    <div class="qa"><p class="q">¿Por qué separar a los PNJ?</p>
+    <div class="a"><p>Es la hipótesis central de G1: un contexto pequeño por personaje evitaría que un solo modelo mezcle voces y filtre secretos. <span class="tag-doc">Documentado</span> Prompt en <code>dm/prompt_actor_g1.md</code>.</p></div></div>
+    <div class="qa"><p class="q">¿Funciona siempre?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> No: 4,093 de 27,515 llamadas de Actor (14.9%) produjeron salida inválida (formato no utilizable). <span class="tag-mine">Mi análisis</span> Cómo se maneja ese descarte (se omite la reacción, se reintenta) afecta cuánto de la historia depende realmente de los Actores, y debe describirse en el método.</p></div></div>
+  </div>
+
+  <div class="station" id="g1-mundo">
+    <div class="station-head"><span class="station-num">G1·d</span><span class="station-title">Mundo: consecuencias del entorno</span><span class="actor-tag persona">Función + LLM</span></div>
+    <p class="station-lead">Una función pura calcula lo que no necesita creatividad (relojes, lugar) y un modelo (temperatura 0.7) propone un boceto de lo que pasa alrededor, semillas de trama y cambios de estado.</p>
+    <div class="sec-bad"><p><strong>Hallazgo.</strong> <span class="tag-doc">Documentado</span> En ~29,000 turnos de G1 el agente Mundo consiguió que se aceptaran solo 2 deltas; la base rechazó 845 propuestas, 1,815 apuntaban a entidades inexistentes. Además, la fijación de lugar y la plantación de semillas nunca se activaron (0 «lugar fijado», 0 «semilla plantada»), porque <code>turn_log.location_id</code> nunca se escribe y por eso <code>lugar_repite</code> fue falso en 97,030 de 97,030 comprobaciones.</p><p><span class="tag-mine">Mi análisis</span> Este rol está prácticamente inerte. Si la tesis lo presenta como aporte diferenciador de G1, el auditor puede objetar que el efecto medido no puede atribuirse al Mundo.</p></div>
+  </div>
+
+  <div class="station" id="g1-narrador">
+    <div class="station-head"><span class="station-num">G1·e</span><span class="station-title">Narrador: unir todo sin conocer los secretos</span><span class="actor-tag persona">LLM</span></div>
+    <p class="station-lead">Recibe las reacciones de los Actores, el veredicto del Árbitro y el boceto del Mundo, y escribe la escena final (temperatura 0.8). Su prompt <em>no</em> incluye los secretos de los PNJ.</p>
+    <div class="qa"><p class="q">¿Por qué esa asimetría de secretos?</p>
+    <div class="a"><p>Para que el narrador no pueda «filtrar» por error un secreto que solo el PNJ debe conocer. En G2 el DM sí los conoce y debe autocontrolarse. <span class="tag-mine">Mi análisis</span> Esa asimetría es la principal diferencia con potencial explicativo entre arquitecturas y debe medirse con un instrumento específico (filtración de secretos), no inferirse de la coherencia general.</p></div></div>
+    <p>Después del Narrador, G1 continúa exactamente como G2 desde T5 (verificación) hasta T9.</p>
+  </div>
+
+  <h2 id="memoria">Gestión de memoria: qué recuerda cada cosa y por qué</h2>
+  <div class="twrap"><table>
+    <tr><th>Nivel</th><th>Qué es</th><th>Dónde vive</th><th>Quién lo usa</th></tr>
+    <tr><td>Memoria del modelo</td><td>Ninguna entre llamadas</td><td>—</td><td>Todos los roles</td></tr>
+    <tr><td>Última escena</td><td>Texto narrado del turno anterior</td><td><code>turn_log</code></td><td>Jugador, DM, Narrador, Extractor</td></tr>
+    <tr><td>Estado estructurado</td><td>PNJ, actitudes, hechos, misiones, relojes</td><td>Postgres (tablas de entidades)</td><td>Ambos brazos, vía contexto</td></tr>
+    <tr><td>Libro de cambios</td><td>Cada delta con evidencia</td><td><code>state_deltas</code></td><td>Auditoría y Fase 2</td></tr>
+    <tr><td>Historial de chat</td><td>No existe</td><td>—</td><td>Nadie</td></tr>
+  </table></div>
+  <div class="qa"><p class="q">¿Por qué no hay historial y no se usa la búsqueda vectorial (pgvector)?</p>
+  <div class="a"><p><span class="tag-doc">Documentado</span> El esquema tiene tablas pgvector pero están sin uso; y <code>model_calls</code>, la tabla para registrar cada llamada al proveedor, tampoco se usa. <span class="tag-mine">Mi análisis</span> Discrepancia con la tesis, que menciona SQLite, ChromaDB, NetworkX y LightRAG: el repositorio es solo PostgreSQL. La memoria de la tesis debe describir lo que realmente se ejecutó. Las funciones <code>location_context</code>, <code>get_visible_state</code>, <code>decay_dispositions</code>, <code>check_completion_predicate</code> y <code>quests_completables</code> existen en SQL pero no se llaman.</p></div></div>
+
+  <h2 id="api">API, modelo y costos</h2>
+  <div class="station" id="api1">
+    <div class="station-head"><span class="station-num">API</span><span class="station-title">Cómo se llama al modelo y qué pasa si falla</span><span class="actor-tag script">Código</span></div>
+    <div class="qa"><p class="q">¿Cómo funciona una llamada?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> El programa arma un JSON con el modelo, los mensajes, la temperatura y <code>enable_thinking: false</code> (desactiva el razonamiento interno largo del modelo), lo envía por HTTPS a DeepInfra con <code>urllib</code> y espera el texto. Sin semilla: no se puede repetir una llamada y obtener el mismo texto.</p></div></div>
+    <div class="qa"><p class="q">¿Qué hace el programa ante errores?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Errores de red: 4 reintentos con espera creciente. Códigos 429, 502, 503, 504 (saturación o servidor caído): hasta 30 reintentos con espera exponencial más un poco de azar (jitter) para no golpear todos a la vez. Otros errores HTTP, por ejemplo un pago rechazado, lanzan excepción y el proceso muere; ahí entra el supervisor.</p></div></div>
+    <div class="qa"><p class="q">¿Cuánto cuesta?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Gemma cuesta $0.13 por millón de tokens de entrada y $0.38 por millón de salida. Medido en los Pares 04–06: unos $3.83 por par; antes, con el modelo anterior, ~$7.80. Sumando líneas de costo de las bitácoras, G1 ≈ $43.7 y G2 ≈ $22.4 (cifra aproximada). <span class="tag-mine">Mi análisis</span> G1 cuesta cerca del doble que G2 por hacer más llamadas; ese sobrecosto es un resultado a reportar, no solo un dato operativo.</p></div></div>
+    <div class="qa"><p class="q">¿Qué garantías de trazabilidad hay del modelo servido?</p>
+    <div class="a"><p><span class="tag-mine">Mi análisis</span> Casi ninguna: <code>model_calls</code> no se llenó y el proveedor puede cambiar cuantización o versión sin aviso. Para la sustentación conviene registrar fecha, nombre exacto del modelo y proveedor, y aceptar esto como limitación.</p></div></div>
+  </div>
+
+  <h2 id="datos">Qué queda escrito en la base de datos</h2>
+  <div class="twrap"><table>
+    <tr><th>Tabla o función</th><th>Contenido</th><th>Notas de rigor</th></tr>
+    <tr><td><code>turn_log</code></td><td>Una fila por turno, única por campaña + turno</td><td><code>location_id</code> sin uso</td></tr>
+    <tr><td><code>turn_validation</code></td><td>Banderas del turno</td><td>Base de la Fase 2</td></tr>
+    <tr><td><code>state_deltas</code></td><td>Libro de cambios con evidencia (CHECK)</td><td>Solo añadir</td></tr>
+    <tr><td><code>rejected_deltas</code></td><td>Propuestas rechazadas y motivo</td><td>Evidencia del filtro</td></tr>
+    <tr><td><code>apply_delta</code></td><td>Función que aplica cambios con lista blanca</td><td>Atómica con su ledger</td></tr>
+    <tr><td><code>resolve_event</code>, <code>event_magnitudes</code></td><td>Eventos → cambios de actitud</td><td>Ver T8</td></tr>
+    <tr><td><code>advance_clocks</code></td><td>Avanza relojes</td><td>Activo solo desde el Par 18</td></tr>
+  </table></div>
+
+  <h2 id="paralelo">Ejecución en paralelo y supervisión</h2>
+  <div class="station" id="par">
+    <div class="station-head"><span class="station-num">OPS</span><span class="station-title">Lanzar, vigilar y relanzar</span><span class="actor-tag script">Scripts</span></div>
+    <div class="qa"><p class="q">¿Por qué en paralelo?</p>
+    <div class="a"><p>Cada campaña es independiente; correrlas a la vez reduce el tiempo de pared. <span class="tag-doc">Documentado</span> Lote 07–17: 22 campañas, ~15.5 h, 2 relanzamientos por caída. Lote 18–27: 20 campañas, ~15 h, 0 relanzamientos.</p></div></div>
+    <div class="qa"><p class="q">¿Qué hace cada script?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> <code>lanzar_ola.ps1</code> arranca los procesos desacoplados (vía WMI de Windows, para que sigan vivos aunque se cierre la terminal). <code>supervisor.py</code> vigila y relanza con <code>1400 − current_turn</code> turnos pendientes, aplica reglas para marcar una campaña como bloqueada o rendida si no progresa, y toma un candado en el puerto 47653 para que no corran dos supervisores. <code>vigilante.ps1</code> y <code>chequeo_rapido.ps1</code> son revisiones de estado; <code>estado_par*.py</code> consulta la base; <code>exportar_transcripcion.py</code> saca el texto del turno 1 al 1,400.</p></div></div>
+    <div class="qa"><p class="q">¿Es válida una campaña reanudada?</p>
+    <div class="a"><p><span class="tag-mine">Mi análisis</span> Los dados coinciden, el texto del modelo no, y un turno podría haber quedado a medias. Por eso hay que informar cuántas campañas se reanudaron y comparar sus métricas con las que no.</p></div></div>
+  </div>
+
+  <h2 id="fallos">Modos de fallo y cierre</h2>
+  <div class="twrap"><table>
+    <tr><th>Fallo</th><th>Efecto</th><th>Respuesta documentada</th></tr>
+    <tr><td>Saturación del proveedor (429/5xx)</td><td>Espera</td><td>Hasta 30 reintentos con backoff</td></tr>
+    <tr><td>Pago rechazado (402) u otro error HTTP</td><td>Proceso muere</td><td>El supervisor relanza; si no avanza, se marca</td></tr>
+    <tr><td>Salida fuera de personaje del DM</td><td>Texto no jugable</td><td>Guardia meta-OOC, 2 regeneraciones</td></tr>
+    <tr><td>Extractor propone algo inventado</td><td>Estado corrupto</td><td>Validación literal + lista blanca</td></tr>
+    <tr><td>Caída a mitad de turno</td><td>Turno a medias</td><td>Regla del supervisor</td></tr>
+  </table></div>
+  <p><span class="tag-doc">Documentado</span> Cierre de la Fase 1: comprobar que cada campaña tenga <code>current_turn = 1400</code>, contar filas de <code>turn_log</code>, y exportar transcripciones.</p>
+
+  <h2 id="numeros">Los números en una tabla</h2>
+  <div class="twrap"><table>
+    <tr><th>Concepto</th><th>Valor</th><th>Fuente</th></tr>
+    <tr><td>Campañas / turnos totales</td><td>54 / 75,600</td><td>Tesis</td></tr>
+    <tr><td>Modelo</td><td>Gemma-4-31B-it (todos los roles desde Par 04)</td><td>Código</td></tr>
+    <tr><td>Precio</td><td>$0.13 / $0.38 por 1M tokens</td><td>Proveedor</td></tr>
+    <tr><td>Costo medido</td><td>~$3.83 por par</td><td>Par 04–06</td></tr>
+    <tr><td>Relojes disparados</td><td>30 por brazo (Par 18–27)</td><td>Bitácoras</td></tr>
+    <tr><td>Actor inválido</td><td>14.9%</td><td>Bitácoras</td></tr>
+  </table></div>
+
+  <h2 id="auditoria">Relectura como auditor metodológico estricto</h2>
+  <div class="lede">
+    <p><strong>Perfil del lector:</strong> conoce metodología de investigación, bases de datos, arquitecturas de software y estadística; no sabe nada de D&amp;D y no acepta que un término quede sin definir ni una afirmación sin respaldo. Lo que sigue es lo que ese lector marcaría con rojo. Cada hallazgo indica su gravedad, la evidencia y qué hacer antes de la sustentación.</p>
+    <p><span class="tag-mine">Mi análisis</span> Los conteos vienen de búsquedas de texto sobre las bitácoras completas (aproximados, no de una consulta SQL sobre la base), así que antes de citarlos en la tesis deben recalcularse con una consulta reproducible.</p>
+  </div>
+
+  <h3>A. Hallazgos entre lo que dice la tesis y lo que hace el código</h3>
+  <div class="twrap"><table>
+    <tr><th>#</th><th>Hallazgo</th><th>Gravedad</th><th>Qué hacer</th></tr>
+    <tr><td>1</td><td>La tesis describe G2 como «memoria pura de contexto»; el código de G2 usa la misma base estructurada y el mismo Extractor.</td><td><span class="sev alta">alta</span></td><td>Reformular la variable independiente como «arquitectura de generación (1 agente vs 5 roles)» o cambiar el código; no dejar ambas versiones.</td></tr>
+    <tr><td>2</td><td>La tesis nombra SQLite, ChromaDB, NetworkX y LightRAG; el repositorio ejecuta solo PostgreSQL.</td><td><span class="sev alta">alta</span></td><td>Actualizar el marco tecnológico a lo ejecutado y mover lo demás a «trabajo relacionado».</td></tr>
+    <tr><td>3</td><td>Se afirma «interacciones idénticas»; el jugador es un LLM que reacciona a lo que cada brazo narra, y los dados usan <code>campaign_id</code> distinto.</td><td><span class="sev alta">alta</span></td><td>Cambiar a «mismo personaje, mismo estilo, mismo escenario inicial»; quitar «mismos dados».</td></tr>
+    <tr><td>4</td><td>Los <code>culture_overrides</code> del lugar no se inyectan en los prompts en ejecución (ninguna llamada a <code>location_context()</code>).</td><td><span class="sev media">media</span></td><td>No afirmar herencia cultural en tiempo de generación; describirla solo como dato sembrado que un instrumento lee al medir.</td></tr>
+    <tr><td>5</td><td><code>contrato.json</code> dice que el extractor nunca crea entidades; el código admite <code>creaciones</code>.</td><td><span class="sev baja">baja</span></td><td>Alinear el texto del contrato con el código.</td></tr>
+    <tr><td>6</td><td>Docstring de <code>dados.py</code> promete secuencias iguales entre brazos.</td><td><span class="sev media">media</span></td><td>Corregir el comentario y la redacción de la tesis.</td></tr>
+  </table></div>
+
+  <h3>B. Amenazas a la validez del diseño</h3>
+  <div class="twrap"><table>
+    <tr><th>Tipo</th><th>Amenaza</th><th>Gravedad</th><th>Mitigación posible</th></tr>
+    <tr><td>Interna</td><td>Corpus no homogéneo: Pares 01–17 con motor antiguo (relojes nunca disparados); 18–27 con relojes deterministas, guardia meta-OOC y tiradas de combate. Además los Pares 01–03 usaron otro modelo como jugador.</td><td><span class="sev alta">alta</span></td><td>Análisis de robustez separado (01–17 vs 18–27), ya previsto; declarar que N=27 mezcla dos versiones del motor.</td></tr>
+    <tr><td>Interna</td><td>Mismo modelo en jugador, DM, narrador, actor, mundo y extractor: sesgo de auto-preferencia y errores correlacionados.</td><td><span class="sev alta">alta</span></td><td>Declarar como limitación; si el presupuesto lo permite, un submuestreo con jugador de otra familia.</td></tr>
+    <tr><td>Interna</td><td>Un solo run por par, sin semilla: el ruido del modelo se confunde con el efecto de la arquitectura.</td><td><span class="sev media">media</span></td><td>Diseño apareado ya absorbe parte; anotar la varianza entre corridas si hay algún par repetido.</td></tr>
+    <tr><td>De constructo</td><td>«Coherencia» se mide con banderas deterministas cuyo detector puede fallar de forma sistemática (CR-2 casi permanente en G1).</td><td><span class="sev alta">alta</span></td><td>Validar el instrumento con una muestra anotada a mano y reportar falsos positivos por brazo.</td></tr>
+    <tr><td>De constructo</td><td>Roles casi inertes (Mundo, Router, Árbitro mecánico): la etiqueta «multiagente» sobreestima lo que realmente varía.</td><td><span class="sev media">media</span></td><td>Describir G1 por comportamiento observado, con las tasas de uso de cada rol.</td></tr>
+    <tr><td>Estadística</td><td>Turnos dentro de una campaña no son independientes; la unidad de análisis debe ser el par, no el turno.</td><td><span class="sev media">media</span></td><td>Ya previsto: Wilcoxon exacto sobre 27 diferencias por par, Hodges–Lehmann, r de rangos, Holm.</td></tr>
+    <tr><td>Externa</td><td>Un solo modelo, un solo proveedor y un solo género de juego: la generalización a otros modelos o narrativas no está respaldada.</td><td><span class="sev media">media</span></td><td>Acotar las conclusiones a este modelo y este motor.</td></tr>
+    <tr><td>Reproducibilidad</td><td><code>model_calls</code> sin uso: no hay registro de versión, cuantización ni latencia por llamada.</td><td><span class="sev media">media</span></td><td>Archivar bitácoras completas y el hash de código; declarar la limitación.</td></tr>
+  </table></div>
+
+  <h3>C. Hallazgos operativos (defectos posibles en el sistema)</h3>
+  <div class="twrap"><table>
+    <tr><th>#</th><th>Hallazgo</th><th>Gravedad</th></tr>
+    <tr><td>7</td><td><code>turn_log.location_id</code> nunca se escribe; la fijación de lugar y las semillas de trama no se activaron nunca.</td><td><span class="sev media">media</span></td></tr>
+    <tr><td>8</td><td>El agente Mundo casi no logra cambiar el estado (2 deltas aceptados, 845 rechazos, 1,815 por entidad inexistente).</td><td><span class="sev media">media</span></td></tr>
+    <tr><td>9</td><td>Actor con salida inválida en 14.9% de las llamadas.</td><td><span class="sev media">media</span></td></tr>
+    <tr><td>10</td><td>Escrituras por turno no atómicas; el supervisor lo compensa con una regla.</td><td><span class="sev baja">baja</span></td></tr>
+    <tr><td>11</td><td>Posible defecto en la actualización de afinidad (base fija, sin acumulación, solo <code>d_affinity</code>). Verificar leyendo el código antes de afirmarlo.</td><td><span class="sev media">media</span></td></tr>
+    <tr><td>12</td><td>El prompt del jugador promete un resumen que el bucle no entrega.</td><td><span class="sev baja">baja</span></td></tr>
+    <tr><td>13</td><td>Funciones SQL definidas y nunca llamadas (<code>location_context</code>, <code>get_visible_state</code>, <code>decay_dispositions</code>, etc.).</td><td><span class="sev baja">baja</span></td></tr>
+  </table></div>
+
+  <h3>D. Preguntas que haría el tribunal, con una respuesta defendible</h3>
+  <div class="qa"><p class="q">«¿Por qué debería creer que las diferencias se deben a la arquitectura y no al azar del modelo?»</p>
+  <div class="a"><p>Porque el diseño es apareado (mismo escenario, mismo personaje, mismas condiciones iniciales) con 27 pares, y la prueba usa las diferencias por par con un test exacto sin supuestos de normalidad. Reconocemos que el azar del modelo entra como ruido, no como sesgo, y que no repetimos cada par.</p></div></div>
+  <div class="qa"><p class="q">«Su multiagente casi no usa el Router ni el Mundo. ¿Qué compara entonces?»</p>
+  <div class="a"><p>Compara una <em>división de responsabilidades en generación</em>: un narrador único frente a Actores por PNJ y un Narrador sin secretos. Reportamos las tasas de uso de cada rol y no atribuimos efectos a los roles inertes.</p></div></div>
+  <div class="qa"><p class="q">«¿Cómo garantizan que la medición no favorece a un brazo?»</p>
+  <div class="a"><p>Los instrumentos son deterministas e idénticos para ambos brazos. El punto débil es que un detector puede tener falsos positivos distintos por brazo (caso CR-2); por eso validamos con una muestra anotada y reportamos la tasa de error por brazo.</p></div></div>
+  <div class="qa"><p class="q">«¿Es reproducible?»</p>
+  <div class="a"><p>Parcialmente. El código, los dados, las reglas, el esquema y los instrumentos lo son; la salida del modelo no (sin semilla, proveedor externo). Compensamos publicando las bitácoras completas y las 54 transcripciones.</p></div></div>
+  <div class="qa"><p class="q">«¿Por qué 1,400 turnos y por qué 20 turnos por día?»</p>
+  <div class="a"><p>Son parámetros de diseño fijados de antemano para observar deriva en campañas largas; no son hallazgos. Si el tribunal exige respaldo, se puede citar el piloto o presentarlo como limitación.</p></div></div>
+  <div class="qa"><p class="q">«¿Qué pasó con las campañas que se cayeron y se reanudaron?»</p>
+  <div class="a"><p>Hubo 2 relanzamientos en el lote 07–17 y ninguno en el 18–27. Reportamos cuáles fueron y comparamos sus métricas con las no reanudadas como prueba de sensibilidad.</p></div></div>
+
+  <h3>E. Términos que un lector sin contexto podría dejar pasar</h3>
+  <p>Esta lista es la de la propia relectura: cosas que el texto usa y que conviene definir en el cuerpo de la tesis la primera vez que aparecen.</p>
+  <div class="glossary-grid">
+    <div class="gterm"><div class="word">Ventana de contexto</div><div class="def">Cantidad máxima de texto que un modelo puede leer en una llamada. Es la razón de no pegar todo el historial.</div></div>
+    <div class="gterm"><div class="word">pgvector</div><div class="def">Extensión de PostgreSQL para guardar vectores numéricos (representaciones de significado) y buscar por similitud. Existe en el esquema y no se usa.</div></div>
+    <div class="gterm"><div class="word">CHECK / UNIQUE</div><div class="def">Reglas que la propia base impone: CHECK exige que un valor cumpla una condición; UNIQUE impide filas repetidas.</div></div>
+    <div class="gterm"><div class="word">Append-only</div><div class="def">Registro al que solo se añaden líneas; nunca se editan ni se borran. Da trazabilidad.</div></div>
+    <div class="gterm"><div class="word">WMI</div><div class="def">Mecanismo de Windows para lanzar procesos independientes de la ventana desde la que se lanzan.</div></div>
+    <div class="gterm"><div class="word">Jitter</div><div class="def">Un poco de azar añadido a la espera de un reintento para que muchos procesos no reintenten a la vez.</div></div>
+    <div class="gterm"><div class="word">Wilcoxon exacto</div><div class="def">Prueba estadística para comparar dos condiciones en los mismos pares, usando el orden de las diferencias y no su valor exacto.</div></div>
+    <div class="gterm"><div class="word">Hodges–Lehmann</div><div class="def">Estimador de la diferencia típica entre condiciones, robusto a valores extremos.</div></div>
+    <div class="gterm"><div class="word">Holm</div><div class="def">Corrección para que probar muchas métricas a la vez no infle la probabilidad de encontrar «diferencias» por azar.</div></div>
+  </div>
+
+  <h3>F. Qué cambia en la Fase 0 por esta revisión</h3>
+  <p><span class="tag-doc">Documentado</span> En la página de la Fase 0, la sección (E4) que decía que los rasgos culturales de los lugares se heredan al narrar debe leerse así: se siembran en la base, pero ningún código los inyecta en los prompts durante la generación; solo un instrumento de medición los consulta. Esa corrección se aplica también en aquella página.</p>
+
+  <p class="footnote">Fuentes: <code>orquestador/vertical_slice.py</code>, <code>vertical_slice_g1.py</code>, <code>router.py</code>, <code>arbitro.py</code>, <code>mundo.py</code>, <code>db.py</code>, <code>jugador/dados.py</code>, prompts del jugador, del DM y del Actor, <code>extractor/contrato.json</code>, <code>migrations/001_schema.sql</code>, <code>scripts/lanzar_ola.ps1</code>, <code>supervisor.py</code>, bitácoras de los lotes 07–17 y 18–27, tesis (cap. 5–6) y <code>plan-cierre-investigacion.md</code>. Los conteos de las bitácoras son aproximados (búsqueda de texto).</p>
+</div>
+
+</body>
+</html>

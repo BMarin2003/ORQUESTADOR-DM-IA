@@ -2,7 +2,7 @@ r"""
 Árbitro de G1 — híbrido: código puro para el camino mecánico, LLM solo
 donde de verdad hace falta juicio.
 
-Por qué híbrido y no todo-LLM ni todo-código, ver docs/descomposicion_prompts.md
+Por qué híbrido y no todo-LLM ni todo-código, ver docs/especificaciones/descomposicion_prompts.md
 §5.2 y la discusión de 2026-09-06 (QM - Ruta crítica en el vault): la tabla
 de presupuesto de latencia de QM - Composición G1 dice "Árbitro mecánico sin
 LLM (−6,7s) — la aritmética es código; el modelo solo para el tutor OOC".

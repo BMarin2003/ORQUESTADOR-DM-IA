@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 from pptx import Presentation
 
-RUTA = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parents[2] / "docs" / "Sustentacion_MAS_vs_Monolitico.pptx"
+RUTA = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parents[2] / "sustentacion" / "propuestas" / "Sustentacion_MAS_vs_Monolitico.pptx"
 prs = Presentation(RUTA)
 print(f"{RUTA.name}: {len(prs.slides)} diapositivas, {prs.slide_width}x{prs.slide_height}\n")
 for i, s in enumerate(prs.slides, 1):

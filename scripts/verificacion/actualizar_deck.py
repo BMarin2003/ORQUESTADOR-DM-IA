@@ -14,8 +14,8 @@ from pathlib import Path
 from pptx import Presentation
 
 RAIZ = Path(__file__).resolve().parents[2]
-ORIGEN = RAIZ / "docs" / "Sustentacion_MAS_vs_Monolitico.pptx"
-DESTINO = RAIZ / "docs" / "Sustentacion_MAS_vs_Monolitico_v2.pptx"
+ORIGEN = RAIZ / "sustentacion" / "propuestas" / "Sustentacion_MAS_vs_Monolitico.pptx"
+DESTINO = RAIZ / "sustentacion" / "propuestas" / "Sustentacion_MAS_vs_Monolitico_v2.pptx"
 
 
 def forma(slide, sid):

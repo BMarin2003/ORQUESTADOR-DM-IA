@@ -1,6 +1,6 @@
 """
 Medición completa de cl2_recall_semantico_v2 (nulo condicionado por mención; ver condicionado.py y
-docs/spec_cl2_recall_semantico_v2.md). EXPLORATORIO. Solo lectura de la base.
+docs/especificaciones/spec_cl2_recall_semantico_v2.md). EXPLORATORIO. Solo lectura de la base.
 
 Sobre los MISMOS eventos de Jericho-QA / v1 calcula, para cada evento: si la v2 lo puede evaluar, su
 decisión v2, la decisión v1 y la de Jericho léxico. Compara las tres sobre el MISMO subconjunto
@@ -68,7 +68,7 @@ def informe(todos, por_campana):
     ev = [f for f in todos if f["evaluable_v2"]]
     L = ["# cl2_recall_semantico_v2 (EXPLORATORIO, nulo condicionado por mención)", "",
          "Mismos eventos que Jericho-QA y la v1. Solo cuentan las oraciones que mencionan a la entidad, en la ventana real "
-         "y en el nulo. Spec y A2 sellada: docs/spec_cl2_recall_semantico_v2.md y sensibilidad_semantico_v2.md.", "",
+         "y en el nulo. Spec y A2 sellada: docs/especificaciones/spec_cl2_recall_semantico_v2.md y sensibilidad_semantico_v2.md.", "",
          f"Universo (eventos que la v1 evaluaba): {len(todos)} · evaluables por la v2: {len(ev)} "
          f"({100 * len(ev) / max(1, len(todos)):.1f} %).", "",
          "## Evaluabilidad por brazo y familia", "", "| Brazo | Familia | Universo | Evaluables v2 |", "|---|---|---|---|"]
