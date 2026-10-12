@@ -1,0 +1,524 @@
+﻿Sustentacion_MAS_vs_Monolitico.pptx: 31 diapositivas, 12192000x6858000
+
+=== 1 (layout: PORTADA) ===
+  [2:Text 0] SUSTENTACI├ôN DE TESIS ┬À INGENIER├ìA DE SISTEMAS E IA ┬À UPAO
+  [3:Text 0] Coherencia narrativa en campa├▒as de Dungeons & Dragons: sistemas multiagente vs. monol├¡ticos
+  [4:Text 0] Marin Yupanqui, Bryan Arturo ┬À Mostacero Cieza, Luis David / Asesor: Dr. Cueva Ch├ívez, Walter Manuel / Trujillo, octubre de 2026
+  [6:IMAGEN Image 0]
+  [8:Text 5] G1
+  [10:Text 7] G2
+  NOTAS: Buenas tardes, miembros del jurado. Venimos a sustentar la tesis que compara la coherencia narrativa de campa├▒as de Dungeons & Dragons generadas por un sistema multiagente (G1) frente a uno monol├¡tico
+=== 2 (layout: CONTENIDO) ===
+  [2:Text 0] AGENDA
+  [3:Text 0] Ruta de la exposici├│n
+  [6:Text 4] 1
+  [7:Text 5] Contexto
+  [8:Text 6] Qu├® es D&D, el problema, los objetivos, la hip├│tesis y la variable con sus dimensiones.
+  [11:Text 9] 2
+  [12:Text 10] Arquitectura
+  [13:Text 11] Motor sin interfaz, base de datos, modelo y proveedor, G1, G2 y el agente jugador.
+  [16:Text 14] 3
+  [17:Text 15] Flujo
+  [18:Text 16] C├│mo ingresa una campa├▒a, un turno paso a paso, los deltas y c├│mo se eval├║a.
+  [21:Text 19] 4
+  [22:Text 20] Cierre
+  [23:Text 21] Resultados por hip├│tesis, limitaciones declaradas y conclusiones.
+  [25:Slide Number Placeholder 0] 2
+  NOTAS: Primero situamos el problema y lo que medimos. Luego mostramos qu├® construimos para el experimento: no hay interfaz, es un motor por l├¡nea de comandos con base de datos y modelo en la nube. Despu├®s re
+=== 3 (layout: SECCION) ===
+  [2:Text 0] PASO 1
+  [3:Text 0] Contexto: el juego, el problema y lo que medimos
+  [4:Text 0] D&D, formulaci├│n del problema, objetivos, hip├│tesis y variables
+  [6:Text 4] 1
+  [25:Slide Number Placeholder 0] 3
+  NOTAS: Paso 1: contexto.
+=== 4 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 1 ┬À CONTEXTO
+  [3:Text 0] D&D: un director de juego, tres trabajos
+  [4:Text 2] Dungeons & Dragons es un juego de rol de mesa. El Dungeon Master (DM) narra el mundo, interpreta a los personajes no jugadores (PNJ) y arbitra las reglas; el jugador decide qu├® hace su personaje. Una campa├▒a dura cientos de turnos.
+  [5:Text 3] Por eso es un banco de pruebas exigente para la IA: un error de hace 300 turnos se nota.
+  [7:IMAGEN Image 0]
+  [8:Text 5] Referentes: Callison-Burch et al. (2022), D&D como reto de di├ílogo; Zhu et al. (2023), FIREBALL; Gallotta et al. (2024), el LLM como Game Master.
+  [11:Text 8] CR
+  [12:Text 9] Responder a lo que el jugador acaba de hacer
+  [13:Text 10] ÔåÆ Coherencia reactiva
+  [16:Text 13] CL
+  [17:Text 14] Recordar personajes, eventos y el estado del mundo
+  [18:Text 15] ÔåÆ Coherencia longitudinal
+  [21:Text 18] QN
+  [22:Text 19] Mantener el inter├®s sin decidir por el jugador
+  [23:Text 20] ÔåÆ Calidad narrativa emergente
+  [25:Slide Number Placeholder 0] 4
+  NOTAS: Un DM hace tres trabajos a la vez: responder a la acci├│n inmediata del jugador, recordar lo que pas├│ cientos de turnos atr├ís y mantener la historia interesante sin quitarle el control al jugador. Esos
+=== 5 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 1 ┬À CONTEXTO
+  [3:Text 0] El problema: los LLM pierden el hilo
+  [6:IMAGEN Image 0]
+  [7:Text 4] Memoria limitada y desigual
+  [8:Text 5] La memoria efectiva est├í acotada por la ventana de contexto y falla m├ís con la informaci├│n del medio (Gallotta et al., 2024; Liu et al., 2024).
+  [11:IMAGEN Image 1]
+  [12:Text 8] Fallos visibles en D&D
+  [13:Text 9] Se pierde el estado del juego y el modelo decide por el jugador (Callison-Burch et al., 2022; Zhu et al., 2023). Nuestro piloto con 5 DM hall├│ nombres reasignados y cambios de bando.
+  [16:IMAGEN Image 2]
+  [17:Text 12] Promesa multiagente sin prueba
+  [18:Text 13] Repartir roles mejora historias largas (Xia et al., 2025), pero los MAS tienen 14 modos de fallo propios y mejoras m├¡nimas (Cemri et al., 2025).
+  [20:Text 15] FORMULACI├ôN DEL PROBLEMA
+  [21:Text 16] ┬┐Es superior la coherencia narrativa de campa├▒as de D&D generadas por sistemas multiagente en comparaci├│n con sistemas monol├¡ticos?
+  [22:Text 17] Brecha: no existe una comparaci├│n controlada de ambas arquitecturas en campa├▒as de D&D, y medir la coherencia es en s├¡ un problema abierto (Valdivia y Burelli, 2025).
+  [25:Slide Number Placeholder 0] 5
+  NOTAS: El problema tiene tres partes. Uno: la memoria de un LLM es limitada y desigual; Liu 2024 mostr├│ que lo que est├í en medio del contexto se pierde m├ís. Dos: en D&D esto se ve en fallos concretos; FIREBA
+=== 6 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 1 ┬À CONTEXTO
+  [3:Text 0] Objetivos de la investigaci├│n
+  [5:Text 3] Objetivo general  Comparar la coherencia narrativa de las campa├▒as de D&D generadas por una arquitectura multiagente frente a una arquitectura monol├¡tica.
+  [6:Text 4] Reactiva
+  [7:Text 5] Longitudinal
+  [8:Text 6] Emergente
+  [9:Text 7] Evaluar G2
+  [10:Text 8] monol├¡tico solo
+  [12:Text 10] OE-1 ┬À Evaluar la coherencia reactiva de las respuestas inmediatas de G2
+  [14:Text 12] OE-2 ┬À Evaluar la coherencia longitudinal a lo largo de las campa├▒as de G2
+  [16:Text 14] OE-3 ┬À Evaluar la calidad narrativa emergente de las campa├▒as de G2
+  [17:Text 15] Comparar
+  [18:Text 16] G1 frente a G2
+  [20:Text 18] OE-4 ┬À Comparar la coherencia reactiva entre ambas arquitecturas
+  [22:Text 20] OE-5 ┬À Comparar la coherencia longitudinal entre ambas arquitecturas
+  [24:Text 22] OE-6 ┬À Comparar la calidad narrativa emergente de G1 frente a G2
+  [25:Slide Number Placeholder 0] 6
+  NOTAS: El objetivo general es comparar la coherencia narrativa de ambas arquitecturas. Los seis objetivos espec├¡ficos se ordenan en una matriz: los tres primeros eval├║an al sistema monol├¡tico solo, en cada d
+=== 7 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 1 ┬À CONTEXTO
+  [3:Text 0] Hip├│tesis: degradaci├│n y ventaja
+  [5:Text 3] H1 ┬À HIP├ôTESIS GENERAL
+  [6:Text 4] Los sistemas multiagente producen campa├▒as de D&D con mayor coherencia narrativa que los sistemas monol├¡ticos.
+  [7:Text 5] Regla de decisi├│n: se sostiene solo si H1d, H1e y H1f se sostienen; si no, el resultado se reporta por dimensi├│n.
+  [10:Text 8] aÔÇôc
+  [11:Text 9] H1aÔÇôc ┬À La coherencia de G2 se degrada
+  [12:Text 10] La coherencia reactiva (a), longitudinal (b) y emergente (c) del sistema monol├¡tico disminuye conforme avanza la campa├▒a.
+  [13:Text 11] Prueba de tendencia de Page sobre 7 bloques de 200 turnos, m├ís Wilcoxon entre el bloque 1 y el 7
+  [16:Text 14] dÔÇôf
+  [17:Text 15] H1dÔÇôf ┬À G1 supera a G2
+  [18:Text 16] El multiagente supera al monol├¡tico en coherencia reactiva (d), longitudinal (e) y calidad emergente (f).
+  [19:Text 17] Wilcoxon exacto pareado sobre 27 pares, Hodges-Lehmann, r biserial y correcci├│n de Holm ┬À ╬▒ = 0.05
+  [25:Slide Number Placeholder 0] 7
+  NOTAS: La hip├│tesis general dice que el multiagente produce campa├▒as m├ís coherentes. Se contrasta con seis hip├│tesis espec├¡ficas. H1a a H1c plantean que el monol├¡tico se degrada con el tiempo; se prueban par
+=== 8 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 1 ┬À CONTEXTO
+  [3:Text 0] Variables, dimensiones e indicadores
+  [5:Text 3] VARIABLE INDEPENDIENTE
+  [6:Text 4] Tipo de arquitectura
+  [7:Text 5] Nominal dicot├│mica
+  [9:Text 7] G1 ┬À Multiagente: turno repartido en cinco roles
+  [11:Text 9] G2 ┬À Monol├¡tica: turno resuelto en una sola generaci├│n
+  [12:Text 10] Se controlan dentro del par: modelo, base de datos, extractor, dados, escenario, personaje y extensi├│n.
+  [13:Text 11] Variable dependiente: coherencia narrativa
+  [9:TABLA] Dimensi├│n | Indicadores | Base en la literatura // Coherencia reactiva | CR-1 Fluidez y correcci├│n de la respuesta
+CR-2 Arraigo a la acci├│n del jugador | FIREBALL (Zhu et al., 2023); G-DRAGON (Zhou et al., 2022) // Coherencia longitudinal | CL-1 Consistencia de personajes
+CL-2 Eventos y estado del mundo | Pan et al. (2025); Chen et al. (2023); DOC (Yang et al., 2023) // Calidad narrativa emergente
+  [15:Text 12] Operacionalizaci├│n seg├║n Arias (2012): definici├│n conceptual ÔåÆ dimensiones ÔåÆ indicadores ÔåÆ instrumentos (Tabla 1 de la tesis).
+  [25:Slide Number Placeholder 0] 8
+  NOTAS: La variable independiente es el tipo de arquitectura, con dos niveles: G1 multiagente y G2 monol├¡tico. La dependiente es la coherencia narrativa, en tres dimensiones y seis indicadores. Cada indicador
+=== 9 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 1 ┬À CONTEXTO
+  [3:Text 0] Dise├▒o: 27 pares gemelos, una diferencia
+  [5:Text 3] 27
+  [6:Text 4] pares gemelos
+  [8:Text 6] 54
+  [9:Text 7] campa├▒as
+  [11:Text 9] 1,400
+  [12:Text 10] turnos por campa├▒a
+  [14:Text 12] 75,600
+  [15:Text 13] turnos en total
+  [17:Text 15] Gpar (n = 27):  XÔéü ÔåÆ OÔéü  |  XÔéé ÔåÆ OÔéé
+  [18:Text 16] XÔéü = campa├▒a con G1 ┬À XÔéé = campa├▒a con G2 ┬À O = bater├¡a de instrumentos. Cada escenario recibe ambos tratamientos y es su propio control.
+  [19:Text 17] 14/09/2026: el panel de 5 DM se reemplaz├│ por instrumentos deterministas, por escala y reproducibilidad; el panel queda como estudio piloto.
+  [20:Text 18] Constante dentro del par
+  [21:Text 19] Modelo, base de datos y extractor / Mecanismo de dados deterministas / Escenario inicial, personaje jugador y 1,400 turnos
+  [22:Text 20] Var├¡a entre pares
+  [23:Text 21] Ambientaci├│n, tono, estructura del conflicto y personaje, para no depender de un solo estilo.
+  [25:Slide Number Placeholder 0] 9
+  NOTAS: El dise├▒o es experimental de medidas repetidas con pares emparejados. Cada par es un mismo escenario generado dos veces: una con G1 y otra con G2, as├¡ cada escenario es su propio control. Son 27 pares
+=== 10 (layout: SECCION) ===
+  [2:Text 0] PASO 2
+  [3:Text 0] Arquitectura: qu├® construimos para el experimento
+  [4:Text 0] Motor, base de datos, modelo, G1, G2 y el agente jugador
+  [6:Text 4] 2
+  [25:Slide Number Placeholder 0] 10
+  NOTAS: Paso 2: arquitectura.
+=== 11 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 2 ┬À ARQUITECTURA
+  [3:Text 0] Un motor sin interfaz gr├ífica
+  [5:IMAGEN Image 0]
+  [6:Text 3] PostgreSQL 16
+  [7:Text 4] En Docker. Guarda el estado del mundo y la bit├ícora de cada turno. pgAdmin en :5050.
+  [9:IMAGEN Image 1]
+  [10:Text 6] Orquestador Python
+  [11:Text 7] vertical_slice.py (G2) / vertical_slice_g1.py (G1)
+  [13:IMAGEN Image 2]
+  [14:Text 9] DeepInfra
+  [15:Text 10] API HTTPS que sirve google/gemma-4-31B-it.
+  [17:Text 12] SQL (psycopg)
+  [19:Text 14] HTTPS ┬À JSON
+  [22:Text 17] lanzar_ola.ps1 + supervisor.py
+  [23:Text 18] Procesos en paralelo; relanza las ca├¡das con 1,400 ÔêÆ turno actual.
+  [24:Text 19] Sin interfaz gr├ífica
+  [25:Text 20] Todo corre por l├¡nea de comandos. La salida es la base de datos y una bit├ícora Markdown por proceso.
+  [26:Text 21] Operaci├│n real
+  [27:Text 22] Pares 07ÔÇô17: 22 campa├▒as en ~15.5 h. Pares 18ÔÇô27: 20 campa├▒as en ~15 h, sin relanzamientos.
+  [25:Slide Number Placeholder 0] 11
+  NOTAS: No hay interfaz de usuario: el experimento es un motor que corre por l├¡nea de comandos. Son tres piezas: un orquestador en Python, con un archivo por arquitectura; una base PostgreSQL 16 en Docker, qu
+=== 12 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 2 ┬À ARQUITECTURA
+  [3:Text 0] Base de datos: el mundo vive fuera del modelo
+  [4:Text 2] Tablas que usa el experimento, por funci├│n
+  [6:Text 4] Campa├▒a
+  [7:Text 5] tenants ┬À campaigns ┬À turn_log
+  [9:Text 7] Mundo
+  [10:Text 8] locations ┬À factions ┬À faction_clocks ┬À quests
+  [12:Text 10] PNJ
+  [13:Text 11] npcs ┬À npc_disposition ┬À npc_knowledge ┬À npc_secrets
+  [15:Text 13] Cambios
+  [16:Text 14] mutable_fields ┬À state_deltas
+  [18:Text 16] Medici├│n
+  [19:Text 17] turn_validation (banderas por turno)
+  [22:IMAGEN Image 0]
+  [23:Text 20] Estado actual en la tabla; la historia, en un libro de cambios de solo a├▒adir.
+  [26:IMAGEN Image 1]
+  [27:Text 23] Toda escritura narrativa pasa por apply_delta(): si no pas├│ por ah├¡, no ocurri├│.
+  [30:IMAGEN Image 2]
+  [31:Text 26] Un tenant por par: cada campa├▒a separada de las dem├ís.
+  [33:Text 28] El contexto de cada turno se arma con consultas SQL exactas sobre estas tablas.
+  [25:Slide Number Placeholder 0] 12
+  NOTAS: La base es la fuente de verdad: el modelo no recuerda nada, todo lo que sabe del mundo sale de aqu├¡. Las tablas que usa el experimento son las de campa├▒a y turnos, mundo, PNJ con su disposici├│n, conoc
+=== 13 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 2 ┬À ARQUITECTURA
+  [3:Text 0] Modelo y proveedor de inferencia
+  [5:Text 3] MODELO
+  [6:Text 4] google/gemma-4-31B-it
+  [7:Text 5] Pesos abiertos ┬À una sola versi├│n ┬À un solo proveedor, sin enrutadores intermedios
+  [8:Text 6] TEMPERATURA POR ROL
+  [9:Text 7] Extractor 0 ┬À ├ürbitro 0.3 / Mundo 0.7 / Jugador, DM y Narrador 0.8 / Actor de PNJ 0.85
+  [11:IMAGEN Image 0]
+  [12:Text 9] DeepInfra: API compatible con OpenAI por HTTPS, con el razonamiento interno desactivado (enable_thinking: false).
+  [14:IMAGEN Image 1]
+  [15:Text 11] Reintentos: 4 por error de red y hasta 30, con espera exponencial, ante saturaci├│n (429) o ca├¡da (5xx).
+  [17:IMAGEN Image 2]
+  [18:Text 13] Huella del modelo verificada antes de cada tanda, por si el proveedor cambia la cuantizaci├│n.
+  [20:IMAGEN Image 3]
+  [21:Text 15] USD 0.13 / 0.38 por mill├│n de tokens de entrada / salida; unos USD 3.83 por par (pares 04ÔÇô06).
+  [23:Text 17] L├¡mite: las llamadas al modelo no usan semilla; los dados se reproducen, el texto no.
+  [25:Slide Number Placeholder 0] 13
+  NOTAS: Usamos un solo modelo para todos los roles: google/gemma-4-31B-it, de pesos abiertos y fijado en una versi├│n, para que un modelo cerrado no cambie a mitad del experimento, preocupaci├│n que se├▒ala Gall
+=== 14 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 2 ┬À ARQUITECTURA
+  [3:Text 0] Ning├║n LLM escribe en la base de datos
+  [5:Text 3] Postgres
+  [6:Text 4] estado del mundo
+  [9:Text 7] db.py lee
+  [10:Text 8] arma el contexto con SQL
+  [13:Text 11] Jugador, DM o agentes
+  [14:Text 12] reciben texto, devuelven prosa
+  [17:Text 15] Extractor
+  [18:Text 16] propone cambios en JSON con cita
+  [21:Text 19] Validador
+  [22:Text 20] cita literal y lista blanca
+  [25:Text 23] apply_delta()
+  [26:Text 24] escribe en state_deltas
+  [28:Text 26] LLM
+  [30:Text 28] C├│digo
+  [32:Text 30] Postgres
+  [33:Text 31] Memoria del sistema, no del modelo
+  [35:Text 33] ├Ültima escena
+  [36:Text 34] turn_log
+  [37:Text 35] Lo narrado en el turno anterior; nadie recibe el historial completo.
+  [39:Text 37] Estado estructurado
+  [40:Text 38] entidades
+  [41:Text 39] PNJ presentes, actitudes, hechos, misiones y relojes.
+  [43:Text 41] Libro de cambios
+  [44:Text 42] state_deltas
+  [45:Text 43] Cada cambio con su evidencia; base de la auditor├¡a.
+  [46:Text 44] El modelo arranca en blanco en cada llamada: solo sabe lo que el contexto le pega.
+  [25:Slide Number Placeholder 0] 14
+  NOTAS: Esta es la conexi├│n entre los agentes y la base. Ning├║n modelo toca Postgres. Un script lee la base y arma el contexto como texto; el jugador, el DM o los agentes de G1 reciben ese texto y devuelven p
+=== 15 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 2 ┬À ARQUITECTURA
+  [3:Text 0] G2 monol├¡tico: un solo DM lo hace todo
+  [4:Text 2] 3
+  [5:Text 3] llamadas al modelo por turno: jugador, DM y extractor
+  [6:Text 4] Recibe el contexto de la escena, la acci├│n del jugador y el resultado del dado. / Devuelve la prosa del turno. / Su prompt (dm/prompt_g2.md) incluye los secretos de los PNJ: debe autocontrolarse para no revelarlos.
+  [8:Text 6] Es la l├¡nea base: usa la misma memoria estructurada y el mismo extractor que G1.
+  [10:Text 8] DM
+  [11:Text 9] 1 llamada
+  [13:Text 11] Narra la escena
+  [15:Text 13] Decide consecuencias
+  [17:Text 15] Interpreta PNJ
+  [19:Text 17] Arbitra reglas
+  [25:Slide Number Placeholder 0] 15
+  NOTAS: G2 es el brazo monol├¡tico: en cada turno una sola llamada al modelo hace de DM completo. Narra, interpreta a todos los PNJ, arbitra las reglas y decide las consecuencias. Recibe el contexto, la acci├│n
+=== 16 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 2 ┬À ARQUITECTURA
+  [3:Text 0] G1 multiagente: cinco roles especializados
+  [5:IMAGEN Image 0]
+  [7:Text 4] Router
+  [9:Text 6] C├│digo
+  [10:Text 7] Clasifica la acci├│n con patrones de texto y decide qu├® roles intervienen.
+  [12:IMAGEN Image 1]
+  [14:Text 10] ├ürbitro
+  [16:Text 12] F├│rmula + LLM
+  [17:Text 13] CD 15 ┬▒ 5 seg├║n la actitud del PNJ; usa el modelo solo si no hay tirada.
+  [19:IMAGEN Image 2]
+  [21:Text 16] Actor
+  [23:Text 18] LLM ├ù PNJ
+  [24:Text 19] Una llamada por cada PNJ que responde, con su ficha y sus secretos.
+  [26:IMAGEN Image 3]
+  [28:Text 22] Mundo
+  [30:Text 24] Funci├│n + LLM
+  [31:Text 25] Avanza relojes y bosqueja lo que pasa alrededor.
+  [33:IMAGEN Image 4]
+  [34:Text 27] Narrador
+  [36:Text 29] LLM
+  [37:Text 30] Une todo y escribe la escena final sin ver los secretos.
+  [39:Text 32] Hasta ~7 llamadas por turno: jugador, actores, mundo, narrador, extractor y el ├írbitro cuando no hay tirada. El extractor es el mismo que en G2.
+  [25:Slide Number Placeholder 0] 16
+  NOTAS: G1 reparte el trabajo del DM en cinco roles. El router es c├│digo: lee la acci├│n con patrones de texto y decide qu├® roles intervienen. El ├írbitro resuelve ├®xito o fracaso con una f├│rmula, CD 15 m├ís o m
+=== 17 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 2 ┬À ARQUITECTURA
+  [3:Text 0] Agente jugador: un LLM con personalidad fija
+  [4:Text 2] Por qu├® un jugador IA
+  [5:Text 3] 75,600 turnos no se pueden jugar con personas, y un jugador simulado evita el sesgo del investigador.
+  [6:Text 4] C├│mo se configura
+  [7:Text 5] Arquetipo, agenda y propensi├│n a desviarse de los ganchos / Ejemplos de conducta generados para cada personaje (Yasunaga et al., 2024) / Declara acci├│n y habilidad; el c├│digo tira los dados / Hermes-3-70B en pares 1ÔÇô3; Gemma-4-31B-it desde el par 4
+  [8:Text 6] 27 personajes en un espectro de conducta
+  [10:Text 8] 8
+  [11:Text 9] principistas
+  [13:Text 11] 14
+  [14:Text 12] moral ambigua
+  [16:Text 14] 5
+  [17:Text 15] sin escr├║pulos
+  [18:Text 16] 9 de los de moral ambigua cambian de conducta durante la campa├▒a.
+  [20:Text 18] OJO METODOL├ôGICO
+  [21:Text 19] Ambos brazos reciben el mismo personaje y la misma pol├¡tica, pero las acciones divergen porque el jugador responde a narraciones distintas. Eso es parte del efecto que se mide.
+  [25:Slide Number Placeholder 0] 17
+  NOTAS: El jugador tambi├®n es un LLM. Lo necesitamos por escala, 75,600 turnos, y para que el investigador no influya. Cada personaje tiene arquetipo, agenda, una propensi├│n a salirse de los ganchos y ejemplo
+=== 18 (layout: SECCION) ===
+  [2:Text 0] PASO 3
+  [3:Text 0] Flujo: del lore al turno 1,400
+  [4:Text 0] Ingreso, turno, agentes de G1, deltas y evaluaci├│n
+  [6:Text 4] 3
+  [25:Slide Number Placeholder 0] 18
+  NOTAS: Paso 3: el flujo.
+=== 19 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 3 ┬À FLUJO
+  [3:Text 0] C├│mo ingresa una campa├▒a: del lore al turno 0
+  [5:Text 3] 1
+  [7:Text 5] Lore y fichas
+  [8:Text 6] Una persona escribe la ambientaci├│n (.md) y dos JSON: mundo y PNJ.
+  [10:Text 8] 2
+  [12:Text 10] Validador
+  [13:Text 11] Revisa referencias cruzadas antes de gastar un sol.
+  [15:Text 13] 3
+  [17:Text 15] Crear campa├▒as
+  [18:Text 16] Una para G1 y otra para G2; el lore entra como turno 0.
+  [20:Text 18] 4
+  [22:Text 20] Sembrar el mundo
+  [23:Text 21] PNJ, lugares, facciones, misiones, relojes y el PJ, iguales en ambos brazos.
+  [25:Text 23] 5
+  [27:Text 25] Candado
+  [28:Text 26] Si la campa├▒a no tiene turno registrado, el motor no arranca.
+  [30:Text 28] 6
+  [31:Text 29] Lanzar
+  [32:Text 30] Procesos en paralelo; el supervisor relanza con 1,400 ÔêÆ turno actual.
+  [34:Text 32] Resultado: dos campa├▒as gemelas, listas para el turno 1.
+  [36:Text 34] Persona
+  [38:Text 36] C├│digo
+  [40:Text 38] Postgres
+  [25:Slide Number Placeholder 0] 19
+  NOTAS: As├¡ entra una campa├▒a. Uno: una persona escribe el lore en Markdown y dos JSON, uno con el mundo y otro con los PNJ. Dos: un validador revisa que las referencias cruzadas existan, antes de gastar dine
+=== 20 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 3 ┬À FLUJO
+  [3:Text 0] Un turno, paso a paso
+  [6:Text 4] 1
+  [7:Text 5] Estado
+  [8:Text 6] Lee la base y arma el contexto de la escena.
+  [11:Text 9] 2
+  [12:Text 10] Jugador
+  [13:Text 11] Decide su acci├│n y la habilidad que usa.
+  [16:Text 14] 3
+  [17:Text 15] Dados
+  [18:Text 16] d20 + modificador contra la CD; semilla SHA-256.
+  [21:Text 19] 4
+  [22:Text 20] Narraci├│n
+  [23:Text 21] G2: el DM. G1: cinco roles (siguiente l├ímina).
+  [26:Text 24] 5
+  [27:Text 25] Verificaci├│n
+  [28:Text 26] Guardia fuera de personaje y banderas por turno.
+  [31:Text 29] 6
+  [32:Text 30] Extractor
+  [33:Text 31] Propone los cambios del mundo en JSON.
+  [36:Text 34] 7
+  [37:Text 35] Validaci├│n
+  [38:Text 36] Cita literal, lista blanca y guardas.
+  [41:Text 39] 8
+  [42:Text 40] Escritura
+  [43:Text 41] Turno, deltas aceptados y relojes.
+  [46:Text 44] 9
+  [47:Text 45] Avance
+  [48:Text 46] D├¡a = turno ├À 20; vuelve al paso 1.
+  [50:Text 48] LLM
+  [52:Text 50] C├│digo
+  [54:Text 52] Postgres
+  [55:Text 53] Igual en G1 y G2, salvo el paso 4
+  [25:Slide Number Placeholder 0] 20
+  NOTAS: Un turno tiene nueve pasos y son los mismos en ambos brazos salvo el cuarto. Se lee el estado y se arma el contexto; el jugador decide; el c├│digo tira los dados con una semilla SHA-256 de campa├▒a, tur
+=== 21 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 3 ┬À FLUJO
+  [3:Text 0] Paso 4 en G1: qu├® hace cada agente
+  [22:TABLA] Agente | Recibe | Entrega | Tipo // Router | La acci├│n del jugador | El modo: en rol, ambiental, silencio o fuera de rol | C├│digo (patrones de texto) // ├ürbitro | La tirada y la actitud del PNJ | El veredicto: ├®xito o fracaso | F├│rmula; LLM a 0.3 si no hay tirada // Actor (├ù PNJ) | Su ficha completa con secretos y la escena | Su reacci├│n en primera persona | LLM a 0.85, una llamada por PNJ // Mund
+  [6:Text 3] Idea central: un contexto peque├▒o por personaje y secretos que el narrador no ve, para que no se mezclen voces ni se filtren secretos.
+  [25:Slide Number Placeholder 0] 21
+  NOTAS: As├¡ se comportan los agentes de G1 dentro del paso 4. El router decide el modo; el ├írbitro da el veredicto; cada actor, con su ficha y sus secretos, reacciona en primera persona; el mundo propone lo q
+=== 22 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 3 ┬À FLUJO
+  [3:Text 0] Deltas: cambiar el mundo con evidencia
+  [5:Text 3] EJEMPLO ILUSTRATIVO
+  [6:Text 4] ┬½ÔÇªdesde la noche del incendio nadie ha vuelto a ver a Yenna; su puesto en el mercado sigue cerrado.┬╗
+  [8:Text 6] { /   "entidad": "npc ┬À Yenna", /   "campo": "status", /   "antes": "alive", /   "despu├®s": "missing", /   "evidencia": "nadie ha vuelto /                a ver a Yenna" / }
+  [9:Text 7] Cuatro filtros antes de tocar la base
+  [11:Text 9] 1
+  [12:Text 10] Evidencia literal
+  [13:Text 11] La cita debe aparecer textual en la escena; si el modelo parafrasea, se rechaza.
+  [15:Text 13] 2
+  [16:Text 14] Lista blanca
+  [17:Text 15] Solo 19 campos mutables, con valores y rangos permitidos.
+  [19:Text 17] 3
+  [20:Text 18] Guardas de creaci├│n
+  [21:Text 19] Sin entidades duplicadas ni nombres vac├¡os.
+  [23:Text 21] 4
+  [24:Text 22] Restricciones de la base
+  [25:Text 23] CHECK y UNIQUE rechazan lo que rompa el esquema.
+  [27:Text 25] Aceptado ÔåÆ state_deltas, con turno y evidencia
+  [29:Text 27] Rechazado ÔåÆ no entra al estado
+  [25:Slide Number Placeholder 0] 22
+  NOTAS: Un delta es un cambio de estado: qu├® entidad, qu├® campo, valor anterior, valor nuevo y la cita que lo respalda. Lo propone el extractor, que es un LLM a temperatura 0 en modo JSON, igual en ambos braz
+=== 23 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 3 ┬À FLUJO
+  [3:Text 0] Evaluaci├│n en tres capas
+  [6:IMAGEN Image 0]
+  [7:Text 4] Dentro del turno
+  [8:Text 5] Guardia fuera de personaje: hasta 2 regeneraciones (desde el par 18) / Filtros del extractor sobre cada delta / Banderas por turno en turn_validation
+  [11:IMAGEN Image 1]
+  [12:Text 8] Sobre el corpus
+  [13:Text 9] Instrumentos deterministas sobre los turnos 2ÔÇô1,400 / Un valor por campa├▒a y por bloque de 200 turnos / Validados con perturbaciones sint├®ticas: expectativas selladas con SHA-256, ╬┤ de Cliff ÔëÑ 0.147 y Holm
+  [16:IMAGEN Image 2]
+  [17:Text 12] Estad├¡stica
+  [18:Text 13] Page para la degradaci├│n (H1aÔÇôc) / Wilcoxon exacto pareado, Hodges-Lehmann, r biserial y Holm (H1dÔÇôf) / Kaplan-Meier para la primera falla / ╬▒ = 0.05 ┬À potencia Ôëê 0.79ÔÇô0.81
+  [20:Text 15] C
+  [21:Text 16] confirmatorio
+  [23:Text 18] CC
+  [24:Text 19] confirmatorio condicionado
+  [26:Text 21] E
+  [27:Text 22] exploratorio
+  [29:Text 24] D
+  [30:Text 25] descriptivo
+  [31:Text 26] Solo C y CC deciden hip├│tesis
+  [25:Slide Number Placeholder 0] 23
+  NOTAS: La evaluaci├│n tiene tres capas. Dentro del turno: una guardia que detecta si el DM habl├│ como asistente y lo hace regenerar, los filtros de los deltas y unas banderas por turno. Sobre el corpus: una b
+=== 24 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 3 ┬À FLUJO
+  [3:Text 0] Instrumentos y papers: reactiva y longitudinal
+  [25:TABLA] Ind. | Instrumento | Clase | Paper de origen | Por qu├® // CR-1 | Gramaticalidad (LanguageTool) | D | Roemmele et al. (2017) | Fluidez medible sin juez humano // CR-2 | Respuesta a la acci├│n espec├¡fica (z) | C | Zhu et al. (2023); Zhou et al. (2022) | ┬½┬┐La respuesta es espec├¡fica?┬╗ y arraigo al contexto // CR-2 | Solapamiento y anclaje al escenario | E | Propio, sobre el mismo criterio | Si la resp
+  [5:Text 2] Clase seg├║n la prueba de sensibilidad: C confirmatorio ┬À E exploratorio ┬À D descriptivo.
+  [25:Slide Number Placeholder 0] 24
+  NOTAS: De d├│nde sale cada instrumento. En lo reactivo, la gramaticalidad viene de Roemmele 2017 y es descriptiva porque est├í en el techo. El ├║nico confirmatorio es la respuesta a la acci├│n espec├¡fica normali
+=== 25 (layout: CONTENIDO) ===
+  [2:Text 0] PASO 3 ┬À FLUJO
+  [3:Text 0] Instrumentos y papers: calidad emergente
+  [26:TABLA] Ind. | Instrumento | Clase | Paper de origen | Por qu├® // QN-1 | MTLD y MATTR | E | McCarthy y Jarvis (2010); Covington y McFall (2010) | Diversidad l├®xica que no depende de la longitud // QN-1 | TTR y bigramas a 100 palabras | E | Li et al. (2016) | Repetici├│n y monoton├¡a // QN-1 | Legibilidad Fern├índez-Huerta y Szigriszt-Pazos | D | F├│rmulas para espa├▒ol (escala INFLESZ) | Describe el registro, 
+  [6:Text 3] ┬┐POR QU├ë DETERMINISTAS?
+  [7:Text 4] Mismo texto, mismo resultado / Escalan a 75,600 turnos / No comparten sesgos con el modelo que genera / Las m├®tricas gen├®ricas se alinean poco con el juicio humano (Chhun et al., 2022): por eso cada una se valida antes
+  [25:Slide Number Placeholder 0] 25
+  NOTAS: En calidad emergente, la diversidad l├®xica se mide con MTLD y MATTR, que no dependen de la longitud del turno, y con TTR y bigramas de Li 2016. Esto importa porque los turnos de G1 son m├ís largos, 158
+=== 26 (layout: SECCION) ===
+  [2:Text 0] CIERRE
+  [3:Text 0] Resultados, limitaciones y conclusiones
+  [4:Text 0] Qu├® respondi├│ el corpus de 27 pares
+  [6:Text 4] 4
+  [25:Slide Number Placeholder 0] 26
+  NOTAS: Cierre: resultados.
+=== 27 (layout: CONTENIDO) ===
+  [2:Text 0] CIERRE
+  [3:Text 0] Resultados por hip├│tesis
+  [5:Text 2] r = ÔêÆ1.00 ┬À p < 0.0001 ┬À condicionado a la auditor├¡a humana del detector
+  [8:Text 5] H1aÔÇôc
+  [9:Text 6] G2 no se degrada en 1,400 turnos (reactiva: Page p = 0.310); la longitudinal no tiene instrumento C.
+  [11:Text 8] Sin degradaci├│n
+  [14:Text 11] H1d
+  [15:Text 12] ├Ünico instrumento C a favor de G2: 2.70 vs 2.81; HL ÔêÆ0.13 [ÔêÆ0.25; ÔêÆ0.03]; p┬á=┬á0.032.
+  [17:Text 14] No se sostiene
+  [20:Text 17] H1e
+  [21:Text 18] Ning├║n instrumento longitudinal alcanz├│ la clase confirmatoria.
+  [23:Text 20] Sin decisi├│n
+  [26:Text 23] H1f
+  [27:Text 24] G1 decide menos por el jugador: 0.17┬á% frente a 3.47┬á% de los turnos.
+  [29:Text 26] Aceptada*
+  [31:Text 28] Hip├│tesis general: no se sostiene (1 de 3 comparativas).
+  [25:Slide Number Placeholder 0] 27
+  NOTAS: Resultados. Primero, el monol├¡tico no se degrada en 1,400 turnos: en reactiva la prueba de Page da p = 0.31, y en longitudinal no hay instrumento confirmatorio pero la evidencia exploratoria tampoco m
+=== 28 (layout: CONTENIDO) ===
+  [2:Text 0] CIERRE
+  [3:Text 0] Limitaciones declaradas
+  [6:IMAGEN Image 0]
+  [7:Text 4] Generaci├│n no reproducible
+  [8:Text 5] Sin semilla en las llamadas al modelo: los dados se repiten, el texto no.
+  [11:IMAGEN Image 1]
+  [12:Text 8] Jugador simulado
+  [13:Text 9] Desde el par 4 es el mismo modelo que narra; no hay jugadores humanos.
+  [16:IMAGEN Image 2]
+  [17:Text 12] Validez de constructo
+  [18:Text 13] El arraigo z discrepa de sus versiones crudas y la longitudinal no tiene instrumento confirmatorio.
+  [21:IMAGEN Image 3]
+  [22:Text 16] persona2 pendiente
+  [23:Text 17] La auditor├¡a humana externa del detector sigue en curso: H1f es condicional.
+  [26:IMAGEN Image 4]
+  [27:Text 20] Alcance acotado
+  [28:Text 21] Un modelo, un idioma, un sistema de reglas (SRD 5e) y un dise├▒o de cinco roles.
+  [31:IMAGEN Image 5]
+  [32:Text 24] Cambios entre lotes
+  [33:Text 25] Jugador desde el par 4, fichas desde el par 3 y relojes desde el par 18, sim├®tricos en cada par.
+  [25:Slide Number Placeholder 0] 28
+  NOTAS: Declaramos seis limitaciones. La generaci├│n no es reproducible porque las llamadas al modelo no tienen semilla; los dados s├¡. El jugador es simulado y desde el par 4 es el mismo modelo que narra. El a
+=== 29 (layout: CONTENIDO) ===
+  [2:Text 0] CIERRE
+  [3:Text 0] Conclusiones y trabajo futuro
+  [4:Text 2] Conclusiones
+  [6:Text 4] 1
+  [7:Text 5] Con la misma memoria estructurada, G2 no se degrada en 1,400 turnos: registrar el estado contrarresta la deriva.
+  [9:Text 7] 2
+  [10:Text 8] Especializar agentes no mejora la coherencia reactiva ni la longitudinal que hoy podemos medir.
+  [12:Text 10] 3
+  [13:Text 11] Separar roles s├¡ reduce que el sistema decida por el jugador, sujeto a la auditor├¡a del detector.
+  [15:Text 13] Trabajo futuro
+  [16:Text 14] Completar la auditor├¡a humana de persona2, por arquitectura / Un instrumento confirmatorio longitudinal: Jericho ampliado o NLI en espa├▒ol / Campa├▒as de m├ís de 1,400 turnos / Otros modelos e idiomas / Jugadores humanos para medir inter├®s y creatividad / Costo y latencia de cada arquitectura
+  [25:Slide Number Placeholder 0] 29
+  NOTAS: Concluimos tres cosas. Uno: cuando ambas arquitecturas comparten una memoria estructurada, el monol├¡tico no se degrada en 1,400 turnos; registrar el estado del mundo fuera del modelo contrarresta la d
+=== 30 (layout: PORTADA) ===
+  [2:Text 0] GRACIAS
+  [3:Text 0] ┬┐Preguntas?
+  [4:Text 0] Marin Yupanqui, Bryan Arturo ┬À Mostacero Cieza, Luis David / Asesor: Dr. Cueva Ch├ívez, Walter Manuel
+  [6:IMAGEN Image 0]
+  [8:Text 5] G1
+  [10:Text 7] G2
+  NOTAS: Muchas gracias. Quedamos atentos a sus preguntas.
+=== 31 (layout: CONTENIDO) ===
+  [2:Text 0] RESPALDO
+  [3:Text 0] Preguntas probables del jurado
+  [5:Text 3] ┬┐D├│nde est├í el RAG?
+  [6:Text 4] No usamos RAG vectorial: la memoria es el estado estructurado del mundo, consultado con SQL exacto, y ambos brazos reciben la misma informaci├│n.
+  [8:Text 6] ┬┐Ambos brazos reciben los mismos dados?
+  [9:Text 7] Mismo mecanismo: SHA-256 de campa├▒a, turno y habilidad. Como el id de campa├▒a difiere, la secuencia no es id├®ntica, pero no favorece a ninguno en promedio.
+  [11:Text 9] ┬┐Por qu├® el confirmatorio contradice a los crudos?
+  [12:Text 10] La versi├│n z normaliza dentro de cada campa├▒a; las crudas no controlan longitud ni vocabulario. Decide la regla del cap├¡tulo 4 y la discordancia se declara como l├¡mite.
+  [14:Text 12] ┬┐Por qu├® un LLM como jugador?
+  [15:Text 13] Por escala y control: misma pol├¡tica en cada par. Se declara que las acciones divergen porque el jugador responde a narraciones distintas.
+  [25:Slide Number Placeholder 0] 31
+  NOTAS: L├ímina de respaldo, solo si preguntan. Ojo con la segunda: la tesis y el comentario del c├│digo dicen que ambos brazos reciben la misma secuencia de tiradas, pero la semilla incluye el campaign_id, que
