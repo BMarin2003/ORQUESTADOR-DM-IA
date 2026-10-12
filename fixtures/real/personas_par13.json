@@ -1,0 +1,174 @@
+{
+  "_nota": "Par 13 (real) -- corpus real, no piloto. Dos PNJ centrales, posturas igual de defendibles (guarda pasiva vs. intervención directa) frente a una maldición cuya naturaleza real queda deliberadamente sin resolver. Un PNJ de paso con todo vacío a propósito.",
+
+  "ondina": {
+    "_arquetipo": "Guardiana tradicional que teme que cualquier intervención empeore lo que sea que se perturbó -su cautela nace de generaciones de práctica, no de miedo vacío.",
+    "name": "Ondina Oscanda",
+    "species": "humana",
+    "social_role": "guardiana de las marcas del Templo de la Guarda",
+    "appearance": "Cuarenta y tantos, manos manchadas de pigmento de las marcas que renueva cada año, un manto con símbolos cosidos que heredó de su maestra.",
+    "location": "templo_de_la_guarda",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 35,
+      "candor": 60,
+      "principle": 80,
+      "boldness": 40
+    },
+
+    "traits": ["renueva las marcas de guarda cada año sin faltar una vez", "conoce de memoria cada símbolo, aunque no todos sus significados", "no se acerca al círculo yermo sin motivo real"],
+    "internal_contradiction": "Sostiene que no tocar la Piedra es la única salida segura, y en privado no está del todo segura de que la guarda que aprendió de su maestra siga bastando ahora que el círculo, por primera vez en generaciones, ha empezado a crecer.",
+    "taboos": ["entrar al círculo yermo sin las marcas recién renovadas", "enseñar el ritual completo de guarda a quien no ha demostrado paciencia suficiente"],
+    "voice_notes": "Ceremoniosa, elige las palabras como quien recita algo aprendido de memoria hace mucho. Rara vez improvisa una respuesta.",
+    "stated_desire": "Que la guarda vuelva a contener el círculo como lo hizo durante generaciones.",
+    "actual_need": "Aceptar que la tradición que heredó podría no tener respuesta para algo nuevo.",
+    "fear": "Que reforzar la guarda no sea suficiente esta vez, y que no exista ningún ritual que sí lo sea.",
+
+    "ibf": {
+      "ideal_text": "Lo que ha dormido en paz durante generaciones no se despierta por curiosidad ni por prisa -se le deja en paz, y se refuerza lo que ya funciona.",
+      "ideal_tags": ["tradición", "cautela"],
+      "bond_text": "El Templo de la Guarda y el conocimiento de las marcas que heredó de su maestra, generación tras generación sin interrupción.",
+      "bond_strength": 75,
+      "bond_targets": [
+        { "type": "location", "key": "templo_de_la_guarda" },
+        { "type": "faction", "key": "guardia_de_la_piedra" }
+      ],
+      "flaw_text": "No ha considerado en serio que la guarda pasiva, tal como la conoce, nunca fue puesta a prueba contra una perturbación real -toda su confianza descansa en generaciones sin incidentes, no en haber enfrentado uno.",
+      "flaw_tags": ["dogmatismo", "falta_de_precedente"],
+      "flaw_exploit": "señalarle_que_la_guarda_nunca_antes_enfrento_una_perturbacion_real"
+    },
+
+    "disposition": {
+      "affinity": 20,
+      "trust": 20,
+      "respect": 0,
+      "trust_ceiling": 75,
+      "_nota_topes": "Sube con respeto genuino hacia las marcas y disposición a ayudar a renovarlas. Baja si el grupo interviene en el círculo sin su permiso, aunque no cierra el techo -- puede aceptar una intervención cuidadosa si se la explican con respeto por la tradición."
+    },
+
+    "knowledge": [
+      { "fact": "El círculo yermo lleva seis semanas creciendo, algo que no ha ocurrido en generaciones", "learned_at_turn": 0 },
+      { "fact": "Un buscador de reliquias cavó cerca de la base de la Piedra poco antes de que empezara a crecer", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Ondina ya notó que una de las marcas de guarda más antiguas del templo se ha ido borrando sola, sin explicación, desde que el círculo empezó a crecer -no lo ha dicho porque no quiere admitir que la guarda que aprendió de su maestra podría estar fallando de verdad.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si alguna marca ha cambiado o se ha debilitado.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "respeto genuino hacia la tradición y disposición a ayudar sin apresurarse. Indiferente a la urgencia sin paciencia detrás."
+  },
+
+  "baldemar": {
+    "_arquetipo": "Labrador que pierde su sustento cada semana -no busca gloria, busca detener lo que le está tragando la tierra antes de perderlo todo.",
+    "name": "Baldemar Cruz",
+    "species": "humano",
+    "social_role": "labrador con tierras al borde del círculo yermo",
+    "appearance": "Cuarenta y tantos, manos encallecidas de arar, ropa con tierra seca que ya no se quita del todo por más que la lave.",
+    "location": "casa_baldemar",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 40,
+      "candor": 75,
+      "principle": 55,
+      "boldness": 70
+    },
+
+    "traits": ["revisa el borde de sus campos cada mañana para medir cuánto avanzó el círculo", "no espera a que otros decidan por él lo que le afecta directamente", "guarda cada herramienta con el mismo cuidado que guardaba antes su cosecha"],
+    "internal_contradiction": "Defiende actuar directamente sobre la Piedra porque no puede permitirse esperar, y no ha calculado del todo qué pasa si Ondina tiene razón y su propia intervención es justo lo que empeora la maldición.",
+    "taboos": ["dejar un campo sin revisar por la mañana", "pedir ayuda sin ofrecer algo a cambio"],
+    "voice_notes": "Directo, urgente sin llegar a la desesperación abierta. Habla en surcos perdidos y días que le quedan, no en abstracciones.",
+    "stated_desire": "Que alguien detenga el avance del círculo antes de que le trague la casa entera.",
+    "actual_need": "Aceptar que actuar con prisa podría costarle más de lo que ya ha perdido.",
+    "fear": "Quedarse sin tierra que arar y sin nada que ofrecerle a su familia el próximo invierno.",
+
+    "ibf": {
+      "ideal_text": "Esperar a que la tradición funcione, cuando ya no está funcionando, no es paciencia -es dejar que la tierra decida por uno.",
+      "ideal_tags": ["supervivencia", "acción"],
+      "bond_text": "Los campos que su familia ha cultivado durante tres generaciones, cada surco perdido una parte de esa herencia que ya no volverá.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "casa_baldemar" },
+        { "type": "location", "key": "campos_marchitos" }
+      ],
+      "flaw_text": "No ha considerado en serio la posibilidad de que su propia impaciencia, si actúa sin entender antes qué perturbó la Piedra, acelere el avance del círculo en vez de detenerlo.",
+      "flaw_tags": ["impaciencia", "exceso_de_confianza"],
+      "flaw_exploit": "pedirle_que_espere_a_entender_la_causa_antes_de_actuar"
+    },
+
+    "disposition": {
+      "affinity": 30,
+      "trust": 25,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con disposición a actuar de forma concreta contra el avance del círculo. Baja si el grupo respalda esperar sin ofrecerle ningún plan real, aunque no cierra el techo -- puede aceptar la cautela de Ondina si le muestran que funciona."
+    },
+
+    "knowledge": [
+      { "fact": "Ya ha perdido dos surcos completos de cultivo desde que el círculo empezó a crecer, hace seis semanas", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Baldemar ya ha reunido en secreto a un puñado de vecinos dispuestos a acompañarlo a investigar la base de la Piedra directamente, con o sin el permiso de Ondina, si no hay respuesta antes de perder un tercer surco.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ya tiene gente lista para actuar por su cuenta.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "disposición a actuar de forma concreta y sin esperar permiso indefinido. Indiferente a la ceremonia sin resultado detrás."
+  },
+
+  "ivan": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Susa Molledo' y 'Prudencio Aza' en pares anteriores.",
+    "name": "Iván Restrepo",
+    "species": "humano",
+    "social_role": "ordeña las pocas cabras que todavía pastan lejos del círculo yermo",
+    "appearance": "Joven, siempre con un cubo de leche colgado del hombro y las botas cubiertas de barro seco.",
+    "location": "piedra_yerma",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctico. Habla de qué cabra dio menos leche hoy y de cuánto se acerca el círculo a su ruta de pastoreo.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a él por su cuenta en 3+ escenas, o lo nombra sin que el DM lo mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

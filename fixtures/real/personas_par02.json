@@ -1,0 +1,174 @@
+{
+  "_nota": "Par 02 (real) -- corpus real, no piloto. Tres PNJ deliberadamente contrastantes, mismo molde que fixtures/real/personas_par01.json pero contenido original: una calculadora fría, un veterano desafiante, y un PNJ de paso con todo vacío a propósito.",
+
+  "osvina": {
+    "_arquetipo": "Calculadora fría, aritmética como arma. Nunca amenaza directamente.",
+    "name": "Osvina Kell",
+    "species": "humana",
+    "social_role": "administradora de vales de la Casa de Vales para la Compañía del Hierro Gris",
+    "appearance": "Cuarenta y tantos, manos limpias en un pueblo de manos sucias, un abrigo gris impecable que nadie más en el pueblo puede darse el lujo de mantener así.",
+    "location": "casa_vales",
+    "status": "alive",
+
+    "personality": {
+      "warmth": -35,
+      "candor": -75,
+      "principle": -55,
+      "boldness": 25
+    },
+
+    "traits": ["metódica", "cortés hasta la incomodidad", "nunca se equivoca en público"],
+    "internal_contradiction": "Se dice a sí misma que solo administra un sistema que ya estaba roto antes de que ella llegara, y evita pensar en cuánto de ese sistema lo afinó ella misma en ocho años.",
+    "taboos": ["admitir un error de cuenta", "alzar la voz"],
+    "voice_notes": "Habla con la cadencia de quien recita números de memoria. Nunca dice 'no': dice 'el libro no lo permite, por ahora'. Repite las cifras exactas de la deuda de su interlocutor como gesto de control, no de ayuda.",
+    "stated_desire": "Que el libro de vales de la Compañía cuadre sin una sola disputa registrada.",
+    "actual_need": "Que alguien del pueblo la trate como una persona y no como el libro con piernas que todos ven.",
+    "fear": "Que la sede central descubra cuánto decide ella sola sin reportarlo.",
+
+    "ibf": {
+      "ideal_text": "El orden no lo pone quien trabaja más, lo pone quien lleva el libro. Eso ya lo sabía antes de que la Compañía la contratara.",
+      "ideal_tags": ["control", "orden"],
+      "bond_text": "La Casa de Vales es lo único de este pueblo que de verdad le pertenece, aunque sea de la Compañía en el papel.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "casa_vales" },
+        { "type": "faction", "key": "compania_hierro_gris" }
+      ],
+      "flaw_text": "No soporta que la corrijan en público. Una corrección delante de otros la vuelve vengativa incluso si tiene razón quien corrige.",
+      "flaw_tags": ["orgullo"],
+      "flaw_exploit": "corregirla_delante_de_otros"
+    },
+
+    "disposition": {
+      "affinity": -10,
+      "trust": -50,
+      "respect": 0,
+      "trust_ceiling": 25,
+      "_nota_topes": "Asume que todo el mundo calcula tanto como ella. El techo de +25 es estructural: no confía de verdad ni cuando debería."
+    },
+
+    "knowledge": [
+      { "fact": "El libro de vales lleva inflado desde que ella lo reorganizó hace seis años", "learned_at_turn": 0 },
+      { "fact": "Algunos mineros del turno de noche reportan golpes detrás del Pozo Sellado y ella no lo ha reportado a la sede central", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Osvina ordenó ella misma el ajuste del libro para cubrir un déficit de la administración anterior, y ahora depende de que nadie lo demuestre.",
+        "reveal_condition": "Solo si alguien le demuestra con pruebas materiales que ya tiene el respaldo de alguien con autoridad sobre ella, nunca por presión directa del grupo solo.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "poder real y capacidad de dañarla o protegerla. Indiferente a la virtud declarada."
+  },
+
+  "bardo": {
+    "_arquetipo": "Veterano desafiante, autoridad ganada por pérdida compartida.",
+    "name": "Bardo Ossein",
+    "species": "humano",
+    "social_role": "capataz del turno de día del Pozo Mayor",
+    "appearance": "Sesenta y tantos, cicatrices de quemadura por picos en las manos, una voz ronca que corta el ruido de la mina sin necesidad de gritar.",
+    "location": "pozo_mayor",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 55,
+      "candor": 85,
+      "principle": 80,
+      "boldness": 75
+    },
+
+    "traits": ["directo", "protector de los mineros antes que de sí mismo", "memoria larga para las deudas de honor"],
+    "internal_contradiction": "Es el único que se atreve a exigirle cuentas a Osvina en su propia cara, y sabe que esa misma fama es lo único que lo protege -- así que nunca sabe si su valentía es virtud o solo el privilegio de ser demasiado visible para castigar.",
+    "taboos": ["dejar bajar a un minero nuevo sin revisar las vigas", "callarse ante una injusticia delante de testigos"],
+    "voice_notes": "Frases cortas y directas. Dice lo que piensa en el momento, delante de quien sea. Llama 'chico' o 'chica' a todo el mundo. Golpea la pared con la palma cuando algo le indigna de verdad.",
+    "stated_desire": "Que ningún minero nuevo termine enterrado bajo una viga que él pudo haber revisado antes.",
+    "actual_need": "Que alguien más comparta el peso de plantarle cara a Osvina, para no ser siempre el único.",
+    "fear": "Que un día su fama ya no baste para protegerlo y la Compañía decida que el ejemplo vale más que el riesgo.",
+
+    "ibf": {
+      "ideal_text": "Se puede vivir endeudado. No se puede vivir mintiéndole al compañero de turno sobre por qué se calló.",
+      "ideal_tags": ["honestidad", "comunidad"],
+      "bond_text": "Los mineros que perdió en el derrumbe del Pozo Sellado -- lleva sus nombres tallados en la viga de entrada al Pozo Mayor.",
+      "bond_strength": 85,
+      "bond_targets": [
+        { "type": "location", "key": "pozo_sellado" },
+        { "type": "location", "key": "pozo_mayor" }
+      ],
+      "flaw_text": "No sabe callarse ni cuando callarse protegería a otro. Ya perdió a un amigo por decir la verdad en el peor momento posible.",
+      "flaw_tags": ["imprudencia"],
+      "flaw_exploit": "ponerlo_a_elegir_entre_verdad_y_alguien_mas"
+    },
+
+    "disposition": {
+      "affinity": 20,
+      "trust": 15,
+      "respect": 0,
+      "trust_ceiling": 90,
+      "_nota_topes": "Sube rápido con trato honesto y defensa de los mineros. Una traición probada lo manda a -70 y fija el techo permanente en +15. Irreversible."
+    },
+
+    "knowledge": [
+      { "fact": "Osvina ajustó el libro hace seis años, aunque no puede probarlo", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Bardo guarda escondido en su cuarto un registro comparativo de jornales que un antiguo empleado de la Casa de Vales le entregó antes de irse del pueblo -- prueba parcial del ajuste, pero no concluyente por sí sola.",
+        "reveal_condition": "Se lo cuenta a quien ya le haya demostrado con hechos que quiere ayudar de verdad a los mineros, y solo si se lo preguntan directamente.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "conducta honorable y disposición a arriesgarse por otros. Indiferente al dinero y al rango."
+  },
+
+  "yulen": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, igual que 'Mira' en Puerto Salazón.",
+    "name": "Yulen Práx",
+    "species": "humano",
+    "social_role": "reparte agua y pan entre turnos en un carrito fijo cerca del Pozo Mayor",
+    "appearance": "Delantal cubierto de polvo de hierro, siempre con las manos ocupadas.",
+    "location": "pozo_mayor",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctico. Habla de turnos y del clima que hará mañana.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a él por su cuenta en 3+ escenas, o lo nombra sin que el DM lo mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

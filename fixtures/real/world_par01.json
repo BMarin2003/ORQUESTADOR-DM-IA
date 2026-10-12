@@ -1,0 +1,121 @@
+{
+  "campaign": {
+    "note": "Par 04 -- corpus real, no piloto. Ver corpus/real/lore_puerto_salazon.md para la prosa completa.",
+    "world_tone": "grimdark"
+  },
+  "locations": [
+    {
+      "key": "costa_quebrada",
+      "kind": "region",
+      "name": "La Costa Quebrada",
+      "parent": null,
+      "culture_overrides": {
+        "language": "común",
+        "currency": "coronas de plata",
+        "attitude_to_outsiders": "reservado"
+      }
+    },
+    {
+      "key": "puerto_salazon",
+      "kind": "settlement",
+      "name": "Puerto Salazón",
+      "parent": "costa_quebrada",
+      "culture_overrides": {
+        "notable_laws": "toda sal y pescado salado debe pesarse en La Casa de Pesaje antes de venderse",
+        "attitude_to_outsiders": "receloso",
+        "tensions": "el Consorcio de la Sal aprieta el cerco sobre el contrabando de los Muelles Bajos"
+      },
+      "detail": "observed",
+      "description_canonical": "Tejados de pizarra gris y redes tendidas entre postes como telarañas. Huele a sal hirviendo y a pescado. El vaho de las salinas nunca termina de disiparse."
+    },
+    {
+      "key": "muelles_bajos",
+      "kind": "district",
+      "name": "Los Muelles Bajos",
+      "parent": "puerto_salazon",
+      "culture_overrides": {
+        "tensions": "las familias que pescan sin pasar por la romana viven con miedo a la próxima redada"
+      },
+      "detail": "observed",
+      "description_canonical": "Canales estrechos que la marea baja descubre solo unas horas al día. Barcas pequeñas, remendadas, escondidas bajo lonas viejas."
+    },
+    {
+      "key": "casa_pesaje",
+      "kind": "building",
+      "name": "La Casa de Pesaje",
+      "parent": "puerto_salazon",
+      "detail": "sketch",
+      "sketch_text": "Un edificio de piedra gris con una romana de bronce al centro y el sello de plomo del Consorcio sobre la puerta."
+    },
+    {
+      "key": "ancla_rota",
+      "kind": "building",
+      "name": "Taberna del Ancla Rota",
+      "parent": "puerto_salazon",
+      "detail": "observed",
+      "description_canonical": "Techo bajo ennegrecido por el humo, mesas de madera de barco reciclada, un ancla partida clavada sobre la barra."
+    },
+    {
+      "key": "faro_apagado",
+      "kind": "ruin",
+      "name": "El Faro Apagado",
+      "parent": "costa_quebrada",
+      "detail": "sketch",
+      "sketch_text": "Una torre de piedra blanca, ennegrecida a franjas por el óxido de la lámpara que ya no se enciende, en la punta más lejana de la cala.",
+      "visibility": "dm_only"
+    }
+  ],
+  "factions": [
+    {
+      "key": "consorcio_sal",
+      "name": "El Consorcio de la Sal",
+      "description": "Compañía forastera con la concesión exclusiva de pesaje y las rutas de carro tierra adentro desde hace once años. No tiene presencia local salvo la encargada de La Casa de Pesaje.",
+      "seat": "casa_pesaje",
+      "stance_party": 0,
+      "knows_about_party": false
+    }
+  ],
+  "clocks": [
+    {
+      "faction": "consorcio_sal",
+      "agenda": "Cerrar el contrabando de sal y pescado no declarado en los Muelles Bajos",
+      "progress": 4,
+      "threshold": 10,
+      "rate_per_game_day": 0.4,
+      "on_fire_event": {
+        "headline": "El Consorcio confisca las redes de los pescadores independientes al amanecer",
+        "scope": "muelles_bajos",
+        "consequence": "Tres familias pierden su sustento de la noche a la mañana y culpan al grupo por no haber avisado a tiempo."
+      }
+    }
+  ],
+  "quests": [
+    {
+      "key": "romana_trucada",
+      "title": "La romana que no pesa igual para todos",
+      "description": "Alguien ha trucado el fiel de la balanza de La Casa de Pesaje para descontar de más a los pescadores independientes.",
+      "status": "active",
+      "next_step_known": true,
+      "completion_condition": "El grupo entrega a alguien con autoridad real pruebas materiales del trucaje de la romana (el mecanismo, un testigo del taller, o un registro comparativo de pesos)."
+    },
+    {
+      "key": "faro",
+      "title": "Lo que aún enciende el Faro Apagado",
+      "description": "El faro abandonado hace seis años sigue encendiéndose algunas noches de niebla, y nadie del pueblo admite saber por qué.",
+      "status": "unknown",
+      "next_step_known": false,
+      "visibility": "dm_only",
+      "completion_condition": "El grupo descubre y reporta quién enciende el faro y con qué propósito."
+    }
+  ],
+  "characters": [
+    {
+      "key": "pj_pj10",
+      "name": "Bexa",
+      "species": null,
+      "class": "explorador 3",
+      "hp": 28,
+      "hp_max": 28
+    }
+  ]
+}

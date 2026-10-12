@@ -1,0 +1,174 @@
+{
+  "_nota": "Par 22 (real) -- corpus real, no piloto. Dos PNJ centrales, posturas igual de defendibles (renegociar un pacto heredado vs. romperlo del todo) en un gótico de tono oscuro, sin villano de cálculo trivial. Un PNJ de paso con todo vacío a propósito.",
+
+  "casimira": {
+    "_arquetipo": "Matriarca que renegocia el pacto -no por avaricia, sino porque cree que romperlo hundiría a todos los que dependen de la casa.",
+    "name": "Casimira Ortigal",
+    "species": "humana",
+    "social_role": "matriarca de la Casa Ortigal y administradora de la finca",
+    "appearance": "Setenta años, vestido negro de cuello alto, manos largas y frías con un solo anillo y una espalda que no se ha inclinado nunca.",
+    "location": "salon_de_los_retratos",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 15,
+      "candor": 40,
+      "principle": 55,
+      "boldness": 60
+    },
+
+    "traits": ["nunca se sienta antes que su invitado", "lleva las cuentas de la casa de memoria", "no mira los retratos, pero sabe si alguno ha cambiado"],
+    "internal_contradiction": "Defiende renegociar para proteger a quienes viven de la casa y, en el fondo, sabe mejor que nadie lo que costó el último vencimiento, y no sabe si de verdad quiere salvar a los demás o solo librarse de repetirlo.",
+    "taboos": ["hablar del último vencimiento delante de la servidumbre", "admitir que no sabe qué es la Acreedora"],
+    "voice_notes": "Fría, correcta y precisa; jamás alza la voz. Habla de la deuda como de un asunto administrativo, y solo se le quiebra la voz cuando alguien nombra a su hijo.",
+    "stated_desire": "Que el brujo consiga renegociar los términos del vencimiento y que la casa siga en pie.",
+    "actual_need": "Aceptar que la casa no puede seguir pagando con vidas ajenas y que salvarla, tal como está, significa condenar a alguien más.",
+    "fear": "Repetir lo que hizo hace cuarenta años y descubrir que esta vez ya no tiene fuerzas para hacerlo.",
+
+    "ibf": {
+      "ideal_text": "Una casa que se sostiene trescientos años es una obligación con los vivos y con los muertos; romperla por conciencia es una forma cara de egoísmo.",
+      "ideal_tags": ["deber", "linaje"],
+      "bond_text": "La Casa Ortigal, cada piedra y cada libro de cuentas, y los que viven de ella.",
+      "bond_strength": 80,
+      "bond_targets": [
+        { "type": "location", "key": "salon_de_los_retratos" },
+        { "type": "faction", "key": "casa_ortigal" }
+      ],
+      "flaw_text": "Trata todo como una negociación con un acreedor razonable y no admite que quizá la Acreedora no sea razonable ni acreedora.",
+      "flaw_tags": ["orgullo", "cegera"],
+      "flaw_exploit": "mostrarle_pruebas_de_que_la_acreedora_no_negocia_con_los_terminos_que_ella_imagina"
+    },
+
+    "disposition": {
+      "affinity": 10,
+      "trust": 10,
+      "respect": 0,
+      "trust_ceiling": 70,
+      "_nota_topes": "Sube con quien demuestra discreción y respeto por la casa. Baja con quien juzga a la familia en voz alta, aunque no cierra el techo -- puede reconsiderar si se le da una alternativa que la casa pueda sostener."
+    },
+
+    "knowledge": [
+      { "fact": "El vencimiento cae en la primera noche de helada plena, dentro de sesenta y pocos días", "learned_at_turn": 0 },
+      { "fact": "Ha hecho venir al brujo para que hable por la casa con la Acreedora", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "En el último vencimiento, hace cuarenta años, Casimira eligió pagar con su propio marido, sin decírselo a él ni a nadie; la familia cree que murió de fiebre, y ella no ha vuelto a pronunciar su nombre.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente cómo murió su marido, o cómo se eligió al último pagado.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "discreción, seriedad y respeto por el peso de la casa. Indiferente a la compasión que no venga con una propuesta viable."
+  },
+
+  "lazaro": {
+    "_arquetipo": "Heredero que quiere romper el pacto -no por rebeldía, sino porque ha empezado a ver a las personas de la casa como personas.",
+    "name": "Lázaro Ortigal",
+    "species": "humano",
+    "social_role": "nieto y heredero de la Casa Ortigal",
+    "appearance": "Veinticuatro años, delgado, ojeras de dormir mal, camisa sin planchar y unas manos que no saben qué hacer cuando no sostienen un libro.",
+    "location": "cocinas_de_la_casa",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 60,
+      "candor": 75,
+      "principle": 75,
+      "boldness": 55
+    },
+
+    "traits": ["baja a las cocinas a hablar con la servidumbre más de lo que le conviene", "lee de noche los libros de cuentas en la sala de los pagarés", "no soporta que se hable de «la deuda» sin decir a quién se le debe"],
+    "internal_contradiction": "Exige romper el pacto en nombre de la servidumbre y, en el fondo, sabe que romperlo dejaría a esas mismas personas sin sustento, sin casa y sin protección frente a lo que la Acreedora pueda hacer.",
+    "taboos": ["que se elija a alguien de la servidumbre para pagar", "mentir a quienes ha jurado proteger"],
+    "voice_notes": "Franco y acelerado, con la urgencia de quien no ha dormido. Cuando se emociona, habla de las personas por su nombre, una a una.",
+    "stated_desire": "Que el pacto se rompa antes del vencimiento, cueste lo que cueste a la fortuna de la casa.",
+    "actual_need": "Aprender que romper una cadena no es lo mismo que liberar a quien la lleva, y que la valentía también consiste en hacerse cargo de las consecuencias.",
+    "fear": "Ser el heredero que, por escrúpulos, condene a más gente que su abuela con todos sus cálculos.",
+
+    "ibf": {
+      "ideal_text": "Ninguna fortuna vale una vida, y una casa que solo se sostiene cobrándolas ya está muerta aunque siga en pie.",
+      "ideal_tags": ["conciencia", "justicia"],
+      "bond_text": "La servidumbre de la finca, a la que ha conocido desde niño y de la que, en el fondo, se siente más parte que de su propia familia.",
+      "bond_strength": 75,
+      "bond_targets": [
+        { "type": "location", "key": "cocinas_de_la_casa" },
+        { "type": "faction", "key": "servidumbre_ligada" }
+      ],
+      "flaw_text": "Tiene claro el ideal y muy poco plan: actúa con la razón moral de su lado y sin calcular qué pasa después de romper el pacto.",
+      "flaw_tags": ["idealismo", "imprevision"],
+      "flaw_exploit": "ayudarle_a_dibujar_un_plan_realista_para_despues_de_romper_el_pacto"
+    },
+
+    "disposition": {
+      "affinity": 25,
+      "trust": 20,
+      "respect": 0,
+      "trust_ceiling": 85,
+      "_nota_topes": "Sube con quien trata a la servidumbre como personas y habla sin rodeos. Baja con quien propone sacrificar a alguien por el bien de la casa, aunque no cierra el techo -- puede aceptar una alternativa si demuestra que cuesta menos vidas."
+    },
+
+    "knowledge": [
+      { "fact": "Los libros de la Sala de los Pagarés registran una vida pagada por cada generación", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Lázaro ha dejado cada mañana un ramo de juncos frescos en la puerta de la capilla anegada: encontró el diario del fundador y sabe que Aurelia Ortigal está atrapada en la marisma como voz de la Acreedora, y espera poder liberarla si rompe el pacto.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente quién deja los juncos en la capilla.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "compasión concreta hacia la servidumbre y disposición a hacerse cargo de las consecuencias. Indiferente al cálculo frío y al linaje por sí mismo."
+  },
+
+  "ezequiel": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Nieves Botel' y 'Tomás Rojas' en pares anteriores.",
+    "name": "Ezequiel Umbría",
+    "species": "humano",
+    "social_role": "mayordomo de la Casa Ortigal, lleva las llaves y abre las puertas",
+    "appearance": "Alto y seco, guantes blancos ya grises, llavero de hierro al cinto y un paso tan silencioso que se le oye llegar solo por la niebla.",
+    "location": "finca_ortigal",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctico. Habla de qué puerta abre qué llave y de a qué hora se sirve cada cosa.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a él por su cuenta en 3+ escenas, o lo nombra sin que el DM lo mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

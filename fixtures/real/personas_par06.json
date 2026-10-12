@@ -1,0 +1,173 @@
+{
+  "_nota": "Par 06 (real) -- corpus real, no piloto. Tres PNJ, mismo molde que pares anteriores: dos centrales con IBF completo en posturas igual de defendibles, y un PNJ de paso con todo vacío a propósito. Repite tono grimdark (Par01/02) pero con estructura nueva -escasez de recursos sin villano, en vez de extracción monopólica- así que ninguno de los dos centrales es un villano de cálculo: son dos vecinos con lecturas distintas de la misma crisis real.",
+
+  "osana": {
+    "_arquetipo": "Guardiana agotada del racionamiento parejo -no es ingenua, es la que menos margen tiene para equivocarse.",
+    "name": "Osana Ferreira",
+    "species": "humana",
+    "social_role": "mayor del pueblo, guardiana del pozo comunal desde hace treinta años",
+    "appearance": "Setenta y tantos, manos agrietadas de treinta años sacando agua, camina apoyada en un bastón que usa tanto para andar como para señalar la tabla de racionamiento.",
+    "location": "choza_osana",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 50,
+      "candor": 70,
+      "principle": 85,
+      "boldness": 35
+    },
+
+    "traits": ["revisa la tabla de racionamiento cada semana sin faltar una", "conoce el nombre de cada casa y cuánta agua le toca", "no eleva la voz ni cuando debería"],
+    "internal_contradiction": "Sostiene el racionamiento parejo como lo único justo que le queda por ofrecer, y en privado ya no está segura de que 'parejo' siga significando algo cuando lo que hay ya no alcanza ni repartido con exactitud.",
+    "taboos": ["saltarse una revisión semanal de la tabla, aunque el resultado sea peor cada vez", "dar más ración a una casa por amistad o parentesco"],
+    "voice_notes": "Lenta, cansada, pero firme -repite las cifras de la ración como quien reza. Llama a la gente por el nombre de su casa, no por el propio.",
+    "stated_desire": "Que nadie en Poza Seca se quede sin nada mientras el manantial siga dando algo.",
+    "actual_need": "Aceptar ayuda de verdad para encontrar más agua, en vez de seguir repartiendo cada vez menos de lo mismo.",
+    "fear": "Que llegue una semana en que repartir parejo signifique repartir cero para todos por igual.",
+
+    "ibf": {
+      "ideal_text": "Una ración desigual, aunque salve a más gente al principio, es el primer paso para que Poza Seca deje de ser un pueblo y se vuelva un puñado de casas que se cuidan solas.",
+      "ideal_tags": ["justicia", "comunidad"],
+      "bond_text": "Treinta años de tablas de racionamiento, cada una clavada en la pared de su choza, que Osana revisa como si fueran la memoria del pueblo entero.",
+      "bond_strength": 75,
+      "bond_targets": [
+        { "type": "location", "key": "pozo_comunal" },
+        { "type": "faction", "key": "consejo_poza" }
+      ],
+      "flaw_text": "No se le ha ocurrido, en treinta años administrando lo que hay, ir a buscar más agua en vez de repartir mejor lo poco que queda -su experiencia es de gestionar escasez, no de resolverla.",
+      "flaw_tags": ["resignación", "falta_de_iniciativa"],
+      "flaw_exploit": "proponerle_explorar_la_veta_subterranea_en_vez_de_seguir_racionando"
+    },
+
+    "disposition": {
+      "affinity": 20,
+      "trust": 25,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con respeto al racionamiento parejo y disposición a ayudar sin pedir nada a cambio. Baja si el grupo respalda abiertamente a Bregas, aunque no cierra el techo -puede reconocer que a Osana se le acabaron las ideas."
+    },
+
+    "knowledge": [
+      { "fact": "El manantial lleva dos temporadas dando menos agua, y esta temporada puede dejar de dar del todo", "learned_at_turn": 0 },
+      { "fact": "Bregas y los suyos han empezado a reservar agua y grano para sí mismos, cada vez más a la vista de todos", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Osana ya sabe que la ración de esta semana es la más baja que ha dado en treinta años, y no se lo ha dicho todavía al pueblo -piensa anunciarlo en la próxima revisión, y teme que sea el empujón final para que más gente se pase al reparto de Bregas.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente cómo viene la ración de esta semana, antes del anuncio público.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "constancia y disposición a ayudar sin esperar nada a cambio. Indiferente a la fuerza o a los gestos grandes."
+  },
+
+  "bregas": {
+    "_arquetipo": "Contrapeso moral duro pero no caricaturesco -convencido de que salvar a todos por igual termina en que no se salve nadie.",
+    "name": "Bregas Coll",
+    "species": "humano",
+    "social_role": "cabeza de una de las casas más fuertes de Poza Seca",
+    "appearance": "Cincuenta y tantos, corpulento incluso con la ración reducida, mira a quien le habla sin apartar los ojos, como calculando algo todo el tiempo.",
+    "location": "casa_bregas",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 15,
+      "candor": 60,
+      "principle": 30,
+      "boldness": 80
+    },
+
+    "traits": ["no esconde que está reservando para los suyos", "calcula cada decisión en términos de quién sobrevive", "respeta la fuerza más que el argumento"],
+    "internal_contradiction": "Se presenta como el único lo bastante realista para prepararse de verdad, y en privado no está seguro de que 'los suyos' sean suficiente -sabe que un pueblo fracturado es más débil frente a lo que venga después, aunque no lo admita en voz alta.",
+    "taboos": ["compartir la reserva de su casa fuera de su círculo cercano", "dejar que alguien de fuera de su casa vea cuánto tiene guardado"],
+    "voice_notes": "Directo, sin adornos, habla de números -cuánta agua, cuántas bocas, cuántos días. No pide perdón por lo que hace.",
+    "stated_desire": "Que su casa y sus aliados sobrevivan a esta sequía, pase lo que pase con el resto del pueblo.",
+    "actual_need": "Que alguien le demuestre, con hechos y no con reproches, que hay una alternativa real a elegir entre 'los suyos' y 'todos'.",
+    "fear": "Que el pueblo entero colapse de todas formas, y que lo que reservó no haya servido de nada salvo para acelerar esa caída.",
+
+    "ibf": {
+      "ideal_text": "Repartir parejo entre todos hasta que no quede nada para nadie no es justicia, es rendirse despacio.",
+      "ideal_tags": ["supervivencia", "pragmatismo"],
+      "bond_text": "Su casa y el puñado de aliados que ha reunido, a quienes considera su responsabilidad directa antes que la del pueblo entero.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "casa_bregas" }
+      ],
+      "flaw_text": "No ha calculado -o no ha querido calcular- qué pasa con su casa si el resto del pueblo colapsa alrededor y deja de haber nadie con quien comerciar, defenderse o reconstruir después.",
+      "flaw_tags": ["cortoplacismo", "aislamiento"],
+      "flaw_exploit": "preguntarle_directamente_que_pasa_con_su_casa_si_el_resto_del_pueblo_colapsa"
+    },
+
+    "disposition": {
+      "affinity": 5,
+      "trust": 10,
+      "respect": 0,
+      "trust_ceiling": 70,
+      "_nota_topes": "Sube con resultados concretos y disposición a actuar sin pedir permiso. Baja si el grupo lo trata con moralina sin ofrecer alternativa real, aunque no cierra el techo -responde a hechos, no a reproches."
+    },
+
+    "knowledge": [
+      { "fact": "El manantial sigue bajando semana a semana, y a este ritmo ni su propia reserva va a durar toda la temporada", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Bregas ya fijó, en privado con sus aliados más cercanos, una fecha para tomar el pozo comunal si el racionamiento de Osana no mejora -no se lo ha dicho al resto del pueblo porque prefiere que parezca una decisión de último momento, no algo planeado con semanas de anticipación.",
+        "reveal_condition": "Solo si alguien de confianza demostrada -o con quien ya negocia- le pregunta directamente qué piensa hacer si la ración de Osana sigue bajando, o si el grupo lo sorprende reuniéndose con sus aliados.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "resultados concretos y disposición a actuar. Indiferente a la autoridad moral sin nada detrás."
+  },
+
+  "nando": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, igual que 'Nilo' en Vado Cabrero, 'Alba' en Caleta Lumbre, 'Petra' en Vega del Yelmo, 'Yulen' en Alto Ferrena y 'Mira' en Puerto Salazón.",
+    "name": "Nando Prieto",
+    "species": "humano",
+    "social_role": "aprendiz de pocero, ayuda a mantener el pozo comunal y las canaletas de riego",
+    "appearance": "Delgado, manos jóvenes ya encallecidas, siempre con una cuerda y un cubo colgados al hombro.",
+    "location": "pozo_comunal",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctico. Habla del nivel del pozo y de qué canaleta hay que limpiar hoy.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a él por su cuenta en 3+ escenas, o lo nombra sin que el DM lo mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

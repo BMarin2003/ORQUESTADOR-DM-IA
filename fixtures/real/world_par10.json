@@ -1,0 +1,143 @@
+{
+  "campaign": {
+    "note": "Par 10 (real) -- corpus real, no piloto. Ver corpus/real/lore_puente_roto.md para la prosa completa.",
+    "world_tone": "mixed"
+  },
+  "locations": [
+    {
+      "key": "rio_quebranto",
+      "kind": "region",
+      "name": "El Río Quebranto",
+      "parent": null,
+      "culture_overrides": {
+        "language": "común",
+        "currency": "moneda acuñada y grano, según quien pague",
+        "attitude_to_outsiders": "dividido -entre la generosidad cansada y el miedo a no alcanzar"
+      }
+    },
+    {
+      "key": "puente_roto",
+      "kind": "settlement",
+      "name": "Puente Roto",
+      "parent": "rio_quebranto",
+      "culture_overrides": {
+        "notable_laws": "el reparto de grano comunal lo administra el consejo del granero",
+        "attitude_to_outsiders": "dividido -entre la generosidad cansada y el miedo a no alcanzar",
+        "tensions": "el pueblo discute cada semana cuánto grano debe salir hacia el campamento del Paso"
+      },
+      "detail": "observed",
+      "description_canonical": "Casas de piedra junto al puente derribado a medias, un vado más abajo por donde cruza el tráfico de carga, y un campamento de tiendas y toldos que crece cada semana en las afueras."
+    },
+    {
+      "key": "consejo_del_puente",
+      "kind": "building",
+      "name": "El Consejo del Puente",
+      "parent": "puente_roto",
+      "detail": "observed",
+      "description_canonical": "La sede del granero comunal, con un libro de cuentas donde Cebrián anota cada saco repartido y a quién, y un mapa del pueblo clavado en la pared con el campamento marcado a lápiz, todavía sin nombre oficial."
+    },
+    {
+      "key": "campamento_del_paso",
+      "kind": "settlement",
+      "name": "El Campamento del Paso",
+      "parent": "puente_roto",
+      "detail": "observed",
+      "description_canonical": "Tiendas y toldos improvisados a las afueras del pueblo, turnos de guardia organizados por Yara, y hogueras compartidas entre familias que hace tres meses no se conocían."
+    },
+    {
+      "key": "granero_comunal",
+      "kind": "building",
+      "name": "El Granero Comunal",
+      "parent": "puente_roto",
+      "detail": "sketch",
+      "sketch_text": "Sacos de grano contados y recontados cada semana, cada vez con más marcas de tiza en la pared llevando la cuenta de cuánto queda para el invierno."
+    },
+    {
+      "key": "vado_de_carga",
+      "kind": "building",
+      "name": "El Vado de Carga",
+      "parent": "rio_quebranto",
+      "detail": "sketch",
+      "sketch_text": "El paso más lento pero seguro para carros, donde se cobra peaje a quien cruza con mercancía -y donde Coral lleva la cuenta de las familias que cruzan cada día."
+    },
+    {
+      "key": "paso_alto",
+      "kind": "region",
+      "name": "El Paso Alto",
+      "parent": null,
+      "detail": "sketch",
+      "sketch_text": "El único camino más allá de Puente Roto, cerrado por nieve temprana desde hace semanas -nadie sabe con certeza cuándo volverá a abrir.",
+      "visibility": "dm_only"
+    },
+    {
+      "key": "tierras_de_origen",
+      "kind": "region",
+      "name": "Lo que dejaron atrás",
+      "parent": null,
+      "detail": "sketch",
+      "sketch_text": "Lo que sea que empujó al campamento a cruzar las montañas en pleno otoño -ningún relato confirmado ha llegado todavía a Puente Roto de primera mano.",
+      "visibility": "dm_only"
+    }
+  ],
+  "factions": [
+    {
+      "key": "consejo_puente_roto",
+      "name": "El Consejo del Granero",
+      "description": "El consejo de vecinos que administra el reparto de grano comunal, cada vez más dividido sobre cuánto debe llegar al campamento antes de que las reservas del pueblo no alcancen para nadie.",
+      "seat": "consejo_del_puente",
+      "stance_party": 0,
+      "knows_about_party": false
+    },
+    {
+      "key": "gente_del_campamento",
+      "name": "La Gente del Campamento del Paso",
+      "description": "Las familias desplazadas que Yara Sorem ha organizado en turnos de guardia y reparto justo, varadas en Puente Roto hasta que el Paso Alto vuelva a abrir.",
+      "seat": "campamento_del_paso",
+      "stance_party": 0,
+      "knows_about_party": false
+    }
+  ],
+  "clocks": [
+    {
+      "faction": "consejo_puente_roto",
+      "agenda": "El consejo se acerca a la votación que decidirá si limita el reparto de grano a quien no sea del pueblo, antes de que el invierno reduzca aún más las reservas",
+      "progress": 3,
+      "threshold": 10,
+      "rate_per_game_day": 0.8,
+      "on_fire_event": {
+        "headline": "El consejo vota limitar el reparto de grano al campamento del Paso",
+        "scope": "puente_roto",
+        "consequence": "El campamento pierde de golpe su principal fuente de grano estable, y Yara tiene que decidir entre pedir ayuda directa al pueblo casa por casa o preparar a su gente para una escasez mucho más dura de la que ya viven."
+      }
+    }
+  ],
+  "quests": [
+    {
+      "key": "el_reparto_que_no_alcanza",
+      "title": "El reparto que no alcanza",
+      "description": "El grano comunal de Puente Roto no alcanza igual desde que llegó el campamento del Paso, y el consejo se acerca a una votación que puede dejarlos sin nada antes del invierno.",
+      "status": "active",
+      "next_step_known": true,
+      "completion_condition": "El grupo actúa de forma que cambia visiblemente el reparto (encontrando más grano, mediando entre Cebrián y Yara, o de otra forma que surja en juego) antes de que el reloj de la votación se dispare."
+    },
+    {
+      "key": "la_tierra_que_dejaron",
+      "title": "La tierra que dejaron",
+      "description": "Nadie en Puente Roto tiene todavía un relato confirmado de primera mano de qué empujó al campamento a cruzar las montañas en pleno otoño.",
+      "status": "unknown",
+      "next_step_known": false,
+      "visibility": "dm_only",
+      "completion_condition": "El grupo se gana la confianza de la gente del campamento y descubre qué pasó realmente al otro lado de las montañas."
+    }
+  ],
+  "characters": [
+    {
+      "key": "pj_pj24",
+      "name": "Isolde",
+      "species": null,
+      "class": "explorador 3",
+      "hp": 25,
+      "hp_max": 25
+    }
+  ]
+}

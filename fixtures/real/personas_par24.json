@@ -1,0 +1,174 @@
+{
+  "_nota": "Par 24 (real) -- corpus real, no piloto. Dos PNJ centrales, posturas igual de defendibles (robar la Diadema para devolverla vs. proteger el museo y atrapar a los ladrones) en un atraco de comedia con dos equipos planeando a la vez. Un PNJ de paso con todo vacío a propósito.",
+
+  "marga": {
+    "_arquetipo": "Cabecilla de ladrones con código -no roba por codicia, sino porque cree que devolver lo robado es un deber que ningún juez va a cumplir.",
+    "name": "Marga Zancada",
+    "species": "humana",
+    "social_role": "cabecilla de la Cuadrilla del Gato Cojo",
+    "appearance": "Cuarenta y cinco años, abrigo largo lleno de bolsillos, sombrero ladeado y una sonrisa de quien siempre tiene un segundo plan.",
+    "location": "taberna_del_gato_cojo",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 60,
+      "candor": 30,
+      "principle": 20,
+      "boldness": 85
+    },
+
+    "traits": ["avisa por adelantado de cada golpe, «por cortesía profesional»", "lleva la cuenta de cada objeto que devolvió a su dueño en un cuaderno con tapas de cuero", "nunca roba a quien no puede permitírselo"],
+    "internal_contradiction": "Se presenta como una ladrona con principios que devuelve lo robado y, en el fondo, disfruta tanto del golpe en sí que ya no sabe si lo hace por justicia o por el gusto de que le salga.",
+    "taboos": ["que se hiera a un inocente durante un golpe", "que la llamen «vulgar»"],
+    "voice_notes": "Simpática y teatral, con mucha ironía y un cariño real por sus rivales. Habla de los golpes como de obras de teatro y de los guardias como de colegas.",
+    "stated_desire": "Llevarse la Diadema de la Reina Perdida durante la Feria y devolverla al pueblo que la reclama.",
+    "actual_need": "Reconocer que hacer lo correcto y hacer algo emocionante no siempre es lo mismo, y elegir cuál importa más.",
+    "fear": "Que la Cuadrilla se acabe y que ella sea la última ladrona de Pilfera, recordada solo como pieza de museo.",
+
+    "ibf": {
+      "ideal_text": "Nadie debería vivir del botín ajeno; lo que se roba a una víctima, se le devuelve, y si no se puede, se le da a quien más lo necesite.",
+      "ideal_tags": ["justicia", "picardia"],
+      "bond_text": "La Cuadrilla del Gato Cojo, sus tres compañeros y el gato con la pata vendada que duerme sobre los planos.",
+      "bond_strength": 75,
+      "bond_targets": [
+        { "type": "location", "key": "taberna_del_gato_cojo" },
+        { "type": "faction", "key": "cuadrilla_del_gato_cojo" }
+      ],
+      "flaw_text": "Confía demasiado en su propio plan y le cuesta improvisar cuando algo sale distinto, sobre todo si el imprevisto viene de alguien a quien respeta.",
+      "flaw_tags": ["vanidad", "exceso_de_confianza"],
+      "flaw_exploit": "ofrecerle_un_plan_alternativo_mas_elegante_que_el_suyo_para_que_lo_adopte_como_propio"
+    },
+
+    "disposition": {
+      "affinity": 30,
+      "trust": 20,
+      "respect": 0,
+      "trust_ceiling": 85,
+      "_nota_topes": "Sube con quien admira un buen plan y juega limpio con la Cuadrilla. Baja con quien delata a los suyos o roba por avaricia, aunque no cierra el techo -- puede confiar en quien demuestre oficio."
+    },
+
+    "knowledge": [
+      { "fact": "La Diadema de la Reina Perdida se exhibe bajo campana con dos guardias de turno", "learned_at_turn": 0 },
+      { "fact": "La Feria de las Cerraduras arranca dentro de nueve días y el museo abre día y noche", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Uno de los cuatro miembros de la Cuadrilla es Nico Cerrojo, de diecinueve años, nieto del capitán de la Vigilancia; Ubaldo no lo sabe y Marga lo protege como a un hijo.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente quiénes forman exactamente la Cuadrilla, o si Nico es descubierto.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "ingenio, oficio y palabra cumplida entre profesionales. Indiferente a la fuerza bruta y a las prisas."
+  },
+
+  "ubaldo": {
+    "_arquetipo": "Capitán de la Vigilancia que protege el museo -no por ambición, sino porque cree que la memoria de la ciudad no puede ser el botín de quien tenga mejores ganzúas.",
+    "name": "Ubaldo Cerrojo",
+    "species": "humano",
+    "social_role": "capitán de la Vigilancia de Pilfera",
+    "appearance": "Cincuenta y cinco años, bigote engominado, uniforme con demasiadas medallas y un llavero enorme que hace ruido a cada paso.",
+    "location": "cuartel_de_la_vigilancia",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 45,
+      "candor": 55,
+      "principle": 70,
+      "boldness": 60
+    },
+
+    "traits": ["actualiza cada mañana la pizarra de «días sin robos con éxito»", "conoce los planos del museo mejor que los del cuartel", "anticipa los golpes de Marga y siempre llega justo un minuto tarde"],
+    "internal_contradiction": "Defiende que el museo es intocable en nombre del orden y, en el fondo, sabe desde hace un año algo sobre la Diadema que preferiría no saber, y lo guarda como guarda todo lo que puede arruinarle el historial.",
+    "taboos": ["que se le acuse de haber dejado escapar a Marga por simpatía", "borrar un día de la pizarra"],
+    "voice_notes": "Solemne y algo ampuloso, con un humor involuntario. Habla de los ladrones con un respeto casi afectuoso y de la ley con mayúsculas.",
+    "stated_desire": "Atrapar a la Cuadrilla en el acto y mantener intacta la marca de veinte años sin un solo robo con éxito.",
+    "actual_need": "Aceptar que el orden que defiende también puede esconder cosas, y que su historial vale menos que la verdad.",
+    "fear": "Que el primer robo con éxito de Pilfera ocurra en su turno, y que el museo lo recuerde para siempre en una vitrina.",
+
+    "ibf": {
+      "ideal_text": "La ley se cumple aunque quien la rompa tenga buenas razones; si no, cualquiera con buenas razones puede romperla.",
+      "ideal_tags": ["ley", "orgullo"],
+      "bond_text": "La Vigilancia de Pilfera, los guardias que ha formado y la pizarra de días sin robos.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "museo_de_cosas_robadas" },
+        { "type": "faction", "key": "vigilancia_de_pilfera" }
+      ],
+      "flaw_text": "Le puede su récord: prefiere evitar un robo que descubrir la verdad, y esa preferencia lo hace previsible para quien lo conoce bien.",
+      "flaw_tags": ["orgullo", "previsibilidad"],
+      "flaw_exploit": "hacerle_ver_que_atrapar_a_la_cuadrilla_sin_descubrir_la_verdad_tambien_deja_una_mancha_en_su_historial"
+    },
+
+    "disposition": {
+      "affinity": 20,
+      "trust": 15,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con quien colabora con la Vigilancia y respeta el museo. Baja con quien parece favorecer a la Cuadrilla, aunque no cierra el techo -- puede aliarse con quien le ayude a mantener la marca."
+    },
+
+    "knowledge": [
+      { "fact": "La Cuadrilla del Gato Cojo ha anunciado el golpe con anticipación de cortesía", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Hace un año, Ubaldo bajó al taller de réplicas y descubrió que el molde de la Diadema estaba vacío y que la pieza de la vitrina es una copia; se lo calló a todos porque admitirlo destruiría su récord y al museo con él, y desde entonces guarda la Diadema falsa como si fuera la de verdad.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ha examinado la Diadema de cerca o si ha bajado alguna vez al taller de réplicas.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "cumplimiento de la ley, disciplina y respeto por el museo. Indiferente a los alardes de ingenio sin nada que proteger."
+  },
+
+  "fermin": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Nieves Botel' y 'Ezequiel Umbría' en pares anteriores.",
+    "name": "Fermín Llavín",
+    "species": "humano",
+    "social_role": "vende llaves en un puesto ambulante de la Plaza de las Cerraduras",
+    "appearance": "Bajito y regordete, chaleco lleno de llaves que tintinean, gafas de aumento colgadas del cuello y un bigote que se mueve cuando calcula precios.",
+    "location": "plaza_de_las_cerraduras",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctico. Habla de qué cerradura vende más en Feria y de cuánto cuesta cada llave.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a él por su cuenta en 3+ escenas, o lo nombra sin que el DM lo mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

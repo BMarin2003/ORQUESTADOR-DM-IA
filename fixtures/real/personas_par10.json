@@ -1,0 +1,174 @@
+{
+  "_nota": "Par 10 (real) -- corpus real, no piloto. Dos PNJ centrales, posturas igual de defendibles (reparto limitado vs. reparto igualitario) frente a una escasez real agravada por desplazamiento externo, sin villano. Un PNJ de paso con todo vacío a propósito.",
+
+  "cebrian": {
+    "_arquetipo": "Administrador honesto que hace cuentas que no le salen, y teme que la generosidad sin límite hunda a todos por igual.",
+    "name": "Cebrián Poyo",
+    "species": "humano",
+    "social_role": "administrador del granero comunal de Puente Roto desde hace quince años",
+    "appearance": "Cincuenta y tantos, dedos manchados de tiza de tanto marcar cuentas en la pared, siempre con el libro de reparto bajo el brazo.",
+    "location": "consejo_del_puente",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 35,
+      "candor": 70,
+      "principle": 65,
+      "boldness": 40
+    },
+
+    "traits": ["recuenta los sacos de grano cada semana sin faltar una", "prefiere un no claro a una promesa que no puede cumplir", "conoce de memoria cuánto come cada familia del pueblo"],
+    "internal_contradiction": "Defiende el reparto limitado como la única forma de que nadie del pueblo pase hambre, y en privado no soporta la idea de negarle grano a un niño del campamento solo porque nació al otro lado de las montañas.",
+    "taboos": ["prometer grano que las cuentas no respaldan", "repartir por favoritismo en vez de por necesidad real"],
+    "voice_notes": "Metódico, cita números concretos para cada decisión. Se disculpa genuinamente antes de dar una mala noticia, pero la da igual.",
+    "stated_desire": "Que las reservas de grano alcancen hasta la próxima cosecha, sin que nadie del pueblo pase hambre.",
+    "actual_need": "Encontrar una fuente de grano que no dependa de elegir a quién dejar fuera.",
+    "fear": "Tener que decidir algún día, en persona, a qué familia concreta no le toca ración esta semana.",
+
+    "ibf": {
+      "ideal_text": "Prometer más de lo que hay no es generosidad, es dejar que el hambre decida más tarde y peor a quién le toca.",
+      "ideal_tags": ["prudencia", "responsabilidad"],
+      "bond_text": "El granero comunal que administra desde hace quince años, y cada familia del pueblo cuyo consumo lleva anotado de memoria.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "granero_comunal" },
+        { "type": "faction", "key": "consejo_puente_roto" }
+      ],
+      "flaw_text": "No ha buscado en serio una fuente de grano fuera del granero comunal -su experiencia es administrar lo que hay, no conseguir más.",
+      "flaw_tags": ["falta_de_iniciativa", "resignación"],
+      "flaw_exploit": "proponerle_una_fuente_de_grano_alternativa_que_el_no_habia_considerado"
+    },
+
+    "disposition": {
+      "affinity": 20,
+      "trust": 20,
+      "respect": 0,
+      "trust_ceiling": 75,
+      "_nota_topes": "Sube con propuestas concretas que no dependan solo de las reservas del granero. Baja si el grupo exige reparto igualitario sin ofrecer de dónde sale el grano extra, aunque no cierra el techo -- puede ceder si le muestran una cuenta que sí le salga."
+    },
+
+    "knowledge": [
+      { "fact": "Las reservas de grano no alcanzan igual desde que llegó el campamento del Paso, y el invierno todavía no ha empezado en serio", "learned_at_turn": 0 },
+      { "fact": "El Paso Alto lleva semanas cerrado por nieve temprana, así que el campamento no tiene adónde ir por ahora", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Cebrián ya calculó, en privado, que un reparto limitado alcanzaría hasta la próxima cosecha solo si el campamento no crece más -no lo ha dicho en el consejo porque sabe que sonaría como pedirle al campamento que deje de recibir a más gente, algo que no está en su mano ni en la de Yara.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si sus cuentas dependen de que el campamento no siga creciendo.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "propuestas concretas y honestidad sobre lo que hay. Indiferente a la retórica sin números detrás."
+  },
+
+  "yara": {
+    "_arquetipo": "Líder improvisada que no pidió el puesto, defiende un reparto igualitario porque dejar fuera a su gente no la hace desaparecer.",
+    "name": "Yara Sorem",
+    "species": "humana",
+    "social_role": "líder informal del Campamento del Paso",
+    "appearance": "Treinta y tantos, capa remendada con retazos de varias telas distintas, siempre con una lista de turnos de guardia a medio terminar.",
+    "location": "campamento_del_paso",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 60,
+      "candor": 75,
+      "principle": 70,
+      "boldness": 65
+    },
+
+    "traits": ["organizó los turnos de guardia del campamento desde la primera noche", "conoce a cada familia del campamento por nombre", "no pide nada que no esté dispuesta a pedir también para sí misma"],
+    "internal_contradiction": "Exige un reparto igualitario porque sabe que su gente no tiene otro sitio adonde ir, y no ha terminado de aceptar que exigirlo con la misma fuerza que necesita puede ser lo que finalmente cierre la puerta del pueblo del todo.",
+    "taboos": ["pedir para sí misma antes que para el campamento", "callar una necesidad real por miedo a parecer desagradecida"],
+    "voice_notes": "Directa, sin rodeos, pero nunca hostil de entrada. Agradece en voz alta cada gesto de ayuda, por pequeño que sea.",
+    "stated_desire": "Que el pueblo trate al campamento como vecinos, no como una carga temporal.",
+    "actual_need": "Confiar en que pedir ayuda no siempre termina en que se la nieguen.",
+    "fear": "Que su gente pase el invierno sin techo ni grano suficiente, y que nadie fuera del campamento lo sepa hasta que sea tarde.",
+
+    "ibf": {
+      "ideal_text": "Nadie deja de ser vecino solo porque llegó hace tres meses en vez de hace tres generaciones.",
+      "ideal_tags": ["dignidad", "comunidad"],
+      "bond_text": "Cada familia del Campamento del Paso, unidas por una guardia y un reparto que ella misma organizó desde la primera noche.",
+      "bond_strength": 80,
+      "bond_targets": [
+        { "type": "location", "key": "campamento_del_paso" },
+        { "type": "faction", "key": "gente_del_campamento" }
+      ],
+      "flaw_text": "Le cuesta reconocer en público que las cuentas de Cebrián podrían tener razón, incluso cuando en privado entiende perfectamente la escasez que él describe.",
+      "flaw_tags": ["orgullo", "desconfianza"],
+      "flaw_exploit": "pedirle_que_reconozca_en_publico_que_las_cuentas_de_cebrian_son_reales"
+    },
+
+    "disposition": {
+      "affinity": 30,
+      "trust": 30,
+      "respect": 0,
+      "trust_ceiling": 85,
+      "_nota_topes": "Sube con trato igualitario hacia el campamento y disposición a escuchar sus necesidades reales. Baja si el grupo respalda un recorte de grano sin ofrecer alternativa, aunque no cierra el techo -- entiende la escasez real cuando se la explican con respeto."
+    },
+
+    "knowledge": [
+      { "fact": "El Paso Alto sigue cerrado por nieve temprana, así que su gente no tiene adónde ir por ahora", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Yara ya sabe que el campamento tiene comida para menos días de los que le ha dicho a nadie, ni siquiera a su propia gente -no quiere que cunda el pánico antes de haber agotado toda vía posible con el pueblo.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente cuántos días de comida le quedan de verdad al campamento.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "trato igualitario y disposición a ayudar sin condiciones. Indiferente a la caridad que llega acompañada de desconfianza."
+  },
+
+  "coral": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Ivo Manque' y 'Renata Sarco' en pares anteriores.",
+    "name": "Coral Nieva",
+    "species": "humana",
+    "social_role": "lleva la cuenta de las familias que cruzan el Vado de Carga cada día",
+    "appearance": "Menuda, siempre con un cuaderno mojado por el vado y los dedos arrugados de tanto contacto con el agua fría.",
+    "location": "vado_de_carga",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctica. Habla de cuántas familias cruzaron hoy y de cómo viene el caudal del río.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a ella por su cuenta en 3+ escenas, o la nombra sin que el DM la mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

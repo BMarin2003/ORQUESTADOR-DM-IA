@@ -1,0 +1,174 @@
+{
+  "_nota": "Par 05 (real) -- corpus real, no piloto. Tres PNJ, mismo molde que Par 01/02/03/04: dos centrales con IBF completo en posturas igual de defendibles, y un PNJ de paso con todo vacío a propósito. A diferencia de todos los pares anteriores, aquí ninguno de los dos centrales es un villano NI defiende una postura frente a una amenaza -es una disputa de sucesión política real entre dos aspirantes legítimos, acorde al tono mixed y a la estructura de este par.",
+
+  "renata": {
+    "_arquetipo": "Candidata de la continuidad -no es rígida por miedo, es rígida porque ha visto lo que pasa cuando el gremio se apura.",
+    "name": "Renata Ossorio",
+    "species": "humana",
+    "social_role": "portera de peaje del Gremio del Paso desde hace veinte años, candidata a maestre",
+    "appearance": "Cuarenta y tantos, un cuaderno de cuentas siempre bajo el brazo, la clase de persona que recuerda la tarifa exacta de hace diez años sin mirar el libro.",
+    "location": "taller_renata",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 35,
+      "candor": 65,
+      "principle": 70,
+      "boldness": 40
+    },
+
+    "traits": ["cita procedimientos de memoria", "desconfía de cualquier cambio sin precedente", "trata a Damil con respeto, no con desprecio"],
+    "internal_contradiction": "Defiende el procedimiento del gremio como lo que ha mantenido el puente en pie doscientos años, y en privado sabe que ese mismo procedimiento nunca tuvo que enfrentar una alianza de caravanas amenazando con irse -no está tan segura de que lo viejo alcance esta vez.",
+    "taboos": ["saltarse el orden de cobro de peaje, aunque sea por una emergencia", "hablar mal de Damil delante de un forastero -las diferencias del gremio no se lavan en público"],
+    "voice_notes": "Precisa, cita fechas y cifras de memoria. Nunca alza la voz, pero repite el mismo argumento las veces que haga falta hasta que la escuchen.",
+    "stated_desire": "Que el gremio siga en pie sin improvisar decisiones que no se puedan deshacer.",
+    "actual_need": "Aceptar que algo puede cambiar sin que eso signifique que todo lo anterior estuvo mal.",
+    "fear": "Que la elijan maestre y sea, precisamente bajo su mandato, cuando el puente deje de bastar.",
+
+    "ibf": {
+      "ideal_text": "Un procedimiento que ha funcionado doscientos años no se cambia porque una temporada mala lo ponga en duda.",
+      "ideal_tags": ["continuidad", "prudencia"],
+      "bond_text": "Veinte años de libros de peaje, cada uno llevado a mano, que Renata considera la memoria real del gremio.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "taller_renata" },
+        { "type": "faction", "key": "gremio_del_paso" }
+      ],
+      "flaw_text": "Nunca ha tenido que negociar de verdad con una alianza de caravanas dispuesta a irse -su experiencia es real, pero es experiencia de cuando el gremio no tenía competencia seria.",
+      "flaw_tags": ["rigidez", "experiencia_limitada"],
+      "flaw_exploit": "ponerla_a_negociar_directamente_con_la_alianza_de_caravanas"
+    },
+
+    "disposition": {
+      "affinity": 15,
+      "trust": 20,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con respeto al procedimiento y disposición a documentar cada decisión. Baja si el grupo empuja por saltarse pasos del proceso de la Prueba del Paso, aunque no cierra el techo -puede reconocer una excepción bien argumentada."
+    },
+
+    "knowledge": [
+      { "fact": "La Alianza de Caravanas evalúa en serio cambiar de ruta si el gremio no resuelve pronto la tarifa y las reparaciones pendientes", "learned_at_turn": 0 },
+      { "fact": "El maestre Ossian Vell murió hace tres semanas sin dejar sucesor designado, como manda la costumbre del gremio", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Renata sabe que si pierde la votación, buena parte de su trabajo de veinte años (tarifas, acuerdos, turnos) podría revisarse desde cero bajo Damil -y en privado le aterra más eso que perder el cargo en sí.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente qué pasaría si pierde, o si el grupo la sorprende revisando sus libros de más de lo habitual.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "precisión y disposición a seguir el proceso hasta el final, gane o pierda. Indiferente a los gestos grandes sin sustento."
+  },
+
+  "damil": {
+    "_arquetipo": "Candidato del cambio -no es imprudente por ambición vacía, es impaciente porque ha visto irse caravanas que antes no se iban.",
+    "name": "Damil Quiroga",
+    "species": "humano",
+    "social_role": "comerciante, más joven y más viajado que Renata, candidato a maestre",
+    "appearance": "Treinta y pocos, ropa de viaje más que de oficina, siempre con un mapa de rutas a mano para señalar por dónde se está yendo el comercio.",
+    "location": "posada_damil",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 55,
+      "candor": 60,
+      "principle": 50,
+      "boldness": 75
+    },
+
+    "traits": ["habla con quien sea, del rango que sea", "propone soluciones antes de que se las pidan", "impaciente con las reuniones largas"],
+    "internal_contradiction": "Se presenta como el candidato que va a salvar a Vado Cabrero de quedarse atrás, y en privado no está del todo seguro de que sus propias ideas -tarifas más bajas, reparaciones más rápidas- no terminen costándole al gremio más de lo que ahorran.",
+    "taboos": ["dejar sin respuesta a un mercader que pregunta por una ruta alternativa", "hablar del gremio como algo del pasado delante de Renata"],
+    "voice_notes": "Rápido, directo, usa ejemplos de otras rutas y otros pueblos para argumentar. Trata a todos por igual, forasteros incluidos, lo que a algunos vecinos les resulta refrescante y a otros, imprudente.",
+    "stated_desire": "Que Vado Cabrero no pierda las caravanas grandes frente a rutas más baratas por el norte.",
+    "actual_need": "Que alguien lo frene a tiempo si una de sus ideas resulta ser tan mala como teme en privado que puede serlo.",
+    "fear": "Ganar la votación y descubrir, ya como maestre, que cambiar rápido rompe algo que no sabía que dependía de ir despacio.",
+
+    "ibf": {
+      "ideal_text": "Un gremio que no se adapta al tráfico que realmente tiene es un gremio que se queda sin puente que administrar.",
+      "ideal_tags": ["adaptación", "comercio"],
+      "bond_text": "Las rutas que ha recorrido fuera de Vado Cabrero, y las caravanas grandes que ya prefieren pasar por el norte antes que pagar el peaje de aquí.",
+      "bond_strength": 60,
+      "bond_targets": [
+        { "type": "location", "key": "posada_damil" },
+        { "type": "faction", "key": "alianza_caravanas" }
+      ],
+      "flaw_text": "Nunca ha tenido que sostener una decisión impopular durante años, como sí ha hecho Renata -confía en que la gente lo va a seguir si tiene razón, y todavía no ha comprobado si eso es cierto.",
+      "flaw_tags": ["impaciencia", "exceso_de_confianza"],
+      "flaw_exploit": "pedirle_que_sostenga_una_decision_suya_impopular_sin_dar_marcha_atras"
+    },
+
+    "disposition": {
+      "affinity": 20,
+      "trust": 25,
+      "respect": 0,
+      "trust_ceiling": 85,
+      "_nota_topes": "Sube con propuestas concretas y disposición a escuchar a la Alianza de Caravanas. Baja si el grupo respalda mantener todo igual sin argumento, aunque no cierra el techo -puede aceptar que Renata tenga razón en un punto concreto."
+    },
+
+    "knowledge": [
+      { "fact": "Al menos dos caravanas grandes ya avisaron que probarán la ruta del norte la próxima temporada si el peaje no cambia", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Damil ya prometió, en privado, a un representante de la Alianza de Caravanas una rebaja de tarifa que el gremio todavía no ha aprobado -si se sabe antes de la votación, podría parecer que promete lo que no puede cumplir.",
+        "reveal_condition": "Solo se lo cuenta a quien le demuestre que puede ayudarlo a conseguir esa rebaja de verdad ante el gremio, o si el grupo lo sorprende negociando en el campamento forastero.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "acción concreta y disposición a comprometerse con un plan. Indiferente a la cautela sin propuesta detrás."
+  },
+
+  "nilo": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, igual que 'Alba' en Caleta Lumbre, 'Petra' en Vega del Yelmo, 'Yulen' en Alto Ferrena y 'Mira' en Puerto Salazón.",
+    "name": "Nilo Sagra",
+    "species": "humano",
+    "social_role": "empleado de la garita de peaje, cobra y anota cada cruce",
+    "appearance": "Manguitos de cuero gastados en los codos, un cuaderno de cobros que nunca suelta.",
+    "location": "puente_gremio",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctico. Habla de tarifas, turnos de garita y quién cruzó hoy.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a él por su cuenta en 3+ escenas, o lo nombra sin que el DM lo mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

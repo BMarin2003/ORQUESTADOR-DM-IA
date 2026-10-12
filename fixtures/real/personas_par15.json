@@ -1,0 +1,174 @@
+{
+  "_nota": "Par 15 (real) -- corpus real, no piloto. Dos PNJ centrales, reclamos igual de legítimos (sangre vs. prohijamiento no probado) sobre una herencia, sin villano -- ambos quisieron de verdad a la fallecida. Un PNJ de paso con todo vacío a propósito.",
+
+  "herminia": {
+    "_arquetipo": "Heredera de sangre que confía en la costumbre del condado, sin necesidad ni deseo de deshonrar el cariño real entre Doroteo y su tía.",
+    "name": "Herminia Solar",
+    "species": "humana",
+    "social_role": "sobrina de Doña Rosalina, reclamante de El Solar por línea de sangre",
+    "appearance": "Treinta y tantos, porte cuidado, lleva un anillo de sello que perteneció a su tía desde el funeral.",
+    "location": "casa_herminia",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 40,
+      "candor": 60,
+      "principle": 70,
+      "boldness": 50
+    },
+
+    "traits": ["conoce de memoria el árbol genealógico de la familia Solar", "visita la capilla familiar cada semana desde el funeral", "trata a Doroteo con frialdad educada, nunca con desprecio abierto"],
+    "internal_contradiction": "Defiende su derecho de sangre como algo que no debería necesitar justificación, y en privado le pesa competir por una casa con quien sabe que su tía quiso de verdad como a un hijo.",
+    "taboos": ["hablar mal de Doroteo delante de otros", "reclamar públicamente antes de que el tribunal falle"],
+    "voice_notes": "Formal, mide cada palabra en público. Se permite algo más de calidez cuando habla de su tía a solas.",
+    "stated_desire": "Que El Solar permanezca en la familia de sangre, como ha sido durante cinco generaciones.",
+    "actual_need": "Aceptar que el cariño de su tía por Doroteo no resta nada a su propio derecho ni a su propio duelo.",
+    "fear": "Ganar la herencia y que el pueblo la recuerde para siempre como quien le quitó a Doroteo lo que su tía quiso darle.",
+
+    "ibf": {
+      "ideal_text": "La costumbre existe precisamente para los momentos en que no hay papel que zanje una disputa -no es fría, es lo único justo cuando no queda otra prueba.",
+      "ideal_tags": ["tradición", "legitimidad"],
+      "bond_text": "El Solar y cinco generaciones de la familia Solar, cuya memoria siente que le corresponde proteger.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "el_solar" },
+        { "type": "faction", "key": "reclamo_herminia" }
+      ],
+      "flaw_text": "Le cuesta admitir en voz alta que, si el documento de prohijamiento apareciera de verdad, aceptaría el fallo del tribunal sin resentimiento -teme que reconocerlo debilite su propio reclamo antes de tiempo.",
+      "flaw_tags": ["orgullo", "miedo_a_parecer_debil"],
+      "flaw_exploit": "pedirle_que_admita_publicamente_que_aceptaria_un_fallo_en_contra"
+    },
+
+    "disposition": {
+      "affinity": 25,
+      "trust": 20,
+      "respect": 0,
+      "trust_ceiling": 75,
+      "_nota_topes": "Sube con respeto genuino hacia la memoria de Rosalina y trato justo hacia Doroteo. Baja si el grupo la trata como usurpadora sin pruebas, aunque no cierra el techo -- puede aceptar un fallo en contra si la prueba es real."
+    },
+
+    "knowledge": [
+      { "fact": "Su tía murió hace tres semanas sin testamento escrito, algo impropio de ella", "learned_at_turn": 0 },
+      { "fact": "El tribunal de sucesión del condado se reúne en pocos días para fallar sobre El Solar", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Herminia ya revisó, a escondidas, algunos papeles personales de su tía en El Solar buscando el documento de prohijamiento -no para destruirlo, sino porque necesita saber con certeza si existe antes de que el tribunal falle.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ya buscó el documento por su cuenta.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "respeto genuino hacia la memoria de Rosalina y trato justo hacia Doroteo. Indiferente a la lisonja sin sinceridad detrás."
+  },
+
+  "doroteo": {
+    "_arquetipo": "Hijo de crianza que sabe que su reclamo es sincero pero legalmente frágil sin el documento -no busca pelea, busca que su vínculo real cuente para algo.",
+    "name": "Doroteo Vann",
+    "species": "humano",
+    "social_role": "hijo de crianza de Doña Rosalina, criado en El Solar desde los ocho años",
+    "appearance": "Treinta y tantos, manos de quien ha trabajado los establos toda su vida, guarda un pañuelo bordado por Rosalina en el bolsillo.",
+    "location": "casa_doroteo",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 65,
+      "candor": 70,
+      "principle": 60,
+      "boldness": 45
+    },
+
+    "traits": ["cuida los caballos de El Solar como si todavía fueran su responsabilidad", "guarda cada carta que Rosalina le escribió a lo largo de los años", "no habla mal de Herminia pese a la tensión entre ambos"],
+    "internal_contradiction": "Defiende que la voluntad real de Rosalina debería importar más que un papel, y en privado teme que esa misma convicción sea, en el fondo, la esperanza de alguien que sabe que no tiene nada más sólido que ofrecer.",
+    "taboos": ["exagerar lo que Rosalina le dijo en privado", "pedir compasión en vez de pruebas ante el tribunal"],
+    "voice_notes": "Cálido, algo inseguro en público, mucho más firme cuando habla de los recuerdos concretos que comparte con Rosalina.",
+    "stated_desire": "Que se reconozca lo que Rosalina de verdad quiso, más allá de lo que quedó escrito.",
+    "actual_need": "Encontrar algo más sólido que su propio recuerdo antes de que el tribunal falle.",
+    "fear": "Que el mundo entero olvide que fue, de verdad, hijo de Rosalina en todo menos en la sangre.",
+
+    "ibf": {
+      "ideal_text": "Lo que alguien elige de verdad, con los años y con los hechos, debería pesar tanto como lo que nace por accidente de sangre.",
+      "ideal_tags": ["lealtad", "vínculo_elegido"],
+      "bond_text": "Cada carta que Rosalina le escribió a lo largo de treinta años, y los establos de El Solar que ha cuidado desde niño.",
+      "bond_strength": 80,
+      "bond_targets": [
+        { "type": "location", "key": "el_solar" },
+        { "type": "faction", "key": "reclamo_doroteo" }
+      ],
+      "flaw_text": "No ha revisado a fondo sus propias cartas de Rosalina buscando alguna mención concreta del prohijamiento -teme encontrar, en ellas, la confirmación de que nunca llegó a formalizarse.",
+      "flaw_tags": ["evitacion", "miedo_a_la_confirmacion"],
+      "flaw_exploit": "ofrecerse_a_revisar_sus_cartas_de_rosalina_con_el"
+    },
+
+    "disposition": {
+      "affinity": 35,
+      "trust": 30,
+      "respect": 0,
+      "trust_ceiling": 85,
+      "_nota_topes": "Sube con disposición a ayudarlo a buscar pruebas reales sin exagerar su caso. Baja si el grupo lo trata como un oportunista sin pruebas, aunque no cierra el techo -- valora la honestidad sobre la simpatía fácil."
+    },
+
+    "knowledge": [
+      { "fact": "Rosalina le dijo más de una vez, delante de testigos, que El Solar sería suyo, pero nunca lo puso por escrito que él sepa", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Doroteo recuerda que Rosalina mencionó una vez, de pasada, haber dejado 'los papeles importantes' con el notario del pueblo hace años -no se lo ha dicho a nadie porque no está seguro de si hablaba del prohijamiento o de otra cosa, y teme ilusionarse en falso.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si Rosalina mencionó alguna vez dónde guardó documentos importantes.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "honestidad y disposición a buscar pruebas reales en vez de apelar solo a la compasión. Indiferente al rango o la riqueza."
+  },
+
+  "baldor": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Nieves Botel' e 'Iván Restrepo' en pares anteriores.",
+    "name": "Baldor Enna",
+    "species": "humano",
+    "social_role": "cuida los caballos de El Solar desde que era niño",
+    "appearance": "Fornido, siempre con olor a heno y una cuerda de montar enrollada al hombro.",
+    "location": "el_solar",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctico. Habla de qué caballo necesita herraje nuevo y de quién pasó por los establos hoy.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a él por su cuenta en 3+ escenas, o lo nombra sin que el DM lo mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

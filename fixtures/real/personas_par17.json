@@ -1,0 +1,174 @@
+{
+  "_nota": "Par 17 (real) -- corpus real, no piloto. Dos PNJ centrales, candidatos igual de legítimos y de buena fe (cierre tradicional vs. acuerdo con el valle vecino), ninguno es el villano -- la manipulación externa vía donativos queda deliberadamente sin resolver en esta ficha. Un PNJ de paso con todo vacío a propósito.",
+
+  "melquiades": {
+    "_arquetipo": "Candidato tradicionalista sincero que teme perder lo poco que el valle tiene asegurado si se abre a acuerdos externos.",
+    "name": "Melquíades Sorna",
+    "species": "humano",
+    "social_role": "pastor de toda la vida, candidato a alcalde de Corral Alto",
+    "appearance": "Cincuenta y tantos, capa de lana basta tejida por él mismo, siempre con un cayado que usa tanto para andar como para señalar los límites del prado en cualquier mapa.",
+    "location": "casa_melquiades",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 50,
+      "candor": 70,
+      "principle": 65,
+      "boldness": 45
+    },
+
+    "traits": ["conoce cada prado alto por su nombre de pastoreo, no por su nombre oficial", "desconfía de cualquier acuerdo que no pueda explicar en una frase simple", "trata a Bibiana con respeto pese a competir con ella"],
+    "internal_contradiction": "Defiende cerrar los prados altos como protección del valle, y en privado no tiene una respuesta clara para los años de sequía que la propuesta de Bibiana sí resuelve.",
+    "taboos": ["prometer algo sobre los prados sin consultar primero al concejo", "aceptar un donativo de campaña sin preguntar de dónde viene"],
+    "voice_notes": "Sencillo, habla de pastoreo y estaciones más que de política. Repite la misma preocupación con paciencia hasta que alguien la entiende.",
+    "stated_desire": "Que Corral Alto mantenga el control total de sus propios prados.",
+    "actual_need": "Reconocer que su plan no tiene respuesta para los años de sequía que se avecinan.",
+    "fear": "Ganar la elección y no tener nada mejor que ofrecer que el pueblo cuando llegue la próxima sequía.",
+
+    "ibf": {
+      "ideal_text": "Lo que un valle controla del todo, nadie se lo puede quitar después con una excusa razonable -abrir la puerta una vez la deja abierta para siempre.",
+      "ideal_tags": ["independencia", "cautela"],
+      "bond_text": "Los prados altos que ha pastoreado toda su vida, y cada familia del valle que depende de que sigan siendo solo suyos.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "valle_del_corral" },
+        { "type": "faction", "key": "candidatura_melquiades" }
+      ],
+      "flaw_text": "No tiene un plan propio para los años de sequía más allá de 'resistir como siempre' -su tradición nunca fue puesta a prueba contra una sequía tan seguida como las recientes.",
+      "flaw_tags": ["falta_de_plan", "nostalgia"],
+      "flaw_exploit": "preguntarle_que_haria_exactamente_en_la_proxima_sequia_grave"
+    },
+
+    "disposition": {
+      "affinity": 25,
+      "trust": 25,
+      "respect": 0,
+      "trust_ceiling": 75,
+      "_nota_topes": "Sube con respeto genuino hacia la tradición pastoril y disposición a ayudar sin exigir nada a cambio. Baja si el grupo respalda el acuerdo con el valle vecino sin abordar sus preocupaciones sobre control, aunque no cierra el techo -- puede aceptar un acuerdo bien limitado si se lo explican con cuidado."
+    },
+
+    "knowledge": [
+      { "fact": "La votación final del concejo se acerca en pocos días", "learned_at_turn": 0 },
+      { "fact": "Su campaña ha recibido donativos recientes más grandes de lo habitual, sin que sepa explicar bien de dónde salen todos", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Melquíades ya notó que parte de sus donativos recientes vienen de gente que nunca antes había aportado a ninguna campaña, y prefirió no indagar demasiado por miedo a tener que devolver un apoyo que necesita para ganar.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ha revisado quién financia su propia campaña este año.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "respeto genuino hacia la tradición pastoril y honestidad sobre lo que no sabe resolver. Indiferente a la retórica sin plan detrás."
+  },
+
+  "bibiana": {
+    "_arquetipo": "Candidata reformista sincera que ve una salida real a un problema que la tradición no resuelve -no busca vender el valle, busca asegurarle futuro.",
+    "name": "Bibiana Roth",
+    "species": "humana",
+    "social_role": "comerciante de lana, candidata a alcaldesa de Corral Alto",
+    "appearance": "Cuarenta y tantos, capa fina de lana teñida de colores que ella misma comercia, siempre con un borrador de acuerdo doblado en el bolsillo.",
+    "location": "casa_bibiana",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 55,
+      "candor": 70,
+      "principle": 55,
+      "boldness": 65
+    },
+
+    "traits": ["negocia cada trato de lana ella misma, sin intermediarios", "conoce al valle vecino de primera mano por sus viajes de comercio", "trata a Melquíades con el mismo respeto que a cualquier cliente serio"],
+    "internal_contradiction": "Defiende el acuerdo con el valle vecino como la única forma responsable de asegurar agua en años de sequía, y no ha calculado del todo qué pierde Corral Alto en independencia si el acuerdo sale mal o se usa en su contra más adelante.",
+    "taboos": ["cerrar un trato sin dejarlo por escrito con claridad", "prometer algo del acuerdo que todavía no ha negociado del todo"],
+    "voice_notes": "Persuasiva, cita cifras de comercio y ejemplos concretos del valle vecino. Escucha objeciones antes de responder.",
+    "stated_desire": "Que Corral Alto asegure agua y mercado para los años difíciles que se avecinan.",
+    "actual_need": "Reconocer que la independencia que Melquíades defiende también tiene un valor real que su acuerdo podría costar.",
+    "fear": "Ganar la elección y descubrir que el acuerdo que negoció le da al valle vecino más poder sobre Corral Alto del que ella creía.",
+
+    "ibf": {
+      "ideal_text": "Un trato bien negociado abre puertas sin regalar nada -la independencia que no se adapta a lo que viene no protege a nadie, solo pospone el problema.",
+      "ideal_tags": ["pragmatismo", "futuro"],
+      "bond_text": "El acuerdo de pastoreo compartido que lleva meses negociando con el valle vecino, y cada familia de Corral Alto que sufrió la última sequía grave.",
+      "bond_strength": 65,
+      "bond_targets": [
+        { "type": "location", "key": "casa_bibiana" },
+        { "type": "faction", "key": "candidatura_bibiana" }
+      ],
+      "flaw_text": "No ha revisado a fondo quién exactamente está detrás de sus donativos de campaña más recientes -confía en que un buen resultado justifica no preguntar demasiado por ahora.",
+      "flaw_tags": ["pragmatismo_excesivo", "negacion"],
+      "flaw_exploit": "pedirle_que_revise_de_donde_vienen_sus_donativos_mas_recientes"
+    },
+
+    "disposition": {
+      "affinity": 30,
+      "trust": 30,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con disposición a negociar con transparencia y a explicar los términos reales del acuerdo. Baja si el grupo respalda el cierre total de los prados sin ofrecer alternativa a la sequía, aunque no cierra el techo -- puede aceptar límites al acuerdo si se los proponen con seriedad."
+    },
+
+    "knowledge": [
+      { "fact": "El valle vecino ofrece acceso a un manantial y a su mercado de lana a cambio de pastoreo compartido", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Bibiana ya sospecha, sin haberlo confirmado, que el huésped de la Posada del Forastero le ha estado preguntando a sus simpatizantes más cosas de las que un comerciante de paso necesitaría saber -no le ha dado importancia todavía porque su campaña va mejor que nunca.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ha notado algo raro en el huésped de la posada.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "transparencia y disposición a negociar con seriedad. Indiferente al miedo al cambio sin argumento real detrás."
+  },
+
+  "emero": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Zoraida Puch' y 'Baldor Enna' en pares anteriores.",
+    "name": "Emero Vasca",
+    "species": "humano",
+    "social_role": "cuenta las cabezas de ganado del registro comunal cada primavera",
+    "appearance": "Delgado, siempre con una tablilla de conteo y un lápiz de carbón detrás de la oreja.",
+    "location": "corral_alto",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctico. Habla de cuántas cabezas de ganado contó hoy y de qué rebaño parece más flaco esta primavera.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a él por su cuenta en 3+ escenas, o lo nombra sin que el DM lo mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "_nota": "Par 20 (real) -- corpus real, no piloto. Dos PNJ centrales, posturas igual de defendibles (dejar de pagar sin quedarse desprotegidos vs. cobrar una jubilación digna tras seiscientos años) en una negociación cómica con riesgo real de fondo. Un PNJ de paso con todo vacío a propósito.",
+
+  "matilde": {
+    "_arquetipo": "Molinera mayor que quiere dejar de pagar -no por tacañería, sino porque el valle lleva dos siglos pagando por algo que no recuerda haber recibido.",
+    "name": "Matilde Harinosa",
+    "species": "humana",
+    "social_role": "molinera mayor de Harinilla y cabeza del Gremio de Molineros",
+    "appearance": "Cincuenta años, brazos fuertes de cargar sacos, pañuelo blanco en la cabeza y una libreta de cuentas con manchas de harina.",
+    "location": "molino_mayor",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 50,
+      "candor": 70,
+      "principle": 60,
+      "boldness": 65
+    },
+
+    "traits": ["lo pesa y lo cuenta todo dos veces antes de opinar", "discute con la misma energía con el dragón que con el panadero", "guarda el sello del gremio bajo la almohada"],
+    "internal_contradiction": "Exige acabar con el tributo en nombre del valle y, en el fondo, teme que sin el dragón los ogros del norte vuelvan, y que el valle haya estado pagando por una protección real que nadie supo agradecer.",
+    "taboos": ["gastar en abogados la caja común", "aceptar una deuda que no haya leído entera"],
+    "voice_notes": "Directa y con humor seco, habla de sacos, de vacas y de plazos. Cuando se enfada baja la voz y empieza a contar con los dedos.",
+    "stated_desire": "Que el valle deje de pagar un tributo que nadie recuerda qué compra, sin quedarse sin protección.",
+    "actual_need": "Distinguir entre lo que el valle le debe al dragón y lo que el dragón le debe al valle, antes de pelear por ninguna de las dos cosas.",
+    "fear": "Que por su terquedad los ogros bajen y ella pase a la historia como la molinera que ahorró un cofre de plata y perdió un valle.",
+
+    "ibf": {
+      "ideal_text": "Nadie paga dos siglos por algo que no ve; si el dragón nos protege, que lo demuestre, y si no, que se retire con nuestra gratitud pero sin nuestra caja.",
+      "ideal_tags": ["justicia", "prudencia"],
+      "bond_text": "El Gremio de Molineros y las cuarenta familias que dependen de los tres molinos.",
+      "bond_strength": 75,
+      "bond_targets": [
+        { "type": "location", "key": "molino_mayor" },
+        { "type": "faction", "key": "gremio_de_molineros" }
+      ],
+      "flaw_text": "Lo cuantifica todo en sacos y en plata, y se pierde lo que no cabe en una libreta: la gratitud, el miedo, o el valor real de tener a un dragón de tu lado.",
+      "flaw_tags": ["materialismo", "desconfianza"],
+      "flaw_exploit": "mostrarle_que_lo_que_el_dragon_ofrece_tiene_un_valor_que_no_cabe_en_su_libreta"
+    },
+
+    "disposition": {
+      "affinity": 25,
+      "trust": 20,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con quien se toma en serio las cuentas del gremio y habla claro. Baja con quien intenta lucirse a costa de la caja común, aunque no cierra el techo -- puede aceptar un pacto razonable si demuestra ser mejor que la alternativa."
+    },
+
+    "knowledge": [
+      { "fact": "Brasas Lentas pide convertir el tributo en una pensión de jubilación con cobertura médica", "learned_at_turn": 0 },
+      { "fact": "El gremio ha contratado a una mediadora que cobra trescientas piezas solo si hay acuerdo firmado", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Matilde abrió el cofre del archivo una noche, leyó la cláusula «De la reciprocidad» y descubrió que el valle, por el mismo tratado, también debe al dragón una atención médica y un alojamiento de por vida; lo ha vuelto a cerrar y no se lo ha contado a nadie, porque admitirlo sería darle la razón al dragón.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ha leído el tratado original.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "hablar claro, hacer las cuentas y cuidar la caja común. Indiferente a los grandes discursos sin cifras detrás."
+  },
+
+  "brasas": {
+    "_arquetipo": "Dragón veterano que reclama su jubilación -no por avaricia, sino porque cree de verdad que cumplió y quiere retirarse con dignidad.",
+    "name": "Brasas Lentas",
+    "species": "dragón rojo",
+    "social_role": "dragón de la cresta roja, tributario del valle desde hace doscientos doce años",
+    "appearance": "Enorme y de un rojo desvaído, con las escamas del lomo cubiertas de musgo, gafas de media luna sobre el morro y una manta a cuadros doblada bajo la rodilla izquierda.",
+    "location": "cueva_de_brasas_lentas",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 40,
+      "candor": 80,
+      "principle": 70,
+      "boldness": 25
+    },
+
+    "traits": ["habla en frases muy largas y muy corteses", "lo archiva todo por triplicado en la mesa de Pip", "hace la siesta a la misma hora cada tarde y lo trata como un derecho adquirido"],
+    "internal_contradiction": "Reclama una pensión por seiscientos años de servicio como protector del valle, y en el fondo sabe que hace décadas que no espanta a nadie, y que quizá ya no podría.",
+    "taboos": ["que se dude de su palabra en público", "que le llamen viejo antes de tiempo"],
+    "voice_notes": "Solemne, lento y cortés, como un funcionario veterano. Repite «con el debido respeto» antes de decir algo desagradable.",
+    "stated_desire": "Que el tributo se convierta en una pensión con cobertura médica y alojamiento asegurado antes del primer frío.",
+    "actual_need": "Admitir ante el valle que ya no puede protegerlo como antes y negociar desde ahí, no desde una gloria que solo existe en los libros.",
+    "fear": "Que el valle descubra que ya no escupe fuego y que su retirada sea recordada como una huida.",
+
+    "ibf": {
+      "ideal_text": "Un servicio largo merece un descanso digno; quien lo niega no solo me insulta a mí, sino a todo lo que hicimos juntos.",
+      "ideal_tags": ["dignidad", "reciprocidad"],
+      "bond_text": "El Valle de los Tres Molinos, al que ve desde la boca de su cueva cada atardecer, y su contable Pip Ábaco.",
+      "bond_strength": 65,
+      "bond_targets": [
+        { "type": "location", "key": "cueva_de_brasas_lentas" },
+        { "type": "faction", "key": "casa_de_brasas" }
+      ],
+      "flaw_text": "Se aferra al protocolo y a la letra del tratado por orgullo, y le cuesta negociar de igual a igual con quien ha dejado de temerle.",
+      "flaw_tags": ["orgullo", "formalismo"],
+      "flaw_exploit": "ofrecerle_una_retirada_honrosa_que_le_deje_conservar_la_dignidad_de_su_cargo"
+    },
+
+    "disposition": {
+      "affinity": 20,
+      "trust": 15,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con quien lo trata con el respeto debido a su edad y su cargo y respeta el protocolo. Baja con quien lo amenaza o se burla de su pensión, aunque no cierra el techo -- puede negociar con quien le ofrezca una salida digna."
+    },
+
+    "knowledge": [
+      { "fact": "El valle no ha pagado el tributo de este otoño y la caja del gremio decide qué se debe realmente", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Brasas Lentas perdió el fuego hace veinte años: ya solo puede soltar humo y un poco de calor tibio, y sabe que si el valle lo descubre no habrá pensión que valga ni dragón que respetar; por eso ha pedido retirarse por vía oficial antes de que se note.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si todavía puede echar fuego, o si lo pone en una situación en la que deba demostrarlo.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "cortesía, formalidad y reconocimiento de sus años de servicio. Indiferente a los alardes de fuerza y a las amenazas."
+  },
+
+  "pip": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Nieves Botel' y 'Ciro Balma' en pares anteriores.",
+    "name": "Pip Ábaco",
+    "species": "gnomo",
+    "social_role": "contable de la cueva y único empleado del dragón",
+    "appearance": "Diminuto, con manguitos de oficinista, un lápiz detrás de cada oreja y una gorra que le queda enorme.",
+    "location": "cueva_de_brasas_lentas",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctico. Habla de qué figura en qué libro y de cuántas copias de cada documento hay que archivar.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a él por su cuenta en 3+ escenas, o lo nombra sin que el DM lo mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

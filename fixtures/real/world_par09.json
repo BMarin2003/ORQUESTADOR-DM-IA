@@ -1,0 +1,135 @@
+{
+  "campaign": {
+    "note": "Par 09 (real) -- corpus real, no piloto. Ver corpus/real/lore_bruma_honda.md para la prosa completa.",
+    "world_tone": "grimdark"
+  },
+  "locations": [
+    {
+      "key": "la_bruma",
+      "kind": "region",
+      "name": "La Hondonada de la Bruma",
+      "parent": null,
+      "culture_overrides": {
+        "language": "común",
+        "currency": "trueque y poca moneda acuñada",
+        "attitude_to_outsiders": "reservado -el pueblo teme traer más contagio de fuera"
+      }
+    },
+    {
+      "key": "bruma_honda",
+      "kind": "settlement",
+      "name": "Bruma Honda",
+      "parent": "la_bruma",
+      "culture_overrides": {
+        "notable_laws": "quien muestra los primeros síntomas se traslada a la Casa de Cuarentena",
+        "attitude_to_outsiders": "reservado -el pueblo teme traer más contagio de fuera",
+        "tensions": "el pueblo está dividido entre respaldar el aislamiento de Herminda o el acompañamiento en casa que pide Amancio"
+      },
+      "detail": "observed",
+      "description_canonical": "Casas de madera húmeda envueltas en niebla desde el atardecer hasta media mañana, puertas marcadas con un paño blanco allí donde alguien fue trasladado a la Casa de Cuarentena."
+    },
+    {
+      "key": "casa_de_cuarentena",
+      "kind": "building",
+      "name": "La Casa de Cuarentena",
+      "parent": "bruma_honda",
+      "detail": "observed",
+      "description_canonical": "El antiguo granero del pueblo, reconvertido en catres separados por sábanas colgadas, donde Herminda atiende a quien muestra los primeros síntomas del cansancio."
+    },
+    {
+      "key": "capilla_amancio",
+      "kind": "building",
+      "name": "La Capilla Vieja",
+      "parent": "bruma_honda",
+      "detail": "sketch",
+      "sketch_text": "Un templo pequeño y frío donde Amancio reúne cada noche a quien quiera escucharlo, con velas encendidas por cada enfermo que no puede estar con los suyos."
+    },
+    {
+      "key": "dique_viejo",
+      "kind": "region",
+      "name": "El Dique Viejo",
+      "parent": "la_bruma",
+      "detail": "sketch",
+      "sketch_text": "Un terraplén de tierra y piedra, levantado hace más de un siglo, que mantiene la ciénaga a raya -con tramos recientes que ceden un poco más cada semana."
+    },
+    {
+      "key": "fosa_comun_vieja",
+      "kind": "building",
+      "name": "La Fosa Común Vieja",
+      "parent": "bruma_honda",
+      "detail": "sketch",
+      "sketch_text": "Piedras sin nombre, mucho más viejas que cualquier tumba individual del pueblo, que los ancianos asocian vagamente con 'la otra vez que la niebla se puso espesa'.",
+      "visibility": "dm_only"
+    },
+    {
+      "key": "cienaga_honda",
+      "kind": "region",
+      "name": "La Ciénaga Honda",
+      "parent": "la_bruma",
+      "detail": "sketch",
+      "sketch_text": "El agua estancada de la que sube la niebla cada noche -nadie en Bruma Honda la ha explorado a fondo en generaciones.",
+      "visibility": "dm_only"
+    }
+  ],
+  "factions": [
+    {
+      "key": "consejo_sanador",
+      "name": "El Consejo Sanador",
+      "description": "Herminda Coz y los pocos ayudantes que se atreven a trabajar con ella en la Casa de Cuarentena, sosteniendo un aislamiento estricto que cada semana cuesta más apoyo del pueblo.",
+      "seat": "casa_de_cuarentena",
+      "stance_party": 0,
+      "knows_about_party": false
+    },
+    {
+      "key": "familias_unidas",
+      "name": "Familias Unidas",
+      "description": "El grupo informal que Amancio reúne cada noche en la capilla, cada vez más numeroso, convencido de que separar a los enfermos de los suyos es un precio que Bruma Honda no debería seguir pagando.",
+      "seat": "capilla_amancio",
+      "stance_party": 0,
+      "knows_about_party": false
+    }
+  ],
+  "clocks": [
+    {
+      "faction": "consejo_sanador",
+      "agenda": "El brote crece más rápido de lo que la Casa de Cuarentena puede aislar, hasta que la propia cuarentena colapse por falta de espacio y de manos",
+      "progress": 3,
+      "threshold": 10,
+      "rate_per_game_day": 0.8,
+      "on_fire_event": {
+        "headline": "La Casa de Cuarentena se queda sin espacio -Herminda tiene que rechazar al siguiente enfermo que le traen",
+        "scope": "bruma_honda",
+        "consequence": "Familias Unidas exige de inmediato que todos los enfermos vuelvan a sus casas, con o sin el visto bueno de Herminda, y el pueblo pierde de golpe cualquier control real sobre el contagio."
+      }
+    }
+  ],
+  "quests": [
+    {
+      "key": "el_cansancio_que_no_cede",
+      "title": "El cansancio que no cede",
+      "description": "Un mal desconocido lleva cinco semanas extendiéndose por Bruma Honda, sin remedio conocido, mientras el pueblo se divide entre el aislamiento estricto y el acompañamiento en casa.",
+      "status": "active",
+      "next_step_known": true,
+      "completion_condition": "El grupo investiga la causa real del cansancio y actúa de forma que cambia visiblemente el curso del brote (encontrando un remedio, mediando entre Herminda y Amancio, o de otra forma que surja en juego) antes de que el reloj de la cuarentena se dispare."
+    },
+    {
+      "key": "la_fosa_comun_vieja",
+      "title": "La fosa común vieja",
+      "description": "Los ancianos del pueblo recuerdan, con vaguedad deliberada, 'la otra vez que la niebla se puso espesa', hace más de setenta años.",
+      "status": "unknown",
+      "next_step_known": false,
+      "visibility": "dm_only",
+      "completion_condition": "El grupo descubre qué pasó hace setenta años y si tiene relación real con el brote actual."
+    }
+  ],
+  "characters": [
+    {
+      "key": "pj_pj17",
+      "name": "Garrek",
+      "species": null,
+      "class": "clérigo 3",
+      "hp": 24,
+      "hp_max": 24
+    }
+  ]
+}

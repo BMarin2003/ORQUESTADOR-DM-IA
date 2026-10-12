@@ -1,0 +1,173 @@
+{
+  "_nota": "Par 07 (real) -- corpus real, no piloto. Tres PNJ: dos centrales con IBF completo en posturas igual de defendibles (perseguir con firmeza vs. exigir pruebas antes de acusar), ninguno es el culto en sí -- el verdadero peligro (Hijos del Umbral) queda deliberadamente sin cara visible en esta ficha, ver quests dm_only en world_par07.json. Un PNJ de paso con todo vacío a propósito, mismo molde que 'Petra'/'Nando' en pares anteriores.",
+
+  "bercelio": {
+    "_arquetipo": "Guardián duro cuya sospecha, sin pruebas, amenaza con fracturar el pueblo tanto como el propio culto oculto.",
+    "name": "Bercelio Nax",
+    "species": "humano",
+    "social_role": "capitán de la guardia de Umbral Hondo",
+    "appearance": "Cincuenta y pico, cicatriz de picana vieja en el antebrazo, siempre con un registro de guardia bajo el brazo.",
+    "location": "puesto_guardia",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 20,
+      "candor": 70,
+      "principle": 70,
+      "boldness": 80
+    },
+
+    "traits": ["no duerme bien desde el derrumbe que le quitó a su hermano", "interroga primero y confía después", "lleva una lista propia de sospechosos"],
+    "internal_contradiction": "Jura que solo quiere proteger Umbral Hondo de lo que sea que le esconde, y cada vecino que interroga sin pruebas reales lo acerca un poco más a convertirse en la amenaza de la que dice protegerlos.",
+    "taboos": ["dejar sin investigar un rumor sobre la mina", "hablar del derrumbe que le quitó a su hermano salvo que alguien lo mencione primero"],
+    "voice_notes": "Directo, preguntas cortas, repite la misma pregunta de tres formas distintas hasta que algo no cuadra.",
+    "stated_desire": "Que Umbral Hondo deje de esconderle algo.",
+    "actual_need": "Aceptar que no toda sospecha se resuelve con una lista de nombres.",
+    "fear": "Que lo que mató a su hermano en la mina siga ahí abajo, y que él sea el único que no puede probarlo.",
+
+    "ibf": {
+      "ideal_text": "Un pueblo que no se atreve a mirar de frente lo que le pasa está medio perdido ya.",
+      "ideal_tags": ["vigilancia", "verdad"],
+      "bond_text": "El puesto de guardia que reconstruyó casi solo tras el derrumbe, y los pocos guardias que todavía confían en su lista.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "puesto_guardia" },
+        { "type": "faction", "key": "guardia_umbral" }
+      ],
+      "flaw_text": "Confunde 'actuar' con 'sospechar de alguien concreto' -- rara vez considera que la mejor pista puede no señalar a ninguna persona.",
+      "flaw_tags": ["paranoia", "atajos"],
+      "flaw_exploit": "mostrarle_evidencia_que_no_señala_a_nadie_conocido"
+    },
+
+    "disposition": {
+      "affinity": 15,
+      "trust": 15,
+      "respect": 0,
+      "trust_ceiling": 75,
+      "_nota_topes": "Sube con pruebas concretas entregadas sin rodeos. Baja de golpe si el grupo protege a alguien que él ya sospecha sin explicar por qué, aunque no cierra el techo del todo -- responde a hechos, no a lealtades declaradas."
+    },
+
+    "knowledge": [
+      { "fact": "Tres vecinos han empezado a comportarse distinto en el último mes, y él ya los vigila de cerca", "learned_at_turn": 0 },
+      { "fact": "La Capilla Vieja lleva más de una generación abandonada, pero él ha visto luz ahí dos veces este mes", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Bercelio ya tiene una lista escrita a mano de ocho nombres 'sospechosos', armada solo con rumores y coincidencias, que planea usar para pedir una redada general si nadie le trae algo mejor antes de la próxima luna nueva.",
+        "reveal_condition": "Solo si alguien de su total confianza se la pide directamente, o si el grupo lo sorprende escribiéndola en el puesto de guardia.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "pruebas concretas y disposición a investigar sin miedo. Indiferente a la simpatía sin nada detrás."
+  },
+
+  "sonia": {
+    "_arquetipo": "Curandera que defiende la evidencia sobre el rumor, sin saber que ese mismo principio ya protege a quien no debería.",
+    "name": "Sonia Muriel",
+    "species": "humana",
+    "social_role": "curandera de Umbral Hondo",
+    "appearance": "Cuarenta y tantos, manos manchadas de tinturas, siempre con un cuaderno de síntomas a medio llenar.",
+    "location": "consultorio_sonia",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 70,
+      "candor": 55,
+      "principle": 65,
+      "boldness": 35
+    },
+
+    "traits": ["anota cada síntoma raro que ve, aunque no entienda qué significa", "no cree en castigar a nadie sin pruebas", "confía demasiado en la gente que conoce de toda la vida"],
+    "internal_contradiction": "Defiende que nadie merece ser acusado sin pruebas, y no se ha permitido considerar en serio que alguien tan cercano a ella -su propio aprendiz- podría ser justo a quien está protegiendo con ese mismo principio.",
+    "taboos": ["denunciar a alguien por rumor", "cerrarle la puerta a un paciente, sea quien sea"],
+    "voice_notes": "Calmada, hace muchas preguntas antes de opinar. Trata a cualquiera, sospechoso o no, como paciente primero.",
+    "stated_desire": "Que Bercelio deje de tratar a todo el pueblo como sospechoso.",
+    "actual_need": "Mirar de frente lo que ha estado evitando ver en su propio consultorio.",
+    "fear": "Descubrir que su confianza ciega ya protegió a quien no debía.",
+
+    "ibf": {
+      "ideal_text": "Acusar sin pruebas no es justicia, es solo miedo con otro nombre.",
+      "ideal_tags": ["evidencia", "compasión"],
+      "bond_text": "Su aprendiz, a quien formó ella misma desde niño, y el consultorio donde ha tratado a medio pueblo.",
+      "bond_strength": 75,
+      "bond_targets": [
+        { "type": "location", "key": "consultorio_sonia" }
+      ],
+      "flaw_text": "Le cuesta sospechar de alguien que quiere, incluso cuando la evidencia empieza a apuntar en esa dirección.",
+      "flaw_tags": ["negación", "lealtad_ciega"],
+      "flaw_exploit": "mostrarle_evidencia_concreta_contra_alguien_que_ella_quiere"
+    },
+
+    "disposition": {
+      "affinity": 30,
+      "trust": 35,
+      "respect": 0,
+      "trust_ceiling": 85,
+      "_nota_topes": "Sube con paciencia y trato justo hacia los sospechosos de Bercelio. Baja si el grupo acusa a alguien sin pruebas delante de ella, aunque no cierra el techo -- puede aprender a desconfiar si se lo demuestran con hechos."
+    },
+
+    "knowledge": [
+      { "fact": "Varios vecinos han pasado por su consultorio con el mismo cansancio raro e insomnio en el último mes", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Sonia sorprendió a su aprendiz mintiendo sobre dónde pasó una noche hace dos semanas, y decidió no volver a preguntar porque no quiere saber la respuesta.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ha notado algo raro en alguien cercano a ella.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "trato justo y disposición a curar sin hacer preguntas primero. Indiferente al rango o la autoridad."
+  },
+
+  "iker": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Petra Ilm' en Vega del Yelmo y 'Nando Prieto' en Poza Seca.",
+    "name": "Iker Sabas",
+    "species": "humano",
+    "social_role": "enciende y apaga los faroles de Umbral Hondo cada noche, con una ronda fija por las calles",
+    "appearance": "Delgado, siempre con una pértiga larga al hombro y una caja de yesca colgada del cinto.",
+    "location": "umbral_hondo",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctico. Habla de qué faroles hay que rellenar y qué calles quedan más oscuras esta semana.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a él por su cuenta en 3+ escenas, o lo nombra sin que el DM lo mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

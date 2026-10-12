@@ -1,0 +1,175 @@
+{
+  "_nota": "Par 23 (real) -- corpus real, no piloto. Dos PNJ centrales, posturas igual de defendibles (sentencia inmediata para cerrar el duelo vs. investigación completa antes de una sentencia irrevocable) en un proceso judicial serio y solemne. El PNJ de paso es la acusada, que guarda silencio a propósito y se promueve en cuanto el grupo la interrogue.",
+
+  "rosendo": {
+    "_arquetipo": "Capataz viudo y portavoz de las víctimas que exige sentencia -no por sed de venganza, sino porque el pueblo no puede seguir esperando sin romperse.",
+    "name": "Rosendo Pardo",
+    "species": "humano",
+    "social_role": "capataz de la mina y portavoz de las familias de los muertos",
+    "appearance": "Cincuenta y cinco años, hombros anchos encorvados, manos partidas de sal y un brazalete negro que no se ha quitado desde el primer entierro.",
+    "location": "casa_de_los_pardo",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 35,
+      "candor": 70,
+      "principle": 60,
+      "boldness": 75
+    },
+
+    "traits": ["recibe cada tarde a las familias en su cocina", "conoce los treinta y un nombres de memoria y los recita si alguien duda", "no se sienta nunca en la silla de su mujer"],
+    "internal_contradiction": "Exige justicia para los muertos con la fuerza de quien lo ha perdido todo y, en el fondo, teme que la sentencia no le devuelva nada y que la persona que condenen no sea la que de verdad los mató.",
+    "taboos": ["que se hable de los muertos como cifras", "que un forastero decida por el pueblo sin conocerlo"],
+    "voice_notes": "Grave y contenido, de frases cortas. Dice los nombres de los muertos con una precisión casi litúrgica, y nunca alza la voz aunque tiemble.",
+    "stated_desire": "Que el Tribunal dicte sentencia sin más demora y que las familias puedan por fin cerrar el duelo.",
+    "actual_need": "Enfrentar que quizá la verdad que necesita para descansar sea distinta de la que cree tener, y que la venganza no sea justicia.",
+    "fear": "Que el pueblo pierda la paciencia antes de que llegue la sentencia y ocurra algo que ya no tenga remedio.",
+
+    "ibf": {
+      "ideal_text": "Treinta y un vecinos no esperan; una justicia que llega tarde es una forma más de abandonarlos.",
+      "ideal_tags": ["justicia", "duelo"],
+      "bond_text": "Las familias de los treinta y un muertos, sobre todo la suya: su mujer y su hermano, a quienes enterró la misma semana.",
+      "bond_strength": 90,
+      "bond_targets": [
+        { "type": "location", "key": "plaza_de_los_treinta_y_uno" },
+        { "type": "faction", "key": "familias_de_los_muertos" }
+      ],
+      "flaw_text": "Confunde tener derecho a exigir justicia con tener derecho a que sea cualquier justicia: le cuesta aceptar que una investigación más larga pueda respetar mejor a los muertos.",
+      "flaw_tags": ["dolor", "urgencia"],
+      "flaw_exploit": "mostrarle_que_una_sentencia_equivocada_deshonra_a_los_muertos_mas_que_un_retraso"
+    },
+
+    "disposition": {
+      "affinity": 5,
+      "trust": 10,
+      "respect": 0,
+      "trust_ceiling": 75,
+      "_nota_topes": "Sube con quien escucha los nombres de los muertos y muestra respeto real por su duelo. Baja con quien parece proteger a la acusada por encima de las víctimas, aunque no cierra el techo -- puede esperar si se le muestra que la espera respeta a los muertos."
+    },
+
+    "knowledge": [
+      { "fact": "Treinta y un vecinos murieron en una semana tras comer sal del último lote de la refinería", "learned_at_turn": 0 },
+      { "fact": "Se detuvo a una sola persona, Inés Solana, que trabajó en la sala de purificación ese lote", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Tres semanas antes de las muertes, Rosendo recibió de un minero de la galería inferior un aviso sobre agua verdosa en la sal y lo archivó sin comprobarlo por no retrasar el pedido de la temporada; carga con esa culpa y no se lo ha dicho a nadie.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si hubo advertencias antes de las muertes.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "respeto sincero por los muertos y sus familias, sin discursos. Indiferente a los tecnicismos que no nombren a nadie."
+  },
+
+  "aldonza": {
+    "_arquetipo": "Defensora de oficio que exige investigación completa -no por convicción de la inocencia, sino porque una sentencia irrevocable dictada a ciegas es otra clase de crimen.",
+    "name": "Aldonza Cárcava",
+    "species": "humana",
+    "social_role": "abogada nombrada de oficio para la defensa de Inés Solana",
+    "appearance": "Cuarenta y ocho años, toga negra raída en los codos, gafas de alambre y un legajo con cintas rojas que no suelta ni para comer.",
+    "location": "sal_negra",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 40,
+      "candor": 60,
+      "principle": 85,
+      "boldness": 45
+    },
+
+    "traits": ["lee cada documento dos veces y subraya en rojo lo que falta", "nunca discute con las familias de las víctimas a menos que se lo pidan", "duerme pocas horas y se le nota en la voz"],
+    "internal_contradiction": "Pide investigar a fondo en nombre de la verdad y, en el fondo, teme que lo que se descubra no salve a su defendida y sí ponga al pueblo contra ella.",
+    "taboos": ["ocultar una prueba al tribunal", "hablar de su cliente en presencia de las víctimas sin respeto"],
+    "voice_notes": "Serena y precisa, con una calma que roza la frialdad. Cuando algo la emociona baja la voz y elige cada palabra despacio.",
+    "stated_desire": "Que el Tribunal no dicte sentencia sin una investigación completa de cómo llegó el veneno a la sal.",
+    "actual_need": "Aceptar que la verdad puede no salvar a su cliente y que aun así merece ser buscada, y decidir qué está dispuesta a arriesgar para encontrarla.",
+    "fear": "Que la sentencia sea irrevocable y que, cuando salga la verdad, ya no haya nada que corregir.",
+
+    "ibf": {
+      "ideal_text": "Una sentencia que no admite apelación exige una certeza que este proceso todavía no tiene; condenar sin ella es repetir el daño con solemnidad.",
+      "ideal_tags": ["verdad", "procedimiento"],
+      "bond_text": "La defensa de Inés Solana, la única persona del pueblo dispuesta a hablar con ella cuando no habla con nadie.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "carcel_del_pueblo" },
+        { "type": "location", "key": "sala_del_tribunal" }
+      ],
+      "flaw_text": "Se aferra tanto al procedimiento que a veces olvida que el pueblo también sufre en cada día de espera, y su prudencia puede sonar a desprecio.",
+      "flaw_tags": ["rigidez", "distancia"],
+      "flaw_exploit": "mostrarle_que_una_investigacion_con_plazo_y_a_la_vista_del_pueblo_respeta_tanto_la_verdad_como_el_duelo"
+    },
+
+    "disposition": {
+      "affinity": 15,
+      "trust": 15,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con quien respeta el procedimiento y busca la verdad sin prejuicios. Baja con quien exige sentencia antes de examinar las pruebas, aunque no cierra el techo -- puede aceptar un plazo razonable si se le da una investigación seria."
+    },
+
+    "knowledge": [
+      { "fact": "La acusada no ha dicho una sola palabra en su defensa desde su detención", "learned_at_turn": 0 },
+      { "fact": "La galería inferior de la mina lleva tres meses cerrada por una inundación", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Aldonza posee una hoja del cuaderno de lotes que muestra un óxido inusual en el agua de la refinería y que apunta a la galería inferior; no la ha presentado al tribunal porque implica a los dueños de la mina y teme que el pueblo, al saberlo, no crea en la inocencia de Inés sino en una conspiración, y empeore su situación.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si tiene pruebas de otra causa para el veneno.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "rigor, respeto por el procedimiento y disposición a buscar la verdad aunque cueste. Indiferente a los gestos dramáticos sin sustento."
+  },
+
+  "ines": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito: la acusada, que guarda silencio. Se promueve a persistente en cuanto el grupo la interrogue, y entonces se le genera IBF completo.",
+    "name": "Inés Solana",
+    "species": "humana",
+    "social_role": "refinadora de la sala de purificación, acusada de contaminar el lote de sal",
+    "appearance": "Treinta y dos años, muy delgada, manos agrietadas de sal, pelo recogido en una trenza sin cuidar y la mirada fija en un punto de la pared.",
+    "location": "carcel_del_pueblo",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Callada. Responde con monosílabos o con un silencio, y solo se detiene cuando alguien nombra a su madre.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo la interroga, vuelve a ella por su cuenta en 2+ escenas, o la nombra sin que el DM la mencione primero, se promueve a persistente y se le genera IBF completo. Verdad oculta (dm_only): Inés vio agua verdosa en las calderas hace tres meses, se lo dijo al maestro de la mina, y calla porque este amenazó con desahuciar a su madre enferma."
+  }
+}

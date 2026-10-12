@@ -1,0 +1,175 @@
+{
+  "_nota": "Par 19 (real) -- corpus real, no piloto. Dos PNJ centrales, posturas igual de defendibles (resistir hasta el socorro vs. aceptar los términos mientras se ofrecen) en un asedio con plazo de rendición, tono heroico y serio, sin villano. Un PNJ de paso con todo vacío a propósito.",
+
+  "veleda": {
+    "_arquetipo": "Comandante que resiste -no por orgullo, sino porque cree que rendir las minas bajo amenaza es perder la ciudad aunque se salve a la gente.",
+    "name": "Veleda Hosco",
+    "species": "humana",
+    "social_role": "comandante de la guarnición de Karhad",
+    "appearance": "Cincuenta años, cicatriz que le cruza la ceja, armadura de placas que no se quita desde el primer día del sitio y una voz baja que hace callar a los demás.",
+    "location": "cuartel_de_la_guarnicion",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 25,
+      "candor": 55,
+      "principle": 85,
+      "boldness": 85
+    },
+
+    "traits": ["recorre la muralla cada amanecer sin escolta", "aprende el nombre de cada soldado nuevo antes de mandarlo al frente", "no come hasta que come su último soldado"],
+    "internal_contradiction": "Defiende resistir en nombre de la ciudad y, en el fondo, sabe que cada semana de resistencia se paga con vidas de las mismas personas que dice proteger.",
+    "taboos": ["rendirse sin una orden que crea legítima", "mentirle a un soldado sobre lo que le espera"],
+    "voice_notes": "Grave y sobria, frases cortas y sin adornos. Nunca promete lo que no está segura de poder cumplir; cuando calla, los demás esperan.",
+    "stated_desire": "Que Karhad resista hasta que llegue la columna del rey y siga siendo dueña de sus minas.",
+    "actual_need": "Aceptar que salvar a la gente y salvar a la ciudad pueden ser cosas distintas, y elegir cuál importa más.",
+    "fear": "Que la columna no venga y que su terquedad condene a quienes juró proteger.",
+
+    "ibf": {
+      "ideal_text": "Una ciudad que entrega lo suyo bajo amenaza no vuelve a ser dueña de nada, y sus hijos heredan la deuda.",
+      "ideal_tags": ["deber", "resistencia"],
+      "bond_text": "La guarnición de Karhad, cada uno de sus soldados, y la muralla que lleva noventa y seis días defendiendo.",
+      "bond_strength": 85,
+      "bond_targets": [
+        { "type": "location", "key": "muralla_alta" },
+        { "type": "faction", "key": "guarnicion_de_karhad" }
+      ],
+      "flaw_text": "Confunde no ceder con tener razón: tras noventa y seis días de mando sin descanso, le cuesta considerar que la opción que odia pueda ser la correcta.",
+      "flaw_tags": ["terquedad", "agotamiento"],
+      "flaw_exploit": "mostrarle_una_via_de_resistir_que_reduzca_el_coste_para_los_civiles_sin_rendir_las_minas"
+    },
+
+    "disposition": {
+      "affinity": 15,
+      "trust": 10,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con quien comparte el peso de la muralla y dice la verdad aunque duela. Baja con quien propone rendirse sin ofrecer otra cosa, aunque no cierra el techo -- puede escuchar una alternativa que proteja a la gente sin entregar las minas."
+    },
+
+    "knowledge": [
+      { "fact": "Los víveres duran unos cuarenta días con la ración actual", "learned_at_turn": 0 },
+      { "fact": "Cinco mensajeros del rey prometieron un socorro antes de la primera nevada; ninguno ha vuelto a entrar", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Hace nueve días llegó a Veleda, escondido en la suela de la bota de un último mensajero moribundo, un despacho lacrado de la capital que dice que la columna de socorro ha sido cancelada y que Karhad no será auxiliada este año; ella lo ha quemado y no se lo ha dicho a nadie, ni al Consejo ni a sus oficiales, porque cree que la esperanza es lo único que mantiene en pie la muralla.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ha recibido noticias de la capital en las últimas dos semanas.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "coraje compartido y verdad dicha sin adornos. Indiferente a la retórica y a la compasión sin propuesta concreta detrás."
+  },
+
+  "isidoro": {
+    "_arquetipo": "Maestre gremial que quiere aceptar los términos -no por cobardía, sino porque ha contado los niños que cada semana de sitio dejará sin comer.",
+    "name": "Isidoro Mena",
+    "species": "humano",
+    "social_role": "maestre del Consejo de los Gremios y portavoz de los civiles de Karhad",
+    "appearance": "Sesenta y pocos años, panadero mayor de oficio, manos grandes y enharinadas de costumbre aunque ya no quede harina, y unos ojos hundidos de dormir poco.",
+    "location": "casa_del_consejo",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 70,
+      "candor": 55,
+      "principle": 65,
+      "boldness": 30
+    },
+
+    "traits": ["lleva la cuenta de las raciones en un cuaderno que no suelta", "reparte primero a los niños y último a sí mismo", "habla siempre con las palmas abiertas, como quien no quiere asustar"],
+    "internal_contradiction": "Defiende aceptar los términos de la Marquesa por compasión, y en el fondo teme que rendirse sea el principio de otra clase de sufrimiento que no sabe medir.",
+    "taboos": ["dejar que un niño pase hambre mientras hay soldados que comen", "traicionar la confianza del Consejo"],
+    "voice_notes": "Suave y cansado, con una calidez que a veces se quiebra. Explica las cosas con números concretos y con nombres de familias, nunca con abstracciones.",
+    "stated_desire": "Que Karhad acepte los términos de la Marquesa mientras aún los ofrece y que los civiles salgan con vida.",
+    "actual_need": "Reconocer que no todo lo que se pierde puede recuperarse después, y que las minas también son el futuro de esos mismos niños.",
+    "fear": "Que la ciudad se obstine hasta que el hambre elija por todos y no quede nadie a quien salvar.",
+
+    "ibf": {
+      "ideal_text": "Una ciudad son sus habitantes; las piedras y la plata se reconstruyen, las personas que mueren de hambre no.",
+      "ideal_tags": ["compasion", "vida"],
+      "bond_text": "El Consejo de los Gremios y las familias de Karhad, a las que conoce una por una desde que empezó a repartir el pan.",
+      "bond_strength": 80,
+      "bond_targets": [
+        { "type": "location", "key": "granero_mayor" },
+        { "type": "faction", "key": "consejo_de_los_gremios" }
+      ],
+      "flaw_text": "Se fía demasiado de la palabra del enemigo por miedo a la alternativa, y le cuesta considerar que los términos de la Marquesa puedan ser una trampa.",
+      "flaw_tags": ["ingenuidad", "miedo"],
+      "flaw_exploit": "plantearle_que_se_pidan_garantias_verificables_antes_de_aceptar_nada"
+    },
+
+    "disposition": {
+      "affinity": 25,
+      "trust": 20,
+      "respect": 0,
+      "trust_ceiling": 85,
+      "_nota_topes": "Sube con quien se preocupa por los civiles y ayuda con el racionamiento. Baja con quien trata la vida de los civiles como un coste aceptable, aunque no cierra el techo -- puede aceptar resistir si se le muestra un plan que alimente a la ciudad."
+    },
+
+    "knowledge": [
+      { "fact": "El Granero Mayor tiene la planta baja vacía y la alta a medio llenar", "learned_at_turn": 0 },
+      { "fact": "Los términos de capitulación ofrecen salida libre a los civiles con lo que puedan cargar", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Isidoro ha enviado en secreto, por la poterna del carbonero, a su sobrino con un mensaje para el campamento de la Marquesa pidiendo garantías por escrito para los civiles y para el gremio de panaderos; no se lo ha dicho a la comandante porque sabe que lo consideraría traición.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ha tenido algún contacto con los sitiadores.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "compasión concreta hacia los civiles y ayuda práctica con el racionamiento. Indiferente al heroísmo sin víveres detrás."
+  },
+
+  "ciro": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Nieves Botel' y 'Honorio Zapata' en pares anteriores.",
+    "name": "Ciro Balma",
+    "species": "humano",
+    "social_role": "centinela de la puerta de Karhad desde hace once años",
+    "appearance": "Cuarenta y tantos, capa gastada, ojos de vigía y una lanza que lleva más tiempo con él que su propia familia.",
+    "location": "karhad",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctico. Habla de qué se mueve en el campamento enemigo y de qué turno de guardia toca a quién.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a él por su cuenta en 3+ escenas, o lo nombra sin que el DM lo mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

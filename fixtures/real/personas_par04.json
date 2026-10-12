@@ -1,0 +1,172 @@
+{
+  "_nota": "Par 04 (real) -- corpus real, no piloto. Tres PNJ, mismo molde que Par 01/02/03: dos centrales con IBF completo en posturas igual de defendibles, y un PNJ de paso con todo vacío a propósito. A diferencia de Par 03 (heroic, amenaza externa clara), aquí ninguno de los dos centrales sabe con certeza qué es la amenaza -- el conflicto es entre actuar ya sin entender del todo (Toribio) y seguir intentando entender antes de actuar (Mirela), acorde al tono light y a la estructura de misterio de este par.",
+
+  "mirela": {
+    "_arquetipo": "Guardiana sin instrucción completa, sostiene un ritual que no domina del todo por miedo a que el pueblo deje de confiar en el faro si lo admite.",
+    "name": "Mirela Sanz",
+    "species": "humana",
+    "social_role": "guardiana del Faro Viejo, heredó el puesto de su madre hace ocho meses",
+    "appearance": "Veintipocos, manos con quemaduras pequeñas de aceite de lámpara, sube y baja la escalera del faro tantas veces al día que ya no necesita mirar los escalones.",
+    "location": "faro_viejo",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 45,
+      "candor": 40,
+      "principle": 80,
+      "boldness": 45
+    },
+
+    "traits": ["cumple el ritual cada noche pase lo que pase", "evita hablar de cuánto no sabe", "observa antes de responder"],
+    "internal_contradiction": "Sigue cada noche un ritual que su madre nunca terminó de explicarle, convencida de que hacerlo bien es lo único que puede ofrecerle a Caleta Lumbre, y al mismo tiempo sabe que 'hacerlo bien' es, en su caso, una suposición que nadie puede confirmarle.",
+    "taboos": ["faltar una noche al encendido del faro, por cualquier motivo", "dejar que alguien suba a la lámpara mientras ella no está"],
+    "voice_notes": "Habla poco y elige bien las palabras, como quien no quiere prometer más de lo que puede cumplir. Cuando no sabe algo, cambia de tema en vez de admitirlo.",
+    "stated_desire": "Que el faro siga encendido cada noche, exactamente como debe.",
+    "actual_need": "Pedir ayuda para entender el amparo antes de que alguien más pague el precio de que ella no lo entienda del todo.",
+    "fear": "Que se demuestre que, desde que murió su madre, el faro nunca ha estado realmente protegiendo a nadie.",
+
+    "ibf": {
+      "ideal_text": "Un guardián que no aparece una noche es una promesa rota, y Caleta Lumbre ya perdió a alguien por una promesa así.",
+      "ideal_tags": ["deber", "constancia"],
+      "bond_text": "Las notas incompletas de su madre, guardadas en el cuarto de la lámpara, que Mirela relee cada noche buscando lo que se quedó sin escribir.",
+      "bond_strength": 75,
+      "bond_targets": [
+        { "type": "location", "key": "faro_viejo" }
+      ],
+      "flaw_text": "Prefiere que la crean segura de lo que hace antes que pedir ayuda y admitir cuánto del ritual sostiene solo por costumbre, no por comprensión real.",
+      "flaw_tags": ["orgullo", "miedo_a_pedir_ayuda"],
+      "flaw_exploit": "pedirle_que_muestre_las_notas_incompletas_de_su_madre"
+    },
+
+    "disposition": {
+      "affinity": 15,
+      "trust": 15,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con paciencia demostrada y disposición a investigar antes de actuar. Baja de golpe si el grupo presiona por entrar al faro o tocar la lámpara sin su permiso, aunque no cierra el techo -- puede aprender a confiar si se le da tiempo y se le demuestra intención genuina de entender, no de destruir."
+    },
+
+    "knowledge": [
+      { "fact": "Las desapariciones coinciden siempre con 'la marea que falta', nunca con una marea normal", "learned_at_turn": 0 },
+      { "fact": "Su madre murió antes de terminar de explicarle el ritual completo del amparo", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Mirela sospecha, sin poder probarlo, que ha estado saltándose sin saberlo un paso del ritual desde hace semanas -justo desde que empezaron las desapariciones- pero no se atreve a comprobarlo sola por miedo a empeorarlo si se equivoca de nuevo.",
+        "reveal_condition": "Solo si alguien le demuestra paciencia real y le ofrece ayudar a revisar el ritual paso a paso, nunca si se lo exigen o la presionan.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "paciencia y disposición a entender antes de actuar. Indiferente a la fuerza o a las órdenes."
+  },
+
+  "toribio": {
+    "_arquetipo": "Contrapeso moral en duelo -no un fanático, un hermano que no puede esperar a averiguar si tiene razón.",
+    "name": "Toribio Nas",
+    "species": "humano",
+    "social_role": "pescador, hermano mayor de Yago Nas (desaparecido hace doce noches)",
+    "appearance": "Cuarenta y tantos, manos encallecidas de toda una vida remendando redes que ahora deja sin remendar, ojeras que no son de una sola noche mala.",
+    "location": "cabana_toribio",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 35,
+      "candor": 75,
+      "principle": 55,
+      "boldness": 70
+    },
+
+    "traits": ["dice exactamente lo que piensa", "no ha vuelto a salir a pescar desde la desaparición de Yago", "convence más por dolor sincero que por argumento"],
+    "internal_contradiction": "Está seguro en voz alta de que el Faro Viejo es la causa de todo, y en privado sabe que esa seguridad es, en parte, lo único que le impide quedarse quieto esperando una respuesta que puede no llegar nunca.",
+    "taboos": ["hablar de Yago en pasado", "dejar pasar una noche de marea que falta sin proponer algo, lo que sea"],
+    "voice_notes": "Directo, sin rodeos, a veces más alto de lo que la conversación pide. No usa títulos ni formalidades con nadie del pueblo.",
+    "stated_desire": "Que nadie más en Caleta Lumbre pierda a alguien como él perdió a Yago.",
+    "actual_need": "Que alguien le confirme -o le desmienta, pero con pruebas reales- que actuar ya es mejor que seguir esperando.",
+    "fear": "Que Yago siga vivo al otro lado de la marea y que él, por presionar en la dirección equivocada, sea quien cierre la única puerta para traerlo de vuelta.",
+
+    "ibf": {
+      "ideal_text": "Esperar a entenderlo todo es un lujo que Caleta Lumbre ya no se puede permitir -cada noche que se espera es una noche más de riesgo.",
+      "ideal_tags": ["urgencia", "protección"],
+      "bond_text": "Yago, su hermano menor, desaparecido hace doce noches en la cala.",
+      "bond_strength": 90,
+      "bond_targets": [
+        { "type": "location", "key": "caleta_lumbre" }
+      ],
+      "flaw_text": "Nunca ha subido al Faro Viejo ni ha visto de cerca en qué consiste realmente el ritual de Mirela -su certeza de que el faro es la causa es sincera, pero no está basada en nada que haya comprobado él mismo.",
+      "flaw_tags": ["dolor", "impaciencia"],
+      "flaw_exploit": "proponerle_subir_al_faro_a_ver_el_ritual_con_sus_propios_ojos_antes_de_destruir_nada"
+    },
+
+    "disposition": {
+      "affinity": 20,
+      "trust": 20,
+      "respect": 0,
+      "trust_ceiling": 85,
+      "_nota_topes": "Sube con cualquier avance real y visible hacia traer de vuelta a Yago o entender qué le pasó. Baja si el grupo se pone del lado de 'esperar sin hacer nada', aunque no cierra el techo -- lo que quiere de verdad es una respuesta, no necesariamente violencia."
+    },
+
+    "knowledge": [
+      { "fact": "Yago desapareció hace doce noches, en la cala, durante la marea que falta, y es de los dos que no han vuelto", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Toribio ya ha reunido, en privado, a dos o tres vecinos dispuestos a subir al Faro Viejo por la fuerza si el consejo del muelle no decide nada antes de la próxima marea que falta -no se lo ha dicho todavía al resto del pueblo.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente qué piensa hacer si nadie más actúa, o si el grupo lo sorprende reuniéndose con esos vecinos.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "acción visible y honestidad directa. Indiferente a la cautela sin resultados que mostrar."
+  },
+
+  "alba": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, igual que 'Petra' en Vega del Yelmo, 'Yulen' en Alto Ferrena y 'Mira' en Puerto Salazón.",
+    "name": "Alba Ferrís",
+    "species": "humana",
+    "social_role": "repara redes de pesca en el muelle, a cambio de parte de la pesca del día",
+    "appearance": "Manos siempre manchadas de resina de red, una bobina de hilo colgada al cinto que nunca suelta.",
+    "location": "muelle_pesquero",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctica. Habla de redes, nudos y a quién le toca remiendo esta semana.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a ella por su cuenta en 3+ escenas, o la nombra sin que el DM la mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

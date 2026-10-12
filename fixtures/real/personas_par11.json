@@ -1,0 +1,174 @@
+{
+  "_nota": "Par 11 (real) -- corpus real, no piloto. Dos PNJ centrales, posturas igual de defendibles (fe en el rito vs. prudencia terrenal) frente a un presagio cuyo significado real queda deliberadamente sin resolver. Un PNJ de paso con todo vacío a propósito.",
+
+  "illian": {
+    "_arquetipo": "Sabia devota que interpreta el presagio con sinceridad total, no con cálculo ni ambición personal.",
+    "name": "Illian Vasto",
+    "species": "humana",
+    "social_role": "sabia de mayor rango de la Orden del Cielo",
+    "appearance": "Setenta y tantos, túnica clara cubierta de marcas cosidas a mano que representan constelaciones, ojos entrecerrados de tanto mirar hacia arriba.",
+    "location": "observatorio_viejo",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 45,
+      "candor": 65,
+      "principle": 85,
+      "boldness": 60
+    },
+
+    "traits": ["lee el cielo cada noche sin faltar una, presagio o no", "cita crónicas de memoria con precisión exacta", "no eleva la voz para convencer, deja que el silencio pese"],
+    "internal_contradiction": "Sostiene la Ofrenda como la única respuesta honesta al presagio, y en privado teme que su certeza sea, en parte, la misma certeza con la que otros sabios de la Orden se equivocaron en presagios pasados que las crónicas no registran con orgullo.",
+    "taboos": ["restar importancia a una lectura del cielo, propia o ajena", "iniciar un rito sagrado sin el pueblo enterado y de acuerdo"],
+    "voice_notes": "Pausada, casi litúrgica. Se refiere a los fenómenos celestes con nombres antiguos que pocos en el pueblo recuerdan ya.",
+    "stated_desire": "Que Cima Clara complete la Ofrenda antes de que se cierre la ventana del presagio.",
+    "actual_need": "Aceptar que su lectura, por sincera que sea, podría no ser la única verdad posible.",
+    "fear": "Que el pueblo no complete la Ofrenda a tiempo, y que el desastre que teme llegue de todas formas sin que nadie lo haya intentado evitar.",
+
+    "ibf": {
+      "ideal_text": "Un presagio de este tamaño no se ignora esperando a estar seguro del todo -para cuando la certeza llega, el momento de actuar ya pasó.",
+      "ideal_tags": ["fe", "deber"],
+      "bond_text": "El Observatorio Viejo y cada crónica de presagios que ha estudiado toda su vida, generación tras generación de sabios antes que ella.",
+      "bond_strength": 75,
+      "bond_targets": [
+        { "type": "location", "key": "observatorio_viejo" },
+        { "type": "faction", "key": "orden_del_cielo" }
+      ],
+      "flaw_text": "No ha revisado el Archivo de Presagios entero en años -cita de memoria solo los fragmentos que respaldan la Ofrenda, y evita los que podrían contradecirla.",
+      "flaw_tags": ["confirmacion_selectiva", "orgullo"],
+      "flaw_exploit": "mostrarle_un_fragmento_del_archivo_que_contradice_su_lectura"
+    },
+
+    "disposition": {
+      "affinity": 20,
+      "trust": 20,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con respeto genuino hacia el rito y disposición a ayudar con la Ofrenda. Baja si el grupo descarta el presagio como superstición sin más, aunque no cierra el techo -- puede escuchar una lectura distinta si viene respaldada con algo real."
+    },
+
+    "knowledge": [
+      { "fact": "Nueve noches atrás, dos soles asomaron a la vez sobre la cresta oriental durante casi un minuto", "learned_at_turn": 0 },
+      { "fact": "La ventana para completar la Ofrenda se cierra con la próxima luna llena", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Illian encontró, hace años, una entrada breve y ambigua en el Archivo de Presagios sobre un fenómeno parecido al de los dos soles -y decidió no mencionarla nunca porque el registro no confirma que la Ofrenda de aquella vez sirviera de nada.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si existe un registro de un presagio parecido en el pasado.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "respeto genuino hacia el rito y disposición a participar sin cinismo. Indiferente a la fuerza o la autoridad terrenal."
+  },
+
+  "rodrigo": {
+    "_arquetipo": "Líder práctico que no niega el presagio, pero se niega a arriesgar el invierno del pueblo en un rito sin garantías.",
+    "name": "Rodrigo Fenz",
+    "species": "humano",
+    "social_role": "presidente del concejo de Cima Clara desde hace una década",
+    "appearance": "Cuarenta y tantos, manos de constructor todavía activas, siempre con un tablón de cuentas de provisiones bajo el brazo.",
+    "location": "casa_del_concejo",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 40,
+      "candor": 70,
+      "principle": 60,
+      "boldness": 55
+    },
+
+    "traits": ["revisa las reservas de invierno cada semana sin faltar una", "prefiere reforzar algo real a esperar algo incierto", "escucha a la Orden con respeto genuino, aunque no comparta su conclusión"],
+    "internal_contradiction": "Defiende la prudencia terrenal como la responsabilidad que le corresponde al concejo, y en privado no está del todo seguro de que reforzar graneros sirva de algo si el presagio de Illian resulta ser literal.",
+    "taboos": ["gastar provisiones de invierno sin un plan claro de por qué", "descartar a la Orden del Cielo en público sin haberla escuchado antes"],
+    "voice_notes": "Práctico, cita cifras de provisiones y turnos de trabajo. Trata a Illian con un respeto formal que no siempre le devuelve con la misma calidez.",
+    "stated_desire": "Que Cima Clara llegue al invierno con reservas suficientes, pase lo que pase con el presagio.",
+    "actual_need": "Aceptar que la seguridad terrenal no cubre todos los riesgos que el pueblo enfrenta.",
+    "fear": "Que el pueblo pierda semanas de trabajo real en la Ofrenda, y que el invierno llegue de todas formas sin haberse preparado a tiempo.",
+
+    "ibf": {
+      "ideal_text": "Preparar lo que se puede tocar y medir es la única forma honesta de proteger a un pueblo cuando nadie está seguro de lo que viene.",
+      "ideal_tags": ["prudencia", "responsabilidad"],
+      "bond_text": "Los graneros y defensas que ha reforzado durante una década de concejo, y cada familia que confía en que el invierno no los tome desprevenidos.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "casa_del_concejo" },
+        { "type": "faction", "key": "concejo_cima_clara" }
+      ],
+      "flaw_text": "Subestima cuánto pesa la fe del pueblo en la Orden del Cielo -trata el presagio como un problema de recursos cuando, para media Cima Clara, es un problema del alma.",
+      "flaw_tags": ["escepticismo_excesivo", "distancia"],
+      "flaw_exploit": "mostrarle_cuanto_le_importa_el_presagio_a_la_gente_que_el_deberia_representar"
+    },
+
+    "disposition": {
+      "affinity": 25,
+      "trust": 25,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con propuestas concretas de preparación terrenal. Baja si el grupo respalda la Ofrenda completa sin considerar el costo en provisiones, aunque no cierra el techo -- puede apoyar el rito si ve una forma de hacerlo sin arriesgar el invierno."
+    },
+
+    "knowledge": [
+      { "fact": "Las reservas de invierno no alcanzan para sostener semanas de trabajo perdido en una peregrinación completa", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Rodrigo ya ha empezado, en secreto, a reforzar los graneros del pueblo por su cuenta, sin esperar a que el concejo vote nada -no lo ha anunciado porque no quiere que parezca que ya dio por perdida la Ofrenda antes de que el pueblo decida.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ya está actuando por su cuenta antes de la votación del concejo.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "propuestas concretas y disposición a trabajar sin esperar permiso. Indiferente a la retórica sin plan detrás."
+  },
+
+  "prudencio": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Coral Nieva' e 'Ivo Manque' en pares anteriores.",
+    "name": "Prudencio Aza",
+    "species": "humano",
+    "social_role": "talla las marcas del calendario en la piedra del observatorio cada amanecer",
+    "appearance": "Anciano menudo, manos firmes pese a la edad, siempre con un cincel pequeño colgado del cinto.",
+    "location": "observatorio_viejo",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctico. Habla de qué marca toca tallar hoy y de cómo amaneció el cielo esta mañana.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a él por su cuenta en 3+ escenas, o lo nombra sin que el DM lo mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

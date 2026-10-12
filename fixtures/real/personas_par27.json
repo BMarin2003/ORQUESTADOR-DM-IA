@@ -1,0 +1,175 @@
+{
+  "_nota": "Par 27 (real) -- corpus real, no piloto. Dos PNJ centrales, posturas igual de defendibles (no detener la procesión vs. detenerla para cuidar de los enfermos de Berrocal) en una peregrinación solemne sin humor y sin villano. Un PNJ de paso con todo vacío a propósito.",
+
+  "anselmo": {
+    "_arquetipo": "Cofrade Mayor que sostiene la regla -no por dureza, sino porque cree que el camino solo vale si se cumple entero, sin excepciones que lo vacíen de sentido.",
+    "name": "Anselmo Vela",
+    "species": "humano",
+    "social_role": "Cofrade Mayor de la Cofradía de Portadores",
+    "appearance": "Sesenta y cinco años, hábito pardo desgastado, rostro de piedra y unas manos grandes y nudosas siempre apoyadas en la vara del féretro.",
+    "location": "campamento_de_la_procesion",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 30,
+      "candor": 55,
+      "principle": 90,
+      "boldness": 45
+    },
+
+    "traits": ["camina el primero y duerme el último, siempre a la vista del féretro", "no pronuncia una palabra de más ni siquiera fuera de la regla", "reza cada noche por los que no llegarán"],
+    "internal_contradiction": "Defiende la regla como lo único que da sentido al camino y, en el fondo, es el único que sabe que lo que carga no es lo que todos creen.",
+    "taboos": ["romper el silencio de la procesión sin necesidad grave", "abrir el féretro antes de llegar"],
+    "voice_notes": "Sobrio, grave y lento; habla poco y solo lo necesario. Cuando se le quiebra la voz, calla y espera a que pase.",
+    "stated_desire": "Que el féretro llegue a Alba Sorda en la noche del solsticio, sin detenerse, tal como manda la regla.",
+    "actual_need": "Confiar en que una regla vive mejor cuando se cumple con misericordia que cuando se cumple a rajatabla, y decidir qué lealtad debe primero.",
+    "fear": "Que el camino termine sin sentido, y que su vida entera de portador se haya gastado en llevar algo que no vale lo que costó.",
+
+    "ibf": {
+      "ideal_text": "Lo sagrado no se negocia por urgencia: una regla que se dobla cuando duele deja de ser una regla y se vuelve un consuelo.",
+      "ideal_tags": ["fidelidad", "regla"],
+      "bond_text": "La Cofradía de Portadores, cada hermano que ha caminado bajo la misma vara, y la memoria de Odilia de la Roca.",
+      "bond_strength": 90,
+      "bond_targets": [
+        { "type": "location", "key": "carreta_del_feretro" },
+        { "type": "faction", "key": "cofradia_de_portadores" }
+      ],
+      "flaw_text": "Se aferra a la letra de la regla porque teme lo que hay debajo si la suelta, y le cuesta reconocer cuándo el cumplimiento se ha convertido en una forma de no mirar.",
+      "flaw_tags": ["rigidez", "miedo"],
+      "flaw_exploit": "mostrarle_que_atender_a_los_enfermos_de_berrocal_no_rompe_la_regla_sino_que_la_cumple_en_su_espiritu"
+    },
+
+    "disposition": {
+      "affinity": 10,
+      "trust": 10,
+      "respect": 0,
+      "trust_ceiling": 70,
+      "_nota_topes": "Sube con quien respeta el silencio, carga con su parte y muestra recogimiento. Baja con quien exige detener la procesión sin respeto por la regla, aunque no cierra el techo -- puede ceder si se le ofrece una manera de cumplirla en su espíritu."
+    },
+
+    "knowledge": [
+      { "fact": "La procesión lleva diez días de retraso y el Paso del Lobo se cierra con la primera nieve fuerte", "learned_at_turn": 0 },
+      { "fact": "Berrocal tiene fiebre y setenta enfermos esperando en el camino", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "El féretro no contiene los restos de Odilia, que se perdieron en el incendio del monasterio hace treinta años; solo guarda una carta sellada de su mano que Anselmo nunca se ha atrevido a leer, y que dice que la Santa pedía ser enterrada sin procesión y que las ofrendas se dedicaran a los enfermos.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente qué contiene el féretro, o si consigue abrirlo.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "recogimiento, silencio y disposición a compartir el peso del camino. Indiferente a las prisas, al alarde y a la compasión que no cumpla la regla."
+  },
+
+  "odalys": {
+    "_arquetipo": "Superiora hospitalaria que quiere detener la procesión -no por rebeldía, sino porque cree que la Santa habría pasado la noche junto a los enfermos y no junto a su propio féretro.",
+    "name": "Madre Odalys Brena",
+    "species": "humana",
+    "social_role": "superiora de las Hospitalarias de Odilia",
+    "appearance": "Cincuenta y ocho años, hábito blanco cubierto de polvo de camino, manos rojas de tanto lavar y unos ojos cansados y muy despiertos.",
+    "location": "enfermeria_de_campana",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 75,
+      "candor": 65,
+      "principle": 70,
+      "boldness": 55
+    },
+
+    "traits": ["atiende a cada enfermo por su nombre y le pregunta de dónde viene", "duerme sentada junto a los jergones para oír si alguien la llama", "reza con las manos ocupadas"],
+    "internal_contradiction": "Exige detener la procesión en nombre de la compasión y, en el fondo, sabe que cada día de retraso es un riesgo para los propios portadores enfermos que ha estado atendiendo a escondidas.",
+    "taboos": ["pasar de largo ante un enfermo que pide ayuda", "faltar al respeto a la memoria de la Santa"],
+    "voice_notes": "Suave, directa y cansada, con una firmeza que no necesita alzar la voz. Habla con ejemplos de gente concreta, no con abstracciones.",
+    "stated_desire": "Que la procesión se detenga en Berrocal y atienda a los setenta enfermos antes de continuar.",
+    "actual_need": "Aceptar que la compasión también tiene un coste y que detener la procesión puede traer un daño que ella no está midiendo del todo.",
+    "fear": "Que la procesión pase de largo y que ella haya sido la que no supo impedirlo.",
+
+    "ibf": {
+      "ideal_text": "La Santa no enseñó a llegar a tiempo a ningún sitio; enseñó a quedarse junto al que sufre, aunque el camino espere.",
+      "ideal_tags": ["compasion", "servicio"],
+      "bond_text": "Las Hospitalarias de Odilia, las hermanas que trabajan con ella, y los enfermos a los que ha atendido durante cuarenta años.",
+      "bond_strength": 85,
+      "bond_targets": [
+        { "type": "location", "key": "enfermeria_de_campana" },
+        { "type": "faction", "key": "hospitalarias_de_odilia" }
+      ],
+      "flaw_text": "Le cuesta ver que su compasión puede ser también una forma de desafiar la regla de otros, y que su firmeza ante el sufrimiento a veces le impide escuchar razones de peso.",
+      "flaw_tags": ["obstinacion", "exceso_de_compasion"],
+      "flaw_exploit": "proponerle_una_solucion_que_atienda_a_los_enfermos_sin_dividir_ni_detener_la_procesion_entera"
+    },
+
+    "disposition": {
+      "affinity": 25,
+      "trust": 20,
+      "respect": 0,
+      "trust_ceiling": 85,
+      "_nota_topes": "Sube con quien se ocupa de los enfermos y comparte el trabajo de cuidarlos. Baja con quien pasa de largo ante el sufrimiento, aunque no cierra el techo -- puede aceptar seguir si los enfermos no quedan abandonados."
+    },
+
+    "knowledge": [
+      { "fact": "Berrocal tiene setenta enfermos y ningún médico", "learned_at_turn": 0 },
+      { "fact": "Las Hospitalarias tienen medicinas para unos treinta pacientes, no para setenta", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Un tercio de los portadores de la procesión ha contraído la misma fiebre de Berrocal en los últimos días y Odalys los está atendiendo a escondidas, ocultándolo al Cofrade Mayor porque sabe que no aceptaría detenerse por ellos y porque temería que se les ordenara caminar enfermos.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente por la salud de los portadores.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "compasión concreta, manos que trabajan y presencia junto a los enfermos. Indiferente a la ceremonia sin cuidado de los vivos."
+  },
+
+  "tibaldo": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Nieves Botel' y 'Eulalia Mora' en pares anteriores.",
+    "name": "Tibaldo Sierra",
+    "species": "humano",
+    "social_role": "joven portador de la varilla izquierda del féretro",
+    "appearance": "Diecisiete años, delgado y de hombros ya vencidos por el peso, capucha parda echada hacia atrás y ojos que lo miran todo sin decir nada.",
+    "location": "campamento_de_la_procesion",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctico. Habla en voz baja de cuánto pesa la vara y de qué turno de carga toca a quién.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a él por su cuenta en 3+ escenas, o lo nombra sin que el DM lo mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}
