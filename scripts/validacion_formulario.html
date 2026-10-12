@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evaluación ciega</title>
+<style>
+  :root { --fg:#1c1c1e; --bg:#f7f7f5; --card:#fff; --line:#d8d8d2; --acc:#2d5bd3; --dim:#6b6b66; --ok:#1f7a3f; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e8e8e4; --bg:#161618; --card:#202024; --line:#3a3a40; --acc:#7da0ff; --dim:#a0a09a; --ok:#5fc788; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.55 system-ui, sans-serif; }
+  header { position:sticky; top:0; background:var(--card); border-bottom:1px solid var(--line); padding:8px 16px; display:flex; gap:12px; align-items:center; flex-wrap:wrap; z-index:5; }
+  header b { flex:1; min-width:180px; }
+  button { font:inherit; padding:6px 12px; border:1px solid var(--line); background:var(--card); color:var(--fg); border-radius:6px; cursor:pointer; }
+  button.p { background:var(--acc); color:#fff; border-color:var(--acc); }
+  main { max-width:1200px; margin:0 auto; padding:16px; }
+  details { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:8px 12px; margin-bottom:12px; }
+  summary { cursor:pointer; font-weight:600; }
+  .cols { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  @media (max-width:800px) { .cols { grid-template-columns:1fr; } }
+  .col { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:12px; }
+  .col h2 { margin:0 0 8px; font-size:1.1rem; }
+  .previo { color:var(--dim); font-size:.9rem; border-left:3px solid var(--line); padding-left:8px; margin-bottom:10px; }
+  .t { margin-bottom:12px; }
+  .j { color:var(--acc); white-space:pre-wrap; font-size:.95rem; }
+  .dm p { margin:.4em 0; }
+  table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:8px; margin:12px 0; }
+  td, th { padding:6px 8px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; }
+  td.n { white-space:nowrap; }
+  .def { color:var(--dim); font-size:.85rem; }
+  label.r { margin-right:8px; white-space:nowrap; }
+  .fin { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:12px; }
+  .fin p { margin:.6em 0; }
+  textarea { width:100%; min-height:60px; font:inherit; background:var(--bg); color:var(--fg); border:1px solid var(--line); border-radius:6px; }
+  .ok { color:var(--ok); font-weight:600; }
+</style>
+</head>
+<body>
+<header>
+  <b id="titulo"></b>
+  <span id="avance"></span>
+  <button id="ant">← Anterior</button>
+  <button id="sig" class="p">Siguiente →</button>
+  <button id="exp">Exportar CSV</button>
+</header>
+<main>
+  <details id="rubrica"><summary>Rúbrica (1 = muy mal, 5 = muy bien)</summary><div id="rub"></div></details>
+  <details id="lore"><summary>Escenario (lore de la campaña)</summary><div id="lorec" class="dm"></div></details>
+  <div id="unidad"></div>
+</main>
+<script type="application/json" id="datos">__DATOS__</script>
+<script>
+"use strict";
+const D = JSON.parse(document.getElementById("datos").textContent);
+const CLAVE = "val_" + D.evaluador + "_" + D.fase;
+let S = { i: 0, r: {} };
+try { S = JSON.parse(localStorage.getItem(CLAVE)) || S; } catch (e) { /* sin almacenamiento: exportar seguido */ }
+const guardar = () => { try { localStorage.setItem(CLAVE, JSON.stringify(S)); } catch (e) {} };
+let t0 = Date.now();
+
+function el(tag, attrs, ...hijos) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (k === "class") e.className = v; else e.setAttribute(k, v);
+  }
+  for (const h of hijos.flat()) e.append(h);
+  return e;
+}
+function parrafos(txt) { return (txt || "").split(/\n{2,}/).filter(x => x.trim()).map(x => el("p", {}, x)); }
+function reg(u) { return (S.r[u.id] = S.r[u.id] || { seg: 0, p: {}, adivina: "", graves: [], nota: "" }); }
+function completa(u) { const r = S.r[u.id]; return !!r && D.dims.every(d => r.p[d[0] + "_A"] && r.p[d[0] + "_B"]) && !!r.adivina; }
+function tiempo(u) { const r = reg(u); r.seg += Math.round((Date.now() - t0) / 1000); t0 = Date.now(); }
+
+function columna(nombre, w) {
+  return el("div", { class: "col" },
+    el("h2", {}, "Texto " + nombre),
+    el("div", { class: "previo" }, el("b", {}, "Contexto previo (no se califica): "), ...parrafos(w.previo)),
+    w.turnos.map((t, i) => el("div", { class: "t" },
+      el("div", { class: "j" }, "Turno " + (i + 1) + " · Jugador: " + t.jugador),
+      el("div", { class: "dm" }, ...parrafos(t.dm)))));
+}
+
+function render() {
+  const u = D.unidades[S.i], r = reg(u);
+  t0 = Date.now();
+  document.getElementById("titulo").textContent = "Evaluación ciega · " + D.evaluador + " · " + D.fase.toUpperCase() + " · unidad " + (S.i + 1) + " de " + D.unidades.length;
+  document.getElementById("avance").textContent = D.unidades.filter(completa).length + " completas";
+  document.getElementById("lorec").replaceChildren(...parrafos(u.lore));
+  const rub = document.getElementById("rub");
+  rub.replaceChildren(...D.dims.map(d => el("p", {}, el("b", {}, d[0] + " · " + d[1] + ". "), d[2], el("br"), el("span", { class: "def" }, d[3]))));
+
+  const filas = D.dims.map(d => el("tr", {},
+    el("td", {}, el("b", {}, d[1]), el("div", { class: "def" }, d[2])),
+    ["A", "B"].map(lado => el("td", { class: "n" }, el("div", {}, "Texto " + lado),
+      [1, 2, 3, 4, 5].map(n => {
+        const inp = el("input", { type: "radio", name: d[0] + lado, value: n });
+        inp.checked = r.p[d[0] + "_" + lado] === n;
+        inp.onchange = () => { r.p[d[0] + "_" + lado] = n; guardar(); document.getElementById("avance").textContent = D.unidades.filter(completa).length + " completas"; };
+        return el("label", { class: "r" }, inp, " " + n);
+      })))));
+
+  const sel = el("select", {}, ...[["", "— elige —"], ["A", "El Texto A"], ["B", "El Texto B"], ["?", "No sé"]].map(([v, t]) => { const o = el("option", { value: v }, t); o.selected = r.adivina === v; return o; }));
+  sel.onchange = () => { r.adivina = sel.value; guardar(); document.getElementById("avance").textContent = D.unidades.filter(completa).length + " completas"; };
+  const graves = ["Otro idioma / palabras raras", "Repetición evidente", "Habla fuera de la ficción (meta-comentario)"].map(g => {
+    const c = el("input", { type: "checkbox" }); c.checked = r.graves.includes(g);
+    c.onchange = () => { r.graves = c.checked ? [...r.graves, g] : r.graves.filter(x => x !== g); guardar(); };
+    return el("label", { class: "r" }, c, " " + g);
+  });
+  const nota = el("textarea", { placeholder: "Comentarios (opcional): qué te llamó la atención, dudas con la rúbrica…" }); nota.value = r.nota;
+  nota.oninput = () => { r.nota = nota.value; guardar(); };
+
+  document.getElementById("unidad").replaceChildren(
+    el("div", { class: "cols" }, columna("A", u.A), columna("B", u.B)),
+    el("table", {}, el("tr", {}, el("th", {}, "Dimensión"), el("th", {}, "Texto A"), el("th", {}, "Texto B")), filas),
+    el("div", { class: "fin" },
+      el("p", {}, el("b", {}, "¿Cuál cree que es el sistema multiagente? "), sel),
+      el("p", {}, el("b", {}, "Problemas graves que notaste: "), ...graves),
+      nota));
+  window.scrollTo(0, 0);
+}
+
+function ir(d) {
+  tiempo(D.unidades[S.i]);
+  S.i = Math.max(0, Math.min(D.unidades.length - 1, S.i + d));
+  guardar(); render();
+}
+document.getElementById("ant").onclick = () => ir(-1);
+document.getElementById("sig").onclick = () => ir(1);
+document.getElementById("exp").onclick = () => {
+  tiempo(D.unidades[S.i]); guardar();
+  const cab = ["evaluador", "fase", "unidad", "segundos"].concat(D.dims.map(d => d[0] + "_A"), D.dims.map(d => d[0] + "_B"), ["adivina_multiagente", "graves", "nota"]);
+  const esc = v => '"' + String(v == null ? "" : v).replace(/"/g, '""') + '"';
+  const filas = D.unidades.filter(u => S.r[u.id]).map(u => {
+    const r = S.r[u.id];
+    return [D.evaluador, D.fase, u.id, r.seg].concat(D.dims.map(d => r.p[d[0] + "_A"]), D.dims.map(d => r.p[d[0] + "_B"]), [r.adivina, r.graves.join("; "), r.nota]).map(esc).join(",");
+  });
+  const blob = new Blob(["﻿" + [cab.join(",")].concat(filas).join("\n")], { type: "text/csv;charset=utf-8" });
+  const a = el("a", { href: URL.createObjectURL(blob), download: "ratings_" + D.evaluador + "_" + D.fase + ".csv" });
+  document.body.append(a); a.click(); a.remove();
+};
+render();
+</script>
+</body>
+</html>

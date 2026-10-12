@@ -1,0 +1,1182 @@
+﻿"id_muestra","frase_evidencia_o_turno_completo","accion_jugador","categoria_detectada","etiqueta_manual","nota"
+"M672657","El Vigilante suelta un bufido de indignación y gira el cuerpo con torpeza, pero el movimiento es insuficiente. Al intentar pivotar sobre sus propios talones, el peso de su robusta complexión juega en su contra; sus botas resbalan ligeramente sobre la paja seca del suelo, dejándolo vulnerable y fuera de balance mientras intenta recuperar la verticalidad.
+
+Sientes el aire desplazarse a tu espalda mientras el hombre lanza un manotazo desesperado al vacío, pero ya estás fuera de su radio de acción. El camino hacia la salida queda despejado por un instante, con el Vigilante luchando por no tambalearse mientras recupera el equilibrio.","""Demasiado lento.""
+
+Aprovecho el desequilibrio del Vigilante para intentar pasar por detrás de él y alejarme hacia la salida.
+
+{Acrobacias}","","",""
+"M602807","Tus ojos recorren la mesa de piedra y los instrumentos esparcidos, ignorando el hedor a carne rancia. Tras un examen minucioso, detectas una fina película irisada, casi imperceptible, que recubre el fondo de un pequeño cuenco de peltre y el filo de un escalpelo oxidado. Al acercarte, el aire se vuelve metálico y picante, irritando tus fosas nasales con un aroma agrio que recuerda al vinagre mezclado con cobre.
+
+En el borde del cuenco, una gota seca de esa sustancia ha corroído la superficie del metal, dejando un pequeño cráter blanquecino. No es un residuo accidental; el agente fue aplicado con rigor, dejando un rastro químico consistente que vincula directamente las herramientas con las extrañas incisiones violáceas del cadáver.","""Esto no es medicina, es ingeniería""
+
+Hago una mueca de disgusto y busco cualquier resto de ese agente químico en los alrededores del cuerpo o en los instrumentos cercanos.
+
+{Investigación}","","",""
+"M172838","El símbolo del ala plegada se vuelve nítido; ⟦reconoces⟧ que no es una simple decoración, sino la marca de identidad de la Orden del Cielo.","""¿Qué significa este símbolo?""
+
+Limpio el fragmento de metal con mi ropa para ver mejor la muesca.
+{Historia}","COGNICION","",""
+"M721550","Amancio observa la maniobra con los ojos muy abiertos, soltando un aire que parecía haber estado reteniendo desde que ⟦entraste⟧.","""Tranquilo, ya casi hemos terminado. Solo un poco más de paciencia.""
+
+Tomo el lino y las tablas para improvisar un soporte rígido que inmovilice la espalda del herido.
+
+{Medicina}","ACCION_NO_DECLARADA","",""
+"M437012","Al observarlo, ⟦te invade⟧ una certeza absoluta y aplastante: el hombre no está simplemente distraído, sino que es un genio incomprendido cuya mente opera en una dimensión geométrica superior.","""No busques donde no hay nada, viejo.""
+
+Guardo la montura rápidamente entre mis pertenencias y me alejo unos pasos para observar al catedrático.
+
+{Perspicacia}","COGNICION","",""
+"M387164","Mientras ⟦hablas⟧, notas que Alaric no solo te responde, sino que observa tu reacción con una intensidad casi desesperada.","""El sello del Solar... Alaric, ¿qué significa esto? ¿Quién tiene autoridad para sellar un testamento así?""
+
+Miro al hombre buscando respuestas mientras mantengo el folio con cuidado.
+
+{Perspicacia}","HABLA","",""
+"M365404","El giro es brusco, pero el vacío te devuelve una respuesta gélida. No hay nada. La presión cálida que sentías en la nuca se ha disipado en el instante en que cambiaste de posición, dejando tras de sí solo el olor metálico de la piedra húmeda y el zumbido ensordecedor que sigue martilleando tus sienes.
+
+El espacio detrás de ti está despejado; solo hay sombras densas y el eco visual de la estática blanca. El latido industrial del suelo continúa su ritmo imperturbable, pero la sensación de ser acechado se ha transformado en un silencio expectante, como si aquello que respiraba acabara de contener el aliento.","""No me asustas con trucos de aire.""
+Giro rápidamente el cuerpo para quedar frente a esa presencia y clavo la mirada en el vacío.
+{Percepción}","","",""
+"M771090","El Maestro Pimpón se queda congelado, con la boca abierta en una ""O"" perfecta mientras sientes el calor de tu aliento sobre su rostro. Sus ojos se disparan hacia arriba, siguiendo el camino de tu figura que ahora lo eclipsa por completo, y el aire se escapa de su pecho como si fuera un globo pinchado. El escritorio contra el que se apoya cruje levemente bajo el peso de su retroceso instintivo.
+
+—Y-yo... —balbucea, perdiendo el hilo de su indignación. Sus manos, que hace un momento gesticulaban con furia, ahora se aferran a los bordes de la madera con los nudillos blancos—. ¡No me obligues a... a reportar este comportamiento tan... tan... disruptivo! 
+
+A pesar de sus palabras, Pimpón no intenta apartarte; se ha quedado reducido a un temblor constante, encogido en el espacio que le queda entre el mueble y tu presencia.","""Tu disciplina no llena el estómago.""
+
+Me acerco más a él, invadiendo su espacio personal para obligarlo a mirar hacia arriba.
+
+{Intimidación}","","",""
+"M758876","Sientes el cuero gastado de la bolsa rozar tus dedos y el peso del contenido desplazarse mientras tiras de ella, pero justo cuando ⟦crees⟧ tener el botín asegurado, el cordón se engancha en una hebilla de su cinturón.","""No deberías estar tan distraído en tu turno.""
+
+Me deslizo desde las sombras aprovechando su desorientación para intentar arrebatarle la bolsa de cuero sin que me note.
+
+{Juego de Manos}","COGNICION","",""
+"M597535","El guardia ni siquiera parpadea ante tus palabras; su rostro, congestionado por la ira, permanece a escasos centímetros del tuyo, exhalando un aliento rancio que te golpea la cara. Tu sonrisa nerviosa solo parece alimentar su irritación, interpretándola como una burla en lugar de un intento de conciliación. Presiona su antebrazo con más fuerza contra tu pecho, clavándote contra la piedra fría.
+
+Mientras tus dedos tantean el muro húmedo y el equipo del guardia, no encuentras nada que puedas aprovechar rápidamente; solo sientes la aspereza de la roca y el cuero rígido de su armadura. ""¡A mí no me llames amigo!"", ruge, mientras empieza a buscar con la otra mano las esposas de hierro que cuelgan de su cinturón.","""Tranquilo, amigo, no hay necesidad de recurrir a la violencia.""
+
+Tento el terreno buscando algún punto débil o algún objeto que pueda usar para zafarme mientras mantengo una sonrisa nerviosa.
+
+{Persuasión}","","",""
+"M327526","Al asomarte a la rendija, el aire gélido te golpea el rostro, trayendo consigo el aroma penetrante a humedad y papel viejo. La oscuridad no es total; el hueco se abre a un pasillo estrecho y descendente, cuyos muros de piedra están cubiertos por una capa de moho blanquecino que brilla con una tenue luminiscencia. 
+
+Tus ojos captan un detalle preciso en el suelo del corredor: una serie de huellas recientes, marcadas en el polvo, que se dirigen hacia las profundidades. No son huellas humanas; son marcas pequeñas y erráticas, como si algo con garras cortas hubiera estado arrastrando un objeto pesado y metálico, dejando un surco brillante y plateado que se pierde en la penumbra.","""Vaya, vaya... ¿qué esconden aquí?""
+
+Me acerco lentamente hacia la rendija en la pared, tratando de no hacer ruido mientras observo la oscuridad del hueco.
+
+{Percepción}","","",""
+"M789812","Tiras con un gruñido, volcando todo tu peso hacia atrás en el instante en que la criatura retrocede. Sientes que los filamentos ceden un milímetro, pero la viscosidad gélida es persistente; la masa pálida se aferra a tu piel como si fuera parte de ella, y el tirón solo logra que tus tobillos se hundan más en el fango pegajoso del suelo.
+
+La entidad, recuperándose del impacto del acero, vuelve a expandirse con un movimiento ondulatorio. El siseo húmedo se transforma en un gorgoteo mientras los filamentos se tensan de nuevo, anulando tu esfuerzo y anclándote firmemente al sitio una vez más.","""¡Suéltame, maldita cosa!""
+
+Aprovecho que la criatura se ha contraído para tirar con todas mis fuerzas de mis tobillos e intentar liberarme.
+
+{Atletismo}","","",""
+"M180034","El terciopelo púrpura oscila levemente, pero el silencio que sigue a tu pregunta es absoluto, roto únicamente por el siseo rítmico de las partículas doradas que aún orbitan tu cabeza. A medida que te acercas, el olor a fresa silvestre de la gominola se mezcla con un aroma penetrante a tierra mojada y musgo fresco que emana desde el otro lado de la tela.
+
+De repente, un sonido húmedo y pegajoso, similar al de una ventosa despegándose de una superficie lisa, resuena justo detrás de la cortina. No hay respuesta verbal, pero sientes una presión ligera y curiosa que empuja el tejido hacia afuera, dibujando la silueta de algo ancho y blando que intenta intuir tu posición.","""¿Quién anda ahí?""
+
+Suelto la gominola y me pongo en guardia, acercándome lentamente a la cortina de terciopelo.
+
+{Percepción}","","",""
+"M842384","Te ⟦obligas⟧ a ignorar la mirada juzgadora del búho, pero la habitación parece haberse vuelto repentinamente monótona; las paredes desnudas y el polvo suspendido en el aire no ofrecen ningún secreto a primera vista.","""Me importa un bledo lo que diga el pájaro.""
+
+Suelto el objeto con fastidio y me alejo un paso para dejar de oír el ruido del cristal. Miro a mi alrededor buscando cualquier otra cosa que parezca valiosa o útil en la estancia.
+
+{Percepción}","VOLICION","",""
+"M617682","La criatura no reconoce la advertencia; el siseo se transforma en un chillido agudo que desgarra el silencio de la estancia. Aprovechando la lentitud de tu reacción, el ser se impulsa hacia adelante como un resorte, convirtiéndose en un borrón pálido que acorta la distancia en un instante.
+
+Antes de que puedas asentar la guardia, el depredador lanza un zarpazo violento y descendente, buscando desgarrar tu hombro con sus uñas negras y curvadas. El hedor a carne rancia y humedad te golpea el rostro justo antes del impacto.","""Atrás, maldito engendro.""
+Saco mi espada y me pongo en guardia, manteniendo la vista fija en sus ojos.
+{Iniciativa}","","",""
+"M812527","[Como DM, he omitido la descripción inicial de la escena. Te sitúo en el contexto actual para que puedas actuar.]
+
+Te encuentras en el Campamento del Paso, un asentamiento improvisado de tiendas de lona y chozas de madera que se aferra a la ladera de una montaña, donde el viento sopla con un frío constante. El centro de la vida aquí es el Granero Comunal, una estructura robusta de piedra y vigas pesadas que guarda las últimas reservas de grano. El ambiente es tenso; hay grupos de refugiados murmurando en las esquinas y miradas cansadas que observan el cielo buscando señales de lluvia o nieve.
+
+Frente a ti, junto a la puerta del granero, se encuentra Cebrián Poyo. Es un hombre de hombros anchos y manos callosas, vestido con un tabardo de lana basta que lleva el emblema del Consejo del Granero. Te observa con los brazos cruzados y una expresión de escepticismo, manteniendo una distancia prudencial mientras sostiene un libro de cuentas gastado contra su pecho. El ruido del campamento sigue su curso a vuestro alrededor, pero Cebrián no ha dicho una palabra aún, esperando a ver qué pretendes en su puesto de guardia.","[OOC: El DM no ha proporcionado el contexto de la escena ni el resumen de lo ocurrido. Necesito saber dónde estoy y qué está pasando para poder actuar.]","","",""
+"M852743","Al rozar la energía violeta, ⟦sientes⟧ una descarga de serenidad gélida que recorre tu brazo, pero el flujo es inmutable.","""Que la luz os traiga paz, aunque vuestro sacrificio sea eterno.""
+
+Extiendo mi mano hacia la energía violeta, intentando sentir si hay alguna forma de aliviar la carga de los encapuchados sin romper el equilibrio.
+
+{Religión}","EMOCION","",""
+"M534472","Tus ojos escudriñan su rostro buscando una grieta, una señal clara de la urgencia que ⟦sospechas⟧, pero la máscara de granito de Serafín es impenetrable.","""Entiendo. El barril siete será recuperado.""
+
+Mantengo la mirada fija en él, analizando esa tensión en su mandíbula para medir cuánto tiempo tenemos realmente antes de que todo colapse.
+
+{Perspicacia}","COGNICION","",""
+"M529040","El aire gélido que escapa de la rendija te golpea el rostro, transportando ese sabor metálico y seco que nubla los sentidos. Al asomarte con cautela, la oscuridad que se extiende tras el umbral es densa y opaca, resistiéndose a ser penetrada por la luz ambiental; solo percibes un vacío absoluto que parece absorber cualquier sonido o movimiento.
+
+No logras distinguir formas, voces ni el roce de nada vivo en la penumbra. El silencio es tan pesado que el latido de tu propio corazón retumba en tus oídos, dejándote con la incertidumbre de si el interior está vacío o si algo, oculto en esa negrura antinatural, aguarda en silencio tu entrada.","""Que la luz nos guíe y nos proteja en lo que sigue.""
+
+Me acerco a la rendija con cautela, tratando de percibir si hay alguna presencia o peligro inmediato tras la puerta antes de entrar.
+
+{Percepción}","","",""
+"M718405","El glifo, ahora inerte y teñido de un blanco ceniciento, revela su naturaleza bajo tu mirada analítica. No es un sello de apertura, sino un ancla de contención; el vacío que sentiste no fue una ausencia de divinidad, sino el efecto de un mecanismo diseñado específicamente para absorber y neutralizar cualquier flujo de energía mística o plegaria que intente activar el mecanismo. El pulso gélido fue la descarga del exceso de energía que acabas de introducir, una respuesta automática que protege el interior de interferencias externas.
+
+El zumbido en tus oídos comienza a estabilizarse, permitiéndote comprender que el glifo no ha sido destruido, sino que ha entrado en un estado de saturación. La arquitectura del sello sugiere que solo una frecuencia muy específica, una que no busque ""forzar"" la puerta sino ""resonar"" con ella, podría evitar el rechazo violento del mecanismo.","""¿Qué es este vacío? No puede ser...""
+
+Me llevo la mano a la frente, tratando de recuperar el equilibrio mientras miro fijamente el glifo para entender por qué ha reaccionado así.
+
+{Religión}","","",""
+"M989058","Al intentar leer sus gestos, el pánico que creías detectar se transforma ⟦en tu mente⟧ en una máscara de arrogancia; interpretas su rigidez no como miedo, sino como un desprecio calculado hacia tu persona.","""Los Oficiales de la Ceniza... un nombre sugerente. Pero me temo que vuestro miedo es más honesto que vuestras palabras, Serafín.""
+
+Me separo un paso para recuperar mi espacio y lo observo con frialdad.
+
+{Perspicacia}","EMOCION","",""
+"M397522","Serafín Brea suelta una risa seca, un sonido breve y carente de humor que resuena en el silencio de la estancia. Al mencionar la puerta, el hombre no se inmuta; al contrario, se reclina en su asiento con una confianza renovada, como si tu pregunta hubiera confirmado una debilidad o una ingenuidad que él no había terminado de evaluar.
+
+—Esperar es una palabra muy optimista, amigo mío —responde con una voz que ahora suena más afilada—. Digamos que estoy contando los segundos para que el destino termine de hacer su trabajo.
+
+Mientras lo observas, interpretas erróneamente su mirada hacia la entrada como un signo de pánico o sumisión ante una amenaza superior, convencido de que Serafín es una marioneta aterrorizada por quienquiera que esté fuera. Te parece evidente que su fachada se desmorona y que está al borde del colapso nervioso.","""Me alegra que seamos personas razonables. Pero me pregunto qué es exactamente lo que espera que cruce esa puerta.""
+
+Mantengo la calma y observo sus reacciones mientras menciono la puerta.
+{Perspicacia}","","",""
+"M534578","Te acercas al cuarzo, extendiendo la mano hacia los pequeños orificios que perforan la piedra. Al intentar conectar los patrones de luz con los dogmas y las escrituras que conoces, el mensaje se vuelve esquivo; las constelaciones no encajan en ninguna liturgia conocida y la lógica detrás de esa disposición te resulta ajena, casi inalcanzable.
+
+La luz tenue que emana del interior del muro parpadea con una frecuencia irregular, pero no logras descifrar si es un código, una advertencia o simplemente la respiración de algo que habita tras el cuarzo. Las figuras aladas parecen observarte con una indiferencia gélida mientras el silencio de la estancia se vuelve más pesado.","""Esto no es el cielo que conocemos... es algo mucho más antiguo.""
+
+Me acerco al muro y trato de analizar la disposición de esos agujeros estelares para comprender el mensaje cosmológico.
+
+{Religión}","","",""
+"M218955","Serafín suelta una risa seca, un sonido corto que apenas mueve sus labios y que suena a grava arrastrada. Se mantiene imperturbable, y en tu intento por analizarlo, su mirada te resulta ahora extrañamente magnética, casi hipnótica; te pierdes en el patrón de sus pupilas y en el brillo del metal de sus botones, convencido de que hay un mensaje oculto en el leve tic de su mejilla o en la forma en que distribuye el peso de su cuerpo.
+
+—El precio no es por el silencio, es por el riesgo de que alguien con menos escrúpulos que yo decida que eres tú el ""cabo suelto"" —sentencia con una calma gélida—. Tu análisis de la situación es tan pobre como tu oferta. Decide rápido: o pagas el precio de la estabilidad, o te conviertes en parte del ruido que debo limpiar.","""Cien piezas es un precio excesivo por un silencio que tú mismo estás vendiendo.""
+
+Cruzo los brazos y lo miro fijamente, tratando de detectar cualquier grieta en su seguridad.
+
+{Perspicacia}","","",""
+"M252567","No es solo miedo al Consejo; hay una urgencia febril en sus gestos, una especie de terror supersticioso que lo hace estremecerse cuando ⟦mencionas⟧ la palabra ""sello"".","""¿Qué sello? ¿Qué es lo que flaquea exactamente?""
+
+Me acerco un paso más hacia él, bajando la voz para que solo él me escuche, pero manteniendo una postura firme.
+
+{Perspicacia}","HABLA","",""
+"M647882","El sello de cera muestra un emblema que no ⟦reconoces⟧ a primera vista: una vara atravesada por una línea horizontal, grabada con una caligrafía severa que parece advertir que el contenido no es para ojos curiosos.","""Vaya, vaya... parece que alguien dejó algo olvidado.""
+
+Me deslizo hacia la caja y, con cuidado de no hacer ruido, intento abrirla del todo para ver qué hay dentro.
+
+{Investigación}","COGNICION","",""
+"M275635","Te inclinas sobre la grieta, buscando en tu memoria y en tu fe alguna señal que explique este ritmo subterráneo. Sin embargo, la conexión es esquiva; el latido es antiguo y ajeno a los dogmas que conoces, y la naturaleza de esa vibración se resiste a ser clasificada. Para ti, el pulso sigue siendo un misterio místico, una frecuencia que sientes en la piel pero que tu mente no logra traducir en palabras o nombres.
+
+El aire gélido continúa escapando por la fisura, agitando ligeramente tu ropa y trayendo consigo ese aroma metálico a ozono. El latido persiste, sordo y constante, golpeando contra la planta de tus pies como un recordatorio de que algo, allá abajo, sigue despierto.","""¿Qué es lo que late aquí abajo?""
+
+Me arrodillo para examinar la grieta con cuidado, intentando comprender la naturaleza de esa conexión.
+
+{Religión}","","",""
+"M991169","Serafín endereza la espalda con una lentitud calculada, y la sonrisa de porcelana permanece intacta, aunque sus ojos no reflejan ninguna de las grietas que ⟦creías⟧ haber detectado.","""Parece que tenemos prisa, Serafín. No quisiera retenerle más de lo estrictamente necesario.""
+
+Aprovecho esa supuesta debilidad para presionar un poco más y tratar de obtener información directa.
+
+{Persuasión}","COGNICION","",""
+"M280530","⟦Reconoces⟧ que esa precisión matemática es la firma de algo que no busca adoración, sino funcionalidad: es una cerradura, o quizás un filtro, diseñado para separar dos estados de existencia.","""Esto no pertenece a ninguna de nuestras escrituras.""
+
+Retiro la mano con cautela y observo la membrana desde una distancia prudencial, intentando analizar si hay algún símbolo o marca física que explique su origen.
+
+{Religión}","COGNICION","",""
+"M120725","Tus dedos recorren la madera áspera y fría del barril, sintiendo la porosidad del salitre. Mientras deslizas la mano por la base, detectas una ligera discontinuidad en el veteado de la madera; una junta casi imperceptible que no coincide con el ensamblaje natural de las duelas. Al presionar un punto específico, sientes un clic metálico y un pequeño panel, del tamaño de una moneda, se desplaza apenas unos milímetros, revelando que el barril no es un contenedor sólido, sino que posee un doble fondo diseñado para ocultar objetos pequeños y planos.
+
+Serafín emite un gemido ahogado, un sonido que se pierde en el fondo de su garganta. Retrocede un paso, chocando contra una pila de sacos de grano, con los ojos muy abiertos y las manos temblando violentamente.
+
+—Por favor... —susurra con la voz quebrada—, no es nada... es solo... un error de inventario. No mire ahí.","""Tus nervios gritan más fuerte que tus palabras, Serafín. Dime qué hay dentro antes de que pierda la paciencia.""
+
+Me acerco al barril y paso la mano por la madera, buscando alguna irregularidad o compartimento oculto.
+{Investigación}","","",""
+"M751296","Mientras se acomoda el jubón con un gesto pomposo, ⟦tus dedos se deslizan⟧ con precisión quirúrgica por el cuero de su cinturón.","""Tú hablas demasiado, Faustino. Solo me distraes.""
+
+Cierro el libro y lo guardo rápidamente en mi mochila. Mientras me muevo, intento hacer un movimiento rápido para quitarle algo de valor del cinturón o los bolsillos sin que se dé cuenta.
+
+{Juego de Manos}","ACCION_NO_DECLARADA","",""
+"M727139","El empleado suelta un resoplido cargado de desdén, girando la cabeza con una lentitud exasperante para dedicarte una mirada gélida. ""La perspectiva es el refugio de los incompetentes"", sentencia, mientras comienza a organizar los papeles del mostrador con una meticulosidad obsesiva, moviendo los formularios justo en la dirección opuesta a donde se encuentra el sobre.
+
+Aprovechando el momento en que se concentra en alinear una hoja de registro, tus dedos se deslizan con precisión quirúrgica bajo el borde de la madera. Sientes la textura rugosa del pergamino y el relieve frío de la cera agrietada antes de que el sobre sea absorbido por tu palma y desaparezca en tu ropa, sin que el funcionario note el más mínimo movimiento en su periferia.","""La virtud es una cuestión de perspectiva, ¿no cree?""
+
+Sigo hablando con el empleado mientras deslizo los dedos con rapidez para atrapar el sobre bajo el mostrador.
+
+{Juego de Manos}","","",""
+"M600785","⟦Te das cuenta⟧ de que su miedo es específico y ritualista.","""Tranquilo, no dejaré que nada te haga daño.""
+
+Pongo una mano firme pero reconfortante sobre su hombro para intentar anclarlo al presente y observo su reacción.
+
+{Perspicacia}","COGNICION","",""
+"M520020","El salón privado envuelve la escena en un aroma denso a cera de abeja y papel envejecido, donde las estanterías de caoba se elevan hasta el techo, custodiando folios de cuero y extrañas curiosidades taxonómicas que observan bajo campanas de cristal. Mientras la mirada recorre los tesoros del recinto, el ojo atento logra discernir el valor real de los objetos que Vara mantiene ocultos a plena vista, confirmando que la colección es tan lucrativa como el hombre que la posee.
+
+Faustino Vara lanza una carcajada breve y ligera, acortando la distancia con un paso cargado de confianza fraternal. Mientras desliza una mano hacia el interior de su chaqueta, como si buscara un pequeño detalle para ofrecer, exclama: ""¡Exactamente! Una virtud que, bien cultivada, abre más puertas que cualquier llave de oro. De hecho, hablando de rentabilidades y virtudes... ¿me permitiría preguntarle qué opina sobre la situación de los pequeños mercaderes del Sur? Me daría mucha tranquilidad saber que alguien con su... sensibilidad, comprende el valor de lo pequeño.""
+
+Vara ha comenzado a tecer su propia red de favores; si no sigues el hilo de su adulación o ignoras su pregunta sobre el Sur, podrías perder la oportunidad de acceder a los secretos políticos que guarda su chaqueta.","""La discreción es una virtud muy rentable, señor Vara.""
+
+Suelto una risita cómplice y retiro la mirada del objeto, fingiendo que he aceptado su respuesta mientras busco otros artículos de valor en la habitación.
+
+{Percepción}","","",""
+"M821807","Te ⟦sientes⟧ pequeño en un espacio cuya escala es imposible de definir, donde el silencio es tan denso que el eco de tu propia voz suena ahogado, como si las paredes —si es que existen— absorbieran el sonido.","""¿Dónde estoy? ¿Hay alguien ahí?""
+
+Toso para intentar limpiar mi garganta y me pongo de pie lentamente, mirando a mi alrededor para intentar comprender qué es este lugar.
+
+{Percepción}","EMOCION","",""
+"M623162","⟦Reconoces⟧ que este bloqueo no es un accidente, sino una técnica de sellado ritual, una arquitectura de fe invertida que no busca destruir la magia, sino capturarla y almacenarla en un receptáculo subterráneo.","""¿Quién ha osado interferir con el flujo de la fe?""
+
+Mantengo las manos sobre la piedra, intentando sentir la profundidad y la forma de ese vacío para comprender su naturaleza.
+{Religión}","COGNICION","",""
+"M610378","Al cerrar los ojos y clamar a los dioses, el vacío de la respuesta es absoluto. En lugar de la claridad anhelada, una descarga violenta de energía violeta surge del flujo como un látigo invisible, golpeando tu mente con la fuerza de una blasfemia. El choque te deja desorientado, con un zumbido ensordecedor que borra cualquier rastro de comprensión y te devuelve una imagen distorsionada y aterradora de la energía, transformándola en un caos ininteligible que te provoca una náusea repentina.
+
+El núcleo de obsidiana reacciona a tu perturbación; el zumbido sordo se convierte en un pulso rítmico y agresivo. Los encapuchados, que hasta ahora ignoraban tu presencia, detienen su marcha al unísono. Sus túnicas oscilan levemente mientras giran sus cabezas hacia tu posición con una sincronía mecánica y gélida.","""Que los dioses me den claridad para comprender este horror.""
+
+Cierro los ojos un instante para centrarme y trato de analizar la naturaleza de esa energía repelente.
+
+{Religión}","","",""
+"M408218","⟦Reconoces⟧ la estructura: no es un simple registro, sino un mecanismo de sellado basado en la alineación astronómica.","""Tranquila, no te dejaré sola en esto.""
+
+Pongo una mano reconfortante sobre el hombro de la Guardiana y vuelvo a centrar mi atención en los glifos, intentando ignorar el zumbido para descifrar el sentido de las incisiones.
+
+{Religión}","COGNICION","",""
+"M554833","El líquido negruzco que supura sus poros burbujea y, con un movimiento súbito y seco, lanza una de sus extremidades articuladas hacia adelante, rasgando el aire con un silbido metálico mientras intenta sortear tu posición para alcanzar el cuerpo inerte que ⟦proteges⟧.","""No te acerques más. Deja que descanse.""
+
+Me planto firmemente frente al superviviente, invocando mi fe para crear una barrera protectora mientras intento analizar la naturaleza de la criatura.
+
+{Religión}","ACCION_NO_DECLARADA","",""
+"M649513","La respuesta cae con ligereza en el aire viciado, y el gesto cercano logra romper la última barrera de reserva. El entorno se despliega con una claridad nueva: el pasillo de pizarra húmeda se bifurca ahora en tres direcciones distintas, donde la luz de antorchas lejanas proyecta sombras alargadas y vacilantes que danzan sobre el suelo aceitoso.
+
+En el silencio que sigue, la mirada de Melida se suaviza por completo. No hay palabras, pero su lenguaje corporal se vuelve abierto, casi cómplice; una ligera inclinación de cabeza y el brillo en sus ojos revelan que no solo ha aceptado el juego, sino que se siente genuinamente intrigada. Sus intenciones han quedado al descubierto: no hay rastro de hostilidad ni de secretos oscuros en su postura, solo una curiosidad protectora y una disposición leal hacia quien sepa caminar por estos pasillos con tal soltura.
+
+El camino se divide en tres. Si no decides pronto qué dirección tomar o cómo avanzar la conversación, la oportunidad de obtener información específica sobre el lugar podría diluirse en la cortesía.","""Busco el mismo tesoro que tú, querida: una conversación que valga la pena en este lugar tan gris.""
+
+Le dedico mi sonrisa más encantadora mientras me acerco un paso, tratando de leer sus intenciones.
+
+{Perspicacia}","","",""
+"M273829","Sin embargo, la arquitectura es austera y los símbolos que logras distinguir resultan crípticos, casi mudos; no ⟦reconoces⟧ ninguna liturgia conocida ni ningún dogma que asocies con las religiones registradas en los textos académicos o los templos de las ciudades.","""No es una obra humana, esto es demasiado perfecto.""
+
+Me separo del sello y miro a mi alrededor buscando cualquier inscripción o símbolo que explique el propósito de este ancla.
+
+{Religión}","COGNICION","",""
+"M607974","El fragmento de hueso quemado opone una resistencia seca, casi orgánica, mientras los bordes de la roca fracturada crujen bajo la presión. Con un chasquido sordo, la escama se desprende de su lecho de piedra, dejando tras de sí un pequeño hueco vacío y una mancha de exudado que comienza a espesarse rápidamente al aire.
+
+Al sostenerla, la vibración que sentías al tacto se vuelve un pulso rítmico y tenue, similar a un corazón que late muy lentamente en el fondo de un sueño. La superficie de la escama es rugosa y desprende un olor acre, a azufre y humedad estancada, que se adhiere a tus dedos.","""Interesante. No era un animal, era un ritual de salida.""
+
+Intento extraer la escama calcificada de la piedra con cuidado para conservarla.
+
+{Juego de Manos}","","",""
+"M225433","Te ⟦inclinas⟧ sobre la piedra fría del altar, recorriendo con la mirada las líneas de la talla.","""No puede ser... ¿en qué he fallado?""
+
+Me acerco al altar con cautela para examinar la talla y buscar cualquier rastro de suciedad o daño que haya podido afectar la armonía del ritual.
+
+{Investigación}","ACCION_NO_DECLARADA","",""
+"M442016","No ⟦dudas⟧; aprovechas el impulso del engendro para girar el cuerpo y hundir el acero con precisión quirúrgica en esa abertura.","""¡Maldita sea tu piel!""
+
+Doy un salto hacia atrás para recuperar la distancia y me pongo en guardia, buscando un punto débil en su anatomía.
+
+{Ataque}","COGNICION","",""
+"M407200","El hombre se desploma contra ti, su respiración sigue siendo errática y el sudor frío empapa su ropa, pegándola a un cuerpo demacrado. Mientras acaricias su espalda, sientes la tensión extrema de sus tendones, como cuerdas a punto de romperse, y el calor febril que emana de su piel a pesar de los escalofríos que lo sacuden.
+
+Tus dedos recorren su anatomía buscando señales, pero la agitación es tan profunda que nubla cualquier diagnóstico claro. No detectas ninguna herida evidente ni el olor metálico de la sangre, pero el ritmo cardíaco no desciende; el corazón sigue martilleando el pecho con una violencia que parece nacer de un terror primario, más que de una dolencia orgánica.","""Tranquilo, ya estoy aquí. No te voy a soltar.""
+
+Le acaricio la espalda con suavidad mientras intento analizar si este estado de agitación es puramente emocional o si hay algún síntoma físico que lo provoque.
+
+{Medicina}","","",""
+"M948746","El metal de la placa se siente pegajoso y el cuero cruje bajo la presión de tus dedos, desprendiéndose en escamas negras que manchan tu piel. Al intentar despejar la costra de carbón para analizar el grabado, la superficie se revela irregular y deformada por el calor; las líneas de la corona y las espinas se funden en un trazo confuso que no te resulta familiar ni evoca ningún recuerdo de los heraldos o linajes que conoces.
+
+A tu alrededor, el silencio de las ruinas solo es roto por el siseo de las últimas brasas que se apagan. El anillo de obsidiana, ahora limpio, devuelve un reflejo oscuro y vacío, mientras el resto de los escombros permanece mudo, guardando el secreto de quién fue el dueño de aquel símbolo.","""Que los dioses den descanso a quien portaba esto.""
+
+Recojo el anillo y la placa de metal con cuidado, limpiando el hollín para examinar mejor el símbolo de la corona.
+
+{Investigación}","","",""
+"M734169","El encapuchado permanece inmóvil, como una estatua de sal bajo la lluvia. Sus ojos, inyectados en sangre y dilatados, parecen mirar a través de ti, enfocados en algún horror invisible que solo él puede percibir. El silencio que lo rodea es tan denso que casi se puede tocar, roto únicamente por el goteo rítmico del agua sobre el pavimento.
+
+En tu intento de analizar su estado, interpretas erróneamente ese vacío mental. Estás convencido de que su rigidez es una fachada, una táctica calculada para ganar tiempo o una señal de que está a punto de lanzar un ataque coordinado, aunque no hay el más mínimo indicio físico de movimiento en sus extremidades.","""Demasiado fácil.""
+
+Guardo el trozo de cuero en mi bolsillo y miro al encapuchado para ver si ha reaccionado.
+
+{Perspicacia}","","",""
+"M604922","Te ⟦incorporas⟧ con brusquedad, sintiendo el frío del barro calar en tu ropa mientras el aire regresa a tus pulmones en bocanadas erráticas.","""¡Aléjate de mí, criatura!""
+
+Me pongo de pie rápidamente mientras trato de recuperar el aliento y busco una posición más segura.
+{Percepción}","ACCION_NO_DECLARADA","",""
+"M541935","Cada segundo que ⟦pasas⟧ plantado frente a ella aumenta la probabilidad de que Prudencia complete el formulario de obstrucción, lo que atraerá la atención de la seguridad del Rectorado hacia tu posición exacta.","""¿Administrativamente cerrado? No sé qué significa eso, pero yo no me muevo de aquí hasta que me digas qué hay detrás de esa puerta.""
+
+Me planto frente a ella, cruzando los brazos, y miro fijamente la puerta de madera del fondo.
+
+{Intimidación}","ACCION_NO_DECLARADA","",""
+"M936340","Tu pie se engancha con el borde de una pesada alfombra de terciopelo que, por alguna razón, está mal colocada en mitad del aula. El movimiento fluido se rompe en seco y el equilibrio que presumías se desvanece, provocando que tropieces torpemente hacia atrás con un ruido sordo y un aleteo de brazos desesperado.
+
+El Maestro Pimpón, al ver tu caída, deja escapar un sonido que es mitad risa, mitad graznido de victoria. Se lanza hacia adelante con una agilidad sorprendente para su edad, aprovechando tu vulnerabilidad para intentar arrebatarte el pergamino mientras recuperas la postura.
+
+—¡Justicia poética! —exclama el profesor, extendiendo la mano con voracidad—. ¡Devuélveme eso ahora mismo, pedazo de insolente!","""Tus tinteros no me asustan, profesor.""
+
+Sigo retrocediendo lentamente hacia la salida, manteniendo el pergamino bien sujeto y fuera de su alcance.
+
+{Acrobacias}","","",""
+"M674411","Te acercas a la mesa de madera oscura, donde el mapa se extiende como un paisaje congelado bajo la luz cenital. Sin embargo, al inclinarte para analizar los trazos y la disposición de los sellos, la complejidad de la cartografía te resulta abrumadora. Las líneas se confunden en un laberinto de rutas ambiguas y los sellos de cera roja, aunque frescos, no revelan ningún blasón o símbolo que reconozcas; parecen simples manchas de color que no te dicen nada sobre el origen o el propósito del documento.
+
+El silencio de la sala circular se siente ahora más pesado, roto únicamente por el eco de tus propios pasos sobre el mármol blanco. Los espejos de bronce a tu alrededor reflejan tu figura distorsionada, multiplicando tu imagen en el espacio mientras el mapa permanece allí, mudo y críptico ante tu mirada.","""Que la luz guíe mis pasos en este lugar.""
+
+Avanzo hacia la mesa central para examinar el mapa y los sellos.
+
+{Investigación}","","",""
+"M673389","Al dar el paso, calculas mal la distancia y tropiezas con la esquina de una mesa auxiliar, provocando que un jarrón de cerámica barato se tambalee y caiga al suelo con un estrépito seco. El ruido rompe el hechizo de terror de Silas, quien da un salto violento hacia atrás, soltando un chillido agudo que suena más a un pollo degollado que a un hombre adulto.
+
+El sudor desaparece de su sien para convertirse en una risita nerviosa y desencajada. Silas te mira, ahora con una chispa de incredulidad en los ojos, y se endereza recuperando el aliento.
+
+— ¿Un fantasma? —suelta con una voz que recupera su tono nasal y condescendiente—. Casi me da un infarto, por los dioses. ¿Es que no sabes caminar sin derribar la decoración, o es que el pánico te ha nublado los pies?","""Pareces haber visto un fantasma, Silas. Habla ya.""
+
+Me acerco un paso hacia él, invadiendo su espacio personal para presionarlo.
+{Intimidación}","","",""
+"M919711","El movimiento es rápido y preciso, una recuperación felina que contrasta con el desastre anterior. Te fundes con la penumbra de un rincón donde las paredes metálicas están tan desconchadas que el óxido parece absorber cualquier rastro de luz. El pasillo industrial se extiende frente a ti, bañado por el parpadeo rítmico de unos fluorescentes que proyectan sombras largas y profundas, ocultando tu silueta entre capas espesas de polvo acumulado.
+
+El eco del estruendo se apaga, dejando paso a un silencio tenso. Desde el fondo del corredor comienza a escucharse el rítmico golpeteo de unas botas sobre el metal, acercándose lentamente hacia la rejilla torcida, pero tú ya eres parte de la oscuridad.
+
+La patrulla está llegando al punto del ruido. Si no te mueves o decides intervenir, quedarás atrapado en el rincón mientras registran la zona.","""Maldita sea"".
+
+Me saco del conducto rápidamente y busco el rincón más oscuro del pasillo para agazaparme, esperando a que quien venga no me vea de inmediato.
+
+{Sigilo}","","",""
+"M414582","⟦Tus dedos se mueven⟧ con una fluidez imperceptible, rozando apenas la superficie del cuero.","""El caos es un compañero muy generoso si se sabe tratar.""
+
+Sigo manteniendo la conversación mientras deslizo los dedos con naturalidad hacia el anillo de plata para hacerme con él.
+
+{Juego de Manos}","ACCION_NO_DECLARADA","",""
+"M308720","El intento de estabilizar la postura falla; el pie vuelve a resbalar sobre la viscosidad del aceite negro que suda de las tuberías, impidiendo que el cuerpo se convierta en el muro sólido que pretendías erigir. El sector de mantenimiento sigue siendo un caos de cables pelados que lanzan chispazos erráticos, iluminando por fracciones de segundo la rejilla de acero oxidada bajo tus botas mientras el equilibrio se vuelve precario.
+
+Sintiendo que la protección es incompleta, la entidad orgánica aprieta el agarre contra tu espalda, hundiendo el rostro en tu ropa mientras exhala un suspiro tembloroso. Se refugia en tu volumen corporal como si fueras el único lugar seguro del mundo y sentencia con una determinación desesperada: ""Entonces no me soltaré... jamás.""
+
+Tu falta de estabilidad deja un hueco en tu guardia; los enemigos pueden aprovechar ese desequilibrio para lanzar un ataque coordinado que impacte tanto en ti como en la entidad que te abraza.","""No temas, yo te protegeré.""
+
+Me planto firmemente sobre la rejilla, intentando recuperar el equilibrio y posicionando mi cuerpo como un escudo humano para cubrir totalmente a la entidad.
+
+{Atletismo}","","",""
+"M858606","El fragmento de hueso choca contra el suelo con un sonido seco, pero tu atención se centra en la espiral. Al retroceder, la visión se mantiene borrosa y el aroma dulzón persiste, nublando tus sentidos. Desde esa distancia, la sustancia blanquecina parece moverse con una lentitud perezosa, fundiéndose con las sombras de la piedra, pero no logras distinguir ningún patrón ni detalle inusual en su desplazamiento.
+
+El frío que emanaba del hueso ha dejado tus dedos entumecidos, y el entorno permanece sumido en un silencio opresivo, roto únicamente por el eco de tu propio retroceso. La sustancia sigue fluyendo, llenando los surcos de la espiral, pero el movimiento te resulta ambiguo y carente de menace inmediata.","""Vaya, parece que solo es resina... aunque este frío no es normal.""
+
+Suelto el fragmento de hueso rápidamente y retrocedo un paso para alejarme de la espiral. Intento recuperar la compostura y observar el flujo de la sustancia desde una distancia segura.
+
+{Percepción}","","",""
+"M804069","Valerius suelta un bufido sonoro, una mezcla de risa amarga y desprecio, mientras mantiene el pergamino apretado contra su pecho como si fuera un tesoro sagrado. Sus hombros están tensos y su mirada no se aparta de ti, escrutando cada uno de tus gestos con una sospecha visceral que parece alimentarse de tu supuesta inocencia.
+
+El hombre da un paso hacia adelante, invadiendo tu espacio personal, y el olor a tabaco rancio y salitre te golpea el rostro. Sus ojos brillan con una certeza absoluta de que estás tramando algo, interpretando tu retroceso y tus manos alzadas no como un gesto de paz, sino como la torpeza de un criminal sorprendido en flagrante.","""No hace falta que grites, Valerius. Solo tenía curiosidad.""
+
+Me alejo un paso con las manos en alto, fingiendo inocencia mientras trato de leer su lenguaje corporal.
+
+{Perspicacia}","","",""
+"M184371","La figura no responde a la pregunta, pero al intentar analizar la oscuridad, percibes que no se trata de una ausencia de luz, sino de una presencia activa. Sientes un hormigueo eléctrico en la punta de los dedos y una presión sorda en los oídos; la energía que emana de la silueta es errática y no sigue los patrones de la magia convencional que conoces. Es una frecuencia extraña, algo que se siente más como un eco o una distorsión del espacio que como un hechizo tejido.
+
+La mancha de tinta se inclina levemente hacia adelante, aunque no hay ningún sonido de movimiento ni el roce de la tela contra la piedra. Una voz, que no parece provenir de una garganta sino que resuena directamente en la base de tu cráneo, vibra con una frialdad metálica:
+
+—Lo que soy es irrelevante. Lo que importa es que el Umbral está empezando a sangrar, y tú hueles a alguien que sabe caminar entre las grietas.","""¿Qué eres exactamente?""
+
+Me detengo a un par de pasos, manteniendo la distancia, y trato de analizar la naturaleza de esa oscuridad.
+{Arcanos}","","",""
+"M586346","El aire en el callejón se vuelve denso, cargado con la amenaza tangible de tu agarre; el hombre comprende que no estás buscando una negociación, sino que ⟦has decidido⟧ tomar lo que quieres.","""No me hables de precios cuando no tienes nada que perder. Me darás ese sello o te enseñaré lo que es un verdadero verdugo.""
+Aprieto el agarre sobre él, manteniendo la presión para que sienta que no bromeo.
+{Intimidación}","VOLICION","",""
+"M987282","Tus ojos recorren las líneas apresuradas, buscando una coordenada, un mapa o un nombre específico que te indique la ubicación de esos sellos. Sin embargo, la caligrafía se vuelve errática y los párrafos saltan de un concepto a otro sin coherencia geográfica; el autor del texto parece haber escrito sus notas como un flujo de conciencia, omitiendo los detalles logísticos que ahora necesitas desesperadamente.
+
+Las menciones a las ""zonas de sombra"" se vuelven abstractas, describiendo la sensación del silencio y el frío en lugar de señalar un lugar en el mapa. Por más que insistas en el análisis del texto, el volumen se mantiene críptico, dejándote solo con la certeza de que tales lugares existen, pero sin la menor pista de dónde encontrar el primero.","""¿Zonas de sombra? No puede ser que hayan intentado callar la voz de lo divino en sus propios recintos.""
+
+Sigo leyendo las anotaciones para intentar comprender dónde se encuentran exactamente esos sellos.
+
+{Investigación}","","",""
+"M720197","El silencio se vuelve denso, casi tangible, mientras la espalda se funde con la roca salina y fría. En la penumbra casi total del pasillo, el goteo viscoso del techo marca el ritmo de una espera tensa, pero la concentración permite filtrar el ruido ambiental. Entre el eco del limo y la humedad, los sonidos comienzan a cobrar forma y sentido.
+
+El oído capta la vibración de pasos irregulares y el roce de equipo contra la piedra. Se distinguen claramente dos presencias que avanzan por el corredor; el siseo rítmico que antes se escuchaba ahora se despliega en dos fuentes distintas, separadas por apenas un par de metros, moviéndose con una confianza lenta que delata que no esperan encontrar a nadie en los nichos del pasillo.
+
+Los pasos se acercan al nicho donde te encuentras; si no decides cómo reaccionar o moverte ahora, quedarás atrapado entre la pared y la patrulla cuando pasen justo frente a ti.","Me quedo inmóvil, conteniendo la respiración y pegado a la pared. Escucho con atención para determinar cuántos son y dónde exactamente se encuentran.
+
+{Percepción}","","",""
+"M286092","La figura encapuchada permanece inmóvil mientras te aproximas, como una estatua de sal y coral olvidada en el fondo del océano. Sus ojos azules te observan con una apatía glacial, sin reaccionar al comentario ni al movimiento, aceptando tu cercanía con una pasividad inquietante.
+
+Tus manos tantean la superficie rugosa y los pliegues de la tela podrida, pero la costra calcificada es tan irregular y densa que cualquier posible abertura o bolsillo queda sepultado bajo capas de sedimentos marinos. No logras distinguir ninguna costura clara ni encontrar ningún hueco donde pudiera ocultarse algo; solo sientes el tacto áspero y frío de la piedra orgánica.","""No eres muy hablador, ¿verdad?""
+
+Me acerco un paso más, tratando de buscar alguna costura o abertura en esa ropa raída donde pudiera haber escondido algo pequeño.
+
+{Investigación}","","",""
+"M744272","Tus dedos recorren los surcos fríos del metal, buscando una secuencia o un flujo que guíe tu intuición. El relieve es complejo y los patrones se entrelazan en espirales que parecen cerrarse sobre sí mismas, resistiéndose a entregar una dirección clara. Sientes la intención del artífice en la rigidez del diseño, pero el conocimiento que posees sobre los ritos antiguos no es suficiente para descifrar el mapa oculto en el grabado.
+
+La pieza permanece inerte bajo tu tacto, manteniendo su secreto. La vibración persiste, constante y sorda, confirmando que el objeto está activo, pero no revela ninguna pista sobre la ubicación de los fragmentos restantes ni el mecanismo exacto para liberarlos.","""Así que no eres un simple adorno, sino una cerradura.""
+
+Acaricio los grabados con cuidado, tratando de sentir si hay algún patrón o indicio de dónde podrían estar los otros fragmentos.
+
+{Religión}","","",""
+"M791325","Al intentar seguir la dirección de las gotas, ⟦te das cuenta⟧ de que el polvo acumulado en el pasillo ha borrado cualquier huella de pisadas.","""Que siga gritando al aire.""
+
+Sigo caminando por el pasillo, pero bajo el ritmo para observar con cuidado las manchas de tinta del suelo.
+
+{Investigación}","COGNICION","",""
+"M770568","Al observar la disposición de los restos, ⟦comprendes⟧ que el objeto no estaba sucio, sino ""sellado"" con una pasta protectora que ahora ha quedado parcialmente comprometida, dejando expuesto un pequeño orificio de inserción que antes estaba oculto.","""Maldita sea...""
+
+Suelto la herramienta y me froto los nudillos con frustración. Observo la marca blanca y la opacidad del cilindro para entender qué ha pasado exactamente.
+
+{Investigación}","COGNICION","",""
+"M444714","El dato es demasiado vago; ⟦recuerdas⟧ que el Gremio es poderoso y que sus contratos son laberintos de tinta, pero no logras rescatar ninguna mención a una propiedad vacía, un litigio actual o un edificio abandonado que encaje con esa descripción.","""Recursos energéticos vivos... eso no suena a burocracia, suena a algo que se puede vender.""
+
+Intento recordar si alguien mencionó alguna propiedad vacía o un conflicto legal reciente relacionado con el Gremio.
+
+{Historia}","COGNICION","",""
+"M559315","La criatura responde al desafío con un espasmo violento, sus articulaciones chasqueando como ramas secas mientras se impulsa hacia adelante. No hay duda en su movimiento; es un salto depredador y preciso, una ráfaga de cuero podrido y garras que busca romper tu guardia para hundirse en tu carne.
+
+El aire se desplaza bruscamente cuando la bestia se lanza, el siseo transformándose en un alarido agudo que rebota en las paredes de piedra. Sus ojos amarillentos están fijos en tu garganta, y el hedor a tumba abierta te golpea justo antes de que el impacto sea inminente.","""Atrás, maldita cosa.""
+Saco mi espada y me pongo en guardia, manteniendo la vista fija en esos ojos amarillos.
+{Iniciativa}","","",""
+"M585643","Mientras ⟦hablas⟧, percibes que no hay fisuras en su discurso ni rastro de agendas ocultas; sus palabras no son el anzuelo de una trampa, sino la declaración honesta de alguien que ha esperado tu llegada con una fe inquebrantable.","""¿Y cuál es exactamente mi papel en ese equilibrio?""
+
+Me mantengo firme, observando la figura con atención para discernir si sus palabras son una guía o una manipulación.
+
+{Perspicacia}","HABLA","",""
+"M520114","Mantienes los párpados cerrados y las palmas abiertas, buscando cualquier indicio físico que rompa la monotonía del vacío. Sientes el contacto del aire contra tu piel, pero es una sensación estática, gélida y uniforme; no hay brisas que sugieran una apertura, ni cambios térmicos que revelen una fuente de calor o un abismo.
+
+A tu alrededor, el zumbido persistente de las formas indefinidas continúa su pulsación rítmica, pero no hay nada más. El espacio permanece mudo y sordo, negándote cualquier pista sensorial sobre la ubicación de una salida.","""Tengo que encontrar una salida de este lugar, no puedo quedarme aquí.""
+
+Cierro los ojos y extiendo las manos, intentando sentir si hay alguna corriente de aire o cambio de temperatura que me indique una dirección.
+
+{Percepción}","","",""
+"M946118","⟦Tus manos recorren⟧ las superficies polvorientas de la habitación, deslizando los dedos por el borde de una cómoda desvencijada y revisando los cajones que chirrían al abrirse.","""Maldita sea, parece que alguien se tomó muy en serio lo de borrar el rastro.""
+
+Guardo el pergamino y empiezo a buscar en la habitación algún otro papel, libro o correspondencia que pueda darme una pista sobre ese símbolo.
+
+{Investigación}","ACCION_NO_DECLARADA","",""
+"M429366","Tus dedos rozan el papel y el metal frío en un movimiento que pretendes fluido, pero la falta de precisión te traiciona. El sobre se engancha en el borde del pisapapeles de obsidiana, produciendo un chasquido seco y metálico que resuena en el silencio de la oficina, mientras la llave se desliza torpemente sobre la madera, alejándose de tu manga para quedar a la vista de todos.
+
+Faustino parpadea, confundido por el ruido, y baja la mirada hacia su escritorio. Sus cejas se elevan al notar el desplazamiento del sobre y la posición anómala de la llave.
+
+—¿Qué ha sido eso? —pregunta, frunciendo el ceño mientras observa los objetos y luego te mira a ti.","""Parece que todo está en orden, Faustino.""
+
+Sigo retirando la mano, pero aprovecho el movimiento para intentar deslizar el sobre y la llave bajo mi manga.
+
+{Juego de Manos}","","",""
+"M268103","Valerius arquea una ceja, soltando un bufido de desprecio ante la mención del mapa. Sus ojos se entrecierran, juzgando tu actitud con una mezcla de sospecha y fastidio, mientras el otro hombre asiente con brusquedad, recuperando la compostura.
+
+Al intentar analizar el equipo del hombre y el entorno, tu mirada se pierde en un destello confuso de luces y sombras. Te distraes con un detalle irrelevante —quizás una mancha de grasa en la bota de Valerius o el vuelo de una polilla— y, en ese instante de desconexión, juzgas erróneamente que el callejón está completamente despejado a tus espaldas, ignorando cualquier posible peligro o detalle útil que haya quedado fuera de tu vista.","""Toda la razón, señor. Un error de cálculo con el mapa.""
+
+Sigo sonriendo mientras retrocedo un paso, manteniendo las manos visibles, pero observo con cuidado los alrededores y el equipo de Valerius.
+
+{Perspicacia}","","",""
+"M136388","En un parpadeo, ⟦retiras⟧ de su bolsillo un pesado sello de cera con el emblema de la Delegación del Sur y una pequeña bolsa de cuero que suena a moneda, todo ello sin que el hombre deje de maldecir al sastre.","""Es un precio justo por una pieza tan singular, Don Faustino.""
+
+Aprovecho que sigue distraído peleando con su túnica para intentar deslizar mi mano hacia sus bolsillos o algún objeto de valor que tenga a mano.
+
+{Juego de Manos}","ACCION_NO_DECLARADA","",""
+"M183950","Al acercarte y bajar la voz, el gesto que pretendía ser cómplice resulta, a sus ojos, sospechosamente furtivo, casi como si estuvieras intentando robarle un botón de la chaqueta mientras ⟦hablas⟧.","""Hablemos de beneficios, entonces. Sé que tienes acceso a ciertos registros que no están abiertos al público, y yo sé cómo conseguir cosas que no están en los registros.""
+
+Me acerco un poco más, bajando la voz para crear una atmósfera de complicidad.
+
+{Persuasión}","HABLA","",""
+"M903552","La rigidez de tu cuerpo se convierte en tu única defensa mientras ⟦intentas⟧ rastrear la fuente del roce, pero la oscuridad es un muro impenetrable.","""Muéstrate, cobarde.""
+
+Me quedo rígido, evitando girarme bruscamente, y trato de sentir la presencia a mis espaldas.
+
+{Percepción}","ACCION_NO_DECLARADA","",""
+"M681079","El hombre no responde a tus palabras, pero en el instante en que ⟦mencionas⟧ que no lo dejarás solo, sus pupilas, antes fijas y dilatadas, se contraen violentamente.","""Tranquilo, estoy aquí contigo. No te voy a dejar solo.""
+
+Sigo examinando la piel del hombre, buscando algún rastro de magia o una reacción anómala al contacto.
+
+{Medicina}","HABLA","",""
+"M867390","El guardia suelta un bufido, ignorando el sarcasmo mientras te arrastra por el suelo, concentrado únicamente en el peso de tu cuerpo y en la satisfacción de llevarte al calabozo. Su atención está puesta en el camino hacia la puerta, dejando su costado derecho vulnerable mientras te empuja con brusquedad.
+
+Tus dedos se deslizan con precisión quirúrgica entre los pliegues de su cinturón de cuero. Sientes el frío metal de un juego de llaves pesadas y el roce de una bolsa de tela que tintinea suavemente; en un movimiento fluido y casi imperceptible, logras enganchar el anillo de llaves y deslizarlo hacia tu propia palma antes de que el guardia note cualquier cambio en su equipo.","""Vaya, no sabía que los guardias de aquí fueran tan apasionados con su trabajo.""
+
+Intento deslizar mi mano hacia el cinturón del guardia para buscar alguna bolsa de monedas o llaves mientras me deja arrastrar.
+{Juego de Manos}","","",""
+"M506140","Madame Valeriane suelta una risa seca, un sonido breve que no llega a sus ojos. ""La discreción es la base de cualquier buen gusto, querido. Los secretos son como el buen vino: solo se sirven a quienes saben esperar el momento adecuado"". Sus dedos tamborilean rítmicamente sobre la madera, marcando un compás lento y deliberado.
+
+Al inclinarte sobre la superficie, el brillo del barniz revela una anomalía. Bajo la luz, una pequeña veta de la madera en el lateral derecho del escritorio no sigue el flujo natural del grano; es una pieza insertada con una precisión quirúrgica. Al presionar ligeramente esa zona, sientes un clic metálico casi imperceptible que vibra bajo tu yema, sugiriendo que el bloqueo de uno de los cajones acaba de ceder.","""Tiene usted un gusto exquisito para el mobiliario, Madame. Casi parece que no tuviera secretos.""
+
+Me acerco un paso más, fingiendo admirar el barniz del escritorio mientras intento detectar cualquier mecanismo oculto.
+
+{Investigación}","","",""
+"M703973","Aunque ⟦entiendes⟧ la dirección del movimiento, no logras descifrar qué activa el desplazamiento ni si existe algún bloqueo físico o mágico que impida que la pieza se mueva en este momento.","""Algo faltaba aquí, y no era cualquier cosa.""
+Recojo los fragmentos ámbar con cuidado y estudio los surcos del suelo para comprender cómo se desplaza el mecanismo.
+{Investigación}","COGNICION","",""
+"M374333","Al observar las figuras aladas y las balanzas, ⟦reconoces⟧ la iconografía elemental del Equilibrio, aunque el estilo es mucho más arcaico que cualquier texto litúrgico actual.","""Es una belleza sobrecogedora, pero no reconozco estas estrellas.""
+
+Me acerco a los bajorrelieves para examinar las figuras y las alineaciones con detenimiento.
+
+{Religión}","COGNICION","",""
+"M560232","Al observarlas de cerca, ⟦comprendes⟧ que el anclaje ha registrado tu esencia y la ha vinculado a la arquitectura del lugar; la pulsación amatista es un eco de tu propia firma energética, ahora integrada en el mecanismo de la estancia.","""Interesante. No era un ataque, sino una llave.""
+
+Me acerco a la losa para observar detenidamente las runas amatistas antes de avanzar.
+
+{Arcanos}","COGNICION","",""
+"M167304","⟦Tus dedos recorren⟧ la superficie fría y húmeda de la piedra, apartando con cuidado las capas de musgo que se aferran a las juntas.","""Parece que mi concentración no es suficiente para romper este hechizo.""
+
+Abro los ojos y busco cualquier grieta, marca o relieve en la piedra que pueda indicar un mecanismo oculto.
+
+{Investigación}","ACCION_NO_DECLARADA","",""
+"M764870","Al analizar la frecuencia de la vibración y la disposición de las grietas circundantes, ⟦comprendes⟧ que no estás sobre un suelo sólido, sino sobre la superficie de una membrana calcificada.","""Interesante...""
+
+Me separo del suelo con cuidado y observo la grieta, tratando de comprender el origen de ese pulso.
+{Investigación}","COGNICION","",""
+"M545647","El intento de leer entre líneas choca contra un muro de granito. No hay fisuras en el semblante de Anselmo, ni un tic nervioso ni una vacilación en su postura que sugiera debilidad o duda; su disciplina es tan hermética como la cámara de máquinas que los rodea. El aire, saturado de ozono y aceite quemado, vibra con el ritmo hipnótico de los pistones hidráulicos, haciendo que el suelo metálico tiemble bajo los pies mientras el vapor envuelve la escena en una bruma claustrofóbica.
+
+Vela no se mueve ni un centímetro. Mantiene la vista al frente, ignorando la amenaza con una lentitud deliberada y una voz grave que corta el estruendo del entorno: ""El preludio de una tormenta no cambia el rumbo del camino. La regla es el único mapa que no miente.""
+
+Anselmo Vela se ha vuelto imperturbable. Seguir insistiendo en la intimidación solo refuerza su convicción de que no eres un interlocutor serio, alejándote cada vez más de obtener la información que necesitas sobre el camino del féretro.","""No te equivoques, Vela. El ruido es solo el preludio.""
+
+Me limpio el aceite de las manos con desdén y doy un paso hacia él, manteniendo la compostura.
+
+{Perspicacia}","","",""
+"M416260","Al caer, ⟦has dejado⟧ a Julián completamente desprotegido y el espacio entre vosotros y la criatura se ha reducido a nada; el horror ya no tiene obstáculos para alcanzar al anciano.","""¡No te soltaré, Julián! Aguanta fuerte.""
+
+Intento recuperar la verticalidad apoyando la espalda contra la pared de carne para estabilizarme y empujar la criatura lejos de nosotros.
+
+{Atletismo}","ACCION_NO_DECLARADA","",""
+"M369076","Tus dedos recorren el interior del cilindro, buscando el patrón de aquellas muescas en la negrura total. Sin embargo, la superficie es traicionera; el tacto se siente resbaladizo y las ranuras son tan finas que se confunden con el desgaste natural de la piedra o simples imperfecciones del tallado.
+
+No logras discernir ninguna secuencia lógica ni el funcionamiento del mecanismo. Solo sientes el frío persistente del hueco vacío, que ahora parece absorber el escaso sonido de la estancia.","""Interesante.""
+Guardo la pieza de obsidiana y trato de palpar las muescas del fondo del cilindro para entender su mecanismo.
+{Investigación}","","",""
+"M331371","⟦Reconoces⟧ el patrón como una firma ritual vinculada a la disciplina rígida de la Orden del Cielo, una energía que no intenta romper el sello, sino reclamarlo y someterlo a su propia voluntad.","""Tranquila, no estás sola. Todo va a estar bien.""
+
+Le doy una palmadita suave en el hombro para consolarla y vuelvo a concentrarme en el sello, intentando analizar la naturaleza de esa voluntad externa.
+
+{Religión}","COGNICION","",""
+"M564744","⟦Tus dedos recorren⟧ la superficie fría y rugosa de la piedra, apartando capas de musgo y moho que se deshacen como nata rancia.","""Maldita sea.""
+
+Me detengo frente al muro y busco cualquier rastro, huella o mecanismo oculto en la piedra.
+{Investigación}","ACCION_NO_DECLARADA","",""
+"M774856","Al intentar palpar la superficie corroída, un espasmo involuntario de tus dedos hace que presiones con demasiada fuerza. El borde del cuenco, debilitado por la reacción química, se quiebra bruscamente bajo tu tacto, rompiéndose en un fragmento afilado que te corta la yema del dedo.
+
+En el instante en que tu sangre entra en contacto con el residuo blanquecino, se produce un siseo violento. Una pequeña nube de vapor acre asciende rápidamente y el químico reacciona con un calor súbito que te quema la piel, dejando una marca roja y punzante que empieza a latir al ritmo de tu corazón. El fragmento de peltre cae al suelo con un tintineo seco, contaminando la zona circundante.","""Esto no es una infección natural, es algo provocado.""
+
+Toco con cuidado el borde corroído del cuenco para sentir la textura del residuo. 
+{Investigación}","","",""
+"M542643","Su expresión permanece imperturbable, una máscara de porcelana que no revela ninguna grieta ante tu mención del precio; al contrario, parece asentir internamente, como si esa exigencia fuera la confirmación final de que ⟦hablas⟧ su mismo idioma.","""Me gusta su forma de pensar, Madame. Pero el talento para tirar de los hilos correctos tiene un precio muy concreto.""
+
+Me inclino hacia delante, sosteniéndole la mirada con una sonrisa relajada.
+
+{Perspicacia}","HABLA","",""
+"M897237","Serafín Brea mantiene esa máscara de serenidad imperturbable, y el silencio que sigue a tu frase se prolonga justo lo suficiente para que el aire se sienta pesado. Al intentar diseccionar su rostro en busca de una debilidad, tu mente se pierde en el juego de sombras de sus facciones; interpretas un ligero movimiento de sus párpados como un signo de nerviosismo y un sutil ajuste en su postura como una señal de sumisión, conclusiones que te dan una falsa sensación de ventaja.
+
+—Exactamente —responde él, y ahora su sonrisa parece cargada de una condescendencia que antes no estaba allí—. Por eso es tan vital saber qué piezas soltar para que el barco no se hunda.","""El mar arrebata lo que no está bien anclado.""
+
+Sostengo la mirada, buscando cualquier microgesto que haya pasado por alto.
+
+{Perspicacia}","","",""
+"M766281","Te ⟦enderezas⟧, alejando el hedor metálico de tu rostro mientras recorres con la mirada el perímetro de la estancia.","""Que los dioses nos protejan, esto no es una simple mancha, es una advertencia.""
+
+Me pongo en pie y observo el resto de la zona para ver si hay más marcas similares.
+
+{Percepción}","ACCION_NO_DECLARADA","",""
+"M685128","Al analizar la geometría, ⟦reconoces⟧ que no se trata de una runa de conjuración ni de un lenguaje académico, sino de un sistema de marcas rudimentarias utilizado antiguamente para el anclaje de energías residuales.","""Interesante.""
+Me acerco a la pared para analizar las incisiones de cerca, intentando descifrar el significado de ese patrón geométrico.
+{Arcanos}","COGNICION","",""
+"M902046","Al analizar la disposición, ⟦comprendes⟧ que el relieve no es una crónica de desesperación, sino una instrucción.","""Alguien ha sufrido aquí, o ha intentado no perderse en su propia desesperación.""
+
+Sigo el relieve con los dedos, intentando comprender si el patrón indica una dirección o un mensaje oculto.
+
+{Investigación}","COGNICION","",""
+"M222403","Te quedas observando los trazos, comparándolos mentalmente con los blasones que ⟦recuerdas⟧ de los libros o los viajes, pero la combinación de elementos no encaja con ninguna casa noble prominente ni con un cargo administrativo conocido en la región.","""Este sello pertenece a alguien de rango. No es un simple trámite.""
+
+Examino el emblema con detenimiento para intentar identificar a qué familia o cargo pertenece ese linaje.
+
+{Historia}","COGNICION","",""
+"M785991","El sello de cera negra es inconfundible por su austeridad, aunque no logras vincular el ojo cerrado con ninguna casa noble o gremio comercial conocido en las regiones circundantes. La calidad del pergamino, sin embargo, te resulta familiar: esa textura orgánica y el peso excesivo son característicos de los materiales utilizados por las sectas ascéticas que operan en las profundidades de los pantanos, quienes prefieren el curtido de pieles animales tratadas con resinas fúnebres antes que el papel convencional.
+
+El aroma a mirra que emana del rollo es demasiado intenso para ser un simple perfume; es la fragancia típica de los ritos de embalsamamiento utilizados para preservar los cuerpos durante largos traslados. El emblema y el material sugieren que este mensaje no era una carta personal, sino un documento ritual o una instrucción destinada a alguien familiarizado con las costumbres de los cultos de muerte.","""Vaya, nada de oro. Solo secretos.""
+
+Examino el sello de cera negra y el material del pergamino para intentar reconocer el emblema o el origen del papel.
+
+{Historia}","","",""
+"M104960","Te ⟦inclinas⟧ sobre el escritorio, concentrando la vista en el rastro de polvo blanco y la disposición de los pergaminos.","Me acerco al escritorio para examinar los pergaminos y el rastro de polvo.
+{Investigación}","ACCION_NO_DECLARADA","",""
+"M360069","Serafín Brea arquea una ceja ante tu respuesta, y por un instante, el silencio vuelve a espesarse. Te quedas observándolo, intentando descifrar el significado de su postura y el ritmo de su respiración, pero tu concentración flaquea. Te distraes con el movimiento errático del humo del tabaco y el brillo de un botón en su casaca, perdiendo por completo el hilo de sus gestos; lo que antes parecía una señal de relajación ahora te resulta ambiguo y confuso.
+
+Al notar que te has quedado absorto en un análisis fallido, la sonrisa de Serafín se ensancha, aunque sigue siendo gélida. Suelta un suspiro sonoro que denota una creciente impaciencia.
+
+—Palabras elegantes —suelta con desdén—. Pero el juicio comienza por saber cuándo dejar de mirar y empezar a escuchar.","""El orgullo es un lujo que no puedo permitirme, y el juicio es mi herramienta más útil.""
+
+Mantengo la mirada, evaluando su lenguaje corporal para ver si ha bajado la guardia.
+{Perspicacia}","","",""
+"M699793","Mientras intentas recuperar la compostura, ⟦te das cuenta⟧ de que, en la confusión del golpe, has derribado precisamente el único rincón de la habitación que parecía estar ordenado, dejando los objetos esparcidos y desordenados bajo la penumbra.","""Vaya pérdida de tiempo.""
+
+Me alejo del panel y busco con la mirada cualquier otro elemento inusual en la habitación que haya pasado por alto.
+
+{Percepción}","COGNICION","",""
+"M560449","Tus dedos se deslizan con una fluidez casi quirúrgica por el forro de la chaqueta, evitando cualquier movimiento brusco que pueda alertar al hombre o provocar que se tense. Sin que él llegue a sentir la intrusión, descoses el borde de la bolsa de cuero con un toque preciso y extraes el contenido en un solo movimiento limpio, ocultando el objeto en tu palma antes de que el sujeto pueda siquiera procesar que ha sido despojado.
+
+El hombre suelta un gemido ahogado, con la mirada fija en ti, temblando bajo tu peso. Sus pupilas dilatadas reflejan el terror puro mientras intenta recuperar el aire, pero permanece inmóvil, consciente de que cualquier reacción podría empeorar su situación. En tu mano, sientes la superficie fría y pulida de una pequeña placa de metal grabada, cuyo peso es sólido y deliberado.","""Ahora vas a decirme qué guardas ahí dentro.""
+
+Mantengo el peso sobre él mientras deslizo la mano hacia la bolsa cosida en su chaqueta para intentar extraer el objeto sin soltarlo.
+
+{Juego de Manos}","","",""
+"M182363","⟦Tus dedos recorren⟧ la superficie del pergamino, presionando el papel y buscando alguna irregularidad en el tacto.","""Maldita sea, no hay nada.""
+
+Bajo el pergamino y lo examino más de cerca, buscando cualquier rastro de rasgaduras o costuras que indiquen que el papel fue recortado o manipulado.
+
+{Investigación}","ACCION_NO_DECLARADA","",""
+"M123908","Te ⟦alejas⟧ del torbellino de colores y encuentras refugio en la plataforma de madera de un puesto de refrescos ya cerrado, que te ofrece una perspectiva cenital del patio.","""Demasiado ruido y poca calidad.""
+
+Me separo de la danza y busco un lugar elevado o una esquina más tranquila donde pueda observar el flujo de la gente desde fuera.
+
+{Percepción}","ACCION_NO_DECLARADA","",""
+"M643391","Cada vez que ⟦mencionas⟧ el ""negocio"" o la ""prudencia"", sus ojos se desvían instintivamente hacia el horizonte, en dirección a los pueblos vecinos, como si esperase la llegada de algo que no debería estar allí.","""Tienes toda la razón, Toño. La prudencia es la base de cualquier buen negocio.""
+
+Doy un paso atrás con las manos en alto, fingiendo una sumisión amable mientras trato de descifrar qué es exactamente lo que tanto protege.
+
+{Perspicacia}","HABLA","",""
+"M775981","Al cerrar los ojos y buscar en tu memoria los cánones de los textos sagrados, la concentración se quiebra bruscamente. Una imagen errónea y distorsionada emerge en tu mente, convenciéndote con una certeza absoluta de que el símbolo central es una advertencia contra la manipulación del mecanismo. Te persuades a ti mismo de que cualquier intento de interactuar con el glifo provocará un colapso inmediato de la estructura o una maldición irreversible sobre quien lo toque.
+
+El pulso azulado del símbolo parece intensificarse en tu visión, transformándose ahora en una señal de peligro inminente. El silencio de la sala se vuelve opresivo, y la vibración de la viga, que antes era un simple zumbido, ahora te suena como el aviso de una trampa a punto de saltar.","""No me rendiré ante un acertijo de piedra.""
+
+Me concentro en el símbolo central y trato de recordar cualquier referencia a este tipo de geometría en los textos sagrados.
+
+{Religión}","","",""
+"M147781","La luz que emana de tus manos chisporrotea, luchando por abrirse paso, pero la resistencia es absoluta. Al intentar forzar la energía, sientes un rechazo violento; la barrera viscosa no solo bloquea el flujo divino, sino que parece absorber el esfuerzo, devolviéndote una sensación de vacío gélido que te cala hasta los huesos. La fe, en este punto, choca contra un muro de negrura que no cede ante la voluntad.
+
+El hombre abre los ojos, nublados por el dolor y el pánico. Un espasmo más fuerte sacude su cuerpo y el tejido cenizo de su hombro comienza a expandirse lentamente, devorando un centímetro más de piel sana mientras emite un siseo casi imperceptible. La putrefacción avanza, indiferente a tus palabras y a tu energía.","""No te rindas, hermano. Mi fe es más fuerte que esta podredumbre.""
+
+Aprieto los dientes y vuelvo a concentrar mi energía, intentando forzar la luz divina a través de la barrera para limpiar la herida.
+
+{Religión}","","",""
+"M368595","Al observar la viscosidad y la forma en que el líquido parece haber sido absorbido por las vetas del suelo, ⟦reconoces⟧ un patrón que no pertenece a la descomposición natural ni a ningún fluido corporal común.","""Esto no es normal. No hay rastro humano, pero la mancha está ahí.""
+
+Me pongo de rodillas para examinar la sustancia más de cerca, intentando identificar su naturaleza o procedencia.
+
+{Religión}","COGNICION","",""
+"M942713","El Centinela no responde de inmediato. Sus párpados metálicos descienden lentamente, pero en ese instante de silencio, notas que su mirada no es de desesperación, sino de una resignación absoluta y sagrada. No hay rastro de engaño ni de ocultismo en su tono; el vacío que sientes en la fractura no es una herida que cerrar, sino una pieza que falta. Su energía no se agota, sino que busca un anclaje que ya no existe en este plano, como una llave que gira en una cerradura oxidada.
+
+—La Verdad es que el Equilibrio no es un estado, sino un pacto —murmura, y un leve temblor recorre sus placas—. Para sanar el cuerpo, primero debe restaurarse el Vínculo. No necesito tu magia, pequeño caminante, sino que alguien recupere el fragmento del Archivo que fue arrancado cuando el cielo se quebró. Solo entonces el peso de las eras dejará de aplastarme.","""¿Qué Verdad es esa que se ha olvidado? Por favor, dime qué necesitas para sanar.""
+
+Me quedo junto a él, buscando en su mirada alguna señal de lo que realmente está ocurriendo.
+
+{Perspicacia}","","",""
+"M209861","Al intentar organizar los suministros, el pánico ⟦te asalta⟧ al notar que no logras discernir la prioridad de las lesiones; la infección grisácea parece extenderse más rápido de lo que tus sentidos pueden procesar y la fragilidad de su tórax te impide aplicar cualquier presión sin riesgo de romperle las costillas.","""Tranquilo, ya no estás solo. Voy a ayudarte.""
+
+Sigo evaluando su estado mientras preparo mis suministros médicos para estabilizarlo.
+
+{Medicina}","EMOCION","",""
+"M509445","Logras percibir que la corriente fluye con rotundidad hacia las tierras altas, alejándose del núcleo urbano, pero la precisión se escapa entre tus dedos como arena fina; ⟦sabes⟧ que el destino está en algún lugar de las elevaciones circundantes, aunque no puedes distinguir si se trata de un santuario oculto, una cumbre olvidada o una estructura enterrada bajo la roca.","""Esto no es un simple objeto... es una llamada.""
+
+Me quedo un momento en silencio, procesando la dirección de esa corriente divina para intentar fijar el punto exacto hacia donde tira.
+
+{Religión}","COGNICION","",""
+"M632450","El cuerpo se funde con la piedra fría del nicho, la daga apretada en el puño mientras el corazón late con fuerza contra las costillas. El silencio regresa, pero ahora es un silencio cargado, filtrado por el goteo rítmico que cae sobre los charcos de aceite negro. En la penumbra del pasillo estrecho, los sentidos se agudizan y el aire húmedo comienza a revelar lo que el ruido había ocultado.
+
+Desde el fondo del corredor, el eco de unas botas pesadas comienza a resonar contra la piedra bruta. No es un paso apresurado, sino una marcha lenta y deliberada que se acerca, acompañada por el tintineo metálico de unas llaves y un silbido anémico que rebota en las paredes húmedas. Alguien viene, y no tiene prisa por llegar.
+
+El guardia se acerca paso a paso; si no decides cómo interceptarlo o esconderte mejor, te encontrará en el nicho en cuestión de segundos.","""Maldita sea...""
+
+Me pego rápidamente a la pared del nicho más cercano y preparo mi daga, conteniendo la respiración mientras escucho el pasillo.
+
+{Percepción}","","",""
+"M740717","Te ⟦levantas⟧ sacudiéndote el barro, pero al observar los riscos, la niebla se cierra sobre ti como una manta húmeda y gris.","""Que la luz guíe mis pasos fuera de este caos.""
+
+Me pongo en pie y trato de orientarme analizando el terreno y la posición de los riscos para recuperar el rumbo.
+
+{Supervivencia}","ACCION_NO_DECLARADA","",""
+"M181049","⟦Pasas⟧ los dedos por la costra grisácea, pero el tacto es uniforme y áspero; no hay relieves, ni bordes de pergaminos, ni el frío metálico de una joya que sobresalga.","""Puaj... Huele a tumba olvidada.""
+
+Saco una antorcha para iluminar el interior del nicho y busco cualquier objeto valioso o documento oculto entre la costra de polvo.
+{Investigación}","ACCION_NO_DECLARADA","",""
+"M655628","El encapuchado ni siquiera se tambalea. Al aplicar la fuerza, sientes que empujas contra una pared de piedra; el atacante absorbe el impacto sin ceder un centímetro, manteniendo la hoja anclada contra la tuya con una estabilidad sobrenatural. Su silencio permanece intacto, convirtiendo tu exigencia en un eco vacío que se pierde en la bruma.
+
+A tu espalda, el hombre de la daga aprovecha tu esfuerzo fallido y la rigidez del forcejeo. Sale bruscamente de detrás del roble, acortando la distancia con un paso rápido y depredador, mientras levanta el arma para aprovechar tu espalda expuesta.","""¡No lucharé contra sombras, revelad vuestros rostros!""
+
+Empujo con fuerza al encapuchado para intentar apartarlo de mí y ganar espacio.
+
+{Atletismo}","","",""
+"M349859","Serafín mantiene su sonrisa, pero el brillo de sus ojos cambia sutilmente cuando ⟦mencionas⟧ el lujo de la honestidad.","""La honestidad es un lujo que no todos pueden permitirse, señor Brea.""
+
+Ladeo la cabeza, observando cada detalle de su expresión para encontrar alguna contradicción.
+{Perspicacia}","HABLA","",""
+"M595493","El eco de tus palabras rebota en las paredes húmedas, pero no provoca ninguna reacción visible en la figura encapuchada. Te concentras, cerrando los ojos para filtrar el ruido, y logras captar el siseo húmedo de una de las criaturas a tu derecha, mientras que la otra parece haberse desplazado hacia el centro de la gruta. Sin embargo, la acústica irregular de la cueva y el goteo constante del techo confunden la procedencia exacta de los sonidos, dejándote con una noción imprecisa de sus posiciones.
+
+Las bestias aprovechan esa vacilación sensorial para cerrar el círculo. Sientes una ráfaga de aire frío y el olor a carne putrefacta rozando tu nuca justo cuando un siseo agudo, casi un grito, desgarra el silencio desde un ángulo que no habías logrado precisar.","""No os escondáis en las sombras. Yo soy la sombra.""
+
+Me mantengo firme y trato de localizar la posición exacta de las bestias mediante el sonido de su respiración.
+
+{Percepción}","","",""
+"M612428","La caja de hierro es pesada y el hollín se desprende en escamas negras sobre tus dedos mientras la ⟦extraes⟧.","""Vaya, parece que alguien quería que esto se quedara aquí abajo.""
+
+Saco la caja de los escombros y examino el candado para ver si puedo forzarlo sin romper el contenido.
+
+{Investigación}","ACCION_NO_DECLARADA","",""
+"M538452","El silencio que sigue al grito es absoluto, roto únicamente por el sonido de tu propia respiración agitada. El punto donde Amancio fue engullido vuelve a ser una superficie lisa, una mancha de negrura tan densa que parece absorber incluso la poca luz que te rodea. No hay ondas, no hay restos de tela, ni rastro alguno de que alguien haya sido arrastrado hacia abajo; el Vacío se ha cerrado sobre él con una eficiencia quirúrgica.
+
+Al observar el flujo de las sombras, notas que no se mueven como un fluido natural, sino que parecen pulsar rítmicamente, como un corazón lento y enfermo. Sin embargo, el patrón es errático y confuso; las sombras no fluyen hacia un centro, sino que parecen plegarse sobre sí mismas en ángulos imposibles que desafían la vista, dejándote con la sensación de que estás mirando un mecanismo complejo cuyo lenguaje desconoces por completo.","""¡No! ¡Amancio!""
+
+Me quedo paralizada un instante mirando el punto donde desapareció, buscando cualquier rastro de él en la oscuridad. Intento analizar el flujo de esas sombras para comprender cómo funciona este abismo.
+
+{Investigación}","","",""
+"M211035","El hombre retira la mano rápidamente una vez que ⟦has asegurado⟧ el oro, ajeno al breve pero exhaustivo inventario que acabas de hacer de sus pertenencias.","""Un placer hacer negocios con alguien que aprecia la calidad de una buena oferta.""
+
+Extiendo la mano para coger la bolsa y, mientras lo hago, intento notar si hay algo más en sus bolsillos o si oculta algún otro objeto de valor.
+
+{Juego de Manos}","HABLA","",""
+"M671217","El sello de cera roja permanece allí, burlón, con sus espadas flanqueando el molino en un despliegue de pompa innecesaria. Repasas mentalmente los blasones, los anuncios pegados en los muros de la ciudad y los timbres de las cartas que han pasado por tus manos, pero la imagen no encaja con ninguna pieza de tu memoria. El diseño te resulta vagamente familiar, como un sueño que se desvanece al despertar, pero no logras ubicar el origen de ese emblema ni a qué familia o gremio pertenece exactamente.
+
+El silencio del lugar se siente ahora más pesado, subrayando que el nombre de Valerius es, por el momento, el único hilo sólido que tienes para tirar.","""Valerius... Un nombre que suena a dinero y a problemas.""
+
+Guardo el documento con cuidado y busco en mis recuerdos si he visto ese sello del molino y las espadas en algún otro sitio.
+
+{Historia}","","",""
+"M635686","El libro suelta un chillido ahogado, un sonido metálico y húmedo que recuerda a un zapato apretado que intenta escapar del pie. Bajo la presión bruta de tus manos, la encuadernación cruje con una sumisión indignada; el volumen queda aplastado contra la madera del mostrador, totalmente inmovilizado y con el cierre de bronce deformado en una mueca de absoluta derrota.
+
+El zumbido cesa abruptamente, sustituido por un silencio sepulcral y cargado de resentimiento. El libro ya no vibra, pero sientes que la tinta del párrafo se agita violentamente bajo la superficie del papel, como si las letras estuvieran gritando insultos mudos mientras quedan atrapadas bajo tu peso.","""Deja de vibrar, trozo de cuero.""
+
+Aprieto el libro con fuerza contra el mostrador, intentando someterlo físicamente para que deje de moverse.
+
+{Atletismo}","","",""
+"M272771","El vacío no emite sonido ni eco; tus palabras quedan suspendidas en el aire, absorbidas por la negrura sin dejar rastro. Al acercar la palma de la mano, el frío que emana de la fisura es absoluto, una ausencia de calor que cala hasta los huesos, pero no hay viento, ni pulsaciones, ni el más mínimo rastro de energía divina o arcana que reconozcas.
+
+Tus dedos rozan el límite del desgarro y no sientes una superficie, sino una resistencia sorda, como si intentaras tocar una pared hecha de silencio sólido. La anomalía permanece inerte, negándote cualquier revelación y manteniendo su naturaleza impenetrable frente a tu tacto.","""¿Por qué no respondes? ¿Acaso ni siquiera el cielo puede mirar aquí?""
+
+Me acerco un paso más a la fisura y extiendo la mano, intentando sentir si hay alguna vibración o corriente que pueda darme una pista.
+
+{Religión}","","",""
+"M720768","Cada vez que ⟦crees⟧ haber aislado un párrafo coherente, una mancha de tinta o un sello de cera mal colocado te obligan a empezar de nuevo, dejándote con la sensación de que el documento ha sido diseñado específicamente para provocar migrañas.","""Esto es un nido de trampas legales. No pienso firmar ni aceptar nada que no entienda al detalle.""
+
+Le quito el pergamino a Matilde y busco cualquier cláusula que resalte o algún nombre que reconozca entre tanta tinta.
+
+{Investigación}","COGNICION","",""
+"M915853","A medida que ⟦retrocedes⟧, el frío muerde tu piel y el aire se vuelve espeso, saturado de una estática que eriza el vello de tus brazos.","""Interesante... que tu caos sea tan visceral.""
+
+Doy un paso atrás para recuperar espacio, pero mantengo la mirada fija en el núcleo mientras trato de hallar una debilidad en esa frecuencia.
+
+{Arcanos}","ACCION_NO_DECLARADA","",""
+"M836612","El mundo físico se desvanece en un vacío de basalto líquido donde el tiempo deja de fluir. El altar se expande frente a Ilvard en una arquitectura geométrica imposible, compuesta de luz fría y sombras sólidas, mientras fragmentos de una memoria ancestral comienzan a latir al ritmo exacto de su propio corazón. La fe actúa como un eje inamovible, permitiendo que el torrente de información atraviese su ser sin fragmentarlo, transformando la presión abrasadora en una claridad cristalina.
+
+La entidad orgánica se inclina ligeramente hacia adelante; mantiene la distancia, pero su presencia envuelve la escena como un manto. Su voz desciende aún más de frecuencia, casi fundiéndose con el zumbido del basalto: ""Exacto. Deja que el ancla sea tu propia certeza. No intentes contener la marea, solo sostén el hilo que te une a ella"".
+
+La conexión es estable, pero las memorias ancestrales son vastas y contradictorias; si no filtras el flujo para buscar el dato específico que necesitas, podrías perderte en el eco de eras pasadas.","""No lucharé contra la corriente, sino que me dejaré guiar por ella.""
+
+Cierro los ojos con fuerza y me concentro en mi fe, buscando un ancla en mis principios para canalizar el flujo de información sin romperme.
+
+{Religión}","","",""
+"M276987","La posición defensiva ha resultado forzada y sospechosa; Melida empezará a cuestionar por qué te ⟦esfuerzas⟧ tanto en bloquear el acceso al espacio vacío si solo estás ayudando con los papeles.","""Tienes razón, son piezas delicadas. No quisiera arruinar un tesoro así""
+
+Sigo ayudándola a recoger los papeles, moviéndome con cuidado para mantener mi cuerpo entre ella y el espacio vacío.
+{Engaño}","VOLICION","",""
+"M779275","Al retroceder, el patrón de las pulsaciones se revela con una claridad aterradora. No es un latido biológico, sino una frecuencia geométrica; la masa se contrae y expande siguiendo una secuencia matemática precisa que vibra en el plano astral. Sientes un frío glacial recorrerte la nuca al comprender que la sustancia no está infectando la materia, sino sustituyéndola, reescribiendo la realidad física para convertirla en un conducto de una energía ajena a este mundo.
+
+La masa oscura parece responder a tu escrutinio. En el instante en que descifras su naturaleza, una de las pulsaciones se vuelve errática y un filamento viscoso se dispara hacia arriba, como una antena buscando una señal, deteniéndose a escasos centímetros de tu rostro. La sustancia emite un zumbido sordo que resuena directamente en tus dientes.","""Esto no es una infección natural.""
+
+Me alejo un paso para analizar la masa desde una distancia segura, buscando cualquier rastro de magia o un patrón consciente en sus pulsaciones.
+
+{Arcanos}","","",""
+"M184940","Tus dedos se deslizan con agilidad quirúrgica bajo la pesada tela de su jubón, aprovechando que Faustino sigue sumido en su propio júbilo. El contacto es breve y preciso, permitiéndote palpar la zona donde el peso parece haber desaparecido. Sientes el relieve de una bolsa de cuero pequeña y compacta, anclada a un cinturón interno, que contiene algo sólido y frío al tacto, similar al metal pulido, pero que no emite el tintineo habitual de las monedas.
+
+Faustino, absorto en su risa, ni siquiera se inmuta ante la incursión. Se limpia una lágrima imaginaria del ojo y te mira con una complicidad casi paternal, totalmente ajeno a que acabas de inventariar su costado.","""Me alegra que coincidamos en eso, Faustino.""
+
+Aprovecho su distracción y su risa para deslizar mi mano hacia su costado, intentando sentir qué es exactamente lo que le pesa menos.
+
+{Juego de Manos}","","",""
+"M802265","Te ⟦desplazas⟧ por el perímetro de la estancia, recorriendo con la mirada las vetas de la madera en las paredes y el tacto del suelo.","""Tiene que haber algo más que una simple marca.""
+
+Me separo del mueble y empiezo a registrar el suelo y las paredes cercanas, buscando cualquier relieve o patrón que coincida con el círculo del armario.
+
+{Investigación}","ACCION_NO_DECLARADA","",""
+"M349069","Tus dedos se hunden en la pulpa húmeda mientras ⟦levantas⟧ el papel, que ahora tiene la consistencia de una servilleta usada en una taberna barata.","""Maldita sea...""
+
+Suelto un bufido de frustración y recojo el pergamino mojado del suelo rápidamente, intentando salvar lo que quede de tinta antes de que se borre del todo.
+
+{Investigación}","ACCION_NO_DECLARADA","",""
+"M631855","La figura se inclina levemente, y aunque no hay rostro visible bajo la capucha, sientes que una mirada gélida y analítica te recorre los huesos. Al concentrarte en la distorsión, percibes que el vacío no es uniforme; hay patrones rítmicos, como pulsaciones invisibles que conectan la entidad con los cimientos mismos de la ciudad. No es un anclaje accidental, sino una arquitectura mística diseñada para que el ser actúe como un sello o un centinela, cuya esencia se drena constantemente para alimentar una barrera mucho más vasta y antigua que se extiende bajo el pavimento de Umbral Hondo.
+
+—El hambre de los que olvidaron su nombre es lo que mantiene los muros en pie —responde la voz, vibrando ahora con un matiz de ironía seca—. Fui anclado por aquellos que temían que lo de abajo subiera, y que prefirieron convertirme en el cerrojo antes que en la llave.","""No me interesa tu definición, sino quién te ha anclado a este lugar.""
+
+Me mantengo firme, observando la distorsión sin retroceder.
+{Arcanos}","","",""
+"M456114","Al analizarlo, ⟦comprendes⟧ que el tejido original no fue simplemente sustituido, sino que sirvió como ancla; la aberración comenzó en un punto focal específico, consumiendo el órgano desde un núcleo central hacia afuera, como una plaga que utiliza la biología del huésped como combustible para su propia arquitectura.","""Esto no es una enfermedad natural, es una aberración.""
+
+Sigo examinando la masa, buscando cualquier rastro de tejido orgánico original que no haya sido sustituido para intentar comprender el origen de la mutación.
+
+{Medicina}","COGNICION","",""
+"M962933","El gesto de rendición y el retroceso coordinado actúan como un bálsamo sobre la tensión del momento. Melida suelta un suspiro de alivio, relajando los hombros y dejando de apretar el diario contra sí, aunque no llega a soltarlo. Su tono recupera esa calidez solemne, casi como si estuviera recitando un elogio, mientras observa el entorno.
+
+""Una brisa suave... Sí, esas son las que traen el aroma del Roble en primavera, sin herir la corteza. Me gusta que sepas cuándo retroceder; es una virtud que pocos poseen cuando el hambre de saber es tanta"", comenta con una mirada ahora serena. A su alrededor, el manantial de obsidiana permanece como un espejo de agua negra y estática, rodeado por monolitos de piedra geométrica que parecen plegarse sobre sí mismos, creando un eco visual infinito bajo un cielo despojado de estrellas.
+
+Aunque la tensión ha desaparecido, Melida sigue abrazando el diario; si deseas acceder a su contenido, necesitarás encontrar una motivación que pese más que su sagrada tradición.","""Un viento fuerte suele limpiar el camino de lo innecesario, pero yo prefiero los brisas suaves.""
+
+Suelto una risita ligera y levanto las manos en señal de rendición, retrocediendo un paso para darle su espacio. {Persuasión}","","",""
+"M998332","El silencio del bosque se vuelve denso, casi tangible, mientras te ⟦incorporas⟧.","""¿Qué significa esto?""
+Me pongo en pie rápidamente y miro a mi alrededor, atento a cualquier movimiento entre los árboles.
+{Percepción}","ACCION_NO_DECLARADA","",""
+"M803335","⟦Tus dedos rozan⟧ la madera húmeda y fría mientras avanzas, pero el pasillo se resiste a entregar cualquier secreto.","""Demasiado silencio para mi gusto.""
+
+Sigo avanzando por el pasillo, manteniendo la guardia y observando detenidamente las paredes en busca de cualquier mecanismo o inscripción oculta.
+
+{Investigación}","ACCION_NO_DECLARADA","",""
+"M975827","Amancio, aunque permanece apartado como ⟦has ordenado⟧, no deja de temblar; observa la escena con el rostro pálido, alternando la vista entre la expresión impasible de tu rostro y la respiración errática del hombre.","""¡Apartaos, Amancio! ¡Dejadme espacio!""
+
+Ignoro el grito y me inclino rápidamente sobre el pecho del paciente para evaluar la gravedad de la fractura y estabilizar su respiración.
+
+{Medicina}","HABLA","",""
+"M226426","La geometría es precisa, pero los símbolos que el líquido dibuja en la piedra te resultan esquivos; ⟦reconoces⟧ trazos que sugieren una naturaleza ritual o de sellado, pero la sintaxis del hechizo es confusa y no logras descifrar el propósito exacto de la formación ni qué efecto desencadenará una vez que el patrón se complete.","""Interesante...""
+
+Me acerco al borde del círculo luminiscente, pero sin entrar en él, para observar la geometría y el brillo del líquido.
+
+{Arcanos}","COGNICION","",""
+"M411439","Al apoyar la mano, el frío de la piedra se transmuta en un hormigueo eléctrico que asciende por tu brazo. El flujo violeta reacciona a tu contacto, intensificando su brillo en el momento exacto de la pulsación larga. No es solo una señal; es una cerradura sónica. Sientes que la frecuencia no busca una respuesta mágica, sino una resonancia física específica que active un mecanismo oculto en la estructura inferior.
+
+La vibración se vuelve tangible, un zumbido grave que hace vibrar tus dientes y resuena en la base del cráneo. Logras discernir que el patrón de tres cortos y uno largo es una secuencia de apertura, una clave rítmica que, de ser replicada o forzada, podría desplazar los cimientos de la estancia para revelar el origen de la señal.","""Un código... no es azar, es una llamada.""
+Me acerco a la placa y apoyo la palma de la mano sobre la piedra, intentando sentir la vibración del resonador.
+{Arcanos}","","",""
+"M641460","Sin embargo, la complejidad del circuito es abrumadora; las runas se entrelazan en un patrón fractal que parece cambiar ligeramente cada vez que ⟦intentas⟧ fijar la vista en un nodo específico.","""Un grillete eterno... qué eficiencia tan cruel.""
+
+Me quedo observando el relicario, tratando de descifrar si hay alguna forma de romper ese vínculo sin destruir el objeto.
+
+{Arcanos}","ACCION_NO_DECLARADA","",""
+"M703508","Se endereza rápidamente al notar que ⟦sigues⟧ observándolo y trata de recuperar una compostura que no posee, ajustándose el cuello de la camisa con gestos espasmódicos.","""Treinta monedas por un contrato que parece darte pánico. ¿Qué es lo que realmente me estás pagando para que proteja?""
+
+Suelto la presión sobre él, pero me quedo cerca, observando su reacción mientras miro el documento.
+
+{Perspicacia}","ACCION_NO_DECLARADA","",""
+"M931623","Doroteo se tensa ligeramente ante el contacto, pero no se aparta; al contrario, sus hombros caen, liberando una tensión que parecía sostenerlo físicamente. No dice nada, pero el leve temblor de su barbilla y la forma en que deja que el pergamino se deslice hacia ti indican que acepta el gesto, aunque el cansancio ha mermado su capacidad de respuesta.
+
+Al inclinarte sobre los papeles, el caos de tinta y tachaduras te resulta abrumador. Las notas marginales son fragmentarias, escritas con una caligrafía que se vuelve errática y apresurada conforme avanzan las páginas. Logras distinguir nombres repetidos y referencias a fechas antiguas, pero el patrón de su búsqueda es un laberinto de obsesiones y callejones sin salida; los datos están tan desordenados que, por ahora, no consigues extraer ninguna conclusión coherente ni identificar qué es exactamente lo que falta.","""No tiene por qué cargar con este peso usted solo. Permítame ayudarle a encontrar lo que busca.""
+
+Pongo una mano reconfortante sobre su hombro e intento echar un vistazo más detallado a las anotaciones marginales para comprender el patrón de su búsqueda.
+
+{Investigación}","","",""
+"M535632","Elian cae pesadamente sobre el suelo, golpeando la espalda contra la superficie fría. Se queda allí tumbado, jadeando, mientras la sangre gotea lentamente de su labio partido. Al quedar libre de tu presión, el hombre no intenta huir ni suplicar; simplemente te observa desde abajo con una mirada vacía, como si estuviera contando los segundos para que el siguiente golpe llegue.
+
+Te detienes un instante a analizar su condición, pero el rastro de sangre, el temblor de sus extremidades y su expresión ausente se vuelven un rompecabezas confuso. Te convence que su resistencia es una fachada calculada, una táctica psicológica para hacerte dudar de su vulnerabilidad, aunque en realidad el hombre parece estar al borde del desmayo físico.","""Me gusta esa terquedad. Veremos cuánto dura.""
+
+Suelto el agarre bruscamente y lo empujo hacia atrás para observar su estado.
+
+{Perspicacia}","","",""
+"M765197","El lodo actúa como una trampa viscosa que succiona tus extremidades, ralentizando cada movimiento. Intentas girar el cuerpo para evitar el golpe, pero la superficie resbaladiza te traiciona; tu impulso es insuficiente y el zarpazo de la bestia impacta con fuerza bruta. Sientes el golpe seco y el desgarro de las garras contra tu equipo y tu piel, lanzándote hacia atrás mientras el fango oscuro se mezcla con el rastro de la herida.
+
+La criatura no se detiene. Aprovechando que has quedado tendido y jadeando sobre el suelo húmedo, emite un gruñido vibrante que retumba en tu pecho. Se yergue sobre sus patas, ensombreciendo tu visión con su masa deforme, y prepara un nuevo ataque mientras gotea saliva espesa sobre el barro.","""¡Maldita sea!""
+
+Intento rodar rápidamente sobre el lodo para esquivar el zarpazo y ponerme en pie.
+
+{Acrobacias}","","",""
+"M976370","No es una enfermedad natural ni una putrefacción común; ⟦recuerdas⟧ haber leído sobre la *Plaga de Cristal* en antiguos tratados de alquimia prohibida.","""Qué demonios es esto...""
+
+Me alejo un paso para observar la herida con más calma, intentando recordar si he visto algo similar en los bosques o en los libros.
+
+{Naturaleza}","COGNICION","",""
+"M371608","La luz que emanas se funde con los hilos azules, creando un núcleo de serenidad que frena la oscilación del espacio. Mientras mantienes el flujo, el caos se aplaca y el tejido místico comienza a responder a tu voluntad, aunque la brecha resiste una estabilización total, manteniendo una tensión vibrante que te obliga a sostener el esfuerzo.
+
+En ese estado de comunión, percibes que la presión externa no es un ataque, sino una fuerza de gravedad metafísica. Sientes el peso de un vacío inmenso, una ausencia de luz y sonido que empuja contra los muros de este fragmento de realidad, como si el lugar donde te encuentras fuera una burbuja de aire sumergida en un océano de nada absoluta.","""Que la luz traiga orden al caos.""
+
+Cierro los ojos y me concentro en mantener esa armonía, intentando estabilizar la brecha por completo mientras trato de discernir el origen de esa presión externa.
+
+{Religión}","","",""
+"M718079","Te ⟦impulsas⟧ desde el suelo con una velocidad sorprendente, ignorando el cosquilleo del golpe en la frente.","""¡No te atrevas a huir, rata!""
+
+Me levanto rápidamente del suelo, ignorando el golpe en la frente, y me lanzo hacia él para interceptarlo antes de que llegue a la puerta.
+
+{Atletismo}","ACCION_NO_DECLARADA","",""
+"M662423","Tus dedos se deslizan sobre la superficie gélida, sintiendo una textura que recuerda más al vidrio pulido que al granito. Al principio, la vibración es un murmullo constante, pero mientras recorres el borde superior derecho, el zumbido se transforma en un pulso rítmico y agresivo que te sacude la yema de los dedos.
+
+En ese punto exacto, la temperatura desciende bruscamente, dejando una sensación de frío eléctrico que eriza el vello de tu brazo. No hay ninguna marca visual, pero bajo tu palma, la vibración converge en un punto focal, como si el corazón de la estructura estuviera latiendo justo detrás de esa sección de la superficie.","""Esto no es piedra natural.""
+
+Paso la palma de la mano por la superficie, intentando sentir si alguna zona vibra con más intensidad que el resto.
+
+{Investigación}","","",""
+"M835348","El movimiento es fluido y preciso, fundiéndose con la oscuridad antes de que cualquier ruido del entorno pueda delatar la posición. El cuerpo se oculta tras el metal corroído de la maquinaria industrial, donde las sombras son tan densas que parecen sólidas, protegiendo la espalda del frío goteo de las tuberías y el siseo eléctrico del pasillo.
+
+Sin embargo, justo cuando el refugio parece asegurado, una mano se cierra con fuerza sobre el brazo, frenando el impulso en seco. Marek obliga a bajar el centro de gravedad, arrastrando el cuerpo hacia el suelo mientras sus ojos escudriñan con tensión el final del corredor. ""No te adelantes tanto. Espera"", susurra con urgencia, casi rozando el oído, mientras permanece inmóvil, atento a cualquier movimiento en la intersección.
+
+Marek ha detectado algo que tú aún no ves. Si ignoras su advertencia y te asomas prematuramente, podrías alertar a quienquiera que esté patrullando el sector técnico.","""Maldito sitio.""
+Me deslizo rápidamente hacia la maquinaria pesada para aprovechar la sombra.
+{Sigilo}","","",""
+"M622253","No hay miedo ni nerviosismo, sino una chispa de anticipación contenida, como si estuviera evaluando si ese ""caos"" que ⟦mencionas⟧ es una herramienta útil o un estorbo que deberá eliminar.","""Su orden es casi poético, Madame. Casi me hace sentir que soy el único elemento caótico en esta habitación.""
+
+Sigo observando su lenguaje corporal mientras hablo, buscando cualquier microgesto que rompa esa máscara de hielo.
+
+{Perspicacia}","HABLA","",""
+"M605682","La entidad permanece estática, su cuerpo vibrando suavemente bajo tu mano, pero el flujo de información en tu mente se vuelve turbio. A pesar de su tono devoto, sientes que hay una barrera invisible; las palabras fluyen con una solemnidad que parece diseñada para envolver la verdad más que para revelarla. No detectas mentiras deliberadas, pero percibes que la entidad te entrega solo la versión mística de su historia, omitiendo el costo tangible o la naturaleza exacta de su tormento.
+
+—Hemos renunciado a la forma, al nombre y al recuerdo del sol —responde la constelación de luces, su voz resonando con una melancolía infinita—. Absorbemos el hambre de los planos exteriores, el silencio que devora las estrellas, para que los habitantes de la superficie puedan caminar sin temor a que el suelo desaparezca bajo sus pies. Somos el precio que el equilibrio exige para que la existencia sea posible.","""¿Qué sacrificio habéis hecho para ser ese ancla? Decidme la verdad sobre esta nada que absorbéis.""
+Me quedo inmóvil, manteniendo el contacto físico para no romper la conexión.
+{Perspicacia}","","",""
+"M906557","Cada vez que ⟦crees⟧ haber sentido un clic o un ligero desplazamiento, resulta ser solo el roce de una partícula de polvo o la resistencia natural del metal oxidado.","""Vaya, vaya... guardas secretos, ¿eh?""
+
+Sigo examinando la hendidura con cuidado, probando diferentes presiones y deslizamientos con la yema del dedo para encontrar el mecanismo de apertura.
+
+{Investigación}","COGNICION","",""
+"M606559","El guardia parpadea, confundido por la calma de tus palabras, y esa fracción de segundo de duda es todo lo que necesitas. Te deslizas con una fluidez casi sobrenatural, fundiéndote con la penumbra de los muros antes de que el acero pueda volver a moverse. El movimiento es tan limpio y silencioso que el aire apenas se desplaza a tu paso.
+
+Valerius gira la cabeza bruscamente hacia donde estabas hace un instante, pero solo encuentra el vacío y el polvo suspendido en la luz. Su expresión de superioridad se transforma en una mueca de desconcierto; da un paso adelante, extendiendo el brazo para tantear la oscuridad, mientras su respiración se vuelve audible y errática en el silencio del pasillo.","""No te pongas nervioso, soldado. Solo estamos hablando.""
+
+Intento deslizarme rápidamente hacia las sombras de los muros para romper su línea de visión.
+
+{Sigilo}","","",""
+"M147302","⟦Tus dedos rozan⟧ la superficie del núcleo y, en el instante del contacto, la luz geométrica se pliega con una suavidad sobrenatural, integrándose en tu palma sin resistencia.","""Что es este latido... es casi sagrado.""
+
+Extiendo la mano con cuidado pero con determinación hacia el núcleo de luz para reclamar el fragmento.
+
+{Religión}","ACCION_NO_DECLARADA","",""
+"M589334","El despacho permanece en un silencio denso, donde la luz de las velas proyecta sombras alargadas que parecen cerrarse sobre los presentes, asfixiando el espacio entre los dos hombres. La confesión de ignorancia, lejos de debilitar la posición del jugador, parece abrir una grieta de respeto en la armadura de Nax; la honestidad cruda resuena en la estancia como un golpe seco.
+
+Bercelio se descruza de brazos lentamente y da un paso hacia adelante, invadiendo el espacio personal del jugador con una presencia imponente, manteniendo la mirada fija y gélida. ""Que no tengas todas las respuestas es lo único honesto que has dicho hoy. Pero que el tiempo vuele no me sirve para llenar un informe. ¿Quién te ha dicho que el tiempo es un problema? ¿Quién te ha puesto esa prisa? Dime el nombre"", sentencia, su voz ahora cargada de una urgencia inquisitiva.
+
+Nax ha aceptado tu honestidad, pero ahora exige un nombre. Si te niegas a proporcionar una fuente o un culpable, interpretará tu silencio como una complicidad deliberada y el interrogatorio se volverá hostil.","""La verdad es que no tengo todas las respuestas, Bercelio. Pero sé que el tiempo no es un lujo que ninguno de nosotros tenga.""
+
+Me quedo inmóvil, sosteniéndole la mirada con frialdad.
+
+{Persuasión}","","",""
+"M818381","⟦Reconoces⟧ la simbología de las corrientes prohibidas de la criomancia, diseñadas para vincular el alma de un sujeto a un plano de frío absoluto, convirtiendo el cuerpo en un conducto para una entidad o una energía externa.","""Tranquilo, estás a salvo ahora. No voy a dejar que te congeles.""
+
+Le acaricio la frente con suavidad para intentar calmarlo mientras observo detenidamente la marca violeta de su nuca.
+
+{Religión}","COGNICION","",""
+"M531055","La figura exhala un suspiro tembloroso y cierra los ojos, rindiéndose a tu indicación mientras su cabeza cae pesadamente contra la corteza del sauce. Al apartar la tela empapada, descubres que la hemorragia proviene de un corte profundo y limpio en el costado, que ha desgarrado el músculo pero no parece haber alcanzado órganos vitales. El tejido alrededor de la herida está pálido y frío, pero el pulso, aunque débil y acelerado, es constante.
+
+Con la precisión de quien conoce la anatomía, determinas que la pérdida de sangre es alarmante pero controlable si se detiene el flujo ahora mismo. La persona no ha entrado aún en un estado de shock irreversible, aunque el estertor inicial sugiere que el dolor y la pérdida de fluidos están empezando a nublar su conciencia.","""No te muevas, que podrías empeorar las cosas.""
+
+Me arrodillo a su lado y examino la gravedad de sus heridas.
+
+{Medicina}","","",""
+"M580796","El Maestro Pimpón abre los ojos con horror mientras sientes que su resistencia es comparable a la de un fideo cocido. Con un tirón seco y definitivo, el pergamino se desprende de sus dedos con un sonido rasgado, provocando que el docente salga despedido hacia atrás y aterrice de espaldas sobre un montón de libros polvorientos con un ruido sordo.
+
+—¡Sacrilegio! ¡Tiranía! —aúlla Pimpón desde el suelo, agitando los brazos con desesperación mientras intenta recuperar la compostura entre encuadernaciones de cuero—. ¡Llamaré al Decano! ¡Llamaré a la guardia! ¡Llamaré a mi madre!","""No me importa el siglo cuarto, me importa lo que hay escrito.""
+
+Sigo tirando del pergamino con fuerza bruta para arrancárselo de las manos.
+
+{Atletismo}","","",""
+"M164079","Te ⟦desplazas⟧ en un arco perfecto, sintiendo la presión del vacío succionar el aire de tus pulmones justo cuando la aguja negra impacta contra el suelo donde hace un instante estaban tus pies, hundiéndose en la piedra con un sonido metálico y seco.","""Demasiado lento.""
+Me lanzo hacia un lado para esquivar la aguja, intentando mantener la vista fija en el punto de convergencia.
+{Acrobacias}","ACCION_NO_DECLARADA","",""
+"M427240","Tus botas resbalan sobre el limo y la humedad del suelo de la cripta justo cuando el peso del engendro te impacta de lleno. El esfuerzo es insuficiente contra la inercia de la criatura; sientes cómo tu centro de gravedad cede y el impulso te arrastra hacia atrás con violencia.
+
+Terminas golpeando la espalda contra el frío suelo de piedra, el aire escapando de tus pulmones en un jadeo seco. La masa de carne y garras cae pesadamente sobre ti, aprovechando tu posición vulnerable para intentar aplastarte contra las losas.","""¡Atrás, maldita cosa!""
+Aprieto los dientes y planto los pies con fuerza en el suelo para resistir el embiste, intentando mantener el equilibrio y evitar que me tire al suelo.
+{Atletismo}","","",""
+"M437756","El tirón es seco y violento. La membrana elástica se tensa hasta el límite, emitiendo un sonido húmedo y desgarrador, como cuero mojado partiéndose, antes de ceder abruptamente. El brazo sale disparado hacia atrás, arrastrando consigo jirones de esa sustancia viscosa que gotean sobre el suelo con un siseo corrosivo.
+
+La masa orgánica reacciona al trauma con un espasmo convulso, colapsando sobre sí misma mientras el latido rítmico se transforma en una vibración errática y ahogada. El vacío que antes succionaba ahora expulsa un chorro de aire fétido y gélido que te golpea la cara, dejándote un rastro de mucosidad grisácea en la piel.","""Sueltame, maldita cosa.""
+
+Tiro con fuerza bruta del brazo para zafarme del agarre mientras intento retroceder.
+{Atletismo}","","",""
+"M422314","Al limpiar la zona, ⟦te das cuenta⟧ de que has arrancado precisamente la pieza central del diseño, borrando cualquier posibilidad de reconocer el símbolo o comprender la secuencia lógica que buscabas.","""Esto no es un simple adorno.""
+
+Sigo limpiando la superficie con más cuidado, tratando de identificar algún símbolo conocido o una secuencia lógica en el caos.
+
+{Investigación}","COGNICION","",""
+"M237053","La catedral de cristal translúcido vibra con una frecuencia gélida, respondiendo con una claridad absoluta a la firmeza de la postura de Ilvard. Las paredes de luz congelada se solidifican, adquiriendo una densidad inquebrantable, mientras el suelo refleja su voluntad como un espejo perfecto que no admite ni una sola grieta. La estructura se estabiliza, convirtiéndose en un baluarte de fe que resiste la presión del vacío exterior.
+
+La entidad orgánica no se detiene; continúa su orbitación lenta y fluida, estrechando el círculo como una marea que busca desesperadamente la grieta en el muro. Con un tono que oscila entre la curiosidad y el desafío, la criatura sentencia: ""Una roca... entonces veamos si eres piedra o simplemente sal que espera a ser disuelta"".
+
+La entidad ha dejado de intentar derribar la estructura para centrarse en el individuo; si Ilvard cede ante la presión psicológica de la entidad, la catedral empezará a resquebrajarse desde el centro.","""Mi juramento no es una presa para contener el océano, sino la roca sobre la cual este se rompe.""
+
+Clavo mis pies en el suelo de cristal y mantengo mi postura, concentrándome en la pureza de mi fe para estabilizar la estructura.
+
+{Religión}","","",""
+"M219922","⟦Reconoces⟧ que esa entropía no es un caos natural, sino una herida en la trama de la existencia, una zona de silencio donde las plegarias no encuentran eco porque el ""oído"" que debería recibirlas ha sido arrancado.","""No soy una pasajera, pero tampoco pretendo construir sobre la nada sin entender primero qué es este vacío.""
+
+Abro los ojos y me planto firme frente al Centinela, tratando de analizar la naturaleza de esa estática fría.
+
+{Religión}","COGNICION","",""
+"M614153","Al seguir el flujo de los grabados, ⟦comprendes⟧ que el patrón representa una alineación específica de cuerpos celestes; no es un mapa de un lugar físico en la tierra, sino una guía para observar el cielo en un momento preciso.","""Esto no es un simple adorno.""
+Intento descifrar el significado de los patrones geométricos y el código grabado.
+{Investigación}","COGNICION","",""
+"M171836","Te ⟦impulsas⟧ hacia atrás, deslizándote con agilidad entre los soportes de madera y las redes húmedas que cuelgan del techo, fundiéndote con la penumbra del callejón antes de que los guardias puedan acortar la distancia.","""¡Solo busco un lugar donde dormir sin que me cobren el oro!""
+
+Intento zafarme rápidamente del lodo y retrocedo hacia la oscuridad más cercana.
+
+{Acrobacias}","ACCION_NO_DECLARADA","",""
+"M876095","Al intentar desentrañar la esencia del Vigilante, tu mente se nubla con una certeza errónea. Sientes un repentino y violento flujo de energía que interpretas como una señal clara de magia nigromántica activa, una pulsación de muerte que parece emanar del centro de su pecho. Estás convencido de que la criatura es un conducto de energía oscura, aunque esa sensación te deja una punzada de desorientación que te hace tambalear ligeramente el paso.
+
+La figura no se mueve, pero el vacío bajo la capucha parece expandirse un instante, como si tu intento de análisis hubiera sido detectado y descartado. El frío de la bruma cenicienta se intensifica, envolviéndote en un silencio que ahora se siente deliberadamente opresivo.","""Tus silencios no me intimidan, pero tu naturaleza sí me intriga.""
+
+Me acerco un paso más, tratando de analizar si hay algún rastro de magia o energía emanando de esa oscuridad.
+{Arcanos}","","",""
+"M788145","Al concentrarte, el frío de la estancia se vuelve un murmullo eléctrico que vibra contra tus palmas. No hay una corriente clara ni un flujo evidente, pero percibes una resonancia tenue, similar al eco de una campana que dejó de sonar hace siglos. El glifo no emana energía, sino que parece actuar como un vacío, un hambre silenciosa que absorbe la luz y la fe del entorno para mantenerse estable.
+
+Es una firma energética familiar, aunque distante: la disciplina y el rigor de la Orden del Cielo. Sientes que la piedra no está cerrada con un cerrojo, sino con una pregunta que solo alguien consagrado a los misterios del firmamento podría reconocer.","""Que la luz revele lo que el ojo ignora.""
+
+Cierro los ojos un instante y busco sentir cualquier rastro de energía o flujo sagrado que emane de la piedra.
+
+{Religión}","","",""
+"M784270","Bajo la superficie de mármol y el vacío de sus ojos, la máscara no se rompe, pero se agrieta. El contacto físico, sostenido con esa suavidad, actúa como un ancla que lo arrastra fuera de su aislamiento eterno; el Centinela no se aparta, y por un instante, la rigidez de su cuerpo flaquea, dejando escapar un suspiro que suena como el eco de un glaciar rompiéndose.
+
+En ese breve lapso de vulnerabilidad, percibes que su frialdad no es arrogancia ni desapego, sino un mecanismo de supervivencia. Hay un terror ancestral latiendo bajo su pecho, una soledad tan vasta que ha confundido la distancia con la seguridad. Sientes que su silencio no es un muro para excluirte, sino una celda en la que se ha encerrado para evitar que el peso de sus secretos consuma a cualquiera que se acerque.","""No tienes que cargar con todo este peso en soledad. Dime qué es lo que te atormenta.""
+
+Sigo manteniendo el contacto físico con suavidad, buscando alguna señal de humanidad tras esa máscara gélida.
+{Perspicacia}","","",""
+"M525966","El hombre, abrumado por la cercanía y la intensidad de tu mirada, entra en un estado de pánico absoluto. Al intentar leer sus intenciones, interpretas erróneamente un espasmo de sus párpados y el temblor de su mandíbula como una señal clara de engaño; estás convencido de que el hombre no solo miente, sino que se ríe secretamente de ti mientras finge el terror.
+
+El sujeto retrocede bruscamente, tropezando con sus propios pies y cayendo de espaldas sobre el suelo polvoriento. Se queda allí, hiperventilando y mirando hacia arriba con los ojos desorbitados, mientras el molinero suelta un bufido de fastidio y murmura para sí mismo: «Vaya manera de asustar al pobre diablo».","""Habla claro, que el tiempo corre.""
+
+Me inclino hacia él para obligarlo a mirarme a los ojos, tratando de discernir si hay algo más oculto en su relato.
+
+{Perspicacia}","","",""
+"M526830","La entidad no se inmuta ante tu avance, pero al intentar descifrar el ritmo de su resplandor, tu mente se nubla. El esfuerzo por encontrar un patrón lógico en esa energía te provoca un vértigo súbito; los pulsos de luz, que antes parecían armoniosos, se vuelven caóticos y estridentes en tu percepción, dejándote momentáneamente desorientado y con una punzada de confusión que te hace dudar de tu propia intuición.
+
+Una voz que no nace de una garganta, sino que resuena directamente en los pliegues de tu conciencia, rompe el vacío con una solemnidad gélida:
+
+—No espero nada de ti, pues no eres un instrumento, sino la voluntad que debe elegir. Estás aquí porque el Equilibrio ha dejado de ser un estado para convertirse en una herida. Lo que espero es que seas capaz de mirar el abismo del Archivo de Presagios sin que el miedo te obligue a cerrar los ojos.","""No me hables con silencios. Dime qué es lo que esperas de mí en este lugar.""
+
+Doy un paso hacia la entidad, tratando de analizar si hay algún patrón en esa pulsación de energía que pueda darme una pista de su naturaleza.
+
+{Religión}","","",""
+"M412032","La energía del núcleo del centinela deja de ser un ruido caótico para convertirse en una partitura legible. Al sintonizar tu propia frecuencia, sientes un tirón violento en el plexo solar; la vibración del Vigilante es una masa gélida y rítmica que, por un instante, se pliega ante tu voluntad. El zumbido metálico que emana de su pecho se desestabiliza, produciendo un chasquido seco que resuena en las paredes del túnel, y una grieta microscópica, blanca como la nieve, se abre en la superficie de granito de su hombro.
+
+El Vigilante se tensa. El pulso de sus ojos de cuarzo pasa de un tenue brillo a un destello intermitente y errático, como una llama luchando contra una corriente de aire. El vapor que lo rodea se agita violentamente, formando remolinos que azotan el suelo, mientras el centinela retrocede un milímetro, un movimiento casi imperceptible pero cargado de una extraña vacilación mecánica.
+
+—Has tocado la cuerda que sostiene el silencio —sentencia, y su voz ahora suena distorsionada, con una interferencia metálica que raspa el aire—. La erosión no solo abre camino; también derriba la estructura.","""La erosión es lo que permite que el agua encuentre su camino a través de la piedra más dura.""
+
+Me acerco un paso más al centinela, intentando sintonizar mi propia energía con esa frecuencia de vibración que he detectado en su núcleo.
+
+{Arcanos}","","",""
+"M505293","Serafín encoge los hombros, hundiéndose más en sí mismo mientras el insulto parece golpearlo físicamente. Se limita a respirar con dificultad, con el rostro congestionado y los ojos fijos en las vetas de la madera, convertido en un ovillo de miedo y negación que ya no intenta defenderse.
+
+Al centrar la vista en la anotación, el código de navegación simplificado comienza a cobrar sentido. Al cruzar las referencias de la bitácora con la coordenada, determinas que el punto de retorno no es un puerto, sino un arrecife específico conocido como ""Los Dientes de Sal"", una zona traicionera donde las corrientes succionan hacia un abismo submarino. El capitán no planeaba entregar la carga en tierra, sino devolverla al origen del cual fue extraída.","""Mientes tan mal que resultas patético, Serafín.""
+
+Ignoro al hombre y me concentro en la anotación. Intento descifrar el código de navegación para entender a dónde apunta esa coordenada.
+
+{Investigación}","","",""
+"M408093","Al inclinarte para buscar alguna inscripción sagrada o rúna de sellado, tu mirada se nubla por un instante. El resplandor azul, que antes parecía una guía, se vuelve repentinamente cegador y errático. En tu afán por encontrar un sentido teológico al cierre, interpretas erróneamente una simple fluctuación de la luz como una señal de advertencia divina, lo que te provoca un sobresalto violento.
+
+En el movimiento brusco, pierdes el equilibrio y tropiezas, golpeando tu frente contra el borde gélido de la estructura. El impacto te deja aturdido y con un sabor metálico en la boca, mientras el sello emite un zumbido agudo y molesto que resuena en tus sienes, borrando cualquier rastro de comprensión sobre el origen de la marca.","""Dios me proteja, hay alguien atrapado ahí dentro.""
+
+Me acerco con cautela para examinar el sello, buscando cualquier inscripción o marca que explique quién puso este cierre.
+
+{Religión}","","",""
+"M348465","Te ⟦obligas⟧ a ignorar el tedio de los registros fiscales y escaneas la estancia, pero el lugar es sorprendentemente espartano.","""Vaya pérdida de tiempo.""
+
+Cierro el libro con brusquedad y miro alrededor de la estancia buscando cualquier otro objeto que no sea papeleo administrativo.
+
+{Investigación}","VOLICION","",""
+"M142703","En ese instante de análisis fallido, te ⟦sientes⟧ repentinamente expuesto, como si el silencio de Brea hubiera empezado a juzgar tu propia capacidad de observación.","""Su disciplina es admirable, aunque quizá demasiado rígida.""
+
+Me detengo un instante antes de marcharme para analizar sus gestos y buscar cualquier señal de debilidad o duda en su control.
+{Perspicacia}","EMOCION","",""
+"M196700","Te ⟦sientes⟧ repentinamente expuesto, como si el espejo en el que intentabas mirar se hubiera vuelto opaco y solo devolviera una imagen distorsionada de tu propia incertidumbre.","""Agradezco el cumplido. Me pregunto, sin embargo, en qué categoría de utilidad encajo yo en su jerarquía.""
+
+Sostengo la mirada con calma, tratando de descifrar qué es exactamente lo que busca en mí.
+
+{Perspicacia}","EMOCION","",""
+"M248188","La piedra bajo tu palma está fría, una frialdad mineral que cala hasta los huesos, pero la vibración es innegable. El pulso es lento, pesado, una sacudida rítmica que parece desplazar el aire mismo en intervalos regulares.
+
+Sin embargo, la superficie es irregular y el ruido ambiental del vacío juega contigo. Sientes el movimiento, pero no logras distinguir si se trata de un mecanismo antiguo, un flujo geológico extraño o algo orgánico respirando en la oscuridad. El origen sigue siendo un misterio enterrado bajo capas de roca compacta.","""Esto no es natural.""
+
+Me pongo de cuclillas y apoyo la palma de la mano directamente sobre la roca para sentir mejor la frecuencia de ese pulso.
+
+{Percepción}","","",""
+"M616140","Te ⟦deslizas⟧ hacia la salida mientras el funcionario sigue librando una batalla perdida contra el tintero, sumido en su propia tragedia burocrática.","""Vaya desastre, señor Faustino. Debería limpiar eso antes de que arruine el resto de sus papeles.""
+
+Me doy la vuelta lentamente para salir de la oficina, manteniendo el brazo pegado al cuerpo.
+
+{Sigilo}","ACCION_NO_DECLARADA","",""
+"M343980","Osvaldo se sobresalta con un bufido, girándose bruscamente hacia ti con los ojos muy abiertos y el rostro encendido por el esfuerzo y los nervios. Al intentar acercarte, calculas mal la distancia en la penumbra del local; tropiezas con un montón de cabos enrollados que obstruyen el camino y terminas perdiendo el equilibrio, cayendo de bruces contra una estantería de herrajes que vibra con un estrépito metálico.
+
+—¡Por los dioses, qué torpeza! —sisea Osvaldo, mientras el objeto que ocultaba se desliza unos centímetros por el suelo debido al impacto de tu caída, dejando escapar un aroma denso, grasiento y penetrante que inunda el aire. El hombre te mira con una mezcla de pánico y exasperación, mientras intenta cubrir apresuradamente el barril con una lona sucia.","""Parece que tenéis un problema bastante costoso aquí.""
+
+Me acerco lentamente para ver qué es exactamente ese objeto que están ocultando.
+
+{Percepción}","","",""
+"M315658","Mientras ⟦intentas⟧ acelerar el paso sobre la caliza grisácea y erosionada, la senda se estrecha bruscamente y una bruma espesa, arrastrada por el viento, se despliega como una cortina blanca que borra el horizonte y desdibuja los límites del camino.","""Tienes razón, Valerius. Un simple agujero.""
+
+Me alejo del nicho con una sonrisa despreocupada y me pongo en marcha rápidamente para recuperar el ritmo.
+
+{Percepción}","ACCION_NO_DECLARADA","",""
+"M119502","La comisura de sus labios se eleva un poco más, reconociendo el desafío y la confianza con los que ⟦hablas⟧; la arrogancia, cuando va acompañada de competencia, parece ser un lenguaje que ella domina y respeta.","""Mi curiosidad es el tipo de inversión que descubre tesoros donde otros solo ven polvo, Madame. Y yo soy muy bueno encontrando lo que otros prefieren olvidar.""
+
+Me inclino ligeramente hacia adelante, manteniendo la mirada fija en el sobre mientras intento leer su lenguaje corporal.
+
+{Persuasión}","HABLA","",""
+"M428521","El capitán permanece hecho un ovillo en el suelo, sollozando en silencio mientras el aroma a sudor rancio impregna el aire. Tus ojos recorren la estancia, pasando por encima de unos cajones desvencijados y un armario que chirría ligeramente con la brisa, pero la disposición del mobiliario te resulta anodina y el desorden general confunde tu vista.
+
+No distingues ningún compartimento oculto, doble fondo ni rastro de papeles que sobresalgan de las grietas de la madera. La habitación parece tan vacía de valor como el hombre que yace a tus pies.","""Patético. No sirves ni para darme una buena recompensa.""
+
+Suelto al capitán con desprecio y me pongo en pie. Miro a mi alrededor para ver si hay algún cajón o armario donde pueda haber escondido lo que realmente importa.
+
+{Investigación}","","",""
+"M607017","Sin embargo, la turbidez del líquido actúa como un velo persistente; cada vez que ⟦crees⟧ vislumbrar una estructura geométrica o un residuo reconocible, el remolino lo distorsiona, devolviéndote una imagen borrosa y confusa.","""Interesante... demasiado complejo para ser simple cal.""
+
+Intento analizar la composición de esas escamas y el origen del sedimento.
+{Arcanos}","COGNICION","",""
+"M230370","Al analizar el flujo, ⟦comprendes⟧ que no hay un núcleo físico, sino una fractura en el tejido de la realidad; el vacío es una herida abierta hacia un plano de entropía pura donde la materia y la energía dejan de existir.","""Interesante. Un espejo roto que cree que habla.""
+
+Observo el vacío que se expande en el centro de la entidad, intentando comprender el origen de esa succión de luz.
+{Arcanos}","COGNICION","",""
+"M333310","Al intentar limpiar el fragmento con cuidado, tus dedos resbalan sobre la película aceitosa. El hueso, debilitado por la corrosión, se quiebra violentamente bajo la mínima presión de tu uña, deshaciéndose en una lluvia de astillas blanquecinas y polvo calcáreo que se mezcla con el lodo negro.
+
+El patrón de los agujeros, aquel que pretendías analizar, desaparece en un instante, convertido en escombros irreconocibles que se hunden en la viscosidad del conducto. Ahora solo queda el aroma dulzón impregnando tu piel y el vacío de una pista que se ha desintegrado entre tus manos.","""Esto no es una muerte natural, ni siquiera un accidente.""
+
+Limpio el fragmento de hueso con cuidado y lo observo más de cerca para analizar el patrón de los agujeros.
+
+{Medicina}","","",""
+"M967040","[OOC: Para evitar que la partida se bloquee, estableceremos lo siguiente: yo no puedo narrar el éxito de una acción sin un número que me respalde, ya que mi instrucción es ""no resolver la acción sin tirada previa"". Si tú no puedes lanzar los dados, yo lo haré internamente usando un generador aleatorio basándome en tu hoja de personaje (si me la proporcionas) o en los modificadores estándar de 5e. A partir de ahora, cuando pongas {Habilidad}, yo lanzaré el dado, calcularé el total y narraré el resultado según las reglas de éxito/fallo/pifia. Por favor, describe tu acción y la habilidad que deseas usar.]","[OOC: Entendido, pero las instrucciones maestras que he recibido explícitamente me prohíben inventar dados o escribir números de tirada, indicando que el sistema tira por mí. Para evitar conflictos, seguiré el formato de {Habilidad} y dejaré que tú, como DM, determines el resultado y me lo narres.]","","",""
+"M182700","Al concentrarte en la pieza y analizar los detalles del sello y la gema, ⟦recuerdas⟧ haber visto ese mismo emblema —el ancla y la pluma— en algunos documentos antiguos y sellos de cera en el puerto.","""Vaya joya... esto me saca de cualquier apuro.""
+
+Saco el brazalete del estuche y lo guardo rápidamente en mi bolsillo.
+
+{Investigación}","COGNICION","",""
+"M856540","Al dar ese paso, el espacio personal del hombre se colapsa y el efecto es inmediato. La sonrisa, que pretendías amable, se filtra en su mente fragmentada como una mueca depredadora o una burla cruel. Un espasmo violento sacude sus hombros y retrocede tropezando con sus propios pies, soltando un grito ahogado que desgarra el silencio del lugar.
+
+Sus ojos se dilatan, perdiendo cualquier rastro de reconocimiento. Para él, el gesto de acercamiento no ha sido un puente, sino una embestida. Se encoge contra la pared más cercana, protegiendo su rostro con los brazos y murmurando palabras incoherentes sobre ""trampas"" y ""mentiras"", mientras su respiración se vuelve un jadeo errático y aterrorizado.","""No temas, amigo mío. Estoy aquí para ayudarte y no permitiré que nada te haga daño.""
+
+Me acerco un paso más, manteniendo una postura relajada y una sonrisa amable para transmitirle seguridad.
+
+{Persuasión}","","",""
+"M136511","Tus dedos recorren la superficie fría, ignorando ahora la magia para centrarse en la materia. Mientras deslizas la mano por los bordes donde el aceite se encuentra con el marco de piedra, detectas una ligera discontinuidad: una ranura milimétrica, casi invisible, que recorre el perímetro del cuenco. No es una grieta natural del desgaste, sino un corte preciso y deliberado.
+
+Al presionar con firmeza en un punto específico de esa costura, sientes un clic seco y metálico que resuena en la base de la estructura. Con un siseo amortiguado, una sección del borde de piedra se desplaza apenas unos milímetros, revelando un pequeño espacio hueco debajo del fluido donde algo sólido y seco permanece oculto, protegido del contacto directo con el aceite.","""Esto no es normal. No debería estar tan muerto.""
+
+Sigo palpando la superficie del aceite, buscando cualquier irregularidad física o una costura en la piedra que no sea mágica.
+
+{Investigación}","","",""
+"M681414","Al cerrar los ojos, el ruido del mundo exterior se desvanece y tu conciencia se funde con la frecuencia del objeto. La sintonización es absoluta, un encaje perfecto que rompe la barrera entre tu mente y el sello. En un estallido de claridad psíquica, el propósito del catalizador se despliega ante ti: no es un almacén pasivo, sino un ""Sintonizador de Umbrales"", diseñado para anclar una frecuencia específica de un plano exterior a un punto geográfico concreto. El sello no busca contener la energía, sino filtrar la impureza del vacío para que algo, o alguien, pueda cruzar sin ser aniquilado por la presión dimensional.
+
+La visión se expande y percibes que el catalizador es solo una pieza de un mecanismo mayor. Sientes un tirón invisible, una brújula arcana que señala con una precisión quirúrgica hacia el corazón de Umbral Hondo. El pulso violáceo ahora es un latido constante y cálido en tu palma, revelando que el dispositivo ha reconocido tu firma energética y se ha vinculado a ti, quedando en estado de espera para ser activado en el lugar donde el anclaje original aún permanece dormido.","""Interesante. Así que no eres simple piedra.""
+
+Cierro los ojos y trato de sintonizar mi propia energía con el ritmo de ese pulso violáceo para intentar comprender el propósito del sello.
+
+{Arcanos}","","",""
+"M110041","El silencio que sigue al roce húmedo es sepulcral, pero tu oído capta un detalle crucial: el sonido no proviene de un solo punto, sino que se desplaza rápidamente por la parte superior del muro, justo encima de tu cabeza. Sientes un desplazamiento de aire frío y el olor penetrante a salitre y descomposición orgánica que se filtra por las grietas justo antes de que algo pesado y viscoso impacte contra la piedra.
+
+Al otro lado del muro, un gorgoteo gutural resuena, seguido del sonido de garras afiladas arañando la mampostería con una urgencia frenética. El fluido azulado que emana de las grietas comienza a burbujear violentamente, reaccionando a la presencia de la criatura que, aunque aún oculta, parece estar intentando encontrar una fisura lo suficientemente ancha para atravesar hacia tu lado.","""Sea lo que sea que aceche ahí, no pasará mientras yo esté en pie.""
+Saco mi arma y me preparo para el impacto, manteniendo la mano firme sobre la piedra.
+{Percepción}","","",""
+"M371140","Te concentras, ignorando la naturaleza del vacío para centrarte únicamente en la vibración del sonido. El eco es traicionero; la voz parece emanar de todas las direcciones y de ninguna a la vez, rebotando en paredes invisibles que no puedes localizar. A pesar de tu esfuerzo, el origen permanece oculto, envuelto en una estática sorda que amortigua cualquier pista física.
+
+La risa seca se prolonga, transformándose en un susurro que ahora parece rozarte la nuca, aunque no sientes ninguna presencia física detrás de ti.
+
+—La meticulosidad es solo arrogancia con un horario, pequeño erudito. Buscas un origen en un lugar donde el ""donde"" ha dejado de existir.","""No soy arrogante, solo soy meticuloso. Y no pienso desvanecerme sin saber quién habla.""
+
+Sigo intentando rastrear el origen de la voz en lugar de analizar el vacío.
+
+{Percepción}","","",""
+"M763582","⟦Tus dedos rozan⟧ la superficie fría del metal, pero al intentar tirar del cilindro hacia arriba, el vacío creado por la viscosidad de los sedimentos opone una resistencia imprevista.","""Vaya, parece que alguien sabía exactamente qué tirar y cómo guardarlo.""
+
+Me acerco con cuidado y trato de extraer el cilindro de latón sin remover más la masa viscosa.
+
+{Juego de Manos}","ACCION_NO_DECLARADA","",""
+"M448521","Al intentar vincular esta geometría con los dogmas de tu fe, las conexiones se sienten difusas; ⟦reconoces⟧ la intención del diseño y la familiaridad del concepto, pero los detalles específicos de tus escrituras no encajan con precisión en los relieves.","""Es una visión hermosa, pero me pregunto si esta verdad es para todos o solo para quienes saben mirar.""
+
+Me acerco al símbolo del equilibrio y paso los dedos suavemente sobre el relieve, intentando comprender la conexión con mis propias escrituras.
+
+{Religión}","COGNICION","",""
+"M701514","⟦Tus dedos recorren⟧ la superficie fría y rugosa del granito, tanteando cada centímetro de la zona donde el eco fue más profundo.","""Parece que alguien no quería que encontráramos esto.""
+
+Me acerco a la zona inferior derecha de la losa e intento buscar alguna grieta, palanca o mecanismo oculto que permita abrir el hueco.
+
+{Investigación}","ACCION_NO_DECLARADA","",""
+"M443926","Te ⟦lanzas⟧ hacia adelante en el momento exacto, pero la coordinación falla.","""Que la luz guíe mi mano y me dé la claridad necesaria.""
+
+Aprovecho el instante en que el filamento queda laxo para intentar acercarme a la brecha y observar la naturaleza de esa energía.
+
+{Religión}","ACCION_NO_DECLARADA","",""
+"M742430","El silencio regresa a la estancia, roto solo por el goteo rítmico de la sangre oscura sobre la piedra fría. Al incorporarte, la humedad del ambiente se vuelve pesada y el vaho de tu propia respiración nubla tu visión por un instante, distorsionando las sombras que se alargan en los rincones.
+
+Te quedas mirando fijamente un punto muerto de la habitación, convencido de que el perímetro está despejado, mientras ignoras por completo el sutil sonido de algo deslizándose entre los escombros justo detrás de ti.","""Asqueroso.""
+
+Retiro el arma del cuello de la bestia con un tirón seco y me limpio la hoja en la piel del cadáver. Me pongo en pie y miro a mi alrededor para asegurarme de que no haya más.
+
+{Percepción}","","",""
+"M945965","⟦Tus dedos recorren⟧ los bordes de la cristalización, sintiendo cómo la superficie es irregular y afilada, similar a la obsidiana pero con una temperatura que quema por el frío.","""Tranquilo, ya estás estable. No te muevas.""
+
+Intento analizar la estructura de ese cristal para ver si puedo extraerlo sin provocar una nueva hemorragia.
+
+{Medicina}","ACCION_NO_DECLARADA","",""
+"M427226","⟦Tus dedos rozan⟧ los lomos de cuero agrietado y pergamino húmedo, moviendo los tomos con una precisión quirúrgica para no provocar un derrumbe de papel.","""Qué desperdicio de espacio.""
+
+Me acerco a las pilas de libros que parecen inestables y relevo los títulos o busco algo anotado entre las páginas.
+
+{Investigación}","ACCION_NO_DECLARADA","",""
+"M487137","⟦Intentas⟧ rastrear la técnica, buscar alguna señal de sutura o residuo químico conocido, pero la estructura es tan extraña que no logras asociarla con ninguna práctica médica o quirúrgica que hayas estudiado.","""Tranquilo, ya estás a salvo. No te voy a dejar solo.""
+
+Sostengo al hombre con cuidado para que no se golpee y examino la sustancia vítrea con detenimiento, tratando de identificar el origen de ese sello.
+
+{Medicina}","ACCION_NO_DECLARADA","",""
+"M252859","El catedrático suelta un chillido agudo, similar al de un juguete de goma pisado, cuando sientes el agarre en su brazo. Al intentar tirar de él hacia arriba, el hombre se vuelve sorprendentemente pesado, como si se hubiera fusionado con las tablas del suelo, y sus pies resbalan torpemente sobre la madera encerada.
+
+El esfuerzo resulta inútil; el hombre permanece encogido, balanceándose ahora con más vigor, mientras se aferra a sus rodillas con una fuerza maníaca. Te mira de reojo con los ojos desorbitados y susurra con voz temblorosa:
+
+—¡Tú no lo entiendes! ¡La tinta tiene hambre! ¡Está midiendo la distancia hacia mis zapatos!","""Deja de hacer ese ruido. Es solo tinta.""
+
+Me acerco al hombre y lo sujeto del brazo con fuerza para obligarlo a levantarse del suelo.
+
+{Atletismo}","","",""

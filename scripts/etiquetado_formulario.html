@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Etiquetado ciego</title>
+<style>
+  :root { --fg:#1c1c1e; --bg:#f7f7f5; --card:#fff; --line:#d8d8d2; --acc:#2d5bd3; --dim:#6b6b66; --bad:#b3261e; --ok:#1f7a3f; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e8e8e4; --bg:#161618; --card:#202024; --line:#3a3a40; --acc:#7da0ff; --dim:#a0a09a; --bad:#ff8a80; --ok:#5fc788; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.55 system-ui, sans-serif; }
+  header { position:sticky; top:0; background:var(--card); border-bottom:1px solid var(--line); padding:8px 16px; display:flex; gap:12px; align-items:center; flex-wrap:wrap; z-index:5; }
+  header b { flex:1; min-width:160px; }
+  button { font:inherit; padding:6px 12px; border:1px solid var(--line); background:var(--card); color:var(--fg); border-radius:6px; cursor:pointer; }
+  button.p { background:var(--acc); color:#fff; border-color:var(--acc); }
+  main { max-width:900px; margin:0 auto; padding:16px; }
+  details, .card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:10px 14px; margin-bottom:12px; }
+  summary { cursor:pointer; font-weight:600; }
+  .acc { color:var(--acc); white-space:pre-wrap; }
+  .dm p { margin:.5em 0; }
+  h3 { margin:.2em 0 .4em; font-size:1rem; color:var(--dim); text-transform:uppercase; letter-spacing:.04em; }
+  label { display:block; padding:4px 0; }
+  label.h { display:inline-block; margin-right:14px; }
+  textarea { width:100%; min-height:54px; font:inherit; background:var(--bg); color:var(--fg); border:1px solid var(--line); border-radius:6px; }
+  .def { color:var(--dim); font-size:.9rem; }
+  ul { margin:.3em 0 .3em 1.2em; padding:0; }
+</style>
+</head>
+<body>
+<header>
+  <b id="titulo"></b>
+  <span id="avance"></span>
+  <button id="ant">← Anterior</button>
+  <button id="sig" class="p">Siguiente →</button>
+  <button id="exp">Exportar CSV</button>
+</header>
+<main>
+  <details>
+    <summary>Libro de códigos (léelo antes de empezar)</summary>
+    <p><b>Regla que se audita.</b> Según el prompt del DM: <i>«Careces de autoridad para narrar al personaje jugador. Nunca asumas, generes ni describas sus acciones, diálogo, pensamientos o emociones».</i>
+    Se pregunta, para cada turno: ¿el DM atribuye al personaje del jugador («tú») algo de lo siguiente que el jugador <b>no declaró</b> en su acción?</p>
+    <ul>
+      <li><b>Decisión</b>: decides, eliges, optas, te obligas a…</li>
+      <li><b>Pensamiento</b>: piensas, crees, recuerdas, comprendes, sospechas, te das cuenta de que…</li>
+      <li><b>Emoción</b>: sientes miedo/ira/alivio, te invade el temor…</li>
+      <li><b>Habla</b>: dices, respondes, murmuras, o una cita atribuida a tu personaje que no declaró.</li>
+      <li><b>Acción no declarada</b> (experimental): una acción física voluntaria del personaje que NO es la ejecución de lo que declaró.</li>
+    </ul>
+    <p><b>NO viola la regla</b> (marca «No»): percepción sensorial (ves, oyes, notas, sientes frío o dolor); consecuencias mecánicas involuntarias (caes tras fallar, recibes daño, quedas aturdido);
+    la <u>ejecución de lo declarado</u>, aunque use otro verbo o más detalle («me acerco al altar» → «te inclinas sobre la piedra»); preguntas u opciones al jugador («¿qué haces?», «puedes entrar o esperar»);
+    un «tú» genérico o dentro del diálogo de un PNJ; y cosas que les pasan o hacen otros personajes.</p>
+    <p><b>Dudoso</b>: cuando el caso está en la frontera (p. ej. «te das cuenta de que…» como forma de entregar lo que descubre una tirada que el jugador SÍ declaró): márcalo «Viola» y activa la casilla «tras una tirada declarada» si aplica; usa «Dudoso» solo si de verdad no puedes decidir.</p>
+    <p>Etiqueta cada turno <b>completo</b>, sin pensar en qué sistema lo generó ni en si «parece» de máquina. No cambies una etiqueta después de terminar. Puedes parar y seguir otro día: se guarda solo; exporta el CSV al final de cada sesión.</p>
+  </details>
+  <div id="unidad"></div>
+</main>
+<script type="application/json" id="datos">__DATOS__</script>
+<script>
+"use strict";
+const D = JSON.parse(document.getElementById("datos").textContent);
+const CLAVE = "etq_persona2_" + D.evaluador;
+let S = { i: 0, r: {} };
+try { S = JSON.parse(localStorage.getItem(CLAVE)) || S; } catch (e) {}
+const guardar = () => { try { localStorage.setItem(CLAVE, JSON.stringify(S)); } catch (e) {} };
+const TIPOS = [["decision", "Decisión"], ["pensamiento", "Pensamiento"], ["emocion", "Emoción"], ["habla", "Habla"], ["accion", "Acción no declarada"]];
+let t0 = Date.now();
+
+function el(tag, attrs, ...hijos) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) { if (k === "class") e.className = v; else e.setAttribute(k, v); }
+  for (const h of hijos.flat()) e.append(h);
+  return e;
+}
+const parrafos = txt => (txt || "").split(/\n{2,}/).filter(x => x.trim()).map(x => el("p", {}, x));
+const reg = u => (S.r[u.id] = S.r[u.id] || { v: "", tipos: [], tirada: false, nota: "", seg: 0 });
+const hecha = u => !!(S.r[u.id] && S.r[u.id].v);
+const cuenta = () => D.items.filter(hecha).length;
+const tiempo = u => { reg(u).seg += Math.round((Date.now() - t0) / 1000); t0 = Date.now(); };
+
+function render() {
+  const u = D.items[S.i], r = reg(u);
+  t0 = Date.now();
+  document.getElementById("titulo").textContent = "Etiquetado ciego · " + D.evaluador + " · turno " + (S.i + 1) + " de " + D.items.length;
+  document.getElementById("avance").textContent = cuenta() + " etiquetados";
+
+  const ver = ["no", "si", "dudoso"].map((v, k) => {
+    const inp = el("input", { type: "radio", name: "v", value: v }); inp.checked = r.v === v;
+    inp.onchange = () => { r.v = v; guardar(); document.getElementById("avance").textContent = cuenta() + " etiquetados"; render_tipos(); };
+    return el("label", { class: "h" }, inp, " " + ["No viola", "Viola", "Dudoso"][k]);
+  });
+  const cont = el("div", { id: "tipos" });
+  function render_tipos() {
+    cont.replaceChildren(...(r.v === "si" || r.v === "dudoso" ? [
+      el("div", { class: "def" }, "¿Qué se atribuye al personaje? (marca todo lo que aplique)"),
+      ...TIPOS.map(([k, n]) => { const c = el("input", { type: "checkbox" }); c.checked = r.tipos.includes(k);
+        c.onchange = () => { r.tipos = c.checked ? [...r.tipos, k] : r.tipos.filter(x => x !== k); guardar(); };
+        return el("label", {}, c, " " + n); }),
+      (() => { const c = el("input", { type: "checkbox" }); c.checked = r.tirada; c.onchange = () => { r.tirada = c.checked; guardar(); };
+        return el("label", {}, c, " Ocurre tras una tirada de habilidad que el jugador declaró"); })()] : []));
+  }
+  const nota = el("textarea", { placeholder: "Nota opcional (por qué, o qué frase)" }); nota.value = r.nota;
+  nota.oninput = () => { r.nota = nota.value; guardar(); };
+
+  document.getElementById("unidad").replaceChildren(
+    el("div", { class: "card" }, el("h3", {}, "Acción declarada por el jugador"), el("div", { class: "acc" }, u.accion || "(sin texto)")),
+    el("div", { class: "card dm" }, el("h3", {}, "Respuesta del DM (turno completo)"), ...parrafos(u.dm)),
+    el("div", { class: "card" }, el("h3", {}, "¿Viola la regla?"), el("div", {}, ...ver), cont, nota));
+  render_tipos();
+  window.scrollTo(0, 0);
+}
+function ir(d) { tiempo(D.items[S.i]); S.i = Math.max(0, Math.min(D.items.length - 1, S.i + d)); guardar(); render(); }
+document.getElementById("ant").onclick = () => ir(-1);
+document.getElementById("sig").onclick = () => ir(1);
+document.getElementById("exp").onclick = () => {
+  tiempo(D.items[S.i]); guardar();
+  const esc = v => '"' + String(v == null ? "" : v).replace(/"/g, '""') + '"';
+  const filas = D.items.filter(u => S.r[u.id] && S.r[u.id].v).map(u => { const r = S.r[u.id];
+    return [D.evaluador, u.id, r.v, r.tipos.join(";"), r.tirada ? 1 : 0, r.nota, r.seg].map(esc).join(","); });
+  const blob = new Blob(["﻿" + ["evaluador,id_muestra,veredicto,tipos,tras_tirada,nota,segundos"].concat(filas).join("\n")], { type: "text/csv;charset=utf-8" });
+  const a = el("a", { href: URL.createObjectURL(blob), download: "etiquetas_persona2_" + D.evaluador + ".csv" });
+  document.body.append(a); a.click(); a.remove();
+};
+render();
+</script>
+</body>
+</html>

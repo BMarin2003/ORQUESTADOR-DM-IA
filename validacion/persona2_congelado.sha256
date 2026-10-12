@@ -1,0 +1,10 @@
+# Congelamiento del detector persona2 v2b (2026-09-20).
+# Si cambia CUALQUIERA de los dos primeros hashes, la muestra de confirmación deja de ser válida y hay que generar una nueva con otra semilla.
+# Verificar: recalcular sha256 de cada archivo y comparar con esta lista.
+2b90a9ed731fae48488c8de7415d8e955f529e4231e695c71ca4b3ebf64ad47b  scripts/instrumentos/persona2.py
+f18ba3b424c37ad26bb84f7c176eb61fece1c4ba2dd3e22d16180c814b5f3bd0  scripts/instrumentos/lexicon_persona2.json
+203e799ff6a550e26dd252dfad3f625175abb5090a3e61e065ff1e76fbe1b781  scripts/instrumentos/test_persona2.py
+fcbc5cef642ec8661916d50049a85e71c129bbf939f7a5ffed105caaec70d93c  scripts/instrumentos/confirmacion_persona2.py
+072db8542876fe00b4eccff2f218d0b8cdb79079eee77c795e5c520b5ed6713a  validacion/persona2_desarrollo_turnos.csv
+c8e7729b97443a990aa66e2be681584d33ce01d532dcda37cb6a460e1a881312  validacion/confirmacion_persona2_muestra.csv
+ea6b0e83366e0c5df8698a885027a6a1c604d6fc89801855e4330c84bb625a9e  validacion/confirmacion_persona2_clave.csv
