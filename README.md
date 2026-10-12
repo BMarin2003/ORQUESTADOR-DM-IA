@@ -1,5 +1,12 @@
 # DM-IA · Coherencia narrativa: sistema multiagente vs. monolítico
 
+![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16%20%2B%20pgvector-4169E1?logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-compose-2496ED?logo=docker&logoColor=white)
+![Modelo](https://img.shields.io/badge/modelo-gemma--4--31B--it-8E75B2)
+![Corpus](https://img.shields.io/badge/corpus-75%2C600%20turnos-0F8B8D)
+![Estado](https://img.shields.io/badge/estado-corpus%20y%20resultados%20cerrados-success)
+
 Tesis de Ingeniería de Sistemas e Inteligencia Artificial (UPAO, 2026).
 Marin Yupanqui, Bryan Arturo · Mostacero Cieza, Luis David. Asesor: Dr. Cueva Chávez, Walter Manuel.
 
