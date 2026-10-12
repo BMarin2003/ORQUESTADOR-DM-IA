@@ -9,3 +9,16 @@ psycopg[binary]>=3.1
 spacy>=3.8
 # Después de instalar, descargar el modelo en español (una sola vez):
 #   python -m spacy download es_core_news_sm
+#
+# Ahora también se usa spaCy (parser+lemmatizer) para la sección 8 del
+# reporte (grafo de coherencia por lema, complemento lematizado de
+# cr2_entidad_grafo_densidad) -- mismo modelo es_core_news_sm de arriba,
+# no hace falta instalar nada extra para esto.
+
+# LanguageTool: para la sección 7 del reporte (Grammaticality, CR-1,
+# Roemmele & Gordon). REQUIERE Java 8+ instalado en la máquina (verificar
+# con "java -version" en PowerShell). La primera vez que corre descarga
+# ~260MB del motor de LanguageTool -- solo una vez, queda cacheado. Si
+# Java no está instalado, esta sección del reporte se omite sola con un
+# aviso, el resto del script sigue funcionando normal.
+language-tool-python>=2.8

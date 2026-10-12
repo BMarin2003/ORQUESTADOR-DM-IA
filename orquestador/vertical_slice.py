@@ -5,7 +5,7 @@ Conecta por primera vez las piezas que hasta ahora solo se probaron aisladas:
 
     estado (Postgres)
       → contexto de escena
-        → JUGADOR agéntico          Hermes-3
+        → JUGADOR agéntico          Gemma 4 31B (desde Par 04; Hermes-3 en Par01-03)
           → dados deterministas
             → DM                    Gemma 4 31B
               → EXTRACTOR           Gemma 4 31B
@@ -26,14 +26,41 @@ Uso:
 import argparse
 import json
 import os
+import random
 import re
 import sys
 import time
+import unicodedata
 import urllib.error
 import urllib.request
 from pathlib import Path
 
+# Windows usa cp1252 en stdout/stderr cuando no hay consola adjunta (p. ej.
+# Start-Process con -RedirectStandardOutput a un archivo): cualquier
+# carácter fuera de latin-1 -- una tilde ya sobrevive como mojibake, pero
+# "✓"/"✗" no tienen ni siquiera esa aproximación -- revienta con
+# UnicodeEncodeError y tumba la corrida entera a mitad de turno. Mismo
+# fix ya aplicado en fixtures/generar_seed.py por el mismo motivo. Bug
+# real encontrado en Par 07-17 (2026-09-18): 11 corridas lanzadas con
+# Start-Process cayeron así, algunas a mitad del primer turno.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
+
 RAIZ = Path(__file__).resolve().parent.parent
+
+
+def _slug(texto):
+    """Título de campaña -> slug para nombres de archivo autodescriptivos.
+
+    "Par 02 · G2 (Monolítico) · Vela Honda" -> "par_02_monolitico_vela_honda".
+    Sin acentos, sin separadores raros, todo en minúscula. Ver punto 30 de
+    la bitácora QM.
+    """
+    s = unicodedata.normalize("NFKD", texto).encode("ascii", "ignore").decode()
+    s = re.sub(r"[^\w]+", "_", s).strip("_").lower()
+    return s or "sin_titulo"
 sys.path.insert(0, str(RAIZ / "jugador"))
 sys.path.insert(0, str(RAIZ / "orquestador"))
 import dados          # noqa: E402
@@ -41,8 +68,37 @@ import db as bd       # noqa: E402
 
 BASE = "https://api.deepinfra.com/v1/openai"
 MODELO_DM = os.environ.get("DMIA_MODELO", "google/gemma-4-31B-it")
+# Jugador migrado a Gemma (2026-09-17, decisión del usuario): antes usaba
+# Hermes-3-Llama-3.1-70B, un modelo de 70B ~5.4x más caro por token que
+# Gemma-4-31B (ver PRECIOS_USD_POR_1M abajo) -- eso hacía que UNA sola
+# llamada del jugador pesara más en el costo real que TODAS las llamadas
+# del DM/Extractor juntas en G2, y a veces más que los hasta 6 roles del
+# propio sistema multiagente en G1. Insostenible para lo que se está
+# comparando: el costo debería estar dominado por la arquitectura bajo
+# estudio (G1/G2), no por el agente jugador, que es un actor de soporte
+# idéntico en ambos brazos. Desde Par 04 en adelante, jugador y DM usan el
+# mismo modelo (Gemma) -- Par 01/02/03 (real) siguen documentados con
+# Hermes como jugador, ver nota metodológica en el plan de cierre.
 MODELO_JUGADOR = os.environ.get("DMIA_MODELO_JUGADOR",
-                                "NousResearch/Hermes-3-Llama-3.1-70B")
+                                "google/gemma-4-31B-it")
+
+# Precios reales (USD por 1M tokens), tarifa estándar de DeepInfra --
+# hallazgo 2026-09-17: el costo impreso al final de la sesión sumaba TODOS
+# los tokens (jugador + DM/extractor) bajo una sola tarifa, calibrada de
+# hecho solo para el modelo del DM. El jugador usa un modelo distinto y
+# bastante más caro (70B vs 31B) -- esto explicaba un gasto real en
+# DeepInfra mayor al costo que este script venía imprimiendo. Verificado
+# 2026-09-17 contra el reporte de uso REAL de la cuenta del usuario
+# (deepinfra-usage-2026-09.csv, no una página de precios de terceros):
+# Hermes-3-Llama-3.1-70B $0.70/1M input Y output (coincide exacto);
+# gemma-4-31B-it $0.13/1M input, $0.38/1M output (corregido -- una
+# estimación anterior con la página pública de precios había dado
+# $0.09/$0.34, algo distinto de la tarifa real facturada a esta cuenta).
+PRECIOS_USD_POR_1M = {
+    "google/gemma-4-31B-it": (0.13, 0.38),
+    "NousResearch/Hermes-3-Llama-3.1-70B": (0.70, 0.70),
+}
+PRECIO_DEFECTO = (0.09, 0.34)  # respaldo si el modelo no está en la tabla
 
 PENSAMIENTO = re.compile(r"<think>.*?</think>", re.S | re.I)
 VALLA = re.compile(r"^\s*```[a-z]*\s*$", re.M)
@@ -150,7 +206,7 @@ def llamar(modelo, system, user, max_tokens=600, temp=0.8, json_mode=False):
                  "Content-Type": "application/json"}, method="POST")
     t0 = time.time()
 
-    def _post(peticion, reintentos=4, espera=10):
+    def _post(peticion, reintentos=4, espera=10, max_sobrecarga=30):
         # DeepInfra corta la conexión de tanto en tanto en llamadas largas
         # (visto en corridas reales de 250+ turnos: TimeoutError/URLError
         # tras 5-80 minutos de trabajo bueno). Sin reintento, cada corte
@@ -158,12 +214,48 @@ def llamar(modelo, system, user, max_tokens=600, temp=0.8, json_mode=False):
         # campaña de 1,750 turnos. Reintenta con backoff antes de rendirse
         # de verdad (fallo persistente sí debe propagar, no quedarse en
         # un bucle silencioso).
-        for intento in range(1, reintentos + 1):
+        intento = 0
+        sobrecarga = 0
+        while True:
             try:
                 with urllib.request.urlopen(peticion, timeout=300) as r:
                     return json.loads(r.read().decode())
+            except urllib.error.HTTPError as e:
+                # Bug encontrado en Par 07-17 (2026-09-18, ~19:40): con 22
+                # corridas en paralelo, DeepInfra devolvió 429 "Model busy,
+                # retry later" (engine_overloaded) y las ~20 corridas
+                # cayeron en el mismo cuarto de hora, porque el bloque de
+                # abajo trata TODO HTTPError como fatal. 429/502/503/504
+                # SÍ son transitorios (a diferencia de 401/402): se
+                # reintenta con backoff exponencial acotado (10s..300s,
+                # hasta max_sobrecarga intentos ~ 2 h) + jitter para que
+                # las 22 no vuelvan a golpear a la vez. Un 429 no se
+                # factura ni cambia el resultado: es neutral entre brazos.
+                if e.code in (429, 502, 503, 504) and sobrecarga < max_sobrecarga:
+                    sobrecarga += 1
+                    pausa = min(300, 10 * 2 ** min(sobrecarga - 1, 5)) + random.uniform(0, 10)
+                    print(f"    (HTTP {e.code}, modelo saturado: reintento "
+                          f"{sobrecarga}/{max_sobrecarga} en {pausa:.0f}s)",
+                          file=sys.stderr)
+                    time.sleep(pausa)
+                    continue
+                # HTTPError es subclase de URLError -- sin este except
+                # aparte, CUALQUIER respuesta de error de la API (401,
+                # 402 saldo agotado, 404, 422, 500...) caía en el except
+                # de abajo y se reintentaba con backoff (10/20/40s) como
+                # si fuera un corte de red transitorio. Un 402 no se
+                # arregla reintentando -- nunca se va a resolver solo
+                # esperando. Propagar de inmediato al manejo que ya
+                # existe más arriba en llamar() (fallback de
+                # chat_template_kwargs/response_format, o mensaje HTTP
+                # {code} y return None). Encontrado 2026-09-16 cuando
+                # Par 02 real se quedó sin saldo en DeepInfra a mitad de
+                # la corrida y cada llamada perdió ~70s en reintentos
+                # inútiles antes de rendirse.
+                raise
             except (TimeoutError, urllib.error.URLError) as e:
-                if intento == reintentos:
+                intento += 1
+                if intento >= reintentos:
                     raise
                 print(f"    (red: {e!r}, reintento {intento}/{reintentos} "
                       f"en {espera}s)", file=sys.stderr)
@@ -311,9 +403,14 @@ def main():
     logs_dir = RAIZ / "logs"
     logs_dir.mkdir(exist_ok=True)
     marca = time.strftime("%Y%m%d_%H%M%S")
+    # Punto 30 (bitácora QM): antes el nombre solo llevaba el campaign_id
+    # corto, sin distinguir Par/arquitectura -- obligaba a renombrar a mano
+    # para diferenciar Par01/02/03 de un vistazo. Ahora antepone un slug
+    # del título real de la campaña, autodescriptivo desde que se genera.
+    slug_titulo = _slug(cab["title"])
     nombre_log = re.sub(
         r"[^\w.-]+", "_",
-        f"sesion_{str(camp.campaign_id)[:8]}_"
+        f"{slug_titulo}_{str(camp.campaign_id)[:8]}_"
         f"turnos_{cab['current_turn'] + 1}-{cab['current_turn'] + args.turnos}_{marca}.md")
     ruta_log = logs_dir / nombre_log
     archivo_log = open(ruta_log, "w", encoding="utf-8")
@@ -340,8 +437,19 @@ def main():
 def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
                       prompt_jugador, prompt_dm, prompt_extractor,
                       contrato):
-    presentes = ["Sargento Brea"]
-    coste = {"tin": 0, "tout": 0}
+    # Mismo bug que en vertical_slice_g1.py (encontrado en Par 02 real,
+    # 2026-09-15): este default venía hardcodeado a "Sargento Brea" (PNJ
+    # del piloto "Vado de Ceniza") -- funcionaba por casualidad mientras
+    # cada campaña nueva reutilizara ese nombre. Fix simétrico en ambos
+    # brazos para no sesgar la comparación (mismo criterio que el fix de
+    # affinity, puntos 16-19 de la bitácora QM). Arranca vacío -- el
+    # primer PNJ real de la campaña se resuelve dentro del loop.
+    presentes = []
+    coste_por_modelo = {}
+
+    def sumar_coste(modelo, r):
+        c = coste_por_modelo.setdefault(modelo, {"tin": 0, "tout": 0})
+        c["tin"] += r["tin"]; c["tout"] += r["tout"]
     # Fijo ANTES del bucle: turn_id = turno_inicial + 1 + i. La línea de
     # abajo (cab["current_turn"] = turn_id) actualiza `cab` para que
     # game_day/current_turn reflejen el último turno escrito, pero si
@@ -355,6 +463,14 @@ def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
     for i in range(args.turnos):
         turn_id = turno_inicial + 1 + i
 
+        # Contador de turno visible en vivo y en la bitácora (nuevo
+        # 2026-09-16, pedido tras Par 02 real: sin esto, saber en qué
+        # turno se cortó una corrida exigía reconstruirlo a mano contando
+        # "### [1]" en el log). `grep "^## Turno " bitacora.md` da el
+        # avance completo de una corrida de un vistazo.
+        print(f"\n## Turno {turn_id} — {i+1}/{args.turnos} de esta corrida "
+              f"(objetivo final de la campaña: {turno_inicial + args.turnos})\n")
+
         # ------------------------------------------------- 1. estado y escena
         paso(1, "ESTADO Y CONTEXTO (desde Postgres)")
         # game_day se refresca cada turno -- antes `cab` se leía una sola
@@ -365,10 +481,22 @@ def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
         ents = camp.entidades()
         conocidos = entidades_conocidas(ents, pj["nombre"])
         ultimo = camp.escena_actual()
-        escena = (ultimo["dm_output"] if ultimo else
-                  "Estás en la cabecera del puente de Vado de Ceniza. La Sargento "
-                  "Brea revisa el paso de un carro cargado de sacos. Al verte, "
-                  "levanta la vista y espera a que digas algo.")
+        if ultimo is None:
+            # Antes esto caía a un texto hardcodeado de "Vado de Ceniza"
+            # (lore del piloto), código muerto que nunca se disparó porque
+            # la siembra de corpus real siempre deja un turno 0 real en la
+            # base -- pero código muerto peligroso: si algún par futuro se
+            # lanzara sin sembrar ese turno 0, la campaña arrancaría
+            # narrando la ambientación de OTRO par sin que nada lo avisara.
+            # Mismo criterio que dados.py: no inventar, fallar fuerte y
+            # explícito antes de gastar presupuesto real en una corrida
+            # con la escena de apertura equivocada.
+            sys.exit(
+                f"No hay ningún turno registrado (turn_log) para la "
+                f"campaña {camp.campaign_id} -- falta sembrar el turno 0 "
+                f"(escena de apertura) antes de generar. No se arranca "
+                f"con una escena por defecto.")
+        escena = ultimo["dm_output"]
 
         # PNJ presentes: derivado de la escena, no hardcodeado (ver QM -
         # Respaldo bibliografico..., "Pendiente"). Un PNJ cuenta como
@@ -391,11 +519,20 @@ def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
         if detectados:
             presentes = detectados
         elif not presentes:
-            presentes = ["Sargento Brea"]  # arranque en frío, sin historial aún
+            # Fallback campaña-agnóstico: cualquier PNJ vivo ya sembrado
+            # en ESTA campaña, en vez de un nombre hardcodeado de otro
+            # escenario. Puede seguir vacío (campaña sin PNJ vivo
+            # detectable todavía) -- se maneja abajo sin reventar.
+            npcs_conocidos = [e["nombre"] for e in ents if e["tipo"] == "npc"]
+            presentes = npcs_conocidos[:1]
 
-        antes = camp.estado_pnj(presentes[0])
-        print(f"  {antes['name']}: {antes['status']}, aprecio {antes['affinity']} "
-              f"({antes['banda']}), {antes['hechos']} hechos conocidos")
+        antes = camp.estado_pnj(presentes[0]) if presentes else None
+        if not antes:
+            print("  (ningún PNJ conocido detectado en la escena todavía)")
+        else:
+            print(f"  {antes['name']}: {antes['status']}, aprecio "
+                  f"{antes['affinity']} ({antes['banda']}), "
+                  f"{antes['hechos']} hechos conocidos")
         # MUN-1/2 compartido (ver db.eventos_reloj_turno): lo que un reloj
         # disparó el turno anterior se narra AHORA, al abrir este turno.
         eventos_reloj = camp.eventos_reloj_turno(turn_id - 1) if turn_id > 1 else []
@@ -410,7 +547,7 @@ def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
                    max_tokens=300)
         if not r:
             sys.exit("El jugador no respondió")
-        coste["tin"] += r["tin"]; coste["tout"] += r["tout"]
+        sumar_coste(MODELO_JUGADOR, r)
         accion = r["texto"]
         print(f"  {r['ms']} ms\n")
         for l in accion.splitlines():
@@ -420,7 +557,8 @@ def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
         # --------------------------------------------------------- 3. dados
         paso(3, "DADOS (deterministas, del sistema)")
         buffer_txt, tiradas, rechazadas = dados.resolver_turno(
-            accion, str(camp.campaign_id), turn_id)
+            accion, str(camp.campaign_id), turn_id,
+            tabla_modificadores=dados.tabla_pj(pj))
         if not tiradas and not rechazadas:
             print("  sin tiradas declaradas")
         for t in tiradas:
@@ -448,8 +586,24 @@ def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
         r = llamar(MODELO_DM, prompt_dm, user_dm, max_tokens=500, temp=0.8)
         if not r:
             sys.exit("El DM no respondió")
-        coste["tin"] += r["tin"]; coste["tout"] += r["tout"]
+        sumar_coste(MODELO_DM, r)
         narracion = r["texto"]
+        # Red de seguridad compartida con G1 (Par 18+, ver dados.META_OOC): si el
+        # DM sale del papel ("[necesito que realices una tirada]") se regenera
+        # hasta 2 veces; el texto meta NO debe entrar al historial (en Par 07-17
+        # el 69 % de estos turnos venía justo después de otro: el DM se imitaba).
+        reintentos_meta = 0
+        while dados.es_meta_ooc(narracion) and reintentos_meta < 2:
+            reintentos_meta += 1
+            print(f"  ⚠ DM fuera de personaje: regenerando ({reintentos_meta}/2)")
+            r2 = llamar(MODELO_DM, prompt_dm, user_dm + dados.AVISO_META,
+                        max_tokens=500, temp=0.8)
+            if not r2:
+                break
+            sumar_coste(MODELO_DM, r2)
+            r, narracion = r2, r2["texto"]
+        if dados.es_meta_ooc(narracion):
+            narracion = dados.quitar_meta_ooc(narracion)
         print(f"  {r['ms']} ms\n")
         for l in narracion.splitlines():
             if l.strip():
@@ -459,6 +613,8 @@ def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
         paso(5, "VERIFICACIÓN DE LA NARRACIÓN")
         problemas = []
         val = {"raw_flags": {}}
+        if reintentos_meta:
+            val["raw_flags"]["guard_meta_reintentos"] = reintentos_meta
         # El DM metió "[Tirada de Percepción necesaria... resuelvo la
         # reacción de la PNJ]" pese a tenerlo prohibido. El verificador
         # anterior no lo veía.
@@ -557,7 +713,7 @@ def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
                    max_tokens=800, temp=0, json_mode=True)
         if not r:
             sys.exit("El extractor no respondió")
-        coste["tin"] += r["tin"]; coste["tout"] += r["tout"]
+        sumar_coste(MODELO_DM, r)
         salida = parsear_json(r["texto"]) or {"events": [], "deltas": []}
         eventos = salida.get("events") or []
         deltas = salida.get("deltas") or []
@@ -579,6 +735,15 @@ def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
                 validos_ev.append(e)
                 print(f"  ✓ evento {e['entity']} · {e['event_kind']}")
         for d in deltas:
+            # Guarda añadida 2026-09-16 (auditoría diff G1/G2): mismo
+            # patrón que el bug 1 de Par 02 real (delta del Mundo que no
+            # era un objeto, en G1) -- ahí nunca se disparó porque el
+            # extractor usa json_mode (esquema forzado), pero es la misma
+            # clase de riesgo si el LLM alguna vez devuelve un elemento
+            # suelto que no sea dict. Barato blindarlo ahora.
+            if not isinstance(d, dict):
+                print(f"  ✗ delta malformado (no es objeto): {d!r}")
+                continue
             ev = d.get("evidence", "") or ""
             campos = contrato["campos_directos"].get(d.get("entity_type"), {})
             if d.get("field") not in campos:
@@ -729,7 +894,21 @@ def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
                 if not res:
                     print(f"  ✗ evento sin magnitud: {e['event_kind']}")
                     continue
-                nuevo = float(antes["affinity"] or 0) + float(res["d_affinity"])
+                # mutable_fields fija npc.affinity en [-100, 100]
+                # (migrations/001_schema.sql) y apply_delta() RECHAZA con
+                # RAISE EXCEPTION cualquier valor fuera de ese rango --
+                # validación de dominio, no algo para "arreglar" del lado
+                # de la base. Este clamp SÍ estaba en vertical_slice_g1.py
+                # (bitácora QM puntos 16-19) pero, pese a que el vault
+                # decía "corregido en ambos brazos", nunca llegó aquí --
+                # descubierto recién en Par 02 real (2026-09-16) cuando
+                # una racha de eventos ideal_honored sobre el mismo PNJ
+                # llevó el acumulado a 103.0 y tumbó la corrida. Acotar
+                # ANTES de escribir, igual que ya hace apply_delta con
+                # LEAST(GREATEST(...)) para el resto de campos de
+                # disposición. Fix ahora sí simétrico en los dos brazos.
+                nuevo = max(-100.0, min(100.0,
+                            float(antes["affinity"] or 0) + float(res["d_affinity"])))
                 did = camp.aplicar("npc", nid, "affinity", nuevo, turn_id,
                                    "extracted", e["evidence"])
                 print(f"  → delta {did}: {e['entity']} affinity "
@@ -776,8 +955,27 @@ def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
                     # "ref" (ver comentario arriba).
                     valor = str(ref_id)
 
-                did = camp.aplicar(d["entity_type"], eid, d["field"],
-                                   valor, turn_id, "extracted", d["evidence"])
+                try:
+                    did = camp.aplicar(d["entity_type"], eid, d["field"],
+                                       valor, turn_id, "extracted", d["evidence"])
+                except Exception as e:
+                    # Bug encontrado en Par 05 real (2026-09-18, turno ~3):
+                    # el extractor puede proponer un campo que SÍ está en la
+                    # lista blanca de contrato.json (por eso pasa el chequeo
+                    # del paso 7) pero con un VALOR que la base rechaza por
+                    # dominio/enum -- visto con location.state = "observed",
+                    # que no es un valor válido para ese campo. Este loop de
+                    # escritura de deltas del extractor es compartido de
+                    # verdad por G1 y G2 (a diferencia del loop de deltas
+                    # del Mundo, exclusivo de G1, que ya tenía esta misma
+                    # protección desde Par 01 real) y no tenía ninguna red
+                    # de seguridad -- tumbaba la corrida completa. Mismo
+                    # criterio que ya se aplicó ahí: avisar y seguir, no
+                    # abortar una corrida de 1,400 turnos por un valor que
+                    # el extractor no debía proponer.
+                    print(f"  ✗ delta rechazado por la base "
+                          f"({d['entity_type']}.{d['field']} = {valor!r}): {e}")
+                    continue
                 v = str(d["value"])
                 print(f"  → delta {did}: {d['entity']}.{d['field']} = "
                       f"{v[:56]}{'…' if len(v) > 56 else ''}")
@@ -806,6 +1004,14 @@ def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
         else:
             print("  (nada escrito)")
 
+        # Reloj del mundo determinista (db.sincronizar_dia): el día de juego
+        # sale del turno, no del extractor (que nunca lo emitió en Par01-17).
+        # Idéntico en G1. Va aparte del `if` de arriba: corre CADA turno.
+        if not args.seco:
+            for ev in camp.sincronizar_dia(turn_id):
+                print(f"  ⏰ reloj disparado: agenda «{ev['agenda']}» "
+                      f"(facción {ev['faction_id']})")
+
         # ------------------------------------------------------ 9. comprobar
         paso(9, "ESTADO DESPUÉS")
         despues = camp.estado_pnj(presentes[0])
@@ -820,8 +1026,24 @@ def _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
         cab["current_turn"] = turn_id
 
     print("\n---\n")
-    print(f"**Costo total de la sesión:** {coste['tin']}→{coste['tout']} tokens · "
-          f"${(coste['tin']*0.09 + coste['tout']*0.34)/1e6:.4f}")
+    tin_total = tout_total = 0
+    costo_total = 0.0
+    detalle_costo = []
+    for modelo, c in coste_por_modelo.items():
+        tin_total += c["tin"]; tout_total += c["tout"]
+        p_in, p_out = PRECIOS_USD_POR_1M.get(modelo, PRECIO_DEFECTO)
+        if modelo not in PRECIOS_USD_POR_1M:
+            print(f"  (aviso: sin precio conocido para {modelo}, usando tarifa "
+                  f"de respaldo ${PRECIO_DEFECTO[0]}/${PRECIO_DEFECTO[1]} por 1M "
+                  f"-- puede no reflejar el costo real, verificar contra el "
+                  f"dashboard de DeepInfra)", file=sys.stderr)
+        costo_modelo = (c["tin"] * p_in + c["tout"] * p_out) / 1e6
+        costo_total += costo_modelo
+        detalle_costo.append(f"  - `{modelo}`: {c['tin']}→{c['tout']} tokens · ${costo_modelo:.4f}")
+    print(f"**Costo total de la sesión:** {tin_total}→{tout_total} tokens · "
+          f"${costo_total:.4f}")
+    for linea in detalle_costo:
+        print(linea)
 
 
 def ficha_jugador(pj):

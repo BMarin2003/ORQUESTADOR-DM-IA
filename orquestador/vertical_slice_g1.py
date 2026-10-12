@@ -32,14 +32,42 @@ Uso:
 import argparse
 import json
 import os
+import random
 import re
 import sys
 import time
+import unicodedata
 import urllib.error
 import urllib.request
 from pathlib import Path
 
+# Windows usa cp1252 en stdout/stderr cuando no hay consola adjunta (p. ej.
+# Start-Process con -RedirectStandardOutput a un archivo): cualquier
+# carácter fuera de latin-1 -- una tilde ya sobrevive como mojibake, pero
+# "✓"/"✗" no tienen ni siquiera esa aproximación -- revienta con
+# UnicodeEncodeError y tumba la corrida entera a mitad de turno. Mismo
+# fix ya aplicado en fixtures/generar_seed.py por el mismo motivo, y en el
+# gemelo vertical_slice.py (G2). Bug real encontrado en Par 07-17
+# (2026-09-18): 11 corridas lanzadas con Start-Process cayeron así,
+# algunas a mitad del primer turno.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
+
 RAIZ = Path(__file__).resolve().parent.parent
+
+
+def _slug(texto):
+    """Título de campaña -> slug para nombres de archivo autodescriptivos.
+
+    "Par 02 · G1 (Multiagente) · Vela Honda" -> "par_02_multiagente_vela_honda".
+    Sin acentos, sin separadores raros, todo en minúscula. Ver punto 30 de
+    la bitácora QM.
+    """
+    s = unicodedata.normalize("NFKD", texto).encode("ascii", "ignore").decode()
+    s = re.sub(r"[^\w]+", "_", s).strip("_").lower()
+    return s or "sin_titulo"
 sys.path.insert(0, str(RAIZ / "jugador"))
 sys.path.insert(0, str(RAIZ / "orquestador"))
 import dados          # noqa: E402
@@ -50,8 +78,26 @@ import mundo as mun     # noqa: E402
 
 BASE = "https://api.deepinfra.com/v1/openai"
 MODELO_DM = os.environ.get("DMIA_MODELO", "google/gemma-4-31B-it")
+# Jugador migrado a Gemma (2026-09-17, decisión del usuario) -- mismo
+# criterio y mismo cambio que en vertical_slice.py (G2), ver el comentario
+# largo ahí para el detalle completo. Simétrico en ambos brazos, así que
+# no afecta la comparación G1 vs G2 (el jugador siempre fue y sigue siendo
+# idéntico en los dos), solo corrige que el costo total esté dominado por
+# el agente de soporte en vez de por la arquitectura bajo estudio.
 MODELO_JUGADOR = os.environ.get("DMIA_MODELO_JUGADOR",
-                                "NousResearch/Hermes-3-Llama-3.1-70B")
+                                "google/gemma-4-31B-it")
+
+# Precios reales (USD por 1M tokens), tarifa estándar de DeepInfra -- ver
+# el mismo comentario en vertical_slice.py (G2). El jugador usa un modelo
+# distinto (y más caro) que los 6 roles restantes de G1, que comparten
+# MODELO_DM -- sumar todo bajo una sola tarifa subestimaba el costo real.
+# Verificado 2026-09-17 contra el reporte de uso real de la cuenta
+# (deepinfra-usage-2026-09.csv): Hermes $0.70/$0.70, Gemma $0.13/$0.38.
+PRECIOS_USD_POR_1M = {
+    "google/gemma-4-31B-it": (0.13, 0.38),
+    "NousResearch/Hermes-3-Llama-3.1-70B": (0.70, 0.70),
+}
+PRECIO_DEFECTO = (0.09, 0.34)  # respaldo si el modelo no está en la tabla
 
 PENSAMIENTO = re.compile(r"<think>.*?</think>", re.S | re.I)
 VALLA = re.compile(r"^\s*```[a-z]*\s*$", re.M)
@@ -160,13 +206,32 @@ def llamar(modelo, system, user, max_tokens=600, temp=0.8, json_mode=False):
                  "Content-Type": "application/json"}, method="POST")
     t0 = time.time()
 
-    def _post(peticion, reintentos=4, espera=10):
-        for intento in range(1, reintentos + 1):
+    def _post(peticion, reintentos=4, espera=10, max_sobrecarga=30):
+        intento = 0
+        sobrecarga = 0
+        while True:
             try:
                 with urllib.request.urlopen(peticion, timeout=300) as r:
                     return json.loads(r.read().decode())
+            except urllib.error.HTTPError as e:
+                # Idéntico a vertical_slice.py (G2) -- mismo bug, mismo
+                # fix, para no romper la comparación entre brazos. Ver
+                # el comentario largo en el gemelo de G2 para el
+                # detalle completo de por qué hacía falta (incluido el
+                # reintento de 429/502/503/504 agregado en Par 07-17,
+                # 2026-09-18: engine_overloaded tumbó ~20 corridas).
+                if e.code in (429, 502, 503, 504) and sobrecarga < max_sobrecarga:
+                    sobrecarga += 1
+                    pausa = min(300, 10 * 2 ** min(sobrecarga - 1, 5)) + random.uniform(0, 10)
+                    print(f"    (HTTP {e.code}, modelo saturado: reintento "
+                          f"{sobrecarga}/{max_sobrecarga} en {pausa:.0f}s)",
+                          file=sys.stderr)
+                    time.sleep(pausa)
+                    continue
+                raise
             except (TimeoutError, urllib.error.URLError) as e:
-                if intento == reintentos:
+                intento += 1
+                if intento >= reintentos:
                     raise
                 print(f"    (red: {e!r}, reintento {intento}/{reintentos} "
                       f"en {espera}s)", file=sys.stderr)
@@ -380,9 +445,17 @@ def main():
     logs_dir = RAIZ / "logs"
     logs_dir.mkdir(exist_ok=True)
     marca = time.strftime("%Y%m%d_%H%M%S")
+    # Punto 30 (bitácora QM): el nombre de archivo antes solo llevaba
+    # "g1_<campaign_id corto>", sin distinguir a qué Par pertenece --
+    # obligaba a renombrar a mano después para poder diferenciar
+    # Par01/02/03 de un vistazo. Ahora se antepone un slug del título real
+    # de la campaña (p.ej. "Par 02 · G1 (Multiagente) · Vela Honda" ->
+    # "par_02_g1_multiagente_vela_honda"), autodescriptivo desde que se
+    # genera -- ya no depende de renombrar después.
+    slug_titulo = _slug(cab["title"])
     nombre_log = re.sub(
         r"[^\w.-]+", "_",
-        f"sesion_g1_{str(camp.campaign_id)[:8]}_"
+        f"{slug_titulo}_g1_{str(camp.campaign_id)[:8]}_"
         f"turnos_{cab['current_turn'] + 1}-{cab['current_turn'] + args.turnos}_{marca}.md")
     ruta_log = logs_dir / nombre_log
     archivo_log = open(ruta_log, "w", encoding="utf-8")
@@ -411,12 +484,35 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
                       prompt_jugador, prompt_actor, prompt_arbitro,
                       prompt_mundo, prompt_narrador, prompt_extractor,
                       contrato):
-    presentes = ["Sargento Brea"]
-    coste = {"tin": 0, "tout": 0}
+    # Bug encontrado en Par 02 real (2026-09-15, turno 177): este default
+    # venía hardcodeado a "Sargento Brea" (PNJ del piloto "Vado de
+    # Ceniza") -- funcionaba por casualidad mientras cada campaña nueva
+    # reutilizara ese nombre. En cuanto una campaña con reparto propio
+    # (Alto Ferrena) tiene una escena sin ningún PNJ conocido detectado,
+    # camp.estado_pnj("Sargento Brea") devuelve None y revienta el print
+    # de abajo. Arranca vacío -- el primer PNJ real de la campaña se
+    # resuelve dentro del loop, contra los PNJ que sí existen aquí.
+    presentes = []
+    coste_por_modelo = {}
+
+    def sumar_coste(modelo, r):
+        c = coste_por_modelo.setdefault(modelo, {"tin": 0, "tout": 0})
+        c["tin"] += r["tin"]; c["tout"] += r["tout"]
+
     turno_inicial = cab["current_turn"]
 
     for i in range(args.turnos):
         turn_id = turno_inicial + 1 + i
+        reintentos_meta = 0   # regeneraciones de la red de seguridad (dados.META_OOC)
+
+        # Contador de turno visible en vivo y en la bitácora (nuevo
+        # 2026-09-16, pedido tras Par 02 real: sin esto, saber en qué
+        # turno se cortó una corrida exigía reconstruirlo a mano contando
+        # "### [1]" en el log). `grep "^## Turno " bitacora.md` da el
+        # avance completo de una corrida de un vistazo. Simétrico con
+        # vertical_slice.py.
+        print(f"\n## Turno {turn_id} — {i+1}/{args.turnos} de esta corrida "
+              f"(objetivo final de la campaña: {turno_inicial + args.turnos})\n")
 
         # ------------------------------------------------- 1. estado y escena
         paso(1, "ESTADO Y CONTEXTO (desde Postgres)")
@@ -424,11 +520,24 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
         ents = camp.entidades()
         conocidos = entidades_conocidas(ents, pj["nombre"])
         ultimo = camp.escena_actual()
-        escena = (ultimo["dm_output"] if ultimo else
-                  "Estás en la cabecera del puente de Vado de Ceniza. La Sargento "
-                  "Brea revisa el paso de un carro cargado de sacos. Al verte, "
-                  "levanta la vista y espera a que digas algo.")
-        location_id_actual = ultimo["location_id"] if ultimo else None
+        if ultimo is None:
+            # Antes esto caía a un texto hardcodeado de "Vado de Ceniza"
+            # (lore del piloto), código muerto que nunca se disparó porque
+            # la siembra de corpus real siempre deja un turno 0 real en la
+            # base -- pero código muerto peligroso: si algún par futuro se
+            # lanzara sin sembrar ese turno 0, la campaña arrancaría
+            # narrando la ambientación de OTRO par sin que nada lo avisara.
+            # Mismo criterio que dados.py: no inventar, fallar fuerte y
+            # explícito antes de gastar presupuesto real en una corrida
+            # con la escena de apertura equivocada. Simétrico con
+            # vertical_slice.py.
+            sys.exit(
+                f"No hay ningún turno registrado (turn_log) para la "
+                f"campaña {camp.campaign_id} -- falta sembrar el turno 0 "
+                f"(escena de apertura) antes de generar. No se arranca "
+                f"con una escena por defecto.")
+        escena = ultimo["dm_output"]
+        location_id_actual = ultimo["location_id"]
 
         detectados = []
         for e in ents:
@@ -442,11 +551,20 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
         if detectados:
             presentes = detectados
         elif not presentes:
-            presentes = ["Sargento Brea"]
+            # Fallback campaña-agnóstico: cualquier PNJ vivo ya sembrado
+            # en ESTA campaña, en vez de un nombre hardcodeado de otro
+            # escenario. Puede seguir vacío (campaña sin PNJ vivo
+            # detectable todavía) -- se maneja abajo sin reventar.
+            npcs_conocidos = [e["nombre"] for e in ents if e["tipo"] == "npc"]
+            presentes = npcs_conocidos[:1]
 
-        antes = camp.estado_pnj(presentes[0])
-        print(f"  {antes['name']}: {antes['status']}, aprecio {antes['affinity']} "
-              f"({antes['banda']}), {antes['hechos']} hechos conocidos")
+        antes = camp.estado_pnj(presentes[0]) if presentes else None
+        if antes:
+            print(f"  {antes['name']}: {antes['status']}, aprecio "
+                  f"{antes['affinity']} ({antes['banda']}), "
+                  f"{antes['hechos']} hechos conocidos")
+        else:
+            print("  (ningún PNJ conocido detectado en la escena todavía)")
         eventos_reloj = camp.eventos_reloj_turno(turn_id - 1) if turn_id > 1 else []
 
         # ------------------------------------------------------- 2. jugador
@@ -457,7 +575,7 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
                    max_tokens=300)
         if not r:
             sys.exit("El jugador no respondió")
-        coste["tin"] += r["tin"]; coste["tout"] += r["tout"]
+        sumar_coste(MODELO_JUGADOR, r)
         accion = r["texto"]
         print(f"  {r['ms']} ms\n")
         for l in accion.splitlines():
@@ -467,7 +585,8 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
         # --------------------------------------------------------- 3. dados
         paso(3, "DADOS (deterministas, del sistema, compartido con G2)")
         buffer_txt, tiradas, rechazadas = dados.resolver_turno(
-            accion, str(camp.campaign_id), turn_id)
+            accion, str(camp.campaign_id), turn_id,
+            tabla_modificadores=dados.tabla_pj(pj))
         if not tiradas and not rechazadas:
             print("  sin tiradas declaradas")
         for t in tiradas:
@@ -504,7 +623,7 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
             r = llamar(MODELO_DM, prompt_arbitro, user_arb, max_tokens=400, temp=0.3)
             if not r:
                 sys.exit("El Árbitro (tutor) no respondió")
-            coste["tin"] += r["tin"]; coste["tout"] += r["tout"]
+            sumar_coste(MODELO_DM, r)
             parsed = parsear_json(r["texto"]) or {}
             narracion = parsed.get("respuesta") or "(el Árbitro no devolvió respuesta)"
             print(f"  {r['ms']} ms\n")
@@ -537,7 +656,7 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
                               " -- se narra sin resolver nada mecánico")
                         faltantes.append("Árbitro")
                     else:
-                        coste["tin"] += r["tin"]; coste["tout"] += r["tout"]
+                        sumar_coste(MODELO_DM, r)
                         veredicto = parsear_json(r["texto"])
                         if not veredicto or veredicto.get("veredicto") is None:
                             # NUN-3/4: el Árbitro pidió una tirada que este
@@ -575,7 +694,7 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
                     print(f"  ✗ el Actor de {nombre_pnj} no respondió")
                     faltantes.append("Actor")
                     continue
-                coste["tin"] += r["tin"]; coste["tout"] += r["tout"]
+                sumar_coste(MODELO_DM, r)
                 parsed = parsear_json(r["texto"])
                 if not parsed or not parsed.get("linea"):
                     print(f"  ✗ el Actor de {nombre_pnj} no devolvió una línea válida")
@@ -616,12 +735,29 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
                     print("  ✗ el Mundo no respondió")
                     faltantes.append("Mundo")
                 else:
-                    coste["tin"] += r["tin"]; coste["tout"] += r["tout"]
+                    sumar_coste(MODELO_DM, r)
                     parsed = parsear_json(r["texto"]) or {}
+                    # Bug encontrado en Par 13 G1 (2026-09-18, ~17:15): la
+                    # salida del Mundo puede tener una forma inesperada (un
+                    # elemento de "propagacion_sugerida" que es un string
+                    # suelto, no un objeto -- mismo tipo de fallo ya visto
+                    # en "deltas" en Par 02). Se normaliza aquí para que
+                    # ni el JSON entero (lista en vez de objeto) ni
+                    # "semilla_plantada" (string en vez de objeto) puedan
+                    # tumbar la corrida más adelante con un .get().
+                    if not isinstance(parsed, dict):
+                        print(f"  ✗ (Mundo) salida no es un objeto, ignorada: {parsed!r:.120}")
+                        parsed = {}
                     boceto = parsed.get("boceto") or boceto
                     semilla_plantada = parsed.get("semilla_plantada")
+                    if not isinstance(semilla_plantada, dict):
+                        semilla_plantada = None
                     propagacion_sugerida = parsed.get("propagacion_sugerida") or []
                     deltas_mundo = parsed.get("deltas") or []
+                    if not isinstance(propagacion_sugerida, list):
+                        propagacion_sugerida = []
+                    if not isinstance(deltas_mundo, list):
+                        deltas_mundo = []
                     print(f"  {r['ms']} ms · boceto={'sí' if boceto else 'no'} "
                           f"· semilla_plantada="
                           f"{semilla_plantada.get('planteada') if semilla_plantada else None}")
@@ -655,8 +791,21 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
                       max_tokens=500, temp=0.8)
             if not r:
                 sys.exit("El Narrador no respondió")
-            coste["tin"] += r["tin"]; coste["tout"] += r["tout"]
+            sumar_coste(MODELO_DM, r)
             narracion = r["texto"]
+            # Red de seguridad compartida con G2 (Par 18+, ver dados.META_OOC).
+            # En Par 07-17 G1 nunca la habría necesitado (0 de 15 400 turnos).
+            while dados.es_meta_ooc(narracion) and reintentos_meta < 2:
+                reintentos_meta += 1
+                print(f"  ⚠ Narrador fuera de personaje: regenerando ({reintentos_meta}/2)")
+                r2 = llamar(MODELO_DM, prompt_narrador,
+                            user_narrador + dados.AVISO_META, max_tokens=500, temp=0.8)
+                if not r2:
+                    break
+                sumar_coste(MODELO_DM, r2)
+                r, narracion = r2, r2["texto"]
+            if dados.es_meta_ooc(narracion):
+                narracion = dados.quitar_meta_ooc(narracion)
             print(f"  {r['ms']} ms\n")
             for l in narracion.splitlines():
                 if l.strip():
@@ -673,6 +822,8 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
         paso(9, "VERIFICACIÓN DE LA NARRACIÓN")
         problemas = []
         val = {"raw_flags": {}}
+        if reintentos_meta:
+            val["raw_flags"]["guard_meta_reintentos"] = reintentos_meta
         if re.search(r"\[[^\]]{20,}\]", narracion):
             problemas.append("meta-comentario entre corchetes")
             val["raw_flags"]["meta_comentario"] = True
@@ -752,7 +903,7 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
                    max_tokens=800, temp=0, json_mode=True)
         if not r:
             sys.exit("El extractor no respondió")
-        coste["tin"] += r["tin"]; coste["tout"] += r["tout"]
+        sumar_coste(MODELO_DM, r)
         salida = parsear_json(r["texto"]) or {"events": [], "deltas": []}
         eventos = salida.get("events") or []
         deltas = salida.get("deltas") or []
@@ -774,6 +925,14 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
                 validos_ev.append(e)
                 print(f"  ✓ evento {e['entity']} · {e['event_kind']}")
         for d in deltas:
+            # Guarda añadida 2026-09-16 (auditoría diff G1/G2), simétrica
+            # con vertical_slice.py -- mismo patrón que la guarda de
+            # deltas_mundo más abajo (bug 1 de Par 02 real), pero para el
+            # extractor (compartido con G2) en vez del rol Mundo
+            # (exclusivo de G1).
+            if not isinstance(d, dict):
+                print(f"  ✗ delta malformado (no es objeto): {d!r}")
+                continue
             ev = d.get("evidence", "") or ""
             campos = contrato["campos_directos"].get(d.get("entity_type"), {})
             if d.get("field") not in campos:
@@ -933,8 +1092,18 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
                         continue
                     valor = str(ref_id)
 
-                did = camp.aplicar(d["entity_type"], eid, d["field"],
-                                   valor, turn_id, "extracted", d["evidence"])
+                try:
+                    did = camp.aplicar(d["entity_type"], eid, d["field"],
+                                       valor, turn_id, "extracted", d["evidence"])
+                except Exception as e:
+                    # Idéntico a vertical_slice.py (G2) -- mismo bug (Par 05
+                    # real, 2026-09-18), mismo fix, en el mismo loop
+                    # compartido de escritura de deltas del extractor. Ver
+                    # el comentario largo en el gemelo de G2 para el detalle
+                    # completo.
+                    print(f"  ✗ delta rechazado por la base "
+                          f"({d['entity_type']}.{d['field']} = {valor!r}): {e}")
+                    continue
                 v = str(d["value"])
                 print(f"  → delta {did}: {d['entity']}.{d['field']} = "
                       f"{v[:56]}{'…' if len(v) > 56 else ''}")
@@ -951,6 +1120,17 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
             # si correspondía (MUN-5/6/7).
             if clasif["modo"] != "fuera_de_rol":
                 for d in deltas_mundo:
+                    # Bug encontrado en Par 02 real (2026-09-15): el Mundo
+                    # puede devolver un elemento de "deltas" que no es un
+                    # objeto (visto: un entero suelto en la lista). d.get()
+                    # revienta antes de llegar a cualquier guarda posterior
+                    # -- por eso este chequeo va primero y por separado del
+                    # try/except de más abajo (ese cubre el rechazo de la
+                    # base, no un delta mal formado desde el origen).
+                    if not isinstance(d, dict):
+                        print(f"  ✗ (Mundo) delta malformado (no es "
+                              f"objeto): {d!r}")
+                        continue
                     tipo = normalizar_entity_type(d.get("entity_type"))
                     if tipo not in ENTITY_TYPES_VALIDOS:
                         print(f"  ✗ (Mundo) entity_type no reconocido "
@@ -962,12 +1142,37 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
                     if tipo != "world" and not eid:
                         print(f"  ✗ (Mundo) entidad inexistente: {d}")
                         continue
-                    did = camp.aplicar(tipo, eid, d["field"],
-                                       d["value"], turn_id, "extracted",
-                                       f"(Mundo) {d.get('field')}")
-                    print(f"  → delta (Mundo) {did}: {tipo}.{d.get('field')}")
+                    try:
+                        did = camp.aplicar(tipo, eid, d["field"],
+                                           d["value"], turn_id, "extracted",
+                                           f"(Mundo) {d.get('field')}")
+                        print(f"  → delta (Mundo) {did}: {tipo}.{d.get('field')}")
+                    except Exception as e:
+                        # Bug encontrado en Par 04 (2026-09-14, turno 4):
+                        # el Agente del Mundo puede proponer un campo que no
+                        # está en la lista blanca de apply_delta() (p.ej.
+                        # "descripcion" para location, o "attitude" para npc
+                        # -- visto en producción, distintos campos cada vez,
+                        # ninguno en mutable_fields). A diferencia de los
+                        # otros loops de este bloque (entity_type no
+                        # reconocido, entidad inexistente), esta llamada no
+                        # tenía ninguna red de seguridad y tumbaba la corrida
+                        # completa. Igual que "evento sin magnitud" en otras
+                        # partes del script: se avisa y se sigue, no se
+                        # aborta una corrida de 1,400 turnos por un campo que
+                        # el Mundo no debía proponer.
+                        print(f"  ✗ (Mundo) delta rechazado por la base "
+                              f"({tipo}.{d.get('field')}): {e}")
 
                 for prop in propagacion_sugerida:
+                    # Bug de Par 13 G1 (2026-09-18): ver comentario en el
+                    # parseo de la salida del Mundo. Esta era la línea que
+                    # tumbó la corrida (AttributeError: 'str' object has
+                    # no attribute 'get'); "deltas" ya tenía esta guarda.
+                    if not isinstance(prop, dict):
+                        print(f"  ✗ (Mundo) propagación sugerida malformada "
+                              f"(no es objeto): {prop!r}")
+                        continue
                     nid = camp.id_de("npc", prop.get("entidad"))
                     if nid:
                         print(f"  → propagación sugerida por Mundo hacia "
@@ -993,6 +1198,14 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
         else:
             print("  (nada escrito)")
 
+        # Reloj del mundo determinista (db.sincronizar_dia): el día de juego
+        # sale del turno, no del extractor (que nunca lo emitió en Par01-17).
+        # Idéntico en G2. Va aparte del `if` de arriba: corre CADA turno.
+        if not args.seco:
+            for ev in camp.sincronizar_dia(turn_id):
+                print(f"  ⏰ reloj disparado: agenda «{ev['agenda']}» "
+                      f"(facción {ev['faction_id']})")
+
         # ------------------------------------------------------ 13. comprobar
         paso(13, "ESTADO DESPUÉS")
         despues = camp.estado_pnj(presentes[0])
@@ -1007,8 +1220,24 @@ def _cuerpo_principal(args, camp, cab, pj, nombres_pj_conocidos,
         cab["current_turn"] = turn_id
 
     print("\n---\n")
-    print(f"**Costo total de la sesión:** {coste['tin']}→{coste['tout']} tokens · "
-          f"${(coste['tin']*0.09 + coste['tout']*0.34)/1e6:.4f}")
+    tin_total = tout_total = 0
+    costo_total = 0.0
+    detalle_costo = []
+    for modelo, c in coste_por_modelo.items():
+        tin_total += c["tin"]; tout_total += c["tout"]
+        p_in, p_out = PRECIOS_USD_POR_1M.get(modelo, PRECIO_DEFECTO)
+        if modelo not in PRECIOS_USD_POR_1M:
+            print(f"  (aviso: sin precio conocido para {modelo}, usando tarifa "
+                  f"de respaldo ${PRECIO_DEFECTO[0]}/${PRECIO_DEFECTO[1]} por 1M "
+                  f"-- puede no reflejar el costo real, verificar contra el "
+                  f"dashboard de DeepInfra)", file=sys.stderr)
+        costo_modelo = (c["tin"] * p_in + c["tout"] * p_out) / 1e6
+        costo_total += costo_modelo
+        detalle_costo.append(f"  - `{modelo}`: {c['tin']}→{c['tout']} tokens · ${costo_modelo:.4f}")
+    print(f"**Costo total de la sesión:** {tin_total}→{tout_total} tokens · "
+          f"${costo_total:.4f}")
+    for linea in detalle_costo:
+        print(linea)
 
 
 if __name__ == "__main__":

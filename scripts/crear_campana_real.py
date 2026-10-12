@@ -46,12 +46,14 @@ WORLD_TONE_DEFECTO = "mixed"
 
 
 def main():
-    """Uso: python crear_campana_real.py [titulo] [corpus_filename] [world_tone]
+    """Uso: python crear_campana_real.py [titulo] [corpus_filename] [world_tone] [party_register]
     corpus_filename es relativo a corpus/. world_tone por defecto 'mixed'
     (usar el tono real del escenario nuevo, p.ej. 'lugubrious')."""
     TITULO = sys.argv[1] if len(sys.argv) > 1 else TITULO_DEFECTO
     CORPUS = RAIZ / "corpus" / (sys.argv[2] if len(sys.argv) > 2 else CORPUS_DEFECTO)
     WORLD_TONE = sys.argv[3] if len(sys.argv) > 3 else WORLD_TONE_DEFECTO
+    # Par 18+: registro configurable (serious|mixed|comedic); Par 01-17 fue siempre 'mixed'.
+    REGISTRO = sys.argv[4] if len(sys.argv) > 4 else "mixed"
     if not CORPUS.exists():
         sys.exit(f"No encuentro el corpus en {CORPUS}")
     corpus_texto = CORPUS.read_text(encoding="utf-8")
@@ -77,9 +79,9 @@ def main():
                       world_tone, party_register, rules_visibility,
                       content_boundaries)
                    VALUES (%s, %s, %s, 'monolithic', 'adventure',
-                           %s, 'mixed', 50, %s)
+                           %s, %s, 50, %s)
                    RETURNING id""",
-                (tenant_id, user_id, TITULO, WORLD_TONE,
+                (tenant_id, user_id, TITULO, WORLD_TONE, REGISTRO,
                  json.dumps(CONTENT_BOUNDARIES)))
             campaign_id = cur.fetchone()[0]
 
