@@ -1,0 +1,111 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 12 (real) · G2 (Monolítico) · Muelle Gris · monolithic
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        0 (  0.0%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                  160 ( 11.4%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             32 (  2.3%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.170  [0.047, 0.369]
+    qn1_ttr                                n=1400  prom=0.734  [0.623, 1.000]
+    qn1_ngram_repeticion                   n=1400  prom=0.016  [0.000, 0.083]
+    qn1_legibilidad_fh                     n=1400  prom=64.022  [32.070, 90.340]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.297  [0.000, 1.000]
+  CR-2 turnos con algún nombre no reconocido: 68
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  164 visitas distintas · 15 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: Astillero de los Suspiros ↔ El Almacén del Fondeadero ↔ La Cala Escondida ↔ La Tienda de Aparejos de Osvaldo ↔ Oficina del muelle ↔ Puerto de las Almejas ↔ abertura estrecha en la pared ↔ callejón ↔ compartimento oculto ↔ edificación de piedra gris ↔ espacio estrecho y oculto ↔ fisura de la muralla lateral ↔ hueco oscuro y estrecho ↔ pasillo (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1082 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: Almacén cuatro, Astillero de los Suspiros, El Almacén del Fondeadero, La Casa de Selmira, La Costa Gris, La Lonja del Muelle, La Tienda de Aparejos de Osvaldo, Muelle Gris, Oficina del muelle, Puerto de las Almejas, espacio estrecho y oculto
+    turno 1: El Almacén del Fondeadero, La Casa de Selmira, Oficina del muelle, edificación de piedra gris
+    turno 2: Astillero de los Suspiros, La Casa de Selmira, Oficina del muelle, Puerto de las Almejas
+    turno 3: Astillero de los Suspiros, La Casa de Selmira, Oficina del muelle, Puerto de las Almejas
+    turno 4: Astillero de los Suspiros, La Casa de Selmira, Oficina del muelle
+  camino (primeras y últimas visitas):
+    turno  17 → La Casa de Selmira
+    turno  51 → El Almacén del Fondeadero
+    turno  67 → Astillero de los Suspiros
+    ...
+    turno 1381 → Astillero de los Suspiros
+    turno 1384 → El Almacén del Fondeadero
+    turno 1399 → Astillero de los Suspiros
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  ningún reloj ha disparado todavía en esta campaña
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 1.667  (sobre 10 secciones; máximo teórico = 4.5)
+    Valerius: Ci=3.5  (primera mención sección 2, última sección 9)
+    figura encapuchada: Ci=1.5  (primera mención sección 2, última sección 5)
+    Harlen: Ci=0.0  (primera mención sección 2, última sección 2)
+  V promedio = 0.051  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Valerius: Vi=0.076  (603 atributos propios detectados)
+    figura encapuchada: Vi=0.03  (268 atributos propios detectados)
+    Harlen: Vi=0.047  (191 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=0.143  (1/7)
+    npc.affinity     recall=0.176  (3/17)
+  recall global: 0.167  (24 deltas evaluables)
+  20 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  359 · Harlen · npc.affinity=cold
+    turno  361 · Harlen · npc.affinity=wary
+    turno  366 · Harlen · npc.affinity=hostile
+    turno  533 · figura encapuchada · npc.affinity=wary
+    turno  564 · figura encapuchada · npc.affinity=cold
+    turno  568 · figura encapuchada · npc.affinity=wary
+    turno  627 · figura encapuchada · npc.affinity=hostile
+    turno  631 · figura encapuchada · npc.affinity=wary
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.997  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.999  (min 0.962, max 1.000, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.024  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  160 turno(s) marcados en vivo. Reclasificación:
+    sujeto de una acción (repite el hallazgo crudo): 103 (64.4%)
+    solo mencionado/referenciado (posible falso positivo): 74 (46.2%)
+  muestra de 'actuando' (spot-check manual recomendado antes de citar en la tesis):
+    turno  890 · Valerius: «No hay huellas frescas ni rastros de lucha que indiquen una procedencia clara, ni objetos que sugieran que Valerius custodiaba algo en este punto exacto.»
+    turno  971 · Valerius: «Valerius no parpadea, manteniendo el contacto visual mientras sus dedos tamborilean rítmicamente sobre la madera barnizada.»
+    turno  972 · Valerius: «Valerius se tensa visiblemente, y el tamborileo de sus dedos se detiene en seco.»
+    turno  973 · Valerius: «Valerius retrocede bruscamente, chocando contra el borde de su escritorio con un golpe seco que hace saltar un tintero.»
+    turno  974 · Valerius: «Valerius se desploma en el asiento, con la mirada perdida y el pecho subiendo y bajando en espasmos cortos.»
+
+==========================================================================
+

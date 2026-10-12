@@ -1,0 +1,925 @@
+brazo,perturbacion,instrumento,tipo,familia,esperado,n,a,b,c,d,tasa_antes,tasa_despues,dif,mediana_antes,mediana_despues,mediana_dif,ic_dif_bajo,ic_dif_alto,delta_pareado,delta_cruzado,p,p_holm,observado,veredicto
+G1,P10,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.214,-0.0040000000000000036,-0.0049999999999999906,-0.0030000000000000027,-0.5666666666666667,-0.052177777777777774,3.8856216913321085e-14,4.8570271141651355e-12,baja,
+G1,P10,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P10,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,21,0,0,129,0.14,0.14,0.0,,,,-0.022129109817210182,0.022129109817210182,,,1.0,1.0,sin_cambio,responde
+G1,P10,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G1,P10,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P10,cr1_veredicto_contradice_narracion,bool,confirmatoria,se_dispara,150,0,0,150,0,0.0,1.0,1.0,,,,0.9646867412157134,1.0,,,1.401298464324817e-45,4.90454462513686e-44,se_dispara,responde
+G1,P10,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.127,-0.017,-0.022000000000000006,-0.012000000000000004,-0.48,-0.07604444444444444,8.30117458325366e-10,9.629362516574246e-08,baja,
+G1,P10,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,2.0,0.0,0.0,0.0,0.38,0.28555555555555556,1.3877787807814457e-17,1.915134717478395e-15,sube,
+G1,P10,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P10,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P10,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.12,-0.0208,7.62939453125e-06,0.0008087158203125,sin_cambio,
+G1,P10,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P10,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,63.730000000000004,2.4250000000000007,2.299999999999997,2.6099999999999994,1.0,0.27644444444444444,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P10,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,59.355000000000004,2.460000000000001,2.3200000000000003,2.6400000000000006,1.0,0.2733777777777778,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P10,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.025500000000000002,-0.0009999999999999992,-0.0010000000000000009,-0.0009999999999999974,-0.28,0.005155555555555556,0.0003985664867934535,0.037066683271791176,baja,
+G1,P10,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.684,-0.009000000000000008,-0.010000000000000009,-0.007999999999999952,-0.7533333333333333,-0.15151111111111112,9.659578188328624e-23,1.5745112446975656e-20,baja,
+G1,P10,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P10,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P11a_inyeccion,cl2_lugar_jaccard_similarity,num,control,sin_cambio,0,,,,,,,,nan,nan,nan,nan,nan,0.0,0.0,1.0,1.0,,no aplica
+G1,P11a_inyeccion,comenta_reglas,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G1,P11a_inyeccion,cr2_entidad_grafo_densidad,num,control,sin_cambio,0,,,,,,,,nan,nan,nan,nan,nan,0.0,0.0,1.0,1.0,,no aplica
+G1,P11a_inyeccion,cr2_nombres_no_reconocidos,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G1,P11a_inyeccion,grammaticality_lt,num,control,sin_cambio,0,,,,,,,,nan,nan,nan,nan,nan,0.0,0.0,1.0,1.0,,no aplica
+G1,P11a_inyeccion,meta_comentario,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G1,P11a_inyeccion,qn1_legibilidad_fh,num,control,sin_cambio,0,,,,,,,,nan,nan,nan,nan,nan,0.0,0.0,1.0,1.0,,no aplica
+G1,P11a_inyeccion,qn1_legibilidad_sz,num,control,sin_cambio,0,,,,,,,,nan,nan,nan,nan,nan,0.0,0.0,1.0,1.0,,no aplica
+G1,P11a_inyeccion,qn1_ngram_repeticion,num,control,sin_cambio,0,,,,,,,,nan,nan,nan,nan,nan,0.0,0.0,1.0,1.0,,no aplica
+G1,P11a_inyeccion,qn1_ttr,num,control,sin_cambio,0,,,,,,,,nan,nan,nan,nan,nan,0.0,0.0,1.0,1.0,,no aplica
+G1,P11b_eliminacion,cl2_lugar_jaccard_similarity,num,control,sin_cambio,150,,,,,,,,0.215,0.1805,-0.034,-0.035,-0.032,-1.0,-0.5624444444444444,1.401298464324817e-45,2.396220373995437e-43,baja,cambio inesperado
+G1,P11b_eliminacion,cl2_pc_hp_contradice_narracion,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G1,P11b_eliminacion,cl2_pnj_inactivo_actua,bool,descriptivo,,150,20,1,0,129,0.14,0.13333333333333333,-0.006666666666666682,,,,-0.03308173860642462,0.018317523345165933,,,1.0,1.0,sin_cambio,
+G1,P11b_eliminacion,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G1,P11b_eliminacion,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P11b_eliminacion,cr1_veredicto_contradice_narracion,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G1,P11b_eliminacion,cr2_entidad_grafo_densidad,num,control,sin_cambio,150,,,,,,,,0.14100000000000001,0.194,0.037,0.031000000000000007,0.0485,0.7,0.16333333333333333,7.274453323366971e-25,1.2293826116490182e-22,sube,cambio inesperado
+G1,P11b_eliminacion,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,0.0,-2.0,-2.0,-2.0,-1.0,-0.9599111111111112,1.401298464324817e-45,3.0828566215145976e-43,baja,
+G1,P11b_eliminacion,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,14,136,0,0,1.0,0.09333333333333334,-0.9066666666666666,,,,-0.9435881327456215,-0.8442258584955491,,,2.2958874039497803e-41,3.9030085867146265e-39,baja,cambio inesperado
+G1,P11b_eliminacion,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P11b_eliminacion,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.02,-0.016577777777777778,0.6900379657745361,1.0,sin_cambio,
+G1,P11b_eliminacion,grammaticality_lt,num,control,sin_cambio,50,,,,,,,,0.988,1.0,0.01100000000000001,0.010000000000000009,0.01200000000000001,1.0,0.976,1.7763568394002505e-15,2.984279490192421e-13,sube,cambio inesperado
+G1,P11b_eliminacion,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P11b_eliminacion,qn1_legibilidad_fh,num,control,sin_cambio,150,,,,,,,,61.760000000000005,60.870000000000005,-0.8850000000000016,-1.3652500000000016,-0.28500000000000014,-0.26,-0.06066666666666667,0.0017565589462647283,0.2863191082411507,sin_cambio,responde
+G1,P11b_eliminacion,qn1_legibilidad_sz,num,control,sin_cambio,150,,,,,,,,57.489999999999995,56.915,-0.754999999999999,-1.269999999999996,-0.18500000000000227,-0.21333333333333335,-0.047733333333333336,0.011121593847224862,1.0,sin_cambio,responde
+G1,P11b_eliminacion,qn1_ngram_repeticion,num,control,sin_cambio,150,,,,,,,,0.025,0.026,0.0010000000000000009,0.001,0.0010000000000000009,0.41333333333333333,-0.02231111111111111,1.9896001471994389e-07,3.3027362443510684e-05,sube,cambio inesperado
+G1,P11b_eliminacion,qn1_ttr,num,control,sin_cambio,150,,,,,,,,0.6884999999999999,0.68,-0.014000000000000012,-0.016000000000000014,-0.012500000000000011,-0.6266666666666667,-0.1817777777777778,2.080483693818512e-15,3.474407768676915e-13,baja,cambio inesperado
+G1,P11b_eliminacion,qn2_pj_accion_revisar,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G1,P11b_eliminacion,qn2_pj_piensa_narrado,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G1,P12,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.211,-0.0030000000000000027,-0.0030000000000000027,-0.0030000000000000027,-1.0,-0.06302222222222222,1.401298464324817e-45,3.0828566215145976e-43,baja,
+G1,P12,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P12,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,21,0,0,129,0.14,0.14,0.0,,,,-0.022129109817210182,0.022129109817210182,,,1.0,1.0,sin_cambio,responde
+G1,P12,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G1,P12,comenta_reglas,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G1,P12,cr1_veredicto_contradice_narracion,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G1,P12,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.14100000000000001,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P12,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P12,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P12,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P12,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.006666666666666667,-0.00022222222222222223,1.0,1.0,sin_cambio,
+G1,P12,grammaticality_lt,num,confirmatoria,baja,50,,,,,,,,0.988,0.9884999999999999,0.0,0.0,0.0,0.18,0.0504,0.00390625,0.0625,sin_cambio,no responde
+G1,P12,meta_comentario,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G1,P12,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,61.760000000000005,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P12,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,57.489999999999995,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P12,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.025,-0.000499999999999997,-0.0010000000000000009,0.0,-0.5,-0.05715555555555556,5.293955920339377e-23,8.787966827763366e-21,baja,
+G1,P12,qn1_ttr,num,confirmatoria,sube,150,,,,,,,,0.6884999999999999,0.6944999999999999,0.0050000000000000044,0.0050000000000000044,0.0050000000000000044,1.0,0.1044888888888889,1.401298464324817e-45,4.90454462513686e-44,sube,responde
+G1,P12,qn2_pj_accion_revisar,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G1,P12,qn2_pj_piensa_narrado,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G1,P1_accion,cl2_lugar_jaccard_similarity,num,descriptivo,,1,,,,,,,,0.217,0.216,-0.0010000000000000009,-0.0010000000000000009,-0.0010000000000000009,-1.0,-1.0,1.0,1.0,,
+G1,P1_accion,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,1,0,0,0,1,0.0,0.0,0.0,,,,-0.7934506882081973,0.7934506882081973,,,1.0,1.0,,no aplica
+G1,P1_accion,cl2_pnj_inactivo_actua,bool,control,sin_cambio,1,0,0,0,1,0.0,0.0,0.0,,,,-0.7934506882081973,0.7934506882081973,,,1.0,1.0,,no aplica
+G1,P1_accion,cl2_pnj_inactivo_refinado,bool,descriptivo,,1,0,0,0,1,0.0,0.0,0.0,,,,-0.7934506882081973,0.7934506882081973,,,1.0,1.0,,
+G1,P1_accion,comenta_reglas,bool,control,sin_cambio,1,0,0,0,1,0.0,0.0,0.0,,,,-0.7934506882081973,0.7934506882081973,,,1.0,1.0,,no aplica
+G1,P1_accion,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,1,0,0,0,1,0.0,0.0,0.0,,,,-0.7934506882081973,0.7934506882081973,,,1.0,1.0,,no aplica
+G1,P1_accion,cr2_entidad_grafo_densidad,num,descriptivo,,1,,,,,,,,0.036,0.028,-0.007999999999999997,-0.007999999999999997,-0.007999999999999997,-1.0,-1.0,1.0,1.0,,
+G1,P1_accion,cr2_n_nombres_no_reconocidos,num,descriptivo,,1,,,,,,,,3.0,4.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,
+G1,P1_accion,cr2_nombres_no_reconocidos,bool,control,sin_cambio,1,1,0,0,0,1.0,1.0,0.0,,,,-0.7934506882081973,0.7934506882081973,,,1.0,1.0,,no aplica
+G1,P1_accion,entity_coreference_rate,num,descriptivo,,1,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,,
+G1,P1_accion,grafo_lema_densidad,num,descriptivo,,1,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,,
+G1,P1_accion,meta_comentario,bool,control,sin_cambio,1,0,0,0,1,0.0,0.0,0.0,,,,-0.7934506882081973,0.7934506882081973,,,1.0,1.0,,no aplica
+G1,P1_accion,qn1_legibilidad_fh,num,descriptivo,,1,,,,,,,,64.81,66.63,1.8199999999999932,1.8199999999999932,1.8199999999999932,1.0,1.0,1.0,1.0,,
+G1,P1_accion,qn1_legibilidad_sz,num,descriptivo,,1,,,,,,,,60.47,62.31,1.8400000000000034,1.8400000000000034,1.8400000000000034,1.0,1.0,1.0,1.0,,
+G1,P1_accion,qn1_ngram_repeticion,num,descriptivo,,1,,,,,,,,0.026,0.025,-0.0009999999999999974,-0.0009999999999999974,-0.0009999999999999974,-1.0,-1.0,1.0,1.0,,
+G1,P1_accion,qn1_ttr,num,descriptivo,,1,,,,,,,,0.671,0.669,-0.0020000000000000018,-0.0020000000000000018,-0.0020000000000000018,-1.0,-1.0,1.0,1.0,,
+G1,P1_accion,qn2_pj_accion_revisar,bool,confirmatoria,se_dispara,1,0,0,0,1,0.0,0.0,0.0,,,,-0.7934506882081973,0.7934506882081973,,,1.0,1.0,,no aplica
+G1,P1_accion,qn2_pj_piensa_narrado,bool,control,sin_cambio,1,0,0,0,1,0.0,0.0,0.0,,,,-0.7934506882081973,0.7934506882081973,,,1.0,1.0,,no aplica
+G1,P1_accion_sin_tirada,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.2115,-0.0040000000000000036,-0.0050000000000000044,-0.0030000000000000027,-0.6266666666666667,-0.06537777777777778,4.154432818198808e-16,5.483851320022427e-14,baja,
+G1,P1_accion_sin_tirada,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_accion_sin_tirada,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,21,0,0,129,0.14,0.14,0.0,,,,-0.022129109817210182,0.022129109817210182,,,1.0,1.0,sin_cambio,responde
+G1,P1_accion_sin_tirada,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G1,P1_accion_sin_tirada,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_accion_sin_tirada,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_accion_sin_tirada,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.1275,-0.019000000000000003,-0.023999999999999994,-0.012000000000000004,-0.5,-0.08071111111111111,1.2069281353323776e-10,1.4121059183388817e-08,baja,
+G1,P1_accion_sin_tirada,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,3.0,0.0,0.0,1.0,0.4866666666666667,0.3823111111111111,2.117582368135751e-22,3.4304834363799164e-20,sube,
+G1,P1_accion_sin_tirada,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P1_accion_sin_tirada,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P1_accion_sin_tirada,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.12,-0.040577777777777775,7.62939453125e-06,0.0008087158203125,sin_cambio,
+G1,P1_accion_sin_tirada,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_accion_sin_tirada,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,64.24,2.5900000000000034,2.3899999999999935,2.769999999999996,1.0,0.29044444444444445,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P1_accion_sin_tirada,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,59.86,2.629999999999999,2.4399999999999977,2.789999999999999,1.0,0.29035555555555553,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P1_accion_sin_tirada,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.026,-0.0009999999999999983,-0.0010000000000000009,0.0,-0.14666666666666667,0.039377777777777775,0.07765321401762205,1.0,sin_cambio,
+G1,P1_accion_sin_tirada,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.6815,-0.007000000000000006,-0.008000000000000007,-0.006999999999999895,-0.9133333333333333,-0.15266666666666667,6.201799122350081e-36,1.1101220429006645e-33,baja,
+G1,P1_accion_sin_tirada,qn2_pj_accion_revisar,bool,confirmatoria,se_dispara,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,no responde
+G1,P1_accion_sin_tirada,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_decision,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.21,-0.0050000000000000044,-0.005999999999999978,-0.0030000000000000027,-0.6733333333333333,-0.07551111111111111,6.078995135268125e-18,8.449803238022693e-16,baja,
+G1,P1_decision,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_decision,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,21,0,0,129,0.14,0.14,0.0,,,,-0.022129109817210182,0.022129109817210182,,,1.0,1.0,sin_cambio,responde
+G1,P1_decision,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G1,P1_decision,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_decision,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_decision,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.156,-0.006999999999999999,-0.012000000000000004,0.0,-0.12666666666666668,-0.006266666666666667,0.12652294497263628,1.0,sin_cambio,
+G1,P1_decision,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,3.0,0.0,0.0,1.0,0.46,0.35546666666666665,3.3881317890172014e-21,5.319366908757006e-19,sube,
+G1,P1_decision,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P1_decision,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P1_decision,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.1,0.0054666666666666665,0.004077315330505371,0.37103569507598877,sin_cambio,
+G1,P1_decision,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_decision,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,63.91,2.219999999999999,2.1099999999999994,2.3999999999999986,1.0,0.25453333333333333,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P1_decision,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,59.51,2.2550000000000026,2.1250000000000036,2.4000000000000057,1.0,0.2525777777777778,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P1_decision,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.026,-0.0010000000000000009,-0.0019999999999999983,-0.0010000000000000009,-0.5466666666666666,-0.01608888888888889,7.048816900472416e-13,8.599556618576348e-11,baja,
+G1,P1_decision,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.684,-0.006000000000000005,-0.007000000000000006,-0.0050000000000000044,-0.72,-0.11213333333333333,1.66650297114807e-21,2.6497397241254313e-19,baja,
+G1,P1_decision,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_decision,qn2_pj_piensa_narrado,bool,confirmatoria,se_dispara,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,no responde
+G1,P1_emocion,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.2095,-0.005999999999999978,-0.006000000000000005,-0.0040000000000000036,-0.74,-0.07946666666666667,6.840265458422732e-24,1.1560048624734417e-21,baja,
+G1,P1_emocion,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_emocion,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,21,0,0,129,0.14,0.14,0.0,,,,-0.022129109817210182,0.022129109817210182,,,1.0,1.0,sin_cambio,responde
+G1,P1_emocion,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G1,P1_emocion,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_emocion,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_emocion,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.139,-0.018000000000000002,-0.023999999999999994,-0.012000000000000004,-0.44,-0.06893333333333333,2.1773240965610595e-08,2.4603762291139973e-06,baja,
+G1,P1_emocion,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,2.0,0.0,0.0,0.0,0.24,0.1787111111111111,2.9103830456733704e-11,3.434251993894577e-09,sube,
+G1,P1_emocion,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P1_emocion,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P1_emocion,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.12666666666666668,-0.017644444444444445,3.814697265625e-06,0.0004119873046875,sin_cambio,
+G1,P1_emocion,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_emocion,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,63.43,1.9649999999999999,1.8399999999999999,2.1000000000000014,1.0,0.22284444444444446,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P1_emocion,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,59.2,1.9649999999999999,1.8100000000000023,2.1000000000000014,1.0,0.21968888888888888,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P1_emocion,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.025,-0.0010000000000000009,-0.0010000000000000009,-0.0010000000000000009,-0.68,-0.029822222222222222,9.05112390316917e-21,1.4119753288943903e-18,baja,
+G1,P1_emocion,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.6895,-0.0005000000000000004,-0.0010000000000000009,0.0,-0.1,-0.0008888888888888889,0.22810347806601292,1.0,sin_cambio,
+G1,P1_emocion,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_emocion,qn2_pj_piensa_narrado,bool,confirmatoria,se_dispara,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,no responde
+G1,P1_habla,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.2105,-0.0040000000000000036,-0.0050000000000000044,-0.003999999999999976,-0.6866666666666666,-0.07026666666666667,2.80897156840249e-20,4.1853676369197105e-18,baja,
+G1,P1_habla,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_habla,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,21,0,0,129,0.14,0.14,0.0,,,,-0.022129109817210182,0.022129109817210182,,,1.0,1.0,sin_cambio,responde
+G1,P1_habla,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G1,P1_habla,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_habla,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_habla,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.14100000000000001,-0.012000000000000004,-0.018500000000000003,-0.007999999999999997,-0.34,-0.05631111111111111,1.816795622704368e-05,0.0018349635789314117,baja,
+G1,P1_habla,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,3.0,0.0,0.0,0.0,0.38,0.30715555555555557,1.3877787807814457e-17,1.915134717478395e-15,sube,
+G1,P1_habla,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P1_habla,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P1_habla,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.12,-0.025866666666666666,7.62939453125e-06,0.0008087158203125,sin_cambio,
+G1,P1_habla,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_habla,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,63.82,2.099999999999998,1.9150000000000027,2.2950000000000053,0.9666666666666667,0.2300888888888889,3.132182327458831e-41,5.825859129073426e-39,sube,
+G1,P1_habla,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,59.394999999999996,2.1099999999999994,1.9199999999999982,2.3399999999999963,0.96,0.22657777777777777,7.884069497892145e-40,1.4506687876121547e-37,sube,
+G1,P1_habla,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.025,-0.0010000000000000009,-0.0010000000000000009,-0.001,-0.5866666666666667,-0.013422222222222223,2.8607361972411896e-15,3.6903496944411347e-13,baja,
+G1,P1_habla,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.686,-0.0030000000000000027,-0.0030000000000000027,-0.0020000000000000018,-0.28,-0.049911111111111114,0.0006398230663331769,0.058863722102652276,sin_cambio,
+G1,P1_habla,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_habla,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_pensamiento,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.214,-0.0040000000000000036,-0.0050000000000000044,-0.0030000000000000027,-0.6266666666666667,-0.05795555555555556,6.845806302313602e-17,9.310296571146498e-15,baja,
+G1,P1_pensamiento,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_pensamiento,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,21,0,0,129,0.14,0.14,0.0,,,,-0.022129109817210182,0.022129109817210182,,,1.0,1.0,sin_cambio,responde
+G1,P1_pensamiento,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G1,P1_pensamiento,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_pensamiento,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_pensamiento,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.143,0.0,-0.008,0.011499999999999982,-0.06,-0.0088,0.4975641415966092,1.0,sin_cambio,
+G1,P1_pensamiento,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,2.0,0.0,0.0,0.0,0.4066666666666667,0.2946666666666667,8.673617379884035e-19,1.240327285323417e-16,sube,
+G1,P1_pensamiento,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P1_pensamiento,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P1_pensamiento,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.13333333333333333,-0.03133333333333333,1.9073486328125e-06,0.000209808349609375,sin_cambio,
+G1,P1_pensamiento,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_pensamiento,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,63.989999999999995,2.825000000000003,2.5750000000000064,2.9800000000000004,0.9866666666666667,0.2918222222222222,2.1159606811304738e-43,4.0838041145818144e-41,sube,
+G1,P1_pensamiento,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,59.644999999999996,2.8699999999999974,2.6200000000000045,3.030000000000001,0.9866666666666667,0.2897777777777778,2.1159606811304738e-43,4.0838041145818144e-41,sube,
+G1,P1_pensamiento,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.025,-0.0010000000000000009,-0.001999999999999995,-0.0010000000000000009,-0.5666666666666667,-0.021555555555555557,6.447032586619018e-14,7.994320407407583e-12,baja,
+G1,P1_pensamiento,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.684,-0.0050000000000000044,-0.006000000000000005,-0.0040000000000000036,-0.7333333333333333,-0.10955555555555556,8.894877270372545e-23,1.4587598723410975e-20,baja,
+G1,P1_pensamiento,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P1_pensamiento,qn2_pj_piensa_narrado,bool,confirmatoria,se_dispara,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,no responde
+G1,P2_accion,cl2_lugar_jaccard_similarity,num,descriptivo,,1,,,,,,,,0.217,0.215,-0.0020000000000000018,-0.0020000000000000018,-0.0020000000000000018,-1.0,-1.0,1.0,1.0,,
+G1,P2_accion,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,1,0,0,0,1,0.0,0.0,0.0,,,,-0.7934506882081973,0.7934506882081973,,,1.0,1.0,,no aplica
+G1,P2_accion,cl2_pnj_inactivo_actua,bool,control,sin_cambio,1,0,0,0,1,0.0,0.0,0.0,,,,-0.7934506882081973,0.7934506882081973,,,1.0,1.0,,no aplica
+G1,P2_accion,cl2_pnj_inactivo_refinado,bool,descriptivo,,1,0,0,0,1,0.0,0.0,0.0,,,,-0.7934506882081973,0.7934506882081973,,,1.0,1.0,,
+G1,P2_accion,comenta_reglas,bool,control,sin_cambio,1,0,0,0,1,0.0,0.0,0.0,,,,-0.7934506882081973,0.7934506882081973,,,1.0,1.0,,no aplica
+G1,P2_accion,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,1,0,0,0,1,0.0,0.0,0.0,,,,-0.7934506882081973,0.7934506882081973,,,1.0,1.0,,no aplica
+G1,P2_accion,cr2_entidad_grafo_densidad,num,descriptivo,,1,,,,,,,,0.036,0.028,-0.007999999999999997,-0.007999999999999997,-0.007999999999999997,-1.0,-1.0,1.0,1.0,,
+G1,P2_accion,cr2_n_nombres_no_reconocidos,num,descriptivo,,1,,,,,,,,3.0,3.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,,
+G1,P2_accion,cr2_nombres_no_reconocidos,bool,control,sin_cambio,1,1,0,0,0,1.0,1.0,0.0,,,,-0.7934506882081973,0.7934506882081973,,,1.0,1.0,,no aplica
+G1,P2_accion,entity_coreference_rate,num,descriptivo,,1,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,,
+G1,P2_accion,grafo_lema_densidad,num,descriptivo,,1,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,,
+G1,P2_accion,meta_comentario,bool,control,sin_cambio,1,0,0,0,1,0.0,0.0,0.0,,,,-0.7934506882081973,0.7934506882081973,,,1.0,1.0,,no aplica
+G1,P2_accion,qn1_legibilidad_fh,num,descriptivo,,1,,,,,,,,64.81,66.53,1.7199999999999989,1.7199999999999989,1.7199999999999989,1.0,1.0,1.0,1.0,,
+G1,P2_accion,qn1_legibilidad_sz,num,descriptivo,,1,,,,,,,,60.47,62.21,1.740000000000002,1.740000000000002,1.740000000000002,1.0,1.0,1.0,1.0,,
+G1,P2_accion,qn1_ngram_repeticion,num,descriptivo,,1,,,,,,,,0.026,0.025,-0.0009999999999999974,-0.0009999999999999974,-0.0009999999999999974,-1.0,-1.0,1.0,1.0,,
+G1,P2_accion,qn1_ttr,num,descriptivo,,1,,,,,,,,0.671,0.671,0.0,0.0,0.0,0.0,0.0,1.0,1.0,,
+G1,P2_accion,qn2_pj_accion_revisar,bool,confirmatoria,se_dispara,1,0,0,1,0,0.0,1.0,1.0,,,,-0.12210872433829856,1.0,,,1.0,1.0,,no aplica
+G1,P2_accion,qn2_pj_piensa_narrado,bool,control,sin_cambio,1,0,0,0,1,0.0,0.0,0.0,,,,-0.7934506882081973,0.7934506882081973,,,1.0,1.0,,no aplica
+G1,P2_accion_sin_tirada,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.2105,-0.0050000000000000044,-0.006000000000000005,-0.0049999999999999906,-0.64,-0.07457777777777778,8.277090033172633e-17,1.1091300644451327e-14,baja,
+G1,P2_accion_sin_tirada,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_accion_sin_tirada,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,21,0,0,129,0.14,0.14,0.0,,,,-0.022129109817210182,0.022129109817210182,,,1.0,1.0,sin_cambio,responde
+G1,P2_accion_sin_tirada,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G1,P2_accion_sin_tirada,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_accion_sin_tirada,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_accion_sin_tirada,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.139,-0.012000000000000004,-0.01900000000000001,-0.007999999999999997,-0.36666666666666664,-0.0512,3.512457922191834e-06,0.00038285791351890994,baja,
+G1,P2_accion_sin_tirada,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P2_accion_sin_tirada,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P2_accion_sin_tirada,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,-0.09999999999999998,0.0,-0.47651006711409394,-0.486869960812576,1.5670109524204556e-20,2.4288669762517062e-18,baja,
+G1,P2_accion_sin_tirada,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.11333333333333333,-0.026088888888888887,7.62939453125e-05,0.0075531005859375,sin_cambio,
+G1,P2_accion_sin_tirada,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_accion_sin_tirada,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,63.635,2.279999999999994,2.0849999999999973,2.4949999999999974,1.0,0.2628888888888889,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P2_accion_sin_tirada,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,59.235,2.3050000000000033,2.1099999999999994,2.504999999999999,1.0,0.2581777777777778,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P2_accion_sin_tirada,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.025,-0.0010000000000000009,-0.0010000000000000009,-0.0009999999999999992,-0.5133333333333333,-0.006355555555555555,2.4345999413758453e-11,2.897173930237256e-09,baja,
+G1,P2_accion_sin_tirada,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.688,-0.0040000000000000036,-0.006000000000000005,-0.0030000000000000027,-0.29333333333333333,-0.05226666666666667,0.0003734381914831322,0.035103189999414426,baja,
+G1,P2_accion_sin_tirada,qn2_pj_accion_revisar,bool,confirmatoria,se_dispara,150,0,0,150,0,0.0,1.0,1.0,,,,0.9646867412157134,1.0,,,1.401298464324817e-45,4.90454462513686e-44,se_dispara,responde
+G1,P2_accion_sin_tirada,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_decision,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.209,-0.006000000000000005,-0.007000000000000006,-0.005499999999999991,-0.6933333333333334,-0.09546666666666667,3.2795876037390596e-19,4.722606149384246e-17,baja,
+G1,P2_decision,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_decision,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,21,0,0,129,0.14,0.14,0.0,,,,-0.022129109817210182,0.022129109817210182,,,1.0,1.0,sin_cambio,responde
+G1,P2_decision,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G1,P2_decision,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_decision,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_decision,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.1485,0.0030000000000000027,-0.006000000000000002,0.022000000000000006,0.06666666666666667,0.034133333333333335,0.45020799234923214,1.0,sin_cambio,
+G1,P2_decision,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P2_decision,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P2_decision,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,-0.09090909090909094,0.0,-0.47651006711409394,-0.4866897887482546,1.5670109524204556e-20,2.4288669762517062e-18,baja,
+G1,P2_decision,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.09333333333333334,0.02208888888888889,0.006610751152038574,0.5949676036834717,sin_cambio,
+G1,P2_decision,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_decision,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,63.32,1.985000000000003,1.8499999999999943,2.1900000000000013,1.0,0.23173333333333335,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P2_decision,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,58.96,2.0049999999999955,1.8800000000000026,2.235000000000003,1.0,0.22875555555555555,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P2_decision,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.025500000000000002,-0.0010000000000000009,-0.001999999999999995,-0.0010000000000000009,-0.4533333333333333,-0.006533333333333334,1.274697369197956e-08,1.4659019745776496e-06,baja,
+G1,P2_decision,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.6835,-0.0050000000000000044,-0.006000000000000005,-0.0030000000000000027,-0.64,-0.10853333333333333,8.277090033172633e-17,1.1091300644451327e-14,baja,
+G1,P2_decision,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_decision,qn2_pj_piensa_narrado,bool,confirmatoria,se_dispara,150,0,0,150,0,0.0,1.0,1.0,,,,0.9646867412157134,1.0,,,1.401298464324817e-45,4.90454462513686e-44,se_dispara,responde
+G1,P2_emocion,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.2085,-0.0069999999999999785,-0.007000000000000006,-0.006000000000000005,-0.8866666666666667,-0.11022222222222222,3.0017539079550897e-33,5.34312195616006e-31,baja,
+G1,P2_emocion,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_emocion,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,21,0,0,129,0.14,0.14,0.0,,,,-0.022129109817210182,0.022129109817210182,,,1.0,1.0,sin_cambio,responde
+G1,P2_emocion,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G1,P2_emocion,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_emocion,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_emocion,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.143,0.0,-0.007999999999999998,0.011499999999999982,-0.04666666666666667,-0.0068,0.6109736899560235,1.0,sin_cambio,
+G1,P2_emocion,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P2_emocion,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P2_emocion,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,-0.09999999999999998,0.0,-0.47651006711409394,-0.4869150038286564,1.5670109524204556e-20,2.4288669762517062e-18,baja,
+G1,P2_emocion,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.12666666666666668,-0.011244444444444444,2.09808349609375e-05,0.00209808349609375,sin_cambio,
+G1,P2_emocion,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_emocion,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,63.19,1.870000000000001,1.6750000000000043,2.039999999999999,1.0,0.21457777777777778,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P2_emocion,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,58.97,1.8500000000000014,1.6850000000000023,2.049999999999997,1.0,0.21044444444444443,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P2_emocion,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.0245,-0.0010000000000000009,-0.0014999999999999979,-0.0010000000000000009,-0.8666666666666667,-0.0544,8.307438982451885e-37,1.4953390168413393e-34,baja,
+G1,P2_emocion,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.69,0.0010000000000000009,0.0010000000000000009,0.0020000000000000018,0.2866666666666667,0.01697777777777778,0.00026979836784592946,0.025630844945363298,sube,
+G1,P2_emocion,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_emocion,qn2_pj_piensa_narrado,bool,confirmatoria,se_dispara,150,0,0,150,0,0.0,1.0,1.0,,,,0.9646867412157134,1.0,,,1.401298464324817e-45,4.90454462513686e-44,se_dispara,responde
+G1,P2_habla,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.21,-0.0059999999999999915,-0.006000000000000005,-0.0050000000000000044,-0.8266666666666667,-0.08804444444444444,7.428512242076318e-29,1.2999896423633556e-26,baja,
+G1,P2_habla,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_habla,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,21,0,0,129,0.14,0.14,0.0,,,,-0.022129109817210182,0.022129109817210182,,,1.0,1.0,sin_cambio,responde
+G1,P2_habla,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G1,P2_habla,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_habla,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_habla,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.145,0.0,-0.006000000000000002,0.01899999999999999,0.04,0.008177777777777779,0.6705341002455002,1.0,sin_cambio,
+G1,P2_habla,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P2_habla,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P2_habla,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,-0.09999999999999998,0.0,-0.47651006711409394,-0.4869150038286564,1.5670109524204556e-20,2.4288669762517062e-18,baja,
+G1,P2_habla,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.11333333333333333,-0.013555555555555555,0.00022125244140625,0.021240234375,sin_cambio,
+G1,P2_habla,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_habla,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,63.644999999999996,1.9299999999999997,1.8449999999999989,2.114999999999995,1.0,0.22977777777777778,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P2_habla,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,59.215,1.9299999999999997,1.8500000000000014,2.129999999999999,1.0,0.22493333333333335,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P2_habla,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.026,-0.0010000000000000009,-0.0010000000000000009,-0.0009999999999999992,-0.4266666666666667,0.021466666666666665,7.570125632548689e-08,8.478540708454532e-06,baja,
+G1,P2_habla,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.686,-0.0040000000000000036,-0.0050000000000000044,-0.0030000000000000027,-0.7266666666666667,-0.08031111111111111,3.954450169729124e-22,6.36666477326389e-20,baja,
+G1,P2_habla,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_habla,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_pensamiento,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.2105,-0.006000000000000005,-0.007000000000000006,-0.005999999999999978,-0.8333333333333334,-0.10346666666666667,3.98708379363283e-29,7.017267476793781e-27,baja,
+G1,P2_pensamiento,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_pensamiento,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,21,0,0,129,0.14,0.14,0.0,,,,-0.022129109817210182,0.022129109817210182,,,1.0,1.0,sin_cambio,responde
+G1,P2_pensamiento,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G1,P2_pensamiento,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_pensamiento,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_pensamiento,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.143,0.0,-0.007999999999999998,0.011499999999999982,-0.04666666666666667,-0.0068,0.6109736899560235,1.0,sin_cambio,
+G1,P2_pensamiento,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P2_pensamiento,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P2_pensamiento,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,-0.09999999999999998,0.0,-0.47651006711409394,-0.4869150038286564,1.5670109524204556e-20,2.4288669762517062e-18,baja,
+G1,P2_pensamiento,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.12,-0.025777777777777778,0.00012111663818359375,0.011869430541992188,sin_cambio,
+G1,P2_pensamiento,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_pensamiento,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,63.375,2.0749999999999993,1.6950000000000003,2.4100000000000037,0.9733333333333334,0.22942222222222222,1.5871106406942878e-41,2.999639110912204e-39,sube,
+G1,P2_pensamiento,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,58.97,2.094999999999999,1.6499999999999986,2.3800000000000026,0.96,0.22844444444444445,6.180847266443903e-41,1.1434567442921221e-38,sube,
+G1,P2_pensamiento,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.025,-0.0010000000000000009,-0.0019999999999999983,-0.0010000000000000009,-0.6866666666666666,-0.042444444444444444,1.3381936476810788e-19,1.9671446620911858e-17,baja,
+G1,P2_pensamiento,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.6855,-0.006000000000000005,-0.006000000000000005,-0.004500000000000004,-0.72,-0.10284444444444445,1.66650297114807e-21,2.6497397241254313e-19,baja,
+G1,P2_pensamiento,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P2_pensamiento,qn2_pj_piensa_narrado,bool,confirmatoria,se_dispara,150,0,0,150,0,0.0,1.0,1.0,,,,0.9646867412157134,1.0,,,1.401298464324817e-45,4.90454462513686e-44,se_dispara,responde
+G1,P3_dead_actua,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.2105,-0.005499999999999991,-0.0069999999999999785,-0.00449999999999999,-0.76,-0.09208888888888889,2.2150162534006024e-23,3.721227305713012e-21,baja,
+G1,P3_dead_actua,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_dead_actua,cl2_pnj_inactivo_actua,bool,confirmatoria,se_dispara,150,21,0,129,0,0.14,1.0,0.86,,,,0.7907866686861684,0.9065735121147241,,,2.938735877055719e-39,7.052966104933725e-38,se_dispara,responde
+G1,P3_dead_actua,cl2_pnj_inactivo_refinado,bool,confirmatoria,se_dispara,150,1,0,3,146,0.006666666666666667,0.02666666666666667,0.02,,,,-0.010593557559588195,0.05893233749075673,,,0.25,1.0,sin_cambio,no responde
+G1,P3_dead_actua,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_dead_actua,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_dead_actua,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.143,-0.014999999999999993,-0.022000000000000006,-0.009500000000000003,-0.30666666666666664,-0.015066666666666667,0.00012562947340398633,0.012186058920186673,baja,
+G1,P3_dead_actua,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P3_dead_actua,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P3_dead_actua,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,-0.0625,0.0,-0.4228187919463087,-0.43142200801765684,3.577867169202165e-18,5.080571380267074e-16,baja,
+G1,P3_dead_actua,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.08,0.0071111111111111115,0.022655844688415527,1.0,sin_cambio,
+G1,P3_dead_actua,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_dead_actua,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,63.07,1.995000000000001,1.7999999999999972,2.1949999999999967,1.0,0.2132,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P3_dead_actua,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,58.72,2.004999999999999,1.7899999999999991,2.2349999999999994,1.0,0.21173333333333333,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P3_dead_actua,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.024,-0.001999999999999995,-0.0019999999999999983,-0.0010000000000000009,-0.6866666666666666,-0.04346666666666667,2.78365413272648e-19,4.0362984924533963e-17,baja,
+G1,P3_dead_actua,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.684,-0.0050000000000000044,-0.006000000000000005,-0.003500000000000003,-0.4266666666666667,-0.08568888888888888,9.454907617706649e-08,1.049494745565438e-05,baja,
+G1,P3_dead_actua,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_dead_actua,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_dead_habla,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.209,-0.006000000000000005,-0.007000000000000006,-0.0050000000000000044,-0.8266666666666667,-0.09662222222222222,7.428512242076318e-29,1.2999896423633556e-26,baja,
+G1,P3_dead_habla,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_dead_habla,cl2_pnj_inactivo_actua,bool,confirmatoria,se_dispara,150,21,0,129,0,0.14,1.0,0.86,,,,0.7907866686861684,0.9065735121147241,,,2.938735877055719e-39,7.052966104933725e-38,se_dispara,responde
+G1,P3_dead_habla,cl2_pnj_inactivo_refinado,bool,confirmatoria,se_dispara,150,1,0,1,148,0.006666666666666667,0.013333333333333334,0.006666666666666667,,,,-0.021592294064768935,0.03914268686205528,,,1.0,1.0,sin_cambio,no responde
+G1,P3_dead_habla,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_dead_habla,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_dead_habla,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.119,-0.022000000000000006,-0.024000000000000014,-0.016,-0.6,-0.0872,5.408176825074869e-15,6.922466336095833e-13,baja,
+G1,P3_dead_habla,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P3_dead_habla,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P3_dead_habla,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,-0.08333333333333337,0.0,-0.4563758389261745,-0.4591234629070763,1.2027867851011065e-19,1.7801244419496376e-17,baja,
+G1,P3_dead_habla,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.06666666666666667,0.017244444444444444,0.07551869750022888,1.0,sin_cambio,
+G1,P3_dead_habla,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_dead_habla,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,62.894999999999996,1.4499999999999993,1.3200000000000003,1.5949999999999989,0.9733333333333334,0.16426666666666667,1.5871106406942878e-41,2.999639110912204e-39,sube,
+G1,P3_dead_habla,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,58.485,1.4199999999999982,1.2800000000000011,1.5850000000000009,0.96,0.15862222222222222,7.884069497892145e-40,1.4506687876121547e-37,sube,
+G1,P3_dead_habla,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.0245,-0.0010000000000000009,-0.0010000000000000009,-0.0010000000000000009,-0.7533333333333333,-0.043333333333333335,2.25115112982225e-25,3.849468431996047e-23,baja,
+G1,P3_dead_habla,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.694,0.0040000000000000036,0.0040000000000000036,0.0050000000000000044,0.6066666666666667,0.08337777777777777,9.117043873611709e-15,1.1487475280750753e-12,sube,
+G1,P3_dead_habla,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_dead_habla,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_missing_actua,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.208,-0.006000000000000005,-0.007000000000000006,-0.0050000000000000044,-0.74,-0.09453333333333333,7.04568339902408e-22,1.1273093438438529e-19,baja,
+G1,P3_missing_actua,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_missing_actua,cl2_pnj_inactivo_actua,bool,confirmatoria,se_dispara,150,21,0,129,0,0.14,1.0,0.86,,,,0.7907866686861684,0.9065735121147241,,,2.938735877055719e-39,7.052966104933725e-38,se_dispara,responde
+G1,P3_missing_actua,cl2_pnj_inactivo_refinado,bool,confirmatoria,se_dispara,150,1,0,3,146,0.006666666666666667,0.02666666666666667,0.02,,,,-0.010593557559588195,0.05893233749075673,,,0.25,1.0,sin_cambio,no responde
+G1,P3_missing_actua,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_missing_actua,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_missing_actua,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.143,-0.01750000000000001,-0.023999999999999994,-0.012000000000000004,-0.44666666666666666,-0.041155555555555556,1.4687075361732716e-08,1.6743265912375296e-06,baja,
+G1,P3_missing_actua,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P3_missing_actua,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P3_missing_actua,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,-0.05882352941176472,0.0,-0.4228187919463087,-0.4190351785955588,2.168404344971009e-19,3.165870343657673e-17,baja,
+G1,P3_missing_actua,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.09333333333333334,0.008133333333333333,0.009355306625366211,0.8232669830322266,sin_cambio,
+G1,P3_missing_actua,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_missing_actua,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,63.525000000000006,2.039999999999999,1.8399999999999999,2.1800000000000033,0.9866666666666667,0.22213333333333332,2.1159606811304738e-43,4.0838041145818144e-41,sube,
+G1,P3_missing_actua,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,59.225,2.044999999999998,1.8800000000000026,2.1899999999999977,0.9866666666666667,0.22155555555555556,2.1159606811304738e-43,4.0838041145818144e-41,sube,
+G1,P3_missing_actua,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.025,-0.0010000000000000009,-0.0019999999999999983,-0.0010000000000000009,-0.56,-0.03284444444444445,6.542224944064406e-13,8.046936681199218e-11,baja,
+G1,P3_missing_actua,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.685,-0.0050000000000000044,-0.006000000000000005,-0.0030000000000000027,-0.5466666666666666,-0.08866666666666667,5.42323308582825e-12,6.5078797029939e-10,baja,
+G1,P3_missing_actua,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_missing_actua,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_missing_habla,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.209,-0.0069999999999999785,-0.007000000000000006,-0.006000000000000005,-0.86,-0.10035555555555556,3.292563254179238e-30,5.827836959897251e-28,baja,
+G1,P3_missing_habla,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_missing_habla,cl2_pnj_inactivo_actua,bool,confirmatoria,se_dispara,150,21,0,129,0,0.14,1.0,0.86,,,,0.7907866686861684,0.9065735121147241,,,2.938735877055719e-39,7.052966104933725e-38,se_dispara,responde
+G1,P3_missing_habla,cl2_pnj_inactivo_refinado,bool,confirmatoria,se_dispara,150,1,0,2,147,0.006666666666666667,0.02,0.013333333333333332,,,,-0.015961721030280818,0.04932590113019154,,,0.5,1.0,sin_cambio,no responde
+G1,P3_missing_habla,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_missing_habla,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_missing_habla,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.109,-0.024,-0.033,-0.022000000000000006,-0.7533333333333333,-0.11528888888888889,2.0789800422873237e-24,3.5342660718884505e-22,baja,
+G1,P3_missing_habla,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P3_missing_habla,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P3_missing_habla,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,-0.3959731543624161,-0.41259402729606776,4.373671563806525e-16,5.729509748586548e-14,baja,
+G1,P3_missing_habla,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.08,0.019688888888888888,0.022655844688415527,1.0,sin_cambio,
+G1,P3_missing_habla,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_missing_habla,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,63.0,1.4000000000000021,1.245000000000001,1.5049999999999955,0.9733333333333334,0.15866666666666668,1.5871106406942878e-41,2.999639110912204e-39,sube,
+G1,P3_missing_habla,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,58.705,1.384999999999998,1.2099999999999973,1.495000000000001,0.96,0.1548,7.884069497892145e-40,1.4506687876121547e-37,sube,
+G1,P3_missing_habla,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.025,-0.0010000000000000009,-0.0010000000000000009,-0.0010000000000000009,-0.7133333333333334,-0.03573333333333333,7.33836423851677e-23,1.210830099355267e-20,baja,
+G1,P3_missing_habla,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.694,0.0040000000000000036,0.0040000000000000036,0.0050000000000000044,0.6133333333333333,0.08573333333333333,5.579627550454332e-15,7.086126989077001e-13,sube,
+G1,P3_missing_habla,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P3_missing_habla,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P4_2p,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.209,-0.0040000000000000036,-0.0040000000000000036,-0.0030000000000000027,-0.5533333333333333,-0.05982222222222222,3.4551484174608224e-12,4.180729585127595e-10,baja,
+G1,P4_2p,cl2_pc_hp_contradice_narracion,bool,confirmatoria,se_dispara,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,no responde
+G1,P4_2p,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,21,0,0,129,0.14,0.14,0.0,,,,-0.022129109817210182,0.022129109817210182,,,1.0,1.0,sin_cambio,responde
+G1,P4_2p,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G1,P4_2p,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P4_2p,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P4_2p,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.119,-0.024000000000000007,-0.033,-0.022000000000000006,-0.74,-0.11715555555555555,4.971725343726952e-23,8.30278132402401e-21,baja,
+G1,P4_2p,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,3.0,1.0,0.0,1.0,0.5533333333333333,0.43844444444444447,2.0679515313825692e-25,3.556876633978019e-23,sube,
+G1,P4_2p,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P4_2p,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P4_2p,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.12666666666666668,-0.02031111111111111,3.814697265625e-06,0.0004119873046875,sin_cambio,
+G1,P4_2p,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P4_2p,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,63.925,2.3000000000000007,2.0349999999999966,2.575000000000003,1.0,0.2664888888888889,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P4_2p,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,59.565,2.304999999999996,2.030000000000001,2.594999999999999,1.0,0.2616,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P4_2p,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.028,0.0,-0.0009999999999999974,0.0029999999999999957,-0.04,0.0804,0.6705341002455002,1.0,sin_cambio,
+G1,P4_2p,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.688,-0.0010000000000000009,-0.0030000000000000027,0.0,-0.2,-0.029377777777777777,0.013957334124842395,1.0,sin_cambio,
+G1,P4_2p,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P4_2p,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P4_3p,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.2105,-0.0050000000000000044,-0.0050000000000000044,-0.0040000000000000036,-0.6533333333333333,-0.06657777777777778,4.17815278593849e-18,5.891195428173271e-16,baja,
+G1,P4_3p,cl2_pc_hp_contradice_narracion,bool,confirmatoria,se_dispara,150,0,0,150,0,0.0,1.0,1.0,,,,0.9646867412157134,1.0,,,1.401298464324817e-45,4.90454462513686e-44,se_dispara,responde
+G1,P4_3p,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,21,0,0,129,0.14,0.14,0.0,,,,-0.022129109817210182,0.022129109817210182,,,1.0,1.0,sin_cambio,responde
+G1,P4_3p,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G1,P4_3p,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P4_3p,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P4_3p,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.111,-0.023999999999999994,-0.02800000000000001,-0.019000000000000003,-0.6533333333333333,-0.10213333333333334,4.17815278593849e-18,5.891195428173271e-16,baja,
+G1,P4_3p,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P4_3p,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P4_3p,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,-0.09090909090909094,0.0,-0.47651006711409394,-0.4867798747804153,1.5670109524204556e-20,2.4288669762517062e-18,baja,
+G1,P4_3p,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.12,-0.012266666666666667,7.62939453125e-06,0.0008087158203125,sin_cambio,
+G1,P4_3p,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P4_3p,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,63.86,2.3049999999999997,2.0898749999999966,2.510000000000005,1.0,0.2508,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P4_3p,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,59.455,2.3000000000000007,2.075000000000003,2.490000000000002,1.0,0.24604444444444445,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P4_3p,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.028,0.0,-0.0009999999999999983,0.0,-0.06,0.06177777777777778,0.4813541052575651,1.0,sin_cambio,
+G1,P4_3p,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.689,0.0,-0.0010000000000000009,0.0009999999999999454,-0.05333333333333334,-0.015377777777777778,0.5485023614867376,1.0,sin_cambio,
+G1,P4_3p,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P4_3p,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P5,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.215,0.2085,-0.006000000000000005,-0.007000000000000006,-0.006000000000000005,-0.9333333333333333,-0.10506666666666667,9.363812650249866e-40,1.6948500896952257e-37,baja,
+G1,P5,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P5,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,21,0,0,129,0.14,0.14,0.0,,,,-0.022129109817210182,0.022129109817210182,,,1.0,1.0,sin_cambio,responde
+G1,P5,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G1,P5,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P5,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P5,cr2_entidad_grafo_densidad,num,confirmatoria,baja,150,,,,,,,,0.14100000000000001,0.1315,-0.019000000000000003,-0.023999999999999994,-0.012000000000000004,-0.5133333333333333,-0.08231111111111111,3.5186910487070825e-11,5.981774782802041e-10,baja,responde
+G1,P5,cr2_n_nombres_no_reconocidos,num,confirmatoria,sube,150,,,,,,,,2.0,4.0,2.0,2.0,2.0,1.0,0.9524444444444444,1.401298464324817e-45,4.90454462513686e-44,sube,responde
+G1,P5,cr2_nombres_no_reconocidos,bool,confirmatoria,se_dispara,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,no responde
+G1,P5,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P5,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.12,-0.02008888888888889,7.62939453125e-06,0.0008087158203125,sin_cambio,
+G1,P5,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P5,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,63.72,2.3050000000000033,2.195000000000004,2.450000000000003,1.0,0.2616888888888889,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P5,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,59.510000000000005,2.3399999999999963,2.2399999999999984,2.4700000000000024,1.0,0.26022222222222224,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G1,P5,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.025,-0.0014999999999999979,-0.0019999999999999983,-0.0010000000000000009,-0.6333333333333333,-0.03911111111111111,7.580954667483134e-17,1.0234288801102231e-14,baja,
+G1,P5,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.6805000000000001,-0.009000000000000008,-0.010499999999999954,-0.008000000000000007,-0.9933333333333333,-0.18417777777777777,2.802596928649634e-45,5.43703804158029e-43,baja,
+G1,P5,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P5,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P6,cl2_lugar_jaccard_similarity,num,control,sin_cambio,150,,,,,,,,0.215,0.215,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,responde
+G1,P6,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P6,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,20,1,0,129,0.14,0.13333333333333333,-0.006666666666666682,,,,-0.03308173860642462,0.018317523345165933,,,1.0,1.0,sin_cambio,responde
+G1,P6,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,0,1,0,149,0.006666666666666667,0.0,-0.006666666666666667,,,,-0.03679284016679665,0.01889973248837306,,,1.0,1.0,sin_cambio,
+G1,P6,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P6,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P6,cr2_entidad_grafo_densidad,num,control,sin_cambio,150,,,,,,,,0.14100000000000001,0.139,0.0,0.0,0.0,-0.006666666666666667,-0.0034222222222222223,1.0,1.0,sin_cambio,responde
+G1,P6,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P6,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P6,entity_coreference_rate,num,control,sin_cambio,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,responde
+G1,P6,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.006666666666666667,-0.0064444444444444445,1.0,1.0,sin_cambio,
+G1,P6,grammaticality_lt,num,confirmatoria,baja,50,,,,,,,,0.988,0.944,-0.04450000000000004,-0.05049999999999999,-0.03650000000000003,-1.0,-1.0,1.7763568394002505e-15,3.375077994860476e-14,baja,responde
+G1,P6,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P6,qn1_legibilidad_fh,num,control,sin_cambio,150,,,,,,,,61.760000000000005,61.760000000000005,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,responde
+G1,P6,qn1_legibilidad_sz,num,control,sin_cambio,150,,,,,,,,57.489999999999995,57.489999999999995,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,responde
+G1,P6,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.0155,-0.006999999999999999,-0.0095,-0.006,-0.7133333333333334,-0.37106666666666666,1.101682234382426e-26,1.905910265481597e-24,baja,
+G1,P6,qn1_ttr,num,control,sin_cambio,150,,,,,,,,0.6884999999999999,0.6884999999999999,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,responde
+G1,P6,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P6,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P7,cl2_lugar_jaccard_similarity,num,control,sin_cambio,150,,,,,,,,0.215,0.215,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,responde
+G1,P7,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P7,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,21,0,0,129,0.14,0.14,0.0,,,,-0.022129109817210182,0.022129109817210182,,,1.0,1.0,sin_cambio,responde
+G1,P7,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G1,P7,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P7,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P7,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.14100000000000001,0.1815,0.03049999999999999,0.023999999999999994,0.04099999999999999,0.62,0.13417777777777778,1.2005501021319253e-15,1.560715132771503e-13,sube,
+G1,P7,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,2.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P7,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,responde
+G1,P7,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G1,P7,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.08666666666666667,-0.0010222222222222223,0.007197380065917969,0.6405668258666992,sin_cambio,
+G1,P7,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P7,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,61.25,0.22500000000000142,-0.3299999999999983,0.8850000000000016,0.04,0.022488888888888888,0.6832317601040963,1.0,sin_cambio,
+G1,P7,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,56.97,0.264999999999997,-0.23000000000000398,0.9400000000000013,0.09333333333333334,0.026977777777777778,0.2884557489907649,1.0,sin_cambio,
+G1,P7,qn1_ngram_repeticion,num,confirmatoria,sube,150,,,,,,,,0.025,0.291,0.2605,0.25449999999999995,0.26949999999999996,1.0,1.0,1.401298464324817e-45,4.90454462513686e-44,sube,responde
+G1,P7,qn1_ttr,num,confirmatoria,baja,150,,,,,,,,0.6884999999999999,0.504,-0.1885,-0.19499999999999995,-0.1845,-1.0,-1.0,1.401298464324817e-45,4.90454462513686e-44,baja,responde
+G1,P7,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P7,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P8,cl2_lugar_jaccard_similarity,num,confirmatoria,baja,150,,,,,,,,0.215,0.141,-0.07400000000000001,-0.082,-0.064,-0.96,-0.9634222222222222,7.884069497892145e-40,1.9710173744730363e-38,baja,responde
+G1,P8,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G1,P8,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,0,21,0,129,0.14,0.0,-0.14,,,,-0.20455208833628255,-0.08715489470458643,,,9.5367431640625e-07,0.00015735626220703125,baja,cambio inesperado
+G1,P8,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,0,1,0,149,0.006666666666666667,0.0,-0.006666666666666667,,,,-0.03679284016679665,0.01889973248837306,,,1.0,1.0,sin_cambio,
+G1,P8,comenta_reglas,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G1,P8,cr1_veredicto_contradice_narracion,bool,descriptivo,,150,0,0,1,149,0.0,0.006666666666666667,0.006666666666666667,,,,-0.01889973248837306,0.03679284016679665,,,1.0,1.0,sin_cambio,
+G1,P8,cr2_entidad_grafo_densidad,num,confirmatoria,baja,150,,,,,,,,0.14100000000000001,0.138,-0.031000000000000007,-0.05449999999999999,0.0,-0.18666666666666668,-0.13275555555555554,0.023125726989789184,0.34688590484683773,sin_cambio,no responde
+G1,P8,cr2_n_nombres_no_reconocidos,num,confirmatoria,sube,150,,,,,,,,2.0,3.0,1.0,1.0,1.0,0.5533333333333333,0.5435555555555556,5.198609903817759e-18,1.0397219807635518e-16,sube,responde
+G1,P8,cr2_nombres_no_reconocidos,bool,confirmatoria,se_dispara,150,150,0,0,0,1.0,1.0,0.0,,,,-0.024970244752164472,0.024970244752164472,,,1.0,1.0,sin_cambio,no responde
+G1,P8,entity_coreference_rate,num,descriptivo,,148,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.013513513513513514,0.013513513513513514,0.5,1.0,sin_cambio,
+G1,P8,grafo_lema_densidad,num,confirmatoria,baja,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.06,-0.06417777777777778,0.13604594767093658,1.0,sin_cambio,no responde
+G1,P8,grammaticality_lt,num,descriptivo,,50,,,,,,,,0.988,0.989,0.0010000000000000009,-0.0010000000000000009,0.0040000000000000036,0.1,0.2472,0.5600646295802107,1.0,sin_cambio,
+G1,P8,meta_comentario,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G1,P8,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,61.760000000000005,60.955,-0.4299999999999997,-1.259999999999998,1.3399999999999963,-0.05333333333333334,-0.03284444444444445,0.567775487675328,1.0,sin_cambio,
+G1,P8,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,57.489999999999995,56.67,-0.2799999999999976,-1.5850000000000009,1.5250000000000021,-0.04,-0.02991111111111111,0.6832317601040963,1.0,sin_cambio,
+G1,P8,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.025,0.0265,-0.0014999999999999996,-0.0034999999999999996,0.0024999999999999988,-0.05333333333333334,0.05026666666666667,0.5598211377107971,1.0,sin_cambio,
+G1,P8,qn1_ttr,num,descriptivo,,150,,,,,,,,0.6884999999999999,0.696,-0.0025000000000000022,-0.01200000000000001,0.007000000000000006,-0.04666666666666667,0.04315555555555556,0.6231944984411367,1.0,sin_cambio,
+G1,P8,qn2_pj_accion_revisar,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G1,P8,qn2_pj_piensa_narrado,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G1,P9,ventana_bucles_ciclos,num,confirmatoria,sube,60,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.06666666666666667,0.06666666666666667,0.125,1.0,sin_cambio,no responde
+G1,P9,ventana_bucles_visitas,num,confirmatoria,sube,60,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.06666666666666667,0.0077777777777777776,0.125,1.0,sin_cambio,no responde
+G1,P9,ventana_coherencia_C,num,control,sin_cambio,42,,,,,,,,3.125,3.0,0.0,0.0,0.0,0.14285714285714285,0.07312925170068027,0.28627872467041016,1.0,sin_cambio,responde
+G1,P9,ventana_consistencia_V,num,control,sin_cambio,42,,,,,,,,0.571,0.571,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,responde
+G1,P9,ventana_entity_coreference_medio,num,control,sin_cambio,60,,,,,,,,0.8111359126984127,0.8190972222222221,0.00014204545454543638,0.0,0.009375000000000022,0.16666666666666666,0.05416666666666667,0.20263875106454066,1.0,sin_cambio,responde
+G1,P9,ventana_jaccard_medio,num,confirmatoria,baja,60,,,,,,,,0.20922668215433413,0.19413191249012618,-0.01476643490180686,-0.01843466903156868,-0.011465591520309945,-0.8666666666666667,-0.47444444444444445,9.084503982403902e-13,1.6352107168327024e-11,baja,responde
+G1,P9,ventana_mattr,num,control,sin_cambio,60,,,,,,,,0.839,0.841,0.0010000000000000009,0.0,0.0010000000000000009,0.3333333333333333,0.04472222222222222,0.004533861582189047,0.7344855763146256,sin_cambio,responde
+G1,P9,ventana_mtld,num,control,sin_cambio,60,,,,,,,,125.9,129.70999999999998,2.0,1.0,3.835000000000001,0.43333333333333335,0.11722222222222223,0.0010657657791434353,0.17478558777952338,sin_cambio,responde
+G2,P10,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.176,0.171,-0.0050000000000000044,-0.006000000000000005,-0.0040000000000000036,-0.4866666666666667,-0.08057777777777778,3.979392264405063e-10,5.133416021082531e-08,baja,
+G2,P10,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P10,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,7,0,0,143,0.04666666666666667,0.04666666666666667,0.0,,,,-0.026058085062685237,0.026058085062685237,,,1.0,1.0,sin_cambio,responde
+G2,P10,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G2,P10,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P10,cr1_veredicto_contradice_narracion,bool,confirmatoria,se_dispara,150,0,0,150,0,0.0,1.0,1.0,,,,0.9646867412157134,1.0,,,1.401298464324817e-45,4.90454462513686e-44,se_dispara,responde
+G2,P10,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.27649999999999997,0.2,-0.015500000000000003,-0.033000000000000015,0.0,-0.30666666666666664,-0.086,1.9596368034800067e-05,0.002312371428106408,baja,
+G2,P10,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P10,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,0,141,0.06,0.06,0.0,,,,-0.025481696583740138,0.02548169658374013,,,1.0,1.0,sin_cambio,responde
+G2,P10,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P10,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.06,-0.002488888888888889,0.01171875,1.0,sin_cambio,
+G2,P10,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P10,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,63.54,3.9899999999999984,3.679999999999996,4.270000000000003,1.0,0.3214666666666667,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G2,P10,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,59.364999999999995,4.024999999999999,3.6999999999999993,4.265125000000002,1.0,0.3170222222222222,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G2,P10,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.017,-0.0009999999999999992,-0.001,0.0,-0.28,0.03297777777777778,0.00017984577597089825,0.020322572684711503,baja,
+G2,P10,qn1_ttr,num,descriptivo,,150,,,,,,,,0.73,0.7195,-0.013000000000000012,-0.01599999999999996,-0.010499999999999954,-0.7266666666666667,-0.17773333333333333,2.1735945682947113e-21,3.4342794179056437e-19,baja,
+G2,P10,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P10,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P11a_inyeccion,cl2_lugar_jaccard_similarity,num,control,sin_cambio,150,,,,,,,,0.176,0.167,-0.009000000000000008,-0.009999999999999981,-0.009000000000000008,-1.0,-0.2039111111111111,1.401298464324817e-45,2.396220373995437e-43,baja,cambio inesperado
+G2,P11a_inyeccion,cl2_pc_hp_contradice_narracion,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G2,P11a_inyeccion,cl2_pnj_inactivo_actua,bool,descriptivo,,150,7,0,0,143,0.04666666666666667,0.04666666666666667,0.0,,,,-0.026058085062685237,0.026058085062685237,,,1.0,1.0,sin_cambio,
+G2,P11a_inyeccion,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,0,1,0,149,0.006666666666666667,0.0,-0.006666666666666667,,,,-0.03679284016679665,0.01889973248837306,,,1.0,1.0,sin_cambio,
+G2,P11a_inyeccion,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P11a_inyeccion,cr1_veredicto_contradice_narracion,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G2,P11a_inyeccion,cr2_entidad_grafo_densidad,num,control,sin_cambio,150,,,,,,,,0.27649999999999997,0.1785,-0.07199999999999998,-0.09999999999999998,-0.067,-0.8,-0.19311111111111112,1.504632769052528e-36,2.527783052008247e-34,baja,cambio inesperado
+G2,P11a_inyeccion,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,2.0,2.0,2.0,2.0,1.0,0.9788444444444444,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G2,P11a_inyeccion,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,141,0,0.06,1.0,0.94,,,,0.8840312737799731,0.9681159559462748,,,7.174648137343064e-43,1.2125155352109777e-40,se_dispara,cambio inesperado
+G2,P11a_inyeccion,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P11a_inyeccion,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.06,-0.0020444444444444447,0.00390625,0.37890625,sin_cambio,
+G2,P11a_inyeccion,grammaticality_lt,num,control,sin_cambio,50,,,,,,,,1.0,0.984,-0.016000000000000014,-0.017000000000000015,-0.015000000000000013,-1.0,-1.0,1.7763568394002505e-15,2.913225216616411e-13,baja,cambio inesperado
+G2,P11a_inyeccion,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P11a_inyeccion,qn1_legibilidad_fh,num,control,sin_cambio,150,,,,,,,,59.239999999999995,61.135000000000005,1.625,1.4299999999999962,1.884999999999998,0.6666666666666666,0.13991111111111112,3.4105740593607395e-17,5.661552938538828e-15,sube,cambio inesperado
+G2,P11a_inyeccion,qn1_legibilidad_sz,num,control,sin_cambio,150,,,,,,,,55.095,56.86,1.504999999999999,1.3199999999999932,1.754999999999999,0.64,0.12715555555555555,7.712497975755227e-16,1.2725621659996124e-13,sube,cambio inesperado
+G2,P11a_inyeccion,qn1_ngram_repeticion,num,control,sin_cambio,150,,,,,,,,0.016,0.015,-0.0010000000000000009,-0.0010000000000000009,-0.001,-0.7333333333333333,-0.05031111111111111,1.5407439555097887e-33,2.573042405701347e-31,baja,cambio inesperado
+G2,P11a_inyeccion,qn1_ttr,num,control,sin_cambio,150,,,,,,,,0.73,0.748,0.017000000000000015,0.017000000000000015,0.018000000000000016,1.0,0.22315555555555555,1.401298464324817e-45,2.396220373995437e-43,sube,cambio inesperado
+G2,P11a_inyeccion,qn2_pj_accion_revisar,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G2,P11a_inyeccion,qn2_pj_piensa_narrado,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G2,P11b_eliminacion,cl2_lugar_jaccard_similarity,num,control,sin_cambio,0,,,,,,,,nan,nan,nan,nan,nan,0.0,0.0,1.0,1.0,,no aplica
+G2,P11b_eliminacion,comenta_reglas,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P11b_eliminacion,cr2_entidad_grafo_densidad,num,control,sin_cambio,0,,,,,,,,nan,nan,nan,nan,nan,0.0,0.0,1.0,1.0,,no aplica
+G2,P11b_eliminacion,cr2_nombres_no_reconocidos,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P11b_eliminacion,grammaticality_lt,num,control,sin_cambio,0,,,,,,,,nan,nan,nan,nan,nan,0.0,0.0,1.0,1.0,,no aplica
+G2,P11b_eliminacion,meta_comentario,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P11b_eliminacion,qn1_legibilidad_fh,num,control,sin_cambio,0,,,,,,,,nan,nan,nan,nan,nan,0.0,0.0,1.0,1.0,,no aplica
+G2,P11b_eliminacion,qn1_legibilidad_sz,num,control,sin_cambio,0,,,,,,,,nan,nan,nan,nan,nan,0.0,0.0,1.0,1.0,,no aplica
+G2,P11b_eliminacion,qn1_ngram_repeticion,num,control,sin_cambio,0,,,,,,,,nan,nan,nan,nan,nan,0.0,0.0,1.0,1.0,,no aplica
+G2,P11b_eliminacion,qn1_ttr,num,control,sin_cambio,0,,,,,,,,nan,nan,nan,nan,nan,0.0,0.0,1.0,1.0,,no aplica
+G2,P12,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.176,0.172,-0.003999999999999976,-0.0040000000000000036,-0.0030000000000000027,-1.0,-0.0812,1.401298464324817e-45,3.0828566215145976e-43,baja,
+G2,P12,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P12,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,7,0,0,143,0.04666666666666667,0.04666666666666667,0.0,,,,-0.026058085062685237,0.026058085062685237,,,1.0,1.0,sin_cambio,responde
+G2,P12,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G2,P12,comenta_reglas,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G2,P12,cr1_veredicto_contradice_narracion,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G2,P12,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.27649999999999997,0.27649999999999997,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P12,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.02666666666666667,0.026133333333333335,0.125,1.0,sin_cambio,
+G2,P12,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,4,137,0.06,0.08666666666666667,0.026666666666666672,,,,-0.005442445117534528,0.06537431538391833,,,0.125,1.0,sin_cambio,responde
+G2,P12,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P12,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P12,grammaticality_lt,num,confirmatoria,baja,50,,,,,,,,1.0,1.0,0.0,0.0,0.0,-0.12,-0.118,0.03125,0.3125,sin_cambio,no responde
+G2,P12,meta_comentario,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G2,P12,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,59.239999999999995,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P12,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,55.095,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P12,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.014499999999999999,0.0,-0.0009999999999999983,0.0,-0.47333333333333333,-0.05093333333333333,8.470329472543003e-22,1.3467823861343375e-19,baja,
+G2,P12,qn1_ttr,num,confirmatoria,sube,150,,,,,,,,0.73,0.737,0.007000000000000006,0.007000000000000006,0.007000000000000006,1.0,0.09831111111111111,1.401298464324817e-45,4.90454462513686e-44,sube,responde
+G2,P12,qn2_pj_accion_revisar,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G2,P12,qn2_pj_piensa_narrado,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G2,P1_accion,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P1_accion,cl2_pnj_inactivo_actua,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P1_accion,comenta_reglas,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P1_accion,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P1_accion,cr2_nombres_no_reconocidos,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P1_accion,meta_comentario,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P1_accion,qn2_pj_accion_revisar,bool,confirmatoria,se_dispara,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P1_accion,qn2_pj_piensa_narrado,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P1_accion_sin_tirada,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.176,0.172,-0.00449999999999999,-0.0050000000000000044,-0.002999999999999989,-0.48,-0.06924444444444444,1.1195953306256023e-09,1.4218860698945148e-07,baja,
+G2,P1_accion_sin_tirada,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_accion_sin_tirada,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,7,0,0,143,0.04666666666666667,0.04666666666666667,0.0,,,,-0.026058085062685237,0.026058085062685237,,,1.0,1.0,sin_cambio,responde
+G2,P1_accion_sin_tirada,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G2,P1_accion_sin_tirada,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_accion_sin_tirada,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_accion_sin_tirada,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.27649999999999997,0.2,-0.02849999999999999,-0.05700000000000002,0.0,-0.30666666666666664,-0.08924444444444445,2.3322382895728305e-05,0.0027053964159044833,baja,
+G2,P1_accion_sin_tirada,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P1_accion_sin_tirada,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,0,141,0.06,0.06,0.0,,,,-0.025481696583740138,0.02548169658374013,,,1.0,1.0,sin_cambio,responde
+G2,P1_accion_sin_tirada,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P1_accion_sin_tirada,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.06666666666666667,-0.014933333333333333,0.001953125,0.2109375,sin_cambio,
+G2,P1_accion_sin_tirada,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_accion_sin_tirada,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,64.06,4.239999999999998,3.914999999999999,4.494999999999997,1.0,0.3393777777777778,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G2,P1_accion_sin_tirada,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,59.825,4.2499999999999964,3.965,4.549999999999997,1.0,0.3344888888888889,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G2,P1_accion_sin_tirada,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.017,-0.0009999999999999992,-0.0010000000000000009,0.0,-0.30666666666666664,0.018933333333333333,4.4100294553948996e-05,0.005071533873704135,baja,
+G2,P1_accion_sin_tirada,qn1_ttr,num,descriptivo,,150,,,,,,,,0.73,0.718,-0.013000000000000012,-0.014000000000000012,-0.01150000000000001,-0.9666666666666667,-0.1816888888888889,3.132182327458831e-41,6.139077361819309e-39,baja,
+G2,P1_accion_sin_tirada,qn2_pj_accion_revisar,bool,confirmatoria,se_dispara,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,no responde
+G2,P1_accion_sin_tirada,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_decision,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.176,0.1705,-0.006000000000000005,-0.007000000000000006,-0.004500000000000004,-0.7266666666666667,-0.12133333333333333,3.954450169729124e-22,6.327120271566599e-20,baja,
+G2,P1_decision,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_decision,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,7,0,0,143,0.04666666666666667,0.04666666666666667,0.0,,,,-0.026058085062685237,0.026058085062685237,,,1.0,1.0,sin_cambio,responde
+G2,P1_decision,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G2,P1_decision,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_decision,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_decision,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.27649999999999997,0.2,0.0,-0.015999999999999997,0.0,-0.1,-0.04017777777777778,0.19915839818564474,1.0,sin_cambio,
+G2,P1_decision,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P1_decision,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,0,141,0.06,0.06,0.0,,,,-0.025481696583740138,0.02548169658374013,,,1.0,1.0,sin_cambio,responde
+G2,P1_decision,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P1_decision,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.06666666666666667,-0.0021333333333333334,0.001953125,0.2109375,sin_cambio,
+G2,P1_decision,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_decision,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,63.415000000000006,3.7900000000000027,3.604999999999997,4.030000000000001,0.9866666666666667,0.30862222222222224,2.1159606811304738e-43,4.4011982167513855e-41,sube,
+G2,P1_decision,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,59.235,3.8150000000000013,3.5849999999999973,4.060000000000002,0.98,0.3052888888888889,4.203895392974451e-43,8.702063463457114e-41,sube,
+G2,P1_decision,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.0155,-0.0010000000000000009,-0.0010000000000000009,-0.0009999999999999992,-0.5133333333333333,-0.030533333333333332,2.5558679651606515e-13,3.527097791921699e-11,baja,
+G2,P1_decision,qn1_ttr,num,descriptivo,,150,,,,,,,,0.73,0.719,-0.008000000000000007,-0.010000000000000009,-0.006500000000000006,-0.76,-0.12546666666666667,3.2226810632723062e-24,5.381877375664751e-22,baja,
+G2,P1_decision,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_decision,qn2_pj_piensa_narrado,bool,confirmatoria,se_dispara,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,no responde
+G2,P1_emocion,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.176,0.173,-0.0050000000000000044,-0.0059999999999999915,-0.0040000000000000036,-0.3933333333333333,-0.06746666666666666,4.870586356414965e-07,5.893409491262108e-05,baja,
+G2,P1_emocion,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_emocion,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,7,0,0,143,0.04666666666666667,0.04666666666666667,0.0,,,,-0.026058085062685237,0.026058085062685237,,,1.0,1.0,sin_cambio,responde
+G2,P1_emocion,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G2,P1_emocion,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_emocion,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_emocion,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.27649999999999997,0.2,-0.03299999999999999,-0.05700000000000002,-0.006000000000000002,-0.4,-0.10142222222222222,2.0883550312393545e-08,2.568676688424406e-06,baja,
+G2,P1_emocion,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P1_emocion,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,0,141,0.06,0.06,0.0,,,,-0.025481696583740138,0.02548169658374013,,,1.0,1.0,sin_cambio,responde
+G2,P1_emocion,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P1_emocion,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.06666666666666667,-0.021244444444444444,0.001953125,0.2109375,sin_cambio,
+G2,P1_emocion,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_emocion,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,62.93,3.2400000000000055,2.8299999999999983,3.6449999999999996,0.96,0.2695111111111111,7.884069497892145e-40,1.521625413093184e-37,sube,
+G2,P1_emocion,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,58.715,3.2149999999999963,2.754999999999999,3.6299999999999955,0.9466666666666667,0.26315555555555553,2.91790991940877e-38,5.5440288468766626e-36,sube,
+G2,P1_emocion,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.016,-0.0010000000000000005,-0.0010000000000000009,-0.0009999999999999992,-0.5733333333333334,-0.027466666666666667,7.752808767891495e-17,1.1396628888800498e-14,baja,
+G2,P1_emocion,qn1_ttr,num,descriptivo,,150,,,,,,,,0.73,0.726,-0.0050000000000000044,-0.006000000000000005,-0.0020000000000000018,-0.3466666666666667,-0.06093333333333333,2.0151658417759e-05,0.002357744034877803,baja,
+G2,P1_emocion,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_emocion,qn2_pj_piensa_narrado,bool,confirmatoria,se_dispara,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,no responde
+G2,P1_habla,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.176,0.169,-0.006000000000000005,-0.006000000000000005,-0.005999999999999978,-0.74,-0.1124,1.8892488299339863e-23,3.0794755927923977e-21,baja,
+G2,P1_habla,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_habla,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,7,0,0,143,0.04666666666666667,0.04666666666666667,0.0,,,,-0.026058085062685237,0.026058085062685237,,,1.0,1.0,sin_cambio,responde
+G2,P1_habla,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G2,P1_habla,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_habla,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_habla,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.27649999999999997,0.2,0.0,-0.012000000000000004,0.0,-0.14,-0.048266666666666666,0.057163645246601856,1.0,sin_cambio,
+G2,P1_habla,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P1_habla,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,0,141,0.06,0.06,0.0,,,,-0.025481696583740138,0.02548169658374013,,,1.0,1.0,sin_cambio,responde
+G2,P1_habla,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P1_habla,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.06,-0.0021333333333333334,0.01171875,1.0,sin_cambio,
+G2,P1_habla,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_habla,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,62.775000000000006,3.479999999999997,3.1799999999999997,3.785,0.8666666666666667,0.2697333333333333,1.7629282549387198e-30,3.102753728692147e-28,sube,
+G2,P1_habla,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,58.575,3.4800000000000004,3.150000000000002,3.769999999999996,0.8666666666666667,0.2637777777777778,1.7629282549387198e-30,3.102753728692147e-28,sube,
+G2,P1_habla,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.016,-0.0009999999999999996,-0.0010000000000000009,-0.0009999999999999974,-0.4866666666666667,-0.005111111111111111,3.240204200619262e-12,4.3742756708360036e-10,baja,
+G2,P1_habla,qn1_ttr,num,descriptivo,,150,,,,,,,,0.73,0.726,-0.0050000000000000044,-0.006000000000000005,-0.0040000000000000036,-0.38,-0.0791111111111111,1.7623083665777151e-06,0.0002114770039893258,baja,
+G2,P1_habla,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_habla,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_pensamiento,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.176,0.1705,-0.006000000000000005,-0.006499999999999992,-0.0050000000000000044,-0.6066666666666667,-0.10084444444444444,1.090507026135235e-15,1.5703301176347383e-13,baja,
+G2,P1_pensamiento,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_pensamiento,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,7,0,0,143,0.04666666666666667,0.04666666666666667,0.0,,,,-0.026058085062685237,0.026058085062685237,,,1.0,1.0,sin_cambio,responde
+G2,P1_pensamiento,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G2,P1_pensamiento,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_pensamiento,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_pensamiento,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.27649999999999997,0.2585,0.0,0.0,0.0,0.04666666666666667,-0.009733333333333333,0.5726564757939473,1.0,sin_cambio,
+G2,P1_pensamiento,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P1_pensamiento,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,0,141,0.06,0.06,0.0,,,,-0.025481696583740138,0.02548169658374013,,,1.0,1.0,sin_cambio,responde
+G2,P1_pensamiento,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P1_pensamiento,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.06666666666666667,-0.021244444444444444,0.001953125,0.2109375,sin_cambio,
+G2,P1_pensamiento,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_pensamiento,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,64.045,4.5,3.9549999999999983,4.809999999999995,0.9466666666666667,0.34071111111111113,2.91790991940877e-38,5.5440288468766626e-36,sube,
+G2,P1_pensamiento,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,59.905,4.534999999999997,3.969999999999999,4.849999999999994,0.9466666666666667,0.33582222222222224,2.91790991940877e-38,5.5440288468766626e-36,sube,
+G2,P1_pensamiento,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.017,-0.001,-0.0010000000000000009,-0.0009999999999999992,-0.47333333333333333,-0.0032444444444444443,5.303093183678633e-11,7.000083002455796e-09,baja,
+G2,P1_pensamiento,qn1_ttr,num,descriptivo,,150,,,,,,,,0.73,0.7184999999999999,-0.009000000000000008,-0.01100000000000001,-0.007000000000000006,-0.8466666666666667,-0.14262222222222223,6.767917179441368e-31,1.197921340761122e-28,baja,
+G2,P1_pensamiento,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P1_pensamiento,qn2_pj_piensa_narrado,bool,confirmatoria,se_dispara,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,no responde
+G2,P2_accion,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P2_accion,cl2_pnj_inactivo_actua,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P2_accion,comenta_reglas,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P2_accion,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P2_accion,cr2_nombres_no_reconocidos,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P2_accion,meta_comentario,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P2_accion,qn2_pj_accion_revisar,bool,confirmatoria,se_dispara,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P2_accion,qn2_pj_piensa_narrado,bool,control,sin_cambio,0,0,0,0,0,nan,nan,0.0,,,,-1.0,1.0,,,1.0,1.0,,no aplica
+G2,P2_accion_sin_tirada,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.176,0.171,-0.005499999999999991,-0.006000000000000005,-0.0049999999999999906,-0.49333333333333335,-0.08528888888888889,1.8651390436733746e-10,2.424680756775387e-08,baja,
+G2,P2_accion_sin_tirada,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_accion_sin_tirada,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,7,0,0,143,0.04666666666666667,0.04666666666666667,0.0,,,,-0.026058085062685237,0.026058085062685237,,,1.0,1.0,sin_cambio,responde
+G2,P2_accion_sin_tirada,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G2,P2_accion_sin_tirada,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_accion_sin_tirada,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_accion_sin_tirada,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.27649999999999997,0.214,0.0,-0.019000000000000003,0.0,-0.1,-0.04084444444444445,0.20292429055143815,1.0,sin_cambio,
+G2,P2_accion_sin_tirada,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P2_accion_sin_tirada,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,0,141,0.06,0.06,0.0,,,,-0.025481696583740138,0.02548169658374013,,,1.0,1.0,sin_cambio,responde
+G2,P2_accion_sin_tirada,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,0.9090909090909091,-0.09090909090909094,-0.11111111111111116,-0.08333333333333337,-0.9261744966442953,-0.9145533984955633,5.739718509874451e-42,1.170902576014388e-39,baja,
+G2,P2_accion_sin_tirada,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.06666666666666667,-0.0021333333333333334,0.001953125,0.2109375,sin_cambio,
+G2,P2_accion_sin_tirada,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_accion_sin_tirada,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,63.379999999999995,3.6899999999999977,3.4199999999999946,3.8899999999999935,1.0,0.3085777777777778,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G2,P2_accion_sin_tirada,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,59.205,3.6499999999999986,3.3849999999999945,3.879999999999999,1.0,0.30173333333333335,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G2,P2_accion_sin_tirada,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.0165,-0.0009999999999999992,-0.0010000000000000009,-0.0009999999999999974,-0.42,0.004088888888888889,4.166817880507534e-09,5.166854171829342e-07,baja,
+G2,P2_accion_sin_tirada,qn1_ttr,num,descriptivo,,150,,,,,,,,0.73,0.7235,-0.007000000000000006,-0.010000000000000009,-0.0050000000000000044,-0.3,-0.06528888888888888,0.00028386924153818953,0.031793355052277227,baja,
+G2,P2_accion_sin_tirada,qn2_pj_accion_revisar,bool,confirmatoria,se_dispara,150,0,0,150,0,0.0,1.0,1.0,,,,0.9646867412157134,1.0,,,1.401298464324817e-45,4.90454462513686e-44,se_dispara,responde
+G2,P2_accion_sin_tirada,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_decision,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.176,0.1685,-0.00799999999999998,-0.008000000000000007,-0.007000000000000006,-0.88,-0.1552,2.797312157195774e-32,5.007188761380436e-30,baja,
+G2,P2_decision,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_decision,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,7,0,0,143,0.04666666666666667,0.04666666666666667,0.0,,,,-0.026058085062685237,0.026058085062685237,,,1.0,1.0,sin_cambio,responde
+G2,P2_decision,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G2,P2_decision,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_decision,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_decision,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.27649999999999997,0.267,0.0,0.0,0.012999999999999989,0.1,0.011866666666666666,0.18759872474577588,1.0,sin_cambio,
+G2,P2_decision,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P2_decision,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,0,141,0.06,0.06,0.0,,,,-0.025481696583740138,0.02548169658374013,,,1.0,1.0,sin_cambio,responde
+G2,P2_decision,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,0.9090909090909091,-0.09090909090909094,-0.09999999999999998,-0.07692307692307687,-0.9261744966442953,-0.9143732264312419,5.739718509874451e-42,1.170902576014388e-39,baja,
+G2,P2_decision,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.06666666666666667,-0.021244444444444444,0.001953125,0.2109375,sin_cambio,
+G2,P2_decision,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_decision,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,62.93,3.3499999999999943,3.120000000000001,3.549999999999997,0.98,0.27457777777777775,4.203895392974451e-43,8.702063463457114e-41,sube,
+G2,P2_decision,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,58.75,3.3649999999999984,3.139999999999997,3.5799999999999983,0.98,0.26844444444444443,4.203895392974451e-43,8.702063463457114e-41,sube,
+G2,P2_decision,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.0155,-0.001,-0.0010000000000000009,-0.0009999999999999992,-0.4,-0.017822222222222222,3.772753306355308e-08,4.602759033753476e-06,baja,
+G2,P2_decision,qn1_ttr,num,descriptivo,,150,,,,,,,,0.73,0.722,-0.006000000000000005,-0.008000000000000007,-0.0050000000000000044,-0.68,-0.10151111111111111,9.635082846389395e-19,1.4838027583439668e-16,baja,
+G2,P2_decision,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_decision,qn2_pj_piensa_narrado,bool,confirmatoria,se_dispara,150,0,0,150,0,0.0,1.0,1.0,,,,0.9646867412157134,1.0,,,1.401298464324817e-45,4.90454462513686e-44,se_dispara,responde
+G2,P2_emocion,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.176,0.169,-0.007000000000000006,-0.00799999999999998,-0.0069999999999999785,-0.8066666666666666,-0.1400888888888889,1.2618992865608153e-28,2.1704667728846023e-26,baja,
+G2,P2_emocion,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_emocion,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,7,0,0,143,0.04666666666666667,0.04666666666666667,0.0,,,,-0.026058085062685237,0.026058085062685237,,,1.0,1.0,sin_cambio,responde
+G2,P2_emocion,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G2,P2_emocion,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_emocion,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_emocion,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.27649999999999997,0.2585,0.0,0.0,0.0,0.05333333333333334,-0.0052,0.5085131799736614,1.0,sin_cambio,
+G2,P2_emocion,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P2_emocion,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,0,141,0.06,0.06,0.0,,,,-0.025481696583740138,0.02548169658374013,,,1.0,1.0,sin_cambio,responde
+G2,P2_emocion,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,0.9090909090909091,-0.09090909090909094,-0.11111111111111116,-0.08333333333333337,-0.9261744966442953,-0.9145533984955633,5.739718509874451e-42,1.170902576014388e-39,baja,
+G2,P2_emocion,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.06666666666666667,-0.014755555555555555,0.001953125,0.2109375,sin_cambio,
+G2,P2_emocion,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_emocion,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,63.105000000000004,3.2050000000000054,2.905000000000001,3.6649999999999956,0.9733333333333334,0.25933333333333336,1.5871106406942878e-41,3.158350174981633e-39,sube,
+G2,P2_emocion,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,58.845,3.200000000000003,2.854999999999997,3.629999999999999,0.9733333333333334,0.25475555555555557,1.5871106406942878e-41,3.158350174981633e-39,sube,
+G2,P2_emocion,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.0155,-0.0010000000000000009,-0.0010000000000000009,-0.0009999999999999992,-0.6533333333333333,-0.04466666666666667,5.722965936636591e-23,9.271204817351278e-21,baja,
+G2,P2_emocion,qn1_ttr,num,descriptivo,,150,,,,,,,,0.73,0.727,0.0,-0.0020000000000000018,0.0010000000000000009,-0.03333333333333333,-0.01862222222222222,0.7363564588511882,1.0,sin_cambio,
+G2,P2_emocion,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_emocion,qn2_pj_piensa_narrado,bool,confirmatoria,se_dispara,150,0,0,150,0,0.0,1.0,1.0,,,,0.9646867412157134,1.0,,,1.401298464324817e-45,4.90454462513686e-44,se_dispara,responde
+G2,P2_habla,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.176,0.1685,-0.006000000000000005,-0.006499999999999992,-0.006000000000000005,-0.7333333333333333,-0.11315555555555555,1.239372500768143e-23,2.0325709012597544e-21,baja,
+G2,P2_habla,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_habla,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,7,0,0,143,0.04666666666666667,0.04666666666666667,0.0,,,,-0.026058085062685237,0.026058085062685237,,,1.0,1.0,sin_cambio,responde
+G2,P2_habla,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G2,P2_habla,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_habla,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_habla,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.27649999999999997,0.286,0.03299999999999992,0.0,0.04149999999999997,0.28,0.04928888888888889,0.00012034422931947828,0.013719242142420525,sube,
+G2,P2_habla,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P2_habla,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,0,141,0.06,0.06,0.0,,,,-0.025481696583740138,0.02548169658374013,,,1.0,1.0,sin_cambio,responde
+G2,P2_habla,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,0.9090909090909091,-0.09090909090909094,-0.11111111111111116,-0.08333333333333337,-0.9261744966442953,-0.9145533984955633,5.739718509874451e-42,1.170902576014388e-39,baja,
+G2,P2_habla,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.06666666666666667,-0.027555555555555555,0.001953125,0.2109375,sin_cambio,
+G2,P2_habla,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_habla,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,62.894999999999996,3.4499999999999957,3.259749999999995,3.6600000000000037,1.0,0.2800888888888889,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G2,P2_habla,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,58.629999999999995,3.4499999999999957,3.2300000000000004,3.6300000000000026,1.0,0.2728,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G2,P2_habla,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.017,-0.0009999999999999992,-0.0010000000000000009,-0.0009999999999999974,-0.44,0.004311111111111111,5.313343225051396e-10,6.801079328065787e-08,baja,
+G2,P2_habla,qn1_ttr,num,descriptivo,,150,,,,,,,,0.73,0.724,-0.0050000000000000044,-0.006000000000000005,-0.0040000000000000036,-0.7,-0.08795555555555555,1.910164353999542e-19,2.9798563922392853e-17,baja,
+G2,P2_habla,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_habla,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_pensamiento,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.176,0.1695,-0.007000000000000006,-0.008000000000000007,-0.007000000000000006,-0.82,-0.14506666666666668,1.3833392965568364e-28,2.3655101971121904e-26,baja,
+G2,P2_pensamiento,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_pensamiento,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,7,0,0,143,0.04666666666666667,0.04666666666666667,0.0,,,,-0.026058085062685237,0.026058085062685237,,,1.0,1.0,sin_cambio,responde
+G2,P2_pensamiento,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G2,P2_pensamiento,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_pensamiento,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_pensamiento,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.27649999999999997,0.2585,0.0,0.0,0.0,0.04666666666666667,-0.009555555555555555,0.5726564757939473,1.0,sin_cambio,
+G2,P2_pensamiento,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P2_pensamiento,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,0,141,0.06,0.06,0.0,,,,-0.025481696583740138,0.02548169658374013,,,1.0,1.0,sin_cambio,responde
+G2,P2_pensamiento,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,0.9090909090909091,-0.09090909090909094,-0.11111111111111116,-0.08333333333333337,-0.9261744966442953,-0.9145533984955633,5.739718509874451e-42,1.170902576014388e-39,baja,
+G2,P2_pensamiento,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.06666666666666667,-0.021244444444444444,0.001953125,0.2109375,sin_cambio,
+G2,P2_pensamiento,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_pensamiento,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,62.94,3.105000000000004,2.740000000000002,3.6700000000000017,0.9333333333333333,0.2687111111111111,8.581873127276034e-37,1.5790646554187903e-34,sube,
+G2,P2_pensamiento,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,58.845,3.110000000000003,2.8149999999999977,3.6849999999999987,0.9333333333333333,0.2643111111111111,8.581873127276034e-37,1.5790646554187903e-34,sube,
+G2,P2_pensamiento,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.0155,-0.0010000000000000009,-0.0019999999999999983,-0.001,-0.6133333333333333,-0.051644444444444444,4.764406071312224e-19,7.384829410533947e-17,baja,
+G2,P2_pensamiento,qn1_ttr,num,descriptivo,,150,,,,,,,,0.73,0.7224999999999999,-0.008000000000000007,-0.010000000000000009,-0.007000000000000006,-0.7666666666666667,-0.12364444444444445,4.813511452666797e-24,7.990429011426883e-22,baja,
+G2,P2_pensamiento,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P2_pensamiento,qn2_pj_piensa_narrado,bool,confirmatoria,se_dispara,150,0,0,150,0,0.0,1.0,1.0,,,,0.9646867412157134,1.0,,,1.401298464324817e-45,4.90454462513686e-44,se_dispara,responde
+G2,P3_dead_actua,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.176,0.1695,-0.006999999999999992,-0.007999999999999993,-0.0040000000000000036,-0.7066666666666667,-0.12035555555555555,1.1693737942974312e-20,1.8359168570469672e-18,baja,
+G2,P3_dead_actua,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_dead_actua,cl2_pnj_inactivo_actua,bool,confirmatoria,se_dispara,150,7,0,143,0,0.04666666666666667,1.0,0.9533333333333334,,,,0.90053555409631,0.9772134509633353,,,1.793662034335766e-43,4.663521289272991e-42,se_dispara,responde
+G2,P3_dead_actua,cl2_pnj_inactivo_refinado,bool,confirmatoria,se_dispara,150,1,0,14,135,0.006666666666666667,0.1,0.09333333333333334,,,,0.04714308307003912,0.1514253748735274,,,0.0001220703125,0.00146484375,se_dispara,responde
+G2,P3_dead_actua,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_dead_actua,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_dead_actua,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.27649999999999997,0.2,-0.047,-0.067,-0.018000000000000006,-0.36,-0.08435555555555556,2.006129945030041e-06,0.0002387294634585749,baja,
+G2,P3_dead_actua,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.006666666666666667,0.006533333333333334,1.0,1.0,sin_cambio,
+G2,P3_dead_actua,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,1,140,0.06,0.06666666666666667,0.006666666666666668,,,,-0.020452937166004586,0.036306934607027413,,,1.0,1.0,sin_cambio,responde
+G2,P3_dead_actua,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,-0.33557046979865773,-0.32687716769514885,1.7763568394002505e-15,2.540190280342358e-13,baja,
+G2,P3_dead_actua,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.04,0.010755555555555556,0.1795654296875,1.0,sin_cambio,
+G2,P3_dead_actua,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_dead_actua,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,62.644999999999996,3.200000000000003,2.8550000000000004,3.4999999999999964,0.9066666666666666,0.25924444444444444,4.330280643440687e-34,7.88111077106205e-32,sube,
+G2,P3_dead_actua,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,58.455,3.235000000000003,2.8900000000000006,3.530000000000001,0.8933333333333333,0.2541777777777778,7.799950339037261e-33,1.4117910113657442e-30,sube,
+G2,P3_dead_actua,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.016,-0.0010000000000000009,-0.0019999999999999983,-0.001,-0.5066666666666667,-0.011022222222222221,1.2161033345676806e-12,1.6539005350120456e-10,baja,
+G2,P3_dead_actua,qn1_ttr,num,descriptivo,,150,,,,,,,,0.73,0.721,-0.005500000000000005,-0.008000000000000007,-0.0040000000000000036,-0.48,-0.09524444444444445,1.980365676693407e-09,2.475457095866759e-07,baja,
+G2,P3_dead_actua,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_dead_actua,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_dead_habla,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.176,0.168,-0.007000000000000006,-0.008000000000000007,-0.006000000000000005,-0.7533333333333333,-0.13093333333333335,5.815315210521221e-24,9.595270097360015e-22,baja,
+G2,P3_dead_habla,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_dead_habla,cl2_pnj_inactivo_actua,bool,confirmatoria,se_dispara,150,7,0,143,0,0.04666666666666667,1.0,0.9533333333333334,,,,0.90053555409631,0.9772134509633353,,,1.793662034335766e-43,4.663521289272991e-42,se_dispara,responde
+G2,P3_dead_habla,cl2_pnj_inactivo_refinado,bool,confirmatoria,se_dispara,150,1,0,13,136,0.006666666666666667,0.09333333333333334,0.08666666666666667,,,,0.04176670694182897,0.14353068730369115,,,0.000244140625,0.002685546875,se_dispara,responde
+G2,P3_dead_habla,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_dead_habla,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_dead_habla,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.27649999999999997,0.2,-0.067,-0.08500000000000002,-0.035999999999999976,-0.5466666666666666,-0.12391111111111111,1.0313887967736937e-13,1.4336304275154343e-11,baja,
+G2,P3_dead_habla,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.006666666666666667,0.006533333333333334,1.0,1.0,sin_cambio,
+G2,P3_dead_habla,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,1,140,0.06,0.06666666666666667,0.006666666666666668,,,,-0.020452937166004586,0.036306934607027413,,,1.0,1.0,sin_cambio,responde
+G2,P3_dead_habla,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,-0.35570469798657717,-0.34705643889914867,2.220446049250313e-16,3.241851231905457e-14,baja,
+G2,P3_dead_habla,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.04666666666666667,0.004177777777777778,0.09228515625,1.0,sin_cambio,
+G2,P3_dead_habla,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_dead_habla,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,62.04,2.570000000000004,2.1999999999999957,2.8050000000000033,0.8933333333333333,0.2132,7.799950339037261e-33,1.4117910113657442e-30,sube,
+G2,P3_dead_habla,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,57.86,2.549999999999997,2.1599999999999966,2.7849999999999966,0.8733333333333333,0.2049777777777778,2.3329325569820177e-31,4.1526199514279915e-29,sube,
+G2,P3_dead_habla,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.016,-0.0010000000000000009,-0.0010000000000000009,-0.001,-0.6733333333333333,-0.04546666666666667,1.035239298994319e-25,1.739202022310456e-23,baja,
+G2,P3_dead_habla,qn1_ttr,num,descriptivo,,150,,,,,,,,0.73,0.736,0.006500000000000006,0.0040000000000000036,0.007000000000000006,0.6133333333333333,0.09186666666666667,3.359593857990048e-15,4.770623278345868e-13,sube,
+G2,P3_dead_habla,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_dead_habla,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_missing_actua,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.176,0.17,-0.006000000000000005,-0.007000000000000006,-0.0030000000000000027,-0.6533333333333333,-0.10257777777777778,8.201244547147495e-18,1.2383879266192717e-15,baja,
+G2,P3_missing_actua,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_missing_actua,cl2_pnj_inactivo_actua,bool,confirmatoria,se_dispara,150,7,0,143,0,0.04666666666666667,1.0,0.9533333333333334,,,,0.90053555409631,0.9772134509633353,,,1.793662034335766e-43,4.663521289272991e-42,se_dispara,responde
+G2,P3_missing_actua,cl2_pnj_inactivo_refinado,bool,confirmatoria,se_dispara,150,1,0,16,133,0.006666666666666667,0.11333333333333333,0.10666666666666666,,,,0.05799281643995715,0.16703514280185516,,,3.0517578125e-05,0.000396728515625,se_dispara,responde
+G2,P3_missing_actua,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_missing_actua,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_missing_actua,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.27649999999999997,0.2,-0.021999999999999992,-0.047500000000000014,0.0,-0.24,-0.06,0.001862468524299045,0.20300906914859593,sin_cambio,
+G2,P3_missing_actua,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.02,0.0196,0.25,1.0,sin_cambio,
+G2,P3_missing_actua,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,3,138,0.06,0.08,0.020000000000000004,,,,-0.010456203627051262,0.05607481674566345,,,0.25,1.0,sin_cambio,responde
+G2,P3_missing_actua,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,-0.37583892617449666,-0.36692040899058603,2.7755575615628914e-17,4.135580766728708e-15,baja,
+G2,P3_missing_actua,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.04666666666666667,0.004711111111111111,0.09228515625,1.0,sin_cambio,
+G2,P3_missing_actua,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_missing_actua,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,62.72,3.174999999999997,2.8700000000000045,3.355000000000004,0.96,0.25666666666666665,7.884069497892145e-40,1.521625413093184e-37,sube,
+G2,P3_missing_actua,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,58.504999999999995,3.1449999999999996,2.850000000000005,3.3949999999999996,0.96,0.2528,7.884069497892145e-40,1.521625413093184e-37,sube,
+G2,P3_missing_actua,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.016,-0.0010000000000000009,-0.0019999999999999983,-0.0009999999999999992,-0.4866666666666667,-0.0196,1.3442945758766522e-11,1.7879117859159473e-09,baja,
+G2,P3_missing_actua,qn1_ttr,num,descriptivo,,150,,,,,,,,0.73,0.722,-0.007000000000000006,-0.008500000000000008,-0.005500000000000005,-0.58,-0.11182222222222223,3.729582021548869e-13,5.109527369521951e-11,baja,
+G2,P3_missing_actua,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_missing_actua,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_missing_habla,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.176,0.169,-0.007000000000000006,-0.008000000000000007,-0.006000000000000005,-0.8066666666666666,-0.14551111111111112,5.55919206926577e-27,9.450626517751809e-25,baja,
+G2,P3_missing_habla,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_missing_habla,cl2_pnj_inactivo_actua,bool,confirmatoria,se_dispara,150,7,0,143,0,0.04666666666666667,1.0,0.9533333333333334,,,,0.90053555409631,0.9772134509633353,,,1.793662034335766e-43,4.663521289272991e-42,se_dispara,responde
+G2,P3_missing_habla,cl2_pnj_inactivo_refinado,bool,confirmatoria,se_dispara,150,1,0,17,132,0.006666666666666667,0.12,0.11333333333333333,,,,0.06346475177061507,0.17475933108472852,,,1.52587890625e-05,0.000213623046875,se_dispara,responde
+G2,P3_missing_habla,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_missing_habla,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_missing_habla,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.27649999999999997,0.2,-0.05250000000000003,-0.067,-0.033,-0.6,-0.12666666666666668,1.8172560940408258e-17,2.725884141061239e-15,baja,
+G2,P3_missing_habla,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P3_missing_habla,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,0,141,0.06,0.06,0.0,,,,-0.025481696583740138,0.02548169658374013,,,1.0,1.0,sin_cambio,responde
+G2,P3_missing_habla,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,-0.3691275167785235,-0.36061438673933605,5.551115123125783e-17,8.215650382226158e-15,baja,
+G2,P3_missing_habla,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.013333333333333334,0.0304,0.803619384765625,1.0,sin_cambio,
+G2,P3_missing_habla,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_missing_habla,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,61.955,2.585000000000001,2.120000000000001,2.7850000000000037,0.8533333333333334,0.20657777777777778,2.2621587335491238e-29,3.9361561963754754e-27,sube,
+G2,P3_missing_habla,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,57.895,2.5500000000000007,2.0700000000000003,2.759999999999998,0.8466666666666667,0.19733333333333333,4.195061141680324e-29,7.25745577510696e-27,sube,
+G2,P3_missing_habla,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.016,-0.0010000000000000009,-0.0010000000000000009,-0.0009999999999999992,-0.6466666666666666,-0.039466666666666664,1.0650640214744005e-22,1.7147530745737848e-20,baja,
+G2,P3_missing_habla,qn1_ttr,num,descriptivo,,150,,,,,,,,0.73,0.7384999999999999,0.007000000000000006,0.0050000000000000044,0.008000000000000007,0.6666666666666666,0.09373333333333334,5.44807980630921e-18,8.28108130559e-16,sube,
+G2,P3_missing_habla,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P3_missing_habla,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P4_2p,cl2_lugar_jaccard_similarity,num,descriptivo,,135,,,,,,,,0.176,0.171,-0.0040000000000000036,-0.0050000000000000044,-0.0040000000000000036,-0.5777777777777777,-0.062441700960219476,4.65686863837048e-12,6.240203975416442e-10,baja,
+G2,P4_2p,cl2_pc_hp_contradice_narracion,bool,confirmatoria,se_dispara,135,0,0,0,135,0.0,0.0,0.0,,,,-0.02766795244193089,0.02766795244193089,,,1.0,1.0,sin_cambio,no responde
+G2,P4_2p,cl2_pnj_inactivo_actua,bool,control,sin_cambio,135,7,0,0,128,0.05185185185185185,0.05185185185185185,0.0,,,,-0.028634288698519608,0.028634288698519614,,,1.0,1.0,sin_cambio,responde
+G2,P4_2p,cl2_pnj_inactivo_refinado,bool,descriptivo,,135,1,0,0,134,0.007407407407407408,0.007407407407407408,0.0,,,,-0.030788787879921696,0.030788787879921696,,,1.0,1.0,sin_cambio,
+G2,P4_2p,comenta_reglas,bool,control,sin_cambio,135,0,0,0,135,0.0,0.0,0.0,,,,-0.02766795244193089,0.02766795244193089,,,1.0,1.0,sin_cambio,responde
+G2,P4_2p,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,135,0,0,0,135,0.0,0.0,0.0,,,,-0.02766795244193089,0.02766795244193089,,,1.0,1.0,sin_cambio,responde
+G2,P4_2p,cr2_entidad_grafo_densidad,num,descriptivo,,135,,,,,,,,0.214,0.19,-0.067,-0.067,-0.032999999999999974,-0.5555555555555556,-0.13097393689986284,6.449578410896072e-14,9.0294097752545e-12,baja,
+G2,P4_2p,cr2_n_nombres_no_reconocidos,num,descriptivo,,135,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P4_2p,cr2_nombres_no_reconocidos,bool,control,sin_cambio,135,8,0,0,127,0.05925925925925926,0.05925925925925926,0.0,,,,-0.028280041756255935,0.028280041756255935,,,1.0,1.0,sin_cambio,responde
+G2,P4_2p,entity_coreference_rate,num,descriptivo,,134,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P4_2p,grafo_lema_densidad,num,descriptivo,,135,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.06666666666666667,-0.0026337448559670784,0.01171875,1.0,sin_cambio,
+G2,P4_2p,meta_comentario,bool,control,sin_cambio,135,0,0,0,135,0.0,0.0,0.0,,,,-0.02766795244193089,0.02766795244193089,,,1.0,1.0,sin_cambio,responde
+G2,P4_2p,qn1_legibilidad_fh,num,descriptivo,,135,,,,,,,,59.54,63.73,3.530000000000001,3.289999999999999,3.819999999999993,0.9703703703703703,0.29294924554183815,4.2157084511325866e-37,7.841217719106611e-35,sube,
+G2,P4_2p,qn1_legibilidad_sz,num,descriptivo,,135,,,,,,,,55.39,59.59,3.460000000000001,3.280000000000001,3.769999999999996,0.9703703703703703,0.2871330589849108,4.2157084511325866e-37,7.841217719106611e-35,sube,
+G2,P4_2p,qn1_ngram_repeticion,num,descriptivo,,135,,,,,,,,0.017,0.018,0.0,-0.0009999999999999974,0.0,-0.08888888888888889,0.07917695473251028,0.28528442186565817,1.0,sin_cambio,
+G2,P4_2p,qn1_ttr,num,descriptivo,,135,,,,,,,,0.73,0.726,-0.0020000000000000018,-0.0030000000000000027,-0.0010000000000000009,-0.2962962962962963,-0.02737997256515775,0.000515783670641405,0.05673620377055454,sin_cambio,
+G2,P4_2p,qn2_pj_accion_revisar,bool,control,sin_cambio,135,0,0,0,135,0.0,0.0,0.0,,,,-0.02766795244193089,0.02766795244193089,,,1.0,1.0,sin_cambio,responde
+G2,P4_2p,qn2_pj_piensa_narrado,bool,control,sin_cambio,135,0,0,0,135,0.0,0.0,0.0,,,,-0.02766795244193089,0.02766795244193089,,,1.0,1.0,sin_cambio,responde
+G2,P4_3p,cl2_lugar_jaccard_similarity,num,descriptivo,,135,,,,,,,,0.176,0.172,-0.005999999999999978,-0.006000000000000005,-0.0050000000000000044,-0.6296296296296297,-0.0924554183813443,2.2953175925267258e-14,3.236397805462683e-12,baja,
+G2,P4_3p,cl2_pc_hp_contradice_narracion,bool,confirmatoria,se_dispara,135,0,0,135,0,0.0,1.0,1.0,,,,0.9608716064135275,1.0,,,4.591774807899561e-41,9.642727096589077e-40,se_dispara,responde
+G2,P4_3p,cl2_pnj_inactivo_actua,bool,control,sin_cambio,135,7,0,0,128,0.05185185185185185,0.05185185185185185,0.0,,,,-0.028634288698519608,0.028634288698519614,,,1.0,1.0,sin_cambio,responde
+G2,P4_3p,cl2_pnj_inactivo_refinado,bool,descriptivo,,135,1,0,0,134,0.007407407407407408,0.007407407407407408,0.0,,,,-0.030788787879921696,0.030788787879921696,,,1.0,1.0,sin_cambio,
+G2,P4_3p,comenta_reglas,bool,control,sin_cambio,135,0,0,0,135,0.0,0.0,0.0,,,,-0.02766795244193089,0.02766795244193089,,,1.0,1.0,sin_cambio,responde
+G2,P4_3p,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,135,0,0,0,135,0.0,0.0,0.0,,,,-0.02766795244193089,0.02766795244193089,,,1.0,1.0,sin_cambio,responde
+G2,P4_3p,cr2_entidad_grafo_densidad,num,descriptivo,,135,,,,,,,,0.214,0.2,-0.05700000000000002,-0.067,-0.019000000000000003,-0.4740740740740741,-0.11824417009602195,1.638050151166579e-10,2.1458456980282184e-08,baja,
+G2,P4_3p,cr2_n_nombres_no_reconocidos,num,descriptivo,,135,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P4_3p,cr2_nombres_no_reconocidos,bool,control,sin_cambio,135,8,0,0,127,0.05925925925925926,0.05925925925925926,0.0,,,,-0.028280041756255935,0.028280041756255935,,,1.0,1.0,sin_cambio,responde
+G2,P4_3p,entity_coreference_rate,num,descriptivo,,134,,,,,,,,1.0,0.9166666666666666,-0.08333333333333337,-0.09999999999999998,-0.07692307692307687,-0.917910447761194,-0.9044887502784584,1.88079096131566e-37,3.517079097660284e-35,baja,
+G2,P4_3p,grafo_lema_densidad,num,descriptivo,,135,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.07407407407407407,-0.01646090534979424,0.001953125,0.2109375,sin_cambio,
+G2,P4_3p,meta_comentario,bool,control,sin_cambio,135,0,0,0,135,0.0,0.0,0.0,,,,-0.02766795244193089,0.02766795244193089,,,1.0,1.0,sin_cambio,responde
+G2,P4_3p,qn1_legibilidad_fh,num,descriptivo,,135,,,,,,,,59.54,63.44,3.6099999999999994,3.260000000000005,3.8700000000000045,1.0,0.2958024691358025,4.591774807899561e-41,8.953960875404143e-39,sube,
+G2,P4_3p,qn1_legibilidad_sz,num,descriptivo,,135,,,,,,,,55.39,59.36,3.6000000000000014,3.210000000000001,3.8200000000000003,1.0,0.28631001371742115,4.591774807899561e-41,8.953960875404143e-39,sube,
+G2,P4_3p,qn1_ngram_repeticion,num,descriptivo,,135,,,,,,,,0.017,0.017,-0.0009999999999999992,-0.0010000000000000009,0.0,-0.2814814814814815,0.056790123456790124,0.0004209679285168772,0.04672744006537337,baja,
+G2,P4_3p,qn1_ttr,num,descriptivo,,135,,,,,,,,0.73,0.729,-0.0010000000000000009,-0.0030000000000000027,0.0,-0.14814814814814814,-0.028257887517146776,0.09269003089837793,1.0,sin_cambio,
+G2,P4_3p,qn2_pj_accion_revisar,bool,control,sin_cambio,135,0,0,0,135,0.0,0.0,0.0,,,,-0.02766795244193089,0.02766795244193089,,,1.0,1.0,sin_cambio,responde
+G2,P4_3p,qn2_pj_piensa_narrado,bool,control,sin_cambio,135,0,0,0,135,0.0,0.0,0.0,,,,-0.02766795244193089,0.02766795244193089,,,1.0,1.0,sin_cambio,responde
+G2,P5,cl2_lugar_jaccard_similarity,num,descriptivo,,150,,,,,,,,0.176,0.1705,-0.007000000000000006,-0.007000000000000006,-0.006499999999999992,-0.78,-0.12768888888888888,6.290819631269067e-26,1.0631485176844723e-23,baja,
+G2,P5,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P5,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,7,0,0,143,0.04666666666666667,0.04666666666666667,0.0,,,,-0.026058085062685237,0.026058085062685237,,,1.0,1.0,sin_cambio,responde
+G2,P5,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G2,P5,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P5,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P5,cr2_entidad_grafo_densidad,num,confirmatoria,baja,150,,,,,,,,0.27649999999999997,0.2,-0.028500000000000004,-0.067,-0.002,-0.3933333333333333,-0.09791111111111112,3.1841488746150764e-08,5.41305308684563e-07,baja,responde
+G2,P5,cr2_n_nombres_no_reconocidos,num,confirmatoria,sube,150,,,,,,,,0.0,2.0,2.0,2.0,2.0,1.0,0.9746666666666667,1.401298464324817e-45,4.90454462513686e-44,sube,responde
+G2,P5,cr2_nombres_no_reconocidos,bool,confirmatoria,se_dispara,150,9,0,141,0,0.06,1.0,0.94,,,,0.8840312737799731,0.9681159559462748,,,7.174648137343064e-43,1.578422590215474e-41,se_dispara,responde
+G2,P5,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P5,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.06666666666666667,-0.014755555555555555,0.001953125,0.2109375,sin_cambio,
+G2,P5,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P5,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,63.394999999999996,3.7149999999999963,3.4000000000000057,3.8599999999999994,1.0,0.30862222222222224,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G2,P5,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,59.19499999999999,3.7500000000000036,3.4450000000000003,3.8949999999999996,1.0,0.3060888888888889,1.401298464324817e-45,3.0828566215145976e-43,sube,
+G2,P5,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.016,-0.0010000000000000009,-0.0019999999999999983,-0.001,-0.56,-0.03582222222222222,1.0064796200415156e-15,1.4593954490601976e-13,baja,
+G2,P5,qn1_ttr,num,descriptivo,,150,,,,,,,,0.73,0.714,-0.015999999999999903,-0.017000000000000015,-0.014000000000000012,-0.9733333333333334,-0.2242222222222222,1.5871106406942878e-41,3.158350174981633e-39,baja,
+G2,P5,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P5,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P6,cl2_lugar_jaccard_similarity,num,control,sin_cambio,150,,,,,,,,0.176,0.176,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,responde
+G2,P6,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P6,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,6,1,0,143,0.04666666666666667,0.04,-0.006666666666666668,,,,-0.037337481363054974,0.02093294814069961,,,1.0,1.0,sin_cambio,responde
+G2,P6,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G2,P6,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P6,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P6,cr2_entidad_grafo_densidad,num,control,sin_cambio,150,,,,,,,,0.27649999999999997,0.27649999999999997,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,responde
+G2,P6,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P6,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,0,141,0.06,0.06,0.0,,,,-0.025481696583740138,0.02548169658374013,,,1.0,1.0,sin_cambio,responde
+G2,P6,entity_coreference_rate,num,control,sin_cambio,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,responde
+G2,P6,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.02,-0.013244444444444444,0.25,1.0,sin_cambio,
+G2,P6,grammaticality_lt,num,confirmatoria,baja,50,,,,,,,,1.0,0.923,-0.07599999999999996,-0.08699999999999997,-0.061000000000000054,-1.0,-0.9996,1.7763568394002505e-15,3.375077994860476e-14,baja,responde
+G2,P6,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P6,qn1_legibilidad_fh,num,control,sin_cambio,150,,,,,,,,59.239999999999995,59.239999999999995,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,responde
+G2,P6,qn1_legibilidad_sz,num,control,sin_cambio,150,,,,,,,,55.095,55.095,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,responde
+G2,P6,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.0085,-0.0075000000000000015,-0.009,0.0,-0.5133333333333333,-0.30973333333333336,2.0200455794640623e-18,3.0906697365800153e-16,baja,
+G2,P6,qn1_ttr,num,control,sin_cambio,150,,,,,,,,0.73,0.73,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,responde
+G2,P6,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P6,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P7,cl2_lugar_jaccard_similarity,num,control,sin_cambio,150,,,,,,,,0.176,0.176,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,responde
+G2,P7,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P7,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,7,0,0,143,0.04666666666666667,0.04666666666666667,0.0,,,,-0.026058085062685237,0.026058085062685237,,,1.0,1.0,sin_cambio,responde
+G2,P7,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,1,0,0,149,0.006666666666666667,0.006666666666666667,0.0,,,,-0.027811243256914937,0.027811243256914937,,,1.0,1.0,sin_cambio,
+G2,P7,comenta_reglas,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P7,cr1_veredicto_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P7,cr2_entidad_grafo_densidad,num,descriptivo,,150,,,,,,,,0.27649999999999997,0.267,0.03500000000000002,0.02150000000000001,0.056999999999999995,0.46,0.10217777777777778,1.16122748330721e-09,1.4631466289670845e-07,sube,
+G2,P7,cr2_n_nombres_no_reconocidos,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P7,cr2_nombres_no_reconocidos,bool,control,sin_cambio,150,9,0,0,141,0.06,0.06,0.0,,,,-0.025481696583740138,0.02548169658374013,,,1.0,1.0,sin_cambio,responde
+G2,P7,entity_coreference_rate,num,descriptivo,,149,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,
+G2,P7,grafo_lema_densidad,num,descriptivo,,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.006666666666666667,0.032355555555555554,1.0,1.0,sin_cambio,
+G2,P7,meta_comentario,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P7,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,59.675,0.245000000000001,-0.13500000000000156,0.6099999999999994,0.12666666666666668,0.017066666666666667,0.14005540740614836,1.0,sin_cambio,
+G2,P7,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,55.37,0.25500000000000256,-0.11999999999999744,0.6799999999999997,0.12666666666666668,0.019777777777777776,0.14005540740614836,1.0,sin_cambio,
+G2,P7,qn1_ngram_repeticion,num,confirmatoria,sube,150,,,,,,,,0.016,0.345,0.32799999999999996,0.3195,0.33399999999999996,1.0,1.0,1.401298464324817e-45,4.90454462513686e-44,sube,responde
+G2,P7,qn1_ttr,num,confirmatoria,baja,150,,,,,,,,0.73,0.486,-0.24499999999999994,-0.252,-0.24099999999999994,-1.0,-0.9998222222222222,1.401298464324817e-45,4.90454462513686e-44,baja,responde
+G2,P7,qn2_pj_accion_revisar,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P7,qn2_pj_piensa_narrado,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P8,cl2_lugar_jaccard_similarity,num,confirmatoria,baja,150,,,,,,,,0.176,0.115,-0.057,-0.062,-0.05099999999999999,-0.8933333333333333,-0.8936888888888889,7.799950339037261e-33,1.5599900678074522e-31,baja,responde
+G2,P8,cl2_pc_hp_contradice_narracion,bool,control,sin_cambio,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,responde
+G2,P8,cl2_pnj_inactivo_actua,bool,control,sin_cambio,150,0,7,0,143,0.04666666666666667,0.0,-0.04666666666666667,,,,-0.09318647287196435,-0.012115644380694804,,,0.015625,1.0,sin_cambio,responde
+G2,P8,cl2_pnj_inactivo_refinado,bool,descriptivo,,150,0,1,0,149,0.006666666666666667,0.0,-0.006666666666666667,,,,-0.03679284016679665,0.01889973248837306,,,1.0,1.0,sin_cambio,
+G2,P8,comenta_reglas,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G2,P8,cr1_veredicto_contradice_narracion,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G2,P8,cr2_entidad_grafo_densidad,num,confirmatoria,baja,150,,,,,,,,0.27649999999999997,0.167,0.0,-0.06950000000000003,0.0,-0.12,-0.10995555555555556,0.13565556515200133,1.0,sin_cambio,no responde
+G2,P8,cr2_n_nombres_no_reconocidos,num,confirmatoria,sube,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.22666666666666666,0.2175111111111111,3.1028037028590916e-07,4.9644859245745465e-06,sube,responde
+G2,P8,cr2_nombres_no_reconocidos,bool,confirmatoria,se_dispara,150,3,6,39,102,0.06,0.28,0.22000000000000003,,,,0.13740774390732066,0.3016500228333443,,,5.417768988991156e-07,8.126653483486734e-06,se_dispara,responde
+G2,P8,entity_coreference_rate,num,descriptivo,,145,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.006896551724137931,0.006896551724137931,1.0,1.0,sin_cambio,
+G2,P8,grafo_lema_densidad,num,confirmatoria,baja,150,,,,,,,,0.0,0.0,0.0,0.0,0.0,-0.04,-0.03991111111111111,0.1795654296875,1.0,sin_cambio,no responde
+G2,P8,grammaticality_lt,num,descriptivo,,50,,,,,,,,1.0,1.0,0.0,0.0,0.0,-0.06,-0.0604,0.375,1.0,sin_cambio,
+G2,P8,meta_comentario,bool,descriptivo,,150,0,0,1,149,0.0,0.006666666666666667,0.006666666666666667,,,,-0.01889973248837306,0.03679284016679665,,,1.0,1.0,sin_cambio,
+G2,P8,qn1_legibilidad_fh,num,descriptivo,,150,,,,,,,,59.239999999999995,59.42,-0.14999999999999858,-1.7349999999999923,2.3199999999999967,-0.013333333333333334,0.037866666666666667,0.9349614855143208,1.0,sin_cambio,
+G2,P8,qn1_legibilidad_sz,num,descriptivo,,150,,,,,,,,55.095,55.239999999999995,0.05500000000000327,-1.740000000000002,2.1899999999999977,0.0,0.03728888888888889,1.0,1.0,sin_cambio,
+G2,P8,qn1_ngram_repeticion,num,descriptivo,,150,,,,,,,,0.016,0.0165,0.0010000000000000009,-0.0035000000000000005,0.0065,0.06,0.01808888888888889,0.5065964185708861,1.0,sin_cambio,
+G2,P8,qn1_ttr,num,descriptivo,,150,,,,,,,,0.73,0.726,0.0010000000000000009,-0.009000000000000008,0.008500000000000008,0.013333333333333334,-0.02631111111111111,0.9345249854171015,1.0,sin_cambio,
+G2,P8,qn2_pj_accion_revisar,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G2,P8,qn2_pj_piensa_narrado,bool,descriptivo,,150,0,0,0,150,0.0,0.0,0.0,,,,-0.024970244752164417,0.024970244752164417,,,1.0,1.0,sin_cambio,
+G2,P9,ventana_bucles_ciclos,num,confirmatoria,sube,60,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,no responde
+G2,P9,ventana_bucles_visitas,num,confirmatoria,sube,60,,,,,,,,1.0,1.0,0.0,0.0,0.0,0.03333333333333333,0.005277777777777778,0.75390625,1.0,sin_cambio,no responde
+G2,P9,ventana_coherencia_C,num,control,sin_cambio,22,,,,,,,,2.0,3.0,0.0,0.0,0.5,0.3181818181818182,0.14049586776859505,0.0654296875,1.0,sin_cambio,responde
+G2,P9,ventana_consistencia_V,num,control,sin_cambio,22,,,,,,,,0.6475,0.6475,0.0,0.0,0.0,0.0,0.0,1.0,1.0,sin_cambio,responde
+G2,P9,ventana_entity_coreference_medio,num,control,sin_cambio,60,,,,,,,,0.7866764414098972,0.7916666666666666,-0.002075441919191956,-0.01388888888888884,0.0032169117647058987,-0.15,0.010833333333333334,0.2806097176983542,1.0,sin_cambio,responde
+G2,P9,ventana_jaccard_medio,num,confirmatoria,baja,60,,,,,,,,0.16828734830674028,0.15264809467340668,-0.014766869431379434,-0.02262107795469917,-0.012489801410277779,-0.7333333333333333,-0.6044444444444445,5.205691473372798e-09,9.370244652071036e-08,baja,responde
+G2,P9,ventana_mattr,num,control,sin_cambio,60,,,,,,,,0.8265,0.827,0.0010000000000000009,-0.0010000000000000009,0.0020000000000000018,0.08333333333333333,0.027777777777777776,0.5966417603730826,1.0,sin_cambio,responde
+G2,P9,ventana_mtld,num,control,sin_cambio,60,,,,,,,,110.7,111.695,0.9450000000000003,-0.1700000000000017,3.3499999999999943,0.16666666666666666,0.09194444444444444,0.2450608330229457,1.0,sin_cambio,responde

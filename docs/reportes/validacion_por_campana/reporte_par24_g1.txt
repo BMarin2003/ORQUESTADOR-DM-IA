@@ -1,0 +1,109 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 24 (real) · G1 (Multiagente) · Villa Pilfera · mas
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        1 (  0.1%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                  121 (  8.6%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             41 (  2.9%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.218  [0.112, 0.392]
+    qn1_ttr                                n=1400  prom=0.703  [0.624, 0.791]
+    qn1_ngram_repeticion                   n=1400  prom=0.024  [0.000, 0.088]
+    qn1_legibilidad_fh                     n=1400  prom=60.478  [37.110, 76.470]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.342  [0.000, 1.000]
+  CR-2 turnos con algún nombre no reconocido: 1400
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  84 visitas distintas · 11 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: El Condado de Pilfera ↔ El Cuartel de la Vigilancia ↔ La Plaza de las Cerraduras ↔ La Taberna del Gato Cojo ↔ arteria de chapa y vapor ↔ callejón lateral ↔ cámara de digestión ↔ intersticio estrecho ↔ pasillo ↔ patio interior abandonado ↔ sendero oculto (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1149 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: El Condado de Pilfera, El Cuartel de la Vigilancia, El Museo de Cosas Robadas, La Plaza de las Cerraduras, La Taberna del Gato Cojo, Villa Pilfera
+    turno 1: El Condado de Pilfera, La Taberna del Gato Cojo, Villa Pilfera
+    turno 4: La Plaza de las Cerraduras, La Taberna del Gato Cojo
+    turno 5: La Plaza de las Cerraduras, La Taberna del Gato Cojo
+    turno 6: La Plaza de las Cerraduras, La Taberna del Gato Cojo
+  camino (primeras y últimas visitas):
+    turno   2 → La Taberna del Gato Cojo
+    turno   7 → La Plaza de las Cerraduras
+    turno  20 → La Taberna del Gato Cojo
+    ...
+    turno 1362 → La Taberna del Gato Cojo
+    turno 1372 → sendero oculto
+    turno 1373 → La Taberna del Gato Cojo
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  La Vigilancia de Pilfera disparó en turno 240 · ✓ reconocido en turno 241
+    agenda: La Feria de las Cerraduras abre sus puertas y con ella el museo abre veinticuatro horas, con doble turno de guardia
+  La Vigilancia de Pilfera disparó en turno 640 · ✓ reconocido en turno 641
+    agenda: La Real Contaduría anuncia una inspección del inventario del museo y la Vigilancia teme que se descubra algo que no cuadra
+  La Cuadrilla del Gato Cojo disparó en turno 1060 · ✓ reconocido en turno 1061
+    agenda: La última noche de la Feria, la Noche de la Gran Cerradura, la Diadema se traslada a la plaza para ser exhibida ante toda la ciudad
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 2.833  (sobre 10 secciones; máximo teórico = 4.5)
+    Fermín Llavín: Ci=4.0  (primera mención sección 0, última sección 8)
+    Aldric: Ci=4.0  (primera mención sección 1, última sección 9)
+    Figura encapuchada: Ci=0.5  (primera mención sección 8, última sección 9)
+  V promedio = 0.063  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Fermín Llavín: Vi=0.109  (783 atributos propios detectados)
+    Aldric: Vi=0.043  (255 atributos propios detectados)
+    Figura encapuchada: Vi=0.036  (192 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=0.000  (0/1)
+    npc.affinity     recall=0.333  (3/9)
+  recall global: 0.300  (10 deltas evaluables)
+  7 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  102 · Fermín Llavín · npc.affinity=wary
+    turno  147 · Fermín Llavín · npc.affinity=cold
+    turno  155 · Fermín Llavín · npc.affinity=wary
+    turno  184 · Fermín Llavín · npc.affinity=hostile
+    turno  976 · Fermín Llavín · npc.status=captured
+    turno 1249 · Figura encapuchada · npc.affinity=wary
+    turno 1370 · Figura encapuchada · npc.affinity=loyal
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.997  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.990  (min 0.968, max 1.000, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.034  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  121 turno(s) marcados en vivo. Reclasificación:
+    sujeto de una acción (repite el hallazgo crudo): 0 (0.0%)
+    solo mencionado/referenciado (posible falso positivo): 122 (100.8%)
+
+==========================================================================
+

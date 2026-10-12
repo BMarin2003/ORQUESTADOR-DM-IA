@@ -1,0 +1,102 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 14 (real) · G2 (Monolítico) · Roble Cantor · monolithic
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        1 (  0.1%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                    0 (  0.0%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             19 (  1.4%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.166  [0.083, 0.340]
+    qn1_ttr                                n=1400  prom=0.737  [0.605, 0.865]
+    qn1_ngram_repeticion                   n=1400  prom=0.016  [0.000, 0.072]
+    qn1_legibilidad_fh                     n=1400  prom=61.527  [38.760, 88.200]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.337  [0.000, 1.000]
+  CR-2 turnos con algún nombre no reconocido: 34
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  143 visitas distintas · 6 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: El Taller donde se vio por última vez la Voz del Roble ↔ Jardín de los Susurros ↔ Las Raíces del Roble ↔ Los Campos del Roble ↔ abertura estrecha y oscura ↔ trampilla de hierro (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  687 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: El Taller donde se vio por última vez la Voz del Roble, Jardín de los Susurros, Las Raíces del Roble, Roble Cantor
+    turno 1: El Taller donde se vio por última vez la Voz del Roble, Jardín de los Susurros
+    turno 2: El Taller donde se vio por última vez la Voz del Roble, Jardín de los Susurros
+    turno 3: El Taller donde se vio por última vez la Voz del Roble, Jardín de los Susurros
+    turno 4: El Taller donde se vio por última vez la Voz del Roble, Jardín de los Susurros
+  camino (primeras y últimas visitas):
+    turno   6 → Jardín de los Susurros
+    turno   7 → El Taller donde se vio por última vez la Voz del Roble
+    turno  13 → Jardín de los Susurros
+    ...
+    turno 1348 → El Taller donde se vio por última vez la Voz del Roble
+    turno 1374 → Jardín de los Susurros
+    turno 1375 → El Taller donde se vio por última vez la Voz del Roble
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  ningún reloj ha disparado todavía en esta campaña
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 1.5  (sobre 10 secciones; máximo teórico = 4.5)
+    Madame Valeriane: Ci=4.0  (primera mención sección 1, última sección 9)
+    Toño Bravante: Ci=0.5  (primera mención sección 0, última sección 1)
+    Melida Corcho: Ci=0.0  (primera mención sección 0, última sección 0)
+  V promedio = 0.151  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Madame Valeriane: Vi=0.08  (578 atributos propios detectados)
+    Toño Bravante: Vi=0.138  (65 atributos propios detectados)
+    Melida Corcho: Vi=0.235  (17 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.affinity     recall=0.167  (2/12)
+  recall global: 0.167  (12 deltas evaluables)
+  10 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  649 · Madame Valeriane · npc.affinity=cordial
+    turno  723 · Toño Bravante · npc.affinity=cordial
+    turno  840 · Madame Valeriane · npc.affinity=loyal
+    turno  938 · Madame Valeriane · npc.affinity=devoted
+    turno 1186 · Madame Valeriane · npc.affinity=cordial
+    turno 1190 · Madame Valeriane · npc.affinity=loyal
+    turno 1261 · Madame Valeriane · npc.affinity=cordial
+    turno 1267 · Madame Valeriane · npc.affinity=loyal
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.999  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.999  (min 0.958, max 1.000, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.014  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  ningún turno con cl2_pnj_inactivo_actua=true en esta campaña -- nada que reclasificar
+
+==========================================================================
+

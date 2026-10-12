@@ -1,0 +1,107 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 27 (real) · G1 (Multiagente) · La Vía del Último Silencio · mas
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        5 (  0.4%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                  241 ( 17.2%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             25 (  1.8%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.239  [0.126, 0.368]
+    qn1_ttr                                n=1400  prom=0.693  [0.591, 0.779]
+    qn1_ngram_repeticion                   n=1400  prom=0.031  [0.000, 0.092]
+    qn1_legibilidad_fh                     n=1400  prom=61.840  [47.330, 75.010]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.119  [0.000, 0.667]
+  CR-2 turnos con algún nombre no reconocido: 1399
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  32 visitas distintas · 8 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: El Monasterio de Alba Sorda ↔ El interior del féretro ↔ camino de piedra tallada ↔ cámara circular ↔ cámara del Núcleo ↔ galería natural de caliza ↔ pasillo circular de paredes de hierro remachado ↔ plataforma circular de obsidiana (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1345 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: Berrocal, El Monasterio de Alba Sorda, El Paso del Lobo, El interior del féretro, La Vía del Último Silencio, camino de piedra tallada, cámara del Núcleo
+    turno 1: Berrocal, El Paso del Lobo, El interior del féretro, camino de piedra tallada, cámara del Núcleo
+    turno 2: El Monasterio de Alba Sorda, El Paso del Lobo, El interior del féretro, camino de piedra tallada, cámara del Núcleo, galería natural de caliza
+    turno 3: El Paso del Lobo, camino de piedra tallada, cámara del Núcleo
+    turno 4: El interior del féretro, camino de piedra tallada, cámara del Núcleo
+  camino (primeras y últimas visitas):
+    turno  11 → cámara del Núcleo
+    turno 100 → El interior del féretro
+    turno 107 → cámara del Núcleo
+    ...
+    turno 1183 → camino de piedra tallada
+    turno 1209 → pasillo circular de paredes de hierro remachado
+    turno 1292 → cámara del Núcleo
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  Las Hospitalarias de Odilia disparó en turno 260 · ✓ reconocido en turno 261
+    agenda: La procesión llega a Berrocal, donde los enfermos esperan en el camino, y hay que decidir si pasar de largo o detenerse
+  La Cofradía de Portadores disparó en turno 640 · ✓ reconocido en turno 641
+    agenda: Los enviados del monasterio de Alba Sorda salen al encuentro de la procesión y exigen conocer el estado del plazo
+  La Cofradía de Portadores disparó en turno 980 · ✓ reconocido en turno 981
+    agenda: Llega la noche del solsticio de invierno, la única en que el féretro puede reposar en el monasterio
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 1.5  (sobre 10 secciones; máximo teórico = 4.5)
+    Anselmo Vela: Ci=4.5  (primera mención sección 0, última sección 9)
+    Madre Odalys Brena: Ci=0.0  (primera mención sección 0, última sección 0)
+    Tibaldo Sierra: Ci=0.0  (primera mención sección 0, última sección 0)
+  V promedio = 0.138  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Anselmo Vela: Vi=0.104  (645 atributos propios detectados)
+    Madre Odalys Brena: Vi=0.167  (12 atributos propios detectados)
+    Tibaldo Sierra: Vi=0.143  (7 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=0.400  (2/5)
+    npc.affinity     recall=0.000  (0/2)
+  recall global: 0.286  (7 deltas evaluables)
+  5 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  759 · Amalgama de basalto · npc.status=dead
+    turno  768 · Amalgama de basalto · npc.status=dead
+    turno 1138 · Anselmo Vela · npc.status=dead
+    turno 1308 · Anselmo Vela · npc.affinity=loyal
+    turno 1309 · Anselmo Vela · npc.affinity=devoted
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.998  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.987  (min 0.966, max 1.000, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.036  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  241 turno(s) marcados en vivo. Reclasificación:
+    sujeto de una acción (repite el hallazgo crudo): 0 (0.0%)
+    solo mencionado/referenciado (posible falso positivo): 241 (100.0%)
+
+==========================================================================
+

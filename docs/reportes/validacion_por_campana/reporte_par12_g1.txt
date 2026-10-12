@@ -1,0 +1,96 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 12 (real) · G1 (Multiagente) · Muelle Gris · mas
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        9 (  0.6%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                    0 (  0.0%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             21 (  1.5%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.209  [0.069, 0.319]
+    qn1_ttr                                n=1400  prom=0.694  [0.608, 0.806]
+    qn1_ngram_repeticion                   n=1400  prom=0.026  [0.000, 0.095]
+    qn1_legibilidad_fh                     n=1400  prom=62.806  [46.530, 76.320]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.244  [0.000, 0.857]
+  CR-2 turnos con algún nombre no reconocido: 1397
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  30 visitas distintas · 6 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: El Almacén del Fondeadero ↔ La Casa de Selmira ↔ La Tienda de Aparejos de Osvaldo ↔ oficina de monitoreo ↔ oficina llena de polvo ↔ pasillo industrial (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1325 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: Almacén Tres, El Almacén del Fondeadero, La Casa de Selmira, La Costa Gris, La Lonja del Muelle, La Tienda de Aparejos de Osvaldo, Muelle Gris
+    turno 1: El Almacén del Fondeadero, La Casa de Selmira, almacén de redes abandonado
+    turno 2: El Almacén del Fondeadero, La Casa de Selmira, almacén de redes abandonado, hueco tras el panel, puerta de servicio
+    turno 3: El Almacén del Fondeadero, La Casa de Selmira, puerta de servicio
+    turno 4: El Almacén del Fondeadero, La Casa de Selmira
+  camino (primeras y últimas visitas):
+    turno 100 → oficina llena de polvo
+    turno 110 → La Casa de Selmira
+    turno 359 → La Tienda de Aparejos de Osvaldo
+    ...
+    turno 1185 → La Tienda de Aparejos de Osvaldo
+    turno 1222 → El Almacén del Fondeadero
+    turno 1235 → La Tienda de Aparejos de Osvaldo
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  ningún reloj ha disparado todavía en esta campaña
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 2.833  (sobre 10 secciones; máximo teórico = 4.5)
+    Osvaldo Prín: Ci=4.5  (primera mención sección 0, última sección 9)
+    Selmira Ondas: Ci=1.0  (primera mención sección 0, última sección 2)
+    Dunmar: Ci=3.0  (primera mención sección 3, última sección 9)
+  V promedio = 0.062  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Osvaldo Prín: Vi=0.087  (743 atributos propios detectados)
+    Selmira Ondas: Vi=0.072  (221 atributos propios detectados)
+    Dunmar: Vi=0.026  (152 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.affinity     recall=0.600  (3/5)
+  recall global: 0.600  (5 deltas evaluables)
+  2 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  413 · Osvaldo Prín · npc.affinity=cordial
+    turno  440 · Osvaldo Prín · npc.affinity=wary
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.997  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.989  (min 0.969, max 1.000, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.033  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  ningún turno con cl2_pnj_inactivo_actua=true en esta campaña -- nada que reclasificar
+
+==========================================================================
+

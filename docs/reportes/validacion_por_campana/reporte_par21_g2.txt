@@ -1,0 +1,101 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 21 (real) · G2 (Monolítico) · La Ceniza Mansa · monolithic
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        2 (  0.1%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                  223 ( 15.9%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             16 (  1.1%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.170  [0.086, 0.282]
+    qn1_ttr                                n=1400  prom=0.725  [0.599, 0.859]
+    qn1_ngram_repeticion                   n=1400  prom=0.018  [0.000, 0.091]
+    qn1_legibilidad_fh                     n=1400  prom=61.123  [39.380, 87.910]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.125  [0.000, 1.000]
+  CR-2 turnos con algún nombre no reconocido: 71
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  205 visitas distintas · 12 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: Colmillo del Diablo ↔ El Camarote del Capitán ↔ La Ceniza Mansa ↔ La Cubierta ↔ La Cámara de Oficiales ↔ Los Dientes de Sal ↔ almacén ↔ despacho del intendente ↔ pasillo lateral ↔ pasillo oculto ↔ receptáculo cilíndrico ↔ rendija bajo la tabla suelta (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  434 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: Colmillo del Diablo, El Mar de la Bonanza, La Ceniza Mansa, Los Dientes de Sal
+    turno 8: Colmillo del Diablo, pasillo lateral, rendija bajo la tabla suelta
+    turno 9: Colmillo del Diablo, pasillo lateral
+    turno 10: Colmillo del Diablo, pasillo oculto
+    turno 11: Colmillo del Diablo, pasillo lateral
+  camino (primeras y últimas visitas):
+    turno   3 → Colmillo del Diablo
+    turno  26 → rendija bajo la tabla suelta
+    turno  29 → Colmillo del Diablo
+    ...
+    turno 1392 → pasillo lateral
+    turno 1394 → rendija bajo la tabla suelta
+    turno 1398 → Colmillo del Diablo
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  Los Oficiales de la Ceniza disparó en turno 240 · ✓ reconocido en turno 241
+    agenda: El agua dulce se acaba y hay que decidir quién bebe y cuánto mientras el régimen de encierro sigue en pie
+  La Marinería de Cubierta disparó en turno 640 · ✓ reconocido en turno 641
+    agenda: La marinería pierde la paciencia con el régimen de encierro y se prepara para abrir la bodega por su cuenta
+  Los Oficiales de la Ceniza disparó en turno 1000 · ✓ reconocido en turno 1001
+    agenda: El mar cobra lo que se le debe: una tormenta sin viento previo se acerca por el horizonte, y no espera a que la tripulación se ponga de acuerdo
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 2.25  (sobre 10 secciones; máximo teórico = 4.5)
+    Serafín Brea: Ci=4.5  (primera mención sección 0, última sección 9)
+    Dolores Anzuelo: Ci=0.0  (primera mención sección 0, última sección 0)
+  V promedio = 0.093  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Serafín Brea: Vi=0.061  (326 atributos propios detectados)
+    Dolores Anzuelo: Vi=0.125  (8 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=1.000  (1/1)
+    npc.affinity     recall=0.000  (0/1)
+  recall global: 0.500  (2 deltas evaluables)
+  1 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno 1369 · Serafín Brea · npc.affinity=loyal
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.997  (1400 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.999  (min 0.977, max 1.000, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.016  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  223 turno(s) marcados en vivo. Reclasificación:
+    sujeto de una acción (repite el hallazgo crudo): 0 (0.0%)
+    solo mencionado/referenciado (posible falso positivo): 225 (100.9%)
+
+==========================================================================
+

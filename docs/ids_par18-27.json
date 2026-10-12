@@ -1,0 +1,122 @@
+[
+  {
+    "par": "18",
+    "lugar": "Nubarrón",
+    "tono": "light",
+    "registro": "comedic",
+    "pj": "PJ27",
+    "pj_key": "pj_pj27",
+    "tenant_id": "fc8f4205-7fe0-4077-9c67-137d4f65bfcf",
+    "user_id": "e79143ce-5253-4e91-a27d-79f0cbf5008d",
+    "campaign_g2": "a7ef3360-3014-4942-bf11-4db774a95904",
+    "campaign_g1": "878b05b9-c082-4595-9c64-5bdc736bbe1a"
+  },
+  {
+    "par": "19",
+    "lugar": "Karhad",
+    "tono": "heroic",
+    "registro": "serious",
+    "pj": "PJ19",
+    "pj_key": "pj_pj19",
+    "tenant_id": "93c1f1f2-9176-4cd7-b18d-71536cd13c1c",
+    "user_id": "9efd2a8b-3f62-4e4a-9e36-dde00744a9f3",
+    "campaign_g2": "7c8d9bfe-aa79-4142-80b3-b520e013b9d0",
+    "campaign_g1": "a583b7b7-c777-4032-b493-3b61d57476b0"
+  },
+  {
+    "par": "20",
+    "lugar": "Brasas Lentas",
+    "tono": "mixed",
+    "registro": "comedic",
+    "pj": "PJ06",
+    "pj_key": "pj_pj06",
+    "tenant_id": "9f09d4cf-6a01-4f67-9cf2-115be2de815e",
+    "user_id": "598c00f1-db3e-4710-b804-cd01250b7a7b",
+    "campaign_g2": "9e7e4aec-5a1d-41ce-9904-ccffaebfd944",
+    "campaign_g1": "7b598b5b-8d8d-4012-a9cf-656d1f2f5109"
+  },
+  {
+    "par": "21",
+    "lugar": "La Ceniza Mansa",
+    "tono": "mixed",
+    "registro": "serious",
+    "pj": "PJ08",
+    "pj_key": "pj_pj08",
+    "tenant_id": "eef3d018-6ca0-4e02-9abb-112b3f7b428c",
+    "user_id": "ac264145-1c1f-47ca-82eb-db72be47b4c0",
+    "campaign_g2": "dfe775b9-a57f-4bba-ba17-a680c9e61ee8",
+    "campaign_g1": "0480c825-e678-470e-97a5-6cb77a9e0925"
+  },
+  {
+    "par": "22",
+    "lugar": "Casa Aguasmuertas",
+    "tono": "grimdark",
+    "registro": "serious",
+    "pj": "PJ15",
+    "pj_key": "pj_pj15",
+    "tenant_id": "7e729bb6-d3cf-4c36-bf37-d38bce59d056",
+    "user_id": "fdd40a97-cb1a-4325-84fd-d671f0a9a4e6",
+    "campaign_g2": "1437e3df-bbf5-4118-b968-2f39f9f891f3",
+    "campaign_g1": "ad163fd8-4b8d-43bd-acf6-33e7a33afb97"
+  },
+  {
+    "par": "23",
+    "lugar": "Sal Negra",
+    "tono": "grimdark",
+    "registro": "serious",
+    "pj": "PJ16",
+    "pj_key": "pj_pj16",
+    "tenant_id": "9d46b828-99e5-4479-8066-56cd8cab74bb",
+    "user_id": "4588ed5f-472d-42b0-a95a-11240f0e01e8",
+    "campaign_g2": "e8629a76-58f5-45d3-91e2-15bf7c1d60af",
+    "campaign_g1": "683123ee-89b1-48ad-9d29-6100b6e822d4"
+  },
+  {
+    "par": "24",
+    "lugar": "Villa Pilfera",
+    "tono": "light",
+    "registro": "comedic",
+    "pj": "PJ09",
+    "pj_key": "pj_pj09",
+    "tenant_id": "4d3a43ec-c888-4938-8c8e-80045c0b730d",
+    "user_id": "51ed5e31-b557-46a0-a04d-1ca4897f3759",
+    "campaign_g2": "b09c56ca-cc15-4576-9ad7-cd16773f14b4",
+    "campaign_g1": "fd990516-18f6-4341-8ec7-9e2a12dfedca"
+  },
+  {
+    "par": "25",
+    "lugar": "Balanza Real",
+    "tono": "mixed",
+    "registro": "comedic",
+    "pj": "PJ18",
+    "pj_key": "pj_pj18",
+    "tenant_id": "46707181-ead8-423b-9da0-5ac60cb7c5c4",
+    "user_id": "87893c33-dc06-4ff3-9c27-322442815b89",
+    "campaign_g2": "71851109-08d3-41db-9f22-796e26af13a1",
+    "campaign_g1": "802bebcb-d49d-455b-9dad-e05b66955504"
+  },
+  {
+    "par": "26",
+    "lugar": "Lindero",
+    "tono": "mixed",
+    "registro": "serious",
+    "pj": "PJ03",
+    "pj_key": "pj_pj03",
+    "tenant_id": "12fc85f3-e46e-4445-98ae-13779305f5e3",
+    "user_id": "5edf1e53-77d2-4198-82a7-8182d0148a9b",
+    "campaign_g2": "eccb3666-5a9c-4959-8427-ae693f8c7530",
+    "campaign_g1": "a2d586a1-18a0-4391-977c-7c4bf5e84c6e"
+  },
+  {
+    "par": "27",
+    "lugar": "La Vía del Último Silencio",
+    "tono": "heroic",
+    "registro": "serious",
+    "pj": "PJ25",
+    "pj_key": "pj_pj25",
+    "tenant_id": "88be765f-5b93-4a2c-aa4f-3a90e7e6fd41",
+    "user_id": "74c121df-633a-44ae-8edb-490e0d1b2e8e",
+    "campaign_g2": "1257c4f1-d3f8-4c43-a8a6-aa542b65d62d",
+    "campaign_g1": "fc82b88f-da23-41c9-b164-b78c0a9dfbc8"
+  }
+]

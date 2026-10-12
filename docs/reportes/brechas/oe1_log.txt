@@ -1,0 +1,100 @@
+  G1 par 01: 24 marcas
+  G2 par 01: 248 marcas
+  G1 par 02: 20 marcas
+  G2 par 02: 622 marcas
+  G1 par 03: 112 marcas
+  G2 par 03: 311 marcas
+  G1 par 04: 38 marcas
+  G2 par 04: 206 marcas
+  G1 par 05: 419 marcas
+  G2 par 05: 102 marcas
+  G1 par 06: 235 marcas
+  G2 par 06: 60 marcas
+  G1 par 07: 26 marcas
+  G2 par 07: 153 marcas
+  G1 par 08: 32 marcas
+  G2 par 08: 176 marcas
+  G1 par 09: 183 marcas
+  G2 par 09: 61 marcas
+  G1 par 10: 6 marcas
+  G2 par 10: 90 marcas
+  G1 par 11: 2052 marcas
+  G2 par 11: 192 marcas
+  G1 par 12: 51 marcas
+  G2 par 12: 89 marcas
+  G1 par 13: 59 marcas
+  G2 par 13: 132 marcas
+  G1 par 14: 111 marcas
+  G2 par 14: 50 marcas
+  G1 par 15: 20 marcas
+  G2 par 15: 93 marcas
+  G1 par 16: 23 marcas
+  G2 par 16: 83 marcas
+  G1 par 17: 22 marcas
+  G2 par 17: 92 marcas
+  G1 par 18: 912 marcas
+  G2 par 18: 496 marcas
+  G1 par 19: 297 marcas
+  G2 par 19: 55 marcas
+  G1 par 20: 26 marcas
+  G2 par 20: 231 marcas
+  G1 par 21: 54 marcas
+  G2 par 21: 100 marcas
+  G1 par 22: 251 marcas
+  G2 par 22: 175 marcas
+  G1 par 23: 55 marcas
+  G2 par 23: 70 marcas
+  G1 par 24: 50 marcas
+  G2 par 24: 114 marcas
+  G1 par 25: 51 marcas
+  G2 par 25: 85 marcas
+  G1 par 26: 65 marcas
+  G2 par 26: 48 marcas
+  G1 par 27: 128 marcas
+  G2 par 27: 173 marcas
+# Brecha OE-1: auditoría censal de «nombres no reconocidos»
+
+Marcas totales: 9629. Clasificación determinista contra la base (ver docstring del script).
+
+| Categoría | G1 | G2 | ¿Invención? |
+|---|---|---|---|
+| registrado_despues | 712 (13.4 %) | 839 (19.5 %) | no (el sistema la introdujo y la registró) |
+| registrado_oculto | 67 (1.3 %) | 19 (0.4 %) | no (objeto registrado fuera de ventana) |
+| lore | 95 (1.8 %) | 143 (3.3 %) | no (vocabulario del mundo) |
+| palabra_comun | 2236 (42.0 %) | 2485 (57.7 %) | no (falso positivo léxico) |
+| recurrente | 1915 (36.0 %) | 383 (8.9 %) | entidad nunca registrada |
+| efimero | 297 (5.6 %) | 438 (10.2 %) | candidato a invención |
+
+| Turnos | G1 | G2 |
+|---|---|---|
+| marcados | 3225 | 2555 |
+| con entidad nunca registrada | 1504 | 730 |
+| con candidato a invención | 276 | 386 |
+
+Precisión del indicador como detector (problema) en G1: 46.6 % de los turnos marcados.
+
+Precisión del indicador como detector (problema) en G2: 28.6 % de los turnos marcados.
+
+Precisión del indicador como detector (efimero) en G1: 8.6 % de los turnos marcados.
+
+Precisión del indicador como detector (efimero) en G2: 15.1 % de los turnos marcados.
+
+## Comparación pareada (% de turnos por campaña, 27 pares)
+
+| Métrica | mediana G1 | mediana G2 | G1<G2 | p bilateral |
+|---|---|---|---|---|
+| marcado | 3.00 | 5.07 | 17/27 | 0.768 |
+| problema | 0.71 | 1.64 | 18/27 | 0.343 |
+| efimero | 0.29 | 0.93 | 21/27 | 0.0188 |
+
+## Ejemplos por categoría (5 al azar, para revisión)
+
+### registrado_despues
+- G2 par 11 t86 **Firmamento**: …ristal: reconoces la estructura como una variante arcaica de los Sellos de Contención del Firmamento, utilizados hace siglos por los primeros clérigos de la Orden del Cielo para ai…
+- G1 par 09 t316 **Julián**: ….. No sé qué haría yo sin alguien con tu corazón aquí. Me recuerdas tanto a la nobleza de Julián, que Dios lo tenga en su gloria, que por un momento olvido hasta dónde hemos llegad…
+- G1 par 22 t404 **Acreedora**: …jan al brujo a ciegas sobre la urgencia real del plazo; mientras el tiempo se desliza, la Acreedora se acerca y el margen de maniobra se reduce peligrosamente.…
+- G2 par 02 t597 **Elian**: …que el anciano está a salvo en un rincón seco, lejos del fango y la mirada del acechador, Elian se desploma sobre una superficie plana, exhalando un suspiro que suena a cristales r…
+- G2 par 27 t22 **Umbral**: …sperado—. ¡El Pacto de las Sombras! La Cofradía juró mantener el peso suspendido hasta el Umbral de Odilia para que lo que habita dentro no reclame nuevas almas. Si el féretro desc…
+
+### registrado_oculto
+- G1 par 18 t483 **Rectoría**: …a el aire, sentencia: "Artículo noveno, sección tercera: 'Toda comunicación dirigida a la Rectoría que ignore las formas prescritas será archivada sin lectura'. Usted acaba de arch…

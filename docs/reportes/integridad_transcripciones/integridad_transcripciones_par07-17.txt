@@ -1,0 +1,92 @@
+Par07 G2  AVISOS  1401 turnos · 4 corridas · costuras en turnos [88, 577] · 3 turno(s) interrumpido(s) descartados
+      ! 33 turno(s) con meta-comentario entre corchetes (DM fuera de personaje) [359, 360, 361, 362, 671, 672]
+      ! caracteres CJK/cirilicos en 1 turno(s) [899]
+      ! 17 turno(s) sin bitacora que los respalde (p.ej. [71, 72, 73, 74, 75, 76])
+      · {'json_crudo': 0, 'meta_corchetes': 33, 'otro_alfabeto': 1, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 1141, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 703  p1 246  max 1345', 'md_bytes': 1324017}
+Par07 G1  AVISOS  1401 turnos · 2 corridas · costuras en turnos [296] · 1 turno(s) interrumpido(s) descartados
+      ! caracteres CJK/cirilicos en el buffer del jugador, turnos [856]
+      ! 23 turno(s) sin bitacora que los respalde (p.ej. [1, 2, 3, 4, 5, 6])
+      · {'json_crudo': 0, 'meta_corchetes': 0, 'otro_alfabeto': 0, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 1134, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 993  p1 754  max 1478', 'md_bytes': 1743979}
+Par08 G2  AVISOS  1401 turnos · 4 corridas · costuras en turnos [93, 612] · 3 turno(s) interrumpido(s) descartados
+      ! 8 turno(s) con meta-comentario entre corchetes (DM fuera de personaje) [114, 115, 134, 135, 136, 137]
+      ! caracteres CJK/cirilicos en 2 turno(s) [308, 350]
+      ! 25 turno(s) sin bitacora que los respalde (p.ej. [1, 69, 70, 71, 72, 73])
+      · {'json_crudo': 0, 'meta_corchetes': 8, 'otro_alfabeto': 2, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 1154, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 677  p1 420  max 1136', 'md_bytes': 1291864}
+Par08 G1  AVISOS  1401 turnos · 2 corridas · costuras en turnos [257] · 1 turno(s) interrumpido(s) descartados
+      ! 18 turno(s) sin bitacora que los respalde (p.ej. [1, 2, 3, 4, 5, 6])
+      · {'json_crudo': 0, 'meta_corchetes': 0, 'otro_alfabeto': 0, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 904, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 1079  p1 807  max 1576', 'md_bytes': 1882043}
+Par09 G2  AVISOS  1401 turnos · 4 corridas · costuras en turnos [94, 204] · 3 turno(s) interrumpido(s) descartados
+      ! 5 turno(s) con meta-comentario entre corchetes (DM fuera de personaje) [632, 633, 634, 635, 636]
+      ! caracteres CJK/cirilicos en 1 turno(s) [1166]
+      ! 25 turno(s) sin bitacora que los respalde (p.ej. [69, 70, 71, 72, 73, 74])
+      · {'json_crudo': 0, 'meta_corchetes': 5, 'otro_alfabeto': 1, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 1069, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 759  p1 512  max 1201', 'md_bytes': 1414926}
+Par09 G1  AVISOS  1401 turnos · 2 corridas · costuras en turnos [275] · 1 turno(s) interrumpido(s) descartados
+      ! caracteres CJK/cirilicos en 1 turno(s) [1093]
+      ! 26 turno(s) sin bitacora que los respalde (p.ej. [1, 2, 3, 4, 5, 6])
+      · {'json_crudo': 0, 'meta_corchetes': 0, 'otro_alfabeto': 1, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 704, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 1067  p1 805  max 1542', 'md_bytes': 1876095}
+Par10 G2  AVISOS  1401 turnos · 5 corridas · costuras en turnos [95, 623, 1158] · 4 turno(s) interrumpido(s) descartados
+      ! 21 turno(s) con meta-comentario entre corchetes (DM fuera de personaje) [248, 249, 250, 251, 825, 826]
+      ! 22 turno(s) sin bitacora que los respalde (p.ej. [1, 74, 75, 76, 77, 78])
+      · {'json_crudo': 0, 'meta_corchetes': 21, 'otro_alfabeto': 0, 'sin_cierre': 0, 'dm_duplicados': 1, 'jugador_repetido_consecutivo': 0, 'gate_falso': 998, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 649  p1 340  max 1146', 'md_bytes': 1236551}
+Par10 G1  AVISOS  1401 turnos · 2 corridas · costuras en turnos [342] · 1 turno(s) interrumpido(s) descartados
+      ! 17 turno(s) sin bitacora que los respalde (p.ej. [1, 2, 3, 4, 5, 6])
+      · {'json_crudo': 0, 'meta_corchetes': 0, 'otro_alfabeto': 0, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 1166, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 939  p1 704  max 1305', 'md_bytes': 1647319}
+Par11 G2  AVISOS  1401 turnos · 4 corridas · costuras en turnos [85, 623] · 3 turno(s) interrumpido(s) descartados
+      ! 18 turno(s) sin bitacora que los respalde (p.ej. [67, 68, 69, 70, 71, 72])
+      · {'json_crudo': 0, 'meta_corchetes': 0, 'otro_alfabeto': 0, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 1131, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 727  p1 480  max 1308', 'md_bytes': 1387370}
+Par11 G1  AVISOS  1401 turnos · 2 corridas · costuras en turnos [273] · 1 turno(s) interrumpido(s) descartados
+      ! caracteres CJK/cirilicos en el buffer del jugador, turnos [453, 862]
+      ! 21 turno(s) sin bitacora que los respalde (p.ej. [1, 2, 3, 4, 5, 6])
+      · {'json_crudo': 0, 'meta_corchetes': 0, 'otro_alfabeto': 0, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 992, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 1144  p1 813  max 1760', 'md_bytes': 1993836}
+Par12 G2  AVISOS  1401 turnos · 4 corridas · costuras en turnos [95, 674] · 3 turno(s) interrumpido(s) descartados
+      ! 13 turno(s) con meta-comentario entre corchetes (DM fuera de personaje) [669, 670, 671, 672, 696, 697]
+      ! caracteres CJK/cirilicos en el buffer del jugador, turnos [861]
+      ! caracteres CJK/cirilicos en 1 turno(s) [875]
+      ! 24 turno(s) sin bitacora que los respalde (p.ej. [1, 72, 73, 74, 75, 76])
+      · {'json_crudo': 0, 'meta_corchetes': 13, 'otro_alfabeto': 1, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 992, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 655  p1 399  max 1118', 'md_bytes': 1260178}
+Par12 G1  AVISOS  1401 turnos · 2 corridas · costuras en turnos [307] · 1 turno(s) interrumpido(s) descartados
+      ! caracteres CJK/cirilicos en el buffer del jugador, turnos [48]
+      ! caracteres CJK/cirilicos en 1 turno(s) [153]
+      ! 19 turno(s) sin bitacora que los respalde (p.ej. [1, 2, 3, 4, 5, 6])
+      · {'json_crudo': 0, 'meta_corchetes': 0, 'otro_alfabeto': 1, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 1094, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 1035  p1 743  max 1586', 'md_bytes': 1829563}
+Par13 G2  AVISOS  1401 turnos · 4 corridas · costuras en turnos [94, 633] · 3 turno(s) interrumpido(s) descartados
+      ! 5 turno(s) con meta-comentario entre corchetes (DM fuera de personaje) [65, 66, 67, 68, 159]
+      ! caracteres CJK/cirilicos en el buffer del jugador, turnos [1394]
+      ! 23 turno(s) sin bitacora que los respalde (p.ej. [71, 72, 73, 74, 75, 76])
+      · {'json_crudo': 0, 'meta_corchetes': 5, 'otro_alfabeto': 0, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 1145, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 736  p1 487  max 1157', 'md_bytes': 1386942}
+Par13 G1  AVISOS  1401 turnos · 2 corridas · costuras en turnos [56] · 1 turno(s) interrumpido(s) descartados
+      ! JSON crudo del narrador guardado como narracion en 1 turno(s) [1149]
+      ! caracteres CJK/cirilicos en 1 turno(s) [288]
+      ! 14 turno(s) sin bitacora que los respalde (p.ej. [1, 2, 3, 4, 5, 6])
+      · {'json_crudo': 1, 'meta_corchetes': 0, 'otro_alfabeto': 1, 'sin_cierre': 1, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 1046, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 1133  p1 829  max 1668', 'md_bytes': 1970416}
+Par14 G2  AVISOS  1401 turnos · 4 corridas · costuras en turnos [88, 569] · 3 turno(s) interrumpido(s) descartados
+      ! caracteres CJK/cirilicos en 1 turno(s) [255]
+      ! 18 turno(s) sin bitacora que los respalde (p.ej. [70, 71, 72, 73, 74, 75])
+      · {'json_crudo': 0, 'meta_corchetes': 0, 'otro_alfabeto': 1, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 970, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 660  p1 459  max 1162', 'md_bytes': 1330522}
+Par14 G1  AVISOS  1401 turnos · 2 corridas · costuras en turnos [306] · 1 turno(s) interrumpido(s) descartados
+      ! 15 turno(s) sin bitacora que los respalde (p.ej. [1, 2, 3, 4, 5, 6])
+      · {'json_crudo': 0, 'meta_corchetes': 0, 'otro_alfabeto': 0, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 947, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 1065  p1 770  max 1585', 'md_bytes': 1906849}
+Par15 G2  AVISOS  1401 turnos · 4 corridas · costuras en turnos [83, 629] · 3 turno(s) interrumpido(s) descartados
+      ! 6 turno(s) con meta-comentario entre corchetes (DM fuera de personaje) [475, 476, 477, 651, 658, 775]
+      ! caracteres CJK/cirilicos en 1 turno(s) [1328]
+      ! 15 turno(s) sin bitacora que los respalde (p.ej. [68, 69, 70, 71, 72, 73])
+      · {'json_crudo': 0, 'meta_corchetes': 6, 'otro_alfabeto': 1, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 1078, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 696  p1 467  max 1259', 'md_bytes': 1332184}
+Par15 G1  AVISOS  1401 turnos · 3 corridas · costuras en turnos [319, 559] · 2 turno(s) interrumpido(s) descartados
+      ! 15 turno(s) sin bitacora que los respalde (p.ej. [1, 2, 3, 4, 5, 6])
+      · {'json_crudo': 0, 'meta_corchetes': 0, 'otro_alfabeto': 0, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 816, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 975  p1 774  max 1396', 'md_bytes': 1737070}
+Par16 G2  AVISOS  1401 turnos · 4 corridas · costuras en turnos [87, 556] · 3 turno(s) interrumpido(s) descartados
+      ! 7 turno(s) con meta-comentario entre corchetes (DM fuera de personaje) [443, 444, 505, 506, 507, 508]
+      ! 14 turno(s) sin bitacora que los respalde (p.ej. [73, 74, 75, 76, 77, 78])
+      · {'json_crudo': 0, 'meta_corchetes': 7, 'otro_alfabeto': 0, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 871, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 649  p1 410  max 1105', 'md_bytes': 1235089}
+Par16 G1  AVISOS  1401 turnos · 2 corridas · costuras en turnos [293] · 1 turno(s) interrumpido(s) descartados
+      ! 16 turno(s) sin bitacora que los respalde (p.ej. [1, 2, 3, 4, 5, 6])
+      · {'json_crudo': 0, 'meta_corchetes': 0, 'otro_alfabeto': 0, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 1119, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 982  p1 743  max 1453', 'md_bytes': 1708530}
+Par17 G2  AVISOS  1401 turnos · 4 corridas · costuras en turnos [90, 634] · 3 turno(s) interrumpido(s) descartados
+      ! 8 turno(s) con meta-comentario entre corchetes (DM fuera de personaje) [163, 164, 165, 946, 947, 948]
+      ! 18 turno(s) sin bitacora que los respalde (p.ej. [1, 73, 74, 75, 76, 77])
+      · {'json_crudo': 0, 'meta_corchetes': 8, 'otro_alfabeto': 0, 'sin_cierre': 0, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 992, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 651  p1 419  max 1037', 'md_bytes': 1257112}
+Par17 G1  AVISOS  1401 turnos · 2 corridas · costuras en turnos [294] · 1 turno(s) interrumpido(s) descartados
+      ! JSON crudo del narrador guardado como narracion en 1 turno(s) [381]
+      ! caracteres CJK/cirilicos en 3 turno(s) [201, 886, 1301]
+      ! 20 turno(s) sin bitacora que los respalde (p.ej. [1, 2, 3, 4, 5, 6])
+      · {'json_crudo': 1, 'meta_corchetes': 0, 'otro_alfabeto': 3, 'sin_cierre': 1, 'dm_duplicados': 0, 'jugador_repetido_consecutivo': 0, 'gate_falso': 1004, 'desordenado_por_fecha': 0, 'dm_chars': 'mediana 1075  p1 756  max 1686', 'md_bytes': 1913987}

@@ -1,0 +1,38 @@
+[
+ {
+  "par": "01",
+  "lugar": "Puerto Salazón",
+  "campaign_g1": "68a5896f-e7bb-4479-8403-a8403cf80838",
+  "campaign_g2": "e9bef82d-8b7a-41e9-8cb6-8e6af542e514"
+ },
+ {
+  "par": "02",
+  "lugar": "Alto Ferrena",
+  "campaign_g1": "84eb6728-52d3-434c-924c-2c21b6099c92",
+  "campaign_g2": "5653d917-4744-43e3-90ba-8190a22a126c"
+ },
+ {
+  "par": "03",
+  "lugar": "Vega del Yelmo",
+  "campaign_g1": "9d22ac2a-a09f-4e04-8eeb-2606125988ef",
+  "campaign_g2": "ff0c8110-caa5-48fa-b285-7dc903cc1d26"
+ },
+ {
+  "par": "04",
+  "lugar": "Caleta Lumbre",
+  "campaign_g1": "ee613cb4-c84c-4c69-b276-bbf97e0cbbc6",
+  "campaign_g2": "fc6c19b0-49a6-4abb-ad44-b12de9438828"
+ },
+ {
+  "par": "05",
+  "lugar": "Vado Cabrero",
+  "campaign_g1": "b7a090cf-032e-4a87-be01-e03fa88a9917",
+  "campaign_g2": "0bc0b20b-0dba-454d-a32e-94fbeb24dddf"
+ },
+ {
+  "par": "06",
+  "lugar": "Poza Seca",
+  "campaign_g1": "fbe6d980-964f-455c-89d9-96d34d9653fe",
+  "campaign_g2": "d8bf034a-bcc9-4a12-999e-490be27c8a2e"
+ }
+]

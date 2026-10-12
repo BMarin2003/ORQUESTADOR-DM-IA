@@ -1,0 +1,103 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 22 (real) · G2 (Monolítico) · Casa Aguasmuertas · monolithic
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        1 (  0.1%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                    0 (  0.0%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             19 (  1.4%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.173  [0.081, 0.320]
+    qn1_ttr                                n=1400  prom=0.718  [0.580, 0.899]
+    qn1_ngram_repeticion                   n=1400  prom=0.020  [0.000, 0.087]
+    qn1_legibilidad_fh                     n=1400  prom=59.691  [34.510, 88.220]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.133  [0.000, 1.000]
+  CR-2 turnos con algún nombre no reconocido: 114
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  80 visitas distintas · 12 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: Callejón del Hueso ↔ Cámara de los Susurros ↔ La Cripta de los Ortigal ↔ Las Cocinas de la Casa ↔ abertura estrecha y oscura ↔ columna de piedra negra ↔ espacio estrecho y oscuro ↔ espacio hueco sobre el techo ↔ estancia rectangular ↔ estructura de piedra ↔ hueco cuadrado en el suelo ↔ puerta secreta (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1261 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: Callejón del Hueso, Cámara de los Susurros, La Cripta de los Ortigal, La Marisma de Aguasmuertas, Las Cocinas de la Casa, columna de piedra negra, espacio hueco sobre el techo, puerta secreta, trampilla de madera
+    turno 1: Cámara de los Susurros, columna de piedra negra, espacio hueco sobre el techo
+    turno 2: Callejón del Hueso, Cámara de los Susurros, La Cripta de los Ortigal, espacio hueco sobre el techo
+    turno 5: La Cripta de los Ortigal, columna de piedra negra
+    turno 7: Cámara de los Susurros, columna de piedra negra, espacio hueco sobre el techo
+  camino (primeras y últimas visitas):
+    turno  17 → Cámara de los Susurros
+    turno  21 → hueco cuadrado en el suelo
+    turno  22 → estancia rectangular
+    ...
+    turno 1258 → hueco cuadrado en el suelo
+    turno 1267 → Cámara de los Susurros
+    turno 1318 → Callejón del Hueso
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  La Servidumbre Ligada disparó en turno 260 · ✓ reconocido en turno 261
+    agenda: La Acreedora envía su primer aviso del vencimiento y la servidumbre comprende que ya no hay tiempo de pensarlo despacio
+  La Casa Ortigal      disparó en turno 640 · ✓ reconocido en turno 641
+    agenda: El Notario de la Acreedora llega a la casa a verificar las cuentas antes del vencimiento, como manda el pacto cada generación
+  La Casa Ortigal      disparó en turno 980 · ⚠ NO reconocido en los turnos siguientes
+    agenda: Llega la primera noche de helada plena del invierno, la fecha exacta del vencimiento
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 1.667  (sobre 10 secciones; máximo teórico = 4.5)
+    Valerius: Ci=0.5  (primera mención sección 8, última sección 9)
+    Lázaro Ortigal: Ci=4.5  (primera mención sección 0, última sección 9)
+    Casimira Ortigal: Ci=0.0  (primera mención sección 0, última sección 0)
+  V promedio = 0.066  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Valerius: Vi=0.056  (180 atributos propios detectados)
+    Lázaro Ortigal: Vi=0.0  (25 atributos propios detectados)
+    Casimira Ortigal: Vi=0.143  (14 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=0.000  (0/1)
+    npc.affinity     recall=0.000  (0/2)
+  recall global: 0.000  (3 deltas evaluables)
+  3 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno   84 · Casimira Ortigal · npc.status=dead
+    turno  302 · Lázaro Ortigal · npc.affinity=cordial
+    turno 1241 · Valerius · npc.affinity=cold
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.998  (1400 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.999  (min 0.976, max 1.000, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.028  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  ningún turno con cl2_pnj_inactivo_actua=true en esta campaña -- nada que reclasificar
+
+==========================================================================
+

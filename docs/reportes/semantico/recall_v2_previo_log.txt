@@ -1,0 +1,68 @@
+Par01 G1: 2 eventos
+Par01 G2: 18 eventos
+Par02 G1: 3 eventos
+Par02 G2: 14 eventos
+Par03 G1: 4 eventos
+Par03 G2: 27 eventos
+Par04 G1: 2 eventos
+Par04 G2: 6 eventos
+Par05 G1: 5 eventos
+Par05 G2: 12 eventos
+Par06 G1: 10 eventos
+Par06 G2: 82 eventos
+Par07 G1: 8 eventos
+Par07 G2: 28 eventos
+Par08 G1: 0 eventos
+Par08 G2: 15 eventos
+Par09 G1: 4 eventos
+Par09 G2: 27 eventos
+Par10 G1: 5 eventos
+Par10 G2: 34 eventos
+Par11 G1: 3 eventos
+Par11 G2: 8 eventos
+Par12 G1: 5 eventos
+Par12 G2: 24 eventos
+Par13 G1: 6 eventos
+Par13 G2: 6 eventos
+Par14 G1: 9 eventos
+Par14 G2: 12 eventos
+Par15 G1: 5 eventos
+Par15 G2: 18 eventos
+Par16 G1: 4 eventos
+Par16 G2: 31 eventos
+Par17 G1: 7 eventos
+Par17 G2: 26 eventos
+Par18 G1: 5 eventos
+Par18 G2: 73 eventos
+Par19 G1: 18 eventos
+Par19 G2: 46 eventos
+Par20 G1: 3 eventos
+Par20 G2: 15 eventos
+Par21 G1: 10 eventos
+Par21 G2: 2 eventos
+Par22 G1: 7 eventos
+Par22 G2: 3 eventos
+Par23 G1: 8 eventos
+Par23 G2: 7 eventos
+Par24 G1: 10 eventos
+Par24 G2: 24 eventos
+Par25 G1: 2 eventos
+Par25 G2: 6 eventos
+Par26 G1: 6 eventos
+Par26 G2: 24 eventos
+Par27 G1: 7 eventos
+Par27 G2: 44 eventos
+# cl2_recall_semantico_v2 con nulo solo de ventanas previas (EXPLORATORIO)
+
+Universo: 790 eventos · evaluables v2: 631 · evaluables variante previa: 529 · evaluables en ambas: 529.
+
+| Familia | n (ambas) | recall v2 [IC95] | recall nulo previo [IC95] |
+|---|---|---|---|
+| npc.status | 228 | 0.110 [0.075, 0.157] | 0.105 [0.072, 0.152] |
+| npc.affinity | 301 | 0.073 [0.049, 0.108] | 0.123 [0.091, 0.165] |
+| quest.status | 0 | — | — |
+| todas | 529 | 0.089 [0.067, 0.116] | 0.115 [0.091, 0.145] |
+
+Umbral P95 medio: v2 0.6927 · previo 0.6883. Eventos que cambian de decisión: 26.
+
+Azar de referencia del instrumento: 5 %. Exploratorio, sin sello previo: es la variante declarada como trabajo futuro.

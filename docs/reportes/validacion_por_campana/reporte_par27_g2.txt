@@ -1,0 +1,112 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 27 (real) · G2 (Monolítico) · La Vía del Último Silencio · monolithic
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        2 (  0.1%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                   51 (  3.6%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado              9 (  0.6%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.180  [0.087, 0.296]
+    qn1_ttr                                n=1400  prom=0.723  [0.607, 0.856]
+    qn1_ngram_repeticion                   n=1400  prom=0.019  [0.000, 0.082]
+    qn1_legibilidad_fh                     n=1400  prom=64.321  [39.520, 91.820]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.151  [0.000, 1.000]
+  CR-2 turnos con algún nombre no reconocido: 102
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  44 visitas distintas · 6 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: Altar de los Susurros ↔ Cruce de las Penumbras ↔ catacumbas del sur ↔ escalera de piedra desgastada ↔ pasaje estrecho y oscuro ↔ pasillo sumido en una oscuridad absoluta (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1274 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: Altar de los Susurros, Berrocal, Cruce de las Penumbras, El Monasterio de Alba Sorda, El Paso del Lobo, El interior del féretro, La Vía del Último Silencio, catacumbas del sur, pasillo sumido en una oscuridad absoluta
+    turno 1: Altar de los Susurros, Cruce de las Penumbras, El Paso del Lobo, catacumbas del sur, pasillo sumido en una oscuridad absoluta
+    turno 2: Altar de los Susurros, Cruce de las Penumbras, catacumbas del sur, pasillo sumido en una oscuridad absoluta
+    turno 3: Altar de los Susurros, Berrocal, pasillo sumido en una oscuridad absoluta
+    turno 4: Altar de los Susurros, Depósito de suministros de la vanguardia, catacumbas del sur, pasillo sumido en una oscuridad absoluta
+  camino (primeras y últimas visitas):
+    turno   5 → catacumbas del sur
+    turno  10 → pasillo sumido en una oscuridad absoluta
+    turno  24 → Altar de los Susurros
+    ...
+    turno 1322 → escalera de piedra desgastada
+    turno 1340 → catacumbas del sur
+    turno 1342 → pasillo sumido en una oscuridad absoluta
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  Las Hospitalarias de Odilia disparó en turno 260 · ⚠ NO reconocido en los turnos siguientes
+    agenda: La procesión llega a Berrocal, donde los enfermos esperan en el camino, y hay que decidir si pasar de largo o detenerse
+  La Cofradía de Portadores disparó en turno 640 · ✓ reconocido en turno 642
+    agenda: Los enviados del monasterio de Alba Sorda salen al encuentro de la procesión y exigen conocer el estado del plazo
+  La Cofradía de Portadores disparó en turno 980 · ✓ reconocido en turno 981
+    agenda: Llega la noche del solsticio de invierno, la única en que el féretro puede reposar en el monasterio
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 2.667  (sobre 10 secciones; máximo teórico = 4.5)
+    El hombre del anillo de sello: Ci=1.5  (primera mención sección 0, última sección 3)
+    Alaric: Ci=3.0  (primera mención sección 0, última sección 6)
+    Valerius Thorne: Ci=3.5  (primera mención sección 2, última sección 9)
+  V promedio = 0.051  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    El hombre del anillo de sello: Vi=0.09  (134 atributos propios detectados)
+    Alaric: Vi=0.044  (113 atributos propios detectados)
+    Valerius Thorne: Vi=0.02  (51 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=0.538  (14/26)
+    npc.affinity     recall=0.389  (7/18)
+  recall global: 0.477  (44 deltas evaluables)
+  23 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno   42 · El hombre del anillo de sello · npc.affinity=loyal
+    turno   44 · El hombre del anillo de sello · npc.affinity=cordial
+    turno   52 · El hombre del anillo de sello · npc.affinity=wary
+    turno   59 · El hombre del anillo de sello · npc.affinity=hostile
+    turno   61 · El hombre del anillo de sello · npc.affinity=wary
+    turno   82 · Alaric · npc.status=dead
+    turno  160 · El hombre del anillo de sello · npc.affinity=hostile
+    turno  168 · El hombre del anillo de sello · npc.affinity=wary
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.999  (1400 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.999  (min 0.976, max 1.000, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.015  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  51 turno(s) marcados en vivo. Reclasificación:
+    sujeto de una acción (repite el hallazgo crudo): 1 (2.0%)
+    solo mencionado/referenciado (posible falso positivo): 53 (103.9%)
+  muestra de 'actuando' (spot-check manual recomendado antes de citar en la tesis):
+    turno  973 · Alaric: «Junto al mapa, una anotación final, escrita con una caligrafía desesperada, revela que Alaric no estaba refugiado, sino "custodiado" en el Osario de los Lamento»
+
+==========================================================================
+

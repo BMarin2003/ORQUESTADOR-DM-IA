@@ -1,0 +1,102 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 13 (real) · G2 (Monolítico) · Piedra Yerma · monolithic
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        1 (  0.1%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                   15 (  1.1%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             14 (  1.0%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.178  [0.083, 0.312]
+    qn1_ttr                                n=1400  prom=0.712  [0.585, 0.853]
+    qn1_ngram_repeticion                   n=1400  prom=0.022  [0.000, 0.084]
+    qn1_legibilidad_fh                     n=1400  prom=55.124  [34.260, 88.360]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.502  [0.000, 1.000]
+  CR-2 turnos con algún nombre no reconocido: 81
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  101 visitas distintas · 12 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: Ala del Atardecer ↔ Las Tierras Yermas ↔ Los Campos Marchitos ↔ abertura estrecha y oscura ↔ cámara circular ↔ escalera hacia las profundidades ↔ estancia circular ↔ estancia de piedra húmeda ↔ hueco oscuro y estrecho ↔ losa de piedra grisácea ↔ pasillo de ozono ↔ punto de vacío (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1218 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: Ala del Atardecer, La Casa de Baldemar, La Fosa del Hallazgo, La Piedra, Piedra Yerma, abertura estrecha y oscura, escalera hacia las profundidades, estancia de piedra húmeda
+    turno 1: Ala del Atardecer, La Fosa del Hallazgo, escalera hacia las profundidades, estancia de piedra húmeda, hueco oscuro y estrecho, punto de vacío
+    turno 2: Ala del Atardecer, escalera hacia las profundidades, hueco oscuro y estrecho, punto de vacío
+    turno 3: escalera hacia las profundidades, hueco oscuro y estrecho, pasillo de ozono, punto de vacío
+    turno 4: Ala del Atardecer, pasillo de ozono
+  camino (primeras y últimas visitas):
+    turno  14 → Ala del Atardecer
+    turno  31 → punto de vacío
+    turno  33 → Ala del Atardecer
+    ...
+    turno 1372 → escalera hacia las profundidades
+    turno 1374 → Ala del Atardecer
+    turno 1389 → escalera hacia las profundidades
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  ningún reloj ha disparado todavía en esta campaña
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 0.667  (sobre 10 secciones; máximo teórico = 4.5)
+    centinela mecánico: Ci=2.0  (primera mención sección 0, última sección 4)
+    Baldemar Cruz: Ci=0.0  (primera mención sección 0, última sección 0)
+    Ondina Oscanda: Ci=0.0  (primera mención sección 0, última sección 0)
+  V promedio = 0.113  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    centinela mecánico: Vi=0.037  (80 atributos propios detectados)
+    Baldemar Cruz: Vi=0.111  (18 atributos propios detectados)
+    Ondina Oscanda: Vi=0.19  (21 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=0.000  (0/6)
+  recall global: 0.000  (6 deltas evaluables)
+  6 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  104 · centinela mecánico · npc.status=captured
+    turno  132 · centinela mecánico · npc.status=dead
+    turno  257 · centinela mecánico · npc.status=captured
+    turno  349 · centinela mecánico · npc.status=dead
+    turno  566 · centinela mecánico · npc.status=dead
+    turno  586 · centinela mecánico · npc.status=dead
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.998  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.999  (min 0.975, max 1.000, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.030  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  15 turno(s) marcados en vivo. Reclasificación:
+    sujeto de una acción (repite el hallazgo crudo): 0 (0.0%)
+    solo mencionado/referenciado (posible falso positivo): 15 (100.0%)
+
+==========================================================================
+

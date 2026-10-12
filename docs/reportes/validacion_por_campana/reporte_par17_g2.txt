@@ -1,0 +1,103 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 17 (real) · G2 (Monolítico) · Corral Alto · monolithic
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        1 (  0.1%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                    0 (  0.0%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             19 (  1.4%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.165  [0.063, 0.532]
+    qn1_ttr                                n=1400  prom=0.732  [0.570, 0.920]
+    qn1_ngram_repeticion                   n=1400  prom=0.018  [0.000, 0.081]
+    qn1_legibilidad_fh                     n=1400  prom=62.480  [36.410, 89.740]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.199  [0.000, 1.000]
+  CR-2 turnos con algún nombre no reconocido: 60
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  171 visitas distintas · 9 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: El Salón del Concejo ↔ La Casa de Bibiana ↔ La Casa de Melquíades ↔ callejón de los curtidores ↔ compartimento oculto ↔ cámara oculta ↔ espacio oscuro ↔ panel deslizante del escritorio ↔ plaza principal (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  941 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: Corral Alto, El Salón del Concejo, La Casa de Bibiana, La Casa de Melquíades, callejón de los curtidores
+    turno 1: El Salón del Concejo, La Posada del Forastero, callejón de los curtidores, compartimento oculto
+    turno 2: El Salón del Concejo, callejón de los curtidores, espacio oscuro
+    turno 10: El Salón del Concejo, callejón de los curtidores
+    turno 12: El Salón del Concejo, plaza principal
+  camino (primeras y últimas visitas):
+    turno   6 → callejón de los curtidores
+    turno   8 → El Salón del Concejo
+    turno  11 → callejón de los curtidores
+    ...
+    turno 1359 → El Salón del Concejo
+    turno 1364 → callejón de los curtidores
+    turno 1376 → La Casa de Bibiana
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  ningún reloj ha disparado todavía en esta campaña
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 2.667  (sobre 10 secciones; máximo teórico = 4.5)
+    Capitán Varos: Ci=2.5  (primera mención sección 4, última sección 9)
+    Melquíades Sorna: Ci=1.0  (primera mención sección 0, última sección 2)
+    Bibiana Roth: Ci=4.5  (primera mención sección 0, última sección 9)
+  V promedio = 0.039  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Capitán Varos: Vi=0.053  (76 atributos propios detectados)
+    Melquíades Sorna: Vi=0.064  (47 atributos propios detectados)
+    Bibiana Roth: Vi=0.0  (18 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=0.667  (4/6)
+    npc.affinity     recall=0.150  (3/20)
+  recall global: 0.269  (26 deltas evaluables)
+  19 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  148 · Hombre de la casaca carmesí · npc.affinity=hostile
+    turno  182 · Hombre de la casaca carmesí · npc.status=dead
+    turno  355 · Hombre de la casaca carmesí · npc.affinity=cordial
+    turno  401 · Melquíades Sorna · npc.affinity=cordial
+    turno  483 · Melquíades Sorna · npc.affinity=cordial
+    turno  494 · Melquíades Sorna · npc.affinity=cold
+    turno  498 · Melquíades Sorna · npc.affinity=wary
+    turno  744 · Capitán Varos · npc.affinity=cordial
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.999  (1400 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.999  (min 0.968, max 1.000, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.028  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  ningún turno con cl2_pnj_inactivo_actua=true en esta campaña -- nada que reclasificar
+
+==========================================================================
+

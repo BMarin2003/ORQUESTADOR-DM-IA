@@ -1,0 +1,123 @@
+[
+  {
+    "par": "07",
+    "lugar": "Umbral Hondo",
+    "tono": "grimdark",
+    "tenant_id": "27c556d1-6017-48fa-b44a-ed85ed5ff1a2",
+    "user_id": "165737a8-94d4-4bd7-a5d6-81172a16ac5c",
+    "campaign_g1": "41fedb73-2345-439b-852c-87ad806e1015",
+    "campaign_g1_turn": 0,
+    "campaign_g2": "f42e9672-4df4-40bf-a912-02fba5ae396e",
+    "campaign_g2_turn": 0
+  },
+  {
+    "par": "08",
+    "lugar": "Torre Alondra",
+    "tono": "heroic",
+    "tenant_id": "2b803fb4-a1e2-4c45-8efc-70923669769f",
+    "user_id": "53053624-a4ce-42f8-a442-70dd155221b2",
+    "campaign_g1": "1ea2fbfb-b54a-42b2-b8dc-03dbef93990c",
+    "campaign_g1_turn": 0,
+    "campaign_g2": "ebfcb92e-2eeb-4235-a1d2-73630f75a631",
+    "campaign_g2_turn": 0
+  },
+  {
+    "par": "09",
+    "lugar": "Bruma Honda",
+    "tono": "grimdark",
+    "tenant_id": "6e4fde07-d25c-4922-8969-855b6e9fc226",
+    "user_id": "f6f1916d-df91-42c5-a809-8a7f5a9625a9",
+    "campaign_g1": "d78a7a3e-f37d-407b-ac5b-5c9895064732",
+    "campaign_g1_turn": 0,
+    "campaign_g2": "41674211-baed-424c-9187-3a6429dd8400",
+    "campaign_g2_turn": 0
+  },
+  {
+    "par": "10",
+    "lugar": "Puente Roto",
+    "tono": "mixed",
+    "tenant_id": "84c46cfd-8835-4526-9e0b-846bbb3ec798",
+    "user_id": "3f221efc-ec1e-4dfb-9665-6bdd444d5bbc",
+    "campaign_g1": "7dc9fe9d-9052-4252-aa0c-f86490b96dbe",
+    "campaign_g1_turn": 0,
+    "campaign_g2": "9dcf64ea-8da4-4dcf-b168-4f960b839c04",
+    "campaign_g2_turn": 0
+  },
+  {
+    "par": "11",
+    "lugar": "Cima Clara",
+    "tono": "heroic",
+    "tenant_id": "37a33087-aff7-4545-beee-92889591a3ea",
+    "user_id": "108badd9-c27f-4600-ac5f-2da3aef8a63d",
+    "campaign_g1": "259f2fdd-2857-4ebb-ad4f-bde8ea297e04",
+    "campaign_g1_turn": 0,
+    "campaign_g2": "b6c3eb75-cb1a-48de-a827-d082415b4b74",
+    "campaign_g2_turn": 0
+  },
+  {
+    "par": "12",
+    "lugar": "Muelle Gris",
+    "tono": "light",
+    "tenant_id": "e5a9da0e-5f28-43a4-a368-11be6ece5b68",
+    "user_id": "5fa47d62-1a4a-4f3f-9468-619a1d0ae698",
+    "campaign_g1": "5f050643-72d2-4c9f-8209-9c9ce008c61e",
+    "campaign_g1_turn": 0,
+    "campaign_g2": "6f319319-f39f-4902-9f11-a5d5a17798af",
+    "campaign_g2_turn": 0
+  },
+  {
+    "par": "13",
+    "lugar": "Piedra Yerma",
+    "tono": "mixed",
+    "tenant_id": "76871b0e-b64a-474f-a384-9f8e089a84d1",
+    "user_id": "6822930f-e4f7-40ff-a575-27c26ec17141",
+    "campaign_g1": "7231e456-9284-40b3-83ed-d1de4dc4e33e",
+    "campaign_g1_turn": 0,
+    "campaign_g2": "8845df6a-3248-47ef-9844-7c234724d7f9",
+    "campaign_g2_turn": 0
+  },
+  {
+    "par": "14",
+    "lugar": "Roble Cantor",
+    "tono": "light",
+    "tenant_id": "f921a681-9ca8-44ae-9864-6ac7d742cc4f",
+    "user_id": "4d2ec829-61d1-4943-b4b8-8cb475681817",
+    "campaign_g1": "8d8e8f27-41d7-4573-a294-c79d2378b6e5",
+    "campaign_g1_turn": 0,
+    "campaign_g2": "cebcafd3-23cc-4d61-8e2e-9360587b7464",
+    "campaign_g2_turn": 0
+  },
+  {
+    "par": "15",
+    "lugar": "Solar Viejo",
+    "tono": "heroic",
+    "tenant_id": "e21e7052-249e-4257-8ff1-ce40297a15a0",
+    "user_id": "e57afecb-2806-467b-814a-1afa22104403",
+    "campaign_g1": "4521da96-8eda-4fb7-9464-ce09d417d26f",
+    "campaign_g1_turn": 0,
+    "campaign_g2": "79db3083-9993-458a-86a9-12ddec04e192",
+    "campaign_g2_turn": 0
+  },
+  {
+    "par": "16",
+    "lugar": "Cruce Salado",
+    "tono": "mixed",
+    "tenant_id": "7614383e-38f6-46f2-9b2d-606d62b0ebf0",
+    "user_id": "8594ed98-39c5-4c88-adc1-e4df6139160f",
+    "campaign_g1": "494e1d7d-9d10-43da-ac4b-041935b24c8b",
+    "campaign_g1_turn": 0,
+    "campaign_g2": "e1e30d0b-9dd8-454c-b297-44c08204610f",
+    "campaign_g2_turn": 0
+  },
+  {
+    "par": "17",
+    "lugar": "Corral Alto",
+    "tono": "light",
+    "tenant_id": "b031e94c-40ee-49f1-9190-9745e8eac27c",
+    "user_id": "9b85b212-8ef8-4797-9c46-2faba6b6c140",
+    "campaign_g1": "dc7af6f4-453a-4542-a2b5-e7cdd46a30b2",
+    "campaign_g1_turn": 0,
+    "campaign_g2": "45f450c1-29bc-4dde-8960-82129291f1ad",
+    "campaign_g2_turn": 0
+  }
+]

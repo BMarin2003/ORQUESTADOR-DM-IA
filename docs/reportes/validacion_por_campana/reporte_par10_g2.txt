@@ -1,0 +1,111 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 10 (real) · G2 (Monolítico) · Puente Roto · monolithic
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        1 (  0.1%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                  117 (  8.4%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             17 (  1.2%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.178  [0.064, 1.000]
+    qn1_ttr                                n=1400  prom=0.733  [0.604, 0.921]
+    qn1_ngram_repeticion                   n=1400  prom=0.017  [0.000, 0.081]
+    qn1_legibilidad_fh                     n=1400  prom=64.785  [40.850, 93.680]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.275  [0.000, 1.000]
+  CR-2 turnos con algún nombre no reconocido: 45
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  47 visitas distintas · 8 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: Almacén del Este ↔ El Consejo del Puente ↔ Lo que dejaron atrás ↔ estructura de piedra tallada ↔ hueco oscuro y estrecho ↔ pasadizo oculto ↔ pasillo descendente ↔ torre de vigilancia de metal oxidado (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1128 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: Almacén del Este, El Campamento del Paso, El Consejo del Puente, El Paso Alto, El Río Quebranto, Lo que dejaron atrás, Puente Roto, estructura de piedra tallada
+    turno 1: Almacén del Este, El Río Quebranto, Lo que dejaron atrás
+    turno 3: Almacén del Este, Lo que dejaron atrás
+    turno 5: Almacén del Este, Lo que dejaron atrás
+    turno 6: Almacén del Este, Lo que dejaron atrás, pasadizo oculto
+  camino (primeras y últimas visitas):
+    turno   2 → Lo que dejaron atrás
+    turno  24 → Almacén del Este
+    turno  25 → Lo que dejaron atrás
+    ...
+    turno 1254 → Lo que dejaron atrás
+    turno 1299 → Almacén del Este
+    turno 1300 → Lo que dejaron atrás
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  ningún reloj ha disparado todavía en esta campaña
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 0.667  (sobre 10 secciones; máximo teórico = 4.5)
+    Elian: Ci=0.5  (primera mención sección 2, última sección 3)
+    Maestro de Llaves: Ci=0.5  (primera mención sección 6, última sección 7)
+    El Vigilante del Granero: Ci=1.0  (primera mención sección 3, última sección 5)
+  V promedio = 0.055  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Elian: Vi=0.058  (400 atributos propios detectados)
+    Maestro de Llaves: Vi=0.081  (297 atributos propios detectados)
+    El Vigilante del Granero: Vi=0.026  (38 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=0.312  (5/16)
+    npc.affinity     recall=0.167  (3/18)
+  recall global: 0.235  (34 deltas evaluables)
+  26 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  133 · Soldado herido · npc.status=dead
+    turno  134 · Soldado herido · npc.affinity=loyal
+    turno  160 · Soldado herido · npc.affinity=devoted
+    turno  201 · Soldado herido · npc.status=captured
+    turno  406 · Elian · npc.affinity=cold
+    turno  408 · Elian · npc.affinity=wary
+    turno  454 · Soldado herido · npc.status=dead
+    turno  455 · Soldado herido · npc.affinity=cold
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.998  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.999  (min 0.970, max 1.000, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.021  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  117 turno(s) marcados en vivo. Reclasificación:
+    sujeto de una acción (repite el hallazgo crudo): 21 (17.9%)
+    solo mencionado/referenciado (posible falso positivo): 105 (89.7%)
+  muestra de 'actuando' (spot-check manual recomendado antes de citar en la tesis):
+    turno  530 · Elian: «Elian, al ver el objeto expuesto, deja de balbucear por un instante.»
+    turno  531 · Elian: «Elian, mientras tanto, se ha encogido sobre sí mismo, tapándose la boca con una mano para ahogar los sollozos.»
+    turno  532 · Elian: «Elian se tensa ante tu orden, pero no levanta la cabeza.»
+    turno  533 · Elian: «Elian se encoge aún más, hundiéndose en sí mismo mientras intentas forzar su mirada.»
+    turno  535 · Elian: «Elian se tensa al escuchar tu voz, pero el tono firme y la posición a su altura parecen romper, aunque sea por un instante, el ciclo de su pánico.»
+
+==========================================================================
+

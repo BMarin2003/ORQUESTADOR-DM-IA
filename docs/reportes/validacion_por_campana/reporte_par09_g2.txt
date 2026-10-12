@@ -1,0 +1,105 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 09 (real) · G2 (Monolítico) · Bruma Honda · monolithic
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        3 (  0.2%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                   28 (  2.0%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado              5 (  0.4%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.173  [0.064, 0.302]
+    qn1_ttr                                n=1400  prom=0.721  [0.608, 0.845]
+    qn1_ngram_repeticion                   n=1400  prom=0.019  [0.000, 0.083]
+    qn1_legibilidad_fh                     n=1400  prom=57.907  [35.250, 84.040]
+    cr2_entidad_grafo_densidad             n=1399  prom=0.378  [0.000, 1.000]
+  CR-2 turnos con algún nombre no reconocido: 39
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  264 visitas distintas · 4 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: Cámara del Núcleo ↔ cavidad oculta ↔ el jardín de los olvidados ↔ losa desplazada (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  699 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: Bruma Honda, Cámara del Núcleo, La Capilla Vieja, La Casa de Cuarentena, La Fosa Común Vieja, Sótano de la hondonada, cavidad oculta, el jardín de los olvidados
+    turno 1: Cámara del Núcleo, La Casa de Cuarentena, el jardín de los olvidados
+    turno 2: Cámara del Núcleo, el jardín de los olvidados
+    turno 4: Cámara del Núcleo, el jardín de los olvidados
+    turno 5: Cámara del Núcleo, el jardín de los olvidados
+  camino (primeras y últimas visitas):
+    turno   3 → Cámara del Núcleo
+    turno  10 → el jardín de los olvidados
+    turno  12 → Cámara del Núcleo
+    ...
+    turno 1385 → el jardín de los olvidados
+    turno 1393 → Cámara del Núcleo
+    turno 1398 → el jardín de los olvidados
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  ningún reloj ha disparado todavía en esta campaña
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 1.167  (sobre 10 secciones; máximo teórico = 4.5)
+    Superviviente de la ceniza: Ci=2.5  (primera mención sección 3, última sección 8)
+    Amancio Bell: Ci=1.0  (primera mención sección 0, última sección 2)
+    Elian: Ci=0.0  (primera mención sección 0, última sección 0)
+  V promedio = 0.03  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Superviviente de la ceniza: Vi=0.01  (98 atributos propios detectados)
+    Amancio Bell: Vi=0.08  (25 atributos propios detectados)
+    Elian: Vi=0.0  (12 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=0.556  (10/18)
+    npc.affinity     recall=0.000  (0/9)
+  recall global: 0.370  (27 deltas evaluables)
+  17 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  240 · Amancio Bell · npc.status=missing
+    turno  397 · Amancio Bell · npc.affinity=devoted
+    turno  486 · Superviviente de la ceniza · npc.status=dead
+    turno  492 · Superviviente de la ceniza · npc.affinity=loyal
+    turno  502 · Superviviente de la ceniza · npc.affinity=devoted
+    turno  707 · Superviviente de la ceniza · npc.status=dead
+    turno  862 · Superviviente de la ceniza · npc.affinity=loyal
+    turno  862 · Superviviente de la ceniza · npc.status=captured
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.998  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.999  (min 0.955, max 1.000, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.005  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  28 turno(s) marcados en vivo. Reclasificación:
+    sujeto de una acción (repite el hallazgo crudo): 0 (0.0%)
+    solo mencionado/referenciado (posible falso positivo): 28 (100.0%)
+
+==========================================================================
+
