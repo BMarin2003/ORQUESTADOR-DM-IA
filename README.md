@@ -69,9 +69,22 @@ flowchart LR
 | | [`datos_v2/`](datos_v2/) | Mediciones por turno, por bloque y por campaña |
 | | [`validacion/`](validacion/) | Validación humana externa: muestras, claves y etiquetas |
 | **Resultados** | [`docs/`](docs/) | Resultados, reportes, especificaciones e IDs (ver [`docs/README.md`](docs/README.md)) |
+| **Sitio** | [`website/`](website/) | Documentación en Docusaurus; la referencia de código se genera desde los docstrings |
 | **Tesis** | [`tesis/`](tesis/) | Documento vigente (`TESIS2.docx.md`), versiones, figuras y audio de asesoría |
 | | [`sustentacion/`](sustentacion/) | Deck oficial UPAO, propuestas, generadores y guiones |
 | | [`entregas/`](entregas/) | Paquetes entregados al asesor |
+
+## Documentación
+
+El código está documentado con docstrings en español (estilo Google) en el motor (`orquestador/`, `jugador/`, `entorno/`, `fixtures/`) y en la medición (`scripts/instrumentos`, `reporte_v2`, `sensibilidad`, `semantico`, `brechas`). El sitio con arquitectura, réplica y referencia de módulos está en [`website/`](website/):
+
+```powershell
+cd website
+npm install
+npm start        # http://localhost:3000/ORQUESTADOR-DM-IA/
+```
+
+La referencia de API se regenera sola con `py scripts/documentacion/generar_referencia_api.py`.
 
 ---
 

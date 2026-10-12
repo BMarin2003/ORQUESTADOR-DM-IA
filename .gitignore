@@ -5,3 +5,7 @@ node_modules/
 scripts/instrumentos/_cache/
 # marcadores de los scripts de espera de datos_v2 (se regeneran)
 datos_v2/*.ok
+# Docusaurus
+website/.docusaurus/
+website/build/
+website/docs/referencia/
