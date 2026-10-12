@@ -21,6 +21,18 @@ Y dos parámetros propios del jugador:
   desvio     cuánto persigue lo suyo frente a los ganchos del DM
   deriva     si sus ejes se mueven durante la campaña (grises mutables)
 
+Estadísticas D&D 5e (nuevo 2026-09-16):
+  Hasta ahora `jugador/dados.py` tiraba con una tabla de modificadores PLANA
+  y compartida por los 27 personajes -- un Paladín de juramento y un
+  Nigromante académico tiraban exactamente igual. Eso no es correcto: cada
+  arquetipo trae su propia clase, y la clase debería determinar en qué es
+  bueno. Se agrega aquí, por ficha, `caracteristicas` (las 6 puntuaciones
+  base, standard array 15/14/13/12/10/8 asignado por prioridad de clase) y
+  `modificadores` (las 24 entradas -- 6 características + 18 habilidades --
+  ya calculadas, listas para que `dados.py` las use en vez de su tabla
+  global). Es determinista: la prioridad por clase es fija, no consume del
+  generador `random`.
+
 Uso:  python3 generar_personajes.py > personajes_jugadores.json
 """
 
@@ -76,6 +88,99 @@ TRASFONDOS = ["forastero", "artesano", "soldado", "criminal", "acólito",
               "noble", "huérfano", "marinero", "erudito"]
 
 
+# --------------------------------------------------------------- D&D 5e ---
+
+STANDARD_ARRAY = [15, 14, 13, 12, 10, 8]
+PROFICIENCIA = 2  # nivel 3, todas las clases
+
+# Orden de prioridad de las 6 características por clase (mayor a menor).
+# El standard array se reparte en ese orden -- así cada clase sale con un
+# perfil de puntuaciones coherente con su rol, sin necesitar random.
+PRIORIDAD_CLASE = {
+    "paladín":    ["carisma", "fuerza", "constitución", "sabiduría", "destreza", "inteligencia"],
+    "clérigo":    ["sabiduría", "constitución", "fuerza", "carisma", "destreza", "inteligencia"],
+    "explorador": ["destreza", "sabiduría", "constitución", "fuerza", "carisma", "inteligencia"],
+    "guerrero":   ["fuerza", "constitución", "destreza", "sabiduría", "carisma", "inteligencia"],
+    "bardo":      ["carisma", "destreza", "constitución", "sabiduría", "inteligencia", "fuerza"],
+    "pícaro":     ["destreza", "carisma", "constitución", "inteligencia", "sabiduría", "fuerza"],
+    "mago":       ["inteligencia", "constitución", "destreza", "sabiduría", "carisma", "fuerza"],
+    "bárbaro":    ["fuerza", "constitución", "destreza", "sabiduría", "carisma", "inteligencia"],
+    "brujo":      ["carisma", "constitución", "destreza", "sabiduría", "inteligencia", "fuerza"],
+}
+
+# Salvaciones competentes por clase (SRD, 2 por clase).
+SALVACIONES_CLASE = {
+    "paladín":    {"sabiduría", "carisma"},
+    "clérigo":    {"sabiduría", "carisma"},
+    "explorador": {"fuerza", "destreza"},
+    "guerrero":   {"fuerza", "constitución"},
+    "bardo":      {"destreza", "carisma"},
+    "pícaro":     {"destreza", "inteligencia"},
+    "mago":       {"inteligencia", "sabiduría"},
+    "bárbaro":    {"fuerza", "constitución"},
+    "brujo":      {"sabiduría", "carisma"},
+}
+
+# Habilidad -> característica ligada (SRD).
+HABILIDAD_CARACTERISTICA = {
+    "atletismo": "fuerza",
+    "acrobacias": "destreza", "sigilo": "destreza", "juego de manos": "destreza",
+    "arcanos": "inteligencia", "historia": "inteligencia",
+    "investigación": "inteligencia", "naturaleza": "inteligencia",
+    "religión": "inteligencia",
+    "perspicacia": "sabiduría", "medicina": "sabiduría",
+    "percepción": "sabiduría", "supervivencia": "sabiduría",
+    "trato con animales": "sabiduría",
+    "engaño": "carisma", "intimidación": "carisma",
+    "interpretación": "carisma", "persuasión": "carisma",
+}
+
+# Habilidades "de afinidad" por clase (competencia típica del arquetipo).
+AFINIDAD_CLASE = {
+    "paladín":    {"atletismo", "perspicacia", "intimidación", "persuasión", "religión"},
+    "clérigo":    {"perspicacia", "medicina", "persuasión", "religión", "historia"},
+    "explorador": {"naturaleza", "percepción", "sigilo", "supervivencia", "trato con animales"},
+    "guerrero":   {"atletismo", "intimidación", "percepción", "supervivencia"},
+    "bardo":      {"interpretación", "persuasión", "engaño", "historia", "perspicacia"},
+    "pícaro":     {"sigilo", "juego de manos", "engaño", "percepción", "acrobacias"},
+    "mago":       {"arcanos", "historia", "investigación", "religión"},
+    "bárbaro":    {"atletismo", "intimidación", "percepción", "supervivencia"},
+    "brujo":      {"arcanos", "engaño", "intimidación", "investigación", "persuasión"},
+}
+
+
+def modificador(puntuacion):
+    """Modificador estándar de D&D 5e: (puntuación - 10) // 2."""
+    return puntuacion // 2 - 5
+
+
+def generar_caracteristicas(clase):
+    """Reparte el standard array (15/14/13/12/10/8) según la prioridad de
+    la clase. Determinista: no consume random, la prioridad es fija."""
+    orden = PRIORIDAD_CLASE[clase]
+    return {hab: val for hab, val in zip(orden, STANDARD_ARRAY)}
+
+
+def calcular_modificadores(clase, caracteristicas):
+    """Las 24 entradas (6 características + 18 habilidades) que
+    `jugador/dados.py` usa para resolver una tirada. Característica pura:
+    mod de la puntuación, +COMPETENCIA si la clase es competente en esa
+    salvación. Habilidad: mod de su característica ligada, +COMPETENCIA
+    si es una habilidad de afinidad de la clase."""
+    mods = {}
+    for hab, val in caracteristicas.items():
+        base = modificador(val)
+        if hab in SALVACIONES_CLASE[clase]:
+            base += PROFICIENCIA
+        mods[hab] = base
+    for skill, carac in HABILIDAD_CARACTERISTICA.items():
+        base = modificador(caracteristicas[carac])
+        if skill in AFINIDAD_CLASE[clase]:
+            base += PROFICIENCIA
+        mods[skill] = base
+    return mods
+
+
 def agenda(arq, i):
     """Objetivos propios, independientes de lo que plantee el DM.
 
@@ -126,6 +231,7 @@ def main():
     for i, arq in enumerate(ARQUETIPOS):
         nombre_arq, clase, w, c, p, b, desvio, deriva = arq
         eje, delta = (deriva.split(":") if deriva else (None, None))
+        caracteristicas = generar_caracteristicas(clase)
         fichas.append({
             "id": f"PJ{i+1:02d}",
             "nombre": NOMBRES[i],
@@ -140,6 +246,8 @@ def main():
             "agenda": agenda(arq, i),
             "desvio": desvio,
             "deriva": ({"eje": eje, "por_sesion": int(delta)} if deriva else None),
+            "caracteristicas": caracteristicas,
+            "modificadores": calcular_modificadores(clase, caracteristicas),
             "_nota": ("Gris mutable: sus ejes se mueven durante la campaña, lo que "
                       "obliga al sistema a rastrear una evolución en vez de un rasgo fijo."
                       if deriva else None),

@@ -55,6 +55,15 @@ No uses bloques de código ni ``` ni markdown. Escribe el turno directamente.
   Perspicacia · Medicina · Percepción · Supervivencia · Trato con Animales
   Engaño · Intimidación · Interpretación · Persuasión
 
+Y estas tres tiradas de combate, también entre llaves:
+
+  {Ataque}          cuando golpeas, disparas o lanzas algo contra alguien
+  {Ataque mágico}   solo si tu personaje lanza conjuros y ataca con uno
+  {Iniciativa}      cuando empieza un combate
+
+Si atacas a alguien, declara siempre {Ataque} (o {Ataque mágico}): sin
+tirada, el ataque no se resuelve.
+
 Si lo que quieres hacer no encaja en ninguna, descríbelo sin llaves y deja
 que el DM decida qué tirada pedirte. Nunca inventes una habilidad.
 
