@@ -1,0 +1,104 @@
+brazo,campaign_id,clave_original,disparo,evento,instrumento,oracion_insertada,oraciones_quitadas,par,perturbacion,reconocido_antes,reconocido_despues,resultado,turn_id,turno_editado,turnos_editados
+G2,fc6c19b0-49a6-4abb-ad44-b12de9438828,,,npc.affinity=cold@Alistair Vance,jericho_recall,El trato de Alistair Vance contigo se ha vuelto frío y distante.,,04,JQ1,False,True,se_dispara,1365,1366,
+G2,9e7e4aec-5a1d-41ce-9904-ccffaebfd944,,,npc.status=captured@Alaric el Escriba,jericho_recall,Alaric el Escriba ha sido capturado y ahora es cautivo de sus enemigos.,,20,JQ1,False,True,se_dispara,445,446,
+G2,ff0c8110-caa5-48fa-b285-7dc903cc1d26,,,npc.affinity=cordial@Elian,jericho_recall,Elian te trata ahora de forma cordial y amable.,,03,JQ1,False,True,se_dispara,699,700,
+G1,a583b7b7-c777-4032-b493-3b61d57476b0,,,npc.status=dead@Leo Varga,jericho_recall,"Leo Varga yace muerto en el suelo, sin vida.",,19,JQ1,False,True,se_dispara,1280,1281,
+G2,41674211-baed-424c-9187-3a6429dd8400,,,npc.status=dead@Superviviente de la ceniza,jericho_recall,"Superviviente de la ceniza yace muerto en el suelo, sin vida.",,09,JQ1,False,True,se_dispara,1014,1015,
+G2,f42e9672-4df4-40bf-a912-02fba5ae396e,,,npc.status=dead@Custodio del Eco,jericho_recall,"Custodio del Eco yace muerto en el suelo, sin vida.",,07,JQ1,False,True,se_dispara,1345,1346,
+G2,41674211-baed-424c-9187-3a6429dd8400,,,npc.affinity=devoted@Superviviente de la ceniza,jericho_recall,Superviviente de la ceniza te venera y te muestra una devoción incondicional.,,09,JQ1,False,True,se_dispara,863,864,
+G2,e9bef82d-8b7a-41e9-8cb6-8e6af542e514,,,npc.affinity=wary@Figura encapuchada,jericho_recall,Figura encapuchada te mira ahora con evidente desconfianza.,,01,JQ1,False,True,se_dispara,970,971,
+G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,,,npc.affinity=wary@El Vigilante del Granero,jericho_recall,El Vigilante del Granero te mira ahora con evidente desconfianza.,,10,JQ1,False,True,se_dispara,618,619,
+G2,41674211-baed-424c-9187-3a6429dd8400,,,npc.status=dead@Superviviente de la ceniza,jericho_recall,"Superviviente de la ceniza yace muerto en el suelo, sin vida.",,09,JQ1,False,True,se_dispara,707,708,
+G2,6f319319-f39f-4902-9f11-a5d5a17798af,,,npc.affinity=hostile@figura encapuchada,jericho_recall,figura encapuchada se muestra abiertamente hostil hacia ti.,,12,JQ1,False,True,se_dispara,627,628,
+G2,e1e30d0b-9dd8-454c-b297-44c08204610f,,,npc.affinity=wary@tendero,jericho_recall,tendero te mira ahora con evidente desconfianza.,,16,JQ1,False,True,se_dispara,282,283,
+G1,878b05b9-c082-4595-9c64-5bdc736bbe1a,,,npc.affinity=hostile@Valerius,jericho_recall,Valerius se muestra abiertamente hostil hacia ti.,,18,JQ1,False,True,se_dispara,1341,1342,
+G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,,,npc.status=dead@El Guardián del Umbral,jericho_recall,"El Guardián del Umbral yace muerto en el suelo, sin vida.",,27,JQ1,False,True,se_dispara,185,186,
+G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,,,npc.affinity=cordial@El hombre del anillo de sello,jericho_recall,El hombre del anillo de sello te trata ahora de forma cordial y amable.,,27,JQ1,False,True,se_dispara,44,45,
+G2,f42e9672-4df4-40bf-a912-02fba5ae396e,,,npc.status=dead@El Vigilante del Umbral,jericho_recall,"El Vigilante del Umbral yace muerto en el suelo, sin vida.",,07,JQ1,False,True,se_dispara,930,931,
+G2,b09c56ca-cc15-4576-9ad7-cd16773f14b4,,,npc.affinity=devoted@Capitán Vane,jericho_recall,Capitán Vane te venera y te muestra una devoción incondicional.,,24,JQ1,False,True,se_dispara,1065,1066,
+G1,8d8e8f27-41d7-4573-a294-c79d2378b6e5,,,npc.affinity=loyal@Melida Corcho,jericho_recall,Melida Corcho te ha jurado lealtad y te es leal.,,14,JQ1,False,True,se_dispara,549,550,
+G2,dfe775b9-a57f-4bba-ba17-a680c9e61ee8,,,npc.affinity=loyal@Serafín Brea,jericho_recall,Serafín Brea te ha jurado lealtad y te es leal.,,21,JQ1,False,True,se_dispara,1369,1370,
+G2,ebfcb92e-2eeb-4235-a1d2-73630f75a631,,,npc.status=dead@la masa pálida,jericho_recall,"la masa pálida yace muerto en el suelo, sin vida.",,08,JQ1,False,True,se_dispara,925,926,
+G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,,,npc.status=dead@criatura de piel translúcida,jericho_recall,"criatura de piel translúcida yace muerto en el suelo, sin vida.",,06,JQ1,False,True,se_dispara,357,358,
+G2,9e7e4aec-5a1d-41ce-9904-ccffaebfd944,,,npc.affinity=wary@Archivero adjunto,jericho_recall,Archivero adjunto te mira ahora con evidente desconfianza.,,20,JQ1,False,True,se_dispara,1043,1044,
+G1,84eb6728-52d3-434c-924c-2c21b6099c92,,,npc.status=captured@autómata de mantenimiento,jericho_recall,autómata de mantenimiento ha sido capturado y ahora es cautivo de sus enemigos.,,02,JQ1,False,True,se_dispara,1219,1220,
+G1,b7a090cf-032e-4a87-be01-e03fa88a9917,,,npc.affinity=loyal@Renata Ossorio,jericho_recall,Renata Ossorio te ha jurado lealtad y te es leal.,,05,JQ1,False,True,se_dispara,1370,1371,
+G2,79db3083-9993-458a-86a9-12ddec04e192,,,npc.affinity=loyal@Baldor Enna,jericho_recall,Baldor Enna te ha jurado lealtad y te es leal.,,15,JQ1,False,True,se_dispara,1013,1014,
+G2,e1e30d0b-9dd8-454c-b297-44c08204610f,,,npc.affinity=hostile@Elian,jericho_recall,Elian se muestra abiertamente hostil hacia ti.,,16,JQ1,False,True,se_dispara,1049,1050,
+G2,45f450c1-29bc-4dde-8960-82129291f1ad,,,npc.affinity=cordial@Hombre de la casaca carmesí,jericho_recall,Hombre de la casaca carmesí te trata ahora de forma cordial y amable.,,17,JQ1,False,True,se_dispara,355,356,
+G2,ff0c8110-caa5-48fa-b285-7dc903cc1d26,,,npc.affinity=cordial@Figura encapuchada,jericho_recall,Figura encapuchada te trata ahora de forma cordial y amable.,,03,JQ1,False,True,se_dispara,495,496,
+G2,5653d917-4744-43e3-90ba-8190a22a126c,,,npc.affinity=loyal@El hombre de los harapos,jericho_recall,El hombre de los harapos te ha jurado lealtad y te es leal.,,02,JQ1,False,True,se_dispara,366,367,
+G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,,,npc.status=dead@criatura de piel translúcida,jericho_recall,"criatura de piel translúcida yace muerto en el suelo, sin vida.",,06,JQ1,False,True,se_dispara,597,598,
+G2,45f450c1-29bc-4dde-8960-82129291f1ad,,,npc.affinity=loyal@Kaelen,jericho_recall,Kaelen te ha jurado lealtad y te es leal.,,17,JQ1,False,True,se_dispara,958,959,
+G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,,,npc.affinity=wary@Cebrián Poyo,jericho_recall,Cebrián Poyo te mira ahora con evidente desconfianza.,,10,JQ1,False,True,se_dispara,593,594,
+G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,,,npc.status=dead@criatura de piel translúcida,jericho_recall,"criatura de piel translúcida yace muerto en el suelo, sin vida.",,06,JQ1,False,True,se_dispara,611,612,
+G2,45f450c1-29bc-4dde-8960-82129291f1ad,,,npc.affinity=loyal@Melquíades Sorna,jericho_recall,Melquíades Sorna te ha jurado lealtad y te es leal.,,17,JQ1,False,True,se_dispara,1046,1047,
+G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,,,npc.status=dead@Híbrido de metal y roca,jericho_recall,"Híbrido de metal y roca yace muerto en el suelo, sin vida.",,19,JQ1,False,True,se_dispara,875,876,
+G2,a7ef3360-3014-4942-bf11-4db774a95904,,,npc.affinity=wary@Maestro Pimpón,jericho_recall,Maestro Pimpón te mira ahora con evidente desconfianza.,,18,JQ1,False,True,se_dispara,393,394,
+G2,79db3083-9993-458a-86a9-12ddec04e192,,,npc.affinity=loyal@Escribano anónimo,jericho_recall,Escribano anónimo te ha jurado lealtad y te es leal.,,15,JQ1,False,True,se_dispara,110,111,
+G2,41674211-baed-424c-9187-3a6429dd8400,,,npc.status=dead@Superviviente de la ceniza,jericho_recall,"Superviviente de la ceniza yace muerto en el suelo, sin vida.",,09,JQ1,False,True,se_dispara,1034,1035,
+G2,0bc0b20b-0dba-454d-a32e-94fbeb24dddf,,,npc.affinity=cordial@Damil Quiroga,jericho_recall,Damil Quiroga te trata ahora de forma cordial y amable.,,05,JQ1,False,True,se_dispara,891,892,
+G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,,,npc.status=dead@criatura de piel translúcida,jericho_recall,"criatura de piel translúcida yace muerto en el suelo, sin vida.",,06,JQ1,False,True,se_dispara,1272,1273,
+G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,cadáver,,npc.status=dead@criatura de piel translúcida,jericho_recall,,2,06,JQ2,True,False,se_apaga,795,,"[795, 796]"
+G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,cadáver,,npc.status=dead@criatura de piel translúcida,jericho_recall,,2,06,JQ2,True,False,se_apaga,273,,"[273, 274]"
+G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,cadáver,,npc.status=dead@criatura de piel translúcida,jericho_recall,,1,06,JQ2,True,False,se_apaga,1321,,"[1321, 1322]"
+G1,fbe6d980-964f-455c-89d9-96d34d9653fe,hostil,,npc.affinity=hostile@Osana Ferreira,jericho_recall,,1,06,JQ2,True,False,se_apaga,1093,,"[1093, 1094]"
+G2,45f450c1-29bc-4dde-8960-82129291f1ad,muert,,npc.status=dead@Melquíades Sorna,jericho_recall,,2,17,JQ2,True,False,se_apaga,1133,,"[1133, 1134]"
+G2,e9bef82d-8b7a-41e9-8cb6-8e6af542e514,gélid,,npc.affinity=cold@Grog,jericho_recall,,1,01,JQ2,True,False,se_apaga,690,,"[690, 691]"
+G1,ad163fd8-4b8d-43bd-acf6-33e7a33afb97,gélid,,npc.affinity=cold@Casimira Ortigal,jericho_recall,,3,22,JQ2,True,False,se_apaga,433,,"[433, 434]"
+G2,cebcafd3-23cc-4d61-8e2e-9360587b7464,gélid,,npc.affinity=cold@Madame Valeriane,jericho_recall,,1,14,JQ2,True,False,se_apaga,579,,"[579, 580]"
+G2,f42e9672-4df4-40bf-a912-02fba5ae396e,cautel,,npc.affinity=wary@El Vigilante del Umbral,jericho_recall,,1,07,JQ2,True,False,se_apaga,782,,"[782, 783]"
+G2,41674211-baed-424c-9187-3a6429dd8400,cadáver,,npc.status=dead@Superviviente de la ceniza,jericho_recall,,1,09,JQ2,True,False,se_apaga,930,,"[930, 931]"
+G2,41674211-baed-424c-9187-3a6429dd8400,cadáver,,npc.status=dead@Superviviente de la ceniza,jericho_recall,,1,09,JQ2,True,False,se_apaga,1159,,"[1159, 1160]"
+G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,cadáver,,npc.status=dead@El hombre de la cicatriz en la mejilla,jericho_recall,,1,19,JQ2,True,False,se_apaga,686,,"[686, 687]"
+G1,fbe6d980-964f-455c-89d9-96d34d9653fe,adora,,npc.affinity=devoted@Bregas Coll,jericho_recall,,1,06,JQ2,True,False,se_apaga,434,,"[434, 435]"
+G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,gélid,,npc.affinity=cold@El hombre del anillo de sello,jericho_recall,,3,27,JQ2,True,False,se_apaga,524,,"[524, 525]"
+G1,0480c825-e678-470e-97a5-6cb77a9e0925,seca,,npc.affinity=cold@técnico,jericho_recall,,1,21,JQ2,True,False,se_apaga,1037,,"[1037, 1038]"
+G2,41674211-baed-424c-9187-3a6429dd8400,cadáver,,npc.status=dead@Superviviente de la ceniza,jericho_recall,,1,09,JQ2,True,False,se_apaga,1200,,"[1200, 1201]"
+G2,dfe775b9-a57f-4bba-ba17-a680c9e61ee8,cadáver,,npc.status=dead@Serafín Brea,jericho_recall,,2,21,JQ2,True,False,se_apaga,161,,"[161, 162]"
+G1,7231e456-9284-40b3-83ed-d1de4dc4e33e,desconf,,npc.affinity=wary@Baldemar Cruz,jericho_recall,,1,13,JQ2,True,False,se_apaga,71,,"[71, 72]"
+G1,0480c825-e678-470e-97a5-6cb77a9e0925,muert,,npc.status=dead@Parásito eléctrico,jericho_recall,,1,21,JQ2,True,False,se_apaga,58,,"[58, 59]"
+G2,e9bef82d-8b7a-41e9-8cb6-8e6af542e514,distante,,npc.affinity=cold@Supervisor del muelle,jericho_recall,,3,01,JQ2,True,False,se_apaga,729,,"[729, 730]"
+G2,ff0c8110-caa5-48fa-b285-7dc903cc1d26,gélid,,npc.affinity=cold@Erudito de la Atalaya,jericho_recall,,2,03,JQ2,True,False,se_apaga,517,,"[517, 518]"
+G2,eccb3666-5a9c-4959-8427-ae693f8c7530,cadáver,,npc.status=dead@zorro del bosque,jericho_recall,,1,26,JQ2,True,False,se_apaga,876,,"[876, 877]"
+G1,7dc9fe9d-9052-4252-aa0c-f86490b96dbe,fall,,quest.status=failed@El reparto que no alcanza,jericho_recall,,1,10,JQ2,True,False,se_apaga,973,,"[973, 974]"
+G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,cadáver,,npc.status=dead@El Vigilante del Granero,jericho_recall,,1,10,JQ2,True,False,se_apaga,681,,"[681, 682]"
+G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,cadáver,,npc.status=dead@El Susurro del Hambre,jericho_recall,,1,27,JQ2,True,False,se_apaga,722,,"[722, 723]"
+G2,e1e30d0b-9dd8-454c-b297-44c08204610f,distante,,npc.affinity=cold@criatura de la máscara de hierro,jericho_recall,,3,16,JQ2,True,False,se_apaga,903,,"[903, 904]"
+G2,e1e30d0b-9dd8-454c-b297-44c08204610f,muert,,npc.status=dead@Hombre del tabardo gris,jericho_recall,,1,16,JQ2,True,False,se_apaga,833,,"[833, 834]"
+G2,a7ef3360-3014-4942-bf11-4db774a95904,prisioner,,npc.status=captured@Letra O,jericho_recall,,1,18,JQ2,True,False,se_apaga,207,,"[207, 208]"
+G1,5f050643-72d2-4c9f-8209-9c9ce008c61e,cordial,,npc.affinity=cordial@Osvaldo Prín,jericho_recall,,1,12,JQ2,True,False,se_apaga,406,,"[406, 407]"
+G2,0bc0b20b-0dba-454d-a32e-94fbeb24dddf,desconf,,npc.affinity=wary@el viejo cartógrafo,jericho_recall,,1,05,JQ2,True,False,se_apaga,1107,,"[1107, 1108]"
+G1,4521da96-8eda-4fb7-9464-ce09d417d26f,muert,,npc.status=dead@entidad orgánica,jericho_recall,,1,15,JQ2,True,False,se_apaga,1192,,"[1192, 1193]"
+G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,fría,,npc.affinity=cold@criatura de piel translúcida,jericho_recall,,1,06,JQ2,True,False,se_apaga,877,,"[877, 878]"
+G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,gélid,,npc.affinity=cold@El Vigilante del Granero,jericho_recall,,3,10,JQ2,True,False,se_apaga,582,,"[582, 583]"
+G2,eccb3666-5a9c-4959-8427-ae693f8c7530,desapareci,,npc.status=missing@Nicasio Tala,jericho_recall,,1,26,JQ2,True,False,se_apaga,449,,"[449, 450]"
+G1,a583b7b7-c777-4032-b493-3b61d57476b0,cadáver,,npc.status=dead@Leo Varga,jericho_recall,,1,19,JQ2,True,False,se_apaga,830,,"[830, 831]"
+G2,b09c56ca-cc15-4576-9ad7-cd16773f14b4,adora,,npc.affinity=devoted@Barnaby,jericho_recall,,1,24,JQ2,True,False,se_apaga,740,,"[740, 741]"
+G2,41674211-baed-424c-9187-3a6429dd8400,cadáver,,npc.status=dead@Superviviente de la ceniza,jericho_recall,,1,09,JQ2,True,False,se_apaga,1201,,"[1201, 1202]"
+G1,8d8e8f27-41d7-4573-a294-c79d2378b6e5,adora,,npc.affinity=devoted@Melida Corcho,jericho_recall,,1,14,JQ2,True,False,se_apaga,621,,"[621, 622]"
+G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,cadáver,,npc.status=dead@criatura de piel translúcida,jericho_recall,,1,06,JQ2,True,False,se_apaga,794,,"[794, 795]"
+G1,494e1d7d-9d10-43da-ac4b-041935b24c8b,adora,,npc.affinity=devoted@Zoraida Puch,jericho_recall,,1,16,JQ2,True,False,se_apaga,441,,"[441, 442]"
+G1,a2d586a1-18a0-4391-977c-7c4bf5e84c6e,,640,El Concejo de Lindero@640,relojes_reconocidos,"El Concejo de Lindero recorre el lugar mientras se habla de ""El Concejo de Lindero"" por todas partes.",,26,RJ1,False,True,se_dispara,,641,
+G2,1437e3df-bbf5-4118-b968-2f39f9f891f3,,980,La Casa Ortigal@980,relojes_reconocidos,"La Casa Ortigal recorre el lugar mientras se habla de ""Acreedora"" por todas partes.",,22,RJ1,False,True,se_dispara,,981,
+G2,eccb3666-5a9c-4959-8427-ae693f8c7530,,640,El Concejo de Lindero@640,relojes_reconocidos,"El Concejo de Lindero recorre el lugar mientras se habla de ""El Concejo de Lindero"" por todas partes.",,26,RJ1,False,True,se_dispara,,641,
+G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,,260,Las Hospitalarias de Odilia@260,relojes_reconocidos,"Las Hospitalarias de Odilia recorre el lugar mientras se habla de ""Berrocal"" por todas partes.",,27,RJ1,False,True,se_dispara,,261,
+G2,71851109-08d3-41db-9f22-796e26af13a1,,240,La Delegación del Norte@240,relojes_reconocidos,"La Delegación del Norte recorre el lugar mientras se habla de ""Congreso"" por todas partes.",,25,RJ1,False,True,se_dispara,,241,
+G2,a7ef3360-3014-4942-bf11-4db774a95904,,240,El Claustro de Catedráticos@240,relojes_reconocidos,"El Claustro de Catedráticos recorre el lugar mientras se habla de ""El Claustro de Catedráticos"" por todas partes.",,18,RJ1,False,True,se_dispara,,241,
+G2,a7ef3360-3014-4942-bf11-4db774a95904,,640,El Claustro de Catedráticos@640,relojes_reconocidos,"El Claustro de Catedráticos recorre el lugar mientras se habla de ""El Claustro de Catedráticos"" por todas partes.",,18,RJ1,False,True,se_dispara,,641,
+G2,a7ef3360-3014-4942-bf11-4db774a95904,antes,1060,La Delegación Estudiantil@1060,relojes_reconocidos,,1,18,RJ2,True,False,se_apaga,,,"[1061, 1062]"
+G1,802bebcb-d49d-455b-9dad-e05b66955504,Congreso,240,La Delegación del Norte@240,relojes_reconocidos,,5,25,RJ2,True,False,se_apaga,,,"[241, 242]"
+G2,dfe775b9-a57f-4bba-ba17-a680c9e61ee8,quien,240,Los Oficiales de la Ceniza@240,relojes_reconocidos,,2,21,RJ2,True,False,se_apaga,,,"[241, 242]"
+G2,1437e3df-bbf5-4118-b968-2f39f9f891f3,agua,260,La Servidumbre Ligada@260,relojes_reconocidos,,3,22,RJ2,True,False,se_apaga,,,"[261, 262]"
+G1,ad163fd8-4b8d-43bd-acf6-33e7a33afb97,Acreedora,260,La Servidumbre Ligada@260,relojes_reconocidos,,10,22,RJ2,True,False,se_apaga,,,"[261, 262]"
+G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,sobre,980,La Cofradía de Portadores@980,relojes_reconocidos,,1,27,RJ2,True,False,se_apaga,,,"[981, 982]"
+G2,e8629a76-58f5-45d3-91e2-15bf7c1d60af,como,260,Las Familias de los Muertos@260,relojes_reconocidos,,3,23,RJ2,True,False,se_apaga,,,"[261, 262]"
+G1,683123ee-89b1-48ad-9d29-6100b6e822d4,admite,980,Las Familias de los Muertos@980,relojes_reconocidos,,7,23,RJ2,True,False,se_apaga,,,"[981, 982]"
+G1,802bebcb-d49d-455b-9dad-e05b66955504,Congreso,640,La Delegación del Sur@640,relojes_reconocidos,,6,25,RJ2,True,False,se_apaga,,,"[641, 642]"
+G1,802bebcb-d49d-455b-9dad-e05b66955504,Congreso,1000,La Delegación del Norte@1000,relojes_reconocidos,,9,25,RJ2,True,False,se_apaga,,,"[1001, 1002]"
+G2,b09c56ca-cc15-4576-9ad7-cd16773f14b4,piezas,640,La Vigilancia de Pilfera@640,relojes_reconocidos,,1,24,RJ2,True,False,se_apaga,,,"[641, 642]"
+G1,fd990516-18f6-4341-8ec7-9e2a12dfedca,Contaduría,640,La Vigilancia de Pilfera@640,relojes_reconocidos,,5,24,RJ2,True,False,se_apaga,,,"[641, 642]"
+G2,71851109-08d3-41db-9f22-796e26af13a1,para,640,La Delegación del Sur@640,relojes_reconocidos,,5,25,RJ2,True,False,se_apaga,,,"[641, 642]"
+G1,878b05b9-c082-4595-9c64-5bdc736bbe1a,Examen,240,El Claustro de Catedráticos@240,relojes_reconocidos,,9,18,RJ2,True,False,se_apaga,,,"[241, 242]"
+G2,eccb3666-5a9c-4959-8427-ae693f8c7530,centro,980,Los Guardas del Bosque@980,relojes_reconocidos,,2,26,RJ2,True,False,se_apaga,,,"[981, 982]"
+G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,para,640,El Consejo de los Gremios@640,relojes_reconocidos,,1,19,RJ2,True,False,se_apaga,,,"[641, 642]"

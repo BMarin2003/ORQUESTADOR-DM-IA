@@ -1,0 +1,9 @@
+{
+ "sha256": "783c4e43a46cdad513f599f212548912915754a0e141c89c9440a89cdcf71856",
+ "expectativas": {
+  "JQ1|jericho_recall": "se_dispara",
+  "JQ2|jericho_recall": "se_apaga",
+  "RJ1|relojes_reconocidos": "se_dispara",
+  "RJ2|relojes_reconocidos": "se_apaga"
+ }
+}

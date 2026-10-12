@@ -1,0 +1,61 @@
+id,estrato,par,brazo,campaign_id,turno_evaluado,pnj,estado,estado_desde_turno
+f8d8e8f27-41d7-4573-a294-c79d2378b6e5_200_Valerius,actuando,14,G1,8d8e8f27-41d7-4573-a294-c79d2378b6e5,200,Valerius,missing,114
+sd8bf034a-bcc9-4a12-999e-490be27c8a2e_1357_criaturade,silencio,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,1357,criatura de piel translúcida,captured,1357
+s1257c4f1-d3f8-4c43-a8a6-aa542b65d62d_1188_ElSusurrod,silencio,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,1188,El Susurro del Hambre,dead,1188
+fe1e30d0b-9dd8-454c-b297-44c08204610f_251_autómata,actuando,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,251,autómata,dead,248
+s7c8d9bfe-aa79-4142-80b3-b520e013b9d0_1378_Criaturade,silencio,19,G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,1378,Criatura de piel cenicienta,dead,1378
+fdfe775b9-a57f-4bba-ba17-a680c9e61ee8_273_SerafínBrea,solo_referenciado,21,G2,dfe775b9-a57f-4bba-ba17-a680c9e61ee8,273,Serafín Brea,dead,161
+f9e7e4aec-5a1d-41ce-9904-ccffaebfd944_885_Valerius,actuando,20,G2,9e7e4aec-5a1d-41ce-9904-ccffaebfd944,885,Valerius,dead,852
+f6f319319-f39f-4902-9f11-a5d5a17798af_1037_Valerius,actuando,12,G2,6f319319-f39f-4902-9f11-a5d5a17798af,1037,Valerius,captured,1034
+f259f2fdd-2857-4ebb-ad4f-bde8ea297e04_856_IllianVasto,solo_referenciado,11,G1,259f2fdd-2857-4ebb-ad4f-bde8ea297e04,856,Illian Vasto,captured,660
+f1257c4f1-d3f8-4c43-a8a6-aa542b65d62d_973_Alaric,actuando,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,973,Alaric,dead,82
+f6f319319-f39f-4902-9f11-a5d5a17798af_1289_Valerius,actuando,12,G2,6f319319-f39f-4902-9f11-a5d5a17798af,1289,Valerius,captured,1223
+f41674211-baed-424c-9187-3a6429dd8400_1207_Supervivient,solo_referenciado,09,G2,41674211-baed-424c-9187-3a6429dd8400,1207,Superviviente de la ceniza,dead,1201
+f494e1d7d-9d10-43da-ac4b-041935b24c8b_648_ZoraidaPuch,solo_referenciado,16,G1,494e1d7d-9d10-43da-ac4b-041935b24c8b,648,Zoraida Puch,missing,464
+f9dcf64ea-8da4-4dcf-b168-4f960b839c04_536_Elian,solo_referenciado,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,536,Elian,captured,529
+ffbe6d980-964f-455c-89d9-96d34d9653fe_465_BregasColl,solo_referenciado,06,G1,fbe6d980-964f-455c-89d9-96d34d9653fe,465,Bregas Coll,captured,304
+fe1e30d0b-9dd8-454c-b297-44c08204610f_1398_Elian,actuando,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,1398,Elian,captured,1397
+s1257c4f1-d3f8-4c43-a8a6-aa542b65d62d_842_ElGuardián,silencio,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,842,El Guardián del Umbral,dead,842
+f9e7e4aec-5a1d-41ce-9904-ccffaebfd944_854_Valerius,actuando,20,G2,9e7e4aec-5a1d-41ce-9904-ccffaebfd944,854,Valerius,dead,852
+f9dcf64ea-8da4-4dcf-b168-4f960b839c04_1058_MaestrodeL,solo_referenciado,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,1058,Maestro de Llaves,captured,1038
+s7c8d9bfe-aa79-4142-80b3-b520e013b9d0_1267_CapitánVaro,silencio,19,G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,1267,Capitán Varos,dead,1267
+ffc82b88f-da23-41c9-b164-b78c0a9dfbc8_1174_AnselmoVela,solo_referenciado,27,G1,fc82b88f-da23-41c9-b164-b78c0a9dfbc8,1174,Anselmo Vela,dead,1138
+f683123ee-89b1-48ad-9d29-6100b6e822d4_1273_masablindad,solo_referenciado,23,G1,683123ee-89b1-48ad-9d29-6100b6e822d4,1273,masa blindada,dead,1266
+s1437e3df-bbf5-4118-b968-2f39f9f891f3_84_CasimiraOrt,silencio,22,G2,1437e3df-bbf5-4118-b968-2f39f9f891f3,84,Casimira Ortigal,dead,84
+sd8bf034a-bcc9-4a12-999e-490be27c8a2e_1033_Hombredelm,silencio,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,1033,Hombre del mandil,dead,1033
+f9e7e4aec-5a1d-41ce-9904-ccffaebfd944_893_Valerius,actuando,20,G2,9e7e4aec-5a1d-41ce-9904-ccffaebfd944,893,Valerius,dead,852
+"s1257c4f1-d3f8-4c43-a8a6-aa542b65d62d_1020_Elio,elSil",silencio,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,1020,"Elio, el Silencioso",dead,1020
+f1257c4f1-d3f8-4c43-a8a6-aa542b65d62d_947_ElSusurrod,solo_referenciado,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,947,El Susurro del Hambre,dead,913
+f6f319319-f39f-4902-9f11-a5d5a17798af_1231_Valerius,actuando,12,G2,6f319319-f39f-4902-9f11-a5d5a17798af,1231,Valerius,captured,1223
+s7c8d9bfe-aa79-4142-80b3-b520e013b9d0_553_Elhombrede,silencio,19,G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,553,El hombre de la cicatriz en la mejilla,dead,553
+fe1e30d0b-9dd8-454c-b297-44c08204610f_916_criaturade,solo_referenciado,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,916,criatura de la máscara de hierro,captured,898
+f6f319319-f39f-4902-9f11-a5d5a17798af_1271_Valerius,actuando,12,G2,6f319319-f39f-4902-9f11-a5d5a17798af,1271,Valerius,captured,1223
+fa7ef3360-3014-4942-bf11-4db774a95904_1296_Glotóndese,solo_referenciado,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,1296,Glotón de setos,dead,1282
+fd78a7a3e-f37d-407b-ac5b-5c9895064732_500_AbueloJuliá,solo_referenciado,09,G1,d78a7a3e-f37d-407b-ac5b-5c9895064732,500,Abuelo Julián,dead,486
+f9dcf64ea-8da4-4dcf-b168-4f960b839c04_546_Elian,actuando,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,546,Elian,captured,529
+se8629a76-58f5-45d3-91e2-15bf7c1d60af_1125_Criaturadel,silencio,23,G2,e8629a76-58f5-45d3-91e2-15bf7c1d60af,1125,Criatura del ancla,dead,1125
+s9e7e4aec-5a1d-41ce-9904-ccffaebfd944_439_Autómatade,silencio,20,G2,9e7e4aec-5a1d-41ce-9904-ccffaebfd944,439,Autómata de hierro,dead,439
+f8d8e8f27-41d7-4573-a294-c79d2378b6e5_154_Valerius,actuando,14,G1,8d8e8f27-41d7-4573-a294-c79d2378b6e5,154,Valerius,missing,114
+f9dcf64ea-8da4-4dcf-b168-4f960b839c04_540_Elian,actuando,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,540,Elian,captured,529
+f8d8e8f27-41d7-4573-a294-c79d2378b6e5_229_Valerius,actuando,14,G1,8d8e8f27-41d7-4573-a294-c79d2378b6e5,229,Valerius,missing,114
+sebfcb92e-2eeb-4235-a1d2-73630f75a631_1095_lamasapáli,silencio,08,G2,ebfcb92e-2eeb-4235-a1d2-73630f75a631,1095,la masa pálida,dead,1095
+sa583b7b7-c777-4032-b493-3b61d57476b0_359_IsidoroMena,silencio,19,G1,a583b7b7-c777-4032-b493-3b61d57476b0,359,Isidoro Mena,captured,359
+feccb3666-5a9c-4959-8427-ae693f8c7530_891_zorrodelbo,solo_referenciado,26,G2,eccb3666-5a9c-4959-8427-ae693f8c7530,891,zorro del bosque,dead,876
+fe1e30d0b-9dd8-454c-b297-44c08204610f_1399_Elian,actuando,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,1399,Elian,captured,1397
+s878b05b9-c082-4595-9c64-5bdc736bbe1a_56_BartoloQuiñ,silencio,18,G1,878b05b9-c082-4595-9c64-5bdc736bbe1a,56,Bartolo Quiñones,captured,56
+sa7ef3360-3014-4942-bf11-4db774a95904_333_InspectorVa,silencio,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,333,Inspector Valerius,captured,333
+se1e30d0b-9dd8-454c-b297-44c08204610f_927_criaturade,silencio,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,927,criatura de la máscara de hierro,dead,927
+s84eb6728-52d3-434c-924c-2c21b6099c92_1219_autómatade,silencio,02,G1,84eb6728-52d3-434c-924c-2c21b6099c92,1219,autómata de mantenimiento,captured,1219
+fe1e30d0b-9dd8-454c-b297-44c08204610f_252_autómata,actuando,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,252,autómata,dead,248
+fad163fd8-4b8d-43bd-acf6-33e7a33afb97_844_LaTejedora,solo_referenciado,22,G1,ad163fd8-4b8d-43bd-acf6-33e7a33afb97,844,La Tejedora de Expiaciones,dead,819
+f8d8e8f27-41d7-4573-a294-c79d2378b6e5_295_Valerius,actuando,14,G1,8d8e8f27-41d7-4573-a294-c79d2378b6e5,295,Valerius,missing,114
+fe1e30d0b-9dd8-454c-b297-44c08204610f_252_autómata,actuando,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,252,autómata,dead,248
+s7c8d9bfe-aa79-4142-80b3-b520e013b9d0_58_CiroBalma,silencio,19,G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,58,Ciro Balma,dead,58
+febfcb92e-2eeb-4235-a1d2-73630f75a631_1095_lamasapáli,solo_referenciado,08,G2,ebfcb92e-2eeb-4235-a1d2-73630f75a631,1095,la masa pálida,dead,1095
+s9dcf64ea-8da4-4dcf-b168-4f960b839c04_883_ElVigilante,silencio,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,883,El Vigilante del Granero,captured,883
+f9dcf64ea-8da4-4dcf-b168-4f960b839c04_539_Elian,actuando,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,539,Elian,captured,529
+ff42e9672-4df4-40bf-a912-02fba5ae396e_1336_Custodiodel,solo_referenciado,07,G2,f42e9672-4df4-40bf-a912-02fba5ae396e,1336,Custodio del Eco,dead,1217
+sa7ef3360-3014-4942-bf11-4db774a95904_1222_Anomalíade,silencio,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,1222,Anomalía de Almacén de Grado Tres,dead,1222
+fa7ef3360-3014-4942-bf11-4db774a95904_786_MaestroPimp,solo_referenciado,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,786,Maestro Pimpón,captured,724
+f6f319319-f39f-4902-9f11-a5d5a17798af_771_figuraencap,solo_referenciado,12,G2,6f319319-f39f-4902-9f11-a5d5a17798af,771,figura encapuchada,captured,762
+fe1e30d0b-9dd8-454c-b297-44c08204610f_248_autómata,solo_referenciado,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,248,autómata,dead,248

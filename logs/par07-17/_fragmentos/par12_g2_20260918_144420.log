@@ -1,0 +1,50 @@
+(bitácora en Markdown: C:\BMARIN2003\DEV\proyecto\logs\par_12_real_g2_monolitico_muelle_gris_6f319319_turnos_1-1400_20260918_144422.md)
+
+# VERTICAL SLICE — Par 12 (real) · G2 (Monolítico) · Muelle Gris (monolithic)
+
+- **DM:** `google/gemma-4-31B-it`
+- **jugador:** `google/gemma-4-31B-it` (Dunmar, desvío 65)
+- **turno:** 1
+
+## Turno 1 — 1/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Osvaldo Prín: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 1090 caracteres
+
+### [2] JUGADOR — Dunmar
+
+  4124 ms
+
+> "Parece que aquí hay un negocio muy bien aceitado y alguien tiene la llave de la caja fuerte."
+> Camino hacia donde está Selmira para ver si puedo ofrecer mis servicios de discreción.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+0=8
+
+### [4] DM
+
+  10469 ms
+
+> El muelle huele a salitre, madera vieja y pescado seco. Selmira se encuentra junto a un montón de redes que necesitan remiendo, con la mirada fija en el horizonte, donde el gris del cielo se funde con el mar. Su postura es rígida y sus manos, curtidas por el trabajo, no dejan de juguetear con un nudo de cuerda mientras observa la llegada de una pequeña barca.
+> Cuando te acercas y sueltas el comentario, Selmira gira la cabeza lentamente. Te analiza de arriba abajo con una expresión neutra, aunque sus ojos no revelan ninguna señal evidente de nerviosismo ni una intención clara; simplemente te observa como quien ve llegar una marea imprevista, sin dar pistas sobre lo que piensa de tu propuesta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3870 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+(bitácora guardada: C:\BMARIN2003\DEV\proyecto\logs\par_12_real_g2_monolitico_muelle_gris_6f319319_turnos_1-1400_20260918_144422.md)

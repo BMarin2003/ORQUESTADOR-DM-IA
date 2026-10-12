@@ -25,12 +25,41 @@
       ],
       "desvio": 25,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "De acuerdo, iré de inmediato. No se preocupen, resolveré esto.",
-        "propio": "Creo que es importante que investiguemos más a fondo lo que está pasando aquí. Propongo que hablemos con los locales y busquemos pistas.",
-        "vacia": "Esto es una oportunidad perfecta para practicar un poco con mi arma. ¿Alguien se une a mí para un entrenamiento rápido?"
-      }
+      "caracteristicas": {
+        "carisma": 15,
+        "fuerza": 14,
+        "constitución": 13,
+        "sabiduría": 12,
+        "destreza": 10,
+        "inteligencia": 8
+      },
+      "modificadores": {
+        "carisma": 4,
+        "fuerza": 2,
+        "constitución": 1,
+        "sabiduría": 3,
+        "destreza": 0,
+        "inteligencia": -1,
+        "atletismo": 4,
+        "acrobacias": 0,
+        "sigilo": 0,
+        "juego de manos": 0,
+        "arcanos": -1,
+        "historia": -1,
+        "investigación": -1,
+        "naturaleza": -1,
+        "religión": 1,
+        "perspicacia": 3,
+        "medicina": 1,
+        "percepción": 1,
+        "supervivencia": 1,
+        "trato con animales": 1,
+        "engaño": 2,
+        "intimidación": 4,
+        "interpretación": 2,
+        "persuasión": 4
+      },
+      "_nota": null
     },
     {
       "id": "PJ02",
@@ -55,12 +84,41 @@
       ],
       "desvio": 20,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "De acuerdo, iré de inmediato. Pero quiero que se sepa que no estoy contento con esto.",
-        "propio": "Hay algo más aquí, lo siento. Debo investigar esto más a fondo, aunque no sea popular.",
-        "vacia": "Vamos a ver si encontramos algo útil aquí. No podemos permitirnos perder el tiempo."
-      }
+      "caracteristicas": {
+        "sabiduría": 15,
+        "constitución": 14,
+        "fuerza": 13,
+        "carisma": 12,
+        "destreza": 10,
+        "inteligencia": 8
+      },
+      "modificadores": {
+        "sabiduría": 4,
+        "constitución": 2,
+        "fuerza": 1,
+        "carisma": 3,
+        "destreza": 0,
+        "inteligencia": -1,
+        "atletismo": 1,
+        "acrobacias": 0,
+        "sigilo": 0,
+        "juego de manos": 0,
+        "arcanos": -1,
+        "historia": 1,
+        "investigación": -1,
+        "naturaleza": -1,
+        "religión": 1,
+        "perspicacia": 4,
+        "medicina": 4,
+        "percepción": 2,
+        "supervivencia": 2,
+        "trato con animales": 2,
+        "engaño": 1,
+        "intimidación": 1,
+        "interpretación": 1,
+        "persuasión": 3
+      },
+      "_nota": null
     },
     {
       "id": "PJ03",
@@ -85,12 +143,41 @@
       ],
       "desvio": 45,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "Voy, pero me aseguraré de que mi tarea no quede olvidada. Iré al sitio y luego volveré a ocuparme de esto.",
-        "propio": "Veo algo que no está bien aquí. Voy a investigar qué está pasando de verdad.",
-        "vacia": "Propuesta: explorar un poco más para ver si encontramos algo interesante."
-      }
+      "caracteristicas": {
+        "destreza": 15,
+        "sabiduría": 14,
+        "constitución": 13,
+        "fuerza": 12,
+        "carisma": 10,
+        "inteligencia": 8
+      },
+      "modificadores": {
+        "destreza": 4,
+        "sabiduría": 2,
+        "constitución": 1,
+        "fuerza": 3,
+        "carisma": 0,
+        "inteligencia": -1,
+        "atletismo": 1,
+        "acrobacias": 2,
+        "sigilo": 4,
+        "juego de manos": 2,
+        "arcanos": -1,
+        "historia": -1,
+        "investigación": -1,
+        "naturaleza": 1,
+        "religión": -1,
+        "perspicacia": 2,
+        "medicina": 2,
+        "percepción": 4,
+        "supervivencia": 4,
+        "trato con animales": 4,
+        "engaño": 0,
+        "intimidación": 0,
+        "interpretación": 0,
+        "persuasión": 0
+      },
+      "_nota": null
     },
     {
       "id": "PJ04",
@@ -118,12 +205,41 @@
         "eje": "principle",
         "por_sesion": -2
       },
-      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
-      "ejemplares": {
-        "urgente": "Voy, pero me niego a pasar por alto esto. {Perspicacia} para detectar algo sospechoso aquí antes de irme.",
-        "propio": "Hay algo más en esto, lo siento. Voy a investigar más a fondo. {Investigación} para buscar pistas.",
-        "vacia": "Esto no está bien. Propongo que registremos la sala en busca de algo fuera de lugar. {Percepción} para inspeccionar la habitación."
-      }
+      "caracteristicas": {
+        "fuerza": 15,
+        "constitución": 14,
+        "destreza": 13,
+        "sabiduría": 12,
+        "carisma": 10,
+        "inteligencia": 8
+      },
+      "modificadores": {
+        "fuerza": 4,
+        "constitución": 4,
+        "destreza": 1,
+        "sabiduría": 1,
+        "carisma": 0,
+        "inteligencia": -1,
+        "atletismo": 4,
+        "acrobacias": 1,
+        "sigilo": 1,
+        "juego de manos": 1,
+        "arcanos": -1,
+        "historia": -1,
+        "investigación": -1,
+        "naturaleza": -1,
+        "religión": -1,
+        "perspicacia": 1,
+        "medicina": 1,
+        "percepción": 3,
+        "supervivencia": 3,
+        "trato con animales": 1,
+        "engaño": 0,
+        "intimidación": 2,
+        "interpretación": 0,
+        "persuasión": 0
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo."
     },
     {
       "id": "PJ05",
@@ -148,12 +264,41 @@
       ],
       "desvio": 55,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "De acuerdo, iré de inmediato. Pero antes, voy a echar un vistazo a esos documentos que mencionaste.",
-        "propio": "He oído rumores de que hay algo siniestro en esa antigua biblioteca. Voy a investigar.",
-        "vacia": "Esta sala parece aburrida. ¿Qué tal si improvisamos una pequeña actuación para animar el ambiente?"
-      }
+      "caracteristicas": {
+        "carisma": 15,
+        "destreza": 14,
+        "constitución": 13,
+        "sabiduría": 12,
+        "inteligencia": 10,
+        "fuerza": 8
+      },
+      "modificadores": {
+        "carisma": 4,
+        "destreza": 4,
+        "constitución": 1,
+        "sabiduría": 1,
+        "inteligencia": 0,
+        "fuerza": -1,
+        "atletismo": -1,
+        "acrobacias": 2,
+        "sigilo": 2,
+        "juego de manos": 2,
+        "arcanos": 0,
+        "historia": 2,
+        "investigación": 0,
+        "naturaleza": 0,
+        "religión": 0,
+        "perspicacia": 3,
+        "medicina": 1,
+        "percepción": 1,
+        "supervivencia": 1,
+        "trato con animales": 1,
+        "engaño": 4,
+        "intimidación": 2,
+        "interpretación": 4,
+        "persuasión": 4
+      },
+      "_nota": null
     },
     {
       "id": "PJ06",
@@ -178,12 +323,41 @@
       ],
       "desvio": 60,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "De acuerdo, iré. Pero antes, voy a echar un vistazo a esos documentos que mencionaste. {Investigación} No sé, tengo un mal presentimiento.",
-        "propio": "Disculpadme un momento, pero creo que he visto algo relacionado con mi investigación. Voy a seguir esta pista mientras puedo.",
-        "vacia": "Está bien, esto se está poniendo denso. Propongo que sigamos adelante y veamos si encontramos algo interesante. ¿Alguien sabe qué hay más allá de esta sala?"
-      }
+      "caracteristicas": {
+        "fuerza": 15,
+        "constitución": 14,
+        "destreza": 13,
+        "sabiduría": 12,
+        "carisma": 10,
+        "inteligencia": 8
+      },
+      "modificadores": {
+        "fuerza": 4,
+        "constitución": 4,
+        "destreza": 1,
+        "sabiduría": 1,
+        "carisma": 0,
+        "inteligencia": -1,
+        "atletismo": 4,
+        "acrobacias": 1,
+        "sigilo": 1,
+        "juego de manos": 1,
+        "arcanos": -1,
+        "historia": -1,
+        "investigación": -1,
+        "naturaleza": -1,
+        "religión": -1,
+        "perspicacia": 1,
+        "medicina": 1,
+        "percepción": 3,
+        "supervivencia": 3,
+        "trato con animales": 1,
+        "engaño": 0,
+        "intimidación": 2,
+        "interpretación": 0,
+        "persuasión": 0
+      },
+      "_nota": null
     },
     {
       "id": "PJ07",
@@ -208,12 +382,41 @@
       ],
       "desvio": 65,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "Vale, voy para allá. Pero antes necesito echar un vistazo aquí.",
-        "propio": "Esto puede ser interesante. Voy a investigar un poco más.",
-        "vacia": "Esto está demasiado tranquilo para mi gusto. Vamos a ver qué encontramos."
-      }
+      "caracteristicas": {
+        "destreza": 15,
+        "carisma": 14,
+        "constitución": 13,
+        "inteligencia": 12,
+        "sabiduría": 10,
+        "fuerza": 8
+      },
+      "modificadores": {
+        "destreza": 4,
+        "carisma": 2,
+        "constitución": 1,
+        "inteligencia": 3,
+        "sabiduría": 0,
+        "fuerza": -1,
+        "atletismo": -1,
+        "acrobacias": 4,
+        "sigilo": 4,
+        "juego de manos": 4,
+        "arcanos": 1,
+        "historia": 1,
+        "investigación": 1,
+        "naturaleza": 1,
+        "religión": 1,
+        "perspicacia": 0,
+        "medicina": 0,
+        "percepción": 2,
+        "supervivencia": 0,
+        "trato con animales": 0,
+        "engaño": 4,
+        "intimidación": 2,
+        "interpretación": 2,
+        "persuasión": 2
+      },
+      "_nota": null
     },
     {
       "id": "PJ08",
@@ -238,12 +441,41 @@
       ],
       "desvio": 50,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "De acuerdo, iré. Pero primero voy a echar un vistazo a esos documentos que mencionaste.",
-        "propio": "Creo que esa carta puede darnos pistas sobre qué está pasando aquí. Voy a estudiarla con calma.",
-        "vacia": "¿Qué tal si exploramos un poco más este pasillo? Puede que encontremos algo interesante o útil."
-      }
+      "caracteristicas": {
+        "inteligencia": 15,
+        "constitución": 14,
+        "destreza": 13,
+        "sabiduría": 12,
+        "carisma": 10,
+        "fuerza": 8
+      },
+      "modificadores": {
+        "inteligencia": 4,
+        "constitución": 2,
+        "destreza": 1,
+        "sabiduría": 3,
+        "carisma": 0,
+        "fuerza": -1,
+        "atletismo": -1,
+        "acrobacias": 1,
+        "sigilo": 1,
+        "juego de manos": 1,
+        "arcanos": 4,
+        "historia": 4,
+        "investigación": 4,
+        "naturaleza": 2,
+        "religión": 4,
+        "perspicacia": 1,
+        "medicina": 1,
+        "percepción": 1,
+        "supervivencia": 1,
+        "trato con animales": 1,
+        "engaño": 0,
+        "intimidación": 0,
+        "interpretación": 0,
+        "persuasión": 0
+      },
+      "_nota": null
     },
     {
       "id": "PJ09",
@@ -268,12 +500,41 @@
       ],
       "desvio": 70,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "Iré, pero antes necesito un momento para algo importante aquí.",
-        "propio": "Disculpadme un segundo, creo que he visto algo interesante por aquí.",
-        "vacia": "¿Qué tal si echamos un vistazo a ver si encontramos algo curioso por aquí?"
-      }
+      "caracteristicas": {
+        "destreza": 15,
+        "carisma": 14,
+        "constitución": 13,
+        "inteligencia": 12,
+        "sabiduría": 10,
+        "fuerza": 8
+      },
+      "modificadores": {
+        "destreza": 4,
+        "carisma": 2,
+        "constitución": 1,
+        "inteligencia": 3,
+        "sabiduría": 0,
+        "fuerza": -1,
+        "atletismo": -1,
+        "acrobacias": 4,
+        "sigilo": 4,
+        "juego de manos": 4,
+        "arcanos": 1,
+        "historia": 1,
+        "investigación": 1,
+        "naturaleza": 1,
+        "religión": 1,
+        "perspicacia": 0,
+        "medicina": 0,
+        "percepción": 2,
+        "supervivencia": 0,
+        "trato con animales": 0,
+        "engaño": 4,
+        "intimidación": 2,
+        "interpretación": 2,
+        "persuasión": 2
+      },
+      "_nota": null
     },
     {
       "id": "PJ10",
@@ -298,12 +559,41 @@
       ],
       "desvio": 55,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "Voy para allá, pero antes quiero echar un vistazo a esto. {Percepción}",
-        "propio": "Creo que puedo sacar algo en claro de esto. {Investigación}",
-        "vacia": "No sé vosotros, pero yo voy a ver si encuentro algo interesante por aquí. {Exploración}"
-      }
+      "caracteristicas": {
+        "destreza": 15,
+        "sabiduría": 14,
+        "constitución": 13,
+        "fuerza": 12,
+        "carisma": 10,
+        "inteligencia": 8
+      },
+      "modificadores": {
+        "destreza": 4,
+        "sabiduría": 2,
+        "constitución": 1,
+        "fuerza": 3,
+        "carisma": 0,
+        "inteligencia": -1,
+        "atletismo": 1,
+        "acrobacias": 2,
+        "sigilo": 4,
+        "juego de manos": 2,
+        "arcanos": -1,
+        "historia": -1,
+        "investigación": -1,
+        "naturaleza": 1,
+        "religión": -1,
+        "perspicacia": 2,
+        "medicina": 2,
+        "percepción": 4,
+        "supervivencia": 4,
+        "trato con animales": 4,
+        "engaño": 0,
+        "intimidación": 0,
+        "interpretación": 0,
+        "persuasión": 0
+      },
+      "_nota": null
     },
     {
       "id": "PJ11",
@@ -328,12 +618,41 @@
       ],
       "desvio": 80,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "Está bien, iré. Pero antes voy a echar un vistazo a esos libros.",
-        "propio": "Estos documentos parecen antiguos. Los examinaré con calma.",
-        "vacia": "¿Alguien sabe qué hace esa estatua aquí? Parece interesante."
-      }
+      "caracteristicas": {
+        "inteligencia": 15,
+        "constitución": 14,
+        "destreza": 13,
+        "sabiduría": 12,
+        "carisma": 10,
+        "fuerza": 8
+      },
+      "modificadores": {
+        "inteligencia": 4,
+        "constitución": 2,
+        "destreza": 1,
+        "sabiduría": 3,
+        "carisma": 0,
+        "fuerza": -1,
+        "atletismo": -1,
+        "acrobacias": 1,
+        "sigilo": 1,
+        "juego de manos": 1,
+        "arcanos": 4,
+        "historia": 4,
+        "investigación": 4,
+        "naturaleza": 2,
+        "religión": 4,
+        "perspicacia": 1,
+        "medicina": 1,
+        "percepción": 1,
+        "supervivencia": 1,
+        "trato con animales": 1,
+        "engaño": 0,
+        "intimidación": 0,
+        "interpretación": 0,
+        "persuasión": 0
+      },
+      "_nota": null
     },
     {
       "id": "PJ12",
@@ -358,12 +677,41 @@
       ],
       "desvio": 60,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "Voy, pero quiero echar un vistazo aquí primero. \nMe acerco con precaución al lugar que me interesa, buscando pistas. \n{Percepción}",
-        "propio": "Esto parece prometedor. Me pongo a indagar discretamente sobre lo que está pasando aquí. \n{Investigación}",
-        "vacia": "Está bien, pero yo voy a echar un vistazo por si encuentro algo útil. \nMe pongo a registrar la sala con cuidado. \n{Percepción}"
-      }
+      "caracteristicas": {
+        "fuerza": 15,
+        "constitución": 14,
+        "destreza": 13,
+        "sabiduría": 12,
+        "carisma": 10,
+        "inteligencia": 8
+      },
+      "modificadores": {
+        "fuerza": 4,
+        "constitución": 4,
+        "destreza": 1,
+        "sabiduría": 1,
+        "carisma": 0,
+        "inteligencia": -1,
+        "atletismo": 4,
+        "acrobacias": 1,
+        "sigilo": 1,
+        "juego de manos": 1,
+        "arcanos": -1,
+        "historia": -1,
+        "investigación": -1,
+        "naturaleza": -1,
+        "religión": -1,
+        "perspicacia": 1,
+        "medicina": 1,
+        "percepción": 3,
+        "supervivencia": 3,
+        "trato con animales": 1,
+        "engaño": 0,
+        "intimidación": 2,
+        "interpretación": 0,
+        "persuasión": 0
+      },
+      "_nota": null
     },
     {
       "id": "PJ13",
@@ -391,12 +739,41 @@
         "eje": "warmth",
         "por_sesion": 2
       },
-      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
-      "ejemplares": {
-        "urgente": "Voy, pero antes tengo que hacer una cosa. Os alcanzo en seguida.",
-        "propio": "Algo aquí no encaja. Voy a echar un vistazo más de cerca. {Investigación}",
-        "vacia": "Esto es un aburrimiento. ¿Alguien quiere pelear un rato para calentarse?"
-      }
+      "caracteristicas": {
+        "fuerza": 15,
+        "constitución": 14,
+        "destreza": 13,
+        "sabiduría": 12,
+        "carisma": 10,
+        "inteligencia": 8
+      },
+      "modificadores": {
+        "fuerza": 4,
+        "constitución": 4,
+        "destreza": 1,
+        "sabiduría": 1,
+        "carisma": 0,
+        "inteligencia": -1,
+        "atletismo": 4,
+        "acrobacias": 1,
+        "sigilo": 1,
+        "juego de manos": 1,
+        "arcanos": -1,
+        "historia": -1,
+        "investigación": -1,
+        "naturaleza": -1,
+        "religión": -1,
+        "perspicacia": 1,
+        "medicina": 1,
+        "percepción": 3,
+        "supervivencia": 3,
+        "trato con animales": 1,
+        "engaño": 0,
+        "intimidación": 2,
+        "interpretación": 0,
+        "persuasión": 0
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo."
     },
     {
       "id": "PJ14",
@@ -424,12 +801,41 @@
         "eje": "candor",
         "por_sesion": 3
       },
-      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
-      "ejemplares": {
-        "urgente": "Tengo que ir, pero antes debo hacer una cosa rápidamente. {Sigilo} Me escabullo y aprovecho para echar un vistazo a ese documento que he visto sobre la mesa.",
-        "propio": "Creo que he visto algo interesante en aquella estantería. {Investigación} Examino los libros con atención, buscando algo que pueda serme útil más adelante.",
-        "vacia": "Esta sala es un aburrimiento. {Interpretación} Empezaré a contar una historia interesante para animar un poco el ambiente y ver si alguien sabe algo que me sea útil."
-      }
+      "caracteristicas": {
+        "destreza": 15,
+        "carisma": 14,
+        "constitución": 13,
+        "inteligencia": 12,
+        "sabiduría": 10,
+        "fuerza": 8
+      },
+      "modificadores": {
+        "destreza": 4,
+        "carisma": 2,
+        "constitución": 1,
+        "inteligencia": 3,
+        "sabiduría": 0,
+        "fuerza": -1,
+        "atletismo": -1,
+        "acrobacias": 4,
+        "sigilo": 4,
+        "juego de manos": 4,
+        "arcanos": 1,
+        "historia": 1,
+        "investigación": 1,
+        "naturaleza": 1,
+        "religión": 1,
+        "perspicacia": 0,
+        "medicina": 0,
+        "percepción": 2,
+        "supervivencia": 0,
+        "trato con animales": 0,
+        "engaño": 4,
+        "intimidación": 2,
+        "interpretación": 2,
+        "persuasión": 2
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo."
     },
     {
       "id": "PJ15",
@@ -454,12 +860,41 @@
       ],
       "desvio": 65,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "Está bien, iré. Pero antes necesito echar un vistazo a esos documentos. No voy a dejarlo así. {Investigación}",
-        "propio": "Esta zona parece prometedora. Voy a buscar pistas sobre qué está pasando realmente aquí. {Investigación} {Percepción}",
-        "vacia": "Vamos a echar un vistazo por aquí, a ver si encontramos algo interesante. No me gusta estar parado sin hacer nada. {Percepción}"
-      }
+      "caracteristicas": {
+        "carisma": 15,
+        "constitución": 14,
+        "destreza": 13,
+        "sabiduría": 12,
+        "inteligencia": 10,
+        "fuerza": 8
+      },
+      "modificadores": {
+        "carisma": 4,
+        "constitución": 2,
+        "destreza": 1,
+        "sabiduría": 3,
+        "inteligencia": 0,
+        "fuerza": -1,
+        "atletismo": -1,
+        "acrobacias": 1,
+        "sigilo": 1,
+        "juego de manos": 1,
+        "arcanos": 2,
+        "historia": 0,
+        "investigación": 2,
+        "naturaleza": 0,
+        "religión": 0,
+        "perspicacia": 1,
+        "medicina": 1,
+        "percepción": 1,
+        "supervivencia": 1,
+        "trato con animales": 1,
+        "engaño": 4,
+        "intimidación": 4,
+        "interpretación": 2,
+        "persuasión": 4
+      },
+      "_nota": null
     },
     {
       "id": "PJ16",
@@ -487,12 +922,41 @@
         "eje": "principle",
         "por_sesion": -3
       },
-      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
-      "ejemplares": {
-        "urgente": "Voy. Pero después me toca a mí decidir.",
-        "propio": "Hay que investigar esto. No me importa si no es urgente para vosotros.",
-        "vacia": "Esto es una pérdida de tiempo. Propongo que sigamos moviéndonos."
-      }
+      "caracteristicas": {
+        "carisma": 15,
+        "fuerza": 14,
+        "constitución": 13,
+        "sabiduría": 12,
+        "destreza": 10,
+        "inteligencia": 8
+      },
+      "modificadores": {
+        "carisma": 4,
+        "fuerza": 2,
+        "constitución": 1,
+        "sabiduría": 3,
+        "destreza": 0,
+        "inteligencia": -1,
+        "atletismo": 4,
+        "acrobacias": 0,
+        "sigilo": 0,
+        "juego de manos": 0,
+        "arcanos": -1,
+        "historia": -1,
+        "investigación": -1,
+        "naturaleza": -1,
+        "religión": 1,
+        "perspicacia": 3,
+        "medicina": 1,
+        "percepción": 1,
+        "supervivencia": 1,
+        "trato con animales": 1,
+        "engaño": 2,
+        "intimidación": 4,
+        "interpretación": 2,
+        "persuasión": 4
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo."
     },
     {
       "id": "PJ17",
@@ -517,12 +981,41 @@
       ],
       "desvio": 50,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "Voy, pero antes revisaré esto. No debería llevar mucho.",
-        "propio": "Disculpadme un momento, voy a echar un vistazo a esto.",
-        "vacia": "¿Qué tal si echamos un vistazo por aquí? Puede que encontremos algo interesante."
-      }
+      "caracteristicas": {
+        "sabiduría": 15,
+        "constitución": 14,
+        "fuerza": 13,
+        "carisma": 12,
+        "destreza": 10,
+        "inteligencia": 8
+      },
+      "modificadores": {
+        "sabiduría": 4,
+        "constitución": 2,
+        "fuerza": 1,
+        "carisma": 3,
+        "destreza": 0,
+        "inteligencia": -1,
+        "atletismo": 1,
+        "acrobacias": 0,
+        "sigilo": 0,
+        "juego de manos": 0,
+        "arcanos": -1,
+        "historia": 1,
+        "investigación": -1,
+        "naturaleza": -1,
+        "religión": 1,
+        "perspicacia": 4,
+        "medicina": 4,
+        "percepción": 2,
+        "supervivencia": 2,
+        "trato con animales": 2,
+        "engaño": 1,
+        "intimidación": 1,
+        "interpretación": 1,
+        "persuasión": 3
+      },
+      "_nota": null
     },
     {
       "id": "PJ18",
@@ -547,12 +1040,41 @@
       ],
       "desvio": 85,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "No me convence. Deme una razón mejor para ir corriendo ahí.",
-        "propio": "Creo que esa alfombra esconde algo. Voy a echar un vistazo.",
-        "vacia": "Qué aburrimiento. ¿Quién quiere apostar a ver quién bebe más?"
-      }
+      "caracteristicas": {
+        "destreza": 15,
+        "carisma": 14,
+        "constitución": 13,
+        "inteligencia": 12,
+        "sabiduría": 10,
+        "fuerza": 8
+      },
+      "modificadores": {
+        "destreza": 4,
+        "carisma": 2,
+        "constitución": 1,
+        "inteligencia": 3,
+        "sabiduría": 0,
+        "fuerza": -1,
+        "atletismo": -1,
+        "acrobacias": 4,
+        "sigilo": 4,
+        "juego de manos": 4,
+        "arcanos": 1,
+        "historia": 1,
+        "investigación": 1,
+        "naturaleza": 1,
+        "religión": 1,
+        "perspicacia": 0,
+        "medicina": 0,
+        "percepción": 2,
+        "supervivencia": 0,
+        "trato con animales": 0,
+        "engaño": 4,
+        "intimidación": 2,
+        "interpretación": 2,
+        "persuasión": 2
+      },
+      "_nota": null
     },
     {
       "id": "PJ19",
@@ -577,12 +1099,41 @@
       ],
       "desvio": 75,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "Voy, pero luego necesito un momento para mí. No se hable más.",
-        "propio": "Hay algo aquí que no me cuadra. Voy a echar un vistazo.",
-        "vacia": "Bueno, ¿y si nos tomamos un respiro para ver qué se nos ocurre?"
-      }
+      "caracteristicas": {
+        "fuerza": 15,
+        "constitución": 14,
+        "destreza": 13,
+        "sabiduría": 12,
+        "carisma": 10,
+        "inteligencia": 8
+      },
+      "modificadores": {
+        "fuerza": 4,
+        "constitución": 4,
+        "destreza": 1,
+        "sabiduría": 1,
+        "carisma": 0,
+        "inteligencia": -1,
+        "atletismo": 4,
+        "acrobacias": 1,
+        "sigilo": 1,
+        "juego de manos": 1,
+        "arcanos": -1,
+        "historia": -1,
+        "investigación": -1,
+        "naturaleza": -1,
+        "religión": -1,
+        "perspicacia": 1,
+        "medicina": 1,
+        "percepción": 3,
+        "supervivencia": 3,
+        "trato con animales": 1,
+        "engaño": 0,
+        "intimidación": 2,
+        "interpretación": 0,
+        "persuasión": 0
+      },
+      "_nota": null
     },
     {
       "id": "PJ20",
@@ -607,12 +1158,41 @@
       ],
       "desvio": 80,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "Iré enseguida, pero antes tengo que recoger algo importante. {Persuasión}",
-        "propio": "Creo que he visto algo interesante en esa vitrina. Voy a echar un vistazo más de cerca. {Juego de Manos}",
-        "vacia": "Esta sala parece aburrida. ¿Por qué no organizamos una pequeña apuesta para hacer las cosas más emocionantes? {Interpretación}"
-      }
+      "caracteristicas": {
+        "carisma": 15,
+        "destreza": 14,
+        "constitución": 13,
+        "sabiduría": 12,
+        "inteligencia": 10,
+        "fuerza": 8
+      },
+      "modificadores": {
+        "carisma": 4,
+        "destreza": 4,
+        "constitución": 1,
+        "sabiduría": 1,
+        "inteligencia": 0,
+        "fuerza": -1,
+        "atletismo": -1,
+        "acrobacias": 2,
+        "sigilo": 2,
+        "juego de manos": 2,
+        "arcanos": 0,
+        "historia": 2,
+        "investigación": 0,
+        "naturaleza": 0,
+        "religión": 0,
+        "perspicacia": 3,
+        "medicina": 1,
+        "percepción": 1,
+        "supervivencia": 1,
+        "trato con animales": 1,
+        "engaño": 4,
+        "intimidación": 2,
+        "interpretación": 4,
+        "persuasión": 4
+      },
+      "_nota": null
     },
     {
       "id": "PJ21",
@@ -637,12 +1217,41 @@
       ],
       "desvio": 70,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "Iré, pero primero voy a echar un vistazo a esos pergaminos que mencionaste. No creo que tarde mucho.",
-        "propio": "Creo que esos murales esconden algo, voy a examinarlos más de cerca.",
-        "vacia": "¿Qué hacemos aquí parados? Vamos a explorar esa ala norte que parece abandonada desde hace años."
-      }
+      "caracteristicas": {
+        "inteligencia": 15,
+        "constitución": 14,
+        "destreza": 13,
+        "sabiduría": 12,
+        "carisma": 10,
+        "fuerza": 8
+      },
+      "modificadores": {
+        "inteligencia": 4,
+        "constitución": 2,
+        "destreza": 1,
+        "sabiduría": 3,
+        "carisma": 0,
+        "fuerza": -1,
+        "atletismo": -1,
+        "acrobacias": 1,
+        "sigilo": 1,
+        "juego de manos": 1,
+        "arcanos": 4,
+        "historia": 4,
+        "investigación": 4,
+        "naturaleza": 2,
+        "religión": 4,
+        "perspicacia": 1,
+        "medicina": 1,
+        "percepción": 1,
+        "supervivencia": 1,
+        "trato con animales": 1,
+        "engaño": 0,
+        "intimidación": 0,
+        "interpretación": 0,
+        "persuasión": 0
+      },
+      "_nota": null
     },
     {
       "id": "PJ22",
@@ -667,12 +1276,41 @@
       ],
       "desvio": 55,
       "deriva": null,
-      "_nota": null,
-      "ejemplares": {
-        "urgente": "Voy de inmediato. Pero antes, necesito recoger algo rápido.",
-        "propio": "Creo que ese cofre esconde algo más que comida. Voy a echar un vistazo.",
-        "vacia": "Qué aburrimiento. A ver si encuentro algo interesante por aquí..."
-      }
+      "caracteristicas": {
+        "destreza": 15,
+        "carisma": 14,
+        "constitución": 13,
+        "inteligencia": 12,
+        "sabiduría": 10,
+        "fuerza": 8
+      },
+      "modificadores": {
+        "destreza": 4,
+        "carisma": 2,
+        "constitución": 1,
+        "inteligencia": 3,
+        "sabiduría": 0,
+        "fuerza": -1,
+        "atletismo": -1,
+        "acrobacias": 4,
+        "sigilo": 4,
+        "juego de manos": 4,
+        "arcanos": 1,
+        "historia": 1,
+        "investigación": 1,
+        "naturaleza": 1,
+        "religión": 1,
+        "perspicacia": 0,
+        "medicina": 0,
+        "percepción": 2,
+        "supervivencia": 0,
+        "trato con animales": 0,
+        "engaño": 4,
+        "intimidación": 2,
+        "interpretación": 2,
+        "persuasión": 2
+      },
+      "_nota": null
     },
     {
       "id": "PJ23",
@@ -700,12 +1338,41 @@
         "eje": "principle",
         "por_sesion": -2
       },
-      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
-      "ejemplares": {
-        "urgente": "Voy, pero antes reviso este pasillo que me da mala espina.",
-        "propio": "Voy a preguntar a ese anciano sobre el templo abandonado.",
-        "vacia": "Propongo que nos dividamos para registrar esta planta."
-      }
+      "caracteristicas": {
+        "carisma": 15,
+        "constitución": 14,
+        "destreza": 13,
+        "sabiduría": 12,
+        "inteligencia": 10,
+        "fuerza": 8
+      },
+      "modificadores": {
+        "carisma": 4,
+        "constitución": 2,
+        "destreza": 1,
+        "sabiduría": 3,
+        "inteligencia": 0,
+        "fuerza": -1,
+        "atletismo": -1,
+        "acrobacias": 1,
+        "sigilo": 1,
+        "juego de manos": 1,
+        "arcanos": 2,
+        "historia": 0,
+        "investigación": 2,
+        "naturaleza": 0,
+        "religión": 0,
+        "perspicacia": 1,
+        "medicina": 1,
+        "percepción": 1,
+        "supervivencia": 1,
+        "trato con animales": 1,
+        "engaño": 4,
+        "intimidación": 4,
+        "interpretación": 2,
+        "persuasión": 4
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo."
     },
     {
       "id": "PJ24",
@@ -733,12 +1400,41 @@
         "eje": "principle",
         "por_sesion": 4
       },
-      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
-      "ejemplares": {
-        "urgente": "De acuerdo, iré. Pero antes voy a echar un vistazo aquí.",
-        "propio": "Creo que he encontrado una pista sobre qué está pasando realmente aquí. Voy a investigar más a fondo.",
-        "vacia": "¿Alguien sabe qué hay en esa sala? Me ofrezco voluntario para ir a verlo."
-      }
+      "caracteristicas": {
+        "destreza": 15,
+        "sabiduría": 14,
+        "constitución": 13,
+        "fuerza": 12,
+        "carisma": 10,
+        "inteligencia": 8
+      },
+      "modificadores": {
+        "destreza": 4,
+        "sabiduría": 2,
+        "constitución": 1,
+        "fuerza": 3,
+        "carisma": 0,
+        "inteligencia": -1,
+        "atletismo": 1,
+        "acrobacias": 2,
+        "sigilo": 4,
+        "juego de manos": 2,
+        "arcanos": -1,
+        "historia": -1,
+        "investigación": -1,
+        "naturaleza": 1,
+        "religión": -1,
+        "perspicacia": 2,
+        "medicina": 2,
+        "percepción": 4,
+        "supervivencia": 4,
+        "trato con animales": 4,
+        "engaño": 0,
+        "intimidación": 0,
+        "interpretación": 0,
+        "persuasión": 0
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo."
     },
     {
       "id": "PJ25",
@@ -766,12 +1462,41 @@
         "eje": "principle",
         "por_sesion": -4
       },
-      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
-      "ejemplares": {
-        "urgente": "De acuerdo, iremos de inmediato. Pero primero quiero echar un vistazo a esos documentos que mencionaste.",
-        "propio": "Creo que esa información podría darnos una idea clara de qué está ocurriendo aquí. Sugiero que investiguemos un poco más.",
-        "vacia": "No podemos quedarnos de brazos cruzados. Propongo que hablemos con los locales y veamos si encontramos algún trabajo temporal. Podría ser una buena fuente de información."
-      }
+      "caracteristicas": {
+        "fuerza": 15,
+        "constitución": 14,
+        "destreza": 13,
+        "sabiduría": 12,
+        "carisma": 10,
+        "inteligencia": 8
+      },
+      "modificadores": {
+        "fuerza": 4,
+        "constitución": 4,
+        "destreza": 1,
+        "sabiduría": 1,
+        "carisma": 0,
+        "inteligencia": -1,
+        "atletismo": 4,
+        "acrobacias": 1,
+        "sigilo": 1,
+        "juego de manos": 1,
+        "arcanos": -1,
+        "historia": -1,
+        "investigación": -1,
+        "naturaleza": -1,
+        "religión": -1,
+        "perspicacia": 1,
+        "medicina": 1,
+        "percepción": 3,
+        "supervivencia": 3,
+        "trato con animales": 1,
+        "engaño": 0,
+        "intimidación": 2,
+        "interpretación": 0,
+        "persuasión": 0
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo."
     },
     {
       "id": "PJ26",
@@ -799,12 +1524,41 @@
         "eje": "candor",
         "por_sesion": -4
       },
-      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
-      "ejemplares": {
-        "urgente": "De acuerdo, voy para allá. Pero antes, necesito echar un vistazo a estos pergaminos que he encontrado.",
-        "propio": "Creo que hay algo más en esta isla que lo que parece. Voy a investigar un poco más a fondo.",
-        "vacia": "¿Qué hacemos aquí parados? ¡Sigamos explorando, a ver qué encontramos!"
-      }
+      "caracteristicas": {
+        "sabiduría": 15,
+        "constitución": 14,
+        "fuerza": 13,
+        "carisma": 12,
+        "destreza": 10,
+        "inteligencia": 8
+      },
+      "modificadores": {
+        "sabiduría": 4,
+        "constitución": 2,
+        "fuerza": 1,
+        "carisma": 3,
+        "destreza": 0,
+        "inteligencia": -1,
+        "atletismo": 1,
+        "acrobacias": 0,
+        "sigilo": 0,
+        "juego de manos": 0,
+        "arcanos": -1,
+        "historia": 1,
+        "investigación": -1,
+        "naturaleza": -1,
+        "religión": 1,
+        "perspicacia": 4,
+        "medicina": 4,
+        "percepción": 2,
+        "supervivencia": 2,
+        "trato con animales": 2,
+        "engaño": 1,
+        "intimidación": 1,
+        "interpretación": 1,
+        "persuasión": 3
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo."
     },
     {
       "id": "PJ27",
@@ -832,13 +1586,41 @@
         "eje": "warmth",
         "por_sesion": 4
       },
-      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo.",
-      "ejemplares": {
-        "urgente": "De acuerdo, iré. Pero antes revisaré esto que he encontrado.",
-        "propio": "Interesante... creo que si investigo un poco más, entenderé mejor qué está pasando aquí.",
-        "vacia": "¿Qué hacemos aquí parados? Podríamos explorar un poco más, a ver si encontramos algo útil."
-      }
+      "caracteristicas": {
+        "fuerza": 15,
+        "constitución": 14,
+        "destreza": 13,
+        "sabiduría": 12,
+        "carisma": 10,
+        "inteligencia": 8
+      },
+      "modificadores": {
+        "fuerza": 4,
+        "constitución": 4,
+        "destreza": 1,
+        "sabiduría": 1,
+        "carisma": 0,
+        "inteligencia": -1,
+        "atletismo": 4,
+        "acrobacias": 1,
+        "sigilo": 1,
+        "juego de manos": 1,
+        "arcanos": -1,
+        "historia": -1,
+        "investigación": -1,
+        "naturaleza": -1,
+        "religión": -1,
+        "perspicacia": 1,
+        "medicina": 1,
+        "percepción": 3,
+        "supervivencia": 3,
+        "trato con animales": 1,
+        "engaño": 0,
+        "intimidación": 2,
+        "interpretación": 0,
+        "persuasión": 0
+      },
+      "_nota": "Gris mutable: sus ejes se mueven durante la campaña, lo que obliga al sistema a rastrear una evolución en vez de un rasgo fijo."
     }
-  ],
-  "_ejemplares_modelo": "NousResearch/Hermes-3-Llama-3.1-70B"
+  ]
 }

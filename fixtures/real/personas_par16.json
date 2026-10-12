@@ -1,0 +1,174 @@
+{
+  "_nota": "Par 16 (real) -- corpus real, no piloto. Dos PNJ centrales, posturas igual de defendibles (lealtad al socio probado vs. apostar por el socio nuevo) frente a una guerra de precios cuya causa real queda deliberadamente sin resolver. Un PNJ de paso con todo vacío a propósito.",
+
+  "fernanda": {
+    "_arquetipo": "Comerciante veterana que desconfía de un precio que no le sale a cuenta a nadie -no por rencor hacia lo nuevo, sino por experiencia real.",
+    "name": "Fernanda Robles",
+    "species": "humana",
+    "social_role": "cabeza del Gremio de la Sal desde hace veinte años",
+    "appearance": "Cincuenta y tantos, manos ásperas de cargar sacos de sal en su juventud, siempre con un libro de contratos bajo el brazo.",
+    "location": "lonja_de_la_sal",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 40,
+      "candor": 75,
+      "principle": 65,
+      "boldness": 55
+    },
+
+    "traits": ["revisa cada contrato de la Ruta de la Sal antes de firmarlo, sin excepción", "recuerda de memoria cada crisis comercial que el pueblo superó en dos siglos", "no confía en un trato que no puede explicar con números"],
+    "internal_contradiction": "Defiende la lealtad a la Ruta de la Sal como prudencia comercial, y en privado teme que esa misma lealtad, si se equivoca sobre el Ámbar, sea recordada como miedo al cambio disfrazado de sabiduría.",
+    "taboos": ["firmar un contrato sin entender de dónde sale el margen del otro lado", "hablar mal de un comerciante que decidió irse con el Ámbar"],
+    "voice_notes": "Directa, cita cifras y contratos concretos. Nunca desprecia al Ámbar abiertamente, solo pregunta cómo salen las cuentas.",
+    "stated_desire": "Que Cruce Salado no arriesgue dos siglos de estabilidad por un precio que no se sostiene.",
+    "actual_need": "Encontrar pruebas concretas de por qué el Ámbar puede permitirse esos precios, en vez de solo desconfiar.",
+    "fear": "Que la Ruta de la Sal pierda Cruce Salado del todo antes de que alguien descubra qué hay detrás del Ámbar.",
+
+    "ibf": {
+      "ideal_text": "Un precio que nadie puede explicar no es una oportunidad, es una pregunta sin responder -y las preguntas sin responder salen caras tarde o temprano.",
+      "ideal_tags": ["prudencia", "experiencia"],
+      "bond_text": "El Gremio de la Sal y dos siglos de contratos que ha visto sostener al pueblo en cada crisis anterior.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "lonja_de_la_sal" },
+        { "type": "faction", "key": "gremio_de_la_sal" }
+      ],
+      "flaw_text": "No ha investigado a fondo la Sede Forastera del Ámbar -su desconfianza es una corazonada respaldada por experiencia, no todavía una prueba.",
+      "flaw_tags": ["pasividad", "exceso_de_cautela"],
+      "flaw_exploit": "ofrecerse_a_investigar_la_sede_forastera_del_ambar_por_ella"
+    },
+
+    "disposition": {
+      "affinity": 25,
+      "trust": 25,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con evidencia concreta sobre la Ruta del Ámbar, buena o mala. Baja si el grupo respalda al Ámbar sin cuestionar sus precios, aunque no cierra el techo -- puede reconocer una oportunidad real si se la muestran con números."
+    },
+
+    "knowledge": [
+      { "fact": "La Ruta del Ámbar ofrece precios de transporte muy por debajo de lo que cuesta moverlos, desde hace ocho semanas", "learned_at_turn": 0 },
+      { "fact": "Varios comerciantes independientes ya han empezado a trabajar en exclusiva con el Ámbar", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Fernanda ya mandó a un contacto de confianza a merodear cerca de la Sede Forastera del Ámbar hace unos días, sin resultado claro todavía -no lo ha dicho en público porque no quiere parecer que está espiando sin pruebas de nada malo.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ya intentó investigar la Sede Forastera por su cuenta.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "evidencia concreta y disposición a investigar en vez de solo desconfiar. Indiferente al entusiasmo sin números detrás."
+  },
+
+  "amaro": {
+    "_arquetipo": "Comerciante ambicioso que ve una oportunidad real de crecimiento -no busca hundir a nadie, cree sinceramente en el socio nuevo.",
+    "name": "Amaro Ventisca",
+    "species": "humano",
+    "social_role": "cabeza del Gremio del Ámbar desde su fundación hace unos meses",
+    "appearance": "Treinta y tantos, ropa nueva de mejor calidad que hace un año, siempre con muestras de ámbar y tinte para enseñar a quien pase por la lonja.",
+    "location": "lonja_del_ambar",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 55,
+      "candor": 65,
+      "principle": 50,
+      "boldness": 70
+    },
+
+    "traits": ["actualiza los precios del Ámbar casi cada día con entusiasmo genuino", "invita a cualquier comerciante independiente a probar un primer envío sin compromiso", "no oculta lo bien que le ha ido desde que cambió de ruta"],
+    "internal_contradiction": "Defiende que el Ámbar es una oportunidad real de crecimiento, y no se ha detenido a preguntarse en serio por qué un socio nuevo puede permitirse precios que ni la ruta más antigua del pueblo logra igualar.",
+    "taboos": ["rechazar una oportunidad de negocio por miedo", "hablar mal de la Ruta de la Sal como si fuera el enemigo"],
+    "voice_notes": "Entusiasta, siempre con un ejemplo reciente de un buen trato. Trata a Fernanda con respeto genuino pese a competir con ella.",
+    "stated_desire": "Que Cruce Salado aproveche la oportunidad del Ámbar mientras dure.",
+    "actual_need": "Preguntarse con honestidad qué pasa si los precios del Ámbar suben de golpe una vez que el pueblo dependa de ellos.",
+    "fear": "Haber apostado el futuro de sus socios a un trato que no entiende del todo.",
+
+    "ibf": {
+      "ideal_text": "Quien no se atreve a probar un socio nuevo por miedo a lo desconocido nunca crece más allá de lo que ya tenía.",
+      "ideal_tags": ["ambición", "apertura"],
+      "bond_text": "El Gremio del Ámbar y cada comerciante independiente que ha convencido de probar la nueva ruta.",
+      "bond_strength": 65,
+      "bond_targets": [
+        { "type": "location", "key": "lonja_del_ambar" },
+        { "type": "faction", "key": "gremio_del_ambar" }
+      ],
+      "flaw_text": "No ha calculado en serio qué pasa con los comerciantes que ya dependen del Ámbar si los precios suben de golpe una vez eliminada la competencia de la Sal.",
+      "flaw_tags": ["cortoplacismo", "exceso_de_confianza"],
+      "flaw_exploit": "pedirle_que_calcule_que_pasaria_si_el_ambar_sube_los_precios_de_golpe"
+    },
+
+    "disposition": {
+      "affinity": 30,
+      "trust": 30,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con entusiasmo genuino por nuevas oportunidades de negocio. Baja si el grupo lo acusa de mala fe sin pruebas, aunque no cierra el techo -- reconsiderará su postura si le muestran evidencia real sobre la Sede Forastera."
+    },
+
+    "knowledge": [
+      { "fact": "Sus propias ganancias han crecido notablemente desde que empezó a trabajar con el Ámbar hace unos meses", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Amaro nunca ha estado en persona en la Sede Forastera del Ámbar -todos sus tratos los cierra con un agente que viaja hasta Cruce Salado, y no se le había ocurrido, hasta que alguien se lo pregunte, que eso es un poco extraño para un socio que dice querer invertir en el pueblo.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ha visitado la Sede Forastera del Ámbar en persona.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "entusiasmo genuino y disposición a compartir oportunidades reales. Indiferente a la desconfianza sin pruebas detrás."
+  },
+
+  "zoraida": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Baldor Enna' y 'Nieves Botel' en pares anteriores.",
+    "name": "Zoraida Puch",
+    "species": "humana",
+    "social_role": "repara ejes y ruedas de carro en un taller fijo del mercado",
+    "appearance": "Fuerte, manos manchadas de grasa de eje, siempre con un martillo pequeño colgado del cinturón.",
+    "location": "plaza_de_mercado",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctica. Habla de qué carro hay que reparar hoy y de qué ruta trae más tráfico esta semana.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a ella por su cuenta en 3+ escenas, o la nombra sin que el DM la mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

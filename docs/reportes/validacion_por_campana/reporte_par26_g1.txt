@@ -1,0 +1,107 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 26 (real) · G1 (Multiagente) · Lindero · mas
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        4 (  0.3%)
+    qn2_pj_piensa_narrado                     1 (  0.1%)
+    cl2_pnj_inactivo_actua                   92 (  6.6%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             28 (  2.0%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.220  [0.115, 0.371]
+    qn1_ttr                                n=1400  prom=0.691  [0.577, 0.800]
+    qn1_ngram_repeticion                   n=1400  prom=0.032  [0.000, 0.091]
+    qn1_legibilidad_fh                     n=1400  prom=60.257  [39.910, 77.730]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.211  [0.000, 1.000]
+  CR-2 turnos con algún nombre no reconocido: 1400
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  38 visitas distintas · 7 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: Claro de la anomalía ↔ El Claro del Corazón ↔ La Casa de los Guardas ↔ compuerta de acero ↔ esclusa de presión ↔ oficina de guardia ↔ plataforma de control circular (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1321 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: El Bosque de Hallena, El Claro del Corazón, La Casa de los Guardas, Lindero
+    turno 1: El Bosque de Hallena, El Claro del Corazón, La Casa de los Guardas, Lindero, cámara técnica
+    turno 2: El Bosque de Hallena, El Claro del Corazón, La Casa de los Guardas, Lindero, zona de carga hundida
+    turno 3: Claro de la anomalía, El Bosque de Hallena, El Claro del Corazón, La Casa de los Guardas, Lindero, grieta irregular
+    turno 4: Claro de la anomalía, El Claro del Corazón, La Casa de los Guardas
+  camino (primeras y últimas visitas):
+    turno  14 → El Claro del Corazón
+    turno  30 → La Casa de los Guardas
+    turno  38 → oficina de guardia
+    ...
+    turno 1270 → La Casa de los Guardas
+    turno 1292 → El Claro del Corazón
+    turno 1345 → La Casa de los Guardas
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  Los Guardas del Bosque disparó en turno 260 · ✓ reconocido en turno 261
+    agenda: El borde del bosque alcanza los campos que rodean el pueblo y los vecinos empiezan a perder las cosechas de otoño
+  El Concejo de Lindero disparó en turno 640 · ⚠ NO reconocido en los turnos siguientes
+    agenda: Las primeras casas del barrio norte quedan a un tiro de piedra del borde del bosque y el concejo debe decidir si evacuar o talar
+  Los Guardas del Bosque disparó en turno 980 · ✓ reconocido en turno 981
+    agenda: El bosque llega al río Sende, el último obstáculo antes del mar, y su paso por la plaza del pueblo ya no puede evitarse
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 2.167  (sobre 10 secciones; máximo teórico = 4.5)
+    superviviente: Ci=2.5  (primera mención sección 4, última sección 9)
+    criatura metálica: Ci=2.5  (primera mención sección 3, última sección 8)
+    Nicasio Tala: Ci=1.5  (primera mención sección 0, última sección 3)
+  V promedio = 0.071  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    superviviente: Vi=0.079  (929 atributos propios detectados)
+    criatura metálica: Vi=0.08  (535 atributos propios detectados)
+    Nicasio Tala: Vi=0.055  (397 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=0.500  (1/2)
+    npc.affinity     recall=0.000  (0/4)
+  recall global: 0.167  (6 deltas evaluables)
+  5 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  218 · Nicasio Tala · npc.status=missing
+    turno  478 · criatura metálica · npc.affinity=loyal
+    turno  511 · criatura metálica · npc.affinity=devoted
+    turno  695 · superviviente · npc.affinity=loyal
+    turno  697 · superviviente · npc.affinity=devoted
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.997  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.990  (min 0.971, max 0.998, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.022  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  92 turno(s) marcados en vivo. Reclasificación:
+    sujeto de una acción (repite el hallazgo crudo): 0 (0.0%)
+    solo mencionado/referenciado (posible falso positivo): 92 (100.0%)
+
+==========================================================================
+

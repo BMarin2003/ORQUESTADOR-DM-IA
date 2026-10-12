@@ -1,0 +1,32 @@
+[ 1/12] par01 G1: 1400 turnos en  21.9s (total   0.4 min, quedan ~ 4.0 min)
+[ 2/12] par01 G2: 1400 turnos en  10.3s (total   0.5 min, quedan ~ 2.7 min)
+[ 3/12] par02 G1: 1400 turnos en  17.3s (total   0.8 min, quedan ~ 2.5 min)
+[ 4/12] par02 G2: 1400 turnos en   9.9s (total   1.0 min, quedan ~ 2.0 min)
+[ 5/12] par03 G1: 1400 turnos en  13.5s (total   1.2 min, quedan ~ 1.7 min)
+[ 6/12] par03 G2: 1400 turnos en   8.5s (total   1.4 min, quedan ~ 1.4 min)
+[ 7/12] par04 G1: 1400 turnos en  12.6s (total   1.6 min, quedan ~ 1.1 min)
+[ 8/12] par04 G2: 1400 turnos en   7.3s (total   1.7 min, quedan ~ 0.8 min)
+[ 9/12] par05 G1: 1400 turnos en  14.4s (total   1.9 min, quedan ~ 0.6 min)
+[10/12] par05 G2: 1400 turnos en   6.4s (total   2.0 min, quedan ~ 0.4 min)
+[11/12] par06 G1: 1400 turnos en  13.6s (total   2.3 min, quedan ~ 0.2 min)
+[12/12] par06 G2: 1400 turnos en   6.5s (total   2.4 min, quedan ~ 0.0 min)
+
+12 campañas calculadas, 0 saltadas, 142 s
+
+SANIDAD G2 (v1 = v2): 8400 turnos de 6 campañas
+  qn1_ttr                          comparados   8400  discrepancias     0  max|dif| 0
+  qn1_ngram_repeticion             comparados   8400  discrepancias     0  max|dif| 0
+  qn1_legibilidad_fh               comparados   8400  discrepancias     0  max|dif| 0
+  cl2_lugar_jaccard_similarity     comparados   8400  discrepancias     0  max|dif| 0
+  cr2_entidad_grafo_densidad       comparados   8400  discrepancias     2  max|dif| 0.036
+      ej.: {'turn_id': 817, 'v1': 0.357, 'v2': 0.321}
+      ej.: {'turn_id': 1195, 'v1': 0.111, 'v2': 0.083}
+  cr2_n_nombres_no_reconocidos     comparados   8400  discrepancias    42  max|dif| 1
+      ej.: {'turn_id': 68, 'v1': 0, 'v2': 1}
+      ej.: {'turn_id': 114, 'v1': 0, 'v2': 1}
+      ej.: {'turn_id': 139, 'v1': 1, 'v2': 2}
+  cr2_nombres_no_reconocidos       comparados   8400  discrepancias    26  max|dif| 1
+      ej.: {'turn_id': 68, 'v1': 0, 'v2': 1}
+      ej.: {'turn_id': 114, 'v1': 0, 'v2': 1}
+      ej.: {'turn_id': 177, 'v1': 0, 'v2': 1}
+  grammaticality_lt                comparados    840  discrepancias     0  max|dif| 0

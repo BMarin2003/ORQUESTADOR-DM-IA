@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuestMasters Fase 3</title>
+<style>
+/* Layout: continuación del tutorial de la Fase 0 (misma identidad visual: pergamino + tres tintas de actor).
+   Aquí las estaciones son los pasos de UN turno y las fichas llevan preguntas y respuestas para quien no sabe nada. */
+:root{
+  --bg:#f6f2e8; --surface:#fffdf7; --surface-2:#efe7d5; --fg:#241f16; --fg-dim:#6b6151;
+  --border:#ddd2b6; --ink:#8a3324; --actor-persona:#8a3324; --actor-script:#1f6f66; --actor-db:#2f4c8a;
+  --mono-bg:#efe6d0; --warn-bg:#f6e3b8; --warn-fg:#6b4a12; --bad-bg:#f2d5cf; --bad-fg:#7a2317;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#171310; --surface:#1e1a15; --surface-2:#262019; --fg:#ece3d2; --fg-dim:#b0a68f;
+    --border:#3a3122; --ink:#e2896f; --actor-persona:#e2896f; --actor-script:#6fbfb0; --actor-db:#7f9eea;
+    --mono-bg:#221c14; --warn-bg:#3a2c10; --warn-fg:#f0c878; --bad-bg:#40201a; --bad-fg:#f2a595;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#171310; --surface:#1e1a15; --surface-2:#262019; --fg:#ece3d2; --fg-dim:#b0a68f;
+  --border:#3a3122; --ink:#e2896f; --actor-persona:#e2896f; --actor-script:#6fbfb0; --actor-db:#7f9eea;
+  --mono-bg:#221c14; --warn-bg:#3a2c10; --warn-fg:#f0c878; --bad-bg:#40201a; --bad-fg:#f2a595;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg); color:var(--fg); margin:0; padding-inline:16px; font-family:"Source Sans 3",ui-sans-serif,system-ui,sans-serif; font-size:16px; line-height:1.6}
+.wrap{max-width:900px; margin:0 auto; padding-block:36px 90px}
+h1,h2,h3,h4{font-family:"Fraunces",Georgia,serif; font-weight:600; text-wrap:balance; color:var(--fg)}
+h1{font-size:clamp(1.7rem,4.2vw,2.4rem); margin:0 0 8px}
+h2{margin:44px 0 10px}
+.kicker{font-family:"IBM Plex Mono",monospace; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink); margin:0 0 10px}
+.subtitle{color:var(--fg-dim); font-size:1.05rem; margin:0 0 30px; max-width:66ch}
+p{margin:0 0 14px; max-width:70ch}
+code{font-family:"IBM Plex Mono",ui-monospace,monospace; background:var(--mono-bg); padding:0.12em 0.4em; border-radius:4px; font-size:0.87em; overflow-wrap:anywhere}
+a{color:var(--ink)}
+.lede{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:20px 22px; margin-bottom:26px}
+.lede p:last-child{margin-bottom:0}
+.glossary-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:10px; margin:14px 0 8px}
+.gterm{background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:12px 14px; min-width:0}
+.gterm .word{font-family:"Fraunces",serif; font-weight:600; font-size:0.98rem; margin-bottom:3px}
+.gterm .def{font-size:0.85rem; color:var(--fg-dim)}
+.station{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:22px 24px; margin:20px 0; min-width:0}
+.station-head{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; margin-bottom:6px}
+.station-num{font-family:"Fraunces",serif; font-size:1.25rem; font-weight:700; color:var(--ink); line-height:1}
+.station-title{font-family:"Fraunces",serif; font-size:1.2rem; font-weight:600}
+.actor-tag{display:inline-flex; align-items:center; gap:5px; font-family:"IBM Plex Mono",monospace; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.05em; padding:3px 9px; border-radius:99px; border:1px solid currentColor}
+.actor-tag.persona{color:var(--actor-persona)} .actor-tag.script{color:var(--actor-script)} .actor-tag.db{color:var(--actor-db)}
+.station-lead{color:var(--fg); font-size:1rem; margin:8px 0 16px}
+.spec{display:grid; grid-template-columns:150px 1fr; gap:2px 14px; font-size:0.9rem; margin:16px 0 6px}
+.spec dt{font-family:"IBM Plex Mono",monospace; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--fg-dim); padding:9px 0; border-top:1px solid var(--border)}
+.spec dd{margin:0; padding:9px 0; border-top:1px solid var(--border); max-width:56ch; min-width:0}
+.spec dt:first-of-type, .spec dd:first-of-type{border-top:none}
+@media (max-width:560px){ .spec{grid-template-columns:1fr} .spec dt{padding-bottom:0; border-top:1px solid var(--border)} .spec dd{border-top:none; padding-top:2px} }
+.why-box{background:var(--surface-2); border-left:3px solid var(--ink); border-radius:0 10px 10px 0; padding:12px 16px; margin-top:14px}
+.why-box .lbl{font-family:"IBM Plex Mono",monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink); margin-bottom:4px}
+.why-box p{margin-bottom:0; font-size:0.9rem}
+table{border-collapse:collapse; width:100%; margin:0 0 16px; font-size:0.86rem}
+th,td{border:1px solid var(--border); padding:8px 10px; text-align:left; vertical-align:top}
+th{background:var(--surface-2); font-family:"Fraunces",serif; font-weight:600}
+.twrap{overflow-x:auto; max-width:100%}
+.toc{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 26px}
+.toc a{font-family:"IBM Plex Mono",monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; text-decoration:none; border:1px solid var(--border); border-radius:99px; padding:5px 12px; background:var(--surface); color:var(--fg)}
+.toc a:hover{border-color:var(--ink); color:var(--ink)}
+.tag-doc,.tag-mine{display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:0.6rem; text-transform:uppercase; letter-spacing:0.04em; padding:1px 7px; border-radius:99px; margin-right:6px; vertical-align:1px; white-space:nowrap}
+.tag-doc{color:var(--actor-script); border:1px solid currentColor}
+.tag-mine{color:var(--warn-fg); background:var(--warn-bg)}
+pre.code{background:var(--mono-bg); border:1px solid var(--border); border-radius:10px; padding:12px 14px; overflow-x:auto; font-family:"IBM Plex Mono",monospace; font-size:0.76rem; line-height:1.5; margin:10px 0 14px; max-width:100%}
+.sec-note{background:var(--warn-bg); color:var(--warn-fg); border-radius:10px; padding:11px 15px; font-size:0.88rem; margin:14px 0}
+.sec-note p{margin:0; max-width:none}
+.sec-bad{background:var(--bad-bg); color:var(--bad-fg); border-radius:10px; padding:11px 15px; font-size:0.88rem; margin:14px 0}
+.sec-bad p{margin:0 0 8px; max-width:none} .sec-bad p:last-child{margin-bottom:0}
+.qa{margin:14px 0 0; padding-left:12px; border-left:3px solid var(--border)}
+.qa .q{font-weight:600; color:var(--ink); margin:0 0 4px; max-width:none}
+.qa .a p{margin:0 0 8px; max-width:none}
+.qa .a{font-size:0.93rem; min-width:0}
+h2[id],h3[id],.station[id]{scroll-margin-top:16px}
+td code,th code{font-size:0.8em}
+.footnote{font-size:0.8rem; color:var(--fg-dim); border-top:1px solid var(--border); margin-top:60px; padding-top:18px}
+.sev{display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:0.62rem; text-transform:uppercase; letter-spacing:0.04em; padding:1px 7px; border-radius:99px; white-space:nowrap}
+.sev.alta{background:var(--bad-bg); color:var(--bad-fg)} .sev.media{background:var(--warn-bg); color:var(--warn-fg)} .sev.baja{border:1px solid var(--border); color:var(--fg-dim)}
+.flow{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin:12px 0 18px; font-size:0.82rem}
+.flow .chip{border:1.5px solid var(--border); background:var(--surface); border-radius:8px; padding:6px 10px; min-width:0}
+.flow .chip.persona{border-color:var(--actor-persona)} .flow .chip.script{border-color:var(--actor-script)} .flow .chip.db{border-color:var(--actor-db)}
+.flow .ar{color:var(--fg-dim)}
+.actor-legend{display:flex; flex-wrap:wrap; gap:16px; font-size:0.82rem; color:var(--fg-dim); margin:6px 0 20px}
+.actor-legend span{display:inline-flex; align-items:center; gap:7px}
+.dot{width:11px; height:11px; border-radius:50%; display:inline-block}
+.dot.persona{background:var(--actor-persona)} .dot.script{background:var(--actor-script)} .dot.db{background:var(--actor-db)}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <p class="kicker">Tutorial QuestMasters · parte 4 de varias</p>
+  <h1>Cómo se cierra una tesis sin mentirle al jurado: la Fase 3</h1>
+  <p class="subtitle">Las Fases 0, 1 y 2 produjeron un corpus, unos instrumentos y unos resultados. La <strong>Fase 3</strong> convierte todo eso en el documento que se defiende: redactar, comprobar que cada frase del texto sea cierta frente al código y a los reportes, dejar los anexos y las referencias en orden y preparar la sustentación. Aquí se explica cómo se hace, para alguien que no sabe nada de tesis ni de D&amp;D, y al final hay una relectura de auditor muy estricto con los cambios concretos que conviene hacer antes de entregar.</p>
+
+  <nav class="toc" aria-label="Secciones">
+    <a href="#vocab">Vocabulario</a>
+    <a href="#mapa">Mapa</a>
+    <a href="#fuentes">1 Fuentes</a>
+    <a href="#congelar">2 Congelar</a>
+    <a href="#trazas">3 Trazabilidad</a>
+    <a href="#portada">4 Portada</a>
+    <a href="#brechas">5 Brechas</a>
+    <a href="#afirmar">6 Afirmar</a>
+    <a href="#editorial">7 Editorial</a>
+    <a href="#sustentar">8 Sustentar</a>
+    <a href="#auditoria">Auditoría</a>
+  </nav>
+
+  <div class="lede">
+    <p><strong>Una frase:</strong> la Fase 3 no genera datos ni instrumentos nuevos; toma lo que ya existe y hace que el texto de la tesis diga exactamente lo que el corpus, el código y los reportes permiten decir, ni más ni menos.</p>
+    <p><strong>Punto de partida (esto cambió respecto de la Fase 2):</strong> <span class="tag-doc">Documentado</span> el <code>TESIS.md</code> que compartiste ya está muy avanzado: incluye la regla «sin decisión confirmatoria» para H1e, la conclusión de que la hipótesis general no se sostiene, el cierre de brecha con voluntarios externos para el detector de PNJ inactivos, y los cierres de brecha por objetivo. Varios hallazgos de mi auditoría de la Fase 2 ya estaban reconocidos por la propia tesis (por ejemplo, la discordancia entre CR-2a en z y las versiones crudas). Por eso esta fase se centra en lo que <strong>todavía no cuadra</strong>.</p>
+    <p><strong>Cómo se etiquetan las afirmaciones:</strong> <span class="tag-doc">Documentado</span> sale de la tesis, del código o de un reporte del repositorio (con el archivo). <span class="tag-mine">Mi análisis</span> es razonamiento mío, incluidas las críticas y los textos de reemplazo propuestos; verifícalo antes de pegarlo.</p>
+  </div>
+
+  <h2 id="vocab">Vocabulario nuevo, sin miedo a preguntar</h2>
+  <p>Los términos de estadística e instrumentos están en la parte 3. Aquí van los propios de escribir y defender una tesis.</p>
+  <div class="glossary-grid">
+    <div class="gterm"><div class="word">Sustentación</div><div class="def">La defensa oral de la tesis ante un jurado. Se aprueba o no según el documento y las respuestas a sus preguntas.</div></div>
+    <div class="gterm"><div class="word">Jurado y asesor</div><div class="def">El asesor guía la tesis; el jurado la evalúa. Aquí el asesor es el Dr. Cueva Chavez; los autores son Bryan Marin y Luis Mostacero.</div></div>
+    <div class="gterm"><div class="word">Docimasia</div><div class="def">Término académico peruano para «prueba o contraste de hipótesis»: la sección donde se decide si se rechaza o no la hipótesis nula.</div></div>
+    <div class="gterm"><div class="word">Hipótesis nula / alterna (H0 / H1)</div><div class="def">H0 dice «no hay diferencia» (o «no hay degradación»); H1 dice lo contrario. Se decide con datos; nunca se «prueba» H1, solo se rechaza H0 o no.</div></div>
+    <div class="gterm"><div class="word">Operacionalización</div><div class="def">Traducir un concepto abstracto («coherencia») a algo medible (un instrumento, una fórmula, una escala). En la tesis es la Tabla 1.</div></div>
+    <div class="gterm"><div class="word">Matriz de consistencia</div><div class="def">Tabla que alinea problema, objetivo, hipótesis, variables, instrumentos y método para mostrar que nada quedó suelto. En la tesis es la Tabla 2.</div></div>
+    <div class="gterm"><div class="word">Validez interna, de constructo, externa</div><div class="def">Interna: ¿la diferencia se debe a lo que se manipuló y no a otra cosa? De constructo: ¿lo medido representa el concepto? Externa: ¿los resultados valen fuera de este estudio?</div></div>
+    <div class="gterm"><div class="word">Limitación vs. delimitación</div><div class="def">Delimitación es lo que el estudio decidió no cubrir; limitación es lo que quedó fuera de su control aunque quisiera cubrirlo. Ambas se declaran.</div></div>
+    <div class="gterm"><div class="word">Brecha (en este proyecto)</div><div class="def">Un pendiente metodológico identificado durante el análisis (p. ej. «no se midió la precisión del detector»). «Cierre de brecha» es el apartado que dice cómo se atendió. No es un término de la literatura.</div></div>
+    <div class="gterm"><div class="word">Desviación del protocolo</div><div class="def">Todo lo que se hizo distinto de lo aprobado (p. ej. cambiar el panel de expertos por instrumentos automáticos). Se declara con fecha y motivo.</div></div>
+    <div class="gterm"><div class="word">Trazabilidad</div><div class="def">Poder seguir cada número del texto hasta su origen: tabla → reporte → script → datos → base. Es lo que hace defendible un resultado.</div></div>
+    <div class="gterm"><div class="word">Fuente de verdad</div><div class="def">La copia de un documento que manda cuando hay varias. Si dos copias difieren, se corrige la otra, no se discute.</div></div>
+    <div class="gterm"><div class="word">Congelar (freeze)</div><div class="def">Fijar una versión (código, datos, hashes) para que los números del texto no cambien sin que se note. Se marca con una etiqueta de git y se guardan los hashes.</div></div>
+    <div class="gterm"><div class="word">Sobreafirmar</div><div class="def">Decir más de lo que los datos permiten (p. ej. atribuir una causa sin haber aislado la causa). Es el error que más castigan los jurados.</div></div>
+    <div class="gterm"><div class="word">Ablación</div><div class="def">Quitar una pieza de un sistema para ver qué pasa (p. ej. G1 sin el árbitro). Es la única forma de atribuir un efecto a una pieza concreta.</div></div>
+    <div class="gterm"><div class="word">Antecedentes / marco teórico</div><div class="def">Lo que ya se sabe: estudios previos y conceptos. Se cita con autor y año (Zhu et al., 2023) y se lista en las referencias.</div></div>
+    <div class="gterm"><div class="word">Zotero y «Refresh»</div><div class="def">Zotero guarda las referencias; el complemento en Word inserta citas y genera la bibliografía al pulsar Refresh. En el borrador la bibliografía aún dice «se genera al pulsar Refresh».</div></div>
+    <div class="gterm"><div class="word">Anexo</div><div class="def">Material que respalda la tesis pero no cabe en el cuerpo: instrumentos, evidencias, constancias. Va al final y se cita desde el texto.</div></div>
+    <div class="gterm"><div class="word">Resumen / Abstract</div><div class="def">Resumen en español y abstract en inglés: una página que cuenta objetivo, método, resultados y conclusión. Es lo primero que lee el jurado.</div></div>
+    <div class="gterm"><div class="word">TRL</div><div class="def">Escala de madurez tecnológica (1 a 9). La tesis se ubica en TRL 4: prototipo validado en laboratorio.</div></div>
+    <div class="gterm"><div class="word">Manuscrito / revista indexada</div><div class="def">Versión resumida para publicar en una revista científica. El plan del proyecto apunta a revistas IEEE del área de juegos e IA.</div></div>
+  </div>
+
+  <h2 id="mapa">Mapa de la Fase 3: qué entra, qué sale</h2>
+  <div class="actor-legend">
+    <span><i class="dot persona"></i> Trabajo humano (redactar, decidir, evaluar)</span>
+    <span><i class="dot script"></i> Código o comprobación automática</span>
+    <span><i class="dot db"></i> Archivo o repositorio</span>
+  </div>
+  <div class="flow" aria-label="Orden de las estaciones de la Fase 3">
+    <span class="chip db">1 Fuentes de verdad</span><span class="ar">→</span>
+    <span class="chip script">2 Congelar y regenerar</span><span class="ar">→</span>
+    <span class="chip persona">3 Trazabilidad</span><span class="ar">→</span>
+    <span class="chip persona">4 Portada</span><span class="ar">→</span>
+    <span class="chip persona">5 Brechas</span><span class="ar">→</span>
+    <span class="chip persona">6 Calibrar afirmaciones</span><span class="ar">→</span>
+    <span class="chip persona">7 Editorial</span><span class="ar">→</span>
+    <span class="chip db">8 Paquete y sustentación</span>
+  </div>
+  <p><span class="tag-doc">Documentado</span> Entra: el borrador <code>TESIS.md</code>, <code>docs/resultados/resultados_tesis.md</code> y demás reportes de <code>docs/reportes/</code>, los CSV de <code>datos_v2/</code>, el repositorio y la carpeta <code>Entrega_Asesor_TESIS</code>. Sale: la tesis final en Word con anexos y bibliografía, un paquete de reproducibilidad y la preparación para la sustentación. El plan (<code>plan-cierre-investigacion.md</code>, «Fase 3 — Redacción final, consistencia con el corpus real, y preparación editorial») añade revisar la estructura de resultados de las revistas IEEE ToG y TCIAIG como referencia de blindaje metodológico.</p>
+  <div class="sec-note"><p><span class="tag-mine">Mi análisis</span> Regla para leer todo lo demás: en la Fase 3 el mayor riesgo no es un error de cálculo (ya hay pruebas de fidelidad) sino una <strong>frase verdadera hace tres semanas que dejó de serlo</strong>. Cada vez que el proyecto cambió (el motor, el modelo del jugador, el diseño de evaluación), algún párrafo quedó describiendo la versión anterior. La estación 3 existe para cazar esas frases.</p></div>
+
+  <div class="station" id="fuentes">
+    <div class="station-head"><span class="station-num">1</span><span class="station-title">Decidir cuál es la copia que manda</span><span class="actor-tag db">Archivos</span></div>
+    <p class="station-lead">Hoy la tesis existe en al menos cuatro lugares. Antes de corregir nada hay que elegir una y tratar las demás como derivadas.</p>
+    <dl class="spec">
+      <dt>Qué es</dt><dd>(a) El <code>.docx</code> real en <code>Entrega_Asesor_TESIS/01_Tesis/</code>; (b) el espejo en Markdown <code>docs/TESIS-…contenido_real.docx.md</code>; (c) el <code>TESIS.md</code> que compartiste en esta conversación; (d) los reportes del repositorio que la tesis cita. Además la carpeta <code>Entrega_Asesor_TESIS</code> lleva una copia de los reportes con fecha «última actualización 2026-09-21».</dd>
+      <dt>Tecnología</dt><dd>Word con tabla de contenidos y numeración automática, complemento de Zotero, Markdown para lectura en herramientas, git para el código. Regenerar tablas es un script (<code>resultados_tesis.py</code>), no una edición manual.</dd>
+      <dt>De dónde a dónde</dt><dd>Reportes del repositorio → tablas del capítulo 6 → texto de discusión → conclusiones → resumen. Cada paso solo debe usar lo del anterior.</dd>
+      <dt>Por qué así</dt><dd>Con varias copias, las diferencias se cuelan sin que nadie las note. <span class="tag-doc">Documentado</span> El propio <code>00_LEEME.md</code> de la entrega ya admitía que el capítulo 4 y las Tablas 1–2 «todavía usan el lenguaje del diseño original»; el <code>TESIS.md</code> actual ya los corrigió, lo que prueba que la carpeta de entrega quedó atrás.</dd>
+      <dt>En base a qué</dt><dd><span class="tag-doc">Documentado</span> <code>plan-cierre-investigacion.md</code> (Fase 3) y <code>cierre-brechas-en-docx-tesis-2026-09-21.md</code>, que ya registran ediciones directas al <code>.docx</code> preservando estilos.</dd>
+      <dt>Por qué no otra</dt><dd>Editar todas las copias a mano: garantiza divergencia. Tener solo el <code>.docx</code>: no se puede comparar por texto contra los reportes. La opción razonable es <em>una</em> fuente (el <code>.docx</code>), y regenerar el resto desde ella o desde los datos.</dd>
+    </dl>
+    <div class="qa"><p class="q">¿Por qué importa tanto si el docx y el .md difieren?</p>
+    <div class="a"><p><span class="tag-mine">Mi análisis</span> Porque el asesor y el jurado leen el <code>.docx</code>. Si tú auditas contra el <code>.md</code> y el docx dice otra cosa, el error llega intacto. Antes de la entrega final conviene una comparación automática de ambos (por ejemplo exportar el docx a texto y compararlo con el espejo).</p></div></div>
+    <div class="sec-bad"><p><span class="tag-doc">Documentado</span> Ejemplo de copia atrasada: <code>Registro_Decisiones_Docimasia_H1d-H1f.md</code> (carpeta de entrega, «documento clave para la sustentación») dice que «PNJ inactivo mencionado» con 3.86 % en G1 y 0.21 % en G2 «favorece G1». Como es un indicador donde menos es mejor, favorece a <strong>G2</strong>, que es lo que dicen la tesis (p = 0.0315, «favorece a G2») y <code>resultados_tesis.md</code>. Una copia con la dirección al revés es justo lo que un jurado detecta.</p></div>
+  </div>
+
+  <div class="station" id="congelar">
+    <div class="station-head"><span class="station-num">2</span><span class="station-title">Congelar el corpus y regenerar las tablas</span><span class="actor-tag script">Código</span></div>
+    <p class="station-lead">Se fija una versión exacta del código y de los datos, se regeneran todas las tablas desde cero y se comprueba que coinciden con lo que dice el texto.</p>
+    <dl class="spec">
+      <dt>Qué es</dt><dd>Etiquetar un commit de git (por ejemplo <code>tesis-v1</code>), guardar los hashes SHA-256 de <code>datos_v2/</code> y de los detectores congelados, regenerar <code>resultados_tesis.md</code> y las tablas de Page y de Kaplan–Meier, y volcar los números al texto.</dd>
+      <dt>Tecnología</dt><dd>git, <code>sha256sum</code>, Python (<code>consolidar.py</code> → <code>resultados_tesis.py</code> → <code>page_test.py</code>, <code>kaplan_meier_pnj.py</code>). Las versiones de spaCy y el modelo <code>es_core_news_sm</code> ya quedan impresas en los reportes.</dd>
+      <dt>De dónde a dónde</dt><dd>De los CSV de <code>datos_v2/</code> a las Tablas 3–12 de la tesis. Hay que mapear la numeración, porque <em>no coincide</em>:</dd>
+    </dl>
+    <div class="twrap"><table>
+      <tr><th>Contenido</th><th><code>resultados_tesis.md</code> y Registro de decisiones</th><th>Tesis actual</th><th>Índice de tablas (docx)</th></tr>
+      <tr><td>Descriptivos G2 (OE-1, OE-2, OE-3)</td><td>Tablas 3, 5, 7</td><td>Tablas 3, 5, 7</td><td>3, 5, 7</td></tr>
+      <tr><td>Degradación por bloques (Page)</td><td>— (vive en <code>degradacion_bloques.md</code>)</td><td>Tablas 4, 6, 8</td><td><strong>no figuran</strong></td></tr>
+      <tr><td>H1d coherencia reactiva</td><td>Tabla 9</td><td>Tabla 9</td><td>9</td></tr>
+      <tr><td>H1e coherencia longitudinal</td><td>Tabla 11</td><td><strong>Tabla 10</strong></td><td>11</td></tr>
+      <tr><td>Acuerdo entre evaluadores (PNJ inactivo)</td><td>—</td><td><strong>Tabla 11</strong> (nueva)</td><td><strong>no figura</strong></td></tr>
+      <tr><td>H1f calidad emergente</td><td>Tabla 13</td><td><strong>Tabla 12</strong></td><td>13</td></tr>
+    </table></div>
+    <dl class="spec">
+      <dt>Por qué así</dt><dd><span class="tag-doc">Documentado</span> Los números de <code>resultados_tesis.md</code> se generan por script; los de la tesis se copiaron. Cada vez que el script se vuelve a correr (p. ej. se agregó MTLD/MATTR), la copia puede quedar atrás.</dd>
+      <dt>En base a qué</dt><dd>La lógica de reproducibilidad que declara la tesis: «cada medición puede reproducirse de forma exacta a partir del mismo corpus» (5.3).</dd>
+      <dt>Por qué no otra</dt><dd>Recalcular a mano en una hoja de cálculo introduce errores y rompe la trazabilidad; generar una sola tabla con todo y dejarla en un anexo evita elegir qué filas mostrar (ver hallazgo 12 de la auditoría).</dd>
+    </dl>
+    <div class="qa"><p class="q">¿Qué comprobé yo de las cifras de la tesis?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Recalculé los intervalos de Wilson que la tesis reporta: 10/16 → 38.6–81.5 %, 10/25 → 23.4–59.3 %, 55/215 → 20.2–31.8 % y 55/81 → 57.1–77.1 %. Los cuatro coinciden con el texto. También cuadran las sumas de la matriz de confusión (10 + 6 + 3 + 15 = 34 casos; precisión 10/16 = 62.5 %, exhaustividad 10/25 = 40 %) y las 17 campañas excluidas al relativizar (27 − 10). No repliqué los κ ni las pruebas de hipótesis, porque necesitan los datos por campaña.</p></div></div>
+  </div>
+
+  <div class="station" id="trazas">
+    <div class="station-head"><span class="station-num">3</span><span class="station-title">La cadena de evidencia: de cada frase hasta el dato</span><span class="actor-tag persona">Persona</span></div>
+    <p class="station-lead">Para cada afirmación importante del texto se comprueba que existe un camino completo hasta un dato reproducible. Donde el camino se corta, la frase se corrige o se respalda.</p>
+    <dl class="spec">
+      <dt>Qué es</dt><dd>Una <strong>matriz de trazabilidad</strong>: por cada afirmación de la tesis, la tabla que la muestra, el reporte que genera la tabla, el script que genera el reporte y el dato o instrumento de origen. Es un documento de trabajo, no de la tesis (aunque puede ir en un anexo).</dd>
+      <dt>Cómo se hace</dt><dd>Se subrayan las afirmaciones con números o con verbos de hecho («se verificó», «se controló», «se midió»), se busca su origen y se marca cada una como <em>respaldada</em>, <em>respaldada con matiz</em> o <em>sin respaldo</em>.</dd>
+      <dt>Por qué así</dt><dd>El jurado no discute tus scripts; discute tus frases. Si cada frase tiene un camino, la defensa es mostrarlo.</dd>
+      <dt>Por qué no otra</dt><dd>Revisar «de corrido» por lectura: se pasan por alto las frases que suenan bien. La búsqueda dirigida por verbos de hecho encuentra justo las que el código no respalda.</dd>
+    </dl>
+    <h3>Matriz de las afirmaciones más pesadas</h3>
+    <div class="twrap"><table>
+      <tr><th>Afirmación en la tesis</th><th>Tabla / apartado</th><th>Origen verificable</th><th>Estado</th></tr>
+      <tr><td>G1 usurpa la agencia en 0.17 % de turnos y G2 en 3.47 %</td><td>Tabla 12, 6.6</td><td><code>resultados_tesis.py</code> ← <code>persona2.py</code> v2b (hash en <code>validacion/persona2_congelado.sha256</code>) ← texto normalizado de <code>turn_log</code></td><td><span class="sev baja">respaldada</span> cifra; validez condicionada</td></tr>
+      <tr><td>CR-2a en z favorece a G2 (p = 0.0319, r = −0.47)</td><td>Tabla 9, 6.4</td><td><code>respuesta_accion.py</code> ← A4b/c (matriz a4bc-2, hash e1570cad…)</td><td><span class="sev baja">respaldada</span></td></tr>
+      <tr><td>G2 no se degrada (Page p = 0.310, 0.089 → Holm 0.178, 0.570)</td><td>Tablas 4, 6, 8</td><td><code>page_test.py</code>, <code>degradacion_bloques.md</code>; la versión relativizada necesita la base (<code>relativizar_pnj_inactivo.py</code>)</td><td><span class="sev baja">respaldada</span></td></tr>
+      <tr><td>Kaplan–Meier: medianas 1,139 vs 891, log-rank p = 0.772</td><td>6.5.8</td><td><code>kaplan_meier_pnj.py</code>, <code>kaplan_meier_pnj.md</code></td><td><span class="sev baja">respaldada</span>; la figura no está en la tesis</td></tr>
+      <tr><td>Jericho: 40/40 y 40/40; reconoce 30–32 % en condición de personajes frente a 7–9 % del azar</td><td>6.2.8</td><td>Reportes de A2 de Jericho/relojes (<code>sensibilidad_baseline.md</code>, extensión Jericho)</td><td><span class="sev baja">respaldada</span></td></tr>
+      <tr><td>Precisión 25.6 % y recall 67.9 % de persona2 (515 ítems)</td><td>6.3.8, 6.6.8</td><td><code>persona2-auditoria-IA-analisis.md</code>, <code>validacion/etiquetas_persona2_E1_IA-asistido.csv</code></td><td><span class="sev media">respaldada con matiz</span>: pasada de IA, no humana</td></tr>
+      <tr><td>κ de Fleiss 0.138; E1–E3 κ = 0.595; detector 62.5 % / 40.0 %</td><td>Tabla 11, 6.5.9</td><td><code>validacion/brecha4_*</code> y los formularios E1–E3; el script de análisis no lo revisé</td><td><span class="sev media">por verificar</span> (solo recalculé los intervalos de Wilson)</td></tr>
+      <tr><td>«Ambos brazos reciben la misma secuencia de tiradas»</td><td>1.3, 2.5, 4.1, 5.4</td><td><code>jugador/dados.py</code>: la semilla incluye <code>campaign_id</code>, distinto por brazo</td><td><span class="sev alta">contradicha</span></td></tr>
+      <tr><td>«La estabilidad del modelo se verificó antes de cada tanda»</td><td>5.4, 5.7.3</td><td>Un solo manifiesto (<code>entorno/manifiesto_2026-08-28.json</code>); el procedimiento existe en <code>docs/SETUP_DEEPINFRA.md</code>, sin registro de ejecuciones</td><td><span class="sev media">sin respaldo</span></td></tr>
+      <tr><td>«La recuperación por similitud se reserva para la memoria narrativa; ambas arquitecturas comparten esta infraestructura»</td><td>3.3.2, 5.7.1, Resumen</td><td>El esquema tiene tablas pgvector (<code>lore_chunks</code>, <code>narrative_chunks</code>) pero <strong>ningún script Python las lee o escribe</strong>; <code>descomposicion_prompts.md</code> clasifica la ingesta de lore como «fuera del instrumento»</td><td><span class="sev alta">contradicha</span></td></tr>
+      <tr><td>«Registro de llamadas al modelo por rol» como instrumento de la VI</td><td>Tabla 1</td><td>La tabla <code>model_calls</code> existe pero no se escribe (Fase 1)</td><td><span class="sev media">sin respaldo</span></td></tr>
+      <tr><td>«Precisión y exhaustividad del extractor medidas sobre un banco de calibración»</td><td>2.5</td><td>No encontré el banco ni sus cifras en <code>docs/</code>, <code>extractor/</code> o <code>sondeos/</code></td><td><span class="sev media">por verificar</span></td></tr>
+      <tr><td>27 personajes generados con semilla fija; 9 modifican su conducta</td><td>5.5</td><td><code>jugador/generar_personajes.py</code>, semilla 20260901; 9 de 27 tienen el campo <code>deriva</code> (comprobado). Los 8 / 14 / 5 por moral no los verifiqué</td><td><span class="sev baja">respaldada</span> (parcial)</td></tr>
+      <tr><td>Cada instrumento se sometió a la prueba de sensibilidad antes del análisis</td><td>5.6.3, 5.7.4</td><td>La ficha de instrumentos marca más de una docena de instrumentos «sin prueba» de sensibilidad; los cierres de brecha muestran pruebas posteriores al análisis</td><td><span class="sev alta">sobreafirmada</span></td></tr>
+    </table></div>
+    <div class="qa"><p class="q">¿Por qué la matriz distingue «contradicha» de «sin respaldo»?</p>
+    <div class="a"><p><span class="tag-mine">Mi análisis</span> «Contradicha» significa que el código o un reporte dice lo contrario; obliga a cambiar la frase. «Sin respaldo» significa que no hay evidencia a favor ni en contra: se puede rescatar si aparece la evidencia (por ejemplo, las bitácoras de verificación de cada tanda), o se reformula a lo que sí se puede afirmar.</p></div></div>
+  </div>
+
+  <div class="station" id="portada">
+    <div class="station-head"><span class="station-num">4</span><span class="station-title">Portada, resumen e introducción: lo primero que lee el jurado</span><span class="actor-tag persona">Persona</span></div>
+    <p class="station-lead">El resumen es el último texto que se actualiza y el primero que se lee. Hoy describe un estudio distinto del que se hizo.</p>
+    <dl class="spec">
+      <dt>Qué dice hoy</dt><dd><span class="tag-doc">Documentado</span> El Resumen afirma que «se generarán veintisiete pares» (futuro), que se estandariza «la técnica RAG en ambas arquitecturas», que el diseño es «experimental puro» y que «la evaluación la llevará a cabo un panel de cinco Dungeon Masters expertos … escala Likert de 1 a 7». La sección «Abstract» repite el panel y los enfoques «optimizados con RAG», y está escrita en español. El cuerpo de la tesis (5.4, 5.6, 5.7.5) dice lo contrario en cada punto.</dd>
+      <dt>Por qué así se corrige</dt><dd>El resumen debe reflejar el estudio ejecutado: objetivo, diseño, muestra, instrumentos, resultados y conclusión, en pasado. Es lo que se indexa y se cita.</dd>
+      <dt>En base a qué</dt><dd>Los capítulos 5 y 6 ya redactados y el apartado 5.7.5 (desviaciones).</dd>
+      <dt>Por qué no otra</dt><dd>Dejar el resumen del proyecto aprobado «por respeto al protocolo»: la desviación ya está declarada en 5.7.5, y un resumen que contradice el cuerpo es una inconsistencia que el jurado cita textualmente.</dd>
+    </dl>
+    <div class="sec-note"><p><span class="tag-mine">Mi análisis</span> Cosas pequeñas que también saltan a la vista: «diseño experimental puro» choca con 5.4 (que argumenta que no es un experimento puro en el sentido de Arias porque no hay asignación aleatoria a grupos); el resumen cita «Zhou et al., 2022» y el cuerpo «Zhou et al., 2023»; la rúbrica aparece como «D&amp;D-AI» en el resumen y «D&amp;D-IA» en el resto. En la sección de textos de reemplazo de la auditoría dejo un resumen propuesto.</p></div>
+  </div>
+
+  <div class="station" id="brechas">
+    <div class="station-head"><span class="station-num">5</span><span class="station-title">Cierre de brechas: qué se cerró de verdad</span><span class="actor-tag persona">Persona</span></div>
+    <p class="station-lead">Cada objetivo del capítulo 6 termina con un apartado «Cierre de la brecha metodológica». Esta estación revisa si la palabra «cerrada» está bien usada en cada caso.</p>
+    <dl class="spec">
+      <dt>Qué es</dt><dd>Un patrón de escritura del proyecto: se identifica un hueco en el análisis, se ejecuta una prueba o una auditoría para atenderlo y se dice el resultado, aunque sea negativo. <span class="tag-doc">Documentado</span> Nace de un pedido de Bryan («por cada objetivo detalla la brecha identificada y el cómo se cerró») y quedó insertado en el <code>.docx</code> el 2026-09-21.</dd>
+      <dt>Por qué así</dt><dd>Convierte una debilidad conocida en evidencia de rigor. Un jurado prefiere una limitación declarada con su prueba a una que aparece en la defensa.</dd>
+      <dt>Por qué no otra</dt><dd>Esconder los pendientes en «trabajos futuros»: se pierde el crédito de haberlos investigado. Escribir «cerrada» sin matiz: se corre el riesgo de que el jurado lea «resuelta» donde solo se «estimó».</dd>
+    </dl>
+    <div class="twrap"><table>
+      <tr><th>Brecha</th><th>Lo que dice la tesis</th><th>Estado real</th><th>Palabra recomendada</th></tr>
+      <tr><td>OE-1: «nombre no reconocido» no separa inventados de PNJ legítimos</td><td>Recomienda auditar manualmente una muestra</td><td>Abierta</td><td>«pendiente» (correcto)</td></tr>
+      <tr><td>OE-2: Jericho sin prueba de sensibilidad</td><td>«Cerrada»: prueba ejecutada (40/40, 40/40, 7/7, 16/16) y diagnóstico contra el azar</td><td>Ejecutada; resultado: Jericho discrimina solo en condición de personajes; relojes = azar</td><td>«cerrada con hallazgo negativo» (bien)</td></tr>
+      <tr><td>OE-3 y OE-6: precisión de persona2</td><td>«Avanzada pero no cerrada»</td><td>Primera pasada por IA (25.6 %); 102 ítems externos y precisión por brazo pendientes</td><td>«avanzada» (correcto)</td></tr>
+      <tr><td>OE-4: discordancia CR-2a en z vs crudo</td><td>Se documenta como límite de validez de constructo; recomienda decidir el criterio</td><td>Abierta</td><td>«declarada como límite» (correcto)</td></tr>
+      <tr><td>OE-5: falta un instrumento confirmatorio de CL</td><td>«Cerrada» en el sentido de que no queda candidato adicional</td><td>No se obtuvo instrumento; H1e queda sin decisión</td><td><span class="sev media">cambiar</span> «cerrada» por «agotadas las vías disponibles»</td></tr>
+      <tr><td>OE-5: validación humana del detector de PNJ inactivo</td><td>«La brecha queda cerrada»</td><td>3 voluntarios, 59 casos; E2 excluido tras ver κ ≈ 0; solo el par E1–E3 (κ = 0.595); detector con precisión 62.5 % [38.6–81.5] y exhaustividad 40.0 % [23.4–59.3] sobre 34 casos</td><td><span class="sev media">cambiar</span> por «estimada», con los intervalos y la advertencia de tamaño de muestra</td></tr>
+      <tr><td>Ablación del supervisor / «separación de roles»</td><td>No aparece como límite</td><td>Nunca se corrió un G1 sin alguno de sus roles</td><td><span class="sev media">agregar</span> a limitaciones</td></tr>
+    </table></div>
+    <div class="qa"><p class="q">¿Por qué me preocupa la exclusión del evaluador E2?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> La tesis la justifica con evidencia de respuesta apresurada: mediana de 12 s por caso frente a 60 y 38 s, 35 de 58 respuestas en menos de 15 s, 69 % de veredictos «retrospectivo» y un caso sin responder. <span class="tag-mine">Mi análisis</span> El argumento es razonable, pero el criterio de exclusión se fijó <em>después</em> de ver que E2 tenía κ ≈ 0. La forma más limpia de defenderla es dejar escrito que la regla («excluir a quien responda más de la mitad de los casos en menos de 15 s») se habría aplicado igual sin mirar el κ, y reportar también el resultado con los tres evaluadores en un anexo, como análisis de sensibilidad.</p></div></div>
+  </div>
+
+  <div class="station" id="afirmar">
+    <div class="station-head"><span class="station-num">6</span><span class="station-title">Calibrar la fuerza de cada afirmación</span><span class="actor-tag persona">Persona</span></div>
+    <p class="station-lead">Un resultado tiene tres escalones: «se observó una diferencia», «la diferencia se debe a la arquitectura» y «la diferencia se debe a un mecanismo concreto». Cada frase del capítulo 6 tiene que quedarse en el escalón que sus datos alcanzan.</p>
+    <dl class="spec">
+      <dt>Escalón 1 · asociación</dt><dd>Hay una diferencia entre G1 y G2 en un instrumento. Lo respalda la estadística pareada (Wilcoxon, HL, r).</dd>
+      <dt>Escalón 2 · atribución a la arquitectura</dt><dd>La diferencia se debe a organizar el turno en cinco roles en vez de uno. Lo respalda el diseño: mismo modelo, misma base, mismo extractor, mismos personajes y escenarios, campañas simultáneas, pareo por escenario. Aquí hay reservas ya declaradas (cambios de motor entre lotes, jugador con dos modelos distintos).</dd>
+      <dt>Escalón 3 · atribución a un mecanismo</dt><dd>La diferencia se debe a la <em>separación de roles</em> (o a tener un actor de PNJ, o a un narrador que solo integra). Solo lo respalda una <strong>ablación</strong> (correr G1 quitando o fusionando un rol), que no se hizo.</dd>
+      <dt>Por qué así</dt><dd>Es la lógica de inferencia causal básica: un experimento pareado permite atribuir al tratamiento <em>completo</em> (G1 vs G2 como paquetes), no a sus componentes. <span class="tag-doc">Documentado</span> El propio <code>resultados_tesis.md</code> §8 lo advierte: «Las diferencias por instrumento son entre sistemas completos, no una ablación».</dd>
+      <dt>Por qué no otra</dt><dd>Escribir el escalón 3 «porque es lo que se espera»: la literatura lo sugiere, pero la evidencia propia no lo demuestra; es la frase que un jurado atacará primero.</dd>
+    </dl>
+    <h3>Frases que el corpus sostiene y frases que no</h3>
+    <div class="twrap"><table>
+      <tr><th>Sí se puede afirmar</th><th>No se puede afirmar (todavía)</th><th>Por qué</th></tr>
+      <tr><td>En este corpus, persona2 marca menos usurpación en G1 que en G2 en prácticamente los 27 pares (0.17 % vs 3.47 %).</td><td>«G1 respeta mejor la agencia del jugador», sin condición.</td><td>Precisión del detector 25.6 % en una primera pasada de IA; sin precisión por brazo; en la prueba de sensibilidad, 3 de 10 celdas de segunda persona no aprobaron.</td></tr>
+      <tr><td>No se detecta degradación de G2 en 1,400 turnos con los instrumentos y la potencia disponibles.</td><td>«Un registro estructurado del estado del mundo contrarresta la degradación» (6.7).</td><td>Ningún brazo careció de registro estructurado; no hay comparación «con» y «sin». Solo se sabe que, con él, no se ve degradación.</td></tr>
+      <tr><td>La separación de roles <em>coincide</em> con una menor usurpación en G1.</td><td>«La separación de roles se traduce en un beneficio medible» como causa.</td><td>Sin ablación. Además ambos prompts contienen la misma «regla de oro» (no narrar al personaje jugador), así que la diferencia no viene de una instrucción presente en un brazo y ausente en el otro; puede venir de cómo se compone el turno (el narrador de G1 solo integra fragmentos ya resueltos), pero eso no se probó.</td></tr>
+      <tr><td>El único instrumento confirmatorio de coherencia reactiva favorece a G2; las tres versiones crudas favorecen a G1; la discordancia es un límite de constructo.</td><td>«G2 es mejor en coherencia reactiva» o «G1 es mejor».</td><td>La lectura depende de la normalización por longitud, que no se ha decidido.</td></tr>
+      <tr><td>H1e queda sin decisión confirmatoria.</td><td>«No hay diferencia en coherencia longitudinal».</td><td>Ausencia de decisión no es ausencia de efecto.</td></tr>
+      <tr><td>La hipótesis general no se sostiene en su forma general (regla de 4.2).</td><td>«La hipótesis está refutada».</td><td>No se sostiene por evidencia insuficiente en una dimensión y evidencia contraria en otra, no por evidencia general en contra.</td></tr>
+      <tr><td>Los resultados corresponden a un modelo (Gemma-4-31B), un idioma, un sistema de reglas y 1,400 turnos.</td><td>Cualquier generalización a «los sistemas multiagente».</td><td>Ya declarado en 2.5; conviene repetirlo en las conclusiones.</td></tr>
+    </table></div>
+    <div class="qa"><p class="q">¿Qué verifiqué sobre las instrucciones de cada brazo?</p>
+    <div class="a"><p><span class="tag-doc">Documentado</span> Leí los prompts de <code>dm/prompt_g2.md</code> (84 líneas) y <code>dm/prompt_narrador_g1.md</code> (112 líneas). Los dos comienzan con la misma «REGLA DE ORO»: «Careces de autoridad para narrar al personaje jugador. Nunca … describas sus acciones, diálogo, pensamientos o emociones … Tras describir la reacción del entorno o los PNJ, detente». <span class="tag-mine">Mi análisis</span> Es un dato a favor del diseño (la diferencia no se explica porque un brazo tenga la regla y el otro no) y una pregunta más para la defensa: ¿por qué, con la misma regla, persona2 marca unas 20 veces más turnos en G2? Una explicación posible es que un solo modelo que decide y narra a la vez tiende a completar la escena; pero es una hipótesis, no un hallazgo.</p></div></div>
+  </div>
+
+  <div class="station" id="editorial">
+    <div class="station-head"><span class="station-num">7</span><span class="station-title">Preparación editorial</span><span class="actor-tag persona">Persona</span></div>
+    <p class="station-lead">Lo que falta para que el documento se vea y se cite como una tesis terminada.</p>
+    <dl class="spec">
+      <dt>Bibliografía</dt><dd><span class="tag-doc">Documentado</span> El capítulo «Referencias bibliográficas» dice «[La bibliografía se genera al pulsar Refresh en Zotero]». Hay que pulsar Refresh en la máquina que tiene la biblioteca, revisar cada cita del texto contra la lista, y corregir los nombres con formato irregular que hoy se ven en las citas (por ejemplo «Chris Callison-Burch et al., 2022» y «Nadya González Romero et al., 2021», que deberían llevar el apellido primero según el estilo elegido). <span class="tag-mine">Mi análisis</span> El estilo de citas (APA 7 por lo que se ve) debe coincidir con el que exige la universidad; conviene confirmarlo con la guía vigente.</dd>
+      <dt>Índices</dt><dd>La tabla de contenidos, el índice de tablas y el de figuras son campos de Word: se actualizan con «Actualizar campo». Hoy el índice de tablas está desactualizado (falta Tabla 4, 6, 8, 10 y 11, y H1e y H1f figuran con los números viejos 11 y 13) y el índice de figuras lista una «Figura 1. Diseño con posprueba únicamente y grupo de control» que ya no existe en el cuerpo y describe un diseño que no es el del estudio.</dd>
+      <dt>Figuras que faltan</dt><dd><span class="tag-mine">Mi análisis</span> El cuerpo no tiene ninguna figura. Cuatro ayudarían: (1) el diseño de pares emparejados; (2) un diagrama de G1 (cinco roles) y de G2 (uno); (3) la curva de Kaplan–Meier, que ya existe como <code>kaplan_meier_pnj.png</code>; (4) una línea de tiempo de decisiones de diseño (ver auditoría, hallazgo 8).</dd>
+      <dt>Anexos</dt><dd><span class="tag-doc">Documentado</span> La lista prevé seis: (1) instrumentos de recolección de datos, (2) evidencias de la ejecución, (3) resolución de aprobación del proyecto, (4) constancia de autorización de la organización, (5) constancia del asesor, (6) metodología de desarrollo de software. Los tres primeros contienen material que ya existe en el repositorio (ficha completa de instrumentos, bitácoras, integridad de transcripciones, evaluación piloto del panel); los otros son constancias que hay que gestionar.</dd>
+      <dt>Resumen y abstract</dt><dd>Reescribir (estación 4) y poner el abstract en inglés.</dd>
+      <dt>Artículo para revista</dt><dd><span class="tag-doc">Documentado</span> El plan apunta a IEEE ToG o TCIAIG. <span class="tag-mine">Mi análisis</span> El artículo no es la tesis recortada: exige un solo mensaje central, un método más corto y una sección de amenazas a la validez concisa. Con los resultados actuales, el mensaje más defendible es metodológico («cómo validar instrumentos deterministas de coherencia narrativa y qué revelan sobre una descomposición multiagente»), con la ventaja de G1 en agencia como hallazgo condicionado. Antes de escribirlo hay que leer la guía de autores vigente de la revista elegida; no la verifiqué.</dd>
+    </dl>
+  </div>
+
+  <div class="station" id="sustentar">
+    <div class="station-head"><span class="station-num">8</span><span class="station-title">Paquete de reproducibilidad y sustentación</span><span class="actor-tag db">Repositorio</span></div>
+    <p class="station-lead">El paquete es lo que demuestra que los números no dependen de la palabra de los autores.</p>
+    <dl class="spec">
+      <dt>Qué es</dt><dd>Una carpeta (o repositorio con DOI) con: código en la versión congelada, los CSV de <code>datos_v2/</code>, los reportes generados, las transcripciones (o una muestra, si el tamaño lo impide), los hashes SHA-256, un <code>README</code> que diga en qué orden correr qué, y las versiones de todo (Python, spaCy, modelo de spaCy, LanguageTool y Java, que hoy no están fijadas).</dd>
+      <dt>De dónde a dónde</dt><dd>De <code>Entrega_Asesor_TESIS</code> (que hoy es una copia del 21 de setiembre) a un paquete regenerado desde la versión congelada de la estación 2.</dd>
+      <dt>Por qué así</dt><dd>Una tesis experimental con 75,600 turnos generados por un modelo sin semilla no se puede reproducir <em>generando de nuevo</em>; se reproduce <em>midiendo de nuevo</em> el mismo corpus. Por eso el corpus y las transcripciones son parte del resultado.</dd>
+      <dt>En base a qué</dt><dd><span class="tag-doc">Documentado</span> La tesis lo dice en 5.3 y en la sección de aportes («protocolo experimental reproducible»); <code>docs/SETUP_DEEPINFRA.md</code> reconoce que la reproducibilidad exacta del modelo no está garantizada en ningún proveedor.</dd>
+      <dt>Por qué no otra</dt><dd>Prometer «reproducir el experimento» regenerando: el modelo no tiene semilla y el proveedor puede cambiar versión sin aviso; sería una promesa falsa.</dd>
+    </dl>
+    <div class="qa"><p class="q">¿Qué preparo para la sustentación además del documento?</p>
+    <div class="a"><p><span class="tag-mine">Mi análisis</span> Tres cosas: (a) un resumen de una página con el resultado en una línea por hipótesis y el nivel de evidencia de cada una; (b) la línea de tiempo de decisiones de diseño (qué se decidió y cuándo, y qué se había visto); (c) las respuestas a las preguntas duras, que en la auditoría dejo ensayadas. <span class="tag-mine">Mi análisis</span> El <code>Guion_Explicacion_Cierre_Brechas_2026-09-21.md</code> del repositorio puede servir de base para (c); no lo revisé en detalle.</p></div></div>
+  </div>
+
+  <h2 id="auditoria">Relectura como auditor metodológico estricto</h2>
+  <div class="lede">
+    <p><strong>Perfil del lector:</strong> sabe metodología, estadística y arquitectura de software; no sabe nada de D&amp;D; lee el <code>.docx</code> de principio a fin sin saltarse el resumen; comprueba cada verbo de hecho («se verificó», «se controló», «se midió») contra el código y los reportes. Marca con rojo lo que no cuadra, y para cada hallazgo indico gravedad, evidencia y un texto de reemplazo.</p>
+    <p><span class="tag-mine">Mi análisis</span> Lo que sigue se basa en leer la tesis completa (caps. 1–6), los scripts y reportes citados, los prompts de ambos brazos y el esquema de la base. No volví a ejecutar el análisis ni recalculé los κ. Las citas de la tesis son textuales; los textos de reemplazo son propuestas mías y conviene que los revises con Luis y con el asesor.</p>
+    <p><strong>Lo que la tesis ya hace bien</strong> (para que no se pierda al corregir): declara el pivote del 14 de setiembre y sus motivos; clasifica instrumentos por sensibilidad y no promueve el indicador crudo de PNJ inactivos «a conveniencia»; reporta el resultado confirmatorio de H1d aunque va en contra de G1; declara H1e sin decisión y concluye que la hipótesis general no se sostiene; separa evaluación humana de IA en persona2; usa evaluadores externos; reporta intervalos y no solo valores p. Los intervalos de Wilson que reporta son correctos.</p>
+  </div>
+
+  <h3>A. Lo que dice la tesis frente al código y los reportes</h3>
+  <div class="twrap"><table>
+    <tr><th>#</th><th>Hallazgo (con cita)</th><th>Gravedad</th><th>Evidencia</th><th>Qué hacer</th></tr>
+    <tr><td>1</td><td>«ambos brazos de un par reciben la misma secuencia de tiradas» (1.3, 4.1, 5.4) y «las mismas tiradas con semilla» (2.5); el Anexo/Tabla 1 y el 6 repiten que comparten «el módulo de tiradas con semilla».</td><td><span class="sev alta">alta</span></td><td><code>jugador/dados.py</code> siembra con <code>campaign_id | turno | etiqueta | intento</code>; cada brazo es una campaña con su <code>campaign_id</code> (<code>vertical_slice*.py</code> pasan <code>str(camp.campaign_id)</code>). Además la etiqueta la elige el jugador LLM según lo narrado. El propio docstring de <code>dados.py</code> repite la premisa.</td><td>Cambiar las cuatro apariciones (texto propuesto 1) y corregir el docstring. Lo que sí se puede afirmar: el mecanismo es el mismo y es determinista.</td></tr>
+    <tr><td>2</td><td>«la estabilidad del modelo se verificó antes de cada tanda de generación» (5.4) y «con la verificación de la huella del modelo antes de cada tanda» (5.7.3).</td><td><span class="sev media">media</span></td><td>Un único manifiesto (<code>entorno/manifiesto_2026-08-28.json</code>). <code>docs/SETUP_DEEPINFRA.md</code> prescribe la comprobación pero el ejemplo cita <code>manifiesto_2026-08-24.json</code>, que no existe, y ningún script de generación invoca <code>verificar_modelo.py</code>. No hay registro de ejecuciones.</td><td>Aportar los registros si existen, o reformular (texto propuesto 2) y declarar la limitación.</td></tr>
+    <tr><td>3</td><td>«reserva la recuperación por similitud para la memoria narrativa, de modo que ambas arquitecturas comparten esta misma infraestructura» (3.3.2); «la base de datos … con sus componentes de recuperación por similitud» (5.7.1); Resumen: «la técnica RAG en ambas arquitecturas».</td><td><span class="sev alta">alta</span></td><td>El esquema (<code>migrations/001_schema.sql</code>) crea <code>lore_chunks</code> y <code>narrative_chunks</code> con <code>vector(1024)</code>, pero <strong>ningún archivo Python del repositorio las referencia</strong>; <code>docs/descomposicion_prompts.md</code> lista «ingesta de lore» como «fuera del instrumento — producto, no instrumento». La memoria efectiva es el estado relacional más la escena anterior.</td><td>Quitar las menciones de RAG y de recuperación por similitud como parte del sistema evaluado (texto propuesto 3). Conservar la argumentación teórica sobre estado vs. recuperación, que es buena, pero como justificación del diseño relacional.</td></tr>
+    <tr><td>4</td><td>Tabla 1, instrumento de la VI: «registro de llamadas al modelo por rol».</td><td><span class="sev media">media</span></td><td>La tabla <code>model_calls</code> existe pero no se escribe; los únicos registros son las bitácoras en texto.</td><td>Sustituir por «código versionado de ambas arquitecturas y bitácoras de ejecución».</td></tr>
+    <tr><td>5</td><td>«cada instrumento se sometió, antes del análisis del corpus, a una prueba de sensibilidad» (5.6.3); en 1.x, instrumentos «cuya capacidad de discriminación fue verificada previamente».</td><td><span class="sev alta">alta</span></td><td><code>resultados_tesis.md</code> §0: más de una docena de instrumentos figuran «—» (sin prueba): Papalampidi C y V, correferencia, Fernández-Huerta, frases repetidas, TTR a 100, bigramas a 100, estabilidad de estilo, PNJ registrados, primera mención, alfabetos. La propia tesis (6.2.8) dice que la prueba de Jericho se diseñó <em>después</em> de constatar el hueco en el análisis.</td><td>Texto propuesto 4: distinguir los que tienen prueba de los que no y no decir «antes del análisis» de forma general.</td></tr>
+    <tr><td>6</td><td>persona2 «había superado la prueba de sensibilidad pero no contaba con una medida de su concordancia» (6.3.8); 5.6.3 define «confirmatorio condicionado» como «superó la prueba».</td><td><span class="sev alta">alta</span></td><td><code>docs/reportes/persona2_equivalencia.md</code>: controles negativos 4/4, pero la prueba de detección directa aprobó 7/10 (criterio: límite inferior de Wilson ≥ 0.80). No aprobaron las tres celdas de <strong>segunda persona</strong>: decisión (G1 67.3 %, G2 76.0 %), pensamiento (80.0 % / 80.0 %, límite inferior 72.9 %) y emoción (71.3 % / 81.3 %). La tesis no menciona «7/10» ni estas cifras (comprobé por búsqueda de texto).</td><td>Reportarlo (texto propuesto 5). Es el detalle más peligroso si lo encuentra el jurado en el anexo y no en el texto.</td></tr>
+    <tr><td>7</td><td>Resumen: «Se generarán veintisiete pares … panel de cinco Dungeon Masters … escala Likert de 1 a 7», «diseño experimental puro»; «Abstract» repite el panel, habla de enfoques «optimizados con RAG» y está en español.</td><td><span class="sev alta">alta</span></td><td>Contradice 5.4, 5.6, 5.7.5 y el capítulo 6. En 5.4 se argumenta que no es un experimento puro en el sentido de Arias (2012).</td><td>Reescribir Resumen y Abstract (texto propuesto 7) y poner el abstract en inglés.</td></tr>
+    <tr><td>8</td><td>«de manera que la clasificación de cada instrumento quedara establecida antes de contrastar las hipótesis» (5.7.4).</td><td><span class="sev media">media</span></td><td>Fechas que constan en los documentos: manifiesto del modelo 28/08; pivote a instrumentos deterministas 14/09; Par01 real cierra 15/09 y Par02 16/09; matriz A4b/c y detector persona2 congelados 20/09 (cuando ya había generados varias decenas de campañas y se conocían resultados parciales de Par01–06); cierre de brechas en el <code>.docx</code> 21/09; Page, Kaplan–Meier y validación de PNJ inactivos 28/09. Las propias secciones «Cierre de la brecha» cuentan que varias pruebas se diseñaron al ver el análisis.</td><td>No ocultarlo: agregar un anexo con la línea de tiempo y reescribir 5.7.4 diciendo que la validación fue iterativa y que <em>las direcciones esperadas se fijaron antes de cada ejecución</em>, que es lo que el hash prueba.</td></tr>
+    <tr><td>9</td><td>Índice de tablas: falta Tabla 4, 6, 8, 10, 11 y 12; H1e y H1f figuran como Tablas 11 y 13. Índice de figuras: «Figura 1. Diseño con posprueba únicamente y grupo de control».</td><td><span class="sev media">media</span></td><td>El cuerpo tiene las tablas 1–12 y ninguna figura. Esa figura describe un diseño distinto del pareado.</td><td>Actualizar campos y borrar la figura fantasma; agregar figuras útiles (ver estación 7).</td></tr>
+    <tr><td>10</td><td>Carpeta <code>Entrega_Asesor_TESIS</code> (fechada 21/09) y <code>Registro_Decisiones_Docimasia_H1d-H1f.md</code>.</td><td><span class="sev media">media</span></td><td>El Registro dice que «PNJ inactivo mencionado» (3.86 % vs 0.21 %, p = 0.0315) «favorece G1»; con «menos es mejor», favorece a G2, como dice la tesis. Además usa la numeración 9/11/13 y dice que el capítulo 4 sigue con el lenguaje del panel Likert, ya corregido.</td><td>Regenerar la carpeta tras congelar; corregir la dirección antes de que el asesor la vuelva a leer.</td></tr>
+    <tr><td>11</td><td>«la exactitud del extractor … se midió sobre un banco de calibración y no sobre el corpus final» (2.5).</td><td><span class="sev media">media</span></td><td>No encontré el banco ni sus cifras en <code>docs/</code>, <code>extractor/</code>, <code>sondeos/</code>. La verdad de referencia de Jericho, PNJ inactivo y varios instrumentos depende de ese extractor.</td><td>Reportar precisión y exhaustividad del extractor con su intervalo (en un anexo) o suavizar la frase.</td></tr>
+    <tr><td>12</td><td>Tabla 12 (H1f) muestra 13 filas.</td><td><span class="sev media">media</span></td><td>Deja fuera filas que sí están en <code>resultados_tesis.md</code>: «frases idénticas repetidas ≥ 3 veces» (G1 1.79 % vs G2 0.00 %, p &lt; 0.0001, a favor de G2), «acción física no declarada» (0.68 % vs 7.23 %, a favor de G1), estabilidad de estilo, y «PNJ registrados» (4 vs 8). Las tablas 3 y 12 dicen incluir «los instrumentos de mayor relevancia interpretativa» y remiten al Anexo 1, pero no explican el criterio de selección.</td><td>Poner la tabla completa en el Anexo 1 y decir en el cuerpo que la selección es por relevancia <em>declarada de antemano</em>; o incluir la fila de frases repetidas, que va en contra de G1.</td></tr>
+  </table></div>
+
+  <h3>B. Argumentación y validez</h3>
+  <div class="twrap"><table>
+    <tr><th>#</th><th>Hallazgo</th><th>Gravedad</th><th>Qué hacer</th></tr>
+    <tr><td>13</td><td><strong>Sobreafirmación causal en las conclusiones.</strong> 6.7: «sugiere que un registro estructurado del estado del mundo, compartido por ambas arquitecturas, contrarresta dicha degradación» y «la separación de roles se traduce en un beneficio medible». No hay brazo sin registro ni ablación de roles; el propio reporte dice que las diferencias son entre sistemas completos. Nota a favor del diseño: ambos prompts llevan la misma «regla de oro» de no narrar al personaje jugador.</td><td><span class="sev alta">alta</span></td><td>Texto propuesto 6. Agregar a 2.5 la ausencia de ablación como limitación.</td></tr>
+    <tr><td>14</td><td><strong>Constructo.</strong> H1f se llama «calidad narrativa emergente» y en Tabla 1 QN-1 es «interés y creatividad, aproximados mediante diversidad léxica»; lo que sostiene H1f es solo QN-2 (respeto a la agencia). La hipótesis general habla de «coherencia narrativa». Un jurado preguntará si no usurpar la agencia es coherencia.</td><td><span class="sev media">media</span></td><td>Justificar en 3.3 por qué la reactividad a la agencia es parte de la coherencia definida por la Rúbrica D&amp;D-IA y decir que la parte «interés y creatividad» de QN-1 no se midió de forma válida (la tesis ya lo reconoce con RPGBench).</td></tr>
+    <tr><td>15</td><td><strong>Sensibilidad diferencial de persona2 por brazo.</strong> En la prueba de segunda persona, la detección es menor en G1 que en G2 (decisión 67.3 % vs 76.0 %; emoción 71.3 % vs 81.3 %). Un detector menos sensible en G1 hace que G1 <em>parezca</em> mejor. Una diferencia de 9–10 puntos no explica una razón de unas 20 a 1 (0.17 % vs 3.47 %), pero debe reportarse.</td><td><span class="sev media">media</span></td><td>Reportar la sensibilidad por brazo y estimar el efecto máximo posible del sesgo; sumar la precisión por brazo cuando se complete la auditoría externa.</td></tr>
+    <tr><td>16</td><td><strong>Lenguaje de «brecha cerrada».</strong> El detector de PNJ inactivos se «cierra» con 3 voluntarios, 59 casos, exclusión de uno de ellos y un solo par utilizable (κ = 0.595); precisión 62.5 % [38.6–81.5] y exhaustividad 40.0 % [23.4–59.3] sobre 34 casos de una muestra estratificada. En OE-5 «cerrada» significa «no hay más candidatos».</td><td><span class="sev media">media</span></td><td>Cambiar «cerrada» por «estimada» y añadir que precisión y exhaustividad de una muestra estratificada no se extrapolan a la población sin ponderar; dejar la regla de exclusión de evaluadores escrita y reportar el resultado con los tres en un anexo.</td></tr>
+    <tr><td>17</td><td><strong>Decisión con p unilateral, cálculo con p bilateral.</strong> 5.8.5 decide con el p ajustado «en el sentido de la hipótesis alternativa»; <code>resultados_tesis.py</code> aplica Holm al p <em>bilateral</em>.</td><td><span class="sev media">media</span></td><td>Alinear texto y código. No cambia las decisiones de H1f (todas con p &lt; 0.0001).</td></tr>
+    <tr><td>18</td><td><strong>Independencia de los pares y dos modelos de jugador.</strong> Se asume independencia entre pares; los 27 corrieron con el mismo modelo y proveedor, con corridas concurrentes. El jugador cambia de modelo entre los pares 1–3 y 4–27. La tesis lo declara y hace análisis por lote.</td><td><span class="sev baja">baja</span></td><td>Reportar también un análisis excluyendo los pares 1–3.</td></tr>
+    <tr><td>19</td><td><strong>Reproducibilidad.</strong> Versiones de LanguageTool y de Java sin fijar; el corpus no puede regenerarse (el modelo no tiene semilla).</td><td><span class="sev baja">baja</span></td><td>Fijar versiones en el paquete y decir explícitamente que la reproducibilidad es «de la medición sobre el corpus», no «de la generación».</td></tr>
+  </table></div>
+
+  <h3>C. Textos de reemplazo propuestos</h3>
+  <p><span class="tag-mine">Mi análisis</span> Están escritos en el registro de la tesis (una oración larga, «dado que», «de modo que») para que se puedan pegar y ajustar. Cada uno reemplaza el pasaje indicado; los números vienen de los reportes.</p>
+
+  <div class="station">
+    <div class="station-head"><span class="station-num">1</span><span class="station-title">Dados (1.3, 2.5, 4.1, 5.4)</span></div>
+    <pre class="code">Las tiradas de dados las resuelve el sistema mediante una semilla derivada del identificador de la campaña, del turno y de la habilidad declarada, de modo que el agente jugador no puede favorecer resultados narrativamente convenientes y el mecanismo de resolución es idéntico en ambos brazos; sin embargo, dado que cada brazo constituye una campaña con su propio identificador y que el agente jugador declara habilidades en respuesta a narraciones distintas, las secuencias concretas de tiradas no son idénticas entre los dos brazos de un par, diferencia que forma parte de la interacción que se pretende medir.</pre>
+  </div>
+  <div class="station">
+    <div class="station-head"><span class="station-num">2</span><span class="station-title">Huella del modelo (5.4, 5.7.3)</span></div>
+    <pre class="code">La estabilidad del modelo se controló mediante un manifiesto de huellas, elaborado el 28 de agosto de 2026, que compara las salidas del modelo ante un conjunto fijo de peticiones, y mediante la generación simultánea de ambas campañas de cada par, lo que reduce la ventana en la que un cambio no declarado del proveedor podría afectar a un brazo y no al otro; no se conserva registro de verificaciones posteriores al manifiesto inicial, por lo que la posibilidad de un cambio de cuantización o de motor de inferencia durante la generación se declara como limitación.</pre>
+    <p><span class="tag-mine">Mi análisis</span> Si tienes los resultados de las comprobaciones por tanda, cita los archivos en lugar de la última cláusula.</p>
+  </div>
+  <div class="station">
+    <div class="station-head"><span class="station-num">3</span><span class="station-title">Memoria y recuperación (3.3.2, 5.7.1, Resumen)</span></div>
+    <pre class="code">Por esta razón, el sistema estudiado registra el estado de las entidades en una base de datos relacional, consultable de forma exacta, y entrega en cada turno a ambas arquitecturas ese estado estructurado junto con la escena inmediatamente anterior, de modo que ambas comparten la misma infraestructura de memoria; el esquema de la base incluye tablas para recuperación por similitud vectorial, que no se emplearon en la generación del corpus experimental.</pre>
+    <p><span class="tag-mine">Mi análisis</span> En el Resumen, cambiar «estandarizando el modelo de lenguaje base (LLM) y la técnica RAG» por «estandarizando el modelo de lenguaje y la base de datos del estado del mundo».</p>
+  </div>
+  <div class="station">
+    <div class="station-head"><span class="station-num">4</span><span class="station-title">Alcance de la prueba de sensibilidad (5.6.3, 5.7.4, 1.x)</span></div>
+    <pre class="code">Los instrumentos cuya validez podía someterse a perturbaciones de efecto conocido se evaluaron mediante la prueba de sensibilidad descrita, con direcciones esperadas registradas y protegidas mediante un resumen criptográfico SHA-256 antes de cada ejecución; los instrumentos que no admitían una perturbación objetivo propia, entre ellos las medidas de coherencia y consistencia de entidades y las medidas complementarias de repetición y estabilidad de estilo, se clasificaron como exploratorios o descriptivos, y solo los que superaron la prueba sostienen las decisiones sobre las hipótesis. Dado que la validación fue iterativa, y que varias pruebas se diseñaron al identificar un vacío durante el análisis, la cronología de estas decisiones se presenta en el Anexo 2.</pre>
+  </div>
+  <div class="station">
+    <div class="station-head"><span class="station-num">5</span><span class="station-title">Sensibilidad de persona2 (5.6.3 y 6.3.8)</span></div>
+    <pre class="code">El detector persona2 superó los controles negativos (4 de 4) y siete de las diez celdas de detección directa, mientras que las tres restantes, todas de segunda persona (decisión, pensamiento y emoción), no alcanzaron el criterio de un límite inferior de Wilson de 0.80, con tasas de detección de entre 67.3 % y 81.3 %, menores en G1 que en G2 en las categorías de decisión (67.3 % frente a 76.0 %) y de emoción (71.3 % frente a 81.3 %). Esta sensibilidad diferencial, que de producir sesgo lo haría a favor de G1, no alcanza a explicar por sí sola una razón de unas veinte veces entre las tasas observadas (0.17 % frente a 3.47 %), pero se declara como una limitación del instrumento y motiva la clasificación de persona2 como confirmatorio condicionado.</pre>
+  </div>
+  <div class="station">
+    <div class="station-head"><span class="station-num">6</span><span class="station-title">Conclusiones sin causalidad no probada (6.7)</span></div>
+    <pre class="code">Este resultado matiza la premisa de que la coherencia de un director de juego basado en un solo modelo se degrada conforme la campaña se extiende (Liu et al., 2024; Gallotta et al., 2024) y es compatible con la posibilidad de que un registro estructurado del estado del mundo, presente en ambas arquitecturas, contribuya a evitar dicha degradación, hipótesis que este diseño no permite contrastar por carecer de un brazo sin dicho registro. [...] la evidencia de este corpus indica una ventaja específica de la arquitectura multiagente en el respeto a la agencia del jugador, asociada a la organización del turno en roles especializados, sin que el diseño permita aislar cuál de sus componentes la produce, dado que no se realizó una ablación de los roles.</pre>
+  </div>
+  <div class="station">
+    <div class="station-head"><span class="station-num">7</span><span class="station-title">Resumen propuesto (en pasado, coherente con el cuerpo)</span></div>
+    <pre class="code">El objetivo de esta investigación fue comparar la coherencia narrativa de campañas de Dungeons &amp; Dragons generadas por una arquitectura multiagente (G1) y por una arquitectura monolítica (G2). Se empleó un diseño experimental de medidas repetidas con pares emparejados: 27 pares, es decir, 54 campañas de 1,400 turnos y 75,600 turnos en total, generados con el mismo modelo de lenguaje (google/gemma-4-31B-it), la misma base de datos del estado del mundo y un agente jugador autónomo. La coherencia se midió con una batería de instrumentos deterministas clasificados según su sensibilidad a perturbaciones sintéticas y, en los casos pertinentes, contrastados con evaluadores externos. Las hipótesis se contrastaron con la prueba de tendencia de Page (degradación del sistema monolítico) y con la prueba de rangos con signo de Wilcoxon pareada (comparación entre arquitecturas). No se detectó degradación del sistema monolítico en 1,400 turnos. En la coherencia reactiva, el único instrumento confirmatorio favoreció a G2 y contrastó con las versiones exploratorias del mismo constructo; la coherencia longitudinal quedó sin decisión confirmatoria por falta de un instrumento validado; y en la calidad narrativa emergente G1 usurpó la agencia del jugador en 0.17 % de los turnos frente a 3.47 % de G2, resultado que se acepta de forma condicionada a la auditoría de precisión del detector. En consecuencia, la hipótesis general no se sostiene en su forma general: la evidencia indica una ventaja específica de la arquitectura multiagente en el respeto a la agencia del jugador y no una superioridad uniforme.</pre>
+  </div>
+
+  <h3>D. Preguntas que haría el tribunal</h3>
+  <div class="qa"><p class="q">1. «Su única hipótesis aceptada depende de un detector con 25 % de precisión.»</p>
+  <div class="a"><p><span class="tag-mine">Mi análisis</span> Respuesta honesta: «Por eso está aceptada de forma condicionada. La cifra de 25.6 % viene de una primera pasada con asistencia de IA, no humana, y por categoría va de 56.7 % en cognición a 4.3 % en habla. Tres cosas hacen improbable que el efecto sea un artefacto: r ≈ −1 en los 27 pares, la razón de 20 a 1, y que la categoría más fiable (cognición, 56.7 %) va en la misma dirección. Falta la precisión por brazo, que es lo que cerraría la duda».</p></div></div>
+  <div class="qa"><p class="q">2. «¿Por qué no usurpar la agencia es «coherencia narrativa»?»</p>
+  <div class="a"><p><span class="tag-mine">Mi análisis</span> Hay que responderlo desde la literatura: la tesis se apoya en FIREBALL (Zhu et al., 2023), donde los comentarios cualitativos de los jugadores coinciden en rechazar que el modelo tome el control de su personaje. Reconocer que es el aspecto de «calidad emergente» que sí se pudo medir de forma determinista, y que «interés y creatividad» no.</p></div></div>
+  <div class="qa"><p class="q">3. «El instrumento confirmatorio de coherencia reactiva favorece a G2 y los otros tres a G1; ¿con cuál se queda?»</p>
+  <div class="a"><p><span class="tag-doc">Documentado</span> La tesis responde en 6.4: no se interpreta como superioridad, sino como un límite de validez de constructo; el z controla la longitud del turno (158 frente a 116 palabras) y los crudos no. <span class="tag-mine">Mi análisis</span> Falta el criterio escrito: por qué z fue el confirmatorio y cuándo se decidió. Ese es el punto donde más conviene tener la línea de tiempo.</p></div></div>
+  <div class="qa"><p class="q">4. «¿Podía su diseño sostener la hipótesis general?»</p>
+  <div class="a"><p><span class="tag-mine">Mi análisis</span> Solo si H1e hubiera contado con un instrumento confirmatorio; no lo tuvo, así que por la regla de 4.2 (deben sostenerse las tres) la hipótesis general no podía sostenerse. Es un hallazgo sobre el estado de la medición de coherencia longitudinal, no sobre las arquitecturas. Conviene decirlo tú antes de que lo diga el jurado.</p></div></div>
+  <div class="qa"><p class="q">5. «¿Cambió el diseño después de ver datos?»</p>
+  <div class="a"><p><span class="tag-doc">Documentado</span> El pivote a instrumentos deterministas (14/09) ocurrió con el corpus recién empezado; los instrumentos nuevos se congelaron el 20/09 y las direcciones esperadas se fijaron con hash antes de cada ejecución. <span class="tag-mine">Mi análisis</span> Pero hubo resultados parciales de Par01–06 visibles antes de esos congelamientos y varios cierres de brecha se diseñaron al ver el análisis. Decirlo en la sustentación con la línea de tiempo es mejor que negarlo.</p></div></div>
+  <div class="qa"><p class="q">6. «¿Puedo reproducir su experimento?»</p>
+  <div class="a"><p><span class="tag-mine">Mi análisis</span> «La medición, sí, de forma exacta, desde el corpus y los CSV. La generación, no: el modelo no tiene semilla y el proveedor puede cambiar de versión, por eso guardamos el corpus completo y el manifiesto de huellas del 28 de agosto».</p></div></div>
+  <div class="qa"><p class="q">7. «¿Por qué el efecto es de 20 a 1 y no de 2 a 1?»</p>
+  <div class="a"><p><span class="tag-mine">Mi análisis</span> No hay una explicación probada. Ambos prompts llevan la misma regla de oro; la hipótesis de trabajo es que un modelo que decide y narra en una sola llamada tiende a completar la escena, y que el narrador de G1 recibe fragmentos ya resueltos y solo los integra. Probarlo exigiría una ablación, que se propone como trabajo futuro.</p></div></div>
+
+  <h3>E. Prioridades antes de la sustentación</h3>
+  <div class="twrap"><table>
+    <tr><th>Orden</th><th>Qué</th><th>Por qué primero</th></tr>
+    <tr><td>1</td><td>Corregir las afirmaciones falsas (hallazgos 1, 3, 4) y las sobreafirmadas (5, 6, 13)</td><td>Son frases que el código contradice; el jurado las puede verificar</td></tr>
+    <tr><td>2</td><td>Reescribir Resumen y Abstract (7)</td><td>Es lo primero que se lee y hoy contradice el cuerpo</td></tr>
+    <tr><td>3</td><td>Completar la auditoría externa de persona2 y la precisión por brazo (6, 15)</td><td>Sostiene la única hipótesis aceptada</td></tr>
+    <tr><td>4</td><td>Línea de tiempo de decisiones de diseño como anexo (8) y criterio escrito de por qué z fue el confirmatorio</td><td>Blinda la pregunta «¿cambió el diseño al ver los datos?»</td></tr>
+    <tr><td>5</td><td>Congelar, regenerar la carpeta de entrega y corregir el Registro (10, 12)</td><td>Evita que el asesor lea números invertidos</td></tr>
+    <tr><td>6</td><td>Índices, figuras, bibliografía en Zotero y anexos (9)</td><td>Es trabajo mecánico pero visible</td></tr>
+    <tr><td>7</td><td>Precisión del extractor (11), sensibilidad por brazo de persona2 (15) y alinear p unilateral/bilateral (17)</td><td>Cierran preguntas técnicas frecuentes</td></tr>
+  </table></div>
+
+  <div class="sec-note"><p><span class="tag-mine">Mi análisis</span> <strong>Corrección a mi Fase 2:</strong> allí escribí que el cambio de diseño del 14/09 fue «posterior a la generación». Fue anterior a la mayor parte del corpus (los cierres reales de Par01 y Par02 son del 15 y 16/09); mi frase era imprecisa. Lo que sí ocurrió después de ver resultados parciales fue el congelamiento de los instrumentos nuevos (20/09). Ya lo dejé corregido en esa página.</p></div>
+
+  <p class="footnote">Fuentes: <code>TESIS.md</code> (Resumen, Abstract, caps. 1–6, Tablas 1–12, índices); <code>Entrega_Asesor_TESIS/00_LEEME.md</code> y <code>Registro_Decisiones_Docimasia_H1d-H1f.md</code>; <code>docs/resultados/resultados_tesis.md</code>, <code>docs/reportes/persona2_equivalencia.md</code>, <code>degradacion_bloques.md</code>, <code>kaplan_meier_pnj.md</code>, <code>docs/SETUP_DEEPINFRA.md</code>, <code>docs/descomposicion_prompts.md</code>; <code>jugador/dados.py</code>, <code>jugador/generar_personajes.py</code>, <code>orquestador/vertical_slice.py</code> y <code>vertical_slice_g1.py</code>, <code>migrations/001_schema.sql</code>, <code>entorno/verificar_modelo.py</code>, <code>dm/prompt_g2.md</code> y <code>dm/prompt_narrador_g1.md</code>; documentos del proyecto <code>plan-cierre-investigacion.md</code>, <code>cierre-brechas-en-docx-tesis-2026-09-21.md</code>, <code>persona2-auditoria-IA-analisis.md</code>, <code>evaluacion-kev-y-brechas-pendientes-intervencion-humana-2026-09-23.md</code>.</p>
+</div>
+
+</body>
+</html>

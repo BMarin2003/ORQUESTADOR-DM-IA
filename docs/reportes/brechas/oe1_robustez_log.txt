@@ -1,0 +1,43 @@
+  par 01 listo
+  par 02 listo
+  par 03 listo
+  par 04 listo
+  par 05 listo
+  par 06 listo
+  par 07 listo
+  par 08 listo
+  par 09 listo
+  par 10 listo
+  par 11 listo
+  par 12 listo
+  par 13 listo
+  par 14 listo
+  par 15 listo
+  par 16 listo
+  par 17 listo
+  par 18 listo
+  par 19 listo
+  par 20 listo
+  par 21 listo
+  par 22 listo
+  par 23 listo
+  par 24 listo
+  par 25 listo
+  par 26 listo
+  par 27 listo
+# OE-1: robustez a los umbrales de clasificación
+
+| MIN_MINUS | MIN_TURNOS | G2 turnos marcados con efímero | G2 con entidad nunca registrada | G1 con efímero | mediana tasa efímero G1 / G2 (%) | G1<G2 | p |
+|---|---|---|---|---|---|---|---|
+| 5 | 2 | 9.4 % | 26.7 % | 5.3 % | 0.21 / 0.57 | 20/27 | 0.0421 |
+| 5 | 3 | 13.3 % | 26.7 % | 8.1 % | 0.29 / 0.93 | 21/27 | 0.0318 |
+| 5 | 5 | 17.8 % | 26.7 % | 13.3 % | 0.29 / 1.07 | 22/27 | 0.0288 |
+| 10 | 2 | 11.0 % | 28.6 % | 5.7 % | 0.21 / 0.57 | 20/27 | 0.0273 |
+| 10 **(usado)** | 3 | 15.1 % | 28.6 % | 8.6 % | 0.29 / 0.93 | 21/27 | 0.0188 |
+| 10 | 5 | 19.6 % | 28.6 % | 14.0 % | 0.36 / 1.29 | 22/27 | 0.027 |
+| 20 | 2 | 12.6 % | 31.1 % | 6.5 % | 0.29 / 0.64 | 20/27 | 0.0221 |
+| 20 | 3 | 17.2 % | 31.1 % | 9.4 % | 0.36 / 1.07 | 21/27 | 0.0158 |
+| 20 | 5 | 22.1 % | 31.1 % | 15.3 % | 0.36 / 1.36 | 22/27 | 0.0225 |
+| 50 | 2 | 15.0 % | 36.4 % | 7.3 % | 0.29 / 0.79 | 21/27 | 0.0116 |
+| 50 | 3 | 20.7 % | 36.4 % | 10.7 % | 0.43 / 1.14 | 22/27 | 0.0107 |
+| 50 | 5 | 26.7 % | 36.4 % | 16.8 % | 0.43 / 1.50 | 22/27 | 0.0211 |

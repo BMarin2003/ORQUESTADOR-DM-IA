@@ -1,0 +1,44 @@
+{
+ "qn1_ttr": {
+  "n": 29400,
+  "discrepancias": 0,
+  "max_abs_dif": 0.0,
+  "ejemplos": []
+ },
+ "qn1_ngram_repeticion": {
+  "n": 29400,
+  "discrepancias": 0,
+  "max_abs_dif": 0.0,
+  "ejemplos": []
+ },
+ "qn1_legibilidad_fh": {
+  "n": 29400,
+  "discrepancias": 0,
+  "max_abs_dif": 0.0,
+  "ejemplos": []
+ },
+ "cl2_lugar_jaccard_similarity": {
+  "n": 29400,
+  "discrepancias": 0,
+  "max_abs_dif": 0.0,
+  "ejemplos": []
+ },
+ "cr2_entidad_grafo_densidad": {
+  "n": 29400,
+  "discrepancias": 0,
+  "max_abs_dif": 0.0,
+  "ejemplos": []
+ },
+ "cr2_n_nombres_no_reconocidos": {
+  "n": 29400,
+  "discrepancias": 0,
+  "max_abs_dif": 0.0,
+  "ejemplos": []
+ },
+ "cr2_nombres_no_reconocidos": {
+  "n": 29400,
+  "discrepancias": 0,
+  "max_abs_dif": 0.0,
+  "ejemplos": []
+ }
+}

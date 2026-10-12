@@ -1,0 +1,175 @@
+{
+  "_nota": "Par 25 (real) -- corpus real, no piloto. Dos PNJ centrales, posturas igual de defendibles (palmo largo del Norte vs. palmo corto del Sur) en una sátira diplomática con corrupción realista y sin villano de cálculo trivial. Un PNJ de paso con todo vacío a propósito.",
+
+  "ottilie": {
+    "_arquetipo": "Embajadora que defiende la medida larga -no por vanidad nacional, sino porque cree de verdad que la precisión es lo único que evita que el comercio se vuelva una pelea a gritos.",
+    "name": "Ottilie Ventura",
+    "species": "humana",
+    "social_role": "embajadora del Norte y jefa de su delegación en el Congreso",
+    "appearance": "Cincuenta y cinco años, vestido de seda gris perla, cabello plateado recogido en un moño impecable y una copa de vino que nunca parece bajar.",
+    "location": "residencia_del_norte",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 30,
+      "candor": 20,
+      "principle": 35,
+      "boldness": 70
+    },
+
+    "traits": ["sabe qué copa corresponde a cada rango", "dice la verdad a medias con perfecta elegancia", "recuerda todas las veces que alguien la ha subestimado"],
+    "internal_contradiction": "Defiende el palmo largo en nombre de la precisión y de la tradición y, en el fondo, es consciente de que su delegación gana mucho más con el palmo largo de lo que dice.",
+    "taboos": ["que se le acuse de aceptar sobornos en público", "perder una votación por menos de tres votos"],
+    "voice_notes": "Sedosa y cordial, con la frase justa para cada interlocutor. Sonríe más cuanto más dura es lo que dice.",
+    "stated_desire": "Que el Congreso adopte el palmo largo del Norte como estándar continental.",
+    "actual_need": "Reconocer que su fe en la tradición y su ventaja comercial se han vuelto indistinguibles, y decidir cuál de las dos está defendiendo de verdad.",
+    "fear": "Volver a casa con un tratado que humille al Norte y ser recordada como la embajadora que lo permitió.",
+
+    "ibf": {
+      "ideal_text": "La medida larga es la más precisa; ceder ante la comodidad de los pequeños comerciantes es renunciar a lo que mantiene el orden del comercio.",
+      "ideal_tags": ["tradicion", "precision"],
+      "bond_text": "La Delegación del Norte, cuyos sueldos y carrera dependen de ella, y el rey al que sirve desde hace veinte años.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "residencia_del_norte" },
+        { "type": "faction", "key": "delegacion_del_norte" }
+      ],
+      "flaw_text": "Sobreestima su capacidad de convencer por la elegancia y subestima la fuerza de quien negocia con hechos, con dinero o con una amenaza directa.",
+      "flaw_tags": ["soberbia", "exceso_de_confianza"],
+      "flaw_exploit": "presentarle_una_prueba_concreta_que_ninguna_elocuencia_pueda_esquivar"
+    },
+
+    "disposition": {
+      "affinity": 10,
+      "trust": 5,
+      "respect": 0,
+      "trust_ceiling": 70,
+      "_nota_topes": "Sube con quien demuestra discreción y buena educación. Baja con quien es brusco o se le acerca demasiado obvio, aunque no cierra el techo -- puede confiar en quien le sirva de verdad."
+    },
+
+    "knowledge": [
+      { "fact": "El Congreso debe votar el Tratado de la Vara Única en sesenta días", "learned_at_turn": 0 },
+      { "fact": "Las tres ciudades libres pequeñas tienen el voto decisivo", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Ottilie ha ofrecido en secreto a las tres ciudades libres pequeñas una rebaja del cuarenta por ciento en sus aranceles si votan por el palmo largo, y ha ordenado que ese acuerdo no conste por escrito en ningún sitio.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ha hecho ofertas a las ciudades libres.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "elegancia, discreción y capacidad de servirle sin hacer ruido. Indiferente a los gestos toscos y a las amenazas directas."
+  },
+
+  "faustino": {
+    "_arquetipo": "Embajador que defiende la medida corta -no por demagogia, sino porque ha visto a demasiados pequeños mercaderes arruinarse por una vara mal medida.",
+    "name": "Faustino Vara",
+    "species": "humano",
+    "social_role": "embajador del Sur y jefe de su delegación en el Congreso",
+    "appearance": "Cuarenta y ocho años, chaleco de brocado con demasiados botones, sonrisa perfecta y anillos en cada dedo.",
+    "location": "residencia_del_sur",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 65,
+      "candor": 10,
+      "principle": 25,
+      "boldness": 55
+    },
+
+    "traits": ["reparte pequeños regalos en cada cena y nunca dice de dónde salen", "recuerda el nombre de la esposa de cada delegado", "se ríe antes de que termine el chiste"],
+    "internal_contradiction": "Defiende el palmo corto por los pequeños comerciantes y, en el fondo, gasta más en sobornos de lo que jamás ganarían sus supuestos beneficiarios con el cambio.",
+    "taboos": ["que se le llame corrupto en voz alta en el Congreso", "perder el favor de una delegación pequeña por un descuido"],
+    "voice_notes": "Cálido, jovial y adulador, con una risa contagiosa que apaga cualquier discusión. Nunca contesta de frente una pregunta incómoda.",
+    "stated_desire": "Que el Congreso adopte el palmo corto de las ciudades del Sur como estándar continental.",
+    "actual_need": "Distinguir entre defender a los pequeños mercaderes y defender su propio margen de maniobra, y decidir a quién sirve realmente.",
+    "fear": "Que los gremios descubran cuánto ha gastado en cenas y en regalos, y le pidan cuentas de en qué se han convertido.",
+
+    "ibf": {
+      "ideal_text": "Una medida que arruina a los pequeños comerciantes no es una medida, es un impuesto disfrazado de precisión.",
+      "ideal_tags": ["equidad", "comercio"],
+      "bond_text": "La Delegación del Sur y las ciudades pequeñas que le dieron el cargo, a las que debe cada favor que ha acumulado.",
+      "bond_strength": 65,
+      "bond_targets": [
+        { "type": "location", "key": "residencia_del_sur" },
+        { "type": "faction", "key": "delegacion_del_sur" }
+      ],
+      "flaw_text": "Se apoya tanto en la simpatía y el regalo fácil que cuando alguien no se deja comprar ni encantar, no sabe cómo negociar.",
+      "flaw_tags": ["adulacion", "dependencia_del_soborno"],
+      "flaw_exploit": "presentarle_a_un_interlocutor_que_no_se_pueda_comprar_y_ver_como_improvisa"
+    },
+
+    "disposition": {
+      "affinity": 25,
+      "trust": 10,
+      "respect": 0,
+      "trust_ceiling": 75,
+      "_nota_topes": "Sube con quien es simpático y colaborador con la Delegación del Sur. Baja con quien lo confronta con sus gastos, aunque no cierra el techo -- puede confiar en quien le sea útil de verdad."
+    },
+
+    "knowledge": [
+      { "fact": "El Congreso debe votar el Tratado de la Vara Única en sesenta días", "learned_at_turn": 0 },
+      { "fact": "Los gremios de comerciantes quieren ser oídos y podrían boicotear el Tratado", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Faustino ha comprado en secreto el voto de dos de las tres ciudades libres pequeñas con préstamos sin intereses que nunca piensa reclamar, y lleva la cuenta de cada uno en un cuaderno cifrado que guarda en su almohada.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente quién financia a las ciudades libres o si lleva cuentas de favores.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "simpatía, buen humor y utilidad concreta para su delegación. Indiferente a los sermones y a las amenazas."
+  },
+
+  "eusebio": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Nieves Botel' y 'Fermín Llavín' en pares anteriores.",
+    "name": "Eusebio Plumilla",
+    "species": "humano",
+    "social_role": "bedel del Congreso, reparte convocatorias y conoce los pasillos",
+    "appearance": "Mayor y delgado, con casaca de librea desteñida, un cuaderno de tapas duras y un bigote que tiembla cuando escucha algo que no debería.",
+    "location": "palacio_del_congreso",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctico. Habla de a qué hora es cada sesión y de qué delegación ocupa qué antesala.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a él por su cuenta en 3+ escenas, o lo nombra sin que el DM lo mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

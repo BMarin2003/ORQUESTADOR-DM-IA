@@ -1,0 +1,157 @@
+{
+  "campaign": {
+    "note": "Par 19 (real) -- corpus real, no piloto. Ver corpus/real/lore_karhad.md para la prosa completa.",
+    "world_tone": "heroic"
+  },
+  "locations": [
+    {
+      "key": "paso_del_norte",
+      "kind": "region",
+      "name": "El Paso del Norte",
+      "parent": null,
+      "culture_overrides": {
+        "language": "común",
+        "currency": "plata de las minas de Karhad, hoy casi sin circular",
+        "attitude_to_outsiders": "cerrado por el sitio: nadie entra ni sale desde hace noventa y seis días"
+      }
+    },
+    {
+      "key": "karhad",
+      "kind": "settlement",
+      "name": "Karhad",
+      "parent": "paso_del_norte",
+      "culture_overrides": {
+        "notable_laws": "ley marcial desde el primer día del sitio; el racionamiento lo reparte el Consejo de los Gremios",
+        "tensions": "la guarnición quiere resistir hasta que llegue el socorro del rey y el Consejo quiere aceptar los términos de la Marquesa antes de que venza el plazo"
+      },
+      "detail": "observed",
+      "description_canonical": "Una ciudad-fortaleza sobre un espolón de roca, con una sola muralla, una sola puerta y calles empinadas llenas de gente flaca y callada; el humo de las cocinas es cada semana menos espeso."
+    },
+    {
+      "key": "muralla_alta",
+      "kind": "landmark",
+      "name": "La Muralla Alta",
+      "parent": "karhad",
+      "detail": "observed",
+      "description_canonical": "El camino de ronda sobre la puerta, desde donde se ve el campamento de la Marquesa extendido en el valle como una ciudad de lona, con sus hogueras alineadas y sus máquinas de asedio a distancia de tiro."
+    },
+    {
+      "key": "granero_mayor",
+      "kind": "building",
+      "name": "El Granero Mayor",
+      "parent": "karhad",
+      "detail": "observed",
+      "description_canonical": "Un almacén de piedra de dos plantas, con la planta baja ya vacía y la alta a medio llenar, custodiado por dos soldados que cuentan los sacos cada amanecer delante de un escribano del Consejo."
+    },
+    {
+      "key": "cuartel_de_la_guarnicion",
+      "kind": "building",
+      "name": "El Cuartel de la Guarnición",
+      "parent": "karhad",
+      "detail": "sketch",
+      "sketch_text": "Un cuartel de piedra desnuda junto a la puerta, con mapas del valle clavados en la pared, una mesa larga y un catre plegado en el despacho de la comandante, sin deshacer desde hace semanas."
+    },
+    {
+      "key": "casa_del_consejo",
+      "kind": "building",
+      "name": "La Casa del Consejo de los Gremios",
+      "parent": "karhad",
+      "detail": "sketch",
+      "sketch_text": "Un edificio de madera y piedra en la plaza baja, con las banderas de los gremios colgadas en la sala de reuniones y un libro de raciones abierto sobre la mesa central."
+    },
+    {
+      "key": "bodegas_viejas",
+      "kind": "building",
+      "name": "Las Bodegas Viejas",
+      "parent": "karhad",
+      "detail": "sketch",
+      "sketch_text": "Bodegas excavadas bajo la muralla norte, húmedas y en desuso, con un muro de ladrillo tosco al fondo que nadie ha vuelto a mirar en cuarenta años.",
+      "visibility": "dm_only"
+    }
+  ],
+  "factions": [
+    {
+      "key": "guarnicion_de_karhad",
+      "name": "La Guarnición de Karhad",
+      "description": "Veleda Hosco y los soldados que llevan noventa y seis días sobre la muralla, convencidos de que la ciudad debe resistir hasta que llegue la columna de socorro del rey.",
+      "seat": "cuartel_de_la_guarnicion",
+      "stance_party": 0,
+      "knows_about_party": false
+    },
+    {
+      "key": "consejo_de_los_gremios",
+      "name": "El Consejo de los Gremios",
+      "description": "Isidoro Mena y los maestres que reparten el racionamiento y sostienen a los civiles, convencidos de que hay que aceptar los términos de la Marquesa mientras aún los ofrece.",
+      "seat": "casa_del_consejo",
+      "stance_party": 0,
+      "knows_about_party": false
+    }
+  ],
+  "clocks": [
+    {
+      "faction": "guarnicion_de_karhad",
+      "agenda": "El plazo que dio la Marquesa vence con la próxima luna nueva, y tras esa fecha promete que no habrá más términos",
+      "progress": 3,
+      "threshold": 10,
+      "rate_per_game_day": 0.62,
+      "on_fire_event": {
+        "headline": "Vence el plazo de la Marquesa: al amanecer suenan los cuernos del campamento sitiador",
+        "scope": "karhad",
+        "consequence": "El parlamentario regresa a la puerta a pedir respuesta, y la ciudad entera, en silencio sobre la muralla y en las calles, espera oír qué contesta Karhad y quién lo contesta."
+      }
+    },
+    {
+      "faction": "consejo_de_los_gremios",
+      "agenda": "Los víveres llegan al fondo del granero y hay que decidir qué se raciona, a quién y cuánto",
+      "progress": 2,
+      "threshold": 20,
+      "rate_per_game_day": 0.58,
+      "on_fire_event": {
+        "headline": "El escribano del Consejo anuncia que el Granero Mayor tiene ya solo para nueve días",
+        "scope": "karhad",
+        "consequence": "El racionamiento se endurece a media ración; los soldados y los civiles empiezan a mirarse con recelo en las colas, y cada gremio pide que el otro reparta primero."
+      }
+    },
+    {
+      "faction": "guarnicion_de_karhad",
+      "agenda": "La primera nevada cierra el paso y con ella se decide si la columna del rey llega o no llega nunca",
+      "progress": 2,
+      "threshold": 30,
+      "rate_per_game_day": 0.57,
+      "on_fire_event": {
+        "headline": "Cae la primera nevada sobre el Paso del Norte y borra el camino que baja hacia la capital",
+        "scope": "karhad",
+        "consequence": "Si el socorro no ha llegado ya, ahora es casi imposible que llegue; la ciudad se sabe sola con lo que tiene, y todo lo que se ha aplazado hasta este día ya no admite más aplazamientos."
+      }
+    }
+  ],
+  "quests": [
+    {
+      "key": "la_respuesta_a_la_marquesa",
+      "title": "La respuesta a la Marquesa",
+      "description": "El plazo de los términos de capitulación vence con la próxima luna nueva; la guarnición quiere resistir y el Consejo quiere aceptar.",
+      "status": "active",
+      "next_step_known": true,
+      "completion_condition": "El grupo ayuda a que Karhad dé una respuesta -aceptar, rechazar o negociar otros términos- que la comandante y el Consejo acepten, o resuelve la disputa de otra forma que la ciudad reconozca como legítima."
+    },
+    {
+      "key": "el_socorro_que_no_llega",
+      "title": "El socorro que no llega",
+      "description": "Cinco mensajeros del rey prometieron una columna de socorro y ninguno ha vuelto a entrar; nadie sabe si viene, si fue detenida o si nunca salió.",
+      "status": "unknown",
+      "next_step_known": false,
+      "visibility": "dm_only",
+      "completion_condition": "El grupo averigua qué ha sido de la columna de socorro y qué sabe realmente la ciudad sobre ella."
+    }
+  ],
+  "characters": [
+    {
+      "key": "pj_pj19",
+      "name": "Bram",
+      "species": null,
+      "class": "guerrero 3",
+      "hp": 28,
+      "hp_max": 28
+    }
+  ]
+}

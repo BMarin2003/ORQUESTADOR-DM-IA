@@ -1,0 +1,50 @@
+(bitácora en Markdown: C:\BMARIN2003\DEV\proyecto\logs\par_08_real_g2_monolitico_torre_alondra_ebfcb92e_turnos_1-1400_20260918_144422.md)
+
+# VERTICAL SLICE — Par 08 (real) · G2 (Monolítico) · Torre Alondra (monolithic)
+
+- **DM:** `google/gemma-4-31B-it`
+- **jugador:** `google/gemma-4-31B-it` (Maelis, desvío 40)
+- **turno:** 1
+
+## Turno 1 — 1/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baltasar Sávez: alive, aprecio 15.0 (cordial), 1 hechos conocidos
+  15 entidades · contexto de 1001 caracteres
+
+### [2] JUGADOR — Maelis
+
+  3877 ms
+
+> "Una tragedia que puede convertirse en guerra por falta de claridad."
+> Me acerco a Ginebra Roquende para presentarme y ofrecer mis servicios como investigadora neutral.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 6+0=6
+
+### [4] DM
+
+  16356 ms
+
+> Ginebra Roquende te observa con una mirada cansada, marcada por ojeras que delatan noches de insomnio. Sus manos, entrelazadas con fuerza sobre el regazo, no dejan de moverse en un tic nervioso mientras escucha tu propuesta. El viento de la cresta agita los bordes de su manto, y por un momento, el silencio que sigue a tus palabras se siente pesado, cargado de la desconfianza que impregna cada rincón de Torre Alondra.
+> —Neutralidad... —repite ella en un susurro, arqueando una ceja con escepticismo—. En este pueblo, la neutralidad es un lujo que se agota en cuanto alguien menciona un apellido. No dudo de vuestra capacidad, forastera, pero ahora mismo una cara nueva es solo otra pieza que puede ser malinterpretada por los jóvenes que ya tienen la mano en la empuñadura. Volved cuando tengáis una razón para que confíen en vos, o cuando el consejo decida que vuestra ayuda es menos peligrosa que el silencio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  16937 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+(bitácora guardada: C:\BMARIN2003\DEV\proyecto\logs\par_08_real_g2_monolitico_torre_alondra_ebfcb92e_turnos_1-1400_20260918_144422.md)

@@ -1,0 +1,108 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 25 (real) · G2 (Monolítico) · Balanza Real · monolithic
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        0 (  0.0%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                   29 (  2.1%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             22 (  1.6%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.164  [0.084, 0.281]
+    qn1_ttr                                n=1400  prom=0.732  [0.612, 0.873]
+    qn1_ngram_repeticion                   n=1400  prom=0.017  [0.000, 0.088]
+    qn1_legibilidad_fh                     n=1400  prom=61.557  [37.430, 83.930]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.210  [0.000, 1.000]
+  CR-2 turnos con algún nombre no reconocido: 58
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  192 visitas distintas · 13 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: El Mercado de las Pesas ↔ El Palacio del Congreso ↔ La Residencia de la Delegación del Norte ↔ La Residencia de la Delegación del Sur ↔ conducto estrecho y oscuro ↔ espacio oscuro y estrecho ↔ hueco estrecho y oscuro ↔ hueco oscuro y rectangular ↔ pasaje vertical ↔ pasillo estrecho ↔ plataforma circular de hierro ↔ puerta de madera reforzada ↔ rendija en la pared (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  873 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: Balanza Real, El Mercado de las Pesas, El Palacio del Congreso, La Cámara Acorazada, La Residencia de la Delegación del Norte, La Residencia de la Delegación del Sur
+    turno 1: Balanza Real, El Mercado de las Pesas, El Palacio del Congreso
+    turno 4: El Palacio del Congreso, espacio oscuro y estrecho
+    turno 8: El Palacio del Congreso, hueco estrecho y oscuro
+    turno 10: El Palacio del Congreso, puerta de madera reforzada
+  camino (primeras y últimas visitas):
+    turno   2 → El Palacio del Congreso
+    turno  30 → puerta de madera reforzada
+    turno  33 → El Palacio del Congreso
+    ...
+    turno 1356 → El Palacio del Congreso
+    turno 1361 → El Mercado de las Pesas
+    turno 1370 → El Palacio del Congreso
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  La Delegación del Norte disparó en turno 240 · ⚠ NO reconocido en los turnos siguientes
+    agenda: Se convoca la votación preliminar del Congreso y cada delegación debe declarar públicamente qué palmo defiende y con qué apoyos cuenta
+  La Delegación del Sur disparó en turno 640 · ✓ reconocido en turno 641
+    agenda: Los gremios de comerciantes exigen ser oídos en el Congreso y amenazan con boicotear el Tratado si se los excluye de la decisión
+  La Delegación del Norte disparó en turno 1000 · ✓ reconocido en turno 1001
+    agenda: Llega la votación final y la firma del Tratado de la Vara Única, la fecha límite que el Congreso no puede aplazar
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 1.5  (sobre 10 secciones; máximo teórico = 4.5)
+    Faustino Vara: Ci=4.5  (primera mención sección 0, última sección 9)
+    Eusebio Plumilla: Ci=0.0  (primera mención sección 0, última sección 0)
+    Ottilie Ventura: Ci=0.0  (primera mención sección 0, última sección 0)
+  V promedio = 0.105  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Faustino Vara: Vi=0.057  (283 atributos propios detectados)
+    Eusebio Plumilla: Vi=0.167  (12 atributos propios detectados)
+    Ottilie Ventura: Vi=0.091  (11 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=0.000  (0/1)
+    npc.affinity     recall=0.000  (0/5)
+  recall global: 0.000  (6 deltas evaluables)
+  6 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno   37 · Eusebio Plumilla · npc.affinity=cordial
+    turno  487 · Eusebio Plumilla · npc.affinity=loyal
+    turno  580 · Faustino Vara · npc.status=dead
+    turno 1018 · Eusebio Plumilla · npc.affinity=cordial
+    turno 1221 · Faustino Vara · npc.affinity=devoted
+    turno 1350 · Ottilie Ventura · npc.affinity=devoted
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.998  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.999  (min 0.969, max 1.000, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.024  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  29 turno(s) marcados en vivo. Reclasificación:
+    sujeto de una acción (repite el hallazgo crudo): 0 (0.0%)
+    solo mencionado/referenciado (posible falso positivo): 29 (100.0%)
+
+==========================================================================
+

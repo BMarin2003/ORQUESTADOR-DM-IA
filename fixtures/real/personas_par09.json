@@ -1,0 +1,174 @@
+{
+  "_nota": "Par 09 (real) -- corpus real, no piloto. Dos PNJ centrales, posturas igual de defendibles (aislamiento estricto vs. acompañamiento en casa) frente a una plaga sin causa clara y sin villano. Un PNJ de paso con todo vacío a propósito.",
+
+  "herminda": {
+    "_arquetipo": "Curandera agotada que sostiene un aislamiento que cuesta apoyo cada semana, porque ha visto lo que pasa cuando llega tarde.",
+    "name": "Herminda Coz",
+    "species": "humana",
+    "social_role": "curandera de Bruma Honda desde hace veinte años",
+    "appearance": "Cincuenta y tantos, manos agrietadas de lavarse constantemente, un paño siempre listo sobre el hombro para cubrirse la boca.",
+    "location": "casa_de_cuarentena",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 40,
+      "candor": 65,
+      "principle": 75,
+      "boldness": 55
+    },
+
+    "traits": ["revisa cada catre de la cuarentena antes de dormir, sin faltar una noche", "no permite visitas aunque se lo supliquen", "anota cada síntoma nuevo con letra apretada"],
+    "internal_contradiction": "Sostiene el aislamiento como la única forma responsable de proteger al pueblo, y cada noche que separa a una familia se pregunta si está curando Bruma Honda o solo retrasando lo mismo que teme.",
+    "taboos": ["dejar entrar a un familiar a la Casa de Cuarentena", "restar importancia a un síntoma nuevo, por pequeño que parezca"],
+    "voice_notes": "Cansada pero firme, da instrucciones cortas y no las repite dos veces. Rara vez explica sus razones -espera que se confíe en ella por lo que ya ha demostrado.",
+    "stated_desire": "Que el brote no se lleve a nadie más del pueblo.",
+    "actual_need": "Aceptar ayuda real en vez de cargar sola con cada decisión de aislamiento.",
+    "fear": "Que alguien muera sola en la Casa de Cuarentena por una decisión que ella misma tomó.",
+
+    "ibf": {
+      "ideal_text": "Un aislamiento a tiempo, por duro que sea, siempre cuesta menos que un contagio que ya no se puede parar.",
+      "ideal_tags": ["prevención", "responsabilidad"],
+      "bond_text": "La Casa de Cuarentena que sostiene casi sola, y cada paciente que ha visto mejorar gracias al aislamiento a tiempo.",
+      "bond_strength": 75,
+      "bond_targets": [
+        { "type": "location", "key": "casa_de_cuarentena" },
+        { "type": "faction", "key": "consejo_sanador" }
+      ],
+      "flaw_text": "No se ha permitido considerar en serio que el propio aislamiento, tal como lo aplica, esté empeorando a algunos pacientes más rápido que la enfermedad misma.",
+      "flaw_tags": ["rigidez", "negación"],
+      "flaw_exploit": "mostrarle_evidencia_de_un_paciente_que_empeoro_por_la_soledad_del_aislamiento"
+    },
+
+    "disposition": {
+      "affinity": 20,
+      "trust": 25,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con disciplina demostrada y disposición a ayudar en la Casa de Cuarentena sin quejarse. Baja si el grupo saca a un enfermo del aislamiento sin su permiso, aunque no cierra el techo -- puede ceder terreno si se le demuestra una alternativa real."
+    },
+
+    "knowledge": [
+      { "fact": "El cansancio lleva cinco semanas extendiéndose, sin responder a ningún remedio conocido", "learned_at_turn": 0 },
+      { "fact": "La Casa de Cuarentena se está quedando sin espacio y no sabe qué hará con el siguiente caso", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Herminda ya perdió a un paciente la semana pasada que, según pudo notar, no empeoró por el cansancio sino por dejar de comer de pura soledad -no se lo ha contado a nadie porque teme que le dé la razón a Amancio delante de todo el pueblo.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si el aislamiento en sí ha hecho daño a alguien.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "disciplina y disposición a ayudar sin quejarse. Indiferente a la simpatía sin trabajo real detrás."
+  },
+
+  "amancio": {
+    "_arquetipo": "Viudo reciente que cree que la soledad del aislamiento mata casi tan rápido como la propia enfermedad -no busca imponerse, busca no perder a nadie más como perdió a su esposa.",
+    "name": "Amancio Bell",
+    "species": "humano",
+    "social_role": "organiza reuniones nocturnas en la capilla vieja del pueblo",
+    "appearance": "Cuarenta y tantos, ojeras profundas desde hace diez días, lleva siempre consigo un pañuelo que fue de su esposa.",
+    "location": "capilla_amancio",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 70,
+      "candor": 60,
+      "principle": 55,
+      "boldness": 50
+    },
+
+    "traits": ["enciende una vela por cada enfermo aislado, cada noche sin faltar", "escucha antes de hablar, incluso furioso", "no ha vuelto a dormir en su propia cama desde el entierro"],
+    "internal_contradiction": "Cree que el acompañamiento en casa es más humano que el aislamiento, y no ha calculado del todo qué pasa si tiene razón sobre el consuelo pero se equivoca sobre el contagio.",
+    "taboos": ["hablar mal de un enfermo, esté donde esté", "dejar que alguien muera sin compañía si él puede evitarlo"],
+    "voice_notes": "Cálido, se dirige a cada persona por su nombre y el de algún familiar. La voz se le quiebra al mencionar a su esposa, incluso de pasada.",
+    "stated_desire": "Que nadie más muera solo, separado de quien lo quiere.",
+    "actual_need": "Aceptar que su dolor no le deja ver con claridad cuánto riesgo real conlleva lo que propone.",
+    "fear": "Que alguien más muera acompañado, en casa, por seguir su consejo -y que eso también sea culpa suya.",
+
+    "ibf": {
+      "ideal_text": "Nadie debería morir solo, y ninguna prevención vale ese precio sin que el pueblo entero lo decida junto, no que se lo impongan.",
+      "ideal_tags": ["compañía", "consentimiento"],
+      "bond_text": "La memoria de su esposa, y cada familia de Familias Unidas que ahora comparte su misma pérdida o su mismo miedo.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "capilla_amancio" },
+        { "type": "faction", "key": "familias_unidas" }
+      ],
+      "flaw_text": "Su duelo le impide sopesar con calma cuánto puede acelerar el contagio si Familias Unidas se impone del todo sobre el aislamiento.",
+      "flaw_tags": ["duelo_no_resuelto", "impaciencia"],
+      "flaw_exploit": "pedirle_que_calcule_en_frio_cuanta_gente_mas_podria_contagiarse_sin_aislamiento"
+    },
+
+    "disposition": {
+      "affinity": 30,
+      "trust": 25,
+      "respect": 0,
+      "trust_ceiling": 85,
+      "_nota_topes": "Sube con calidez demostrada hacia los enfermos y sus familias. Baja si el grupo respalda un aislamiento que separa a una familia sin ofrecer alternativa, aunque no cierra el techo -- puede aceptar el aislamiento si ve que de verdad protege a alguien."
+    },
+
+    "knowledge": [
+      { "fact": "Su esposa murió sola en la Casa de Cuarentena, sin que él pudiera despedirse", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Amancio ya ha convencido a tres familias de esconder a un enfermo en casa en vez de llevarlo a la Casa de Cuarentena -no lo ha dicho en público porque sabe que eso podría acelerar el contagio si se equivoca.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si conoce a alguien escondiendo a un enfermo en casa.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "calidez y disposición a acompañar sin juzgar. Indiferente al rango o la autoridad formal."
+  },
+
+  "ivo": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Renata Sarco' e 'Iker Sabas' en pares anteriores.",
+    "name": "Ivo Manque",
+    "species": "humano",
+    "social_role": "reparte leña entre las casas de Bruma Honda con un carro tirado a mano",
+    "appearance": "Fornido, siempre con astillas prendidas en la ropa y un pañuelo húmedo por la niebla atado al cuello.",
+    "location": "bruma_honda",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctico. Habla de qué casas necesitan leña esta semana y de cuánta niebla hizo anoche.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a él por su cuenta en 3+ escenas, o lo nombra sin que el DM lo mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

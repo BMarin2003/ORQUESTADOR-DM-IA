@@ -1,0 +1,100 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 17 (real) · G1 (Multiagente) · Corral Alto · mas
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        6 (  0.4%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                    0 (  0.0%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             15 (  1.1%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.201  [0.104, 0.422]
+    qn1_ttr                                n=1400  prom=0.688  [0.598, 0.818]
+    qn1_ngram_repeticion                   n=1400  prom=0.026  [0.000, 0.083]
+    qn1_legibilidad_fh                     n=1400  prom=61.351  [40.910, 75.020]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.115  [0.000, 0.800]
+  CR-2 turnos con algún nombre no reconocido: 1400
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  32 visitas distintas · 2 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: La Casa de Bibiana ↔ almacén tres del muelle sur (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1161 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: Corral Alto, La Casa de Bibiana, La Casa de Melquíades, almacén tres del muelle sur
+    turno 23: La Casa de Bibiana, almacén tres del muelle sur
+    turno 24: La Casa de Bibiana, almacén tres del muelle sur
+    turno 25: La Casa de Bibiana, almacén tres del muelle sur
+    turno 26: La Casa de Bibiana, almacén tres del muelle sur
+  camino (primeras y últimas visitas):
+    turno   1 → almacén tres del muelle sur
+    turno  32 → La Casa de Bibiana
+    turno  98 → almacén tres del muelle sur
+    ...
+    turno 1271 → La Casa de Bibiana
+    turno 1289 → almacén tres del muelle sur
+    turno 1292 → La Casa de Bibiana
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  ningún reloj ha disparado todavía en esta campaña
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 2.667  (sobre 10 secciones; máximo teórico = 4.5)
+    Bibiana Roth: Ci=4.5  (primera mención sección 0, última sección 9)
+    Wynn: Ci=3.5  (primera mención sección 2, última sección 9)
+    Melquíades Sorna: Ci=0.0  (primera mención sección 0, última sección 0)
+  V promedio = 0.088  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Bibiana Roth: Vi=0.07  (738 atributos propios detectados)
+    Wynn: Vi=0.094  (776 atributos propios detectados)
+    Melquíades Sorna: Vi=0.1  (20 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.affinity     recall=0.143  (1/7)
+  recall global: 0.143  (7 deltas evaluables)
+  6 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  190 · Bibiana Roth · npc.affinity=cordial
+    turno  195 · Bibiana Roth · npc.affinity=loyal
+    turno  251 · Bibiana Roth · npc.affinity=cordial
+    turno  278 · Bibiana Roth · npc.affinity=cordial
+    turno  366 · Bibiana Roth · npc.affinity=wary
+    turno  381 · Bibiana Roth · npc.affinity=hostile
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.998  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.989  (min 0.969, max 0.998, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.026  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  ningún turno con cl2_pnj_inactivo_actua=true en esta campaña -- nada que reclasificar
+
+==========================================================================
+

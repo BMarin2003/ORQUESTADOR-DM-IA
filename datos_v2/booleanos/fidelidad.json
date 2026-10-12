@@ -1,0 +1,38 @@
+{
+ "cr1_veredicto_contradice_narracion|G1": {
+  "n": 8400,
+  "crudo_ne_v1": 0,
+  "v2_ne_v1": 56,
+  "v1_pos": 65,
+  "v2_pos": 9,
+  "v1_a_v2": 56,
+  "v2_a_v1": 0
+ },
+ "cl2_pnj_inactivo_actua|G1": {
+  "n": 8400,
+  "crudo_ne_v1": 0,
+  "v2_ne_v1": 2,
+  "v1_pos": 390,
+  "v2_pos": 388,
+  "v1_a_v2": 2,
+  "v2_a_v1": 0
+ },
+ "cr1_veredicto_contradice_narracion|G2": {
+  "n": 8400,
+  "crudo_ne_v1": 0,
+  "v2_ne_v1": 0,
+  "v1_pos": 14,
+  "v2_pos": 14,
+  "v1_a_v2": 0,
+  "v2_a_v1": 0
+ },
+ "cl2_pnj_inactivo_actua|G2": {
+  "n": 8400,
+  "crudo_ne_v1": 0,
+  "v2_ne_v1": 0,
+  "v1_pos": 50,
+  "v2_pos": 50,
+  "v1_a_v2": 0,
+  "v2_a_v1": 0
+ }
+}

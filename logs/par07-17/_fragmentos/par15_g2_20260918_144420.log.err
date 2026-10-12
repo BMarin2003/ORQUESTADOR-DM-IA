@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "C:\BMARIN2003\DEV\proyecto\orquestador\vertical_slice.py", line 1024, in <module>
+    main()
+    ~~~~^^
+  File "C:\BMARIN2003\DEV\proyecto\orquestador\vertical_slice.py", line 393, in main
+    _cuerpo_principal(args, camp, cab, pj, pjs, nombres_pj_conocidos,
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                      prompt_jugador, prompt_dm, prompt_extractor,
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                      contrato)
+                      ^^^^^^^^^
+  File "C:\BMARIN2003\DEV\proyecto\orquestador\vertical_slice.py", line 683, in _cuerpo_principal
+    print(f"  \u2713 evento {e['entity']} · {e['event_kind']}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\BMARIN2003\DEV\proyecto\orquestador\vertical_slice.py", line 283, in write
+    s.write(data)
+    ~~~~~~~^^^^^^
+  File "C:\Users\bryan\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 2: character maps to <undefined>

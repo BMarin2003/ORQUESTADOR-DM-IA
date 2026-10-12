@@ -1,0 +1,104 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 07 (real) · G1 (Multiagente) · Umbral Hondo · mas
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        9 (  0.6%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                  288 ( 20.6%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             18 (  1.3%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.222  [0.100, 0.511]
+    qn1_ttr                                n=1400  prom=0.694  [0.597, 0.825]
+    qn1_ngram_repeticion                   n=1400  prom=0.030  [0.000, 0.089]
+    qn1_legibilidad_fh                     n=1400  prom=62.374  [43.740, 77.560]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.206  [0.000, 0.714]
+  CR-2 turnos con algún nombre no reconocido: 1398
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  39 visitas distintas · 11 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: brecha hacia la oscuridad ↔ callejón del Herrero Ciego ↔ cámara bulbosa ↔ cámara de control técnica ↔ cámara de paredes espejadas ↔ cámara gélida ↔ grieta vertical del muro norte ↔ puerta de esclusa ↔ túnel ascendente ↔ zona de carga colapsada (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1233 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: El Consultorio de Sonia, La Capilla Vieja, La Galería Honda, Umbral Hondo, brecha hacia la oscuridad, callejón del Herrero Ciego, galería de cuarzo translúcido
+    turno 1: Umbral Hondo, brecha hacia la oscuridad, callejón del Herrero Ciego, cámara ovalada de piedra caliza, grieta vertical del muro norte
+    turno 3: brecha hacia la oscuridad, callejón del Herrero Ciego, zona de carga colapsada
+    turno 4: brecha hacia la oscuridad, cámara de control técnica, cámara gélida, cámara ovalada de piedra caliza
+    turno 5: brecha hacia la oscuridad, callejón del Herrero Ciego, cámara de control técnica, cámara ovalada de piedra caliza
+  camino (primeras y últimas visitas):
+    turno   2 → brecha hacia la oscuridad
+    turno  12 → callejón del Herrero Ciego
+    turno  40 → grieta vertical del muro norte
+    ...
+    turno 1228 → callejón del Herrero Ciego
+    turno 1376 → brecha hacia la oscuridad
+    turno 1398 → cámara circular de caliza erosionada
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  ningún reloj ha disparado todavía en esta campaña
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 3.0  (sobre 10 secciones; máximo teórico = 4.5)
+    Sargento Vane: Ci=4.0  (primera mención sección 1, última sección 9)
+    Tarq: Ci=4.5  (primera mención sección 0, última sección 9)
+    Bercelio Nax: Ci=0.5  (primera mención sección 0, última sección 1)
+  V promedio = 0.055  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Sargento Vane: Vi=0.054  (501 atributos propios detectados)
+    Tarq: Vi=0.053  (434 atributos propios detectados)
+    Bercelio Nax: Vi=0.057  (262 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=0.200  (1/5)
+    npc.affinity     recall=0.000  (0/3)
+  recall global: 0.125  (8 deltas evaluables)
+  7 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  128 · Bercelio Nax · npc.affinity=loyal
+    turno  251 · Sargento Vane · npc.affinity=loyal
+    turno  285 · Sargento Vane · npc.affinity=devoted
+    turno  394 · Sargento Vane · npc.status=captured
+    turno  589 · Sargento Vane · npc.status=captured
+    turno  997 · Sargento Vane · npc.status=dead
+    turno  998 · Sargento Vane · npc.status=dead
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.997  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.988  (min 0.963, max 0.995, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.022  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  288 turno(s) marcados en vivo. Reclasificación:
+    sujeto de una acción (repite el hallazgo crudo): 0 (0.0%)
+    solo mencionado/referenciado (posible falso positivo): 288 (100.0%)
+
+==========================================================================
+

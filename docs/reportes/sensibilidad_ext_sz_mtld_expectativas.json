@@ -1,0 +1,10 @@
+{
+ "sha256": "59998b1645cb9148a1c22515f4976c41241b983142460bcde18706a0f462b825",
+ "expectativas": {
+  "P6|qn1_legibilidad_sz": "sin_cambio",
+  "P11a_inyeccion|qn1_legibilidad_sz": "sin_cambio",
+  "P11b_eliminacion|qn1_legibilidad_sz": "sin_cambio",
+  "P9|ventana_mtld": "sin_cambio",
+  "P9|ventana_mattr": "sin_cambio"
+ }
+}

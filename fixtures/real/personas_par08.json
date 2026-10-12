@@ -1,0 +1,174 @@
+{
+  "_nota": "Par 08 (real) -- corpus real, no piloto. Dos PNJ centrales, cada uno al frente de una de las dos casas fundadoras, con posturas igual de defendibles (investigación calmada vs. duelo único y definitivo) y ninguno villano -- la causa real de la muerte de Ossian queda deliberadamente sin resolver en esta ficha. Un PNJ de paso con todo vacío a propósito.",
+
+  "ginebra": {
+    "_arquetipo": "Matriarca que defiende la calma y la evidencia mientras contiene, cada vez con más esfuerzo, a su propia familia armada.",
+    "name": "Ginebra Roquende",
+    "species": "humana",
+    "social_role": "matriarca de la Casa Roquende",
+    "appearance": "Sesenta y tantos, porte recto, viste luto cerrado desde la muerte de Ossian sin haber dejado de presidir una sola reunión del consejo.",
+    "location": "casa_roquende",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 45,
+      "candor": 65,
+      "principle": 80,
+      "boldness": 60
+    },
+
+    "traits": ["preside cada reunión del consejo sin faltar una sola vez", "conoce a cada primo joven de su casa por nombre y por temperamento", "no eleva la voz ni cuando está furiosa"],
+    "internal_contradiction": "Predica calma y pruebas en el consejo, y en privado ya ha tenido que contener dos veces a sus propios primos armados -cada día que pasa sin respuesta confía menos en poder seguir haciéndolo.",
+    "taboos": ["acusar a un Sávez en público sin pruebas", "dejar una reunión del consejo sin presidir en persona"],
+    "voice_notes": "Pausada, elige cada palabra antes de decirla. Se dirige a los Sávez por su nombre completo, nunca por apodo, como gesto deliberado de respeto.",
+    "stated_desire": "Que se sepa la verdad de lo que le pasó a Ossian, sin que eso encienda una guerra.",
+    "actual_need": "Encontrar algo concreto que ofrecerles a sus primos jóvenes antes de que decidan actuar sin ella.",
+    "fear": "Que la próxima muerte en la familia sea la que ella misma no pudo evitar por confiar demasiado en la calma.",
+
+    "ibf": {
+      "ideal_text": "Una familia que responde con sangre a una sospecha sin probar deja de ser mejor que aquello a lo que teme parecerse.",
+      "ideal_tags": ["justicia", "contención"],
+      "bond_text": "Sus primos más jóvenes, a quienes ha criado casi como hijos propios desde que sus padres murieron.",
+      "bond_strength": 80,
+      "bond_targets": [
+        { "type": "location", "key": "casa_roquende" },
+        { "type": "faction", "key": "familia_roquende" }
+      ],
+      "flaw_text": "Confía en que su autoridad sobre la familia dura más de lo que en realidad dura -no ha notado cuánto ha perdido ya el control de sus primos más jóvenes.",
+      "flaw_tags": ["orgullo", "negación"],
+      "flaw_exploit": "mostrarle_evidencia_de_que_sus_primos_ya_planean_actuar_sin_ella"
+    },
+
+    "disposition": {
+      "affinity": 25,
+      "trust": 20,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con pruebas concretas y disposición a mediar en vez de acusar. Baja si el grupo trata a los Sávez como culpables sin pruebas, aunque no cierra el techo -- responde a hechos, no a lealtades de sangre."
+    },
+
+    "knowledge": [
+      { "fact": "Ossian apareció muerto al pie de un risco en tierra disputada, con una piedra suelta que podría explicar una caída", "learned_at_turn": 0 },
+      { "fact": "Hace más de un siglo, un Roquende murió en esas mismas laderas en circunstancias que nadie cuenta ya completas", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Ginebra ya ha convencido a dos de sus primos más jóvenes de esperar una semana más antes de actuar por su cuenta -no una semana indefinida, y no sabe qué hacer si esa semana se cumple sin respuestas.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente cuánto tiempo más puede contener a su propia familia.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "pruebas concretas y disposición a mediar sin tomar partido de antemano. Indiferente a los gestos de fuerza sin nada detrás."
+  },
+
+  "baltasar": {
+    "_arquetipo": "Patriarca que prefiere un único duelo definitivo a dejar que la sospecha se pudra sin resolverse -no busca la sangre, teme la guerra lenta más que un solo golpe limpio.",
+    "name": "Baltasar Sávez",
+    "species": "humano",
+    "social_role": "patriarca de la Casa Sávez",
+    "appearance": "Sesenta y tantos, manos de cantero todavía callosas, lleva al cinto un cincel viejo que ya no usa para tallar piedra.",
+    "location": "casa_savez",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 35,
+      "candor": 75,
+      "principle": 60,
+      "boldness": 70
+    },
+
+    "traits": ["invocó el Desafío Franco una sola vez en su vida, hace treinta años", "no confía en que la calma resista otra semana de espera", "trata a cada Roquende con una cortesía formal que raya en la advertencia"],
+    "internal_contradiction": "Cree que proponer un duelo único es la forma más responsable de evitar una guerra entre casas, y no termina de admitir que también es la forma de asegurarse de que, si hay sangre, sea él quien decida cuándo y cómo.",
+    "taboos": ["retractarse de un desafío ya invocado", "dejar sin respuesta un insulto público a su casa"],
+    "voice_notes": "Formal, tono bajo, elige un tratamiento de cortesía exacto para cada persona según su rango en la casa contraria.",
+    "stated_desire": "Que esto se resuelva de una vez, antes de que se convierta en algo que ninguna de las dos casas pueda controlar.",
+    "actual_need": "Confiar en que existe una salida que no empiece con un golpe.",
+    "fear": "Que el Desafío Franco, en vez de cerrar esto, sea solo el primer golpe de algo mucho más largo.",
+
+    "ibf": {
+      "ideal_text": "Una herida abierta que nadie cierra a tiempo termina infectando a toda la casa, no solo a quien la recibió.",
+      "ideal_tags": ["honor", "resolución"],
+      "bond_text": "El torreón que su bisabuelo ayudó a levantar con sus propias manos de cantero, piedra a piedra junto a los primeros Roquende.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "torreon_viejo" },
+        { "type": "faction", "key": "familia_savez" }
+      ],
+      "flaw_text": "Asume que un solo golpe limpio basta para cerrar algo que lleva un siglo sin cerrarse -no ha considerado en serio que la raíz del problema sea más vieja que la muerte de Ossian.",
+      "flaw_tags": ["impaciencia", "exceso_de_confianza"],
+      "flaw_exploit": "mostrarle_evidencia_de_que_el_conflicto_viene_de_mas_de_un_siglo_atras"
+    },
+
+    "disposition": {
+      "affinity": 15,
+      "trust": 15,
+      "respect": 0,
+      "trust_ceiling": 75,
+      "_nota_topes": "Sube con franqueza y disposición a actuar sin rodeos. Baja si el grupo lo trata como al agresor de esta historia sin pruebas, aunque no cierra el techo -- puede aceptar una salida distinta si se la demuestran mejor que la suya."
+    },
+
+    "knowledge": [
+      { "fact": "Ossian murió en tierra Sávez, y sabe que eso por sí solo ya condena a su casa a ojos de media Torre Alondra", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Baltasar ya ha mandado preparar en secreto el terreno del Paso del Desafío para un duelo, antes incluso de proponerlo formalmente en el consejo -no quiere que parezca improvisado si Ginebra se niega a esperar más.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ya se está preparando para el Desafío Franco.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "franqueza y disposición a actuar sin rodeos. Indiferente a la autoridad moral sin hechos detrás."
+  },
+
+  "renata": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Petra Ilm' e 'Iker Sabas' en pares anteriores.",
+    "name": "Renata Sarco",
+    "species": "humana",
+    "social_role": "campanera del Torreón Viejo, toca la hora desde niña",
+    "appearance": "Joven, siempre con las manos ásperas de la cuerda de la campana y una bufanda que fue de su abuela.",
+    "location": "torreon_viejo",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctica. Habla de turnos de campana y de quién le pidió tocar una hora distinta esta semana.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a ella por su cuenta en 3+ escenas, o la nombra sin que el DM la mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

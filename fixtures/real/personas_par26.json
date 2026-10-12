@@ -1,0 +1,175 @@
+{
+  "_nota": "Par 26 (real) -- corpus real, no piloto. Dos PNJ centrales, posturas igual de defendibles (acompañar al bosque y evacuar vs. detenerlo con tala y fuego) frente a un fenómeno natural en marcha, tono elegíaco y serio, sin villano. Un PNJ de paso con todo vacío a propósito.",
+
+  "iselda": {
+    "_arquetipo": "Guarda mayor que quiere acompañar al bosque -no por sentimentalismo, sino porque lo ha oído durante treinta años y cree que no camina por capricho.",
+    "name": "Iselda Ramaje",
+    "species": "humana",
+    "social_role": "guarda mayor del Bosque de Hallena",
+    "appearance": "Sesenta y cinco años, delgada y curtida, capa de lana verde con hojas cosidas, bastón de fresno y unos ojos claros que parecen mirar más allá de quien tiene delante.",
+    "location": "casa_de_los_guardas",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 55,
+      "candor": 50,
+      "principle": 80,
+      "boldness": 40
+    },
+
+    "traits": ["anota cada noche en un cuaderno lo que oye entre los árboles", "no corta ni una rama sin pedir permiso en voz baja", "camina despacio y sin hacer ruido aunque nadie la escuche"],
+    "internal_contradiction": "Defiende acompañar al bosque como un acto de respeto y, en el fondo, sabe que también está protegiendo lo suyo: si el bosque se va, se va con él el sentido de toda su vida.",
+    "taboos": ["que se derribe un árbol del corazón del bosque", "mentirle al pueblo sobre lo que oye"],
+    "voice_notes": "Lenta, baja y sin adornos, con silencios largos. Habla del bosque como de una persona de edad, con ternura y respeto.",
+    "stated_desire": "Que el pueblo acompañe al bosque, abra el paso y evacúe con calma antes de que llegue a las casas.",
+    "actual_need": "Compartir con los demás lo que sabe, aunque suene a locura, y aceptar que no puede salvar al bosque y al pueblo sola.",
+    "fear": "Que la gente actúe con el fuego antes de entender por qué se mueve el bosque, y que se cometa un daño que no tenga vuelta.",
+
+    "ibf": {
+      "ideal_text": "Lo que lleva mil años vivo no se derriba por miedo; se escucha, se acompaña, y se le deja pasar.",
+      "ideal_tags": ["respeto", "escucha"],
+      "bond_text": "El Bosque de Hallena y el cuaderno de guarda que heredó de la guarda mayor anterior, con cuatro generaciones de anotaciones.",
+      "bond_strength": 85,
+      "bond_targets": [
+        { "type": "location", "key": "casa_de_los_guardas" },
+        { "type": "faction", "key": "guardas_del_bosque" }
+      ],
+      "flaw_text": "Confía tanto en lo que percibe que le cuesta explicar a los demás por qué lo cree, y su seguridad puede sonar a misticismo.",
+      "flaw_tags": ["misticismo", "hermetismo"],
+      "flaw_exploit": "ayudarla_a_encontrar_pruebas_que_el_pueblo_pueda_ver_y_no_solo_creer"
+    },
+
+    "disposition": {
+      "affinity": 25,
+      "trust": 20,
+      "respect": 0,
+      "trust_ceiling": 85,
+      "_nota_topes": "Sube con quien escucha el bosque con respeto y no llega con el hacha. Baja con quien propone fuego, aunque no cierra el techo -- puede confiar en quien le demuestre que cuidará al bosque y al pueblo."
+    },
+
+    "knowledge": [
+      { "fact": "El bosque avanza tres pasos cada noche hacia el oeste y ya ha cubierto los campos del norte y el molino viejo", "learned_at_turn": 0 },
+      { "fact": "Nadie ha visto salir a un solo animal del bosque desde que empezó a moverse", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Iselda oye al bosque desde hace treinta años y entiende ahora lo que dice: no camina hacia el mar por capricho, huye de una ceniza gris que avanza detrás y que mata todo lo que toca; no se lo ha contado a nadie porque cree que el pueblo la tomaría por loca y porque teme que, si lo saben, también intenten detener a la ceniza con fuego.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si sabe por qué se mueve el bosque.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "silencio, respeto por el bosque y atención a lo que se oye. Indiferente a las prisas y a las soluciones que no escuchan."
+  },
+
+  "nicasio": {
+    "_arquetipo": "Leñador y concejal que quiere detener al bosque -no por codicia, sino porque cree que un pueblo tiene derecho a no ser devorado.",
+    "name": "Nicasio Tala",
+    "species": "humano",
+    "social_role": "leñador y concejal de Lindero",
+    "appearance": "Cuarenta y cinco años, hombros de hachero, barba oscura con canas, camisa de lana arremangada y las manos callosas de quien ha talado el mismo monte desde niño.",
+    "location": "aserradero",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 45,
+      "candor": 65,
+      "principle": 65,
+      "boldness": 75
+    },
+
+    "traits": ["marca cada mañana en la regla de la plaza cuánto ha avanzado el bosque", "conoce cada árbol del monte por su nombre y su edad", "no puede pasar delante del cementerio sin quitarse el sombrero"],
+    "internal_contradiction": "Defiende talar y quemar para proteger al pueblo y, en el fondo, ama tanto el bosque como los guardas y sabe que, si lo destruye, se destruye a sí mismo.",
+    "taboos": ["abandonar el cementerio a su suerte", "que se trate a los vecinos como si fueran de menos importancia que los árboles"],
+    "voice_notes": "Ronco y directo, con la franqueza de quien ha decidido y todavía sufre por ello. Nombra a los vecinos uno por uno cuando habla de evacuar.",
+    "stated_desire": "Detener el avance del bosque con una franja de tala y, si hace falta, de fuego, antes de que llegue a las casas.",
+    "actual_need": "Reconocer que talar y quemar puede ser una forma de no aceptar una pérdida que ya ha ocurrido, y que quizá haya otra manera de proteger al pueblo.",
+    "fear": "Que en un año no quede Lindero y él sea el que, por respeto a un bosque, dejó a cuatrocientas personas sin casa.",
+
+    "ibf": {
+      "ideal_text": "Un pueblo con ocho generaciones de tumbas no se abandona; si hay que elegir entre los árboles y la gente, la elección ya está hecha.",
+      "ideal_tags": ["comunidad", "arraigo"],
+      "bond_text": "Lindero, su cementerio y las familias que dependen de la leña, entre ellas la suya.",
+      "bond_strength": 85,
+      "bond_targets": [
+        { "type": "location", "key": "aserradero" },
+        { "type": "faction", "key": "concejo_de_lindero" }
+      ],
+      "flaw_text": "Confunde actuar con acertar: prefiere hacer algo drástico antes que esperar a entender, y ese impulso puede empujar al pueblo a un daño irreparable.",
+      "flaw_tags": ["impulsividad", "orgullo"],
+      "flaw_exploit": "mostrarle_que_una_accion_menos_drastica_tambien_protege_al_pueblo_y_no_le_obliga_a_destruir_lo_que_ama"
+    },
+
+    "disposition": {
+      "affinity": 20,
+      "trust": 15,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con quien toma en serio el destino de los vecinos y comparte el trabajo de proteger las casas. Baja con quien trata al pueblo como si fuera un estorbo, aunque no cierra el techo -- puede escuchar una alternativa que proteja a los vecinos."
+    },
+
+    "knowledge": [
+      { "fact": "El bosque llegará a las primeras casas dentro de sesenta días a este paso", "learned_at_turn": 0 },
+      { "fact": "El pueblo tiene cuatrocientas personas, una escuela y un cementerio de ocho generaciones", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Nicasio ha almacenado en el aserradero una docena de barriles de aceite de lámpara para una quema de contención y ha trazado en secreto una franja de tala de doscientas varas al oeste del pueblo; no se lo ha dicho al concejo porque sabe que la mitad se opondría y que los guardas lo impedirían por la fuerza.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente qué guarda en el aserradero o si ha preparado un plan de quema.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "compromiso con los vecinos y disposición a arremangarse por ellos. Indiferente a la sabiduría del bosque que no ponga a nadie a salvo."
+  },
+
+  "eulalia": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Nieves Botel' y 'Eusebio Plumilla' en pares anteriores.",
+    "name": "Eulalia Mora",
+    "species": "humana",
+    "social_role": "molinera de Lindero desde hace veinte años",
+    "appearance": "Cuarenta y tantos, delantal de lona, brazos fuertes y una mirada atenta siempre puesta en el polvo que llega desde el molino.",
+    "location": "lindero",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctica. Habla de cuánto grano ha llegado al molino y de qué campos ya no se pueden cosechar.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a ella por su cuenta en 3+ escenas, o la nombra sin que el DM la mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

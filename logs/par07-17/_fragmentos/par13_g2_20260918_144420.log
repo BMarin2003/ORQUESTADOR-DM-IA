@@ -1,0 +1,46 @@
+(bitácora en Markdown: C:\BMARIN2003\DEV\proyecto\logs\par_13_real_g2_monolitico_piedra_yerma_8845df6a_turnos_1-1400_20260918_144422.md)
+
+# VERTICAL SLICE — Par 13 (real) · G2 (Monolítico) · Piedra Yerma (monolithic)
+
+- **DM:** `google/gemma-4-31B-it`
+- **jugador:** `google/gemma-4-31B-it` (Elior, desvío 70)
+- **turno:** 1
+
+## Turno 1 — 1/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldemar Cruz: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 1093 caracteres
+
+### [2] JUGADOR — Elior
+
+  7724 ms
+
+> "Interesante. Un crecimiento geométrico vinculado a una perturbación física."
+> Me dirijo directamente hacia la fosa del buscador de reliquias para examinar los restos de la excavación.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+4=19
+
+### [4] DM
+
+  14356 ms
+
+> El aire se vuelve pesado y seco a medida que te adentras en el círculo yermo; el silencio es absoluto, roto solo por el crujido de la tierra agrietada bajo tus botas. La fosa es una herida irregular en el suelo, un tajo de apenas un metro de profundidad que rompe la monotonía del gris ceniciento. Al asomarte, notas que el buscador no cavó al azar: el agujero se sitúa en un punto donde las vetas de la piedra oscura del monolito parecen converger bajo tierra, como si hubiera buscado el núcleo de una raíz.
+> En el fondo del hoyo, entre la tierra removida, observas que el buscador no se llevó todo. Queda un fragmento de cerámica negra, roto y opaco, parcialmente enterrado, y una serie de marcas ralladas en la pared de la fosa que no parecen naturales; son símbolos apresurados, trazados con urgencia, que parecen advertir sobre algo que "no debe ser despertado" antes de que el trazo se interrumpa bruscamente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  22829 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+(bitácora guardada: C:\BMARIN2003\DEV\proyecto\logs\par_13_real_g2_monolitico_piedra_yerma_8845df6a_turnos_1-1400_20260918_144422.md)

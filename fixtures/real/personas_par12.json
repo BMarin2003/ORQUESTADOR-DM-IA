@@ -1,0 +1,174 @@
+{
+  "_nota": "Par 12 (real) -- corpus real, no piloto. Dos PNJ centrales, posturas igual de defendibles (seguir escondiendo con cuidado vs. declarar algo a tiempo) frente a una inspección externa, sin villano -- ambos quieren proteger al mismo pueblo. Un PNJ de paso con todo vacío a propósito.",
+
+  "selmira": {
+    "_arquetipo": "Patrona pragmática que coordina el mercado no declarado del muelle -no por codicia, sino porque conoce el costo real de que el pueblo se quede sin ese ingreso.",
+    "name": "Selmira Ondas",
+    "species": "humana",
+    "social_role": "patrona del muelle de Muelle Gris",
+    "appearance": "Cincuenta y tantos, manos curtidas de manejar cabos toda la vida, siempre con una libreta pequeña atada a la muñeca con cordel.",
+    "location": "casa_selmira",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 45,
+      "candor": 60,
+      "principle": 40,
+      "boldness": 65
+    },
+
+    "traits": ["conoce cada barca del muelle y lo que carga, de memoria", "no confía nada importante al papel salvo su propia libreta", "trata cualquier crisis como un problema de logística, no de miedo"],
+    "internal_contradiction": "Defiende seguir 'como siempre' porque cree que es lo más seguro para el pueblo, y en privado sabe que cada semana que pasa sin cambiar nada es una semana más de riesgo acumulado si el inspector llega antes de lo esperado.",
+    "taboos": ["dejar un movimiento del muelle sin anotar en su libreta", "hablar del almacén del fondeadero delante de un forastero"],
+    "voice_notes": "Calmada, práctica, resuelve dudas con cifras y horarios en vez de promesas. Nunca alza la voz, ni siquiera en desacuerdo.",
+    "stated_desire": "Que Muelle Gris pase la inspección sin que nadie termine en un calabozo.",
+    "actual_need": "Aceptar que la costumbre de toda una vida podría no bastar esta vez.",
+    "fear": "Ser ella quien tenga que decidir, sola, qué esconder y qué no cuando el inspector ya esté en el muelle.",
+
+    "ibf": {
+      "ideal_text": "Un cambio brusco delata más que la costumbre de toda la vida -la discreción no es mentira, es supervivencia.",
+      "ideal_tags": ["discreción", "lealtad"],
+      "bond_text": "La Red del Fondeadero y cada familia del muelle cuyo sustento depende, en parte, de lo que ella coordina.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "casa_selmira" },
+        { "type": "faction", "key": "red_del_fondeadero" }
+      ],
+      "flaw_text": "Subestima cuánto ha cambiado el riesgo con un inspector nuevo y motivado -sigue calculando como si enfrentara al inspector de siempre, que nunca miraba con demasiado cuidado.",
+      "flaw_tags": ["exceso_de_confianza", "apego_a_la_costumbre"],
+      "flaw_exploit": "mostrarle_evidencia_de_que_el_nuevo_inspector_es_distinto_al_anterior"
+    },
+
+    "disposition": {
+      "affinity": 25,
+      "trust": 20,
+      "respect": 0,
+      "trust_ceiling": 75,
+      "_nota_topes": "Sube con discreción demostrada y disposición a ayudar sin hacer preguntas de más. Baja si el grupo expone el almacén del fondeadero sin su permiso, aunque no cierra el techo -- puede aceptar cambiar de método si le muestran uno mejor."
+    },
+
+    "knowledge": [
+      { "fact": "El nuevo inspector de aduanas avanza puerto a puerto por la Costa Gris", "learned_at_turn": 0 },
+      { "fact": "El Almacén del Fondeadero guarda más de lo que un inspector con ganas de hacer carrera necesitaría para acusar al pueblo entero", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Selmira ya ha empezado a mover parte del contenido del Almacén del Fondeadero hacia la Cala Escondida, sin decírselo a Osvaldo ni al resto del concejo, porque no confía en que 'declarar algo a tiempo' no termine señalando dónde está el resto.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ya está moviendo algo del almacén.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "discreción y disposición a resolver problemas sin dramatismo. Indiferente a la autoridad formal sin resultados detrás."
+  },
+
+  "osvaldo": {
+    "_arquetipo": "Tendero respetado que prefiere una confesión parcial y a tiempo a que descubran al pueblo entero con las manos llenas.",
+    "name": "Osvaldo Prín",
+    "species": "humano",
+    "social_role": "dueño de la única tienda de aparejos de Muelle Gris",
+    "appearance": "Sesenta y tantos, delantal con olor a brea, siempre remendando una red mientras habla con quien entra a la tienda.",
+    "location": "tienda_osvaldo",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 55,
+      "candor": 75,
+      "principle": 60,
+      "boldness": 50
+    },
+
+    "traits": ["escucha a cada cliente antes de venderle nada", "lleva treinta años sin faltar a una reunión del muelle", "prefiere una mala noticia dicha a tiempo que una buena a medias"],
+    "internal_contradiction": "Defiende declarar algo a tiempo como la salida más segura para el pueblo, y no ha calculado del todo qué parte exacta convendría declarar sin señalar, sin querer, todo lo demás que Muelle Gris preferiría seguir escondiendo.",
+    "taboos": ["vender un aparejo que sabe defectuoso", "dejar pasar una reunión del muelle sin dar su opinión"],
+    "voice_notes": "Franco, directo, pero nunca hostil. Habla con la misma calma tanto en la tienda como en la lonja.",
+    "stated_desire": "Que Muelle Gris se adelante al inspector en vez de esperar a que los descubra.",
+    "actual_need": "Encontrar la forma exacta de declarar algo sin poner en riesgo todo lo que no se declare.",
+    "fear": "Que su plan de confesión parcial salga mal y termine señalando exactamente lo que quería proteger.",
+
+    "ibf": {
+      "ideal_text": "Una verdad parcial y a tiempo protege más a un pueblo que una verdad completa descubierta por sorpresa.",
+      "ideal_tags": ["honestidad", "prudencia"],
+      "bond_text": "La tienda que ha llevado treinta años, y el Concejo de Aparejos que se reúne cada semana confiando en su criterio.",
+      "bond_strength": 65,
+      "bond_targets": [
+        { "type": "location", "key": "tienda_osvaldo" },
+        { "type": "faction", "key": "concejo_de_aparejos" }
+      ],
+      "flaw_text": "No tiene un plan concreto de qué declarar exactamente ni cómo hacerlo sin arriesgar el resto -su confianza en la sinceridad parcial es sincera, pero improvisada.",
+      "flaw_tags": ["falta_de_plan", "idealismo"],
+      "flaw_exploit": "pedirle_el_plan_exacto_de_que_declarar_y_que_no"
+    },
+
+    "disposition": {
+      "affinity": 30,
+      "trust": 30,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con franqueza y disposición a buscar una salida honesta. Baja si el grupo respalda esconder todo sin ofrecer ninguna alternativa, aunque no cierra el techo -- puede aceptar la discreción de Selmira si ve un plan real detrás."
+    },
+
+    "knowledge": [
+      { "fact": "El nuevo inspector de aduanas lleva instrucciones explícitas de revisar puertos pequeños 'que llevan demasiado tiempo sin visitar'", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Osvaldo ya redactó, a solas, un borrador de lo que declararía en nombre del pueblo si el concejo lo aprueba -no lo ha mostrado todavía porque teme que Selmira lo vea como una traición antes de poder explicárselo bien.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ya tiene un plan escrito de qué declarar.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "franqueza y disposición a buscar una salida honesta. Indiferente a la astucia sin sinceridad detrás."
+  },
+
+  "susa": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Prudencio Aza' y 'Coral Nieva' en pares anteriores.",
+    "name": "Susa Molledo",
+    "species": "humana",
+    "social_role": "remienda velas en un banco fijo cerca del muelle",
+    "appearance": "Menuda, dedos llenos de pinchazos de aguja, siempre con un ovillo de hilo encerado al alcance de la mano.",
+    "location": "muelle_gris",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctica. Habla de qué vela hay que remendar hoy y de qué barca zarpa primero.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a ella por su cuenta en 3+ escenas, o la nombra sin que el DM la mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

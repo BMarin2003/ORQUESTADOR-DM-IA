@@ -1,0 +1,20 @@
+[ 1/6] par01 G1: 1400 turnos en   0.6s
+[ 1/6] par01 G2: 1400 turnos en   1.0s
+[ 2/6] par02 G1: 1400 turnos en   0.7s
+[ 2/6] par02 G2: 1400 turnos en   0.9s
+[ 3/6] par03 G1: 1400 turnos en   0.5s
+[ 3/6] par03 G2: 1400 turnos en   0.7s
+[ 4/6] par04 G1: 1400 turnos en   0.6s
+[ 4/6] par04 G2: 1400 turnos en   0.7s
+[ 5/6] par05 G1: 1400 turnos en   0.7s
+[ 5/6] par05 G2: 1400 turnos en   0.6s
+[ 6/6] par06 G1: 1400 turnos en   0.6s
+[ 6/6] par06 G2: 1400 turnos en   0.8s
+
+FIDELIDAD (crudo recalculado vs guardado) y efecto de normalizar:
+  cr1_veredicto_contradice_narracion|G1                n=  8400 crudo≠v1=    0 v1+=   65 v2+=    9 (1→0: 56, 0→1: 0)
+  cl2_pnj_inactivo_actua|G1                            n=  8400 crudo≠v1=    0 v1+=  390 v2+=  388 (1→0: 2, 0→1: 0)
+  cr1_veredicto_contradice_narracion|G2                n=  8400 crudo≠v1=    0 v1+=   14 v2+=   14 (1→0: 0, 0→1: 0)
+  cl2_pnj_inactivo_actua|G2                            n=  8400 crudo≠v1=    0 v1+=   50 v2+=   50 (1→0: 0, 0→1: 0)
+
+8 s

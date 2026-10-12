@@ -1,0 +1,106 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 23 (real) · G2 (Monolítico) · Sal Negra · monolithic
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        0 (  0.0%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                   14 (  1.0%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             10 (  0.7%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.179  [0.085, 0.325]
+    qn1_ttr                                n=1400  prom=0.720  [0.600, 0.869]
+    qn1_ngram_repeticion                   n=1400  prom=0.020  [0.000, 0.078]
+    qn1_legibilidad_fh                     n=1400  prom=59.905  [38.290, 87.910]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.161  [0.000, 1.000]
+  CR-2 turnos con algún nombre no reconocido: 46
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  134 visitas distintas · 13 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: Anexo del ala este ↔ Cavidad bajo el páramo ↔ Cámara circular de piedra porosa ↔ Estructura de cristal opaco ↔ Hueco del techo ↔ La Casa de los Pardo ↔ Obelisco oscuro ↔ Oficina del capataz ↔ Sal Negra ↔ abertura estrecha y oscura ↔ pasillo estrecho y asfixiante ↔ pozo estrecho y húmedo ↔ trampilla de hierro oxidado (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1165 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: Anexo del ala este, Cavidad bajo el páramo, Estructura de cristal opaco, La Casa de los Pardo, La Sala del Tribunal, Las Salinas del Norte, Oficina del capataz, Sal Negra, abertura estrecha y oscura
+    turno 1: Anexo del ala este, La Casa de los Pardo, Las Salinas del Norte, Sal Negra
+    turno 3: Anexo del ala este, Cavidad bajo el páramo, La Casa de los Pardo
+    turno 5: Anexo del ala este, La Casa de los Pardo
+    turno 7: Anexo del ala este, Cámara circular de piedra porosa, La Casa de los Pardo
+  camino (primeras y últimas visitas):
+    turno   2 → La Casa de los Pardo
+    turno   6 → Anexo del ala este
+    turno  18 → La Casa de los Pardo
+    ...
+    turno 1369 → Cavidad bajo el páramo
+    turno 1373 → Anexo del ala este
+    turno 1384 → Cavidad bajo el páramo
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  Las Familias de los Muertos disparó en turno 260 · ✓ reconocido en turno 261
+    agenda: Se cumple el plazo de la ley para abrir el juicio y las familias exigen que el Tribunal empiece antes de que el duelo se haga insoportable
+  El Gremio de Salineros disparó en turno 640 · ✓ reconocido en turno 641
+    agenda: El Gremio presiona al Tribunal para cerrar el caso antes de que nadie investigue las galerías
+  Las Familias de los Muertos disparó en turno 980 · ✓ reconocido en turno 981
+    agenda: Llega el Día de la Sal, la fecha límite para dictar sentencia antes de que termine la estación
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 0.167  (sobre 10 secciones; máximo teórico = 4.5)
+    Vardos: Ci=0.0  (primera mención sección 0, última sección 0)
+    Guardián del Peso: Ci=0.5  (primera mención sección 7, última sección 8)
+    Elian: Ci=0.0  (primera mención sección 0, última sección 0)
+  V promedio = 0.084  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Vardos: Vi=0.108  (167 atributos propios detectados)
+    Guardián del Peso: Vi=0.0  (79 atributos propios detectados)
+    Elian: Vi=0.143  (7 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=0.286  (2/7)
+  recall global: 0.286  (7 deltas evaluables)
+  5 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  781 · Cefalópodo mecánico · npc.status=dead
+    turno 1111 · Guardián del Peso · npc.status=dead
+    turno 1125 · Criatura del ancla · npc.status=dead
+    turno 1137 · Cefalópodo mecánico · npc.status=dead
+    turno 1174 · Criatura del ancla · npc.status=dead
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.998  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.999  (min 0.979, max 1.000, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.018  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  14 turno(s) marcados en vivo. Reclasificación:
+    sujeto de una acción (repite el hallazgo crudo): 0 (0.0%)
+    solo mencionado/referenciado (posible falso positivo): 14 (100.0%)
+
+==========================================================================
+

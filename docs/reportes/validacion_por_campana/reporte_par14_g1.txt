@@ -1,0 +1,110 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 14 (real) · G1 (Multiagente) · Roble Cantor · mas
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion       14 (  1.0%)
+    qn2_pj_piensa_narrado                     1 (  0.1%)
+    cl2_pnj_inactivo_actua                  191 ( 13.6%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             41 (  2.9%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.207  [0.133, 0.346]
+    qn1_ttr                                n=1400  prom=0.692  [0.581, 0.811]
+    qn1_ngram_repeticion                   n=1400  prom=0.027  [0.000, 0.096]
+    qn1_legibilidad_fh                     n=1400  prom=61.360  [44.490, 78.270]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.286  [0.000, 0.867]
+  CR-2 turnos con algún nombre no reconocido: 1400
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  25 visitas distintas · 5 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: El Taller donde se vio por última vez la Voz del Roble ↔ Sendero de los Susurros ↔ compartimento oculto ↔ pasillo de piedra ↔ valle de bruma perpetua (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1268 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: El Taller donde se vio por última vez la Voz del Roble, Las Raíces del Roble, Roble Cantor, Sendero de los Susurros
+    turno 1: El Taller donde se vio por última vez la Voz del Roble, Roble Cantor, Sendero de los Susurros
+    turno 2: El Taller donde se vio por última vez la Voz del Roble, Sendero de los Susurros, almacén antiguo
+    turno 3: El Taller donde se vio por última vez la Voz del Roble, Sendero de los Susurros, almacén antiguo
+    turno 4: El Taller donde se vio por última vez la Voz del Roble, Sendero de los Susurros, almacén antiguo, pasillo de piedra
+  camino (primeras y últimas visitas):
+    turno  34 → El Taller donde se vio por última vez la Voz del Roble
+    turno  38 → Sendero de los Susurros
+    turno  41 → El Taller donde se vio por última vez la Voz del Roble
+    ...
+    turno 1313 → El Taller donde se vio por última vez la Voz del Roble
+    turno 1382 → compartimento oculto
+    turno 1390 → El Taller donde se vio por última vez la Voz del Roble
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  ningún reloj ha disparado todavía en esta campaña
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 3.0  (sobre 10 secciones; máximo teórico = 4.5)
+    Valerius: Ci=1.0  (primera mención sección 0, última sección 2)
+    Melida Corcho: Ci=4.5  (primera mención sección 0, última sección 9)
+    Kestra: Ci=3.5  (primera mención sección 2, última sección 9)
+  V promedio = 0.061  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Valerius: Vi=0.084  (864 atributos propios detectados)
+    Melida Corcho: Vi=0.05  (463 atributos propios detectados)
+    Kestra: Vi=0.049  (185 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=1.000  (1/1)
+    npc.affinity     recall=0.125  (1/8)
+  recall global: 0.222  (9 deltas evaluables)
+  7 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  185 · Valerius · npc.affinity=wary
+    turno  355 · Melida Corcho · npc.affinity=devoted
+    turno  399 · Melida Corcho · npc.affinity=loyal
+    turno  515 · Melida Corcho · npc.affinity=devoted
+    turno  549 · Melida Corcho · npc.affinity=loyal
+    turno 1145 · Melida Corcho · npc.affinity=loyal
+    turno 1147 · Melida Corcho · npc.affinity=devoted
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.998  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.988  (min 0.966, max 0.997, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.047  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  191 turno(s) marcados en vivo. Reclasificación:
+    sujeto de una acción (repite el hallazgo crudo): 201 (105.2%)
+    solo mencionado/referenciado (posible falso positivo): 229 (119.9%)
+  muestra de 'actuando' (spot-check manual recomendado antes de citar en la tesis):
+    turno  116 · Valerius: «Valerius desciende con una calma inquietante, sin hacer el menor gesto por ayudar, observando la escena desde arriba.»
+    turno  117 · Valerius: «Valerius permanece inmóvil, observando el esfuerzo con una mirada desapasionada y sin hacer el menor gesto por ofrecer la mano.»
+    turno  118 · Valerius: «Valerius ladea ligeramente la cabeza, observando el escrutinio del entorno con una indiferencia clínica, sin moverse de su sitio.»
+    turno  119 · Valerius: «Valerius observa la escena con una mirada neutra, sin hacer el menor gesto para ayudar y manteniendo los brazos relajados.»
+    turno  120 · Valerius: «Valerius permanece inmóvil, observando el éxito de la maniobra con un ligero arqueo de cejas, aunque mantiene el silencio y no altera su postura relajada.»
+
+==========================================================================
+

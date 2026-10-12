@@ -14,7 +14,7 @@ Por qué reutilizar tenant_id/user_id en vez de crear otro tenant nuevo:
   el razonamiento original.
 
 Uso:
-    python crear_campana_real_g1.py <tenant_id> <user_id> [titulo] [corpus_filename] [world_tone]
+    python crear_campana_real_g1.py <tenant_id> <user_id> [titulo] [corpus_filename] [world_tone] [party_register]
 Imprime el UUID de la campaña nueva. Después hay que sembrar su mundo
 (sembrar_mundo_real.py, world es independiente por campaña -- G1 y G2 no
 comparten NPCs/lugares/facciones, cada brazo evoluciona su propia copia)
@@ -52,6 +52,8 @@ def main():
     titulo = sys.argv[3] if len(sys.argv) > 3 else TITULO_DEFECTO
     CORPUS = RAIZ / "corpus" / (sys.argv[4] if len(sys.argv) > 4 else CORPUS_DEFECTO)
     world_tone = sys.argv[5] if len(sys.argv) > 5 else WORLD_TONE_DEFECTO
+    # Par 18+: registro configurable (serious|mixed|comedic); debe coincidir con el de G2.
+    registro = sys.argv[6] if len(sys.argv) > 6 else "mixed"
 
     if not CORPUS.exists():
         sys.exit(f"No encuentro el corpus en {CORPUS}")
@@ -70,9 +72,9 @@ def main():
                       world_tone, party_register, rules_visibility,
                       content_boundaries)
                    VALUES (%s, %s, %s, 'mas', 'adventure',
-                           %s, 'mixed', 50, %s)
+                           %s, %s, 50, %s)
                    RETURNING id""",
-                (tenant_id, user_id, titulo, world_tone,
+                (tenant_id, user_id, titulo, world_tone, registro,
                  json.dumps(CONTENT_BOUNDARIES)))
             campaign_id = cur.fetchone()[0]
 

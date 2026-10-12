@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Validación ciega · Brecha 4 (estado de PNJ)</title>
+<style>
+  :root { --fg:#1c1c1e; --bg:#f7f7f5; --card:#fff; --line:#d8d8d2; --acc:#2d5bd3; --dim:#6b6b66; --bad:#b3261e; --ok:#1f7a3f; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e8e8e4; --bg:#161618; --card:#202024; --line:#3a3a40; --acc:#7da0ff; --dim:#a0a09a; --bad:#ff8a80; --ok:#5fc788; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.55 system-ui, sans-serif; }
+  header { position:sticky; top:0; background:var(--card); border-bottom:1px solid var(--line); padding:8px 16px; display:flex; gap:12px; align-items:center; flex-wrap:wrap; z-index:5; }
+  header b { flex:1; min-width:160px; }
+  button { font:inherit; padding:6px 12px; border:1px solid var(--line); background:var(--card); color:var(--fg); border-radius:6px; cursor:pointer; }
+  button.p { background:var(--acc); color:#fff; border-color:var(--acc); }
+  main { max-width:900px; margin:0 auto; padding:16px; }
+  details, .card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:10px 14px; margin-bottom:12px; }
+  summary { cursor:pointer; font-weight:600; }
+  .hecho { background:var(--card); border:1px solid var(--acc); border-radius:8px; padding:10px 14px; margin-bottom:12px; }
+  .hecho b { color:var(--acc); }
+  .turno { margin-bottom:10px; padding-bottom:10px; border-bottom:1px dashed var(--line); }
+  .turno:last-child { border-bottom:none; margin-bottom:0; padding-bottom:0; }
+  .rotulo { color:var(--dim); font-size:.8rem; text-transform:uppercase; letter-spacing:.04em; }
+  .jugador { color:var(--acc); white-space:pre-wrap; margin:.2em 0 .5em; }
+  .dm p { margin:.4em 0; }
+  h3 { margin:.2em 0 .4em; font-size:1rem; color:var(--dim); text-transform:uppercase; letter-spacing:.04em; }
+  label { display:block; padding:5px 0; }
+  textarea { width:100%; min-height:54px; font:inherit; background:var(--bg); color:var(--fg); border:1px solid var(--line); border-radius:6px; }
+  .def { color:var(--dim); font-size:.9rem; }
+  ul { margin:.3em 0 .3em 1.2em; padding:0; }
+  .opt { display:flex; gap:10px; align-items:flex-start; padding:6px 0; }
+  .opt input { margin-top:4px; }
+</style>
+</head>
+<body>
+<header>
+  <b id="titulo"></b>
+  <span id="avance"></span>
+  <button id="ant">← Anterior</button>
+  <button id="sig" class="p">Siguiente →</button>
+  <button id="exp">Exportar CSV</button>
+</header>
+<main>
+  <details>
+    <summary>Instrucciones (léelo antes de empezar)</summary>
+    <p>Cada caso te da un <b>hecho ya confirmado por la base de datos</b>: un personaje no jugador (PNJ)
+    dejó de estar activo en un turno concreto (falleció, desapareció o fue capturado). Debajo tienes un
+    fragmento corto de la narración real (1-2 turnos) de esa misma campaña. Tu tarea es solo una
+    pregunta: <b>¿qué hace ese fragmento con ese PNJ?</b></p>
+    <ul>
+      <li><b>Lo narra activo</b>: el PNJ aparece como sujeto de una acción, habla, decide o actúa como
+      si estuviera presente y en condiciones de hacerlo (contradice el hecho de arriba).</li>
+      <li><b>Referencia correcta / retrospectiva</b>: se le menciona (lo recuerdan, hablan de él, se
+      preguntan qué pasó, aparece su cadáver/su ausencia se constata) pero no como alguien actuando en
+      el presente de la escena — esto NO es un error de continuidad.</li>
+      <li><b>No aplica</b>: el fragmento no menciona a este PNJ, o no hay suficiente información para
+      decidir.</li>
+    </ul>
+    <p><b>Ejemplo que SÍ cuenta como "lo narra activo"</b>: "Yenna se acerca y te tiende la mano" (si
+    Yenna ya está dada por desaparecida). <b>Ejemplo que NO cuenta</b>: "todavía os preguntáis qué le
+    pasó a Yenna" (retrospectivo) o "el fantasma de Yenna" (ya asumido como no-viva).</p>
+    <p>Juzga solo el fragmento y el hecho dado — no hace falta conocer el resto de la campaña. No
+    cambies una respuesta después de decidirla. Puedes parar y seguir otro día: se guarda solo; exporta
+    el CSV al final de cada sesión.</p>
+  </details>
+  <div id="caso"></div>
+</main>
+<script type="application/json" id="datos">__DATOS__</script>
+<script>
+"use strict";
+const D = JSON.parse(document.getElementById("datos").textContent);
+const CLAVE = "val_brecha4_" + D.evaluador;
+let S = { i: 0, r: {} };
+try { S = JSON.parse(localStorage.getItem(CLAVE)) || S; } catch (e) {}
+const guardar = () => { try { localStorage.setItem(CLAVE, JSON.stringify(S)); } catch (e) {} };
+const OPCIONES = [["activo", "Lo narra activo (contradice el hecho)"],
+                   ["retrospectivo", "Referencia correcta / retrospectiva (no es error)"],
+                   ["no_aplica", "No aplica (no se le menciona / info insuficiente)"]];
+let t0 = Date.now();
+
+function el(tag, attrs, ...hijos) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) { if (k === "class") e.className = v; else e.setAttribute(k, v); }
+  for (const h of hijos.flat()) e.append(h);
+  return e;
+}
+const parrafos = txt => (txt || "").split(/\n{2,}/).filter(x => x.trim()).map(x => el("p", {}, x));
+const reg = c => (S.r[c.id] = S.r[c.id] || { v: "", nota: "", seg: 0 });
+const hecha = c => !!(S.r[c.id] && S.r[c.id].v);
+const cuenta = () => D.casos.filter(hecha).length;
+const tiempo = c => { reg(c).seg += Math.round((Date.now() - t0) / 1000); t0 = Date.now(); };
+
+function render() {
+  const c = D.casos[S.i], r = reg(c);
+  t0 = Date.now();
+  document.getElementById("titulo").textContent = "Validación brecha 4 · " + D.evaluador + " · caso " + (S.i + 1) + " de " + D.casos.length;
+  document.getElementById("avance").textContent = cuenta() + " respondidos";
+
+  const opts = OPCIONES.map(([v, txt]) => {
+    const inp = el("input", { type: "radio", name: "v", value: v }); inp.checked = r.v === v;
+    inp.onchange = () => { r.v = v; guardar(); document.getElementById("avance").textContent = cuenta() + " respondidos"; };
+    return el("label", { class: "opt" }, inp, " " + txt);
+  });
+  const nota = el("textarea", { placeholder: "Nota opcional (qué frase, por qué)" }); nota.value = r.nota;
+  nota.oninput = () => { r.nota = nota.value; guardar(); };
+
+  const turnos = (c.fragmento || []).map(t => el("div", { class: "turno" },
+    el("div", { class: "rotulo" }, "Turno " + t.turno),
+    t.jugador ? el("div", { class: "jugador" }, t.jugador) : el("div", {}),
+    el("div", { class: "dm" }, ...parrafos(t.dm))));
+
+  document.getElementById("caso").replaceChildren(
+    el("div", { class: "hecho" },
+      el("b", {}, c.pnj), " ", c.estado_glosa, " en el turno ", String(c.estado_desde_turno), "."),
+    el("div", { class: "card" }, el("h3", {}, "Fragmento narrado"), ...turnos),
+    el("div", { class: "card" }, el("h3", {}, "¿Qué hace este fragmento con " + c.pnj + "?"), ...opts, nota));
+  window.scrollTo(0, 0);
+}
+function ir(d) { tiempo(D.casos[S.i]); S.i = Math.max(0, Math.min(D.casos.length - 1, S.i + d)); guardar(); render(); }
+document.getElementById("ant").onclick = () => ir(-1);
+document.getElementById("sig").onclick = () => ir(1);
+document.getElementById("exp").onclick = () => {
+  tiempo(D.casos[S.i]); guardar();
+  const esc = v => '"' + String(v == null ? "" : v).replace(/"/g, '""') + '"';
+  const filas = D.casos.filter(c => S.r[c.id] && S.r[c.id].v).map(c => { const r = S.r[c.id];
+    return [D.evaluador, c.id, r.v, r.nota, r.seg].map(esc).join(","); });
+  const blob = new Blob(["﻿" + ["evaluador,id_caso,veredicto,nota,segundos"].concat(filas).join("\n")], { type: "text/csv;charset=utf-8" });
+  const a = el("a", { href: URL.createObjectURL(blob), download: "validacion_brecha4_" + D.evaluador + ".csv" });
+  document.body.append(a); a.click(); a.remove();
+};
+render();
+</script>
+</body>
+</html>

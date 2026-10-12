@@ -1,0 +1,102 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 15 (real) · G2 (Monolítico) · Solar Viejo · monolithic
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        0 (  0.0%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                    0 (  0.0%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             20 (  1.4%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.172  [0.072, 0.373]
+    qn1_ttr                                n=1400  prom=0.726  [0.598, 0.853]
+    qn1_ngram_repeticion                   n=1400  prom=0.018  [0.000, 0.095]
+    qn1_legibilidad_fh                     n=1400  prom=62.162  [39.980, 82.600]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.159  [0.000, 1.000]
+  CR-2 turnos con algún nombre no reconocido: 60
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  151 visitas distintas · 11 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: Archivos del Distrito Bajo ↔ El Solar ↔ La Casa de Doroteo ↔ La Casa de Herminia ↔ Solar de los Olivos ↔ cripta familiar ↔ cámara circular de piedra bruta ↔ escotilla de metal ↔ estancia oculta ↔ puerta oculta ↔ torre de vigilancia (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1064 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: Archivos del Distrito Bajo, El Solar, La Casa de Doroteo, La Casa de Herminia, Solar Viejo, Solar de los Olivos, cripta familiar, cámara circular de piedra bruta
+    turno 1: La Casa de Doroteo, Solar de los Olivos
+    turno 2: Archivos del Distrito Bajo, La Casa de Doroteo, La Casa de Herminia, Solar de los Olivos
+    turno 3: El Solar, La Casa de Doroteo, La Casa de Herminia, Solar de los Olivos
+    turno 4: Archivos del Distrito Bajo, La Casa de Doroteo, Solar de los Olivos
+  camino (primeras y últimas visitas):
+    turno   5 → La Casa de Doroteo
+    turno  14 → Solar de los Olivos
+    turno  26 → puerta oculta
+    ...
+    turno 1384 → Solar de los Olivos
+    turno 1393 → Archivos del Distrito Bajo
+    turno 1397 → Solar de los Olivos
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  ningún reloj ha disparado todavía en esta campaña
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 1.833  (sobre 10 secciones; máximo teórico = 4.5)
+    Ilvard: Ci=4.5  (primera mención sección 0, última sección 9)
+    Kaelen: Ci=0.0  (primera mención sección 0, última sección 0)
+    Maese Alaric: Ci=1.0  (primera mención sección 0, última sección 2)
+  V promedio = 0.031  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Ilvard: Vi=0.047  (64 atributos propios detectados)
+    Kaelen: Vi=0.047  (43 atributos propios detectados)
+    Maese Alaric: Vi=0.0  (36 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.affinity     recall=0.000  (0/18)
+  recall global: 0.000  (18 deltas evaluables)
+  18 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno   50 · Baldor Enna · npc.affinity=loyal
+    turno  110 · Escribano anónimo · npc.affinity=loyal
+    turno  145 · Kaelen · npc.affinity=loyal
+    turno  153 · Maese Alaric · npc.affinity=loyal
+    turno  271 · Herminia Solar · npc.affinity=devoted
+    turno  396 · Escribano anónimo · npc.affinity=devoted
+    turno  405 · Maese Alaric · npc.affinity=devoted
+    turno  739 · Baldor Enna · npc.affinity=devoted
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.998  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.999  (min 0.961, max 1.000, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.017  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  ningún turno con cl2_pnj_inactivo_actua=true en esta campaña -- nada que reclasificar
+
+==========================================================================
+

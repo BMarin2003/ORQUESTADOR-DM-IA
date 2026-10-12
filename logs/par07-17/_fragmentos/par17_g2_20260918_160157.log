@@ -1,0 +1,3449 @@
+(bitácora en Markdown: C:\BMARIN2003\DEV\proyecto\logs\par_17_real_g2_monolitico_corral_alto_45f450c1_turnos_2-1400_20260918_160201.md)
+
+# VERTICAL SLICE — Par 17 (real) · G2 (Monolítico) · Corral Alto (monolithic)
+
+- **DM:** `google/gemma-4-31B-it`
+- **jugador:** `google/gemma-4-31B-it` (Wynn, desvío 55)
+- **turno:** 2
+
+## Turno 2 — 1/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2112 ms
+
+> "Tarde tranquila, perfecto."
+> Entro en la posada manteniendo un perfil bajo y busco un rincón oscuro donde pueda observar a todos sin ser el centro de atención.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 15+2=17
+
+### [4] DM
+
+  13925 ms
+
+> El interior de la posada es un espacio cálido y cargado, donde el resplandor del hogar proyecta sombras alargadas sobre las paredes de piedra. Te deslizas hacia un rincón apartado, donde la luz de las velas apenas llega y el respaldo de una silla de madera gastada te ofrece un refugio discreto. Desde allí, el murmullo de las conversaciones y el tintineo de las jarras de cerveza crean un ruido blanco que camufla tu presencia.
+> Tus ojos recorren el salón con precisión. Entre el grupo de campesinos que discuten sobre el precio del grano y la posadera que limpia la barra con un trapo gris, distingues a un hombre sentado solo en una mesa circular al fondo. Viste ropas de viaje decentes pero polvorientas y mantiene un libro de cuentas abierto, aunque su mirada no está en los números; observa con una atención gélida y calculada a cada persona que cruza el umbral, anotando algo brevemente en el margen de la página cada vez que alguien nuevo entra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1459 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 3 — 2/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3823 ms
+
+> "Interesante."
+> Me quedo en las sombras, observando al hombre para comprender qué es exactamente lo que anota y cómo reacciona ante los clientes.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 7+2=9
+
+### [4] DM
+
+  19980 ms
+
+> Desde tu rincón, el hombre sigue sumergido en su rutina mecánica. Ves cómo su pluma se desliza sobre el papel con trazos rápidos y precisos, pero la distancia y la tenue luz de las velas hacen que las anotaciones sean simples rayas y garabatos indescifrables. 
+> Cuando un cliente nuevo entra en la posada, el hombre levanta la vista apenas un segundo, con una expresión neutra que no revela ninguna emoción. No hay gestos de reconocimiento ni señales de alarma; simplemente registra la llegada, vuelve a bajar la mirada y escribe una nota breve antes de regresar a su estado de vigilancia gélida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1788 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 4 — 3/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2326 ms
+
+> "Buenas noches."
+> Me acerco lentamente hacia el hombre, fingiendo buscar una mesa libre, mientras intento echar un vistazo más cercano a lo que escribe.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+2=8
+
+### [4] DM
+
+  6462 ms
+
+> El hombre ni siquiera levanta la vista cuando te aproximas; el rasgueo de la pluma contra el pergamino es el único sonido que emana de su postura rígida. A medida que acortas la distancia, intentando captar el sentido de sus anotaciones, el ángulo de la luz y la velocidad de sus trazos juegan en tu contra. 
+> Lo que alcanzas a ver son columnas de nombres y símbolos repetitivos, pero el papel está ligeramente inclinado y el hombre mantiene el codo colocado de tal forma que bloquea cualquier lectura clara. Solo percibes manchas de tinta negra y una caligrafía apretada, casi críptica, que se vuelve borrosa en cuanto intentas enfocar un punto concreto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2076 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 5 — 4/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4006 ms
+
+> "Lindo trabajo. Parece un código más que una lista."
+> Me quedo un paso más atrás, observando sus gestos y la frecuencia de sus trazos para intentar descifrar el patrón.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 13+2=15
+
+### [4] DM
+
+  7553 ms
+
+> El hombre se tensa visiblemente ante tu comentario, pero no deja de escribir. Solo cuando termina una línea, deposita la pluma con una lentitud deliberada y levanta la mirada. Sus ojos son pequeños y gélidos, enmarcados por unas gafas que deforman ligeramente su expresión, dándole un aire de insecto observador.
+> Mientras analizas sus movimientos, notas que el hombre no escribe de forma lineal. Sus trazos siguen un ritmo sincopado: tres nombres rápidos, una pausa para consultar un pequeño reloj de bolsillo y un símbolo circular que repite cada cinco entradas. No es un código complejo, sino un registro de tiempos y frecuencias; alguien está midiendo la puntualidad o la recurrencia de las personas listadas en ese pergamino.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1304 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 6 — 5/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4147 ms
+
+> "Parece que llevas un control muy meticuloso de tus visitas."
+> Me acerco un paso más, intentando vislumbrar los nombres del pergamino sin que se dé cuenta.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 11+2=13
+
+### [4] DM
+
+  10058 ms
+
+> El hombre desliza el pergamino hacia el centro de la mesa con un movimiento seco, ocultando la mayor parte de la lista bajo el borde de un pesado libro de cuero. Sus dedos, manchados de tinta, se cierran sobre el papel como garras, protegiendo el contenido de cualquier mirada indiscreta. El aire entre vosotros se vuelve denso, cargado de una hostilidad silenciosa y calculada.
+> —La meticulosidad es la única barrera contra el caos, forastero —responde con una voz rasposa y monocorde, sin apartar sus ojos gélidos de los tuyos—. Algunos llamamos a esto gestión; otros, simplemente, orden.
+> Al intentar vislumbrar los nombres, solo alcanzas a distinguir algunas letras cursivas y apretadas que se desvanecen bajo el libro. Logras leer claramente un nombre repetido en el margen izquierdo: "Santi", seguido de una anotación numérica que parece indicar una hora exacta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1359 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 7 — 6/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2903 ms
+
+> "El orden es una cuestión de perspectiva. Para algunos, es solo una lista de espera."
+> Sigo mirando la hoja, intentando descifrar el resto de los nombres o el significado de esa cifra numérica junto a Santi.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+1=2  PIFIA
+
+### [4] DM
+
+  7920 ms
+
+> El hombre suelta un bufido seco, casi un gruñido, ante tu comentario. Al inclinarte con insistencia para descifrar el papel, tu brazo choca torpemente contra el pesado libro de cuero. El impacto desplaza el tomo bruscamente, haciendo que el pergamino salga disparado hacia el suelo y que una mancha de tinta fresca, que aún reposaba sobre la mesa, salpique violentamente la hoja y tu propia manga.
+> El hombre se levanta de golpe, su silla chirriando contra el suelo con un ruido estridente. Sus ojos gélidos se clavan en la mancha negra que ahora borra irremediablemente los nombres y las cifras que intentabas leer.
+> —¡Incompetente! —espeta con una voz que ahora vibra de pura irritación—. Acabas de convertir mi gestión en un borrón. Fuera de mi vista antes de que decida que tu presencia es el caos que debo eliminar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2053 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 8 — 7/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2284 ms
+
+> "Mis disculpas, no ha sido mi intención."
+> Me alejo lentamente, manteniendo la calma, mientras intento observar la reacción del hombre para ver si su ira es genuina o una táctica.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 19+0=19
+
+### [4] DM
+
+  6390 ms
+
+> El hombre no aparta la vista del pergamino manchado, y sus hombros permanecen tensos, elevados hacia las orejas en un gesto de rigidez absoluta. Mientras te retiras, notas que sus dedos tiemblan ligeramente al intentar rescatar el papel del suelo, no por miedo, sino por una frustración genuina y visceral. No hay rastro de cálculo en su mirada ni una pausa táctica en su respiración; su ira es un fuego real, alimentado por la obsesión de un hombre que valora el orden y el registro por encima de la cortesía.
+> Lanza el pergamino sobre la mesa con un golpe seco y se queda allí, de pie, respirando con pesadez. No te sigue con la mirada para comprobar que te vas, sino que se sumerge inmediatamente en el desastre de tinta, murmurando maldiciones entre dientes mientras intenta salvar lo que queda de la información.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1236 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 9 — 8/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2291 ms
+
+> "No te molestes en limpiar el desastre."
+> Me detengo un instante antes de salir, observando el contenido del pergamino desde la distancia para intentar descifrar qué es lo que tanto le obsesiona.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 15+2=17
+
+### [4] DM
+
+  7905 ms
+
+> Desde la distancia, el pergamino se despliega como un mapa de caos. Entre las manchas de tinta que el hombre intenta desesperadamente ignorar, resaltan columnas de nombres escritas con una caligrafía meticulosa y rígida. Son listas de ciudadanos, organizadas por distritos, con anotaciones marginales que parecen marcar preferencias o compromisos.
+> El hombre ni siquiera levanta la cabeza al escuchar tu comentario; solo emite un gruñido ahogado, un sonido gutural de pura irritación, mientras pasa la yema del dedo por una línea de texto que ha quedado parcialmente borrada por el derrame. Su obsesión no es el papel en sí, sino el control exhaustivo sobre esos nombres.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2260 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 10 — 9/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2108 ms
+
+> "Parece que tienes un problema de limpieza."
+> Me acerco con paso ligero para intentar leer los nombres y las anotaciones marginales sin que él se dé cuenta.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 4+4=8
+
+### [4] DM
+
+  6071 ms
+
+> El hombre reacciona con una brusquedad eléctrica. Antes de que puedas acortar la distancia lo suficiente para distinguir una sola letra, lanza un manotazo violento sobre la mesa, aplastando el pergamino contra la madera y cubriéndolo con su torso y sus brazos. El ruido del impacto resuena en la estancia, cortando cualquier intento de aproximación.
+> Lanza una mirada cargada de sospecha y fastidio, entornando los ojos mientras se inclina hacia adelante para proteger sus documentos.
+> —¿Problema de limpieza? —escupe con voz áspera, sin apartar la vista de ti—. El problema es que hay gente que no sabe mantener la distancia. Aléjate. Ahora.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1262 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 11 — 10/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2281 ms
+
+> "Mis disculpas. Solo quería asegurarme de que no hubiera polvo sobre sus precios."
+> Doy un paso atrás lentamente, manteniendo las manos a la vista, mientras trato de analizar su lenguaje corporal para ver qué es exactamente lo que protege con tanto celo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+0=6
+
+### [4] DM
+
+  4317 ms
+
+> El hombre no se relaja. Permanece encorvado sobre la mesa, con los hombros tensos y los nudillos blancos por la presión que ejerce sobre el pergamino. Sus ojos te recorren de arriba abajo con una desconfianza visceral, buscando cualquier señal de engaño en tu expresión, pero su postura es tan cerrada y su actitud tan defensiva que solo logras percibir una barrera de hostilidad.
+> —Limpia el camino hacia la puerta, que es lo único que me interesa ahora —gruñe, sin moverse ni un centímetro, manteniendo el documento sepultado bajo su cuerpo como si fuera un tesoro o una condena.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1543 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 12 — 11/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2289 ms
+
+> "Me encargo. Pero asegúrate de que el pergamino esté intacto cuando salga."
+> Me levanto lentamente y me dirijo hacia la salida, observando los alrededores para detectar cualquier amenaza.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 12+2=14
+
+### [4] DM
+
+  10584 ms
+
+> El hombre suelta un bufido nasal, una mezcla de desprecio y alivio, aunque no aparta la vista del pergamino ni un segundo mientras te alejas. Su respiración es pesada, audible en el silencio tenso de la estancia, y se mantiene encogido, protegiendo el documento con una urgencia casi febril.
+> Al moverte hacia la salida, el entorno se despliega con claridad. La habitación está en relativo orden, pero notas que la puerta principal ha sido ligeramente obstruida por un pesado baúl de madera volcado en el pasillo exterior, lo que dificultaría una huida rápida. Más allá, el eco de unas voces amortiguadas y el rítmico golpeteo de botas sobre la piedra sugieren que hay alguien aproximándose por el corredor, aunque todavía no son visibles.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1281 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 13 — 12/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1633 ms
+
+> "Vaya descuido."
+> Me deslizo rápidamente hacia el baúl volcado para intentar moverlo o apartarlo del camino antes de que lleguen los pasos.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 9+-1=8
+
+### [4] DM
+
+  7745 ms
+
+> Te lanzas hacia el baúl con prisa, pero al intentar empujar la pesada estructura de madera, sientes cómo el mueble se resiste violentamente. El baúl está anclado por su propio peso o quizás por algo que contiene en su interior, y tu esfuerzo solo consigue que la madera chirríe estridentemente contra el suelo de piedra, sin moverse ni un centímetro de su posición.
+> El ruido seco y prolongado resuena en el pasillo justo cuando los pasos se aceleran. Las voces amortiguadas se vuelven nítidas y una exclamación de sorpresa surge desde el corredor, seguida del sonido metálico de alguien que pone la mano sobre el pomo de una espada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1395 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 14 — 13/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1885 ms
+
+> "Maldita sea."
+> Me aparto rápidamente del baúl y busco el rincón más oscuro del pasillo para desaparecer de la vista.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 15+4=19
+
+### [4] DM
+
+  6415 ms
+
+> Te deslizas hacia la penumbra con un movimiento fluido, fundiéndote con las sombras justo antes de que la luz de una antorcha bañe el pasillo. El resplandor anaranjado proyecta sombras alargadas y danzantes sobre las paredes de piedra, pero tú ya eres parte de la oscuridad, reducido a un susurro invisible en el rincón.
+> Un guardia entra en el corredor con la mano crispada sobre la empuñadura de su acero, el rostro contraído en una mueca de sospecha. Mira el baúl, que sigue imperturbable en su sitio, y luego recorre el pasillo con la mirada, entrecerrando los ojos mientras olfatea el aire. Tras unos segundos de silencio tenso, el hombre suelta un bufido de irritación y murmura para sí mismo: «Ratas gordas...».
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1542 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Ratas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 15 — 14/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  11425 ms
+
+> Me quedo inmóvil, esperando a que el guardia se distraiga o se aleje para acercarme al baúl.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 18+4=22
+
+### [4] DM
+
+  5512 ms
+
+> El guardia exhala un suspiro pesado, convencido de que su sospecha no era más que un juego de luces. Da media vuelta y comienza a alejarse, el rítmico y metálico sonido de sus botas contra la piedra desvaneciéndose gradualmente mientras regresa hacia el puesto de guardia. El pasillo vuelve a quedar sumido en una penumbra densa, solo interrumpida por el lejano chisporroteo de alguna antorcha en la estancia contigua.
+> El baúl descansa ahora totalmente expuesto, una mole de madera oscura y herrajes oxidados que parece absorber la poca luz restante. El silencio en el corredor es absoluto, roto únicamente por el goteo distante de alguna filtración en el techo, dejando el camino libre hacia la cerradura.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2723 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: baúl
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item baúl
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 16 — 15/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1795 ms
+
+> Me deslizo hacia el baúl con cuidado, asegurándome de que no quede rastro de mis pasos. Me inclino sobre la cerradura para analizar el mecanismo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+1=3
+
+### [4] DM
+
+  5853 ms
+
+> Te inclinas sobre la cerradura y el metal frío se siente rugoso bajo tus dedos. Al intentar discernir la complejidad del mecanismo, la penumbra del pasillo juega malas pasas con tu vista y el ángulo de la luz es insuficiente; solo logras percibir que se trata de una cerradura de hierro común, pero no consigues detectar ninguna debilidad, truco o particularidad en el mecanismo que te facilite la apertura.
+> El baúl permanece mudo y cerrado, su superficie de madera oscura exhalando un olor a humedad y polvo antiguo que se pega a la garganta. A lo lejos, el eco de las botas del guardia ha desaparecido por completo, dejando el silencio denso y opresivo una vez más.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1499 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 17 — 16/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1325 ms
+
+> "Veamos qué escondes."
+> Saco mis herramientas de ladrón e intento forzar la cerradura.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 5+4=9
+
+### [4] DM
+
+  4662 ms
+
+> El metal de las ganzúas chirría contra el hierro, produciendo un sonido agudo que parece retumbar en el silencio del pasillo. A pesar de tus esfuerzos por manipular los pernos, la cerradura se resiste con una rigidez obstinada; sientes cómo el mecanismo se bloquea firmemente, impidiéndote encontrar el punto de giro necesario para liberar el pestillo.
+> El baúl permanece cerrado, imperturbable, mientras el sudor frío comienza a resbalar por tu nuca. El silencio que antes era tu aliado ahora se siente cargado, como si cualquier movimiento brusco pudiera alertar a alguien en las proximidades.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1033 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 18 — 17/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1685 ms
+
+> "Maldita sea."
+> Suelto un suspiro corto y retiro las ganzúas con cuidado. Me separo del baúl y escucho con atención cualquier sonido en el pasillo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 13+2=15
+
+### [4] DM
+
+  5592 ms
+
+> Te quedas inmóvil, conteniendo la respiración mientras agudizas el oído. El silencio del pasillo es denso, pero tras unos segundos, percibes un sonido rítmico y distante: el eco de unas botas golpeando la madera de las tablas del piso superior. Los pasos se dirigen hacia la escalera, acompañados por el murmullo amortiguado de una conversación que se vuelve más clara a medida que la persona desciende.
+> Una corriente de aire frío recorre el corredor justo antes de que el sonido de los pasos se detenga bruscamente al final del pasillo, donde la luz de una antorcha comienza a proyectar una sombra alargada que avanza lentamente hacia tu posición.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1615 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 19 — 18/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1524 ms
+
+> Me pego a la pared más cercana, buscando cualquier rincón oscuro donde fundirme con las sombras antes de que la luz de la antorcha me alcance.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 5+4=9
+
+### [4] DM
+
+  5133 ms
+
+> La luz de la antorcha baila contra las paredes, proyectando sombras erráticas que se alargan y encogen. Al intentar fundirte con la oscuridad, tu cuerpo roza un soporte de madera que emite un chirrido seco y traicionero, rompiendo la tensión del silencio.
+> Los pasos se detienen en seco. El portador de la antorcha gira la cabeza bruscamente hacia tu posición y levanta la llama, iluminando el rincón donde te encuentras.
+> —¿Quién anda ahí? —pregunta una voz áspera, cargada de sospecha—. ¡Sal de las sombras ahora mismo o llamaré a la guardia!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1261 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 20 — 19/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3647 ms
+
+> "Solo un extraviado que no quiere problemas."
+> Salgo lentamente de las sombras con las manos a la vista, manteniendo una expresión neutra y sumisa.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 1+4=5  PIFIA
+
+### [4] DM
+
+  5560 ms
+
+> El guardia frunce el ceño, sus ojos recorriendo tu postura con un escepticismo inmediato. La luz de la antorcha revela que tu intento de parecer sumiso resulta forzado y poco convincente, casi como una actuación torpe que solo confirma sus peores sospechas. La expresión de sospecha en su rostro se transforma rápidamente en una mueca de desprecio y alerta.
+> —¿Extraviado? No me hagas reír. Tienes pinta de ser un espía o un ladrón que no sabe dónde meterse —escupe el hombre, dando un paso agresivo hacia ti mientras lleva la mano al pomo de su arma—. ¡Tú no te muevas ni un centímetro! ¡Guardia! ¡Tengo a un intruso en el pasillo!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1036 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 21 — 20/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3017 ms
+
+> "Me equivoco de pasillo, no hay necesidad de gritar."
+> Intento deslizarme rápidamente hacia la sombra más cercana para desaparecer de su vista.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 12+4=16
+
+### [4] DM
+
+  5371 ms
+
+> Aprovechas el instante en que el guardia gira la cabeza para gritar y te lanzas hacia el hueco oscuro que deja una columna robusta. Tus pasos son ligeros y precisos, fundiéndote con la penumbra justo antes de que la luz de la antorcha barra el lugar donde estabas hace un segundo.
+> El guardia regresa la vista al punto vacío, parpadeando confundido. Su grito aún resuena en el pasillo, pero ahora su expresión es de pura perplejidad. —¡¿A dónde demonios se ha ido?! —brama, dando un paso torpe hacia adelante mientras busca frenéticamente entre las sombras, sin notar que ya eres parte de ellas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1095 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 22 — 21/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1132 ms
+
+> Me quedo inmóvil, conteniendo la respiración mientras espero a que el guardia se acerque lo suficiente.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 8+4=12
+
+### [4] DM
+
+  5877 ms
+
+> El guardia avanza con paso pesado, el metal de su armadura tintineando con cada movimiento brusco. Se detiene apenas a un par de pasos de tu posición, balanceando la antorcha con impaciencia. La luz anaranjada danza violentamente sobre la piedra, proyectando sombras alargadas que se contraen y expanden, pero el resplandor es insuficiente para penetrar la negrura absoluta del hueco donde te agazapas.
+> —No puede haber desaparecido así como así... —masmulla para sí mismo, con un tono que oscila entre la irritación y el nerviosismo. Se queda allí, inmóvil, olfateando el aire y escudriñando el vacío con los ojos entrecerrados, mientras el calor de la llama y el olor a sebo quemado llegan hasta ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1021 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 23 — 22/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2421 ms
+
+> "Tonto..."
+> Me mantengo inmóvil, aguantando la respiración y esperando a que el guardia se desespere o se mueva.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 15+4=19
+
+### [4] DM
+
+  4487 ms
+
+> El guardia exhala un suspiro cargado de frustración que resuena en el silencio del pasillo. Se queda unos segundos más en una tensión insoportable, pero la oscuridad del hueco se traga cualquier indicio de tu presencia, fundiéndote con la piedra fría y el polvo.
+> —Maldita sea esta luz... —gruñe, dando un paso atrás mientras sacude la antorcha con brusquedad. Sin detectar nada, gira sobre sus talones y comienza a alejarse, el eco de sus botas metálicas perdiendo fuerza a medida que se interna de nuevo en la penumbra del corredor.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  939 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 24 — 23/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1562 ms
+
+> Espero a que el sonido de sus pasos desaparezca por completo. Salgo del hueco con cuidado y me deslizo hacia donde estaba el guardia para registrar si ha dejado caer algo o si hay algún objeto de valor a su alcance.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 15+4=19
+
+### [4] DM
+
+  4534 ms
+
+> El silencio vuelve a reinar en el pasillo, roto únicamente por el goteo distante de alguna filtración. Te deslizas fuera del hueco como una sombra, tus movimientos apenas desplazan el polvo acumulado en el suelo. Al llegar al punto donde el guardia se encontraba, el aire aún conserva el olor acre del humo de la antorcha y el rastro metálico de su armadura.
+> En el suelo, justo donde el hombre sacudió la luz con frustración, yace un pequeño trozo de pergamino amarillento que se ha desprendido de su cinturón. Al lado, apoyado contra la pared fría, hay un soporte de hierro oxidado que el guardia parece haber ignorado en su prisa por marcharse.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3430 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: trozo de pergamino amarillento
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item trozo de pergamino amarillento
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 25 — 24/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2282 ms
+
+> Me acerco al trozo de pergamino y lo recojo con cuidado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+1=2  PIFIA
+
+### [4] DM
+
+  5889 ms
+
+> Al inclinarte para recoger el trozo de pergamino, un movimiento brusco y torpe hace que tu mano golpee el soporte de hierro oxidado. El metal cede con un chirrido estridente que resuena violentamente por todo el pasillo vacío, amplificado por la acústica de la piedra.
+> En el sobresalto, tus dedos aprietan el papel con demasiada fuerza y el pergamino amarillento, ya quebradizo por el tiempo, se rasga en varios pedazos irregulares. El texto, que apenas era legible, queda ahora fragmentado en tiras inútiles de fibra y tinta borrosa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2860 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: item.status
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 26 — 25/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1453 ms
+
+> "Maldita sea."
+> Suelto los restos del papel y me quedo inmóvil, conteniendo la respiración mientras escucho atentamente cualquier ruido que el estruendo haya podido atraer.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 9+2=11
+
+### [4] DM
+
+  4576 ms
+
+> El eco del metal chocando contra el suelo se desvanece lentamente, dejando tras de sí un silencio denso y opresivo. Te quedas congelado, con los oídos atentos a cualquier pisada o voz que emerja de las sombras del pasillo, pero el aire permanece estático y no llega ningún sonido que indique que alguien haya acudido al llamado del ruido.
+> Solo se escucha el goteo rítmico de alguna filtración lejana y el leve siseo del viento colándose por las rendijas de la piedra, que parece burlarse de los jirones de papel esparcidos a tus pies.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1073 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 27 — 26/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1279 ms
+
+> Me agacho lentamente para recoger los papeles del suelo, asegurándome de que no haya dejado ninguna huella evidente.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 14+4=18
+
+### [4] DM
+
+  4328 ms
+
+> Tus movimientos son fluidos y precisos, fundiéndote con las sombras del pasillo mientras desciendes. Recoges los jirones de papel con delicadeza, asegurándote de que el polvo del suelo no quede removido ni la posición de los escombros se altere. 
+> El silencio persiste, imperturbable. No hay pasos apresurados ni el sonido de armaduras acercándose; el pasillo sigue vacío y el aire frío continúa filtrándose por las grietas, dejando que te retires con el botín en la mano sin haber dejado rastro alguno de tu presencia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1248 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 28 — 27/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1032 ms
+
+> Guardo los papeles en mi ropa y me detengo un instante para observar el resto de la zona.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 18+2=20
+
+### [4] DM
+
+  5157 ms
+
+> Tus ojos se adaptan a la penumbra, diseccionando cada ángulo del pasillo con una claridad casi antinatural. Más allá de los escombros que ya has registrado, notas una irregularidad en el panel de madera de la pared derecha: una moldura que no encaja perfectamente con el resto, dejando una rendija milimétrica donde el polvo no se ha asentado. 
+> Al dirigir la mirada hacia el techo, percibes que una de las vigas maestras presenta una ligera inclinación, sugiriendo que el peso de la estructura superior ha cedido parcialmente, creando un hueco oscuro y estrecho que conduce a las entrañas del piso superior, oculto a la vista desde el centro del corredor.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1082 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 29 — 28/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1185 ms
+
+> Me acerco a la pared derecha y paso los dedos por la moldura, buscando algún mecanismo oculto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+1=5
+
+### [4] DM
+
+  3555 ms
+
+> Tus dedos recorren la madera fría y áspera de la moldura, presionando los relieves y buscando cualquier resorte o hendidura que ceda bajo tu tacto. Sin embargo, la superficie se siente sólida y firme; la irregularidad que habías percibido parece ser simplemente el resultado del asentamiento natural de la madera vieja o un descuido en la carpintería original.
+> No encuentras ningún mecanismo, ni siquiera una pequeña muesca que sugiera que ese panel pueda moverse. El pasillo permanece en silencio, y la rendija milimétrica sigue ahí, burlona, sin revelar ningún secreto a pesar de tu inspección.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  757 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 30 — 29/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1713 ms
+
+> "Maldita sea."
+> Me aparto de la pared y me acerco a la rendija para intentar mirar el interior de la habitación con más cuidado.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+2=4
+
+### [4] DM
+
+  4075 ms
+
+> Te pegas a la pared y acercas un ojo a la estrecha abertura, conteniendo la respiración para no delatar tu posición. Sin embargo, el ángulo es insuficiente y la luz del interior es escasa; solo logras distinguir una penumbra densa y el contorno borroso de algunos muebles que no alcanzas a identificar.
+> El espacio detrás de la pared permanece envuelto en el misterio, y el silencio del pasillo se siente ahora más pesado, como si la casa misma estuviera observando tu frustración.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1777 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 31 — 30/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1527 ms
+
+> "Maldita sea."
+> Me separo de la pared y busco otra abertura o alguna grieta en la estructura que me permita ver mejor el interior.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 13+2=15
+
+### [4] DM
+
+  5949 ms
+
+> Recorres la pared con la yema de los dedos, palpando la fría piedra y la madera vieja en busca de cualquier imperfección. Tras unos pasos, encuentras una moldura desprendida donde el papel tapiz se ha rasgado, dejando una rendija vertical ligeramente más ancha que la anterior.
+> Al asomarte, el ángulo es mucho más favorable. A la luz de un candelabro que proyecta sombras alargadas, distingues el interior de un despacho: una mesa de roble cubierta de pergaminos y sellos de lacre, y una silla de respaldo alto que permanece vacía, aunque el cuero aún parece conservar el calor de quien la ocupaba hace instantes.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2398 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 32 — 31/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1679 ms
+
+> "Parece que alguien ha salido con prisa."
+> Me deslizo hacia el interior del despacho con cuidado, buscando cualquier documento que parezca confidencial sobre la mesa.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 15+4=19
+
+### [4] DM
+
+  6747 ms
+
+> Te deslizas por la rendija con la fluidez de una sombra, aterrizando sobre la alfombra raída del despacho sin que el suelo emita el más mínimo crujido. El aire aquí huele a cera caliente, tinta fresca y un rastro persistente de tabaco caro. El silencio de la habitación es absoluto, roto únicamente por el lejano eco de pasos en el pasillo exterior, que se alejan lo suficiente como para dejarte a solas con el desorden de la mesa.
+> Sobre el roble, entre el caos de pergaminos, destaca una carpeta de cuero negro abierta. Un documento escrito con caligrafía apresurada y nerviosa sobresale de ella; el sello de lacre rojo ha sido roto bruscamente, dejando fragmentos de cera sobre el papel. Al lado, una pluma aún húmeda descansa peligrosamente cerca del borde de la mesa, como si hubiera sido soltada en el mismo instante en que alguien escuchó un ruido en la puerta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3017 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: carpeta de cuero negro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item carpeta de cuero negro
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 33 — 32/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2836 ms
+
+> Me acerco a la mesa con cautela y tomo el documento de la carpeta de cuero negro para leerlo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+1=20
+
+### [4] DM
+
+  5684 ms
+
+> Tus dedos rozan el papel, que aún conserva el calor de quien lo escribió. Al desplegar el documento, la caligrafía errática revela una comunicación urgente: se trata de un informe detallado sobre los movimientos de fondos de la Candidatura de Bibiana, con anotaciones al margen que subrayan nombres de donantes clave y fechas de reuniones secretas. El texto indica explícitamente que alguien dentro del círculo íntimo de Bibiana está filtrando información sobre sus estrategias de campaña a favor de Melquíades.
+> En el margen inferior, una posdata escrita con una presión tan fuerte que casi rasga el pergamino advierte: *"El contacto en la Posada del Forastero ha empezado a hacer demasiadas preguntas. Si no lo silenciamos, el rastro llegará hasta nosotros antes de la votación"*.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2429 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = trozo de pergamino amarillento
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3891: Wynn.inventory = trozo de pergamino amarillento
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 34 — 33/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 1067 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1453 ms
+
+> "Esto vale mucho más que un simple papel."
+> Guardo la carta rápidamente en mi ropa y busco cualquier otro documento o objeto de valor que haya podido pasarme por alto en la zona.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 11+1=12
+
+### [4] DM
+
+  4594 ms
+
+> Tus ojos recorren el espacio, escudriñando cada rincón del escritorio y el suelo circundante en busca de algún rastro olvidado. El polvo danza en los haces de luz que entran por la ventana, asentándose sobre la madera vieja y los restos de tinta seca, pero no encuentras nada más que el desorden habitual de una oficina administration: plumas gastadas, tinteros vacíos y montones de folios en blanco que no contienen ninguna anotación relevante.
+> La habitación permanece en un silencio sepulcral, roto únicamente por el lejano bullicio de la ciudad, mientras la carta pesa ahora contra tu cuerpo, siendo el único tesoro tangible en aquel lugar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2534 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = trozo de pergamino amarillento
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3893: Wynn.inventory = trozo de pergamino amarillento
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 35 — 34/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 1067 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1156 ms
+
+> "Demasiado limpio para ser verdad."
+> Sigo revisando el escritorio, pero esta vez busco compartimentos ocultos o falsos fondos en los cajones.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+1=20
+
+### [4] DM
+
+  5228 ms
+
+> Tus dedos recorren las molduras de madera del escritorio, presionando con cuidado cada veta y probando la resistencia de las juntas. Tras un instante de búsqueda meticulosa, notas que el fondo del cajón derecho no encaja perfectamente con el marco; hay una holgura de apenas un milímetro que delata un mecanismo. Al aplicar una presión firme en un nudo natural de la madera, se escucha un clic seco y una placa desliza hacia un lado, revelando un compartimento secreto.
+> En el hueco, resguardado del polvo, descansa un pequeño cuaderno encuadernado en cuero negro y un sello de lacre de plata que no coincide con el de la administración local. El cuaderno está cerrado con una cinta de seda, intacto, esperando a ser abierto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1812 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: cuaderno encuadernado en cuero negro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cuaderno encuadernado en cuero negro
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 36 — 35/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 1067 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1222 ms
+
+> Tomo el cuaderno y el sello de plata con rapidez, guardándolos en mi ropa. Antes de marcharme, reviso el resto del escritorio buscando cualquier otra irregularidad.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+1=9
+
+### [4] DM
+
+  4325 ms
+
+> Tus manos recogen el cuero frío del cuaderno y el metal pesado del sello, ocultándolos rápidamente entre los pliegues de tu ropa. El silencio de la estancia se vuelve más denso mientras vuelves a concentrarte en la superficie del escritorio, deslizando las yemas de los dedos por los bordes y examinando las sombras bajo la madera.
+> El mueble es sólido y funcional; no hay más clics ocultos, ni hojas sueltas, ni rastros de tinta fresca que sugieran otros secretos. El resto de la superficie es madera pulida y vacía, sin más misterios que ofrecer.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3348 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = cuaderno encuadernado en cuero negro
+  ✓ creación item: sello de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item sello de plata
+  → delta 3898: Wynn.inventory = cuaderno encuadernado en cuero negro
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 37 — 36/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 1067 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1687 ms
+
+> "Ya he visto suficiente."
+> Me alejo del escritorio con pasos ligeros, tratando de salir de la estancia sin hacer ruido.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 5+4=9
+
+### [4] DM
+
+  2671 ms
+
+> Tus pasos, que pretendías ligeros, resuenan con una claridad traicionera sobre el suelo de madera. El roce de tu ropa contra el marco de la puerta produce un chirrido seco que corta el silencio de la estancia justo cuando intentas deslizarte hacia el pasillo.
+> Desde el exterior, el sonido de unos pasos apresurados se detiene en seco. Una voz familiar y alerta suena justo detrás de la puerta, seguida del golpe seco de alguien que se frena bruscamente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  889 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 38 — 37/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 1067 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2988 ms
+
+> "Maldita sea."
+> Me pego a la pared junto a la puerta, conteniendo la respiración y buscando cualquier objeto cercano que pueda servir para distraer o atacar.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 5+4=9
+
+### [4] DM
+
+  5323 ms
+
+> La madera cruje bajo tu peso y el roce de tu ropa ha sido demasiado evidente. Al pegarte a la pared, el silencio que sigue es tenso, roto únicamente por el sonido de una respiración agitada al otro lado de la madera. A tu alcance solo hay el vacío del marco de la puerta y la superficie fría de la pared, sin objetos que puedan servir de distracción inmediata.
+> La puerta se abre de golpe con un movimiento brusco. Una figura aparece en el umbral, con los ojos muy abiertos por la sorpresa y el corazón latiendo visiblemente contra el pecho. Al verte allí, congelado contra el muro, la persona retrocede un paso, soltando un jadeo sordo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1029 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 39 — 38/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 1067 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3227 ms
+
+> "Shhh. No grites si quieres conservar la lengua."
+> Le agarro del cuello con fuerza y lo empujo violentamente contra la pared para inmovilizarlo.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 9+2=11
+
+### [4] DM
+
+  4229 ms
+
+> La persona lucha débilmente, soltando un gemido ahogado mientras su espalda choca contra la madera. Sus ojos se llenan de pánico y el aire le falta, pero el agarre no es lo suficientemente firme como para anular su voluntad por completo. En lugar de quedar paralizado por el terror, la figura comienza a forcejear con movimientos erráticos, tratando de zafarse de la presión en su cuello con una mezcla de asfixia y desesperación.
+> —¡Suéltame! —logra articular en un susurro rasposo y agudo, mientras sus manos empujan torpemente tu antebrazo—. ¡No sé quién eres ni qué quieres, pero no me hagas daño!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  979 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 40 — 39/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 1067 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1472 ms
+
+> "Silencio. Si gritas, te mataré antes de que alguien llegue a ayudarte."
+> Presiono con más fuerza el antebrazo contra su cuello para inmovilizarlo y busco con la mano libre cualquier objeto de valor o documento que lleve encima.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 2+4=6
+
+### [4] DM
+
+  4563 ms
+
+> La presión en la garganta se intensifica, cortando el flujo de aire y transformando los gritos en un gorgoteo ahogado. La figura se queda rígida, el pánico reflejado en sus pupilas dilatadas mientras comprende la letalidad de la amenaza. Sus forcejeos se vuelven espasmódicos, pero el miedo al silencio impuesto la mantiene contra la madera.
+> Tus dedos tantean apresuradamente las vestiduras, el cuero y los pliegues de la ropa, pero la búsqueda es torpe y desorganizada. Solo logras rozar la tela basta de su ropa y el frío de algún botón, sin hallar ningún bolsillo evidente, documento o joya que puedas extraer rápidamente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1263 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 41 — 40/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 1067 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1273 ms
+
+> "No me hagas perder el tiempo."
+> Apreto el agarre para silenciarlo definitivamente mientras busco con más calma y precisión cualquier costura oculta o compartimento secreto en sus prendas.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+1=19
+
+### [4] DM
+
+  5656 ms
+
+> El cuerpo bajo tus manos se rinde a la asfixia, los espasmos disminuyen hasta convertirse en un temblor sordo y, finalmente, en una quietud pesada. El silencio vuelve a reinar en el espacio, roto solo por el eco de tu propia respiración.
+> Con la calma que otorga la ausencia de resistencia, tus dedos recorren las costuras del jubón con minuciosidad. En el forro interior del cuello, donde la tela se dobla discretamente, palpas un relieve rectangular y rígido. Desgarras el hilo con un tirón seco y extraes un pequeño pergamino doblado en cuatro, sellado con una gota de cera roja sin insignia, y una llave de hierro sencilla, oxidada en los bordes, que cuelga de un hilo de seda negro cosido al dobladillo interno.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4495 ms · 0 eventos · 2 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = pergamino doblado en cuatro
+  ✓ delta Wynn · character.inventory = llave de hierro sencilla
+  ✓ creación item: llave de hierro sencilla
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item llave de hierro sencilla
+  → delta 3907: Wynn.inventory = pergamino doblado en cuatro
+  → delta 3908: Wynn.inventory = llave de hierro sencilla
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 42 — 41/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 1067 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1423 ms
+
+> "Veamos qué secretos guardas."
+> Guardo la llave en mi bolsillo y despliego el pergamino para leer su contenido. Luego, registro el resto de la ropa del cadáver buscando monedas o joyas.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+1=2  PIFIA
+
+### [4] DM
+
+  5225 ms
+
+> El pergamino se despliega con un crujido seco, revelando una caligrafía apresurada y borrosa que, al intentar leerla, parece bailar ante tus ojos; las manchas de tinta y el desgaste del papel hacen que el mensaje sea un caos indescifrable de trazos sin sentido.
+> Al registrar el cadáver con brusquedad, un movimiento torpe de tu mano engancha el borde de una bolsa oculta en el cinturón. El tirón provoca que la bolsa se abra violentamente, esparciendo el contenido por el suelo polvoriento. Varias monedas de cobre ruedan lejos, deslizándose bajo muebles pesados y grietas del suelo, quedando fuera de tu alcance inmediato mientras el resto del equipaje se mezcla con la suciedad del entorno.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1063 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 43 — 42/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 1067 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2689 ms
+
+> "Maldita sea."
+> Ignoro las monedas que han caído en las grietas y recojo rápidamente lo que ha quedado al alcance. Luego, vuelvo a centrarme en el pergamino, intentando encontrar algún patrón o palabra legible entre las manchas.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+1=20
+
+### [4] DM
+
+  3205 ms
+
+> Tus dedos recogen las pocas monedas que no se han perdido en las sombras del suelo y vuelves a extender el pergamino sobre una superficie plana, forzando la vista y buscando la lógica en el caos de la tinta. Al inclinar el papel bajo la luz, el patrón emerge: no es una caligrafía borrosa, sino un código basado en la superposición de trazos que solo cobra sentido al ignorar las manchas superficiales y seguir el flujo de las líneas más finas.
+> Entre el ruido visual, logras aislar una dirección precisa y un nombre propio que resalta con claridad: "Posada del Forastero". El mensaje, ahora legible, es una instrucción directa para un encuentro secreto que debía ocurrir antes de que el portador terminara su camino en este suelo polvoriento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3408 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.knowledge
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 44 — 43/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 1067 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2512 ms
+
+> "Posada del Forastero... veamos quién esperaba este mensaje."
+> Guardo el pergamino con cuidado y busco cualquier otra pertenencia de valor que el muerto haya podido ocultar entre sus ropas.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+1=19
+
+### [4] DM
+
+  4457 ms
+
+> Tus dedos recorren el forro interior de la chaqueta y las costuras del cinturón del cadáver, palpando con cuidado cada pliegue de la tela. Bajo la solapa izquierda, escondido en un bolsillo secreto cosido a mano, encuentras un pequeño relicario de plata oxidada que se abre con un clic metálico; en su interior no hay una imagen, sino una pequeña llave de hierro con una etiqueta de cuero que lleva grabado un número: el 14.
+> Además, en el fondo de un bolsillo profundo, recuperas una bolsa de cuero gastada que contiene tres gemas de cuarzo ahumado, toscamente talladas, y una nota breve que solo dice: "No llegues tarde, el tiempo es oro y la paciencia de Melquíades es corta".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4780 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = relicario de plata oxidada
+  ✓ creación item: relicario de plata oxidada
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item relicario de plata oxidada
+  → delta 3912: Wynn.inventory = relicario de plata oxidada
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 45 — 44/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  21 entidades · contexto de 647 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1342 ms
+
+> "Melquíades... un nombre curioso."
+> Guardo el relicario y las gemas en mis propios bolsillos. Examino la nota con detenimiento buscando cualquier marca de agua o sello oculto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+1=20
+
+### [4] DM
+
+  3387 ms
+
+> La nota es un trozo de papel común, amarillento y rugoso, pero al sostenerlo contra la luz y pasar los dedos por el relieve, detectas un detalle casi imperceptible. En la esquina inferior derecha, hay un sello seco, una marca de agua prensada que representa una espiga de trigo entrelazada con una balanza; es el emblema oficial de la administración del Valle del Corral, aunque el golpe es tenue, como si hubieran intentado borrarlo parcialmente.
+> Mientras guardas los objetos, el silencio del lugar se ve interrumpido por el sonido de pasos apresurados sobre la grava cercana y el eco de voces que discuten acaloradamente a pocos metros de tu posición.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1255 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 46 — 45/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  20 entidades · contexto de 647 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1869 ms
+
+> "Interesante..."
+> Guardo la nota rápidamente y me deslizo hacia las sombras más cercanas para observar quién llega sin ser visto.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 6+4=10
+
+### [4] DM
+
+  4645 ms
+
+> Te deslizas hacia la penumbra, pero el crujido de una piedra bajo tu bota y la falta de cobertura densa te dejan parcialmente expuesto. Te quedas agazapado, con el corazón latiendo fuerte, justo cuando dos figuras doblan la esquina y entran en tu campo de visión.
+> Uno es un hombre robusto, vestido con un jubón de terciopelo gastado que le aprieta en la cintura; el otro es más delgado, con el rostro pálido y una expresión de pánico absoluto. El robusto lo agarra del brazo con fuerza, sacudiéndolo mientras le grita: «¡Que me lo digas ahora mismo! ¿Quién ha estado manipulando los registros de la administración? ¡Si Bibiana se entera de que los sellos han sido comprometidos, nos colgará a los dos antes del amanecer!».
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  832 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 47 — 46/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1209 ms
+
+> Me mantengo inmóvil en las sombras, escuchando con atención. No intervengo, pero trato de analizar la expresión del hombre pálido para saber si realmente sabe algo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+0=12
+
+### [4] DM
+
+  4238 ms
+
+> El hombre pálido tiembla visiblemente, con los ojos desorbitados y la mirada saltando de un lado a otro, incapaz de sostener el contacto visual con su interlocutor. Sus labios se mueven en un murmullo incoherente y el sudor le surca la frente, reflejando un terror genuino y visceral que parece consumir cada fibra de su cuerpo.
+> El robusto, irritado por la reacción, le propina un sacudón más violento que hace que el otro trastabille. «¡Deja de temblar como un flan y habla, maldita sea!», brama el hombre del terciopelo, mientras su mano se cierra con más fuerza sobre la manga del pálido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  822 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 48 — 47/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1666 ms
+
+> "Tómalo con calma, amigo. Lo asustas más de lo necesario."
+> Me acerco lentamente, manteniendo una distancia prudencial, y observo la reacción del hombre pálido para detectar cualquier patrón en su miedo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+0=4
+
+### [4] DM
+
+  4359 ms
+
+> El hombre pálido reacciona a tu voz con un respingo violento, encogiéndose sobre sí mismo como si el sonido fuera un golpe físico. Sus pupilas están dilatadas y su respiración es errática, un jadeo corto que apenas llena sus pulmones. No hay un patrón reconocible en su pánico; su terror es una masa informe y abrumadora que parece emanar de una fuente que él solo puede ver en su mente.
+> El hombre del terciopelo suelta un bufido de desprecio, aunque afloja ligeramente el agarre, manteniendo al pálido sujeto por la manga. «¿Tómalo con calma? ¡Este imbécil tiene la lengua anudada justo cuando más necesitamos que se suelte!», gruñe, lanzándote una mirada cargada de impaciencia antes de volver a clavar sus ojos en la víctima.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3530 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 49 — 48/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1882 ms
+
+> "Parece que el miedo lo ha dejado vacío. Quizás necesite un incentivo más tangible que los gritos."
+> Me acerco lentamente, observando los gestos del pálido para encontrar un punto débil. {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+0=3
+
+### [4] DM
+
+  5936 ms
+
+> El hombre pálido no reacciona a tu aproximación con palabras ni gestos coherentes; es un cascarón vacío que tiembla rítmicamente. Sus ojos, desorbitados, parecen mirar a través de ti, enfocados en un punto inexistente del aire, y el sudor frío le empapa la frente, mezclándose con el polvo del suelo.
+> El hombre del terciopelo arquea una ceja y te observa con una mezcla de curiosidad y escepticismo. «¿Incentivos?», repite con voz nasal, soltando una risita seca. «Si tienes algún truco para extraer palabras de una piedra, adelante. Pero date prisa, que mi paciencia es más corta que la memoria de este desgraciado».
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  901 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 50 — 49/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1764 ms
+
+> "La paciencia es un lujo que no podemos permitirnos."
+> Me acerco al hombre pálido y empiezo a registrar sus ropas y bolsillos en busca de cualquier nota, amuleto o pista oculta.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+1=5
+
+### [4] DM
+
+  4128 ms
+
+> Tus manos se mueven con torpeza sobre las telas sucias y húmedas del hombre pálido. Entre el temblor rítmico del cuerpo y la falta de precisión en el registro, tus dedos solo encuentran el tacto áspero de la ropa gastada y el frío del sudor. No hay sobres ocultos en los dobladillos ni amuletos escondidos en los bolsillos; solo el vacío de alguien que no posee nada más que su propio delirio.
+> El hombre del terciopelo exhala un suspiro sonoro, cargado de fastidio, y da un paso hacia adelante, haciendo crujir el cuero de sus botas. «Maravilloso. Hemos perdido tiempo buscando tesoros en un trapo sucio», espeta, clavando su mirada escéptica en ti mientras se cruza de brazos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  756 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Maravilloso
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 51 — 50/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1421 ms
+
+> "No busco tesoros, sino respuestas."
+> Me levanto con calma y miro fijamente al hombre del terciopelo, analizando su lenguaje corporal.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+0=9
+
+### [4] DM
+
+  17182 ms
+
+> El hombre del terciopelo mantiene los brazos cruzados, formando una barrera física entre tú y el resto de la estancia. Su postura es rígida, con la barbilla ligeramente elevada y una expresión de superioridad que no flaquea ante tu mirada. 
+> A pesar de su tono condescendiente, no hay señales claras de nerviosismo ni contradicciones evidentes en su actitud; se comporta exactamente como alguien que se siente dueño de la situación y que considera que tu método de investigación es una pérdida de tiempo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  791 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 52 — 51/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1782 ms
+
+> "Toda esa seguridad suele ser la máscara de alguien que oculta algo muy valioso."
+> Me acerco un paso más, invadiendo ligeramente su espacio personal para intentar incomodarlo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+0=9
+
+### [4] DM
+
+  4594 ms
+
+> El hombre del terciopelo no retrocede ni un milímetro. Al contrario, inclina la cabeza hacia atrás, obligándote a mirar hacia arriba para mantener el contacto visual, y deja escapar un suspiro cargado de tedio. Sus hombros permanecen relajados y su respiración es pausada; no hay rastro de sudor en su frente ni un temblor en sus dedos.
+> —La confianza no es una máscara, querido, es un privilegio que se adquiere con el estatus adecuado —responde con una sonrisa gélida, sin que su expresión cambie lo más mínimo ante tu proximidad—. Tu intento de intimidación es tan predecible como tu falta de tacto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1688 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 53 — 52/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1512 ms
+
+> "El estatus es una moneda que se gasta rápido cuando se pierde el control."
+> Me separo lentamente, manteniendo una expresión neutra y analizando sus gestos en busca de cualquier grieta en su compostura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 19+0=19
+
+### [4] DM
+
+  3847 ms
+
+> El hombre del terciopelo mantiene su sonrisa, pero al analizar sus gestos, notas que el ritmo de su respiración se ha vuelto artificialmente lento, como si estuviera forzando la calma. Hay una tensión imperceptible en la comisura de sus labios y un ligero endurecimiento en la mirada que delata que tu comentario ha golpeado un nervio; no ha perdido la compostura, pero el esfuerzo por mantenerla es ahora visible para un ojo atento.
+> Sigue sosteniéndote la mirada, aunque el brillo de superioridad en sus ojos se ha tornado en una chispa de irritación contenida. No hay grietas profundas, pero el muro de arrogancia ha mostrado su primera fisura.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  914 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 54 — 53/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1595 ms
+
+> "Parece que hemos tocado un punto sensible. Eso hace que el precio de mi silencio sea mucho más interesante."
+> Doy un paso hacia él, invadiendo ligeramente su espacio personal para presionar esa fisura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+0=12
+
+### [4] DM
+
+  4415 ms
+
+> El hombre del terciopelo no retrocede, pero sus pupilas se dilatan y un pequeño músculo en su mandíbula comienza a palpitar rítmicamente. Mantiene la sonrisa, aunque ahora es una máscara rígida que no llega a sus ojos, los cuales escanean tu rostro buscando cualquier señal de duda o farol.
+> —El silencio es una mercancía volátil, mi querido amigo —responde con una voz que ha perdido parte de su calidez, volviéndose gélida y afilada—. Pero me gusta la ambición; es un lenguaje que entiendo a la perfección.
+> [La tirada de Perspicacia (12) es insuficiente para detectar alguna debilidad específica o mentira en su respuesta actual; el PNJ mantiene el control de la situación a pesar de su irritación].
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ meta-comentario entre corchetes
+
+### [6] EXTRACTOR
+
+  805 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 55 — 54/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1609 ms
+
+> "Me gusta que hablemos el mismo lenguaje. Entonces hablemos de precios."
+> Sostengo la mirada sin pestañear, manteniendo una expresión neutra mientras busco cualquier objeto de valor que lleve encima.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  5632 ms
+
+> Tus ojos recorren al hombre con una precisión quirúrgica, diseccionando cada pliegue de su atuendo mientras él permanece inmóvil. Bajo el cuello de la camisa de seda, destaca el brillo frío de un sello de oro macizo que cuelga de una cadena fina; es un anillo engarzado con un rubí tallado en gota, cuya talla sugiere una procedencia noble o un costo exorbitante.
+> Además, notas que en el bolsillo interior de su chaqueta de terciopelo asoma la esquina de un cuaderno de cuero negro, sujeto por un cierre de plata, y que el peso de una bolsa de cuero, probablemente llena de moneda, tira ligeramente de su cinturón hacia la derecha. El hombre no se ha percatado de tu escrutinio detallado y sigue esperando, con esa sonrisa gélida, a que pongas una cifra sobre la mesa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3579 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: sello de oro con rubí
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item sello de oro con rubí
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 56 — 55/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1927 ms
+
+> "Hablemos de números, entonces."
+> Sigo manteniendo la mirada en sus ojos mientras deslizo mi mano con cuidado hacia la bolsa de su cinturón.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 9+4=13
+
+### [4] DM
+
+  3514 ms
+
+> El hombre mantiene la sonrisa, aunque sus ojos no dejan de analizarte con una frialdad calculadora mientras esperas que pronuncies la cifra. En el momento en que tus dedos se deslizan hacia el cuero de la bolsa, un movimiento seco y preciso corta el aire: el hombre ha girado la cadera apenas unos centímetros, desplazando el objetivo fuera de tu alcance justo a tiempo.
+> El roce de tu mano contra la tela de su chaqueta es inevitable, y la expresión gélida del sujeto se transforma en una mueca de incredulidad. Su mano enguantada se cierra con fuerza sobre tu muñeca, apretando el agarre mientras te mantiene anclado en el sitio.
+> —Tus modales son tan cuestionables como tu discreción —suelta con una voz que ahora suena como el crujido de un glaciar—. Espero que el precio que propongas justifique este intento de robo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  924 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 57 — 56/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1109 ms
+
+> "Un simple gesto de curiosidad por la calidad de la tela."
+> Intento zafarme de su agarre con un movimiento rápido.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 16+4=20
+
+### [4] DM
+
+  6236 ms
+
+> El movimiento es fluido y eléctrico. Aprovechas la propia fuerza del agarre del hombre para pivotar el cuerpo, deslizando la muñeca con una agilidad que lo deja sujetando el aire. El hombre retrocede un paso, sorprendido por la brusquedad y la eficacia de la maniobra, mientras recupera el equilibrio con un gesto brusco de su chaqueta.
+> Se queda inmóvil un instante, observándote con una mezcla de irritación y un nuevo, aunque tenue, respeto profesional. Sus ojos ya no solo calculan el valor de la transacción, sino también la peligrosidad de quien tiene enfrente.
+> —Curiosidad, ¿eh? —suelta con un tono gélido, aunque ya no intenta recapturarte—. Tienes dedos rápidos y una lengua aún más flexible. Habla ya, antes de que mi curiosidad se centre en cuántos de esos trucos sabes hacer encadenado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1260 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 58 — 57/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1900 ms
+
+> "No hace falta llegar a extremos tan... ruidosos."
+> Me enderezo y le miro fijamente, manteniendo la distancia.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 1+2=3  PIFIA
+
+### [4] DM
+
+  2763 ms
+
+> El hombre suelta una carcajada seca, un sonido carente de humor que resuena en el espacio entre ambos. La tentativa de calmar las aguas con palabras solo parece alimentar su irritación; el gesto de superioridad y la distancia mantenida son interpretados como una insolencia intolerable tras el desplante físico previo.
+> —¿Ruidosos? —espeta, dando un paso agresivo hacia adelante mientras cierra el puño—. Me hablas de ruido mientras me das una lección de etiqueta. Me importa un bledo tu compostura. 
+> Sin previo aviso, lanza un manotazo brusco hacia tu rostro, no para luchar, sino para humillarte con un golpe rápido que te obligue a retroceder o a caer.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1031 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 59 — 58/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1822 ms
+
+> "Te has equivocado de blanco."
+> Intento esquivar el golpe con un movimiento rápido y aprovechar la inercia para sujetar su muñeca con fuerza.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 1+4=5  PIFIA
+
+### [4] DM
+
+  5212 ms
+
+> El intento de esquiva es torpe y desincronizado. En lugar de deslizarte fuera del alcance del golpe, tu cuerpo reacciona con un espasmo errático que te deja totalmente expuesto, tropezando con tus propios pies en el proceso. El manotazo del hombre impacta con plena fuerza y precisión en tu mejilla, el sonido del golpe seco resonando en el aire.
+> La fuerza del impacto te desestabiliza por completo y, al intentar sujetar su muñeca mientras caes, tus dedos solo arañan el aire. Terminas en el suelo, con la cara ardiendo y la vista ligeramente nublada, mientras el hombre permanece de pie sobre ti, mirándote con un desprecio renovado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1003 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 60 — 59/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  7358 ms
+
+> "Maldito seas."
+> Suelto un bufido de dolor y, aprovechando que estoy en el suelo y que él cree que me ha vencido, intento clavar mi daga en su pantorrilla.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 16+4=20
+
+### [4] DM
+
+  6852 ms
+
+> Desde tu posición vulnerable en el suelo, el movimiento es un destello quirúrgico. Mientras el hombre mantiene su postura de superioridad, te deslizas con una agilidad imprevista, transformando la caída en un impulso agresivo. La hoja de la daga muerde profundamente la carne de su pantorrilla, atravesando la tela y hundiéndose en el músculo con un sonido sordo y húmedo.
+> El hombre suelta un alarido agudo que rompe el silencio del lugar. Su expresión de desprecio se transforma instantáneamente en una mueca de shock y agonía mientras pierde el equilibrio, tambaleándose hacia atrás y apoyando el peso sobre su pierna sana para evitar desplomarse sobre ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1024 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 61 — 60/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2079 ms
+
+> "Demasiado ruido para alguien que quería controlarlo todo."
+> Aprovecho su desequilibrio para levantarme rápidamente y trato de arrebatarle cualquier objeto de valor que lleve encima mientras sigue aturdido por el dolor.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 16+4=20
+
+### [4] DM
+
+  5698 ms
+
+> Tus dedos se mueven con una precisión eléctrica, aprovechando que el hombre lucha por no caerse y que su atención está anclada al fuego que arde en su pierna. En un parpadeo, deslizas la mano por su cinturón y el pliegue de su jubón, extrayendo un pesado monedero de cuero grabado y una pequeña llave de hierro oxidado antes de que él pueda siquiera procesar el contacto.
+> El hombre exhala un jadeo ronco, massaging la herida con manos temblorosas, completamente ajeno a que acaba de ser despojado de sus pertenencias. Se tambalea, con la mirada nublada por el dolor, mientras el monedero queda ahora firmemente sujeto en tu mano.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7401 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = monedero de cuero grabado
+  ✓ creación item: monedero de cuero grabado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item monedero de cuero grabado
+  → delta 3954: Wynn.inventory = monedero de cuero grabado
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 62 — 61/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  20 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2192 ms
+
+> "Qué desgracia."
+> Guardo el botín rápidamente y me alejo un paso, fingiendo preocupación mientras observo los alrededores para asegurarme de que nadie haya visto el robo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  10047 ms
+
+> Tus ojos barren la calle con una nitidez asombrosa, captando cada micro-movimiento del entorno. A través del humo y el caos del incidente, notas que los pocos transeúntes se han quedado paralizados por la sorpresa o han desviado la mirada con incomodidad, pero nadie ha fijado su atención en el movimiento fluido de tu mano. El callejón lateral está vacío, salvo por un gato que te observa con curiosidad desde un tejado, y la plaza principal sigue sumida en el bullicio habitual, ajena al pequeño crimen cometido.
+> El hombre herido sigue sollozando, concentrado en el dolor de su pierna, mientras el silencio de los testigos confirma que el robo ha sido invisible para el mundo. No hay guardias en el radio inmediato ni miradas sospechosas; solo el eco de los gritos lejanos y el olor a quemado que flota en el aire.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1613 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 63 — 62/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  7134 ms
+
+> "Lamento mucho lo ocurrido, señor."
+> Me inclino para ayudar al hombre a sostenerse, mientras busco con la otra mano cualquier otro objeto de valor que haya pasado por alto en sus bolsillos.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 4+4=8
+
+### [4] DM
+
+  8722 ms
+
+> El hombre se apoya en ti con un gemido, su cuerpo temblando por la descarga de adrenalina y el dolor. Mientras finges darle soporte, tus dedos se deslizan con rapidez por los pliegues de su ropa, buscando cualquier otro tesoro oculto entre las costuras y los bolsillos.
+> Sin embargo, la agitación de la víctima y la torpeza de sus movimientos al intentar sostenerse hacen que tus dedos tropiecen. No encuentras nada más de valor; solo el roce áspero de un pañuelo sucio y el vacío de unos bolsillos ya exhaustos. El hombre, ajeno a tu segundo intento, cierra los ojos con fuerza y suelta un sollozo ahogado, aferrándose a tu brazo como si fueras su única salvación en medio del caos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1263 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 64 — 63/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  5184 ms
+
+> "Tranquilo, ya ha pasado lo peor."
+> Le aparto con suavidad pero con firmeza para liberarme de su agarre. Me alejo un paso y observo el entorno buscando a alguien que haya visto el incidente.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 15+2=17
+
+### [4] DM
+
+  14316 ms
+
+> El hombre cae de rodillas sobre el empedrado, sollozando mientras se abraza a sí mismo, reducido a un bulto tembloroso y patético que ya no ofrece resistencia. El ruido de la calle comienza a envolverte de nuevo; el bullicio del mercado y el eco de los gritos lejanos diluyen el incidente en la normalidad del caos urbano.
+> Tus ojos escanean la plaza con precisión. A unos metros, una vendedora de hortalizas te observa con el ceño fruncido y los brazos cruzados, sosteniendo una cesta de nabos. No parece haber visto el robo, pero su mirada es inquisitiva, juzgando la escena con una mezcla de sospecha y fastidio por la interrupción del flujo de clientes en su puesto. El resto de los transeúntes pasan de largo, apresurando el paso para evitar el espectáculo del hombre destrozado en el suelo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1847 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 65 — 64/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3282 ms
+
+> "Lamentable."
+> Me acerco al hombre mientras sigue sollozando y busco cualquier otro objeto de valor que haya pasado por alto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  10692 ms
+
+> Tus dedos se deslizan con una eficiencia quirúrgica por los pliegues de la ropa del hombre, aprovechando que sus espasmos y sollozos actúan como la cortina perfecta. No solo recuperas lo que ya sabías que tenía, sino que detectas un relieve rígido oculto en el forro secreto de su cinturón, un compartimento que cualquier buscador descuidado habría pasado por alto.
+> Al extraer el objeto, descubres un pequeño relicario de plata bruñida, grabado con un sello heráldico que denota un linaje antiguo y noble, junto a una nota doblada en miniatura que parece contener una dirección y una hora exacta. El hombre sigue sumido en su miseria, ajeno a que acabas de despojarlo de algo que, por su calidad y el sigilo con que estaba guardado, posee un valor muy superior al simple oro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9645 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = relicario de plata oxidada
+  ✓ creación item: nota doblada en miniatura
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item nota doblada en miniatura
+  → delta 3962: Wynn.inventory = relicario de plata oxidada
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 66 — 65/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3233 ms
+
+> Guardo el relicario y la nota rápidamente en mis propios bolsillos. Me aseguro de que no quede rastro de mi intervención antes de apartarme del hombre.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 7+4=11
+
+### [4] DM
+
+  8328 ms
+
+> Te apartas del hombre con rapidez, pero el movimiento es brusco. Mientras te retiras, el roce de tu ropa contra un objeto cercano o el sonido de tus pasos apresurados rompen la burbuja de caos que te cubría. El hombre, en un instante de lucidez entre sus sollozos, gira la cabeza y clava su mirada empañada en ti, frunciendo el ceño con una expresión de desconcierto y sospecha.
+> El sujeto no dice nada, pero se lleva la mano instintivamente al cinturón, palpando el vacío donde antes descansaba el compartimento secreto. Sus ojos se abren con sorpresa y el llanto se corta en seco, transformándose en un jadeo de pánico mientras comienza a comprender que algo falta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1839 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 67 — 66/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2305 ms
+
+> "No sé de qué hablas, amigo."
+> Sigo caminando sin detenerme, tratando de fundirme con la multitud para ganar distancia.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 18+4=22
+
+### [4] DM
+
+  10793 ms
+
+> Te deslizas entre la gente con una fluidez casi sobrenatural, aprovechando cada hombro que se cruza y cada carro que pasa para romper la línea de visión del hombre. El bullicio del mercado se convierte en tu mejor aliado; el griterío de los mercaderes y el aroma a especias y cuero envuelven tu figura, borrándote del paisaje urbano en cuestión de segundos.
+> Detrás de ti, el jadeo de pánico se transforma en un grito ahogado y confuso, pero para cuando el sujeto intenta reorientarse entre la multitud, ya eres una sombra más en la corriente de personas. El hombre permanece allí, congelado y desorientado, mientras tú te alejas dejando atrás el caos del encuentro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1262 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 68 — 67/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4025 ms
+
+> Me detengo un momento en un callejón oscuro, lejos de la vista del hombre, y reviso los bolsillos del sujeto para ver qué lleva encima.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 4+4=8
+
+### [4] DM
+
+  15214 ms
+
+> Tus dedos se deslizan con rapidez por las costuras de la ropa del hombre, pero la urgencia del momento y la tosquedad de las telas juegan en tu contra. Al intentar extraer el contenido de los bolsillos sin llamar la atención, el tacto es torpe y los objetos se resisten a salir con fluidez.
+> Consigues sacar un pequeño saco de cuero que tintinea levemente, pero en el proceso, el roce brusco contra la tela hace que el hombre se tense y sienta la intrusión. El sujeto suelta un bufido de sorpresa y comienza a palparse frenéticamente la ropa, dándose cuenta al instante de que algo falta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2114 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 69 — 68/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2885 ms
+
+> "Fue un accidente, señor. Se le estaba cayendo."
+> Sigo presionando el saco contra mi cuerpo para ocultarlo mientras intento apartarme con naturalidad.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 2+4=6
+
+### [4] DM
+
+  8067 ms
+
+> El hombre se detiene en seco, con la mano aún clavada en el bolsillo vacío. Te clava una mirada cargada de sospecha, entrecerrando los ojos mientras analiza tu lenguaje corporal y la posición forzada de tu cuerpo para ocultar el botín. No hay rastro de duda en su expresión; el gesto ha sido demasiado torpe para pasar por una casualidad.
+> —¿Se me caía, eh? —escupe con un tono gélido, dando un paso hacia ti y cerrando el espacio personal—. No me tomes por idiota. Devuélveme el saco ahora mismo o te sacaré las respuestas a golpes delante de todo el mundo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2037 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 70 — 69/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4289 ms
+
+> "Tienes una imaginación muy activa. Solo he intentado evitar que perdieras algo valioso."
+> Sigo manteniendo el saco oculto mientras intento analizar su reacción para ver si realmente está dispuesto a montar un escándalo.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 15+4=19
+
+### [4] DM
+
+  13085 ms
+
+> El hombre parpadea, desconcertado por la seguridad de tu tono y la naturalidad de tu respuesta. Su expresión de furia se tambalea, transformándose en una mezcla de duda y confusión mientras procesa tus palabras. El paso agresivo que había dado se detiene, y su cuerpo, antes tenso como una cuerda a punto de romperse, se relaja ligeramente al dudar de su propia percepción.
+> —¿Evitar que...? —balbucea, mirando alternativamente tu rostro y el bolsillo donde sospecha que está el saco. Se rasca la barbilla, visiblemente vacilante, mientras el ruido del mercado sigue fluyendo a su alrededor, ajeno a la tensión. Ahora parece más preocupado por quedar como un loco gritando acusaciones infundadas que por la pérdida inmediata del objeto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1735 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 71 — 70/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3422 ms
+
+> "No te preocupes, amigo. Solo ha sido un malentendido."
+> Le dedico una sonrisa gélida y aprovecho su vacilación para alejarme lentamente, manteniendo la mano sobre el saco.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 16+4=20
+
+### [4] DM
+
+  7620 ms
+
+> El hombre se queda congelado, completamente convencido por la calma de tu sonrisa. Su mirada se nubla, aceptando la explicación sin cuestionarla, y exhala un suspiro de alivio que desinfla sus hombros. Su mente ha descartado la sospecha; ahora solo se siente avergonzado por el arrebato.
+> —Sí... sí, claro. Un malentendido —murmura, evitando el contacto visual mientras se aparta para dejarte paso—. Lo siento. He tenido una mañana agitada.
+> Se queda ahí, parado en medio del bullicio del mercado, mientras tú te deslizas lejos de su alcance con el saco aún seguro bajo tu mano.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1387 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 72 — 71/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4305 ms
+
+> "No hay problema. Que tenga un mejor día."
+> Sigo caminando con paso tranquilo para no atraer miradas, pero mientras me alejo, intento notar si alguien más estaba observando la escena o si el hombre guarda algo valioso en su cinturón.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+2=8
+
+### [4] DM
+
+  11252 ms
+
+> El hombre asiente con un gesto torpe y distraído mientras te ve marchar, sumido en su propio agobio. Te alejas con paso medido, fundiéndote con el flujo de comerciantes y campesinos que llenan la plaza, donde el ruido de los regateos y el olor a cuero curtido y especias dominan el ambiente.
+> Al echar un vistazo rápido a tu alrededor y al cinturón del hombre, no percibes nada fuera de lo común. El sujeto no parece llevar más que una bolsa de tela raída y una llave de hierro oxidada; en cuanto a los testigos, la multitud sigue absorta en sus propios asuntos, ignorando el breve altercado como cualquier otro roce cotidiano del mercado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1746 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 73 — 72/1399 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn

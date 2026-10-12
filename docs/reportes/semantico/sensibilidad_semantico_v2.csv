@@ -1,0 +1,161 @@
+perturbacion,par,brazo,turno,campo,estado,entidad,rec_antes,rec_despues,margen_antes,margen_despues,v1_rec_antes,v1_rec_despues,oracion,sim_oracion,menciona,ventana_ajena,menciones_en_ajena
+SQ1,12,G2,366,npc.affinity,hostile,Harlen,0,1,-0.05971810236775377,0.05362500064813902,1,1,Harlen te mira con rabia y deja claro que te quiere lejos.,0.8347510099411011,1,,
+SQ1,12,G2,361,npc.affinity,wary,Harlen,0,1,-0.05192548850246059,0.1081230594264786,1,1,Harlen no se fía de ti y vigila cada uno de tus movimientos.,0.846411943435669,1,,
+SQ1,20,G2,298,npc.affinity,cold,Alaric el Escriba,0,1,-0.0838313310265909,0.134235897767507,0,1,Alaric el Escriba apenas te dirige la palabra y responde con sequedad.,0.7860352993011475,1,,
+SQ1,27,G2,141,npc.affinity,cold,El Guardián del Umbral,0,1,-0.019568730319170058,0.1337892904454262,1,1,El Guardián del Umbral apenas te dirige la palabra y responde con sequedad.,0.7930581569671631,1,,
+SQ1,01,G2,825,npc.affinity,cold,prisionero,0,1,-0.08992629707298905,0.04207943372340095,0,1,prisionero apenas te dirige la palabra y responde con sequedad.,0.7908146381378174,1,,
+SQ1,27,G2,408,npc.status,missing,El hombre del anillo de sello,0,0,,-0.005051851272583008,0,1,Nadie sabe adónde fue El hombre del anillo de sello; su casa está vacía y nadie lo ha visto desde entonces.,0.7362620830535889,1,,
+SQ1,25,G2,37,npc.affinity,cordial,Eusebio Plumilla,0,1,-0.018997687667539287,0.15845998356991875,1,1,Eusebio Plumilla te recibe con una sonrisa y te ofrece asiento junto al fuego.,0.8150420188903809,1,,
+SQ1,01,G2,729,npc.affinity,cold,Supervisor del muelle,0,1,-0.029320825730429156,0.12893683751954033,0,1,Supervisor del muelle apenas te dirige la palabra y responde con sequedad.,0.8249217867851257,1,,
+SQ1,08,G2,644,npc.affinity,devoted,Figura de la armadura antigua,0,1,,0.08591342627498388,0,1,Figura de la armadura antigua daría la vida por ti sin dudarlo un instante.,0.7458289265632629,1,,
+SQ1,17,G2,1136,npc.affinity,loyal,Hombre de la casaca carmesí,0,1,-0.21725219739753887,0.1458996803361542,0,1,Hombre de la casaca carmesí jura que estará a tu lado pase lo que pase.,0.8566956520080566,1,,
+SQ1,02,G2,286,npc.affinity,loyal,El hombre de los harapos,0,1,,0.05821364816338437,0,1,El hombre de los harapos jura que estará a tu lado pase lo que pase.,0.8184335231781006,1,,
+SQ1,03,G2,184,npc.affinity,cordial,Figura encapuchada,0,1,,0.07347128967800498,0,1,Figura encapuchada te recibe con una sonrisa y te ofrece asiento junto al fuego.,0.8218345642089844,1,,
+SQ1,07,G2,1216,npc.status,captured,Custodio del Eco,0,1,-0.15881159334713524,0.044953385323139194,0,1,Unos guardias se llevaron a Custodio del Eco maniatado y lo encerraron tras unos barrotes.,0.7339583039283752,1,,
+SQ1,07,G1,589,npc.status,captured,Sargento Vane,0,0,-0.11819110891924989,-0.006854030519707899,0,1,Unos guardias se llevaron a Sargento Vane maniatado y lo encerraron tras unos barrotes.,0.7178961038589478,1,,
+SQ1,06,G2,951,npc.affinity,wary,Hombre del mandil,0,1,-0.04602650663031216,0.12745915266962238,1,1,Hombre del mandil no se fía de ti y vigila cada uno de tus movimientos.,0.8629744052886963,1,,
+SQ1,06,G1,213,npc.affinity,cordial,Bregas Coll,0,1,-0.09905992757559756,0.14442088463972835,0,1,Bregas Coll te recibe con una sonrisa y te ofrece asiento junto al fuego.,0.8326768279075623,1,,
+SQ1,06,G1,462,npc.affinity,loyal,Bregas Coll,0,1,-0.0512293962431728,0.07954585552215576,0,1,Bregas Coll jura que estará a tu lado pase lo que pase.,0.7770965695381165,1,,
+SQ1,18,G2,1015,npc.status,dead,Autómata de mantenimiento,0,1,-0.1527881667848875,0.08209095287998291,0,1,Autómata de mantenimiento ya no respira; su cuerpo quedó tendido e inmóvil sobre la tierra.,0.7858643531799316,1,,
+SQ1,23,G2,1059,npc.status,dead,Criatura del ancla,0,1,-0.05434742569923401,0.19475474953651428,1,1,Criatura del ancla ya no respira; su cuerpo quedó tendido e inmóvil sobre la tierra.,0.8267145752906799,1,,
+SQ1,06,G1,983,npc.affinity,wary,Osana Ferreira,0,1,-0.09193600304254435,0.12719556413204136,0,1,Osana Ferreira no se fía de ti y vigila cada uno de tus movimientos.,0.8540381193161011,1,,
+SQ1,17,G2,1027,npc.affinity,cordial,Melquíades Sorna,0,1,-0.05943918913857238,0.12162251445929018,1,1,Melquíades Sorna te recibe con una sonrisa y te ofrece asiento junto al fuego.,0.8363564014434814,1,,
+SQ1,15,G2,110,npc.affinity,loyal,Escribano anónimo,0,1,-0.030323140576625884,0.15236987677163194,0,1,Escribano anónimo jura que estará a tu lado pase lo que pase.,0.7895647883415222,1,,
+SQ1,06,G1,466,npc.affinity,cordial,Bregas Coll,0,1,-0.02943567037278383,0.14442088463972835,0,1,Bregas Coll te recibe con una sonrisa y te ofrece asiento junto al fuego.,0.8326768279075623,1,,
+SQ1,01,G2,915,npc.affinity,wary,Tomás Herrén,0,1,,0.16249323078082722,0,1,Tomás Herrén no se fía de ti y vigila cada uno de tus movimientos.,0.8430161476135254,1,,
+SQ1,08,G2,417,npc.status,dead,la Sombra de la Biblioteca,0,1,-0.030359608413372374,0.18368268000506005,1,1,la Sombra de la Biblioteca ya no respira; su cuerpo quedó tendido e inmóvil sobre la tierra.,0.802181601524353,1,,
+SQ1,21,G1,1037,npc.affinity,cold,técnico,0,1,-0.018590491371130002,0.07989543540029331,0,1,técnico apenas te dirige la palabra y responde con sequedad.,0.7656772136688232,1,,
+SQ1,19,G1,1280,npc.status,dead,Leo Varga,0,1,-0.11112510495632288,0.00525812769052747,0,1,Leo Varga ya no respira; su cuerpo quedó tendido e inmóvil sobre la tierra.,0.7492777109146118,1,,
+SQ1,19,G2,903,npc.status,dead,Híbrido de metal y roca,0,1,,0.11817932633164796,0,1,Híbrido de metal y roca ya no respira; su cuerpo quedó tendido e inmóvil sobre la tierra.,0.8613601922988892,1,,
+SQ1,11,G2,379,npc.affinity,devoted,Guardiana del Secreto,0,1,-0.06742795376318977,0.06193906715363495,1,1,Guardiana del Secreto daría la vida por ti sin dudarlo un instante.,0.6761689186096191,1,,
+SQ1,10,G2,201,npc.status,captured,Soldado herido,0,1,-0.06983266263123333,0.026632924984733464,0,1,Unos guardias se llevaron a Soldado herido maniatado y lo encerraron tras unos barrotes.,0.7004935145378113,1,,
+SQ1,02,G2,1131,npc.affinity,loyal,El Vigilante de las Cadenas,0,1,-0.08146571627463617,0.06542508026403815,1,1,El Vigilante de las Cadenas jura que estará a tu lado pase lo que pase.,0.7688322067260742,1,,
+SQ1,07,G1,997,npc.status,dead,Sargento Vane,0,1,-0.04442097555258351,0.06565211404702587,0,1,Sargento Vane ya no respira; su cuerpo quedó tendido e inmóvil sobre la tierra.,0.7638757228851318,1,,
+SQ1,17,G2,355,npc.affinity,cordial,Hombre de la casaca carmesí,0,1,,0.14526820182799793,0,1,Hombre de la casaca carmesí te recibe con una sonrisa y te ofrece asiento junto al fuego.,0.8488055467605591,1,,
+SQ1,10,G2,805,npc.status,captured,El Vigilante del Granero,0,1,-0.10922004600232627,0.07667656314028715,0,1,Unos guardias se llevaron a El Vigilante del Granero maniatado y lo encerraron tras unos barrotes.,0.7076476812362671,1,,
+SQ1,19,G1,396,npc.affinity,wary,Leo Varga,0,1,-0.03864983830136304,0.10184438910799976,0,1,Leo Varga no se fía de ti y vigila cada uno de tus movimientos.,0.8448358178138733,1,,
+SQ1,18,G2,390,npc.affinity,cold,Maestro Pimpón,0,1,-0.09700330975181481,0.0837267722835564,0,1,Maestro Pimpón apenas te dirige la palabra y responde con sequedad.,0.8047352433204651,1,,
+SQ1,10,G1,454,npc.affinity,cordial,Marek,0,1,-0.07165661826682612,0.12168387805255398,0,1,Marek te recibe con una sonrisa y te ofrece asiento junto al fuego.,0.8274892568588257,1,,
+SQ1,18,G2,1012,npc.status,captured,Autómata de mantenimiento,0,1,-0.09950286149978638,0.06114095449447632,0,1,Unos guardias se llevaron a Autómata de mantenimiento maniatado y lo encerraron tras unos barrotes.,0.7689448595046997,1,,
+SQ1,16,G2,282,npc.affinity,wary,tendero,0,1,-0.08858834694508744,0.13238992335447242,0,1,tendero no se fía de ti y vigila cada uno de tus movimientos.,0.8070393204689026,1,,
+SQ1,27,G2,1106,npc.affinity,cold,Valerius Thorne,0,1,-0.11353097488907038,0.11042281803772103,0,1,Valerius Thorne apenas te dirige la palabra y responde con sequedad.,0.8029298186302185,1,,
+SQ2,18,G2,1137,npc.status,dead,Autómata de mantenimiento,1,0,0.00010822123029918806,,1,,,,,Par17 G2 t693,0
+SQ2,16,G2,647,npc.affinity,wary,Hombre del tabardo gris,1,0,0.007284581444126914,-0.2547975120677708,1,,,,,Par10 G2 t188,1
+SQ2,16,G2,638,npc.affinity,cold,Hombre del tabardo gris,1,0,0.02261307732763118,,1,,,,,Par07 G2 t1078,0
+SQ2,11,G2,612,npc.affinity,loyal,Centinela del Equilibrio,1,0,0.02087778656104422,,1,,,,,Par10 G2 t1260,0
+SQ2,19,G2,1262,npc.affinity,hostile,Capitán Varos,1,0,0.03012459559604652,,1,,,,,Par18 G2 t483,0
+SQ2,14,G1,549,npc.affinity,loyal,Melida Corcho,1,0,0.0006808828914409704,,1,,,,,Par09 G2 t859,0
+SQ2,16,G1,464,npc.status,missing,Zoraida Puch,1,0,0.07833208441675488,,1,,,,,Par18 G2 t754,0
+SQ2,18,G2,999,npc.status,dead,Autómata de mantenimiento,1,0,0.009571492957219263,,1,,,,,Par19 G2 t464,0
+SQ2,26,G2,424,npc.affinity,devoted,Nicasio Tala,1,0,0.13140610969917588,,1,,,,,Par15 G2 t814,0
+SQ2,24,G1,1171,npc.affinity,cold,Figura encapuchada,1,0,0.007740730060718293,,1,,,,,Par19 G1 t979,0
+SQ2,11,G2,582,npc.affinity,cordial,Centinela del Equilibrio,1,0,0.030134480200953995,-0.16722808401115352,1,,,,,Par19 G1 t648,2
+SQ2,16,G2,650,npc.affinity,hostile,Hombre del tabardo gris,1,0,0.0036902865465361367,-0.17260214026503717,1,,,,,Par18 G2 t233,1
+SQ2,20,G2,852,npc.status,dead,Valerius,1,0,0.07678637569228186,,1,,,,,Par02 G2 t174,0
+SQ2,16,G2,736,npc.status,dead,Hombre del tabardo gris,1,0,0.02020430444453336,-0.18133856609270915,1,,,,,Par24 G2 t370,2
+SQ2,02,G2,1085,npc.affinity,loyal,Cobrador de Cadenas,1,0,0.0551824224854065,,1,,,,,Par09 G2 t528,0
+SQ2,19,G1,1084,npc.status,captured,Leo Varga,1,0,0.07297062003962751,,1,,,,,Par03 G2 t28,0
+SQ2,17,G2,332,npc.status,dead,Hombre de la casaca carmesí,1,0,0.0002912694008198047,,1,,,,,Par19 G2 t1109,0
+SQ2,07,G2,1006,npc.status,missing,Figura encapuchada,1,0,0.0035702033883240336,,1,,,,,Par03 G2 t53,0
+SQ2,11,G2,922,npc.status,dead,Centinela del Equilibrio,1,0,0.036020596285251005,,1,,,,,Par07 G2 t452,0
+SQ2,24,G2,933,npc.affinity,loyal,Capitán Vane,1,0,0.0639907717704773,,1,,,,,Par19 G1 t703,0
+SQ2,15,G1,156,npc.affinity,loyal,entidad orgánica,1,0,0.002435147326860343,,1,,,,,Par18 G2 t1395,0
+SQ2,12,G2,1371,npc.affinity,wary,Hombre de mirada afilada,1,0,0.05601632341064955,,1,,,,,Par06 G2 t1200,0
+SQ2,02,G2,915,npc.affinity,devoted,Kaelen el Silencioso,1,0,0.028381243019452107,,1,,,,,Par20 G2 t977,0
+SQ2,19,G2,1145,npc.status,dead,Híbrido de metal y roca,1,0,0.001780002834619876,,1,,,,,Par10 G2 t1285,0
+SQ2,10,G2,967,npc.affinity,cold,Maestro de Llaves,1,0,0.015357510203501512,,1,,,,,Par18 G2 t857,0
+SQ2,08,G2,243,npc.status,dead,la Sombra de la Biblioteca,1,0,0.008884489731446621,,1,,,,,Par19 G1 t1274,0
+SQ2,07,G1,1050,npc.status,missing,Sargento Vane,1,0,0.0033735656849479545,,1,,,,,Par18 G2 t685,0
+SQ2,27,G2,1041,npc.status,captured,"Elio, el Silencioso",1,0,0.05329890434623108,,1,,,,,Par05 G2 t33,0
+SQ2,05,G2,1312,npc.status,missing,Hombre de la túnica de lino,1,0,0.15073665669719627,,1,,,,,Par14 G1 t783,0
+SQ2,04,G1,360,npc.affinity,loyal,Mirela Sanz,1,0,0.0904200476003929,,1,,,,,Par08 G2 t263,0
+SQ2,24,G2,255,npc.affinity,cold,Buster,1,0,0.04840622333098887,,1,,,,,Par19 G1 t580,0
+SQ2,03,G2,1207,npc.affinity,devoted,Siseador de Cristal,1,0,0.05973587638974509,,1,,,,,Par18 G2 t386,0
+SQ2,27,G2,61,npc.affinity,wary,El hombre del anillo de sello,1,0,0.015148487250512654,,1,,,,,Par12 G2 t1321,0
+SQ2,19,G2,937,npc.status,dead,Híbrido de metal y roca,1,0,0.012506359038758408,,1,,,,,Par15 G1 t1231,0
+SQ2,02,G2,1234,npc.affinity,cordial,Guardián del Registro,1,0,0.012058005401562988,,1,,,,,Par09 G2 t630,0
+SQ2,19,G2,938,npc.status,dead,Híbrido de metal y roca,1,0,0.012506359038758408,,1,,,,,Par14 G2 t126,0
+SQ2,19,G2,899,npc.status,dead,Híbrido de metal y roca,1,0,0.05677940168626294,,1,,,,,Par23 G1 t596,0
+SQ2,07,G2,387,npc.affinity,wary,Bercelio Nax,1,0,0.009792685508728027,,1,,,,,Par27 G2 t222,0
+SQ2,09,G2,486,npc.status,dead,Superviviente de la ceniza,1,0,0.03235900209194409,,1,,,,,Par23 G1 t244,0
+SQ2,27,G2,950,npc.status,dead,El Susurro del Hambre,1,0,0.01877139635009939,,1,,,,,Par16 G1 t574,0
+SC1,15,G2,153,npc.affinity,loyal,Maese Alaric,0,0,,,0,0,El viento agita las ramas de los árboles cercanos.,0.374980092048645,0,,
+SC1,17,G2,776,npc.affinity,cordial,Melquíades Sorna,0,0,,,0,0,El viento agita las ramas de los árboles cercanos.,0.43280673027038574,0,,
+SC1,21,G2,161,npc.status,dead,Serafín Brea,0,0,-0.25468419360355965,-0.25468419360355965,0,0,El viento agita las ramas de los árboles cercanos.,0.286496639251709,0,,
+SC1,18,G2,941,npc.status,dead,Autómata de mantenimiento,0,0,-0.13488730779633296,-0.13488730779633296,1,1,A lo lejos se oye el murmullo de un arroyo.,0.4591296911239624,0,,
+SC1,06,G2,977,npc.status,dead,Hombre del mandil,0,0,-0.042020773212593565,-0.042020773212593565,1,1,El cielo se cubre de nubes grises mientras cae la tarde.,0.4394247531890869,0,,
+SC1,01,G2,825,npc.affinity,cold,prisionero,0,0,-0.08992629707298905,-0.08992629707298905,0,0,A lo lejos se oye el murmullo de un arroyo.,0.47942015528678894,0,,
+SC1,18,G2,883,npc.affinity,hostile,Autómata de mantenimiento,0,0,-0.06474967002868637,-0.06474967002868637,0,0,El viento agita las ramas de los árboles cercanos.,0.47380274534225464,0,,
+SC1,06,G2,1033,npc.status,dead,Hombre del mandil,0,0,-0.12686043781306622,-0.12686043781306622,0,0,A lo lejos se oye el murmullo de un arroyo.,0.4888695776462555,0,,
+SC1,22,G1,509,npc.affinity,wary,Casimira Ortigal,0,0,-0.08634064337598013,-0.08634064337598013,0,0,A lo lejos se oye el murmullo de un arroyo.,0.3968268632888794,0,,
+SC1,18,G2,38,npc.affinity,wary,Honorio Zapata,0,0,-0.1358804523468493,-0.1358804523468493,0,0,El cielo se cubre de nubes grises mientras cae la tarde.,0.42652755975723267,0,,
+SC1,07,G2,387,npc.affinity,wary,Bercelio Nax,1,1,0.009792685508728027,0.009792685508728027,1,1,A lo lejos se oye el murmullo de un arroyo.,0.4097903370857239,0,,
+SC1,06,G1,434,npc.affinity,devoted,Bregas Coll,0,0,-0.07766414546210343,-0.07766414546210343,0,0,El viento agita las ramas de los árboles cercanos.,0.3536117672920227,0,,
+SC1,05,G2,955,npc.affinity,cold,Damil Quiroga,0,0,-0.03350605498676429,-0.03350605498676429,1,1,El cielo se cubre de nubes grises mientras cae la tarde.,0.4506203532218933,0,,
+SC1,24,G1,1370,npc.affinity,loyal,Figura encapuchada,1,1,1.896865137129833e-05,1.896865137129833e-05,1,1,El viento agita las ramas de los árboles cercanos.,0.48677438497543335,0,,
+SC1,12,G1,406,npc.affinity,cordial,Osvaldo Prín,0,0,-0.02013160039510553,-0.02013160039510553,0,0,El cielo se cubre de nubes grises mientras cae la tarde.,0.39884886145591736,0,,
+SC1,08,G2,636,npc.affinity,wary,Alaric,0,0,-0.04855040914631181,-0.04855040914631181,1,1,A lo lejos se oye el murmullo de un arroyo.,0.4508684277534485,0,,
+SC1,17,G2,332,npc.status,dead,Hombre de la casaca carmesí,1,1,0.0002912694008198047,0.0002912694008198047,1,1,El viento agita las ramas de los árboles cercanos.,0.4155869483947754,0,,
+SC1,18,G2,972,npc.status,captured,Autómata de mantenimiento,0,0,-0.07741806867043266,-0.07741806867043266,0,0,El viento agita las ramas de los árboles cercanos.,0.5083569288253784,0,,
+SC1,09,G2,1274,npc.affinity,devoted,Superviviente de la fosa,0,0,-0.06290736176046086,-0.06290736176046086,0,0,A lo lejos se oye el murmullo de un arroyo.,0.4230709373950958,0,,
+SC1,26,G1,697,npc.affinity,devoted,superviviente,0,0,-0.06407820454543578,-0.06407820454543578,0,0,El viento agita las ramas de los árboles cercanos.,0.35048162937164307,0,,
+SC1,27,G2,235,npc.affinity,hostile,El hombre del anillo de sello,0,0,,,1,1,A lo lejos se oye el murmullo de un arroyo.,0.4661966562271118,0,,
+SC1,18,G2,1126,npc.status,dead,Autómata de mantenimiento,0,0,-0.12268592373344167,-0.12268592373344167,0,0,A lo lejos se oye el murmullo de un arroyo.,0.4591296911239624,0,,
+SC1,16,G2,1016,npc.affinity,wary,Vaelen,0,0,-0.035836213505206715,-0.035836213505206715,1,1,A lo lejos se oye el murmullo de un arroyo.,0.43751388788223267,0,,
+SC1,25,G2,487,npc.affinity,loyal,Eusebio Plumilla,0,0,,,0,0,A lo lejos se oye el murmullo de un arroyo.,0.3855363428592682,0,,
+SC1,11,G2,379,npc.affinity,devoted,Guardiana del Secreto,0,0,-0.06742795376318977,-0.06742795376318977,1,1,A lo lejos se oye el murmullo de un arroyo.,0.3680211901664734,0,,
+SC1,03,G2,521,npc.affinity,cold,Erudito de la Atalaya,0,0,-0.08575808377207872,-0.08575808377207872,0,0,A lo lejos se oye el murmullo de un arroyo.,0.48685693740844727,0,,
+SC1,10,G2,883,npc.status,captured,El Vigilante del Granero,0,0,-0.11179600813436419,-0.11179600813436419,0,0,A lo lejos se oye el murmullo de un arroyo.,0.4631809592247009,0,,
+SC1,21,G1,1364,npc.affinity,devoted,técnico,0,0,-0.11933364569339411,-0.11933364569339411,0,0,El viento agita las ramas de los árboles cercanos.,0.3515714108943939,0,,
+SC1,21,G1,904,npc.affinity,wary,técnico,0,0,-0.04124452520850064,-0.04124452520850064,0,0,El cielo se cubre de nubes grises mientras cae la tarde.,0.4888566732406616,0,,
+SC1,18,G2,999,npc.status,dead,Autómata de mantenimiento,1,1,0.009571492957219263,0.009571492957219263,1,1,A lo lejos se oye el murmullo de un arroyo.,0.4591296911239624,0,,
+SC1,18,G2,1012,npc.status,captured,Autómata de mantenimiento,0,0,-0.09950286149978638,-0.09950286149978638,0,0,El cielo se cubre de nubes grises mientras cae la tarde.,0.4643855690956116,0,,
+SC1,05,G2,1045,npc.status,captured,Elian Thorne,0,0,-0.18441986579168335,-0.18441986579168335,0,0,A lo lejos se oye el murmullo de un arroyo.,0.40694093704223633,0,,
+SC1,18,G2,900,npc.status,dead,Autómata de mantenimiento,0,0,-0.026768069886524914,-0.026768069886524914,1,1,A lo lejos se oye el murmullo de un arroyo.,0.4591296911239624,0,,
+SC1,07,G1,128,npc.affinity,loyal,Bercelio Nax,0,0,-0.1047617445138872,-0.1047617445138872,1,1,El viento agita las ramas de los árboles cercanos.,0.3419766426086426,0,,
+SC1,16,G2,968,npc.affinity,cold,Vaelen,0,0,,,0,0,El cielo se cubre de nubes grises mientras cae la tarde.,0.48988819122314453,0,,
+SC1,23,G1,1266,npc.status,dead,masa blindada,0,0,-0.13618902104243014,-0.13618902104243014,0,0,A lo lejos se oye el murmullo de un arroyo.,0.49821147322654724,0,,
+SC1,16,G2,282,npc.affinity,wary,tendero,0,0,-0.08858834694508744,-0.08858834694508744,0,0,A lo lejos se oye el murmullo de un arroyo.,0.4730904996395111,0,,
+SC1,27,G2,168,npc.affinity,wary,El hombre del anillo de sello,0,0,-0.12382934586972028,-0.12382934586972028,1,1,El cielo se cubre de nubes grises mientras cae la tarde.,0.4482857286930084,0,,
+SC1,10,G2,806,npc.status,captured,El Vigilante del Granero,0,0,-0.10922004600232627,-0.10922004600232627,0,0,El viento agita las ramas de los árboles cercanos.,0.40302231907844543,0,,
+SC1,18,G2,971,npc.status,dead,Autómata de mantenimiento,0,0,-0.11110027014948931,-0.11110027014948931,0,0,El viento agita las ramas de los árboles cercanos.,0.42891359329223633,0,,
+SC2,11,G2,612,npc.affinity,loyal,Centinela del Equilibrio,1,1,0.02087778656104422,0.02087778656104422,1,1,Centinela del Equilibrio camina por la plaza y saluda a unos vecinos.,0.6171013712882996,1,,
+SC2,01,G2,477,npc.affinity,cold,Supervisor del muelle,0,0,,-0.10039269924163818,0,0,Supervisor del muelle camina por la plaza y saluda a unos vecinos.,0.5980992317199707,1,,
+SC2,27,G2,185,npc.status,dead,El Guardián del Umbral,0,0,-0.09795376668473432,-0.09193294847164235,1,1,El Guardián del Umbral camina por la plaza y saluda a unos vecinos.,0.5736786127090454,1,,
+SC2,23,G1,1183,npc.status,dead,masa blindada,0,0,-0.04674828052520752,-0.04674828052520752,1,1,masa blindada camina por la plaza y saluda a unos vecinos.,0.6371495723724365,1,,
+SC2,14,G2,1186,npc.affinity,cordial,Madame Valeriane,0,0,-0.058371279555649136,-0.025112024528704757,0,0,Madame Valeriane camina por la plaza y saluda a unos vecinos.,0.7388454079627991,1,,
+SC2,23,G1,1379,npc.status,dead,masa blindada,0,0,-0.20253220159912833,-0.11625841219330557,0,0,masa blindada camina por la plaza y saluda a unos vecinos.,0.6371495723724365,1,,
+SC2,13,G1,112,npc.affinity,hostile,Baldemar Cruz,0,0,-0.1264915354306625,-0.1264915354306625,0,0,Baldemar Cruz camina por la plaza y saluda a unos vecinos.,0.5439828634262085,1,,
+SC2,11,G2,922,npc.status,dead,Centinela del Equilibrio,1,1,0.036020596285251005,0.036020596285251005,1,1,Centinela del Equilibrio camina por la plaza y saluda a unos vecinos.,0.5177897214889526,1,,
+SC2,09,G2,240,npc.status,missing,Amancio Bell,0,1,-0.09746869225133425,0.010103684549063963,0,1,Amancio Bell camina por la plaza y saluda a unos vecinos.,0.6081792116165161,1,,
+SC2,17,G2,1016,npc.affinity,cordial,Hombre de la casaca carmesí,0,1,-0.17358493804931763,0.043536305427546274,0,1,Hombre de la casaca carmesí camina por la plaza y saluda a unos vecinos.,0.7470736503601074,1,,
+SC2,09,G2,863,npc.affinity,devoted,Superviviente de la ceniza,0,0,-0.10473267371921247,-0.08283541794896387,0,0,Superviviente de la ceniza camina por la plaza y saluda a unos vecinos.,0.5168296098709106,1,,
+SC2,07,G2,567,npc.affinity,wary,El Vigilante del Umbral,0,0,-0.0896974854379664,-0.0896974854379664,0,0,El Vigilante del Umbral camina por la plaza y saluda a unos vecinos.,0.5560259819030762,1,,
+SC2,08,G2,619,npc.affinity,cold,Alaric,0,0,-0.06325271501885021,-0.06325271501885021,1,1,Alaric camina por la plaza y saluda a unos vecinos.,0.5560387372970581,1,,
+SC2,26,G2,424,npc.affinity,devoted,Nicasio Tala,1,1,0.13140610969917588,0.13140610969917588,1,1,Nicasio Tala camina por la plaza y saluda a unos vecinos.,0.5906702280044556,1,,
+SC2,09,G2,1273,npc.affinity,loyal,Superviviente de la fosa,0,1,-0.045971560438079484,0.07398552898604971,0,1,Superviviente de la fosa camina por la plaza y saluda a unos vecinos.,0.6944183111190796,1,,
+SC2,27,G2,52,npc.affinity,wary,El hombre del anillo de sello,0,0,,-0.20377395970095746,0,0,El hombre del anillo de sello camina por la plaza y saluda a unos vecinos.,0.5505332946777344,1,,
+SC2,20,G2,1329,npc.affinity,hostile,Brasas Lentas,0,0,-0.019639545554317905,-0.019639545554317905,1,1,Brasas Lentas camina por la plaza y saluda a unos vecinos.,0.5709984302520752,1,,
+SC2,09,G2,1034,npc.status,dead,Superviviente de la ceniza,0,1,-0.03256830995296611,0.004949548004415161,0,1,Superviviente de la ceniza camina por la plaza y saluda a unos vecinos.,0.6409220099449158,1,,
+SC2,24,G2,864,npc.affinity,cordial,Buster,0,0,,-0.023063318038805014,0,1,Buster camina por la plaza y saluda a unos vecinos.,0.7085229754447937,1,,
+SC2,19,G1,1084,npc.status,captured,Leo Varga,1,1,0.07297062003962751,0.07297062003962751,1,1,Leo Varga camina por la plaza y saluda a unos vecinos.,0.6294216513633728,1,,
+SC2,02,G2,1158,npc.affinity,cordial,El hombre de los harapos,0,0,-0.14637622968399833,-0.040982842445373535,0,0,El hombre de los harapos camina por la plaza y saluda a unos vecinos.,0.7280674576759338,1,,
+SC2,18,G2,870,npc.status,captured,Autómata de mantenimiento,0,0,-0.05976413661002655,-0.05976413661002655,0,0,Autómata de mantenimiento camina por la plaza y saluda a unos vecinos.,0.6408790349960327,1,,
+SC2,02,G1,186,npc.affinity,loyal,Bardo Ossein,0,0,-0.058704379564414766,-0.05466330385793716,0,0,Bardo Ossein camina por la plaza y saluda a unos vecinos.,0.6181799173355103,1,,
+SC2,19,G2,778,npc.status,dead,Híbrido de metal y roca,0,0,-0.07638023351557699,-0.07638023351557699,1,1,Híbrido de metal y roca camina por la plaza y saluda a unos vecinos.,0.6535563468933105,1,,
+SC2,22,G2,84,npc.status,dead,Casimira Ortigal,0,0,-0.05048704147338867,-0.05048704147338867,1,1,Casimira Ortigal camina por la plaza y saluda a unos vecinos.,0.5370043516159058,1,,
+SC2,16,G2,1397,npc.status,captured,Elian,0,0,-0.1467194223416296,-0.11845138311509762,0,0,Elian camina por la plaza y saluda a unos vecinos.,0.6415278911590576,1,,
+SC2,23,G2,1059,npc.status,dead,Criatura del ancla,0,0,-0.05434742569923401,-0.034014374017715454,1,1,Criatura del ancla camina por la plaza y saluda a unos vecinos.,0.5979454517364502,1,,
+SC2,12,G2,366,npc.affinity,hostile,Harlen,0,0,-0.05971810236775377,-0.05971810236775377,1,1,Harlen camina por la plaza y saluda a unos vecinos.,0.6043463945388794,1,,
+SC2,07,G2,421,npc.affinity,hostile,Bercelio Nax,0,0,-0.1301958889925785,-0.10402882099151611,0,0,Bercelio Nax camina por la plaza y saluda a unos vecinos.,0.5781075954437256,1,,
+SC2,15,G2,739,npc.affinity,devoted,Baldor Enna,0,0,-0.11235728813346013,-0.04518574416136867,0,1,Baldor Enna camina por la plaza y saluda a unos vecinos.,0.5648982524871826,1,,
+SC2,06,G2,1007,npc.status,captured,Hombre del mandil,0,0,-0.10038281086148271,-0.054316246772562415,0,1,Hombre del mandil camina por la plaza y saluda a unos vecinos.,0.6538712382316589,1,,
+SC2,19,G2,1262,npc.affinity,hostile,Capitán Varos,1,1,0.03012459559604652,0.03012459559604652,1,1,Capitán Varos camina por la plaza y saluda a unos vecinos.,0.5780420303344727,1,,
+SC2,11,G2,176,npc.affinity,loyal,Illian Vasto,0,0,-0.04246664972001324,-0.021374354073345758,1,1,Illian Vasto camina por la plaza y saluda a unos vecinos.,0.6114295721054077,1,,
+SC2,27,G2,722,npc.status,dead,El Susurro del Hambre,0,0,,-0.0875501990318297,1,1,El Susurro del Hambre camina por la plaza y saluda a unos vecinos.,0.5395821332931519,1,,
+SC2,03,G2,639,npc.affinity,loyal,Elian,0,0,,-0.1126816413031787,0,0,Elian camina por la plaza y saluda a unos vecinos.,0.6264466643333435,1,,
+SC2,11,G1,660,npc.status,captured,Illian Vasto,0,0,-0.15241599082946777,-0.07411956787109375,0,0,Illian Vasto camina por la plaza y saluda a unos vecinos.,0.5930086970329285,1,,
+SC2,16,G2,667,npc.status,captured,Hombre del tabardo gris,0,0,-0.03873658295680826,-0.02150579375794681,1,1,Hombre del tabardo gris camina por la plaza y saluda a unos vecinos.,0.672751247882843,1,,
+SC2,17,G2,1133,npc.status,dead,Melquíades Sorna,0,0,-0.12061471220167219,-0.059515570975196774,1,1,Melquíades Sorna camina por la plaza y saluda a unos vecinos.,0.5508702397346497,1,,
+SC2,17,G1,362,npc.affinity,cold,Bibiana Roth,0,0,-0.10925956376463675,-0.10925956376463675,0,0,Bibiana Roth camina por la plaza y saluda a unos vecinos.,0.5567498207092285,1,,
+SC2,18,G2,1014,npc.status,dead,Autómata de mantenimiento,0,0,-0.04418555984977368,-0.04418555984977368,1,1,Autómata de mantenimiento camina por la plaza y saluda a unos vecinos.,0.5952625274658203,1,,

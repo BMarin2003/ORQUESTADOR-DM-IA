@@ -1,0 +1,62 @@
+2026-09-19 17:35:57 [SUPERVISOR] arrancado con 20 campanias (arm=ambos)
+2026-09-19 17:35:57 [LANZADA] Par18 G2 desde turno 0 -> --turnos 1400 (PID 50476)
+2026-09-19 17:35:58 [LANZADA] Par18 G1 desde turno 0 -> --turnos 1400 (PID 37716)
+2026-09-19 17:35:58 [LANZADA] Par19 G2 desde turno 0 -> --turnos 1400 (PID 52352)
+2026-09-19 17:35:58 [LANZADA] Par19 G1 desde turno 0 -> --turnos 1400 (PID 51732)
+2026-09-19 17:35:59 [LANZADA] Par20 G2 desde turno 0 -> --turnos 1400 (PID 15752)
+2026-09-19 17:35:59 [LANZADA] Par20 G1 desde turno 0 -> --turnos 1400 (PID 32044)
+2026-09-19 17:36:00 [LANZADA] Par21 G2 desde turno 0 -> --turnos 1400 (PID 11268)
+2026-09-19 17:36:00 [LANZADA] Par21 G1 desde turno 0 -> --turnos 1400 (PID 1336)
+2026-09-19 17:36:00 [LANZADA] Par22 G2 desde turno 0 -> --turnos 1400 (PID 40284)
+2026-09-19 17:36:01 [LANZADA] Par22 G1 desde turno 0 -> --turnos 1400 (PID 37184)
+2026-09-19 17:36:01 [LANZADA] Par23 G2 desde turno 0 -> --turnos 1400 (PID 18420)
+2026-09-19 17:36:02 [LANZADA] Par23 G1 desde turno 0 -> --turnos 1400 (PID 40172)
+2026-09-19 17:36:02 [LANZADA] Par24 G2 desde turno 0 -> --turnos 1400 (PID 34736)
+2026-09-19 17:36:02 [LANZADA] Par24 G1 desde turno 0 -> --turnos 1400 (PID 39020)
+2026-09-19 17:36:03 [LANZADA] Par25 G2 desde turno 0 -> --turnos 1400 (PID 34360)
+2026-09-19 17:36:03 [LANZADA] Par25 G1 desde turno 0 -> --turnos 1400 (PID 40256)
+2026-09-19 17:36:04 [LANZADA] Par26 G2 desde turno 0 -> --turnos 1400 (PID 34068)
+2026-09-19 17:36:04 [LANZADA] Par26 G1 desde turno 0 -> --turnos 1400 (PID 33356)
+2026-09-19 17:36:04 [LANZADA] Par27 G2 desde turno 0 -> --turnos 1400 (PID 18644)
+2026-09-19 17:36:05 [LANZADA] Par27 G1 desde turno 0 -> --turnos 1400 (PID 41792)
+2026-09-19 23:20:35 [REINICIO] Par26 G2 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-19 23:20:35 [COMPLETA] Par26 G2 llego a 1400/1400
+2026-09-19 23:34:05 [REINICIO] Par21 G2 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-19 23:34:05 [COMPLETA] Par21 G2 llego a 1400/1400
+2026-09-19 23:52:05 [REINICIO] Par22 G2 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-19 23:52:05 [COMPLETA] Par22 G2 llego a 1400/1400
+2026-09-19 23:55:05 [REINICIO] Par19 G2 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-19 23:55:05 [COMPLETA] Par19 G2 llego a 1400/1400
+2026-09-19 23:57:35 [REINICIO] Par24 G2 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-19 23:57:35 [COMPLETA] Par24 G2 llego a 1400/1400
+2026-09-20 00:01:35 [REINICIO] Par25 G2 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-20 00:01:35 [COMPLETA] Par25 G2 llego a 1400/1400
+2026-09-20 00:05:05 [REINICIO] Par27 G2 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-20 00:05:05 [COMPLETA] Par27 G2 llego a 1400/1400
+2026-09-20 00:05:35 [REINICIO] Par23 G2 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-20 00:05:35 [COMPLETA] Par23 G2 llego a 1400/1400
+2026-09-20 00:09:05 [REINICIO] Par20 G2 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-20 00:09:05 [COMPLETA] Par20 G2 llego a 1400/1400
+2026-09-20 00:12:35 [REINICIO] Par18 G2 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-20 00:12:35 [COMPLETA] Par18 G2 llego a 1400/1400
+2026-09-20 05:27:05 [REINICIO] Par25 G1 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-20 05:27:06 [COMPLETA] Par25 G1 llego a 1400/1400
+2026-09-20 07:05:06 [REINICIO] Par27 G1 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-20 07:05:06 [COMPLETA] Par27 G1 llego a 1400/1400
+2026-09-20 07:35:06 [REINICIO] Par22 G1 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-20 07:35:06 [COMPLETA] Par22 G1 llego a 1400/1400
+2026-09-20 08:03:06 [REINICIO] Par21 G1 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-20 08:03:06 [COMPLETA] Par21 G1 llego a 1400/1400
+2026-09-20 08:22:36 [REINICIO] Par26 G1 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-20 08:22:36 [COMPLETA] Par26 G1 llego a 1400/1400
+2026-09-20 08:23:06 [REINICIO] Par23 G1 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-20 08:23:06 [COMPLETA] Par23 G1 llego a 1400/1400
+2026-09-20 08:24:06 [REINICIO] Par24 G1 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-20 08:24:06 [COMPLETA] Par24 G1 llego a 1400/1400
+2026-09-20 08:24:36 [REINICIO] Par19 G1 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-20 08:24:36 [COMPLETA] Par19 G1 llego a 1400/1400
+2026-09-20 08:33:06 [REINICIO] Par18 G1 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-20 08:33:06 [COMPLETA] Par18 G1 llego a 1400/1400
+2026-09-20 08:36:36 [REINICIO] Par20 G1 termino con codigo 0 en turno 1400 (fallos seguidos sin avanzar: 0)
+2026-09-20 08:36:36 [COMPLETA] Par20 G1 llego a 1400/1400
+2026-09-20 08:36:36 [SUPERVISOR] todas las campanias en estado terminal. Fin.

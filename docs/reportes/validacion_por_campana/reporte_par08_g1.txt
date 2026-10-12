@@ -1,0 +1,92 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 08 (real) · G1 (Multiagente) · Torre Alondra · mas
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        7 (  0.5%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                    0 (  0.0%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             27 (  1.9%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.214  [0.099, 0.378]
+    qn1_ttr                                n=1400  prom=0.685  [0.588, 0.776]
+    qn1_ngram_repeticion                   n=1400  prom=0.031  [0.000, 0.102]
+    qn1_legibilidad_fh                     n=1400  prom=58.262  [42.140, 72.960]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.134  [0.000, 0.667]
+  CR-2 turnos con algún nombre no reconocido: 1396
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  45 visitas distintas · 8 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: El Risco donde cayó Ossian ↔ Garganta del Susurro ↔ La Casa Roquende ↔ archivo familiar ↔ estación de carga ↔ oficina circular ↔ puerta de plata ↔ vacío interno oculto (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1299 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: El Archivo Fundacional, El Risco donde cayó Ossian, Garganta del Susurro, La Casa Roquende, La Casa Sávez, La Crestería de Alondra, Torre Alondra, archivo familiar, explanada de piedra cenicienta, vacío interno oculto
+    turno 1: El Risco donde cayó Ossian, Garganta del Susurro, La Casa Roquende, La Casa Sávez, archivo familiar, pasillo superior, patio hundido
+    turno 2: La Casa Roquende, explanada de piedra cenicienta, pasillo superior, patio hundido
+    turno 3: Garganta del Susurro, La Casa Roquende, dependencias inferiores, patio hundido, puerta de plata
+    turno 4: Garganta del Susurro, La Casa Roquende, galería circular de piedra húmeda, patio hundido, puerta de plata
+  camino (primeras y últimas visitas):
+    turno  22 → Garganta del Susurro
+    turno  44 → puerta de plata
+    turno  49 → vacío interno oculto
+    ...
+    turno 1323 → Garganta del Susurro
+    turno 1329 → El Risco donde cayó Ossian
+    turno 1337 → Garganta del Susurro
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  ningún reloj ha disparado todavía en esta campaña
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 1.5  (sobre 10 secciones; máximo teórico = 4.5)
+    Ginebra Roquende: Ci=4.5  (primera mención sección 0, última sección 9)
+    Baltasar Sávez: Ci=0.0  (primera mención sección 0, última sección 0)
+    Alaric Roquende: Ci=0.0  (primera mención sección 0, última sección 0)
+  V promedio = 0.072  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Ginebra Roquende: Vi=0.092  (655 atributos propios detectados)
+    Baltasar Sávez: Vi=0.125  (8 atributos propios detectados)
+    Alaric Roquende: Vi=0.0  (1 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+  sin deltas de npc.status/affinity o quest.status con vocabulario distintivo detectable en esta campaña
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.998  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.990  (min 0.967, max 0.996, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.020  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  ningún turno con cl2_pnj_inactivo_actua=true en esta campaña -- nada que reclasificar
+
+==========================================================================
+

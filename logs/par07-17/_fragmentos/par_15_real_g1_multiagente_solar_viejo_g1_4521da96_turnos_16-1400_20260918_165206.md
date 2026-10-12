@@ -1,0 +1,21489 @@
+
+# VERTICAL SLICE G1 — Par 15 (real) · G1 (Multiagente) · Solar Viejo (mas)
+
+- **modelo (todos los roles):** `google/gemma-4-31B-it`
+- **jugador:** `google/gemma-4-31B-it` (Ilvard, desvío 25)
+- **turno:** 16
+
+## Turno 16 — 1/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3238 ms
+
+> "Los trazos son claros, señora Herminia. Aquí se detalla la verdadera sucesión y los cargos que pesan sobre la gestión del Solar."
+> Le muestro los puntos clave del documento mientras mantengo el tono sereno.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 17+3=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 20)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (8094 ms): «Sea preciso, por favor. No me hable de 'verdadera sucesión' como si fuera un con»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7332 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12810 ms
+
+> narrativa
+> El despacho se siente ahora como una caja de sombras donde el olor a tinta agria y cuero viejo se vuelve asfixiante. La luz de la vela proyecta sombras alargadas que parecen observar el documento sobre la mesa, mientras el silencio sepulcral del resto de la casa presiona contra las paredes, aislando el momento.
+> Herminia se mantiene erguida, con las manos entrelazadas frente a ella; aunque no aparta la vista del papel, sus nudillos están blancos por la tensión. Con una voz gélida y formal, evitando cualquier rastro de ansiedad, sentencia: "Sea preciso, por favor. No me hable de 'verdadera sucesión' como si fuera un concepto abstracto; léame las palabras exactas que puso mi tía en el papel. Solo la letra escrita es la que posee la autoridad necesaria para zanjar esta cuestión."
+> mecanica
+> Perspicacia: Éxito (20 vs CD 10)
+> presion
+> La exigencia de Herminia por la literalidad del texto cierra la puerta a interpretaciones ambiguas: cualquier omisión o error al leer las palabras exactas podría ser percibido como un intento de manipulación.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1796 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 17 — 2/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3690 ms
+
+> "Tiene razón. La palabra escrita es la ley y la única forma de evitar malentendidos."
+> Tomo el documento con cuidado y comienzo a leer en voz alta, con claridad y sin omitir una sola coma.
+> {Interpretación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Interpretación: 5+2=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (4745 ms): «Proceda. Estoy escuchando.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6538 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14808 ms
+
+> narrativa
+> El despacho permanece sumido en una penumbra densa, donde el único foco de luz es la vela que vacila sobre el pergamino, recortando la silueta rígida de Herminia contra la oscuridad de la estancia. A pesar del esfuerzo por mantener la claridad, la lectura tropieza; las palabras parecen desdibujarse o el ritmo flaquea, rompiendo la fluidez necesaria para que el texto recupere su autoridad. La precisión prometida se desvanece en un titubeo que deja el documento vulnerable a la duda.
+> Herminia mantiene la espalda rígida y la mirada fija en el papel, sin pestañear, procesando cada palabra con una atención casi quirúrgica. Al notar el fallo en la lectura, sus ojos se entrecierran levemente, aunque su tono permanece imperturbable mientras sentencia: "Proceda. Estoy escuchando."
+> mecanica
+> Interpretación: Fallo (7 vs CD 10)
+> presion
+> El titubeo al leer el documento ha sembrado la primera semilla de duda en Herminia; cualquier error posterior o imprecisión será interpretado ya no como un accidente, sino como una falta de honestidad o competencia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4717 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · competence_shown
+  ⚠ nombres no reconocidos: Fallo, Interpretación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 18 — 3/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  8210 ms
+
+> "Mis disculpas, señora Herminia. La luz es escasa y el texto complejo, pero mi voluntad de ser preciso es inquebrantable."
+> Hago una pausa para recuperar la compostura, enderezo la espalda y vuelvo a leer el pergamino con más calma y firmeza.
+> {Interpretación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Interpretación: 17+2=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 19)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (6140 ms): «La voluntad es una virtud loable, pero la precisión es la única moneda que acept»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7218 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17485 ms
+
+> narrativa
+> El aire del despacho se siente espeso, cargado con el aroma rancio de la cera vieja y el cuero gastado, mientras las sombras en las esquinas parecen cerrarse sobre la escena, observando el proceso en un silencio sepulcral. La voz recupera su centro y las palabras fluyen ahora con una claridad absoluta, rescatando la autoridad del pergamino y eliminando cualquier rastro de duda sobre el contenido del documento.
+> Herminia Solar mantiene la espalda recta, sin moverse un milímetro, observando con una mirada analítica que no admite más errores. Tras un instante de silencio evaluador, sentencia con una frialdad imperturbable: "La voluntad es una virtud loable, pero la precisión es la única moneda que acepta este tribunal. Continúe, por favor. No deje que la luz sea el pretexto para omitir un solo adjetivo."
+> mecanica
+> Interpretación: Éxito (19 vs CD 10)
+> presion
+> A pesar de la recuperación, Herminia ha dejado claro que no tolerará más excusas; el margen de error se ha cerrado y cualquier nueva vacilación será vista como una debilidad inaceptable.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  6398 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · competence_shown
+  ⚠ nombres no reconocidos: Interpretación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'npc', 'entity_id': 'Herminia', 'field': 'estado_mental', 'value': 'Su escepticismo inicial se aplaca ante la recuperación de la compostura, aunque mantiene una vigilancia gélida sobre la veracidad de las palabras.'}
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 19 — 4/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2750 ms
+
+> "Tened la certeza de que no habrá más vacilaciones, señora Solar. Mi honor y mi palabra son el sello de este testimonio."
+> Me enderezo, manteniendo el contacto visual con ella, y continúo la lectura del documento con voz firme y clara.
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  sin tiradas declaradas
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=False · pnj_que_responden=['Herminia Solar'] · altera_estado=False · peso=conversacional
+
+### [5] ÁRBITRO
+
+  no requerido este turno
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (5858 ms): «El honor es un cimiento admirable, pero el tribunal no juzga intenciones, sino h»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3702 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10517 ms
+
+> narrativa
+> Herminia Solar mantiene la postura rígida, entrelazando los dedos sobre el regazo con una calma calculada, sin apartar la vista. Sus ojos, gélidos y analíticos, no parpadean mientras procesan la declaración, evaluando la firmeza del tono tanto como la veracidad de las palabras.
+> "El honor es un cimiento admirable, pero el tribunal no juzga intenciones, sino hechos. Proceda con la lectura; que sea el texto el que selle su palabra", sentencia con una voz que no admite réplica, devolviendo el peso de la responsabilidad al documento que reposa sobre la mesa.
+> mecanica
+> No hubo tiradas en este turno.
+> presion
+> Herminia ha desplazado el foco del honor personal a la evidencia tangible; cualquier contradicción entre la lectura y los hechos conocidos será utilizada para desmantelar la credibilidad del testimonio.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1462 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 20 — 5/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2242 ms
+
+> "Lo haré con gusto, pues la verdad no teme ser leída."
+> Tomo el documento de la mesa y comienzo a leer el texto en voz alta, con claridad y firmeza.
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  sin tiradas declaradas
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=False · pnj_que_responden=['Herminia Solar'] · altera_estado=False · peso=conversacional
+
+### [5] ÁRBITRO
+
+  no requerido este turno
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (5172 ms): «Le escucho. No hay nada más satisfactorio que una verdad que se sostiene por sí »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4189 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12673 ms
+
+> narrativa
+> La sala de audiencias envuelve la escena en una austeridad gélida, donde los muros de piedra se elevan con una verticalidad opresiva, devolviendo el eco de cada palabra leída en un silencio sepulcral. El aire parece haberse espesado, concentrando toda la atención en la lectura que resuena contra las superficies frías del recinto.
+> Herminia Solar mantiene la espalda recta y la mirada fija en el papel, con una expresión de neutralidad imperturbable. Solo el ligero apretón de sus dedos sobre el regazo traiciona una tensión contenida mientras escucha. "Le escucho. No hay nada más satisfactorio que una verdad que se sostiene por sí misma sin necesidad de adornos", sentencia con una calma analítica.
+> mecanica
+> No hubo tiradas en este turno.
+> presion
+> La disposición de Herminia es favorable, pero su neutralidad es una armadura; cualquier vacilación en la lectura o inconsistencia en el documento podría transformar su respeto en un escrutinio implacable.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3679 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · competence_shown
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 21 — 6/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4073 ms
+
+> "Vuestra disposición es un honor, señora Solar. Que la claridad de estos hechos hable por nosotros."
+> Le entrego el documento con un gesto firme y respetuoso, manteniendo el contacto visual para demostrar mi seguridad en la veracidad de lo escrito.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 20+4=24  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 24)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (6237 ms): «Agradezco su cortesía, aunque los honores son prescindibles cuando lo que está e»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  9115 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15701 ms
+
+> narrativa
+> La inmensidad de la sala de audiencias, con sus techos altísimos y ventanales que apenas dejan filtrar la luz, acentúa el vacío que separa los cuerpos, convirtiendo el espacio en un escenario donde cualquier duda quedaría expuesta. Sobre la mesa de roble oscuro, el documento descansa como el único punto de apoyo en aquella austeridad de piedra grisácea.
+> Herminia Solar toma el papel con un movimiento fluido y preciso, desplegándolo con una calma metódica. Sin sonreír, pero manteniendo una mirada atenta y equilibrada que reconoce la seguridad del gesto, sentencia: "Agradezco su cortesía, aunque los honores son prescindibles cuando lo que está en juego es la integridad de un legado. Proceda; veamos si los hechos son tan claros como su convicción."
+> mecanica
+> Persuasión: Éxito (24 vs CD 10).
+> presion
+> La evidencia ha sido aceptada con rigor, pero Herminia ahora analizará cada palabra del documento; cualquier contradicción interna o dato omitido podría invalidar la confianza ganada.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  8375 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · competence_shown
+  ✓ delta herminia_solar · npc.knowledge = Ilvard ha entregado un documento con hechos que respaldan su postura
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+  ✗ entidad inexistente: herminia_solar
+  ✗ (Mundo) delta rechazado por la base (npc.attitude): field npc.attitude is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 22 — 7/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4163 ms
+
+> "La verdad no admite omisiones, señora Solar. Encontrará en esas líneas todo lo que es necesario saber."
+> Permanezco firme y en silencio, manteniendo una postura erguida y respetuosa mientras ella lee el documento.
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  sin tiradas declaradas
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=False · pnj_que_responden=['Herminia Solar'] · altera_estado=False · peso=conversacional
+
+### [5] ÁRBITRO
+
+  no requerido este turno
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (7966 ms): «La verdad es un concepto conveniente cuando se tiene el papel correcto en la man»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1125 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12603 ms
+
+> narrativa
+> El silencio se espesa en la sala de audiencias, roto únicamente por el roce seco del papel mientras Herminia Solar recorre las líneas con una lentitud analítica. Mantiene el documento a la altura de los ojos, absorta en el texto, sin permitir que un solo músculo de su rostro traicione lo que piensa mientras procesa la información.
+> Sin levantar la vista, su voz surge plana, formal y desprovista de cualquier emoción impulsiva: "La verdad es un concepto conveniente cuando se tiene el papel correcto en la mano, pero la legitimidad... esa es otra cuestión."
+> mecanica
+> N/A
+> presion
+> Herminia ha aceptado la premisa, pero su escepticismo persiste; cualquier inconsistencia en los pasos siguientes o una presión excesiva para obtener una respuesta inmediata podría hacer que cuestione la autenticidad del documento.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1758 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 23 — 8/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3236 ms
+
+> "La legitimidad nace de la verdad, señora Solar, no de la conveniencia."
+> Me mantengo firme y miro a Herminia con serenidad, esperando que reconozca la validez de lo que tiene delante.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 13+4=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 17)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (10110 ms): «La verdad es el cimiento, es cierto. Pero el derecho de sangre es la estructura »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3881 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14629 ms
+
+> narrativa
+> La luz cenital cae con una frialdad quirúrgica sobre la mesa de caoba maciza, subrayando la distancia insalvable entre la autoridad y quien suplica. El eco de las palabras resuena en el vacío de la sala austera, obligando a un silencio tenso donde solo el roce del pergamino parece tener peso.
+> Herminia Solar baja el documento lentamente, clavando la vista en el interlocutor con una expresión imperturbable y una postura rígida, aunque sus dedos aprietan el papel con una tensión casi imperceptible. "La verdad es el cimiento, es cierto. Pero el derecho de sangre es la estructura que sostiene todo lo demás. No confunda la sinceridad de sus intenciones con la validez jurídica de un reclamo", sentencia con una voz que no admite fisuras.
+> mecanica
+> Persuasión: Éxito (17 vs CD 10)
+> presion
+> Aunque el argumento ha calado en su juicio, Herminia se aferra a la burocracia como escudo; si no se presenta una prueba genealógica irrefutable, utilizará el tecnicismo del "derecho de sangre" para anular la verdad del documento.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3876 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 24 — 9/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2665 ms
+
+> "La ley no debe ser un muro para ocultar la verdad, sino el camino para alcanzarla."
+> Me inclino hacia delante, buscando su mirada con sinceridad y calma.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 22)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (7120 ms): «La ley no es un muro, es el mapa que evita que nos perdamos en los deseos person»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5638 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17281 ms
+
+> narrativa
+> El despacho, con sus techos altos y paredes de madera oscura, parece absorber el sonido, dejando que la luz de los ventanales estrechos recorte las figuras en un contraste violento entre la penumbra de las esquinas y el brillo gélido de la mesa central. El argumento cala con fuerza; la calma y la sinceridad del gesto logran perforar la armadura de la mujer, obligándola a procesar la lógica detrás de la petición.
+> Herminia Solar mantiene la espalda recta, sin ceder ni un centímetro ante la cercanía del interlocutor. Deja el documento sobre la mesa con un movimiento seco y preciso, aunque sus ojos reflejan una breve vacilación antes de recuperar su máscara de formalidad. "La ley no es un muro, es el mapa que evita que nos perdamos en los deseos personales. Si la verdad es tan absoluta como afirma, debería poder traducirse en un papel que el tribunal reconozca, no en una sentencia basada en la buena voluntad", sentencia con una voz gélida que intenta ocultar la grieta que acaba de abrirse en su convicción.
+> mecanica
+> Persuasión: Éxito (22 vs CD 10)
+> presion
+> Herminia ha aceptado la premisa lógica, pero ahora ha desplazado el conflicto hacia la prueba material. Si no se consigue un documento legalmente vinculante que respalde la verdad, ella utilizará el rigor del tribunal para desestimar cualquier argumento basado en la moralidad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5083 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 25 — 10/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4054 ms
+
+> "Entiendo su posición, señora Solar, pero la ley sin justicia no es más que una herramienta de opresión. No busco su buena voluntad, sino que hagamos lo correcto."
+> Me mantengo firme y busco en su mirada cualquier señal de dónde podría estar ese documento.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 6+3=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (14101 ms): «La justicia es un concepto demasiado elástico para sostener una propiedad, cabal»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  45536 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13206 ms
+
+> narrativa
+> La mirada de Herminia permanece imperturbable, como un lago congelado que no devuelve ningún reflejo del interior. A pesar del esfuerzo por desentrañar una duda o un titubeo en sus ojos, ella no cede ni un ápice; su rostro es una máscara de porcelana donde la seguridad se ha reinstalado con una rapidez quirúrgica.
+> Mantiene la mirada fija, sin parpadear. Sus manos se entrelazan sobre la mesa con una rigidez calculada, aunque el tono de su voz ha perdido parte de su gélido filo para volverse simplemente formal y distante: "La justicia es un concepto demasiado elástico para sostener una propiedad, caballero. Lo que usted llama 'hacer lo correcto', otros lo llamarían ignorar la historia y el linaje. Si su intención es tan noble, no debería temer que la verdad se someta al escrutinio de un documento legal; al contrario, debería ser lo único que nos brinde paz a todos".
+> mecanica
+> Perspicacia: Fallo (9 vs CD 10)
+> presion
+> Herminia ha cerrado la puerta a cualquier lectura intuitiva o emocional. Si no se encuentra una vía externa para localizar el documento, ella seguirá utilizando la burocracia como un escudo impenetrable.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  24839 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 26 — 11/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  57372 ms
+
+> "Tendrá usted razón en lo legal, pero la paz no nace de un papel, sino de la honestidad. Si ese documento existe, estoy seguro de que no teme que yo lo examine."
+> Me levanto de la silla con calma y busco con la mirada cualquier archivo o armario donde pueda guardarse dicha documentación.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 1+-1=0  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 0)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (19485 ms): «Le ruego que se siente. Este no es un despacho público ni el archivo del condado»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6548 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12362 ms
+
+> narrativa
+> El despacho se siente más gélido que nunca, un espacio de orden obsesivo donde la simetría de los muebles y la rigidez de los estantes parecen extender la voluntad de su dueña. No hay un solo papel fuera de lugar ni rastro de descuido; todo el conocimiento de la casa yace sepultado tras puertas de madera oscura y cerraduras de hierro que parecen burlarse de cualquier intento de búsqueda.
+> Herminia se levanta con una lentitud deliberada, interponiéndose sutilmente entre el camino y el mueble más cercano. Con la espalda recta y una voz firme que no necesita elevarse para imponerse, sentencia: "Le ruego que se siente. Este no es un despacho público ni el archivo del condado; es la casa de mi familia y no permitiré que se convierta en un escenario de búsqueda azarosa. Si el documento existe, el tribunal lo encontrará o no lo hará, pero no será bajo el criterio de un invitado".
+> mecanica
+> Investigación: Fallo (CD 10, Resultado 0)
+> presion
+> Herminia ha marcado un límite físico y social infranqueable. Continuar insistiendo en registrar la casa sin un mandato legal o una ventaja psicológica clara provocará que la anfitriona termine la visita prematuramente, cerrando el acceso al Solar.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1475 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Investigación, Resultado
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 27 — 12/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3063 ms
+
+> "Tiene razón, señora Herminia. Mis disculpas por mi impulsividad; no es propio de mí faltar al respeto a una anfitriona en su propio hogar."
+> Me detengo en seco y retrocedo un paso, haciendo una leve reverencia.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (6241 ms): «Agradezco su consideración. Es un gesto noble reconocer el error, y uno que no p»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  14456 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13882 ms
+
+> narrativa
+> El despacho recupera su quietud gélida. Herminia permanece inmóvil, observando el retroceso con una mirada analítica que no cede, aunque su rigidez se suaviza apenas un milímetro ante la deferencia. El aire, antes cargado de una tensión cortante, parece estabilizarse mientras ella procesa el gesto de respeto.
+> Relaja ligeramente los hombros y se aparta del mueble con un movimiento fluido, invitando a sentarse con un gesto elegante de la mano. "Agradezco su consideración. Es un gesto noble reconocer el error, y uno que no pasa desapercibido para mí. Por favor, tome asiento; hablemos con la calma que requiere este luto, lejos de las prisas y los cajones abiertos", dice con una voz que mantiene su autoridad, pero que ya no levanta un muro.
+> mecanica
+> Persuasión: Éxito (CD 10, Resultado 14)
+> presion
+> Aunque la tensión ha bajado, Herminia sigue siendo la guardiana de la información; cualquier desliz en la conversación o un intento nuevo de manipulación podría hacer que recupere su actitud gélida y cierre el diálogo abruptamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  7280 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · public_status_given
+  ⚠ nombres no reconocidos: Persuasión, Resultado, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 28 — 13/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2825 ms
+
+> "Muchas gracias por su comprensión, señora Herminia. Mi intención es solo ayudar a traer claridad a estos tiempos tan difíciles."
+> Me siento con cuidado y mantengo una postura recta y respetuosa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 1+3=4  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 4)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (8283 ms): «La claridad es un bien escaso en estos momentos, y más aún cuando los sentimient»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  921 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15748 ms
+
+> narrativa
+> El silencio del despacho se vuelve denso, casi tangible. A pesar del esfuerzo por mantener una fachada de respeto, hay algo en la atmósfera que se escapa al control, una incapacidad de leer los matices en el rostro de la mujer que deja la conversación en un terreno incierto. No hay pistas ocultas en sus gestos ni fisuras en su armadura social; solo queda la sensación de estar frente a un muro de cortesía impenetrable.
+> Herminia se sienta frente al jugador con la espalda perfectamente recta, entrelazando los dedos sobre el regazo. Su mirada es serena pero inquisitiva, manteniendo una distancia profesional mientras pronuncia con calma: "La claridad es un bien escaso en estos momentos, y más aún cuando los sentimientos se mezclan con los derechos legales. Aprecio que su intención sea ayudar, pues el orden es lo único que nos evitará caer en el caos que el dolor suele traer consigo."
+> mecanica
+> Perspicacia: Fallo (CD 10, Resultado 4)
+> presion
+> La cortesía de Herminia es un escudo. Al no haber logrado detectar ninguna debilidad o pista en su actitud, el jugador sigue caminando a ciegas sobre las verdaderas intenciones de la mujer y la ubicación de los documentos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1315 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Perspicacia, Resultado
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 29 — 14/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2436 ms
+
+> "El orden es fundamental, señora Herminia, pero no puede haber orden verdadero si se asienta sobre la mentira o la ocultación."
+> Me inclino ligeramente hacia ella, manteniendo una expresión amable pero firme.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (9024 ms): «La honestidad es una virtud loable, pero confunda la discreción con la mentira. »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4873 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15327 ms
+
+> narrativa
+> La luz fría de la tarde se filtra en el despacho, recortando las siluetas de los legajos perfectamente alineados en las estanterías y resaltando la asepsia de un entorno donde nada parece fuera de lugar. Herminia Solar no se inmuta ante la inclinación del cuerpo del interlocutor; mantiene la espalda recta, como si cualquier movimiento fuera a romper la geometría severa de la estancia. Sus dedos permanecen entrelazados sobre el regazo, sin un solo rastro de tensión, mientras sostiene la mirada con una calma gélida y educada.
+> "La honestidad es una virtud loable, pero confunda la discreción con la mentira. Hay verdades que, pronunciadas fuera de tiempo o lugar, no traen claridad, sino una herida innecesaria a quienes aún están de luto", sentencia con una voz que no admite réplica. El muro de formalidad permanece intacto, devolviendo el argumento con una elegancia que cierra cualquier puerta a la confesión.
+> mecanica
+> Persuasión: Fallo (CD 10, Resultado 9)
+> presion
+> El escudo de cortesía de Herminia se ha vuelto más rígido. Al fallar la persuasión, ella ha reinterpretado la insistencia como una falta de tacto, lo que hará que sea mucho más cautelosa y hermética en los próximos intentos de extraer información sobre los papeles.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1508 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión, Resultado
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 30 — 15/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3035 ms
+
+> "No busco herir a nadie, señora Solar, sino evitar que el silencio se convierta en una mentira más pesada que la verdad."
+> Mantengo mi postura, pero suavizo el tono, buscando conectar con ella desde la empatía.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 13+4=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 17)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (6417 ms): «La verdad, caballero, no es un peso que se aligere repartiéndola con quien no ti»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  8054 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15066 ms
+
+> narrativa
+> El aire frío del despacho, saturado de olor a tinta seca y cuero viejo, parece vibrar con la nueva nota de empatía en el tono. Las sombras de los muebles de caoba se alargan bajo la luz crepuscular, acentuando el vacío físico que separa los dos cuerpos, pero la rigidez geométrica de la escena comienza a ceder.
+> Herminia ladea ligeramente la cabeza, manteniendo la espalda recta. Sus ojos se suavizan mínimamente, aunque su expresión sigue siendo una máscara de cortesía distante mientras desenreda sus dedos muy lentamente. "La verdad, caballero, no es un peso que se aligere repartiéndola con quien no tiene derecho a cargarla. Mi tía valoraba el silencio precisamente porque sabía que hay cosas que solo pertenecen a quienes las han vivido", responde, permitiendo que la severidad de su voz se transforme en una reflexión melancólica.
+> mecanica
+> Persuasión: Éxito (CD 10, Resultado 17)
+> presion
+> Aunque Herminia ha suavizado su postura, sigue protegiendo el secreto de su tía. Si no se profundiza en el vínculo emocional o se ofrece una razón tangible para confiar, ella volverá a refugiarse en su formalidad gélida para cerrar la conversación.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1194 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Persuasión, Resultado, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) delta rechazado por la base (npc.estado_emocional): field npc.estado_emocional is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 31 — 16/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2853 ms
+
+> "Entiendo que el silencio sea una forma de respeto hacia vuestra tía, pero el verdadero honor reside en que su legado no se pierda en las sombras."
+> Doy un paso hacia ella, manteniendo una postura abierta y sincera.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 8+4=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 12)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (7966 ms): «El legado de mi tía no está en las sombras, sino en las paredes de esa casa y en»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  8642 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15217 ms
+
+> narrativa
+> El despacho se siente ahora más pequeño, el espacio entre ambos reducido mientras la luz crepuscular tiñe de naranja las estanterías cargadas de libros. El silencio se vuelve expectante, cargado de una fragilidad recién descubierta que parece vibrar en el aire denso del estudio.
+> Herminia mantiene la espalda recta, pero exhala un suspiro casi imperceptible que rompe su compostura. Sus ojos miran con una mezcla de reconocimiento y una distancia infranqueable mientras responde: "El legado de mi tía no está en las sombras, sino en las paredes de esa casa y en la sangre que corre por mis venas. El honor, caballero, no consiste en exponer los secretos de quien ya no puede defenderlos, sino en asegurar que lo que ella construyó no se desmorone por una imprecisión legal".
+> mecanica
+> Persuasión: Éxito (CD 10, Resultado 12)
+> presion
+> Herminia ha aceptado la premisa del honor, pero su prioridad sigue siendo la seguridad legal de su herencia. Si no se propone un plan concreto para proteger el legado mientras se busca la verdad, ella cerrará la conversación para evitar riesgos innecesarios.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3167 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · ideal_honored
+  ⚠ nombres no reconocidos: Persuasión, Resultado, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'npc', 'entity_id': 'Herminia', 'field': 'estado_emocional', 'value': 'vulnerable/reflexiva'}
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 32 — 17/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4163 ms
+
+> "Entiendo vuestra preocupación, señora Herminia, y os aseguro que mi honor es la garantía de que vuestro legado no sufrirá daño alguno."
+> Me acerco un paso más, manteniendo un tono suave pero firme.
+> "Permitidme ayudaros a poner en orden esos asuntos legales mientras desentrañamos la verdad; así aseguraremos que el nombre de vuestra tía quede limpio y protegido."
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (7080 ms): «Vuestras intenciones son loables, caballero, y agradezco la cortesía de vuestra »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1648 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13007 ms
+
+> narrativa
+> La cercanía no logra romper la barrera invisible que Herminia ha erigido. A pesar de la suavidad del tono, la mujer mantiene la espalda recta y una expresión serena, aunque entorna ligeramente los ojos, evaluando la sinceridad del interlocutor con una mirada escrutadora que parece pesar cada palabra.
+> "Vuestras intenciones son loables, caballero, y agradezco la cortesía de vuestra oferta. Sin embargo, el honor es una moneda que solo tiene valor cuando se respalda con hechos, no con promesas. Si realmente deseáis ayudarme a proteger el nombre de mi tía, debéis decirme exactamente cómo pensáis intervenir en los asuntos legales sin que vuestra presencia se convierta, ante los ojos del tribunal, en una interferencia indebida", sentencia con una calma gélida que devuelve la distancia al despacho.
+> mecanica
+> Persuasión: Fallo (CD 10, Resultado 9)
+> presion
+> Herminia Solar se mantiene escéptica. Si no se presenta un plan táctico y concreto para intervenir en el proceso legal sin comprometerla, ella dará por terminada la audiencia y rechazará cualquier colaboración externa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1453 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión, Resultado
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 33 — 18/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3620 ms
+
+> "Tenéis razón, señora. Las palabras son viento si no hay un plan que las sostenga."
+> Me pongo en pie y mantengo el contacto visual, buscando transmitirle seguridad.
+> "Puedo actuar como testigo imparcial o investigar las pruebas que el tribunal ignora, moviéndome en los márgenes donde vuestra posición no os permite entrar."
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 6+4=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (7116 ms): «Moverse en los márgenes... es una descripción deliberadamente vaga, pero admito »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7467 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15398 ms
+
+> narrativa
+> La luz cenicienta que se filtra por los ventanales parece expandir el vacío del despacho, dejando que el silencio se prolongue mientras Herminia procesa la propuesta. La rigidez de sus hombros cede apenas un milímetro y asiente con un movimiento casi imperceptible, analizando al interlocutor con una mezcla de cautela y pragmatismo.
+> Baja ligeramente la guardia, aunque no rompe su postura formal, y responde con una voz que ha perdido parte de su gélida distancia: "Moverse en los márgenes... es una descripción deliberadamente vaga, pero admito que es el único espacio donde alguien como vos podría ser útil sin manchar la legitimidad de mi reclamo. No busco un caballero andante, sino alguien que sepa encontrar lo que el polvo y el tiempo han decidido ocultar, y que sea capaz de entregarlo sin hacer ruido".
+> mecanica
+> Persuasión: Éxito (CD 10, Resultado 10)
+> presion
+> Herminia ha aceptado la premisa, pero su confianza es frágil. Cualquier error táctico en la primera misión de búsqueda o una indiscreción pública podría hacer que ella rompa el vínculo inmediatamente para salvar su reputación.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4647 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · competence_shown
+  ⚠ nombres no reconocidos: Persuasión, Resultado, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+  ✗ (Mundo) delta rechazado por la base (npc.estado_mental): field npc.estado_mental is not delta-able
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 18 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 34 — 19/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3315 ms
+
+> "Tened la certeza de que mi discreción será tan absoluta como mi lealtad a la verdad de vuestra causa."
+> Hago una inclinación de cabeza respetuosa y espero las instrucciones precisas de la misión.
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  sin tiradas declaradas
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=False · pnj_que_responden=['Herminia Solar'] · altera_estado=False · peso=conversacional
+
+### [5] ÁRBITRO
+
+  no requerido este turno
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Herminia Solar no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4477 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  7207 ms
+
+> narrativa
+> El despacho de Herminia es un espacio de austeridad imponente, donde el olor a papel viejo y cera de sello predomina sobre el frío que entra por los ventanales. Grandes estanterías de roble flanquean la estancia, cargadas de registros legales y crónicas familiares que parecen vigilar el encuentro desde las sombras.
+> Herminia sostiene la mirada mientras el silencio regresa a la habitación. No hay palabras que sigan a la promesa, solo el leve roce de sus dedos sobre la superficie de madera del escritorio y una expresión imperturbable que no revela si la lealtad jurada es una moneda válida en su tablero.
+> mecanica
+> presion
+> Herminia mantiene una distancia prudencial; el acuerdo es formal, pero la falta de una prueba tangible de capacidad hace que ella siga considerando al grupo como un riesgo potencial para su causa. Culaquier vacilación en el primer paso de la misión confirmará sus dudas.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4772 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · promise_made
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 35 — 20/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4084 ms
+
+> "Tened la seguridad de que mi palabra es tan firme como mi acero. No os fallaré."
+> Hago una reverencia formal y me pongo firme, manteniendo la mirada con serenidad.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 16)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (7954 ms): «Aprecio la determinación, pero en los asuntos de sucesión, el acero es un instru»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5153 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12705 ms
+
+> narrativa
+> El despacho se siente ahora más cerrado, el silencio ya no es tenso sino expectante. La luz grisácea que se filtra por el ventanal recorta la silueta de Herminia contra el roble oscuro de la estancia, mientras ella asiente levemente, reconociendo la formalidad del gesto.
+> Mantiene la espalda recta, sin inmutarse ante la reverencia, mientras desliza un dedo sobre el borde de un libro de registros sobre la mesa. "Aprecio la determinación, pero en los asuntos de sucesión, el acero es un instrumento muy tosco. Lo que necesito es precisión, no fuerza; que vuestro compromiso sea tan exacto como el linaje que intento preservar", sentencia con una voz que, aunque acepta el pacto, mantiene una distancia profesional infranqueable.
+> mecanica
+> Persuasión: Éxito (16 vs CD 10).
+> presion
+> Aunque Herminia ha aceptado el compromiso, su confianza es puramente formal. Cualquier error en el despliegue de la misión o una falta de tacto en el manejo de los registros familiares hará que retire su respaldo y considere que la fuerza bruta es, efectivamente, lo único que el grupo puede ofrecer.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3566 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · promise_made
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'npc', 'entity_id': 'Herminia', 'field': 'relacion_grupo', 'value': 'Aceptación cautelosa; reconoce el valor del honor, pero mantiene la guardia hasta ver resultados'}
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 36 — 21/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2919 ms
+
+> "Vuestra precisión será mi guía, señora Herminia. Os aseguro que mi espada solo servirá para proteger la verdad que vuestros registros custodian."
+> Me pongo firme y aguardo sus instrucciones precisas sobre el primer paso a seguir.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 18+3=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 21)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (6768 ms): «Es una promesa noble, aunque la verdad suele ser más esquiva que un acero bien t»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  15653 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9860 ms
+
+> narrativa
+> Herminia cierra el libro de registros con un golpe seco pero controlado, un sonido que resuena en el silencio del despacho como el cierre de un trato. Te mira fijamente a los ojos, con una expresión de sobria expectativa que parece sopesar cada palabra dicha, evaluando si la lealtad prometida es tan sólida como el acero que mencionas.
+> "Es una promesa noble, aunque la verdad suele ser más esquiva que un acero bien templado. Empecemos por lo evidente: los archivos parroquiales de San Judas. Allí consta el registro de nacimientos y defunciones de los últimos cien años; si hay alguna inconsistencia en la ascendencia que Doroteo pretende reclamar, el papel lo dirá antes que cualquier testigo", sentencia, marcando así el rumbo de la investigación.
+> mecanica
+> Perspicacia: Éxito (21 vs CD 10).
+> presion
+> La ruta hacia los archivos de San Judas es clara, pero la legitimidad de la búsqueda depende de la rapidez. Si Doroteo sospecha que Herminia ha contratado ayuda externa para desmantelar su reclamo, podría intentar acceder a los archivos primero para "corregir" las inconsistencias que ella espera encontrar.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1753 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Judas, Perspicacia, San, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 37 — 22/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2645 ms
+
+> "Tened la seguridad de que mi palabra es tan firme como mi fe. No os fallaré."
+> Hago una breve reverencia y me dirijo inmediatamente hacia los archivos de San Judas para asegurar las pruebas.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 20)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Herminia Solar no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  780 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10232 ms
+
+> narrativa
+> El camino hacia los archivos de San Judas se despliega con una claridad absoluta bajo los pasos apresurados. La determinación impulsa cada zancada, permitiendo que el trayecto se reduzca a un borrón de calles y fachadas mientras el cuerpo responde con una eficiencia impecable, ganando terreno con una velocidad que deja atrás cualquier posible complicación en el camino.
+> Al llegar a las puertas de la parroquia, el aire pesado del incienso y el polvo antiguo se filtra desde el interior. El edificio se alza imponente y silencioso, guardando en sus entrañas los registros que podrían inclinar la balanza del Solar.
+> mecanica
+> Atletismo: Éxito (20 vs CD 10).
+> presion
+> El acceso a los archivos ha sido rápido, pero el tiempo sigue corriendo. Si el rastro de la llegada a San Judas llega a oídos de Doroteo, este podría movilizar sus propios contactos dentro de la parroquia para bloquear la entrada o alterar los folios antes de que puedan ser examinados.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3333 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.location_id
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Judas, San, Éxito
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [13] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 38 — 23/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2697 ms
+
+> "Que la luz guíe mi camino y la verdad salga a la superficie."
+> Empujo las puertas de la parroquia y entro con paso firme, buscando directamente el acceso a los archivos.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 12+1=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (7304 ms): «Tenga cuidado con el entusiasmo, por favor. La verdad es un derecho que se recla»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3543 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9368 ms
+
+> narrativa
+> Las puertas de la parroquia ceden con un gemido metálico, revelando una nave central que se extiende como un túnel de piedra fría y sombras alargadas. La luz, asfixiada por vitrales cubiertos de hollín, cae en haces pálidos que apenas logran rescatar del oscurantismo el camino hacia el fondo, donde una pesada puerta de roble reforzada con hierro custodia el acceso a la sacristía y los archivos bajo un silencio sepulcral.
+> Herminia Solar se detiene justo detrás, manteniendo una distancia prudencial con la espalda recta y las manos entrelazadas al frente. Sus ojos escanean el entorno con cautela antes de hablar con una calma gélida pero educada: "Tenga cuidado con el entusiasmo, por favor. La verdad es un derecho que se reclama con orden, no con impulsos, y menos en una casa tan susceptible a los susurros como esta parroquia".
+> mecanica
+> Percepción: Éxito (13 vs CD 10).
+> presion
+> El avance es seguro, pero la presencia de Herminia y el ruido de la entrada podrían alertar a los sacristanes. Si el acceso no es discreto, alguien podría avisar a los aliados de Doroteo antes de que los registros sean asegurados.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1534 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 39 — 24/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3301 ms
+
+> "Tenga la seguridad de que mi intención es traer la luz, no el caos, señora Solar."
+> Avanzo con paso firme y pausado hacia la puerta de roble, manteniendo la guardia alta para proteger la retaguardia.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 16+1=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 17)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (4339 ms): «La luz puede ser cegadora si no se sabe dónde apuntar, pero acepto su intención.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3694 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  63892 ms
+
+> narrativa
+> El eco de los pasos resuena con una nitidez inquietante contra las paredes de piedra húmeda mientras el avance continúa. A los costados, los bancos de madera carcomida y los confesionarios abiertos parecen observar el camino, como testigos mudos que custodian la ruta hacia la puerta de roble al fondo, que se alza como un monolito oscuro bajo el arco ojival.
+> Herminia Solar asiente levemente con la cabeza, manteniendo su postura rígida y siguiendo el paso a una distancia prudencial, mientras observa los alrededores con sospecha profesional. "La luz puede ser cegadora si no se sabe dónde apuntar, pero acepto su intención", comenta con tono medido. "Solo le pido que recuerde que estamos buscando un hecho, no una interpretación".
+> mecanica
+> Percepción: Éxito (17 vs CD 10).
+> presion
+> El silencio de la nave central es engañoso. Cada paso firme acerca al grupo a la puerta de roble, pero el ruido persistente en el pasillo de piedra podría alertar a cualquier vigilante que aún ronde los archivos antes de que logren entrar.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1642 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 40 — 25/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2459 ms
+
+> "Tenga la seguridad de que busco la verdad, señora Solar. Los hechos no mienten, solo necesitan ser revelados."
+> Sigo avanzando hacia la puerta de roble, manteniendo la mano cerca de mi arma por si alguien nos intercepta.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 1+1=2  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 2)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (6346 ms): «Es una promesa noble. Esperemos que la realidad sea tan clara como sus palabras,»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3111 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14659 ms
+
+> narrativa
+> El avance se detiene abruptamente frente a la puerta de roble. La madera es masiva y gélida, adornada con relieves de figuras encapuchadas que parecen fundirse en la oscuridad del grano, mientras que tras el umbral el aire se siente denso y cargado de un polvo antiguo que asfixia. Al intentar asegurar el perímetro, la atención falla; un descuido en la guardia o un ruido imprevisto dejan el entorno desprotegido, rompiendo la concentración en el momento más crítico.
+> Herminia Solar mantiene la espalda recta, con los ojos recorriendo la puerta con una mezcla de respeto y ansiedad mientras entrelaza las manos frente a ella. "Es una promesa noble. Esperemos que la realidad sea tan clara como sus palabras, pues en los asuntos de sangre y piedra, la verdad suele ser la única cosa que no admite matices", sentencia con una voz que no deja espacio a la duda.
+> mecanica
+> Percepción: Fallo (2 vs CD 10).
+> presion
+> La pifia en la percepción ha dejado al grupo vulnerable. Mientras se centran en la puerta cerrada, el ruido de pasos metálicos comienza a resonar desde el pasillo de piedra que acaban de dejar atrás; alguien, o algo, ha detectado su presencia y se aproxima rápidamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1132 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 41 — 26/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1830 ms
+
+> "¡Atrás, Herminia! Póngase detrás de mí."
+> Me giro rápidamente hacia el pasillo, desenvainando mi arma y plantando los pies con firmeza para bloquear el camino.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 12+1=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (2765 ms): «No soy una niña que necesite guarda, pero agradezco su diligencia.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7963 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  26845 ms
+
+> narrativa
+> El acero surge de la vaina con un chasquido seco que resuena en las paredes de piedra húmeda. El pasillo, estrecho y gélido, devuelve un eco amplificado de cada movimiento, mientras la penumbra parece tragarse los límites del camino. La reacción es precisa y oportuna: el cuerpo se planta como un muro infranqueable, bloqueando el acceso justo antes de que la amenaza emerja de la oscuridad.
+> Herminia retrocede un paso con elegancia, manteniendo la compostura y la espalda recta, aunque sus ojos se clavan con tensión en el pasillo desde donde provienen los pasos. "No soy una niña que necesite guarda, pero agradezco su diligencia", responde, su voz firme a pesar de la vibración del frío que cala hasta los huesos.
+> mecanica
+> Percepción: Éxito (13 vs CD 10).
+> presion
+> El acero está fuera y la posición es ventajosa, pero los pasos metálicos no se han detenido; el enemigo ahora sabe exactamente dónde están y el espacio reducido del pasillo convertirá el encuentro en un choque frontal inevitable.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1976 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · bond_target_protected
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 42 — 27/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2385 ms
+
+> "Quédese detrás de mí, señora Herminia. Yo me encargaré de lo que sea que venga."
+> Me planto firmemente en la entrada del pasillo, alzando mi escudo para cubrir la mayor parte del camino.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 8+1=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (3811 ms): «Haga lo que considere necesario para asegurar el camino. No me moveré de aquí, p»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3358 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9881 ms
+
+> narrativa
+> El escudo se alza con determinación, pero la posición no es tan sólida como se pretendía. El peso del metal y la prisa por cerrar el paso dejan un hueco crítico en la guardia, una fisura por la que la oscuridad del pasillo parece filtrarse con malicia. El eco de los pasos metálicos, que antes eran una advertencia distante, ahora retumba con una claridad gélida, revelando que lo que sea que avance por la piedra húmeda ya ha detectado la debilidad en la formación.
+> Herminia Solar permanece un paso detrás, con las manos entrelazadas al frente y la barbilla en alto. Observa la espalda del jugador con una mezcla de respeto pragmático y una rigidez que oculta su inquietud. "Haga lo que considere necesario para asegurar el camino. No me moveré de aquí, pero confío en que su brazo sea tan firme como su disposición", sentencia con una voz que no tiembla, aunque sus ojos no se apartan de la penumbra del corredor.
+> mecanica
+> Percepción: Fallo (9 vs CD 10).
+> presion
+> La guardia es insuficiente y la sorpresa se ha perdido. El enemigo emergerá en cualquier instante y el primer golpe impactará en un punto ciego, poniendo en riesgo no solo la línea de defensa, sino la seguridad de Herminia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2523 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · bond_target_protected
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 43 — 28/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2599 ms
+
+> "No tema, señora Solar. Mi escudo es su muro."
+> Me planto con firmeza, ajustando la posición de mis pies para cubrir el hueco y protegiendo a Herminia con mi cuerpo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 8+4=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 12)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (3674 ms): «Aprecio su determinación, pero no confunda mi compostura con fragilidad. Solo le»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3049 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5635 ms
+
+> narrativa
+> El metal se asienta con un golpe seco sobre la piedra húmeda, cerrando el hueco con una firmeza absoluta. El escudo ahora es un muro infranqueable que corta la penumbra gélida del pasillo, devolviendo la seguridad a la formación mientras la luz de las antorchas rebota en la superficie del acero.
+> Herminia Solar mantiene la espalda recta y la barbilla alta, aunque sus nudillos se blanquean al apretar sus propias manos. No retrocede, pero se deja cubrir por el escudo con una aceptación digna. "Aprecio su determinación, pero no confunda mi compostura con fragilidad. Solo le pido que no olvide que lo que proteges no es solo a una mujer, sino el honor de quien ha habitado estas piedras por cinco generaciones", sentencia con una voz que respira una autoridad ancestral.
+> mecanica
+> Atletismo: Éxito (12 vs CD 10). Posición asegurada.
+> presion
+> El sonido de los pasos metálicos ha cesado abruptamente justo delante de la posición. El silencio que sigue es más pesado que el ruido, sugiriendo que el enemigo se ha detenido para evaluar la nueva y sólida defensa antes de lanzar un asalto coordinado.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1464 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · bond_target_protected
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 44 — 29/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1276 ms
+
+> "Vuestro honor está a salvo conmigo, señora. No daré un paso atrás."
+> Me mantengo firme detrás del escudo, atento a cualquier movimiento tras el muro de acero.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 4+1=5
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 5)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (2274 ms): «Que así sea. En ese caso, que vuestra voluntad sea tan inamovible como el acero »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2816 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4319 ms
+
+> narrativa
+> El pasillo se extiende como una garganta de piedra caliza, estrecha y goteante, donde el eco del silencio se siente como una presión física. Tras el muro de acero, la oscuridad permanece absoluta, devorando cualquier rastro de movimiento o sonido; no hay nada que el oído o la vista puedan rescatar del vacío, solo el reflejo tenue de las antorchas sobre el suelo mojado.
+> Herminia Solar asiente con un movimiento breve y solemne de cabeza, sin soltar la tensión de sus manos y manteniendo la mirada fija en el espacio vacío tras el escudo. "Que así sea. En ese caso, que vuestra voluntad sea tan inamovible como el acero que nos separa de lo que sea que aceche en la oscuridad", sentencia con una gravedad que llena el estrecho corredor.
+> mecanica
+> Percepción: Fallo (5 vs CD 10). No detectas nada tras el muro.
+> presion
+> La falta de información es un arma en manos del enemigo. Mientras esperas en silencio, la entidad tras el escudo ha terminado de analizar tu posición y el primer impacto es inminente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1383 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · ideal_honored
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 45 — 30/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1967 ms
+
+> "No temáis, Herminia. Mi escudo y mi fe os protegerán."
+> Me coloco delante de ella, plantando los pies firmemente en el suelo mojado y alzando mi escudo para recibir el golpe.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 23)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (3092 ms): «Agradezco vuestro valor, pero no confundáis mi prudencia con el miedo. Solo espe»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  684 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5126 ms
+
+> narrativa
+> El impacto resuena en el pasillo como un trueno, una fuerza bruta que sacude los cimientos de la piedra caliza. El escudo absorbe la violencia del golpe con un estruendo metálico, pero la posición es inamovible; los pies se clavan en el suelo mojado, resistiendo el embate sin ceder un centímetro, convirtiendo el cuerpo en un muro infranqueable que devuelve la estabilidad al grupo.
+> Herminia Solar da un paso atrás, manteniendo una postura erguida y formal, mientras observa la espalda del jugador con una mezcla de respeto y escepticismo contenido. "Agradezco vuestro valor, pero no confundáis mi prudencia con el miedo. Solo espero que vuestra fe sea tan sólida como ese metal que sostenéis", sentencia con una voz que recupera su compostura, aunque sus ojos permanecen alerta hacia la penumbra.
+> mecanica
+> Atletismo: Éxito (23 vs CD 10). Has resistido el impacto sin ser desplazado ni derribado.
+> presion
+> El ataque ha revelado la posición exacta de la defensa. El enemigo, ahora consciente de la resistencia del escudo, comienza a maniobrar en las sombras para buscar un flanco abierto.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1357 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · bond_target_protected
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 46 — 31/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3059 ms
+
+> "No dudéis de mi fe, Herminia. Mi escudo es el refugio de quien no puede luchar."
+> Me mantengo firme, bloqueando el paso y escudriñando la oscuridad para localizar cualquier movimiento.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 6+1=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (3650 ms): «Es una declaración noble, sin duda. Pero en El Solar, el refugio no solo se cons»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2694 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4354 ms
+
+> narrativa
+> El pasillo de piedra caliza húmeda devuelve un eco sordo, y la oscuridad que se espesa al final del corredor parece tragarse cualquier rastro de movimiento. A pesar de la vigilancia, la penumbra permanece impasible, ocultando cualquier amenaza que aceche en el silencio vibrante de las paredes.
+> Herminia Solar mantiene la espalda recta y las manos entrelazadas al frente; asiente levemente con la cabeza, reconociendo la valentía del gesto, pero recupera inmediatamente su aire de autoridad genealógica. "Es una declaración noble, sin duda. Pero en El Solar, el refugio no solo se construye con acero, sino con la legitimidad de quien sabe exactamente dónde pertenece cada piedra de este lugar", sentencia con una calma gélida.
+> mecanica
+> Percepción: Fallo (7 vs CD 10). No logras detectar ningún movimiento en la oscuridad.
+> presion
+> Al no localizar la fuente de la amenaza, el grupo permanece vulnerable. El enemigo sigue moviéndose en las sombras, aprovechando la ceguera del escudo para posicionarse en un ángulo muerto.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1794 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · ideal_honored
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 47 — 32/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1709 ms
+
+> "No permitiremos que la oscuridad nos tome desprevenidos."
+> Me coloco frente a Herminia para cubrirla con mi cuerpo y escudo, manteniendo la guardia alta mientras escaneo la penumbra.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 17+1=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  Herminia Solar (2763 ms): «Agradezco su celo, pero no olvide que estoy acostumbrada a caminar por estos pas»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1837 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5294 ms
+
+> narrativa
+> La posición es sólida y el escudo se convierte en el único muro entre la noble y el abismo. Al agudizar la vista, el velo de sombras se rasga: la penumbra al fondo del pasillo no es un vacío, sino una masa orgánica que late con una respiración lenta y pesada. Mientras el líquido viscoso y oscuro gotea desde el techo de piedra caliza, el movimiento de esa entidad se vuelve evidente, revelando una presencia que acecha en el cuello de botella del corredor.
+> Herminia Solar no retrocede ni un centímetro, manteniendo la espalda rígida a pesar de que la silueta del escudo ahora bloquea parte de su visión. Con una voz modulada y una cortesía que marca una distancia jerárquica infranqueable, sentencia: "Agradezco su celo, pero no olvide que estoy acostumbrada a caminar por estos pasillos incluso cuando el silencio se vuelve pesado. Mantenga la guardia; mi seguridad es secundaria frente a la integridad de esta casa".
+> mecanica
+> Percepción: Éxito (18 vs CD 10). Has identificado que la oscuridad es una entidad orgánica y has localizado su posición al final del pasillo.
+> presion
+> La criatura ha sido detectada, pero su naturaleza orgánica sugiere que puede expandirse o desplazarse rápidamente por las paredes húmedas para flanquear la posición del escudo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2903 ms · 1 eventos · 0 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · bond_target_protected
+  ✓ creación npc: entidad orgánica
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: npc entidad orgánica
+  ✗ PNJ inexistente: herminia_solar
+
+### [13] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 48 — 33/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1638 ms
+
+> "No se preocupe por la casa, milady. Yo me encargaré de que nada la perturbe."
+> Me planto firmemente, manteniendo el escudo en alto y el arma lista, atento a cualquier movimiento en las paredes.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 13+1=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['Herminia Solar'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de Herminia Solar no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1793 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3723 ms
+
+> narrativa
+> La postura es imperturbable y el escudo se asienta con firmeza, cerrando el paso en el corredor de caliza húmeda. El aire huele a salitre y a algo rancio, mientras el fluido oscuro y viscoso sigue deslizándose por las paredes como venas negras que laten al ritmo de una respiración ajena.
+> La vigilancia rinde frutos: el movimiento en las sombras se vuelve legible. La entidad orgánica, que hasta ahora era una mancha en la penumbra, se desplaza con una fluidez perturbadora, pero cada giro y cada contracción de su masa quedan registrados antes de que pueda intentar cualquier flanqueo.
+> mecanica
+> Percepción: Éxito (14 vs CD 10). Mantienes el control visual de la entidad y el entorno.
+> presion
+> La criatura ha comprendido que ha sido detectada; su ritmo respiratorio se acelera y comienza a presionar contra los límites del corredor, buscando una grieta o un punto ciego en la defensa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1376 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 49 — 34/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1451 ms
+
+> "No pasarás más allá de aquí, criatura. ¡Retrocede!"
+> Sigo plantado con el escudo en alto, bloqueando el camino y manteniendo la mirada fija en la masa orgánica para no perderla de vista.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 14+4=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 18)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2071 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2557 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3443 ms
+
+> narrativa
+> El impacto de la orden resuena en el estrecho cuello de botella del corredor, donde las paredes de caliza sudan un fluido negro que gotea rítmicamente. La masa orgánica, atrapada entre la piedra fría y la barrera infranqueable del escudo, se agita violentamente en un espasmo de frustración, golpeando el muro opuesto con un sonido húmedo y pesado.
+> La criatura se detiene en seco. "...", sisea, emitiendo una vibración que sacude el aire mientras sus membranas se estremecen con violencia. Sin embargo, la voluntad del acero y la voz prevalecen; el ente retrocede lentamente, deslizándose por la pared caliza en un movimiento fluido y cauteloso, evitando el contacto visual directo pero manteniendo su presencia acechante en la penumbra del corredor.
+> mecanica
+> Intimidación: Éxito (18 vs CD 15).
+> presion
+> La entidad ha retrocedido, pero permanece en el corredor. Si no se avanza o se neutraliza su posición, buscará una ruta alternativa para flanquear la posición actual.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1933 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · competence_shown
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4204: entidad orgánica affinity 0.0 → 2.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 50 — 35/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1336 ms
+
+> "No retrocedas más, criatura. Este camino ha quedado cerrado para ti."
+> Mantengo la posición con el escudo en alto, bloqueando el paso mientras vigilo sus movimientos en la penumbra.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 12+1=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 13)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1374 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1864 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3020 ms
+
+> narrativa
+> La mirada se pierde en la penumbra del corredor de caliza húmeda, donde el fluido negro gotea rítmicamente desde el techo. A pesar del esfuerzo por rastrear cualquier movimiento, la oscuridad al fondo se espesa, volviéndose impenetrable y devorando el rastro de la criatura que se ha deslizado fuera de la vista.
+> Desde lo alto, un siseo prolongado vibra en las paredes, haciendo que el aire mismo parezca temblar. "...", exhala la entidad orgánica mientras sus membranas se agitan en un movimiento espasmódico, fundiéndose con las sombras del techo hasta desaparecer por completo.
+> mecanica
+> Percepción: Fallo (13 vs CD 15).
+> presion
+> La entidad ha escapado de la vista y se ha posicionado en el techo. Si no se desplaza con cautela o se ilumina la zona, el ataque vendrá desde un ángulo ciego y sorpresivo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1344 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta entidad orgánica · npc.location_id = El Archivo del Notario
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4212: entidad orgánica.location_id = El Archivo del Notario
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 51 — 36/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1390 ms
+
+> "¡No te ocultes, criatura! Sal a la luz."
+> Saco mi escudo y levanto mi arma, mientras busco una fuente de luz o intento iluminar el techo con mi equipo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 6+1=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 7)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2174 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1725 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3529 ms
+
+> narrativa
+> El intento de iluminar las alturas fracasa; la luz se dispersa inútilmente contra la humedad del pasillo de caliza pálida, incapaz de perforar la densidad de las sombras. Bajo los pies, el manto de fluido negro y viscoso parece palpitar, absorbiendo cualquier destello y dejando el entorno sumido en una penumbra asfixiante donde el arma y el escudo ofrecen una seguridad ilusoria.
+> Desde el techo curvo, donde los arcos irregulares se pierden en la oscuridad, emerge un sonido gutural, casi un ronroneo vibratorio. "...", emite la entidad orgánica. El ruido se acompaña del roce húmedo de membranas deslizándose sobre la piedra, un movimiento fluido y aceitoso que se desplaza justo fuera del alcance de la visión, acechando desde el ángulo ciego.
+> mecanica
+> Percepción: Fallo (7 vs CD 15).
+> presion
+> La entidad orgánica ha aprovechado el fallo de iluminación para posicionarse exactamente sobre el jugador. Si no hay un cambio de posición inmediato o una defensa reactiva, el ataque será un golpe crítico desde el techo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1143 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 52 — 37/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1417 ms
+
+> "¡Por la luz, aléjate de mí!"
+> Doy un salto rápido hacia atrás para salir de la zona de peligro y levanto mi escudo para cubrirme.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Acrobacias: 7+0=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 7)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1801 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1697 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3192 ms
+
+> narrativa
+> El salto es torpe, un movimiento precipitado que no logra despejar el área con eficacia; el pie resbala en la superficie aceitosa de la caliza pálida, dejando el cuerpo desequilibrado y un costado peligrosamente expuesto. Justo en ese instante, el aire vibra con un siseo prolongado y húmedo.
+> "...", emite la entidad orgánica mientras se desprende del techo curvo. Cae como una masa de sombras líquidas, aterrizando con un impacto viscoso y pesado exactamente donde el jugador se encontraba un segundo antes, aprovechando la vulnerabilidad del flanco abierto para cerrar la distancia.
+> mecanica
+> Acrobacias: Fallo (7 vs CD 15).
+> presion
+> La entidad orgánica ha aterrizado y el jugador está desequilibrado con un flanco expuesto; cualquier movimiento lento resultará en un ataque inmediato y devastador.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1127 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = desequilibrado
+  ⚠ nombres no reconocidos: Acrobacias, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4224: Ilvard.conditions = desequilibrado
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 53 — 38/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  932 ms
+
+> "¡Atrás, criatura!"
+> Intento recuperar el equilibrio rápidamente y levanto mi escudo para cubrir mi costado expuesto mientras me pongo en guardia.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 13+4=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 17)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1667 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1814 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4596 ms
+
+> narrativa
+> El cuerpo reacciona con un impulso eléctrico, recuperando la verticalidad justo a tiempo para plantar los pies sobre la caliza resbaladiza. El escudo se eleva en un arco preciso, chocando contra la masa viscosa con un impacto seco que detiene el avance de la criatura.
+> La entidad orgánica no emite sonido alguno. Solo un siseo gutural que vibra en su pecho mientras se desliza sobre la piedra aceitosa, ajustando su masa viscosa para absorber el impacto del escudo y envolver el borde del metal.
+> mecanica
+> Atletismo: Éxito (17 vs CD 15).
+> presion
+> La entidad está intentando rodear el escudo; si no te desplazas o contraatacas, la masa orgánica encontrará una brecha en tu defensa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  884 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 54 — 39/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  949 ms
+
+> "¡Atrás, aberración!"
+> Empujo con fuerza el escudo para distanciar a la criatura de mí y aprovecho el impulso para lanzar un tajo con mi espada hacia su centro.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 8+4=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 12)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1799 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  718 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4023 ms
+
+> narrativa
+> El impulso del escudo no es suficiente para desestabilizar la masa; la criatura se ancla a la caliza con una adherencia antinatural, resistiendo el empuje. Al lanzar el tajo, la hoja de la espada se hunde en el centro de la entidad, pero no encuentra una superficie sólida que cortar, sino una densidad viscosa que se cierra sobre el acero en un instante.
+> La entidad orgánica no responde con gritos ni dolor. "...". Un sonido metálico y húmedo resuena mientras la masa se deforma para atrapar la hoja de la espada, dejándola encajada en su cuerpo. Solo queda un siseo rítmico, una vibración húmeda que parece imitar, con una precisión perturbadora, el sonido de la respiración del atacante.
+> mecanica
+> Atletismo: Fallo (12 vs CD 15).
+> presion
+> La espada ha quedado atrapada en la masa de la entidad; si no fuerzas la extracción o buscas otra forma de liberarla, quedarás desarmado y expuesto al siguiente movimiento de la criatura.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1610 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.inventory = espada (atrapada)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4229: Ilvard.inventory = espada (atrapada)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 55 — 40/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1024 ms
+
+> "¡Suéltame, aberración!"
+> Tiro con fuerza bruta de la empuñadura para arrancar mi espada de esa masa viscosa.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 15)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2188 ms): «—... Suéltame... aberración...—»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  917 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3183 ms
+
+> narrativa
+> El acero cede con un sonido viscoso, desprendiéndose de la masa orgánica mediante un tirón seco que libera la hoja. La criatura retrocede unos centímetros, emitiendo un siseo rítmico mientras su cuerpo vibra violentamente, produciendo una distorsión húmeda y metálica que imita la voz del atacante con una precisión deformada.
+> —... Suéltame... aberración...—
+> La entidad no posee cuerdas vocales, pero el eco de sus palabras resuena en el aire como una mímica exacta y perturbadora, dejando que la espada sea arrancada sin ofrecer más resistencia.
+> mecanica
+> Atletismo: Éxito (15 vs CD 15).
+> presion
+> La entidad ha quedado desestabilizada por el tirón, pero su capacidad de imitar y vibrar sugiere que está analizando el comportamiento del atacante para su siguiente movimiento.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1787 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.inventory = espada
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4232: Ilvard.inventory = espada
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 56 — 41/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1297 ms
+
+> "¡Atrás, criatura impura! No profanarás más este lugar."
+> Sostengo mi espada con firmeza y me coloco en guardia, protegiendo el espacio detrás de mí mientras observo cada vibración de la entidad.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 20+1=21  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 21)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2168 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  6137 ms
+
+> narrativa
+> La guardia es perfecta y el acero brilla con una nitidez fría bajo la luz viscosa del lugar. Al concentrar la mirada, el caos de la entidad se vuelve legible: cada vibración rítmica, cada espasmo de su masa orgánica, revela un patrón predecible en su respiración y el flujo de sus fluidos. La piedra que se funde con tejido pulsante parece detenerse un instante, permitiendo que el olor a ozono y putrefacción se asiente mientras el entorno queda expuesto en todo su asco y fragilidad.
+> La criatura se mantiene inmóvil, observando en silencio. Sus membranas tiemblan, pero no hay un ataque inminente; solo una espera tensa y húmeda que confirma que el terreno ha sido analizado con precisión quirúrgica.
+> mecanica
+> Percepción: Éxito (21 vs CD 15).
+> presion
+> La entidad ha dejado de imitar voces para concentrarse en el flujo de energía del entorno; si no se toma la iniciativa, empezará a absorber la humedad del aire para regenerar la herida de la espada.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  744 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 57 — 42/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1114 ms
+
+> "No permitiré que te recuperes para volver a herir a los inocentes."
+> Aprovecho su inmovilidad para lanzar un ataque decisivo hacia el núcleo de la masa orgánica.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 15)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2237 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1540 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4771 ms
+
+> narrativa
+> El acero impacta con precisión quirúrgica, hundiéndose profundamente en el centro de la masa. La cámara de piedra húmeda reacciona al golpe: las paredes, que parecen respirar y fundirse en tejido orgánico, laten con un espasmo violento, coordinadas con el dolor de la criatura. El fluido viscoso que recubre el suelo salpica hacia arriba mientras el núcleo recibe el golpe seco y contundente.
+> La entidad orgánica se contrae violentamente, incapaz de evitar el daño. De su interior surge un sonido gutural, similar al aire escapando de un pulmón perforado, que vibra en toda su masa: "...". A pesar de la fuerza del impacto, el núcleo resiste, manteniéndose íntegro aunque sacudido por la brutalidad del ataque.
+> mecanica
+> Atletismo: Éxito (15 vs CD 15).
+> presion
+> El núcleo ha quedado expuesto y vulnerable tras el impacto; si no se asesta un golpe final ahora, la entidad utilizará la vibración de las paredes orgánicas para impulsarse y contraatacar con una fuerza renovada.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  880 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 58 — 43/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1435 ms
+
+> "¡Por la luz que todo lo purifica, termina ahora!"
+> Aprovecho la apertura del núcleo y descargo un golpe final con toda mi fuerza.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 8+4=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 12)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3161 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2867 ms
+
+> narrativa
+> El golpe desciende con furia, pero el acero resbala sobre la superficie viscosa del núcleo justo en el instante crítico. La fuerza del impacto se dispersa, incapaz de perforar la membrana que, en un reflejo agónico, se endurece para repeler el ataque.
+> La cámara late ahora en un rojo visceral, con las paredes de tejido orgánico contraídas en un espasmo agónico. El núcleo, expuesto y tembloroso, emite un brillo mortecino que pulsa al ritmo de una respiración pesada, recuperando su cohesión mientras la estructura orgánica comienza a vibrar con una intensidad amenazante.
+> mecanica
+> Atletismo: Fallo (12 vs CD 15).
+> presion
+> La entidad ha absorbido el impacto y utiliza la contracción de las paredes para ganar impulso; si no se cambia la táctica o se busca una nueva apertura, el contraataque será devastador.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2031 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 59 — 44/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1210 ms
+
+> "¡No cederé ante esta aberración!"
+> Me planto firmemente, levantando mi escudo para cubrirme y preparándome para el impacto del contraataque.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 23)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1426 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  14017 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4997 ms
+
+> narrativa
+> El impacto es brutal, una marea de masa viscosa y fuerza bruta que choca contra el metal del escudo con la potencia de un derrumbe. Los pies se hunden en el suelo blando de la cámara, pero la postura resiste; el acero sostiene el embate, desviando la presión del golpe mientras el cuerpo absorbe la vibración del choque.
+> Alrededor, la estancia se ha transformado en un saco de tejido palpitante y húmedo, donde el aire se vuelve espeso, saturado de un olor metálico a hierro y bilis. El núcleo brilla con una luz carmesí intermitente, proyectando sombras grotescas sobre las paredes que se contraen y expanden como un corazón gigante. En medio de ese espasmo, la entidad orgánica emite un sonido gutural, una vibración que no es voz sino el eco de un órgano colapsando, que resuena en las paredes mientras la criatura se expande violentamente contra la defensa.
+> mecanica
+> Atletismo: Éxito (23 vs CD 15).
+> presion
+> La entidad ha quedado momentáneamente exhausta tras el choque, pero el núcleo carmesí comienza a latir con más rapidez; si no se aprovecha esta vulnerabilidad para atacar el centro, la masa orgánica se regenerará y cerrará el espacio vital del grupo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2830 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 60 — 45/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1277 ms
+
+> "¡No pasarás más allá de mi escudo!"
+> Aprovecho que la criatura está exhausta para cargar con toda mi fuerza hacia el núcleo carmesí y golpearlo con mi arma.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 2+4=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 6)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2730 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2091 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8178 ms
+
+> narrativa
+> La carga carece de la potencia necesaria para romper la inercia de la criatura. El impacto es sordo, insuficiente, y el núcleo carmesí, que flota en el centro de aquella cámara de paredes musculares y contracciones rítmicas, apenas se inmuta. Solo se produce un espasmo reflejo, una contracción violenta del tejido translúcido que vibra al ritmo de los filamentos circundantes.
+> Desde las profundidades de la masa emana un sonido vibratorio, un roce de placas de cartílago que sustituye a cualquier palabra: "...". En lugar de retroceder, la entidad reacciona envolviendo el arma en una capa de tejido viscoso y cálido que la retiene con fuerza, anclándola a la masa orgánica mientras el vientre húmedo de la estancia sigue latiendo.
+> mecanica
+> Atletismo: Fallo (6 vs CD 15).
+> presion
+> El arma ha quedado atrapada en la masa viscosa; intentar arrancarla a la fuerza sin una estrategia coordinada dejará al grupo desarmado y expuesto mientras la entidad recupera su vigor.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2010 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.inventory = arma perdida
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4270: Ilvard.inventory = arma perdida
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 61 — 46/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  991 ms
+
+> "¡No me soltarás!"
+> Tiro con fuerza del arma para intentar liberarla del tejido viscoso.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 2+4=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 6)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1861 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2042 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3627 ms
+
+> narrativa
+> El esfuerzo es inútil; el metal no cede y la resistencia del organismo es absoluta. La cámara orgánica reacciona al tirón con un espasmo rítmico que comprime el arma contra el núcleo carmesí, transformando el tejido viscoso en una trampa de ámbar vivo, densa y adherente, que ancla el acero con una fuerza implacable.
+> Desde las profundidades de la masa emana una vibración sorda que recorre las paredes de la estancia, un sonido que no es palabra sino pulsación. La entidad orgánica no responde al grito, sino que contrae su cuerpo en un movimiento coordinado, absorbiendo el impulso del tirón para sellar la presa con un abrazo húmedo y definitivo: "...".
+> mecanica
+> Atletismo: Fallo (6 vs CD 15).
+> presion
+> El arma está ahora fundida con la masa de la criatura; cada segundo que pasa sin una solución creativa refuerza el anclaje, dejando al grupo vulnerable mientras el núcleo carmesí comienza a estabilizarse.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1046 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.inventory = arma perdida
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4277: Ilvard.inventory = arma perdida
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 62 — 47/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1069 ms
+
+> "¡Por los cielos, no me soltarás!"
+> Hago fuerza con el brazo libre para intentar arrancar el arma, apoyando mi peso corporal para darme impulso.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 16)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1981 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1239 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4312 ms
+
+> narrativa
+> El impulso corporal y la fuerza bruta surten efecto; el acero se desprende del núcleo con un chasquido húmedo mientras la cámara orgánica se contrae violentamente. El tejido carmesí palpita con una intensidad febril, y aunque el arma comienza a ceder ante la presión, la viscosidad del entorno lucha desesperadamente por retener su presa.
+> En ese instante de liberación, la entidad orgánica no emite sonido vocal. En lugar de resistirse al nuevo tirón, el tejido se desliza y se reorganiza, fluyendo con una rapidez gélida alrededor del brazo libre para envolverlo en una membrana translúcida y fría, anclándolo con firmeza al resto de la masa: "...".
+> mecanica
+> Atletismo: Éxito (16 vs CD 15).
+> presion
+> El arma ha sido recuperada, pero el brazo libre ahora está fusionado a la estructura de la cámara; el organismo está empezando a digerir el punto de contacto, lo que restringirá la movilidad en los próximos turnos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3167 ms · 0 eventos · 2 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.inventory = arma
+  ✓ delta Ilvard · character.conditions = brazo fusionado y digerido
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4282: Ilvard.inventory = arma
+  → delta 4284: Ilvard.conditions = brazo fusionado y digerido
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 63 — 48/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1066 ms
+
+> "¡No me retendrás!"
+> Tiro con fuerza del brazo atrapado, intentando desgarrar la membrana que me une a la masa orgánica.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 9)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1589 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3853 ms
+
+> narrativa
+> El esfuerzo es bruto y desesperado, pero la membrana translúcida no cede; al contrario, se estira como un ligamento resistente que absorbe el impacto del tirón para luego retraerse con una fuerza elástica y ancladora. El brazo permanece fundido a la estructura, mientras la cámara orgánica se transforma en un nido de fibras pulsantes que se contraen al ritmo de un corazón invisible.
+> El aire se vuelve espeso, saturado de un olor punzante a ozono y bilis. A medida que el espacio se reduce, las paredes de tejido carmesí comienzan a cerrarse lentamente, comprimiendo el entorno en un abrazo visceral y asfixiante.
+> mecanica
+> Atletismo: Fallo (9 vs CD 15).
+> presion
+> La membrana se ha vuelto más densa tras el intento de ruptura y las paredes de la cámara siguen cerrándose; el espacio para maniobrar desaparece y la presión sobre el brazo atrapado aumenta.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1576 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) entity_type no reconocido (ni por sinónimo): {}
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 64 — 49/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2010 ms
+
+> "¡No me detendrás con estas paredes!"
+> Apoyo mi espalda contra la pared que se cierra para intentar frenar el avance del tejido mientras busco con la mano libre algún punto débil o una vena pulsante en la membrana que me atrapa.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 13+-1=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 12)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2053 ms): «Tu espalda no es un muro, es solo más carne contra carne. Deja de luchar contra »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5019 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5466 ms
+
+> narrativa
+> El esfuerzo es inútil; la pared de tejido no se detiene ante la presión de la espalda, sino que cede ligeramente para absorber el empuje, reduciendo el espacio hasta convertir la cámara en un conducto estrecho y asfixiante de carne palpitante. En medio de esa compresión visceral, el brazo atrapado se tensa contra una vena azulada y engrosada que late con una fuerza rítmica, anclando la membrana directamente a la estructura que sigue cerrándose.
+> La entidad orgánica observa la escena con una curiosidad puramente analítica, manteniendo una voz plana y desprovista de cualquier rastro de empatía mientras el espacio desaparece. "Tu espalda no es un muro, es solo más carne contra carne. Deja de luchar contra la pared y mira la membrana; hay un ritmo, un pulso... ahí, justo donde la fibra se vuelve pálida", señala, indicando el punto exacto donde la anatomía del lugar parece flaquear.
+> mecanica
+> Investigación: Fallo (12 vs CD 15).
+> presion
+> El espacio disponible se ha reducido críticamente; si no se encuentra la forma de liberar el brazo, el cierre de las paredes aplastará el cuerpo contra la membrana, inmovilizándolo por completo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  950 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Investigación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 65 — 50/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1287 ms
+
+> "¡Por la luz, no me quedaré aquí atrapado!"
+> Ignoro la presión en mi espalda y concentro toda mi fuerza en tirar del brazo hacia atrás, intentando desgarrar la fibra pálida que menciona la entidad.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 14)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2731 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2886 ms
+
+> narrativa
+> El tirón es violento, pero la fibra pálida no cede; se estira como un tendón resistente que se niega a romperse, anclando el brazo con una fuerza elástica y cruel. El esfuerzo resulta inútil y el cuerpo queda suspendido en una posición vulnerable mientras el conducto de carne se contrae violentamente, transformando la cámara en un túnel húmedo y pulsante donde el aire se vuelve espeso, cargado con un olor metálico a hierro.
+> Las paredes de tejido se pliegan sobre sí mismas en un espasmo orgánico, reduciendo el espacio hasta que solo quedan unos pocos centímetros entre la piel y la membrana pálida. El entorno late con un ritmo asfixiante, apretando cada centímetro del cuerpo contra la superficie viscosa.
+> mecanica
+> Atletismo: Fallo (14 vs CD 15).
+> presion
+> El cierre del conducto es casi total; el siguiente espasmo de las paredes aplastará el cuerpo contra la membrana, eliminando cualquier capacidad de movimiento.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  883 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 66 — 51/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  919 ms
+
+> "¡Por la luz, no me detendrás!"
+> Clavo mi espada con fuerza contra la membrana pálida para intentar desgarrarla y abrirme paso.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 22)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2139 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2135 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2973 ms
+
+> narrativa
+> La hoja desgarra la membrana con un chasquido húmedo, abriendo una brecha irregular que exhala un vapor caliente y acre. El conducto se desinfla parcialmente, revelando un espacio estrecho y viscoso que conduce hacia una zona donde el latido orgánico es más lento y profundo.
+> Desde las profundidades del tejido, no surge una voz, sino un siseo húmedo y gutural que vibra en las paredes mientras el tejido se rasga: "...". El conducto emite un espasmo involuntario, una contracción refleja que sacude todo el túnel ante la herida.
+> mecanica
+> Atletismo: Éxito (22 vs CD 15).
+> presion
+> La brecha es inestable; el tejido orgánico comienza a cerrarse lentamente sobre el nuevo camino, amenazando con sellar la salida si no se avanza rápidamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1578 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta entidad orgánica · npc.status = damaged
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ delta rechazado por la base (npc.status = 'damaged'): value "damaged" not allowed for npc.status
+CONTEXT:  PL/pgSQL function apply_delta(uuid,entity_type,uuid,text,jsonb,bigint,delta_source,text,visibility_level,uuid) line 27 at RAISE
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 67 — 52/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  918 ms
+
+> "No permitáis que este lugar nos atrape."
+> Me deslizo rápidamente a través de la brecha antes de que se cierre, manteniendo mi arma lista.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Acrobacias: 4+0=4
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 4)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1417 ms): «...El camino se cierra...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  925 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3022 ms
+
+> narrativa
+> El intento de deslizarse con agilidad fracasa estrepitosamente; el cuerpo se engancha en los pliegues viscosos de la membrana, que se cierran con una fuerza imprevista y elástica. El movimiento torpe provoca que la brecha se colapse prematuramente, atrapando los miembros y dejando el paso bloqueado por una masa de tejido pulsante y húmedo.
+> Desde las profundidades del conducto, un siseo vibrante que resuena en las paredes, acompañado de un movimiento ondulatorio del tejido que parece guiar la dirección, sentencia: "...El camino se cierra...".
+> mecanica
+> Acrobacias: Fallo (4 vs CD 15).
+> presion
+> El conducto se ha sellado casi por completo; cualquier intento de liberarse o buscar una alternativa consumirá tiempo vital mientras el oxígeno en la zona comienza a escasear.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  852 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Acrobacias, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 68 — 53/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1279 ms
+
+> "¡No me detendré aquí!"
+> Empujo con todas mis fuerzas contra el tejido pulsante para abrirme paso a través de la membrana.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 7+4=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 11)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1992 ms): «...Inútil... El tejido se nutre de tu esfuerzo...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2283 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3307 ms
+
+> narrativa
+> El esfuerzo es bruto y desesperado, pero la membrana no cede; al contrario, el tejido parece absorber el impulso, volviéndose más denso y elástico bajo la presión. Cada empuje solo logra que las paredes viscosas se ajusten con más fuerza, envolviendo el cuerpo en un abrazo húmedo y asfixiante que anula cualquier avance.
+> De pronto, una vibración sorda recorre las paredes del conducto, una voz que no nace de una garganta sino que resuena en los propios huesos: "...Inútil... El tejido se nutre de tu esfuerzo...". Acompañando las palabras, el conducto se contrae rítmicamente, apretando el agarre y sellando aún más el paso.
+> mecanica
+> Atletismo: Fallo (11 vs CD 15).
+> presion
+> La membrana se vuelve más compacta con cada movimiento inútil; el espacio para respirar se reduce y el tejido comienza a succionar el aire circundante.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1996 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = asfixiante
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4313: Ilvard.conditions = asfixiante
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 69 — 54/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1031 ms
+
+> "¡No me doblegaré ante esta aberración!"
+> Dejo de luchar físicamente contra las paredes para evitar alimentar el tejido y busco un punto débil o una irregularidad en la membrana.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 20+-1=19  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 19)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1718 ms): «El orgullo es un alimento lento, pero nutritivo. Has dejado de empujar, sí... pe»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1721 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2746 ms
+
+> narrativa
+> Al cesar la lucha, la tensión oppressive de las paredes comienza a relajarse, liberando el espacio justo para que el aire vuelva a llenar los pulmones. La mirada, ahora aguda y despojada de la desesperación del esfuerzo bruto, detecta una sutil fluctuación en la densidad del tejido: una zona donde la membrana vibra en una frecuencia distinta, revelando una irregularidad estructural que antes pasaba inadvertida bajo el pánico.
+> Entonces, la vibración sorda regresa, emanando desde cada rincón del conducto con un tono plano, puramente observacional: "El orgullo es un alimento lento, pero nutritivo. Has dejado de empujar, sí... pero sigues buscando una grieta en lo que no tiene costuras."
+> mecanica
+> Investigación: Éxito (19 vs CD 15).
+> presion
+> La entidad orgánica ha notado el cambio de estrategia; aunque la presión física ha disminuido, el tejido comienza a secretar una sustancia pegajosa que amenaza con inmovilizar las extremidades.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  870 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Investigación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 70 — 55/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1386 ms
+
+> "No me alimentarás con mi orgullo, criatura."
+> Intento raspar y limpiar la sustancia pegajosa de mis extremidades antes de que me atrape.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 22)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1462 ms): «Limpia la piel, pero no el hambre. Te mueves con la urgencia de quien cree que e»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1645 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2702 ms
+
+> narrativa
+> El movimiento es rápido y preciso, logrando desprender la sustancia viscosa antes de que el agarre del conducto se vuelva definitivo. Al liberarse, las paredes del túnel reaccionan segregando un moco espeso y translúcido que brilla con una luminiscencia pálida, bañando el tejido pulsante y húmedo en un resplandor enfermizo.
+> La voz de la entidad orgánica resuena desde todas las direcciones, manteniendo una neutralidad quirúrgica mientras las paredes vibran rítmicamente: "Limpia la piel, pero no el hambre. Te mueves con la urgencia de quien cree que el espacio es un enemigo que puede vencerse a base de forcejeos."
+> mecanica
+> Atletismo: Éxito (22 vs CD 15).
+> presion
+> Aunque las extremidades están libres, el conducto comienza a contraerse en ciclos más cortos, reduciendo el espacio vital y obligando a avanzar rápidamente hacia la siguiente membrana.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  772 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 71 — 56/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1066 ms
+
+> "No soy vuestro enemigo, pero no me detendré mientras haya alguien sufriendo en este lugar."
+> Me pongo en pie rápidamente y avanzo con determinación hacia la membrana.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 2+4=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 6)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2895 ms): «El sufrimiento es una señal, una vibración en la red. Pero tu determinación es s»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1295 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3353 ms
+
+> narrativa
+> El impulso es firme, pero el tejido fibroso del pasillo reacciona con una contracción violenta y coordinada. El avance se ve truncado bruscamente cuando las paredes pulsantes se cierran sobre el cuerpo, atrapando los pies en una masa viscosa que absorbe cualquier intento de tracción, dejando la figura congelada a pocos pasos de la membrana translúcida que bloquea el camino.
+> Desde el corazón mismo de las paredes, la voz vibra en sincronía con el cierre rítmico de los conductos, desprovista de cualquier matiz emocional: "El sufrimiento es una señal, una vibración en la red. Pero tu determinación es solo otra forma de fricción en un sistema que no reconoce la voluntad, solo la función."
+> mecanica
+> Atletismo: Fallo (6 vs CD 15).
+> presion
+> La membrana al final del túnel comienza a espesarse y opacarse, sellando la salida mientras las paredes circundantes reducen el espacio disponible, apretando el torso y dificultando la respiración.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1309 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = atrapado
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4320: Ilvard.conditions = atrapado
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 72 — 57/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1022 ms
+
+> "¡No me detendré mientras haya alguien que necesite ayuda!"
+> Empujo con todas mis fuerzas contra las paredes que me oprimen, intentando abrirme paso hacia la membrana.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 22)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2377 ms): «La fuerza es una variable conocida. El deseo, una anomalía irrelevante. Estás fo»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1600 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2402 ms
+
+> narrativa
+> El pasillo orgánico cede ante el esfuerzo, desgarrándose en fibras húmedas que exudan un fluido pálido. El espacio se abre violentamente, proyectando el cuerpo contra la membrana translúcida, que ahora vibra con una tensión superficial casi sólida.
+> La voz no emana de una garganta, sino que resuena en las paredes mismas, vibrando en el esternón mientras la presión del tejido se vuelve más densa y fría: "La fuerza es una variable conocida. El deseo, una anomalía irrelevante. Estás forzando la estructura, pero el sistema solo se adapta para absorber el impacto."
+> mecanica
+> Atletismo: Éxito (22 vs CD 15).
+> presion
+> La membrana comienza a contraerse rítmicamente, intentando succionar el cuerpo hacia el interior de la pared orgánica para reintegrarlo como parte de la estructura.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  777 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 73 — 58/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  964 ms
+
+> "¡No me absorberáste tan fácilmente!"
+> Clavo los pies en el suelo y trato de resistir la succión, luchando por mantenerme fuera de la pared.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 20+4=24  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 24)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2049 ms): «La resistencia es un dato curioso, pero el sistema no requiere voluntad para ope»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  574 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3609 ms
+
+> narrativa
+> El cuerpo se ancla con una fuerza descomunal, los pies hundiéndose en la superficie viscosa del pasillo mientras los músculos se tensan hasta el límite. La succión de la membrana, que hace un instante parecía inevitable, se detiene en seco, vencida por el impulso bruto y la determinación del movimiento. La estructura orgánica retrocede, cediendo el espacio y dejando el camino despejado.
+> La pared pulsa con una contracción lenta y pesada, como un corazón exhausto, mientras la voz vibra con una neutralidad gélida, desprovista de cualquier rastro de esfuerzo o emoción: "La resistencia es un dato curioso, pero el sistema no requiere voluntad para operar. Solo espacio."
+> mecanica
+> Atletismo: Éxito Crítico (24 vs CD 15).
+> presion
+> La entidad orgánica ha dejado de succionar, pero el pasillo comienza a segregar un moco corrosivo que empieza a disolver el calzado y la piel de quien permanezca demasiado tiempo estático.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  14927 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = quemaduras por moco corrosivo
+  ⚠ nombres no reconocidos: Atletismo, Crítico, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4333: Ilvard.conditions = quemaduras por moco corrosivo
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 74 — 59/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1821 ms
+
+> "No me detendré ante una máquina sin alma."
+> Sigo avanzando rápidamente por el pasillo para salir de la zona del fluido corrosivo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 20)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1628 ms): «El concepto de 'alma' es una variable irrelevante para la arquitectura de este l»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1613 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2880 ms
+
+> narrativa
+> El impulso es certero y el cuerpo se desplaza con agilidad sobre la superficie resbaladiza, ganando terreno rápidamente mientras el moco amarillento y burbujeante exhala un vapor acre que muerde la piel. El corredor de paredes carnosas y húmedas reacciona al movimiento, dilatándose y contrayéndose en un ritmo orgánico que, lejos de obstaculizar, parece ahora coordinarse para abrir paso al avance.
+> La voz de la entidad resuena desde las paredes, plana y monocorde, envolviendo el espacio sin provenir de un punto concreto: "El concepto de 'alma' es una variable irrelevante para la arquitectura de este lugar. Tu avance es simplemente el desplazamiento de una masa orgánica sobre otra."
+> mecanica
+> Atletismo: Éxito (20 vs CD 15).
+> presion
+> Aunque el avance es rápido, el pasillo comienza a estrecharse detrás, cerrando la posibilidad de retroceder mientras el fluido corrosivo se vuelve más denso y voraz.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3328 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 75 — 60/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1664 ms
+
+> "No soy una simple masa orgánica, y mi alma es lo que guía mis pasos."
+> Sigo avanzando con determinación hacia adelante, ignorando la presión a mi espalda.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 4+1=5
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 5)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4076 ms): «La determinación es un patrón eléctrico recurrente en especies con instinto de s»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1438 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2734 ms
+
+> narrativa
+> El esfuerzo por discernir algún detalle oculto en la anatomía del lugar resulta inútil; la mirada no encuentra nada que no sea una función biológica ajena y abrumadora. El corredor se abre súbitamente en una cámara ovoide donde las paredes carnosas se vuelven translúcidas, revelando redes de venas pulsantes que transportan un fluido dorado. En el centro, una membrana tensa y vibrante bloquea el camino, reaccionando al ritmo de la respiración del intruso.
+> La voz de la entidad permanece imperturbable, sin rastro de ironía o desafío, mientras las paredes se contraen rítmicamente, impulsando el cuerpo hacia adelante como si fuera un objeto en una cinta transportadora: "La determinación es un patrón eléctrico recurrente en especies con instinto de supervivencia. No altera la composición de tu materia, ni la función de este conducto."
+> mecanica
+> Percepción: Fallo (5 vs CD 15).
+> presion
+> La membrana central vibra con intensidad creciente; si no se encuentra la forma de atravesarla, el flujo rítmico de las paredes terminará por aplastar al intruso contra la barrera.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  734 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 76 — 61/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1076 ms
+
+> "No soy un simple objeto, y mi voluntad no es un patrón eléctrico."
+> Me planto con firmeza y golpeo la membrana con el pomo de mi espada para intentar romperla.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 7+4=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 11)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2876 ms): «La voluntad es el nombre que das a la persistencia de tu impulso. El impacto de »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1903 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4452 ms
+
+> narrativa
+> El metal del pomo choca contra la superficie translúcida, pero el impacto no produce la ruptura esperada. La membrana cede parcialmente, hundiéndose como un tejido elástico y viscoso que absorbe la fuerza del golpe para luego envolver el arma en un abrazo pegajoso y persistente. Mientras el acero queda atrapado en esa masa orgánica, el flujo peristáltico de las paredes se acelera, apretando el cuerpo con una presión asfixiante que empuja con violencia hacia la barrera.
+> La voz de la entidad resuena desde todas las paredes simultáneamente, plana y carente de juicio: "La voluntad es el nombre que das a la persistencia de tu impulso. El impacto de tu metal contra la membrana no es un acto de libertad, sino una respuesta mecánica al estrés. Sigue golpeando; el conducto absorberá la energía y acelerará el flujo."
+> mecanica
+> Atletismo: Fallo (11 vs CD 15).
+> presion
+> La membrana ahora retiene el arma y las paredes se contraen con mayor fuerza; el espacio vital se reduce rápidamente y el riesgo de quedar aplastado contra la barrera es inminente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1856 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = arma atrapada
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4351: Ilvard.conditions = arma atrapada
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 77 — 62/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3705 ms
+
+> "¡Suéltame, criatura!"
+> Tiro con fuerza del arma hacia atrás, intentando arrancarla de la membrana viscosa para liberarme de su agarre.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 15+4=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 19)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3644 ms): «El esfuerzo es una variable más. Arrancas el metal, pero el vacío que dejas es l»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2413 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  6072 ms
+
+> narrativa
+> El metal se desliza con un sonido húmedo y violento, rompiendo la succión de la membrana que se estira hasta el límite antes de soltar el arma en un chasquido viscoso. Con el espacio recuperado, el conducto orgánico reacciona al movimiento; las paredes pulsantes, húmedas y calientes, se contraen con un espasmo rítmico que sacude el entorno, ajustando su arquitectura biológica al vacío dejado por el acero.
+> La voz de la entidad vibra en la estructura misma del conducto, emanando de cada poro de la carne circundante en un tono monocorde y desapasionado: "El esfuerzo es una variable más. Arrancas el metal, pero el vacío que dejas es llenado por la contracción. El movimiento solo confirma que tu impulso sigue activo".
+> mecanica
+> Atletismo: Éxito (19 vs CD 15).
+> presion
+> Aunque el arma ha sido recuperada, el conducto ha ajustado su presión; el flujo peristáltico se vuelve más errático y la membrana translúcida comienza a cerrarse sobre el camino, amenazando con sellar la salida.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  873 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 78 — 63/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1579 ms
+
+> "No permitiré que este lugar nos consuma."
+> Sujeto mi arma con fuerza y me lanzo hacia adelante para atravesar la membrana antes de que se cierre por completo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 8+4=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 12)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4533 ms): «Tu voluntad es un dato irrelevante frente a la inercia de la carne. El deseo de »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1786 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16199 ms
+
+> narrativa
+> El impulso falla. El cuerpo no responde con la velocidad necesaria y el avance se vuelve torpe, quedando atrapado en el momento exacto en que el conducto se estrecha violentamente. La membrana se pliega sobre sí misma como un párpado húmedo y palpitante, convirtiendo el camino en un cuello de carne que asfixia el espacio, dejando apenas una rendija mínima y distante hacia el exterior.
+> La voz de la entidad resuena sin punto de origen, vibrando en las paredes que se cierran con un movimiento espasmódico y rítmico justo detrás: "Tu voluntad es un dato irrelevante frente a la inercia de la carne. El deseo de no ser consumido no altera la velocidad de la contracción".
+> mecanica
+> Atletismo: Fallo (12 vs CD 15).
+> presion
+> El cierre de la membrana es casi total; si no se encuentra una forma de forzar la apertura o reducir la presión del conducto, el camino quedará sellado, dejando al personaje atrapado en el interior del organismo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  753 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 79 — 64/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  906 ms
+
+> "¡No me rendiré ante esta aberración!"
+> Clavo mis pies en la carne húmeda y empujo con todas mis fuerzas contra la membrana para evitar que se cierre del todo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 7+4=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 11)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2769 ms): «El esfuerzo es un ruido blanco en este sistema. Empujas contra la marea de lo in»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1622 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3684 ms
+
+> narrativa
+> El esfuerzo resulta inútil. A pesar de la fuerza bruta aplicada, la membrana se cierra con un espasmo rítmico y violento, aplastando el espacio y dejando el cuerpo encajonado en una cavidad de carne húmeda que vibra con cada contracción del organismo. El conducto se ha transformado en una garganta estrecha y pulsante, una trampa de tejido resbaladizo que ignora cualquier intento de resistencia física.
+> La voz de la entidad orgánica resuena entonces, vibrando al mismo ritmo que las paredes que asfixian el entorno, con una entrega gélida y una observación clínica: "El esfuerzo es un ruido blanco en este sistema. Empujas contra la marea de lo inevitable, creyendo que la fuerza es el lenguaje que aquí se habla".
+> mecanica
+> Atletismo: Fallo (11 vs CD 15).
+> presion
+> La contracción del organismo es constante; si no se halla una alternativa al esfuerzo físico, el conducto se sellará por completo, convirtiendo la cavidad en una tumba de carne.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  769 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 80 — 65/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1996 ms
+
+> "No me rendiré mientras haya una chispa de esperanza."
+> Me planto firme y busco algún punto débil o irregularidad en el tejido que me rodea para intentar forzar una salida.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 12+-1=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 11)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3800 ms): «La esperanza es una variable irrelevante en una arquitectura de cierre. Buscas u»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1836 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3045 ms
+
+> narrativa
+> La mirada recorre con desesperación la cavidad ovoidal, pero las paredes rosáceas y húmedas pulsan con un ritmo asmático que anula cualquier esperanza de encontrar un fallo. El tejido es excesivamente liso, una superficie perfecta y resbaladiza que solo es interrumpida por vetas blanquecinas y tensas, como tendones expuestos que se contraen con una eficiencia aterradora, cerrando cualquier posibilidad de escape.
+> La voz no proviene de un punto fijo, sino que emana de las paredes mismas, sincronizada con un espasmo lento y opresivo del tejido: "La esperanza es una variable irrelevante en una arquitectura de cierre. Buscas una grieta en un organismo que se redefine para anularte; no hay irregularidades, solo la voluntad de este sistema de digerir tu insistencia".
+> mecanica
+> Investigación: Fallo (11 vs CD 15).
+> presion
+> El organismo se adapta a la búsqueda de debilidades reforzando sus paredes; el espacio se reduce con cada pulsación, acelerando el cierre total de la cavidad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1529 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Investigación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 81 — 66/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1862 ms
+
+> "¡No me digerirás mientras mi voluntad sea más fuerte que tu hambre!"
+> Hago sonar mi voz con fuerza y golpeo las paredes con mi arma para intentar forzar una apertura.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 5)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1689 ms): «Tu voluntad es ruido. Tu fuerza, un espasmo inútil. Cada golpe no es una grieta,»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1994 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2683 ms
+
+> narrativa
+> El golpe impacta con fuerza, pero no produce la grieta esperada. En su lugar, la cavidad reacciona con un espasmo violento; la superficie lisa se pliega sobre sí misma en una red de fibras musculares que atrapan el arma en un abrazo asfixiante, empujando el cuerpo contra el tejido húmedo y pulsante que ahora se siente tan duro como el acero.
+> Una vibración sorda, desprovista de malicia o placer, resuena directamente en los huesos mientras la voz emana de cada centímetro de la superficie: "Tu voluntad es ruido. Tu fuerza, un espasmo inútil. Cada golpe no es una grieta, es una señal que le indica al sistema exactamente dónde debe endurecerse para aplastarte".
+> mecanica
+> Atletismo: Fallo (5 vs CD 15).
+> presion
+> El arma ha quedado atrapada en los pliegues del tejido; intentar recuperarla o liberarse ahora requerirá un esfuerzo mayor mientras el espacio disponible continúa reduciéndose.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1367 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.inventory = arma atrapada
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4383: Ilvard.inventory = arma atrapada
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'location', 'entity_id': 'cavidad ovoidal', 'field': 'descripcion', 'value': 'Espacio reducido y opresivo donde las paredes, ahora plegadas y contracturadas, sujetan físicamente al intruso, limitando su movimiento.'}
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 82 — 67/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  856 ms
+
+> "¡No me aplastarás mientras mi fe sea mi escudo!"
+> Tiro con todas mis fuerzas para zafar mi arma y mi cuerpo de esas fibras.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 20)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1696 ms): «La fe es una palabra que no tiene peso aquí. Solo hay materia, reacción y el ham»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1767 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3510 ms
+
+> narrativa
+> El esfuerzo es brutal, pero el cuerpo responde con una potencia renovada que obliga a las fibras a ceder. El tejido se estira y se desgarra con un sonido húmedo, permitiendo que el arma se deslice fuera del agarre asfixiante y que el cuerpo recupere su espacio. Sin embargo, la victoria es precaria; la cavidad ha mutado en una garganta de fibras contráctiles y paredes pulsantes que exudan un fluido viscoso, cerrándose como un puño de carne púrpura donde el aire se vuelve pesado, saturado de un olor metálico a hierro y ozono.
+> La voz de la entidad orgánica resuena con una frecuencia constante y fría, omnipresente en cada rincón de la cámara, mientras las fibras se tensan un milímetro más, permitiendo el movimiento pero sin soltar el arma del todo. "La fe es una palabra que no tiene peso aquí. Solo hay materia, reacción y el hambre de equilibrio. Prueba a tirar una vez más, si crees que tu voluntad es más densa que mi carne".
+> mecanica
+> Atletismo: Éxito (20 vs CD 15).
+> presion
+> Las paredes de la cavidad continúan cerrándose; si no se encuentra una salida o se neutraliza la contracción del tejido, el espacio disponible desaparecerá por completo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  750 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 83 — 68/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2314 ms
+
+> "Mi voluntad no es densa, es inquebrantable."
+> Hago un último esfuerzo violento para arrancar el arma y salir de esa garganta de carne.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 22)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3881 ms): «Inquebrantable es solo otra forma de decir que no sabes doblarte antes de romper»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1659 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5363 ms
+
+> narrativa
+> El empuje final es definitivo. Con un desgarro violento que resuena en el espacio claustrofóbico, el arma se libera del agarre, rompiendo la resistencia del tejido púrpura. Las paredes pulsantes se estremecen y el suelo, esa membrana viscosa que vibra bajo los pies, reacciona con un espasmo coordinado que devuelve el espacio arrebatado.
+> La entidad orgánica observa la liberación con una frialdad analítica, mientras las fibras se retraen bruscamente, dejando un vacío húmedo y gélido donde antes apretaba la presión. "Inquebrantable es solo otra forma de decir que no sabes doblarte antes de romperse. Pero el resultado es el mismo: la materia cede", sentencia la voz, despojada de cualquier rastro de emoción.
+> mecanica
+> Atletismo: Éxito (22 vs CD 15).
+> presion
+> La entidad ha soltado el arma, pero el entorno sigue siendo inestable; si no se abandona la cámara rápidamente, el tejido podría iniciar un ciclo de contracción más agresivo para sellar la herida.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  858 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 84 — 69/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1607 ms
+
+> "Tus palabras no tienen poder sobre mi voluntad."
+> Recojo mi arma rápidamente y busco la salida más cercana para abandonar este lugar.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 6+1=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 7)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3121 ms): «La voluntad es una propiedad química, una descarga eléctrica en un tejido limita»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1764 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4898 ms
+
+> narrativa
+> La cámara se ha transformado en un saco de carne lacerado; el hueco donde el arma estuvo atrapada es ahora una herida abierta que supura un fluido transparente y gélido. En el intento de localizar la salida, la mirada se pierde entre los pliegues húmedos y el desorden orgánico, incapaz de discernir el camino correcto entre el caos de membranas. Solo se percibe, a lo lejos, un esfínter contraído que late rítmicamente, filtrando una luz pálida desde el exterior, pero la ruta hacia él permanece oculta.
+> Lentamente, la entidad retrae sus fibras restantes, observando el movimiento con una curiosidad distante, sin interferir en la huida pero sin facilitarla. "La voluntad es una propiedad química, una descarga eléctrica en un tejido limitado. No es poder; es simplemente el ruido que hace la materia antes de ser absorbida", sentencia con una calma gélida.
+> mecanica
+> Percepción: Fallo (7 vs CD 15).
+> presion
+> El esfínter de salida es visible, pero la ruta exacta no ha sido encontrada. La cámara comienza a contraerse para sellar la herida del arma, reduciendo el espacio disponible y dificultando la movilidad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1318 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 85 — 70/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1400 ms
+
+> "¡Tus palabras no tienen valor frente a la voluntad de quien sirve a una causa justa!"
+> Me abro paso con determinación hacia la luz pálida, ignorando las fibras, intentando forzar el camino entre las membranas.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 14)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2124 ms): «La justicia es una etiqueta que la materia se pone para no sentirse insignifican»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1453 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3208 ms
+
+> narrativa
+> El esfuerzo es insuficiente. A pesar de la determinación, las paredes pulsantes y húmedas no ceden ante la fuerza bruta; al contrario, el laberinto de tejido visceral parece reaccionar al empuje cerrándose con más rapidez, estrechando los conductos y convirtiendo el avance en una lucha asfixiante contra la materia orgánica que se contrae.
+> La entidad orgánica observa la escena con una inexpresividad absoluta, permaneciendo inmóvil mientras el espacio se reduce drásticamente. "La justicia es una etiqueta que la materia se pone para no sentirse insignificante mientras se deshace. Adelante, empuja. El tejido solo responderá a la fuerza, no a tu convicción", sentencia con una calma gélida, mientras el brillo pálido del esfínter parece alejarse tras el cierre de las membranas.
+> mecanica
+> Atletismo: Fallo (14 vs CD 15).
+> presion
+> Las paredes orgánicas se cierran con mayor velocidad. Si no se encuentra una forma de forzar la apertura o esquivar las membranas, el conducto se sellará por completo, dejando al personaje atrapado en el interior del tejido.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  780 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 86 — 71/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1136 ms
+
+> "¡No me rendiré ante este lugar!"
+> Sigo empujando con todas mis fuerzas, apoyando mi espalda contra una pared para ganar palanca y tratar de abrir el camino a base de pura potencia física.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 23)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1744 ms): «El músculo no entiende de voluntades, solo de tensiones. Sigue. Veamos si tu cue»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2601 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3859 ms
+
+> narrativa
+> El conducto visceral cede con un desgarro húmedo y violento. La presión acumulada rompe la membrana, abriendo un camino irregular y sangrante hacia la zona del brillo pálido, mientras el tejido alrededor se retuerce en espasmos agónicos.
+> La entidad orgánica permanece estática, observando la contracción del tejido con una curiosidad clínica y una voz plana, sin rastro de ánimo ni desprecio: "El músculo no entiende de voluntades, solo de tensiones. Sigue. Veamos si tu cuerpo es capaz de imponerse a la inercia de este lugar antes de que el espacio deje de existir".
+> mecanica
+> Atletismo: Éxito (23 vs CD 15).
+> presion
+> El camino está abierto, pero el tejido sigue retorciéndose; si el avance se detiene ahora, los espasmos del conducto podrían sellar la brecha nuevamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1692 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 87 — 72/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2548 ms
+
+> "No me detendré mientras haya alguien que necesite justicia."
+> Aprovecho la apertura y me lanzo hacia adelante, atravesando la brecha antes de que se cierre.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 8+4=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 12)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1385 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3125 ms
+
+> narrativa
+> El impulso falla en el momento crítico. Al lanzarte hacia adelante, el pie resbala sobre la superficie viscosa y el cuerpo pierde el equilibrio, quedando atrapado a medio camino en la brecha. El tejido, respondiendo a la intrusión con un espasmo violento, se contrae bruscamente y te expulsa hacia atrás, lejos de la salida, mientras el conducto se cierra con un chasquido húmedo y definitivo.
+> El pasillo de paredes pulsantes y translúcidas parece cerrarse sobre ti, conduciendo la mirada hacia esa cámara de luz blanca y fría donde el suelo, una membrana tensa, vibra con una frecuencia inquietante que reverbera en los huesos. La entidad orgánica observa la escena en silencio, manteniendo su postura imperturbable mientras el camino que habías intentado forzar desaparece bajo una capa de músculo regenerado.
+> mecanica
+> Atletismo: Fallo (12 vs CD 15).
+> presion
+> La brecha se ha sellado y el camino directo ha desaparecido; buscar una alternativa mientras el entorno sigue contrayéndose consumirá tiempo y energía vital.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  769 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 88 — 73/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  948 ms
+
+> "¡Maldición! No me detendré aquí."
+> Me pongo en pie rápidamente y observo el entorno buscando cualquier otra debilidad en las paredes o una vía de escape alternativa.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 7+1=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 8)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1786 ms): «El tejido no acepta el deseo, solo la compatibilidad.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1920 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3417 ms
+
+> narrativa
+> La mirada recorre las paredes con urgencia, pero el pasillo se ha transformado en un esófago cerrado. Las superficies translúcidas solo revelan el flujo lento de fluidos espesos y el latido rítmico de órganos internos que palpitan ocultos, dejando claro que no hay grietas ni puntos débiles; solo queda la superficie lisa y elástica de una garganta orgánica que parece digerir cualquier esperanza de salida.
+> La entidad orgánica permanece inmóvil, observando cada movimiento con una curiosidad puramente biológica. Con una voz neutra, desprovista de cualquier rastro de burla o empatía, sentencia: "El tejido no acepta el deseo, solo la compatibilidad".
+> mecanica
+> Percepción: Fallo (8 vs CD 15).
+> presion
+> El entorno se contrae rítmicamente, reduciendo el espacio disponible y obligando a encontrar una solución antes de que el pasillo se cierre por completo sobre el grupo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  952 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 89 — 74/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  887 ms
+
+> "No me importa tu compatibilidad, solo quiero que nos dejes salir."
+> Me planto frente a la entidad y golpeo el tejido elástico con el pomo de mi espada, intentando forzar una apertura.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 2+4=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 6)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3755 ms): «El impacto es ruido. El tejido no siente el golpe, solo reconoce la vibración de»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2195 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9137 ms
+
+> narrativa
+> El pasillo se estrecha aún más, transformándose en un tubo de carne húmeda y pulsante que vibra violentamente ante el golpe. El impacto del pomo de la espada no logra rasgar la superficie; el tejido elástico simplemente se hunde bajo la fuerza del metal para recuperar su forma original al instante, mientras el fluido que rodea las paredes se vuelve más denso y viscoso, atrapando el movimiento.
+> La entidad orgánica permanece estática, sin pestañear ni cambiar su postura, observando con una mirada analítica el punto exacto donde el acero golpeó la pared. Con una voz neutra y gélida, sentencia: "El impacto es ruido. El tejido no siente el golpe, solo reconoce la vibración de un cuerpo extraño que no pertenece a este sistema".
+> mecanica
+> Atletismo: Fallo (6 vs CD 15).
+> presion
+> La viscosidad del fluido aumenta y el tubo orgánico comienza a contraerse con más fuerza, reduciendo el espacio vital y amenazando con inmovilizar cualquier miembro que sobresalga.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  980 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 90 — 75/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1309 ms
+
+> "No soy un cuerpo extraño, sino el brazo de la justicia que limpiará este lugar."
+> Intento zafarme de la viscosidad del fluido y retroceder un paso para recuperar espacio.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 5)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1901 ms): «La justicia es un concepto externo, una etiqueta humana para una voluntad especí»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1788 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3361 ms
+
+> narrativa
+> El tubo de carne se cierra bruscamente, convirtiéndose en una prensa orgánica que exhala un vapor acre. Las paredes, ahora rugosas y llenas de poros que supuran un moco adherente, parecen digerir el espacio mismo, dejando al grupo atrapado en un abrazo viscoso y asfixiante. El intento de retroceder resulta inútil; el movimiento torpe solo provoca que el cuerpo se hunda más profundamente en la viscosidad, quedando anclado por la densidad del fluido.
+> La entidad orgánica mantiene la mirada fija, sin rastro de emoción, mientras el cuerpo se inclina levemente hacia adelante, observando el hundimiento. "La justicia es un concepto externo, una etiqueta humana para una voluntad específica. Para este sistema, solo eres masa desplazando fluido y una frecuencia discordante que intenta luchar contra la marea", sentencia con una calma gélida.
+> mecanica
+> Atletismo: Fallo (5 vs CD 15).
+> presion
+> La prensa orgánica continúa su contracción rítmica; si no se encuentra una forma de neutralizar la adherencia del moco, el grupo quedará completamente inmovilizado y expuesto al vapor acre.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1255 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = anclado
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4410: Ilvard.conditions = anclado
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 91 — 76/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1060 ms
+
+> "¡No soy una masa, sino un alma con voluntad!"
+> Intento liberar mis piernas del moco con un esfuerzo bruto, empujando contra las paredes orgánicas.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 14)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2253 ms): «Tu voluntad es el impulso que mueve los músculos, pero el moco no entiende de al»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1563 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4160 ms
+
+> narrativa
+> El esfuerzo bruto no es suficiente. A pesar de la tensión en los músculos y el empuje desesperado contra las paredes rugosas, el moco denso del pozo se comporta como un adhesivo voraz, absorbiendo cada movimiento y devolviendo una resistencia elástica que ancla las piernas con más fuerza. La cámara esférica late rítmicamente, y el vapor amarillento que emana de los poros del tejido comienza a espesarse, nublando la vista y envolviéndolo todo en una bruma sulfurosa.
+> La entidad orgánica permanece inmóvil, observando la lucha física con la frialdad de quien analiza una reacción química en un tubo de ensayo. Con una voz monocorde, desprovista de cualquier rastro de burla o empatía, sentencia: "Tu voluntad es el impulso que mueve los músculos, pero el moco no entiende de almas, solo de fricción y adherencia. Sigue empujando si quieres; solo lograrás que el sistema te reconozca como un cuerpo que lucha, y el cuerpo que lucha es el primero en ser digerido".
+> mecanica
+> Atletismo: Fallo (14 vs CD 15).
+> presion
+> La viscosidad del suelo sigue ascendiendo y las paredes de tejido pulsante se cierran centímetro a centímetro; si no se halla una alternativa al esfuerzo físico, la inmovilización será total.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1832 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 92 — 77/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1074 ms
+
+> "No me digerirás tan fácilmente, criatura. Mi voluntad es más fuerte que tu moco."
+> Dejo de luchar contra las paredes y busco algún punto débil o irregularidad en el tejido que me rodea.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 1+1=2  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 2)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1850 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2795 ms
+
+> narrativa
+> El intento de encontrar una falla en el tejido resulta inútil; la superficie es tan uniformemente viscosa y palpitante que no hay grieta, poro ni irregularidad que aprovechar. La bruma sulfurosa se ha vuelto tan densa que el entorno se reduce a un círculo de tejido palpitante y húmedo, borrando cualquier perspectiva de escape.
+> El moco, ahora a la altura de las rodillas, brilla con una fosforescencia aceitosa que distorsiona cualquier intento de observar la superficie del pozo. La entidad orgánica permanece en un silencio absoluto, observando la ineficacia de la búsqueda con una quietud gélida.
+> mecanica
+> Percepción: Pifia (2 vs CD 15).
+> presion
+> El moco fosforescente sigue ascendiendo y la bruma oculta ahora cualquier punto de referencia; si no se encuentra una forma de neutralizar la adherencia, el hundimiento será irreversible.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1100 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Pifia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 93 — 78/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1002 ms
+
+> "¡No me hundiré en esta inmundicia!"
+> Hago un esfuerzo físico para impulsarme hacia arriba y salir del moco antes de que me atrape.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 23)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1493 ms): «El esfuerzo es... admirable. Pero este lugar no entiende de fuerza, solo de abso»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1441 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2678 ms
+
+> narrativa
+> El tejido palpitante cede bajo el impulso, permitiendo un ascenso breve pero agotador hacia una zona de la superficie donde la viscosidad es menor y el aire, aunque sulfuroso, es más respirable. El esfuerzo logra romper la succión del fango fosforescente, ganando terreno sobre la masa orgánica.
+> Sin mover un solo músculo, con una voz plana y desprovista de cualquier matiz emocional, la entidad orgánica mantiene la mirada fija en el punto donde el moco comienza a subir por las piernas: "El esfuerzo es... admirable. Pero este lugar no entiende de fuerza, solo de absorción."
+> mecanica
+> Atletismo: Éxito (23 vs CD 15).
+> presion
+> Aunque has ganado altura, la superficie sigue siendo inestable y la entidad no ha mostrado intención de ayudar; cualquier pausa prolongada permitirá que la viscosidad te arrastre de nuevo hacia el fondo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1693 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · competence_shown
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4422: entidad orgánica affinity 2.0 → 4.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 94 — 79/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1538 ms
+
+> "No me absorberá ninguna cosa, por muy antigua que sea."
+> Sigo esforzándome por salir completamente del fango y alcanzar suelo firme.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 17+4=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 21)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1385 ms): «La antigüedad es una medida de tiempo, no de voluntad. Y el tiempo es precisamen»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1990 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4188 ms
+
+> narrativa
+> El impulso final es certero. Tras un último esfuerzo que hace crujir los músculos, el cuerpo se desprende de la succión viscosa y aterriza con un golpe seco sobre una plataforma de roca porosa y cenicienta. El suelo es irregular y resbala, pero es la primera superficie sólida en kilómetros, una isla de piedra rodeada de filamentos orgánicos que vibran con un ritmo lento y monocorde.
+> La entidad orgánica permanece allí, observando el progreso con una curiosidad clínica, sin pestañear y manteniendo una inmovilidad absoluta. "La antigüedad es una medida de tiempo, no de voluntad. Y el tiempo es precisamente lo que el fango tiene a su favor", sentencia con su voz plana, mientras los filamentos a los pies de la roca parecen pulsar al compás de sus palabras.
+> mecanica
+> Atletismo: Éxito (21 vs CD 15).
+> presion
+> La plataforma de roca es pequeña y los filamentos orgánicos comienzan a extenderse hacia los bordes, reduciendo el espacio seguro y amenazando con envolver la superficie sólida.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  881 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 95 — 80/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1469 ms
+
+> "Tus palabras no me amedrentan, criatura."
+> Me pongo en pie rápidamente y busco algún punto débil o salida en los alrededores de la plataforma.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 5+1=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 6)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2361 ms): «El miedo es una respuesta biológica. Yo no busco amedrentarte, simplemente descr»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1332 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3762 ms
+
+> narrativa
+> La mirada recorre la superficie de la plataforma, pero la roca cenicienta es monótona, carente de grietas útiles o rutas de escape evidentes. No hay ningún punto débil que aprovechar; el entorno es una extensión sorda de piedra y polvo que no ofrece ninguna ventaja táctica ni salida inmediata.
+> La entidad orgánica permanece inmóvil, observando la búsqueda inútil con una mirada vacía y una voz monocorde, desprovista de cualquier rastro de emoción: "El miedo es una respuesta biológica. Yo no busco amedrentarte, simplemente describo la inercia de este lugar. No hay debilidad que buscar en el entorno, solo el hambre de lo que nos rodea". Mientras habla, el mar de filamentos orgánicos que rodea la pequeña isla palpita con un ritmo lento, cerrándose progresivamente sobre los bordes de la roca.
+> mecanica
+> Percepción: Fallo (6 vs CD 15).
+> presion
+> El cerco de filamentos orgánicos se estrecha, reduciendo el espacio disponible sobre la plataforma y dejando cada vez menos terreno sólido donde permanecer.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4363 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 96 — 81/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1104 ms
+
+> "No me amedrentas con tus palabras, criatura. Mi fe es más fuerte que tu hambre."
+> Saco mi arma y me planto firmemente frente a la entidad, preparándome para defender el espacio que queda.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 5)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1689 ms): «La fe es una estructura conceptual. No altera la composición de la piedra, ni de»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3206 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4143 ms
+
+> narrativa
+> La plataforma de roca cenicienta se ha vuelto claustrofóbica; los bordes han sido devorados por la masa palpitante de filamentos que emiten un siseo húmedo, reduciendo el terreno seguro a un círculo estrecho. El espacio es tan reducido que la proximidad es ahora inevitable, quedando casi pecho a pecho con la entidad orgánica. El despliegue del arma no provoca ni un parpadeo en el ser, cuya inmovilidad resulta insultante ante la postura agresiva.
+> Sin moverse ni un milímetro y manteniendo una mirada fija y vacía, la entidad responde con una voz gélida: "La fe es una estructura conceptual. No altera la composición de la piedra, ni detiene el avance de la masa. Tu arma es un gesto pequeño ante un proceso inevitable". Mientras las palabras mueren en el aire, el sonido de los filamentos cerrándose aumenta, devorando los últimos centímetros de piedra.
+> mecanica
+> Intimidación: Fallo (5 vs CD 15).
+> presion
+> El espacio sólido ha desaparecido casi por completo; el siguiente avance de la masa orgánica obligará a un contacto físico directo o al desplazamiento hacia los filamentos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  975 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Intimidación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 97 — 82/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1645 ms
+
+> "Mi fe no es un concepto, es mi escudo y mi espada. No retrocederé ante una plaga."
+> Me planto firmemente, manteniendo la guardia alta y preparándome para el impacto físico.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 7)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1758 ms): «El escudo que no existe no detiene el hambre. Tu voluntad es un ruido irrelevant»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1793 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3738 ms
+
+> narrativa
+> El esfuerzo por anclarse al suelo resulta inútil; la piedra cenicienta vibra con una intensidad frenética y cede bajo el peso, incapaz de ofrecer el soporte necesario para mantener la guardia. El pequeño islote de roca que quedaba ha sido consumido, dejando el terreno reducido a una superficie inestable que se desmorona. Alrededor, el mar de filamentos húmedos se ha alzado como una pared orgánica, latiendo con una respiración lenta y pesada que envuelve el espacio.
+> La entidad orgánica no retrocede ni un centímetro, permitiendo que la masa de cuerpos presionen los suyos el uno contra el otro en una proximidad asfixiante. Con una voz monocorde y desprovista de toda emoción, sentencia: "El escudo que no existe no detiene el hambre. Tu voluntad es un ruido irrelevante para lo que viene".
+> mecanica
+> Atletismo: Fallo (7 vs CD 15).
+> presion
+> El terreno sólido ha desaparecido; el siguiente latido de la masa orgánica arrastrará el cuerpo hacia los filamentos o forzará un choque físico inevitable.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  750 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 98 — 83/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1055 ms
+
+> "¡Mi voluntad es la roca sobre la que caeréis!"
+> Acepto el choque inevitable y trato de clavar mi peso contra la masa orgánica para evitar ser arrastrado.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 13+4=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 17)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1510 ms): «La roca se deshace. La voluntad es solo el nombre que le das al miedo antes de q»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1467 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3496 ms
+
+> narrativa
+> El impacto es seco y contundente. Al clavar el peso con determinación, el cuerpo se convierte en un ancla humana que resiste el empuje, logrando estabilizarse justo cuando el suelo de piedra cenicienta termina de colapsar. Ahora, los pies se hunden en una superficie de filamentos húmedos y palpitantes que ceden como carne viva, transformando el espacio en una cámara claustrofóbica y orgánica que late al ritmo de una respiración pesada.
+> La entidad orgánica no mueve un solo músculo mientras absorbe el choque físico, permitiendo que la masa de su cuerpo reciba el golpe sin retroceder un milímetro. Mantiene la mirada fija y vacía, y con una voz que parece emanar de las paredes mismas, sentencia: "La roca se deshace. La voluntad es solo el nombre que le das al miedo antes de que el hambre te consuma".
+> mecanica
+> Atletismo: Éxito (17 vs CD 15).
+> presion
+> La estabilidad es precaria sobre el suelo orgánico; cualquier movimiento brusco o nuevo impulso de la masa podría succionar los pies hacia las profundidades de los filamentos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  811 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 99 — 84/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1158 ms
+
+> "Tus palabras son el eco de alguien que ya se ha rendido, pero yo no lo haré."
+> Me mantengo firme, evitando cualquier movimiento brusco para no hundirme, mientras busco cualquier señal de debilidad o punto vital en la entidad.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 4+1=5
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 5)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2046 ms): «La rendición es un concepto de quienes creen que hay algo que salvar. Aquí no ha»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1001 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2653 ms
+
+> narrativa
+> La mirada recorre cada pliegue de carne y cada nervio expuesto de la criatura, pero no encuentra ninguna grieta, ninguna pulsación irregular ni un punto donde el tejido parezca más delgado. La entidad permanece allí, imperturbable, como una estatua de carne que se funde con las paredes palpitantes de la cámara, negando cualquier rastro de vulnerabilidad.
+> Sin parpadear, la voz suena plana, carente de emoción o rastro de desafío, mientras el cuerpo permanece inmóvil: "La rendición es un concepto de quienes creen que hay algo que salvar. Aquí no hay nada que salvar, solo cosas que ser digeridas".
+> mecanica
+> Percepción: Fallo (5 vs CD 15).
+> presion
+> La entidad ha detectado el intento de análisis y su postura, aunque estática, comienza a irradiar una presión atmosférica asfixiante; el suelo de filamentos húmedos empieza a contraerse rítmicamente, reduciendo el espacio de maniobra.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  744 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 100 — 85/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1063 ms
+
+> "No me importa lo que creas sobre la salvación, pero no permitiré que sigas consumiendo inocentes."
+> Saco mi arma y me planto firmemente, resistiendo la presión del entorno para prepararme para el combate.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 5)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1956 ms): «Tus palabras son ecos en una cavidad vacía. El concepto de 'inocencia' es solo u»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1359 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3392 ms
+
+> narrativa
+> El acero surge del cuero, pero la firmeza del paso se desvanece en un instante. Justo cuando el arma busca su posición de combate, los filamentos del suelo se vuelven viscosos y reactivos, transformándose en un abrazo húmedo que atrapa los pies y anula cualquier equilibrio, dejando el cuerpo vulnerable y tambaleante sobre la superficie palpitante.
+> La entidad orgánica no se inmuta ante el metal ni ante la amenaza; permanece absolutamente inmóvil, con una vacuidad indiferente que hace que el gesto agresivo resulte irrelevante. Sin variar el volumen ni el tono, su voz resuena en la estancia: "Tus palabras son ecos en una cavidad vacía. El concepto de 'inocencia' es solo una capa de piel que aún no ha sido arrancada".
+> mecanica
+> Atletismo: Fallo (5 vs CD 15).
+> presion
+> Los filamentos que sujetan tus pies comienzan a tensarse y a ascender por tus pantorrillas, restringiendo tu movilidad y dejándote expuesto a un ataque directo de la entidad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1429 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = atrapado
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4460: Ilvard.conditions = atrapado
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 101 — 86/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1440 ms
+
+> "¡Tus palabras no me amedrentarán!"
+> Tiro con fuerza de mis brazos para intentar zafarme de los filamentos y recuperar la estabilidad.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 23)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1632 ms): «El esfuerzo es una danza predecible. Te deslizas fuera de un agarre, pero sigues»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1205 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3134 ms
+
+> narrativa
+> Un tirón seco y coordinado vence la resistencia de las fibras. El tejido viscoso cede con un sonido húmedo, liberando los pies y permitiendo que la estabilidad regrese al cuerpo en un movimiento fluido. Sin embargo, la liberación es solo un desplazamiento menor dentro de una estancia donde las paredes pulsan con un ritmo biológico y el suelo, una red de filamentos orgánicos, sigue reaccionando a cada paso como si el entorno mismo fuera un organismo consciente.
+> La entidad orgánica permanece absolutamente inmóvil, sin un solo parpadeo ni gesto que denote sorpresa ante la maniobra. Su voz, un hilo constante y gélido que parece emanar de las paredes más que de su propia garganta, resuena con una indiferencia glacial: "El esfuerzo es una danza predecible. Te deslizas fuera de un agarre, pero sigues atrapado en la misma arquitectura".
+> mecanica
+> Atletismo: Éxito (23 vs CD 15).
+> presion
+> Aunque recuperaste el equilibrio, los filamentos del suelo comienzan a vibrar en sincronía, cerrando las salidas laterales de la estancia y estrechando el espacio de maniobra.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  750 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 102 — 87/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1024 ms
+
+> "Tu arquitectura es una prisión, pero mi voluntad es libre."
+> Me pongo en guardia, buscando cualquier punto débil en las paredes que pulsan.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 19+1=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 20)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1791 ms): «La voluntad es un concepto abstracto; la biología es una certeza. Puedes sentirt»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1356 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3630 ms
+
+> narrativa
+> La mirada recorre la estancia circular, analizando las contracciones rítmicas de las paredes carnosas. Entre el zumbido sordo de los filamentos nerviosos que vibran bajo los pies, el ojo atento detecta una irregularidad en la pulsación: un punto donde el tejido se adelgaza y la presión arterial del entorno parece fluctuar, revelando una fragilidad estructural en el corazón de la arquitectura biológica.
+> Sin mover un solo músculo, la voz de la entidad se funde con el latido de las paredes, adquiriendo un volumen ligeramente más profundo y envolvente que parece nacer de cada poro de la sala: "La voluntad es un concepto abstracto; la biología es una certeza. Puedes sentirte libre mientras tus pulmones sigan respirando el aire que yo permito que circule por estas venas".
+> mecanica
+> Percepción: Éxito (20 vs CD 15).
+> presion
+> El espacio se reduce visiblemente con cada contracción de las paredes; si no se aprovecha el punto débil detectado, el grupo quedará comprimido contra el centro de la estancia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  696 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 103 — 88/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1013 ms
+
+> "No me amedrentan tus palabras mientras mi voluntad sea firme."
+> Me lanzo hacia el punto débil del tejido para intentar romperlo y abrir una salida.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 6+4=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 10)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1139 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2888 ms
+
+> narrativa
+> El impulso hacia la zona debilitada termina en un impacto sordo y frustrante. El tejido, lejos de ceder, reacciona al golpe tensándose violentamente, absorbiendo la fuerza del impacto como una esponja de músculo y cartílago que se niega a desgarrarse.
+> La cámara circular responde a la agresión acelerando su ritmo; las paredes carnosas se contraen con una fuerza renovada, reduciendo el espacio vital y empujando todo hacia el centro con una presión asfixiante que hace vibrar el suelo orgánico.
+> mecanica
+> Atletismo: Fallo (10 vs CD 15).
+> presion
+> El espacio se ha reducido drásticamente; la siguiente contracción cerrará el círculo lo suficiente como para inmovilizar cualquier movimiento.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  718 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 104 — 89/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1163 ms
+
+> "¡No nos rendiremos ante esta aberración!"
+> Hundo mis pies en el suelo orgánico y empujo con todas mis fuerzas contra las paredes para intentar frenar la contracción.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 22)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1178 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3365 ms
+
+> narrativa
+> El esfuerzo se traduce en una resistencia sólida; los pies se anclan en el tejido blando y los músculos se tensan al límite, logrando detener el avance implacable de las paredes. Por un instante, el empuje es superior a la contracción, obligando a la estructura orgánica a quedar suspendida en un equilibrio precario.
+> Sin embargo, la estancia sigue siendo un núcleo asfixiante de tejido vibrante. Las paredes pulsantes, aunque frenadas, continúan latiendo con una violencia rítmica, envolviendo el espacio en una atmósfera húmeda y opresiva que vibra contra la piel.
+> mecanica
+> Atletismo: Éxito (22 vs CD 15).
+> presion
+> La estructura orgánica ha sido frenada, pero no derrotada; el tejido comienza a endurecerse para contrarrestar la presión, y el espacio seguirá cerrándose si no se encuentra una salida definitiva.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  693 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 105 — 90/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1078 ms
+
+> "¡No me moveré de aquí mientras haya una salida!"
+> Mantengo la posición con todas mis fuerzas mientras busco con la mirada cualquier grieta o debilidad en el tejido que me permita escapar.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 2+1=3
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 3)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1512 ms): «El esfuerzo es inútil si solo empujas el muro. Mira el ritmo, no la fuerza; el t»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1272 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2756 ms
+
+> narrativa
+> La mirada recorre desesperadamente la superficie húmeda, pero el tejido visceral es una masa uniforme y ciega. No hay grietas, ni puntos débiles, ni una sola fisura que sugiera una salida; solo el latido frenético de las paredes que, al notar la resistencia, comienzan a contraerse con una fuerza renovada, volviendo el espacio aún más asfixiante.
+> En medio de esa opresión, la entidad orgánica permanece imperturbable, observando el pulso de las paredes sin que la presión parezca afectarla. Con una voz neutra y casi desapegada, sentencia: "El esfuerzo es inútil si solo empujas el muro. Mira el ritmo, no la fuerza; el tejido no se rompe, se adapta".
+> mecanica
+> Percepción: Fallo (3 vs CD 15).
+> presion
+> El tejido se adapta a la fuerza bruta y comienza a endurecerse, reduciendo el espacio disponible y dificultando la respiración.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2141 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = dificultando la respiración
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4481: Ilvard.conditions = dificultando la respiración
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 106 — 91/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1197 ms
+
+> "Tened paciencia, que habrá una forma de salir de aquí."
+> Dejo de empujar las paredes y cierro los ojos para intentar sincronizar mi respiración con el latido del lugar.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 1+1=2  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 2)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  689 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4338 ms
+
+> narrativa
+> El intento de sintonizar con el ritmo del lugar se vuelve un ejercicio frustrante. En lugar de encontrar la armonía deseada, el silencio autoimpuesto solo resalta la cacofonía de los fluidos desplazándose y el chasquido húmedo de las válvulas que se cierran. La respiración, lejos de coordinarse, se vuelve errática, chocando contra un pulso que parece burlarse de cualquier intento de comprensión.
+> La entidad orgánica no emite sonido alguno; se limita a observar el proceso con una fijeza gélida. Su mirada permanece imperturbable mientras el espacio continúa su contracción, transformando la pausa en una trampa de carne que se cierra lentamente sobre el grupo.
+> mecanica
+> Percepción: Fallo crítico (2 vs CD 15).
+> presion
+> La falta de sincronización ha provocado que el tejido reaccione al estrés: las paredes comienzan a secretar un moco viscoso y adhesivo que inmoviliza las extremidades.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1315 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = inmovilizado
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4487: Ilvard.conditions = inmovilizado
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 107 — 92/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  983 ms
+
+> "¡No os desesperéis! ¡Mantened la calma!"
+> Hago fuerza con mis brazos y piernas para liberarme de la sustancia pegajosa.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 20)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2648 ms): «El pánico es una vibración inútil. Solo acelera el cierre.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1020 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2530 ms
+
+> narrativa
+> El esfuerzo es bruto y coordinado; el tejido viscoso cede ante la presión muscular, rompiéndose con un sonido húmedo y fibroso que permite recuperar la movilidad de las extremidades. El moco se desliza pesadamente hacia el suelo, liberando el espacio justo antes de que la contracción del entorno se vuelva irreversible.
+> A pesar de la liberación, la entidad orgánica permanece inmóvil, permitiendo que la sustancia la envuelva sin oponer la menor resistencia. Con una mirada fija y neutra, su voz plana y carente de urgencia resuena en el espacio: "El pánico es una vibración inútil. Solo acelera el cierre".
+> mecanica
+> Atletismo: Éxito (20 vs CD 15).
+> presion
+> Aunque el cuerpo está libre, las paredes del lugar siguen pulsando con una frecuencia irregular; el tejido reaccionará con más agresividad si el grupo no encuentra una salida pronto.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  711 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 108 — 93/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  911 ms
+
+> "No hay pánico aquí, solo determinación."
+> Me pongo en pie y busco cualquier señal de una salida en las paredes pulsantes.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 11+1=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 12)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1928 ms): «La determinación es solo pánico con un nombre más aceptable. Busca, si quieres; »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1737 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4268 ms
+
+> narrativa
+> La mirada recorre las paredes de tejido carnoso, pero el entorno es un laberinto de vetas nerviosas que brillan con una luz tenue y enfermiza, ocultando cualquier rastro de salida bajo capas de moco denso. No hay grietas ni señales claras; los túneles se contraen rítmicamente, envolviendo el espacio en un pulso asfixiante que parece burlarse de cualquier intento de búsqueda sistemática.
+> La entidad orgánica se incorpora con una lentitud casi mecánica, sin sacudirse los restos de moco que aún cuelgan de su piel. Sus ojos siguen al jugador con una curiosidad clínica, sin juzgar, pero sin alentar, mientras su voz resuena plana en el pasillo: "La determinación es solo pánico con un nombre más aceptable. Busca, si quieres; las paredes no responden a la voluntad, sino a la necesidad".
+> mecanica
+> Percepción: Fallo (12 vs CD 15).
+> presion
+> La frecuencia de las contracciones del túnel aumenta; si no se halla una salida o un método para inhibir el tejido, las paredes se cerrarán definitivamente sobre el grupo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  815 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 109 — 94/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1208 ms
+
+> "No me detendré mientras haya alguien que necesite salir de aquí."
+> Me acerco a la entidad y le pregunto con firmeza cómo puedo demostrarle que mi necesidad es real.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 16)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2797 ms): «La necesidad no se demuestra con palabras, ni con gestos de nobleza. Se demuestr»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1784 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4021 ms
+
+> narrativa
+> La entidad orgánica ladea la cabeza ligeramente, observando el pulso del jugador con una neutralidad absoluta, sin moverse ni un centímetro hacia atrás. Sus ojos parecen analizar la frecuencia cardíaca y la dilatación de las pupilas, despojando el discurso de cualquier carga emocional para reducirlo a simples datos biológicos. "La necesidad no se demuestra con palabras, ni con gestos de nobleza. Se demuestra cuando el tejido siente que ya no tienes nada más que perder, excepto el aire de tus pulmones", sentencia con una voz que no admite réplica.
+> Mientras tanto, el pasillo comienza a estrecharse con una insistencia orgánica. Las paredes de tejido carnoso vibran ahora con un zumbido sordo y el moco se vuelve más viscoso, adhiriéndose a las botas y dificultando cada paso. El espacio se vuelve claustrofóbico, transformando el avance en una lucha física contra un entorno que parece querer digerir la presencia de los intrusos.
+> mecanica
+> Persuasión: Éxito (16 vs CD 15).
+> presion
+> El zumbido de las paredes se intensifica y el espacio disponible se reduce; si no se encuentra la forma de activar la respuesta del tejido, el túnel colapsará sobre el grupo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  693 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 110 — 95/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1503 ms
+
+> "Si el tejido busca el límite de mi resistencia, que así sea. No retrocederé ante el miedo ni ante la asfixia."
+> Me planto firmemente en el suelo, ignorando la viscosidad que atrapa mis botas, y mantengo la mirada fija en la entidad mientras el pasillo se cierra.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 22)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2070 ms): «El pulso se estabiliza. La voluntad se impone a la biología. Has dejado de pedir»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2006 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3404 ms
+
+> narrativa
+> La presión del entorno cede ante la firmeza del cuerpo. El pasillo, que hasta hace un instante se contraía como un músculo en plena convulsión, se estabiliza en un conducto opresivo de paredes palpitantes que obligan a mantener el torso erguido. El aire sigue siendo denso, saturado de un olor metálico a hierro y bilis, pero el tejido carnoso deja de cerrarse, aceptando la presencia del intruso como una parte más de su propia anatomía.
+> La entidad orgánica cierra los ojos un instante, como si procesara una frecuencia sonora nueva, y hace un movimiento fluido con la mano, indicando el camino mientras el zumbido de las paredes desciende de tono. "El pulso se estabiliza. La voluntad se impone a la biología. Has dejado de pedir permiso al espacio para existir en él", sentencia con una calma imperturbable.
+> mecanica
+> Atletismo: Éxito (22 vs CD 15).
+> presion
+> El pasillo se mantiene estable, pero el olor a bilis se intensifica y el tejido comienza a secretar un fluido corrosivo que empieza a carcomer las suelas del calzado.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1755 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · competence_shown
+  ✓ delta Ilvard · character.inventory = calzado dañado
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4513: entidad orgánica affinity 4.0 → 6.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+  → delta 4514: Ilvard.inventory = calzado dañado
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 111 — 96/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1043 ms
+
+> "No permitáis que este lugar nos consuma."
+> Me pongo en guardia y busco rápidamente una salida o un lugar seguro donde pisar para evitar el fluido.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 7+1=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 8)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  691 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  2913 ms
+
+> narrativa
+> La mirada recorre frenéticamente las paredes palpitantes y el suelo inundado, pero el pánico y la densidad del aire nublan el juicio. No hay salientes claras ni superficies secas a la vista; el fluido corrosivo sigue ascendiendo, siseando contra el cuero y la tela, mientras el entorno orgánico parece absorber cualquier rastro de una salida viable.
+> La entidad orgánica observa la agitación en silencio. No hay palabras, solo una inclinación gélida de la cabeza y una mirada imperturbable que juzga la incapacidad de encontrar un refugio en medio de la digestión del pasillo.
+> mecanica
+> Percepción: Fallo (8 vs CD 15).
+> presion
+> El fluido corrosivo comienza a traspasar las suelas, quemando la piel de los pies y reduciendo la capacidad de movimiento.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1036 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = quemaduras en los pies
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4518: Ilvard.conditions = quemaduras en los pies
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 112 — 97/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  971 ms
+
+> "¡No permitiré que este lugar nos consuma!"
+> Me pongo en pie con firmeza a pesar del dolor y trato de analizar la estructura de las paredes palpitantes buscando cualquier punto débil o grieta.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 3+-1=2
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 2)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1850 ms): «La voluntad no detiene la corrosión.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1429 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  3099 ms
+
+> narrativa
+> El esfuerzo es inútil; las paredes de músculo contraído no presentan fisuras ni puntos débiles, solo una superficie resbaladiza y palpitante que exhala un moco viscoso. El pasillo, convertido en una garganta orgánica, se cierra lentamente, estrechando el espacio mientras el ácido hirviente del suelo sigue ascendiendo, siseando con voracidad.
+> La entidad orgánica permanece inmóvil, observando el intento fallido con una curiosidad puramente clínica. Sin un ápice de empatía o burla en su tono, sentencia con una voz plana: "La voluntad no detiene la corrosión."
+> mecanica
+> Investigación: Fallo (2 vs CD 15).
+> presion
+> El nivel del ácido sube rápidamente; si no se encuentra una salida o un punto de apoyo, el fluido alcanzará las rodillas, provocando quemaduras graves y dificultando cualquier intento de huida.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  844 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Investigación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 113 — 98/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1188 ms
+
+> "¡Mi voluntad es más fuerte que tu ácido!"
+> Llevo mi mano al pomo de mi arma y busco desesperadamente cualquier saliente o irregularidad en las paredes para impulsarme hacia arriba.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 15)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1741 ms): «La fuerza es un concepto relativo cuando el entorno es el que decide el final.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3351 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  4546 ms
+
+> narrativa
+> El pasillo se estrecha en un espasmo muscular, apretando el espacio con una fuerza bruta, pero el impulso desesperado encuentra un punto de apoyo. Entre la carne palpitante y el moco viscoso, emerge un pliegue de tejido endurecido, similar a un cartílago, que sobresale lo suficiente para permitir un anclaje sólido antes de que la pared vuelva a cerrarse.
+> La entidad orgánica mantiene la mirada fija, sin parpadear, mientras su cuerpo vibra levemente en sintonía con el pulso de las paredes. Con una voz carente de emoción, sentencia: "La fuerza es un concepto relativo cuando el entorno es el que decide el final."
+> mecanica
+> Atletismo: Éxito (15 vs CD 15).
+> presion
+> El ácido sigue ascendiendo; aunque has encontrado un punto de apoyo, el fluido comienza a lamer las botas y el calor se vuelve insoportable. Si no logras impulsarte hacia arriba o abrir una brecha ahora, quedarás atrapado contra el techo mientras el corrosivo llena el pasillo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  885 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 114 — 99/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1268 ms
+
+> "¡No me detendrás con trucos!"
+> Me impulso con todas mis fuerzas desde el cartílago hacia arriba, intentando alcanzar el techo o cualquier salida superior antes de que el ácido me consuma.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 17+4=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 21)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (1461 ms): «Tus trucos son el esfuerzo; mi naturaleza es la respuesta.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3745 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  6636 ms
+
+> narrativa
+> El impulso es certero y violento. El cartílago resiste la presión del salto, catapultando el cuerpo hacia arriba con una fuerza que vence la resistencia del aire denso y el pánico del momento. El ascenso es limpio, alejando los pies del abrazo corrosivo del ácido justo antes de que el fluido alcance la zona de apoyo, dejando atrás el siseo del metal y la carne quemada.
+> La entidad orgánica observa el vuelo con una neutralidad gélida, sin mover un solo músculo, mientras su propio cuerpo se contrae rítmicamente para ajustar la tensión del pasillo. Con una calma inquietante, sentencia: "Tus trucos son el esfuerzo; mi naturaleza es la respuesta."
+> mecanica
+> Atletismo: Éxito (21 vs CD 15).
+> presion
+> Aunque has ganado altura, el pasillo sigue siendo un organismo vivo. Las paredes comienzan a secretar una sustancia pegajosa que amenaza con anclarte al techo, dejándote expuesto y vulnerable mientras la entidad orgánica recalibra la estructura para cerrarte la salida.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  883 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 115 — 100/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2670 ms
+
+> "¡Tu naturaleza es una aberración que no toleraré!"
+> Intento impulsarme con fuerza hacia adelante para evitar que la sustancia me atrape y busco una salida rápida.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 2+4=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 6)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3389 ms): «Tolerar es un concepto de quienes temen lo que no pueden controlar. Aquí no hay »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2370 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  6312 ms
+
+> narrativa
+> El impulso falla estrepitosamente. El cuerpo no encuentra la tracción necesaria sobre la superficie resbaladiza y el movimiento termina en un deslizamiento torpe, dejando los pies anclados en la resina viscosa que gotea del techo. El pasillo orgánico, húmedo y pulsante, reacciona al intento de huida cerrándose como un esfínter, estrechando el espacio vital hasta convertir el avance en una lucha claustrofóbica contra paredes que laten con un ritmo lento y asfixiante.
+> La entidad orgánica no se inmuta ante la declaración, manteniendo una calma gélida mientras expande su masa corporal para reducir aún más el diámetro del corredor. Con una voz monocorde y desprovista de emoción, sentencia: "Tolerar es un concepto de quienes temen lo que no pueden controlar. Aquí no hay moral, solo función."
+> mecanica
+> Atletismo: Fallo (6 vs CD 15).
+> presion
+> La resina viscosa comienza a endurecerse alrededor de tus extremidades, fusionándote con la arquitectura del pasillo. Si no logras liberarte o negociar con la entidad, quedarás absorbido por la estructura orgánica, convirtiéndote en parte de la función del lugar.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3402 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = atrapado en resina
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4540: Ilvard.conditions = atrapado en resina
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 116 — 101/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2025 ms
+
+> "¡No soy una pieza de tu maquinaria! ¡Tengo voluntad y honor!"
+> Intento zafarme de la resina con un esfuerzo bruto, empujando las paredes que se cierran sobre mí.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 20)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2894 ms): «El honor es una palabra vacía cuando los pulmones se quedan sin aire. Tu volunta»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2584 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5923 ms
+
+> narrativa
+> El esfuerzo bruto surte efecto. Con un crujido húmedo, la resina que aprisionaba las extremidades se quiebra, cediendo ante la fuerza del impacto. El pasillo, esa garganta de tejido pálido y palpitante, se ve obligada a dilatarse, otorgando un respiro momentáneo en aquel entorno opresivo donde las paredes siguen latiendo con un ritmo lento y visceral.
+> La entidad orgánica no altera su expresión, aunque las paredes se contraen ligeramente en respuesta al empuje, ajustando la presión como quien calibra una válvula. Su voz emerge gélida, imperturbable: "El honor es una palabra vacía cuando los pulmones se quedan sin aire. Tu voluntad es solo un impulso eléctrico; mi función es la permanencia".
+> mecanica
+> Atletismo: Éxito (20 vs CD 15).
+> presion
+> La entidad ha cedido espacio, pero la estructura orgánica comienza a secretar una nueva capa de resina más densa y adherente. Si no avanzas rápidamente o encuentras una salida, el pasillo volverá a cerrarse con una fuerza mayor, anulando la ventaja ganada.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1284 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 117 — 102/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  5401 ms
+
+> "Tu función es la permanencia, pero la mía es la justicia y no me detendré."
+> Aprovecho la dilatación del pasillo para avanzar con paso firme y decidido hacia adelante.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 22)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4756 ms): «La justicia es una variable externa. Aquí dentro, lo único real es la contracció»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2841 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9462 ms
+
+> narrativa
+> El impulso es certero y el paso firme encuentra el camino. La dilatación del pasillo se aprovecha al máximo, permitiendo que la zancada gane terreno rápidamente hasta que el conducto se abre en una cámara ovalada de paredes translúcidas. Bajo los pies, el suelo ya no es piedra ni carne sólida, sino una membrana tensa que vibra con un latido ensordecedor, suspendida sobre un vacío oscuro y profundo.
+> Mientras el avance se consolida, la voz de la entidad resuena directamente en el espacio, sin que se perciba un movimiento labial: "La justicia es una variable externa. Aquí dentro, lo único real es la contracción y el flujo". Al mismo tiempo que las palabras llenan la cámara, las paredes del pasillo comienzan a segregar una resina espesa y brillante que gotea desde el techo, cayendo pesadamente sobre el camino recorrido.
+> mecanica
+> Atletismo: Éxito (22 vs CD 15).
+> presion
+> La resina que gotea desde el techo no es solo un residuo; comienza a sellar la entrada de la cámara ovalada detrás de ti. Si no encuentras una salida o un propósito en esta estancia, quedarás atrapado en el corazón del organismo sin posibilidad de retroceder.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3435 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación location: cámara ovalada
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location cámara ovalada
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 118 — 103/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4600 ms
+
+> "¡No me intimidan tus palabras ni tus muros!"
+> Ignoro la resina y busco desesperadamente cualquier salida o mecanismo en las paredes de la cámara.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 7+-1=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 6)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5314 ms): «La intimidación requiere un miedo que no reconozco. Busca lo que quieras; el flu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7462 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10472 ms
+
+> narrativa
+> La búsqueda desesperada por las paredes translúcidas resulta estéril; los dedos resbalan sobre la superficie elástica y vibrante, pero no hay palancas, grietas ni costuras que sugieran una salida. La cámara ovalada se siente ahora como un estómago cerrado, donde los flujos orgánicos que laten bajo la membrana son el único movimiento en un espacio sin puertas.
+> La voz de la entidad resuena entonces, plana y desprovista de cualquier rastro de emoción o malicia, llenando el vacío de la estancia: "La intimidación requiere un miedo que no reconozco. Busca lo que quieras; el flujo no se detiene porque alguien grite". Mientras las palabras se desvanecen, un chasquido húmedo y definitivo sella la entrada, dejando la resina endurecida como un muro infranqueable.
+> mecanica
+> Investigación: Fallo (6 vs CD 15).
+> presion
+> El camino de regreso ha desaparecido y la cámara no ofrece ninguna salida evidente. El latido del organismo se vuelve más rítmico y pesado, sugiriendo que el proceso de digestión o asimilación de la estancia ha comenzado.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4570 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta cámara ovalada · location.state = occupied
+  ⚠ nombres no reconocidos: Fallo, Investigación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4552: cámara ovalada.state = occupied
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 119 — 104/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  41530 ms
+
+> "No me rendiré ante el silencio ni ante el hambre de este lugar."
+> Apoyo la espalda contra la pared y cierro los ojos, concentrándome en el ritmo del latido para intentar comprender la naturaleza de este organismo.
+> {Naturaleza}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Naturaleza: 7+-1=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 6)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (6055 ms): «El hambre no es un deseo, es una función. Tu voluntad es un ruido irrelevante en»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5003 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12339 ms
+
+> narrativa
+> El intento de sintonizar con el pulso del organismo fracasa; el ritmo es demasiado ajeno, una frecuencia que no ofrece respuestas, sino que aplasta cualquier intento de comprensión con su monotonía biológica. Mientras el esfuerzo resulta estéril, la cámara comienza a contraerse levemente, envolviendo el espacio en un calor húmedo y opresivo. Un latido ahora perceptible como una vibración en el suelo desplaza fluidos viscosos que se filtran por los poros de las paredes, inundando lentamente el suelo con una sustancia ámbar y espesa.
+> Desde todas las paredes a la vez, sin un punto de origen definido, emana una voz de neutralidad absoluta y gélida: "El hambre no es un deseo, es una función. Tu voluntad es un ruido irrelevante en el ciclo de la asimilación".
+> mecanica
+> Naturaleza: Fallo (6 vs CD 15).
+> presion
+> La sustancia ámbar sigue subiendo por el suelo, reduciendo el espacio disponible y dificultando el movimiento mientras el calor se vuelve sofocante.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  6156 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta cámara ovalada · location.state = occupied
+  ⚠ nombres no reconocidos: Fallo, Naturaleza
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4558: cámara ovalada.state = occupied
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 120 — 105/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  11647 ms
+
+> "No soy ruido, soy la voluntad de quien no se deja asimilar."
+> Clavo mi arma en el suelo para mantenerme firme y busco alguna salida o punto débil en las paredes mientras el fluido sube.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 16+1=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 17)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (6329 ms): «La voluntad es una construcción del ego; el ego es un residuo. Para el ciclo, tu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  88507 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12393 ms
+
+> narrativa
+> El arma se hunde en la superficie blanda, sirviendo de ancla mientras el fluido ámbar asciende ya hasta las rodillas. Las paredes de tejido pulsante se cierran con una presión creciente, obligando a encoger el cuerpo en un espacio que se vuelve asfixiante y húmedo. Sin embargo, entre la viscosidad de las membranas, la mirada detecta una anomalía: una válvula semitransparente que palpita con un ritmo errático, una zona de contracción irregular donde la estructura biológica parece dudar en su cierre.
+> La voz de la entidad orgánica vuelve a manifestarse, no como un sonido, sino como una constante atmosférica que vibra directamente en los huesos, desprovista de cualquier rastro de ira o desafío: "La voluntad es una construcción del ego; el ego es un residuo. Para el ciclo, tu resistencia es solo la contracción de un músculo antes de ser digerido".
+> mecanica
+> Percepción: Éxito (17 vs CD 15).
+> presion
+> La válvula es la única salida visible, pero el fluido ámbar sigue subiendo y las paredes continúan su contracción; el espacio para maniobrar se agota rápidamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5181 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: válvula semitransparente
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item válvula semitransparente
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 121 — 106/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  9284 ms
+
+> "No soy un residuo, sino un instrumento de la justicia."
+> Me lanzo con fuerza hacia la válvula para intentar atravesarla antes de que el espacio desaparezca.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 22)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (6669 ms): «La justicia es el nombre que el residuo le da a su propia inercia. Atraviesa la »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4642 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12624 ms
+
+> narrativa
+> El cuerpo se proyecta con una fuerza explosiva, rompiendo la resistencia del fluido ámbar que intenta anclar los pasos. El impacto contra la membrana de la válvula es seco y preciso, permitiendo que la masa orgánica ceda bajo la presión del impulso. El paso conduce a un conducto estrecho y resbaladizo donde el líquido es expulsado violentamente hacia una cámara posterior, transformando el entorno en un túnel de tejido fibroso y pulsaciones más lentas.
+> Mientras el avance se consolida, la vibración ósea se vuelve más densa, casi tangible, y el cuerpo biológico que envuelve el camino se contrae con una indiferencia absoluta. La voz de la entidad resuena nuevamente en la estructura del cráneo: "La justicia es el nombre que el residuo le da a su propia inercia. Atraviesa la membrana, instrumento; el ciclo no se detiene por un nombre".
+> mecanica
+> Atletismo: Éxito (22 vs CD 15).
+> presion
+> La cámara posterior es más estable, pero el flujo de fluido ámbar que viene detrás sigue siendo violento y podría bloquear el conducto si el avance se detiene.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  6086 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.location_id
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 122 — 107/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2529 ms
+
+> "No soy un instrumento, sino un servidor de la luz. Y mi justicia no es inercia."
+> Sigo avanzando rápidamente por el conducto fibroso para evitar que el flujo me alcance.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 4+4=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 8)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4746 ms): «Llamas a la luz para no sentir el frío del vacío, y llamas justicia a tu terqued»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6865 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15212 ms
+
+> narrativa
+> El avance se vuelve torpe; el suelo elástico y húmedo de la cámara cede bajo el peso, absorbiendo el impulso y transformando la carrera en un esfuerzo agotador contra una superficie que parece querer retener los pasos. El conducto se ensancha en un espacio de paredes translúcidas y palpitantes, donde el fluido ámbar choca contra membranas filtrantes que emiten un zumbido sordo y constante. El líquido, que venía pisando los talones, comienza a llenar la estancia con una rapidez alarmante, elevando el nivel del fluido mientras el espacio se cierra.
+> La voz de la entidad orgánica no surge de ningún punto fijo, sino que vibra en las paredes del conducto, sincronizada con el latido del tejido fibroso que envuelve la cámara: "Llamas a la luz para no sentir el frío del vacío, y llamas justicia a tu terquedad. Sigue corriendo, servidor; el fluido no distingue entre conceptos, solo entre lo que fluye y lo que se estanca".
+> mecanica
+> Atletismo: Fallo (8 vs CD 15).
+> presion
+> El nivel del fluido ámbar sube rápidamente; si no se encuentra una salida o un punto de anclaje, la cámara se convertirá en un tanque sellado.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2324 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 123 — 108/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4090 ms
+
+> "¡No me detendré mientras haya alguien que necesite ayuda!"
+> Lucho contra la densidad del fluido, buscando desesperadamente alguna grieta, saliente o membrana que pueda usar para impulsarme hacia arriba y salir de aquí.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 5)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (13431 ms): «Tus palabras son ecos en una caja de carne. No hay nadie a quien salvar en el fl»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5081 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14082 ms
+
+> narrativa
+> El esfuerzo es inútil. Los pliegues de tejido resbaladizo ceden bajo los dedos, convirtiendo cualquier intento de ascenso en un deslizamiento desesperado hacia el fondo. El fluido ámbar, denso y viscoso, asciende con una rapidez implacable hasta alcanzar el pecho, anclando el cuerpo contra las paredes membranosas que se contraen rítmicamente, como un corazón gigante que intenta digerir la intrusión.
+> La vibración de las paredes se vuelve más pesada, casi asfixiante, y el zumbido sordo de los filtros aumenta de intensidad mientras la voz de la entidad orgánica resuena en cada fibra del lugar: "Tus palabras son ecos en una caja de carne. No hay nadie a quien salvar en el flujo, solo el peso de tu propio deseo de ser héroe hundiéndote más rápido".
+> mecanica
+> Atletismo: Fallo (5 vs CD 15).
+> presion
+> El fluido ámbar ya alcanza el pecho y la cámara continúa contrayéndose; el espacio para respirar se agota y la movilidad queda reducida a espasmos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2795 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 124 — 109/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3206 ms
+
+> "No soy un héroe por deseo, sino por deber."
+> Trato de clavar mis manos o mi equipo en las paredes membranosas para anclarme y evitar que el fluido me sumerja más.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 22)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4887 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10045 ms
+
+> narrativa
+> Tus dedos encuentran grietas en el tejido fibroso de la pared, permitiéndote anclarte con fuerza mientras el fluido ámbar se estabiliza a la altura de tus hombros. La cámara orgánica pulsa con una violencia sorda, un latido rítmico que sacude las membranas, pero el agarre es firme y has logrado detener el descenso.
+> El entorno vibra con una intensidad asfixiante, pero el cuerpo ya no se desliza hacia el abismo viscoso. El silencio de la entidad orgánica llena el espacio, dejando solo el sonido del fluido chapoteando contra el tejido vivo.
+> mecanica
+> Atletismo: Éxito (22 vs CD 15).
+> presion
+> Aunque el descenso se ha detenido, las paredes continúan contrayéndose rítmicamente, reduciendo el espacio disponible y amenazando con aplastar cualquier punto de apoyo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1639 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Tus, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 125 — 110/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2559 ms
+
+> "No me aplastarás mientras haya luz en mi alma."
+> Intento trepar rápidamente hacia arriba aprovechando las grietas antes de que las paredes se cierren más.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 7)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (7200 ms): «Tus palabras no sirven de ancla en este lugar.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3832 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11271 ms
+
+> narrativa
+> El conducto visceral reacciona con un espasmo violento. Las paredes carnosas y húmedas se contraen bruscamente, cerrándose como un esfínter gigante que expulsa el aire y el fluido ámbar hacia arriba en una marea viscosa. El impulso para ascender se desvanece cuando las grietas que servían de apoyo se sellan bajo la presión del tejido, haciendo que los dedos resbalen impotentes sobre la superficie lubricada.
+> Desde la vibración misma de las paredes, una voz fría y distante, desprovista de cuerdas vocales, resuena en todo el espacio: "Tus palabras no sirven de ancla en este lugar."
+> mecanica
+> Atletismo: Fallo (7 vs CD 15).
+> presion
+> El cierre del conducto es implacable; si no encuentras una nueva forma de anclarte o avanzar, quedarás atrapado en el estrechamiento mientras el fluido ámbar te empuja hacia una zona desconocida.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1959 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 126 — 111/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2435 ms
+
+> "¡No me rendiré mientras haya alguien que necesite ayuda!"
+> Clavo mi arma en la carne de la pared para intentar frenar el descenso y mantenerme firme.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 13)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6843 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10934 ms
+
+> narrativa
+> El arma se hunde en la pared visceral, pero la resistencia es efímera. El tejido reacciona con una contracción convulsiva, cerrándose alrededor del metal como un puño de carne que atrapa el arma, inmovilizándola sin ofrecer el apoyo necesario para detener el movimiento.
+> El conducto se ha transformado ahora en un cilindro opresivo de paredes palpitantes y lubricadas. El fluido ámbar comienza a subir con rapidez, una marea viscosa que llena el espacio y empuja con fuerza, obligando a luchar contra la corriente o ser arrastrado por el flujo hacia lo desconocido.
+> mecanica
+> Atletismo: Fallo (13 vs CD 15).
+> presion
+> El arma ha quedado encajada en la pared, pero el fluido ámbar sube rápidamente; si no logras liberar el equipo o encontrar un nuevo apoyo, serás succionado por la corriente mientras el conducto se sigue estrechando.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  7390 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.inventory = arma perdida
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4630: Ilvard.inventory = arma perdida
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 127 — 112/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3064 ms
+
+> "¡Por los cielos, suéltame!"
+> Tiro con fuerza bruta del arma para arrancarla de la pared de carne mientras intento mantenerme a flote.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 6+4=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 10)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (9343 ms): «No es el tejido quien te retiene, es tu propia insistencia.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5273 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17759 ms
+
+> narrativa
+> El esfuerzo es inútil. El tejido espasmódico se cierra con una violencia ciega, transformando el conducto en un cuello de botella que anula cualquier intento de tracción; el arma permanece anclada, fundida en la contracción de la pared visceral. Mientras tanto, el fluido ámbar asciende turbulento y denso, alcanzando ya la altura del pecho y dificultando cada movimiento.
+> Desde el entorno mismo, sin que haya un rostro o una garganta que emita el sonido, resuena una voz desapasionada, carente de cualquier rastro de urgencia o empatía: "No es el tejido quien te retiene, es tu propia insistencia."
+> mecanica
+> Atletismo: Fallo (10 vs CD 15).
+> presion
+> El fluido ámbar sigue subiendo y el conducto se estrecha cada vez más; si no logras liberar el arma o deslizarte fuera del cuello de botella, quedarás atrapado y ahogado por la marea viscosa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1655 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 128 — 113/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2891 ms
+
+> "No me rendiré mientras haya una chispa de esperanza."
+> Suelto el arma y trato de deslizarme fuera del cuello de botella, abandonando el equipo para salvar mi vida.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Acrobacias: 19+0=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 19)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (6582 ms): «La esperanza es solo otra forma de insistencia. Ahora, al menos, eres ligero.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  827 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11639 ms
+
+> narrativa
+> El cuerpo se desprende del peso del acero y, con un movimiento fluido y desesperado, logra deslizarse a través de la contracción visceral. El cuello de botella cede ante la ausencia de resistencia, permitiendo que el cuerpo se impulse hacia arriba, alejándose del arma que queda sepultada en el tejido espasmódico.
+> Mientras el fluido ámbar continúa ascendiendo con su densidad viscosa, la voz vuelve a emanar del entorno, plana y monocorde, como una observación puramente factual: "La esperanza es solo otra forma de insistencia. Ahora, al menos, eres ligero."
+> mecanica
+> Acrobacias: Éxito (19 vs CD 15).
+> presion
+> Has escapado del cierre visceral, pero el fluido ámbar sigue subiendo rápidamente y te has quedado sin tu equipo principal; si no encuentras una salida o un punto de apoyo pronto, el entorno te consumirá.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4939 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.inventory = equipo principal
+  ⚠ nombres no reconocidos: Acrobacias, Has, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4647: Ilvard.inventory = equipo principal
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 129 — 114/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3020 ms
+
+> "No me rendiré tan fácilmente."
+> Busco desesperadamente cualquier saliente, grieta o superficie sólida en las paredes para trepar y mantenerme por encima del fluido.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 14)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5934 ms): «La voluntad es un motor eficiente, pero el fluido no entiende de determinación. »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6112 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12375 ms
+
+> narrativa
+> Las manos arañan las paredes de tejido pulsante y húmedo, pero los dedos resbalan sobre la carne viscosa sin hallar agarre. Las vetas de cartílago endurecido que sobresalen como costillas irregulares resultan demasiado lisas o quebradizas para sostener el peso, y cada intento de ascenso termina en un deslizamiento frustrante mientras el fluido ámbar sigue ganando terreno, envolviendo las piernas con una densidad implacable.
+> La voz resuena desde todas las direcciones, sin rastro de burla o empatía, manteniendo una cadencia matemática mientras el ámbar sigue ascendiendo: "La voluntad es un motor eficiente, pero el fluido no entiende de determinación. Solo de volumen."
+> mecanica
+> Atletismo: Fallo (14 vs CD 15).
+> presion
+> El fluido ámbar ya alcanza la cintura y la viscosidad dificulta cada movimiento; si no encuentras un punto de apoyo real en los próximos segundos, quedarás sumergido y atrapado contra el techo de carne.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1295 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 130 — 115/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3828 ms
+
+> "¡No me rendiré ante un charco de resina!"
+> Busco desesperadamente cualquier irregularidad o protuberancia en las paredes que pueda usar como ancla, ignorando el fluido.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 5+1=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 6)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5509 ms): «La resina no es un charco, es un proceso. Y tu resistencia no es más que una fri»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4121 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14021 ms
+
+> narrativa
+> Las manos recorren frenéticamente las paredes de tejido orgánico, pero la superficie es una extensión húmeda y resbaladiza que se niega a ofrecer el más mínimo resquicio. Las costillas de cartílago, aunque prominentes, son tan lisas como el cristal, haciendo que cada intento de anclaje resulte en un deslizamiento inútil mientras el fluido ámbar continúa su ascenso mecánico, ignorando cualquier rastro de desesperación.
+> La voz de la entidad vuelve a resonar, omnidireccional y carente de cualquier inflexión emocional, fundiéndose con el sonido del líquido llenando el espacio: "La resina no es un charco, es un proceso. Y tu resistencia no es más que una fricción irrelevante en el cálculo del llenado."
+> mecanica
+> Percepción: Fallo (6 vs CD 15).
+> presion
+> El fluido ámbar ya ha superado el pecho y la densidad del líquido comienza a presionar los pulmones; si no logras salir de la zona de inundación ahora mismo, quedarás sellado contra el techo de carne.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3809 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = presion
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4658: Ilvard.conditions = presion
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 131 — 116/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3463 ms
+
+> "¡No soy una fricción, soy un hombre!"
+> Intento impulsarme con fuerza contra el techo de carne para buscar alguna salida o punto débil arriba. {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 7)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5179 ms): «La definición de 'hombre' es una variable biológica. Aquí, solo eres volumen que»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1129 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13456 ms
+
+> narrativa
+> El impulso es débil y desesperado; los músculos se tensan en un esfuerzo bruto, pero el techo de carne cede con una elasticidad viscosa que absorbe el golpe sin romperse ni desplazarse. El cuerpo rebota inútilmente contra la superficie blanda, hundiéndose apenas unos centímetros antes de ser empujado hacia abajo nuevamente por la densidad del fluido ámbar que ya lo envuelve todo.
+> La voz de la entidad resuena en el espacio saturado, plana y desprovista de cualquier rastro de burla o malicia, simplemente enunciando un hecho mientras el líquido sigue ascendiendo: "La definición de 'hombre' es una variable biológica. Aquí, solo eres volumen que desplaza el fluido."
+> mecanica
+> Atletismo: Fallo (7 vs CD 15).
+> presion
+> El líquido alcanza la altura de la barbilla y la presión sobre el tórax se vuelve asfixiante; un intento fallido más y el aire se agotará antes de encontrar una salida.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3534 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = asfixiante
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4662: Ilvard.conditions = asfixiante
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 132 — 117/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2401 ms
+
+> "No soy solo volumen, soy la voluntad de la luz."
+> Trato de buscar algún punto de apoyo o una grieta en esa superficie carnosa para impulsarme con más fuerza hacia arriba.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 15+4=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 19)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (7455 ms): «La voluntad no altera el desplazamiento. Solo has encontrado un punto de apoyo, »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6664 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10711 ms
+
+> narrativa
+> La superficie carnosa cede finalmente ante el impulso, revelando una zona de tejido más fibroso y rígido que permite un anclaje precario. El fluido ámbar se agita violentamente alrededor, creando remolinos espesos que luchan por succionar el cuerpo hacia abajo mientras el techo se estira como una membrana tensa, resistiendo la presión.
+> La entidad orgánica permanece imperturbable, con el fluido vibrando ligeramente a su alrededor. Con una voz monocorde y sin rastro de sorpresa, sentencia: "La voluntad no altera el desplazamiento. Solo has encontrado un punto de apoyo, no una salida."
+> mecanica
+> Atletismo: Éxito (19 vs CD 15).
+> presion
+> El anclaje es inestable y el tejido fibroso comienza a desgarrarse bajo el peso; si no se encuentra una vía de escape pronto, el punto de apoyo colapsará y la succión del fluido será inevitable.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1361 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 133 — 118/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2679 ms
+
+> "No me rendiré mientras haya una oportunidad de salir de este lugar."
+> Intento impulsarme con fuerza desde el tejido fibroso hacia la membrana del techo para intentar rasgarla o trepar por ella.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 13+4=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 17)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (9059 ms): «El esfuerzo es un gasto inútil de energía. La membrana no cede ante la fuerza, s»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7019 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14720 ms
+
+> narrativa
+> El impulso es seco y potente, lanzando el cuerpo contra la capa pálida y translúcida del techo. La membrana vibra con el pulso de la entidad, estirándose peligrosamente bajo el peso y la presión, volviéndose elástica y resbaladiza, pero finalmente cede, rasgándose con un sonido húmedo que abre una brecha en la estructura orgánica.
+> La entidad ni siquiera se mueve para observar el salto; su voz es plana, carente de juicio o aliento, mientras el fluido ámbar sigue pulsando rítmicamente a su alrededor: "El esfuerzo es un gasto inútil de energía. La membrana no cede ante la fuerza, sino ante la naturaleza de lo que es."
+> mecanica
+> Atletismo: Éxito (17 vs CD 15).
+> presion
+> El desgarro en la membrana ha alterado la presión interna de la cámara; el fluido ámbar comienza a subir rápidamente para sellar la brecha, amenazando con atrapar cualquier extremidad que aún sobresalga del techo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4398 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta cámara ovalada · location.state = damaged
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4681: cámara ovalada.state = damaged
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 134 — 119/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2731 ms
+
+> "¡No me atraparás aquí!"
+> Tirome rápidamente hacia adelante para salir completamente del agujero y alejarme de la membrana antes de que el fluido me alcance.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Acrobacias: 18+0=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 18)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (6589 ms): «La urgencia es otra forma de gasto. Ahora estás fuera, pero el vacío sigue siend»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4176 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16044 ms
+
+> narrativa
+> El movimiento es fluido y preciso, un impulso coordinado que arranca el cuerpo del borde justo antes de que la membrana se selle. El fluido ámbar, denso y viscoso, se cierra tras el salto con un chasquido húmedo, eliminando cualquier rastro de la brecha y dejando el entorno en un silencio vibrante.
+> El espacio se despliega como un organismo vivo: paredes de tejido pálido que se curvan en ángulos imposibles y un suelo que actúa como un espejo de ámbar, donde cada paso resuena con el latido sordo de la entidad. Sin cambiar su postura, la criatura deja caer sus palabras en una voz monocorde, despojada de sorpresa o alarma: "La urgencia es otra forma de gasto. Ahora estás fuera, pero el vacío sigue siendo el mismo."
+> mecanica
+> Acrobacias: Éxito (18 vs CD 15).
+> presion
+> La entidad ha recuperado la estanqueidad de la cámara, pero el ritmo del latido en el suelo comienza a acelerarse, sugiriendo que la intrusión ha despertado un proceso de respuesta inmunitaria en el entorno.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2958 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta cámara ovalada · location.state = intact
+  ⚠ nombres no reconocidos: Acrobacias, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4687: cámara ovalada.state = intact
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 135 — 120/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2484 ms
+
+> "No busco el vacío, sino la verdad de este lugar." 
+> Me pongo en guardia, atento a cualquier movimiento en las paredes de tejido mientras observo a la criatura.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 10+1=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 11)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5696 ms): «La verdad es el residuo de lo que no pudiste digerir. Aquí, todo se digiere.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  13112 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11555 ms
+
+> narrativa
+> La mirada recorre las paredes de tejido pálido, buscando alguna grieta o movimiento sospechoso, pero el entorno permanece hermético y engañosamente estático. No hay señales visibles de peligro ni pistas ocultas que escapen al ojo; el espacio parece absorber cualquier intento de análisis, devolviendo solo una monotonía orgánica que asfixia la intuición.
+> La entidad orgánica mantiene la inmovilidad absoluta, sin seguir la mirada hacia las paredes; su voz no fluctúa ni un ápice mientras responde: "La verdad es el residuo de lo que no pudiste digerir. Aquí, todo se digiere."
+> mecanica
+> Percepción: Fallo (11 vs CD 15).
+> presion
+> El latido sordo del suelo se vuelve más errático y fuerte, indicando que el entorno ha identificado la presencia extraña y está empezando a cerrar los conductos de salida.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1278 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 136 — 121/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 6.0 (neutral), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2135 ms
+
+> "No permitiré que el silencio devore la verdad."
+> Me pongo frente a la entidad, manteniendo la guardia alta y el cuerpo firme.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 16)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (7327 ms): «El silencio no devora, solo conserva. Tu resistencia es un ruido más que este lu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  13736 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17360 ms
+
+> narrativa
+> La postura firme y la determinación imponen un peso tangible en la estancia, obligando a la entidad a reconocer la voluntad inquebrantable del interlocutor. Sin embargo, la criatura permanece inmóvil, como una estatua de carne, sin pestañear ni reaccionar físicamente ante la agresividad del gesto. Con una voz plana, desprovista de cualquier rastro de miedo o desafío, responde: "El silencio no devora, solo conserva. Tu resistencia es un ruido más que este lugar terminará por asimilar".
+> Mientras las palabras quedan suspendidas, la estancia comienza a contraerse ligeramente. Las paredes de tejido pálido pulsan ahora con un ritmo acelerado, imitando la agitación del grupo, mientras el aire se vuelve denso y húmedo, saturado por un penetrante olor a hierro y bilis.
+> mecanica
+> Intimidación: Éxito (16 vs CD 15).
+> presion
+> Las paredes pulsantes comienzan a segregar un fluido viscoso que ralentiza los movimientos, amenazando con anclar los pies al suelo orgánico.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3922 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · competence_shown
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4699: entidad orgánica affinity 6.0 → 8.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 137 — 122/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3090 ms
+
+> "Tus palabras están vacías, criatura. La verdad siempre encuentra su camino, aunque tengas que desgarrar este lugar para dejarla salir."
+> Clavo mis pies con fuerza en el suelo y trato de avanzar hacia la entidad a pesar del fluido.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 7)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (15941 ms): «La verdad no es un camino, es un hambre. Y tú, con esa fuerza tan vana, solo est»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  10738 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14127 ms
+
+> narrativa
+> La estancia se ha transformado en una garganta palpitante de paredes blanquecinas y húmedas. El fluido viscoso que emana de los poros del tejido crea una resistencia densa y pegajosa, una trampa orgánica que convierte cada intento de avance en una lucha agotadora contra una marea espesa que se aferra a las botas y frena en seco cualquier impulso.
+> La entidad orgánica no se mueve ni un milímetro mientras el esfuerzo físico se vuelve inútil contra la densidad del suelo; observa la escena con una curiosidad gélida y una voz monocorde, casi mecánica: "La verdad no es un camino, es un hambre. Y tú, con esa fuerza tan vana, solo estás alimentando la urgencia de este sitio por cerrarse sobre ti".
+> mecanica
+> Atletismo: Fallo (7 vs CD 15).
+> presion
+> El fluido comienza a endurecerse alrededor de los tobillos, transformando la viscosidad en una costra rígida que amenaza con inmovilizar por completo al personaje.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3778 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = inmovilizado
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4708: Ilvard.conditions = inmovilizado
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 138 — 123/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2269 ms
+
+> "No me detendré mientras haya alguien que necesite justicia en este lugar."
+> Hago un esfuerzo desesperado por liberar mis pies del fluido endurecido.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 5)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (14420 ms): «La justicia es un concepto humano, un ruido que no tiene eco en estas paredes. M»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7641 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13539 ms
+
+> narrativa
+> El esfuerzo desesperado resulta inútil; el tejido blanquecino responde con un espasmo rítmico, cerrándose con una fuerza visceral que transforma la viscosidad en una pinza orgánica, anclando los pies al suelo con una firmeza absoluta. Mientras el espacio vital se reduce debido a la contracción de las paredes, un vapor dulzón y pesado comienza a exhalar desde los poros de la estancia, nublando la vista y espesando el aire.
+> La entidad orgánica permanece inmóvil, observando la pifia con una mirada vacía y analítica, como quien estudia la contracción de un músculo bajo el microscopio. Con un tono gélido, sentencia: "La justicia es un concepto humano, un ruido que no tiene eco en estas paredes. Mientras más luchas, más te integras al tejido. No eres un libertador, eres simplemente... materia orgánica resistiéndose a lo inevitable".
+> mecanica
+> Atletismo: Fallo (5 vs CD 15).
+> presion
+> El anclaje orgánico se vuelve más profundo y el vapor dulzón empieza a provocar una ligera letargia, dificultando la capacidad de reacción.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3024 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = letargia
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4715: Ilvard.conditions = letargia
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'character', 'entity_id': 'jugador', 'field': 'estado', 'value': 'Inmovilizado por el tejido orgánico'}
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 139 — 124/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3430 ms
+
+> "No soy materia, soy la voluntad de quien no se rinde."
+> Cierro los ojos para ignorar el vapor y clavo mi arma en el tejido que sujeta mis pies, intentando desgarrarlo con fuerza bruta.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 13)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (10755 ms): «Crees que la voluntad es una fuerza, pero aquí es solo un lubricante para el pro»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5896 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15033 ms
+
+> narrativa
+> El acero se hunde en la membrana, pero el tejido no cede; en lugar de desgarrarse, la masa blanquecina absorbe el impacto con una elasticidad perturbadora, envolviendo el arma en un abrazo viscoso que anula la fuerza del golpe. La estancia entera parece responder al ataque, pulsando con un ritmo acelerado mientras el suelo muscular se contrae con más fuerza, hundiendo los pies aún más en la superficie húmeda. La bruma dulce se vuelve más densa, transformando el aire en un almíbar invisible que nubla la vista y entorpece los sentidos.
+> La entidad orgánica no parpadea, observando la escena con una indiferencia clínica. Sin moverse, con una voz plana y desprovista de emoción, mantiene la mirada fija en el punto donde el arma penetra el tejido: "Crees que la voluntad es una fuerza, pero aquí es solo un lubricante para el proceso. Desgarrar la piel no detiene la cicatrización; solo acelera la respuesta del cuerpo".
+> mecanica
+> Atletismo: Fallo (13 vs CD 15).
+> presion
+> El tejido orgánico comienza a trepar por las piernas, fusionándose con las botas y restringiendo la movilidad del torso; el vapor dulzón empieza a inducir una somnolencia pesada.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3380 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = somnolencia pesada
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4726: Ilvard.conditions = somnolencia pesada
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 140 — 125/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2363 ms
+
+> "¡Mi voluntad no es lubricante, es mi escudo!"
+> Tiro con fuerza de mi arma para intentar liberarla del tejido mientras lucho por mantenerme despierto.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 14)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3877 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15062 ms
+
+> narrativa
+> El esfuerzo es titánico, pero el metal sigue anclado en la masa blanquecina, que se aferra al arma con una tenacidad gástrica. A pesar del tirón violento, el tejido no se rinde; al contrario, se contrae con un espasmo coordinado que anula cualquier avance, dejando el arma atrapada en el corazón de esa membrana elástica. 
+> Alrededor, la estancia se ha transformado en una cavidad visceral. Las paredes de tejido pálido y venas pulsantes se cierran lentamente, reduciendo el espacio disponible y convirtiendo la habitación en un estómago vivo y húmedo que exhala un calor sofocante. La entidad orgánica permanece inmóvil, observando el fracaso del intento con una calma imperturbable.
+> mecanica
+> Atletismo: Fallo (14 vs CD 15).
+> presion
+> Las paredes se cierran más, reduciendo el espacio de maniobra y apretando el cuerpo contra la superficie viscosa; la somnolencia se vuelve un peso físico que nubla la consciencia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3195 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta cámara ovalada · location.state = occupied
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4731: cámara ovalada.state = occupied
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 141 — 126/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2233 ms
+
+> "¡No me vencerás con este sueño!"
+> Suelto el arma y golpeo con fuerza las paredes que se cierran sobre mí para intentar crear espacio.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 23)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (7006 ms): «Esa terquedad es... fascinante. Pero golpear las paredes de un cuerpo que no tie»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5281 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13878 ms
+
+> narrativa
+> El impacto es contundente y el golpe logra que la pared orgánica retroceda con un sonido húmedo y sordo, abriendo una bolsa de aire temporal que permite respirar. Sin embargo, el tejido elástico vibra con una irritación palpable y comienza a segregar un fluido transparente; la superficie se vuelve resbaladiza, pero el aire se espesa, aumentando la sensación de asfixia en la cavidad.
+> La entidad orgánica observa el resultado con una curiosidad desapasionada, sin moverse un milímetro. Con una voz neutra, casi clínica, comenta: "Esa terquedad es... fascinante. Pero golpear las paredes de un cuerpo que no tiene huesos es como intentar herir al agua".
+> mecanica
+> Atletismo: Éxito (23 vs CD 15).
+> presion
+> El fluido lubricante hace que sea más difícil mantener el equilibrio o apoyarse para golpear de nuevo, mientras el oxígeno en la bolsa de aire comienza a agotarse rápidamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1685 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 142 — 127/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3973 ms
+
+> "No me detendré mientras haya alguien sufriendo en este lugar."
+> Busco desesperadamente algún punto de anclaje o una grieta en el tejido para impulsarme y golpear con más fuerza.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 4+4=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 8)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4627 ms): «El sufrimiento es un concepto biológico, una señal de alerta. Para mí, es simple»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2271 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14076 ms
+
+> narrativa
+> Los dedos resbalan impotentes sobre la superficie viscosa; cada intento de encontrar un agarre termina en un deslizamiento frustrante que solo agota las últimas reservas de aire. No hay grietas, ni puntos débiles, solo una elasticidad implacable que absorbe cualquier impulso y devuelve el cuerpo hacia el centro de la cavidad, dejando los músculos ardiendo y la respiración entrecortada.
+> La entidad orgánica mantiene una inmovilidad absoluta, observando el forcejeo con una mirada analítica y carente de juicio. Su voz resuena con una neutralidad gélida: "El sufrimiento es un concepto biológico, una señal de alerta. Para mí, es simplemente ruido. Tu determinación no cambia la arquitectura de este lugar; solo acelera el tiempo que te queda de oxígeno".
+> mecanica
+> Atletismo: Fallo (8 vs CD 15).
+> presion
+> El agotamiento físico y la falta de oxígeno empiezan a nublar la vista; si no encuentras una alternativa al esfuerzo bruto, el desmayo será inevitable.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1482 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 143 — 128/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3204 ms
+
+> "No me rendiré mientras tenga aliento."
+> Dejo de luchar contra las paredes para ahorrar oxígeno y busco con la mirada cualquier anomalía o punto de luz en la cavidad.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 2+1=3
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 3)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4863 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11960 ms
+
+> narrativa
+> La penumbra bioluminiscente se mantiene constante, una luz difusa y pálida que no proyecta sombras ni revela secretos. A pesar del esfuerzo por analizar cada centímetro de la cavidad, las paredes pulsan con un ritmo lento y viscoso, manteniendo una uniformidad absoluta que se burla de cualquier intento de observación. No hay grietas, no hay anomalías; solo la humedad opresiva y la certeza de que el entorno es tan liso y cerrado como una tumba de carne.
+> En el silencio que sigue al cese de la lucha, la entidad orgánica permanece inmóvil. No hay palabras, solo una presencia analítica que observa el agotamiento del cuerpo, esperando a que la quietud se transforme en rendición.
+> mecanica
+> Percepción: Fallo (3 vs CD 15).
+> presion
+> El oxígeno es un recurso finito y la inacción no detiene el reloj; la hipoxia empezará a provocar alucinaciones o una pérdida de conciencia si no se halla una salida inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1451 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 144 — 129/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3414 ms
+
+> "No me rendiré mientras quede aliento en mis pulmones."
+> Me pongo de pie y comienzo a golpear las paredes con el pomo de mi espada, buscando cualquier punto que suene hueco o ceda ante la fuerza.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 20+4=24  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 24)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (11211 ms): «Tu voluntad es un motor curioso, pero el metal contra la carne solo produce eco.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  9951 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  21781 ms
+
+> narrativa
+> Un golpe seco y resonante fractura la monotonía orgánica. Bajo la fuerza del impacto, una sección de la pared cede con un chasquido húmedo, abriendo una cavidad interna donde la luz bioluminiscente brilla con una intensidad renovada y el aire se siente, por primera vez, ligeramente más fresco.
+> La entidad orgánica permanece inmóvil, observando el punto de ruptura con una curiosidad clínica, sin intención de ayudar ni de estorbar. Con una voz neutra, casi desprovista de inflexión, comenta: "Tu voluntad es un motor curioso, pero el metal contra la carne solo produce eco. No busques una puerta donde solo hay tejido".
+> mecanica
+> Atletismo: Éxito (24 vs CD 15).
+> presion
+> La brecha es pequeña y el tejido circundante comienza a contraerse lentamente, intentando cerrar la herida orgánica. Si no se atraviesa la abertura pronto, la pared volverá a sellarse.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4006 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta cámara ovalada · location.state = damaged
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4762: cámara ovalada.state = damaged
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'location', 'entity_id': 'cavidad_bioluminiscente', 'field': 'descripcion', 'value': 'Una cámara de paredes pulsantes y lisas, ahora con una brecha abierta hacia un conducto interno tras el impacto crítico del jugador.'}
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 145 — 130/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  5019 ms
+
+> "No permitiré que esta oportunidad se cierre."
+> Me lanzo rápidamente hacia la cavidad para atravesar la brecha antes de que el tejido se selle.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 7+4=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 11)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3159 ms): «El tejido no reconoce la urgencia, solo la intrusión.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1972 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12746 ms
+
+> narrativa
+> El impulso falla en el momento crítico. El cuerpo no encuentra el anclaje necesario sobre la superficie húmeda y resbaladiza, provocando que el salto quede corto y el impacto sea torpe contra el borde de la abertura. El tejido, reaccionando a la intrusión con una contracción rítmica y visceral, se estrecha violentamente, cerrando el paso justo antes de que el peso del cuerpo logre traspasar el umbral.
+> La entidad orgánica observa la trayectoria con una quietud absoluta, sin mover un solo músculo mientras la abertura se sella por completo, dejando atrás una superficie lisa y compacta. "El tejido no reconoce la urgencia, solo la intrusión", sentencia con una neutralidad gélida, mientras el espacio vuelve a quedar sellado.
+> mecanica
+> Atletismo: Fallo (11 vs CD 15).
+> presion
+> La brecha ha desaparecido. Para avanzar ahora será necesario encontrar un nuevo punto de ruptura o convencer a la entidad de que facilite el paso, mientras el aire en el corredor comienza a volverse pesado y viciado.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1801 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 146 — 131/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 8.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  5590 ms
+
+> "Tened paciencia, pues la fuerza bruta no ha sido la llave."
+> Me pongo en pie con dignidad y me dirijo a la entidad, manteniendo una postura abierta y honesta.
+> "Dime qué necesitas escuchar o ver de mí para que consideres que mi presencia no es una intrusión, sino una ayuda."
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 15)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4525 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  21850 ms
+
+> narrativa
+> El corredor pulsa con un ritmo lento, exudando una humedad densa que carga el aire con un aroma metálico a ozono y materia orgánica. La entidad, casi indistinguible de las paredes vivas que la rodean, permanece inmóvil, fundiéndose con la arquitectura visceral del lugar mientras observa la nueva postura, despojada de violencia.
+> Ante la honestidad del gesto, la tensión del entorno parece ceder. La entidad no emite sonido alguno, pero su presencia se suaviza, abandonando la rigidez defensiva para adoptar una disposición cordial. Un ligero estremecimiento recorre las paredes del pasillo, como un suspiro orgánico que reconoce, finalmente, la intención detrás de las palabras.
+> mecanica
+> Persuasión: Éxito (15 vs CD 15).
+> presion
+> La entidad ha aceptado la apertura al diálogo, pero el aire viciado del corredor sigue espesándose; prolongar la conversación demasiado podría afectar la capacidad de respirar en este entorno cerrado.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4342 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · ideal_honored
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4784: entidad orgánica affinity 8.0 → 13.0  (any)
+     Actuaron según lo que él considera correcto.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 13.0 (cordial), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 147 — 132/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 13.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2545 ms
+
+> "No busco daño, sino comprender qué ocurre en este lugar y cómo puedo ayudar a sanarlo."
+> Mantengo mi postura abierta y sincera, buscando establecer un vínculo con la entidad.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 6+4=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 10)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5640 ms): «Comprender... sanar. Palabras que vibran con una frecuencia extraña en este teji»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4902 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  19014 ms
+
+> narrativa
+> El pasillo se dilata ligeramente, creando un espacio más amplio donde las paredes carnosas se retraen para formar una suerte de nicho orgánico, invitando a una cercanía más íntima y menos opresiva. Sin embargo, a pesar de la sinceridad del gesto, la intención de sanar no encuentra eco en la estructura misma del lugar; el vínculo permanece esquivo, como si el concepto de "curación" fuera un idioma extranjero para aquel entorno.
+> La entidad se despliega lentamente desde la pared, su movimiento es fluido, casi hipnótico. Su voz no proviene de una garganta, sino de una vibración sónica que resuena directamente en el pecho: "Comprender... sanar. Palabras que vibran con una frecuencia extraña en este tejido. No hay daño en tu intención, pero este lugar no conoce la salud, solo la persistencia".
+> mecanica
+> Persuasión: Fallo (10 vs CD 15).
+> presion
+> La entidad es cordial, pero la falta de entendimiento mutuo prolonga la estancia en el nicho; el aire viciado continúa espesándose, dificultando cada vez más la respiración.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1255 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 13.0 (cordial), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 148 — 133/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 13.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2616 ms
+
+> "No busco imponer mi voluntad, sino ayudar a que este lugar encuentre la paz."
+> Me mantengo firme y trato de transmitir mi sinceridad a través de mi postura, buscando un punto común de entendimiento.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 20+4=24  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 24)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (6403 ms): «La paz... un concepto estático. Aquí nada se detiene, todo fluye, se pliega y se»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4325 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17521 ms
+
+> narrativa
+> El nicho orgánico vibra en sintonía con esa determinación, y las paredes carnosas se contraen en un espasmo de reconocimiento. Donde antes solo había una barrera de tejido indiferente, la materia se pliega y se abre, revelando un camino que permanece oculto para quienes no saben escuchar el pulso del lugar.
+> La entidad se ondula rítmicamente, deslizándose apenas un centímetro más hacia adelante. La vibración sónica que emite se vuelve más suave, transformándose en un ronroneo que alivia la presión del aire mientras sentencia: "La paz... un concepto estático. Aquí nada se detiene, todo fluye, se pliega y se expande. Pero tu vibración... ahora es distinta. Hay una coherencia en tu silencio que el tejido reconoce, aunque no pueda nombrarla".
+> mecanica
+> Persuasión: Éxito (24 vs CD 15).
+> presion
+> El camino se ha abierto, pero la estructura orgánica es inestable; si el grupo tarda demasiado en avanzar, el tejido podría cerrarse nuevamente al perder la frecuencia de sintonía.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5106 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · ideal_honored
+  ✓ delta cámara ovalada · location.state = intact
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4799: entidad orgánica affinity 13.0 → 18.0  (any)
+     Actuaron según lo que él considera correcto.
+  → delta 4800: cámara ovalada.state = intact
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 18.0 (cordial), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 149 — 134/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 18.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4402 ms
+
+> "Tus palabras son extrañas, pero mi propósito es claro. Te agradezco el paso."
+> Avanzo sin dudar hacia el camino recién abierto para asegurar el paso.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 7+4=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 11)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3933 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8846 ms
+
+> narrativa
+> El corredor de tejido pulsante y húmedo se estrecha bruscamente, obligando a una marcha incómoda mientras las paredes respiran al ritmo de un corazón lejano. Al intentar avanzar con determinación, el suelo cede ligeramente bajo el peso, volviéndose viscoso y traicionero; el impulso se pierde en una superficie que absorbe la fuerza del paso, haciendo que el avance sea torpe y lento.
+> La entidad orgánica, que antes se mostraba cordial, permanece en silencio. Se limita a ondularse rítmicamente, observando el titubeo en el movimiento sin emitir sonido alguno, mientras el tejido alrededor comienza a contraerse sutilmente.
+> mecanica
+> Atletismo: Fallo (11 vs CD 15).
+> presion
+> La inestabilidad del suelo ha retrasado el avance; el tejido del corredor empieza a cerrarse lentamente, reduciendo el espacio disponible para escapar.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2301 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 18.0 (cordial), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 150 — 135/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 18.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2824 ms
+
+> "¡No permitáis que este lugar nos consuma!"
+> Me apoyo firmemente en el suelo viscoso, intentando recuperar el equilibrio y avanzar con fuerza bruta para salir de esta zona antes de que las paredes se cierren.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 6+4=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 10)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4432 ms): «El impulso no es la respuesta al hambre de este lugar. El esfuerzo bruto solo ac»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  8632 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15025 ms
+
+> narrativa
+> El suelo, convertido ahora en un pantano de mucosidad, traiciona el intento de impulso; la fuerza bruta se hunde en el tejido viscoso que absorbe cada gramo de energía, dejando el cuerpo anclado y vulnerable. Las paredes carnosas responden a ese esfuerzo con una contracción rítmica y opresiva, curvándose hacia adentro hasta transformar el corredor en un cuello de botella asfixiante que vibra con una intensidad orgánica.
+> La entidad orgánica se expande ligeramente, moviéndose con una fluidez indiferente para ocupar el espacio que acaba de quedar vacío. Mientras observa el fallo, sentencia con una calma gélida: "El impulso no es la respuesta al hambre de este lugar. El esfuerzo bruto solo acelera la contracción."
+> mecanica
+> Atletismo: Fallo (10 vs CD 15).
+> presion
+> El corredor se estrecha más con cada contracción; si no se encuentra una forma de avanzar que no sea la fuerza bruta, el tejido cerrará el paso por completo, atrapando al grupo en el cuello de botella.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1254 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 18.0 (cordial), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 151 — 136/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 18.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3460 ms
+
+> "No me rendiré mientras haya alguien que necesite ayuda."
+> Me planto con firmeza, dejando de luchar contra la viscosidad del suelo y buscando un punto de apoyo sólido en las paredes para evitar que me aplasten.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 8+1=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 9)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5250 ms): «La voluntad es un motor eficiente, pero aquí es solo ruido. Si buscas apoyo en e»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  45932 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  19610 ms
+
+> narrativa
+> El pasillo se ha transformado en una garganta palpitante de tejido purpúreo y húmedo. Las paredes, saturadas de pliegues mucosos, se cierran rítmicamente en una contracción asfixiante, reduciendo el espacio a unos pocos centímetros de superficie vibrante y suelo viscoso. Al intentar buscar un punto de apoyo, las manos solo encuentran una materia blanda y resbaladiza que cede ante la presión, negando cualquier asidero sólido y dejando el cuerpo a merced del movimiento del corredor.
+> La entidad orgánica se desliza imperceptiblemente hacia un lado, observando la posición del jugador con una curiosidad clínica, sin rastro de admiración o desprecio. "La voluntad es un motor eficiente, pero aquí es solo ruido. Si buscas apoyo en estas paredes, solo les estás diciendo dónde morder", sentencia con una calma distante.
+> mecanica
+> Percepción: Fallo (9 vs CD 15).
+> presion
+> Las paredes se cierran con cada latido orgánico; si no se halla un método de avance que no dependa del apoyo físico, el tejido sellará el pasillo, aplastando todo lo que quede en su interior.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  15328 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 18.0 (cordial), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 152 — 137/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 18.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3598 ms
+
+> "¡No me detendré mientras haya alguien que necesite ayuda!"
+> Cierro los ojos para no distraerme con el horror de las paredes y trato de avanzar con paso firme, confiando en mi fe y mi fuerza para abrirme camino a través de la viscosidad.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 23)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5366 ms): «La fe es un músculo que no sirve para empujar la carne, pero tu terquedad... eso»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5830 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16962 ms
+
+> narrativa
+> El cuerpo rompe la resistencia de la materia viscosa, abriendo camino a través de la presión asfixiante mediante un esfuerzo bruto y una determinación inquebrantable. El pasillo se ensancha brevemente en una cámara visceral donde el tejido purpúreo se pliega sobre sí mismo, formando una especie de válvula orgánica que late con una frecuencia lenta y pesada, liberando la tensión del corredor.
+> La entidad orgánica se mantiene inmóvil, observando el esfuerzo físico con una mirada neutra, casi analítica, mientras el tejido pulsa a su alrededor. "La fe es un músculo que no sirve para empujar la carne, pero tu terquedad... eso es una curiosidad biológica fascinante", comenta con una calma distante.
+> mecanica
+> Atletismo: Éxito (23 vs CD 15).
+> presion
+> La válvula orgánica que acaba de abrirse es temporal; si el avance se detiene ahora, el tejido se contraerá con más fuerza para sellar la brecha, atrapando al grupo en la cámara.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  6143 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · competence_shown
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4837: entidad orgánica affinity 18.0 → 20.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+  ✗ (Mundo) delta malformado (no es objeto): 0
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 20.0 (cordial), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 153 — 138/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 20.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3035 ms
+
+> "Mi fe me da la fuerza para seguir adelante, aunque no sea la herramienta para abrir camino."
+> Aprovecho la apertura de la válvula y me lanzo hacia adelante para atravesarla antes de que se cierre.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 7)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5672 ms): «Lento. Demasiado lento.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  14000 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12930 ms
+
+> narrativa
+> El impulso falla en el momento crítico. El cuerpo no alcanza la velocidad necesaria y el salto termina en un impacto torpe contra el borde de la abertura, dejando el avance truncado justo cuando la oportunidad se desvanece. El pasaje desemboca en una cavidad húmeda y semicircular, donde las paredes de tejido purpúreo se vuelven más pálidas y fibrosas, revelando una serie de conductos nerviosos que vibran con una luz tenue y rítmica.
+> La entidad orgánica inclina la cabeza con una curiosidad casi clínica, observando el movimiento fallido sin hacer el menor gesto por ayudar. Mientras el tejido purpúreo comienza a cerrarse con un siseo húmedo detrás de ellos, sentencia con una calma gélida: "Lento. Demasiado lento."
+> mecanica
+> Atletismo: Fallo (7 vs CD 15).
+> presion
+> La válvula orgánica se ha sellado completamente, cortando el camino de regreso y obligando al grupo a avanzar hacia lo desconocido en la cavidad nerviosa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  15370 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ evidencia no literal: «el grupo a avanzar hacia lo desconocido en la cavi»
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 20.0 (cordial), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 154 — 139/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 20.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4660 ms
+
+> "No me juzgues por un tropiezo, criatura."
+> Me levanto con dignidad, sacudiendo el polvo de mi armadura y manteniendo la mirada fija en la entidad mientras avanzo con paso firme hacia la cavidad.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 10)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (6744 ms): «La dignidad es un lujo que no detiene el cierre de una válvula. Avanza.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6448 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13515 ms
+
+> narrativa
+> La galería semicircular se extiende hacia adelante con paredes pálidas y fibrosas, mientras haces de nervios bioluminiscentes palpitan rítmicamente en el techo, bañando la cavidad en una luz fría y vacilante que no revela nada más allá de la superficie orgánica. A pesar del esfuerzo por analizar el entorno, los sentidos no captan ninguna anomalía ni detalle oculto entre los pulsos de luz; el camino permanece opaco y mudo.
+> La entidad orgánica no aparta la mirada, manteniendo esa inclinación de cabeza analítica mientras se desplaza con un movimiento fluido y sin esfuerzo hacia la luz rítmica de los conductos. "La dignidad es un lujo que no detiene el cierre de una válvula. Avanza.", sentencia con una calma imperturbable.
+> mecanica
+> Percepción: Fallo (10 vs CD 15).
+> presion
+> La luz de los nervios comienza a parpadear con una frecuencia errática, sugiriendo que la estabilidad de la galería es temporal y que cualquier demora podría dejar al grupo a oscuras en un entorno vivo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5019 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 20.0 (cordial), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 155 — 140/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 20.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3491 ms
+
+> "No permitiré que la prisa nuble mi juicio, pero no seré yo quien cause que alguien quede atrapado aquí."
+> Sigo a la entidad hacia los conductos, manteniendo la mano en el pomo de mi espada.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 17+1=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 15, resultado 18)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (6133 ms): «Tu juicio es tuyo, y la responsabilidad de tus pasos también. Solo asegúrate de »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4809 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15625 ms
+
+> narrativa
+> La mirada se agudiza y, mientras avanzas, el entorno comienza a revelar sus secretos. La galería se estrecha en un cuello de botella donde los haces de nervios convergen en una serie de conductos translúcidos; a través de sus paredes, un fluido espeso y dorado late con fuerza, bombeando la esencia vital hacia las profundidades de la estructura orgánica.
+> La entidad orgánica se detiene un instante sin girar el cuerpo, observando el movimiento de tu mano hacia el pomo de la espada con un desapego clínico. Antes de reanudar su avance fluido, su voz resuena con una calma gélida: "Tu juicio es tuyo, y la responsabilidad de tus pasos también. Solo asegúrate de que esa mano en el pomo no sea el único reflejo de tu determinación cuando la luz se apague."
+> mecanica
+> Percepción: Éxito (18 vs CD 15).
+> presion
+> El flujo dorado en los conductos se vuelve más turbulento y el ritmo del latido se acelera, indicando que la estructura está reaccionando a la presencia externa y que el margen de maniobra antes de un cierre biológico se reduce.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2100 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 20.0 (cordial), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 156 — 141/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 20.0 (cordial), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3198 ms
+
+> "Mis pasos son firmes y mi determinación no depende de una hoja de acero, sino de la verdad."
+> Sigo avanzando con decisión, sin desenvainar, manteniendo la vista fija en la entidad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 6+3=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 15, resultado 9)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (10218 ms): «La verdad es un concepto fluido en un cuerpo que respira, viajero. Pero que tu a»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3844 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12584 ms
+
+> narrativa
+> La galería desemboca en una cámara circular donde los conductos dorados convergen en un núcleo pulsante, una masa de tejido translúcido que late con la fuerza de un corazón colosal, bombeando vida a cada rincón de la zona. El intento de desentrañar la naturaleza de este lugar o leer las intenciones de la guía fracasa; la complejidad biológica del entorno y la opacidad de la entidad resultan abrumadoras, dejando la duda intacta.
+> La entidad orgánica continúa su camino sin detenerse ni mirar atrás. Su voz vibra en sintonía con el latido acelerado de las paredes, manteniendo un ritmo constante y desapegado mientras sentencia: "La verdad es un concepto fluido en un cuerpo que respira, viajero. Pero que tu acero permanezca en su sitio es un inicio aceptable."
+> mecanica
+> Perspicacia: Fallo (9 vs CD 15).
+> presion
+> El núcleo pulsante comienza a contraerse rítmicamente, cerrando los poros de las paredes laterales; la cámara se vuelve más estrecha y el aire más denso, acelerando el proceso de cierre biológico de la zona.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4423 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · ideal_honored
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4875: entidad orgánica affinity 20.0 → 25.0  (any)
+     Actuaron según lo que él considera correcto.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 157 — 142/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2492 ms
+
+> "No me detendré mientras haya respuestas que dar."
+> Acelero el paso para seguir a la entidad antes de que las paredes se cierren por completo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1696 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10161 ms
+
+> narrativa
+> El esfuerzo por ganar terreno es insuficiente; el cuerpo no responde con la agilidad necesaria frente a la contracción del entorno. Los pasos se vuelven pesados y torpes mientras el espacio se reduce, haciendo que el avance sea una lucha agotadora contra la propia inercia.
+> La entidad orgánica no se inmuta ante el atropello. Sigue avanzando con una fluidez imperturbable, sin girar la cabeza ni emitir sonido alguno, dejando que el silencio sea interrumpido únicamente por el eco sordo de los pasos desesperados y el latido asfixiante de la cámara.
+> mecanica
+> Atletismo: Fallo (9 vs CD 10).
+> presion
+> El cierre biológico se acelera; el espacio disponible se reduce drásticamente y las paredes húmedas comienzan a rozar los hombros, amenazando con atrapar cualquier movimiento brusco.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1893 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 158 — 143/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  38038 ms
+
+> "¡No me detendré aquí!"
+> Hundo los talones en el suelo y empujo con todas mis fuerzas contra la masa orgánica para abrir camino.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 7+4=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 11)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (20675 ms): «Sigue. No te detengas.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1488 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9282 ms
+
+> narrativa
+> El impulso final surte efecto. Con un esfuerzo violento, los talones encuentran agarre en la superficie viscosa y el cuerpo logra romper la inercia, desplazando la masa orgánica que amenazaba con bloquear el paso. El espacio se abre lo justo para recuperar el ritmo, permitiendo que el avance deje de ser una lucha agónica y se convierta en una carrera coordinada.
+> La entidad orgánica mantiene su marcha imperturbable, sin alterar la cadencia de sus pasos ni girar la cabeza hacia atrás. Con una voz neutra y carente de cualquier inflexión emocional, lanza una orden seca que resuena en el pasillo: "Sigue. No te detengas."
+> mecanica
+> Atletismo: Éxito (11 vs CD 10).
+> presion
+> Aunque se ha ganado terreno, la estructura biológica sigue pulsando; cualquier vacilación en el ritmo permitirá que las paredes se cierren nuevamente sobre el camino.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1357 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 159 — 144/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2208 ms
+
+> "No me detendré."
+> Sigo los pasos de la entidad sin perder un segundo, manteniendo el ritmo de carrera.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 22)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (16512 ms): «Bien.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  23820 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9169 ms
+
+> narrativa
+> El impulso se mantiene y los pasos se sincronizan con la marcha de la entidad, superando cualquier resistencia del terreno con una fluidez renovada. El pasillo se ensancha en una galería de paredes membranosas que laten al unísono con el corazón de la estructura, mientras que el suelo, una superficie semitransparente y elástica, revela las sombras de órganos masivos desplazándose bajo los pies.
+> La entidad orgánica sigue avanzando hacia un arco de tejido calcificado, sin detenerse ni mirar atrás. Su voz emerge como un hilo monótono que se funde con el sonido de los pasos sobre la materia orgánica: "Bien."
+> mecanica
+> Atletismo: Éxito (22 vs CD 10).
+> presion
+> La estructura biológica comienza a contraerse rítmicamente detrás de ustedes; si el paso flaquea ahora, el arco de tejido calcificado podría cerrarse antes de que logren atravesarlo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1596 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 160 — 145/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  9485 ms
+
+> "¡No nos detendremos!"
+> Aprieto el paso y corro con todas mis fuerzas hacia el arco de tejido calcificado para atravesarlo antes de que se cierre.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 22)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4081 ms): «Entonces corre.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  19384 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10407 ms
+
+> narrativa
+> El impulso es total y el cuerpo responde con una potencia eléctrica, atravesando el arco de tejido calcificado justo antes de que el cierre se complete. El espacio se abre súbitamente en una cámara cavernosa donde el tejido cede paso a columnas de hueso poroso que sostienen una bóveda de nervios entrelazados. El aire se vuelve denso, saturado de un olor penetrante a ozono y bilis, mientras el suelo, convertido ahora en una costra seca, cruje violentamente bajo el peso de la carrera.
+> La entidad orgánica no gira la cabeza, manteniendo su marcha en un movimiento fluido y coordinado con el ritmo mismo de la estructura. Acelera la zancada, dejando una estela de eficiencia biológica mientras lanza una orden seca: "Entonces corre."
+> mecanica
+> Atletismo: Éxito (22 vs CD 10).
+> presion
+> El eco de los pasos atrae algo en las profundidades de la cámara; el ruido sobre la costra seca está despertando a los centinelas de hueso que custodian la bóveda.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  7607 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.location_id
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 161 — 146/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2913 ms
+
+> "¡No dejaré que nadie quede atrás en este lugar!"
+> Sigo el ritmo de la entidad, corriendo con determinación hacia adelante para no quedar atrapado entre los centinulares.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 2+4=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3733 ms): «Entonces no te detengas.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3100 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11886 ms
+
+> narrativa
+> El esfuerzo se vuelve torpe y el ritmo se quiebra; un tropiezo imprevisto o el cansancio acumulado hacen que el cuerpo pierda la sincronía con la marcha. Mientras el equilibrio falla, la vasta galería de costras óseas y nervios palpitantes parece cerrarse sobre el camino, extendiéndose hacia una oscuridad húmeda y opresiva. Bajo los pies, el suelo comienza a vibrar con una frecuencia alarmante, y de las paredes empiezan a emerger, con un crujido seco, formas esqueléticas que se despliegan para bloquear el paso.
+> La entidad orgánica no reduce la velocidad ni mira atrás. Su figura sigue avanzando con una precisión gélida, y su voz, plana y desprovista de toda emoción, resuena en la cámara envolviendo el espacio: "Entonces no te detengas."
+> mecanica
+> Atletismo: Fallo (6 vs CD 10).
+> presion
+> Las formas esqueléticas están emergiendo del entorno; si no recuperas el ritmo inmediatamente, quedarás rodeado y atrapado por los centinelas antes de alcanzar a la entidad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1567 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 162 — 147/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2281 ms
+
+> "No me detendré."
+> Me obligo a levantarme rápidamente y trato de recuperar la zancada para no quedar rezagado.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5544 ms): «Demuéstralo.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  12367 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10977 ms
+
+> narrativa
+> El impulso falla y el cuerpo no responde con la rapidez necesaria; un nuevo tropiezo, una falta de aire o la viscosidad del suelo impiden recuperar la zancada. El corredor orgánico sigue pulsando alrededor, con sus paredes latiendo en un ritmo febril mientras los filamentos óseos de los costados se retuercen como dedos hambrientos, cerrando el espacio disponible.
+> La entidad orgánica sigue avanzando sin girar la cabeza, manteniendo el mismo paso mecánico y gélido, mientras el sonido de sus pasos marca un ritmo implacable sobre el suelo vibrante. Sin detenerse, su voz corta el aire con una frialdad absoluta: "Demuéstralo."
+> mecanica
+> Atletismo: Fallo (7 vs CD 10).
+> presion
+> La distancia con la entidad aumenta y los centinelas esqueléticos terminan de desplegarse a los costados; un paso más en falso y el camino quedará totalmente bloqueado, separándote de tu guía.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  56825 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 163 — 148/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  74460 ms
+
+> "¡No me detendré!"
+> Me obligo a levantarme ignorando el agotamiento y trato de impulsarme con fuerza para cerrar la distancia antes de que los esqueletos me bloqueen el paso.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 16)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3911 ms): «Sigue.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3288 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10681 ms
+
+> narrativa
+> El impulso es eléctrico y el cuerpo responde con una fuerza renovada. El salto es preciso, cerrando la brecha justo antes de que los centinelas óseos se cierren como una costilla gigante, atrapando el aire en un espacio que se estrecha violentamente. El avance se vuelve una lucha contra un resquicio viscoso y palpitante que parece querer absorber cada movimiento, pero la inercia permite superar el obstáculo.
+> La entidad orgánica continúa su marcha, imperturbable, sin alterar el ritmo de sus pasos ni volver la vista atrás. Con una voz que cae seca, como una sentencia que reconoce el esfuerzo pero no lo premia, suelta una sola palabra: "Sigue."
+> mecanica
+> Atletismo: Éxito (16 vs CD 10).
+> presion
+> El corredor orgánico comienza a contraerse rítmicamente; si el ritmo de avance decae, las paredes pulsantes reducirán el espacio hasta asfixiar cualquier intento de paso.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1857 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 164 — 149/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  13572 ms
+
+> "No me quedaré atrás."
+> Apresuro el paso para mantener el ritmo y seguir a la entidad, esforzándome por no detenerme ni un segundo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 4+4=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 8)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (22653 ms): «No te detengas.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1464 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  23127 ms
+
+> narrativa
+> El esfuerzo por acelerar el paso se vuelve torpe; el aire se siente espeso y los pies parecen hundirse en el suelo palpitante, rompiendo la inercia del avance. A pesar del impulso, la distancia entre el cuerpo y la figura que guía se ensancha, dejando un espacio vacío que el entorno orgánico comienza a reclamar con contracciones rítmicas y viscosas.
+> La entidad orgánica mantiene la marcha sin girar la cabeza, su voz suena plana, desprovista de juicio o aliento, fundiéndose con el latido de las paredes: "No te detengas."
+> mecanica
+> Atletismo: Fallo (8 vs CD 10).
+> presion
+> El corredor orgánico se contrae con más fuerza; el espacio se estrecha peligrosamente y cualquier vacilación más prolongada resultará en el cierre total del camino.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1930 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 165 — 150/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  8104 ms
+
+> "¡No me dejaré atrás!"
+> Hago un esfuerzo desesperado por recuperar el ritmo, clavando los pies con fuerza para combatir la viscosidad del suelo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (7041 ms): «Tus pasos ya no pesan tanto. Mantén esa presión.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3592 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12030 ms
+
+> narrativa
+> El impulso regresa con una fuerza renovada, permitiendo que las botas muerdan el tejido blando y venzan la resistencia del suelo. El avance se vuelve fluido mientras el pasillo de tejido muscular se contrae en espasmos rítmicos a los lados, secretando un fluido denso y amarillento que gotea desde las paredes y lucha por adherirse al calzado en cada zancada.
+> La entidad orgánica sigue avanzando sin mirar atrás, aunque el ritmo de su respiración se sincroniza brevemente con el latido sordo del corredor. "Tus pasos ya no pesan tanto. Mantén esa presión", sentencia con una voz que resuena en la cavidad orgánica.
+> mecanica
+> Atletismo: Éxito (13 vs CD 10).
+> presion
+> El pasillo comienza a curvarse bruscamente; si el ritmo flaquea ahora, las paredes musculares podrían colapsar una sobre otra, atrapando cualquier cuerpo que no se mueva con rapidez.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2506 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 166 — 151/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4485 ms
+
+> "No me detendré mientras tú sigas avanzando."
+> Acelero el paso, poniendo toda mi fuerza en las piernas para mantener la presión y no quedar atrapado.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 20)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (7543 ms): «Entonces no mires el suelo, mira mi espalda. Sigue el ritmo o el camino se cerra»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  12533 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11681 ms
+
+> narrativa
+> El esfuerzo rinde frutos y el cuerpo responde con una potencia coordinada, permitiendo que la zancada se imponga a la viscosidad del entorno. El pasillo desemboca finalmente en una cámara ovoide donde el tejido muscular se adelgaza hasta volverse translúcido, revelando una red de venas pulsantes que iluminan el espacio con un fulgor violáceo y agónico.
+> La entidad orgánica aumenta la velocidad de su zancada sin girarse, y su voz suena metálica y seca, fundiéndose con el latido del pasillo: "Entonces no mires el suelo, mira mi espalda. Sigue el ritmo o el camino se cerrará sobre nosotros."
+> mecanica
+> Atletismo: Éxito (20 vs CD 10).
+> presion
+> La cámara ovoide es un punto de tránsito inestable; si el grupo se detiene a admirar el fulgor violáceo, las paredes translúcidas empezarán a contraerse, reduciendo el espacio vital hasta aplastar cualquier cosa que no esté en movimiento.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2089 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 167 — 152/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3476 ms
+
+> "No me distraeré. Guíe el camino."
+> Apreto el agarre de mi arma y acelero el paso, manteniendo la vista fija en la espalda de la entidad para no perder el ritmo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 20+4=24  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 24)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4490 ms): «Bien. No rompas la cadencia.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4117 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13259 ms
+
+> narrativa
+> La zancada se vuelve fluida y precisa, sincronizándose a la perfección con el avance de la entidad. A medida que atraviesan la cámara ovoide, el entorno se despliega como un vientre vivo, iluminado por el fulgor de venas violáceas que laten al ritmo de un corazón invisible. Bajo los pies, el suelo vibra con una cadencia orgánica, mientras las paredes translúcidas comienzan a respirar, cerrándose lentamente y devorando el espacio dejado atrás.
+> Sin detenerse, la entidad orgánica emite un sonido similar a un chasquido mecánico mientras ajusta la trayectoria hacia la salida de la cámara. "Bien. No rompas la cadencia", sentencia con su voz seca, manteniendo el rumbo sin mirar atrás.
+> mecanica
+> Atletismo: Éxito Crítico (24 vs CD 10).
+> presion
+> El cierre de las paredes es inevitable y constante; cualquier vacilación en el ritmo ahora que se acercan a la salida podría dejar al grupo atrapado en el tejido muscular de la cámara.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1439 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Crítico, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 168 — 153/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1937 ms
+
+> "No me detendré."
+> Mantengo el ritmo y sigo los pasos de la entidad con determinación hacia la salida.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 4+4=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 8)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (8943 ms): «No basta con no detenerse. Acelera.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3361 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  19231 ms
+
+> narrativa
+> El túnel de tejido fibroso y húmedo comienza a contraerse rítmicamente, asfixiando el espacio disponible con cada latido. A pesar del esfuerzo, el ritmo flaquea; los pies se sienten pesados sobre la superficie viscosa y la coordinación se pierde justo cuando las paredes parecen cerrarse con más fuerza, reduciendo la distancia hacia la abertura donde una luz violácea, ya cegadora, aguarda al final del conducto.
+> Sin girar la cabeza, el cuerpo de la entidad se tensa ligeramente, marcando un ritmo más exigente con cada zancada mientras el espacio se estrecha. "No basta con no detenerse. Acelera", sentencia con una voz que no admite vacilaciones.
+> mecanica
+> Atletismo: Fallo (8 vs CD 10).
+> presion
+> La contracción del túnel se acelera. Si no se recupera la velocidad inmediatamente, las paredes fibrosas atraparán las extremidades, inmovilizando al grupo antes de alcanzar la luz.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2289 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 169 — 154/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4806 ms
+
+> "¡No me detendré!"
+> Aprieto los dientes y empujo con todas mis fuerzas contra las paredes viscosas para liberar mis piernas y ganar impulso hacia la luz.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 20+4=24  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 24)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (6933 ms): «¡Ahora! No mires atrás, solo sigue mi ritmo.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  872 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16778 ms
+
+> narrativa
+> El esfuerzo desesperado surte efecto; los músculos responden con una potencia renovada, rompiendo la resistencia de las paredes viscosas y catapultando el cuerpo hacia adelante con una velocidad violenta. Justo cuando el túnel fibroso se contrae en un último espasmo asfixiante, la entidad orgánica reacciona con un movimiento coordinado y brusco, extendiendo un apéndice que impacta con fuerza en la espalda para dar un empujón final.
+> "¡Ahora! No mires atrás, solo sigue mi ritmo", exclama la criatura mientras el impulso lanza el cuerpo fuera del conducto, atravesando el umbral justo antes de que el espacio se cierre por completo, desembocando en el resplandor de la luz violácea.
+> mecanica
+> Atletismo: Éxito (24 vs CD 10).
+> presion
+> El túnel se ha cerrado detrás, eliminando la vía de retorno. El grupo se encuentra ahora expuesto en un entorno desconocido donde la luz cegadora oculta cualquier amenaza inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  7118 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.location_id
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 170 — 155/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2566 ms
+
+> "Gracias por tu ayuda, amigo."
+> Me pongo en pie rápidamente y desenvaino mi arma, protegiendo la espalda de la criatura mientras trato de enfocar la vista en el resplandor.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 13+1=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (29436 ms): «No des las gracias todavía. Quédate alerta; este lugar no se siente como un refu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2271 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17326 ms
+
+> narrativa
+> El arma se desliza fuera de la vaina con un sonido metálico que corta el silencio, y la vista comienza a aclariarse, permitiendo que los contornos del entorno emerjan a través del resplandor violáceo. La posición es sólida, el equilibrio recuperado, y la guardia se despliega con eficacia mientras el espacio se revela gradualmente, despojándose de la ceguera inicial.
+> La entidad orgánica se desliza fuera del conducto con un movimiento fluido, replegando sus apéndices mientras mantiene la respiración agitada. Se posiciona ligeramente a un lado, escaneando la luz con una cautela instintiva, y advierte en un tono tenso: "No des las gracias todavía. Quédate alerta; este lugar no se siente como un refugio."
+> mecanica
+> Percepción: Éxito (14 vs CD 10).
+> presion
+> La luz violácea sigue ocultando los límites del área; cualquier cosa que se mueva en la penumbra exterior podría acercarse sin ser detectada hasta que sea demasiado tarde.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3272 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 171 — 156/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2875 ms
+
+> "Tened razón, la cautela es nuestra mejor aliada ahora mismo."
+> Mantengo mi posición de guardia, con el arma en alto, y trato de distinguir cualquier movimiento sospechoso en la penumbra.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 18+1=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 19)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4273 ms): «Mantén el ángulo. No te centres solo en lo que ves, sino en lo que el silencio i»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4794 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  53191 ms
+
+> narrativa
+> La guardia se mantiene firme y la mirada se agudiza, logrando diseccionar la oscuridad de la cámara circular. El arma, en alto y estable, traza un arco preciso sobre el suelo de membrana viscosa que amortigua cada leve desplazamiento, mientras el aire cargado de ozono y materia en descomposición se vuelve más denso. Entre las paredes orgánicas que pulsan con un ritmo lento y enfermizo, los ojos logran captar la ausencia de movimiento en los rincones de sombra absoluta, confirmando que, por ahora, el perímetro está despejado.
+> La entidad orgánica permanece agazapada, con los apéndices tensos y la mirada saltando nerviosamente entre las sombras violáceas, sin dejar de respirar con dificultad. Se inclina hacia delante, advirtiendo en un susurro cargado de urgencia: "Mantén el ángulo. No te centres solo en lo que ves, sino en lo que el silencio intenta ocultar."
+> mecanica
+> Percepción: Éxito (19 vs CD 10).
+> presion
+> La estructura orgánica parece reaccionar a la presencia de intrusos; las pulsaciones de las paredes se están acelerando, lo que sugiere que el entorno podría cerrarse o activar una defensa biológica si permanecen demasiado tiempo estáticos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1520 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 172 — 157/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 25.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3273 ms
+
+> "No temas, estoy contigo. Mantendremos la guardia."
+> Me posiciono firmemente junto a la entidad, manteniendo mi arma lista para protegerla mientras busco cualquier señal de peligro en el silencio.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 20+1=21  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 21)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4631 ms): «Tu presencia es... un ancla. Pero no te confíes; este lugar no reconoce la lealt»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  15759 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10702 ms
+
+> narrativa
+> La vigilancia se mantiene absoluta y el instinto se agudiza, permitiendo que cualquier anomalía en el entorno sea detectada antes incluso de que se manifieste. La cámara circular se expande ahora hacia un pasillo de tejido fibroso que vibra con una frecuencia aguda, casi dolorosa, mientras que al fondo, una membrana translúcida late rítmicamente. Tras ese muro orgánico, siluetas indistinguibles se desplazan con una lentitud deliberada, moviéndose como manchas de tinta en agua turbia.
+> La entidad orgánica se relaja mínimamente, dejando que sus apéndices pierdan parte de la tensión, aunque mantiene la mirada fija en el pulso acelerado de las paredes. Con un tono que oscila entre la gratitud y la advertencia, sentencia: "Tu presencia es... un ancla. Pero no te confíes; este lugar no reconoce la lealtad, solo el hambre."
+> mecanica
+> Percepción: Éxito (21 vs CD 10).
+> presion
+> Las siluetas tras la membrana comienzan a congregarse, sugiriendo que el movimiento en el pasillo no es aleatorio, sino que están empezando a notar la posición exacta del grupo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2890 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5007: entidad orgánica affinity 25.0 → 50.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 50.0 (loyal), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 173 — 158/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 50.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2617 ms
+
+> "No me confío, pero no permitiré que el hambre gane hoy."
+> Me coloco frente a la membrana para proteger a la entidad y preparo mi arma.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 2+1=3
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 3)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4522 ms): «Tu determinación es un ruido fuerte en este silencio. No te adelantes al hambre;»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4798 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9906 ms
+
+> narrativa
+> El intento de anticipar el ataque falla; la tensión del aire se vuelve espesa y el zumbido del pasillo fibroso se intensifica, nublando los sentidos justo cuando el cuerpo busca posicionarse. La membrana translúcida palpita con una urgencia renovada, y las siluetas del otro lado parecen ganar definición, aprovechando la vacilación del movimiento para cerrar el cerco.
+> La entidad orgánica se desliza ligeramente hacia un lado, no para retroceder, sino para ajustar su ángulo de ataque, coordinándose con la posición del jugador sin dejar de observar la membrana. Con una voz que vibra en sintonía con el entorno, sentencia: "Tu determinación es un ruido fuerte en este silencio. No te adelantes al hambre; deja que nos encuentre ya posicionados."
+> mecanica
+> Percepción: Fallo (3 vs CD 10).
+> presion
+> La falta de precisión en el posicionamiento deja un flanco expuesto; las siluetas tras la membrana están a punto de romper el tejido, y el grupo no tiene la formación ideal para contener el impacto inicial.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1411 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 50.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 174 — 159/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 50.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3795 ms
+
+> "No permitiré que este hambre avance más."
+> Me planto firmemente frente a la membrana, desplegando mi escudo para cubrir el flanco expuesto y absorber el impacto.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 20+4=24  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 24)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4961 ms): «Entonces sostén el muro. Yo me encargaré de que nada flanquee tu espalda.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6022 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9232 ms
+
+> narrativa
+> El escudo golpea el suelo con una firmeza absoluta, anclándose justo en el instante en que el pasillo fibroso se contrae con un espasmo violento. La membrana estalla en jirones translúcidos y una marea de extremidades pálidas y mandíbulas vibrantes se estrella contra el acero, provocando un impacto sordo que resuena en todo el corredor, pero que no logra desplazar ni un centímetro la posición del muro.
+> La entidad orgánica se desliza con un movimiento fluido y casi imperceptible, situándose justo detrás del escudo y fundiéndose con su sombra para cerrar la brecha. Con una voz que vibra en sintonía con el entorno, sentencia: "Entonces sostén el muro. Yo me encargaré de que nada flanquee tu espalda."
+> mecanica
+> Atletismo: Éxito (24 vs CD 10).
+> presion
+> La horda ha roto la membrana y el contacto es total; si el muro cede o la entidad es distraída, el grupo será engullido por la marea de extremidades.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1755 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 50.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 175 — 160/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 50.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2837 ms
+
+> "¡No pasaréis mientras yo esté en pie!"
+> Aprieto los dientes y clavo los pies en el suelo, haciendo fuerza contra el escudo para resistir el empuje de la marea.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 5)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4169 ms): «No te desgastes gritando. Solo... resiste.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7574 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8831 ms
+
+> narrativa
+> El suelo fibrosoy húmedo cede bajo los pies, convirtiendo el pasillo en un embudo de carne pulsante que absorbe la estabilidad. El esfuerzo es inútil; la marea pálida no solo empuja, sino que comienza a desbordar los bordes del acero, aprovechando que el equilibrio se pierde en esa superficie viscosa.
+> La entidad orgánica despliega sus extremidades en ángulos antinaturales, interceptando con un movimiento seco el primer zarpazo que logra rodear la defensa. Su voz vibra con una calma gélida mientras se ancla al entorno: "No te desgastes gritando. Solo... resiste."
+> mecanica
+> Atletismo: Fallo (5 vs CD 10).
+> presion
+> El muro ha empezado a tambalearse y la marea pálida ya ha encontrado brechas en la defensa; el grupo está a un paso de ser flanqueado y engullido por la masa orgánica.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1415 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'location', 'entity_id': 'pasillo fibroso', 'field': 'descripcion', 'value': 'Un corredor de membranas translúcidas ahora desgarrado, saturado por el empuje físico de una horda de extremidades pálidas y mandíbulas vibrantes.'}
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 50.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 176 — 161/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 50.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2462 ms
+
+> "¡No me rendiré mientras haya alguien que proteger!"
+> Hundo los pies en el suelo viscoso y trato de recuperar la estabilidad para hacer frente a la criatura.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 17+4=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 21)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4791 ms): «Entonces deja de hundirte y mantén la línea. No necesito un mártir, necesito un »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2796 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10598 ms
+
+> narrativa
+> El esfuerzo rinde frutos y los pies encuentran finalmente un punto de apoyo sólido bajo la capa de mucosidad, permitiendo que el cuerpo se estabilice con un impulso firme. El equilibrio regresa justo a tiempo para cerrar la brecha, transformando la vulnerabilidad en una postura imperturbable frente al avance de la masa.
+> La entidad orgánica no aparta la vista de la marea pálida mientras tensa sus extremidades para absorber el impacto de un nuevo ataque, anclando su cuerpo al suelo fibroso con un sonido húmedo y firme. "Entonces deja de hundirte y mantén la línea. No necesito un mártir, necesito un muro", sentencia con una voz que resuena en el pasillo estrecho de acero corroído, donde la membrana orgánica palpitante exhala un denso olor a hierro y descomposición.
+> mecanica
+> Atletismo: Éxito (21 vs CD 10).
+> presion
+> La marea pálida comienza a regenerar sus extremidades tras el impacto; si la línea no se mantiene con fuerza, la masa orgánica buscará una nueva vía de acceso por el techo del pasillo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1392 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 50.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 177 — 162/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 50.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3117 ms
+
+> "No me hundiré. Tendréis el muro que necesitáis."
+> Me planto firmemente, apretando el agarre de mi arma y el escudo para bloquear cualquier avance de la marea.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (6658 ms): «Bien. Mantén el peso en los talones y no cedas ni un centímetro.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4395 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10966 ms
+
+> narrativa
+> El cuerpo se ancla con determinación sobre el suelo fibroso y mucoso, logrando una estabilidad absoluta que cierra cualquier fisura en la defensa. El acero corroído del pasillo vibra levemente mientras las membranas orgánicas que lo flanquean laten con una respiración pesada y fétida, envolviendo la escena en una atmósfera opresiva y húmeda.
+> La entidad orgánica ajusta su propia postura para cubrir el flanco, manteniendo la vista fija en la masa pálida sin dedicar un solo vistazo al compañero. "Bien. Mantén el peso en los talones y no cedas ni un centímetro", sentencia con una sequedad profesional, mientras sus extremidades se tensan para sostener la línea.
+> mecanica
+> Atletismo: Éxito (13 vs CD 10).
+> presion
+> La marea pálida, aunque frenada, empieza a presionar con un peso creciente; cualquier vacilación en la postura permitirá que la masa se desborde por los laterales del pasillo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1470 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 50.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 178 — 163/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 50.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3559 ms
+
+> "No daré ni un paso atrás. ¡Mantened la línea!"
+> Aprieto los dientes y clavo los pies en el suelo mucoso, poniendo todo mi peso contra la marea pálida para evitar que nos flanqueen.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3116 ms): «Sigue empujando. Si flaqueas, nos tragará a los dos.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2923 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12185 ms
+
+> narrativa
+> El esfuerzo es titánico, pero el suelo mucoso traiciona la firmeza del apoyo. A pesar de la determinación, los pies resbalan sobre la capa viscosa del pasillo, que se siente ahora como una garganta de metal oxidado y tejido vivo donde las paredes pulsan rítmicamente, empujando la marea pálida con una fuerza renovada. El equilibrio se quiebra y la línea cede, permitiendo que la masa blanquecina gane terreno y comience a envolver los tobillos.
+> La entidad orgánica no aparta la vista de la amenaza, manteniendo la posición mientras su respiración se vuelve errática y pesada por el agotamiento físico. Con la voz tensa, advierte sin mirarlo: "Sigue empujando. Si flaqueas, nos tragará a los dos".
+> mecanica
+> Atletismo: Fallo (9 vs CD 10).
+> presion
+> La marea pálida ha roto la resistencia inicial y empieza a trepar por las piernas; si no se recupera la estabilidad inmediatamente, la masa orgánica anclará los pies al suelo, dejando al grupo inmóvil y expuesto.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1461 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 50.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 179 — 164/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 50.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2171 ms
+
+> "¡No me rendiré!"
+> Hago un esfuerzo desesperado por recuperar el equilibrio y liberar mis piernas de la masa viscosa.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 8+4=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 12)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3356 ms): «¡Eso es! ¡No sueltes!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5476 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9659 ms
+
+> narrativa
+> El impulso desesperado surte efecto y el cuerpo recupera la verticalidad, arrancando los pies de la masa viscosa con un tirón seco. El pasillo, una amalgama de tuberías oxidadas y membranas palpitantes que segregan un moco blanquecino y denso, parece ceder ante la fuerza del movimiento. La marea orgánica retrocede un instante, revelando bajo el fluido un suelo de rejilla metálica que ha sido parcialmente digerido por la biomasa.
+> Aprovechando ese espacio ganado, la entidad orgánica lanza un gruñido de esfuerzo bruto y tensa cada músculo, usando el anclaje para recuperar la posición. Mientras se aferra con fuerza, exclama: "¡Eso es! ¡No sueltes!".
+> mecanica
+> Atletismo: Éxito (12 vs CD 10).
+> presion
+> La marea ha retrocedido, pero las membranas del pasillo siguen pulsando; si no avanzan rápido hacia una zona seca, la biomasa volverá a cerrarse sobre ellos, atrapándolos en el flujo mucoso.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1581 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 50.0 (loyal), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 180 — 165/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 50.0 (loyal), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2953 ms
+
+> "¡No te preocupes, que no te soltaré!"
+> Sujeto con fuerza a la entidad orgánica y tiro de ella hacia la zona de rejilla metálica para sacarla por completo del flujo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 7+4=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 11)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3795 ms): «No hables, solo tira.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3381 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9139 ms
+
+> narrativa
+> El tirón es seco y certero, arrancando el cuerpo de la entidad orgánica del abrazo viscoso justo antes de que la marea recupere su terreno. Ambos aterrizan pesadamente sobre el tramo de rejilla metálica, el único punto firme en un pasillo donde el acero industrial parece haber sido devorado por un tejido vivo que se contrae y expande rítmicamente, como un pulmón colosal de carne y óxido.
+> La entidad se desploma contra el metal, jadeando, con el cuerpo aún cubierto de moco y los dedos apretando la rejilla metálica hasta que los nudillos blanquean. Te mira con una urgencia febril y suelta: "No hables, solo tira".
+> mecanica
+> Atletismo: Éxito (11 vs CD 10).
+> presion
+> Las paredes de membrana comienzan a secretar una nueva capa de fluido blanquecino que empieza a cubrir la rejilla; si no encuentran una salida o un punto más elevado, volverán a quedar anclados al suelo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  9891 ms · 1 eventos · 1 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · life_saved
+  ✓ delta entidad orgánica · npc.location_id = tramo de rejilla metálica
+  ✓ creación location: tramo de rejilla metálica
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location tramo de rejilla metálica
+  → delta 5026: entidad orgánica affinity 50.0 → 80.0  (any)
+     Deuda de sangre. No se olvida.
+  → delta 5027: entidad orgánica.location_id = tramo de rejilla metálica
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 80.0 (devoted), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 181 — 166/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 80.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3424 ms
+
+> "No te preocupes, no te dejaré aquí."
+> Sujeto a la entidad con firmeza para ayudarla a levantarse y busco rápidamente una salida o una zona elevada.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 7+1=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 8)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3652 ms): «Entonces no te sueltes. No me sueltes.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4259 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9992 ms
+
+> narrativa
+> El esfuerzo por encontrar una salida rápida resulta inútil; la mirada se pierde en la confusión de un pasillo de acero industrial donde las paredes son membranas palpitantes que exudan un fluido blanquecino y viscoso. Al fondo, la rejilla metálica termina abruptamente en una pendiente ascendente que conduce a una esclusa oxidada, pero el camino está parcialmente obstruido por filamentos de carne que parecen latir al unísono con el resto de la estructura.
+> La entidad orgánica, aún inestable y temblando mientras intenta recuperar el equilibrio sobre el metal resbaladizo, se aferra al brazo con una fuerza animal. Su voz suena rota, casi un susurro desesperado: "Entonces no te sueltes. No me sueltes".
+> mecanica
+> Percepción: Fallo (8 vs CD 10).
+> presion
+> El fluido blanquecino que emana de las paredes comienza a inundar la rejilla metálica, reduciendo el espacio firme y amenazando con volver a atraparlos en la viscosidad del pasillo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2653 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 80.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 182 — 167/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 80.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2887 ms
+
+> "No te soltaré, ten valor."
+> Sujeto con fuerza a la entidad y trato de avanzar hacia la esclusa, abriendo camino a través de los filamentos de carne.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 20+4=24  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 24)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5837 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9316 ms
+
+> narrativa
+> El avance es contundente. Con un impulso firme, el camino se despeja mientras los filamentos de carne se desgarran y se apartan, incapaces de resistir la fuerza del empuje. El acero industrial del corredor se siente frío bajo los pies, contrastando con el calor húmedo del tejido orgánico pulsante que recubre las paredes.
+> La entidad orgánica se deja arrastrar, aferrándose con desesperación mientras el fluido blanquecino se agita violentamente a su alrededor, reaccionando a la intrusión. El túnel de carne parece contraerse en un espasmo final antes de que la silueta de la esclusa oxidada se vuelva plenamente accesible, liberando el paso hacia la salida.
+> mecanica
+> Atletismo: Éxito (24 vs CD 10).
+> presion
+> La estructura orgánica comienza a cerrarse detrás de ustedes, sellando el camino por el que han venido y dejando la esclusa oxidada como la única vía de escape inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  9417 ms · 0 eventos · 2 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta entidad orgánica · npc.location_id = esclusa_oxidada
+  ✓ delta cámara ovalada · location.state = occupied
+  ✓ creación location: esclusa oxidada
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location esclusa oxidada
+  ✗ referencia inexistente: location «esclusa_oxidada»
+  → delta 5034: cámara ovalada.state = occupied
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 80.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 183 — 168/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 80.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2593 ms
+
+> "¡Rápido, hacia la esclusa!"
+> Me apresuro hacia la salida para asegurar que el camino quede libre antes de que la carne nos atrape.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3441 ms): «¡Voy detrás de ti! No permitas que nos cierre el paso.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5361 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11943 ms
+
+> narrativa
+> El impulso es certero y el cuerpo responde con agilidad, ganando el terreno necesario para alcanzar la esclusa justo antes de que el túnel colapse en un estruendo de tejido desgarrado y metal retorcido. El refugio es un cilindro de acero corroído donde el metal se funde con protuberancias óseas que emergen del techo, creando una arquitectura grotesca y asfixiante. Una consola de mando chisporrotea en un rincón, parcialmente devorada por una membrana pálida que late con un ritmo lento y constante, sincronizado con la estructura misma.
+> La entidad orgánica se impulsa con urgencia, moviéndose con una coordinación fluida y visceral. Mientras el camino queda sellado a sus espaldas, mantiene la mirada fija en la salida y exclama: "¡Voy detrás de ti! No permitas que nos cierre el paso."
+> mecanica
+> Atletismo: Éxito (13 vs CD 10).
+> presion
+> La membrana que recubre la consola late con más fuerza; si no se opera la esclusa rápidamente, el tejido orgánico podría sellar el mecanismo de apertura.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4262 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.location_id
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 80.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 184 — 169/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 80.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2779 ms
+
+> "¡Resiste, ya casi estamos fuera!"
+> Me lanzo hacia la consola para apartar la membrana pálida y accionar la esclusa antes de que quede sellada.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 4+4=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 8)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3074 ms): «¡No la sueltes! ¡Empuja con todo lo que tengas!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4678 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10351 ms
+
+> narrativa
+> La membrana pálida se resiste, pegajosa y tibia, adhiriéndose a los dedos como una piel viva que se niega a abandonar la consola de mando. A pesar del esfuerzo, el tejido blanquecino y los cables fundidos forman un amasijo compacto que bloquea el acceso a los controles, dejándolos fuera de alcance mientras el metal de la esclusa comienza a gemir bajo una presión insoportable.
+> La entidad orgánica se lanza al lado del jugador, hundiendo sus manos en la membrana pálida para ayudar a despejar la consola, forcejeando con el tejido viscoso mientras su respiración se vuelve errática. "¡No la sueltes! ¡Empuja con todo lo que tengas!", exclama con urgencia, mientras el disco de acero oxidado vibra violentamente, amenazando con colapsar.
+> mecanica
+> Atletismo: Fallo (8 vs CD 10).
+> presion
+> La vibración de la esclusa se intensifica y el metal empieza a ceder; si no logran despejar la consola en el próximo intento, la puerta se deformará permanentemente, sellando la salida.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1906 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 80.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 185 — 170/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 80.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2714 ms
+
+> "¡No me rendiré!"
+> Apoyo mi hombro contra el amasijo de tejido y empujo con toda mi fuerza, intentando arrancar la membrana de los controles.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 20+4=24  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 24)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3730 ms): «¡SÍ! ¡Sigue así, no lo sueltes!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5137 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8424 ms
+
+> narrativa
+> La membrana cede con un desgarro húmedo y visceral, liberando la consola de mando que brilla con una luz intermitente bajo el moco blanquecino. En medio de esa cabina claustrofóbica de metal oxidado y cables expuestos, el aire se vuelve pesado, saturado de un olor penetrante a ozono y materia orgánica en descomposición.
+> La entidad orgánica hunde los dedos en la masa viscosa, aprovechando el impulso del empujón para arrancar el tejido con un tirón violento. "¡SÍ! ¡Sigue así, no lo sueltes!", grita con un esfuerzo visceral justo cuando el metal de la esclusa, finalmente, deja de gemir.
+> mecanica
+> Atletismo: Éxito (24 vs CD 10).
+> presion
+> La consola está expuesta, pero el sistema eléctrico chisporrotea; si no se estabilizan los mandos rápidamente, un cortocircuito podría bloquear la esclusa justo ahora que ha dejado de ceder.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1547 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 80.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 186 — 171/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 80.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2834 ms
+
+> "¡Mantén la posición! Yo me encargo de esto."
+> Me acerco rápidamente a la consola para intentar estabilizar los mandos antes de que el sistema colapse.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 20+-1=19  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 19)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  40913 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14273 ms
+
+> narrativa
+> Tus manos se mueven con una precisión quirúrgica sobre el amasijo de interruptores analógicos. Entre el metal oxidado y los crecimientos biológicos pálidos que intentan reclamar la máquina, logras aislar el flujo eléctrico justo a tiempo. Las pantallas CRT, que hasta hace un instante parpadeaban erráticamente, se estabilizan en un tono ámbar constante, iluminando la cabina asfixiante y revelando la red de cables que serpentean por el suelo como venas expuestas.
+> La entidad orgánica, aún jadeando por el esfuerzo, se queda inmóvil, observando el repentino silencio de la maquinaria. El zumbido eléctrico, antes agresivo y amenazante, se convierte en un ronroneo rítmico que devuelve una calma tensa al espacio claustrofóbico.
+> mecanica
+> Investigación: Éxito (19 vs CD 10).
+> presion
+> La consola está estabilizada, pero el sistema ahora muestra una serie de advertencias en ámbar sobre la integridad estructural de la sección posterior; si no se desactivan los cierres de seguridad, la esclusa podría quedar sellada permanentemente al primer movimiento brusco.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4057 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · competence_shown
+  ⚠ nombres no reconocidos: Investigación, Tus, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5078: entidad orgánica affinity 80.0 → 82.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 82.0 (devoted), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 187 — 172/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 82.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2818 ms
+
+> "No permitiré que este lugar se convierta en una tumba."
+> Me apresuro hacia los cierres de seguridad para desactivarlos antes de que la esclusa se selle.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 3+-1=2
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 2)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4323 ms): «No los toques. Estás moviendo los cierres en la secuencia incorrecta y el sistem»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6077 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11515 ms
+
+> narrativa
+> El pasillo técnico se estrecha, envolviendo el espacio en una atmósfera húmeda donde el metal oxidado se funde con membranas orgánicas. Al final del corredor, las pesadas palancas de acero de los cierres de seguridad emergen de una costra de moho bioluminiscente que pulsa con un ritmo hipnótico, sincronizado con el corazón de la máquina. El intento de manipular los mecanismos resulta torpe; el metal no cede y el sistema reacciona con un chasquido seco que resuena en las paredes.
+> La entidad orgánica se interpone rápidamente entre el jugador y la consola, con un gesto instintivo de protección, mientras su respiración aún es agitada: "No los toques. Estás moviendo los cierres en la secuencia incorrecta y el sistema está empezando a bloquearse".
+> mecanica
+> Investigación: Fallo (2 vs CD 10).
+> presion
+> El bloqueo del sistema ha activado un protocolo de seguridad redundante; las palancas ahora están rígidas y el moho bioluminiscente ha empezado a tornarse de un rojo intenso, señalando que el tiempo para abrir la esclusa se agota.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2039 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Investigación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 82.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 188 — 173/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 82.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2849 ms
+
+> "Lo lamento, no deseaba causar más daño. Dime exactamente qué debo hacer para arreglarlo."
+> Me aparto de la consola para darle espacio a la entidad y espero sus instrucciones.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5827 ms): «No te disculpes, no hay tiempo para eso. Quédate quieto y observa. Primero, el t»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4394 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10974 ms
+
+> narrativa
+> El pasillo técnico se ha transformado en un túnel de luz roja pulsante. El moho bioluminiscente vibra ahora con una frecuencia alarmante, convirtiendo el metal oxidado y las membranas orgánicas en una garganta opresiva que parece cerrarse físicamente sobre el grupo.
+> La entidad orgánica reacciona con rapidez, sus dedos rozando el metal oxidado sin llegar a tocarlo, guiando la visión hacia los mecanismos con gestos precisos y veloces mientras vigila el cambio de color del moho. Habla con urgencia: "No te disculpes, no hay tiempo para eso. Quédate quieto y observa. Primero, el tercer cierre hacia abajo, luego el primero a la derecha, y solo cuando el pulso rojo se detenga, tira de la palanca central con fuerza".
+> mecanica
+> Persuasión: Éxito (14 vs CD 10).
+> presion
+> La frecuencia de la luz roja aumenta; si la secuencia de palancas no se ejecuta con exactitud en los próximos segundos, el pasillo se sellará herméticamente, dejando al grupo atrapado en el sector técnico.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1983 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 82.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 189 — 174/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 82.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2831 ms
+
+> "Confío en tu guía. Lo haré exactamente así."
+> Me apresuro hacia los cierres y busco el tercero hacia abajo para accionarlo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4622 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8675 ms
+
+> narrativa
+> El movimiento es preciso y coordinado. El metal cede con un chasquido seco y metálico cuando el tercer cierre es accionada, encajando perfectamente en la secuencia indicada. El pasillo, que hasta hace un instante parecía una garganta de metal y tejido vivo con cierres que sobresalían como costillas oxidadas, reacciona al impacto; las pulsaciones de luz carmesí vacilan por un instante, relajando la presión orgánica de las paredes.
+> La entidad orgánica observa la maniobra en silencio, manteniendo la mirada fija en el ritmo del moho bioluminiscente, asintiendo levemente con un gesto de aprobación mientras aguarda el siguiente paso.
+> mecanica
+> Atletismo: Éxito (14 vs CD 10).
+> presion
+> El pulso rojo sigue activo, aunque más débil; el tiempo para accionar el primer cierre a la derecha y la palanca central se agota antes de que el tejido vivo vuelva a contraerse.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4165 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · competence_shown
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5098: entidad orgánica affinity 82.0 → 84.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 190 — 175/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1775 ms
+
+> "No permitiremos que este lugar nos atrape."
+> Me lanzo hacia el primer cierre de la derecha para accionarlo rápidamente.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 2+4=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (6065 ms): «No te precipites. El ritmo es lo único que nos mantiene fuera de sus costillas.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4447 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8718 ms
+
+> narrativa
+> El impulso falla. El cierre mecánico vibra con una violencia frenética, resistiéndose al movimiento y devolviendo un impacto seco que impide el accionamiento. En el corredor estrecho, donde el metal oxidado se funde con membranas carnosas, la luz carmesí recupera su intensidad y el tejido orgánico comienza a cerrarse sobre el espacio con una urgencia visceral.
+> La entidad orgánica se desplaza un centímetro hacia adelante, posicionándose para intervenir sin quitar la vista de la pulsación roja. Su voz suena neutra, carente de juicio pero firme: "No te precipites. El ritmo es lo único que nos mantiene fuera de sus costillas."
+> mecanica
+> Atletismo: Fallo (6 vs CD 10).
+> presion
+> El tejido vivo sigue cerrándose; si el cierre no se acciona en el próximo intento, el pasillo colapsará, atrapando al grupo entre las paredes de carne y metal.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1331 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 191 — 176/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2435 ms
+
+> "No permitiré que este lugar nos devore."
+> Me apoyo con todo mi peso contra el cierre mecánico, intentando forzarlo una vez más con determinación.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 17+4=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 21)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3670 ms): «Empuja. Ahora.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3885 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8354 ms
+
+> narrativa
+> El metal cede con un estruendo ensordecedor que sacude los cimientos del pasillo, liberando la presión acumulada en un solo golpe seco. La entidad orgánica se lanza contra el mecanismo, aportando todo su peso en un movimiento coordinado y preciso, mientras mantiene la mirada fija en la vibración del metal y ordena con urgencia: "Empuja. Ahora."
+> La compuerta se abre de par en par, revelando una cámara circular que se extiende como un nexo de conductos. En el interior, una luz ámbar y tenue late con un ritmo hipnótico, iluminando una arquitectura donde el acero ha sido digerido y moldeado por el entorno orgánico, fusionando la máquina con la carne en una simbiosis perturbadora.
+> mecanica
+> Atletismo: Éxito (21 vs CD 10).
+> presion
+> La apertura del cierre ha dejado un rastro de vibraciones que podrían atraer a las entidades que patrullan los conductos ámbar.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3360 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación location: cámara circular
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location cámara circular
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 192 — 177/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2266 ms
+
+> "No me lo tienes que decir dos veces."
+> Empujo con todas mis fuerzas para ayudar a abrir la compuerta y entro rápidamente en la cámara, manteniendo mi arma lista.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 17+4=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 21)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3701 ms): «Bien. No te detengas, mantén la guardia.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5351 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8182 ms
+
+> narrativa
+> El esfuerzo final es decisivo. Con un impulso coordinado, la compuerta se rinde por completo, permitiendo un acceso rápido y fluido hacia el corazón del nexo. La cámara circular se despliega ante la vista, un espacio donde el acero original ha sido devorado y remodelado por una biomasa pulsante de tonos ámbar que late con una regularidad orgánica, transformando la fría ingeniería en un sistema vivo de conductos y membranas.
+> La entidad orgánica se desliza hacia el interior con un movimiento fluido, sin dejar de vigilar los conductos ámbar mientras se posiciona para cubrir la espalda del jugador. Con un tono firme y protector, sentencia: "Bien. No te detengas, mantén la guardia."
+> mecanica
+> Atletismo: Éxito (21 vs CD 10).
+> presion
+> El estruendo de la compuerta ha resonado a través de la biomasa; el eco del metal cediendo podría atraer a los centinelas que patrullan los conductos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5748 ms · 0 eventos · 2 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta cámara circular · location.state = occupied
+  ✓ delta entidad orgánica · npc.location_id = cámara circular
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5113: cámara circular.state = occupied
+  → delta 5114: entidad orgánica.location_id = cámara circular
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 193 — 178/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2263 ms
+
+> "No me detendré. Que la luz guíe nuestro paso en este lugar."
+> Sigo avanzando hacia el centro de la cámara, manteniendo la espada desenfundada y atento a cualquier movimiento en los conductos.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 2+1=3
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 3)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4671 ms): «Que lo haga, pero no confíes solo en la luz. Aquí, lo que brilla suele ser lo qu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5060 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11322 ms
+
+> narrativa
+> El avance hacia el centro de la cámara se vuelve torpe; la biomasa ámbar que recubre el suelo es traicionera, vibrando bajo las botas y ocultando irregularidades que hacen que cada paso sea incierto. A pesar de la vigilancia, la mirada falla en detectar el peligro oculto en los pliegues de las membranas translúcidas que dominan el núcleo, dejando que el entorno se cierre sobre la posición con una calma inquietante mientras las arterias del techo laten con fuerza.
+> La entidad orgánica se desplaza lateralmente, manteniendo el ángulo de cobertura mientras sus ojos escanean los conductos ámbar con intensidad. Con un tono gélido que contrasta con su lealtad, advierte: "Que lo haga, pero no confíes solo en la luz. Aquí, lo que brilla suele ser lo que tiene más hambre."
+> mecanica
+> Percepción: Fallo (3 vs CD 10).
+> presion
+> La falta de detección ha permitido que algo en los conductos orgánicos se posicione justo encima, esperando el momento de caer sobre quien ignore su presencia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1318 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 194 — 179/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2258 ms
+
+> "Mantente alerta. No permitiré que esta oscuridad nos tome por sorpresa."
+> Sigo avanzando con cautela hacia el centro, manteniendo mi escudo en alto y la luz encendida para cubrir mi espalda.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 15+1=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 16)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5343 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10444 ms
+
+> narrativa
+> El escudo se alza como un baluarte contra la penumbra mientras la luz corta el aire, revelando finalmente lo que el entorno intentaba ocultar. El avance es seguro y preciso; la cautela rinde frutos al detectar las irregularidades del terreno antes de que se conviertan en trampas, permitiendo que el grupo alcance el corazón de la estancia sin incidentes.
+> En el centro de la cámara, el suelo se hunde en una depresión circular donde la biomasa ámbar se vuelve espesa y viscosa, configurando un nido que pulsa con un ritmo orgánico y lento. Sobre sus cabezas, los conductos translúcidos del techo se curvan como costillas colosales, goteando un fluido denso que sisea al hacer contacto con la superficie, llenando el aire de un aroma acre y húmedo.
+> mecanica
+> Percepción: Éxito (16 vs CD 10).
+> presion
+> El nido pulsante reacciona a la presencia del grupo; el ritmo de las vibraciones aumenta, sugiriendo que algo en el núcleo ha sido despertado por la luz y el ruido de las botas.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1229 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 195 — 180/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4507 ms
+
+> "¡Manteneos alerta! Algo se despierta en el núcleo."
+> Me coloco al frente, alzando mi escudo y preparando mi arma para proteger el camino mientras observo el nido.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 3+1=4
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 4)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4303 ms): «No te alejes de mi espalda. Yo cuido el flanco, tú mantén la vista en el centro.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4206 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8025 ms
+
+> narrativa
+> El intento de anticipar el movimiento del nido fracasa; la vista se nubla por un instante y el sentido del peligro llega demasiado tarde. El nido de biomasa ámbar se contrae violentamente, expulsando una ráfaga de vapor acre que envuelve el lugar, mientras el núcleo comienza a agitarse con espasmos erráticos que sacuden el suelo bajo los pies.
+> La entidad orgánica se posiciona firmemente junto al jugador, ajustando el agarre de su arma con un movimiento seco, sin apartar la mirada del pulso del nido. "No te alejes de mi espalda. Yo cuido el flanco, tú mantén la vista en el centro", ordena con una voz que no admite dudas.
+> mecanica
+> Percepción: Fallo (4 vs CD 10).
+> presion
+> El núcleo ha pasado de la agitación al espasmo; la biomasa está a punto de liberar lo que sea que haya estado incubando en su interior.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1172 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 196 — 181/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1898 ms
+
+> "No te preocupes, estoy listo."
+> Me planto firmemente frente al núcleo, levantando mi escudo para protegernos de lo que sea que emerja.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 1+1=2  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 2)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3620 ms): «Menos palabras y más escudo. No bajes la guardia ni un milímetro.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4450 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9722 ms
+
+> narrativa
+> El suelo orgánico comienza a ondularse en espasmos violentos, haciendo que el equilibrio sea una lucha constante contra la superficie inestable. Un vaho amarillento y pegajoso se despliega desde el núcleo, saturando el aire y reduciendo la visibilidad a apenas unos pasos, mientras una frecuencia ensordecedora vibra en el pecho, distorsionando la percepción del espacio.
+> El escudo se siente pesado y torpe; el intento de plantarse con firmeza termina en un tropiezo cuando el suelo cede bajo los pies, dejando la guardia abierta y el cuerpo vulnerable ante la espesura del vapor. La entidad orgánica no se mueve, tensando los músculos y escaneando la niebla con una intensidad gélida. "Menos palabras y más escudo. No bajes la guardia ni un milímetro", susurra con una voz cortante que logra hendir el ruido ensordecedor del núcleo.
+> mecanica
+> Percepción: Pifia (2 vs CD 10). Te has desestabilizado debido a las ondas del suelo.
+> presion
+> La visibilidad es nula y tu posición es precaria; cualquier cosa que emerja del biomasa ámbar te encontrará fuera de balance y sin una defensa efectiva.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3320 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = desestabilizado
+  ⚠ nombres no reconocidos: Percepción, Pifia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5142: Ilvard.conditions = desestabilizado
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 197 — 182/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1786 ms
+
+> "No me dejaré caer."
+> Intento recuperar la verticalidad rápidamente y clavar los pies en el suelo orgánico para recuperar el equilibrio.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 16)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5168 ms): «No te caigas. Mantén la línea.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4191 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8329 ms
+
+> narrativa
+> El cuerpo reacciona con un espasmo de voluntad y los pies encuentran un agarre firme, hundiéndose lo justo en la superficie viscosa y pulsante. El suelo orgánico se estabiliza momentáneamente, exhalando ese vaho amarillento en soplos rítmicos que parecen sincronizarse con el latido del entorno, permitiendo recuperar la verticalidad y cerrar la brecha en la defensa.
+> Sin apartar la mirada de la niebla, la entidad orgánica tensa los músculos y se desplaza un centímetro hacia el jugador para cubrir el hueco que dejó el tropiezo. Su voz suena fría y pragmática mientras mantiene la posición: "No te caigas. Mantén la línea."
+> mecanica
+> Atletismo: Éxito (16 vs CD 10). Has recuperado el equilibrio y la posición defensiva.
+> presion
+> La estabilidad es temporal y el entorno sigue pulsando; cualquier vacilación ahora que la línea se ha cerrado dejará un flanco expuesto al avance de la niebla.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1238 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 198 — 183/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2307 ms
+
+> "No volveré a fallar. Cuenta con ello."
+> Me planto con firmeza, apretando el agarre de mi arma y manteniendo el escudo en alto para proteger el flanco.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 18+1=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 19)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3550 ms): «Menos palabras. Solo mantén el escudo arriba.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3534 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10725 ms
+
+> narrativa
+> El agarre sobre el arma se vuelve sólido y el escudo se ancla en el aire, formando una barrera infranqueable que cierra la brecha con precisión quirúrgica. Alrededor, el pasillo de tejido carnoso y húmedo vibra con un latido sordo que reverbera en las botas, mientras el suelo exhala vapores sulfurosos en soplos rítmicos que nublan la vista, pero no la determinación.
+> La entidad orgánica no gira la cabeza ni concede una mirada; mantiene la vista fija en el avance de la niebla mientras ajusta su propio centro de gravedad para optimizar la defensa. Con una voz plana y sin rastro de duda, sentencia: "Menos palabras. Solo mantén el escudo arriba."
+> mecanica
+> Percepción: Éxito (19 vs CD 10). Has asegurado el flanco y tienes una lectura clara del terreno y la amenaza inmediata.
+> presion
+> La niebla comienza a condensarse en formas reconocibles justo delante de la línea defensiva; cualquier distracción ahora permitirá que el primer impacto sea el que rompa el muro.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1403 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 199 — 184/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2322 ms
+
+> "No temas, me mantendré firme."
+> Aprieto los dientes y clavo los pies en el suelo carnoso, flexionando las rodillas para absorber el impacto inminente.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 20)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3646 ms): «Hazlo.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3919 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10276 ms
+
+> narrativa
+> El anclaje es perfecto. Las botas se hunden con firmeza en la superficie blanda y pulsante del pasillo, transformando la postura en una roca inamovible mientras las paredes exudan un viscoso fluido amarillento. El cuerpo absorbe la tensión del entorno, resistiendo la presión del aire cargado de azufre que se vuelve opaco y denso al aproximarse al arco de tejido fibroso.
+> La entidad orgánica no aparta la vista de la niebla, aunque sus músculos se tensan en una sincronía absoluta con la estabilidad del escudo. Con una voz monocorde y despojada de cualquier matiz, sentencia: "Hazlo."
+> mecanica
+> Atletismo: Éxito (20 vs CD 10). Has logrado una posición defensiva inexpugnable.
+> presion
+> La niebla sulfurosa comienza a arremolinarse violentamente contra el muro defensivo; el primer impacto es inminente y cualquier vacilación en la postura hará que el retroceso sea devastador.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1408 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 200 — 185/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2061 ms
+
+> "¡No pasaréis!"
+> Aprieto los dientes y planto el escudo con toda mi fuerza, preparándome para recibir el impacto sin ceder un solo centímetro.
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  sin tiradas declaradas
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=False · pnj_que_responden=['entidad orgánica'] · altera_estado=False · peso=conversacional
+
+### [5] ÁRBITRO
+
+  no requerido este turno
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3359 ms): «Sostén.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1026 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5799 ms
+
+> narrativa
+> La entidad orgánica se desplaza con una precisión mecánica, ajustando la posición de su cuerpo para convertirse en el soporte físico del escudo. Se ancla contra la espalda del defensor, transformando la resistencia individual en un bloque sólido de carne y metal.
+> Con una voz plana, despojada de cualquier rastro de emoción, sentencia: "Sostén."
+> mecanica
+> Ninguna tirada resuelta en este turno.
+> presion
+> La niebla sulfurosa golpea el muro defensivo con una fuerza brutal; la presión es constante y el esfuerzo físico empieza a pasar factura, amenazando con desplazar la formación si la voluntad flaquea.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3945 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Ninguna
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 201 — 186/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2598 ms
+
+> "¡No retrocederemos!"
+> Aprieto los dientes y clavo los pies en el suelo, volcando todo mi peso hacia adelante para reforzar la posición del escudo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (28325 ms): «No retrocederemos.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3155 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11316 ms
+
+> narrativa
+> El esfuerzo surte efecto y la posición se estabiliza. Los pies encuentran agarre en el suelo de piedra calcinada, resistiendo el empuje mientras el aire vibra violentamente por el impacto de la niebla contra el metal del escudo. El azufre hace que la superficie sea traicionera, pero el peso volcándose hacia adelante convierte la defensa en un ancla inamovible.
+> La entidad orgánica reacciona instantáneamente, incrementando la presión de su cuerpo contra la espalda del defensor para anular cualquier oscilación. Con un eco exacto de la voz del jugador, despojado de cualquier matiz personal, sentencia: "No retrocederemos."
+> mecanica
+> Atletismo: Éxito (15 vs CD 10). La posición se mantiene firme.
+> presion
+> La niebla comienza a filtrarse por las rendijas del muro de escudos; si la formación no avanza o se desplaza, el gas sulfuroso empezará a corroer el equipo y asfixiar a los defensores.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2008 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 202 — 187/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3528 ms
+
+> "¡Mantened la línea y avanzad! ¡No dejaremos que este veneno nos consuma!"
+> Empujo con todas mis fuerzas contra la entidad para iniciar el avance y sacar a los defensores de la zona de la niebla.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 14+4=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2824 ms): «Avanzamos.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3744 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9385 ms
+
+> narrativa
+> El impulso se traduce en un avance sólido y coordinado. El muro de escudos se desplaza hacia adelante, tajando la niebla corrosiva que golpea el metal con un siseo constante. Bajo las botas, la piedra calcinada y resbaladiza por el azufre ofrece una resistencia traicionera, pero la fuerza del empuje es superior, permitiendo que la formación gane terreno y deje atrás la zona de mayor densidad del gas.
+> La entidad orgánica responde al movimiento con una precisión quirúrgica, replicando cada tensión muscular y cada desplazamiento del peso para mantener la sincronía absoluta. Mientras sostiene la presión constante contra la espalda del defensor, sentencia con un tono coordinado: "Avanzamos."
+> mecanica
+> Atletismo: Éxito (18 vs CD 10). La formación logra avanzar y salir de la zona de peligro inmediato.
+> presion
+> El pasillo de piedra calcinada se estrecha y la niebla, aunque dejada atrás, comienza a arremolinarse detrás de la formación, cerrando la única vía de retirada posible.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1700 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 203 — 188/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2791 ms
+
+> "Mantengamos la formación. No dejaremos que esa niebla nos alcance."
+> Sigo empujando con firmeza, manteniendo la guardia alta mientras avanzo hacia el estrechamiento del pasillo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 13+4=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 17)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3248 ms): «Ni un paso atrás. El camino es hacia adelante.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4554 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8632 ms
+
+> narrativa
+> El avance es firme y coordinado, permitiendo que la formación penetre en el cuello de botella de roca negra y vítrea. Las paredes, fundidas por un calor antiguo y extremo, se cierran sobre el grupo, obligándolos a compactarse en un espacio asfixiante donde el aire pesa, saturado de ceniza y el aroma eléctrico del ozono.
+> La entidad orgánica ajusta su posición con una precisión absoluta, sincronizando su zancada exactamente con el ritmo del paso para reforzar la estructura del muro. Mientras mantiene una presión constante y protectora contra la espalda, sentencia con determinación: "Ni un paso atrás. El camino es hacia adelante."
+> mecanica
+> Atletismo: Éxito (17 vs CD 10). La formación atraviesa el estrechamiento sin perder la cohesión.
+> presion
+> El espacio se vuelve tan angosto que cualquier tropiezo o pérdida de ritmo rompería la formación, dejando al grupo vulnerable en un callejón sin salida.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1183 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 204 — 189/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2290 ms
+
+> "Tened valor, que la luz nos guía."
+> Mantengo la posición y el ritmo, concentrado en no flaquear para no perjudicar a los demás. {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 23)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3984 ms): «Que la luz guíe, entonces. Yo sostengo el muro.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4647 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13044 ms
+
+> narrativa
+> La formación se desliza con una fluidez impecable, superando la última resistencia del paso angosto. El espacio se abre bruscamente en una cámara elíptica de obsidiana pulida, donde el suelo vibra con un zumbido sordo y rítmico que asciende por las botas, mientras el techo se pierde en una negrura absoluta, tragándose cualquier rastro de luz cenital.
+> La entidad orgánica mantiene su posición, transmitiendo una seguridad inquebrantable a través del contacto físico. Con una voz plana y sin rastro de duda, mientras aumenta imperceptiblemente la presión protectora contra el compañero para asegurar la cohesión, sentencia: "Que la luz guíe, entonces. Yo sostengo el muro."
+> mecanica
+> Atletismo: Éxito (23 vs CD 10). La formación emerge en la cámara de obsidiana manteniendo la disciplina y el orden táctico.
+> presion
+> El zumbido rítmico del suelo comienza a intensificarse; permanecer estáticos en el centro de la cámara podría atraer la atención de aquello que genera la vibración.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5375 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación location: cámara de obsidiana
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location cámara de obsidiana
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 205 — 190/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3463 ms
+
+> "Mantengamos la guardia, pero no nos quedemos aquí quietos."
+> Me pongo en posición defensiva, atento a cualquier movimiento que emerja de la oscuridad del techo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 11+1=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 12)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3275 ms): «Entendido. No dejaremos que el silencio nos atrape.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5438 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10844 ms
+
+> narrativa
+> La cámara de obsidiana se extiende como un espejo oscuro y vasto, interrumpido solo por finas vetas de un material fosforescente que trazan geometrías precisas en el suelo. El zumbido rítmico se siente ahora como un latido mecánico que resuena en el pecho, mientras la negrura del techo parece descender lentamente, envolviendo el espacio en una atmósfera opresiva.
+> La entidad orgánica asiente con un movimiento seco y eficiente, desplazando su peso hacia adelante para iniciar el avance mientras mantiene la guardia cerrada. "Entendido. No dejaremos que el silencio nos atrape", sentencia con una determinación gélida.
+> mecanica
+> Percepción: Éxito (12 vs CD 10). Logras mantener la vigilancia sobre el techo sin perder la cohesión del grupo durante el avance.
+> presion
+> El techo parece descender físicamente; cada paso lento en esta cámara reduce el espacio vital y aumenta la sensación de claustrofobia, acercándolos a lo que sea que habite en la negrura superior.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1896 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 206 — 191/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2693 ms
+
+> "Mantened el paso, no permitáis que el miedo os detenga."
+> Avanzo junto a la entidad, manteniendo mi escudo en alto para proteger mi cabeza mientras vigilo el techo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 1+1=2  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 2)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5334 ms): «El miedo es un ruido innecesario. Solo el paso firme nos sacará de aquí.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4666 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13801 ms
+
+> narrativa
+> El espacio se estrecha violentamente y el techo de obsidiana comienza a rozar los hombros, obligando a una marcha encorvada y torpe. El zumbido mecánico, que antes era un latido, se transforma en un estruendo ensordecedor que anula cualquier sentido de orientación; en medio del caos sonoro, el escudo se vuelve un estorbo inútil que choca contra las paredes mientras la visión se nubla, perdiendo por completo el rastro de lo que acecha en las alturas.
+> La entidad orgánica no altera su ritmo ni su postura, avanzando con movimientos matemáticamente precisos. Sin detener su marcha, y con un tono neutro y desprovisto de emoción, mantiene la mirada fija en el camino: "El miedo es un ruido innecesario. Solo el paso firme nos sacará de aquí."
+> mecanica
+> Percepción: Fallo (2 vs CD 10). Pierdes la noción del entorno y quedas vulnerable a cualquier amenaza que descienda del techo.
+> presion
+> La ceguera táctica y el ruido ensordecedor impiden detectar que el techo ya no solo desciende, sino que comienza a cerrarse sobre el grupo, reduciendo la salida a un espacio cada vez más angosto.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5441 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.conditions = vulnerable
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5176: Ilvard.conditions = vulnerable
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 207 — 192/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2959 ms
+
+> "Tened valor, no permitáis que el pánico os domine."
+> Me obligo a mantener el paso, ignorando la incomodidad del techo y concentrándome en avanzar con determinación.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3542 ms): «Tu voluntad es el único vector relevante ahora. No te detengas.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3944 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11407 ms
+
+> narrativa
+> El esfuerzo rinde frutos y el cuerpo logra sincronizarse con la presión del entorno. A pesar de que el pasillo de obsidiana se contrae como un esfínter mecánico, reduciendo el espacio a una rendija opresiva donde el estruendo anula la vista, el avance no se detiene. La determinación vence la resistencia del aire y el roce del techo, permitiendo que la marcha se mantenga fluida mientras las paredes parecen querer devorar cualquier rastro de movimiento.
+> La entidad orgánica sigue adelante, manteniendo el ritmo exacto de sus pasos sin girar la cabeza. Su voz corta el estruendo con una claridad gélida, resonando en el estrecho túnel: "Tu voluntad es el único vector relevante ahora. No te detengas."
+> mecanica
+> Atletismo: Éxito (14 vs CD 10). Mantienes la velocidad de avance a pesar de la contracción del pasillo.
+> presion
+> El pasillo continúa estrechándose; si el ritmo flaquea ahora, la obsidiana terminará por bloquear el paso por completo, atrapando al grupo en la oscuridad.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1776 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 208 — 193/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2916 ms
+
+> "No me detendré mientras haya alguien que necesite ayuda."
+> Sigo avanzando con paso firme, manteniendo la vista al frente y apretando el paso para no permitir que las paredes me frenen.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 14+4=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3452 ms): «Entonces que esa necesidad sea tu motor. No mires atrás, solo empuja.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6042 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10092 ms
+
+> narrativa
+> La resistencia del pasillo cede finalmente y la opresión desaparece de golpe. El camino de obsidiana se abre abruptamente en una estancia circular de techos infinitos, donde el estruendo es reemplazado por un silencio sepulcral y un aire gélido que cala hasta los huesos. El avance firme y la determinación del paso permiten salir del túnel sin que las paredes logren frenar el impulso, emergiendo en la inmensidad de la sala.
+> La entidad orgánica mantiene su marcha, sin alterar el ritmo ni girar la cabeza, mientras su voz resuena en el vacío con una cadencia monocorde y desprovista de emoción: "Entonces que esa necesidad sea tu motor. No mires atrás, solo empuja."
+> mecanica
+> Atletismo: Éxito (18 vs CD 10). Superas la contracción del pasillo y accedes a la estancia circular.
+> presion
+> El silencio de la sala es engañoso; la gélida quietud oculta la presencia de algo que comienza a despertar ante la vibración de los pasos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  6114 ms · 0 eventos · 2 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.location_id
+  ✓ delta entidad orgánica · npc.location_id = cámara circular
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → delta 5180: entidad orgánica.location_id = cámara circular
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 209 — 194/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1986 ms
+
+> "No me detendré mientras haya alguien que necesite ayuda."
+> Mantengo el paso firme y atento a cualquier movimiento en las sombras de la sala.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 10+1=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 11)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3963 ms): «La ayuda es un concepto flexible. Aquí, ayudar significa sobrevivir para que el »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4881 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10292 ms
+
+> narrativa
+> El paso firme se mantiene mientras la vista recorre la vasta estancia circular de obsidiana. Bajo un techo que se pierde en una oscuridad absoluta, la luz apenas alcanza a dibujar una plataforma elevada en el centro, flanqueada por canales secos que serpentean como venas petrificadas sobre el suelo negro. En los márgenes de la sala, las sombras no son simples ausencias de luz; parecen cobrar una densidad propia, espesándose y ondulando con una voluntad latente.
+> La entidad orgánica sigue caminando sin detenerse, su voz plana y gélida fundiéndose con el vacío de la sala: "La ayuda es un concepto flexible. Aquí, ayudar significa sobrevivir para que el resto no tenga que venir a buscarte."
+> mecanica
+> Percepción: Éxito (11 vs CD 10). Logras identificar la naturaleza anómala de las sombras en los bordes de la estancia.
+> presion
+> La densidad de las sombras en los bordes comienza a desplazarse coordinadamente hacia el centro; si no se asegura la posición en la plataforma, el grupo quedará flanqueado en el terreno abierto.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1515 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 210 — 195/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1695 ms
+
+> "¡Rápido, a la plataforma!"
+> Me apresuro hacia el centro de la estancia para asegurar la posición elevada.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 20)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3816 ms): «Bien hecho. No permitáis que la oscuridad os toque los talones.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3168 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8007 ms
+
+> narrativa
+> El impulso es certero y el cuerpo responde con una agilidad impecable, alcanzando el disco de piedra pulida justo antes de que el cerco se cierre. La plataforma central se siente como una isla de estabilidad, un refugio elevado que corta la marea de oscuridad que ahora ondula coordinadamente en los canales secos, incapaz de escalar la piedra lisa.
+> La entidad orgánica se posiciona en el centro del disco con un movimiento fluido, sin detener su marcha y manteniendo la mirada fija en el avance de las sombras. "Bien hecho. No permitáis que la oscuridad os toque los talones", sentencia con una calma imperturbable.
+> mecanica
+> Atletismo: Éxito (20 vs CD 10). Has asegurado la posición elevada en la plataforma.
+> presion
+> Las sombras han dejado de avanzar, pero ahora comienzan a rodear la plataforma en un patrón circular, buscando cualquier grieta o descuido en la guardia del grupo para infiltrarse.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  6428 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.location_id
+  ✓ creación location: plataforma central
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → creada: location plataforma central
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 211 — 196/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2318 ms
+
+> "No os preocupéis, que mientras yo esté en pie, ninguna sombra pondrá un pie aquí."
+> Me coloco en el borde de la plataforma, con el escudo en alto y la espada lista para proteger la posición.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 5+1=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5248 ms): «Tu voluntad es un muro, pero no confundas la determinación con la invulnerabilid»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3780 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14806 ms
+
+> narrativa
+> El escudo se alza con firmeza, pero la vigilancia flaquea. Mientras la mirada intenta diseccionar el movimiento de la marea oscura, el patrón circular de las sombras se vuelve confuso, fundiéndose en un solo tejido de negrura que parece pulsar al unísono, ocultando cualquier intención clara o punto débil en su avance. La seguridad de la posición se siente ahora más frágil, pues el enemigo no ataca, sino que espera, mimetizándose con los relieves de los canales secos.
+> La entidad orgánica no se desplaza hacia el borde ni intenta apoyar la guardia; permanece en el centro del disco, observando el flujo de las sombras con una mirada analítica y distante. "Tu voluntad es un muro, pero no confundas la determinación con la invulnerabilidad. Mantén la guardia; el hambre de estas cosas no conoce el cansancio", sentencia con una voz que no admite vacilaciones.
+> mecanica
+> Percepción: Fallo (6 vs CD 10). No logras detectar ninguna vulnerabilidad ni movimiento anómalo en el cerco de sombras.
+> presion
+> La marea de oscuridad comienza a contraerse, reduciendo el diámetro del círculo alrededor de la plataforma y presionando los límites del disco de piedra.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1493 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 212 — 197/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2560 ms
+
+> "No me cansaré mientras haya alguien que proteger."
+> Aprieto el agarre de mi escudo y planto los pies con firmeza, preparándome para el impacto del cierre del círculo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 2+4=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5923 ms): «La nobleza es un combustible eficiente, pero finito. No te agotes en el gesto; r»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3795 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12006 ms
+
+> narrativa
+> El esfuerzo por anclarse al suelo resulta insuficiente; los pies resbalan sobre la piedra gastada y la postura, aunque decidida, pierde la solidez necesaria justo cuando la marea de sombras pulsantes se cierra con un movimiento coordinado. La negrura asfixia los canales secos y el anillo negro se contrae violentamente, reduciendo el espacio vital sobre la plataforma circular hasta convertir el refugio en una celda de sombras.
+> Sin moverse del centro, la entidad orgánica mantiene la mirada fija en la negrura que se cierra, con un tono clínico y desprovisto de emoción, aunque su postura denota una lealtad absoluta: "La nobleza es un combustible eficiente, pero finito. No te agotes en el gesto; resiste en el hecho."
+> mecanica
+> Atletismo: Fallo (6 vs CD 10). No logras plantar los pies con la firmeza suficiente para resistir el empuje del entorno.
+> presion
+> El círculo de sombras se ha cerrado casi por completo; cualquier movimiento en falso o fallo en la siguiente defensa permitirá que la oscuridad traspase el perímetro del escudo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1590 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 213 — 198/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2475 ms
+
+> "No me agotaré, pero tampoco retrocederé."
+> Plantó los pies con fuerza, ignorando el resbalón, y clavo mi arma en el suelo para usarla de apoyo mientras refuerzo mi posición.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4668 ms): «El acero es un ancla más honesta que la voluntad. Mantén el eje.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  23748 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10994 ms
+
+> narrativa
+> El metal choca contra la piedra con un impacto seco y resonante, clavándose profundamente en la superficie gastada. Esta vez, la resistencia es absoluta: el arma se convierte en un pilar inamovible que detiene el retroceso y estabiliza el cuerpo, devolviendo la solidez a una postura que ya no cede ante la marea de sombras.
+> Sin apartar la vista del avance de las sombras, la entidad orgánica ajusta su propia posición para cubrir el flanco del jugador, moviéndose con una economía de gestos geométrica y fría. "El acero es un ancla más honesta que la voluntad. Mantén el eje", sentencia, mientras su presencia se vuelve el muro complementario que cierra el perímetro.
+> mecanica
+> Atletismo: Éxito (13 vs CD 10). Logras anclarte firmemente al suelo utilizando tu arma como apoyo.
+> presion
+> Aunque la posición es estable, las sombras comienzan a presionar el acero y la piedra, buscando cualquier fisura en la defensa para filtrarse hacia el centro.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1918 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 214 — 199/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2254 ms
+
+> "No pasaréis mientras yo esté en pie."
+> Me planto con firmeza, aprovechando la estabilidad del arma para formar un muro infranqueable junto a la entidad.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4402 ms): «Entonces no caigas. Si el muro se rompe, no habrá nada detrás que nos salve.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5815 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10354 ms
+
+> narrativa
+> La postura se vuelve inquebrantable. El cuerpo se funde con el apoyo del arma, transformando la resistencia en una barrera sólida que repele el empuje de la marea viscosa. El aire, saturado de ozono y polvo antiguo, vibra con el esfuerzo, pero el pasillo de piedra grisácea no cede ni un centímetro ante el asedio de las sombras.
+> A su lado, la entidad orgánica desplaza su centro de gravedad con una precisión gélida para absorber el impacto de los flancos, manteniendo la línea sin vacilar. "Entonces no caigas. Si el muro se rompe, no habrá nada detrás que nos salve", sentencia con una voz plana, desprovista de cualquier rastro de emoción, mientras el acero sigue chocando contra la oscuridad.
+> mecanica
+> Atletismo: Éxito (14 vs CD 10). Tu posición es ahora un muro infranqueable.
+> presion
+> La marea de sombras empieza a rodear la posición, buscando un punto ciego o una grieta en la coordinación entre tú y la entidad para flanquearos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1625 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 215 — 200/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 84.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2718 ms
+
+> "No daré un paso atrás mientras mi brazo tenga fuerza."
+> Aprieto los dientes y desplazo mi escudo para cubrir el flanco de la entidad, intentando cerrar cualquier hueco por donde puedan filtrarse las sombras.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 20+1=21  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 21)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4020 ms): «Tu brazo es solo una parte. Mantén el equilibrio; yo cubro el resto.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4557 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10978 ms
+
+> narrativa
+> El escudo se desplaza con una precisión quirúrgica, sellando el único hueco que las sombras intentaban aprovechar. El impacto de la marea oscura contra el metal resuena en el pasillo de piedra grisácea, que comienza a estrecharse mientras la oscuridad fluye desde grietas geométricas en el techo y las paredes, como si la estructura misma estuviera sudando sombras.
+> La entidad orgánica ajusta la posición de su cuerpo para encajar perfectamente con el escudo, fundiéndose en una sola pieza de resistencia. Sin mirarlo, sentencia con una calma imperturbable: "Tu brazo es solo una parte. Mantén el equilibrio; yo cubro el resto."
+> mecanica
+> Percepción: Éxito Crítico (21 vs CD 10). Has cerrado el flanco perfectamente; la formación es ahora hermética.
+> presion
+> Las sombras, al no encontrar grietas, comienzan a condensarse en el techo, acumulando masa para un impacto descendente que pondrá a prueba la resistencia del escudo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3199 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Crítico, Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5206: entidad orgánica affinity 84.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 216 — 201/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3380 ms
+
+> "No retrocederemos. ¡Sostened la línea!"
+> Hundo los pies en la piedra y planto el escudo con todas mis fuerzas, preparándome para recibir el impacto desde arriba. {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 15+4=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 19)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4168 ms): «No retrocederemos. Estamos unidos.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  951 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9889 ms
+
+> narrativa
+> La planta de los pies se clava en la piedra grisácea, anclando el escudo con una firmeza absoluta justo cuando la masa de sombras colapsa desde el techo. El impacto es brutal, un golpe seco que hace vibrar el metal, pero la estructura resiste sin ceder un centímetro; la formación se mantiene imperturbable frente al embate.
+> A tu lado, la entidad orgánica se tensa, expandiendo su masa biológica para reforzar el punto de presión con una entrega visceral. Su voz surge entonces como un murmullo sólido, una vibración que recorre el cuerpo más que el oído: "No retrocederemos. Estamos unidos."
+> mecanica
+> Atletismo: Éxito (19 vs CD 10). Has mantenido la posición a pesar del impacto descendente.
+> presion
+> La marea oscura, frustrada por la solidez de la línea, comienza a filtrarse por los bordes del escudo, buscando el menor descuido en los pies o las articulaciones para derribar la defensa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1408 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 217 — 202/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2228 ms
+
+> "¡No pasaréis mientras yo esté en pie!"
+> Aprieto los dientes y empujo el escudo hacia adelante para intentar rechazar la masa de sombras que intenta filtrarse.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 20)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4485 ms): «¡Entonces no caerás!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6257 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9354 ms
+
+> narrativa
+> El esfuerzo se traduce en un impulso coordinado y devastador. Al empujar el escudo, el metal cede el espacio que la marea oscura intentaba usurpar, obligando a las sombras a retroceder violentamente hacia el techo de piedra grisácea, donde el goteo viscoso se detiene por un instante ante la fuerza del rechazo.
+> A tu lado, la entidad orgánica reacciona con una urgencia visceral. Su masa biológica se contrae y expande en un ritmo frenético, fusionando sus fibras con el borde del escudo para sellar las grietas por donde se filtra la sombra. Empuja con una fuerza bruta y orgánica, sincronizando su presión con la tuya mientras exclama: "¡Entonces no caerás!".
+> mecanica
+> Atletismo: Éxito (20 vs CD 10). Has logrado rechazar la masa de sombras y estabilizar la defensa.
+> presion
+> La marea oscura, repelida pero persistente, comienza a agruparse en el techo, concentrando su peso en un solo punto para lanzar un impacto descendente aún más masivo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3101 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ evidencia no literal: «sincronizando su presión con la tuya mientras excl»
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 218 — 203/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2408 ms
+
+> "¡No permitiremos que esta oscuridad avance!"
+> Aprieto los dientes y clavo los pies en el suelo, preparando todo mi peso para resistir el impacto inminente y proteger la posición.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 14+4=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (6479 ms): «¡Sostén la línea! ¡No dejaremos que nos aplasten!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5289 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8601 ms
+
+> narrativa
+> El impulso es sólido y certero; los pies encuentran el agarre necesario a pesar del suelo resbaladizo y la humedad que impregna el pasillo de piedra grisácea. El peso del cuerpo se convierte en un ancla inamovible, estabilizando el escudo justo cuando el aire, cargado de ozono y el hedor a materia orgánica en descomposición, vibra con la presión del impacto.
+> A tu lado, la entidad orgánica reacciona con una urgencia visceral. Su masa biológica vibra con una tensión extrema, fusionando sus fibras aún más profundamente con el metal del escudo para reforzar la estructura antes del golpe, y grita con una determinación absoluta: "¡Sostén la línea! ¡No dejaremos que nos aplasten!".
+> mecanica
+> Atletismo: Éxito (18 vs CD 10). Has logrado resistir el impacto y mantener la posición defensiva.
+> presion
+> La marea oscura, aunque contenida, empieza a filtrarse por las juntas del techo, buscando cualquier grieta en la formación para rodear la defensa y atacar los flancos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1347 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 219 — 204/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2539 ms
+
+> "¡No pasaréis mientras yo esté en pie!"
+> Aprieto los dientes y clavo los pies en el suelo, concentrándome en cerrar cualquier hueco que la marea oscura intente aprovechar para flanquearnos.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 15+4=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 19)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4025 ms): «¡Entonces no te muevas ni un centímetro! ¡Somos un solo muro!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  10270 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9834 ms
+
+> narrativa
+> El esfuerzo es total y el resultado impecable; los pies se anclan en la piedra húmeda y resbaladiza del pasillo, convirtiendo el cuerpo en una roca inamovible frente al embate. A pesar de que el techo grisáceo parece ceder, goteando esa marea oscura que busca desesperadamente cualquier fisura, la posición defensiva se mantiene firme y hermética.
+> La entidad orgánica reacciona al instante, con una voz que suena como un coro de fibras tensándose al límite. Se expande con un movimiento fluido, envolviendo el borde del escudo con una capa de tejido vivo que sella las grietas por donde se filtraba la marea: "¡Entonces no te muevas ni un centímetro! ¡Somos un solo muro!".
+> mecanica
+> Atletismo: Éxito (19 vs CD 10). Has cerrado los huecos y reforzado la posición defensiva.
+> presion
+> La marea oscura comienza a acumularse contra el muro orgánico y el escudo, generando una presión hidráulica que empieza a agrietar las paredes laterales del pasillo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1211 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 220 — 205/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2655 ms
+
+> "¡Aguanta, compañero! No cederemos ni un ápice."
+> Aprieto los dientes y clavo los talones en la piedra, concentrando toda mi fuerza en sostener el muro mientras busco cualquier señal de debilidad en las paredes laterales.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 17+1=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4187 ms): «¡No mires las paredes, mira el frente! ¡Siente la presión, aguántala conmigo!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6093 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11548 ms
+
+> narrativa
+> La resistencia es absoluta. Los talones muerden la piedra resbaladiza y el cuerpo se convierte en el eje central de una defensa inexpugnable, logrando sostener el embate sin ceder un solo milímetro. Mientras la fuerza se concentra en el muro, la mirada recorre los flancos del pasillo estrecho: la piedra grisácea y húmeda empieza a sucumbir. El fluido negro, implacable, ha encontrado el camino, abriendo fisuras profundas en las paredes laterales que supuran marea oscura en un intento desesperado por flanquear la posición.
+> Ante la vulnerabilidad del entorno, la entidad orgánica vibra en una frecuencia baja y resonante, sus fibras tensándose y entrelazándose con el escudo en un esfuerzo físico desesperado que los fusiona en una sola masa. "¡No mires las paredes, mira el frente! ¡Siente la presión, aguántala conmigo!", grita, mientras su tejido vivo se estira al límite para compensar el colapso del pasillo.
+> mecanica
+> Percepción: Éxito (18 vs CD 10). Has detectado que las paredes laterales están cediendo bajo la presión hidráulica.
+> presion
+> Las fisuras en las paredes laterales se expanden rápidamente; si el muro frontal no se mantiene o no se encuentran una salida, la marea oscura envolverá la posición por los costados.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1402 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 221 — 206/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2402 ms
+
+> "¡No me distraigo! ¡Sostendremos este muro juntos!"
+> Aprieto los dientes y clavo los pies en la piedra, volcando todo mi peso contra el escudo para reforzar la posición.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5056 ms): «¡Entonces no cedas ni un centímetro! ¡Ahora o nunca!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6100 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11073 ms
+
+> narrativa
+> El esfuerzo se traduce en una estabilidad absoluta; los pies encuentran el anclaje necesario y el peso del cuerpo se convierte en un pilar inamovible contra el empuje. El pasillo, una garganta de piedra gris y húmeda que se estrecha violentamente, comienza a sucumbir bajo la tensión: grietas profundas surcan las paredes laterales, supurando un fluido negro y viscoso que inunda el suelo y convierte el terreno en un espejo resbaladizo y traicionero.
+> En medio del estruendo de la roca quebrándose, la entidad orgánica lanza un grito desgarrador que se funde con el colapso del entorno: "¡Entonces no cedas ni un centímetro! ¡Ahora o nunca!". Sus fibras se contraen con una violencia súbita, envolviendo el brazo en un abrazo orgánico y tenso que ancla el cuerpo al suelo, fusionando la voluntad humana con la fuerza biológica para resistir el embate final.
+> mecanica
+> Atletismo: Éxito (13 vs CD 10). Has logrado estabilizar tu posición a pesar del terreno resbaladizo.
+> presion
+> El fluido negro ya cubre los pies y las paredes siguen cediendo; si la posición no se rompe o se avanza, el pasillo colapsará totalmente, sepultando la salida.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1711 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 222 — 207/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4018 ms
+
+> "¡No me moveré!"
+> Aprieto los dientes y empujo con todas mis fuerzas contra la presión, intentando ganar terreno para evitar el colapso.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3681 ms): «¡Eso es! ¡Sigue empujando, no dejes que nos trague!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4599 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11971 ms
+
+> narrativa
+> El esfuerzo se materializa en un crujido ensordecedor. La entidad orgánica lanza un grito con un esfuerzo visceral, sus fibras vibrando en una tensión máxima mientras se funden con el brazo del jugador para transferir cada gramo de fuerza hacia el frente: "¡Eso es! ¡Sigue empujando, no dejes que nos trague!".
+> Bajo esa presión conjunta, el pasillo se convierte en un embudo de piedra triturada y fluido negro que comienza a ceder. El muro opuesto se desplaza con un estrépito seco, abriendo una brecha irregular que permite el paso y revela, más allá del colapso, una cámara circular bañada en una luz violeta mortecina.
+> mecanica
+> Atletismo: Éxito (14 vs CD 10). Has logrado forzar la apertura del muro y ganar acceso a la siguiente estancia.
+> presion
+> La brecha es inestable y el fluido negro sigue fluyendo; si no se cruza el umbral rápidamente, la entrada a la cámara circular se sellará definitivamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3023 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta cámara circular · location.state = intact
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5232: cámara circular.state = intact
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 223 — 208/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3299 ms
+
+> "¡No nos detendremos ahora!"
+> Me lanzo rápidamente a través de la brecha hacia la cámara circular antes de que el muro se cierre.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 16)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4357 ms): «¡A salvo! ¡Muévete, que el cierre no nos atrape!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4083 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13266 ms
+
+> narrativa
+> El impulso es suficiente para atravesar el umbral justo antes de que el estruendo del colapso selle el camino detrás. Al aterrizar, el aire denso y cargado de ozono llena los pulmones, mientras la luz violeta que emana de las vetas cristalinas del techo baña la estancia. Las paredes de piedra pulida están cubiertas de glifos que pulsan con una cadencia orgánica, como si la propia cámara estuviera respirando en un sueño profundo.
+> La entidad orgánica se desprende de tu brazo con un chasquido húmedo, deslizándose rápidamente tras de ti hacia el interior de la cámara mientras lanza una mirada nerviosa hacia el muro que colapsa: "¡A salvo! ¡Muévete, que el cierre no nos atrape!".
+> mecanica
+> Atletismo: Éxito (16 vs CD 10). Has cruzado la brecha con seguridad antes del cierre total del muro.
+> presion
+> El eco del derrumbe aún vibra en el suelo y la cámara, aunque hermosa, parece reaccionar a la intrusión; los glifos comienzan a brillar con una intensidad creciente, sugiriendo que el sistema de seguridad de la estancia se ha activado.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  7615 ms · 0 eventos · 3 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.location_id
+  ✓ delta entidad orgánica · npc.location_id = cámara circular
+  ✓ delta cámara circular · location.state = occupied
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → delta 5236: entidad orgánica.location_id = cámara circular
+  → delta 5237: cámara circular.state = occupied
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 224 — 209/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2135 ms
+
+> "Mantén la calma, criatura. No deseo hacerte daño."
+> Me pongo en guardia y observo los glifos para comprender qué están haciendo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 16+1=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 17)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3831 ms): «Tú... tú no entiendes. El daño no vendrá de mí, sino de este lugar. Estos muros »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4830 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12033 ms
+
+> narrativa
+> La mirada se clava en las paredes de piedra pulida, donde la luz violeta del techo se refleja en el suelo especular creando un efecto de infinitud. Los glifos, que antes respiraban con calma, ahora vibran violentamente; los patrones geométricos que proyectan comienzan a desplazarse, cerrando el espacio físico y visual alrededor de los intrusos como una trampa que se estrecha.
+> La entidad orgánica reacciona con movimientos erráticos, agitando sus extremidades mientras señala frenéticamente las inscripciones pulsantes. "Tú... tú no entiendes. El daño no vendrá de mí, sino de este lugar. Estos muros no están diseñados para recibir visitas", exclama con un tono apresurado y agitado, el pánico filtrándose en cada sílaba.
+> mecanica
+> Percepción: Éxito (17 vs CD 10). Has identificado que los glifos no son meros adornos, sino el mecanismo de activación de una cerradura o trampa espacial que está reduciendo el área disponible en la cámara.
+> presion
+> El espacio se contrae. Si no encuentran la forma de estabilizar los glifos o abrir una salida, la cámara terminará por aplastar todo lo que haya en su interior.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1416 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 225 — 210/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2403 ms
+
+> "¡Mantente tranquilo! Buscaremos la forma de detener esto."
+> Me acerco a los glifos vibrantes para intentar comprender cómo funcionan y buscar el punto débil del mecanismo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Investigación: 16+-1=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4798 ms): «¡No hay tiempo para 'buscar'! Mira cómo se desplazan, están cerrando el ciclo. S»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4890 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10687 ms
+
+> narrativa
+> La piedra de obsidiana cede ante la observación; al acercarse a los glifos, el patrón discordante revela una falla rítmica, un punto de presión donde la energía violeta vacila. El mecanismo de la cámara circular se siente ahora como una maquinaria orgánica que respira, y los muros, que se deslizan implacablemente hacia el centro, dejan un espacio cada vez más exiguo, zumbando con una frecuencia que hace vibrar los dientes.
+> La entidad orgánica se encoge sobre sí misma, evitando cualquier contacto con las paredes mientras observa con horror el avance de las inscripciones. Con una voz quebrada y acelerada, exclama: "¡No hay tiempo para 'buscar'! Mira cómo se desplazan, están cerrando el ciclo. Si no lo detienes ahora, no habrá lugar donde pararse para pensar."
+> mecanica
+> Investigación: Éxito (15 vs CD 10). Has localizado el punto débil del mecanismo en el flujo de los glifos.
+> presion
+> El anillo opresivo continúa cerrándose. Si no actúas sobre el punto débil inmediatamente, el espacio libre desaparecerá y quedaréis atrapados contra los muros de obsidiana.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3472 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.knowledge
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Investigación, Éxito
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 226 — 211/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2111 ms
+
+> "¡No temas, que yo me encargo!"
+> Me lanzo hacia el punto donde la energía vacila e intento golpear el mecanismo con fuerza para romper el ciclo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 14+4=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3879 ms): «¡SÍ! ¡DALE CON TODO!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  8283 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9203 ms
+
+> narrativa
+> El impacto es certero y devastador. La cámara circular se fragmenta en un estruendo de cristal negro cuando el punto de presión estalla en una descarga violeta, liberando una onda de choque que detiene en seco el avance de los muros. El espacio queda congelado en un equilibrio precario, suspendido entre el silencio repentino y el brillo de miles de esquirlas de obsidiana que flotan en el aire.
+> La entidad orgánica, encogiéndose aún más contra el suelo mientras observa el impacto con los ojos fijos en el punto de presión, lanza un grito que mezcla el pánico con una chispa de esperanza: "¡SÍ! ¡DALE CON TODO!".
+> mecanica
+> Atletismo: Éxito (18 vs CD 10). El mecanismo ha sido destruido y el cierre de la cámara se ha detenido.
+> presion
+> Aunque los muros se han detenido, la estructura está inestable; el equilibrio es precario y cualquier vibración fuerte podría provocar el colapso total del techo de obsidiana.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3137 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta cámara circular · location.state = destroyed
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5241: cámara circular.state = destroyed
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'location', 'entity_id': 'Cámara de Obsidiana', 'field': 'descripcion', 'value': 'Cámara circular con muros de obsidiana fracturados y glifos violetas apagados tras el impacto.'}
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 227 — 212/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2222 ms
+
+> "¡Resiste! ¡Voy a sacarte de aquí!"
+> Me acerco rápidamente a la entidad orgánica para ayudarla a levantarse y ponerla a salvo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3648 ms): «¡No me importa el techo! ¡Sácame de aquí, rápido!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3064 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12111 ms
+
+> narrativa
+> El intento de levantar a la criatura fracasa; el suelo agrietado cede bajo el peso del movimiento brusco y el impulso se pierde en un resbalón torpe sobre la obsidiana pulida. El aire, saturado de esquirlas negras que flotan como ceniza gélida, vibra con un zumbido sordo mientras el techo, suspendido en un equilibrio agónico, deja escapar un crujido metálico que resuena en toda la cámara circular.
+> La entidad orgánica no intenta ayudarse, presa de un terror ciego. Se aferra con desesperación a tu brazo, temblando violentamente mientras mira hacia arriba con pánico, ignorando cualquier precaución: "¡No me importa el techo! ¡Sácame de aquí, rápido!".
+> mecanica
+> Atletismo: Fallo (9 vs CD 10). No has logrado poner a salvo a la entidad y la inestabilidad del terreno ha dificultado la maniobra.
+> presion
+> El techo de obsidiana ha comenzado a ceder; cada segundo de vacilación acerca la cámara al colapso total, enterrando todo bajo toneladas de cristal negro.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3902 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta cámara circular · location.state = damaged
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5244: cámara circular.state = damaged
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 228 — 213/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3404 ms
+
+> "¡Cálmate, que te sacaré de aquí!"
+> Sujeto con fuerza a la criatura para evitar que se resbale y trato de levantarla una vez más con un impulso coordinado.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4469 ms): «¡Sácame ya! ¡Sácame!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5215 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11602 ms
+
+> narrativa
+> El impulso es coordinado y firme esta vez; el agarre se vuelve sólido y la fuerza bruta vence la inercia del terreno resbaladizo, arrancando a la criatura del borde del abismo justo a tiempo. Sobre vosotros, el techo de obsidiana se rinde finalmente, fracturándose en geometrías imposibles que desploman una lluvia de astillas negras, cortando el aire con un silbido gélido mientras el suelo continúa deslizándose hacia el vacío central.
+> La entidad orgánica, lejos de relajarse al sentir el rescate, se aferra a tu brazo con una fuerza espasmódica, clavando los dedos en tu piel mientras tiembla violentamente. Con la voz rota por el pánico, lanza un grito ahogado que resuena entre los derrumbes: "¡Sácame ya! ¡Sácame!".
+> mecanica
+> Atletismo: Éxito (14 vs CD 10). Has logrado levantar a la entidad y ponerla en una posición segura antes del colapso inmediato.
+> presion
+> La cámara circular se está desintegrando; el camino por el que habéis entrado comienza a cerrarse bajo el peso de los escombros de obsidiana.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3794 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · life_saved
+  ✓ delta cámara circular · location.state = destroyed
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5249: entidad orgánica affinity 100.0 → 100.0  (any)
+     Deuda de sangre. No se olvida.
+  → delta 5250: cámara circular.state = destroyed
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 229 — 214/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3189 ms
+
+> "Tranquilo, ya estás a salvo. No te soltaré."
+> Sujeto con firmeza a la criatura y busco la salida más rápida antes de que el camino se cierre por completo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4518 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14014 ms
+
+> narrativa
+> El intento de avanzar con rapidez se ve truncado por la inestabilidad del terreno. El pasadizo de obsidiana, estrecho y asfixiante, vibra violentamente bajo vuestros pies, haciendo que el suelo se incline peligrosamente hacia el abismo. El aire se vuelve denso, saturado de un polvo negro que nubla la vista y de fragmentos cortantes que silban al caer, convirtiendo cada paso en una lucha contra la gravedad y el entorno.
+> La entidad orgánica, presa del pánico, no ofrece ayuda en el desplazamiento; se limita a aferrarse con desesperación, su cuerpo temblando mientras sus ojos buscan frenéticamente una salida que parece alejarse entre los derrumbes. El camino se estrecha y la pendiente se vuelve más agresiva, dificultando cualquier intento de progresión coordinada.
+> mecanica
+> Atletismo: Fallo (9 vs CD 10). No habéis logrado encontrar una salida rápida; el terreno inestable os ha frenado.
+> presion
+> El pasadizo sigue colapsando y la inclinación hacia el abismo aumenta; si no encontráis un punto de apoyo sólido, el suelo cederá bajo vuestro peso.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1506 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 230 — 215/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2875 ms
+
+> "¡Sujétate fuerte, no te sueltes!"
+> Intento buscar alguna grieta o saliente en las paredes de obsidiana para anclarme y evitar que caigamos al abismo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4250 ms): «¡No me sueltes! ¡Por favor, no me sueltes!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1029 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11895 ms
+
+> narrativa
+> Tus dedos encuentran una hendidura profunda en la obsidiana, una fractura natural en la piedra negra que permite anclar el peso de ambos con firmeza. El agarre es sólido, deteniendo el deslizamiento hacia el vacío justo cuando el suelo bajo vuestros pies vuelve a sacudirse con una violencia sorda.
+> La entidad orgánica, sintiendo la estabilidad del anclaje, se aferra con una fuerza casi dolorosa al brazo, enterrando los dedos en la ropa mientras cierra los ojos con fuerza ante la vibración del suelo. Con la voz quebrada por el terror, lanza un grito ahogado: "¡No me sueltes! ¡Por favor, no me sueltes!".
+> mecanica
+> Atletismo: Éxito (15 vs CD 10). Has logrado anclaros a la pared, estabilizando la posición y evitando la caída.
+> presion
+> El pasadizo sigue vibrando y el polvo negro nubla la visibilidad; aunque estáis anclados, el resto del túnel continúa colapsando a vuestro alrededor, cerrando las rutas de escape.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3377 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · life_saved
+  ⚠ nombres no reconocidos: Atletismo, Tus, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5260: entidad orgánica affinity 100.0 → 100.0  (any)
+     Deuda de sangre. No se olvida.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 231 — 216/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3059 ms
+
+> "Tranquilo, no te soltaré. Estás a salvo conmigo."
+> Sujeto con firmeza a la entidad para que no resbale mientras busco con la mirada algún camino despejado entre el polvo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 6+1=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3632 ms): «No... no me sueltes... por favor, quédate así, no te muevas...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  784 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9708 ms
+
+> narrativa
+> El polvo negro se espesa, convirtiéndose en una cortina opaca que devora las formas del túnel. A pesar del esfuerzo por escudriñar el entorno, la visibilidad es nula; el aire saturado de ceniza y detritos oculta cualquier salida o camino despejado, dejando la incertidumbre como única certeza mientras el suelo sigue latiendo bajo los pies.
+> La entidad orgánica tiembla violentamente, aferrándose a la ropa con un agarre desesperado, casi espasmódico. Mantiene los ojos cerrados y la respiración errática, aferrada a la única ancla que posee en medio del caos. Con un hilo de voz, suplica: "No... no me sueltes... por favor, quédate así, no te muevas...".
+> mecanica
+> Percepción: Fallo (7 vs CD 10). No logras distinguir ninguna ruta de escape entre el polvo.
+> presion
+> El colapso del pasadizo avanza; el polvo que nubla la vista es el preludio de nuevos derrumbes que amenazan con sepultar la grieta donde os encontráis anclados.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2971 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5265: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 232 — 217/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2773 ms
+
+> "No te soltaré, ten valor. Estoy aquí contigo."
+> Sujeto con firmeza a la entidad para que no caiga y trato de palpar las paredes del túnel buscando alguna salida o relieve.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3729 ms): «Siento... siento que me sostienes. No te muevas, por favor... si te alejas, el p»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5153 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13931 ms
+
+> narrativa
+> Tus dedos recorren la piedra fría y húmeda, sorteando irregularidades hasta que encuentran una pared cuya superficie sugiere un conducto de ventilación o una grieta natural que se aleja del punto de colapso. El túnel se estrecha bruscamente, obligando a avanzar casi a gatas mientras el polvo asfixiante sigue cayendo sobre vosotros.
+> La entidad orgánica se aferra con más fuerza, hundiendo los dedos en la tela de tu ropa con un agarre desesperado. Con un susurro quebrado y cargado de una dependencia absoluta, murmura: "Siento... siento que me sostienes. No te muevas, por favor... si te alejas, el polvo me borrará".
+> mecanica
+> Percepción: Éxito (10 vs CD 10). Has localizado una grieta estrecha que ofrece una vía de escape.
+> presion
+> El túnel se vuelve cada vez más angosto y el aire escasea; avanzar a gatas con el peso de la entidad ralentiza el escape mientras el techo sigue cediendo detrás de vosotros.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2735 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Percepción, Tus, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5270: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 233 — 218/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2786 ms
+
+> "No te soltaré, descansa en mí. Vamos a salir de aquí."
+> Sujeto con firmeza a la entidad contra mi cuerpo y trato de arrastrarme hacia la grieta.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 4+4=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 8)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3254 ms): «No me sueltes... por favor, no me sueltes.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6445 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15560 ms
+
+> narrativa
+> La grieta se abre como un tajo irregular en la roca, un pasadizo asfixiante donde las paredes sudan un limo oscuro y el techo desciende hasta rozar la espalda. El aire es rancio y pesado, mientras el estruendo del colapso se amortigua en la distancia, transformándose en un retumbar sordo que hace vibrar los huesos.
+> A pesar del esfuerzo por avanzar, el cuerpo de la entidad se vuelve un lastre inmanejable en el espacio reducido; el intento de arrastrarla hacia la abertura falla, dejándolos atrapados en el cuello del conducto. En ese instante, la criatura se contrae contra el cuerpo del jugador, fundiéndose en un abrazo asfixiante mientras exhala un sollozo mudo y se aferra a la tela con una fuerza casi dolorosa: "No me sueltes... por favor, no me sueltes".
+> mecanica
+> Atletismo: Fallo (8 vs CD 10). No has logrado avanzar hacia la grieta debido al peso y la resistencia del entorno.
+> presion
+> El retumbar sordo se intensifica y el limo de las paredes comienza a filtrarse más rápido; si no logran entrar en la grieta ahora, el siguiente derrumbe sellará la salida.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1250 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 234 — 219/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2875 ms
+
+> "No te soltaré, pequeño, pero debemos movernos ahora mismo"
+> Sujeto con fuerza a la criatura contra mi pecho para que no se deslice y trato de impulsarme con las piernas hacia la abertura de la grieta.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 6+4=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3477 ms): «Tú... tú me llevas. No me dejes atrás.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3820 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15052 ms
+
+> narrativa
+> El impulso de las piernas encuentra finalmente el agarre necesario sobre el suelo resbaladizo, permitiendo que ambos se deslicen hacia adelante justo a tiempo. La grieta se ensancha en una pequeña cavidad natural, un refugio precario de roca fría y húmeda que ofrece un respiro del colapso inminente, aunque el techo sigue siendo bajo y el aire permanece impregnado de aquel limo oscuro.
+> La entidad orgánica se aferra con desesperación, hundiendo sus dedos en la ropa mientras se deja arrastrar, entregando todo su peso al impulso ajeno. Con un hilo de voz que vibra en el pecho, susurra: "Tú... tú me llevas. No me dejes atrás".
+> mecanica
+> Atletismo: Éxito (10 vs CD 10). Habéis logrado entrar en la cavidad antes del derrumbe.
+> presion
+> El refugio es temporal; el retumbar del colapso sigue activo y la estructura de la cavidad no parece lo suficientemente sólida para resistir un sismo mayor.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  8981 ms · 1 eventos · 2 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · life_saved
+  ✓ delta entidad orgánica · npc.location_id = cavidad_natural
+  ✗ campo fuera de lista blanca: character.location_id
+  ✓ creación location: cavidad natural
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → creada: location cavidad natural
+  → delta 5279: entidad orgánica affinity 100.0 → 100.0  (any)
+     Deuda de sangre. No se olvida.
+  ✗ referencia inexistente: location «cavidad_natural»
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 235 — 220/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2304 ms
+
+> "No te soltaré, descansa un momento."
+> Sujeto a la entidad con firmeza para asegurar que esté a salvo y miro hacia arriba, buscando cualquier signo de que la cavidad vaya a ceder.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3215 ms): «No... no me sueltes. Quédate así. Solo un momento más.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7252 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  22440 ms
+
+> narrativa
+> La cavidad de piedra caliza es un espacio opresivo donde el techo gotea un limo viscoso y el suelo de esquisto resbaladizo dificulta cualquier apoyo firme. Mientras sostienes a la entidad, el retumbar del colapso exterior sigue vibrando en las paredes, provocando que pequeños fragmentos de roca se desprendan y caigan rítmicamente sobre vosotros. Al observar la estructura superior, notas que, aunque el techo es bajo y la humedad es constante, no hay grietas críticas inmediatas que sugieran un desplome instantáneo; el refugio es estable por ahora.
+> La entidad orgánica se aferra con fuerza a tu brazo, temblando visiblemente. Su respiración es agitada y errática, buscando el calor de tu cuerpo contra el frío de la roca, mientras susurra con urgencia: "No... no me sueltes. Quédate así. Solo un momento más."
+> mecanica
+> Percepción: Éxito (10 vs CD 10). Confirmas que la cavidad es estable en este momento.
+> presion
+> La vibración del colapso exterior no ha cesado; el estrés estructural acumulado en la roca caliza podría provocar un nuevo derrumbe si el sismo persiste.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3617 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5285: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 236 — 221/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2597 ms
+
+> "Tranquilo, no te soltaré. Estás a salvo ahora."
+> Sigo sosteniendo a la entidad con firmeza para transmitirle seguridad, mientras observo los alrededores en busca de cualquier señal de peligro inminente.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 12+1=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (14239 ms): «No me sueltes... por favor, no me sueltes.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1107 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  38821 ms
+
+> narrativa
+> El abrazo se vuelve un anclaje sólido en medio de la penumbra de la cavidad. La estabilidad del gesto surte efecto y el pánico comienza a remitir, permitiendo que el silencio retorne al espacio, roto únicamente por el goteo constante del limo sobre la piedra.
+> La entidad orgánica se aferra con más fuerza, hundiendo sus dedos en el brazo del jugador; su cuerpo sigue temblando, pero el ritmo de su respiración comienza a sincronizarse con la estabilidad del abrazo mientras susurra: "No me sueltes... por favor, no me sueltes." Al recorrer el entorno con la mirada, no se percibe ninguna nueva amenaza inmediata; el techo de caliza resiste y el espacio se mantiene firme.
+> mecanica
+> Percepción: Éxito (13 vs CD 10). No detectas peligros inminentes en el entorno inmediato.
+> presion
+> Aunque el refugio es estable, el eco del colapso exterior sigue resonando; permanecer demasiado tiempo en la cavidad podría exponerlos a un sismo secundario que comprometa la estructura.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2187 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5295: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 237 — 222/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2410 ms
+
+> "No te soltaré, descansa. Estás a salvo ahora."
+> Mantengo el abrazo mientras busco con la mirada la salida más segura de la cavidad.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 4+1=5
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 5)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3340 ms): «Gracias... No sé qué haría si... si me dejaras aquí.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5886 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17215 ms
+
+> narrativa
+> La cavidad de caliza húmeda se cierra alrededor de ambos, saturando el aire con un denso olor a salitre. Al intentar escudriñar el entorno en busca de una ruta de escape, la vista se pierde en la penumbra y el desorden de las paredes; la única salida es una grieta irregular que deja filtrar una luz pálida y distante, pero los escombros que la obstruyen ocultan cualquier detalle sobre la seguridad del camino.
+> Aferrada con desesperación, la entidad orgánica se apoya con todo su peso contra el pecho del jugador, cerrando los ojos un instante para absorber la seguridad del contacto. Su voz es un hilo quebradizo que se funde con el sonido del goteo: "Gracias... No sé qué haría si... si me dejaras aquí."
+> mecanica
+> Percepción: Fallo (5 vs CD 10). No logras determinar si la salida es segura o si existen peligros ocultos entre los escombros.
+> presion
+> La fragilidad de la estructura es evidente; el tiempo que pasen buscando una salida sin éxito aumenta la probabilidad de que un sismo secundario selle la grieta definitivamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2561 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · life_saved
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5299: entidad orgánica affinity 100.0 → 100.0  (any)
+     Deuda de sangre. No se olvida.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 238 — 223/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2466 ms
+
+> "No temas, no te dejaré atrás. Saldremos de aquí juntos."
+> Limpio el polvo de mis hombros y me pongo en pie para intentar apartar los escombros que bloquean la grieta.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 13+4=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 17)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3183 ms): «Entonces no me sueltes. No me sueltes hasta que veamos el cielo otra vez.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7860 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  51951 ms
+
+> narrativa
+> La caliza claustrofóbica parece ceder ante el esfuerzo, y el caos de fragmentos blancos y polvo grisáceo se desplaza con un crujido seco bajo la fuerza del empuje. A medida que las piedras se apartan, la grieta se ensancha, revelando un tajo irregular en la pared que exhala una brisa fría y pálida, trayendo consigo la promesa del exterior.
+> La entidad orgánica se aferra un segundo más con fuerza antes de soltarte, temblando visiblemente mientras observa cómo empiezas a mover las piedras con un respeto casi religioso. Con la voz aún quebrada, susurra: "Entonces no me sueltes. No me sueltes hasta que veamos el cielo otra vez".
+> mecanica
+> Atletismo: Éxito (17 vs CD 10). Has logrado despejar la obstrucción de la grieta.
+> presion
+> La salida está abierta, pero el goteo rítmico del techo se ha vuelto más errático; el movimiento de las rocas ha despertado una inestabilidad en la cámara que podría provocar un derrumbe si no abandonan la cavidad ahora mismo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4514 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · competence_shown
+  ✓ delta cavidad natural · location.state = damaged
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5312: entidad orgánica affinity 100.0 → 100.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+  → delta 5313: cavidad natural.state = damaged
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 239 — 224/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2128 ms
+
+> "No te soltaré, ten fe."
+> Sujeto con firmeza a la entidad y la ayudo a atravesar la grieta hacia el exterior con rapidez.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 4+4=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 8)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4240 ms): «Tengo fe... tengo fe en ti.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  10490 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  42596 ms
+
+> narrativa
+> El suelo de grava suelta y musgo seco traiciona el paso, resbalando bajo los pies justo cuando el impulso parece ganar terreno. El esfuerzo por atravesar la grieta se vuelve torpe y errático; la falta de equilibrio convierte el avance rápido en un forcejeo contra la inercia y la superficie resbaladiza del desfiladero, que se abre hacia un cielo plomizo y gélido.
+> La entidad orgánica se aferra al brazo con una fuerza desesperada, casi dolorosa, cerrando los ojos mientras se deja arrastrar por la grieta. Coordinando su respiración con cada movimiento para no entorpecer el paso, susurra con una entrega absoluta: "Tengo fe... tengo fe en ti."
+> mecanica
+> Atletismo: Fallo (8 vs CD 10). No has logrado atravesar la grieta con rapidez.
+> presion
+> La inestabilidad de la cámara persiste y el tiempo se agota; cada segundo de vacilación en el terreno resbaladizo aumenta el riesgo de que el techo colapse sobre ambos antes de alcanzar la seguridad del exterior.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4011 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · competence_shown
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5326: entidad orgánica affinity 100.0 → 100.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 240 — 225/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  5182 ms
+
+> "¡Sujétate fuerte, no te soltaré!"
+> Hago un último esfuerzo bruto para impulsarnos fuera de la grieta, ignorando el resbalón y apoyando el peso en mis piernas para arrastrarnos a ambos hacia la salida.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 17+4=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 21)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3860 ms): «¡Sigue... no pares!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  24224 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  42189 ms
+
+> narrativa
+> El esfuerzo bruto rinde frutos cuando las piernas encuentran el anclaje necesario contra la roca, impulsando ambos cuerpos hacia adelante en un último arranque de fuerza. El aire gélido golpea los rostros justo cuando alcanzan un saliente de roca caliza, fría y húmeda, que domina la boca del desfiladero. A espaldas de ambos, un estruendo sordo y definitivo sacude la tierra: la grieta se cierra, sellando el camino y dejando que el viento cortante del valle de piedra gris barra cualquier rastro del caos dejado atrás bajo un cielo plomizo.
+> La entidad orgánica aprieta el agarre contra el brazo, dejándose arrastrar sin oponer resistencia mientras recupera el aliento. Con el rostro aún pegado al hombro, en una entrega agitada y desesperada, exclama: "¡Sigue... no pares!".
+> mecanica
+> Atletismo: Éxito (21 vs CD 10). Habéis logrado salir de la grieta antes del colapso.
+> presion
+> El valle es un terreno expuesto y hostil; sin refugio inmediato contra el viento cortante y la intemperie, el agotamiento físico empezará a pasar factura rápidamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2950 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · life_saved
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5334: entidad orgánica affinity 100.0 → 100.0  (any)
+     Deuda de sangre. No se olvida.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 241 — 226/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3771 ms
+
+> "Tranquila, ya estamos a salvo. No te soltaré."
+> Sigo caminando con paso firme, sosteniendo a la criatura para que no caiga mientras busco con la mirada algún lugar donde cubrirnos del viento.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 4+1=5
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 5)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4576 ms): «No me sueltes... por favor, no me sueltes.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  11613 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  51156 ms
+
+> narrativa
+> El horizonte es una línea borrosa de gris sobre gris, donde el cielo plomizo se funde con un valle de piedra desolado. El viento gélido azota con saña las salientes calizas y los depósitos de grava, levantando nubes de polvo que ciegan la vista y convierten cualquier intento de exploración en una lucha contra la corriente de aire. No hay refugio a la vista; solo la inmensidad vacía de un terreno hostil que parece rechazar cualquier forma de vida.
+> La entidad orgánica se aferra con fuerza a tu ropa, temblando no solo por el frío, sino por la descarga de adrenalina. Su respiración es errática y su voz suena quebrada, casi un susurro contra tu cuello mientras se funde en un ruego: "No me sueltes... por favor, no me sueltes".
+> mecanica
+> Percepción: Fallo (5 vs CD 10). No logras divisar ningún refugio ni punto de interés en el valle.
+> presion
+> La exposición prolongada al viento gélido y la falta de un refugio visible están agotando vuestras reservas térmicas; el frío empezará a entumecer vuestros movimientos muy pronto.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1137 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 242 — 227/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3941 ms
+
+> "Tranquilo, no te soltaré. Estás a salvo conmigo."
+> Rodeo a la criatura con mi capa para protegerla del viento y camino con paso firme buscando cualquier grieta en la roca que nos sirva de abrigo.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Supervivencia: 9+1=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (7141 ms): «No... no me sueltes... Promételo. Por favor, prométemelo.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7732 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  64277 ms
+
+> narrativa
+> El camino asciende con esfuerzo hacia una pared de caliza erosionada, donde el viento parece golpear con más fuerza antes de ceder. Entre la piedra blanca y gastada, una grieta estrecha y profunda se abre paso, ofreciendo un refugio súbito y silencioso que corta de raíz el azote del aire gélido.
+> Al sentir la protección de la capa, la entidad orgánica se aferra con más fuerza a la tela, hundiéndose en el calor del cuerpo del jugador mientras emite un pequeño sollozo ahogado contra su pecho. Con un tono desesperado, casi un ruego, susurra: "No... no me sueltes... Promételo. Por favor, prométemelo".
+> mecanica
+> Supervivencia: Éxito (10 vs CD 10). Has localizado un refugio natural adecuado para resguardaros del clima.
+> presion
+> Aunque habéis encontrado abrigo, el frío ha calado profundamente; si no lográis generar calor en el interior de la grieta, el entumecimiento empezará a afectar vuestra capacidad de reacción.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  6499 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta entidad_organica · npc.location_id = cavidad_natural
+  ⚠ nombres no reconocidos: Supervivencia, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: entidad_organica
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 243 — 228/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3375 ms
+
+> "No te soltaré, tienes mi palabra. Estás a salvo ahora."
+> Sujeto a la criatura contra mi pecho para darle todo el calor posible y busco rápidamente madera seca o material combustible en los alrededores de la grieta.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 2+1=3
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 3)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3820 ms): «...Gracias.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7453 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  54850 ms
+
+> narrativa
+> La grieta es una hendidura estrecha de paredes calizas y rugosas que se hunde unos metros en la roca blanca. El suelo, compuesto de piedra compacta y arena pálida, se extiende seco y estéril, despojado de cualquier rastro de madera, vegetación o material que pueda alimentar una llama. No hay nada que recolectar en el vacío mineral del refugio.
+> La entidad orgánica, ajena a la inutilidad de la búsqueda, se aferra a tu ropa con dedos temblorosos. Cierra los ojos y apoya la mejilla contra tu pecho mientras exhala un suspiro largo y trémulo, dejándose llevar por el calor humano. "...Gracias", susurra con una entrega absoluta, refugiándose en el único fuego disponible.
+> mecanica
+> Percepción: Fallo (3 vs CD 10). No has encontrado material combustible en el refugio.
+> presion
+> Sin combustible para iniciar un fuego, el frío comienza a ganar terreno; la hipotermia empezará a mermar vuestra resistencia física si no encontráis otra fuente de calor pronto.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3446 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Fallo, Percepción, Sin
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5370: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 244 — 229/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4448 ms
+
+> "No temas, yo te protegeré del frío."
+> Rodeo a la criatura con mis brazos para transmitirle todo el calor de mi cuerpo y la abrazo con fuerza.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Medicina: 11+1=12
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 12)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4946 ms): «No me sueltes... por favor, no me sueltes.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5629 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  61179 ms
+
+> narrativa
+> El abrazo cierra el círculo, convirtiendo el cuerpo en el único muro capaz de contener la gélida corriente que silba en la superficie. En aquel nicho de piedra blanca, donde el silencio se amplifica y el viento cala hasta los huesos, el calor compartido comienza a estabilizar la temperatura de la criatura, frenando el temblor que sacudía sus extremidades.
+> La entidad orgánica se aferra con desesperación a la ropa, hundiendo el rostro en el cuello y temblando violentamente mientras intenta absorber cada grado de calor. En un susurro roto, casi ahogado por el contacto, suplica: "No me sueltes... por favor, no me sueltes."
+> mecanica
+> Medicina: Éxito (12 vs CD 10). Has logrado estabilizar la temperatura corporal de la entidad orgánica, mitigando el riesgo inmediato de hipotermia.
+> presion
+> Aunque la criatura está a salvo por ahora, el frío del refugio sigue siendo implacable; si no encontráis una fuente de calor sostenible o abandonáis la grieta, vuestras propias reservas físicas empezarán a menguar.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3543 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Medicina, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5382: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 245 — 230/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3292 ms
+
+> "No te soltaré, descansa. Estás a salvo ahora."
+> Sigo abrazando a la criatura con fuerza para transmitirle todo mi calor mientras miro a mi alrededor buscando cualquier rastro de combustible o una salida inmediata.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 5+1=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (15641 ms): «...Gracias.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5610 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  44234 ms
+
+> narrativa
+> El nicho de piedra blanca y pulida es un vacío gélido que parece devorar cualquier rastro de energía. A pesar de la mirada atenta, no hay nada en aquel rincón: ni una brizna de combustible, ni restos orgánicos que puedan alimentar un fuego, solo la pureza estéril de una roca que exhala un frío mineral y absoluto mientras el viento aúlla con furia en la entrada.
+> La entidad orgánica exhala un aire que ya no es tan gélido y sus dedos se relajan ligeramente sobre la ropa, aunque sigue anclada al cuerpo como si fuera la única cosa sólida en el universo. En un susurro apenas audible, pronuncia: "...Gracias."
+> mecanica
+> Percepción: Fallo (6 vs CD 10). No logras localizar ninguna fuente de combustible ni salidas alternativas más allá de la entrada principal.
+> presion
+> La piedra blanca continúa absorbiendo el calor corporal de ambos; sin combustible para encender una hoguera, el refugio se está convirtiendo lentamente en una trampa térmica.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4147 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · life_saved
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5396: entidad orgánica affinity 100.0 → 100.0  (any)
+     Deuda de sangre. No se olvida.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 246 — 231/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2988 ms
+
+> "No tienes que agradecer nada, descansa."
+> Me quito la capa y la extiendo con cuidado sobre el cuerpo de la entidad para intentar conservar su calor corporal.
+> {Medicina}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Medicina: 12+1=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (13025 ms): «No... no te despojes de lo tuyo por mí. Te vas a congelar.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4364 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15837 ms
+
+> narrativa
+> La capa cae con un peso protector sobre la figura, creando un refugio improvisado contra la esterilidad del nicho de piedra blanca. El frío mineral, que se filtra en los huesos y parece emanar de las paredes mismas, retrocede un instante ante el gesto, aunque el viento sigue aullando con furia en la entrada del refugio.
+> La entidad orgánica se encoge instintivamente bajo la tela, buscando el calor residual, pero sus manos tiemblan violentamente mientras intenta devolverte la prenda. En un movimiento torpe, intenta dividir el espacio entre ambos para compartir el abrigo, murmurando con voz quebrada: "No... no te despojes de lo tuyo por mí. Te vas a congelar."
+> mecanica
+> Medicina: Éxito (13 vs CD 10). Has estabilizado la temperatura corporal de la entidad, evitando que caiga en un estado crítico de hipotermia.
+> presion
+> Aunque la entidad está estable, ambos están expuestos al frío extremo sin una fuente de calor externa; la resistencia física empezará a mermar si no encuentran una salida o combustible pronto.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5884 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · life_saved
+  ⚠ nombres no reconocidos: Medicina, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5404: entidad orgánica affinity 100.0 → 100.0  (any)
+     Deuda de sangre. No se olvida.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 247 — 232/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4708 ms
+
+> "No te preocupes por mí, amigo. Mi fe y mi voluntad me mantienen firme, pero tú necesitas este calor para sobrevivir."
+> Sujeto la capa con firmeza sobre sus hombros para que no la devuelva y le doy una palmada afectuosa en el brazo.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 5)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (17038 ms): «No... no es justo. No puedes... no puedes simplemente decir eso y esperar que me»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4704 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15942 ms
+
+> narrativa
+> El nicho de piedra blanca se siente ahora más gélido que nunca, un vacío mineral donde el viento aúlla en la entrada y el frío parece devorar cualquier rastro de calor humano. A pesar de la intención, la palmada en el brazo no logra transmitir la seguridad deseada; el gesto cae vacío frente a la fragilidad de la criatura, que reacciona con un ligero espasmo, encogiéndose aún más bajo la tela.
+> La entidad orgánica evita el contacto físico, aunque no se aleja, y clava sus ojos en los tuyos con una mezcla de gratitud y una angustia casi insoportable. "No... no es justo. No puedes... no puedes simplemente decir eso y esperar que me sienta mejor mientras tú tiemblas", murmura con una voz que se quiebra, evidenciando que tus palabras no han servido para calmar su tormento interno.
+> mecanica
+> Persuasión: Fallo (5 vs CD 10). Tu intento de consuelo ha resultado contraproducente, aumentando la ansiedad de la entidad al notar tu propio estado físico.
+> presion
+> La entidad orgánica se siente ahora culpable por tu sacrificio; si no logras estabilizar su estado emocional, su voluntad de cooperar podría quebrarse antes de salir del nicho.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ pifia en Persuasión pero narra éxito
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1405 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Persuasión
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 248 — 233/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3378 ms
+
+> "Tienes razón. No soy un muro de piedra, solo un hombre que quiere ayudarte."
+> Suelto el brazo de la criatura para darle espacio y me arrodillo frente a ella, buscándole la mirada con sinceridad.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 20)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4670 ms): «Entonces... deja de intentar serlo. Solo quédate aquí, donde pueda verte. No me »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3737 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  22346 ms
+
+> narrativa
+> El nicho de piedra blanca, estrecho y gélido, parece comprimir el espacio mientras las paredes pálidas reflejan la luz mortecina y amplifican el aullido del viento que golpea la entrada. Al arrodillarte y reconocer tu propia fragilidad, la tensión en el aire se rompe; el peso de la honestidad cala más hondo que cualquier intento de fortaleza fingida.
+> La entidad orgánica deja de encogerse y su respiración se estabiliza ligeramente. Aunque no busca el contacto físico, mantiene la mirada fija en la tuya con una vulnerabilidad cruda, permitiendo que la sinceridad del momento cree un puente entre ambos. "Entonces... deja de intentar serlo. Solo quédate aquí, donde pueda verte. No me importa el frío, me importa que no te desvanezcas en él", murmura con una voz que ya no se quiebra, sino que ancla la escena en un silencio compartido.
+> mecanica
+> Persuasión: Éxito (20 vs CD 10). Tu honestidad ha resonado con la entidad, estabilizando su estado emocional y fortaleciendo el vínculo.
+> presion
+> El frío del nicho sigue drenando vuestras energías; si no abandonáis la cavidad pronto, el agotamiento físico empezará a mermar vuestra capacidad de reacción.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4432 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · ideal_honored
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5426: entidad orgánica affinity 100.0 → 100.0  (any)
+     Actuaron según lo que él considera correcto.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 249 — 234/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2938 ms
+
+> "No me iré. Me quedaré a tu lado el tiempo que sea necesario."
+> Me mantengo arrodillado junto a la entidad, ofreciéndole mi presencia y calidez. 
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Persuasión: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4673 ms): «Siento... que el aire ya no pesa tanto. Quédate. No te muevas.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  747 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13736 ms
+
+> narrativa
+> La tensión que saturaba el nicho de piedra blanca se disipa, dejando paso a una calma inesperada que parece expandir las paredes gélidas. Al aceptar el silencio y la espera, la barrera invisible entre ambos se desvanece; la entidad orgánica deja de luchar contra el entorno y, por primera vez, sus hombros caen, liberando una carga que parecía sostener desde hace siglos.
+> Su mirada se suaviza, aunque permanece inmóvil; exhala un suspiro largo que se convierte en vaho blanco, relajando los hombros por primera vez. "Siento... que el aire ya no pesa tanto. Quédate. No te muevas", murmura, anclando su confianza en esa promesa de compañía.
+> mecanica
+> Persuasión: Éxito (13 vs CD 10). Has logrado estabilizar la confianza de la entidad, consolidando un vínculo de seguridad.
+> presion
+> El frío persistente del nicho sigue consumiendo vuestras fuerzas; prolongar la estancia sin buscar refugio o calor empezará a provocar agotamiento físico.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3490 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · promise_made
+  ⚠ nombres no reconocidos: Persuasión, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5430: entidad orgánica affinity 100.0 → 100.0  (mid)
+     Lo anota sin mayor ceremonia.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 250 — 235/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3604 ms
+
+> "No me moveré, te lo prometo. Estoy contigo."
+> Me quedo inmóvil a su lado, transmitiéndole calidez y seguridad con mi presencia. {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Perspicacia: 4+3=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (19352 ms): «Gracias. Por primera vez... el silencio no se siente como un vacío que me devora»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4417 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13295 ms
+
+> narrativa
+> El nicho de piedra blanca se transforma en un refugio compartido, aunque el frío mineral sigue calando los huesos con una persistencia implacable. El silencio, que antes resultaba asfixiante, se despliega ahora como una manta pesada y gélida que envuelve a ambos en una quietud absoluta.
+> La entidad orgánica cierra los ojos lentamente, dejando que su cabeza se incline ligeramente hacia ti, entregándose por completo a la quietud del momento. Con un tono cargado de una paz frágil, susurra: "Gracias. Por primera vez... el silencio no se siente como un vacío que me devora, sino como un lugar donde puedo descansar". A pesar de tu intención de leer más allá de sus palabras, el misterio de su esencia permanece cerrado, blindado por la misma calma que ahora los rodea.
+> mecanica
+> Perspicacia: Fallo (7 vs CD 10). No logras percibir ninguna intención oculta ni detalle adicional sobre el estado interno de la entidad.
+> presion
+> La inmovilidad y el frío extremo comienzan a pasar factura; si no buscáis una fuente de calor pronto, el entumecimiento de los miembros derivará en un agotamiento físico severo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5136 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · promise_made
+  ⚠ nombres no reconocidos: Fallo, Perspicacia
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5438: entidad orgánica affinity 100.0 → 100.0  (mid)
+     Lo anota sin mayor ceremonia.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 251 — 236/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3197 ms
+
+> "No permitiremos que el frío nos venza. Debemos movernos."
+> Me pongo en pie y busco cualquier señal de salida o una fuente de calor cercana en los alrededores del nicho.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 5+1=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (12150 ms): «Tienes razón. No podemos quedarnos aquí hasta que el hielo nos convierta en part»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5751 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14981 ms
+
+> narrativa
+> La mirada recorre las paredes de piedra caliza pálida del nicho, pero la superficie es lisa, desprovista de cualquier marca, grieta o indicio de calor que pueda ofrecer un respiro. Más allá de la estrecha hendidura, el pasillo se desvanece en una penumbra grisácea donde el aire parece espesarse, volviéndose más denso y cortante, ocultando cualquier salida probable bajo un manto de frío mineral.
+> La entidad orgánica abre los ojos con lentitud, aunque sus movimientos son rígidos por el frío. Se incorpora con un esfuerzo visible, apoyándose en la pared del nicho para ganar equilibrio mientras te sigue con la mirada y asiente. "Tienes razón. No podemos quedarnos aquí hasta que el hielo nos convierta en parte de la piedra", afirma con voz gélida.
+> mecanica
+> Percepción: Fallo (6 vs CD 10). No encuentras ninguna salida evidente ni fuentes de calor en el entorno inmediato.
+> presion
+> El frío se intensifica en el pasillo gris; cada minuto de indecisión acerca el entumecimiento crítico de las extremidades y el agotamiento físico.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1167 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 252 — 237/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3384 ms
+
+> "No permitáis que el miedo nos paralice. Seguiremos avanzando por el pasillo, pues quedarse es morir."
+> Ayudo a la entidad a levantarse por completo y comienzo a caminar hacia la penumbra grisácea.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 16+1=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 17)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (7253 ms): «Entonces no perdamos más tiempo. Si el camino es la única salida, que así sea.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1585 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11709 ms
+
+> narrativa
+> El apoyo es firme y efectivo; la entidad orgánica se incorpora con un movimiento brusco pero agradecido, estabilizando su peso antes de caminar pegada a ti, casi buscando el calor corporal mientras se adentra en la penumbra. "Entonces no perdamos más tiempo. Si el camino es la única salida, que así sea", sentencia con una determinación que corta el aire gélido.
+> A medida que avanzáis por el pasillo de piedra caliza, la agudeza de tus sentidos vence a la oscuridad. Donde antes solo había un manto grisáceo, ahora distingues el relieve de la roca y el patrón de las corrientes de aire que fluyen desde el fondo, revelando que el camino, aunque estrecho, permanece despejado y conduce hacia una salida tangible.
+> mecanica
+> Percepción: Éxito (17 vs CD 10). Logras orientarte y localizar la dirección correcta a través de la penumbra.
+> presion
+> El avance es constante, pero el frío mineral sigue erosionando vuestras fuerzas; cualquier desvío o parada prolongada reactivará la hipotermia.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4066 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 253 — 238/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2939 ms
+
+> "No temas, yo te sostengo. Mantengamos el paso firme."
+> Sigo caminando con paso decidido, manteniendo a la entidad pegada a mi costado para darle calor mientras avanzo hacia la salida.
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  sin tiradas declaradas
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=False · pnj_que_responden=['entidad orgánica'] · altera_estado=False · peso=conversacional
+
+### [5] ÁRBITRO
+
+  no requerido este turno
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5011 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10780 ms
+
+> narrativa
+> El pasillo se ensancha ligeramente al alcanzar una galería de piedra caliza, donde las paredes lucen vetas de cuarzo que atrapan y reflejan la escasa luz en destellos gélidos. A vuestro costado, la entidad orgánica se mantiene en silencio, aferrada a tu brazo y adaptando su zancada a la tuya, respondiendo a tu apoyo con una presión constante y muda.
+> Al fondo de la estancia, un arco irregular rompe la monotonía de la roca. A través de él se filtra una brisa más húmeda y un resplandor pálido que baña el suelo, marcando con claridad el camino hacia la salida.
+> mecanica
+> (Sin tiradas en este turno)
+> presion
+> El aire húmedo del arco sugiere un cambio de entorno, pero la inercia del frío mineral persiste; detenerse ahora para descansar podría hacer que el cuerpo de la entidad, ya debilitado, colapse antes de alcanzar el exterior.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2506 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Sin
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 254 — 239/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3213 ms
+
+> "Tranquilidad, ya casi estamos fuera. No te rindas ahora."
+> Sigo caminando con paso firme hacia el arco, manteniendo el apoyo al cuerpo de la entidad para asegurar que no caiga.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 9+4=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (20010 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5191 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12377 ms
+
+> narrativa
+> El paso firme y el apoyo constante dan resultado, logrando que el trayecto final sea seguro. Al cruzar el arco, el camino desemboca en una terraza natural de roca erosionada que asoma a un valle sumido en una bruma perpetua; allí, la vegetación es pálida y los árboles se yerguen como dedos esqueléticos que arañan un cielo gris.
+> La entidad orgánica no emite sonido alguno, pero responde a las palabras con un espasmo breve y desesperado mientras aprieta el brazo, coordinando su respiración con la zancada del otro para no quedar rezagada en el borde del precipicio.
+> mecanica
+> Atletismo: Éxito (13 vs CD 10).
+> presion
+> La bruma del valle oculta el terreno más adelante y el frío cala profundamente; si no encuentran un refugio o una fuente de calor pronto, el agotamiento de la entidad orgánica se volverá crítico.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  56019 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 255 — 240/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3830 ms
+
+> "Tranquila, ya estamos a salvo. No te soltaré."
+> Sigo sujetando a la entidad con firmeza mientras escaneo el entorno en busca de alguna cueva o lugar resguardado del viento y el frío.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 12+1=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (6255 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4687 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  156277 ms
+
+> narrativa
+> La mirada recorre el horizonte de piedra y niebla hasta que, entre los dedos esqueléticos de los árboles pálidos que custodian el borde, se revela una hendidura en la pared del acantilado. Es una abertura estrecha y oscura, una grieta natural que ofrece el primer refugio tangible contra el viento gélido que azota la terraza.
+> La entidad orgánica no responde con palabras, limitándose a un "...", mientras exhala un suspiro tembloroso que se condensa en el aire frío. Aprieta el agarre sobre el brazo, no por miedo a caer, sino como quien se aferra a la única fuente de calor y seguridad en un mundo gris.
+> mecanica
+> Percepción: Éxito (13 vs CD 10).
+> presion
+> El viento comienza a arreciar, empujando la bruma hacia la terraza; si no se apresuran a entrar en la hendidura, el frío empezará a entumecer los músculos y a nublar los sentidos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  16435 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación location: hendidura en la pared del acantilado
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location hendidura en la pared del acantilado
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 256 — 241/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2781 ms
+
+> "No temas, estoy contigo. Vamos a refugiarnos en esa grieta."
+> Sujeto con firmeza a la entidad para darle seguridad y la guío rápidamente hacia la abertura del acantilado.
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  sin tiradas declaradas
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=False · pnj_que_responden=['entidad orgánica'] · altera_estado=False · peso=conversacional
+
+### [5] ÁRBITRO
+
+  no requerido este turno
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3520 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3894 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11910 ms
+
+> narrativa
+> La hendidura se revela como una garganta estrecha y húmeda que se hunde en la roca fría, tragando la luz del exterior. El silencio aquí dentro es sepulcral, una quietud pesada que solo es interrumpida por el goteo rítmico del agua filtrándose por las paredes y el eco lejano del viento, que ahora golpea la entrada como un animal desesperado por entrar.
+> La entidad orgánica no emite sonido alguno, limitándose a un "...", mientras inclina la cabeza hacia el hombro del jugador. Se deja guiar con una docilidad absoluta, coordinando sus pasos en un silencio dependiente, como si el contacto físico fuera el único hilo que la mantiene anclada a la realidad.
+> mecanica
+> N/A
+> presion
+> La oscuridad de la grieta es densa y el terreno se vuelve irregular; avanzar sin una fuente de luz adecuada podría provocar un tropiezo o dejarlos vulnerables ante lo que pueda habitar en las profundidades de la roca.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  41015 ms · 0 eventos · 2 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta entidad orgánica · npc.location_id = hendidura en la pared del acantilado
+  ✗ campo fuera de lista blanca: character.location_id
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → delta 5482: entidad orgánica.location_id = hendidura en la pared del acantilado
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 257 — 242/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3015 ms
+
+> "No temas, yo te guiaré."
+> Saco mi antorcha y la enciendo con cuidado para iluminar el camino mientras sigo avanzando con la entidad.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 13+1=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4321 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  9596 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  21312 ms
+
+> narrativa
+> La llama de la antorcha cobra vida, proyectando sombras danzantes sobre las paredes de caliza húmeda que se ciernen estrechas sobre vosotros, obligándoos a avanzar en fila. Bajo vuestros pies, el suelo es una traicionera mezcla de barro y piedra resbaladiza, donde pequeños charcos actúan como espejos negros que reflejan la luz vacilante mientras os adentráis en la garganta de roca.
+> Ante tus palabras, la entidad orgánica aprieta ligeramente el agarre sobre tu brazo, acercándose más a la fuente de luz de la antorcha mientras exhala un suspiro casi imperceptible. Se limita a un "...", manteniendo el silencio, pero su cuerpo parece relajarse ante la seguridad de tu guía.
+> mecanica
+> Percepción: Éxito (14 vs CD 10). Has logrado evaluar la estabilidad del terreno y las paredes del túnel mientras avanzáis.
+> presion
+> A medida que el túnel se estrecha, el aire se vuelve más pesado y el goteo del agua se intensifica; cualquier descuido en el terreno resbaladizo podría provocar una caída que extinga la antorcha, dejándolos a merced de la oscuridad absoluta.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  15316 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · competence_shown
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5489: entidad orgánica affinity 100.0 → 100.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 258 — 243/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4083 ms
+
+> "No temas, yo te sostengo. Caminaremos con cuidado."
+> Mantengo el brazo firme para dar apoyo a la entidad y avanzo lentamente, asegurándome de pisar solo en las zonas que he comprobado que son estables.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 12+1=13
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 13)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3020 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3122 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9491 ms
+
+> narrativa
+> El avance es seguro y pausado; cada paso encuentra el apoyo firme de la roca estable, evitando los resbalones del barro. El túnel se abre finalmente en una pequeña cámara natural donde el techo gotea rítmicamente sobre una superficie de piedra lisa, formando un estanque sombrío que devuelve un reflejo distorsionado de la antorcha.
+> La entidad orgánica cierra los ojos un instante, apoyando la mejilla contra tu hombro mientras se deja guiar, sincronizando su respiración con tus pasos. Se limita a un "...", sumida en un silencio absoluto que denota una confianza ciega en tu protección.
+> mecanica
+> Percepción: Éxito (13 vs CD 10). Has logrado navegar la zona resbaladiza sin incidentes y alcanzar la cámara natural.
+> presion
+> El eco del goteo es lo único que rompe el silencio, pero la quietud de la cámara es engañosa; permanecer demasiado tiempo expuestos en este espacio abierto podría atraer la atención de aquello que acecha en las profundidades del sistema de cuevas.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  45779 ms · 1 eventos · 2 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ✓ delta entidad orgánica · npc.location_id = cavidad natural
+  ✗ campo fuera de lista blanca: character.location_id
+  ⚠ nombres no reconocidos: Percepción, Éxito
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → delta 5496: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+  → delta 5497: entidad orgánica.location_id = cavidad natural
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 259 — 244/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2605 ms
+
+> "No temas, estoy contigo."
+> Sigo protegiendo a la entidad mientras observo los alrededores de la cámara buscando cualquier señal de peligro o una salida.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 17+1=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3291 ms): «Lo sé.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5595 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9429 ms
+
+> narrativa
+> La mirada recorre la cámara circular de piedra húmeda, donde el goteo rítmico se amplifica en el vacío, revelando con claridad la disposición del lugar. Tres aberturas rompen la monotonía de los muros: el camino por el cual han llegado, un descenso abrupto que se hunde en una oscuridad absoluta y un pasillo estrecho que exhala una corriente de aire gélido. No hay señales inmediatas de peligro, solo la fría arquitectura de la roca.
+> La entidad orgánica, sin abrir los ojos, mantiene la mejilla apoyada en el hombro y aprieta ligeramente el agarre de su ropa, buscando refugio en ese contacto. Con un susurro apenas audible, responde: "Lo sé."
+> mecanica
+> Percepción: Éxito (18 vs CD 10). Has identificado todas las salidas de la cámara y confirmado que no hay amenazas visibles en el perímetro inmediato.
+> presion
+> El aire gélido que emana del pasillo estrecho sugiere que algo, o alguien, podría estar moviéndose en las profundidades, y el eco de sus pasos en la cámara circular es una señal demasiado clara para cualquier depredador que aceche en los túneles.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  6390 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 260 — 245/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3149 ms
+
+> "No temas, yo te protejo."
+> Acomodo a la entidad con suavidad y me coloco frente a ella, mirando hacia el pasillo gélido con la mano en el pomo de mi espada.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 18+1=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 19)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5012 ms): «Entonces no te muevas. Quédate así un momento más.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6412 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11129 ms
+
+> narrativa
+> La vigilancia se despliega con precisión sobre la cámara circular. El goteo constante de las paredes es el único sonido que rompe el silencio, mientras la mirada confirma que el perímetro inmediato está despejado y que no hay amenazas acechando desde las sombras de las tres aberturas. Sin embargo, al posicionarse frente al pasillo gélido, el aire que fluye hacia el interior cambia; ahora arrastra un olor metálico y rancio, una fragancia pesada que no estaba allí hace un instante.
+> La entidad orgánica se aferra con un poco más de fuerza a la ropa del jugador, cerrando los ojos con fuerza y exhalando un suspiro tembloroso que se condensa en el aire frío. Con una voz que aún vibra por la fragilidad, suplica: "Entonces no te muevas. Quédate así un momento más."
+> mecanica
+> Percepción: Éxito (19 vs CD 10). El área inmediata está segura, pero has detectado un cambio en el olor del aire proveniente del pasillo.
+> presion
+> El rancio olor metálico sugiere que algo orgánico y posiblemente en descomposición se ha acercado al pasillo, reduciendo la distancia entre la seguridad de la cámara y una amenaza invisible.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  15467 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5510: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 261 — 246/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3260 ms
+
+> "Tranquila, no me moveré. Estás a salvo conmigo."
+> Pongo una mano reconfortante sobre el hombro de la criatura mientras mantengo la vista fija en la oscuridad del pasillo, atento a cualquier movimiento.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 8+1=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3711 ms): «No me sueltes... Por favor, no me sueltes.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  48037 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  15040 ms
+
+> narrativa
+> El silencio de la cámara circular se vuelve denso, interrumpido solo por el rítmico goteo de las paredes húmedas. A pesar de la vigilancia, la oscuridad del pasillo gélido permanece impenetrable; el hedor a sangre vieja y putrefacción que emana de él se intensifica, pero no hay ningún movimiento detectable, ninguna silueta que revele qué es lo que acecha en el frío. La tensión se mantiene suspendida, invisible y muda, mientras el aire rancio parece ganar terreno sobre el espacio de piedra.
+> Sintiendo el contacto, la entidad orgánica se presiona más contra el cuerpo del jugador, buscando desesperadamente el calor de su mano en el hombro mientras mantiene los ojos cerrados y tiembla ligeramente. Con un ruego quebrado, susurra: "No me sueltes... Por favor, no me sueltes."
+> mecanica
+> Percepción: Fallo (9 vs CD 10). No logras distinguir ninguna amenaza ni movimiento en la oscuridad del pasillo.
+> presion
+> La falta de visibilidad y el aumento del hedor sugieren que lo que sea que esté en el pasillo se ha posicionado en un punto ciego, esperando el momento justo para atacar o avanzar.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  13619 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5522: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 262 — 247/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  25192 ms
+
+> "No temas, estoy contigo. No te soltaré."
+> Aprieto el hombro de la criatura para transmitirle seguridad y me posiciono frente a ella, interponiéndome entre el ser y la oscuridad del pasillo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 14+1=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  11225 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11227 ms
+
+> narrativa
+> El gesto firme y la protección física surten efecto; la entidad orgánica se aquieta, refugiándose en la sombra que proyectas sobre ella. Al concentrar la vista y los sentidos, la incertidumbre del pasillo se disipa: el ojo logra perforar la penumbra y detectar el origen de la vibración. Hay algo allí, una silueta que se funde con la piedra, pero ahora es visible, revelando su posición exacta antes de que decida avanzar.
+> La cámara circular se siente ahora como una isla de piedra rodeada por un mar de sombras. El pasillo gélido, desde el cual emana el hedor a putrefacción, permanece mudo, pero la oscuridad vibra con una presencia que ya no es solo una intuición, sino una certeza tangible.
+> mecanica
+> Percepción: Éxito (15 vs CD 10). Has logrado localizar la amenaza en la oscuridad.
+> presion
+> La entidad ha recuperado la calma, pero la criatura en el pasillo ha detectado que ha sido descubierta; el tiempo de acecho ha terminado y el ataque es inminente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  19488 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5530: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 263 — 248/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2991 ms
+
+> "No temas, pequeña. Yo te protegeré."
+> Me coloco frente a la entidad orgánica, desenvaino mi espada y levanto el escudo para cubrirla por completo mientras espero el impacto.
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  sin tiradas declaradas
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=False · pnj_que_responden=['entidad orgánica'] · altera_estado=False · peso=conversacional
+
+### [5] ÁRBITRO
+
+  no requerido este turno
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4727 ms): «...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  15214 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9453 ms
+
+> narrativa
+> La cámara circular se abre a un pasillo de piedra húmeda donde la penumbra es densa y el aire pesa. Desde el fondo de ese corredor, una silueta pálida y alargada se desprende súbitamente de la pared; el sonido metálico y seco de unas garras raspando el suelo precede el impulso violento de la criatura, que se lanza al ataque con una rapidez depredadora.
+> Tras la seguridad del escudo, la entidad orgánica se encoge contra tu espalda, aferrándose a tu capa con dedos temblorosos. No emite sonido alguno, pero su respiración se vuelve errática y superficial, siguiendo el ritmo de tu propia tensión mientras el monstruo acorta la distancia.
+> mecanica
+> Ninguna.
+> presion
+> La criatura impactará contra tu defensa en el próximo instante; cualquier vacilación en la posición del escudo dejará a la entidad orgánica expuesta al ataque.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  16001 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Ninguna
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5537: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 264 — 249/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3690 ms
+
+> "¡No temas, estoy aquí!"
+> Me planto firmemente, apretando el escudo contra mi cuerpo para formar un muro infranqueable entre la criatura y quien se refugia a mi espalda.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 20+4=24  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 24)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5844 ms): «... ¡No me sueltes!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3970 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13111 ms
+
+> narrativa
+> El impacto de la criatura contra el escudo es seco y brutal, pero la posición es perfecta; el golpe rebota con una fuerza que sacude el aire, dejando al monstruo desequilibrado frente a un muro de acero inamovible. El pasillo de piedra húmeda, estrecho y opresivo, devuelve el eco del choque mientras las paredes cubiertas de limo oscuro reflejan la luz en hilos aceitosos, extendiéndose hacia una oscuridad absoluta donde aún persisten arañazos lejanos.
+> Tras la protección del escudo, la entidad orgánica se encoge, hundiendo los dedos en la tela de la capa con un agarre desesperado. Con un susurro ahogado y casi imperceptible, logra articular: "... ¡No me sueltes!".
+> mecanica
+> Atletismo: Éxito (24 vs CD 10). La posición es imperturbable.
+> presion
+> La criatura está aturdida por el impacto, pero el pasillo es demasiado estrecho para maniobrar con facilidad; cualquier movimiento brusco hacia atrás podría empujar a la entidad orgánica hacia las paredes resbaladizas o dejar un flanco abierto.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  14666 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5549: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 265 — 250/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3480 ms
+
+> "Tranquilo, no te soltaré."
+> Sujeto la entidad con firmeza contra mi escudo para protegerla, mientras busco con la mirada cualquier otra amenaza que aceche en la oscuridad del pasillo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 14+1=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5450 ms): «Gracias...»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1369 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12725 ms
+
+> narrativa
+> El agarre es firme y seguro, creando un refugio de acero y tela contra el frío del pasillo. La entidad orgánica aprieta el agarre sobre la capa, pegando su cuerpo aún más al escudo, respirando con dificultad contra la armadura mientras sus ojos escanean nerviosamente la oscuridad lateral. Con un hilo de voz que tiembla por el alivio y el miedo, murmura: "Gracias...".
+> La mirada recorre el corredor de piedra húmeda, diseccionando las sombras que se retuercen más allá del alcance de la luz. El silencio vuelve a caer sobre el limo aceitoso, pero la tensión permanece vibrando en el aire; no hay señales inmediatas de nuevos atacantes, aunque la oscuridad del pasillo sigue sintiéndose densa, como si el entorno mismo estuviera conteniendo el aliento.
+> mecanica
+> Percepción: Éxito (15 vs CD 10). El perímetro inmediato está despejado.
+> presion
+> La criatura aturdida comienza a recuperarse del impacto. Si no se aprovecha este momento para avanzar o neutralizarla, volverá a cargar en el espacio reducido del pasillo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  17254 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · life_saved
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5553: entidad orgánica affinity 100.0 → 100.0  (any)
+     Deuda de sangre. No se olvida.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 266 — 251/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  5054 ms
+
+> "No temas, estás a salvo conmigo."
+> Sujeto con firmeza a la criatura contra mi escudo para protegerla y aprovecho que el enemigo está aturdido para asestarle un golpe decisivo con mi arma.
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  sin tiradas declaradas
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=False · pnj_que_responden=['entidad orgánica'] · altera_estado=False · peso=conversacional
+
+### [5] ÁRBITRO
+
+  no requerido este turno
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4932 ms): «No me sueltes... por favor, no me sueltes.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  21714 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  20173 ms
+
+> narrativa
+> El acero impacta con un eco seco que retumba en las paredes del pasillo estrecho, donde la piedra húmeda y el limo aceitoso reflejan la luz en destellos turbios. El golpe final silencia a la criatura, dejando que el cuerpo caiga inerte sobre el suelo viscoso mientras la oscuridad densa y asfixiante parece retroceder un instante ante la violencia del cierre.
+> En medio del silencio repentino, la entidad orgánica se aferra con desesperación a la tela de la capa, hundiendo el rostro contra el metal frío del escudo mientras tiembla violentamente. Ignora el cadáver a sus pies, concentrada únicamente en el contacto físico, y suplica con un hilo de voz roto: "No me sueltes... por favor, no me sueltes".
+> mecanica
+> Ataque decisivo: Éxito (Resolución narrativa del golpe final).
+> presion
+> El estruendo del combate ha resonado por el pasillo. Otras presencias en las profundidades, atraídas por el ruido y el olor a sangre, comienzan a converger hacia vuestra posición.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1296 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Ataque, Resolución, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 267 — 252/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  6034 ms
+
+> "Tranquila, no te soltaré. Estás a salvo ahora."
+> Envuelvo a la entidad con mi capa para protegerla y la ayudo a levantarse, mientras me coloco en posición de guardia frente a ella, mirando hacia el pasillo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 19+1=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 20)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5124 ms): «Gracias... gracias.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6598 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  19775 ms
+
+> narrativa
+> La capa cae sobre la pequeña criatura como un manto protector, envolviéndola en un refugio de tela y acero. Mientras se levanta, la entidad orgánica se aferra con fuerza al tejido, refugiándose en el espacio seguro entre el cuerpo y el escudo, y deja escapar un susurro apenas audible: "Gracias... gracias."
+> El pasillo se abre ahora en una intersección en T, bajo un techo bajo de donde cae un goteo constante y rítmico. La victoria es efímera; desde las sombras de los ramales laterales, el silencio ha sido sustituido por el sonido de rascados persistentes y respiraciones húmedas que avanzan con determinación hacia la luz.
+> mecanica
+> Percepción: Éxito (20 vs CD 10). Detectas el movimiento y la respiración de los enemigos antes de que emerjan de las sombras.
+> presion
+> Las criaturas en los ramales laterales están cerrando el cerco. Si no os movéis de la intersección o preparáis una defensa, quedaréis atrapados entre dos frentes.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3262 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5558: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 268 — 253/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4220 ms
+
+> "No temáis, pequeño. Estoy aquí para protegeros."
+> Me coloco firmemente en el centro de la intersección, levantando el escudo para cubrir a la criatura y bloquear el acceso a los ramales.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 17+1=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5658 ms): «No... no me sueltes. Quédate... quédate delante.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6698 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17215 ms
+
+> narrativa
+> El escudo se alza como un muro infranqueable en el centro de la intersección, bloqueando la entrada de los túneles estrechos mientras el goteo rítmico de la piedra húmeda marca el compás de la tensión. Desde la penumbra de los ramales laterales, el sonido de las garras arañando las paredes se intensifica, pero la posición es sólida; el cuello de botella natural ahora juega a vuestro favor, obligando a cualquier amenaza a enfrentarse al acero.
+> La entidad orgánica se encoge aún más bajo la capa, apretando la tela contra su cuerpo mientras sus ojos escudriñan con pánico los pasillos laterales, temblando violentamente. Se aferra a tu presencia como a un ancla en medio de la tormenta y suplica en un hilo de voz: "No... no me sueltes. Quédate... quédate delante."
+> mecanica
+> Percepción: Éxito (18 vs CD 10). Mantienes el control visual de los accesos y detectas el momento exacto en que las criaturas se preparan para saltar desde las sombras.
+> presion
+> El ruido de los rascados ha cesado bruscamente, lo que indica que los enemigos han dejado de tantear y se preparan para un ataque coordinado desde ambos ramales. Si no rompesis el asedio o forzáis el avance, el impacto simultáneo podría desestabilizar tu posición.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3140 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5564: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 269 — 254/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4086 ms
+
+> "No temas, pequeño. Mientras yo respire, nada te tocará."
+> Me planto firmemente, manteniendo el escudo en alto y protegiendo la entrada con todo mi cuerpo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 14+1=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (6490 ms): «Lo prometes... lo prometes, ¿verdad? Por favor, no te muevas... no dejes ni un h»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3365 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  18333 ms
+
+> narrativa
+> El escudo se clava en la piedra húmeda, convirtiéndose en la única frontera entre la seguridad y el horror que acecha en la penumbra de los túneles. El goteo constante de las paredes resbala por el metal, mientras la posición se mantiene inamovible, cerrando el paso a cualquier criatura que intente emerger de los ramales laterales. La vigilancia es absoluta; cada movimiento en las sombras es detectado antes de que se convierta en ataque, asegurando que el cuello de botella sea una fortaleza infranqueable.
+> Sintiendo la solidez de esa barrera, la entidad orgánica se aferra con desesperación a la parte trasera de tu armadura, hundiendo los dedos en el metal o la tela, con la respiración errática y el cuerpo sacudido por espasmos de terror. Se pega a tu espalda buscando el refugio total y suplica en un susurro roto: "Lo prometes... lo prometes, ¿verdad? Por favor, no te muevas... no dejes ni un hueco."
+> mecanica
+> Percepción: Éxito (15 vs CD 10). Mantienes el control total de la intersección y anticipas cualquier embestida desde los túneles.
+> presion
+> Aunque la posición es sólida, las criaturas están empezando a rodear el perímetro buscando una fisura en la defensa. Si permanecéis estáticos demasiado tiempo, podrían encontrar una vía de acceso por el techo o los conductos de ventilación superiores.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2969 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5569: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 270 — 255/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  7107 ms
+
+> "Lo prometo. No daré un paso atrás mientras tenga fuerzas."
+> Pongo una mano sobre el brazo de la criatura para transmitirle calma y mantengo la guardia firme, escrutando el techo en busca de cualquier grieta.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 2+1=3
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 3)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (10765 ms): «No te sueltes... no me sueltes. Quédate ahí, justo ahí.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6345 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  18291 ms
+
+> narrativa
+> La mirada se pierde en la penumbra del techo, donde los arcos irregulares de piedra se funden con la oscuridad. El siseo del viento a través de los conductos oxidados se vuelve un ruido blanco que enmascara cualquier movimiento sutil; las grietas parecen multiplicarse en la sombra y el esfuerzo por detectar una amenaza superior resulta inútil, dejando el flanco del techo como un enigma inquietante y ciego.
+> Sintiendo el contacto en su brazo, la entidad orgánica se aferra con más fuerza, casi dolorosamente, hundiendo el rostro contra la espalda del jugador; su cuerpo deja de temblar por un momento, pero su respiración sigue siendo corta y ansiosa. "No te sueltes... no me sueltes. Quédate ahí, justo ahí", susurra con una urgencia que raya en la desesperación.
+> mecanica
+> Percepción: Fallo (3 vs CD 10). No logras detectar ninguna anomalía ni movimiento en la parte superior del túnel.
+> presion
+> La falta de visibilidad en el techo es ahora un punto crítico. Mientras la entidad se aferra a ti, el ruido de los conductos oculta que algo ya ha comenzado a descender por las grietas superiores, posicionándose justo encima de vuestras cabezas.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3137 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · promise_made
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5576: entidad orgánica affinity 100.0 → 100.0  (mid)
+     Lo anota sin mayor ceremonia.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 271 — 256/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3800 ms
+
+> "No temas, estoy contigo. No te soltaré."
+> Pongo una mano protectora sobre la entidad para tranquilizarla y me planto firmemente, manteniendo la guardia alta mientras escaneo el entorno.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 17+1=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4109 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  19496 ms
+
+> narrativa
+> El gesto protector surte efecto; el cuerpo de la entidad orgánica se relaja ligeramente bajo el contacto, aunque sigue anclada a la espalda como si el mundo exterior fuera a desintegrarse en cualquier momento. Al plantarse con firmeza, la vista se agudiza, atravesando la bruma de polvo y la penumbra del túnel. El líquido viscoso que gotea desde los arcos irregulares y los conductos oxidados marca un ritmo hipnótico, pero ahora el ojo entrenado distingue el patrón: una perturbación en el goteo, un desplazamiento sutil de las sombras en el techo que delata la presencia de algo acechando arriba.
+> La guardia alta es la respuesta correcta. El escaneo del entorno revela finalmente el peligro que antes se ocultaba en el ruido blanco de los conductos; hay un movimiento coordinado en las grietas superiores, una silueta que se desprende de la piedra justo cuando la vigilancia se vuelve absoluta.
+> mecanica
+> Percepción: Éxito (18 vs CD 10). Has detectado la amenaza que descendía desde el techo antes de que pudiera sorprenderos.
+> presion
+> La criatura del techo ha sido descubierta, pero sigue posicionada para atacar. Cualquier segundo de duda permitirá que el enemigo elija el ángulo de impacto más letal contra el grupo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3770 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5591: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 272 — 257/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2610 ms
+
+> "¡Cuidado! ¡Arriba!"
+> Me coloco rápidamente frente a la entidad para cubrirla con mi cuerpo y desenvaino mi arma, preparándome para el impacto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 17+1=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3342 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11623 ms
+
+> narrativa
+> El movimiento es fluido y preciso, una reacción instintiva que coloca el acero en posición justo antes del descenso. Al interponerse entre la entidad y la amenaza, el cuerpo de la criatura orgánica se tensa, aferrándose con más fuerza, pero la guardia es absoluta. El arma brilla en la penumbra, cortando el aire en el ángulo exacto para interceptar el ataque.
+> La silueta que se desprende del techo choca contra una defensa ya preparada. El impacto es seco, el metal encuentra su objetivo y el elemento sorpresa se evapora en un instante, transformando una emboscada letal en un enfrentamiento directo donde la ventaja ha pasado a manos del grupo.
+> mecanica
+> Percepción: Éxito (18 vs CD 10). Has interceptado la emboscada, anulando la ventaja de sorpresa del enemigo.
+> presion
+> La criatura ha sido repelida del techo, pero ahora se encuentra en combate cuerpo a cuerpo. Si no se le neutraliza rápidamente, su agilidad en el espacio cerrado podría permitirle flanquear la posición defensiva.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3663 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5597: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 273 — 258/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  5163 ms
+
+> "¡Atrás, criatura! No pasarás de aquí."
+> Me planto firmemente frente a ella, alzando mi arma para mantener la posición y evitar que se mueva hacia los flancos.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 2+4=6
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 6)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3182 ms): «Tú mantén la línea. Yo me encargo de que no se mueva.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1993 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11401 ms
+
+> narrativa
+> El intento de plantar los pies con firmeza falla; un leve desequilibrio o un resbalón en el suelo irregular hacen que la postura pierda solidez, dejando un hueco vulnerable en la formación. La criatura aprovecha esa vacilación instintivamente, buscando la grieta en la defensa para deslizarse hacia los flancos.
+> Antes de que el espacio se abra del todo, la entidad orgánica reacciona. Sin apartar la vista del enemigo, aprieta el agarre sobre quien protege y se desplaza ligeramente para cerrar el ángulo de ataque, coordinando su cuerpo con la posición del jugador para compensar el fallo. "Tú mantén la línea. Yo me encargo de que no se mueva", sentencia con una determinación gélida.
+> mecanica
+> Atletismo: Fallo (6 vs CD 10). No logras estabilizar tu posición, perdiendo el control del flanco.
+> presion
+> La entidad orgánica ha logrado cubrir el hueco, pero el esfuerzo de compensar tu desequilibrio la ha dejado expuesta. Si no recuperas la posición rápidamente, el enemigo encontrará un nuevo ángulo para atacar a ambos simultáneamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4535 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 274 — 259/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3143 ms
+
+> "Perdona mi torpeza, no volverá a pasar."
+> Me apoyo con fuerza en el suelo para recuperar el equilibrio y volver a cerrar la formación.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1177 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8972 ms
+
+> narrativa
+> El impulso es seco y preciso. El peso se redistribuye con fuerza contra el terreno irregular, anclando los pies en un movimiento coordinado que devuelve la estabilidad a la formación. La vulnerabilidad desaparece en un instante, cerrando la brecha que la criatura intentaba explotar y restableciendo un muro sólido de defensa.
+> La entidad orgánica percibe el cambio inmediato en la postura. Sin decir una palabra, relaja ligeramente la tensión de su agarre al sentir que el apoyo es nuevamente firme, aunque mantiene la guardia alta y la mirada fija en el enemigo, aceptando el recobro del terreno con un asentimiento imperceptible.
+> mecanica
+> Atletismo: Éxito (15 vs CD 10). Recuperas el equilibrio y cierras la formación.
+> presion
+> La defensa es ahora impenetrable, pero la criatura, al verse bloqueada, comienza a retroceder lentamente hacia las sombras, buscando un terreno donde su ventaja sea mayor que la vuestra.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3670 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 275 — 260/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2875 ms
+
+> "¡No permitáis que se escape en la oscuridad!"
+> Avanzo con paso firme para mantener la presión sobre la criatura, evitando que gane terreno en las sombras.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 20)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2840 ms): «No perderemos su rastro.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4749 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10581 ms
+
+> narrativa
+> El avance es rotundo y preciso, un despliegue de fuerza que no deja espacio para la duda. Los pies golpean la piedra húmeda del corredor, desplazando la inercia hacia adelante con una eficiencia que impide que la criatura se desvanezca en la oscuridad aceitosa. El muro de defensa se desplaza como una sola pieza, manteniendo la presión y obligando al enemigo a retroceder bajo la luz vacilante de las antorchas.
+> A su lado, la entidad orgánica ajusta su posición con una precisión geométrica, sincronizando cada zancada para que no quede ni un centímetro de brecha. "No perderemos su rastro", sentencia con una voz neutra y despojada de emoción, aunque sus palabras cargan una determinación mecánica e implacable mientras cierra el paso.
+> mecanica
+> Atletismo: Éxito (20 vs CD 10). Mantienes la presión y evitas que el enemigo gane terreno.
+> presion
+> La criatura está acorralada contra las paredes del corredor, pero la oscuridad densa a vuestras espaldas comienza a vibrar, sugiriendo que el ruido de la persecución ha despertado a algo más en las profundidades.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2921 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · competence_shown
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5604: entidad orgánica affinity 100.0 → 100.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 276 — 261/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2808 ms
+
+> "¡No temas, criatura! ¡Entrégate y pondremos fin a este caos!"
+> Mantengo mi posición firme, protegiendo la retaguardia mientras intento discernir qué es lo que vibra en la oscuridad.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 14+1=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5058 ms): «El ruido es irrelevante. Nuestra prioridad es la captura. Mantén el flanco.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5579 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12516 ms
+
+> narrativa
+> El esfuerzo por mantener la guardia rinde frutos; la posición es sólida y la retaguardia permanece blindada ante cualquier embestida. Mientras los sentidos se agudizan, la vibración rítmica que sacude las paredes aceitosas del corredor se revela como un latido sordo, una pulsación orgánica que emana de la piedra húmeda y envuelve la escena en una atmósfera opresiva, donde la luz de las antorchas lucha contra una oscuridad que parece tener peso.
+> La entidad orgánica no se inmuta ante el grito ni ante la inquietud del entorno. Sin girar la cabeza, manteniendo la mirada fija en la presa y la posición de bloqueo intacta, responde con una frialdad absoluta: "El ruido es irrelevante. Nuestra prioridad es la captura. Mantén el flanco".
+> mecanica
+> Percepción: Éxito (15 vs CD 10). Logras identificar la naturaleza rítmica de la vibración en las paredes.
+> presion
+> La criatura acorralada comienza a emitir un chillido ultrasónico que amenaza con aturdiros, mientras el latido de las paredes se acelera, indicando que el entorno está reaccionando a la presencia del grupo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2134 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 277 — 262/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2547 ms
+
+> "¡No permitiré que este lugar se convierta en una carnicería!"
+> Me pongo delante de la presa para cubrirla y clavo mi espada en el suelo, intentando resistir el efecto del chillido.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4103 ms): «Estás interfiriendo en la captura. Quítate.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3448 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12152 ms
+
+> narrativa
+> La espada se hunde con fuerza en la piedra aceitosa, anclando la posición y permitiendo que el cuerpo resista el embate del chillido ultrasónico que satura el aire. El corredor estrecho vibra con un latido orgánico más frenético, mientras la oscuridad densa parece cerrarse sobre la escena, envolviendo la figura que ahora se interpone entre la presa y su cazador.
+> La entidad orgánica no se mueve ni un centímetro, manteniendo una rigidez mecánica mientras sostiene la mirada sobre el objetivo. Sin apartar la vista de la presa, su voz suena plana, desprovista de cualquier matiz emocional: "Estás interfiriendo en la captura. Quítate".
+> mecanica
+> Atletismo: Éxito (15 vs CD 10). Logras anclarte al suelo y resistir el efecto del chillido.
+> presion
+> La entidad orgánica no retrocederá; si continúas bloqueando el paso, el conflicto escalará y la criatura acorralada podría aprovechar la distracción para lanzar un ataque desesperado contra ambos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1187 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 278 — 263/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2669 ms
+
+> "No permitiré que lastimes a quien no puede defenderse."
+> Me mantengo firme en mi posición, bloqueando el paso con el escudo alzado.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5080 ms): «Tu moralidad es un obstáculo irrelevante. Muévete.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7059 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11699 ms
+
+> narrativa
+> El corredor se siente ahora como una garganta de quitina y tejido pulsante que se cierra sobre la escena, donde las paredes sudan un aceite negro que amortigua el sonido. El espacio es tan angosto que el escudo casi roza los costados, creando un cuello de botella asfixiante frente a la criatura acorralada. La firmeza de la postura no surte efecto; la entidad orgánica permanece inmóvil, como una pared de carne y voluntad que ignora por completo el intento de intimidación.
+> Sin cambiar su postura y manteniendo un tono monocorde, desprovisto de cualquier rastro de irritación o duda, la entidad sentencia: "Tu moralidad es un obstáculo irrelevante. Muévete."
+> mecanica
+> Intimidación: Fallo (7 vs CD 10). La entidad es inmune a tus presiones morales.
+> presion
+> La entidad orgánica no ha cedido ni un milímetro. Si sigues bloqueando el paso, el enfrentamiento físico es inevitable y la criatura acorralada podría aprovechar el caos para atacar a traición.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1242 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Intimidación
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 279 — 264/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2286 ms
+
+> "No soy un obstáculo, sino la justicia que te detiene."
+> Me planto con firmeza, alzando mi escudo para cerrar el paso por completo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 16+4=20
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 20)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3784 ms): «La justicia es un concepto abstracto; mi propósito es una necesidad biológica. Q»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4712 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  12582 ms
+
+> narrativa
+> El escudo encaja a presión contra las paredes aceitosas del corredor, que se estrecha ahora como un túnel de tejido visceral. El metal se hunde en la carne pulsante del entorno, sellando el paso por completo y transformando el cuello de botella en un muro infranqueable.
+> La entidad orgánica no retrocede ni muestra signo de sorpresa ante el bloqueo. Mantiene la mirada fija y vacía, permaneciendo inmóvil como una estatua de carne mientras responde con una voz neutra, sin rastro de esfuerzo ni emoción: "La justicia es un concepto abstracto; mi propósito es una necesidad biológica. Quítate."
+> mecanica
+> Atletismo: Éxito (20 vs CD 10). Has bloqueado el corredor eficazmente.
+> presion
+> La entidad orgánica se mantiene imperturbable, pero el espacio es tan reducido que cualquier movimiento brusco ahora provocará un choque físico inevitable.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1130 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 280 — 265/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4820 ms
+
+> "Tú no defines la justicia, criatura, y yo no me moveré de aquí mientras seas una amenaza."
+> Me planto firmemente contra el escudo, preparándome para resistir cualquier embate.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Intimidación: 15+4=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 19)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3104 ms): «Tampoco yo defino la amenaza. Solo soy el resultado de una función que no admite»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  12654 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14838 ms
+
+> narrativa
+> El escudo se mantiene firme, anclado en la carne pulsante del pasillo. El corredor se ha transformado en el interior de una garganta; las paredes segregan un moco espeso y vibran con un latido sordo que reverbera en los huesos. El aire, cargado de un olor nauseabundo a hierro y bilis, se vuelve denso y claustrofóbico, atrapando a todos en un silencio húmedo y opresivo.
+> La entidad orgánica no cede ni un milímetro, pero su inercia se quiebra ante la determinación del bloqueo. Permanece absolutamente estática, sin tensión en los músculos ni cambios en su respiración, con la mirada clavada en el espacio donde debería estar el corazón del jugador, sin parpadear. "Tampoco yo defino la amenaza. Solo soy el resultado de una función que no admite obstrucciones", sentencia con una neutralidad gélida.
+> mecanica
+> Intimidación: Éxito (19 vs CD 10). La entidad reconoce la firmeza de tu posición y detiene su avance inmediato.
+> presion
+> Aunque la entidad se ha detenido, el latido de las paredes se intensifica; el corredor comienza a contraerse rítmicamente, reduciendo el espacio disponible y amenazando con aplastar el escudo contra el cuerpo del jugador.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3091 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · competence_shown
+  ⚠ nombres no reconocidos: Intimidación, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5623: entidad orgánica affinity 100.0 → 100.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 281 — 266/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3906 ms
+
+> "No soy una obstrucción, sino la voluntad que pone fin a este horror."
+> Mantengo la posición con fuerza, resistiendo la presión de las paredes mientras intento analizar el patrón de las contracciones.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 18+1=19
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 19)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4536 ms): «La voluntad es una variable irrelevante en una secuencia de cierre. No eres un f»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4461 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  20854 ms
+
+> narrativa
+> El esfuerzo físico se traduce en una estabilidad absoluta; el escudo resiste el embate mientras la mente disecciona el ritmo del entorno. El pasillo se ha vuelto un conducto peristáltico, con paredes de tejido húmedo que se cierran en ciclos regulares, expulsando el aire y comprimiendo el espacio hacia el centro. Entre los pliegues de la carne, se revelan válvulas carnosas que se abren y cierran coordinadas con el latido, dejando claro que el corredor no es un camino, sino un sistema de transporte orgánico diseñado para desplazar materia.
+> La entidad orgánica mantiene la mirada fija, sin mover un solo músculo mientras el pasillo se estrecha. Su voz suena plana, desprovista de cualquier rastro de emoción o malicia: "La voluntad es una variable irrelevante en una secuencia de cierre. No eres un fin, solo el punto donde la presión se vuelve insoportable".
+> mecanica
+> Percepción: Éxito (19 vs CD 10). Has identificado que el corredor funciona como un sistema de transporte orgánico y has detectado el patrón de las válvulas carnosas.
+> presion
+> El ciclo de contracción se vuelve más agresivo; las válvulas están empezando a succionar el aire del conducto, lo que dificultará la respiración y el movimiento en los próximos segundos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1195 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 282 — 267/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3022 ms
+
+> "No soy una variable, soy un hombre con voluntad."
+> Me planto con firmeza, hincando el escudo en el suelo para intentar bloquear la contracción del pasillo y abrir espacio para respirar.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 10+4=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3068 ms): «El metal no es una variable, es un obstáculo temporal. Tu voluntad solo sirve pa»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4901 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  20312 ms
+
+> narrativa
+> El escudo se clava con fuerza en la carne del suelo, creando un punto de anclaje sólido que resiste la presión del entorno. Alrededor del borde del metal, el tejido se pliega y se desgarra, forzando la apertura de un pequeño vacío donde el aire aún circula, aunque las paredes continúan latiendo con una fuerza sorda y húmeda.
+> La entidad orgánica observa la presión del escudo contra la carne con una curiosidad clínica, casi mecánica, sin pestañear. "El metal no es una variable, es un obstáculo temporal. Tu voluntad solo sirve para que el proceso de digestión sea más lento", sentencia con una voz plana que ignora cualquier rastro de desafío.
+> mecanica
+> Atletismo: Éxito (14 vs CD 10). Has logrado anclar el escudo y crear un espacio respirable temporal.
+> presion
+> Aunque el escudo mantiene el hueco, el tejido orgánico comienza a regenerar las fibras desgarradas alrededor del metal, intentando envolver el escudo para anular su punto de apoyo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1061 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 283 — 268/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2882 ms
+
+> "No soy un obstáculo, sino el juicio que te detendrá."
+> Apoyo mi espalda contra el escudo y trato de empujar con todas mis fuerzas para ampliar el hueco antes de que el tejido me envuelva.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4466 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17075 ms
+
+> narrativa
+> El esfuerzo es inútil. A pesar de la fuerza aplicada, el metal no cede ni un milímetro más frente a la densidad del tejido; el escudo se siente ahora como una astilla insignificante clavada en una pared de carne infinita. El espacio ganado comienza a colapsar mientras las paredes de músculo húmedo y venas pulsantes se cierran con una presión rítmica y asfixiante, envolviendo el cuerpo en un abrazo viscoso que anula cualquier intento de resistencia.
+> La entidad orgánica permanece inmóvil, observando el fracaso del empuje con una indiferencia absoluta. No hay palabras, solo el sonido sordo y húmedo de las fibras musculares regenerándose y apretando el cerco, reduciendo el vacío respirable hasta convertirlo en una trampa estrecha y caliente.
+> mecanica
+> Atletismo: Fallo (9 vs CD 10). No logras ampliar el espacio y el entorno comienza a cerrarse sobre ti.
+> presion
+> El tejido orgánico está envolviendo el escudo y tus extremidades; si no encuentras una forma de liberarte o forzar la apertura, quedarás completamente inmovilizado y atrapado en la contracción del esófago.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1115 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 284 — 269/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  6395 ms
+
+> "¡No me detendrás!"
+> Hundo mi espada en la carne que me rodea y trato de desgarrar el tejido con fuerza bruta para abrirme camino.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 23)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (8552 ms): «Corta más profundo. No luches contra la carne, haz que la carne se convierta en »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5499 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  18533 ms
+
+> narrativa
+> El acero muerde con una eficacia brutal y el tejido se desgarra con un sonido húmedo y visceral. La hoja se hunde profundamente, abriendo una brecha irregular en la pared de músculo que revela capas de fibras pálidas y fluidos espesos que salpican el metal. Por un instante, el espacio se expande, otorgando un respiro necesario antes de que la carne, impulsada por un instinto ciego, intente cerrarse nuevamente sobre el filo de la espada.
+> La entidad orgánica se contrae rítmicamente, tensando las fibras justo donde el arma muerde para facilitar el desgarro, mientras su voz resuena como un eco húmedo directamente en los huesos: "Corta más profundo. No luches contra la carne, haz que la carne se convierta en el camino."
+> mecanica
+> Atletismo: Éxito (23 vs CD 10). Has logrado abrir una brecha significativa en el tejido.
+> presion
+> La brecha es temporal y la carne sigue intentando cerrarse; si no aprovechas la apertura para avanzar o salir, el tejido volverá a atraparte con la misma fuerza que antes.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2976 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta entidad_organica · npc.status = damaged
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ entidad inexistente: entidad_organica
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 285 — 270/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4486 ms
+
+> "No permitiré que este lugar me consuma."
+> Aprovecho la apertura y me deslizo rápidamente a través de la brecha antes de que se cierre.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 14+4=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3664 ms): «Ve. No permitas que el silencio te alcance.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3802 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13920 ms
+
+> narrativa
+> El cuerpo se desliza con agilidad a través de la herida abierta, escapando justo antes de que las fibras pálidas vuelvan a sellarse. El pasillo es un túnel de paredes pulsantes y húmedas donde el suelo se siente como una lengua gigante y el aire satura los sentidos con un olor metálico a hierro y bilis. Una bioluminiscencia anémica parpadea en el techo orgánico, sincronizada con el latido sordo de un corazón distante que hace vibrar cada paso.
+> Un pulso vibratorio recorre el suelo, coordinando la contracción de los músculos circundantes para ampliar la brecha un segundo más y facilitar el paso final. En ese instante, la voz de la entidad resuena nuevamente en la estructura misma del lugar: "Ve. No permitas que el silencio te alcance."
+> mecanica
+> Atletismo: Éxito (18 vs CD 10). Has atravesado la brecha con éxito.
+> presion
+> El pasillo comienza a contraerse rítmicamente detrás de ti; si te detienes a explorar o dudas en tu avance, las paredes se cerrarán, eliminando la ruta de regreso y obligándote a profundizar en el organismo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  7036 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.location_id
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 286 — 271/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2651 ms
+
+> "No permitiré que el silencio gane."
+> Apresuro el paso hacia adelante, manteniendo la guardia alta y evitando mirar atrás mientras el pasillo se cierra.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 6+1=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4070 ms): «Entonces camina. No hay gloria en el eco de quien se queda atrás.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6227 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11117 ms
+
+> narrativa
+> El esfuerzo por anticipar cualquier peligro oculto resulta inútil; la mirada no logra descifrar nada entre los pliegues palpitantes del camino. El pasillo desemboca finalmente en una cámara esférica donde el tejido se vuelve translúcido, revelando corrientes de fluidos oscuros que fluyen pesadamente por las paredes. En el centro del espacio, una masa de fibras nerviosas suspendidas vibra con una frecuencia inquietante, actuando como el nexo de los impulsos que gobiernan cada contracción de este lugar.
+> La voz de la entidad no proviene de un punto fijo, sino que vibra en las paredes húmedas, fundiéndose con el latido del organismo en un tono imperativo pero protector: "Entonces camina. No hay gloria en el eco de quien se queda atrás."
+> mecanica
+> Percepción: Fallo (7 vs CD 10). No has detectado ninguna amenaza ni detalle relevante en el entorno.
+> presion
+> Las corrientes de fluidos oscuros en las paredes comienzan a acelerar su flujo, sugiriendo que el nexo central está reaccionando a tu presencia y podría activar una respuesta inmunitaria si permaneces demasiado tiempo en la cámara.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2705 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación location: cámara esférica
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location cámara esférica
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 287 — 272/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3176 ms
+
+> "No me detendré por miedo, pero tampoco caminaré a ciegas."
+> Avanzo con paso firme hacia la masa de fibras nerviosas, manteniendo mi arma lista.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 14+1=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (6249 ms): «Tu cautela es un ruido innecesario en este lugar. Avanza. El nexo no reconoce el»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5296 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  20184 ms
+
+> narrativa
+> El paso firme corta el aire denso de la cámara esférica, que ahora vibra con una intensidad creciente. A medida que la distancia con el nexo de fibras se acorta, los fluidos oscuros de las paredes convergen en filamentos delgados; estas prolongaciones se extienden hacia el centro, tateando el aire como cilios hambrientos que buscan una impureza que extraer del entorno.
+> La voz de la entidad orgánica vibra con una intensidad creciente, sincronizada con el flujo acelerado de los fluidos, envolviendo el espacio en una presión sónica que parece empujar el cuerpo hacia adelante: "Tu cautela es un ruido innecesario en este lugar. Avanza. El nexo no reconoce el acero, solo la voluntad de quien se atreve a tocar el centro."
+> mecanica
+> Percepción: Éxito (15 vs CD 10). Has detectado la naturaleza reactiva de los filamentos que emergen de las paredes.
+> presion
+> Los cilios de fluido oscuro se multiplican y se vuelven más agresivos en su búsqueda; si no alcanzas el nexo pronto, el sistema inmunológico de la cámara podría identificarte como un patógeno y cerrar el paso.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2482 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 288 — 273/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  4941 ms
+
+> "No permitiré que el miedo dicte mis pasos, pero tampoco ignoraré el peligro."
+> Avanzo con determinación hacia el centro, manteniendo mi escudo en alto para protegerme de los filamentos.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 4+4=8
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 8)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5369 ms): «El escudo es una barrera para el cuerpo, pero una pared para el espíritu. Deja q»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4111 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  20187 ms
+
+> narrativa
+> El avance hacia el centro se vuelve pesado, casi viscoso. A medida que el espacio se estrecha en un embudo de fibras pulsantes, el aire se carga de un olor penetrante a ozono y materia orgánica en descomposición. El escudo, al chocar contra la resistencia del ambiente, se convierte en un lastre que entorpece cada paso; los filamentos del entorno reaccionan a la superficie metálica, envolviéndola y frenando el movimiento con una fuerza succionadora que impide alcanzar el nexo, cuya luz pálida y rítmica parece alejarse con cada esfuerzo fallido.
+> La entidad orgánica se desliza lateralmente, observando la torpeza del avance con una mezcla de urgencia y desdén. Su voz fluctúa en frecuencia, resonando en las paredes de la cámara mientras advierte: "El escudo es una barrera para el cuerpo, pero una pared para el espíritu. Deja que el fluido te reconozca, o te tratará como a un cuerpo extraño que debe ser extirpado."
+> mecanica
+> Atletismo: Fallo (8 vs CD 10). El uso del escudo ha generado una resistencia física y energética que te impide avanzar hacia el nexo.
+> presion
+> Los filamentos comienzan a adherirse con más fuerza al escudo y a las extremidades; si no cambias tu enfoque o abandonas la protección, quedarás anclado al suelo mientras el sistema inmunológico de la cámara inicia el proceso de extirpación.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3722 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 289 — 274/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1969 ms
+
+> "No dejaré que mi protección sea mi debilidad."
+> Suelto el escudo y lo dejo caer al suelo para liberarme de la resistencia.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 5+4=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (12786 ms): «Ahora el flujo te acepta. No es debilidad, es rendición al ritmo de este lugar.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  40009 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9446 ms
+
+> narrativa
+> El esfuerzo por mantener el escudo termina en un deslizamiento torpe; el metal choca contra el suelo con un sonido sordo, pero la liberación es inmediata. Al desprenderse del lastre, el espacio se abre ligeramente, revelando un pasillo de membranas translúcidas que laten al unísono con el nexo. Sin embargo, el escudo no queda libre: una capa de moco irisado lo envuelve rápidamente, anclándolo al sustrato orgánico como si el entorno lo estuviera digiriendo.
+> La entidad orgánica se desliza más cerca, su vibración volviéndose más armónica y menos estridente mientras observa la pieza de equipo abandonada en el suelo. "Ahora el flujo te acepta. No es debilidad, es rendición al ritmo de este lugar", sentencia con una cadencia que parece fundirse con el latido de las paredes.
+> mecanica
+> Atletismo: Fallo (9 vs CD 10). A pesar de soltar el escudo, la inercia del fallo impide un avance fluido; logras liberarte del lastre, pero no ganas el terreno esperado hacia el nexo.
+> presion
+> El escudo ha sido absorbido por la biomasa del pasillo; recuperarlo ahora requerirá un esfuerzo físico considerable o una negociación con el entorno, mientras el camino hacia el nexo sigue latiendo, esperando una sincronía total.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2623 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.inventory = escudo
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5680: Ilvard.inventory = escudo
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'location', 'entity_id': 'nexo', 'field': 'descripcion', 'value': 'El acceso al nexo está flanqueado por membranas translúcidas que reaccionan a la presencia orgánica, mientras que los objetos inertes y metálicos son absorbidos por el fluido del suelo.'}
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 290 — 275/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3274 ms
+
+> "No es rendición, es sacrificio por un bien mayor."
+> Intento arrancar mi escudo de la biomasa con fuerza bruta.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 17+4=21
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 21)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  8479 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  7305 ms
+
+> narrativa
+> El pasillo de membranas translúcidas se contrae violentamente ante el tirón, exudando un fluido espeso y pegajoso que lucha por retener el metal. La biomasa se estira y se resiste, pero la fuerza aplicada es decisiva; el escudo se desprende finalmente con un sonido húmedo y desgarrador, liberándose del agarre orgánico.
+> La entidad orgánica observa el arranque brusco en silencio, su vibración oscilando levemente mientras el fluido irisado gotea desde el borde del metal hacia el suelo palpitante.
+> mecanica
+> Atletismo: Éxito (21 vs CD 10). Recuperas tu escudo.
+> presion
+> El arranque violento ha dejado una herida abierta en el tejido del pasillo; la estructura orgánica comienza a reaccionar al trauma, y el flujo armónico que permitía el avance se vuelve errático y agresivo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2898 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.inventory = escudo
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5685: Ilvard.inventory = escudo
+  ✗ (Mundo) entidad inexistente: {'entity_type': 'location', 'entity_id': 'Pasillo de Membranas', 'field': 'descripcion', 'value': 'Un corredor de paredes orgánicas y translúcidas que laten al ritmo del nexo; el sustrato es viscoso y reactivo al contacto físico.'}
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 291 — 276/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2444 ms
+
+> "No temáis, que yo os protegeré."
+> Limpio el fluido pegajoso de mi escudo con un gesto rápido y me coloco frente a la entidad para cubrirla con mi defensa.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 20+1=21  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 21)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4929 ms): «Tus palabras vibran en una frecuencia que no entiendo, pero tu escudo... tu escu»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7975 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14383 ms
+
+> narrativa
+> El pasillo se ha transformado en una garganta espasmódica; las paredes de membrana laten ahora con un rojo irritado y el fluido irisado burbujea con violencia en la herida dejada por el escudo, envolviendo la escena en una atmósfera claustrofóbica y febril. El metal se interpone con firmeza entre la entidad y la furia del entorno, estableciendo un perímetro de seguridad inquebrantable frente al pulso errático de la biomasa.
+> La entidad orgánica emite un pulso lumínico tenue y cálido, desplazando su centro de masa ligeramente hacia atrás para quedar plenamente resguardada bajo la protección del metal. "Tus palabras vibran en una frecuencia que no entiendo, pero tu escudo... tu escudo es un límite que el mundo no puede cruzar ahora mismo", murmura, mientras su vibración se estabiliza al amparo de la defensa.
+> mecanica
+> Percepción: Éxito crítico (21 vs CD 10). Logras posicionarte con precisión absoluta, optimizando la cobertura del escudo para proteger totalmente a la entidad.
+> presion
+> La irritación de las paredes orgánicas aumenta; el pasillo comienza a cerrarse rítmicamente, amenazando con aplastar cualquier cosa que no encuentre una salida rápida.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2754 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5690: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 292 — 277/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2279 ms
+
+> "No temas, pequeña criatura. Mientras yo esté en pie, nada te hará daño."
+> Sujeto el escudo con fuerza para mantener el perímetro y busco una salida inmediata entre las paredes que se cierran.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 16+1=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 17)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3827 ms): «No soy una criatura... pero acepto tu guardia. Siento el ritmo de este lugar ace»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4183 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8357 ms
+
+> narrativa
+> El escudo resiste la presión de la biomasa, manteniendo el espacio vital mientras la mirada rastrea el entorno con precisión. Más adelante, el pasillo se estrecha en un cuello de botella donde la membrana se vuelve translúcida, revelando una luz pálida y una estructura ósea que sugiere la apertura hacia una cámara más amplia.
+> La entidad orgánica pulsa en un tono ámbar suave, casi rítmico, y se pega a la espalda del jugador para no romper el perímetro del escudo. "No soy una criatura... pero acepto tu guardia. Siento el ritmo de este lugar acelerarse; el camino se cierra, debemos movernos ahora", advierte con una vibración urgente.
+> mecanica
+> Percepción: Éxito (17 vs CD 10). Has localizado la salida estructural antes de que el pasillo se colapse.
+> presion
+> La estructura ósea al final del cuello de botella es el único punto de escape; si el avance se detiene, las paredes translúcidas terminarán de sellarse, dejando al grupo atrapado en la garganta de la biomasa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2450 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5692: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 293 — 278/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2251 ms
+
+> "No te preocupes, te sacaré de aquí."
+> Avanzo con paso firme hacia la estructura ósea, manteniendo el escudo en alto para abrir camino.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3559 ms): «No te preocupes por mí. Preocúpate por el tiempo; la carne se cierra detrás de n»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4938 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  17150 ms
+
+> narrativa
+> El avance se vuelve torpe y pesado; el suelo elástico cede bajo el peso del equipo, succionando las botas y convirtiendo cada paso en una lucha agotadora contra la viscosidad del entorno. Al cruzar el umbral, la estructura ósea se abre a una cámara cavernosa donde el techo se pierde en una maraña de tendones y nervios suspendidos que gotean un fluido pálido. El suelo vibra con el latido sordo de la biomasa, un eco orgánico que resuena en el pecho.
+> Detrás, el cuello de botella comienza a contraerse violentamente, cerrándose como una herida que cicatriza en tiempo real. La pulsación ámbar de la entidad se vuelve errática y rápida, rozando el hombro con urgencia mientras intenta impulsar el cuerpo hacia adelante. "No te preocupes por mí. Preocúpate por el tiempo; la carne se cierra detrás de nosotros", advierte con una vibración que denota una ansiedad creciente.
+> mecanica
+> Atletismo: Fallo (7 vs CD 10). El terreno inestable ha ralentizado tu avance, dejándote apenas fuera del colapso.
+> presion
+> El camino de regreso ha desaparecido; cualquier intento de retroceder ahora implicaría perforar paredes de tejido vivo que se regeneran instantáneamente.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1269 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 294 — 279/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2390 ms
+
+> "¡No te dejaré atrás!"
+> Intento dar un salto desesperado hacia adelante para entrar completamente en la cámara antes de que el cierre sea total.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 12+4=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 16)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5664 ms): «¡Hacia adelante! ¡No mires atrás, solo corre!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3250 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8095 ms
+
+> narrativa
+> El impulso es certero y el cuerpo vuela sobre la superficie viscosa, aterrizando con fuerza en el corazón de la cámara. El espacio se despliega como un vientre colosal, donde columnas de cartílago sostienen un techo de nervios palpitantes y el aire se vuelve denso, impregnado de un olor metálico a hierro y ozono.
+> En el instante crítico, la entidad orgánica impulsa el cuerpo con una sacudida brusca y desesperada, coordinando el movimiento con el salto mientras su propia vibración ámbar se intensifica por el pánico. "¡Hacia adelante! ¡No mires atrás, solo corre!", exclama mientras se lanza junto al jugador, escapando justo antes de que el tejido se selle por completo.
+> mecanica
+> Atletismo: Éxito (16 vs CD 10). Has logrado entrar en la cámara y rescatar a la entidad antes del cierre.
+> presion
+> El cierre del túnel ha sido total; ahora están atrapados en el vientre colosal sin ninguna vía de escape inmediata hacia atrás.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5911 ms · 1 eventos · 2 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · life_saved
+  ✗ campo fuera de lista blanca: character.location_id
+  ✓ delta entidad orgánica · npc.location_id = cámara circular
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → delta 5696: entidad orgánica affinity 100.0 → 100.0  (any)
+     Deuda de sangre. No se olvida.
+  → delta 5697: entidad orgánica.location_id = cámara circular
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 295 — 280/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1773 ms
+
+> "Tranquilo, estás a salvo conmigo. Mantente cerca."
+> Me pongo en guardia, desenvainando mi arma y observando el entorno para detectar cualquier amenaza inmediata.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 16+1=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 17)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4015 ms): «No... no estoy a salvo. Solo estamos más adentro.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  19000 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10580 ms
+
+> narrativa
+> El acero desliza con un siseo limpio fuera de la vaina, y la mirada recorre el espacio con precisión quirúrgica. La cámara se despliega como un vientre colosal y húmedo; el suelo de tejido esponjoso vibra bajo las botas con un ritmo cardíaco lento y pesado. Del techo de nervios cuelgan sacos translúcidos que gotean un líquido amniótico amarillento, revelando siluetas indistinguibles que flotan en un sueño letárgico, ajenas a la intrusión.
+> La entidad orgánica se encoge sobre sí misma, vibrando en un tono ámbar errático. No busca refugio en el brazo del protector, sino que observa el techo con un horror paralizante, sin apartar la mirada de su espalda. "No... no estoy a salvo. Solo estamos más adentro", susurra con una entrega quebrada.
+> mecanica
+> Percepción: Éxito (17 vs CD 10). No detectas amenazas inmediatas acechando en las sombras, pero el entorno es biológicamente reactivo.
+> presion
+> Las siluetas en los sacos comienzan a agitarse levemente, reaccionando a la vibración de vuestros pasos sobre el suelo sensible.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1513 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 296 — 281/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2230 ms
+
+> "No temas, no permitiremos que nada te dañe mientras yo esté aquí."
+> Me acerco a la entidad orgánica para darle apoyo y observo los sacos del techo para intentar identificar qué hay en su interior.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 10+1=11
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 11)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5522 ms): «Tú... tú no entiendes. No es el daño lo que me aterra, es que este lugar nos con»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1173 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  19748 ms
+
+> narrativa
+> El acercamiento es firme y el apoyo se siente real, pero la entidad orgánica no encuentra consuelo en la promesa. Se encoge aún más, vibrando en un ámbar pálido y tembloroso, sin despegar la vista de los sacos que comienzan a agitarse arriba. Con una voz que parece quebrarse bajo el peso de una verdad invisible, sentencia: "Tú... tú no entiendes. No es el daño lo que me aterra, es que este lugar nos conoce. Siente el pulso... nos está tragando".
+> Al elevar la mirada hacia el techo, la visión se aclara entre el goteo amniótico. Los sacos translúcidos ya no son simples envoltorios; se distinguen formas vagamente humanoides, con extremidades largas y dedos que arañan la membrana desde dentro. No son criaturas dormidas, sino organismos en proceso de gestación o transformación, y sus movimientos se han vuelto rítmicos, sincronizados con la vibración del suelo.
+> mecanica
+> Percepción: Éxito (11 vs CD 10). Identificas que el contenido de los sacos posee rasgos humanoides y que su actividad está aumentando.
+> presion
+> Los sacos comienzan a descender lentamente, el tejido que los sostiene se estira y el líquido amarillento empieza a caer con más fuerza, empapando el suelo a vuestro alrededor.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2277 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · promise_made
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5703: entidad orgánica affinity 100.0 → 100.0  (mid)
+     Lo anota sin mayor ceremonia.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 297 — 282/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  9227 ms
+
+> "No te dejaré solo en este lugar, sea lo que sea que nos aceche."
+> Me pongo en guardia y desenvaino mi espada, colocándome entre la entidad y los sacos que descienden.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 15+1=16
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 16)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3214 ms): «Tu acero no puede cortar el hambre de este sitio... pero gracias por intentar po»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6820 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  20628 ms
+
+> narrativa
+> El acero brilla bajo la luz difusa de la cámara, cortando el aire húmedo mientras te posicionas como un muro entre el peligro y la criatura. A tu alrededor, el entorno respira: las membranas translúcidas del techo descienden pesadamente, soltando goteos viscosos que se mezclan con el pulso rítmico del suelo. Esa vibración, que ahora se siente más coordinada y urgente, parece dictar el despertar de las formas humanoides que arañan sus envoltorios.
+> La vibración ámbar de la entidad se estabiliza un instante al sentir tu protección. Sin embargo, mantiene la vista fija en los sacos, y su voz suena con una mezcla de gratitud genuina y una resignación absoluta: "Tu acero no puede cortar el hambre de este sitio... pero gracias por intentar ponerte delante".
+> mecanica
+> Percepción: Éxito (16 vs CD 10). Confirmas que el despertar de los organismos es ahora un proceso sincronizado y coordinado por el pulso de la estructura.
+> presion
+> El suelo comienza a segregar un fluido más denso que dificulta el movimiento, mientras los sacos humanoides rozan casi el nivel de vuestras cabezas.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3356 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5710: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 298 — 283/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3240 ms
+
+> "No permitas que el miedo te venza. Mientras yo esté en pie, no te tocarán."
+> Me planto firmemente en el suelo viscoso, manteniendo mi posición defensiva y vigilando la apertura de los sacos.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 16+1=17
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 17)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4940 ms): «Entonces quédate en pie. Porque si caes, no quedará nada en este lugar que recue»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  722 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13039 ms
+
+> narrativa
+> El suelo viscoso cede bajo el peso de tu postura, pero tu equilibrio se mantiene firme, convirtiéndote en un bastión inamovible frente a la amenaza. Tu vigilancia es absoluta; percibes el instante exacto en que las membranas de los sacos se tensan al límite, revelando las siluetas que luchan por emerger, pero tu posición es impenetrable y el perímetro permanece seguro.
+> La entidad orgánica reacciona a tu determinación con un espasmo de luz. Su vibración ámbar oscila violentamente, pasando de la resignación a una intensidad febril, y aunque no aparta la vista de los sacos, su voz adquiere una urgencia casi desesperada, aferrándose a tu promesa como a un ancla: "Entonces quédate en pie. Porque si caes, no quedará nada en este lugar que recuerde que alguna vez hubo alguien dispuesto a luchar por mí."
+> mecanica
+> Percepción: Éxito (17 vs CD 10). Mantienes el control total de la zona y anticipas cualquier movimiento de las criaturas antes de que rompan sus envoltorios.
+> presion
+> El pulso rítmico del suelo se acelera, coordinando el desgarro final de los sacos; las primeras garras comienzan a perforar la membrana.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2133 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · promise_made
+  ⚠ nombres no reconocidos: Percepción, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5714: entidad orgánica affinity 100.0 → 100.0  (mid)
+     Lo anota sin mayor ceremonia.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 299 — 284/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2972 ms
+
+> "No caeré. Mi palabra es mi escudo y mi voluntad es vuestra salvaguardia."
+> Saco mi arma y me preparo para golpear lo primero que rompa el saco. {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 1+1=2  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 2)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (5391 ms): «Tú... tú no entiendes que el escudo se agrieta cuando el miedo te ciega. ¡Cuidad»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  6501 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  16309 ms
+
+> narrativa
+> La seguridad del instante anterior se desvanece en un parpadeo. En el momento de desenvainar, el suelo de tejido orgánico exhala una ráfaga de vapor húmedo que nubla la vista y hace que el pie resbale sobre la masa viscosa. El arma se desplaza torpemente, perdiendo el ángulo de ataque justo cuando las membranas de los sacos estallan en una lluvia de fluido translúcido, dejando el flanco totalmente expuesto al primer asalto.
+> Un destello ámbar violento recorre el cuerpo de la entidad orgánica mientras se lanza instintivamente hacia adelante, no para atacar, sino para intentar corregir la postura torpe del jugador antes de que el primer golpe impacte. "Tú... tú no entiendes que el escudo se agrieta cuando el miedo te ciega. ¡Cuidado!", grita con una urgencia desesperada, interponiéndose entre el acero fallido y la amenaza que emerge de las paredes pulsantes.
+> mecanica
+> Percepción: Fallo (2 vs CD 10). Pierdes la iniciativa y quedas vulnerable al primer ataque de las criaturas.
+> presion
+> Las criaturas han roto sus envoltorios y se lanzan al ataque; la entidad orgánica ha sacrificado su posición para cubrirte, quedando ella misma expuesta.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  4784 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ✓ delta Ilvard · character.conditions = vulnerable
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5719: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+  → delta 5720: Ilvard.conditions = vulnerable
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 300 — 285/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2795 ms
+
+> "¡Atrás! ¡No permitas que te dañen por mi torpeza!"
+> Trato de recuperar el equilibrio rápidamente y levanto mi escudo para cubrir tanto a la entidad como a mí mismo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 23)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3555 ms): «¡Cierra la boca y mantén el escudo firme! ¡No me importa quién reciba el golpe, »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3623 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13809 ms
+
+> narrativa
+> El impulso es rápido y certero. Los pies encuentran tracción sobre la masa viscosa del suelo justo a tiempo para plantar firmemente el peso y elevar el escudo en un arco protector. El metal choca contra el aire húmedo, creando una barrera sólida que absorbe el impacto inminente, salvaguardando el espacio compartido mientras los vapores densos se arremolinan alrededor de las paredes pulsantes y los restos de las membranas estalladas.
+> La entidad orgánica, con las extremidades temblando por el esfuerzo de sostener la carga, grita con una urgencia visceral: "¡Cierra la boca y mantén el escudo firme! ¡No me importa quién reciba el golpe, siempre que no seas tú!". Su cuerpo se tensa contra la presión, aferrándose a la posición de bloqueo con una devoción ciega, mientras el pasillo orgánico parece contraerse a su alrededor.
+> mecanica
+> Atletismo: Éxito (23 vs CD 10). Recuperas el equilibrio y estableces una posición defensiva efectiva.
+> presion
+> El impacto ha sido contenido, pero la masa de criaturas sigue presionando contra el escudo; cualquier vacilación en la fuerza ahora permitirá que el enemigo desborde la defensa.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2454 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5725: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 301 — 286/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1551 ms
+
+> "¡No te preocupes por mí, mantente fuerte!"
+> Aprieto los dientes y empujo el escudo con todas mis fuerzas contra la masa de criaturas para evitar que nos desborden.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 14+4=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2831 ms): «¡Cállate y empuja!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  7028 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9041 ms
+
+> narrativa
+> El esfuerzo se traduce en un impulso sólido que estabiliza la línea. El escudo se clava contra la marea de criaturas, frenando el avance enemigo y devolviendo la presión con una fuerza renovada que impide que el flanco sea vulnerado. Alrededor, el pasillo de paredes carnosas late con un ritmo frenético, mientras el suelo de mucosidad viscosa resbala bajo las botas y los vapores densos, cargados con el hedor a membranas rotas, nublan la vista.
+> La entidad orgánica, con los músculos del cuello tensos y la mirada fija en la brecha del escudo sin apartar la vista del peligro, suelta un gruñido ahogado por el esfuerzo: "¡Cállate y empuja!".
+> mecanica
+> Atletismo: Éxito (18 vs CD 10). Logras repeler la presión y mantener la posición defensiva.
+> presion
+> La línea se mantiene, pero el pasillo orgánico comienza a contraerse, estrechando el espacio y obligando a una lucha de fuerza bruta cada vez más asfixiante.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  953 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 302 — 287/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2322 ms
+
+> "¡No me callaré mientras haya alguien en peligro!"
+> Aprieto los dientes y clavo los pies en el suelo viscoso, poniendo todo mi peso contra el escudo para resistir la contracción del pasillo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 6+4=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4883 ms): «¡Entonces usa ese aire para gritarle a los monstruos, no a mí! ¡Sigue empujando!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3164 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  10485 ms
+
+> narrativa
+> El impulso es seco y firme; los pies encuentran agarre en la mucosidad del suelo justo a tiempo para convertir el peso del cuerpo en un muro infranqueable. El escudo resiste el embate y estabiliza la formación, frenando en seco la marea de criaturas que intentan colapsar la línea. Sin embargo, el entorno reacciona con una violencia visceral: el pasillo comienza a cerrarse como un esfínter gigante, comprimiendo los cuerpos contra las paredes pulsantes y reduciendo el combate a un choque asfixiante de hombros y metal en un espacio claustrofóbico.
+> La entidad orgánica, con los tendones del cuello marcados y el rostro congestionado por la lucha, grita con la voz rasgada por el esfuerzo mientras no deja de presionar el escudo contra la masa enemiga: "¡Entonces usa ese aire para gritarle a los monstruos, no a mí! ¡Sigue empujando!".
+> mecanica
+> Atletismo: Éxito (10 vs CD 10). Logras resistir la contracción del muro y mantener la posición.
+> presion
+> El espacio se reduce drásticamente; si no logran avanzar o romper la formación enemiga, quedarán aplastados por las paredes del pasillo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  37799 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 303 — 288/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1432 ms
+
+> "¡No retrocederemos!"
+> Aprieto los dientes y empujo con todo mi peso contra la marea de criaturas para abrir camino hacia adelante.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3331 ms): «¡Eso es! ¡Sigue así, no les des ni un centímetro!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4821 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  6776 ms
+
+> narrativa
+> El impulso es devastador y preciso. El peso del cuerpo se convierte en una cuña de acero que fractura la resistencia de la marea orgánica, obligando a las criaturas a retroceder y ganando esos centímetros vitales que separan la supervivencia del aplastamiento. El muro de carne que intentaba cerrarse cede ante la fuerza bruta, abriendo una brecha en el pasillo pulsante.
+> La entidad orgánica vuelca todo su peso hacia adelante, apoyando el empuje con una determinación ciega. Con los músculos del cuello tensos y el rostro congestionado por el esfuerzo visceral, lanza un grito que retumba en las paredes: "¡Eso es! ¡Sigue así, no les des ni un centímetro!".
+> mecanica
+> Atletismo: Éxito (15 vs CD 10). Has logrado romper la línea enemiga y ganar terreno.
+> presion
+> A pesar del avance, el pasillo sigue vibrando y las paredes intentan recuperar su cierre; si no mantienen el ritmo de avance, la estructura volverá a comprimirlos contra el enemigo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2059 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · competence_shown
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5749: entidad orgánica affinity 100.0 → 100.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 304 — 289/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1444 ms
+
+> "¡No retrocederemos!"
+> Sigo empujando con todo mi peso para mantener la brecha abierta y avanzar hacia adelante.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 11+4=15
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 15)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2718 ms): «¡Aplastadlos! ¡No dejéis que este pasillo nos trague!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  3141 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  7403 ms
+
+> narrativa
+> El esfuerzo rinde frutos y la brecha se ensancha, obligando a la masa hostil a retroceder mientras el cuerpo se impone como un ariete contra la resistencia biológica. El pasillo, una garganta de tejido húmedo y fibroso que late con un ritmo asmático, reacciona con espasmos rítmicos; las paredes cubiertas de mucosa espesa se contraen violentamente, intentando sellar el camino y aplastar cualquier intruso que ose avanzar por sus entrañas.
+> En medio del caos, la entidad orgánica clava los pies en la carne pulsante para servir de ancla al avance del grupo. Con los dientes apretados y el rostro deformado por la presión y el esfuerzo físico, lanza un grito desgarrador que retumba en el conducto: "¡Aplastadlos! ¡No dejéis que este pasillo nos trague!".
+> mecanica
+> Atletismo: Éxito (15 vs CD 10). Has mantenido la posición y forzado la apertura del camino.
+> presion
+> La garganta orgánica comienza a contraerse con más fuerza. Si el avance no se acelera, los espasmos de las paredes terminarán por cerrar la brecha, atrapando al grupo en un espacio reducido y vulnerable.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  15282 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 305 — 290/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2989 ms
+
+> "¡No retrocedáis! ¡Avanzad con fuerza mientras el camino sigue abierto!"
+> Empujo con todo mi peso contra las paredes de mucosa para intentar mantener la brecha abierta y facilitar el paso.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2276 ms): «¡Sigue empujando! ¡No permitas que nos cierre el paso!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2745 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  9001 ms
+
+> narrativa
+> El esfuerzo resulta insuficiente y la resistencia biológica gana terreno. Las paredes de mucosa, que ahora se ensanchan en una cámara visceral donde gotea un fluido amarillento, se cierran con una fuerza implacable, empujando el cuerpo hacia atrás y amenazando con sellar la salida. El suelo vibra bajo los pies con el latido sordo y rítmico de un corazón distante, coordinando la contracción del entorno para expulsar a los intrusos.
+> La entidad orgánica, con los músculos tensos y el rostro congestionado por el esfuerzo, hinca los pies con fuerza en la mucosa para absorber la presión que se ha vuelto insostenible. Grita con desesperación, luchando por no ser arrastrada: "¡Sigue empujando! ¡No permitas que nos cierre el paso!".
+> mecanica
+> Atletismo: Fallo (7 vs CD 10). No has logrado sostener la brecha y la presión del entorno te está desplazando.
+> presion
+> La cámara visceral se contrae rápidamente. Si no se encuentra una forma de bloquear el cierre o forzar el paso ahora mismo, el grupo quedará atrapado en la cámara, aislados y a merced de los espasmos del organismo.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  2283 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación location: cámara visceral
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location cámara visceral
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 306 — 291/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1780 ms
+
+> "¡No te rindas, sostén mi mano!"
+> Me lanzo hacia delante para ayudar a la entidad, poniendo todo mi peso y fuerza contra las paredes de mucosa para evitar que se cierren.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 14+4=18
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 18)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  2070 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  7366 ms
+
+> narrativa
+> El impulso es decisivo. Al lanzar todo el peso contra las paredes de mucosa, la resistencia biológica cede bajo la presión coordinada, obligando a los tejidos a retraerse y estabilizando la brecha justo antes de que el cierre fuera definitivo. El esfuerzo logra frenar la contracción implacable, ganando el espacio necesario para respirar.
+> Alrededor, la cámara visceral pulsa con una intensidad frenética; las paredes húmedas se agitan violentamente y el fluido amarillento salpica los costados con cada contracción del organismo, que parece luchar contra la intrusión con espasmos erráticos. La entidad orgánica, aunque exhausta, mantiene su posición, observando el avance con una mirada de devoción y alivio.
+> mecanica
+> Atletismo: Éxito (18 vs CD 10). Has logrado estabilizar la brecha y detener el cierre de la cámara.
+> presion
+> El organismo sigue vivo y reaccionando. Si no avanzan rápidamente hacia la salida de la cámara, el sistema biológico podría iniciar una nueva secuencia de contracciones más agresiva para expulsarlos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3330 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · life_saved
+  ✓ delta cámara visceral · location.state = intact
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5768: entidad orgánica affinity 100.0 → 100.0  (any)
+     Deuda de sangre. No se olvida.
+  → delta 5769: cámara visceral.state = intact
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 307 — 292/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1509 ms
+
+> "¡No perdamos ni un segundo! ¡Rápido, hacia la salida!"
+> Me pongo en guardia para proteger el avance y me dirijo rápidamente hacia la salida de la cámara.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 20+4=24  CRÍTICO
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 24)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2134 ms): «¡Muevanse! No dejaremos que este lugar nos trague ahora.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1883 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  6865 ms
+
+> narrativa
+> El impulso es explosivo y preciso. El cuerpo se desliza con una agilidad casi sobrenatural a través del corredor de tejidos palpitantes, sorteando la densidad de la mucosa que se vuelve espesa y pegajosa. A medida que el camino se estrecha hacia el esfínter muscular, los espasmos del organismo se intensifican, provocando que torrentes de fluido amarillento fluyan con violencia por los costados, pero la velocidad del avance es superior a la reacción del entorno.
+> La entidad orgánica acompaña el movimiento con un impulso coordinado, pegando el cuerpo a las paredes para ganar velocidad mientras mantiene la vista fija en la salida. Con un grito que corta la humedad del aire, ordena: "¡Muevanse! No dejaremos que este lugar nos trague ahora."
+> mecanica
+> Atletismo: Éxito Crítico (24 vs CD 10). Has atravesado el corredor con una eficiencia total, asegurando la posición antes de que el esfínter se cerrara.
+> presion
+> El organismo está entrando en una fase de rechazo agudo; el esfínter comienza a contraerse con fuerza. Si no cruzan el umbral inmediatamente, quedarán atrapados en la zona de compresión.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  968 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Crítico, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 308 — 293/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1516 ms
+
+> "¡Rápido, fuera de aquí!"
+> Me lanzo hacia la salida con todas mis fuerzas para salir del organismo antes de que se cierre.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 1+4=5  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 5)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3614 ms): «¡Sujétate a mí! ¡Ahora!»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  11207 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  5459 ms
+
+> narrativa
+> El impulso falla. El pie resbala en la mucosa espesa y el cuerpo pierde la inercia justo cuando las paredes de tejido comienzan a colapsar con una fuerza aplastante. El cierre del esfínter es inevitable y el espacio se reduce a centímetros en una fracción de segundo, amenazando con sellar la salida definitivamente.
+> Antes de que la presión sea total, la entidad orgánica reacciona con un movimiento instintivo y brusco. Lanza un apéndice que se cierra con fuerza sobre el cuerpo del jugador, arrastrándolo violentamente hacia el exterior justo antes de que el músculo se cierre por completo. Mientras lo lanza fuera, grita con urgencia: "¡Sujétate a mí! ¡Ahora!".
+> mecanica
+> Atletismo: Fallo (5 vs CD 10). No has logrado salir por tu cuenta; la entidad orgánica ha tenido que intervenir para rescatarte.
+> presion
+> El organismo ha cerrado su válvula principal. Ahora están fuera, pero el terreno exterior es inestable y el ruido del colapso interno ha alertado a cualquier depredador cercano.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  5223 ms · 1 eventos · 2 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · life_saved
+  ✗ campo fuera de lista blanca: character.location_id
+  ✓ delta entidad orgánica · npc.location_id = exterior
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [12] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → delta 5788: entidad orgánica affinity 100.0 → 100.0  (any)
+     Deuda de sangre. No se olvida.
+  ✗ referencia inexistente: location «exterior»
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 309 — 294/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1498 ms
+
+> "¡Gracias por tu ayuda!"
+> Me aferro con fuerza al apéndice para asegurarme de no caer mientras intento recuperar el equilibrio rápidamente. 
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 3+4=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  ✗ el Actor de entidad orgánica no devolvió una línea válida
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4724 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  7293 ms
+
+> narrativa
+> El intento de recuperar la estabilidad falla; el cuerpo se tambalea sobre una superficie traicionera que cede bajo el peso. El suelo es una membrana elástica y húmeda que vibra con los ecos sordos del colapso interno, haciendo que cada paso sea una lucha contra la inercia. Alrededor, la visibilidad es un rompecabezas de carne y calcio, interrumpida por estructuras óseas que emergen del terreno como costillas gigantescas.
+> La entidad orgánica permanece en silencio, manteniendo el agarre con una determinación férrea mientras el entorno palpita con un ritmo irregular. Sus ojos no se apartan del horizonte, ignorando el agradecimiento, concentrada únicamente en la fragilidad del terreno que los sostiene.
+> mecanica
+> Atletismo: Fallo (7 vs CD 10). No logras recuperar el equilibrio; quedas dependiente del soporte de la entidad para no hundirte en la membrana.
+> presion
+> La vibración del colapso interno se propaga por el suelo elástico como una señal acústica, atrayendo la atención de las criaturas que acechan entre las costillas óseas.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1129 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Fallo
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 310 — 295/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1611 ms
+
+> "No me sueltes, te lo ruego. Mantente firme."
+> Me aferro con fuerza a la entidad para evitar hundirme y busco con la mirada cualquier amenaza que emerja entre los huesos.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 6+1=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3072 ms): «No lo haré. Agárrate fuerte.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  4386 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  8287 ms
+
+> narrativa
+> El suelo cede con un chasquido húmedo, hundiéndose bajo el peso y arrastrando el equilibrio hacia el vacío. Entre las costillas colosales que se elevan y descienden con una respiración lenta y pesada, el paisaje de membranas vibrantes se vuelve una trampa elástica. Mientras la mirada rastrea el entorno, las sombras fibrosas que se deslizan entre los pilares de hueso parecen acelerar su ritmo, respondiendo a la perturbación del terreno con una curiosidad depredadora.
+> La entidad orgánica ancla sus pies en la membrana tensa, flexionando los músculos para absorber el impacto y compensar el peso del otro. Con una voz neutra, casi carente de inflexión, sentencia: "No lo haré. Agárrate fuerte.".
+> mecanica
+> Percepción: Fallo (7 vs CD 10). No logras distinguir la naturaleza de las sombras ni su distancia exacta; solo percibes que se mueven con rapidez hacia vuestra posición.
+> presion
+> Las criaturas fibrosas han localizado el punto de vibración; si no logran estabilizarse y moverse, quedarán atrapados en la membrana justo cuando las sombras emerjan de los pilares óseos.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  987 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 311 — 296/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  1614 ms
+
+> "¡Confío en ti!"
+> Me aferro con fuerza a la entidad mientras intento mantener el equilibrio y preparo mi arma para defendernos.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 19+4=23
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 23)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (2915 ms): «Confianza es un concepto abstracto. El agarre, en cambio, es físico. No te suelt»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  83933 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  14090 ms
+
+> narrativa
+> El agarre es firme y el equilibrio se recupera con una precisión quirúrgica, evitando que el resbalón termine en una caída fatal. A vuestro alrededor, el valle de costillas colosales continúa su danza hipnótica; las membranas elásticas palpitan con una respiración profunda y pesada, mientras el suelo, una red de fibras húmedas y resbaladizas, oscila violentamente bajo vuestros pies.
+> La entidad orgánica no desvía la mirada del horizonte, manteniendo la tensión muscular al máximo para estabilizar ambos cuerpos frente al movimiento del terreno. Con una voz gélida y pragmática, sentencia: "Confianza es un concepto abstracto. El agarre, en cambio, es físico. No te sueltes.".
+> mecanica
+> Atletismo: Éxito (23 vs CD 10). Logras estabilizarte completamente y recuperar la posición de combate.
+> presion
+> La estabilidad es temporal; las sombras fibrosas ya están emergiendo de los pilares óseos y el terreno seguirá latiendo, complicando cualquier intento de retirada o contraataque.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1218 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 312 — 297/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3201 ms
+
+> "Tienes razón. Me aferro a lo tangible."
+> Sujeto con fuerza el agarre mientras busco el punto débil de esas sombras que emergen.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 6+1=7
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 7)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (6872 ms): «Bien. Mantén el centro de gravedad bajo. Si el suelo se contrae, no luches contr»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  49356 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  18225 ms
+
+> narrativa
+> El valle de costillas comienza a cerrarse con una presión asfixiante; las membranas que sirven de suelo se tensan y se contraen en espasmos rítmicos, mientras las sombras fibrosas se deslizan desde los pilares óseos como aceite negro, envolviéndolos en un semicírculo opresivo. A pesar del esfuerzo por analizar el enemigo, la oscuridad es densa y amorfa; no hay una grieta evidente, ni un núcleo expuesto, solo una masa viscosa que parece absorber la luz y el sentido de la distancia.
+> La entidad orgánica sigue sosteniéndote con una fuerza imperturbable, sin mirarte, analizando la trayectoria de las sombras con una frialdad calculadora. "Bien. Mantén el centro de gravedad bajo. Si el suelo se contrae, no luches contra el movimiento; fluye con él o nos arrastrará a ambos", advierte con un tono clínico, ignorando la incertidumbre de tu búsqueda.
+> mecanica
+> Percepción: Fallo (7 vs CD 10). No logras identificar ningún punto débil en las sombras antes de que cierren el cerco.
+> presion
+> Las sombras ya han completado el semicírculo y el terreno está a punto de contraerse violentamente, lo que os dejará vulnerables al primer ataque si no encontráis una salida o una defensa inmediata.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1155 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Fallo, Percepción
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 313 — 298/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3954 ms
+
+> "No os preocupéis, yo os sostendré."
+> Me planto firmemente en el suelo, preparándome para absorber el impacto de la contracción y proteger a quien me acompaña.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Atletismo: 18+4=22
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 22)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4530 ms): «Agradezco la intención, pero no confundas firmeza con resistencia. Si te anclas »
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  23953 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13877 ms
+
+> narrativa
+> El cuerpo se tensa y los pies se clavan con fuerza en la membrana vibrante, logrando estabilizar el eje del grupo justo cuando el pasillo visceral se estrecha. Las paredes óseas se curvan hacia adentro con un crujido húmedo, reduciendo el espacio a unos pocos metros antes de que la oscuridad amorfa colapse sobre vosotros, pero la resistencia es sólida y el impacto de la contracción no logra desequilibraros.
+> Sin soltar el agarre, la entidad orgánica ajusta la presión de sus dedos para obligarte a flexionar las rodillas, manteniendo la mirada fija en el avance de las sombras. "Agradezco la intención, pero no confundas firmeza con resistencia. Si te anclas demasiado, el espasmo te romperá los tobillos antes de que puedas sostener a nadie. Déjate llevar por el ritmo", advierte con una calma gélida mientras el entorno sigue pulsando.
+> mecanica
+> Atletismo: Éxito (22 vs CD 10). Has logrado absorber el impacto de la contracción y mantener la estabilidad del grupo.
+> presion
+> El espacio se ha reducido drásticamente; cualquier movimiento errático o exceso de rigidez ahora que las sombras están encima podría provocar una lesión grave o dejaros atrapados contra las paredes óseas.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1301 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Atletismo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 314 — 299/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2873 ms
+
+> "Tienes razón. Confío en tu guía."
+> Relajo la tensión de mis piernas y me dejo llevar por el movimiento de la entidad, siguiendo su ritmo para evitar que el espacio me atrape.
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  sin tiradas declaradas
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=False · pnj_que_responden=['entidad orgánica'] · altera_estado=False · peso=conversacional
+
+### [5] ÁRBITRO
+
+  no requerido este turno
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4371 ms): «Bien. Mantén esa fluidez. No luches contra el pulso, conviértete en parte de él.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  21815 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  11243 ms
+
+> narrativa
+> El pasillo se abre finalmente en una cámara pulsante, donde los arcos irregulares de hueso gotean un fluido ámbar que cae con un sonido rítmico sobre el suelo blando. En el centro del espacio, una membrana translúcida vibra al compás de un corazón invisible, permitiendo vislumbrar siluetas inquietantes que se desplazan en el exterior, separadas apenas por esa fina piel orgánica.
+> La entidad orgánica sigue ajustando la presión de su agarre, guiando el cuerpo con movimientos precisos y casi instintivos mientras avanzan entre las paredes óseas. Con una calma imperturbable, susurra: "Bien. Mantén esa fluidez. No luches contra el pulso, conviértete en parte de él".
+> mecanica
+> No se han realizado tiradas en este turno.
+> presion
+> Las siluetas tras la membrana parecen notar vuestra presencia; cualquier ruido brusco o ruptura del ritmo podría atraer su atención hacia el interior de la cámara.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1923 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 315 — 300/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  2863 ms
+
+> "No permitiré que estas criaturas sigan perturbando la paz de este lugar."
+> Intento moverme con suavidad para no alertar a las siluetas mientras me acerco a la membrana.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Sigilo: 10+0=10
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 10)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (3931 ms): «La paz es un concepto frágil aquí. Si decides romperla, hazlo sin que el ritmo s»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  5114 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  30987 ms
+
+> narrativa
+> El avance es fluido y preciso; cada paso se hunde en la masa esponjosa de tejido conectivo que recubre el suelo, amortiguando el ruido mientras el aire, cargado de un denso aroma a almizcle y resina, se vuelve más pesado. La membrana central, que se tensa y relaja como un pulmón gigante, vibra a escasos centímetros, separando la calma húmeda de la cámara del caos que acecha en el exterior.
+> La entidad orgánica mantiene la presión de su agarre, ajustando la posición del cuerpo para asegurar que el movimiento no pierda su cadencia, y susurra con un tono gélido y rítmico: "La paz es un concepto frágil aquí. Si decides romperla, hazlo sin que el ritmo se detenga, o nos absorberá a todos antes de que puedas dar el primer golpe."
+> mecanica
+> Sigilo: Éxito (10/10). Has logrado acercarte a la membrana sin alertar a las siluetas.
+> presion
+> La membrana comienza a dilatarse más de lo normal, reduciendo la distancia entre tú y las siluetas; cualquier vacilación en el ritmo ahora sería inevitablemente detectada.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1315 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Sigilo, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 316 — 301/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3148 ms
+
+> "Entendido. Mantendré el paso."
+> Me concentro en imitar el ritmo de la entidad, moviéndome con cautela para no romper la cadencia mientras observo a las siluetas.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Percepción: 13+1=14
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: éxito (CD 10, resultado 14)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (4548 ms): «Bien. Sigue mi pulso, no el tuyo.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  13415 ms · boceto=sí · semilla_plantada=None
+
+### [8] NARRADOR
+
+  13745 ms
+
+> narrativa
+> El movimiento se sincroniza con una precisión quirúrgica, fundiendo los pasos en una sola frecuencia que el entorno parece aceptar como propia. Alrededor, la galería se despliega en paredes que pulsan con una vida propia y rítmica, mientras las siluetas se deslizan en una danza geométrica y ciega; son sombras que ignoran la presencia de cualquier ser que haya aprendido a respirar al unísono con el latido de la membrana.
+> La entidad orgánica ajusta su agarre, transformándolo en una guía mecánica y casi imperceptible que transmite la vibración exacta del suelo directamente al cuerpo. Sin apartar la mirada de la membrana, susurra con una seguridad absoluta: "Bien. Sigue mi pulso, no el tuyo."
+> mecanica
+> Percepción: Éxito (CD 10 / Resultado 14). Logras descifrar el patrón de movimiento de las siluetas y coordinar tu avance sin romper la frecuencia del entorno.
+> presion
+> La danza de las siluetas comienza a cerrarse sobre el camino; si el ritmo se desincroniza ahora, quedarás expuesto en el centro de su trayectoria geométrica.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  1813 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Percepción, Resultado, Éxito
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 317 — 302/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3278 ms
+
+> "Entendido. Confío en tu guía."
+> Cierro los ojos un instante para concentrarme únicamente en la vibración que me transmite la entidad y sigo su pulso con precisión.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Acrobacias: 9+0=9
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 9)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (83064 ms): «No cierres los ojos. Siente el vacío, no el recuerdo del paso.»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  1331 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  18494 ms
+
+> narrativa
+> El intento de aislar los sentidos falla en el momento crítico; al cerrar los ojos, la conexión con la vibración se fragmenta y el equilibrio se quiebra, provocando un tropiezo brusco que amenaza con romper la sincronía del avance. Justo antes de que el cuerpo colapse y quede expuesto ante las siluetas, el agarre de la entidad orgánica se vuelve un milisegundo más firme, corrigiendo la trayectoria con un tirón seco pero preciso.
+> Mientras devuelve la estabilidad al paso, la entidad susurra con una severidad gélida: "No cierres los ojos. Siente el vacío, no el recuerdo del paso."
+> mecanica
+> Acrobacias: Fallo (CD 10 / Resultado 9). Pierdes el equilibrio al intentar concentrarte, pero la entidad evita que sufras consecuencias graves.
+> presion
+> La desincronización ha alertado brevemente a las sombras; el margen de error se ha reducido y cualquier otro fallo en el ritmo provocará que las siluetas intercepten el camino.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  3188 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento entidad orgánica · bond_target_protected
+  ⚠ nombres no reconocidos: Acrobacias, Fallo, Resultado
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5863: entidad orgánica affinity 100.0 → 100.0  (any)
+     Tocaron lo que protegería por encima de todo, en la buena direcció
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 318 — 303/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+
+  3689 ms
+
+> "Lo siento. No volverá a ocurrir."
+> Abro los ojos y me fuerzo a ignorar mis instintos, concentrándome únicamente en la sensación del vacío que me describe la entidad. Intento recuperar el ritmo exacto de la marcha.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema, compartido con G2)
+
+  Acrobacias: 1+0=1  PIFIA
+
+### [4] ROUTER (determinista, sin LLM)
+
+  modo=en_rol · requiere_arbitro=True · pnj_que_responden=['entidad orgánica'] · altera_estado=True · peso=consecuente
+
+### [5] ÁRBITRO
+
+  veredicto mecánico: fallo (CD 10, resultado 1)
+
+### [6] ACTOR(ES)
+
+  entidad orgánica (9954 ms): «Tus disculpas no detienen el tiempo, ni el hambre de lo que nos acecha. No piens»
+
+### [7] MUNDO
+
+  necesita_llm=True · lugar_repite=False · lugar_necesita_boceto=True
+  21157 ms · boceto=no · semilla_plantada=None
+
+### [8] NARRADOR
+
+  201218 ms
+
+> narrativa
+> El intento de recuperar el compás resulta desastroso; el cuerpo se vuelve torpe y el paso se descoordina por completo, provocando un desplome que rompe la armonía del avance. Antes de que el impacto contra el suelo sea inevitable, la entidad orgánica reacciona con un tirón brusco y violento que redirige el cuerpo, evitando la caída total pero dejando una marca de tensión dolorosa en el agarre.
+> Sin soltar el presa, la entidad susurra con una severidad que no admite réplica: "Tus disculpas no detienen el tiempo, ni el hambre de lo que nos acecha. No pienses en el error; conviértete en el ritmo, o nos convertiremos en ruido."
+> mecanica
+> Acrobacias: Pifia (CD 10 / Resultado 1). El fallo es crítico; pierdes totalmente la sincronía y dependes enteramente de la fuerza de la entidad para no caer.
+> presion
+> La pifia ha generado una perturbación acústica y rítmica considerable. Las siluetas ya no solo están alerta, sino que han comenzado a cerrar el cerco, reduciendo el espacio de maniobra para el siguiente paso.
+
+### [9] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [10] EXTRACTOR (compartido con G2)
+
+  36711 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [11] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Acrobacias, Pifia, Resultado
+
+### [12] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [13] ESTADO DESPUÉS
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 319 — 304/1385 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  entidad orgánica: alive, aprecio 100.0 (devoted), 0 hechos conocidos
+
+### [2] JUGADOR — Ilvard
+

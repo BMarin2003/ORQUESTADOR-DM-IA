@@ -1,0 +1,107 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 21 (real) · G1 (Multiagente) · La Ceniza Mansa · mas
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        9 (  0.6%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                    0 (  0.0%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             47 (  3.4%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.215  [0.133, 0.459]
+    qn1_ttr                                n=1400  prom=0.683  [0.593, 0.776]
+    qn1_ngram_repeticion                   n=1400  prom=0.034  [0.000, 0.113]
+    qn1_legibilidad_fh                     n=1400  prom=60.459  [39.870, 75.390]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.123  [0.000, 0.700]
+  CR-2 turnos con algún nombre no reconocido: 1398
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  44 visitas distintas · 8 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: El Camarote del Capitán ↔ cámara de válvulas ↔ cámara técnica ↔ muelle de carga ↔ pasillo técnico ↔ ranura de acceso al Protocolo de Despertar ↔ rejilla de ventilación ↔ válvula de purga manual (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1205 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: El Camarote del Capitán, El Mar de la Bonanza, La Ceniza Mansa, muelle de carga, rejilla de ventilación
+    turno 1: El Camarote del Capitán, La Ceniza Mansa
+    turno 2: El Camarote del Capitán, La Ceniza Mansa
+    turno 3: El Camarote del Capitán, La Ceniza Mansa, muelle de carga
+    turno 4: La Ceniza Mansa, muelle de carga
+  camino (primeras y últimas visitas):
+    turno  11 → muelle de carga
+    turno  12 → El Camarote del Capitán
+    turno  41 → pasillo técnico
+    ...
+    turno 784 → pasillo técnico
+    turno 1116 → cámara de válvulas
+    turno 1137 → pasillo técnico
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  Los Oficiales de la Ceniza disparó en turno 240 · ✓ reconocido en turno 241
+    agenda: El agua dulce se acaba y hay que decidir quién bebe y cuánto mientras el régimen de encierro sigue en pie
+  La Marinería de Cubierta disparó en turno 640 · ✓ reconocido en turno 641
+    agenda: La marinería pierde la paciencia con el régimen de encierro y se prepara para abrir la bodega por su cuenta
+  Los Oficiales de la Ceniza disparó en turno 1000 · ✓ reconocido en turno 1001
+    agenda: El mar cobra lo que se le debe: una tormenta sin viento previo se acerca por el horizonte, y no espera a que la tripulación se ponga de acuerdo
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 2.833  (sobre 10 secciones; máximo teórico = 4.5)
+    técnico: Ci=4.5  (primera mención sección 0, última sección 9)
+    Dolores Anzuelo: Ci=2.0  (primera mención sección 0, última sección 4)
+    Reia: Ci=2.0  (primera mención sección 5, última sección 9)
+  V promedio = 0.096  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    técnico: Vi=0.126  (1295 atributos propios detectados)
+    Dolores Anzuelo: Vi=0.111  (567 atributos propios detectados)
+    Reia: Vi=0.05  (160 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=0.500  (2/4)
+    npc.affinity     recall=0.167  (1/6)
+  recall global: 0.300  (10 deltas evaluables)
+  7 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  122 · Parásito eléctrico · npc.status=dead
+    turno  312 · Parásito eléctrico · npc.status=dead
+    turno  706 · técnico · npc.affinity=cold
+    turno  904 · técnico · npc.affinity=wary
+    turno 1293 · técnico · npc.affinity=cordial
+    turno 1359 · técnico · npc.affinity=loyal
+    turno 1364 · técnico · npc.affinity=devoted
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.997  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.988  (min 0.965, max 0.998, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.026  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  ningún turno con cl2_pnj_inactivo_actua=true en esta campaña -- nada que reclasificar
+
+==========================================================================
+

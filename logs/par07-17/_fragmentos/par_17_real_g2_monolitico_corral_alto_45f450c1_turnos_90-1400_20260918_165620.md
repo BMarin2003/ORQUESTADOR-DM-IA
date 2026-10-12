@@ -1,0 +1,26533 @@
+
+# VERTICAL SLICE — Par 17 (real) · G2 (Monolítico) · Corral Alto (monolithic)
+
+- **DM:** `google/gemma-4-31B-it`
+- **jugador:** `google/gemma-4-31B-it` (Wynn, desvío 55)
+- **turno:** 90
+
+## Turno 90 — 1/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2216 ms
+
+> Me pego a la pared más cercana, fundiéndome con las sombras para desaparecer de la vista de quien entre.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 8+4=12
+
+### [4] DM
+
+  9602 ms
+
+> Te deslizas contra el frío muro, intentando que la oscuridad te absorba, pero el movimiento es torpe y el espacio es reducido. El corazón te late con fuerza en los oídos mientras la puerta se abre con un chirrido lento. Una silueta recortada por la luz del pasillo entra en la estancia, sosteniendo una pequeña lámpara de aceite que proyecta sombras alargadas y danzantes por toda la habitación.
+> El desconocido hace una pausa, moviendo el haz de luz con cautela. La llama oscila y, durante un segundo, el resplandor roza tu posición, revelando el contorno de tu cuerpo contra la pared. El individuo suelta un jadeo ahogado y retrocede un paso, llevando una mano al pomo de una daga en su cinturón.
+> —¿Quién está ahí? —pregunta con una voz tensa y quebrada—. ¡Sal ahora mismo o gritaré!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2563 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 91 — 2/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3030 ms
+
+> "No grites y no tendremos que limpiar la sangre del suelo."
+> Salgo de las sombras con calma, manteniendo una mano cerca de mi arma pero sin desenvainar, analizando su reacción.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 7+2=9
+
+### [4] DM
+
+  9445 ms
+
+> El desconocido se queda petrificado, con los dedos apretando el pomo de la daga, pero su mano tiembla visiblemente. Al escuchar tu amenaza, sus ojos se abren con pánico y el haz de luz de la lámpara oscila violentamente, iluminando el techo y el suelo en movimientos erráticos.
+> —Yo... yo no... —balbucea, retrocediendo hasta que su espalda choca contra el marco de la puerta. El hombre traga saliva con dificultad, incapaz de sostenerte la mirada, y aunque no suelta el arma, su postura se desmorona, dejando claro que el miedo ha ganado la partida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  95553 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 92 — 3/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3364 ms
+
+> "Suelta la daga y dime qué es lo que realmente guardas aquí."
+> Me acerco lentamente hacia él, manteniendo la presión psicológica.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 8+2=10
+
+### [4] DM
+
+  7235 ms
+
+> El desconocido se queda anclado contra el marco de la madera, con el pecho subiendo y bajando en espasmos cortos. Te mira con una mezcla de terror y desesperación, pero la presión de tu acercamiento no es suficiente para quebrantar su voluntad por completo; sus dedos se cierran con más fuerza sobre el mango de la daga, aunque el arma siga oscilando debido al temblor de su mano.
+> —¡No puedo! —estalla en un susurro ronco, apretando los dientes—. No sabes quién me paga por esto... Si lo suelto, estoy muerto antes de que termine la noche. ¡Aléjate!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  28538 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 93 — 4/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2947 ms
+
+> "Todos tenemos un precio, o un miedo más grande que el de morir hoy."
+> Me acerco un paso más, manteniendo el contacto visual y buscando cualquier signo de debilidad en su postura.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  10944 ms
+
+> El hombre palidece, y el color huye de su rostro hasta dejarlo ceniciento. Cuando das ese paso final, la distancia desaparece y el aire parece espesarse; el temblor de su mano se vuelve incontrolable y la daga, que hace un segundo parecía una amenaza, ahora es solo un trozo de metal que choca rítmicamente contra el marco de madera. Sus ojos se dilatan, reflejando que el terror a tu presencia ha eclipsado por completo el miedo a quien le paga.
+> —¡Vale, vale! ¡Suéltame! —gime, soltando el arma que cae al suelo con un tintineo metálico. Se desploma contra la pared, deslizándose hasta quedar sentado en el suelo, con los hombros hundidos y la respiración rota—. No me mates... te lo diré todo. Solo... por favor, no me hagas daño.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1637 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 94 — 5/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3142 ms
+
+> "Habla. Y hazlo rápido."
+> Me quedo de pie frente a él, manteniendo el espacio personal invadido para que no olvide su posición. Observo sus alrededores mientras espero la respuesta.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+0=6
+
+### [4] DM
+
+  10932 ms
+
+> El hombre se encoge más contra la madera, sollozando mientras intenta recuperar el aire. Sus ojos saltan nerviosos de tu rostro a la puerta, y aunque sus palabras fluyen con desesperación, hay una vacilación antinatural en su tono, como si estuviera omitiendo nombres clave o simplificando la historia para evitar que busques a alguien más.
+> —Me pagaron... solo me pagaron para asustar a los de la Casa Roth —balbucea, limpiándose la nariz con la manga—. Un hombre con una capa oscura, alguien que no quiere que se le vea la cara. Me dijo que Bibiana estaba siendo "demasiado ambiciosa" y que necesitaba un recordatorio de que el poder tiene garras. No sé quién es, lo juro, solo me dio el oro y me dijo dónde encontrar a sus simpatizantes.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  26592 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 95 — 6/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  12643 ms
+
+> "No me interesan tus juramentos, sino los detalles. ¿Dónde están esos simpatizantes?"
+> Sigo presionándolo, buscando cualquier gesto que delate que miente sobre el hombre de la capa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 11+0=11
+
+### [4] DM
+
+  6303 ms
+
+> El hombre se encoge aún más, sintiendo la presión de tu mirada. Sus dedos tamborilean nerviosamente contra la madera y evita el contacto visual, fijando la vista en un punto impreciso del suelo mientras traga saliva con dificultad. 
+> —¡En el callejón de los Tejedores! —suelta en un arranque de pánico, señalando torpemente hacia la salida—. Un almacén viejo, al final de la calle. Por favor, ya he dicho todo lo que sé, no me hagas daño.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5362 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación location: callejón de los Tejedores
+  ⚠ nombres no reconocidos: Tejedores
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location callejón de los Tejedores
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 96 — 7/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2287 ms
+
+> "Suficiente. No me hagas mentir."
+> Suelto la presión sobre él y me alejo lentamente hacia la salida, memorizando la dirección. {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+0=8
+
+### [4] DM
+
+  8403 ms
+
+> El hombre exhala un suspiro tembloroso y se desploma contra la madera, frotándose la zona donde sentía la presión, con los ojos cerrados y el pecho subiendo y bajando con rapidez. Se queda allí, reducido a un ovillo de nervios, sin atreverse a levantar la vista mientras te retiras.
+> Al salir al aire libre, el bullicio de la ciudad envuelve la escena, pero la confesión del hombre resuena con claridad. No hay señales evidentes de que haya omitido detalles cruciales o que haya intentado engañarte en el momento del pánico; simplemente parece un hombre roto y aterrorizado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3370 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 97 — 8/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  5831 ms
+
+> "No te muevas. Si vuelvo a verte, será para terminar el trabajo."
+> Me aseguro de que no tenga nada de valor en sus bolsillos antes de marcharme definitivamente.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 7+4=11
+
+### [4] DM
+
+  6449 ms
+
+> El hombre se tensa violentamente ante la amenaza, encogiéndose aún más contra la madera, con la respiración contenida y el rostro hundido entre las rodillas. No emite sonido alguno, permaneciendo petrificado mientras el miedo lo ancla al suelo.
+> Tus dedos rebuscan rápidamente entre las costuras de su ropa y los bolsillos raídos, pero no encuentras nada más que algunas pelusas y un trozo de tela gastada. El hombre no posee monedas, joyas ni ningún objeto de valor que merezca el esfuerzo del robo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1512 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 98 — 9/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4130 ms
+
+> "Qué desperdicio de tiempo."
+> Lo sujeto con fuerza por el cuello de la camisa para obligarlo a mirarme.
+> "Dime dónde guardas lo que realmente importa o dejaré que el miedo te asfixie."
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 14+2=16
+
+### [4] DM
+
+  6652 ms
+
+> El hombre emite un gorgoteo ahogado mientras lo obligas a levantar la cabeza, sus ojos desorbitados y húmedos reflejan el pánico puro. El rostro, pálido y sudoroso, se contrae en una mueca de desesperación mientras lucha por inhalar el aire que el agarre de tu mano le niega.
+> —¡En el... en el hueco! —estalla en un grito rasposo, sollozando violentamente—. ¡Bajo la tercera tabla del suelo, detrás del barril de salmuera! ¡Por favor, suélteme, no sé nada más!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1754 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 99 — 10/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2185 ms
+
+> "Hablas demasiado."
+> Lo suelto bruscamente y me desplazo hacia el barril de salmuera para buscar la tabla.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+1=2  PIFIA
+
+### [4] DM
+
+  9077 ms
+
+> El hombre cae al suelo como un saco de patatas, jadeando y tosiendo mientras se lleva las manos al cuello, temblando violentamente en el suelo. Te desplazas con rapidez hacia el barril de salmuera, pero en tu premura por localizar la tabla, tropiezas con una viga saliente del suelo. El impacto desestabiliza el pesado barril, que se vuelca con un estrépito sordo, derramando el líquido salino y los vegetales encurtidos sobre las tablas, inundando la zona que debías inspeccionar.
+> El suelo queda cubierto por una capa resbaladiza de salmuera y trozos de col, ocultando cualquier marca o hendidura en la madera bajo un charco turbio. El hombre, aprovechando el caos y el ruido del accidente, retrocede arrastrándose por el suelo, alejándose de ti con la mirada fija en la salida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1474 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 100 — 11/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3628 ms
+
+> "No vayas a ninguna parte."
+> Me lanzo sobre el hombre para inmovilizarlo antes de que llegue a la puerta.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 4+-1=3
+
+### [4] DM
+
+  9815 ms
+
+> Tus botas resbalan violentamente sobre la col y el líquido salino justo en el momento del impulso. El movimiento es torpe y errático; pierdes el equilibrio casi al instante, describiendo un arco incómodo que te deja caer de bruces contra las tablas mojadas con un golpe seco.
+> El hombre, que se arrastraba con desesperación, aprovecha tu caída para impulsarse con un último esfuerzo. Se pone en pie tambaleándose y, sin mirar atrás, se lanza hacia la puerta, desapareciendo en el exterior mientras sus pasos apresurados resuenan sobre la madera.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2132 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 101 — 12/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4218 ms
+
+> "Maldita sea."
+> Me levanto rápidamente, limpiándome la cara con el dorso de la mano, y me dirijo hacia la puerta para intentar alcanzar al hombre.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 8+-1=7
+
+### [4] DM
+
+  33551 ms
+
+> Tus movimientos son pesados y torpes mientras intentas recuperar la compostura. Al lanzarte hacia la salida, tus pies vuelven a traicionar tu impulso sobre el suelo resbaladizo, obligándote a dar pasos cortos y vacilantes que consumen los segundos críticos.
+> Para cuando alcanzas el umbral y asomas la mirada al exterior, el hombre ya ha ganado demasiada distancia. Solo alcanzas a ver el rastro de su capa desapareciendo tras el giro de una esquina, perdiéndose rápidamente entre los callejones y el bullicio de la ciudad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2089 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 102 — 13/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  6007 ms
+
+> "Maldita sea."
+> Me detengo un instante para recuperar el aliento y observo el suelo y las paredes cercanas buscando cualquier señal que el hombre haya dejado al huir.
+> {Supervivencia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Supervivencia: 20+0=20  CRÍTICO
+
+### [4] DM
+
+  51348 ms
+
+> El aire frío de la calle golpea tu rostro mientras recuperas el aliento, pero tu mirada se clava con precisión quirúrgica en el entorno. Entre el caos de la zona, detectas un detalle insignificante para cualquiera: una pequeña mancha de aceite oscuro y denso que salpica el borde de un adoquín y que se arrastra en una línea tenue hacia el callejón. No es aceite común; tiene un brillo irisado y un aroma metálico, casi químico, que destaca sobre el hedor a pescado y humedad de la ciudad.
+> Siguiendo el rastro, notas que la mancha se vuelve más frecuente allí donde el hombre tuvo que pivotar bruscamente para girar la esquina, dejando una huella clara en la piedra gris. Además, un trozo de hilo de seda color carmesí, desprendido probablemente por el roce con una pared rugosa, cuelga de una saliente de piedra a la altura de la cintura, moviéndose levemente con la brisa y señalando la dirección exacta de su huida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2090 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 103 — 14/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3121 ms
+
+> "Interesante."
+> Me agacho para analizar la sustancia del aceite y luego recojo el hilo de seda, guardándolo en mi bolsillo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+1=16
+
+### [4] DM
+
+  9905 ms
+
+> Al acercar el rostro a la mancha, el aroma metálico se intensifica, revelando una viscosidad inusual que no se mezcla con el agua de lluvia. La sustancia es un lubricante refinado, del tipo que se utiliza exclusivamente en los mecanismos de relojería de alta precisión o en los dispositivos de alchemy más costosos; no es algo que un ciudadano común, ni siquiera un comerciante promedio, llevaría manchando su ropa.
+> El hilo de seda carmesí que recuperas es grueso y de una calidad excepcional, con un tejido tan cerrado que sugiere que pertenecía a una prenda de gala o a un uniforme de rango. Mientras guardas la muestra, el rastro de aceite continúa, marcando el camino hacia la profundidad del callejón, donde las sombras comienzan a tragarse la luz del día.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7759 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = hilo de seda carmesí
+  ✓ creación item: hilo de seda carmesí
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item hilo de seda carmesí
+  → delta 4064: Wynn.inventory = hilo de seda carmesí
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 104 — 15/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 687 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2524 ms
+
+> "Interesante. Alguien con gustos caros ha tenido un accidente."
+> Sigo el rastro de aceite hacia el fondo del callejón, moviéndome con cautela para no hacer ruido.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 18+4=22
+
+### [4] DM
+
+  10534 ms
+
+> Tus pasos son imperceptibles, fundiéndose con el goteo rítmico de las canalías y el eco distante del mercado. Te deslizas por el callejón como una sombra más, evitando las tablas sueltas y los escombros que podrían traicionarte. El rastro de aceite brilla con un matiz irisado bajo la luz tenue, guiándote con precisión quirúrgica hacia el fondo del pasaje.
+> Al final del camino, el callejón desemboca en un pequeño patio interior cerrado por muros de piedra húmeda. Allí, apoyado contra una pared cubierta de hiedra marchita, se encuentra un hombre jadeante. Viste una casaca de seda carmesí, ahora rasgada en el hombro y manchada de ese mismo lubricante dorado, que gotea lentamente sobre sus botas de cuero fino. Sostiene un objeto metálico, una esfera de intrincados engranajes que emite un clic errático, mientras mira nerviosamente hacia atrás, hacia la entrada por donde acabas de llegar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4520 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación npc: Hombre de la casaca carmesí
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: npc Hombre de la casaca carmesí
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 105 — 16/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2794 ms
+
+> "Pareces estar en un apuro. Esa esfera no parece querer colaborar."
+> Me mantengo en la penumbra, sin revelar mi posición del todo, mientras observo el objeto y el estado del hombre.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+0=8
+
+### [4] DM
+
+  7623 ms
+
+> El hombre da un respingo violento, golpeando la espalda contra el muro de piedra. Sus ojos se disparan hacia la penumbra donde te encuentras, pero no logra distinguirte con claridad; solo ve una silueta que emerge de la oscuridad. Aprieta la esfera contra su pecho, protegiéndola con un brazo tembloroso, mientras su respiración agitada empaña el aire fresco del patio.
+> —¿Quién... quién está ahí? —balbucea, retrocediendo un paso más hasta quedar atrapado por la hiedra—. No es asunto tuyo. Solo es un... un fallo técnico. ¡Lárgate si no quieres que te involucren en esto!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1854 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 106 — 17/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 340 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2356 ms
+
+> "El problema es que ahora sí es asunto mío."
+> Salgo lentamente de las sombras, manteniendo una postura relajada pero dominante, y me acerco al hombre sin dejar de mirar la esfera.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 9+2=11
+
+### [4] DM
+
+  11840 ms
+
+> El hombre traga saliva, observando cómo tu silueta se materializa bajo la luz tenue. A medida que acortas la distancia, su pecho sube y baja con rapidez, pero el efecto dominante que buscas no termina de quebrarlo; el miedo inicial se transforma en una mezcla de irritación y pánico defensivo. Se encoge contra la hiedra, apretando la esfera con tanta fuerza que sus nudillos se vuelven blancos.
+> —¡He dicho que te largues! —espeta con la voz todavía quebrada, aunque intenta sonar firme—. No sé quién eres ni qué quieres, pero no voy a entregarte esto. ¡Vete ahora mismo o gritaré hasta que medio patio esté aquí!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5604 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4076: Hombre de la casaca carmesí affinity 0.0 → -10.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 107 — 18/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos conocidos
+  19 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2493 ms
+
+> "Gritar solo hará que el ruido atraiga a quienes no son tan pacientes como yo."
+> Me acerco un paso más, manteniendo la calma, y extiendo la mano lentamente hacia la esfera.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 1+2=3  PIFIA
+
+### [4] DM
+
+  10451 ms
+
+> Al extender la mano, calculas mal la distancia o tropiezas con una raíz traicionera de la hiedra. El movimiento, que pretendía ser una amenaza pausada y gélida, termina siendo un desplome torpe que te deja en una posición vulnerable y ridícula, rompiendo por completo cualquier aura de peligro que hubieras intentado proyectar.
+> El hombre parpadea, procesando la escena. Su pánico se evapora instantáneamente para dar paso a una expresión de absoluto desprecio. Suelta una carcajada nasal, seca y cargada de arrogancia, mientras retrocede un paso para alejarse de tu torpeza.
+> —¿Esto es lo mejor que tienes? Patético —escupe, recuperando la compostura y apretando la esfera contra su pecho con renovada seguridad—. Ahora sí que te largas, antes de que decida que divertirme a tu costa es más interesante que huir.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1203 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 108 — 19/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos conocidos
+  19 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2405 ms
+
+> "Tú tienes la esfera, pero yo tengo la ventaja de estar ya en el suelo."
+> Me lanzo hacia sus piernas para derribarlo aprovechando que ya estoy abajo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 9+-1=8
+
+### [4] DM
+
+  7297 ms
+
+> Te impulsas con brusquedad, buscando el centro de gravedad del hombre para arrastrarlo contigo al barro. Sin embargo, el movimiento es desorganizado y carece de fuerza; tus dedos apenas rozan la tela de su pantalón mientras él, que ya había recuperado el equilibrio y la distancia, simplemente da un salto lateral con un gesto de asco.
+> El hombre de la casaca carmesí se queda de pie, mirándote desde arriba con una ceja alzada y una sonrisa gélida. Ni siquiera se ha despeinado.
+> —Tu "ventaja" es que el suelo es el único lugar donde encajas —sentencia, mientras comienza a caminar alejándose de ti con pasos lentos y deliberados, sin molestarse siquiera en mirar atrás.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3555 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 109 — 20/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos conocidos
+  19 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  5737 ms
+
+> "Disfruta tu paseo mientras dure."
+> Me levanto del barro con calma, limpiando la suciedad de mis manos mientras lo observo. Intento analizar su postura y el ritmo de sus pasos para encontrar un punto débil.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 5+2=7
+
+### [4] DM
+
+  10922 ms
+
+> Te pones en pie con lentitud, el barro deslizándose por tu piel mientras fijas la vista en la espalda del hombre. Te concentras en el balanceo de sus hombros y la cadencia de sus botas sobre el camino, buscando cualquier signo de fatiga, una cojera imperceptible o un descuido en su guardia que pudieras aprovechar.
+> Sin embargo, la figura del hombre de la casaca carmesí se funde rápidamente con el ajetreo de la calle. El ritmo de sus pasos es constante y arrogante, y la distancia que pone entre ambos, sumada a la multitud que comienza a interponerse, convierte tu observación en un ejercicio inútil. No logras distinguir nada más allá de su evidente desdén.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2480 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 110 — 21/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos conocidos
+  19 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2211 ms
+
+> "No te vas a escapar tan fácilmente."
+> Me deslizo entre la gente, tratando de mantenerme fuera de su vista mientras gano terreno.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 1+4=5  PIFIA
+
+### [4] DM
+
+  7975 ms
+
+> Al intentar fundirte con la multitud, calculas mal el espacio entre dos mercaderes que transportan grandes cestos de mimbre. Tu pie se engancha en una cuerda deshilachada que sobresale del camino y, en lugar de un deslizamiento fluido, tropiezas violentamente hacia adelante. El impacto te lanza contra la espalda de un campesino, que suelta un grito de sorpresa mientras ambos caen estrepitosamente sobre un charco de agua estancada.
+> El estrépito atrae las miradas de los transeúntes y el ruido es tan evidente que el hombre de la casaca carmesí se detiene en seco. Gira la cabeza ligeramente, lo justo para que veas el borde de su perfil y una expresión de profunda irritación, antes de acelerar el paso con un bufido de desprecio, aprovechando el caos que acabas de provocar para alejarse aún más.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1869 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 111 — 22/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos conocidos
+  19 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2896 ms
+
+> "Perdón, buen hombre."
+> Me levanto rápidamente del charco y, mientras ayudo al campesino a incorporarse, deslizo la mano hacia su cinturón para ver si lleva algo de valor.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 11+4=15
+
+### [4] DM
+
+  7567 ms
+
+> El campesino, empapado y refunfuñando, acepta tu mano con un gesto brusco mientras se sacude el barro de la túnica. En el forcejeo y la confusión del levantamiento, tus dedos encuentran el cuero gastado de una bolsa pequeña sujeta a su cinto. Con un movimiento preciso y fluido, logras extraer una moneda de cobre y un pequeño amuleto de madera tallada con una runa tosca antes de que el hombre termine de recuperar el equilibrio.
+> —¡Mira por dónde caminas, animal! —exclama el hombre, dándote un empujón en el hombro mientras se aleja apresuradamente, sin percatarse de que su bolsa pesa ahora un poco menos. A su alrededor, la multitud vuelve a fluir, ignorando el incidente, mientras la figura de la casaca carmesí desaparece ya tras una esquina.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5834 ms · 0 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = moneda de cobre
+  ✓ delta Wynn · character.inventory = amuleto de madera tallada
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4087: Wynn.inventory = moneda de cobre
+  → delta 4088: Wynn.inventory = amuleto de madera tallada
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 112 — 23/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos conocidos
+  19 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2210 ms
+
+> "Mis disculpas, buen hombre."
+> Guardo el botín rápidamente y me dirijo hacia la esquina por donde se fue la casaca carmesí.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 10+4=14
+
+### [4] DM
+
+  6257 ms
+
+> Te deslizas entre la multitud con pasos ligeros, aprovechando que la gente aún se agolpa en el centro de la calle y que la lluvia difumina los contornos. Te pegas a las paredes de piedra húmeda y evitas el contacto visual, fundiéndote con las sombras de los aleros mientras avanzas hacia la esquina.
+> Al doblar el muro, el silencio de un callejón estrecho sustituye al bullicio. A unos metros, la figura de la casaca carmesí camina a paso rápido, alejándose de ti. No se ha dado cuenta de tu presencia y sigue avanzando hacia el fondo de la callejuela, donde la luz del día se pierde entre los edificios.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1518 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 113 — 24/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos conocidos
+  19 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1975 ms
+
+> Me mantengo agazapado y avanzo con cuidado para no hacer ruido, acercándome a la figura por la espalda.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 3+4=7
+
+### [4] DM
+
+  5841 ms
+
+> Tus botas resbalan sobre el pavimento mojado y el roce de tu ropa contra la pared de piedra produce un sonido seco que resuena en el silencio del callejón. Al intentar ajustar tu postura para recuperar el equilibrio, pisas un charco con demasiada fuerza, provocando un chapoteo evidente.
+> El hombre de la casaca carmesí se detiene en seco. Gira la cabeza con un movimiento brusco y frío, clavando su mirada en tu posición. Sus ojos se entrecierran con suspicacia mientras se coloca la mano sobre el pecho, manteniendo una distancia prudencial.
+> —¿Quién anda ahí? —pregunta con una voz cortante y gélida—. No me gusta que me sigan por los callejones.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1449 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 114 — 25/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos conocidos
+  19 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3057 ms
+
+> "Solo un viajero perdido, señor. No busco problemas."
+> Salgo lentamente de las sombras, manteniendo las manos a la vista pero relajadas, y esbozo una sonrisa neutra.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 8+4=12
+
+### [4] DM
+
+  8223 ms
+
+> El hombre de la casaca carmesí no se mueve ni un milímetro, observando cada centímetro de tu figura mientras sales a la luz tenue del callejón. Sus ojos recorren tu vestimenta y tu postura con una frialdad analítica, y aunque tu sonrisa es neutra, él no parece dispuesto a comprar la historia del viajero despistado tan fácilmente.
+> —Un viajero perdido que sabe moverse por las sombras y pisa con cuidado... hasta que no lo hace —responde él, con un tono cargado de escepticismo. No retira la mano de su pecho y mantiene la mirada fija en la tuya—. No pareces alguien que se haya perdido buscando una posada. Di la verdad: ¿quién te envía?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1990 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 115 — 26/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -10.0 (cold), 0 hechos conocidos
+  19 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2333 ms
+
+> "Me envía la curiosidad, y la curiosidad suele ser más peligrosa que un emisario."
+> Sostengo la mirada sin inmutarme, manteniendo una postura relajada pero alerta.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 7+4=11
+
+### [4] DM
+
+  7663 ms
+
+> El hombre de la casaca carmesí arquea una ceja, y un destello de irritación cruza su mirada gélida. No se deja seducir por la frase ingeniosa; al contrario, el ligero movimiento de sus dedos sobre la tela de su pecho sugiere que tu respuesta solo ha confirmado sus sospechas sobre tu naturaleza evasiva.
+> —La curiosidad es el lujo de los tontos y el disfraz de los espías —sentencia con voz seca, dando un paso corto hacia adelante para invadir tu espacio personal—. No estoy de humor para acertijos ni para vagabundos con pretensiones poéticas. O me das un nombre real, o empezaremos a descubrir qué más esconde esa curiosidad tuya en los bolsillos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3145 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4095: Hombre de la casaca carmesí affinity -10.0 → -20.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -20.0 (cold), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 116 — 27/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -20.0 (cold), 0 hechos conocidos
+  19 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3384 ms
+
+> "No hace falta revisar mis bolsillos para saber que no tengo nada que te interese, señor."
+> Doy un paso atrás para recuperar mi espacio y lo observo fijamente, buscando cualquier signo de debilidad o nerviosismo en su postura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+0=14
+
+### [4] DM
+
+  8141 ms
+
+> El hombre de la casaca carmesí no retrocede cuando recuperas tu espacio; se queda anclado al suelo, manteniendo una rigidez militar que denota un control absoluto sobre sus nervios. Sus ojos, fríos y analíticos, no parpadean, y su postura es una línea recta y severa que no deja espacio a la duda ni al titubeo.
+> No hay rastro de ansiedad en él, ni un solo tic que sugiera que tu presencia le inquiete. Sin embargo, notas que su mirada se desplaza brevemente hacia la calle detrás de ti, como si estuviera atento a alguien más que a ti mismo, antes de volver a clavarte su atención con una expresión de profundo desdén.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2891 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -20.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 117 — 28/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -20.0 (cold), 0 hechos conocidos
+  19 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2388 ms
+
+> "Pareces esperar a alguien más importante que yo."
+> Mantengo la mirada, tratando de descifrar qué es exactamente lo que busca en la calle.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+0=17
+
+### [4] DM
+
+  9644 ms
+
+> El hombre de la casaca carmesí esboza una sonrisa gélida, apenas un movimiento de las comisuras que no llega a sus ojos. "La importancia es relativa, forastero", responde con una voz seca y cortante, como el chasquido de un látigo. No se inmuta ante tu escrutinio, pero su mandíbula se tensa imperceptiblemente.
+> Al analizar su comportamiento, notas que su atención hacia la calle no es la de alguien que espera un encuentro amistoso, sino la de un centinela vigilando un perímetro. Hay una urgencia contenida en la forma en que sus ojos escanean los transeúntes; no busca a una persona concreta, sino que vigila que nadie se acerque demasiado a su posición actual, como si estuviera protegiendo un punto ciego o asegurando que no haya testigos de su presencia aquí.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1445 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -20.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 118 — 29/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -20.0 (cold), 0 hechos conocidos
+  19 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3524 ms
+
+> "Entiendo. El silencio es un valor muy apreciado en mi oficio."
+> Me acerco un paso más, bajando el tono de voz, mientras intento notar si oculta algún objeto de valor o un arma en su ropa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+0=13
+
+### [4] DM
+
+  5182 ms
+
+> El hombre de la casaca carmesí no retrocede ante tu acercamiento, pero su postura se vuelve más rígida, creando una barrera invisible entre ambos. Te observa con una mirada gélida, evaluando el peso de tus palabras mientras el bullicio de la calle parece amortiguarse alrededor de vuestro espacio personal.
+> Tus ojos recorren los pliegues de su vestidura y la caída de la tela. Logras notar que el corte de la casaca es deliberadamente amplio en la zona de la cintura y que el movimiento de su brazo derecho es ligeramente más restringido que el del izquierdo, sugiriendo que oculta algo bajo la prenda, aunque el volumen no te permite distinguir si se trata de un arma o un objeto de valor.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1308 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -20.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 119 — 30/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -20.0 (cold), 0 hechos conocidos
+  19 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2736 ms
+
+> "Parece que llevas una carga pesada para alguien tan rígido."
+> Sigo manteniendo la cercanía y trato de discernir la naturaleza de lo que oculta mediante un movimiento rápido de mis dedos.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 11+4=15
+
+### [4] DM
+
+  6086 ms
+
+> El hombre de la casaca carmesí arquea una ceja, manteniendo la mirada fija en tus ojos mientras una comisura de sus labios se contrae en un gesto de desdén. No se mueve para evitar tu proximidad, pero su cuerpo se tensa como una cuerda a punto de romperse, emanando una frialdad que parece bajar la temperatura del aire entre vosotros.
+> En el instante en que tus dedos se deslizan con rapidez hacia el volumen oculto, logras palpar la superficie fría y endurecida de un metal trabajado. El contacto es breve, pero suficiente para distinguir la forma cilíndrica y el peso equilibrado de una daga de hoja corta, envuelta en una funda de cuero fino que se ajusta contra su costado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4362 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: daga de hoja corta
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item daga de hoja corta
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -20.0 (cold), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 120 — 31/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -20.0 (cold), 0 hechos conocidos
+  20 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2402 ms
+
+> "Un detalle exquisito para alguien tan... tenso."
+> Sigo presionando ligeramente la funda mientras busco el cierre o cualquier debilidad en la sujeción para extraer la daga sin que lo note.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 2+4=6
+
+### [4] DM
+
+  7407 ms
+
+> El hombre de la casaca carmesí suelta un bufido seco y, con un movimiento brusco y coordinado, desplaza la cadera hacia atrás. Tu presión sobre la funda se convierte en un roce inútil contra la tela carmesí mientras él se aleja un paso, rompiendo la proximidad con una elegancia gélida.
+> —No confundas mi cortesía con ingenuidad —dice con una voz afilada como el acero que intentabas sustraer—. Mantén tus manos donde pueda verlas si no quieres que el "detalle" sea lo último que sientas hoy.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3506 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4109: Hombre de la casaca carmesí affinity -20.0 → -30.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -30.0 (wary), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 121 — 32/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -30.0 (wary), 0 hechos conocidos
+  20 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3963 ms
+
+> "Toda una lección de reflejos. Mis disculpas."
+> Retiro la mano lentamente, mostrando las palmas, y esbozo una sonrisa neutra mientras retrocedo un paso para darle espacio.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 12+4=16
+
+### [4] DM
+
+  8338 ms
+
+> El hombre de la casaca carmesí mantiene la mirada fija en tus palmas, analizando cada milímetro de tu movimiento con una suspicacia gélida. Sus ojos recorren tu expresión, buscando alguna grieta en esa sonrisa neutra, pero el gesto parece convencerlo de que el incidente ha sido un desliz impulsivo más que un plan coordinado.
+> Su postura se relaja apenas un centímetro, aunque no recupera la calidez. Suelta un suspiro nasal, casi imperceptible, y endereza la solapa de su chaqueta.
+> —La arrogancia suele ser el preludio de un error fatal —sentencia, aunque el tono ya no es una amenaza directa, sino una advertencia distante—. Ahora que hemos establecido los límites de tu curiosidad, hablemos de lo que realmente te trae aquí.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1208 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -30.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 122 — 33/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -30.0 (wary), 0 hechos conocidos
+  20 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2397 ms
+
+> "Tengo el hábito de ser muy preciso con mis curiosidades."
+> Mantengo la sonrisa y me inclino ligeramente hacia adelante, observando los bolsillos y los pliegues de su casaca mientras hablo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+2=4
+
+### [4] DM
+
+  5041 ms
+
+> El hombre de la casaca carmesí arquea una ceja, imperturbable ante la inclinación. No hace ningún movimiento brusco ni revela el contenido de sus bolsillos; la tela gruesa y el corte rígido de la prenda ocultan cualquier objeto con una eficacia absoluta, dejando solo la impresión de una superficie lisa y gélida.
+> —La precisión es una virtud, siempre que se aplique al servicio de quien la posee y no a la impertinencia —responde con una voz seca, mientras mantiene una distancia prudencial que anula cualquier intento de escrutinio más cercano.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1227 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -30.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 123 — 34/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -30.0 (wary), 0 hechos conocidos
+  20 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3366 ms
+
+> "Me limito a ser preciso, señor. No busco la impertinencia, sino la eficiencia."
+> Mantengo la postura, pero desplazo ligeramente mi peso para analizar sus puntos ciegos y buscar cualquier relieve bajo la tela de su casaca.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  5854 ms
+
+> El hombre de la casaca carmesí mantiene su expresión gélida, pero el ligero desplazamiento de tu peso no pasa inadvertido para él; sus ojos se estrechan un ápice, detectando el análisis táctico. Sin embargo, la agudeza de tu mirada perfora la rigidez de la prenda. Bajo la tela carmesí, justo en la zona lumbar, se dibuja el relieve inconfundible de un estuche de cuero estrecho y rígido, probablemente una daga o un instrumento de precisión, mientras que en el bolsillo interior derecho se adivina el contorno cuadrado de un cuaderno de notas o un sello oficial.
+> —La eficiencia es una palabra muy cómoda para quienes carecen de lealtades —sentencia, dando un paso lateral que, aunque calculado, deja expuesto por un breve instante el brillo metálico de un botón de plata con un grabado heráldico que no habías visto antes.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1517 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -30.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 124 — 35/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -30.0 (wary), 0 hechos conocidos
+  20 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2136 ms
+
+> "La lealtad es un lujo que se paga con sangre, o con oro."
+> Intento deslizar mi mano hacia su bolsillo interior para sustraer el cuaderno sin que se dé cuenta.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 16+4=20
+
+### [4] DM
+
+  5468 ms
+
+> Tus dedos se mueven con una fluidez casi invisible, aprovechando el ritmo de la conversación y el leve balanceo del hombre. El roce es imperceptible; el cuero del bolsillo cede sin resistencia mientras tus yemas enganchan el borde del cuaderno y lo deslizan hacia afuera en un movimiento coordinado y quirúrgico.
+> El hombre de la casaca carmesí permanece impasible, manteniendo el contacto visual, ajeno a que el peso de su bolsillo interior acaba de disminuir. El cuaderno ahora descansa oculto en tu mano, mientras él exhala un suspiro cargado de desdén.
+> —Entonces habéis venido al lugar equivocado, pues aquí el oro solo compra el silencio, no la voluntad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5279 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = cuaderno
+  ✓ creación item: cuaderno
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cuaderno
+  → delta 4118: Wynn.inventory = cuaderno
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -30.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 125 — 36/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -30.0 (wary), 0 hechos conocidos
+  21 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1995 ms
+
+> "Entiendo perfectamente. El silencio es, a menudo, la inversión más rentable."
+> Guardo el cuaderno rápidamente entre mis ropas y le dedico una sonrisa gélida.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 9+4=13
+
+### [4] DM
+
+  3548 ms
+
+> El hombre de la casaca carmesí entorna los ojos, analizando la frialdad de tu sonrisa. Hay un instante de silencio tenso en el que parece sopesar tus palabras, buscando alguna grieta en tu compostura o algún rastro de ironía que no encaje con el tono de la negociación.
+> —Al menos habláis el lenguaje de este lugar —responde con un tono seco, aunque su postura se relaja ligeramente, aceptando la respuesta como una muestra de pragmatismo—. Pero no os confundáis: mi silencio tiene un precio que vuestra billetera podría no soportar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2952 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4123: Hombre de la casaca carmesí affinity -30.0 → -28.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -28.0 (wary), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 126 — 37/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -28.0 (wary), 0 hechos conocidos
+  21 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1824 ms
+
+> "El precio es relativo cuando el valor de la información es el correcto."
+> Me acerco un paso más, manteniendo la mirada fija en él para medir su reacción.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+0=13
+
+### [4] DM
+
+  6360 ms
+
+> El hombre de la casaca carmesí no retrocede ante tu avance, pero sus pupilas se contraen ligeramente y sus dedos tamborilean un ritmo nervioso sobre la tela de su chaqueta. Mantiene la barbilla en alto, sosteniendo el duelo de miradas con una rigidez calculada, aunque el ligero temblor de su comisura delata que tu seguridad le resulta inquietante.
+> —El valor es una opinión, y la mía es la única que importa en este callejón —replica, aunque su voz ha perdido parte de esa seguridad cortante—. Me habláis de relativos, pero yo hablo de monedas que suenan y pesan.
+> [La CD de Perspicacia para detectar su nerviosismo era 12. Con un 13, notas que aunque intenta mantener el control, tu presión psicológica está empezando a generar grietas en su fachada de superioridad.]
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ meta-comentario entre corchetes
+
+### [6] EXTRACTOR
+
+  1472 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -28.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 127 — 38/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -28.0 (wary), 0 hechos conocidos
+  21 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2003 ms
+
+> "Las monedas pesan, es cierto. Pero el silencio pesa mucho más cuando alguien sabe dónde guardas las tuyas."
+> Me acerco un paso más, invadiendo su espacio personal para asfixiar su confianza.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 13+2=15
+
+### [4] DM
+
+  4993 ms
+
+> El hombre de la casaca carmesí retrocede un paso instintivamente, chocando sus omóplatos contra la pared húmeda del callejón. El tamborileo de sus dedos cesa en seco y el aire parece escapársele de los pulmones; la arrogancia de su barbilla alta se desploma mientras sus ojos recorren frenéticamente los alrededores, buscando una salida o un testigo que ya no existe.
+> —Está bien, basta... no hace falta llegar a tanto —balbucea, bajando la voz hasta convertirla en un susurro ronco—. Sabéis demasiado poco para ser tan peligrosos, pero prefiero el silencio a que vuestra curiosidad me cueste el cuello. ¿Qué es exactamente lo que queréis saber?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2581 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4132: Hombre de la casaca carmesí affinity -28.0 → -38.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -38.0 (wary), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 128 — 39/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -38.0 (wary), 0 hechos conocidos
+  21 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1794 ms
+
+> "Lo que quiero es que hables con claridad y que el precio de tu silencio sea razonable."
+> Me acerco un paso más, invadiendo su espacio personal para mantener la presión.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 14+2=16
+
+### [4] DM
+
+  6564 ms
+
+> El hombre traga saliva con dificultad, sintiendo el calor de tu presencia invadiendo su espacio. El tejido carmesí de su casaca se agita levemente con el temblor de sus hombros y el olor a humedad del callejón se mezcla con el aroma a sudor frío que emana de su piel. Su mirada, antes altiva, ahora se clava en el suelo, incapaz de sostenerte el contacto visual mientras el pánico termina de doblegar su resistencia.
+> —Tened paciencia... que la claridad es un lujo caro en esta ciudad —susurra, con la voz quebrada—. No busco peleas, solo sobrevivir a la tormenta. Si queréis respuestas sobre la elección, puedo daros nombres, pero no esperéis que sea gratis. No obstante... —lanza una mirada rápida hacia la entrada del callejón—, prefiero pagar un precio razonable ahora que pagar con mi vida más tarde. Hablad, ¿qué es lo que os urge saber?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3437 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4134: Hombre de la casaca carmesí affinity -38.0 → -48.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -48.0 (wary), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 129 — 40/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -48.0 (wary), 0 hechos conocidos
+  21 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1493 ms
+
+> "No me interesa tu concepto de precio razonable. Me interesa lo que sabes."
+> Aprieto el agarre sobre él para recordarle su situación.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 17+2=19
+
+### [4] DM
+
+  5093 ms
+
+> El hombre suelta un jadeo ahogado cuando el agarre se intensifica, y el tejido de su casaca cruje bajo la presión. Sus ojos se abren desmesuradamente, reflejando un terror genuino que borra cualquier rastro de ambición mercantil; el sudor ahora le resbala por las sienes, empapando el cuello de su prenda carmesí.
+> —¡Está bien, está bien! —espeta en un hilo de voz, casi suplicante—. No hace falta más. Melquíades y Bibiana... sus campañas no son solo promesas, son guerras de sombras. Si buscáis el hilo que mueve los hilos, debéis preguntar por el "Archivista" en la Posada del Forastero. Él guarda los registros de los sobornos que ninguna urna admitiría. Por favor... soltadme.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7477 ms · 1 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+  ✗ campo fuera de lista blanca: character.knowledge
+  ✗ nombre genérico, es atrezzo: «El Archivista»
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → delta 4136: Hombre de la casaca carmesí affinity -48.0 → -58.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 130 — 41/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  21 entidades · contexto de 1137 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2571 ms
+
+> "El Archivista. Registros de sobornos."
+> Lo suelto bruscamente y, aprovechando que sigue aturdido, busco rápidamente entre sus bolsillos algo de valor que pueda llevarme sin que se dé cuenta.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 16+4=20
+
+### [4] DM
+
+  5587 ms
+
+> El hombre cae hacia atrás con un golpe seco, soltando un gemido mientras se frota el cuello y recupera el aire con espasmos. Sus ojos vagan desorientados por el suelo, cegado por el pánico y la humillación, totalmente ajeno al movimiento preciso y fluido de tus dedos.
+> En el breve instante en que el tejido carmesí se desplaza, rescatas un pequeño libro de cuero negro, desgastado y cerrado con un cierre de latón oxidado, que descansaba oculto en un bolsillo interior. El hombre comienza a enderezarse, limpiándose la casaca con manos temblorosas, sin notar que el peso de su prenda ha disminuido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2063 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = cuaderno
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4139: Wynn.inventory = cuaderno
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 131 — 42/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  21 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1997 ms
+
+> "Lamento el incidente, señor. No volverá a ocurrir."
+> Guardo el libro rápidamente bajo mi ropa y me alejo con paso tranquilo, tratando de fundirme con el entorno.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 17+4=21
+
+### [4] DM
+
+  3861 ms
+
+> El hombre de la casaca carmesí sigue jadeando, más concentrado en recuperar su dignidad y el aliento que en revisar sus pertenencias. Lanza una mirada cargada de recelo y confusión hacia donde te encuentras, pero el pánico residual nubla su juicio y no logra conectar el robo con tu presencia.
+> Te deslizas entre la multitud con una naturalidad absoluta, convirtiéndote en una sombra más del bullicio urbano. El ruido del mercado y el flujo de la gente actúan como un muro invisible que te separa del hombre, quien queda atrás, solo y desorientado, mientras tú te pierdes en el entorno sin dejar rastro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1367 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 132 — 43/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  21 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2386 ms
+
+> Me alejo lo suficiente para estar a salvo y busco un rincón apartado donde pueda examinar el botín sin miradas curiosas.
+> Saco los objetos robados y los reviso con cuidado. {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+1=16
+
+### [4] DM
+
+  4175 ms
+
+> Encuentras un callejón estrecho, donde el olor a pescado rancio y humedad ahuyenta a los transeúntes. Apoyado contra una pared de piedra fría y húmeda, despliegas el contenido del robo sobre una superficie plana. Entre telas finas y adornos, destaca un pequeño libro de cuero gastado, cuyas páginas contienen anotaciones apresuradas sobre horarios de reuniones y nombres de contactos locales.
+> Junto al cuaderno, descubres una bolsa de seda que contiene 25 piezas de oro y una carta sellada con cera púrpura. El documento, aunque cerrado, lleva una inscripción caligráfica que menciona una "cita urgente en la Posada del Forastero" para discutir los términos de un acuerdo electoral.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4037 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = 25 piezas de oro
+  ✓ creación item: carta sellada con cera púrpura
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item carta sellada con cera púrpura
+  → delta 4150: Wynn.inventory = 25 piezas de oro
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 133 — 44/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  22 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1486 ms
+
+> "Veamos qué secretos guardas."
+> Ignoro la bolsa de oro por un momento y abro el cuaderno para analizar los nombres y horarios.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+1=4
+
+### [4] DM
+
+  3719 ms
+
+> Hojeas las páginas del cuaderno con rapidez, pero la caligrafía es un caos de tachones y abreviaturas crípticas. Los nombres parecen alias o códigos que no guardan relación con ninguna persona que conozcas, y los horarios están anotados en un sistema de turnos confusos que no logras descifrar.
+> La humedad del callejón ha apelmazado algunas hojas, haciendo que la tinta se haya corrido en los puntos más críticos. Tras unos instantes de análisis, el contenido del libro sigue siendo un rompecabezas indescifrable.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1122 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 134 — 45/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  22 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2764 ms
+
+> "Maldita sea, escribe el imbécil como un niño."
+> Cierro el cuaderno y lo guardo rápidamente en mi ropa. Miro a mi alrededor para asegurarme de que nadie me ha visto mientras lo examinaba.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 14+2=16
+
+### [4] DM
+
+  4418 ms
+
+> El callejón es un túnel de sombras húmedas y olor a pescado podrido, donde el eco de tus propios pasos parece amplificado por las paredes de piedra. Al levantar la vista, el entorno se revela tranquilo; el viento arrastra algunos papeles viejos por el suelo y el goteo constante de una canalvía cercana marca el ritmo del silencio. No hay nadie acechando tras los contenedores de basura ni figuras ocultas en los recovecos oscuros.
+> A la salida del callejón, la luz del día filtra el bullicio de la calle principal, donde el flujo de gente sigue su curso habitual, ajeno a tu breve incursión en la penumbra. Todo parece estar en calma, y no hay rastro de que alguien haya presenciado tu lectura del cuaderno.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  14002 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 135 — 46/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  22 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1713 ms
+
+> Guardo el cuaderno con cuidado y me aseguro de que no quede ningún rastro de mi presencia en el callejón. Antes de salir a la calle principal, reviso los contenedores de basura buscando cualquier objeto de valor descartado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+1=20
+
+### [4] DM
+
+  8834 ms
+
+> Tus manos se mueven con precisión, borrando cualquier huella en el barro y el polvo antes de volcar tu atención sobre los desechos. Entre el hedor a pescado y los restos de comida, tus dedos encuentran algo rígido y frío que destaca sobre la materia orgánica. Al extraerlo, descubres un relicario de plata empañado por la suciedad, con una pequeña talla de una mano abierta en la tapa; aunque el cierre está oxidado, el metal conserva un brillo genuino bajo la luz filtrada.
+> Al levantar la vista hacia la calle principal, el bullicio se siente distante, como si el callejón fuera una burbuja de silencio. La gente pasa apresurada, envuelta en sus propias preocupaciones, y ninguna mirada se desvía hacia la boca del túnel de piedra donde te encuentras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  11523 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: relicario de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item relicario de plata
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 136 — 47/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  23 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2077 ms
+
+> Limpio el relicario en mi ropa, examinando la talla de la mano con detenimiento. Intento forzar el cierre oxidado para ver qué contiene.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 17+4=21
+
+### [4] DM
+
+  5355 ms
+
+> El metal cede con un chasquido seco y metálico que resuena brevemente en la quietud del callejón. La tapa se abre con una resistencia mínima, revelando que la plata no era solo un adorno, sino un sello hermético que había protegido el interior de la putrefacción del entorno.
+> Dentro del relicario, descansando sobre un lecho de terciopelo azul ahora descolorido, yace un fragmento de pergamino enrollado con una precisión quirúrgica y una pequeña piedra lunar que emite un pulso blanquecino, casi imperceptible, al contacto con el aire.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1943 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: fragmento de pergamino
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item fragmento de pergamino
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 137 — 48/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  24 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2664 ms
+
+> "Interesante."
+> Tomo la piedra lunar y el pergamino con cuidado, guardándolos rápidamente en mi bolsillo. Antes de cerrar el relicario, busco cualquier otra inscripción o compartimento oculto en el interior.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+1=8
+
+### [4] DM
+
+  3893 ms
+
+> Tus dedos recorren el terciopelo descolorido y las paredes internas del relicario, pero el metal se siente liso y el fondo es sólido. No hay hendiduras, doble fondos ni letras grabadas que hayan escapado a tu primera mirada.
+> El interior del cofre queda vacío, conservando únicamente el débil aroma a incienso antiguo que se escapa ahora que el sello se ha roto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6546 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = piedra lunar
+  ✓ creación item: piedra lunar
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item piedra lunar
+  → delta 4184: Wynn.inventory = piedra lunar
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 138 — 49/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  25 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1289 ms
+
+> "Interesante."
+> Suelto el relicario y me fijo en el sello roto, buscando cualquier rastro de quien lo cerró o alguna marca oculta en el exterior que haya pasado por alto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+1=15
+
+### [4] DM
+
+  3541 ms
+
+> El sello de cera, ahora fragmentado en trozos irregulares, revela una impronta parcial que no coincide con la heráldica oficial de la ciudad. Al observar los restos con detenimiento, distingues la silueta de una llave entrelazada con una rama de olivo, un símbolo discreto pero deliberado que sugiere que el relicario no fue cerrado por un clérigo, sino por alguien vinculado a una organización secreta o un gremio específico.
+> En el exterior, el metal del cofre presenta unas finas rayas verticales cerca de la bisagra, producto de un roce constante. No son marcas de fabricación, sino el desgaste típico de quien ha acariciado el objeto con nerviosismo o lo ha deslizado repetidamente dentro de un bolsillo estrecho durante mucho tiempo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1010 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 139 — 50/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  25 entidades · contexto de 337 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1126 ms
+
+> "Una llave y un olivo... interesante."
+> Examino los fragmentos del sello y las marcas del cofre para intentar identificar a qué grupo o persona pertenece ese símbolo.
+> {Historia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Historia: 18+1=19
+
+### [4] DM
+
+  4165 ms
+
+> Los fragmentos de cera parecen cobrar sentido bajo tu mirada. Ese diseño no pertenece a ninguna de las casas nobles ni al clero, sino que es la marca distintiva de los Archiveros del Silencio, un gremio de escribanos y copistas que actúan como mediadores neutrales en disputas legales y políticas, especializados en custodiar secretos que nadie más debe conocer. 
+> El desgaste en el metal del cofre refuerza esta pista; el hábito de los Archiveros es llevar sus relicarios siempre consigo, rozándolos como un tic nervioso mientras esperan el momento exacto para entregar la información. Alguien de este gremio ha tenido este objeto en su posesión durante años, tratándolo no como una pieza de valor, sino como una carga constante y ansiosa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2428 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación faction: Archiveros del Silencio
+  ⚠ nombres no reconocidos: Archiveros, Silencio
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: faction Archiveros del Silencio
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 140 — 51/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  26 entidades · contexto de 391 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1443 ms
+
+> "Archiveros del Silencio... interesantes."
+> Examino el cofre con más detenimiento, buscando cualquier rastro de un nombre, una fecha o una firma oculta que me diga quién era el custodio específico.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+1=2  PIFIA
+
+### [4] DM
+
+  2782 ms
+
+> Al inclinar el cofre bajo la luz para buscar una firma o fecha, un movimiento brusco de tus dedos presiona un saliente del metal desgastado. Se escucha un chasquido seco y un muelle oxidado salta con violencia, proyectando una pequeña astilla de metal que te raspa el dorso de la mano y envía el cofre volando hacia el suelo.
+> El objeto impacta contra el pavimento con un sonido metálico resonante que ecoa en el silencio del lugar. Al quedar volcado, el impacto desprende una capa de suciedad y costras de cera antigua, borrando irremediablemente cualquier inscripción tenue que pudiera haber sobrevivido en la base del relicario.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2274 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.conditions = rasguño en la mano
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4196: Wynn.conditions = rasguño en la mano
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 141 — 52/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  25 entidades · contexto de 391 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1398 ms
+
+> "Maldita sea."
+> Siseo entre dientes mientras miro el rasguño de mi mano. Me agacho rápidamente para recoger el cofre del suelo y reviso si el mecanismo se ha abierto por el golpe.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+1=2  PIFIA
+
+### [4] DM
+
+  3304 ms
+
+> Tus dedos tantean el metal con urgencia, pero la torpeza te traiciona. Al intentar forzar la tapa aprovechando el impacto, tu mano resbala sobre la superficie pulida y golpeas el borde del cofre contra el suelo con un ruido sordo. El golpe es tan seco que el mecanismo interno, ya inestable, se bloquea con un chirrido metálico definitivo, sellando la cerradura con una firmeza que no tenía hace un momento.
+> El relicario yace ahora cerrado y mudo, mientras una gota de sangre del rasguño de tu mano mancha el metal frío. El silencio que sigue al estruendo se siente más pesado, como si el eco del golpe hubiera alertado a cualquier cosa que pudiera estar escuchando en los alrededores.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1138 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 142 — 53/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  25 entidades · contexto de 391 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1078 ms
+
+> "Maldita sea."
+> Miro la gota de sangre sobre el metal y luego escucho con atención cualquier movimiento en las sombras.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 15+2=17
+
+### [4] DM
+
+  2918 ms
+
+> El silencio que siguió al golpe se fragmenta. Desde el fondo del pasillo, donde la penumbra se vuelve espesa, llega el sonido rítmico y metálico de unas botas golpeando el suelo de piedra. No es un paso apresurado, sino una marcha deliberada y pesada que se acerca con una confianza gélida.
+> Acompañando al eco de los pasos, el leve roce de una tela pesada contra las paredes y el tintineo de una cadena sugieren que quien viene no viaja solo, o que arrastra algo consigo. La fuente del ruido emerge lentamente de la oscuridad, revelando una silueta que corta la luz tenue del lugar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  654 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 143 — 54/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  25 entidades · contexto de 391 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1497 ms
+
+> "Llegas tarde."
+> Me deslizo rápidamente hacia la sombra más cercana para quedar fuera de su vista directa.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 8+4=12
+
+### [4] DM
+
+  3784 ms
+
+> La silueta emerge plenamente de la penumbra: un hombre de complexión robusta, vestido con una casaca de un rojo carmesí tan intenso que parece absorber la escasa luz del pasillo. Sus ojos, gélidos y analíticos, recorren el espacio justo en el momento en que te desplazas. El roce de tu ropa contra la piedra y el leve desplazamiento de aire traicionan tu posición antes de que logres fundirte con la oscuridad.
+> El hombre se detiene en seco, su mirada clavándose exactamente donde te encuentras. No hay sorpresa en su rostro, solo una irritación contenida. El tintineo de la cadena que lleva al cinturón cesa abruptamente mientras inclina la cabeza, evaluando la sombra.
+> —No soy yo quien llega tarde —responde con una voz seca y cortante—, sino tú quien ha decidido jugar al escondite en un lugar donde no hay dónde ocultarse. Sal de ahí.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  708 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 144 — 55/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  25 entidades · contexto de 391 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1337 ms
+
+> "Tienes buena vista, pero mala costumbre de hablar demasiado."
+> Salgo de las sombras con paso lento, manteniendo las manos visibles pero cerca de mis armas. Lo observo detenidamente mientras me acerco.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+0=12
+
+### [4] DM
+
+  3801 ms
+
+> Te deslizas desde la penumbra con una calma deliberada, el eco de tus pasos resonando contra las paredes frías del pasillo. El hombre de la casaca carmesí no retrocede ni un centímetro; permanece anclado al suelo, con los brazos cruzados y una expresión de fastidio que endurece las líneas de su rostro. Sus ojos no dejan de analizarte, midiendo la distancia y la postura de tus manos, como quien evalúa una amenaza antes de decidir si merece su atención.
+> Al observarlo, notas que su ropa, aunque ostentosa por el color, está impecablemente cuidada y carece de arrugas, sugiriendo que no es un hombre acostumbrado al trabajo físico, sino al control. Sin embargo, hay una tensión constante en sus hombros y una forma de distribuir el peso del cuerpo que delata que sabe defenderse. Se mantiene distante, manteniendo una barrera invisible de desconfianza entre ambos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  770 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 145 — 56/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  25 entidades · contexto de 391 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1131 ms
+
+> "Pareces un hombre que valora su tiempo tanto como su ropa. Hablemos rápido."
+> Mantengo una distancia prudencial y observo sus manos y su cintura buscando algún arma oculta.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  4053 ms
+
+> El hombre de la casaca carmesí arquea una ceja, y una comisura de sus labios se eleva en un gesto de escepticismo frío. No se desplaza, pero el ligero movimiento de su torso al responder revela que tu comentario ha picado su curiosidad, aunque no ha mermado su cautela. "El tiempo es lo único que no se puede comprar, y tú acabas de gastar una parte del mío", replica con una voz seca y afilada.
+> Tu mirada, aguda y meticulosa, descompone cada detalle de su postura. Notas el bulto discreto y rígido bajo la tela carmesí, justo en la zona lumbar: una daga de hoja fina, probablemente de acero templado, oculta en una vaina ajustada que le permite un desenfunde rápido y silencioso. Además, percibes que sus dedos rozan apenas el borde de un bolsillo interior donde el relieve de un sello de cera sugiere que guarda un documento importante, el cual protege con una posesividad casi instintiva.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  752 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 146 — 57/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  24 entidades · contexto de 391 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2279 ms
+
+> "El tiempo es un recurso, y yo sé cómo optimizarlo."
+> Me acerco un paso más, manteniendo una distancia prudencial, mientras intento analizar la reacción de su rostro ante mi seguridad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+0=6
+
+### [4] DM
+
+  3573 ms
+
+> El hombre de la casaca carmesí no retrocede ante tu avance, pero sus ojos se entrecierran, volviéndose dos rendijas gélidas. No hay rastro de duda ni de impresión en sus facciones; al contrario, tu seguridad parece reforzar su barrera. Mantiene el rostro como una máscara de porcelana, impasible y hermética, sin que un solo músculo delate lo que piensa sobre tu despliegue de confianza.
+> "La optimización es la excusa de los impacientes", sentencia con un tono gélido, mientras su mano derecha se queda inmóvil, aunque el cuerpo permanece tenso, listo para reaccionar. Te observa en silencio, esperando a que tus palabras se conviertan en algo más que una simple declaración de intenciones.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  955 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 147 — 58/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  24 entidades · contexto de 391 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1379 ms
+
+> "La impaciencia es un lujo que no puedo permitirme. Los resultados, en cambio, son tangibles."
+> Sigo sosteniendo la mirada, buscando cualquier microgesto o debilidad en su postura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 5+0=5
+
+### [4] DM
+
+  3709 ms
+
+> El hombre de la casaca carmesí no parpadea. Su postura es un bloque de granito; no hay un temblor en sus dedos, ni un cambio en la respiración, ni una vacilación en la rigidez de sus hombros que sugiera nerviosismo o duda. Para cualquier observador, es una superficie lisa y sin fisuras, un muro de protocolo y frialdad que devuelve la mirada con una indiferencia absoluta.
+> Se limita a sostener el silencio durante unos segundos, dejando que el peso de sus palabras anteriores flote en el aire. Finalmente, esboza una sonrisa mínima, apenas un movimiento mecánico de las comisuras que no llega a alcanzar sus ojos gélidos. "Tangibles", repite en un susurro, saboreando la palabra con un deje de escepticismo. "Demuéstrelo, entonces, antes de que su tiempo se agote".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  822 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 148 — 59/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -58.0 (wary), 0 hechos conocidos
+  24 entidades · contexto de 391 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1207 ms
+
+> "No suelo repetir mis ofertas, pero para usted haré una excepción."
+> Saco una moneda de oro y la hago deslizarse entre mis nudillos con rapidez antes de dejarla sobre la mesa.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 7+4=11
+
+### [4] DM
+
+  4496 ms
+
+> El hombre de la casaca carmesí observa la moneda deslizarse entre los nudillos con una mirada imperturbable, siguiendo el brillo del metal sin que un solo músculo de su rostro se altere. Cuando la pieza de oro golpea la madera de la mesa con un tintineo seco, él no se apresura a tocarla ni muestra el menor rastro de codicia; simplemente mantiene la vista fija en el objeto, como si estuviera evaluando no el valor del metal, sino la audacia del gesto.
+> La sonrisa mecánica desaparece por completo y sus ojos gélidos regresan a los tuyos, ahora con un matiz de desdén. "Un truco de feria y una moneda", sentencia con una voz plana, desprovista de cualquier emoción. "Si cree que el brillo del oro es suficiente para comprar mi tiempo o mi silencio, ha sobreestimado el precio de mi lealtad".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1557 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · bribe_offered
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4225: Hombre de la casaca carmesí affinity -58.0 → -62.0  (mid)
+     Incómodo. Rechaza pero no lo convierte en un asunto personal. Camb
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -62.0 (hostile), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 149 — 60/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -62.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1265 ms
+
+> "El oro no es para comprar tu lealtad, sino para demostrar que hablo el mismo idioma que tú."
+> Apoyo la palma de la mano sobre la mesa, deslizando la moneda lentamente hacia él.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 5+2=7
+
+### [4] DM
+
+  7457 ms
+
+> El hombre de la casaca carmesí no mueve un dedo para recoger la moneda. Sus ojos recorren la palma de tu mano y luego el metal deslizándose por la madera, pero su expresión no se suaviza; al contrario, sus labios se contraen en una mueca de fastidio. El gesto, lejos de generar complicidad, parece haber confirmado su desprecio hacia ti.
+> "Habla el idioma de la arrogancia, entonces", responde con una frialdad cortante. Con un movimiento brusco y seco, golpea la moneda con el dedo índice, alejándola de él y devolviéndola hacia tu lado de la mesa. "Guarde su oro y su retórica. No tengo nada que decir a alguien que confunde la transacción con la diplomacia".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1366 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · bribe_offered
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4226: Hombre de la casaca carmesí affinity -62.0 → -66.0  (mid)
+     Incómodo. Rechaza pero no lo convierte en un asunto personal. Camb
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -66.0 (hostile), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 150 — 61/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -66.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1188 ms
+
+> "Parece que hemos tenido un malentendido sobre el valor de mi tiempo."
+> Recojo la moneda con calma y me inclino hacia delante, bajando la voz.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 10+2=12
+
+### [4] DM
+
+  3625 ms
+
+> El hombre de la casaca carmesí mantiene el torso rígido, resistiendo la presión de tu cercanía. Sus ojos se entrecierran mientras procesa tus palabras, y aunque el tono bajo parece haber capturado un ápice de su atención, la tensión en su mandíbula no desaparece. No hay un cambio en su postura ni un gesto de apertura; el aire entre ambos sigue cargado de una electricidad gélida.
+> "Su tiempo es un recurso que no me interesa comprar, ni me interesa quien crea que puede comprar el mío", sentencia, aunque ya no golpea la mesa. Se recuesta en su silla con una lentitud deliberada, observándote con una mezcla de escepticismo y fastidio, esperando a ver si tienes algo más que decir que no implique el brillo del oro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  750 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -66.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 151 — 62/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -66.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1376 ms
+
+> "Toda persona tiene un precio, solo que algunos no aceptan moneda corriente."
+> Me inclino ligeramente hacia él, bajando aún más la voz, y busco algún documento o detalle en su mesa que pueda darle ventaja a mi posición.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+0=13
+
+### [4] DM
+
+  2632 ms
+
+> El hombre de la casaca carmesí suelta un bufido seco, una risa carente de humor que apenas mueve sus labios. Se mantiene recostado, cruzando los brazos sobre el pecho mientras te sostiene la mirada, desafiándote a que definas cuál sería esa moneda no corriente que podría mover su voluntad.
+> Sobre la madera oscura de la mesa, entre algunas manchas de tinta y ceniza, destacan unos papeles organizados con rigor militar. No logras discernir el contenido de los textos debido a la caligrafía apresurada y la distancia, pero notas que varios de ellos llevan el sello de lacre de una oficina administrativa municipal, sugiriendo que su interés actual radica en la burocracia del ayuntamiento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  737 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -66.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 152 — 63/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -66.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1293 ms
+
+> "No hablo de oro, sino de secretos que el ayuntamiento preferiría mantener bajo llave."
+> Me inclino ligeramente hacia delante, intentando leer los documentos sobre la mesa sin que parezca un movimiento brusco.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 13+1=14
+
+### [4] DM
+
+  2699 ms
+
+> El hombre de la casaca carmesí arquea una ceja, y la chispa de la curiosidad lucha brevemente contra su desdén. No se mueve para cubrir los papeles, permitiendo que tu inclinación te acerque lo suficiente para captar algunas palabras clave entre el caos de la caligrafía. Logras distinguir términos como "censo electoral", "impugnación de actas" y el nombre de "Melquíades" subrayado varias veces con trazo violento.
+> —Secretos —repite él, arrastrando la palabra con una sonrisa gélida que no llega a sus ojos—. El ayuntamiento es un nido de ratas que se muerden la cola; secretos hay a patadas. Lo que yo busco es algo que sea útil, no simples cotilleos de pasillo. Convénceme de que tus secretos tienen el peso suficiente para que yo me moleste en escucharlos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2775 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.knowledge
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -66.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 153 — 64/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -66.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 774 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1350 ms
+
+> "Melquíades parece ser una preocupación recurrente en sus notas. Sería una lástima que alguien más descubriera por qué ese nombre le provoca tanta violencia."
+> Mantengo la mirada fría mientras dejo que el silencio presione.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 5+2=7
+
+### [4] DM
+
+  4626 ms
+
+> El hombre de la casaca carmesí deja escapar una risa seca, un sonido breve y carente de humor que corta el silencio. Sus ojos se entrecierran y, con un movimiento lento y deliberado, desliza la mano sobre los papeles para cubrirlos por completo, eliminando cualquier posibilidad de seguir leyendo. Se inclina hacia adelante, invadiendo tu espacio personal, y el aroma a tabaco caro y tinta vieja te envuelve.
+> —¿Amenazas veladas? —dice en un susurro cargado de veneno—. Te has confundido de interlocutor. En este ayuntamiento, los que intentan jugar al chantaje con aficionados suelen terminar olvidando cómo se habla. No me has convencido; me has aburrido. Retírate antes de que decida que tu presencia es el único secreto que necesito borrar de mi vista.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6745 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4237: Hombre de la casaca carmesí affinity -66.0 → -76.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -76.0 (hostile), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 154 — 65/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -76.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1137 ms
+
+> "Mis disculpas. No era mi intención aburrirle con sutilezas."
+> Me separo lentamente, manteniendo una expresión neutral, y trato de notar si hay algún otro documento o llave asomando bajo su mano mientras retrocedo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 14+2=16
+
+### [4] DM
+
+  2115 ms
+
+> Mientras retrocedes, el hombre se mantiene rígido, observándote con una mirada gélida que no pierde ni un ápice de tu movimiento. En el ángulo muerto de su mano, que sigue presionando los papeles contra el escritorio, vislumbras el brillo metálico de una llave de hierro colgada de un cordón de cuero que asoma apenas unos milímetros bajo el borde de la casaca carmesí.
+> El hombre no parece haberse percatado de que has notado el objeto. Se recuesta en su silla con un gesto de desdén, haciendo un ademán con la mano libre para indicarte la salida, sin apartar sus ojos de ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2760 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: llave de hierro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item llave de hierro
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -76.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 155 — 66/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -76.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1217 ms
+
+> "Entiendo perfectamente. No quitaré más su tiempo."
+> Hago una leve reverencia y, al girarme para marcharme, intento arrebatarle la llave con un movimiento rápido y preciso.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  2076 ms
+
+> El movimiento es un borrón casi invisible. En el instante en que tu cuerpo pivota para la reverencia, tus dedos se deslizan con una precisión quirúrgica bajo el borde de la casaca carmesí, enganchando el cordón de cuero y extrayendo la llave de hierro sin que el metal roce siquiera la tela. 
+> El hombre sigue recostado en su silla, con la expresión de desdén intacta y la mirada gélida fija en tu espalda, completamente ajeno a que el peso en su costado ha desaparecido. El silencio de la estancia solo es roto por el leve roce de tus botas al alejarte hacia la salida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1413 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = llave de hierro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4242: Wynn.inventory = llave de hierro
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -76.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 156 — 67/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -76.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  15953 ms
+
+> Cierro el puño sobre la llave y mantengo el paso firme hacia la salida. No miro atrás.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 9+4=13
+
+### [4] DM
+
+  1728 ms
+
+> El eco de tus pasos resuena en el suelo de piedra mientras te diriges a la puerta. El hombre de la casaca carmesí permanece inmóvil, soltando un bufido de fastidio ante tu partida, aunque no hace ningún movimiento para detenerte.
+> Justo cuando cruzas el umbral, el roce de la llave contra tu palma es la única certeza en el aire pesado de la estancia. El hombre sigue allí, sumido en su arrogancia, ignorando el vacío en su cinturón mientras la puerta se cierra tras de ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  990 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -76.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 157 — 68/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -76.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1185 ms
+
+> "Un placer haberle conocido."
+> Cierro la puerta con suavidad y me alejo rápidamente del lugar, asegurándome de que no me sigan.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 11+4=15
+
+### [4] DM
+
+  1896 ms
+
+> La puerta se cierra con un clic casi imperceptible, dejando atrás el silencio tenso de la estancia. Te deslizas por el pasillo con pasos ligeros, fundiéndote con las sombras de las columnas y aprovechando los ángulos muertos de la arquitectura para ganar distancia. 
+> Desde el interior, no llega ningún grito ni sonido de persecución; el hombre de la casaca carmesí permanece ajeno a la pérdida, sumido en su propio desdén. El aire del corredor es frío y huele a polvo antiguo, mientras te alejas rápidamente hacia la salida, dejando el edificio atrás sin haber dejado rastro de tu huida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1429 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.location_id
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -76.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 158 — 69/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -76.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1651 ms
+
+> Me detengo un instante antes de salir y reviso los bolsillos y pliegues de la ropa del hombre que he dejado atrás, buscando cualquier objeto de valor o documento confidencial.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 7+4=11
+
+### [4] DM
+
+  3129 ms
+
+> Te detienes un instante, con el corazón latiendo con fuerza, y extiendes la mano hacia el hombre de la casaca carmesí mientras este sigue sumido en su propia arrogancia. Tus dedos rozan la tela pesada de su vestidura, pero el movimiento es torpe; el roce de la seda carmesí produce un siseo audible en el silencio del pasillo y el hombre se tensa bruscamente.
+> Él gira la cabeza con una expresión de asco, apartando tu mano con un movimiento seco y violento del brazo. Sus ojos se clavan en los tuyos con un destello de furia contenida mientras retrocede un paso, poniendo distancia entre su ropa y tus dedos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  755 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -76.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 159 — 70/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -76.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1314 ms
+
+> "Mis disculpas, señor. Me he tropezado."
+> Retrocedo rápidamente y bajo la mirada, fingiendo torpeza para disimular mi intención.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 4+4=8
+
+### [4] DM
+
+  2161 ms
+
+> El hombre de la casaca carmesí no aparta la vista, manteniendo el ceño fruncido mientras te observa de arriba abajo. Sus labios se curvan en una mueca de desdén y el siseo de la seda vuelve a sonar cuando se sacude el hombro, como si quisiera eliminar una mancha invisible dejada por tu contacto.
+> —Fíjate por dónde caminas, insolente —espeta con una voz gélida y cortante—. Tu torpeza es casi tan molesta como tu presencia en este pasillo. Lárgate antes de que decida que tu "tropiezo" es una falta de respeto deliberada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  727 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -76.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 160 — 71/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -76.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1038 ms
+
+> "Mis disculpas. No volverá a suceder."
+> Hago una breve reverencia, manteniendo la mirada baja, mientras deslizo los dedos con rapidez hacia el bolsillo de su casaca.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 1+4=5  PIFIA
+
+### [4] DM
+
+  3378 ms
+
+> Al inclinarte, el movimiento es torpe y desesperado. Tus dedos no encuentran la seda del bolsillo, sino que se enganchan violentamente en un botón ornamentado de la casaca, tirando de la tela con un chasquido seco y audible. La fuerza del tirón desequilibra al hombre, que trastabilla hacia atrás mientras el botón sale disparado, rodando por el suelo de piedra con un tintineo metálico.
+> El rostro del hombre se torna de un rojo violáceo, superando el color de su propia ropa. Sus ojos se dilatan por la furia y, sin mediar palabra, te agarra con fuerza del cuello de la prenda, sacudiéndote con un gesto de asco.
+> —¡Ladrón! ¡Maldito ratero de callejón! —ruge, su voz resonando en todo el pasillo mientras busca con la otra mano el pomo de una daga en su cinturón—. ¡Voy a asegurarme de que no vuelvas a usar esas manos para nada más que para suplicar clemencia!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1420 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · ideal_violated
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4264: Hombre de la casaca carmesí affinity -76.0 → -84.0  (any)
+     Actuaron contra lo que él considera correcto.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -84.0 (hostile), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 161 — 72/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -84.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2006 ms
+
+> "Cálmese, ha sido un accidente."
+> Intento zafarme de su agarre con un movimiento rápido mientras busco un punto débil donde golpear.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 6+4=10
+
+### [4] DM
+
+  2415 ms
+
+> El hombre de la casaca carmesí te aprieta más el cuello, ignorando tus palabras con un gruñido de desprecio. Al intentar zafarte, tu movimiento es insuficiente para romper su agarre; el tirón es torpe y solo consigues que el hombre se tense, anclando sus dedos con más fuerza en tu ropa y arrastrándote ligeramente hacia él.
+> Su rostro, a escasos centímetros del tuyo, exhala un aliento cargado de vino y rabia. Sin soltarte, desliza la mano hacia su cinturón y desenvaina la daga con un siseo metálico, posicionando la punta del arma peligrosamente cerca de tu costado.
+> —¿Accidente? —escupe con veneno—. He visto accidentes, rata. Esto ha sido un intento de robo. Ahora vas a aprender lo que ocurre con quienes tocan mi ropa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  690 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -84.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 162 — 73/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -84.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1352 ms
+
+> "Llevas una daga muy bonita, pero tienes la guardia demasiado baja."
+> Intento alcanzar la muñeca del hombre para desviar la punta de la daga mientras busco un punto débil donde golpear.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 15+4=19
+
+### [4] DM
+
+  2650 ms
+
+> Tus dedos se cierran sobre su muñeca con una precisión quirúrgica, aprovechando el exceso de confianza del hombre. Con un giro seco y fluido, desvías la punta de la daga lejos de tu costado, rompiendo el equilibrio de quien cree tener el control total de la situación. El acero describe un arco inútil en el aire mientras el agarre que te asfixiaba se afloja bruscamente.
+> El hombre de la casaca carmesí abre los ojos con sorpresa, su rostro pasando de la rabia a la confusión absoluta. Se tambalea hacia atrás, luchando por recuperar la compostura y el control de su arma, mientras queda expuesto y vulnerable ante ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1343 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4271: Hombre de la casaca carmesí affinity -84.0 → -82.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 163 — 74/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1066 ms
+
+> "Demasiado lento."
+> Aprovecho su desequilibrio para clavarle mi propia daga en el costado mientras lo empujo contra la pared.
+> {Ataque}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Ataque: NO EXISTE — no se tira
+
+### [4] DM
+
+  21735 ms
+
+> [Para resolver el ataque necesito que realices una tirada de Ataque (Fuerza o Destreza + bono de competencia) contra la CA del objetivo. Una vez tengas el resultado, indícame también el daño causado basándote en el dado de tu arma.]
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ meta-comentario entre corchetes
+
+### [6] EXTRACTOR
+
+  767 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Ataque, Destreza, Fuerza, Para
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 164 — 75/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  765 ms
+
+> Ataco al objetivo buscando el punto más débil.
+> {Ataque}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Ataque: NO EXISTE — no se tira
+
+### [4] DM
+
+  1194 ms
+
+> [Para poder narrar el resultado, necesito que realices la tirada de ataque y el cálculo de daño, tal como se indicó en la escena actual. Indica el resultado total del dado más tus modificadores.]
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ meta-comentario entre corchetes
+
+### [6] EXTRACTOR
+
+  931 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Para
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 165 — 76/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1016 ms
+
+> [OOC: El sistema de instrucciones indica que yo NO invento dados ni realizo tiradas, sino que declaro la acción y el sistema tira por mí. Por favor, indica qué acción estoy realizando o tira tú los dados según mi ficha.]
+
+### [3] DADOS (deterministas, del sistema)
+
+  sin tiradas declaradas
+
+### [4] DM
+
+  2051 ms
+
+> [Para evitar confusiones: según las Reglas de Oro de este sistema, yo no realizo las tiradas por ti ni invento los resultados. Tú declaras la acción y adjuntas la tirada resuelta `(resultado: N total)` basada en tu ficha. Como el turno anterior quedó en un bloqueo técnico sobre quién lanza los dados, reiniciemos la escena. Por favor, describe qué intenta hacer tu personaje y acompaña la acción con la tirada correspondiente para que yo pueda narrar la consecuencia.]
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ meta-comentario entre corchetes
+  ⚠ comenta sus propias reglas
+
+### [6] EXTRACTOR
+
+  686 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Oro, Para, Reglas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 166 — 77/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1606 ms
+
+> [OOC: El prompt de sistema indica explícitamente que yo NO invento dados y que el sistema tira por mí. Ignoro la instrucción del DM sobre tirar yo mismo para ceñirme a las Reglas de Oro del sistema proporcionadas en el prompt principal.]
+> "No me gustan los malentendidos, pero me gustan menos las esperas."
+> Observo los alrededores buscando cualquier objeto de valor que haya pasado desapercibido o alguna debilidad en la seguridad del lugar.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 19+2=21
+
+### [4] DM
+
+  1909 ms
+
+> Tus ojos recorren el espacio con precisión quirúrgica, ignorando el ruido superficial para centrarse en las anomalías. Notas que el mobiliario es ostentoso pero descuidado; una pequeña grieta en la moldura de madera de una consola lateral sugiere que el panel es móvil, ocultando un compartimento estrecho donde asoma el borde de un cuero gastado.
+> En cuanto a la seguridad, detectas que el guardia apostado junto a la entrada principal mantiene el peso del cuerpo sobre la pierna izquierda y bosteza con frecuencia, dejando un ángulo muerto de visión hacia el pasillo lateral durante unos segundos cada vez que gira la cabeza para mirar el reloj de pared.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1350 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: cuero gastado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cuero gastado
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 167 — 78/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1005 ms
+
+> "Qué aburrido debe de ser este puesto."
+> Aprovecho el bostezo del guardia para deslizarme hacia el panel móvil de la consola.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 19+4=23
+
+### [4] DM
+
+  2477 ms
+
+> Te fundes con las sombras del pasillo justo cuando el guardia exhala un largo bostezo, cerrando los ojos un instante mientras su guardia desciende. Te desplazas como un susurro sobre la alfombra raída, aprovechando el ángulo muerto para alcanzar la consola sin que el metal de tu equipo emita el más mínimo tintineo.
+> Tus dedos encuentran la grieta en la moldura y, con un movimiento fluido y preciso, deslizas el panel móvil. El cuero gastado que asomaba se revela ahora por completo: es un pequeño cuaderno de notas, encuadernado en piel oscura y desgastada, que descansa en el compartimento oculto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1569 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: cuaderno de notas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cuaderno de notas
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 168 — 79/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1096 ms
+
+> Tomo el cuaderno con rapidez y lo guardo en mi ropa. Antes de marcharme, busco cualquier otra cosa de valor en el compartimento.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+1=2  PIFIA
+
+### [4] DM
+
+  15820 ms
+
+> Tus dedos se cierran sobre el cuaderno y lo deslizas rápidamente bajo tu ropa, pero la urgencia te traiciona. Al intentar palpar el fondo del compartimento en busca de más tesoros, tu mano golpea con torpeza el mecanismo de cierre del panel móvil. Un chasquido metálico, seco y estridente, resuena en el silencio sepulcral del pasillo, reverberando contra las paredes de piedra.
+> El guardia, que hace un segundo bostezaba, abre los ojos de golpe y gira la cabeza hacia la consola con una expresión de alerta absoluta. El sonido ha sido lo suficientemente claro como para romper cualquier ilusión de invisibilidad; ahora sabe exactamente dónde se ha producido el ruido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3294 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = cuaderno de notas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4305: Wynn.inventory = cuaderno de notas
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 169 — 80/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1108 ms
+
+> "Maldita sea."
+> Me pongo en guardia inmediatamente, sacando mi daga y fijando la vista en el guardia para anticipar su movimiento.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 11+4=15
+
+### [4] DM
+
+  3025 ms
+
+> En el instante en que el guardia se impulsa hacia adelante con un grito de alarma, te lanzas en un movimiento fluido y coordinado. El acero de tu daga brilla bajo la luz tenue mientras giras el cuerpo, aprovechando el impulso para distanciarte de la consola y ganar un ángulo ventajoso. El guardia, sorprendido por la rapidez de tu reacción, tropieza ligeramente con sus propias botas al intentar cerrar la distancia, quedando expuesto y desequilibrado frente a ti.
+> El hombre recupera la compostura rápidamente, aunque su rostro ahora refleja una mezcla de furia y desconcierto. Aprieta el mango de su arma y retrocede un paso para recuperar el equilibrio, manteniendo la mirada fija en tu hoja.
+> —¡¿Quién demonios eres y qué haces hurgando en los archivos?! —brama, mientras su mano libre busca el silbato que cuelga de su cuello.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  725 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 170 — 81/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1290 ms
+
+> "No hace falta que grites, solo quiero lo que hay ahí dentro."
+> Intento arrebatarle el silbato antes de que pueda soplarlo.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 1+4=5  PIFIA
+
+### [4] DM
+
+  3800 ms
+
+> Te lanzas hacia el cuello del guardia con un movimiento brusco, pero tu cálculo falla por completo. En lugar de atrapar el cordel del silbato, tus dedos se enredan torpemente en la pesada gorguera de cuero y metal del uniforme, tirando del hombre hacia ti mientras pierdes el equilibrio. El impacto es seco y desgarbado; terminas tropezando con tus propios pies y cayendo de espaldas contra el frío suelo de piedra, dejando tu daga fuera de alcance por un instante.
+> El guardia, aprovechando el ridículo accidente, suelta una carcajada nasal llena de desprecio y te empuja con la bota en el pecho para mantenerte en el suelo. No pierde ni un segundo: lleva el silbato a sus labios y exhala un pitido agudo y estridente que rebota en las paredes de la estancia, alertando a cualquiera que se encuentre en los pasillos exteriores.
+> —¡Intruso en el archivo! —ruge, mientras desenvaina su arma con un sonido metálico y amenazante—. ¡Idiota, te voy a enseñar a robar!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1042 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 171 — 82/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1357 ms
+
+> "Cállate."
+> Intento zancadillear la pierna del guardia mientras sigo en el suelo para derribarlo y recuperar mi daga.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 14+4=18
+
+### [4] DM
+
+  3721 ms
+
+> En el instante en que el guardia se inclina para descargar su desprecio, aprovechas la inercia y el espacio reducido. Tus piernas se disparan con precisión quirúrgica, enganchando su tobillo en un movimiento fluido que lo saca completamente de balance. El hombre suelta un grito ahogado mientras su centro de gravedad desaparece, colisionando contra el suelo de piedra con un estrépito metálico que hace eco en toda la sala.
+> Aprovechando el vacío que deja su caída, ruedas rápidamente sobre el frío pavimento, recuperando el agarre de tu daga en un movimiento coordinado. El guardia yace a tu lado, jadeando por el impacto, con la mirada perdida por un segundo y el silbato aún colgando de su boca, ahora inútil.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1557 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = daga
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4309: Wynn.inventory = daga
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 172 — 83/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1397 ms
+
+> "Duerme ahora."
+> Presiono la daga contra su garganta para silenciarlo y busco rápidamente entre sus pertenencias cualquier objeto de valor o llave.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 1+4=5  PIFIA
+
+### [4] DM
+
+  3744 ms
+
+> El filo de la daga presiona la piel del guardia, quien emite un gorgoteo ahogado y desesperado mientras intenta apartar tu mano con movimientos erráticos. En la urgencia por silenciarlo y registrarlo simultáneamente, tus dedos se enredan torpemente con las correas de cuero y el pesado cinturón del hombre. Al intentar extraer rápidamente lo que parece una llave, el metal se resbala de tus dedos y cae con un tintineo metálico, deslizándose lejos de tu alcance hacia la oscuridad de un rincón de la sala.
+> El guardia, aprovechando el instante de confusión y el espacio que has dejado al perder el objeto, suelta un grito ronco y violento que rasga el silencio del pasillo. Con un espasmo de adrenalina, clava sus uñas en tu antebrazo y comienza a forcejear con furia, pataleando contra el suelo de piedra para atraer la atención de cualquier otra patrulla que ronde los alrededores.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  627 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 173 — 84/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1006 ms
+
+> "Cállate si quieres seguir respirando."
+> Presiono la daga con más fuerza contra su garganta para silenciarlo mientras intento inmovilizar su brazo contra el suelo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 6+-1=5
+
+### [4] DM
+
+  3338 ms
+
+> El guardia se retuerce con una fuerza desesperada, y tu intento de anclar su brazo falla estrepitosamente. En el forcejeo, el hombre logra girar el torso con un espasmo violento, haciendo que la punta de la daga se deslice por su cuello sin llegar a profundizar, pero dejándolo exhausto y jadeante. Sus uñas dejan surcos rojos en tu piel mientras lucha por liberarse, aunque el miedo al acero sigue manteniendo sus gritos en un nivel de gemidos ahogados y roncos.
+> El eco de su primer alarido ya ha viajado por los pasillos de piedra. A lo lejos, el rítmico golpeteo de botas metálicas contra el suelo comienza a acercarse, acompañado por el sonido de armaduras chocando y voces que preguntan qué ha sucedido. El guardia, al oír a sus compañeros, redobla sus pataleos contra el suelo, golpeando la piedra con el talón en un código de auxilio frenético.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  673 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 174 — 85/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -82.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1186 ms
+
+> "Cállate o te abriré la garganta ahora mismo."
+> Presiono la daga con más fuerza contra su cuello para silenciarlo y busco rápidamente entre sus ropas cualquier llave o bolsa de monedas.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 18+4=22
+
+### [4] DM
+
+  2782 ms
+
+> El guardia se queda gélido al sentir el filo morder la piel, ahogando el siguiente grito en un gorgoteo de terror. Sus ojos se dilatan y el cuerpo, antes frenético, se tensa como una cuerda a punto de romperse, aunque permanece inmóvil mientras el acero le recuerda la fragilidad de su cuello.
+> Tus dedos se deslizan con precisión quirúrgica por el cinturón y los pliegues de su jubón. En cuestión de segundos, rescatas un pesado manojo de llaves de hierro que tintinean levemente y una bolsa de cuero gastado que contiene unas cuantas monedas de cobre y una plata. A lo lejos, el ruido de las botas metálicas es ya una presencia tangible; las voces de los guardias ahora suenan claras, justo al doblar la esquina del pasillo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2377 ms · 1 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+  ✓ delta Wynn · character.inventory = llave de hierro
+  ✓ delta Wynn · character.inventory = cuero gastado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4314: Hombre de la casaca carmesí affinity -82.0 → -92.0  (mid)
+     Cede en el momento, lo guarda.
+  → delta 4315: Wynn.inventory = llave de hierro
+  → delta 4316: Wynn.inventory = cuero gastado
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -92.0 (hostile), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 175 — 86/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -92.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1516 ms
+
+> "No hagas ruido y vivirás un poco más."
+> Suelto al guardia y me deslizo rápidamente hacia la sombra más cercana, pegándome a la pared para desaparecer de la vista de quienes doblan la esquina.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 8+4=12
+
+### [4] DM
+
+  2822 ms
+
+> El guardia cae al suelo con un golpe sordo, jadeando y frotándose el cuello con manos temblorosas, demasiado aterrorizado para gritar. Te fundes con la oscuridad del recoveco justo cuando el eco de las armaduras llena el pasillo. Tres guardias doblan la esquina a paso rápido, con las antorchas proyectando sombras alargadas y erráticas que bailan sobre las paredes de piedra.
+> Uno de ellos se detiene en seco al ver a su compañero desplomado en el suelo. El guardia caído intenta balbucear algo, señalando vagamente hacia donde te encuentras, pero el capitán del grupo lo aparta bruscamente con el brazo para inspeccionar la zona. Los ojos del capitán barren el pasillo, deteniéndose un instante en la penumbra donde te ocultas, aunque la luz vacilante de la antorcha no logra revelarte por completo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  841 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -92.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 176 — 87/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -92.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  942 ms
+
+> Me quedo inmóvil, conteniendo la respiración y fundiéndome con las sombras. {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 2+4=6
+
+### [4] DM
+
+  2913 ms
+
+> El capitán frunce el ceño y da un paso hacia el recoveco, atraído por una irregularidad en la penumbra. La luz de la antorcha oscila violentamente, y justo cuando el haz de fuego ilumina el rincón, el brillo de tu equipo o un movimiento involuntario te delata.
+> — ¡Ahí hay alguien! —brama el capitán, extendiendo el brazo para señalarte mientras desenvaina su espada con un sonido metálico y seco. Los otros dos guardias reaccionan al instante, cerrando el círculo alrededor de tu posición con las armas en alto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1445 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -92.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 177 — 88/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -92.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1039 ms
+
+> "No busquéis problemas donde no los hay."
+> Me deslizo rápidamente hacia la sombra más cercana para intentar romper el círculo.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 9+4=13
+
+### [4] DM
+
+  2231 ms
+
+> El capitán suelta un gruñido de desdén ante tus palabras, pero su atención se fragmenta un instante mientras intentas fundirte con la oscuridad. Te deslizas hacia el rincón, sintiendo el frío de la piedra húmeda contra tu espalda, pero el movimiento es demasiado brusco y el roce de tu ropa contra un saliente de roca produce un sonido seco que resuena en el silencio del pasillo.
+> — ¡No te dejarás escapar tan fácilmente, rata! —ruge el capitán. Sus botas golpean el suelo con fuerza mientras avanza hacia tu posición, manteniendo la espada en guardia y coordinando a sus hombres para que no pierdan de vista el punto exacto donde te has ocultado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  777 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -92.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 178 — 89/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -92.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1243 ms
+
+> "No soy una rata, capitán. Solo busco un mejor ángulo."
+> Me impulso rápidamente desde la pared para intentar flanquearlo antes de que llegue a mi posición.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  3093 ms
+
+> El impulso es eléctrico y preciso. Te catapultas desde la pared húmeda con una agilidad felina, transformando la inercia del salto en un giro fluido que deja al capitán golpeando el aire vacío. Sus botas resbalan ligeramente en el suelo mojado mientras intenta corregir la trayectoria, quedando expuesto y totalmente descolocado por la velocidad de tu maniobra.
+> El capitán suelta un jadeo de sorpresa, girando la cabeza frenéticamente hacia el lugar donde ahora te encuentras, justo a su flanco. Sus hombres, confundidos por el movimiento repentino, chocan entre sí en el estrecho pasillo, bloqueándose el paso mientras el oficial intenta recuperar la guardia con la espada temblando de rabia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1446 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4325: Hombre de la casaca carmesí affinity -92.0 → -90.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 179 — 90/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  875 ms
+
+> "Demasiado lento, capitán."
+> Aprovecho su desequilibrio para clavar mi daga en el hueco de su armadura.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 1+4=5  PIFIA
+
+### [4] DM
+
+  3278 ms
+
+> El giro es brusco y la confianza te traiciona. Al intentar clavar la daga en el hueco de la armadura, tu pie resbala en una placa de musgo traicionera del suelo húmedo. El impulso que debía ser letal se convierte en un tropiezo torpe; la daga no encuentra el acero, sino que rebota con un sonido metálico seco contra la placa del hombro del capitán, desviando tu brazo y lanzándote hacia adelante.
+> El capitán, que hace un segundo estaba descolocado, recupera el equilibrio gracias a tu propio fallo. Su rostro se contrae en una mueca de desprecio mientras aprovecha tu posición vulnerable.
+> —¿Eso es todo lo que tienes, rata? —gruñe, mientras sus hombres, ya recuperados del choque, cierran el círculo sobre ti con las armas en alto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  836 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 180 — 91/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1803 ms
+
+> "Tengo suficiente para hacerte sangrar."
+> Ruedo rápidamente sobre el suelo húmedo para alejarme de sus pies e intento ponerme en pie mientras busco una salida o un punto ciego entre los guardias.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 1+4=5  PIFIA
+
+### [4] DM
+
+  3044 ms
+
+> El intento de rodar se convierte en un desastre coordinado con el musgo. Al impulsarte, tu cuerpo no describe un arco fluido, sino que resbala violentamente hacia un lado, haciendo que tu pierna se trabe con una raíz saliente y húmeda. El golpe contra el suelo es sordo y seco, dejándote tendido de espaldas, con la respiración entrecortada y el cuerpo momentáneamente entumecido por el impacto.
+> El capitán suelta una carcajada ronca que resuena en el espacio cerrado, mientras los guardias se cierran sobre ti, eliminando cualquier posibilidad de punto ciego. Sus botas ya pisan el lodo a pocos centímetros de tu cabeza y el brillo del acero desciende, envolviéndote en una sombra metálica.
+> —Míralo, no sabe ni mantenerse en pie —se mofa el capitán, señalándote con el dedo mientras sus hombres mantienen el círculo apretado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1436 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.conditions = entumecido
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4328: Wynn.conditions = entumecido
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 181 — 92/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1261 ms
+
+> "Tienen suerte de que el suelo sea tan traicionero."
+> Intento alcanzar el puñal que llevo oculto mientras fingo que sigo aturdido por el golpe.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  2537 ms
+
+> Tus dedos se deslizan con una precisión quirúrgica y casi invisible bajo el pliegue de tu ropa, sorteando la torpeza del impacto. Mientras el capitán sigue riendo, convencido de tu derrota, el frío acero del puñal ya descansa en tu palma, oculto por la posición de tu brazo y la sombra que proyectan los guardias sobre ti.
+> El capitán se inclina un poco más, con el rostro contraído en una mueca de desprecio, ignorando que la ventaja del terreno ha cambiado de bando en un instante. Sus botas se hunden en el lodo, dejándolo ligeramente desequilibrado mientras te mira desde arriba.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  804 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 182 — 93/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  925 ms
+
+> "Toda esa risa te ha dejado el cuello muy expuesto."
+> Aprovecho su desequilibrio para clavar el puñal en su garganta con un movimiento rápido y seco.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 16+4=20
+
+### [4] DM
+
+  2773 ms
+
+> El movimiento es un borrón de acero y precisión. Aprovechando el balanceo del capitán, te deslizas bajo su guardia con una fluidez felina, transformando tu posición vulnerable en el ángulo de ataque perfecto. El puñal se hunde en la carne blanda del cuello con un sonido sordo y húmedo, cortando el flujo de aire y de risas en un solo instante.
+> El capitán abre los ojos con una sorpresa absoluta, sus manos enguantadas arañando inútilmente el aire mientras el brillo del desprecio en su mirada se apaga, sustituido por un vacío gélido. El cuerpo se desploma pesadamente sobre el lodo, salpicando tus botas, mientras el silencio cae súbitamente sobre los guardias, que permanecen congelados un segundo antes de reaccionar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1117 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Hombre de la casaca carmesí · npc.status = dead
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4332: Hombre de la casaca carmesí.status = dead
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 183 — 94/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1337 ms
+
+> "Demasiado ruido."
+> Retiro el puñal rápidamente y busco entre las ropas y los bolsillos del cadáver cualquier objeto de valor o documento importante.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 12+4=16
+
+### [4] DM
+
+  2327 ms
+
+> Tus dedos se mueven con rapidez mecánica sobre la tela empapada de sangre y lodo del capitán. Entre el revuelo de las solapas y los pliegues de la casaca, encuentras un pequeño libro de cuero negro sujeto por una correa de plata, junto a una bolsa de cuero que tintinea con el peso de unas pocas monedas de oro y un sello lacrado de cera roja con el emblema de una balanza rota.
+> A tu espalda, el estupor de los guardias se rompe. El sonido de las botas golpeando el barro y el metal chocando contra el metal resuena mientras recuperan la compostura, sus rostros transformándose en máscaras de furia y pánico al ver el cuerpo inerte en el suelo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1675 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = libro de cuero negro
+  ✓ creación item: sello de la balanza rota
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item sello de la balanza rota
+  → delta 4336: Wynn.inventory = libro de cuero negro
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 184 — 95/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  819 ms
+
+> Guardo el libro, el sello y la bolsa de oro rápidamente en mi equipo. Me pongo en pie y retrocedo hacia las sombras más cercanas.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  2783 ms
+
+> Tus movimientos son un borrón imperceptible; el cuero y el metal se deslizan en tu equipo sin emitir un solo roce justo cuando el primer guardia alcanza el lugar donde estabas. Te fundes con la penumbra de los callejones como si fueras parte de la propia oscuridad, dejando atrás solo el rastro del cuerpo desplomado en el barro.
+> Los guardias llegan al lugar jadeando, sus ojos recorriendo frenéticamente el espacio vacío. Uno de ellos se desploma de rodillas junto al capitán, soltando un grito ahogado al notar que los objetos personales han desaparecido. —¡Se lo han llevado! —brama el hombre, girando la cabeza hacia las sombras donde te ocultas, pero su mirada pasa de largo, incapaz de distinguir tu silueta del vacío nocturno.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1091 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = sello de la balanza rota
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4339: Wynn.inventory = sello de la balanza rota
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 185 — 96/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2587 ms
+
+> "Imbeciles."
+> Me mantengo inmóvil en las sombras, esperando a que el pánico los desorganice para buscar una ruta de salida despejada.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 8+4=12
+
+### [4] DM
+
+  4119 ms
+
+> El capitán se pone en pie con un movimiento brusco, su rostro contraído por la furia mientras sacude al guardia que sigue de rodillas. El ruido de sus gritos y el chof-chof de las botas hundiéndose en el lodo llenan el callejón, creando un caos sonoro que enmascara cualquier pequeño movimiento. Los guardias comienzan a dispersarse en grupos de dos, señalando direcciones opuestas y discutiendo a voces sobre dónde buscar, dejando el flanco derecho del callejón parcialmente desatendido.
+> Sin embargo, mientras observas la desorganización, uno de los centinelas se detiene en seco. Gira la cabeza lentamente hacia tu posición, entornando los ojos para analizar la densidad de las sombras. Aunque no te ha visto con claridad, el instinto lo empuja a dar un paso cauteloso en tu dirección, con la mano apoyada en el pomo de su espada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  730 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 186 — 97/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1635 ms
+
+> "Sigue buscando en el lodo, idiota."
+> Me hundo más en las sombras, aprovechando el ruido de los gritos para fundirme con la pared y evitar que el guardia me localice.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 13+4=17
+
+### [4] DM
+
+  3609 ms
+
+> El guardia frunce el ceño, confundido por el juego de luces y sombras que danza contra la piedra húmeda. Da un paso más, pero el detonante llega en forma de un alarido del capitán, que lanza un insulto final al guardia arrodillado, haciendo que el centinela sacuda la cabeza y desvíe la mirada con un bufido de fastidio.
+> Convencido de que solo ha sido un truco de la vista o el movimiento de alguna rata callejera, el hombre se da la vuelta y se une a sus compañeros, alejándose hacia el extremo opuesto del callejón. El flanco derecho queda ahora completamente vacío, envuelto en el silencio relativo que deja el ruido distante de la disputa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  681 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 187 — 98/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1275 ms
+
+> Aprovecho la distracción y el vacío del flanco derecho para avanzar sin ser visto. Me deslizo hacia la zona despejada manteniendo la espalda contra la pared.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 13+4=17
+
+### [4] DM
+
+  2305 ms
+
+> El roce de la tela contra la piedra húmeda es apenas un susurro que se pierde entre los ecos del callejón. Te deslizas como una sombra más entre los relieves de la pared, aprovechando que la atención de los guardias sigue anclada en la reprimenda del capitán. El aire huele a salitre y a basura vieja, y el frío de la roca se filtra a través de tu ropa mientras ganas terreno.
+> Llegas al flanco derecho sin que nadie gire la cabeza. Desde tu nueva posición, tienes una vista despejada de la salida del callejón y el grupo de centinelas ahora te da la espalda, absortos en su propia dinámica y ajenos a tu presencia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  668 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 188 — 99/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1074 ms
+
+> Me quedo inmóvil un instante, observando el equipo de los guardias para ver si alguno lleva algo de valor al cinto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 12+2=14
+
+### [4] DM
+
+  2368 ms
+
+> Desde tu posición, el brillo metálico de las hebillas y las vainas resalta bajo la luz mortecina del callejón. La mayoría de los guardias visten el equipo estándar de cuero gastado y acero común, pero uno de ellos, el que permanece más apartado del capitán, lleva una bolsa de cuero negro colgada del cinturón, cerrada con un cordón de seda que denota una calidad superior al resto de su indumentaria.
+> El peso de la bolsa parece considerable, balanceándose rítmicamente mientras el guardia cambia el peso de su cuerpo de una pierna a otra, impaciente. El resto de los centinelas solo porta el equipo reglamentario: dagas cortas, bolsas de suministros básicas y las llaves del puesto que tintinean débilmente con cada movimiento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1477 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: bolsa de cuero negro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item bolsa de cuero negro
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 189 — 100/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1444 ms
+
+> "Demasiado ostentoso para un simple guardia."
+> Me deslizo entre las sombras intentando acercarme al guardia de la bolsa sin ser visto.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 4+4=8
+
+### [4] DM
+
+  2278 ms
+
+> El cuero de tus botas cruje contra un trozo de grava suelta y el roce de tu capa contra una pared húmeda produce un sonido seco que rompe el silencio del callejón. El guardia de la bolsa, que hasta hace un momento balanceaba el peso de su cuerpo con aburrimiento, se tensa al instante y gira la cabeza hacia tu posición con los ojos entornados.
+> —¿Quién anda ahí? —ladra el guardia, llevando la mano instintivamente al pomo de su daga corta mientras da un paso hacia las sombras donde te encuentras. El capitán y los demás centinelas dejan de hablar y se giran al unísono, sus miradas escrutando la oscuridad con sospecha.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  809 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 190 — 101/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2945 ms
+
+> "Solo un gato, guardia. No gastéis el aliento."
+> Me deslizo rápidamente hacia atrás, intentando fundirme con la oscuridad más densa del callejón.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 18+4=22
+
+### [4] DM
+
+  5576 ms
+
+> El guardia parpadea, confundido por la voz que parece emanar de las sombras, y su mirada recorre el callejón con una irritación creciente. Justo cuando intenta dar un paso más hacia tu posición, un gato callejero, flaco y gris, salta desde un montón de cajas vacías con un maullido estridente, cruzando el camino del centinela. El hombre suelta un bufido de desprecio y relaja la mano sobre la daga, mientras los demás guardias intercambian miradas burlonas y regresan a su charla, dándote la espalda.
+> Te deslizas hacia atrás con una fluidez casi sobrenatural; el aire no vibra y tus pasos no dejan rastro sobre la grava. Te fundes en la negrura del callejón como si fueras parte de la propia piedra húmeda, quedando completamente invisible para el grupo mientras ellos vuelven a sumirse en su conversación, ignorando que el peligro sigue acechando a pocos metros.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  960 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 191 — 102/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1160 ms
+
+> Me quedo inmóvil, escuchando con atención la conversación de los guardias para captar cualquier detalle útil.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+2=4
+
+### [4] DM
+
+  3546 ms
+
+> El ruido del callejón se vuelve un caos de sonidos irrelevantes. El viento silba entre los muros, el goteo constante de una tubería cercana golpea el suelo con un ritmo hipnótico y el maullido lejano de otros gatos se mezcla con el bullicio de la ciudad. A pesar de tu inmovilidad, el entorno parece conspirar para ahogar las voces de los guardias.
+> Desde tu posición, solo alcanzas a distinguir fragmentos inconexos: risas roncas, el chocar de unas jarras y alguna palabra aislada sobre el frío de la noche, pero ninguna frase completa o dato concreto logra filtrarse a través del ruido ambiental. Los guardias continúan hablando, pero sus palabras son ahora solo un murmullo indistinguible.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  632 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 192 — 103/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1953 ms
+
+> "Maldita ciudad."
+> Me deslizo con cuidado hacia una posición más favorable para escuchar, intentando acercarme a los guardias sin ser visto.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 14+4=18
+
+### [4] DM
+
+  3562 ms
+
+> Tus botas apenas rozan las piedras húmedas mientras te fundes con las sombras proyectadas por los salientes de los muros. Te desplazas como un espectro, aprovechando el ritmo del goteo de la tubería para enmascarar el leve roce de tu ropa contra la pared. El frío cala en los huesos, pero la adrenalina mantiene tus movimientos fluidos y precisos.
+> Logras ganar terreno hasta quedar a escasos pasos de los guardias, oculto tras un montón de cajas de madera carcomidas y sacos de grano húmedos. Ahora que el ruido del callejón ha quedado a tus espaldas, sus voces llegan nítidas, despojadas del murmullo urbano. Uno de ellos suelta una carcajada seca mientras comenta que el hombre de la casaca carmesí no estará contento si se enteran de que han pasado media hora bebiendo en lugar de patrullar el perímetro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  841 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 193 — 104/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3613 ms
+
+> Me quedo inmóvil, pegado a las cajas, escuchando atentamente para captar cualquier detalle sobre ese hombre de la casaca carmesí.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+2=3  PIFIA
+
+### [4] DM
+
+  3568 ms
+
+> En el instante en que intentas aguzar el oído, un trozo de madera podrida de las cajas cede bajo el peso de tu cuerpo con un crujido seco y estrepitoso que resuena en el silencio del callejón. El sonido es tan brusco que te desestabiliza, provocando que un saco de grano húmedo se deslice y caiga al suelo con un golpe sordo.
+> Los guardias dejan de reírse al instante. Uno de ellos gira la cabeza rápidamente hacia tu posición, con la mano ya apoyada en el pomo de su espada. "¿Quién anda ahí?", brama con voz ronca, mientras comienza a caminar hacia las cajas con paso firme y sospechoso.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  675 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 194 — 105/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  6426 ms
+
+> "No hay nadie aquí, capitán."
+> Me deslizo rápidamente hacia la sombra más profunda detrás de los sacos para desaparecer de su vista.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 18+4=22
+
+### [4] DM
+
+  2881 ms
+
+> Te fundes con la penumbra del callejón justo cuando el guardia asoma la cabeza por el borde de las cajas. El movimiento es fluido, casi líquido, y te conviertes en una extensión más de la oscuridad y la humedad de los muros de piedra. El soldado parpadea, recorriendo con la mirada el espacio vacío donde hace un segundo resonó el estrépito, pero solo encuentra sacos rasgados y madera astillada.
+> —Malditas cajas podridas —gruñe el guardia, soltando el pomo de su espada con un gesto de fastidio—. El municipio no gasta un cobre en limpiar este agujero.
+> El compañero suelta una carcajada burlona y le da una palmada en el hombro, arrastrándolo de vuelta hacia la conversación y las risas que llenan el aire denso del callejón.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  707 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 195 — 106/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2353 ms
+
+> "Demasiado descuidados."
+> Aprovecho que están distraídos para deslizarme hacia ellos, buscando acercarme lo suficiente para revisar si llevan algo de valor en los cinturones.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 10+4=14
+
+### [4] DM
+
+  3299 ms
+
+> Te desplazas como una sombra, aprovechando el eco de las risas y el ruido del callejón para enmascarar el roce de tus botas sobre el suelo húmedo. Te deslizas detrás de ellos, manteniendo la distancia justa para no ser detectado mientras el aire pesado, cargado de olor a salitre y basura, se vuelve más denso a medida que te acercas a sus espaldas.
+> Te posicionas a escasos centímetros de los guardias, que siguen absortos en su charla banal. Desde tu ángulo, alcanzas a divisar los cinturones de cuero desgastado: el primero lleva una bolsa de cuero pequeña y anudada que oscila ligeramente con sus movimientos, mientras que el segundo luce un juego de llaves de hierro oxidado y un pequeño relicario de plata que brilla débilmente bajo la luz mortecina del lugar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2626 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: llaves de hierro oxidado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item llaves de hierro oxidado
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 196 — 107/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1495 ms
+
+> Me deslizo hacia el guardia del relicario, buscando extraer la joya y las llaves sin que lo note.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 2+4=6
+
+### [4] DM
+
+  2341 ms
+
+> Tus dedos rozan el frío metal del relicario, pero en el momento en que intentas deslizarlo fuera del cinturón, el cuero desgastado emite un chirrido seco y traicionero. El movimiento es brusco; el guardia siente el tirón inmediato en su cadera y se gira con una rapidez instintiva, atrapando tu muñeca con un agarre firme y tosco.
+> —¡Eh! ¿Qué demonios haces aquí, rata de alcantarilla? —brama el guardia, mientras su compañero se detiene en seco y lleva la mano al pomo de su espada, mirando con desconfianza hacia la oscuridad del callejón.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  771 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 197 — 108/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1032 ms
+
+> "Solo buscaba un poco de ayuda, señor. Me he perdido."
+> Intento zafarme de su agarre con un movimiento rápido y fluido.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 19+4=23
+
+### [4] DM
+
+  2632 ms
+
+> El guardia no tiene tiempo ni de parpadear. En el instante en que intenta apretar el agarre, tu cuerpo se desliza con una fluidez casi líquida, aprovechando la propia inercia del hombre para girar la muñeca y liberarte del yunque de sus dedos. El tirón brusco lo desequilibra, dejándolo con la mano vacía y el brazo extendido hacia el aire vacío.
+> —¡Maldita sea! —gruñe el guardia, recuperando la postura con un tropezón mientras su rostro se pone rojo de frustración. Su compañero, ya con la hoja a medio salir de la vaina, da un paso al frente bloqueando la salida del callejón, con los ojos entrecerrados y la mandíbula tensa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  663 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 198 — 109/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  991 ms
+
+> "Vaya torpeza."
+> Aprovecho el desequilibrio del primer guardia para empujarlo contra su compañero, intentando crear espacio para escapar del callejón.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 2+4=6
+
+### [4] DM
+
+  2320 ms
+
+> El empujón es débil y mal calculado. El primer guardia, aunque tambaleándose, recupera el equilibrio con un gruñido y choca contra su compañero, pero el impacto es insuficiente para desestabilizarlo. En lugar de abrirse un hueco, te encuentras ahora frente a dos hombres que han cerrado el paso con una coordinación instintiva, bloqueando la salida del callejón.
+> El guardia que acabas de empujar te mira con los ojos inyectados en sangre, mientras el otro termina de desenvainar el acero con un siseo metálico. —Ahora sí que te vas a quedar quieto, escoria —masca el primero, lanzándose hacia adelante para atraparte nuevamente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  792 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 199 — 110/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  858 ms
+
+> "No creo que sea así."
+> Me agacho rápidamente para evitar el agarre y busco un punto débil en su postura para derribarlo.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 2+4=6
+
+### [4] DM
+
+  2258 ms
+
+> El guardia se lanza con el impulso de su propia ira, pero el movimiento es torpe y predecible. Al intentar agacharte, tus pies resbalan en la humedad del callejón y pierdes el equilibrio, quedando en una posición vulnerable y torpe justo donde el hombre esperaba que estuvieras.
+> El guardia aprovecha tu tropiezo y, soltando una carcajada ronca, cierra sus dedos como una garra sobre tu hombro para hundirte contra el suelo. —¡Demasiado lento! —brama mientras el segundo guardia se posiciona a tu lado, con la hoja del acero brillando fría a pocos centímetros de tu cuello.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2360 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.conditions = vulnerable
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4379: Wynn.conditions = vulnerable
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 200 — 111/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  979 ms
+
+> "Tsk... torpe."
+> Intento zafarme del agarre del primer guardia mientras busco el pomo de mi daga para clavársela en la pierna.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 8+4=12
+
+### [4] DM
+
+  2258 ms
+
+> El guardia aprieta el agarre con más fuerza, hundiendo sus dedos en tu hombro mientras te mantiene anclado contra el pavimento húmedo. Tu intento de retorcerte es insuficiente; el hombre es más pesado y su posición es dominante, bloqueando cualquier ángulo de escape efectivo.
+> El segundo guardia presiona la hoja del acero contra tu piel, obligándote a mantener la cabeza inmóvil. —No te molestes, rata —escupe el hombre de la garra, mientras su risa se convierte en un gruñido de satisfacción—. Ahora vas a aprender cómo se trata a los que ensucian nuestros callejones.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  758 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 201 — 112/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1055 ms
+
+> "Hacéis mucho ruido para ser simples perros de guardia."
+> Intento deslizar la mano hacia mi cinturón para alcanzar una daga mientras mantengo el cuerpo tenso.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 13+4=17
+
+### [4] DM
+
+  2431 ms
+
+> El guardia de la garra suelta una carcajada ronca, distraído por la insolencia, y afloja apenas unos milímetros la presión de la hoja contra tu cuello para burlarse. Aprovechando ese instante de arrogancia y la tensión de tu cuerpo, tus dedos se deslizan con precisión quirúrgica bajo la tela, encontrando el frío metal del pomo de la daga sin que los captores noten el movimiento.
+> El hombre que te inmoviliza contra el pavimento húmedo gruñe, ignorando el insulto mientras aprieta más el agarre en tu hombro, convencido de que tienes la espalda totalmente anulada contra el suelo. El acero sigue rozando tu piel, pero ahora tienes el arma en la palma de la mano, oculta y lista.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  844 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 202 — 113/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  833 ms
+
+> "Me habéis subestimado."
+> Giro el cuerpo bruscamente para clavar la daga en el muslo del guardia que me inmoviliza.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 17+4=21
+
+### [4] DM
+
+  2456 ms
+
+> El movimiento es un rayo de acero y tendones. Te retuerces con una agilidad imprevista, deslizándote fuera del agarre del hombre que te aplastaba contra el suelo antes de que pueda reaccionar. En un parpadeo, la daga desciende con precisión quirúrgica, hundiéndose profundamente en el músculo del muslo del captor.
+> El guardia suelta un alarido desgarrador que rompe el silencio del callejón, mientras sus piernas ceden y cae de rodillas, presionando la herida con manos temblorosas. El otro guardia, el de la hoja en tu cuello, retrocede instintivamente por la sorpresa, dejando un espacio vacío entre ambos y quedando expuesto mientras intenta procesar el giro de los acontecimientos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  661 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 203 — 114/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1176 ms
+
+> "Demasiado lento."
+> Aprovecho el espacio creado para lanzar un ataque rápido al guardia que ha retrocedido.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 2+4=6
+
+### [4] DM
+
+  3175 ms
+
+> El guardia, aún procesando el grito de su compañero, intenta recuperar la compostura, pero tu movimiento es torpe y errático. En el intento de aprovechar el hueco, tropiezas con el uneven pavimento del callejón o pierdes el equilibrio en el giro, haciendo que tu ataque sea previsible y débil.
+> El hombre reacciona con un bufido de desprecio y desvía tu golpe con un movimiento seco del antebrazo. Recupera la guardia instantáneamente, apretando el mango de su espada mientras te mira con una mezcla de asco y superioridad. El guardia herido, mientras tanto, gime en el suelo, manchando la piedra de un rojo intenso.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  844 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 204 — 115/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  24 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1955 ms
+
+> "Tsk. Un error insignificante."
+> Doy un salto hacia atrás para recuperar la distancia y busco rápidamente algún objeto o punto débil en su armadura que pueda aprovechar.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 4+2=6
+
+### [4] DM
+
+  3304 ms
+
+> El hombre de la casaca carmesí no aprovecha tu retroceso para atacar, sino que se queda anclado en su sitio, disfrutando de tu torpeza. Cruza los brazos sobre el pecho con una sonrisa gélida, observando cómo te alejas mientras el sonido de los gemidos del guardia herido llena el estrecho callejón.
+> Tus ojos recorren frenéticamente su figura, pero la luz mortecina del lugar y la rapidez de tus movimientos solo te devuelven una imagen borrosa. Solo ves la calidad superior de su tela y el brillo metálico de su equipo, sin lograr distinguir ninguna fisura, remache suelto o descuido en su guardia que puedas explotar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  776 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 205 — 116/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1779 ms
+
+> "Demasiado seguro de ti mismo."
+> Me detengo y trato de analizar su postura y equipo con calma, buscando cualquier detalle que se me haya pasado en la prisa.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 3+2=5
+
+### [4] DM
+
+  2663 ms
+
+> El hombre de la casaca carmesí suelta una risita seca, un sonido carente de cualquier rastro de humor que rebota en las paredes húmedas del callejón. No se mueve ni un centímetro; permanece como una estatua de arrogancia, cuya sola presencia parece reducir el espacio disponible a tu alrededor.
+> A medida que intentas escudriñar su figura, el entorno juega en tu contra. El viento arrastra una nube de polvo y hollín que se interpone en tu línea de visión, y la luz vacilante de los faroles distorsiona las sombras. No encuentras ninguna debilidad, ninguna costura suelta ni ningún descuido en su posición; solo ves una silueta imperturbable y una mirada que te juzga con profundo desdén.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  748 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 206 — 117/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1132 ms
+
+> "Tu arrogancia es tan visible como tu casaca."
+> Me mantengo en silencio, observando sus ojos para intentar descifrar qué es lo que realmente quiere de mí.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+0=12
+
+### [4] DM
+
+  1784 ms
+
+> El hombre de la casaca carmesí arquea una ceja, y la comisura de sus labios se contrae en una mueca de fastidio. No se siente intimidado por el comentario; al contrario, el desprecio en su mirada se intensifica, volviéndose gélido mientras sostiene el contacto visual.
+> Sus ojos son pozos oscuros que no revelan ninguna emoción legible ni intención clara. No hay rastro de nerviosismo, duda o urgencia en su postura; solo una seguridad absoluta en su posición de superioridad que te deja sumido en la incertidumbre sobre sus verdaderos motivos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  615 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 207 — 118/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1462 ms
+
+> "La seguridad es un lujo que suele durar muy poco."
+> Sigo sosteniendo la mirada, analizando cada microgesto de su rostro para encontrar una grieta en su compostura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+0=9
+
+### [4] DM
+
+  2312 ms
+
+> El hombre de la casaca carmesí no parpadea. Su rostro permanece como una máscara de cera, imperturbable y gélido, mientras el silencio se prolonga entre ambos. No hay un tic nervioso en sus dedos, ni una contracción involuntaria en su mandíbula; su lenguaje corporal es el de alguien que se sabe dueño absoluto del espacio que ocupa.
+> —La arrogancia de los recién llegados suele ser tan predecible como efímera —responde con una voz seca, desprovista de cualquier calidez—. No confunda mi paciencia con una debilidad, ni su insolencia con una estrategia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  643 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 208 — 119/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1631 ms
+
+> "La paciencia es un lujo que solo se pueden permitir quienes creen tener el control."
+> Sostengo la mirada sin inmutarme, buscando cualquier fisura en su compostura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+0=10
+
+### [4] DM
+
+  1696 ms
+
+> El hombre de la casaca carmesí mantiene la mirada, clavando sus ojos en los tuyos con una fijeza casi antinatural. No hay rastro de duda ni un leve temblor en su postura; se mantiene como una estatua de marfil y seda, absorbiendo tu comentario sin que una sola arruga aparezca en su frente.
+> Su expresión no flaquea ni un milímetro. No logras detectar ninguna grieta en su armadura emocional, ningún tic ni signo de inquietud que sugiera que tus palabras hayan calado en él o que oculte algún nerviosismo bajo esa fachada de hielo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1783 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 209 — 120/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -90.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1252 ms
+
+> "Tienes una disciplina admirable. Casi parece que no fueras humano."
+> Sigo sosteniendo la mirada, tratando de encontrar cualquier detalle mínimo que se le haya escapado en su máscara de frialdad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 15+0=15
+
+### [4] DM
+
+  4086 ms
+
+> El hombre de la casaca carmesí no parpadea, pero el silencio se prolonga un segundo más de lo habitual. Al observar con detenimiento la rigidez de su cuello y la tensión casi imperceptible en la comisura de sus labios, notas que su quietud no es natural, sino una voluntad férrea y forzada; está ejerciendo un control consciente y agotador sobre cada músculo de su rostro para no reaccionar.
+> —La disciplina es la única herramienta que separa a los hombres de STATE del resto del ganado —responde con una voz gélida y monocorde, sin apartar la vista—. Vuestra curiosidad es tan evidente como vuestra falta de tacto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1045 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4393: Hombre de la casaca carmesí affinity -90.0 → -88.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -88.0 (hostile), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 210 — 121/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -88.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  962 ms
+
+> "La disciplina es admirable, pero el silencio es más útil."
+> Mantengo la mirada, intentando descifrar qué es exactamente lo que está intentando ocultar tras esa máscara de control.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+0=8
+
+### [4] DM
+
+  1617 ms
+
+> El hombre de la casaca carmesí no se inmuta ante tu comentario sobre el silencio; al contrario, parece encontrar en tu frase una justificación para cerrar aún más el círculo de su hermetismo. Su mirada permanece fija, como dos cuentas de vidrio frío, y la tensión de su mandíbula se vuelve una línea recta y severa que corta cualquier posibilidad de empatía.
+> No hay grietas en su expresión, ni un tic nervioso ni un cambio en la respiración que te permita leer sus intenciones. Para ti, el hombre es ahora una pared de piedra carmesí: impenetrable, gélida y absolutamente vacía de pistas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1758 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -88.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 211 — 122/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -88.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1073 ms
+
+> "Entiendo que el silencio es tu mejor arma. Pero el mío es el de quien sabe esperar."
+> Me inclino ligeramente hacia delante, manteniendo el contacto visual, buscando cualquier detalle en su vestimenta o en el entorno que haya pasado por alto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 4+2=6
+
+### [4] DM
+
+  2038 ms
+
+> El hombre de la casaca carmesí arquea una ceja, pero no rompe el contacto visual. El ligero movimiento de tu cuerpo solo provoca que él se enderece, manteniendo una distancia gélida y calculada que reafirma su control sobre el espacio.
+> Tu mirada recorre la tela brillante de su prenda y los alrededores, pero la escena se mantiene borrosa y anodina. No hay ningún objeto fuera de lugar, ni una nota oculta, ni un detalle en el corte de su ropa que te revele algo más allá de su evidente deseo de mantenerte al margen. El entorno permanece tan mudo y estéril como el hombre que lo habita.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  661 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -88.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 212 — 123/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -88.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1267 ms
+
+> "Pareces alguien que valora el silencio tanto como yo. Hablemos de lo que realmente importa."
+> Mantengo la mirada, buscando cualquier señal de debilidad o nerviosismo en su postura mientras hablo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 15+0=15
+
+### [4] DM
+
+  3273 ms
+
+> El hombre de la casaca carmesí no parpadea, pero el rincón de su labio se contrae en una mueca de desdén ante la insinuación. A pesar de su rigidez, notas que sus dedos tamborilean rítmicamente sobre el tejido de su prenda, un tic casi imperceptible que desmiente la calma gélida de su rostro; hay una impaciencia vibrando bajo su superficie, como si estuviera contando los segundos para terminar este encuentro.
+> —El silencio es una virtud que pocos saben cultivar y que tú, al parecer, confundes con una invitación —responde con una voz seca, como el crujido de un pergamino viejo—. No me interesa tu concepto de lo que "realmente importa". Dime qué quieres antes de que mi paciencia se agote del todo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  711 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -88.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 213 — 124/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -88.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1000 ms
+
+> "No busco perder el tiempo, ni el tuyo ni el mío. Solo quiero saber qué es lo que te pone tan nervioso"
+> Me inclino ligeramente hacia delante, manteniendo la mirada fija en sus dedos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+0=8
+
+### [4] DM
+
+  10526 ms
+
+> El hombre de la casaca carmesí detiene el tamborileo de sus dedos en seco, cerrando el puño con una fuerza que hace blanquear sus nudillos. Su mirada se vuelve aún más gélida y el desdén en su rostro se transforma en una máscara de irritación contenida; el hecho de que hayas notado su tic parece molestarle más que la propia pregunta.
+> —¿Nervioso? —suelta una risa breve y carente de humor que suena como un golpe seco—. Confundes la impaciencia por la incompetencia ajena con el nerviosismo. No hay nada en este lugar, ni en tu persona, que sea capaz de alterarme. Estás agotando el tiempo que te he concedido. Habla ahora o desaparece.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  18796 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4406: Hombre de la casaca carmesí affinity -88.0 → -86.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 214 — 125/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2728 ms
+
+> "Tengo la información, pero el precio ha subido por tu falta de cortesía."
+> Sostengo su mirada sin pestañear, manteniendo una postura relajada mientras busco cualquier otro detalle que se le escape.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+0=2
+
+### [4] DM
+
+  3031 ms
+
+> El hombre de la casaca carmesí arquea una ceja, y una pequeña vena comienza a latir con fuerza en su sien. La mención del precio parece activar un interruptor en él; sus labios se contraen en una línea fina y el aire alrededor se vuelve pesado, cargado de una hostilidad palpable que ya no intenta ocultar bajo la máscara de la etiqueta.
+> —¿Subido? —repite la palabra con un veneno lento, casi saboreándola—. Te olvidas de quién sostiene el hilo de tu conveniencia en esta ciudad. No negocias conmigo desde una posición de fuerza, sino desde la mendicidad.
+> [La tirada de Perspicacia ha fallado. No detectas ningún detalle nuevo ni debilidad en su lenguaje corporal; su irritación es genuina y no esconde ninguna señal tangible de nerviosismo o secreto en este momento.]
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ meta-comentario entre corchetes
+
+### [6] EXTRACTOR
+
+  1132 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 215 — 126/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1230 ms
+
+> "Tengo muy claro quién sostiene el hilo, pero incluso el hilo más fuerte se rompe si se tensa demasiado."
+> Retrocedo un paso, manteniendo una expresión neutra y relajando los hombros para reducir la tensión.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 4+2=6
+
+### [4] DM
+
+  3234 ms
+
+> El hombre de la casaca carmesí suelta una risa seca y breve, un sonido carente de cualquier rastro de humor. Se inclina hacia adelante, invadiendo tu espacio personal, mientras sus ojos se entrecierran con un desprecio gélido. La amenaza velada sobre el hilo no ha hecho más que alimentar su arrogancia; para él, tus palabras no son una advertencia, sino el balbuceo desesperado de alguien que ha perdido su palanca de presión.
+> —Tu intento de sutileza es tan patético como tu oferta —escupe, enderezándose con un gesto brusco que hace ondular la tela de su chaqueta—. No me interesa tu teatro de neutralidad ni tus metáforas de costurera. Estás desperdiciando mi tiempo y, en consecuencia, estás agotando mi paciencia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  771 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 216 — 127/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1071 ms
+
+> "Tu paciencia es un lujo que no puedes permitirte, pero mi tiempo es caro."
+> Me aparto lentamente para recuperar mi espacio, observando sus manos y su postura para detectar cualquier debilidad o señal de nerviosismo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+0=14
+
+### [4] DM
+
+  2719 ms
+
+> El hombre de la casaca carmesí mantiene el rostro rígido, una máscara de suficiencia que no se agrieta ante tu comentario. Sin embargo, al retroceder, notas que sus dedos tamborilean con un ritmo errático sobre el brazo de su silla, un gesto rápido y repetitivo que contrasta con la inmovilidad gélida de su mirada. 
+> Aunque su tono sigue siendo cortante, hay una tensión residual en sus hombros, una rigidez que no nace de la ira, sino de una vigilancia ansiosa. No parece nervioso por tu presencia, sino más bien como alguien que espera que una puerta se abra o que llegue un mensaje que se ha retrasado más de lo previsto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  781 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 217 — 128/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos conocidos
+  21 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1084 ms
+
+> "Parece que esperas a alguien. ¿O quizá que alguien llegue?"
+> Me quedo observando sus manos mientras hablo, tratando de leer qué es exactamente lo que le inquieta.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+0=6
+
+### [4] DM
+
+  2188 ms
+
+> El hombre de la casaca carmesí detiene el tamborileo de sus dedos en seco, apretando el puño sobre el brazo de la silla con una fuerza que hace blanquear sus nudillos. Te lanza una mirada gélida, cargada de un desprecio evidente, y esboza una sonrisa mínima y carente de calidez que no llega a sus ojos.
+> —Tu capacidad de observación es tan irritante como tu impertinencia —espeta con un tono sibilante—. No me interesa diseccionar mis gestos contigo, ni me interesa lo que creas leer en ellos. Ahora, dime qué es lo que realmente buscas aquí antes de que decida que tu tiempo se ha agotado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  952 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 218 — 129/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos conocidos
+  21 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2679 ms
+
+> "Busco un acuerdo que sea rentable para ambos, pero primero quiero saber qué es lo que tanto te pone nervioso de mi presencia."
+> Sostengo la mirada sin inmutarme, analizando su reacción.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+0=20  CRÍTICO
+
+### [4] DM
+
+  2744 ms
+
+> El hombre de la casaca carmesí intenta mantener la máscara de frialdad, pero el éxito de tu mirada desmantela su fachada. Al sostenerle los ojos, notas un espasmo casi imperceptible en la comisura de su labio y cómo su respiración se vuelve superficial, apresurada. No es miedo a tu persona, sino la ansiedad de alguien que guarda un secreto volátil y teme que cualquier palabra imprecisa sea la chispa que lo haga estallar.
+> —¿Nervioso? —suelta una risa seca, un sonido metálico que resuena en la estancia—. No confundas la impaciencia con los nervios, forastero.
+> Se inclina hacia adelante, invadiendo tu espacio personal, y el aroma a tabaco caro y tinta vieja te golpea. Sus ojos escanean tu rostro buscando una debilidad, pero su propia mano, aún cerrada en puño, tiembla ligeramente sobre la madera de la silla.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  954 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 219 — 130/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos conocidos
+  21 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1116 ms
+
+> "La impaciencia suele ser el primer paso hacia un error costoso."
+> Me inclino también, manteniendo el contacto visual para presionar su nerviosismo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 16+0=16
+
+### [4] DM
+
+  3149 ms
+
+> El hombre de la casaca carmesí retrocede bruscamente, como si tus palabras hubieran sido un golpe físico. Su risa desaparece al instante y el silencio que sigue es denso, roto solo por el rítmico tic-tac de un reloj de pared que parece acelerar el pulso de la habitación. Se endereza en la silla, tratando de recuperar una compostura que ya se ha resquebrajado, pero sus dedos comienzan a tamborilear con urgencia sobre la madera.
+> Al observar sus gestos y la tensión de su cuello, notas que su mirada se desvía por un segundo hacia un fajo de papeles sellados que descansan sobre el escritorio, justo fuera de tu alcance. No es solo ansiedad; es una urgencia palpable por deshacerse de algo o por asegurar que nadie más vea el contenido de esos documentos antes de que el tiempo se agote.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1428 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: fajo de papeles sellados
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item fajo de papeles sellados
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 220 — 131/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1065 ms
+
+> "Parece que esos papeles son mucho más interesantes que nuestra conversación."
+> Me inclino hacia delante, manteniendo la vista fija en sus ojos para distraerlo mientras intento deslizar la mano hacia los documentos.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 2+4=6
+
+### [4] DM
+
+  2575 ms
+
+> El hombre de la casaca carmesí reacciona con una velocidad impropia de su postura rígida. En cuanto notas que tu cuerpo se inclina y tu mano comienza el movimiento, él lanza un manotazo brusco sobre el escritorio, aplastando los papeles contra la madera y cubriéndolos por completo con su palma. El sonido del impacto resuena en la estancia, seco y tajante.
+> —¡No te atrevas! —estalla, con la voz quebrada por una mezcla de pánico y furia. Sus ojos, ahora dilatados, no se apartan de los tuyos, mientras mantiene el brazo extendido como una barrera infranqueable entre tú y los documentos—. No tienes ni la menor idea de dónde te has metido, pero no permitiré que pongas un dedo sobre esto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  652 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 221 — 132/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1195 ms
+
+> "Pareces muy nervioso por unos simples papeles."
+> Retiro la mano lentamente, manteniendo la calma, y lo observo fijamente para analizar su reacción.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+0=12
+
+### [4] DM
+
+  2333 ms
+
+> El hombre de la casaca carmesí no se relaja al ver que retiras la mano; al contrario, sus hombros permanecen tensos y su respiración es errática, audible en el silencio de la habitación. El pánico en su mirada se transforma en una hostilidad fría y cortante mientras mantiene la palma pegada a los documentos, como si temiera que fueran a evaporarse o que alguien pudiera leerlos a través de su piel.
+> —No es nerviosismo, es prudencia —responde con un siseo, apretando la mandíbula—. Hay cosas que el mundo no necesita saber y personas que no saben cuándo callar. Te sugiero que recuperes tu compostura y me digas exactamente qué haces aquí antes de que decida que eres una molestia prescindible.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  718 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 222 — 133/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -86.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1150 ms
+
+> "La prudencia es una virtud, pero el pánico es una debilidad. No soy una molestia, soy una solución."
+> Me inclino ligeramente hacia adelante, manteniendo una expresión neutra, e intento analizar el contenido de los papeles que oculta.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+0=1  PIFIA
+
+### [4] DM
+
+  3034 ms
+
+> El hombre de la casaca carmesí suelta una risa seca, casi un ladrido, ante tu declaración. Sus ojos se entrecierran con un desprecio evidente, interpretando tu inclinación no como un gesto de análisis, sino como una arrogancia patética que intenta disfrazar su falta de autoridad.
+> Al intentar escudriñar los documentos, tu mirada se pierde en un baile confuso de manchas de tinta y bordes amarillentos. En lugar de descifrar una sola palabra, el ángulo te resulta tan incómodo que crees vislumbrar un sello oficial donde solo hay una mancha de grasa, y te convences erróneamente de que los papeles son meras listas de suministros o recibos irrelevantes. El hombre nota tu confusión y una sonrisa gélida se dibuja en su rostro.
+> —¿Una solución? —espeta, retirando los papeles bruscamente para guardarlos fuera de tu vista—. Apenas puedes distinguir un decreto de una lista de la compra. Eres un impostor o un idiota, y ninguna de las dos opciones me agrada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1362 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4431: Hombre de la casaca carmesí affinity -86.0 → -84.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -84.0 (hostile), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 223 — 134/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -84.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1186 ms
+
+> "Lamento que mi vista no esté a la altura de vuestras expectativas, pero mi utilidad no reside en leer recibos."
+> Mantengo la calma y busco algún punto débil en su postura o alguna señal de nerviosismo ahora que se siente superior.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+0=6
+
+### [4] DM
+
+  2191 ms
+
+> El hombre se endereza, inflándose el pecho mientras ajusta los puños de su casaca carmesí con un gesto teatral de autosuficiencia. Su rostro es una máscara de seguridad absoluta y su risa vuelve a sonar, esta vez más prolongada, mientras te mira desde arriba con una condescendencia que llena el espacio entre ambos.
+> Se cruza de brazos, relajando los hombros y apoyando el peso en una sola pierna, totalmente cómodo en su posición de poder. No hay un temblor en sus manos ni una vacilación en su mirada; solo queda la fría certeza de quien cree haber ganado la partida antes siquiera de haber empezado a jugar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  659 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -84.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 224 — 135/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -84.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1143 ms
+
+> "Tanta seguridad suele ser el preludio de un error costoso."
+> Sostengo la mirada sin inmutarme, analizando cada detalle de su postura y su ropa en busca de alguna debilidad o objeto de valor.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+0=4
+
+### [4] DM
+
+  2292 ms
+
+> El hombre de la casaca carmesí arquea una ceja, soltando un bufido que es casi un ronroneo de desprecio. No se mueve ni un milímetro, manteniendo esa postura lánguida y dominante que parece diseñada específicamente para irritar. Su mirada recorre tu figura con una lentitud insultante, como quien examina una mancha persistente en una alfombra costosa.
+> —Qué frase tan pintoresca —responde con una sonrisa gélida que no llega a sus ojos—. Típico de quien solo tiene palabras para combatir la realidad. Tu análisis es tan irrelevante como tu presencia aquí.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  871 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -84.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 225 — 136/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -84.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1008 ms
+
+> "La irrelevancia es el mejor disfraz para alguien que planea cobrar una deuda."
+> Mantengo la expresión neutra mientras busco cualquier objeto de valor o documento que sobresalga de su vestimenta.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 7+2=9
+
+### [4] DM
+
+  2024 ms
+
+> El hombre de la casaca carmesí suelta una carcajada seca, un sonido corto y carente de humor que corta el aire. Se endereza ligeramente, rompiendo su postura lánguida para inclinar la cabeza hacia un lado, mientras sus ojos destellan con una mezcla de curiosidad y fastidio.
+> —¿Deudas? —replica con un tono cargado de condescendencia—. No sabía que los mendigos de palabras también hacían inventario de cuentas ajenas.
+> Tu mirada recorre su atuendo, pero la casaca carmesí es de un corte impecable y cerrado; no hay bolsillos abultados, ni papeles asomando por los puños, ni joyas que cuelguen descuidadas. El hombre parece una superficie lisa y hermética, sin un solo detalle que delate lo que pueda llevar oculto bajo la tela.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  702 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -84.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 226 — 137/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -84.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1058 ms
+
+> "El inventario es lo único que mantiene a un hombre vivo en este lugar."
+> Sigo observándolo con calma, buscando cualquier gesto involuntario o tic que delate dónde guarda lo que no es visible a simple vista.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+0=20  CRÍTICO
+
+### [4] DM
+
+  3357 ms
+
+> Mientras el hombre mantiene su máscara de arrogancia, tu mirada se clava en los detalles más ínfimos. Al soltar un suspiro de impaciencia, el tejido de la casaca se tensa mínimamente sobre su costado izquierdo, revelando un relieve rígido y rectangular que no corresponde a la anatomía humana ni a la caída natural de la prenda. No es un bolsillo exterior, sino un compartimento oculto, cosido quirúrgicamente en el forro interno, justo donde el brazo se une al torso.
+> El hombre nota tu escrutinio y, en un gesto casi imperceptible, desplaza el peso de su cuerpo hacia la derecha, intentando cubrir instintivamente esa zona con la caída de su brazo. Sus ojos se entornan, y la sonrisa condescendiente flaquea un instante, sustituida por una tensión gélida en la comisura de sus labios.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  877 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -84.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 227 — 138/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -84.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1117 ms
+
+> "Parece que tenemos mucho de qué hablar, pero el tiempo es oro."
+> Me acerco a él con un movimiento fluido, fingiendo un gesto de cortesía para reducir la distancia y deslizo la mano hacia ese compartimento oculto.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 6+4=10
+
+### [4] DM
+
+  2621 ms
+
+> Te deslizas hacia él con una naturalidad ensayada, acortando la distancia bajo la apariencia de un gesto amable. Sin embargo, en el momento en que tus dedos buscan el relieve bajo la casaca, el hombre reacciona con una brusquedad gélida. Se aparta con un movimiento seco y violento, golpeando tu mano con el antebrazo para bloquear el acceso al forro.
+> —¿Qué demonios crees que haces? —espeta, su voz ahora despojada de toda cortesía y cargada de una hostilidad vibrante. Retrocede un paso, manteniendo el costado izquierdo estrictamente fuera de tu alcance, mientras su mirada se vuelve cortante como el cristal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  973 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · ideal_violated
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4439: Hombre de la casaca carmesí affinity -84.0 → -92.0  (any)
+     Actuaron contra lo que él considera correcto.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -92.0 (hostile), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 228 — 139/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -92.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1093 ms
+
+> "Mil disculpas, me he tropezado con el borde de la alfombra."
+> Sigo sonriendo levemente mientras retiro la mano, intentando analizar su reacción y el motivo de tanta urgencia por proteger ese costado.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+0=1  PIFIA
+
+### [4] DM
+
+  1833 ms
+
+> El hombre no acepta la excusa; sus ojos se entrecierran y su mandíbula se tensa, interpretando el tropiezo como una torpeza sospechosa o una mentira descarada. Se mantiene rígido, con la mano derecha rozando instintivamente el borde de su casaca, mientras te lanza una mirada cargada de un desprecio evidente.
+> En tu intento por analizarlo, el pánico o la confusión te nublan el juicio. Te quedas absorto en un detalle irrelevante —quizás una mancha de tinta en su puño o el modo en que parpadea— y llegas a la conclusión errónea de que su hostilidad no tiene nada que ver con lo que guarda bajo la ropa, sino que simplemente es una persona huraña que odia el contacto físico.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  721 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -92.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 229 — 140/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -92.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1166 ms
+
+> "Mis disculpas. No volverá a ocurrir."
+> Hago una leve reverencia, manteniendo la distancia para calmar su irritación mientras busco discretamente cualquier objeto de valor que asome por sus bolsillos.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 19+2=21
+
+### [4] DM
+
+  1783 ms
+
+> El hombre de la casaca carmesí suelta un bufido nasal, rechazando la reverencia con un movimiento seco de cabeza. Se aparta un paso, manteniendo una distancia gélida, aunque su mirada sigue clavada en ti con una desconfianza que no se ha disipado. 
+> Mientras te retraes, tu vista capta un destello metálico y un relieve familiar que sobresale apenas unos milímetros del bolsillo interior de su casaca, justo sobre el corazón. Es el borde de un estuche de cuero endurecido con un sello de cera negra y un pequeño relieve dorado en forma de llave, un objeto que no encaja con la apariencia de un simple ciudadano huraño.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2052 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: estuche de cuero endurecido
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item estuche de cuero endurecido
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -92.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 230 — 141/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -92.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1007 ms
+
+> "No quisiera importunarle más de lo necesario."
+> Mantengo la distancia mientras hablo, pero aprovecho el movimiento para intentar deslizar mis dedos hacia ese estuche sin que se dé cuenta.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  1988 ms
+
+> Tus dedos se deslizan con una precisión quirúrgica, casi etérea, aprovechando el instante en que el hombre exhala un suspiro de fastidio. El movimiento es tan fluido que se funde con el aire, y antes de que él pueda siquiera parpadear, el estuche de cuero endurecido ha abandonado su bolsillo interior para descansar oculto en tu mano.
+> El hombre de la casaca carmesí permanece inmóvil, ajeno al vacío que ahora siente sobre su pecho. Te sostiene la mirada con el mismo desprecio gélido de hace un segundo, sin sospechar que el sello de cera negra y la llave dorada ya no le pertenecen.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1765 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = estuche de cuero endurecido
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4445: Wynn.inventory = estuche de cuero endurecido
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -92.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 231 — 142/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -92.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  16191 ms
+
+> "Un placer haberle conocido"
+> Sigo sosteniéndole la mirada con una sonrisa neutra mientras guardo el estuche en mi propia ropa. Me retiro dando un paso atrás con calma.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 12+4=16
+
+### [4] DM
+
+  2652 ms
+
+> El hombre de la casaca carmesí arquea una ceja, el desprecio aún grabado en las comisuras de sus labios, pero no hay rastro de sospecha en sus ojos. Su mirada se clava en la tuya, evaluando tu sonrisa neutra con una mezcla de indiferencia y arrogancia, convencido de que el encuentro ha sido tan irrelevante como el aire que respira.
+> —El sentimiento es mutuo —espeta con un tono seco y cortante—. No vuelvas a hacerme perder el tiempo.
+> Se da la vuelta con un giro brusco de sus hombros carmesíes, alejándose con pasos firmes y rítmicos que resuenan sobre el pavimento, dejándote el camino libre mientras el peso del estuche de cuero comienza a marcarse contra tu ropa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1161 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = estuche de cuero endurecido
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4457: Wynn.inventory = estuche de cuero endurecido
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -92.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 232 — 143/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -92.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1581 ms
+
+> "Que tenga un día productivo."
+> Sigo sus pasos a una distancia prudencial, intentando mantenerme fuera de su vista mientras lo observo.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 5+4=9
+
+### [4] DM
+
+  2233 ms
+
+> El hombre de la casaca carmesí avanza con paso arrogante, ignorando cualquier rastro de compañía. Al intentar seguirlo, el roce de tu ropa contra un puesto de mimbre o el eco traicionero de tus pasos sobre la piedra rompen la discreción. El sonido es lo suficientemente nítido como para que el hombre se detenga en seco y gire la cabeza ligeramente hacia atrás, lanzando una mirada gélida y suspicaz en tu dirección.
+> —¿Es que no entiendes lo que significa "no me hagas perder el tiempo"? —gruñe sin llegar a darse la vuelta por completo, con la voz cargada de una irritación creciente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1442 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -92.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 233 — 144/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -92.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1302 ms
+
+> "Mis disculpas. Solo me aseguraba de que no se perdiera en el camino."
+> Me detengo y adopto una postura sumisa, tratando de suavizar mi expresión para borrar cualquier rastro de amenaza.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 5+4=9
+
+### [4] DM
+
+  16487 ms
+
+> El hombre de la casaca carmesí termina de girarse, clavando sus ojos en ti con una expresión de profundo escepticismo. Sus labios se contraen en una mueca de desprecio mientras recorre tu postura sumisa con una mirada fría, que no parece comprar la falsa humildad ni la excusa del camino.
+> —Tu "cortesía" me resulta tan irritante como tu torpeza —escupe con voz cortante—. No necesito un guía, y mucho menos uno que se desliza por las sombras como un ratero. Aléjate de mi vista antes de que decida que tu presencia es una molestia que requiere una solución permanente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  801 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -92.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 234 — 145/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -92.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1642 ms
+
+> "Mis disculpas, señor. No pretendía molestar su camino."
+> Hago una reverencia lenta mientras retrocedo, pero mantengo la vista fija en sus bolsillos y los pliegues de su casaca.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+2=18
+
+### [4] DM
+
+  2541 ms
+
+> El hombre de la casaca carmesí suelta un bufido de satisfacción al ver tu retroceso, enderezando la espalda con una arrogancia palpable mientras comienza a darse la vuelta para retomar su marcha. El roce de la seda pesada y el movimiento rítmico de sus pasos revelan el contenido de sus pertenencias: en el bolsillo interior derecho, el relieve cuadrado y rígido de una cartera de cuero fino; en el izquierdo, el contorno cilíndrico de un estuche de plata que tintinea levemente, sugiriendo que guarda algún instrumento o un sello oficial.
+> Bajo el pliegue posterior de la casaca, asoma la esquina de un sobre de pergamino grueso, cerrado con un lacre rojo oscuro que coincide exactamente con el color de su prenda. El documento parece estar cuidadosamente resguardado, pero el movimiento constante del hombre lo desplaza apenas unos milímetros, dejándolo expuesto a una mirada atenta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  914 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -92.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 235 — 146/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -92.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1439 ms
+
+> "Que tenga un buen día."
+> Sigo sus pasos con cautela y trato de extraer el sobre de pergamino sin que lo note.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 1+4=5  PIFIA
+
+### [4] DM
+
+  3582 ms
+
+> Te deslizas con cautela, intentando que el movimiento sea un susurro, pero el cálculo falla estrepitosamente. Al intentar enganchar el pergamino, tus dedos se enredan torpemente con la tela de la casaca y tiras con demasiada fuerza; el sobre no sale, pero el tirón brusco hace que el hombre pierda el equilibrio y trastabille hacia adelante, soltando un grito de sorpresa.
+> El hombre de la casaca carmesí se gira violentamente, con el rostro desencajado por la indignación y el equilibrio recuperado a duras penas. Sus ojos se clavan en ti, llenos de una furia gélida, mientras se lleva la mano instintivamente al bolsillo donde guarda el estuche de plata.
+> —¡¿Qué demonios crees que estás haciendo, malnacido?! —brama, su voz resonando con una autoridad agresiva que atrae las primeras miradas de los transeúntes.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1271 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · ideal_violated
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4473: Hombre de la casaca carmesí affinity -92.0 → -100.0  (any)
+     Actuaron contra lo que él considera correcto.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 236 — 147/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  913 ms
+
+> "Ha sido un accidente, caballero. Se le estaba cayendo el sobre."
+> Suelto la tela rápidamente y retrocedo un paso, manteniendo una expresión de falsa preocupación mientras busco una vía de escape rápida entre la gente.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 11+4=15
+
+### [4] DM
+
+  3206 ms
+
+> El hombre de la casaca carmesí entorna los ojos, escrutando tu rostro con una sospecha vibrante. El músculo de su mandíbula se tensa mientras procesa tu explicación, y aunque el impulso de gritar persiste, la lógica de tu gesto y la rapidez con la que retrocedes parecen sembrar una duda momentánea en su furia. Su mano se relaja ligeramente sobre el estuche de plata, aunque no llega a soltarlo del todo.
+> —¿Cayéndose? —gruñe, bajando el volumen de la voz pero manteniendo un tono cortante—. Si el sobre se hubiera caído, estaría en el suelo, no enganchado a mis espaldas por un desconocido.
+> A pesar de su desconfianza, el hombre no pide ayuda a los transeúntes ni inicia una pelea; se limita a ajustarse la prenda con un gesto brusco y despectivo, mirándote como si fueras un insecto molesto que acaba de intentar morderlo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  685 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 237 — 148/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  967 ms
+
+> "Lamento la confusión, señor. Solo quería evitar que perdiera algo tan valioso."
+> Hago una reverencia breve y formal, mientras intento notar si el sobre contiene algo más que papeles o si hay algún sello distintivo que revele su origen.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 9+2=11
+
+### [4] DM
+
+  2561 ms
+
+> El hombre de la casaca carmesí resopla ante la reverencia, apartando la mirada con un gesto de fastidio absoluto. No dice nada, pero el desprecio en su silencio es palpable mientras se endereza, recuperando su postura altiva y manteniendo una distancia prudencial, como si temiera que el contacto pudiera contagiarle alguna indigencia.
+> Tu mirada se desliza rápidamente sobre el sobre mientras él se aleja un paso. Logras distinguir que el papel es grueso y de una calidad superior, pero la rapidez del movimiento y la forma en que él lo presiona contra su espalda te impiden discernir cualquier sello, escudo o relieve que revele quién lo envía o qué secretos guarda en su interior.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  616 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 238 — 149/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1418 ms
+
+> "Vuestra prisa es tan evidente como vuestro mal humor."
+> Doy un paso rápido hacia él intentando arrebatarle el sobre de la espalda con un movimiento seco.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 6+4=10
+
+### [4] DM
+
+  2901 ms
+
+> El hombre de la casaca carmesí reacciona con un espasmo de indignación antes de que tus dedos lleguen a rozar el papel. Con un movimiento brusco y coordinado, gira el cuerpo y protege el sobre con el brazo, lanzándote una mirada de asco profundo mientras retrocede para poner distancia entre ambos.
+> —¡Hableis como un cortesano, pero actuáis como un ratero de callejón! —espeta con voz gélida, apretando el documento contra su costillar con una fuerza casi desesperada—. No os atreváis a volver a tocarme, escoria.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1576 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · ideal_violated
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4484: Hombre de la casaca carmesí affinity -100.0 → -100.0  (any)
+     Actuaron contra lo que él considera correcto.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 239 — 150/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2117 ms
+
+> "Mis disculpas. Solo quería asegurarme de que el sello estuviera intacto."
+> Mantengo una expresión neutra y levanto las manos en señal de paz, mientras trato de analizar la reacción exagerada del hombre para ver si el contenido es más valioso de lo que parece.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 13+0=13
+
+### [4] DM
+
+  2533 ms
+
+> El hombre de la casaca carmesí no relaxa la postura; mantiene el brazo pegado al cuerpo y la mandíbula tensa, aunque el gesto de levantar las manos parece frenar su impulso de seguir gritando. Sus ojos, pequeños y cargados de desprecio, recorren tu figura buscando cualquier otro movimiento sospechoso, mientras exhala un bufido de incredulidad ante tu disculpa.
+> A pesar de su hostilidad, notas que el temblor en sus dedos no es producto de la rabia, sino de una ansiedad palpable. La forma en que protege el sobre sugiere que el documento no es solo importante, sino que su pérdida supondría un desastre inmediato para él; hay un miedo genuino, casi visceral, oculto tras su máscara de arrogancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  724 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 240 — 151/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3041 ms
+
+> "No hace falta que te pongas así. Solo quiero asegurarme de que el mensaje llegue a su destino."
+> Doy un paso lento hacia él, tratando de suavizar mi expresión mientras busco una oportunidad para arrebatarle el sobre.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 9+2=11
+
+### [4] DM
+
+  2546 ms
+
+> El hombre de la casaca carmesí retrocede un paso instintivamente, apretando el sobre contra su pecho con tanta fuerza que el papel cruje. Sus ojos se entrecierran, analizando tu acercamiento con una suspicacia gélida; para él, tus palabras no son un intento de calma, sino la táctica de alguien que intenta distraerlo antes de atacar.
+> —¿Asegurarte tú? —escupe con una risa seca y amarga—. No sé quién te envía ni qué juego juegas, pero no soy un ingenuo. Aléjate de mí ahora mismo si no quieres que llame a la guardia por intento de robo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  749 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 241 — 152/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1665 ms
+
+> "No me interesa el sobre, sino quien te ha puesto tan nervioso."
+> Doy un paso lateral para cerrar su ángulo de escape, manteniendo una distancia prudencial pero amenazante.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+0=3
+
+### [4] DM
+
+  2343 ms
+
+> El hombre de la casaca carmesí se tensa al notar el movimiento, sus nudillos blanqueando mientras sostiene el sobre. Su mirada salta rápidamente de tu rostro al espacio que acabas de bloquear, y un destello de pánico genuino cruza sus ojos, aunque intenta enmascararlo con una mueca de desprecio.
+> —Tus curiosidades son tan irrelevantes como tus amenazas —masculla, aunque su voz tiembla ligeramente y comienza a retroceder con pasos cortos y torpes, buscando desesperadamente una salida que no sea la que has cerrado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1951 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4490: Hombre de la casaca carmesí affinity -100.0 → -100.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 242 — 153/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1260 ms
+
+> "No te equivoques. Mis curiosidades son lo único que te mantiene con vida ahora mismo."
+> Sigo bloqueando su camino y trato de leer sus gestos para saber si intenta ocultar algo más que el sobre.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+0=6
+
+### [4] DM
+
+  2504 ms
+
+> El hombre de la casaca carmesí suelta una risa nasal, un sonido seco y forzado que no llega a sus ojos. Se pega a la pared, deslizando la espalda contra la piedra fría mientras intenta mantener una distancia prudencial, aunque el espacio es reducido.
+> —¿Con vida? —escupe con amargura—. No eres más que un estorbo en el camino de gente que realmente mueve los hilos de esta ciudad.
+> Su cuerpo permanece rígido, como una cuerda a punto de romperse, y aunque sus palabras intentan sonar arrogantes, no hay nada en su postura que sugiera una confianza real.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  658 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 243 — 154/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2596 ms
+
+> "Toda cuerda que está a punto de romperse es útil, si sabes dónde tirar."
+> Me acerco un paso más, invadiendo su espacio personal para presionarlo contra la pared.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 17+2=19
+
+### [4] DM
+
+  1873 ms
+
+> El hombre de la casaca carmesí retrocede bruscamente, pero la piedra fría de la pared detiene su huida. Al sentir la presión de tu cuerpo invadiendo su espacio, el aire se escapa de sus pulmones en un jadeo ahogado y su espalda se arquea contra el muro. La arrogancia se desmorona en un instante; sus ojos, antes gélidos, ahora se dilatan por el pánico y su respiración se vuelve errática y superficial.
+> —¡Suficiente! —balbucea, con la voz quebrada y temblorosa—. No... no tienes que llegar a esto. Solo dime qué es lo que quieres y quizá, solo quizá, podamos llegar a un entendimiento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1709 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4498: Hombre de la casaca carmesí affinity -100.0 → -100.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 244 — 155/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1316 ms
+
+> "El entendimiento es un lujo que no te puedes permitir ahora mismo."
+> Aprieto más mi cuerpo contra él para que sienta que no tiene salida y le hablo al oído con voz gélida.
+> "Dime qué guardas que sea realmente valioso, antes de que pierda la paciencia."
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 10+2=12
+
+### [4] DM
+
+  1817 ms
+
+> El hombre de la casaca carmesí tiembla violentamente, sintiendo el peso de tu cuerpo y el gélido susurro contra su oído. Intenta mantener una pizca de dignidad, apretando los dientes y desviando la mirada, pero el pánico sigue anclado en sus pupilas dilatadas. Su pecho sube y baja con rapidez, chocando contra el tuyo en un ritmo errático.
+> —No... no tengo nada que te interese —escupe con una voz que, a pesar del intento de sonar firme, flaquea al final—. Solo soy un servidor de la administración. No hay secretos aquí, solo papeles y polvo. ¡Suéltame!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1634 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4505: Hombre de la casaca carmesí affinity -100.0 → -100.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 245 — 156/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1736 ms
+
+> "Los servidores de la administración suelen ser los que más saben, precisamente porque nadie los mira."
+> Mantengo la presión mientras deslizo una mano hacia los bolsillos de su casaca.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 18+4=22
+
+### [4] DM
+
+  1688 ms
+
+> Tus dedos se deslizan con una precisión quirúrgica bajo la tela carmesí, sorteando las costuras y el temblor del hombre sin que él logre liberar el espacio. El roce es casi imperceptible, un baile rápido y experto que culmina cuando tus dedos cierran sobre un objeto rectangular y rígido, oculto en un bolsillo interior.
+> El funcionario exhala un jadeo ahogado, ajeno a que el botín ya ha cambiado de manos. Sus ojos siguen fijos en el vacío, mientras el sudor frío le empapa la nuca y el corazón le martillea el pecho contra tu propio cuerpo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1212 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: objeto rectangular y rígido
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item objeto rectangular y rígido
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 246 — 157/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1012 ms
+
+> "Tranquilo. Solo estoy asegurándome de que esté a salvo"
+> Sigo manteniendo la presión sobre él para que no se mueva y guardo el objeto rápidamente en mi propia ropa.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 10+4=14
+
+### [4] DM
+
+  1645 ms
+
+> El hombre de la casaca carmesí se queda gélido ante tus palabras, aunque el temblor de sus hombros no cesa. Sus pupilas están dilatadas y el aliento le sale corto, atrapado en una mezcla de pánico y sumisión mientras siente la presión de tu cuerpo inmovilizándolo contra la pared.
+> Con un movimiento fluido y discreto, el objeto rectangular desaparece bajo tu ropa antes de que el funcionario pueda procesar el vacío en su bolsillo. Él parpadea, confundido por la contradicción entre tu tono tranquilizador y la fuerza que lo mantiene anclado al sitio, pero no se atreve a forcejear.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1280 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: item.inventory
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 247 — 158/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  958 ms
+
+> "Mantén la calma y nadie más tiene por qué enterarse de este pequeño descuido."
+> Le doy un último apretón antes de soltarlo bruscamente y me alejo un paso para recuperar mi espacio.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 11+0=11
+
+### [4] DM
+
+  1440 ms
+
+> El hombre de la casaca carmesí se tambalea hacia atrás cuando lo sueltas, chocando ligeramente contra la pared. Se lleva una mano al pecho, tratando de recuperar un ritmo respiratorio normal, mientras sus ojos recorren el pasillo con una paranoia evidente, asegurándose de que nadie haya presenciado la escena.
+> Se endereza el cuello de la prenda con dedos torpes y evita mirarte directamente a los ojos. Permanece en silencio, con la mandíbula tensa y una expresión de profundo malestar, aunque no hace ningún intento de pedir ayuda ni de protestar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  697 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 248 — 159/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1857 ms
+
+> "No me gusta que me mientas, y menos que me hagas perder el tiempo."
+> Me acerco un paso más, invadiendo su espacio personal para presionarlo.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 8+2=10
+
+### [4] DM
+
+  1771 ms
+
+> El hombre de la casaca carmesí se tensa y pega la espalda contra la pared, quedando atrapado entre la piedra fría y tu presencia. Sus pupilas se dilatan y un leve temblor recorre sus hombros, pero clava la mirada en un punto indeterminado de tu cuello, negándose a ceder el control visual.
+> —No sé de qué habla... —masculla con una voz quebrada que delata su nerviosismo, aunque mantiene los labios apretados en una línea fina—. No tengo nada que decirle a alguien como usted.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1067 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4517: Hombre de la casaca carmesí affinity -100.0 → -100.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 249 — 160/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  919 ms
+
+> "La negación es el primer paso para que el precio suba."
+> Me acerco un centímetro más, invadiendo su espacio personal, y deslizo mi mano lentamente hacia su bolsillo superior.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 12+4=16
+
+### [4] DM
+
+  2367 ms
+
+> El hombre suelta un jadeo ahogado y se encoge contra la piedra, pero el movimiento es torpe, producto del pánico más que de una defensa coordinada. Tus dedos se deslizan con precisión quirúrgica por la tela carmesí, sorteando el roce de su pecho agitado hasta que tus yemas encuentran el borde de un objeto rígido y rectangular.
+> Con un movimiento fluido y casi imperceptible, extraes un pequeño cuaderno de cuero negro, desgastado en las esquinas y cerrado con un cordel de cáñamo. El hombre tarda un segundo en notar el vacío en su bolsillo; cuando lo hace, abre la boca para gritar, pero el sonido muere en un gorgoteo de pura sorpresa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1321 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = carpeta de cuero negro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4522: Wynn.inventory = carpeta de cuero negro
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 250 — 161/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos conocidos
+  23 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1208 ms
+
+> "Silencio."
+> Le presiono la boca con fuerza mientras guardo el cuaderno en mi propia ropa.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 4+2=6
+
+### [4] DM
+
+  3190 ms
+
+> El hombre forcejea bajo la presión de tu mano, sus ojos dilatados por el terror mientras intenta articular un grito ahogado contra tu palma. Sin embargo, el pánico que lo domina es más fuerte que su voluntad de luchar; sus músculos se tensan en espasmos erráticos, pero no logra zafarse ni imponerse.
+> Al notar que el cuaderno ha desaparecido definitivamente de su posesión, el hombre deja de luchar con vigor y comienza a temblar violentamente. Sus pupilas se contraen y emite un gemido nasal, sumiso y quebrantado, mientras se queda inmóvil contra la piedra, aceptando la situación con una mirada de absoluta derrota.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1016 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 251 — 162/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 0 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4411 ms
+
+> "Shhh. No hace falta que grites."
+> Sigo presionando su boca un momento más para asegurarme de que esté totalmente roto y luego le susurro al oído, preguntándole dónde guarda el resto de sus secretos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 16+2=18
+
+### [4] DM
+
+  2967 ms
+
+> El hombre se desploma contra el muro, con los hombros hundidos y la respiración entrecortada, convirtiéndose en una masa temblorosa bajo tu control. Cuando tu susurro alcanza su oído, un escalofrío visible recorre su espalda y cierra los ojos con fuerza, como si quisiera desaparecer dentro de la piedra fría.
+> —¡En el archivo! —balbucea con la voz rota y aguda, apenas un hilo de sonido—. En el ala oeste, detrás del tapiz de la genealogía... hay un doble fondo en el tercer estante. ¡Por favor, no me hagas nada más!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3332 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+  ✓ delta Hombre de la casaca carmesí · npc.knowledge = El resto de sus secretos están en el archivo, ala oeste, detrás del tapiz de la genealogía, en un doble fondo del tercer estante
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4530: Hombre de la casaca carmesí affinity -100.0 → -100.0  (mid)
+     Cede en el momento, lo guarda.
+  → delta 4531: Hombre de la casaca carmesí.knowledge = El resto de sus secretos están en el archivo, ala oeste,…
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 252 — 163/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1645 ms
+
+> "Tú decides si he sido convincente."
+> Suelto al hombre bruscamente y me alejo hacia el ala oeste sin mirarlo.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 14+4=18
+
+### [4] DM
+
+  3444 ms
+
+> El hombre cae al suelo con un golpe seco, sollozando en silencio mientras se encoge sobre sí mismo, aterrado y exhausto. No intenta levantarse ni gritar; permanece allí, una mancha carmesí contra la piedra gris, observando con ojos desencajados cómo te alejas.
+> Te deslizas por los pasillos del ala oeste como una sombra, fundiéndote con las penumbras de los arcos y el eco de tus pasos desapareciendo antes de nacer. El aire aquí es más denso, cargado de polvo antiguo y el olor dulzón del pergamino degradado. Al llegar al tapiz de la genealogía, una inmensa pieza de tela descolorida que muestra linajes olvidados, el silencio de la galería solo es interrumpido por el lejano goteo de una filtración en el techo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  782 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 253 — 164/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1262 ms
+
+> Me acerco al tapiz y observo detenidamente los nombres y los símbolos de los linajes, buscando alguna inconsistencia o un nombre que no debería estar ahí.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 11+1=12
+
+### [4] DM
+
+  5632 ms
+
+> El tapiz es una cascada de hilos gastados donde los colores originales han sucumbido al tiempo, dejando un tono sepia dominante. Deslizas la mirada por las ramas genealógicas, siguiendo las líneas que conectan los escudos heráldicos con caligrafía gótica y pomposa. Los nombres se amontonan en una jerarquía rígida, y aunque la mayoría de las fechas y sellos parecen coherentes con la historia oficial del ala oeste, la magnitud de la obra hace que sea difícil discernir anomalías a simple vista.
+> Tus ojos recorren los linajes secundarios, pero no encuentras ninguna tachadura evidente, ni nombres insertados apresuradamente que rompan la armonía del tejido. Los símbolos de las casas nobles se repiten con una monotonía hipnótica, y el polvo que flota en el aire parece asentarse sobre los nombres olvidados sin revelar ningún secreto inmediato.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  979 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 254 — 165/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2699 ms
+
+> "Demasiado perfecto para ser verdad."
+> Me acerco más al tejido y paso los dedos con cuidado por los bordes de los escudos y las costuras de los nombres menos prominentes, buscando relieves o hilos sueltos.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+1=13
+
+### [4] DM
+
+  4433 ms
+
+> Tus yemas recorren la superficie rugosa del tapiz, sintiendo la aspereza de la lana antigua y el frío de los hilos metálicos que forman los escudos. La mayoría de las costuras son firmes, ejecutadas con una maestría que ha resistido los siglos, y el tejido se siente uniforme bajo tu tacto, sin bultos extraños ni capas ocultas que sugieran una falsificación burda.
+> Al llegar a la sección de los linajes secundarios, notas que la tensión del hilo es consistente y no encuentras ningún relieve anómalo ni hilos sueltos que indiquen que alguien haya intentado alterar la obra recientemente. El tapiz permanece impasible, guardando sus secretos bajo una superficie técnica y estéticamente impecable.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1688 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 255 — 166/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2667 ms
+
+> "Interesante. Demasiado perfecto."
+> Me alejo un paso del tapiz y observo la parte posterior de la tela, buscando cualquier rastro de costuras recientes o marcas ocultas que no sean visibles desde el frente.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+1=8
+
+### [4] DM
+
+  3961 ms
+
+> Te inclinas y te desplazas hacia el reverso del tapiz, donde la luz es más tenue y el polvo se acumula en los pliegues de la tela. Pasas la vista por el entramado de hilos y nudos que sostienen la imagen del frente, pero la complejidad del tejido y la penumbra del lugar juegan en tu contra.
+> La parte posterior es un caos de fibras entrelazadas y remates antiguos que se mimetizan entre sí. No logras distinguir ninguna costura anómala, marca oculta o rastro de intervención reciente que destaque sobre la estructura general de la obra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1981 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 256 — 167/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1555 ms
+
+> "Nada evidente, pues."
+> Me separo del tapiz y echo un vistazo rápido a los alrededores para asegurarme de que nadie me haya visto husmeando.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  35287 ms
+
+> Te enderezas y desplazas la mirada con una agudeza casi sobrenatural, captando cada vibración del aire y cada sutil cambio en la iluminación del salón. El espacio se despliega ante ti con una claridad absoluta: notas el rítmico goteo de una humedad invisible tras una de las paredes y el roce casi imperceptible de una prenda de seda contra el suelo en el pasillo lateral.
+> Al girar la cabeza, detectas que la zona está despejada. No hay pasos acercándose, ni respiraciones contenidas tras las columnas, ni sombras que se muevan fuera de lugar. Estás completamente solo en este rincón del salón; el silencio es absoluto y tienes el control total de tu entorno inmediato.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  894 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 257 — 168/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1285 ms
+
+> Me acerco con sigilo hacia el pasillo lateral para localizar la fuente de ese roce de seda.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 19+4=23
+
+### [4] DM
+
+  4882 ms
+
+> Te deslizas por el salón como una exhalación, tus pasos fundiéndose con el silencio sepulcral del lugar. La transición hacia el pasillo lateral es imperceptible; te mueves entre las sombras sin desplazar una sola partícula de polvo, manteniendo el ritmo de tu respiración en sintonía con el vacío del entorno.
+> Al doblar la esquina, el roce de seda se hace nítido. Una figura se retira apresuradamente hacia el final del corredor, dejando tras de sí el rastro de una tela pesada y costosa que arrastra ligeramente por el suelo de mármol. No ha notado tu presencia y avanza con paso apresurado, desapareciendo tras una pesada puerta de madera tallada que queda entreabierta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1925 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 258 — 169/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2587 ms
+
+> Me pego a la pared y avanzo con cautela hacia la puerta entreabierta, tratando de no hacer ruido.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 2+4=6
+
+### [4] DM
+
+  4212 ms
+
+> El mármol traiciona la sutileza de tu avance. Al intentar fundirte con la pared, el roce de tu equipamiento o un paso mal calculado produce un chasquido seco que resuena con una nitidez hiriente en el silencio del pasillo.
+> Desde el interior de la habitación, el sonido de pasos se detiene en seco. Se escucha un jadeo contenido y el roce rápido de una prenda, seguido por el sonido de alguien girándose bruscamente hacia la rendija de la puerta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1409 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 259 — 170/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3425 ms
+
+> "Maldita sea."
+> Me pego a la pared lo más rápido posible y me quedo inmóvil, conteniendo la respiración mientras espero el siguiente movimiento.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 16+4=20
+
+### [4] DM
+
+  6492 ms
+
+> Te fundes con las sombras del pasillo justo a tiempo, convirtiéndote en una extensión más de la fría piedra y la penumbra. El silencio regresa, denso y cargado, mientras el aire se vuelve pesado entre tú y la puerta.
+> Desde el interior, se escucha un bufido de frustración y el sonido de alguien caminando lentamente hacia la rendija. Una mirada inquisitiva se asoma por el espacio, pero el ángulo y tu inmovilidad absoluta hacen que el observador no vea más que el vacío del corredor. Tras unos segundos de tensión insoportable, los pasos se alejan hacia el fondo de la estancia y se oye el sonido de un pergamino siendo desplegado con brusquedad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1442 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 260 — 171/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2758 ms
+
+> Me quedo inmóvil, aguzando el oído para captar cualquier palabra que escape de la habitación mientras manipulan el pergamino.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+2=3  PIFIA
+
+### [4] DM
+
+  51127 ms
+
+> El esfuerzo por filtrar el ruido del pasillo te lleva a tensar los músculos en exceso. En el silencio sepulcral, el roce accidental de tu ropa contra la pared suena como un trueno, y el eco del movimiento delata tu posición exacta justo cuando el sonido del pergamino cesa bruscamente.
+> —¡Sabía que había alguien ahí, maldito rata! —ruge una voz áspera y cargada de odio desde el interior. Se oye el estrépito de una silla siendo apartada violentamente y pasos pesados que cargan contra la puerta para abrirla de golpe.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6288 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 261 — 172/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2985 ms
+
+> "Maldita sea."
+> Me pego a la pared junto al marco de la puerta, buscando el ángulo muerto para atacar al que salga.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 2+4=6
+
+### [4] DM
+
+  8638 ms
+
+> El estrépito de la madera chocando contra la pared resuena en el pasillo mientras la puerta se abre de par en par. El hombre de la casaca carmesí sale disparado hacia fuera, impulsado por una rabia ciega, pero tu posición es torpe y evidente; no hay ángulo muerto que te proteja.
+> Él te ve al instante, apenas a unos centímetros de su rostro. Sus ojos, inyectados en sangre, se clavan en los tuyos y su expresión se contrae en una mueca de asco.
+> —¡Te tengo, escoria! —brama, lanzando un manotazo brusco para apartarte de su camino.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4095 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 262 — 173/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3555 ms
+
+> "Demasiado ruido para alguien que huye."
+> Me agacho rápidamente para evitar el golpe y busco el hueco entre sus piernas para zancadillearlo.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 8+4=12
+
+### [4] DM
+
+  8450 ms
+
+> El hombre de la casaca carmesí lanza el manotazo con una fuerza bruta, pero el movimiento es predecible. Te deslizas hacia abajo justo a tiempo, sintiendo el desplazamiento del aire del golpe pasar rozándote la coronilla, y te lanzas hacia sus piernas en un movimiento fluido.
+> Tus manos encuentran el apoyo necesario y el impulso es preciso. El hombre suelta un grito ahogado mientras pierde el equilibrio, sus pies se enredan y cae pesadamente de espaldas. El impacto contra el suelo de madera provoca un crujido seco y el hombre queda tendido, jadeando, con la mirada fija en el techo y la rabia transformándose en una sorpresa indignada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3419 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 263 — 174/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3246 ms
+
+> "Te has descuidado."
+> Aprovecho que está aturdido para registrar sus bolsillos rápidamente en busca de monedas o documentos valiosos.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 5+4=9
+
+### [4] DM
+
+  8897 ms
+
+> El hombre de la casaca carmesí forcejea torpemente, soltando un gruñido de frustración mientras intenta recuperar el aliento. Con los dedos moviéndose con rapidez sobre la tela gruesa de su vestimenta, palpas los bolsillos buscando cualquier objeto de valor, pero el tejido es rígido y el hombre, aunque aturdido, comienza a reaccionar con sacudidas violentas.
+> Tus dedos rozan el cuero de una bolsa y el borde de un papel, pero en el momento en que intentas extraerlos, el hombre lanza un manotazo desesperado hacia tu mano, obligándote a retirarte antes de poder sujetar nada. Se queda allí, jadeando, con el rostro congestionado y los ojos inyectados en sangre mientras te mira con odio puro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4863 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 264 — 175/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 1 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  6513 ms
+
+> "Quédate quieto si no quieres que esto termine peor"
+> Le presiono el cuello con fuerza contra el suelo para inmovilizarlo y vuelvo a intentar sacar la bolsa y el papel.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 9+4=13
+
+### [4] DM
+
+  9078 ms
+
+> El hombre emite un sonido ahogado, un gorgoteo sordo que vibra contra el suelo mientras el peso de tu mano le corta el flujo de aire. Sus ojos se dilatan por el pánico y sus extremidades golpean la tierra en espasmos erráticos, pero la presión sobre su tráquea lo obliga a priorizar el oxígeno sobre la resistencia.
+> Aprovechando su asfixia, deslizas los dedos con precisión quirúrgica. Logras enganchar el borde del papel y el cordón de cuero de la bolsa, extrayéndolos en un movimiento fluido justo antes de que el hombre logre recuperar un hilo de aire para intentar luchar de nuevo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  16147 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Hombre de la casaca carmesí · npc.status = captured
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4566: Hombre de la casaca carmesí.status = captured
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: captured, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 265 — 176/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: captured, aprecio -100.0 (hostile), 1 hechos conocidos
+  22 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  5004 ms
+
+> "Demasiado ruido para alguien que quiere vivir."
+> Suelto su cuello bruscamente para que respire y me alejo un par de pasos, guardando el botín rápidamente en mi ropa. Observo el papel con curiosidad antes de decidir si es útil.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 19+2=21
+
+### [4] DM
+
+  11808 ms
+
+> El hombre colapsa contra el suelo, aspirando el aire con jadeos violentos y ruidosos que rompen el silencio del callejón. Se encoge sobre sí mismo, tosiendo con fuerza mientras se lleva una mano al cuello, mirando hacia donde te has alejado con una mezcla de terror y odio puro, aunque no hace ningún intento de levantarse mientras recupera el aliento.
+> El papel que has sustraído es un pergamino grueso, con el sello de cera rota de una casa noble. Al examinarlo, notas que no es una simple carta: es una lista de nombres escrita con una caligrafía apresurada, donde tres de ellos han sido tachados con una línea negra y agresiva. Al final del documento, una anotación al margen destaca sobre el resto: *"El silencio de los Archiveros tiene un precio, y Melquíades está dispuesto a pagarlo"*.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  16251 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Hombre de la casaca carmesí · npc.status = alive
+  ✓ creación item: pergamino con lista de nombres
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item pergamino con lista de nombres
+  → delta 4575: Hombre de la casaca carmesí.status = alive
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 266 — 177/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  23 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  9262 ms
+
+> "Demasiado ruido para alguien que quiere sobrevivir."
+> Me acerco al hombre caído para registrar sus pertenencias mientras sigue recuperando el aliento.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  8120 ms
+
+> Tus dedos se mueven con una precisión quirúrgica, casi invisible, mientras el hombre lucha por llenar sus pulmones. En cuestión de segundos, deslizas la mano por sus bolsillos y pliegues de la ropa, extrayendo cada objeto de valor sin que él sienta el más mínimo roce ni el cambio de peso en sus prendas.
+> Recuperas una bolsa de cuero gastado que contiene 12 piezas de oro y un pequeño anillo de plata con una piedra opaca, además de una llave de hierro oxidada que cuelga de un cordel oculto en su interior. El hombre sigue tosiendo, ajeno a que acaba de quedar completamente despojado de sus pertenencias.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9242 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = bolsa de cuero con 12 piezas de oro, anillo de plata con piedra opaca, llave de hierro oxidada
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4581: Wynn.inventory = bolsa de cuero con 12 piezas de oro, anillo de plata con…
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 267 — 178/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  22 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4304 ms
+
+> "Demasiado ruido haces al morir."
+> Guardo el botín rápidamente y observo la llave de hierro, intentando recordar si he visto alguna cerradura similar en los alrededores.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+1=19
+
+### [4] DM
+
+  8951 ms
+
+> El cuerpo del hombre queda inerte sobre el suelo, el silencio regresando al callejón mientras el eco de sus últimas bocanadas se desvanece. Al analizar la llave de hierro, el metal oxidado y la forma tosca de la cabeza evocan una imagen precisa: coincide exactamente con el tipo de cerraduras antiguas que protegen los sótanos de almacenamiento en el Distrito Comercial, específicamente aquellas puertas de madera reforzada que dan acceso a los almacenes subterráneos desde la superficie.
+> A pocos pasos, una rejilla de ventilación semicircular, parcialmente oculta por una pila de cajas vacías y mugre, presenta un ojo de cerradura con el mismo desgaste y pátina que la llave que sostienes entre los dedos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4407 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: llave de hierro
+  ⚠ nombres no reconocidos: Comercial, Distrito
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → ya existía: item llave de hierro
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 268 — 179/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  22 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3373 ms
+
+> "Veamos qué guardabas aquí."
+> Me acerco a la rejilla y deslizo la llave en la cerradura para intentar abrirla.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 11+4=15
+
+### [4] DM
+
+  7797 ms
+
+> El metal oxidado raspa contra el interior de la cerradura con un chirrido seco, resistiéndose al principio debido a la corrosión. Tras un pequeño giro forzado, se escucha un chasquido metálico y el mecanismo cede, liberando el pestillo con un golpe sordo.
+> La rejilla semicircular se desplaza hacia un lado, revelando una abertura oscura que exhala un aire viciado, cargado de humedad y un persistente olor a moho y cuero viejo. Desde la superficie, solo se percibe una escalera de piedra descendente que se pierde en la penumbra del sótano.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5475 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación location: sótano
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location sótano
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 269 — 180/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  23 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3177 ms
+
+> "Huele a descuido."
+> Saco una antorcha, la enciendo y bajo los primeros escalones con cautela, manteniendo la espalda pegada al muro.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+2=3  PIFIA
+
+### [4] DM
+
+  8740 ms
+
+> Al descender los primeros escalones, la llama de la antorcha chisporrotea, proyectando sombras erráticas que danzan sobre las paredes exudadas de humedad. El aire es tan denso que parece pegarse a la piel, y el silencio del sótano se vuelve opresivo, amplificando el sonido de cada paso sobre la piedra resbaladiza.
+> En un descuido, el pie resbala sobre una capa de limo viscoso que cubre el peldaño. El equilibrio se pierde bruscamente y el cuerpo se precipita hacia adelante, provocando que la antorcha golpee violentamente contra el muro de piedra antes de caer al suelo. El impacto extingue la llama instantáneamente, sumiendo el descenso en una oscuridad absoluta y asfixiante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1764 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 270 — 181/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  23 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3846 ms
+
+> "Maldita sea."
+> Me quedo inmóvil en el suelo, conteniendo la respiración para escuchar cualquier sonido en la oscuridad mientras busco a tientas la antorcha.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 7+2=9
+
+### [4] DM
+
+  7541 ms
+
+> El silencio del sótano se vuelve una masa sólida que presiona contra los oídos. A tientas, las manos recorren la piedra fría y el limo pegajoso, pero el tacto no revela nada más que la humedad del suelo. El vacío es total; no hay una sola rendija de luz ni el más mínimo rastro de movimiento que permita orientar el sentido del oído.
+> La antorcha, caída en algún punto cercano, permanece muda y fría, oculta en la negrura absoluta. No se percibe ninguna respiración ajena, ni el goteo del agua, ni el roce de nada que no sea el propio cuerpo contra la piedra resbaladiza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1750 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 271 — 182/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  23 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3470 ms
+
+> "Maldita sea."
+> Me arrodillo y empiezo a palpar el suelo con cuidado, buscando la antorcha o cualquier objeto que haya caído.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 11+2=13
+
+### [4] DM
+
+  6445 ms
+
+> Tus dedos se hunden en el limo frío y el tacto resbaladizo de la piedra húmeda. Tras unos instantes de búsqueda ciega, el roce áspero de la madera y la textura rugosa de la tela aparecen bajo tu mano derecha. Has localizado la antorcha, aunque yace apagada y empapada en la oscuridad.
+> Alrededor de donde descansa el objeto, el suelo se siente inusualmente plano y liso, contrastando con la irregularidad del resto del sótano. No hay sonidos, ni corrientes de aire; solo el eco sordo de tu propia respiración en el vacío.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2924 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: antorcha
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item antorcha
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 272 — 183/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  24 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3777 ms
+
+> Sujeto la antorcha con fuerza y la saco del limo. Antes de moverme, paso la palma de la mano por esa zona plana del suelo para sentir si hay alguna ranura o mecanismo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 9+1=10
+
+### [4] DM
+
+  5000 ms
+
+> Tus dedos recorren la superficie lisa, deslizándose sobre la piedra fría y húmeda. Sientes la planitud del suelo y la ausencia de relieves, pero no percibes ninguna hendidura, botón ni muesca que sugiera la existencia de un mecanismo oculto en esa zona.
+> El silencio del sótano vuelve a cerrarse sobre ti, solo interrumpido por el goteo distante de alguna filtración que resuena en la oscuridad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  970 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 273 — 184/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  24 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4143 ms
+
+> Me enderezo y dejo de palpar el suelo. Me pongo en pie lentamente y busco cualquier otra superficie o rincón oscuro que pueda haber pasado por alto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 3+2=5
+
+### [4] DM
+
+  9018 ms
+
+> Te levantas con lentitud, sintiendo el frío del sótano calar en tus huesos mientras escaneas la penumbra. Te mueves por el espacio, recorriendo las paredes y los rincones donde las sombras parecen espesarse, pero la oscuridad es densa y el aire está cargado de un polvo antiguo que irrita la garganta.
+> Tus ojos no logran distinguir nada más allá de lo que ya habías visto; las superficies se funden en una negrura uniforme y el espacio parece vacío de cualquier detalle relevante o anomalía que escape a tu primera inspección. El goteo distante continúa, marcando un ritmo monótono en la quietud del lugar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1070 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 274 — 185/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  24 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4951 ms
+
+> "Demasiado vacío para ser útil."
+> Me acerco a las paredes y paso los dedos por las juntas de la piedra, buscando cualquier relieve, palanca o hueco oculto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+1=17
+
+### [4] DM
+
+  8061 ms
+
+> Tus dedos recorren la piedra fría y rugosa, sintiendo la humedad que se filtra entre las juntas. Tras unos minutos de búsqueda meticulosa, percibes una ligera corriente de aire que no proviene de la entrada. Al presionar una piedra que parece encajar con menos firmeza que las demás, se escucha un clic seco y metálico que resuena en el silencio del sótano.
+> Una sección de la pared se desliza hacia un lado con un chirrido de piedra contra piedra, revelando un hueco estrecho. En el interior, una pequeña hornacina de madera podrida sostiene un cofre de herrajes dorados, cuyo brillo tenue lucha contra la oscuridad del pasadizo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5080 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: cofre de herrajes dorados
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cofre de herrajes dorados
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 275 — 186/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  25 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3183 ms
+
+> "Vaya, vaya. Alguien guardaba secretos."
+> Me acerco con cautela y examino el cofre en busca de trampas antes de tocarlo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+1=4
+
+### [4] DM
+
+  8090 ms
+
+> Te inclinas sobre la hornacina, moviendo la luz para analizar los bordes del cofre y el mecanismo de la madera podrida. Sin embargo, la penumbra del pasadizo y el polvo acumulado juegan en tu contra; tus ojos no logran distinguir ninguna anomalía, cable o presión sospechosa en la superficie del metal dorado.
+> El cofre permanece allí, imperturbable y silencioso, invitando a ser abierto mientras el aire viciado del hueco te roza el rostro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1006 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 276 — 187/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  25 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3722 ms
+
+> "Demasiado silencio para ser un regalo."
+> Saco una herramienta fina y trato de sondear el mecanismo de la cerradura para detectar trampas internas.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+1=3
+
+### [4] DM
+
+  7975 ms
+
+> La herramienta metálica raspa el interior de la cerradura con un sonido seco y chirriante. Al intentar tantear el mecanismo, la punta de la herramienta resbala sobre el metal oxidado, encontrando solo superficies irregulares y sedimentos de polvo que obstruyen cualquier sentido del tacto.
+> No logras discernir si hay un muelle armado, un disparador o simplemente una cerradura vieja y atascada; el mecanismo permanece hermético y mudo ante tu sonda.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1080 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 277 — 188/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  25 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4027 ms
+
+> "Maldita chatarra."
+> Saco la herramienta y examino la cerradura más de cerca para buscar alguna marca o desgaste que me indique el tipo de mecanismo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+1=8
+
+### [4] DM
+
+  9236 ms
+
+> Te acercas a la cerradura, forzando la vista contra el metal opaco y corroído. El polvo acumulado se desprende en pequeñas escamas al contacto con tu respiración, pero la superficie es un caos de óxido y picaduras que ocultan cualquier detalle útil.
+> No hay marcas de fabricante, ni relieves, ni un patrón de desgaste que sugiera que alguien haya intentado forzarla recientemente. Para tus ojos, el mecanismo es una masa metálica informe y sorda que no entrega ninguna pista sobre su funcionamiento interno.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1127 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 278 — 189/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  25 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3391 ms
+
+> "Maldita chatarra."
+> Saco mis herramientas de ladrón e intento manipular el mecanismo a ciegas, buscando cualquier punto de resistencia.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 18+4=22
+
+### [4] DM
+
+  8319 ms
+
+> El metal cede con un chasquido seco y satisfactorio que resuena en el silencio del pasillo. Tras un breve forcejeo donde las herramientas encuentran el punto exacto de presión, el mecanismo interno, aunque oxidado, se desliza con una fluidez sorprendente, liberando el pestillo con un golpe metálico.
+> La puerta se entreabre unos centímetros, revelando una rendija de oscuridad absoluta y un aroma a papel viejo y humedad que se filtra desde el interior.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2598 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 279 — 190/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  25 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  5640 ms
+
+> "Demasiado silencio."
+> Me deslizo hacia adentro con cautela, manteniendo la espalda pegada a la pared y escuchando cualquier ruido.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 18+4=22
+
+### [4] DM
+
+  9374 ms
+
+> Tus pasos no producen el más mínimo roce contra el suelo polvoriento; te fundes con las sombras del umbral como si fueras parte de ellas. El aire en el interior es denso, cargado de motas de polvo que bailan en el haz de luz que entra por la puerta entreabierta, pero el silencio permanece imperturbable, casi artificial.
+> La estancia es un archivo circular, donde estanterías de madera carcomida se curvan siguiendo la pared, cargadas de legajos atados con cuerdas deshilachadas. En el centro, una mesa de roble macizo sostiene un tintero seco y una pluma de ganso que parece haber quedado congelada en el tiempo, rodeada de hojas de pergamino amarillentas que no se han movido en décadas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2238 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 280 — 191/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  25 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3608 ms
+
+> Me deslizo hacia la mesa central, evitando pisar donde la luz sea más intensa. Observo los pergaminos amarillentos buscando algún sello o firma que sugiera importancia.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  14779 ms
+
+> Tus ojos escanean los pergaminos con una precisión quirúrgica, descartando rápidamente los borradores y las listas de inventario obsoletas. Bajo una pila de hojas manchadas de humedad, encuentras un documento que destaca: un acta oficial con un sello de cera roja, ahora quebradizo, que muestra el emblema de los Archiveros del Silencio. La caligrafía es elegante pero apresurada, detallando una serie de transacciones prohibidas y nombres de funcionarios locales que recibieron pagos para omitir ciertos registros históricos del Valle del Corral.
+> Al lado del acta, una pequeña nota manuscrita, escrita con una tinta negra que aún conserva cierta intensidad, menciona una fecha específica y una ubicación exacta dentro de la ciudad, sugiriendo que el archivo no es el único lugar donde se guardan estas pruebas. El papel cruje levemente bajo tu mirada, revelando una firma que coincide exactamente con la de un antiguo magistrado desaparecido hace años.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4015 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: acta oficial de los Archiveros
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item acta oficial de los Archiveros
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 281 — 192/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  26 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3957 ms
+
+> "Interesante. Demasiado interesante para dejarlo aquí."
+> Guardo el acta y la nota en mi ropa con cuidado para que no se dañen.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 14+4=18
+
+### [4] DM
+
+  12880 ms
+
+> Tus dedos se mueven con una agilidad casi invisible, deslizando el acta y la nota entre las costuras de tu ropa sin que el papel emita un solo crujido. El movimiento es fluido, una coreografía ensayada que deja la mesa exactamente como estaba hace un momento: una pila de papeles polvorientos y obsoletos que no atraerían la atención de nadie.
+> El silencio del archivo envuelve la estancia, interrumpido solo por el eco lejano de algún paso en los pasillos exteriores. Los documentos restantes siguen allí, inertes, mientras el peso del secreto ahora descansa oculto contra tu cuerpo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3708 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = acta oficial de los Archiveros
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4645: Wynn.inventory = acta oficial de los Archiveros
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 282 — 193/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  26 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4754 ms
+
+> "No hay nada más aquí que merezca mi tiempo."
+> Echo un vistazo rápido al resto de los papeles sobre la mesa, buscando cualquier otro documento que parezca tener un valor oculto o nombres interesantes.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+1=3
+
+### [4] DM
+
+  9168 ms
+
+> Tus ojos recorren el resto de los folios, pero la vista se pierde en un mar de tinta desvaída y caligrafías apresuradas. Lo que queda sobre la mesa son meros registros de impuestos sobre el grano de hace tres décadas y actas de reuniones vecinales sobre el mantenimiento de los pozos; papeles amarillentos que no contienen ni un solo nombre relevante ni ninguna pista que despierte el interés.
+> El polvo danza en los rayos de luz que se filtran por las ventanas altas, asentándose lentamente sobre los documentos insignificantes. El archivo permanece sumido en su letargo, devolviéndote una sensación de vacío administrativo donde ya no queda nada que rescatar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1366 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 283 — 194/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  26 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4180 ms
+
+> "Basura administrativa."
+> Suelto los papeles con desdén y empiezo a palpar los bordes de la mesa y las juntas de los cajones buscando compartimentos ocultos.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 6+1=7
+
+### [4] DM
+
+  8995 ms
+
+> Tus dedos recorren la madera rugosa y las esquinas desgastadas de los cajones, presionando con insistencia cada moldura y deslizando la mano por las juntas del mueble. El tacto es frío y seco, y solo encuentras astillas antiguas y acumulaciones de polvo apelmazado que se quedan pegadas a tu piel.
+> La mesa es un bloque sólido de roble viejo, sin doble fondos ni resortes ocultos que cedan ante tu presión. No hay ningún hueco secreto ni compartimento oculto en el mobiliario; es tan simple y anodina como los registros de impuestos que acabas de descartar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1320 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 284 — 195/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  26 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3976 ms
+
+> "Demasiado simple para ser verdad."
+> Me alejo de la mesa y busco cualquier otro objeto pequeño o abnormal en la habitación que pueda servir de llave o mecanismo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 11+1=12
+
+### [4] DM
+
+  13024 ms
+
+> Tu mirada recorre la estancia, saltando de las paredes desconchadas a las esquinas donde las telarañas han empezado a tejerse. Te detienes en los objetos cotidianos: un tintero seco, un candelabro de peltre torcido y un montón de papeles amarillentos. Analizas la disposición de los muebles y el desgaste del suelo, buscando cualquier marca de arrastre o una anomalía en la arquitectura que sugiera un mecanismo.
+> A pesar de tu escrutinio, la habitación se mantiene obstinadamente ordinaria. No hay palancas disfrazadas de adornos, ni relieves extraños en el zócalo, ni ningún objeto que desentone con la mediocridad del despacho. Todo lo que ves es exactamente lo que parece ser: el refugio polvoriento de alguien que no tiene nada que ocultar en este lugar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1127 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 285 — 196/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  26 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3378 ms
+
+> "Demasiado ordinario para ser verdad."
+> Me acerco a los papeles amarillentos y empiezo a revisarlos minuciosamente buscando cualquier nota oculta o mensaje cifrado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+1=8
+
+### [4] DM
+
+  8740 ms
+
+> Tus dedos rozan el papel quebradizo, que cruje con un sonido seco y áspero al tacto. Pasas las hojas con cuidado, analizando las manchas de tinta y los márgenes en busca de alguna anotación invisible o un código oculto entre las líneas de lo que parecen ser simples registros contables y borradores de cartas antiguas.
+> Sin embargo, el contenido es tan tedioso como el resto de la estancia. Las hojas solo contienen listas de suministros, quejas sobre el precio del grano y notas administrativas sin ninguna relevancia aparente. No encuentras ningún mensaje cifrado ni notas ocultas; los papeles son, efectivamente, tan ordinarios como el despacho que los alberga.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1281 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 286 — 197/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  26 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3733 ms
+
+> "Qué pérdida de tiempo."
+> Cierro el cuaderno y empiezo a registrar el resto del escritorio, buscando compartimentos falsos o algún objeto de valor que no esté a la vista.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+1=9
+
+### [4] DM
+
+  11589 ms
+
+> Tus manos recorren la superficie de madera gastada, palpando las juntas del escritorio y presionando los paneles laterales en busca de algún hundimiento o resorte oculto. El polvo se levanta en pequeñas nubes bajo tus dedos mientras examinas los cajones, que chirrían con un sonido metálico y seco al abrirse y cerrarse.
+> No hay compartimentos secretos, ni fondos falsos, ni joyas escondidas entre las grietas de la madera. Solo encuentras un tintero seco, una pluma de ganso rota y algunos clips de metal oxidados que se quedan pegados a tu piel. El escritorio es tan honesto y vacío como los papeles que acabas de leer.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1614 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 287 — 198/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  25 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3535 ms
+
+> "Qué desperdicio de madera."
+> Dejo el escritorio y me acerco a las paredes de la habitación para buscar algún otro mueble o rincón que no haya revisado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+1=5
+
+### [4] DM
+
+  11582 ms
+
+> Recorres el perímetro de la estancia, deslizando la vista por las paredes desconchadas y los rincones donde las telarañas han tejido cortinas grises y espesas. Tus pasos resuenan huecos sobre el suelo, mientras inspeccionas la esquina más oscura y los pocos salientes de la mampostería, pero la habitación se revela monótona y despojada de cualquier interés.
+> No hay armarios ocultos, ni cajas olvidadas bajo los tablones, ni grietas que sugieran un escondite. El espacio es estrictamente funcional y está tan vacío de secretos como el escritorio que acabas de abandonar; solo queda el aroma a humedad y el silencio pesado de un cuarto que no ha sido visitado en años.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1153 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 288 — 199/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  25 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3483 ms
+
+> "Demasiado vacío para ser normal."
+> Vuelvo al escritorio y examino minuciosamente la superficie y los bordes del mueble en busca de marcas de desgaste o mecanismos ocultos.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+1=8
+
+### [4] DM
+
+  9068 ms
+
+> Tus dedos recorren la madera fría y rugosa del escritorio, palpando cada veta y presionando los bordes del tablero en busca de algún resorte o hendidura. Te detienes en las esquinas, examinando los ensambles y el desgaste del barniz, pero la superficie no cede ni revela ningún juego mecánico.
+> El mueble es una pieza tosca y honesta de madera maciza. No hay compartimentos secretos, ni marcas de uso que sugieran que alguien haya accionado un mecanismo oculto en este lugar; solo quedan las manchas circulares de tinteros antiguos y el polvo acumulado en las molduras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1103 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 289 — 200/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  25 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3672 ms
+
+> "Parece que el dueño no era tan sofisticado."
+> Me aparto del escritorio y empiezo a registrar los cajones y el interior del mueble buscando papeles o monedas.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+1=4
+
+### [4] DM
+
+  7234 ms
+
+> Rebuscas entre los cajones, moviendo pilas de papeles amarillentos y restos de cera seca que se pegan a tus dedos. El interior del mueble es un caos de trivialidades: recibos de compra de suministros de hace años, algunas plumas desgastadas y un tintero vacío que deja una mancha oscura en tu mano al moverlo.
+> No encuentras ninguna moneda, ni sobres sellados, ni notas que escapen a la vista general. Solo hay polvo y el aroma rancio de la tinta vieja; los cajones están vacíos de cualquier valor o secreto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1101 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 290 — 201/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  25 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4256 ms
+
+> "Vaya pérdida de tiempo."
+> Saco un pañuelo para limpiarme la mancha de tinta y miro el mueble con más detenimiento, buscando algún compartimento oculto o un doble fondo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 9+1=10
+
+### [4] DM
+
+  6472 ms
+
+> Tus dedos recorren los bordes de madera astillada y presionas las juntas del mueble, buscando cualquier hendidura o mecanismo que ceda bajo tu peso. El tacto es el de un mueble viejo y mal cuidado; la madera cruje, pero no hay clics metálicos ni paneles que se desplacen.
+> El cajón sigue siendo un hueco vacío de polvo y restos de cera. No hay doble fondo ni compartimentos secretos que escapen a tu examen; el mueble es tan simple y cutre como parece a simple vista.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1082 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 291 — 202/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  25 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3218 ms
+
+> "Qué pérdida de tiempo."
+> Me alejo del mueble y miro el resto de la habitación en busca de cualquier otro objeto que parezca fuera de lugar o demasiado sencillo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 5+1=6
+
+### [4] DM
+
+  11759 ms
+
+> La mirada recorre la estancia, saltando de las paredes desconchadas a los rincones donde se acumula el polvo. La habitación es austera, casi despojada de cualquier elemento que sugiera un propósito más allá de servir como dormitorio o almacén improvisado; los pocos objetos presentes parecen haber estado ahí durante años, fundiéndose con la monotonía del gris y el marrón.
+> No hay nada que rompa la armonía de la decadencia. Ni un libro mal colocado, ni una baldosa que se asiente distinto al resto, ni un objeto cuya sencillez resulte sospechosa. La habitación se revela como un espacio genuinamente vacío de secretos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1551 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 292 — 203/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  25 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3091 ms
+
+> "Demasiado vacío." 
+> Me acerco a las paredes y empiezo a palpar las juntas de las piedras y los rincones del techo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+1=9
+
+### [4] DM
+
+  8032 ms
+
+> Tus dedos recorren la superficie fría y rugosa de la piedra, deslizándose por las grietas y presionando las juntas del mortero seco. El tacto es uniforme; el polvo se pega a tu piel y el rastro de tus dedos deja marcas claras sobre la suciedad acumulada de las paredes y el techo.
+> No hay ningún mecanismo oculto, ninguna piedra que ceda al tacto ni huecos que sugieran la existencia de un compartimento secreto. La habitación se mantiene obstinadamente muda, confirmando que su vacío no es un disfraz, sino una realidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1344 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 293 — 204/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  25 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  5676 ms
+
+> "Qué pérdida de tiempo."
+> Me aparto de la pared y examino el suelo y las esquinas en busca de cualquier rastro de arrastre o marcas de uso reciente.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 5+1=6
+
+### [4] DM
+
+  11972 ms
+
+> Te agachas para inspeccionar el polvo y las juntas del suelo, pero la suciedad está distribuida de forma caótica y uniforme. El tiempo y la humedad han borrado cualquier rastro que pudiera haber dejado un movimiento reciente; no hay surcos, ni marcas de arrastre, ni señales de que alguien haya pisado este lugar en los últimos años.
+> Las esquinas son simples ángulos de piedra fría donde se acumulan telarañas espesas y grises, intactas y pesadas, que cuelgan como jirones de tela vieja. La habitación sigue siendo un vacío absoluto, desprovisto de cualquier pista tangible.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1996 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 294 — 205/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  25 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3294 ms
+
+> "Demasiado limpio para ser natural."
+> Me pongo en pie y empiezo a palpar las paredes de piedra, buscando cualquier irregularidad, hendidura o corriente de aire que no sea evidente a simple vista.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+1=19
+
+### [4] DM
+
+  11617 ms
+
+> Tus dedos recorren la superficie rugosa y gélida de la piedra, sintiendo el grano del granito y la humedad que se filtra por los poros del muro. Tras unos minutos de búsqueda metódica, notas una ligera diferencia en la temperatura al llegar a la pared norte; hay un hilo de aire gélido, casi imperceptible, que acaricia tus nudillos. Al presionar con más fuerza, descubres que una de las piedras no está encastrada como las demás, sino que presenta una junta mínimamente más ancha y un relieve sutilmente hundido hacia el interior.
+> La piedra cede un milímetro bajo tu peso, revelando que no es parte de la estructura portante, sino una pieza móvil. Un mecanismo oxidado chirría débilmente detrás del muro, sugiriendo que la losa puede deslizarse o pivotar si se aplica la presión adecuada en el punto exacto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1573 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 295 — 206/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  25 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3237 ms
+
+> "Vaya, vaya... alguien guardó un secreto aquí."
+> Intento deslizar la piedra con cuidado para abrir el hueco sin hacer ruido.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 9+4=13
+
+### [4] DM
+
+  10309 ms
+
+> La piedra se desplaza con una resistencia metálica, produciendo un roce sordo y seco que vibra contra la palma de tu mano. El mecanismo, aunque antiguo, responde a tu esfuerzo y la losa se desliza hacia un lado, dejando al descubierto un nicho rectangular y oscuro, apenas iluminado por la luz residual del pasillo.
+> Dentro del hueco, reposa un pequeño cofre de madera oscura, reforzado con bandas de hierro corroídas por el salitre. No hay trampas evidentes ni alarmas que se disparen; solo el silencio sepulcral de la piedra y el olor a polvo antiguo que emana del compartimento recién abierto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4912 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: cofre de madera oscura
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cofre de madera oscura
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 296 — 207/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  26 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  25257 ms
+
+> "Veamos qué guardabas aquí."
+> Me acerco al nicho y trato de abrir el cofre con cuidado, asegurándome de que no haya ningún mecanismo oculto en el cierre.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+1=8
+
+### [4] DM
+
+  7526 ms
+
+> Tus dedos recorren las bandas de hierro y la madera rugosa, buscando algún resorte, un hilo invisible o una placa de presión que delate una trampa. Sin embargo, la superficie se siente inerte y el cierre parece ser una simple cerradura oxidada que ha cedido parcialmente por el tiempo.
+> Al intentar manipular la tapa con cuidado, el metal chirría y el cofre se resiste, cerrado por el óxido y la suciedad acumulada durante décadas. No detectas ningún mecanismo oculto, pero la tapa permanece firmemente sellada, exigiendo más que una simple caricia para revelar su contenido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2783 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 297 — 208/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  26 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3294 ms
+
+> "Terca pieza de chatarra."
+> Saco mis herramientas de ladrón e intento forzar la cerradura oxidada para abrir el cofre.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 3+4=7
+
+### [4] DM
+
+  8053 ms
+
+> El metal oxidado se resiste con una terquedad casi orgánica. Al introducir las ganzúas, el mecanismo interno emite un chasquido seco y metálico, pero no es el sonido de una cerradura abriéndose, sino el de una pieza de hierro quebrándose bajo la presión. La herramienta resbala bruscamente, dejando una muesca superficial en el metal corroído sin lograr mover el pestillo ni un milímetro.
+> El cofre permanece sellado, imperturbable, mientras el eco del fallo resuena en el silencio del lugar. La cerradura, aunque vieja, sigue cumpliendo su función de barrera, devolviendo ahora una resistencia aún más rígida que antes.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3138 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 298 — 209/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  26 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4197 ms
+
+> "Maldita chatarra."
+> Saco una herramienta más robusta y trato de forzar el mecanismo ahora que la pieza interna está dañada.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 9+4=13
+
+### [4] DM
+
+  6815 ms
+
+> El metal gime bajo la presión de la herramienta más gruesa, produciendo un sonido estridente de hierro retorciéndose que rompe la quietud del ambiente. Tras un esfuerzo tenso, el mecanismo cede con un salto brusco, obligando al pestillo a deslizarse hacia atrás con un golpe seco.
+> La tapa del cofre se levanta unos centímetros, revelando un interior recubierto de terciopelo descolorido y polvoriento que protege el contenido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1554 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 299 — 210/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  26 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3933 ms
+
+> "Por fin."
+> Me acerco al cofre y reviso rápidamente el contenido, buscando cualquier objeto de valor o documento que pueda ser útil.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+1=5
+
+### [4] DM
+
+  6891 ms
+
+> Tus dedos buscan entre el terciopelo áspero y el polvo acumulado, pero la prisa y la falta de método te juegan una mala pasada. Deslizas la mano por el interior del cofre, sintiendo superficies frías y texturas variadas, pero no logras distinguir nada que destaque como particularmente valioso o relevante entre el desorden de objetos cotidianos y viejos papeles amarillentos.
+> El contenido parece una mezcla caótica de recuerdos y trastos olvidados; cualquier pista útil o joya oculta permanece invisible a tus ojos, camuflada bajo el manto de polvo que cubre el fondo del recipiente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1093 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 300 — 211/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  26 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3368 ms
+
+> "Demasiado desorden para una búsqueda rápida."
+> Saco los papeles amarillentos y los extiendo sobre la superficie más cercana para revisarlos con calma.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+1=5
+
+### [4] DM
+
+  8959 ms
+
+> Tus manos recogen los pliegos de papel, que crujen con un sonido seco y quebradizo al extenderlos sobre la superficie. La tinta, desvanecida por el tiempo y la humedad, se funde con el tono amarillento del pergamino, creando un patrón confuso de trazos y manchas de moho que dificultan cualquier lectura coherente.
+> A medida que recorres las líneas, los párrafos parecen fragmentos inconexos de diarios personales o listas de inventario obsoletas. No logras encontrar ninguna fecha clara, nombre propio o dato que arroje luz sobre el contenido del cofre; es solo un montón de registros mundanos que el tiempo ha vuelto ilegibles.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1108 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 301 — 212/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  26 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4953 ms
+
+> "Basura."
+> Suelto los papeles con desdén y empiezo a registrar el fondo del cofre buscando cualquier compartimento oculto o doble fondo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+1=9
+
+### [4] DM
+
+  7792 ms
+
+> Tus dedos recorren las paredes interiores del cofre, palpando la madera rugosa y los herrajes oxidados en busca de alguna irregularidad, una hendidura o el clic de un mecanismo secreto. El tacto es uniforme; la madera se siente sólida y gastada, sin dar señales de falsos fondos ni compartimentos ocultos.
+> El fondo del cofre permanece inmutable bajo tu presión, revelando únicamente el polvo acumulado y los restos de los papeles que acabas de descartar. No hay nada más que el vacío del recipiente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1311 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 302 — 213/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  26 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3388 ms
+
+> "Vaya decepción."
+> Saco la mano del cofre y me pongo en pie. Empiezo a registrar el resto de la habitación, buscando cualquier otro rincón donde pudieran haber escondido algo de valor.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 11+1=12
+
+### [4] DM
+
+  8042 ms
+
+> Tus ojos escanean la estancia, moviéndose desde las sombras bajo la mesa hasta las grietas del techo. El polvo baila en los pocos haces de luz que se filtran por las ventanas, revelando que la habitación ha sido removida recientemente; hay marcas de arrastre en el suelo y algunas motas de polvo suspendidas que sugieren que alguien ha estado rebuscando aquí hace poco.
+> A pesar de tu esfuerzo, el resto del mobiliario se muestra terco. Las patas de la mesa están firmemente ancladas al suelo y las cortinas, pesadas y raídas, no ocultan más que paredes desnudas y húmedas. No encuentras ningún otro compartimento, objeto brillante ni rastro evidente de algo valioso que haya escapado a la primera limpieza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2189 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 303 — 214/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  26 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1742 ms
+
+> Me acerco a las marcas de arrastre en el suelo y me pongo de cuclillas para examinarlas de cerca.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+1=17
+
+### [4] DM
+
+  12154 ms
+
+> Al bajar la mirada, el rastro se vuelve nítido bajo la luz filtrada. No es el arrastre errático de alguien que busca a ciegas, sino la marca lineal y pesada de un objeto rectangular, probablemente un baúl o un armario pequeño, que fue desplazado con urgencia hacia la salida. Entre las fibras del suelo, rescatas un fragmento de tela de color carmesí intenso, una fibra fina y costosa que desentona totalmente con la humedad y la decrepitud de la estancia.
+> Siguiendo la dirección de las marcas, notas que el polvo ha sido perturbado no solo por el objeto arrastrado, sino por pisadas apresuradas. Los surcos en la madera indican que quien se llevó el mueble tenía prisa, pues el objeto golpeó el marco de la puerta al salir, dejando una muesca fresca en la madera astillada que aún exhala el olor a resina recién cortada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  13678 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = fragmento de tela de color carmesí intenso
+  ✓ creación item: fragmento de tela de color carmesí intenso
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item fragmento de tela de color carmesí intenso
+  → delta 4712: Wynn.inventory = fragmento de tela de color carmesí intenso
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 304 — 215/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2845 ms
+
+> "Tela cara en un lugar podrido. Interesante."
+> Recojo el fragmento de tela carmesí y examino la muesca de la puerta para intentar determinar el peso del objeto arrastrado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 9+1=10
+
+### [4] DM
+
+  6572 ms
+
+> Recoges la fibra carmesí, que se siente suave y fría entre tus dedos, contrastando con la aspereza del entorno. Al acercarte a la puerta, observas la muesca en la madera; el impacto fue seco y profundo, dejando astillas levantadas que sugieren un golpe brusco.
+> Sin embargo, la madera está demasiado degradada por la humedad y la porosidad del material no permite distinguir si el daño fue causado por un objeto masivo y pesado o simplemente por un choque violento de algo más ligero. El rastro se pierde en el pasillo, dejando la magnitud de lo que fue trasladado en el misterio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7075 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = fragmento de tela de color carmesí intenso
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4716: Wynn.inventory = fragmento de tela de color carmesí intenso
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 305 — 216/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2219 ms
+
+> Guardo la fibra carmesí en un bolsillo. Me agacho para examinar el suelo del pasillo buscando cualquier otra marca o residuo que haya dejado el traslado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 9+1=10
+
+### [4] DM
+
+  6492 ms
+
+> Te inclinas sobre las tablas del suelo, recorriendo con la mirada el camino que sigue al pasillo. La madera está cubierta por una fina capa de polvo grisáceo y manchas de humedad que crean patrones irregulares, camuflando cualquier rastro sutil.
+> A pesar de tu esfuerzo, no encuentras huellas claras, gotas de sangre ni fragmentos adicionales. El pasillo parece haber absorbido el paso de lo que sea que fue trasladado, dejándote solo con la incertidumbre del vacío y el silencio del edificio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2433 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 306 — 217/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2342 ms
+
+> "Interesante. Demasiado limpio."
+> Me pongo en pie y busco cualquier rincón, grieta o mueble donde alguien haya podido esconder algo rápido antes de huir.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 5+1=6
+
+### [4] DM
+
+  8900 ms
+
+> Te levantas y comienzas a inspeccionar los rincones del pasillo, palpando las molduras de madera y asomándote tras los pocos muebles que quedan, algunos de ellos volcados y llenos de telarañas. El espacio es estrecho y la luz se filtra débilmente, creando sombras que parecen jugar contigo mientras revisas cada grieta.
+> No encuentras ningún objeto oculto, ni papeles apresuradamente escondidos ni compartimentos secretos en las paredes. El polvo permanece imperturbable en las esquinas, confirmando que, en este tramo del corredor, no ha quedado ningún rastro material de la huida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8261 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 307 — 218/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  17111 ms
+
+> "Vaya pérdida de tiempo."
+> Me detengo y observo el suelo, buscando cualquier rastro o marca que no sea polvo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+1=18
+
+### [4] DM
+
+  10037 ms
+
+> Al inclinar la vista hacia el suelo, el patrón monótono del polvo se rompe. Cerca de la base de uno de los muebles volcados, hay una serie de marcas lineales y profundas que cortan la capa grisácea: surcos paralelos que indican que algo pesado, probablemente un baúl o una caja metálica, fue arrastrado con fuerza hacia la salida del pasillo.
+> Siguiendo el rastro, notas que las marcas se vuelven más erráticas y profundas en un punto concreto, donde el peso pareció concentrarse durante un instante, dejando una pequeña mella en la madera del suelo antes de continuar su camino hacia la puerta final.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2452 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 308 — 219/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3070 ms
+
+> "Interesante."
+> Me acerco a la mella del suelo y examino los restos de madera y el polvo para ver si quedó algún fragmento o rastro del objeto arrastrado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+1=5
+
+### [4] DM
+
+  6553 ms
+
+> Te inclinas sobre la mella de la madera, apartando el polvo con cuidado, pero la superficie es decepcionante. El impacto fue seco y limpio; el objeto que causó el daño era lo suficientemente sólido como para no desprender astillas ni dejar residuos materiales en la hendidura.
+> El polvo circundante, removido por el arrastre, ha borrado cualquier rastro menor que pudiera haber servido de pista. Solo quedan los surcos profundos y vacíos que apuntan, con una claridad fría, hacia la salida del pasillo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1161 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 309 — 220/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2697 ms
+
+> "No ha dejado ni una mota de acero."
+> Me incorporo y sigo la dirección de los surcos hacia la salida, moviéndome con cautela.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 16+4=20
+
+### [4] DM
+
+  6208 ms
+
+> Te deslizas por el pasillo como una sombra, fundiéndote con las penumbras y el silencio del corredor. Tus pasos no producen el menor crujido sobre las tablas viejas, y tu respiración se vuelve un ritmo imperceptible que se pierde en el aire estancado del lugar.
+> Al alcanzar el umbral de la salida, asomas la vista con extrema precaución. El espacio se abre hacia una estancia más amplia donde la luz se filtra débilmente, revelando el final del rastro de los surcos que conducen hacia una pesada puerta de roble entreabierta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2773 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 310 — 221/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2590 ms
+
+> Me quedo pegado a la pared, observando la puerta entreabierta para ver si alguien entra o sale antes de moverme.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 15+2=17
+
+### [4] DM
+
+  12813 ms
+
+> Desde tu posición, el silencio de la estancia es casi absoluto, roto únicamente por el eco lejano de una gota de agua que cae en algún lugar del edificio. Al fijar la vista en la rendija de la puerta de roble, distingues una silueta que se recorta contra la luz del exterior: el perfil de un hombre que permanece inmóvil, vigilando el pasillo desde el otro lado.
+> Lleva una casaca de un carmesí vibrante que contrasta violentamente con la penumbra del corredor. No se mueve, pero su postura es rígida, con la mano apoyada en el pomo de la puerta, atento a cualquier ruido que provenga de la zona donde te ocultas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2295 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 311 — 222/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2431 ms
+
+> Me quedo inmóvil, conteniendo la respiración mientras observo la posición de su mano. Busco cualquier punto ciego o descuido en su postura para acercarme sin ser visto.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 9+4=13
+
+### [4] DM
+
+  14494 ms
+
+> El hombre de la casaca carmesí mantiene la mirada fija en el extremo del pasillo, pero su oído parece tan afilado como su postura. Mientras intentas calcular el ángulo de su visión, el roce imperceptible de tu ropa contra la pared o el desplazamiento de tu peso produce un sonido seco, un chasquido mínimo que rompe el silencio sepulcral de la estancia.
+> El vigilante reacciona al instante. Gira la cabeza con un movimiento brusco y preciso hacia tu posición, con los ojos entornados y una expresión de desprecio. Su mano aprieta el pomo de la puerta con fuerza mientras clava la vista en la penumbra donde te encuentras.
+> —¿Quién anda ahí? —su voz es fría, cortante, cargada de una hostilidad inmediata—. Sal ahora mismo o entraré yo a sacarte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2059 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 312 — 223/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2239 ms
+
+> "Solo un error de camino, señor."
+> Salgo lentamente de las sombras con las manos a la vista, manteniendo una expresión neutra y sumisa.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 14+4=18
+
+### [4] DM
+
+  10235 ms
+
+> El hombre de la casaca carmesí no relaja la tensión de sus hombros, pero sus ojos recorren tu figura de arriba abajo, analizando tu postura sumisa y las manos abiertas. El desprecio permanece en su gesto, aunque la agresividad inmediata de su voz se transforma en una sospecha gélida. Suelta un bufido corto, una exhalación de incredulidad que no llega a borrar la desconfianza de su mirada.
+> —¿Un error de camino? —repite con una lentitud venenosa, mientras su mano sigue aferrada al pomo de la puerta—. Este pasillo no conduce a ninguna zona pública, y dudo mucho que el azar te haya traído exactamente a este punto. Vete. Ahora. Antes de que decida que tu "error" requiere una escolta forzada hasta las celdas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1869 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 313 — 224/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3516 ms
+
+> "Entiendo perfectamente. No deseo causar más molestias de las ya provocadas."
+> Hago una leve reverencia y retrocedo lentamente, sin dejar de observar la mano del hombre sobre el pomo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+0=8
+
+### [4] DM
+
+  9796 ms
+
+> El hombre de la casaca carmesí no se mueve ni un milímetro mientras retrocedes, manteniendo su mano firmemente anclada al pomo de la puerta como si temiera que cualquier descuido fuera aprovechado. Sus ojos no dejan de seguirte, cargados de una hostilidad que no necesita palabras; el silencio que deja tu retirada es denso y cargado de una tensión eléctrica.
+> Cuando finalmente te alejas lo suficiente, el sonido seco y metálico de la cerradura al girar resuena en el pasillo vacío, dejándote solo con el eco de tus propios pasos y la gélida sensación de haber sido observado por alguien que no olvida los rostros.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1350 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 314 — 225/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  7343 ms
+
+> "Interesante."
+> Me quedo unos instantes en el pasillo, escuchando el silencio tras el cierre de la puerta. Intento analizar si hay algún rastro de quien estaba dentro o alguna debilidad en la cerradura.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  13271 ms
+
+> El silencio del pasillo se vuelve un lienzo donde cada detalle cobra relieve. Al acercarte a la madera, notas que el pomo no solo ha sido girado, sino que el mecanismo interno ha emitido un chasquido inusual; el cerrojo es antiguo, de hierro forjado, y presenta una pequeña muesca de desgaste en la parte superior del marco que sugiere que la puerta no cierra herméticamente si se aplica presión en el ángulo correcto.
+> Además, el aire que escapa por la rendija inferior trae consigo un aroma penetrante y específico: una mezcla de cera de sellar caliente y el rastro acre de un tabaco caro, probablemente importado. En el suelo, justo donde el hombre de la casaca carmesí estaba apoyado, queda una pequeña escama de cuero rojo, arrancada por la fricción del roce contra el marco, que confirma que su movimiento fue brusco y apresurado al cerrar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5911 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: escama de cuero rojo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item escama de cuero rojo
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 315 — 226/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  28 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3471 ms
+
+> Recojo la escama de cuero rojo del suelo y la guardo con cuidado. Luego, presiono la puerta en el ángulo de la muesca para intentar abrirla sin hacer ruido.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 4+4=8
+
+### [4] DM
+
+  6222 ms
+
+> La escama de cuero rojo queda resguardada, un fragmento insignificante pero tangible del hombre que acaba de huir. Al aplicar presión en el ángulo de la muesca, la madera cede con una resistencia seca, pero el esfuerzo no es suficiente para engañar al mecanismo antiguo. 
+> Un chirrido agudo y metálico desgarra el silencio del pasillo mientras la puerta se abre bruscamente, golpeando el marco con un sonido sordo que resuena en las paredes desnudas. El ruido es nítido, una señal inequívoca de intrusión que alerta a cualquiera que se encuentre al otro lado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5799 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = escama de cuero rojo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4761: Wynn.inventory = escama de cuero rojo
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 316 — 227/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  28 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2221 ms
+
+> "Maldita sea."
+> Me pego rápidamente a la pared junto al marco de la puerta, tratando de fundirme con las sombras para no ser visto.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 15+4=19
+
+### [4] DM
+
+  7466 ms
+
+> Te fundes con la penumbra del pasillo justo cuando el eco del golpe aún vibra en el aire. El ángulo de la puerta crea un velo de oscuridad perfecto que oculta tu silueta, dejándote en una posición de ventaja táctica mientras el polvo suspendido en la luz del otro cuarto comienza a asentarse.
+> Desde el interior de la estancia, se escucha el arrastrar rápido de una silla y el jadeo contenido de alguien que ha sido sorprendido. Unos pasos apresurados se acercan al umbral, pero quien asoma la cabeza solo ve la puerta abierta de par en par y el pasillo aparentemente vacío. El individuo, un hombre delgado de mirada nerviosa y dedos manchados de tinta, escudriña la penumbra durante unos segundos, frunciendo el ceño con desconcierto antes de retroceder cautelosamente hacia el centro de la habitación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3647 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 317 — 228/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3297 ms
+
+> Me mantengo inmóvil, conteniendo la respiración mientras observo el movimiento del hombre desde las sombras. Espero a que se distraiga con algo dentro de la habitación para intentar acercarme sin ser visto.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 1+4=5  PIFIA
+
+### [4] DM
+
+  6320 ms
+
+> Al intentar ajustar tu posición para ganar un mejor ángulo, el tacón de tu bota choca contra un viejo jarrón de cerámica que yacía olvidado en el suelo. El objeto se hace añicos con un estrépito seco y violento que resuena en todo el pasillo, rompiendo el silencio de forma abrupta.
+> El hombre de los dedos manchados de tinta da un salto hacia atrás, soltando un grito ahogado de terror. Sus ojos se clavan instantáneamente en el punto exacto donde te encuentras, el pánico transformando su desconcierto en una alerta frenética mientras retrocede atropelladamente hacia la mesa de su despacho.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  10960 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 318 — 229/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4120 ms
+
+> "No te muevas."
+> Salgo rápidamente de mi escondite y me lanzo hacia él para inmovilizarlo antes de que pueda gritar de nuevo o alcanzar algo sobre la mesa.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 3+-1=2
+
+### [4] DM
+
+  5779 ms
+
+> El impulso te lleva hacia adelante, pero el suelo del pasillo, cubierto de polvo y los fragmentos recién rotos del jarrón, traiciona tu paso. Tus pies resbalan sobre la cerámica pulverizada y pierdes el equilibrio justo antes de alcanzar al hombre, provocando que tu embestida sea torpe y carezca de fuerza.
+> El hombre de los dedos manchados de tinta aprovecha tu tropiezo para ganar distancia. Con el rostro desencajado por el miedo, retrocede violentamente contra el borde de su mesa, haciendo que varios pergaminos y tinteros bailen peligrosamente sobre la madera mientras te mira con horror, recuperando el aliento para lanzar un grito.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3896 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 319 — 230/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4015 ms
+
+> "No grites si quieres seguir respirando."
+> Me recupero rápidamente del tropiezo y me lanzo hacia él para cubrirle la boca con la mano.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 9+-1=8
+
+### [4] DM
+
+  8818 ms
+
+> El hombre retrocede con un espasmo, pero tu mano no llega a tiempo para sellar su grito. El impulso fallido te deja lo suficientemente lejos para que el aire escape de sus pulmones en un alarido agudo y estridente que resuena en las paredes desnudas del pasillo.
+> El hombre se encoge contra la mesa, temblando, mientras sus ojos se clavan en ti con un pánico visceral. Sus dedos manchados de tinta se aferran a los bordes de la madera, volcando accidentalmente un tintero que comienza a derramar una mancha negra y espesa sobre los pergaminos, mientras el eco de su grito aún vibra en el aire.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6058 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4783: Hombre de la casaca carmesí affinity -100.0 → -100.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 320 — 231/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2551 ms
+
+> "Cállate si quieres seguir respirando."
+> Le agarro con fuerza por la garganta y lo presiono contra la mesa para silenciarlo.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 13+2=15
+
+### [4] DM
+
+  15430 ms
+
+> Tus dedos se cierran sobre su cuello con un golpe seco, aplastando su garganta contra la madera fría de la mesa. El grito se corta en un gorgoteo ahogado y sus piernas patalean frenéticamente contra el suelo, buscando un apoyo que no existe. La mancha de tinta se extiende ahora por su casaca carmesí, fundiéndose con el terror que ha dejado sus pupilas dilatadas y temblorosas.
+> El hombre deja de luchar bruscamente; su cuerpo se vuelve laxo y un hilo de saliva escapa de la comisura de sus labios. Sus ojos, inyectados en sangre por la presión, te miran con una sumisión absoluta y aterrada, asintiendo con espasmos rápidos y cortos mientras intenta recuperar un hilo de aire.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5726 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4788: Hombre de la casaca carmesí affinity -100.0 → -100.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 321 — 232/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2808 ms
+
+> "Ahora vas a decirme exactamente dónde guardas el resto del dinero y quién te lo entregó."
+> Aflojo la presión lo justo para que pueda hablar, pero mantengo su cabeza fija contra la mesa.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 5+2=7
+
+### [4] DM
+
+  7922 ms
+
+> El hombre exhala un aire rascado que suena a cristal roto, pero el pánico no ha sido suficiente para quebrantar su voluntad. Se retuerce bajo tu agarre, el rostro amoratado y los ojos desorbitados, pero cuando intenta hablar, solo emite un sonido gutural y cerrado. A pesar del terror, sus mandíbulas se tensan en un gesto de obstinación ciega; se niega a articular palabra, prefiriendo el riesgo de la asfixia antes que traicionar la fuente de sus monedas.
+> El silencio que sigue es tenso, roto únicamente por el goteo rítmico de la tinta que cae de la mesa sobre el suelo de madera. El sujeto te mira con un odio visceral que lucha contra el miedo, manteniendo los labios apretados en una línea fina mientras el aire vuelve a entrar en sus pulmones con dificultad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2380 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 322 — 233/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4060 ms
+
+> "Tu silencio es admirable, pero muy caro."
+> Suelto el agarre y busco con rapidez entre sus ropas y bolsillos cualquier papel, llave o moneda que pueda haber ocultado.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 6+4=10
+
+### [4] DM
+
+  6830 ms
+
+> Tus dedos recorren las costuras de la casaca carmesí y los pliegues de su ropa con una rapidez mecánica, pero el hombre, aún recuperando el aliento, se sacude con espasmos violentos. En el forcejeo, tus manos rozan telas ásperas y bolsillos vacíos; el sujeto se retuerce con una desesperación animal, logrando que tus intentos de registro resulten torpes y superficiales.
+> Cuando finalmente te apartas, tus manos están limpias. No hay papeles ocultos en los forros, ni llaves escondidas en el cinturón, ni monedas que hayan escapado a su vista. El hombre escupe un hilo de saliva y te lanza una mirada cargada de un desprecio gélido, recuperando la compostura mientras se apoya contra la mesa manchada de tinta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2578 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 323 — 234/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3469 ms
+
+> "Parece que no tienes nada que me interese... excepto tu lengua."
+> Le sujeto la mandíbula con fuerza para obligarlo a mirarme.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 3+2=5
+
+### [4] DM
+
+  4924 ms
+
+> El hombre tensa la mandíbula, resistiendo la presión de tus dedos con una rigidez obstinada. A pesar de la vulnerabilidad de su posición y el rastro de saliva en su barbilla, no hay rastro de miedo en sus ojos; solo un odio gélido que parece alimentarse de tu cercanía.
+> —Puedes apretar hasta que me rompas el hueso —masca entre dientes, con una sonrisa torcida y cargada de veneno—, pero no sacarás ni una sílaba de mí. No eres más que un perro faldero buscando migajas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4410 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4798: Hombre de la casaca carmesí affinity -100.0 → -100.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 324 — 235/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4066 ms
+
+> "El odio es una motivación útil, pero el dolor es un lenguaje universal."
+> Sigo apretando los dedos, buscando el punto exacto donde la resistencia se convierte en agonía.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 16+2=18
+
+### [4] DM
+
+  7510 ms
+
+> La presión de tus dedos encuentra el punto exacto, hundiéndose en el tejido blando y presionando el nervio contra el hueso. El rostro del hombre se contrae en una mueca violenta; la sonrisa venenosa desaparece instantáneamente, reemplazada por un jadeo ahogado y un espasmo que sacude todo su cuerpo. El odio en sus ojos no se extingue, pero se ve empañado por una capa de pánico visceral mientras comprende que no estás bromeando.
+> —¡Sueltame! —estalla en un grito ronco, su voz quebrándose mientras intenta apartar la cara, aunque la inmovilidad de su posición lo hace imposible—. ¡Está bien! ¡Para! ¡Dime qué quieres saber y dejaré de ser un muro, maldito animal!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6595 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4806: Hombre de la casaca carmesí affinity -100.0 → -100.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 325 — 236/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  26 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3148 ms
+
+> "No me llames animal. Me llamas profesional."
+> Aumento la presión un instante más antes de soltarlo bruscamente.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 14+2=16
+
+### [4] DM
+
+  5582 ms
+
+> El hombre cae hacia adelante con un gemido, jadeando mientras se frota el cuello con manos temblorosas. La arrogancia que emanaba de su casaca carmesí se ha desinflado, dejando paso a una respiración errática y una mirada que evita la tuya, aunque el resentimiento sigue vibrando en la tensión de su mandíbula.
+> —Profesional... —escupe con amargura, aunque su voz ya no tiene el filo de antes—. Está bien, me rindo. No necesito que me rompas el cuello para admitir que tienes el control aquí. Pregunta lo que quieras, pero hazlo rápido antes de que recupere el sentido común.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5599 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4813: Hombre de la casaca carmesí affinity -100.0 → -100.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 326 — 237/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  26 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2793 ms
+
+> "No me interesa tu sentido común, solo la información."
+> Le presiono el cuello un poco más mientras lo obligo a mirarme.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 8+2=10
+
+### [4] DM
+
+  5917 ms
+
+> El hombre emite un sonido ahogado, una mezcla de quejido y tos, mientras la presión en su garganta le corta el aire. Sus ojos se abren con pánico, pero la chispa de odio en sus pupilas no se apaga; simplemente se retuerce. Intenta apartar la mirada, luchando contra la fuerza que lo obliga a sostenerte el contacto visual, mientras sus dedos arañan inútilmente la manga de tu ropa.
+> —No... no creas que... —balbucea, recuperando el aliento con dificultad—. Que me tengas contra el suelo no significa que me gustes. Habla ya, maldito, antes de que me asfixies por accidente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3906 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4819: Hombre de la casaca carmesí affinity -100.0 → -100.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 327 — 238/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 1 hechos conocidos
+  26 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3650 ms
+
+> "No me interesa que te guste. Me interesa que hables."
+> Aprieto un poco más el agarre para recordarle quién tiene el control y lo miro fijamente a los ojos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 18+2=20
+
+### [4] DM
+
+  9642 ms
+
+> El hombre suelta un jadeo violento y sus pupilas se dilatan, el pánico superando finalmente al orgullo mientras siente que el límite de su resistencia ha llegado. Sus dedos dejan de arañar tu manga y caen inertes sobre el suelo, rindiéndose a la presión absoluta de tu agarre. El odio sigue ahí, pero ahora está enterrado bajo un terror primario que lo hace temblar.
+> —¡Está bien! ¡Suéltame, por los dioses, suéltame! —grita con la voz quebrada y rasposa—. No sé nada de los Archiveros, ¡te lo juro! Solo soy un mensajero. Melquíades me paga para vigilar que nadie se acerque a los registros del ayuntamiento, ¡eso es todo! Si buscas los papeles de la elección, el hombre de la casaca carmesí tiene la llave del sótano. ¡Él es quien manda aquí!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  23861 ms · 1 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+  ✓ delta Hombre de la casaca carmesí · npc.knowledge = El hombre de la casaca carmesí tiene la llave del sótano y es quien manda
+  ✓ delta Hombre de la casaca carmesí · npc.knowledge = Melquíades le paga para vigilar que nadie se acerque a los registros del ayuntamiento
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4824: Hombre de la casaca carmesí affinity -100.0 → -100.0  (mid)
+     Cede en el momento, lo guarda.
+  → delta 4825: Hombre de la casaca carmesí.knowledge = El hombre de la casaca carmesí tiene la llave del sótano…
+  → delta 4826: Hombre de la casaca carmesí.knowledge = Melquíades le paga para vigilar que nadie se acerque a l…
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 328 — 239/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 3 hechos conocidos
+  26 entidades · contexto de 774 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3051 ms
+
+> "Bien. Al menos eres útil."
+> Lo suelto bruscamente y busco entre sus ropas cualquier objeto de valor o nota que haya olvidado mencionar.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 6+4=10
+
+### [4] DM
+
+  5873 ms
+
+> El hombre cae al suelo con un golpe seco y sordo, quedando encogido y jadeando mientras se aparta de ti con un gesto instintivo de pavor. Sus ojos, cargados de resentimiento, te siguen con cautela mientras intenta recuperar el aliento, evitando cualquier contacto visual directo.
+> Tus manos recorren rápidamente los pliegues de su vestimenta, pero el tejido es sencillo y no esconde nada fuera de lo común. Solo encuentras unas pocas monedas de cobre sueltas y un trozo de tela desgastada que no tiene valor alguno. No hay notas, ni llaves, ni secretos ocultos entre sus costuras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7348 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 329 — 240/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 3 hechos conocidos
+  26 entidades · contexto de 774 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3257 ms
+
+> "No me hagas perder el tiempo con cobre."
+> Le presiono el cuello con la bota mientras busco en sus botas o bajo su cuerpo cualquier objeto que haya podido soltar al caer.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+1=18
+
+### [4] DM
+
+  6236 ms
+
+> El hombre suelta un gemido ahogado, el aire escapando de sus pulmones mientras la suela de tu bota se hunde en su garganta. Sus manos arañan desesperadamente el suelo, levantando polvo y pequeñas piedras en un intento inútil de liberar la presión.
+> Al desplazar su cuerpo y registrar el espacio inmediato, tus dedos encuentran algo rígido oculto bajo el costado izquierdo del hombre. Es un pequeño estuche de cuero curtido, apenas más grande que una mano, que había quedado atrapado entre su espalda y la tierra. Al abrirlo, revelas un sello de lacre intacto y un pergamino doblado con cuidado, cuya calidad del papel contrasta violentamente con la miseria de las vestiduras del sujeto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7073 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: estuche de cuero curtido
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item estuche de cuero curtido
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 330 — 241/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 3 hechos conocidos
+  27 entidades · contexto de 774 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4605 ms
+
+> "Esto es demasiado elegante para alguien como tú."
+> Sigo presionando la bota para mantenerlo callado mientras guardo el pergamino en mi ropa. Reviso el resto de sus bolsillos y pliegues de su ropa en busca de monedas o joyas.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+1=5
+
+### [4] DM
+
+  5815 ms
+
+> El hombre emite un gorgoteo sordo, sus ojos dilatados fijos en los tuyos mientras el peso de tu bota anula cualquier intento de súplica. El polvo se mezcla con la saliva en el suelo, creando un barro grisáceo bajo su cuello.
+> Tus manos rebuscan con brusquedad entre los pliegues de la casaca carmesí, pero los bolsillos están vacíos. No hay rastro de monedas, ni anillos, ni ninguna joya que justifique la calidad del pergamino que acabas de confiscar; solo quedan algunas fibras deshilachadas y el olor a humedad y miedo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  13339 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 331 — 242/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: alive, aprecio -100.0 (hostile), 3 hechos conocidos
+  27 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3261 ms
+
+> "Qué desperdicio de tela"
+> Sigo registrando el cuerpo, pero ahora busco costuras ocultas o compartimentos secretos en el forro de la casaca.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+1=17
+
+### [4] DM
+
+  5301 ms
+
+> Tus dedos recorren el forro interior con meticulosidad, ignorando los espasmos finales del hombre. Tras un momento de fricción contra la tela, percibes un relieve rígido y estrecho oculto en la costura del hombro izquierdo, un compartimento tan fino que casi se funde con la estructura de la prenda.
+> Con un tirón preciso, extraes un pequeño cilindro de cuero negro, sellado con cera blanca. El objeto es ligero y frío al tacto, ocultando en su interior un mensaje que el hombre de la casaca carmesí protegió hasta su último aliento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  12539 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Hombre de la casaca carmesí · npc.status = dead
+  ✓ creación item: cilindro de cuero negro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cilindro de cuero negro
+  → delta 4832: Hombre de la casaca carmesí.status = dead
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 332 — 243/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 3 hechos conocidos
+  28 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3374 ms
+
+> "Tú no vas a necesitar esto donde vas."
+> Guardo el cilindro en mi propio bolsillo y miro a mi alrededor para asegurarme de que nadie me haya visto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 15+2=17
+
+### [4] DM
+
+  8288 ms
+
+> El callejón permanece sumido en un silencio sepulcral, roto únicamente por el goteo rítmico de una canalía cercana. Las paredes de piedra húmeda y los contenedores de madera podrida no ocultan ninguna silueta; el viento sopla con frialdad, arrastrando el aroma a salitre y basura, pero no hay rastro de testigos ni pasos apresurados acercándose por las bocas de las calles adyacentes.
+> Estás solo con el cadáver del hombre de la casaca carmesí, cuya mirada vacía parece seguirte mientras el cilindro de cuero negro descansa ahora en tu bolsillo. No hay nadie observando desde las ventanas altas de los edificios colindantes, solo la indiferencia de la ciudad gris envolviéndote.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  12213 ms · 0 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = cilindro de cuero negro
+  ✓ delta Hombre de la casaca carmesí · npc.status = dead
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4835: Wynn.inventory = cilindro de cuero negro
+  → delta 4836: Hombre de la casaca carmesí.status = dead
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 333 — 244/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 3 hechos conocidos
+  28 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2229 ms
+
+> "Demasiado fácil."
+> Me arrodillo junto al cuerpo para registrar sus pertenencias en busca de monedas o cualquier objeto de valor.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+1=9
+
+### [4] DM
+
+  7468 ms
+
+> Tus dedos hurgan con rapidez entre los pliegues de la casaca carmesí, pero la tela gruesa y la humedad del callejón dificultan la tarea. Al revisar los bolsillos exteriores y el forro, solo encuentras algunas pelusas y el tacto áspero de una tela desgastada.
+> El cuerpo yace inerte sobre el empedrado, y tras un registro superficial, no emerges con ninguna moneda ni objeto de valor adicional. El silencio del callejón vuelve a cerrarse sobre ti, interrumpido solo por el eco lejano de algún carruaje en la calle principal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1936 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 334 — 245/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 3 hechos conocidos
+  28 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3911 ms
+
+> "Qué desperdicio de tela."
+> Sigo registrando el cuerpo, pero ahora busco específicamente cualquier papel, nota o sello oculto en las costuras o el calzado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+1=9
+
+### [4] DM
+
+  14804 ms
+
+> Tus manos recorren minuciosamente las costuras del cuello y el interior de las botas, apretando la tela y palpando cada centímetro del forro. El tacto es repetitivo y frustrante; el cuero del calzado está endurecido por el uso y los pliegues de la casaca no ocultan más que el polvo del camino y la humedad del ambiente.
+> Tras varios minutos de búsqueda exhaustiva, el cuerpo permanece mudo. No hay sobres ocultos, ni trozos de pergamino cosidos al dobladillo, ni sellos de cera escondidos en el tacón. El hombre de la casaca carmesí no lleva consigo ningún rastro escrito de su identidad o propósito.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1598 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 335 — 246/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 3 hechos conocidos
+  28 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4043 ms
+
+> "Vaya, qué descuido."
+> Me desplazo hacia los bolsillos exteriores y reviso si lleva monedas, joyas o cualquier objeto de valor que pueda aprovechar.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+1=16
+
+### [4] DM
+
+  7387 ms
+
+> Tus dedos se hunden en los bolsillos exteriores, apartando algunas pelusas y restos de hilo. Tras un breve rastreo, tus dedos chocan contra la superficie fría y metálica de una pequeña bolsa de cuero reforzada. Al abrirla, el tintineo del metal revela el contenido: diez piezas de oro y un anillo de plata con una piedra amatista empañada que, aunque modesta, conserva un brillo residual bajo la luz.
+> Además del botín, encuentras un pequeño amuleto de hueso tallado en forma de ojo, colgado de un cordel deshilachado, que parece haber sido olvidado en el fondo del bolsillo. El cuerpo yace ahora inerte y despojado, mientras el silencio del entorno vuelve a cerrarse sobre ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  17001 ms · 0 eventos · 2 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = diez piezas de oro
+  ✓ delta Wynn · character.inventory = anillo de plata con una piedra amatista
+  ✓ creación item: amuleto de hueso tallado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item amuleto de hueso tallado
+  → delta 4855: Wynn.inventory = diez piezas de oro
+  → delta 4856: Wynn.inventory = anillo de plata con una piedra amatista
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 336 — 247/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 3 hechos conocidos
+  29 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2882 ms
+
+> Guardo las monedas y el anillo rápidamente. Tomo el amuleto de hueso y lo examino con cuidado para ver si tiene alguna marca o inscripción.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+1=18
+
+### [4] DM
+
+  7980 ms
+
+> El amuleto de hueso es frío al tacto y presenta una porosidad propia de un resto orgánico antiguo. Al girarlo bajo la luz, descubres que el iris del ojo tallado no es un simple relieve, sino una serie de incisiones microscópicas que forman un patrón concéntrico. En la parte posterior, ocultas por el desgaste del cordel, hay tres runas grabadas con una precisión quirúrgica; aunque el lenguaje es arcano y desconocido, el trazo es firme y deliberado, sugiriendo que la pieza fue creada como una marca de identidad o un sello de pertenencia, más que como un simple adorno.
+> El viento sopla con un silbido tenue, moviendo la ropa del cadáver que yace a tus pies, mientras el silencio del lugar se vuelve denso, casi expectante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1886 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 337 — 248/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 3 hechos conocidos
+  29 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2708 ms
+
+> "Interesante."
+> Guardo el amuleto en mi bolsillo y empiezo a registrar el cadáver minuciosamente en busca de monedas, joyas o cualquier papel con valor.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 10+1=11
+
+### [4] DM
+
+  18751 ms
+
+> Tus dedos recorren las fibras ásperas de la ropa y palpan los pliegues del jubón, pero el cuerpo ha sido despojado de cualquier objeto de valor evidente. No hay monedas tintineando en las bolsas ni joyas ocultas bajo el cuello de la camisa; solo encuentras el frío tacto de la piel y la rigidez de los músculos.
+> Al revisar los bolsillos interiores, tus dedos rozan un trozo de tela húmeda y apelmazada, pero al extraerlo descubres que es simplemente un pañuelo sucio, desgastado por el uso y sin ninguna inscripción ni utilidad aparente. El cadáver no guarda más secretos a simple vista.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1793 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 338 — 249/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 3 hechos conocidos
+  29 entidades · contexto de 394 caracteres
+
+### [2] JUGADOR — Wynn
+
+  5245 ms
+
+> "Vaya desperdicio."
+> Sigo registrando el cuerpo, pero ahora busco cualquier pequeño rastro de tinta, una marca oculta en la piel o una costura falsa en el forro de la ropa.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  17826 ms
+
+> Tus dedos se deslizan con precisión quirúrgica por las costuras del forro, ignorando lo evidente y buscando la anomalía. Al llegar a la zona de la axila izquierda, sientes una irregularidad milimétrica: un hilo de seda, casi invisible, que sujeta una solapa oculta en el doublure del jubón. Al tirar con cuidado, el tejido cede y revela un compartimento secreto, tan estrecho que solo podría albergar algo plano.
+> Dentro descansa un pequeño fragmento de pergamino, doblado en cuatro y sellado con una gota de cera negra sin emblema. Al desplegarlo, notas que el papel está impregnado de un aroma dulzón y penetrante, similar al almizcle rancio. En él, una caligrafía apresurada y nerviosa reza: *"El silencio de los Archiveros tiene un precio, y Melquíades acaba de pagar la primera cuota. No busques el libro en la biblioteca"*.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7787 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: fragmento de pergamino
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → ya existía: item fragmento de pergamino
+
+### [9] ESTADO DESPUÉS
+
+  Hombre de la casaca carmesí: dead, aprecio -100.0 (hostile), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 339 — 250/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2523 ms
+
+> "Interesante..."
+> Guardo el pergamino rápidamente en mi propio bolsillo y vuelvo a cerrar el compartimento del jubón para que parezca intacto. 
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 12+4=16
+
+### [4] DM
+
+  9350 ms
+
+> Tus dedos trabajan con agilidad, devolviendo la solapa de seda a su posición original y tensando el hilo justo lo necesario para que la costura parezca virgen. El tejido del jubón recupera su caída natural, ocultando el secreto bajo el forro sin dejar rastro de la intrusión.
+> El silencio de la estancia permanece imperturbable; no hay un roce de tela ni un suspiro que delate tu movimiento. El jubón vuelve a ser una prenda cualquiera, mientras el pergamino con su aroma a almizcle rancio queda resguardado en tu bolsillo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7278 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = pergamino
+  ✓ creación item: pergamino
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item pergamino
+  → delta 4871: Wynn.inventory = pergamino
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 340 — 251/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  30 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2284 ms
+
+> "Perfecto."
+> Me separo lentamente de la prenda y echo un vistazo rápido a la habitación para asegurarme de que no hay nadie observándome.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+2=18
+
+### [4] DM
+
+  10242 ms
+
+> La habitación permanece sumida en una quietud densa, rota únicamente por el rítmico tic-tac de un reloj de pared y el baile de las motas de polvo en los haces de luz que atraviesan las cortinas. No hay respiraciones ajenas, ni el crujido de una tabla del suelo, ni sombras que se desplacen detrás de los pesados muebles de caoba.
+> Toda la estancia está a la vista: el escritorio desordenado, la cama tendida con rigor y el armario donde reposaba el jubón. Estás completamente solo en el cuarto; nadie ha entrado ni te observa desde los rincones.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1337 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 341 — 252/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  30 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2373 ms
+
+> "Demasiado ordenado para ser real."
+> Me acerro al escritorio y empiezo a revisar los papeles y los cajones en busca de algo valioso o comprometedor.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+1=16
+
+### [4] DM
+
+  11632 ms
+
+> Tus dedos se deslizan sobre el pergamino amarillento y los tinteros secos del escritorio. Tras apartar un montón de correspondencia rutinaria y facturas pagadas, encuentras un doble fondo en el cajón derecho, oculto bajo una fina lámina de madera.
+> Al levantar la tabla, descubres una pequeña libreta encuadernada en cuero negro. Al hojearla, notas que no es un diario personal, sino un registro meticuloso de donaciones recientes para la campaña de Melquíades Sorna; los nombres de los donantes están anotados con una caligrafía apresurada y, junto a varias sumas considerables, hay anotaciones en los márgenes que indican procedencias geográficas ajenas al Valle del Corral.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7221 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: libreta de donaciones
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item libreta de donaciones
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 342 — 253/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  31 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2169 ms
+
+> "Esto es mucho más interesante que unas facturas."
+> Cierro la libreta y la guardo rápidamente entre mis ropas.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 18+4=22
+
+### [4] DM
+
+  59519 ms
+
+> El cuero negro de la libreta desaparece sin dejar rastro bajo la tela de tus ropas, fundiéndose con tu silueta en un movimiento fluido y preciso. El cajón queda vacío y la lámina de madera vuelve a su posición original, encajando con un clic casi imperceptible que se pierde en el silencio de la estancia.
+> El escritorio recupera su apariencia de caos administrativo: el montón de correspondencia rutinaria y las facturas pagadas ocultan ahora el secreto que acabas de sustraer, dejando el espacio exactamente como estaba antes de que tus dedos exploraran el doble fondo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5176 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = libreta de donaciones
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4895: Wynn.inventory = libreta de donaciones
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 343 — 254/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  31 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1955 ms
+
+> "Perfecto."
+> Me alejo del escritorio con calma, asegurándome de que no he dejado ninguna huella ni rastro de mi presencia.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 19+4=23
+
+### [4] DM
+
+  13736 ms
+
+> Tus pasos son sombras que se deslizan sobre el suelo, sin que una sola mota de polvo se agite a tu paso. Te mueves por la estancia con una ligereza sobrenatural, evitando los crujidos de la madera y los ángulos donde la luz podría delatarte, fundiéndote con la penumbra de las esquinas hasta alcanzar la salida.
+> El silencio de la habitación permanece intacto, imperturbable. No hay rastro de que alguien haya perturbado el orden del escritorio o que una presencia ajena haya respirado aquel aire; para cualquiera que entre ahora, la estancia sigue siendo el santuario intacto de la burocracia de Melquíades.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3425 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 344 — 255/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  31 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2085 ms
+
+> Me detengo un instante antes de salir y echo un vistazo rápido al escritorio, buscando algún documento o nota que no parezca pertenecer a la burocracia oficial.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+1=19
+
+### [4] DM
+
+  12303 ms
+
+> Tu mirada escanea la superficie del escritorio, ignorando los legajos sellados y las actas oficiales. Entre una pila de solicitudes de subsidios y un tintero de plata, detectas un pequeño trozo de pergamino doblado, oculto parcialmente bajo el borde de un mapa del Valle del Corral. El papel es de una calidad inferior al resto, ligeramente amarillento y sin el sello oficial de la candidatura.
+> Al desplegarlo con cuidado, lees una nota breve y apresurada: *"El flujo es constante. Los nombres son falsos, pero el oro es real. No preguntes, solo gana"*. No hay firma, solo una pequeña marca de tinta en la esquina inferior, un círculo atravesado por una línea diagonal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8461 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: nota anónima
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item nota anónima
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 345 — 256/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  32 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1941 ms
+
+> "Interesante."
+> Guardo la nota rápidamente en mi bolsillo y miro a mi alrededor para asegurarme de que nadie me ha visto.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 13+4=17
+
+### [4] DM
+
+  10410 ms
+
+> El silencio de la oficina es absoluto, roto únicamente por el rítmico tictac de un reloj de pared y el lejano murmullo de la calle. Te deslizas con la fluidez de una sombra, asegurándote de que el pergamino desaparezca en tu ropa antes de recuperar tu posición original. 
+> No hay nadie en la estancia; las pesadas puertas de roble permanecen cerradas y el pasillo exterior, visible a través de la rendija de la puerta, está vacío. El aire huele a cera vieja y tinta seca, y el escritorio sigue luciendo exactamente igual que hace un momento, con el mapa del Valle del Corral ahora ligeramente desplazado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5333 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = nota anónima
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4911: Wynn.inventory = nota anónima
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 346 — 257/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  32 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2808 ms
+
+> "Demasiado fácil."
+> Me quedo un momento más en la estancia, revisando los cajones del escritorio en busca de cualquier otra nota o moneda que no llame la atención.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+1=15
+
+### [4] DM
+
+  8991 ms
+
+> Tus dedos recorren los bordes de madera gastada y abres los cajones con una lentitud quirúrgica. En el primer compartimento solo encuentras tinteros vacíos y un montón de plumas rotas, pero en el fondo del segundo, oculto bajo un fajo de recibos amarillentos, hallas un pequeño libro de cuentas encuadernado en cuero negro.
+> Al hojearlo rápidamente, notas que no es el libro oficial de la oficina. Contiene una lista de nombres y cifras manuscritas con una caligrafía apresurada, donde varias entradas recientes están marcadas con un signo de interrogación rojo al margen, subrayando cantidades de oro que no coinciden con los registros públicos de donaciones.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  65609 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: libro de cuentas encuadernado en cuero negro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item libro de cuentas encuadernado en cuero negro
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 347 — 258/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  33 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  13445 ms
+
+> "Interesante."
+> Guardo el libro de cuentas entre mis ropas y vuelvo a cerrar el cajón exactamente como estaba.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 18+4=22
+
+### [4] DM
+
+  10531 ms
+
+> El cajón se desliza en su sitio con un susurro casi imperceptible, encajando milimétricamente en la estructura de madera. No queda rastro del desorden previo ni del vacío dejado por el cuaderno; la oficina permanece en ese estado de quietud polvorienta, como si nadie hubiera perturbado el aire en horas.
+> Desde el pasillo, el eco de unos pasos pesados y el tintineo de unas llaves comienzan a acercarse, pero el silencio de la estancia es absoluto. El libro de cuero negro, ahora oculto contra tu cuerpo, se siente frío y pesado, guardando el secreto de los números rojos mientras la puerta comienza a abrirse.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4818 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = libro de cuentas encuadernado en cuero negro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4933: Wynn.inventory = libro de cuentas encuadernado en cuero negro
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 348 — 259/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  33 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  80718 ms
+
+> Me pego a la pared más cercana a la puerta, fundiéndome con las sombras para no ser visto al entrar.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 9+4=13
+
+### [4] DM
+
+  10268 ms
+
+> La puerta se abre con un chirrido seco, dejando entrar una franja de luz amarillenta que corta la penumbra de la oficina. Un hombre de complexión robusta y rostro cansado entra en la estancia, balanceando un manojo de llaves que tintinean con cada paso. Camina con la pesadez de quien ha tenido un día largo, suspirando profundamente mientras deja la vista vagar por la habitación.
+> Se detiene en el centro del despacho, a escasos pasos de donde te encuentras. Entorna los ojos, mirando hacia el escritorio y luego hacia los rincones, pero su mirada pasa de largo, rozando la sombra donde te ocultas sin llegar a enfocarte. Se rasca la barbilla con gesto distraído y comienza a caminar hacia el escritorio para dejar unos papeles sobre la madera.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2371 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 349 — 260/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  33 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  38491 ms
+
+> Me quedo inmóvil, esperando a que se concentre en los papeles para acercarme en silencio y tratar de quitarle las llaves sin que se dé cuenta.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 11+4=15
+
+### [4] DM
+
+  6421 ms
+
+> El hombre deja caer los folios sobre la madera con un golpe sordo y se queda un instante absorto, revisando la primera página con el ceño fruncido. El tintineo de las llaves cesa cuando su mano se apoya en el borde del escritorio, dejando el manojo colgando descuidadamente de sus dedos mientras suspira, ajeno a cualquier presencia a su espalda.
+> Aprovechas el silencio y la distracción del hombre para deslizarte como una sombra. Tus dedos rozan el metal frío y, con un movimiento fluido y preciso, desprendes el manojo de llaves de su agarre sin que él perciba el más mínimo cambio en el aire. El hombre sigue leyendo, imperturbable, mientras el peso del metal ahora descansa en tu mano.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9290 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = manojo de llaves
+  ✓ creación item: manojo de llaves
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item manojo de llaves
+  → delta 4953: Wynn.inventory = manojo de llaves
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 350 — 261/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  34 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1855 ms
+
+> Guardo las llaves rápidamente en mi bolsillo y retrocedo hacia las sombras, evitando hacer ruido.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 9+4=13
+
+### [4] DM
+
+  5955 ms
+
+> El metal choca levemente contra la tela de tu bolsillo mientras te fundes con la penumbra del pasillo. El hombre, aún absorto en la lectura de los folios, pasa la página con un roce seco del papel, sin levantar la vista ni girar el cuello.
+> El silencio vuelve a reinar en la estancia, roto únicamente por la respiración pausada del funcionario y el lejano eco de alguna actividad en el resto del edificio. Él sigue allí, estático, con el ceño fruncido sobre la madera del escritorio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3622 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 351 — 262/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  33 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2352 ms
+
+> Me deslizo en silencio hacia el escritorio, intentando mantenerme fuera de su campo de visión para sustraer los folios que está leyendo.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 3+4=7
+
+### [4] DM
+
+  8519 ms
+
+> El roce de tu bota contra el suelo de piedra produce un chasquido seco que resuena en el pasillo vacío. El funcionario se tensa al instante, la página que sostenía se arruga bajo sus dedos y gira la cabeza con rapidez, clavando la mirada en el punto exacto donde te encuentras.
+> —¿Quién anda ahí? —exclama con voz aguda, retrocediendo instintivamente y pegando el cuerpo al respaldo de su silla mientras abraza los folios contra su pecho, protegiéndolos con fuerza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1355 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 352 — 263/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  33 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2632 ms
+
+> "No soy nadie que quieras conocer, pero sí alguien que puede escucharte."
+> Me mantengo en las sombras, sin revelar mi posición completa, mientras observo cómo sujeta esos papeles.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 2+0=2
+
+### [4] DM
+
+  8674 ms
+
+> El funcionario parpadea repetidamente, su mirada vagando nerviosa por la penumbra del pasillo. El sudor le perla la frente y sus nudillos están blancos de tanto apretar los documentos; se encoge en la silla, tratando de hacerse pequeño mientras su respiración se vuelve errática y superficial.
+> —¿Escucharme? —balbucea, con la voz quebrada—. No sé de qué habla, yo solo estoy cumpliendo mi horario. No hay nada aquí que sea de interés para... para quien sea que esté ahí fuera.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2129 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 353 — 264/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  32 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2638 ms
+
+> "No me interesa tu horario, sino lo que intentas ocultar con ese temblor."
+> Me inclino hacia delante, invadiendo su espacio personal para presionarlo.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 8+2=10
+
+### [4] DM
+
+  10005 ms
+
+> El funcionario retrocede instintivamente, golpeando la espalda contra el respaldo de la silla con un sonido seco. Sus ojos se dilatan mientras intenta alejarse de tu presencia, pero el espacio es reducido y el aire parece volverse más pesado. A pesar de tu presión, el hombre se aferra a los papeles contra su pecho como si fueran un escudo, aunque sus manos no dejan de temblar violentamente.
+> —¡No estoy ocultando nada! —exclama en un hilo de voz, casi en un chillido—. Solo soy un empleado, por los dioses, no me pida que sepa cosas que no me corresponden. No hay nada más, se lo juro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1157 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 354 — 265/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  32 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2690 ms
+
+> "Los empleados que no saben nada suelen ser los más útiles para ocultar secretos."
+> Me inclino más hacia él, reduciendo la distancia hasta que pueda sentir su respiración agitada.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 7+2=9
+
+### [4] DM
+
+  11071 ms
+
+> El funcionario traga saliva con dificultad, pero al ver que tu presión no se traduce en una amenaza inmediata o un golpe, el pánico inicial comienza a transformarse en una resistencia desesperada. Aprieta los documentos contra sus costillas con más fuerza, hundiendo los dedos en el pergamino, y sacude la cabeza con frenesí, cerrando los ojos como si esperara que desaparecieras si dejaba de mirarte.
+> —¡Es la verdad! —grita, aunque esta vez su voz suena más a súplica que a negación—. ¡Si hubiera algo más, ya lo habría soltado para que me dejara en paz! No soy un espía ni un conspirador, solo quiero llegar al final de mi jornada sin que me despidan.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1161 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 355 — 266/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  32 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2651 ms
+
+> "Tu desesperación es convincente, pero el miedo suele ser el mejor motor para la memoria."
+> Sigo presionándolo, acercándome más a su espacio personal para mantener el estrés.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 18+2=20
+
+### [4] DM
+
+  15999 ms
+
+> El funcionario se encoge, sintiendo tu aliento y la proximidad asfixiante de tu presencia. Sus ojos se abren de golpe, dilatados por el terror, y el temblor de sus manos se vuelve incontrolable, haciendo que los pergaminos vibren contra su pecho. El aire parece escapársele de los pulmones en un jadeo corto y agudo mientras comprende que no vas a retroceder.
+> —¡Está bien, está bien! —estalla, colapsando contra la pared trasera mientras suelta los documentos, que caen al suelo con un golpe seco—. No es que hubiera algo más... es que... ¡no me atrevo a decirlo en voz alta! Los donativos de Melquíades... hay algunos que no cuadran. Gente que nunca ha dado un cobre en su vida, desconocidos totales, enviando oro de la nada. Él lo sabe, lo he visto en sus notas, ¡pero no pregunta! Prefiere ignorarlo con tal de ganar. ¡Ya lo he dicho, ahora dejadme en paz!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8103 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+  ✓ delta Hombre de la casaca carmesí · npc.secret_revealed = donativos de Melquíades provenientes de desconocidos
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4963: Hombre de la casaca carmesí affinity 25.0 → 15.0  (mid)
+     Cede en el momento, lo guarda.
+  → delta 4964: Hombre de la casaca carmesí.secret_revealed = donativos de Melquíades provenientes de desconocidos
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 356 — 267/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  32 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2583 ms
+
+> "Me interesa mucho saber quiénes son esos desconocidos."
+> Me agacho con calma para recoger los pergaminos del suelo mientras mantengo la presión sobre él.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+1=2  PIFIA
+
+### [4] DM
+
+  9733 ms
+
+> Al agacharte para recoger los papeles, un movimiento brusco y torpe te hace perder el equilibrio. Tu mano golpea con fuerza el borde de una mesa cercana, provocando que un tintero volcado se derrame justo sobre los pergaminos que el funcionario acababa de soltar. Una mancha de tinta negra y espesa se extiende rápidamente por el papiro, borrando nombres, fechas y cifras en un borrón ilegible que aniquila cualquier posibilidad de leer los registros de los donativos.
+> El funcionario, al verte tropezar, suelta una carcajada nerviosa y aguda, recuperando parte de su aire. Se desliza por la pared hasta quedar sentado en el suelo, mirando con una mezcla de alivio y burla cómo la evidencia se convierte en una masa de manchas oscuras.
+> —Vaya... parece que el destino prefiere que esos nombres sigan siendo un secreto —dice con una sonrisa temblorosa, mientras se abraza las rodillas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4800 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: item.status
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 357 — 268/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  31 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2985 ms
+
+> "Un accidente lamentable."
+> Me quedo agachado, observando la mancha con fingida frustración mientras intento deslizar los dedos por el borde del papiro para ver si algún fragmento quedó intacto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 5+1=6
+
+### [4] DM
+
+  9710 ms
+
+> Tus dedos rozan la superficie húmeda y fría del papiro, pero la tinta se ha extendido con una voracidad implacable. El líquido negro ha empapado las fibras del material, creando un charco viscoso que ha fusionado las hojas entre sí; cualquier intento de rescatar un nombre o una cifra solo consigue arrastrar más manchas sobre las pocas zonas que aún estaban limpias.
+> El funcionario te observa desde el suelo, su risa transformándose en un suspiro de satisfacción. Se apoya en la pared, relajando los hombros mientras contempla el desastre con una mirada casi soñadora.
+> —No te molestes, forastero. Esa tinta es de la buena, la que usan los escribas reales para que nada se borre jamás. Ahora mismo, esos registros son tan útiles como un mapa ciego.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1535 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 358 — 269/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  31 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3228 ms
+
+> "Una lástima. Me gustan las cosas bien escritas."
+> Suelto el papiro con desdén y me acerco al funcionario, fijando mi mirada en él.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 14+2=16
+
+### [4] DM
+
+  6292 ms
+
+> El funcionario, que hace un instante se regodeaba en su pequeña victoria, siente cómo la atmósfera se vuelve pesada. Al notar la proximidad de tu figura y la intensidad de tu mirada, su sonrisa se desvanece lentamente. El respaldo de la pared, que antes parecía un apoyo cómodo, ahora se siente como una trampa que lo mantiene acorralado contra el frío muro de piedra.
+> Traga saliva con dificultad, y un ligero temblor comienza a sacudir sus dedos mientras intenta recuperar la compostura. El aire de superioridad se ha evaporado, dejando paso a una expresión de incertidumbre y miedo.
+> —Yo... yo solo cumplía órdenes, forastero —balbucea, evitando el contacto visual—. No hay necesidad de que esto se vuelva personal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1326 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 359 — 270/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  31 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2171 ms
+
+> "Las órdenes no pagan las cuentas, y mucho menos el silencio."
+> Le sujeto con fuerza la mandíbula para obligarlo a mirarme a los ojos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 5+2=7
+
+### [4] DM
+
+  10213 ms
+
+> El funcionario intenta girar la cabeza, pero el agarre en su mandíbula es insuficiente para doblegar su voluntad por completo. Aunque el hombre palidece y el miedo es evidente en sus ojos dilatados, el pánico no llega a romper su resolución. Se queda rígido, respirando con dificultad a través de la nariz, y aunque sus dientes castañean, mantiene los labios apretados en un gesto de terquedad desesperada.
+> —No... no sé de qué habla —logra articular con voz ahogada y nasal, luchando contra la presión de tus dedos—. No tengo nada que decir que no esté ya en los actas oficiales. ¡Suelteme!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1236 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 360 — 271/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  31 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2730 ms
+
+> "Las actas oficiales son para los idiotas. Tú y yo hablamos de lo que no se escribe."
+> Aprieto el agarre con más fuerza, buscando el punto exacto donde el dolor supere su terquedad.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 19+2=21
+
+### [4] DM
+
+  7083 ms
+
+> El funcionario suelta un gemido ahogado cuando la presión se vuelve insoportable, y sus ojos se llenan de lágrimas que desbordan sus párpados. El muro de terquedad se derrumba de golpe; el miedo ya no es una barrera, sino el motor que lo impulsa a hablar para que el dolor cese. Su cuerpo se desploma parcialmente, quedando sostenido únicamente por la fuerza de tu agarre.
+> —¡Está bien, está bien! ¡Suelteme, por favor! —solloza, con la voz quebrada y desesperada—. Las actas... las actas están limpias, pero hay un libro paralelo. Un registro de "contribuciones especiales" que no pasa por la tesorería. No lo guardo yo, está en la oficina del Archivero, bajo llave. ¡Se lo juro por mi vida, ahí está todo lo que no se escribe!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  11156 ms · 1 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Hombre de la casaca carmesí · threat_made
+  ✓ delta Hombre de la casaca carmesí · npc.knowledge = Existe un libro paralelo de contribuciones especiales en la oficina del Archivero
+  ✓ creación item: libro de contribuciones especiales
+  ⚠ nombres no reconocidos: Archivero
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item libro de contribuciones especiales
+  → delta 4970: Hombre de la casaca carmesí affinity 25.0 → 15.0  (mid)
+     Cede en el momento, lo guarda.
+  → delta 4971: Hombre de la casaca carmesí.knowledge = Existe un libro paralelo de contribuciones especiales en…
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 361 — 272/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  31 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2502 ms
+
+> "Me basta con tu palabra. Por ahora."
+> Suelto al funcionario con un empujón brusco para que caiga al suelo. Me doy la vuelta para dirigirme a la oficina del Archivero.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 8+4=12
+
+### [4] DM
+
+  7567 ms
+
+> El funcionario cae pesadamente sobre las tablas del suelo, soltando un jadeo mientras se encoge sobre sí mismo, temblando y limpiándose las lágrimas con la manga de su casaca. Se queda allí, en silencio, evitando cualquier contacto visual mientras recupera el aliento, reducido a un montón de tela y miedo.
+> Tus pasos se vuelven cautelosos al avanzar por el pasillo hacia la oficina del Archivero. El eco de tus botas se apaga, pero el crujido de una tabla suelta bajo tu peso resuena con una nitidez molesta en el vacío del corredor. Al doblar la esquina, el sonido atrae la atención de un guardia que patrullaba la zona; el hombre se detiene en seco, frunce el ceño y comienza a caminar lentamente hacia tu posición, con la mano apoyada en el pomo de su espada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1393 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Archivero
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 362 — 273/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  31 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2175 ms
+
+> "No deberías estar aquí, soldado."
+> Me pego rápidamente a la pared, intentando desaparecer en las sombras del pasillo antes de que me vea claramente.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  6276 ms
+
+> Te fundes con la penumbra del pasillo con una fluidez casi sobrenatural. El guardia, que ya había empezado a estrechar la mirada buscando el origen del ruido, pasa justo por delante de tu posición sin notar tu presencia; el roce de su capa contra la pared es lo único que delata su proximidad.
+> El hombre se detiene un instante, olfateando el aire con desconfianza y mirando hacia el vacío donde hace un segundo resonó la tabla, pero finalmente sacude la cabeza. Con un resoplido de fastidio, retoma su patrulla en dirección opuesta, alejándose lentamente mientras el rítmico golpeteo de sus botas se pierde en la distancia del corredor.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1025 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 363 — 274/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  30 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2587 ms
+
+> Me quedo inmóvil hasta que el sonido de sus pasos desaparezca por completo. Luego, me deslizo rápidamente hacia el punto donde estaba el guardia para registrar si ha dejado caer algo o si lleva algún objeto accesible.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 18+4=22
+
+### [4] DM
+
+  7562 ms
+
+> Te deslizas como una sombra, sin que el aire mismo parezca notar tu movimiento, hasta alcanzar el punto exacto donde el guardia se había detenido. El suelo de madera cruje bajo el peso del hombre, pero bajo tu tacto permanece mudo y sumiso.
+> Al registrar el área y el espacio inmediato donde el centinela estuvo parado, no encuentras rastros de objetos caídos ni pertenencias olvidadas. El guardia se ha marchado con todo lo que llevaba encima, dejando tras de sí únicamente el eco sordo de sus pasos desapareciendo en la profundidad del pasillo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1073 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 364 — 275/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  30 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3610 ms
+
+> Me quedo inmóvil un instante, escuchando la dirección exacta de los pasos. Una vez que el silencio regresa, busco cualquier marca o señal oculta en las paredes o el suelo que el guardia pudiera haber pasado por alto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+1=4
+
+### [4] DM
+
+  6130 ms
+
+> El silencio se reinstala en el pasillo, denso y cargado de polvo. Te quedas quieto, percibiendo cómo la vibración de las pisadas del guardia se extingue por completo hacia el ala oeste, dejando el corredor sumido en una quietud sepulcral.
+> Pasas los dedos por las molduras de madera y escudriñas las juntas del suelo, pero la superficie es monótona. No hay muescas deliberadas, ni manchas sospechosas, ni ningún rastro que sugiera que alguien haya dejado una marca oculta en este tramo. Las paredes son tan mudas como el aire que te rodea.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1075 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 365 — 276/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  30 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2390 ms
+
+> "Demasiado limpio para ser verdad."
+> Sigo avanzando con cautela hacia el ala oeste, manteniendo el cuerpo pegado a la pared para evitar ser visto.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 16+4=20
+
+### [4] DM
+
+  5705 ms
+
+> Te deslizas por el pasillo como una sombra, fundiéndote con la penumbra de las molduras y el polvo suspendido. Tus pasos no producen el más mínimo crujido sobre la madera vieja; el silencio se convierte en tu aliado mientras avanzas con una fluidez casi sobrenatural hacia el ala oeste.
+> Al doblar la esquina, el corredor se abre en una pequeña zona de descanso donde el guardia que habías escuchado hace un momento se encuentra de espaldas a ti. Está apoyado contra una columna, distraído, tarareando una melodía monótona mientras observa el balanceo de una lámpara de aceite que proyecta sombras erráticas sobre el suelo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1225 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 366 — 277/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  30 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1949 ms
+
+> Me acerco con cautela por detrás, buscando el ángulo más eficiente para neutralizarlo rápidamente antes de que pueda emitir un sonido.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 5+4=9
+
+### [4] DM
+
+  4835 ms
+
+> Tus pasos, que hasta ahora habían sido imperceptibles, traicionan tu avance justo cuando intentas cerrar la distancia. Una tabla del suelo, oculta bajo una alfombra raída, emite un chasquido seco y agudo que resuena en el silencio del pasillo como un disparo.
+> El guardia da un salto, cortando la melodía en seco. Se gira bruscamente hacia tu posición, con la mano instintivamente puesta en el pomo de su espada, mientras sus ojos escudriñan la penumbra con una expresión de alerta y confusión.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1079 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 367 — 278/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  30 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2318 ms
+
+> "No hay nadie aquí, idiota."
+> Me quedo inmóvil en las sombras, tratando de fundirme con la oscuridad para que no me localice.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 2+4=6
+
+### [4] DM
+
+  6107 ms
+
+> El guardia frunce el ceño, desconcertado por la voz que parece emerger de la propia arquitectura del pasillo. Su mirada recorre el espacio con nerviosismo, pero el movimiento brusco de tu cuerpo al intentar fundirte con las sombras es evidente. La luz de las antorchas proyecta tu silueta contra la pared justo cuando el guardia fija la vista en tu posición.
+> —¿Quién anda ahí? —exclama el hombre, desenvainando la espada con un sonido metálico y estridente. Da un paso firme hacia adelante, señalando con la punta del acero el rincón donde te ocultas—. ¡Sal de ahí ahora mismo o te sacaré yo mismo!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1217 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 368 — 279/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2305 ms
+
+> "No hace falta que grites, solo estoy de paso."
+> Me deslizo fuera de las sombras con las manos a la vista pero relajadas, manteniendo una expresión neutra.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 17+4=21
+
+### [4] DM
+
+  8858 ms
+
+> El guardia se queda petrificado, la punta de la espada aún temblando ligeramente en el aire. Al verte emerger con esa calma imperturbable y las manos abiertas, su expresión de agresividad se transforma en una de pura confusión. Parpadea varias veces, procesando la naturalidad de tus palabras, y la tensión de sus hombros cae mientras el acero de la hoja desciende lentamente hacia el suelo.
+> —¿De paso? —repite en un susurro, mirando a su alrededor como si esperara que apareciera una explicación lógica en las paredes—. Por los dioses, casi me das un infarto. No deberías estar aquí, este sector está restringido, pero... —suelta un suspiro largo y baja la guardia por completo—, con esa cara de no romper un plato, supongo que te habrás perdido buscando la salida o el salón principal. Anda, muévete rápido antes de que alguien más te vea y me meta yo en un lío por no haberte detenido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1359 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 369 — 280/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3096 ms
+
+> "Agradezco tu comprensión, buen hombre. Me he desorientado con los pasillos."
+> Sigo caminando con naturalidad, pero mientras paso junto a él, intento notar si lleva alguna llave o pergamino colgando del cinturón.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 14+2=16
+
+### [4] DM
+
+  6543 ms
+
+> El guardia asiente con un gesto distraído, todavía recuperando el aliento, y se hace a un lado para dejarte pasar con una mirada de resignación. Mientras te deslizas junto a él, el roce de tu capa revela el contenido de su cinturón: un juego de tres llaves de hierro oxidado que tintinean suavemente y un pequeño pergamino enrollado, sujeto por un cordel de cuero gastado, que asoma apenas unos centímetros sobre la piel del cuero.
+> El hombre se queda parado en medio del pasillo, observando cómo te alejas mientras murmura algo sobre la incompetencia de los mapas del edificio. El eco de tus pasos comienza a ahogar el sonido de su respiración agitada mientras avanzas hacia la zona iluminada por las antorchas del corredor.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1660 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 370 — 281/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2408 ms
+
+> "Vaya descuido."
+> Sigo caminando mientras intento deslizar la mano hacia el pergamino del guardia para robárselo sin que se dé cuenta.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 19+4=23
+
+### [4] DM
+
+  5137 ms
+
+> Tus dedos se deslizan con una precisión quirúrgica, apenas un roce imperceptible que el guardia, sumido en sus quejas sobre la cartografía del edificio, ni siquiera nota. El pergamino pasa de su cinturón a tu mano en un movimiento fluido y silencioso, como si el papel siempre hubiera pertenecido a tu bolsillo.
+> El hombre sigue murmurando para sí mismo, ajeno al vacío que acaba de quedar en su equipo, mientras tú continúas avanzando por el corredor. El resplandor anaranjado de las antorchas proyecta sombras alargadas sobre las paredes de piedra mientras el sonido de sus quejas se desvanece a tus espaldas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5090 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = pergamino del guardia
+  ✓ creación item: pergamino del guardia
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item pergamino del guardia
+  → delta 4986: Wynn.inventory = pergamino del guardia
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 371 — 282/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2725 ms
+
+> Me alejo con paso tranquilo, sin apresurarme para no levantar sospechas. Una vez que estoy fuera de su vista, me detengo en un rincón oscuro para desplegar el pergamino y estudiarlo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 6+1=7
+
+### [4] DM
+
+  5363 ms
+
+> Te refugias en la penumbra de un nicho, donde el aire huele a polvo antiguo y cera quemada. Despliegas el pergamino con cuidado, pero la tinta parece jugar contigo; los trazos son confusos, llenos de anotaciones marginales y tachaduras que dificultan la lectura.
+> Lo que logras descifrar es un esquema rudimentario del ala este, aunque no consigues ubicar con precisión el punto exacto donde te encuentras ni identificar la importancia de las habitaciones marcadas con símbolos extraños. El mapa es un rompecabezas incompleto que te deja más dudas que certezas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1379 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 372 — 283/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2965 ms
+
+> "Maldita sea, esto es un garabato."
+> Sigo analizando las tachaduras y las anotaciones marginales del pergamino para intentar encontrar un patrón o una clave que me permita orientarme.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+1=8
+
+### [4] DM
+
+  5204 ms
+
+> Pasas los dedos sobre el pergamino, intentando que la lógica emerja del caos de tinta. Te concentras en las tachaduras, buscando una palabra repetida o un código oculto en los márgenes, pero las anotaciones parecen el fruto de una mente errática o apresurada. Cuanto más escudriñas los trazos, más se funden los símbolos entre sí, convirtiéndose en manchas informes que no revelan ninguna clave ni patrón reconocible.
+> El silencio del nicho se siente ahora más pesado, y el mapa sigue siendo un conjunto de líneas confusas que se niegan a darte la orientación que necesitas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1096 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 373 — 284/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2712 ms
+
+> "Maldita sea, escribe bien o no escribas nada."
+> Dejo el pergamino y empiezo a examinar las paredes del nicho buscando cualquier marca, palanca o hueco que no haya visto antes.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+1=2  PIFIA
+
+### [4] DM
+
+  5075 ms
+
+> Te alejas del pergamino con un gesto de frustración y comienzas a palpar las paredes frías y húmedas del nicho. En tu afán por encontrar algún mecanismo oculto o una marca olvidada, presionas con demasiada fuerza una saliente de piedra que parecía sólida. Se escucha un chasquido seco y una pequeña placa de roca se desprende, cayendo pesadamente sobre tu pie.
+> El impacto te provoca un dolor agudo y repentino que te hace tambalear, mientras el fragmento de piedra queda reducido a escombros inútiles en el suelo, sin haber revelado ninguna palanca ni secreto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3891 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.conditions = dolor agudo en el pie
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 4988: Wynn.conditions = dolor agudo en el pie
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 374 — 285/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3489 ms
+
+> "Maldita sea."
+> Siseo entre dientes mientras me apoyo en la pared para liberar el pie y examino la herida. Vuelvo a mirar la zona donde estaba la placa, buscando cualquier rastro de hueco o mecanismo que haya quedado expuesto tras la rotura.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+1=19
+
+### [4] DM
+
+  6458 ms
+
+> El dolor punzante en el pie cede lentamente mientras te enderezas, dejando una sensación de hormigueo y el roce áspero de la piedra contra la piel. Al desplazar la mirada hacia el hueco dejado por la placa rota, el polvo que aún flota en el aire revela algo que antes estaba oculto: no hay un mecanismo complejo, sino una pequeña hendidura rectangular, tallada con precisión quirúrgica en la roca viva.
+> Dentro de ese espacio, parcialmente cubierta por sedimentos, asoma la esquina de una caja de madera oscura, reforzada con bandas de hierro oxidado. El desprendimiento de la piedra no ha activado ninguna trampa, sino que ha dejado al descubierto un compartimento secreto que el tiempo y la humedad habían sellado casi por completo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5502 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ evidencia no literal: «una pequeña hendidura rectangular, tallada con pre»
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 375 — 286/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2458 ms
+
+> "Vaya, vaya... un regalo del destino."
+> Me arrodillo con cuidado y trato de extraer la caja del hueco sin hacer movimientos bruscos.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 13+4=17
+
+### [4] DM
+
+  6721 ms
+
+> Tus dedos se deslizan con precisión entre los sedimentos y la roca fría, tanteando los bordes de la madera oscura para evitar que el hierro oxidado se enganche en las paredes del hueco. Con un movimiento fluido y controlado, logras deslizar la caja hacia afuera, liberándola de la presión de los escombros sin provocar que el resto de la estructura inestable se desplome sobre ti.
+> La caja descansa ahora sobre el suelo de piedra, pesada y fría. El polvo se asienta a su alrededor, revelando que la madera, aunque envejecida, ha resistido sorprendentemente bien la humedad del lugar. No hay cerraduras evidentes a simple vista, pero el hierro de las bandas cruje levemente bajo el peso del objeto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3653 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: item.inventory
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 376 — 287/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2872 ms
+
+> "Veamos qué guardabas aquí."
+> Me inclino sobre la caja y paso los dedos por las juntas de la madera y las bandas de hierro, buscando algún mecanismo oculto o una debilidad en la estructura.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 6+1=7
+
+### [4] DM
+
+  30147 ms
+
+> Recorres las superficies de la caja, sintiendo la aspereza de la madera vieja y el frío del hierro oxidado bajo tus yemas. Tus dedos se deslizan por las juntas y presionas los relieves de las bandas metálicas, pero la estructura se siente sólida y monótona, sin que nada ceda ni se mueva bajo tu tacto.
+> No encuentras ningún botón oculto, ni ranuras sospechosas, ni puntos de debilidad que sugieran un mecanismo secreto. La caja permanece cerrada y muda, resistiendo cualquier intento superficial de descubrir cómo abrirla sin recurrir a la fuerza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1180 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 377 — 288/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3958 ms
+
+> "Vaya pieza más terca."
+> Me aparto un poco para observar la caja desde distintos ángulos, buscando alguna marca de desgaste inusual o una pequeña muesca que indique que ha sido forzada antes.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 10+1=11
+
+### [4] DM
+
+  17597 ms
+
+> Te alejas unos pasos y entornas los ojos, recorriendo cada centímetro de la madera con una mirada analítica. Buscas ese pequeño rastro, una hendidura en la veta o un rasguño en el metal que delate un intento previo de apertura, pero la superficie se presenta imperturbable.
+> El desgaste que observas es uniforme, producto del tiempo y el polvo, sin ninguna marca particular que destaque sobre el resto. La caja sigue siendo un bloque sólido y hermético que no revela ninguna pista visual sobre su funcionamiento o su historia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1074 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 378 — 289/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3924 ms
+
+> "Demasiado limpia para ser honesta."
+> Saco mis herramientas y empiezo a sondear los bordes de la tapa, buscando cualquier mecanismo oculto o resorte que no sea visible a simple vista.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+1=16
+
+### [4] DM
+
+  9604 ms
+
+> El metal frío de las herramientas resbala inicialmente sobre la superficie, pero al presionar con firmeza en la unión posterior de la tapa, sientes un clic seco y casi imperceptible. Un resorte oculto cede, liberando una pequeña pestaña de bronce que se desliza hacia un lado, revelando que la caja no posee una cerradura convencional, sino un sistema de pestillos internos accionados por presión.
+> Con el mecanismo desbloqueado, la tapa se desplaza un milímetro, dejando escapar un aroma a papel viejo y cera selladora. La estructura sigue cerrada, pero la resistencia ha desaparecido; ahora basta un ligero empuje para que el contenido quede al descubierto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1361 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 379 — 290/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2652 ms
+
+> "Interesante."
+> Levanto la tapa con cuidado para ver qué contiene la caja.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 13+1=14
+
+### [4] DM
+
+  9839 ms
+
+> La tapa se desliza con un siseo suave, revelando un interior forrado en terciopelo carmesí, ahora deslucido y cubierto por una fina capa de polvo. En el centro, reposan tres cartas dobladas con precisión, selladas con una cera grisácea que no lleva escudo ni emblema, y un pequeño cuaderno de cuero negro, cuyas páginas amarillentas parecen haberse hinchado por la humedad del tiempo.
+> Al hojear el cuaderno, notas que no es un diario personal, sino un registro meticuloso de nombres, fechas y cantidades de oro, escrito con una caligrafía apresurada y angulosa. Varias entradas recientes están marcadas con un signo de interrogación rojo en el margen, resaltando donaciones anónimas que no coinciden con los registros de los contribuyentes habituales del Valle del Corral.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5077 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: cuaderno de cuero negro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → ya existía: item cuaderno de cuero negro
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 380 — 291/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2660 ms
+
+> "Interesante."
+> Tomo el cuaderno y las cartas, guardándolos rápidamente en mi equipo. Busco en el interior de la caja algún compartimento oculto o fondo falso.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+1=20
+
+### [4] DM
+
+  9560 ms
+
+> Tus dedos recorren el fondo de la caja, presionando el terciopelo gastado y buscando cualquier irregularidad en la madera. Al deslizar la mano por la esquina posterior, sientes un ligero relieve, una hendidura casi imperceptible que cede con un clic seco al ser presionada. Una sección del fondo se eleva un centímetro, revelando un compartimento secreto y estrecho.
+> Dentro del hueco descansa una única llave de hierro, oxidada y fría, atada con un cordel de cáñamo a un trozo de pergamino arrancado. En el papel, una sola frase escrita con la misma caligrafía angulosa del cuaderno: *"Para cuando el silencio sea la única opción"*.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5644 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: llave de hierro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → ya existía: item llave de hierro
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 381 — 292/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2943 ms
+
+> "Interesante."
+> Tomo la llave y el pergamino, guardándolos rápidamente en mi ropa. Vuelvo a cerrar el compartimento secreto para que no sea evidente que ha sido manipulado.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 2+4=6
+
+### [4] DM
+
+  8268 ms
+
+> Al intentar encajar la pieza del fondo, tus dedos resbalan sobre la madera pulida y el panel no desciende del todo. Queda una pequeña abertura, una rendija oscura y evidente que delata que el compartimento ha sido abierto, rompiendo la continuidad del fondo de la caja.
+> El silencio de la habitación se vuelve pesado, y el eco del clic anterior parece resonar todavía en las paredes mientras el secreto de la caja permanece a medio cerrar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3166 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = pergamino del guardia
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5014: Wynn.inventory = pergamino del guardia
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 382 — 293/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  28 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2814 ms
+
+> "Maldita sea."
+> Suelto la caja y trato de forzar el panel hacia abajo con rapidez para cerrar la rendija antes de que alguien entre.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 10+4=14
+
+### [4] DM
+
+  33963 ms
+
+> Tus dedos presionan la madera con urgencia, pero el panel se resiste, encajando de forma torpe y dejando un borde irregular que sobresale apenas unos milímetros. La pieza no encaja con la fluidez necesaria y el sonido de la madera chocando contra el marco resuena en la quietud del cuarto, dejando la caja visiblemente manipulada para cualquiera que sepa dónde mirar.
+> Desde el pasillo, el eco de unos pasos pausados comienza a acercarse, acompañados por el leve roce de una túnica contra el suelo. La puerta de la habitación empieza a abrirse lentamente, dejando entrar una franja de luz amarillenta que corta la penumbra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1151 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 383 — 294/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  28 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3986 ms
+
+> "Maldita sea."
+> Me deslizo rápidamente hacia la sombra más cercana, pegándome a la pared para desaparecer de la vista de quien entra.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 17+4=21
+
+### [4] DM
+
+  7978 ms
+
+> La puerta se abre por completo con un chirrido sordo, revelando la silueta de un hombre de hombros caídos y mirada distraída que sostiene un fajo de pergaminos contra el pecho. El recién llegado camina hacia el centro de la habitación, moviéndose con una lentitud casi ritual, mientras sus ojos recorren el espacio sin detenerse en el rincón oscuro donde te encuentras.
+> Se detiene a escasos pasos de la caja, suspirando con una pesadez que hace vibrar sus mejillas. El hombre se inclina ligeramente para dejar los documentos sobre la mesa, pero al hacerlo, su vista cae sobre el panel de madera mal encajado. Frunce el ceño, ladeando la cabeza con una expresión de genuina confusión, y extiende una mano vacilante hacia el borde irregular de la madera.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1687 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 384 — 295/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  28 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2909 ms
+
+> "Vaya descuido."
+> Salgo rápidamente de las sombras y pongo mi mano sobre la suya, presionando el panel para encajarlo mientras lo miro fijamente.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 7+4=11
+
+### [4] DM
+
+  7955 ms
+
+> El hombre da un respingo violento, soltando un pequeño chillido mientras sus hombros se encogen instintivamente hacia sus orejas. Sus ojos, dilatados por la sorpresa, pasan de la mano que presiona la madera a tu rostro con una rapidez frenética, mientras el fajo de pergaminos que acababa de depositar se desliza unos centímetros sobre la mesa.
+> —¡Por los dioses! —exclama con la voz quebrada y agitada—. No... no sabía que había alguien aquí. Solo estaba revisando los cierres, es que este panel siempre ha sido un problema, pero... ¿quién es usted? ¿Qué hace en este rincón?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1375 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 385 — 296/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  28 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3172 ms
+
+> "No importa quién sea yo. Lo que importa es lo que acabas de dejar sobre la mesa."
+> Mantengo la presión sobre la madera y observo los pergaminos con atención.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+0=8
+
+### [4] DM
+
+  8366 ms
+
+> El hombre retrocede un paso, golpeando accidentalmente el borde de la mesa. Su respiración es errática y sus manos tiemblan ligeramente mientras observa cómo mantienes el control del espacio. El pánico en su rostro se mezcla con una confusión genuina; parece más un funcionario abrumado que un conspirador, aunque la urgencia con la que manejaba esos papeles era evidente.
+> Lanzas una mirada rápida a los pergaminos, pero el desorden de las hojas y la mala iluminación del rincón impiden que distingas cualquier sello, firma o palabra clave. A simple vista, parecen simples registros administrativos o correspondencia rutinaria, sin nada que salte a la vista que confirme la importancia de lo que acaba de depositar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1237 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 386 — 297/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  28 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2886 ms
+
+> "Tranquilo. Solo quiero entender por qué tienes tanta prisa con estos papeles."
+> Le sujeto la muñeca con firmeza para evitar que se aleje y trato de leer los documentos más de cerca.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+1=2  PIFIA
+
+### [4] DM
+
+  7891 ms
+
+> El hombre suelta un gemido ahogado cuando cierras el agarre sobre su muñeca, encogiéndose como un animal acorralado. Al intentar acercar los papeles para leerlos, el movimiento brusco y la falta de equilibrio hacen que tu brazo golpee la pila de pergaminos. Las hojas vuelan por el aire, deslizándose sobre el suelo encerado y hundiéndose en un charco de tinta derramada que ahora mancha irremediablemente el contenido de los documentos.
+> El funcionario se queda petrificado, mirando con horror cómo las letras se difuminan en manchas negras y borrosas. Sus ojos se abren desmesuradamente y comienza a hiperventilar, soltando un sollozo nervioso mientras intenta, torpemente, recoger los papeles ya arruinados del suelo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1619 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 387 — 298/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  28 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3583 ms
+
+> "Vaya torpeza la mía."
+> Suelto su muñeca y me agacho rápidamente para recoger los papeles manchados, intentando rescatar cualquier fragmento de texto que aún sea legible entre la tinta.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+1=13
+
+### [4] DM
+
+  10180 ms
+
+> Tus dedos se deslizan sobre el pergamino húmedo, sintiendo la textura pegajosa de la tinta fresca que se ha extendido como una mancha de aceite. La mayoría de los folios son ahora bloques negros e irreconocibles, pero al levantar uno de los fragmentos, logras rescatar una esquina que ha quedado a salvo del desastre. Entre borrones, alcanzas a leer un nombre propio y una cifra subrayada que parece referirse a un pago mensual, aunque el resto del párrafo se ha disuelto en una mancha oscura.
+> El funcionario, aún sollozando, se lanza al suelo a tu lado, forcejeando contigo por los papeles en un estado de pánico absoluto. Sus manos tiemblan violentamente y, en su desesperación por salvar lo que queda, termina arrugando un par de hojas más, soltando un grito ahogado de frustración mientras se cubre la cara con las manos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1753 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 388 — 299/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  28 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3178 ms
+
+> "Cálmate si no quieres que termine de borrarlo todo."
+> Sujeto el fragmento con el nombre y la cifra lejos de su alcance y trato de identificar el resto de los papeles que aún no están destruidos.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+1=4
+
+### [4] DM
+
+  8795 ms
+
+> El funcionario se queda rígido, con el rostro hundido entre las palmas, sollozando en un silencio tenso. Sus hombros suben y bajan con espasmos irregulares, pero el miedo a perder el resto de la documentación parece haberle impuesto una parálisis momentánea, dejándote espacio para moverte.
+> Tus ojos recorren los restos del desastre, pero la tinta se ha comportado como un virus, devorando los márgenes y fundiendo las letras en charcos negros y brillantes. Cada vez que intentas discernir un encabezado o una fecha en los folios restantes, te encuentras con manchas informes que parecen burlarse de tu esfuerzo. Aparte del fragmento que ya tienes asegurado, el resto de los papeles no son más que basura húmeda y oscura.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1434 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 389 — 300/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  28 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3375 ms
+
+> "Llorar no va a recuperar tus papeles."
+> Ignoro al funcionario y busco entre los escombros de la mesa cualquier otro objeto de valor que no sea papel.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 11+1=12
+
+### [4] DM
+
+  9040 ms
+
+> El funcionario suelta un gemido ahogado, pero no levanta la vista; se mantiene encogido, derrotado por el desastre de tinta que aún gotea desde el borde de la mesa. El silencio de la estancia solo es interrumpido por sus sollozos rítmicos y el chasquido sordo de los papeles húmedos al ser apartados.
+> Tus dedos rebuscan entre el lodo negro y los folios inservibles, palpando la superficie de madera fría. Tras remover varios cúmulos de pergamino fundido, tus dedos chocan con algo rígido y metálico que ha quedado atrapado bajo una pila de documentos. Es un sello de lacre de bronce, con un grabado desgastado que representa una balanza equilibrada, aún manchado de tinta pero intacto en su estructura.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5031 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: sello de lacre de bronce
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item sello de lacre de bronce
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 390 — 301/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2737 ms
+
+> "Llorar no limpiará el desastre."
+> Sigo hurgando entre los papeles manchados buscando cualquier otro objeto de valor o documento que haya sobrevivido a la tinta.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+1=5
+
+### [4] DM
+
+  6510 ms
+
+> El funcionario se tensa ante tus palabras, pero no deja de sollozar, hundiendo el rostro entre los brazos mientras el olor acre de la tinta fresca inunda la habitación. Sus hombros tiemblan, pero permanece inmóvil, sumido en una parálisis de desesperación y vergüenza.
+> Tus manos continúan rastreando la superficie, pero el desorden es absoluto. Cada vez que intentas separar un folio, el papel se deshace en tus dedos o se pega a otro en una masa oscura y pegajosa. No encuentras nada más que pergaminos convertidos en manchas negras y el frío tacto de la madera empapada; el resto de los documentos han quedado irremediablemente fundidos en un bloque de tinta inservible.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1258 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 391 — 302/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3261 ms
+
+> "Llorar no va a limpiar este desastre."
+> Dejo de hurgar en el papel y me acerco al funcionario, observando su postura y sus reacciones mientras hablo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+0=10
+
+### [4] DM
+
+  9024 ms
+
+> El funcionario no levanta la cabeza al escuchar tus palabras; solo emite un gemido ahogado que vibra contra la madera del escritorio. Sus dedos se aferran con fuerza a sus propias mangas, arrugando la tela en un gesto instintivo de protección, mientras el llanto se transforma en una respiración errática y superficial.
+> A pesar de su evidente angustia, no hay señales de que oculte algo más allá de su propia torpeza o miedo. Su postura es la de alguien completamente derrotado por las circunstancias, una masa de hombros encogidos y temblores que denotan una desesperación genuina ante la magnitud del desastre que lo rodea.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1143 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 392 — 303/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  28 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3272 ms
+
+> "Llorar no va a arreglar los libros, ni te va a salvar de quien venga a cobrarse el error."
+> Me inclino sobre el escritorio para observar los documentos que tiene delante mientras él está distraído con su crisis.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+1=17
+
+### [4] DM
+
+  12025 ms
+
+> El funcionario se encoge aún más, sollozando con un hipo violento que sacude sus hombros, totalmente absorto en su miseria. Aprovechando su ceguera emocional, tus ojos recorren los pergaminos extendidos sobre la madera manchada de tinta. Entre el caos de tachaduras y sumas erróneas, destaca un libro de cuentas con el lomo desgastado donde las cifras no cuadran: hay entradas de oro considerables que no tienen un remitente claro, registradas simplemente como "donaciones anónimas", pero que coinciden sospechosamente con las fechas de los últimos suministros enviados a la campaña de Melquíades Sorna.
+> A un lado, un pliego de papel amarillento muestra una lista de nombres tachados con una caligrafía nerviosa. Al observar los márgenes, notas que varias de esas personas pertenecen a gremios que tradicionalmente jamás habrían apoyado a un candidato como Sorna, sugiriendo que alguien ha estado moviendo hilos —o dinero— para inflar artificialmente el respaldo popular del candidato.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1556 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 393 — 304/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  28 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4553 ms
+
+> "Sigue llorando, no me molestas."
+> Ignoro al funcionario y deslizo el libro de cuentas y el pliego de papel amarillento hacia mi manga.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 5+4=9
+
+### [4] DM
+
+  8933 ms
+
+> El funcionario lanza un gemido ahogado y se cubre la cara con las manos, hundiendo el rostro en el espacio vacío de la mesa mientras sus sollozos llenan la estancia. Sus hombros suben y bajan en un ritmo errático, totalmente ajeno a cualquier movimiento que no sea el de su propio dolor.
+> Al intentar deslizar los documentos hacia la manga, el libro de cuentas, más voluminoso de lo que parecía, se engancha en el borde de la madera manchada. El roce produce un sonido seco y un leve desplazamiento de otros pergaminos cercanos que hacen un ruido metálico al deslizarse. El funcionario se tensa ligeramente, pero no levanta la vista, continuando con su hipo violento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1498 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 394 — 305/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  28 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2540 ms
+
+> "Shhh... tranquilo."
+> Me quedo inmóvil un segundo para evaluar su reacción y luego intento recuperar el libro con cuidado, evitando mover los pergaminos.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 5+4=9
+
+### [4] DM
+
+  7073 ms
+
+> El funcionario suelta un suspiro tembloroso, pero no se aparta ni deja de llorar, sumido en su propio colapso emocional. El silencio de la estancia solo es roto por sus sollozos ahogados y el lejano eco de algún ruido en el pasillo.
+> Al intentar recuperar el libro, tus dedos rozan la cubierta de cuero, pero el volumen se resiste. En el movimiento, el libro se desliza hacia el lado opuesto, empujando accidentalmente los pergaminos cercanos. Estos se desplazan con un ruido metálico y seco sobre la madera, haciendo que el funcionario se sobresalte y deje escapar un gemido de sorpresa, aunque mantiene el rostro oculto entre las manos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1188 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 395 — 306/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  28 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4049 ms
+
+> "Deja de hacer ruido y quítate de en medio."
+> Aprovecho su distracción para intentar agarrar el libro con firmeza y, al mismo tiempo, echar un vistazo rápido a los pergaminos que se han movido para ver si hay algo más valioso.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  10186 ms
+
+> Tus dedos se cierran sobre el cuero del libro con una precisión quirúrgica, atrapándolo antes de que pueda deslizarse un milímetro más. El movimiento es tan fluido y rápido que el funcionario, aún sumido en su espasmo de llanto, ni siquiera percibe que el objeto ha abandonado la mesa.
+> Mientras aseguras el volumen, tu mirada escanea los pergaminos desplazados. Entre el caos de papeles, destaca un sobre de papel grueso sellado con cera roja y un pequeño mapa manuscrito que ha quedado parcialmente al descubierto; los trazos indican una ruta hacia los límites del Valle del Corral, con una marca circular resaltada en tinta negra que no coincide con ninguna oficina administrativa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7715 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = acta oficial de los Archiveros
+  ✓ creación item: mapa manuscrito
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item mapa manuscrito
+  → delta 5044: Wynn.inventory = acta oficial de los Archiveros
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 396 — 307/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2256 ms
+
+> "Qué descuido tan lamentable."
+> Guardo el libro rápidamente y deslizo el sobre y el mapa bajo mi ropa.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 9+4=13
+
+### [4] DM
+
+  6528 ms
+
+> El funcionario sigue sollozando, con los hombros sacudidos por el llanto y la mirada perdida en el vacío de su propia desgracia. Sus dedos arañan la madera de la mesa en un gesto errático, pero sus sentidos están completamente embotados por la crisis emocional.
+> El roce del papel grueso y el cuero contra tu piel es casi imperceptible mientras los ocultas bajo tu ropa. El hombre lanza un suspiro lastimero y se cubre el rostro con las manos, dejando la mesa despejada de los secretos que hace un instante descansaban sobre ella.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9582 ms · 0 eventos · 3 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = acta oficial de los Archiveros
+  ✓ delta Wynn · character.inventory = nota anónima
+  ✓ delta Wynn · character.inventory = mapa manuscrito
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5051: Wynn.inventory = acta oficial de los Archiveros
+  → delta 5052: Wynn.inventory = nota anónima
+  → delta 5053: Wynn.inventory = mapa manuscrito
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 397 — 308/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  29 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3673 ms
+
+> "Lamento mucho su pérdida. De verdad."
+> Me acerco a él y pongo una mano en su hombro, fingiendo consuelo mientras busco con la otra mano cualquier otro objeto de valor o documento pequeño que haya pasado por alto sobre la mesa.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  6526 ms
+
+> El funcionario ni siquiera se inmuta ante el contacto de tu mano en su hombro, sumido en un mar de sollozos que ahogan cualquier ruido en la estancia. Mientras finges empatía, tus dedos se mueven con una precisión quirúrgica y una velocidad invisible, barriendo la superficie de la madera como una sombra.
+> Además de los papeles que ya has asegurado, tus dedos encuentran un pequeño sello de lacre de plata, grabado con un blasón que no habías visto antes, y una llave de hierro pequeña y oxidada que estaba medio oculta bajo el borde de un tintero seco. Ambos objetos desaparecen en tu ropa sin que el hombre deje de cubrirse el rostro con las manos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9653 ms · 0 eventos · 2 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = sello de lacre de plata
+  ✓ delta Wynn · character.inventory = llave de hierro pequeña y oxidada
+  ✓ creación item: sello de lacre de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item sello de lacre de plata
+  → delta 5061: Wynn.inventory = sello de lacre de plata
+  → delta 5062: Wynn.inventory = llave de hierro pequeña y oxidada
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 398 — 309/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  30 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4714 ms
+
+> "Lamento mucho su pérdida. No se preocupe, yo me encargaré de que todo quede en orden."
+> Sigo manteniendo la mano en su hombro para distraerlo mientras retrocedo lentamente hacia la puerta, observando si hay algún cajón abierto o algún rincón del escritorio que haya pasado por alto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 3+2=5
+
+### [4] DM
+
+  8621 ms
+
+> El funcionario suelta un gemido ahogado, asintiendo débilmente mientras se deja llevar por la corriente de su propia angustia. Sus hombros tiemblan bajo tu mano, y el sonido de sus sollozos llena el espacio, creando una barrera de ruido que oculta el roce de tus pasos al retroceder.
+> Tus ojos recorren la superficie del escritorio mientras te alejas, pero la vista se vuelve borrosa entre el desorden de tinteros vacíos, manchas de cera y pilas de pergaminos amarillentos que parecen fundirse unos con otros. No distingues ninguna abertura sospechosa ni ningún objeto que haya escapado a tu primer barrido; el caos del despacho se vuelve un muro indistinguible de madera y papel.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1484 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 399 — 310/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  30 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2605 ms
+
+> "Siga llorando. Así nadie lo oirá."
+> Aprovecho que el funcionario está distraído por su propio llanto para registrar los cajones del escritorio rápidamente.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 9+1=10
+
+### [4] DM
+
+  7121 ms
+
+> El funcionario ni siquiera levanta la vista; se hunde en su propia miseria, sollozando con una intensidad que sacude todo su torso. El sonido es rítmico y ensordecedor en la pequeña estancia, dándote una ventana de tiempo donde el mundo exterior parece haber dejado de existir.
+> Deslizas los cajones con rapidez, pero la organización del escritorio es un desastre absoluto. Encuentras sobres abiertos, recibos de suministros de oficina y una maraña de notas adhesivas que se pegan a tus dedos, pero nada que destaque o parezca fuera de lugar. Entre el desorden de papeles mal apilados y el polvo acumulado en los rincones de la madera, no logras localizar ningún compartimento oculto ni ningún documento de valor.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2093 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 400 — 311/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  30 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2960 ms
+
+> "Llora todo lo que quieras, no te servirá de nada."
+> Ignoro los papeles y busco el fondo del escritorio o las patas del mueble, buscando algún relieve extraño o una palanca.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 5+1=6
+
+### [4] DM
+
+  8139 ms
+
+> Tus dedos recorren la madera rugosa, palpando las juntas del mueble y deslizando la mano por debajo de la superficie hasta rozar el polvo y las telarañas de las patas. No encuentras ninguna muesca, ningún resorte oculto ni ninguna irregularidad que sugiera la existencia de un mecanismo secreto. Solo hay madera vieja, barniz descascarillado y la sensación de un mueble que ha sido descuidado durante años.
+> El funcionario suelta un gemido ahogado, enterrando la cara entre los brazos mientras sus hombros siguen sacudiéndose violentamente. Sus sollozos llenan el vacío de la habitación, ignorando por completo tu presencia y tus palabras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1317 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 401 — 312/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  30 entidades · contexto de 701 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2824 ms
+
+> "Ya basta de teatro. Dime qué es lo que realmente escondes aquí."
+> Me acerco al funcionario y le sujeto el brazo con fuerza para obligarlo a mirarme.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 3+2=5
+
+### [4] DM
+
+  7295 ms
+
+> El funcionario se encoge bajo tu agarre, pero el contacto físico solo parece intensificar su crisis. Al intentar obligarlo a mirarte, el hombre se retuerce con un espasmo, sollozando con más fuerza y cerrando los ojos con fuerza, como si el simple hecho de verte fuera insoportable.
+> —¡No puedo! ¡No puedo decir nada! —grita entre hipos, encogiéndose en una bola mientras intenta zafarse de tu mano con movimientos torpes y desesperados—. ¡Me matarán! ¡Por favor, suélteme, no sé nada que valga el riesgo!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3677 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Melquíades Sorna · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5076: Melquíades Sorna affinity 25.0 → 15.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 402 — 313/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  30 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3830 ms
+
+> "No me importa quién te mate, sino cuánto me pagarían por dejar que lo hagan."
+> Lo suelto bruscamente y busco entre sus ropajes o en el escritorio algún papel o sello que pueda ser útil.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+1=4
+
+### [4] DM
+
+  6502 ms
+
+> El funcionario cae hacia atrás con un golpe seco, quedando reducido a un ovillo de sollozos y temblores sobre el suelo, sin atreverse siquiera a abrir los ojos mientras se abraza a sí mismo. El silencio que sigue a tu amenaza es denso, solo roto por el hipido errático del hombre.
+> Tus manos recorren la superficie del escritorio y los pliegues de las vestiduras del funcionario con prisa, pero el desorden es absoluto. Entre manchas de tinta seca, migas de pan y papeles amarillentos que parecen no tener sentido, no logras localizar ningún documento relevante, sello oficial ni pista que no sea ruido administrativo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1445 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 403 — 314/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  30 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3335 ms
+
+> "Llora todo lo que quieras, pero no me hagas perder el tiempo."
+> Ignoro los papeles y busco en los cajones del escritorio o en algún compartimento oculto que el desorden intente tapar.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+1=20
+
+### [4] DM
+
+  10897 ms
+
+> Tus dedos se hunden en el caos de los cajones, apartando con brusquedad carpetas vacías y restos de cera. Bajo una montaña de formularios duplicados y un tintero volcado, percibes una irregularidad en el fondo de madera del cajón derecho. Un leve rastro de desgaste en la veta revela que el panel inferior es móvil; un empujón seco libera un resorte oxidado que desplaza una pequeña tabla.
+> En el hueco secreto, lejos del ruido administrativo, descansa un sobre de cuero grueso sellado con una cera roja anodina. Junto a él, una lista manuscrita con nombres y cifras exactas, escrita con una caligrafía meticulosa que contrasta con el desorden del resto de la oficina. El funcionario en el suelo suelta un gemido ahogado, encogiéndose aún más al escuchar el chasquido de la madera.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4450 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: sobre de cuero grueso
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item sobre de cuero grueso
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 404 — 315/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3575 ms
+
+> "Quédate quieto si no quieres que el siguiente ruido sea tu cuello."
+> Tomo el sobre y la lista rápidamente, guardándolos en mi ropa. Luego, me acerco al funcionario para registrarlo en busca de más objetos de valor.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+1=16
+
+### [4] DM
+
+  7089 ms
+
+> El funcionario contiene la respiración, temblando violentamente mientras se presiona contra el suelo, evitando cualquier movimiento que pueda provocar una reacción agresiva. Sus ojos, dilatados por el pánico, siguen cada uno de tus gestos con una sumisión absoluta, reduciendo su presencia a un amasijo de ropa arrugada y jadeos cortos.
+> Tus manos recorren con eficiencia los bolsillos y pliegues de su atuendo. Bajo el forro de su chaqueta, encuentras una pequeña bolsa de cuero que contiene doce piezas de plata y una llave de hierro sencilla, con una etiqueta de madera que reza: *«Sótano B»*. No hay más objetos de valor, solo un pañuelo manchado de tinta y el eco del miedo en el silencio de la oficina.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  10116 ms · 0 eventos · 2 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = sobre de cuero grueso
+  ✓ delta Wynn · character.inventory = doce piezas de plata
+  ✗ evidencia no literal: «una llave de hierro sencilla, con una etiqueta de »
+  ⚠ nombres no reconocidos: Sótano
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5091: Wynn.inventory = sobre de cuero grueso
+  → delta 5092: Wynn.inventory = doce piezas de plata
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 405 — 316/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2421 ms
+
+> "No te muevas si quieres seguir respirando."
+> Guardo la bolsa y la llave rápidamente. Empiezo a registrar el resto de la oficina buscando papeles o registros que no deberían estar a la vista.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+1=17
+
+### [4] DM
+
+  7032 ms
+
+> El funcionario se queda petrificado, con el rostro pegado al suelo y los ojos fijos en la madera, conteniendo el aliento hasta que sus mejillas adquieren un tono violáceo. No emite ni un sonido, aceptando la amenaza con una rigidez casi cadavérica mientras guardas el botín.
+> Tus ojos escanean la oficina y, tras apartar unos libros de contabilidad rutinarios y un tintero volcado, detectas un doble fondo en el cajón inferior del escritorio. Al deslizar un panel oculto, emerges un fajo de pergaminos mal enrollados. Son registros de donaciones recientes para la campaña de Melquíades Sorna; los nombres de los donantes están anotados con una caligrafía apresurada y, extrañamente, varios de ellos coinciden con identidades de personas que figuran en los archivos locales como fallecidas hace años.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5934 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: registros de donaciones de Melquíades
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item registros de donaciones de Melquíades
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 406 — 317/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1862 ms
+
+> "Esto tiene mucho más valor que unas cuantas monedas."
+> Recojo los pergaminos con cuidado y los oculto entre mis ropas. {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+1=18
+
+### [4] DM
+
+  6547 ms
+
+> Al analizar los pergaminos con detenimiento, notas que las fechas de las donaciones son recientes, pero las firmas son calcos exactos de registros antiguos. No son falsificaciones descuidadas; alguien ha copiado la caligrafía de los difuntos con una precisión obsesiva, utilizando tintas que imitan el paso del tiempo en algunas secciones, aunque el papel sea nuevo.
+> Entre los nombres, resalta una recurrencia: varias de las sumas más cuantiosas provienen de ciudadanos que pertenecieron al mismo gremio de comerciantes, todos fallecidos en una epidemia de hace una década. Hay un patrón en los montos que sugiere que el dinero no fluye de cuentas bancarias, sino de un fondo común que alguien está vaciando en nombre de los muertos para inflar la candidatura de Sorna.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4216 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = registros de donaciones de Melquíades
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5097: Wynn.inventory = registros de donaciones de Melquíades
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 407 — 318/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2562 ms
+
+> "Interesante. Alguien está vaciando el bolsillo de los muertos."
+> Busco entre los pergaminos algún nombre específico o una firma que se repita más que las demás, buscando al responsable de los calcos.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 9+1=10
+
+### [4] DM
+
+  7548 ms
+
+> Pasas los dedos sobre el pergamino, comparando los trazos y buscando esa pequeña imperfección, el tic nervioso de un copista o una firma recurrente que delate al autor. Sin embargo, la precisión es inquietante; cada firma parece haber sido ejecutada con un rigor mecánico, sin que un solo nombre sobresalga como el responsable de la gestión o el remitente real de los fondos.
+> Los documentos se limitan a listar los nombres de los difuntos y las cantidades, sin dejar rastro de quién haya procesado los depósitos o firmado los formularios de entrega. El patrón del gremio de comerciantes sigue siendo la única pista sólida, pero el nombre del artífice permanece oculto tras una cortina de caligrafía perfecta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1368 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 408 — 319/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2492 ms
+
+> "Demasiado perfecto para ser humano."
+> Busco cualquier rastro de tinta diferente o marcas de agua ocultas en el papel que no se vean a simple vista.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+1=20
+
+### [4] DM
+
+  11096 ms
+
+> Sostienes el pergamino contra la luz, inclinando la hoja para que el resplandor del sol revele lo que el ojo descuidado ignora. Bajo la superficie, en el corazón mismo de la fibra del papel, emerge una marca de agua casi imperceptible: un ojo cerrado, rodeado por una corona de espinas entrelazadas que forman un círculo perfecto. No es el sello de una papelería común ni el distintivo de un gremio comercial; es una marca de propiedad, un sello de autenticidad que solo alguien con acceso a suministros restringidos podría poseer.
+> Al observar la tinta con detenimiento, notas que, aunque el color es uniforme, la densidad varía mínimamente. Hay una ligera diferencia de brillo en algunas letras, como si el documento hubiera sido redactado con una tinta que reacciona al calor o a la luz, sugiriendo que el autor no solo buscaba la perfección, sino también una capa de seguridad oculta para quienes supieran dónde mirar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1352 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 409 — 320/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2425 ms
+
+> "Interesante."
+> Guardo el pergamino con cuidado y busco algún objeto cercano que pueda generar calor para comprobar si la tinta revela más secretos.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+1=8
+
+### [4] DM
+
+  5733 ms
+
+> Revisas los alrededores en busca de alguna fuente de calor, pero el entorno se muestra esquivo. No hay ninguna chimenea encendida, ni velas humeantes, ni siquiera un brasero que desprenda el calor suficiente para alterar la química de la tinta sin riesgo de prender fuego al papel.
+> Tus dedos palpan superficies frías y objetos inertes que no ofrecen la temperatura necesaria. El pergamino permanece guardado, manteniendo sus secretos ocultos bajo la superficie del papel, mientras el sol sigue iluminando la escena sin proporcionar la intensidad térmica que buscas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1425 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 410 — 321/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2427 ms
+
+> "Maldita sea."
+> Guardo el pergamino y busco en el lugar algún objeto metálico o superficie que haya estado expuesta al sol y pueda haber acumulado calor.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+1=16
+
+### [4] DM
+
+  8902 ms
+
+> Tus dedos recorren el mobiliario y los ornamentos de la estancia, descartando la madera fría y las telas inertes. Tras un momento de búsqueda, tu mano encuentra una pesada bandeja de plata que descansa sobre una mesa auxiliar, justo donde un haz de luz solar incide con fuerza a través del ventanal. El metal ha absorbido el calor del mediodía y, aunque no es una llama, la superficie está sorprendentemente caliente al tacto.
+> Alrededor de la bandeja, el resto de la habitación permanece en un silencio sepulcral, interrumpido solo por el leve zumbido de algún insecto que choca contra el cristal. La plata brilla con un fulgor cegador, ofreciendo el primer punto de calor tangible en todo el lugar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2858 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: bandeja de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item bandeja de plata
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 411 — 322/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2049 ms
+
+> Tomo la bandeja de plata con cuidado para no quemarme.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  7573 ms
+
+> Tus dedos se cierran sobre el borde de la plata, equilibrando el peso del metal mientras evitas el centro ardiente. Al levantar la bandeja, el movimiento revela algo que el brillo cegador ocultaba: una serie de marcas grabadas en el reverso, ocultas bajo una fina capa de pátina oscura. No son adornos, sino inscripciones precisas y antiguas que forman un mapa esquemático de la estancia, con una marca circular resaltada justo debajo de donde se encuentra la mesa auxiliar.
+> Al observar la superficie con detenimiento, notas que el calor no es producto del sol, sino que emana de un pequeño compartimento oculto en el centro de la bandeja. Un mecanismo de presión, casi invisible, ha dejado un rastro de ceniza fina sobre el metal, sugiriendo que el objeto ha servido recientemente para incinerar algo pequeño y rápidamente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2813 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = bandeja de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5111: Wynn.inventory = bandeja de plata
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 412 — 323/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2016 ms
+
+> "Interesante..."
+> Sigo observando las marcas del reverso mientras me desplazo hacia la mesa auxiliar para examinar el suelo justo debajo, buscando cualquier mecanismo o hueco.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+1=15
+
+### [4] DM
+
+  9946 ms
+
+> Te inclinas sobre el suelo, apartando el polvo acumulado bajo la mesa auxiliar. El tacto de la madera vieja y el frío del mármol ceden ante una pequeña hendidura rectangular, apenas perceptible, que coincide exactamente con la marca circular del mapa de plata. Al presionar el borde del hueco, un clic seco resuena en la estancia y una losa de piedra se desliza unos centímetros, revelando un espacio estrecho donde reposa un pequeño cilindro de cuero negro, cerrado con un sello de cera roja aún intacto.
+> El silencio de la habitación se siente ahora más denso, interrumpido únicamente por el siseo del calor que aún emana de la bandeja en tu mano. El compartimento oculto bajo la mesa no parece haber sido abierto en mucho tiempo; el polvo que lo sellaba era espeso y uniforme, hasta que tus dedos lo perturbaron.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4086 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: cilindro de cuero negro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → ya existía: item cilindro de cuero negro
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 413 — 324/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2104 ms
+
+> Tomo el cilindro de cuero y lo guardo rápidamente en mi ropa. Antes de salir, busco cualquier otra marca o hueco similar en el mobiliario cercano.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+1=2  PIFIA
+
+### [4] DM
+
+  8868 ms
+
+> Tus dedos se cierran sobre el cuero frío y el cilindro desaparece rápidamente entre los pliegues de tu ropa. Con el corazón latiendo con fuerza, comienzas a palpar el resto del mobiliario, deslizando las manos por los bordes de las estanterías y las molduras de la mesa, obsesionado con la idea de que haya más secretos ocultos en la estancia.
+> En tu premura y nerviosismo, apoyas el peso del cuerpo con demasiada brusquedad sobre una pequeña mesa de soporte que sostiene un jarrón de cerámica. La madera, carcomida por el tiempo y la humedad, cede con un crujido violento. El jarrón se inclina y cae al suelo, estallando en una docena de fragmentos cerámicos que resuenan con un estruendo metálico en el silencio sepulcral de la habitación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6140 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = cilindro de cuero
+  ✓ creación item: cilindro de cuero
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cilindro de cuero
+  → delta 5121: Wynn.inventory = cilindro de cuero
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 414 — 325/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  33 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2911 ms
+
+> Me quedo congelado un instante, escuchando el eco del estruendo. Rápidamente, me agacho para evaluar los fragmentos y buscar cualquier cosa que haya caído del jarrón.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 11+2=13
+
+### [4] DM
+
+  6778 ms
+
+> Te desplomas sobre el suelo, el corazón martilleando contra tus costillas mientras el eco del impacto aún vibra en las paredes. Entre los trozos de cerámica blanca y el polvo que se levanta, escudriñas los restos del jarrón. No hay pergaminos ocultos ni joyas escondidas en su interior; solo quedan los fragmentos afilados del recipiente y un puñado de tierra seca y oscura que se ha desparramado por la madera crujiente del suelo.
+> El silencio vuelve a reinar en la estancia, pero ahora se siente pesado, cargado de la certeza de que el ruido ha sido lo suficientemente fuerte como para alertar a cualquiera que se encuentre en los pasillos cercanos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1189 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 415 — 326/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  33 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2207 ms
+
+> "Maldita sea."
+> Me levanto rápidamente y recojo un puñado de esa tierra oscura, guardándola en un bolsillo mientras busco un lugar donde ocultarme antes de que alguien llegue.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 5+4=9
+
+### [4] DM
+
+  8587 ms
+
+> Te incorporas con torpeza, sintiendo la aspereza de la tierra húmeda contra tus dedos mientras la deslizas en el bolsillo. El pánico te empuja a buscar refugio, pero tus movimientos son erráticos y ruidosos; el roce de tu ropa contra los muebles y el pisoteo sobre los fragmentos de cerámica suenan como disparos en el silencio sepulcral de la casa.
+> Apenas logras agacharte detrás de una pesada cortina de terciopelo cuando el eco de unos pasos apresurados resuena en el pasillo. La puerta se abre de golpe y un hombre de aspecto pulcro, con una túnica que denota cierta posición, asoma la cabeza en la estancia, mirando con desconcierto los restos del jarrón esparcidos por el suelo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2929 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = tierra oscura
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5127: Wynn.inventory = tierra oscura
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 416 — 327/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  33 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2318 ms
+
+> "Maldita sea."
+> Me pego a la pared, conteniendo la respiración y buscando con la mirada cualquier objeto valioso que haya quedado a mi alcance tras la cortina.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 10+4=14
+
+### [4] DM
+
+  7414 ms
+
+> El hombre da un paso hacia el interior de la habitación, con la mirada fija en los fragmentos de cerámica. Frunce el ceño y deja escapar un suspiro de fastidio, pero sus ojos no logran atravesar el pesado pliegue del terciopelo donde te encuentras oculto. Se queda unos instantes en silencio, escuchando el vacío de la estancia, mientras el polvo baila en los haces de luz que filtran las ventanas.
+> A tus pies, medio oculta por la sombra de la tela y el borde de un mueble de caoba, brilla una pequeña caja de madera lacada con incrustaciones de nácar. El hombre comienza a caminar lentamente hacia el centro del cuarto, alejándose de tu posición, aunque sigue murmurando para sí mismo con un tono de irritación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4242 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: caja de madera lacada con incrustaciones de nácar
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item caja de madera lacada con incrustaciones de nácar
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 417 — 328/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  33 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1879 ms
+
+> Me deslizo en silencio hacia la caja de madera lacada para tomarla sin hacer ruido.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 16+4=20
+
+### [4] DM
+
+  6553 ms
+
+> Te deslizas como una sombra entre los pliegues del terciopelo, el movimiento es fluido y casi etéreo. Tus dedos envuelven la madera fría y pulida de la caja de nácar sin que un solo hilo de la tela roce el suelo ni el mueble de caoba emita el más mínimo crujido. 
+> El hombre sigue caminando hacia el centro de la habitación, ajeno a tu presencia. Sus pasos resuenan sordos sobre la alfombra mientras continúa murmurando quejas sobre la Ceramics, con la espalda totalmente girada hacia ti y la mirada perdida en el desorden de la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3456 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = caja de madera lacada con incrustaciones de nácar
+  ⚠ nombres no reconocidos: Ceramics
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5136: Wynn.inventory = caja de madera lacada con incrustaciones de nácar
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 418 — 329/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  33 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1669 ms
+
+> Sujeto la caja con firmeza y me deslizo hacia la salida más cercana, aprovechando que el hombre sigue de espaldas.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 11+4=15
+
+### [4] DM
+
+  7159 ms
+
+> El roce de tus botas sobre la alfombra es imperceptible y el aire apenas se desplaza a tu paso. Te mueves con una precisión quirúrgica, manteniendo la caja de nácar pegada al cuerpo mientras el hombre sigue sumido en su monólogo, gesticulando con frustración hacia el vacío de la habitación.
+> Al alcanzar el umbral de la puerta, el eco de sus quejas se vuelve más distante y el pasillo exterior te recibe con su silencio sepulcral. Has logrado salir de la estancia sin que el sujeto haya girado la cabeza ni una sola vez.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6567 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = caja de madera lacada con incrustaciones de nácar
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5139: Wynn.inventory = caja de madera lacada con incrustaciones de nácar
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 419 — 330/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2406 ms
+
+> "Demasiado ruido para tan poca atención."
+> Me detengo un instante en el pasillo y miro hacia atrás para asegurarme de que el sujeto sigue distraído antes de buscar una salida discreta.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 8+2=10
+
+### [4] DM
+
+  7485 ms
+
+> El pasillo se extiende ante ti, un túnel de paredes anodinas y luz tenue que parece absorber cualquier sonido. Al echar la mirada hacia atrás, el marco de la puerta revela que el hombre sigue en su misma posición, aunque ahora ha empezado a caminar en círculos, gesticulando con vehemencia mientras su voz llega hasta ti como un zumbido ahogado y distante.
+> No percibes ningún movimiento sospechoso en las sombras del corredor ni escuchas pasos acercándose desde los extremos del pasillo. El silencio exterior permanece intacto, contrastando con el caos contenido de la habitación que acabas de abandonar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1092 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 420 — 331/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2975 ms
+
+> "Sigue gritando, no me importa."
+> Avanzo con cautela por el pasillo, manteniendo la espalda cerca de la pared y buscando cualquier objeto de valor o documento olvidado en las superficies laterales.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 11+2=13
+
+### [4] DM
+
+  6899 ms
+
+> El pasillo se siente frío y el aire tiene un regusto a polvo viejo y papel húmedo. A medida que avanzas, el eco de los gritos del hombre se vuelve un murmullo irrelevante, una vibración lejana que ya no logra romper la pesadez del silencio que reina en el corredor.
+> Tus ojos recorren las superficies laterales, escrutando cada rincón sombrío. En una pequeña mesa auxiliar de madera carcomida, junto a un jarrón vacío, descansa un fajo de papeles atados con un cordel deshilachado y una pluma de ganso cuya punta está seca y quebrada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4056 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: fajo de papeles atados con un cordel deshilachado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item fajo de papeles atados con un cordel deshilachado
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 421 — 332/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  33 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2074 ms
+
+> Me detengo frente a la mesa y observo los papeles. Me aseguro de que no haya nadie cerca antes de intentar desatar el cordel para leer el contenido.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 1+4=5  PIFIA
+
+### [4] DM
+
+  9225 ms
+
+> Al intentar deslizarte hacia la mesa con cautela, tu pie tropieza torpemente con el borde de una alfombra raída, provocando que te tambalees violentamente. El impacto de tu cuerpo contra la madera carcomida de la mesa genera un estruendo seco que resuena en todo el pasillo, haciendo que el jarrón vacío caiga al suelo y se haga añicos con un ruido estridente.
+> El silencio sepulcral del corredor se rompe abruptamente. Desde el fondo del pasillo, los pasos apresurados de alguien que ha oído el estrépito comienzan a acercarse rápidamente, acompañados por el eco de una voz que pregunta con tono inquisitivo quién anda ahí.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1225 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 422 — 333/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  33 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1950 ms
+
+> "Maldita sea."
+> Me pongo en pie rápidamente y busco el rincón más oscuro y cercano para ocultarme antes de que lleguen.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 16+4=20
+
+### [4] DM
+
+  9013 ms
+
+> Te deslizas con una rapidez felina hacia la penumbra, fundiéndote con las sombras profundas de un nicho donde el polvo flota en el aire estancado. El frío de la piedra húmeda se filtra a través de tu ropa mientras retienes la respiración, convirtiéndote en una silueta invisible justo cuando la luz de un quinqué comienza a bailar en las paredes del pasillo.
+> Un hombre de aspecto pulcro pero fatigado aparece en el corredor, sosteniendo la lámpara en alto. Se detiene frente a los restos del jarrón hecho añicos, frunciendo el ceño con desconcierto. Mira a su alrededor, recorriendo el espacio con la luz, pero su mirada pasa por encima de tu escondite sin detenerse, incapaz de distinguir tu figura de la oscuridad del rincón.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2627 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 423 — 334/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  33 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2802 ms
+
+> Me quedo inmóvil, observando cada movimiento del hombre desde las sombras. Intento analizar su ropa y el quinqué para determinar su rango o función en este lugar.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 12+2=14
+
+### [4] DM
+
+  11069 ms
+
+> Desde tu rincón, el haz de luz del quinqué revela una túnica de lino grisáceo, bien planchada pero desgastada en los puños, y un cinturón de cuero sencillo que sostiene un juego de llaves y un pequeño cuaderno de notas. No lleva insignias de mando ni joyas, pero su porte es el de alguien acostumbrado a mantener el orden en los espacios olvidados; es la vestimenta típica de un administrador de archivos o un intendente de bajo rango.
+> El quinqué es una pieza de latón común, con el cristal ligeramente ahumado, que emite una luz amarillenta y vacilante. El hombre suspira, se inclina para recoger un fragmento del jarrón y murmura para sí mismo con un tono de fastidio: «Otra vez... parece que las ratas han aprendido a romper el cristal». Tras dejar el trozo de cerámica en un cubo que lleva colgado, comienza a caminar lentamente hacia el fondo del pasillo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1331 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Otra
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 424 — 335/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  33 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2254 ms
+
+> Me deslizo por las sombras para acercarme a él sin ser visto. Intento alcanzar el cuaderno de notas de su cinturón.
+> {Sigilo}
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 17+4=21
+  Juego de Manos: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  8411 ms
+
+> Te mueves como un susurro entre las penumbras, fundiéndote con las texturas frías de las paredes mientras el hombre avanza, distraído por su propia irritación. El balanceo del quinqué crea sombras largas que ocultan tu avance; el administrador ni siquiera altera el ritmo de sus pasos, ajeno a la presencia que se desliza a su espalda con precisión quirúrgica.
+> En un instante imperceptible, tus dedos rozan el cuero del cinturón y deslizan el cuaderno de notas fuera de su sitio sin que el hombre sienta el menor tirón. El objeto queda ahora en tu poder, mientras el administrador sigue caminando hacia el fondo del pasillo, murmurando algo sobre la incompetencia del servicio de limpieza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9493 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = cuaderno de notas
+  ✓ creación item: cuaderno de notas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → ya existía: item cuaderno de notas
+  → delta 5151: Wynn.inventory = cuaderno de notas
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 425 — 336/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2417 ms
+
+> "Perfecto."
+> Me quedo inmóvil contra la pared, esperando a que el hombre se aleje lo suficiente para abrir el cuaderno y echar un vistazo rápido a sus notas.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 8+4=12
+
+### [4] DM
+
+  15046 ms
+
+> El administrador se aleja, su figura recortándose contra la luz tenue del pasillo mientras el eco de sus quejas se desvanece en la distancia. El silencio regresa al corredor, interrumpido solo por el goteo distante de alguna tubería y el roce del cuero del cuaderno entre tus manos.
+> Al abrir las páginas, el olor a tinta fresca y papel viejo te golpea. Las notas están escritas con una letra apresurada y angulosa, llenas de tachones y nombres subrayados con fuerza. Entre las listas de suministros y quejas administrativas, resaltan varias entradas recientes sobre donaciones anónimas y sumas de oro que no coinciden con los registros habituales del Valle del Corral.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1558 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 426 — 337/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2647 ms
+
+> "Interesante..."
+> Paso las páginas con cuidado, buscando cualquier nombre que se repita en esas donaciones anónimas o alguna referencia a quién recibe el oro sobrante.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+1=4
+
+### [4] DM
+
+  6391 ms
+
+> Tus dedos deslizan las hojas con cautela, pero la caligrafía angulosa y los tachones resultan confusos. Las entradas sobre el oro sobrante son esquemáticas, limitándose a cifras y fechas sin nombres asociados, y los registros de las donaciones anónimas parecen haber sido redactados para ocultar el rastro deliberadamente.
+> A pesar de tu escrutinio, las páginas no revelan ningún patrón claro ni un nombre recurrente que te permita identificar el origen o el destino de esos fondos. Solo encuentras más listas de suministros y quejas burocráticas que se mezclan con las sospechosas sumas de oro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1380 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 427 — 338/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2343 ms
+
+> "Demasiado desordenado para ser un error."
+> Cierro el libro y busco algún compartimento oculto en la encuadernación o algún papel suelto entre las páginas.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+1=3
+
+### [4] DM
+
+  7590 ms
+
+> Pasas los dedos por el cuero gastado de la cubierta y presionas los bordes de la encuadernación, buscando algún resorte o hueco que delate un escondite. Sacudes ligeramente el tomo y hojeas las páginas con rapidez, esperando que algún recorte o nota olvidada caiga sobre la mesa.
+> El libro se mantiene mudo. No hay doble fondos, ni pestañas ocultas, ni fragmentos de pergamino atrapados entre el cosido. Solo queda el olor a tinta vieja y el silencio del despacho, mientras el volumen vuelve a descansar sobre la madera, tan hermético y confuso como al principio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1695 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 428 — 339/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2367 ms
+
+> "Vaya pérdida de tiempo."
+> Suelto el libro con desdén y empiezo a registrar el resto del despacho, buscando cajones cerrados o compartimentos secretos en el mobiliario.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+1=3
+
+### [4] DM
+
+  26816 ms
+
+> Te desplazas por el despacho, abriendo cajones que solo contienen plumas gastadas, tinteros secos y pilas de formularios administrativos aburridos. Empujas algunos papeles y palpas los laterales del escritorio, pero la madera es maciza y no cede; no hay clics, ni relieves sospechosos, ni hendiduras que sugieran la existencia de un compartimento oculto.
+> El mobiliario es tan austero y funcional como el resto de la estancia. Tras unos minutos de búsqueda, solo has logrado desordenar los folios de Melquíades, sin encontrar rastro de nada que no esté a simple vista.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1204 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 429 — 340/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2721 ms
+
+> "Vaya pérdida de tiempo."
+> Dejo de buscar en el escritorio y me acerco a las paredes y las esquinas de la habitación para buscar cualquier anomalía en el revestimiento o detrás de los cuadros.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  36465 ms
+
+> Tus dedos recorren las molduras de madera y el papel tapiz descolorido con una precisión casi quirúrgica. Al llegar a la esquina norte, justo detrás de un cuadro mediocre que representa un paisaje del Valle del Corral, notas que el aire se siente ligeramente más frío y que el marco no encaja perfectamente con la pared. Un roce firme en una veta específica de la madera activa un mecanismo silencioso: una sección del revestimiento se desliza hacia atrás con un susurro imperceptible.
+> Detrás del panel se revela un pequeño nicho excavado en la piedra. En su interior, descansando sobre un trozo de terciopelo raído, hay un libro de cuentas encuadernado en cuero negro y un sello de lacre que no coincide con el escudo oficial de la administración local. El espacio es estrecho y discreto, diseñado para que nadie lo encuentre a menos que supiera exactamente dónde presionar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6143 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: libro de cuentas encuadernado en cuero negro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → ya existía: item libro de cuentas encuadernado en cuero negro
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 430 — 341/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2328 ms
+
+> "Interesante".
+> Tomo el libro de cuentas y el sello, guardándolos rápidamente en mi ropa.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  44510 ms
+
+> Tus ojos escanean las páginas del libro con una rapidez febril, conectando datos que para cualquier otro serían ruido. No solo encuentras la lista de donantes, sino que detectas un patrón matemático preciso: hay una serie de entradas recurrentes, camufladas como pequeñas donaciones de campesinos, que en realidad provienen de una sola fuente coordinada. Las fechas coinciden exactamente con los picos de actividad de la campaña de Melquíades, revelando que el flujo de dinero es artificial y proviene de una organización externa que opera bajo nombres falsos.
+> Al revisar los márgenes, descubres anotaciones en un código sencillo pero efectivo que vincula estos fondos con el sello de lacre que acabas de recoger. El sello no pertenece a ninguna familia noble del Valle, sino que es la marca de una célula menor de los Archiveros del Silencio. La evidencia es irrefutable: alguien está comprando la elección de Melquíades desde las sombras, y el candidato, consciente o no, está permitiendo que el oro manche sus cuentas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8784 ms · 0 eventos · 2 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = libro de cuentas
+  ✓ delta Wynn · character.inventory = sello
+  ✓ creación item: libro de cuentas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item libro de cuentas
+  → delta 5174: Wynn.inventory = libro de cuentas
+  → delta 5175: Wynn.inventory = sello
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 431 — 342/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2676 ms
+
+> "Interesante. Demasiado interesante para dejarlo en este libro."
+> Cierro el tomo con cuidado y busco la forma de llevarme el libro o copiar las páginas clave sin que nadie me haya visto.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 4+4=8
+
+### [4] DM
+
+  22886 ms
+
+> El cuero del libro cruje con un sonido anormalmente fuerte en el silencio de la estancia. Mientras intentas maniobrar para ocultar el volumen o extraer la información, el roce de tu ropa contra el mobiliario y el ruido del tomo al cerrarse resuenan en las paredes desnudas. 
+> Desde el pasillo, se escuchan pasos rápidos que se aproximan y el sonido metálico de unas llaves tintineando. Una voz masculina, inquisitiva y alertada, llama desde el otro lado de la puerta: «¿Hay alguien ahí? He oído un ruido».
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2510 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 432 — 343/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2196 ms
+
+> "No hay nadie aquí."
+> Me deslizo rápidamente hacia la zona de sombras más cercana a la puerta, intentando desaparecer de la vista antes de que se abra.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 4+4=8
+
+### [4] DM
+
+  33307 ms
+
+> La voz se corta bruscamente al oír la respuesta. El tintineo de las llaves se detiene un instante, seguido del sonido metálico de la cerradura girando. La puerta se abre de golpe, bañando la estancia con la luz del pasillo, y un hombre de mirada suspicaz asoma la cabeza, escaneando la habitación con rapidez.
+> Tus movimientos han sido torpes; el roce de tu ropa contra la madera y el sonido de tus pasos te delatan inmediatamente mientras intentas alcanzar las sombras. El hombre clava la vista en tu posición, sus cejas se contraen y su expresión pasa de la confusión a la alarma. «¡Te he oído, maldita sea! ¡¿Quién eres y qué haces aquí?!», grita mientras da un paso firme hacia el interior, bloqueando la salida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1895 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 433 — 344/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1784 ms
+
+> "Solo estoy de paso, no busco problemas."
+> Me quedo quieto, manteniendo las manos visibles pero cerca de mis armas.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 11+4=15
+
+### [4] DM
+
+  32195 ms
+
+> El hombre se detiene en seco, con el cuerpo aún tenso y el rostro contraído, pero la urgencia de su grito se desvanece. Entorna los ojos, analizando tu postura y la calma de tu voz, mientras el eco de sus propias palabras aún vibra en la habitación. La sospecha persiste en su mirada, pero la agresividad inicial se transforma en una irritación confundida.
+> «¿De paso? ¿En una oficina cerrada con llave?», resopla, aunque ya no avanza más hacia ti. Se queda apoyado en el marco de la puerta, cruzando los brazos sobre el pecho, aunque mantiene la mirada fija en tus manos. «Tienes una forma muy extraña de pasear, forastero. No pareces un ladrón común, pero tampoco alguien que haya entrado por la puerta principal».
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1445 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Tienes
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 434 — 345/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2855 ms
+
+> "Tengo mis motivos para no usar la puerta principal, y dudo que sean de tu incumbencia."
+> Sigo manteniendo la calma y observo sus gestos para detectar cualquier debilidad o señal de nerviosismo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+0=8
+
+### [4] DM
+
+  32923 ms
+
+> El hombre suelta una carcajada seca, casi un ladrido, y descruza los brazos para señalar con un gesto brusco el interior de la oficina. «Vaya, además de intruso es arrogante. Me gusta esa confianza, aunque suele ser la primera que se rompe cuando llega la guardia». Se mantiene firme en el marco de la puerta, bloqueando la salida con una postura que intenta proyectar autoridad, aunque su peso recae más sobre una pierna que sobre la otra.
+> A pesar de su tono burlón y su intento de intimidación, no percibes ninguna señal clara de miedo ni debilidad en sus movimientos. Su mirada sigue siendo inquisitiva y su lenguaje corporal es el de alguien que se siente dueño del espacio, convencido de que tiene el control de la situación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1269 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Vaya
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 435 — 346/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 15.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2464 ms
+
+> "La confianza es una herramienta, no un defecto. Solo depende de quién la maneje."
+> Doy un paso lento hacia el interior de la oficina, tratando de flanquearlo para entrar en la estancia.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 16+2=18
+
+### [4] DM
+
+  29434 ms
+
+> Melquíades arquea una ceja, sorprendido por la naturalidad del movimiento. La seguridad en tus palabras parece haber calado en él, rompiendo por un instante su fachada de superioridad. Su expresión se suaviza, sustituyendo la burla por una curiosidad genuina, y cede el paso con un movimiento fluido, abriéndose para dejarte entrar en la estancia.
+> «Tienes chispa, no te lo niego», comenta mientras se aparta, permitiéndote el acceso a la oficina. El aire interior huele a papel viejo y a tinta fresca, y el espacio está saturado de pergaminos apilados y mapas extendidos sobre una mesa de madera maciza que domina la habitación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4005 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Melquíades Sorna · competence_shown
+  ⚠ nombres no reconocidos: Tienes
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5193: Melquíades Sorna affinity 15.0 → 17.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 436 — 347/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3994 ms
+
+> "Aprecio tu hospitalidad."
+> Entro en la oficina manteniendo la compostura, pero mis ojos recorren rápidamente la mesa y los pergaminos buscando cualquier documento que parezca confidencial o valioso.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+2=18
+
+### [4] DM
+
+  36152 ms
+
+> Melquíades te acompaña al interior con una sonrisa condescendiente, dejándose llevar por el ritmo de tu entrada. Mientras él se posiciona junto a la mesa, tu mirada escanea el caos organizado de la estancia. Entre la maraña de mapas y borradores de discursos, destaca un pequeño libro de cuero gastado, cerrado con una cinta de seda roja, que alguien ha intentado cubrir apresuradamente con un pliego de cuentas municipales.
+> Cerca del libro, un pergamino desplegado muestra una lista de nombres escrita con una caligrafía apresurada; algunos están tachados, pero otros están marcados con un círculo de tinta dorada, resaltando donaciones inusualmente altas que no encajan con el perfil de los humildes campesinos del Valle del Corral.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6151 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: libro de cuero gastado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item libro de cuero gastado
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 437 — 348/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2950 ms
+
+> "Parece que el orden no es lo fuerte de este despacho"
+> Me acerco a la mesa fingiendo interés por los mapas, mientras intento deslizar el libro de cuero bajo mi ropa sin que Melquíades lo note.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 12+4=16
+
+### [4] DM
+
+  28744 ms
+
+> Melquíades suelta una risita nasal y asiente, distraído por su propia importancia mientras señala un punto impreciso en los mapas. —El entusiasmo por el progreso suele dejar poco tiempo para la simetría, querido amigo —comenta, girando el cuerpo para enfatizar su gesto.
+> Aprovechando el ángulo muerto que crea su torso, tus dedos se deslizan con precisión quirúrgica. El libro de cuero se desliza sin ruido bajo la tela de tu ropa, desapareciendo antes de que el pliego de cuentas municipales siquiera vibre. Melquíades permanece ajeno, sumido en su explicación sobre la gestión de los terrenos del valle.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3953 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = libro de cuero gastado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5208: Wynn.inventory = libro de cuero gastado
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 438 — 349/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3536 ms
+
+> "Es un detalle fascinante, Melquíades. La falta de simetría suele esconder los secretos más interesantes."
+> Sigo escuchando su explicación mientras trato de notar si hay algún otro documento valioso sobre la mesa que pueda llevarme.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 4+2=6
+
+### [4] DM
+
+  31269 ms
+
+> Melquíades suelta una carcajada genuina, complacido por el comentario, y continúa gesticulando con vehemencia sobre el mapa. Sus palabras fluyen en un torrente de promesas electorales y planes de urbanismo, mientras su cuerpo sigue bloqueando la vista directa de la superficie de madera.
+> Tus ojos recorren la mesa, pero la luz vacilante de las velas y el desorden de pergaminos, manchas de tinta y tinteros volcados crean un caos visual confuso. Entre el montón de papeles oficiales y notas marginales, no logras distinguir nada que destaque como especialmente valioso o diferente del resto de la burocracia municipal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2957 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 439 — 350/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2768 ms
+
+> "Siga, por favor. Es fascinante cómo planea reorganizar la ciudad."
+> Sigo asintiendo con interés mientras aprovecho su gesticulación para intentar desplazar discretamente algunos de esos papeles y ver qué hay debajo.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 19+4=23
+
+### [4] DM
+
+  32575 ms
+
+> Melquíades se deja llevar por el entusiasmo, hablando ahora sobre la posible creación de un nuevo mercado de flores, mientras sus brazos se elevan y su torso se inclina hacia atrás, abriendo un hueco perfecto en su guardia. Con un movimiento fluido y casi invisible, deslizas un fajo de actas municipales hacia un lado, despejando el área justo debajo de su codo.
+> Bajo la montaña de burocracia, emerge un pequeño libro de cuero desgastado, encuadernado en un tono marrón oscuro que contrasta con la blancura de los pergaminos. El libro permanece cerrado, pero notas que tiene un cierre de latón oxidado que lo mantiene apretado, ocultando cualquier rastro de su contenido a simple vista.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4216 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: libro de cuero desgastado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item libro de cuero desgastado
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 440 — 351/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2267 ms
+
+> "Siga, por favor, me interesa mucho lo de ese mercado."
+> Mantengo la conversación mientras intento deslizar el libro de cuero hacia mi manga o bolsillo sin que Melquíades lo note.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 17+4=21
+
+### [4] DM
+
+  40773 ms
+
+> Melquíades continúa gesticulando con fervor, describiendo cómo el aroma de los jazmines y las dalias revitalizaría el espíritu de los ciudadanos. Sus ojos brillan mientras dibuja en el aire la disposición de los puestos, completamente absorto en su propia visión utópica y ajeno a cualquier movimiento que no sea el de sus propias manos.
+> Tus dedos se cierran sobre el cuero frío y desgastado. El libro se desliza con una suavidad quirúrgica, desapareciendo bajo la tela de tu ropa justo en el momento en que Melquíades lanza un suspiro dramático y se inclina hacia adelante para enfatizar un punto sobre la sostenibilidad del riego. El espacio donde estaba el volumen ahora solo muestra el vacío entre dos pilas de actas municipales, sin que el candidato haya notado la más mínima perturbación en su escritorio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3931 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = libro de cuero desgastado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5227: Wynn.inventory = libro de cuero desgastado
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 441 — 352/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2268 ms
+
+> "Su visión es... fascinante, Melquíades. Realmente ha pensado en cada detalle."
+> Sigo escuchando con una expresión de interés fingido mientras me alejo lentamente del escritorio.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  32417 ms
+
+> Melquíades se endereza, iluminado por el cumplido, y su sonrisa se ensancha con una satisfacción genuina. Se lleva una mano al pecho, conmovido por lo que percibe como una validación sincera de su genio urbanístico, y asiente con vigor mientras te sigue con la mirada mientras te desplazas.
+> —¡Exactamente! ¡Al fin alguien que comprende que la estética no es un lujo, sino una necesidad cívica! —exclama, totalmente cautivado por tu actitud. Para él, no eres solo un oyente, sino un alma afín que ha sabido captar la esencia de su proyecto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3833 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento melquiades_sorna · public_status_given
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: melquiades_sorna
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 442 — 353/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3509 ms
+
+> "Ciertamente, una visión así merece el respaldo adecuado. Me pregunto qué secretos guarda este diseño que el resto de la ciudad aún ignora."
+> Me acerco un poco más a él, manteniendo el tono confidente, e intento notar si hay algún documento o plano oculto que no quiera mostrar a cualquiera.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  52058 ms
+
+> Melquíades suelta una risita teatral, inclinando la cabeza hacia ti en un gesto de complicidad absoluta. Sus ojos brillan con la emoción de quien ha encontrado a un confidente capaz de apreciar los matices de su obra.
+> —Secretos... ¡qué palabra tan sugerente! —susurra, bajando el tono para crear una atmósfera de exclusividad—. Digamos que hay detalles que el vulgo llamaría "extravagancias", pero que yo llamo optimización del flujo vital.
+> Mientras te acercas, notas que el hombre no solo lleva la ropa impecable, sino que bajo el brazo sostiene una carpeta de cuero desgastado, apretada con una firmeza que contrasta con su gestualidad expansiva. Al moverse para enfatizar sus palabras, el borde de un pergamino amarillento se desliza apenas unos milímetros fuera de la carpeta; alcanzas a distinguir un sello de cera roja, antiguo y parcialmente roto, que no coincide con la heráldica actual del ayuntamiento ni con los emblemas de su propia campaña.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1319 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 443 — 354/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3217 ms
+
+> "Me interesa mucho esa optimización, Melquíades. No soy alguien que se conforme con lo superficial."
+> Sigo hablando con él mientras intento deslizar la mano hacia la carpeta para ver mejor el sello o extraer el pergamino.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 9+4=13
+
+### [4] DM
+
+  95959 ms
+
+> Melquíades sonríe, cautivado por tu interés, y comienza a gesticular con entusiasmo sobre sus teorías del flujo vital. Sin embargo, justo cuando intentas deslizar la mano hacia la carpeta, el hombre se desplaza bruscamente para enfatizar un punto de su discurso, pegando el cuero desgastado contra su costado.
+> Tus dedos rozan la superficie del material, pero el movimiento es torpe y el pergamino se desliza aún más hacia el interior de la carpeta, desapareciendo por completo de tu vista. Melquíades se detiene un instante, parpadeando con curiosidad mientras te mira, aunque no parece haber comprendido exactamente qué intentabas hacer.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1263 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 444 — 355/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2217 ms
+
+> "Perdone, me he distraído un segundo con su fascinante teoría."
+> Sigo asintiendo con interés mientras intento recuperar el equilibrio y busco una nueva oportunidad para alcanzar el documento.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 12+4=16
+
+### [4] DM
+
+  8838 ms
+
+> Melquíades suelta una carcajada jovial, su rostro iluminándose al sentirse admirado. Se acomoda la túnica con un gesto despreocupado, convencido de que su elocuencia ha dejado al interlocutor absorto en la magnitud de sus palabras.
+> —¡Es comprensible! El flujo vital es una marea que arrasa con cualquier otra distracción —exclama, retomando su postura relajada y abriendo los brazos para continuar su disertación, dejando la carpeta apoyada descuidadamente sobre el mueble lateral mientras se aleja un paso para gesticular hacia el horizonte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2661 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento melquiades_sorna · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: melquiades_sorna
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 445 — 356/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2780 ms
+
+> "Es fascinante, por supuesto."
+> Aprovecho que Melquíades se ha distraído gesticulando para intentar tomar la carpeta del mueble sin que se dé cuenta.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 14+4=18
+
+### [4] DM
+
+  14579 ms
+
+> Melquíades sigue absorto en su propia oratoria, describiendo con énfasis el movimiento de las energías invisibles mientras señala hacia el valle. Sus ojos brillan con entusiasmo y su espalda permanece girada, totalmente entregada al ritmo de su discurso y a la satisfacción de tener un oyente atento.
+> Tus dedos se deslizan con precisión quirúrgica sobre la madera del mueble. El roce del cuero de la carpeta es casi imperceptible y, con un movimiento fluido y silencioso, la retiras de la superficie justo antes de que el hombre termine su frase y se gire hacia ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3059 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = carpeta de cuero negro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5253: Wynn.inventory = carpeta de cuero negro
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 446 — 357/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 17.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2236 ms
+
+> "Es fascinante, Melquíades. No había considerado esa perspectiva."
+> Guardo la carpeta rápidamente bajo mi ropa y mantengo una expresión de interés genuino mientras espero que termine.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 7+4=11
+
+### [4] DM
+
+  40770 ms
+
+> Melquíades termina su frase con un gesto expansivo de los brazos, cerrando su argumento con una sonrisa triunfal. Se gira hacia ti con el rostro iluminado por la pasión de su discurso, buscando en tu mirada la validación de sus palabras.
+> Al notar tu expresión, el hombre asiente con satisfacción, aunque frunce ligeramente el ceño durante un segundo, como si un instinto fugaz le sugiriera que algo en la disposición de su escritorio ha cambiado. Sin embargo, el entusiasmo de su oratoria es más fuerte que su sospecha y suelta una carcajada ligera. "¡Exacto! Es que la mayoría prefiere ignorar lo evidente por miedo a la complejidad. Me alegra haber encontrado a alguien capaz de apreciar la sutileza de estas corrientes".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2942 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Melquíades Sorna · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5261: Melquíades Sorna affinity 17.0 → 19.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 447 — 358/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3605 ms
+
+> "Comparto su visión, Melquíades. La sutileza es la herramienta de los que realmente mandan."
+> Sigo manteniendo mi postura relajada mientras busco cualquier documento o nota en el escritorio que parezca contener información confidencial.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+1=13
+
+### [4] DM
+
+  35819 ms
+
+> Melquíades suelta un suspiro de complicidad y se inclina ligeramente hacia adelante, cautivado por la concordancia de tus palabras. Sus ojos brillan mientras comienza a gesticular nuevamente, absorto en la construcción de un nuevo argumento sobre el ejercicio del poder, dándote un margen de atención reducido mientras se pierde en su propia retórica.
+> Tus ojos escanean la superficie del escritorio entre el flujo de su discurso. Entre una pluma de ganso y un tintero de plata, logras divisar un pequeño montón de pergaminos desordenados. Al deslizar la mirada, identificas una lista de donaciones recientes donde destacan varios nombres desconocidos, escritos con una caligrafía apresurada que desentona con la elegancia del resto de la correspondencia oficial.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5011 ms · 1 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ evidencia no literal: «La sutileza es la herramienta de los los que realm»
+  ✓ creación item: lista de donaciones recientes
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item lista de donaciones recientes
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 448 — 359/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2615 ms
+
+> "Es fascinante cómo el poder se moldea a través de la voluntad, Melquíades."
+> Sigo asintiendo con interés mientras desplazo discretamente mi mano hacia los pergaminos para intentar deslizar la lista de donaciones hacia mí.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 13+4=17
+
+### [4] DM
+
+  28681 ms
+
+> Melquíades continúa hablando, su voz adquiriendo un tono casi musical mientras describe la arquitectura de un gobierno ideal, totalmente absorto en el reflejo de sus propias ideas. Sus manos trazan figuras invisibles en el aire, alejadas del escritorio, y su mirada se pierde en un punto lejano de la estancia, convencido de que tienes la atención puesta en su brillante oratoria.
+> Aprovechando el vacío de su vigilancia, tus dedos rozan el papel con una precisión quirúrgica. El pergamino se desliza sobre la madera pulida sin emitir el menor ruido, escapando del montón de documentos para quedar oculto bajo tu control, justo antes de que el candidato recupere el hilo de su discurso y te mire con una sonrisa triunfal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3600 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = lista de donaciones recientes
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5274: Wynn.inventory = lista de donaciones recientes
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 449 — 360/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2244 ms
+
+> "Es una visión fascinante, Melquíades. Realmente innovador"
+> Guardo el pergamino con rapidez y vuelvo a adoptar una postura de escucha atenta, manteniendo la expresión neutra.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 6+4=10
+
+### [4] DM
+
+  29896 ms
+
+> Melquíades parpadea, saliendo de su trance oratorio, y su sonrisa se ensancha al recibir el cumplido. Se inclina ligeramente hacia adelante, apoyando una mano en el escritorio, aunque sus ojos recorren tu rostro con una curiosidad repentina. El silencio que sigue a tus palabras se prolonga un segundo más de lo habitual, cargado de una sospecha instintiva que no llega a concretarse.
+> —Innovador es la palabra exacta —responde, aunque su tono ha perdido parte de esa musicalidad, volviéndose más inquisitivo—. Pocos en este valle tienen la capacidad de apreciar la sutileza de mi plan. Dime, ¿realmente crees que el pueblo está listo para tal cambio, o es solo cortesía profesional?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1163 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 450 — 361/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2733 ms
+
+> "La cortesía es una herramienta, pero mi interés es la viabilidad. Un plan solo es innovador si sobrevive a la realidad."
+> Mantengo la mirada fija en él, buscando cualquier signo de debilidad o duda en su expresión.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+0=20  CRÍTICO
+
+### [4] DM
+
+  47920 ms
+
+> Melquíades sostiene la mirada, pero el desafío de tu respuesta provoca que su máscara de seguridad se agriete por una fracción de segundo. Sus pupilas se dilatan y un ligero tic nervioso agita la comisura de su labio; no es miedo al fracaso, sino la ansiedad de quien oculta una grieta en los cimientos de su estructura. Hay una tensión palpable en sus hombros, una rigidez que contrasta con la fluidez de su discurso previo.
+> Te das cuenta de que su confianza no es absoluta, sino que depende de un hilo invisible. Sus ojos no buscan convencerte, sino evaluar si tú has detectado la anomalía que él mismo intenta ignorar. Al notar que no apartas la vista, se endereza bruscamente y suelta una risotada seca, aunque sus dedos siguen tamborileando con rapidez sobre la madera del escritorio.
+> —Viabilidad... Hablas el lenguaje de los resultados. Me gusta —dice, aunque su voz suena ahora un octavo más aguda—. Entonces, hablemos de realidades.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2493 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento melquiades_sorna · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: melquiades_sorna
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 451 — 362/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2497 ms
+
+> "Me gusta que hablemos el mismo lenguaje. Hablemos, pues, de esas realidades."
+> Mantengo el contacto visual mientras observo el movimiento de sus dedos sobre el escritorio.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+0=10
+
+### [4] DM
+
+  34533 ms
+
+> Melquíades se reclina en su silla, intentando recuperar la compostura. El tamborileo de sus dedos cesa abruptamente cuando entrelaza las manos sobre el escritorio, formando un triángulo con los dedos que intenta proyectar autoridad. A pesar del gesto, el ligero temblor en sus muñecas persiste, traicionando la calma que intenta fingir.
+> —La realidad es que el Valle del Corral es un polvorín de voluntades contrarias —comienza, bajando la voz y acercándose un poco más—. Bibiana tiene el apoyo de las familias antiguas, pero yo tengo la visión del progreso. Lo que me falta es alguien que sepa moverse en las sombras donde mis manos, ya manchadas de tinta y burocracia, no pueden llegar. Alguien que asegure que los resultados sean... favorables.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2678 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 452 — 363/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  31 entidades · contexto de 1123 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2551 ms
+
+> "El progreso suele ser costoso, Melquíades. Me interesa saber exactamente qué resultados considera favorables y cuánto está dispuesto a pagar por ellos."
+> Me inclino ligeramente hacia delante, observando sus muñecas mientras hablo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+0=10
+
+### [4] DM
+
+  32136 ms
+
+> Melquíades suelta una risa seca, casi nerviosa, y se endereza en el asiento, aunque no retira las manos de la mesa. Sus ojos brillan con una mezcla de ambición y urgencia mientras ignora la mención al coste, centrándose en la negociación.
+> —Favorables significa que, cuando se cuenten los votos, mi nombre sea el que predomine, sin importar los inconvenientes que surjan en el camino —responde con un tono más firme—. En cuanto al pago, no escatimaré. Oro, favores políticos una vez que esté en el cargo o cualquier objeto de valor que necesite para sus propósitos. Solo dígame su precio y buscaremos la forma de cubrirlo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1266 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 453 — 364/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  7630 ms
+
+> "El oro es lo único que no puede traicionarme. Quiero la mitad por adelantado y el resto al momento de la proclamación."
+> Me inclino hacia delante, observando sus gestos mientras hablo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+0=10
+
+### [4] DM
+
+  32852 ms
+
+> Melquíades asiente con rapidez, casi con alivio, y golpea la mesa con la palma de la mano para sellar el acuerdo. Sus ojos no se apartan de los tuyos, reflejando una determinación febril que roza la desesperación.
+> —Hecho. El oro es un lenguaje que todos entendemos y es el más honesto de todos —declara, mientras comienza a buscar algo en los bolsillos de su casaca con movimientos ligeramente erráticos—. No hay problema con el adelanto; lo tengo aquí mismo.
+> Al observarlo de cerca, notas que su postura es rígida y que evita cualquier contacto visual prolongado cuando menciona la palabra "honestidad", aunque su sonrisa se mantiene fija y profesional.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2959 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento melquiades_sorna · promise_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: melquiades_sorna
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 454 — 365/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2037 ms
+
+> "Tómate tu tiempo. No tenemos prisa."
+> Mantengo la mirada fija en sus manos mientras busca el oro, analizando sus gestos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+0=1  PIFIA
+
+### [4] DM
+
+  40656 ms
+
+> Melquíades suelta una risita nerviosa y continúa hurgando en sus bolsillos, murmurando palabras inconexas sobre la organización de sus finanzas. Mientras observas sus manos, te distraes con el movimiento errático de sus dedos y el roce de la tela de su casaca, perdiendo por completo el hilo de su lenguaje corporal. Te quedas absorto en un detalle irrelevante, como una mancha de tinta en su puño, convencido erróneamente de que ese pequeño descuido es la señal de un hombre profundamente desorganizado y quizás incompetente en el manejo de sus asuntos.
+> Finalmente, saca una bolsa de cuero desgastada que tintinea con un sonido metálico y la desliza sobre la madera de la mesa hacia ti.
+> —Aquí tienes, el adelanto prometido —dice, recuperando su compostura profesional mientras te dedica una sonrisa ensayada—. Una inversión pequeña para asegurar un resultado... monumental.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5550 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = bolsa de cuero desgastada
+  ✓ creación item: bolsa de cuero desgastada
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item bolsa de cuero desgastada
+  → delta 5322: Wynn.inventory = bolsa de cuero desgastada
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 455 — 366/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1940 ms
+
+> "Es un comienzo aceptable."
+> Tomo la bolsa y la abro discretamente para contar las monedas sin que él pueda ver la cantidad exacta.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 14+4=18
+
+### [4] DM
+
+  33788 ms
+
+> Tus dedos se deslizan con precisión quirúrgica dentro de la bolsa, contando el metal frío y pesado mediante el tacto mientras mantienes la mirada fija en Melquíades. La maniobra es imperceptible; el candidato sigue sosteniendo su sonrisa ensayada, ajeno a que ya conoces la cantidad exacta de monedas que reposan en el cuero desgastado.
+> —Me alegra que estemos de acuerdo —responde él, enderezando la espalda y ajustándose la casaca con un gesto de alivio—. La eficiencia es, después de todo, la base de cualquier administración exitosa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2272 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 456 — 367/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2670 ms
+
+> "Exactamente. La eficiencia es lo único que importa."
+> Saco la mano de la bolsa con naturalidad y le doy una palmada ligera en el hombro mientras me retiro un paso.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 5+4=9
+
+### [4] DM
+
+  27323 ms
+
+> Melquíades parpadea, ligeramente descolocado por el contacto físico repentino, pero mantiene la compostura. Su sonrisa flaquea un instante, transformándose en una expresión de duda mientras sus ojos recorren tu figura, intentando descifrar si esa palmada ha sido un gesto de camaradería o algo más.
+> —Por supuesto... la eficiencia —repite él, aunque su voz suena ahora menos segura. Se lleva una mano al pecho, ajustándose instintivamente la casaca donde cuelga la bolsa, mientras te observa retroceder con una mirada cargada de una creciente e incómoda sospecha.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1771 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 457 — 368/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos conocidos
+  32 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3533 ms
+
+> "No te pongas nervioso, Melquíades. Solo aprecio que hablemos el mismo idioma."
+> Le dedico una sonrisa gélida y vacía mientras mantengo una distancia prudencial, observando cómo protege su bolsa.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+0=9
+
+### [4] DM
+
+  28040 ms
+
+> Melquíades suelta un bufido corto, un intento fallido de recuperar la gallardía. Se endereza, tensando los hombros y forzando una risa seca que no llega a sus ojos. —El idioma de la eficiencia es el único que importa en tiempos de campaña, amigo mío —responde, aunque sus dedos siguen apretando la tela de su casaca con una rigidez evidente.
+> Se mantiene atento a cada uno de tus movimientos, con la mirada saltando de tu rostro a tus manos. A pesar de su intento de parecer imperturbable, el brillo de inquietud en sus pupilas persiste, dejándolo en un estado de alerta contenida mientras aguarda tu siguiente palabra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1449 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 458 — 369/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3931 ms
+
+> "Me alegra que hablemos el mismo idioma, Melquíades. Hagamos que esto sea eficiente para ambos."
+> Me acerco un paso más a él, manteniendo una sonrisa gélida, mientras intento notar si oculta algo entre sus ropas o en los bolsillos de esa casaca.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 6+2=8
+
+### [4] DM
+
+  25283 ms
+
+> Melquíades retrocede instintivamente medio paso cuando acortas la distancia, manteniendo la espalda recta pero con los músculos del cuello tensos. La sonrisa gélida parece congelar el aire entre ambos, y él traga saliva con dificultad, asintiendo con un movimiento mecánico de cabeza mientras intenta sostenerte la mirada.
+> Desde tu posición, solo ves la casaca de tela gruesa y los pliegues naturales de su ropa, que ocultan cualquier bulto o secreto que pudiera llevar encima. No hay nada evidente que destaque en sus bolsillos ni ningún objeto que rompa la silueta de su vestimenta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1827 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 459 — 370/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2826 ms
+
+> "Me alegra que nos entendamos tan bien, Melquíades."
+> Le doy una palmada condescendiente en el hombro mientras intento deslizar los dedos hacia sus bolsillos.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 18+4=22
+
+### [4] DM
+
+  32801 ms
+
+> Melquíades suelta un pequeño quejido ahogado cuando tu mano impacta en su hombro, tambaleándose ligeramente hacia un lado. Sus ojos se abren con sorpresa, pero el gesto condescendiente lo deja momentáneamente descolocado, atrapado en una mezcla de cortesía forzada y nerviosismo.
+> Aprovechando ese instante de desequilibrio, tus dedos se deslizan con precisión quirúrgica por la tela de su casaca. Sin que él note más que un roce insignificante, rescatas un pequeño cuaderno de cuero gastado, donde se vislumbran columnas de nombres y cifras anotadas con una caligrafía apresurada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8678 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = cuaderno de cuero gastado
+  ✓ creación item: cuaderno de cuero gastado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → ya existía: item cuaderno de cuero gastado
+  → delta 5343: Wynn.inventory = cuaderno de cuero gastado
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 460 — 371/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 2 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2244 ms
+
+> "Disculpe, caballero. No quería molestarle."
+> Guardo el cuaderno rápidamente entre mis ropas y me alejo con paso tranquilo.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 5+4=9
+
+### [4] DM
+
+  33408 ms
+
+> Melquíades parpadea, recobrando el equilibrio mientras se ajusta la casaca con un gesto torpe. Te dedica una sonrisa tensa y asiente con la cabeza, todavía algo aturdido por la rapidez de la interacción. "No se preocupe, joven, ocurre en las mejores familias", responde con un tono que intenta recuperar la compostura, aunque sus ojos vagan confundidos por un segundo hacia su costado.
+> Sin embargo, al darte la vuelta, el roce del cuaderno contra tu ropa produce un sonido seco y el volumen del objeto se marca visiblemente bajo la tela. Melquíades frunce el ceño y, con un movimiento instintivo, lleva la mano al bolsillo interior de su chaqueta. Su expresión cambia bruscamente de la cortesía al desconcierto absoluto cuando sus dedos encuentran el vacío.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5979 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Melquíades Sorna · npc.knowledge = Wynn le ha robado algo del bolsillo interior de su chaqueta
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5345: Melquíades Sorna.knowledge = Wynn le ha robado algo del bolsillo interior de su chaqu…
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 461 — 372/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+  30 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2701 ms
+
+> "Ha debido de caerse en algún sitio, Melquíades. Qué descuido."
+> Sigo caminando alejándome de él con paso tranquilo, manteniendo el cuaderno oculto.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 14+4=18
+
+### [4] DM
+
+  29813 ms
+
+> Melquíades se queda congelado un instante, con la mano aún hundida en el bolsillo vacío. Mira hacia el suelo, escudriñando el pavimento con una expresión de genuina preocupación, y luego vuelve a mirarte, convencido por tu tono despreocupado. Su rostro se relaja, aunque una sombra de frustración por su propia torpeza nubla su mirada.
+> "¿En serio? ¡Válgame los dioses, qué cabeza la mía!", exclama mientras suelta un suspiro resignado. Se queda allí plantado, mirando hacia atrás en la dirección por la que has venido, empezando a dar pasos erráticos y torpes para buscar el cuaderno que ya no está.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1634 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 462 — 373/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+  30 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3062 ms
+
+> "No te preocupes, probablemente lo dejaste en el camino. Yo te ayudo a buscarlo."
+> Me acerco a él manteniendo una expresión de ayuda mientras vigilo que nadie más se acerque.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 14+4=18
+
+### [4] DM
+
+  23324 ms
+
+> Melquíades se detiene en seco y te mira con una gratitud desbordante, sus ojos brillando con un alivio casi infantil. Se deja guiar por ti, confiando plenamente en que tu vigilancia es para facilitarle la tarea y no para asegurar que nadie interrumpa el engaño. "Eres un alma caritativa, de verdad. En estos tiempos de lobos disfrazados de pastores, encontrar a alguien con tal disposición es un milagro", exclama mientras comienza a caminar a tu lado, rebuscando entre los adoquines con torpeza.
+> El político se mantiene pegado a ti, moviéndose en círculos pequeños y distraído, totalmente convencido de que el cuaderno sigue allí fuera. Mientras camina, recuerda mencionar en un susurro, casi para sí mismo: "Si alguien pregunta, solo estamos repasando la ruta del desfile. No quiero que piensen que el candidato al consejo es un despistado... aunque sea evidente".
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1479 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 463 — 374/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+  30 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3047 ms
+
+> "No se preocupe. Su reputación está a salvo conmigo."
+> Sigo vigilando el entorno mientras observo discretamente los bolsillos y las pertenencias de Melquíades para ver qué más lleva encima.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 20+2=22  CRÍTICO
+
+### [4] DM
+
+  8941 ms
+
+> Melquíades suelta un suspiro de alivio y te dedica una sonrisa cómplice, caminando con pasos cortos y erráticos mientras sus ojos escanean el suelo con desesperación. El ruido del mercado y el bullicio de la gente crean una cortina perfecta de distracciones que el político aprovecha para seguir murmurando sobre sus promesas electorales, totalmente ajeno a tu escrutinio.
+> Tus ojos captan cada detalle con una precisión quirúrgica. Bajo la tela fina de su chaqueta, notas el relieve de un reloj de bolsillo de plata sujeto por una cadena desgastada y, en el bolsillo interior, el grosor inconfundible de un fajo de cartas dobladas y un sello de lacre rojo que asoma ligeramente. No hay rastro del cuaderno en su persona, pero el peso de esos documentos parece darle una importancia que contrasta con su torpeza actual.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4544 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: reloj de bolsillo de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item reloj de bolsillo de plata
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 464 — 375/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3539 ms
+
+> "Siga hablando, señor Melquíades. Sus promesas son fascinantes."
+> Me acerco a él aprovechando un tropiezo suyo para rozar su chaqueta. Intento sustraer el fajo de cartas con el sello rojo sin que lo note.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 1+4=5  PIFIA
+
+### [4] DM
+
+  10816 ms
+
+> Melquíades tropieza con una piedra del empedrado y se tambalea hacia adelante con un gemido. Al intentar aprovechar el roce para extraer los documentos, tu mano se enreda torpemente con el borde de su chaqueta y, en un movimiento brusco y accidentado, tiras con demasiada fuerza. El fajo de cartas no solo sale disparado del bolsillo, sino que el sello de lacre rojo se desprende violentamente, esparciendo varios de los papeles doblados sobre el suelo polvoriento y pisoteado del mercado.
+> El político se queda congelado, mirando los documentos desparramados a sus pies con una expresión de absoluto pánico. Sus ojos se abren de par en par mientras el bullicio del mercado parece desvanecerse para él, quedando solo el silencio sepulcral de su propia vulnerabilidad. "¡Mis notas! ¡Por los dioses, mis correspondencias!", exclama con voz aguda, lanzándose al suelo de manera torpe para intentar recoger los papeles antes de que algún transeúnte curioso se detenga a mirar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2292 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 465 — 376/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2768 ms
+
+> "Permítame ayudarle, señor."
+> Me agacho rápidamente para recoger los papeles antes que él, intentando filtrar cuáles son los más valiosos mientras los amonto.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 2+4=6
+
+### [4] DM
+
+  11603 ms
+
+> Tus dedos rozan el suelo con torpeza, chocando contra los de Melquíades en una danza caótica de pánico y urgencia. En el fragor del momento, no logras distinguir el contenido de las cartas; solo ves manchas de tinta y bordes amarillentos que se deslizan entre tus palmas. Recoges un puñado de papeles arrugados y se los extiendes, pero lo haces con tal precipitación que algunos folios quedan doblados por la mitad y otros se deslizan nuevamente hacia el polvo.
+> Melquíades arrebata el montón de tu mano con un gesto brusco, casi violento, abrazando los documentos contra su pecho como si fueran un tesoro sagrado. Su respiración es agitada y su rostro, antes cordial, está ahora contraído en una mueca de ansiedad pura. "¡Gracias, gracias! ¡No hace falta más!", exclama mientras retrocede un paso, alejándose de ti y escaneando nerviosamente los alrededores para asegurarse de que nadie haya leído nada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1631 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 466 — 377/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3134 ms
+
+> "Tómalo tranquilo. No he visto nada."
+> Me quedo quieto, observando la reacción de Melquíades y analizando sus gestos para ver qué es exactamente lo que tanto le asusta.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 16+0=16
+
+### [4] DM
+
+  13465 ms
+
+> Melquíades suelta un suspiro tembloroso, aunque sus hombros permanecen rígidos y sus dedos siguen apretando el papel con una fuerza excesiva. Al escuchar tus palabras, sus ojos se entrecierran ligeramente, evaluándote con una mezcla de alivio y suspicacia; no parece creer del todo que no hayas leído nada, pero la urgencia de la situación le impide cuestionarte ahora mismo.
+> A pesar de su intento de recuperar la compostura, notas que sus pupilas están dilatadas y que evita mantener la mirada fija en ti, desviándola constantemente hacia la puerta y los rincones de la estancia. No es el miedo a un peligro físico inmediato lo que lo agita, sino una ansiedad corrosiva, la clase de pánico que siente alguien que sabe que posee algo que no debería tener y que el menor descuido podría arruinar sus planes.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1160 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 467 — 378/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3387 ms
+
+> "Estás muy nervioso, Melquíades. No es el momento de que te traicione el pulso."
+> Me acerco un paso más a él, manteniendo una distancia neutral, mientras observo el papel que aprieta.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 5+0=5
+
+### [4] DM
+
+  7366 ms
+
+> Melquíades da un respingo brusco ante tu acercamiento, casi dejando escapar el papel. Se aclara la garganta con un sonido seco y trata de forzar una sonrisa que no llega a sus ojos, mientras endereza la espalda en un intento fallido de proyectar autoridad.
+> —El estrés de la campaña es... agotador, no más —balbucea, evitando mirarte a la cara y concentrando su atención en el documento que sigue arrugando entre sus dedos—. Solo quiero asegurarme de que todo esté en orden antes de que alguien más se haga preguntas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1616 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 468 — 379/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3028 ms
+
+> "Pareces muy nervioso, Melquíades. Y el nerviosismo suele ser el síntoma de un secreto caro."
+> Me inclino ligeramente hacia él, tratando de leer el contenido del papel sin que se dé cuenta.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 17+2=19
+
+### [4] DM
+
+  10550 ms
+
+> Melquíades se tensa visiblemente, encogiendo los hombros en un gesto instintivo para proteger el documento. Sus dedos tiemblan ligeramente, haciendo que el papel produzca un crujido sordo mientras intenta ocultarlo contra su pecho. Su mirada salta de un lado a otro del despacho, buscando una salida o una distracción, mientras una gota de sudor resbala por su sien.
+> —¡No sea usted tan dramático! —exclama con una voz un octavo más aguda de lo normal—. Son simples... ajustes contables. Detalles técnicos que un ciudadano común no comprendería.
+> A pesar de su torpeza, el ángulo de tu inclinación y su falta de reflejos te permiten captar fragmentos legibles del texto antes de que lo pliegue con brusquedad. Se trata de una lista de donaciones; nombres desconocidos, cifras inusualmente altas y una anotación al margen que resalta la falta de antecedentes fiscales de los aportantes.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7222 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.knowledge
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 469 — 380/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+  30 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2847 ms
+
+> "Ajustes contables, ¿eh? Me fascinan los detalles técnicos."
+> Sigo presionando para obligarlo a soltar el documento o dejarlo a mi alcance.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 14+2=16
+
+### [4] DM
+
+  9632 ms
+
+> Melquíades retrocede hasta que su espalda choca contra el borde de la pesada mesa de roble, quedando atrapado entre los muebles y tu presencia. El aire en el despacho se vuelve denso; el hombre traga saliva con dificultad y el papel, apretado contra su pecho, comienza a arrugarse bajo la presión de sus dedos blanquecinos. Sus ojos, muy abiertos, recorren tu rostro buscando un rastro de duda que no encuentra.
+> —Está bien, está bien... ¡no hay necesidad de llegar a tales extremos! —balbucea, mientras su resistencia se desmorona. Con un movimiento torpe y vacilante, extiende el brazo y deja que el documento resbale sobre la superficie de madera, alejándolo de sí mismo para ganar espacio personal. El papel queda allí, expuesto y a tu alcance, mientras él exhala un suspiro tembloroso y se encoge, esperando tu siguiente movimiento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8198 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento melquiades_sorna · threat_made
+  ✓ delta melquiades_sorna · npc.knowledge = Wynn es capaz de usar la intimidación para forzarlo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: melquiades_sorna
+  ✗ entidad inexistente: melquiades_sorna
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 470 — 381/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+  30 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3488 ms
+
+> "Sabia elección."
+> Recojo el documento de la mesa con calma y lo guardo rápidamente entre mis ropas. Aprovecho que Melquíades sigue agitado para echar un vistazo rápido al resto de la superficie de madera buscando otros papeles o llaves.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 15+2=17
+
+### [4] DM
+
+  8227 ms
+
+> El papel desaparece bajo tu ropa con un movimiento fluido, dejando a Melquíades temblando, con los hombros hundidos y la mirada fija en el vacío, aún procesando la tensión del encuentro. Mientras él lucha por recuperar el aliento, tu vista barre la superficie de roble, esquivando un tintero de plata y un pisapapeles de cristal.
+> En el borde de la mesa, medio oculto bajo una carpeta de cuero desgastado, destaca el brillo metálico de un juego de llaves sujeto por una cinta de seda roja. Junto a ellas, un pequeño trozo de pergamino doblado sobresale apenas unos milímetros, sugiriendo que hay algo más oculto bajo la carpeta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8456 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: item.inventory
+  ✓ creación item: juego de llaves con cinta de seda roja
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item juego de llaves con cinta de seda roja
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 471 — 382/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3740 ms
+
+> "Tiemblas demasiado, Melquíades. Recupera la compostura."
+> Aprovecho que sigue aturdido para deslizar la mano bajo la carpeta y tomar tanto las llaves como el pergamino.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  8471 ms
+
+> Melquíades exhala un suspiro tembloroso y se lleva una mano al pecho, cerrando los ojos mientras intenta estabilizar su respiración. Se queda ahí, sumido en un silencio vulnerable, ajeno a cualquier movimiento que no sea el rítmico subir y bajar de sus hombros.
+> Tus dedos se deslizan bajo el cuero desgastado con una precisión quirúrgica, casi etérea. Retiras las llaves y el pergamino en un solo movimiento fluido y silencioso, sin que el papel roce la mesa ni la carpeta se desplace un solo milímetro. Cuando Melquíades finalmente abre los ojos y parpadea, recuperando la compostura, el borde de la mesa está vacío.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  7755 ms · 0 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = juego de llaves con cinta de seda roja
+  ✓ delta Wynn · character.inventory = acta oficial de los Archiveros
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5385: Wynn.inventory = juego de llaves con cinta de seda roja
+  → delta 5386: Wynn.inventory = acta oficial de los Archiveros
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 472 — 383/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2340 ms
+
+> "Me alegra ver que se siente mejor, Melquíades."
+> Guardo los objetos rápidamente y me alejo de la mesa con paso tranquilo.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 14+4=18
+
+### [4] DM
+
+  9575 ms
+
+> Melquíades parpadea un par de veces, mirando el espacio vacío sobre la mesa con una expresión de ligera confusión, pero el rastro de su crisis nerviosa aún nubla su juicio. Te dedica una sonrisa débil y condescendiente, agradeciendo tus palabras con un gesto vago de la mano mientras se endereza en la silla, recomponiendo su dignidad de candidato.
+> —Gracias, amigo mío. A veces la carga del deber es... abrumadora —responde con voz todavía algo quebrada, sin sospechar que el contenido de su carpeta ha cambiado de dueño—. Solo un momento de debilidad. Por favor, perdona que me haya ausentado mentalmente de nuestra charla.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1452 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 473 — 384/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2830 ms
+
+> "No tiene por qué disculparse. Todos tenemos nuestros demonios."
+> Le devuelvo la sonrisa mientras guardo la carpeta discretamente bajo mi ropa.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 12+4=16
+
+### [4] DM
+
+  6978 ms
+
+> Melquíades suelta un suspiro largo, relajando los hombros mientras se deja caer contra el respaldo de la silla. Sus ojos, aún ligeramente vidriosos, se fijan en los tuyos con una gratitud genuina, convencido de que ha encontrado en ti a un confidente comprensivo y discreto.
+> —Ciertamente, los demonios son más ruidosos cuando uno intenta conducir un pueblo hacia la prosperidad —comenta con una risita nerviosa, mientras comienza a jugar con el anillo de su dedo anular, totalmente ajeno al hecho de que sus documentos ya no están sobre la mesa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4888 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = carpeta de cuero negro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5392: Wynn.inventory = carpeta de cuero negro
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 474 — 385/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3365 ms
+
+> "Entiendo perfectamente. La gratitud es una carga pesada, pero el silencio es un valor muy cotizado."
+> Guardo los documentos con cuidado y observo el anillo que manipula para ver si tiene algún valor o sello especial.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 11+2=13
+
+### [4] DM
+
+  7001 ms
+
+> Melquíades asiente con lentitud, esbozando una sonrisa melancólica mientras sigue absorto en sus pensamientos, dejándose llevar por la comodidad de la conversación. El ambiente en la estancia se vuelve más relajado, impregnado del aroma a papel viejo y cera de vela.
+> Al fijar la vista en su mano, notas que el anillo es de una plata desgastada por el tiempo. En el centro, destaca una piedra de color amatista pálida, engastada de forma sencilla. No parece ser una pieza de joyería ostentosa ni lleva ningún sello oficial o heráldico visible que indique un linaje noble o una afiliación institucional.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1895 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 475 — 386/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2942 ms
+
+> "Un anillo curioso, aunque modesto."
+> Me inclino ligeramente hacia delante, tratando de observar si hay alguna inscripción pequeña o marca oculta en el interior de la banda de plata.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+1=17
+
+### [4] DM
+
+  6016 ms
+
+> Al inclinarte, la luz de las velas se refleja en la plata gastada, permitiéndote vislumbrar el interior de la banda. Allí, grabadas con una caligrafía minúscula y algo irregular, se distinguen tres palabras que parecen haber sido añadidas posteriormente al forjado original: *«Sempre per Valle»*.
+> Melquíades no retira la mano, aunque percibe tu interés. Su sonrisa se ensancha apenas un milímetro y deja escapar un suspiro tranquilo, observando el anillo como si fuera un recordatorio silencioso de una promesa antigua.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5165 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: anillo de plata
+  ⚠ nombres no reconocidos: Sempre
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item anillo de plata
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 476 — 387/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 19.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2525 ms
+
+> "Una inscripción curiosa. No parece parte del diseño original."
+> Mantengo mi expresión neutra mientras intento analizar la reacción de Melquíades ante mi descubrimiento.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+0=20  CRÍTICO
+
+### [4] DM
+
+  7757 ms
+
+> Melquíades no parpadea, pero el músculo de su mandíbula se tensa un instante antes de relajarse por completo. Su mirada, que hasta ahora era meramente cordial, se vuelve penetrante y analítica; hay un destello de orgullo genuino mezclado con una cautela instintiva, como quien ha sido descubierto guardando un tesoro que no desea presumir, pero que le otorga una seguridad invisible.
+> —El tiempo añade capas a las cosas, joven —responde con una voz que ha ganado una profundidad inesperada—. Algunas son meras manchas de óxido, otras son el alma misma del objeto. Aquella frase es, sin duda, lo que mantiene este anillo en mi dedo y mi propósito en pie.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3272 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Melquíades Sorna · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5401: Melquíades Sorna affinity 19.0 → 21.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 21.0 (cordial), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 477 — 388/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 21.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2779 ms
+
+> "Parece que ese anillo es más que una simple joya." 
+> Me inclino ligeramente para observar mejor la pieza y trato de analizar el valor real del objeto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 13+1=14
+
+### [4] DM
+
+  8845 ms
+
+> Al acercarte, el anillo revela su verdadera naturaleza bajo la luz. No es el brillo ostentoso del oro nuevo, sino el fulgor denso y aceitoso del oro antiguo, trabajado con una técnica de filigrana que ya no se practica en el Valle. La piedra central, una gema de un tono amatista profundo, no tiene las facetas perfectas de la joyería moderna, sino que ha sido tallada en una forma orgánica que parece atrapar la luz en su núcleo.
+> Melquíades no retira la mano, permitiendo la inspección, aunque mantiene el dedo ligeramente rígido. La pieza es genuina y su valor material es considerable, pero es la pátina de desgaste en el interior de la banda lo que delata que ha sido portada día y noche durante décadas, convirtiéndose en una extensión física de quien lo lleva.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1999 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 21.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 478 — 389/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 21.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4053 ms
+
+> "Es una pieza fascinante, Melquíades. Casi parece que tuviera alma."
+> Sigo examinando la banda interior, buscando cualquier inscripción, sello oculto o marca de propiedad que no sea el simple desgaste.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  9516 ms
+
+> Tus dedos recorren con precisión milimétrica el interior de la banda, donde el metal se siente más delgado y cálido. Bajo una capa de suciedad endurecida y el roce de los años, descubres un grabado microscópico, casi invisible al ojo inexperto: un sello heráldico compuesto por una pluma entrelazada con una llave, flanqueado por una fecha que precede a la fundación del actual consejo del Valle. No es una marca de joyería, sino un signo de pertenencia a una estirpe o una orden olvidada.
+> Melquíades deja escapar un suspiro corto, una mezcla de alivio y resignación, mientras observa cómo desentrañas el secreto del anillo. 
+> —Tienes un ojo clínico, forastero. Ese sello... pertenece a una historia que mi familia ha preferido mantener en los márgenes de los libros oficiales.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3998 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Melquíades Sorna · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5411: Melquíades Sorna affinity 21.0 → 23.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 23.0 (cordial), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 479 — 390/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 23.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2589 ms
+
+> "Una historia que no aparece en los libros suele ser la más valiosa."
+> Sigo examinando el sello mientras mantengo la mirada en Melquíades.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+0=3
+
+### [4] DM
+
+  6400 ms
+
+> Melquíades esboza una sonrisa débil, pero sus ojos no acompañan el gesto; se mantienen fijos en el anillo, volleros y cargados de una cautela que no había mostrado hasta ahora. Al sostenerle la mirada, notas que el hombre evita el contacto visual directo, desviando la vista hacia un punto impreciso de la habitación mientras se aclara la garganta con nerviosismo.
+> —El valor es una cuestión de perspectiva, amigo mío —responde con una voz que ha perdido parte de su seguridad habitual—. A veces, que algo haya sido borrado de los libros es la mejor garantía de que debía permanecer así.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1108 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 23.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 480 — 391/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 23.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2885 ms
+
+> "La perspectiva no paga las cuentas, Melquíades. Dime qué es lo que tanto te asusta de este anillo."
+> Me inclino hacia él, manteniendo la presión psicológica.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+0=6
+
+### [4] DM
+
+  7942 ms
+
+> Melquíades retrocede instintivamente, chocando con el borde de su escritorio. Sus dedos tamborilean sobre la madera con un ritmo errático y una gota de sudor resbala por su sien mientras intenta recuperar la compostura. Se endereza, aunque sus hombros permanecen encogidos, y su sonrisa ahora es una mueca tensa que no logra ocultar el temblor de su barbilla.
+> —¿Asustar? No es miedo, es... prudencia política —balbucea, desviando la mirada hacia la puerta cerrada de la habitación—. Solo digo que hay piezas que, una vez movidas, pueden derribar todo el tablero. No busco asustarme, busco que el Valle del Corral siga siendo un lugar tranquilo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1207 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 23.0 (cordial), 3 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 481 — 392/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 23.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  41888 ms
+
+> "La prudencia es una virtud, Melquíades, pero el silencio es una moneda más valiosa."
+> Me acerco lentamente a él, invadiendo su espacio personal para presionarlo.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 12+2=14
+
+### [4] DM
+
+  9133 ms
+
+> Melquíades se queda congelado mientras acortas la distancia, sintiendo el peso de tu presencia sobre él. El aire en la habitación parece espesarse y el hombre retrocede hasta que su espalda choca violentamente contra el respaldo de su silla, que chirría contra el suelo de madera. Sus ojos se abren con una mezcla de pánico y sumisión, y el tamborileo de sus dedos cesa abruptamente, quedando sus manos suspendidas en el aire, temblorosas.
+> —Tú... tú no eres como los otros consejeros —susurra con la voz quebrada, tragando saliva con dificultad mientras intenta evitar el contacto visual—. Tienes razón. El silencio es valioso, pero el riesgo es... es abrumador. Solo dime qué es exactamente lo que quieres y veré qué puedo hacer sin que el tablero se desplome sobre nosotros.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2824 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Melquíades Sorna · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5425: Melquíades Sorna affinity 23.0 → 13.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 13.0 (cordial), 3 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 482 — 393/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 13.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 703 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3739 ms
+
+> "Quiero que me digas qué es lo que tanto te aterra que se sepa, Melquíades. Y quiero que el precio de mi silencio sea muy, muy generoso."
+> Me inclino sobre él, invadiendo su espacio personal para mantener la presión.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 14+2=16
+
+### [4] DM
+
+  11360 ms
+
+> Melquíades se encoge en su asiento, sintiendo el aliento y la proximidad asfixiante. El sudor comienza a perlar su frente y un tic nervioso sacude su mejilla izquierda mientras el aire parece escapársele de los pulmones. Abre la boca para protestar, pero el sonido que sale es un gemido ahogado; la presión es demasiada y su voluntad se quiebra bajo la mirada implacable.
+> —¡Está bien! ¡Lo admito! —exclama en un susurro frenético, cerrando los ojos con fuerza—. Algunos de los donativos... los fondos más recientes de mi campaña... provienen de fuentes anónimas, gente que jamás había mostrado interés en la política del Valle. No sé quiénes son ni por qué pagan, pero si Bibiana se entera de que mi apoyo es artificial, me destruirá antes de que llegue la votación. Te daré lo que pidas, cualquier cifra, cualquier favor... solo no permitas que esto salga de esta habitación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6229 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Melquíades Sorna · threat_made
+  ✓ delta Melquíades Sorna · npc.secret_revealed = donativos artificiales
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5428: Melquíades Sorna affinity 13.0 → 3.0  (mid)
+     Cede en el momento, lo guarda.
+  → delta 5429: Melquíades Sorna.secret_revealed = donativos artificiales
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 3.0 (neutral), 3 hechos, 1 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 483 — 394/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos conocidos
+  31 entidades · contexto de 879 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3033 ms
+
+> "Tus secretos son una moneda muy valiosa, Melquíades. Y yo siempre cobro mis favores."
+> Suelto la presión sobre él y me separo lentamente, manteniendo una expresión gélida.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 13+2=15
+
+### [4] DM
+
+  8495 ms
+
+> Melquíades exhala un jadeo violento, como quien recupera el aire tras hundirse en aguas profundas. Se desploma contra el respaldo de su asiento, con la camisa arrugada y el rostro pálido, mientras se limpia el sudor de la frente con un pañuelo tembloroso. Sus ojos, aún dilatados por el pánico, te siguen con una mezcla de alivio y un miedo renovado; ahora sabe que no eres un simple interlocutor, sino alguien que posee la llave de su ruina.
+> —Lo acepto... lo acepto todo —balbucea, intentando recuperar la compostura aunque su voz sigue quebrada—. Solo dime qué necesitas. Dinero, influencias en el consejo, acceso a los registros del Valle... lo que sea. Solo necesito que este silencio sea permanente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5394 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Melquíades Sorna · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5434: Melquíades Sorna affinity 30.0 → 20.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Bibiana Roth: alive, aprecio 30.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 484 — 395/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 20.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 459 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3265 ms
+
+> "Tus influencias en el consejo me sirven, pero el acceso a los registros es lo que realmente me interesa."
+> Me inclino hacia él, manteniendo el tono frío, y observo sus reacciones mientras hablo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+0=9
+
+### [4] DM
+
+  5321 ms
+
+> Melquíades asiente con frenesí, casi con desesperación, mientras se inclina hacia adelante para cerrar la distancia, como si buscaras un pacto sagrado en el susurro. Sus dedos se aferran con fuerza a los brazos de la silla y una pequeña sonrisa nerviosa, carente de cualquier rastro de sinceridad, asoma en sus labios mientras intenta recuperar un ápice de su dignidad política.
+> —Los registros... por supuesto. Es una petición modesta comparada con el precio de mi nombre —responde, aunque sus ojos esquivan los tuyos, moviéndose inquietos por la estancia mientras traga saliva con dificultad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1349 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 20.0 (cordial), 3 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 485 — 396/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 20.0 (cordial), 3 hechos conocidos
+  30 entidades · contexto de 459 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3816 ms
+
+> "Me alegra que estemos de acuerdo, Melquíades. La modestia es una virtud poco común en tu posición."
+> Me inclino hacia él, manteniendo la presión psicológica, y busco cualquier papel o anotación que haya dejado a la vista en la estancia.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 9+2=11
+
+### [4] DM
+
+  8082 ms
+
+> Melquíades suelta una risita seca, casi un espasmo, y se endereza en la silla intentando recuperar una compostura que se desmorona con cada segundo de silencio. Sus ojos siguen saltando de un lado a otro, evitando el contacto directo mientras se aclara la garganta con un ruido áspero.
+> —La virtud es... una herramienta útil, dependiendo de quién la empuñe —murmura, mientras se retuerce los dedos sobre la madera del apoyabrazos.
+> Tus ojos recorren el despacho, escrutando la superficie de la mesa y los rincones visibles de la estancia, pero el orden es meticuloso. No hay notas descuidadas, ni fragmentos de pergamino olvidados, ni ninguna pista que haya sobrevivido al pánico de Melquíades antes de tu llegada. Solo queda el eco de su respiración agitada y el vacío de una mesa demasiado limpia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1491 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 20.0 (cordial), 3 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 486 — 397/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 20.0 (cordial), 3 hechos conocidos
+  30 entidades · contexto de 459 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2463 ms
+
+> "¿Herramienta para quién, exactamente?"
+> Me inclino hacia él, invadiendo su espacio personal para presionarlo.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 1+2=3  PIFIA
+
+### [4] DM
+
+  11004 ms
+
+> Melquíades se encoge violentamente ante tu movimiento, pero en lugar de quebrarse, el susto provoca que se eche hacia atrás con un espasmo tan brusco que su silla chirría estridentemente contra el suelo. En el forcejeo torpe por recuperar el equilibrio, su brazo golpea el borde de la mesa, volcando un tintero que no habías visto. La tinta negra se derrama rápidamente sobre la madera pulida y salpica el frente de su jubón, manchando la tela clara con una mancha irregular y oscura.
+> El hombre se queda congelado, mirando la mancha en su pecho con una expresión de absoluta estupefacción. El miedo se transforma en una irritación gélida y su mirada, ahora fija en ti, se vuelve distante.
+> —Vaya... qué delicadeza —dice con una voz que ha recuperado una calma cortante—. Me temo que vuestra insistencia ha superado vuestra educación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3716 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento melquiades_sorna · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: melquiades_sorna
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 20.0 (cordial), 3 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 487 — 398/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 20.0 (cordial), 3 hechos conocidos
+  30 entidades · contexto de 459 caracteres
+
+### [2] JUGADOR — Wynn
+
+  7579 ms
+
+> "Un accidente lamentable, Melquíades. Pero la tinta se quita; la verdad, no tanto."
+> Sigo presionando, aprovechando que sigue aturdido por la mancha para intentar intimidarlo.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 16+2=18
+
+### [4] DM
+
+  8065 ms
+
+> Melquíades abre la boca para replicar, pero el aire se le queda atrapado en la garganta cuando siente la presión de tu presencia. El brillo de irritación en sus ojos se apaga, reemplazado por un parpadeo rápido y errático. Retrocede un centímetro más en su silla, que vuelve a chirriar, y sus manos, que antes buscaban limpiar la mancha, ahora se aferran con fuerza a los reposabrazos, dejando los nudillos blancos.
+> —Está bien, está bien... —balbucea, bajando la voz y mirando nerviosamente hacia la puerta del despacho—. No es necesario llegar a tales extremos. La verdad es un concepto elástico en el Valle del Corral, pero reconozco que vuestro temple no es precisamente el de un diplomático.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3268 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento melquiades_sorna · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: melquiades_sorna
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 20.0 (cordial), 3 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 488 — 399/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 20.0 (cordial), 3 hechos conocidos
+  30 entidades · contexto de 459 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3526 ms
+
+> "Me gusta que seas flexible con la verdad. Ahora, dime qué es lo que realmente ocultas en este despacho."
+> Me inclino hacia él, manteniendo la presión, mientras dejo que mi mirada recorra el resto de la habitación buscando papeles o cajones mal cerrados.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 3+2=5
+
+### [4] DM
+
+  6028 ms
+
+> Melquíades traga saliva, su manzana de Adán subiendo y bajando con brusquedad. Se encoge en el asiento, evitando el contacto visual mientras intenta recuperar un hilo de dignidad, aunque su voz sigue sonando quebrada y apresurada.
+> —¿Ocultar? Yo no oculto, simplemente... organizo la información según su relevancia para el bien común —responde, lanzando una mirada fugaz y cargada de ansias hacia un pesado armario de madera oscura al fondo de la estancia—. No hay nada aquí que no sea administrativo, se lo aseguro. Solo papeles aburridos sobre impuestos y lindes de tierras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1203 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Adán
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 20.0 (cordial), 3 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 489 — 400/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 20.0 (cordial), 3 hechos conocidos
+  30 entidades · contexto de 459 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2212 ms
+
+> "Tus nervios dicen lo contrario, Melquíades."
+> Me levanto y camino lentamente hacia el armario de madera oscura.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 10+2=12
+
+### [4] DM
+
+  6539 ms
+
+> Melquíades suelta un gemido ahogado y se inclina hacia delante, extendiendo una mano temblorosa como si quisiera interceptar tu camino sin llegar a tocarte. Sus ojos se clavan en tus botas mientras caminas, y el sudor comienza a perlarle la frente, haciendo que el cuello de su camisa se pegue a la piel.
+> Al llegar frente al armario, el aroma a cera vieja y polvo te envuelve. A simple vista, las puertas de madera oscura están cerradas y el mueble parece sólido, pero notas que el polvo sobre la superficie no es uniforme; hay marcas recientes de dedos y un roce circular en la cerradura que indica que ha sido abierta con frecuencia en los últimos días.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1772 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 20.0 (cordial), 3 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 490 — 401/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 20.0 (cordial), 3 hechos conocidos
+  30 entidades · contexto de 459 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3355 ms
+
+> "Quédate donde estás, Melquíades. No me obligues a quitarte el brazo."
+> Ignoro al hombre y me concentro en el armario. Intento abrir la cerradura sin dejar rastro.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 13+4=17
+
+### [4] DM
+
+  6902 ms
+
+> Melquíades se queda petrificado, con la mano suspendida en el aire y la respiración agitada. Abre la boca para replicar, pero el sonido muere en su garganta; se desploma lentamente sobre su silla, hundiendo los hombros mientras observa con pánico mudo el movimiento de tus dedos sobre el metal.
+> El mecanismo de la cerradura cede con un clic casi imperceptible, suave como un suspiro. Las puertas de madera oscura se deslizan hacia atrás sin chirriar, revelando el interior del armario y dejando la superficie exterior intacta, sin una sola marca nueva que delate la intrusión.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3254 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Melquíades Sorna · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5444: Melquíades Sorna affinity 20.0 → 10.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 10.0 (cordial), 3 hechos, 1 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 491 — 402/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 10.0 (cordial), 3 hechos conocidos
+  30 entidades · contexto de 459 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2357 ms
+
+> "Quédate así. No te muevas."
+> Ignoro a Melquíades y me asomo al interior del armario para registrar rápidamente el contenido.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+1=15
+
+### [4] DM
+
+  13100 ms
+
+> El interior del armario huele a papel viejo y a un rastro tenue de cera de vela. Entre varias túnicas de seda que cuelgan con pesadez, destaca un doble fondo en la base, oculto bajo un falso suelo de madera. Al deslizarlo, aparece un pequeño cofre de hierro forjado, sin adornos, que contiene un fajo de cartas selladas con lacre rojo y un libro de cuentas encuadernado en cuero gastado, donde los nombres de ciertos ciudadanos del Valle del Corral aparecen subrayados con tinta negra.
+> Melquíades permanece hundido en la silla, con la mirada fija en el vacío y el pecho subiendo y bajando en espasmos cortos. No ha emitido un solo sonido, pero el sudor frío le recorre las sienes mientras observa, paralizado, cómo registras sus secretos más íntimos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5218 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: cofre de hierro forjado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cofre de hierro forjado
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 10.0 (cordial), 3 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 492 — 403/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 10.0 (cordial), 3 hechos conocidos
+  31 entidades · contexto de 459 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3072 ms
+
+> "No te muevas y quizá termines el día respirando."
+> Tomo el libro de cuentas y las cartas, guardándolos rápidamente en mi ropa.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 9+4=13
+
+### [4] DM
+
+  7435 ms
+
+> Melquíades ni siquiera parpadea ante la amenaza; permanece petrificado, con los ojos dilatados y la respiración errática, como si el terror lo hubiera anclado a la madera de la silla. Sus dedos se crispan levemente sobre los reposabrazos, pero no hace el menor intento de intervenir ni de protestar mientras registras el armario.
+> El libro de cuero y el fajo de cartas desaparecen bajo tu ropa con un movimiento fluido, aunque el roce del hierro del cofre contra la madera del armario produce un chasquido seco que resuena en el silencio tenso de la habitación. Melquíades gira la cabeza lentamente hacia el lugar donde estaba el cofre, soltando un gemido ahogado que se pierde en su garganta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  10273 ms · 1 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Melquíades Sorna · threat_made
+  ✓ delta Wynn · character.inventory = libro de cuentas
+  ✓ delta Wynn · character.inventory = cartas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5450: Melquíades Sorna affinity 10.0 → 0.0  (mid)
+     Cede en el momento, lo guarda.
+  → delta 5451: Wynn.inventory = libro de cuentas
+  → delta 5452: Wynn.inventory = cartas
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 0.0 (neutral), 3 hechos, 1 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 493 — 404/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 0.0 (neutral), 3 hechos conocidos
+  31 entidades · contexto de 459 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4173 ms
+
+> "No hagas ruido si quieres seguir respirando."
+> Me acerco a Melquíades y le pongo una mano firme en el hombro, observando su reacción y buscando cualquier otro objeto de valor que haya podido ocultar en su persona.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 9+0=9
+
+### [4] DM
+
+  6793 ms
+
+> Melquíades se encoge bajo la presión de tu mano, sollozando en un susurro roto mientras su cuerpo tiembla violentamente. El hombre parece haber perdido toda voluntad, reduciéndose a un ovillo de miedo que apenas logra sostener la mirada, evitando cualquier contacto visual directo.
+> A pesar de su estado, no percibes ninguna señal de que oculte algo más entre sus ropas; su agitación es genuina y no hay bultos sospechosos ni movimientos evasivos que sugieran la presencia de otros objetos de valor ocultos en su persona.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1460 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio 0.0 (neutral), 3 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 494 — 405/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio 0.0 (neutral), 3 hechos conocidos
+  31 entidades · contexto de 459 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4331 ms
+
+> "Ya basta de lágrimas. Dime dónde guardas el resto."
+> Aprieto más el agarre para recordarle que sigo aquí y busco cualquier detalle en su expresión que indique que sabe de algún escondite cercano.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 4+2=6
+
+### [4] DM
+
+  6486 ms
+
+> Melquíades deja escapar un gemido ahogado y cierra los ojos con fuerza, apretando los párpados mientras que el temblor de sus hombros se intensifica. El hombre se encoge aún más, intentando hacerse pequeño bajo tu agarre, pero su rostro no refleja la chispa de quien guarda un secreto, sino el vacío absoluto del pánico.
+> —¡No hay nada más! ¡Lo juro por el Valle! —solloza, con la voz quebrada y el rostro empapado en lágrimas—. No tengo nada más que darte, por favor... ¡suéltame!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4252 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Melquíades Sorna · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5455: Melquíades Sorna affinity 0.0 → -10.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -10.0 (cold), 3 hechos, 1 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 495 — 406/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -10.0 (cold), 3 hechos conocidos
+  31 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3199 ms
+
+> "Tus juramentos no tienen valor si no hay una moneda que los respalde."
+> Lo suelto bruscamente y registro sus bolsillos y ropas buscando cualquier objeto oculto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+1=19
+
+### [4] DM
+
+  7593 ms
+
+> Melquíades cae al suelo con un golpe seco, sollozando mientras se abraza a sí mismo, temblando violentamente sobre las tablas del piso. Sus ojos, inyectados en sangre y nublados por el terror, siguen cada uno de tus movimientos con la mirada fija, sin atreverse a levantar una mano para defenderse mientras registras sus prendas.
+> Tus manos encuentran rápidamente un pequeño compartimento cosido en el forro interior de su jubón, oculto bajo la costura. Al rasgar la tela, extraes un sello de lacre de color violeta oscuro con el emblema de un libro cerrado y una llave cruzada, junto a una nota breve y arrugada que reza: *"El silencio es la única moneda que no se devalúa"*.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5467 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: sello de lacre violeta
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item sello de lacre violeta
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -10.0 (cold), 3 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 496 — 407/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -10.0 (cold), 3 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3678 ms
+
+> "Llora todo lo que quieras. No te servirá de nada."
+> Guardo el sello y la nota en mi propio bolsillo. Ahora me dedico a registrar el resto de sus pertenencias buscando monedas o joyas.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 6+1=7
+
+### [4] DM
+
+  6107 ms
+
+> Melquíades emite un gemido ahogado, un sonido gutural que se pierde entre sus sollozos mientras se encoge más sobre sí mismo, evitando cualquier contacto visual. Sus dedos rasguñan débilmente las tablas del suelo, pero no opone resistencia, entregado al pánico que lo consume.
+> Tus manos recorren el resto de sus ropas y bolsillos, pero solo encuentras telas desgastadas y el vacío. No hay monedas tintineando ni el brillo de ninguna joya oculta en sus prendas; el hombre no posee nada de valor material en ese momento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6409 ms · 0 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = sello de lacre violeta
+  ✓ delta Wynn · character.inventory = nota anónima
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5457: Wynn.inventory = sello de lacre violeta
+  → delta 5458: Wynn.inventory = nota anónima
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -10.0 (cold), 3 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 497 — 408/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -10.0 (cold), 3 hechos conocidos
+  31 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3845 ms
+
+> "Llorar no te devolverá lo que has perdido, pero hablar podría salvarte."
+> Me inclino sobre él, manteniendo una presión fría en su cuello para recordarle quién tiene el control. 
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 10+2=12
+
+### [4] DM
+
+  5681 ms
+
+> Melquíades se tensa bajo la presión de tus dedos, sintiendo el frío acero de tu voluntad contra su garganta. Sus sollozos se interrumpen bruscamente, transformándose en una respiración errática y superficial. El pánico sigue ahí, nublando sus ojos, pero la amenaza física y la crudeza de tus palabras logran anclarlo a la realidad.
+> —Yo... yo no tengo nada —balbucea con la voz rota, temblando violentamente—. Solo soy un servidor... un instrumento... ¡Por favor, suélteme! No sé nada que pueda interesarle a alguien como usted.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4085 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Melquíades Sorna · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5460: Melquíades Sorna affinity -10.0 → -20.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -20.0 (cold), 3 hechos, 1 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 498 — 409/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -20.0 (cold), 3 hechos conocidos
+  31 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3648 ms
+
+> "Los instrumentos suelen saber dónde se guardan las herramientas más valiosas. No me hagas perder el tiempo."
+> Presiono el acero un poco más contra su piel mientras busco con la mirada cualquier objeto oculto en su ropa o en el entorno inmediato.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 17+2=19
+
+### [4] DM
+
+  7518 ms
+
+> El filo muerde la piel y una gota de sangre comienza a resbalar por el cuello de Melquíades, quien emite un sonido ahogado, casi un gemido. El pánico se transforma en una sumisión absoluta; sus ojos se dilatan y el temblor de sus manos se vuelve espasmódico. La fachada del servidor se desmorona por completo ante la frialdad del acero.
+> —¡Está bien! ¡Está bien! —estalla en un susurro desesperado, cerrando los ojos con fuerza—. En el escritorio... el tercer cajón, el que tiene el cierre de latón. Hay un libro de cuentas y una llave de plata. ¡Ahí está todo lo que necesito para servir! ¡Por favor, retírelo ya!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9756 ms · 1 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Melquíades Sorna · threat_made
+  ✓ delta Melquíades Sorna · npc.knowledge = En el tercer cajón del escritorio hay un libro de cuentas y una llave de plata
+  ✓ creación item: llave de plata
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item llave de plata
+  → delta 5462: Melquíades Sorna affinity -20.0 → -30.0  (mid)
+     Cede en el momento, lo guarda.
+  → delta 5463: Melquíades Sorna.knowledge = En el tercer cajón del escritorio hay un libro de cuenta…
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos, 1 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 499 — 410/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3106 ms
+
+> "Quédate muy quieto si no quieres que la gota se convierta en río."
+> Retiro el arma lentamente y me dirijo al escritorio para abrir el cajón de latón.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 6+4=10
+
+### [4] DM
+
+  6146 ms
+
+> Melquíades exhala un aire tembloroso, manteniendo el cuello rígido y la mirada clavada en el vacío mientras el acero se aleja de su piel. Permanece inmóvil, con el pecho subiendo y bajando en espasmos cortos, evitando cualquier movimiento que pudiera ser interpretado como una provocación.
+> Al llegar al escritorio, deslizas los dedos hacia el tercer cajón. El cierre de latón opone una resistencia mecánica, un mecanismo simple pero firme que se resiste a ceder ante el intento rápido. El cajón permanece cerrado, manteniendo el libro de cuentas y la llave de plata ocultos tras la madera.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3657 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 500 — 411/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2508 ms
+
+> "Quédate así. No te muevas."
+> Saco mis herramientas de ladrón y trabajo el cierre de latón con calma.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 9+4=13
+
+### [4] DM
+
+  6756 ms
+
+> El metal de las herramientas chirría levemente contra el mecanismo, un sonido seco que resuena en el silencio tenso de la habitación. El cierre de latón opone una resistencia obstinada; a pesar de tus movimientos precisos, el resorte interno no cede y la cerradura permanece bloqueada, manteniendo el contenido del cajón fuera de tu alcance.
+> Melquíades sigue petrificado, con los ojos muy abiertos y fijos en el vacío, aunque un ligero temblor comienza a sacudir sus hombros. El sonido del metal chocando contra el cierre lo hace tragar saliva con dificultad, pero permanece inmóvil, presa del pánico y de tu orden.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5828 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 501 — 412/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3294 ms
+
+> "Deja de temblar, Melquíades. Me pones nervioso."
+> Suelto las herramientas y me giro hacia él. Lo agarro firmemente por la barbilla para obligarlo a mirarme a los ojos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 13+2=15
+
+### [4] DM
+
+  6953 ms
+
+> Melquíades suelta un jadeo ahogado cuando tus dedos cierran el agarre sobre su barbilla. Sus pupilas están dilatadas y el sudor le perla la frente, reflejando la luz tenue de la estancia. Al verse forzado a sostenerte la mirada, el temblor de sus hombros se detiene bruscamente, reemplazado por una rigidez absoluta, como si cualquier movimiento pudiera provocar que tu presión aumentara.
+> —Yo... yo no quería... —balbucea con la voz quebrada, mientras sus ojos saltan frenéticamente de tu rostro al cajón cerrado—. Por favor, no me obligue a decir nada que pueda... que pueda perjudicar la Candidatura. No sabe en qué se está metiendo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  12698 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento melquiades_sorna · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: melquiades_sorna
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 502 — 413/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3128 ms
+
+> "No me interesan las Candidaturas, solo lo que guardas ahí dentro."
+> Aprieto el agarre en su barbilla y miro fijamente sus ojos para detectar cualquier señal de engaño.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 19+2=21
+
+### [4] DM
+
+  7464 ms
+
+> El rostro de Melquíades se contrae, y un espasmo de terror genuino recorre su cuello mientras siente que tu agarre no cede. Su resistencia se desmorona en un sollozo seco; el pánico ha sustituido a la lealtad política. Sus ojos, humedecidos y erráticos, se clavan en los tuyos, reconociendo que la amenaza es inmediata y real.
+> —¡Está bien! ¡Está bien! —exclama en un susurro desesperado, cerrando los ojos con fuerza—. Es un registro... una lista de nombres y pagos. ¡Solo es un libro de cuentas! Por favor, suélteme, se lo daré todo, solo no me haga daño.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  35594 ms · 1 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento melquiades_sorna · threat_made
+  ✓ delta melquiades_sorna · npc.knowledge = El libro de cuentas contiene una lista de nombres y pagos
+  ✓ creación item: libro de cuentas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → ya existía: item libro de cuentas
+  ✗ PNJ inexistente: melquiades_sorna
+  ✗ entidad inexistente: melquiades_sorna
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 503 — 414/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2288 ms
+
+> "Me gusta que seas razonable. Ahora, dime exactamente dónde está."
+> Le suelto el cuello bruscamente y lo empujo contra la pared.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 2+2=4
+
+### [4] DM
+
+  7015 ms
+
+> Melquíades choca contra la pared con un golpe seco que le saca el aire, dejándolo jadeando y encogido sobre sí mismo. El terror inicial se transforma rápidamente en una expresión de resentimiento mientras recupera el aliento; el pánico ha dado paso a una cautela gélida al notar que el peligro físico inmediato ha cesado.
+> Se endereza lentamente, limpiándose el polvo de la chaqueta con manos temblorosas, pero evita mirarte a los ojos. — Ya he dicho lo que sabía —masmulla con voz cortante y distante, apretando los labios mientras se aleja un paso, manteniendo una distancia prudencial y observando la salida con ansiedad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  9767 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento melquiades_sorna · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: melquiades_sorna
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 504 — 415/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2301 ms
+
+> "No me gusta repetir las preguntas, y mucho menos las respuestas."
+> Me acerco a él lentamente, invadiendo su espacio personal para presionarlo contra la pared otra vez.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 8+2=10
+
+### [4] DM
+
+  6830 ms
+
+> Melquíades se tensa cuando vuelves a acortar la distancia, encogiéndose instintivamente contra el muro. Sus ojos se abren con pánico y el aire vuelve a escapársele en un jadeo sordo, pero cuando nota que el impacto físico no se repite, su rostro se endurece. Clava la mirada en un punto cualquiera de tu hombro, apretando los puños con fuerza mientras sus nudillos se vuelven blancos.
+> — ¿Crees que el miedo me hará inventar cosas que no existen? —escupe con una voz que tiembla, aunque intenta sonar firme—. Ya te he dado la información. No hay nada más que sacar de mí, por mucho que me empujes.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  13399 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento melquiades_sorna · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: melquiades_sorna
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 505 — 416/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2582 ms
+
+> "El miedo no me sirve para inventar, sino para recordar lo que has olvidado decirme."
+> Le sujeto la mandíbula con fuerza para obligarlo a mirarme a los ojos.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 2+2=4
+
+### [4] DM
+
+  8157 ms
+
+> Melquíades encoge los hombros y cierra los ojos con fuerza, apretando los dientes mientras intentas obligarlo a sostenerte la mirada. El agarre en su mandíbula es firme, pero el hombre no cede; el pánico inicial se ha transformado en una terquedad gélida. Su respiración es errática, pero no hay rastro de quebranto en su expresión, solo un rechazo visceral.
+> —No he olvidado nada —masculla entre dientes, con la voz amortiguada por la presión de tu mano—. No importa cuánto me aprietes, no hay más secretos que me interesen entregarte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  12928 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento melquiades_sorna · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: melquiades_sorna
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 506 — 417/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3889 ms
+
+> "La terquedad es un lujo que no puedes permitirte, Melquíades."
+> Aflojo el agarre bruscamente para desorientarlo y busco con la otra mano cualquier objeto de valor o documento oculto entre sus ropas.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 19+4=23
+
+### [4] DM
+
+  8948 ms
+
+> Melquíades exhala un suspiro tembloroso y se tambalea hacia atrás cuando liberas su mandíbula, parpadeando confundido mientras intenta recuperar el equilibrio. En ese instante de desorientación, tus dedos se deslizan con precisión quirúrgica por los pliegues de su jubón y los bolsillos interiores de su casaca.
+> Tus dedos encuentran un pequeño pliegue de cuero cosido al forro del pecho. Con un movimiento fluido y casi imperceptible, extraes un pergamino doblado en cuatro y sellado con una cera anaranjada que representa un ojo cerrado. El hombre permanece inmóvil, ajeno al hecho de que acaba de perder el documento mientras intenta recomponer su expresión de suficiencia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  37504 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = pergamino sellado con cera anaranjada
+  ✓ creación item: pergamino sellado con cera anaranjada
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item pergamino sellado con cera anaranjada
+  → delta 5478: Wynn.inventory = pergamino sellado con cera anaranjada
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 507 — 418/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos conocidos
+  33 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3008 ms
+
+> "Recupérate, Melquíades. No querrás que alguien más te encuentre en este estado."
+> Guardo el pergamino rápidamente en mi propia ropa y me alejo un par de pasos para observar su reacción.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 10+4=14
+
+### [4] DM
+
+  8839 ms
+
+> Melquíades se lleva una mano al cuello, frotando la zona donde la presión fue más intensa, y suelta un bufido que intenta sonar autoritario aunque su voz aún tiembla. Se endereza el jubón con gestos bruscos, sacudiendo el polvo imaginario de sus hombros mientras recupera esa máscara de arrogancia que parece ser su única defensa.
+> —Tus modales son tan deplorables como tu sentido de la oportunidad —espeta, lanzándote una mirada gélida mientras se aleja un paso, recuperando la compostura—. No necesito tu condescendencia, mucho menos la de alguien que cree que un arrebato de fuerza le otorga algún tipo de superioridad.
+> Se da la vuelta con un giro seco de talones, sin notar el vacío en el forro de su pecho, y comienza a caminar hacia la plaza principal con paso apresurado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  52829 ms · 0 eventos · 2 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = pergamino sellado con cera anaranjada
+  ✓ delta Melquíades Sorna · npc.location_id = plaza principal
+  ✓ creación location: plaza principal
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location plaza principal
+  → delta 5486: Wynn.inventory = pergamino sellado con cera anaranjada
+  → delta 5487: Melquíades Sorna.location_id = plaza principal
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 508 — 419/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos conocidos
+  34 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3484 ms
+
+> "Sigue caminando, Melquíades. Tus modales son lo único que tienes."
+> Me quedo a una distancia prudencial, siguiéndole los pasos sin hacer ruido para asegurarme de que no se encuentre con nadie antes de que yo decida qué hacer con su propiedad.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 8+4=12
+
+### [4] DM
+
+  7558 ms
+
+> El eco de tus palabras flota en el aire, pero Melquíades no se detiene ni mira atrás; se limita a tensar los hombros, acelerando el paso mientras se interna en la calle que conduce a la plaza. El ruido del mercado lejano comienza a filtrarse entre los muros de piedra, mezclando gritos de mercaderes con el traqueteo de carros.
+> Te deslizas tras él, manteniendo la distancia. El ruido ambiental y la prisa del hombre te permiten seguir su rastro sin que note tu presencia, aunque el sonido de tus botas sobre el empedrado es perceptible si alguien estuviera atento. Melquíades camina con la vista fija al frente, gesticulando con las manos mientras murmura algo para sí mismo, ajeno a tu sombra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  18962 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Melquíades Sorna · npc.location_id = plaza principal
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5491: Melquíades Sorna.location_id = plaza principal
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 509 — 420/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos conocidos
+  34 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2159 ms
+
+> "Sigue hablando, viejo..."
+> Me pego más a las paredes para evitar que me vea, intentando desaparecer en las sombras mientras lo sigo.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 1+4=5  PIFIA
+
+### [4] DM
+
+  7618 ms
+
+> Al intentar fundirte con la piedra, tu pie choca bruscamente contra un cubo de madera volcado que alguien ha dejado en medio del camino. El recipiente sale disparado con un estruendo seco que resuena en toda la calle, provocando que un gato callejero salte espantado sobre un montón de cestos cercanos.
+> Melquíades se detiene en seco y gira el cuerpo con rapidez, el rostro desencajado por la sorpresa y la sospecha. Sus ojos se clavan directamente en tu posición, mientras retrocede un paso y lleva una mano instintivamente al pecho, respirando con agitación.
+> —¡Por los cielos! —exclama con voz temblorosa—. ¿Quién anda ahí? ¡Sal ahora mismo o llamaré a la guardia!
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4256 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 510 — 421/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos conocidos
+  34 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2808 ms
+
+> "Tranquilo, Melquíades. No hace falta llamar a nadie."
+> Salgo lentamente de las sombras, manteniendo las manos a la vista pero relajadas, con una sonrisa neutra.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 19+2=21
+
+### [4] DM
+
+  8018 ms
+
+> Melquíades parpadea, confundido por el hecho de que un desconocido no solo conozca su nombre, sino que lo aborde con una calma tan imperturbable. Al observar tus manos abiertas y esa expresión neutra, la tensión de sus hombros cede ligeramente, aunque el rictus de sospecha permanece grabado en las comisuras de sus labios. Su respiración comienza a estabilizarse, aunque sigue manteniendo una distancia prudencial.
+> —¿Quién eres tú y cómo conoces mi nombre? —pregunta, bajando el tono de voz mientras echa una mirada rápida a ambos lados de la calle para asegurarse de que nadie más haya presenciado el encuentro—. No me gusta que me sigan por los callejones, mucho menos alguien que parece saber más de mí de lo que yo sé de él.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6534 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 511 — 422/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos conocidos
+  34 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3461 ms
+
+> "No me sigues tú a mí, Melquíades. Solo estoy aquí para hacerte una propuesta que te resultará muy conveniente."
+> Me acerco un paso más, manteniendo la calma, y trato de analizar su lenguaje corporal para ver cuánto miedo siente realmente.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 5+0=5
+
+### [4] DM
+
+  6558 ms
+
+> Melquíades retrocede instintivamente un paso cuando acortas la distancia, manteniendo el espacio entre vosotros como si fuera un muro invisible. Sus ojos se entrecierran y sus dedos tamborilean nerviosos contra el costado de su chaqueta, mientras su mirada salta de tu rostro a tus manos una y otra vez.
+> —Propuestas convenientes... —masculla con un deje de escepticismo, aunque no se retira del callejón—. El mundo está lleno de conveniencias que terminan siendo trampas. Habla rápido, extraño. No tengo todo el día y me resulta molesto no saber con quién estoy tratando.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5272 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 512 — 423/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -30.0 (wary), 4 hechos conocidos
+  34 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4428 ms
+
+> "No busco engañarte, sino que ambos ganemos algo. Me llamo Wynn y sé moverme en las sombras mejor que nadie en esta ciudad."
+> Me acerco un paso más, manteniendo una expresión neutra, y observo sus manos para ver si oculta algún arma.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+0=14
+
+### [4] DM
+
+  7362 ms
+
+> Melquíades no se mueve, pero su mandíbula se tensa mientras procesa tu nombre y tu declaración. Sus ojos, pequeños y astutos, parecen analizar cada músculo de tu rostro en busca de una contradicción, aunque el escepticismo inicial ha dado paso a una curiosidad contenida.
+> Al observar sus manos, notas que sus dedos no solo tamborilean por nerviosismo; el índice de su mano derecha presiona con insistencia un pequeño relieve metálico oculto en el bolsillo de su chaqueta, sugiriendo que tiene algo a mano, aunque no parece tener la intención de desenfundarlo mientras la conversación se mantenga civilizada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  16012 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Melquíades Sorna · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5500: Melquíades Sorna affinity -30.0 → -28.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -28.0 (wary), 4 hechos, 1 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 513 — 424/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -28.0 (wary), 4 hechos conocidos
+  33 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3507 ms
+
+> "Parece que tenemos motivos para entendernos, Melquíades. No busco complicaciones, solo resultados."
+> Mantengo la calma y observo sus reacciones mientras trato de discernir qué es exactamente lo que oculta en su bolsillo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+0=8
+
+### [4] DM
+
+  8768 ms
+
+> Melquíades suelta un bufido corto, casi un resoplido, y se reclina en su asiento. La tensión de su mandíbula persiste, pero sus ojos ya no escudriñan tu rostro con tanta agresividad; ahora te miran como quien evalúa una herramienta nueva cuya calidad aún no ha sido probada.
+> —Los resultados son una moneda cara en este valle, forastero —responde con una voz que suena a papel seco—. Muchos dicen no buscar complicaciones mientras las traen colgadas del cinturón.
+> Su mano sigue dentro del bolsillo, pero el movimiento es ahora más pausado. Solo alcanzas a ver el bulto de la tela desplazándose ligeramente, sin lograr distinguir si se trata de un arma, una llave o algún amuleto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4996 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -28.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 514 — 425/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -28.0 (wary), 4 hechos conocidos
+  33 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2721 ms
+
+> "No soy como los que traen complicaciones, Melquíades. Yo soy quien las resuelve."
+> Sostengo la mirada mientras intento discernir qué es exactamente lo que oculta en su bolsillo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+2=4
+
+### [4] DM
+
+  9344 ms
+
+> Melquíades esboza una sonrisa gélida, una mueca que no llega a sus ojos y que parece más un tic nervioso que un gesto de simpatía. Su mirada se clava en la tuya, imperturbable, mientras el silencio se prolonga en la habitación, roto únicamente por el crujido de la madera vieja bajo su peso.
+> —Palabras valientes —dice, con un tono cargado de un escepticismo palpable—. El valle está lleno de hombres que se creen la solución hasta que se convierten en parte del problema.
+> Su mano permanece oculta en el bolsillo, y el tejido de la prenda es lo suficientemente grueso como para que cualquier intento de adivinar el contenido sea inútil. Solo ves el bulto desplazarse levemente, pero el misterio de lo que oculta permanece intacto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4689 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -28.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 515 — 426/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -28.0 (wary), 4 hechos conocidos
+  33 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3730 ms
+
+> "El problema es que esos hombres no sabían cuánto valía el riesgo. Yo sí."
+> Mantengo la mirada fija en él mientras trato de notar cualquier tensión en su postura que delate lo que esconde en el bolsillo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 17+0=17
+
+### [4] DM
+
+  9609 ms
+
+> Melquíades no aparta la vista, pero el músculo de su mandíbula se tensa apenas un instante ante tu respuesta. Esa pequeña contracción, sumada a la forma en que desplaza el peso hacia su pierna trasera, revela que no está tan relajado como pretende. El bulto en su bolsillo no es un arma preparada para un ataque rápido, sino algo que sostiene con firmeza, como si temiera que se deslizara o que pudieras notar su verdadera naturaleza si se moviera demasiado.
+> —El riesgo es una moneda que muchos gastan sin tener fondos en la cuenta —responde, y aunque su voz sigue siendo gélida, el escepticismo ha dejado paso a una curiosidad cautelosa. Su cuerpo permanece rígido, manteniendo una distancia prudencial, como quien observa a un animal desconocido que podría resultar útil o peligroso.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  20359 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Melquíades Sorna · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5513: Melquíades Sorna affinity -28.0 → -26.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 516 — 427/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  33 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3022 ms
+
+> "La curiosidad es un lujo caro, Melquíades. Yo prefiero los activos tangibles."
+> Doy un paso lateral, tratando de obtener un mejor ángulo de visión sobre el bulto de su bolsillo.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 8+2=10
+
+### [4] DM
+
+  6827 ms
+
+> Melquíades reacciona al movimiento lateral desplazando su propio cuerpo en un espejo casi instintivo, cerrando el ángulo de visión y manteniendo el bolsillo fuera de tu alcance. Sus ojos, afilados y gélidos, siguen cada centímetro de tu desplazamiento con una intensidad que raya en la paranoia.
+> —Los activos tangibles solo tienen valor si sabes cómo mantenerlos —replica con una sonrisa gélida que no llega a sus ojos—. Y tú pareces alguien que disfruta demasiado del juego de las miradas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1250 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 517 — 428/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3099 ms
+
+> "El valor no está en mantenerlos, sino en saber quién los desea más."
+> Me detengo en seco y le sostengo la mirada, relajando la postura para fingir que he desistido.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+0=6
+
+### [4] DM
+
+  9391 ms
+
+> Melquíades mantiene la tensión en los hombros, pero al notar tu cambio de postura, el músculo de su mandíbula se relaja apenas un milímetro. Su mirada sigue clavada en la tuya, analizando el gesto con una suspicacia que no disminuye, aunque la sonrisa gélida se ensancha ligeramente, transformándose en una mueca de reconocimiento cínico.
+> —Una filosofía peligrosa —responde en un tono bajo, casi un susurro—. El deseo es el motor de la ambición, pero también el camino más corto hacia la ruina si no se sabe leer el tablero.
+> [La tirada de Perspicacia ha fallado. No logras percibir ninguna debilidad, mentira o intención oculta en su lenguaje corporal más allá de la desconfianza ya manifiesta.]
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ meta-comentario entre corchetes
+
+### [6] EXTRACTOR
+
+  1794 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 518 — 429/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2174 ms
+
+> "El tablero es más sencillo de leer cuando uno sabe dónde están las piezas ocultas."
+> Me inclino ligeramente hacia él, manteniendo el contacto visual.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 11+2=13
+
+### [4] DM
+
+  8923 ms
+
+> Melquíades suelta una risa seca, un sonido breve que no llega a sus ojos. Se reclina en su asiento, cruzando los dedos sobre la mesa mientras te observa con una curiosidad renovada, aunque el muro de desconfianza permanece intacto. El roce de sus anillos contra la madera suena como un tic nervioso en el silencio de la estancia.
+> —Presumes de una vista privilegiada, forastero. Me pregunto si hablas desde la experiencia o desde la arrogancia de quien cree que el tablero es un juego de niños —dice, entornando los ojos—. No soy hombre de confiar en acertijos, pero aprecio la audacia. Dime, ¿qué piezas crees que estoy ocultando yo, o qué es lo que realmente buscas en mi mesa?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1233 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 519 — 430/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3497 ms
+
+> "No busco acertijos, Melquíades. Busco una oportunidad donde el riesgo sea equitativo y la ganancia, sustancial."
+> Me inclino ligeramente hacia delante, manteniendo la mirada fija en sus ojos mientras observo sus manos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 18+0=18
+
+### [4] DM
+
+  16619 ms
+
+> Melquíades no aparta la mirada, pero el leve movimiento de sus dedos sobre la mesa delata una reacción. Al observar sus manos, notas que sus nudillos están tensos y que, a pesar de su postura relajada, sus dedos tamborilean un ritmo irregular, casi imperceptible. Hay una rigidez en sus hombros que contradice su tono burlón; no es la calma de quien tiene el control absoluto, sino la tensión de quien sostiene un secreto que pesa y teme que el interlocutor haya encontrado la grieta exacta por donde filtrarlo.
+> —Riesgo equitativo... —repite él, saboreando las palabras con una mueca—. Un concepto noble, aunque peligroso en el Valle del Corral. Aquí, la equidad es un lujo que solo los que ya lo han perdido todo pueden permitirse. 
+> Se inclina ahora él, reduciendo la distancia, y el brillo de sus anillos refleja la luz de la estancia.
+> —Me gusta que no busques acertijos, pero me inquieta que sepas exactamente qué pedir. Me haces pensar que ya conoces el precio de mi silencio, o peor aún, que sabes quién está dispuesto a pagarlo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1370 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 520 — 431/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2963 ms
+
+> "No sé quién pagaría, pero sé que tú tienes miedo de que lo descubran."
+> Me mantengo inmóvil, sosteniéndole la mirada mientras observo el ritmo de sus dedos.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 15+0=15
+
+### [4] DM
+
+  20395 ms
+
+> El ritmo de los dedos de Melquíades se detiene en seco, como si el tiempo se hubiera congelado en la madera de la mesa. Sus pupilas se dilatan un instante y el aire en la estancia parece volverse más denso, cargado de una electricidad súbita. La máscara de burla se resquebraja, dejando al descubierto una expresión de vulnerabilidad gélida, una chispa de pánico genuino que intenta sofocar rápidamente recuperando la compostura.
+> —El miedo es un motor muy eficiente, pero un pésimo consejero —responde con una voz que ha perdido su matiz juguetón, volviéndose seca y cortante—. Estás jugando con una moneda que no conoces, forastero. Crees que has encontrado la grieta, pero podrías estar abriendo una puerta que no sabrás cómo cerrar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1790 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 521 — 432/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3158 ms
+
+> "Me gustan las puertas que no se pueden cerrar. Suelen dejar pasar el botín más interesante."
+> Sostengo la mirada, buscando cualquier detalle que revele exactamente a qué le tiene miedo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+0=10
+
+### [4] DM
+
+  11059 ms
+
+> Melquíades sostiene la mirada, pero sus ojos no ofrecen respuestas. Su rostro se ha convertido en una superficie de mármol, imperturbable y fría, que devuelve el desafío sin dejar filtrar ni un solo temblor. La tensión en sus hombros persiste, pero ha logrado encapsular su nerviosismo tras una barrera de arrogancia profesional.
+> —La avaricia es el lenguaje de los ingenuos —sentencia, apoyando los codos sobre la mesa y entrelazando los dedos—. Espero que tu hambre de "botín" sea proporcional a tu capacidad de sobrevivir a las consecuencias. Porque en este valle, algunas puertas no dejan pasar tesoros, sino hambre.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1472 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 522 — 433/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3187 ms
+
+> "Las advertencias suelen ser el refugio de quienes temen que alguien más llegue al premio."
+> Suelto una risa seca y me inclino hacia él, observando sus gestos con detenimiento.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+0=6
+
+### [4] DM
+
+  10025 ms
+
+> Melquíades no parpadea, pero el ligero endurecimiento de sus nudillos al apretar los dedos revela que el comentario ha impactado. Mantiene esa máscara de mármol, aunque el tono de su voz desciende una octava, volviéndose más gélida y cortante.
+> —El miedo es una herramienta útil para quienes saben usarla, forastero. Para los demás, es simplemente un aviso de que están caminando hacia un precipicio.
+> [La tirada de Perspicacia ha fallado. El personaje no logra detectar ninguna debilidad, mentira o pista concreta en el lenguaje corporal de Melquíades; su barrera de arrogancia profesional sigue siendo impenetrable.]
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ meta-comentario entre corchetes
+
+### [6] EXTRACTOR
+
+  2666 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Perspicacia
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 523 — 434/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  5564 ms
+
+> "El precipicio suele ser el lugar donde se encuentran las cosas más valiosas."
+> Sostengo la mirada, manteniendo una expresión neutra mientras busco cualquier objeto de valor o documento que haya dejado a la vista en su escritorio.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+2=4
+
+### [4] DM
+
+  12108 ms
+
+> Melquíades arquea una ceja, procesando la réplica con una lentitud deliberada mientras el silencio se espesa en la habitación. No hay rastro de admiración en su gesto, solo una curiosidad distante, como quien observa a un insecto particularmente persistente antes de decidir si aplastarlo o dejarlo marchar.
+> El escritorio es un bastión de orden obsesivo. El cuero oscuro del tapete brilla bajo la luz, y los pocos objetos presentes —un tintero de plata, una pluma perfectamente alineada y una pila de folios sellados— están dispuestos con una precisión geométrica que no deja espacio para el descuido ni para secretos a la vista.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1493 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 524 — 435/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3572 ms
+
+> "No soy un insecto, Melquíades. Soy una inversión."
+> Me apoyo ligeramente en el borde del escritorio, deslizando la mirada hacia los folios sellados para intentar distinguir algún nombre o sello recurrente.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+2=3  PIFIA
+
+### [4] DM
+
+  14113 ms
+
+> Melquíades no se inmuta ante el contacto con su escritorio, aunque sus ojos se clavan en el punto donde tu mano toca la madera, como si el gesto fuera una mancha en un lienzo limpio. Una sonrisa gélida y minimalista asoma en la comisura de sus labios, pero no llega a sus ojos, que permanecen fríos y analíticos.
+> Al intentar escudriñar los folios, el ángulo de la luz juega una mala pasada; un reflejo cegador del tintero de plata te golpea justo en la retina, obligándote a parpadear con fuerza. En ese instante de desorientación, el movimiento brusco de tu cabeza hace que tu brazo roce el borde de la pila de papeles, desplazando un folio que se desliza fuera de su alineación geométrica y cae al suelo, quedando boca abajo y fuera de tu alcance inmediato.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2398 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 525 — 436/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3299 ms
+
+> "Lamento el descuido."
+> Bajo la mirada rápidamente hacia el papel caído mientras intento recuperar la compostura, buscando una oportunidad para recuperarlo sin que parezca sospechoso.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 9+4=13
+
+### [4] DM
+
+  11561 ms
+
+> Melquíades no dice nada, pero el silencio se vuelve denso, cargado de un juicio mudo. Sus ojos siguen el rastro del papel que ahora descansa sobre la alfombra, y el ligero movimiento de sus cejas denota que el desorden, por mínimo que sea, le resulta intolerable.
+> Cuando intentas recuperar el folio con un movimiento fluido, tus dedos rozan la superficie del papel, pero el ángulo es incómodo y el deslizamiento no es limpio. El folio se arruga ligeramente bajo tu presión y termina quedando atrapado bajo la pata de la pesada silla de roble, dejando el documento fuera de tu alcance y plenamente a la vista de Melquíades.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3513 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 526 — 437/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4149 ms
+
+> "Un descuido imperdonable, lo lamento."
+> Suelto una sonrisa gélida y, en lugar de luchar con el papel, intento deslizar mis dedos con rapidez hacia el bolsillo de Melquíades para ver si lleva algo de valor.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 19+4=23
+
+### [4] DM
+
+  11294 ms
+
+> Tus dedos se desplazan como una sombra, aprovechando la tensión del momento y la mirada fija de Melquíades en el papel arrugado. Con una precisión quirúrgica, te deslizas por la tela de su jubón sin que él perciba el más mínimo roce ni el cambio en la corriente de aire.
+> Tus dedos encuentran un pequeño compartimento oculto en el forro interior. Extraes con suavidad una pesada bolsa de cuero que tintinea levemente y una llave de hierro forjado con un grabado de un ojo cerrado en el mango. Retiras ambos objetos y los guardas en tu bolsillo en un solo movimiento fluido, justo antes de que Melquíades vuelva a centrar su atención en ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  10859 ms · 0 eventos · 2 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = bolsa de cuero
+  ✓ delta Wynn · character.inventory = llave de hierro forjado
+  ✓ creación item: llave de hierro forjado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item llave de hierro forjado
+  → delta 5542: Wynn.inventory = bolsa de cuero
+  → delta 5543: Wynn.inventory = llave de hierro forjado
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 527 — 438/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  33 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3568 ms
+
+> "Interesante documento. Me convence."
+> Sigo manteniendo una expresión neutra mientras retrocedo un paso, alejándome sutilmente para asegurar que los objetos estén bien guardados.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 14+4=18
+
+### [4] DM
+
+  14390 ms
+
+> Melquíades parpadea, procesando tus palabras mientras el papel sigue arrugado entre sus dedos. Sus ojos, pequeños y analíticos, te recorren la cara buscando alguna grieta en tu expresión, pero no encuentra nada que desmienta tu asentimiento. Se relaja visiblemente, aunque mantiene esa distancia cautelosa propia de quien no confía ni en su propia sombra.
+> —Me alegra que seas una persona razonable —responde él con una sonrisa gélida que no llega a sus ojos—. La razón es la única moneda que tiene valor en tiempos de elecciones.
+> Guarda el documento en su jubón, justo donde hace un instante descansaban la bolsa y la llave, y te hace un gesto con la mano para que lo acompañes, ignorando por completo que ahora posee menos pertenencias que hace un minuto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2139 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 528 — 439/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3846 ms
+
+> "La razón es, efectivamente, muy rentable."
+> Camino a su lado, manteniendo el paso pero atento a cualquier movimiento brusco. Mientras avanzamos, intento echar un vistazo discreto a los alrededores para ver si alguien nos vigila.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+2=3  PIFIA
+
+### [4] DM
+
+  10012 ms
+
+> Melquíades suelta una risita nasal, complacido por la respuesta, y comienza a caminar con paso decidido hacia la salida. El sonido de sus botas contra el suelo resuena en el espacio, marcando un ritmo mecánico mientras se sumerge en sus propios pensamientos sobre la rentabilidad de la razón.
+> Al intentar vigilar el entorno, un descuido brusco te hace tropezar con el borde de una alfombra o una irregularidad del suelo. El movimiento es tan torpe que pierdes el equilibrio por un instante, llamando la atención de forma estrepitosa en el silencio del lugar y dejándote momentáneamente desorientado sobre quién, si es que alguien, podría estar observando.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1431 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 529 — 440/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2986 ms
+
+> "Maldita sea."
+> Me levanto rápidamente, tratando de recuperar la compostura mientras escaneo el lugar para ver quién ha oído el ruido.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+2=3  PIFIA
+
+### [4] DM
+
+  12184 ms
+
+> El estrépito de la caída resuena en las paredes, pero el pánico te nubla la vista. Al intentar rastrear el origen de cualquier mirada, el mundo parece girar bruscamente; el esfuerzo por recuperar la compostura te deja con una sensación de vértigo y una ceguera momentánea que te impide distinguir formas en la penumbra. Te quedas ahí, jadeando, convencido de haber visto sombras moverse en los rincones, aunque no puedes asegurar si son personas o simples trucos de la luz.
+> Melquíades se detiene en seco. No se gira del todo, pero inclina la cabeza hacia atrás, observándote de reojo con una ceja alzada y una expresión de ligera condescendencia. Su risita nasal ha desaparecido, sustituida por un silencio evaluador.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2105 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 530 — 441/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  7519 ms
+
+> "No me mires así, Melquíades. Solo ha sido un tropiezo."
+> Tapo mi debilidad con una sonrisa gélida y trato de analizar la posición del hombre y cualquier movimiento sospechoso en las sombras.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 12+2=14
+
+### [4] DM
+
+  51191 ms
+
+> Melquíades suelta un suspiro corto, manteniendo esa mirada lateral que parece diseccionar cada palabra. No responde inmediatamente; se limita a sostener el silencio mientras el eco de tu caída termina de extinguirse, dejando que la tensión flote en el aire denso de la estancia.
+> Tus ojos se ajustan rápidamente y el entorno recupera nitidez. Melquíades permanece firme, bloqueando parcialmente el camino hacia la salida, con el cuerpo ligeramente orientado hacia la derecha. En las sombras de los rincones, donde creías ver figuras, solo hay el polvo suspendido en los haces de luz y el relieve irregular de las paredes de piedra, que juegan con la vista pero no ocultan a nadie. No hay movimiento sospechoso; estás solo con el hombre.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1693 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 531 — 442/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  7419 ms
+
+> "No me gusta que me hagan esperar."
+> Me pongo en pie lentamente, manteniendo la vista fija en Melquíades mientras busco cualquier objeto de valor que haya pasado por alto en la estancia.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 7+2=9
+
+### [4] DM
+
+  14019 ms
+
+> Melquíades arquea una ceja, imperturbable ante la declaración. No se mueve ni un centímetro para despejar el camino, manteniendo esa postura obstructiva mientras una sonrisa gélida y casi imperceptible curva la comisura de sus labios. El silencio vuelve a llenar el espacio, roto solo por el sonido de tu propia respiración.
+> Tus ojos recorren la estancia mientras te levantas, pero la luz es traicionera y los rincones demasiado profundos. Solo distingues la aspereza de la piedra y el rastro del polvo acumulado en los salientes; no hay ningún objeto que destaque ni nada que haya escapado a tu vista anteriormente. El lugar sigue pareciendo tan austero y vacío como al principio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1359 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 532 — 443/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4020 ms
+
+> "No me gusta que me hagan perder el tiempo."
+> Me acerco a Melquíades, invadiendo su espacio personal para intentar intimidarlo y obligarlo a moverse.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 10+2=12
+
+### [4] DM
+
+  12418 ms
+
+> Melquíades no retrocede ni un milímetro ante el avance. Permanece anclado al suelo, sintiendo el calor de tu proximidad, mientras sus ojos, fríos y calculadores, te analizan con una calma exasperante. La presión del espacio personal parece no afectarle; al contrario, sostiene la mirada con una fijeza mineral que convierte el gesto en un duelo de voluntades.
+> —El tiempo es un recurso finito, es cierto —responde con una voz pausada y gélida, sin que el tono tiemble lo más mínimo—. Pero el mío es mucho más valioso que el suyo.
+> Se mantiene firme, bloqueando el paso con una indiferencia absoluta, dejando claro que un simple paso adelante no es suficiente para quebrantar su voluntad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1864 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 533 — 444/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -26.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  5040 ms
+
+> "El valor de las cosas es relativo, Melquíades. Depende de quién tenga la daga en la mano."
+> Sigo sosteniéndole la mirada, sin retroceder, mientras deslizo la mano hacia el cinturón para rozar el pomo de mi arma.
+> {Intimidación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Intimidación: 16+2=18
+
+### [4] DM
+
+  14554 ms
+
+> La pupila de Melquíades se contrae apenas un milímetro cuando tus dedos rozan el metal. El silencio se vuelve denso, cargado con la electricidad de la amenaza, y por primera vez, la fijeza mineral de su mirada flaquea, dejando paso a una chispa de reconocimiento. No hay miedo visceral, pero hay un cálculo rápido: ha comprendido que no estás jugando bajo sus reglas de etiqueta y poder.
+> Melquíades exhala un suspiro lento y, con un movimiento fluido y deliberado, da un paso lateral, despejando el camino. Sus ojos siguen clavados en los tuyos, pero su voz ha perdido esa gélida seguridad, adquiriendo un matiz de cautela.
+> —Veo que prefiere el lenguaje de los impulsos antes que el de la razón. Pase, pues. Pero no confunda mi cortesía con sumisión; el acero puede abrir puertas, pero rara vez construye puentes.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3298 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Melquíades Sorna · threat_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5561: Melquíades Sorna affinity -26.0 → -36.0  (mid)
+     Cede en el momento, lo guarda.
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 534 — 445/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3061 ms
+
+> "Guardo mis puentes para quien sepa construirlos."
+> Sigo caminando hacia el interior sin apartar la vista de él, manteniendo la mano cerca de mi arma.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 4+0=4
+
+### [4] DM
+
+  11691 ms
+
+> Melquíades permanece inmóvil mientras pasas a su lado, su figura recortada contra la luz del umbral. No intenta detenerte, pero el aire que desprende es el de alguien que acaba de anotar una deuda en un libro invisible; su postura es rígida, como una cuerda tensada que espera el momento justo para soltarse.
+> A medida que te adentras en el interior, el espacio se abre en un vestíbulo de techos altísimos y suelos de mármol veteado que devoran el sonido de tus pasos. El ambiente es gélido y huele a cera vieja y papel seco. A pesar de la amplitud, sientes que las sombras que se proyectan desde las esquinas no son producto de la falta de luz, sino que parecen observar tu avance con una curiosidad muda.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1577 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 535 — 446/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4460 ms
+
+> "Lugar impresionante. Demasiado silencio para mi gusto."
+> Camino lentamente por el vestíbulo, evitando el centro del pasillo y manteniéndome cerca de las paredes mientras observo las sombras.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 9+2=11
+
+### [4] DM
+
+  21673 ms
+
+> El mármol frío resbala bajo tus botas mientras te desplazas por el perímetro, donde el papel tapiz descascarillado y las molduras de madera carcomida ofrecen un refugio precario contra la vastedad del centro del salón. El silencio que mencionaste se vuelve denso, casi físico, interrumpiéndose únicamente por el eco lejano de una gota de agua que cae rítmicamente en algún lugar profundo de la mansión.
+> Tus ojos recorren las penumbras de las esquinas y los huecos entre las columnas, pero las sombras se mantienen inertes, fundiéndose con la arquitectura. No logras distinguir si hay alguien acechando en la oscuridad o si es simplemente la geometría opresiva del lugar la que juega con tu vista; solo percibes la sensación persistente de que el espacio es mucho más grande de lo que sugiere la planta del edificio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1103 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 536 — 447/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  32 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4956 ms
+
+> Me mantengo pegado a la pared, moviéndome lentamente para no hacer ruido mientras escaneo el suelo y los rincones en busca de cualquier objeto de valor que haya sido olvidado o escondido.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 14+2=16
+
+### [4] DM
+
+  13886 ms
+
+> Tus ojos se adaptan a la penumbra mientras avanzas con cautela. Entre el polvo acumulado y los restos de papel tapiz que cuelgan como piel muerta, algo destella débilmente bajo una de las molduras carcomidas de la pared. Al acercarte, descubres una pequeña caja de madera de sándalo, tallada con relieves de hojas entrelazadas, que ha quedado parcialmente oculta tras un zócalo desprendido.
+> Más allá de la caja, el suelo de mármol revela una irregularidad: una loseta ligeramente hundida que no encaja con el patrón del resto del pavimento. El frío del salón parece concentrarse en ese punto, y un rastro casi imperceptible de ceniza gris, como si alguien hubiera dejado caer el resto de un cigarro o un pergamino quemado, marca el camino desde la loseta hacia el centro oscuro del salón.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4013 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: caja de madera de sándalo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item caja de madera de sándalo
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 537 — 448/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  33 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  6114 ms
+
+> "Veamos qué guardas aquí."
+> Ignoro la loseta por un momento y tomo la caja de sándalo, revisando primero que no tenga trampas.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+1=8
+
+### [4] DM
+
+  19034 ms
+
+> Tus dedos rozan la madera cálida del sándalo mientras buscas cualquier mecanismo oculto, muesca o hilo tenso que pudiera activar una trampa. Sin embargo, la penumbra y el polvo acumulado juegan en tu contra; el tacto es impreciso y no logras distinguir si esa pequeña irregularidad en la talla es un botón secreto o simplemente la erosión del tiempo.
+> La caja permanece cerrada y silenciosa bajo tu mano, mientras el rastro de ceniza gris sigue extendiéndose hacia la oscuridad del salón, imperturbable.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1380 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 538 — 449/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  33 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3276 ms
+
+> "No me gusta dejar las cosas al azar."
+> Saco una pequeña daga y trato de insertar la punta en la irregularidad de la talla para forzar el mecanismo o palanquear la tapa.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 2+4=6
+
+### [4] DM
+
+  8344 ms
+
+> La punta de la daga se desliza con torpeza sobre la madera, resbalando bruscamente desde la muesca. El metal raspa la superficie del sándalo con un chirrido estridente que rompe el silencio del salón, dejando una marca profunda y fea en la talla ornamental.
+> La caja no cede ni un milímetro; permanece sellada, imperturbable ante el intento, mientras el rastro de ceniza gris sigue marcando el camino hacia la penumbra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2549 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 539 — 450/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  33 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3666 ms
+
+> "Maldita sea."
+> Saco la daga y observo la marca en la madera para entender mejor el mecanismo de cierre.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+1=20
+
+### [4] DM
+
+  17930 ms
+
+> La marca profunda en el sándalo no es un simple daño; al analizar la hendidura, el ángulo del corte revela que la madera es solo una fina chapa decorativa que oculta un complejo sistema de relieves metálicos. Bajo la superficie, se percibe el rastro de un mecanismo de presión basado en pesas y contrapesos: el cierre no es una cerradura convencional, sino un acertijo táctil donde el orden de presión de ciertos puntos ornamentales libera el pestillo.
+> Un detalle escapa a la vista general pero resalta bajo la mirada atenta: en la esquina inferior derecha, el dibujo de una hoja de acanto tiene un desgaste circular, señal de que ha sido pulsado repetidamente. La caja sigue sellada, pero el secreto de su apertura ya no es un misterio, sino un mapa de presiones ocultas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1381 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 540 — 451/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  33 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2805 ms
+
+> "Interesante."
+> Me concentro en el dibujo de la hoja de acanto y presiono el punto desgastado para comprobar si es el primer paso del mecanismo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+1=4
+
+### [4] DM
+
+  14892 ms
+
+> Al presionar la hoja de acanto, el dedo se hunde apenas unos milímetros en la madera, pero no se escucha ningún clic ni se percibe movimiento alguno en el interior de la caja. El mecanismo permanece mudo y el pestillo sigue firme, manteniendo el contenido sellado bajo la chapa de sándalo.
+> El punto desgastado cede bajo la presión, pero la acción no desencadena ninguna reacción en cadena; la caja se siente pesada y compacta, como si el primer paso hubiera sido ignorado o el orden de activación fuera distinto al intuido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1379 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 541 — 452/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  33 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2901 ms
+
+> "Vaya, más complejo de lo que parece."
+> Sigo examinando la superficie de la caja buscando cualquier otra irregularidad, marca o patrón que haya pasado por alto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  18069 ms
+
+> Tus dedos recorren la chapa de sándalo con una meticulosidad casi obsesiva, sintiendo la veta de la madera como si fuera un mapa en relieve. De repente, notas que el patrón de las hojas de acanto no es meramente decorativo; hay una sutil asimetría en la curvatura de los tallos que coincide exactamente con el desgaste del punto que presionaste anteriormente. Al observar la caja desde un ángulo oblicuo, la luz revela una serie de micro-perforaciones, casi invisibles, que forman una secuencia geométrica oculta bajo el barniz.
+> Al conectar la lógica del relieve con las perforaciones, comprendes que la hoja de acanto no era un botón, sino un cierre de seguridad que debía mantenerse presionado mientras se activaba un segundo punto. Localizas una pequeña hendidura en la base, camuflada por el diseño, que al ser accionada simultáneamente con la hoja, provoca que el pestillo se retraiga con un suspiro metálico y elegante. La tapa de sándalo se desliza hacia un lado, revelando el interior.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1434 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 542 — 453/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  33 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4295 ms
+
+> "Interesante."
+> Ignoro el contenido por un segundo y examino el mecanismo interno de la caja para ver si hay alguna marca de fabricante o firma oculta.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+1=19
+
+### [4] DM
+
+  18843 ms
+
+> Al inclinar la caja para que la luz bañe el interior del mecanismo, los engranajes de latón y los muelles de acero aparecen con una precisión quirúrgica. No hay rastro de óxido ni de improvisación; cada pieza encaja con un ajuste milimétrico que habla de una mano maestra. En la parte inferior del chasis interno, grabada con una punta de diamante sobre el metal, brilla una firma pequeña y estilizada: *«M. S. — Forjado en el Silencio»*.
+> La marca está flanqueada por un sello circular que representa un ojo cerrado envuelto en una cinta de pergamino. El grabado es tan nítido que parece haber sido realizado ayer, a pesar de que el sándalo exterior sugiere una antigüedad considerable.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1374 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 543 — 454/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  33 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2988 ms
+
+> "Interesante..."
+> Saco una pequeña libreta y dibujo el sello del ojo cerrado para no olvidarlo. Intento analizar si el estilo del grabado o el sello coinciden con algún gremio o artífice conocido.
+> {Historia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Historia: 13+1=14
+
+### [4] DM
+
+  20338 ms
+
+> El trazo del lápiz sobre el papel captura la quietud del ojo cerrado y la rigidez del pergamino. Al comparar la firma y el emblema con los conocimientos almacenados sobre los gremios de artífices, los recuerdos se vuelven borrosos, pero una conexión emerge: el sello no pertenece a ninguna de las cofradías oficiales de la ciudad ni a los talleres comerciales del valle.
+> Sin embargo, el estilo del grabado y la mención al "Silencio" evocan fragmentos de leyendas sobre una hermandad clandestina de eruditos y constructores que operaban en las sombras, lejos de la mirada de los gobernantes. La precisión del trabajo es característica de quienes no buscan el reconocimiento público, sino la perfección técnica absoluta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1639 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 544 — 455/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  33 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3204 ms
+
+> "El Silencio... un nombre demasiado poético para ser honesto."
+> Examino el pergamino más de cerca, buscando cualquier marca oculta, manchas de tinta o relieves que no sean evidentes a simple vista.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+1=19
+
+### [4] DM
+
+  12587 ms
+
+> Al inclinar el pergamino bajo la luz, el ángulo revela un detalle invisible en la lectura frontal. No hay manchas accidentales, sino una serie de micro-perforaciones casi imperceptibles que forman un patrón geométrico alrededor del sello. Al pasar la yema de los dedos sobre la superficie, el relieve no es solo tinta seca, sino una incrustación de polvo mineral que brilla con un tono cobrizo cuando la luz incide directamente.
+> Estas marcas no son decorativas; funcionan como una clave táctil y visual. El patrón de perforaciones coincide exactamente con la disposición de las estrellas en una constelación específica, sugiriendo que el documento no solo es una comunicación, sino una guía o una llave que requiere un conocimiento astronómico preciso para ser interpretada en su totalidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1430 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 545 — 456/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  33 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  14140 ms
+
+> "Interesante. Un código para quien sabe mirar el cielo."
+> Hago una copia rápida del patrón de perforaciones en un trozo de papel aparte y guardo el original con cuidado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+1=15
+
+### [4] DM
+
+  23619 ms
+
+> El papel rasca suavemente mientras trasladas el patrón de perforaciones al folio en blanco, asegurando que cada punto quede en su posición exacta. Al analizar la copia con detenimiento, el dibujo no solo evoca el firmamento, sino que los puntos más densos coinciden con los nodos de navegación utilizados por los antiguos cartógrafos del Valle del Corral. 
+> La geometría sugiere una intersección: si se proyectara este mapa estelar sobre un plano físico del terreno, el punto central del sello no marcaría un lugar al azar, sino que convergería en una ubicación específica y oculta dentro de los límites del valle, probablemente un punto de encuentro o un depósito secreto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8007 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: copia del patrón de perforaciones
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item copia del patrón de perforaciones
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 546 — 457/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  34 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  7015 ms
+
+> "Interesante. Un mapa que no parece un mapa."
+> Guardo el folio con cuidado y trato de recordar si he visto alguna referencia a depósitos secretos en los archivos del valle.
+> {Historia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Historia: 16+1=17
+
+### [4] DM
+
+  12723 ms
+
+> Los fragmentos de memoria se ensamblan con claridad mientras repasas mentalmente los legajos polvorientos y las crónicas marginales que has consultado. Recuerdas haber leído menciones vagas sobre los "Silos de la Memoria", estructuras subterráneas diseñadas por los primeros colonos del Valle del Corral para preservar semillas, registros y objetos de valor frente a las inclemencias del clima o conflictos territoriales.
+> Según esos textos, estos depósitos no figuraban en los mapas oficiales para evitar el saqueo, y su acceso dependía de claves astronómicas que solo los cartógrafos de élite poseían. La coincidencia entre los nodos de navegación del sello y la descripción de los Silos es casi absoluta; el patrón que tienes entre manos es, efectivamente, la llave para localizar uno de estos escondites.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4750 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación location: Silos de la Memoria
+  ⚠ nombres no reconocidos: Memoria, Silos
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location Silos de la Memoria
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 547 — 458/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  35 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4420 ms
+
+> "Claves astronómicas... interesante."
+> Examino el patrón minuciosamente para intentar deducir alguna coordenada o referencia estelar concreta antes de moverme.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+1=15
+
+### [4] DM
+
+  15437 ms
+
+> Al deslizar los dedos sobre el pergamino, el patrón empieza a cobrar sentido. No son simples adornos, sino una proyección simplificada de la bóveda celeste durante el solsticio de invierno. Una serie de puntos intersectados forman una constelación que no corresponde al cielo actual, sino a una posición desplazada, sugiriendo que el punto de entrada no es una coordenada fija, sino un lugar donde la luz de una estrella específica golpea el suelo en una fecha concreta.
+> Logras aislar un glifo recurrente: una representación estilizada de la "Estrella del Vigilante". Al contrastarla con la geografía del Valle del Corral que recuerdas, el patrón señala irremediablemente hacia las faldas del Monte Ceniza, específicamente hacia una zona de formaciones rocosas que imitan la silueta de esa misma estrella.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8027 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación location: Monte Ceniza
+  ⚠ nombres no reconocidos: Monte, Vigilante
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location Monte Ceniza
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 548 — 459/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  35 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3881 ms
+
+> "El Monte Ceniza, entonces. Un lugar conveniente para esconder secretos."
+> Guardo el pergamino con cuidado y busco cualquier otro detalle oculto en el papel que haya pasado por alto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 9+1=10
+
+### [4] DM
+
+  9578 ms
+
+> El pergamino vuelve a quedar bajo tu escrutinio, pero tras haber descifrado la clave de la constelación, el resto de las marcas parecen inertes. Pasas los dedos por los bordes y observas las fibras del papel bajo la luz, pero no emerge ningún mensaje invisible, ni sellos ocultos, ni notas marginales que hayan escapado a tu primera lectura.
+> El documento se mantiene silencioso, habiendo entregado ya su secreto principal. Solo queda el tacto áspero del pergamino y la certeza geográfica que ahora reside en tu memoria.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1167 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 549 — 460/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  35 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  6689 ms
+
+> "Ya me has dicho todo lo que tenías que decir."
+> Doblo el pergamino con cuidado y lo guardo en mi ropa. Ahora que sé dónde ir, busco cualquier otro objeto de valor que haya quedado olvidado en la mesa o en el lugar.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+1=13
+
+### [4] DM
+
+  11600 ms
+
+> Tus ojos recorren la superficie de la madera gastada y los rincones sombríos de la estancia. La mesa está prácticamente desnuda, salvo por algunas manchas de tinta seca y el polvo que baila en los haces de luz. Tras un examen rápido, no encuentras monedas, joyas ni documentos olvidados que llamen la atención.
+> El lugar exhala una sensación de vacío, como si quien estuviera allí hubiera recogido lo esencial hace tiempo, dejando atrás únicamente el silencio y el aroma a papel viejo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1171 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 550 — 461/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  35 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3281 ms
+
+> "Demasiado limpio para ser normal."
+> Me agacho para revisar el suelo y las juntas de las paredes, buscando algún compartimento oculto o un doble fondo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+1=5
+
+### [4] DM
+
+  8904 ms
+
+> Tus dedos recorren las grietas de la madera y palpan las juntas de las paredes, pero la superficie se siente sólida y uniforme. El polvo acumulado en las esquinas no muestra señales de haber sido removido recientemente ni hay hendiduras que sugieran el mecanismo de una trampilla o un panel secreto.
+> El suelo de tablones cruje bajo tu peso, revelando únicamente la estructura básica de la estancia. No hay nada oculto a simple vista ni al tacto; la habitación es, efectivamente, tan vacía como parece.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2704 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 551 — 462/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  35 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3261 ms
+
+> "Vaya pérdida de tiempo."
+> Me alejo de las paredes y me acerco a la puerta para salir de la estancia. Antes de marcharme, echo un vistazo rápido a cualquier rincón que haya podido pasarme por alto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 19+2=21
+
+### [4] DM
+
+  11325 ms
+
+> Tu mirada barre la estancia con una precisión quirúrgica justo antes de dar el paso hacia la salida. Al enfocarte en el ángulo superior del marco de la puerta, donde la sombra es más densa, distingues un pequeño relieve: una marca tallada en la madera, apenas del tamaño de una moneda, que representa un ojo cerrado.
+> Al bajar la vista hacia el suelo, notas que el polvo no es uniforme; hay una línea casi invisible, una sutil depresión que atraviesa el centro de la habitación y se pierde bajo el zócalo de la pared opuesta, sugiriendo que algo pesado fue arrastrado desde el interior hacia el pasillo hace mucho tiempo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1678 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 552 — 463/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  35 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1628 ms
+
+> Me acerco al zócalo de la pared opuesta para examinar la marca en el suelo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 10+1=11
+
+### [4] DM
+
+  11557 ms
+
+> Te inclinas sobre el suelo, concentrando la vista en esa sutil depresión del polvo. Al pasar los dedos por la madera del zócalo y observar la trayectoria de la marca, confirmas que algo pesado fue movido en esa dirección, pero el rastro es demasiado antiguo y el desgaste de la madera es irregular.
+> No logras distinguir si se trata de la marca de un mueble, el arrastre de un cofre o el roce de una puerta oculta; la suciedad acumulada y el paso del tiempo han borrado cualquier detalle que permita identificar la naturaleza del objeto que dejó aquella huella.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1325 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 553 — 464/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  35 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2420 ms
+
+> "Interesante."
+> Sigo la trayectoria de la marca con la mirada y empiezo a palpar las paredes y los paneles de madera cercanos buscando cualquier irregularidad o mecanismo de apertura.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+1=18
+
+### [4] DM
+
+  14270 ms
+
+> Tus dedos recorren las vetas de la madera, presionando cada moldura y deslizando la mano por las juntas del panelado. Tras unos minutos de búsqueda meticulosa, sientes un ligero hundimiento en una sección de la pared que no coincide con el resto de la estructura; un pequeño resalte de madera, casi invisible, cede bajo la presión de tu pulgar con un clic seco y metálico.
+> Con un gemido de bisagras oxidadas que corta el silencio de la estancia, una sección del zócalo y el panel adyacente se desplaza unos centímetros hacia atrás. Se abre una rendija estrecha y oscura que exhala un olor a papel viejo y humedad, revelando el espacio vacío de un compartimento oculto en la pared.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3814 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación location: compartimento oculto
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: location compartimento oculto
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 554 — 465/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  36 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2028 ms
+
+> "Interesante."
+> Me asomo al compartimento y busco cualquier objeto de valor o documento importante.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+1=3
+
+### [4] DM
+
+  24136 ms
+
+> Te inclinas sobre la abertura, pero la oscuridad del hueco es densa y el espacio es más estrecho de lo que parecía. Al intentar palpar el interior, tus dedos solo encuentran polvo espeso y el tacto rugoso de la madera bruta. 
+> No hay ningún brillo metálico ni el roce de un pergamino; el compartimento parece estar vacío, o quizá el contenido se ha deslizado hacia algún rincón inaccesible que escapa a tu búsqueda superficial.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1433 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 555 — 466/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  36 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3927 ms
+
+> "Maldita sea."
+> Saco una pequeña luz para iluminar el fondo del hueco y busco cualquier rastro de un doble fondo o una ranura oculta.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+1=3
+
+### [4] DM
+
+  22100 ms
+
+> La pequeña luz proyecta sombras erráticas contra las paredes de madera, revelando una superficie cubierta de una capa grisácea de polvo antiguo y algunas telarañas que se agitan con tu respiración. El haz de luz recorre cada esquina del estrecho hueco, pero la madera se muestra sólida, sin costuras ni hendiduras que sugieran la existencia de un mecanismo oculto.
+> El compartimento es, a todas luces, un espacio vacío. No hay rastros de presión en el fondo ni marcas de desgaste que indiquen que algo haya sido retirado recientemente; solo el silencio del polvo que se asienta sobre la madera bruta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1213 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 556 — 467/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  36 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2888 ms
+
+> "Vaya decepción."
+> Paso los dedos con cuidado por las paredes laterales y el fondo, buscando cualquier irregularidad o relieve que el haz de luz no haya revelado.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+1=13
+
+### [4] DM
+
+  10266 ms
+
+> Tus yemas recorren la madera áspera y fría, sintiendo la textura granulada y el polvo que se desprende bajo la presión. El tacto confirma lo que la vista ya sugería: las paredes son piezas sólidas de roble, sin hendiduras, relieves ni el más mínimo juego que indique la presencia de un doble fondo o un compartimento secreto.
+> El espacio permanece mudo y vacío, devolviéndote únicamente la sensación de madera vieja y el aroma rancio a encierro. No hay nada oculto en este hueco.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1684 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 557 — 468/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  36 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2259 ms
+
+> "Vaya pérdida de tiempo."
+> Me aparto de la pared y miro el resto de la estancia buscando cualquier objeto que pueda tener valor.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+1=3
+
+### [4] DM
+
+  10198 ms
+
+> Tus ojos barren la estancia, pero la luz mortecina y el polvo suspendido en el aire juegan en tu contra. Te fijas en algunos trastos acumulados en las esquinas y en la disposición de los muebles, pero todo parece ser chatarra ordinaria o restos de un mobiliario ya descompuesto que no aporta nada más que suciedad.
+> La habitación se siente exhausta, despojada de cualquier interés material. No encuentras ningún objeto de valor ni nada que destaque sobre el gris monotonía del encierro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3794 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 558 — 469/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  35 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3590 ms
+
+> "Demasiado limpio para ser verdad."
+> Me acerco a los muebles descompuestos y empiezo a palpar las paredes y el suelo buscando compartimentos ocultos.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+1=5
+
+### [4] DM
+
+  13827 ms
+
+> Tus dedos recorren la superficie rugosa de la pared y el tacto frío del suelo, presionando hendiduras y buscando cualquier irregularidad en la madera podrida de los muebles. Sin embargo, el polvo se acumula en tus yemas y la piedra solo devuelve la sensación de una mampostería sólida y aburrida.
+> No hay clic de ningún mecanismo, ni huecos sospechosos entre las tablas, ni corrientes de aire que sugieran un pasaje. La habitación permanece en un silencio sepulcral, devolviéndote la impresión de que, efectivamente, no hay nada más que escombros y vacío.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2992 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 559 — 470/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  35 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3086 ms
+
+> "Tsk. Un desperdicio de tiempo."
+> Me alejo de las paredes y me acerco a los muebles para revisarlos más a fondo, buscando compartimentos ocultos o cualquier objeto de valor que haya pasado desapercibido.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+1=8
+
+### [4] DM
+
+  6259 ms
+
+> Tus manos hurgan entre los restos de madera carcomida y los cajones desencajados de los muebles, pero el resultado es el mismo. Solo encuentras capas de polvo grisáceo y algunas astillas que se clavan en tu piel; los compartimentos están vacíos y no hay doble fondo ni secretos ocultos en las molduras.
+> La habitación sigue sintiéndose hueca, despojada de cualquier utilidad o tesoro. El aire pesado y el olor a humedad son lo único que persiste mientras terminas de revisar los trastos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1779 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 560 — 471/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  35 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2741 ms
+
+> "Qué desperdicio de tiempo."
+> Me levanto y examino las paredes y el techo en busca de cualquier irregularidad o marca que no encaje con el resto de la estancia.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 20+1=21  CRÍTICO
+
+### [4] DM
+
+  13333 ms
+
+> Al levantar la vista, tu mirada recorre las grietas del techo y el desconchado de las paredes con una precisión quirúrgica. En la esquina superior derecha, donde la humedad ha creado una mancha amarillenta en forma de mapa, notas que el patrón de las grietas no es natural; las líneas forman un ángulo perfecto que no coincide con la estructura del edificio. Al acercarte, descubres que una pequeña sección del yeso ha sido tallada y vuelve a ser sellada con una maestría casi invisible, dejando una hendidura milimétrica que solo alguien con tu ojo detectaría.
+> Al presionar el punto exacto, se escucha un chasquido seco y metálico que resuena en el silencio de la habitación. Una sección de la pared, del tamaño de un libro ancho, se desliza hacia atrás con un siseo, revelando un hueco oscuro y estrecho. En su interior, descansando sobre un terciopelo rojo descolorido por el tiempo, brilla un pequeño cilindro de plata grabado con runas que parecen pulsar débilmente con una luz fría.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4096 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: cilindro de plata grabado con runas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cilindro de plata grabado con runas
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 561 — 472/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  36 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2580 ms
+
+> "Vaya, vaya... alguien tenía secretos."
+> Me acerco al hueco y tomo el cilindro de plata con cuidado, guardándolo rápidamente en mi ropa.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+1=15
+
+### [4] DM
+
+  10837 ms
+
+> Tus dedos rozan el metal frío del cilindro mientras lo deslizas en tu ropa, pero tu mirada no se aparta del hueco ahora vacío. Al examinar el compartimento con detenimiento, notas que el terciopelo rojo no está ahí solo por lujo; hay una pequeña hendidura circular en la base, del diámetro exacto de una moneda, que sugiere que el cilindro no era el único objeto guardado allí, o que servía como llave para algo más profundo.
+> En el borde interior de la pared deslizante, apenas perceptible bajo una capa de polvo antiguo, hay una inscripción grabada en una caligrafía apresurada y angulosa. Las letras, talladas profundamente en la piedra, forman una sola palabra que parece haber sido añadida mucho después de que se construyera el mecanismo: *"Sorna"*.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4805 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = cilindro de plata grabado con runas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5633: Wynn.inventory = cilindro de plata grabado con runas
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 562 — 473/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  36 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2456 ms
+
+> "Interesante."
+> Ignoro la palabra por un momento y presiono la hendidura circular con el dedo para ver si hay algún mecanismo oculto.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 7+1=8
+
+### [4] DM
+
+  7310 ms
+
+> El dedo presiona la base del compartimento, pero el tacto es seco y firme. A pesar de la insistencia, la hendidura no cede ni un milímetro; no hay el clic de un muelle, ni el deslizamiento de un pestillo, ni el más mínimo rastro de movimiento en la piedra.
+> El silencio de la estancia vuelve a cerrarse sobre ti, roto solo por el eco de tu propia respiración. La pequeña cavidad circular permanece allí, inerte y muda, como un ojo ciego que aguarda algo que tu dedo no puede proporcionar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1202 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 563 — 474/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  36 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2587 ms
+
+> "Interesante."
+> Saco una pequeña herramienta de mi equipo y trato de hurgar en el interior del orificio para ver si hay algún mecanismo oculto o suciedad bloqueando el paso.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+1=17
+
+### [4] DM
+
+  8337 ms
+
+> La herramienta se desliza con un roce metálico contra las paredes internas del orificio. Al profundizar, la punta choca con algo que no es piedra: una superficie fría, pulida y perfectamente circular que se siente como metal antiguo. Tras un movimiento preciso de palanca, un pequeño fragmento de sedimento calcáreo se desprende y cae al suelo con un tintineo seco, liberando un mecanismo que había estado encajado durante décadas.
+> Se escucha un chasquido sordo, profundo, que vibra desde el interior del muro. Sin previo aviso, una sección rectangular de la piedra comienza a retraerse hacia atrás con un siseo de aire viciado, revelando un hueco oscuro y estrecho donde descansa un objeto envuelto en un cuero curtido y amarillento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3580 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: objeto envuelto en cuero curtido
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item objeto envuelto en cuero curtido
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 564 — 475/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  37 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2204 ms
+
+> "Vaya, parece que el muro guardaba un secreto."
+> Me acerco con cautela y extiendo la mano para tomar el objeto envuelto en cuero.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 14+2=16
+
+### [4] DM
+
+  7427 ms
+
+> Tus dedos rozan el cuero curtido, que se siente grasiento y frío al tacto. Al retirar el envoltorio con cuidado, el objeto queda al descubierto: es un cilindro de metal oscuro, grabado con runas que parecen absorber la escasa luz del lugar, sellado por un tapón de cera roja ya agrietada.
+> Mientras sostienes el objeto, tu atención se desplaza hacia el interior del hueco. Entre las sombras del nicho, justo detrás de donde descansaba el cilindro, percibes un ligero relieve en el fondo de piedra: una inscripción tallada a mano, apenas legible por el polvo, que reza: *"El silencio es la única verdad que no miente"*.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6420 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = objeto envuelto en cuero curtido
+  ✓ creación item: cilindro de metal oscuro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item cilindro de metal oscuro
+  → delta 5646: Wynn.inventory = objeto envuelto en cuero curtido
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 565 — 476/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  38 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3031 ms
+
+> "Interesante."
+> Guardo el cilindro en mi equipo y paso los dedos sobre la inscripción, buscando algún mecanismo oculto o una hendidura en la piedra.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+1=18
+
+### [4] DM
+
+  16680 ms
+
+> Tus yemas recorren los surcos de la piedra, sintiendo la aspereza del polvo y el frío del granito. Al presionar con firmeza sobre la palabra "verdad", un clic seco y metálico resuena en el silencio de la cripta. Sin hacer ruido, una sección rectangular del fondo del nicho se desliza hacia atrás, revelando un compartimento oculto que exhala un aire rancio, cargado de olor a pergamino viejo y humedad.
+> En el interior, reposa un pequeño estuche de madera de sándalo, cerrado con un delicado broche de plata que representa un ojo cerrado. El espacio es estrecho, obligándote a introducir los dedos con cuidado para alcanzar la caja.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8529 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: estuche de madera de sándalo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item estuche de madera de sándalo
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 566 — 477/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3073 ms
+
+> Introduzco la mano con cuidado y saco el estuche de madera. Antes de abrirlo, lo observo detenidamente buscando cualquier señal de trampa.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+1=19
+
+### [4] DM
+
+  12200 ms
+
+> Tus dedos se cierran sobre la madera cálida y aromática del sándalo, extrayendo el estuche del nicho con un movimiento fluido. Al sostenerlo bajo la luz, el brillo de la plata del broche contrasta con la pátina oscura de la madera.
+> Tu mirada escudriña cada milímetro de la superficie, siguiendo las vetas del grano y analizando la tensión del cierre. No hay hilos invisibles, ni agujas ocultas en las juntas, ni el sutil aroma a almendras o azufre que delataría un veneno por contacto. El estuche es una pieza de artesanía pura y segura; el ojo de plata permanece cerrado, custodiando el contenido sin más resistencia que la del propio pestillo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  63008 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = estuche de madera de sándalo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5656: Wynn.inventory = estuche de madera de sándalo
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 567 — 478/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  38 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2130 ms
+
+> "Demasiado sencillo para ser verdad."
+> Abro el estuche con cuidado para ver qué hay dentro.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 18+1=19
+
+### [4] DM
+
+  12662 ms
+
+> El pestillo cede con un clic metálico y seco, liberando la tapa que se abre con una suavidad aceitada. En el interior, sobre un lecho de terciopelo carmesí que ha resistido el paso del tiempo, descansa un pergamino enrollado y un anillo de sello tallado en jaspe oscuro. El papel no está amarillento, sino que conserva una blancura gélida, sujeto por un cordel de seda blanca que no ha sido cortado.
+> Al observar el pergamino con detenimiento, notas que la superficie del papel presenta una textura inusual, casi orgánica, y que el sello de cera que cierra el rollo no muestra el blasón de ninguna familia noble conocida, sino una runa geométrica que parece absorber la luz circundante. No hay rastro de trampas mecánicas ni polvos reactivos; el contenido ha permanecido intacto, esperando el momento exacto de ser descubierto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8421 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: anillo de sello tallado en jaspe oscuro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item anillo de sello tallado en jaspe oscuro
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 568 — 479/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4560 ms
+
+> "Interesante."
+> Tomo el anillo de jaspe y lo guardo rápidamente en mi bolsillo. Luego, examino la runa del sello con cuidado antes de decidir si romperlo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 17+1=18
+
+### [4] DM
+
+  9398 ms
+
+> La luz parece curvarse alrededor de la runa, creando un vacío visual que marea si se mira fijamente. Al analizar los trazos geométricos, reconoces que no se trata de un lenguaje común ni de un blasón heráldico, sino de un glifo de contención diseñado para preservar el contenido contra el paso del tiempo y la humedad. La precisión del grabado sugiere una manufactura obsesiva, probablemente vinculada a alguien con un conocimiento profundo de la archivística o la magia de sellado.
+> El sello de cera se siente frío al tacto, casi como si estuviera hecho de piedra pulida en lugar de resina, y no presenta ninguna grieta ni signo de haber sido manipulado en décadas. La runa permanece imperturbable, guardando el secreto del pergamino bajo una presión invisible que solo espera un movimiento firme para romperse.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1692 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 569 — 480/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3072 ms
+
+> "Interesante. Demasiado esfuerzo para un simple papel."
+> Observo detenidamente el sello y la runa buscando algún mecanismo oculto o una trampa antes de romperlo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+1=13
+
+### [4] DM
+
+  6280 ms
+
+> Tus ojos recorren cada milímetro del grabado, buscando el leve relieve de un disparador o el rastro de un hilo invisible. La superficie es impecable; no hay ranuras sospechosas ni mecanismos de presión que sugieran una trampa física inmediata. Sin embargo, notas que la runa no es un dibujo estático, sino que vibra en una frecuencia casi imperceptible que hace que el aire alrededor del sello se sienta denso y cargado de electricidad estática.
+> El frío del sello de cera se intensifica mientras lo examinas, transmitiendo una sensación de rechazo, como si el objeto mismo estuviera advirtiendo que su propósito es mantener el contenido aislado, no protegerlo de un ladrón, sino evitar que lo que hay dentro escape o se degrade. No hay nada que indique un peligro letal, solo una barrera técnica y meticulosa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2616 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 570 — 481/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2696 ms
+
+> "Interesante."
+> Saco una pequeña herramienta de mi equipo y pruebo a raspar el borde del sello de cera con cuidado para ver cómo reacciona la runa.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 10+4=14
+
+### [4] DM
+
+  22307 ms
+
+> La herramienta roza el borde de la cera con un sonido seco, casi metálico. En el instante en que el metal penetra la superficie del sello, la runa vibra con violencia, emitiendo un destello azul pálido que recorre el perímetro del grabado. No hay una explosión ni un mecanismo disparado, pero una descarga de energía estática salta desde la cera hasta tu herramienta, provocando que el metal vibre intensamente en tu mano.
+> El sello no se rompe, pero la cera comienza a fundirse ligeramente en el punto de contacto, burbujeando como si el calor proviniera del interior del pergamino y no de tu herramienta. El aire denso alrededor del sello se agita, creando una pequeña corriente de viento que empuja tus dedos lejos de la runa, manteniendo la barrera intacta pero ahora visiblemente reactiva.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1535 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 571 — 482/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2128 ms
+
+> "Interesante."
+> Retiro la mano rápidamente para evitar la descarga y observo la runa con detenimiento, buscando algún patrón en la vibración o el flujo del calor.
+> {Arcanos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Arcanos: 18+1=19
+
+### [4] DM
+
+  8909 ms
+
+> Al observar la runa con detenimiento, notas que las vibraciones no son erráticas, sino que siguen un pulso rítmico, similar a un latido lento y deliberado. El flujo de calor no se expande hacia el papel, sino que circula en un anillo perfecto alrededor del grabado, sugiriendo que el sello no es una simple cerradura, sino un circuito de energía diseñado para reconocer una firma específica o una frecuencia mágica concreta.
+> La luz azul pálido comienza a desvanecerse, regresando a un estado de latencia, pero ahora el patrón de la runa es más legible. Identificas que el diseño pertenece a una escuela de magia de protección vinculada a la preservación de secretos; el sello no busca destruir al intruso, sino advertir y repeler cualquier intento de apertura no autorizado mediante una barrera de retroalimentación cinética.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1215 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 572 — 483/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  5716 ms
+
+> "Interesante. Alguien no quería que esto fuera leído por cualquiera."
+> Me acerco más para analizar la runa, buscando cualquier marca, rasguño o residuo que indique que alguien ya ha intentado abrirla antes.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+1=15
+
+### [4] DM
+
+  39363 ms
+
+> Al inclinar la cabeza y acercar la vista, el patrón geométrico de la runa revela pequeñas irregularidades que habían pasado desapercibidas. En el borde inferior del círculo, donde el flujo de energía se cierra, hay una serie de micro-fisuras y un rastro casi imperceptible de un polvo grisáceo, similar a la ceniza de incienso. No son daños accidentales; son marcas de fricción, como si alguien hubiera intentado forzar el sello con una herramienta física o un catalizador material, dejando una muesca profunda en el pergamino.
+> El análisis del residuo sugiere que el intento de apertura no fue reciente, pero sí persistente. El polvo grisáceo reacciona débilmente al calor residual de la runa, desprendiendo un aroma metálico y agrio que flota brevemente en el aire antes de disiparse. Alguien lo intentó, falló y dejó una huella física de su frustración grabada en el soporte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2423 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 573 — 484/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2248 ms
+
+> "Interesante."
+> Me acerco más para examinar el tipo de herramienta que pudo causar esa muesca y trato de identificar el origen del polvo grisáceo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+1=2  PIFIA
+
+### [4] DM
+
+  15321 ms
+
+> Al inclinarte demasiado para escudriñar la muesca, el brazo roza accidentalmente el borde del pergamino. El movimiento brusco desplaza el polvo grisáceo, que se esparce violentamente sobre la runa, nublando el patrón geométrico y ocultando las irregularidades que habías detectado. 
+> En el forcejeo por recuperar el equilibrio, tu uña presiona con fuerza el centro del sello, rasgando el soporte y creando una nueva grieta que se confunde con las anteriores. Ahora, el rastro del catalizador está disperso por la mesa y la marca original ha quedado deformada, haciendo imposible distinguir la herramienta exacta que causó el daño.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2818 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 574 — 485/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3101 ms
+
+> "Maldita sea."
+> Suelto un suspiro corto y me alejo un paso de la mesa. Observo el polvo esparcido y la grieta para ver si, a pesar del desastre, queda algún rastro aprovechable.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+1=17
+
+### [4] DM
+
+  14851 ms
+
+> El polvo grisáceo se ha asentado formando una capa irregular, pero al observar el ángulo de la luz, notas que el material no se ha distribuido al azar. El polvo se ha cohesionado en ciertos puntos del pergamino, revelando que algunas zonas del sello eran ligeramente más higroscópicas o reactivas que otras. A pesar de la grieta accidental, el patrón de adherencia del polvo delata una zona de presión circular y profunda que no coincide con el rasguño de tu uña.
+> Al analizar la nueva fisura, percibes que el soporte del sello ha cedido siguiendo una línea de debilidad preexistente. El daño que causaste no creó una grieta nueva desde cero, sino que terminó de romper una costura invisible. Esto confirma que el sello ya había sido manipulado con una precisión quirúrgica antes de que tú llegaras a la mesa, dejando una firma de sabotaje profesional oculta bajo la superficie.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  8307 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 575 — 486/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2145 ms
+
+> "Alguien ha hecho el trabajo sucio por mí."
+> Examino el resto del pergamino buscando cualquier otra marca o rastro de esa manipulación previa.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+1=20
+
+### [4] DM
+
+  15101 ms
+
+> Tus dedos recorren la superficie del pergamino con una meticulosidad casi obsesiva, siguiendo el rastro de esa manipulación invisible. Bajo la luz, el papel revela una sutil deformación en el grano, una ondulación casi imperceptible que comienza en el borde inferior y asciende en diagonal hacia el centro. No es una mancha, sino una alteración en la porosidad del soporte; alguien utilizó un solvente químico muy específico para debilitar la estructura del sello sin dejar rastro de humedad.
+> Al llegar al margen derecho, descubres un pequeño pinchazo, una perforación del tamaño de un cabello humano que atraviesa el pergamino. No es accidental. La posición del agujero coincide exactamente con el punto de anclaje de una aguja de precisión, utilizada probablemente para sostener la hoja inmóvil mientras se aplicaba el solvente. El sabotaje no fue una improvisación, sino una operación técnica ejecutada con una calma gélida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  66701 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 576 — 487/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1856 ms
+
+> "Un trabajo limpio."
+> Sigo el rastro de la perforación con la vista, intentando deducir la herramienta exacta que se usó.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+1=9
+
+### [4] DM
+
+  21034 ms
+
+> El rastro de la perforación es una línea recta y fría, pero al intentar desglosar la herramienta exacta, la vista se pierde en la simplicidad del daño. El agujero es demasiado genérico; podría haber sido causado por una aguja de costura fina, un estilete de escribano o incluso una espina tratada. No hay marcas de torsión ni residuos metálicos que permitan distinguir un instrumento profesional de uno improvisado.
+> El pergamino permanece inerte bajo la luz, guardando el secreto de quién sostuvo la aguja. La precisión del acto es evidente, pero la naturaleza del objeto utilizado se resiste a ser identificada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2754 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 577 — 488/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2673 ms
+
+> "Demasiado limpio para ser improvisado."
+> Sigo examinando el pergamino, buscando cualquier rastro de sustancia, olor o una mínima mota de polvo que haya quedado atrapada en el agujero.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 11+1=12
+
+### [4] DM
+
+  9684 ms
+
+> El pergamino se resiste a entregar más secretos. A pesar de la inspección minuciosa, la superficie del material se siente seca y neutra al tacto; no hay rastro de aceites, resinas ni el aroma acre de algún veneno o tinta especial que haya podido acompañar la perforación.
+> Cualquier mota de polvo o residuo orgánico parece haber sido eliminado con una pulcritud quirúrgica, dejando el agujero como un vacío absoluto en el papel. El rastro sigue siendo una incógnita muda bajo la luz.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4091 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 578 — 489/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4543 ms
+
+> "Demasiado limpio para ser un accidente."
+> Guardo el pergamino y busco cualquier rastro de whoever lo haya manipulado recientemente en la zona.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+1=9
+
+### [4] DM
+
+  14407 ms
+
+> Te desplazas por el espacio, escudriñando las superficies cercanas y el suelo en busca de alguna huella, una gota de cera o un hilo de ropa que haya dejado el intruso. Sin embargo, el entorno se presenta tan impoluto como el propio pergamino; no hay marcas de pisadas frescas en el polvo ni señales de que alguien haya movido los muebles o rebuscado en los cajones recientemente.
+> La habitación permanece en un silencio sepulcral, y la luz se filtra por las ventanas sin revelar ninguna anomalía. No hay rastro físico, ni rastro olfativo, ni el más mínimo indicio de que alguien haya estado allí manipulando el documento antes de que tú lo encontraras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1091 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 579 — 490/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  5959 ms
+
+> "Demasiado limpio."
+> Me alejo de la zona central y examino los marcos de las ventanas y las bisagras de la puerta para ver si hay marcas de forzado o residuos de grasa.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 10+1=11
+
+### [4] DM
+
+  8625 ms
+
+> Tus dedos recorren la madera seca de los marcos y el metal frío de las bisagras, buscando cualquier muesca, rasguño o rastro de lubricante que delate una entrada apresurada. El tacto es uniforme; la madera está asentada en su sitio y el metal no presenta el brillo aceitoso ni las marcas de palanca que dejaría un intruso profesional.
+> La puerta cierra con un clic sordo y preciso, sin que el marco muestre el más mínimo astillamiento. Todo en la estancia parece haber estado en un estado de reposo absoluto durante años, manteniendo una pulcritud que roza lo antinatural.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1423 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 580 — 491/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2413 ms
+
+> "Demasiado limpio."
+> Me alejo de la puerta y busco cualquier objeto pequeño o papel que haya podido quedar fuera de lugar en la estancia.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+1=16
+
+### [4] DM
+
+  6937 ms
+
+> Tus ojos barren el suelo y las superficies planas, ignorando el orden evidente para buscar la anomalía. Tras unos instantes, detectas algo: bajo el borde de una pesada alfombra de lana que cubre el centro de la habitación, asoma una esquina de papel amarillento, apenas un centímetro de celulosa que rompe la línea perfecta del tejido.
+> Al levantar la tela, descubres un sobre de pergamino grueso, sellado con cera roja ya cuarteada. No hay nombre en el exterior, pero el papel se siente rígido y el sello, aunque gastado, conserva la impronta de un escudo que representa una llave entrelazada con una rama de olivo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  13822 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: sobre de pergamino con sello de llave y olivo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item sobre de pergamino con sello de llave y olivo
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 581 — 492/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  40 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1953 ms
+
+> "Interesante."
+> Recojo el sobre con cuidado y lo guardo rápidamente en mi ropa antes de que alguien pueda verlo.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 8+4=12
+
+### [4] DM
+
+  4883 ms
+
+> El pergamino se desliza sin ruido bajo la tela de tu vestimenta, quedando oculto y seguro contra tu cuerpo. El roce del papel rígido es la única confirmación de que el secreto ahora te pertenece.
+> En el pasillo, el eco de unos pasos pesados y el tintineo de unas llaves anuncian que alguien se aproxima a la habitación. El sonido es rítmico y decidido, acercándose rápidamente hacia la puerta.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  19330 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = sobre de pergamino con sello de llave y olivo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5709: Wynn.inventory = sobre de pergamino con sello de llave y olivo
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 582 — 493/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2071 ms
+
+> Me deslizo rápidamente hacia el rincón más oscuro de la estancia, fundiéndome con las sombras para evitar ser visto al abrirse la puerta.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 7+4=11
+
+### [4] DM
+
+  10781 ms
+
+> La puerta se abre de golpe con un chirrido metálico. Un hombre robusto, vestido con el uniforme grisáceo de los servidores del palacio, entra en la estancia cargando un candil que proyecta sombras alargadas y erráticas. El resplandor del aceite oscila violentamente mientras el hombre escudriña la habitación, frunciendo el ceño al notar que el aire se siente distinto, como si alguien acabara de abandonar el lugar.
+> El servidor camina hacia el centro de la sala, sus botas resonando pesadamente sobre el suelo de piedra. Se detiene a escasos pasos de tu rincón, pero su mirada se desvía hacia la mesa, donde el espacio vacío que dejó el pergamino es ahora evidente. Suelta un bufido de irritación y comienza a murmurar para sí mismo mientras empieza a registrar los cajones con brusquedad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5241 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 583 — 494/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2699 ms
+
+> Me quedo inmóvil en las sombras, observando sus movimientos sin hacer ruido. Intento analizar si lleva algo de valor encima mientras está distraído con la mesa.
+> {Sigilo}
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 18+4=22
+  Percepción: 17+2=19
+
+### [4] DM
+
+  6575 ms
+
+> El servidor se funde con la irritación, abriendo los cajones con sacudidas que hacen vibrar la madera vieja. Sus pasos son pesados y su atención está totalmente absorbida por el desorden de la mesa, ignorando por completo el rincón oscuro donde te encuentras; para él, la habitación está vacía.
+> Desde tu posición, la luz del candil recorta su silueta, permitiéndote distinguir los detalles de su equipo. Cuelga de su cinturón un pesado manojo de llaves de hierro que tintinean con cada movimiento y, asomando por el bolsillo lateral de su chaqueta gris, se aprecia el borde de una bolsa de cuero gastada que emite el sonido sordo y metálico de unas cuantas monedas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5284 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: manojo de llaves de hierro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item manojo de llaves de hierro
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 584 — 495/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  40 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1765 ms
+
+> Me deslizo desde las sombras intentando acercarme a él sin hacer ruido para quitarle la bolsa de monedas.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 9+4=13
+
+### [4] DM
+
+  10815 ms
+
+> El servidor sigue refunfuñando entre dientes, volcando un montón de papeles amarillentos sobre la mesa con un golpe seco. Te desplazas con cautela, pero al intentar acortar la distancia, la punta de tu bota roza un viejo perchero de madera que oscila con un chirrido agudo y traicionero.
+> El hombre se congela al instante. Gira la cabeza con brusquedad hacia tu dirección, sus ojos entornados escudriñando la penumbra mientras su mano se cierra instintivamente sobre el manojo de llaves de su cinturón.
+> —¿Quién anda ahí? —gruñe con voz ronca, dando un paso hacia el rincón donde te encuentras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2781 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 585 — 496/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2977 ms
+
+> "Solo un descuido, buen hombre. No quise asustaros."
+> Salgo de las sombras con las manos a la vista y una sonrisa forzada, intentando parecer un cliente confundido que se ha perdido.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 9+4=13
+
+### [4] DM
+
+  5127 ms
+
+> El servidor se detiene en seco, apretando las llaves con tanta fuerza que los nudillos se le ponen blancos. Te observa de arriba abajo con una mirada gélida, analizando tu postura y esa sonrisa que no termina de convencerlo del todo. Sus ojos viajan desde tus manos abiertas hasta el perchero que aún vibra levemente, y un rictus de escepticismo se dibuja en su rostro surcado de arrugas.
+> —¿Perdido? —repite con un tono cargado de sospecha, sin relajar la tensión de sus hombros—. Esta sección no es para clientes, y mucho menos a estas horas. No sé cómo has entrado, pero no me gusta la gente que "se pierde" en mi despacho.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1229 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 586 — 497/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  38 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2720 ms
+
+> "Solo busco el camino de salida, no quiero causar problemas."
+> Intento suavizar mi expresión y doy un paso lento hacia atrás, manteniendo las manos a la vista.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 13+2=15
+
+### [4] DM
+
+  7394 ms
+
+> El servidor exhala un suspiro largo y pesado, y la rigidez de sus hombros cede apenas un centímetro. Aunque sus ojos siguen entornados, la mirada gélida se transforma en una expresión de fastidio resignado; el rictus de sospecha no desaparece del todo, pero ya no parece estar buscando un motivo para llamar a la guardia.
+> —Si buscas la salida, vas en dirección contraria, forastero —gruñe, señalando con un gesto brusco de la cabeza hacia el pasillo oscuro que dejaste atrás—. Sigue el corredor hasta el final, gira a la derecha en el gran arco de piedra y no te detengas a mirar los cuadros. Ahora, muévete antes de que cambie de opinión y decida que eres un espía.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1225 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 587 — 498/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  38 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2524 ms
+
+> "Agradezco tu paciencia."
+> Hago el gesto de marcharme hacia el pasillo, pero mientras lo hago, intento echar un vistazo rápido a lo que el servidor intenta ocultar o proteger detrás de él.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 13+2=15
+
+### [4] DM
+
+  6076 ms
+
+> El servidor se mantiene firme, bloqueando la mayor parte de la visión con su cuerpo rígido y su uniforme impecable, pero el ángulo de tu retirada te concede un instante de claridad. Justo detrás de él, sobre una mesa de caoba oscura, descansa un pergamino grueso sellado con cera roja y una pequeña llave de hierro colgada de una cinta de seda negra.
+> El hombre percibe el ligero titubeo en tus pasos y lanza una mirada afilada sobre su hombro, tensando nuevamente la mandíbula. No se mueve de su posición, pero sus dedos se cierran con fuerza sobre el borde de su chaqueta, vigilando que no des ni un paso más hacia el interior de la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3343 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: pergamino sellado con cera roja
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item pergamino sellado con cera roja
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 588 — 499/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  39 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2765 ms
+
+> "Tenga un buen día."
+> Hago una ligera reverencia y, al girarme para marcharme, intento arrebatar la llave y el pergamino de la mesa con un movimiento rápido.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 9+4=13
+
+### [4] DM
+
+  19537 ms
+
+> El servidor reacciona con una velocidad imprevista, moviendo el brazo en un arco seco que intercepta tu trayectoria justo cuando tus dedos rozan la seda negra. El golpe de su antebrazo contra tu muñeca es firme y preciso, desviando tu mano con brusquedad lejos de la mesa de caoba.
+> El hombre no retrocede ni un centímetro, pero su expresión se transforma en una máscara de gélido desprecio. Sus ojos se entrecierran mientras recupera el equilibrio, manteniendo la posición de bloqueo.
+> —La cortesía es una virtud, pero el robo es un delito —sentencia con una voz que corta el aire como una cuchilla—. Salga de aquí inmediatamente antes de que decida que su "buen día" termine en el calabozo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1151 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 589 — 500/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  38 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2617 ms
+
+> "Mis disculpas, me he distraído con la calidad de la tela."
+> Retiro la mano con calma y doy un paso atrás, manteniendo una sonrisa neutra mientras analizo la postura del servidor.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 19+0=19
+
+### [4] DM
+
+  12446 ms
+
+> El servidor no suaviza la mirada, pero el gesto de amenaza en su brazo se relaja ligeramente al ver tu retroceso. Permanece rígido, con la espalda recta y los hombros tensos, manteniendo una distancia prudencial que marca una frontera invisible e infranqueable entre él y la mesa de caoba. Su respiración es controlada, casi imperceptible, y no hay rastro de nerviosismo en su postura, solo una disciplina militar aplicada al servicio doméstico.
+> Al observar sus pies y la distribución de su peso, notas que no es un simple criado; su equilibrio es perfecto y sus reflejos están entrenados para la intercepción, no para la limpieza. Sus ojos no miran tu rostro, sino que escanean tus manos y tu cintura, buscando armas o señales de un segundo intento, mientras mantiene el cuerpo ligeramente angulado para proteger el objeto de seda negra con su propio torso.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1386 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 590 — 501/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  38 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3084 ms
+
+> "Siento el malentendido. Solo tenía curiosidad por la pieza"
+> Llevo las manos a la vista, abiertas y vacías, mientras intento analizar la reacción del servidor para encontrar una grieta en su disciplina.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+0=14
+
+### [4] DM
+
+  26677 ms
+
+> El servidor no se deja engañar por la sumisión de tus manos, aunque el tono conciliador hace que deje de tensar los músculos del brazo. Sus ojos se clavan en los tuyos un instante, evaluando la sinceridad de tu disculpa, pero no hay rastro de empatía en su mirada, solo una fría eficiencia profesional. El silencio se prolonga, cargado de una desconfianza palpable, mientras él procesa si representas una amenaza real o simplemente una molestia impulsiva.
+> A pesar de su rigidez, notas que el servidor no ha bajado la guardia; su mirada sigue saltando rítmicamente entre tus ojos y el objeto de seda negra. Hay una ligera contracción en su mandíbula cuando mencionas la "curiosidad", un gesto casi imperceptible que revela que no considera la curiosidad una justificación válida para romper el protocolo de la casa. No ha relajado su postura defensiva, pero ha dejado de emanar esa hostilidad inmediata, quedando en un estado de alerta neutra.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1130 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 591 — 502/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  38 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1796 ms
+
+> "Entiendo que el protocolo es sagrado aquí. No volverá a ocurrir."
+> Mantengo la sonrisa ligera mientras deslizo lentamente el objeto de seda negra hacia él sobre la superficie, sin soltarlo del todo.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 8+2=10
+
+### [4] DM
+
+  11392 ms
+
+> El servidor observa el movimiento lento de la seda negra sobre la superficie con una expresión gélida. Cuando el objeto llega a su alcance, no se apresura a tomarlo; en su lugar, mantiene la mirada fija en tu sonrisa, que parece no encontrar eco en su rostro imperturbable. Su postura permanece rígida, como una estatua de servicio que no admite fisuras en su compostura.
+> —El protocolo no es una sugerencia, sino la base de la convivencia en esta casa —responde con una voz monocorde y seca—. Agradezco que reconozca su error, pero la cortesía no borra la imprudencia.
+> Con un movimiento rápido y preciso, cierra los dedos sobre la seda y retira el objeto de la mesa, recuperando la distancia profesional. Se mantiene alerta, esperando a ver si hay algún otro intento de saltarse las normas antes de decidir si el incidente ha quedado realmente cerrado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1705 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 592 — 503/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  38 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2128 ms
+
+> "Tienes razón. El protocolo es lo que separa a los hombres de las bestias."
+> Hago una leve reverencia, manteniendo la sonrisa, mientras observo sus manos y su postura para detectar cualquier debilidad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 10+0=10
+
+### [4] DM
+
+  12788 ms
+
+> El servidor no se inmuta ante la reverencia ni ante el comentario. Sus ojos, fríos y analíticos, permanecen anclados en los tuyos, evaluando la sinceridad de tu gesto con la misma distancia con la que mide la distancia entre dos platos sobre una mesa. No hay un rastro de satisfacción en su expresión, solo una aceptación formal de que el decoro ha sido restablecido.
+> Su postura es un muro de eficiencia; no hay un temblor en sus dedos ni un desplazamiento errático de su peso. Se mantiene tan imperturbable y equilibrado que no ofrece ninguna grieta, ningún tic ni ninguna señal de nerviosismo que permita leer algo más allá de su rígida disciplina profesional.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1006 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 593 — 504/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  38 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1939 ms
+
+> "Parece que el protocolo es lo único que importa en esta casa."
+> Sigo observando al servidor mientras busco cualquier detalle inusual en su vestimenta o equipo que delate su verdadera función.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 12+2=14
+
+### [4] DM
+
+  8698 ms
+
+> El servidor no parpadea ante la ironía, manteniendo una expresión de piedra que parece fundirse con la arquitectura austera de la estancia. No hay respuesta verbal; solo un leve e imperceptible ajuste en la posición de sus manos detrás de la espalda, un gesto que denota una paciencia gélida y mecánica.
+> Al analizar su atuendo, notas que el uniforme es impecable, pero hay un detalle fuera de lugar: bajo el puño de la manga derecha, asoma el borde de una muñequera de cuero reforzado, del tipo que se usa para evitar el roce de una hoja o el retroceso de un arma pequeña. No es una prenda de servicio, sino una pieza de equipo diseñada para el combate o el manejo de herramientas peligrosas, oculta cuidadosamente bajo la tela fina del librea.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1447 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 594 — 505/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  38 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1346 ms
+
+> "Toda una eficiencia admirable."
+> Mantengo la mirada en sus ojos mientras intento captar cualquier otro detalle oculto en su postura o vestimenta.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+2=18
+
+### [4] DM
+
+  5946 ms
+
+> El servidor permanece inmóvil, como una estatua de sal, ignorando el comentario con una disciplina férrea. Sin embargo, al observar con detenimiento, notas que el peso de su cuerpo no está distribuido de forma natural para alguien que simplemente espera; tiene el talón derecho ligeramente elevado y el centro de gravedad desplazado hacia adelante, una postura de alerta máxima lista para cerrar la distancia en un instante.
+> Además, el roce de la tela contra su pecho revela un relieve rectangular y rígido bajo la chaqueta, demasiado pequeño para ser un libro y demasiado estructurado para ser una cartera. Se siente como el estuche de cuero de un objeto metálico, probablemente una daga o un dispositivo de precisión, posicionado estratégicamente para un acceso rápido con la mano izquierda.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1342 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 595 — 506/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  38 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1781 ms
+
+> "Toda esa disciplina es admirable, pero el cuerpo no miente."
+> Sigo observando el relieve bajo su chaqueta mientras busco cualquier otra señal de nerviosismo o complicidad con alguien más en la estancia.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+0=20  CRÍTICO
+
+### [4] DM
+
+  5862 ms
+
+> El servidor no parpadea, pero el ligero tensado de su mandíbula delata que ha procesado la frase. Al ampliar el foco de tu observación, notas que sus ojos no están fijos en ti, sino que escanean rítmicamente la puerta principal y el pasillo lateral cada diez segundos, con una precisión casi mecánica. No hay rastro de sudor ni temblor en sus manos; su calma no es producto de la tranquilidad, sino de un entrenamiento riguroso en la vigilancia.
+> De repente, captas un detalle imperceptible para cualquiera que no estuviera mirando con tal intensidad: el servidor ha desplazado el peso de su cuerpo un milímetro más hacia la izquierda, coordinando el movimiento con una señal casi invisible. En el rincón opuesto de la estancia, un hombre vestido de civil que fingía leer un folleto acaba de cerrar el papel y ha fijado su mirada en el servidor, intercambiando un asentimiento gélido que confirma que no estás tratando con un empleado solitario, sino con un equipo de seguridad coordinado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1272 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 596 — 507/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  38 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1362 ms
+
+> "Parece que el servicio es muy eficiente hoy."
+> Sigo hablando con el servidor mientras intento percibir si hay más gente oculta en la estancia.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 7+2=9
+
+### [4] DM
+
+  3229 ms
+
+> El servidor mantiene la expresión neutra, aunque el músculo de su mejilla se tensa imperceptiblemente ante el comentario. No responde a la ironía; se limita a sostener la mirada con una profesionalidad gélida que corta cualquier intento de charla trivial.
+> Mientras hablas, recorres la estancia con la vista, pero el entorno se siente extrañamente vacío o demasiado controlado. No logras distinguir ninguna otra presencia oculta tras las cortinas o en las sombras de los rincones; solo percibes el silencio tenso de la sala y la mirada fija del hombre del folleto, que sigue observando cada uno de tus gestos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  853 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 597 — 508/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  38 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2030 ms
+
+> "Me gusta tu disciplina. Es una cualidad rara hoy en día."
+> Sostengo la mirada del servidor mientras busco cualquier detalle inusual en su vestimenta o en su postura que delate su verdadera función.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 15+0=15
+
+### [4] DM
+
+  4133 ms
+
+> El servidor no parpadea, pero el ligero endurecimiento de su mandíbula sugiere que el cumplido ha sido recibido como una táctica más que como una muestra de aprecio. Mantiene la espalda rígidamente recta y los brazos pegados al cuerpo, en una postura de atención militar que desentona con la laxitud habitual de un empleado de servicio.
+> Al observar más de cerca, notas que bajo la chaqueta del uniforme asoma la empuñadura de un arma corta, oculta pero accesible, y que el cuero de sus botas está pulido con una precisión obsesiva, carente de cualquier rastro de polvo. No hay insignias visibles, pero la forma en que distribuye su peso indica que está listo para reaccionar o interceptar cualquier movimiento brusco en un instante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  941 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 598 — 509/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  38 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1459 ms
+
+> "Veo que te tomas tu trabajo muy en serio."
+> Sigo observando su postura mientras busco cualquier otro detalle que delate su verdadera función en este lugar.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 5+2=7
+
+### [4] DM
+
+  7008 ms
+
+> El servidor asiente con un movimiento seco, casi imperceptible, manteniendo la mirada fija en un punto justo por encima de tu hombro. "La eficiencia es la base de cualquier servicio aceptable", responde con una voz monocorde y desprovista de calidez, mientras sus dedos se cierran levemente sobre el pliegue de su chaqueta.
+> A pesar de tu escrutinio, el hombre permanece como una estatua de piedra; no hay un tic nervioso, ni un descuido en su guardia, ni ningún otro elemento que rompa la monotonía de su uniforme oscuro. Su presencia es un vacío de información, una pared de profesionalismo gélido que oculta cualquier rastro de su verdadera identidad.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1618 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 599 — 510/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  38 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2156 ms
+
+> "Me gusta esa filosofía. Dime, ¿quién define los estándares de eficiencia en este lugar?"
+> Mantengo la calma y busco cualquier detalle oculto en su vestimenta o equipo que haya pasado por alto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 8+2=10
+
+### [4] DM
+
+  4546 ms
+
+> El servidor no parpadea, y su expresión permanece imperturbable ante la pregunta. "Los estándares son dictados por la administración, y nosotros nos limitamos a ejecutarlos con rigor", responde, manteniendo ese tono plano que hace que sus palabras suenen más a un manual de instrucciones que a una conversación humana.
+> Tus ojos recorren nuevamente el uniforme oscuro, buscando una costura suelta, un escudo oculto o el relieve de un arma bajo la tela. Sin embargo, la prenda es tan sobria y el ajuste tan perfecto que no logras distinguir nada que haya escapado a tu primera mirada; el hombre sigue siendo un lienzo en blanco, una extensión más del mobiliario gélido del establecimiento.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  962 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 600 — 511/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  38 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1880 ms
+
+> "Entiendo. Rigor, entonces."
+> Sigo observándolo mientras doy un paso lateral, tratando de captar algún detalle que se me haya pasado por alto o alguna reacción mínima en su postura.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 3+2=5
+
+### [4] DM
+
+  5027 ms
+
+> El servidor permanece estático, como una estatua de sal en medio del vestíbulo. A pesar de tu movimiento lateral, su postura no se altera ni un milímetro; no hay un ajuste nervioso de los hombros, ni un parpadeo fuera de ritmo, ni el más mínimo desplazamiento del peso de un pie a otro. 
+> Desde ese nuevo ángulo, la luz del lugar rebota en la superficie pulida del suelo y en la tela mate de su uniforme, pero no revela nada nuevo. El hombre sigue siendo un vacío de información, una presencia gélida que parece absorber cualquier intento de escrutinio sin devolver una sola pista.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1071 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 601 — 512/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos conocidos
+  38 entidades · contexto de 456 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1642 ms
+
+> "Lamento la interrupción, pero necesito saber quién es el responsable de la seguridad de este lugar."
+> Me acerco un paso más, manteniendo la distancia justa, e intento leer cualquier microexpresión en su rostro mientras hablo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+0=14
+
+### [4] DM
+
+  3948 ms
+
+> El servidor gira la cabeza hacia ti con una lentitud mecánica, coordinando el movimiento con una precisión inquietante. Sus ojos, gélidos y carentes de cualquier chispa de curiosidad o irritación, se clavan en los tuyos mientras procesa la pregunta. No hay tensión en su mandíbula ni dilatación en sus pupilas; su rostro es una máscara de porcelana imperturbable que no cede ni un ápice ante tu escrutinio.
+> —El Capitán Varos gestiona la seguridad de la estancia —responde con una voz monocorde, desprovista de inflexiones—. Se encuentra en el ala oeste, supervisando el relevo de la guardia. No está autorizado a recibir visitas sin cita previa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2452 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación npc: Capitán Varos
+  ⚠ nombres no reconocidos: Capitán, Varos
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: npc Capitán Varos
+
+### [9] ESTADO DESPUÉS
+
+  Melquíades Sorna: alive, aprecio -36.0 (wary), 4 hechos, 1 secretos revelados
+  sin cambios de estado
+
+## Turno 602 — 513/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  38 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2169 ms
+
+> "Entiendo. No busco una cita, sino una oportunidad."
+> Sigo mirando al servidor, tratando de detectar cualquier patrón o debilidad en su comportamiento mecánico.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 16+0=16
+
+### [4] DM
+
+  5996 ms
+
+> El servidor permanece inmóvil, pero bajo tu mirada atenta, el patrón emerge. No hay microexpresiones ni tics nerviosos, pero notas una ligera vibración rítmica en la comisura de su cuello, un zumbido casi imperceptible que coincide con el parpadeo de una pequeña luz ámbar oculta tras el lóbulo de su oreja. No es una debilidad emocional, sino una señal de procesamiento; el servidor no está pensando, está consultando una base de datos externa en tiempo real.
+> —La "oportunidad" no es un término reconocido en el protocolo de acceso del Capitán Varos —replica el autómata, sin mover un solo músculo facial—. Si desea dejar un mensaje, puedo registrarlo en la cola de espera, aunque el tiempo de respuesta estimado es de tres días laborales.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1015 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 603 — 514/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  38 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1800 ms
+
+> "Tres días es una eternidad cuando se trata de negocios."
+> Me acerco un paso más al servidor, intentando observar la luz ámbar desde otro ángulo para comprender mejor el dispositivo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 3+1=4
+
+### [4] DM
+
+  4047 ms
+
+> Te inclinas hacia el autómata, tratando de captar la naturaleza de aquel dispositivo oculto tras su oreja. Sin embargo, la luz ámbar se desvanece justo cuando intentas enfocarla y la estructura del cuello del servidor, compuesta por placas de un metal mate y pulido, refleja la luz del entorno de tal forma que te deslumbra brevemente, impidiéndote discernir si se trata de un implante, un auricular o una pieza integrada en su chasis.
+> El servidor no retrocede ni muestra incomodidad ante tu proximidad; permanece como una estatua de latón y circuitos.
+> —El tiempo es una constante física, no una variable negociable en el protocolo del Capitán —responde con una voz monótona y gélida—. ¿Desea registrar el mensaje o prefiere retirarse?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  839 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 604 — 515/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  38 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1548 ms
+
+> "Anotaré el mensaje, por supuesto."
+> Me separo del autómata lentamente, manteniendo la mirada en su cuello mientras busco cualquier otro detalle que haya pasado por alto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 12+2=14
+
+### [4] DM
+
+  4119 ms
+
+> Te alejas con lentitud, permitiendo que el destello del metal se disipe. Al observar el cuello del servidor desde un ángulo diferente, notas que las placas de latón no están soldadas, sino ensambladas mediante micro-tornillos de cabeza hexagonal, casi invisibles. Hay un ligero rastro de desgaste, una marca de fricción circular justo donde viste la luz ámbar, lo que sugiere que esa pieza es removible o ha sido manipulada recientemente.
+> El autómata no altera su postura, pero sus ojos mecánicos emiten un clic seco mientras procesa tu respuesta. Extiende un brazo rígido y despliega un pequeño pergamino de papel sintético, donde unas letras negras se forman instantáneamente mediante un proceso de quemado químico.
+> —El mensaje ha sido generado. El Capitán Varos le espera en el despacho principal en exactamente diez minutos. No se admiten demoras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  993 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 605 — 516/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  37 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1703 ms
+
+> "Diez minutos son más que suficientes."
+> Ignoro el pergamino y trato de aflojar uno de esos tornillos hexagonales con una herramienta pequeña o la punta de mi daga.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 4+4=8
+
+### [4] DM
+
+  7200 ms
+
+> La punta de la daga resbala bruscamente sobre el metal pulido del latón, produciendo un chirrido estridente que resuena en el silencio del pasillo. El ángulo es demasiado cerrado y el acero no logra morder la cabeza del micro-tornillo, dejando una raya superficial y fea en el acabado brillante de la placa.
+> El autómata no se inmuta ante el intento, pero sus ojos mecánicos giran hacia el punto de fricción con un movimiento espasmódico. Sin embargo, permanece inmóvil, manteniendo el brazo extendido con el pergamino, como si cualquier acción ajena que no fuera caminar hacia el despacho fuera simplemente ruido irrelevante para su programación.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1053 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 606 — 517/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  37 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1408 ms
+
+> "Maldita sea."
+> Guardo la daga rápidamente y me acerco al autómata para observar de cerca el mecanismo de sus ojos y la placa de latón.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 6+1=7
+
+### [4] DM
+
+  4137 ms
+
+> Te inclinas sobre la máquina, escrutando la placa de latón y el giro errático de sus pupilas. A corta distancia, el metal se siente frío y el olor a aceite rancio y ozono emana de las juntas del cuello. Sin embargo, la complejidad del ensamblaje es abrumadora; los engranajes se mueven en una sincronía tan apretada y veloz que cualquier intento de comprender la lógica del mecanismo se pierde en un caos de clics y zumbidos metálicos.
+> El autómata permanece estático, con el pergamino aún suspendido en el aire. Sus ojos mecánicos, dos lentes de cristal ahumado, vuelven a centrarse en el vacío frente a él, ignorando tu presencia mientras espera que cumplas la función para la que ha sido activado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1026 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 607 — 518/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  37 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1611 ms
+
+> "Parece que tienes un vacío que llenar."
+> Intento arrebatar el pergamino de las pinzas del autómata con un movimiento rápido.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 2+4=6
+
+### [4] DM
+
+  3940 ms
+
+> Te lanzas hacia adelante con un movimiento brusco, pero el autómata, aunque parece distraído, reacciona con una eficiencia mecánica gélida. En el instante en que tus dedos rozan el borde del pergamino, las pinzas de metal se cierran con un chasquido seco y preciso, atrapando el papel con una fuerza inamovible.
+> La máquina no gira la cabeza ni emite sonido alguno; simplemente mantiene el brazo extendido, bloqueando el acceso al documento. El zumbido de los engranajes en su cuello se intensifica un segundo, como si el sistema hubiera registrado una interferencia, antes de volver a su ritmo errático y monótono.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  920 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 608 — 519/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  37 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1564 ms
+
+> "Maldita chatarra."
+> Intento deslizar mis dedos entre el metal y el papel para forzar el pergamino hacia afuera sin que la máquina lo rasgue.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 18+4=22
+
+### [4] DM
+
+  4095 ms
+
+> Tus dedos se deslizan con una precisión quirúrgica, aprovechando la mínima holgura entre la pinza de acero y la fibra del pergamino. Sientes la presión fría del metal contra tus nudillos, pero el movimiento es fluido, casi imperceptible para los sensores de la máquina. Con un giro sutil de la muñeca, el papel cede y se desliza hacia tu palma, escapando del agarre mecánico justo antes de que el autómata pueda ajustar la presión.
+> La máquina permanece inmóvil, con las pinzas cerradas sobre la nada. El zumbido de sus engranajes se estabiliza en un ronroneo monótono, ajena al hecho de que el documento ya no está en su custodia. El silencio del archivo vuelve a envolverte, roto solo por el rítmico tic-tac de los mecanismos internos del autómata.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2095 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = pergamino sellado con cera roja
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5795: Wynn.inventory = pergamino sellado con cera roja
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 609 — 520/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  36 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1318 ms
+
+> Guardo el pergamino rápidamente en mi ropa y me alejo del autómata sin hacer ruido.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 18+4=22
+
+### [4] DM
+
+  5443 ms
+
+> Tus pasos no producen más sonido que el roce imperceptible de la tela sobre la piel. Te fundes con las sombras de los estantes, moviéndote como un espectro entre las columnas de madera y metal mientras el autómata sigue procesando el vacío de sus pinzas. El eco del archivo, usualmente traicionero, parece absorber tu presencia, dejándote avanzar sin dejar rastro.
+> A unos metros, la luz mortecina de los candelabros proyecta sombras alargadas que ocultan tu figura mientras te alejas del núcleo mecánico. El ronroneo de la máquina se vuelve un murmullo distante, y el aire cargado de polvo y tinta te envuelve, confirmando que has dejado atrás el centinela sin haber despertado ni un solo sensor de su sistema.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2141 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 610 — 521/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  36 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2365 ms
+
+> No pienso irme con las manos vacías. Me deslizo hacia los estantes más cercanos para buscar algún documento o objeto de valor que no esté bajo la vigilancia del autómata.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 1+1=2  PIFIA
+
+### [4] DM
+
+  5282 ms
+
+> Te inclinas sobre los anaqueles, deslizando los dedos con cautela entre pergaminos amarillentos y tomos encuadernados en cuero gastado. En tu afán por encontrar algo valioso, el roce de tu manga engancha el borde de un pesado volumen de registros fiscales que no estaba bien asentado. El libro cae con un estruendo seco y rotundo que resuena en el silencio sepulcral del archivo, provocando que una nube de polvo asfixiante te golpee el rostro.
+> El ruido corta el aire como un látigo. A pocos metros, el ronroneo del autómata se detiene en seco; el mecanismo gira con un chasquido metálico y sus sensores ópticos, ahora encendidos en un rojo vibrante, se fijan exactamente en la posición donde te encuentras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  987 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 611 — 522/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  36 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1299 ms
+
+> "Maldita sea."
+> Me agacho rápidamente detrás del anaquel para romper la línea de visión del autómata.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 1+4=5  PIFIA
+
+### [4] DM
+
+  5674 ms
+
+> En el frenesí por ocultarte, tu pie se enreda con el borde de una alfombra raída y el peso de tu cuerpo te lanza hacia adelante con torpeza. No solo no logras alcanzar la cobertura del anaquel, sino que chocas violentamente contra la estructura de madera, provocando que una cascada de folios y carpetas caiga sobre ti, dejándote tendido en el suelo y parcialmente sepultado bajo una montaña de papeles.
+> El autómata no duda. El zumbido de sus motores se intensifica mientras gira el torso con una precisión mecánica y fría. Sus sensores rojos barren la nube de polvo y se clavan en tu figura despatarrada entre los registros, emitiendo un pitido agudo y rítmico que anuncia que el intruso ha sido localizado.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  ⚠ pifia en Sigilo pero narra éxito
+
+### [6] EXTRACTOR
+
+  1351 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 612 — 523/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  36 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2700 ms
+
+> "Maldita sea."
+> Intento deslizarme rápidamente fuera de los papeles para ponerme de pie y buscar cualquier objeto punzante o pesado entre los escombros que pueda usar.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 14+4=18
+
+### [4] DM
+
+  6240 ms
+
+> Te deslizas con una agilidad sorprendente entre el caos de pergaminos, escapando de la montaña de papeles justo antes de que el autómata alcance tu posición. Te pones en pie en un movimiento fluido, recuperando el equilibrio mientras tus dedos recorren la superficie del anaquel volcado. Entre las carpetas desparramadas y las astillas de madera, tus dedos se cierran sobre un pesado pisapapeles de bronce en forma de garra, cuya base es sólida y fría.
+> El autómata emite un chirrido metálico y comienza a avanzar hacia ti. Sus pasos son pesados, haciendo vibrar las tablas del suelo, y el sensor rojo de su rostro parpadea con insistencia, fijando el objetivo en tu pecho mientras extiende un brazo mecánico hacia adelante.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2933 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: pisapapeles de bronce
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item pisapapeles de bronce
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 613 — 524/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  37 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2496 ms
+
+> "Vaya pieza más curiosa."
+> Sujeto el pisapapeles con fuerza y me lanzo contra el autómata para golpearlo en el sensor rojo.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 15+-1=14
+
+### [4] DM
+
+  9316 ms
+
+> Te impulsas con fuerza, atravesando el espacio entre los escombros de papel. El impulso es suficiente para acortar la distancia rápidamente, pero el autómata, pese a su torpeza, reacciona con un movimiento brusco de su chasis metálico. El golpe del pisapapeles de bronce impacta con un sonido seco y metálico contra la placa protectora que rodea el sensor, desviando la trayectoria del ataque.
+> El impacto no logra romper el cristal rojo, pero la fuerza del choque desestabiliza la máquina, que retrocede un paso dando un trompiconazo contra una pila de legajos. El sensor parpadea erráticamente durante un segundo, emitiendo un zumbido agudo, mientras el autómata intenta recuperar el equilibrio para volver a fijar su objetivo en ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1397 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 614 — 525/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  37 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  1926 ms
+
+> "Tú no te mueves."
+> Aprovecho el desequilibrio de la máquina para deslizarme rápidamente hacia su espalda y buscar un punto débil en sus articulaciones.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 15+4=19
+
+### [4] DM
+
+  6166 ms
+
+> Te deslizas como una sombra bajo el chasis tambaleante, aprovechando el segundo de ceguera del sensor rojo. El metal chirría mientras el autómata lucha contra la gravedad, pero tú ya estás detrás, posicionándote con precisión quirúrgica justo donde los cables de cobre y los pistones de aceite quedan expuestos en la unión de la cintura y las piernas.
+> La máquina emite un estallido de estática y gira el torso con un movimiento espasmódico, pero llega tarde; tu posición es perfecta y el punto débil ha quedado totalmente al descubierto. El zumbido agudo del sensor se estabiliza, pero el autómata ahora tiene que luchar contra su propio peso para intentar alcanzarte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  960 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 615 — 526/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  37 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2063 ms
+
+> "Demasiado lento."
+> Clavo mi daga en el punto débil de la unión para desestabilizar la máquina.
+> {Acrobacias}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Acrobacias: 1+4=5  PIFIA
+
+### [4] DM
+
+  6713 ms
+
+> El metal chirría violentamente cuando intentas clavar la daga, pero el ángulo es errático. En lugar de penetrar la unión, la hoja resbala sobre la placa de aceite, provocando que tu mano se deslice y la daga quede encajada transversalmente entre dos pistones hidráulicos. El arma queda atrapada firmemente por la presión del mecanismo, tirando de tu brazo hacia el chasis.
+> El autómata emite un pitido estridente y una descarga de estática recorre el metal. Al quedar anclado a la máquina, pierdes el equilibrio y el sensor rojo, ahora estabilizado, se clava directamente sobre ti con un zumbido agresivo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  112438 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = daga
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5820: Wynn.inventory = daga
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 616 — 527/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  37 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  70144 ms
+
+> "Maldita chatarra."
+> Tiro con fuerza del brazo para intentar liberar la daga y soltarme del chasis antes de que el sensor termine de fijarme.
+> {Atletismo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Atletismo: 8+-1=7
+
+### [4] DM
+
+  6318 ms
+
+> El metal no cede. El tirón brusco solo consigue que la daga se encaje más profundamente entre los pistones, transmitiendo una vibración sorda que sacude tu hombro. El mecanismo hidráulico emite un siseo de vapor caliente que te roza el brazo, mientras el chasis del autómata permanece imperturbable, anclándote a su estructura como si fueras una pieza más de su maquinaria.
+> El zumbido del sensor rojo alcanza su clímax y se estabiliza. Un clic metálico resuena en el interior de la máquina y una placa en el torso del autómata se desliza, revelando un núcleo de energía que comienza a brillar con una intensidad cegadora, justo frente a ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1358 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 617 — 528/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  37 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  27849 ms
+
+> "Maldita sea."
+> Suelto la daga y trato de apartar el brazo del vapor mientras intento alcanzar el núcleo brillante con la mano libre.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 15+4=19
+
+### [4] DM
+
+  5789 ms
+
+> Tus dedos se deslizan con precisión quirúrgica a través del siseo del vapor, esquivando las piezas móviles que aún vibran en el chasis. El calor del núcleo es intenso, irradiando una energía que hace que el aire a tu alrededor chispee, pero logras cerrar la mano sobre el artefacto en el instante preciso.
+> Con un tirón seco y coordinado, el núcleo se desprende de su anclaje con un chasquido metálico. En el momento en que la fuente de energía abandona la máquina, el brillo cegador se apaga abruptamente y el zumbido del sensor muere, dejando al autómata convertido en un montón de metal inerte y frío.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3693 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: núcleo brillante
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item núcleo brillante
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 618 — 529/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  38 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  14322 ms
+
+> "Demasiado ruido para una pieza tan pequeña."
+> Guardo el núcleo rápidamente en mi bolsa y reviso el resto del chasis del autómata en busca de cualquier otra pieza valiosa o documentos.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+1=20
+
+### [4] DM
+
+  8336 ms
+
+> Tus ojos escanean cada recoveco del chasis ahora mudo, moviendo placas de metal retorcidas y cables chamuscados. Entre los engranajes del pecho, donde el vapor aún escapa en hilos blancos, descubres un compartimento estanco de latón grabado con runas de sellado. Al abrirlo, encuentras un pequeño cilindro de pergamino encerado y una lente de cuarzo facetado que vibra débilmente al tacto, capturando la luz residual del entorno.
+> El pergamino, al desplegarse, revela un mapa esquemático de los conductos de ventilación de la ciudad, con una marca roja circular sobre un punto específico: la Posada del Forastero. Una anotación al margen, escrita con una caligrafía apresurada y nerviosa, reza: *"El intercambio debe ser silencioso. El núcleo es solo la llave; el secreto está en la estancia 4"*.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6693 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = núcleo brillante
+  ✓ creación item: lente de cuarzo facetado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item lente de cuarzo facetado
+  → delta 5841: Wynn.inventory = núcleo brillante
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 619 — 530/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  39 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2847 ms
+
+> "Interesante."
+> Guardo el pergamino y la lente en mi equipo rápidamente. Miro a mi alrededor para asegurarme de que nadie me ha visto encontrar el botín.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 18+2=20
+
+### [4] DM
+
+  6369 ms
+
+> El silencio del callejón es absoluto, roto únicamente por el siseo final del vapor que se disipa en el aire frío. Al levantar la vista, los muros de piedra húmeda y las sombras alargadas de los tejados no ocultan ningún movimiento; no hay ojos observando desde los balcones ni pasos apresurados acercándose por las esquinas. Estás solo con el cadáver metálico.
+> La luz del atardecer se filtra entre los edificios, proyectando un resplandor anaranjado sobre el pavimento sucio, pero no hay rastro de testigos ni de curiosos en el perímetro inmediato. El área permanece despejada y tranquila.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3781 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = lente de cuarzo facetado
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5842: Wynn.inventory = lente de cuarzo facetado
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 620 — 531/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  39 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2900 ms
+
+> Me acerco al cuerpo y empiezo a registrar sus pertenencias en busca de algo valioso o información útil.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+1=9
+
+### [4] DM
+
+  8367 ms
+
+> Te inclinas sobre el chasis inerte, donde el olor a aceite quemado y ozono aún impregna el aire. Tus dedos recorren las junturas oxidadas y los compartimentos sellados del autómata, pero la estructura es tosca y los cierres están encastrados por la corrosión y el impacto final.
+> Tras unos minutos de búsqueda, solo logras extraer unos pocos engranajes deformados y un puñado de monedas de cobre oxidadas que tintinean débilmente al caer en tu palma. No hay documentos, ni joyas, ni ningún objeto que destaque entre los restos de metal y cables chamuscados.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1237 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 621 — 532/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  39 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4014 ms
+
+> "Maldita chatarra."
+> Guardo las monedas y los engranajes en mi bolsa. Me pongo de pie y observo los alrededores buscando cualquier rastro de donde vino el autómata o si dejó caer algo más lejos durante el impacto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 11+2=13
+
+### [4] DM
+
+  9908 ms
+
+> Te enderezas, sacudiendo el polvo metálico de tu ropa mientras escaneas el terreno. El suelo es una extensión de piedra grisácea y tierra compacta, marcada por el surco profundo que dejó el autómata al derrapar antes del impacto. Siguiendo la trayectoria del rastro, notas que la superficie está rayada y levantada, pero no hay ningún objeto brillante ni fragmentos adicionales esparcidos fuera del radio inmediato del chasis.
+> Hacia el horizonte, donde el camino se pierde entre una bruma ligera, el rastro se vuelve más tenue, fundiéndose con las huellas de otros carros y viajeros. No hay signos de lucha previa ni rastros de quien pudiera haber estado operando la máquina, solo el silencio opresivo del camino y el eco lejano de algún ave carroñera.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1177 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 622 — 533/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  39 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2596 ms
+
+> Me acerco al chasis del autómata para examinarlo minuciosamente en busca de compartimentos ocultos o registros de carga.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 14+1=15
+
+### [4] DM
+
+  8996 ms
+
+> Te inclinas sobre el amasijo de metal retorcido, deslizando los dedos por las juntas oxidadas y los paneles abollados del chasis. Tras unos minutos de búsqueda, notas que una placa lateral no encaja del todo con el resto de la estructura; al aplicar una ligera presión, el metal cede con un chirrido seco, revelando un compartimento estanco y estrecho.
+> Dentro del hueco, protegida por una capa de grasa endurecida, descansa una pequeña caja de madera lacada en negro con un sello de cera roja aún intacto. No hay registros de carga ni bitácoras visibles, pero el peso de la caja sugiere que contiene algo sólido y compacto, cuidadosamente resguardado del impacto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4782 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: caja de madera lacada en negro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item caja de madera lacada en negro
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 623 — 534/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  40 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2609 ms
+
+> "Interesante."
+> Tomo la caja con cuidado y la guardo rápidamente en mi equipo antes de que alguien más lo note.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 14+4=18
+
+### [4] DM
+
+  6546 ms
+
+> Tus movimientos son fluidos y precisos, fundiéndote con las sombras y el ruido metálico del entorno mientras deslizas la caja lacada en el fondo de tu equipo. El roce de la madera contra la tela es imperceptible, camuflado por el viento que silba entre los restos del chasis y el eco lejano de la actividad en la zona.
+> A unos metros, un par de carroñeros de chatarra discuten a gritos sobre el valor de unos cables de cobre, totalmente ajenos a tu presencia y al hecho de que el compartimento secreto ahora yace vacío. El área permanece tranquila, sin que nadie haya reparado en tu breve incursión en las entrañas del metal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4757 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Wynn · character.inventory = caja de madera lacada en negro
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5853: Wynn.inventory = caja de madera lacada en negro
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 624 — 535/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  40 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3198 ms
+
+> "Demasiado ruido para tan poco cobre."
+> Me quedo inmóvil en las sombras, observando a los carroñeros para ver si llevan algo más valioso encima antes de marcharme.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 12+2=14
+
+### [4] DM
+
+  5942 ms
+
+> Desde tu posición, el viento arrastra el olor a óxido y grasa rancia. Los carroñeros se gesticulan con brusquedad, pero mientras uno de ellos se inclina para tirar de un cable, el movimiento tensa la tela de su cinturón, revelando el relieve de una bolsa de cuero gastada y una pequeña daga de hueso colgada de un cordel.
+> El otro, más delgado y nervioso, juguetea constantemente con un anillo de plata que brilla débilmente bajo la luz cenicienta, un objeto que desentona completamente con la suciedad de sus ropas y el entorno desolador del cementerio de chasis.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1302 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 625 — 536/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  40 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3281 ms
+
+> "Parece que alguien tiene gustos caros para estar en un vertedero."
+> Me deslizo entre los restos metálicos intentando acercarme al hombre del anillo sin que me detecten.
+> {Sigilo}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Sigilo: 17+4=21
+
+### [4] DM
+
+  6978 ms
+
+> Te mueves como una sombra entre las placas de acero oxidadas y los cables colgantes, aprovechando el ruido del metal que chirría bajo el viento para camuflar tus pasos. El hombre delgado está demasiado absorto en girar el anillo de plata sobre su dedo, ignorando por completo el espacio a sus espaldas mientras murmura algo inaudible para su compañero.
+> Te deslizas con fluidez, quedando a escasos centímetros de él, oculto por la estructura desplomada de un antiguo motor. El olor a grasa rancia es más intenso aquí, pero el brillo gélido de la joya es ahora perfectamente visible, a tiro de piedra de tu mano.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1290 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 626 — 537/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  40 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2779 ms
+
+> "Demasiado distraído."
+> Extiendo la mano con rapidez para arrebatarle el anillo del dedo sin que se dé cuenta.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 1+4=5  PIFIA
+
+### [4] DM
+
+  7701 ms
+
+> Tu mano se lanza hacia el dedo del hombre con la confianza de un depredador, pero el cálculo falla estrepitosamente. En lugar de un deslizamiento limpio, tus dedos chocan bruscamente contra el nudillo del sujeto, golpeando el anillo con un sonido metálico seco que resuena en el silencio del lugar.
+> El hombre pega un salto violento, soltando un grito de sorpresa mientras retira la mano con fuerza, provocando que el anillo salga disparado por el impacto. La joya describe una parábola errática en el aire y cae con un tintineo agudo, deslizándose por la rejilla de acero oxidado hasta desaparecer en la oscuridad de un sumidero cercano. El hombre se gira rápidamente, con el rostro desencajado por el susto y la mirada fija en ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1353 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 627 — 538/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  40 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2751 ms
+
+> "Ha sido un accidente, señor. Un simple tropiezo."
+> Me alejo un paso rápidamente, manteniendo una expresión de fingida confusión y disculpa.
+> {Engaño}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Engaño: 11+4=15
+
+### [4] DM
+
+  9075 ms
+
+> El hombre parpadea repetidamente, mirando alternativamente el vacío donde estaba su anillo y tu rostro. Su respiración es agitada y el susto aún nubla su juicio, haciendo que tu explicación encaje en el caos del momento. Se lleva una mano al pecho, tratando de recuperar el aliento, mientras su expresión de pánico se transforma en una mezcla de incredulidad y fastidio.
+> —¡Por los dioses! ¡Casi me arrancas el dedo! —exclama con la voz todavía temblorosa, aunque ya no parece verte como una amenaza inmediata—. ¡Maldito sea el descuido!
+> Se inclina hacia la rejilla del sumidero, asomándose a la oscuridad con una mueca de desesperación, pero el anillo ha caído demasiado profundo. Se endereza con un suspiro derrotado, lanzándote una mirada de reproche, aunque ya no hay sospecha de robo en sus ojos, solo la amargura de quien acaba de perder una joya por un torpe accidente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1335 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 628 — 539/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  40 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3773 ms
+
+> "Un descuido costoso, ciertamente. Pero no se preocupe, yo me encargaré de que no se pierda."
+> Le doy una palmada condescendiente en el hombro y me muevo hacia el sumidero para analizar la profundidad y el acceso.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 2+1=3
+
+### [4] DM
+
+  8726 ms
+
+> El hombre suelta un bufido, apartando el hombro con un gesto de fastidio mientras murmura algo sobre la "arrogancia de los desconocidos". Se queda a un lado, observando con los brazos cruzados y el ceño fruncido, esperando que tus palabras se traduzcan en resultados inmediatos.
+> Te inclinas sobre la abertura del sumidero y te asomas al agujero. El olor a humedad y descomposición sube en una ráfaga fría, pero la oscuridad es absoluta y el espacio es demasiado estrecho para ver nada. Pasas los dedos por los bordes de la rejilla y el interior del conducto, pero solo encuentras una capa pegajosa de limo y suciedad que oculta cualquier rastro del objeto. No hay ninguna señal visual ni táctil que te indique dónde ha quedado atrapado el anillo en la profundidad del drenaje.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1525 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 629 — 540/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  40 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3131 ms
+
+> "Tengo paciencia, pero el tiempo es dinero."
+> Saco un trozo de cuerda y ato un pequeño gancho improvisado al final para intentar pescar el objeto a ciegas.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 18+4=22
+
+### [4] DM
+
+  7919 ms
+
+> Sueltas la cuerda con cuidado, dejando que el gancho descienda en un siseo rítmico contra las paredes viscosas del sumidero. El metal choca con algo sólido en el fondo; un sonido seco, metálico, que resuena en el estrecho conducto. Con un movimiento preciso y un tirón seco, sientes que el gancho ha enganchado algo firme. Al subir la cuerda, el anillo emerge del limo, goteando un fluido oscuro y espeso, pero brillando con intensidad bajo la luz del día.
+> El Capitán Varos descruza los brazos y da un paso adelante, sus ojos clavados en la joya. Una chispa de sorpresa cruza su expresión, aunque rápidamente recupera su máscara de severidad.
+> —Menos charla y más resultados, parece —comenta con un tono ligeramente menos cortante, aunque mantiene una distancia prudencial—. Entrégalo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4936 ms · 1 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Capitán Varos · competence_shown
+  ✓ creación item: anillo
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item anillo
+  → delta 5865: Capitán Varos affinity 0.0 → 2.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 630 — 541/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+  41 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2868 ms
+
+> "Aquí tiene. Un trabajo limpio, como acordamos."
+> Sujeto el anillo con fuerza un segundo más de lo necesario antes de extendérselo, observando la reacción del capitán.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 20+0=20  CRÍTICO
+
+### [4] DM
+
+  8417 ms
+
+> El Capitán Varos extiende la mano y cierra los dedos sobre el anillo con un movimiento rápido, casi ansioso. Al sentir la presión de tu agarre prolongado, sus cejas se contraen y sus ojos se entrecierran, pero no retira la mano. Mientras sostiene la joya, el brillo del metal refleja una vacilación impropia de su rango; notas una tensión en su mandíbula y un ligero temblor en el pulso que delata que este objeto no es un simple trofeo recuperado, sino algo que le provoca una mezcla de alivio y un miedo visceral.
+> Te observa fijamente, y en ese silencio, percibes que su severidad es una fachada quebradiza. No está evaluando la calidad de tu trabajo, sino que está calculando cuánto sabes realmente sobre el anillo y si tu insistencia al sostenerlo es una señal de que pretendes cobrar un precio más alto o de que has descubierto algo que él prefiere mantener en secreto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4790 ms · 0 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: npc.inventory
+  ✓ delta Wynn · character.inventory = anillo
+  ⚠ campo no mutable propuesto: npc.inventory
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  → delta 5866: Wynn.inventory = anillo
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 2.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 631 — 542/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 2.0 (neutral), 0 hechos conocidos
+  41 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2976 ms
+
+> "Parece que este anillo le importa mucho más de lo que admitió al principio, Capitán."
+> Suelto el objeto lentamente y le dedico una sonrisa gélida, manteniendo el contacto visual.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 15+0=15
+
+### [4] DM
+
+  7183 ms
+
+> Varos retira la mano bruscamente, cerrando el puño sobre el anillo como si quisiera ocultarlo de la vista del mundo. El temblor de sus dedos persiste un segundo más antes de que logre recomponerse, enderezando la espalda y recuperando esa rigidez militar que intenta imponer. Sus ojos, sin embargo, no dejan de analizarte; hay una chispa de paranoia en su mirada, la certeza de que has detectado una grieta en su armadura.
+> —El valor de un objeto no siempre reside en el material, sino en el problema que soluciona su recuperación —responde con una voz que ha recuperado la firmeza, aunque un deje de sequedad delata su nerviosismo—. No confundas mi eficiencia con interés personal. Ahora, ya has cumplido con tu parte.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3018 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Capitán Varos · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 5868: Capitán Varos affinity 2.0 → 4.0  (any)
+     Reevalúa lo que el grupo puede hacer.
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  ESTADO MODIFICADO
+
+## Turno 632 — 543/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+  41 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  2806 ms
+
+> "Entiendo perfectamente el valor de los problemas, Varos. Y el de los secretos."
+> Mantengo la mirada fría mientras retrocedo un paso, analizando el anillo y su reacción.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 19+0=19
+
+### [4] DM
+
+  7916 ms
+
+> Varos sostiene la mirada, pero el músculo de su mandíbula se tensa rítmicamente. Al retroceder, notas que no solo oculta el anillo, sino que su postura se ha vuelto defensiva, casi instintiva, como quien protege un flanco expuesto en el campo de batalla. No es el miedo de un criminal que teme ser descubierto, sino la ansiedad de alguien que sostiene una llave que no le pertenece y que sabe que hay fuerzas mucho más peligrosas que tú interesadas en ella.
+> El capitán exhala un suspiro corto y nasal, desviando la vista hacia el horizonte de la ciudad. El silencio que sigue a tus palabras se vuelve denso; Varos ya no intenta imponer su autoridad, sino que parece estar calculando cuánto sabe el interlocutor y si el riesgo de seguir manteniendo la fachada supera la conveniencia de la alianza.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1252 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 633 — 544/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+  41 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  3730 ms
+
+> "Tienes una mirada muy tensa para ser un hombre con el control de la situación, Varos."
+> Me acerco un paso más a él, bajando la voz para que el capitán no perciba el matiz de mi amenaza.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 1+0=1  PIFIA
+
+### [4] DM
+
+  11236 ms
+
+> Varos reacciona al movimiento brusco con un respingo, interpretando el paso cercano y el tono bajo no como una amenaza sutil, sino como un gesto de complicidad o una urgencia desesperada. Sus hombros se relajan erróneamente y, en un descuido de juicio, asiente con una sonrisa condescendiente, creyendo que ha logrado manipular la percepción del interlocutor.
+> —La tensión es el precio de mantener el orden en una ciudad que quiere morderse la cola, muchacho —responde con un tono casi paternal, convencido ahora de que tiene la situación totalmente bajo control—. Pero agradezco tu... discreción. Es una virtud rara en estos tiempos.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1205 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Capitán Varos: alive, aprecio 4.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 634 — 545/1311 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Capitán Varos: alive, aprecio 4.0 (neutral), 0 hechos conocidos
+  40 entidades · contexto de 380 caracteres
+
+### [2] JUGADOR — Wynn
+
+  4237 ms
+
+> "La discreción tiene un precio, y yo no trabajo gratis."
+> Sigo manteniendo la cercanía, aprovechando su relajación para buscar cualquier objeto de valor que sobresalga de su ropa o pertenencias.
+> {Juego de Manos}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Juego de Manos: 2+4=6
+
+### [4] DM
+

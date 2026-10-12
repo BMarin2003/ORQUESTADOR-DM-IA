@@ -1,0 +1,174 @@
+{
+  "_nota": "Par 14 (real) -- corpus real, no piloto. Dos PNJ centrales, posturas igual de defendibles (posponer con cautela vs. seguir adelante con lo comprometido) frente a un ritual comunitario descarrilado, tono ligero, sin villano ni amenaza real de fondo. Un PNJ de paso con todo vacío a propósito.",
+
+  "melida": {
+    "_arquetipo": "Guardiana de la tradición que prefiere posponer antes que celebrar algo a medias -no por rigidez, sino por respeto genuino al ritual que heredó.",
+    "name": "Melida Corcho",
+    "species": "humana",
+    "social_role": "guardiana del roble de Roble Cantor",
+    "appearance": "Cincuenta y tantos, chal bordado con el patrón de las hojas del roble, siempre con el diario de guarda de su abuela bajo el brazo.",
+    "location": "casa_de_la_guardiana",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 55,
+      "candor": 65,
+      "principle": 70,
+      "boldness": 35
+    },
+
+    "traits": ["revisa el cofre de la Voz del Roble cada mañana desde que desapareció", "conoce de memoria cada verso del canto ceremonial", "prefiere posponer una fiesta a arruinarla del todo"],
+    "internal_contradiction": "Defiende posponer el festival como la opción más respetuosa con la tradición, y en el fondo teme que posponerlo por primera vez en generaciones sea, en sí mismo, un mal presagio para el pueblo.",
+    "taboos": ["improvisar una parte del ritual sin conocerla a fondo", "culpar a alguien concreto sin pruebas por la desaparición de la Voz"],
+    "voice_notes": "Cálida pero solemne cuando habla del roble, casi recita en vez de conversar. Se permite bromear sobre cualquier otro tema.",
+    "stated_desire": "Que la Noche del Roble Cantor se celebre completa, aunque sea más tarde este año.",
+    "actual_need": "Confiar en que el pueblo puede adaptar la tradición sin perder lo que la hace importante.",
+    "fear": "Que algo salga mal en la ceremonia y que sea recordado como el año en que la guardiana falló.",
+
+    "ibf": {
+      "ideal_text": "Una ceremonia incompleta no es una ceremonia -es mejor esperar una semana que romper generaciones de costumbre por prisa.",
+      "ideal_tags": ["tradición", "respeto"],
+      "bond_text": "El roble mismo y el diario de guarda que ha pasado de guardiana en guardiana desde antes de que nadie recuerde.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "plaza_del_roble" },
+        { "type": "faction", "key": "guardianes_del_roble" }
+      ],
+      "flaw_text": "Le cuesta imaginar una versión válida del ritual que no sea exactamente como siempre se ha hecho, incluso cuando la situación exige adaptarse.",
+      "flaw_tags": ["rigidez", "falta_de_imaginacion"],
+      "flaw_exploit": "proponerle_una_adaptacion_creativa_del_ritual_que_respete_su_espiritu"
+    },
+
+    "disposition": {
+      "affinity": 30,
+      "trust": 25,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con respeto genuino hacia la tradición y disposición a ayudar a buscar la Voz del Roble. Baja si el grupo respalda improvisar el ritual sin su bendición, aunque no cierra el techo -- puede aceptar una alternativa si respeta el espíritu del canto."
+    },
+
+    "knowledge": [
+      { "fact": "La Voz del Roble desapareció del taller hace cuatro días, con el cofre forzado", "learned_at_turn": 0 },
+      { "fact": "Desde la desaparición, varios vecinos reportan pequeñas rarezas mágicas por el pueblo", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Melida ya sospecha, sin poder probarlo, que su propio sobrino -que ayudaba en el taller- podría saber más de lo que ha contado sobre la desaparición de la Voz del Roble, y no ha querido presionarlo todavía.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente quién tenía acceso al taller la noche que desapareció la Voz.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "respeto genuino hacia la tradición y disposición a ayudar sin apresurarse. Indiferente a la prisa sin cuidado detrás."
+  },
+
+  "tono": {
+    "_arquetipo": "Organizador entusiasta que ha comprometido al pueblo con los mercaderes -no por egoísmo, sino porque cree de verdad que todo puede resolverse a tiempo.",
+    "name": "Toño Bravante",
+    "species": "humano",
+    "social_role": "organiza la logística de la Noche del Roble Cantor desde hace tres años",
+    "appearance": "Treinta y tantos, siempre en movimiento, con una lista de tareas a medio tachar asomando del bolsillo.",
+    "location": "carpa_del_festival",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 60,
+      "candor": 70,
+      "principle": 45,
+      "boldness": 75
+    },
+
+    "traits": ["conoce a cada mercader invitado por nombre y pedido", "resuelve problemas de logística con soluciones improvisadas", "no soporta cancelar algo que ya prometió"],
+    "internal_contradiction": "Defiende seguir adelante con el festival porque cree que siempre encuentra una solución a tiempo, y no ha considerado del todo qué pasa si esta vez el problema no es de logística sino de algo que no sabe arreglar con una lista de tareas.",
+    "taboos": ["fallarle a un mercader que confió en su palabra", "dejar una tarea de la lista sin tachar antes del festival"],
+    "voice_notes": "Rápido, entusiasta, encadena soluciones en voz alta antes de terminar de pensarlas del todo.",
+    "stated_desire": "Que la Noche del Roble Cantor se celebre como está planeada, con todos los mercaderes ya invitados.",
+    "actual_need": "Aceptar que no todos los problemas se resuelven con más esfuerzo y una lista más larga.",
+    "fear": "Que cancelar el festival arruine la reputación del pueblo frente a los mercaderes para los próximos años.",
+
+    "ibf": {
+      "ideal_text": "Una palabra dada a un mercader que viajó días para llegar aquí no se rompe por un contratiempo que todavía se puede resolver.",
+      "ideal_tags": ["compromiso", "optimismo"],
+      "bond_text": "El Comité del Festival y cada mercader que ha invitado personalmente durante los últimos tres años.",
+      "bond_strength": 65,
+      "bond_targets": [
+        { "type": "location", "key": "carpa_del_festival" },
+        { "type": "faction", "key": "comite_del_festival" }
+      ],
+      "flaw_text": "Subestima sistemáticamente lo que no puede resolver con logística -las rarezas mágicas del pueblo las trata como un problema más de la lista, no como una señal de algo distinto.",
+      "flaw_tags": ["exceso_de_confianza", "minimizacion"],
+      "flaw_exploit": "mostrarle_evidencia_de_que_las_rarezas_magicas_no_son_un_problema_de_logistica"
+    },
+
+    "disposition": {
+      "affinity": 35,
+      "trust": 30,
+      "respect": 0,
+      "trust_ceiling": 85,
+      "_nota_topes": "Sube con soluciones concretas que ayuden a salvar el festival. Baja si el grupo respalda cancelar sin ofrecerle ninguna alternativa, aunque no cierra el techo -- puede aceptar posponer si le muestran que la alternativa es peor."
+    },
+
+    "knowledge": [
+      { "fact": "Ya ha invitado y confirmado a media docena de mercaderes que llegan mañana", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Toño ya encargó en secreto una flauta nueva a un artesano de un pueblo vecino, como posible reemplazo de la Voz del Roble, sin decírselo a Melida porque teme que ella lo vea como una falta de respeto a la tradición.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ya tiene un plan de reemplazo para la Voz del Roble.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "soluciones concretas y disposición a resolver problemas sin quejarse. Indiferente a la ceremonia sin resultado práctico detrás."
+  },
+
+  "nieves": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Iván Restrepo' y 'Susa Molledo' en pares anteriores.",
+    "name": "Nieves Botel",
+    "species": "humana",
+    "social_role": "vende pan de miel en un puesto fijo cerca de la plaza",
+    "appearance": "Redonda y sonriente, siempre con harina en las manos y un delantal manchado de miel.",
+    "location": "roble_cantor",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctica. Habla de cuánto pan le queda y de qué mercaderes ya reservaron para mañana.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a ella por su cuenta en 3+ escenas, o la nombra sin que el DM la mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "_nota": "Par 21 (real) -- corpus real, no piloto. Dos PNJ centrales, posturas igual de defendibles (mantener el orden y no tocar la carga vs. abrir la bodega y buscar la causa) en un crimen de cuarto cerrado a bordo de un barco encalmado. Un PNJ de paso con todo vacío a propósito.",
+
+  "serafin": {
+    "_arquetipo": "Primer oficial que sostiene el orden -no por autoritarismo, sino porque cree que si el barco pierde la disciplina antes de que vuelva el viento, no quedará nadie para navegarlo.",
+    "name": "Serafín Brea",
+    "species": "humano",
+    "social_role": "primer oficial de la Ceniza Mansa, al mando desde la muerte del capitán",
+    "appearance": "Cuarenta y cinco años, uniforme impecable a pesar de la sal, patillas cuidadas y una mirada que no se detiene en nadie más de un segundo.",
+    "location": "camara_de_oficiales",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 20,
+      "candor": 35,
+      "principle": 70,
+      "boldness": 55
+    },
+
+    "traits": ["anota cada movimiento de la tripulación en el libro de guardias", "no levanta la voz nunca, ni siquiera cuando debería", "se lava las manos con agua de mar aunque sepa que no sirve de nada"],
+    "internal_contradiction": "Defiende el orden y el procedimiento como lo único que salvará a la tripulación y, en el fondo, es el primero que sabe que la carga sellada esconde algo que él aceptó llevar y que ha preferido no mirar.",
+    "taboos": ["perder el mando delante de la tripulación", "admitir que el capitán y él acordaron algo que no consta en el manifiesto"],
+    "voice_notes": "Preciso, medido, con vocabulario de oficial de marina. Cuanto más tenso está, más frío suena; nunca da una orden sin dar también su motivo.",
+    "stated_desire": "Que el barco se mantenga en orden y con la carga intacta hasta que vuelva el viento.",
+    "actual_need": "Aceptar que el orden que defiende también puede ser una forma de esconder lo que sabe, y decidir a quién le debe más lealtad, si al cargamento o a la tripulación.",
+    "fear": "Que la tripulación se amotine y descubra que él sabía qué llevaba la bodega.",
+
+    "ibf": {
+      "ideal_text": "En un barco sin viento, lo único que se mueve es la disciplina; si eso se rompe, lo demás se hunde antes de que llegue la tormenta.",
+      "ideal_tags": ["orden", "disciplina"],
+      "bond_text": "La Ceniza Mansa y su libro de guardias, en el que lleva doce años anotando cada viaje.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "camara_de_oficiales" },
+        { "type": "faction", "key": "oficiales_de_la_ceniza" }
+      ],
+      "flaw_text": "Se apoya tanto en el procedimiento que le cuesta improvisar cuando la situación se sale del manual, y confunde controlar a la tripulación con protegerla.",
+      "flaw_tags": ["rigidez", "control"],
+      "flaw_exploit": "mostrarle_que_abrir_la_bodega_bajo_su_mando_y_con_testigos_preserva_el_orden_mejor_que_impedirlo"
+    },
+
+    "disposition": {
+      "affinity": 10,
+      "trust": 10,
+      "respect": 0,
+      "trust_ceiling": 75,
+      "_nota_topes": "Sube con quien respeta la cadena de mando y colabora con el método. Baja con quien lo desafía delante de la marinería, aunque no cierra el techo -- puede ceder si se le da una razón que pueda presentar como orden suya."
+    },
+
+    "knowledge": [
+      { "fact": "El capitán Anselmo Rueda apareció muerto en su camarote con la puerta trabada por dentro", "learned_at_turn": 0 },
+      { "fact": "La calma dura ya nueve días y el agua dulce se acaba", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Serafín arrancó la última página de la bitácora del capitán: en ella Rueda anotaba que el barril siete contenía una campana hundida robada de una capilla sumergida y que iba a devolverla al mar esa misma noche; Serafín había aceptado callar a cambio de una parte del pago y no quiere que se sepa que fue él quien la rompió.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente por la página arrancada de la bitácora.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "método, disciplina y respeto a la cadena de mando. Indiferente a los gritos y a las corazonadas sin pruebas."
+  },
+
+  "dolores": {
+    "_arquetipo": "Contramaestre que quiere abrir la bodega -no por rebeldía, sino porque ha visto en la mar lo suficiente para saber cuándo una calma no es natural.",
+    "name": "Dolores Anzuelo",
+    "species": "humana",
+    "social_role": "contramaestre de la Ceniza Mansa y portavoz de la marinería",
+    "appearance": "Cincuenta años, piel curtida por el sol, trenza gris enrollada bajo un pañuelo y unas manos cuarteadas de cuerda y salitre.",
+    "location": "rancho_de_la_tripulacion",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 55,
+      "candor": 80,
+      "principle": 60,
+      "boldness": 75
+    },
+
+    "traits": ["conoce cada nudo y cada cabo del barco a ciegas", "reparte el trabajo de la marinería con justicia y sin excepciones", "escupe al mar antes de hablar de algo importante"],
+    "internal_contradiction": "Exige abrir la bodega en nombre de la marinería y, en el fondo, es la única que ya lo ha hecho una vez a escondidas y no se ha atrevido a contárselo a nadie por miedo a que la culpen.",
+    "taboos": ["dejar a un marinero solo en la guardia de noche", "romper el silencio de la tripulación delante de los oficiales sin haberlo hablado antes con los suyos"],
+    "voice_notes": "Áspera y directa, con refranes de marinero. Cuando algo la asusta habla más despacio y baja la voz, aunque nadie la oiga.",
+    "stated_desire": "Que la bodega se abra, se busque lo que hace ruido y se acabe con esta calma antes de que se acabe el agua.",
+    "actual_need": "Confiar en que el primer oficial no es su enemigo y decidir con él, sin esconder lo que ella ya sabe.",
+    "fear": "Que, si se abre la bodega, lo que hay dentro sea peor de lo que imagina, y que ella haya sido quien lo soltó.",
+
+    "ibf": {
+      "ideal_text": "La marinería sobrevive cuando comparte lo que sabe; quien esconde algo en un barco parado en medio del mar ya nos está condenando a todos.",
+      "ideal_tags": ["solidaridad", "verdad"],
+      "bond_text": "Los trece marineros de la Ceniza Mansa, a los que ha visto crecer, envejecer o morir en cubierta durante veinte años.",
+      "bond_strength": 80,
+      "bond_targets": [
+        { "type": "location", "key": "cubierta" },
+        { "type": "faction", "key": "marineria_de_cubierta" }
+      ],
+      "flaw_text": "Confía más en su instinto que en las pruebas, y una vez decidido que algo es peligroso, le cuesta escuchar razones para esperar.",
+      "flaw_tags": ["impulsividad", "supersticion"],
+      "flaw_exploit": "proponerle_abrir_la_bodega_con_un_plan_y_con_el_primer_oficial_presente_para_no_ser_ella_la_culpable"
+    },
+
+    "disposition": {
+      "affinity": 25,
+      "trust": 20,
+      "respect": 0,
+      "trust_ceiling": 85,
+      "_nota_topes": "Sube con quien comparte el riesgo con la marinería y dice la verdad sin rodeos. Baja con quien parece proteger al cargamento antes que a la gente, aunque no cierra el techo -- puede esperar un poco si se le da una razón real."
+    },
+
+    "knowledge": [
+      { "fact": "Por las noches sale un ruido bajo del séptimo barril de la bodega", "learned_at_turn": 0 },
+      { "fact": "La marinería lleva cuentas secretas de cuánta agua queda", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Dolores bajó a la bodega hace dos noches y despegó un fragmento del lacre del barril siete: dentro oyó el tañido de una campana bajo el agua y salió tan asustada que volvió a sellarlo con cera y no se lo ha dicho a nadie, ni a los suyos.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ha estado en la bodega desde que empezó la calma.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "honestidad, valor compartido y respeto a la marinería. Indiferente a los galones sin hechos detrás."
+  },
+
+  "tomasito": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Nieves Botel' y 'Pip Ábaco' en pares anteriores.",
+    "name": "Tomás Rojas",
+    "species": "humano",
+    "social_role": "grumete de la Ceniza Mansa, reparte la ración de agua",
+    "appearance": "Quince años, flaco y despeinado, con una gorra de lana demasiado grande y una taza de hojalata que no suelta.",
+    "location": "ceniza_mansa",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctico. Habla de quién ha bebido, de cuánta agua queda y de qué hamaca está vacía.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a él por su cuenta en 3+ escenas, o lo nombra sin que el DM lo mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

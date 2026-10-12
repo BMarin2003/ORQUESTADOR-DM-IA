@@ -1,0 +1,105 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 08 (real) · G2 (Monolítico) · Torre Alondra · monolithic
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        2 (  0.1%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                    2 (  0.1%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             11 (  0.8%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.175  [0.086, 0.304]
+    qn1_ttr                                n=1400  prom=0.725  [0.595, 0.941]
+    qn1_ngram_repeticion                   n=1400  prom=0.019  [0.000, 0.111]
+    qn1_legibilidad_fh                     n=1400  prom=60.733  [38.630, 92.510]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.091  [0.000, 1.000]
+  CR-2 turnos con algún nombre no reconocido: 98
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  47 visitas distintas · 9 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: Cresta de los Lamentos ↔ El Risco donde cayó Ossian ↔ brecha estrecha y oscura ↔ compartimento bajo la losa de mármol ↔ corredor estrecho y oscuro ↔ estancia oculta sobre el altar ↔ estancia tras la barrera plomiza ↔ pasillo de piedra cenicienta ↔ pasillo sumergido en una oscuridad densa (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1299 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: Cresta de los Lamentos, El Archivo Fundacional, El Risco donde cayó Ossian, La Casa Roquende, La Casa Sávez, La Crestería de Alondra, Torre Alondra, brecha estrecha y oscura, compartimento bajo la losa de mármol, estancia oculta sobre el altar, estancia tras la barrera plomiza, pasillo de piedra cenicienta, pasillo sumergido en una oscuridad densa, puerta secreta de la pared norte
+    turno 1: Cresta de los Lamentos, La Casa Roquende, La Crestería de Alondra, Torre Alondra, estancia oculta sobre el altar, pasillo sumergido en una oscuridad densa
+    turno 2: Cresta de los Lamentos, La Crestería de Alondra, Torre Alondra, estancia tras la barrera plomiza, pasillo sumergido en una oscuridad densa
+    turno 3: Caja fuerte de Alaric, La Crestería de Alondra, Torre Alondra, pasillo sumergido en una oscuridad densa
+    turno 4: Cresta de los Lamentos, pasillo sumergido en una oscuridad densa
+  camino (primeras y últimas visitas):
+    turno   9 → pasillo sumergido en una oscuridad densa
+    turno  37 → compartimento bajo la losa de mármol
+    turno  38 → pasillo sumergido en una oscuridad densa
+    ...
+    turno 1257 → pasillo sumergido en una oscuridad densa
+    turno 1298 → Cresta de los Lamentos
+    turno 1313 → pasillo sumergido en una oscuridad densa
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  ningún reloj ha disparado todavía en esta campaña
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 3.333  (sobre 10 secciones; máximo teórico = 4.5)
+    Alaric: Ci=2.0  (primera mención sección 0, última sección 4)
+    la masa pálida: Ci=3.5  (primera mención sección 0, última sección 7)
+    Baltasar Sávez: Ci=4.5  (primera mención sección 0, última sección 9)
+  V promedio = 0.073  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Alaric: Vi=0.066  (301 atributos propios detectados)
+    la masa pálida: Vi=0.0  (46 atributos propios detectados)
+    Baltasar Sávez: Vi=0.154  (13 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=0.000  (0/10)
+    npc.affinity     recall=0.600  (3/5)
+  recall global: 0.200  (15 deltas evaluables)
+  12 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  243 · la Sombra de la Biblioteca · npc.status=dead
+    turno  417 · la Sombra de la Biblioteca · npc.status=dead
+    turno  556 · Figura de la armadura antigua · npc.affinity=loyal
+    turno  644 · Figura de la armadura antigua · npc.affinity=devoted
+    turno  669 · la masa pálida · npc.status=dead
+    turno  670 · la masa pálida · npc.status=dead
+    turno  781 · Figura de la armadura antigua · npc.status=dead
+    turno  833 · la masa pálida · npc.status=dead
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.997  (1399 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.999  (min 0.967, max 1.000, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.019  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  2 turno(s) marcados en vivo. Reclasificación:
+    sujeto de una acción (repite el hallazgo crudo): 0 (0.0%)
+    solo mencionado/referenciado (posible falso positivo): 2 (100.0%)
+
+==========================================================================
+

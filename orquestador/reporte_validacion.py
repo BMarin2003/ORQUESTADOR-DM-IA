@@ -732,6 +732,332 @@ def imprimir_jericho_qa(r):
                   f"{x['campo']}={x['valor']}")
 
 
+# ---------------------- 6. CL-1: Entity Coreference Rate (Roemmele & Gordon)
+
+def entity_coreference_rate(turnos, entidades):
+    """Roemmele & Gordon, "Evaluating Story Generation Systems Using
+    Automated Linguistic Analyses" -- Entity Coreference Rate: de las
+    entidades reales de la campaña mencionadas en un turno, qué proporción
+    YA era conocida (mencionada en un turno anterior) frente a nueva.
+
+    Post-hoc, sin dependencias nuevas (mismo principio de gazetteer que
+    CR-2: nombre completo o palabra suelta de 3+ letras) -- deliberadamente
+    NO se toca vertical_slice.py/vertical_slice_g1.py ni el schema de
+    turn_validation con esto (ver bitácora QM, punto 33: riesgo de tocar
+    el motor de generación a días de la corrida a escala completa).
+
+    Es un ángulo distinto de CR-2: mide persistencia de identidad a lo
+    largo de la campaña (CL-1), no arraigo contextual inmediato (CR-2).
+    NO detecta colisión de identidad (un nombre reasignado a una entidad
+    incompatible) -- solo si las entidades reaparecen o no. Se declara
+    esa limitación explícitamente, igual que con el resto de proxies de
+    esta nota."""
+    nombres = {e["nombre"] for e in entidades}
+    primera_mencion = {}
+    por_turno = []
+    for t in turnos:
+        texto = t["dm_output"]
+        mencionadas = set()
+        for nombre in nombres:
+            tokens = [nombre] + [p for p in nombre.split() if len(p) >= 3]
+            if any(tok and tok in texto for tok in tokens):
+                mencionadas.add(nombre)
+        if mencionadas:
+            ya_conocidas = sum(1 for n in mencionadas if n in primera_mencion)
+            por_turno.append({
+                "turn_id": t["turn_id"],
+                "mencionadas": len(mencionadas),
+                "ya_conocidas": ya_conocidas,
+                "tasa": ya_conocidas / len(mencionadas),
+            })
+        for n in mencionadas:
+            primera_mencion.setdefault(n, t["turn_id"])
+
+    tasas = [x["tasa"] for x in por_turno]
+    promedio = sum(tasas) / len(tasas) if tasas else None
+    return {"promedio": promedio, "por_turno": por_turno,
+            "n_turnos_con_entidad": len(por_turno)}
+
+
+def imprimir_entity_coreference(r):
+    paso("6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, "
+         "persistencia de identidad a lo largo de la campaña")
+    if r["promedio"] is None:
+        print("  sin turnos con entidades reconocibles detectadas")
+        return
+    print(f"  tasa promedio: {r['promedio']:.3f}  "
+          f"({r['n_turnos_con_entidad']} turnos con al menos 1 entidad "
+          f"reconocida)")
+    print("  (1.0 = todas las entidades mencionadas ya eran conocidas de "
+          "turnos previos; 0.0 = todas nuevas en ese turno. NO detecta "
+          "colisión de identidad -- solo mide reaparición, ver nota en "
+          "el código)")
+
+
+# --------- 7. CR-1: Grammaticality (Roemmele & Gordon, vía LanguageTool)
+
+def _herramienta_lt():
+    """Carga perezosa de LanguageTool (es), cacheada a nivel de módulo.
+    Requiere Java 8+ instalado -- si no está disponible, o la librería no
+    está instalada, se avisa UNA vez y esta sección se omite del reporte
+    (no es una dependencia dura del resto del script). Primera ejecución
+    descarga ~260MB del motor de LanguageTool -- solo una vez, queda
+    cacheado localmente."""
+    global _LT_CACHE
+    try:
+        return _LT_CACHE
+    except NameError:
+        pass
+    try:
+        import language_tool_python
+        _LT_CACHE = language_tool_python.LanguageTool("es")
+    except Exception as e:
+        print(f"  ⚠ LanguageTool no disponible ({e!r}) -- Grammaticality "
+              f"(CR-1) se omite. Requiere Java 8+ y:\n"
+              f"      pip install language-tool-python")
+        _LT_CACHE = None
+    return _LT_CACHE
+
+
+def grammaticality_lt(texto, tool):
+    """Roemmele & Gordon -- Grammaticality: proporción de palabras SIN
+    error gramatical detectado. Excluye deliberadamente la categoría
+    TYPOS (ortografía): los nombres propios inventados de la campaña
+    (PNJ, lugares, facciones) disparan falsos positivos de ortografía de
+    forma sistemática -- no están en el diccionario de LanguageTool y no
+    es un error real. Contar eso mediría "cuántos nombres de fantasía
+    hay", no gramática. Ver bitácora QM, punto 34."""
+    if not texto.strip():
+        return None
+    matches = [m for m in tool.check(texto) if m.category != "TYPOS"]
+    n_palabras = len(texto.split())
+    if n_palabras == 0:
+        return None
+    if not matches:
+        return 1.0
+    posiciones = set()
+    for m in matches:
+        posiciones.update(range(m.offset, m.offset + m.error_length))
+    palabras_con_error, cursor = 0, 0
+    for palabra in texto.split(" "):
+        fin = cursor + len(palabra)
+        if any(p in posiciones for p in range(cursor, fin)):
+            palabras_con_error += 1
+        cursor = fin + 1
+    return round(1 - palabras_con_error / n_palabras, 3)
+
+
+def reporte_grammaticality(turnos):
+    tool = _herramienta_lt()
+    if tool is None:
+        return None
+    puntajes = []
+    for t in turnos:
+        g = grammaticality_lt(t["dm_output"], tool)
+        if g is not None:
+            puntajes.append(g)
+    if not puntajes:
+        return None
+    return {"promedio": round(sum(puntajes) / len(puntajes), 3),
+            "min": min(puntajes), "max": max(puntajes), "n": len(puntajes)}
+
+
+def imprimir_grammaticality(r):
+    paso("7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — "
+         "proxy de CR-1, fluidez/corrección gramatical")
+    if r is None:
+        print("  omitido (LanguageTool no disponible o sin turnos con texto)")
+        return
+    print(f"  promedio: {r['promedio']:.3f}  (min {r['min']:.3f}, "
+          f"max {r['max']:.3f}, n={r['n']} turnos)")
+    print("  (excluye ortografía -- nombres propios inventados no cuentan "
+          "como error; solo gramática/sintaxis real)")
+
+
+# ------------- 8. CR-2 (complemento): grafo de coherencia por lema (spaCy)
+
+def _modelo_grafo():
+    """Carga perezosa de spaCy con parser+lemmatizer activos (distinto del
+    cache de _modelo_pos(), que los desactiva para Papalampidi). Mismo
+    patrón de degradación amable: None + aviso único si no está instalado."""
+    global _MODELO_GRAFO_CACHE
+    try:
+        return _MODELO_GRAFO_CACHE
+    except NameError:
+        pass
+    try:
+        import spacy
+        _MODELO_GRAFO_CACHE = spacy.load("es_core_news_sm", disable=["ner"])
+    except (ImportError, OSError):
+        print("  ⚠ spaCy / es_core_news_sm no instalado -- grafo de "
+              "coherencia por lema (CR-2 complementario) se omite.")
+        _MODELO_GRAFO_CACHE = None
+    return _MODELO_GRAFO_CACHE
+
+
+def grafo_lema_densidad(texto, lemas_conocidos, nlp):
+    """Guinaudeau & Strube (2013) -- versión con lematización real (spaCy)
+    en vez del match por substring de `cr2_entidad_grafo_densidad`
+    (implementación original, ver bitácora QM Tier 3). Sustantivos/nombres
+    propios lematizados por oración; dos oraciones consecutivas quedan
+    conectadas si comparten un lema que corresponde a una entidad REAL de
+    la campaña (mismo principio de gazetteer que el resto de esta nota,
+    ahora con forma canónica en vez de coincidencia literal de texto).
+
+    Deliberadamente NO reemplaza `cr2_entidad_grafo_densidad` (columna ya
+    escrita en vivo por vertical_slice.py/g1.py) -- se calcula acá,
+    post-hoc, para no tocar el motor de generación a días de la corrida a
+    escala completa (ver bitácora QM, punto 33). Se reportan ambas para
+    comparar si la lematización cambia la lectura."""
+    doc = nlp(texto)
+    oraciones = list(doc.sents)
+    n = len(oraciones)
+    if n < 2:
+        return None
+    por_oracion = [
+        {t.lemma_.lower() for t in o
+         if t.pos_ in ("NOUN", "PROPN") and len(t.lemma_) >= 3} & lemas_conocidos
+        for o in oraciones
+    ]
+    aristas = sum(1 for i in range(n - 1) if por_oracion[i] & por_oracion[i + 1])
+    return round(aristas / (n - 1), 3)
+
+
+def reporte_grafo_lema(turnos, entidades):
+    nlp = _modelo_grafo()
+    if nlp is None:
+        return None
+    lemas_conocidos = set()
+    for e in entidades:
+        for tok in nlp(e["nombre"]):
+            if len(tok.lemma_) >= 3:
+                lemas_conocidos.add(tok.lemma_.lower())
+    densidades = []
+    for t in turnos:
+        d = grafo_lema_densidad(t["dm_output"], lemas_conocidos, nlp)
+        if d is not None:
+            densidades.append(d)
+    if not densidades:
+        return None
+    return {"promedio": round(sum(densidades) / len(densidades), 3),
+            "n": len(densidades)}
+
+
+def imprimir_grafo_lema(r):
+    paso("8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) "
+         "— complemento lematizado de cr2_entidad_grafo_densidad")
+    if r is None:
+        print("  omitido (spaCy no disponible o sin turnos con ≥2 oraciones)")
+        return
+    print(f"  densidad promedio: {r['promedio']:.3f}  (n={r['n']} turnos "
+          f"con ≥2 oraciones)")
+    print("  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- "
+          "si difieren mucho, la lematización está capturando continuidad "
+          "que el match literal por substring se perdía, o viceversa)")
+
+
+# ------------------- 9. Refinamiento sintáctico de cl2_pnj_inactivo_actua
+
+# Hallazgo 2026-09-18 (ver plan doc, "Cierre de Par 04/05/06"): el chequeo
+# EN VIVO cl2_pnj_inactivo_actua (vertical_slice.py/vertical_slice_g1.py)
+# dispara con la sola presencia LITERAL del nombre de un PNJ con
+# status != 'alive' en la narración del turno -- sin distinguir si el PNJ
+# aparece como sujeto de una acción (error real de continuidad) o como
+# referencia retrospectiva/callback ("todavía se preguntan qué le pasó a
+# Yenna" -- narrativamente correcto, no un error). Como G1 sostiene
+# referencias a su elenco a lo largo de muchas más secciones que G2 (ver
+# Papalampidi C, sección 4), tiene mecánicamente más ocasiones de que una
+# mención tardía dispare el chequeo crudo, sin que eso implique
+# necesariamente un fallo de continuidad -- ambos hallazgos podrían ser
+# dos caras del mismo rasgo narrativo (G1 referencia más, por más tiempo)
+# en vez de dos hallazgos independientes.
+#
+# Este refinamiento NO reemplaza la columna en vivo (que sí usa el estado
+# HISTÓRICO correcto al momento exacto de generación, algo que este script
+# post-hoc no puede reconstruir con la misma fidelidad) -- reclasifica los
+# turnos que ESE chequeo ya marcó, aplicando un criterio sintáctico más
+# fino sobre el mismo texto ya generado. Por eso se puede correr
+# retroactivamente sobre cualquier campaña ya cerrada, sin regenerar nada
+# ni tocar vertical_slice.py/g1.py ni el schema de turn_validation (mismo
+# criterio de no perturbar el motor de generación que el resto de esta
+# nota, ver bitácora QM punto 33).
+#
+# Criterio: spaCy (mismo modelo con parser activo que la sección 8)
+# determina si el nombre del PNJ es sujeto gramatical (dep_ en
+# nsubj/nsubj:pass) de un token en la misma oración donde aparece. Si lo
+# es, se cuenta como "narrado actuando" (repite/confirma el hallazgo
+# crudo); si no, como "solo mencionado/referenciado" (retrospectiva,
+# diálogo ajeno sobre él, recuerdo, etc.) -- y NO debería tratarse como
+# error de continuidad hasta nueva verificación manual.
+
+def pnj_inactivo_refinado(filas_validacion, turnos_por_id, entidades):
+    """Reclasifica los turnos con cl2_pnj_inactivo_actua=true (ver
+    docstring de sección arriba). Devuelve None si spaCy no está
+    disponible; si no, dict con listas 'actuando', 'solo_referenciado' y
+    'sin_evidencia_reconstruible' (turno flageado pero el PNJ ya no
+    aparece literal en el texto guardado -- no debería pasar, pero se
+    documenta en vez de fallar silenciosamente)."""
+    nlp = _modelo_grafo()
+    if nlp is None:
+        return None
+    nombres_pnj = {e["nombre"] for e in entidades if e["tipo"] == "npc"}
+    flagged = [f for f in filas_validacion if f.get("cl2_pnj_inactivo_actua")]
+    resultado = {"actuando": [], "solo_referenciado": [],
+                 "sin_evidencia_reconstruible": [], "n_flagged": len(flagged)}
+    for f in flagged:
+        turn_id = f["turn_id"]
+        texto = turnos_por_id.get(turn_id)
+        if not texto:
+            resultado["sin_evidencia_reconstruible"].append(turn_id)
+            continue
+        doc = nlp(texto)
+        clasificado = False
+        for sent in doc.sents:
+            for nombre in nombres_pnj:
+                if nombre not in sent.text:
+                    continue
+                es_sujeto = any(
+                    tok.dep_ in ("nsubj", "nsubj:pass") and nombre in tok.text
+                    for tok in sent)
+                entrada = {"turno": turn_id, "pnj": nombre,
+                          "oracion": sent.text.strip()[:160]}
+                if es_sujeto:
+                    resultado["actuando"].append(entrada)
+                else:
+                    resultado["solo_referenciado"].append(entrada)
+                clasificado = True
+        if not clasificado:
+            resultado["sin_evidencia_reconstruible"].append(turn_id)
+    return resultado
+
+
+def imprimir_pnj_inactivo_refinado(r):
+    paso("9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, "
+         "spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?")
+    if r is None:
+        print("  omitido (spaCy no disponible)")
+        return
+    if r["n_flagged"] == 0:
+        print("  ningún turno con cl2_pnj_inactivo_actua=true en esta "
+              "campaña -- nada que reclasificar")
+        return
+    n_act = len(r["actuando"])
+    n_ref = len(r["solo_referenciado"])
+    n_sin = len(r["sin_evidencia_reconstruible"])
+    print(f"  {r['n_flagged']} turno(s) marcados en vivo. Reclasificación:")
+    print(f"    sujeto de una acción (repite el hallazgo crudo): "
+          f"{n_act} ({100*n_act/r['n_flagged']:.1f}%)")
+    print(f"    solo mencionado/referenciado (posible falso positivo): "
+          f"{n_ref} ({100*n_ref/r['n_flagged']:.1f}%)")
+    if n_sin:
+        print(f"    sin evidencia reconstruible en el texto guardado: {n_sin}")
+    if r["actuando"]:
+        print("  muestra de 'actuando' (spot-check manual recomendado "
+              "antes de citar en la tesis):")
+        for x in r["actuando"][:5]:
+            print(f"    turno {x['turno']:>4} · {x['pnj']}: «{x['oracion']}»")
+
+
 # --------------------------------------------------------------------- main
 
 
@@ -804,6 +1130,15 @@ def main():
     if args.hasta_turno is not None:
         deltas = [d for d in deltas if d["turn_id"] <= args.hasta_turno]
     imprimir_jericho_qa(jericho_qa_recall(deltas, turnos_por_id))
+
+    imprimir_entity_coreference(entity_coreference_rate(turnos, camp.entidades()))
+
+    imprimir_grammaticality(reporte_grammaticality(turnos))
+
+    imprimir_grafo_lema(reporte_grafo_lema(turnos, camp.entidades()))
+
+    imprimir_pnj_inactivo_refinado(
+        pnj_inactivo_refinado(filas_validacion, turnos_por_id, camp.entidades()))
 
     print(f"\n{'='*74}\n")
 

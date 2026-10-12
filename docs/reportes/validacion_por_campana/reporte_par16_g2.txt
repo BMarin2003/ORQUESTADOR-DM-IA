@@ -1,0 +1,111 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 16 (real) · G2 (Monolítico) · Cruce Salado · monolithic
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        1 (  0.1%)
+    qn2_pj_piensa_narrado                     0 (  0.0%)
+    cl2_pnj_inactivo_actua                   16 (  1.1%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             15 (  1.1%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.174  [0.041, 0.333]
+    qn1_ttr                                n=1400  prom=0.732  [0.618, 0.889]
+    qn1_ngram_repeticion                   n=1400  prom=0.017  [0.000, 0.083]
+    qn1_legibilidad_fh                     n=1400  prom=65.543  [40.480, 91.380]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.131  [0.000, 1.000]
+  CR-2 turnos con algún nombre no reconocido: 50
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  115 visitas distintas · 13 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: Almacén de la Calle del Ancla ↔ Casa de los Tres Arcos ↔ almacén oculto bajo el muelle cuatro ↔ bodega oculta bajo la Taberna del Ancla ↔ doble fondo del mostrador ↔ escalera de piedra ↔ espacio oculto ↔ estancia bajo la losa ↔ oficina de los Intendentes ↔ puerta del sol eclipsado ↔ ranura en la base de un muro derruido ↔ tabla del suelo levantada ↔ vacío oscuro (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1186 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: Almacén de la Calle del Ancla, Almacén del muelle sur, Casa de los Tres Arcos, Cruce Salado, La Lonja de la Sal, La Lonja del Ámbar, almacén cuatro, almacén no registrado del muelle norte, doble fondo del cajón de caudales, vieja torre de vigilancia
+    turno 1: Almacén de la Calle del Ancla, Casa de los Tres Arcos, Cruce Salado, La Lonja de la Sal, La Lonja del Ámbar, espacio oculto
+    turno 2: Almacén de la Calle del Ancla, Casa de los Tres Arcos
+    turno 3: Almacén de la Calle del Ancla, doble fondo del mostrador
+    turno 4: Almacén de la Calle del Ancla, Casa de los Tres Arcos, La Lonja del Ámbar, Tesorería del Gremio, doble fondo del mostrador
+  camino (primeras y últimas visitas):
+    turno  22 → Casa de los Tres Arcos
+    turno  28 → Almacén de la Calle del Ancla
+    turno  38 → Casa de los Tres Arcos
+    ...
+    turno 1380 → Casa de los Tres Arcos
+    turno 1383 → almacén oculto bajo el muelle cuatro
+    turno 1399 → Casa de los Tres Arcos
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  ningún reloj ha disparado todavía en esta campaña
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 1.0  (sobre 10 secciones; máximo teórico = 4.5)
+    Elian: Ci=1.0  (primera mención sección 7, última sección 9)
+    tendero: Ci=1.5  (primera mención sección 1, última sección 4)
+    Vaelen: Ci=0.5  (primera mención sección 6, última sección 7)
+  V promedio = 0.046  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Elian: Vi=0.057  (457 atributos propios detectados)
+    tendero: Vi=0.054  (409 atributos propios detectados)
+    Vaelen: Vi=0.027  (184 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.status       recall=0.083  (1/12)
+    npc.affinity     recall=0.421  (8/19)
+  recall global: 0.290  (31 deltas evaluables)
+  22 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  235 · autómata · npc.status=captured
+    turno  247 · autómata · npc.status=captured
+    turno  248 · autómata · npc.status=dead
+    turno  279 · tendero · npc.affinity=cold
+    turno  282 · tendero · npc.affinity=wary
+    turno  312 · tendero · npc.affinity=hostile
+    turno  647 · Hombre del tabardo gris · npc.affinity=wary
+    turno  667 · Hombre del tabardo gris · npc.status=captured
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.998  (1400 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.999  (min 0.961, max 1.000, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.033  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  16 turno(s) marcados en vivo. Reclasificación:
+    sujeto de una acción (repite el hallazgo crudo): 11 (68.8%)
+    solo mencionado/referenciado (posible falso positivo): 9 (56.2%)
+  muestra de 'actuando' (spot-check manual recomendado antes de citar en la tesis):
+    turno  236 · autómata: «El autómata no reacciona; sigue inmóvil, con el brazo hidráulico extendido sobre el suelo y el silbido de la válvula desvaneciéndose lentamente en el silencio d»
+    turno  242 · autómata: «Mientras te apartas, el autómata gira la cabeza hacia ti con un movimiento fluido, casi orgánico.»
+    turno  243 · autómata: «El autómata mantiene la mirada fija en ti, y tras un instante de silencio, el mecanismo de su cuello emite un clic seco.»
+    turno  244 · autómata: «El autómata, al notar tu falta de respuesta, retira el dedo lentamente.»
+    turno  247 · autómata: «—La voz se corta en un rascado electrónico y el autómata se queda rígido, congelado en una postura antinatural mientras el vapor sigue escapando en siseos irreg»
+
+==========================================================================
+

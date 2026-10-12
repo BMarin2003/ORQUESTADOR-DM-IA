@@ -1,0 +1,299 @@
+{
+ "descripcion": "Lista de verificación hacia el informe final de tesis. Secuencia acordada: 1) resultados listos para plasmar, 2) documentar la metodología nueva, 3) docimasia de hipótesis, 4) analizar y cerrar brechas, 5) auditoría con humano y asesor. Editar 'estado' y volver a correr scripts/reporte_v2/consolidar.py. 'auto' marca solo al existir los archivos; 'depende' solo cuenta si sus dependencias están hechas.",
+ "umbral": "Resultados plasmables y documentables = todos los ítems de la fase «resultados» hechos (bloques A, B y R).",
+ "fases": [
+  [
+   "resultados",
+   "Resultados listos para plasmar (umbral)"
+  ],
+  [
+   "redaccion",
+   "Metodología, docimasia y cierre de brechas (contigo y Claude Desktop)"
+  ],
+  [
+   "posterior",
+   "Auditoría con humano y asesor (después de la redacción)"
+  ]
+ ],
+ "items": [
+  {
+   "id": "A1",
+   "bloque": "A. Datos",
+   "texto": "54 campañas de 27 parejas generadas (75 600 turnos): Par01-17 con el motor sin avance de reloj, Par18-27 con reloj determinista, dados de combate y guardia de metamensajes",
+   "estado": "hecho",
+   "quien": "claude",
+   "fase": "resultados"
+  },
+  {
+   "id": "A2",
+   "bloque": "A. Datos",
+   "texto": "Integridad de las transcripciones verificada (Par07-27: 0 fallos duros)",
+   "estado": "hecho",
+   "quien": "claude",
+   "fase": "resultados"
+  },
+  {
+   "id": "A3",
+   "bloque": "A. Datos",
+   "texto": "Formato de G1 normalizado y su efecto cuantificado",
+   "estado": "hecho",
+   "quien": "claude",
+   "fase": "resultados"
+  },
+  {
+   "id": "B1",
+   "bloque": "B. Cálculo de los instrumentos (27 parejas)",
+   "texto": "Matriz de cobertura rúbrica ↔ instrumentos",
+   "estado": "hecho",
+   "quien": "claude",
+   "fase": "resultados"
+  },
+  {
+   "id": "B2",
+   "bloque": "B. Cálculo de los instrumentos (27 parejas)",
+   "texto": "Sensibilidad por perturbación, línea base (24 instrumentos)",
+   "estado": "hecho",
+   "quien": "claude",
+   "fase": "resultados"
+  },
+  {
+   "id": "B3",
+   "bloque": "B. Cálculo de los instrumentos (27 parejas)",
+   "texto": "Detector de 2.ª persona (persona2 v2b) construido, congelado y con equivalencia por persona gramatical",
+   "estado": "hecho",
+   "quien": "claude",
+   "fase": "resultados"
+  },
+  {
+   "id": "B4",
+   "bloque": "B. Cálculo de los instrumentos (27 parejas)",
+   "texto": "Instrumentos nuevos CR-2a y CR-2b con matriz pre-especificada y evaluación (Par07-27)",
+   "estado": "hecho",
+   "quien": "claude",
+   "fase": "resultados"
+  },
+  {
+   "id": "B5",
+   "bloque": "B. Cálculo de los instrumentos (27 parejas)",
+   "texto": "Instrumentos por turno (numéricos) recalculados sobre texto normalizado en las 54 campañas",
+   "estado": "pendiente",
+   "quien": "claude",
+   "fase": "resultados",
+   "auto": {
+    "patron": "datos_v2/par*_G?.csv",
+    "total": 54
+   }
+  },
+  {
+   "id": "B6",
+   "bloque": "B. Cálculo de los instrumentos (27 parejas)",
+   "texto": "Booleanos (cr1, PNJ inactivo) recalculados en las 54 campañas",
+   "estado": "pendiente",
+   "quien": "claude",
+   "fase": "resultados",
+   "auto": {
+    "patron": "datos_v2/booleanos/par*_G?.csv",
+    "total": 54
+   }
+  },
+  {
+   "id": "B7",
+   "bloque": "B. Cálculo de los instrumentos (27 parejas)",
+   "texto": "persona2 aplicado a las 54 campañas",
+   "estado": "pendiente",
+   "quien": "claude",
+   "fase": "resultados",
+   "auto": {
+    "patron": "datos_v2/persona2/par*_G?.csv",
+    "total": 54
+   }
+  },
+  {
+   "id": "B8",
+   "bloque": "B. Cálculo de los instrumentos (27 parejas)",
+   "texto": "Instrumentos de campaña (C/V, Jericho, ECR, relojes, bucles, grafo) en las 54 campañas",
+   "estado": "pendiente",
+   "quien": "claude",
+   "fase": "resultados",
+   "auto": {
+    "patron": "datos_v2/campana/par*_G?.json",
+    "total": 54
+   }
+  },
+  {
+   "id": "B9",
+   "bloque": "B. Cálculo de los instrumentos (27 parejas)",
+   "texto": "CR-2a y CR-2b (distribución por ventanas) recalculados para las 27 parejas",
+   "estado": "pendiente",
+   "quien": "claude",
+   "fase": "resultados",
+   "auto": {
+    "patron": "docs/reportes/sensibilidad_a4bc_distribucion_27.csv",
+    "total": 1
+   }
+  },
+  {
+   "id": "B10",
+   "bloque": "B. Cálculo de los instrumentos (27 parejas)",
+   "texto": "Medidas descriptivas adicionales (repetición de frases, alfabetos, deriva, estabilidad de estilo, entidades, tiempo por turno)",
+   "estado": "pendiente",
+   "quien": "claude",
+   "fase": "resultados",
+   "auto": {
+    "patron": "datos_v2/cierre/por_campana.csv",
+    "total": 1
+   }
+  },
+  {
+   "id": "R1",
+   "bloque": "R. Paquete de resultados para plasmar",
+   "texto": "Paquete de resultados con el formato del capítulo 6: descriptivos y normalidad de G2 (OE-1 a OE-3), comparaciones pareadas (OE-4 a OE-6), resumen por hipótesis y ficha de instrumentos (docs/resultados/)",
+   "estado": "hecho",
+   "quien": "claude",
+   "fase": "resultados",
+   "depende": [
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9",
+    "B10"
+   ]
+  },
+  {
+   "id": "R2",
+   "bloque": "R. Paquete de resultados para plasmar",
+   "texto": "Revisión del paquete: que las tablas tengan las columnas y el orden que necesitan la metodología y la docimasia",
+   "estado": "pendiente",
+   "quien": "usuario",
+   "fase": "resultados",
+   "depende": [
+    "R1"
+   ]
+  },
+  {
+   "id": "M1",
+   "bloque": "M. Metodología nueva (contigo y Claude Desktop)",
+   "texto": "Documentar la metodología determinista (instrumentos, normalización, validación, limitaciones) usando la ficha de instrumentos",
+   "estado": "pendiente",
+   "quien": "usuario",
+   "fase": "redaccion"
+  },
+  {
+   "id": "M2",
+   "bloque": "M. Metodología nueva (contigo y Claude Desktop)",
+   "texto": "Reconciliar el texto de Limitaciones (calidad narrativa mitigada con rúbrica en bloque piloto) con el giro totalmente determinista",
+   "estado": "pendiente",
+   "quien": "usuario",
+   "fase": "redaccion"
+  },
+  {
+   "id": "H1",
+   "bloque": "H. Docimasia (contigo y Claude Desktop)",
+   "texto": "Decidir cómo se operacionaliza H1a-H1c (los instrumentos no tienen punto medio μ₀ = 4)",
+   "estado": "pendiente",
+   "quien": "usuario",
+   "fase": "redaccion"
+  },
+  {
+   "id": "H2",
+   "bloque": "H. Docimasia (contigo y Claude Desktop)",
+   "texto": "Docimasia de H1d, H1e y H1f y de la hipótesis general",
+   "estado": "pendiente",
+   "quien": "usuario",
+   "fase": "redaccion",
+   "depende": [
+    "R2",
+    "H1"
+   ]
+  },
+  {
+   "id": "G1",
+   "bloque": "G. Análisis y cierre de brechas (después)",
+   "texto": "Rehacer el análisis de brechas con los resultados nuevos (el análisis previo salió de otros resultados; docs/cierre_brechas.md es un borrador)",
+   "estado": "pendiente",
+   "quien": "usuario",
+   "fase": "redaccion",
+   "depende": [
+    "H2"
+   ]
+  },
+  {
+   "id": "G2",
+   "bloque": "G. Análisis y cierre de brechas (después)",
+   "texto": "Sección de límites declarados: interés y creatividad, voz del personaje, colisión de identidades, validez de constructo sin criterio humano",
+   "estado": "pendiente",
+   "quien": "claude",
+   "fase": "redaccion"
+  },
+  {
+   "id": "G3",
+   "bloque": "G. Análisis y cierre de brechas (después)",
+   "texto": "Referencias sin verificar comprobadas (DOI de Lowe 2017 y USR, coeficiente de Ochiai, umbral de Romano)",
+   "estado": "pendiente",
+   "quien": "claude",
+   "fase": "redaccion"
+  },
+  {
+   "id": "G4",
+   "bloque": "G. Análisis y cierre de brechas (después)",
+   "texto": "Defectos de contenido declarados (1 JSON crudo, ≈ 15 turnos con caracteres no latinos)",
+   "estado": "pendiente",
+   "quien": "claude",
+   "fase": "redaccion"
+  },
+  {
+   "id": "G5",
+   "bloque": "G. Análisis y cierre de brechas (después)",
+   "texto": "Decisiones abiertas: relojes (limitación o arreglo), deriva del escenario, efecto de lote",
+   "estado": "pendiente",
+   "quien": "usuario",
+   "fase": "redaccion"
+  },
+  {
+   "id": "P1",
+   "bloque": "P. Auditoría con humano y asesor (después)",
+   "texto": "Conversación con el asesor: umbrales de A2, etiquetado solo como auditoría, declaración post hoc, QN-2 como cumplimiento de la regla de oro",
+   "estado": "pendiente",
+   "quien": "asesor",
+   "fase": "posterior"
+  },
+  {
+   "id": "P2",
+   "bloque": "P. Auditoría con humano y asesor (después)",
+   "texto": "Etiquetado de la muestra de confirmación de persona2 (mínimo ≈ 300 de 515 turnos; ≈ 3.3 a 5.7 h)",
+   "estado": "pendiente",
+   "quien": "usuario",
+   "fase": "posterior"
+  },
+  {
+   "id": "P3",
+   "bloque": "P. Auditoría con humano y asesor (después)",
+   "texto": "Segundo etiquetador sobre 102 turnos (acuerdo entre etiquetadores)",
+   "estado": "pendiente",
+   "quien": "usuario",
+   "fase": "posterior"
+  },
+  {
+   "id": "P4",
+   "bloque": "P. Auditoría con humano y asesor (después)",
+   "texto": "Análisis de precisión y acuerdo de persona2 (scripts/analizar_persona2.py)",
+   "estado": "pendiente",
+   "quien": "claude",
+   "fase": "posterior",
+   "depende": [
+    "P2",
+    "P3"
+   ]
+  },
+  {
+   "id": "P5",
+   "bloque": "P. Auditoría con humano y asesor (después)",
+   "texto": "Auditoría de precisión de cl2_pnj_inactivo_actua y cr1 (≈ 100 marcas cada uno, ≈ 2 h cada uno)",
+   "estado": "pendiente",
+   "quien": "usuario",
+   "fase": "posterior",
+   "opcional": true
+  }
+ ]
+}

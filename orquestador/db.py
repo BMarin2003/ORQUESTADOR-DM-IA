@@ -13,6 +13,7 @@ campañas.
 
 import json
 import os
+import time
 from pathlib import Path
 
 import psycopg
@@ -35,6 +36,12 @@ DSN = os.environ.get(
     "host=127.0.0.1 port=5432 dbname=dmia_dev user=postgres "
     "password=dev_only_change_me")
 
+# Escala del reloj del mundo (ver Campaña.sincronizar_dia): 1 día de juego cada
+# N turnos. 1400 turnos = 70 días. Es una convención de campaña, no tiempo
+# narrado: los fixtures deben calibrar `threshold`/`rate_per_game_day` contra
+# esto (scripts/validar_fixtures_real.py avisa si un reloj no encaja).
+TURNOS_POR_DIA = 20
+
 
 class Campaña:
     def __init__(self, campaign_id, dsn=None):
@@ -43,8 +50,18 @@ class Campaña:
         self._tenant = None
 
     def _conn(self):
-        c = psycopg.connect(self.dsn, row_factory=dict_row)
-        return c
+        # Bug encontrado en Par 07-17 (2026-09-18, 17:17): cada método abre
+        # una conexión TCP nueva (sin pool) y, con 22 corridas en paralelo,
+        # Windows agotó puertos efímeros una vez en 5 h -> "connection
+        # failed ... Address already in use (10048)" tumbó Par09 G2. Es
+        # transitorio: reintento corto (0.5..8 s) antes de propagar.
+        for intento in range(6):
+            try:
+                return psycopg.connect(self.dsn, row_factory=dict_row)
+            except psycopg.OperationalError:
+                if intento == 5:
+                    raise
+                time.sleep(0.5 * 2 ** intento)
 
     def _tx(self, conn):
         """Fija el tenant SOLO para esta transacción."""
@@ -568,6 +585,39 @@ class Campaña:
             r = c.execute(
                 "SELECT * FROM advance_clocks(%s, %s, %s)",
                 (self.campaign_id, game_days, turn_id)).fetchall()
+            c.commit()
+            return r
+
+    def sincronizar_dia(self, turn_id, turnos_por_dia=None):
+        """Reloj del mundo DETERMINISTA (2026-09-19, para Par 18+).
+
+        En Par01-17 los relojes de facción nunca dispararon: solo avanzaban si
+        el extractor emitía world.game_day, y en ~30 000 turnos no lo emitió
+        ni una vez. Aquí el día de juego sale del número de turno
+        (día = turno // TURNOS_POR_DIA), sin LLM, igual en G1 y en G2.
+
+        Idempotente y a prueba de caídas: si `game_day` ya está al día no hace
+        nada; si un turno anterior se perdió el tick, el siguiente lo recupera
+        (avanza `día - game_day` días de golpe). El delta (fuente 'clock') y
+        el avance de relojes van en UNA transacción: no puede quedar el día
+        avanzado sin que los relojes lo sepan. Devuelve los relojes disparados
+        en este turno (mismas columnas que avanzar_relojes)."""
+        turnos_por_dia = turnos_por_dia or TURNOS_POR_DIA
+        with self._conn() as c:
+            self._tx(c)
+            actual = c.execute("SELECT game_day FROM campaigns WHERE id=%s",
+                               (self.campaign_id,)).fetchone()["game_day"]
+            dia = turn_id // turnos_por_dia
+            if dia <= actual:
+                return []
+            c.execute("""
+                SELECT apply_delta(%s,'world'::entity_type,NULL,'game_day',
+                                   %s::jsonb,%s,'clock'::delta_source,%s)""",
+                      (self.campaign_id, json.dumps(dia), turn_id,
+                       f"reloj determinista: día {dia} "
+                       f"(1 día cada {turnos_por_dia} turnos)"))
+            r = c.execute("SELECT * FROM advance_clocks(%s, %s, %s)",
+                          (self.campaign_id, dia - actual, turn_id)).fetchall()
             c.commit()
             return r
 

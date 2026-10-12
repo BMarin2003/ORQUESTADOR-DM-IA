@@ -1,0 +1,102 @@
+
+==========================================================================
+REPORTE DE VALIDACIÓN · Par 20 (real) · G1 (Multiagente) · Brasas Lentas · mas
+==========================================================================
+
+──────────────────────────────────────────────────────────────────────────
+1. RESUMEN turn_validation (longitudinal débil -- agregado, no causal)
+──────────────────────────────────────────────────────────────────────────
+  1400 turnos registrados
+  Tier 1/2 (problema real), turnos afectados:
+    cr1_veredicto_contradice_narracion        7 (  0.5%)
+    qn2_pj_piensa_narrado                     1 (  0.1%)
+    cl2_pnj_inactivo_actua                    0 (  0.0%)
+    cl2_pc_hp_contradice_narracion            0 (  0.0%)
+    cl1_campo_inmutable_alterado             48 (  3.4%)
+  Tier 4 (revisar, nunca problema duro):
+    qn2_pj_accion_revisar                     0 (  0.0%)
+  Tier 3 (proxy descriptivo, nunca pass/fail):
+    cl2_lugar_jaccard_similarity           n=1400  prom=0.210  [0.127, 0.448]
+    qn1_ttr                                n=1400  prom=0.683  [0.592, 0.781]
+    qn1_ngram_repeticion                   n=1400  prom=0.031  [0.000, 0.098]
+    qn1_legibilidad_fh                     n=1400  prom=61.536  [45.970, 75.420]
+    cr2_entidad_grafo_densidad             n=1400  prom=0.117  [0.000, 0.600]
+  CR-2 turnos con algún nombre no reconocido: 1399
+
+──────────────────────────────────────────────────────────────────────────
+2. DETECTOR DE BUCLES (grafo de transiciones REALIZADAS, candidato inspirado en Twine/Symmetry)
+──────────────────────────────────────────────────────────────────────────
+  28 visitas distintas · 7 ubicaciones conocidas mencionadas en total
+  ⚠ ciclo detectado: El Archivo del Molino ↔ El Valle de los Tres Molinos ↔ cavidad circular ↔ espacio oscuro y húmedo ↔ pasillo descendente ↔ plataforma circular de bronce ↔ sala de control circular (la campaña entra y sale de este conjunto sin llegar a lugares nuevos)
+  1347 turno(s) con más de una ubicación mencionada a la vez (no cuentan como transición clara):
+    turno 0: El Archivo del Molino, El Molino Mayor, El Valle de los Tres Molinos, Harinilla, La Cueva de Brasas Lentas
+    turno 1: El Archivo del Molino, El Molino Mayor, El Valle de los Tres Molinos, La Cueva de Brasas Lentas, estancia semicircular, trampilla de hierro oxidado, túnel de paredes musculares
+    turno 2: El Archivo del Molino, El Valle de los Tres Molinos, La Cueva de Brasas Lentas, antigua torre de vigilancia colapsada, estancia semicircular
+    turno 3: El Archivo del Molino, El Valle de los Tres Molinos, La Cueva de Brasas Lentas, antigua torre de vigilancia colapsada, espacio oscuro y húmedo, trampilla de hierro oxidado
+    turno 4: El Archivo del Molino, El Valle de los Tres Molinos, antigua biblioteca
+  camino (primeras y últimas visitas):
+    turno  14 → El Valle de los Tres Molinos
+    turno 132 → pasillo descendente
+    turno 140 → El Valle de los Tres Molinos
+    ...
+    turno 1355 → El Archivo del Molino
+    turno 1357 → El Valle de los Tres Molinos
+    turno 1359 → El Archivo del Molino
+
+──────────────────────────────────────────────────────────────────────────
+3. RELOJES DISPARADOS — ¿la narración reconoció la consecuencia? (validación longitudinal-causal)
+──────────────────────────────────────────────────────────────────────────
+  El Gremio de Molineros disparó en turno 240 · ✓ reconocido en turno 241
+    agenda: Se acerca el día del tributo anual y la caja del gremio ha decidido no pagarlo hasta que se aclare qué se debe realmente
+  La Casa de Brasas Lentas disparó en turno 640 · ✓ reconocido en turno 641
+    agenda: Los Caballeros Sin Dragón, gremio de guerreros sin trabajo, se enteran de que hay un dragón jubilable y van hacia el valle con licencia de caza
+  La Casa de Brasas Lentas disparó en turno 1060 · ✓ reconocido en turno 1061
+    agenda: Llega el primer frío del año y con él la hibernación del dragón: si no hay acuerdo firmado, se duerme cinco años
+
+──────────────────────────────────────────────────────────────────────────
+4. COHERENCIA (C) Y CONSISTENCIA DE ATRIBUTOS (V) — Papalampidi et al. 2022 (agregado de campaña completa)
+──────────────────────────────────────────────────────────────────────────
+  C promedio = 2.667  (sobre 10 secciones; máximo teórico = 4.5)
+    Matilde Harinosa: Ci=4.5  (primera mención sección 0, última sección 9)
+    Brasas Lentas: Ci=3.5  (primera mención sección 0, última sección 7)
+    Yarah: Ci=0.0  (primera mención sección 3, última sección 3)
+  V promedio = 0.106  (1.0 = todos los atributos de la entidad son exclusivos suyos en la narrativa)
+    Matilde Harinosa: Vi=0.068  (602 atributos propios detectados)
+    Brasas Lentas: Vi=0.083  (48 atributos propios detectados)
+    Yarah: Vi=0.167  (6 atributos propios detectados)
+
+──────────────────────────────────────────────────────────────────────────
+5. JERICHO-QA STATE GRAPH — Recall (deltas de estado vs. narración; ver nota: SOLO recall, no F1 -- limitación declarada)
+──────────────────────────────────────────────────────────────────────────
+    npc.affinity     recall=0.000  (0/2)
+    quest.status     recall=1.000  (1/1)
+  recall global: 0.333  (3 deltas evaluables)
+  2 delta(s) sin reflejo textual detectado en la ventana de turnos:
+    turno  300 · Matilde Harinosa · npc.affinity=devoted
+    turno  802 · Matilde Harinosa · npc.affinity=loyal
+
+──────────────────────────────────────────────────────────────────────────
+6. ENTITY COREFERENCE RATE (Roemmele & Gordon) — proxy de CL-1, persistencia de identidad a lo largo de la campaña
+──────────────────────────────────────────────────────────────────────────
+  tasa promedio: 0.997  (1401 turnos con al menos 1 entidad reconocida)
+  (1.0 = todas las entidades mencionadas ya eran conocidas de turnos previos; 0.0 = todas nuevas en ese turno. NO detecta colisión de identidad -- solo mide reaparición, ver nota en el código)
+
+──────────────────────────────────────────────────────────────────────────
+7. GRAMMATICALITY (Roemmele & Gordon, vía LanguageTool-es) — proxy de CR-1, fluidez/corrección gramatical
+──────────────────────────────────────────────────────────────────────────
+  promedio: 0.988  (min 0.962, max 0.998, n=1401 turnos)
+  (excluye ortografía -- nombres propios inventados no cuentan como error; solo gramática/sintaxis real)
+
+──────────────────────────────────────────────────────────────────────────
+8. GRAFO DE COHERENCIA POR LEMA (Guinaudeau & Strube, vía spaCy) — complemento lematizado de cr2_entidad_grafo_densidad
+──────────────────────────────────────────────────────────────────────────
+  densidad promedio: 0.019  (n=1401 turnos con ≥2 oraciones)
+  (compara contra cr2_entidad_grafo_densidad de la sección 1 -- si difieren mucho, la lematización está capturando continuidad que el match literal por substring se perdía, o viceversa)
+
+──────────────────────────────────────────────────────────────────────────
+9. REFINAMIENTO SINTÁCTICO DE cl2_pnj_inactivo_actua (post-hoc, spaCy) -- ¿el PNJ inactivo actúa o solo se le menciona?
+──────────────────────────────────────────────────────────────────────────
+  ningún turno con cl2_pnj_inactivo_actua=true en esta campaña -- nada que reclasificar
+
+==========================================================================
+

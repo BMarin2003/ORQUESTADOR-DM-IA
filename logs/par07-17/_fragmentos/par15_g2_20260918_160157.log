@@ -1,0 +1,3296 @@
+(bitácora en Markdown: C:\BMARIN2003\DEV\proyecto\logs\par_15_real_g2_monolitico_solar_viejo_79db3083_turnos_1-1400_20260918_160200.md)
+
+# VERTICAL SLICE — Par 15 (real) · G2 (Monolítico) · Solar Viejo (monolithic)
+
+- **DM:** `google/gemma-4-31B-it`
+- **jugador:** `google/gemma-4-31B-it` (Ilvard, desvío 25)
+- **turno:** 1
+
+## Turno 1 — 1/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Baldor Enna: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  15 entidades · contexto de 1069 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2488 ms
+
+> "Es una situación lamentable, pero la verdad debe prevalecer para que haya justicia."
+> Me acerco a Doroteo Vann para ofrecerle mi apoyo y preguntarle dónde cree él que podría estar ese documento.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 1+4=5  PIFIA
+
+### [4] DM
+
+  7798 ms
+
+> Doroteo te mira con una expresión que comienza siendo de gratitud, pero que se contrae rápidamente en una mueca de desconcierto. Al intentar acercarte y ofrecer tu apoyo, tus palabras salen atropelladas o el tono resulta extrañamente fuera de lugar, sonando más como una condescendencia fría que como una mano tendida. El hombre retrocede un paso, visiblemente incómodo, y evita sostenerte la mirada, sintiendo que tu interés por el documento es más una curiosidad técnica o una intrusión que un deseo genuino de justicia.
+> —Agradezco el gesto, señor... pero creo que es mejor que no nos apresuremos —responde Doroteo con voz tensa, cruzando los brazos sobre el pecho—. No soy alguien que se deje guiar por promesas ligeras, y menos ahora que los nervios están a flor de piel en el pueblo. No creo que sea el momento de especular sobre dónde están los papeles.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1196 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Baldor Enna: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 2 — 2/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2680 ms
+
+> "Os pido disculpas, Doroteo. Mi intención es ayudaros, no incomodaros, y mi palabra es tan firme como mi acero."
+> Bajo la cabeza en señal de respeto y doy un paso atrás para darle espacio, manteniendo un tono sincero.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 10+4=14
+
+### [4] DM
+
+  7997 ms
+
+> Doroteo observa el gesto de sumisión y el paso atrás, y la tensión de sus hombros cede lentamente. El hombre exhala un suspiro largo, dejando que sus brazos caigan a los costados mientras procesa la sinceridad del tono. Aunque la desconfianza inicial ha dejado una pequeña grieta, la firmeza de la promesa parece resonar en él, recordándole la urgencia de su situación y la soledad de su lucha.
+> —La sinceridad es una moneda rara en estos días, y el respeto... aún más —murmura Doroteo, volviendo a mirarte a los ojos, esta vez con una chispa de esperanza—. Acepto vuestras disculpas. No es que no confíe en vuestro acero, es que el dolor de perder lo que es mío me vuelve cauteloso. Si vuestra palabra es tan firme como decís, quizá sea el apoyo que necesito para no desmoronarme ante Herminia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2777 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento doroteo_vann · promise_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: doroteo_vann
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 3 — 3/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 1012 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  4456 ms
+
+> "Tenéis mi palabra y mi brazo, Doroteo. No caminaréis solo en este camino."
+> Pongo una mano en su hombro con afecto para darle ánimo.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 2+4=6
+
+### [4] DM
+
+  10422 ms
+
+> Doroteo se tensa imperceptiblemente cuando siente la presión de tu mano sobre su hombro. Sus ojos se desvían un instante hacia el contacto, y aunque no se aparta, su cuerpo permanece rígido, como si el afecto físico fuera un lenguaje que ha olvidado cómo hablar o que le resultara demasiado vulnerable en medio de su desesperación.
+> —Agradezco el gesto... —responde con voz seca, recuperando la distancia emocional aunque mantiene la mirada fija en ti—. Pero las palabras y las manos cálidas no detienen los decretos de un tribunal. Si realmente vais a caminar a mi lado, debemos movernos rápido. Herminia no descansará hasta que El Solar sea suyo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3317 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento doroteo_vann · promise_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: doroteo_vann
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 4 — 4/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 1012 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  3791 ms
+
+> "Tienes mi palabra, Doroteo. No te dejaré solo frente a esa injusticia."
+> Suelto su hombro con suavidad y me pongo en marcha a su lado, atento a cualquier señal de peligro.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+1=3
+
+### [4] DM
+
+  8009 ms
+
+> Doroteo exhala un suspiro contenido, y aunque su expresión sigue siendo severa, la rigidez de sus hombros cede ligeramente. No responde a la promesa, pero asiente con un movimiento corto y decidido de cabeza mientras comienza a caminar a paso rápido, guiándote hacia las calles empedradas del pueblo.
+> El trayecto es monótono y el entorno pasa desapercibido; el ruido cotidiano del mercado y el bullicio de los vecinos que barren sus porches se funden en un ruido blanco que no revela nada fuera de lo común. El aire huele a pan recién horneado y a humedad, pero no hay rastro de anyone acechando en las sombras ni señales anómalas en el camino.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5372 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento doroteo_vann · promise_made
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: doroteo_vann
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 5 — 5/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2374 ms
+
+> "Agradezco vuestra guía, maestro Doroteo."
+> Camino a su lado manteniendo una postura erguida y vigilante, observando el comportamiento de los vecinos mientras avanzamos.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 3+1=4
+
+### [4] DM
+
+  5909 ms
+
+> Doroteo no se detiene, manteniendo un ritmo constante que hace que sus botas resuenen secas sobre el empedrado. Te dedica una mirada fugaz, un gesto de reconocimiento apenas perceptible en la comisura de sus labios, antes de volver a clavar la vista en el camino.
+> A tu lado, el pueblo fluye en su rutina habitual. Los vecinos se limitan a intercambiar saludos breves o a observar el paso de un desconocido con la curiosidad habitual de quien vive en un lugar pequeño, pero no percibes nada inusual en sus gestos ni señales que sugieran que alguien esté atento a vuestro trayecto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1564 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 6 — 6/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2082 ms
+
+> "No te preocupes, Doroteo, te sigo el paso."
+> Camino a su lado manteniendo la espalda erguida y saludo con un gesto amable a los vecinos que nos observan.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 9+1=10
+
+### [4] DM
+
+  5658 ms
+
+> El camino continúa entre casas de piedra y tejados de teja rojiza. El aire huele a leña quemada y a tierra húmeda. Los vecinos devuelven tus saludos con asentimientos distraídos o sonrisas corteses, absortos en sus faenas diarias; no hay nada en sus miradas ni en el ritmo de la calle que rompa la monotonía de la mañana.
+> Doroteo mantiene el paso, aunque su postura parece relajarse ligeramente al escuchar tus palabras. Sin detenerse, señala con un gesto firme hacia una construcción de madera oscura y ventanales polvorientos que comienza a vislumbrarse al final de la calle.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1522 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 7 — 7/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  10066 ms
+
+> "Parece un lugar que ha visto tiempos mejores. Gracias por guiarme, Doroteo."
+> Sigo caminando junto a él, observando los ventanales polvorientos del edificio.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 11+1=12
+
+### [4] DM
+
+  5379 ms
+
+> La madera del edificio cruje bajo el peso de los años y el polvo acumulado en los cristales difumina el interior, convirtiéndolo en una masa de sombras y reflejos grisáceos. A medida que te acercas, el olor a papel viejo y cera fría comienza a filtrarse desde la entrada, mezclándose con la humedad del ambiente.
+> Doroteo asiente con una sonrisa melancólica, aunque sus ojos permanecen fijos en la fachada. Al observar los ventanales, notas que algunas de las cortinas interiores están ligeramente descolgadas, dejando ver el amontonamiento caótico de legajos y archivadores que llenan la estancia, pero no percibes ningún movimiento ni presencia humana tras el vidrio.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1306 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 8 — 8/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2540 ms
+
+> "No permitiremos que el olvido gane la partida, Doroteo. Entremos y pongamos orden en este caos."
+> Camino hacia la entrada y abro la puerta con cuidado.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+1=17
+
+### [4] DM
+
+  6637 ms
+
+> La puerta cede con un gemido prolongado de bisagras oxidadas, liberando una nube de polvo que danza en los escasos rayos de luz que logran penetrar. Al entrar, el silencio es casi absoluto, roto solo por el eco de tus pasos sobre el suelo de madera carcomida. El lugar es un laberinto de estanterías que se inclinan peligrosamente, cargadas de carpetas descoloridas y rollos de pergamino que parecen sostener el techo por pura inercia.
+> Mientras recorres la estancia con la mirada, notas que entre el desorden hay un patrón: una serie de archivadores en la pared del fondo han sido movidos recientemente, dejando marcas claras de arrastre sobre el polvo espeso del suelo. Además, un pequeño tintero volcado sobre el escritorio principal muestra una mancha de tinta que aún no se ha secado del todo, brillando con un negro húmedo y oscuro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3538 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta El Archivo del Notario · location.detail = observed
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3851: El Archivo del Notario.detail = observed
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 9 — 9/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  15 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2452 ms
+
+> "Alguien ha estado aquí hace muy poco."
+> Me acerco al escritorio para examinar la mancha de tinta y buscar cualquier rastro reciente.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+-1=18
+
+### [4] DM
+
+  11286 ms
+
+> Al inclinarte sobre el escritorio, el olor acre y metálico de la tinta fresca te golpea la nariz. La mancha no es un accidente azaroso; el tintero fue volcado con brusquedad, dejando un rastro que sugiere que alguien buscaba algo con desesperación o fue sorprendido mientras escribía. Al analizar la superficie de madera, detectas una huella dactilar parcial impresa en el borde del tintero y, justo al lado, un pequeño trozo de papel rasgado que se ha quedado pegado a la humedad de la tinta.
+> El fragmento es minúsculo, pero contiene unas letras claras y elegantes en tinta negra: "...el notario". El papel es de una calidad superior al pergamino amarillento que llena las estanterías, un blanco pulcro que desentona violentamente con la decadencia del resto de la estancia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4209 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: fragmento de papel
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item fragmento de papel
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 10 — 10/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  16 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1947 ms
+
+> "Tengo que saber qué se ocultaba en este papel."
+> Recojo el fragmento con cuidado para no dañarlo y lo guardo. {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 20+-1=19  CRÍTICO
+
+### [4] DM
+
+  10938 ms
+
+> Tus dedos recogen el fragmento con una precisión quirúrgica, asegurando que la humedad de la tinta no borre la caligrafía. Al analizar el resto del escritorio con una mirada exhaustiva, notas que la madera tiene una ligera hendidura circular, justo donde el tintero solía descansar, pero desplazada unos centímetros. Al presionar ese punto específico, un clic seco resuena en el silencio de la habitación y un doble fondo del cajón se desliza hacia afuera, revelando un espacio oculto.
+> Dentro del compartimento no hay oro ni joyas, sino un fajo de cartas atadas con un cordel de seda roja, todas dirigidas a la misma persona pero nunca enviadas. La carta superior, escrita con la misma mano elegante que el fragmento, comienza con una frase que hiela la sangre: *"No puedo permitir que el pueblo sepa la verdad sobre la herencia, aunque eso signifique borrar mi propio nombre de la historia"*.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  6989 ms · 0 eventos · 1 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ delta Ilvard · character.inventory = fragmento de papel
+  ✓ creación item: fajo de cartas
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item fajo de cartas
+  → delta 3855: Ilvard.inventory = fragmento de papel
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 11 — 11/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2077 ms
+
+> "¿Qué secretos ocultas para el bien del pueblo?"
+> Tomo el fajo de cartas y comienzo a leer el resto de la correspondencia para descubrir qué verdad intentaban borrar.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 12+-1=11
+
+### [4] DM
+
+  6586 ms
+
+> Pasas los dedos por el pergamino amarillento, deslizándolos sobre las líneas de una caligrafía que se vuelve errática y apresurada conforme avanzas en la lectura. Las cartas describen tensiones familiares y disputas por lindes, pero los detalles cruciales son vagos; el autor menciona "el acuerdo" y "la deuda de sangre" sin dar nombres ni fechas precisas, dejando el misterio suspendido en generalidades.
+> A medida que revisas el fajo, notas que algunas páginas han sido arrancadas con violencia, dejando bordes irregulares que cortan la narrativa justo antes de revelar la identidad de los implicados. La información que logras rescatar es insuficiente para armar el rompecabezas: sabes que hubo una mentira deliberada para proteger la estabilidad del pueblo, pero el "qué" y el "quién" permanecen ocultos tras los huecos del papel.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1946 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 12 — 12/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1950 ms
+
+> "Alguien ha intentado borrar la verdad, pero la verdad siempre encuentra su camino."
+> Examino detenidamente los bordes de las hojas arrancadas para ver si queda algún fragmento de tinta o algún rastro que me indique dónde podrían estar las páginas faltantes.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+-1=18
+
+### [4] DM
+
+  6281 ms
+
+> Tus ojos se entrecierran, escudriñando los desgarros del pergamino bajo la luz. Al inclinar el papel, detectas que el arranque no fue limpio; el autor, o quien destruyó la carta, utilizó una fuerza bruta que dejó leves restos de tinta fresca en los bordes irregulares. Al analizar la dirección de las fibras rotas y la mancha de una gota de cera que cayó justo en el corte, comprendes que las páginas no fueron quemadas ni desechadas al azar, sino arrancadas con urgencia mientras el documento aún estaba sobre una superficie rugosa, probablemente una mesa de madera tosca.
+> Un detalle mínimo capta tu atención: en el margen de la última página intacta, hay una pequeña marca de presión, un relieve casi invisible que sugiere que alguien escribió sobre este papel mientras había otra hoja debajo. Al pasar la yema del dedo, distingues la silueta fragmentada de un sello oficial, uno que no pertenece a la familia, sino que coincide con la rúbrica administrativa de la notaría del pueblo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1063 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 13 — 13/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  15581 ms
+
+> "Esto no fue un accidente, alguien quería borrar el rastro."
+> Guardo el pergamino con cuidado y me dirijo hacia la notaría del pueblo para investigar ese sello.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+-1=7
+
+### [4] DM
+
+  4743 ms
+
+> Llegas a la notaría, un edificio de piedra gris y aire severo donde el olor a polvo y tinta vieja satura el ambiente. Tras preguntar por el archivo, el empleado te permite echar un vistazo a los registros públicos bajo una supervisión distante. Pasas los dedos por los lomos de cuero gastado y hojeas folios amarillentos, buscando cualquier rastro de aquel sello administrativo que viste en el pergamino.
+> Sin embargo, el desorden de los archivos es abrumador. Los papeles están mal clasificados y las entradas de hace años son ambiguas o están escritas con una caligrafía indescifrable. Tras un rato de búsqueda, solo encuentras actas de propiedad genéricas y testamentos de vecinos que no guardan relación alguna con tu búsqueda; el rastro del sello se pierde entre la burocracia mediocre del pueblo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2467 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.location_id
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 14 — 14/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1830 ms
+
+> "Es lamentable que un registro tan importante esté en este estado."
+> Suspiro y trato de organizar los folios que he movido mientras sigo buscando el sello con más detenimiento.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 4+-1=3
+
+### [4] DM
+
+  4100 ms
+
+> Tus dedos se deslizan sobre el papel quebradizo, intentando imponer un orden lógico al caos de folios, pero el desorden parece ganar la batalla. A medida que profundizas en la búsqueda, los trazos de tinta se vuelven manchas borrosas y los nombres se funden en una caligrafía errática que no te conduce a ninguna parte.
+> El empleado, que te observa con una expresión de apatía absoluta, bosteza ruidosamente y se apoya en el mostrador, sin hacer el menor gesto por ayudarte. El sello administrativo que buscas permanece oculto, enterrado bajo capas de negligencia y polvo gris.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1005 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 15 — 15/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  17 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1941 ms
+
+> "Vuestra apatía es un insulto a quienes esperan una respuesta de este despacho."
+> Le miro fijamente a los ojos, manteniendo la compostura pero con firmeza, e intento persuadirlo para que me ayude a localizar el sello.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 10+4=14
+
+### [4] DM
+
+  6749 ms
+
+> El empleado parpadea, sorprendido por el tono gélido y la intensidad de tu mirada. Se endereza lentamente, alejando el brazo del mostrador mientras el bostezo se desvanece en una mueca de incomodidad. El silencio se prolonga un instante, roto solo por el crujido del papel bajo tus dedos, hasta que el hombre suspira con fastidio, aunque ya no hay apatía, sino una resignación molesta.
+> —Está bien, está bien. No hace falta que me des un sermón sobre la ética pública —refunfuña, deslizando una silla chirriante para levantarse—. El sello no está en los cajones, el anterior escribano lo guardaba en una caja de madera bajo el estante de los registros civiles para que "no se perdiera".
+> Se inclina hacia un rincón oscuro del despacho y, tras rebuscar entre unas pilas de libros encuadernados en cuero carcomido, extrae una pequeña caja de caoba cubierta de una costra de polvo. La deposita sobre el mostrador con un golpe seco, dejándola abierta frente a ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3170 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: caja de caoba
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item caja de caoba
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 16 — 16/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1752 ms
+
+> "Gracias por vuestra ayuda. Que la luz guíe vuestro camino."
+> Saco el sello de la caja con cuidado y lo examino para asegurarme de que esté intacto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 4+1=5
+
+### [4] DM
+
+  36138 ms
+
+> El empleado asiente con un gesto mecánico, aunque sus ojos ya buscan la salida del despacho, ansioso por terminar el encuentro. La frase queda flotando en el aire cargado de polvo mientras el hombre se aparta, dejándote a solas con el objeto.
+> Tus dedos rodean el frío metal del sello, pero al observarlo bajo la luz mortecina de la oficina, la pieza se revela descuidada. La superficie está empañada por una pátina de suciedad y el relieve del emblema se siente ligeramente desgastado, haciendo difícil distinguir los detalles precisos del grabado a simple vista.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1140 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 17 — 17/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1950 ms
+
+> "No te preocupes, buen hombre. Puedes retirarte."
+> Saco un paño limpio de mi equipo y froto con cuidado la superficie del sello para eliminar la suciedad y ver el grabado con claridad.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 9+-1=8
+
+### [4] DM
+
+  4412 ms
+
+> El empleado no espera a que termines la frase; se desliza hacia la puerta con un suspiro de alivio y desaparece en el pasillo, dejando tras de sí el eco de sus pasos apresurados. El silencio vuelve a reinar en el despacho, roto solo por el crujido de la madera vieja y el baile de las motas de polvo en los haces de luz.
+> Pasas el paño sobre el metal con paciencia, pero la suciedad parece haberse fundido con la superficie a lo largo de los años. A pesar de tus esfuerzos, el relieve sigue siendo ambiguo y los surcos del grabado permanecen borrosos, como si el desgaste del tiempo hubiera borrado los detalles más finos del emblema. El sello sigue siendo un enigma de metal frío y opaco.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  950 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 18 — 18/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2873 ms
+
+> "No me rendiré tan fácilmente."
+> Sigo frotando el sello, pero esta vez busco alguna herramienta o sustancia en el despacho que pueda ayudar a limpiar el metal sin dañarlo.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 15+-1=14
+
+### [4] DM
+
+  4224 ms
+
+> Tus ojos recorren el desorden del despacho, saltando de los montones de pergaminos amarillentos a los tinteros secos. Tras un momento, detectas un pequeño frasco de vidrio esmerilado escondido tras una pila de libros de contabilidad; contiene un aceite translúcido y aromático, probablemente utilizado para el mantenimiento de las plumas o el cuero de los archivadores.
+> Al aplicar una gota del líquido sobre el sello y frotar con el paño, la suciedad comienza a desprenderse en grumos oscuros, revelando el brillo metálico oculto. Bajo la pátina de óxido y polvo, empiezan a emerger trazos definidos: una corona estilizada que envuelve una espiga de trigo, aunque una parte del grabado sigue resistiéndose a mostrarse.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3726 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación item: frasco de aceite
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: item frasco de aceite
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 19 — 19/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2397 ms
+
+> "Interesante. Veamos qué más oculta este emblema."
+> Sigo frotando con cuidado la parte del grabado que aún no se ve, tratando de no dañar el metal.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 16+-1=15
+
+### [4] DM
+
+  4715 ms
+
+> El aceite penetra en los poros del metal, disolviendo la última capa de costra oscura. Bajo la presión constante y delicada del paño, el resto del grabado emerge con nitidez: la espiga de trigo no está sola, sino que es sostenida por una mano enguantada que surge de la base del sello.
+> La composición completa revela ahora un emblema de linaje, donde la corona y la mano sugieren una concesión de tierras o un nombramiento oficial. El brillo del metal, ahora limpio, refleja la luz del despacho, dejando el símbolo totalmente legible y expuesto sobre el pergamino.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2409 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 20 — 20/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1801 ms
+
+> "Este sello pertenece a alguien de rango. No es un simple trámite."
+> Examino el emblema con detenimiento para intentar identificar a qué familia o cargo pertenece ese linaje.
+> {Historia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Historia: 10+-1=9
+
+### [4] DM
+
+  3399 ms
+
+> El metal brilla bajo la luz, pero la mano enguantada y la espiga de trigo resultan desconcertantes. Te quedas observando los trazos, comparándolos mentalmente con los blasones que recuerdas de los libros o los viajes, pero la combinación de elementos no encaja con ninguna casa noble prominente ni con un cargo administrativo conocido en la región.
+> El emblema es auténtico y denota autoridad, pero su origen permanece anónimo, como un eco de un linaje que ha caído en el olvido o que nunca fue lo suficientemente famoso como para figurar en los registros comunes.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  867 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 21 — 21/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1243 ms
+
+> "Un símbolo de autoridad que no figura en los libros... esto es inquietante."
+> Intento recordar cualquier detalle menor o historia local sobre linajes olvidados que pudieran usar la espiga de trigo.
+> {Historia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Historia: 4+-1=3
+
+### [4] DM
+
+  4079 ms
+
+> Hurgas en los rincones de tu memoria, tratando de rescatar algún fragmento de crónicas polvorientas o leyendas contadas al azar en las tabernas. Sin embargo, la imagen de la espiga y la mano enguantada se resiste a encajar con cualquier dato concreto; los nombres de las familias menores y los escudos de los señoríos locales se mezclan en una masa borrosa y sin sentido.
+> El emblema permanece allí, frío y silencioso, negándose a revelar su identidad. No hay ninguna conexión clara, ninguna anécdota ni registro que te permita asociar ese símbolo con una casa noble o una institución específica de estas tierras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1755 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 22 — 22/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1402 ms
+
+> "No me sirve de nada el silencio de los libros si las personas aún recuerdan."
+> Guardo el emblema y salgo a la calle para preguntar a los lugareños si reconocen el símbolo.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 5+4=9
+
+### [4] DM
+
+  3841 ms
+
+> El aire del exterior golpea tu rostro con un aroma a leña quemada y humedad. Te mueves entre los vecinos, mostrando el emblema a quienes se detienen a observar, pero las respuestas son vacías. Un viejo pescador frunce el ceño, acercando la pieza a sus ojos cansados, y luego se encoge de hombros con un gesto de desinterés. Una mujer que sacude una alfombra te mira con curiosidad, pero al ver el símbolo, niega con la cabeza y vuelve a su tarea sin dedicarte una palabra más.
+> La mayoría de los lugareños te evitan con miradas esquivas o respuestas cortas, limitándose a decir que no han visto nada parecido en años. El símbolo parece ser un idioma muerto en estas calles; nadie reacciona con miedo, pero tampoco con reconocimiento. El pueblo sigue su ritmo habitual, indiferente al misterio que sostienes en la mano.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  760 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 23 — 23/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1279 ms
+
+> "Buenos días. No busco causar molestias, solo quisiera comprender el significado de este emblema."
+> Me acerco a la mujer de la alfombra con una sonrisa amable, intentando establecer un vínculo de confianza.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 17+4=21
+
+### [4] DM
+
+  5348 ms
+
+> La mujer detiene el movimiento brusco de la alfombra y deja que la tela caiga sobre el suelo húmedo. Te observa detenidamente, evaluando tu expresión y el tono de tu voz, y el rigor de su gesto se suaviza. Suelta un suspiro largo, mientras se limpia las manos en el delantal, y se acerca un paso hacia ti, bajando la voz para que los curiosos no escuchen.
+> —No es que no lo hayamos visto, forastero, es que no es algo de lo que se hable en voz alta por aquí —murmura, echando una mirada rápida a los alrededores—. Ese sello... pertenece a una estirpe que el pueblo prefirió olvidar hace mucho tiempo. Si buscas respuestas que no sean silencios, deberías hablar con el notario; es el único que aún guarda los libros de las familias antiguas, aunque es un hombre tan seco como un pergamino viejo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  935 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 24 — 24/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1637 ms
+
+> "Agradezco vuestra sinceridad. No dejaré que el silencio oculte lo que debe ser revelado."
+> Hago una breve reverencia con la cabeza hacia la mujer y me dirijo hacia la oficina del notario.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 5+1=6
+
+### [4] DM
+
+  4345 ms
+
+> La mujer asiente con una mezcla de respeto y cautela, mientras se aparta para dejarte paso, observando en silencio cómo te alejas hacia el corazón del pueblo. El camino hacia la oficina del notario es corto, pero el ambiente se siente denso; las miradas de los lugareños te siguen desde las sombras de los porches, aunque nadie se atreve a interpelarte mientras caminas con determinación.
+> Al llegar frente a la modesta oficina, el aire huele a tinta vieja y polvo acumulado. El lugar es un edificio estrecho de madera grisácea, con una placa de bronce empañada que cuelga torcida de la puerta. A través de los cristales sucios, solo se distingue la silueta de una montaña de papeles que parece amenazar con sepultar el escritorio del interior.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2360 ms · 0 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✗ campo fuera de lista blanca: character.location_id
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ campo no mutable propuesto: character.location_id
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 25 — 25/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  19 entidades · contexto de 646 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1369 ms
+
+> "Que la luz guíe este encuentro."
+> Limpio la placa de bronce con mi capa para que sea legible y llamo a la puerta con firmeza.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 17+1=18
+
+### [4] DM
+
+  6009 ms
+
+> El metal cede bajo la tela de tu capa, revelando entre las manchas de óxido y el verdín el nombre grabado: *Maese Alaric, Notario Real y Escribano de la Comarca*. Al golpear la madera, el sonido retumba en el silencio sepulcral de la calle, y desde el interior se escucha el estrépito de algo pesado cayendo al suelo, seguido de un carraspeo asmático.
+> Al observar a través del cristal, notas que la montaña de papeles no es un caos azaroso; hay pequeños hilos de colores que conectan ciertos legajos con otros, como una telaraña de cuero y tinta que se extiende por todo el suelo. Entre el desorden, una figura encorvada y vestida con una túnica manchada de tinta se levanta con lentitud, ajustándose unas gafas que parecen haber sido reparadas con cera, mientras se acerca a la puerta con pasos cortos y vacilantes.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3379 ms · 0 eventos · 0 deltas · 1 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ creación npc: Maese Alaric
+  ⚠ nombres no reconocidos: Alaric, Comarca, Escribano, Maese, Real
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → creada: npc Maese Alaric
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 26 — 26/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Maese Alaric: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 305 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1868 ms
+
+> "¡Tenga buen día, Maese Alaric! Lamento la brusquedad del llamado."
+> Me aparto de la puerta para dejar espacio al hombre y le dedico una sonrisa amable mientras aguardo que abra.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 7+3=10
+
+### [4] DM
+
+  6118 ms
+
+> La puerta chirría al abrirse, dejando escapar un olor denso a pergamino viejo, cera fundida y polvo acumulado. El Maese Alaric asoma la cabeza, parpadeando con desconcierto tras sus cristales empañados; sus ojos, pequeños y acuosos, recorren tu figura con una mezcla de curiosidad y sospecha, aunque no llega a mostrar hostilidad.
+> —¿Buen día? —murmura con una voz que suena a papel lijado—. El día es una construcción relativa cuando se tiene un inventario de tierras pendientes desde hace tres décadas, joven.
+> Se queda ahí plantado, sujetando el pomo de la puerta con dedos manchados de tinta negra, observándote en silencio sin dar un paso más hacia el exterior ni invitarte a pasar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2164 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Maese Alaric: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 27 — 27/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Maese Alaric: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 305 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1970 ms
+
+> "Buen día para usted también, Maese Alaric. Vengo con la intención de ayudarle en lo que necesite."
+> Le dedico una sonrisa sincera y espero a que me permita entrar.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 1+4=5  PIFIA
+
+### [4] DM
+
+  37540 ms
+
+> Alaric frunce el ceño, y su mirada se vuelve gélida mientras analiza tu sonrisa. Sus dedos se cierran con fuerza sobre el pomo de la puerta, y el gesto de cortesía se transforma en una mueca de profundo escepticismo. Para el anciano, tu ofrecimiento suena hueco, casi como una burla o el preámbulo de una estafa mal ejecutada.
+> —¿Ayudarme? —suelta una risa seca, que termina en una tos breve—. No necesito la "caridad" de alguien que sonríe como un vendedor de elixires falsos en feria de pueblo. Váyase antes de que decida que su sola presencia es una distracción intolerable.
+> Sin previo aviso, Alaric tira de la puerta con brusquedad, cerrándola de golpe frente a ti. El estruendo del madera chocando contra el marco resuena en el pasillo, dejándote solo con el eco del cierre y el olor a polvo que aún flota en el aire.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  889 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Maese Alaric: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 28 — 28/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Maese Alaric: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 305 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1708 ms
+
+> "No soy un vendedor, señor Alaric, sino alguien que busca servir."
+> Me quedo frente a la puerta cerrada, pero no me marcho. Golpeo la madera con firmeza y respeto.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 3+4=7
+
+### [4] DM
+
+  4840 ms
+
+> El golpe en la madera resuena en el silencio del pasillo, pero no hay respuesta inmediata. Tras unos segundos de quietud, se escucha el arrastre pesado de un cerrojo y la puerta se abre apenas unos centímetros, dejando ver solo un ojo cansado y severo que te observa a través de la rendija.
+> —La persistencia es la virtud de los necios o de los desesperados —gruñe Alaric desde la penumbra del interior, sin abrir la puerta por completo—. Siga hablando a la madera si eso le satisface, pero no espere que mi paciencia sea infinita.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1222 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Maese Alaric: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 29 — 29/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Maese Alaric: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 305 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2014 ms
+
+> "No soy un necio, Alaric, sino alguien que no puede ignorar el sufrimiento ajeno."
+> Me mantengo firme frente a la puerta, hablando con tono calmado pero decidido, intentando que vea mi sincerity.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 14+4=18
+
+### [4] DM
+
+  6850 ms
+
+> La rendija de la puerta se ensancha lentamente, permitiendo que la luz del pasillo revele un rostro surcado por arrugas y una mirada que, aunque severa, ha perdido parte de su dureza. Alaric suspira, un sonido cargado de fastidio y una pizca de resignación, mientras termina de retirar el cerrojo con un chasquido metálico.
+> —La sinceridad es una moneda que se gasta rápido en esta ciudad —dice, apartándose para dejar espacio al paso, aunque permanece de pie junto al marco, observándote con cautela—. Entre, antes de que me arrepienta de mi hospitalidad. No me diga que viene a salvar el mundo, dígame exactamente qué es lo que cree que requiere su atención.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2956 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento maese_alaric · ideal_honored
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: maese_alaric
+
+### [9] ESTADO DESPUÉS
+
+  Maese Alaric: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 30 — 30/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Maese Alaric: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  20 entidades · contexto de 305 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  3471 ms
+
+> "Agradezco su hospitalidad, maestro Alaric."
+> Entro en la estancia con paso firme, manteniendo la espalda recta.
+> "No busco salvar el mundo, sino traer la verdad a la luz sobre lo que ocurre en este lugar."
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 17+4=21
+
+### [4] DM
+
+  3394 ms
+
+> Alaric arquea una ceja, y la rigidez de sus hombros cede ligeramente ante la seguridad de tus palabras. Sus ojos, pequeños y astutos, te recorren de arriba abajo, evaluando la postura y el tono, mientras el silencio de la habitación se llena con el aroma a pergamino viejo y cera de vela.
+> —La verdad es una palabra peligrosa, joven, especialmente cuando se pronuncia con tanta convicción en un lugar donde todos prefieren las mentiras cómodas —responde, aunque su voz ha perdido el filo del desdén. Se hace a un lado por completo, invitándote a pasar hacia el centro de la estancia con un gesto seco de la mano—. Sea breve y preciso. Si realmente busca la verdad y no solo causar problemas, quizá encuentre en mí un oído dispuesto.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2833 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento maese_alaric · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: maese_alaric
+
+### [9] ESTADO DESPUÉS
+
+  Maese Alaric: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 31 — 31/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Maese Alaric: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  19 entidades · contexto de 305 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2243 ms
+
+> "Agradezco su hospitalidad, maestro Alaric. Mi intención no es sembrar el caos, sino restaurar la justicia."
+> Entro en la estancia manteniendo la espalda recta y me detengo frente a él.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 18+4=22
+
+### [4] DM
+
+  7467 ms
+
+> Alaric observa cómo te detienes frente a él, manteniendo esa compostura imperturbable. El brillo de sus ojos cambia; la sospecha se transforma en una curiosidad genuina, casi profesional, mientras procesa la firmeza de tu declaración. El aire pesado de la biblioteca parece aligerarse, y el hombre exhala un suspiro que vacía la tensión de sus pulmones, dejando que sus hombros caigan en una postura más relajada y humana.
+> —Justicia... —repite la palabra despacio, saboreándola como si fuera un vino antiguo y amargo—. Un concepto noble, aunque a menudo incompatible con la paz de este pueblo. Me ha impresionado su temple, es cierto. Pocos entran aquí sin tartamudear o intentar comprar mi favor con halagos vacíos.
+> Se gira hacia un escritorio desordenado y señala una silla de madera tallada, invitándote a sentarte.
+> —Hable, pues. Dígame qué es lo que considera injusto y veamos si mi conocimiento puede servirle de herramienta o si solo está persiguiendo fantasmas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1958 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento maese_alaric · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: maese_alaric
+
+### [9] ESTADO DESPUÉS
+
+  Maese Alaric: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 32 — 32/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Maese Alaric: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 305 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  4816 ms
+
+> "Agradezco su hospitalidad, Alaric. No busco fantasmas, sino la verdad que ha sido enterrada para mantener esa paz de la que habla."
+> Me siento en la silla, manteniendo la espalda recta, y le miro a los ojos con sinceridad.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 7+4=11
+
+### [4] DM
+
+  2903 ms
+
+> Alaric se inclina sobre el escritorio, entrelazando los dedos mientras te observa. El silencio se prolonga unos instantes; el hombre analiza tu mirada, buscando alguna grieta en esa sinceridad, pero su expresión permanece neutra, casi imperturbable. No hay una chispa de entusiasmo en su rostro, sino una cautela profesional que levanta una barrera invisible entre ambos.
+> —La verdad es un arma peligrosa, y quienes la entierran suelen hacerlo por una razón —responde con un tono seco, sin llegar a ser hostil—. Su determinación es admirable, pero la sinceridad no basta para abrir los libros cerrados de este pueblo. Sea específico. Si quiere que mi conocimiento le sea útil, deje de hablar en enigmas y dígame exactamente qué es lo que busca desenterrar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  831 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Maese Alaric: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 33 — 33/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Maese Alaric: alive, aprecio 0.0 (neutral), 0 hechos conocidos
+  18 entidades · contexto de 305 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1546 ms
+
+> "No busco enigmas, sino claridad. Quiero saber qué es lo que ocultan los registros de este lugar y por qué se teme a la verdad."
+> Me inclino hacia adelante, manteniendo el contacto visual con Alaric.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 10+4=14
+
+### [4] DM
+
+  5134 ms
+
+> Alaric no retrocede ante tu acercamiento; permanece estático, como una estatua de piedra, mientras el peso de tu mirada choca contra la suya. Tras un breve silencio, el hombre exhala un suspiro cansado y desentrelaza los dedos, apoyando las palmas sobre la madera gastada del escritorio. La rigidez de sus hombros cede apenas un centímetro, reconociendo la firmeza de tu postura.
+> —La claridad es un lujo que pocos pueden permitirse en este pueblo —dice, bajando ligeramente la voz—. No es miedo a la verdad lo que mueve a los registros, sino la conveniencia del silencio. Hay un Solar, una propiedad en disputa entre dos linajes que no saben olvidar, y el papel que definía la propiedad legítima ha desaparecido. Quien controle ese trozo de tierra, controla la narrativa de la familia. Si busca respuestas, empiece por preguntar quiénes son Herminia y Doroteo, y verá cómo las puertas se cierran antes de que termine la frase.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  5664 ms · 1 eventos · 2 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento maese_alaric · competence_shown
+  ✗ campo fuera de lista blanca: character.knowledge
+  ✗ campo fuera de lista blanca: character.knowledge
+  ⚠ campo no mutable propuesto: character.knowledge
+
+### [8] ESCRITURA
+
+  → turn_validation registrado ⚠ 1 problema(s) tier 1-2
+  ✗ PNJ inexistente: maese_alaric
+
+### [9] ESTADO DESPUÉS
+
+  Maese Alaric: alive, aprecio 0.0 (neutral), 0 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 34 — 34/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 1070 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1418 ms
+
+> "Agradezco su sinceridad, Alaric. El silencio solo alimenta la injusticia."
+> Me separo del escritorio y camino hacia la salida, reflexionando sobre esos nombres.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+3=9
+
+### [4] DM
+
+  4009 ms
+
+> Alaric asiente con un movimiento imperceptible de cabeza, observando cómo te alejas. El sonido de tus pasos resuena en el silencio del despacho, mientras el hombre vuelve a entrelazar sus dedos, recuperando esa máscara de neutralidad gélida que parece ser su única defensa contra el entorno.
+> Al salir, los nombres de Herminia y Doroteo flotan en tu mente, pero no logras extraer ninguna conexión inmediata ni reconocer el peso real de sus influencias en el pueblo. La mención de Alaric fue clara sobre la disputa, pero el resto de la información permanece oculta tras el muro de silencio que él mismo describió.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1028 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 35 — 35/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 1070 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1796 ms
+
+> "Herminia y Doroteo... veamos quiénes son realmente."
+> Busco en el pueblo a alguien que pueda darme información sobre estas dos personas y su papel en la disputa.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 8+-1=7
+
+### [4] DM
+
+  2445 ms
+
+> Recorres las calles del pueblo preguntando discretamente, pero las respuestas que obtienes son vagas y cargadas de cautela. Los lugareños evitan dar detalles, limitándose a señalar con la mirada hacia las zonas más prominentes de la villa o a encogerse de hombros con una expresión de incomodidad.
+> Algún comerciante menciona que ambos pertenecen a familias con nombre, pero que hablar de la disputa es "invitar a problemas" en una comunidad donde las lealtades están divididas. No logras concretar ninguna pista útil sobre sus personalidades, sus vínculos exactos con el Solar o qué papel juegan realmente en el conflicto legal.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  858 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 36 — 36/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1960 ms
+
+> "Entiendo vuestro temor, pero el silencio solo alimenta la discordia. No busco causar problemas, sino ayudar a resolverlos."
+> Intento transmitir seguridad y benevolencia al comerciante para que confíe en mí.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 7+4=11
+
+### [4] DM
+
+  3207 ms
+
+> El comerciante suspira, pero no se deja convencer. Mira de reojo hacia la calle, asegurándose de que nadie haya escuchado la conversación, y se encoge de hombros con un gesto de resignación. Sus manos, manchadas de tinta y polvo, juguetean con un trozo de tela sobre el mostrador mientras evita mantener el contacto visual.
+> —La benevolencia no paga las multas ni limpia el nombre de una familia, forastero —murmura con voz seca—. Aquí, el silencio no es discordia, es supervivencia. Si quiere respuestas, busque a alguien que no tenga un negocio que perder.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1590 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 37 — 37/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1359 ms
+
+> "Entiendo que tenga miedo, pero el silencio solo alimenta la podredumbre de este lugar."
+> Pongo una mano amable sobre su hombro, intentando transmitirle seguridad y calma.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 15+4=19
+
+### [4] DM
+
+  5564 ms
+
+> El comerciante se tensa bajo el tacto de tu mano, los hombros rígidos como madera vieja. Sin embargo, la calma de tu gesto parece filtrar la paranoia que lo atenaza; sus ojos, inquietos, regresan finalmente a los tuyos y el ritmo de su respiración se estabiliza. El trozo de tela que manipulaba cae olvidado sobre el mostrador.
+> —Tiene una lengua peligrosa, forastero, pero una mirada que no miente —confiesa en un susurro casi imperceptible, inclinándose hacia ti—. No sé mucho de leyes, pero sé que Herminia Solar no es la mujer que los rumores pintan. Si busca la verdad sobre esa propiedad, vaya a la plaza del mercado, al fondo, donde los tejados se hunden. Busque a alguien que no tenga nada que perder, como yo digo... busque a los que viven en las sombras del Solar. Allí es donde los secretos se pudren antes de salir a la luz.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  794 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 38 — 38/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2707 ms
+
+> "Agradezco vuestra sinceridad. Que la luz guíe vuestros pasos."
+> Suelto suavemente al comerciante y me dirijo hacia la plaza del mercado, buscando la zona de los tejados hundidos.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 19+1=20
+
+### [4] DM
+
+  6637 ms
+
+> El comerciante asiente con un gesto breve y vacilante, volviendo a recoger la tela con manos temblorosas mientras te alejas. Te abres paso entre la multitud del mercado, donde el olor a especias y cuero nuevo empieza a ceder ante el hedor a humedad y madera podrida. A medida que avanzas hacia el fondo, las calles se estrechan y la luz del sol es devorada por los aleros descuidados de casas que parecen doblarse unas sobre otras, creando un túnel de sombras y tejas rotas.
+> Tu mirada aguda detecta rápidamente que este lugar no es solo un suburbio degradado. Entre los huecos de los tejados hundidos, observas el movimiento coordinado de figuras que se desplazan por los callejones laterales sin hacer ruido, evitando el centro de la vía. Notas que varios de estos individuos visten harapos remendados con telas que, aunque sucias, tienen el patrón distintivo de los antiguos sirvientes de la casa Solar, y todos ellos mantienen la vista fija en los recién llegados con una vigilancia fría y disciplinada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1043 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 39 — 39/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1314 ms
+
+> "Parece que alguien mantiene el orden en este lugar, aunque sea desde las sombras."
+> Me detengo y observo fijamente a uno de los vigilantes, manteniendo una postura erguida y visible para no ocultar mis intenciones.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 11+1=12
+
+### [4] DM
+
+  8533 ms
+
+> El vigilante, un hombre de mejillas hundidas y ojos hundidos bajo una capucha raída, no desvía la mirada. Al notar tu desafío visual y tu postura deliberada, deja de deslizarse por la sombra y se queda petrificado, fundiéndose con la pared de madera podrida. No hay rastro de miedo en su expresión, sino una cautela profesional; simplemente te observa, evaluando si eres una amenaza o un peón, mientras sus dedos juguetean con un nudo de cuero en su brazo.
+> A tu alrededor, el silencio se vuelve denso. Los murmullos del mercado lejano parecen quedar aislados por los muros inclinados del callejón. Te das cuenta de que, aunque el hombre no se ha movido, otros dos vigilantes han emergido sutilmente en los tejados superiores, flanqueándote desde arriba sin hacer ruido, cerrando el ángulo de visión hacia la salida.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1345 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 40 — 40/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1942 ms
+
+> "No busco pelea, buen hombre, pero vuestra presencia es inquietante. ¿Qué es lo que guardáis con tanto celo en este callejón?"
+> Mantengo mi posición, con la mano apoyada en el pomo de mi espada pero sin desenvainarla, mirando fijamente al vigilante.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 19+3=22
+
+### [4] DM
+
+  3853 ms
+
+> El vigilante no parpadea, pero el ritmo de sus dedos sobre el nudo de cuero se detiene en seco. Al analizar su lenguaje corporal y la disposición de sus compañeros en los tejados, percibes que no están en posición de ataque, sino de contención. Su cautela no nace de la agresividad, sino de una orden estricta de vigilancia; el hombre no tiene interés en iniciar un conflicto, pero su rigidez delata que tiene prohibido permitir que cualquier extraño indague sobre lo que hay más allá del callejón.
+> —Lo que guardamos no es asunto de quien pasea con la mano en el acero —responde con una voz rasposa, seca como la madera que lo rodea—. Este lugar está reservado. Si no buscáis problemas, lo más sensato será que vuestros pasos os lleven de vuelta al mercado antes de que la curiosidad se vuelva un inconveniente.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  832 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 41 — 41/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  5984 ms
+
+> "No busco problemas, servidor, sino entender qué es lo que se oculta aquí para ayudar si es necesario."
+> Me mantengo firme, pero relajando la postura para mostrar que no pretendo atacar.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 13+4=17
+
+### [4] DM
+
+  4426 ms
+
+> El vigilante mantiene la mirada fija, pero la tensión de sus hombros cede ligeramente ante tu gesto. El ritmo de sus dedos vuelve al cuero, aunque ahora con una cadencia más lenta, casi pensativa. Intercambia una mirada rápida con uno de los hombres apostados en el tejado, quien asiente con un movimiento casi imperceptible de cabeza.
+> —Ayudar... —repite el hombre, saboreando la palabra con escepticismo, aunque el tono rasposo ha perdido parte de su dureza—. Pocos vienen a este callejón buscando ayudar sin que haya una bolsa de oro de por medio o una orden del tribunal. Pero vuestra calma es inusual en alguien que se infiltra en los límites del Solar. Decidme, ¿quién os envía o qué os hace creer que vuestra ayuda es bienvenida en un lugar donde el silencio es la única moneda que aceptamos?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  837 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 42 — 42/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2547 ms
+
+> "Nadie me envía, y no busco oro. Solo soy un hombre que no puede ignorar el sufrimiento ajeno cuando lo tiene delante."
+> Mantengo la mirada con serenidad y doy un paso corto hacia delante, sin invadir su espacio, mostrando mis manos abiertas.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 13+4=17
+
+### [4] DM
+
+  6484 ms
+
+> El vigilante clava los ojos en tus palmas abiertas y luego sube la vista hacia tu rostro, buscando cualquier grieta de falsedad en tu serenidad. El silencio se prolonga unos segundos, roto solo por el lejano eco de un martillo golpeando madera en alguna calle aledaña. Lentamente, el hombre deja de tamborilear sobre el cuero y exhala un suspiro pesado que hace vibrar su barba canosa; la rigidez de su postura desaparece, sustituida por una resignación cansada.
+> —La caridad es un lujo que no podemos permitirnos, pero la honestidad... eso es más escaso que el pan en invierno —murmura, dando un paso lateral para abrirte el paso hacia la entrada del callejón—. No sé si eres un santo o un ingenuo, pero prefiero a un ingenuo que no esconde el acero. Pasa. Pero mantén las manos donde pueda verlas hasta que estemos dentro; mis muchachos arriba siguen teniendo el dedo en el gatillo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1647 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 43 — 43/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1665 ms
+
+> "Agradezco vuestra confianza, buen hombre. No soy un santo, solo alguien que busca hacer lo correcto."
+> Camino lentamente hacia la entrada del callejón manteniendo las manos a la vista y en alto.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+1=2  PIFIA
+
+### [4] DM
+
+  7283 ms
+
+> El vigilante asiente con un gesto seco y te hace una señal para que avances. Mientras caminas con las manos en alto, el entorno se vuelve una mancha de sombras y sonidos confusos; el eco de tus propios pasos y el zumbido de una mosca cerca de tu oído anulan cualquier otro ruido. Te sientes extrañamente desorientado, incapaz de distinguir si el movimiento que percibes en las cornisas es el viento moviendo una tela o el cañón de un arma apuntándote.
+> En un descuido, tu pie encuentra el borde de una tabla anclada al suelo, que cede con un crujido violento. El tropiezo te obliga a perder el equilibrio y, en el intento instintivo de no caer, tus manos bajan bruscamente para buscar apoyo, desapareciendo de la vista del guardia. Desde lo alto del callejón, el clic metálico de varios gatillos siendo armados resuena con una claridad aterradora.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1870 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 44 — 44/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1360 ms
+
+> "¡Un momento! ¡Ha sido un accidente!"
+> Me quedo completamente inmóvil, tratando de recuperar la compostura sin hacer movimientos bruscos mientras miro hacia arriba.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 2+4=6
+
+### [4] DM
+
+  3239 ms
+
+> El silencio que sigue a tus palabras es gélido, roto únicamente por el viento que silba entre los muros. Desde las cornisas, no hay respuesta verbal, solo la tensión palpable de dedos que aprietan el metal. El vigilante, cuya paciencia se ha evaporado al instante, da un paso atrás y lleva su mano a la empuñadura de su arma, con los ojos clavados en tus manos ocultas.
+> —¡Manos arriba! ¡Ahora! —brama el guardia, su voz cargada de una sospecha que no deja espacio a accidentes. El clic de los gatillos arriba se intensifica, y la sombra de un tirador se recorta contra el cielo, el cañón del arma apuntando directamente a tu pecho.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  750 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 45 — 45/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1442 ms
+
+> "No busco pelea, solo la verdad."
+> Levanto las manos lentamente, manteniendo la palma abierta y visible para demostrar que no porto armas en ellas.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 8+4=12
+
+### [4] DM
+
+  2867 ms
+
+> El guardia no relaja la tensión de sus hombros ni retira la mano de la empuñadura, aunque el movimiento lento de tus palmas evita que el gatillo sea apretado en ese instante. Sus ojos escanean cada centímetro de tu postura, buscando cualquier indicio de engaño o un movimiento brusco que justifique el ataque.
+> —La verdad es un lujo que no podemos permitirnos aquí —responde el vigilante con voz ronca y cortante—. Si no buscas pelea, te quedarás exactamente donde estás hasta que decidamos si eres una amenaza o un idiota.
+> Desde las cornisas, el sonido del metal rozando la piedra indica que los tiradores siguen en posición, con la mira fija en tu pecho, esperando la más mínima señal para disparar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  710 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 46 — 46/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1654 ms
+
+> "No soy ninguna de las dos cosas. Solo busco ayudar a quienes sufren en este lugar."
+> Mantengo las manos visibles y doy un paso corto hacia adelante, sin movimientos bruscos, intentando transmitir sinceridad.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 13+4=17
+
+### [4] DM
+
+  4881 ms
+
+> El guardia frunce el ceño, procesando tus palabras mientras sus ojos se clavan en los tuyos. El paso corto hacia adelante es un riesgo, pero la calma en tu voz y la falta de agresividad parecen romper la inercia de su hostilidad. Lentamente, retira la mano de la empuñadura del arma, aunque no se aleja ni un centímetro de su posición defensiva.
+> —Ayudar, ¿eh? —suelta una risa seca, desprovista de humor—. Muchos vienen aquí con palabras bonitas y terminan siendo combustible para el fuego.
+> Hace una señal brusca con la cabeza hacia las cornisas. Se escucha el clic metálico de los tiradores bajando sus armas, aunque no abandonan sus puestos. El vigilante exhala un suspiro pesado y te hace un gesto con la mano para que sigas avanzando, manteniendo una distancia prudencial.
+> —Camina. Te llevaré ante quien decide aquí. Si realmente quieres ayudar, espero que tengas algo más que frases hechas para ofrecer.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  785 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 47 — 47/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2530 ms
+
+> "Tengo la voluntad de hacer lo correcto y el acero para defenderlo."
+> Sigo al guardia con paso firme y la espalda recta, manteniendo la compostura.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+3=9
+
+### [4] DM
+
+  5853 ms
+
+> El guardia no se gira mientras caminas, obligándote a observar su nuca y el balanceo rítmico de su equipo. Su postura es rígida, pero el paso es apresurado, como quien desea terminar un trámite tedioso lo antes posible. A medida que avanzáis, el ruido de la calle se amortigua, sustituido por el eco de vuestras botas sobre el pavimento gastado y el murmullo distante de órdenes gritadas entre los puestos.
+> Al analizar su comportamiento, percibes que su actitud no nace de una malicia personal, sino de un cansancio crónico. Sus hombros caídos y la forma en que evita mirar a los ojos a los transeúntes sugieren a alguien que ha visto demasiadas promesas romperse y que ya no espera nada de nadie. No parece disfrutar de su autoridad; simplemente la ejerce como un escudo contra la frustración.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  836 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 48 — 48/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1851 ms
+
+> "Parece que el peso de vuestro deber es más duro que la armadura, buen hombre."
+> Pongo una mano amistosa sobre su hombro mientras caminamos, intentando animarlo con un gesto cálido.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 11+4=15
+
+### [4] DM
+
+  5781 ms
+
+> El guardia se tensa visiblemente ante el contacto, encogiéndose de hombros por puro reflejo, pero no aparta tu mano. Tras un instante de silencio, exhala un suspiro largo y pesado que hace vibrar las correas de su peto. La rigidez de su nuca se relaja ligeramente y, aunque sigue sin girarse del todo, inclina la cabeza hacia ti en un gesto de resignación.
+> —Más que el deber, es el barro y los gritos, forastero —responde con una voz ronca y apagada—. Algunos llaman a esto mantener el orden; yo lo llamo intentar que el mundo no se desmorone mientras el sol sigue saliendo.
+> El ritmo de sus pasos se vuelve menos mecánico, casi vacilante, mientras el silencio entre vosotros se torna menos gélido.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1057 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 49 — 49/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1919 ms
+
+> "No estás solo en esa lucha, amigo. El barro se limpia, pero el alma se ensucia si dejamos de luchar contra la marea."
+> Mantengo mi mano en su hombro un momento más para transmitirle apoyo y camino a su lado.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 18+4=22
+
+### [4] DM
+
+  5692 ms
+
+> El guardia se detiene en seco. Tus palabras parecen golpear un muro que llevaba años levantado, y por un segundo, el hombre permanece inmóvil, con la mirada perdida en el horizonte grisáceo. Lentamente, gira la cabeza hacia ti, y en sus ojos cansados ya no hay solo resignación, sino una chispa de reconocimiento, como quien encuentra un aliado inesperado en medio de una tormenta.
+> —Hacía mucho que nadie me llamaba amigo en este puesto —murmura, y una sonrisa amarga, pero genuina, curva sus labios—. Si tienes el estómago para luchar contra esa marea, forastero, quizás no seas tan distinto a mí.
+> El guardia endereza la espalda y, por primera vez, camina a tu ritmo, rompiendo la distancia jerárquica para conversar como iguales mientras avanzáis.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1167 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 50 — 50/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2582 ms
+
+> "Me honra que me consideres un aliado. Nadie debería cargar con el peso de este lugar en soledad."
+> Le pongo una mano en el hombro con afecto mientras seguimos caminando.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 16+4=20
+
+### [4] DM
+
+  4493 ms
+
+> El guardia exhala un suspiro largo, dejando que los hombros caigan mientras el peso de tu mano parece anclarlo a una realidad más amable. Cierra los ojos un instante, absorbiendo el gesto, y cuando los abre, la barrera de frialdad profesional se ha desmoronado por completo; ahora te mira con una gratitud profunda, casi vulnerable.
+> —Llevo años convencido de que el silencio era mi única compañía —confiesa en voz baja, bajando la mirada hacia el camino—. Escucha, si realmente buscas ayudar a la señorita Herminia, hay cosas que no figuran en los informes oficiales. No te dejaré caminar a ciegas hacia ese nido de víboras.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2112 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento Baldor Enna · ideal_honored
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  → delta 3945: Baldor Enna affinity 25.0 → 30.0  (any)
+     Actuaron según lo que él considera correcto.
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 51 — 51/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2791 ms
+
+> "Tus palabras son un bálsamo, amigo mío. Dime todo lo que sepas; la verdad es la única luz que puede guiarnos."
+> Me inclino hacia él para escuchar sus secretos con atención.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 14+3=17
+
+### [4] DM
+
+  4169 ms
+
+> El guardia se inclina hacia ti, reduciendo el espacio para que sus palabras no vuelen con el viento. Su voz es un susurro áspero, cargado de una urgencia contenida. —El Solar es una fortaleza de secretos, pero el señor Doroteo no es el único que juega sucio. He visto a gente entrar y salir de la propiedad a horas indebidas; sombras que no pertenecen a ninguna de las dos familias. Hay una tensión en el aire que no es solo por la herencia, es algo más... una codicia que huele a pólvora y tinta vieja.
+> Mientras habla, notas que sus ojos evitan los tuyos, moviéndose nerviosos hacia los alrededores. A pesar de su disposición a ayudarte, hay un tic en su mandíbula y una rigidez en sus hombros que no encaja con la fluidez de su confesión; hay un fragmento de información, un detalle específico, que ha decidido omitir deliberadamente mientras te describe el peligro.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  932 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 52 — 52/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 1012 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2884 ms
+
+> "Agradezco tu sinceridad, pero noto que hay algo más que no te atreves a decirme."
+> Pongo una mano en su hombro con afecto, intentando transmitirle seguridad para que termine de hablar.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+3=9
+
+### [4] DM
+
+  4010 ms
+
+> El guardia se tensa bajo tu mano, y aunque el gesto es afectuoso, él reacciona con un leve respingo, como si el contacto físico lo obligara a enfrentarse a su propia vacilación. Te mira brevemente, pero el nerviosismo en su mirada persiste; el tic de su mandíbula se intensifica y desvía la vista hacia el camino que lleva a la propiedad, apretando el agarre de su lanza.
+> —Solo... solo hacedthrust con cuidado —murmura, retrocediendo un paso para romper el contacto físico—. No soy yo quien debe jugar a los detectives, solo soy un hombre que quiere cobrar su paga y llegar vivo al invierno. No hay nada más que decir.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1015 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 53 — 53/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 1012 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2580 ms
+
+> "Entiendo tu miedo, buen hombre, pero el silencio no te protegerá del invierno."
+> Le miro a los ojos con serenidad, tratando de transmitirle seguridad antes de avanzar hacia la propiedad.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 8+4=12
+
+### [4] DM
+
+  7698 ms
+
+> El guardia sostiene la mirada un instante, pero la serenidad de tus palabras no logra desarmar el nudo de ansiedad que tiene en el cuello. Parpadea rápidamente y suspira, soltando un aire pesado que parece cargar con toda la tensión de la guardia.
+> —La seguridad es un lujo que no puedo permitirme ahora mismo —responde con un hilo de voz, aunque su postura se relaja apenas un milímetro—. Id, pues. Espero que encontréis lo que buscáis antes de que el aire se vuelva más gélido.
+> Se hace a un lado, abriendo el paso hacia la propiedad mientras evita volver a mirarte, dejando que el silencio del camino sea lo único que te acompañe hacia la entrada.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1024 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 54 — 54/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 1012 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2865 ms
+
+> "Que la luz guíe vuestro camino y os traiga calma, buen hombre."
+> Le dedico una sonrisa sincera y camino hacia la propiedad.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 3+1=4
+
+### [4] DM
+
+  5936 ms
+
+> El guardia no responde, limitándose a asentir con un gesto mecánico mientras observa cómo te alejas. El camino hacia la propiedad es un sendero de tierra batida, flanqueado por setos descuidados que parecen luchar contra la humedad del ambiente.
+> Al llegar frente a la estructura, la vista es monótona. La fachada de piedra gris se alza imponente pero cansada, con hiedras secas trepando por los muros y ventanas que parecen ojos vacíos mirando hacia el camino. No hay nada inusual a simple vista; la propiedad descansa en un silencio sepulcral, interrumpido únicamente por el viento que silba entre las grietas de la mampostería.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1018 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 55 — 55/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 1012 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2489 ms
+
+> "Que la luz guíe mis pasos en este lugar."
+> Me acerco a la puerta principal con paso firme y llamo con fuerza, anunciando mi llegada.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 2+1=3
+
+### [4] DM
+
+  4402 ms
+
+> El eco de los golpes retumba contra la madera pesada de la puerta, perdiéndose en la vastedad del silencio que envuelve la propiedad. No hay respuesta inmediata; ni el sonido de pasos apresurados, ni el roce de un cerrojo, ni siquiera el murmullo de una voz preguntando quién llama.
+> El silencio que sigue es denso, casi tangible, y el viento vuelve a silbar entre las grietas de la piedra, dejando la sensación de que la casa permanece indiferente a tu presencia.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1326 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 56 — 56/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 1012 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  7389 ms
+
+> "¿Hay alguien ahí? ¡Vengo en son de paz y busco ayudar!"
+> Vuelvo a llamar a la puerta con firmeza, pero sin violencia, mientras escucho con atención cualquier sonido proveniente del interior.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 16+1=17
+
+### [4] DM
+
+  10450 ms
+
+> El sonido de los nudillos contra la madera vuelve a resonar, pero esta vez, tras el eco, algo cambia. A través de la pesada puerta, llega el roce sordo de una tela contra el suelo y el crujido lento de una tabla de madera que cede bajo un peso ligero. Alguien se ha acercado, pero se ha detenido justo antes de alcanzar el umbral, manteniendo un silencio expectante.
+> Desde el interior, el aroma a cera vieja y polvo filtrándose por las rendijas se mezcla con el sonido de una respiración contenida. Una voz femenina, apagada y cargada de una cautela evidente, rompe finalmente el vacío:
+> —¿Ayudar? No sabemos quién es usted ni qué busca en El Solar. Hable claro antes de que decida si es prudente abrir.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1739 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 57 — 57/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  3729 ms
+
+> "Soy Ilvard, un paladín. Mi intención es brindar ayuda a quien la necesite y asegurar que se haga justicia en este lugar."
+> Me mantengo firme y con las manos a la vista, proyectando calma y honestidad.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  11403 ms
+
+> El silencio que sigue a tus palabras es denso, pero la tensión que emanaba desde el otro lado de la puerta se desvanece rápidamente. Se escucha un suspiro largo, una exhalación que suelta toda la carga de la desconfianza acumulada. El sonido de un cerrojo metálico deslizándose resuena con nitidez, y la pesada hoja de madera se abre apenas unos centímetros, revelando una mirada inquieta y unos ojos cansados que te escanean con una mezcla de asombro y esperanza.
+> —Un paladín... —murmura la mujer, y su voz ya no es cautelosa, sino que vibra con una urgencia contenida—. No sé si la justicia es algo que todavía exista en estas paredes, pero si vuestras palabras son tan firmes como vuestra presencia, entonces sois la respuesta que no nos atrevíamos a pedir.
+> La puerta se abre de par en par, invitándote a entrar en la penumbra del vestíbulo.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  4527 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · competence_shown
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 58 — 58/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2555 ms
+
+> "La justicia es el camino que elijo recorrer, sea cual sea el precio. No estáis solos."
+> Entro en el vestíbulo con paso firme y le dedico una sonrisa reconfortante a la mujer.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+3=11
+
+### [4] DM
+
+  11815 ms
+
+> La mujer retrocede para dejarte paso, aunque sus hombros siguen ligeramente encogidos, como si esperase que el alivio fuera una ilusión. El vestíbulo es un espacio amplo pero descuidado; el papel pintado se desprende en tiras largas y el aire huele a polvo antiguo y cera fría. Te devuelve la sonrisa con un gesto tembloroso, aunque sus ojos no dejan de analizarte, buscando en tu armadura y en tu porte la seguridad que parece haberle faltado durante semanas.
+> A pesar de su actitud acogedora, notas que sus manos no dejan de juguetear con el borde de su manta y que lanza miradas rápidas hacia el pasillo interior, como si temiera que alguien más estuviera escuchando vuestra conversación. Hay una urgencia en su postura, una inquietud que no termina de desaparecer aunque haya decidido confiar en ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1059 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 59 — 59/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  1869 ms
+
+> "No tenga miedo, estoy aquí para ayudarla."
+> Le dedico una sonrisa tranquilizadora y observo el pasillo hacia el que mira con tanta inquietud.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 1+1=2  PIFIA
+
+### [4] DM
+
+  12680 ms
+
+> Herminia exhala un suspiro que suena casi como un sollozo contenido y asiente débilmente, aferrándose a la manta mientras se deja llevar por tu seguridad. El silencio del vestíbulo se vuelve denso, roto solo por el crujido de la madera vieja bajo vuestros pies y el eco lejano de algún viento golpeando las contraventanas exteriores.
+> Al intentar escudriñar el pasillo siguiendo su mirada, un destello repentino de polvo suspendido en un rayo de luz te deslumbra, provocándote un estornudo violento que resuena en todo el recibidor. El ruido brusco hace que Herminia dé un salto hacia atrás con un grito ahogado, encogiéndose contra la pared mientras se cubre la boca con la mano, aterrada por el estrépito que ha roto la quietud de la casa.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1453 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 60 — 60/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2627 ms
+
+> "Lo siento mucho, Herminia. Solo ha sido el polvo, no hay ningún peligro."
+> Me acerco a ella con calma y le pongo una mano suave en el hombro para tranquilizarla.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 18+4=22
+
+### [4] DM
+
+  8485 ms
+
+> Herminia se tensa al contacto, con los hombros encogidos y la respiración errática, pero el peso calmado de tu mano sobre ella actúa como un ancla. Sus ojos, dilatados por el susto, buscan los tuyos y, al encontrar una serenidad genuina, la rigidez de su cuerpo comienza a ceder. El pánico que la mantenía pegada a la pared se disuelve, dejando paso a una vulnerabilidad cansada.
+> Exhala un aire largo y tembloroso, bajando la mano de su boca mientras una pequeña y apenada sonrisa asoma en sus labios. —Perdona... —susurra con voz quebrada—, es que este silencio... a veces parece que la casa está escuchando. Gracias por estar aquí.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3901 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 61 — 61/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  4882 ms
+
+> "No tienes que pedir perdón. Estoy aquí para protegerte y no dejaré que nada te haga daño."
+> Le dedico una sonrisa reconfortante y mantengo mi mano sobre su hombro para darle seguridad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 3+3=6
+
+### [4] DM
+
+  11228 ms
+
+> Herminia cierra los ojos un instante, apoyando la mejilla contra tu mano como si absorbiera la calidez y la fuerza de tus palabras. El temblor de sus hombros se detiene y su postura se relaja por completo, dejando que el peso de su cansancio se apoye ligeramente en ti. —Lo sé... —responde en un hilo de voz—, lo sé, pero es difícil no sentir que el aire se vuelve pesado cuando pienso en lo que está en juego.
+> A pesar de su gratitud y la calma recuperada, hay algo en su mirada que no encaja con la sumisión del susto. Mientras te sonríe, sus ojos se desvían un segundo hacia el pasillo que conduce a las habitaciones privadas de la casa, y un destello de inquietud, distinto al pánico anterior, cruza su rostro antes de volver a centrarse en ti.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  3005 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · bond_target_protected
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 62 — 62/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  3674 ms
+
+> "No permitas que el miedo nuble tu espíritu, Herminia. Estoy aquí para protegerte."
+> Le doy un apretón reconfortante en el hombro y, sin soltarla del todo, sigo con la mirada la dirección hacia la que ella ha mirado.
+> {Percepción}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Percepción: 19+1=20
+
+### [4] DM
+
+  12979 ms
+
+> Al seguir la mirada de Herminia hacia el pasillo de las habitaciones privadas, notas un detalle anómalo en el suelo de madera pulida. Cerca del marco de la puerta de la alcoba de la tía, hay un rastro casi imperceptible de polvo desplazado y una pequeña muesca fresca en la madera, como si un mueble pesado hubiera sido movido y vuelto a colocar con prisa y sin precisión.
+> Herminia se tensa ligeramente al notar que has seguido su línea de visión. Sus dedos se cierran con un apretón breve y nervioso sobre tu brazo, y aunque vuelve a dedicarte una sonrisa, sus pupilas se dilatan y un ligero rubor sube por sus mejillas mientras intenta recuperar la compostura.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  2359 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 63 — 63/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  4757 ms
+
+> "Tranquila, Herminia. No hay razón para el nerviosismo si no hay nada que ocultar."
+> Suelto suavemente su brazo y me inclino para examinar la muesca del suelo más de cerca.
+> {Investigación}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Investigación: 19+-1=18
+
+### [4] DM
+
+  11081 ms
+
+> La madera cruje levemente bajo tu peso mientras te inclinas. Al observar la muesca desde un ángulo lateral, becomes evidente que no fue un accidente Casual; el rastro de polvo desplazado forma un arco perfecto, indicando que el pesado armario de caoba que flanquea la entrada fue deslizado hacia un lado y regresado a su sitio. En la comisura donde el mueble roza el suelo, encuentras una pequeña fibra de seda azul, idéntica a la tela del vestido que Herminia lleva puesto hoy.
+> Herminia retrocede un paso, dejando que el espacio entre vosotros crezca. Sus manos juguetean con el dobladillo de su falda y evita mirarte directamente a los ojos, aunque mantiene una expresión de fingida serenidad que se desmorona en el temblor de su barbilla.
+> —Es una casa antigua... —murmura con voz vacilante—, los muebles suelen moverse con la humedad del invierno.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  829 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+  ⚠ nombres no reconocidos: Casual
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 64 — 64/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  3131 ms
+
+> "La humedad no deja rastros de seda azul en el suelo, Herminia."
+> Sostengo la fibra entre mis dedos y la acerco a ella para que la vea, manteniendo un tono firme pero comprensivo.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 8+3=11
+
+### [4] DM
+
+  9908 ms
+
+> Herminia observa la fibra azul que sostienes entre tus dedos y su palidez se acentúa, volviéndose casi traslúcida. Abre la boca para replicar, pero el sonido se queda atrapado en su garganta, transformándose en un suspiro tembloroso. Sus ojos saltan de la seda a tu rostro y vuelven a bajar, incapaz de sostener la mirada mientras el silencio de la habitación se vuelve denso.
+> —Yo... —balbucea, apretando los puños contra la tela de su vestido—. Solo quería estar segura. No es lo que parece, te lo juro.
+> Su postura se encoge, perdiendo la compostura fingida, aunque no admite explícitamente haber movido el armario ni qué buscaba detrás de él.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1411 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 65 — 65/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  8986 ms
+
+> "Dime la verdad, Herminia. No busco castigarte, sino entender qué es lo que te asusta tanto como para recurrir al engaño."
+> Me acerco a ella con suavidad, manteniendo la fibra azul a la vista pero sin actitud acusadora.
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 12+4=16
+
+### [4] DM
+
+  11439 ms
+
+> Herminia suelta un sollozo ahogado y sus hombros caen, derrotada por la suavidad de tus palabras. Se deja deslizar contra la pared hasta quedar sentada en el suelo, ocultando el rostro entre las manos mientras la fibra azul sigue brillando tenuemente entre tus dedos. El aire en la habitación parece aligerarse cuando ella finalmente levanta la vista, con los ojos empañados y la voz quebrada.
+> —Tengo miedo de perderlo todo, de que el tribunal decida basándose en mentiras o en vacíos legales —confiesa en un susurro urgente—. Buscaba los papeles de mi tía, el documento de prohijamiento. Necesitaba saber si realmente existe antes de que el juez dicte sentencia. Si no está ahí, si Doroteo tiene razón... no sé qué será de mí.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  11206 ms · 1 eventos · 1 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  ✓ evento herminia_solar · secret_entrusted
+  ✓ delta herminia_solar · npc.secret_revealed = Herminia ya revisó, a escondidas, algunos papeles personales de su tía en El Solar buscando el documento de prohijamiento
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+  ✗ PNJ inexistente: herminia_solar
+  ✗ entidad inexistente: herminia_solar
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 66 — 66/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos conocidos
+  18 entidades · contexto de 1012 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  3134 ms
+
+> "No permitas que el miedo te venza, Herminia. Si ese documento existe, lo encontraremos y la verdad saldrá a la luz."
+> Me pongo de cuclillas a su lado para quedar a su altura y le pongo una mano en el hombro para consolarla.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 12+3=15
+
+### [4] DM
+
+  11713 ms
+
+> Herminia exhala un suspiro tembloroso y se apoya ligeramente en tu mano, buscando el anclaje físico que le brindas. Sus ojos, aún húmedos, te miran con una mezcla de gratitud y desesperación. El brillo de la fibra azul proyecta sombras danzantes en las paredes, mientras ella asiente lentamente, aunque una sombra de duda persiste en su mirada.
+> Notas que, a pesar de su vulnerabilidad, hay un detalle que no encaja: Herminia no menciona dónde buscó exactamente ni qué encontró, y su reacción al hablar de los papeles de la tía es demasiado específica. No parece estar simplemente especulando sobre la existencia del documento, sino que su miedo nace de una certeza que no ha terminado de verbalizar.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  1217 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Doroteo Vann: alive, aprecio 35.0 (loyal), 1 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 67 — 67/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  2750 ms
+
+> "No tienes por qué cargar con este peso sola, Herminia. Dime exactamente qué has visto."
+> Sigo sosteniendo su mano con suavidad, mirándola fijamente a los ojos para transmitirle seguridad.
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 6+3=9
+
+### [4] DM
+
+  8971 ms
+
+> Herminia se tensa imperceptiblemente bajo tu tacto. Sus ojos evitan los tuyos por un instante, desviándose hacia las sombras que proyecta la fibra azul en la pared, y aprieta ligeramente tu mano, pero no devuelve la confesión. El temblor de su labio persiste, y aunque hay una urgencia evidente en su respiración, el muro de su reserva permanece intacto.
+> —No es tan sencillo... —susurra, volviendo a mirarte con una fragilidad que parece genuina—. Solo son sospechas, miedos que me atormentan por las noches. No quiero que creas que he hecho algo... indebido.
+> Se aparta lentamente, rompiendo el contacto físico mientras abraza sus propios brazos, envolviéndose en un silencio cargado de cosas no dichas.
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  966 ms · 0 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+
+  nada que escribir (correcto si el turno no cambió el mundo)
+
+### [8] ESCRITURA
+
+  → turn_validation registrado (sin problemas tier 1-2)
+
+### [9] ESTADO DESPUÉS
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos, 0 secretos revelados
+  sin cambios de estado
+
+## Turno 68 — 68/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Herminia Solar: alive, aprecio 25.0 (loyal), 2 hechos conocidos
+  18 entidades · contexto de 613 caracteres
+
+### [2] JUGADOR — Ilvard
+
+  4085 ms
+
+> "No tienes que temer mi juicio, Herminia. Solo busco la verdad para poder ayudarte."
+> Me mantengo frente a ella con una postura abierta y serena, intentando transmitirle seguridad. 
+> {Perspicacia}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Perspicacia: 18+3=21
+
+### [4] DM
+
+  9206 ms
+
+> Herminia exhala un suspiro tembloroso y te observa con una mezcla de gratitud y angustia. Sus hombros caen ligeramente, aunque no llega a relajarse por completo; hay una tensión residual en su cuello y una forma casi instintiva de proteger su espacio personal, como si temiera que tu serenidad pudiera desmantelar sus defensas.

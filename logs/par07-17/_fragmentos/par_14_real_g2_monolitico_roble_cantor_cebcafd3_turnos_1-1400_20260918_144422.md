@@ -1,0 +1,45 @@
+
+# VERTICAL SLICE — Par 14 (real) · G2 (Monolítico) · Roble Cantor (monolithic)
+
+- **DM:** `google/gemma-4-31B-it`
+- **jugador:** `google/gemma-4-31B-it` (Kestra, desvío 80)
+- **turno:** 1
+
+## Turno 1 — 1/1400 de esta corrida (objetivo final de la campaña: 1400)
+
+
+### [1] ESTADO Y CONTEXTO (desde Postgres)
+
+  Melida Corcho: alive, aprecio 30.0 (loyal), 2 hechos conocidos
+  15 entidades · contexto de 1039 caracteres
+
+### [2] JUGADOR — Kestra
+
+  6286 ms
+
+> "Vaya, parece que tenemos un dilema musical en el pueblo."
+> Me acerco a Toño Bravante con una sonrisa, ignorando por el momento el árbol.
+> "Señor Bravante, entiendo perfectamente el peso de una palabra dada a los mercaderes. Me especializo en soluciones creativas para situaciones... complicadas."
+> {Persuasión}
+
+### [3] DADOS (deterministas, del sistema)
+
+  Persuasión: 20+4=24  CRÍTICO
+
+### [4] DM
+
+  11442 ms
+
+> Toño Bravante se endereza, ajustándose el jubón con un gesto brusco mientras observa tu sonrisa. Al principio mantiene una expresión escéptica, pero tus palabras parecen dar justo en el centro de su mayor ansiedad. Sus ojos se iluminan y una chispa de esperanza, mezclada con un alivio evidente, transforma su rostro en una mueca de entusiasmo.
+> —¡Exactamente! ¡Alguien que entiende de logística y honor! —exclama Toño, acercándose a ti con un paso enérgico y dándote una palmada sonora en el hombro—. Mira, no quiero ser un insensible con las tradiciones de Melida, pero el comercio no espera a que el espíritu del árbol se decida a hablar. Si puedes ayudarme a resolver este desastre sin que la Guardiana me corte la lengua, te trataré como a un invitado de honor en la carpa del festival. ¿Por dónde empezamos?
+
+### [5] VERIFICACIÓN DE LA NARRACIÓN
+
+  sin problemas detectados
+
+### [6] EXTRACTOR
+
+  20946 ms · 1 eventos · 0 deltas · 0 creaciones
+
+### [7] VALIDACIÓN DE LO EXTRAÍDO
+

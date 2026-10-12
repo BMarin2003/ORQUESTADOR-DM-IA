@@ -1,0 +1,96 @@
+{
+ "sha256": "5af1c4ea8d677ba32a3fdd78f2383c58f4bec7c062e5d70ac72ac5327a828373",
+ "sello": {
+  "expectativas": {
+   "SQ1|parafrasis_sin_lexema|reconocido": "se_dispara",
+   "SQ2|texto_ajeno|reconocido": "baja",
+   "SC1|oracion_neutra|reconocido": "sin_cambio",
+   "SC2|nombre_sin_cambio|reconocido": "sin_cambio"
+  },
+  "parametros": {
+   "instrumento": "cl2_recall_semantico_v2",
+   "nulo": "condicionado a oraciones que mencionan la entidad",
+   "min_nulo": 20,
+   "ventana": 1,
+   "exclusion": 5,
+   "cuantil": 0.95,
+   "criterio": "decision (McNemar exacta, Holm por familia)",
+   "n_por_perturbacion": 40,
+   "semilla": 20261009,
+   "alias": "palabras con mayuscula >=4 letras sin articulos; si no, frase completa"
+  }
+ },
+ "semilla": 20261009,
+ "n": 40,
+ "eventos_evaluables_v2": 631,
+ "resultados": {
+  "SQ1": {
+   "clave": "SQ1|parafrasis_sin_lexema|reconocido",
+   "esperado": "se_dispara",
+   "n": 40,
+   "b_1a0": 0,
+   "c_0a1": 38,
+   "p": 7.275957614183426e-12,
+   "mdn_delta_margen": 0.17385655501251218,
+   "n_margen": 33,
+   "v1": null,
+   "p_holm": 7.275957614183426e-12,
+   "observado": "se_dispara",
+   "veredicto": "responde"
+  },
+  "SQ2": {
+   "clave": "SQ2|texto_ajeno|reconocido",
+   "esperado": "baja",
+   "n": 40,
+   "b_1a0": 40,
+   "c_0a1": 0,
+   "p": 1.8189894035458565e-12,
+   "mdn_delta_margen": -0.19945271737467501,
+   "n_margen": 4,
+   "v1": null,
+   "p_holm": 3.637978807091713e-12,
+   "observado": "baja",
+   "veredicto": "responde"
+  },
+  "SC1": {
+   "clave": "SC1|oracion_neutra|reconocido",
+   "esperado": "sin_cambio",
+   "n": 40,
+   "b_1a0": 0,
+   "c_0a1": 0,
+   "p": 1.0,
+   "mdn_delta_margen": 0.0,
+   "n_margen": 35,
+   "v1": {
+    "n": 40,
+    "b_1a0": 0,
+    "c_0a1": 0,
+    "p": 1.0,
+    "observado": "sin_cambio"
+   },
+   "p_holm": 1.0,
+   "observado": "sin_cambio",
+   "veredicto": "responde"
+  },
+  "SC2": {
+   "clave": "SC2|nombre_sin_cambio|reconocido",
+   "esperado": "sin_cambio",
+   "n": 40,
+   "b_1a0": 0,
+   "c_0a1": 4,
+   "p": 0.125,
+   "mdn_delta_margen": 0.006020818213091972,
+   "n_margen": 35,
+   "v1": {
+    "n": 40,
+    "b_1a0": 0,
+    "c_0a1": 7,
+    "p": 0.015625,
+    "observado": "se_dispara"
+   },
+   "p_holm": 0.25,
+   "observado": "sin_cambio",
+   "veredicto": "responde"
+  }
+ }
+}

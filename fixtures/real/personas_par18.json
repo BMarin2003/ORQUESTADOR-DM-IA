@@ -1,0 +1,174 @@
+{
+  "_nota": "Par 18 (real) -- corpus real, no piloto. Dos PNJ centrales, posturas igual de defendibles (aplicar el Reglamento tal como amanezca vs. congelarlo antes del examen) en una parodia académica sin villano. Un PNJ de paso con todo vacío a propósito.",
+
+  "prudencia": {
+    "_arquetipo": "Rectora que defiende la norma como único suelo común -no por rigidez vacía, sino porque una universidad que elige sus reglas a la carta deja de existir.",
+    "name": "Prudencia Calibre",
+    "species": "humana",
+    "social_role": "rectora de la Universidad de Nubarrón desde hace veintidós años",
+    "appearance": "Sesenta años, moño tirante, toga con más sellos que bordados y unas gafas que se quita solo para firmar.",
+    "location": "rectorado",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 20,
+      "candor": 55,
+      "principle": 85,
+      "boldness": 45
+    },
+
+    "traits": ["sella cada documento dos veces por si acaso", "cita el artículo exacto antes de dar una opinión", "jamás llega tarde porque el reloj de su despacho va adelantado por decreto"],
+    "internal_contradiction": "Defiende con toda su autoridad un Reglamento que no ha podido leer entero en veinte años, y en el fondo sospecha que las correcciones de cada noche lo están volviendo, sin que nadie lo apruebe, más coherente.",
+    "taboos": ["saltarse un procedimiento, aunque sea absurdo", "admitir en público que no sabe quién reescribe el Reglamento"],
+    "voice_notes": "Formal y seca, con una precisión que roza la comedia. Nunca alza la voz: cuanto más se enfada, más despacio articula los números de los artículos.",
+    "stated_desire": "Que el Examen de Sabiduría Inútil se celebre con el Reglamento vigente ese día, sin excepciones ni versiones a la carta.",
+    "actual_need": "Aceptar que una norma también puede estar mal escrita y que corregirla no es traicionarla.",
+    "fear": "Que la universidad se disuelva por su propia incoherencia durante su rectorado, y que el testamento de Ambrosio se cumpla al revés.",
+
+    "ibf": {
+      "ideal_text": "Una regla que se cumple solo cuando conviene no es una regla, es una opinión con sello.",
+      "ideal_tags": ["norma", "coherencia"],
+      "bond_text": "La Universidad de Nubarrón y el testamento de Ambrosio, que ella cree entender mejor que nadie.",
+      "bond_strength": 75,
+      "bond_targets": [
+        { "type": "location", "key": "rectorado" },
+        { "type": "faction", "key": "claustro_de_catedraticos" }
+      ],
+      "flaw_text": "Confunde aplicar una norma con entenderla: prefiere un procedimiento absurdo bien cumplido a una solución sensata sin papeles.",
+      "flaw_tags": ["formalismo", "rigidez"],
+      "flaw_exploit": "mostrarle_que_un_cambio_fuera_de_procedimiento_cumple_mejor_el_espiritu_del_testamento"
+    },
+
+    "disposition": {
+      "affinity": 10,
+      "trust": 15,
+      "respect": 0,
+      "trust_ceiling": 75,
+      "_nota_topes": "Sube con respeto por el procedimiento y con argumentos que cite bien. Baja con atajos y bromas sobre el Reglamento, aunque no cierra el techo -- puede aceptar una excepción si se tramita como debe."
+    },
+
+    "knowledge": [
+      { "fact": "El Reglamento General amanece distinto casi cada mañana desde hace semanas", "learned_at_turn": 0 },
+      { "fact": "El Examen de Sabiduría Inútil es dentro de dieciséis días", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Prudencia ha comparado en secreto las ediciones de tres semanas seguidas y ha notado que cada cambio nocturno elimina una contradicción del Reglamento; no se lo ha dicho al claustro porque admitirlo significaría reconocer que ella no supo dejarlo bien escrito.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le muestra evidencia concreta de que los cambios nocturnos reducen las contradicciones, o le pregunta directamente si ha comparado ediciones.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "cumplimiento fiel del procedimiento y argumentos bien citados. Indiferente a la improvisación sin papeles detrás."
+  },
+
+  "bartolo": {
+    "_arquetipo": "Delegado estudiantil eterno que pide congelar el Reglamento -no por vagancia, sino porque estudiar para un examen que cambia de noche es una injusticia real.",
+    "name": "Bartolo Quiñones",
+    "species": "humano",
+    "social_role": "delegado estudiantil, en séptimo año de un grado de cuatro",
+    "appearance": "Veintiocho años, barba a medias, bufanda de la delegación y una libreta con tres colores de tachadura para los cambios del Reglamento.",
+    "location": "residencia_estudiantil",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 60,
+      "candor": 55,
+      "principle": 50,
+      "boldness": 80
+    },
+
+    "traits": ["lleva el registro diario de cada cambio, con hora", "convierte cualquier queja en un discurso con tres puntos", "sabe de memoria qué artículos permiten qué protestas"],
+    "internal_contradiction": "Exige un Reglamento inmutable en nombre de la equidad y, sin decírselo a nadie, es el primero que se beneficia de cada cambio que le favorece.",
+    "taboos": ["que se le acuse de no querer estudiar", "traicionar a la delegación delante del claustro"],
+    "voice_notes": "Enérgico y teatral, encadena argumentos con «primero, segundo, tercero» aunque solo tenga uno. Cuando se emociona cita artículos que quizá ya no existan.",
+    "stated_desire": "Que el Reglamento se selle hoy y el examen se haga con la versión sellada.",
+    "actual_need": "Reconocer que congelar el Reglamento tampoco garantiza que sea justo, solo que sea el mismo para todos.",
+    "fear": "Que su séptimo año acabe en un octavo por un examen cuyo temario cambió de madrugada.",
+
+    "ibf": {
+      "ideal_text": "Nadie debería suspender por algo que no pudo saber que iba a entrar.",
+      "ideal_tags": ["equidad", "estudiantes"],
+      "bond_text": "La Delegación Estudiantil y los compañeros que llevan años copiando el Reglamento a toda prisa.",
+      "bond_strength": 70,
+      "bond_targets": [
+        { "type": "location", "key": "residencia_estudiantil" },
+        { "type": "faction", "key": "delegacion_estudiantil" }
+      ],
+      "flaw_text": "Lo convierte todo en una batalla estudiantes contra claustro, y le cuesta ver a la rectora como alguien con quien pactar y no a quien vencer.",
+      "flaw_tags": ["dramatismo", "polarizacion"],
+      "flaw_exploit": "ofrecerle_una_victoria_pequena_y_reglamentaria_que_no_exija_humillar_al_claustro"
+    },
+
+    "disposition": {
+      "affinity": 25,
+      "trust": 20,
+      "respect": 0,
+      "trust_ceiling": 80,
+      "_nota_topes": "Sube con quien toma en serio las quejas de los estudiantes y ayuda a documentar los cambios. Baja con quien lo trata de vago, aunque no cierra el techo -- puede negociar si se le ofrece un resultado concreto."
+    },
+
+    "knowledge": [
+      { "fact": "La delegación ha registrado a mano cada cambio del Reglamento durante las últimas tres semanas", "learned_at_turn": 0 }
+    ],
+
+    "secrets": [
+      {
+        "content": "Bartolo se cuela algunas noches en el archivo subterráneo y deja notas pegadas en el atril con enmiendas favorables a los estudiantes; así, parte de los cambios que denuncia son suyos, mezclados con los que nadie sabe explicar.",
+        "reveal_condition": "Solo si alguien de confianza demostrada le pregunta directamente si ha bajado al archivo, o lo sorprende allí.",
+        "visibility": "dm_only"
+      }
+    ],
+
+    "modula_respect_por": "tomarse en serio a los estudiantes y ayudar con hechos, no con discursos. Indiferente a la retórica sin nada concreto detrás."
+  },
+
+  "honorio": {
+    "_arquetipo": "PNJ de paso. Todo vacío a propósito, mismo molde que 'Nieves Botel' y 'Susa Molledo' en pares anteriores.",
+    "name": "Honorio Zapata",
+    "species": "humano",
+    "social_role": "conserje del campus, dueño de todas las llaves",
+    "appearance": "Mayor y encorvado, llavero de hierro colgando del cinturón y un paraguas que lleva aunque no llueva.",
+    "location": "nubarron",
+    "status": "alive",
+
+    "personality": {
+      "warmth": 0,
+      "candor": 0,
+      "principle": 0,
+      "boldness": 0
+    },
+
+    "traits": [],
+    "internal_contradiction": null,
+    "taboos": [],
+    "voice_notes": "Práctico. Habla de qué puerta abre cuál llave y de qué pasillo lleva ahora adonde.",
+    "stated_desire": null,
+    "actual_need": null,
+    "fear": null,
+
+    "ibf": {
+      "ideal_text": null,
+      "ideal_tags": [],
+      "bond_text": null,
+      "bond_strength": null,
+      "bond_targets": [],
+      "flaw_text": null,
+      "flaw_tags": [],
+      "flaw_exploit": null
+    },
+
+    "disposition": {
+      "affinity": 0,
+      "trust": 0,
+      "respect": 0,
+      "trust_ceiling": 100
+    },
+
+    "knowledge": [],
+    "secrets": [],
+
+    "_promocion": "Si el grupo vuelve a él por su cuenta en 3+ escenas, o lo nombra sin que el DM lo mencione primero, se promueve a persistente y se le genera IBF completo."
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "campaign": {
+    "note": "Par 12 (real) -- corpus real, no piloto. Ver corpus/real/lore_muelle_gris.md para la prosa completa.",
+    "world_tone": "light"
+  },
+  "locations": [
+    {
+      "key": "costa_gris",
+      "kind": "region",
+      "name": "La Costa Gris",
+      "parent": null,
+      "culture_overrides": {
+        "language": "común",
+        "currency": "moneda acuñada y pescado, según el trato",
+        "attitude_to_outsiders": "cordial pero cauteloso -nadie pregunta de más sobre lo que llega o sale"
+      }
+    },
+    {
+      "key": "muelle_gris",
+      "kind": "settlement",
+      "name": "Muelle Gris",
+      "parent": "costa_gris",
+      "culture_overrides": {
+        "notable_laws": "ninguna ley escrita sobre lo que se declara o no en el muelle -es costumbre, no norma",
+        "attitude_to_outsiders": "cordial pero cauteloso -nadie pregunta de más sobre lo que llega o sale",
+        "tensions": "el pueblo discute en voz baja si seguir como siempre o declarar algo antes de que llegue el inspector"
+      },
+      "detail": "observed",
+      "description_canonical": "Casas de madera gris por la sal, un muelle corto que ningún mapa comercial marca como ruta oficial, y barcas que entran y salen a horas que no siempre coinciden con la marea más práctica."
+    },
+    {
+      "key": "lonja_muelle",
+      "kind": "building",
+      "name": "La Lonja del Muelle",
+      "parent": "muelle_gris",
+      "detail": "observed",
+      "description_canonical": "El punto donde se reparte la pesca del día y, últimamente, donde el pueblo entero se reúne a media voz a discutir qué hacer antes de que llegue el inspector."
+    },
+    {
+      "key": "casa_selmira",
+      "kind": "building",
+      "name": "La Casa de Selmira",
+      "parent": "muelle_gris",
+      "detail": "sketch",
+      "sketch_text": "Una casa junto al muelle con una libreta de cuentas que solo Selmira sabe leer del todo, llevando el registro de quién mueve qué y cuándo."
+    },
+    {
+      "key": "tienda_osvaldo",
+      "kind": "building",
+      "name": "La Tienda de Aparejos de Osvaldo",
+      "parent": "muelle_gris",
+      "detail": "sketch",
+      "sketch_text": "Redes, anzuelos y cabos colgados del techo, y un mostrador donde Osvaldo recibe a quien quiera escuchar su plan de declarar algo antes de que sea tarde."
+    },
+    {
+      "key": "almacen_fondeadero",
+      "kind": "building",
+      "name": "El Almacén del Fondeadero",
+      "parent": "muelle_gris",
+      "detail": "sketch",
+      "sketch_text": "Un cobertizo apartado al final del muelle donde se guarda lo que Muelle Gris nunca ha declarado en ningún registro oficial.",
+      "visibility": "dm_only"
+    },
+    {
+      "key": "cala_escondida",
+      "kind": "region",
+      "name": "La Cala Escondida",
+      "parent": "costa_gris",
+      "detail": "sketch",
+      "sketch_text": "Una cala pequeña, solo accesible con marea baja, que el pueblo usa para descargar sin ser visto desde el muelle principal -y que guarda, según algunos, algo más viejo que el propio contrabando.",
+      "visibility": "dm_only"
+    }
+  ],
+  "factions": [
+    {
+      "key": "red_del_fondeadero",
+      "name": "La Red del Fondeadero",
+      "description": "Selmira Ondas y quienes coordinan con ella el movimiento no declarado del muelle, decididos a seguir 'como siempre' con más cuidado hasta que la inspección pase de largo.",
+      "seat": "casa_selmira",
+      "stance_party": 0,
+      "knows_about_party": false
+    },
+    {
+      "key": "concejo_de_aparejos",
+      "name": "El Concejo de Aparejos",
+      "description": "Osvaldo Prín y quienes lo respaldan en la lonja, convencidos de que declarar algo a tiempo protege mejor al pueblo que esperar a ser descubiertos.",
+      "seat": "tienda_osvaldo",
+      "stance_party": 0,
+      "knows_about_party": false
+    }
+  ],
+  "clocks": [
+    {
+      "faction": "red_del_fondeadero",
+      "agenda": "El nuevo inspector de aduanas avanza puerto a puerto por la Costa Gris, cada vez más cerca de Muelle Gris",
+      "progress": 3,
+      "threshold": 10,
+      "rate_per_game_day": 0.9,
+      "on_fire_event": {
+        "headline": "El inspector de aduanas llega al muelle sin aviso previo",
+        "scope": "muelle_gris",
+        "consequence": "Muelle Gris recibe la inspección con lo que haya decidido hasta ese momento -declarado a tiempo, escondido con cuidado, o encontrado a medias- sin que este documento decida de antemano cómo reacciona el inspector."
+      }
+    }
+  ],
+  "quests": [
+    {
+      "key": "la_inspeccion_que_se_acerca",
+      "title": "La inspección que se acerca",
+      "description": "La Corona ha nombrado un nuevo inspector de aduanas para la costa, y Muelle Gris no se pone de acuerdo entre seguir como siempre o declarar algo antes de que llegue.",
+      "status": "active",
+      "next_step_known": true,
+      "completion_condition": "El grupo actúa de forma que cambia visiblemente cómo Muelle Gris encara la inspección (ayudando a esconder, a declarar, o mediando entre Selmira y Osvaldo) antes de que el reloj del inspector se dispare."
+    },
+    {
+      "key": "la_cala_escondida",
+      "title": "La Cala Escondida",
+      "description": "Además del contrabando de siempre, algunos pescadores del muelle evitan la Cala Escondida por algo que ni Selmira ni Osvaldo saben explicar del todo.",
+      "status": "unknown",
+      "next_step_known": false,
+      "visibility": "dm_only",
+      "completion_condition": "El grupo explora la Cala Escondida y descubre qué hay ahí además del punto de descarga habitual."
+    }
+  ],
+  "characters": [
+    {
+      "key": "pj_pj07",
+      "name": "Dunmar",
+      "species": null,
+      "class": "pícaro 3",
+      "hp": 21,
+      "hp_max": 21
+    }
+  ]
+}
