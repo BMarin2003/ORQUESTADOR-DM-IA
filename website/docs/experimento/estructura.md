@@ -2,15 +2,12 @@
 title: Estructura del repositorio
 ---
 
-| Bloque | Carpeta | Contenido |
-| --- | --- | --- |
-| **Sistema** | `orquestador/` `dm/` `jugador/` `extractor/` `migrations/` `entorno/` | Motor DM-IA |
-| | `docker-compose.yml` `pgadmin-servers.json` `.env.example` | Base local y configuración |
-| **Experimento** | `corpus/` | Lore de cada escenario (`pilotos/` y `real/`) |
-| | `fixtures/` | Mundo y PNJ de cada escenario, con su validador |
-| | `scripts/` | Operación, medición y análisis |
-| | `sondeos/` | Pruebas previas del proveedor |
-| **Datos** | `logs/` `transcripciones/` `datos_v2/` `validacion/` | Bitácoras, transcripciones, mediciones y validación humana |
-| **Resultados** | `docs/` | Resultados, reportes, especificaciones e IDs |
-| **Tesis** | `tesis/` `sustentacion/` `entregas/` | Documento, deck y paquetes al asesor |
-| **Sitio** | `website/` | Esta documentación (Docusaurus) |
+| Carpeta | Contenido |
+| --- | --- |
+| `motor/` | Sistema DM-IA: `orquestador/` `dm/` `jugador/` `extractor/` `migrations/` `entorno/` |
+| `experimento/` | `corpus/` (lore), `fixtures/` (mundo y PNJ) y `scripts/` (operación, medición y análisis) |
+| `datos/` | `logs/` `transcripciones/` `datos_v2/` `validacion/`: bitácoras, transcripciones, mediciones y validación humana |
+| `docs/` | Resultados, reportes, especificaciones e IDs |
+| `tesis/` | Documento, figuras, audio y `sustentacion/` (deck) |
+| `website/` | Esta documentación (Docusaurus) |
+| `legacy/` | Material que ya no se usa para reproducir (pilotos, sondeos, entregas, decks anteriores) |

@@ -8,14 +8,14 @@
 
 ## Lo que encontré (no estaba documentado en ningún doc del proyecto)
 
-`jericho_qa_recall()` y `relojes_no_reconocidos()` (`orquestador/reporte_validacion.py`) **no** son instrumentos de texto-por-turno como los de `scripts/sensibilidad/instrumentos_texto.py`. Son heurísticas de solapamiento léxico sobre **eventos estructurados reales**:
+`jericho_qa_recall()` y `relojes_no_reconocidos()` (`motor/orquestador/reporte_validacion.py`) **no** son instrumentos de texto-por-turno como los de `experimento/scripts/sensibilidad/instrumentos_texto.py`. Son heurísticas de solapamiento léxico sobre **eventos estructurados reales**:
 
 - **Jericho recall**: por cada delta narrable (`Campaña.deltas_narrables()` — cambios de `npc.status`, `npc.affinity` con cruce de banda, `quest.status`), busca si alguna palabra de una tabla de lexemas fija (`_KEYWORDS_NPC_STATUS`, `_KEYWORDS_QUEST_STATUS`, `_KEYWORDS_AFINIDAD_BANDA`) aparece como subcadena en el texto narrado del turno del delta + 1 turno siguiente (`ventana=1`). `recall_global` = fracción de deltas "reconocidos".
 - **Relojes reconocidos**: por cada reloj de facción disparado (`Campaña.relojes_disparados()`), busca si el nombre de la facción o una palabra (≥4 letras) de su agenda aparece (con `\bpalabra\b`) en los 2 turnos siguientes al disparo (`ventana=2`).
 
-Esto significa que la unidad de perturbación correcta **no es un turno muestreado al azar** (como el resto del arnés en `scripts/sensibilidad/`), sino **un evento real con su ventana de evidencia**: hay que insertar o quitar texto exactamente en el turno donde el instrumento mira, usando el lexema exacto que el instrumento busca.
+Esto significa que la unidad de perturbación correcta **no es un turno muestreado al azar** (como el resto del arnés en `experimento/scripts/sensibilidad/`), sino **un evento real con su ventana de evidencia**: hay que insertar o quitar texto exactamente en el turno donde el instrumento mira, usando el lexema exacto que el instrumento busca.
 
-## Diseño de la prueba (`scripts/sensibilidad/correr_jericho_relojes.py`)
+## Diseño de la prueba (`experimento/scripts/sensibilidad/correr_jericho_relojes.py`)
 
 Cuatro perturbaciones, cada una con dirección pre-especificada (fijada y con hash SHA-256 ANTES de correr, igual que el resto del arnés):
 
@@ -36,12 +36,12 @@ Los relojes de facción **solo existen en Par18-27** (Par01-17 se generó con el
 
 ## Qué falta para que el resultado sea válido
 
-1. **Correr el humo primero**: `PYTHONUTF8=1 py scripts/sensibilidad/correr_jericho_relojes.py --rapido` (3+3 Jericho, 2+2 relojes). Revisar a mano 2-3 filas del CSV de salida — confirmar que la oración insertada/quitada es la que se esperaba y que el campo `resultado` tiene sentido.
+1. **Correr el humo primero**: `PYTHONUTF8=1 py experimento/scripts/sensibilidad/correr_jericho_relojes.py --rapido` (3+3 Jericho, 2+2 relojes). Revisar a mano 2-3 filas del CSV de salida — confirmar que la oración insertada/quitada es la que se esperaba y que el campo `resultado` tiene sentido.
 2. Si el humo se ve bien, correr la muestra completa (por defecto: 40 deltas Jericho por dirección, 16 relojes por dirección — ajustable con `--n-jericho`/`--n-relojes` según cuántos candidatos reales existan; el propio script imprime cuántos candidatos encontró antes de perturbar).
-3. Leer `docs/reportes/sensibilidad_jericho_relojes.md` (tasa de confirmatorias por perturbación) y decidir si Jericho recall / relojes reconocidos pasan a tener celda A2 en `docs/cierre_brechas.md` y `scripts/reporte_v2/consolidar.py` (hoy: `"heurística léxica; sin prueba de sensibilidad"` / `"proxy de solapamiento léxico; sin prueba A2"` — habría que actualizar esa nota una vez haya un resultado real, no antes).
+3. Leer `docs/reportes/sensibilidad_jericho_relojes.md` (tasa de confirmatorias por perturbación) y decidir si Jericho recall / relojes reconocidos pasan a tener celda A2 en `docs/cierre_brechas.md` y `experimento/scripts/reporte_v2/consolidar.py` (hoy: `"heurística léxica; sin prueba de sensibilidad"` / `"proxy de solapamiento léxico; sin prueba A2"` — habría que actualizar esa nota una vez haya un resultado real, no antes).
 
-No toqué `docs/cierre_brechas.md` ni ningún archivo generado (`datos_v2/`, `docs/reportes/`) porque el script no se ha corrido: actualizar esos documentos antes de tener un resultado real sería exactamente el tipo de cosa que este mismo proyecto evita (expectativas fijadas ANTES de correr, nunca al revés).
+No toqué `docs/cierre_brechas.md` ni ningún archivo generado (`datos/datos_v2/`, `docs/reportes/`) porque el script no se ha corrido: actualizar esos documentos antes de tener un resultado real sería exactamente el tipo de cosa que este mismo proyecto evita (expectativas fijadas ANTES de correr, nunca al revés).
 
 ## Archivos entregados
 
-- `scripts/sensibilidad/correr_jericho_relojes.py` — el script completo, comentado en el mismo estilo que el resto de `scripts/sensibilidad/`, listo para correr. Importa las tablas de lexemas y las funciones reales de `reporte_validacion.py` (`_KEYWORDS_NPC_STATUS`, `_KEYWORDS_QUEST_STATUS`, `_KEYWORDS_AFINIDAD_BANDA`, `_banda_afinidad`, `_texto_reloj`) en vez de duplicarlas, para que la oración inyectada nunca pueda divergir de lo que el instrumento real busca.
+- `experimento/scripts/sensibilidad/correr_jericho_relojes.py` — el script completo, comentado en el mismo estilo que el resto de `experimento/scripts/sensibilidad/`, listo para correr. Importa las tablas de lexemas y las funciones reales de `reporte_validacion.py` (`_KEYWORDS_NPC_STATUS`, `_KEYWORDS_QUEST_STATUS`, `_KEYWORDS_AFINIDAD_BANDA`, `_banda_afinidad`, `_texto_reloj`) en vez de duplicarlas, para que la oración inyectada nunca pueda divergir de lo que el instrumento real busca.

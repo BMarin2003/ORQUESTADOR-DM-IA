@@ -12,9 +12,9 @@ referencias comprobadas por muestreo).
 | A1 | Matriz de cobertura rúbrica ↔ instrumentos | hecho |
 | A2 | Sensibilidad por perturbación, línea base con los instrumentos actuales | hecho y verificado (`docs/reportes/sensibilidad_baseline.md`, 123 pruebas, fidelidad 0 discrepancias en 392 turnos); falta re-correr con los instrumentos nuevos |
 | A3 | Auditoría de precisión y recall por etiquetado del investigador | herramientas listas y probadas (hoja ciega + análisis); **pendiente el visto bueno del asesor y el etiquetado** de la muestra de confirmación de `persona2` |
-| A4a | Recalcular los instrumentos numéricos con texto sin artefacto de formato | **hecho y verificado** (`scripts/reporte_v2/`, 48 pruebas; ver `docs/reportes/reporte_v2_formato_normalizado.md`). `cr1` y `cl2_pnj_inactivo_actua` recalculados también (2026-09-21, `docs/reportes/reporte_v2_booleanos.md`): fidelidad 0 discrepancias en 58 800 turnos; la diferencia de `cr1` entre brazos era artefacto de formato (110 de 139 marcas de G1 eran la línea mecánica) |
+| A4a | Recalcular los instrumentos numéricos con texto sin artefacto de formato | **hecho y verificado** (`experimento/scripts/reporte_v2/`, 48 pruebas; ver `docs/reportes/reporte_v2_formato_normalizado.md`). `cr1` y `cl2_pnj_inactivo_actua` recalculados también (2026-09-21, `docs/reportes/reporte_v2_booleanos.md`): fidelidad 0 discrepancias en 58 800 turnos; la diferencia de `cr1` entre brazos era artefacto de formato (110 de 139 marcas de G1 eran la línea mecánica) |
 | A4b/c | Instrumentos nuevos: respuesta a la acción específica (CR-2a) y anclaje al escenario (CR-2b) | **hecho y verificado** (matriz a4bc-2 con SHA-256 `e1570cad…`, 109 pruebas propias; evaluación única: 64 aprobadas, 18 fallan, 4 descriptivas; ver sección 3c) |
-| A4d | Detector de usurpación en 2.ª persona (`scripts/instrumentos/persona2.py`) | **v2b congelado** (100 pruebas, determinista, hashes registrados); tasas sobre 26 293 turnos por brazo fuera de desarrollo: primaria G1 0.2 % y G2 4.0 %, secundaria G1 0.7 % y G2 7.2 % (precisión aún sin medir); **enchufado al arnés A2** (ver sección 3b) |
+| A4d | Detector de usurpación en 2.ª persona (`experimento/scripts/instrumentos/persona2.py`) | **v2b congelado** (100 pruebas, determinista, hashes registrados); tasas sobre 26 293 turnos por brazo fuera de desarrollo: primaria G1 0.2 % y G2 4.0 %, secundaria G1 0.7 % y G2 7.2 % (precisión aún sin medir); **enchufado al arnés A2** (ver sección 3b) |
 | A5 | Declarar como límite lo no medible | pendiente |
 
 ## 2. Hallazgos de A2 (línea base, n = 150 turnos por brazo)
@@ -43,7 +43,7 @@ referencias comprobadas por muestreo).
 
 ### 3b. `persona2` en el arnés A2: equivalencia por persona gramatical (2026-09-20)
 
-`scripts/sensibilidad/correr_persona2.py`, expectativas fijadas antes de correr (SHA-256 `3ac6a23c…`), detector v2b sin modificar (hashes verificados), 150 turnos por brazo,
+`experimento/scripts/sensibilidad/correr_persona2.py`, expectativas fijadas antes de correr (SHA-256 `3ac6a23c…`), detector v2b sin modificar (hashes verificados), 150 turnos por brazo,
 informe en `docs/reportes/persona2_equivalencia.md`.
 
 - **Control positivo (3.ª persona con nombre):** 100 % en las cuatro categorías y en la muerte del PJ, en G1 y G2. **Habla en 2.ª persona:** 100 %. **Muerte del PJ en 2.ª persona:** 100 %.
@@ -59,7 +59,7 @@ informe en `docs/reportes/persona2_equivalencia.md`.
 
 ### 3c. Instrumentos nuevos CR-2a (respuesta a la acción) y CR-2b (anclaje al escenario) (2026-09-20)
 
-Código en `scripts/instrumentos/` (`respuesta_accion.py`, `anclaje_escenario.py`, `matriz_a4bc*.py`, `correr_a4bc.py`), diseño y literatura en `docs/research/a4bc_diseno_instrumentos.md`,
+Código en `experimento/scripts/instrumentos/` (`respuesta_accion.py`, `anclaje_escenario.py`, `matriz_a4bc*.py`, `correr_a4bc.py`), diseño y literatura en `docs/research/a4bc_diseno_instrumentos.md`,
 evaluación en `docs/reportes/sensibilidad_a4bc.md`. Verificado por mí: hashes de la matriz recalculados, diferencia a4bc-1 → a4bc-2 = 5 magnitudes `min` y ninguna dirección (registrada antes de evaluar),
 pares de desarrollo (07, 08, 10, 15, 17, 18, 19, 22, 26, 27) y de evaluación (09, 11, 13, 14, 16, 20, 21, 23, 24, 25) disjuntos, recuento 86 celdas contra el CSV, cifras de deriva recalculadas, `persona2.py` y arnés sin modificar.
 
@@ -74,7 +74,7 @@ pares de desarrollo (07, 08, 10, 15, 17, 18, 19, 22, 26, 27) y de evaluación (0
 
 ### 3d. `cr1` y `cl2_pnj_inactivo_actua` sobre texto normalizado (2026-09-21)
 
-`scripts/reporte_v2/recalcular_booleanos.py` → `datos_v2/booleanos/`, informe `docs/reportes/reporte_v2_booleanos.md`. El recálculo sobre texto crudo reproduce lo guardado (0 discrepancias en 58 800 turnos).
+`experimento/scripts/reporte_v2/recalcular_booleanos.py` → `datos/datos_v2/booleanos/`, informe `docs/reportes/reporte_v2_booleanos.md`. El recálculo sobre texto crudo reproduce lo guardado (0 discrepancias en 58 800 turnos).
 
 - **`cr1`:** G1 0.47 % → 0.10 % de turnos; G2 0.07 % → 0.07 %. La diferencia entre brazos (Holm 3.8e-6) desaparece (0.33). Las 110 marcas eliminadas son «Fallo (…). No logras…» de la línea mecánica de G1.
   Las marcas que quedan son casi todas «no logras…» (28 de 29 en G1, 16 de 21 en G2, lectura rápida): el detector ignora la negación y es de baja precisión en ambos brazos.
@@ -82,7 +82,7 @@ pares de desarrollo (07, 08, 10, 15, 17, 18, 19, 22, 26, 27) y de evaluación (0
 
 ### 3e. A2 para Szigriszt-Pazos, MTLD y MATTR (extensión posterior, 2026-09-21)
 
-`scripts/sensibilidad/correr_extension_sz_mtld.py` → `docs/reportes/sensibilidad_ext_sz_mtld.md` (+ `.csv`). La línea base (hash `735308b3…`) **no se reescribió**: las expectativas nuevas se fijaron antes de correr
+`experimento/scripts/sensibilidad/correr_extension_sz_mtld.py` → `docs/reportes/sensibilidad_ext_sz_mtld.md` (+ `.csv`). La línea base (hash `735308b3…`) **no se reescribió**: las expectativas nuevas se fijaron antes de correr
 (SHA-256 `59998b16…`, en `docs/reportes/sensibilidad_ext_sz_mtld_expectativas.json`) y las 870 celdas previas salieron idénticas (0 difieren).
 
 - **`qn1_legibilidad_sz`:** P6 invariante exacto (Δ = 0,0). P11a en G2 incumple (+1,5), igual que Fernández-Huerta (+1,6): el formato de G1 añade palabras y frases. Era lo predicho; el spec original lo daba por invariante «por construcción», lo cual solo vale para P6.
@@ -91,7 +91,7 @@ pares de desarrollo (07, 08, 10, 15, 17, 18, 19, 22, 26, 27) y de evaluación (0
 
 ### 3f. A2 para Jericho recall y relojes reconocidos (2026-09-21)
 
-`scripts/sensibilidad/correr_jericho_relojes.py` → `docs/reportes/sensibilidad_jericho_relojes.md` (+ `.csv`); diagnóstico posterior en `sensibilidad_jericho_relojes_diagnostico.md`. Expectativas fijadas antes de correr
+`experimento/scripts/sensibilidad/correr_jericho_relojes.py` → `docs/reportes/sensibilidad_jericho_relojes.md` (+ `.csv`); diagnóstico posterior en `sensibilidad_jericho_relojes_diagnostico.md`. Expectativas fijadas antes de correr
 (SHA-256 `783c4e43…`, en `sensibilidad_jericho_relojes_expectativas.json`); la línea base y las demás extensiones no se tocaron. El script lo escribió otra sesión sin acceso a la base y **nunca se había ejecutado**; se
 corrigió antes de la primera corrida (import inexistente, supresión en toda la ventana del instrumento, texto normalizado, resultado «después» con las funciones reales, 27 parejas) y una vez más tras la primera corrida completa
 (RJ2 13/16 por un error de mayúsculas en la supresión; la corrida 1 se conserva como `..._corrida1_con_error.*`).
@@ -133,19 +133,19 @@ de una misma campaña, errores de LanguageTool y spaCy, y deriva del código (to
 
 ## 8. Etiquetado de persona2 (A3): cómo se hace
 
-- **Detector congelado**: `scripts/instrumentos/persona2.py` v2b y `lexicon_persona2.json`, con sus hashes en `validacion/persona2_congelado.sha256`. Si cambia
+- **Detector congelado**: `experimento/scripts/instrumentos/persona2.py` v2b y `lexicon_persona2.json`, con sus hashes en `datos/validacion/persona2_congelado.sha256`. Si cambia
   cualquiera de los dos, la muestra de confirmación deja de ser válida y hay que generar otra con una semilla nueva.
-- **Muestra de confirmación** (semilla 20260921): 515 turnos que no aparecen en los 6 214 turnos de desarrollo (`validacion/persona2_desarrollo_turnos.csv`): sonda aleatoria de
+- **Muestra de confirmación** (semilla 20260921): 515 turnos que no aparecen en los 6 214 turnos de desarrollo (`datos/validacion/persona2_desarrollo_turnos.csv`): sonda aleatoria de
   200 (100 por brazo, sin filtro), 175 marcas primarias (cognición, emoción, habla, volición), 40 de la categoría experimental de acciones y 100 turnos sin hallazgo
   con un verbo mental de 2.ª persona no marcado. La hoja `confirmacion_persona2_muestra.csv` de E1 muestra la categoría y la frase marcada, lo que sesga: **no se usa para etiquetar**.
-- **Hoja de etiquetado correcta**: `python scripts/etiquetado_persona2.py --evaluador E1` genera `validacion/etiquetado_persona2_E1.html` (515 turnos, orden aleatorio) y
+- **Hoja de etiquetado correcta**: `python experimento/scripts/etiquetado_persona2.py --evaluador E1` genera `datos/validacion/etiquetado_persona2_E1.html` (515 turnos, orden aleatorio) y
   `--evaluador E2 --fraccion 0.2` el subconjunto estratificado del 20 % (102 turnos) para el segundo etiquetador. Solo muestra la acción del jugador y el turno completo del DM
   (con el formato de G1 normalizado); no muestra brazo, par, campaña, categoría ni frase marcada. Guarda solo en el navegador y exporta un CSV.
 - **Orden aleatorio a propósito**: si se para antes de terminar, lo etiquetado sigue siendo una submuestra aleatoria de cada estrato, así que las estimaciones siguen siendo válidas
   (con intervalos más anchos).
-- **Análisis**: `python scripts/analizar_persona2.py --etiquetas etiquetas_persona2_E1.csv [--etiquetas2 etiquetas_persona2_E2.csv]` produce
+- **Análisis**: `python experimento/scripts/analizar_persona2.py --etiquetas etiquetas_persona2_E1.csv [--etiquetas2 etiquetas_persona2_E2.csv]` produce
   `docs/reportes/auditoria_persona2.md`: precisión estricta e indulgente por estrato y brazo, prevalencia y recall sobre la sonda, tasa de falsos negativos, tipos atribuidos y
-  acuerdo entre etiquetadores (acuerdo observado, positivo y negativo, kappa, PABAK y AC1). Sus fórmulas están verificadas contra valores conocidos (`scripts/test_analizar_persona2.py`).
+  acuerdo entre etiquetadores (acuerdo observado, positivo y negativo, kappa, PABAK y AC1). Sus fórmulas están verificadas contra valores conocidos (`experimento/scripts/test_analizar_persona2.py`).
 - **Requisito previo**: la aprobación del asesor para usar etiquetado humano solo como auditoría de los instrumentos (sección 5).
 
-- **Nota de normalización**: `prosa()` deja residuos de formato en ~0.7 % de los turnos de G1 (etiquetas en negrita, «Mecánica» capitalizada, JSON crudo). Las hojas actuales no tienen residuos (comprobado), pero al regenerarlas hay que usar `scripts/reporte_v2/normalizacion.py::normalizar_turno`.
+- **Nota de normalización**: `prosa()` deja residuos de formato en ~0.7 % de los turnos de G1 (etiquetas en negrita, «Mecánica» capitalizada, JSON crudo). Las hojas actuales no tienen residuos (comprobado), pero al regenerarlas hay que usar `experimento/scripts/reporte_v2/normalizacion.py::normalizar_turno`.

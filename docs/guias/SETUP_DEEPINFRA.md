@@ -26,7 +26,7 @@ proyecto/
 ├── .env                    ← NO se versiona
 ├── .env.example            ← sí se versiona, sin secretos
 ├── .gitignore              ← debe contener .env
-└── entorno/
+└── motor/entorno/
     ├── verificar_modelo.py
     └── manifiesto_AAAA-MM-DD.json   ← sí se versiona
 ```
@@ -51,7 +51,7 @@ mensaje útil.
 
 ```bash
 export $(grep -v '^#' .env | xargs)
-python3 entorno/verificar_modelo.py --listar gemma
+python3 motor/entorno/verificar_modelo.py --listar gemma
 ```
 
 Copiar el ID **exacto** que devuelva y guardarlo en `DMIA_MODELO`.
@@ -66,7 +66,7 @@ Mientras estés en la página del modelo, anotar también:
 ## 4. Huella de determinismo
 
 ```bash
-python3 entorno/verificar_modelo.py --modelo "<ID exacto>"
+python3 motor/entorno/verificar_modelo.py --modelo "<ID exacto>"
 ```
 
 Esto genera `manifiesto_AAAA-MM-DD.json` con el hash SHA-256 de la salida de
@@ -87,8 +87,8 @@ generó cada campaña.
 Antes de cada tanda de campañas, y obligatoriamente al pasar de G2 a G1:
 
 ```bash
-python3 entorno/verificar_modelo.py \
-  --modelo "$DMIA_MODELO" --comparar entorno/manifiesto_2026-08-24.json
+python3 motor/entorno/verificar_modelo.py \
+  --modelo "$DMIA_MODELO" --comparar motor/entorno/manifiesto_2026-08-24.json
 ```
 
 Si la huella cambió, el script sale con código 2 y muestra el antes/después.

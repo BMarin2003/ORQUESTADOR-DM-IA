@@ -31,10 +31,10 @@ flowchart LR
 
 | Componente | Código |
 | --- | --- |
-| Turno G2 (monolítico) | [`orquestador/vertical_slice.py`](referencia/orquestador/vertical_slice.md) |
-| Turno G1 (multiagente) | [`vertical_slice_g1.py`](referencia/orquestador/vertical_slice_g1.md), [`router.py`](referencia/orquestador/router.md), [`arbitro.py`](referencia/orquestador/arbitro.md), [`mundo.py`](referencia/orquestador/mundo.md) |
-| Estado y escritura validada | [`db.py`](referencia/orquestador/db.md) y `migrations/001_schema.sql` |
-| Prompts | `dm/` (DM y roles de G1) y `extractor/` (contrato, grounder, verificador) |
-| Jugador, dados y 27 personajes | [`jugador/`](referencia/jugador/dados.md) |
-| Huella del modelo | [`entorno/verificar_modelo.py`](referencia/entorno/verificar_modelo.md) |
-| Reporte de validación por campaña | [`reporte_validacion.py`](referencia/orquestador/reporte_validacion.md) |
+| Turno G2 (monolítico) | [`motor/orquestador/vertical_slice.py`](referencia/motor/orquestador/vertical_slice.md) |
+| Turno G1 (multiagente) | [`vertical_slice_g1.py`](referencia/motor/orquestador/vertical_slice_g1.md), [`router.py`](referencia/motor/orquestador/router.md), [`arbitro.py`](referencia/motor/orquestador/arbitro.md), [`mundo.py`](referencia/motor/orquestador/mundo.md) |
+| Estado y escritura validada | [`db.py`](referencia/motor/orquestador/db.md) y `motor/migrations/001_schema.sql` |
+| Prompts | `motor/dm/` (DM y roles de G1) y `motor/extractor/` (contrato, grounder, verificador) |
+| Jugador, dados y 27 personajes | [`motor/jugador/`](referencia/motor/jugador/dados.md) |
+| Huella del modelo | [`motor/entorno/verificar_modelo.py`](referencia/motor/entorno/verificar_modelo.md) |
+| Reporte de validación por campaña | [`reporte_validacion.py`](referencia/motor/orquestador/reporte_validacion.md) |

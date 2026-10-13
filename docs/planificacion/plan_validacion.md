@@ -17,7 +17,7 @@
 
 ## Ruta B · comprobación humana pequeña (opcional; requiere OK del asesor)
 
-Reusa el material ya generado (`validacion/`). Si se hace, se **alinea con la rúbrica v2**: escala de 7 niveles con sus descriptores y su
+Reusa el material ya generado (`datos/validacion/`). Si se hace, se **alinea con la rúbrica v2**: escala de 7 niveles con sus descriptores y su
 protocolo de calibración (ICC ≥ 0.75; segunda sesión si es menor; indicador con ICC < 0.65 se reporta con la limitación declarada), en lugar
 de la escala 1-5 y el alfa de Krippendorff que usa el formulario actual. Evaluadores propuestos: los dos autores. Es una versión a escala de la
 v2 (ventanas de 8 turnos, no campañas completas de 1 400 turnos, imposibles de leer para 54 campañas), presentada como validación
@@ -44,10 +44,10 @@ Los pares de la muestra son Par07-27 (21 pares): Par01-06 corrieron con un motor
 | # | Paso | Entregable | Quién | Tiempo |
 |---|---|---|---|---|
 | **1.0** | Aprobar alcance y rúbrica (6 ítems, escala 1-5 con anclas) | Rúbrica cerrada | Bryan (+ asesor) | 30 min |
-| **1.1** | Muestreo y material ciego — **HECHO** | `validacion/` (ver abajo) | Claude | — |
+| **1.1** | Muestreo y material ciego — **HECHO** | `datos/validacion/` (ver abajo) | Claude | — |
 | **1.2** | **Piloto**: 4 unidades, 2 evaluadores | CSV de cada uno; α de Krippendorff por ítem | Evaluadores | ~1 h c/u |
 | **1.3** | Ajustar anclas de la rúbrica según el piloto (los ítems con α bajo se aclaran) | Rúbrica v2 | Bryan + Claude | 30 min |
-| **1.4** | Calcular los instrumentos **por ventana** (hoy salen por campaña) | `validacion/instrumentos_por_ventana.csv` | Claude | 1 sesión |
+| **1.4** | Calcular los instrumentos **por ventana** (hoy salen por campaña) | `datos/validacion/instrumentos_por_ventana.csv` | Claude | 1 sesión |
 | **1.5** | Evaluación principal: 24 unidades | CSV de cada evaluador | Evaluadores | ~5-6 h c/u |
 | **1.6** | Análisis pre-especificado: α, correlaciones instrumento-humano, preferencia G1 vs G2, comprobación del ciego | `docs/reportes/validacion_humana.md` | Claude | 1 sesión |
 | **1.7** | Pista B: etiquetar marcas y no-marcas de los detectores | Precisión y recall con IC | 1-2 evaluadores | ~2 h |
@@ -55,7 +55,7 @@ Los pares de la muestra son Par07-27 (21 pares): Par01-06 corrieron con un motor
 Después (fuera de esta fase): análisis estadístico pre-especificado (Wilcoxon por par + modelos mixtos con lote), instrumento de
 deriva/homogeneidad, comprobaciones de robustez, redacción.
 
-## Diseño de la Pista A (ya implementado en `scripts/validacion_generar.py`)
+## Diseño de la Pista A (ya implementado en `experimento/scripts/validacion_generar.py`)
 
 - **Unidad:** (par, ventana de 8 turnos). Texto A y B: uno de G1 y otro de G2, mismo par y mismos turnos, orden al azar (mitad y
   mitad). El evaluador ve el lore, 1 turno previo (no se califica) y los 8 turnos con la acción del jugador.
@@ -84,7 +84,7 @@ deriva/homogeneidad, comprobaciones de robustez, redacción.
 
 ## Material generado (Paso 1.1)
 
-`validacion/`: `evaluador_E1_piloto.html`, `evaluador_E2_piloto.html`, `evaluador_E?_principal.html` (autónomos: se abren con el
+`datos/validacion/`: `evaluador_E1_piloto.html`, `evaluador_E2_piloto.html`, `evaluador_E?_principal.html` (autónomos: se abren con el
 navegador, guardan solos y exportan CSV), `unidades.json` (ciego), **`clave_secreta.json` (los evaluadores no deben abrirlo)**.
-Regenerar: `python scripts/validacion_generar.py [--k 8] [--n-por-posicion 8] [--piloto 4] [--seed N] [--evaluadores E1,E2]`.
+Regenerar: `python experimento/scripts/validacion_generar.py [--k 8] [--n-por-posicion 8] [--piloto 4] [--seed N] [--evaluadores E1,E2]`.
 Probado en Chromium sin interfaz: renderiza, guarda al recargar, cuenta el avance y exporta el CSV, sin errores de JavaScript.

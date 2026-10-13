@@ -1,7 +1,7 @@
 # website
 
 Sitio de documentación (Docusaurus 3). La referencia de código se genera desde los docstrings con
-[`scripts/documentacion/generar_referencia_api.py`](../scripts/documentacion/generar_referencia_api.py)
+[`experimento/scripts/documentacion/generar_referencia_api.py`](../experimento/scripts/documentacion/generar_referencia_api.py)
 (`npm start` y `npm run build` la ejecutan antes) y no se versiona.
 
 ```powershell

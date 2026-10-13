@@ -5,11 +5,11 @@
 Leídos antes de diseñar nada: `lore_vega_del_yelmo.md`, `lore_poza_seca.md`, `lore_caleta_lumbre.md`,
 `lore_vado_cabrero.md`, `lore_puerto_salazon.md`, `lore_alto_ferrena.md` (los 6 lores reales
 completos, para no repetir tono/estructura), `world_par01-06.json`, `personas_par03.json`,
-`personas_par06.json`, `fixtures/validar_fixtures.py`, `fixtures/generar_seed.py`,
-`jugador/personajes_jugadores.json`, `jugador/generar_personajes.py`, `jugador/dados.py`,
-`extractor/contrato.json`, `scripts/crear_campana_real.py`, `scripts/crear_campana_real_g1.py`,
-`scripts/sembrar_mundo_real.py`, `scripts/exportar_transcripcion.py`,
-`orquestador/reporte_validacion.py`, `scripts/estado_par04_05_06.py`.
+`personas_par06.json`, `experimento/fixtures/validar_fixtures.py`, `experimento/fixtures/generar_seed.py`,
+`motor/jugador/personajes_jugadores.json`, `motor/jugador/generar_personajes.py`, `motor/jugador/dados.py`,
+`motor/extractor/contrato.json`, `experimento/scripts/crear_campana_real.py`, `experimento/scripts/crear_campana_real_g1.py`,
+`experimento/scripts/sembrar_mundo_real.py`, `experimento/scripts/exportar_transcripcion.py`,
+`motor/orquestador/reporte_validacion.py`, `experimento/scripts/estado_par04_05_06.py`.
 
 Confirmaciones del paso 0:
 - **`.env`**: no existe línea `DMIA_MODELO_JUGADOR`. `DMIA_MODELO=google/gemma-4-31B-it` presente y correcto.
@@ -17,10 +17,10 @@ Confirmaciones del paso 0:
   sigue presente y sin cambios en `vertical_slice.py` (línea ~905) y `vertical_slice_g1.py` (línea ~1034),
   con el mismo patrón (log del rechazo + `continue`). No se tocó nada de esto.
 - **Firma real de los scripts** (confirmada leyendo el código, no asumida):
-  - `crear_campana_real.py [titulo] [corpus_filename] [world_tone]` — `corpus_filename` relativo a `corpus/`.
+  - `crear_campana_real.py [titulo] [corpus_filename] [world_tone]` — `corpus_filename` relativo a `experimento/corpus/`.
   - `crear_campana_real_g1.py <tenant_id> <user_id> [titulo] [corpus_filename] [world_tone]`.
   - `sembrar_mundo_real.py <campaign_id> <tenant_id> <user_id> [pj_key] [world_file] [personas_file]` —
-    `world_file`/`personas_file` relativos a `fixtures/`. **No es idempotente**: aborta solo si la campaña
+    `world_file`/`personas_file` relativos a `experimento/fixtures/`. **No es idempotente**: aborta solo si la campaña
     ya tiene NPCs sembrados.
   - `vertical_slice.py --pj (default PJ02) --turnos (default 1) --seco --campaign-id (default None)`.
   - `vertical_slice_g1.py --pj (default PJ01) --turnos (default 1) --seco --campaign-id (REQUERIDO)`.
@@ -31,10 +31,10 @@ Confirmaciones del paso 0:
   Jericho-QA recall, Entity Coreference Rate, Grammaticality, grafo de coherencia por lema) — todas
   descriptivas, ninguna pass/fail. La coherencia NER en español (spaCy `es_core_news_sm`) sigue marcada
   como no viable en la práctica; no se intentó tocar ni traducir nada de esto.
-- **`fixtures/validar_fixtures.py`** exige `world.json`/`personas.json`/`turns.json`/`probes.json` fijos en
-  `fixtures/` — no sirve tal cual para fixtures reales con nombre `_parXX` ni para campañas reales (que no
+- **`experimento/fixtures/validar_fixtures.py`** exige `world.json`/`personas.json`/`turns.json`/`probes.json` fijos en
+  `experimento/fixtures/` — no sirve tal cual para fixtures reales con nombre `_parXX` ni para campañas reales (que no
   tienen `turns.json`/`probes.json`, exclusivos del suite de prueba del extractor). Se escribió
-  `scripts/validar_fixtures_real.py`, que reutiliza el mismo subconjunto de invariantes que sí aplica a
+  `experimento/scripts/validar_fixtures_real.py`, que reutiliza el mismo subconjunto de invariantes que sí aplica a
   world/personas (referencias cruzadas de `location`/`faction`/`bond_target`/`quest`, rangos de
   disposición, `trust <= trust_ceiling`, secretos con `reveal_condition`, al menos un PNJ de paso vacío,
   `hp == hp_max`), parametrizado por número de par.
@@ -84,22 +84,22 @@ Verificación de no-repetición (contra Par01-06 y entre sí):
   enfrentadas, o en un fenómeno/amenaza ambiguo cuya naturaleza real queda deliberadamente sin resolver
   en el propio documento (ver quests `dm_only`/`unknown` de cada `world_parXX.json`).
 
-Contenido por par (en `corpus/real/lore_<slug>.md`, `fixtures/real/world_parXX.json`,
-`fixtures/real/personas_parXX.json`): ~7 locations (1-2 `dm_only`), 2 factions, 1 clock, 2 quests
+Contenido por par (en `experimento/corpus/real/lore_<slug>.md`, `experimento/fixtures/real/world_parXX.json`,
+`experimento/fixtures/real/personas_parXX.json`): ~7 locations (1-2 `dm_only`), 2 factions, 1 clock, 2 quests
 (una activa, una `dm_only`/`unknown` como gancho de misterio), 1 character (el PJ del par), 3 PNJ
 (2 centrales con IBF completo enfrentado + 1 PNJ de paso con molde vacío, mismo patrón que
 Petra/Yulen/Mira/Alba Ferrís/Nando/Nilo de los pares anteriores).
 
 ## Validación (completa, 2026-09-18)
 
-`python scripts/validar_fixtures_real.py 07 08 09 10 11 12 13 14 15 16 17` → **los 11 pares pasan sin
+`python experimento/scripts/validar_fixtures_real.py 07 08 09 10 11 12 13 14 15 16 17` → **los 11 pares pasan sin
 errores**. Único aviso (esperado, mismo patrón que Par01-06): la región de nivel superior de cada par
 (p. ej. `la_hondonada`, `cresteria_alondra`) no tiene `sketch_text` — es un contenedor organizativo, no
 una escena, igual que `valle_del_yelmo` en Par03.
 
 ## Parche aplicado (2026-09-18, antes de crear campañas)
 
-La otra sesión (tesis) pasó un parche pendiente para `orquestador/reporte_validacion.py`: refinamiento
+La otra sesión (tesis) pasó un parche pendiente para `motor/orquestador/reporte_validacion.py`: refinamiento
 sintáctico post-hoc de `cl2_pnj_inactivo_actua` vía spaCy (¿el PNJ inactivo es sujeto gramatical de la
 oración, o solo se lo menciona/referencia?), para no confundir con error de continuidad las menciones
 retrospectivas legítimas -- G1 sostiene referencias a su elenco más tiempo que G2 (Papalampidi C), así
@@ -110,7 +110,7 @@ verificado con `python -m py_compile` y por contenido (`grep` de las funciones e
 
 ## Fase 3 — Crear y sembrar las 22 campañas (completa, 2026-09-18)
 
-Orquestado con `scripts/crear_sembrar_par07-17.py` (nuevo, mismo patrón que Par03-06): por cada par,
+Orquestado con `experimento/scripts/crear_sembrar_par07-17.py` (nuevo, mismo patrón que Par03-06): por cada par,
 `crear_campana_real.py` → parsea tenant_id/user_id/campaign_id de la salida real → `crear_campana_real_g1.py`
 reusando esos ids → `sembrar_mundo_real.py` x2. Cada paso se verificó contra Postgres directamente
 (título, `architecture`, `world_tone`, `current_turn=0` tras crear; conteo de locations/npcs/factions/
@@ -174,12 +174,12 @@ independientes entre sí (ninguna coordinación entre G1/G2 de un mismo par ni e
 3 de la Sección 4 original), así que el orden/momento de cada corrida no afecta la validez de la
 comparación pareada. Reduce concurrencia máxima contra DeepInfra de 22 a 11 conexiones simultáneas, sin
 esperar entre pares dentro de la misma tanda. Bryan corre los procesos desde su propia PowerShell
-(`scripts\lanzar_ola.ps1 ... -Arm G2` / `-Arm G1`), desacoplados de esta sesión de Claude, para que
+(`experimento\scripts\lanzar_ola.ps1 ... -Arm G2` / `-Arm G1`), desacoplados de esta sesión de Claude, para que
 sobrevivan aunque esta conversación termine.
 
 **Tanda 1 (G2, monolítico) lanzada**: 2026-09-18 14:44:20, las 11 campañas G2 vía
-`.\scripts\lanzar_ola.ps1 07,08,09,10,11,12,13,14,15,16,17 -Arm G2`. Verificado por Bryan:
-- Los 11 logs (`logs\parNN_g2_20260918_144420.log`) imprimen `**jugador:** \`google/gemma-4-31B-it\``
+`.\experimento\scripts\lanzar_ola.ps1 07,08,09,10,11,12,13,14,15,16,17 -Arm G2`. Verificado por Bryan:
+- Los 11 logs (`datos\logs\parNN_g2_20260918_144420.log`) imprimen `**jugador:** \`google/gemma-4-31B-it\``
   con el nombre de PJ correcto para cada par (Tarq, Maelis, Garrek, Isolde, Marta, Dunmar, Elior, Kestra,
   Ilvard, Harn, Wynn) -- coincide con la tabla de asignación.
 - `Select-String` sobre los 11 logs por `429|402|Traceback`: cero coincidencias.
@@ -200,7 +200,7 @@ al imprimir un carácter `✓`/`✗` (U+2713/U+2717) en el loop de confirmación
 adjunta -- exactamente el caso de `Start-Process -RedirectStandardOutput archivo.log`, a diferencia de
 correrlo interactivo en una consola visible. Las tildes sobreviven como mojibake (aproximación parcial de
 cp1252), pero `✓`/`✗` no tienen ninguna aproximación y revientan con excepción no capturada, tumbando el
-proceso entero a mitad de turno. `fixtures/generar_seed.py` ya había encontrado y resuelto este mismo
+proceso entero a mitad de turno. `experimento/fixtures/generar_seed.py` ya había encontrado y resuelto este mismo
 problema antes (`sys.stdout.reconfigure(encoding="utf-8")`, con el comentario "Windows usa cp1252 en
 stdout... mata el script") -- pero ese fix nunca se replicó en `vertical_slice.py`/`vertical_slice_g1.py`.
 
@@ -219,9 +219,9 @@ mismo crash en la tanda 2). Verificado: `python -m py_compile` en ambos, y una p
 (imprimir `✓`/`✗`/tildes a un archivo redirigido igual que `Start-Process`) confirma que ya no revienta
 y el texto sale bien codificado.
 
-*Fix adicional de proceso*: `scripts\lanzar_ola.ps1` hardcodeaba `--turnos 1400` para toda relanzada,
+*Fix adicional de proceso*: `experimento\scripts\lanzar_ola.ps1` hardcodeaba `--turnos 1400` para toda relanzada,
 violando la regla 1 del plan original ("nunca relances con --turnos 1400 a ciegas"). Se agregó
-`scripts\current_turn.py` (consulta rápida de `current_turn` de una campaña) y se modificó
+`experimento\scripts\current_turn.py` (consulta rápida de `current_turn` de una campaña) y se modificó
 `lanzar_ola.ps1` para consultar el turno real de cada campaña ANTES de lanzar y calcular
 `1400 - current_turn` dinámicamente (saltando la campaña si ya llegó a 1400). Probado en seco contra las
 11 campañas G2 reales: da 1400 para las 7 en turno 0 y 1399 para las 4 en turno 1, coincidiendo con lo
@@ -239,11 +239,11 @@ el evento de Windows (Resource-Exhaustion 2004, 16:31:31) lista como mayores con
 ANTES de ese evento; y al relanzar cada proceso de generación ocupa ~48 MB (11 = ~530 MB). La hipótesis de
 memoria no se sostiene con esa evidencia. Candidatos abiertos: proceso hijo atado a una terminal/sesión
 (cierre de terminal de VSCode, ventanas headless), o algo externo aún no identificado.
-Instrumentación agregada para que la próxima caída quede explicada: `scripts\lanzar_ola.ps1` ahora lanza
+Instrumentación agregada para que la próxima caída quede explicada: `experimento\scripts\lanzar_ola.ps1` ahora lanza
 vía `Win32_Process.Create` (WMI; el padre es WmiPrvSE, sin consola ni job de VSCode), `python -u` (log sin
 buffer) y cada log termina con `[FIN OK]`/`[FIN ERROR <código>]` + hora (si un proceso muere SIN marca de
-fin, se llevó también al `cmd` que lo envolvía = algo externo); `scripts\vigilante.ps1` anota cada 30 s
-en `logs\vigilante.csv` procesos vivos G2/G1, memoria y RAM libre. `scripts\chequeo_rapido.ps1` corregido
+fin, se llevó también al `cmd` que lo envolvía = algo externo); `experimento\scripts\vigilante.ps1` anota cada 30 s
+en `datos\logs\vigilante.csv` procesos vivos G2/G1, memoria y RAM libre. `experimento\scripts\chequeo_rapido.ps1` corregido
 (contaba el python de pgAdmin).
 **Relanzado 16:52:03**: las 11 G1 retomando desde sus turnos 13-26. G2 (turnos 82-94) queda para después:
 G1 (~17 h) es el camino crítico, así que G2 (~4.5 h) puede empezar hasta ~12 h más tarde sin alargar el total.
@@ -256,7 +256,7 @@ sobrevivieron 5 h sin ventana ni consola). Tres causas distintas:
    `HTTPError` como fatal ("El jugador no respondió" -> `sys.exit`), así que ~20 corridas cayeron en el mismo
    cuarto de hora. Fix (en `vertical_slice.py` Y `vertical_slice_g1.py`, idéntico, neutral entre brazos: un 429 ni
    se factura ni cambia el resultado): 429/502/503/504 se reintentan con backoff exponencial acotado
-   (10..300 s + jitter, hasta 30 intentos ~2 h); 401/402 siguen siendo fatales. `scripts/test_reintentos.py`
+   (10..300 s + jitter, hasta 30 intentos ~2 h); 401/402 siguen siendo fatales. `experimento/scripts/test_reintentos.py`
    (respuestas simuladas) verifica en ambos motores: se recupera tras 2x429, 402 no reintenta, 429 eterno se rinde a los 30.
 2. **Par09 G2, 17:17: `psycopg.OperationalError ... Address already in use (10048)`**: `db.py` abre una conexión TCP
    nueva por consulta (sin pool) y con 22 corridas Windows agotó puertos efímeros, una vez en 5 h. Fix: `Campaña._conn()`
@@ -270,11 +270,11 @@ sobrevivieron 5 h sin ventana ni consola). Tres causas distintas:
 Antes de relanzar se verificó la integridad de las 22 campañas: `current_turn` = último `turn_log`, sin duplicados,
 sin `state_deltas`/`turn_validation`/`turn_log` huérfanos (incluida Par13 G1, que cayó en plena escritura).
 **Tiempo perdido**: entre ~19:40 y 22:18 (2.6 h) no corrió nada, hasta que Bryan volvió y lo vio.
-**Supervisor** (`scripts/supervisor.py`, un solo proceso, lanzado 22:18 vía WMI): mantiene un proceso por campaña y
+**Supervisor** (`experimento/scripts/supervisor.py`, un solo proceso, lanzado 22:18 vía WMI): mantiene un proceso por campaña y
 relanza cualquier caída con `--turnos = 1400 - current_turn` real; no relanza si hay filas escritas para un turno >
 `current_turn` (BLOQUEADA), se rinde tras 6 caídas seguidas sin avanzar (RENDIDA), no duplica una campaña que ya
 tenga un python vivo, espera 60 s..15 min antes de relanzar, y un solo supervisor a la vez (puerto 47653).
-Eventos en `logs\supervisor.log`; salida de cada campaña en `logs\parNN_g?_sup.log`. **Relanzadas las 22** desde
+Eventos en `datos\logs\supervisor.log`; salida de cada campaña en `datos\logs\parNN_g?_sup.log`. **Relanzadas las 22** desde
 sus turnos reales (G2 555-673 salvo Par09 en 203; G1 256-341 salvo Par13 en 55).
 Estimación con el ritmo medido en la corrida anterior (G2 ~3.1 turnos/min, G1 ~1.6 con 22 en paralelo): G2 terminan
 en ~4-6.5 h, G1 en ~11-14 h (el más atrasado, Par13 G1, ~14 h) -> todo ≈ mediodía del 2026-09-19 si no hay nuevas
@@ -293,7 +293,7 @@ así que no quedó ningún turno a medias (el supervisor lo habría marcado BLOQ
 del motor: el supervisor ya cubre este caso (una caída ~cada 12 h de 22 procesos) y ampliarlos solo demoraría la
 detección. Al relanzar tras una caída, el turno en vuelo se regenera (el LLM no es determinista) pero el intento fallido
 nunca escribió, así que no contamina la campaña ni el par.
-Transcripciones exportadas (`scripts/exportar_transcripcion.py`, repo raíz, `transcripcion_Par_NN_(real)_-_G2_..._1-1400.md`,
+Transcripciones exportadas (`experimento/scripts/exportar_transcripcion.py`, repo raíz, `transcripcion_Par_NN_(real)_-_G2_..._1-1400.md`,
 1401 turnos c/u, 1.2-1.4 MB): Par07-Par17 G2. `reporte_validacion.py` (con spaCy/LanguageTool disponibles) guardado en
 `docs/reportes/reporte_parNN_g2.txt` (ejecutar con `PYTHONUTF8=1`: el script imprime `─` y cp1252 no lo soporta).
 G1: en curso (turnos 627-1032 de 1400 a las ~06:00).
@@ -351,18 +351,18 @@ simuladas; no se activó en la práctica en toda la corrida final.
 
 ### Transcripciones y organización de archivos
 
-- **Transcripción por campaña = un solo archivo** con los turnos 0–1400, en `transcripciones/par07-17/` (22
-  archivos, 34 MB). Se exportan desde `turn_log` (`scripts/exportar_transcripcion.py`), no concatenando
+- **Transcripción por campaña = un solo archivo** con los turnos 0–1400, en `datos/transcripciones/par07-17/` (22
+  archivos, 34 MB). Se exportan desde `turn_log` (`experimento/scripts/exportar_transcripcion.py`), no concatenando
   logs, así que las corridas cortadas/reanudadas ya no fragmentan la transcripción (hasta 5 corridas por
   campaña). Turno 0 = el lore de apertura. Par02-06 siguen en la raíz del repo, sin tocar (regla: no tocar
   Par01-06).
 - **Bitácoras por corrida**: 167 fragmentos `.md`/`.log`/`.err` (uno por arranque) se archivaron en
-  `logs/par07-17/_fragmentos/` sin borrar nada, y se unió cada campaña en
-  `logs/par07-17/parNN_g?_<lugar>_bitacora_completa.md` (22 archivos, cada uno con una marca por
-  fragmento: rango de turnos, completos e interrumpidos). Script: `scripts/organizar_logs_par07-17.py`.
+  `datos/logs/par07-17/_fragmentos/` sin borrar nada, y se unió cada campaña en
+  `datos/logs/par07-17/parNN_g?_<lugar>_bitacora_completa.md` (22 archivos, cada uno con una marca por
+  fragmento: rango de turnos, completos e interrumpidos). Script: `experimento/scripts/organizar_logs_par07-17.py`.
 - Reportes: `docs/reportes/reporte_parNN_g{1,2}.txt` (22, 9 secciones cada uno).
 
-### Integridad de las transcripciones (`scripts/verificar_transcripciones.py`, informe en `docs/reportes/integridad_transcripciones_par07-17.txt`)
+### Integridad de las transcripciones (`experimento/scripts/verificar_transcripciones.py`, informe en `docs/reportes/integridad_transcripciones_par07-17.txt`)
 
 Cruza Postgres, el `.md` exportado y las bitácoras por corrida. **0 fallas duras en las 22 campañas**:
 - `turn_log` contiguo 0..1400 sin huecos ni duplicados; `turn_validation` cubre 1..1400; ninguna fila
@@ -443,7 +443,7 @@ directamente en logs es solo un piso ($20.6 G1 + $8.4 G2 = $29.0).
 
 ### Scripts nuevos de esta fase
 
-`scripts/verificar_transcripciones.py`, `scripts/organizar_logs_par07-17.py`. (Anteriores: `supervisor.py`,
+`experimento/scripts/verificar_transcripciones.py`, `experimento/scripts/organizar_logs_par07-17.py`. (Anteriores: `supervisor.py`,
 `chequeo_rapido.ps1`, `estado_par07-17.py`, `lanzar_ola.ps1`, `crear_sembrar_par07-17.py`.)
 
 ### Decisiones abiertas (de Bryan)
@@ -467,7 +467,7 @@ generados (motor "v1", sin reloj del mundo).
   `world.game_day`; el prompt del extractor solo dice "día de juego" sin darle el día actual, y en ~30 000 turnos
   no lo emitió ni una vez (`game_day` = 0 en las 34 campañas). Los fixtures además traían un solo reloj (6-20
   días para dispararse, y un reloj dispara UNA vez).
-- **Arreglo** (`orquestador/db.py`, `Campaña.sincronizar_dia`, llamado desde `vertical_slice.py` y
+- **Arreglo** (`motor/orquestador/db.py`, `Campaña.sincronizar_dia`, llamado desde `vertical_slice.py` y
   `vertical_slice_g1.py` tras el paso de escritura): el día de juego sale del turno, `día = turno // TURNOS_POR_DIA`
   (`TURNOS_POR_DIA = 20`, 1400 turnos = 70 días), sin LLM, idéntico en los dos brazos. Escribe el delta
   `world.game_day` con `source='clock'` (ya existía en el enum) y avanza los relojes en UNA transacción; es
@@ -475,9 +475,9 @@ generados (motor "v1", sin reloj del mundo).
   extractor queda intacto. `game_day` no se le muestra al DM: solo llega el evento del reloj disparado, por el
   mismo camino de siempre (`eventos_reloj_turno` → contexto del turno siguiente en G2, agente Mundo en G1).
 - **Fixtures de Par18+**: 3 relojes escalonados por par (temprano / medio / tardío, separados ≥ 200 turnos,
-  dispara entre el turno 100 y el 1400). `scripts/validar_fixtures_real.py` lo exige (error si un reloj nunca
+  dispara entre el turno 100 y el 1400). `experimento/scripts/validar_fixtures_real.py` lo exige (error si un reloj nunca
   dispararía antes del turno 1400; aviso si hay ≠ 3 o están muy juntos).
-- **Prueba**: `scripts/test_reloj_determinista.py` contra una campaña desechable en Postgres: el reloj de Par07
+- **Prueba**: `experimento/scripts/test_reloj_determinista.py` contra una campaña desechable en Postgres: el reloj de Par07
   (8 días) dispara exactamente en el turno 160, hay un delta `clock` por día, el evento aparece en
   `eventos_reloj_turno`, llamar dos veces no escribe nada, y tras saltar 30 días sin ticks un solo tick recupera
   y dispara. Campaña desechable borrada (tenant eliminado; las 22 campañas reales intactas).
@@ -493,7 +493,7 @@ generados (motor "v1", sin reloj del mundo).
   con otras etiquetas no soportadas (`{Ataque mágico}`, `{Ataque de conjuro}`, `{Ataque furtivo}`,
   `{Iniciativa}`…). El motor de dados solo conoce 18 habilidades + 6 características; no hay tirada de ataque
   ni de iniciativa.
-- Causa en el DM G2: `dm/prompt_g2.md` dice "sin tirada previa cuando corresponda, no resuelvas la acción" y
+- Causa en el DM G2: `motor/dm/prompt_g2.md` dice "sin tirada previa cuando corresponda, no resuelvas la acción" y
   "las tiradas vienen ya resueltas"; ante un ataque sin tirada válida no tiene salida, y pide la tirada. G1 tiene
   esa salida en su Árbitro (modo `veredicto_sin_tirada`, NUN-5). G1 recibió `{Ataque}` en 69 turnos (G2: 31) y
   nunca rompió personaje: no es que G1 vea menos casos.
@@ -501,18 +501,18 @@ generados (motor "v1", sin reloj del mundo).
 
 ### Meta-mensajes: arreglo implementado (compartido por G1 y G2, 2026-09-19)
 
-Aprobado por Bryan ("1. sí"). No se tocó `dm/prompt_g2.md` (el baseline monolítico se estudia tal cual).
-1. **Tiradas de combate** (`jugador/dados.py`): `{Ataque}` (mejor de FUE/DES + competencia +2), `{Ataque mágico}`
+Aprobado por Bryan ("1. sí"). No se tocó `motor/dm/prompt_g2.md` (el baseline monolítico se estudia tal cual).
+1. **Tiradas de combate** (`motor/jugador/dados.py`): `{Ataque}` (mejor de FUE/DES + competencia +2), `{Ataque mágico}`
    (solo lanzadores: mago INT, clérigo/explorador SAB, bardo/brujo/paladín CAR), `{Iniciativa}` (DES); aceptan
    variantes (`{Ataque con la daga}`, `{Ataque furtivo}`, `{Ataque de conjuro}`). Salen de la ficha real del PJ
    (`dados.tabla_pj`), son deterministas y reproducibles. Un bárbaro/guerrero/pícaro con `{Ataque mágico}` se
-   rechaza como antes (no se inventa un número). El prompt del jugador (`jugador/prompt.md`) ahora lista las tres.
+   rechaza como antes (no se inventa un número). El prompt del jugador (`motor/jugador/prompt.md`) ahora lista las tres.
 2. **Red de seguridad**: si el DM (G2) o el Narrador (G1) responde con `[...]` de ≥ 20 caracteres, se regenera
    hasta 2 veces con un aviso ("las tiradas las resuelve el sistema; narra sin corchetes"); si aun así queda,
    se borra el corchete y se conserva la narración si quedan ≥ 80 caracteres. Cada activación queda en
    `turn_validation.raw_flags.guard_meta_reintentos`, así que la tasa de activación es un dato medible por brazo.
    El modo tutor de G1 (respuestas a `[pregunta OOC]` del jugador) NO pasa por la red.
-3. Prueba sin LLM: `scripts/test_dados_combate.py` (modificadores esperados de 4 PJ, las 5 variantes, rechazos, red).
+3. Prueba sin LLM: `experimento/scripts/test_dados_combate.py` (modificadores esperados de 4 PJ, las 5 variantes, rechazos, red).
    `dados.tabla_pj` corre sin error sobre los 27 PJ. Ensayo en vivo en modo seco (1 par, ambos brazos): 0 errores.
 
 ### Relojes: verificación de punta a punta (smoke con LLM real)
@@ -543,15 +543,15 @@ la parodia a la solemnidad con el enum existente (`world_tone` solo tiene grimda
 
 PJ usados: los 10 de los 11 libres tras Par01-17 (queda sin usar PJ02 Senna). Cada par: ~7-8 lugares (1 `dm_only`), 2 facciones,
 **3 relojes escalonados**, 2 misiones (una `dm_only` de misterio), 1 PJ, 3 PNJ (2 centrales con posturas igual de
-defendibles + 1 de paso; en Par23 el PNJ de paso es la acusada, que calla). Ficheros: `corpus/real/lore_<slug>.md`,
-`fixtures/real/world_par18..27.json`, `personas_par18..27.json`. Validador: 10/10 OK, 0 claves repetidas, HP por la
-fórmula verificada de Par03-06. Creación/siembra con `scripts/crear_sembrar_par18-27.py` (IDs en
+defendibles + 1 de paso; en Par23 el PNJ de paso es la acusada, que calla). Ficheros: `experimento/corpus/real/lore_<slug>.md`,
+`experimento/fixtures/real/world_par18..27.json`, `personas_par18..27.json`. Validador: 10/10 OK, 0 claves repetidas, HP por la
+fórmula verificada de Par03-06. Creación/siembra con `experimento/scripts/crear_sembrar_par18-27.py` (IDs en
 `docs/ids_par18-27.json`); verificado contra Postgres: mismos turno 0, PJ, HP, tono, registro y 3 relojes en G1 y G2.
 
 ### Generación de Par18-27 (lanzada 2026-09-19 17:36)
 
-20 campañas en paralelo bajo `scripts/supervisor.py --ids docs/ids_par18-27.json` (log: `logs/supervisor_par18-27.log`;
-estado: `.\scripts\chequeo_rapido.ps1 -Lote 18-27`). Modelo del jugador `google/gemma-4-31B-it` verificado en el encabezado.
+20 campañas en paralelo bajo `experimento/scripts/supervisor.py --ids docs/ids_par18-27.json` (log: `datos/logs/supervisor_par18-27.log`;
+estado: `.\experimento\scripts\chequeo_rapido.ps1 -Lote 18-27`). Modelo del jugador `google/gemma-4-31B-it` verificado en el encabezado.
 Costo esperado ≈ $37 (~$3.7/par); avisar si se sostiene 2-3×. Al terminar: mismo cierre que Par07-17 (integridad
 de transcripciones, transcripciones, reportes, unión de logs).
 
@@ -564,8 +564,8 @@ normales, código 0). Los 10 G2 terminaron entre 23:20 y 00:12 (~6 h, desde el a
 `google/gemma-4-31B-it` (verificado en el encabezado). Reintentos del motor en los 40 logs: 0 errores HTTP 429, 1 reintento
 por saturación (5xx) y 75 por timeout de red, todos resueltos sin caída (0 Traceback).
 
-**Archivos**: transcripciones en `transcripciones/par18-27/` (20, 30 MB); bitácora unida por campaña en
-`logs/par18-27/` (fragmentos en `_fragmentos/`); reportes `docs/reportes/reporte_par18..27_g{1,2}.txt` (20, 9 secciones);
+**Archivos**: transcripciones en `datos/transcripciones/par18-27/` (20, 30 MB); bitácora unida por campaña en
+`datos/logs/par18-27/` (fragmentos en `_fragmentos/`); reportes `docs/reportes/reporte_par18..27_g{1,2}.txt` (20, 9 secciones);
 integridad en `docs/reportes/integridad_transcripciones_par18-27.txt`. Scripts generalizados con `--ids`/carpeta
 (`verificar_transcripciones.py`, `organizar_logs_par07-17.py`, `estado_par07-17.py`, `supervisor.py`, `chequeo_rapido.ps1 -Lote`).
 
@@ -660,7 +660,7 @@ Mismos patrones y cautelas que Par07-17 (CR-2 de G1 inflado por su línea mecán
 ## Fase 8 — Validación humana de los instrumentos (2026-09-20, en curso)
 
 Plan completo en `docs/plan_validacion.md`; respaldo bibliográfico en `docs/papers_revistas_q1-q3.md`. **Paso 1.1 hecho**:
-`scripts/validacion_generar.py` + `scripts/validacion_formulario.html` generan en `validacion/` 24 unidades principales + 4 de piloto
+`experimento/scripts/validacion_generar.py` + `experimento/scripts/validacion_formulario.html` generan en `datos/validacion/` 24 unidades principales + 4 de piloto
 (pares Par07-27, ventanas de 8 turnos, estratificadas por posición y tono), el material ciego y un formulario por evaluador
 (probado en Chromium sin interfaz). Hallazgos al preparar el ciego: G1 lleva etiquetas `narrativa/mecanica/presion` en 99-100 % de sus
 turnos y una línea de tirada en 95 % (G2 nunca), lo que delataba la arquitectura (se normaliza el texto que ve el evaluador); G1
@@ -678,15 +678,15 @@ deriva del extractor, no consistencia de personajes.
 
 **Plan A en marcha (2026-09-20 noche).** Trabajo repartido en subagentes con verificación previa a la aceptación (ver `docs/plan_A_detallado.md`):
 investigación bibliográfica de 2.ª persona y agencia (`docs/research/r1_*`, sin base directa: aporte propio) y de sensibilidad y auditoría (`r2_*`, 35 referencias,
-4 comprobadas); prototipo `scripts/instrumentos/persona2.py` (72 pruebas, salida determinista, spaCy solo etiqueta Person=2 en el 14 % de los hallazgos); arnés
-`scripts/sensibilidad/` (123 pruebas, fidelidad 0 discrepancias en 392 turnos, expectativas atadas a un SHA-256). Línea base de A2: los tres detectores de 3.ª
+4 comprobadas); prototipo `experimento/scripts/instrumentos/persona2.py` (72 pruebas, salida determinista, spaCy solo etiqueta Person=2 en el 14 % de los hallazgos); arnés
+`experimento/scripts/sensibilidad/` (123 pruebas, fidelidad 0 discrepancias en 392 turnos, expectativas atadas a un SHA-256). Línea base de A2: los tres detectores de 3.ª
 persona marcan 100 % con el nombre del PJ y 0 % en 2.ª persona; el formato de G1 rompe 7 de 9 controles invariantes de los instrumentos numéricos; `cr2_nombres_no_reconocidos`
 está saturado en G1 (99.9 %); los instrumentos de grafo de entidades no distinguen narración de otro escenario. Corrección de un error propio: 58 800 turnos son el total de 42
 campañas (29 400 por brazo), no por brazo. La categoría de acciones «no declaradas» de persona2 tenía precisión ≈ 0 en 7 de 7 filas leídas: se rediseña y se congela antes
 de auditar.
 
-**A4a: instrumentos numéricos sobre texto normalizado (2026-09-20).** `scripts/reporte_v2/` (48 pruebas) recalcula los instrumentos de las 42 campañas con
-el formato de G1 normalizado (`datos_v2/`, `docs/reportes/reporte_v2_formato_normalizado.md`, descriptivo y post hoc). Sanidad: G2 v1 = v2 con 0 discrepancias en 29 400
+**A4a: instrumentos numéricos sobre texto normalizado (2026-09-20).** `experimento/scripts/reporte_v2/` (48 pruebas) recalcula los instrumentos de las 42 campañas con
+el formato de G1 normalizado (`datos/datos_v2/`, `docs/reportes/reporte_v2_formato_normalizado.md`, descriptivo y post hoc). Sanidad: G2 v1 = v2 con 0 discrepancias en 29 400
 turnos × 8 columnas; recalcular G1 sobre texto crudo reproduce v1 con 0 discrepancias. `prosa()` deja residuos de formato en 0.77 % de los turnos de G1 (etiquetas en negrita
 `**narrativa**`, sobre todo en Par12, «Mecánica» capitalizada, 3 turnos con JSON crudo); contrasté por mi cuenta 400 turnos de Par12 G1: `prosa()` coincide en 353 y las 47
 discrepancias son todas turnos con etiquetas en negrita; la normalización estricta coincide en 400. Las hojas de etiquetado (515 turnos de persona2 y 28 unidades de la Ruta B) tienen

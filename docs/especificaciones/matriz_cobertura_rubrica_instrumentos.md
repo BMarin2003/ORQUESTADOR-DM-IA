@@ -3,7 +3,7 @@
 **Encuadre.** La rúbrica v2 (7 niveles, panel de 5 DMs, campaña completa) se sustituyó por medición 100 % determinista a petición del
 asesor. La rúbrica pasa a ser la **definición de los constructos**; los instrumentos son su operacionalización. Esta matriz responde,
 para cada indicador, qué componente de la definición mide cada instrumento y cuál queda sin medir (validez de contenido). Los datos
-salen de las 42 campañas de Par07-27 (58 800 turnos en total (29 400 por brazo)) y las definiciones, del código (`orquestador/vertical_slice.py`,
+salen de las 42 campañas de Par07-27 (58 800 turnos en total (29 400 por brazo)) y las definiciones, del código (`motor/orquestador/vertical_slice.py`,
 `reporte_validacion.py`), no de descripciones previas.
 
 ## 1. Cobertura por indicador
