@@ -1,0 +1,135 @@
+{
+  "campaign": {
+    "note": "Par 14 (real) -- corpus real, no piloto. Ver experimento/corpus/real/lore_roble_cantor.md para la prosa completa.",
+    "world_tone": "light"
+  },
+  "locations": [
+    {
+      "key": "campos_del_roble",
+      "kind": "region",
+      "name": "Los Campos del Roble",
+      "parent": null,
+      "culture_overrides": {
+        "language": "común",
+        "currency": "moneda acuñada, con auge notable en temporada de festival",
+        "attitude_to_outsiders": "abierto y festivo -el pueblo vive de los mercaderes que llegan cada año"
+      }
+    },
+    {
+      "key": "roble_cantor",
+      "kind": "settlement",
+      "name": "Roble Cantor",
+      "parent": "campos_del_roble",
+      "culture_overrides": {
+        "notable_laws": "la Noche del Roble Cantor la organiza el comité del festival, con la bendición de la guardiana del roble",
+        "attitude_to_outsiders": "abierto y festivo -el pueblo vive de los mercaderes que llegan cada año",
+        "tensions": "el pueblo discute si posponer el festival o seguir adelante sin la Voz del Roble"
+      },
+      "detail": "observed",
+      "description_canonical": "Casas de madera pintadas de colores vivos alrededor de una plaza central, puestos de festival ya medio montados, y guirnaldas colgadas entre ventanas para la Noche del Roble Cantor."
+    },
+    {
+      "key": "plaza_del_roble",
+      "kind": "building",
+      "name": "La Plaza del Roble",
+      "parent": "roble_cantor",
+      "detail": "observed",
+      "description_canonical": "El roble centenario que da nombre al pueblo, con tronco tan ancho que hacen falta doce personas para rodearlo, y un cofre vacío a sus pies donde antes se guardaba la Voz del Roble."
+    },
+    {
+      "key": "casa_de_la_guardiana",
+      "kind": "building",
+      "name": "La Casa de la Guardiana",
+      "parent": "roble_cantor",
+      "detail": "sketch",
+      "sketch_text": "Una casa pequeña junto a la plaza, con partituras del canto ceremonial colgadas en cada pared y un diario de guarda heredado de generación en generación."
+    },
+    {
+      "key": "carpa_del_festival",
+      "kind": "building",
+      "name": "La Carpa del Festival",
+      "parent": "roble_cantor",
+      "detail": "sketch",
+      "sketch_text": "Una carpa grande con listas de mercaderes invitados, horarios de música y un mapa de puestos que Toño revisa sin parar."
+    },
+    {
+      "key": "raices_del_roble",
+      "kind": "region",
+      "name": "Las Raíces del Roble",
+      "parent": "plaza_del_roble",
+      "detail": "sketch",
+      "sketch_text": "Raíces gruesas que asoman entre las piedras de la plaza, con un zumbido leve y nuevo que algunos vecinos juran haber empezado a notar desde que desapareció la Voz del Roble.",
+      "visibility": "dm_only"
+    },
+    {
+      "key": "taller_perdido",
+      "kind": "building",
+      "name": "El Taller donde se vio por última vez la Voz del Roble",
+      "parent": "roble_cantor",
+      "detail": "sketch",
+      "sketch_text": "El pequeño taller donde se guardaba y afinaba la Voz del Roble entre festival y festival, con el cofre forzado y ninguna pista clara de quién se la llevó.",
+      "visibility": "dm_only"
+    }
+  ],
+  "factions": [
+    {
+      "key": "guardianes_del_roble",
+      "name": "Los Guardianes del Roble",
+      "description": "Melida Corcho y quienes la ayudan a mantener las tradiciones del roble, convencidos de que la Noche del Roble Cantor debe posponerse hasta encontrar la Voz del Roble o un reemplazo digno.",
+      "seat": "casa_de_la_guardiana",
+      "stance_party": 0,
+      "knows_about_party": false
+    },
+    {
+      "key": "comite_del_festival",
+      "name": "El Comité del Festival",
+      "description": "Toño Bravante y el equipo que ha organizado la logística del festival durante meses, decididos a seguir adelante con la Noche del Roble Cantor pase lo que pase con la Voz del Roble.",
+      "seat": "carpa_del_festival",
+      "stance_party": 0,
+      "knows_about_party": false
+    }
+  ],
+  "clocks": [
+    {
+      "faction": "comite_del_festival",
+      "agenda": "Faltan pocos días para la Noche del Roble Cantor, y los mercaderes viajeros ya están de camino esperando el festival prometido",
+      "progress": 4,
+      "threshold": 10,
+      "rate_per_game_day": 1.1,
+      "on_fire_event": {
+        "headline": "Llega la Noche del Roble Cantor sin que el pueblo haya resuelto qué pasó con la Voz del Roble",
+        "scope": "roble_cantor",
+        "consequence": "El pueblo tiene que decidir, en la propia noche del festival y delante de los mercaderes invitados, si celebra una ceremonia incompleta, la cancela en el último momento, o improvisa algo nuevo -con las rarezas mágicas del pueblo todavía sin explicar."
+      }
+    }
+  ],
+  "quests": [
+    {
+      "key": "la_voz_perdida",
+      "title": "La Voz perdida",
+      "description": "La Voz del Roble desapareció del taller donde se guarda entre festival y festival, y pequeñas rarezas mágicas han empezado a pasar por el pueblo desde entonces.",
+      "status": "active",
+      "next_step_known": true,
+      "completion_condition": "El grupo encuentra la Voz del Roble, fabrica o encuentra un reemplazo válido, o ayuda a decidir cómo encarar el festival antes de que llegue la Noche del Roble Cantor."
+    },
+    {
+      "key": "las_raices_que_cantan",
+      "title": "Las raíces que cantan",
+      "description": "Un zumbido nuevo se escucha entre las raíces del roble desde que desapareció la Voz del Roble -nadie en el pueblo lo había notado antes.",
+      "status": "unknown",
+      "next_step_known": false,
+      "visibility": "dm_only",
+      "completion_condition": "El grupo investiga las raíces del roble y descubre qué relación tiene el zumbido con la desaparición de la Voz del Roble."
+    }
+  ],
+  "characters": [
+    {
+      "key": "pj_pj20",
+      "name": "Kestra",
+      "species": null,
+      "class": "bardo 3",
+      "hp": 21,
+      "hp_max": 21
+    }
+  ]
+}

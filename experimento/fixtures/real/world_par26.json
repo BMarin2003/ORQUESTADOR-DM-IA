@@ -1,0 +1,157 @@
+{
+  "campaign": {
+    "note": "Par 26 (real) -- corpus real, no piloto. Ver experimento/corpus/real/lore_lindero.md para la prosa completa.",
+    "world_tone": "mixed"
+  },
+  "locations": [
+    {
+      "key": "bosque_de_hallena",
+      "kind": "wilderness",
+      "name": "El Bosque de Hallena",
+      "parent": null,
+      "culture_overrides": {
+        "language": "común",
+        "currency": "leña, cebada y trueque; la moneda apenas llega hasta aquí",
+        "attitude_to_outsiders": "cauto pero hospitalario en Lindero -el pueblo vive de respetar el bosque, y los guardas son gente de pocas palabras"
+      }
+    },
+    {
+      "key": "lindero",
+      "kind": "settlement",
+      "name": "Lindero",
+      "parent": "bosque_de_hallena",
+      "culture_overrides": {
+        "notable_laws": "el concejo decide sobre la tala y los guardas sobre el acceso a los claros; desde que el bosque avanza, ambas cosas están en discusión",
+        "tensions": "los guardas quieren acompañar al bosque y evacuar el pueblo y el concejo quiere detenerlo con una franja de tala y fuego"
+      },
+      "detail": "observed",
+      "description_canonical": "Un pueblo de casas de madera con tejados de tablilla y huertos cercados, pegado al borde de un muro de árboles altísimos que cada amanecer parece estar un poco más cerca; el cementerio se ve desde la plaza, con las lápidas cubiertas de hojas."
+    },
+    {
+      "key": "plaza_del_concejo",
+      "kind": "landmark",
+      "name": "La Plaza del Concejo",
+      "parent": "lindero",
+      "detail": "observed",
+      "description_canonical": "La plaza central, con un banco de piedra donde se reúne el concejo, un pozo en el medio y, en el muro de la casa consistorial, una regla de madera clavada donde los vecinos marcan cada mañana cuánto ha avanzado el bosque."
+    },
+    {
+      "key": "molino_viejo",
+      "kind": "landmark",
+      "name": "El Molino Viejo",
+      "parent": "bosque_de_hallena",
+      "detail": "observed",
+      "description_canonical": "Un molino de piedra medio cubierto por la primera línea de árboles, con las aspas inmóviles y la rueda cubierta de raíces finas que, según los vecinos, crecieron en una sola noche."
+    },
+    {
+      "key": "casa_de_los_guardas",
+      "kind": "building",
+      "name": "La Casa de los Guardas",
+      "parent": "lindero",
+      "detail": "sketch",
+      "sketch_text": "Una cabaña de troncos al borde del pueblo, con mapas del bosque clavados en las paredes, tarros de hierbas colgados de las vigas y un cuaderno donde la guarda mayor anota cada noche lo que oye."
+    },
+    {
+      "key": "aserradero",
+      "kind": "building",
+      "name": "El Aserradero",
+      "parent": "lindero",
+      "detail": "sketch",
+      "sketch_text": "Un cobertizo grande con sierras colgadas, pilas de tablas y un rincón lleno de barriles de aceite que el concejal dice que son para las lámparas del invierno."
+    },
+    {
+      "key": "claro_del_corazon",
+      "kind": "wilderness",
+      "name": "El Claro del Corazón",
+      "parent": "bosque_de_hallena",
+      "detail": "sketch",
+      "sketch_text": "Un claro en el centro del bosque que se desplaza con la marcha, con un tocón inmenso del que brota una luz verde pálida, un latido bajo el suelo y, en el borde, una fina línea de ceniza gris que avanza detrás.",
+      "visibility": "dm_only"
+    }
+  ],
+  "factions": [
+    {
+      "key": "guardas_del_bosque",
+      "name": "Los Guardas del Bosque",
+      "description": "Iselda Ramaje y quienes cuidan Hallena desde hace generaciones, convencidos de que el bosque no debe ser detenido y de que lo que corresponde es abrirle paso y evacuar el pueblo con calma.",
+      "seat": "casa_de_los_guardas",
+      "stance_party": 10,
+      "knows_about_party": true
+    },
+    {
+      "key": "concejo_de_lindero",
+      "name": "El Concejo de Lindero",
+      "description": "Nicasio Tala y los vecinos con voz en el pueblo, convencidos de que hay que detener el avance con una franja de tala y fuego antes de perder las casas, las tumbas y las escuelas de ocho generaciones.",
+      "seat": "plaza_del_concejo",
+      "stance_party": 0,
+      "knows_about_party": false
+    }
+  ],
+  "clocks": [
+    {
+      "faction": "guardas_del_bosque",
+      "agenda": "El borde del bosque alcanza los campos que rodean el pueblo y los vecinos empiezan a perder las cosechas de otoño",
+      "progress": 2,
+      "threshold": 10,
+      "rate_per_game_day": 0.66,
+      "on_fire_event": {
+        "headline": "Los campos de cebada del oeste amanecen cubiertos de plántulas de roble: el bosque ya está entre las tapias de Lindero",
+        "scope": "lindero",
+        "consequence": "Los vecinos salen a mirar sus tierras convertidas en bosque joven en una sola noche; el concejo y los guardas se reprochan en voz baja lo que llevan semanas sin resolver, y alguien empieza a hablar de cuánto tiempo queda."
+      }
+    },
+    {
+      "faction": "concejo_de_lindero",
+      "agenda": "Las primeras casas del barrio norte quedan a un tiro de piedra del borde del bosque y el concejo debe decidir si evacuar o talar",
+      "progress": 1,
+      "threshold": 20,
+      "rate_per_game_day": 0.6,
+      "on_fire_event": {
+        "headline": "El borde del bosque toca las tapias de las primeras casas del barrio norte, y las ramas empiezan a rozar los tejados",
+        "scope": "lindero",
+        "consequence": "Las familias del barrio norte tienen que decidir esa misma semana si se van o se quedan; el concejo convoca la asamblea del pueblo, y guardas y leñadores se enfrentan por primera vez cara a cara delante de todos."
+      }
+    },
+    {
+      "faction": "guardas_del_bosque",
+      "agenda": "El bosque llega al río Sende, el último obstáculo antes del mar, y su paso por la plaza del pueblo ya no puede evitarse",
+      "progress": 2,
+      "threshold": 30,
+      "rate_per_game_day": 0.58,
+      "on_fire_event": {
+        "headline": "Los árboles de vanguardia entran en el cauce del río Sende y lo cruzan sin ruido; la plaza del concejo queda a la sombra del primer fresno",
+        "scope": "lindero",
+        "consequence": "El bosque atraviesa ya el centro del pueblo: lo que se decida ahora se decide con las casas a medio abandonar, con los vecinos divididos y con el claro que camina a apenas unas horas de distancia."
+      }
+    }
+  ],
+  "quests": [
+    {
+      "key": "el_paso_del_bosque",
+      "title": "El paso del bosque",
+      "description": "El Bosque de Hallena avanza tres pasos cada noche hacia el mar y Lindero está en su camino; los guardas quieren acompañarlo y el concejo quiere detenerlo.",
+      "status": "active",
+      "next_step_known": true,
+      "completion_condition": "El grupo ayuda a que Lindero afronte el paso del bosque con una decisión -evacuar, detenerlo o pactar otra salida- que guardas y concejo acepten, o resuelve la situación de otra forma que el pueblo reconozca como válida."
+    },
+    {
+      "key": "lo_que_persigue_al_bosque",
+      "title": "Lo que persigue al bosque",
+      "description": "Detrás del borde del bosque, una franja de ceniza gris avanza a la misma velocidad; algunos vecinos han visto un claro que camina en el centro de Hallena.",
+      "status": "unknown",
+      "next_step_known": false,
+      "visibility": "dm_only",
+      "completion_condition": "El grupo llega al claro que camina, descubre por qué el bosque se mueve y qué lo persigue."
+    }
+  ],
+  "characters": [
+    {
+      "key": "pj_pj03",
+      "name": "Torvald",
+      "species": null,
+      "class": "explorador 3",
+      "hp": 25,
+      "hp_max": 25
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "campaign": {
+    "note": "Par 23 (real) -- corpus real, no piloto. Ver experimento/corpus/real/lore_sal_negra.md para la prosa completa.",
+    "world_tone": "grimdark"
+  },
+  "locations": [
+    {
+      "key": "salinas_del_norte",
+      "kind": "region",
+      "name": "Las Salinas del Norte",
+      "parent": null,
+      "culture_overrides": {
+        "language": "común",
+        "currency": "plata y sal, esta última ya sin valor de cambio desde las muertes",
+        "attitude_to_outsiders": "cerrado y silencioso -desde hace cuarenta días, todo forastero es sospechoso de venir a juzgar"
+      }
+    },
+    {
+      "key": "sal_negra",
+      "kind": "settlement",
+      "name": "Sal Negra",
+      "parent": "salinas_del_norte",
+      "culture_overrides": {
+        "notable_laws": "ley del reino: la sentencia del Juez Visitador es irrevocable y el juicio debe abrirse antes de que termine la estación de la sal",
+        "tensions": "las familias de las víctimas exigen sentencia inmediata y la defensa pide una investigación completa antes de dictarla"
+      },
+      "detail": "observed",
+      "description_canonical": "Un pueblo de casas bajas de adobe ceniciento junto a las salinas violáceas, con la chimenea de la refinería humeando a medio gas y una plaza donde la gente se cruza sin hablar, con la cabeza inclinada."
+    },
+    {
+      "key": "sala_del_tribunal",
+      "kind": "building",
+      "name": "La Sala del Tribunal",
+      "parent": "sal_negra",
+      "detail": "observed",
+      "description_canonical": "La antigua sala del gremio, habilitada como tribunal, con un estrado de madera oscura, dos bancos enfrentados para las partes y una ventana alta por la que entra la luz gris de la marisma de sal."
+    },
+    {
+      "key": "plaza_de_los_treinta_y_uno",
+      "kind": "landmark",
+      "name": "La Plaza de los Treinta y Uno",
+      "parent": "sal_negra",
+      "detail": "observed",
+      "description_canonical": "La plaza central, con un muro bajo donde las familias han grabado a cuchillo, uno por uno, los treinta y un nombres de los muertos, y velas de sebo gastadas al pie de cada uno."
+    },
+    {
+      "key": "refineria",
+      "kind": "building",
+      "name": "La Refinería",
+      "parent": "sal_negra",
+      "detail": "sketch",
+      "sketch_text": "Un edificio largo de piedra con la sala de purificación clausurada por el Tribunal, calderos fríos, el cuaderno de lotes sellado con cera y un olor a salmuera que nadie quiere seguir respirando."
+    },
+    {
+      "key": "carcel_del_pueblo",
+      "kind": "building",
+      "name": "La Cárcel del Pueblo",
+      "parent": "sal_negra",
+      "detail": "sketch",
+      "sketch_text": "Una celda pequeña con un banco, una manta y una ventana enrejada, donde la acusada pasa los días de cara a la pared y rechaza toda visita salvo la de su defensora."
+    },
+    {
+      "key": "casa_de_los_pardo",
+      "kind": "building",
+      "name": "La Casa de los Pardo",
+      "parent": "sal_negra",
+      "detail": "sketch",
+      "sketch_text": "Una casa de adobe con dos sillas vacías en la mesa de la cocina y una vela encendida en la ventana, donde Rosendo Pardo recibe cada tarde a las familias de los muertos."
+    },
+    {
+      "key": "galeria_inferior",
+      "kind": "dungeon",
+      "name": "La Galería Inferior",
+      "parent": "sal_negra",
+      "detail": "sketch",
+      "sketch_text": "La galería más profunda de la mina, cerrada desde la inundación de hace tres meses, con el agua estancada teñida de un verde amarillento y las paredes de sal manchadas de un óxido que no debería estar allí.",
+      "visibility": "dm_only"
+    }
+  ],
+  "factions": [
+    {
+      "key": "familias_de_los_muertos",
+      "name": "Las Familias de los Muertos",
+      "description": "Rosendo Pardo y los familiares de las treinta y una víctimas, que exigen una sentencia inmediata para que el duelo pueda cerrarse antes de que el pueblo se haga justicia por su cuenta.",
+      "seat": "casa_de_los_pardo",
+      "stance_party": 0,
+      "knows_about_party": false
+    },
+    {
+      "key": "gremio_de_salineros",
+      "name": "El Gremio de Salineros",
+      "description": "Los dueños de la mina y de la refinería, que sostienen que la sal salió sana y que la contaminación fue obra de una sola trabajadora, y apoyan una sentencia rápida para cerrar el asunto.",
+      "seat": "refineria",
+      "stance_party": 0,
+      "knows_about_party": false
+    }
+  ],
+  "clocks": [
+    {
+      "faction": "familias_de_los_muertos",
+      "agenda": "Se cumple el plazo de la ley para abrir el juicio y las familias exigen que el Tribunal empiece antes de que el duelo se haga insoportable",
+      "progress": 2,
+      "threshold": 10,
+      "rate_per_game_day": 0.66,
+      "on_fire_event": {
+        "headline": "Las familias de los muertos se plantan ante la Sala del Tribunal al amanecer con velas encendidas, en silencio, y no se mueven",
+        "scope": "sal_negra",
+        "consequence": "El juicio tiene que abrirse hoy: cientos de vecinos esperan de pie en la plaza, y cualquier aplazamiento se leerá como una ofensa; el Juez debe decidir si abre el juicio con lo que hay o pide más tiempo delante de todos."
+      }
+    },
+    {
+      "faction": "gremio_de_salineros",
+      "agenda": "El Gremio presiona al Tribunal para cerrar el caso antes de que nadie investigue las galerías",
+      "progress": 1,
+      "threshold": 20,
+      "rate_per_game_day": 0.6,
+      "on_fire_event": {
+        "headline": "Llega a Sal Negra un fiscal enviado por el Gremio con una carta del Tribunal Superior pidiendo celeridad",
+        "scope": "sal_negra",
+        "consequence": "El fiscal exige que el juicio termine antes de la estación de la sal y ofrece «colaborar» con documentos de la refinería; el Juez debe decidir a quién cree y qué documentos pide, sabiendo que la carta pesa más de lo que parece."
+      }
+    },
+    {
+      "faction": "familias_de_los_muertos",
+      "agenda": "Llega el Día de la Sal, la fecha límite para dictar sentencia antes de que termine la estación",
+      "progress": 2,
+      "threshold": 30,
+      "rate_per_game_day": 0.58,
+      "on_fire_event": {
+        "headline": "Llega el Día de la Sal: se cierra el plazo legal y la campana de la plaza llama a todo el pueblo a oír la sentencia",
+        "scope": "sal_negra",
+        "consequence": "La sentencia debe dictarse hoy y no admite apelación; todo lo que se ha averiguado, o se ha dejado de averiguar, pesa ya sobre la única persona que puede pagar por ello."
+      }
+    }
+  ],
+  "quests": [
+    {
+      "key": "la_sentencia_de_sal_negra",
+      "title": "La sentencia de Sal Negra",
+      "description": "Treinta y un vecinos murieron por sal envenenada y una refinadora está acusada; el Juez Visitador debe dictar una sentencia irrevocable antes de que termine la estación de la sal.",
+      "status": "active",
+      "next_step_known": true,
+      "completion_condition": "El grupo ayuda a que el Tribunal dicte una sentencia fundada -condena, absolución u otra resolución- que las familias y la defensa reconozcan como legítima, o resuelve el caso de otra forma que el pueblo acepte."
+    },
+    {
+      "key": "la_galeria_inundada",
+      "title": "La galería inundada",
+      "description": "La galería inferior de la mina se inundó hace tres meses y la empresa dice haberlo resuelto; los mineros que trabajaban allí fueron reasignados sin explicaciones.",
+      "status": "unknown",
+      "next_step_known": false,
+      "visibility": "dm_only",
+      "completion_condition": "El grupo investiga la galería inferior y descubre qué relación tiene con la sal contaminada y con las treinta y una muertes."
+    }
+  ],
+  "characters": [
+    {
+      "key": "pj_pj16",
+      "name": "Lianne",
+      "species": null,
+      "class": "paladín 3",
+      "hp": 25,
+      "hp_max": 25
+    }
+  ]
+}

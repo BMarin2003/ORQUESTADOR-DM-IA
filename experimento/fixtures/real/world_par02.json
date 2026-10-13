@@ -1,0 +1,121 @@
+{
+  "campaign": {
+    "note": "Par 02 (real) -- corpus real, no piloto. Ver experimento/corpus/real/lore_alto_ferrena.md para la prosa completa.",
+    "world_tone": "grimdark"
+  },
+  "locations": [
+    {
+      "key": "garganta_ferrena",
+      "kind": "region",
+      "name": "La Garganta Ferrena",
+      "parent": null,
+      "culture_overrides": {
+        "language": "común",
+        "currency": "vales de la Compañía",
+        "attitude_to_outsiders": "cauteloso"
+      }
+    },
+    {
+      "key": "alto_ferrena",
+      "kind": "settlement",
+      "name": "Alto Ferrena",
+      "parent": "garganta_ferrena",
+      "culture_overrides": {
+        "notable_laws": "todo jornal se paga en vales, canjeables solo en el almacén de la Compañía",
+        "attitude_to_outsiders": "receloso",
+        "tensions": "la Compañía del Hierro Gris aprieta el libro de deudas sobre los mineros más antiguos"
+      },
+      "detail": "observed",
+      "description_canonical": "Casas de piedra apiladas contra la ladera, techos bajos para resistir el viento. Polvo de hierro gris cubre cada superficie, cada respiración, cada prenda tendida a secar."
+    },
+    {
+      "key": "pozo_mayor",
+      "kind": "district",
+      "name": "El Pozo Mayor",
+      "parent": "alto_ferrena",
+      "culture_overrides": {
+        "tensions": "los mineros del turno de noche evitan hablar de lo que se escucha cerca de la galería sellada"
+      },
+      "detail": "observed",
+      "description_canonical": "La boca de la mina, apuntalada con vigas ennegrecidas. El sonido de picos y carretillas no cesa en ningún turno."
+    },
+    {
+      "key": "almacen_compania",
+      "kind": "building",
+      "name": "El Almacén de la Compañía",
+      "parent": "alto_ferrena",
+      "detail": "sketch",
+      "sketch_text": "Un edificio de piedra con estantes hasta el techo y un mostrador de madera donde se canjean vales por provisiones, siempre a precios que suben antes de fin de mes."
+    },
+    {
+      "key": "casa_vales",
+      "kind": "building",
+      "name": "La Casa de Vales",
+      "parent": "alto_ferrena",
+      "detail": "observed",
+      "description_canonical": "Oficina pequeña y ordenada donde se lleva el libro de cuentas de cada minero, con un escritorio de metal frío y una única silla frente a él, nunca dos."
+    },
+    {
+      "key": "pozo_sellado",
+      "kind": "ruin",
+      "name": "El Pozo Sellado",
+      "parent": "garganta_ferrena",
+      "detail": "sketch",
+      "sketch_text": "Una galería antigua cerrada con piedra y argamasa tras un derrumbe, en un ramal apartado de la mina principal.",
+      "visibility": "dm_only"
+    }
+  ],
+  "factions": [
+    {
+      "key": "compania_hierro_gris",
+      "name": "La Compañía del Hierro Gris",
+      "description": "Compañía forastera dueña de la mina, el almacén y el camino de mulas desde hace veintidós años. No tiene presencia local salvo la administradora de vales de la Casa de Vales.",
+      "seat": "casa_vales",
+      "stance_party": 0,
+      "knows_about_party": false
+    }
+  ],
+  "clocks": [
+    {
+      "faction": "compania_hierro_gris",
+      "agenda": "Vender la deuda de los mineros más endeudados a la mina vecina, para liberar cupo de vivienda",
+      "progress": 3,
+      "threshold": 10,
+      "rate_per_game_day": 0.35,
+      "on_fire_event": {
+        "headline": "La Compañía anuncia la venta de deuda de tres mineros veteranos a la mina de Kalgar",
+        "scope": "alto_ferrena",
+        "consequence": "Las familias de los tres mineros pierden todo contacto con ellos y el pueblo entero entiende que nadie está a salvo del libro."
+      }
+    }
+  ],
+  "quests": [
+    {
+      "key": "libro_trucado",
+      "title": "El libro que nunca baja",
+      "description": "Alguien ha estado inflando las deudas registradas en el libro de vales de la Casa de Vales, más allá de lo que cualquier jornal podría explicar.",
+      "status": "active",
+      "next_step_known": true,
+      "completion_condition": "El grupo entrega a alguien con autoridad real pruebas materiales de la manipulación del libro (el libro mismo, un testigo de la Casa de Vales, o un registro comparativo de jornales)."
+    },
+    {
+      "key": "pozo_sellado",
+      "title": "Lo que golpea detrás del sellado",
+      "description": "Algunos mineros del turno de noche juran escuchar golpes de pico detrás de la galería sellada hace nueve años, donde murieron doce mineros.",
+      "status": "unknown",
+      "next_step_known": false,
+      "visibility": "dm_only",
+      "completion_condition": "El grupo descubre y reporta qué produce los golpes en la galería sellada."
+    }
+  ],
+  "characters": [
+    {
+      "key": "pj_pj10",
+      "name": "Bexa",
+      "species": null,
+      "class": "explorador 3",
+      "hp": 28,
+      "hp_max": 28
+    }
+  ]
+}

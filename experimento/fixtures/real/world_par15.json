@@ -1,0 +1,135 @@
+{
+  "campaign": {
+    "note": "Par 15 (real) -- corpus real, no piloto. Ver experimento/corpus/real/lore_solar_viejo.md para la prosa completa.",
+    "world_tone": "heroic"
+  },
+  "locations": [
+    {
+      "key": "tierras_del_solar",
+      "kind": "region",
+      "name": "Las Tierras del Solar",
+      "parent": null,
+      "culture_overrides": {
+        "language": "común",
+        "currency": "moneda acuñada, arriendo de tierras a precio de costumbre",
+        "attitude_to_outsiders": "cortés -el pueblo entero depende de cómo se resuelva la sucesión de El Solar"
+      }
+    },
+    {
+      "key": "solar_viejo",
+      "kind": "settlement",
+      "name": "Solar Viejo",
+      "parent": "tierras_del_solar",
+      "culture_overrides": {
+        "notable_laws": "sin testamento, la costumbre del condado decide la sucesión según sangre o prohijamiento probado",
+        "attitude_to_outsiders": "cortés -el pueblo entero depende de cómo se resuelva la sucesión de El Solar",
+        "tensions": "el pueblo se ha dividido, con respeto pero sin acuerdo, entre apoyar a Herminia o a Doroteo"
+      },
+      "detail": "observed",
+      "description_canonical": "Casas de arrendatarios dispuestas en torno a los campos de El Solar, con la casa señorial visible desde cualquier punto del pueblo y luto discreto todavía colgado en varias ventanas por Doña Rosalina."
+    },
+    {
+      "key": "el_solar",
+      "kind": "building",
+      "name": "El Solar",
+      "parent": "solar_viejo",
+      "detail": "observed",
+      "description_canonical": "La casa señorial de piedra clara que da nombre al pueblo, con cinco generaciones de retratos familiares colgados en el salón principal y las llaves, por ahora, guardadas por el mayordomo hasta que el tribunal falle."
+    },
+    {
+      "key": "casa_herminia",
+      "kind": "building",
+      "name": "La Casa de Herminia",
+      "parent": "solar_viejo",
+      "detail": "sketch",
+      "sketch_text": "Una casa de arrendataria acomodada, con un árbol genealógico de la familia Solar dibujado a mano y enmarcado sobre la chimenea."
+    },
+    {
+      "key": "casa_doroteo",
+      "kind": "building",
+      "name": "La Casa de Doroteo",
+      "parent": "solar_viejo",
+      "detail": "sketch",
+      "sketch_text": "Una casa sencilla junto a los establos de El Solar, con cartas viejas de Rosalina guardadas en una caja de madera sobre la mesa."
+    },
+    {
+      "key": "capilla_familiar",
+      "kind": "building",
+      "name": "La Capilla Familiar",
+      "parent": "el_solar",
+      "detail": "sketch",
+      "sketch_text": "El panteón donde descansan cinco generaciones de la familia Solar, con la tumba de Rosalina todavía sin lápida definitiva.",
+      "visibility": "dm_only"
+    },
+    {
+      "key": "archivo_notarial",
+      "kind": "building",
+      "name": "El Archivo del Notario",
+      "parent": "solar_viejo",
+      "detail": "sketch",
+      "sketch_text": "El archivo del único notario del pueblo, con décadas de escrituras, arriendos y -quizás- algún documento de prohijamiento nunca registrado del todo.",
+      "visibility": "dm_only"
+    }
+  ],
+  "factions": [
+    {
+      "key": "reclamo_herminia",
+      "name": "El Reclamo de Herminia",
+      "description": "Herminia Solar y quienes la respaldan como heredera de sangre directa de Doña Rosalina, confiados en que la costumbre del condado falle a su favor sin necesidad de más pruebas.",
+      "seat": "casa_herminia",
+      "stance_party": 0,
+      "knows_about_party": false
+    },
+    {
+      "key": "reclamo_doroteo",
+      "name": "El Reclamo de Doroteo",
+      "description": "Doroteo Vann y quienes lo respaldan como hijo de crianza de Rosalina, buscando el documento de prohijamiento -o cualquier prueba equivalente- antes de que el tribunal falle por defecto a favor de la sangre.",
+      "seat": "casa_doroteo",
+      "stance_party": 0,
+      "knows_about_party": false
+    }
+  ],
+  "clocks": [
+    {
+      "faction": "reclamo_doroteo",
+      "agenda": "Doroteo necesita encontrar el documento de prohijamiento, o una prueba equivalente, antes de que el tribunal de sucesión del condado falle por defecto a favor de la línea de sangre",
+      "progress": 3,
+      "threshold": 10,
+      "rate_per_game_day": 0.8,
+      "on_fire_event": {
+        "headline": "El tribunal de sucesión del condado se reúne en Solar Viejo para fallar sobre El Solar",
+        "scope": "solar_viejo",
+        "consequence": "Sin pruebas nuevas presentadas a tiempo, el tribunal falla según la costumbre por defecto -lo que el grupo haya encontrado o no hasta ese momento decide si Doroteo llega siquiera a presentar su reclamo con algo más que su palabra."
+      }
+    }
+  ],
+  "quests": [
+    {
+      "key": "el_solar_disputado",
+      "title": "El Solar disputado",
+      "description": "Doña Rosalina murió sin testamento, dejando a Herminia y Doroteo con un reclamo igual de sincero sobre El Solar. El tribunal del condado fallará pronto si nadie presenta pruebas nuevas.",
+      "status": "active",
+      "next_step_known": true,
+      "completion_condition": "El grupo investiga los reclamos de ambos y actúa de forma que cambia visiblemente el resultado (encontrando pruebas, mediando entre Herminia y Doroteo, o de otra forma que surja en juego) antes de que el reloj del tribunal se dispare."
+    },
+    {
+      "key": "la_carta_perdida",
+      "title": "La carta perdida",
+      "description": "En algún lugar entre la capilla familiar y el archivo del notario podría existir todavía el documento de prohijamiento que probaría el reclamo de Doroteo.",
+      "status": "unknown",
+      "next_step_known": false,
+      "visibility": "dm_only",
+      "completion_condition": "El grupo busca en la capilla familiar y el archivo del notario y descubre si el documento de prohijamiento existe todavía."
+    }
+  ],
+  "characters": [
+    {
+      "key": "pj_pj01",
+      "name": "Ilvard",
+      "species": null,
+      "class": "paladín 3",
+      "hp": 25,
+      "hp_max": 25
+    }
+  ]
+}
