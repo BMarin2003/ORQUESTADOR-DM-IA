@@ -1,0 +1,26 @@
+{
+ "persona2": {
+  "si": 1390,
+  "no": 67374
+ },
+ "pnj": {
+  "si": 313,
+  "no_mencionado": 3433,
+  "no_sin_mencion": 31955
+ },
+ "jericho": {
+  "si": 196,
+  "no": 547
+ },
+ "jericho_campo": {
+  "si": {
+   "npc.affinity": 88,
+   "npc.status": 106,
+   "quest.status": 2
+  },
+  "no": {
+   "npc.affinity": 333,
+   "npc.status": 214
+  }
+ }
+}
