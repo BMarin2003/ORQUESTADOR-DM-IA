@@ -12,7 +12,7 @@ services:
     volumes:
       - dbdata:/var/lib/postgresql/data
       # Todo .sql aquí se ejecuta al crear el volumen por primera vez.
-      - ./migrations:/docker-entrypoint-initdb.d:ro
+      - ./motor/migrations:/docker-entrypoint-initdb.d:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres -d dmia_dev"]
       interval: 5s

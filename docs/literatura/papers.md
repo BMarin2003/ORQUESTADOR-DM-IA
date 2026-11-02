@@ -1,7 +1,7 @@
 # Papers de referencia — instrumentos de medición determinística
 
 Contexto para Claude Code: estos son los papers que respaldan cada instrumento
-determinístico implementado (o evaluado y descartado) en `orquestador/reporte_validacion.py`,
+determinístico implementado (o evaluado y descartado) en `motor/orquestador/reporte_validacion.py`,
 tal como quedaron documentados en `claude/plan-cierre-investigacion.md`
 (sección "Fase 0b — Herramientas determinísticas nuevas", research 2026-09-14).
 

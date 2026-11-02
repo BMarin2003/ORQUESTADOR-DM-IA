@@ -1,6 +1,6 @@
 # Paquete de resultados para el capítulo 6
 
-Generado por `scripts/reporte_v2/resultados_tesis.py` el 2026-10-31 00:44. Muestra: **27 parejas** (Par01-27; coincide con el N = 27 del diseño), 54 campañas de 1 400 turnos, mismo modelo y mismo agente jugador en ambos brazos, medición 100 % determinista sobre texto normalizado (se quita el formato de G1). Descriptivo: **no decide las hipótesis**; entrega las pruebas y su dirección. El uso propuesto de cada instrumento en la docimasia es una propuesta basada en la validación disponible.
+Generado por `experimento/scripts/reporte_v2/resultados_tesis.py` el 2026-10-31 00:44. Muestra: **27 parejas** (Par01-27; coincide con el N = 27 del diseño), 54 campañas de 1 400 turnos, mismo modelo y mismo agente jugador en ambos brazos, medición 100 % determinista sobre texto normalizado (se quita el formato de G1). Descriptivo: **no decide las hipótesis**; entrega las pruebas y su dirección. El uso propuesto de cada instrumento en la docimasia es una propuesta basada en la validación disponible.
 
 **Cómo leer.** Cada valor es la media de la campaña (turnos 2-1 400; `persona2` solo sobre turnos que no se usaron para construir el detector); la unidad de análisis es la **pareja**, no el juicio de un evaluador. Cuartiles con interpolación lineal. Wilcoxon de rangos con signo **exacto** (condicional a empates, ceros descartados), con p bilateral y unilateral en cada dirección, como en el capítulo actual. **↕**: ↑ mayor es mejor, ↓ menor es mejor, · sin sentido de mejora (solo bilateral). «G1 mejor» = la dirección favorable a G1 según ↕. Holm: dentro de la familia de cada hipótesis, solo entre instrumentos confirmatorios. Shapiro-Wilk con SciPy.
 
@@ -54,7 +54,7 @@ Generado por `scripts/reporte_v2/resultados_tesis.py` el 2026-10-31 00:44. Muest
 | CL-2 | Turno de la primera mención de un PNJ no vivo (1 401 = nunca) | ↑ | Exploratorio | — | mide mención; censurado en 1 401; mide mención, no acción; censurado en 1 401 |
 | OP | Segundos por turno (mediana; proxy de latencia) | ↓ | Descriptivo / no usar | — | operativo, fuera de la rúbrica; incluye al jugador LLM y la extracción; corridas concurrentes |
 
-A2 = prueba de sensibilidad por perturbación (`docs/reportes/sensibilidad_baseline.md`; CR-2a/CR-2b en `sensibilidad_a4bc.md`; persona2 en `persona2_equivalencia.md`). «—» = sin prueba. CR-2a/CR-2b y persona2 son instrumentos nuevos de esta tesis; persona2 está congelado (hashes en `validacion/persona2_congelado.sha256`).
+A2 = prueba de sensibilidad por perturbación (`docs/reportes/sensibilidad_baseline.md`; CR-2a/CR-2b en `sensibilidad_a4bc.md`; persona2 en `persona2_equivalencia.md`). «—» = sin prueba. CR-2a/CR-2b y persona2 son instrumentos nuevos de esta tesis; persona2 está congelado (hashes en `datos/validacion/persona2_congelado.sha256`).
 
 ## 1. OE-1. Evaluar la coherencia reactiva de las respuestas inmediatas generadas por el sistema monolítico (G2)
 
@@ -266,4 +266,4 @@ Nota: un mismo constructo aparece con varios instrumentos correlacionados (por e
 - Par01-17 y Par18-27 se generaron con versiones distintas del motor (sin y con avance de reloj, dados de combate y guardia de metamensajes); la columna *Lotes* marca los cambios de signo.
 - G1 tiene un agente extra que crea entidades y un formato de salida distinto (normalizado aquí). Las diferencias por instrumento son entre sistemas completos, no una ablación.
 - Par02 G2 tiene 1 668 turnos en la base; se recorta a 1 400. En Par01-06 (G2), 42 de 8 400 turnos difieren en el recuento de nombres no reconocidos entre el valor guardado y el recalculado; sin efecto material.
-- Las medidas de repetición de frases, alfabetos, estabilidad de estilo, entidades registradas y tiempo por turno (`scripts/reporte_v2/medidas_cierre.py`) no tienen prueba de sensibilidad.
+- Las medidas de repetición de frases, alfabetos, estabilidad de estilo, entidades registradas y tiempo por turno (`experimento/scripts/reporte_v2/medidas_cierre.py`) no tienen prueba de sensibilidad.

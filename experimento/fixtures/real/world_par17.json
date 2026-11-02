@@ -1,0 +1,135 @@
+{
+  "campaign": {
+    "note": "Par 17 (real) -- corpus real, no piloto. Ver experimento/corpus/real/lore_corral_alto.md para la prosa completa.",
+    "world_tone": "light"
+  },
+  "locations": [
+    {
+      "key": "valle_del_corral",
+      "kind": "region",
+      "name": "El Valle del Corral",
+      "parent": null,
+      "culture_overrides": {
+        "language": "común",
+        "currency": "moneda acuñada y trueque de lana",
+        "attitude_to_outsiders": "cordial -aunque últimamente más de uno mira dos veces a cualquier forastero nuevo"
+      }
+    },
+    {
+      "key": "corral_alto",
+      "kind": "settlement",
+      "name": "Corral Alto",
+      "parent": "valle_del_corral",
+      "culture_overrides": {
+        "notable_laws": "el alcalde se elige cada cinco años por voto del concejo de vecinos",
+        "attitude_to_outsiders": "cordial -aunque últimamente más de uno mira dos veces a cualquier forastero nuevo",
+        "tensions": "el pueblo está dividido con buen humor, pero sin acuerdo, entre Melquíades y Bibiana"
+      },
+      "detail": "observed",
+      "description_canonical": "Casas de piedra baja dispuestas alrededor de los prados comunales, carteles pintados a mano de ambos candidatos clavados en cada esquina, y ovejas que cruzan la calle principal sin que nadie se inmute."
+    },
+    {
+      "key": "salon_del_concejo",
+      "kind": "building",
+      "name": "El Salón del Concejo",
+      "parent": "corral_alto",
+      "detail": "observed",
+      "description_canonical": "El salón donde se vota cada cinco años al nuevo alcalde, con un arca de donativos de campaña en un rincón y bancos suficientes para todo el concejo de vecinos."
+    },
+    {
+      "key": "casa_melquiades",
+      "kind": "building",
+      "name": "La Casa de Melquíades",
+      "parent": "corral_alto",
+      "detail": "sketch",
+      "sketch_text": "Una casa sencilla de pastor, con un mapa de los prados altos dibujado a mano y marcado con los límites que Melquíades quiere mantener cerrados."
+    },
+    {
+      "key": "casa_bibiana",
+      "kind": "building",
+      "name": "La Casa de Bibiana",
+      "parent": "corral_alto",
+      "detail": "sketch",
+      "sketch_text": "Una casa con fardos de lana apilados junto a la puerta y un borrador del acuerdo de pastoreo compartido que Bibiana propone al valle vecino."
+    },
+    {
+      "key": "posada_del_forastero",
+      "kind": "building",
+      "name": "La Posada del Forastero",
+      "parent": "corral_alto",
+      "detail": "sketch",
+      "sketch_text": "La única posada del pueblo, donde un huésped que dice ser comerciante de paso lleva tres semanas sin viajar a ningún sitio, pagando generosamente sus cuentas.",
+      "visibility": "dm_only"
+    },
+    {
+      "key": "arca_de_donativos",
+      "kind": "building",
+      "name": "El Arca de Donativos",
+      "parent": "salon_del_concejo",
+      "detail": "sketch",
+      "sketch_text": "El arca donde se registran los donativos de campaña de ambos candidatos -con entradas recientes que ninguno de los dos sabe explicar del todo bien.",
+      "visibility": "dm_only"
+    }
+  ],
+  "factions": [
+    {
+      "key": "candidatura_melquiades",
+      "name": "La Candidatura de Melquíades",
+      "description": "Melquíades Sorna y sus simpatizantes, defensores de mantener los prados altos cerrados a rebaños forasteros como protección del valle.",
+      "seat": "casa_melquiades",
+      "stance_party": 0,
+      "knows_about_party": false
+    },
+    {
+      "key": "candidatura_bibiana",
+      "name": "La Candidatura de Bibiana",
+      "description": "Bibiana Roth y sus simpatizantes, defensores de un acuerdo de pastoreo compartido con el valle vecino a cambio de acceso a agua y mercado -reforzada últimamente por donativos que nadie ha preguntado de dónde salen.",
+      "seat": "casa_bibiana",
+      "stance_party": 0,
+      "knows_about_party": false
+    }
+  ],
+  "clocks": [
+    {
+      "faction": "candidatura_bibiana",
+      "agenda": "La votación final del concejo se acerca, mientras la candidatura de Bibiana gana terreno rápido gracias a donativos recientes cuyo origen nadie ha investigado todavía",
+      "progress": 3,
+      "threshold": 10,
+      "rate_per_game_day": 0.8,
+      "on_fire_event": {
+        "headline": "El concejo de Corral Alto vota a su nuevo alcalde",
+        "scope": "corral_alto",
+        "consequence": "Corral Alto elige alcalde con lo que el grupo haya descubierto o no hasta ese momento sobre el origen de los donativos -sin que este documento decida de antemano si la elección quedó limpia o no."
+      }
+    }
+  ],
+  "quests": [
+    {
+      "key": "la_eleccion_disputada",
+      "title": "La elección disputada",
+      "description": "Corral Alto elige nuevo alcalde en pocos días entre Melquíades y Bibiana, mientras ambas candidaturas reciben donativos que ninguna sabe explicar del todo bien.",
+      "status": "active",
+      "next_step_known": true,
+      "completion_condition": "El grupo investiga los donativos y actúa de forma que cambia visiblemente el curso de la elección (exponiendo al forastero, ayudando a un candidato de buena fe, o de otra forma que surja en juego) antes de que el reloj de la votación se dispare."
+    },
+    {
+      "key": "la_posada_del_forastero",
+      "title": "La Posada del Forastero",
+      "description": "Un huésped que dice ser comerciante de paso lleva tres semanas en Corral Alto sin viajar a ningún sitio, compartiendo rondas con concejales de ambos bandos.",
+      "status": "unknown",
+      "next_step_known": false,
+      "visibility": "dm_only",
+      "completion_condition": "El grupo investiga al forastero de la posada y descubre quién financia realmente la elección y con qué intención."
+    }
+  ],
+  "characters": [
+    {
+      "key": "pj_pj22",
+      "name": "Wynn",
+      "species": null,
+      "class": "pícaro 3",
+      "hp": 21,
+      "hp_max": 21
+    }
+  ]
+}

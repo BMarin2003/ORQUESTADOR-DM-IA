@@ -1,5 +1,5 @@
 {
- "descripcion": "Lista de verificación hacia el informe final de tesis. Secuencia acordada: 1) resultados listos para plasmar, 2) documentar la metodología nueva, 3) docimasia de hipótesis, 4) analizar y cerrar brechas, 5) auditoría con humano y asesor. Editar 'estado' y volver a correr scripts/reporte_v2/consolidar.py. 'auto' marca solo al existir los archivos; 'depende' solo cuenta si sus dependencias están hechas.",
+ "descripcion": "Lista de verificación hacia el informe final de tesis. Secuencia acordada: 1) resultados listos para plasmar, 2) documentar la metodología nueva, 3) docimasia de hipótesis, 4) analizar y cerrar brechas, 5) auditoría con humano y asesor. Editar 'estado' y volver a correr experimento/scripts/reporte_v2/consolidar.py. 'auto' marca solo al existir los archivos; 'depende' solo cuenta si sus dependencias están hechas.",
  "umbral": "Resultados plasmables y documentables = todos los ítems de la fase «resultados» hechos (bloques A, B y R).",
  "fases": [
   [
@@ -80,7 +80,7 @@
    "quien": "claude",
    "fase": "resultados",
    "auto": {
-    "patron": "datos_v2/par*_G?.csv",
+    "patron": "datos/datos_v2/par*_G?.csv",
     "total": 54
    }
   },
@@ -92,7 +92,7 @@
    "quien": "claude",
    "fase": "resultados",
    "auto": {
-    "patron": "datos_v2/booleanos/par*_G?.csv",
+    "patron": "datos/datos_v2/booleanos/par*_G?.csv",
     "total": 54
    }
   },
@@ -104,7 +104,7 @@
    "quien": "claude",
    "fase": "resultados",
    "auto": {
-    "patron": "datos_v2/persona2/par*_G?.csv",
+    "patron": "datos/datos_v2/persona2/par*_G?.csv",
     "total": 54
    }
   },
@@ -116,7 +116,7 @@
    "quien": "claude",
    "fase": "resultados",
    "auto": {
-    "patron": "datos_v2/campana/par*_G?.json",
+    "patron": "datos/datos_v2/campana/par*_G?.json",
     "total": 54
    }
   },
@@ -140,7 +140,7 @@
    "quien": "claude",
    "fase": "resultados",
    "auto": {
-    "patron": "datos_v2/cierre/por_campana.csv",
+    "patron": "datos/datos_v2/cierre/por_campana.csv",
     "total": 1
    }
   },
@@ -277,7 +277,7 @@
   {
    "id": "P4",
    "bloque": "P. Auditoría con humano y asesor (después)",
-   "texto": "Análisis de precisión y acuerdo de persona2 (scripts/analizar_persona2.py)",
+   "texto": "Análisis de precisión y acuerdo de persona2 (experimento/scripts/analizar_persona2.py)",
    "estado": "pendiente",
    "quien": "claude",
    "fase": "posterior",

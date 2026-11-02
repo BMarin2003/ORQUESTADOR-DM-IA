@@ -29,7 +29,7 @@ Jericho-QA es léxico: busca raíces como «muert…» o «desconf…». La prue
 
 ## Prueba de sensibilidad (A2), prerregistrada
 
-Las expectativas se sellan con SHA-256 antes de correr. Las perturbaciones se aplican en memoria, sin escribir en la base. La estadística es la de `scripts/sensibilidad/estadistica.py`: diferencia pareada del margen, delta de Cliff pareado ≥ 0.147, prueba de signos exacta y Holm por familia.
+Las expectativas se sellan con SHA-256 antes de correr. Las perturbaciones se aplican en memoria, sin escribir en la base. La estadística es la de `experimento/scripts/sensibilidad/estadistica.py`: diferencia pareada del margen, delta de Cliff pareado ≥ 0.147, prueba de signos exacta y Holm por familia.
 
 | Código | Perturbación | Esperado |
 |---|---|---|
@@ -45,23 +45,23 @@ Con la paráfrasis de SQ1 se registra también el veredicto de Jericho, para mos
 ```powershell
 docker compose up -d                                   # base levantada
 py -m pip install sentence-transformers huggingface_hub
-py -m pytest scripts/semantico/test_semantico.py -q    # pruebas unitarias (sin base ni modelo)
+py -m pytest experimento/scripts/semantico/test_semantico.py -q    # pruebas unitarias (sin base ni modelo)
 
 $env:PYTHONUTF8="1"
-py scripts/semantico/embeber_corpus.py --solo-contar   # cuántas oraciones hay (no carga el modelo)
-py scripts/semantico/embeber_corpus.py --pares 07      # prueba con un par: mide el tiempo real
-py scripts/semantico/embeber_corpus.py                 # las 27 parejas (reanudable; horas en CPU)
-py scripts/semantico/recall_semantico.py               # mide y compara G1 - G2
-py scripts/semantico/sensibilidad_semantico.py         # prueba A2
+py experimento/scripts/semantico/embeber_corpus.py --solo-contar   # cuántas oraciones hay (no carga el modelo)
+py experimento/scripts/semantico/embeber_corpus.py --pares 07      # prueba con un par: mide el tiempo real
+py experimento/scripts/semantico/embeber_corpus.py                 # las 27 parejas (reanudable; horas en CPU)
+py experimento/scripts/semantico/recall_semantico.py               # mide y compara G1 - G2
+py experimento/scripts/semantico/sensibilidad_semantico.py         # prueba A2
 ```
 
-- La primera ejecución descarga bge-m3 (unos 2.3 GB) y crea `medicion_oraciones` aplicando `migrations/002_medicion_semantica.sql`.
+- La primera ejecución descarga bge-m3 (unos 2.3 GB) y crea `medicion_oraciones` aplicando `motor/migrations/002_medicion_semantica.sql`.
 - Para deshacer todo: `DROP TABLE medicion_oraciones;`
 
 ## Salidas
 
-- `datos_v2/semantico/eventos.csv`: un evento por fila, con s_real, q95, margen, z, p empírico, reconocido y el veredicto de Jericho para el mismo evento.
-- `datos_v2/semantico/por_campana.csv`: recall semántico y léxico por campaña y por familia.
+- `datos/datos_v2/semantico/eventos.csv`: un evento por fila, con s_real, q95, margen, z, p empírico, reconocido y el veredicto de Jericho para el mismo evento.
+- `datos/datos_v2/semantico/por_campana.csv`: recall semántico y léxico por campaña y por familia.
 - `docs/reportes/semantico/cl2_recall_semantico.md`: recall por familia, acuerdo con Jericho y comparación pareada G1 − G2 (Wilcoxon exacto, Hodges-Lehmann con IC bootstrap, r de Kerby).
 - `docs/reportes/semantico/sensibilidad_semantico.{md,csv,json}`: la prueba A2, con su hash.
 - `docs/reportes/semantico/manifiesto_embeddings.json`: modelo, commit, regla de división y, por campaña, el número de oraciones y el SHA-256 de su contenido.

@@ -389,7 +389,7 @@ ALGORITMO
 4. altera_estado := true si tiradas no está vacío, o si acción/diálogo
    contiene verbos de la lista de intención (atacar, robar, prometer,
    amenazar, sobornar, entregar, revelar — lista abierta, se amplía con
-   los eventos del contrato del extractor en extractor/contrato.json).
+   los eventos del contrato del extractor en motor/extractor/contrato.json).
 
 5. Si pnj_que_responden == [] y no hay pregunta ni tirada:
      último_ambiental := turno más reciente con modo=ambiental en
@@ -431,7 +431,7 @@ draft anterior (un solo prompt combinado, abajo sustituido) mezclaba
 aritmética que ya resuelve `dados.py` con juicio real. Se separan en dos
 piezas:
 
-1. **Camino mecánico — `orquestador/arbitro.py`, función pura
+1. **Camino mecánico — `motor/orquestador/arbitro.py`, función pura
    `resolver_veredicto()`, sin LLM.** Cuando el buffer ya trae una tirada
    resuelta `(resultado: N ...)`, comparar contra una CD y devolver el
    veredicto es aritmética, no juicio — igual que el Router, no hay
@@ -456,7 +456,7 @@ piezas:
      objeto se usó. Se resuelve cuando el Mundo (dueño de `apply_delta`
      sobre inventario) esté conectado — no antes.
 
-2. **Camino de juicio — `dm/prompt_arbitro_g1.md`, sí llama al modelo.**
+2. **Camino de juicio — `motor/dm/prompt_arbitro_g1.md`, sí llama al modelo.**
    Cubre solo lo que el código no puede decidir:
    - **Modo tutor** (OOC-1 a OOC-6): el jugador escribió `[corchetes]`.
      Responde claro, sin prosa evocadora, propone alternativas, corrige
@@ -472,7 +472,7 @@ piezas:
      orquestador pida la tirada, en vez de fabricar un resultado.
 
 **Fix de nombre (colisión con el Narrador):** el draft anterior trataba
-`veredicto` como un campo plano más entre varios. `dm/prompt_narrador_g1.md`
+`veredicto` como un campo plano más entre varios. `motor/dm/prompt_narrador_g1.md`
 espera un fragmento *anidado* llamado `veredicto` que agrupa
 `resultado`, `cd`, `correccion_al_jugador` (ver su sección "FRAGMENTOS QUE
 RECIBES"). Se resuelve haciendo que `veredicto` sea el nombre del objeto
@@ -495,8 +495,8 @@ SALIDA — modo tutor (va directo al jugador, no al Narrador):
   respuesta
 ```
 
-Verificación: `orquestador/probar_arbitro.py` (11 casos puros, sin DB ni
-red, cubre el camino mecánico completo) y `orquestador/verificar_arbitro.py`
+Verificación: `legacy/orquestador/probar_arbitro.py` (11 casos puros, sin DB ni
+red, cubre el camino mecánico completo) y `legacy/orquestador/verificar_arbitro.py`
 (llama al modelo real, cubre los dos modos del camino de juicio —
 mismo patrón que `verificar_fugas_narrador.py`: fuga de prompt + forma de
 la salida verificadas en código, calidad de la respuesta a ojo).
@@ -517,7 +517,7 @@ ambos a la vez, en capas distintas:
   que los juzgue) y el IBF (`npc_ibf`). Un actor único los interpreta;
   la consistencia es propiedad del registro, no del modelo.
 - **Varios ejemplos que cubran el rango** se añadieron directamente en
-  `dm/prompt_actor_g1.md`: una matriz de reacciones marcadas
+  `motor/dm/prompt_actor_g1.md`: una matriz de reacciones marcadas
   explícitamente como ilustración de la función eje→reacción (no líneas
   para reciclar), cubriendo los extremos de `principle` y `boldness`
   frente a los mismos tres disparadores del draft original (soborno,
@@ -539,7 +539,7 @@ a alguien audaz sube el respeto y baja el aprecio; amenaza a alguien
 temeroso contamina la relación con miedo; tocar un vínculo del IBF vale
 igual para todos, el vínculo ya es el modulador. Techo de confianza fijo,
 la confianza cae más rápido de lo que sube, secretos solo bajo condición
-declarada (ver `dm/prompt_actor_g1.md` para el texto completo con la
+declarada (ver `motor/dm/prompt_actor_g1.md` para el texto completo con la
 matriz de ejemplos).
 
 HERRAMIENTAS: `get_persona` (solo la ficha del propio personaje).
@@ -549,7 +549,7 @@ SALIDA (objeto):
   linea, entrega, se_niega_a
 ```
 
-Verificación: `orquestador/verificar_colapso_actor.py` — mismo patrón que
+Verificación: `legacy/orquestador/verificar_colapso_actor.py` — mismo patrón que
 los verificadores anteriores (llama al modelo real), pero en vez de
 buscar solo fuga de prompt, mide superposición léxica (Jaccard) entre
 pares de PNJ con ejes opuestos frente al mismo disparador: una
@@ -570,9 +570,9 @@ sean garantía del sistema, no memoria del modelo (`QM - Lecciones de
 ingeniería` §3: "si el modelo tiene que adivinar algo que la base sabe,
 dáselo"). Por eso, igual que Router y Árbitro, se separa en dos piezas:
 
-1. **Camino mecánico — `orquestador/mundo.py`, función pura
+1. **Camino mecánico — `motor/orquestador/mundo.py`, función pura
    `resolver_mundo()`, sin LLM**, más los métodos nuevos de
-   `orquestador/db.py` (`avanzar_relojes`, `lugar_estado`, `fijar_lugar`,
+   `motor/orquestador/db.py` (`avanzar_relojes`, `lugar_estado`, `fijar_lugar`,
    `semillas_sin_ubicar`, `plantar_semilla`) que leen/escriben lo que el
    modelo entidad+delta no cubre directamente:
    - **MUN-1/MUN-2 (relojes):** `avanzar_relojes()` envuelve
@@ -592,7 +592,7 @@ dáselo"). Por eso, igual que Router y Árbitro, se separa en dos piezas:
    - **MUN-3 (semillas):** `semillas_sin_ubicar()` expone las candidatas
      sin plantar (FIFO); el código nunca decide POR SÍ SOLO plantarlas --
      eso sigue siendo juicio del LLM (¿encaja en la escena actual?).
-2. **Camino de juicio — `dm/prompt_mundo_g1.md`, sí llama al modelo.**
+2. **Camino de juicio — `motor/dm/prompt_mundo_g1.md`, sí llama al modelo.**
    Solo se invoca cuando `resolver_mundo()` dice `necesita_llm=True`.
    Cubre: el texto del boceto (trazo grueso o fijado, según lo que el
    código ya decidió); si la semilla candidata encaja en la escena
@@ -614,9 +614,9 @@ salida propia, solo alimenta las claves ya resueltas al Narrador):
   boceto, semilla_plantada, propagacion_sugerida, deltas
 ```
 
-Verificación: `orquestador/probar_mundo.py` (10 casos puros, sin DB ni
+Verificación: `legacy/orquestador/probar_mundo.py` (10 casos puros, sin DB ni
 red, cubre relojes/lugares/semillas del camino mecánico) y
-`orquestador/verificar_mundo.py` (llama al modelo real: boceto de trazo
+`legacy/orquestador/verificar_mundo.py` (llama al modelo real: boceto de trazo
 grueso vs. boceto que se fija, semilla que NO debe forzarse, propagación
 con razón declarada -- mismo patrón que los verificadores anteriores).
 

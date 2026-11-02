@@ -41,8 +41,8 @@ Comparación descriptiva: en SC1 y SC2 se calcula también la decisión de la v1
 
 ## Archivos
 
-- `scripts/semantico/condicionado.py`: alias, SQL condicionado, decisión v2.
-- `scripts/semantico/sensibilidad_semantico_v2.py`: A2 v2.
+- `experimento/scripts/semantico/condicionado.py`: alias, SQL condicionado, decisión v2.
+- `experimento/scripts/semantico/sensibilidad_semantico_v2.py`: A2 v2.
 - Salida: `docs/reportes/semantico/sensibilidad_semantico_v2.{md,csv,json}`.
 
 ## Lectura fijada de antemano

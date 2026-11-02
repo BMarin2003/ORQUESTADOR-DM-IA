@@ -8,16 +8,16 @@ Orden fijado: (1) este documento y la matriz con su hash; (2) pruebas; (3) `lema
 
 | paso | archivo | estado |
 |---|---|---|
-| matriz + hash | `scripts/instrumentos/matriz_a4bc.py`, `test_matriz_a4bc.py` (7 pruebas) | HECHO (escrita 2026-09-20 21:21, antes de programar los instrumentos) |
+| matriz + hash | `experimento/scripts/instrumentos/matriz_a4bc.py`, `test_matriz_a4bc.py` (7 pruebas) | HECHO (escrita 2026-09-20 21:21, antes de programar los instrumentos) |
 | este documento | `docs/research/a4bc_diseno_instrumentos.md` | HECHO |
-| léxico común | `scripts/instrumentos/lemas_es.py` + `test_lemas_es.py` | pendiente (ver sección 9) |
+| léxico común | `experimento/scripts/instrumentos/lemas_es.py` + `test_lemas_es.py` | pendiente (ver sección 9) |
 | CR-2a | `respuesta_accion.py` + `test_respuesta_accion.py` | pendiente |
 | CR-2b | `anclaje_escenario.py` + `test_anclaje_escenario.py` | pendiente |
 | perturbaciones nuevas | `perturbaciones_a4bc.py` + prueba | pendiente |
 | corridas | `correr_a4bc.py` | pendiente |
 | informe | `docs/reportes/sensibilidad_a4bc.md` | pendiente |
 
-Solo se crean archivos nuevos (más una caché en `scripts/instrumentos/_cache/`). No se edita el arnés (`scripts/sensibilidad/`), ni `persona2.py`, ni la base (solo SELECT; conexión `read_only`). Sin LLM ni APIs.
+Solo se crean archivos nuevos (más una caché en `experimento/scripts/instrumentos/_cache/`). No se edita el arnés (`experimento/scripts/sensibilidad/`), ni `persona2.py`, ni la base (solo SELECT; conexión `read_only`). Sin LLM ni APIs.
 
 ## 1. Constructo y datos
 
@@ -35,7 +35,7 @@ Datos: `turn_log(campaign_id, turn_id, player_buffer, dm_output)`; 21 pares = 42
 
 ### 2.1 Preprocesamiento común (`lemas_es.py`)
 
-1. **Limpieza de formato**: `prosa(texto, "G1")` de `scripts/validacion_generar.py` sobre TODO texto antes de medir. Para G1 quita las etiquetas y el bloque `mecanica` (deja `narrativa` y `presion`); en un texto de G2 sin etiquetas es solo `strip()` (idéntico a `prosa(t, "G2")`). Se usa siempre la variante «G1» para que un texto con formato inyectado (P11a en G2) se limpie igual; por eso P11 es un invariante exacto por construcción.
+1. **Limpieza de formato**: `prosa(texto, "G1")` de `experimento/scripts/validacion_generar.py` sobre TODO texto antes de medir. Para G1 quita las etiquetas y el bloque `mecanica` (deja `narrativa` y `presion`); en un texto de G2 sin etiquetas es solo `strip()` (idéntico a `prosa(t, "G2")`). Se usa siempre la variante «G1» para que un texto con formato inyectado (P11a en G2) se limpie igual; por eso P11 es un invariante exacto por construcción.
 2. **Lematización**: spaCy `es_core_news_sm` 3.8.0 (spaCy 3.8.16), con `parser` y `ner` desactivados (no se usan; bastan `tok2vec`, `morphologizer`, `attribute_ruler`, `lemmatizer`).
 3. **Unidad léxica** («lema de contenido»): token con POS en el conjunto de la variante, `is_stop` falso, lema = primera palabra del lema de spaCy (los clíticos salen como «tomar él»), **clave = minúsculas sin tildes** (NFD sin marcas), solo letras, longitud ≥ 3.
 4. **POS**: `respuesta_accion` usa {NOUN, VERB, ADJ}. `anclaje` con nombres usa {NOUN, VERB, ADJ, PROPN}. `anclaje` «sin nombres» (sn) usa {NOUN, VERB, ADJ} menos los lemas que aparecen en los nombres del escenario (localizaciones, facciones, PNJ, PJ) de los fixtures.
@@ -76,9 +76,9 @@ Datos: `turn_log(campaign_id, turn_id, player_buffer, dm_output)`; 21 pares = 42
 
 ## 3. Perturbaciones
 
-Reutilizadas del arnés (`scripts/sensibilidad/perturbaciones.py`): **P5** (nombres inventados), **P6** (barajar palabras en minúscula en ~30 % de oraciones), **P8** (narración de otro par), **P9** (permutación de una ventana de 8), **P11a/P11b** (inyectar/quitar formato de G1).
+Reutilizadas del arnés (`experimento/scripts/sensibilidad/perturbaciones.py`): **P5** (nombres inventados), **P6** (barajar palabras en minúscula en ~30 % de oraciones), **P8** (narración de otro par), **P9** (permutación de una ventana de 8), **P11a/P11b** (inyectar/quitar formato de G1).
 
-Nuevas (`scripts/instrumentos/perturbaciones_a4bc.py`; solo cambian el texto de la respuesta; la acción y el escenario quedan fijos):
+Nuevas (`experimento/scripts/instrumentos/perturbaciones_a4bc.py`; solo cambian el texto de la respuesta; la acción y el escenario quedan fijos):
 - **X1_misma_campana_lejana**: sustituye la respuesta por la de otro turno de la MISMA campaña a 50 o más turnos (control positivo de respuesta_accion; control «sin cambio» de anclaje).
 - **X2_misma_campana_cercana**: ídem a 3-10 turnos (misma escena).
 - **C1_reorden_oraciones**: reordena aleatoriamente las oraciones de la narración (control invariante). Interpreto «reordenar sinónimos» del encargo como reordenar contenido léxico sin sustituirlo; la sustitución real por sinónimos es S1.
@@ -88,7 +88,7 @@ Nuevas (`scripts/instrumentos/perturbaciones_a4bc.py`; solo cambian el texto de 
 
 ## 4. MATRIZ DE EXPECTATIVAS PRE-ESPECIFICADA
 
-Fuente de verdad: `scripts/instrumentos/matriz_a4bc.py` (`MATRIZ`; `hash_matriz()`). Dirección en el vocabulario del arnés (↓ baja, ↑ sube, = sin cambio). `≥x` = magnitud mínima de |mediana de la diferencia pareada (después − antes)|; unidades: z (cr2a_z, cr2a_z_ventana8), puntos de Ochiai (cr2a_crudo), puntos de coseno (cr2b_*). «exacto» = diferencia 0 en el 100 % de pares. «(desc.)» = sin veredicto.
+Fuente de verdad: `experimento/scripts/instrumentos/matriz_a4bc.py` (`MATRIZ`; `hash_matriz()`). Dirección en el vocabulario del arnés (↓ baja, ↑ sube, = sin cambio). `≥x` = magnitud mínima de |mediana de la diferencia pareada (después − antes)|; unidades: z (cr2a_z, cr2a_z_ventana8), puntos de Ochiai (cr2a_crudo), puntos de coseno (cr2b_*). «exacto» = diferencia 0 en el 100 % de pares. «(desc.)» = sin veredicto.
 
 | perturbación | `cr2a_z` | `cr2a_crudo` | `cr2a_z_ventana8` | `cr2b_cos_turno` | `cr2b_cos_turno_sn` | `cr2b_cos_ventana8` | `cr2b_cos_ventana8_sn` |
 |---|---|---|---|---|---|---|---|
@@ -224,14 +224,14 @@ Tests con nulos por permutación y coherencia por permutación:
 
 ## 8. Referencia rápida de archivos
 
-`scripts/instrumentos/`: `matriz_a4bc.py`, `test_matriz_a4bc.py`, `lemas_es.py`, `respuesta_accion.py`, `anclaje_escenario.py`, `perturbaciones_a4bc.py`, `correr_a4bc.py` y sus pruebas; caché de lemas en `scripts/instrumentos/_cache/`. Informe: `docs/reportes/sensibilidad_a4bc.md` (+ `.csv`).
+`experimento/scripts/instrumentos/`: `matriz_a4bc.py`, `test_matriz_a4bc.py`, `lemas_es.py`, `respuesta_accion.py`, `anclaje_escenario.py`, `perturbaciones_a4bc.py`, `correr_a4bc.py` y sus pruebas; caché de lemas en `experimento/scripts/instrumentos/_cache/`. Informe: `docs/reportes/sensibilidad_a4bc.md` (+ `.csv`).
 
 ## 9. Apéndice «post hoc» y registro de avance
 
 ### 9.1 Versión a4bc-2 (registrada 2026-09-20 23:39, ANTES de correr la evaluación)
 
 - **Qué se vio**: la corrida de DESARROLLO con `a4bc-1` (`docs/reportes/sensibilidad_a4bc_desarrollo_a4bc-1.md`; 11 pares de desarrollo, semilla 20260919, 150 turnos por brazo + 60 ventanas) mostró que, en G2, cinco celdas direccionales tenían un efecto menor que el estimado con el borrador agrupado de ambos brazos, y la regla del §5 (`min` ≤ 0,5 × |mediana|, con el brazo de menor efecto) no se cumplía: cr2b_cos_turno/P8 (G2: −0,0064), cr2b_cos_ventana8/W1 (−0,0144), cr2b_cos_ventana8_sn/W1 (−0,0054), cr2a_crudo/X2 (−0,0770) y cr2a_z_ventana8/P9 (−1,373 en G1; celda no medida en el borrador). La regla se extendió a todas las celdas direccionales medidas en desarrollo.
-- **Qué cambió** (`scripts/instrumentos/matriz_a4bc_v2.py`, solo `min`): cr2a_crudo/X2 0,04 → 0,035; cr2b_cos_turno/P8 0,005 → 0,003; cr2b_cos_ventana8/W1 0,01 → 0,007; cr2b_cos_ventana8_sn/W1 0,003 → 0,0025; cr2a_z_ventana8/P9 1,0 → 0,5. Direcciones, controles, celdas exactas/descriptivas, justificaciones y criterios: sin cambios.
+- **Qué cambió** (`experimento/scripts/instrumentos/matriz_a4bc_v2.py`, solo `min`): cr2a_crudo/X2 0,04 → 0,035; cr2b_cos_turno/P8 0,005 → 0,003; cr2b_cos_ventana8/W1 0,01 → 0,007; cr2b_cos_ventana8_sn/W1 0,003 → 0,0025; cr2a_z_ventana8/P9 1,0 → 0,5. Direcciones, controles, celdas exactas/descriptivas, justificaciones y criterios: sin cambios.
 - **Hash a4bc-2**: `e1570cad2f6b593c1cb418ccbc2f22210cedb24c64bc66f9db7a699579078744` (prueba en `test_matriz_a4bc_v2.py`; `a4bc-1` queda como histórico: `67e6133a…c54e`). Con a4bc-2, la corrida de desarrollo cumple la regla en todas las celdas (`sensibilidad_a4bc_desarrollo.md`).
 - **Qué NO se cambió, aunque el desarrollo lo sugería**: en desarrollo varios controles «=» no exactos fallan por la regla del arnés (cuenta signos, no magnitudes), casi todos con un desplazamiento mediano < 2 % (etiqueta post hoc de lectura, añadida al informe; no cambia el criterio ni los conteos), y algunas celdas de la variante `_sn` (P8 por turno; W1 por ventana en G2) no son significativas. Las direcciones esperadas se conservan tal como se pre-especificaron; esos casos se informarán como hallazgos en la evaluación.
 - Corrección de descripción: en §5 el efecto del borrador agrupaba ambos brazos; la calibración vigente usa el brazo de menor efecto.
@@ -240,5 +240,5 @@ Tests con nulos por permutación y coherencia por permutación:
 - 2026-09-20 21:21 — matriz `a4bc-1` y su prueba de hash en disco (antes de programar los instrumentos).
 - 2026-09-20 23:1x — documento de diseño redactado.
 - 2026-09-20 23:3x — HECHO con pruebas escritas antes (rojo verificado, luego verde): `lemas_es.py`, `respuesta_accion.py`, `anclaje_escenario.py`, `perturbaciones_a4bc.py`, `contexto_a4bc.py`, `correr_a4bc.py` (103+ pruebas); caché de lemas de las 42 campañas (~13 min); corrida de desarrollo a4bc-1 y registro de a4bc-2 (9.1).
-- 2026-09-20 23:42-23:44 — corrida de EVALUACIÓN con `a4bc-2` (muestra del arnés, semilla 20260920) EJECUTADA (una vez): `python scripts/instrumentos/correr_a4bc.py`. Salida: `docs/reportes/sensibilidad_a4bc.md` (+ `.csv`, `_distribucion.csv`). Se ejecuta una sola vez por versión.
+- 2026-09-20 23:42-23:44 — corrida de EVALUACIÓN con `a4bc-2` (muestra del arnés, semilla 20260920) EJECUTADA (una vez): `python experimento/scripts/instrumentos/correr_a4bc.py`. Salida: `docs/reportes/sensibilidad_a4bc.md` (+ `.csv`, `_distribucion.csv`). Se ejecuta una sola vez por versión.
 - 2026-09-20 23:5x — informe escrito con lectura a mano (`docs/reportes/sensibilidad_a4bc.md` §6). Resultado: 64 celdas aprobadas, 18 fallan, 4 descriptivas. Todos los controles positivos direccionales de cr2a_z/cr2a_crudo/z_ventana8 y de cr2b (cos con y sin nombres, ventana) aprobados salvo `cr2b_cos_turno_sn` ante P8 en G1; fallan sobre todo controles «=» por la regla de signos del arnés (11 de 17 con efecto < 2 %) y `cr2b_cos_turno_sn` ante P5 (sube, error de pre-especificación). cr2a_z no capta la deriva (plano); el anclaje cae, sostenido sobre todo por nombres. ESTADO: completo; pendiente solo revisión humana.

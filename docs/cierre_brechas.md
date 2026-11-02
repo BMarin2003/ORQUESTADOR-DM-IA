@@ -2,7 +2,7 @@
 
 > **Borrador, no usar todavía.** Las 28 brechas (7 objetivos × 4) salen de un análisis previo hecho con otros resultados y con siete objetivos; la tesis tiene seis. Las brechas se rehacen después de plasmar los resultados y hacer la docimasia. Las tres listas y los anexos siguen siendo válidos como datos; la matriz de brechas y su porcentaje no.
 
-Muestra: 27 parejas (Par01-27), 54 campañas, 75 600 turnos (1 400 por campaña); mismo modelo y mismo agente jugador en ambos brazos; medición 100 % determinista sobre texto normalizado, sin evaluadores humanos. Todas las cifras salen de `docs/reportes/consolidado_v2.csv` y `datos_v2/cierre/` (`scripts/reporte_v2/`); son **descriptivas** y **posteriores (post hoc)** en lo que corrige instrumentos.
+Muestra: 27 parejas (Par01-27), 54 campañas, 75 600 turnos (1 400 por campaña); mismo modelo y mismo agente jugador en ambos brazos; medición 100 % determinista sobre texto normalizado, sin evaluadores humanos. Todas las cifras salen de `docs/reportes/consolidado_v2.csv` y `datos/datos_v2/cierre/` (`experimento/scripts/reporte_v2/`); son **descriptivas** y **posteriores (post hoc)** en lo que corrige instrumentos.
 
 **Alcance.** Los instrumentos deterministas miden proxies de las dimensiones de la rúbrica (diversidad léxica, anclaje léxico, menciones, cumplimiento de la regla de oro del prompt). No miden interés, creatividad ni voz del personaje, y varios detectores tienen la precisión sin auditar (se indica en cada fila). Una diferencia entre brazos **no implica superioridad**. Los resultados del panel humano sobre 3 campañas G2 (orquestador anterior) no se mezclan con estos: escala y método distintos.
 
@@ -121,7 +121,7 @@ Nota OE-1: la SLR es un producto de redacción; los resultados deterministas no 
 | 1 | Faltan experimentos controlados que aíslen la arquitectura como única variable | Diseño de 27 parejas con el mismo modelo (google/gemma-4-31B-it), el mismo lore, el mismo personaje y el mismo agente jugador en ambos brazos (`docs/descomposicion_prompts.md`, auditoría de paridad G1/G2). El formato de salida de G1 se normalizó y se cuantificó su efecto (`docs/reportes/reporte_v2_formato_normalizado.md`). Par01-17 y Par18-27 usan versiones distintas del motor y se analizan por lote. | **CERRADA** | — |
 | 2 | Se ignora el efecto de la latencia de la negociación entre agentes sobre la fluidez | Tiempo por turno: G1 29.9 vs G2 14.0 (HL G1−G2 +16.1; r +1.00; p Holm 5.4e-07; 27 parejas). Fluidez (gramaticalidad, techo): G1 0.9993 vs G2 0.9992 (HL G1−G2 +0.0001; r +0.28; p Holm 1; 27 parejas). Caracteres de otro alfabeto: G1 0.09 % vs G2 0.10 % (HL G1−G2 -0.04 pp; r -0.15; p Holm 1; 27 parejas). La latencia es un proxy de tiempo de pared con corridas concurrentes. | **CERRADA** | — |
 | 3 | Sin evidencia de que un agente supervisor elimine los placeholders | Frases idénticas repetidas: G1 3.29 % vs G2 0.31 % (HL G1−G2 +1.96 pp; r +0.95; p Holm 1.3e-05; 27 parejas); G1 repite más, no menos (Anexo C: «La paciencia de … se ha agotado», hasta 95 veces en una campaña). Respuesta a la acción: G1 2.69 vs G2 2.82 (HL G1−G2 -0.13; r -0.47; p Holm 0.5; 27 parejas); anclaje: G1 0.134 vs G2 0.076 (HL G1−G2 +0.059; r +0.83; p Holm 0.0011; 27 parejas). No hay ablación del supervisor: la comparación es entre sistemas completos. | **PARCIAL** | Ablación del supervisor (fuera del alcance) o declarar. |
-| 4 | Sin estudios inferenciales no paramétricos sobre pares de transcripciones | Wilcoxon exacto sobre las diferencias por pareja, Hodges-Lehmann con IC bootstrap sobre parejas, correlación rank-biserial pareada y corrección de Holm (`scripts/reporte_v2/consolidar.py`). El doble ciego humano no aplica a la medición determinista. | **CERRADA** | — |
+| 4 | Sin estudios inferenciales no paramétricos sobre pares de transcripciones | Wilcoxon exacto sobre las diferencias por pareja, Hodges-Lehmann con IC bootstrap sobre parejas, correlación rank-biserial pareada y corrección de Holm (`experimento/scripts/reporte_v2/consolidar.py`). El doble ciego humano no aplica a la medición determinista. | **CERRADA** | — |
 
 ### OE-6. Comparación de la coherencia longitudinal entre arquitecturas
 
@@ -192,8 +192,8 @@ Anclaje al escenario y respuesta a la acción por ventana de 200 turnos: `docs/r
 
 ### Anexo D. Trazabilidad y advertencias
 
-- Detector `persona2` v2b congelado (hashes en `validacion/persona2_congelado.sha256`); matriz de CR-2a/CR-2b a4bc-2, SHA-256 `e1570cad2f6b593c1cb418ccbc2f22210cedb24c64bc66f9db7a699579078744`.
+- Detector `persona2` v2b congelado (hashes en `datos/validacion/persona2_congelado.sha256`); matriz de CR-2a/CR-2b a4bc-2, SHA-256 `e1570cad2f6b593c1cb418ccbc2f22210cedb24c64bc66f9db7a699579078744`.
 - Par02 G2 tiene 1 668 turnos en la base; todos los cálculos se recortan a 1 400.
 - Sanidad del recálculo: en G2 (donde la normalización es la identidad) v1 = v2 en Par07-27 (0 discrepancias en 29 400 turnos por instrumento); en Par01-06, 42 de 8 400 turnos difieren en el recuento de nombres no reconocidos y 2 en la densidad del grafo (reconstrucción de entidades de un motor previo), sin efecto material.
 - Par01-17 se generaron con el motor sin avance de reloj ni guardia de metamensajes; Par18-27 con reloj determinista, dados de combate y guardia. Cada resultado del consolidado muestra el HL por lote y marca los cambios de signo.
-- Las medidas del Anexo A-C (`scripts/reporte_v2/medidas_cierre.py`) no tienen prueba de sensibilidad: son medidas simples y transparentes.
+- Las medidas del Anexo A-C (`experimento/scripts/reporte_v2/medidas_cierre.py`) no tienen prueba de sensibilidad: son medidas simples y transparentes.
