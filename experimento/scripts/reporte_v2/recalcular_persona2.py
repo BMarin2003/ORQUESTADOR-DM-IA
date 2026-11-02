@@ -30,15 +30,27 @@ PRIM = ["VOLICION", "COGNICION", "EMOCION", "HABLA"]
 COLUMNAS = ["turn_id", "en_desarrollo", "primaria"] + PRIM + ["secundaria", "muerte"]
 
 
-def congelado_ok():
-    """Verifica que persona2.py y el léxico siguen siendo los congelados."""
+def hashes_aceptados():
+    """{ruta actual: {hashes}} del manifiesto congelado (rutas anteriores a la reorganización) y de sus equivalentes documentados."""
     ref = {}
-    for linea in (RAIZ / "datos" / "validacion" / "persona2_congelado.sha256").read_text(encoding="utf-8").splitlines():
-        if linea and not linea.startswith("#"):
-            h, ruta = linea.split(None, 1)
-            ref[ruta.strip().lstrip("*")] = h
+    for nombre in ("persona2_congelado.sha256", "persona2_congelado_equivalentes.sha256"):
+        for linea in (RAIZ / "datos" / "validacion" / nombre).read_text(encoding="utf-8").splitlines():
+            if linea and not linea.startswith("#"):
+                h, ruta = linea.split(None, 1)
+                ruta = ruta.strip().lstrip("*")
+                if ruta.startswith("scripts/"):
+                    ruta = "experimento/" + ruta
+                ref.setdefault(ruta, set()).add(h)
+    return ref
+
+
+def congelado_ok():
+    """Verifica que persona2.py y el léxico son los congelados o sus equivalentes documentados (en LF o CRLF)."""
+    ref = hashes_aceptados()
     for ruta in ("experimento/scripts/instrumentos/persona2.py", "experimento/scripts/instrumentos/lexicon_persona2.json"):
-        if hashlib.sha256((RAIZ / ruta).read_bytes()).hexdigest() != ref[ruta]:
+        lf = (RAIZ / ruta).read_bytes().replace(b"\r\n", b"\n")
+        variantes = {hashlib.sha256(lf).hexdigest(), hashlib.sha256(lf.replace(b"\n", b"\r\n")).hexdigest()}
+        if not variantes & ref.get(ruta, set()):
             sys.exit(f"ABORTA: {ruta} ya no coincide con el hash congelado")
 
 

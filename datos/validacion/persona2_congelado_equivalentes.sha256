@@ -1,0 +1,5 @@
+# Versiones equivalentes al detector persona2 v2b congelado (ver congelados_cambios_posteriores.md).
+# Solo difieren del congelado en docstrings y en el texto descriptivo _fuentes del léxico; la lógica y las listas son idénticas.
+# Hashes del contenido con finales de línea LF (tal como está en git). recalcular_persona2.congelado_ok() acepta estos o los de persona2_congelado.sha256.
+267eac52fe94f9f921cda57531a50f9499254137e395e7699628e0bcf4fb78e4  experimento/scripts/instrumentos/persona2.py
+01a7c7644e2c392916549c4d89526e70f00b7fb2937d83c123bd79bd4435bfd9  experimento/scripts/instrumentos/lexicon_persona2.json

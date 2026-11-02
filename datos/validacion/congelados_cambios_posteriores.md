@@ -37,6 +37,10 @@ Hashes SHA-256 actuales (contenido en git, finales de línea LF):
 
 Los archivos propios de `validacion_v2/` listados en `congelamiento_v2.sha256` no se modificaron (ruta antigua `validacion_v2/` → `datos/validacion_v2/`). Todos coinciden con su hash, aunque algunos se hashearon con finales de línea LF y otros con CRLF: con `core.autocrlf=true` (Windows), unos coinciden con el contenido en git (`git show HEAD:<ruta> | sha256sum`) y otros con el archivo en disco (`sha256sum <ruta>`).
 
+## Efecto en los scripts
+
+`experimento/scripts/reporte_v2/recalcular_persona2.py` (y `recalcular_persona2_v3b.py`, que usa la misma función) verifica antes de correr que `persona2.py` y el léxico sean los congelados. Acepta los hashes de `persona2_congelado.sha256` o los de [`persona2_congelado_equivalentes.sha256`](persona2_congelado_equivalentes.sha256), que son las versiones de la tabla de arriba. Compara el archivo con finales de línea LF y CRLF, así que funciona en cualquier sistema operativo. Cualquier otro cambio a esos dos archivos sigue abortando la ejecución.
+
 ## Cómo comprobarlo
 
 Para ver el diff completo de un archivo contra su versión congelada:
