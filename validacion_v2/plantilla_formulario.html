@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Validación humana v2 — Etiquetado ciego</title>
+<style>
+  :root { --tinta:#1f2328; --suave:#59636e; --borde:#d0d7de; --fondo:#f6f8fa; --a:#0b5cad; --si:#1a7f37; --no:#a40e26; }
+  * { box-sizing: border-box; }
+  body { margin:0; font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color:var(--tinta); background:#fff; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 20px 80px; }
+  h1 { font-size: 1.45rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+  h3 { font-size: 1rem; margin: 18px 0 6px; }
+  .sub { color: var(--suave); margin: 0 0 20px; }
+  .caja { border:1px solid var(--borde); border-radius:8px; padding:14px 16px; background:var(--fondo); margin:12px 0; }
+  .hecho { border-left: 4px solid var(--a); background:#eef5fd; }
+  .pregunta { font-weight: 600; font-size: 1.05rem; }
+  .ref { font-size: .88rem; color: var(--suave); }
+  .texto { white-space: pre-wrap; background:#fff; border:1px solid var(--borde); border-radius:8px; padding:14px 16px; }
+  .etq { font-size:.8rem; text-transform:uppercase; letter-spacing:.04em; color:var(--suave); margin:14px 0 4px; }
+  .botones { display:flex; gap:12px; margin:20px 0 8px; }
+  button { font: inherit; border-radius:8px; border:1px solid var(--borde); background:#fff; padding:10px 18px; cursor:pointer; }
+  button.si { background:var(--si); color:#fff; border-color:var(--si); min-width:140px; font-weight:600; }
+  button.no { background:var(--no); color:#fff; border-color:var(--no); min-width:140px; font-weight:600; }
+  button:disabled { opacity:.45; cursor:not-allowed; }
+  .nav { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+  .barra { height:6px; background:var(--borde); border-radius:3px; overflow:hidden; margin:8px 0 18px; }
+  .barra > div { height:100%; background:var(--a); }
+  .respondido { font-weight:600; }
+  table { border-collapse: collapse; width:100%; font-size:.95rem; }
+  td, th { border:1px solid var(--borde); padding:6px 8px; text-align:left; vertical-align:top; }
+  input[type=text] { font:inherit; padding:8px 10px; border:1px solid var(--borde); border-radius:6px; width:140px; }
+  details summary { cursor:pointer; color:var(--a); }
+  .oculto { display:none; }
+  .aviso { color:var(--no); font-weight:600; }
+</style>
+</head>
+<body>
+<main>
+
+<section id="inicio">
+  <h1>Validación humana de instrumentos — etiquetado ciego</h1>
+  <p class="sub">Tesis «Comparación de la coherencia narrativa en campañas de Dungeons &amp; Dragons generadas por sistemas multiagente versus sistemas monolíticos» · Universidad Privada Antenor Orrego</p>
+
+  <div class="caja">
+    <p><strong>Qué vas a hacer.</strong> Vas a leer turnos reales de campañas narradas por un director de juego automatizado (DM) y responder <strong>Sí</strong> o <strong>No</strong> a una pregunta por turno. Hay cuatro tipos de pregunta (A, B, C y D), mezclados; cada ítem indica cuál es. Tu respuesta se compara con la de un detector automático que respondió la <strong>misma pregunta sobre el mismo turno</strong>. No sabes ni sabrás qué respondió el detector ni qué sistema generó cada turno.</p>
+    <p>No hay opción «dudoso». Si no estás seguro, elige la respuesta que te parezca más probable. Una vez respondido, un ítem no se puede cambiar. Puedes pausar y seguir otro día en este mismo navegador: el avance se guarda solo. <strong>Exporta tu CSV al final de cada sesión.</strong></p>
+  </div>
+
+  <h2>Pregunta A — Atribución al personaje jugador</h2>
+  <div class="caja">
+    <p class="pregunta">¿La narración del DM atribuye al personaje jugador, en segunda persona («tú») o por su nombre, una decisión, un pensamiento, una emoción o un acto de habla?</p>
+    <table>
+      <tr><th>Responde «Sí» si aparece…</th><th>Ejemplos</th></tr>
+      <tr><td>Una <strong>decisión</strong>: decide, elige, opta, quiere, se obliga a…</td><td>«Decides esperar», «optas por el sendero», «te obligas a mirar»</td></tr>
+      <tr><td>Un <strong>pensamiento</strong>: piensa, cree, sabe, recuerda, comprende, se da cuenta…</td><td>«Recuerdas a tu padre», «te das cuenta de que miente», «se te ocurre que…», «tienes la sensación de que…»</td></tr>
+      <tr><td>Una <strong>emoción</strong> nombrada</td><td>«Sientes miedo», «te invade la ira», «te asusta el silencio»</td></tr>
+      <tr><td>Un <strong>acto de habla</strong>: dice, responde, murmura…</td><td>«Respondes que no», «murmuras una plegaria»</td></tr>
+    </table>
+    <p>Cuenta <strong>aunque el jugador lo haya declarado</strong> en su acción y <strong>aunque ocurra tras una tirada</strong> (jugador: «Decido abrir la puerta» → DM: «Decides abrir la puerta…» = <strong>Sí</strong>). También cuenta con el nombre del PJ en tercera persona («Kael decide retroceder» = Sí).</p>
+    <p><strong>Responde «No»</strong> si lo único que hay es: percepción («ves», «oyes», «notas», «encuentras», «sientes frío o dolor»); reflejos o consecuencias involuntarias («tropiezas», «caes», «te estremeces»); acciones físicas («te acercas», «sacas la daga», «tus dedos recorren el metal»); el «tú» dentro del diálogo de un PNJ; preguntas u opciones al jugador («¿Qué haces?», «puedes entrar o esperar»); condicionales o hipótesis («si decides…», «podrías pensar que…»); futuro o condicional («recordarás», «jurarías»); un «tú» genérico que no se refiere al PJ; texto entre corchetes; lo que piensan, sienten o dicen otros personajes.</p>
+    <p class="ref"><strong>Procedencia del instrumento.</strong> Detector «persona2», elaborado por los autores de la investigación a partir de la regla del prompt del director de juego, según la cual este nunca asume, genera ni describe las acciones, el diálogo, los pensamientos o las emociones del personaje jugador, y de la toma de control del personaje jugador que Zhu et al. (2023) identificaron como el fallo más señalado por los evaluadores de FIREBALL.<br>
+    Zhu, A., Aggarwal, K., Feng, A., Martin, L. J., &amp; Callison-Burch, C. (2023). FIREBALL: A dataset of Dungeons and Dragons actual-play with structured game state information. <em>Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</em>, 4171–4193.</p>
+  </div>
+
+  <h2>Pregunta B — PNJ inactivo narrado como activo</h2>
+  <div class="caja">
+    <p>Junto al turno verás un <strong>hecho confirmado por la base de datos</strong>, por ejemplo: «Valerius figura como desaparecido desde el turno 114».</p>
+    <p class="pregunta">En este turno, ¿se narra a ese PNJ actuando, hablando o decidiendo en el presente de la escena, como si estuviera activo?</p>
+    <p><strong>«Sí»:</strong> el PNJ realiza una acción, habla o decide en la escena actual («Valerius se acerca y te tiende la mano», «—Seguidme —ordena Valerius»). Cuenta también si se le nombra de forma abreviada o descriptiva y queda claro que es el mismo PNJ.</p>
+    <p><strong>«No»:</strong> se le recuerda o se menciona en retrospectiva («todavía os preguntáis qué le pasó»); otros hablan de él («el tabernero jura que lo vio en el puerto»); se constata su estado («encontráis su cuerpo», «fue capturado al amanecer»); aparece en una forma ya asumida como no viva («el fantasma de Valerius»); o el PNJ no aparece en el turno.</p>
+    <p>Juzga solo el turno y el hecho dado: no hace falta conocer el resto de la campaña.</p>
+    <p class="ref"><strong>Procedencia del instrumento.</strong> Detector de PNJ inactivo (versión refinada), elaborado por los autores de la investigación. Contrasta la narración con el estado persistido del mundo, siguiendo el principio de verificar lo que el sistema narra frente al estado real registrado (Ammanabrolu et al., 2020) y la evaluación de la consistencia fáctica de un personaje como la detección de enunciados que contradicen lo ya establecido (Welleck et al., 2019).<br>
+    Ammanabrolu, P., Cheung, W., Tu, D., Broniec, W., &amp; Riedl, M. O. (2020). Bringing stories alive: Generating interactive fiction worlds. <em>Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment, 16</em>(1), 3–9.<br>
+    Welleck, S., Weston, J., Szlam, A., &amp; Cho, K. (2019). Dialogue natural language inference. <em>Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics</em>, 3731–3741.</p>
+  </div>
+
+  <h2>Pregunta C — Cambio de estado reflejado en la narración</h2>
+  <div class="caja">
+    <p>Verás un <strong>cambio de estado registrado en la base de datos</strong> en un turno (por ejemplo: «En el turno 780, Leo Varga pasó a estar capturado» o «la disposición de Ilse hacia el personaje jugador pasó a ser recelosa») y la narración de <strong>ese turno y el siguiente</strong>.</p>
+    <p class="pregunta">¿La narración de estos dos turnos refleja ese cambio?</p>
+    <p><strong>«Sí»:</strong> la narración cuenta o muestra de forma reconocible el cambio para esa entidad: narra su muerte, su desaparición o su captura, o muestra a ese PNJ con la actitud nueva («te mira con abierta hostilidad», «te trata con una calidez que antes no tenía»).</p>
+    <p><strong>«No»:</strong> el cambio no se narra, se narra otra cosa, o la actitud que se muestra no corresponde a la nueva disposición. Juzga la entidad del hecho, no a otros personajes del turno.</p>
+    <p class="ref"><strong>Procedencia del instrumento.</strong> Recuerdo de cambios de estado (Jericho-QA), elaborado por los autores de la investigación. Adapta a la campaña de rol el principio de verificar el conocimiento que un sistema narrativo tiene del mundo comparándolo con su estado real (Ammanabrolu et al., 2020), en la línea del entorno de ficción interactiva Jericho (Hausknecht et al., 2020).<br>
+    Hausknecht, M., Ammanabrolu, P., Côté, M.-A., &amp; Yuan, X. (2020). Interactive fiction games: A colossal adventure. <em>Proceedings of the AAAI Conference on Artificial Intelligence, 34</em>(05), 7903–7910.</p>
+  </div>
+
+  <h2>Pregunta D — Respuesta a la acción específica</h2>
+  <div class="caja">
+    <p>Verás la acción que declaró el jugador y la respuesta del DM en ese mismo turno.</p>
+    <p class="pregunta">¿La respuesta del DM responde a la acción específica que declaró el jugador en este turno?</p>
+    <p><strong>«Sí»:</strong> la respuesta se ocupa de lo que el jugador intentó hacer o decir: lo resuelve, lo narra o muestra su resultado, aunque sea un fracaso.</p>
+    <p><strong>«No»:</strong> la respuesta ignora la acción, responde a otra cosa o es tan genérica que serviría para cualquier acción.</p>
+    <p class="ref"><strong>Procedencia del instrumento.</strong> Respuesta a la acción específica, elaborada por los autores de la investigación. Mide si la respuesta del DM se ancla en lo que el jugador declaró en ese turno, comparándola con respuestas a acciones de otros turnos de la misma campaña, a partir de la exigencia de que un DM automatizado responda a la contribución concreta del jugador (Callison-Burch et al., 2022).<br>
+    Callison-Burch, C., Tomar, G. S., Martin, L. J., Ippolito, D., Bailis, S., &amp; Reitter, D. (2022). Dungeons and Dragons as a dialog challenge for artificial intelligence. <em>Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing</em>, 9379–9393.</p>
+  </div>
+
+  <h2>Antes de empezar</h2>
+  <div class="caja">
+    <p><label><input type="checkbox" id="consent"> Confirmo que leí y firmé el consentimiento informado de esta evaluación.</label></p>
+    <p>Tu código de evaluador (te lo dan los investigadores): <input type="text" id="codigo" placeholder="E1" autocomplete="off"></p>
+    <p id="err" class="aviso"></p>
+    <button id="empezar">Empezar o continuar</button>
+  </div>
+</section>
+
+<section id="trabajo" class="oculto">
+  <div class="nav">
+    <div><strong id="evalLbl"></strong> · ítem <span id="pos"></span> de <span id="tot"></span> · respondidos: <span id="hechos"></span></div>
+    <div><button id="exportar">Exportar CSV</button> <button id="verGuia">Ver instrucciones</button></div>
+  </div>
+  <div class="barra"><div id="prog"></div></div>
+
+  <div id="tarjeta"></div>
+
+  <div class="botones">
+    <button class="si" id="bSi">Sí (S)</button>
+    <button class="no" id="bNo">No (N)</button>
+  </div>
+  <p id="estado" class="respondido"></p>
+  <div class="nav">
+    <button id="ant">← Anterior</button>
+    <button id="sig">Siguiente →</button>
+  </div>
+</section>
+
+</main>
+<script>
+const ITEMS = __ITEMS__;
+const PREG_A = "¿La narración del DM atribuye al personaje jugador, en segunda persona («tú») o por su nombre, una decisión, un pensamiento, una emoción o un acto de habla?";
+const PREG_B = "En este turno, ¿se narra a ese PNJ actuando, hablando o decidiendo en el presente de la escena, como si estuviera activo?";
+const PREG_C = "¿La narración de estos dos turnos refleja ese cambio?";
+const PREG_D = "¿La respuesta del DM responde a la acción específica que declaró el jugador en este turno?";
+const $ = id => document.getElementById(id);
+let ev = null, orden = [], resp = {}, i = 0;
+
+function guardar() { try { localStorage.setItem("valv2_" + ev, JSON.stringify({resp, i})); } catch (e) {} }
+function cargar() { try { return JSON.parse(localStorage.getItem("valv2_" + ev) || "null"); } catch (e) { return null; } }
+function hash(s) { let h = 2166136261; for (const c of s) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; }
+function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function barajar(n, seed) { const a = [...Array(n).keys()], r = rng(seed); for (let k = n - 1; k > 0; k--) { const j = Math.floor(r() * (k + 1)); [a[k], a[j]] = [a[j], a[k]]; } return a; }
+function esc(s) { return String(s || "").replace(/[&<>]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;"}[c])); }
+
+$("empezar").onclick = () => {
+  const c = $("codigo").value.trim().toUpperCase();
+  if (!$("consent").checked) { $("err").textContent = "Debes confirmar el consentimiento informado."; return; }
+  if (!/^E\d{1,2}$/.test(c)) { $("err").textContent = "Escribe tu código de evaluador (por ejemplo, E3)."; return; }
+  ev = c; orden = barajar(ITEMS.length, hash("valv2-" + ev));
+  const g = cargar(); if (g) { resp = g.resp || {}; i = g.i || 0; }
+  $("inicio").classList.add("oculto"); $("trabajo").classList.remove("oculto");
+  $("evalLbl").textContent = ev; $("tot").textContent = ITEMS.length; mostrar();
+};
+$("verGuia").onclick = () => { $("trabajo").classList.add("oculto"); $("inicio").classList.remove("oculto"); $("empezar").textContent = "Volver al etiquetado"; };
+
+function mostrar() {
+  const it = ITEMS[orden[i]], r = resp[it.id];
+  let h = "";
+  if (it.tipo === "persona2") {
+    h += `<div class="caja"><div class="etq">Pregunta A</div><div class="pregunta">${PREG_A}</div></div>`;
+    h += `<div class="etq">Personaje jugador</div><div>${esc(it.pj)}</div>`;
+    h += `<div class="etq">Acción declarada por el jugador</div><div class="texto">${esc(it.accion)}</div>`;
+  } else if (it.tipo === "pnj") {
+    h += `<div class="caja"><div class="etq">Pregunta B</div><div class="pregunta">${PREG_B}</div></div>`;
+    h += `<div class="caja hecho"><div class="etq">Hecho confirmado por la base de datos</div><div>${esc(it.hecho)}</div></div>`;
+  } else if (it.tipo === "jericho") {
+    h += `<div class="caja"><div class="etq">Pregunta C</div><div class="pregunta">${PREG_C}</div></div>`;
+    h += `<div class="caja hecho"><div class="etq">Cambio registrado en la base de datos</div><div>${esc(it.hecho)}</div></div>`;
+  } else {
+    h += `<div class="caja"><div class="etq">Pregunta D</div><div class="pregunta">${PREG_D}</div></div>`;
+    h += `<div class="etq">Acción declarada por el jugador</div><div class="texto">${esc(it.accion)}</div>`;
+  }
+  if (it.tipo === "jericho") {
+    h += `<div class="etq">Turno ${it.turno} del DM</div><div class="texto">${esc(it.texto)}</div>`;
+    h += `<div class="etq">Turno ${it.turno + 1} del DM</div><div class="texto">${esc(it.texto2) || "<em>(no hay turno siguiente)</em>"}</div>`;
+  } else {
+    h += `<div class="etq">${it.tipo === "accion" ? "Respuesta del DM" : "Turno del DM"}</div><div class="texto">${esc(it.texto)}</div>`;
+  }
+  $("tarjeta").innerHTML = h;
+  $("pos").textContent = i + 1; $("hechos").textContent = Object.keys(resp).length;
+  $("prog").style.width = (100 * Object.keys(resp).length / ITEMS.length) + "%";
+  $("bSi").disabled = $("bNo").disabled = !!r;
+  $("estado").textContent = r ? `Respondido: ${r}` : "";
+  $("ant").disabled = i === 0; $("sig").disabled = i === ITEMS.length - 1;
+  window.scrollTo(0, 0);
+}
+function responder(v) {
+  const it = ITEMS[orden[i]]; if (resp[it.id]) return;
+  resp[it.id] = v; guardar();
+  if (i < ITEMS.length - 1) { i++; guardar(); }
+  mostrar();
+  if (Object.keys(resp).length === ITEMS.length) alert("Terminaste los " + ITEMS.length + " ítems. Exporta tu CSV y envíaselo a los investigadores.");
+}
+$("bSi").onclick = () => responder("Sí"); $("bNo").onclick = () => responder("No");
+$("ant").onclick = () => { if (i > 0) { i--; guardar(); mostrar(); } };
+$("sig").onclick = () => { if (i < ITEMS.length - 1) { i++; guardar(); mostrar(); } };
+document.addEventListener("keydown", e => {
+  if ($("trabajo").classList.contains("oculto") || e.target.tagName === "INPUT") return;
+  const k = e.key.toLowerCase();
+  if (k === "s") responder("Sí"); else if (k === "n") responder("No");
+  else if (k === "arrowright") $("sig").click(); else if (k === "arrowleft") $("ant").click();
+});
+$("exportar").onclick = () => {
+  const filas = [["evaluador", "orden", "id", "respuesta"]];
+  orden.forEach((o, k) => { const it = ITEMS[o]; if (resp[it.id]) filas.push([ev, k + 1, it.id, resp[it.id]]); });
+  const csv = "﻿" + filas.map(f => f.map(x => `"${String(x).replace(/"/g, '""')}"`).join(",")).join("\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([csv], {type: "text/csv;charset=utf-8"}));
+  a.download = `etiquetas_v2_${ev}.csv`; a.click();
+};
+</script>
+</body>
+</html>

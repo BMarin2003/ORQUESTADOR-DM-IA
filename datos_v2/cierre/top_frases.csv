@@ -4,8 +4,8 @@ G1,01,tomás herrén se detiene en seco.,3
 G1,02,"""menos palabras y más acero, chico.",5
 G1,02,"""menos palabras y más pies, chico.",5
 G1,02,el impulso falla en el momento crítico.,4
-G2,02,[para resolver esta acción es necesaria una tirada de destreza (herramientas de ladrón).,8
 G2,02,"por favor, lanza el dado y añade el modificador correspondiente para determinar si la secuencia técnica tiene éxito.]",8
+G2,02,[para resolver esta acción es necesaria una tirada de destreza (herramientas de ladrón).,8
 G2,02,"por favor, indica el resultado total.]",3
 G1,03,"yenna roldós se detiene en seco, pero no se gira.",7
 G1,03,"yenna se detiene en seco, pero no se gira.",6
@@ -36,8 +36,8 @@ G2,09,—susurra con una voz que suena a cristal roto—.,4
 G1,10,el impulso falla en el momento crítico.,6
 G1,10,el impulso es seco y preciso.,4
 G1,10,el movimiento es fluido y preciso.,4
-G2,10,[para resolver este ataque necesito que realices una tirada de ataque (1d20 + modificador de fuerza o destreza según el arma).,6
 G2,10,"hasta que no tenga el resultado, no puedo narrar si el tajo impacta o si el vigilante logra evitarlo.]",6
+G2,10,[para resolver este ataque necesito que realices una tirada de ataque (1d20 + modificador de fuerza o destreza según el arma).,6
 G2,10,el reparto no alcanza para todos.,4
 G1,11,"illian vasto permanece inmóvil, con las manos entrelazadas frente a ella.",17
 G1,11,illian vasto no se mueve ni un centímetro.,3

@@ -1,0 +1,33 @@
+id,tipo,esperada,candidato,par,brazo,campaign_id,turn_id,pnj
+V671811,persona2,Sí,persona2_si-01,08,G2,ebfcb92e-2eeb-4235-a1d2-73630f75a631,388,
+V330427,persona2,Sí,persona2_si-04,25,G2,71851109-08d3-41db-9f22-796e26af13a1,815,
+V687454,persona2,Sí,persona2_si-05,13,G2,8845df6a-3248-47ef-9844-7c234724d7f9,412,
+V449974,persona2,Sí,persona2_si-06,13,G2,8845df6a-3248-47ef-9844-7c234724d7f9,492,
+V531833,persona2,Sí,persona2_si-08,04,G2,fc6c19b0-49a6-4abb-ad44-b12de9438828,691,
+V139196,persona2,No,persona2_no-02,02,G1,84eb6728-52d3-434c-924c-2c21b6099c92,145,
+V869495,persona2,No,persona2_no-03,11,G2,b6c3eb75-cb1a-48de-a827-d082415b4b74,503,
+V931788,persona2,No,persona2_no-04,12,G2,6f319319-f39f-4902-9f11-a5d5a17798af,1076,
+V642028,persona2,No,persona2_no-05,05,G2,0bc0b20b-0dba-454d-a32e-94fbeb24dddf,7,
+V719863,persona2,No,persona2_no-10,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,497,
+V987155,pnj,Sí,pnj_si-01,14,G1,8d8e8f27-41d7-4573-a294-c79d2378b6e5,182,Valerius
+V374677,pnj,Sí,pnj_si-03,14,G1,8d8e8f27-41d7-4573-a294-c79d2378b6e5,202,Valerius
+V765416,pnj,Sí,pnj_si-05,12,G2,6f319319-f39f-4902-9f11-a5d5a17798af,1089,Valerius
+V383160,pnj,Sí,pnj_si-09,14,G1,8d8e8f27-41d7-4573-a294-c79d2378b6e5,280,Valerius
+V229439,pnj,Sí,pnj_si-10,14,G1,8d8e8f27-41d7-4573-a294-c79d2378b6e5,300,Valerius
+V455777,pnj,No,pnj_no-01,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,960,criatura de la máscara de hierro
+V403061,pnj,No,pnj_no-02,25,G2,71851109-08d3-41db-9f22-796e26af13a1,907,Faustino Vara
+V532568,pnj,No,pnj_no-06,23,G2,e8629a76-58f5-45d3-91e2-15bf7c1d60af,1038,Cefalópodo mecánico
+V248724,pnj,No,pnj_no-07,20,G2,9e7e4aec-5a1d-41ce-9904-ccffaebfd944,1087,Autómata de hierro
+V790200,pnj,No,pnj_no-10,25,G2,71851109-08d3-41db-9f22-796e26af13a1,915,Faustino Vara
+V694038,jericho,Sí,jericho_si-02,15,G1,4521da96-8eda-4fb7-9464-ce09d417d26f,1192,
+V169560,jericho,Sí,jericho_si-03,14,G1,8d8e8f27-41d7-4573-a294-c79d2378b6e5,114,
+V495502,jericho,Sí,jericho_si-04,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,950,
+V760802,jericho,Sí,jericho_si-05,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,899,
+V772077,jericho,Sí,jericho_si-06,19,G1,a583b7b7-c777-4032-b493-3b61d57476b0,861,
+V267154,jericho,No,jericho_no-04,17,G2,45f450c1-29bc-4dde-8960-82129291f1ad,401,
+V227534,jericho,No,jericho_no-05,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,968,
+V534779,accion,Sí,accion_si-01,24,G2,b09c56ca-cc15-4576-9ad7-cd16773f14b4,484,
+V146868,accion,Sí,accion_si-03,12,G2,6f319319-f39f-4902-9f11-a5d5a17798af,276,
+V899349,accion,Sí,accion_si-04,12,G2,6f319319-f39f-4902-9f11-a5d5a17798af,127,
+V979654,accion,Sí,accion_si-05,18,G1,878b05b9-c082-4595-9c64-5bdc736bbe1a,230,
+V781285,accion,Sí,accion_si-07,19,G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,1261,

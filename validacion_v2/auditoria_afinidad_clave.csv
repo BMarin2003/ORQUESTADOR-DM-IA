@@ -1,0 +1,31 @@
+id,id_muestra_c,par,brazo,campaign_id,turn_id,entidad,previa,nueva,detector_jericho
+AF01,V221939,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,38,Honorio Zapata,fría,recelosa,0
+AF02,V270322,24,G2,b09c56ca-cc15-4576-9ad7-cd16773f14b4,933,Capitán Vane,cordial,leal,0
+AF03,V281249,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,973,Maestro de Llaves,recelosa,hostil,0
+AF04,V976029,17,G1,dc7af6f4-453a-4542-a2b5-e7cdd46a30b2,190,Bibiana Roth,leal,cordial,0
+AF05,V326660,20,G2,9e7e4aec-5a1d-41ce-9904-ccffaebfd944,1252,Pipo,neutral,fría,0
+AF06,V805345,15,G2,79db3083-9993-458a-86a9-12ddec04e192,1015,Elian Thorne,neutral,leal,0
+AF07,V793675,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,1139,Malthus,neutral,hostil,0
+AF08,V267729,06,G1,fbe6d980-964f-455c-89d9-96d34d9653fe,766,Osana Ferreira,neutral,fría,1
+AF09,V186022,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,390,Maestro Pimpón,neutral,fría,0
+AF10,V722584,20,G2,9e7e4aec-5a1d-41ce-9904-ccffaebfd944,1171,"Barnaby ""El Glotón""",neutral,fría,1
+AF11,V410517,17,G2,45f450c1-29bc-4dde-8960-82129291f1ad,355,Hombre de la casaca carmesí,hostil,cordial,0
+AF12,V928784,13,G1,7231e456-9284-40b3-83ed-d1de4dc4e33e,46,Baldemar Cruz,neutral,fría,1
+AF13,V859965,03,G2,ff0c8110-caa5-48fa-b285-7dc903cc1d26,521,Erudito de la Atalaya,neutral,fría,1
+AF14,V904779,05,G2,0bc0b20b-0dba-454d-a32e-94fbeb24dddf,1055,el viejo cartógrafo,neutral,recelosa,1
+AF15,V684979,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,798,Soldado herido,fría,hostil,1
+AF16,V256170,08,G2,ebfcb92e-2eeb-4235-a1d2-73630f75a631,644,Figura de la armadura antigua,leal,devota,0
+AF17,V306797,20,G2,9e7e4aec-5a1d-41ce-9904-ccffaebfd944,1184,"Barnaby ""El Glotón""",fría,recelosa,0
+AF18,V637208,24,G2,b09c56ca-cc15-4576-9ad7-cd16773f14b4,740,Barnaby,leal,devota,1
+AF19,V960532,24,G1,fd990516-18f6-4341-8ec7-9e2a12dfedca,1171,Figura encapuchada,neutral,fría,1
+AF20,V486694,02,G2,5653d917-4744-43e3-90ba-8190a22a126c,1085,Cobrador de Cadenas,neutral,leal,0
+AF21,V828880,21,G1,0480c825-e678-470e-97a5-6cb77a9e0925,1359,técnico,cordial,leal,0
+AF22,V677951,14,G2,cebcafd3-23cc-4d61-8e2e-9360587b7464,1325,Madame Valeriane,cordial,leal,0
+AF23,V854720,01,G2,e9bef82d-8b7a-41e9-8cb6-8e6af542e514,477,Supervisor del muelle,neutral,fría,1
+AF24,V481781,02,G2,5653d917-4744-43e3-90ba-8190a22a126c,1041,Kaelen el Silencioso,devota,leal,1
+AF25,V832169,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,756,El Vigilante del Granero,hostil,recelosa,1
+AF26,V644661,24,G2,b09c56ca-cc15-4576-9ad7-cd16773f14b4,181,Buster,fría,recelosa,0
+AF27,V489522,18,G1,878b05b9-c082-4595-9c64-5bdc736bbe1a,1272,Valerius,fría,recelosa,0
+AF28,V788768,22,G1,ad163fd8-4b8d-43bd-acf6-33e7a33afb97,599,Casimira Ortigal,recelosa,hostil,1
+AF29,V386035,07,G1,41fedb73-2345-439b-852c-87ad806e1015,251,Sargento Vane,neutral,leal,0
+AF30,V409716,05,G1,b7a090cf-032e-4a87-be01-e03fa88a9917,1370,Renata Ossorio,devota,leal,0
