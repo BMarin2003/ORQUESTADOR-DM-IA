@@ -14,7 +14,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 AQUI = Path(__file__).resolve().parent
-RAIZ = AQUI.parent
+RAIZ = AQUI.parent.parent
 SEMILLA = 20261104
 B = 2000
 # código del formulario (semilla del orden) -> archivo
@@ -125,7 +125,7 @@ def main():
         if r["tipo"] == "persona2":
             k = (r["par"], r["brazo"])
             if k not in v3b:
-                v3b[k] = {int(x["turn_id"]): int(x["primaria"]) for x in leer(RAIZ / "datos_v2" / "persona2_v3b" / f"par{r['par']}_{r['brazo']}.csv")}
+                v3b[k] = {int(x["turn_id"]): int(x["primaria"]) for x in leer(RAIZ / "datos" / "datos_v2" / "persona2_v3b" / f"par{r['par']}_{r['brazo']}.csv")}
 
     # 1. controles y exclusiones
     controles, retenidos, constantes = {}, {}, {}

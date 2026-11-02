@@ -1,6 +1,9 @@
-import csv, collections, sys
+import collections
+import csv
+import sys
+from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")
-R = list(csv.DictReader(open(r"C:\BMARIN2003\DEV\proyecto\validacion_v2\pool_pnj.csv", encoding="utf-8")))
+R = list(csv.DictReader(open(Path(__file__).resolve().parent / "pool_pnj.csv", encoding="utf-8")))
 si = [r for r in R if r["refinado"] == "1"]
 inter = 0
 for r in si:

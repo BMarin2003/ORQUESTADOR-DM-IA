@@ -9,9 +9,9 @@ from collections import Counter
 from pathlib import Path
 
 AQUI = Path(__file__).resolve().parent
-RAIZ = AQUI.parent
+RAIZ = AQUI.parent.parent
 sys.path.insert(0, str(AQUI))
-sys.path.insert(0, str(RAIZ / "scripts" / "reporte_v2"))
+sys.path.insert(0, str(RAIZ / "experimento" / "scripts" / "reporte_v2"))
 import generar_muestra as G            # noqa: E402
 import recalcular_persona2 as R        # noqa: E402
 import recalcular_persona2_v3b as V    # noqa: E402
@@ -41,7 +41,7 @@ def main():
                 for p in G._pares.todos() for b, k in (("G1", "campaign_g1"), ("G2", "campaign_g2"))]
     pool = []
     for c in campanas:
-        with open(RAIZ / "datos_v2" / "persona2_v3b" / f"par{c['par']}_{c['brazo']}.csv", newline="", encoding="utf-8") as fh:
+        with open(RAIZ / "datos" / "datos_v2" / "persona2_v3b" / f"par{c['par']}_{c['brazo']}.csv", newline="", encoding="utf-8") as fh:
             for r in csv.DictReader(fh):
                 t = int(r["turn_id"])
                 if r["primaria"] == "1" and r["en_desarrollo"] == "0" and t >= 2 and (c["campaign_id"], t) not in vistos:

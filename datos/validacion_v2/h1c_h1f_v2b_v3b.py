@@ -6,13 +6,13 @@ from pathlib import Path
 import numpy as np
 from scipy import stats
 
-RAIZ = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(RAIZ / "scripts" / "reporte_v2")); sys.path.insert(0, str(RAIZ / "scripts" / "sensibilidad"))
+RAIZ = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(RAIZ / "experimento" / "scripts" / "reporte_v2")); sys.path.insert(0, str(RAIZ / "experimento" / "scripts" / "sensibilidad"))
 import pares as _pares  # noqa: E402
 
 
 def tasas(carpeta, par, brazo):
-    with open(RAIZ / "datos_v2" / carpeta / f"par{par}_{brazo}.csv", newline="", encoding="utf-8") as fh:
+    with open(RAIZ / "datos" / "datos_v2" / carpeta / f"par{par}_{brazo}.csv", newline="", encoding="utf-8") as fh:
         f = [r for r in csv.DictReader(fh) if 2 <= int(r["turn_id"]) <= 1400 and r["en_desarrollo"] == "0"]
     tot = 100 * np.mean([int(r["primaria"]) for r in f])
     bl = [100 * np.mean([int(r["primaria"]) for r in f if b * 200 < int(r["turn_id"]) <= (b + 1) * 200] or [np.nan]) for b in range(7)]

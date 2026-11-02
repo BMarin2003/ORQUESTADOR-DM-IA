@@ -1,10 +1,10 @@
 # Revisión post-jurado: cifras de verificación (solo lectura)
 
-Fecha: 2026-10-19. Sin regenerar el corpus, sin LLM y sin tocar datos ni scripts existentes. La base estaba apagada: CR-2a(z) se recalculó turno a turno desde la caché de lemas (`scripts/instrumentos/_cache/{R,A}_<campaign_id>.pkl`) con `respuesta_accion.medir`, y reproduce **exactamente** lo publicado (diferencia 0 en z y en n_z de los 378 bloques de `sensibilidad_a4bc_distribucion_27.csv`). Estadísticos con las funciones de la tesis (`comparar_v1_v2.hodges_lehmann`, `rank_biserial_pareada`, `resultados_tesis.wilcoxon_uni` exacto), IC 95 % bootstrap de parejas (semilla 20260920, B = 10,000).
+Fecha: 2026-10-19. Sin regenerar el corpus, sin LLM y sin tocar datos ni scripts existentes. La base estaba apagada: CR-2a(z) se recalculó turno a turno desde la caché de lemas (`experimento/scripts/instrumentos/_cache/{R,A}_<campaign_id>.pkl`) con `respuesta_accion.medir`, y reproduce **exactamente** lo publicado (diferencia 0 en z y en n_z de los 378 bloques de `sensibilidad_a4bc_distribucion_27.csv`). Estadísticos con las funciones de la tesis (`comparar_v1_v2.hodges_lehmann`, `rank_biserial_pareada`, `resultados_tesis.wilcoxon_uni` exacto), IC 95 % bootstrap de parejas (semilla 20260920, B = 10,000).
 
 ## 1. Turnos computables de CR-2a y el turno 1
 
-- `scripts/brechas/oe4_cr2a_descomposicion.py` usa `correr_a4bc.cargar_campanas`, que toma `turn_id >= 1` (línea 138): **sí incluye el turno 1**. El turno 1 es computable en las 27 campañas de cada brazo: 37,798 = 37,771 + 27 (G1) y 37,790 = 37,763 + 27 (G2). Sin él, ambos quedan por debajo del máximo de 37,773.
+- `experimento/scripts/brechas/oe4_cr2a_descomposicion.py` usa `correr_a4bc.cargar_campanas`, que toma `turn_id >= 1` (línea 138): **sí incluye el turno 1**. El turno 1 es computable en las 27 campañas de cada brazo: 37,798 = 37,771 + 27 (G1) y 37,790 = 37,763 + 27 (G2). Sin él, ambos quedan por debajo del máximo de 37,773.
 - **Afecta a las tablas de CR-2a(z)**: el valor por campaña de la tesis (`consolidar.py`, fuente `a4bc`) es la media de los 7 bloques de 200 turnos, y el bloque 1 (turnos 1–200) incluye el turno 1. El efecto es pequeño y no cambia ninguna decisión.
 
 | CR-2a(z), 27 pares | Con turno 1 (publicado) | Sin turno 1 |
@@ -79,7 +79,7 @@ Fuente: `por_campana_largo.csv`, clave `jericho_recall`; Par 08 = 0.200.
 
 ## 5. Fuentes de dos afirmaciones
 
-- **(a) Análisis exploratorio del último tramo de 100 turnos:** existe. `docs/reportes/degradacion/ultimo_bloque.md` (lo genera `scripts/degradacion/ultimo_bloque.py`; medias en `ultimo_bloque_medias.csv`). Cifra clave: en G2, CR-2a(z) toca su mínimo en el bloque 14 (turnos 1,301–1,400), con media 2.654, pero el salto no es significativo (A_salto −0.030, p = 0.348, Holm 1.000); ningún indicador empeora tras Holm.
+- **(a) Análisis exploratorio del último tramo de 100 turnos:** existe. `docs/reportes/degradacion/ultimo_bloque.md` (lo genera `experimento/scripts/degradacion/ultimo_bloque.py`; medias en `ultimo_bloque_medias.csv`). Cifra clave: en G2, CR-2a(z) toca su mínimo en el bloque 14 (turnos 1,301–1,400), con media 2.654, pero el salto no es significativo (A_salto −0.030, p = 0.348, Holm 1.000); ningún indicador empeora tras Holm.
 - **(b) «Escenas de muerte formulaicas» señaladas por un evaluador:** **no existe**. No aparece en `docs/`, `scripts/`, `validacion/` (ni en las notas libres de las etiquetas E1–E4), `entregas/` ni en la tesis. Lo más cercano: el descriptor genérico «formulaico» del nivel 2 de QN-1 en la Rúbrica D&D-IA, y las celdas `muerte_2p`/`muerte_3p` del arnés de persona2 (inyección sintética, no un comentario de evaluador).
 
 ## 6. MATTR en OE6-6: n efectivo = 25

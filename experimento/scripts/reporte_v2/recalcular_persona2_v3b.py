@@ -4,8 +4,8 @@ más estricta sobre sus hallazgos, ya calculados por el propio detector:
   * no cuenta lo que el jugador declaró en su acción (declarada = True);
   * no cuenta los pensamientos (COGNICION) que resultan de una tirada declarada (tirada_declarada = True): en D&D el
     resultado de una prueba de habilidad se entrega como conocimiento del personaje y no constituye usurpación.
-Salida: datos_v2/persona2_v3b/parNN_G?.csv con las mismas columnas que persona2/ (primaria = v3b).
-    PYTHONUTF8=1 py scripts/reporte_v2/recalcular_persona2_v3b.py
+Salida: datos/datos_v2/persona2_v3b/parNN_G?.csv con las mismas columnas que persona2/ (primaria = v3b).
+    PYTHONUTF8=1 py experimento/scripts/reporte_v2/recalcular_persona2_v3b.py
 """
 import csv
 import sys
@@ -16,7 +16,7 @@ AQUI = Path(__file__).resolve().parent
 sys.path.insert(0, str(AQUI))
 import recalcular_persona2 as R                # noqa: E402
 
-DESTINO = R.RAIZ / "datos_v2" / "persona2_v3b"
+DESTINO = R.RAIZ / "datos" / "datos_v2" / "persona2_v3b"
 
 
 def cuenta(h):

@@ -4,8 +4,8 @@ import csv
 import os
 from pathlib import Path
 
-RAIZ = Path(__file__).resolve().parent.parent
-V2, V3 = RAIZ / "datos_v2" / "persona2", RAIZ / "datos_v2" / "persona2_v3b"
+RAIZ = Path(__file__).resolve().parents[3]
+V2, V3 = RAIZ / "datos" / "datos_v2" / "persona2", RAIZ / "datos" / "datos_v2" / "persona2_v3b"
 for f in sorted(V3.glob("par*_G?.csv")):
     base = {r["turn_id"]: r for r in csv.DictReader(open(V2 / f.name, newline="", encoding="utf-8"))}
     filas = list(csv.DictReader(open(f, newline="", encoding="utf-8")))
@@ -22,7 +22,7 @@ for nombre, viejo, nuevo in [
     ("medidas_cierre.py", 'else "persona2")) / rc.nombre_csv(par, brazo)',
      'else os.environ.get("P2_DIR", "persona2"))) / rc.nombre_csv(par, brazo)'),
 ]:
-    p = RAIZ / "scripts" / "reporte_v2" / nombre
+    p = RAIZ / "experimento" / "scripts" / "reporte_v2" / nombre
     s = p.read_text(encoding="utf-8")
     if nuevo not in s:
         assert viejo in s, nombre

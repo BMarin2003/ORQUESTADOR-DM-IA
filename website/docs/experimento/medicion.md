@@ -14,7 +14,7 @@ Toda la medición es **de solo lectura sobre la base** y no llama al modelo, de 
 | Validación por campaña | Coherencia, consistencia de atributos, gramaticalidad | [`reporte_validacion.py`](../referencia/motor/orquestador/reporte_validacion.md) |
 | Semántico (exploratorio) | Recall con embeddings bge-m3 | `experimento/scripts/semantico/` |
 
-Cada instrumento se valida con **pruebas de sensibilidad por perturbación** (`experimento/scripts/sensibilidad/`), con expectativas selladas con SHA-256 antes de correr, y, donde interpreta texto, con evaluadores humanos externos (`datos/validacion/`).
+Cada instrumento se valida con **pruebas de sensibilidad por perturbación** (`experimento/scripts/sensibilidad/`), con expectativas selladas con SHA-256 antes de correr, y, donde interpreta texto, con evaluadores humanos externos (`datos/validacion/` y `datos/validacion_v2/`).
 
 ## Flujo de análisis
 

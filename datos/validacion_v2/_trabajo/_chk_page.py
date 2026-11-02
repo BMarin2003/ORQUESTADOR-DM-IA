@@ -1,9 +1,9 @@
 import csv, numpy as np
 from scipy import stats
 from pathlib import Path
-R = Path(__file__).resolve().parent.parent
+R = Path(__file__).resolve().parents[3]
 B = {}
-for r in csv.DictReader(open(R / "datos_v2/cierre/bloques.csv", encoding="utf-8")):
+for r in csv.DictReader(open(R / "datos/datos_v2/cierre/bloques.csv", encoding="utf-8")):
     if r["indicador"] == "primaria" and r["brazo"] == "G2":
         B.setdefault(r["par"], {})[int(r["bloque"])] = float(r["valor"])
 M = np.array([[B[p][b] for b in range(1, 8)] for p in sorted(B)])

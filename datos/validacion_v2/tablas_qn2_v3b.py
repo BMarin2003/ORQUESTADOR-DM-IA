@@ -7,11 +7,11 @@ import sys
 from pathlib import Path
 import numpy as np
 
-R = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(R / "scripts" / "reporte_v2")); sys.path.insert(0, str(R / "scripts" / "sensibilidad"))
+R = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(R / "experimento" / "scripts" / "reporte_v2")); sys.path.insert(0, str(R / "experimento" / "scripts" / "sensibilidad"))
 import pares as _pares  # noqa: E402
 
-V3 = R / "datos_v2" / "persona2_v3b"
+V3 = R / "datos" / "datos_v2" / "persona2_v3b"
 CATS = ["primaria", "VOLICION", "COGNICION", "EMOCION", "HABLA"]
 
 
@@ -22,15 +22,15 @@ def tasa(par, brazo, col):
 
 
 bl = {}
-for r in csv.DictReader(open(R / "datos_v2/cierre/bloques.csv", encoding="utf-8")):
+for r in csv.DictReader(open(R / "datos/datos_v2/cierre/bloques.csv", encoding="utf-8")):
     if r["indicador"] == "primaria" and r["brazo"] == "G2":
         bl.setdefault(r["par"], {})[int(r["bloque"])] = 100 * float(r["valor"])
 pares = [p["par"] for p in _pares.todos()]
-with open(R / "validacion_v2" / "tabla_OE3-9_v3b.csv", "w", newline="", encoding="utf-8") as fh:
+with open(R / "datos" / "validacion_v2" / "tabla_OE3-9_v3b.csv", "w", newline="", encoding="utf-8") as fh:
     w = csv.writer(fh); w.writerow(["Par"] + [f"B{b}" for b in range(1, 8)] + ["Total"])
     for p in pares:
         w.writerow([p] + [f"{bl[p][b]:.2f}" for b in range(1, 8)] + [f"{tasa(p, 'G2', 'primaria'):.2f}"])
-with open(R / "validacion_v2" / "tabla_OE6-4_5_v3b.csv", "w", newline="", encoding="utf-8") as fh:
+with open(R / "datos" / "validacion_v2" / "tabla_OE6-4_5_v3b.csv", "w", newline="", encoding="utf-8") as fh:
     w = csv.writer(fh)
     w.writerow(["Par"] + [f"{c} {b}" for c in ("Usurp. total", "Decisión", "Pensamiento", "Emoción", "Habla") for b in ("G1", "G2")])
     for p in pares:
