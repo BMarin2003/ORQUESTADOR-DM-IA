@@ -1,0 +1,15 @@
+ind,instrumento,uso,n,W,p,normal
+CR-2,Respuesta a la acción específica (z),Confirmatorio,27,0.983,0.9225,sí
+CR-2,Solapamiento con la acción (crudo),Descriptivo,27,0.985,0.9472,sí
+CR-2,"Anclaje al escenario (coseno, ventana de 8)",Exploratorio,27,0.970,0.6026,sí
+CR-2,Anclaje sin nombres propios,Exploratorio,27,0.986,0.9664,sí
+CL-1,Papalampidi C: coherencia de entidad,Exploratorio,27,0.971,0.6363,sí
+CL-1,Papalampidi V: consistencia de atributos,Exploratorio,27,0.968,0.5585,sí
+CL-2,Jericho-QA: recuerdo de cambios de estado,Exploratorio,26,0.965,0.5110,sí
+CL-2,PNJ inactivo mencionado,Exploratorio,27,0.932,0.0781,sí
+CL-2,PNJ inactivo como sujeto (refinado),Exploratorio,27,0.364,<0.0001,no
+QN-1,TTR a 100 palabras,Exploratorio,27,0.948,0.1947,sí
+QN-1,Bigramas a 100 palabras,Exploratorio,27,0.904,0.0163,no
+QN-1,MTLD,Exploratorio,27,0.921,0.0415,no
+QN-1,MATTR,Exploratorio,27,0.907,0.0196,no
+QN-2,Usurpación de la agencia del PJ (persona2),Confirmatorio condicionado,27,0.848,0.0011,no
