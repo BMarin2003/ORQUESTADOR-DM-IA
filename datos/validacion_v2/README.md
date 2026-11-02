@@ -32,4 +32,4 @@ git worktree add ../dmia-b7ac5b1 b7ac5b1
 cd ../dmia-b7ac5b1 && PYTHONUTF8=1 py validacion_v2/poblaciones.py --c
 ```
 
-Las rutas de `congelamiento_v2.sha256` también son las del layout anterior: `validacion_v2/` → `datos/validacion_v2/`, `scripts/` → `experimento/scripts/`, `orquestador/` → `motor/orquestador/`.
+Las rutas de `congelamiento_v2.sha256` también son las del layout anterior: `validacion_v2/` → `datos/validacion_v2/`, `scripts/` → `experimento/scripts/`, `orquestador/` → `motor/orquestador/`. Algunos archivos de `experimento/scripts/` y `motor/` listados al final del manifiesto sí cambiaron después del congelamiento (solo docstrings y rutas, sin cambios de lógica): ver [`../validacion/congelados_cambios_posteriores.md`](../validacion/congelados_cambios_posteriores.md).
