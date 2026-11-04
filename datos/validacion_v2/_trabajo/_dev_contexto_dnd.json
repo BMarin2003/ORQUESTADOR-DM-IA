@@ -1,0 +1,3786 @@
+[
+ {
+  "id": "V107089",
+  "par": "06",
+  "brazo": "G1",
+  "turn": 986,
+  "accion": "\"Guárdate tus acertijos, vieja.\"\n\nSuelto el papel y empujo a Osana con fuerza para apartarla de mi camino mientras abro paso entre la multitud a golpes.\n\n{Atletismo}",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 17,
+    "total": 21,
+    "exito15": true
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "EMOCION",
+    "verbo": "tener",
+    "decl": false,
+    "evid": "Has logrado salir del nodo, pero la agresión hacia Osana y el despliegue de fuerza han convertido tu rostro en un objetivo prioritario para los residentes del Pozo; ahora saben que no tienes miedo de usar la violencia."
+   }
+  ]
+ },
+ {
+  "id": "V355054",
+  "par": "04",
+  "brazo": "G2",
+  "turn": 897,
+  "accion": "\"Fascinante... no es un objeto, es un ancla.\"\n\nSigo concentrada en la pieza, intentando discernir si puedo rastrear el origen de esa frecuencia o identificar qué es exactamente lo que estabilizaba.\n\n{Arcanos}",
+  "tiradas": [
+   {
+    "hab": "Arcanos",
+    "tipo": "cognitiva",
+    "dado": 10,
+    "total": 14,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "saber",
+    "decl": false,
+    "evid": "Ahora sabes que esto era una pieza de un engranaje invisible, un anclaje diseñado para mantener la realidad cohesionada frente a una fuerza externa que tendía a deshilacharla."
+   }
+  ]
+ },
+ {
+  "id": "V643185",
+  "par": "06",
+  "brazo": "G2",
+  "turn": 809,
+  "accion": "\"Maldita sea.\"\n\nGruño mientras me limpio la herida con un trapo sucio, ignorando el dolor. Me pongo en pie y empiezo a rastrear el suelo alrededor de los restos, buscando cualquier otro fragmento que no se haya desintegrado.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 3,
+    "total": 2,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "creer",
+    "decl": false,
+    "evid": "El suelo es una masa uniforme de sedimentos y materia orgánica en descomposición; cada fragmento que crees reconocer resulta ser una piedra calcárea o un trozo de hueso animal erosionado por la humedad."
+   }
+  ]
+ },
+ {
+  "id": "V333140",
+  "par": "14",
+  "brazo": "G2",
+  "turn": 286,
+  "accion": "\"Solo busco resolver un pequeño malentendido financiero, amigo mío. Algo que nos beneficiará a ambos si se soluciona rápido.\"\n\nLe guiño un ojo y trato de leer su lenguaje corporal para ver cuánto está dispuesto a ceder.\n{Perspicacia}",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 6,
+    "total": 9,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "HABLA",
+    "verbo": "mencionar",
+    "decl": true,
+    "evid": "El tono complaciente desaparece, sustituido por una cautela profesional; aunque no se ha puesto agresivo, vuelve a tensar la mandíbula y mantiene una distancia prudencial, evaluando si el \"beneficio\" que mencionas es una oferta legítima o una imprudencia que podría costarle el puesto."
+   }
+  ]
+ },
+ {
+  "id": "V250772",
+  "par": "17",
+  "brazo": "G2",
+  "turn": 953,
+  "accion": "\"Gracias por la hospitalidad\".\n\nGuardo el anillo y las monedas rápidamente. Antes de marcharme, observo el resto del mostrador buscando cualquier otro objeto de valor o algún papel que el tabernero haya dejado a la vista.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 14,
+    "total": 16,
+    "exito15": true
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "HABLA",
+    "verbo": "pronunciar",
+    "decl": true,
+    "evid": "El tabernero se gira justo cuando pronuncias las palabras, dedicándote un gesto vago con la mano y una sonrisa distraída que no llega a sus ojos, demasiado absortos en sus propios pensamientos."
+   }
+  ]
+ },
+ {
+  "id": "V198422",
+  "par": "17",
+  "brazo": "G2",
+  "turn": 1224,
+  "accion": "\"Interesante juguete.\"\n\nMe acerco con cautela, tratando de localizar el núcleo o el interruptor principal entre el vapor y el caos de engranajes.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 6,
+    "total": 7,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "creer",
+    "decl": false,
+    "evid": "Cada vez que crees haber divisado una palanca o una escotilla que podría conducir al núcleo, un nuevo espasmo mecánico desplaza la pieza o una nube de vapor blanco te nubla la vista por completo."
+   }
+  ]
+ },
+ {
+  "id": "V981496",
+  "par": "03",
+  "brazo": "G2",
+  "turn": 1238,
+  "accion": "\"Vaya, esto no ha salido como esperaba. Perdón por el desorden.\" Limpio los dedos en la tela de mi manga, quitando la mayor parte de la grasa. \"Tienes razón, Elian, no debemos actuar con precipitación. Pero este mecanismo me intriga. ¿Podrías echarle un vistazo tú mismo, con cuidado? A lo mejor encuentras algo que a mí se me haya pasado.\" {Persuasión}\n\nDejo de tocar la hendidura y doy un paso atrás, esperando a ver qué hace Elian. Mientras tanto, escruto la sala en busca de cualquier otro indicio o detalle que pueda haber pasado por alto. {Percepción}",
+  "tiradas": [
+   {
+    "hab": "Persuasión",
+    "tipo": "social",
+    "dado": 13,
+    "total": 17,
+    "exito15": true
+   },
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 3,
+    "total": 4,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "VOLICION",
+    "verbo": "aceptar",
+    "decl": false,
+    "evid": "Elian suspira, pero su mirada se suaviza al ver que aceptas su advertencia."
+   }
+  ]
+ },
+ {
+  "id": "V464079",
+  "par": "13",
+  "brazo": "G2",
+  "turn": 888,
+  "accion": "\"Interesante. Una geometría que no pertenece a este plano.\"\n\nMe acerco más al borde y trato de analizar los patrones de luz para encontrar alguna secuencia repetitiva que pueda comprender.\n\n{Arcanos}",
+  "tiradas": [
+   {
+    "hab": "Arcanos",
+    "tipo": "cognitiva",
+    "dado": 4,
+    "total": 8,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "creer",
+    "decl": false,
+    "evid": "Los patrones que creías reconocer se desvanecen en cuanto intentas aislarlos, convirtiéndose en un ruido visual blanco que te obliga a parpadear para no perder el equilibrio."
+   }
+  ]
+ },
+ {
+  "id": "V301429",
+  "par": "22",
+  "brazo": "G2",
+  "turn": 977,
+  "accion": "\"¿Qué demonios eres?\"\n\nSostengo el frasco con firmeza y observo la marca blanquecina, intentando descifrar si ese pulso sigue algún patrón conocido.\n\n{Arcanos}",
+  "tiradas": [
+   {
+    "hab": "Arcanos",
+    "tipo": "cognitiva",
+    "dado": 10,
+    "total": 12,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "recordar",
+    "decl": false,
+    "evid": "La pápula continúa su latido sordo, un ritmo monótono y visceral que no se asemeja a ninguna de las frecuencias místicas o ritmos rituales que recuerdas de tus estudios."
+   }
+  ]
+ },
+ {
+  "id": "V287253",
+  "par": "15",
+  "brazo": "G2",
+  "turn": 400,
+  "accion": "\"No se preocupe, amigo mío. No está solo ahora.\"\n\nLe sonrío con calidez mientras lo ayudo a ponerse de pie por completo y trato de darle apoyo.\n\n{Medicina}",
+  "tiradas": [
+   {
+    "hab": "Medicina",
+    "tipo": "cognitiva",
+    "dado": 8,
+    "total": 9,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "EMOCION",
+    "verbo": "recorrer",
+    "decl": false,
+    "evid": "Sus ojos, nublados por la edad y el miedo, te recorren con una mezcla de asombro y desconfianza instintiva, aunque no se aparta de tu apoyo."
+   }
+  ]
+ },
+ {
+  "id": "V309527",
+  "par": "04",
+  "brazo": "G2",
+  "turn": 1154,
+  "accion": "\"Es una transferencia de energía, no una simple unión.\"\n\nIntento descifrar la lógica geométrica de los filamentos para comprender el flujo.\n{Arcanos}",
+  "tiradas": [
+   {
+    "hab": "Arcanos",
+    "tipo": "cognitiva",
+    "dado": 20,
+    "total": 24,
+    "exito15": true
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "comprender",
+    "decl": true,
+    "evid": "El flujo no es lineal, sino que se mueve en espirales fractales que convergen en el núcleo de obsidiana; comprendes que los filamentos actúan como un sistema de filtrado, purificando la energía bruta de la piedra para convertirla en una frecuencia estable y utilizable."
+   }
+  ]
+ },
+ {
+  "id": "V459391",
+  "par": "12",
+  "brazo": "G2",
+  "turn": 242,
+  "accion": "\"¡Sigue gritando, viejo, que así todos saben que eres un lento!\"\n\nMe pongo en pie rápidamente y arranco a correr en dirección opuesta, buscando perderme entre la multitud o algún callejón cercano.\n\n{Acrobacias}",
+  "tiradas": [
+   {
+    "hab": "Acrobacias",
+    "tipo": "fisica",
+    "dado": 5,
+    "total": 9,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "saber",
+    "decl": true,
+    "evid": "—¡Tú solo sabes correr como un pato cojo!"
+   }
+  ]
+ },
+ {
+  "id": "V188255",
+  "par": "21",
+  "brazo": "G2",
+  "turn": 573,
+  "accion": "\"No te deshagas ahora, Serafín. Mantén el control.\"\n\nMe acerco con cautela, manteniendo una distancia prudencial, e intento analizar la estructura geométrica del sello buscando alguna debilidad o patrón repetitivo.\n\n{Arcanos}",
+  "tiradas": [
+   {
+    "hab": "Arcanos",
+    "tipo": "cognitiva",
+    "dado": 3,
+    "total": 7,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "creer",
+    "decl": false,
+    "evid": "Los ángulos que creías haber identificado se desplazan y se entrelazan en un patrón caótico que desafía la lógica euclidiana; no hay una repetición clara ni una fisura evidente que puedas aprovechar."
+   }
+  ]
+ },
+ {
+  "id": "V624980",
+  "par": "07",
+  "brazo": "G2",
+  "turn": 139,
+  "accion": "\"Maldita sea.\"\n\nGruño y me quedo hincado en el barro, tanteando a ciegas la zona donde se hundió el objeto para intentar localizarlo bajo el fango.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 9,
+    "total": 11,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "creer",
+    "decl": false,
+    "evid": "El barro se siente espeso, casi granulado, y cada vez que crees rozar una arista sólida, resulta ser una piedra roma o un resto orgánico en descomposición que se deshace al tacto."
+   }
+  ]
+ },
+ {
+  "id": "V865859",
+  "par": "24",
+  "brazo": "G2",
+  "turn": 482,
+  "accion": "\"Maldita sea, justo ahora.\"\n\nMe quedo mirando la mancha de metal y tela, intentando recordar el último patrón que vi antes del salto.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 7,
+    "total": 8,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "EMOCION",
+    "verbo": "en_ti",
+    "decl": false,
+    "evid": "Por más que intentas reconstruir las líneas y los ángulos en tu mente, el recuerdo es como intentar atrapar humo con las manos; cada vez que crees reconocer una esquina o un pasillo, la imagen se desliza y se distorsiona, dejándote solo con la frustración de haber estado tan cerca."
+   },
+   {
+    "cat": "COGNICION",
+    "verbo": "creer",
+    "decl": false,
+    "evid": "Por más que intentas reconstruir las líneas y los ángulos en tu mente, el recuerdo es como intentar atrapar humo con las manos; cada vez que crees reconocer una esquina o un pasillo, la imagen se desliza y se distorsiona, dejándote solo con la frustración de haber estado tan cerca."
+   }
+  ]
+ },
+ {
+  "id": "V537614",
+  "par": "04",
+  "brazo": "G2",
+  "turn": 1130,
+  "accion": "\"Coordenadas que no están en los mapas... fascinante.\"\n\nCierro el diario con cuidado y trato de memorizar los detalles del mecanismo y el horario de la marea.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 1,
+    "total": 5,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "recordar",
+    "decl": false,
+    "evid": "El detalle del mecanismo bajo el pedestal se vuelve borroso, como una imagen reflejada en agua agitada; recuerdas que hay algo relacionado con la luz y la marea, pero el ángulo exacto y el momento preciso se han escapado de tu memoria, dejándote con una sensación de vacío y confusión sobre cómo proceder."
+   }
+  ]
+ },
+ {
+  "id": "V721309",
+  "par": "26",
+  "brazo": "G2",
+  "turn": 346,
+  "accion": "\"Esto no pertenece a nuestro bosque. No debería estar aquí.\"\n\nMe inclino para observar mejor el rastro y trato de determinar la dirección exacta y la frescura de la herida.\n\n{Supervivencia}",
+  "tiradas": [
+   {
+    "hab": "Supervivencia",
+    "tipo": "cognitiva",
+    "dado": 1,
+    "total": 5,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "creer",
+    "decl": false,
+    "evid": "Ahora el rastro parece fundirse con el entorno; las marcas de la herida que creías identificar se confunden con la resina natural de los árboles y las huellas borrosas del suelo."
+   }
+  ]
+ },
+ {
+  "id": "V415899",
+  "par": "11",
+  "brazo": "G2",
+  "turn": 1136,
+  "accion": "\"El Archivo de Presagios... si estas verdades siguen ahí, es mi deber asegurar que no caigan en manos equivocadas.\"\n\nSigo examinando el anillo con cuidado, buscando cualquier marca adicional que me indique cómo activar la llave.\n\n{Religión}",
+  "tiradas": [
+   {
+    "hab": "Religión",
+    "tipo": "cognitiva",
+    "dado": 15,
+    "total": 16,
+    "exito15": true
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "comprender",
+    "decl": false,
+    "evid": "Al analizar el patrón de los glifos bajo esta luz, comprendes que la llave no se activa mediante un mecanismo físico, sino a través de un acto de devoción o un vínculo espiritual que resuene con la fe del portador."
+   }
+  ]
+ },
+ {
+  "id": "V833009",
+  "par": "17",
+  "brazo": "G2",
+  "turn": 568,
+  "accion": "\"Interesante.\"\n\nTomo el anillo de jaspe y lo guardo rápidamente en mi bolsillo. Luego, examino la runa del sello con cuidado antes de decidir si romperlo.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 17,
+    "total": 18,
+    "exito15": true
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "reconocer",
+    "decl": false,
+    "evid": "Al analizar los trazos geométricos, reconoces que no se trata de un lenguaje común ni de un blasón heráldico, sino de un glifo de contención diseñado para preservar el contenido contra el paso del tiempo y la humedad."
+   }
+  ]
+ },
+ {
+  "id": "V413844",
+  "par": "07",
+  "brazo": "G2",
+  "turn": 613,
+  "accion": "\"Interesante. No es un error, es una voluntad.\"\n\nMe acerco más al metal, intentando analizar la naturaleza de esa energía violeta y su origen.\n\n{Arcanos}",
+  "tiradas": [
+   {
+    "hab": "Arcanos",
+    "tipo": "cognitiva",
+    "dado": 13,
+    "total": 15,
+    "exito15": true
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "comprender",
+    "decl": false,
+    "evid": "A medida que comprendes la naturaleza del parásito, la vibración del metal aumenta, emitiendo un zumbido agudo que empieza a hacer sangrar los capilares de tus oídos."
+   }
+  ]
+ },
+ {
+  "id": "V667488",
+  "par": "06",
+  "brazo": "G2",
+  "turn": 710,
+  "accion": "\"Esto parece valer una fortuna.\"\n\nGuardo el regulador de ámbar en mi bolsa y me acerco al autómata para intentar arrancarle cualquier otra pieza útil mientras agoniza.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 17,
+    "total": 16,
+    "exito15": true
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "HABLA",
+    "verbo": "asegurar",
+    "decl": true,
+    "evid": "Mientras aseguras la pieza, el autómata lanza un último espasmo violento, golpeando el suelo con un estruendo metálico antes de que sus sensores oculares se apaguen definitivamente, dejando el lugar sumido en el silencio sepulcral de la bruma."
+   }
+  ]
+ },
+ {
+  "id": "V902663",
+  "par": "02",
+  "brazo": "G2",
+  "turn": 565,
+  "accion": "{Percepción}\n\nMe mantengo en guardia, observando atentamente a las figuras. \"No he venido aquí a luchar, pero defenderé a los inocentes si es necesario. ¿Qué queréis? ¿Por qué os escondéis en las sombras en lugar de hablar abiertamente?\"",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 1,
+    "total": 5,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "HABLA",
+    "verbo": "hablar",
+    "decl": true,
+    "evid": "Mientras hablas, el eco de tu propia voz te distrae, ocultándote el hecho de que el semicírculo se ha cerrado mucho más de lo que crees; el chasquido de huesos que escuchas ya no viene de frente, sino que resuena ahora justo detrás de tu nuca."
+   },
+   {
+    "cat": "COGNICION",
+    "verbo": "creer",
+    "decl": false,
+    "evid": "Mientras hablas, el eco de tu propia voz te distrae, ocultándote el hecho de que el semicírculo se ha cerrado mucho más de lo que crees; el chasquido de huesos que escuchas ya no viene de frente, sino que resuena ahora justo detrás de tu nuca."
+   }
+  ]
+ },
+ {
+  "id": "V427537",
+  "par": "04",
+  "brazo": "G2",
+  "turn": 228,
+  "accion": "\"Así que no es la administración general, sino un registro restringido. Interesante.\"\n\nMe inclino hacia adelante para observar la muesca del sello con más detalle.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 12,
+    "total": 16,
+    "exito15": true
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "darse cuenta",
+    "decl": false,
+    "evid": "Te das cuenta de que ese sello pertenece específicamente a la sección de *Asuntos Marítimos y Derivas*, un anexo donde se registran los naufragios y las pertenencias no reclamadas que llegan con la marea."
+   }
+  ]
+ },
+ {
+  "id": "V903114",
+  "par": "11",
+  "brazo": "G2",
+  "turn": 781,
+  "accion": "\"No busco consuelo para mí, sino para ti. Nadie debería cargar con ese silencio.\"\n\nRetiro la mano lentamente y observo los ojos del Centinela, intentando comprender la naturaleza de esa vibración.\n\n{Religión}",
+  "tiradas": [
+   {
+    "hab": "Religión",
+    "tipo": "cognitiva",
+    "dado": 1,
+    "total": 2,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "asaltar",
+    "decl": false,
+    "evid": "En lugar de comprender la naturaleza de la energía, te asaltan dudas repentinas y absurdas sobre los dogmas de tu propia fe; por un instante, las verdades que dabas por sentadas te parecen relatos infantiles y carentes de sentido, dejándote en un vacío espiritual desconcertante y desorientador."
+   }
+  ]
+ },
+ {
+  "id": "V867918",
+  "par": "24",
+  "brazo": "G2",
+  "turn": 162,
+  "accion": "\"Buenas tardes, amigo. Qué alegría ver que el negocio sigue tan animado.\"\n\nMe acerco al mostrador con una sonrisa y trato de captar la atención del tabernero mientras observo discretamente si lleva alguna llave o bolsa de monedas al cinto.\n\n{Persuasión}",
+  "tiradas": [
+   {
+    "hab": "Persuasión",
+    "tipo": "social",
+    "dado": 2,
+    "total": 4,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "HABLA",
+    "verbo": "hablar",
+    "decl": true,
+    "evid": "Mientras hablas, tus ojos escanean su cintura."
+   }
+  ]
+ },
+ {
+  "id": "V426677",
+  "par": "19",
+  "brazo": "G2",
+  "turn": 849,
+  "accion": "\"Demasiado desordenado para ser un simple libro de cuentas.\"\n\nCierro el cuaderno y lo guardo rápidamente en mi equipo. Empiezo a registrar el resto del estante buscando cualquier otra nota o correspondencia que aclare el sentido de esas entregas.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 12,
+    "total": 11,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "darse cuenta",
+    "decl": true,
+    "evid": "El estante es un caos de burocracia olvidada; cuanto más buscas, más te das cuenta de que el cuaderno que ya has guardado era, con diferencia, el objeto más singular de esa sección."
+   }
+  ]
+ },
+ {
+  "id": "V254316",
+  "par": "11",
+  "brazo": "G2",
+  "turn": 647,
+  "accion": "\"Esto no es obra de ningún dios que yo conozca...\"\n\nMe acerco más para intentar descifrar la lógica de esos patrones geométricos.\n\n{Arcanos}",
+  "tiradas": [
+   {
+    "hab": "Arcanos",
+    "tipo": "cognitiva",
+    "dado": 6,
+    "total": 5,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "creer",
+    "decl": false,
+    "evid": "Cada vez que crees haber identificado una secuencia o un ángulo recurrente, la línea se desplaza o se pliega sobre sí misma en una dimensión que tu mente no alcanza a procesar."
+   },
+   {
+    "cat": "COGNICION",
+    "verbo": "reconocer",
+    "decl": false,
+    "evid": "La membrana permanece allí, imperturbable y muda, guardando su secreto tras una matemática que no reconoces."
+   }
+  ]
+ },
+ {
+  "id": "V715880",
+  "par": "07",
+  "brazo": "G2",
+  "turn": 168,
+  "accion": "\"El silencio es la llave...\"\n\nMe quedo inmóvil, concentrándome en el zumbido y analizando la estructura de las runas y la inscripción.\n\n{Arcanos}",
+  "tiradas": [
+   {
+    "hab": "Arcanos",
+    "tipo": "cognitiva",
+    "dado": 16,
+    "total": 18,
+    "exito15": true
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "comprender",
+    "decl": false,
+    "evid": "Al analizar la disposición de las varillas de acero, comprendes que el núcleo se desbloqueará solo si la vibración externa cesa por completo, permitiendo que el aceite rancio actúe como el lubricante final para el giro de la cerradura."
+   }
+  ]
+ },
+ {
+  "id": "V877252",
+  "par": "20",
+  "brazo": "G2",
+  "turn": 989,
+  "accion": "\"No te preocupes por el papel, preocúpate por cómo vas a recuperar tu orgullo.\"\n\nIgnoro su sarcasmo y despliego el pergamino rápidamente para leer el contenido.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 20,
+    "total": 19,
+    "exito15": true
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "comprender",
+    "decl": false,
+    "evid": "No solo comprendes las obligaciones del contrato del dragón, sino que localizas una inconsistencia gramatical en el tercer párrafo, una coma mal puesta que altera el sentido de una cláusula de propiedad, dejándola abierta a una interpretación que favorece absurdamente al contratante."
+   }
+  ]
+ },
+ {
+  "id": "V864549",
+  "par": "22",
+  "brazo": "G2",
+  "turn": 166,
+  "accion": "\"¿Quién eres, Aurelia?\"\n\nMantengo la mano sobre la placa de mármol, concentrándome en esa vibración para ver si puedo extraer alguna información del nombre.\n\n{Arcanos}",
+  "tiradas": [
+   {
+    "hab": "Arcanos",
+    "tipo": "cognitiva",
+    "dado": 12,
+    "total": 14,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "comprender",
+    "decl": false,
+    "evid": "En el instante en que comprendes la naturaleza del vínculo, el agua aceitosa a tus pies comienza a agitarse."
+   }
+  ]
+ },
+ {
+  "id": "V812659",
+  "par": "23",
+  "brazo": "G2",
+  "turn": 1284,
+  "accion": "\"Esto no es una muerte natural ni un ataque animal. Es una profanación deliberada.\"\n\nObservo detenidamente la red de filamentos y el tapón de sal negra, intentando identificar el origen de tal anomalía.\n\n{Religión}",
+  "tiradas": [
+   {
+    "hab": "Religión",
+    "tipo": "cognitiva",
+    "dado": 3,
+    "total": 4,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "recordar",
+    "decl": false,
+    "evid": "El patrón mineral no encaja con ninguna de las plagas divinas ni con los rituales de nigromancia estándar que recuerdas de tus estudios; es una geometría extraña, ajena a los dogmas y a las liturgias que definen la vida y la muerte en este mundo."
+   }
+  ]
+ },
+ {
+  "id": "V655390",
+  "par": "02",
+  "brazo": "G2",
+  "turn": 252,
+  "accion": "Me acerco al terminal y examino las notas y diagramas en la pantalla, buscando alguna pista sobre cómo acceder al Sótano del Eco. {Investigación}\n\nSi encuentro algo útil, se lo comunico al grupo. De lo contrario, sugiero que busquemos más información en la biblioteca o hablemos con los académicos de la torre para ver si pueden arrojar algo de luz sobre este misterio.",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 19,
+    "total": 18,
+    "exito15": true
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "comprender",
+    "decl": false,
+    "evid": "Al contrastar estas notas con el diagrama manchado, comprendes que el acceso al Sótano del Eco no es una puerta física convencional, sino un mecanismo activado por vibración sonora que se encuentra oculto tras el relieve de la pared norte de la sala."
+   }
+  ]
+ },
+ {
+  "id": "V989795",
+  "par": "19",
+  "brazo": "G2",
+  "turn": 211,
+  "accion": "\"Vaya, vaya... secretos guardados bajo llave.\"\n\nTomo la caja y el anillo, guardándolos rápidamente en mi equipo. Leo los folios con atención para comprender el verdadero estado de los suministros.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 4,
+    "total": 3,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "reconocer",
+    "decl": false,
+    "evid": "La caligrafía es densa, llena de abreviaturas contables arcaicas y referencias a almacenes que no reconoces; los números se mezclan en columnas confusas que no logras cuadrar."
+   }
+  ]
+ },
+ {
+  "id": "V285033",
+  "par": "10",
+  "brazo": "G2",
+  "turn": 881,
+  "accion": "\"Ya basta de llantos. Ahora vas a decirme exactamente qué es lo que ocurre aquí.\"\n\nGuardo el arma y me inclino sobre él, manteniendo la presión psicológica.\n\n{Intimidación}",
+  "tiradas": [
+   {
+    "hab": "Intimidación",
+    "tipo": "social",
+    "dado": 19,
+    "total": 19,
+    "exito15": true
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "HABLA",
+    "verbo": "hablar",
+    "decl": true,
+    "evid": "Tiembla violentamente, y cuando hablas, un espasmo recorre sus hombros; el pavor se ha transformado en una sumisión absoluta."
+   }
+  ]
+ },
+ {
+  "id": "V431791",
+  "par": "03",
+  "brazo": "G2",
+  "turn": 1372,
+  "accion": "\"Tranquilo, amigo. Estás a salvo aquí, contigo mismo. No dejaré que nada te lleve de este mundo.\" Le aprieto la mano con suavidad, tratando de transmitirle calma y seguridad.\n\nExamino los glifos del círculo con mayor detenimiento. {Investigación} ¿Puedo discernir cómo funciona este anclaje psíquico? ¿Hay algo que pueda hacer para ayudarlo a recuperar sus fragmentos de memoria?",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 15,
+    "total": 15,
+    "exito15": true
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "comprender",
+    "decl": false,
+    "evid": "Al estudiar los grabados, comprendes que el círculo actúa como un imán espiritual."
+   }
+  ]
+ },
+ {
+  "id": "V187675",
+  "par": "19",
+  "brazo": "G2",
+  "turn": 182,
+  "accion": "Tomo la carta y el mapa, guardándolos rápidamente en mi ropa.\n\n\"Interesante. Alguien tiene planes que no quiere que se sepan.\"\n\nExamino el mapa con detenimiento para memorizar la ubicación de la poterna.\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 4,
+    "total": 3,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "saber",
+    "decl": true,
+    "evid": "La X roja permanece allí, burlona, señalando un lugar que sabes que existe, pero que no logras ubicar con certeza en la geografía de la ciudad."
+   }
+  ]
+ },
+ {
+  "id": "V970372",
+  "par": "23",
+  "brazo": "G2",
+  "turn": 236,
+  "accion": "\"Esto no es natural.\"\nObservo los filamentos con detenimiento, tratando de identificar si pertenecen a algún ritual o entidad conocida.\n{Religión}",
+  "tiradas": [
+   {
+    "hab": "Religión",
+    "tipo": "cognitiva",
+    "dado": 17,
+    "total": 18,
+    "exito15": true
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "recordar",
+    "decl": false,
+    "evid": "La forma en que se entrelazan con la sal evoca una simbiosis parasitaria, una técnica de anclaje que recuerdas haber visto en textos prohibidos sobre la nigromancia de los planos inferiores."
+   }
+  ]
+ },
+ {
+  "id": "V784010",
+  "par": "02",
+  "brazo": "G2",
+  "turn": 202,
+  "accion": "\"¡Cuidado!\" Grito mientras me aparto de un salto de la rejilla que cae. Inspecciono la rejilla y el mecanismo para ver si puedo desactivarlo o si hay algo más oculto aquí. {Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 1,
+    "total": 0,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "creer",
+    "decl": false,
+    "evid": "Al inclinarte para examinar el mecanismo, el polvo nubla tu visión y, en un intento por limpiar la zona, tu mano presiona accidentalmente una palanca de hierro que creías parte del marco."
+   }
+  ]
+ },
+ {
+  "id": "V560323",
+  "par": "08",
+  "brazo": "G2",
+  "turn": 844,
+  "accion": "\"Si hay alguien ahí dentro, que hable o que se aparte.\"\n\nExtiendo la mano y golpeo con fuerza la placa del pecho de la armadura para escuchar el sonido que produce.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 1,
+    "total": 4,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "comprender",
+    "decl": false,
+    "evid": "El impacto es torpe y el golpe no suena hueco ni sólido, sino que produce un chirrido metálico estridente y desagradable que reverbera en todo el espacio, dejándote el nudillo dolorido y la sensación de haber golpeado una superficie cuya densidad no comprendes."
+   }
+  ]
+ },
+ {
+  "id": "V864675",
+  "par": "15",
+  "brazo": "G2",
+  "turn": 1148,
+  "accion": "\"No me rendiré tan fácilmente. Debe estar aquí.\"\n\nSigo buscando en el lecho del río, extendiendo el área de búsqueda y palpando el fondo con más cuidado.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 7,
+    "total": 6,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "creer",
+    "decl": false,
+    "evid": "Cada vez que crees sentir una arista metálica o una forma reconocible, resulta ser solo otra piedra erosionada por la corriente o un resto de madera orgánica."
+   }
+  ]
+ },
+ {
+  "id": "V104009",
+  "par": "01",
+  "brazo": "G2",
+  "turn": 836,
+  "accion": "\"Entonces, ¿tú no puedes devolverla porque te la quitaron al entrar aquí, pero tampoco puedes usarla para saldar tu deuda, porque no es tuya?\" Le echo un vistazo a las monedas que tengo en mi bolsillo, pensando que podría ofrecerle una cantidad equivalente para que pueda salir de aquí. {Perspicacia}",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 10,
+    "total": 12,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "HABLA",
+    "verbo": "mencionar",
+    "decl": true,
+    "evid": "Sus pupilas se dilatan ligeramente cuando mencionas el concepto de saldar la deuda, pero sus labios permanecen apretados en una línea fina."
+   }
+  ]
+ },
+ {
+  "id": "V594774",
+  "par": "01",
+  "brazo": "G2",
+  "turn": 729,
+  "accion": "\"Interesante...\" Miro fijamente la insignia que se asoma bajo su chaqueta, tratando de recordar dónde la he visto antes. {Investigación} Aunque su actitud me pone alerta, no voy a dejar pasar esta oportunidad. \"Está bien, supongamos que estoy interesado en tu... eficiencia. ¿Qué puedo hacer por el Consorcio de la Sal?\"",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 6,
+    "total": 5,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "saber",
+    "decl": false,
+    "evid": "La insignia de plata es un destello familiar, pero el recuerdo se siente como una imagen borrosa bajo el agua; sabes que el emblema pertenece a alguien con poder, pero no logras vincularlo con un nombre, un rostro o un evento concreto en tu memoria."
+   }
+  ]
+ },
+ {
+  "id": "V415152",
+  "par": "09",
+  "brazo": "G2",
+  "turn": 503,
+  "accion": "\"Tranquilo, ya estás a salvo. No te voy a soltar.\"\n\nLe doy una palmada suave en el hombro para calmarlo mientras mantengo la presión sobre la herida. Intento analizar la naturaleza de ese líquido aceitoso que burbujeaba.\n\n{Medicina}",
+  "tiradas": [
+   {
+    "hab": "Medicina",
+    "tipo": "cognitiva",
+    "dado": 4,
+    "total": 8,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "saber",
+    "decl": false,
+    "evid": "Solo sabes que es ajeno y que sigue ahí, contenido a duras penas por tu presión."
+   }
+  ]
+ },
+ {
+  "id": "V352007",
+  "par": "26",
+  "brazo": "G2",
+  "turn": 1157,
+  "accion": "\"Tranquila, pequeña, no pasa nada.\"\n\nMe pongo de rodillas y empiezo a apartar las hojas y el barro con cuidado para recuperar los fragmentos.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 11,
+    "total": 10,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "creer",
+    "decl": false,
+    "evid": "El barro se siente denso, casi líquido en algunos puntos, y cada vez que crees sentir una arista dura, resulta ser una piedra lisa o una raíz retorcida."
+   }
+  ]
+ },
+ {
+  "id": "V418463",
+  "par": "08",
+  "brazo": "G2",
+  "turn": 277,
+  "accion": "\"Dos llaves y un traidor borrado... esto es más complejo de lo que parecía.\"\n\nCierro el libro con cuidado y busco en el entorno cualquier rastro o pista que me indique dónde se encuentra exactamente esa sección de Crónicas Prohibidas.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 1,
+    "total": 0,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "darse cuenta",
+    "decl": false,
+    "evid": "El estrépito resuena en el silencio de la sala como un trueno, y mientras intentas recoger el caos de papeles, te das cuenta de que no hay ninguna señal clara en el entorno; solo el eco de tu accidente y la tinta negra consumiendo la pista que buscabas."
+   }
+  ]
+ },
+ {
+  "id": "V160753",
+  "par": "05",
+  "brazo": "G2",
+  "turn": 124,
+  "accion": "\"No te acostumbres a que te rescaten, Damil.\"\n\nMe detengo un instante antes de desaparecer por completo en el pasillo, asegurándome de que no haya nadie más acechando en las sombras cercanas.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 1,
+    "total": 3,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "EMOCION",
+    "verbo": "sentirse",
+    "decl": false,
+    "evid": "El entorno se vuelve un borrón de sombras confusas; te sientes desorientado y vulnerable, convencido de que el pasillo está despejado cuando, en realidad, has pasado por alto un detalle evidente en la arquitectura que te deja expuesto."
+   }
+  ]
+ },
+ {
+  "id": "V456219",
+  "par": "24",
+  "brazo": "G2",
+  "turn": 1021,
+  "accion": "\"Tienes razón, la prudencia es la madre de la riqueza. No quiero que nos pillen antes de empezar.\"\n\nLe dedico una sonrisa tranquilizadora y trato de analizar si su cautela es real o si oculta algún detalle del botín.\n\n{Perspicacia}",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 17,
+    "total": 17,
+    "exito15": true
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "HABLA",
+    "verbo": "hablar",
+    "decl": true,
+    "evid": "Se acerca de nuevo, dándote una palmada amistosa en el hombro, convencido ahora de que hablas el mismo idioma: el de la avaricia inteligente."
+   }
+  ]
+ },
+ {
+  "id": "V878945",
+  "par": "06",
+  "brazo": "G2",
+  "turn": 7,
+  "accion": "\"Me importa un bledo con quién juegues si no empiezas a hablar.\"\n\nAprieto el agarre sobre su brazo y lo empujo con fuerza contra la pared para dejarlo sin aire.\n{Intimidación}",
+  "tiradas": [
+   {
+    "hab": "Intimidación",
+    "tipo": "social",
+    "dado": 15,
+    "total": 17,
+    "exito15": true
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "VOLICION",
+    "verbo": "aceptar",
+    "decl": false,
+    "evid": "El aire se escapa de su pecho en un silbido agónico y su altanería se desmorona instantáneamente; el temblor de sus manos se extiende ahora a todo el cuerpo, mientras sus ojos se dilatan por el pánico al comprender que la fuerza bruta es la única moneda que aceptas en este callejón."
+   }
+  ]
+ },
+ {
+  "id": "V842123",
+  "par": "12",
+  "brazo": "G2",
+  "turn": 990,
+  "accion": "\"No soy quien te va a ejecutar, pero necesito que respires y me digas exactamente quién te asusta tanto.\"\n\nMe agacho para quedar a su altura y trato de analizar su expresión.\n{Perspicacia}",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 2,
+    "total": 2,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "HABLA",
+    "verbo": "mencionar",
+    "decl": true,
+    "evid": "Cuando mencionas la palabra \"ejecutar\", el hombre lanza un gemido ahogado y cierra los ojos con fuerza, apretando los dientes."
+   }
+  ]
+ },
+ {
+  "id": "V638357",
+  "par": "27",
+  "brazo": "G2",
+  "turn": 830,
+  "accion": "\"Demasiado silencio para mi gusto.\"\nSigo avanzando lentamente, tanteando el suelo con la punta de mi bota para evitar cualquier trampa o agujero.\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 1,
+    "total": 4,
+    "exito15": false
+   }
+  ],
+  "hallazgos": [
+   {
+    "cat": "COGNICION",
+    "verbo": "creer",
+    "decl": false,
+    "evid": "Justo cuando crees haber asegurado el siguiente paso, tu pie encuentra un vacío traicionero: una grieta estrecha y profunda, oculta por una capa de sedimentos y oscuridad, que atrapa tu tobillo con la precisión de una trampa natural."
+   }
+  ]
+ },
+ {
+  "id": "V420804",
+  "par": "09",
+  "brazo": "G1",
+  "turn": 235,
+  "accion": "\"Tranquilo, Amancio. Estás a salvo por ahora.\"\n\nSostengo al hombre con firmeza para que no caiga y miro hacia arriba, analizando la estructura del techo y los cables para ver si hay algún punto débil.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 4,
+    "total": 6,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V825324",
+  "par": "16",
+  "brazo": "G1",
+  "turn": 261,
+  "accion": "\"Me basta con que no se parta. No necesito que sea perfecto, solo que me saque de aquí.\"\n\nAcepto la reparación y busco con la mirada algún lugar donde pueda descansar mientras ella trabaja.\n\n{Perspicacia}",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 13,
+    "total": 14,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V320488",
+  "par": "22",
+  "brazo": "G1",
+  "turn": 1375,
+  "accion": "\"¡Aléjate de mí, cosa asquerosa!\"\n\nIntento crear una barrera de energía entre la criatura y yo para frenar su avance.\n\n{Ataque mágico}",
+  "tiradas": [
+   {
+    "hab": "Ataque mágico",
+    "tipo": "combate/salv",
+    "dado": 13,
+    "total": 17,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V444098",
+  "par": "24",
+  "brazo": "G1",
+  "turn": 201,
+  "accion": "\"Está bien, no te tapes la luz, que no quiero que el metal quede mal.\"\n\nMe aparto rápidamente y busco el rincón más oscuro entre las rocas para desaparecer de la vista de la patrulla.\n\n{Sigilo}",
+  "tiradas": [
+   {
+    "hab": "Sigilo",
+    "tipo": "fisica",
+    "dado": 9,
+    "total": 13,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V231953",
+  "par": "15",
+  "brazo": "G1",
+  "turn": 762,
+  "accion": "\"¡Atrás, aberración! No pasarás de aquí.\"\n\nAprovecho el espacio ganado para plantar los pies firmemente y levantar mi arma, manteniendo el escudo al frente para proteger el camino.\n\n{Intimidación}",
+  "tiradas": [
+   {
+    "hab": "Intimidación",
+    "tipo": "social",
+    "dado": 17,
+    "total": 21,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V247930",
+  "par": "10",
+  "brazo": "G1",
+  "turn": 1035,
+  "accion": "\"¡Quítate de en medio si no vas a ayudar!\"\n\nMe lanzo hacia la palanca para intentar moverla usando todo mi peso y fuerza bruta.\n\n{Atletismo}",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 6,
+    "total": 7,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V181153",
+  "par": "05",
+  "brazo": "G1",
+  "turn": 133,
+  "accion": "\"Cierra la boca y camina, Damil.\"\n\nMe deslizo rápidamente hacia la cobertura que ha señalado, manteniendo el perfil bajo.\n\n{Sigilo}",
+  "tiradas": [
+   {
+    "hab": "Sigilo",
+    "tipo": "fisica",
+    "dado": 7,
+    "total": 11,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V622506",
+  "par": "25",
+  "brazo": "G1",
+  "turn": 925,
+  "accion": "\"Perfecto.\"\nGuardo el fragmento rápidamente y me quedo inmóvil, conteniendo la respiración mientras escucho cualquier ruido en el pasillo.\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 13,
+    "total": 15,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V514556",
+  "par": "04",
+  "brazo": "G1",
+  "turn": 1061,
+  "accion": "\"¡Tú no entiendes que la fuerza es irrelevante si el espacio mismo se deshace!\"\n\nIgnoro a Mirela y me concentro en los fragmentos de cristal flotantes para hallar un punto de anclaje lógico. {Arcanos}",
+  "tiradas": [
+   {
+    "hab": "Arcanos",
+    "tipo": "cognitiva",
+    "dado": 10,
+    "total": 14,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V127317",
+  "par": "22",
+  "brazo": "G1",
+  "turn": 1116,
+  "accion": "\"Maldita sea.\"\n\nRetrocedo rápidamente hacia la zona de vapor para intentar desaparecer de su vista.\n\n{Sigilo}",
+  "tiradas": [
+   {
+    "hab": "Sigilo",
+    "tipo": "fisica",
+    "dado": 18,
+    "total": 19,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V733249",
+  "par": "16",
+  "brazo": "G1",
+  "turn": 641,
+  "accion": "\"¡Quítate de ahí, ahora!\"\n\nMe lanzo hacia Zoraida para empujarla lejos del eje y ponerme yo entre ella y la bruma.\n\n{Atletismo}",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 7,
+    "total": 11,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V879181",
+  "par": "03",
+  "brazo": "G1",
+  "turn": 250,
+  "accion": "\"Capitana Roldós, comprendo su posición, pero morir aquí no ayudará a nadie en la superficie. Debemos ser racionales.\" {Persuasión}\n\nSi ella accede, ayudo a mover a los heridos de la manera más segura posible. Si se niega, me desentiendo de ella y...\n\n{Atletismo} Intento sacar a los heridos y a los demás de la cueva antes de que el techo nos sepulte. No podemos sacrificar vidas innecesariamente.",
+  "tiradas": [
+   {
+    "hab": "Persuasión",
+    "tipo": "social",
+    "dado": 18,
+    "total": 22,
+    "exito15": true
+   },
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 2,
+    "total": 1,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V159306",
+  "par": "03",
+  "brazo": "G1",
+  "turn": 1197,
+  "accion": "\"Vamos a ver si podemos estabilizar esto.\" Me acerco a la válvula y examino los escombros que la bloquean. {Atletismo} para intentar despejarlos y poder girar el volante.\n\nSi puedo despejar el camino, agarraré el volante y trataré de girarlo poco a poco para estabilizar la válvula. {Fuerza} para el esfuerzo.\n\nMientras trabajo en la válvula, mantengo un ojo en Yenna para ver su reacción. {Perspicacia} para tratar de leer si parece satisfecha con mi progreso o si cree que es una pérdida de tiempo.",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 4,
+    "total": 3,
+    "exito15": false
+   },
+   {
+    "hab": "Fuerza",
+    "tipo": "fisica",
+    "dado": 10,
+    "total": 9,
+    "exito15": false
+   },
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 20,
+    "total": 23,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V851049",
+  "par": "16",
+  "brazo": "G1",
+  "turn": 159,
+  "accion": "\"Está bien. No me interesan tus humores, solo que hagas el trabajo.\"\n\nMe aparto de ella y miro las estanterías tambaleantes buscando cualquier cosa que parezca valiosa o fuera de lugar.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 20,
+    "total": 23,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V976338",
+  "par": "08",
+  "brazo": "G1",
+  "turn": 483,
+  "accion": "\"Tengo el juicio bastante claro, Roquende. Preocúpese por lo que nos espera abajo.\"\n\nSigo descendiendo con cautela, tratando de no hacer ruido contra las paredes. {Sigilo}",
+  "tiradas": [
+   {
+    "hab": "Sigilo",
+    "tipo": "fisica",
+    "dado": 20,
+    "total": 21,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V651549",
+  "par": "14",
+  "brazo": "G1",
+  "turn": 568,
+  "accion": "\"Qué envidiable don. Yo suelo escuchar solo el ruido de las monedas, pero me fascina esa conexión con el silencio.\"\n\nSigo sonriendo, pero inclino el cuerpo un poco más hacia ella, intentando que mi tono suene genuinamente intrigado por el contenido del libro.\n\n{Persuasión}",
+  "tiradas": [
+   {
+    "hab": "Persuasión",
+    "tipo": "social",
+    "dado": 7,
+    "total": 11,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V512167",
+  "par": "07",
+  "brazo": "G1",
+  "turn": 1161,
+  "accion": "\"No te equivoques, Vane. Solo he asegurado mi inversión.\"\n\nMe pongo de pie rápidamente y busco un punto de apoyo más firme en la piedra. {Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 5,
+    "total": 6,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V993593",
+  "par": "16",
+  "brazo": "G1",
+  "turn": 1370,
+  "accion": "\"Está bien, no busco aprender tu oficio, solo miraba.\"\n\nDoy un paso atrás para dejar espacio, pero mantengo la mirada fija en ella mientras salgo.\n\n{Perspicacia}",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 20,
+    "total": 21,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V857788",
+  "par": "20",
+  "brazo": "G1",
+  "turn": 300,
+  "accion": "\"Tienes razón. Menos charla y más camino.\"\n\nSigo a Matilde rápidamente, manteniendo la mano en el pomo de mi arma mientras vigilo los alrededores.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 14,
+    "total": 17,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V746385",
+  "par": "12",
+  "brazo": "G1",
+  "turn": 761,
+  "accion": "\"No me gusta que me miren así, Osvaldo. Hablemos de negocios, sin rodeos.\"\n\nSaco una pequeña bolsa de monedas y la hago sonar deliberadamente para captar su atención.\n\n{Persuasión}",
+  "tiradas": [
+   {
+    "hab": "Persuasión",
+    "tipo": "social",
+    "dado": 20,
+    "total": 22,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V486819",
+  "par": "26",
+  "brazo": "G1",
+  "turn": 762,
+  "accion": "\"Tranquilo, yo te cuido. No dejaré que te toque.\"\n\nSujeto al superviviente con fuerza para alejarlo de la rendija de la puerta y me coloco entre él y la abertura, vigilando la entrada.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 16,
+    "total": 20,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V572625",
+  "par": "10",
+  "brazo": "G1",
+  "turn": 690,
+  "accion": "\"¡Cierra la boca y mantén la luz ahí!\"\n\nAprovecho el espacio ganado para buscar un punto de apoyo firme en las paredes limosas y lanzar un ataque.\n\n{Atletismo}",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 7,
+    "total": 8,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V589836",
+  "par": "23",
+  "brazo": "G1",
+  "turn": 1084,
+  "accion": "\"Que vengan. La verdad no teme a las sombras.\"\n\nMe coloco espalda contra espalda con el blindado, desenvainando mi arma y fijando la mirada en las criaturas que descienden.\n\n{Iniciativa}",
+  "tiradas": [
+   {
+    "hab": "Iniciativa",
+    "tipo": "combate/salv",
+    "dado": 12,
+    "total": 12,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V565308",
+  "par": "20",
+  "brazo": "G1",
+  "turn": 1068,
+  "accion": "\"Cierra la boca y vigila la puerta. Si me pones nerviosa, tardaré más.\"\n\nMe aparto un poco para intentar ver el panel desde otro ángulo, buscando cualquier palanca o interruptor que no esté cubierto por esa viscosidad.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 5,
+    "total": 4,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V753207",
+  "par": "26",
+  "brazo": "G1",
+  "turn": 1202,
+  "accion": "\"No te preocupes, te cubro la espalda.\"\n\nMe pongo en guardia y observo la convergencia de las sombras en el techo para anticipar su caída.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 20,
+    "total": 24,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V113267",
+  "par": "07",
+  "brazo": "G1",
+  "turn": 589,
+  "accion": "\"Aguanta un segundo más, Vane. No voy a dejar que te aplasten.\"\n\nSuelto el pilar bruscamente y salto hacia la grieta del techo para intentar subir.\n\n{Atletismo}",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 19,
+    "total": 18,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V890337",
+  "par": "09",
+  "brazo": "G1",
+  "turn": 730,
+  "accion": "\"No digas tonterías, Julián. No pienso dejarte aquí.\"\n\nMe aferro a él con fuerza para darle calor y busco con la mirada cualquier detalle que se me haya escapado en la parte superior del cilindro.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 11,
+    "total": 13,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V401400",
+  "par": "18",
+  "brazo": "G1",
+  "turn": 728,
+  "accion": "\"Está bien. Asiento. Sigo el procedimiento.\"\n\nMe reclino en la silla y cruzo los brazos, observando cada movimiento de sus dedos sobre los papeles.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 6,
+    "total": 9,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V888675",
+  "par": "02",
+  "brazo": "G1",
+  "turn": 723,
+  "accion": "\"Está bien, revisemos los alrededores con cuidado.\" Me acerco a los contenedores más cercanos, examinando cualquier señal de peligro o pasajes ocultos.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 15,
+    "total": 19,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V534921",
+  "par": "20",
+  "brazo": "G1",
+  "turn": 1234,
+  "accion": "\"Tienes una lengua muy afilada para alguien que camina por aquí.\"\n\nMe sacudo el resto de resina de la bota y me pongo en guardia, observando el techo para evitar que el fluido me caiga encima.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 8,
+    "total": 11,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V553839",
+  "par": "18",
+  "brazo": "G1",
+  "turn": 973,
+  "accion": "\"No entiendo nada de sellos ni de jerarquías, pero entiendo que estás limpiando donde yo he tocado.\"\n\nMe cruzo de brazos y la miro fijamente a los ojos, tratando de descifrar si es solo arrogancia o si oculta algo más.\n\n{Perspicacia}",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 8,
+    "total": 9,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V185788",
+  "par": "15",
+  "brazo": "G1",
+  "turn": 1326,
+  "accion": "\"¿Diseñado para fragmentarse? Explícame qué propósito tiene tal arquitectura.\"\n\nMe alejo unos pasos del altar para evitar que ese frío me debilite y miro fijamente a la entidad.\n\n{Perspicacia}",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 6,
+    "total": 9,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V301539",
+  "par": "24",
+  "brazo": "G1",
+  "turn": 1090,
+  "accion": "\"¡Vaya mal humor, Fermín! Solo quería asegurarme de que el hierro fuera tan resistente como tu orgullo.\"\n\nMe separo de la puerta y busco con la mirada alguna ventana, rejilla o entrada alternativa en la fachada.\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 6,
+    "total": 8,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V902174",
+  "par": "17",
+  "brazo": "G1",
+  "turn": 149,
+  "accion": "\"Tarda demasiado en asimilarlo.\"\n\nMe separo de la pared y me deslizo hacia la zona donde pasaron los guardias para ver si dejaron caer algo o hay algún panel abierto.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 17,
+    "total": 18,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V874166",
+  "par": "04",
+  "brazo": "G1",
+  "turn": 679,
+  "accion": "\"No me quites el cuaderno, Mirela. Ya tengo lo que necesitaba.\"\n\nCierro el libro con fuerza y lo guardo rápidamente en mi bolso. Miro hacia arriba para evaluar el estado de las grietas.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 14,
+    "total": 15,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V145216",
+  "par": "22",
+  "brazo": "G1",
+  "turn": 1180,
+  "accion": "\"¡Maldita sea!\"\n\nIntento impulsarme con fuerza hacia atrás, lejos del borde, usando cualquier resto de fricción que quede en la superficie.\n\n{Atletismo}",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 13,
+    "total": 12,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V247403",
+  "par": "08",
+  "brazo": "G1",
+  "turn": 420,
+  "accion": "\"Se quedará donde quiera, pero yo no dejaré que pasen.\"\n\nAprieto el agarre de mi escudo y me planto firme, mirando fijamente hacia el ruido del pasillo.\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 11,
+    "total": 14,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V245313",
+  "par": "05",
+  "brazo": "G1",
+  "turn": 932,
+  "accion": "\"Impresionante. Me pregunto si esa eficiencia se mantiene hoy en día.\"\n\nMe acerco al muro y trato de deslizar los dedos en la fisura para ver qué hay detrás sin que Renata lo note.\n\n{Sigilo}",
+  "tiradas": [
+   {
+    "hab": "Sigilo",
+    "tipo": "fisica",
+    "dado": 16,
+    "total": 20,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V429390",
+  "par": "17",
+  "brazo": "G1",
+  "turn": 759,
+  "accion": "\"Me apresuro en corregir el malentendido.\"\n\nSaco la correspondencia de mi ropa y la deposito sobre el mostrador, pero intento deslizar un dedo sobre alguna otra pertenencia valiosa que tenga a mano mientras lo hago.\n\n{Juego de Manos}",
+  "tiradas": [
+   {
+    "hab": "Juego de Manos",
+    "tipo": "fisica",
+    "dado": 14,
+    "total": 18,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V815417",
+  "par": "26",
+  "brazo": "G1",
+  "turn": 1377,
+  "accion": "\"No te preocupes, estás a salvo ahora. Yo me encargo.\"\n\nSujeto al superviviente para que se aleje de la puerta y observo con cuidado el soporte derecho buscando el punto exacto de los cables.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 20,
+    "total": 19,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V896934",
+  "par": "09",
+  "brazo": "G1",
+  "turn": 1091,
+  "accion": "\"¡Cuidado, Julián! ¡Apártese de ahí ahora mismo!\"\n\nMe coloco rápidamente delante del anciano para cubrirlo con mi cuerpo y levanto mi escudo hacia el techo.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 18,
+    "total": 20,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V573308",
+  "par": "08",
+  "brazo": "G1",
+  "turn": 1140,
+  "accion": "\"¡No me digas cómo correr!\"\n\nSigo el ritmo de Ginebra y me lanzo en un sprint final para cruzar el umbral antes de que el hierro cierre el paso.\n{Atletismo}",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 12,
+    "total": 16,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V258556",
+  "par": "23",
+  "brazo": "G1",
+  "turn": 109,
+  "accion": "\"El protocolo es útil mientras sirva a la justicia, no cuando se use para ocultarla.\"\n\nMe inclino ligeramente hacia adelante, manteniendo el contacto visual, y señalo la carpeta cerrada.\n\n{Persuasión}",
+  "tiradas": [
+   {
+    "hab": "Persuasión",
+    "tipo": "social",
+    "dado": 17,
+    "total": 21,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V267013",
+  "par": "17",
+  "brazo": "G1",
+  "turn": 428,
+  "accion": "\"No hay nadie pagándome, Bibiana. Solo soy un hombre que sabe leer entre líneas y que reconoce una oportunidad cuando la ve.\"\n\nSostengo su mirada sin pestañear, manteniendo un tono neutro. {Persuasión}",
+  "tiradas": [
+   {
+    "hab": "Persuasión",
+    "tipo": "social",
+    "dado": 7,
+    "total": 9,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V157362",
+  "par": "20",
+  "brazo": "G1",
+  "turn": 1059,
+  "accion": "\"Guarda tu dinero, que no pienso dejar que nos entierren aquí.\"\n\nSigo a Matilde rápidamente y me deslizo por la rendija de la compuerta antes de que se cierre.\n\n{Atletismo}",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 9,
+    "total": 13,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V660321",
+  "par": "01",
+  "brazo": "G1",
+  "turn": 547,
+  "accion": "Me centro en los cables, ignorando el ruido de los perseguidores. \"Voy a intentar cerrar ese escape de gas.\" {Atletismo} para agarrar la tubería y torcerla, sellándola. Mientras, pregunto a Tomás, \"¿Cómo sabes que nos siguen? ¿Los viste?\" {Perspicacia} para captar algún detalle en su expresión o su tono que me diga si está seguro o solo preocupado.",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 8,
+    "total": 9,
+    "exito15": false
+   },
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 19,
+    "total": 21,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V420576",
+  "par": "13",
+  "brazo": "G1",
+  "turn": 837,
+  "accion": "\"Interesante. No es una putrefacción, es una sustitución.\"\n\nMe acerco al borde de la costra para observar los fractales de sal más de cerca, intentando identificar el origen del pulso.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 7,
+    "total": 11,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V319335",
+  "par": "26",
+  "brazo": "G1",
+  "turn": 1285,
+  "accion": "\"Quédate aquí, no te muevas.\"\n\nLe señalo un rincón oscuro y busco rápidamente algún objeto que pueda lanzar para distraer a esa cosa.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 12,
+    "total": 16,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V460113",
+  "par": "23",
+  "brazo": "G1",
+  "turn": 129,
+  "accion": "\"Tengo el respaldo de la ley para buscar la verdad, pero no voy a luchar contra una mujer por unos papeles.\"\n\nRetiro la mano lentamente y me enderezo, sosteniendo su mirada con frialdad.\n\n{Persuasión}",
+  "tiradas": [
+   {
+    "hab": "Persuasión",
+    "tipo": "social",
+    "dado": 19,
+    "total": 23,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V288481",
+  "par": "12",
+  "brazo": "G1",
+  "turn": 403,
+  "accion": "\"No soy tu ayudante, Osvaldo.\"\n\nMe aparto de la mesa con cuidado para no tirar nada y observo el brazo del mecánico, intentando notar si oculta algo más que simples papeles.\n\n{Perspicacia}",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 1,
+    "total": 1,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V585927",
+  "par": "12",
+  "brazo": "G1",
+  "turn": 1293,
+  "accion": "\"Tanto protocolo para un simple libro. Me pregunto si el Concejo se interesa más por el papel o por quien lo sostiene.\"\n\nDoy un paso atrás, manteniendo la vista en sus manos mientras busco una oportunidad para deslizarme hacia la salida del callejón.\n\n{Sigilo}",
+  "tiradas": [
+   {
+    "hab": "Sigilo",
+    "tipo": "fisica",
+    "dado": 5,
+    "total": 9,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V827283",
+  "par": "17",
+  "brazo": "G1",
+  "turn": 1210,
+  "accion": "\"Tengo todo bajo control.\"\n\nMe alejo de la puerta con calma y regreso hacia Bibiana para evitar que su impaciencia se convierta en sospecha.\n\n{Engaño}",
+  "tiradas": [
+   {
+    "hab": "Engaño",
+    "tipo": "social",
+    "dado": 10,
+    "total": 14,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V402940",
+  "par": "04",
+  "brazo": "G1",
+  "turn": 153,
+  "accion": "\"Espera. Esta estructura es modular, podrían sellarnos el paso en cualquier momento.\"\n\nMe detengo un instante para observar las juntas de los paneles y buscar el mecanismo de cierre.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 15,
+    "total": 19,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V448192",
+  "par": "04",
+  "brazo": "G1",
+  "turn": 1125,
+  "accion": "\"El hambre es un motor poderoso, pero los mapas son los que evitan que nos perdamos en el camino.\"\n\nMe inclino sobre el pergamino para analizar los trazos con detenimiento.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 18,
+    "total": 22,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V508898",
+  "par": "02",
+  "brazo": "G1",
+  "turn": 1287,
+  "accion": "\"¡Voy a echar un vistazo a la puerta!\" {Atletismo} para intentar abrirla. Mientras corro hacia ella, pregunto a Bardo: \"¿Qué hace esta maquinaria aquí? ¿Es normal que esté tan... defectuosa?\"",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 11,
+    "total": 12,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V942986",
+  "par": "03",
+  "brazo": "G1",
+  "turn": 948,
+  "accion": "\"Genial, ahora sí que nos han oído.\" Susurro, intentando no hacer más ruido del necesario. Miro alrededor, buscando alguna otra ruta o escondite por si acaso. {Percepción}\n\nCorvin no está contento con este inicio de operaciones, pero no es momento de echar para atrás. \"Yenna, ¿qué ruta alternativa tenemos si esto se pone feo? Necesitamos un plan B.\" Le pregunto en voz baja, manteniendo la calma pero con urgencia en mi voz.",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 1,
+    "total": 2,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V213061",
+  "par": "04",
+  "brazo": "G1",
+  "turn": 490,
+  "accion": "\"No me digas qué hacer, que yo sé leer los flujos de energía.\"\n\nIgnoro la advertencia de Mirela y me acerco a los reguladores para intentar estabilizarlos.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 16,
+    "total": 20,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V490392",
+  "par": "24",
+  "brazo": "G1",
+  "turn": 1388,
+  "accion": "\"¡Ya voy, ya voy! Solo... disfruto del paisaje.\"\n\nMe obligo a levantarme rápido y trato de avanzar con pasos cortos y seguros, intentando no volver a tropezar mientras me acerco al encapuchado.\n\n{Acrobacias}",
+  "tiradas": [
+   {
+    "hab": "Acrobacias",
+    "tipo": "fisica",
+    "dado": 13,
+    "total": 17,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V899826",
+  "par": "23",
+  "brazo": "G1",
+  "turn": 1327,
+  "accion": "\"La lógica no es la única medida del valor.\"\n\nMe obligo a recuperar la compostura y busco rápidamente un punto de apoyo sólido o una salida antes de que todo colapse.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 9,
+    "total": 10,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V684192",
+  "par": "01",
+  "brazo": "G1",
+  "turn": 1014,
+  "accion": "Me arrepiento de mi acción y me doy cuenta de que he puesto a Tomás y a mí mismo en una situación peligrosa. Sin perder tiempo, trato de hacerme a un lado y apartar a Tomás del camino de la criatura.\n\n\"¡Tomás, cuidado!\" Grito mientras intento empujarlo hacia un lado para que ambos estemos fuera de peligro.\n\n{Atletismo}",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 16,
+    "total": 17,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V201655",
+  "par": "21",
+  "brazo": "G1",
+  "turn": 439,
+  "accion": "\"Si el metal tiene hambre, no le daremos el banquete.\"\n\nIntento analizar el flujo de energía para encontrar un punto ciego o una forma de interrumpir el ciclo de descargas.\n\n{Arcanos}",
+  "tiradas": [
+   {
+    "hab": "Arcanos",
+    "tipo": "cognitiva",
+    "dado": 9,
+    "total": 13,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V784696",
+  "par": "11",
+  "brazo": "G1",
+  "turn": 950,
+  "accion": "\"¿Consecuencia de qué, exactamente? No hables en acertijos mientras el mundo se desmorona.\"\n\nMe aferro con fuerza a cualquier saliente o grieta de la plataforma de piedra para no ser succionada por el vórtice.\n\n{Atletismo}",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 16,
+    "total": 17,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V963376",
+  "par": "02",
+  "brazo": "G1",
+  "turn": 1330,
+  "accion": "\"Está bien, está bien.\" Me froto los ojos y me esfuerzo por enfocarme en los paneles. No voy a permitir que este engreído me presione. \"Déjame ver qué puedo hacer aquí.\"\n\nMe acerco al panel y examino los cables enredados y las conexiones sueltas, buscando algún patrón o algo que se destaque como anormal. Aunque no soy un experto en máquinas, he aprendido algo de reparaciones básicas durante mis viajes.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 8,
+    "total": 7,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V804975",
+  "par": "26",
+  "brazo": "G1",
+  "turn": 527,
+  "accion": "\"Sujétame fuerte, amigo. No me sueltes.\"\n\nTrato de impulsarme hacia arriba para apoyarme en el riel y ayudar a estabilizar el peso.\n\n{Atletismo}",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 11,
+    "total": 12,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V754761",
+  "par": "03",
+  "brazo": "G1",
+  "turn": 467,
+  "accion": "\"Yenna, entiendo tu preocupación, pero creo que podemos manejar la situación si trabajamos juntos. No somos un grupo de principiantes.\" Le hago una señal a los demás para que se acerquen. \"Tenemos habilidades que pueden sernos útiles en este terreno desconocido. ¿Qué te parece si enviamos a exploradores en grupos pequeños, en lugar de uno solo? Así, si encontramos algún peligro, podremos enfrentarlo juntos y alertar al grupo principal.\"\n\n{Persuasión}",
+  "tiradas": [
+   {
+    "hab": "Persuasión",
+    "tipo": "social",
+    "dado": 17,
+    "total": 21,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V651769",
+  "par": "21",
+  "brazo": "G1",
+  "turn": 499,
+  "accion": "\"Mantén la calma, Anzuelo. La poesía no repara máquinas, pero la precisión sí.\"\n\nBusco los conductos adyacentes para identificar dónde se está acumulando la presión ahora.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 3,
+    "total": 7,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V752237",
+  "par": "06",
+  "brazo": "G1",
+  "turn": 1332,
+  "accion": "\"Doce litros para todos. Patético.\"\n\nMe sacudo el barro de los brazos con un gesto brusco y me acerco a ella, invadiendo su espacio personal para presionarla.\n\n{Intimidación}",
+  "tiradas": [
+   {
+    "hab": "Intimidación",
+    "tipo": "social",
+    "dado": 1,
+    "total": 3,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V650665",
+  "par": "05",
+  "brazo": "G1",
+  "turn": 234,
+  "accion": "\"No me gusta que me miren mientras trabajo.\"\n\nIgnoro a Quiroga y agarro el cuaderno de cuero para guardarlo rápidamente en mi ropa.\n\n{Juego de Manos}",
+  "tiradas": [
+   {
+    "hab": "Juego de Manos",
+    "tipo": "fisica",
+    "dado": 9,
+    "total": 13,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V355304",
+  "par": "20",
+  "brazo": "G1",
+  "turn": 1125,
+  "accion": "\"A ver si podemos dejar los reproches para cuando el panel deje de vibrar, Matilde.\"\n\nAparto la mano del mecanismo para evitar el cortocircuito y observo el panel con más calma, buscando algún patrón o señal que haya pasado por alto.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 4,
+    "total": 3,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V363820",
+  "par": "06",
+  "brazo": "G1",
+  "turn": 896,
+  "accion": "\"Cierra la boca y agáchate.\"\n\nMe planto frente a ella, apretando el mango del hacha y tensando los músculos para recibir el golpe.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 15,
+    "total": 18,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V341151",
+  "par": "06",
+  "brazo": "G1",
+  "turn": 521,
+  "accion": "\"Tú tienes el control de tu pasillo, Osana. No me interesa tu orgullo.\"\n\nDoy un paso atrás para darle espacio y me apoyo contra la pared, observando la tabla de racionamiento que sostiene.\n\n{Perspicacia}",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 14,
+    "total": 15,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V748758",
+  "par": "24",
+  "brazo": "G1",
+  "turn": 194,
+  "accion": "\"No hay necesidad de ponerse así, maestro Llavín. Me voy, no quiero causarle más molestias.\"\n\nLevanto las manos en señal de paz y camino hacia la salida con paso tranquilo, pero sin dejar de observar los rincones oscuros mientras me retiro.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 7,
+    "total": 9,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V122282",
+  "par": "06",
+  "brazo": "G1",
+  "turn": 232,
+  "accion": "\"Cierra la boca y dame la mano.\"\n\nGruño mientras intento recuperar el equilibrio y subir el resto del cuerpo con fuerza bruta.\n\n{Atletismo}",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 5,
+    "total": 9,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V103871",
+  "par": "23",
+  "brazo": "G1",
+  "turn": 1313,
+  "accion": "\"No tomo órdenes de una máquina.\"\n\nMe planto frente a la figura metálica, bloqueando el paso con mi arma en alto para obligarla a pasar sobre mí.\n\n{Ataque}",
+  "tiradas": [
+   {
+    "hab": "Ataque",
+    "tipo": "combate/salv",
+    "dado": 7,
+    "total": 11,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V852312",
+  "par": "24",
+  "brazo": "G1",
+  "turn": 465,
+  "accion": "\"Tienes razón, Fermín. El dinero es lo único que no miente.\"\n\nSuelto una risita suave y doy un paso atrás, alejándome del mostrador para darle aire.\n\n{Persuasión}",
+  "tiradas": [
+   {
+    "hab": "Persuasión",
+    "tipo": "social",
+    "dado": 11,
+    "total": 13,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V914815",
+  "par": "18",
+  "brazo": "G1",
+  "turn": 434,
+  "accion": "\"Tanta calma me pone nervioso.\"\n\nMe acerco un paso más al escritorio, invadiendo su espacio personal para intentar romper esa máscara.\n\n{Intimidación}",
+  "tiradas": [
+   {
+    "hab": "Intimidación",
+    "tipo": "social",
+    "dado": 15,
+    "total": 17,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V903795",
+  "par": "08",
+  "brazo": "G2",
+  "turn": 620,
+  "accion": "\"No me interesan tus monedas, sino la verdad de lo que escondes bajo esa manga.\"\n\nSigo presionando mi postura, manteniendo la mano en el pomo de la espada mientras intento descifrar qué es exactamente lo que oculta.\n\n{Perspicacia}",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 12,
+    "total": 13,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V781982",
+  "par": "23",
+  "brazo": "G2",
+  "turn": 1055,
+  "accion": "{Iniciativa}\n\"Que la luz juzgue tu putrefacción.\"\nSostengo mi posición y preparo el arma para interceptar el ataque.",
+  "tiradas": [
+   {
+    "hab": "Iniciativa",
+    "tipo": "combate/salv",
+    "dado": 2,
+    "total": 2,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V365187",
+  "par": "08",
+  "brazo": "G2",
+  "turn": 170,
+  "accion": "\"Tu disciplina es admirable, Alaric, pero una armadura demasiado rígida acaba por quebrarse.\"\n\nMantengo la mirada, buscando cualquier otra grieta en su compostura.\n{Perspicacia}",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 14,
+    "total": 15,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V453822",
+  "par": "11",
+  "brazo": "G2",
+  "turn": 984,
+  "accion": "\"¿Cómo es posible que no haya nada?\"\n\nSuelto el cristal con cuidado y lo observo minuciosamente, buscando cualquier marca, inscripción o detalle físico que explique este vacío.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 14,
+    "total": 13,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V827511",
+  "par": "10",
+  "brazo": "G2",
+  "turn": 1310,
+  "accion": "\"Así que el Consejo es ciego, o prefiere no ver.\"\n\nSuelto la presión sobre él y me aparto, mientras miro alrededor buscando cualquier documento o registro que confirme sus palabras.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 14,
+    "total": 13,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V398204",
+  "par": "03",
+  "brazo": "G2",
+  "turn": 667,
+  "accion": "\"Gracias por la advertencia, cazador. Agradezco tu guía.\" Le sonrío con calidez, intentando ganarme su confianza.\n\nMe ajusto la capa para protegerme del frío viento y sigo sus pasos de cerca, observando con atención el entorno en busca de pistas que puedan revelar la verdadera naturaleza del misterio que se esconde en este lugar.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 7,
+    "total": 8,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V766623",
+  "par": "21",
+  "brazo": "G2",
+  "turn": 575,
+  "accion": "\"Esto no es magia ordinaria.\"\n\nDoy un paso atrás para mantener la distancia y observo con detenimiento los hilos de alquitrán que suben por su cuello, buscando algún patrón o símbolo oculto en el movimiento del fluido.\n\n{Arcanos}",
+  "tiradas": [
+   {
+    "hab": "Arcanos",
+    "tipo": "cognitiva",
+    "dado": 8,
+    "total": 12,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V284997",
+  "par": "04",
+  "brazo": "G2",
+  "turn": 1160,
+  "accion": "\"Caleta Lumbre... la rectoría. Así que el Núcleo está allí.\"\n\nCierro el libro con cuidado y busco en mis notas cualquier mención previa a esa localidad o a la Casa Valerius.\n\n{Historia}",
+  "tiradas": [
+   {
+    "hab": "Historia",
+    "tipo": "cognitiva",
+    "dado": 12,
+    "total": 16,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V148310",
+  "par": "25",
+  "brazo": "G2",
+  "turn": 1150,
+  "accion": "\"Vaya torpeza la mía, perdone el desorden\"\n\nMe alejo lentamente hacia la salida, manteniendo una expresión de disculpa mientras aseguro la caja en mi ropa.\n\n{Sigilo}",
+  "tiradas": [
+   {
+    "hab": "Sigilo",
+    "tipo": "fisica",
+    "dado": 14,
+    "total": 18,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V606716",
+  "par": "18",
+  "brazo": "G2",
+  "turn": 752,
+  "accion": "\"Llamarme bruto no ayudará a que este trasto se abra.\"\n\nSuelto el recipiente con brusquedad sobre la mesa y me giro hacia él, cruzando los brazos.\n\n{Intimidación}",
+  "tiradas": [
+   {
+    "hab": "Intimidación",
+    "tipo": "social",
+    "dado": 1,
+    "total": 3,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V410630",
+  "par": "01",
+  "brazo": "G2",
+  "turn": 163,
+  "accion": "\"Interesante...\" Examino más de cerca el sello de cera negra, buscando detalles que pueda haber pasado por alto. {Investigación} Después, doblo con cuidado el pergamino y lo guardo en mi bolsillo interior. Necesito averiguar más sobre esta organización y qué papel juega en los problemas de esta ciudad. Tal vez el Pescador no quiera hablar, pero seguro hay otros en el puerto que han visto u oído algo. Me dispongo a preguntar discretamente entre los trabajadores, empezando por los que parecen más accesibles. {Persuasión}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 13,
+    "total": 12,
+    "exito15": false
+   },
+   {
+    "hab": "Persuasión",
+    "tipo": "social",
+    "dado": 4,
+    "total": 4,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V955480",
+  "par": "25",
+  "brazo": "G2",
+  "turn": 1140,
+  "accion": "\"Vara Maestra... esto suena a que alguien tiene un secreto muy caro.\"\n\nGuardo el documento sellado rápidamente en mi ropa para que no sea visible y busco en el resto de los papeles cualquier mención a la ubicación de dicho objeto.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 7,
+    "total": 8,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V979781",
+  "par": "16",
+  "brazo": "G2",
+  "turn": 134,
+  "accion": "\"¡Cállate ya, maldita sea!\"\n\nLe sujeto con fuerza del cuello de la ropa para obligarlo a mirarme, tratando de que deje de sollozar. \n\n{Intimidación}",
+  "tiradas": [
+   {
+    "hab": "Intimidación",
+    "tipo": "social",
+    "dado": 18,
+    "total": 20,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V576973",
+  "par": "05",
+  "brazo": "G2",
+  "turn": 895,
+  "accion": "\"Tienes un sentido del humor encantador, Damil.\"\n\nApoyo la barbilla en la mano, manteniendo una sonrisa ligera y vacía mientras observo cómo despliega el papel.\n\n{Perspicacia}",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 5,
+    "total": 5,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V871275",
+  "par": "18",
+  "brazo": "G2",
+  "turn": 1052,
+  "accion": "\"¡Tú no me apartas, montón de chatarra!\"\n\nAprieto los dientes y planto los pies en el suelo para resistir el empujón, intentando no retroceder ni un paso.\n\n{Atletismo}",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 12,
+    "total": 16,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V172679",
+  "par": "25",
+  "brazo": "G2",
+  "turn": 1068,
+  "accion": "\"Tuyo ya no eres.\"\n\nGuardo el relicario rápidamente en mi bolsillo y miro a mi alrededor para asegurarme de que no hay nada más aprovechable antes de moverme.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 2,
+    "total": 4,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V656957",
+  "par": "14",
+  "brazo": "G2",
+  "turn": 633,
+  "accion": "\"Parece que el metal es tan perfecto que resulta aburrido, Madame.\"\n\nSigo manipulando los diales, pero esta vez trato de concentrarme en el sonido interno del mecanismo al girarlos.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 20,
+    "total": 20,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V718835",
+  "par": "16",
+  "brazo": "G2",
+  "turn": 177,
+  "accion": "\"¡Sigue sangrando, maldita cosa!\"\n\nAprovecho que la bestia intenta recuperar el equilibrio para mantenerme pegado a su costado y lanzar otro hachazo brutal.\n\n{Atletismo}",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 15,
+    "total": 19,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V615696",
+  "par": "06",
+  "brazo": "G2",
+  "turn": 317,
+  "accion": "\"Me basta con saber que no mientes.\"\n\nSigo presionando la hoja contra su garganta mientras lo miro fijamente a los ojos.\n\n{Perspicacia}",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 5,
+    "total": 6,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V571813",
+  "par": "26",
+  "brazo": "G2",
+  "turn": 1271,
+  "accion": "\"Esto no es naturaleza, es una enfermedad.\"\n\nToco la vegetación con cuidado, intentando sentir si hay algún punto débil en esa estructura mineral que pueda revertir.\n\n{Naturaleza}",
+  "tiradas": [
+   {
+    "hab": "Naturaleza",
+    "tipo": "cognitiva",
+    "dado": 17,
+    "total": 18,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V970675",
+  "par": "26",
+  "brazo": "G2",
+  "turn": 22,
+  "accion": "\"No es posible que no haya dejado ni una sola marca.\"\n\nMe pongo en pie y miro hacia las copas de los árboles, buscando alguna rama rota o señal de paso en las alturas.\n\n{Supervivencia}",
+  "tiradas": [
+   {
+    "hab": "Supervivencia",
+    "tipo": "cognitiva",
+    "dado": 14,
+    "total": 18,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V831893",
+  "par": "14",
+  "brazo": "G2",
+  "turn": 738,
+  "accion": "\"Pobre alma... el dolor es una carga pesada, pero el tiempo lo borra todo.\"\n\nLe doy una palmadita condescendiente en el hombro mientras deslizo la mano hacia el hueco oscuro para ver qué hay dentro.\n\n{Juego de Manos}",
+  "tiradas": [
+   {
+    "hab": "Juego de Manos",
+    "tipo": "fisica",
+    "dado": 11,
+    "total": 13,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V734872",
+  "par": "03",
+  "brazo": "G2",
+  "turn": 623,
+  "accion": "\"Esto no es tan simple como parece. Hay algo más aquí.\" {Investigación} Examino de cerca el suelo y las paredes, buscando marcas, hendiduras o cualquier cosa que pueda estar relacionada con este cilindro. Tal vez haya pistas que no se ven a simple vista.",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 9,
+    "total": 9,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V853489",
+  "par": "25",
+  "brazo": "G2",
+  "turn": 870,
+  "accion": "\"Qué pérdida de tiempo.\"\n\nCierro el cuaderno con un golpe y miro alrededor de la habitación buscando cualquier otro objeto que parezca fuera de lugar o demasiado ostentoso para ser solo decoración.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 8,
+    "total": 10,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V337891",
+  "par": "11",
+  "brazo": "G2",
+  "turn": 933,
+  "accion": "\"Que la luz nos guíe para evitar el peligro.\"\n\nMe detengo en seco y me inclino para observar detenidamente dónde comienza y dónde termina cada hilo, buscando el mecanismo que activan.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 8,
+    "total": 7,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V491842",
+  "par": "04",
+  "brazo": "G2",
+  "turn": 435,
+  "accion": "\"Maldita sea...\"\n\nSiseo entre dientes y me deslizo la mano bajo la manta raída para intentar recuperar el trapo sin hacer más ruido.\n\n{Juego de Manos}",
+  "tiradas": [
+   {
+    "hab": "Juego de Manos",
+    "tipo": "fisica",
+    "dado": 5,
+    "total": 6,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V148969",
+  "par": "11",
+  "brazo": "G2",
+  "turn": 763,
+  "accion": "\"No puedo aceptar que la paz dependa de tal crueldad. Debe haber otra forma de sanar esta herida sin destruir el alma.\"\n\nMe acerco al núcleo fracturado y extiendo la mano para intentar sentir la naturaleza de esa vibración melancólica.\n\n{Religión}",
+  "tiradas": [
+   {
+    "hab": "Religión",
+    "tipo": "cognitiva",
+    "dado": 5,
+    "total": 6,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V668764",
+  "par": "16",
+  "brazo": "G2",
+  "turn": 436,
+  "accion": "\"Sea lo que sea, no entrarás aquí.\"\nSaco mi hacha y me planto frente a la puerta, apoyando el hombro contra la madera para reforzarla.\n{Atletismo}",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 17,
+    "total": 21,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V794335",
+  "par": "27",
+  "brazo": "G2",
+  "turn": 519,
+  "accion": "\"No me importa quién seas, sino quién te tiene así. Si no hablas, no tienes nada que perder.\"\n\nPresiono la espada un poco más contra su garganta para obligarlo a mirarme.\n\n{Intimidación}",
+  "tiradas": [
+   {
+    "hab": "Intimidación",
+    "tipo": "social",
+    "dado": 8,
+    "total": 10,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V494591",
+  "par": "16",
+  "brazo": "G2",
+  "turn": 1261,
+  "accion": "\"Tus alfombras me importan muy poco, pero mi tiempo sí.\"\n\nSuelto una risa seca y me inclino aún más sobre el escritorio, tratando de intimidarlo con mi presencia.\n\n{Intimidación}",
+  "tiradas": [
+   {
+    "hab": "Intimidación",
+    "tipo": "social",
+    "dado": 18,
+    "total": 20,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V657598",
+  "par": "01",
+  "brazo": "G2",
+  "turn": 298,
+  "accion": "Maldición, qué fastidio. Tiro el trozo de tela rota y me acerco a la rejilla. \"Alguien ha pasado por aquí recientemente, y parece que es uno de los supervisores del Consorcio. No me gusta esto.\" {Percepción} para inspeccionar el túnel y ver si hay más huellas o pistas que me den alguna idea de hacia dónde fue.",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 10,
+    "total": 14,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V590734",
+  "par": "03",
+  "brazo": "G2",
+  "turn": 701,
+  "accion": "Me acerco a Elian y le hablo con tono tranquilizador. \"No pasa nada, no te voy a hacer daño. Pero necesito que me cuentes qué viste exactamente en el camino. ¿Por qué te asustaste?\"\n\nExamino el área de los surcos, buscando algún objeto o señal que pueda haberse quedado atrapado en el barro y dar pistas sobre qué pasó aquí.",
+  "tiradas": [],
+  "hallazgos": []
+ },
+ {
+  "id": "V105754",
+  "par": "16",
+  "brazo": "G2",
+  "turn": 450,
+  "accion": "\"Maldita sea, ¿qué te pasa?\"\n\nHago una pausa rápida para mirar al tendero y luego me acerco a la tabla desplazada del suelo. Intento levantarla con fuerza.\n\n{Atletismo}",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 15,
+    "total": 19,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V661386",
+  "par": "06",
+  "brazo": "G2",
+  "turn": 1252,
+  "accion": "\"¡Suéltame, asquerosa cosa!\"\n\nIntento zafarme del agarre tirando con fuerza de mi pierna mientras trato de recuperar la estabilidad.\n\n{Atletismo}",
+  "tiradas": [
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 15,
+    "total": 19,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V710335",
+  "par": "09",
+  "brazo": "G2",
+  "turn": 100,
+  "accion": "\"Esto no es una bendición ni una maldición... es una herida.\"\n\nMe acerco con cautela al filamento, intentando analizar la naturaleza de esa frecuencia para comprender qué es lo que intenta entrar en nuestro plano.\n\n{Arcanos}",
+  "tiradas": [
+   {
+    "hab": "Arcanos",
+    "tipo": "cognitiva",
+    "dado": 15,
+    "total": 14,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V138833",
+  "par": "15",
+  "brazo": "G2",
+  "turn": 589,
+  "accion": "\"Veamos qué secretos guardas.\"\n\nRompo el sello con cuidado y abro el sobre para leer la carta.\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 10,
+    "total": 9,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V717781",
+  "par": "11",
+  "brazo": "G2",
+  "turn": 223,
+  "accion": "\"Tranquilo, ya estás a salvo. Mantente detrás de mí.\"\n\nSostengo a Illian para que se levante y me interpongo entre él y la criatura, alzando mi símbolo sagrado.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 4,
+    "total": 6,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V656205",
+  "par": "05",
+  "brazo": "G2",
+  "turn": 1283,
+  "accion": "\"No puede ser tan simple.\"\n\nMe detengo frente a la puerta y examino la cerradura con cuidado, comparándola con la llave que tengo.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 17,
+    "total": 18,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V940248",
+  "par": "07",
+  "brazo": "G2",
+  "turn": 1213,
+  "accion": "\"No eres más que un juguete oxidado.\"\n\nMe acerco al Custodio para intentar analizar la maquinaria de su pecho mientras la puerta termina de abrirse.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 5,
+    "total": 7,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V773003",
+  "par": "06",
+  "brazo": "G2",
+  "turn": 846,
+  "accion": "\"No te muevas si no quieres que te rompa los dedos.\"\n\nAprieto más al guardia contra la puerta y busco con la mirada cualquier objeto de valor que lleve encima.\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 14,
+    "total": 17,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V711070",
+  "par": "20",
+  "brazo": "G2",
+  "turn": 283,
+  "accion": "\"Esto es un nido de trampas, no un contrato.\"\n\nSigo leyendo el documento con cuidado, tratando de encontrar la cláusula donde me intentan engañar o el monto exacto del pago.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 14,
+    "total": 13,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V320084",
+  "par": "11",
+  "brazo": "G2",
+  "turn": 1251,
+  "accion": "\"No tienes que cargar con este miedo sola. Dime, ¿qué es lo que te inquieta tanto?\"\n\nSostengo su mirada con ternura, tratando de transmitirle seguridad mientras busco señales de lo que la asusta.\n\n{Perspicacia}",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 8,
+    "total": 12,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V118885",
+  "par": "22",
+  "brazo": "G2",
+  "turn": 438,
+  "accion": "\"Vaya, parece que alguien se llevó un premio muy pesado.\"\n\nMe acerco a la mancha marrón negruzca y trato de identificar qué es exactamente.\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 7,
+    "total": 9,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V618157",
+  "par": "13",
+  "brazo": "G2",
+  "turn": 599,
+  "accion": "\"Un patrón predecible es una debilidad explotable.\"\n\nMe muevo con cautela, aprovechando el ruido del vapor para acercarme al ángulo muerto del autómata mientras este se detiene ante la consola.\n\n{Sigilo}",
+  "tiradas": [
+   {
+    "hab": "Sigilo",
+    "tipo": "fisica",
+    "dado": 20,
+    "total": 21,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V544900",
+  "par": "24",
+  "brazo": "G2",
+  "turn": 500,
+  "accion": "\"Solo un vistazo rápido...\"\n\nSaco una pequeña vela de mi equipo y trato de encenderla con cuidado para iluminar el fondo del hueco sin hacer ruido.\n\n{Sigilo}",
+  "tiradas": [
+   {
+    "hab": "Sigilo",
+    "tipo": "fisica",
+    "dado": 13,
+    "total": 17,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V113656",
+  "par": "03",
+  "brazo": "G2",
+  "turn": 848,
+  "accion": "\"Vale, entraremos juntos then. Pero mantente alerta, no sabemos qué podemos encontrar allí.\"\n\nMe vuelvo hacia el pasillo oscuro y comienzo a adentrarme en él con cautela, usando mi mejor criterio para evitar cualquier trampa o peligro potencial. Mientras avanzo, mi mano no deja de tocar la pared, siguiendo su textura irregular en busca de pistas o cambios que puedan indicarme algo importante.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 19,
+    "total": 20,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V710956",
+  "par": "26",
+  "brazo": "G2",
+  "turn": 59,
+  "accion": "\"Esto es una tragedia... No puede haber quedado nada vivo.\"\n\nMe acerco a uno de esos árboles blanqueados para examinar la superficie del tronco y entender qué ha causado tal desolación.\n\n{Naturaleza}",
+  "tiradas": [
+   {
+    "hab": "Naturaleza",
+    "tipo": "cognitiva",
+    "dado": 10,
+    "total": 11,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V308913",
+  "par": "08",
+  "brazo": "G2",
+  "turn": 887,
+  "accion": "\"Demasiado perfecta para ser natural.\"\n\nMe alejo un paso de la puerta y escucho con atención contra el metal para ver si hay algún sonido al otro lado.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 5,
+    "total": 8,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V407766",
+  "par": "03",
+  "brazo": "G2",
+  "turn": 866,
+  "accion": "\"¿Qué es ese sonido?\" susurro, tratando de localizar su origen en la oscuridad. Me pongo en guardia, preparándome para lo que pueda surgir de las sombras. {Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 3,
+    "total": 4,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V178888",
+  "par": "20",
+  "brazo": "G2",
+  "turn": 945,
+  "accion": "\"No te muevas ni un centímetro si no quieres que te corte.\"\n\nMe acerco a la losa rectangular y examino el polvo blanco para ver si hay huellas recientes.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 4,
+    "total": 3,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V708253",
+  "par": "07",
+  "brazo": "G2",
+  "turn": 135,
+  "accion": "\"Maldita sea esta inmundicia.\"\n\nDejo de luchar contra el fango para no hundirme más y trato de palpar el entorno a mi alrededor, buscando cualquier objeto o saliente que pueda sujetar.\n\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 5,
+    "total": 6,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V233217",
+  "par": "26",
+  "brazo": "G2",
+  "turn": 92,
+  "accion": "\"Tranquilo, pequeño. Ya estás a salvo.\"\n\nSigo acariciando a la criatura para calmarla mientras analizo con cuidado la herida para comprender qué pudo haber causado ese desgarro.\n\n{Medicina}",
+  "tiradas": [
+   {
+    "hab": "Medicina",
+    "tipo": "cognitiva",
+    "dado": 16,
+    "total": 18,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V934765",
+  "par": "06",
+  "brazo": "G2",
+  "turn": 1007,
+  "accion": "\"Tú no sirves para nada.\"\n\nLe doy una patada en las costillas para asegurarme de que no se levante y registro sus bolsillos buscando cualquier moneda o papel valioso.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 12,
+    "total": 11,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V815966",
+  "par": "09",
+  "brazo": "G2",
+  "turn": 293,
+  "accion": "\"Esto no es una enfermedad, ni una herida... es algo más.\"\n\nMe separo un poco para observar la masa desde otro ángulo, tratando de recordar si he leído alguna referencia a este tipo de crecimiento en mis estudios.\n\n{Religión}",
+  "tiradas": [
+   {
+    "hab": "Religión",
+    "tipo": "cognitiva",
+    "dado": 10,
+    "total": 11,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V376802",
+  "par": "22",
+  "brazo": "G2",
+  "turn": 1399,
+  "accion": "\"Sustento... Así que alguien está alimentando algo.\"\n\nMe acerco con cuidado para intentar despegar el trozo de pergamino carbonizado sin romperlo.\n\n{Juego de Manos}",
+  "tiradas": [
+   {
+    "hab": "Juego de Manos",
+    "tipo": "fisica",
+    "dado": 18,
+    "total": 19,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V703784",
+  "par": "13",
+  "brazo": "G2",
+  "turn": 734,
+  "accion": "\"Maldita sea.\"\n\nRetiro la mano con brusquedad y observo la mancha opaca, analizando el patrón del colapso para entender la naturaleza de esa sustancia.\n\n{Arcanos}",
+  "tiradas": [
+   {
+    "hab": "Arcanos",
+    "tipo": "cognitiva",
+    "dado": 9,
+    "total": 13,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V385875",
+  "par": "13",
+  "brazo": "G2",
+  "turn": 1239,
+  "accion": "\"Interesante. No es la fuente, es el sumidero.\"\n\nSigo sosteniendo el cilindro y cierro los ojos, tratando de concentrarme en esa sensación de sintonía con mi corazón para localizar el punto invisible desde donde fluye la energía.\n\n{Arcanos}",
+  "tiradas": [
+   {
+    "hab": "Arcanos",
+    "tipo": "cognitiva",
+    "dado": 6,
+    "total": 10,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V529799",
+  "par": "01",
+  "brazo": "G2",
+  "turn": 9,
+  "accion": "\"¿Y si hablamos de ese trabajo que mencionaste antes?\" Miro alrededor, evaluando el lugar. {Perspicacia} Me acerco a la trampilla que no encaja bien, dándole una patada para ver si se mueve. \"¿Hay algo interesante ahí abajo?\"\n\n{Atletismo} para intentar abrir la trampilla si parece que se puede mover.",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 8,
+    "total": 10,
+    "exito15": false
+   },
+   {
+    "hab": "Atletismo",
+    "tipo": "fisica",
+    "dado": 17,
+    "total": 18,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V787971",
+  "par": "16",
+  "brazo": "G2",
+  "turn": 974,
+  "accion": "\"Busco un lugar donde no tenga que mirar por encima del hombro y que pague bien por quien sabe pelear.\"\n\nMe inclino ligeramente hacia él, manteniendo la presión visual.\n\n{Persuasión}",
+  "tiradas": [
+   {
+    "hab": "Persuasión",
+    "tipo": "social",
+    "dado": 3,
+    "total": 3,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V772673",
+  "par": "04",
+  "brazo": "G2",
+  "turn": 231,
+  "accion": "\"Una virtud peligrosa, quizá, pero la única que permite avanzar.\"\n\nSostengo la mirada, analizando su reacción para confirmar mis sospechas sobre el anexo.\n\n{Perspicacia}",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 13,
+    "total": 14,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V540956",
+  "par": "09",
+  "brazo": "G2",
+  "turn": 1315,
+  "accion": "\"Tranquilo, no te voy a soltar. Estoy aquí contigo.\"\n\nSigo apretando su mano con firmeza para darle seguridad mientras busco con más calma y método en mi equipo el ungüento térmico.\n\n{Medicina}",
+  "tiradas": [
+   {
+    "hab": "Medicina",
+    "tipo": "cognitiva",
+    "dado": 17,
+    "total": 21,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V657617",
+  "par": "03",
+  "brazo": "G2",
+  "turn": 946,
+  "accion": "\"Interesante... Esto puede ser una pista de por dónde pasaron.\" Inspecciono el jirón de lona con atención, buscando más detalles o marcas que me den alguna información adicional. {Investigación}\n\nMientras lo examino, pregunto a Maelis: \"¿Qué crees que podría haber pasado aquí? ¿Quizás un accidente durante el transporte?\"",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 4,
+    "total": 4,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V410870",
+  "par": "21",
+  "brazo": "G2",
+  "turn": 1083,
+  "accion": "Me quedo inmóvil, conteniendo la respiración para no delatar mi posición. Intento escuchar si hay alguien más acompañándolo o si solo es él quien lleva las llaves.\n{Percepción}",
+  "tiradas": [
+   {
+    "hab": "Percepción",
+    "tipo": "cognitiva",
+    "dado": 19,
+    "total": 20,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V816338",
+  "par": "25",
+  "brazo": "G2",
+  "turn": 1007,
+  "accion": "\"¿Te pasa algo, chico? Tienes una cara de perdido...\"\nLe guiño un ojo y trato de desviar su atención mientras sigo retrocediendo hacia la puerta.\n{Engaño}",
+  "tiradas": [
+   {
+    "hab": "Engaño",
+    "tipo": "social",
+    "dado": 12,
+    "total": 16,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V817403",
+  "par": "22",
+  "brazo": "G2",
+  "turn": 1306,
+  "accion": "\"No hace falta que te resistas. Tíralo todo al suelo y quizá salgas caminando de aquí.\"\n\nMe acerco lentamente al guardia, manteniendo la mirada fija en él para presionarlo.\n\n{Intimidación}",
+  "tiradas": [
+   {
+    "hab": "Intimidación",
+    "tipo": "social",
+    "dado": 14,
+    "total": 18,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V309055",
+  "par": "11",
+  "brazo": "G2",
+  "turn": 778,
+  "accion": "\"No estás solo en este peso. Déjame ayudarte a sostenerlo.\"\n\nPongo mi mano sobre la grieta del pectoral y cierro los ojos, concentrándome en canalizar una chispa de alivio y esperanza para mitigar su agotamiento.\n\n{Religión}",
+  "tiradas": [
+   {
+    "hab": "Religión",
+    "tipo": "cognitiva",
+    "dado": 9,
+    "total": 10,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V213351",
+  "par": "17",
+  "brazo": "G2",
+  "turn": 308,
+  "accion": "\"Interesante.\"\nMe acerco a la mella del suelo y examino los restos de madera y el polvo para ver si quedó algún fragmento o rastro del objeto arrastrado.\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 4,
+    "total": 5,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V516464",
+  "par": "21",
+  "brazo": "G2",
+  "turn": 723,
+  "accion": "\"Interesante... y sumamente molesto.\"\n\nMe froto el dedo afectado contra la tela de mi túnica, intentando limpiar la mancha, y luego me inclino para observar el rastro de la cubierta más de cerca.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 9,
+    "total": 13,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V171948",
+  "par": "19",
+  "brazo": "G2",
+  "turn": 1336,
+  "accion": "\"Ya no tienes voz para mandar.\"\n\nMe acerco al hombre tendido y busco entre sus ropas cualquier objeto de valor o llave que lleve encima.\n\n{Investigación}",
+  "tiradas": [
+   {
+    "hab": "Investigación",
+    "tipo": "cognitiva",
+    "dado": 20,
+    "total": 19,
+    "exito15": true
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V303129",
+  "par": "22",
+  "brazo": "G2",
+  "turn": 1366,
+  "accion": "\"A ver qué guardas aquí dentro.\"\n\nRompo el sello de cera con un movimiento rápido y abro el cofre.\n{Juego de Manos}",
+  "tiradas": [
+   {
+    "hab": "Juego de Manos",
+    "tipo": "fisica",
+    "dado": 2,
+    "total": 3,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V204383",
+  "par": "02",
+  "brazo": "G2",
+  "turn": 588,
+  "accion": "Observo la interacción entre la ceniza y el cuero con atención. La forma en que los bordes geométricos de la ceniza se reorganizan me recuerda algo que he visto antes, pero no logro recordar qué. Debo ser cauteloso con esto.\n\n\"Parece que esta ceniza es lo que queda de la runa de contención. Y este cuero... podría ser un componente clave para repararla. Deberíamos investigar más a fondo esta conexión.\"\n\nMe pongo de pie y me dirijo hacia el borde del abismo, manteniendo una distancia prudente. Quiero ver si puedo discernir más detalles de la fractura y cómo la ceniza parece afectarla.\n\n\"Es importante que entendamos qué ha causado esto y cómo podemos detenerlo. No podemos permitir que siga consumiendo la realidad a nuestro alrededor.\"",
+  "tiradas": [],
+  "hallazgos": []
+ },
+ {
+  "id": "V115640",
+  "par": "09",
+  "brazo": "G2",
+  "turn": 953,
+  "accion": "\"Qué horror... no debiste pasar por esto solo.\"\n\nAcaricio con suavidad el rostro de piedra antes de apartarme. Me concentro en la resina oscura de la nuca para intentar comprender su naturaleza.\n\n{Arcanos}",
+  "tiradas": [
+   {
+    "hab": "Arcanos",
+    "tipo": "cognitiva",
+    "dado": 9,
+    "total": 8,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ },
+ {
+  "id": "V492328",
+  "par": "17",
+  "brazo": "G2",
+  "turn": 708,
+  "accion": "\"Tenga. El sello habla por sí mismo.\"\n\nSaco el recado con calma y se lo extiendo, observando sus ojos para detectar cualquier duda o debilidad.\n\n{Perspicacia}",
+  "tiradas": [
+   {
+    "hab": "Perspicacia",
+    "tipo": "cognitiva",
+    "dado": 2,
+    "total": 2,
+    "exito15": false
+   }
+  ],
+  "hallazgos": []
+ }
+]

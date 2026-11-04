@@ -11,3 +11,7 @@ datos/validacion_v2/privado_no_publicar/
 website/.docusaurus/
 website/build/
 website/docs/referencia/
+
+# carpeta conectada antigua (raiz): nunca publicar
+validacion_v2/privado_no_publicar/
+validacion_v2/_trabajo/
