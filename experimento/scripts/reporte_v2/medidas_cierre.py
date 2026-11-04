@@ -14,6 +14,7 @@ NO tienen prueba de sensibilidad (A2): son medidas simples y transparentes, y as
 Salidas: datos/datos_v2/cierre/por_campana.csv y bloques.csv (brazo, par, bloque, indicador...).
     PYTHONUTF8=1 py experimento/scripts/reporte_v2/medidas_cierre.py
 """
+import os
 import csv
 import re
 import statistics as st
@@ -58,7 +59,7 @@ def columna(par, brazo, fuente, nombre):
 
     Las fuentes `num` y `bool` usan la columna `<nombre>_v2` (texto normalizado); `p2` usa `nombre` tal cual.
     """
-    ruta = (D2 if fuente == "num" else D2 / ("booleanos" if fuente == "bool" else "persona2")) / rc.nombre_csv(par, brazo)
+    ruta = (D2 if fuente == "num" else D2 / ("booleanos" if fuente == "bool" else os.environ.get("P2_DIR", "persona2"))) / rc.nombre_csv(par, brazo)
     col = nombre + "_v2" if fuente != "p2" else nombre
     return {r["turn_id"]: r[col] for r in rc.leer_csv(ruta) if r.get(col) is not None and r["turn_id"] <= HASTA}
 

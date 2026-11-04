@@ -12,19 +12,19 @@ Generado por `scripts/reporte_v2/page_test.py`. Fuente: `docs/reportes/sensibili
 | H1b -- PNJ inactivo mencionado, CRUDO (sin relativizar; confundido, ver Lectura) | crece | 27 | 1.81 | 0.0352 | 0.0127 | 0.000 -> 0.000 |
 | H1b -- PNJ inactivo mencionado, RELATIVIZADO (denominador = turnos con >=1 PNJ ya inactivo) | crece | 10 | 0.12 | 0.4505 | 0.5000 | 0.000 -> 0.000 |
 | H1c -- MATTR, exploratorio | decrece | 27 | -0.18 | 0.5702 | 0.5252 | 0.828 -> 0.828 |
-| H1c -- persona2 primaria, condicionado a auditoria | crece | 27 | 1.35 | 0.0890 | 0.0665 | 0.030 -> 0.035 |
+| H1c -- persona2 primaria, condicionado a auditoria | crece | 27 | 2.31 | 0.0105 | 0.0120 | 0.000 -> 0.005 |
 
 `cl2_lugar_jaccard_similarity` no tiene direccion 'mejor' definida en la ficha (`consolidar.py`: '·', bilateral) -- reportado aparte: p(disminuye)=0.9812, p(aumenta)=0.0196, bilateral=0.0392 (sube significativamente -- lectura ambigua: mas continuidad lexica con la escena anterior, o mas repeticion/estancamiento; la propia ficha ya advierte que este instrumento 'no distingue deriva de evolucion legitima del mundo').
 
-**Holm dentro de H1c** (mattr + persona2_primaria): H1c_mattr p_holm=0.5702, H1c_persona2_primaria p_holm=0.1780
+**Holm dentro de H1c** (mattr + persona2_primaria): H1c_mattr p_holm=0.5702, H1c_persona2_primaria p_holm=0.0211
 
 ## Lectura
 
-Con los datos reales, **4 de 5 instrumentos NO muestran degradacion significativa** (mas `cl2_lugar_jaccard`, que no tiene direccion definida). El resultado crudo de `cl2_pnj_inactivo_actua` (sin relativizar) es justamente el indicador que la propia propuesta señalaba como el mas expuesto a un confusor: mas PNJ estan muertos/desaparecidos hacia el final de la campana, asi que la tasa de turnos que los narra como activos puede subir solo porque hay mas PNJ inactivos elegibles para el error, no porque el sistema degrade.
+Con los datos reales, **3 de 5 instrumentos NO muestran degradacion significativa** (mas `cl2_lugar_jaccard`, que no tiene direccion definida). El resultado crudo de `cl2_pnj_inactivo_actua` (sin relativizar) es justamente el indicador que la propia propuesta señalaba como el mas expuesto a un confusor: mas PNJ estan muertos/desaparecidos hacia el final de la campana, asi que la tasa de turnos que los narra como activos puede subir solo porque hay mas PNJ inactivos elegibles para el error, no porque el sistema degrade.
 
 **Version relativizada** (resuelve el pendiente #1 de la version anterior de este informe -- ver `scripts/reporte_v2/relativizar_pnj_inactivo.py` y `datos_v2/cierre/pnj_inactivo_relativizado.csv`): denominador = turnos del bloque donde ya habia al menos un PNJ inactivo visible (reconstruido turno a turno desde `npcs`/`state_deltas`, la misma logica que usa el motor para `estados_pnj`), en vez de los 200 turnos del bloque. Resultado: Page z=0.12 p=0.4505 (Wilcoxon bloque1-vs-7 p=0.5000; mediana 0.000 -> 0.000; n=10 campanas completas, 12 excluidas por tener algun bloque sin ningun PNJ inactivo todavia -- tipicamente el bloque 1). La significancia desaparece al relativizar por PNJ ya inactivos: consistente con que el resultado crudo era el confusor sospechado, no degradacion real de la coherencia.
 
-`persona2_primaria` (p=0.0890 sin corregir, p_holm=0.1780) sugiere en el mejor de los casos una tendencia leve, y de todas formas sigue pendiente de una auditoria de precision con un evaluador EXTERNO (no el equipo investigador -- ver correccion en `claude/persona2-auditoria-IA-analisis.md`) para poder tratarse como confirmatorio.
+`persona2_primaria` (p=0.0105 sin corregir, p_holm=0.0211) sugiere en el mejor de los casos una tendencia leve, y de todas formas sigue pendiente de una auditoria de precision con un evaluador EXTERNO (no el equipo investigador -- ver correccion en `claude/persona2-auditoria-IA-analisis.md`) para poder tratarse como confirmatorio.
 
 **Conclusion honesta para el asesor**: la redefinicion de H1a-H1c como hipotesis de degradacion es tecnicamente solida (formula verificada, reutiliza instrumentos ya validados, resuelve el problema real del punto medio de Likert que ya estaba documentado en `resultados_tesis.py`), pero los datos, hasta ahora, no confirman de forma robusta la premisa de degradacion que motivo la propuesta. Es un hallazgo legitimo en si mismo (la nula 'no degrada' se sostiene en la mayoria de los instrumentos, con una H0 no arbitraria como pedia el diseño), pero cambia la narrativa: no es 'confirmamos que el sistema monolitico degrada', es 'probamos rigurosamente si degrada y, con esta instrumentacion, la evidencia es limitada'.
 

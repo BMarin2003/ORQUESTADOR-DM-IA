@@ -1,6 +1,6 @@
 # Paquete de resultados para el capítulo 6
 
-Generado por `experimento/scripts/reporte_v2/resultados_tesis.py` el 2026-09-21 05:11. Muestra: **27 parejas** (Par01-27; coincide con el N = 27 del diseño), 54 campañas de 1 400 turnos, mismo modelo y mismo agente jugador en ambos brazos, medición 100 % determinista sobre texto normalizado (se quita el formato de G1). Descriptivo: **no decide las hipótesis**; entrega las pruebas y su dirección. El uso propuesto de cada instrumento en la docimasia es una propuesta basada en la validación disponible.
+Generado por `experimento/scripts/reporte_v2/resultados_tesis.py` el 2026-10-31 00:44. Muestra: **27 parejas** (Par01-27; coincide con el N = 27 del diseño), 54 campañas de 1 400 turnos, mismo modelo y mismo agente jugador en ambos brazos, medición 100 % determinista sobre texto normalizado (se quita el formato de G1). Descriptivo: **no decide las hipótesis**; entrega las pruebas y su dirección. El uso propuesto de cada instrumento en la docimasia es una propuesta basada en la validación disponible.
 
 **Cómo leer.** Cada valor es la media de la campaña (turnos 2-1 400; `persona2` solo sobre turnos que no se usaron para construir el detector); la unidad de análisis es la **pareja**, no el juicio de un evaluador. Cuartiles con interpolación lineal. Wilcoxon de rangos con signo **exacto** (condicional a empates, ceros descartados), con p bilateral y unilateral en cada dirección, como en el capítulo actual. **↕**: ↑ mayor es mejor, ↓ menor es mejor, · sin sentido de mejora (solo bilateral). «G1 mejor» = la dirección favorable a G1 según ↕. Holm: dentro de la familia de cada hipótesis, solo entre instrumentos confirmatorios. Shapiro-Wilk con SciPy.
 
@@ -130,11 +130,11 @@ Mismos estadísticos del sistema multiagente (G1), como referencia para la compa
 | QN-1 | Repetición de bigramas | 27 | 0.018 | 0.017 | 0.019 | 0.002 | 0.016 | 0.022 | 0.018 (0.002) | 0.9533 | 0.2580 | sí |
 | QN-1 | Legibilidad Fernández-Huerta | 27 | 61.8 | 60.6 | 63.7 | 3.1 | 55.1 | 66.1 | 61.9 (2.5) | 0.9723 | 0.6640 | sí |
 | QN-1 | Densidad del grafo por lema | 27 | 0.021 | 0.017 | 0.027 | 0.010 | 0.005 | 0.045 | 0.022 (0.009) | 0.9609 | 0.3877 | sí |
-| QN-2 | Usurpación mental o verbal del PJ (% de turnos) | 27 | 3.47 % | 2.10 % | 5.50 % | 3.40 % | 1.36 % | 11.40 % | 4.27 % (2.76 %) | 0.8588 | 0.0017 | no |
-| QN-2 | · decisión | 27 | 0.17 % | 0.07 % | 0.29 % | 0.21 % | 0.00 % | 0.43 % | 0.17 % (0.13 %) | 0.9288 | 0.0644 | sí |
-| QN-2 | · pensamiento | 27 | 2.38 % | 1.49 % | 3.84 % | 2.35 % | 0.77 % | 10.04 % | 3.24 % (2.59 %) | 0.7973 | 0.0001 | no |
-| QN-2 | · emoción | 27 | 0.22 % | 0.16 % | 0.36 % | 0.20 % | 0.00 % | 1.02 % | 0.28 % (0.21 %) | 0.8413 | 0.0008 | no |
-| QN-2 | · habla | 27 | 0.43 % | 0.18 % | 0.81 % | 0.63 % | 0.00 % | 3.71 % | 0.67 % (0.84 %) | 0.6993 | <0.0001 | no |
+| QN-2 | Usurpación mental o verbal del PJ (% de turnos) | 27 | 0.37 % | 0.26 % | 0.58 % | 0.33 % | 0.09 % | 1.28 % | 0.43 % (0.26 %) | 0.8878 | 0.0071 | no |
+| QN-2 | · decisión | 27 | 0.15 % | 0.07 % | 0.29 % | 0.21 % | 0.00 % | 0.43 % | 0.17 % (0.13 %) | 0.9243 | 0.0503 | sí |
+| QN-2 | · pensamiento | 27 | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 0.00 % (0.00 %) | — | — | — |
+| QN-2 | · emoción | 27 | 0.22 % | 0.15 % | 0.36 % | 0.21 % | 0.00 % | 1.02 % | 0.27 % (0.21 %) | 0.8200 | 0.0003 | no |
+| QN-2 | · habla | 27 | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 0.07 % | 0.00 % (0.01 %) | 0.1930 | <0.0001 | no |
 | QN-2 | Acción física no declarada (experimental, % de turnos) | 27 | 7.23 % | 6.25 % | 8.43 % | 2.17 % | 3.91 % | 10.57 % | 7.21 % (1.58 %) | 0.9667 | 0.5179 | sí |
 | QN-1 | Frases idénticas repetidas ≥ 3 veces (% de turnos) | 27 | 0.00 % | 0.00 % | 0.46 % | 0.46 % | 0.00 % | 1.79 % | 0.31 % (0.44 %) | 0.7540 | <0.0001 | no |
 | QN-1 | MTLD de la campaña (complementa al TTR; no depende de la longitud) | 27 | 108.9 | 104.9 | 110.7 | 5.9 | 101.7 | 114.2 | 108.5 (3.8) | 0.9486 | 0.1985 | sí |
@@ -157,11 +157,11 @@ Mismos estadísticos del sistema multiagente (G1), como referencia para la compa
 | QN-1 | Repetición de bigramas | 27 | 0.030 | 0.026 | 0.031 | 0.005 | 0.025 | 0.038 | 0.029 (0.003) | 0.9394 | 0.1180 | sí |
 | QN-1 | Legibilidad Fernández-Huerta | 27 | 60.5 | 59.5 | 62.1 | 2.6 | 51.8 | 64.6 | 60.3 (2.6) | 0.9064 | 0.0188 | no |
 | QN-1 | Densidad del grafo por lema | 27 | 0.032 | 0.024 | 0.038 | 0.015 | 0.018 | 0.055 | 0.032 (0.010) | 0.9352 | 0.0929 | sí |
-| QN-2 | Usurpación mental o verbal del PJ (% de turnos) | 27 | 0.17 % | 0.07 % | 0.32 % | 0.24 % | 0.00 % | 1.14 % | 0.24 % (0.24 %) | 0.8043 | 0.0002 | no |
+| QN-2 | Usurpación mental o verbal del PJ (% de turnos) | 27 | 0.00 % | 0.00 % | 0.07 % | 0.07 % | 0.00 % | 0.17 % | 0.03 % (0.05 %) | 0.6712 | <0.0001 | no |
 | QN-2 | · decisión | 27 | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 0.07 % | 0.01 % (0.02 %) | 0.3705 | <0.0001 | no |
-| QN-2 | · pensamiento | 27 | 0.09 % | 0.07 % | 0.17 % | 0.10 % | 0.00 % | 1.14 % | 0.15 % (0.22 %) | 0.5904 | <0.0001 | no |
+| QN-2 | · pensamiento | 27 | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 0.00 % (0.00 %) | — | — | — |
 | QN-2 | · emoción | 27 | 0.00 % | 0.00 % | 0.04 % | 0.04 % | 0.00 % | 0.17 % | 0.02 % (0.04 %) | 0.5915 | <0.0001 | no |
-| QN-2 | · habla | 27 | 0.00 % | 0.00 % | 0.09 % | 0.09 % | 0.00 % | 0.26 % | 0.05 % (0.08 %) | 0.7304 | <0.0001 | no |
+| QN-2 | · habla | 27 | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 0.00 % | 0.00 % (0.00 %) | — | — | — |
 | QN-2 | Acción física no declarada (experimental, % de turnos) | 27 | 0.68 % | 0.59 % | 0.94 % | 0.35 % | 0.17 % | 62.71 % | 3.05 % (11.93 %) | 0.2143 | <0.0001 | no |
 | QN-1 | Frases idénticas repetidas ≥ 3 veces (% de turnos) | 27 | 1.79 % | 1.21 % | 3.14 % | 1.93 % | 0.43 % | 14.21 % | 3.29 % (3.78 %) | 0.6636 | <0.0001 | no |
 | QN-1 | MTLD de la campaña (complementa al TTR; no depende de la longitud) | 27 | 109.0 | 107.5 | 111.3 | 3.8 | 99.3 | 118.5 | 108.9 (4.2) | 0.9741 | 0.7121 | sí |
@@ -220,11 +220,11 @@ Mismos estadísticos del sistema multiagente (G1), como referencia para la compa
 | QN-1 | Repetición de bigramas | ↓ | Exploratorio | 0.030 (0.026–0.031) | 0.018 (0.017–0.019) | +0.010 | +0.011 [+0.010, +0.012] | 378.0 | 27 | <0.0001 | 1.0000 | <0.0001 | +1.00 | — | 0.9195 | consistente |
 | QN-1 | Legibilidad Fernández-Huerta | · | Descriptivo / no usar | 60.5 (59.5–62.1) | 61.8 (60.6–63.7) | -1.6 | -1.8 [-2.8, -0.7] | 76.0 | 27 | 0.0055 | — | — | -0.60 | — | 0.0483 | consistente |
 | QN-1 | Densidad del grafo por lema | · | Descriptivo / no usar | 0.032 (0.024–0.038) | 0.021 (0.017–0.027) | +0.011 | +0.009 [+0.005, +0.015] | 328.0 | 27 | 0.0004 | — | — | +0.74 | — | 0.3728 | consistente |
-| QN-2 | Usurpación mental o verbal del PJ (% de turnos) | ↓ | Confirmatorio condicionado | 0.17 % (0.07 %–0.32 %) | 3.47 % (2.10 %–5.50 %) | -3.39 pp | -3.66 pp [-4.87, -2.74] | 0.0 | 27 | <0.0001 | <0.0001 | 1.0000 | -1.00 | <0.0001 | 0.0022 | consistente |
-| QN-2 | · decisión | ↓ | Confirmatorio condicionado | 0.00 % (0.00 %–0.00 %) | 0.17 % (0.07 %–0.29 %) | -0.17 pp | -0.16 pp [-0.21, -0.11] | 0.0 | 20 | <0.0001 | <0.0001 | 1.0000 | -1.00 | <0.0001 | 0.0449 | consistente |
-| QN-2 | · pensamiento | ↓ | Confirmatorio condicionado | 0.09 % (0.07 %–0.17 %) | 2.38 % (1.49 %–3.84 %) | -2.30 pp | -2.63 pp [-3.69, -1.89] | 0.0 | 27 | <0.0001 | <0.0001 | 1.0000 | -1.00 | <0.0001 | 0.0002 | consistente |
-| QN-2 | · emoción | ↓ | Confirmatorio condicionado | 0.00 % (0.00 %–0.04 %) | 0.22 % (0.16 %–0.36 %) | -0.22 pp | -0.23 pp [-0.29, -0.17] | 0.0 | 25 | <0.0001 | <0.0001 | 1.0000 | -1.00 | <0.0001 | 0.0004 | consistente |
-| QN-2 | · habla | ↓ | Confirmatorio condicionado | 0.00 % (0.00 %–0.09 %) | 0.43 % (0.18 %–0.81 %) | -0.34 pp | -0.42 pp [-0.68, -0.24] | 4.0 | 26 | <0.0001 | <0.0001 | 1.0000 | -0.98 | <0.0001 | <0.0001 | consistente |
+| QN-2 | Usurpación mental o verbal del PJ (% de turnos) | ↓ | Confirmatorio condicionado | 0.00 % (0.00 %–0.07 %) | 0.37 % (0.26 %–0.58 %) | -0.37 pp | -0.37 pp [-0.47, -0.29] | 0.0 | 27 | <0.0001 | <0.0001 | 1.0000 | -1.00 | <0.0001 | 0.0011 | consistente |
+| QN-2 | · decisión | ↓ | Confirmatorio condicionado | 0.00 % (0.00 %–0.00 %) | 0.15 % (0.07 %–0.29 %) | -0.15 pp | -0.15 pp [-0.21, -0.11] | 0.0 | 20 | <0.0001 | <0.0001 | 1.0000 | -1.00 | <0.0001 | 0.0409 | consistente |
+| QN-2 | · pensamiento | ↓ | Confirmatorio condicionado | 0.00 % (0.00 %–0.00 %) | 0.00 % (0.00 %–0.00 %) | +0.00 pp | +0.00 pp [+0.00, +0.00] | 0.0 | 0 | 1.0000 | 1.0000 | 1.0000 | +0.00 | 1.0000 | — | consistente |
+| QN-2 | · emoción | ↓ | Confirmatorio condicionado | 0.00 % (0.00 %–0.04 %) | 0.22 % (0.15 %–0.36 %) | -0.21 pp | -0.22 pp [-0.28, -0.16] | 0.0 | 25 | <0.0001 | <0.0001 | 1.0000 | -1.00 | <0.0001 | 0.0002 | consistente |
+| QN-2 | · habla | ↓ | Confirmatorio condicionado | 0.00 % (0.00 %–0.00 %) | 0.00 % (0.00 %–0.00 %) | +0.00 pp | +0.00 pp [+0.00, +0.00] | 0.0 | 1 | 1.0000 | 0.5000 | 1.0000 | -1.00 | 1.0000 | <0.0001 | consistente |
 | QN-2 | Acción física no declarada (experimental, % de turnos) | ↓ | Exploratorio | 0.68 % (0.59 %–0.94 %) | 7.23 % (6.25 %–8.43 %) | -6.30 pp | -6.27 pp [-6.94, -5.66] | 27.0 | 27 | <0.0001 | <0.0001 | 1.0000 | -0.86 | — | <0.0001 | consistente |
 | QN-1 | Frases idénticas repetidas ≥ 3 veces (% de turnos) | ↓ | Exploratorio | 1.79 % (1.21 %–3.14 %) | 0.00 % (0.00 %–0.46 %) | +1.79 pp | +1.96 pp [+1.29, +3.43] | 369.0 | 27 | <0.0001 | 1.0000 | <0.0001 | +0.95 | — | <0.0001 | consistente |
 | QN-1 | MTLD de la campaña (complementa al TTR; no depende de la longitud) | ↑ | Exploratorio | 109.0 (107.5–111.3) | 108.9 (104.9–110.7) | +0.2 | +0.2 [-1.4, +1.9] | 198.0 | 27 | 0.8408 | 0.4204 | 0.5888 | +0.05 | — | 0.0415 | ⚠ signo distinto |
@@ -255,7 +255,7 @@ Cuenta de instrumentos por resultado, con p bilateral < 0.05 (sin corregir) y la
 | H1d (coherencia reactiva) | Exploratorios | 3 | 0 | 3 | 6 |
 | H1e (coherencia longitudinal) | Confirmatorios y condicionados | 0 | 0 | 0 | 0 |
 | H1e (coherencia longitudinal) | Exploratorios | 1 | 1 | 4 | 6 |
-| H1f (calidad narrativa emergente) | Confirmatorios y condicionados | 5 | 0 | 0 | 5 |
+| H1f (calidad narrativa emergente) | Confirmatorios y condicionados | 3 | 0 | 2 | 5 |
 | H1f (calidad narrativa emergente) | Exploratorios | 3 | 4 | 3 | 10 |
 
 Nota: un mismo constructo aparece con varios instrumentos correlacionados (por ejemplo, las cuatro categorías de `persona2` y su total); el conteo no equivale a hipótesis independientes.

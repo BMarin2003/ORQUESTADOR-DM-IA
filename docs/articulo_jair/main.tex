@@ -1,0 +1,118 @@
+% Standalone draft. To submit, paste sections into the official JAIR template
+% (Overleaf: https://www.overleaf.com/read/hycbzkdksrzz#8106d4). See README_JAIR.md.
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,booktabs,multirow,xcolor}
+\usepackage[authoryear,round]{natbib}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\provisional}[1]{\textcolor{orange!80!black}{#1}}
+
+\title{Does Agent Specialization Improve Narrative Coherence?\\A Controlled Matched-Pairs Comparison of Multi-Agent and Monolithic LLM Game Masters in Long \textit{Dungeons \& Dragons} Campaigns}
+\author{Bryan Marin Yupanqui \and Luis David Mostacero Cieza \and Walter Cueva Ch\'avez\\[2pt]
+\small Universidad Privada Antenor Orrego, Trujillo, Peru}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent\textbf{Background.} Large language models (LLMs) acting as game masters lose context, contradict established facts and take decisions on behalf of the player as interactive narratives grow long. Multi-agent architectures are often credited with mitigating these failures, but the claim has not been tested under controlled conditions in this domain.
+\textbf{Objectives.} We test whether distributing each turn among specialized agents improves reactive coherence, longitudinal coherence and emergent narrative quality relative to a single-call (monolithic) game master that uses the same model and the same structured world-state memory.
+\textbf{Methods.} We generated 27 matched pairs of Spanish-language \textit{Dungeons \& Dragons} campaigns of 1{,}400 turns each (75{,}600 turns) with one open-weights model (\texttt{gemma-4-31B-it}), a shared world-state database, a shared state extractor, seeded deterministic dice and an autonomous LLM player agent. Each dimension was measured with deterministic instruments whose use (confirmatory, exploratory or descriptive) was fixed by perturbation-sensitivity tests; the agency-usurpation detector was additionally checked against a blind validation by five human game masters. Hypotheses were tested with Page's trend test, exact Wilcoxon signed-rank tests, Hodges--Lehmann estimators and rank-biserial correlations, with Holm correction within each confirmatory family.
+\textbf{Results.} The monolithic system's reactive coherence did not degrade over the campaign (Page $p=0.310$), but its respect for player agency did (Page $p=0.0105$). The confirmatory reactive instrument favored the monolithic system ($r=-0.47$). No longitudinal instrument reached confirmatory status. The multi-agent system usurped player agency in fewer turns in all 27 pairs (median 0.00\% vs.\ 0.37\%; $r=-1.00$), a result that holds under the worst-case correction for detector precision (23/27 pairs, $p<0.0001$).
+\textbf{Conclusions.} With a shared structured memory, agent specialization yielded no measurable gain in reactive or longitudinal coherence, but it markedly reduced how often the system decides for the player. The benefit of multi-agent game masters appears to be agency-specific rather than general.
+\end{abstract}
+
+\section{Introduction}
+LLM-driven game masters (GMs) must preserve, across hundreds of turns, the identity of characters, the consequences of player decisions and a continually changing world state, while the effective memory of an LLM is bounded and uneven across its context window \citep{liu2024lost,gallotta2024llms}. \textit{Dungeons \& Dragons} (D\&D) has become a reference domain for this problem \citep{callisonburch2022dnd,zhu2023fireball,zhou2023detect}, and human players consistently reject one particular failure: the model taking control of their character \citep{zhu2023fireball}.
+
+A common architectural response is to split the GM into specialized agents---for instance, a rules arbiter, a non-player character (NPC) actor, a world agent and a narrator---on the premise that narrower roles reduce errors \citep{xia2025storywriter,park2023generative,ware2023multiagent}. However, multi-agent LLM systems also introduce coordination failures of their own \citep{cemri2025why}, and published comparisons rarely hold the model, the memory and the scenario constant. In particular, a structured world-state memory is itself a strong confound: if only the multi-agent arm has one, any coherence gain may come from the memory rather than from the specialization.
+
+This paper isolates the architectural variable. Our contributions are:
+\begin{enumerate}
+\item A \textbf{controlled matched-pairs protocol} in which both architectures share the same open-weights model, world-state database, state extractor, seeded dice and scenario, so that within-pair differences are attributable to how turn decisions are organized (Section~\ref{sec:design}).
+\item A \textbf{battery of deterministic instruments} for reactive coherence, longitudinal coherence and emergent narrative quality in second-person Spanish narration, together with an explicit procedure that assigns each instrument a confirmatory, exploratory or descriptive role according to demonstrated perturbation sensitivity, and a blind human criterion validation (Section~\ref{sec:instruments}).
+\item \textbf{Dimension-level evidence} that agent specialization does not improve measurable reactive or longitudinal coherence when memory is shared, but does robustly reduce agency usurpation, and that the monolithic system's agency respect degrades with campaign length (Section~\ref{sec:results}).
+\end{enumerate}
+
+\section{Related Work}
+\paragraph{LLMs in interactive narrative.} Interactive narrative has long been framed as a problem of balancing authorial coherence and player agency \citep{riedl2013interactive}. Text-adventure environments such as Jericho \citep{hausknecht2020jericho} and generated interactive-fiction worlds \citep{ammanabrolu2020bringing} provided early testbeds; recent benchmarks evaluate LLMs as role-playing game engines \citep{yu2025rpgbench} and the quality of AI co-created game narratives \citep{valdivia2025evaluating}. Hybrid approaches keep an explicit symbolic domain and use the LLM as a search guide \citep{farrell2025llm}.
+
+\paragraph{Multi-agent narrative generation.} Multi-agent decompositions have been proposed for long-story generation \citep{xia2025storywriter}, believable simulated agents \citep{park2023generative} and narrative experience management \citep{ware2023multiagent}. Taxonomies of multi-agent failures \citep{cemri2025why} caution that specialization is not free.
+
+\paragraph{Measuring coherence.} Automatic story metrics correlate weakly and inconsistently with human criteria \citep{chhun2022human}. Entity-based measures address consistent use of characters \citep{papalampidi2022entities}; natural language inference over dialogue targets persona consistency \citep{welleck2019dnli}; lexical-diversity measures such as distinct-$n$ \citep{li2016diversity}, MTLD \citep{mccarthy2010mtld} and MATTR \citep{covington2010mattr} capture repetition. Because optimizing a proxy can decouple it from its construct \citep{manheim2019goodhart}, we validate every instrument before using it to decide a hypothesis.
+
+\section{Experimental Design}\label{sec:design}
+\paragraph{Architectures.} The \textbf{monolithic} system (G2) resolves each turn with a single model call that interprets the player action, applies the rules, voices NPCs, decides world changes and writes the narration. The \textbf{multi-agent} system (G1) distributes the turn among five roles---router, arbiter, NPC actor, world agent and narrator---one of which is deterministic. Both arms share the same world-state database, the same state-change extractor and the same seeded dice mechanism; shared code was audited line by line to ensure every fix was applied symmetrically.
+
+\paragraph{Model and language.} Both arms use \texttt{google/gemma-4-31B-it}, pinned to one version and served by one inference provider, without fine-tuning. All campaigns follow the D\&D 5e System Reference Document and are narrated in Spanish.
+
+\paragraph{Player agent and corpus.} Human players were replaced by an autonomous LLM player agent to present equivalent stimuli to both arms. Each player character has an archetype, an agenda, a defined propensity to deviate from plot hooks and character-specific behavior examples \citep{yasunaga2024analogical}; dice are resolved by the system, so the agent cannot favor convenient outcomes. The corpus has 27 pairs (54 campaigns) of 1{,}400 turns, analyzed as seven blocks of 200 turns. Each pair uses a distinct setting, tone, conflict structure and player character; within a pair, both arms start from identical conditions. Actions diverge over the campaign because the agent responds to different narrations; we regard this as part of the effect, since GM coherence is only observable in interaction.
+
+\paragraph{Hypotheses.} For each dimension $d\in\{$reactive, longitudinal, emergent quality$\}$ we test (i) degradation of G2 across blocks (H1a--H1c) and (ii) superiority of G1 over G2 (H1d--H1f). The general hypothesis holds only if H1d, H1e and H1f all hold (an intersection--union rule; \citealp{berger1996bioequivalence}); no composite index is computed.
+
+\section{Instruments and Their Validation}\label{sec:instruments}
+\paragraph{Perturbation-based classification.} Deterministic instruments are perfectly reliable by construction, so the concern is validity. Each instrument was exposed to synthetic perturbations with known expected effects (e.g., inserted contradictions, shuffled turns, swapped scenarios) and to perturbations that should leave it unchanged. Only instruments that responded in the expected direction and stayed stable otherwise were classified as \emph{confirmatory}; partial responders were \emph{exploratory}; the rest were reported as \emph{descriptive}.
+
+\paragraph{Instruments.} Table~\ref{tab:instr} summarizes the battery.
+\begin{table}[t]\centering\small
+\begin{tabular}{@{}lll@{}}\toprule
+Dimension & Instrument & Role\\\midrule
+Reactive & Response to the specific action ($z$ vs.\ shuffled baseline) & Confirmatory\\
+ & Scenario anchoring (cosine, window 8); unrecognized names & Exploratory\\
+ & Grammaticality; raw action overlap; script/U+FFFD errors & Descriptive\\
+Longitudinal & Entity coherence \citep{papalampidi2022entities}; Jericho-style QA; inactive-NPC mentions & Exploratory\\
+Emergent quality & \texttt{persona2}: explicit usurpation of player agency & Confirmatory (conditional)\\
+ & TTR, bigram repetition, MTLD, MATTR & Exploratory\\
+ & Readability (Fern\'andez-Huerta, Szigriszt-Pazos) & Descriptive\\\bottomrule
+\end{tabular}
+\caption{Instrument battery and role assigned by perturbation sensitivity.}\label{tab:instr}
+\end{table}
+
+\paragraph{\texttt{persona2}.} The detector flags narrator turns that attribute to the player character a decision, a spoken line, an emotion or a thought the player did not declare. Attributions the player declared, and cognition reported as the outcome of a declared skill roll (e.g., the result of an Investigation check), are excluded.
+
+\paragraph{Blind human validation.} Five experienced D\&D game masters labeled 982 items (400 for \texttt{persona2}, 200 and 200 for two longitudinal instruments, 150 for scenario anchoring) plus 32 embedded controls, in seeded per-rater random orders. Raters failing more than 20\% of a question's controls, or giving constant answers, were excluded from that question; the reference label is the majority of retained raters. We report stratum-weighted estimates with 2{,}000-replicate stratified bootstrap intervals, Cohen's $\kappa$ \citep{cohen1960coefficient}, Fleiss' $\kappa$ \citep{fleiss1971measuring}, Krippendorff's $\alpha$ \citep{krippendorff2004content} with prevalence caveats \citep{byrt1993bias}, and Wilson intervals \citep{wilson1927probable}. Against this reference, \texttt{persona2} precision was \provisional{1/1 in G1 and 5/11 in G2 (Wilson 95\% CI 21.3--72.0\%)}; recall is not estimable from this round, which is why the instrument is labeled \emph{conditional}.
+
+\paragraph{Statistics.} Degradation is tested with Page's ordered-alternatives test over the seven blocks \citep{page1963ordered} and a Wilcoxon test of block 1 vs.\ block 7. Arm differences use exact Wilcoxon signed-rank tests \citep{wilcoxon1945individual}, Hodges--Lehmann estimates with confidence intervals \citep{hodges1963estimates,lehmann2006nonparametrics}, and rank-biserial $r$ \citep{kerby2014simple,cliff1993dominance} with the thresholds of \citet{romano2006appropriate}. Holm correction \citep{holm1979simple} is applied within each confirmatory family. Shapiro--Wilk tests \citep{shapiro1965analysis} on the paired differences guide robustness checks; we report effect sizes and intervals alongside $p$-values \citep{wasserstein2016asa}. A sensitivity analysis was computed with G*Power \citep{faul2007gpower}.
+
+\section{Results}\label{sec:results}
+\paragraph{Degradation of the monolithic system.} The confirmatory reactive instrument did not degrade (median $z$ 2.77 in block 1 vs.\ 2.74 in block 7; Page $p=0.310$), so H1a is not supported. No longitudinal instrument was confirmatory; exploratory evidence showed no significant degradation (H1b undecided). Agency usurpation by G2 rose from a median of 0.00\% of turns in block 1 to 0.50\% in block 7 (Page $p=0.0105$; Wilcoxon $p=0.0120$), supporting H1c.
+
+\paragraph{Arm comparison.} Table~\ref{tab:main} reports the decisive contrasts.
+\begin{table}[t]\centering\small
+\begin{tabular}{@{}llrrrr@{}}\toprule
+Hyp. & Instrument & Mdn diff. & HL [95\% CI] & $p$ & $r$\\\midrule
+H1d & Response to action ($z$) & $-0.18$ & $-0.13$ [$-0.25$, $-0.03$] & 0.032\,(two-s.) & $-0.47$\\
+H1e & --- (no confirmatory instrument) & & & & \\
+H1f & \texttt{persona2} total (pp) & $-0.37$ & $-0.37$ [$-0.47$, $-0.29$] & $<0.0001$ & $-1.00$\\
+ & \quad decision & $-0.15$ & $-0.15$ [$-0.21$, $-0.10$] & $<0.0001$ & $-1.00$\\
+ & \quad emotion & $-0.21$ & $-0.22$ [$-0.28$, $-0.16$] & $<0.0001$ & \\\bottomrule
+\end{tabular}
+\caption{G1$-$G2 paired differences, $n=27$ pairs. Negative $z$ differences favor G2; negative usurpation differences favor G1. Exact Wilcoxon tests.}\label{tab:main}
+\end{table}
+
+\emph{Reactive (H1d).} G2 scored higher on the confirmatory instrument with a medium effect; the one-sided test in the direction of H1d gave $p=0.985$. The paired differences were normal (Shapiro--Wilk $p=0.92$) and a paired $t$-test reached the same decision ($t(26)=-2.38$, two-sided $p=0.025$, $d_z=-0.46$). Exploratory anchoring instruments pointed the other way (e.g., anchoring $r=+0.83$), so we treat the reactive result as fragile in direction but clear in that H1d is not supported.
+
+\emph{Longitudinal (H1e).} No instrument reached confirmatory status; H1e is undecided.
+
+\emph{Emergent quality (H1f).} G1 usurped player agency in fewer turns than G2 in all 27 pairs (median 0.00\% vs.\ 0.37\%). The effect concentrates in decisions and emotions; thoughts were null and speech had a single non-zero pair. Lexical measures were mixed and length-confounded (per-turn TTR favored G2, length-controlled TTR at 100 words favored G1).
+
+\paragraph{Robustness to detector precision.} Weighting each arm's flagged turns by its estimated precision leaves 27/27 pairs favoring G1 at the point estimates and 23/27 under the worst-case bounds of the Wilson intervals ($p<0.0001$ in both cases). H1f is therefore supported, partially (in one indicator), and the general hypothesis is not supported.
+
+\section{Discussion}
+Holding memory constant removes the most plausible mechanism by which multi-agent GMs were expected to improve coherence: once both arms read the same structured world state, a single call tracks the scene and responds to the action at least as well as a pipeline of specialists. What specialization does change is \emph{who speaks for the player}. A dedicated narrator that receives an already-arbitrated outcome has less occasion to resolve the player's choices itself, whereas a monolithic call that must arbitrate, voice NPCs and narrate at once increasingly fills gaps by deciding for the character---and does so more as the campaign lengthens. For practitioners, this suggests specializing the narration/arbitration boundary rather than adopting a full multi-agent decomposition by default, given its higher call count and latency.
+
+\section{Limitations}
+Results come from one model, one language, one rule system and one five-role decomposition. The player is an LLM agent, which favors internal over ecological validity. Dice sequences differ between arms of a pair because the seed includes the campaign identifier, and generation incidents (a player-model change in early pairs; deterministic narrative clocks from pair 18) add between-pair variance, so robustness is also reported by batch. \provisional{The \texttt{persona2} figures are provisional: the detector is being re-run with additional context on a frozen development split and re-measured on a held-out test split, and its recall is not yet estimated.} Human raters were game masters following a codebook; a content-validity check of the codebook is planned.
+
+\section{Conclusion}
+In 27 matched pairs of 1{,}400-turn D\&D campaigns with a shared structured memory, a five-role multi-agent GM did not outperform a monolithic GM in reactive or longitudinal coherence, but it robustly reduced agency usurpation, which in the monolithic GM worsened with campaign length. Claims that multi-agent architectures improve narrative coherence should be qualified by dimension and by what memory the baseline receives.
+
+\section*{Reproducibility Statement}
+Code, prompts, scenario specifications, seeds, generated campaigns, instrument implementations, perturbation tests, the human-validation form, anonymized responses and analysis scripts are available at \url{https://github.com/BMarin2003/ORQUESTADOR-DM-IA}. Rater identities and signed consents are withheld.
+
+\bibliographystyle{plainnat}
+\bibliography{refs}
+\end{document}

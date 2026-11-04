@@ -60,7 +60,7 @@ flowchart LR
 | --- | --- |
 | [`motor/`](motor/) | Sistema DM-IA: `orquestador/`, `dm/`, `jugador/`, `extractor/`, `migrations/` y `entorno/` (tabla de arriba) |
 | [`experimento/`](experimento/) | `corpus/` (lore de cada escenario), `fixtures/` (mundo y PNJ, con su validador) y `scripts/` (operación, medición y análisis; ver [`experimento/scripts/README.md`](experimento/scripts/README.md)) |
-| [`datos/`](datos/) | `logs/` (bitácoras por par y del supervisor), `transcripciones/` (pares 02–06, 07–17 y 18–27), `datos_v2/` (mediciones por turno, bloque y campaña) y `validacion/` (validación humana externa) |
+| [`datos/`](datos/) | `logs/` (bitácoras por par y del supervisor), `transcripciones/` (pares 02–06, 07–17 y 18–27), `datos_v2/` (mediciones por turno, bloque y campaña; incluye `persona2_v3b/`), `validacion/` (validación humana externa v1) y [`validacion_v2/`](datos/validacion_v2/README.md) (validación humana v2 con 5 directores de juego) |
 | [`docs/`](docs/) | Resultados, reportes, especificaciones e IDs (ver [`docs/README.md`](docs/README.md)) |
 | [`tesis/`](tesis/) | Documento vigente (`TESIS2.docx.md`), figuras, audio de asesoría y `sustentacion/` (deck oficial UPAO, generador y guiones) |
 | [`website/`](website/) | Documentación en Docusaurus; la referencia de código se genera desde los docstrings |

@@ -1,0 +1,351 @@
+id,tipo,estrato,par,brazo,campaign_id,turn_id,campo,entidad,valor,detector,clase,z,crudo
+V539180,jericho,si,19,G1,a583b7b7-c777-4032-b493-3b61d57476b0,780,npc.status,Leo Varga,captured,1,,,
+V142217,jericho,si,19,G1,a583b7b7-c777-4032-b493-3b61d57476b0,831,npc.status,Leo Varga,dead,1,,,
+V960532,jericho,si,24,G1,fd990516-18f6-4341-8ec7-9e2a12dfedca,1171,npc.affinity,Figura encapuchada,-10.0,1,,,
+V722649,jericho,si,27,G1,fc82b88f-da23-41c9-b164-b78c0a9dfbc8,898,npc.status,Amalgama de basalto,dead,1,,,
+V722636,jericho,si,10,G1,7dc9fe9d-9052-4252-aa0c-f86490b96dbe,323,npc.affinity,Marek,-10.0,1,,,
+V634210,jericho,si,18,G1,878b05b9-c082-4595-9c64-5bdc736bbe1a,1248,npc.affinity,Valerius,-10.0,1,,,
+V928784,jericho,si,13,G1,7231e456-9284-40b3-83ed-d1de4dc4e33e,46,npc.affinity,Baldemar Cruz,-8.0,1,,,
+V159425,jericho,si,12,G1,5f050643-72d2-4c9f-8209-9c9ce008c61e,406,npc.affinity,Osvaldo Prín,22.0,1,,,
+V171597,jericho,si,21,G1,0480c825-e678-470e-97a5-6cb77a9e0925,58,npc.status,Parásito eléctrico,dead,1,,,
+V240572,jericho,si,19,G1,a583b7b7-c777-4032-b493-3b61d57476b0,830,npc.status,Leo Varga,dead,1,,,
+V788768,jericho,si,22,G1,ad163fd8-4b8d-43bd-acf6-33e7a33afb97,599,npc.affinity,Casimira Ortigal,-73.0,1,,,
+V360171,jericho,si,23,G1,683123ee-89b1-48ad-9d29-6100b6e822d4,1159,npc.status,masa blindada,dead,1,,,
+V676576,jericho,si,10,G1,7dc9fe9d-9052-4252-aa0c-f86490b96dbe,996,npc.affinity,Marek,80.0,1,,,
+V877639,jericho,si,23,G1,683123ee-89b1-48ad-9d29-6100b6e822d4,1204,npc.status,masa blindada,dead,1,,,
+V267729,jericho,si,06,G1,fbe6d980-964f-455c-89d9-96d34d9653fe,766,npc.affinity,Osana Ferreira,-10.0,1,,,
+V277585,jericho,si,13,G1,7231e456-9284-40b3-83ed-d1de4dc4e33e,71,npc.affinity,Baldemar Cruz,-32.0,1,,,
+V504610,jericho,si,22,G1,ad163fd8-4b8d-43bd-acf6-33e7a33afb97,818,npc.status,La Tejedora de Expiaciones,dead,1,,,
+V569207,jericho,si,27,G1,fc82b88f-da23-41c9-b164-b78c0a9dfbc8,884,npc.status,Amalgama de basalto,dead,1,,,
+V562708,jericho,si,05,G1,b7a090cf-032e-4a87-be01-e03fa88a9917,145,npc.status,Damil Quiroga,dead,1,,,
+V847789,jericho,si,06,G1,fbe6d980-964f-455c-89d9-96d34d9653fe,1093,npc.affinity,Osana Ferreira,-66.0,1,,,
+V759327,jericho,si,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,665,npc.status,El Susurro del Hambre,dead,1,,,
+V722584,jericho,si,20,G2,9e7e4aec-5a1d-41ce-9904-ccffaebfd944,1171,npc.affinity,"Barnaby ""El Glotón""",-8.0,1,,,
+V961646,jericho,si,09,G2,41674211-baed-424c-9187-3a6429dd8400,574,npc.status,Superviviente de la ceniza,dead,1,,,
+V530867,jericho,si,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,281,npc.status,El Guardián del Umbral,dead,1,,,
+V311331,jericho,si,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,1389,npc.status,Soldado herido,captured,1,,,
+V768222,jericho,si,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,295,npc.affinity,tendero,-40.0,1,,,
+V419909,jericho,si,12,G2,6f319319-f39f-4902-9f11-a5d5a17798af,405,npc.affinity,figura encapuchada,-10.0,1,,,
+V607349,jericho,si,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,967,npc.status,El Susurro del Hambre,dead,1,,,
+V646988,jericho,si,09,G2,41674211-baed-424c-9187-3a6429dd8400,1218,npc.status,Superviviente de la ceniza,dead,1,,,
+V882049,jericho,si,26,G2,eccb3666-5a9c-4959-8427-ae693f8c7530,991,npc.status,Desconocido herido,dead,1,,,
+V111765,jericho,si,07,G2,f42e9672-4df4-40bf-a912-02fba5ae396e,1275,npc.status,Figura encapuchada,missing,1,,,
+V997833,jericho,si,26,G2,eccb3666-5a9c-4959-8427-ae693f8c7530,876,npc.status,zorro del bosque,dead,1,,,
+V705811,jericho,si,21,G2,dfe775b9-a57f-4bba-ba17-a680c9e61ee8,161,npc.status,Serafín Brea,dead,1,,,
+V473979,jericho,si,19,G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,541,npc.status,El hombre de la cicatriz en la mejilla,dead,1,,,
+V656759,jericho,si,07,G2,f42e9672-4df4-40bf-a912-02fba5ae396e,371,npc.affinity,Bercelio Nax,-14.0,1,,,
+V442812,jericho,si,19,G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,1293,npc.affinity,Capitán Varos,-10.0,1,,,
+V430072,jericho,si,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,898,npc.status,criatura de piel translúcida,dead,1,,,
+V121198,jericho,si,01,G2,e9bef82d-8b7a-41e9-8cb6-8e6af542e514,690,npc.affinity,Grog,-14.0,1,,,
+V788426,jericho,si,01,G2,e9bef82d-8b7a-41e9-8cb6-8e6af542e514,84,npc.affinity,Figura encapuchada,21.0,1,,,
+V332691,jericho,si,26,G2,eccb3666-5a9c-4959-8427-ae693f8c7530,449,npc.status,Nicasio Tala,missing,1,,,
+V984846,jericho,si,07,G2,f42e9672-4df4-40bf-a912-02fba5ae396e,931,npc.status,El Vigilante del Umbral,dead,1,,,
+V978386,jericho,si,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,1188,npc.status,criatura de piel translúcida,dead,1,,,
+V723622,jericho,si,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,681,npc.status,El Vigilante del Granero,dead,1,,,
+V368600,jericho,si,23,G2,e8629a76-58f5-45d3-91e2-15bf7c1d60af,1277,npc.status,Cefalópodo mecánico,dead,1,,,
+V603355,jericho,si,03,G2,ff0c8110-caa5-48fa-b285-7dc903cc1d26,1207,npc.affinity,Siseador de Cristal,86.0,1,,,
+V520886,jericho,si,26,G2,eccb3666-5a9c-4959-8427-ae693f8c7530,1372,npc.status,criatura deforme,missing,1,,,
+V260284,jericho,si,03,G2,ff0c8110-caa5-48fa-b285-7dc903cc1d26,517,npc.affinity,Erudito de la Atalaya,-8.0,1,,,
+V481781,jericho,si,02,G2,5653d917-4744-43e3-90ba-8190a22a126c,1041,npc.affinity,Kaelen el Silencioso,25.0,1,,,
+V597599,jericho,si,17,G2,45f450c1-29bc-4dde-8960-82129291f1ad,331,npc.status,Hombre de la casaca carmesí,dead,1,,,
+V596355,jericho,si,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,1005,npc.affinity,"Elio, el Silencioso",-10.0,1,,,
+V979083,jericho,si,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,1034,npc.status,Hombre del mandil,dead,1,,,
+V453898,jericho,si,05,G2,0bc0b20b-0dba-454d-a32e-94fbeb24dddf,1045,npc.status,Elian Thorne,captured,1,,,
+V904779,jericho,si,05,G2,0bc0b20b-0dba-454d-a32e-94fbeb24dddf,1055,npc.affinity,el viejo cartógrafo,-38.0,1,,,
+V208526,jericho,si,19,G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,486,npc.affinity,El hombre de la cicatriz en la mejilla,-10.0,1,,,
+V673279,jericho,si,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,1016,npc.affinity,Vaelen,-28.0,1,,,
+V257117,jericho,si,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,641,npc.status,El Susurro del Hambre,dead,1,,,
+V658585,jericho,si,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,492,npc.status,criatura de piel translúcida,captured,1,,,
+V309771,jericho,si,08,G2,ebfcb92e-2eeb-4235-a1d2-73630f75a631,637,npc.affinity,Alaric,-24.0,1,,,
+V568730,jericho,si,11,G2,b6c3eb75-cb1a-48de-a827-d082415b4b74,922,npc.status,Centinela del Equilibrio,dead,1,,,
+V382741,jericho,si,05,G2,0bc0b20b-0dba-454d-a32e-94fbeb24dddf,1312,npc.status,Hombre de la túnica de lino,missing,1,,,
+V265097,jericho,si,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,1015,npc.status,Autómata de mantenimiento,dead,1,,,
+V727310,jericho,si,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,1184,npc.affinity,criatura de piel translúcida,-20.0,1,,,
+V508883,jericho,si,09,G2,41674211-baed-424c-9187-3a6429dd8400,1159,npc.status,Superviviente de la ceniza,dead,1,,,
+V595602,jericho,si,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,722,npc.status,El Susurro del Hambre,dead,1,,,
+V637208,jericho,si,24,G2,b09c56ca-cc15-4576-9ad7-cd16773f14b4,740,npc.affinity,Barnaby,70.0,1,,,
+V610765,jericho,si,19,G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,779,npc.status,Híbrido de metal y roca,dead,1,,,
+V168682,jericho,si,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,1333,npc.status,criatura de piel translúcida,dead,1,,,
+V730723,jericho,si,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,901,npc.status,Autómata de mantenimiento,dead,1,,,
+V920956,jericho,si,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,638,npc.affinity,Hombre del tabardo gris,-10.0,1,,,
+V691681,jericho,si,01,G2,e9bef82d-8b7a-41e9-8cb6-8e6af542e514,176,npc.status,Figura encapuchada,missing,1,,,
+V784632,jericho,si,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,978,npc.status,Hombre del mandil,dead,1,,,
+V714084,jericho,si,19,G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,1289,npc.status,Capitán Varos,captured,1,,,
+V320540,jericho,si,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,529,npc.status,Elian,captured,1,,,
+V130014,jericho,si,01,G2,e9bef82d-8b7a-41e9-8cb6-8e6af542e514,975,npc.affinity,Hombre delgado,-31.0,1,,,
+V752126,jericho,si,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,650,npc.affinity,Hombre del tabardo gris,-60.0,1,,,
+V600024,jericho,si,17,G2,45f450c1-29bc-4dde-8960-82129291f1ad,264,npc.status,Hombre de la casaca carmesí,captured,1,,,
+V394145,jericho,si,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,877,npc.affinity,criatura de piel translúcida,-10.0,1,,,
+V565788,jericho,si,19,G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,778,npc.status,Híbrido de metal y roca,dead,1,,,
+V375992,jericho,si,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,1035,npc.status,Hombre del mandil,dead,1,,,
+V646090,jericho,si,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,640,npc.status,El Susurro del Hambre,dead,1,,,
+V997401,jericho,si,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,582,npc.affinity,El Vigilante del Granero,-14.0,1,,,
+V895238,jericho,si,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,673,npc.status,El Susurro del Hambre,dead,1,,,
+V487046,jericho,si,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,1106,npc.affinity,Valerius Thorne,-16.0,1,,,
+V247712,jericho,si,09,G2,41674211-baed-424c-9187-3a6429dd8400,1201,npc.status,Superviviente de la ceniza,dead,1,,,
+V572829,jericho,si,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,524,npc.affinity,El hombre del anillo de sello,-10.0,1,,,
+V147929,jericho,si,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,296,npc.status,criatura de piel translúcida,dead,1,,,
+V859965,jericho,si,03,G2,ff0c8110-caa5-48fa-b285-7dc903cc1d26,521,npc.affinity,Erudito de la Atalaya,-11.0,1,,,
+V315774,jericho,si,09,G2,41674211-baed-424c-9187-3a6429dd8400,1259,npc.status,Superviviente de la ceniza,dead,1,,,
+V684979,jericho,si,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,798,npc.affinity,Soldado herido,-100.0,1,,,
+V157984,jericho,si,01,G2,e9bef82d-8b7a-41e9-8cb6-8e6af542e514,1163,npc.affinity,carretero,-47.0,1,,,
+V832169,jericho,si,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,756,npc.affinity,El Vigilante del Granero,-40.0,1,,,
+V410769,jericho,si,05,G2,0bc0b20b-0dba-454d-a32e-94fbeb24dddf,1035,npc.affinity,Elian Thorne,-8.0,1,,,
+V638356,jericho,si,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,207,npc.status,Letra O,captured,1,,,
+V703124,jericho,si,23,G2,e8629a76-58f5-45d3-91e2-15bf7c1d60af,1059,npc.status,Criatura del ancla,dead,1,,,
+V851708,jericho,si,26,G2,eccb3666-5a9c-4959-8427-ae693f8c7530,1378,npc.status,criatura deforme,missing,1,,,
+V854720,jericho,si,01,G2,e9bef82d-8b7a-41e9-8cb6-8e6af542e514,477,npc.affinity,Supervisor del muelle,-8.0,1,,,
+V673855,jericho,si,17,G2,45f450c1-29bc-4dde-8960-82129291f1ad,332,npc.status,Hombre de la casaca carmesí,dead,1,,,
+V960897,jericho,si,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,322,npc.affinity,Inspector Valerius,-10.0,1,,,
+V391164,jericho,si,17,G2,45f450c1-29bc-4dde-8960-82129291f1ad,1133,npc.status,Melquíades Sorna,dead,1,,,
+V242784,jericho,si,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,880,npc.affinity,Hombre del tabardo gris,-10.0,1,,,
+V552453,jericho,no,24,G1,fd990516-18f6-4341-8ec7-9e2a12dfedca,102,npc.affinity,Fermín Llavín,-25.0,0,,,
+V429848,jericho,no,15,G1,4521da96-8eda-4fb7-9464-ce09d417d26f,136,npc.affinity,entidad orgánica,8.0,0,,,
+V221708,jericho,no,19,G1,a583b7b7-c777-4032-b493-3b61d57476b0,850,npc.status,Leo Varga,captured,0,,,
+V976029,jericho,no,17,G1,dc7af6f4-453a-4542-a2b5-e7cdd46a30b2,190,npc.affinity,Bibiana Roth,24.0,0,,,
+V432954,jericho,no,07,G1,41fedb73-2345-439b-852c-87ad806e1015,394,npc.status,Sargento Vane,captured,0,,,
+V236134,jericho,no,07,G1,41fedb73-2345-439b-852c-87ad806e1015,998,npc.status,Sargento Vane,dead,0,,,
+V770819,jericho,no,26,G1,a2d586a1-18a0-4391-977c-7c4bf5e84c6e,511,npc.affinity,criatura metálica,85.0,0,,,
+V532152,jericho,no,26,G1,a2d586a1-18a0-4391-977c-7c4bf5e84c6e,697,npc.affinity,superviviente,60.0,0,,,
+V569267,jericho,no,27,G1,fc82b88f-da23-41c9-b164-b78c0a9dfbc8,1309,npc.affinity,Anselmo Vela,70.0,0,,,
+V561807,jericho,no,04,G1,ee613cb4-c84c-4c69-b276-bbf97e0cbbc6,532,npc.affinity,Mirela Sanz,62.0,0,,,
+V386035,jericho,no,07,G1,41fedb73-2345-439b-852c-87ad806e1015,251,npc.affinity,Sargento Vane,49.0,0,,,
+V712892,jericho,no,27,G1,fc82b88f-da23-41c9-b164-b78c0a9dfbc8,768,npc.status,Amalgama de basalto,dead,0,,,
+V828880,jericho,no,21,G1,0480c825-e678-470e-97a5-6cb77a9e0925,1359,npc.affinity,técnico,48.0,0,,,
+V364284,jericho,no,03,G1,9d22ac2a-a09f-4e04-8eeb-2606125988ef,1218,npc.status,Yenna Roldós,missing,0,,,
+V662295,jericho,no,10,G1,7dc9fe9d-9052-4252-aa0c-f86490b96dbe,454,npc.affinity,Marek,20.0,0,,,
+V983968,jericho,no,19,G1,a583b7b7-c777-4032-b493-3b61d57476b0,1280,npc.status,Leo Varga,dead,0,,,
+V489522,jericho,no,18,G1,878b05b9-c082-4595-9c64-5bdc736bbe1a,1272,npc.affinity,Valerius,-30.0,0,,,
+V697668,jericho,no,11,G1,259f2fdd-2857-4ebb-ad4f-bde8ea297e04,93,npc.affinity,Illian Vasto,86.0,0,,,
+V409716,jericho,no,05,G1,b7a090cf-032e-4a87-be01-e03fa88a9917,1370,npc.affinity,Renata Ossorio,45.0,0,,,
+V305263,jericho,no,19,G1,a583b7b7-c777-4032-b493-3b61d57476b0,1014,npc.status,Leo Varga,dead,0,,,
+V566343,jericho,no,25,G2,71851109-08d3-41db-9f22-796e26af13a1,37,npc.affinity,Eusebio Plumilla,10.0,0,,,
+V923327,jericho,no,15,G2,79db3083-9993-458a-86a9-12ddec04e192,396,npc.affinity,Escribano anónimo,75.0,0,,,
+V186022,jericho,no,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,390,npc.affinity,Maestro Pimpón,-8.0,0,,,
+V579509,jericho,no,13,G2,8845df6a-3248-47ef-9844-7c234724d7f9,566,npc.status,centinela mecánico,dead,0,,,
+V753710,jericho,no,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,805,npc.status,criatura de piel translúcida,captured,0,,,
+V841477,jericho,no,24,G2,b09c56ca-cc15-4576-9ad7-cd16773f14b4,26,npc.affinity,Fermín Llavín,12.0,0,,,
+V562186,jericho,no,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,52,npc.affinity,El hombre del anillo de sello,-30.0,0,,,
+V518185,jericho,no,12,G2,6f319319-f39f-4902-9f11-a5d5a17798af,987,npc.affinity,Valerius,-62.0,0,,,
+V757423,jericho,no,17,G2,45f450c1-29bc-4dde-8960-82129291f1ad,1122,npc.affinity,Melquíades Sorna,21.0,0,,,
+V887446,jericho,no,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,1079,npc.status,Autómata de mantenimiento,captured,0,,,
+V278836,jericho,no,23,G2,e8629a76-58f5-45d3-91e2-15bf7c1d60af,781,npc.status,Cefalópodo mecánico,dead,0,,,
+V806952,jericho,no,24,G2,b09c56ca-cc15-4576-9ad7-cd16773f14b4,407,npc.affinity,Buster,65.0,0,,,
+V824799,jericho,no,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,1111,npc.affinity,Valerius Thorne,-66.0,0,,,
+V100037,jericho,no,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,847,npc.status,Autómata de mantenimiento,dead,0,,,
+V663876,jericho,no,05,G2,0bc0b20b-0dba-454d-a32e-94fbeb24dddf,890,npc.affinity,Damil Quiroga,26.0,0,,,
+V386501,jericho,no,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,208,npc.status,Letra O,captured,0,,,
+V281249,jericho,no,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,973,npc.affinity,Maestro de Llaves,-62.0,0,,,
+V437410,jericho,no,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,455,npc.affinity,Soldado herido,-20.0,0,,,
+V346970,jericho,no,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,1397,npc.status,Elian,captured,0,,,
+V486694,jericho,no,02,G2,5653d917-4744-43e3-90ba-8190a22a126c,1085,npc.affinity,Cobrador de Cadenas,25.0,0,,,
+V865787,jericho,no,12,G2,6f319319-f39f-4902-9f11-a5d5a17798af,762,npc.status,figura encapuchada,captured,0,,,
+V151044,jericho,no,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,680,npc.status,El Vigilante del Granero,dead,0,,,
+V558710,jericho,no,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,724,npc.status,Maestro Pimpón,captured,0,,,
+V306797,jericho,no,20,G2,9e7e4aec-5a1d-41ce-9904-ccffaebfd944,1184,npc.affinity,"Barnaby ""El Glotón""",-28.0,0,,,
+V651219,jericho,no,19,G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,831,npc.status,Híbrido de metal y roca,dead,0,,,
+V864659,jericho,no,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,860,npc.affinity,Autómata de mantenimiento,-26.0,0,,,
+V793675,jericho,no,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,1139,npc.affinity,Malthus,-74.0,0,,,
+V306664,jericho,no,17,G2,45f450c1-29bc-4dde-8960-82129291f1ad,904,npc.affinity,Hombre de la casaca carmesí,28.0,0,,,
+V764241,jericho,no,09,G2,41674211-baed-424c-9187-3a6429dd8400,1274,npc.affinity,Superviviente de la fosa,60.0,0,,,
+V760817,jericho,no,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,802,npc.status,criatura de piel translúcida,missing,0,,,
+V945165,jericho,no,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,283,npc.affinity,criatura de piel translúcida,-30.0,0,,,
+V327819,jericho,no,13,G2,8845df6a-3248-47ef-9844-7c234724d7f9,349,npc.status,centinela mecánico,dead,0,,,
+V376530,jericho,no,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,1213,npc.status,criatura de piel translúcida,dead,0,,,
+V471246,jericho,no,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,298,npc.status,criatura de piel translúcida,dead,0,,,
+V270322,jericho,no,24,G2,b09c56ca-cc15-4576-9ad7-cd16773f14b4,933,npc.affinity,Capitán Vane,28.0,0,,,
+V202163,jericho,no,20,G2,9e7e4aec-5a1d-41ce-9904-ccffaebfd944,311,npc.affinity,Alaric el Escriba,-30.0,0,,,
+V339178,jericho,no,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,168,npc.affinity,El hombre del anillo de sello,-32.0,0,,,
+V221939,jericho,no,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,38,npc.affinity,Honorio Zapata,-30.0,0,,,
+V201796,jericho,no,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,626,npc.affinity,El Vigilante del Granero,-62.0,0,,,
+V388361,jericho,no,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,936,npc.status,criatura de piel translúcida,captured,0,,,
+V364888,jericho,no,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,941,npc.status,Autómata de mantenimiento,dead,0,,,
+V326660,jericho,no,20,G2,9e7e4aec-5a1d-41ce-9904-ccffaebfd944,1252,npc.affinity,Pipo,-13.0,0,,,
+V560092,jericho,no,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,963,npc.status,Autómata de mantenimiento,dead,0,,,
+V135051,jericho,no,09,G2,41674211-baed-424c-9187-3a6429dd8400,1165,npc.affinity,Superviviente de la ceniza,55.0,0,,,
+V347682,jericho,no,08,G2,ebfcb92e-2eeb-4235-a1d2-73630f75a631,781,npc.status,Figura de la armadura antigua,dead,0,,,
+V409610,jericho,no,02,G2,5653d917-4744-43e3-90ba-8190a22a126c,2,npc.affinity,Bardo Ossein,25.0,0,,,
+V257536,jericho,no,02,G2,5653d917-4744-43e3-90ba-8190a22a126c,1131,npc.affinity,El Vigilante de las Cadenas,27.0,0,,,
+V140320,jericho,no,26,G2,eccb3666-5a9c-4959-8427-ae693f8c7530,733,npc.status,zorro del bosque,dead,0,,,
+V410517,jericho,no,17,G2,45f450c1-29bc-4dde-8960-82129291f1ad,355,npc.affinity,Hombre de la casaca carmesí,15.0,0,,,
+V607844,jericho,no,03,G2,ff0c8110-caa5-48fa-b285-7dc903cc1d26,639,npc.affinity,Elian,29.0,0,,,
+V924114,jericho,no,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,1051,npc.affinity,"Elio, el Silencioso",-30.0,0,,,
+V734710,jericho,no,15,G2,79db3083-9993-458a-86a9-12ddec04e192,145,npc.affinity,Kaelen,27.0,0,,,
+V970118,jericho,no,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,133,npc.status,Soldado herido,dead,0,,,
+V132629,jericho,no,19,G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,1015,npc.status,Híbrido de metal y roca,dead,0,,,
+V939750,jericho,no,15,G2,79db3083-9993-458a-86a9-12ddec04e192,1372,npc.affinity,Elian Thorne,71.0,0,,,
+V994970,jericho,no,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,1271,npc.status,criatura de piel translúcida,dead,0,,,
+V947455,jericho,no,26,G2,eccb3666-5a9c-4959-8427-ae693f8c7530,424,npc.affinity,Nicasio Tala,61.0,0,,,
+V238778,jericho,no,09,G2,41674211-baed-424c-9187-3a6429dd8400,1014,npc.status,Superviviente de la ceniza,dead,0,,,
+V710609,jericho,no,13,G2,8845df6a-3248-47ef-9844-7c234724d7f9,132,npc.status,centinela mecánico,dead,0,,,
+V390680,jericho,no,03,G2,ff0c8110-caa5-48fa-b285-7dc903cc1d26,682,npc.affinity,Elian,31.0,0,,,
+V156756,jericho,no,08,G2,ebfcb92e-2eeb-4235-a1d2-73630f75a631,417,npc.status,la Sombra de la Biblioteca,dead,0,,,
+V438837,jericho,no,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,313,npc.affinity,criatura de piel translúcida,-60.0,0,,,
+V957522,jericho,no,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,1029,npc.status,Hombre del mandil,captured,0,,,
+V542967,jericho,no,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,806,npc.status,El Vigilante del Granero,captured,0,,,
+V197300,jericho,no,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,878,npc.affinity,El Vigilante del Granero,-10.0,0,,,
+V112798,jericho,no,12,G2,6f319319-f39f-4902-9f11-a5d5a17798af,1293,npc.status,Valerius,captured,0,,,
+V677951,jericho,no,14,G2,cebcafd3-23cc-4d61-8e2e-9360587b7464,1325,npc.affinity,Madame Valeriane,28.0,0,,,
+V256170,jericho,no,08,G2,ebfcb92e-2eeb-4235-a1d2-73630f75a631,644,npc.affinity,Figura de la armadura antigua,60.0,0,,,
+V986579,jericho,no,07,G2,f42e9672-4df4-40bf-a912-02fba5ae396e,397,npc.affinity,Bercelio Nax,-24.0,0,,,
+V527983,jericho,no,17,G2,45f450c1-29bc-4dde-8960-82129291f1ad,1136,npc.affinity,Hombre de la casaca carmesí,28.0,0,,,
+V931209,jericho,no,14,G2,cebcafd3-23cc-4d61-8e2e-9360587b7464,723,npc.affinity,Toño Bravante,14.0,0,,,
+V730780,jericho,no,19,G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,1196,npc.status,Híbrido de metal y roca,dead,0,,,
+V394323,jericho,no,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,160,npc.affinity,El hombre del anillo de sello,-68.0,0,,,
+V644661,jericho,no,24,G2,b09c56ca-cc15-4576-9ad7-cd16773f14b4,181,npc.affinity,Buster,-34.0,0,,,
+V222781,jericho,no,14,G2,cebcafd3-23cc-4d61-8e2e-9360587b7464,649,npc.affinity,Madame Valeriane,8.0,0,,,
+V691268,jericho,no,19,G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,1053,npc.status,Híbrido de metal y roca,dead,0,,,
+V184939,jericho,no,03,G2,ff0c8110-caa5-48fa-b285-7dc903cc1d26,923,npc.affinity,Líder de los cazadores,61.0,0,,,
+V633570,jericho,no,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,1264,npc.status,criatura de piel translúcida,dead,0,,,
+V805345,jericho,no,15,G2,79db3083-9993-458a-86a9-12ddec04e192,1015,npc.affinity,Elian Thorne,48.0,0,,,
+V437420,jericho,no,09,G2,41674211-baed-424c-9187-3a6429dd8400,1177,npc.affinity,Superviviente de la ceniza,61.0,0,,,
+V422404,accion,aleatorio,09,G1,d78a7a3e-f37d-407b-ac5b-5c9895064732,1333,,,,,mixta,1.0417,0.0908
+V887955,accion,aleatorio,20,G1,7b598b5b-8d8d-4012-a9cf-656d1f2f5109,399,,,,,mixta,0.7427,0.0839
+V789712,accion,aleatorio,03,G1,9d22ac2a-a09f-4e04-8eeb-2606125988ef,74,,,,,mixta,2.7951,0.1333
+V830090,accion,aleatorio,01,G1,68a5896f-e7bb-4479-8403-a8403cf80838,536,,,,,mixta,0.1048,0.0465
+V128882,accion,aleatorio,11,G1,259f2fdd-2857-4ebb-ad4f-bde8ea297e04,945,,,,,mixta,3.2437,0.1393
+V394056,accion,aleatorio,25,G1,802bebcb-d49d-455b-9dad-e05b66955504,448,,,,,mixta,2.632,0.1751
+V834526,accion,aleatorio,11,G1,259f2fdd-2857-4ebb-ad4f-bde8ea297e04,1298,,,,,mixta,2.5396,0.1443
+V535285,accion,aleatorio,16,G1,494e1d7d-9d10-43da-ac4b-041935b24c8b,1203,,,,,mixta,2.7959,0.1019
+V822072,accion,aleatorio,12,G1,5f050643-72d2-4c9f-8209-9c9ce008c61e,1308,,,,,mixta,1.2323,0.0961
+V470878,accion,aleatorio,08,G1,1ea2fbfb-b54a-42b2-b8dc-03dbef93990c,278,,,,,mixta,3.4734,0.1543
+V186343,accion,aleatorio,22,G1,ad163fd8-4b8d-43bd-acf6-33e7a33afb97,415,,,,,mixta,3.9888,0.1848
+V418203,accion,aleatorio,22,G1,ad163fd8-4b8d-43bd-acf6-33e7a33afb97,877,,,,,mixta,3.0459,0.1162
+V487577,accion,aleatorio,23,G1,683123ee-89b1-48ad-9d29-6100b6e822d4,148,,,,,mixta,1.2645,0.0974
+V168195,accion,aleatorio,12,G1,5f050643-72d2-4c9f-8209-9c9ce008c61e,1143,,,,,mixta,3.3744,0.1564
+V235829,accion,aleatorio,24,G1,fd990516-18f6-4341-8ec7-9e2a12dfedca,348,,,,,mixta,2.0861,0.1134
+V954301,accion,aleatorio,15,G1,4521da96-8eda-4fb7-9464-ce09d417d26f,275,,,,,mixta,2.3626,0.175
+V317197,accion,aleatorio,18,G1,878b05b9-c082-4595-9c64-5bdc736bbe1a,1226,,,,,mixta,2.2357,0.1543
+V606057,accion,aleatorio,26,G1,a2d586a1-18a0-4391-977c-7c4bf5e84c6e,1379,,,,,mixta,1.5315,0.1147
+V688583,accion,aleatorio,19,G1,a583b7b7-c777-4032-b493-3b61d57476b0,550,,,,,mixta,4.6454,0.1895
+V920146,accion,aleatorio,09,G1,d78a7a3e-f37d-407b-ac5b-5c9895064732,1241,,,,,mixta,4.198,0.2801
+V536864,accion,aleatorio,04,G1,ee613cb4-c84c-4c69-b276-bbf97e0cbbc6,1029,,,,,mixta,3.9526,0.1707
+V102452,accion,aleatorio,22,G1,ad163fd8-4b8d-43bd-acf6-33e7a33afb97,1281,,,,,mixta,0.3594,0.0344
+V967935,accion,aleatorio,12,G1,5f050643-72d2-4c9f-8209-9c9ce008c61e,1042,,,,,mixta,2.458,0.1118
+V536259,accion,aleatorio,25,G1,802bebcb-d49d-455b-9dad-e05b66955504,1039,,,,,mixta,2.4543,0.1032
+V464790,accion,aleatorio,14,G1,8d8e8f27-41d7-4573-a294-c79d2378b6e5,753,,,,,mixta,5.0049,0.2236
+V338297,accion,aleatorio,15,G1,4521da96-8eda-4fb7-9464-ce09d417d26f,869,,,,,mixta,4.6443,0.1975
+V760547,accion,aleatorio,09,G1,d78a7a3e-f37d-407b-ac5b-5c9895064732,1346,,,,,mixta,0.5749,0.0772
+V686339,accion,aleatorio,10,G1,7dc9fe9d-9052-4252-aa0c-f86490b96dbe,1028,,,,,mixta,1.7297,0.098
+V993020,accion,aleatorio,15,G1,4521da96-8eda-4fb7-9464-ce09d417d26f,1142,,,,,mixta,3.0478,0.1267
+V280375,accion,aleatorio,27,G1,fc82b88f-da23-41c9-b164-b78c0a9dfbc8,283,,,,,mixta,4.4463,0.2558
+V683517,accion,aleatorio,16,G1,494e1d7d-9d10-43da-ac4b-041935b24c8b,1111,,,,,mixta,2.6729,0.1606
+V165783,accion,aleatorio,07,G1,41fedb73-2345-439b-852c-87ad806e1015,1222,,,,,mixta,3.6129,0.1893
+V464334,accion,aleatorio,08,G1,1ea2fbfb-b54a-42b2-b8dc-03dbef93990c,529,,,,,mixta,4.433,0.1872
+V337182,accion,aleatorio,27,G1,fc82b88f-da23-41c9-b164-b78c0a9dfbc8,686,,,,,mixta,1.7915,0.14
+V675557,accion,aleatorio,18,G1,878b05b9-c082-4595-9c64-5bdc736bbe1a,419,,,,,mixta,1.7953,0.1508
+V442879,accion,aleatorio,13,G1,7231e456-9284-40b3-83ed-d1de4dc4e33e,1299,,,,,mixta,3.1217,0.1452
+V523793,accion,aleatorio,05,G1,b7a090cf-032e-4a87-be01-e03fa88a9917,58,,,,,mixta,6.1915,0.2691
+V377071,accion,aleatorio,17,G1,dc7af6f4-453a-4542-a2b5-e7cdd46a30b2,1288,,,,,mixta,0.9418,0.0733
+V740889,accion,aleatorio,10,G1,7dc9fe9d-9052-4252-aa0c-f86490b96dbe,523,,,,,mixta,1.4566,0.0907
+V195803,accion,aleatorio,06,G1,fbe6d980-964f-455c-89d9-96d34d9653fe,78,,,,,mixta,2.9794,0.1707
+V909684,accion,aleatorio,23,G1,683123ee-89b1-48ad-9d29-6100b6e822d4,530,,,,,mixta,2.7732,0.1434
+V734153,accion,aleatorio,10,G1,7dc9fe9d-9052-4252-aa0c-f86490b96dbe,582,,,,,mixta,3.1306,0.1233
+V986459,accion,aleatorio,14,G1,8d8e8f27-41d7-4573-a294-c79d2378b6e5,605,,,,,mixta,2.5371,0.1345
+V514192,accion,aleatorio,07,G1,41fedb73-2345-439b-852c-87ad806e1015,203,,,,,mixta,3.2492,0.1134
+V334554,accion,aleatorio,01,G1,68a5896f-e7bb-4479-8403-a8403cf80838,1273,,,,,mixta,1.8313,0.0716
+V217362,accion,aleatorio,18,G1,878b05b9-c082-4595-9c64-5bdc736bbe1a,1170,,,,,mixta,1.8647,0.1021
+V547035,accion,aleatorio,01,G1,68a5896f-e7bb-4479-8403-a8403cf80838,256,,,,,accion,-0.6483,0.0
+V897263,accion,aleatorio,07,G1,41fedb73-2345-439b-852c-87ad806e1015,512,,,,,mixta,4.3157,0.2277
+V392953,accion,aleatorio,19,G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,316,,,,,mixta,3.1225,0.1569
+V950510,accion,aleatorio,09,G2,41674211-baed-424c-9187-3a6429dd8400,248,,,,,mixta,-0.1163,0.0381
+V922578,accion,aleatorio,02,G2,5653d917-4744-43e3-90ba-8190a22a126c,1142,,,,,mixta,1.618,0.0609
+V185538,accion,aleatorio,17,G2,45f450c1-29bc-4dde-8960-82129291f1ad,294,,,,,mixta,2.3528,0.0976
+V182525,accion,aleatorio,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,508,,,,,mixta,1.6776,0.0934
+V797809,accion,aleatorio,07,G2,f42e9672-4df4-40bf-a912-02fba5ae396e,336,,,,,mixta,5.7847,0.2292
+V616310,accion,aleatorio,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,292,,,,,mixta,1.7817,0.0486
+V408528,accion,aleatorio,24,G2,b09c56ca-cc15-4576-9ad7-cd16773f14b4,1301,,,,,mixta,4.3257,0.1721
+V816702,accion,aleatorio,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,1165,,,,,mixta,4.0126,0.1531
+V456494,accion,aleatorio,21,G2,dfe775b9-a57f-4bba-ba17-a680c9e61ee8,580,,,,,mixta,1.231,0.0761
+V235837,accion,aleatorio,01,G2,e9bef82d-8b7a-41e9-8cb6-8e6af542e514,1014,,,,,accion,2.1558,0.1068
+V433339,accion,aleatorio,23,G2,e8629a76-58f5-45d3-91e2-15bf7c1d60af,1120,,,,,mixta,0.6115,0.0452
+V329016,accion,aleatorio,19,G2,7c8d9bfe-aa79-4142-80b3-b520e013b9d0,479,,,,,mixta,2.6364,0.0943
+V752722,accion,aleatorio,05,G2,0bc0b20b-0dba-454d-a32e-94fbeb24dddf,419,,,,,mixta,2.116,0.0904
+V427173,accion,aleatorio,21,G2,dfe775b9-a57f-4bba-ba17-a680c9e61ee8,538,,,,,mixta,-0.302,0.0426
+V233101,accion,aleatorio,01,G2,e9bef82d-8b7a-41e9-8cb6-8e6af542e514,801,,,,,mixta,0.6249,0.0417
+V498534,accion,aleatorio,22,G2,1437e3df-bbf5-4118-b968-2f39f9f891f3,775,,,,,mixta,6.0939,0.225
+V765110,accion,aleatorio,22,G2,1437e3df-bbf5-4118-b968-2f39f9f891f3,715,,,,,mixta,4.8189,0.2705
+V375277,accion,aleatorio,17,G2,45f450c1-29bc-4dde-8960-82129291f1ad,694,,,,,mixta,3.3536,0.1345
+V835151,accion,aleatorio,13,G2,8845df6a-3248-47ef-9844-7c234724d7f9,923,,,,,mixta,3.739,0.1237
+V173797,accion,aleatorio,12,G2,6f319319-f39f-4902-9f11-a5d5a17798af,595,,,,,mixta,2.2199,0.1223
+V800402,accion,aleatorio,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,193,,,,,mixta,3.6336,0.156
+V326459,accion,aleatorio,14,G2,cebcafd3-23cc-4d61-8e2e-9360587b7464,1000,,,,,mixta,2.999,0.1684
+V658348,accion,aleatorio,21,G2,dfe775b9-a57f-4bba-ba17-a680c9e61ee8,824,,,,,mixta,1.1851,0.088
+V802341,accion,aleatorio,23,G2,e8629a76-58f5-45d3-91e2-15bf7c1d60af,122,,,,,mixta,3.828,0.1414
+V243395,accion,aleatorio,22,G2,1437e3df-bbf5-4118-b968-2f39f9f891f3,105,,,,,mixta,2.9475,0.1364
+V188426,accion,aleatorio,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,459,,,,,mixta,4.0363,0.165
+V178725,accion,aleatorio,02,G2,5653d917-4744-43e3-90ba-8190a22a126c,262,,,,,mixta,1.429,0.0641
+V394129,accion,aleatorio,02,G2,5653d917-4744-43e3-90ba-8190a22a126c,748,,,,,accion,-0.5179,0.0
+V168483,accion,aleatorio,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,706,,,,,mixta,1.9636,0.0976
+V498678,accion,aleatorio,05,G2,0bc0b20b-0dba-454d-a32e-94fbeb24dddf,782,,,,,accion,3.8737,0.1839
+V407809,accion,aleatorio,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,983,,,,,mixta,4.6989,0.2414
+V736587,accion,aleatorio,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,321,,,,,mixta,2.8241,0.1729
+V808656,accion,aleatorio,01,G2,e9bef82d-8b7a-41e9-8cb6-8e6af542e514,428,,,,,mixta,0.9503,0.0739
+V153031,accion,aleatorio,20,G2,9e7e4aec-5a1d-41ce-9904-ccffaebfd944,612,,,,,mixta,3.281,0.1316
+V859992,accion,aleatorio,07,G2,f42e9672-4df4-40bf-a912-02fba5ae396e,449,,,,,mixta,0.2242,0.043
+V103516,accion,aleatorio,18,G2,a7ef3360-3014-4942-bf11-4db774a95904,388,,,,,mixta,0.3458,0.0408
+V916603,accion,aleatorio,24,G2,b09c56ca-cc15-4576-9ad7-cd16773f14b4,524,,,,,mixta,3.865,0.1209
+V924201,accion,aleatorio,11,G2,b6c3eb75-cb1a-48de-a827-d082415b4b74,387,,,,,mixta,0.4629,0.0426
+V818284,accion,aleatorio,01,G2,e9bef82d-8b7a-41e9-8cb6-8e6af542e514,347,,,,,mixta,0.4245,0.035
+V155199,accion,aleatorio,13,G2,8845df6a-3248-47ef-9844-7c234724d7f9,1226,,,,,mixta,6.5317,0.2254
+V719922,accion,aleatorio,17,G2,45f450c1-29bc-4dde-8960-82129291f1ad,284,,,,,mixta,2.6261,0.1689
+V113172,accion,aleatorio,20,G2,9e7e4aec-5a1d-41ce-9904-ccffaebfd944,1210,,,,,mixta,0.7034,0.0481
+V429274,accion,aleatorio,23,G2,e8629a76-58f5-45d3-91e2-15bf7c1d60af,329,,,,,mixta,2.0409,0.103
+V500882,accion,aleatorio,09,G2,41674211-baed-424c-9187-3a6429dd8400,254,,,,,mixta,2.4258,0.1409
+V895757,accion,aleatorio,03,G2,ff0c8110-caa5-48fa-b285-7dc903cc1d26,212,,,,,solo_dialogo,1.9371,0.0882
+V115683,accion,aleatorio,13,G2,8845df6a-3248-47ef-9844-7c234724d7f9,950,,,,,mixta,1.3579,0.073
+V573771,accion,aleatorio,20,G2,9e7e4aec-5a1d-41ce-9904-ccffaebfd944,986,,,,,mixta,0.8463,0.0808
+V801259,accion,aleatorio,21,G2,dfe775b9-a57f-4bba-ba17-a680c9e61ee8,31,,,,,mixta,2.6327,0.1118
+V130095,accion,aleatorio,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,803,,,,,mixta,1.6527,0.0861
+V260482,accion,aleatorio,26,G2,eccb3666-5a9c-4959-8427-ae693f8c7530,453,,,,,mixta,2.3295,0.1209
+V223898,accion,aleatorio,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,439,,,,,mixta,0.3234,0.0516
+V114163,accion,cola_baja,21,G2,dfe775b9-a57f-4bba-ba17-a680c9e61ee8,483,,,,,mixta,-0.8504,0.0
+V611330,accion,cola_baja,24,G2,b09c56ca-cc15-4576-9ad7-cd16773f14b4,358,,,,,mixta,0.0316,0.0417
+V362319,accion,cola_baja,25,G2,71851109-08d3-41db-9f22-796e26af13a1,1192,,,,,mixta,0.4149,0.0421
+V149495,accion,cola_baja,26,G1,a2d586a1-18a0-4391-977c-7c4bf5e84c6e,443,,,,,mixta,0.0004,0.0366
+V195899,accion,cola_baja,02,G1,84eb6728-52d3-434c-924c-2c21b6099c92,138,,,,,mixta,0.3645,0.0454
+V495227,accion,cola_baja,24,G1,fd990516-18f6-4341-8ec7-9e2a12dfedca,1121,,,,,mixta,0.4633,0.0342
+V877392,accion,cola_baja,27,G1,fc82b88f-da23-41c9-b164-b78c0a9dfbc8,184,,,,,mixta,-0.403,0.0315
+V569220,accion,cola_baja,01,G1,68a5896f-e7bb-4479-8403-a8403cf80838,14,,,,,mixta,-0.6906,0.0
+V630047,accion,cola_baja,11,G1,259f2fdd-2857-4ebb-ad4f-bde8ea297e04,947,,,,,mixta,0.2448,0.0676
+V260630,accion,cola_baja,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,1355,,,,,mixta,-0.0802,0.0368
+V496203,accion,cola_baja,16,G1,494e1d7d-9d10-43da-ac4b-041935b24c8b,313,,,,,mixta,-0.9829,0.0
+V570313,accion,cola_baja,11,G2,b6c3eb75-cb1a-48de-a827-d082415b4b74,1200,,,,,mixta,0.1618,0.043
+V277396,accion,cola_baja,21,G2,dfe775b9-a57f-4bba-ba17-a680c9e61ee8,342,,,,,mixta,0.1623,0.0396
+V862001,accion,cola_baja,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,937,,,,,mixta,-0.7634,0.0
+V644963,accion,cola_baja,23,G2,e8629a76-58f5-45d3-91e2-15bf7c1d60af,254,,,,,mixta,0.264,0.0458
+V118264,accion,cola_baja,05,G1,b7a090cf-032e-4a87-be01-e03fa88a9917,313,,,,,mixta,0.2724,0.0401
+V690196,accion,cola_baja,26,G2,eccb3666-5a9c-4959-8427-ae693f8c7530,865,,,,,mixta,0.3214,0.04
+V280103,accion,cola_baja,02,G1,84eb6728-52d3-434c-924c-2c21b6099c92,1107,,,,,mixta,-1.0807,0.0
+V582900,accion,cola_baja,23,G2,e8629a76-58f5-45d3-91e2-15bf7c1d60af,379,,,,,mixta,0.2208,0.0389
+V347837,accion,cola_baja,18,G1,878b05b9-c082-4595-9c64-5bdc736bbe1a,668,,,,,mixta,0.3314,0.0668
+V515017,accion,cola_baja,21,G2,dfe775b9-a57f-4bba-ba17-a680c9e61ee8,15,,,,,mixta,-0.8958,0.0
+V270315,accion,cola_baja,27,G1,fc82b88f-da23-41c9-b164-b78c0a9dfbc8,45,,,,,mixta,0.4009,0.0408
+V278016,accion,cola_baja,05,G2,0bc0b20b-0dba-454d-a32e-94fbeb24dddf,1200,,,,,mixta,-0.8688,0.0
+V771557,accion,cola_baja,23,G1,683123ee-89b1-48ad-9d29-6100b6e822d4,782,,,,,mixta,-0.233,0.0334
+V526203,accion,cola_baja,14,G2,cebcafd3-23cc-4d61-8e2e-9360587b7464,492,,,,,mixta,0.2725,0.0509
+V451103,accion,cola_baja,12,G2,6f319319-f39f-4902-9f11-a5d5a17798af,96,,,,,mixta,0.4651,0.0758
+V971082,accion,cola_baja,01,G2,e9bef82d-8b7a-41e9-8cb6-8e6af542e514,1031,,,,,mixta,-0.7426,0.0
+V947602,accion,cola_baja,10,G1,7dc9fe9d-9052-4252-aa0c-f86490b96dbe,997,,,,,mixta,-0.0035,0.0449
+V802347,accion,cola_baja,23,G1,683123ee-89b1-48ad-9d29-6100b6e822d4,481,,,,,mixta,-0.2143,0.0348
+V778883,accion,cola_baja,11,G1,259f2fdd-2857-4ebb-ad4f-bde8ea297e04,839,,,,,mixta,0.3827,0.076
+V287592,accion,cola_baja,06,G1,fbe6d980-964f-455c-89d9-96d34d9653fe,1180,,,,,mixta,0.1869,0.0385
+V831032,accion,cola_baja,12,G2,6f319319-f39f-4902-9f11-a5d5a17798af,379,,,,,mixta,-0.6766,0.0
+V254436,accion,cola_baja,23,G1,683123ee-89b1-48ad-9d29-6100b6e822d4,428,,,,,mixta,0.3884,0.0373
+V446728,accion,cola_baja,19,G1,a583b7b7-c777-4032-b493-3b61d57476b0,1199,,,,,mixta,-0.2101,0.0344
+V481510,accion,cola_baja,24,G1,fd990516-18f6-4341-8ec7-9e2a12dfedca,402,,,,,mixta,-0.1278,0.0313
+V494683,accion,cola_baja,09,G1,d78a7a3e-f37d-407b-ac5b-5c9895064732,827,,,,,mixta,-0.9749,0.0
+V675020,accion,cola_baja,06,G2,d8bf034a-bcc9-4a12-999e-490be27c8a2e,281,,,,,mixta,0.1583,0.0435
+V819817,accion,cola_baja,22,G1,ad163fd8-4b8d-43bd-acf6-33e7a33afb97,470,,,,,mixta,-0.0706,0.0355
+V456634,accion,cola_baja,16,G2,e1e30d0b-9dd8-454c-b297-44c08204610f,258,,,,,mixta,-0.8258,0.0
+V544393,accion,cola_baja,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,421,,,,,accion,-0.6805,0.0
+V628106,accion,cola_baja,13,G2,8845df6a-3248-47ef-9844-7c234724d7f9,653,,,,,mixta,0.4526,0.0563
+V201733,accion,cola_baja,19,G1,a583b7b7-c777-4032-b493-3b61d57476b0,325,,,,,mixta,-1.008,0.0
+V441829,accion,cola_baja,10,G2,9dcf64ea-8da4-4dcf-b168-4f960b839c04,634,,,,,mixta,0.0946,0.0419
+V240141,accion,cola_baja,02,G2,5653d917-4744-43e3-90ba-8190a22a126c,1231,,,,,mixta,-0.7369,0.0
+V672123,accion,cola_baja,02,G1,84eb6728-52d3-434c-924c-2c21b6099c92,983,,,,,mixta,-0.0445,0.0446
+V696667,accion,cola_baja,03,G1,9d22ac2a-a09f-4e04-8eeb-2606125988ef,1000,,,,,mixta,0.3881,0.0352
+V617343,accion,cola_baja,14,G2,cebcafd3-23cc-4d61-8e2e-9360587b7464,1330,,,,,mixta,0.3628,0.0456
+V848014,accion,cola_baja,23,G1,683123ee-89b1-48ad-9d29-6100b6e822d4,764,,,,,mixta,0.4136,0.0514
+V379978,accion,cola_baja,24,G1,fd990516-18f6-4341-8ec7-9e2a12dfedca,111,,,,,mixta,0.2517,0.0341
+V857233,accion,cola_baja,27,G2,1257c4f1-d3f8-4c43-a8a6-aa542b65d62d,367,,,,,mixta,-0.9272,0.0

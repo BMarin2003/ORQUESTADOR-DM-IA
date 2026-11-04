@@ -5,7 +5,13 @@ node_modules/
 experimento/scripts/instrumentos/_cache/
 # marcadores de los scripts de espera de datos_v2 (se regeneran)
 datos/datos_v2/*.ok
+
+datos/validacion_v2/privado_no_publicar/
 # Docusaurus
 website/.docusaurus/
 website/build/
 website/docs/referencia/
+
+# carpeta conectada antigua (raiz): nunca publicar
+validacion_v2/privado_no_publicar/
+validacion_v2/_trabajo/

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Validación humana v2 — Ronda A2 (pregunta A)</title>
+<style>
+  :root { --tinta:#1f2328; --suave:#59636e; --borde:#d0d7de; --fondo:#f6f8fa; --a:#0b5cad; --si:#1a7f37; --no:#a40e26; --ok:#dafbe1; --mal:#ffebe9; }
+  * { box-sizing: border-box; }
+  body { margin:0; font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color:var(--tinta); background:#fff; }
+  main { max-width: 1180px; margin: 0 auto; padding: 24px 20px 80px; }
+  .angosto { max-width: 860px; }
+  h1 { font-size: 1.45rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+  .sub { color: var(--suave); margin: 0 0 20px; }
+  .caja { border:1px solid var(--borde); border-radius:8px; padding:14px 16px; background:var(--fondo); margin:12px 0; }
+  .pregunta { font-weight: 600; font-size: 1.05rem; }
+  .ref { font-size: .88rem; color: var(--suave); }
+  .texto { white-space: pre-wrap; background:#fff; border:1px solid var(--borde); border-radius:8px; padding:14px 16px; }
+  .etq { font-size:.8rem; text-transform:uppercase; letter-spacing:.04em; color:var(--suave); margin:14px 0 4px; }
+  .botones { display:flex; gap:12px; margin:20px 0 8px; }
+  button { font: inherit; border-radius:8px; border:1px solid var(--borde); background:#fff; padding:10px 18px; cursor:pointer; }
+  button.si { background:var(--si); color:#fff; border-color:var(--si); min-width:140px; font-weight:600; }
+  button.no { background:var(--no); color:#fff; border-color:var(--no); min-width:140px; font-weight:600; }
+  button.prim { background:var(--a); color:#fff; border-color:var(--a); font-weight:600; }
+  button:disabled { opacity:.45; cursor:not-allowed; }
+  .nav { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+  .barra { height:6px; background:var(--borde); border-radius:3px; overflow:hidden; margin:8px 0 18px; }
+  .barra > div { height:100%; background:var(--a); }
+  .respondido { font-weight:600; }
+  table { border-collapse: collapse; width:100%; font-size:.95rem; }
+  td, th { border:1px solid var(--borde); padding:6px 8px; text-align:left; vertical-align:top; }
+  input[type=text] { font:inherit; padding:8px 10px; border:1px solid var(--borde); border-radius:6px; width:140px; }
+  .oculto { display:none; }
+  .aviso { color:var(--no); font-weight:600; }
+  .rejilla { display:grid; grid-template-columns: minmax(0,1fr) 330px; gap:20px; align-items:start; }
+  .regla { position:sticky; top:12px; font-size:.9rem; border:1px solid var(--borde); border-radius:8px; padding:12px 14px; background:#fffdf4; }
+  .regla h3 { font-size:.95rem; margin:0 0 6px; }
+  .regla ul { margin:4px 0 10px; padding-left:18px; }
+  .fb { border-radius:8px; padding:12px 14px; margin:12px 0; }
+  .fb.ok { background:var(--ok); } .fb.mal { background:var(--mal); }
+  @media (max-width: 900px) { .rejilla { grid-template-columns: 1fr; } .regla { position:static; } }
+</style>
+</head>
+<body>
+<main>
+
+<section id="inicio" class="angosto">
+  <h1>Validación humana — Ronda A2 (solo pregunta A)</h1>
+  <p class="sub">Tesis «Comparación de la coherencia narrativa en campañas de Dungeons &amp; Dragons generadas por sistemas multiagente versus sistemas monolíticos» · Universidad Privada Antenor Orrego</p>
+
+  <div class="caja">
+    <p><strong>Qué vas a hacer.</strong> Vas a leer turnos reales de campañas narradas por un director de juego automatizado (DM) y responder <strong>Sí</strong> o <strong>No</strong> a una sola pregunta, la pregunta A, en <strong>__N__ turnos</strong>. Antes hay una <strong>práctica corta de 8 fragmentos</strong> con corrección inmediata.</p>
+    <p><strong>La pregunta es más estrecha de lo que parece.</strong> No pregunta si el DM narra lo que hace tu personaje (eso lo hace siempre), sino si le <strong>atribuye una decisión, un pensamiento, una emoción o un acto de habla</strong>, y solo cuenta cuando lo hace en segunda persona («tú») o con el nombre del personaje. La regla queda visible a la derecha durante todo el etiquetado.</p>
+    <p><strong>Trabaja solo.</strong> No compares respuestas con otros evaluadores ni mires respuestas anteriores: la evaluación solo sirve si cada respuesta es independiente.</p>
+    <p>No hay opción «dudoso»; elige la respuesta más probable. Un ítem respondido no se puede cambiar. El avance se guarda en este navegador. <strong>Exporta tu CSV antes de cerrar la pestaña</strong> y envíalo tal cual se descarga, sin abrirlo en Excel.</p>
+  </div>
+
+  <h2>Pregunta A — Atribución al personaje jugador</h2>
+  <div class="caja">
+    <p class="pregunta">__PREG__</p>
+    <table>
+      <tr><th>Responde «Sí» si aparece…</th><th>Ejemplos</th></tr>
+      <tr><td>Una <strong>decisión</strong>: decide, elige, opta, quiere, se obliga a…</td><td>«Decides esperar», «optas por el sendero», «te obligas a mirar»</td></tr>
+      <tr><td>Un <strong>pensamiento</strong>: piensa, cree, sabe, recuerda, comprende, se da cuenta…</td><td>«Recuerdas a tu padre», «te das cuenta de que miente», «crees reconocer…», «tienes la sensación de que…»</td></tr>
+      <tr><td>Una <strong>emoción</strong> nombrada</td><td>«Sientes miedo», «te invade la ira», «te asusta el silencio»</td></tr>
+      <tr><td>Un <strong>acto de habla</strong>: dice, responde, murmura, pronuncia…</td><td>«Respondes que no», «murmuras una plegaria», «pronuncias las palabras»</td></tr>
+    </table>
+    <p>Cuenta <strong>aunque el jugador lo haya declarado</strong> en su acción y <strong>aunque ocurra tras una tirada</strong> (jugador: «Decido abrir la puerta» → DM: «Decides abrir la puerta…» = <strong>Sí</strong>). También cuenta con el nombre del PJ en tercera persona («Kael decide retroceder» = Sí).</p>
+    <p><strong>Responde «No»</strong> si lo único que hay es: percepción («ves», «oyes», «notas», «encuentras», «sientes frío o dolor»); acciones físicas o reflejos («te acercas», «sacas la daga», «tropiezas»); el resultado de la acción narrado <strong>sin «tú» ni nombre</strong> («el salto alcanza la cornisa», «la vista recorre la sala», «las palabras no convencen al guardia»); el «tú» dentro del diálogo de un PNJ; preguntas u opciones al jugador; condicionales, hipótesis o futuro («si decides…», «recordarás»); un «tú» genérico; texto entre corchetes; lo que piensan, sienten o dicen otros personajes.</p>
+    <p class="ref"><strong>Procedencia del instrumento.</strong> Detector «persona2», elaborado por los autores de la investigación a partir de la regla del prompt del director de juego, según la cual este nunca asume, genera ni describe las acciones, el diálogo, los pensamientos o las emociones del personaje jugador, y de la toma de control del personaje jugador que Zhu et al. (2023) identificaron como el fallo más señalado por los evaluadores de FIREBALL.<br>
+    Zhu, A., Aggarwal, K., Feng, A., Martin, L. J., &amp; Callison-Burch, C. (2023). FIREBALL: A dataset of Dungeons and Dragons actual-play with structured game state information. <em>Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</em>, 4171–4193.</p>
+  </div>
+
+  <h2>Antes de empezar</h2>
+  <div class="caja">
+    <p><label><input type="checkbox" id="consent"> Confirmo que leí y firmé el consentimiento informado de esta evaluación.</label></p>
+    <p><label><input type="checkbox" id="solo"> Confirmo que responderé por mi cuenta, sin comparar respuestas con nadie.</label></p>
+    <p>Tu código de evaluador (el mismo de la ronda anterior): <input type="text" id="codigo" placeholder="E1" autocomplete="off"></p>
+    <p id="err" class="aviso"></p>
+    <button id="empezar" class="prim">Empezar o continuar</button>
+  </div>
+</section>
+
+<section id="practica" class="oculto">
+  <div class="rejilla">
+    <div>
+      <div class="nav"><div><strong>Práctica</strong> · fragmento <span id="pPos"></span> de <span id="pTot"></span></div><div>Aciertos: <span id="pOk">0</span></div></div>
+      <div class="barra"><div id="pProg"></div></div>
+      <div class="caja"><div class="etq">Pregunta A</div><div class="pregunta">__PREG__</div></div>
+      <div id="pTarjeta"></div>
+      <div class="botones"><button class="si" id="pSi">Sí (S)</button><button class="no" id="pNo">No (N)</button></div>
+      <div id="pFb"></div>
+      <div class="nav"><span></span><button id="pSig" class="prim oculto">Siguiente →</button></div>
+      <div id="pFin" class="oculto caja"></div>
+    </div>
+    <aside class="regla">__REGLA__</aside>
+  </div>
+</section>
+
+<section id="trabajo" class="oculto">
+  <div class="rejilla">
+    <div>
+      <div class="nav">
+        <div><strong id="evalLbl"></strong> · ítem <span id="pos"></span> de <span id="tot"></span> · respondidos: <span id="hechos"></span></div>
+        <div><button id="exportar" class="prim">Exportar CSV</button> <button id="verGuia">Ver instrucciones</button></div>
+      </div>
+      <div class="barra"><div id="prog"></div></div>
+      <div class="caja"><div class="etq">Pregunta A</div><div class="pregunta">__PREG__</div></div>
+      <div id="tarjeta"></div>
+      <div class="botones"><button class="si" id="bSi">Sí (S)</button><button class="no" id="bNo">No (N)</button></div>
+      <p id="estado" class="respondido"></p>
+      <div class="nav"><button id="ant">← Anterior</button><button id="sig">Siguiente →</button></div>
+    </div>
+    <aside class="regla">__REGLA__</aside>
+  </div>
+</section>
+
+</main>
+<script>
+const ITEMS = __ITEMS__;
+const PRACTICA = __PRACTICA__;
+const MIN_PRACTICA = 7;
+const $ = id => document.getElementById(id);
+let ev = null, orden = [], resp = {}, i = 0, pr = {orden: [], k: 0, ok: 0, resp: {}, aprobada: false, intentos: 0};
+
+function guardar() { try { localStorage.setItem("valA2_" + ev, JSON.stringify({resp, i, pr})); } catch (e) {} }
+function cargar() { try { return JSON.parse(localStorage.getItem("valA2_" + ev) || "null"); } catch (e) { return null; } }
+function hash(s) { let h = 2166136261; for (const c of s) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; }
+function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function barajar(n, seed) { const a = [...Array(n).keys()], r = rng(seed); for (let k = n - 1; k > 0; k--) { const j = Math.floor(r() * (k + 1)); [a[k], a[j]] = [a[j], a[k]]; } return a; }
+function esc(s) { return String(s || "").replace(/[&<>]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;"}[c])); }
+function tarjeta(it) {
+  let h = "";
+  if (it.pj) h += `<div class="etq">Personaje jugador</div><div>${esc(it.pj)}</div>`;
+  h += `<div class="etq">Acción declarada por el jugador</div><div class="texto">${esc(it.accion)}</div>`;
+  h += `<div class="etq">Turno del DM</div><div class="texto">${esc(it.texto)}</div>`;
+  return h;
+}
+function ver(sec) { for (const s of ["inicio", "practica", "trabajo"]) $(s).classList.toggle("oculto", s !== sec); window.scrollTo(0, 0); }
+
+$("empezar").onclick = () => {
+  const c = $("codigo").value.trim().toUpperCase();
+  if (!$("consent").checked || !$("solo").checked) { $("err").textContent = "Debes marcar las dos confirmaciones."; return; }
+  if (!/^E\d{1,2}$/.test(c)) { $("err").textContent = "Escribe tu código de evaluador (por ejemplo, E3)."; return; }
+  if (ev && ev !== c) { location.reload(); return; }
+  ev = c; orden = barajar(ITEMS.length, hash("valA2-" + ev));
+  const g = cargar(); if (g) { resp = g.resp || {}; i = g.i || 0; pr = g.pr || pr; }
+  $("evalLbl").textContent = ev; $("tot").textContent = ITEMS.length;
+  if (pr.aprobada) { ver("trabajo"); mostrar(); } else { if (!pr.orden.length) nuevaPractica(); ver("practica"); mostrarP(); }
+};
+$("verGuia").onclick = () => { ver("inicio"); $("empezar").textContent = "Volver al etiquetado"; };
+
+function nuevaPractica() {
+  pr.intentos += 1;
+  pr.orden = barajar(PRACTICA.length, hash("valA2-practica-" + ev + "-" + pr.intentos));
+  pr.k = 0; pr.ok = 0; pr.resp = {}; guardar();
+}
+function mostrarP() {
+  $("pTot").textContent = PRACTICA.length; $("pOk").textContent = pr.ok;
+  $("pProg").style.width = (100 * pr.k / PRACTICA.length) + "%";
+  $("pFin").classList.add("oculto"); $("pFb").innerHTML = ""; $("pSig").classList.add("oculto");
+  if (pr.k >= PRACTICA.length) { finPractica(); return; }
+  const it = PRACTICA[pr.orden[pr.k]];
+  $("pPos").textContent = pr.k + 1; $("pTarjeta").innerHTML = tarjeta(it);
+  const r = pr.resp[it.id];
+  $("pSi").disabled = $("pNo").disabled = !!r;
+  if (r) retro(it, r);
+}
+function retro(it, r) {
+  const bien = r === it.esperada;
+  $("pFb").innerHTML = `<div class="fb ${bien ? "ok" : "mal"}"><strong>${bien ? "Correcto" : "No es así"}: la respuesta es «${it.esperada}».</strong> ${esc(it.razon)}</div>`;
+  $("pSig").classList.remove("oculto");
+}
+function responderP(v) {
+  const it = PRACTICA[pr.orden[pr.k]]; if (pr.resp[it.id]) return;
+  pr.resp[it.id] = v; if (v === it.esperada) pr.ok += 1; guardar();
+  $("pOk").textContent = pr.ok; $("pSi").disabled = $("pNo").disabled = true; retro(it, v);
+}
+$("pSi").onclick = () => responderP("Sí"); $("pNo").onclick = () => responderP("No");
+$("pSig").onclick = () => { pr.k += 1; guardar(); mostrarP(); };
+function finPractica() {
+  $("pTarjeta").innerHTML = ""; $("pSi").disabled = $("pNo").disabled = true;
+  const f = $("pFin"); f.classList.remove("oculto");
+  if (pr.ok >= MIN_PRACTICA) {
+    f.innerHTML = `<p><strong>Práctica superada: ${pr.ok} de ${PRACTICA.length}.</strong> La regla seguirá visible a la derecha.</p><button id="irTrabajo" class="prim">Empezar el etiquetado</button>`;
+    $("irTrabajo").onclick = () => { pr.aprobada = true; guardar(); ver("trabajo"); mostrar(); };
+  } else {
+    f.innerHTML = `<p><strong>${pr.ok} de ${PRACTICA.length} aciertos.</strong> Hacen falta al menos ${MIN_PRACTICA}. Vuelve a leer la regla de la derecha y repite la práctica.</p><button id="repetir" class="prim">Repetir la práctica</button>`;
+    $("repetir").onclick = () => { nuevaPractica(); mostrarP(); };
+  }
+}
+
+function mostrar() {
+  const it = ITEMS[orden[i]], r = resp[it.id];
+  $("tarjeta").innerHTML = tarjeta(it);
+  $("pos").textContent = i + 1; $("hechos").textContent = Object.keys(resp).length;
+  $("prog").style.width = (100 * Object.keys(resp).length / ITEMS.length) + "%";
+  $("bSi").disabled = $("bNo").disabled = !!r;
+  $("estado").textContent = r ? `Respondido: ${r}` : "";
+  $("ant").disabled = i === 0; $("sig").disabled = i === ITEMS.length - 1;
+  window.scrollTo(0, 0);
+}
+function responder(v) {
+  const it = ITEMS[orden[i]]; if (resp[it.id]) return;
+  resp[it.id] = v; guardar();
+  if (i < ITEMS.length - 1) { i++; guardar(); }
+  mostrar();
+  if (Object.keys(resp).length === ITEMS.length) { exportar(); alert("Terminaste los " + ITEMS.length + " ítems. Se descargó tu CSV: envíaselo a los investigadores tal cual, sin abrirlo en Excel."); }
+}
+$("bSi").onclick = () => responder("Sí"); $("bNo").onclick = () => responder("No");
+$("ant").onclick = () => { if (i > 0) { i--; guardar(); mostrar(); } };
+$("sig").onclick = () => { if (i < ITEMS.length - 1) { i++; guardar(); mostrar(); } };
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "INPUT") return;
+  const k = e.key.toLowerCase();
+  if (!$("practica").classList.contains("oculto")) { if (k === "s") $("pSi").click(); else if (k === "n") $("pNo").click(); return; }
+  if ($("trabajo").classList.contains("oculto")) return;
+  if (k === "s") responder("Sí"); else if (k === "n") responder("No");
+  else if (k === "arrowright") $("sig").click(); else if (k === "arrowleft") $("ant").click();
+});
+function exportar() {
+  const filas = [["evaluador", "orden", "id", "respuesta"]];
+  orden.forEach((o, k) => { const it = ITEMS[o]; if (resp[it.id]) filas.push([ev, k + 1, it.id, resp[it.id]]); });
+  pr.orden.forEach(o => { const it = PRACTICA[o]; if (pr.resp[it.id]) filas.push([ev, "practica-" + pr.intentos, it.id, pr.resp[it.id]]); });
+  const csv = "﻿" + filas.map(f => f.map(x => `"${String(x).replace(/"/g, '""')}"`).join(",")).join("\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([csv], {type: "text/csv;charset=utf-8"}));
+  a.download = `etiquetas_A2_${ev}.csv`; a.click();
+}
+$("exportar").onclick = exportar;
+</script>
+</body>
+</html>

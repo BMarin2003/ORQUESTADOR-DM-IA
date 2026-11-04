@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auditoría del registro de afinidad</title>
+<style>
+body{margin:0;font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#1f2328}
+main{max-width:860px;margin:0 auto;padding:24px 20px 80px}
+.caja{border:1px solid #d0d7de;border-radius:8px;padding:14px 16px;background:#f6f8fa;margin:12px 0}
+.hecho{border-left:4px solid #0b5cad;background:#eef5fd}
+.texto{white-space:pre-wrap;border:1px solid #d0d7de;border-radius:8px;padding:14px 16px}
+.etq{font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;color:#59636e;margin:14px 0 4px}
+.pregunta{font-weight:600}
+button{font:inherit;border-radius:8px;border:1px solid #d0d7de;background:#fff;padding:10px 18px;cursor:pointer}
+.si{background:#1a7f37;color:#fff;border-color:#1a7f37;min-width:120px}.no{background:#a40e26;color:#fff;border-color:#a40e26;min-width:120px}
+button:disabled{opacity:.45}.nav{display:flex;justify-content:space-between;gap:12px;margin-top:16px}
+</style></head><body><main>
+<h1>Auditoría del registro de afinidad</h1>
+<div class="caja"><p class="pregunta">¿Lo narrado justifica el cambio de disposición registrado en la base de datos?</p>
+<p><strong>Sí:</strong> la escena muestra a ese PNJ con una actitud hacia el personaje jugador compatible con la nueva disposición, o con un giro desde la previa hacia la nueva.
+<strong>No:</strong> la actitud narrada no corresponde a la nueva disposición, o el cambio no tiene base en la escena. Se muestran el turno anterior (contexto) y el turno del cambio.</p></div>
+<div id="t"></div>
+<div style="display:flex;gap:12px"><button class="si" id="bs">Sí (S)</button><button class="no" id="bn">No (N)</button></div>
+<p id="e"></p>
+<div class="nav"><button id="a">← Anterior</button><span id="p"></span><button id="s">Siguiente →</button><button id="x">Exportar CSV</button></div>
+</main><script>
+const ITEMS=__ITEMS__;const $=i=>document.getElementById(i);let i=0,r={};
+try{r=JSON.parse(localStorage.getItem("audafin")||"{}")}catch(e){}
+const esc=s=>String(s||"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+function m(){const it=ITEMS[i];$("t").innerHTML=`<div class="caja hecho"><div class="etq">Cambio registrado</div>${esc(it.hecho)}</div>
+<div class="etq">Turno ${it.turno-1} (contexto)</div><div class="texto">${esc(it.previo)||"<em>(sin turno previo)</em>"}</div>
+<div class="etq">Turno ${it.turno} (cambio)</div><div class="texto">${esc(it.texto)}</div>`;
+$("p").textContent=`${i+1} / ${ITEMS.length} · respondidos ${Object.keys(r).length}`;$("e").textContent=r[it.id]?`Respondido: ${r[it.id]}`:"";
+$("bs").disabled=$("bn").disabled=!!r[it.id];window.scrollTo(0,0)}
+function res(v){const it=ITEMS[i];if(r[it.id])return;r[it.id]=v;try{localStorage.setItem("audafin",JSON.stringify(r))}catch(e){}if(i<ITEMS.length-1)i++;m()}
+$("bs").onclick=()=>res("Sí");$("bn").onclick=()=>res("No");$("a").onclick=()=>{if(i>0){i--;m()}};$("s").onclick=()=>{if(i<ITEMS.length-1){i++;m()}};
+document.addEventListener("keydown",e=>{const k=e.key.toLowerCase();if(k==="s")res("Sí");if(k==="n")res("No")});
+$("x").onclick=()=>{const f=[["id","respuesta"],...ITEMS.filter(x=>r[x.id]).map(x=>[x.id,r[x.id]])];const a=document.createElement("a");
+a.href=URL.createObjectURL(new Blob(["﻿"+f.map(z=>z.map(y=>`"${y}"`).join(",")).join("\n")],{type:"text/csv"}));a.download="auditoria_afinidad_respuestas.csv";a.click()};
+m();
+</script></body></html>

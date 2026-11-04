@@ -9,6 +9,7 @@ es una corrección posterior (post hoc) igual para los dos brazos. Consistencia 
 
     PYTHONUTF8=1 py experimento/scripts/reporte_v2/consolidar.py [--B 10000]
 """
+import os
 import argparse
 import csv
 import glob
@@ -105,7 +106,7 @@ def carga(par, brazo, fuente, campo):
         ruta = D2 / "booleanos" / rc.nombre_csv(par, brazo)
         return cmp.media_campana(rc.leer_csv(ruta), campo)["v2"] if ruta.exists() else None
     if fuente == "p2":
-        ruta = D2 / "persona2" / rc.nombre_csv(par, brazo)
+        ruta = D2 / os.environ.get("P2_DIR", "persona2") / rc.nombre_csv(par, brazo)
         if not ruta.exists():
             return None
         v = [r[campo] for r in rc.leer_csv(ruta) if r["en_desarrollo"] == 0]      # solo turnos fuera del desarrollo del detector
